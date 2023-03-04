@@ -1,0 +1,112 @@
+From 742651854848@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 721059577856
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,343485c5520b1088
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.100.212.2 with SMTP id k2mr11522538ang.55.1279044353165;
+        Tue, 13 Jul 2010 11:05:53 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.101.156.10 with SMTP id i10ls1862772ano.3.p; Tue, 13 Jul 2010 
+	11:05:52 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.101.179.37 with SMTP id g37mr456696anp.14.1279044352445; Tue, 
+	13 Jul 2010 11:05:52 -0700 (PDT)
+Received: by z10g2000yqb.googlegroups.com with HTTP; Tue, 13 Jul 2010 11:05:52 
+	-0700 (PDT)
+Date: Tue, 13 Jul 2010 11:05:52 -0700 (PDT)
+In-Reply-To: <d7c5dc42-b693-46af-b1a8-747daee88743@t10g2000yqg.googlegroups.com>
+X-IP: 216.36.82.26
+References: <deea554e-d198-4640-872a-332e5ff9a084@k39g2000yqb.googlegroups.com> 
+	<d7c5dc42-b693-46af-b1a8-747daee88743@t10g2000yqg.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EIDW8uEEfhLp6lp3dlw0
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; 
+	rv:1.9.2.6) Gecko/20100625 Firefox/3.6.6,gzip(gfe)
+Message-ID: <675a0516-5817-42cb-80f8-9ee508d9265e@z10g2000yqb.googlegroups.com>
+Subject: Re: support for pandoc-ruby
+From: dsanson <dsanson@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+I just downloaded and tried out your new version. It works well.
+Thanks!
+
+A couple of comments:
+
+(1) I understand the decision to go with the markdown to html
+conversion rather than markdown to s5. An unfortunate side-effect is
+that pandoc only generates the "incremental" classes when it is
+generating s5. So one of the benefits of using pandoc-ruby is lost
+(see <https://groups.google.com/group/webslideshow/browse_thread/
+thread/6d425bbbfc6b9810/>). Also, it means you can remove the gsub in
+markdown.rb. (On a related note, I, like Bruce D'Arcus, would like to
+see support for "incremental" in addition to "step", for compatibility
+reasons...)
+
+(2) My motivation for disabling the percent-style comments was to make
+use of pandoc's metadata block. When pandoc generates s5 it
+automatically generates a title page: <h1>Title</h1><h3>Author</
+h3><h4>Date</h4> from this metadata. But it doesn't do that when it
+generates plain html, so given your implementation, there is no reason
+to disable percent-style comments. Pandoc users should just switch to
+using yaml metadata blocks when using slideshow.
+
+These comments relate to a few of features I'd love to see in
+slideshow :-)
+
+(1) Some way to indicate, in the markdown source, that a list should
+be a "step" list.
+
+Pandoc's method is a bit of a kludge: when generating s5, list
+elements inside of blockquotes become incremental lists. When
+generating plain html, they become lists inside of blockquotes.
+
+Indeed, I think this is potentially a rather tortured issue. In a
+previous discussion on this list (linked above), you said that this is
+probably something that would be done best by extending the markdown
+syntax used by the converter. I think I agree. In a perfect world, I
+would be able to write a slideshow in markdown and convert it to an
+html presentation in any one of several supported formats, a PDF
+presentation (e.g., via LaTeX's beamer package), a Keynote
+presentation, a Powerpoint presentation, etc. And, from the same
+source, I would be able to produce an outline or handout in any one of
+several supported formats.
+
+But I don't see this happening anytime soon! So, in the meantime,
+perhaps something like:
+
+    +    list item {.step}
+
+Both pandoc and rdiscount pass the {.step} part through untouched. So
+it would be a matter of writing a filter to find <li>...{.step}</li>
+and convert it into <li class="step">...</li>. But maruku (in a quick
+test) seems to strip it out. So this might not work for all
+processors.
+
+So maybe it would be easier to just implement another one of the
+features I'd love to see:
+
+(2)  A command-line switch to make all lists "step" lists.
+
+This doesn't raise any of the issues raised by trying to extend
+markdown, and would handle 90% of my needs.
+
+Finally, I'd love to see
+
+(3)  A command-line switch to generate a "title" slide from the yaml
+metadata at the top of the file.
+
+Just something simple. It is easy to use CSS in a theme to target the
+first slide to make it pretty. But ideally, the slide would be given a
+unique id (e.g., "titlepage"), so a theme wouldn't make the mistake of
+styling a first slide a title page when it isn't. (My s6clean will
+make this mistake, as currently written.)
+
+I'm well aware that all additional features come at a cost. This is
+just the wish-list of one user! Take it or leave it as you see fit :-)
+
+David
+
+David
+

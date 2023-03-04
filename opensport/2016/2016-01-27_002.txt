@@ -1,0 +1,115 @@
+From 6244428286502371328@xxx Wed Jan 27 11:30:58 +0000 2016
+X-GM-THRID: 6212542687340396544
+X-Received: by 10.129.53.68 with SMTP id c65mr26364234ywa.15.1453894257859;
+        Wed, 27 Jan 2016 03:30:57 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.151.213 with SMTP id z204ls509509iod.46.gmail; Wed, 27 Jan
+ 2016 03:30:57 -0800 (PST)
+X-Received: by 10.66.191.101 with SMTP id gx5mr26636631pac.27.1453894257316;
+        Wed, 27 Jan 2016 03:30:57 -0800 (PST)
+Received: by 10.50.245.145 with SMTP id xo17msigc;
+        Wed, 27 Jan 2016 00:35:52 -0800 (PST)
+X-Received: by 10.182.19.129 with SMTP id f1mr349059obe.20.1453883752449;
+        Wed, 27 Jan 2016 00:35:52 -0800 (PST)
+X-Google-Web-Client: true
+Date: Wed, 27 Jan 2016 00:35:51 -0800 (PST)
+From: Krzysztof Ropiak <krzysztof.ropiak@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <5176e36d-554c-44df-9a7f-0c15333ede6e@googlegroups.com>
+In-Reply-To: <CAAxEZd-Qg2p_cWHN4Q_xJkGTCTLOCkuCMkm1-gBW8wDLoSDorQ@mail.gmail.com>
+References: <49ae2d67-5c87-4a42-9e32-ffd0f5800590@googlegroups.com>
+ <CAAxEZd-Qg2p_cWHN4Q_xJkGTCTLOCkuCMkm1-gBW8wDLoSDorQ@mail.gmail.com>
+Subject: Re: [opensport] NameError: uninitialized constant
+ WorldDb::ReaderBase
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1574_1346507978.1453883752003"
+X-Google-Token: EOeCorUFI_ZJ6d9AzeI0
+X-Google-IP: 91.222.68.50
+
+------=_Part_1574_1346507978.1453883752003
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1575_1179863790.1453883752003"
+
+------=_Part_1575_1179863790.1453883752003
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hey,
+
+I'm having the very same issue. I was just using the exact codebase from=20
+the master branch.
+
+Steps that I've taken:
+1. git clone
+2. heroku create
+3. heroku run rake db:setup
+
+Is there any way to fix such issue?
+
+Cheers,
+Krzysztof Ropiak
+
+W dniu poniedzia=C5=82ek, 2 listopada 2015 14:26:43 UTC+1 u=C5=BCytkownik G=
+erald=20
+Bauer napisa=C5=82:
+>
+> Hello,=20
+>
+>     Hard to tell. Are you trying to setup the sportbook rails app [1] ?=
+=20
+>
+>     If you do - you have to make sure you use the "old" versions=20
+> listed in the Gemfile [2] e.g. worlddb v2.0.4.  The latest versions of=20
+> the worlddb / sportdb / persondb  do NOT work with the sportbook (that=20
+> is, the sportbook needs to get updated sometime).  Cheers.=20
+>
+> [1] github.com/openbookie/sportbook=20
+> [2] github.com/openbookie/sportbook/blob/master/Gemfile=20
+>
+
+------=_Part_1575_1179863790.1453883752003
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hey,<div><br></div><div>I&#39;m having the very same issue=
+. I was just using the exact codebase from the master branch.</div><div><br=
+></div><div>Steps that I&#39;ve taken:</div><div>1. git clone</div><div>2. =
+heroku create</div><div>3. heroku run rake db:setup</div><div><br></div><di=
+v>Is there any way to fix such issue?</div><div><br></div><div>Cheers,</div=
+><div>Krzysztof Ropiak</div><div><br></div><div>W dniu poniedzia=C5=82ek, 2=
+ listopada 2015 14:26:43 UTC+1 u=C5=BCytkownik Gerald Bauer napisa=C5=82:<b=
+lockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;borde=
+r-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 =C2=A0 Hard to tell. Are you trying to setup the sportbook rails=
+ app [1] ?
+<br>
+<br>=C2=A0 =C2=A0 If you do - you have to make sure you use the &quot;old&q=
+uot; versions
+<br>listed in the Gemfile [2] e.g. worlddb v2.0.4. =C2=A0The latest version=
+s of
+<br>the worlddb / sportdb / persondb =C2=A0do NOT work with the sportbook (=
+that
+<br>is, the sportbook needs to get updated sometime). =C2=A0Cheers.
+<br>
+<br>[1] <a href=3D"http://github.com/openbookie/sportbook" target=3D"_blank=
+" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/ur=
+l?q\75http%3A%2F%2Fgithub.com%2Fopenbookie%2Fsportbook\46sa\75D\46sntz\0751=
+\46usg\75AFQjCNEiWkZ7yFYmg-qYvayfZLqkQVB6kw&#39;;return true;" onclick=3D"t=
+his.href=3D&#39;http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fope=
+nbookie%2Fsportbook\46sa\75D\46sntz\0751\46usg\75AFQjCNEiWkZ7yFYmg-qYvayfZL=
+qkQVB6kw&#39;;return true;">github.com/openbookie/<wbr>sportbook</a>
+<br>[2] <a href=3D"http://github.com/openbookie/sportbook/blob/master/Gemfi=
+le" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http=
+://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenbookie%2Fsportbook%=
+2Fblob%2Fmaster%2FGemfile\46sa\75D\46sntz\0751\46usg\75AFQjCNFqlW51Yuh00D7l=
+rHNjm6sa-SX55Q&#39;;return true;" onclick=3D"this.href=3D&#39;http://www.go=
+ogle.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenbookie%2Fsportbook%2Fblob%2F=
+master%2FGemfile\46sa\75D\46sntz\0751\46usg\75AFQjCNFqlW51Yuh00D7lrHNjm6sa-=
+SX55Q&#39;;return true;">github.com/openbookie/<wbr>sportbook/blob/master/G=
+emfile</a>
+<br></blockquote></div></div>
+------=_Part_1575_1179863790.1453883752003--
+------=_Part_1574_1346507978.1453883752003--
+

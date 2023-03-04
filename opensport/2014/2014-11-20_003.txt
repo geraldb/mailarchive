@@ -1,0 +1,121 @@
+From 2255196520448@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 2254972125184
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fdd82ec609b6c4e4
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.224.127.193 with SMTP id h1mr26004996qas.6.1416480294462;
+        Thu, 20 Nov 2014 02:44:54 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.53.194 with SMTP id d2ls70711obp.55.gmail; Thu, 20 Nov
+ 2014 02:44:54 -0800 (PST)
+X-Received: by 10.182.27.1 with SMTP id p1mr88419090obg.44.1416480294160;
+        Thu, 20 Nov 2014 02:44:54 -0800 (PST)
+Received: by 10.224.19.5 with SMTP id y5msqaa;
+        Thu, 20 Nov 2014 01:34:39 -0800 (PST)
+X-Received: by 10.140.94.150 with SMTP id g22mr721749qge.0.1416476079733;
+        Thu, 20 Nov 2014 01:34:39 -0800 (PST)
+X-Google-Doc-Id: 9aa9e81bcb53cb0d
+X-Google-Web-Client: true
+Date: Thu, 20 Nov 2014 01:34:39 -0800 (PST)
+From: anonfunction@gmail.com
+To: opensport@googlegroups.com
+Message-Id: <923ec44d-6a0f-4f21-903a-0835e94f1b4c@googlegroups.com>
+Subject: Cannot build football.db with world cup data
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_78_1553803943.1416476079389"
+X-Google-Token: EK_rtqMF8x3td36uUiU0
+X-Google-IP: 50.153.130.5
+
+------=_Part_78_1553803943.1416476079389
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_79_1381722481.1416476079389"
+
+------=_Part_79_1381722481.1416476079389
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello, I've been trying to build a football.db with all the WorldCup 2014 
+data and having much trouble.
+
+Here's what I've tried:
+
+mkdir openmundi
+cd openmundi
+git clone https://github.com/openmundi/world.db.git
+cd ..
+mkdir openfootball
+cd openfootball
+git clone https://github.com/openfootball/build.git
+git clone https://github.com/openfootball/world-cup.git
+git clone https://github.com/openfootball/national-teams.git
+cd build
+rake build DATA=worldcup2014
+cd build
+sportdb --dbname football.db stat
+
+which outputs
+
+...
+Connecting to db using settings:
+{:adapter=>"sqlite3", :database=>"./football.db"}
+  0 leagues  /  0 seasons
+  0 events (league+season recs)  /  0 rounds  /  0 groups
+  0 teams
+  0 games
+  0 badges
+  0 rosters (person+team+event recs)
+  0 goals (person+game recs)
+  0  assocs|orgs
+  0  grounds|stadiums
+Stats:
+    10 continents
+   250 countries (1 supras, 52 deps), 0 miscs)
+   271 regions
+     2 metros
+   531 cities (76 metros)
+     0 districts
+  1064 places
+     0 names
+     0 langs
+     0 usages
+     0 (country) codes
+Done.
+
+But how can I get the data in there?
+
+
+------=_Part_79_1381722481.1416476079389
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello, I've been trying to build a football.db with all th=
+e WorldCup 2014 data and having much trouble.<div><br></div><div>Here's wha=
+t I've tried:</div><div><br></div><div>mkdir openmundi</div><div>cd openmun=
+di</div><div>git clone&nbsp;https://github.com/openmundi/world.db.git</div>=
+<div>cd ..</div><div>mkdir openfootball</div><div>cd openfootball</div><div=
+>git clone&nbsp;https://github.com/openfootball/build.git</div><div>git clo=
+ne&nbsp;https://github.com/openfootball/world-cup.git<br></div><div>git clo=
+ne&nbsp;https://github.com/openfootball/national-teams.git<br></div><div>cd=
+ build</div><div>rake build DATA=3Dworldcup2014<br></div><div>cd build</div=
+><div>sportdb --dbname football.db stat<br></div><div><br></div><div>which =
+outputs</div><div><br></div><div>...</div><div><div>Connecting to db using =
+settings:</div><div>{:adapter=3D&gt;"sqlite3", :database=3D&gt;"./football.=
+db"}</div><div>&nbsp; 0 leagues &nbsp;/ &nbsp;0 seasons</div><div>&nbsp; 0 =
+events (league+season recs) &nbsp;/ &nbsp;0 rounds &nbsp;/ &nbsp;0 groups</=
+div><div>&nbsp; 0 teams</div><div>&nbsp; 0 games</div><div>&nbsp; 0 badges<=
+/div><div>&nbsp; 0 rosters (person+team+event recs)</div><div>&nbsp; 0 goal=
+s (person+game recs)</div><div>&nbsp; 0 &nbsp;assocs|orgs</div><div>&nbsp; =
+0 &nbsp;grounds|stadiums</div><div>Stats:</div><div>&nbsp; &nbsp; 10 contin=
+ents</div><div>&nbsp; &nbsp;250 countries (1 supras, 52 deps), 0 miscs)</di=
+v><div>&nbsp; &nbsp;271 regions</div><div>&nbsp; &nbsp; &nbsp;2 metros</div=
+><div>&nbsp; &nbsp;531 cities (76 metros)</div><div>&nbsp; &nbsp; &nbsp;0 d=
+istricts</div><div>&nbsp; 1064 places</div><div>&nbsp; &nbsp; &nbsp;0 names=
+</div><div>&nbsp; &nbsp; &nbsp;0 langs</div><div>&nbsp; &nbsp; &nbsp;0 usag=
+es</div><div>&nbsp; &nbsp; &nbsp;0 (country) codes</div><div>Done.</div></d=
+iv><div><br></div><div>But how can I get the data in there?</div><div><br><=
+/div></div>
+------=_Part_79_1381722481.1416476079389--
+------=_Part_78_1553803943.1416476079389--
+

@@ -1,0 +1,128 @@
+From 6884578720413122560@xxx Sat Oct 17 13:21:34 +0000 2020
+X-GM-THRID: 6884578720937410560
+X-Received: by 2002:a1c:7f97:: with SMTP id a145mr8823437wmd.160.1602940894361;
+        Sat, 17 Oct 2020 06:21:34 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a1c:4e19:: with SMTP id g25ls2345549wmh.2.gmail; Sat, 17 Oct
+ 2020 06:21:32 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJww7ivUTHJ86S+e8+7t4pzwYrueD5xz9AyWCBcgfEygWw3NgdnqZKAY/gL0KpmACsSdYLp9
+X-Received: by 2002:a1c:cc01:: with SMTP id h1mr2217506wmb.114.1602940892806;
+        Sat, 17 Oct 2020 06:21:32 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1602940892; cv=none;
+        d=google.com; s=arc-20160816;
+        b=HLzltP844uKEU/pxov1/ny6aLnj7MtKi9g792sBJyqAjGdqlJJG7bQelkBDKVjb9SW
+         0weB3/e8Rl6XKhoymVpDOk6XSrc554KuIzCsBJwtmqwvpYlpk4ZtFw8dvPB+p4kJtCCj
+         3ECGzcCoPPtxZL2fmdHoHLyobfwJTKnwh6NnY1M9E+czF9y3Jb96mBr68FfaqX8B1FzK
+         +ebt6oHb7OPmrxUXlxBEO8fFSnS/udVgTF9FSX/rTBZ1EkHIyXy4hf5rw7VgM1XCpUs7
+         nmluX8wzMDki/3z+qdGPu4lCVBhKKbPFMtS/li9Lpo6u3GX4aisMKiGDjzbnVjisdAKv
+         FxXw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=gJ1FvfvoeOclegEEp8O9W12es7O1v2kWqU28ummGXhs=;
+        b=ZLzyU8Z1JE1ilxthTnnJz95JuuF2/2tdGEE9FtOcXdjwfxSiYGXgsdzwcpd5idLECM
+         Ttyy7R5xRr0nqN9A0v5rGZaKJNasQRqdy849QvUUBfkv71UL9dkiL4+EbOd9cuhTcl76
+         OuFyuKSZglva7vOrf9vVTUxcXM/RS65l6WZAzM/4Z0QI7ikMMk7Zkf0OdYtnGTRD3/9+
+         +XFWw7jQul3Qyg/GyBaBWBTFT6dRFQQibrUPmkoForLdKKOlI6EV6UobxtEJ6bLqrEMt
+         IFkiEjpcKMvIlrOjZRXg7n48aCaX5ytK51FwTyWSVEKLMwwWAWlrP3hf14KxYBoSzHeO
+         ClAw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=VpZMAR2D;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ed1-x52c.google.com (mail-ed1-x52c.google.com. [2a00:1450:4864:20::52c])
+        by gmr-mx.google.com with ESMTPS id 63si107402wrc.0.2020.10.17.06.21.32
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 17 Oct 2020 06:21:32 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52c as permitted sender) client-ip=2a00:1450:4864:20::52c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=VpZMAR2D;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ed1-x52c.google.com with SMTP id p13so5554577edi.7
+        for <opensport@googlegroups.com>; Sat, 17 Oct 2020 06:21:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=gJ1FvfvoeOclegEEp8O9W12es7O1v2kWqU28ummGXhs=;
+        b=VpZMAR2D5sViBdsVo9XVYgtSLD3O/oTInCbWZ1ml48wG63VOI+2MtZui/H3jA7SF1j
+         Y+mlEi3HwgnNl1UEg7yso9Vn4Ou3DUy5QlFLkAXuoDw1bXrfR/O0c84UQq1V3LDhYG4Q
+         N8V6N3zzV4o6MaDZsK1F4EMTeSewhUGREj+kgrLpRBCSx1OBRhGtuUTbnGXxibaqSd3w
+         8rmSR7IpOMbmXNwq8RJSziaYNDXDpvFRrbp5z2/fPPd80Jaq7fzMHjeONqc5NBDMJyQb
+         hUC14EhcJ9H1qC9LRx0xZteyKWUTJRfbRHcwvRnFUXGkcO/HbTxy2LIoalky9effxk4e
+         RnVg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=gJ1FvfvoeOclegEEp8O9W12es7O1v2kWqU28ummGXhs=;
+        b=B1Iie5fH2PUNZnj1s6NP/GkOHwL9RD2pGT/uT2qntyRFLCP9i1erN4t8rhU6uu9Q5B
+         AzA0gMbX5jk/iLCtIzWJlqn+YYVnPbgYG8Hrx0WVf+O16rAi8zuc9mg5VgLyXJC9ySE2
+         Z1oUhLB8wtW5Jzv74SxKNiC0ZDQGiMPVqB7m12hRuYkfoC7vxzSBA+GN4DgB+Bu3m1d9
+         ccTZ03suXpsJsTuewY1D5dmeTMHKWQokHj6EcW6dX61K+LFNnW8ixwnoNjKLqIe8/8hs
+         vhnICikLp6baD+ymTR1AxqI/Fw6gEmufgKf6tdZE8ndA9t1DVFGF2T/N4mRopzm66Z1W
+         n5tA==
+X-Gm-Message-State: AOAM532A0fnqCeYw8g18EQpto+/tqiXHn4HBL0uDz6UBYyRq1gJwt86d
+	FfiXi0U/8K0bGxKFY+AYEdJPkDzsdsXTP5oNvG2m4U9eH1aJSg==
+X-Received: by 2002:aa7:c2d9:: with SMTP id m25mr9490139edp.226.1602940892228;
+ Sat, 17 Oct 2020 06:21:32 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 17 Oct 2020 15:21:22 +0200
+Message-ID: <CAAxEZd9+4s4d-0RYtF8wqLYfVXmJW3FKLq==-YCANSgJ2cy+_w@mail.gmail.com>
+Subject: New football-to-sqlite build tool - load / read football.txt match
+ datafiles (e.g. English Premier League, German Bundesliga, Spanish La Liga,
+ etc.) into a sqlite database
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+    inspired by the datasette
+{db,dbf,markdown,geojson,shapefile}-to-sqlite series [1] I have put
+together the missing football-to-sqlite [2] tool that - surprise,
+surprise - lets you load / read football.txt match datafiles (e.g.
+English Premier League, German Bundesliga, Spanish La Liga 2020/21,
+etc.) into a sqlite database.
+
+Usage:
+
+Run this tool against match files in the Football.TXT format like so:
+
+```
+$ football-to-sqlite england.db 2020-21\1-premierleague.txt
+```
+
+or pass in more than one match file:
+
+```
+$ football-to-sqlite england.db 2020-21\1-premierleague.txt \
+                                2020-21\2-championship.txt  \
+                                2020-21\3-league1.txt       \
+                                2020-21\4-league2.txt       \
+                                2020-21\5-nationalleague.txt
+```
+
+
+Note: If the single-file SQLite database (and its tables, views &
+indices) do not (yet) exist, they get auto-created on the first run.
+
+Note: You can use `football2sqlite` as an alias / alternate name.
+
+
+**Pipes & Standard Input (STDIN)**
+
+You can use any command line tool to download match files and pipe
+(via stdin) into this tool like so:
+
+```
+$ curl https://raw.githubusercontent.com/openfootball/world-cup/master/2018--russia/cup.txt
+| football-to-sqlite worldcup.db
+```
+
+That's it for now. Enjoy the beautiful game with ruby. Cheers. Prost.
+
+
+[1] https://docs.datasette.io/en/stable/ecosystem.html
+[2] https://github.com/sportdb/football.db/tree/master/football-to-sqlite
+

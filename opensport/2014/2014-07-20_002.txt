@@ -1,0 +1,76 @@
+From 1668776198144@xxx Tue Jun 16 00:16:50 +0000 2015
+X-GM-THRID: 1591517118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.91.73 with SMTP id cc9mr3809569wib.4.1405874115565;
+        Sun, 20 Jul 2014 09:35:15 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.37.206 with SMTP id a14ls301612wik.51.gmail; Sun, 20 Jul
+ 2014 09:35:14 -0700 (PDT)
+X-Received: by 10.180.13.99 with SMTP id g3mr1597343wic.1.1405874114964;
+        Sun, 20 Jul 2014 09:35:14 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x229.google.com (mail-wi0-x229.google.com [2a00:1450:400c:c05::229])
+        by gmr-mx.google.com with ESMTPS id r19si513877wik.0.2014.07.20.09.35.14
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 20 Jul 2014 09:35:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) client-ip=2a00:1450:400c:c05::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f169.google.com with SMTP id n3so3178881wiv.0
+        for <opensport@googlegroups.com>; Sun, 20 Jul 2014 09:35:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=EkHDMPfeDgzjXEMKvr2ClWL8PdDz9RxY/BcPSlCG7Iw=;
+        b=wdLlhZ4ruou7+8Tmo3SgDQ6Fpfbf5Pisg3c8JtVYMbV2009fIq+c63zpY8aVetScaJ
+         bs5wVBu3Vsj8VfaTF7wKW3vIEYEncLef/iXXRXBl+s+IOGqS+rls3PgKWrjNbpi22NFr
+         Uwpj6bpxXXTBixtuEZtS9QKTLXHCWLY3AAOw9Yw7gLdOCM2BllSNYeJaX9H1bAt77gWn
+         jiar/drDNUPO8L/STqfxEdZnhIK1pUNZPXpTEw34PlrRG8hsi5eEQrLNisgRsGrTGNOG
+         3aP5uxJbgK+3HHAfGUaWxtb82xZYrY3BqYCjo3KwrhXJgreS3pQsdhZ1ZXahqnBQJ/Mo
+         H/GQ==
+MIME-Version: 1.0
+X-Received: by 10.194.222.197 with SMTP id qo5mr15125212wjc.78.1405874114886;
+ Sun, 20 Jul 2014 09:35:14 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Sun, 20 Jul 2014 09:35:14 -0700 (PDT)
+In-Reply-To: <16257216-0d9c-4d01-9f36-b00d26a612e2@googlegroups.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+	<CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+	<3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+	<CAAxEZd9E7zgoReL0RprdZxXKLkBKvC5xVTNYUgFfsm02WZq=aQ@mail.gmail.com>
+	<16257216-0d9c-4d01-9f36-b00d26a612e2@googlegroups.com>
+Date: Sun, 20 Jul 2014 18:35:14 +0200
+Message-ID: <CAAxEZd_oN6Z5nKLG1-znCwf7W_yEhQ-yyns0jxr5KVepFCmKHw@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  No worries. Usually Austrians get mixed up with Australians (not
+much difference in spelling at least in English ;-) ).
+
+  No worries about the plugin. I suggest keep going with your code and
+if you don't mind I copy it into a new repo as a plugin sometime next
+week (w/ Ruby it really should be easy - open classes, mixins, etc -
+should mostly just involve copying your new code to modules and
+classes etc.).
+
+  For the stats fields I suggest just adding the fields you can think
+of now and actually use. You can always add more later if needed.
+Also do NOT worry about other sports. I suggest keeping the stats
+football only, and, thus, lets make it into a football stats plugin
+(footballdb-stats or sportdb-footy-stats or something).  Cheers.
+
+
+PS: Here's a great inspiration and project about American football
+stats, for example,
+[1] github.com/BurntSushi/nfldb/wiki/The-data-model
+

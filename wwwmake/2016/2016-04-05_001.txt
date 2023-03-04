@@ -1,0 +1,68 @@
+From 6269960894621417472@xxx Tue Apr 05 06:50:30 +0000 2016
+X-GM-THRID: 6269840131576823808
+X-Received: by 10.50.55.72 with SMTP id q8mr11545124igp.1.1459839030591;
+        Mon, 04 Apr 2016 23:50:30 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.140.82.233 with SMTP id h96ls1818440qgd.80.gmail; Mon, 04 Apr
+ 2016 23:50:30 -0700 (PDT)
+X-Received: by 10.140.93.199 with SMTP id d65mr15367666qge.30.1459839030228;
+        Mon, 04 Apr 2016 23:50:30 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x230.google.com (mail-ig0-x230.google.com. [2607:f8b0:4001:c05::230])
+        by gmr-mx.google.com with ESMTPS id cs5si383548igb.0.2016.04.04.23.50.30
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 04 Apr 2016 23:50:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::230 as permitted sender) client-ip=2607:f8b0:4001:c05::230;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ig0-x230.google.com with SMTP id ui10so6140014igc.1
+        for <wwwmake@googlegroups.com>; Mon, 04 Apr 2016 23:50:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=ASoE/q3+esoFbe4KjfCi57zq2+QYxJ4EIwdTyEwM4dE=;
+        b=NUNXJ/nsQ4ag4BWjc+MPTR2yG4TkDB7re5VKHAk55BViH2sfCchm3phGwEndGeez7y
+         fwJdceK6AN90wwfni79BqVMK8jbBhD1OFiR59K57Z8tvI2JfJOZVBZZZ5Av7ZaPNbGM6
+         Ax/HfEM/8hz7E4edzEIbRc4jD1o56JYWksXL4Rk8/RrdmAdgWJ9thCWTB0OC8R2h4M2W
+         hyIAP6sDwI7+KuiuSvldxDrMTy/cfklRFyRSAj+GACFwj28PiQP4Z5GFSkeLKv6G1YQ1
+         EcC2NDSgvgvuV45QjheagLpEinyaLDB7He+zXw9He0EhAqpcCkHcHq00FFmPWZ0OOUbi
+         yFrA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=ASoE/q3+esoFbe4KjfCi57zq2+QYxJ4EIwdTyEwM4dE=;
+        b=BS9SiJSs7mu3FjgyV5oTohuqh2QQkJW6GCOHRyqDVmtUz5zvRBJDVGL50x78gMS3Rp
+         9A8bz50LhGo+lg7orINONGEV/bI2WZudP4NIh4NNDvTracstoymrj5ckMzJOISqOUD/e
+         d7j6r4yUCFihe6kSxTl/ruGyJxYKYpzfps+3hfc8FqRQTEAP7x2VT3MeMVnxOStdKO7s
+         WlUUhrZKU1Y6hVWaETrj7Fa/5JScIsUD9uFnnHwrarPvw6gdS0Cp3mZo7eApPin2LAJe
+         bne5bFhsLmqvhUJviL8FdiQu6Xug65Fj8w8EjReZUTGf5fhBGkxOkeTyygFTONQC7Z1n
+         KLVQ==
+X-Gm-Message-State: AD7BkJIpVZvudMxCqVw0PBF8HXV8Jj9wHfDVSCZLZoPL+24pWHuwi+tsbUSzszdk4KvoG8YWjoEfeSp0kO2nWA==
+MIME-Version: 1.0
+X-Received: by 10.50.25.137 with SMTP id c9mr15181769igg.84.1459839030078;
+ Mon, 04 Apr 2016 23:50:30 -0700 (PDT)
+Received: by 10.107.169.83 with HTTP; Mon, 4 Apr 2016 23:50:30 -0700 (PDT)
+In-Reply-To: <CAF68Xurrxb5FPmo+EfWYKE-oEUg8cyjWUpMKTYTcBabqchc2EA@mail.gmail.com>
+References: <CAAxEZd_w=f0wN8dmX7G--bDODaOnOTn3x1kNo1JmwU-3a1DeSw@mail.gmail.com>
+	<CAF68Xurrxb5FPmo+EfWYKE-oEUg8cyjWUpMKTYTcBabqchc2EA@mail.gmail.com>
+Date: Tue, 5 Apr 2016 08:50:30 +0200
+Message-ID: <CAAxEZd8XLfsyi0GL8o1jSG0SzVm=ht7RPfhpQKOjJwvdDTsysQ@mail.gmail.com>
+Subject: Re: [wwwmake:389] Awesome Slide Shows / Presentations Templates in
+ HTML, CSS & JS
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for your kind words.
+
+> `remark`_ will be another tool to be added.
+>
+> _: https://github.com/gnab/remark
+
+   Added. Thanks. Cheers.
+

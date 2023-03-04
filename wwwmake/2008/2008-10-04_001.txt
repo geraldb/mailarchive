@@ -1,0 +1,86 @@
+From 196475879424@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 157340925952
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,3384e9daa8ef2695
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.100.231.16 with SMTP id d16mr166796anh.20.1223151995825; Sat, 
+	04 Oct 2008 13:26:35 -0700 (PDT)
+Date: Sat, 4 Oct 2008 13:26:35 -0700 (PDT)
+In-Reply-To: <22534c0b-b3a0-410a-8031-4c86fcfa5ba1@26g2000hsk.googlegroups.com>
+X-IP: 70.79.19.119
+References: <22534c0b-b3a0-410a-8031-4c86fcfa5ba1@26g2000hsk.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: pvWtXAwAAACdXvqMjAJgvXSpHVFv3ThT
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) 
+	AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.30 Safari/525.13,gzip(gfe),gzip(gfe)
+Message-ID: <1f1c223d-3877-4b1a-b8cb-64e030681121@z11g2000prl.googlegroups.com>
+Subject: Re: Is it possible to auto increment slides after a set period of 
+	time? (S9)
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello JD,
+
+> Is it possible to create an S9 presentation that will auto increment
+> slides after a set period of time? I'd like to use it in a kiosk like
+> functionality.
+
+   Here's an example JavaScript addon for S6 that lets you toggle
+(start/stop) autoplay. To add it just create your slide show as usual
+(e.g. slideshow kiosk) than open up the slides.js file in the S6
+folder and add the autoplay and toogleAutoplay functions:
+
+function autoplay()
+{
+	// suspend autoplay in outline view (just slideshow view)
+	if( !s6mode )
+	  return;
+
+	var cid = '#slide' + snum;
+
+	snum += 1;
+	if( snum > smax ) snum = 1;
+
+	var nid = '#slide' + snum;
+
+  $( cid ).hide();
+  $( nid ).show();
+
+	// update jumplist, slide counter display, and permalink
+  $('#jumplist').get(0).selectedIndex = (snum-1);
+  currentSlide();
+  permaLink();
+}
+
+var autoplayId = null;
+
+function toggleAutoplay()
+{
+  if( autoplayId )
+	{
+		clearInterval( autoplayId );
+		autoplayId = null;
+	}
+	else
+	{
+   	autoplayId = setInterval ( autoplay, 2000 );
+	}
+}
+
+  As a last step pick the keys you want to use for toggling (starting/
+stopping) autoplay and add a case to the function keys() switch e.g:
+
+  case 80: //p
+  case 83: //s
+    toggleAutoplay();
+    break;
+
+  That's all there is to it. Let me know if you any questions or if it
+works for you.
+
+ Cheers.
+

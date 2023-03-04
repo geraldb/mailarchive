@@ -1,0 +1,86 @@
+From 6223441417450029056@xxx Tue Dec 01 22:11:11 +0000 2015
+X-GM-THRID: 6223441415119044608
+X-Received: by 10.50.126.4 with SMTP id mu4mr478756igb.3.1449007870902;
+        Tue, 01 Dec 2015 14:11:10 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.43.135 with SMTP id w7ls135274igl.37.canary; Tue, 01 Dec
+ 2015 14:11:10 -0800 (PST)
+X-Received: by 10.98.86.136 with SMTP id h8mr52567474pfj.11.1449007870080;
+        Tue, 01 Dec 2015 14:11:10 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22d.google.com (mail-ig0-x22d.google.com. [2607:f8b0:4001:c05::22d])
+        by gmr-mx.google.com with ESMTPS id yt3si17933igb.2.2015.12.01.14.11.10
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 01 Dec 2015 14:11:10 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) client-ip=2607:f8b0:4001:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22d.google.com with SMTP id 9so98053045igl.0
+        for <opensport@googlegroups.com>; Tue, 01 Dec 2015 14:11:10 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=Z3QFpcbKvgbvuuyfYcD8fSbOjq+CQw2VUrecajZALfE=;
+        b=RwN3SVVVzatYwO37TtWWA9+Wqk9mp60ht5N6bCiZYJRCZsCelS9BXmbdPMBNUxa9qd
+         IbCADMKoSj7Tx5eFhrizVmp0M7WfCiIeO/pI3cO82dgPC9+Axx/TynFiwaUWpLTlRZ2c
+         pO6C4uvLqoViI7HnI9Unl0oAk+ZnPuc8bVoqcaXdQcTIkGwgIk6ITS9XIgQLXxBuKNDi
+         bgQx99l4KWEe8I18Erd5xGfq0CRMU2sEoeMlTn/VK36ZSISNBkhBfoJTLK3ccvmK348u
+         HuJYoQ0aq7i8Mvx4pBhhGcxL0Axbsy5RPBNGRNAWkzOVCVeixOWRhFyJBeLnFVZV2+0R
+         nPeA==
+MIME-Version: 1.0
+X-Received: by 10.50.138.3 with SMTP id qm3mr432193igb.7.1449007869905; Tue,
+ 01 Dec 2015 14:11:09 -0800 (PST)
+Received: by 10.107.140.12 with HTTP; Tue, 1 Dec 2015 14:11:09 -0800 (PST)
+Date: Tue, 1 Dec 2015 23:11:09 +0100
+Message-ID: <CAAxEZd97dKvFvpDp391ge55PdEMBCOX0UiOiEUAaT4ouhGd=Vw@mail.gmail.com>
+Subject: RSSSF Football Match Schedule Reader/Importer Now Incl. Standings
+ (League) Table
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: To double check the data imports using match schedules using
+the RSSSF archive the build scripts [1] now includes / writes out
+standing (league) tables e.g.
+
+
+                                       - Home -          - Away -
+      - Total -
+                                 Pld   W  D  L   F:A     W  D  L   F:A
+     F:A   +/-  Pts
+ 1. FC Bayern M=C3=BCnchen             34  14  1  2  46:7    11  3  3
+34:11    80:18  +62   79
+ 2. VfL Wolfsburg                 34  13  4  0  38:13    7  5  5
+34:25    72:38  +34   69
+ 3. Borussia M'gladbach           34  12  3  2  32:14    7  6  4
+21:12    53:26  +27   66
+ 4. Bayer 04 Leverkusen           34  10  6  1  39:15    7  4  6
+23:22    62:37  +25   61
+ 5. FC Augsburg                   34   9  4  4  28:21    6  0 11
+15:22    43:43        49
+ 6. Schalke 04                    34  10  5  2  26:14    3  4 10
+16:26    42:40   +2   48
+ 7. Borussia Dortmund             34   9  3  5  26:15    4  4  9
+21:27    47:42   +5   46
+ 8. 1899 Hoffenheim               34   9  3  5  31:26    3  5  9
+18:29    49:55   -6   44
+  ...
+
+   The standings table lets you quickly double check that no matches
+are missing and that the scoring looks in order.
+
+   See the Bundesliga 2013/14 [2] and Bundesliga 2014/15 [3] pages as
+examples. Cheers.
+
+[1] github.com/skriptbot/football.db.rsssf
+[2] github.com/rsssf/de-deutschland/tree/master/2013-14
+[3] github.com/rsssf/de-deutschland/tree/master/2014-15
+

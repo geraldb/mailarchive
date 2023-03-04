@@ -1,0 +1,72 @@
+From 26536312832@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 17273192448
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,881dd44606314bf3
+X-Google-Attributes: gid592b7a,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.115.18.2 with SMTP id v2mr3728624wai.3.1212290380115;
+        Sat, 31 May 2008 20:19:40 -0700 (PDT)
+Return-Path: <petdance@gmail.com>
+Received: from rv-out-0506.google.com (rv-out-0506.google.com [209.85.198.239])
+        by mx.google.com with ESMTP id m36si669319wag.3.2008.05.31.20.19.38;
+        Sat, 31 May 2008 20:19:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of petdance@gmail.com designates 209.85.198.239 as permitted sender) client-ip=209.85.198.239;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of petdance@gmail.com designates 209.85.198.239 as permitted sender) smtp.mail=petdance@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by rv-out-0506.google.com with SMTP id b25so522534rvf.41
+        for <webslideshow@googlegroups.com>; Sat, 31 May 2008 20:19:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        bh=5bcniNVfdqnx7IciNOWd2b2oBIZ78mBO3pRLVNd9s2U=;
+        b=OZAzjs/RhXqh+Yoz6asN4S8sSDjogK6ZuFnUC5n1EmFUxhMgPFhAmaLToszxKJtmWaniQCxXbk/fRG6dqMyq0+VNowkJwa3CSJmQKntUp2MLyo/f4J97sr/1lMo1CtuZzImq6i6L6KHI4kc0u5bAmOYtuvn+bYqSWw2+BqHWQms=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=b40RKEML8/4jIzKQitB9Z8+eKxC7DQSHk//w+na9Qp+Mg8yVwY2+CXSBdtbxPdz/UH6cuToCbdJzo29QjLkKDdQrpzo3k+DsqV3SSYM57eNT+jgpri3Dxkay0xvMswj+a62Ryp02o2kG6svGCCls0aWgEqNsy+o0H1XbIbI4QJs=
+Received: by 10.141.29.18 with SMTP id g18mr4069733rvj.162.1212290377915;
+        Sat, 31 May 2008 20:19:37 -0700 (PDT)
+Received: by 10.141.78.21 with HTTP; Sat, 31 May 2008 20:19:37 -0700 (PDT)
+Message-ID: <a51fe6e50805312019r4fa0603dyb70d3743737f0520@mail.gmail.com>
+Date: Sat, 31 May 2008 22:19:37 -0500
+From: "Andy Lester" <petdance@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow] Re: Help me get codex started
+In-Reply-To: <b5b837ea-d3a8-4ee0-b6c3-230e00fd0e4b@i18g2000prn.googlegroups.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <be6cb54e-2541-44a9-96b9-8cb32f2aeebc@k37g2000hsf.googlegroups.com>
+	 <b5b837ea-d3a8-4ee0-b6c3-230e00fd0e4b@i18g2000prn.googlegroups.com>
+
+>   codex operates like a generator and creates a skeleton for your
+> presentation including a rake (build) script.
+
+Except that it also populates it with the codex presentation about itself.
+
+mel:~/ctut : codex .
+      exists
+      create  bin
+      create  code/control
+      create  html
+      create  dp.SyntaxHighlighter/Scripts
+      create  dp.SyntaxHighlighter/Styles
+      create  dp.SyntaxHighlighter/Templates
+      create  script
+      exists  slides
+      create  ui/default
+      create  Rakefile
+      create  html/all.html
+      create  slides/basics.slides
+      create  slides/building.slides
+      create  slides/example.slides
+      create  slides/including_code.slides
+      create  slides/table_of_contents.slides
+overwrite slides/metadata.yml? [Ynaiqd] n
+...
+
+And when i run "rake all" it builds the presentation about codex.
+
+Am I invoking incorrectly or something?  Why is codex trying to put
+its own presentation over mine?
+

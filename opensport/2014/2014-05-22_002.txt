@@ -1,0 +1,95 @@
+From 766345478144@xxx Tue Jun 16 00:17:06 +0000 2015
+X-GM-THRID: 735777390592
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4c0ddad8e50128c7
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.189.163 with SMTP id gj3mr25469061pac.32.1400769111928;
+        Thu, 22 May 2014 07:31:51 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.12.37 with SMTP id v5ls1771190igb.38.gmail; Thu, 22 May
+ 2014 07:31:51 -0700 (PDT)
+X-Received: by 10.50.178.146 with SMTP id cy18mr269071igc.17.1400769111632;
+        Thu, 22 May 2014 07:31:51 -0700 (PDT)
+X-Google-Doc-Id: 1d42ec5ce96a643a
+X-Google-Web-Client: true
+Date: Thu, 22 May 2014 07:31:50 -0700 (PDT)
+From: Unreal Hoang <unrealhoang@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <e7876514-cc7d-4b95-8c11-e898659c4c13@googlegroups.com>
+In-Reply-To: <56400f5a-6f20-42a1-b8f0-45a9bbabad21@googlegroups.com>
+References: <1628d48d-ad59-46f9-8f13-a86e1d4e9399@googlegroups.com>
+ <56400f5a-6f20-42a1-b8f0-45a9bbabad21@googlegroups.com>
+Subject: Re: Error building db
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_4285_25627568.1400769110664"
+X-Google-Token: ENaU-JsFONOPgfdbSpE0
+X-Google-IP: 1.52.237.91
+
+------=_Part_4285_25627568.1400769110664
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4286_17849575.1400769110664"
+
+------=_Part_4286_17849575.1400769110664
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you very much. I think you should put this on the documentation also 
+:)
+
+On Thursday, May 22, 2014 6:24:37 PM UTC+7, Gerald Bauer wrote:
+>
+> Hello,
+>
+>   No worries. If you use the build script, use this folder structure
+>
+>     openmundi/               ##-> create folder
+>        world.db                 ##-> git clone
+>     openfootball/             ## -> create folder
+>        build                      ## -> git clone
+>        national-teams        ## ..
+>        world-cup               ## ..
+>
+>     and start you build from inside openfootball/build.  You can see all 
+> folder references here [1]  Cheers.
+>
+> [1] github.com/openfootball/build/blob/master/settings.rb
+>
+
+------=_Part_4286_17849575.1400769110664
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thank you very much. I think you should put this on the do=
+cumentation also :)<br><br>On Thursday, May 22, 2014 6:24:37 PM UTC+7, Gera=
+ld Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-=
+left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr=
+">Hello,<br><br>&nbsp; No worries. If you use the build script, use this fo=
+lder structure<br><br>&nbsp;&nbsp;&nbsp; openmundi/&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ##-&gt; create=
+ folder<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; world.db&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p; ##-&gt; git clone<br>&nbsp;&nbsp;&nbsp; openfootball/&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ## -&gt; create folde=
+r<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; build&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp; ## -&gt; git clone<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp; national-teams&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ## ..<br>&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; world-cup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ## ..<br><br>&nbsp;&=
+nbsp;&nbsp; and start you build from inside openfootball/build.&nbsp; You c=
+an see all folder references here [1]&nbsp; Cheers.<br><br>[1] <a href=3D"h=
+ttp://github.com/openfootball/build/blob/master/settings.rb" target=3D"_bla=
+nk" onmousedown=3D"this.href=3D'http://www.google.com/url?q\75http%3A%2F%2F=
+github.com%2Fopenfootball%2Fbuild%2Fblob%2Fmaster%2Fsettings.rb\46sa\75D\46=
+sntz\0751\46usg\75AFQjCNG1U3QFrux6f2IN2Qkg0B9CT8-2-Q';return true;" onclick=
+=3D"this.href=3D'http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fop=
+enfootball%2Fbuild%2Fblob%2Fmaster%2Fsettings.rb\46sa\75D\46sntz\0751\46usg=
+\75AFQjCNG1U3QFrux6f2IN2Qkg0B9CT8-2-Q';return true;">github.com/openfootbal=
+l/build/<wbr>blob/master/settings.rb</a><br></div></blockquote></div>
+------=_Part_4286_17849575.1400769110664--
+
+------=_Part_4285_25627568.1400769110664--
+

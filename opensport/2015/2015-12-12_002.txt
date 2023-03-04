@@ -1,0 +1,108 @@
+From 6227223683118661632@xxx Sat Dec 12 02:48:18 +0000 2015
+X-GM-THRID: 6227037093254660096
+Date: Fri, 11 Dec 2015 18:48:17 -0800 (PST)
+From: brian king <wangxydlut@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <52ab5261-e54d-4299-ad8d-9ac05936f417@googlegroups.com>
+In-Reply-To: <CAAxEZd_tzWTm=ZHwWdggS3R-=YPyo+QU+f0dv5nX8C_U4H7qpQ@mail.gmail.com>
+References: <3e97f6a6-54cc-4931-b25c-933403e73a88@googlegroups.com>
+ <CAAxEZd-jpNP6f8KJvjHdXwwrsCBu5FVUQ-gszwVFFsbFOndy-g@mail.gmail.com>
+ <e29fd86e-1067-49fd-9427-ce73b165388a@googlegroups.com>
+ <CAAxEZd_tzWTm=ZHwWdggS3R-=YPyo+QU+f0dv5nX8C_U4H7qpQ@mail.gmail.com>
+Subject: Re: [opensport] ActiveRecord::StatementInvalid: Could not find
+ table 'persons'
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3340_1932726561.1449888497944"
+X-Google-Token: EPGVrrMFKAoAVOHb3lM0
+X-Google-IP: 103.9.191.73
+
+------=_Part_3340_1932726561.1449888497944
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3341_1110965859.1449888497945"
+
+------=_Part_3341_1110965859.1449888497945
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Thank you so much. I remove "parse_goal function"=20
+in /var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb=20
+ #723, then it works!!!!
+
+=E5=9C=A8 2015=E5=B9=B412=E6=9C=8811=E6=97=A5=E6=98=9F=E6=9C=9F=E4=BA=94 UT=
+C+8=E4=B8=8B=E5=8D=8811:28:08=EF=BC=8CGerald Bauer=E5=86=99=E9=81=93=EF=BC=
+=9A
+>
+> Hello,=20
+>    Thanks looks like the "old" match schedule parser cannot handle=20
+> players and goals (e.g.  parse_goals).=20
+>
+>     As a workaround you can try:=20
+>
+>    1)  Add the missing table e.g.=20
+>
+>     use:=20
+>
+>      PersonDb.create    e.g. add it to  create_db migration [1]=20
+>
+>    or 2)=20
+>
+>     Use match fixtures (schedules) without players and goals. They=20
+> (that is, player and goals)  are not used in any way in sportbook=20
+> anyways.=20
+>
+>    Cheers.=20
+>
+> [1]=20
+> https://github.com/openbookie/sportbook/blob/master/db/migrate/001_create=
+_db.rb=20
+>
+
+------=_Part_3341_1110965859.1449888497945
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thank you so much. I remove &quot;parse_goal function&quot=
+; in=C2=A0/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.r=
+b =C2=A0#723, then it works!!!!<br><br>=E5=9C=A8 2015=E5=B9=B412=E6=9C=8811=
+=E6=97=A5=E6=98=9F=E6=9C=9F=E4=BA=94 UTC+8=E4=B8=8B=E5=8D=8811:28:08=EF=BC=
+=8CGerald Bauer=E5=86=99=E9=81=93=EF=BC=9A<blockquote class=3D"gmail_quote"=
+ style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-=
+left: 1ex;">Hello,
+<br>=C2=A0 =C2=A0Thanks looks like the &quot;old&quot; match schedule parse=
+r cannot handle
+<br>players and goals (e.g. =C2=A0parse_goals).
+<br>
+<br>=C2=A0 =C2=A0 As a workaround you can try:
+<br>
+<br>=C2=A0 =C2=A01) =C2=A0Add the missing table e.g.
+<br>
+<br>=C2=A0 =C2=A0 use:
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0PersonDb.create =C2=A0 =C2=A0e.g. add it to =C2=A0c=
+reate_db migration [1]
+<br>
+<br>=C2=A0 =C2=A0or 2)
+<br>
+<br>=C2=A0 =C2=A0 Use match fixtures (schedules) without players and goals.=
+ They
+<br>(that is, player and goals) =C2=A0are not used in any way in sportbook
+<br>anyways.
+<br>
+<br>=C2=A0 =C2=A0Cheers.
+<br>
+<br>[1] <a href=3D"https://github.com/openbookie/sportbook/blob/master/db/m=
+igrate/001_create_db.rb" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"=
+this.href=3D&#39;https://www.google.com/url?q\75https%3A%2F%2Fgithub.com%2F=
+openbookie%2Fsportbook%2Fblob%2Fmaster%2Fdb%2Fmigrate%2F001_create_db.rb\46=
+sa\75D\46sntz\0751\46usg\75AFQjCNH_8LpXJ0J5pfTcjidp2Rug-lsUUw&#39;;return t=
+rue;" onclick=3D"this.href=3D&#39;https://www.google.com/url?q\75https%3A%2=
+F%2Fgithub.com%2Fopenbookie%2Fsportbook%2Fblob%2Fmaster%2Fdb%2Fmigrate%2F00=
+1_create_db.rb\46sa\75D\46sntz\0751\46usg\75AFQjCNH_8LpXJ0J5pfTcjidp2Rug-ls=
+UUw&#39;;return true;">https://github.com/openbookie/<wbr>sportbook/blob/ma=
+ster/db/<wbr>migrate/001_create_db.rb</a>
+<br></blockquote></div>
+------=_Part_3341_1110965859.1449888497945--
+
+------=_Part_3340_1932726561.1449888497944--
+

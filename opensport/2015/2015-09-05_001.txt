@@ -1,0 +1,59 @@
+From 6190979993569329152@xxx Sat Sep 05 10:44:17 +0000 2015
+X-GM-THRID: 6190979992002756608
+X-Received: by 10.13.243.195 with SMTP id c186mr7981477ywf.36.1441449856607;
+        Sat, 05 Sep 2015 03:44:16 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.81.85 with SMTP id e79ls1725531qgd.44.gmail; Sat, 05 Sep
+ 2015 03:44:16 -0700 (PDT)
+X-Received: by 10.129.40.83 with SMTP id o80mr7955138ywo.27.1441449855987;
+        Sat, 05 Sep 2015 03:44:15 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x230.google.com (mail-ig0-x230.google.com. [2607:f8b0:4001:c05::230])
+        by gmr-mx.google.com with ESMTPS id i13si93532igh.3.2015.09.05.03.44.15
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 05 Sep 2015 03:44:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::230 as permitted sender) client-ip=2607:f8b0:4001:c05::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x230.google.com with SMTP id rk20so28176314igc.1
+        for <opensport@googlegroups.com>; Sat, 05 Sep 2015 03:44:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=RJxaAFo8f7t2Ui/HtiXIiyJEybGCFl2kB8R4y9tr8dU=;
+        b=a1LYHZ0E8RfrtKjxRllzl53VmTUJ2hdfVWMpSDhKgmEWA0uGY9P95unBnO+AgARkL1
+         IyMZHmhyDhHPYpPtxHir1YFojzhQvQygiyF4CMASV1B6+HRovJ0Sdj2re8zb7KYK2Qqw
+         hIvBh9fsO9dkujA7edoIaRiAM2DkniMP+2SyuGdO1e58th2WkaBJE/L2rB0xCtDyICAh
+         PK4bDI82xX1QZ+Zr5Iph4gDXKNCJi61x9Ra81yXqCRkfV+g+PP3j43Bs2OzAscELqqtw
+         WT75T6KDng2BJVdtbzBe+rcTEFSJYXkhwMRmn79o3vvnfCOKkpexK/D1TkmYCl3MQAtm
+         ZtUA==
+MIME-Version: 1.0
+X-Received: by 10.50.41.3 with SMTP id b3mr7121145igl.67.1441449855874; Sat,
+ 05 Sep 2015 03:44:15 -0700 (PDT)
+Received: by 10.107.142.205 with HTTP; Sat, 5 Sep 2015 03:44:15 -0700 (PDT)
+Date: Sat, 5 Sep 2015 12:44:15 +0200
+Message-ID: <CAAxEZd-yFQnmWpt5u7UXoM+hqqZqGsYu3RHx2d9JHATghvz8yA@mail.gmail.com>
+Subject: English Football - All 92 Clubs (Premier League, Championship, League
+ One, League Two) Added
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've added more clubs to /eng-england repo. The repo now
+includes all 92 clubs [1] from:
+
+   - Premier League (20)
+   - Championship (24)
+   - League One (24)
+   - League Two (24)
+
+  Cheers.
+
+[1] github.com/openfootball/eng-england/tree/master/clubs
+

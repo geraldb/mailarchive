@@ -1,0 +1,127 @@
+From 373705146368@xxx Tue Jun 16 00:17:18 +0000 2015
+X-GM-THRID: 359372161024
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,3d7f86f6355f099e
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.164.69 with SMTP id yo5mr3591568lbb.16.1393187252748;
+        Sun, 23 Feb 2014 12:27:32 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.224.33 with SMTP id qz1ls234025lac.37.gmail; Sun, 23 Feb
+ 2014 12:27:32 -0800 (PST)
+X-Received: by 10.112.215.3 with SMTP id oe3mr11208718lbc.20.1393187252501;
+        Sun, 23 Feb 2014 12:27:32 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x236.google.com (mail-we0-x236.google.com [2a00:1450:400c:c03::236])
+        by gmr-mx.google.com with ESMTPS id ey7si380233wib.1.2014.02.23.12.27.32
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 23 Feb 2014 12:27:32 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) client-ip=2a00:1450:400c:c03::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x236.google.com with SMTP id u57so4082585wes.13
+        for <opensport@googlegroups.com>; Sun, 23 Feb 2014 12:27:32 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=FNPD/CeNijGfJcm0XoE03c1KVBC2NLfvrMnm2kUipAs=;
+        b=YnQHpOfg/ppJC2ytTnDl/MxdaABxDpVQnzCRDlTcIoonubGIinfBYYnNI5Wztj1QJE
+         KZKUiwj96OfJNhJ+2G07Q/FIJ/GqaNANYjE/DLyyzTlzXBaSgvRngslYPDmDszhjCd2U
+         nnT7NlVIQnz4dqsoG4l1WAODjCGcmbimOYvGwU2K61+mLxAbbiYLWmipjGs4+HvnAmZj
+         c1SXDEkgtKHKwm/ww801DAoFndwzHlXn0WkM3+yt3mjDAskHEBIoOScDHerwEvXupvbC
+         g2W5FwkSzjSNMsrsCDZOdJtPu3p3yw393kI88gqT84kN1/5uwIBkgsDaUsC4jd3TDMAB
+         kagg==
+MIME-Version: 1.0
+X-Received: by 10.180.73.103 with SMTP id k7mr11424383wiv.24.1393187252398;
+ Sun, 23 Feb 2014 12:27:32 -0800 (PST)
+Received: by 10.216.208.136 with HTTP; Sun, 23 Feb 2014 12:27:32 -0800 (PST)
+In-Reply-To: <56ff58fb-b1ee-47f7-ad69-515ce593950c@googlegroups.com>
+References: <eb215b28-052e-42c7-afdc-6c070d8ea347@googlegroups.com>
+	<45c0bc7d-37ab-462e-8e97-cd4caa8a1735@googlegroups.com>
+	<b6417529-1f50-4dc0-9f56-46c02dcfa1db@googlegroups.com>
+	<56ff58fb-b1ee-47f7-ad69-515ce593950c@googlegroups.com>
+Date: Sun, 23 Feb 2014 14:27:32 -0600
+Message-ID: <CAAxEZd_K7sw-aGEaD0+1CkxvFbm13JhO1GtTyVPtr4n_C-dzFA@mail.gmail.com>
+Subject: Re: [opensport] Re: sportdb: show time of a fixture
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   Try using the rake tasks for building the gem and installing. The
+sportdb.gemspec is only used for Travis e.g. continous testing (and
+might not be update-to-date).
+
+  e.g. try
+
+rake -T
+
+   to see all tasks and then use
+
+rake install_gem
+
+   to build the gem from your source and install it into your local
+gemset.  Let me know if it work. Good look.Cheers.
+
+2014-02-23 13:02 GMT-06:00 Fabio <fabio.genoese@gmail.com>:
+> Follow-up:
+>
+> I changed line 141, from:
+>>
+>> play_at: g.play_at.strftime('%Y/%m/%d'),
+>
+>
+> to:
+>>
+>> play_at: g.play_at.strftime('%Y/%m/%d %H:%M'),
+>
+>
+> Then built the gem:
+>
+> gem build sportdb.gemspec
+>
+>
+> And installed it:
+>
+> sudo gem install sportdb-1.8.2.gem
+>
+>
+> ...but I do not see any difference in the output.
+>
+> Did I miss something?
+>
+> Il giorno domenica 23 febbraio 2014 18:38:39 UTC+1, Fabio ha scritto:
+>>
+>> Thank you, Gerald! I think I managed to change the line but I was asking
+>> myself how to "build" a ruby project. :)
+>> I downloaded the source, changed the file and then entered "bundle gem
+>> sportsdb". Is that correct? If yes: what is the next step, i.e. where is the
+>> sportsdb that I can run?
+>>
+>> Best, Fabio
+>>
+>> Il giorno domenica 23 febbraio 2014 17:52:09 UTC+1, Gerald Bauer ha
+>> scritto:
+>>>
+>>> Hello Fabio,
+>>>
+>>>    Sorry the HTTP JSON API is currently a little basic. The good news
+>>> it's easy to change. It's basically a single-file Sinatra script in Ruby
+>>> [1]. Cheers.
+>>>
+>>> [1]
+>>> github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/service/server.rb
+>>>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/groups/opt_out.
+

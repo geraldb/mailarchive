@@ -1,0 +1,49 @@
+From 508663169024@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 499705184256
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,95f71f5c2c5a3d45
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.223.104.19 with SMTP id m19mr22052fao.1.1235153659160;
+        Fri, 20 Feb 2009 10:14:19 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from fk-out-0910.google.com (fk-out-0910.google.com [209.85.128.189])
+        by mx.google.com with ESMTP id 15si142717fxm.1.2009.02.20.10.14.18;
+        Fri, 20 Feb 2009 10:14:18 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.128.189 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.128.189;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.128.189 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by fk-out-0910.google.com with SMTP id f40so1492344fka.11
+        for <webslideshow@googlegroups.com>; Fri, 20 Feb 2009 10:14:18 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.181.145.6 with SMTP id x6mr364233bkn.94.1235153658468; Fri, 20 
+	Feb 2009 10:14:18 -0800 (PST)
+In-Reply-To: <0d53964d-f77a-46cb-a96b-75dd529181a6@v42g2000yqj.googlegroups.com>
+References: <1f058eab0902190337g73afc15bl1d339c6b54a4223e@mail.gmail.com>
+	 <0d53964d-f77a-46cb-a96b-75dd529181a6@v42g2000yqj.googlegroups.com>
+Date: Fri, 20 Feb 2009 19:14:18 +0100
+Message-ID: <1f058eab0902201014w5924129ya8f59226ae118303@mail.gmail.com>
+Subject: Re: [slideshow] Re: S6 Updated; Now Includes Incremental Display 
+	(Steps); S9 Updated w/ S6 Templates
+From: Gerald Bauer <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello Bruce,
+
+> So am I correct that you've changed what in S5 had been "incremental"
+> to "step"?
+>
+> If yes, why?
+
+  The idea is that "step" is easier to understand for newcomers
+because it's a simpler (plain English) word (also less to type just
+four letters). FullerScreen also uses step. That was the inspiration
+(not really my idea).
+
+  If you think there are any issues with S5 compatibility one option
+might be to make the stepselector configurable so you can use whatever
+you think is best.
+
+  Cheers.
+

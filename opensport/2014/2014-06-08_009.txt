@@ -1,0 +1,103 @@
+From 1094507823104@xxx Tue Jun 16 00:17:04 +0000 2015
+X-GM-THRID: 1070877114368
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,ee3355fbf99011aa
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.250.229 with SMTP id zf5mr10355035obc.4.1402236813950;
+        Sun, 08 Jun 2014 07:13:33 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.81.38 with SMTP id w6ls722246obx.17.gmail; Sun, 08 Jun
+ 2014 07:13:33 -0700 (PDT)
+X-Received: by 10.182.91.37 with SMTP id cb5mr128797obb.0.1402236813641;
+        Sun, 08 Jun 2014 07:13:33 -0700 (PDT)
+X-Google-Doc-Id: e9fceeaa051fe043
+X-Google-Web-Client: true
+Date: Sun, 8 Jun 2014 07:13:32 -0700 (PDT)
+From: alex olsen <alexolsen03@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <e8babde6-59f7-4868-85ef-94edb1e2166a@googlegroups.com>
+In-Reply-To: <7227e5df-59bf-435c-9284-2dac58cd33e8@googlegroups.com>
+References: <e372a846-c449-40c6-80c4-a05921c06a91@googlegroups.com>
+ <7227e5df-59bf-435c-9284-2dac58cd33e8@googlegroups.com>
+Subject: Re: Noob help
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_810_8707390.1402236813071"
+X-Google-Token: EIzf0ZwF0a_ziHYnHyw0
+X-Google-IP: 68.13.85.16
+
+------=_Part_810_8707390.1402236813071
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_811_14239501.1402236813071"
+
+------=_Part_811_14239501.1402236813071
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Cool, thanks for the reply.  I've got it up and running and added a few new 
+REST requests to what you had already supplied in the starter api.  My next 
+question is in trying to get this deployed to heroku.  Did you perhaps have 
+that documented somewhere?  It seems that in sqlite3 I can point directly 
+to the .db file but that doesn't fly in postgres.  Would appreciate any 
+guidance you have on that.
+
+Thanks again!
+
+On Sunday, June 8, 2014 2:58:15 AM UTC-5, Gerald Bauer wrote:
+>
+> Hello,
+>
+>    Thanks for your interest in football.db.  You can get pre-built 
+> databases on the build release page [1] - for the World Cup in Brazil -  
+> download the worldcup2014.db file.
+>
+>     Of course - with more experience (later) it's best to build your own 
+> copy (to make sure you get up-to-date data and include what you need etc.)
+>
+>     You can start as an alternative the service using the sportdb command 
+> line tool e.g.
+>
+> $ sportdb serve    # assume default database name (sport.db)  rename or 
+> change via -d switch e.g.
+> $ sportdb -d worldcup2014.db serve
+>
+>     Good luck. Cheers.
+>
+> [1] github.com/openfootball/build/releases
+>
+
+------=_Part_811_14239501.1402236813071
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Cool, thanks for the reply. &nbsp;I've got it up and runni=
+ng and added a few new REST requests to what you had already supplied in th=
+e starter api. &nbsp;My next question is in trying to get this deployed to =
+heroku. &nbsp;Did you perhaps have that documented somewhere? &nbsp;It seem=
+s that in sqlite3 I can point directly to the .db file but that doesn't fly=
+ in postgres. &nbsp;Would appreciate any guidance you have on that.<div><br=
+></div><div>Thanks again!<br><br>On Sunday, June 8, 2014 2:58:15 AM UTC-5, =
+Gerald Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;mar=
+gin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D=
+"ltr">Hello,<br><br>&nbsp;&nbsp; Thanks for your interest in football.db.&n=
+bsp; You can get pre-built databases on the build release page [1] - for th=
+e World Cup in Brazil -&nbsp; download the worldcup2014.db file.<br><br>&nb=
+sp;&nbsp;&nbsp; Of course - with more experience (later) it's best to build=
+ your own copy (to make sure you get up-to-date data and include what you n=
+eed etc.)<br><br>&nbsp;&nbsp;&nbsp; You can start as an alternative the ser=
+vice using the sportdb command line tool e.g.<br><br>$ sportdb serve&nbsp;&=
+nbsp;&nbsp; # assume default database name (sport.db)&nbsp; rename or chang=
+e via -d switch e.g.<br>$ sportdb -d worldcup2014.db serve<br><br>&nbsp;&nb=
+sp;&nbsp; Good luck. Cheers.<br><br>[1] <a href=3D"http://github.com/openfo=
+otball/build/releases" target=3D"_blank" onmousedown=3D"this.href=3D'http:/=
+/www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fbuild%2Fre=
+leases\46sa\75D\46sntz\0751\46usg\75AFQjCNGxDlLc1ODuNmYWCPFR8TaFKv52kQ';ret=
+urn true;" onclick=3D"this.href=3D'http://www.google.com/url?q\75http%3A%2F=
+%2Fgithub.com%2Fopenfootball%2Fbuild%2Freleases\46sa\75D\46sntz\0751\46usg\=
+75AFQjCNGxDlLc1ODuNmYWCPFR8TaFKv52kQ';return true;">github.com/openfootball=
+/build/<wbr>releases</a><br></div></blockquote></div></div>
+------=_Part_811_14239501.1402236813071--
+
+------=_Part_810_8707390.1402236813071--
+

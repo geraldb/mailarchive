@@ -1,0 +1,67 @@
+From 1164959547392@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1166392950784
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b0f71368cb8e3c87
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.66.163 with SMTP id g3mr4167338pat.3.1402467095833;
+        Tue, 10 Jun 2014 23:11:35 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.3.7 with SMTP id 7ls831472igy.19.canary; Tue, 10 Jun 2014
+ 23:11:35 -0700 (PDT)
+X-Received: by 10.50.66.200 with SMTP id h8mr835890igt.1.1402467095495;
+        Tue, 10 Jun 2014 23:11:35 -0700 (PDT)
+Received: by 10.50.82.104 with SMTP id h8msigy;
+        Tue, 10 Jun 2014 19:09:25 -0700 (PDT)
+X-Received: by 10.50.7.97 with SMTP id i1mr559042iga.8.1402452565563;
+        Tue, 10 Jun 2014 19:09:25 -0700 (PDT)
+X-Google-Doc-Id: 9fbe2d0080cada84
+X-Google-Web-Client: true
+Date: Tue, 10 Jun 2014 19:09:24 -0700 (PDT)
+From: "Craig A." <craigappl@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <3823a33d-fe31-405f-a04f-cc92cc8e398f@googlegroups.com>
+Subject: Sportbook Heroku Rake Error
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1304_33019717.1402452564515"
+X-Google-Token: ENT03pwFn4x8ZQPMLtU0
+X-Google-IP: 202.52.249.250
+
+------=_Part_1304_33019717.1402452564515
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1305_5635392.1402452564515"
+
+------=_Part_1305_5635392.1402452564515
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Everyone,
+
+I'm trying to deploy sportbook on Heroku and having trouble with the 
+db:setup. I get the following error: 
+
+Command: heroku run rake db:setup --app <app_name>
+
+Error: 
+*** deleting sport table records/data...
+rake aborted!
+ActiveRecord:: StatementInvalid: PG::UndefinedTable:Error: relation 
+"alltime_standing_entries" does not exist
+LINE 1: DELETE FROM "alltime_standing_entries" 
+/app/vendor/bundle/ruby/2.0.0/gems/activerecord-3.2.12/lib/active_record/connection_adapters/postgresql_adapter.rb:1153:
+
+Thank you for your help!
+
+Craig
+
+
+------=_Part_1305_5635392.1402452564515
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi Everyone,<div><br></div><div>I'm trying to deploy sportbook on Heroku and having trouble with the db:setup. I get the following error:&nbsp;</div><div><br></div><div>Command: heroku run rake db:setup --app &lt;app_name&gt;</div><div><br></div><div>Error:&nbsp;</div><div>*** deleting sport table records/data...</div><div>rake aborted!</div><div>ActiveRecord:: StatementInvalid: PG::UndefinedTable:Error: relation "alltime_standing_entries" does not exist</div><div>LINE 1: DELETE FROM "alltime_standing_entries" /app/vendor/bundle/ruby/2.0.0/gems/activerecord-3.2.12/lib/active_record/connection_adapters/postgresql_adapter.rb:1153:</div><div><br></div><div>Thank you for your help!</div><div><br></div><div>Craig</div><div><br></div></div>
+------=_Part_1305_5635392.1402452564515--
+
+------=_Part_1304_33019717.1402452564515--
+

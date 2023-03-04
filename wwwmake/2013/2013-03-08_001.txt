@@ -1,0 +1,62 @@
+From 1205691482112@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 1200935141376
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,b37f74da9967891e
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.224.72.199 with SMTP id n7mr1163696qaj.5.1362729081539;
+        Thu, 07 Mar 2013 23:51:21 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.127.48 with SMTP id nd16ls99106qeb.17.gmail; Thu, 07 Mar
+ 2013 23:51:20 -0800 (PST)
+MIME-Version: 1.0
+X-Received: by 10.49.121.99 with SMTP id lj3mr63242qeb.0.1362729080376; Thu,
+ 07 Mar 2013 23:51:20 -0800 (PST)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by w3g2000vba.googlegroups.com with HTTP; Thu, 7 Mar 2013 23:51:20
+ -0800 (PST)
+Date: Thu, 7 Mar 2013 23:51:20 -0800 (PST)
+In-Reply-To: <1f960f96-b92e-49e0-ac60-d52ba6e14cdc@googlegroups.com>
+References: <1f960f96-b92e-49e0-ac60-d52ba6e14cdc@googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EPiw5okF34rTbeNTfbs0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:19.0)
+ Gecko/20100101 Firefox/19.0,gzip(gfe)
+X-Google-IP: 93.82.52.5
+Message-ID: <8fae5535-5a82-4195-8754-de8e1480c2fe@w3g2000vba.googlegroups.com>
+Subject: Re: Why OpenSSL::SSL::SSLError when I try to fetch deck.js template
+ on windows?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  Can you post the SSLError message and can you tell us what versions
+of Ruby and OpenSSL you're using e.g. try
+
+     $ ruby --version
+
+     => ruby 1.9.2p290 (2011-07-09) [i386-mingw32]
+
+     $ openssl version
+
+     => OpenSSL 0.9.8e 23 Feb 2007
+
+
+  Note, as an alternative you can always download template packs using
+git. Example:
+
+  $ cd ~/.slideshow/templates
+  $ git clone git://github.com/geraldb/slideshow-impress.js.git
+
+  Cheers.
+

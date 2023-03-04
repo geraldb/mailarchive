@@ -1,0 +1,102 @@
+From 6842395120634953728@xxx Thu Jun 25 21:07:41 +0000 2020
+X-GM-THRID: 6842395123752370176
+X-Received: by 2002:adf:afc3:: with SMTP id y3mr105405wrd.277.1593119260998;
+        Thu, 25 Jun 2020 14:07:40 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:adf:aace:: with SMTP id i14ls1658569wrc.3.gmail; Thu, 25 Jun
+ 2020 14:07:40 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyJkDy0mB2s3Lvps/oqP2kCQ/xGohYO7vrb9F7nvsLGLjHIBPMZ/bvZ3lu3niSxXE8iN6Ha
+X-Received: by 2002:adf:e4cc:: with SMTP id v12mr158170wrm.92.1593119260048;
+        Thu, 25 Jun 2020 14:07:40 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1593119260; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ZtiWRoCBiX7inCFKeulYAtWrz9csqKi/d29PLxk5bQeFSNpMQ4C6Y5A9sSwVXWRL7N
+         X76gzcUZlr/ih2VX9NVX1pd8sUWLk4awBKDxLR0Zq5xFNXZA33rPUYhDaM4bE8AnwkzU
+         wBLyw4ngd1ziNT5/fMHgnV7wrh3y9YlSBWETOI2aibRKqCQcugz4RzyNJgR7KVK7CQaZ
+         JIXJB2N3teLLcw6PperNdNO7ktElodihIxxl9etRzCq5MmT25iFurRaAanVDUvkkjOY6
+         wo+Xaq3bpIxQG6P3i16r5IeyuKpgfYllPsxHTUa9aN3z6qkmCF8gzXAPZYRhFYwkuJSh
+         85Uw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=pLS7thirofxgwqYt+s9G83mH5kbjXKrc2PB73WKZxq0=;
+        b=z1a7HMhosntNBPiu7eZsAIeTjfG6hLOLzs0O8sP0SWwcyPITM+O3trragklInkVxOp
+         uocBRV2sbf/j1xcx0Udcxmnl563am2rar+LBJsznpShWWhig8pIqGCJVJeIvXbL/QiKq
+         EurFNPNnD8xsMHL/1vI57FBWMHghEalkY/79cu5sRXeI6KBHG72WVevzPJA+oLblkfd3
+         0ZgOwcVsgk3rBHiRxU45sQf05Xvyvrf5PxWMRMKMMr+R8btZpKFtRfLqVANBJmRSvGmD
+         Tzo/29uoqivMUi03OoZrdyGVgbDmcPaGSbz57icTdejZ2Kktc2OBwPkyZclS1EqTZGxR
+         wp6w==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=glt1T5ty;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x229.google.com (mail-lj1-x229.google.com. [2a00:1450:4864:20::229])
+        by gmr-mx.google.com with ESMTPS id u17si1274630wrq.1.2020.06.25.14.07.40
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 25 Jun 2020 14:07:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::229 as permitted sender) client-ip=2a00:1450:4864:20::229;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=glt1T5ty;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x229.google.com with SMTP id h22so931405lji.9
+        for <opensport@googlegroups.com>; Thu, 25 Jun 2020 14:07:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=pLS7thirofxgwqYt+s9G83mH5kbjXKrc2PB73WKZxq0=;
+        b=glt1T5tydvhnKBFzjf4YGC0L4wNlEuv6+1o7JmK0xU43/4c7oocwtnnx9rFyz4xszm
+         8EKUnB8HN0O+N1JHVXry6siWdAuuc+vEgkurN0LKgz2BhBIfP8uqEsbPXabFNtj1T9OZ
+         IJ/WNlqfNerQVsLrDvbcvDMSS2IDeNanQvP02l1fR353nA56zdvw4ZRZof8LoCu6fIyC
+         5GHrFqGJNn0fntJtGAQ1UonbA8qKj0iAlhPMkMCCcpbOqK8o4kf7Z/lzDjgtcC4LEm6f
+         HmMKkDJDpbNss9XjdWDwmtx0PcQnY9ujCZfmfdEadRL0iUYUKtfUPTn/wavXeffKzxZj
+         e6hA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=pLS7thirofxgwqYt+s9G83mH5kbjXKrc2PB73WKZxq0=;
+        b=WxESlK4z32w9vjY35c/qf2L03qEKakI24sTiNibdDVMNy9L00FjniZtIF8xggScY8Z
+         WyoILp2O4HIimiAoHDEqKe8JOb7H1K88N5XCR5UfGLXmKMqzt2KxmpcyGhPJ8ND/NCt7
+         qwV1IbVhg/AXL+CDDtpqYR9kuhl4W6a37QE9pziFUi47iqXi3frILAi+CwHuD8Q9era9
+         EXON7NvU6GrF8R+dNrLm0pxRc+NQNyag+c/va6pMO5TkWJS5rhJWKWRYwFARn5QBHnO6
+         n1ZsVqu+hxo57h47jeIWiDKXBVydbFWZ56X+tpT+d/dWr9N7lC3cFi2HeDfwXCqVXsFc
+         6P9g==
+X-Gm-Message-State: AOAM533kBCPKJkAHyxJM1+wfpezePUxTcGS5eEuj/rKTBzYsHaorDb9b
+	gTAyiTj0Ha++8iaBrPm/6YCYwtLzd8QaH7+YpVGtdUtWpS0=
+X-Received: by 2002:a2e:85d8:: with SMTP id h24mr16878207ljj.274.1593119259462;
+ Thu, 25 Jun 2020 14:07:39 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 25 Jun 2020 23:07:27 +0200
+Message-ID: <CAAxEZd-DJ7oQX8TbqHfJ_YO0f0+Z0uMovbOe0fX0Grd9SS6bMA@mail.gmail.com>
+Subject: Football.TXT & Football.CSV Format Specs; New Home for Football.DB F.A.Q.
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  I have started on documenting the Football.TXT and Football.CSV formats.
+ Still very early, that is, for the documentation / spec(ifications)s.
+
+   The Football.TXT spec (and tests) [1a][1b]
+  and the Football.CSV spec (and tests) [2a][2b]
+  have now their very own (source) repo (on the backend) and
+  web page (on the frontend).
+
+   Also to kind of "revive" the
+   Frequently Asked Questions and Answers (FAQs) page
+   I moved the page to the new help or
+   all-issues-in-one-tracker repo [3].
+
+     If you have any questions about the formats or the new
+  help page, please tell.
+
+    Cheers. Prost.
+
+[1a]  https://github.com/openfootball/spec
+[1b]  http://openfootball.github.io/spec
+[2a]  https://github.com/footballcsv/spec
+[2b]  https://footballcsv.github.io/spec
+[3]   https://github.com/openfootball/help
+

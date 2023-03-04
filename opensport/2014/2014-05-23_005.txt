@@ -1,0 +1,63 @@
+From 786593480704@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 785360355328
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,443c39991bfa31a2
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.120.129 with SMTP id lc1mr1393587obb.21.1400828679497;
+        Fri, 23 May 2014 00:04:39 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.24.42 with SMTP id 39ls1656875qgq.26.gmail; Fri, 23 May
+ 2014 00:04:39 -0700 (PDT)
+X-Received: by 10.140.104.52 with SMTP id z49mr14693qge.12.1400828679298;
+        Fri, 23 May 2014 00:04:39 -0700 (PDT)
+X-Google-Doc-Id: 4b827a646a53a56d
+X-Google-Web-Client: true
+Date: Fri, 23 May 2014 00:04:38 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <5ef79158-a0e0-4249-9b32-83ea99451292@googlegroups.com>
+In-Reply-To: <22f20b30-4202-4cc7-b442-9ff3ce1f2feb@googlegroups.com>
+References: <22f20b30-4202-4cc7-b442-9ff3ce1f2feb@googlegroups.com>
+Subject: Re: Football : How to add league standings?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_306_8219383.1400828678891"
+X-Google-Token: EIbm-5sFeVSWgA73ZEw0
+X-Google-IP: 188.23.102.178
+
+------=_Part_306_8219383.1400828678891
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_307_33140901.1400828678891"
+
+------=_Part_307_33140901.1400828678891
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+   Good question. That's the big plus using structured data.
+
+> how to add league standings? such as number of match played, 
+win-draw-lose, goal scored, etc.
+
+  League standings get auto-calculated using sql queries and updates! Big 
+plus: Always up-to-date (just recalculate). 
+
+  Of course, someone has to write some sql scripts. You're welcome to get 
+started.
+
+   Once the standings are stored in the database you can generate reports / 
+booklets / web pages etc. as you like. 
+
+   Cheers.
+
+------=_Part_307_33140901.1400828678891
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<br><br>&nbsp;&nbsp; Good question. That's the big plus using structured data.<br><br>&gt; how to add league standings? such as number of match played, win-draw-lose, goal scored, etc.<br><br>&nbsp; League standings get auto-calculated using sql queries and updates! Big plus: Always up-to-date (just recalculate). <br><br>&nbsp; Of course, someone has to write some sql scripts. You're welcome to get started.<br><br>&nbsp;&nbsp; Once the standings are stored in the database you can generate reports / booklets / web pages etc. as you like. <br><br>&nbsp;&nbsp; Cheers.<br></div>
+------=_Part_307_33140901.1400828678891--
+
+------=_Part_306_8219383.1400828678891--
+

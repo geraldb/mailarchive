@@ -1,0 +1,101 @@
+From 1078549544960@xxx Tue Jun 16 00:17:02 +0000 2015
+X-GM-THRID: 1079403085824
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,2ff3951804b7faac,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.82.134 with SMTP id i6mr2591522wiy.1.1402219935483;
+        Sun, 08 Jun 2014 02:32:15 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.170.201 with SMTP id ao9ls211283lac.77.gmail; Sun, 08 Jun
+ 2014 02:32:14 -0700 (PDT)
+X-Received: by 10.152.115.195 with SMTP id jq3mr108253lab.4.1402219934913;
+        Sun, 08 Jun 2014 02:32:14 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x234.google.com (mail-we0-x234.google.com [2a00:1450:400c:c03::234])
+        by gmr-mx.google.com with ESMTPS id m20si1029981wij.1.2014.06.08.02.32.14
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 08 Jun 2014 02:32:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::234 as permitted sender) client-ip=2a00:1450:400c:c03::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x234.google.com with SMTP id x48so1766065wes.25
+        for <opensport@googlegroups.com>; Sun, 08 Jun 2014 02:32:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=4ypEBk1rBnqsqOUasvA2QjrBdm3EnKyQp5HuHDemPWE=;
+        b=QtaOvRPQ9K3A3iaS+dtSrtFVFODOBalhRnCrZcYIKWyFsvYhpYEc2q9l5oZ8FEfGdq
+         VOVsHs/jm0Dp92/31slfOKID/+3xQc9ctZLSge+HDSNFTE5ZzIVLoGWfzbECv3Toz9lW
+         n5E+qgfxYRi61xmalUbocWyuw1Vxt7MuUCcNNBA+Klu8ONUIjOgaMyvs4FAASqEofcLR
+         IeA++COxHDKhw8D548Qmzc8qx+oosEZGTQJii0qNo2ASBorGtsl7cTy7utqmOBfHW0En
+         nhLMJ9n97Cxahb/N+B9K5+uOVu8I/o1MDeRYH2+i9Cd5gquTldmMmt6XPhjU8x+jRx8f
+         kWxg==
+MIME-Version: 1.0
+X-Received: by 10.194.189.116 with SMTP id gh20mr21562440wjc.41.1402219934820;
+ Sun, 08 Jun 2014 02:32:14 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Sun, 8 Jun 2014 02:32:14 -0700 (PDT)
+Date: Sun, 8 Jun 2014 11:32:14 +0200
+Message-ID: <CAAxEZd8Zw4=rk1EbPWvAJFnMyeVGNf4rkEzYQoeeCTp3weKfTA@mail.gmail.com>
+Subject: New Tables - assocs (and assocs_assocs join table) - Sport Associations/Confederations/Bodies
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI:  The sportdb schema includes two new tables, that is, assocs
+and assocs_assocs that let you model / include sport governing bodies
+(e.g. FIFA, UEFA, FA, etc.).
+
+  I've also added all the world's football governing bodies to the
+national team repo (see the assocs.txt files) [1].  After an import
+the stats for the fooball.db read:
+
+  1 -- F=C3=A9d=C3=A9ration Internationale de Football Association (FIFA) /
+national assocs 209
+       sub zones 6:
+      2 -- Union of European Football Associations (UEFA) / national assocs=
+ 54
+      2 -- Confederaci=C3=B3n Sudamericana de F=C3=BAtbol (CONMEBOL) / nati=
+onal assocs 10
+      2 -- Confederation of North, Central American and Caribbean
+Association Football (CONCACAF) / national assocs 41
+         sub zones 3:
+        3 -- North American Football Union (NAFU) / North American
+Zone / national assocs 3
+        3 -- Uni=C3=B3n Centroamericana de F=C3=BAtbol (UNCAF) / Central
+American Zone / national assocs 7
+        3 -- Caribbean Football Union (CFU) / Caribbean Zone /
+national assocs 31
+      2 -- Conf=C3=A9d=C3=A9ration Africaine de Football (CAF) / national a=
+ssocs 56
+         sub zones 5:
+        3 -- Council for East and Central Africa Football Associations
+(CECAFA) / national assocs 12
+        3 -- Council of Southern Africa Football Associations (COSAFA)
+/ national assocs 14
+        3 -- West African Football Union (WAFU) / national assocs 16
+        3 -- Union of North African Federations (UNAF) / national assocs 5
+        3 -- Union des F=C3=A9d=C3=A9rations du Football de l'Afrique Centr=
+ale
+(UNIFFAC) / national assocs 8
+      2 -- Asian Football Confederation (AFC) / national assocs 47
+         sub zones 4:
+        3 -- West Asian Football Federation (WAFF) / national assocs 13
+        3 -- East Asian Football Federation (EAFF) / national assocs 10
+        3 -- Central and South Asian Football Federation (CSAFF) /
+national assocs 12
+        3 -- Association of South East Asian Nations Football
+Federation (AFF) / national assocs 12
+      2 -- Oceania Football Confederation (OFC) / national assocs 14
+
+  Cheers.
+
+[1] github.com/openfootball/national-teams/blob/master/assocs.txt
+

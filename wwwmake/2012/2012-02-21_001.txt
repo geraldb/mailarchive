@@ -1,0 +1,66 @@
+From 1054392451072@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1054084169728
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,a7fe5d3f3b08a44e,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.52.88.102 with SMTP id bf6mr9453541vdb.2.1329865081547;
+        Tue, 21 Feb 2012 14:58:01 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.30.131 with SMTP id u3ls2489682vcc.3.gmail; Tue, 21 Feb
+ 2012 14:58:00 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.52.22.3 with SMTP id z3mr2815004vde.2.1329865080240; Tue, 21
+ Feb 2012 14:58:00 -0800 (PST)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by z31g2000vbt.googlegroups.com with HTTP; Tue, 21 Feb 2012 14:58:00
+ -0800 (PST)
+Date: Tue, 21 Feb 2012 14:58:00 -0800 (PST)
+User-Agent: G2/1.0
+X-Google-Token: EPjCkPoEJbMxk9wHWSU0
+X-Google-Web-Client: true
+X-Google-Header-Order: HUALENKRC
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:10.0.2)
+ Gecko/20100101 Firefox/10.0.2,gzip(gfe)
+X-Google-IP: 188.23.58.160
+Message-ID: <7de79ee3-c415-4951-8df9-65ea805309b5@z31g2000vbt.googlegroups.com>
+Subject: Slideshow (S9) Update - Gradient Backgrounds via Headers Now Back in
+ S6 Blank (SVG Repaced w/ CSS3)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  I've uploaded a new Slideshow (S9) gem, that is, v0.9.11. What's
+new?
+
+  Gradients via headers are back in the builtin S6 template pack. I
+added a new helper, that is, gradient_from_headers[1], that will
+generate and add the proper CSS3 style rule if you set any of the
+gradient headers, that is, gradient, gradient-theme or gradient-
+colors.
+
+  For example, try:
+
+   gradient: top-bottom red black
+
+   and it will now work again as advertised on the gradient themes
+page[2] if your browser supports CSS3 gradients. See the "When can I
+use" site[3] or try the gradient sample page (using CSS3)[4] to check
+up on browser support (e.g. Internet Explorer 10+, Firefox 3.6+, Opera
+11.1+, Chrome 10+ etc.).
+
+   Cheers.
+
+[1] https://github.com/geraldb/slideshow/blob/master/lib/slideshow/helpers/background_helper.rb
+[2] http://slideshow.rubyforge.org/themes.html
+[3] http://caniuse.com/css-gradients
+[4] http://slideshow.rubyforge.org/gradient-styles-red.html
+

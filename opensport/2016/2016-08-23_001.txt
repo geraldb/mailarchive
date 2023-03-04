@@ -1,0 +1,79 @@
+From 6321974963794345984@xxx Tue Aug 23 10:51:40 +0000 2016
+X-GM-THRID: 6319522571312168960
+X-Received: by 10.157.19.17 with SMTP id f17mr20753429ote.33.1471949499978;
+        Tue, 23 Aug 2016 03:51:39 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.56.52 with SMTP id i49ls1554768otc.1.gmail; Tue, 23 Aug
+ 2016 03:51:39 -0700 (PDT)
+X-Received: by 10.31.170.82 with SMTP id t79mr19967716vke.2.1471949499680;
+        Tue, 23 Aug 2016 03:51:39 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22d.google.com (mail-it0-x22d.google.com. [2607:f8b0:4001:c0b::22d])
+        by gmr-mx.google.com with ESMTPS id o70si1403163ith.1.2016.08.23.03.51.39
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 23 Aug 2016 03:51:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22d as permitted sender) client-ip=2607:f8b0:4001:c0b::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22d.google.com with SMTP id e63so138724889ith.1
+        for <opensport@googlegroups.com>; Tue, 23 Aug 2016 03:51:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=rpn2AFaqGveEutcp4bLj2YPtQUpEW2CftPSC5YRx2yM=;
+        b=aNdLLZB/ss/lpuedpZ4bnaRhY+aKhaklee2tStWvVlSqbNml7iqdrloYNvRS+h84P5
+         9xoLcWLLHpGmQYkHveZ9znwCoJtofh6f1hP6x7VnHcb4mH5zYSYr8+agDZhrOISwAg63
+         a2oM0GsjWLtbSKgK2nUPRtZS2PgSDGXwn6zT6K9Cjn8UMXfXs3mH0mpNmkkNMTR11kRW
+         suZsmeQpb8I2tVogKVriNLlGjr1cuZkTeOiYGf0zvRgWoqebpjUCSF/fqr+SHGaXzC6h
+         jNGHFOP6knXda58Jlx5OTJ2ZpO8I6WvH0SlHHz2rlPcjj7uCGDXYLguWqyHtJcBAQeXF
+         e6ow==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=rpn2AFaqGveEutcp4bLj2YPtQUpEW2CftPSC5YRx2yM=;
+        b=EZffwA4wMepuJVWIbumXgyo/fx9g9GWTOOZa6t1g7d9TR5MjKpTXcrRlWfldoINuPz
+         WS8CbGmSU3UcJp/c0ZaP0NOPvFAsbYhFA/6AgEl2nlrav9LKbVQAL9ZqvNbD+lJVvHBM
+         Egy9SKFoKQ1JzN4mvvX3zahJPOqV7WydiWBViwthbPAQJsTn/MZP7g8dpH1zIFvyzmsv
+         YXhOb5THX2WfZ2iAu41T3KsWJ+UXoLOavTSMJAHK0LJ+IRg7VnhOtY5VmZX1zCUmopMu
+         fJ5bM5krb+mE4NmY+Ozd+sbgI84cHETGZqWRXQksL24F2676js78DMxbqHYBENvYKpZG
+         T6sA==
+X-Gm-Message-State: AEkoouscuMHCyjVvW8kKtCsvV5pwsBAGPs74b6lrde3ewdmIMTq52lLU+5EhZrc3SZ/6vp/281WfL2WJIzydyA==
+X-Received: by 10.36.64.83 with SMTP id n80mr12273005ita.10.1471949499380;
+ Tue, 23 Aug 2016 03:51:39 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Tue, 23 Aug 2016 03:51:38 -0700 (PDT)
+In-Reply-To: <CAAxEZd80sQUU0FN1fL6qbaBsLr+c_OsA6AHMVBow=Fj442LS=Q@mail.gmail.com>
+References: <CAAxEZd_VRPdJCTqwRo4OPqEvP6yB=anVm8CHuvLWYgVhR282KA@mail.gmail.com>
+ <CAAxEZd80sQUU0FN1fL6qbaBsLr+c_OsA6AHMVBow=Fj442LS=Q@mail.gmail.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 23 Aug 2016 12:51:39 +0200
+Message-ID: <CAAxEZd_P0wPKg9ce+AjPaUfnnt8eQQmMGnAyyyx7pQpe=2RUqA@mail.gmail.com>
+Subject: Re: English Premier League (EPL) 2016/17 Season - Public Domain Open
+ Datasets in Plain Text (n SQL, JSON, etc.)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    FYI: The easiest and recommend way to build yourself a copy is now:
+
+   Step 0:   $ gem install sportdb
+
+   Step 1:   $ git clone https://github.com/openfootball/eng-england
+ # or download the zip archive
+
+   Step 2:   $ cd eng-england
+
+   Step 3:    $ sportdb build         # will use the ("in-situ") Datafile [1]
+
+    That's it.
+
+   To see and double check the db, try $ sportdb stats   or something.
+
+ Cheers.
+
+[1] https://github.com/openfootball/eng-england/blob/master/Datafile
+

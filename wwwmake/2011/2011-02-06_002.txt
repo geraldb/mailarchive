@@ -1,0 +1,49 @@
+From 823717265408@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 783181414400
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,9623735925b1306e
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+Received: by 10.220.187.9 with SMTP id cu9mr3967804vcb.12.1297007221749;
+        Sun, 06 Feb 2011 07:47:01 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.89.83 with SMTP id d19ls335376vcm.5.p; Sun, 06 Feb 2011
+ 07:47:01 -0800 (PST)
+Received: by 10.220.202.130 with SMTP id fe2mr2929568vcb.11.1297007221273;
+        Sun, 06 Feb 2011 07:47:01 -0800 (PST)
+Received: by 10.220.202.130 with SMTP id fe2mr2929567vcb.11.1297007221258;
+        Sun, 06 Feb 2011 07:47:01 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-vx0-f186.google.com ([209.85.220.186])
+        by gmr-mx.google.com with ESMTPS id l22si538913vbn.4.2011.02.06.07.47.01
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Sun, 06 Feb 2011 07:47:01 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.220.186 as permitted sender) client-ip=209.85.220.186;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.220.186 as permitted sender) smtp.mail=gerald.bauer@gmail.com
+Received: by vxc41 with SMTP id 41so975241vxc.23
+        for <webslideshow@googlegroups.com>; Sun, 06 Feb 2011 07:47:01 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.220.199.132 with SMTP id es4mr696136vcb.46.1297007221197; Sun,
+ 06 Feb 2011 07:47:01 -0800 (PST)
+Received: by n11g2000vbm.googlegroups.com with HTTP; Sun, 6 Feb 2011 07:47:01
+ -0800 (PST)
+Date: Sun, 6 Feb 2011 07:47:01 -0800 (PST)
+In-Reply-To: <b41aa107-f74f-4a1b-ab6d-e846fd140595@a7g2000vbz.googlegroups.com>
+X-IP: 188.22.222.17
+References: <b41aa107-f74f-4a1b-ab6d-e846fd140595@a7g2000vbz.googlegroups.com>
+User-Agent: G2/1.0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.13)
+ Gecko/20101206 Ubuntu/10.04 (lucid) Firefox/3.6.13,gzip(gfe)
+Message-ID: <b6c6d4fb-341f-49fa-adcf-cb50e7f27098@n11g2000vbm.googlegroups.com>
+Subject: Re: installing templates from github using -f not working
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: dsanson <dsanson@gmail.com>
+Cc: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello David,
+
+   Thanks for reporting the error when fetching template packs. I
+uploaded a new version of the slideshow gem, that is, 0.9.8, that
+supports redirects and HTTPS. Everything should work now. Cheers.
+

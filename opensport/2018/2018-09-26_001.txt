@@ -1,0 +1,112 @@
+From 6605568712768487424@xxx Wed Sep 26 16:20:15 +0000 2018
+X-GM-THRID: 6605547990025240576
+Date: Wed, 26 Sep 2018 09:20:14 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <2aef246c-93eb-49a8-a012-18823aa3ef61@googlegroups.com>
+In-Reply-To: <13f7fdc4-ed2d-4d0b-9f2f-fff0c2cf15e1@googlegroups.com>
+References: <13f7fdc4-ed2d-4d0b-9f2f-fff0c2cf15e1@googlegroups.com>
+Subject: Re: Help for a beginner
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2869_1864389239.1537978814887"
+X-Google-Token: EL7jrt0F6dcY_09RJx80
+X-Google-IP: 217.13.183.251
+
+------=_Part_2869_1864389239.1537978814887
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2870_1354987169.1537978814887"
+
+------=_Part_2870_1354987169.1537978814887
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+   Welcome to the football.db.
+
+   You can read the world cup datasets into your (SQL) database of choice 
+e.g. postgresql. However, you, will have to learn to use a (build) script 
+on the command line (in ruby). Example:
+
+ build.rb:
+
+require 'sportdb/models'
+require 'datafile'
+
+
+DB_CONFIG = {
+  adapter:  'postgresql',
+  encoding: 'unicode',
+  username: 'you',
+  password:  'topsecrect',
+  pool:      5,
+  timeout:   5000
+}
+
+
+ActiveRecord::Base.establish_connection( DB_CONFIG )
+
+
+SportDb.create
+SportDb.read_builtin
+
+
+datafile = Datafile::Datafile.load_file( "./worldcup.rb" )
+
+datafile.dump
+
+datafile.download    ## download zips from github - saved to ./tmp
+datafile.read        ## read into / import into sql database
+
+
+   If you run this build script with ruby and you install the ruby 
+libraries / gems (sportdb-models, datafile) and if you use the worldcup 
+datafile, you're all set.
+
+  $ ruby ./build.rb
+
+   Sorry, for now that looks like the "easiest" way. Good luck. Cheers. 
+Prost.
+
+
+PS: Might be easier to use SQLite than you can use all the pre-configured 
+command line tools and run:
+
+$ sportdb new worldcup    # to get an up-to-date build sport.db SQLite 
+database
+
+------=_Part_2870_1354987169.1537978814887
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<div>=C2=A0 =C2=A0Welcome to the football.db.</div><=
+div><br></div><div>=C2=A0 =C2=A0You can read the world cup datasets into yo=
+ur (SQL) database of choice e.g. postgresql. However, you, will have to lea=
+rn to use a (build) script on the command line (in ruby). Example:</div><di=
+v><br></div><div>=C2=A0build.rb:</div><div><br></div><div><div>require &#39=
+;sportdb/models&#39;</div><div>require &#39;datafile&#39;</div><div><br></d=
+iv><div><br></div><div>DB_CONFIG =3D {</div><div>=C2=A0 adapter:=C2=A0 &#39=
+;postgresql&#39;,</div><div>=C2=A0 encoding: &#39;unicode&#39;,</div><div>=
+=C2=A0 username: &#39;you&#39;,</div><div>=C2=A0 password:=C2=A0 &#39;topse=
+crect&#39;,</div><div>=C2=A0 pool:=C2=A0 =C2=A0 =C2=A0 5,</div><div>=C2=A0 =
+timeout:=C2=A0 =C2=A05000</div><div>}</div><div><br></div><div><br></div><d=
+iv>ActiveRecord::Base.establish_connection( DB_CONFIG )</div><div><br></div=
+><div><br></div><div>SportDb.create</div><div>SportDb.read_builtin</div><di=
+v><br></div><div><br></div><div>datafile =3D Datafile::Datafile.load_file( =
+&quot;./worldcup.rb&quot; )</div><div><br></div><div>datafile.dump</div><di=
+v><br></div><div>datafile.download=C2=A0 =C2=A0 ## download zips from githu=
+b - saved to ./tmp</div><div>datafile.read=C2=A0 =C2=A0 =C2=A0 =C2=A0 ## re=
+ad into / import into sql database</div></div><div><br></div><div><br></div=
+><div>=C2=A0 =C2=A0If you run this build script with ruby and you install t=
+he ruby libraries / gems (sportdb-models, datafile) and if you use the worl=
+dcup datafile, you&#39;re all set.</div><div><br></div><div>=C2=A0 $ ruby .=
+/build.rb</div><div><br></div><div>=C2=A0 =C2=A0Sorry, for now that looks l=
+ike the &quot;easiest&quot; way. Good luck. Cheers. Prost.</div><div><br></=
+div><div><br></div><div>PS: Might be easier to use SQLite than you can use =
+all the pre-configured command line tools and run:</div><div><br></div><div=
+>$ sportdb new worldcup=C2=A0 =C2=A0 # to get an up-to-date build sport.db =
+SQLite database</div></div>
+------=_Part_2870_1354987169.1537978814887--
+
+------=_Part_2869_1864389239.1537978814887--
+

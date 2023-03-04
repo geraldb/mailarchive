@@ -1,0 +1,249 @@
+From 692866514944@xxx Tue Jun 16 00:17:04 +0000 2015
+X-GM-THRID: 659563741184
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,57206a7667e526a
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.250.229 with SMTP id zf5mr4683188obc.4.1400145373999;
+        Thu, 15 May 2014 02:16:13 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.84.72 with SMTP id k66ls124650qgd.96.gmail; Thu, 15 May
+ 2014 02:16:13 -0700 (PDT)
+X-Received: by 10.140.100.204 with SMTP id s70mr145372qge.9.1400145373753;
+        Thu, 15 May 2014 02:16:13 -0700 (PDT)
+X-Google-Doc-Id: ef6c017278791c5a
+X-Google-Web-Client: true
+Date: Thu, 15 May 2014 02:16:12 -0700 (PDT)
+From: =?UTF-8?Q?Orlando_Alem=C3=A1n_Ortiz?= <orlandoaleortiz@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <19f255f3-f545-48b8-8c83-d26a62757880@googlegroups.com>
+In-Reply-To: <CAAxEZd-UfoaBSmeOKALTu5x6h2s0367mdbVH_jrByCx0T3cysw@mail.gmail.com>
+References: <1f778ca9-5f50-4d9a-a298-6007c48991cc@googlegroups.com>
+ <e2e0205d-767c-4b6a-b7fd-c7beaf5c902f@googlegroups.com>
+ <dcc74fd7-3922-4a8f-8d0d-4cb51750e3be@googlegroups.com>
+ <CAAxEZd-UfoaBSmeOKALTu5x6h2s0367mdbVH_jrByCx0T3cysw@mail.gmail.com>
+Subject: Re: [opensport] Re: Presentation and question about live scores
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_4814_15243171.1400145372722"
+X-Google-Token: ENyL0psFfez1i4wYrd80
+X-Google-IP: 193.145.150.119
+
+------=_Part_4814_15243171.1400145372722
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4815_3893624.1400145372722"
+
+------=_Part_4815_3893624.1400145372722
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+El jueves, 15 de mayo de 2014 07:56:01 UTC+1, Gerald Bauer escribi=C3=B3:
+>
+> Hello Orlando,=20
+>
+> > 5 minutes sounds me like as "live". I don't know if exists an open=20
+> > database that I can query. My idea is send push notifications from a=20
+> > remote service by using a trigger. For now I'll make it simple. I'll=20
+> write the=20
+> > scores manually.=20
+>
+>   To track / watch all 64 world cup matches and enter all data in less=20
+> than five minutes might be a challenge.=20
+>
+=20
+No doubts hehe
+
+=20
+
+>    The football.db- uses plain text files -  that get imported into=20
+> your database of choice - as it's source.   Thus, one way (the=20
+> "official" way) might be:=20
+>   - Change  world-cup/2014/cup.txt and save/commit=20
+>   - Git web hook pings your web app (online db w/ built-in json service)=
+=20
+>   - web app fetches (via HTTP GET) updated cup.txt and reads/imports into=
+=20
+> db=20
+>   - web app pushes changes to registers apps=20
+>   - and so on.=20
+>
+>   I'd say the challenge will be getting the data entered on time.=20
+> Might also be easier / more manageable to enter the data into the db=20
+> directly (not via git). Sorry I have no magic formula. Your're welcome=20
+> to try what works for you.    Cheers.=20
+>
+
+I had not thought about the WebHooks, but it is a possibility that I will=
+=20
+have in mind.
+Thanks for your feedback.
+
+
+> 2014-05-15 0:36 GMT+02:00 Orlando Alem=C3=A1n Ortiz <orlando...@gmail.com=
+<javascript:>>:=20
+>
+> > Hi again!=20
+> >=20
+> > El mi=C3=A9rcoles, 14 de mayo de 2014 21:44:18 UTC+1, Gerald Bauer escr=
+ibi=C3=B3:=20
+> >>=20
+> >> Hello Orlando,=20
+> >>=20
+> >>    Thanks for your interest in football.db.  Any help appreciated.=20
+> Maybe=20
+> >> you can share an example of your JSON file - this will help adding=20
+> what's=20
+> >> missing (e.g. stadium, group, etc.) You know it better ;-)=20
+> >=20
+> >=20
+> > Yes, I can. I'll upload some examples and code to my github account as=
+=20
+> soon=20
+> > as I can.  ;-)=20
+> >=20
+> >> > Is there any way to get the results live?=20
+> >>=20
+> >>     Depends on how often the results gets updated.  If there's any=20
+> >> interest - one way is to work out a schedule for entering updates.=20
+> >>=20
+> >>=20
+> >>    What is your definition of live?  An update every minute? Is that=
+=20
+> good=20
+> >> enough? Every five minutes? Every ten seconds?=20
+> >=20
+> >=20
+> > 5 minutes sounds me like as "live". I don't know if exists an open=20
+> database=20
+> > that I can query. My idea is send push notifications from a remote=20
+> service=20
+> > by using a trigger. For now I'll make it simple. I'll write the scores=
+=20
+> > manually.=20
+> >=20
+> >>=20
+> >>=20
+> >>    Cheers.=20
+> >=20
+> > --=20
+> > You received this message because you are subscribed to the Google=20
+> Groups=20
+> > "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends=
+"=20
+> > group.=20
+> > To unsubscribe from this group and stop receiving emails from it, send=
+=20
+> an=20
+> > email to opensport+...@googlegroups.com <javascript:>.=20
+> > For more options, visit https://groups.google.com/d/optout.=20
+>
+
+------=_Part_4815_3893624.1400145372722
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">El jueves, 15 de mayo de 2014 07:56:01 UTC+1, Gerald Bauer=
+  escribi=C3=B3:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin=
+-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello Orlando,
+<br>
+<br>&gt; 5 minutes sounds me like as "live". I don't know if exists an open
+<br>&gt; database that I can query. My idea is send push notifications from=
+ a
+<br>&gt; remote service by using a trigger. For now I'll make it simple. I'=
+ll write the
+<br>&gt; scores manually.
+<br>
+<br>&nbsp; To track / watch all 64 world cup matches and enter all data in =
+less
+<br>than five minutes might be a challenge.
+<br></blockquote><div>&nbsp;</div><div>No doubts hehe<br></div><div><br></d=
+iv><div>&nbsp;</div><blockquote class=3D"gmail_quote" style=3D"margin: 0;ma=
+rgin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">&nbsp; &nb=
+sp;The football.db- uses plain text files - &nbsp;that get imported into
+<br>your database of choice - as it's source. &nbsp; Thus, one way (the
+<br>"official" way) might be:
+<br>&nbsp; - Change &nbsp;world-cup/2014/cup.txt and save/commit
+<br>&nbsp; - Git web hook pings your web app (online db w/ built-in json se=
+rvice)
+<br>&nbsp; - web app fetches (via HTTP GET) updated cup.txt and reads/impor=
+ts into db
+<br>&nbsp; - web app pushes changes to registers apps
+<br>&nbsp; - and so on.
+<br>
+<br>&nbsp; I'd say the challenge will be getting the data entered on time.
+<br>Might also be easier / more manageable to enter the data into the db
+<br>directly (not via git). Sorry I have no magic formula. Your're welcome
+<br>to try what works for you. &nbsp; &nbsp;Cheers.
+<br></blockquote><div><br></div><div>I had not thought about the WebHooks, =
+but it is a possibility that I will have in mind.</div><div>Thanks for your=
+ feedback.</div><div><br></div><blockquote class=3D"gmail_quote" style=3D"m=
+argin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"=
+>
+<br>2014-05-15 0:36 GMT+02:00 Orlando Alem=C3=A1n Ortiz &lt;<a href=3D"java=
+script:" target=3D"_blank" gdf-obfuscated-mailto=3D"s4lf2ruai1wJ" onmousedo=
+wn=3D"this.href=3D'javascript:';return true;" onclick=3D"this.href=3D'javas=
+cript:';return true;">orlando...@gmail.com</a>&gt;:
+<br>&gt; Hi again!
+<br>&gt;
+<br>&gt; El mi=C3=A9rcoles, 14 de mayo de 2014 21:44:18 UTC+1, Gerald Bauer=
+ escribi=C3=B3:
+<br>&gt;&gt;
+<br>&gt;&gt; Hello Orlando,
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; &nbsp;Thanks for your interest in football.db. &nbsp;An=
+y help appreciated. Maybe
+<br>&gt;&gt; you can share an example of your JSON file - this will help ad=
+ding what's
+<br>&gt;&gt; missing (e.g. stadium, group, etc.) You know it better ;-)
+<br>&gt;
+<br>&gt;
+<br>&gt; Yes, I can. I'll upload some examples and code to my github accoun=
+t as soon
+<br>&gt; as I can. &nbsp;;-)
+<br>&gt;
+<br>&gt;&gt; &gt; Is there any way to get the results live?
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; &nbsp; Depends on how often the results gets updated. &=
+nbsp;If there's any
+<br>&gt;&gt; interest - one way is to work out a schedule for entering upda=
+tes.
+<br>&gt;&gt;
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; &nbsp;What is your definition of live? &nbsp;An update =
+every minute? Is that good
+<br>&gt;&gt; enough? Every five minutes? Every ten seconds?
+<br>&gt;
+<br>&gt;
+<br>&gt; 5 minutes sounds me like as "live". I don't know if exists an open=
+ database
+<br>&gt; that I can query. My idea is send push notifications from a remote=
+ service
+<br>&gt; by using a trigger. For now I'll make it simple. I'll write the sc=
+ores
+<br>&gt; manually.
+<br>&gt;
+<br>&gt;&gt;
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; &nbsp;Cheers.
+<br>&gt;
+<br>&gt; --
+<br>&gt; You received this message because you are subscribed to the Google=
+ Groups
+<br>&gt; "Open Sport(s) Database - football.db, formula1.db, ski.db, and Fr=
+iends"
+<br>&gt; group.
+<br>&gt; To unsubscribe from this group and stop receiving emails from it, =
+send an
+<br>&gt; email to <a href=3D"javascript:" target=3D"_blank" gdf-obfuscated-=
+mailto=3D"s4lf2ruai1wJ" onmousedown=3D"this.href=3D'javascript:';return tru=
+e;" onclick=3D"this.href=3D'javascript:';return true;">opensport+...@<wbr>g=
+ooglegroups.com</a>.
+<br>&gt; For more options, visit <a href=3D"https://groups.google.com/d/opt=
+out" target=3D"_blank" onmousedown=3D"this.href=3D'https://groups.google.co=
+m/d/optout';return true;" onclick=3D"this.href=3D'https://groups.google.com=
+/d/optout';return true;">https://groups.google.com/d/<wbr>optout</a>.
+<br></blockquote></div>
+------=_Part_4815_3893624.1400145372722--
+
+------=_Part_4814_15243171.1400145372722--
+

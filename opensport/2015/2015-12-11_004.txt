@@ -1,0 +1,51 @@
+From 6227037093586010112@xxx Fri Dec 11 14:44:15 +0000 2015
+X-GM-THRID: 6227037093254660096
+X-Received: by 10.50.61.132 with SMTP id p4mr4352774igr.13.1449845054643;
+        Fri, 11 Dec 2015 06:44:14 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.160.136 with SMTP id j130ls1235702ioe.60.gmail; Fri, 11
+ Dec 2015 06:44:14 -0800 (PST)
+X-Received: by 10.67.5.132 with SMTP id cm4mr15211564pad.19.1449845054284;
+        Fri, 11 Dec 2015 06:44:14 -0800 (PST)
+Received: by 10.50.7.99 with SMTP id i3msiga;
+        Fri, 11 Dec 2015 03:02:27 -0800 (PST)
+X-Received: by 10.50.114.163 with SMTP id jh3mr113822igb.1.1449831747082;
+        Fri, 11 Dec 2015 03:02:27 -0800 (PST)
+X-Google-Web-Client: true
+Date: Fri, 11 Dec 2015 03:02:26 -0800 (PST)
+From: brian king <wangxydlut@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <3e97f6a6-54cc-4931-b25c-933403e73a88@googlegroups.com>
+Subject: ActiveRecord::StatementInvalid: Could not find table 'persons'
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2635_2690002.1449831746737"
+X-Google-Token: EMLaqrMFcPoRAw_fvcU0
+X-Google-IP: 110.74.192.235
+
+------=_Part_2635_2690002.1449831746737
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2636_2057166870.1449831746737"
+
+------=_Part_2636_2057166870.1449831746737
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+hi, I follow README to install local environment, but when I run "rake 
+db:setup" command,
+I get the following errror:
+ActiveRecord::StatementInvalid: Could not find table 'persons'
+
+it is very clear that i missing persons table in sqllite database, please 
+help. Do i missed something?
+
+------=_Part_2636_2057166870.1449831746737
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr"><p style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, &#39;Segoe UI&#39;, Arial, freesans, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 14px; line-height: 22.4px;">hi, I follow README to install local environment, but when I run &quot;rake db:setup&quot; command,<br style="box-sizing: border-box;">I get the following errror:<br style="box-sizing: border-box;">ActiveRecord::StatementInvalid: Could not find table &#39;persons&#39;</p><p style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, &#39;Segoe UI&#39;, Arial, freesans, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 14px; line-height: 22.4px;">it is very clear that i missing persons table in sqllite database, please help. Do i missed something?</p></div>
+------=_Part_2636_2057166870.1449831746737--
+------=_Part_2635_2690002.1449831746737--
+

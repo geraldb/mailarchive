@@ -1,0 +1,82 @@
+From 530281660416@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 530217697280
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,5a611757b1cf184c,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.223.108.15 with SMTP id d15mr19144fap.20.1237064262836;
+        Sat, 14 Mar 2009 13:57:42 -0700 (PDT)
+Return-Path: <gerald@vanbeta.com>
+Received: from mu-out-0910.google.com (mu-out-0910.google.com [209.85.134.190])
+        by gmr-mx.google.com with ESMTP id 13si525655fxm.4.2009.03.14.13.57.42;
+        Sat, 14 Mar 2009 13:57:42 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.134.190 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.134.190;
+Authentication-Results: gmr-mx.google.com; spf=neutral (google.com: 209.85.134.190 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by mu-out-0910.google.com with SMTP id i2so999764mue.0
+        for <multiple recipients>; Sat, 14 Mar 2009 13:57:42 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.103.8.17 with SMTP id l17mr1337206mui.125.1237064262373; Sat, 
+	14 Mar 2009 13:57:42 -0700 (PDT)
+Date: Sat, 14 Mar 2009 21:57:42 +0100
+Message-ID: <1f058eab0903141357wb2bdc4ag469270efabbd521c@mail.gmail.com>
+Subject: Slide Show (S9) Gem Updated (v0.8) - Fetch templates from the 
+	internet; publish your templates invite
+From: Gerald Bauer <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>, vanrb@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  I uploaded a new slideshow gem version (that is, v0.8). What's new?
+
+  * Added -f/--fetch URI option; lets you fetch templates from the internet
+  * Added -l/--list option; list all installed templates
+  * Added -c/--config PATH option; lets you set config folder (default
+is ~/.slideshow)
+  * Moved S5 v11 blank package out of core/gem
+
+  Using the new -f/--fetch option lets you download templates from the
+internet. Just pass along a link to the manifest. Example:
+
+$ slideshow -f http://github.com/geraldb/sandbox/raw/13d4fec0908fbfcc456b74dfe2f88621614b5244/s5blank/s5blank.txt
+
+Slide Show (S9) Version: 0.8 on Ruby 1.8.7 (2008-08-11) [i486-linux]
+
+Fetching template package 's5blank'
+  : from 'http://github.com:80/geraldb/sandbox/raw/13d4fec0908fbfcc456b74dfe2f88621614b5244/s5blank'
+  : saving to '/home/gerald/.slideshow/templates/s5blank'
+  Downloading manifest 's5blank.txt'...
+  Downloading template 'header.html.erb'...
+  ...
+  Downloading template 'ui/default/slides.js'...
+Done.
+
+  Using the new -l/--list switch lets you list all installed templates
+(including all built-ins). Example:
+
+$ slideshow -l
+
+Slide Show (S9) Version: 0.8 on Ruby 1.8.7 (2008-08-11) [i486-linux]
+
+Installed templates include:
+  s5blank.txt      (/home/gerald/.slideshow/templates/s5blank/s5blank.txt)
+  s5.txt           (/usr/lib/ruby/gems/1.8/gems/slideshow-0.8/templates/s5.txt)
+  s6.txt           (/usr/lib/ruby/gems/1.8/gems/slideshow-0.8/templates/s6.txt)
+  fullerscreen.txt
+(/usr/lib/ruby/gems/1.8/gems/slideshow-0.8/templates/fullerscreen.txt)
+
+  I also added a new -c/--config PATH switch that lets you change the
+config root folder (default is ~/.slideshow)  if you want to store
+your templates somewhere else.
+
+  I also moved the S5 v11 blank package out of the gem. If you want to
+use it, please fetch it from the sandbox using the new -f/--fetch
+option.
+
+  Finally, if you have any templates lying around I invite you to
+publish your templates and announce the link so others can install and
+use your templates.
+
+  That's it. Questions and comments welcome. Cheers.
+

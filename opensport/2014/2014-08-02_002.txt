@@ -1,0 +1,100 @@
+From 1775635529728@xxx Tue Jun 16 00:16:51 +0000 2015
+X-GM-THRID: 1775881945088
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,80658d2df518cf2e,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.43.153.196 with SMTP id lb4mr17290108icc.2.1406999944161;
+        Sat, 02 Aug 2014 10:19:04 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.164.161 with SMTP id yr1ls1229512igb.36.gmail; Sat, 02 Aug
+ 2014 10:19:03 -0700 (PDT)
+X-Received: by 10.50.153.98 with SMTP id vf2mr4758670igb.5.1406999943795;
+        Sat, 02 Aug 2014 10:19:03 -0700 (PDT)
+Received: by 10.224.74.199 with SMTP id v7msqaj;
+        Sat, 2 Aug 2014 09:22:34 -0700 (PDT)
+X-Received: by 10.67.3.201 with SMTP id by9mr5024202pad.14.1406996554021;
+        Sat, 02 Aug 2014 09:22:34 -0700 (PDT)
+Return-Path: <jc3181@columbia.edu>
+Received: from millet.cc.columbia.edu (millet.cc.columbia.edu. [128.59.72.250])
+        by gmr-mx.google.com with ESMTPS id w2si1346947qcl.3.2014.08.02.09.22.33
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Sat, 02 Aug 2014 09:22:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jc3181@columbia.edu designates 128.59.72.250 as permitted sender) client-ip=128.59.72.250;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of jc3181@columbia.edu designates 128.59.72.250 as permitted sender) smtp.mail=jc3181@columbia.edu
+Received: from hazelnut (hazelnut.cc.columbia.edu [128.59.213.250])
+	by millet.cc.columbia.edu (8.13.8/8.13.8) with ESMTP id s72GLQx3001530
+	for <opensport@googlegroups.com>; Sat, 2 Aug 2014 12:22:33 -0400
+Received: from hazelnut (localhost.localdomain [127.0.0.1])
+	by hazelnut (Postfix) with ESMTP id AB24780
+	for <opensport@googlegroups.com>; Sat,  2 Aug 2014 12:22:33 -0400 (EDT)
+Received: from rambutan.cc.columbia.edu (rambutan.cc.columbia.edu [128.59.29.5])
+	by hazelnut (Postfix) with ESMTP id A016F80
+	for <opensport@googlegroups.com>; Sat,  2 Aug 2014 12:22:33 -0400 (EDT)
+Received: from [128.59.230.119] (dyn-128-59-230-119.dyn.columbia.edu [128.59.230.119])
+	(user=jc3181 mech=PLAIN bits=0)
+	by rambutan.cc.columbia.edu (8.14.4/8.14.3) with ESMTP id s72GMW9d011283
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES128-SHA bits=128 verify=NOT)
+	for <opensport@googlegroups.com>; Sat, 2 Aug 2014 12:22:33 -0400 (EDT)
+Message-ID: <53DD1042.6010109@columbia.edu>
+Date: Sat, 02 Aug 2014 12:22:26 -0400
+From: James Curley <jc3181@columbia.edu>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Thunderbird/24.6.0
+MIME-Version: 1.0
+To: opensport@googlegroups.com
+Subject: Results of all English soccer games played in top 4 tiers, 1888-2014
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+X-No-Spam-Score: Local
+X-Scanned-By: MIMEDefang 2.68 on 128.59.29.5
+
+Hi,
+
+I'm new to this community, but thought you might be interested in some 
+data I've recently uploaded to github.  It started with me wanting to 
+put together a fun dataset that I could use to teach R to students, but 
+I thought others would be interested - hence this email.
+
+By collecting data from multiple sources (listed in the readme), I have 
+collated all English soccer results from all games ever played in the 
+top 4 tiers from 1888-2014  (188,060 matches).  This includes the 1939 
+truncated season, matches for teams that subsequently dropped out 
+mid-way through a season (Wigan Borough, Leeds City, Accrington Stanley) 
+and Port Vale who joined mid-way through a season (1919/20 replacing 
+Leeds City).
+
+Throughout, I have used team names as they are today (e.g. Newton Heath 
+are listed as Manchester United, Ardwick as Manchester City).
+
+Only games from 1992- onwards have dates of matches (thanks to geraldb 
+'s repo).   Prior to that I have not yet got match dates, but the Season 
+is listed (e.g. 1952/3 season would be listed as 1952,  1892/3 as 1892).
+
+
+I hope that people enjoy this dataset and that it is useful to some.
+
+The link to my github repo is: https://github.com/jalapic/engsoccerdata
+
+
+Thanks
+James
+
+
+
+
+-- 
+#############################
+Prof. James P. Curley
+Assistant Professor
+Psychology Department
+Columbia University
+
+1190 Amsterdam Avenue
+317 Schermerhorn Hall
+New York
+NY 10027
+
+
+

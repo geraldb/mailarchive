@@ -1,0 +1,450 @@
+From 39088816128@xxx Sat Dec 20 19:01:40 +0000 2014
+X-GM-THRID: 18531483648
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,9183dd27fdcc5ed2
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.74.226 with SMTP id x2mr16660063obv.1.1385739683184;
+        Fri, 29 Nov 2013 07:41:23 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.49.12.81 with SMTP id w17ls3854161qeb.86.gmail; Fri, 29 Nov
+ 2013 07:41:22 -0800 (PST)
+X-Received: by 10.49.133.168 with SMTP id pd8mr1803qeb.29.1385739682970;
+        Fri, 29 Nov 2013 07:41:22 -0800 (PST)
+X-Google-Doc-Id: e218aea9421bb368
+X-Google-Web-Client: true
+Date: Fri, 29 Nov 2013 07:41:22 -0800 (PST)
+From: Jonny Fabuliss <jonfabris@gmail.com>
+To: beerdb@googlegroups.com
+Message-Id: <d154f669-a3ae-42ff-b692-785e27c5b217@googlegroups.com>
+In-Reply-To: <7844a5a3-f278-4f73-8f1f-f98795838e61@googlegroups.com>
+References: <7844a5a3-f278-4f73-8f1f-f98795838e61@googlegroups.com>
+Subject: Re: Error trying to create my own copy of beer.db
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1639_27153201.1385739682542"
+X-Google-Token: EKLr4pQFVFzeH3AkffY0
+X-Google-IP: 99.194.31.220
+
+------=_Part_1639_27153201.1385739682542
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1640_23578421.1385739682542"
+
+------=_Part_1640_23578421.1385739682542
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I installed railsinstaller and beerdb.gem
+and did this:
+beerdb setup --include ./us-united-states --worldinclude ./world.db
+
+(I have the world.db folder and us-united-states folder)
+
+It ran for a while then I got this error:
+
+[info] parsing data 'pacific/au-australia/regions' 
+(./world.db/pacific/au-austra
+lia/regions.txt)...
+[info] parsing data 'pacific/au-australia/cities' 
+(./world.db/pacific/au-austral
+ia/cities.txt)...
+[info] parsing data 'setups/all' (./us-united-states/setups/all.yml)...
+
+*** error: No such file or directory - ./us-united-states/setups/all.yml
+
+There is only one file in ./us-united-states/setups/
+It is us.yml
+I tried copying the all.yml file from world.db/setups to 
+us-unitedstates/setups
+and tried again.
+
+This time no errors, but when I load the created beer.db file into SQLite 
+Database Browser there is no data in the beers, brands, breweries tables.
+
+[info] parsing data 'setups/all' (./us-united-states/setups/all.yml)...
+[error] unknown beer.db fixture type >tags.1<
+[error] unknown beer.db fixture type >tags.3<
+[error] unknown beer.db fixture type >continents<
+[error] unknown beer.db fixture type >africa/countries<
+[error] unknown beer.db fixture type >asia/countries<
+[error] unknown beer.db fixture type >caribbean/countries<
+[error] unknown beer.db fixture type >central-america/countries<
+[error] unknown beer.db fixture type >europe/countries<
+[error] unknown beer.db fixture type >middle-east/countries<
+[error] unknown beer.db fixture type >north-america/countries<
+[error] unknown beer.db fixture type >pacific/countries<
+[error] unknown beer.db fixture type >south-america/countries<
+[error] unknown beer.db fixture type >africa/countries.2<
+[error] unknown beer.db fixture type >asia/countries.2<
+[error] unknown beer.db fixture type >caribbean/countries.2<
+[error] unknown beer.db fixture type >europe/countries.2<
+[error] unknown beer.db fixture type >north-america/countries.2<
+[error] unknown beer.db fixture type >pacific/countries.2<
+[error] unknown beer.db fixture type >south-america/countries.2<
+[error] unknown beer.db fixture type >africa/2-more/continents<
+[error] unknown beer.db fixture type >asia/2-more/continents<
+[error] unknown beer.db fixture type >caribbean/2-more/continents<
+[error] unknown beer.db fixture type >central-america/2-more/continents<
+[error] unknown beer.db fixture type >europe/2-more/continents<
+[error] unknown beer.db fixture type >middle-east/2-more/continents<
+[error] unknown beer.db fixture type >north-america/2-more/continents<
+[error] unknown beer.db fixture type >pacific/2-more/continents<
+[error] unknown beer.db fixture type >south-america/2-more/continents<
+[error] unknown beer.db fixture type >africa/1-codes/fifa<
+[error] unknown beer.db fixture type >africa/1-codes/internet<
+[error] unknown beer.db fixture type >africa/1-codes/iso3<
+[error] unknown beer.db fixture type >middle-east/1-codes/fifa<
+[error] unknown beer.db fixture type >middle-east/1-codes/internet<
+[error] unknown beer.db fixture type >middle-east/1-codes/iso3<
+[error] unknown beer.db fixture type >south-america/1-codes/fifa<
+[error] unknown beer.db fixture type >south-america/1-codes/internet<
+[error] unknown beer.db fixture type >south-america/1-codes/iso3<
+[error] unknown beer.db fixture type >south-america/1-codes/motor<
+[error] unknown beer.db fixture type >south-america/ar-argentina/regions<
+[error] unknown beer.db fixture type 
+>south-america/ar-argentina/regions.iso<
+[error] unknown beer.db fixture type >south-america/ar-argentina/cities<
+[error] unknown beer.db fixture type >south-america/br-brazil/regions<
+[error] unknown beer.db fixture type >south-america/br-brazil/cities<
+[error] unknown beer.db fixture type >south-america/ve-venezuela/regions<
+[error] unknown beer.db fixture type >caribbean/1-codes/fifa<
+[error] unknown beer.db fixture type >caribbean/1-codes/internet<
+[error] unknown beer.db fixture type >caribbean/1-codes/iso3<
+[error] unknown beer.db fixture type >central-america/1-codes/fifa<
+[error] unknown beer.db fixture type >central-america/1-codes/internet<
+[error] unknown beer.db fixture type >central-america/1-codes/iso3<
+[error] unknown beer.db fixture type >north-america/1-codes/fifa<
+[error] unknown beer.db fixture type >north-america/1-codes/internet<
+[error] unknown beer.db fixture type >north-america/1-codes/iso3<
+[error] unknown beer.db fixture type >north-america/1-codes/motor<
+[error] unknown beer.db fixture type >north-america/ca-canada/regions<
+[error] unknown beer.db fixture type >north-america/ca-canada/cities<
+[error] unknown beer.db fixture type 
+>north-america/us-united-states/regions<
+[error] unknown beer.db fixture type >north-america/us-united-states/cities<
+[error] unknown beer.db fixture type >north-america/mx-mexico/regions<
+[error] unknown beer.db fixture type >north-america/mx-mexico/regions.abbr<
+[error] unknown beer.db fixture type >north-america/mx-mexico/cities<
+[error] unknown beer.db fixture type >asia/1-codes/fifa<
+[error] unknown beer.db fixture type >asia/1-codes/internet<
+[error] unknown beer.db fixture type >asia/1-codes/iso3<
+[error] unknown beer.db fixture type >asia/jp-japan/cities<
+[error] unknown beer.db fixture type >europe/1-codes/fifa<
+[error] unknown beer.db fixture type >europe/1-codes/internet<
+[error] unknown beer.db fixture type >europe/1-codes/iso3<
+[error] unknown beer.db fixture type >europe/1-codes/motor<
+[error] unknown beer.db fixture type >europe/at-austria/regions<
+[error] unknown beer.db fixture type >europe/at-austria/regions.abbr<
+[error] unknown beer.db fixture type >europe/at-austria/regions.iso<
+[error] unknown beer.db fixture type >europe/at-austria/cities<
+[error] unknown beer.db fixture type >europe/be-belgium/regions<
+[error] unknown beer.db fixture type >europe/be-belgium/cities<
+[error] unknown beer.db fixture type >europe/bg-bulgaria/regions<
+[error] unknown beer.db fixture type >europe/bg-bulgaria/regions.iso<
+[error] unknown beer.db fixture type >europe/bg-bulgaria/cities<
+[error] unknown beer.db fixture type >europe/by-belarus/cities<
+[error] unknown beer.db fixture type >europe/ch-switzerland/regions<
+[error] unknown beer.db fixture type >europe/ch-switzerland/cities<
+[error] unknown beer.db fixture type >europe/cy-cyprus/cities<
+[error] unknown beer.db fixture type >europe/cz-czech-republic/regions<
+[error] unknown beer.db fixture type >europe/cz-czech-republic/cities<
+[error] unknown beer.db fixture type >europe/de-germany/regions<
+[error] unknown beer.db fixture type >europe/de-germany/cities<
+[error] unknown beer.db fixture type >europe/dk-denmark/cities<
+[error] unknown beer.db fixture type >europe/ee-estonia/cities<
+[error] unknown beer.db fixture type >europe/en-england/regions<
+[error] unknown beer.db fixture type >europe/en-england/cities<
+[error] unknown beer.db fixture type >europe/es-spain/regions<
+[error] unknown beer.db fixture type >europe/es-spain/cities<
+[error] unknown beer.db fixture type >europe/fi-finland/cities<
+[error] unknown beer.db fixture type >europe/fr-france/regions<
+[error] unknown beer.db fixture type >europe/fr/france/cities<
+[error] unknown beer.db fixture type >europe/gr-greece/cities<
+[error] unknown beer.db fixture type >europe/hr-croatia/cities<
+[error] unknown beer.db fixture type >europe/hu-hungary/cities<
+[error] unknown beer.db fixture type >europe/ie-irland/regions<
+[error] unknown beer.db fixture type >europe/ie-irland/cities<
+[error] unknown beer.db fixture type >europe/it-italy/regions<
+[error] unknown beer.db fixture type >europe/it-italy/regions.iso<
+[error] unknown beer.db fixture type >europe/it-italy/cities<
+[error] unknown beer.db fixture type >europe/lt-lithuania/cities<
+[error] unknown beer.db fixture type >europe/lv-latvia/cities<
+[error] unknown beer.db fixture type >europe/nl-netherlands/regions<
+[error] unknown beer.db fixture type >europe/nl-netherlands/cities<
+[error] unknown beer.db fixture type >europe/no-norway/cities<
+[error] unknown beer.db fixture type >europe/pl-poland/cities<
+[error] unknown beer.db fixture type >europe/pt-portugal/cities<
+[error] unknown beer.db fixture type >europe/ro-romania/regions<
+[error] unknown beer.db fixture type >europe/ro-romania/cities<
+[error] unknown beer.db fixture type >europe/rs-serbia/cities<
+[error] unknown beer.db fixture type >europe/ru-russia/cities<
+[error] unknown beer.db fixture type >europe/sc-scotland/cities<
+[error] unknown beer.db fixture type >europe/se-sweden/cities<
+[error] unknown beer.db fixture type >europe/sk-slovakia/regions<
+[error] unknown beer.db fixture type >europe/sk-slovakia/cities<
+[error] unknown beer.db fixture type >europe/tr-turkey/cities<
+[error] unknown beer.db fixture type >europe/ua-ukraine/cities<
+[error] unknown beer.db fixture type >europe/wa-wales/cities<
+[error] unknown beer.db fixture type >pacific/1-codes/fifa<
+[error] unknown beer.db fixture type >pacific/1-codes/internet<
+[error] unknown beer.db fixture type >pacific/1-codes/iso3<
+[error] unknown beer.db fixture type >pacific/au-australia/regions<
+[error] unknown beer.db fixture type >pacific/au-australia/cities<
+Done.
+
+
+
+On Thursday, November 28, 2013 11:38:53 AM UTC-5, Jonny Fabuliss wrote:
+>
+> I am following the instructions in
+> Command Line Tool - Build Your Own beer.db Copy
+> I installed Ruby
+> Installed rubygems-2.1.7
+> Got a copy of the world.db fixtures
+> Got a copy of the US data set
+>
+> First time I tried: beerdb setup --include ./us-united-states 
+> --worldinclude ./world.db
+> I got a this error:
+> *** error: Please install the sqlite3 adapter: `gem install 
+> activerecord-sqlite3
+> -adapter` (Could not find 'sqlite3' (~> 1.3.5) among 21 total gem(s))
+>
+> Tried this: gem install activerecord-sqlite3-adapter
+> Got this error:
+> ERROR:  Could not find a valid gem 'activerecord-sqlite3-adapter' (>= 0) 
+> in any
+> repository
+> ERROR:  Possible alternatives: activerecord-jdbcsqlite3-adapter, 
+> activerecord-sq
+> lserver-adapter, activerecord-mysql2-adapter, 
+> activerecord-spatialite-adapter, a
+> ctiverecord-mysql-adapter
+>
+>
+> tried this; gem install activerecord-jdbcsqlite3-adapter
+> seemed to work
+>
+> Tried this again: beerdb setup --include ./us-united-states 
+> --worldinclude ./world.db
+> And got the error below
+>
+>
+> Can anyone either:
+> 1 send me the beer.db file with all the data?
+> 2 tell me what I'm doing wrong
+> 3 shoot me
+>
+> Thanks
+>
+>
+>
+> D:\Android\workspace\HeyBartender\Original Data\beerdb>beerdb setup 
+> --include ./
+> us-united-states --worldinclude ./world.db
+> worlddb 1.7.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> logdb 0.6.0 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> working directory: D:/Android/workspace/HeyBartender/Original Data/beerdb
+> Connecting to db using settings:
+> {:adapter=>"sqlite3", :database=>"./beer.db"}
+> Invalid gemspec in 
+> [D:/Ruby/lib/ruby/gems/1.9.1/specifications/activerecord-jdbc
+> -adapter-1.3.3.gemspec]: undefined method `prerelease?' for "1.3.3":String
+> Invalid gemspec in 
+> [D:/Ruby/lib/ruby/gems/1.9.1/specifications/activerecord-jdbc
+> sqlite3-adapter-1.3.3.gemspec]: undefined method `prerelease?' for 
+> "1.3.3":Strin
+> g
+> Invalid gemspec in 
+> [D:/Ruby/lib/ruby/gems/1.9.1/specifications/jdbc-sqlite3-3.7.
+> 2.1.gemspec]: undefined method `prerelease?' for "3.7.2.1":String
+>
+> *** error: undefined method `name' for nil:NilClass
+>
+
+------=_Part_1640_23578421.1385739682542
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I installed railsinstaller and beerdb.gem<br>and did this:=
+<br>beerdb setup --include ./us-united-states --worldinclude ./world.db<br>=
+<br>(I have the world.db folder and us-united-states folder)<br><br>It ran =
+for a while then I got this error:<br><br>[info] parsing data 'pacific/au-a=
+ustralia/regions' (./world.db/pacific/au-austra<br>lia/regions.txt)...<br>[=
+info] parsing data 'pacific/au-australia/cities' (./world.db/pacific/au-aus=
+tral<br>ia/cities.txt)...<br>[info] parsing data 'setups/all' (./us-united-=
+states/setups/all.yml)...<br><br>*** error: No such file or directory - ./u=
+s-united-states/setups/all.yml<br><br>There is only one file in ./us-united=
+-states/setups/<br>It is us.yml<br>I tried copying the all.yml file from wo=
+rld.db/setups to us-unitedstates/setups<br>and tried again.<br><br>This tim=
+e no errors, but when I load the created beer.db file into SQLite Database =
+Browser there is no data in the beers, brands, breweries tables.<br><br>[in=
+fo] parsing data 'setups/all' (./us-united-states/setups/all.yml)...<br>[er=
+ror] unknown beer.db fixture type &gt;tags.1&lt;<br>[error] unknown beer.db=
+ fixture type &gt;tags.3&lt;<br>[error] unknown beer.db fixture type &gt;co=
+ntinents&lt;<br>[error] unknown beer.db fixture type &gt;africa/countries&l=
+t;<br>[error] unknown beer.db fixture type &gt;asia/countries&lt;<br>[error=
+] unknown beer.db fixture type &gt;caribbean/countries&lt;<br>[error] unkno=
+wn beer.db fixture type &gt;central-america/countries&lt;<br>[error] unknow=
+n beer.db fixture type &gt;europe/countries&lt;<br>[error] unknown beer.db =
+fixture type &gt;middle-east/countries&lt;<br>[error] unknown beer.db fixtu=
+re type &gt;north-america/countries&lt;<br>[error] unknown beer.db fixture =
+type &gt;pacific/countries&lt;<br>[error] unknown beer.db fixture type &gt;=
+south-america/countries&lt;<br>[error] unknown beer.db fixture type &gt;afr=
+ica/countries.2&lt;<br>[error] unknown beer.db fixture type &gt;asia/countr=
+ies.2&lt;<br>[error] unknown beer.db fixture type &gt;caribbean/countries.2=
+&lt;<br>[error] unknown beer.db fixture type &gt;europe/countries.2&lt;<br>=
+[error] unknown beer.db fixture type &gt;north-america/countries.2&lt;<br>[=
+error] unknown beer.db fixture type &gt;pacific/countries.2&lt;<br>[error] =
+unknown beer.db fixture type &gt;south-america/countries.2&lt;<br>[error] u=
+nknown beer.db fixture type &gt;africa/2-more/continents&lt;<br>[error] unk=
+nown beer.db fixture type &gt;asia/2-more/continents&lt;<br>[error] unknown=
+ beer.db fixture type &gt;caribbean/2-more/continents&lt;<br>[error] unknow=
+n beer.db fixture type &gt;central-america/2-more/continents&lt;<br>[error]=
+ unknown beer.db fixture type &gt;europe/2-more/continents&lt;<br>[error] u=
+nknown beer.db fixture type &gt;middle-east/2-more/continents&lt;<br>[error=
+] unknown beer.db fixture type &gt;north-america/2-more/continents&lt;<br>[=
+error] unknown beer.db fixture type &gt;pacific/2-more/continents&lt;<br>[e=
+rror] unknown beer.db fixture type &gt;south-america/2-more/continents&lt;<=
+br>[error] unknown beer.db fixture type &gt;africa/1-codes/fifa&lt;<br>[err=
+or] unknown beer.db fixture type &gt;africa/1-codes/internet&lt;<br>[error]=
+ unknown beer.db fixture type &gt;africa/1-codes/iso3&lt;<br>[error] unknow=
+n beer.db fixture type &gt;middle-east/1-codes/fifa&lt;<br>[error] unknown =
+beer.db fixture type &gt;middle-east/1-codes/internet&lt;<br>[error] unknow=
+n beer.db fixture type &gt;middle-east/1-codes/iso3&lt;<br>[error] unknown =
+beer.db fixture type &gt;south-america/1-codes/fifa&lt;<br>[error] unknown =
+beer.db fixture type &gt;south-america/1-codes/internet&lt;<br>[error] unkn=
+own beer.db fixture type &gt;south-america/1-codes/iso3&lt;<br>[error] unkn=
+own beer.db fixture type &gt;south-america/1-codes/motor&lt;<br>[error] unk=
+nown beer.db fixture type &gt;south-america/ar-argentina/regions&lt;<br>[er=
+ror] unknown beer.db fixture type &gt;south-america/ar-argentina/regions.is=
+o&lt;<br>[error] unknown beer.db fixture type &gt;south-america/ar-argentin=
+a/cities&lt;<br>[error] unknown beer.db fixture type &gt;south-america/br-b=
+razil/regions&lt;<br>[error] unknown beer.db fixture type &gt;south-america=
+/br-brazil/cities&lt;<br>[error] unknown beer.db fixture type &gt;south-ame=
+rica/ve-venezuela/regions&lt;<br>[error] unknown beer.db fixture type &gt;c=
+aribbean/1-codes/fifa&lt;<br>[error] unknown beer.db fixture type &gt;carib=
+bean/1-codes/internet&lt;<br>[error] unknown beer.db fixture type &gt;carib=
+bean/1-codes/iso3&lt;<br>[error] unknown beer.db fixture type &gt;central-a=
+merica/1-codes/fifa&lt;<br>[error] unknown beer.db fixture type &gt;central=
+-america/1-codes/internet&lt;<br>[error] unknown beer.db fixture type &gt;c=
+entral-america/1-codes/iso3&lt;<br>[error] unknown beer.db fixture type &gt=
+;north-america/1-codes/fifa&lt;<br>[error] unknown beer.db fixture type &gt=
+;north-america/1-codes/internet&lt;<br>[error] unknown beer.db fixture type=
+ &gt;north-america/1-codes/iso3&lt;<br>[error] unknown beer.db fixture type=
+ &gt;north-america/1-codes/motor&lt;<br>[error] unknown beer.db fixture typ=
+e &gt;north-america/ca-canada/regions&lt;<br>[error] unknown beer.db fixtur=
+e type &gt;north-america/ca-canada/cities&lt;<br>[error] unknown beer.db fi=
+xture type &gt;north-america/us-united-states/regions&lt;<br>[error] unknow=
+n beer.db fixture type &gt;north-america/us-united-states/cities&lt;<br>[er=
+ror] unknown beer.db fixture type &gt;north-america/mx-mexico/regions&lt;<b=
+r>[error] unknown beer.db fixture type &gt;north-america/mx-mexico/regions.=
+abbr&lt;<br>[error] unknown beer.db fixture type &gt;north-america/mx-mexic=
+o/cities&lt;<br>[error] unknown beer.db fixture type &gt;asia/1-codes/fifa&=
+lt;<br>[error] unknown beer.db fixture type &gt;asia/1-codes/internet&lt;<b=
+r>[error] unknown beer.db fixture type &gt;asia/1-codes/iso3&lt;<br>[error]=
+ unknown beer.db fixture type &gt;asia/jp-japan/cities&lt;<br>[error] unkno=
+wn beer.db fixture type &gt;europe/1-codes/fifa&lt;<br>[error] unknown beer=
+.db fixture type &gt;europe/1-codes/internet&lt;<br>[error] unknown beer.db=
+ fixture type &gt;europe/1-codes/iso3&lt;<br>[error] unknown beer.db fixtur=
+e type &gt;europe/1-codes/motor&lt;<br>[error] unknown beer.db fixture type=
+ &gt;europe/at-austria/regions&lt;<br>[error] unknown beer.db fixture type =
+&gt;europe/at-austria/regions.abbr&lt;<br>[error] unknown beer.db fixture t=
+ype &gt;europe/at-austria/regions.iso&lt;<br>[error] unknown beer.db fixtur=
+e type &gt;europe/at-austria/cities&lt;<br>[error] unknown beer.db fixture =
+type &gt;europe/be-belgium/regions&lt;<br>[error] unknown beer.db fixture t=
+ype &gt;europe/be-belgium/cities&lt;<br>[error] unknown beer.db fixture typ=
+e &gt;europe/bg-bulgaria/regions&lt;<br>[error] unknown beer.db fixture typ=
+e &gt;europe/bg-bulgaria/regions.iso&lt;<br>[error] unknown beer.db fixture=
+ type &gt;europe/bg-bulgaria/cities&lt;<br>[error] unknown beer.db fixture =
+type &gt;europe/by-belarus/cities&lt;<br>[error] unknown beer.db fixture ty=
+pe &gt;europe/ch-switzerland/regions&lt;<br>[error] unknown beer.db fixture=
+ type &gt;europe/ch-switzerland/cities&lt;<br>[error] unknown beer.db fixtu=
+re type &gt;europe/cy-cyprus/cities&lt;<br>[error] unknown beer.db fixture =
+type &gt;europe/cz-czech-republic/regions&lt;<br>[error] unknown beer.db fi=
+xture type &gt;europe/cz-czech-republic/cities&lt;<br>[error] unknown beer.=
+db fixture type &gt;europe/de-germany/regions&lt;<br>[error] unknown beer.d=
+b fixture type &gt;europe/de-germany/cities&lt;<br>[error] unknown beer.db =
+fixture type &gt;europe/dk-denmark/cities&lt;<br>[error] unknown beer.db fi=
+xture type &gt;europe/ee-estonia/cities&lt;<br>[error] unknown beer.db fixt=
+ure type &gt;europe/en-england/regions&lt;<br>[error] unknown beer.db fixtu=
+re type &gt;europe/en-england/cities&lt;<br>[error] unknown beer.db fixture=
+ type &gt;europe/es-spain/regions&lt;<br>[error] unknown beer.db fixture ty=
+pe &gt;europe/es-spain/cities&lt;<br>[error] unknown beer.db fixture type &=
+gt;europe/fi-finland/cities&lt;<br>[error] unknown beer.db fixture type &gt=
+;europe/fr-france/regions&lt;<br>[error] unknown beer.db fixture type &gt;e=
+urope/fr/france/cities&lt;<br>[error] unknown beer.db fixture type &gt;euro=
+pe/gr-greece/cities&lt;<br>[error] unknown beer.db fixture type &gt;europe/=
+hr-croatia/cities&lt;<br>[error] unknown beer.db fixture type &gt;europe/hu=
+-hungary/cities&lt;<br>[error] unknown beer.db fixture type &gt;europe/ie-i=
+rland/regions&lt;<br>[error] unknown beer.db fixture type &gt;europe/ie-irl=
+and/cities&lt;<br>[error] unknown beer.db fixture type &gt;europe/it-italy/=
+regions&lt;<br>[error] unknown beer.db fixture type &gt;europe/it-italy/reg=
+ions.iso&lt;<br>[error] unknown beer.db fixture type &gt;europe/it-italy/ci=
+ties&lt;<br>[error] unknown beer.db fixture type &gt;europe/lt-lithuania/ci=
+ties&lt;<br>[error] unknown beer.db fixture type &gt;europe/lv-latvia/citie=
+s&lt;<br>[error] unknown beer.db fixture type &gt;europe/nl-netherlands/reg=
+ions&lt;<br>[error] unknown beer.db fixture type &gt;europe/nl-netherlands/=
+cities&lt;<br>[error] unknown beer.db fixture type &gt;europe/no-norway/cit=
+ies&lt;<br>[error] unknown beer.db fixture type &gt;europe/pl-poland/cities=
+&lt;<br>[error] unknown beer.db fixture type &gt;europe/pt-portugal/cities&=
+lt;<br>[error] unknown beer.db fixture type &gt;europe/ro-romania/regions&l=
+t;<br>[error] unknown beer.db fixture type &gt;europe/ro-romania/cities&lt;=
+<br>[error] unknown beer.db fixture type &gt;europe/rs-serbia/cities&lt;<br=
+>[error] unknown beer.db fixture type &gt;europe/ru-russia/cities&lt;<br>[e=
+rror] unknown beer.db fixture type &gt;europe/sc-scotland/cities&lt;<br>[er=
+ror] unknown beer.db fixture type &gt;europe/se-sweden/cities&lt;<br>[error=
+] unknown beer.db fixture type &gt;europe/sk-slovakia/regions&lt;<br>[error=
+] unknown beer.db fixture type &gt;europe/sk-slovakia/cities&lt;<br>[error]=
+ unknown beer.db fixture type &gt;europe/tr-turkey/cities&lt;<br>[error] un=
+known beer.db fixture type &gt;europe/ua-ukraine/cities&lt;<br>[error] unkn=
+own beer.db fixture type &gt;europe/wa-wales/cities&lt;<br>[error] unknown =
+beer.db fixture type &gt;pacific/1-codes/fifa&lt;<br>[error] unknown beer.d=
+b fixture type &gt;pacific/1-codes/internet&lt;<br>[error] unknown beer.db =
+fixture type &gt;pacific/1-codes/iso3&lt;<br>[error] unknown beer.db fixtur=
+e type &gt;pacific/au-australia/regions&lt;<br>[error] unknown beer.db fixt=
+ure type &gt;pacific/au-australia/cities&lt;<br>Done.<br><br><br><br>On Thu=
+rsday, November 28, 2013 11:38:53 AM UTC-5, Jonny Fabuliss wrote:<blockquot=
+e class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: =
+1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">I am following the inst=
+ructions in<br><h2>Command Line Tool - Build Your Own <code>beer.db</code> =
+Copy</h2><br>I installed Ruby<br>Installed rubygems-2.1.7<br>Got a copy of =
+the <code>world.db</code> fixtures<br>Got a copy of the US data set<br><br>=
+First time I tried:<code> beerdb setup --include ./us-united-states --world=
+include ./world.db</code><br>I got a this error:<br>*** error: Please insta=
+ll the sqlite3 adapter: `gem install activerecord-sqlite3<br>-adapter` (Cou=
+ld not find 'sqlite3' (~&gt; 1.3.5) among 21 total gem(s))<br><br>Tried thi=
+s: gem install activerecord-sqlite3-adapter<br>Got this error:<br>ERROR:&nb=
+sp; Could not find a valid gem 'activerecord-sqlite3-adapter' (&gt;=3D 0) i=
+n any<br>repository<br>ERROR:&nbsp; Possible alternatives: activerecord-jdb=
+csqlite3-<wbr>adapter, activerecord-sq<br>lserver-adapter, activerecord-mys=
+ql2-adapter, activerecord-spatialite-<wbr>adapter, a<br>ctiverecord-mysql-a=
+dapter<br><br><br>tried this; gem install activerecord-jdbcsqlite3-<wbr>ada=
+pter<br>seemed to work<br><br>Tried this again: <code>beerdb setup --includ=
+e ./us-united-states --worldinclude ./world.db<br>And got the error below<b=
+r><br><br>Can anyone either:<br>1 send me the beer.db file with all the dat=
+a?<br>2 tell me what I'm doing wrong<br>3 shoot me<br><br>Thanks<br><br><br=
+></code><br>D:\Android\workspace\<wbr>HeyBartender\Original Data\beerdb&gt;=
+beerdb setup --include ./<br>us-united-states --worldinclude ./world.db<br>=
+worlddb 1.7.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]<br>beerdb 0.8.2 on =
+Ruby 1.9.3 (2013-11-22) [i386-mingw32]<br>logdb 0.6.0 on Ruby 1.9.3 (2013-1=
+1-22) [i386-mingw32]<br>beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw=
+32]<br>beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]<br>working di=
+rectory: D:/Android/workspace/<wbr>HeyBartender/Original Data/beerdb<br>Con=
+necting to db using settings:<br>{:adapter=3D&gt;"sqlite3", :database=3D&gt=
+;"./beer.db"}<br>Invalid gemspec in [D:/Ruby/lib/ruby/gems/1.9.1/<wbr>speci=
+fications/activerecord-<wbr>jdbc<br>-adapter-1.3.3.gemspec]: undefined meth=
+od `prerelease?' for "1.3.3":String<br>Invalid gemspec in [D:/Ruby/lib/ruby=
+/gems/1.9.1/<wbr>specifications/activerecord-<wbr>jdbc<br>sqlite3-adapter-1=
+.3.3.gemspec]<wbr>: undefined method `prerelease?' for "1.3.3":Strin<br>g<b=
+r>Invalid gemspec in [D:/Ruby/lib/ruby/gems/1.9.1/<wbr>specifications/jdbc-=
+sqlite3-3.<wbr>7.<br>2.1.gemspec]: undefined method `prerelease?' for "3.7.=
+2.1":String<br><br>*** error: undefined method `name' for nil:NilClass<br><=
+/div></blockquote></div>
+------=_Part_1640_23578421.1385739682542--
+
+------=_Part_1639_27153201.1385739682542--
+

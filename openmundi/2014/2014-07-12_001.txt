@@ -1,0 +1,77 @@
+From 67671949312@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 65964867584
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,8f7cd3644bf4e8aa,start
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.20.140 with SMTP id n12mr1112090wie.7.1405173046156;
+        Sat, 12 Jul 2014 06:50:46 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.180.84.66 with SMTP id w2ls36429wiy.26.gmail; Sat, 12 Jul 2014
+ 06:50:45 -0700 (PDT)
+X-Received: by 10.180.84.8 with SMTP id u8mr1107552wiy.7.1405173045880;
+        Sat, 12 Jul 2014 06:50:45 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x230.google.com (mail-we0-x230.google.com [2a00:1450:400c:c03::230])
+        by gmr-mx.google.com with ESMTPS id r13si121462wib.0.2014.07.12.06.50.45
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 12 Jul 2014 06:50:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::230 as permitted sender) client-ip=2a00:1450:400c:c03::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f176.google.com with SMTP id u56so2240734wes.21
+        for <openmundi@googlegroups.com>; Sat, 12 Jul 2014 06:50:45 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=/t4R1Jv2twKbWgbp+WcGfP5IJCbXfzQ6XOgrLwQCXZU=;
+        b=U8spyY7mPOTqqMXNcJtK0grLuy9i83GGJqFQNC4bvmhFP8fzcNvumjgInz5tGLA0Q6
+         0p6p+JzfjLah6n8zun6U3YmDGBQcFbkUe4qwEdFfm/WodG9T7G779/0wG3OlY+2/a58M
+         Vm3Dseq7nj8h12KLRPjoZ0ZCKk1Sfi2oPUXdFICNH9tQoKhaT1/h2lGfbmkzKWn+4PcR
+         7heV2CvYg2qAdb0WY4yqxrx3A9li88ySZ6ixajR6FrCEA3LZ3P3cDrbNQlMtZ7sm4fch
+         CGyTDoFOlnb/vr3zsq/W5q9TDl5jvYAmFn8B/2/GOpvz80x0spQW0402dejK13r8lMbS
+         rONg==
+MIME-Version: 1.0
+X-Received: by 10.194.5.103 with SMTP id r7mr6864108wjr.41.1405173045806; Sat,
+ 12 Jul 2014 06:50:45 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Sat, 12 Jul 2014 06:50:45 -0700 (PDT)
+Date: Sat, 12 Jul 2014 15:50:45 +0200
+Message-ID: <CAAxEZd_HMLcW5kzCDZeq95AeP2fLrPPixoEViZ4Qhf6WizQohA@mail.gmail.com>
+Subject: factbook gem - Turn World Factbook Public Domain Country Profiles
+ into Open Data (e.g JSON)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've put together a factbook gem [1] that lets you read in
+World Factbook country profile pages (in HTML) and returns a
+structured Ruby hash that you can save, for example, as a pretty
+printed JSON file. Example:
+
+ Get country profile page for Austria as a hash (that is, structured
+data e.g. nested key/values)
+
+   page = Factbook::Page.new( 'au' )
+   pp page.data          # pretty print hash
+
+  Save to disk as JSON
+
+   File.open( 'at.json', 'w') do |f|
+     f.write page.to_json( pretty: true )
+   end
+
+  and so on.
+
+  Find ready-to-use country profiles in JSON in the
+openmundi/factbook.json [2] repo.
+
+  Cheers.
+
+[1] github.com/worlddb/factbook.ruby
+[2] github.com/openmundi/factbook.json
+

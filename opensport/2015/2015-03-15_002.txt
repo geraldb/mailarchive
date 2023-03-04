@@ -1,0 +1,76 @@
+From 2520057380864@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2513988222976
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b207fcdca166b700
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.28.104 with SMTP id a8mr58179571obh.15.1426452995857;
+        Sun, 15 Mar 2015 13:56:35 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.224.166 with SMTP id rd6ls985493obc.78.gmail; Sun, 15 Mar
+ 2015 13:56:35 -0700 (PDT)
+X-Received: by 10.182.237.18 with SMTP id uy18mr56437732obc.36.1426452995590;
+        Sun, 15 Mar 2015 13:56:35 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x233.google.com (mail-ig0-x233.google.com. [2607:f8b0:4001:c05::233])
+        by gmr-mx.google.com with ESMTPS id u2si713147igh.0.2015.03.15.13.56.35
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 15 Mar 2015 13:56:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::233 as permitted sender) client-ip=2607:f8b0:4001:c05::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ig0-x233.google.com with SMTP id ue6so25313288igb.1
+        for <opensport@googlegroups.com>; Sun, 15 Mar 2015 13:56:35 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=HHcM+HokowPXhcIxA3HpHpIUVBclR59mSR/96y7u6JU=;
+        b=uw+CBHwMio2AgGTBIjxyN6u1qaSYfAA9g72T8R175TcLf7dNu0t/O7HaIUldThBqGp
+         SAaJ49CUf5bGr9ZOwgGeZsw2xYWBAS+n8D+IAbm1TYNdVOULYkN6UTVzi/qwvV0Z/acE
+         7QGEWRvR1Ze8d66f6N4jPZrv21MiedBbZgzU92sbyTuzTovThbDGUMa8+HCO2YL+T9uP
+         aqV5+hqWdIa5SEPKlKQaiJbSyo3tCRCe3iXCvaSFqN1QEvjw22HX4ACkfWyyu5G3uUsL
+         tVC3YEl9/yqVkPtcg92UyKeOJN9G1Q0kYKTmORxAaeY0rYq05J3AaoTG7xi+BSSfkNjB
+         4Idg==
+MIME-Version: 1.0
+X-Received: by 10.107.152.211 with SMTP id a202mr102199689ioe.59.1426452995486;
+ Sun, 15 Mar 2015 13:56:35 -0700 (PDT)
+Received: by 10.64.141.103 with HTTP; Sun, 15 Mar 2015 13:56:35 -0700 (PDT)
+In-Reply-To: <f613f935-42ed-407c-b7e3-549fdcecd8fc@googlegroups.com>
+References: <f613f935-42ed-407c-b7e3-549fdcecd8fc@googlegroups.com>
+Date: Sun, 15 Mar 2015 21:56:35 +0100
+Message-ID: <CAAxEZd87cJbDt+s9riziPS-zr09xhiF5mAUP6Tq=ciot3emPDg@mail.gmail.com>
+Subject: Re: [opensport] Empty tables after build
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for trying football.db    To get started it is now
+recommended to use Datafiles [1].For example, to build yourself a
+football.db using the worldcup datasets use:
+
+$ sportdb new worldcup
+and for the spanish liga
+$ sportdb new es2014-15
+
+Note: Always start spordb new in a new folder/directory   e.g. mkdir
+es; cd es; sportdb new es2014-15   otherwise you will get your
+Datafiles mixed up.
+
+> I end up with now rows in assocs or assocs_assocs.
+
+  The football assocications is an optional datasets [2]. It is not
+included in any default build. The national teams get stored in the
+teams table - if you import the world cup they should be read-to-go.
+
+  Not sure if this answers your questions.
+
+  Cheers.
+
+[1] https://github.com/openfootball/datafile
+[2] https://github.com/openfootball/assocs
+

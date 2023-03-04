@@ -1,0 +1,68 @@
+From 6312689665137704960@xxx Fri Jul 29 10:19:58 +0000 2016
+X-GM-THRID: 6312689663959105536
+X-Received: by 10.107.170.216 with SMTP id g85mr33929868ioj.4.1469787597879;
+        Fri, 29 Jul 2016 03:19:57 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.107.192.69 with SMTP id q66ls2217340iof.7.gmail; Fri, 29 Jul
+ 2016 03:19:57 -0700 (PDT)
+X-Received: by 10.98.24.144 with SMTP id 138mr33874270pfy.5.1469787597243;
+        Fri, 29 Jul 2016 03:19:57 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22d.google.com (mail-io0-x22d.google.com. [2607:f8b0:4001:c06::22d])
+        by gmr-mx.google.com with ESMTPS id m19si142431itb.0.2016.07.29.03.19.57
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 29 Jul 2016 03:19:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22d as permitted sender) client-ip=2607:f8b0:4001:c06::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22d.google.com with SMTP id 38so124621606iol.0
+        for <wwwmake@googlegroups.com>; Fri, 29 Jul 2016 03:19:57 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=6qTOXH85oS3mk/u17RwRhsGM806B4lSs5VmSaA1ZU2o=;
+        b=xW05b95h7k3kQ/5V2Z9CpXcqP6tXYfe+gAXb0yXqAZjspUBz1pctSJ6GAZcU21i8RF
+         LXR+P+wDjCTCfeGL63L/ysPOnl57/OpES8qO4A6Up4++LqbqZUWWDE00fgPjrK4GpAbv
+         cqJZK3PcFB+I7sIAuQd+UEaV5zGReEJEncb0kVq/zMdxI7LR0+4TmZIW4fQ9DoPlBZ27
+         EUoaEZ1s/lvksWEgBYiGypeepWtbHr5RAEgN7YFJ3ctb+P3zttUsU2jU5HbbEP5N5Ui7
+         Q/Et2CKUOQvbF252pWs+4FTlnN2nmD3JoFRGo86wC2QNihA+rf+0ggLy6pdBB0Mv4aZX
+         RdCw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=6qTOXH85oS3mk/u17RwRhsGM806B4lSs5VmSaA1ZU2o=;
+        b=dCA4bLU/Kto4QG4Cc1BLU2sMei84MpAkQft68pN6f0R9VsDpRP3eyCrDg4UaM/x3Ng
+         bluUKrveXa86mKYmyPHbg1/f68xMMkO4UmLw7APnl1jMg64wJ9XvVorbylzUk5ZjTDVt
+         SQRisIHaLIVkSa0dnQhtz+FRUqa7RW6PozHxvTLZ2vq4OrKh4Q05wLJDC30Y1Pv+IU6o
+         OOFcxBS9Qd+637UJklVdduC9NX5ynBdqcOsXyTLo1JHW7VgDK+aOsIcRzZADPlrLkSGS
+         VdJ/CgnlXmIBm1cmwj+xSI7FdYiOIRusTWnfSDpdYZX0Q+A6FmmVFgmQSJ5XG7PR/ldB
+         fERQ==
+X-Gm-Message-State: AEkoousL1AMbrfgqUyFEQmyFMclvd9q0YcCtdkrvEbKhsmIyX3+02V/mAyQiPLiaC6lQ+NA/6kyPFfyrllALtQ==
+X-Received: by 10.107.20.73 with SMTP id 70mr43720987iou.15.1469787596987;
+ Fri, 29 Jul 2016 03:19:56 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Fri, 29 Jul 2016 03:19:56 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 29 Jul 2016 12:19:56 +0200
+Message-ID: <CAAxEZd_Y-S1XROO3Xmoek02=bCGiaJDtPHuccv9arcyoPpzFzg@mail.gmail.com>
+Subject: Awesome Markdown Series Moved - New Home @ Mundi Mark - All About
+ Markup & Markdown
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   FYI: I've moved the awesome markdown series - a collection of
+markdown goodies (libraries, services, editors, tools, cheatsheets,
+etc) to the new Mundi Mark site / org.
+
+   Please update your bookmarks. [1]
+
+   As always - anything missing? Contributions welcome. Cheers.
+
+
+[1] https://github.com/mundimark/awesome-markdown
+

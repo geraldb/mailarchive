@@ -1,0 +1,146 @@
+From 6438588899782557696@xxx Mon Jul 03 16:53:17 +0000 2017
+X-GM-THRID: 6438363314579832832
+Date: Mon, 3 Jul 2017 09:53:16 -0700 (PDT)
+From: Josh Cawthorne <joshcawthorne97@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <6a6dd219-ac28-4dae-bc89-0eb98a03e9ef@googlegroups.com>
+In-Reply-To: <CAAxEZd80E4udaTbtj-jRrKrvT8vVrj7N2E_0F_s1x=CFRkQ5LA@mail.gmail.com>
+References: <33c56d05-729e-47f7-887a-f91c3e34376f@googlegroups.com>
+ <CAAxEZd80E4udaTbtj-jRrKrvT8vVrj7N2E_0F_s1x=CFRkQ5LA@mail.gmail.com>
+Subject: Re: [opensport] Football.json missing results
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1796_1152440733.1499100796946"
+X-Google-Token: EPzs6coF77emYElRs2k0
+X-Google-IP: 86.19.240.31
+
+------=_Part_1796_1152440733.1499100796946
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1797_1190170897.1499100796947"
+
+------=_Part_1797_1190170897.1499100796947
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+>
+> Hi,
+
+
+Sorry for missing the moderation message. As I was on mobile, that message 
+doesn't actually display!
+
+I've been attempting to build the database, and I've run into an error. I 
+don't have any prior experience with Ruby so it may be something I've done.
+
+I downgraded activerecord to 4.2.0 based on troubleshooting elsewhere in 
+this forum, however still experience the same error:
+
+C:\Sites>gem install activerecord -v 4.2.0
+Fetching: activerecord-4.2.0.gem (100%)
+Successfully installed activerecord-4.2.0
+Parsing documentation for activerecord-4.2.0
+Installing ri documentation for activerecord-4.2.0
+Done installing documentation for activerecord after 18 seconds
+1 gem installed
+
+C:\Sites>sportdb load --include ./at-austria 2013_14/bl 2013_14/cup
+activerecord-utils/0.4.0 (activerecord/4.2.0) on Ruby 2.3.3 (2016-11-21) 
+[i386-mingw32]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::StateBase<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::CityBase<
+sportdb-update/0.1.1 on Ruby 2.3.3 (2016-11-21) [i386-mingw32]
+sportdb-service/0.4.0 on Ruby 2.3.3 (2016-11-21) [i386-mingw32]
+sportdb/1.11.0 on Ruby 2.3.3 (2016-11-21) [i386-mingw32]
+
+*** error: Unknown option --include
+
+Please could you advise me how to build a JSON database best from the 
+datasets provided?
+
+Thanks.
+
+------=_Part_1797_1190170897.1499100796947
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"IVILX2C-ed-a"><div tabindex=3D"0" class=3D"I=
+VILX2C-nb-P"><div style=3D"overflow: auto;"><div style=3D"max-height: 10000=
+px;"><div dir=3D"ltr"><blockquote class=3D"gmail_quote" style=3D"margin: 0p=
+x 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1=
+ex;">Hi,</blockquote><div><br></div><div>Sorry for missing the moderation m=
+essage. As I was on mobile, that message doesn&#39;t actually display!</div=
+><div><br></div><div>I&#39;ve been attempting to build the database, and I&=
+#39;ve run into an error. I don&#39;t have any prior experience with Ruby s=
+o it may be something I&#39;ve done.</div><div><br></div><div>I downgraded =
+activerecord to 4.2.0 based on troubleshooting elsewhere in this forum, how=
+ever still experience the same error:</div><div><br></div><div><div style=
+=3D"border-width: 1px; border-style: solid; border-color: rgb(187, 187, 187=
+); background-color: rgb(250, 250, 250); word-wrap: break-word;"><div style=
+=3D"border-width: 1px; border-style: solid; border-color: rgb(187, 187, 187=
+); word-wrap: break-word;"><font color=3D"#000000" face=3D"monospace">C:\Si=
+tes&gt;gem install activerecord -v 4.2.0</font></div><div style=3D"border-w=
+idth: 1px; border-style: solid; border-color: rgb(187, 187, 187); word-wrap=
+: break-word;"><font color=3D"#000000" face=3D"monospace">Fetching: activer=
+ecord-4.2.0.gem (100%)</font></div><div style=3D"border-width: 1px; border-=
+style: solid; border-color: rgb(187, 187, 187); word-wrap: break-word;"><fo=
+nt color=3D"#000000" face=3D"monospace">Successfully installed activerecord=
+-4.2.0</font></div><div style=3D"border-width: 1px; border-style: solid; bo=
+rder-color: rgb(187, 187, 187); word-wrap: break-word;"><font color=3D"#000=
+000" face=3D"monospace">Parsing documentation for activerecord-4.2.0</font>=
+</div><div style=3D"border-width: 1px; border-style: solid; border-color: r=
+gb(187, 187, 187); word-wrap: break-word;"><font color=3D"#000000" face=3D"=
+monospace">Installing ri documentation for activerecord-4.2.0</font></div><=
+div style=3D"border-width: 1px; border-style: solid; border-color: rgb(187,=
+ 187, 187); word-wrap: break-word;"><font color=3D"#000000" face=3D"monospa=
+ce">Done installing documentation for activerecord after 18 seconds</font><=
+/div><div style=3D"border-width: 1px; border-style: solid; border-color: rg=
+b(187, 187, 187); word-wrap: break-word;"><font color=3D"#000000" face=3D"m=
+onospace">1 gem installed</font></div><div style=3D"border-width: 1px; bord=
+er-style: solid; border-color: rgb(187, 187, 187); word-wrap: break-word;">=
+<font color=3D"#000000" face=3D"monospace"><br></font></div><div style=3D"b=
+order-width: 1px; border-style: solid; border-color: rgb(187, 187, 187); wo=
+rd-wrap: break-word;"><font color=3D"#000000" face=3D"monospace">C:\Sites&g=
+t;sportdb load --include ./at-austria 2013_14/bl 2013_14/cup</font></div><d=
+iv style=3D"border-width: 1px; border-style: solid; border-color: rgb(187, =
+187, 187); word-wrap: break-word;"><font color=3D"#000000" face=3D"monospac=
+e">activerecord-utils/0.4.0 (activerecord/4.2.0) on Ruby 2.3.3 (2016-11-21)=
+ [i386-mingw32]</font></div><div style=3D"border-width: 1px; border-style: =
+solid; border-color: rgb(187, 187, 187); word-wrap: break-word;"><font colo=
+r=3D"#000000" face=3D"monospace">=C2=A0 [TagDb.has_many_tags] adding taggin=
+gs n tags has_many assocs to model &gt;WorldDb::Model::Country&lt;</font></=
+div><div style=3D"border-width: 1px; border-style: solid; border-color: rgb=
+(187, 187, 187); word-wrap: break-word;"><font color=3D"#000000" face=3D"mo=
+nospace">=C2=A0 [TagDb.has_many_tags] adding taggings n tags has_many assoc=
+s to model &gt;WorldDb::Model::StateBase&lt;</font></div><div style=3D"bord=
+er-width: 1px; border-style: solid; border-color: rgb(187, 187, 187); word-=
+wrap: break-word;"><font color=3D"#000000" face=3D"monospace">=C2=A0 [TagDb=
+.has_many_tags] adding taggings n tags has_many assocs to model &gt;WorldDb=
+::Model::CityBase&lt;</font></div><div style=3D"border-width: 1px; border-s=
+tyle: solid; border-color: rgb(187, 187, 187); word-wrap: break-word;"><fon=
+t color=3D"#000000" face=3D"monospace">sportdb-update/0.1.1 on Ruby 2.3.3 (=
+2016-11-21) [i386-mingw32]</font></div><div style=3D"border-width: 1px; bor=
+der-style: solid; border-color: rgb(187, 187, 187); word-wrap: break-word;"=
+><font color=3D"#000000" face=3D"monospace">sportdb-service/0.4.0 on Ruby 2=
+.3.3 (2016-11-21) [i386-mingw32]</font></div><div style=3D"border-width: 1p=
+x; border-style: solid; border-color: rgb(187, 187, 187); word-wrap: break-=
+word;"><font color=3D"#000000" face=3D"monospace">sportdb/1.11.0 on Ruby 2.=
+3.3 (2016-11-21) [i386-mingw32]</font></div><div style=3D"border-width: 1px=
+; border-style: solid; border-color: rgb(187, 187, 187); word-wrap: break-w=
+ord;"><font color=3D"#000000" face=3D"monospace"><br></font></div><div styl=
+e=3D"border-width: 1px; border-style: solid; border-color: rgb(187, 187, 18=
+7); word-wrap: break-word;"><font color=3D"#000000" face=3D"monospace">*** =
+error: Unknown option --include</font></div></div><div><br></div></div><div=
+>Please could you advise me how to build a JSON database best from the data=
+sets provided?</div><div><br></div><div>Thanks.</div></div></div></div></di=
+v><div></div><div></div></div><div><div class=3D"IVILX2C-ed-a"></div></div>=
+<div class=3D"IVILX2C-nb-b"><div class=3D"IVILX2C-nb-a IVILX2C-nb-cb"></div=
+></div></div>
+------=_Part_1797_1190170897.1499100796947--
+
+------=_Part_1796_1152440733.1499100796946--
+

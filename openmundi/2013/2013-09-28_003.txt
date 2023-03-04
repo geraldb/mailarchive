@@ -1,0 +1,90 @@
+From 15972958208@xxx Sat Dec 13 20:08:19 +0000 2014
+X-GM-THRID: 16635658240
+X-Google-Groups: openmundi
+X-Google-Thread: 37decc9,2a0650c69e0789b5,start
+X-Google-Attributes: gid37decc9,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "world.db - Open World Database
+ and Friends" <openmundi@googlegroups.com>
+X-Received: by 10.180.212.76 with SMTP id ni12mr3143181wic.1.1380375810873;
+        Sat, 28 Sep 2013 06:43:30 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.180.109.8 with SMTP id ho8ls298946wib.8.canary; Sat, 28 Sep
+ 2013 06:43:30 -0700 (PDT)
+X-Received: by 10.180.36.97 with SMTP id p1mr3146511wij.3.1380375810472;
+        Sat, 28 Sep 2013 06:43:30 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x229.google.com (mail-wi0-x229.google.com [2a00:1450:400c:c05::229])
+        by gmr-mx.google.com with ESMTPS id o8si119788wiz.1.1969.12.31.16.00.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 28 Sep 2013 06:43:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) client-ip=2a00:1450:400c:c05::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f169.google.com with SMTP id hj3so1951711wib.0
+        for <openmundi@googlegroups.com>; Sat, 28 Sep 2013 06:43:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=yWqVCHlPiPXbDCfBa08mUOohy92IiJqloE20MFwNJOs=;
+        b=zIjYuXTncUb1xqnh9dOk9Bcol2vUsOAQeBIR+OPtX1ACWE36RSKbgTsaKdfZDA30ob
+         tA5LG2bcohV6nM8DtjaTyYF9kuhr95ExIbQvTsUIasEVU/f1FDBeEDPRU1BAj4FuuOI6
+         soFp38HkhRGzeuQQfORwOKqehskMdnzAmw3T6XFbUtKOus+Oj9VCTOFF71lnwkToWZ7T
+         Kc2v/RxJ0qQYpawFP1fjilq4/hhCuzJZv7Tx6wM7KN7FCJAwvDYXuoVvm3buat530vEU
+         5k4Hl2b9peeFT6mlNBy1Z0vQ4AoDBNGEjqPV2s4zFHl/79J0wHfoD1wKqAHg6kWpSIN7
+         VRjg==
+MIME-Version: 1.0
+X-Received: by 10.180.13.210 with SMTP id j18mr6631564wic.51.1380375810375;
+ Sat, 28 Sep 2013 06:43:30 -0700 (PDT)
+Received: by 10.216.202.72 with HTTP; Sat, 28 Sep 2013 06:43:30 -0700 (PDT)
+Date: Sat, 28 Sep 2013 15:43:30 +0200
+Message-ID: <CAAxEZd9HE4E+wo=MTD0cWcsyj9=1MXz0Xa8xeby+m0QjxNaxog@mail.gmail.com>
+Subject: world.db JSON HTTP API Sample w/ Sinatra
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: multipart/alternative; boundary=001a11c23ee2d5843504e771c95c
+
+--001a11c23ee2d5843504e771c95c
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  I have created a little JSON API service for the open world database
+(that is, world.db) using the Sinatra Ruby gem. For example,
+/countries/south_america [1] gets you all countries in South America. Note:
+Using .txt [2] will get you all countries as comma separated values, that
+is, plain text and .html [3] will get you all countries as a plain
+hypertext table. See the start page [4] for more info.
+
+  Cheers
+
+[1] http://worlddb.herokuapp.com/api/v1/tag/south_america
+[2] http://worlddb.herokuapp.com/api/v1/tag/south_america.txt
+[3] http://worlddb.herokuapp.com/api/v1/tag/south_america.html
+[4] http://worlddb.herokuapp.com/api
+
+--001a11c23ee2d5843504e771c95c
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>=A0 I have created a little JSON API service=
+ for the open world database (that is, world.db) using the Sinatra Ruby gem=
+. For example, /countries/south_america [1] gets you all countries in South=
+ America. Note: Using .txt [2] will get you all countries as comma separate=
+d values, that is, plain text and .html [3] will get you all countries as a=
+ plain hypertext table. See the start page [4] for more info.<br>
+<br>=A0 Cheers<br><br>[1] <a href=3D"http://worlddb.herokuapp.com/api/v1/ta=
+g/south_america">http://worlddb.herokuapp.com/api/v1/tag/south_america</a><=
+br>[2] <a href=3D"http://worlddb.herokuapp.com/api/v1/tag/south_america.txt=
+">http://worlddb.herokuapp.com/api/v1/tag/south_america.txt</a><br>
+[3] <a href=3D"http://worlddb.herokuapp.com/api/v1/tag/south_america.html">=
+http://worlddb.herokuapp.com/api/v1/tag/south_america.html</a><br>[4] <a hr=
+ef=3D"http://worlddb.herokuapp.com/api">http://worlddb.herokuapp.com/api</a=
+> <br>
+<br></div>
+
+--001a11c23ee2d5843504e771c95c--
+

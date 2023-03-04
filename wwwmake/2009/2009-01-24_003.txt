@@ -1,0 +1,41 @@
+From 262784679936@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 258719350784
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,3b08bac9094a4cfb
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.100.163.15 with SMTP id l15mr1854036ane.24.1232791674272; Sat, 
+	24 Jan 2009 02:07:54 -0800 (PST)
+Date: Sat, 24 Jan 2009 02:07:53 -0800 (PST)
+In-Reply-To: <843d41e6-f3a1-4891-8abf-9b0d134f4e2b@z28g2000prd.googlegroups.com>
+X-IP: 91.115.252.148
+References: <843d41e6-f3a1-4891-8abf-9b0d134f4e2b@z28g2000prd.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: oQwwLQwAAADq4BKUNHmxw9ZBx8KUAWO8
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) 
+	AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.43 Safari/525.19,gzip(gfe),gzip(gfe)
+Message-ID: <6f2ccc7d-d7ae-473d-ae02-eab092afe461@i24g2000prf.googlegroups.com>
+Subject: Re: trouble w/ svg backgrounds
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+> I generate and show slideshows on my PC, and it displays fine.
+> I ftp the files to a Linux-run =A0website, and the svg file shows up as
+> XML in the background.
+> What is the problem?
+
+  I'd say you have to configure your webserver to set/send the correct
+mime type for SVG. Here's the Apache configuration I use for the
+slideshow.rubyforge.org site, for example [1].
+
+  AddType image/svg+xml .svg
+
+   That's it. Cheers.
+
+[1] http://slideshow.rubyforge.org/svn/webby/content/.htaccess
+

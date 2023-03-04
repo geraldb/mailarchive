@@ -1,0 +1,64 @@
+From 6350952736520929280@xxx Wed Nov 09 13:00:14 +0000 2016
+X-GM-THRID: 6348285061509414912
+X-Received: by 10.36.130.193 with SMTP id t184mr61269itd.27.1478696413849;
+        Wed, 09 Nov 2016 05:00:13 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.31.76 with SMTP id f73ls1275324iof.26.gmail; Wed, 09 Nov
+ 2016 05:00:12 -0800 (PST)
+X-Received: by 10.36.131.133 with SMTP id d127mr18564349ite.37.1478696410713;
+        Wed, 09 Nov 2016 05:00:10 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x233.google.com (mail-it0-x233.google.com. [2607:f8b0:4001:c0b::233])
+        by gmr-mx.google.com with ESMTPS id h1si10298ith.1.2016.11.09.05.00.10
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 09 Nov 2016 05:00:10 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::233 as permitted sender) client-ip=2607:f8b0:4001:c0b::233;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x233.google.com with SMTP id q124so28372285itd.1
+        for <opensport@googlegroups.com>; Wed, 09 Nov 2016 05:00:10 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=pqcyD3Bgng972hGnI9T4Oe5OOAYGGxRjH0hULcbDw88=;
+        b=OKBvDZuOYLTz6iBKzAv75tvUZdlfMUmLQoVVcFWsQvuYWDpii36WqL3BMu3WKu0027
+         VnthUtcHsRmHYX3mLOmb9m9n80M95k8JL/jjFmupUZ2GWE/dEpJ50e+Qzbpja28glrjr
+         V1wiiMbqi1B4Xh2Keu8yJvao9hfYkd6Kl3G2p5f3yzV61UURLtb8RZhai9mRbETjgJd5
+         QeqJ4bBe3j2BXj/aqFRQvgKEjS7/fSy7KMH3Pqkijt6Z2c2OA5CelCNtf5/+OgDGWXQL
+         Zk7O2nYnZkzJAiom0vioY9ZasSxeCNFfGht+CiQ0ewef737ftxsp6Yf/NHxmd8kf/piH
+         E6kQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=pqcyD3Bgng972hGnI9T4Oe5OOAYGGxRjH0hULcbDw88=;
+        b=eYfMXgQh2RTqlKMdG2xqQrFfXVh9YYFKc9YeWZjMKsyj8hlUKozgR1yxjeIFo40VmV
+         zaU0/UKlyb4RQo0k7njro2/BEsGZ5kDRpPYW3U364cJlXxS4yfx9CBdWe2rLn/4FGI8U
+         neMYR+QgEXxfJMlpNnlEW2cMg6juprY7iyD9nWRo/PMG/TFyeed073qJtd3+EJFKahcQ
+         D4J3/qNK9/tyJRLL8s+a6TOhoj5vQ4WRRmgkx+ChLVbrqq7nlUjn8aasCcs9YId1iZiQ
+         bxVuMVw4QknYlBp09yl9pdDTgTmQK2bzBCP6kpkB1qwbfoiv4+W1f/cH2sp/PQ0fDRKv
+         Y06Q==
+X-Gm-Message-State: ABUngvcCFOx3wHKLwlvoW6fFylJ9x9DXrYghHTzKZ5kCr/OtdEYrjTaPcuyITHaOJhK4z7rztMKTb7VUAfg3Xw==
+X-Received: by 10.107.9.93 with SMTP id j90mr97062ioi.230.1478696410235; Wed,
+ 09 Nov 2016 05:00:10 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.131.210 with HTTP; Wed, 9 Nov 2016 05:00:09 -0800 (PST)
+In-Reply-To: <be90cc1e-d33d-4e35-9cda-24972786cd45@googlegroups.com>
+References: <CAAxEZd9RHcwL+k+cSfrdgDgO8xUBYOAEfvaWHwvM77mCbkJJMA@mail.gmail.com>
+ <be90cc1e-d33d-4e35-9cda-24972786cd45@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 9 Nov 2016 14:00:09 +0100
+Message-ID: <CAAxEZd-Ej-LgPdRyfQonf0XyOmWEWC2DhcY+jHU633FQanieTw@mail.gmail.com>
+Subject: Re: [opensport] Re: football.json and The Free Football Almanac Moved
+ (to new orgs)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   The football.db is free but self-service e.g. serve and help
+yourself - e.g. clone the repo, build yourself a database, etc.
+Cheers.
+

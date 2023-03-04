@@ -1,0 +1,79 @@
+From 6324941005143408640@xxx Wed Aug 31 10:41:25 +0000 2016
+X-GM-THRID: 6324939761964285952
+X-Received: by 10.157.27.99 with SMTP id l90mr2954103otl.42.1472640085384;
+        Wed, 31 Aug 2016 03:41:25 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.36.236.2 with SMTP id g2ls2352468ith.22.gmail; Wed, 31 Aug
+ 2016 03:41:24 -0700 (PDT)
+X-Received: by 10.67.10.16 with SMTP id dw16mr6597586pad.28.1472640084109;
+        Wed, 31 Aug 2016 03:41:24 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x235.google.com (mail-it0-x235.google.com. [2607:f8b0:4001:c0b::235])
+        by gmr-mx.google.com with ESMTPS id u125si412875itc.0.2016.08.31.03.41.24
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 31 Aug 2016 03:41:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) client-ip=2607:f8b0:4001:c0b::235;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x235.google.com with SMTP id n75so87274551ith.0
+        for <opensport@googlegroups.com>; Wed, 31 Aug 2016 03:41:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=7VJt3jOeRVj1PetbUQACm6T0j5oR9Xsgawzpv8xhS1Q=;
+        b=OqCHwKkczAJNRo/4CzrB2rg37YawA5EgPLomeOaS9bedeYaE+mmAJDruHvk2BzL3Bb
+         x5Rt1teo1AA3EjsILIX1+QVq+eTSaijv+qLBYQMyKI83mbNJXyBZ1TCPW6OTe72DSrWf
+         tF/ig0NQ5gArnVECtVsFQfeiGPVPhDOOjRn+7ZCMXPlpBnqGn5zwTm5+nxcnElwOdIQd
+         adCn+4/b1bVn1Ov287zRxlq2JMmEnVAXWL+E3Fr8XbJA+wgw7UacQwDHH/venfYrefxT
+         /05GOmF3//9Z9XC+ulvBNUAUEuZulK0P6pzCZtFrYWHBlBNEL4WOi6vBe6lt14Y40jw5
+         8Tqw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=7VJt3jOeRVj1PetbUQACm6T0j5oR9Xsgawzpv8xhS1Q=;
+        b=B+u0VB2SYTkxUvNwlehrdbk0331PmVTw+tzT66FLegFzUi7STfQcFGcUbFVQEE/MYD
+         n7ss82AwuYA3fZLC3urlZhch+I0ZXH+yFedjfdza/+j0pGTvOoCx1s28EB//3lo8Z+cG
+         kHLQWB032VR1qSISjwL31dczwSnp5WMENvPf9LEkKlG5thVB/br3E+KPAmqla7w6WpEM
+         E5TZAWwxurgFEwo0srAac0OvCndAtzGx1tBX3TW1/cmRLgRVkuqL7s0Wu39eu2qRJXcv
+         628N6M4SNkx/vtoQq4ianGfqx/HynT0jRbVbtiEwNWhMf/Kp4HyaU1e4nx+tu1/fyTgd
+         bcEQ==
+X-Gm-Message-State: AE9vXwPUbM4+KbCU5Y2w/GzV0Oqrm5Z+GK6LXOdF34RejvGtNCqnF9t7k1pnDnKFZBBkHLT5syoNFeHAAwgZQw==
+X-Received: by 10.107.142.12 with SMTP id q12mr5325863iod.67.1472640083720;
+ Wed, 31 Aug 2016 03:41:23 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Wed, 31 Aug 2016 03:41:23 -0700 (PDT)
+In-Reply-To: <6c088125-462a-4774-b208-761a686b028e@googlegroups.com>
+References: <6c088125-462a-4774-b208-761a686b028e@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 31 Aug 2016 12:41:23 +0200
+Message-ID: <CAAxEZd_CkiSJVoB=0Hdd1NGPuC+A44SrBXovH6S9eDfdXo3YJA@mail.gmail.com>
+Subject: Re: [opensport] Error when running sportdb stats
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for trying football.db (sport.db ;-) ).
+
+> {:adapter=>"sqlite3", :database=>"./sport.db"}
+> *** error: Could not find table 'leagues'
+
+ Hard to say. You have to call the sportdb command in the same folder
+/ directory as the database (otherwise SQLite will create an empty
+database without any table).
+
+   Can you retry with the verbose switch e.g.
+
+   sportdb --verbose stats
+
+   A "better" way to check your database is using something like
+SQLiteStudio [1] - open the database and browse the tables and data
+and so on.
+
+   Cheers.
+
+[1] http://sqlitestudio.pl
+

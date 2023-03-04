@@ -1,0 +1,63 @@
+From 1174530949120@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1166454816768
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,12ce63c95e0f9f15
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.58.151.15 with SMTP id um15mr123828veb.26.1352324014903;
+        Wed, 07 Nov 2012 13:33:34 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.226.7 with SMTP id iu7ls2549996vcb.6.gmail; Wed, 07 Nov
+ 2012 13:33:34 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.52.30.225 with SMTP id v1mr1392617vdh.20.1352324014555; Wed,
+ 07 Nov 2012 13:33:34 -0800 (PST)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by l12g2000vbj.googlegroups.com with HTTP; Wed, 7 Nov 2012 13:33:34
+ -0800 (PST)
+Date: Wed, 7 Nov 2012 13:33:34 -0800 (PST)
+In-Reply-To: <111a397f-d1c8-47bc-84b0-96d57910c080@googlegroups.com>
+References: <111a397f-d1c8-47bc-84b0-96d57910c080@googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EK6n64QFTSTMbtQgr840
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:16.0)
+ Gecko/20100101 Firefox/16.0,gzip(gfe)
+X-Google-IP: 188.22.216.1
+Message-ID: <3458e4f3-dc27-4e12-a5b6-57d604e628d9@l12g2000vbj.googlegroups.com>
+Subject: Re: deck.js template, how to customize slides.css ?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+
+> https://github.com/geraldb/slideshow-deck.js/blob/master/style.css.er...
+> contains :
+>
+> <%= content_for :css %>
+>
+> How do you set this css parameter?
+
+  It works like in Ruby on Rails views/layouts if that helps.
+Basically, to add content use it as a block (in a different template
+e.g. slides.html.erb). Example:
+
+   <% content_for :css %>
+     your css here
+   <% end %>
+
+   That's really all there is to it. More info [1].
+
+   Cheers.
+
+[1] http://guides.rubyonrails.org/layouts_and_rendering.html#using-the-content_for-method
+

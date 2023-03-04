@@ -1,0 +1,74 @@
+From 1487097823232@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1488728358912
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,3785eaf2be123e3f,start
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.85.197 with SMTP id j5mr12762398lbz.20.1396297703498;
+        Mon, 31 Mar 2014 13:28:23 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.180.86.169 with SMTP id q9ls510933wiz.49.canary; Mon, 31 Mar
+ 2014 13:28:22 -0700 (PDT)
+X-Received: by 10.180.100.35 with SMTP id ev3mr7708884wib.6.1396297702638;
+        Mon, 31 Mar 2014 13:28:22 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22e.google.com (mail-wg0-x22e.google.com [2a00:1450:400c:c00::22e])
+        by gmr-mx.google.com with ESMTPS id jb4si864728wic.0.2014.03.31.13.28.22
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 31 Mar 2014 13:28:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) client-ip=2a00:1450:400c:c00::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f46.google.com with SMTP id b13so6534928wgh.5
+        for <webslideshow@googlegroups.com>; Mon, 31 Mar 2014 13:28:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=AGgYQAQBxmzrF9tipw92bNBmBNBkac7lTH0h0MO56H4=;
+        b=ANHeKqfAaGkzROzCdsVGVjQEXiqwLv+EzgRZLIrtmyTDZjGkqBw73rBAqXGMqpeWVC
+         UzgHYNIT+ygrC0jBWTf5XtaZZhzOuJ4+hftXMfHz97C9oyxwDn9oEeHG6VuwfIGlM0Iy
+         AoODIaYYY+Mo0SSiY5IzufLs3EtNFHGPS2I0doIHuyxcUIhaWDLDRIr23mWEwlVTE7cU
+         +lMdBw7MD3ArgS+cWEQQme+Pe21SWWRHqkDS/nkVTWa1FcJB1ZuYhK+kFyVtyYchlaT2
+         PkGwlDBY1juOChTMdMscCRfkqVVealo/JQBH6eJRz1wsYTGpKuZjZD5GfdpE1Hh0IoJ+
+         Qf6w==
+MIME-Version: 1.0
+X-Received: by 10.180.185.232 with SMTP id ff8mr14943338wic.25.1396297702549;
+ Mon, 31 Mar 2014 13:28:22 -0700 (PDT)
+Received: by 10.216.253.68 with HTTP; Mon, 31 Mar 2014 13:28:22 -0700 (PDT)
+Date: Mon, 31 Mar 2014 22:28:22 +0200
+Message-ID: <CAAxEZd90gkzPeoNv8qKRHktXpTVH-OXnnPti1HOCOS4RVq7SJQ@mail.gmail.com>
+Subject: [ANN] Hyper Book (H9) - hybook gem - Build Hypertext Books w/ Markdown
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  The Slide Show (S9) gem got a brother or sister, that is, let's
+welcome the Hyper Book (H9) gem that lets you build hypertext books in
+two versions, that is, an all-in-one-single-page version and a
+multi-page version.
+
+  It's still early - the good news the hybook gem shares (reuses) half
+a dozen slideshow gems (pakman - template pack manager; markdown -
+markdown wrapper n helpers; textutils - text filters, helpers and
+more;  props - settings hierachies etc. ) and, thus, will also share
+this mailing list/forum.
+
+  The first books in the works built by Hyper Book (H9) include:
+
+  - The Free World Beer Book [1]
+  - The Free World Football Almanac [2]
+  - The Free World Facts Book [3]
+
+   More info @ github.com/hybook/hybook
+
+  As always, everything is public domain (no copyright, no license). Cheers.
+
+[1] github.com/openbeer/book
+[2] github.com/openfootball/book
+[3] github.com/openmundi/book
+

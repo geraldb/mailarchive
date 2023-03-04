@@ -1,0 +1,79 @@
+From 1045562392576@xxx Tue Jun 16 00:17:04 +0000 2015
+X-GM-THRID: 1033654763520
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,28d3412620afa233
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.216.5 with SMTP id f5mr15421604yhp.10.1401881122161;
+        Wed, 04 Jun 2014 04:25:22 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.44.36 with SMTP id f33ls2983081qga.19.gmail; Wed, 04 Jun
+ 2014 04:25:21 -0700 (PDT)
+X-Received: by 10.140.93.23 with SMTP id c23mr38568qge.14.1401881121899;
+        Wed, 04 Jun 2014 04:25:21 -0700 (PDT)
+X-Google-Doc-Id: 285c21576a26e318
+X-Google-Web-Client: true
+Date: Wed, 4 Jun 2014 04:25:21 -0700 (PDT)
+From: Marvin Preuss <xsteadfastx@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <01464b3e-6643-408b-90dd-59aa7659988a@googlegroups.com>
+In-Reply-To: <8d1f86e7-4d88-4bfc-9043-b906f835bc86@googlegroups.com>
+References: <8d1f86e7-4d88-4bfc-9043-b906f835bc86@googlegroups.com>
+Subject: Re: Want to access groups, match time stamp
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_4229_20899181.1401881121367"
+X-Google-Token: EKGEvJwFCM1dG0iSm3s0
+X-Google-IP: 47.65.185.164
+
+------=_Part_4229_20899181.1401881121367
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4230_21067591.1401881121370"
+
+------=_Part_4230_21067591.1401881121370
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+On Wednesday, June 4, 2014 9:05:54 AM UTC+2, raheel ahmad wrote:
+>
+> Urgent need help. I am trying the webadmin to get the information about 
+> matches. 
+>
+> I am trying the following URL 
+>
+> http://footballdb.herokuapp.com/event/world.2014/rounds
+>
+> This works fine but not give the match time stamp and it's group. How I 
+> can get these information. Please help. Thanks 
+>
+you have to add them by yourself. i forked the simple api, changed a line 
+and now the api returns a datetime object:
+
+ https://github.com/xsteadfastx/sport.db.api.starter
+
+------=_Part_4230_21067591.1401881121370
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">On Wednesday, June 4, 2014 9:05:54 AM UTC+2, raheel ahmad =
+wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8=
+ex;border-left: 1px #ccc solid;padding-left: 1ex;">Urgent need help. I am t=
+rying the webadmin to get the information about matches. <p>I am trying the=
+ following URL </p><p><a href=3D"http://footballdb.herokuapp.com/event/worl=
+d.2014/rounds" target=3D"_blank" onmousedown=3D"this.href=3D'http://www.goo=
+gle.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.com%2Fevent%2Fworld.2014%=
+2Frounds\46sa\75D\46sntz\0751\46usg\75AFQjCNEpn1wMrm67fzgk_9nSV5RBNWVb8w';r=
+eturn true;" onclick=3D"this.href=3D'http://www.google.com/url?q\75http%3A%=
+2F%2Ffootballdb.herokuapp.com%2Fevent%2Fworld.2014%2Frounds\46sa\75D\46sntz=
+\0751\46usg\75AFQjCNEpn1wMrm67fzgk_9nSV5RBNWVb8w';return true;">http://foot=
+balldb.herokuapp.<wbr>com/event/world.2014/rounds</a></p><p>This works fine=
+ but not give the match time stamp and it's group. How I can get these info=
+rmation. Please help. Thanks </p></blockquote><div>you have to add them by =
+yourself. i forked the simple api, changed a line and now the api returns a=
+ datetime object:<br><br>&nbsp;https://github.com/xsteadfastx/sport.db.api.=
+starter<br></div></div>
+------=_Part_4230_21067591.1401881121370--
+
+------=_Part_4229_20899181.1401881121367--
+

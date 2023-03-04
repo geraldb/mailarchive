@@ -1,0 +1,137 @@
+From 6831424964053172224@xxx Wed May 27 07:37:51 +0000 2020
+X-GM-THRID: 6830804647727333376
+X-Received: by 2002:aed:31a1:: with SMTP id 30mr3019152qth.366.1590565071163;
+        Wed, 27 May 2020 00:37:51 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:620a:5a3:: with SMTP id q3ls1624055qkq.2.gmail; Wed, 27
+ May 2020 00:37:50 -0700 (PDT)
+X-Received: by 2002:a37:a648:: with SMTP id p69mr2818276qke.190.1590565070615;
+        Wed, 27 May 2020 00:37:50 -0700 (PDT)
+Received: by 2002:a05:620a:1027:b029:ee:edbf:eaca with SMTP id a7-20020a05620a1027b02900eeedbfeacamsqkk;
+        Tue, 26 May 2020 15:32:32 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxwDyf3aJMvrK4NMmNwN8D3/Zs2f120oOaLGRajWnCnS59fL0ZOx3+EO4uJoAypIYm7CVdTjmBNTw==
+X-Received: by 2002:a5b:f4d:: with SMTP id y13mr5566810ybr.50.1590532352520;
+        Tue, 26 May 2020 15:32:32 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Tue, 26 May 2020 15:32:31 -0700 (PDT)
+From: Oscar Batori <oscarbatori@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <3aab436a-f944-437c-b711-5fdc6c89f108@googlegroups.com>
+In-Reply-To: <CAAxEZd-FujMt-XqyBe_qeEAsxPtUfier5_Ok2W5jFep8X+NKMA@mail.gmail.com>
+References: <CAAxEZd-FujMt-XqyBe_qeEAsxPtUfier5_Ok2W5jFep8X+NKMA@mail.gmail.com>
+Subject: Re: football.json Datasets 2019/20 Update - Bonus: New Article -
+ Generating Football JSON Datasets
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2476_1822977163.1590532352101"
+X-Google-Token: EP-xtvYFNJYNWo9k5580
+X-Google-IP: 172.91.107.135
+
+------=_Part_2476_1822977163.1590532352101
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2477_806424364.1590532352102"
+
+------=_Part_2477_806424364.1590532352102
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Gerald - a big fan of the work you have been doing. I work on product at=20
+DoltHub, which is optimized for distributing data, and free for open data.=
+=20
+I am wondering if you would consider collaborating on hosting this on=20
+DoltHub so that users can run one command and clone all data across all=20
+leagues and seasons, rather than a file per league per season?
+
+We blogged about using our product for distribution=20
+<https://www.dolthub.com/blog/2020-05-18-distribute-dolt-not-api/>.
+
+-Oscar
+
+On Monday, May 25, 2020 at 8:30:42 AM UTC-7, Gerald Bauer wrote:
+>
+> Hello,=20
+>
+>   Using the new football.json scripts [1] I have updated=20
+> the 2019/20 season from the football.txt sources. The leagues include:=20
+> - English Premier League=20
+> - Deutsche Bundesliga=20
+> - Deutsche 2. Bundesliga=20
+> - Spanish Primera Divisi=C3=B3n ("La Liga")=20
+> - Italian Serie A=20
+>
+> As a bonus I've written up a little article=20
+> on Generating JSON Datasets [2] in the sport.db Scripts & Tools Guide=20
+> Series.  You can use the football.json datasets as (static) web=20
+> services=20
+> with no API key or signup required ;-), for example.=20
+> The article kicks off with the English Premier League.=20
+> Enjoy data wrangling and the beautiful game with the sport.db=20
+> scripting machinery.=20
+>
+>   Alternatives - of course - always welcome. Cheers. Prost.=20
+>
+> [1] https://github.com/yorobot/football.json=20
+> [2]=20
+> https://github.com/sportdb/docs/blob/master/generating-json-datasets.md=
+=20
+>
+
+------=_Part_2477_806424364.1590532352102
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Gerald - a big fan of the work you have been doing. I work=
+ on product at DoltHub, which is optimized for distributing data, and free =
+for open data. I am wondering if you would consider collaborating on hostin=
+g this on DoltHub so that users can run one command and clone all data acro=
+ss all leagues and seasons, rather than a file per league per season?<div><=
+br></div><div>We blogged about using our product for <a href=3D"https://www=
+.dolthub.com/blog/2020-05-18-distribute-dolt-not-api/">distribution</a>.</d=
+iv><div><br></div><div>-Oscar<br><br>On Monday, May 25, 2020 at 8:30:42 AM =
+UTC-7, Gerald Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin=
+: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hell=
+o,
+<br>
+<br>=C2=A0 Using the new football.json scripts [1] I have updated
+<br>the 2019/20 season from the football.txt sources. The leagues include:
+<br>- English Premier League
+<br>- Deutsche Bundesliga
+<br>- Deutsche 2. Bundesliga
+<br>- Spanish Primera Divisi=C3=B3n (&quot;La Liga&quot;)
+<br>- Italian Serie A
+<br>
+<br>As a bonus I&#39;ve written up a little article
+<br>on Generating JSON Datasets [2] in the sport.db Scripts &amp; Tools Gui=
+de
+<br>Series. =C2=A0You can use the football.json datasets as (static) web
+<br>services
+<br>with no API key or signup required ;-), for example.
+<br>The article kicks off with the English Premier League.
+<br>Enjoy data wrangling and the beautiful game with the sport.db
+<br>scripting machinery.
+<br>
+<br>=C2=A0 Alternatives - of course - always welcome. Cheers. Prost.
+<br>
+<br>[1] <a href=3D"https://github.com/yorobot/football.json" target=3D"_bla=
+nk" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.google.com=
+/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fyorobot%2Ffootball.json\x26sa\x3dD\x26=
+sntz\x3d1\x26usg\x3dAFQjCNGcipX6lH1-aiHs899I_xiIAfoSog&#39;;return true;" o=
+nclick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgi=
+thub.com%2Fyorobot%2Ffootball.json\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCN=
+GcipX6lH1-aiHs899I_xiIAfoSog&#39;;return true;">https://github.com/yorobot/=
+<wbr>football.json</a>
+<br>[2] <a href=3D"https://github.com/sportdb/docs/blob/master/generating-j=
+son-datasets.md" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.hre=
+f=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fsportdb=
+%2Fdocs%2Fblob%2Fmaster%2Fgenerating-json-datasets.md\x26sa\x3dD\x26sntz\x3=
+d1\x26usg\x3dAFQjCNEi7vi9Ney58R29CetRy0JELwu3VQ&#39;;return true;" onclick=
+=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.c=
+om%2Fsportdb%2Fdocs%2Fblob%2Fmaster%2Fgenerating-json-datasets.md\x26sa\x3d=
+D\x26sntz\x3d1\x26usg\x3dAFQjCNEi7vi9Ney58R29CetRy0JELwu3VQ&#39;;return tru=
+e;">https://github.com/sportdb/<wbr>docs/blob/master/generating-<wbr>json-d=
+atasets.md</a>
+<br></blockquote></div></div>
+------=_Part_2477_806424364.1590532352102--
+
+------=_Part_2476_1822977163.1590532352101--
+

@@ -1,0 +1,137 @@
+From 6195533931488477184@xxx Thu Sep 17 17:15:53 +0000 2015
+X-GM-THRID: 6195533932054708224
+X-Received: by 10.50.103.73 with SMTP id fu9mr4274498igb.0.1442510153413;
+        Thu, 17 Sep 2015 10:15:53 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.109.75 with SMTP id k69ls561174qgf.16.gmail; Thu, 17 Sep
+ 2015 10:15:52 -0700 (PDT)
+X-Received: by 10.13.235.13 with SMTP id u13mr164008ywe.43.1442510152854;
+        Thu, 17 Sep 2015 10:15:52 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x231.google.com (mail-io0-x231.google.com. [2607:f8b0:4001:c06::231])
+        by gmr-mx.google.com with ESMTPS id a11si304781igv.3.2015.09.17.10.15.52
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 17 Sep 2015 10:15:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) client-ip=2607:f8b0:4001:c06::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x231.google.com with SMTP id h134so29357916iof.0
+        for <opensport@googlegroups.com>; Thu, 17 Sep 2015 10:15:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=OUAAGUaW+KLEUg1Xi8BQUOTpI5gE8++4L+VuNr7Xkr4=;
+        b=wJXUG8/Z9+4fsAKS7QlHU8U1bTqSNFZHPHrlQjfjI0+A9HuV80/XMYrFVPQQLX0xHv
+         MP3fcKD3mbboyQ+aPV4xPdb0X7R9mO0bATShsp1YGzshUkNRM9DqrAInb7WL6vvEOT0M
+         /gxvEGnBxd9lKSehgO3ChLCkiCibgJNhRrIDAm9m/MD9vYUTKXnKtj6tdIePvvZjmH4H
+         GR9gV8QInpKAQRt8If9UtoouHMnUEujM/TMATQFJfiWFt/C4LwAMr43SDVfaFMSms67X
+         56Gt2cckvJHo6UJT7ERs7n6bxYDpAM30QSWgS+g7Yu4KEqkXokQ0pOSBLznLSbTl/25L
+         +4NQ==
+MIME-Version: 1.0
+X-Received: by 10.107.8.164 with SMTP id h36mr8194315ioi.35.1442510152686;
+ Thu, 17 Sep 2015 10:15:52 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Thu, 17 Sep 2015 10:15:52 -0700 (PDT)
+Date: Thu, 17 Sep 2015 19:15:52 +0200
+Message-ID: <CAAxEZd-K+hcc9X+VzAsCSMHTbxbwARp4Jy69orWUG_pEdU+a9Q@mail.gmail.com>
+Subject: football.json - Football Data in JSON - Request for Comments on Format
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I've started a new football.json repo [1]. The idea is to offer -
+surprise, surprise -football data in JSON.
+
+ What's different?
+
+  The idea is that the JSON gets (auto-)generated from the football.db
+datasets.Thus, if you want to change anything in the JSON. Don't.
+Change the source and (re)generate the JSON.
+
+  To start off the new repo includes the (complete) seaons's match
+schedule in a single file and as an extra file all clubs.
+
+
+  Bundesliga 2015/16 Match Schedule Example - 2015-16/de.1.json [2]:
+
+{
+  "name": "Deutsche Bundesliga 2015/16",
+  "rounds": [
+    {
+      "name": "1. Spieltag",
+      "matches": [
+        {
+          "date": "2015-08-14",
+          "team1": {
+            "key":  "bayern",
+            "name": "Bayern M=C3=BCnchen",
+            "code": "FCB"
+          },
+          "team2": {
+            "key":  "hamburg",
+            "name": "Hamburger SV",
+            "code": "HSV"
+          },
+          "score1": 5,
+          "score2": 0
+        },
+        {
+          "date": "2015-08-15",
+          "team1": {
+            "key":  "bremen",
+            "name": "Werder Bremen",
+            "code": "WBM"
+          },
+          "team2": {
+            "key":  "schalke",
+            "name": "FC Schalke 04",
+            "code": "F04"
+          },
+          "score1": 0,
+          "score2": 3
+        },
+        ...
+      ]
+    }
+  ]
+}
+
+
+ Bundesliga 2015/16 Clubs Example - 2015-16/de.1.clubs.json [3]:
+
+{
+  "name": "Deutsche Bundesliga 2015/16",
+  "clubs": [
+    {
+      "key":  "bayern",
+      "name": "Bayern M=C3=BCnchen",
+      "code": "FCB"
+    },
+    {
+      "key":  "hamburg",
+      "name": "Hamburger SV",
+      "code": "HSV"
+    },
+    ...
+  ]
+}
+
+
+  That's it. If you have any comments, suggestions about the format
+(or the project).
+  Now is good time to join the discussion ;-)
+
+  Cheers.
+
+[1] github.com/openfootball/football.json
+[2] github.com/openfootball/football.json/blob/master/2015-16/de.1.json
+[3] github.com/openfootball/football.json/blob/master/2015-16/de.1.clubs.js=
+on
+

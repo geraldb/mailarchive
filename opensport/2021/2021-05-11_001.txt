@@ -1,0 +1,143 @@
+From 6961102644828962816@xxx Tue May 11 18:33:30 +0000 2021
+X-GM-THRID: 6961100163747151872
+X-Received: by 2002:a05:6402:348d:: with SMTP id v13mr4989357edc.63.1620758009722;
+        Tue, 11 May 2021 11:33:29 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:aa7:cdcb:: with SMTP id h11ls11713789edw.2.gmail; Tue, 11
+ May 2021 11:33:28 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJz0j2rag5U4LeOYiBREi8zIBCwIYkF286z3RACF8gV9jyXgn6RmsTk39adzSUGaHjUGd5UI
+X-Received: by 2002:aa7:d950:: with SMTP id l16mr37864401eds.374.1620758007884;
+        Tue, 11 May 2021 11:33:27 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1620758007; cv=none;
+        d=google.com; s=arc-20160816;
+        b=d5fdJTyAc+6CQFiCppoWLClvWmxd/EJZRh40SpLtpBd7I2C8Fflr6zGNbCuhCVaL7R
+         mDDg8Z1EoTxhm0B31/6OyYisCBQw4My6RcVGAHcGCuAC13h2kHoz8BouQxFVuQhyn9AU
+         XiKkB2X2Hik8G2p5a9TrBaJDMP8VvFrsSuDENkAy8wlbHpDPRxpxdosUWHz9O6NITPSl
+         PkCdtYHE8DYoMFLVbB3oiv7+2gdDrmmgnKRrKmeaZvM42HVO/MBvdf/oyFWTCyet7P5E
+         PsfhHg1IEe1KJp9dcSJi/JNtqSnBioPomfPlGiNb7RzgvltdpBqTi7byYtFyBrGSkH/m
+         7TKQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=ID/nvr2kaOn+wF+1y0/S92s27lJtVr1+yNblmqfUjNk=;
+        b=spskUQZcDU6svFMWjnq5BReyFZ7QYzFjsRAPt/l3FL1iUq9evQntAiSOO1VlYcKjdk
+         XzqoLLAfQaZ4ug+W8kDN7uek88cGkF51xbFpA5rKMX9Y7JnuXTcbxAQVFIGTWorS6VHQ
+         kJcCmZsm7sq3h7ib9y4Tz7XWcHZu+ICD0gP08VH4SltkjljosEPA7abJ9ust6IfWHAkY
+         wX/dheKcg0isLpvsncAdOzHue5UKLNMsBxl6waL7mN1wRfVnZzHrZOC2Y1tKiyQ+kwOV
+         Qo4wm+BStifJACtyBfMAQESZjbxFvwckfO1VwO54+1nj81nS62MzjXYRV1aWEFR6sgPh
+         Xrig==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=tqeJEY10;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ed1-x52e.google.com (mail-ed1-x52e.google.com. [2a00:1450:4864:20::52e])
+        by gmr-mx.google.com with ESMTPS id x23si300201eju.1.2021.05.11.11.33.27
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 11 May 2021 11:33:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52e as permitted sender) client-ip=2a00:1450:4864:20::52e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=tqeJEY10;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ed1-x52e.google.com with SMTP id c22so24036224edn.7
+        for <opensport@googlegroups.com>; Tue, 11 May 2021 11:33:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=ID/nvr2kaOn+wF+1y0/S92s27lJtVr1+yNblmqfUjNk=;
+        b=tqeJEY10P4LsDa0PFDgis8WFqhxq3msxXM/ypRtkB0/QclkgSzfLdF5d98q4YV80z6
+         UE6dLqPbR1Fl98qeJp2iv2KLB8WPScXCXBPLv+0f0JTUWxtfpfuSqdktEJun5reI4N47
+         b5hqHVna17am19/5cwdWCnmsYPqL5Fs7Exy3A+5QfMuINgf2AL+5ZgVqzG0mo/tZsRH2
+         Mx2XqvSibzGxR0/ev9Bm4UBqCJNwRD/zrv6/SJmj54QVcY9y2VPgCVz5lIDNnVRfXlM0
+         /Hs88cH4dRRSeQm9M+FqVL6UbOJWUnDEmPZQ6usiPBdbj4nXWGnWWqM3ufcP4XJVyX8J
+         DupA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=ID/nvr2kaOn+wF+1y0/S92s27lJtVr1+yNblmqfUjNk=;
+        b=JjBq1pt2aUHH2I3lV4ZuhgFnBi2GQ+QWw7n8Uu7k4ks7Q9k7PCZleMliHwONAcovg6
+         L6msXhfjQ1VtU8JVfoGIFqtq6qBXWns1a0bqZ6AXlJNjZ+Xd/dpzQjB1/GjebU3tprbJ
+         1fmt1Bw6CKpQ2gSU/y62C7P7BR9e0gM8hf9Pqzo1EyweG8L8mgsB1AHDImY2mXc0Jg2s
+         FCbQf7vq0cJ9lfueBHDLCgl9c89mKwLM+TlSSeUXy7t6yM7GuJtSm1JlEwEvyrLG7cEB
+         z/Hht9azHBqDzeEkVMmW4tyGTuAs3o0j1Bf708NbhtVbU3IoIHdvW2+5S+NMWIQqS1ax
+         nsLw==
+X-Gm-Message-State: AOAM531yCEti9P9a/6uG/hBmTXAk8kPykIcSJ4n5NGPbPoezJuEExzHe
+	vwl/8+aRagd5j675msXgtWYCRmCg3bBya0Lu22dDf8a0EQIa0g==
+X-Received: by 2002:a05:6402:3594:: with SMTP id y20mr37703672edc.226.1620758007383;
+ Tue, 11 May 2021 11:33:27 -0700 (PDT)
+MIME-Version: 1.0
+References: <ed2bac25-07cf-41da-bc35-2ea87f0eeaddn@googlegroups.com>
+In-Reply-To: <ed2bac25-07cf-41da-bc35-2ea87f0eeaddn@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 11 May 2021 20:33:16 +0200
+Message-ID: <CAAxEZd8wJST0=_f3236xEAEZ5gVt7uZYwQZVxm27K4W-ADoc9A@mail.gmail.com>
+Subject: Re: [opensport] Creating the eng2020-21 for the first time
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+   some days ago some reported as similar error while building the
+world cup dataset. I know sorry it sounds like a joke it's working
+over here on a test run / build.
+
+   Looks like the sportdb tool is installed (from your log printout). Try a=
+gain:
+
+$  sportdb help
+
+   Usually the recommendation is to start a build with new in an empty
+directory. Thus, retry in an empty director such as:
+
+$  mkdir eng      # or such
+$ cd eng
+$  sportdb new eng2020-21
+
+    If it fails again  - now you can debug a "local" build assuming
+you have the downloaded zips in your directory.
+
+Note: Everytime you try a new build you have to DELETE the local
+sport.db file, thus, try:
+
+$ del sport.db
+
+And now start a "local" build  using the download Datafile that you
+should see in your directory.
+
+$ sportdb build
+
+If it fails again you can help with some more debug information and
+the --verbose flag - that is, delete sport.db again and
+try:
+
+$ sportdb --verbose build
+
+  And see if this error message is more helpful - if you post it here
+I might be able to find out more. Sorry for the trouble. Cheers.
+Prost.
+
+
+
+El mar, 11 may 2021 a las 20:23, Nicky Hogg (<nicky.a.hogg@gmail.com>) escr=
+ibi=C3=B3:
+>
+> Hi Gerald, Im new to ruby and just got it installed and installed sportdb=
+ with gem, im running the command "sportdb new eng2020-21" shown in the exa=
+mple documentation on github, this does create a sport.db file on my comput=
+er however all this is created is the tables, and content has not been popu=
+lated as get the command line error, shown in the photo attached. Im really=
+ new to this so I'm probably making some silly mistake but I can't get it t=
+o work please could you let me know what I'm doing wrong. Thanks : )
+>
+> --
+> You received this message because you are subscribed to the Google Groups=
+ "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an=
+ email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit https://groups.google.com/d/msgi=
+d/opensport/ed2bac25-07cf-41da-bc35-2ea87f0eeaddn%40googlegroups.com.
+

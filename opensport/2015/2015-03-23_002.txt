@@ -1,0 +1,62 @@
+From 2543223570432@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2513988222976
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b207fcdca166b700
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.43.152.9 with SMTP id ku9mr11137675icc.8.1427100349374;
+        Mon, 23 Mar 2015 01:45:49 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.66.193 with SMTP id h1ls973252igt.6.canary; Mon, 23 Mar
+ 2015 01:45:48 -0700 (PDT)
+X-Received: by 10.66.102.100 with SMTP id fn4mr101191794pab.19.1427100348964;
+        Mon, 23 Mar 2015 01:45:48 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x235.google.com (mail-ig0-x235.google.com. [2607:f8b0:4001:c05::235])
+        by gmr-mx.google.com with ESMTPS id e4si508169igt.3.2015.03.23.01.45.48
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 23 Mar 2015 01:45:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::235 as permitted sender) client-ip=2607:f8b0:4001:c05::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::235 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by igbud6 with SMTP id ud6so36061950igb.1
+        for <opensport@googlegroups.com>; Mon, 23 Mar 2015 01:45:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=nxk7q/ej/mzQb4246nP/+jNN/jzmau0K1LeNwQgDtS0=;
+        b=xCq7X0s3TjbpUzTwvePw+ZLteQ4xjw7EQ5rBhLKDPDAUIdJNVsm0u3tSoq/IKqr50I
+         qnBDDc7k1GdC5By7Tob2tRp5AeLUn+RzZbahvzS4AUHIhvWnMng5VYA5pVBrr9PIscGm
+         ufIlJ4HuuehT7lAg2Mfc2r86nofRPT+r+ReJTOZt8laSgSbvvZEk+HHdp6Q574gVwNcu
+         z+khXe2hh2hXopYaj2wd+s2rfqJZvtY130TMdsCdCkmVfCeJGTzh21fOc0V9slDmJnLH
+         GMSRX6c4721a9GhJrA4tAzxDnidX6t/OOR17ri2vQQnnSROfVO7eEaeybdYdYZtpGDvB
+         /JtQ==
+MIME-Version: 1.0
+X-Received: by 10.50.20.228 with SMTP id q4mr12754982ige.1.1427100348837; Mon,
+ 23 Mar 2015 01:45:48 -0700 (PDT)
+Received: by 10.64.141.103 with HTTP; Mon, 23 Mar 2015 01:45:48 -0700 (PDT)
+In-Reply-To: <719d8403-288b-4a30-9930-92b7cce5813b@googlegroups.com>
+References: <f613f935-42ed-407c-b7e3-549fdcecd8fc@googlegroups.com>
+	<CAAxEZd87cJbDt+s9riziPS-zr09xhiF5mAUP6Tq=ciot3emPDg@mail.gmail.com>
+	<f3131b38-1312-47ac-8359-e2f4330189b1@googlegroups.com>
+	<CAAxEZd86VnHXjF29jrVx9rFd092+CQfWwckKM8gwEHx6+_8OOw@mail.gmail.com>
+	<719d8403-288b-4a30-9930-92b7cce5813b@googlegroups.com>
+Date: Mon, 23 Mar 2015 09:45:48 +0100
+Message-ID: <CAAxEZd94u_gG7PJtpmkx5e0tgPjuPOzYWT5KX9ZOdbw6FC3CEQ@mail.gmail.com>
+Subject: Re: [opensport] Empty tables after build
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   > Are there any datasets that contains rosters?
+
+   So for only the World Cup 2014 in Brazil has all (complete)
+national team squads (rosters) datasets [1] included. Cheers.
+
+[1] github.com/openfootball/world-cup/tree/master/2014--brazil/squads
+

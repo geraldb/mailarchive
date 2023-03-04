@@ -1,0 +1,345 @@
+From 6566220254206230528@xxx Tue Jun 12 15:28:08 +0000 2018
+X-GM-THRID: 6342113564983033856
+Date: Tue, 12 Jun 2018 08:28:08 -0700 (PDT)
+From: Peter Coghill <peter@alephinsights.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <3c94f858-dd05-4f5d-ab13-1459b850c2b3@googlegroups.com>
+In-Reply-To: <CAAxEZd8QRCpib+FLdzQodrCnsqSRX4UJ3+Um1zHS8_aBCfP7=w@mail.gmail.com>
+References: <f6259f69-0d0f-4ca1-9ac8-af45aeca4c1b@googlegroups.com>
+ <d767b1e9-47ad-43f5-83e7-f5a9e0991ad5@googlegroups.com> <d1a2b4a3-9799-425b-87fe-38d5f53c2c60@googlegroups.com>
+ <CAAxEZd8QRCpib+FLdzQodrCnsqSRX4UJ3+Um1zHS8_aBCfP7=w@mail.gmail.com>
+Subject: Re: [opensport] Re: How to use the .txt files in the world-cup
+ repo?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_101758_1903469818.1528817288606"
+X-Google-Token: EIjN_9gFOiNFOZMnLS80
+X-Google-IP: 2a00:23c4:7a93:8600:e388:694b:9997:ff45
+
+------=_Part_101758_1903469818.1528817288606
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_101759_671308675.1528817288607"
+
+------=_Part_101759_671308675.1528817288607
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Gerald, thank you. I feel a little silly, that was so easy/obvious now you=
+=20
+say it!
+
+Thanks for a great data set. We're playing with a predictive model for=20
+football game winners, I'll let you know if we find anything interesting!
+
+Cheers & sl=C3=A0inte=20
+
+On Tuesday, 12 June 2018 16:06:57 UTC+1, Gerald Bauer wrote:
+>
+> Hello,=20
+>
+>    To use your own Datafile create a new directory e.g. worldcup=20
+>
+>    Next create the Datafile in the worldcup direcotry - it's just a=20
+> regular text file with the name Datafile=20
+>
+>   Add:=20
+>
+> world  'world.db', setup: 'countries'=20
+> football 'national-teams'=20
+> football 'national-teams', setup: 'history'=20
+> football 'world-cup', setup: 'history'=20
+>
+>    to the Datafile.=20
+>
+>    And finally build your own database use the sportdb machinery. Type:=
+=20
+>
+>    $ sportdb build=20
+>
+>    And that's it. The build command will look for a Datafile in the=20
+> working / local directory and start downloading the datasets / zips /=20
+> archives and build the sqlite database (called sport.db by default).=20
+>
+>    Enjoy the beautiful game. Cheers. Prost.=20
+>
+>
+> 2018-06-12 14:47 GMT+02:00 'Peter Coghill' via opensport=20
+> <open...@googlegroups.com <javascript:>>:=20
+> > Gerald - first, massive thank you for the data set. Astonishing work.=
+=20
+> >=20
+> > Ben - I'm trying to do a similar thing to you. Generate a .db containin=
+g=20
+> all=20
+> > historical WC games.  I'm trying to follow along this thread, but can't=
+=20
+> see=20
+> > how you got it working.=20
+> >=20
+> > How did you parse sportdb this custom Datafile? What were the steps?=20
+> >=20
+> > Recognise its been 18 months past, so you may not recall.=20
+> >=20
+> > On Friday, 21 October 2016 16:32:52 UTC+1, Ben Burlingham wrote:=20
+> >>=20
+> >> Hi Gerald,=20
+> >>=20
+> >> I'm pleased to report everything works as expected!=20
+> >>=20
+> >> I used this Datafile:=20
+> >>=20
+> >> world  'world.db', setup: 'countries'=20
+> >> football 'national-teams'=20
+> >> football 'national-teams', setup: 'history'=20
+> >> football 'world-cup', setup: 'history'=20
+> >>=20
+> >> ...and it works great!  Thanks for your help!=20
+> >>=20
+> >> On Sunday, October 16, 2016 at 10:19:43 AM UTC-7, Ben Burlingham wrote=
+:=20
+> >>>=20
+> >>> Hi Gerald, thank you for your work on building and publishing these=
+=20
+> >>> datasets!=20
+> >>>=20
+> >>> I'm interested in how to use sportdb to generate datasets for the tex=
+t=20
+> >>> files found at https://github.com/openfootball/world-cup.=20
+> >>>=20
+> >>> The README says "use the sportdb command line tool to build your own=
+=20
+> >>> worldcup.db copy from the plain text data sets." but I haven't found=
+=20
+> >>> resources on how to do that.=20
+> >>>=20
+> >>> I've been digging around in various places:=20
+> >>> - Built a sport.db file using a Datafile approach at=20
+> >>> https://github.com/openfootball/datafile, but it only contains the=20
+> 2014=20
+> >>> data, and too much of it (has qualifiers and everything)=20
+> >>> - Tried Jokecamp's approach at=20
+> >>> https://github.com/jokecamp/sportdb-build-scripts but it seems to be=
+=20
+> similar=20
+> >>> to the above=20
+> >>> - Used the pre-built releases at=20
+> >>> https://github.com/openfootball/build/releases but they don't have=20
+> 2014 data=20
+> >>> - Experimented with the Rakefiles approach at=20
+> >>> https://github.com/openfootball/build but that didn't feel right=20
+> >>>=20
+> >>> I seem to be missing the part on how to parse the individual text=20
+> files,=20
+> >>> such as=20
+> >>>=20
+> https://github.com/openfootball/world-cup/blob/master/1930--uruguay/cup.t=
+xt.=20
+>
+> >>>=20
+> >>> I'm close to writing my own parser to do it but wanted to check here=
+=20
+> >>> first! Thanks for any help!=20
+> >=20
+> > --=20
+> > You received this message because you are subscribed to the Google=20
+> Groups=20
+> > "opensport" group.=20
+> > To unsubscribe from this group and stop receiving emails from it, send=
+=20
+> an=20
+> > email to opensport+...@googlegroups.com <javascript:>.=20
+> > To post to this group, send email to open...@googlegroups.com=20
+> <javascript:>.=20
+> > Visit this group at https://groups.google.com/group/opensport.=20
+> > For more options, visit https://groups.google.com/d/optout.=20
+>
+
+------=_Part_101759_671308675.1528817288607
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Gerald, thank you. I feel a little silly, that was so easy=
+/obvious now you say it!<div><br></div><div>Thanks for a great data set. We=
+&#39;re playing with a predictive model for football game winners, I&#39;ll=
+ let you know if we find anything interesting!</div><div><br></div><div>Che=
+ers &amp;=C2=A0sl=C3=A0inte=C2=A0<br><br>On Tuesday, 12 June 2018 16:06:57 =
+UTC+1, Gerald Bauer  wrote:<blockquote class=3D"gmail_quote" style=3D"margi=
+n: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hel=
+lo,
+<br>
+<br>=C2=A0 =C2=A0To use your own Datafile create a new directory e.g. world=
+cup
+<br>
+<br>=C2=A0 =C2=A0Next create the Datafile in the worldcup direcotry - it&#3=
+9;s just a
+<br>regular text file with the name Datafile
+<br>
+<br>=C2=A0 Add:
+<br>
+<br>world =C2=A0&#39;world.db&#39;, setup: &#39;countries&#39;
+<br>football &#39;national-teams&#39;
+<br>football &#39;national-teams&#39;, setup: &#39;history&#39;
+<br>football &#39;world-cup&#39;, setup: &#39;history&#39;
+<br>
+<br>=C2=A0 =C2=A0to the Datafile.
+<br>
+<br>=C2=A0 =C2=A0And finally build your own database use the sportdb machin=
+ery. Type:
+<br>
+<br>=C2=A0 =C2=A0$ sportdb build
+<br>
+<br>=C2=A0 =C2=A0And that&#39;s it. The build command will look for a Dataf=
+ile in the
+<br>working / local directory and start downloading the datasets / zips /
+<br>archives and build the sqlite database (called sport.db by default).
+<br>
+<br>=C2=A0 =C2=A0Enjoy the beautiful game. Cheers. Prost.
+<br>
+<br>
+<br>2018-06-12 14:47 GMT+02:00 &#39;Peter Coghill&#39; via opensport
+<br>&lt;<a href=3D"javascript:" target=3D"_blank" gdf-obfuscated-mailto=3D"=
+9UrYUKZjBgAJ" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;javascript:&=
+#39;;return true;" onclick=3D"this.href=3D&#39;javascript:&#39;;return true=
+;">open...@googlegroups.com</a>&gt;:
+<br>&gt; Gerald - first, massive thank you for the data set. Astonishing wo=
+rk.
+<br>&gt;
+<br>&gt; Ben - I&#39;m trying to do a similar thing to you. Generate a .db =
+containing all
+<br>&gt; historical WC games. =C2=A0I&#39;m trying to follow along this thr=
+ead, but can&#39;t see
+<br>&gt; how you got it working.
+<br>&gt;
+<br>&gt; How did you parse sportdb this custom Datafile? What were the step=
+s?
+<br>&gt;
+<br>&gt; Recognise its been 18 months past, so you may not recall.
+<br>&gt;
+<br>&gt; On Friday, 21 October 2016 16:32:52 UTC+1, Ben Burlingham wrote:
+<br>&gt;&gt;
+<br>&gt;&gt; Hi Gerald,
+<br>&gt;&gt;
+<br>&gt;&gt; I&#39;m pleased to report everything works as expected!
+<br>&gt;&gt;
+<br>&gt;&gt; I used this Datafile:
+<br>&gt;&gt;
+<br>&gt;&gt; world =C2=A0&#39;world.db&#39;, setup: &#39;countries&#39;
+<br>&gt;&gt; football &#39;national-teams&#39;
+<br>&gt;&gt; football &#39;national-teams&#39;, setup: &#39;history&#39;
+<br>&gt;&gt; football &#39;world-cup&#39;, setup: &#39;history&#39;
+<br>&gt;&gt;
+<br>&gt;&gt; ...and it works great! =C2=A0Thanks for your help!
+<br>&gt;&gt;
+<br>&gt;&gt; On Sunday, October 16, 2016 at 10:19:43 AM UTC-7, Ben Burlingh=
+am wrote:
+<br>&gt;&gt;&gt;
+<br>&gt;&gt;&gt; Hi Gerald, thank you for your work on building and publish=
+ing these
+<br>&gt;&gt;&gt; datasets!
+<br>&gt;&gt;&gt;
+<br>&gt;&gt;&gt; I&#39;m interested in how to use sportdb to generate datas=
+ets for the text
+<br>&gt;&gt;&gt; files found at <a href=3D"https://github.com/openfootball/=
+world-cup" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#=
+39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%=
+2Fworld-cup\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNEAICj--c0gUYDHSS8XrjuWL=
+HGyhA&#39;;return true;" onclick=3D"this.href=3D&#39;https://www.google.com=
+/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup\x26sa\x3dD\x2=
+6sntz\x3d1\x26usg\x3dAFQjCNEAICj--c0gUYDHSS8XrjuWLHGyhA&#39;;return true;">=
+https://github.com/<wbr>openfootball/world-cup</a>.
+<br>&gt;&gt;&gt;
+<br>&gt;&gt;&gt; The README says &quot;use the sportdb command line tool to=
+ build your own
+<br>&gt;&gt;&gt; worldcup.db copy from the plain text data sets.&quot; but =
+I haven&#39;t found
+<br>&gt;&gt;&gt; resources on how to do that.
+<br>&gt;&gt;&gt;
+<br>&gt;&gt;&gt; I&#39;ve been digging around in various places:
+<br>&gt;&gt;&gt; - Built a sport.db file using a Datafile approach at
+<br>&gt;&gt;&gt; <a href=3D"https://github.com/openfootball/datafile" targe=
+t=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.g=
+oogle.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\x26sa=
+\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFVeAE8Za-R20bAXFhVtRKEGiIMZQ&#39;;return=
+ true;" onclick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3=
+A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\x26sa\x3dD\x26sntz\x3d1\x26usg\=
+x3dAFQjCNFVeAE8Za-R20bAXFhVtRKEGiIMZQ&#39;;return true;">https://github.com=
+/<wbr>openfootball/datafile</a>, but it only contains the 2014
+<br>&gt;&gt;&gt; data, and too much of it (has qualifiers and everything)
+<br>&gt;&gt;&gt; - Tried Jokecamp&#39;s approach at
+<br>&gt;&gt;&gt; <a href=3D"https://github.com/jokecamp/sportdb-build-scrip=
+ts" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http=
+s://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fjokecamp%2Fsportdb-b=
+uild-scripts\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNH5jsftFAtasSrGcV3wxdwN=
+5yDYIA&#39;;return true;" onclick=3D"this.href=3D&#39;https://www.google.co=
+m/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fjokecamp%2Fsportdb-build-scripts\x26s=
+a\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNH5jsftFAtasSrGcV3wxdwN5yDYIA&#39;;retur=
+n true;">https://github.com/jokecamp/<wbr>sportdb-build-scripts</a> but it =
+seems to be similar
+<br>&gt;&gt;&gt; to the above
+<br>&gt;&gt;&gt; - Used the pre-built releases at
+<br>&gt;&gt;&gt; <a href=3D"https://github.com/openfootball/build/releases"=
+ target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https:/=
+/www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fbuild%2F=
+releases\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFUREojeT8n-ccUV5qg8J9GlliY=
+uA&#39;;return true;" onclick=3D"this.href=3D&#39;https://www.google.com/ur=
+l?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fbuild%2Freleases\x26sa\x3d=
+D\x26sntz\x3d1\x26usg\x3dAFQjCNFUREojeT8n-ccUV5qg8J9GlliYuA&#39;;return tru=
+e;">https://github.com/<wbr>openfootball/build/releases</a> but they don&#3=
+9;t have 2014 data
+<br>&gt;&gt;&gt; - Experimented with the Rakefiles approach at
+<br>&gt;&gt;&gt; <a href=3D"https://github.com/openfootball/build" target=
+=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.go=
+ogle.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fbuild\x26sa\x3d=
+D\x26sntz\x3d1\x26usg\x3dAFQjCNECKAMRegpH9eYh6M8nQ1WSVkVCbg&#39;;return tru=
+e;" onclick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F=
+%2Fgithub.com%2Fopenfootball%2Fbuild\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQj=
+CNECKAMRegpH9eYh6M8nQ1WSVkVCbg&#39;;return true;">https://github.com/<wbr>o=
+penfootball/build</a> but that didn&#39;t feel right
+<br>&gt;&gt;&gt;
+<br>&gt;&gt;&gt; I seem to be missing the part on how to parse the individu=
+al text files,
+<br>&gt;&gt;&gt; such as
+<br>&gt;&gt;&gt; <a href=3D"https://github.com/openfootball/world-cup/blob/=
+master/1930--uruguay/cup.txt" target=3D"_blank" rel=3D"nofollow" onmousedow=
+n=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.=
+com%2Fopenfootball%2Fworld-cup%2Fblob%2Fmaster%2F1930--uruguay%2Fcup.txt\x2=
+6sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGfMvIk0xbX0y1NkzFUzE2rKxG9xw&#39;;ret=
+urn true;" onclick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttp=
+s%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup%2Fblob%2Fmaster%2F1930--uru=
+guay%2Fcup.txt\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGfMvIk0xbX0y1NkzFUzE=
+2rKxG9xw&#39;;return true;">https://github.com/<wbr>openfootball/world-cup/=
+blob/<wbr>master/1930--uruguay/cup.txt</a>.
+<br>&gt;&gt;&gt;
+<br>&gt;&gt;&gt; I&#39;m close to writing my own parser to do it but wanted=
+ to check here
+<br>&gt;&gt;&gt; first! Thanks for any help!
+<br>&gt;
+<br>&gt; --
+<br>&gt; You received this message because you are subscribed to the Google=
+ Groups
+<br>&gt; &quot;opensport&quot; group.
+<br>&gt; To unsubscribe from this group and stop receiving emails from it, =
+send an
+<br>&gt; email to <a href=3D"javascript:" target=3D"_blank" gdf-obfuscated-=
+mailto=3D"9UrYUKZjBgAJ" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;ja=
+vascript:&#39;;return true;" onclick=3D"this.href=3D&#39;javascript:&#39;;r=
+eturn true;">opensport+...@<wbr>googlegroups.com</a>.
+<br>&gt; To post to this group, send email to <a href=3D"javascript:" targe=
+t=3D"_blank" gdf-obfuscated-mailto=3D"9UrYUKZjBgAJ" rel=3D"nofollow" onmous=
+edown=3D"this.href=3D&#39;javascript:&#39;;return true;" onclick=3D"this.hr=
+ef=3D&#39;javascript:&#39;;return true;">open...@googlegroups.com</a>.
+<br>&gt; Visit this group at <a href=3D"https://groups.google.com/group/ope=
+nsport" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;=
+https://groups.google.com/group/opensport&#39;;return true;" onclick=3D"thi=
+s.href=3D&#39;https://groups.google.com/group/opensport&#39;;return true;">=
+https://groups.google.com/<wbr>group/opensport</a>.
+<br>&gt; For more options, visit <a href=3D"https://groups.google.com/d/opt=
+out" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;htt=
+ps://groups.google.com/d/optout&#39;;return true;" onclick=3D"this.href=3D&=
+#39;https://groups.google.com/d/optout&#39;;return true;">https://groups.go=
+ogle.com/d/<wbr>optout</a>.
+<br></blockquote></div></div>
+------=_Part_101759_671308675.1528817288607--
+
+------=_Part_101758_1903469818.1528817288606--
+

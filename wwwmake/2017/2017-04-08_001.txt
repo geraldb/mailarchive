@@ -1,0 +1,93 @@
+From 6406665271491166208@xxx Sat Apr 08 16:13:18 +0000 2017
+X-GM-THRID: 6406170137222709248
+X-Received: by 10.157.2.104 with SMTP id 95mr18014514otb.4.1491667998290;
+        Sat, 08 Apr 2017 09:13:18 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.107.9.14 with SMTP id j14ls11345842ioi.44.gmail; Sat, 08 Apr
+ 2017 09:13:17 -0700 (PDT)
+X-Received: by 10.99.143.23 with SMTP id n23mr17270700pgd.5.1491667997672;
+        Sat, 08 Apr 2017 09:13:17 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22c.google.com (mail-it0-x22c.google.com. [2607:f8b0:4001:c0b::22c])
+        by gmr-mx.google.com with ESMTPS id f73si231924ita.1.2017.04.08.09.13.17
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 08 Apr 2017 09:13:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22c as permitted sender) client-ip=2607:f8b0:4001:c0b::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22c.google.com with SMTP id y18so8234444itc.0
+        for <wwwmake@googlegroups.com>; Sat, 08 Apr 2017 09:13:17 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=Ir0EbWz+mrMgP0My1GS48Mo0ro/AGT6AXe5c6b8jkc4=;
+        b=f5sr4bqhndy6t5DhhPk68Ria19jNH+k9RUtHPm2ZFXae0ThkfPcQ2Cw0kRgUijFbSv
+         qaBP3aNCfbK7VDPeDlabGetWDkb/x6JZ8ANWsuBL8MAPGi7hwIOGhKVObifmd7AXap/+
+         j9WZBAG6vyZUYBXR2TwbMGJLjOFgQ11+J6ERON+DfVB9f0uBjJaT33bnvWjpXi2wQO/9
+         7SBrhl/Yy99kT26FXnLwMcWIVqHsI7FkJZHijkRuD+2bCJS65KsshgK37Z+8JE1cWiE2
+         +bBbE6xyp58cTGKgOk1WLOyZUpf0jTovq56pam5K2dnm3DGfDkFBI7yR0oqpWCBlHweL
+         ac7w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=Ir0EbWz+mrMgP0My1GS48Mo0ro/AGT6AXe5c6b8jkc4=;
+        b=RNJMbj2Vv1le1kBrwxS24Jara4AJKMOs5Ul7jQ0/9uOGqpr2q6RMlINYCXgh5rql+M
+         x7I2kZO08UauvyHoyhYoxmi9jR3ZvrSCJJnSgOMyWOa5w3ESlxILe4w5fesM1otFTdQi
+         8pptc5/y9iphMi23xL6Xiivw8qWtjUDHiqRdNe3sJKjqFTwlTrDVQDQPeqcnO/2IFFS1
+         Bw+s8nA172xKmY711vSQnnYK4f7ro14SFtUfAWB+8S6DD+Iix33bdZnJdQEkG+UwC3ye
+         bxksl0gOcvlLDdVwBMZPS3grCxb/7GQ/Gi89Xz7HJ9Na6VdsBOry6JmSBpF347TZ/GTE
+         iRTA==
+X-Gm-Message-State: AN3rC/7NUf1JeKQzNeSOKlEl8d1zk/neW6jn6KF0pNFS0RlRPA1gb/a6
+	LreVd/0mS0UkNHZRAxNsELuUENgKDjp7
+X-Received: by 10.36.66.85 with SMTP id i82mr4607091itb.7.1491667997047; Sat,
+ 08 Apr 2017 09:13:17 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.10.36 with HTTP; Sat, 8 Apr 2017 09:13:16 -0700 (PDT)
+In-Reply-To: <9117c7cd-2d5f-4235-b604-e354db3f8e53@googlegroups.com>
+References: <13f542c8-23e0-4fc8-9d35-30750be86bfc@googlegroups.com>
+ <CAAxEZd-_fu=FzC7FP3vWGB7YpWikxu7AmXm0Az=Vo+TgnYUj=Q@mail.gmail.com> <9117c7cd-2d5f-4235-b604-e354db3f8e53@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 8 Apr 2017 18:13:16 +0200
+Message-ID: <CAAxEZd9mXaZ0nABGk4=U=qsNPck-p6BgNOTQESOZrPAgx9VqfQ@mail.gmail.com>
+Subject: Re: [wwwmake:418] Problems with Slide Show (S9) ignoring headers
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+> So, it's reading the headers but they're not getting inserted? Even a
+>  suggestion of where to look in the code would be great.
+
+   I just tried your setup e.g.
+
+$ slideshow update   # update registry index
+$ slideshow install reveal.js
+$ slideshow build test.md -t reveal.js
+
+   and it works as expected ;-)
+
+  and than I tried
+
+$ gem install liquid          # will update liquid from 3.0.6 to 4.0  [1]
+
+  and if I rererun
+
+$ slideshow build test.md -t reveal.js
+
+  suprise, surprise - it no longer works! Sorry.  So the cause / error
+is that you have the latest and greatest liquid gem version 4.0  try:
+
+$ gem list liquid
+
+  If you downgrade to 3.0.6 it will (should) work as expected. Again
+thanks for reporting. Sorry not yet sure what changed in the liquid
+gem in the new version.
+
+  Cheers.
+
+[1] https://rubygems.org/gems/liquid
+

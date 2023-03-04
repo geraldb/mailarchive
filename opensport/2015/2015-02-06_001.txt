@@ -1,0 +1,61 @@
+From 2414814953472@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 2377276981248
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cd242d30f1f3615d
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.87.72 with SMTP id v8mr447225wiz.3.1423246683365;
+        Fri, 06 Feb 2015 10:18:03 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.13.42 with SMTP id e10ls177005wic.30.gmail; Fri, 06 Feb
+ 2015 10:18:02 -0800 (PST)
+X-Received: by 10.180.94.134 with SMTP id dc6mr452598wib.2.1423246682670;
+        Fri, 06 Feb 2015 10:18:02 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x231.google.com (mail-wg0-x231.google.com. [2a00:1450:400c:c00::231])
+        by gmr-mx.google.com with ESMTPS id v6si177517wiz.2.2015.02.06.10.18.02
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 06 Feb 2015 10:18:02 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::231 as permitted sender) client-ip=2a00:1450:400c:c00::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-x231.google.com with SMTP id k14so15100894wgh.8
+        for <opensport@googlegroups.com>; Fri, 06 Feb 2015 10:18:02 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=/3PwbGq1+ly18EKlDGfD7wyKaN8QvY2mvLhmGSddXeE=;
+        b=eCrcRUKFmYYW2W+aS0gXqUXNM8iXgBx+fjrDnvBsxFgmiQ7sEaC3QRNeWKiFzXV9m+
+         GdhbrBCwsJH2WI7dWMhJmS5QN2jsN9yp8iKXmSg5lQYLQu09YCSsz2OGblNUoRvJJd6P
+         pIxVQfCJOM+WH2MHnbfIYSdf7WcHaCxbH8bCYPiy300ZgzW9wkRFqiRJIle9zc84Irjq
+         MmRKBZ7lPdO0s1lQLlnmpS/hWNEO0UZdMmWGYnVGpfE/H3jLmCxXS0jY6nsq39x+x8Xq
+         wnD+o1Fk5/TvhGWW3ozL6qfpbzPsLl0m9K9GBVLd9ZpOK6Qce5Ym68b6D2mpw8iKfi6T
+         X8HQ==
+MIME-Version: 1.0
+X-Received: by 10.194.2.75 with SMTP id 11mr10579529wjs.78.1423246682604; Fri,
+ 06 Feb 2015 10:18:02 -0800 (PST)
+Received: by 10.216.196.7 with HTTP; Fri, 6 Feb 2015 10:18:02 -0800 (PST)
+In-Reply-To: <f16d3951-a274-4b95-ac77-29a20298000e@googlegroups.com>
+References: <ec906df1-8c4e-4e7f-818f-4a7804b24d82@googlegroups.com>
+	<CAAxEZd-YTsKsA3kjKPv=rW97xza38tv2jTS6RycyDU5Q3Rh1Xw@mail.gmail.com>
+	<050ea85e-361e-4129-aa03-4072002f20a3@googlegroups.com>
+	<CAAxEZd80+_DS9oT5DaibtdPDQiHBSRHMyjR2-yvSzaOnozZuhA@mail.gmail.com>
+	<016077bc-2d07-450a-a9a0-c0bf31feed15@googlegroups.com>
+	<CAAxEZd8aqWBcP7-Ek=rmjnXNR-av36Nkd4jqCOQBhG++22=YxQ@mail.gmail.com>
+	<f16d3951-a274-4b95-ac77-29a20298000e@googlegroups.com>
+Date: Fri, 6 Feb 2015 19:18:02 +0100
+Message-ID: <CAAxEZd9AZJL9sQ7bG1XLsX+aAvnYpoDxRKA=tfSjknXxEXpMjA@mail.gmail.com>
+Subject: Re: [opensport] Unable to build en-england repo
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Great. Thanks for letting me know. Changed the settings.rb in the
+build/ repo. Cheers.
+

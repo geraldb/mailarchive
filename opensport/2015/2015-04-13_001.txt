@@ -1,0 +1,85 @@
+From 2600500985856@xxx Tue Jun 16 00:16:42 +0000 2015
+X-GM-THRID: 2580327432192
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,1631df092ed45367
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.140.151.85 with SMTP id 82mr21146409qhx.1.1428943002977;
+        Mon, 13 Apr 2015 09:36:42 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.19.66 with SMTP id 60ls2731931qgg.14.gmail; Mon, 13 Apr
+ 2015 09:36:42 -0700 (PDT)
+X-Received: by 10.140.105.133 with SMTP id c5mr181130qgf.28.1428943002743;
+        Mon, 13 Apr 2015 09:36:42 -0700 (PDT)
+X-Google-Doc-Id: d7c7ace4cd05c739
+X-Google-Web-Client: true
+Date: Mon, 13 Apr 2015 09:36:41 -0700 (PDT)
+From: amit benvenisti <amitbenvenisti@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <3a78843b-84c1-4632-8802-6e70c98ef03d@googlegroups.com>
+In-Reply-To: <CAAxEZd9ASJakacNoaCWW9myZEQrRhqNCC7i=1CO1sXpnGRWtnA@mail.gmail.com>
+References: <91effa04-541f-44f1-97a6-d8954d8cb619@googlegroups.com>
+ <CAAxEZd_N_dfVu9wd=x1zvdaCfJaekQ_VKd9ZX=D9yJB2Zx-9Ow@mail.gmail.com>
+ <cebac3cf-c766-4ad8-ba3a-abf2f310c4c7@googlegroups.com>
+ <CAAxEZd9ASJakacNoaCWW9myZEQrRhqNCC7i=1CO1sXpnGRWtnA@mail.gmail.com>
+Subject: Re: [opensport] errors when building build.sh
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_4231_1940863584.1428943001994"
+X-Google-Token: EJnhr6kF_vFD7N6oFkM0
+X-Google-IP: 79.180.139.1
+
+------=_Part_4231_1940863584.1428943001994
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4232_1965142005.1428943001994"
+
+------=_Part_4232_1965142005.1428943001994
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+works great now!
+thanks!!
+
+On Sunday, April 12, 2015 at 11:51:13 AM UTC+3, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    Thanks for retrying. Sorry that was a bug in the ground/stadium 
+> reader (the read method no longer takes arguments).  I uploaded a new 
+> sportdb-models gem, that is, 1.11.1.  Please update e.g. 
+>
+>   $ gem install sportdb-models 
+>
+>   and retry. You should end-up with 200 stadium records. I also fixed 
+> the en=>eng country code. Cheers. 
+>
+> PS: I added a new stadiums.rb datafile [1] - You can try: 
+> $ sportdb new stadiums 
+>
+> [1] github.com/openfootball/datafile/blob/master/stadiums.rb 
+>
+
+------=_Part_4232_1965142005.1428943001994
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">works great now!<br>thanks!!<br><br>On Sunday, April 12, 2015 at 11:51:13 AM UTC+3, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;Thanks for retrying. Sorry that was a bug in the ground/stadium
+<br>reader (the read method no longer takes arguments). &nbsp;I uploaded a new
+<br>sportdb-models gem, that is, 1.11.1. &nbsp;Please update e.g.
+<br>
+<br>&nbsp; $ gem install sportdb-models
+<br>
+<br>&nbsp; and retry. You should end-up with 200 stadium records. I also fixed
+<br>the en=&gt;eng country code. Cheers.
+<br>
+<br>PS: I added a new stadiums.rb datafile [1] - You can try:
+<br>$ sportdb new stadiums
+<br>
+<br>[1] <a href="http://github.com/openfootball/datafile/blob/master/stadiums.rb" target="_blank" rel="nofollow" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile%2Fblob%2Fmaster%2Fstadiums.rb\46sa\75D\46sntz\0751\46usg\75AFQjCNH1KKZpCct8Eubd1W-urKFzTa38jQ';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile%2Fblob%2Fmaster%2Fstadiums.rb\46sa\75D\46sntz\0751\46usg\75AFQjCNH1KKZpCct8Eubd1W-urKFzTa38jQ';return true;">github.com/openfootball/<wbr>datafile/blob/master/stadiums.<wbr>rb</a>
+<br></blockquote></div>
+------=_Part_4232_1965142005.1428943001994--
+------=_Part_4231_1940863584.1428943001994--
+

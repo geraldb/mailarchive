@@ -1,0 +1,62 @@
+From 16015949824@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 15154020352
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,81785cf239998089,start
+X-Google-Attributes: gid592b7a,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.114.208.20 with SMTP id f20mr1508954wag.2.1211334412142;
+        Tue, 20 May 2008 18:46:52 -0700 (PDT)
+Return-Path: <geraldbauer2007@gmail.com>
+Received: from wa-out-1112.google.com (wa-out-1112.google.com [209.85.146.180])
+        by mx.google.com with ESMTP id m39si9330142waf.2.2008.05.20.18.46.51;
+        Tue, 20 May 2008 18:46:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of geraldbauer2007@gmail.com designates 209.85.146.180 as permitted sender) client-ip=209.85.146.180;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of geraldbauer2007@gmail.com designates 209.85.146.180 as permitted sender) smtp.mail=geraldbauer2007@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by wa-out-1112.google.com with SMTP id k17so2817595waf.0
+        for <webslideshow@googlegroups.com>; Tue, 20 May 2008 18:46:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        bh=m6b5vIoq2NkNoyRDJI4dh59YF3CHr7sutX1cHmu6/og=;
+        b=tHLHOfqxeoSUVd96IGGmebUK4VDkrwhitFJnTqAWirw54SPHeU3/WbEj2fg8E4zVTmMwPUMXok4aam2mVhIFxGPR8rBm1vGYW0nWT31sZJYPNIw7E6g5qMeM/OmrjEsdXQTdy53oa9kplTS4WXYsoGC8EEiu90ooiRSYoLlKPp0=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        b=KFYYko82QKcQ9/fnOSOiGpX5zMIZM5Jkg135BsARuSIUi5EUQ/OLlU4wFwBOyg1mEBM7UdJWei1z4H/yhba7yqXnLc01/oByZ99B6iPsDrEQ85jvwC/aLNpSMVtLy0+bOZ4kACwcpqS+Nsym7T5498pbF3e78a6lGczuF107VCk=
+Received: by 10.114.190.6 with SMTP id n6mr9608492waf.131.1211334410930;
+        Tue, 20 May 2008 18:46:50 -0700 (PDT)
+Received: by 10.115.91.11 with HTTP; Tue, 20 May 2008 18:46:50 -0700 (PDT)
+Message-ID: <7e7cb8940805201846m175419d1l4f552c9ea347469e@mail.gmail.com>
+Date: Tue, 20 May 2008 18:46:50 -0700
+From: "Gerald Bauer" <geraldbauer2007@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Pragmatic Dave on Presenting Code in Slide Shows
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello,
+
+  Just stumbled over a posting from Dave Thomas (aka Pragmatic Dave)
+titled "Our take on presenting code" that shows how Prag Dave uses
+Ruby scripts and the SyntaxHighlighter open source project to create
+web slide shows using S5.
+
+  And thanks to popular demand  Prag Dave announced in a follow-up
+posting that the scripts are now open sourced on GitHub and DrNic has
+already contributed a gemified version e.g.
+
+  sudo gem install drnic-codex --source=http://gems.github.com
+
+  More @ http://pragdave.blogs.pragprog.com/pragdave/2008/05/our-take-on-pre.html
+and
+   http://pragdave.blogs.pragprog.com/pragdave/2008/05/code-in-present.html
+
+   What's your take? Thoughts? Comments?
+
+   Cheers.
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.wordpress.com
+

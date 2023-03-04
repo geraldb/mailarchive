@@ -1,0 +1,100 @@
+From 6215158581322317824@xxx Mon Nov 09 14:29:33 +0000 2015
+X-GM-THRID: 6215158580477165568
+X-Received: by 10.129.88.87 with SMTP id m84mr1694946ywb.23.1447079372830;
+        Mon, 09 Nov 2015 06:29:32 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.182.196.102 with SMTP id il6ls200357obc.17.gmail; Mon, 09 Nov
+ 2015 06:29:32 -0800 (PST)
+X-Received: by 10.182.128.69 with SMTP id nm5mr23568617obb.46.1447079372595;
+        Mon, 09 Nov 2015 06:29:32 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x236.google.com (mail-io0-x236.google.com. [2607:f8b0:4001:c06::236])
+        by gmr-mx.google.com with ESMTPS id t8si195288igs.1.2015.11.09.06.29.32
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 09 Nov 2015 06:29:32 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) client-ip=2607:f8b0:4001:c06::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x236.google.com with SMTP id 74so121086567ioc.2
+        for <openmundi@googlegroups.com>; Mon, 09 Nov 2015 06:29:32 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=OfNUE3Ox63hF18OMinKPT3WIEE4jLdQTCqzLpqzy2LM=;
+        b=ufplrsAZq/B1+13AuHF+iUIiWHHqSEPdhQs/GZSd+AYzJdgxFzAmlAUJSkaqHX/YlR
+         QcI7+TDlEGtBCt12wV6nR80s2UHrRWonM+VRx/XG3kKkHab0uVEcQh6v+fBsXFihIiaP
+         ipnQD/sTLWQod2zEjIWEQKO3utH7++9c/tkIkw5KK70Dbg6K2Vb/pFOTNE5phbjVyy7x
+         N0oMLK2lnJq0wdUXBdDZO/hGNpYm3mGaejS5kt8D2rmJaxyRXWFtAWR7ytZKWxOdxduW
+         Y0r3y4CfDa/fNQ+1aB+vxHxO/lK4Ja8H/xHMlJJun+LFLHANPliOhtqAnb84xq5uxqYe
+         jmdA==
+MIME-Version: 1.0
+X-Received: by 10.107.15.35 with SMTP id x35mr8958181ioi.35.1447079372422;
+ Mon, 09 Nov 2015 06:29:32 -0800 (PST)
+Received: by 10.107.138.29 with HTTP; Mon, 9 Nov 2015 06:29:32 -0800 (PST)
+Date: Mon, 9 Nov 2015 15:29:32 +0100
+Message-ID: <CAAxEZd9hfAN056frhSM7Yquej_YR+w7ooW3Qp+54Bs+h3FXfRg@mail.gmail.com>
+Subject: Build Your Own World Almanac in 10 Lines of Script (w/ the Factbook
+ Library) in Ruby
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   The lastest (and greatest) version of the factbook library [1],
+that is, v1.1.1
+ now includes a new almanac class that lets you build your own world almana=
+c
+ e.g. listing all the world's 260+ countries and territories with
+capitals, population,
+ internet users, mobile telephone subscripts/100, religions, ethnic
+groups, languages,and so on. See ALMANAC.md [2] as an example.
+
+  How to build your own in three steps:
+
+ Step 1: Get a copy of the factbook.json archive
+
+   Use git clone (or unpack the zip archive) using
+factbook/factbook.json [3] github repo.
+
+ Step 2: Load the profiles using the Almanac class
+
+
+   almanac =3D Factbook::Almanac.from_json( Factbook.codes.countries,
+json_dir: './factbook.json' )
+
+ Step 3: Use your template of choice and render / build the Almanac text co=
+rpus
+
+  TEMPLATE =3D <<EOS
+  ### <%=3D page.name %>
+
+  <%=3D page.capital %> =E2=80=A2 <%=3D page.area %> =E2=80=A2 pop. <%=3D p=
+age.population %>
+  ...
+  EOS
+
+  puts almanac.render( TEMPLATE )
+
+
+ That's it. See the scripts/almanac.rb [4] as an example. Cheers.
+
+
+  PS: Bonus Question - Name the largest country in Africa:
+
+  A) Nigeria
+  B) South Africa
+  C) Kongo
+  D) Algeria     Anyone?
+
+[1] github.com/worlddb/factbook
+[2] github.com/factbook/factbook.json/blob/master/ALMANAC.md
+[3] github.com/factbook/factbook.json
+[4] github.com/worlddb/factbook/blob/master/script/almanac.rb
+

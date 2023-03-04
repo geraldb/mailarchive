@@ -1,0 +1,87 @@
+From 1218058387456@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1209921437696
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,1a880657c3bd2f49
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,CP1252
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.180.94.41 with SMTP id cz9mr216413wib.1.1363642505279;
+        Mon, 18 Mar 2013 14:35:05 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.180.92.195 with SMTP id co3ls685512wib.44.gmail; Mon, 18 Mar
+ 2013 14:35:04 -0700 (PDT)
+X-Received: by 10.180.106.73 with SMTP id gs9mr212137wib.2.1363642504412;
+        Mon, 18 Mar 2013 14:35:04 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x235.google.com ([2a00:1450:400c:c05::235])
+        by gmr-mx.google.com with ESMTPS id v5si679648wij.0.2013.03.18.14.35.04
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 18 Mar 2013 14:35:04 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::235 as permitted sender) client-ip=2a00:1450:400c:c05::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::235 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-wi0-x235.google.com with SMTP id hm6so3151886wib.2
+        for <webslideshow@googlegroups.com>; Mon, 18 Mar 2013 14:35:04 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:x-received:in-reply-to:references:date:message-id
+         :subject:from:to:content-type:content-transfer-encoding;
+        bh=es/miTjuRuSOoAh1anPvTcsbQgSZbOIpms8YWOspyDI=;
+        b=paABLBl9+LPMTcwrpb4eTcCjxDi61BPMr/sWaIe2lWVKYtmsjM54WGHHoUWIjgKjs3
+         zdqEuV/0sLpZHNsWtJizjLbi43c7FbeDXCU7phx2rUCuKDOlmiJtToPUu/zfOGQ4Jcer
+         J+TgSg946Tw/1lPrgrfGdqBypeFFv4+KxZl/qyGttDFZCTmb1nH41u5u3JxhNLGgLMkj
+         rFx57se+uRn9ilMKrM3Y0AbICCEtRxsE4uK7wJsw2A7wZf1dlYstLJtyNAa+xCO61whi
+         TmA4Nq9bWF8xJKYKehCH9yDoD4+jIdXYnRF0VMms7F85RugK9nk80hlfcmpQNx92Ju+M
+         QKwA==
+MIME-Version: 1.0
+X-Received: by 10.194.122.131 with SMTP id ls3mr28146131wjb.55.1363642504326;
+ Mon, 18 Mar 2013 14:35:04 -0700 (PDT)
+Received: by 10.216.152.161 with HTTP; Mon, 18 Mar 2013 14:35:04 -0700 (PDT)
+In-Reply-To: <cb1b6be0-e589-427f-9429-3c0466f4279a@googlegroups.com>
+References: <cb1b6be0-e589-427f-9429-3c0466f4279a@googlegroups.com>
+Date: Mon, 18 Mar 2013 22:35:04 +0100
+Message-ID: <CAAxEZd-_LX0Ws6-Vy2cqXE0d1+wL5bz7Ww9Q_Q+F+g+DDGn7xw@mail.gmail.com>
+Subject: Re: [slideshow:281] Dose slideshow support math equation? If so , how
+ can I do ?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=windows-1252
+Content-Transfer-Encoding: quoted-printable
+
+Hello Lee S,
+
+  "Out-of-the-box" or "out-of-the-gem" has no built-in support for
+math equation. You have a couple of options:
+
+  o Add a JavaScript math equation library/package to your template to
+add math equation in plain text or tex. Examples include:
+
+
+  -   ASCIIMathML =96 [1] =96 Converts expressions/formulas in ASCII
+(plain text) to MathML
+  -   jsMath =96 [2] =96 Converts TeX expressions/formulas to HTML
+  -  MathJax =96 [3] =96 Converts Tex or MathML expressions/formulas to HTM=
+L/CSS
+
+   I'm not an expert so I can't recommend a package. Also I'm sure
+there are more options.
+
+  o Add a Ruby plugin to convert math equation to MathML or similar.
+
+  o Use pandoc as your markdown processor engine with slideshow (NB: I
+haven't tried the pandoc plugin for a while - might need an update -
+you find the code here included via the markdown gem [4]
+
+    That's all I can think of now. Let us know what works for you. Cheers.
+
+[1] http://asciimathml.sourceforge.net
+[2] http://www.math.union.edu/~dpvc/jsMath
+[3] http://www.mathjax.org
+
+[4] https://github.com/geraldb/markdown/blob/master/lib/markdown/engines/pa=
+ndoc_ruby.rb
+

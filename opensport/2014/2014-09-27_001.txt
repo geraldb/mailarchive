@@ -1,0 +1,96 @@
+From 2217762357248@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 2205978460160
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,aa2ece1413fdc78
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.122.209 with SMTP id o17mr27677529icr.28.1411849508621;
+        Sat, 27 Sep 2014 13:25:08 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.41.18 with SMTP id y18ls105956qgy.15.gmail; Sat, 27 Sep
+ 2014 13:25:08 -0700 (PDT)
+X-Received: by 10.140.33.161 with SMTP id j30mr259286qgj.4.1411849508363;
+        Sat, 27 Sep 2014 13:25:08 -0700 (PDT)
+X-Google-Doc-Id: 6337631b1eb2f741
+X-Google-Web-Client: true
+Date: Sat, 27 Sep 2014 13:25:07 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <6b455329-d1c6-4083-89b9-a1513dd54184@googlegroups.com>
+In-Reply-To: <CAAxEZd9jFt=xkdnAXP2pCMdbEF7f_HkeZ78B9sJiH-iyq_4nuA@mail.gmail.com>
+References: <CAAxEZd9jFt=xkdnAXP2pCMdbEF7f_HkeZ78B9sJiH-iyq_4nuA@mail.gmail.com>
+Subject: Re: sport.db starter kit - Node.js Edition -
+ sport.db.starter.node.js v0.0.1
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1388_469445783.1411849507848"
+X-Google-Token: EKO6nKEFaA6mRc9SjPk0
+X-Google-IP: 188.23.63.14
+
+------=_Part_1388_469445783.1411849507848
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1389_120355803.1411849507848"
+
+------=_Part_1389_120355803.1411849507848
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  FYI: I've added some services to the new starter sample for Node.js now 
+using the Express web library. Still early and rough. The server-side 
+scripts include:
+
+   - sportdb.js   -- sqlite3 db access (queries)
+   - app.js       -- HTTP JSON APIs (services)
+   - server.js    -- startup server
+
+   To try it on your machine:
+
+ Step 0: Install node modules via the node package manager (npm). Type:
+
+    npm install
+
+ Step 1: Copy an SQLite database e.g. football.db into your folder.
+
+ Step 2: Startup the web service (HTTP JSON API). Type:
+
+   $ node ./server.js
+
+  That's it. Open your web browser and try some services running on your 
+machine on port 9292 (e.g. localhost:9292). Example:
+
+  List all events:
+
+    http://localhost:9292/events
+
+  And so on. Now change the sources to fit your needs.  More info @ 
+github.com/sportkit 
+
+    Cheers.
+
+
+------=_Part_1389_120355803.1411849507848
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>&nbsp; FYI: I've added some services to the =
+new starter sample for Node.js now using the Express web library. Still ear=
+ly and rough. The server-side scripts include:<br><br>&nbsp;&nbsp; - sportd=
+b.js&nbsp;&nbsp; -- sqlite3 db access (queries)<br>&nbsp;&nbsp; - app.js&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- HTTP JSON APIs (services)<br>&nbsp;&nb=
+sp; - server.js&nbsp;&nbsp;&nbsp; -- startup server<br><br>&nbsp;&nbsp; To =
+try it on your machine:<br><br>&nbsp;Step 0: Install node modules via the n=
+ode package manager (npm). Type:<br><br>&nbsp;&nbsp;&nbsp; npm install<br><=
+br>&nbsp;Step 1: Copy an SQLite database e.g. football.db into your folder.=
+<br><br>&nbsp;Step 2: Startup the web service (HTTP JSON API). Type:<br><br=
+>&nbsp;&nbsp; $ node ./server.js<br><br>&nbsp; That's it. Open your web bro=
+wser and try some services running on your machine on port 9292 (e.g. local=
+host:9292). Example:<br><br>&nbsp; List all events:<br><br>&nbsp;&nbsp;&nbs=
+p; http://localhost:9292/events<br><br>&nbsp; And so on. Now change the sou=
+rces to fit your needs.&nbsp; More info @ github.com/sportkit <br><br>&nbsp=
+; &nbsp; Cheers.<br><br></div>
+------=_Part_1389_120355803.1411849507848--
+
+------=_Part_1388_469445783.1411849507848--
+

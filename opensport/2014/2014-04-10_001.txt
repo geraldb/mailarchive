@@ -1,0 +1,83 @@
+From 497290313728@xxx Tue Jun 16 00:17:14 +0000 2015
+X-GM-THRID: 497524146176
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,1bf9dd0ed09ed3f3,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.90.100 with SMTP id bv4mr1713451lbb.9.1397164990024;
+        Thu, 10 Apr 2014 14:23:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.76.16 with SMTP id g16ls13784wiw.7.canary; Thu, 10 Apr
+ 2014 14:23:09 -0700 (PDT)
+X-Received: by 10.180.89.5 with SMTP id bk5mr564384wib.0.1397164989562;
+        Thu, 10 Apr 2014 14:23:09 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22b.google.com (mail-wi0-x22b.google.com [2a00:1450:400c:c05::22b])
+        by gmr-mx.google.com with ESMTPS id fp6si5814wib.2.2014.04.10.14.23.09
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 10 Apr 2014 14:23:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22b as permitted sender) client-ip=2a00:1450:400c:c05::22b;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22b as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f171.google.com with SMTP id q5so31758wiv.16
+        for <opensport@googlegroups.com>; Thu, 10 Apr 2014 14:23:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=IvdWd7eHH4RApgE4rFeccPDMtNA+rYKWqS2BdV4JNxA=;
+        b=WxD9U3QSTcp7wulELLbku+gV3HV7ppWW7GT9+4F2yFudI6Vz//Qa2lUh6BqpiZBnVY
+         SpXWhwJrackAqUYWs67b2Qob67yMe/1OjiUgRhjhHUHtHitClsZ4IfBWl2ZSF6fCe8nU
+         nX+XrWR283wE1vBl35LGN4mAxNiYKHte18+6IcV9nbp9Qd8uBCinuZjNp7SP+3mT6dC6
+         FIhR0KUk+nLNZ8iEcKVdO2tV2/mpiiwvABzXYb0VepHPsPZjLtRLfYsdbX0R/BzFsxwx
+         DKTOCut4uHba3FADuGuUoHx4FvqeyiHbwvZmtI2t46ghsASOtZ9ddb8H2B+frSX4KOo9
+         sUxA==
+MIME-Version: 1.0
+X-Received: by 10.180.14.199 with SMTP id r7mr17108058wic.0.1397164989363;
+ Thu, 10 Apr 2014 14:23:09 -0700 (PDT)
+Received: by 10.217.66.200 with HTTP; Thu, 10 Apr 2014 14:23:09 -0700 (PDT)
+Date: Thu, 10 Apr 2014 23:23:09 +0200
+Message-ID: <CAAxEZd_rLA4Mrui1h+x48nKB=r2NCqHdS2TrThQ0+4+eH3C56A@mail.gmail.com>
+Subject: Open Sports Data Hackdays - Fr+Sa 23+24 May - Basel, Milano, Your City?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  Hannes Gassert from the Swiss chapter of the Open Knowledge Foundation writes:
+
+  Sport is fun, sport is healthy, sport is a business - and sport is
+data, too. Scores and and times, athletic performance over time,
+passes played from A to B in real time, your own bicycle rides: there
+is more and more data for more and more of sports, and more is
+becoming open data, too!
+
+  It therefore is time to kick off the first International Sports
+Hackdays: two days of data wrangling, visualizing games and working on
+apps that matter to fans and athletes alike, to improve, to have fun,
+and to win.
+
+ Taking place on 23-24 May as a global event, the hackdays will be
+headquartered in Basel, Switzerland, with local nodes being planned
+all over Europe.
+
+  Right now we are collecting open data[1], we are negotiating with
+international sports organizations (so many of them are in
+Switzerland!), we are assembling teams of developers, designers,
+journalists and athletes, and we're convinced this is going to be a
+huge win for everybody!
+
+ Come play as well and sign up now to participate at one of the following nodes
+
+  Basel, Sierre, Milano, London, Your City?
+
+
+Source and more info @ opendata.ch/2014/04/sports-hackdays
+
+  Cheers.
+
+[1] datahub.io/organization/sport
+

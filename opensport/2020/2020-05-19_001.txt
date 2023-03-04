@@ -1,0 +1,286 @@
+From 6828632867235430400@xxx Tue May 19 19:03:05 +0000 2020
+X-GM-THRID: 6828449998508654592
+X-Received: by 2002:a05:6512:10c8:: with SMTP id k8mr193911lfg.181.1589914985138;
+        Tue, 19 May 2020 12:03:05 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a2e:8599:: with SMTP id b25ls122793lji.6.gmail; Tue, 19 May
+ 2020 12:03:03 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxq3r8+jNiBjmj82+Bvz+AbO7Y9u9XfLMyH7Gsv/yhzbJCMh4kPbZHc4MJsAUYyVmHswJJZ
+X-Received: by 2002:a2e:b4e3:: with SMTP id s3mr510101ljm.11.1589914983663;
+        Tue, 19 May 2020 12:03:03 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1589914983; cv=none;
+        d=google.com; s=arc-20160816;
+        b=knclVyul0ega3E7h3MQgnG39CvSMf/W5Jxo95qeyJ4N6mbK6pUyCGeGo3UIyWpSnux
+         HmdSMPRRhM7qLbU0+cYMCBhNq/L0lsqJQ1wj6LfqECv11tZSPg5t1qBTGWc2V+ezLq6C
+         mq90D3vv8mPjsQzlV+DaEqv2WU78xuhoJW8L0Cf7tB3XyyzzwWbvwUp1KwYcdvmr2Twp
+         KVrobCPBL0LDFBqmuP3HVV/0caikvrH1sTLu6m+YeLDqMFTDvDfZteBXqMprYcCHE0Y7
+         8KvWv44ORuALzpsoNfMwXEeMSm3uXtB05j70MUQeh/bEFpCQe64XL77vJwVskywf4Q8T
+         zlSw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=GGR/smeICLWbUj09G+Ss91ZhJKlLW4/H8eEq5/f9sBs=;
+        b=sqGi/j5IK9lC/tKuJ5aSEg6kyzSmvDk4z1FtrORcdQ7Ur4wMxFGcAs1Z7a95wyEfDf
+         WkgEJVPliReYoHT/VeFYSvyQbRGtEIvmXnJxyLvt0C0d0iLzZekTz69zfiAOZ/h1Kmb2
+         ya/zvQ314eLWUporgE7BBdVAl2A307+zV6XSNqg5CocHmNbUkHdHiPfG2pl1UsgfiU/N
+         TG/xg9IaJJu9wRtsNUxdOoV/HTBPsP+rwAoQVzEOliL7tE/CDXaBtgP1ZAsZn0YcS9MZ
+         D/vHrUP39o1W4xCOnDRJKa2vIs7bUA1SqD0LXBauVOTk7qclLAjzJAgDO5TKVQ/t8nZw
+         VXpg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=PLrrK4Kq;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x234.google.com (mail-lj1-x234.google.com. [2a00:1450:4864:20::234])
+        by gmr-mx.google.com with ESMTPS id q24si46643ljg.4.2020.05.19.12.03.03
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 19 May 2020 12:03:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) client-ip=2a00:1450:4864:20::234;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=PLrrK4Kq;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x234.google.com with SMTP id l15so546630lje.9
+        for <opensport@googlegroups.com>; Tue, 19 May 2020 12:03:03 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=GGR/smeICLWbUj09G+Ss91ZhJKlLW4/H8eEq5/f9sBs=;
+        b=PLrrK4KqKy6Xbb9Nu2JuwCBDfYBhOubRNJcR+enRrdSuDFe91h3N0uf7dtChJ6bg/y
+         Xs8r8AlHTecPa9aR0Vpq5DIkIyYRZ2X7YmoRqTXqGsSHXdzWJ1vpxI9/q9TuhgU14YT4
+         5PJMgzEq0BEGQb3kt01nYZ/EybcCZMaCq2vnODYKT5c6+4udyFfVlmrw4MOEUtvZRiyp
+         MC9FwCQrwmWZaZVCPv9cDuhYk4n8T/SPW4QOPUjnIiDgJEq9oxGCrdWB1jC1Z5vTGUIJ
+         h1BJxbCr/H0hr+hECj8kdOIj6FBipApaDtJN2v9dBc8yX/OUMLjGlz7zli+/ce1gXrXm
+         3wZQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=GGR/smeICLWbUj09G+Ss91ZhJKlLW4/H8eEq5/f9sBs=;
+        b=QzxHLLZ94cYo6bTDfaQhkOF0hLAACRPvSjxc/5bvik3IjehLoGxF4oh2HNn/GKNyvZ
+         wSDVUJL916MvNPdY9PFWLzcLg3E8FEcOfRgJXWpSK104p4pUO8noASWfBLkeHDYrcCYj
+         kuX3ZCB6HEWL1uolNJeL6bd1uk2duzL4nj1nebMEk45QH+XB91bos2zNsMhWG4/m9W92
+         mEOg87W3bVCbg7MGo2WXnP6W+xfanN8WEYtvbxMn8uOKOhoyjvOHqUcZd+pf07ql5kkU
+         JWE+DG7ZaOrpWsBd5vTDyBPjFmWGUElx+hEF13G68OTK+lWZeyuV7mOPca1DI1QsELWy
+         18Ew==
+X-Gm-Message-State: AOAM533enESgmUZZepEpvTNzi5Zs6rw/Nhm16kzLoQDZJG1SqqizcfyS
+	Dq9IWVR1PY7K5eTgC9+xRRfvb8xwZzEYsQkZfbQqDMAF3bM=
+X-Received: by 2002:a2e:901a:: with SMTP id h26mr502542ljg.249.1589914982766;
+ Tue, 19 May 2020 12:03:02 -0700 (PDT)
+MIME-Version: 1.0
+References: <f762e249-a1c1-4ba9-ab37-19848ce1bd05@googlegroups.com>
+ <CAAxEZd84Qb35CqHg6gaT-=56DXaCSdnnVw1oFbp2C1P03-02vA@mail.gmail.com>
+ <66862177-cbc7-4426-85c6-43f6260a8f82@googlegroups.com> <CAJGnaw8QNuGtCBkqxgS3=NZBp6WumzykhR4cQeFvvm8XxzE__w@mail.gmail.com>
+In-Reply-To: <CAJGnaw8QNuGtCBkqxgS3=NZBp6WumzykhR4cQeFvvm8XxzE__w@mail.gmail.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 19 May 2020 21:02:50 +0200
+Message-ID: <CAAxEZd9iQxN9o-srjKDEO1CezsJWfS9dG2ogSqJ6jBNYm+OQHw@mail.gmail.com>
+Subject: Re: [opensport] 404 status code from accessing endpoint
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+   Thanks for the detailed error report. Sorry for the trouble. I
+updated the service.rb script [1] to fix the errors - it should now
+work.
+
+    If you delete the service.rb in your local directory and than retry
+
+     $ sportdb serve
+
+     it should download the latest copy and than (re)try:
+
+       http://localhost:4567/event/fr.1.2014_15/teams
+
+     It should work now. Thanks for your patience. Good luck. Cheers. Prost=
+.
+
+[1] https://github.com/sportdb/sport.db.service/blob/master/service.rb
+
+El mar., 19 may. 2020 a las 14:47, anjaramanasoa romeo
+(<patromeo12@gmail.com>) escribi=C3=B3:
+>
+> Helllo,
+> I have finished  solved the issue by choosing another option ,but getting=
+ following error:
+>
+> TypeError at /event/fr.1.2014_15/teams
+>
+> Cannot visit Integer
+>
+> file: visitor.rb location: rescue in visit line: 25
+>
+>
+> Le mar. 19 mai 2020 =C3=A0 10:38, anjaramanasoa romeo <patromeo12@gmail.c=
+om> a =C3=A9crit :
+>>
+>>
+>>> Thanks for your reply. I have Dataset for france.after launching the fo=
+llowing command: sportdb  new fr , and directly execute the following: spor=
+tdb  serve  (that use the default
+>>
+>> downloaded database  "sport.db" downloaded into the previous created dir=
+ectory named  /france) ,this output these lines:
+>>
+>> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+>> sportdb serve:
+>>
+>> alphabets/1.0.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>> date-formats/1.0.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>> sportdb-langs/0.1.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>> sportdb-formats/1.0.2 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>> fifa/2020.5.10 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>> footballdb-leagues/2020.5.10 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>> footballdb-clubs/2020.5.10 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>> sportdb-config/1.0.2 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model =
+>WorldDb::Model::Country<
+>>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model =
+>WorldDb::Model::StateBase<
+>>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model =
+>WorldDb::Model::CityBase<
+>> sportdb-sync/1.0.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>> sportdb-readers/1.0.2 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>> [debug] Webservice::Metal.get - add route GET '/favicon.ico' to #<Webser=
+vice::Base:70041739074380> : Class
+>> [debug] Webservice::Metal.head - add route HEAD '/favicon.ico' to #<Webs=
+ervice::Base:70041739074380> : Class
+>> [debug] Webservice::Metal.get - add route GET '/webservice-32x32.png' to=
+ #<Webservice::Base:70041739074380> : Class
+>> [debug] Webservice::Metal.head - add route HEAD '/webservice-32x32.png' =
+to #<Webservice::Base:70041739074380> : Class
+>> [debug] Webservice::Metal.get - add route GET '/routes' to #<Webservice:=
+:Base:70041739074380> : Class
+>> [debug] Webservice::Metal.head - add route HEAD '/routes' to #<Webservic=
+e::Base:70041739074380> : Class
+>> [debug] Webservice::Metal.get - add route GET '/*' to #<Webservice::Base=
+:70041739074380> : Class
+>> [debug] Webservice::Metal.head - add route HEAD '/*' to #<Webservice::Ba=
+se:70041739074380> : Class
+>> [debug] Webservice::Metal.get - add route GET '/version(s)?' to #<SportD=
+bService:70041739255900> : Class
+>> [debug] Webservice::Metal.head - add route HEAD '/version(s)?' to #<Spor=
+tDbService:70041739255900> : Class
+>> [debug] Webservice::Metal.get - add route GET '/(stats|tables)' to #<Spo=
+rtDbService:70041739255900> : Class
+>> [debug] Webservice::Metal.head - add route HEAD '/(stats|tables)' to #<S=
+portDbService:70041739255900> : Class
+>> [debug] Webservice::Metal.get - add route GET '/props(.:format)?' to #<S=
+portDbService:70041739255900> : Class
+>> [debug] Webservice::Metal.head - add route HEAD '/props(.:format)?' to #=
+<SportDbService:70041739255900> : Class
+>> [debug] Webservice::Metal.get - add route GET '/logs(.:format)?' to #<Sp=
+ortDbService:70041739255900> : Class
+>> [debug] Webservice::Metal.head - add route HEAD '/logs(.:format)?' to #<=
+SportDbService:70041739255900> : Class
+>> sportdb/2.3.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>> sportdb/2.3.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>> working directory: /home/debate/openfootball/france
+>> Connecting to db using settings:
+>> {:adapter=3D>"sqlite3", :database=3D>"./sport.db"}
+>>   2 leagues  /  1 seasons
+>>   2 events (league+season recs)  /  76 rounds  /  0 groups
+>>   40 teams
+>>   760 games
+>>   0 badges
+>>   0 rosters (person+team+event recs)
+>>   0 goals (person+game recs)
+>>   0  assocs|orgs
+>>   0  grounds|stadiums
+>> [debug] Webservice::Metal.get - add route GET '/rounds/:q' to #<SportDbS=
+ervice:70041739255900> : Class
+>> [debug] Webservice::Metal.head - add route HEAD '/rounds/:q' to #<SportD=
+bService:70041739255900> : Class
+>> [debug] Webservice::Metal.get - add route GET '/event/:key/teams' to #<S=
+portDbService:70041739255900> : Class
+>> [debug] Webservice::Metal.head - add route HEAD '/event/:key/teams' to #=
+<SportDbService:70041739255900> : Class
+>> [debug] Webservice::Metal.get - add route GET '/event/:key/rounds' to #<=
+SportDbService:70041739255900> : Class
+>> [debug] Webservice::Metal.head - add route HEAD '/event/:key/rounds' to =
+#<SportDbService:70041739255900> : Class
+>> [debug] Webservice::Metal.get - add route GET '/event/:key/round/:pos' t=
+o #<SportDbService:70041739255900> : Class
+>> [debug] Webservice::Metal.head - add route HEAD '/event/:key/round/:pos'=
+ to #<SportDbService:70041739255900> : Class
+>> dump routes:
+>> {"GET"=3D>
+>>   [[#<Mustermann::Sinatra:"/version(s)?">,
+>>     #<Proc:0x00007f67b9fc11d8@/usr/local/lib/ruby/gems/2.6.0/gems/sportd=
+b-2.3.0/lib/sportdb.rb:44>],
+>>    [#<Mustermann::Sinatra:"/(stats|tables)">,
+>>     #<Proc:0x00007f67b9fd48f0@/usr/local/lib/ruby/gems/2.6.0/gems/sportd=
+b-2.3.0/lib/sportdb.rb:58>],
+>>    [#<Mustermann::Sinatra:"/props(.:format)?">,
+>>     #<Proc:0x00007f67b9feb118@/usr/local/lib/ruby/gems/2.6.0/gems/sportd=
+b-2.3.0/lib/sportdb.rb:73>],
+>>    [#<Mustermann::Sinatra:"/logs(.:format)?">,
+>>     #<Proc:0x00007f67b9ffadc0@/usr/local/lib/ruby/gems/2.6.0/gems/sportd=
+b-2.3.0/lib/sportdb.rb:77>],
+>>    [#<Mustermann::Sinatra:"/rounds/:q">, #<Proc:0x00007f67b8368298@(eval=
+):2>],
+>>    [#<Mustermann::Sinatra:"/event/:key/teams">,
+>>     #<Proc:0x00007f67b8eef8c8@(eval):42>],
+>>    [#<Mustermann::Sinatra:"/event/:key/rounds">,
+>>     #<Proc:0x00007f67b90bebe0@(eval):56>],
+>>    [#<Mustermann::Sinatra:"/event/:key/round/:pos">,
+>>     #<Proc:0x00007f67b96cc7a8@(eval):72>]],
+>>  "HEAD"=3D>
+>>   [[#<Mustermann::Sinatra:"/version(s)?">,
+>>     #<Proc:0x00007f67b9fc0fa8@/usr/local/lib/ruby/gems/2.6.0/gems/sportd=
+b-2.3.0/lib/sportdb.rb:44>],
+>>    [#<Mustermann::Sinatra:"/(stats|tables)">,
+>>     #<Proc:0x00007f67b9fd46e8@/usr/local/lib/ruby/gems/2.6.0/gems/sportd=
+b-2.3.0/lib/sportdb.rb:58>],
+>>    [#<Mustermann::Sinatra:"/props(.:format)?">,
+>>     #<Proc:0x00007f67b9feaf10@/usr/local/lib/ruby/gems/2.6.0/gems/sportd=
+b-2.3.0/lib/sportdb.rb:73>],
+>>    [#<Mustermann::Sinatra:"/logs(.:format)?">,
+>>     #<Proc:0x00007f67b9ffabb8@/usr/local/lib/ruby/gems/2.6.0/gems/sportd=
+b-2.3.0/lib/sportdb.rb:77>],
+>>    [#<Mustermann::Sinatra:"/rounds/:q">, #<Proc:0x00007f67b8372018@(eval=
+):2>],
+>>    [#<Mustermann::Sinatra:"/event/:key/teams">,
+>>     #<Proc:0x00007f67b8f0bb68@(eval):42>],
+>>    [#<Mustermann::Sinatra:"/event/:key/rounds">,
+>>     #<Proc:0x00007f67b90be640@(eval):56>],
+>>    [#<Mustermann::Sinatra:"/event/:key/round/:pos">,
+>>     #<Proc:0x00007f67b96cc460@(eval):72>]]}
+>> starting server...
+>> [debug] Webservice::Metal.run! - self =3D #<SportDbService:7004173925590=
+0> : Class
+>> [2020-05-19 09:22:21] INFO  WEBrick 1.4.2
+>> [2020-05-19 09:22:21] INFO  ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>> [2020-05-19 09:22:21] INFO  WEBrick::HTTPServer#start: pid=3D3743 port=
+=3D4567
+>> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+>>
+>> and when I access the following endpoints :  http://localhost:4567/event=
+s(404 status code); /event/france.2014/15/teams(404 status code); http://lo=
+calhost:4567/event/france.2014_15/teams(500 status code):
+>>
+>>
+>> thank you in advance
+>>
+>> --
+>> You received this message because you are subscribed to the Google Group=
+s "opensport" group.
+>> To unsubscribe from this group and stop receiving emails from it, send a=
+n email to opensport+unsubscribe@googlegroups.com.
+>> To view this discussion on the web visit https://groups.google.com/d/msg=
+id/opensport/66862177-cbc7-4426-85c6-43f6260a8f82%40googlegroups.com.
+>
+> --
+> You received this message because you are subscribed to the Google Groups=
+ "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an=
+ email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit https://groups.google.com/d/msgi=
+d/opensport/CAJGnaw8QNuGtCBkqxgS3%3DNZBp6WumzykhR4cQeFvvm8XxzE__w%40mail.gm=
+ail.com.
+

@@ -1,0 +1,70 @@
+From 6283349578968203264@xxx Wed May 11 08:45:27 +0000 2016
+X-GM-THRID: 6283054842980073472
+X-Received: by 10.129.101.66 with SMTP id z63mr1383441ywb.14.1462956326931;
+        Wed, 11 May 2016 01:45:26 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.28.2 with SMTP id 2ls792737qgy.37.gmail; Wed, 11 May 2016
+ 01:45:26 -0700 (PDT)
+X-Received: by 10.129.88.86 with SMTP id m83mr1381525ywb.52.1462956326396;
+        Wed, 11 May 2016 01:45:26 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x231.google.com (mail-ig0-x231.google.com. [2607:f8b0:4001:c05::231])
+        by gmr-mx.google.com with ESMTPS id pn4si307395igb.3.2016.05.11.01.45.26
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 11 May 2016 01:45:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::231 as permitted sender) client-ip=2607:f8b0:4001:c05::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ig0-x231.google.com with SMTP id m9so29480847ige.1
+        for <opensport@googlegroups.com>; Wed, 11 May 2016 01:45:26 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-transfer-encoding;
+        bh=vuZL1FzxgQDwWRlptHob5XEzROczf42mZSoOjWSmWUA=;
+        b=UZ4PieDhCEA/NNT0TuArJUNcK5TTv67F70vUHpIZ34QWLBrpHsbLbTzHzVu/xUxmID
+         T8D3zcN1Ws3oPnfTZASymxSfwzpV3sjn4I2QpgRGTBPdjhDsDF9slF+Uf5gFLo97/UuL
+         XQfpbv9urLJIwJX1nVZSW1g3Bwb5qcC7CQom04sSvps4xgxkLLr0mkCDUDSWrMyFwSti
+         0Whipb7EDDzlgDExZXTCQfekvm0Brt+PK88CTv2zq48nZ6kjaF853XecXcWNAO7yLIv3
+         ipSl4spXJWCLXHAQ2UFl7QuDXvuZ5ZiYY3IkEpDY58AAfVOQ8as3AgKICV9IOdxcNGkM
+         SLbw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to:content-transfer-encoding;
+        bh=vuZL1FzxgQDwWRlptHob5XEzROczf42mZSoOjWSmWUA=;
+        b=jvlgL6lWwus9V+bBGThVBJ6DSEKiYcLqg08lItzc2/TEk3jbS8sTzEfV5Fvy2SLQcR
+         iawn5KoliuNZTHm/ocaOI2/Lco6qzoBqZjDpIu4yugVy8f2DMajGqD5WRZgiSSQvUBLN
+         uDyc04IdrSWcFLy7YXrC0VlRNkrnHrYDQ5XLiBD6RrstsxF1dYqDfjPi4zFkyGPANlEI
+         ZuYkGtX93oEQkUEMrFqewHc7mL6BZYnCmYHsGJUBrjlN+MZSDQ3XXNUbEF4QkFHIf91e
+         KtQx2rlImqFQyJtbGLJnbJLxEiH07NhLsDff5xGpaqDxS3PlZ0WPZjiWCR6UuU2+5dV5
+         8w3Q==
+X-Gm-Message-State: AOPr4FUqz5GU5RvzbxhNhhcQ77NB1L9ZpfxrF3B1lVvr9NOMqT7whWC9DK9eTpIYK22TEr/h1nEgtgeJEsyl9A==
+MIME-Version: 1.0
+X-Received: by 10.50.128.20 with SMTP id nk20mr2157164igb.86.1462956326237;
+ Wed, 11 May 2016 01:45:26 -0700 (PDT)
+Received: by 10.107.138.84 with HTTP; Wed, 11 May 2016 01:45:26 -0700 (PDT)
+In-Reply-To: <9c3f923e-5376-4e81-8ad9-66e4ee101fba@googlegroups.com>
+References: <CAAxEZd_73Q-5h1czpr8Qe1mOOZHCBy0wxC6GXRtPPC2kPM3V2g@mail.gmail.com>
+	<9c3f923e-5376-4e81-8ad9-66e4ee101fba@googlegroups.com>
+Date: Wed, 11 May 2016 10:45:26 +0200
+Message-ID: <CAAxEZd_ZFD279_LSP-diEmd1TCznmMzVM85giungsysECRy4cg@mail.gmail.com>
+Subject: Re: [opensport] Re: Any Open Data Sets for the (Football) Euro Cup
+ (in France 2016)?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello Gabriele,
+   Thanks for the links. The point is getting/finding open data that
+you can (re)use e.g. open data requires an open license e.g.
+
+  Copyright =C2=A9 2014-2016 football-data.org
+
+ Is NOT open even if the api might be free (for limited use). Hope
+that makes sense. Cheers.
+

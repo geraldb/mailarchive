@@ -1,0 +1,95 @@
+From 6580335416944099328@xxx Fri Jul 20 16:22:10 +0000 2018
+X-GM-THRID: 6580335414772498432
+X-Received: by 2002:a2e:7d12:: with SMTP id y18-v6mr196801ljc.9.1532103730060;
+        Fri, 20 Jul 2018 09:22:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a19:750b:: with SMTP id y11-v6ls46705lfe.21.gmail; Fri, 20
+ Jul 2018 09:22:09 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpfAF6YrxuFfvYSM8Y1TaP4LR0zN+uELumL3kqhlqP+GB9Qyw7A3tdEiZOL7aoouOWGhXita
+X-Received: by 2002:a19:ea5a:: with SMTP id i87-v6mr146817lfh.39.1532103729144;
+        Fri, 20 Jul 2018 09:22:09 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1532103729; cv=none;
+        d=google.com; s=arc-20160816;
+        b=AH1rTOHOM4LD61u8lDdGPzQaslsrUagIc6/exMkoswsu3zcEzL7e/BXtLEgjdiV1Rb
+         GPgTBkP2gsL4wBsReaI3hIntrgGWGgjk233cIU4cUpNDuPEiTsimoKW5B2g2vLp2y9SF
+         GTVpHaJny44ycyPrB5ymYFewui3Qh6pP0iQbcjoRn2AHQfmGleBJApenG36IL8oDACdJ
+         fxaL1a32mvQWfzfCibEGvC5hICyaKxj9DXRdVz36QBl3e1LdMpRBILhlnAzuacofqXW7
+         Yy2lLiQGf5lZkIS3iw0S1lPB3g3LjVmWmPq5FTaOpNbxJ8etIjhsR+H1ymW7O7mxtU7O
+         r0/g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=bnmHu3pG8LhnDl6oHW1RqhKOUq0KcS029F0e1EB9LbY=;
+        b=ETk2ViEWagYpx4BqllpodM17OP8hOIRK2xa44Orw82Tjl0MJ6H53HmA5om6YDQNNSg
+         DXR4jVQxVRAhHPsk1wl04C+RNCQiGaUdNVZoF8dJVg5zjrDc7XD73rO14ntcVxzWTsKY
+         P+DM9PmFYnipDy2/layQ0G+FYH9LdZ1uSZ81H+uRG9YcL8IaBCfyxFOrs4EQEgyVghEv
+         3ecrTWdTcbHjOjkkhyYPW3jHaCs1SqFzNA1qXQFKXmqnUi9z6zPBCO/WVzLYbAOuFu5Z
+         ccLF2HLGZUqr8S4RmSoOyp8UPCgkkls9lHnBe8prh/D061K3V6v12oss/faW4Q/XQrAR
+         ePxQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="Eoc8n+D/";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x232.google.com (mail-lj1-x232.google.com. [2a00:1450:4864:20::232])
+        by gmr-mx.google.com with ESMTPS id s14-v6si91085ljh.0.2018.07.20.09.22.09
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 20 Jul 2018 09:22:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::232 as permitted sender) client-ip=2a00:1450:4864:20::232;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="Eoc8n+D/";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x232.google.com with SMTP id 203-v6so11566813ljj.13
+        for <opensport@googlegroups.com>; Fri, 20 Jul 2018 09:22:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=bnmHu3pG8LhnDl6oHW1RqhKOUq0KcS029F0e1EB9LbY=;
+        b=Eoc8n+D/FCTwb0Ym0IFsnbQmZbHb/lMmqhWC/3FNTbwoUGUtaCj+HznbjIlE79oq3a
+         gmR7XnC/qHvYT5L1guWwU+nmEFnscuJ1Asjc5oaXlLgOpoRJdpqeLzsVLsUxPs+Pm+/n
+         UII6rileFwgUWWKWJimEnNzMmDB8UhNVU1+clRxqRoXhVUcCRIaa3LQrNaTJfagv7ugt
+         WaKpvEsRjHFGD1GqwIc2xE8Uxeetp4RjlbHZMeJA6uIg4V6ImucgBCcY60gF3datIP19
+         YWWrGFRTCmMhRtYW5wCUfItWAI5ptx1vXyQd0ypzEAUoVcrH/UMPDXchcEf7H7eAFgUi
+         j+Dw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=bnmHu3pG8LhnDl6oHW1RqhKOUq0KcS029F0e1EB9LbY=;
+        b=umYzP/eYtOmKklKisfmuboFkmYGaBCFh/vbF/YsrEvM59aqixSmsfWeTJ0730N5NRe
+         98IYVTcb989RJOSXaKoKsWaSoFvTgI3w9tjDdrrBiuLwNjCKP36/WK1kdyUhwVyFo6q8
+         j/XxOkI4ulNSfZ9Gd9zjSq2lN2PcDCxxEwMxKCQsRNTllrPN2+eWH3RxAUOP8gf9vwiU
+         vnTYp5wxCgycYTMHCrgDe3Llf8KmiTT1KNf/x+T8LtMlKrkmwylCJ1ubJppOu68v0G/Q
+         poZpexfPOERRhklK6naq7E4j0O19FXwXIe2WMtlNCUGobLxiGHvuBLqbvK7HfspudDSK
+         YCOA==
+X-Gm-Message-State: AOUpUlFbgiPNyV3CowEgis9HDvKAN7zoM/e0e/tWlfLQ+/l1jbAS8ALG
+	9vUmChxMPixjcNmxcFtqoZTBJOSGHmszh1VrtEh3E/UBi8s=
+X-Received: by 2002:a2e:2f19:: with SMTP id v25-v6mr2098374ljv.113.1532103728742;
+ Fri, 20 Jul 2018 09:22:08 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:ab3:4c6b:0:0:0:0:0 with HTTP; Fri, 20 Jul 2018 09:22:08
+ -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 20 Jul 2018 18:22:08 +0200
+Message-ID: <CAAxEZd_sBhHia1KfL-LBOVKd_R8matdTTMFULRDL9wDYROFnDA@mail.gmail.com>
+Subject: New sportdb Gem/Library Guide/Getting Started Article - Working w/
+ Football CSV Files - English Premier League 2017/18 Sample
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+    I've written-up a hands-on getting started guide for the new
+sportdb text library / gem. Let's build the standings table for the
+English Premier League (EPL) for the 2017/18 season from all 380
+matches in the comma-separated values (.csv) format.
+
+
+ Read the article titled "Working with CSV Files" [1] for a
+step-by-step do-it-yourself how-to.
+
+   Enjoy the beautiful game. Cheers. Prost.
+
+[1] https://github.com/sportdb/docs/blob/master/working-with-csv-files.md
+

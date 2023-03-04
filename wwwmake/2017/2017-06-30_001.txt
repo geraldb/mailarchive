@@ -1,0 +1,106 @@
+From 6437331136926449664@xxx Fri Jun 30 07:32:32 +0000 2017
+X-GM-THRID: 6437331141069373440
+X-Received: by 10.101.77.65 with SMTP id j1mr12148556pgt.3.1498807952138;
+        Fri, 30 Jun 2017 00:32:32 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.36.84.204 with SMTP id t195ls6043228ita.15.canary-gmail; Fri,
+ 30 Jun 2017 00:32:31 -0700 (PDT)
+X-Received: by 10.129.85.4 with SMTP id j4mr12982453ywb.59.1498807951328;
+        Fri, 30 Jun 2017 00:32:31 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1498807951; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Woff0xn8Ct4OSSjZxWG/Sj5ktaa1jVwWrfh7yDg7tS4hxmRqVD3BTEwMiH7DOKfEHj
+         tWX7L3r7qZxgmnaRGEpY3yIPPSty6II7hFjV7u/TFr1kH+oqntdmGanZ5JcxCQfz9vpx
+         7AAw/WNGRbqMXBDqUyNw+znJEPtSmWfznHceic0VNjoyHWZCbDHFFymqNtmh5jTKtaz9
+         rup7H4WHPzlTTRGevxeh7QzWel/O5G9JjnY+j01Ocr40nFvUw/UHbp9MW6aEIBiUsJFW
+         5USrOx/UfDq7ZZJ1gX5i2HJYoAqFI5yxZomBqFgi0IZgDATECWDdezpXEvzd1Q1XBe6S
+         S7/w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=ZTjGHiqLMF7FMeAgQmY3KxWKLkv/BeraEMSd02LA5bs=;
+        b=Vb0F54rH7iFZBL46KjoVLk3MpbN6+A+D/GMk4oqqAjLZJxNz1wsVUUabCcrefQ5vjI
+         RENk3utXWY3uVZZBUB49FBAlyGWH6oPvo+e0uxM59n+ytMH4hS0T/MAZZ7WV9Bp53s6P
+         AnfQ1bc3/5VU5uIXtu9u6+sqzSjt1CYz0gQgDu0yinfwT3lziK/DoEQogAEbse2+cVnH
+         uU4034/XDpfkgk4ETM6ws1voR7m8Qs3YdCLYJVUGJ64vz100+/8++CxhEkRzS2k6Eb+e
+         98eb3Qo/ad9iHK6pYS9Hru9dmy0bi/kSEGygjO58lj/iOEwGytzv4jqmADU1s4t1tymN
+         ydHA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=CdTulAKk;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x231.google.com (mail-it0-x231.google.com. [2607:f8b0:4001:c0b::231])
+        by gmr-mx.google.com with ESMTPS id j141si648271itb.6.2017.06.30.00.32.31
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 30 Jun 2017 00:32:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::231 as permitted sender) client-ip=2607:f8b0:4001:c0b::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=CdTulAKk;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x231.google.com with SMTP id v202so56948137itb.0
+        for <wwwmake@googlegroups.com>; Fri, 30 Jun 2017 00:32:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=ZTjGHiqLMF7FMeAgQmY3KxWKLkv/BeraEMSd02LA5bs=;
+        b=CdTulAKko3M7WErsIFGwbX+PwORnoAXvCWT7TOVPFp15+exFU8F6RqbNiGWROV2Anu
+         2UtH0ABrUCF52IZRAgi74ho5x/n1y7I+dS96dQxnMbTcmPHAJThuqkFP40tIqgErcx0t
+         rTL0KVfeR57hFKFIjVo7IFuDSmXtUP8cS1OWvhCw9HC9jYC+NLZHjTnNi1o6FKvHreAQ
+         iCM4iArPUtsCKETDmOvR4FdtYHKPWvv9fM2ggVfoQW0624ndsYfoPfK35l90K3C2DvuW
+         VW1Y5NjDR7nYjHrjnPQXIi8/zW7cgLAK48ZOvA3f0Z7+/zdJC9FdBFvqEa49YVgZQ4WV
+         VRBA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=ZTjGHiqLMF7FMeAgQmY3KxWKLkv/BeraEMSd02LA5bs=;
+        b=jK+0HlnbScxNJh/6TV+YqWfKKkAqVreESXv2HS//+BsQnozrsEX0mExvqPk5XcmgLa
+         uetuhTSqOivGk4ud3VRqOIWOWwuox7kgOLGCsOsRCgYDq6RCKcgVeSFxTcd08nTH4ElA
+         c9nMeRk2ayUKSvDnodB3m5EYmNHKVGJT2HV1GWZfWbFrj99tD9RCtdmTFg7djfeLiBE8
+         WY4N73pb+rosPaTMVIwZ0ZN6esO2aKrY9i3QgPJ/VZRfTemY/TJnhd2KoEo0vQCmlxE1
+         6CX0MRhT3pn2W7TzFJkyJDGvbC9C5PyzDu5WkFjSF4gdsy7qocVnqQEKPIfD/+hbOxVD
+         UHPg==
+X-Gm-Message-State: AKS2vOzqqNkJ1bdmNa6dKGtI0ydb7Nwi9lg+iNZ1ObeuZ0L5bnFy8gt1
+	tGrk1C3kOeRXVojKpmIEdlXlUnd6I9Wt
+X-Received: by 10.36.57.23 with SMTP id l23mr5822498ita.92.1498807950038; Fri,
+ 30 Jun 2017 00:32:30 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.4.17 with HTTP; Fri, 30 Jun 2017 00:32:29 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 30 Jun 2017 09:32:29 +0200
+Message-ID: <CAAxEZd97FkYHMpCRs=rsqZuKuGVMoY9N3fq5rHFeWQa3yCz3fw@mail.gmail.com>
+Subject: New iniparser gem - iniparser gem - read /parse INI configuration,
+ settings and data files into a hash (INI.load)
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   What's your favorite datafile format? Awesome YAML [1] or Awesome
+JSON (What's Next) [2]?
+
+   I prefer good ol' INI ;-) that's why I published a new iniparser
+gem [3] to read / parse INI configuration, settings and data files
+into a hash.
+
+   Use:
+
+     hash = INI.load_file( 'planet.ini' )
+     pp hash.
+
+Cheers.
+
+PS: What's INI? See the planet.ini [4] as a "real-world" example.
+
+PPS: Yes, the Planet Pluto [5] news reader and website builder uses
+iniparser among others ;-)
+
+
+[1] https://github.com/datatxt/awseome-yaml
+[2] https://github.com/datatxt/awesome-json-next
+[3] https://github.com/datatxt/iniparser
+[4] https://github.com/feedreader/pluto.starter/blob/master/planet.ini
+[5] https://github.com/feedreader/pluto
+

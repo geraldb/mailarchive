@@ -1,0 +1,174 @@
+From 2655335219200@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2656382746624
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,9c73b0cae67bd669,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.43.60.79 with SMTP id wr15mr5464807icb.14.1433947793391;
+        Wed, 10 Jun 2015 07:49:53 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.102.53 with SMTP id v50ls1131796qge.68.gmail; Wed, 10 Jun
+ 2015 07:49:53 -0700 (PDT)
+X-Received: by 10.129.116.65 with SMTP id p62mr4196023ywc.11.1433947793204;
+        Wed, 10 Jun 2015 07:49:53 -0700 (PDT)
+Received: by 10.50.65.195 with SMTP id z3msigs;
+        Wed, 10 Jun 2015 04:52:53 -0700 (PDT)
+X-Received: by 10.50.142.39 with SMTP id rt7mr427641igb.17.1433937173271;
+        Wed, 10 Jun 2015 04:52:53 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Wed, 10 Jun 2015 04:52:52 -0700 (PDT)
+From: =?UTF-8?B?zprPic69z4PPhM6xzr3PhM6vzr3Ov8+CIM6jzq3Pgc6yzrfPgg==?= <knservis@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <98f20ffb-d01c-4a53-ab1a-2fae9511380c@googlegroups.com>
+Subject: Sportdb error
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3723_171862115.1433937172627"
+X-Google-Token: EJTK4KsFqSiMjwE73kw0
+X-Google-IP: 124.168.173.154
+
+------=_Part_3723_171862115.1433937172627
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3724_121061590.1433937172627"
+
+------=_Part_3724_121061590.1433937172627
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald, 
+
+I have been trying to use the sportdb gem but none of the versions work for 
+me. 
+
+Here is the error:
+ctiverecord-utils/0.4.0 (activerecord/4.2.1) on Ruby 2.2.2 (2015-04-13) 
+[x86_64-darwin14]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::StateBase<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::CityBase<
+/Users/kns/.rvm/gems/ruby-2.2.2@sportdb/gems/persondb-models-0.4.2/lib/persondb/models/forward.rb:10:in 
+`<module:Model>': uninitialized constant WorldDb::Model::Region (NameError)
+from 
+/Users/kns/.rvm/gems/ruby-2.2.2@sportdb/gems/persondb-models-0.4.2/lib/persondb/models/forward.rb:5:in 
+`<module:PersonDb>'
+from 
+/Users/kns/.rvm/gems/ruby-2.2.2@sportdb/gems/persondb-models-0.4.2/lib/persondb/models/forward.rb:4:in 
+`<top (required)>'
+from 
+/Users/kns/.rvm/rubies/ruby-2.2.2/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in 
+`require'
+from 
+/Users/kns/.rvm/rubies/ruby-2.2.2/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in 
+`require'
+from 
+/Users/kns/.rvm/gems/ruby-2.2.2@sportdb/gems/persondb-models-0.4.2/lib/persondb/models.rb:14:in 
+`<top (required)>'
+from 
+/Users/kns/.rvm/rubies/ruby-2.2.2/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in 
+`require'
+from 
+/Users/kns/.rvm/rubies/ruby-2.2.2/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in 
+`require'
+from 
+/Users/kns/.rvm/gems/ruby-2.2.2@sportdb/gems/sportdb-models-1.11.2/lib/sportdb/models.rb:8:in 
+`<top (required)>'
+from 
+/Users/kns/.rvm/rubies/ruby-2.2.2/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in 
+`require'
+from 
+/Users/kns/.rvm/rubies/ruby-2.2.2/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in 
+`require'
+from 
+/Users/kns/.rvm/gems/ruby-2.2.2@sportdb/gems/sportdb-1.11.0/lib/sportdb.rb:4:in 
+`<top (required)>'
+from 
+/Users/kns/.rvm/rubies/ruby-2.2.2/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in 
+`require'
+from 
+/Users/kns/.rvm/rubies/ruby-2.2.2/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in 
+`require'
+from 
+/Users/kns/.rvm/gems/ruby-2.2.2@sportdb/gems/sportdb-1.11.0/bin/sportdb:3:in 
+`<top (required)>'
+from /Users/kns/.rvm/gems/ruby-2.2.2@sportdb/bin/sportdb:23:in `load'
+from /Users/kns/.rvm/gems/ruby-2.2.2@sportdb/bin/sportdb:23:in `<main>'
+from 
+/Users/kns/.rvm/gems/ruby-2.2.2@sportdb/bin/ruby_executable_hooks:15:in 
+`eval'
+from 
+/Users/kns/.rvm/gems/ruby-2.2.2@sportdb/bin/ruby_executable_hooks:15:in 
+`<main>'
+
+Any insights?
+
+Thank you,
+Kosta
+
+------=_Part_3724_121061590.1433937172627
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald,&nbsp;<div><br></div><div>I have been trying to =
+use the sportdb gem but none of the versions work for me.&nbsp;</div><div><=
+br></div><div>Here is the error:</div><div><div>ctiverecord-utils/0.4.0 (ac=
+tiverecord/4.2.1) on Ruby 2.2.2 (2015-04-13) [x86_64-darwin14]</div><div>&n=
+bsp; [TagDb.has_many_tags] adding taggings n tags has_many assocs to model =
+&gt;WorldDb::Model::Country&lt;</div><div>&nbsp; [TagDb.has_many_tags] addi=
+ng taggings n tags has_many assocs to model &gt;WorldDb::Model::StateBase&l=
+t;</div><div>&nbsp; [TagDb.has_many_tags] adding taggings n tags has_many a=
+ssocs to model &gt;WorldDb::Model::CityBase&lt;</div><div>/Users/kns/.rvm/g=
+ems/ruby-2.2.2@sportdb/gems/persondb-models-0.4.2/lib/persondb/models/forwa=
+rd.rb:10:in `&lt;module:Model&gt;': uninitialized constant WorldDb::Model::=
+Region (NameError)</div><div><span class=3D"Apple-tab-span" style=3D"white-=
+space:pre">=09</span>from /Users/kns/.rvm/gems/ruby-2.2.2@sportdb/gems/pers=
+ondb-models-0.4.2/lib/persondb/models/forward.rb:5:in `&lt;module:PersonDb&=
+gt;'</div><div><span class=3D"Apple-tab-span" style=3D"white-space:pre">=09=
+</span>from /Users/kns/.rvm/gems/ruby-2.2.2@sportdb/gems/persondb-models-0.=
+4.2/lib/persondb/models/forward.rb:4:in `&lt;top (required)&gt;'</div><div>=
+<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>from /Us=
+ers/kns/.rvm/rubies/ruby-2.2.2/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/k=
+ernel_require.rb:54:in `require'</div><div><span class=3D"Apple-tab-span" s=
+tyle=3D"white-space:pre">=09</span>from /Users/kns/.rvm/rubies/ruby-2.2.2/l=
+ib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'=
+</div><div><span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</sp=
+an>from /Users/kns/.rvm/gems/ruby-2.2.2@sportdb/gems/persondb-models-0.4.2/=
+lib/persondb/models.rb:14:in `&lt;top (required)&gt;'</div><div><span class=
+=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>from /Users/kns/.rv=
+m/rubies/ruby-2.2.2/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_requi=
+re.rb:54:in `require'</div><div><span class=3D"Apple-tab-span" style=3D"whi=
+te-space:pre">=09</span>from /Users/kns/.rvm/rubies/ruby-2.2.2/lib/ruby/sit=
+e_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'</div><div>=
+<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>from /Us=
+ers/kns/.rvm/gems/ruby-2.2.2@sportdb/gems/sportdb-models-1.11.2/lib/sportdb=
+/models.rb:8:in `&lt;top (required)&gt;'</div><div><span class=3D"Apple-tab=
+-span" style=3D"white-space:pre">=09</span>from /Users/kns/.rvm/rubies/ruby=
+-2.2.2/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `=
+require'</div><div><span class=3D"Apple-tab-span" style=3D"white-space:pre"=
+>=09</span>from /Users/kns/.rvm/rubies/ruby-2.2.2/lib/ruby/site_ruby/2.2.0/=
+rubygems/core_ext/kernel_require.rb:54:in `require'</div><div><span class=
+=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>from /Users/kns/.rv=
+m/gems/ruby-2.2.2@sportdb/gems/sportdb-1.11.0/lib/sportdb.rb:4:in `&lt;top =
+(required)&gt;'</div><div><span class=3D"Apple-tab-span" style=3D"white-spa=
+ce:pre">=09</span>from /Users/kns/.rvm/rubies/ruby-2.2.2/lib/ruby/site_ruby=
+/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'</div><div><span =
+class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>from /Users/kn=
+s/.rvm/rubies/ruby-2.2.2/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_=
+require.rb:54:in `require'</div><div><span class=3D"Apple-tab-span" style=
+=3D"white-space:pre">=09</span>from /Users/kns/.rvm/gems/ruby-2.2.2@sportdb=
+/gems/sportdb-1.11.0/bin/sportdb:3:in `&lt;top (required)&gt;'</div><div><s=
+pan class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>from /User=
+s/kns/.rvm/gems/ruby-2.2.2@sportdb/bin/sportdb:23:in `load'</div><div><span=
+ class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>from /Users/k=
+ns/.rvm/gems/ruby-2.2.2@sportdb/bin/sportdb:23:in `&lt;main&gt;'</div><div>=
+<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>from /Us=
+ers/kns/.rvm/gems/ruby-2.2.2@sportdb/bin/ruby_executable_hooks:15:in `eval'=
+</div><div><span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</sp=
+an>from /Users/kns/.rvm/gems/ruby-2.2.2@sportdb/bin/ruby_executable_hooks:1=
+5:in `&lt;main&gt;'</div></div><div><br></div><div>Any insights?</div><div>=
+<br></div><div>Thank you,</div><div>Kosta</div></div>
+------=_Part_3724_121061590.1433937172627--
+------=_Part_3723_171862115.1433937172627--
+

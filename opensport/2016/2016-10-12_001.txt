@@ -1,0 +1,83 @@
+From 6340605221265211392@xxx Wed Oct 12 15:46:34 +0000 2016
+X-GM-THRID: 6340605220032086016
+X-Received: by 10.129.94.11 with SMTP id s11mr424424ywb.76.1476287194451;
+        Wed, 12 Oct 2016 08:46:34 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.178.80 with SMTP id b77ls1405726iof.47.gmail; Wed, 12 Oct
+ 2016 08:46:31 -0700 (PDT)
+X-Received: by 10.98.206.14 with SMTP id y14mr442452pfg.4.1476287191120;
+        Wed, 12 Oct 2016 08:46:31 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x236.google.com (mail-io0-x236.google.com. [2607:f8b0:4001:c06::236])
+        by gmr-mx.google.com with ESMTPS id o13si1568398itc.3.2016.10.12.08.46.31
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 12 Oct 2016 08:46:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) client-ip=2607:f8b0:4001:c06::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x236.google.com with SMTP id r30so54298813ioi.1
+        for <opensport@googlegroups.com>; Wed, 12 Oct 2016 08:46:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=0NbPJOtmt7PWuIIfga/K6XVcKrKGxR5jDteiMTPKU9o=;
+        b=lonsIdBxU344FPRZpw3AkfQiw78Id3l3vn1/OF6BHYCQzl2r4xVWU5S3adsvnfNfNH
+         KV1L71T/JmS9QRYK3bwm9IPDaL/3sDMdgrwYx7y9Bc8r/Lgzk/Ib13Ec0rb1oPgsp48U
+         VxeZ/CFjPaMsI7+56eGPtNQfNuCxliqtc1QWZo2878+6if34NKzJbrefiUBcuA45z4Hj
+         di+CgHwz4MkceH9hig6E9gNuqZZoEjKckeVicjrdipVJg/CId3ZqvBkrto1+K+5XG5Ol
+         aRuPt36lPghFwmgsuNLOCtQmAWC8JWYaU8LGSQA+7BKPb5qpXPOa92gymZ4QpZ2iUdjx
+         jNRQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=0NbPJOtmt7PWuIIfga/K6XVcKrKGxR5jDteiMTPKU9o=;
+        b=PlXuS4xERExgtvsDw9dM2iZSNVdwksjzyGKOHJ6KKBCRmHdPQ3RcB9BL6YxES/1tet
+         V04OmJGC3HM8/oM2WhlhgiKXhO28CL5WSiJvo+pEuFWOps/v6Aok8820V8WYIHrEqB7r
+         8cuIgI5u/iy8Udcpnv5Q6MRn1ZhTl+9j61nIjgzyaxwkEuM8wZiTaFbJ15AQ6q27GmyN
+         nFjZ+VJJs7vKXrmbK9KEKzit8GxgLbzZcEhtijAII786KcJa8hqc08BISablqEBHtK7d
+         7DYRGWE1BQgHrccH66JozYScLX8vJb9IAtpR04W2jDjfIkVpWFtxUbzPENG13SYownzl
+         tBMg==
+X-Gm-Message-State: AA6/9Rkg2+bCKT3TKFa5X59qEPb1zLYjYfdv500cB562f1aEkYpBTsHKmA6BDcvWSqY7Jw7IzawQWqUEJgvlWg==
+X-Received: by 10.107.9.16 with SMTP id j16mr2144897ioi.230.1476287190626;
+ Wed, 12 Oct 2016 08:46:30 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.141.194 with HTTP; Wed, 12 Oct 2016 08:46:30 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 12 Oct 2016 17:46:30 +0200
+Message-ID: <CAAxEZd_eZ-ZXn+LLU_Deghq+vJfqfDBEMRtiLH10bcG3FFSu9w@mail.gmail.com>
+Subject: sport.db.admin - Web admin tool update - Now w/ Datafiles and Rails 4+
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   If anyone follows along - I've updated the sport.db web app [1]. What's news?
+
+
+  Updated to Rails 4+ and the database setup now uses Datafiles,
+  See the new /datafile [2] folder for examples e.g.
+
+     top.rb:
+
+        world  'world.db', setup: 'countries'
+
+        football 'eng-england'
+        football 'de-deutschland'
+        football 'es-espana'
+        football 'it-italy'
+
+
+    I've also update the sample running on heroku [3] and updated
+    the datasets e.g. now incl. new 2016/17 English Premier League etc.
+
+    If anyone tries out sport.db.admin let us know how it goes or what
+you think. Cheers.
+
+
+[1] https://github.com/sportdb/sport.db.admin
+[2] https://github.com/sportdb/sport.db.admin/tree/master/datafile
+[3] http://footballdb.herokuapp.com
+

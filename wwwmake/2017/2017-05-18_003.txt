@@ -1,0 +1,123 @@
+From 6421476059704721408@xxx Thu May 18 14:06:44 +0000 2017
+X-GM-THRID: 6421473045402091520
+X-Received: by 10.99.96.144 with SMTP id u138mr2016703pgb.147.1495116404296;
+        Thu, 18 May 2017 07:06:44 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.157.68.164 with SMTP id v36ls6882926ote.28.gmail; Thu, 18 May
+ 2017 07:06:43 -0700 (PDT)
+X-Received: by 10.157.41.41 with SMTP id d38mr2091944otb.90.1495116403940;
+        Thu, 18 May 2017 07:06:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1495116403; cv=none;
+        d=google.com; s=arc-20160816;
+        b=i55ppEwNqP4uzqk6HCR/W2xWA6jTZLSTCkxErrP/gmv7aRoNrRLjr15rx4l04iUeLk
+         1ZbMoYDk6cxeAtwXoSne0bf2zrae/C4wlvRqYxdQc1Kqqx7NgdkLwDiQ/k//vNsDzwA9
+         Z+t40kT0Ep43NbH3jxvfHT6Hc7vkHOo8NoJ8df368n4RPtXAv1jViU8xmjV5Jvtx5hiR
+         t+1w1lcZ6Icq/bL01NRMJlJVStrWY31V2Th0Q9NNgIvRXltIuVOMwml6N8ygD4BKr1El
+         VO9iZafU2Zmhy5gI7juDNvkj2ajXt8l3wkh8nf6KuLv9pe5T+CBUdFUN7B37L1S7/P1S
+         k66g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:references:in-reply-to
+         :mime-version:dkim-signature:arc-authentication-results;
+        bh=E1cG1/ybK9ofbHAcDW/1cUW0ySeKmmvVIkhBZ7liJkg=;
+        b=ekk+e0rbFMBuG+GsmLG6PTIde/mEZ0nwzKDMa6pvsst/NX7q7TiV4r1rBabXJ4861K
+         kQm6CTumglfQSDhWmmYYxeh1PNOTA6hrgbyuR6ybUhm9P188zrWoqdrSA+W1M7xR4Zk0
+         g5Wid5CvsmcT5AxnOqn2/mOM/9D7TKSUc7bhRXF6D5fIyjZHhjbkG9tHrMLh4A5F+nV/
+         2H/lsD9PRYBcLE2AteA9UKWIWxIWgsTUNMCAvdXdovaKus6ilUYwK8v9nLrn1MTMSgH0
+         HxTCyMF673an+yDXCn/JBNphpmyv1QY4MSXlipdR2nYtTy6Bq568Uh29w6zE8jgrZt7t
+         WJMA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x231.google.com (mail-io0-x231.google.com. [2607:f8b0:4001:c06::231])
+        by gmr-mx.google.com with ESMTPS id f73si4217ita.1.2017.05.18.07.06.43
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 18 May 2017 07:06:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) client-ip=2607:f8b0:4001:c06::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x231.google.com with SMTP id k91so29019626ioi.1
+        for <wwwmake@googlegroups.com>; Thu, 18 May 2017 07:06:43 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to
+         :cc;
+        bh=E1cG1/ybK9ofbHAcDW/1cUW0ySeKmmvVIkhBZ7liJkg=;
+        b=rMf7IWps/pKc2wUygklh3CRgIt1B0r1U1kuKTTewKoyhUNdEvnj4pjNGJeIko1B+wk
+         jNY/pncVgKnSYueea39kLS3rRmDq13zWkwXiZbQ/GDmg4rpIcZW6W6r027KabC9IOLZA
+         0cUt5gJukTRi0GnMZg7Sr8NXj0fcl+pCKuIDsbNS3s2RR4oyJcLJw1f3Ua2A2Bh46VYR
+         4Y+0H8bjpS/X/2P2ivadRicpYHeY1iKwhAEkladpv/YCXZPur2gEH7Ehxh46Iu+j14TD
+         nGe9z03FFZaFv9bJnFMYXuqaaMsIRhmO4VHqHdiP1p+Hj1V9Us03nog89ce26ZD7LxFE
+         gUmw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to:cc;
+        bh=E1cG1/ybK9ofbHAcDW/1cUW0ySeKmmvVIkhBZ7liJkg=;
+        b=N4hn4YaAb+Z6cFiIO9UOyfY3v90nH/ul2OsllBCRW4Z+5LJcBpxyF2gVZ4LbIQFxqV
+         BOc7nmDeoa+OpYIuwTIrxp84T8cIBbV5l8zVfv0gntPgDx2NcTXzisBWeY64cZYZ+58K
+         Df4RjjRVzIzQdAag78Z/QBciKuI2vszU8B6cmvxdDNmiR07ffnsANrkPxnS/p7KQXRmY
+         R0OCpTm7OqcqKsh9CbR6W2SCrMhxq/tB6fdCArw8KhRZhTz1LbapmBdmxs5x3e5Zlv/g
+         kln3Wpvmdylm70fbFwtfrwPvMGfh/cf6yCCW39Z1Go8m746vmnDnpizWxR3pHcQQr663
+         1Kkg==
+X-Gm-Message-State: AODbwcCT+KD2SsHXeW/fIPIWLgelMwO4wzQUa/ma8f1dMmG4vuX8OHYM
+	CMSaMySytABCoTrO351epOgGSq2QYAPo
+X-Received: by 10.107.34.208 with SMTP id i199mr4595955ioi.210.1495116403510;
+ Thu, 18 May 2017 07:06:43 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.34.134 with HTTP; Thu, 18 May 2017 07:06:43 -0700 (PDT)
+In-Reply-To: <83e77ebf-1996-47f9-adc8-9c2d40707213@googlegroups.com>
+References: <83e77ebf-1996-47f9-adc8-9c2d40707213@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 18 May 2017 16:06:43 +0200
+Message-ID: <CAAxEZd8Q-Z0M=UL3FU1tc9rMf1Hfk5guj7PpT32uXYEJ2JTa7A@mail.gmail.com>
+Subject: Re: [wwwmake:422] Bib.TXT specifications
+To: wwwmake@googlegroups.com
+Cc: lars.willighagen@gmail.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+    Thanks for your interest in Bib.txt. Great news.
+
+First the two "easy" answers:
+
+Q: What whitespace is mandatory, and what isn't?
+
+   Whitespace are all optional except for newline to "break" name
+value pairs e.g.
+
+   author: J.W. Goethe
+   author:J.W. Goethe
+   author:     J.W. Goethe
+        author:     J.W. Goethe
+
+   is all the same.
+
+
+Q: Are trailing and/or leading spaces allowed in values?
+
+   Yes. Trailing and/or leading spaces get (auto-)trimmed/removed. See
+above - is always
+   "author" and "J.W. Goethe" in the end.  The idea is to be as
+"humany-friendly" as possible.
+
+
+The hard question:
+
+Q What about the publication type? Should I assume misc, or something else?
+
+  The default type is now book. I'd say for all other types the idea /
+suggestions is adding a type e.g.
+
+   type: Article
+
+   Maybe we can find something shorter (or more intuitive). Following
+the "Ruby and Perl" design philosophy - the idea is "there are many
+ways to do it", thus, alternative ways are (always) welcome.
+
+   Thanks again for your interest. Greetings from Vienna. Keep it up. Cheers.
+

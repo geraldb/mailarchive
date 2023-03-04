@@ -1,0 +1,95 @@
+From 2165629255680@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 1980007186432
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,eecf9b9926f54712
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.207.5 with SMTP id fw5mr10673846icb.20.1410072188917;
+        Sat, 06 Sep 2014 23:43:08 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.253.164 with SMTP id ab4ls1144295igd.43.canary; Sat, 06 Sep
+ 2014 23:43:08 -0700 (PDT)
+X-Received: by 10.50.43.196 with SMTP id y4mr174892igl.13.1410072188559;
+        Sat, 06 Sep 2014 23:43:08 -0700 (PDT)
+X-Google-Doc-Id: 71b71f307d6b141b
+X-Google-Web-Client: true
+Date: Sat, 6 Sep 2014 23:43:07 -0700 (PDT)
+From: Carl-Erik Svensson <csvenss2@gmail.com>
+To: opensport@googlegroups.com
+Cc: csvenss2@gmail.com
+Message-Id: <a49afb52-36cc-4075-84a4-23ae964deb8b@googlegroups.com>
+In-Reply-To: <CAAxEZd-6LhxRBnyJPZcPF4PUQ-nbS+FWr8X79RzLTAm2tCYeiA@mail.gmail.com>
+References: <CAAxEZd-6LhxRBnyJPZcPF4PUQ-nbS+FWr8X79RzLTAm2tCYeiA@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_10379_1134540335.1410072187374"
+X-Google-Token: EPv8r6AF8I_F7q5HMOs0
+X-Google-IP: 24.130.213.187
+
+------=_Part_10379_1134540335.1410072187374
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_10380_712108632.1410072187374"
+
+------=_Part_10380_712108632.1410072187374
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Gerald,
+
+I was looking at the stats format in football.db.ruby, and it seems kind of 
+difficult to parse:
+
+Name, Pos, Starts +SubIns, Saves [GK], GoalsConceded [GK], TotalGoals, 
+TotalShots (ShotsOnTarget), GoalAssists, FoulsCommitted-FoulsSuffered, 
+YellowCards/RedCards, Wins-Losses-Draws
+Sean Johnson,    GK,  19 +0, 53, 33, -,      -,  -,  0-2,  0y/0r, 0-0-0
+Greg Cochrane,   DF,  11 +0,  -,  -, 0,  4 (1),  2,  6-2,  2y/0r, -
+Quincy Amarikwa, FW,  15 +2,  -,  -, 6, 37 (15), 3, 33-45, 4y/1r, -
+
+If we are going the CSV route, why not give each stat its own column, and 
+keep the heading names closer to the field names?  I think stats lend 
+themselves to a stricter data format better than a schedule of games - what 
+do you think?
+
+--Carl
+
+On Sunday, August 10, 2014 11:35:35 PM UTC-7, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    Thanks for your patience. Good points. Thanks for the suggestions. 
+> I know still missing the stats reader in the addon - will try to add 
+> more code this weeks. Thanks for trying. Keep it up. Cheers. 
+>
+
+------=_Part_10380_712108632.1410072187374
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello Gerald,<div><br></div><div>I was looking at the stat=
+s format in football.db.ruby, and it seems kind of difficult to parse:</div=
+><div><br></div><div><div>Name, Pos, Starts +SubIns, Saves [GK], GoalsConce=
+ded [GK], TotalGoals, TotalShots (ShotsOnTarget), GoalAssists, FoulsCommitt=
+ed-FoulsSuffered, YellowCards/RedCards, Wins-Losses-Draws</div><div>Sean Jo=
+hnson, &nbsp; &nbsp;GK, &nbsp;19 +0, 53, 33, -, &nbsp; &nbsp; &nbsp;-, &nbs=
+p;-, &nbsp;0-2, &nbsp;0y/0r, 0-0-0</div><div>Greg Cochrane, &nbsp; DF, &nbs=
+p;11 +0, &nbsp;-, &nbsp;-, 0, &nbsp;4 (1), &nbsp;2, &nbsp;6-2, &nbsp;2y/0r,=
+ -</div><div>Quincy Amarikwa, FW, &nbsp;15 +2, &nbsp;-, &nbsp;-, 6, 37 (15)=
+, 3, 33-45, 4y/1r, -</div><div><br></div><div>If we are going the CSV route=
+, why not give each stat its own column, and keep the heading names closer =
+to the field names? &nbsp;I think stats lend themselves to a stricter data =
+format better than a schedule of games - what do you think?</div><div><br><=
+/div><div>--Carl</div><br>On Sunday, August 10, 2014 11:35:35 PM UTC-7, Ger=
+ald Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin=
+-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;Thanks for your patience. Good points. Thanks for the sugg=
+estions.
+<br>I know still missing the stats reader in the addon - will try to add
+<br>more code this weeks. Thanks for trying. Keep it up. Cheers.
+<br></blockquote></div></div>
+------=_Part_10380_712108632.1410072187374--
+
+------=_Part_10379_1134540335.1410072187374--
+

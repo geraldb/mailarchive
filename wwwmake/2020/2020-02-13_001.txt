@@ -1,0 +1,76 @@
+From 6792933247417319424@xxx Thu Feb 13 14:10:20 +0000 2020
+X-GM-THRID: 6792839354350829568
+Date: Thu, 13 Feb 2020 06:10:19 -0800 (PST)
+From: Nathan Wallach <taniwallach@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <0b1c50ef-7560-48bd-93a3-c8c8c70ae8b5@googlegroups.com>
+In-Reply-To: <CAAxEZd_C6dOYQ9Vf=KKD_7F3WzhuYFJu=ntCZpFL28bmdv8PkA@mail.gmail.com>
+References: <d17145b6-0ecc-4003-bb20-0d804511b412@googlegroups.com>
+ <CAAxEZd_C6dOYQ9Vf=KKD_7F3WzhuYFJu=ntCZpFL28bmdv8PkA@mail.gmail.com>
+Subject: Re: [wwwmake:468] pluto - issue reported on GitHub - error:
+ undefined method `to_time' for nil:NilClass
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2709_298419975.1581603020041"
+X-Google-Token: EMuxlfIFZMpKpt8sLeE0
+X-Google-IP: 132.68.115.60
+
+------=_Part_2709_298419975.1581603020041
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2710_2008947715.1581603020041"
+
+------=_Part_2710_2008947715.1581603020041
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Fix tested and it works... GitHub issue also updated.
+
+On Thursday, February 13, 2020 at 11:16:21 AM UTC+2, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    Thanks for trying pluto and thanks for the details error report and 
+> trying to find the template variable that breaks everything. 
+>
+>     Sorry I was breaking things while improving the feed machinery. 
+> Most (atom) feeds do NOT have a published date (but only an updated 
+> date). item.published no longer falls back to item.updated (only 
+> item.updated falls back to item.published). 
+>
+>      Anyways, long story short: The fix is to change item.published to 
+> item.updated. I have updated the starter template in the repo. Please, 
+> update and retry: Thank you again for reporting. 
+>
+>    Cheers. Prost. 
+>
+
+------=_Part_2710_2008947715.1581603020041
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Fix tested and it works... GitHub issue also updated.<br><=
+br>On Thursday, February 13, 2020 at 11:16:21 AM UTC+2, Gerald Bauer wrote:=
+<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;bor=
+der-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 =C2=A0Thanks for trying pluto and thanks for the details error r=
+eport and
+<br>trying to find the template variable that breaks everything.
+<br>
+<br>=C2=A0 =C2=A0 Sorry I was breaking things while improving the feed mach=
+inery.
+<br>Most (atom) feeds do NOT have a published date (but only an updated
+<br>date). item.published no longer falls back to item.updated (only
+<br>item.updated falls back to item.published).
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0Anyways, long story short: The fix is to change ite=
+m.published to
+<br>item.updated. I have updated the starter template in the repo. Please,
+<br>update and retry: Thank you again for reporting.
+<br>
+<br>=C2=A0 =C2=A0Cheers. Prost.
+<br></blockquote></div>
+------=_Part_2710_2008947715.1581603020041--
+
+------=_Part_2709_298419975.1581603020041--
+

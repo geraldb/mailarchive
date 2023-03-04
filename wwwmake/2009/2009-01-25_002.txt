@@ -1,0 +1,62 @@
+From 288018661376@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 285796728832
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,d61a16acd8afd09c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,UTF8
+Received: by 10.90.72.3 with SMTP id u3mr391857aga.26.1232921122891;
+        Sun, 25 Jan 2009 14:05:22 -0800 (PST)
+Return-Path: <sunaku@gmail.com>
+Received: from mail-gx0-f20.google.com (mail-gx0-f20.google.com [209.85.217.20])
+        by mx.google.com with ESMTP id 22si4305004yxr.13.2009.01.25.14.05.21;
+        Sun, 25 Jan 2009 14:05:21 -0800 (PST)
+Received-SPF: pass (google.com: domain of sunaku@gmail.com designates 209.85.217.20 as permitted sender) client-ip=209.85.217.20;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of sunaku@gmail.com designates 209.85.217.20 as permitted sender) smtp.mail=sunaku@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by gxk13 with SMTP id 13so4802400gxk.16
+        for <webslideshow@googlegroups.com>; Sun, 25 Jan 2009 14:05:21 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:in-reply-to:references
+         :date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=PHYYRtWzEJC8hufYFqU2OcEDJG5pqq7gExg9U0tg3lo=;
+        b=R4e6P5K9IqH33sq9oqNU8x8xDR0xLnE5zcv2Qm7977CWi2saFd4jsw5TTMyobHt69V
+         gDDEErWfGnC9rs14G1wtuvIA1NCNcQ84m95kl1ulzgvlgNj2tnYliJsFXPy1WE1YfcVw
+         1+DOba1slj438rZHGc61djeNr19r8SE8KkfNY=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        b=Zzu0sHrBx/0kympA36xHfU7N0yNMcdXp51m0QkF06FBDLmfBrnyze/9BrfwSE6SMLp
+         p9XnXxb3KC/4Nbqurp9SfEDNIySijNZJitf+vUr2vGfOfOQboWjJ5pdb8nuOJ9dAN+oE
+         Y32GUuwmj0KYaNs+r8da088iA+Ncv9nqPe7gI=
+MIME-Version: 1.0
+Received: by 10.65.235.7 with SMTP id m7mr2533421qbr.134.1232921121709; Sun, 
+	25 Jan 2009 14:05:21 -0800 (PST)
+In-Reply-To: <30f836e9-c1f5-4052-8552-5c1b5ab31ff5@e22g2000vbe.googlegroups.com>
+References: <30f836e9-c1f5-4052-8552-5c1b5ab31ff5@e22g2000vbe.googlegroups.com>
+Date: Sun, 25 Jan 2009 14:05:21 -0800
+Message-ID: <cfbcd2f00901251405k6d8a4ael2e1ed7efb9d66f4f@mail.gmail.com>
+Subject: Re: [slideshow] alternatives to maruku
+From: Suraj Kurapati <sunaku@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+dsanson wrote:
+> "Ask not [...] what you can do for your country."
+>
+> Maruku chokes on the [...], thinking it is a badly
+> defined link of some sort.
+
+You can escape (prefix with a backslash) the bracketed expressison in
+such cases:
+
+"Ask not \[...] what you can do for your country."
+
+# maruku --version
+Maruku 0.5.9
+
+# echo 'Ask not \[...] what you can do for your country.' | maruku
+<p>Ask not [&#8230;] what you can do for your country.</p>
+

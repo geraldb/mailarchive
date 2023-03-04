@@ -1,0 +1,63 @@
+From 2362060046336@xxx Tue Jun 16 00:16:42 +0000 2015
+X-GM-THRID: 2181341118464
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,db79862b51040cc
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.141.98 with SMTP id rn2mr2953360lbb.2.1419722889457;
+        Sat, 27 Dec 2014 15:28:09 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.203.226 with SMTP id kt2ls1932478lac.52.gmail; Sat, 27 Dec
+ 2014 15:28:08 -0800 (PST)
+X-Received: by 10.152.37.193 with SMTP id a1mr4649lak.3.1419722888663;
+        Sat, 27 Dec 2014 15:28:08 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x234.google.com (mail-wi0-x234.google.com. [2a00:1450:400c:c05::234])
+        by gmr-mx.google.com with ESMTPS id m5si1728939wiz.2.2014.12.27.15.28.08
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 27 Dec 2014 15:28:08 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::234 as permitted sender) client-ip=2a00:1450:400c:c05::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f180.google.com with SMTP id n3so19349688wiv.1
+        for <opensport@googlegroups.com>; Sat, 27 Dec 2014 15:28:08 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=/9IwgliwRGb8xAE0MtsU0g7dAOpQ9nIzUPaNsEgOj7I=;
+        b=tF6MRQFA+ot2+dc7wyIUGjJ/+/GNV19AAAaOp1J+D4tZUgIBOVb4qFLapIk6ruoZ5/
+         fDuk6b+EmzhjxzBlj5v+fsG205PLmvYKMF6hw2ZtDO4mpQXbVfJlbji6uwqLrIqkx7RC
+         LUlwqpEnQi6m9lSYJS2aLvAYDi69ew75BROWdqBTBoxfxyovXIGHkDIF1IeHZjjawC7k
+         9eVV1XG/sUNGBl2mZRqrPplR2OcD2lpLSRQZegHkWGN4ZgjBG2urK9YKXtDzHFXA7mPA
+         2G2gJAUt2yluqShDQz9F9ElnDFB1dq3DfLK3tJC+Z+nUXxj8Uza5cRRvUZXlFILOyGcQ
+         xujQ==
+MIME-Version: 1.0
+X-Received: by 10.194.90.10 with SMTP id bs10mr95848034wjb.43.1419722888565;
+ Sat, 27 Dec 2014 15:28:08 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Sat, 27 Dec 2014 15:28:08 -0800 (PST)
+In-Reply-To: <d45e8a72-7fde-4052-82a8-f02cbccd626e@googlegroups.com>
+References: <33e334d4-dbfe-42c3-9e6b-2c5f5ee7ba8b@googlegroups.com>
+	<CAAxEZd9z91skvCEVWUY_j6965_tc6fc=U2NS503UUQrH=ikWLQ@mail.gmail.com>
+	<d45e8a72-7fde-4052-82a8-f02cbccd626e@googlegroups.com>
+Date: Sun, 28 Dec 2014 00:28:08 +0100
+Message-ID: <CAAxEZd9gr0AzotvmCSNTWtkYC=SRw5=O-CDUu14Qez9VLXDEjA@mail.gmail.com>
+Subject: Re: [opensport] How to use the api?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+    It's all up to you. There are many options.
+
+   You can always rebuild your "local" database from the "offical"
+datasets on GitHub - assuming they got somehow updated since your last
+build. Not sure if this answers your question.
+
+   Cheers.
+

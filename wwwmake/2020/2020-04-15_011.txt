@@ -1,0 +1,156 @@
+From 6815769171351044096@xxx Wed Apr 15 03:05:23 +0000 2020
+X-GM-THRID: 6815540562521751552
+Date: Tue, 14 Apr 2020 20:05:23 -0700 (PDT)
+From: Joe Rodgers <joseph.rodgers@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <1b3ff423-24e4-427b-9b72-c1fed85b5ae3@googlegroups.com>
+In-Reply-To: <8f2ad5e3-b886-4ac8-bb60-eaab76e3c123@googlegroups.com>
+References: <e0988d6e-1f34-45e6-b256-231defffe529@googlegroups.com>
+ <CAAxEZd_7tJUKPMM6B5-Chb9woDzwGXy1xTAbcTiqvbuxcFMNZQ@mail.gmail.com>
+ <8f2ad5e3-b886-4ac8-bb60-eaab76e3c123@googlegroups.com>
+Subject: Re: [wwwmake:477] Are there any videos showing how to setup a new
+ planet rss site?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2105_667233422.1586919923115"
+X-Google-Token: EPPz2fQFoGyCRMaUAuQ0
+X-Google-IP: 76.125.83.191
+
+------=_Part_2105_667233422.1586919923115
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2106_490311325.1586919923115"
+
+------=_Part_2106_490311325.1586919923115
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+On Tuesday, April 14, 2020 at 10:03:48 PM UTC-5, Joe Rodgers wrote:
+>
+> I am unable to build the initial planet, not sure where I am getting this 
+> wrong.
+>
+> my github repository:
+> https://github.com/bitcoinwords/feedwords
+>
+>
+> Steps taken:
+> create repo on GitHub
+> clone repo with GitHub desktop
+> navigate to folder on local machine in cmd
+>
+> Run:
+> $ rails new .
+> $ gem install sqlite3
+> $ rails db:create 
+> $ gem install pluto
+> $ pluto build planet.ini -t starter -o build
+>
+> Here is the output from the planet build:
+> d:\GitHub\feedwords>pluto build planet.ini -t starter -o build
+> pluto/1.3.4 on Ruby 2.6.6 (2020-03-31) [x64-mingw32]
+> [info] db settings:
+> [info] {:adapter=>"sqlite3", :database=>"./planet.db"}
+>
+> *** error: No such file or directory @ rb_sysopen - planet.ini
+>
+> I should have included the pluto help output:
+>
+>
+d:\GitHub\feedwords>pluto help
+NAME
+    pluto - another planet generator (lets you build web pages from 
+published web feeds)
+
+SYNOPSIS
+    pluto [global options] command [command options] [arguments...]
+
+VERSION
+    1.3.4
+
+GLOBAL OPTIONS
+    -c, --config=PATH         - Configuration Path (default:
+                                C:/Users/josep/.pluto)
+    --help                    - Show this message
+    -q, --quiet, -w, --warn   - Only show warnings, errors and fatal 
+messages
+    --quieter, --err, --error - Only show errors and fatal messages
+    --verbose, --debug        - (Debug) Show debug messages
+    --version                 - Display the program version
+
+COMMANDS
+    about, a      - (Debug) Show more version info
+    build, b      - Build planet
+    fetch, f      - Fetch feeds
+    help          - Shows a list of commands or help for one command
+    install, i    - Install template pack
+    list, ls, l   - List installed template packs
+    merge, m      - Merge planet template pack
+    test          - (Debug) Show global options, options, arguments for test
+                    command
+    update, up, u - Update planet feeds 
+
+------=_Part_2106_490311325.1586919923115
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><br>On Tuesday, April 14, 2020 at 10:03:48 PM UTC-5, J=
+oe Rodgers wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margi=
+n-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"l=
+tr">I am unable to build the initial planet, not sure where I am getting th=
+is wrong.<div><br></div><div>my github repository:</div><div><a href=3D"htt=
+ps://github.com/bitcoinwords/feedwords" target=3D"_blank" rel=3D"nofollow" =
+onmousedown=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F=
+%2Fgithub.com%2Fbitcoinwords%2Ffeedwords\x26sa\x3dD\x26sntz\x3d1\x26usg\x3d=
+AFQjCNE8PvZFHUCZQpHtiYLYvRzuCuhjkw&#39;;return true;" onclick=3D"this.href=
+=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fbitcoinw=
+ords%2Ffeedwords\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNE8PvZFHUCZQpHtiYLY=
+vRzuCuhjkw&#39;;return true;">https://github.com/<wbr>bitcoinwords/feedword=
+s</a><br></div><div><br></div><div><br></div><div>Steps taken:</div><div><d=
+iv>create repo on GitHub</div><div>clone repo with GitHub desktop</div><div=
+>navigate to folder on local machine in cmd</div><div><br></div><div>Run:</=
+div><div>$ rails new .</div><div>$ gem install sqlite3</div><div>$ rails db=
+:create=C2=A0</div><div>$ gem install pluto</div><div>$ pluto build planet.=
+ini -t starter -o build</div></div><div><br></div><div>Here is the output f=
+rom the planet build:</div><div><div>d:\GitHub\feedwords&gt;pluto build pla=
+net.ini -t starter -o build</div><div>pluto/1.3.4 on Ruby 2.6.6 (2020-03-31=
+) [x64-mingw32]</div><div>[info] db settings:</div><div>[info] {:adapter=3D=
+&gt;&quot;sqlite3&quot;, :database=3D&gt;&quot;./planet.db&quot;}</div><div=
+><br></div><div>*** error: No such file or directory @ rb_sysopen - planet.=
+ini</div><div><br></div><div><blockquote class=3D"gmail_quote" style=3D"mar=
+gin:0;margin-left:0.8ex;border-left:1px #ccc solid;padding-left:1ex">I shou=
+ld have included the pluto help output:</blockquote></div></div></div></blo=
+ckquote><div><br></div><div>d:\GitHub\feedwords&gt;pluto help</div><div>NAM=
+E</div><div>=C2=A0 =C2=A0 pluto - another planet generator (lets you build =
+web pages from published web feeds)</div><div><br></div><div>SYNOPSIS</div>=
+<div>=C2=A0 =C2=A0 pluto [global options] command [command options] [argume=
+nts...]</div><div><br></div><div>VERSION</div><div>=C2=A0 =C2=A0 1.3.4</div=
+><div><br></div><div>GLOBAL OPTIONS</div><div>=C2=A0 =C2=A0 -c, --config=3D=
+PATH=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0- Configuration Path (default:</div><=
+div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 C:/Users/josep/.pluto)</div><div>=
+=C2=A0 =C2=A0 --help=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 - Show this message</div><div>=C2=A0 =C2=A0 -q, --quiet, -w,=
+ --warn=C2=A0 =C2=A0- Only show warnings, errors and fatal messages</div><d=
+iv>=C2=A0 =C2=A0 --quieter, --err, --error - Only show errors and fatal mes=
+sages</div><div>=C2=A0 =C2=A0 --verbose, --debug=C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ - (Debug) Show debug messages</div><div>=C2=A0 =C2=A0 --version=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0- Display the program v=
+ersion</div><div><br></div><div>COMMANDS</div><div>=C2=A0 =C2=A0 about, a=
+=C2=A0 =C2=A0 =C2=A0 - (Debug) Show more version info</div><div>=C2=A0 =C2=
+=A0 build, b=C2=A0 =C2=A0 =C2=A0 - Build planet</div><div>=C2=A0 =C2=A0 fet=
+ch, f=C2=A0 =C2=A0 =C2=A0 - Fetch feeds</div><div>=C2=A0 =C2=A0 help=C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 - Shows a list of commands or help for one comm=
+and</div><div>=C2=A0 =C2=A0 install, i=C2=A0 =C2=A0 - Install template pack=
+</div><div>=C2=A0 =C2=A0 list, ls, l=C2=A0 =C2=A0- List installed template =
+packs</div><div>=C2=A0 =C2=A0 merge, m=C2=A0 =C2=A0 =C2=A0 - Merge planet t=
+emplate pack</div><div>=C2=A0 =C2=A0 test=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ - (Debug) Show global options, options, arguments for test</div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 command<=
+/div><div>=C2=A0 =C2=A0 update, up, u - Update planet feeds=C2=A0</div></di=
+v>
+------=_Part_2106_490311325.1586919923115--
+
+------=_Part_2105_667233422.1586919923115--
+

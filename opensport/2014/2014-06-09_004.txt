@@ -1,0 +1,95 @@
+From 1134039138304@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1082367410176
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,137db175b4bdf381
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.183.11.102 with SMTP id eh6mr2150180obd.37.1402317254228;
+        Mon, 09 Jun 2014 05:34:14 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.28.195 with SMTP id 61ls1615731qgz.77.gmail; Mon, 09 Jun
+ 2014 05:34:14 -0700 (PDT)
+X-Received: by 10.140.95.141 with SMTP id i13mr407567qge.3.1402317254026;
+        Mon, 09 Jun 2014 05:34:14 -0700 (PDT)
+X-Google-Doc-Id: 47db99b6cc7331cd
+X-Google-Web-Client: true
+Date: Mon, 9 Jun 2014 05:34:13 -0700 (PDT)
+From: Joe Kampschmidt <jokecamp@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <15a70780-4ae7-4b4c-a783-f7230002b1f2@googlegroups.com>
+In-Reply-To: <CAAxEZd-aC1d2uHC5RGGk5DC4Tac42zRhRrBK+rNrm=XFsjahHw@mail.gmail.com>
+References: <bd2092ea-4215-4fee-a1ba-fff042faf536@googlegroups.com>
+ <CAAxEZd-aC1d2uHC5RGGk5DC4Tac42zRhRrBK+rNrm=XFsjahHw@mail.gmail.com>
+Subject: Re: [opensport] What kind of text format are you using?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_185_12341670.1402317253119"
+X-Google-Token: EMXT1pwFMdrkSF4vBc40
+X-Google-IP: 66.44.120.8
+
+------=_Part_185_12341670.1402317253119
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_186_28431704.1402317253121"
+
+------=_Part_186_28431704.1402317253121
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Your answers are helpful thank you. This gives me some ideas where to start 
+looking now. I think reading the parser code will be my starting point.
+
+I do plan on contributing I just want to make sure I'm using my time 
+effectively and not duplicating your efforts!
+
+Thanks,
+
+On Sunday, June 8, 2014 2:21:25 PM UTC-4, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>  Just a shorter answer if the first was too confusing. Sorry. 
+>
+> >Any plans to allow the sports db to import other formats like json or 
+> csv? 
+>
+>   It's an open source project. You're more than welcome to add a json 
+> or csv importer (in C# or whatever is your language of choice).  It's 
+> a great addition and welcome. You can see the "raw" database table 
+> schema [1] in the Ruby gem or, of course, download an SQLite copy [2] 
+> and browse the tables and schema w/ SQLite Studio (free, open-source 
+> single-exe tool) or similar to see it without the Ruby flavor. 
+>
+>  Cheers. 
+>
+> [1] github.com/sportdb/sport.db.ruby/blob/master/lib/sportdb/schema.rb 
+> [2] github.com/openfootball/build/releases 
+> [3] sqlitestudio.pl 
+>
+
+------=_Part_186_28431704.1402317253121
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Your answers are helpful thank you. This gives me some ideas where to start looking now. I think reading the parser code will be my starting point.<br><br>I do plan on contributing I just want to make sure I'm using my time effectively and not duplicating your efforts!<br><br>Thanks,<br><br>On Sunday, June 8, 2014 2:21:25 PM UTC-4, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp;Just a shorter answer if the first was too confusing. Sorry.
+<br>
+<br>&gt;Any plans to allow the sports db to import other formats like json or csv?
+<br>
+<br>&nbsp; It's an open source project. You're more than welcome to add a json
+<br>or csv importer (in C# or whatever is your language of choice). &nbsp;It's
+<br>a great addition and welcome. You can see the "raw" database table
+<br>schema [1] in the Ruby gem or, of course, download an SQLite copy [2]
+<br>and browse the tables and schema w/ SQLite Studio (free, open-source
+<br>single-exe tool) or similar to see it without the Ruby flavor.
+<br>
+<br>&nbsp;Cheers.
+<br>
+<br>[1] <a href="http://github.com/sportdb/sport.db.ruby/blob/master/lib/sportdb/schema.rb" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fsportdb%2Fsport.db.ruby%2Fblob%2Fmaster%2Flib%2Fsportdb%2Fschema.rb\46sa\75D\46sntz\0751\46usg\75AFQjCNHk8TljS1BXcJTw1TSc8x2KnnLcYQ';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fsportdb%2Fsport.db.ruby%2Fblob%2Fmaster%2Flib%2Fsportdb%2Fschema.rb\46sa\75D\46sntz\0751\46usg\75AFQjCNHk8TljS1BXcJTw1TSc8x2KnnLcYQ';return true;">github.com/sportdb/sport.db.<wbr>ruby/blob/master/lib/sportdb/<wbr>schema.rb</a>
+<br>[2] <a href="http://github.com/openfootball/build/releases" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fbuild%2Freleases\46sa\75D\46sntz\0751\46usg\75AFQjCNGxDlLc1ODuNmYWCPFR8TaFKv52kQ';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fbuild%2Freleases\46sa\75D\46sntz\0751\46usg\75AFQjCNGxDlLc1ODuNmYWCPFR8TaFKv52kQ';return true;">github.com/openfootball/build/<wbr>releases</a>
+<br>[3] <a href="http://sqlitestudio.pl" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fsqlitestudio.pl\46sa\75D\46sntz\0751\46usg\75AFQjCNFvmrhJNW4MFfgo1XTsbYcoGCQFJg';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fsqlitestudio.pl\46sa\75D\46sntz\0751\46usg\75AFQjCNFvmrhJNW4MFfgo1XTsbYcoGCQFJg';return true;">sqlitestudio.pl</a>
+<br></blockquote></div>
+------=_Part_186_28431704.1402317253121--
+
+------=_Part_185_12341670.1402317253119--
+

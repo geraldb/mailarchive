@@ -1,0 +1,65 @@
+From 2213236703232@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 2191112798208
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,6e2203b2d1a3da5d
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.184.197 with SMTP id ew5mr4830316lbc.0.1411418519603;
+        Mon, 22 Sep 2014 13:41:59 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.7.141 with SMTP id j13ls581014laa.5.gmail; Mon, 22 Sep
+ 2014 13:41:58 -0700 (PDT)
+X-Received: by 10.112.182.8 with SMTP id ea8mr769731lbc.11.1411418518737;
+        Mon, 22 Sep 2014 13:41:58 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x236.google.com (mail-we0-x236.google.com [2a00:1450:400c:c03::236])
+        by gmr-mx.google.com with ESMTPS id n6si87710wiv.0.2014.09.22.13.41.58
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 22 Sep 2014 13:41:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) client-ip=2a00:1450:400c:c03::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f182.google.com with SMTP id u57so1673602wes.41
+        for <opensport@googlegroups.com>; Mon, 22 Sep 2014 13:41:58 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=f6Zsr/oXR4l7WMzbFZ7QisvzQ7B6ahIITkn0L4rhalo=;
+        b=z1eyPnYHaflUzXuOcPutG9hgAulXrYyIIPRZETlI3s+kHcCDfCrxcFK9om1nrWU/e8
+         Nt6wUoPhQB+gmwLuPrp+OtbEHtbl3UiI4zII+RZAU7uozODfMqc+j1gjp+9I8rGY/Qlo
+         sEDeRQfrf2+IyzWGv6gFdsQBvXgomc+DGJcxsV3KU2cSUMch1x3iRxI8JdR7PDgH6hbd
+         ptJX6l04Tjv/SxtQ7AmMxCzbeYZD8xoaoZ+/27dqZvvDMVq6w8exApeut8b+klLaBDr7
+         6267WA8eSjUoOB9vTU9OqohHzLOtoxI0dK8sLeioq8p6TCGWbt85jXdlOplVxSzVfMrl
+         4jkw==
+MIME-Version: 1.0
+X-Received: by 10.180.188.70 with SMTP id fy6mr18183077wic.25.1411418518648;
+ Mon, 22 Sep 2014 13:41:58 -0700 (PDT)
+Received: by 10.216.205.135 with HTTP; Mon, 22 Sep 2014 13:41:58 -0700 (PDT)
+In-Reply-To: <03459ca9-5495-4527-b4fd-6f121163e49c@googlegroups.com>
+References: <e0e54bc5-9fcb-49fd-85db-4d8697d209a2@googlegroups.com>
+	<03459ca9-5495-4527-b4fd-6f121163e49c@googlegroups.com>
+Date: Mon, 22 Sep 2014 22:41:58 +0200
+Message-ID: <CAAxEZd-V=9LJ8QGOkDzi7T4z033ZLu=f37ZXbQb7ycdaFVFkjA@mail.gmail.com>
+Subject: Re: [opensport] Re: Rosters table empty
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+    Thanks. For your information: The squads / rosters only work for
+national teams for now, thus, it will only work for the world cup.
+
+    I'm currently working on the squads reader for football clubs.
+I've uploaded a first version today (Monday) but so far
+"out-of-the-box" no squads for football clubs are configured in any
+setups.   If you want to try the new squads reader you will need to
+use your own custom setup and build for now.
+
+  Cheers.
+

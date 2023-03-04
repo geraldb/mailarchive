@@ -1,0 +1,79 @@
+From 6261932973390561280@xxx Mon Mar 14 15:38:04 +0000 2016
+X-GM-THRID: 6261932974199013376
+X-Received: by 10.66.124.200 with SMTP id mk8mr18468780pab.27.1457969884279;
+        Mon, 14 Mar 2016 08:38:04 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.50.134.42 with SMTP id ph10ls872397igb.1.canary; Mon, 14 Mar
+ 2016 08:38:03 -0700 (PDT)
+X-Received: by 10.67.7.161 with SMTP id dd1mr18234404pad.41.1457969883855;
+        Mon, 14 Mar 2016 08:38:03 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x233.google.com (mail-io0-x233.google.com. [2607:f8b0:4001:c06::233])
+        by gmr-mx.google.com with ESMTPS id uw3si955557igb.1.2016.03.14.08.38.03
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 14 Mar 2016 08:38:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) client-ip=2607:f8b0:4001:c06::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x233.google.com with SMTP id g203so226378116iof.2
+        for <wwwmake@googlegroups.com>; Mon, 14 Mar 2016 08:38:03 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to;
+        bh=PS9BQMvndkbOIlCNo8oEOThahnlr+OW1MWJkHTkf9PQ=;
+        b=yDwMxGhxHlVIHpZLWX3mTqn63njs6fGPLtitnscfUfJKUoACrCfp6VRCQaWstFLHKs
+         X8shm0nN9DBsYMz7QZ4QWGYZyKHFlp22+qTIANWqf4/fRocVaSFEOL/dV12rCQ10KTc4
+         x27J2xfGYfqgj+Q0W/hGfVYzuFm50+IbzEt9l4Nm+X8b6KHyNWP206Kgo8EgmcARHcPa
+         XPLXTgUfiskqQd32dxtxX6MEMlaTwkmf/Pl1yyuJVTXdChrwsgP4W4GAjNjacMF34pvK
+         virBT1BsJefklnILSy9dwQg655BP1bDypPqApC0KtV0UOGs+1V5i6saSZn/3HbP9A6gU
+         dy7A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:date:message-id:subject:from:to;
+        bh=PS9BQMvndkbOIlCNo8oEOThahnlr+OW1MWJkHTkf9PQ=;
+        b=UqlqFrfu8YX4lBV4qoFa0LdscDhkh9AoqC4TtE4cOT2Afgy+b6/tVX3U3+NeoW2twb
+         cwb0HeK9NJAq4u577+0oxteX2FtWoPHMK5pUQ4VjKI8axe7EJmbZKdOZ9juztLjs7HP2
+         tuqC8mu9SGlMQL+9rOSOXUfcwYTe1zQc8qYHjCxM3Gqc1iyUN2OjK4veu0IKljCfYXgk
+         97xqgfdOG70e7QReKY2VMNT9GE5Q6/s9X9XLhxU9lFFTsNUWSN6U4bslMofu+8fnGlTf
+         wOcTs0baOEI0C4NQsoHH44+oMaPejT0mz6VSpQCRS42rJgBxXFLomUWTXpZJLsHSol6N
+         +blw==
+X-Gm-Message-State: AD7BkJIxNPhdvun/KrPibeOLHmBmUI31TqLUPJm1cvz8N5tDDorrU8aB21TiOxCXd69fM7vXv+tPuSpHjqN6Gg==
+MIME-Version: 1.0
+X-Received: by 10.107.46.34 with SMTP id i34mr27573318ioo.67.1457969883564;
+ Mon, 14 Mar 2016 08:38:03 -0700 (PDT)
+Received: by 10.107.133.217 with HTTP; Mon, 14 Mar 2016 08:38:03 -0700 (PDT)
+Date: Mon, 14 Mar 2016 16:38:03 +0100
+Message-ID: <CAAxEZd--vt-_HoSdZAQsU899gU9G7pb21F2x9p+039OdJ820HA@mail.gmail.com>
+Subject: The Zen of Page Designs - One Page (in Markdown), Many Designs - Add
+ Your Design / Theme
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've started a new sister project to the Zen of Book design series
+[1] called the Zen of Page Designs [2] that collects themes a.k.a.
+designs for markdown pages.
+
+ The first page designs in the series include:
+
+ * markedapp-byword [3]
+ * jasonm23-dark [4]
+
+ Know any other sources for styles for Markdown. Let us know.
+
+  Cheers.
+
+PS: Interested in Markdown news? Follow along the Manuscripts News [5]
+channel on twitter.
+
+[1] https://github.com/bookdesigns
+[2] https://github.com/pagedesigns
+[3] http://pagedesigns.github.io/markedapp-byword
+[4] http://pagedesigns.github.io/jasonm23-dark
+[5] https://twitter.com/manuscriptsnews
+

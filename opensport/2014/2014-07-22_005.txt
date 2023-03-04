@@ -1,0 +1,101 @@
+From 1683556925440@xxx Tue Jun 16 00:16:56 +0000 2015
+X-GM-THRID: 1591517118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.109.148 with SMTP id l20mr11582371icp.0.1406008983517;
+        Mon, 21 Jul 2014 23:03:03 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.164.131 with SMTP id yq3ls1997570igb.8.gmail; Mon, 21 Jul
+ 2014 23:03:03 -0700 (PDT)
+X-Received: by 10.50.138.69 with SMTP id qo5mr189381igb.7.1406008983176;
+        Mon, 21 Jul 2014 23:03:03 -0700 (PDT)
+X-Google-Doc-Id: cec10c2aca8252df
+X-Google-Web-Client: true
+Date: Mon, 21 Jul 2014 23:03:01 -0700 (PDT)
+From: Carl-Erik Svensson <csvenss2@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <c3e24314-de47-456d-bfd9-8973c1e1809f@googlegroups.com>
+In-Reply-To: <CAAxEZd_oN6Z5nKLG1-znCwf7W_yEhQ-yyns0jxr5KVepFCmKHw@mail.gmail.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+ <CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+ <3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+ <CAAxEZd9E7zgoReL0RprdZxXKLkBKvC5xVTNYUgFfsm02WZq=aQ@mail.gmail.com>
+ <16257216-0d9c-4d01-9f36-b00d26a612e2@googlegroups.com>
+ <CAAxEZd_oN6Z5nKLG1-znCwf7W_yEhQ-yyns0jxr5KVepFCmKHw@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_757_1506958889.1406008982071"
+X-Google-Token: EJX9t54FhqGUx1Wxi7I0
+X-Google-IP: 24.130.213.187
+
+------=_Part_757_1506958889.1406008982071
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_758_35914705.1406008982071"
+
+------=_Part_758_35914705.1406008982071
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks for the suggestions.  I like that model for NFL stats - it's very 
+clean.  I went ahead and made a few fields in the PlayerStat model to 
+represent the stats I've come across so far.  I kept the generic stats so 
+the feature is there for flexibility, and updated my fork of sport.db.  
+
+On Sunday, July 20, 2014 9:35:15 AM UTC-7, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>   No worries. Usually Austrians get mixed up with Australians (not 
+> much difference in spelling at least in English ;-) ). 
+>
+>   No worries about the plugin. I suggest keep going with your code and 
+> if you don't mind I copy it into a new repo as a plugin sometime next 
+> week (w/ Ruby it really should be easy - open classes, mixins, etc - 
+> should mostly just involve copying your new code to modules and 
+> classes etc.). 
+>
+>   For the stats fields I suggest just adding the fields you can think 
+> of now and actually use. You can always add more later if needed. 
+> Also do NOT worry about other sports. I suggest keeping the stats 
+> football only, and, thus, lets make it into a football stats plugin 
+> (footballdb-stats or sportdb-footy-stats or something).  Cheers. 
+>
+>
+> PS: Here's a great inspiration and project about American football 
+> stats, for example, 
+> [1] github.com/BurntSushi/nfldb/wiki/The-data-model 
+>
+
+------=_Part_758_35914705.1406008982071
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Thanks for the suggestions. &nbsp;I like that model for NFL stats - it's very clean. &nbsp;I went ahead and made a few fields in the PlayerStat model to represent the stats I've come across so far. &nbsp;I kept the generic stats so the feature is there for flexibility, and updated my fork of sport.db. &nbsp;<br><br>On Sunday, July 20, 2014 9:35:15 AM UTC-7, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; No worries. Usually Austrians get mixed up with Australians (not
+<br>much difference in spelling at least in English ;-) ).
+<br>
+<br>&nbsp; No worries about the plugin. I suggest keep going with your code and
+<br>if you don't mind I copy it into a new repo as a plugin sometime next
+<br>week (w/ Ruby it really should be easy - open classes, mixins, etc -
+<br>should mostly just involve copying your new code to modules and
+<br>classes etc.).
+<br>
+<br>&nbsp; For the stats fields I suggest just adding the fields you can think
+<br>of now and actually use. You can always add more later if needed.
+<br>Also do NOT worry about other sports. I suggest keeping the stats
+<br>football only, and, thus, lets make it into a football stats plugin
+<br>(footballdb-stats or sportdb-footy-stats or something). &nbsp;Cheers.
+<br>
+<br>
+<br>PS: Here's a great inspiration and project about American football
+<br>stats, for example,
+<br>[1] <a href="http://github.com/BurntSushi/nfldb/wiki/The-data-model" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2FBurntSushi%2Fnfldb%2Fwiki%2FThe-data-model\46sa\75D\46sntz\0751\46usg\75AFQjCNEiRpuWAZOFe-U5Ekpw3AZ_YFBB-Q';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2FBurntSushi%2Fnfldb%2Fwiki%2FThe-data-model\46sa\75D\46sntz\0751\46usg\75AFQjCNEiRpuWAZOFe-U5Ekpw3AZ_YFBB-Q';return true;">github.com/BurntSushi/nfldb/<wbr>wiki/The-data-model</a>
+<br></blockquote></div>
+------=_Part_758_35914705.1406008982071--
+
+------=_Part_757_1506958889.1406008982071--
+

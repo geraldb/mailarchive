@@ -1,0 +1,99 @@
+From 706453962752@xxx Tue Jun 16 00:17:06 +0000 2015
+X-GM-THRID: 700738174976
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,aaa9d8a28ff7fc8f
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.206.15 with SMTP id k15mr14421976yho.44.1400515497166;
+        Mon, 19 May 2014 09:04:57 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.83.50 with SMTP id i47ls1842880qgd.38.gmail; Mon, 19 May
+ 2014 09:04:54 -0700 (PDT)
+X-Received: by 10.140.19.102 with SMTP id 93mr27758qgg.31.1400515494575;
+        Mon, 19 May 2014 09:04:54 -0700 (PDT)
+X-Google-Doc-Id: f511c350593ad003
+X-Google-Web-Client: true
+Date: Mon, 19 May 2014 09:04:53 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <994effe9-4313-42ea-8e30-ae1f7da4676c@googlegroups.com>
+In-Reply-To: <efc379da-7636-4daa-87a8-fc412b27115c@googlegroups.com>
+References: <efc379da-7636-4daa-87a8-fc412b27115c@googlegroups.com>
+Subject: Re: WorldCup.db question related to final round.
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2917_2614603.1400515493844"
+X-Google-Token: EKXX6JsF0nwJyx0Z71E0
+X-Google-IP: 193.110.28.9
+
+------=_Part_2917_2614603.1400515493844
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2918_20896910.1400515493844"
+
+------=_Part_2918_20896910.1400515493844
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello Leonardo,
+
+  Saludos. Thanks for your interest in football.db.=20
+=20
+
+> I have some questions related to the final round. The most important is=
+=20
+> related to the match identification, for example how can we identify a=20
+> unique match? The JSON doesn't have an id, or groups position, or anythin=
+g=20
+> to identify them. I was researching about this problem, and I find a good=
+=20
+> way to solve it. Each match has a number id, this number is provided by=
+=20
+> FIFA and is unique. If we can add this property to match JSON response we=
+=20
+> can identify the match and we can relate all of brackets games.=20
+>
+> Let me know if you think this is a good idea and if it=E2=80=99s possible=
+ for you=20
+> to do it.
+>
+
+   Good points and good idea. Yes. the match number, group etc is. missing=
+=20
+and will get added..=20
+
+    Also something for matches for not-yet-defined-teams needs to get added=
+=20
+(brackets). Not sure yet what's a good way (e.g. use a brackets table or=20
+just add some new calc field to matches etc.)   Any ideas welcome. Cheers.=
+=20
+
+
+------=_Part_2918_20896910.1400515493844
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello&nbsp;Leonardo,<div><br></div><div>&nbsp; Saludos. Th=
+anks for your interest in football.db.&nbsp;</div><div>&nbsp;</div><div><bl=
+ockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border=
+-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr"><div>I have some=
+ questions related to the final round. The most important is related to the=
+ match identification, for example how can we identify a unique match? The =
+JSON doesn't have an id, or groups position, or anything to identify them. =
+I was researching about this problem, and I find a good way to solve it. Ea=
+ch match has a number id, this number is provided by FIFA and is unique. If=
+ we can add this property to match JSON response we can identify the match =
+and we can relate all of brackets games.&nbsp;</div><div><br></div><div>Let=
+ me know if you think this is a good idea and if it=E2=80=99s possible for =
+you to do it.</div></div></blockquote><div><br></div><div>&nbsp; &nbsp;Good=
+ points and good idea. Yes. the match number, group etc is. missing and wil=
+l get added..&nbsp;</div><div><br></div><div>&nbsp; &nbsp; Also something f=
+or matches for not-yet-defined-teams needs to get added (brackets). Not sur=
+e yet what's a good way (e.g. use a brackets table or just add some new cal=
+c field to matches etc.) &nbsp; Any ideas welcome. Cheers.&nbsp;</div><div>=
+<br></div><blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left:=
+ 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr"></d=
+iv></blockquote></div></div>
+------=_Part_2918_20896910.1400515493844--
+
+------=_Part_2917_2614603.1400515493844--
+

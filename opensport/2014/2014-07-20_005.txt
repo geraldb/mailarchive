@@ -1,0 +1,70 @@
+From 1655572529152@xxx Tue Jun 16 00:16:59 +0000 2015
+X-GM-THRID: 1591517118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.113.5.12 with SMTP id ci12mr95131lbd.14.1405839963994;
+        Sun, 20 Jul 2014 00:06:03 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.8.100 with SMTP id q4ls352014laa.63.gmail; Sun, 20 Jul
+ 2014 00:06:03 -0700 (PDT)
+X-Received: by 10.112.145.233 with SMTP id sx9mr1310219lbb.2.1405839963398;
+        Sun, 20 Jul 2014 00:06:03 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x233.google.com (mail-wg0-x233.google.com [2a00:1450:400c:c00::233])
+        by gmr-mx.google.com with ESMTPS id iz18si401189wic.3.2014.07.20.00.06.03
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 20 Jul 2014 00:06:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) client-ip=2a00:1450:400c:c00::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f51.google.com with SMTP id b13so5148605wgh.22
+        for <opensport@googlegroups.com>; Sun, 20 Jul 2014 00:06:03 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=BveuK+52fShipZu0KxyaN1KTvrXGM8OTxEHEvu+0+dQ=;
+        b=C43/sM19dgZ3E/OyC/KyNQvjr3N/9mLco0b3IA7GHqMsAOguwfrsArh/FcVV7sEnCP
+         noxzMpQURZuYNzUJAG6jtoHLWitx1ioLyLmulV7VPl5d1B2/1+LuTPVinoKUuHK2JTbv
+         9avU6V7fTuyTqOYNlzmdpUha3SI+Z1QwgrJG32AKWpBRV2qXEmIgPx0iVo176o/j3yNw
+         rr389lpk/+HxStiWxiXDxiGaRD67LO1UsQnGZWG86crCx2HZfmemi0S7sBO5GXpoM/6H
+         Jc0IgM79SZd/9gxt0K9znUmwTbh/KXn9E6C8H3zzTzL1GjYtepJaOlI1nYzwNgijdPPG
+         TpdQ==
+MIME-Version: 1.0
+X-Received: by 10.194.48.8 with SMTP id h8mr10268819wjn.106.1405839963272;
+ Sun, 20 Jul 2014 00:06:03 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Sun, 20 Jul 2014 00:06:03 -0700 (PDT)
+In-Reply-To: <3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+	<CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+	<3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+Date: Sun, 20 Jul 2014 09:06:03 +0200
+Message-ID: <CAAxEZd8EyGY7xS8Sofyee8Tn4k2yO0c4zGkeTw01oLhwkDvKjA@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Great stuff. If you don't mind I can assist you to make it into a
+plugin (e.g. sportdb-stats) - why? it keeps the stats code easier to
+maintain and extend and you do not need to track/maintain a a fork
+etc.     It's also easier to change and add code etc.
+
+   Cheers.
+
+> Oh, and congrats on that World Cup, too :)
+
+PS:  I'm actually Austrian - the national team, of course, did not
+make it to the finals (lost out against Sweden in the qualifiers and,
+of course, Germany).  Good news I can pick any of the 32 teams to
+cheer for.  I was cheering for Mexico and after the lose against the
+Netherlands - for Argentina, thus, I was not really amused by Germany
+winning ;-) Anyways, congrats to Germany.
+

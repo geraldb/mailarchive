@@ -1,0 +1,69 @@
+From 6288322875672756224@xxx Tue May 24 18:24:22 +0000 2016
+X-GM-THRID: 6288318359550296064
+X-Received: by 10.141.2.213 with SMTP id e204mr3361448qhd.21.1464114262462;
+        Tue, 24 May 2016 11:24:22 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.46.196 with SMTP id w62ls249493ota.15.gmail; Tue, 24 May
+ 2016 11:24:22 -0700 (PDT)
+X-Received: by 10.157.40.209 with SMTP id s75mr4057140ota.9.1464114262112;
+        Tue, 24 May 2016 11:24:22 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22d.google.com (mail-ig0-x22d.google.com. [2607:f8b0:4001:c05::22d])
+        by gmr-mx.google.com with ESMTPS id au8si585391igc.0.2016.05.24.11.24.22
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 24 May 2016 11:24:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) client-ip=2607:f8b0:4001:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ig0-x22d.google.com with SMTP id ww4so57397711igb.1
+        for <opensport@googlegroups.com>; Tue, 24 May 2016 11:24:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=hz5wor0qEpkMX97uHtlgmSwqI7vzxBEnxRYHmcI9ar4=;
+        b=LJpRhqkDdPD1U+YJ/t1a6NjIx8tgOmK16D+wqFgNPIKj0o7GXRyDDO3IhU14MfU7XV
+         fUsCuftOKEuPG/LoKXuKPYGDfcV2YeJpWXVDpcrNFWdwmf/it9QjxHMQrE5955MhJ9Dm
+         cdipKUge9cHkDqlPBnOGRSved6DuTIQyEaFp8obdUmAkNaGSjnJlJAAZhGEUC0OejsSB
+         yGVmwNJwqHtVp5TfF6bi8TSg3x0b1Ct5eJaNxWmuZhZHkNQMzGoTo4uTnfsOicqBiobE
+         KjVET1NfN5tB1oDw1TEqXDWdm0yeyfrFXiUBzNDNeZz9GkVkvzH7k3iDIc/EKUpFgolx
+         JLqQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=hz5wor0qEpkMX97uHtlgmSwqI7vzxBEnxRYHmcI9ar4=;
+        b=ArCJPLmNMIsy4TR/jai7RVdvUK41r0klTvItVcjz7HDBioaCWrc0ph3lFTtq2Az5DM
+         sTb/joVOyqOCheo8m0rWPSyvd/m/7+j7H703CNp8IjqUbTpJzk4u7s40FbfbWCeJtzCM
+         DIHlXDhOntZpzqK+BO4RF6uQ39kjReI8+EYZt+iY3z/lQn7hRSZMhVF/DtGMgITHxmqr
+         fez/NdyjikZdEkh+2MDcFErcRxAmVtcKvGGZw2NuHqGQq4wy0T7Dc4zQM6KeHjheSgml
+         M6HYVzkv3fOLkEYuNcHPrbZV23sSjIzEJwm1isWHb31dqojybbtFu55dQlmlAB1QJ17h
+         OM5A==
+X-Gm-Message-State: ALyK8tLpmQrCC3AmXLAeyLKvqlA6Yq46/ZBYUscnhZytrNIq9Y0wN7nnl6f4WPo2L2PjFqlxNnxbQWNSID59Rw==
+MIME-Version: 1.0
+X-Received: by 10.50.50.204 with SMTP id e12mr180771igo.86.1464114261850; Tue,
+ 24 May 2016 11:24:21 -0700 (PDT)
+Received: by 10.107.129.101 with HTTP; Tue, 24 May 2016 11:24:21 -0700 (PDT)
+In-Reply-To: <CAAxEZd9f9XpuJvC75VSrUt7Gt4wHwQW_AeCJfqN3qAfmdctoCA@mail.gmail.com>
+References: <62525b30-de0f-48b8-a7de-75c89df57b42@googlegroups.com>
+	<CAAxEZd-AXaerwu2iRYo7ZkFYFJQUC3DJB99J4KTyp6WLRJgXaQ@mail.gmail.com>
+	<CAAxEZd9f9XpuJvC75VSrUt7Gt4wHwQW_AeCJfqN3qAfmdctoCA@mail.gmail.com>
+Date: Tue, 24 May 2016 20:24:21 +0200
+Message-ID: <CAAxEZd-xNMHNeemHsWAL+5XMXe-oApYvyYBss12t3Agy+gBb0w@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_=5Bopensport=5D_Copa_Am=C3=A9rica_Centenario?=
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Yuriy,
+
+   One more thing: If you're new to the football.db a great way to
+start is the sport.db League Quick Starter Sample using the Mauritius
+Premier League [1]
+
+  Cheers.
+
+[1] https://github.com/sportkit/mu-mauritius
+

@@ -1,0 +1,72 @@
+From 1429430337536@xxx Tue Jun 16 00:16:56 +0000 2015
+X-GM-THRID: 1430201040896
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b16d5363f6cb3f7f,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.57.48 with SMTP id f16mr3343550wjq.2.1403953980681;
+        Sat, 28 Jun 2014 04:13:00 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.87.210 with SMTP id ba18ls190072lab.4.gmail; Sat, 28 Jun
+ 2014 04:12:59 -0700 (PDT)
+X-Received: by 10.152.203.199 with SMTP id ks7mr3359770lac.0.1403953979870;
+        Sat, 28 Jun 2014 04:12:59 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x231.google.com (mail-wi0-x231.google.com [2a00:1450:400c:c05::231])
+        by gmr-mx.google.com with ESMTPS id cj4si107597wid.0.2014.06.28.04.12.59
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 28 Jun 2014 04:12:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) client-ip=2a00:1450:400c:c05::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f177.google.com with SMTP id r20so3941040wiv.4
+        for <opensport@googlegroups.com>; Sat, 28 Jun 2014 04:12:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=nNlKexNEBQjw8l+n3xVBg1dooIjuE1wqLcglTA0o+HE=;
+        b=u27fVk7l5mE5fBU/V6wteo97sbcY81yR5QsCzz0w35y3FrFIou7bBDBtxOpZLZOsLW
+         xeONk7i2x9zkky3Ba+4st4ZMXUJW4kq5UG36Rn8jl/gqHLuedrC51zHf8gxap9VGube8
+         sAJibroWzjwQ8EVx75eir1zaKq2koDZc5mufDyel5ULJH6axsErLCIWzT0CV4BDVIYp6
+         mQThEIJVUjx2JKKJNz2qjb6jlGNTubFjkX8y4CaV5oc8epn3VV72YuLecIkDvFv/TAgJ
+         04lSL3+b3NbGUA6nySkofxWRhaknwEXNu7jaEy1c3aJyZ52LhrH1d+zlYkdumbZ0wj/G
+         RHnw==
+MIME-Version: 1.0
+X-Received: by 10.194.189.50 with SMTP id gf18mr32195612wjc.13.1403953979786;
+ Sat, 28 Jun 2014 04:12:59 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Sat, 28 Jun 2014 04:12:59 -0700 (PDT)
+Date: Sat, 28 Jun 2014 13:12:59 +0200
+Message-ID: <CAAxEZd_DtjsMb3n+sXPuBCohV7n7Wvk4HCh1NeMJi-heTOBOvQ@mail.gmail.com>
+Subject: sportdb update (v1.9.2) - Now Includes Match Goals Reader e.g. [Messi
+ 3', 45+1'] etc.
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+ FYI: I've uploaded a new sportdb version, that is, v1.9.2. What's new?
+
+  The sportdb reader now will add goals (plus auto-add missing
+players). All still a little rough but working without any (extra)
+configuration. Example:
+
+  (1) Thu Jun/12 17:00   Brazil 3-1 (1-1) Croatia       @ Arena de S=C3=A3o
+Paulo, S=C3=A3o Paulo (UTC-3)
+        [Neymar 29', 71' (pen.) Oscar 90+1';  Marcelo 11' (o.g.)]
+
+  Will add four goal records (see the table goals w/ fields such as
+player_id, team_id, minute, offset, score1, score2 etc.):
+
+  1 |   Marcelo  11'   (o.g.)   1-0   Croatia (Team 2)
+  2 |   Neymar   29'            1-1   Brazil  (Team 1)
+  3 |   Neymar   71'   (pen.)   2-1   Brazil  (Team 1)
+  4 |   Oscar    90'+1'         3-1   Brazil  (Team 1)
+
+  That's it. Enjoy the Brazil - Chile match today! Cheers.
+

@@ -1,0 +1,53 @@
+From 738082160640@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 721059577856
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,343485c5520b1088
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.90.71.17 with SMTP id t17mr8098024aga.3.1278976401695;
+        Mon, 12 Jul 2010 16:13:21 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.91.53.6 with SMTP id f6ls179268agk.4.p; Mon, 12 Jul 2010 
+	16:13:01 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.90.67.7 with SMTP id p7mr1954036aga.0.1278976374337; Mon, 12 
+	Jul 2010 16:12:54 -0700 (PDT)
+Received: by t10g2000yqg.googlegroups.com with HTTP; Mon, 12 Jul 2010 16:12:54 
+	-0700 (PDT)
+Date: Mon, 12 Jul 2010 16:12:54 -0700 (PDT)
+In-Reply-To: <deea554e-d198-4640-872a-332e5ff9a084@k39g2000yqb.googlegroups.com>
+X-IP: 80.123.32.191
+References: <deea554e-d198-4640-872a-332e5ff9a084@k39g2000yqb.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EPbC7uEE4YWp6vDvxhM0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.6) 
+	Gecko/20100628 Ubuntu/10.04 (lucid) Firefox/3.6.6,gzip(gfe)
+Message-ID: <d7c5dc42-b693-46af-b1a8-747daee88743@t10g2000yqg.googlegroups.com>
+Subject: Re: support for pandoc-ruby
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  Thanks for your support for the pandoc-ruby converter. I merged your
+changes into the trunk and added the following changes:
+
+  * Run all filters as usual (just exclude directives_percent_style
+and comments-percent-style for pandoc)
+  * Run post processing as usual (just break slides using div h1
+instead of plain h1)
+  * Changed PandocRuby to convert from :markdown to :html (no need for
+PandocRuby to break slides for S5; gets handled by S9 ;-) and works
+not just for S5 but for S6, Slidy, and others too)
+
+  I also pushed a new gem to RubyGems, that is, v0.9.3.   Just update
+and let me know if it works for you. My small tests on a Linux machine
+were all working including your s6clean template pack.
+
+   Thanks again for your efforts and for highlighting the pandoc-ruby
+library.  Cheers.
+
+PS: You can track all changes in this commit @
+http://github.com/geraldb/slideshow/commit/9be447ee3c580c6cbb213ac5e06b134981e97324
+

@@ -1,0 +1,113 @@
+From 6876850510283931648@xxx Sat Sep 26 17:32:10 +0000 2020
+X-GM-THRID: 6876848841287532544
+X-Received: by 2002:a2e:911:: with SMTP id 17mr3116312ljj.207.1601141530192;
+        Sat, 26 Sep 2020 10:32:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a19:554:: with SMTP id 81ls2161378lff.1.gmail; Sat, 26 Sep
+ 2020 10:32:08 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzd7CK7pGLdMV59OKl7Ithgm29He7wDFjFBmUfkyPD0BGYgOMmeTkvBtfcU5xVGuI9C6Y+Z
+X-Received: by 2002:ac2:5f50:: with SMTP id 16mr1573918lfz.420.1601141528326;
+        Sat, 26 Sep 2020 10:32:08 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601141528; cv=none;
+        d=google.com; s=arc-20160816;
+        b=OZtBCf7pXW3bID44SpcCKmLG/Zlc3Mh5cvgXOUmEJnFlThQ1ZIRmt77DarUjF5+LJE
+         M+8jZJr/zJdH0FScuy3kcyfexCqB/IDslePhQ/gjFWxaJD+brIBd10t9e/NLcdL6Di8Z
+         j6W9mJEjTAobP6haKYNzuC5vQOEoSn8vKobRMXMfw6P/KEMdc/LLI/1nZh+EdcvUnas2
+         NggbQ7pP40XoQsD4hnKGfbjS9jsjrTPGXcZkTDwdbPGtTZc505D4jdgU2wO0J2OVzJE1
+         YZQTfGu1eZIqKJZBIxZyodOJ06/XaHIOquTf2zd3NpzRiB8oI58whwQkppp8qPA6hS+e
+         OwBg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=G+b4ZwJl3yJwtzGGM6tC/l7bqyIcVrPtmXAi8Ow/p6g=;
+        b=TLg6VzxAxTQZuSYB1sfe/m5JA4GgeLeAFfVOU0mEVpOADT+ZFriNyKYyjse7yfXnte
+         QnxpefvQGexSSXo3xlNHj6Cbvcrkm1wUoRgbwzc5YZfElTtvugb2zUM7XbDR06nmUtLF
+         G6iUoElQv9dLAbI9yKJtUc9ikHXo2wfn9eo68T1xZ0uCJEBXLybzFyAbr8lK/ZwPUqd4
+         LZuBHlaKyTPTTRliEJVyULl35Ij6A87gKoqtaVZuWgbE85yazwu2W1fsJ1rTTL8HhRf7
+         goFyom1VWc/4ZtnXYrlBpW6VRVW3EJtq+RyjeZr6c3X/RpSr1p+Db4zSZKCHd9ZYNOvr
+         jP+A==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Ez0ACJwH;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::531 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ed1-x531.google.com (mail-ed1-x531.google.com. [2a00:1450:4864:20::531])
+        by gmr-mx.google.com with ESMTPS id e1si96673ljg.6.2020.09.26.10.32.08
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 26 Sep 2020 10:32:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::531 as permitted sender) client-ip=2a00:1450:4864:20::531;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Ez0ACJwH;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::531 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ed1-x531.google.com with SMTP id ay8so5723780edb.8
+        for <opensport@googlegroups.com>; Sat, 26 Sep 2020 10:32:08 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=G+b4ZwJl3yJwtzGGM6tC/l7bqyIcVrPtmXAi8Ow/p6g=;
+        b=Ez0ACJwHKUw7RHygXqr/t0PCvWAvSXzhrjzxs1PheikmVyMZn7AmqWrgThGmJlh60/
+         eTVLKIHCkay27+N67LxkRBJr7DW/FRF9zRxN6NMWJgTO95rBWhB2XgC29wVK7fwzOBlS
+         W5LTIF57/m0X81Ska+/iUl8rDcIk75t0JGfGsOxlw91oZbw71dIgQpJDvRw6LE4LXGsC
+         WI5xlIf2is9WsU3XCvjSBwhWfqa+5ChBDo2aFmU41avh0kt2sOBBLixm5PrC9GrHbWhw
+         3Qkexjc7K/K31pPTU8QjAmwmtuTVOV5y/yz8kKLgDKlaiz8utPWeun/iwDOSx2EjSf9a
+         eJ0w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=G+b4ZwJl3yJwtzGGM6tC/l7bqyIcVrPtmXAi8Ow/p6g=;
+        b=tyd7hqa/6aE9G6JMWDg+dj8dBJA4Zn87qeMnEZVmRXby4N/n54FzHnYSZtdoyLc4DA
+         azZp7a4kk9pGBIaE6xlYv79Md+tPTQvCRyKkOkE3TiSXnv1oHugioObLP5bxmAPXaXy/
+         G9ymY7X1MKJoVbbCp/bNoV4mwGzwaMsqfk5PrPMiu78wdHpjp2QmMH/cR9W6DMkN5zeQ
+         DaTA3tOHiRff9kyASPWSGKfh7Rta1LlZoT3+ccuMCkeZ88mIhTlcxPrKK2IVWNWLbmh9
+         f+2oEvb5PmAHdHkAk1Gv+0+mRnRRtGk3FGdaoZNOb5Mb8uEmutXvTG3+mBIT8A9W2ONF
+         9HGg==
+X-Gm-Message-State: AOAM53342+hc0KspQf886x/swnYsI8yh7U/sR3y9fbzT01EBoWltpALA
+	OaANCxvkEUMCf+xUPRAGpxzUu9zL0UtX8IZgUpJV464zXWGisA==
+X-Received: by 2002:a50:fb0e:: with SMTP id d14mr7913298edq.172.1601141527824;
+ Sat, 26 Sep 2020 10:32:07 -0700 (PDT)
+MIME-Version: 1.0
+References: <0519f99a-f7fa-41e0-b609-74aaa4a4452fn@googlegroups.com>
+In-Reply-To: <0519f99a-f7fa-41e0-b609-74aaa4a4452fn@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 26 Sep 2020 19:31:56 +0200
+Message-ID: <CAAxEZd8jzMcvGZFcovnM71=7KPAGJtoDLNy0NUOv5s4G15x8EA@mail.gmail.com>
+Subject: Re: [opensport] Permission to use code at https://github.com/openfootball/schema.sql
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Kris Stern,
+
+  Yes, of course you are more than welcome. Use as you please with no
+restrictions.  I added a public domain dedication / creative commons
+zero license (CC0).  Good luck. All the best. Cheers. Prost. Greetings
+from Vienna, Austria..
+
+
+
+El s=C3=A1b., 26 sept. 2020 a las 19:25, Kris Stern
+(<krisastern@gmail.com>) escribi=C3=B3:
+>
+> Hi,
+>
+> I am developing a Flask app for some fixture scheduling task for a non-pr=
+ofit organization in Hong Kong. I am wondering if it is okay for us to adap=
+t some code from the repo, as I do not see any licensing info anywhere with=
+in the repo. (I have a feeling it would be okay, but out of courtesy would =
+like to make sure.)
+>
+> Thanks,
+> Kris Stern
+>
+> --
+> You received this message because you are subscribed to the Google Groups=
+ "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an=
+ email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit https://groups.google.com/d/msgi=
+d/opensport/0519f99a-f7fa-41e0-b609-74aaa4a4452fn%40googlegroups.com.
+

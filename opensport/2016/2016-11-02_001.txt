@@ -1,0 +1,85 @@
+From 6348285061282922496@xxx Wed Nov 02 08:28:16 +0000 2016
+X-GM-THRID: 6348285061509414912
+X-Received: by 10.176.85.85 with SMTP id u21mr613533uaa.23.1478075296085;
+        Wed, 02 Nov 2016 01:28:16 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.33.22 with SMTP id i22ls4694037otb.6.gmail; Wed, 02 Nov
+ 2016 01:28:15 -0700 (PDT)
+X-Received: by 10.129.168.2 with SMTP id f2mr595044ywh.109.1478075295705;
+        Wed, 02 Nov 2016 01:28:15 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22c.google.com (mail-it0-x22c.google.com. [2607:f8b0:4001:c0b::22c])
+        by gmr-mx.google.com with ESMTPS id c34si1948392itd.1.2016.11.02.01.28.15
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 02 Nov 2016 01:28:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22c as permitted sender) client-ip=2607:f8b0:4001:c0b::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22c.google.com with SMTP id q124so22201612itd.1
+        for <opensport@googlegroups.com>; Wed, 02 Nov 2016 01:28:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=38llmraBwadbCyI6HVd99vvumWZ+/1V0g8nbryH5Olk=;
+        b=ooTkw6oBqsMHQvxM9pbrWhxd7MPuCayot9Um+0jm3r/tDqfdFkJIw2tGzjY9kQFjdc
+         258AXYdatYbkiTsS5wgqJ0cmSoAMl/STHNKSntXfK6t7ci7aLh0yU53RFyPkodKNWFZZ
+         vrfmkyGNQPFazwVv0ZoQOzpJIdlzlGYMZ44brObQDVvnF+A/UmTGxsmOU7t5rL/B9/n/
+         cecoWV1HWgW3RKsJ350OVUz8g7LVrZDxLUMt/5x9Uw6USEtMlpMc6lGXNNA4u1sKiKJC
+         lS/KIem6WJGM12MMLL/dEtuaf3tbPFEzbcIc+B9k2kELVqPWgnMmh2oes7H2YcXvE1mO
+         Smmw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=38llmraBwadbCyI6HVd99vvumWZ+/1V0g8nbryH5Olk=;
+        b=ZLQ49B2QAuewXxRKqR+Ly6TvLVcu02ujVQpQ23Hx80da9tz8o2G53Vvp4W/8VsvpEa
+         Kiqm7oVIBqWh4rKPsG54GkBZ1itkagTqDGex19zgHh58h13fI32ffGx33SI/R01MHXNP
+         p9Rge1TukMakmKrwsXcLipEOaAWeXsQHfu4kJSgNaAaftXytrkMAB7TFPjLcOhWVms+y
+         wqk+/M/90hBsuWe0JNggG49Jpr7PDvgSYgMqw2ZOI++x53YE0ekFtsKCmkboX/7Lkxnw
+         rf60odGW9w5AUkAUHzD6jH4gETAk8ezOaQ09RknogU5ewY0HgPkCtceFmT0lRxHZxo4k
+         Wl4Q==
+X-Gm-Message-State: ABUngve5q2p1F9pZosI/svYB0f0qsHQRUJheU5iqo10GX2wYlJO7vwycexei4W7dN/01TajqgEnutYpZZt/gKQ==
+X-Received: by 10.36.175.82 with SMTP id l18mr1781505iti.113.1478075295250;
+ Wed, 02 Nov 2016 01:28:15 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.131.210 with HTTP; Wed, 2 Nov 2016 01:28:14 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 2 Nov 2016 09:28:14 +0100
+Message-ID: <CAAxEZd9RHcwL+k+cSfrdgDgO8xUBYOAEfvaWHwvM77mCbkJJMA@mail.gmail.com>
+Subject: football.json and The Free Football Almanac Moved (to new orgs)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: If anyone follows along:
+
+  I've moved the generated football.json datasets to a new (GitHub)
+org, that is,
+  let's welcome opendata.json [1].
+
+  I've also moved the book-in-progress, that is,The Free Footbal
+Alamanac to its own (new) org, that is, let's welcome footballbook
+[2].
+
+  I've also started merging / consolidating all docs (e.g.
+build-shell, api, etc.) in the /docs repo [3].
+
+  And moved all build repos (auto, build) to the /yorobot [4] org to
+get some automatic daily, weekly, monthly buids going (in 2017).
+
+  Why? Why?
+
+  The idea is to keep the "core" openfootball org focused on football
+datasets and make it easier to get started (and by avoiding the
+confusion with too many included project and tool repos).
+
+   Questions? Comments? Welcome. Enjoy the beatiful game. Cheers.
+
+[1] https://github.com/opendatajson
+[2] https://github.com/footballbook
+[3] https://github.com/openfootball/docs
+[4] https://github.com/yorobot
+

@@ -1,0 +1,71 @@
+From 2604108087296@xxx Tue Jun 16 00:16:39 +0000 2015
+X-GM-THRID: 2606309048320
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,519355ab30d522d5,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.47.15 with SMTP id m15mr35712824icf.3.1429086377433;
+        Wed, 15 Apr 2015 01:26:17 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.163.69 with SMTP id yg5ls187658obb.1.gmail; Wed, 15 Apr
+ 2015 01:26:17 -0700 (PDT)
+X-Received: by 10.182.24.38 with SMTP id r6mr33894232obf.20.1429086377054;
+        Wed, 15 Apr 2015 01:26:17 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qk0-x229.google.com (mail-qk0-x229.google.com. [2607:f8b0:400d:c09::229])
+        by gmr-mx.google.com with ESMTPS id k6si555318qca.0.2015.04.15.01.26.17
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 15 Apr 2015 01:26:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::229 as permitted sender) client-ip=2607:f8b0:400d:c09::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qk0-x229.google.com with SMTP id 62so68239490qkx.0
+        for <opensport@googlegroups.com>; Wed, 15 Apr 2015 01:26:17 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=qy1J00KAoo9SlqP8h+nWB3gsuoGgvAde0lZ673ZhS90=;
+        b=eo+9Tjj4n5Jy/1H8aS9ZRJtrSiKc2sHCiROBLQ5Q1sr06ggdP9zLWqaN2iTSy8mzcc
+         TnXtjIw3Ish0sW4ir18hzWG98uzcbqOGxCuXYEGV0c+aA4y0BdPC9OZqVUFA/4ASzk0n
+         CiA5la73BUOnhWI2jkFVP9T7PIvLHOpNnhFIysd4TVog/PCWvMj8WibJYxsJr9G1bKxD
+         oPLpcBSB8pXbW0/3UH8NJ/MN9cVfcI/+FWa3Q0WK+GtG2qhgpAqOsikKWaqvH+ghCqg/
+         99P7bMAY5spxVm6W65YmhLSXy2c8n+hsyL/hTglQIU1xNpHFhZorj5bgu1h1FyoGvN/d
+         SrIg==
+MIME-Version: 1.0
+X-Received: by 10.55.31.85 with SMTP id f82mr48394959qkf.6.1429086376954; Wed,
+ 15 Apr 2015 01:26:16 -0700 (PDT)
+Received: by 10.229.5.6 with HTTP; Wed, 15 Apr 2015 01:26:16 -0700 (PDT)
+Date: Wed, 15 Apr 2015 10:26:16 +0200
+Message-ID: <CAAxEZd88-g87bNi4-3E38b2bJoiRDn0fwjSx-Ne_C5GzEZN72w@mail.gmail.com>
+Subject: football.db - New max.rb Datafile - 1000+ Teams, 10 000+ Matches,
+ 100+ Leagues
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  The new max.rb Datafile [1] lets you build a football.db with all
+open football data repos on GitHub with a single command that will 1)
+dowload all datasets (as zip archives), 2) create the SQLite database
+(and schema) and 3) read-in all datasets (from the zip archives), that
+is, try:
+
+  $ sportdb new max
+
+  If all works - try $ sportdb stats - and you will get:
+
+ 100 leagues  /  56 seasons
+ 77 events (league+season recs)  /  1470 rounds  /  133 groups
+ 1206 teams
+ 11001 games
+ 242  assocs|orgs
+ 200  grounds|stadiums
+
+   Still a little rough - if you try it out let us know how it goes. Cheers.
+
+[1] github.com/openfootball/datafile/blob/master/max.rb
+

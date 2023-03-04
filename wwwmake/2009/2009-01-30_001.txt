@@ -1,0 +1,58 @@
+From 375045226496@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 236181258240
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,b526c63f44a856c2
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.150.91.4 with SMTP id o4mr368398ybb.15.1233335437248; Fri, 30 
+	Jan 2009 09:10:37 -0800 (PST)
+Date: Fri, 30 Jan 2009 09:10:37 -0800 (PST)
+In-Reply-To: <ed32c49f0901281403l4e277dbfud868c7b1318cd5e9@mail.gmail.com>
+X-IP: 24.210.246.49
+References: <73274d3c-74bf-4ae0-b866-1593faebd6a0@n33g2000pri.googlegroups.com> 
+	<f0c9eb0e-b1f8-4e93-8f90-69d65da0f422@s9g2000prg.googlegroups.com> 
+	<dc8a84dd-8812-4deb-badf-3d2462a74eef@s9g2000prg.googlegroups.com> 
+	<6592a155-a315-49ac-9b45-f3646b77c0c2@p2g2000prn.googlegroups.com> 
+	<016db0ac-98ea-4e83-8f41-6abd33ed7afb@p23g2000prp.googlegroups.com> 
+	<3ba52c10-3d4d-4cf9-89f7-06a0cecadec5@i18g2000prf.googlegroups.com> 
+	<23133a06-7206-46c2-a05b-3fa81963a2e7@f40g2000pri.googlegroups.com> 
+	<fb09ceda-a333-416b-aa4e-46f6e303bf89@r36g2000prf.googlegroups.com> 
+	<455fee5a-0306-4ed9-9bc2-7bd60f205623@r10g2000prf.googlegroups.com> 
+	<ed32c49f0901281403l4e277dbfud868c7b1318cd5e9@mail.gmail.com>
+User-Agent: G2/1.0
+X-Google-Token: llecAwwAAABMXVqGGo9o4aJX0GgxBKUs
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; 
+	rv:1.9.0.6) Gecko/2009011912 Firefox/3.0.6,gzip(gfe),gzip(gfe)
+Message-ID: <3726455b-de00-45ac-8528-95cb242cb1c4@t39g2000prh.googlegroups.com>
+Subject: Re: Contribute
+From: Bruce <bdarcus.lists@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+
+
+On Jan 28, 5:03=A0pm, "Brolesi, Fogliarini" <brol...@gmail.com> wrote:
+
+> I want to know something: this kinds of slideshows has a Ruby source, rig=
+ht?
+
+Not exactly. All Ruby is doing in this case is taking some input files
+(textile, markdown, etc.) and templates and generating some output
+files (XHTML*, CSS, Javascript), so there's very little that should be
+specific to any particular language.
+
+> Is there a alternative to use it with another language, like PHP, for
+> example?
+
+This is one of the reasons I mentioned splitting slideshow and S6 into
+separate projects. So long as you have your XHTML slide file, you
+don't even need PHP (or Ruby, or whatever); just the Javascript and
+CSS (and maybe svg background file if you like).
+
+Bruce
+
+* Though I've noted it's actually not XHTML, since there's no default
+namespace on the root.
+

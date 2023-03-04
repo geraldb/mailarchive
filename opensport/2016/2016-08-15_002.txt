@@ -1,0 +1,124 @@
+From 6319151480175591424@xxx Mon Aug 15 20:15:07 +0000 2016
+X-GM-THRID: 6319151478389866496
+X-Received: by 10.129.5.216 with SMTP id 207mr22873486ywf.6.1471292106701;
+        Mon, 15 Aug 2016 13:15:06 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.14.68 with SMTP id n4ls8105279otd.32.gmail; Mon, 15 Aug
+ 2016 13:15:06 -0700 (PDT)
+X-Received: by 10.129.158.78 with SMTP id v75mr22167152ywg.56.1471292106283;
+        Mon, 15 Aug 2016 13:15:06 -0700 (PDT)
+Received: by 10.202.236.76 with SMTP id k73msoih;
+        Mon, 15 Aug 2016 12:42:09 -0700 (PDT)
+X-Received: by 10.36.237.193 with SMTP id r184mr120617ith.2.1471290129017;
+        Mon, 15 Aug 2016 12:42:09 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Mon, 15 Aug 2016 12:42:08 -0700 (PDT)
+From: jamie green <jam13g@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <3bc1224e-e12b-47d9-8f35-b635651acc5f@googlegroups.com>
+Subject: error when installing
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3943_1801167611.1471290128494"
+X-Google-Token: EJC2yL0FrRsQNRtJZzM0
+X-Google-IP: 86.145.126.78
+
+------=_Part_3943_1801167611.1471290128494
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3944_1388798868.1471290128494"
+
+------=_Part_3944_1388798868.1471290128494
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Im new to Ruby.
+
+i recieve the error: index name 'index_taggings_on_tag_id' on table 
+'taggings' already exists
+
+when i run the command: sportdb new en 
+
+This problem has been repeated on two machines
+
+please can you help me fix the problem?
+
+Specs: windows 8 Ruby 2.25 64 bit from rubyinstaller.org
+
+(if i run with ruby 2.3.1 i recieve the error 
+
+Could not load 'active_record/connection_adapters/sqlite3_adapter'. Make sure that the adapter in config/database.yml is valid. If you use an adapter other than 'mysql', 'mysql2', 'postgresql' or 'sqlite3' add the necessary adapter gem to the Gemfile.
+
+(copied from a similar error on stack exchange)
+
+indeed when the command gem install sportdb is run with 2.3.1 the first 
+line of output does not reference sqlite3 unlike 2.2.5) 
+
+thank you
+
+jamie 
+
+
+
+------=_Part_3944_1388798868.1471290128494
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi,<div><br></div><div>Im new to Ruby.</div><div><br></div=
+><div>i recieve the error: index name &#39;index_taggings_on_tag_id&#39; on=
+ table &#39;taggings&#39; already exists</div><div><br></div><div>when i ru=
+n the command: sportdb new en=C2=A0</div><div><br></div><div>This problem h=
+as been repeated on two machines</div><div><br></div><div>please can you he=
+lp me fix the problem?</div><div><br></div><div>Specs: windows 8 Ruby 2.25 =
+64 bit from rubyinstaller.org</div><div><br></div><div>(if i run with ruby =
+2.3.1 i recieve the error=C2=A0</div><div><br></div><div><pre class=3D"lang=
+-rb prettyprint prettyprinted" style=3D"padding: 5px; width: auto; max-heig=
+ht: 600px; overflow: auto; font-family: Consolas, Menlo, Monaco, &quot;Luci=
+da Console&quot;, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mono&quot;=
+, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, monospace,=
+ sans-serif; color: rgb(57, 51, 24); word-wrap: normal; background-color: r=
+gb(239, 240, 241);"><code style=3D"font-family: Consolas, Menlo, Monaco, &q=
+uot;Lucida Console&quot;, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mo=
+no&quot;, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, mo=
+nospace, sans-serif; white-space: inherit;"><span class=3D"typ" style=3D"co=
+lor: rgb(43, 145, 175);">Could</span><span class=3D"pln" style=3D"color: rg=
+b(48, 51, 54);"> </span><span class=3D"kwd" style=3D"color: rgb(16, 16, 148=
+);">not</span><span class=3D"pln" style=3D"color: rgb(48, 51, 54);"> load <=
+/span><span class=3D"str" style=3D"color: rgb(125, 39, 39);">&#39;active_re=
+cord/connection_adapters/sqlite3_adapter&#39;</span><span class=3D"pun" sty=
+le=3D"color: rgb(48, 51, 54);">.</span><span class=3D"pln" style=3D"color: =
+rgb(48, 51, 54);"> </span><span class=3D"typ" style=3D"color: rgb(43, 145, =
+175);">Make</span><span class=3D"pln" style=3D"color: rgb(48, 51, 54);"> su=
+re that the adapter </span><span class=3D"kwd" style=3D"color: rgb(16, 16, =
+148);">in</span><span class=3D"pln" style=3D"color: rgb(48, 51, 54);"> conf=
+ig</span><span class=3D"pun" style=3D"color: rgb(48, 51, 54);">/</span><spa=
+n class=3D"pln" style=3D"color: rgb(48, 51, 54);">database</span><span clas=
+s=3D"pun" style=3D"color: rgb(48, 51, 54);">.</span><span class=3D"pln" sty=
+le=3D"color: rgb(48, 51, 54);">yml is valid</span><span class=3D"pun" style=
+=3D"color: rgb(48, 51, 54);">.</span><span class=3D"pln" style=3D"color: rg=
+b(48, 51, 54);"> </span><span class=3D"typ" style=3D"color: rgb(43, 145, 17=
+5);">If</span><span class=3D"pln" style=3D"color: rgb(48, 51, 54);"> you us=
+e an adapter other than </span><span class=3D"str" style=3D"color: rgb(125,=
+ 39, 39);">&#39;mysql&#39;</span><span class=3D"pun" style=3D"color: rgb(48=
+, 51, 54);">,</span><span class=3D"pln" style=3D"color: rgb(48, 51, 54);"> =
+</span><span class=3D"str" style=3D"color: rgb(125, 39, 39);">&#39;mysql2&#=
+39;</span><span class=3D"pun" style=3D"color: rgb(48, 51, 54);">,</span><sp=
+an class=3D"pln" style=3D"color: rgb(48, 51, 54);"> </span><span class=3D"s=
+tr" style=3D"color: rgb(125, 39, 39);">&#39;postgresql&#39;</span><span cla=
+ss=3D"pln" style=3D"color: rgb(48, 51, 54);"> </span><span class=3D"kwd" st=
+yle=3D"color: rgb(16, 16, 148);">or</span><span class=3D"pln" style=3D"colo=
+r: rgb(48, 51, 54);"> </span><span class=3D"str" style=3D"color: rgb(125, 3=
+9, 39);">&#39;sqlite3&#39;</span><span class=3D"pln" style=3D"color: rgb(48=
+, 51, 54);"> add the necessary adapter gem to the </span><span class=3D"typ=
+" style=3D"color: rgb(43, 145, 175);">Gemfile</span><span class=3D"pun" sty=
+le=3D"color: rgb(48, 51, 54);">.</span></code></pre></div><div>(copied from=
+ a similar error on stack exchange)</div><div><br></div><div>indeed when th=
+e command gem install sportdb is run with 2.3.1 the first line of output do=
+es not reference sqlite3 unlike 2.2.5)=C2=A0</div><div><br></div><div>thank=
+ you</div><div><br></div><div>jamie=C2=A0</div><div><br></div><div><br></di=
+v></div>
+------=_Part_3944_1388798868.1471290128494--
+
+------=_Part_3943_1801167611.1471290128494--
+

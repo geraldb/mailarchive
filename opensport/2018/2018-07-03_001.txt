@@ -1,0 +1,92 @@
+From 6574090577697046528@xxx Tue Jul 03 20:29:01 +0000 2018
+X-GM-THRID: 6574089139036094464
+X-Received: by 2002:a0c:9dea:: with SMTP id p42-v6mr16473032qvf.27.1530649740811;
+        Tue, 03 Jul 2018 13:29:00 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a0c:9e23:: with SMTP id p35-v6ls10266537qve.11.gmail; Tue,
+ 03 Jul 2018 13:29:00 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgperzyvMNXLWTeOB5KvCavQNOY4N+SZKUlnIqPfrvcEbahXfEo3APnoyixyDrrhfSPC2BVsz
+X-Received: by 2002:a0c:c384:: with SMTP id o4-v6mr17426775qvi.51.1530649740191;
+        Tue, 03 Jul 2018 13:29:00 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1530649740; cv=none;
+        d=google.com; s=arc-20160816;
+        b=qRKRZ2/9+5pkyKpFvVUOeefPWKORzc75urcug2PP+pKG7HnC3SSrqYlsGYcOXXXJ4b
+         WR18CHEAMOqAFMsvaT0uJ74ZmMZnV5KeYKBG74EnoDiMrbmGEV78CMbuktHF80rPi3jk
+         fRr0qtU7tsSp4A5B5LGNu3XsZnLhWWwZ25in7cKVrBBdfCjC4ECNNHhfthqkIEF3rMyr
+         85S5ILueY3mWRACbN3j4a61QE74943lGD34nvghqgzbPYmUZdlbGt2dwma0lmFYZV9Kk
+         5/etsgcATMx7kJ6TngsCfNA/5Em+nmjj2VgL1lL+LpaeEXHt0FrwrjA2RhldNjcuNXV2
+         4Tfw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=w3reZM0YvbQO3E3FC7Aoneqf3AOJu/RFQ1WARbTRoJ8=;
+        b=tuIwejKVVwOmK8uprKocHPhZLjYo8V5oxgZQWeRHPovGVCXD6Yb6JEm78NfnRiQ+mj
+         Nf8P85twmxqgaMZW+vwZlumKk2OpKQG+UwI7z0jI99g/yvgi1C1C4hvFhtZT7FIj+kF4
+         Rd+HPRY5e+br7bnatTLM2uDGBcb06LCgzJZ7GBETNW6CubPVnsXvL3JA/q5qb33woly3
+         /eZMJR7TtCnH8JUHk3b5rZvzcOquOLJYnC/RTtFMLVZchqdYEL2OkUQa9hCtwnIVRYXV
+         Q3xrfePzG/jBpYHXjDzpWqwk9L7WswQPgXv3+vjzrid6aKu1ghwfwbpIKyfIDQ1CsAfF
+         tedw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="K/887E/g";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x230.google.com (mail-it0-x230.google.com. [2607:f8b0:4001:c0b::230])
+        by gmr-mx.google.com with ESMTPS id m12-v6si132049qkl.3.2018.07.03.13.29.00
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 03 Jul 2018 13:29:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) client-ip=2607:f8b0:4001:c0b::230;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="K/887E/g";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x230.google.com with SMTP id o5-v6so4924227itc.1
+        for <opensport@googlegroups.com>; Tue, 03 Jul 2018 13:29:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=w3reZM0YvbQO3E3FC7Aoneqf3AOJu/RFQ1WARbTRoJ8=;
+        b=K/887E/gtMrSWjVpidzGOa10V0ckZGyfWiNXglV/XDCirHVW5+BWTOLpP0y6dhadOR
+         ZTYa5Br9yg1xyRutVcfJRdDr01w0VWZrvh8MpcIxBcUpDoZwwT2rpzDLMSiejxeBOsUS
+         7yKut7+RbY0+q2VnnMc0uq9AcEcJVwQElTQCEihkwHVDlOHMMJWqqQOwZaSOTjRy/ayc
+         /mkvOcg+swXAfCEvHhui9rukQ2vvPounlMyyROWAMD2iK5HE0HB+qZZEj91GcbK80NRR
+         WPzOvDZt7Z/aVT8BGgNTQHIovjZTLj3dzNVt59RviNIS0cHbmJpfoyF7BPFADDJ1nf1M
+         3VUg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=w3reZM0YvbQO3E3FC7Aoneqf3AOJu/RFQ1WARbTRoJ8=;
+        b=Dd3lI6PsATC+vp3mmVBRWx1HYGQ3dRhRdbnNYCPFvVMswx9qOS1Pn3YaCKn1+qhc4j
+         17CagbZAOQYOtXMVVrep0CtAHAiC8tSrWtxVsV7LtAfq/FEvto+37nwFMRjveO9/I+05
+         q5Jm2y2ruj0IfYhETTCks4gRsTL633BUtiY8Y59ZRax9nnqCWKi1IRM0V6weW+xq1lBB
+         V2c5xTH/YeIu2+zBBUE7jVmAt40aZp4KKrma6O496UTlltMUn6GuZ2CKhjPtGbvBDF4h
+         0Elg0TUf4ZOWP3Qm32j8WeTE+iwnowh/0enHqcXWp8FzJIrE60/OJyZ4Zl0/FkX3++I6
+         TX7w==
+X-Gm-Message-State: APt69E284mTI4rJ+2lHvypu7Mq97OmAc3N1s9ycP80Vv5WRXUhjMz9Cz
+	QSyq9KsORZGHM94qE0/Al03xzkgTBFTssDFAqGQ=
+X-Received: by 2002:a24:d485:: with SMTP id x127-v6mr159513itg.82.1530649739637;
+ Tue, 03 Jul 2018 13:28:59 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a6b:d90:0:0:0:0:0 with HTTP; Tue, 3 Jul 2018 13:28:59 -0700 (PDT)
+In-Reply-To: <3f3f1bc5-54c2-4786-a9a6-e7f95e1c21b3@googlegroups.com>
+References: <3f3f1bc5-54c2-4786-a9a6-e7f95e1c21b3@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 3 Jul 2018 22:28:59 +0200
+Message-ID: <CAAxEZd8ovAdbPAMDjn9qjie3fOXtR+zWnpkfKqwZnS2QUrkENg@mail.gmail.com>
+Subject: Re: [opensport] Error loading the 'sqlite3' Active Record adapter
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Welcome to football.db.
+
+   Hard to tell why sqlite3 is missing. Maybe try reinstalling the
+sqlite3 gem on its own (to get the latest version), that is, type:
+
+   $  gem install sqlite3
+
+
+   And than retry.  Cheers. Prost.
+

@@ -1,0 +1,66 @@
+From 275487129600@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 277669216256
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,e4aae085c3c0df3b
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.68.17 with SMTP id r17mr17490187obt.26.1410194632684;
+        Mon, 08 Sep 2014 09:43:52 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.98.99 with SMTP id n90ls1866505qge.66.gmail; Mon, 08 Sep
+ 2014 09:43:52 -0700 (PDT)
+X-Received: by 10.140.19.104 with SMTP id 95mr17856qgg.32.1410194632334;
+        Mon, 08 Sep 2014 09:43:52 -0700 (PDT)
+X-Google-Doc-Id: 23025d0145eda02d
+X-Google-Web-Client: true
+Date: Mon, 8 Sep 2014 09:43:52 -0700 (PDT)
+From: Eckhard Licher <eckhard.licher@googlemail.com>
+To: openmundi@googlegroups.com
+Message-Id: <df9c0513-dd61-4365-a176-00fa220f3b04@googlegroups.com>
+Subject: openWordFactbook repo set up on github
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_73_1976857232.1410194632073"
+X-Google-Token: EMi5t6AFu_I1Bevb3N80
+X-Google-IP: 95.116.235.25
+
+------=_Part_73_1976857232.1410194632073
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_74_1319995487.1410194632073"
+
+------=_Part_74_1319995487.1410194632073
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+I just set up a new repo on github: 
+https://github.com/elicher/openWorldFactbook
+
+The initial upload contains just sanitized content (text in 2 formats, 
+graphics). The tools employed and such will be added over time. 
+
+The files in the repo are organized so that various formats can be derived 
+from the files in geos.md/ instantly, using pandoc 
+(http://johnmacfarlane.net/pandoc/), e.g. html, plain text, latex, epub and 
+MS Word's .docx (even the graphics are included). 
+
+More sophisticated results will be possible for everyone once the toolchain 
+is in place. As a preview 
+http://messetool.vdma.org/messetool/cal/view_static/en/index.md should 
+suffice. Thanks to the typesetting experience integrated into the LaTex 
+typesetting system the .pdfs are much more readable than the original .pdfs 
+...
+
+Enjoy
+
+
+------=_Part_74_1319995487.1410194632073
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<br><br>I just set up a new repo on github: https://github.com/elicher/openWorldFactbook<br><br>The initial upload contains just sanitized content (text in 2 formats, graphics). The tools employed and such will be added over time. <br><br>The files in the repo are organized so that various formats can be derived from the files in geos.md/ instantly, using pandoc (http://johnmacfarlane.net/pandoc/), e.g. html, plain text, latex, epub and MS Word's .docx (even the graphics are included). <br><br>More sophisticated results will be possible for everyone once the toolchain is in place. As a preview http://messetool.vdma.org/messetool/cal/view_static/en/index.md should suffice. Thanks to the typesetting experience integrated into the LaTex typesetting system the .pdfs are much more readable than the original .pdfs ...<br><br>Enjoy<br><br></div>
+------=_Part_74_1319995487.1410194632073--
+
+------=_Part_73_1976857232.1410194632073--
+

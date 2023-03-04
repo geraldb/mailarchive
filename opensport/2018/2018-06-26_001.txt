@@ -1,0 +1,111 @@
+From 6571218403806150656@xxx Tue Jun 26 02:43:30 +0000 2018
+X-GM-THRID: 6570890671237890048
+Date: Mon, 25 Jun 2018 19:43:30 -0700 (PDT)
+From: Aaron Gardner <yltlatl@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <d4090ce2-16fe-4905-95dc-46f752bac8c2@googlegroups.com>
+In-Reply-To: <CAAxEZd8zECWGN8JJAmaPh1jC+6-+jgt2o+8z8wuC+ibVJKVByA@mail.gmail.com>
+References: <ebef5d68-bab9-4c30-87f5-822b945473a2@googlegroups.com>
+ <CAAxEZd8zECWGN8JJAmaPh1jC+6-+jgt2o+8z8wuC+ibVJKVByA@mail.gmail.com>
+Subject: Re: [opensport] sportweb - tzinfo-data missing
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_38282_1946789418.1529981010617"
+X-Google-Token: ENLQxtkF4Nf8cPsz_4I0
+X-Google-IP: 104.222.153.50
+
+------=_Part_38282_1946789418.1529981010617
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_38283_1940027512.1529981010618"
+
+------=_Part_38283_1940027512.1529981010618
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks Gerald, that worked!
+
+On Monday, June 25, 2018 at 2:52:57 AM UTC-4, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    Thanks for trying sportweb and reporting the startup failure. 
+>
+> > I get error below about tzinfo-data missing. 
+> > I looked in the sportweb Gemfile 
+> (/var/lib/gems/2.5.0/gems/sportweb-0.1.0/Gemfile), and it is there. 
+> >  Any idea why I am getting this error and/or how to get around it? 
+>
+>     Sorry for the trouble I'm still kind of new to bundling rails apps 
+> in a command line gem. I haven't found any definite documentation 
+> (online) yet. 
+>
+>
+>     I changed in the Gemfile: 
+>
+>      # Windows does not include zoneinfo files, so bundle the tzinfo-data 
+> gem 
+>      gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby] 
+>
+> to just: 
+>
+>     gem 'tzinfo-data' 
+>
+>    That should fix it. For now the (bundled) Gemfile.lock is 
+> single-platform and cannot handle platforms: [:mingw, :mswin, 
+> :x64_mingw, :jruby].  No harm to include the tzinfo-data gem on 
+> unix/linux (it will get ignored) 
+>
+>    Please update to the latest (and greatest) sportweb v0.2.0 and retry. 
+>
+>    Cheers. Prost. Greetings from Vienna. 
+>
+
+------=_Part_38283_1940027512.1529981010618
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thanks Gerald, that worked!<br><br>On Monday, June 25, 201=
+8 at 2:52:57 AM UTC-4, Gerald Bauer wrote:<blockquote class=3D"gmail_quote"=
+ style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-=
+left: 1ex;">Hello,
+<br>
+<br>=C2=A0 =C2=A0Thanks for trying sportweb and reporting the startup failu=
+re.
+<br>
+<br>&gt; I get error below about tzinfo-data missing.
+<br>&gt; I looked in the sportweb Gemfile (/var/lib/gems/2.5.0/gems/<wbr>sp=
+ortweb-0.1.0/Gemfile), and it is there.
+<br>&gt; =C2=A0Any idea why I am getting this error and/or how to get aroun=
+d it?
+<br>
+<br>=C2=A0 =C2=A0 Sorry for the trouble I&#39;m still kind of new to bundli=
+ng rails apps
+<br>in a command line gem. I haven&#39;t found any definite documentation
+<br>(online) yet.
+<br>
+<br>
+<br>=C2=A0 =C2=A0 I changed in the Gemfile:
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0# Windows does not include zoneinfo files, so bundl=
+e the tzinfo-data gem
+<br>=C2=A0 =C2=A0 =C2=A0gem &#39;tzinfo-data&#39;, platforms: [:mingw, :msw=
+in, :x64_mingw, :jruby]
+<br>
+<br>to just:
+<br>
+<br>=C2=A0 =C2=A0 gem &#39;tzinfo-data&#39;
+<br>
+<br>=C2=A0 =C2=A0That should fix it. For now the (bundled) Gemfile.lock is
+<br>single-platform and cannot handle platforms: [:mingw, :mswin,
+<br>:x64_mingw, :jruby]. =C2=A0No harm to include the tzinfo-data gem on
+<br>unix/linux (it will get ignored)
+<br>
+<br>=C2=A0 =C2=A0Please update to the latest (and greatest) sportweb v0.2.0=
+ and retry.
+<br>
+<br>=C2=A0 =C2=A0Cheers. Prost. Greetings from Vienna.
+<br></blockquote></div>
+------=_Part_38283_1940027512.1529981010618--
+
+------=_Part_38282_1946789418.1529981010617--
+

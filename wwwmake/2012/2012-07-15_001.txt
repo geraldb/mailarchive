@@ -1,0 +1,69 @@
+From 1119504826368@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1120830226432
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,42e1fc3b624090c3,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.68.220.230 with SMTP id pz6mr6746006pbc.3.1342346595792;
+        Sun, 15 Jul 2012 03:03:15 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.68.191.225 with SMTP id hb1ls13237889pbc.4.gmail; Sun, 15 Jul
+ 2012 03:03:15 -0700 (PDT)
+Received: by 10.68.223.73 with SMTP id qs9mr6729663pbc.7.1342346595077;
+        Sun, 15 Jul 2012 03:03:15 -0700 (PDT)
+Received: by 10.68.223.73 with SMTP id qs9mr6729662pbc.7.1342346595069;
+        Sun, 15 Jul 2012 03:03:15 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-pb0-f47.google.com (mail-pb0-f47.google.com [209.85.160.47])
+        by gmr-mx.google.com with ESMTPS id vj10si2440551pbc.0.2012.07.15.03.03.15
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Sun, 15 Jul 2012 03:03:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.160.47 as permitted sender) client-ip=209.85.160.47;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.160.47 as permitted sender) smtp.mail=gerald.bauer@gmail.com; dkim=pass header.i=@gmail.com
+Received: by pbbrq2 with SMTP id rq2so7556800pbb.6
+        for <webslideshow@googlegroups.com>; Sun, 15 Jul 2012 03:03:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=jueoOuWktJftO2A9tXdhiSdwuXbhahsH10WtZkEVRDg=;
+        b=aZfPVMkfomzgrU0MjEeywSsstc/3wXD8yIV+M/UgLumNfIKvZhR6DwlDOKygPrVBc5
+         S1ms46kcK7bN2+7/HGtuR5hCMGjgGLnMy10uzb2EfbTiyB/UD0/zf6TGh0695mAV+crK
+         Tl+SYeKiQnJhwUnVgNJdhGHXiPKKzjZqKVfFZcUg50+jPxRSpKTgV9pDyIAvcw8teJvp
+         SYI639uDh/nhuRBKDAY1ZwVHlO4uqAXfPCQJU80DvOcWqR73pUj9HwerQQ1BkHYADzmq
+         UgBPbrZtQsbK5XdnrcsOpoZqabhRJa2cWu/SEqooE47jcjCf086M0m7mAQxCN6CvsSHs
+         QPlA==
+MIME-Version: 1.0
+Received: by 10.68.195.102 with SMTP id id6mr17831366pbc.120.1342346594781;
+ Sun, 15 Jul 2012 03:03:14 -0700 (PDT)
+Received: by 10.68.40.164 with HTTP; Sun, 15 Jul 2012 03:03:14 -0700 (PDT)
+Date: Sun, 15 Jul 2012 12:03:14 +0200
+Message-ID: <CAAxEZd8YEx--TfN4TuiiSiAnTPXoxw1cJRdhMjhQ3XE_N2nF+g@mail.gmail.com>
+Subject: Google I/O 2012 HTML5 Slide Template Open Sourced
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  Eric Bidelman - a Google Chrome developer - has open sourced this
+year's HTML5 slide template used for Google I/O 2012 conference
+presentations [1].
+
+   The template sources reside @ http://code.google.com/p/io-2012-slides
+
+   For the I/O Show Eric Bidelman also put together a slide deck
+titled "The Web Can Do That!? Adventures Into HTML5"
+
+   The live demo slides reside @ http://www.htmlfivecan.com
+
+   Bonus question: Anyone interested in bundling up the template for
+letting you author your slides in Markdown or Textile?
+
+   Cheers.
+
+[1] https://plus.google.com/u/0/118075919496626375791/posts/LG93tTdJYLy
+[2] https://github.com/ebidel/html5can - Source
+

@@ -1,0 +1,78 @@
+From 6761385441892499456@xxx Wed Nov 20 13:48:45 +0000 2019
+X-GM-THRID: 6761385442580365312
+X-Received: by 2002:a25:9202:: with SMTP id b2mr1955489ybo.279.1574257724807;
+        Wed, 20 Nov 2019 05:48:44 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a81:a046:: with SMTP id x67ls259076ywg.1.gmail; Wed, 20 Nov
+ 2019 05:48:43 -0800 (PST)
+X-Received: by 2002:a0d:db90:: with SMTP id d138mr1574578ywe.491.1574257723939;
+        Wed, 20 Nov 2019 05:48:43 -0800 (PST)
+Received: by 2002:a81:dd04:0:0:0:0:0 with SMTP id e4msywn;
+        Wed, 20 Nov 2019 03:41:41 -0800 (PST)
+X-Google-Smtp-Source: APXvYqxgmiKPGBAWhmTffSI+aUL06IMNJVk0wKzW+OwUwiI/DEVfY3n53AQDMLhkBQyoIIEMb4l0VfZi0w==
+X-Received: by 2002:a25:d4c1:: with SMTP id m184mr378255ybf.501.1574250101206;
+        Wed, 20 Nov 2019 03:41:41 -0800 (PST)
+X-Google-Web-Client: true
+Date: Wed, 20 Nov 2019 03:41:40 -0800 (PST)
+From: dubbySwords <swords.declan@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <f28a0038-ece4-40eb-8a23-3fa568c09a50@googlegroups.com>
+Subject: newby football.db .\start.rb
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2226_88672866.1574250100988"
+X-Google-Token: EPTM1O4Fmtmret9XH-E0
+X-Google-IP: 95.192.0.35
+
+------=_Part_2226_88672866.1574250100988
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2227_181079206.1574250100988"
+
+------=_Part_2227_181079206.1574250100988
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi!
+First thanks for what seems like a great project..
+Im having difficulty getting off  the ground with footboll.db which I 
+cloned.
+After installing ruby on windows I give the following:
+$ ruby ./setup.rb
+
+results in:
+
+Traceback (most recent call last):
+        2: from ./setup.rb:4:in `<main>'
+        1: from 
+C:/Ruby26-x64/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb
+:54:in `require'
+C:/Ruby26-x64/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in 
+`require'
+: cannot load such file -- gitti (LoadError)
+
+I've no idea what gitti can be :-(
+
+Any help greatly appreciated.
+D
+
+
+------=_Part_2227_181079206.1574250100988
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi!<br>First thanks for what seems like a great project..<=
+div>Im having difficulty getting off=C2=A0 the ground with footboll.db whic=
+h I cloned.</div><div>After installing ruby on windows I give the following=
+:</div><div>$ ruby ./setup.rb<br></div><div><br></div><div>results in:</div=
+><div><br></div><div><div>Traceback (most recent call last):</div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 2: from ./setup.rb:4:in `&lt;main&gt;&#39;</div><d=
+iv>=C2=A0 =C2=A0 =C2=A0 =C2=A0 1: from C:/Ruby26-x64/lib/ruby/2.6.0/rubygem=
+s/core_ext/kernel_require.rb</div><div>:54:in `require&#39;</div><div>C:/Ru=
+by26-x64/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require&=
+#39;</div><div>: cannot load such file -- gitti (LoadError)</div></div><div=
+><br></div><div>I&#39;ve no idea what gitti can be :-(</div><div><br></div>=
+<div>Any help greatly appreciated.</div><div>D</div><div><br></div></div>
+------=_Part_2227_181079206.1574250100988--
+
+------=_Part_2226_88672866.1574250100988--
+

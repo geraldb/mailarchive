@@ -1,0 +1,100 @@
+From 6826630933591883776@xxx Thu May 14 09:34:35 +0000 2020
+X-GM-THRID: 6826112277555445760
+X-Received: by 2002:adf:ec87:: with SMTP id z7mr4791750wrn.149.1589448874279;
+        Thu, 14 May 2020 02:34:34 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a1c:1d89:: with SMTP id d131ls3474897wmd.0.gmail; Thu, 14
+ May 2020 02:34:33 -0700 (PDT)
+X-Google-Smtp-Source: APiQypL7IRUqsGRrGBI5ek3B1q2ADp8R8wda+4O3tBQ1IFfHsmp3JYB/rZA0Kt5G9EFPevzXi8OK
+X-Received: by 2002:a1c:f609:: with SMTP id w9mr47214523wmc.123.1589448873097;
+        Thu, 14 May 2020 02:34:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1589448873; cv=none;
+        d=google.com; s=arc-20160816;
+        b=wWdxQ5s9yMwbRnlQnZXXLVlMtkrYHvw1U+yxUYAzyxWFBv4mQLEhqFSxAKpcPClpLA
+         ogpvK1Ue2xmHjYQpoauiiVVVJkT8rEREiD8j2d5LTR3JjldfxqSAQ4rVjWbMO5Bsz8uJ
+         +jA2Mh8giaSA4AV2nWQX4pm+DSfSEo6YRAhZOlfo9fQREl8MbSS9Rzs0G7jzboKStYLB
+         y5Yz4UMjlr9SLCOvnCqxPdmqISuruydvdyC1ZN6EClsBhMd9dFwsq5WfZ+WNSgG7Y5qq
+         jXBxaUPiUFn9gcKm2M9SNP61q1enJ7N4c+1WIRMOTszTWFfMAGrSokezBvqVqMleHael
+         GPtw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=USfsdx4e/ewThkmZFfgGjtrTjBo6IMXBQFAKAoClKhk=;
+        b=ww2ULrzPPPrbZsjapKGWDW8MSWLTbvBSlemJiahaw+lqv7Hxx+a5LOBO+vx0ZKGN5L
+         cvG3JhykOrzWP5rB0txp4y81E5zmZ3opondwIaE+nyqiv62rzFcYsM4FoRjzypjre31t
+         qp7LneM+X5jdNzZGDwi+oQe9kpm0DACBFpWoreJpW2IBctQ+2vbvJ1eiogyKK7wAR1yi
+         d/RFepE/CRXU7clG5QzXT8oEB5bdr/PtiMiJEacD4uczqxNfTG6+Qt/2a6wPftyC1ek1
+         C0VRBvtohtnj5qPV5OSuOTbBGiGdG3aWxX8cXoCyqDrTK+iM8xUIZQMWShCxS57KZ9Rq
+         JvOw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Ltvb0vP0;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::144 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x144.google.com (mail-lf1-x144.google.com. [2a00:1450:4864:20::144])
+        by gmr-mx.google.com with ESMTPS id a2si131972wrv.4.2020.05.14.02.34.33
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 14 May 2020 02:34:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::144 as permitted sender) client-ip=2a00:1450:4864:20::144;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Ltvb0vP0;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::144 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x144.google.com with SMTP id h188so1293010lfd.7
+        for <wwwmake@googlegroups.com>; Thu, 14 May 2020 02:34:33 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=USfsdx4e/ewThkmZFfgGjtrTjBo6IMXBQFAKAoClKhk=;
+        b=Ltvb0vP0//ExpLsqto7o1C1IRlsyK6Jvsh5W7lkYgaaK6pCpNbOpr+rlWBhY4vBIwq
+         fAjhRVQy2F+LNB7ol5rNATbf+KCrWmNDO3BwMhxzxApQ4ieHk9HK6nOOsWWhHBljH8sN
+         BTfwpIbsmjoBo/B1on7+nlCNE9oFvCogCnatsp0l5XEu5Akqk4PJSsmHVWjJMdBeciXA
+         uZEGj2bqjwg1vLKknNXxBonepR/luCE+aKsuRezHHaUIhTUPfI6BWsfueHZvUFFYxSQb
+         Zhu6pYyWmcmDVcNZSUQbYQLn5DAFwtxbBRNo2TeSpZ+Vv2jW8h+6Am4JzCLBoYp3L8eQ
+         eLsw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=USfsdx4e/ewThkmZFfgGjtrTjBo6IMXBQFAKAoClKhk=;
+        b=gSzQmxjDH8OiOKFcznVM/F/aLPoGLsGp0XnHCaFqPuZfHPA1kjG+gxuEFkVEtZARiq
+         gC8Bv2XUShwhCoUiNH/KxcYLykV7IYQzOZl9pvNMATvEb2wIavRfKkhZfjMt5vPhtIjZ
+         Jw/nJP1BmMEnOijkGhc+robbCuhCxb6MuZ7ETkkeMKXSJnQfngYU8HS5bRTltKrULTfD
+         EMbblPKJSk3ZEIuFrE0uu4nAdFQeb0tdRk31HryWL8rbLWRYMzXWNtnPnYZHw7mZY3gt
+         pjA2XPlp5YB61v6ZgTPBC5pXw+nwKXEp99+tGx5cYpVDsA6ijvEAWFT2po5CUGxgo39B
+         SUtw==
+X-Gm-Message-State: AOAM531NGvOWW83o9EZcLf9By4G/iN9HGZNDiaW0uyL54wl7Tg8QBfw1
+	tzZAhE4dt1wzjQD+t+tQSOPHDgkA0cjAFJ+Ayt3Rd0Dv
+X-Received: by 2002:a05:6512:53a:: with SMTP id o26mr2712249lfc.111.1589448872274;
+ Thu, 14 May 2020 02:34:32 -0700 (PDT)
+MIME-Version: 1.0
+References: <9d686d6a-a61a-473e-b193-a5ec694645df@googlegroups.com>
+In-Reply-To: <9d686d6a-a61a-473e-b193-a5ec694645df@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 14 May 2020 11:34:21 +0200
+Message-ID: <CAAxEZd9yqiTPJ4JwpfHx3zqvZV8vy8N9e332TOSZa1mpP3cf1w@mail.gmail.com>
+Subject: Re: [wwwmake:500] Trying to filter microblogs from pluto output
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+    First thanks for sharing the GitHub Action recipe / setup. Love it!
+
+     About filtering (micro) posts, that is, feed items -  if you know
+some ruby scripting / programming (and some SQL for database queries)
+than you can do everything in your templates since the use ERB (that
+is, embedded ruby).
+
+     Unfortunately - I don't know any micropost example I can point
+you  but checking if the title is empty (or blank?) looks like a good
+way to filter e.g. use something like
+
+   <% if item.title.blank? %>
+    ....   assume (micro) post
+   <% else %>
+    ...   assume standard / regular post
+   <% end %>
+
+     Not sure if this helps. Good luck. Cheers. Prost.
+

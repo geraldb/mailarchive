@@ -1,0 +1,61 @@
+From 6334236075895029760@xxx Sun Sep 25 11:51:02 +0000 2016
+X-GM-THRID: 6334235709986045952
+X-Received: by 10.66.79.199 with SMTP id l7mr3555414pax.42.1474804262163;
+        Sun, 25 Sep 2016 04:51:02 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.158.193 with SMTP id h184ls7617014ioe.33.gmail; Sun, 25
+ Sep 2016 04:50:59 -0700 (PDT)
+X-Received: by 10.36.233.196 with SMTP id f187mr3221126ith.40.1474804259553;
+        Sun, 25 Sep 2016 04:50:59 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x229.google.com (mail-it0-x229.google.com. [2607:f8b0:4001:c0b::229])
+        by gmr-mx.google.com with ESMTPS id c3si355030ith.1.2016.09.25.04.50.59
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 25 Sep 2016 04:50:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::229 as permitted sender) client-ip=2607:f8b0:4001:c0b::229;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x229.google.com with SMTP id r192so51646772ita.0
+        for <opensport@googlegroups.com>; Sun, 25 Sep 2016 04:50:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=xZoInYXEb7PRu3A4kZA2oQ8tM7EuInFis8I41jU9WPg=;
+        b=D0cTIuTRG3nF24DFZ0lH4KFGGPLqDn22gHFANYMHUoJRiujjVCvpM/szmKY4MiDp7q
+         CgyBQttzomCYTVC4cIQsqh+fjrDwISU3mKHPrl7gIp7mbTmes/AcNs47rkgCdzLoaQNX
+         GKLgIJSehRxh8c4/HUKCxKqhYxbuZAwjlHQi30K85VeLgAZge2t81i3hj2brzUVRWeVe
+         42YJBdmHXa9k8hMG2+/Ln6KDDU9J1+kOU9QRHFCQ2svTf8xeQKDv7o0IBVBP2DVAKOiw
+         ZpCik9Za1FXUSnKWb0VWIXUkOvGVFvxAOr8PFUFFOBsipw5ezrw0PL+iDdBeRInjeihL
+         MKNA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=xZoInYXEb7PRu3A4kZA2oQ8tM7EuInFis8I41jU9WPg=;
+        b=ZgJuCWVMdbBMm7eoRA2Bu4Xg7bq4WeLjFCNRKYXYl8QHeuVA2a5OFuRKqyoLEJkiCI
+         UdUSgz+U9yVn0AOPCy3E0hRC3KqTsBmAlVBZhi7fdRvldoaGnPXxIxhNRUe/xM/rAbiS
+         FtcPFPlWpiT3ZGc27/DdbbzgkKQ1F09C5GVvxriwJoqVbtemPsEVFRq3RvcylWeWDGOI
+         QAV6yaL3s2QlybIeFKKI83d3I7DzrjRVr67ELHD4+4CRRkC31FgQ/swLGmjg9mo+b4F9
+         is3YCL49W6igZ+WjW2NY8JEhN9i31Lqk9rkOMgL1VWEkoFZOjHcF5i3vYdCJKwW3qZkN
+         BlOw==
+X-Gm-Message-State: AA6/9RlH6QBonJKdJdGt3vAYjoSZtX9jdAuKnWoKa2YzTBmJOQo7V+xlfBkbCNCj/bAEF71lGz9kGCCwPwYXOw==
+X-Received: by 10.36.58.148 with SMTP id m142mr1917305itm.17.1474804259203;
+ Sun, 25 Sep 2016 04:50:59 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.168.231 with HTTP; Sun, 25 Sep 2016 04:50:58 -0700 (PDT)
+In-Reply-To: <de687acb-84c4-42c6-b80b-72808b37286d@googlegroups.com>
+References: <de687acb-84c4-42c6-b80b-72808b37286d@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 25 Sep 2016 13:50:58 +0200
+Message-ID: <CAAxEZd8k9WMVc9inhHM3TSbKDUH2ygForB7n76EnM3wnQN5rzw@mail.gmail.com>
+Subject: Re: [opensport] Players per match
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   What league are you looking (talking) about e.g. Bundesliga, Seria
+A, etc.?  Cheers.
+

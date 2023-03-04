@@ -1,0 +1,94 @@
+From 6603281948881190912@xxx Thu Sep 20 12:26:27 +0000 2018
+X-GM-THRID: 6603186617065668608
+X-Received: by 2002:a2e:9f49:: with SMTP id v9-v6mr1105057ljk.1.1537446386888;
+        Thu, 20 Sep 2018 05:26:26 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a19:2051:: with SMTP id g78-v6ls2255160lfg.1.gmail; Thu, 20
+ Sep 2018 05:26:26 -0700 (PDT)
+X-Google-Smtp-Source: ANB0VdbUZs6MtS61xZY5vm0ZzabaRYF0LPLJDiB2nRDPcAMYg4oYbHmTUoFwT0Ze+d2P/EyAVBUH
+X-Received: by 2002:a19:f618:: with SMTP id x24-v6mr1146075lfe.1.1537446385984;
+        Thu, 20 Sep 2018 05:26:25 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1537446385; cv=none;
+        d=google.com; s=arc-20160816;
+        b=fmjHGCjR5Tr/hgL04xsKk21usi9+0WBpt1T8I3YWuLB24CQOSAPN3BTHVgJI5ayg0O
+         4dvbGlSnb18EPmsrBtdn3CAdAtLtn6TonAMrnQVaba1qT3WwlAAu2CXDNKywb/HIxlUX
+         hqpaD93NP0nX1WwrU04uXHtqRP/4iPm9KJnkLf9KplTG6yoneyxmPulMWsm/g6xAQ+rr
+         XkqsdsJdFXTyux8BoQxT7/NdyD7v20rrkfaMK3KdutzXRtOkeeF4+BGyMpic3NRumDTo
+         FVLn8Ur96f2YVsiwtmBpI5gsTdHsk1Bqg7FgGhCwB1iRWhccwaKvDYuGcY1b1oERfaVf
+         BzPw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=EMCaPvdJA6u+TUDIcjPyBCEvxvCfPLICUPE2xi7lB7w=;
+        b=mEcEW2KZ1em5Uz+5fBVDvVQ8BnOoOmnIY/3UirhRXxpZknz2ucfuYN80U9f8IC+k7P
+         OGrvorqDkdhmT0vnuPohaWA5XjrJtWEs5ss1lK9ufsORd0VF7rHF3QYRtUxcQSf35OYD
+         Fd13ZlqwTZpBIFA/0aWdTRgs2HPHxhLZhlSv+cMn2hbVK4mFjdwXDTJN2dQ5XXY+1FM7
+         C+bIezeszI+vXjRhVVNGaQLBGJfWFJQ6KKvnL2uIOdJL8KqwHFeDuvhVsBFbrN/07HVe
+         UjORX4+bUj68aGSmnngHijJ0KhAZRWBib03nlAL5KrAHRbOz6wcjzNx4mGJvv9uM+FqB
+         eIKg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=rt4mt51B;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x234.google.com (mail-lj1-x234.google.com. [2a00:1450:4864:20::234])
+        by gmr-mx.google.com with ESMTPS id x16-v6si893580ljj.4.2018.09.20.05.26.25
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 20 Sep 2018 05:26:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) client-ip=2a00:1450:4864:20::234;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=rt4mt51B;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x234.google.com with SMTP id 203-v6so8175222ljj.13
+        for <opensport@googlegroups.com>; Thu, 20 Sep 2018 05:26:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=EMCaPvdJA6u+TUDIcjPyBCEvxvCfPLICUPE2xi7lB7w=;
+        b=rt4mt51BL44FP+/2Ab49Dx/14OzR/imikizRDRd1X1m9eida9JRDI7wVY2vZuQEb3t
+         UYtpHjygwmX+1m1LMJmBVbGBjCJX6kuug9c2f/JLDItlchixpp3rF0jHUrQP11FMOMh4
+         SKHriwU8kD//SJ+zLcEkQglEY21cqSPKTH8eR9CObLW0hNN08PSwXx3o3EKJfHvPRy2m
+         vaoYrNqQ9lBwAC+hYiZIC3INH2Tq35TYzmM9bkobYt+Ck3cAv50IW9EgAsmxTuooaKeV
+         2EaujOhj7cQZJhDvARQdgo/RPZARXe4pCP5IscbJR9fPk8+x48+t5r2dvKTOj2ZfXzoA
+         1COA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=EMCaPvdJA6u+TUDIcjPyBCEvxvCfPLICUPE2xi7lB7w=;
+        b=r5crrcBedVrQxMEv59QNp8AhTrlDZEuCHGjR4f+1IV9JmpnHi6qpH+k0ehbCeDP+vw
+         Y3PpLiTbTzPL7/TCUWx2UQotIzrWnGM4ckmdNhv2cBDUqecH1KUw4qr+aXZuB19qPScz
+         U225QorGFg4hhaOcI+/vzlhrqS0gGHxIwsf3FaUzvMCrYGa82bRqMFOaICywXldtHtsM
+         +n9WeEYwgNIzKFOen+RNAc8G8L5ycjspXLlwI7HWv+k4vFZIXKawQ/gbCSL7tPH+9wUc
+         IxMpV6MTOACAyO+hsnEW2P53iul8aQwINzI4KPBY6hErES0mIMU2JjJt0gg252zc327u
+         fTRQ==
+X-Gm-Message-State: APzg51BdFvC6McOVIl/IFwN2fJhBJJdessJd+7/EQGCwNavqE+idKKWw
+	J5DQskA8sgVdfe7jYIWDIJXVkfSJpvzgo9lUo/KOAg==
+X-Received: by 2002:a2e:1517:: with SMTP id s23-v6mr26793954ljd.73.1537446385474;
+ Thu, 20 Sep 2018 05:26:25 -0700 (PDT)
+MIME-Version: 1.0
+References: <a509dfa8-e97a-4904-aaef-536f79472122@googlegroups.com>
+ <CAAxEZd8ChvHrw_U6JvcuSW7sNEmx1AB+YfQvey9xABokD91Sqg@mail.gmail.com> <494c7139-c863-439d-a2a5-2214bbb6bd60@googlegroups.com>
+In-Reply-To: <494c7139-c863-439d-a2a5-2214bbb6bd60@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 20 Sep 2018 14:26:14 +0200
+Message-ID: <CAAxEZd_9Mr0G01_cdCJ_bnhe8UU3VR3pX92G+sTgUpugSyMs+A@mail.gmail.com>
+Subject: Re: [opensport] Brazilian Leagues
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  Sorry there's no definite step-by-step guide. It's mostly learning
+by doing and by looking at "real-world" examples. The first step is to
+build yourself an SQL database from the datasets (text files) with the
+build script / command line tools (e.g. sportdb).
+
+    The next step is adding what you think is missing (new seasons,
+more leagues, more teams, etc.) and / or double checking to see if all
+results and team are in order and so on.
+
+    Cheers. Prost. Enjoy the beautiful game.
+

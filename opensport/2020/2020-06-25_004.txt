@@ -1,0 +1,128 @@
+From 6842342059235344384@xxx Thu Jun 25 17:41:45 +0000 2020
+X-GM-THRID: 6841574442821222400
+Date: Thu, 25 Jun 2020 10:41:45 -0700 (PDT)
+From: "cren.gu...@gmail.com" <cren.guillaume@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <f98c3405-1961-44ee-af2a-b7c32ebdc9ban@googlegroups.com>
+In-Reply-To: <7f3dad99-fad6-4932-8983-ae57386ea927n@googlegroups.com>
+References: <4ad97936-3063-4864-b4bd-491d72e3c056o@googlegroups.com>
+ <CAAxEZd_1hbR0PkmQqbnMy_x670eptreWDCzOei4oXo-3OVq3UA@mail.gmail.com>
+ <CAAxEZd_eVubK3AYioJwUtmOWhrFtiRG=_grUJ7kt_n9P9ywNug@mail.gmail.com>
+ <7f3dad99-fad6-4932-8983-ae57386ea927n@googlegroups.com>
+Subject: Re: [opensport] How update results ?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_138_1293584162.1593106905278"
+
+------=_Part_138_1293584162.1593106905278
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_139_709840768.1593106905279"
+
+------=_Part_139_709840768.1593106905279
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+For the moment i've clone=20
+the openfootball/football.json/master/2019-20/en.1.json in my repos, and i=
+=20
+update it localy.
+
+Le jeudi 25 juin 2020 =C3=A0 19:18:34 UTC+2, cren.gu...@gmail.com a =C3=A9c=
+rit :
+
+> Hello,
+>
+> Thanks for all these informations. I'm trying to do this. But, how can i=
+=20
+> add the "sportdb/readers" ? (i don't know the "require") I've to clone th=
+e=20
+> repos dans add the source in mine ?
+> How import sportdb ? I'm following=20
+> https://github.com/sportdb/docs/blob/master/generating-json-datasets.md
+>
+> Thanks.
+>
+>
+> Le mardi 23 juin 2020 =C3=A0 18:29:21 UTC+2, Gerald Bauer a =C3=A9crit :
+>
+>> Hello,=20
+>> FYI: Some weeks ago I posted a little note / write-up on=20
+>> generating JSON datasets, see [1]=20
+>>
+>> If you replace=20
+>>
+>> ## assumes football.db datasets for England in local ./england directory=
+=20
+>> SportDb.read( './england' )=20
+>>
+>> with=20
+>>
+>> ## just read the latest season=20
+>> SportDb.read( './england/2019-20/1-premierleague.txt' )=20
+>>
+>> That should work.=20
+>>
+>> Of course - you are more than welcome to use any other scripts or=20
+>> language for the JSON generation. Let us know how it goes / what you=20
+>> decide..=20
+>>
+>> [1]=20
+>> https://github.com/sportdb/docs/blob/master/generating-json-datasets.md=
+=20
+>>
+>
+------=_Part_139_709840768.1593106905279
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+For the moment i've clone the&nbsp;openfootball/football.json/master/2019-2=
+0/en.1.json in my repos, and i update it localy.<br><br><div class=3D"gmail=
+_quote"><div dir=3D"auto" class=3D"gmail_attr">Le jeudi 25 juin 2020 =C3=A0=
+ 19:18:34 UTC+2, cren.gu...@gmail.com a =C3=A9crit=C2=A0:<br/></div><blockq=
+uote class=3D"gmail_quote" style=3D"margin: 0 0 0 0.8ex; border-left: 1px s=
+olid rgb(204, 204, 204); padding-left: 1ex;">Hello,<div><br></div><div>Than=
+ks for all these informations. I&#39;m trying to do this. But, how can i ad=
+d the &quot;sportdb/readers&quot; ? (i don&#39;t know the &quot;require&quo=
+t;) I&#39;ve to clone the repos dans add the source in mine ?</div><div>How=
+ import sportdb ? I&#39;m following=C2=A0<a href=3D"https://github.com/spor=
+tdb/docs/blob/master/generating-json-datasets.md" target=3D"_blank" rel=3D"=
+nofollow" data-saferedirecturl=3D"https://www.google.com/url?hl=3Dfr&amp;q=
+=3Dhttps://github.com/sportdb/docs/blob/master/generating-json-datasets.md&=
+amp;source=3Dgmail&amp;ust=3D1593191916573000&amp;usg=3DAFQjCNGf9RDzDrUb8hc=
+0zBrp5n16Z9B7PQ">https://github.com/sportdb/docs/blob/master/generating-jso=
+n-datasets.md</a></div><div><br></div><div>Thanks.</div><div><br></div><div=
+><br></div><div class=3D"gmail_quote"><div dir=3D"auto" class=3D"gmail_attr=
+">Le mardi 23 juin 2020 =C3=A0 18:29:21 UTC+2, Gerald Bauer a =C3=A9crit=C2=
+=A0:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 0.8ex=
+;border-left:1px solid rgb(204,204,204);padding-left:1ex">Hello,
+<br>     FYI: Some weeks ago I posted a little note / write-up on
+<br>generating JSON datasets, see [1]
+<br>
+<br>   If you replace
+<br>
+<br>## assumes football.db datasets for England in local ./england director=
+y
+<br>SportDb.read( &#39;./england&#39; )
+<br>
+<br>   with
+<br>
+<br>##  just read the latest season
+<br>SportDb.read( &#39;./england/2019-20/1-premierleague.txt&#39; )
+<br>
+<br>  That should work.
+<br>
+<br>   Of course - you are more than welcome to use any other scripts or
+<br>language for the JSON generation. Let us know how it goes / what you
+<br>decide..
+<br>
+<br>[1] <a href=3D"https://github.com/sportdb/docs/blob/master/generating-j=
+son-datasets.md" rel=3D"nofollow" target=3D"_blank" data-saferedirecturl=3D=
+"https://www.google.com/url?hl=3Dfr&amp;q=3Dhttps://github.com/sportdb/docs=
+/blob/master/generating-json-datasets.md&amp;source=3Dgmail&amp;ust=3D15931=
+91916573000&amp;usg=3DAFQjCNGf9RDzDrUb8hc0zBrp5n16Z9B7PQ">https://github.co=
+m/sportdb/docs/blob/master/generating-json-datasets.md</a>
+<br></blockquote></div></blockquote></div>
+------=_Part_139_709840768.1593106905279--
+
+------=_Part_138_1293584162.1593106905278--
+

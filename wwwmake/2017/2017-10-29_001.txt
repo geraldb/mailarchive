@@ -1,0 +1,130 @@
+From 6482276164593254400@xxx Sun Oct 29 10:22:12 +0000 2017
+X-GM-THRID: 6482276164008148992
+X-Received: by 10.98.178.200 with SMTP id z69mr3599757pfl.36.1509272531942;
+        Sun, 29 Oct 2017 03:22:11 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.99.51.79 with SMTP id z76ls3457379pgz.2.gmail; Sun, 29 Oct
+ 2017 03:22:11 -0700 (PDT)
+X-Google-Smtp-Source: ABhQp+QqjHWSZG6guNCJAC541ezjK9ElvTF/HoBok04ZSbpQgRGq9+XNW8P/y7G2WWK7h3Fk9lD8
+X-Received: by 10.159.244.129 with SMTP id y1mr3130340plr.0.1509272531198;
+        Sun, 29 Oct 2017 03:22:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1509272531; cv=none;
+        d=google.com; s=arc-20160816;
+        b=qr+B7jS6tGddhtZOI3a83ARwEr3i5+m5E0dUcF3+JjLyeKyF9vn8ndBz03hFCcfjk6
+         LBPUvwR+V0TKoUF4wX5bliStZAeWwqku0zzMa97CtAIuGH1fjEhrUPo1aFTjSaT4gjej
+         wJtkPxxSD2Tg2Fi1EFkxzIM82SW52EMNyrBydYv/Rc+PDNaUKw3gjfNYiCfIjF0z5b/t
+         Kxvxca9FA4bqhHXaefpaSihmjCF1KQa40uGk1uRIC9dI2DOekzZGWaJj0sGBtwohBFCP
+         L7BxtiWdWQJzDPxgpFr8hDWFmhJQY6i61woWfzySLUOIPgRslG2sQ7FWhjE5nInfK5RC
+         e61A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=NFWZj9U5t54c40V0zLVg4I4UlE2RJNALCv5ZAzQj1S8=;
+        b=w+YHywrSu+geeJPDk0cFY7fHYWfWG8ZoNDDV7g5hJ6xIg0ky8OtZzpE+Fq58hujg9Z
+         /qUWmQmH0gTi9YLL1w18awmno9Ovl1iXs0ka0XxgZUPuBfaJY/SURWz7aOeUPAlEJCp3
+         eulZEdvCAWxawDIVAfM8Edoh3npGTmTVk2/IHrTyq+z5GcdjsCApkSbz8cutsFa/Oold
+         d/QCphysWjNAuvXpsIIabbrb06JqVCoqCqIYMCkUmGCQcKwaWv3w7P6vLBUtXXc+CKS7
+         3rMy69AtcWpCIJ4y7+ma1W/NEZM1zjIya2idZTKZWfpXAdAskXahErQtp7EZILjyk4Z2
+         axFA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=K1fF8B9j;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22d.google.com (mail-io0-x22d.google.com. [2607:f8b0:4001:c06::22d])
+        by gmr-mx.google.com with ESMTPS id t65si945106pfe.3.2017.10.29.03.22.11
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 29 Oct 2017 03:22:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22d as permitted sender) client-ip=2607:f8b0:4001:c06::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=K1fF8B9j;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22d.google.com with SMTP id 101so21162910ioj.3
+        for <wwwmake@googlegroups.com>; Sun, 29 Oct 2017 03:22:11 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=NFWZj9U5t54c40V0zLVg4I4UlE2RJNALCv5ZAzQj1S8=;
+        b=K1fF8B9j5Mf/uDvVMYLTV3HkltFAVWYAmId7sAxISnSRiUX49UsyJlbfIS2B6JPyI3
+         DPIWiHqL61YmmQsc+NryWvsVwAD2bHmburS0WggsNkZK2Bmc2AoSufT1fsd/NGly/uV9
+         pGGLqo7EioOKChYn4ffI8FOwGPkQJkfdu5bDetGjjuehrQOFJ8k4Z9TwDBK+mfc9FT+6
+         eUCvK4n4XdlnUOP2gMmR2hZvXmj8PrFJAxaNpyMHN7MmG19RnUV/ACixOWinLupaPjcA
+         Do6b0WBKLiNU66NOZSvUhdhEqwjbPiVWphPP5t/oOxvV1kMnEhgbU/xApFfbD6nLZIwq
+         4mLQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=NFWZj9U5t54c40V0zLVg4I4UlE2RJNALCv5ZAzQj1S8=;
+        b=XNuGyH+3hRCCG3wJdGeKS1tApMH1RzKBKoV0kyD0ryTX48A/O3YOQo/Bjm1DETlJW+
+         GJOsGN/iOAUoQbyrRN8kCHJa3pP2fcoiQBe2uGBrFKjM1oBdMdo4Vym81/aNVY50Zl8t
+         ASwN5SlYNS2eSB3v5dWzIXug+T72UKj1RKwOl2ysc/ZwsYbBtQum3lJn7OzLLwaI8zur
+         BA0U+orOa2gNj6/VnCCKDHpdOviAUb7UyBbds8j61tACgusMBxWt2YHYBVcVHrNT2wOw
+         qvJE4adqyyg3rmiK/7m6ftFw2M4J0TF+JwD/4RnHGPkVIV6AVQKsQn9ZqeVW2aRP3qTq
+         L9Cw==
+X-Gm-Message-State: AMCzsaV+PQW3UJStcg1RYF67w+11Bjw2fSnGnWT8k+UV95shehBHuETU
+	7rRqQczujtDLp2n37jPcakWrp+kMWeGqqkwmyFMnxg==
+X-Received: by 10.107.83.12 with SMTP id h12mr6634450iob.13.1509272530232;
+ Sun, 29 Oct 2017 03:22:10 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.44.23 with HTTP; Sun, 29 Oct 2017 03:22:09 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 29 Oct 2017 11:22:09 +0100
+Message-ID: <CAAxEZd8YT1RQ1Y38nnAqTQ+r6Uj-VW8e46KxFUmYHT3sQmRraA@mail.gmail.com>
+Subject: Slide Show (S9) v4 Update - Write Your Talks / Slides in Plain Text
+ (w/ Jekyll Themes)
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+    I've updated the Slide Show (S9) command line tool (and
+library/gem) [1]  that lets you write your talks / slides /
+presentations in plain text w/ markdown conventions. Example:
+
+    # Blockchain! Blockchain! Blockchain! Decentralize Payments.
+Decentralize Transactions. Decentralize Blockchains.
+
+   What's Blockchain?
+
+    - Distributed Database?
+    - Hyper Ledger Book?
+    - Consensus with Proof-of-Work or Proof-of-Stake?
+    - Digital Fingerprints? Cryptographic Hashes?
+    - Lottery? Central Bank?
+    - Byzantine-Generals Solution?
+
+    Yes. Yes. Yes. Blockchain! Blockchain! Blockchain!
+
+    (Source: [openblockchains/whatsblockchain](https://github.com/openblockchains/whatsblockchain))
+
+
+    # The Proof of the Pudding is ...  The Bitcoin (BTC) Blockchain(s)
+
+    A Success Story on the Blockchain.
+
+    May 22, 2010 - World's 1st Bitcoin Payment
+
+    A developer bought two pizzas using 10 000 Bitcoin (BTC) - a
+then-little-known digital (crypto)currency.
+    Estimated worth about $40.
+
+    Triva Q: How much is one Bitcoin worth today? Q: How much are 10
+000 Bitcoin worth today?
+
+
+
+  Note: You can use any of the (Jekyll-compatible) theme packs [2]
+such as reveal.js, bespoke.js, s6blank, etc.
+
+   As an example, see the Blockchain! Blockchain! Blockchain! [3] talk
+(source in markdown) [4].
+
+     Happy publishing & talking. Cheers.
+
+[1] http://slideshow-s9.github.io
+[2] https://github.com/slideshow-templates
+[3] http://slideshow-s9.github.io/demos/blockchain.html
+[4] https://github.com/geraldb/talks/blob/master/blockchain.md
+

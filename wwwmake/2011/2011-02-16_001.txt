@@ -1,0 +1,48 @@
+From 833541373952@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 830420811776
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,cfa826538012f8f0
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.224.46.12 with SMTP id h12mr195227qaf.21.1297873789342;
+        Wed, 16 Feb 2011 08:29:49 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.224.2.141 with SMTP id 13ls190355qaj.2.p; Wed, 16 Feb 2011
+ 08:29:47 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.224.28.213 with SMTP id n21mr61218qac.35.1297873787913; Wed,
+ 16 Feb 2011 08:29:47 -0800 (PST)
+Received: by x21g2000vbn.googlegroups.com with HTTP; Wed, 16 Feb 2011 08:29:47
+ -0800 (PST)
+Date: Wed, 16 Feb 2011 08:29:47 -0800 (PST)
+In-Reply-To: <249a085f-193f-478d-b64b-9d1b2427b4da@r4g2000vbq.googlegroups.com>
+X-IP: 216.92.130.84
+References: <249a085f-193f-478d-b64b-9d1b2427b4da@r4g2000vbq.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EPv27-oEgiOi-AjLOSg0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.9.2.12)
+ Gecko/20101031 Firefox/3.6.12,gzip(gfe)
+Message-ID: <6a5ab053-bc7f-498c-b8ca-badd732c5def@x21g2000vbn.googlegroups.com>
+Subject: Re: slideshow 0.9.9 doesn't seem to support gradients anymore?
+From: Mike Kelly <mkelly32@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Ahha, figured it out. Apparently I needed to get the s6gradients theme
+from github.
+
+Now, an aside on that theme... it is checking specifically for IE to
+complain about missing SVG support. It should probably switch to using
+Modernizr <http://www.modernizr.com/> to detect whether SVG support is
+available or not, since IE9 is going to support SVG. If I remember
+I'll try to make a patch and send a pull request...
+
+On Feb 16, 10:33=A0am, Mike Kelly <mkell...@gmail.com> wrote:
+> Hi,
+>
+> I just updated my slideshow gem (don't know what version I had before,
+> but probably something about a year old), and now it seems that the
+> gradient: settings don't do anything anymore -- I just get a solid
+> white background. Any suggestions?
+

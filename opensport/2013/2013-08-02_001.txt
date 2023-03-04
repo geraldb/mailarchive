@@ -1,0 +1,71 @@
+From 130498428928@xxx Tue Jun 16 00:17:25 +0000 2015
+X-GM-THRID: 129146814464
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,948927defff8a681,start
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,CP1252
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+X-Received: by 10.180.75.13 with SMTP id y13mr448933wiv.1.1375427809277;
+        Fri, 02 Aug 2013 00:16:49 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.208.8 with SMTP id ma8ls80029wic.33.canary; Fri, 02 Aug
+ 2013 00:16:49 -0700 (PDT)
+X-Received: by 10.180.79.130 with SMTP id j2mr458685wix.0.1375427808985;
+        Fri, 02 Aug 2013 00:16:48 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x233.google.com (mail-wg0-x233.google.com [2a00:1450:400c:c00::233])
+        by gmr-mx.google.com with ESMTPS id ev4si37019wib.0.2013.08.02.00.16.48
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 02 Aug 2013 00:16:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) client-ip=2a00:1450:400c:c00::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-wg0-f51.google.com with SMTP id a12so211325wgh.6
+        for <opensport@googlegroups.com>; Fri, 02 Aug 2013 00:16:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=bxpeTXRdGOHJzRx/447THyxStwTqiW5lA7JF1fgs5t0=;
+        b=S8QzPdF8edOTyJfneA9BCK8uHvUn8WklGnLE+L4T5EABzdYe7sWvS8gGy/ZbRQBQ5T
+         uBkb0auHCzsXsc2XRZN5kH0C9TCh0ZizztDfZEKA+wtm/2bI6dWQyUDfTTfWWa+u+q3r
+         0UgMHCnf691TNLcPS3frDK2sTUmoDejDxOoiWOs8cJcCeAGwrCWen8EZ5h4UQhipE6by
+         C+IKTw/52A7mPrSLjEHQcf6iEI9k3eXev1G3UqVGbnahRYF16UN2vmSjm2kzuPEXkJzr
+         mN2y4wdFiXedeZFy2y6raS/+wOrnX9kf4o5IoJla9kzdIM3849U9NNdK5652kgOhU9+2
+         zHUg==
+MIME-Version: 1.0
+X-Received: by 10.180.37.8 with SMTP id u8mr894521wij.4.1375427808905; Fri, 02
+ Aug 2013 00:16:48 -0700 (PDT)
+Received: by 10.216.54.202 with HTTP; Fri, 2 Aug 2013 00:16:48 -0700 (PDT)
+Date: Fri, 2 Aug 2013 09:16:48 +0200
+Message-ID: <CAAxEZd-v2rScNYdaoWRZMnYOnFvydDULF-vRBFsqFF7nFA6oUQ@mail.gmail.com>
+Subject: Vienna.js Talk Slides - Build Your Own Tag /w Polymer e.g.
+ <football-js event='at.2013/14'>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=windows-1252
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: For the Vienna.js I have prepared a lightning talk titled
+"Building Your Own Tags / Elements / Web Components"  Slides include:
+
+  *  What=92s a custom tag? What=92s a custom element? What=92s a web compo=
+nent?
+  *  What=92s X-Tag? What=92s Polymer?
+  *  Web Components Machinery - New Web Standard Building Blocks
+  *  Example 1 - <beer-of-the-day>
+  *  Example 2 - <football-js event=3D'at.2013/14'>
+
+  More @ http://slideshow-s9.github.io/webcomponents.html
+
+  The sample <football-js> matchday widget is online @
+http://geraldb.github.io/football.js/samples/polymer
+
+  Cheers.
+

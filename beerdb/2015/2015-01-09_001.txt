@@ -1,0 +1,65 @@
+From 209439424512@xxx Sun Jan 04 09:34:01 +0000 2015
+X-GM-THRID: 207373729792
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,a3c947c770eae39c,start
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.170.201 with SMTP id ao9mr457110lac.5.1420821082581;
+        Fri, 09 Jan 2015 08:31:22 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.152.1.229 with SMTP id 5ls420445lap.55.gmail; Fri, 09 Jan 2015
+ 08:31:22 -0800 (PST)
+X-Received: by 10.112.160.41 with SMTP id xh9mr368879lbb.12.1420821082203;
+        Fri, 09 Jan 2015 08:31:22 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x229.google.com (mail-we0-x229.google.com. [2a00:1450:400c:c03::229])
+        by gmr-mx.google.com with ESMTPS id v8si1612011wif.1.2015.01.09.08.31.22
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 09 Jan 2015 08:31:22 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::229 as permitted sender) client-ip=2a00:1450:400c:c03::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x229.google.com with SMTP id m14so8856477wev.0
+        for <beerdb@googlegroups.com>; Fri, 09 Jan 2015 08:31:22 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=N+Pys5R8WPuA105PHeCJTZLfdcJlixG69qSTK8wNl6o=;
+        b=EFegs/zrS2yZSLsjsnq2RK8MoLpQX9uyBT1PK6mZL2MWP0PtqqWlQWxTkukNT7D0gX
+         5bdwb5Hi3+w+ZCXymTkwbKT2sXk+JJYbFVm6g9pe+I1OtP9ciUL2eCPbU1lkUItoDYNU
+         EYAKQpFMxvbAKf+1/AoKiw42MT1NEy51WkixVsNpF6HZ/mdORYHBCjiNnT/m11CjZd8r
+         ykrUWqb6m74wLmxrsbffXA+XARtNQdRLpql07IeYYjW7PdT3pyng3ekp2BSvrEwIPbwd
+         A34r+HTICiT6NXTaTJ6eH64AcyQMf9wG433eySqpOuwaKnNYbvfeJwNdRu9YlE/Sff4w
+         k3PA==
+MIME-Version: 1.0
+X-Received: by 10.194.85.197 with SMTP id j5mr1137364wjz.106.1420821081927;
+ Fri, 09 Jan 2015 08:31:21 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Fri, 9 Jan 2015 08:31:21 -0800 (PST)
+Date: Fri, 9 Jan 2015 17:31:21 +0100
+Message-ID: <CAAxEZd8FmkiwUs4xdnSbCXPG5Mjp9v_H_97QXno_eJZQr-aYeA@mail.gmail.com>
+Subject: Belgian Beer Explorer Sample Web App (1000+ Belgian Beers Listed)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: Christophe Coenraets has put together a sample web app in
+JavaScript that lets you explore 1000+ Belgian beers by alcohol or
+style tags e.g. trappist, abbey, saisons, lambic, gueuze, and so on.
+
+  The Belgian beer list is sourced from Wikipedia [1] and is available
+as a single-file SQL script for PostgreSQL [2].
+
+  For more info see the blog story title "Belgian Beer Explorer with
+React, Bootstrap, Node.js and PostgreSQL". [3]
+
+  Cheers. Prost.
+
+[1] en.wikipedia.org/wiki/List_of_Belgian_beer
+[2] github.com/ccoenraets/belgian-beer-explorer/blob/master/beers.sql
+[3] coenraets.org/blog/2015/01/belgian-beer-explorer-with-react-bootstrap-node-js-and-postgres
+

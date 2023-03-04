@@ -1,0 +1,138 @@
+From 1972480507904@xxx Tue Jun 16 00:16:50 +0000 2015
+X-GM-THRID: 1591517118464
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.29.10 with SMTP id f10mr19290385obh.23.1407706009921;
+        Sun, 10 Aug 2014 14:26:49 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.80.16 with SMTP id n16ls1654903igx.14.canary; Sun, 10 Aug
+ 2014 14:26:49 -0700 (PDT)
+X-Received: by 10.50.138.69 with SMTP id qo5mr406449igb.7.1407706009470;
+        Sun, 10 Aug 2014 14:26:49 -0700 (PDT)
+X-Google-Doc-Id: 7895dbce24e5372
+X-Google-Web-Client: true
+Date: Sun, 10 Aug 2014 14:26:48 -0700 (PDT)
+From: Carl-Erik Svensson <csvenss2@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <464ad286-5e2c-44df-a089-12e6b735ca51@googlegroups.com>
+In-Reply-To: <CAAxEZd9V=0TSQKkUu1rXWXfRQ+49q=EZ-mnReB39Yggj6sEfVw@mail.gmail.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+ <CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+ <3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+ <CAAxEZd9E7zgoReL0RprdZxXKLkBKvC5xVTNYUgFfsm02WZq=aQ@mail.gmail.com>
+ <16257216-0d9c-4d01-9f36-b00d26a612e2@googlegroups.com>
+ <CAAxEZd_oN6Z5nKLG1-znCwf7W_yEhQ-yyns0jxr5KVepFCmKHw@mail.gmail.com>
+ <c3e24314-de47-456d-bfd9-8973c1e1809f@googlegroups.com>
+ <CAAxEZd_EHOT-A-W5nFv8j6ZbvtAp+oKeJ=20XTw=wj625A3T3w@mail.gmail.com>
+ <CANEDzNpAaL-2oWLyQ7HpHhnz1=H8Xx+ajefJq4WOPhBpsygHvg@mail.gmail.com>
+ <CAAxEZd9wq+f_71pMTChpmQ5p00DcFXjiQEONtS1OLKiVdFBREA@mail.gmail.com>
+ <b41f388c-7c9a-4cef-9009-86dcc5b8c449@googlegroups.com>
+ <CAAxEZd_G609VULuuBL16AB9GkhF=+kUGD3b9MQqEpsBY73JnLQ@mail.gmail.com>
+ <CANEDzNpOtPJDnYCUTV0zmzHPji2s87jtHgWgWLFvsFN9rXQ77A@mail.gmail.com>
+ <CAAxEZd9rJ4KOtBAC8-TR4dX-sDYgUC_ghZbKA78ThYEaWqDHvA@mail.gmail.com>
+ <9cf339e0-2ccf-4abc-be3a-16fd55d01717@googlegroups.com>
+ <CAAxEZd828PS+iMDmPCEmmkRjghE6_cW379k3NRaWumZsmBb9KQ@mail.gmail.com>
+ <CANEDzNo=kQHfjjmyEJOYrzDQBVXP=1uAJBKpLsOgyyxdvhJ=Rw@mail.gmail.com>
+ <CAAxEZd9V=0TSQKkUu1rXWXfRQ+49q=EZ-mnReB39Yggj6sEfVw@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2532_629760527.1407706008516"
+X-Google-Token: EJjHn58F9js7oigBW2U0
+X-Google-IP: 24.130.213.187
+
+------=_Part_2532_629760527.1407706008516
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2533_1585764873.1407706008516"
+
+------=_Part_2533_1585764873.1407706008516
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+Thanks for the suggestions.  I finally took a look at your updates to 
+football.db.stats - looks nice and contained :).  I see the tests are a 
+good example of how to use the readers directly.  It looks like the 
+plumbing is all there, but it still needs the logic to create the stat 
+records in the database.  I can start working on this if you haven't done 
+so already.
+
+One question: What do you plan for the usage of this plugin?  I was 
+originally thinking of a solution that could reuse the sportdb 
+command-line, and additionally parse stats.  This seems to be going in the 
+direction of using build scripts to piece together the information.  I 
+think either approach is fine, but do you have some examples of how to 
+translate, say the following command, into calls to sportdb modules?
+
+sportdb_ss -n mls_stats.db setup all --include ../major-league-soccer/ 
+--worldinclude ../../openmundi/world.db/
+
+Thanks!
+Carl
+
+On Thursday, July 31, 2014 7:47:37 AM UTC-7, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    Take your time no rush. Will try to add the CVS reader for the 
+> stats later today. To try the unit tests for the new/updated gem use 
+> ($ rake test). 
+>
+>    Good point. If you do updates for an event I suggest using a 
+> Rakefile (build script) and using the readers directly - when using 
+> readers you can specify an event etc. 
+>
+>    Note, usually - by design - if you re(run) the datasets they should 
+> update your database (will NOT work if you want to DELETE records only 
+> works for INSERT and UPDATES). 
+>
+>  Cheers. 
+>
+
+------=_Part_2533_1585764873.1407706008516
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald,<div><br></div><div>Thanks for the suggestions. =
+&nbsp;I finally took a look at your updates to football.db.stats - looks ni=
+ce and contained :). &nbsp;I see the tests are a good example of how to use=
+ the readers directly. &nbsp;It looks like the plumbing is all there, but i=
+t still needs the logic to create the stat records in the database. &nbsp;I=
+ can start working on this if you haven't done so already.</div><div><br></=
+div><div>One question: What do you plan for the usage of this plugin? &nbsp=
+;I was originally thinking of a solution that could reuse the sportdb comma=
+nd-line, and additionally parse stats. &nbsp;This seems to be going in the =
+direction of using build scripts to piece together the information. &nbsp;I=
+ think either approach is fine, but do you have some examples of how to tra=
+nslate, say the following command, into calls to sportdb modules?</div><div=
+><br></div><div>sportdb_ss -n mls_stats.db setup all --include ../major-lea=
+gue-soccer/ --worldinclude ../../openmundi/world.db/</div><div><br></div><d=
+iv>Thanks!</div><div>Carl<br><br>On Thursday, July 31, 2014 7:47:37 AM UTC-=
+7, Gerald Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;=
+margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;Take your time no rush. Will try to add the CVS reader for=
+ the
+<br>stats later today. To try the unit tests for the new/updated gem use
+<br>($ rake test).
+<br>
+<br>&nbsp; &nbsp;Good point. If you do updates for an event I suggest using=
+ a
+<br>Rakefile (build script) and using the readers directly - when using
+<br>readers you can specify an event etc.
+<br>
+<br>&nbsp; &nbsp;Note, usually - by design - if you re(run) the datasets th=
+ey should
+<br>update your database (will NOT work if you want to DELETE records only
+<br>works for INSERT and UPDATES).
+<br>
+<br>&nbsp;Cheers.
+<br></blockquote></div></div>
+------=_Part_2533_1585764873.1407706008516--
+
+------=_Part_2532_629760527.1407706008516--
+

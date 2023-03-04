@@ -1,0 +1,65 @@
+From 325747474432@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 320758349824
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,d3222fd094d6de0
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.131.33 with SMTP id oj1mr6046350lbb.7.1412013259744;
+        Mon, 29 Sep 2014 10:54:19 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.180.105.135 with SMTP id gm7ls536155wib.6.gmail; Mon, 29 Sep
+ 2014 10:54:19 -0700 (PDT)
+X-Received: by 10.181.25.225 with SMTP id it1mr2444713wid.0.1412013259434;
+        Mon, 29 Sep 2014 10:54:19 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x229.google.com (mail-we0-x229.google.com [2a00:1450:400c:c03::229])
+        by gmr-mx.google.com with ESMTPS id j12si629693wie.2.2014.09.29.10.54.19
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 29 Sep 2014 10:54:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::229 as permitted sender) client-ip=2a00:1450:400c:c03::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f169.google.com with SMTP id w61so768767wes.28
+        for <openmundi@googlegroups.com>; Mon, 29 Sep 2014 10:54:19 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=kmR5v4/ncR5DsR3v7+M1iww8SqLzm+CruCy3/GOc/zU=;
+        b=1GHOwGbRPH7xX8DSVtc2TbTKMGrH9o5cIfTYYaeZ2m+EvMHP0nJ5D5fpvxkJbP/F/w
+         ZdZfjW0VCyD3IYzhcbUoi+6fNUj4Pmrq+w7L+3eZCzN+1P+dtx37Hhk8q+fYlEF7Yio/
+         67AZdvZUs+iPKvdgQJeR07KbAM7m4zTRVEEochW1q8jJalwydt25WPsTS+A09YzsR6To
+         VsLqeQmo4NTPwfXP1HHkBFRLJ6ccwyVgOcznsPfjDcfVib1+REBwNBa6TFcgw87GwPQB
+         J9GrLF81LXetFA8ar+Vtg1SG+QZEue0/zzE4cx/zxT2B9M64jyxcpQf8LXXxWFVPpkct
+         U9TQ==
+MIME-Version: 1.0
+X-Received: by 10.194.120.200 with SMTP id le8mr47443296wjb.43.1412013259285;
+ Mon, 29 Sep 2014 10:54:19 -0700 (PDT)
+Received: by 10.216.205.135 with HTTP; Mon, 29 Sep 2014 10:54:19 -0700 (PDT)
+In-Reply-To: <4e58d573-0ce3-4563-bef7-b3b2763f02ca@googlegroups.com>
+References: <4e58d573-0ce3-4563-bef7-b3b2763f02ca@googlegroups.com>
+Date: Mon, 29 Sep 2014 19:54:19 +0200
+Message-ID: <CAAxEZd_TbE2QR2c7bhvohijfkpHVtAPaQrsa-ZZobXe+DqkMAw@mail.gmail.com>
+Subject: Re: Python based World Factbook scraper posted
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Eckhard Licher <eckhard.licher@googlemail.com>
+Cc: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  As always thanks for the update. Use what works for you. Keep it up.
+Great stuff.
+
+ Cheers.
+
+PS: Let me know if you want to add the factbook.python scrips to the
+tools folder (or where the scripts fit best). Once you move/copy the
+scripts I will close the factbook.python repo (imagine - I try to
+"manage" about 100+ repos - always good to have one repo less for a
+start ;-) and more important to see it get improved and get updated  -
+again thanks for the updates. Keep it up.
+

@@ -1,0 +1,89 @@
+From 142234091520@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 142732165120
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,dba2dfc1e0d5d36a,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.214.215.18 with SMTP id n18mr6902865qag.12.1220219159729;
+        Sun, 31 Aug 2008 14:45:59 -0700 (PDT)
+Return-Path: <gerald@vanbeta.com>
+Received: from ey-out-1920.google.com (ey-out-1920.google.com [74.125.78.146])
+        by mx.google.com with ESMTP id 39si8920765yxd.2.2008.08.31.14.45.59;
+        Sun, 31 Aug 2008 14:45:59 -0700 (PDT)
+Received-SPF: neutral (google.com: 74.125.78.146 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=74.125.78.146;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 74.125.78.146 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by ey-out-1920.google.com with SMTP id 4so603033eyg.6
+        for <webslideshow@googlegroups.com>; Sun, 31 Aug 2008 14:45:59 -0700 (PDT)
+Received: by 10.210.110.5 with SMTP id i5mr5502319ebc.2.1220219158412;
+        Sun, 31 Aug 2008 14:45:58 -0700 (PDT)
+Received: by 10.210.118.6 with HTTP; Sun, 31 Aug 2008 14:45:58 -0700 (PDT)
+Message-ID: <1f058eab0808311445l336c006bk2f9b20492a4c6ddc@mail.gmail.com>
+Date: Sun, 31 Aug 2008 14:45:58 -0700
+From: "Gerald Bauer" <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Subject: S9 Gradient Themes and Code Highlighting Syntax Themes Reference
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello,
+
+> The documentation on the website also needs to be improved:
+
+  Thanks for the suggestions. I know. I try ot get a reference and
+how-to plus tips & tricks section added over the next couple of weeks.
+
+> the Themes section shows various color themes but does not show what "gradient: ???" value the user must specify
+> to obtain them.
+
+  Good point. The current built-in themes include:
+
+   diagonal
+   top_bottom
+   left_right
+   repeat
+   radial
+   radial_off_center
+   radial_repeat
+
+  And you can use whatever CSS colors (pre-defined such as red,
+maroon, etc or self-defined eg. #0e1f5b #3b5998) you like:
+
+Example Using Facebook-style colors:
+
+gradient: radial  #0e1f5b #3b5998     (use radial gradient theme and
+facebook colors)
+gradient-colors: #0e1f5b #3b5998     (uses default top_bottom theme)
+
+More examples:
+
+gradient-theme: repeat         (just change theme and use default
+colors, that is, marron and black)
+gradient-colors: green lime   (use pre-defined CSS colors)
+
+  S9/S6 Tip:  You can open the gradient background theme in your
+browser and change the colors and theme (it's just markup) and hit
+reload e.g. Try  http://slideshow.rubyforge.org/facebook.svg
+
+> there is no list of available values for the "code-theme"
+> keyword... and I have no idea what the default value ("amy") means.
+>
+> In short, an enumeration of possible values for keywords would be
+> good documentation to add.
+
+  The syntax highlighting machinery is documented somewhat in the
+syntax slide show @ http://slideshow.rubyforge.org/syntax.html
+
+  Ultraviolet uses Textmate bundles and themes. You can see examples
+online @  http://ultraviolet.rubyforge.org/themes.xhtml
+
+  Note, to keep with the CSS property style it's recommended to change
+themes from all_hallows_eve to all-hallows-eve (that was the value.tr(
+'-', '_' ) you have seen in the code ;-)
+
+  Cheers.
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.ca
+

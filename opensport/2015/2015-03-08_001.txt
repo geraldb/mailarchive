@@ -1,0 +1,86 @@
+From 2511502049280@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 2377276981248
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cd242d30f1f3615d
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.11.196 with SMTP id 44mr24328349yhx.31.1425850363545;
+        Sun, 08 Mar 2015 14:32:43 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.20.161 with SMTP id o1ls683924ige.18.canary; Sun, 08 Mar
+ 2015 14:32:43 -0700 (PDT)
+X-Received: by 10.66.233.5 with SMTP id ts5mr7935448pac.27.1425850363109;
+        Sun, 08 Mar 2015 14:32:43 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x232.google.com (mail-ie0-x232.google.com. [2607:f8b0:4001:c03::232])
+        by gmr-mx.google.com with ESMTPS id g3si708458igr.2.2015.03.08.14.32.43
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 08 Mar 2015 14:32:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::232 as permitted sender) client-ip=2607:f8b0:4001:c03::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ie0-x232.google.com with SMTP id rl12so15460419iec.8
+        for <opensport@googlegroups.com>; Sun, 08 Mar 2015 14:32:43 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=MyHx89Ebw3N+RjLzuYVsYuHyvZT+91LCswea6smyAsc=;
+        b=Qb1ayLF6MQe6M0pegwyCUOxD5ZnUB/ug53YERFhGbPmcITrQJ4CDE6TZTyFQYezMnd
+         9LEtHZzHARukqdbCeyhzpEg5lBdUXCtC58yTZtI+tEGtqdgU0m84D+oYqr6Oc6XK42mx
+         jKZIBRdur/Hg0phuzI6JLDJnEiwm7tBuJQNTC2vt/nzGLMfyfsMkVUZahAKsKjV2WryV
+         nDG3Haah2G1dqahmf00h/FnU77U8uIFg3OD1tTLL68E29vE/+qaO4lxAU8D0/EX0/W4K
+         EKfD2noUtTdtSLpolNRJLKnQCXPKOPG+m4EjqI20RNI2WW7PlPi9JJeKQBjNIl5oZzrz
+         0Y0Q==
+MIME-Version: 1.0
+X-Received: by 10.50.20.228 with SMTP id q4mr22319679ige.1.1425850362938; Sun,
+ 08 Mar 2015 14:32:42 -0700 (PDT)
+Received: by 10.64.141.103 with HTTP; Sun, 8 Mar 2015 14:32:42 -0700 (PDT)
+In-Reply-To: <4677f145-4962-4ef7-955a-1a2d465fd2f2@googlegroups.com>
+References: <ec906df1-8c4e-4e7f-818f-4a7804b24d82@googlegroups.com>
+	<CAAxEZd-YTsKsA3kjKPv=rW97xza38tv2jTS6RycyDU5Q3Rh1Xw@mail.gmail.com>
+	<050ea85e-361e-4129-aa03-4072002f20a3@googlegroups.com>
+	<CAAxEZd80+_DS9oT5DaibtdPDQiHBSRHMyjR2-yvSzaOnozZuhA@mail.gmail.com>
+	<016077bc-2d07-450a-a9a0-c0bf31feed15@googlegroups.com>
+	<CAAxEZd8aqWBcP7-Ek=rmjnXNR-av36Nkd4jqCOQBhG++22=YxQ@mail.gmail.com>
+	<f16d3951-a274-4b95-ac77-29a20298000e@googlegroups.com>
+	<CAAxEZd9AZJL9sQ7bG1XLsX+aAvnYpoDxRKA=tfSjknXxEXpMjA@mail.gmail.com>
+	<f0733f7b-2f74-43b6-9550-90825c773877@googlegroups.com>
+	<CAAxEZd9+Y5Y8KiVmtYpds058rv=XdKM8BUgfipx8Lopvf5QRhQ@mail.gmail.com>
+	<c1109677-ed16-4a98-9030-e5778193f2b6@googlegroups.com>
+	<4677f145-4962-4ef7-955a-1a2d465fd2f2@googlegroups.com>
+Date: Sun, 8 Mar 2015 22:32:42 +0100
+Message-ID: <CAAxEZd8daHbsRCFq0+CPQxYuVx_dPZqxf-80KSndhTzij_XBXA@mail.gmail.com>
+Subject: Re: [opensport] Unable to build en-england repo
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for the update.  It looks good - all the empty tables are
+extras - you might 1) add more datasets - the extras (e.g.
+grounds/players/etc.) are not part of the standard / default build or
+2) for the standings (stats) tables youl will have to run the (re)calc
+script e.g.
+
+   All the standings (stats) table are empty unless you run the calc
+stats scripts.
+   All the players tables (including squads/rosters/goals/persons) are
+empty unless you import players and include goals in your fixtures.
+   The lang n usage are world.db table about language usage for
+countries, states, etc. (and empty unless you import the language
+dataset)
+   Badges is empty - that's for "tagging" winners, runnerups, etc.
+   Assoc/assocs is empty unless you import the football associations dataset.
+
+   Note: You might check the data model (diagram) [1] for the the core
+classes that get used (populated) with the "core" relations.
+
+   Cheers.
+
+[1] github.com/openfootball/openfootball.github.io/blob/master/i/footballdb-models.png
+

@@ -1,0 +1,124 @@
+From 6872615246598504448@xxx Tue Sep 15 07:37:11 +0000 2020
+X-GM-THRID: 6872615247479308288
+X-Received: by 2002:a1c:f719:: with SMTP id v25mr3394896wmh.159.1600155431266;
+        Tue, 15 Sep 2020 00:37:11 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a1c:80d7:: with SMTP id b206ls886603wmd.1.canary-gmail; Tue,
+ 15 Sep 2020 00:37:09 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwrC5HWmLIUVXTmK9qj3DWwI1YBULq/jTa6x4ySF20WzPl7vnqvqN/+YM0Wa5vXGqDwaafc
+X-Received: by 2002:a05:600c:2909:: with SMTP id i9mr3408026wmd.160.1600155429803;
+        Tue, 15 Sep 2020 00:37:09 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1600155429; cv=none;
+        d=google.com; s=arc-20160816;
+        b=SDrzZBIrFkHyZ/iFNy0ubjq/L+wDJfbDf3VFMbZXfPD5Avad6yNxRTuCw2b3AOrIO0
+         UKzgDTsK6ECdapzEtB4PqqqwZwAJNH8msEkg643bZsC2i6Wn38x28+6xp84ntU1+YfxO
+         I5/OZpT3n2xEvjrp8LXBRfVpw3cqcnvoHVGyRIN+oZJl7gBrW2TNJgzvhVSWNmfejboN
+         P0M5rn0FGGZR3KU6Ph5Ed8MI8dZrbPqrQtYaxBIMMSyIZ6VSFGyuO/HAvJ2kyVHOPFM7
+         Q+36x32qzJZtAx4uTDhwSR0aoQQ7RQoNZ/LzzrRiu7iTXcrZhSqq1uLurYcUQvcr5O2R
+         ByGg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=CXCJbzRNvPQXh+6XHw66xMaIyNIpMg5bHCLxXmRmLlo=;
+        b=QhyjTa9auI2kR0YliRCdMVouHDmQhHuybcndZwhWQGr9g+SgIcz/7snDzIsuCqJTU6
+         LoZRlEdt7WmvYIHFNuPpEaldQy2/jL4AqZOG3R+rhCGfouRTbEjwAqEmB6s7eOUHuHSi
+         kSBvXb3grBMqk1NLal2F9TbU3Lmq8xtbhwHjs8R7T8xGxkwkRJYDkiOpVMegbw6aEayX
+         vGolSBtT9aNE0kGT4jEDPseZo8lvMbLCJye4wOXO/GtbOLYSY949ekpChfMwaf/2Tq6F
+         rueHlODx82N+Et+BxCDM3X0qrxyzpRK1UONvxI0PGj+J9T3gRWM5/9dUX0PtdgkQnc4c
+         at0w==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=G3rrWk4K;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::635 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ej1-x635.google.com (mail-ej1-x635.google.com. [2a00:1450:4864:20::635])
+        by gmr-mx.google.com with ESMTPS id s69si334029wme.2.2020.09.15.00.37.09
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 15 Sep 2020 00:37:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::635 as permitted sender) client-ip=2a00:1450:4864:20::635;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=G3rrWk4K;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::635 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ej1-x635.google.com with SMTP id z23so3518847ejr.13
+        for <opensport@googlegroups.com>; Tue, 15 Sep 2020 00:37:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=CXCJbzRNvPQXh+6XHw66xMaIyNIpMg5bHCLxXmRmLlo=;
+        b=G3rrWk4K1tSwkSbnyzjPNzQJ4WEx+igtniTEgZ+DW9SOZYZF3qTXeIFkahlYQg8Rg/
+         55fOMlANku5p/4POx1h8YBXR3jjxoAgUAXvQdzrF7i1HMcManTqP48eyyyTW/VWTvwzX
+         UwcOcna064NIEyKc9y+9oe4cTVlchf+YzyBFdNuV6g1s/TKWSfRm4jEnX7EyOBPtAU7X
+         Ja8DAmLG3gDM1iCoTg1PyCr5YUBlf3ZhTyi3LcIMd7+uYLaHCG6A5/qbTtkqvJe+UV8c
+         enCme/C9xRONbWJbbXv/MgsNbiDJrEdMYwaXrfXvAHjI0LTNjElvyosx/SmTxmdvVxdh
+         bu+g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=CXCJbzRNvPQXh+6XHw66xMaIyNIpMg5bHCLxXmRmLlo=;
+        b=fRRvRSLiia+p1cuNT8f3kn68XDr8N1HTRNTRQT0EjJlIQpqmnQFh9R/uH2YHeukSLh
+         pr2Ws9n8i7apCsiPOylmrHbK99zfRF7jJ2Bvbj+ql3Hsz+0hhAucyXxX8HVQRlYQ1LFI
+         cvDyW3LtBpd+PNRZvykn1jvTHbtJfFOvN9BrnPNqPlvCgJkAx5TNRebwXMemEjm893Fk
+         ySjuZrPNg2Mbo4vBvfWZq7dS6lcQub2VxxWUal4PFDRes7FwgbEs8rAz1cktI1nfyO1j
+         nvkMPs72XgJ/Ab5U1ZQQc/srawAQZC6EwF3ecoMDna33zp+FSRhXtjiZ7EJ/8x4P2xgm
+         XL7w==
+X-Gm-Message-State: AOAM533PVuMgi0/XNAtaRt8oX/kJJhEkmqpEpjmaV/1sy/vlusqVojCb
+	MF7Y1QnDeiBFXafNSRL40BnOIfrK//z9QaPutiMw9Qi13HGdLg==
+X-Received: by 2002:a17:906:9245:: with SMTP id c5mr19655036ejx.54.1600155429252;
+ Tue, 15 Sep 2020 00:37:09 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 15 Sep 2020 09:36:58 +0200
+Message-ID: <CAAxEZd_JW1D4nTSnJ3XVNPSx5U0U=C9VMk4pyzzXdqtS+=SmgA@mail.gmail.com>
+Subject: football.db Gem Family 2020.9 Update for Season 2020/21 incl. all
+ FIFA countries, world's top football leagues & clubs
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I've updated the complete football.db Gem Family [1] for the Season 2020/=
+21.
+
+  The football.db gems incl. zero-config ready-to-use datasets / classes
+for all FIFA countries (240+), the world's top football leagues &
+clubs and more.
+
+   If your favorite league or clubs is missing, please tell. Try, for examp=
+le:
+
+```
+m =3D League.match( 'Premier League' )
+m.size     # 7 league matches found
+#=3D> 7
+m[0].name; m[0].country
+#=3D> "English Premier League", "England"
+m[1].name; m[1].country
+#=3D> "Welsh Premier League", "Wales"
+m[2].name;  m[2].country
+#=3D> "Russian Premier League", "Russia"
+# ...
+
+# - or -
+
+m =3D Club.match( 'Arsenal' )
+m.size     # 3 club matches found
+#=3D> 3
+m[0].name; m[0].city; m[0].country
+#=3D> "Arsenal FC", "London", "England"
+m[1].name; m[1].city; m[1].country
+#=3D> "Arsenal Tula", "Tula", "Russia"
+m[2].name; m[2].city; m[2].country
+#=3D> "Arsenal de Sarand=C3=AD", "Sarand=C3=AD", "Argentina"
+```
+
+
+   Enjoy the beautiful game scripting with ruby. Happy data wrangling.
+Cheers. Prost.
+
+[1] https://github.com/sportdb/football.db
+

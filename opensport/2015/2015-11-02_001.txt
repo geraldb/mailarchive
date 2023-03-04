@@ -1,0 +1,96 @@
+From 6212689032651997184@xxx Mon Nov 02 22:46:27 +0000 2015
+X-GM-THRID: 6212688479620431872
+X-Received: by 10.13.236.135 with SMTP id v129mr22858608ywe.9.1446504386946;
+        Mon, 02 Nov 2015 14:46:26 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.1.52 with SMTP id 20ls983736igj.1.gmail; Mon, 02 Nov 2015
+ 14:46:26 -0800 (PST)
+X-Received: by 10.50.50.201 with SMTP id e9mr13216865igo.3.1446504386542;
+        Mon, 02 Nov 2015 14:46:26 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22f.google.com (mail-io0-x22f.google.com. [2607:f8b0:4001:c06::22f])
+        by gmr-mx.google.com with ESMTPS id f7si895061igc.0.2015.11.02.14.46.26
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 02 Nov 2015 14:46:26 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) client-ip=2607:f8b0:4001:c06::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x22f.google.com with SMTP id z202so1648524iof.2
+        for <opensport@googlegroups.com>; Mon, 02 Nov 2015 14:46:26 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=5mcP2/bbCVBSoNPsCReFAk5nD6I8AujgiXjFYxiM04U=;
+        b=AIbEnN7Hj43ExIjIHckeGLPdPvqoTaFVWhdU4T3ww3ElhaSXxwnuvTnzjvLEsnE5K4
+         2wX1doYo7ZVJvdP03U395VO9mD+Hdzrmc2Y+JgnuVp0DWF/6wr70d3k3uzoWzp4en71c
+         2/LKiZbAZnnA4ZikD2/hSmMzMF2+LiYAEEtLsq+8f6HEtZGPOlrLWtW2j4LaFTJtry8L
+         HogEdE0C6uBIkx5633hu0GhUw4riMm7+LWuxs27XiR3Ue0DBtrvcIhkf6A7ZLgOdS50l
+         ymZJPvwQdEB995R6UgpqthgkQSXvEl3PQX93HBaD3Q6DIKB2vsH4yjKnnyMDU6L21czD
+         xBOA==
+MIME-Version: 1.0
+X-Received: by 10.107.170.220 with SMTP id g89mr24195867ioj.178.1446504386413;
+ Mon, 02 Nov 2015 14:46:26 -0800 (PST)
+Received: by 10.107.138.29 with HTTP; Mon, 2 Nov 2015 14:46:26 -0800 (PST)
+In-Reply-To: <d5be6760-d1b9-4225-ae13-52d8bafb9d2d@googlegroups.com>
+References: <d5be6760-d1b9-4225-ae13-52d8bafb9d2d@googlegroups.com>
+Date: Mon, 2 Nov 2015 23:46:26 +0100
+Message-ID: <CAAxEZd_00orjVEciC_ZOPt1AEkh-bG=CXCA3oCNWdDU0amxE5g@mail.gmail.com>
+Subject: Re: [opensport] very new to this
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Welcome to football.db. The best "recommended" and easiest way to
+get started is using Datafiles [1]. First, of course, you need to
+install the sportdb tool e.g.:
+
+   $ gem install sportdb                 # will also install sqlite support
+
+Now you can build yourself a database using Datafile. Example:
+
+  $ sportdb new en             # get english premier league
+
+ Will fetch zip archives from github and build the sport.db database.  Now try:
+
+  $ sqlite3 sport.db
+  > .tables
+  >  select from * teams;
+  > .exit
+
+  I'd recommend starting with sqlite3 - if you're new to the sqlite3
+command line you might try/use a visual tool - try SQLite Studio [2]
+(it's free).
+
+  The best way to get started is to get started and than if you have
+more (new) questions post them here. Cheers.
+
+[1] github.com/openfootball/datafile
+[2] sqlitestudio.pl
+
+
+2015-11-02 22:22 GMT+01:00 Sudharshan Srinivasan <srini.sudharshan@gmail.com>:
+> hey,
+> I am very new to this.I wanted to create a fantasy premier league program
+> using c++ and want to use this database for player details like
+> price,teams,etc..
+> Any idea on how to start including how to get this from the github
+> repositories.
+>
+> thanks in advance
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> To post to this group, send email to opensport@googlegroups.com.
+> Visit this group at http://groups.google.com/group/opensport.
+> For more options, visit https://groups.google.com/d/optout.
+

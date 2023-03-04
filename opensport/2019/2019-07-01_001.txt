@@ -1,0 +1,102 @@
+From 6708745989098831872@xxx Mon Jul 01 17:20:47 +0000 2019
+X-GM-THRID: 6704696585499967488
+X-Received: by 2002:a19:750b:: with SMTP id y11mr12230310lfe.16.1562001646980;
+        Mon, 01 Jul 2019 10:20:46 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a2e:63dc:: with SMTP id s89ls1226491lje.1.gmail; Mon, 01 Jul
+ 2019 10:20:45 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqylmJ04aOxSonK51wEYkXPYHQ4hSYWhaQBp30IHjWYPvGCvRhpMsWHjFiwpxkMJ7LLaZxua
+X-Received: by 2002:a2e:2d12:: with SMTP id t18mr2798500ljt.175.1562001645881;
+        Mon, 01 Jul 2019 10:20:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1562001645; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CkLaVEKLskubv/M9YZDVYamJzmEMQ/4Z6Aut5zIqIIBnbXvOXARMMFTGSPgsV/BpOY
+         bn5mX4mM3R7+AC65kkY7T0k3iyRHssJtG6+A850SlwDS46byl5kYlZHATwBpsEpx1J81
+         e/PqN9/lBMK7Ze96+X2XXn7zLLT+c+HWez8laa5ir0+Rfx0pK7hoDbMvUN18m8MO8mlO
+         G+AsFpFNIf+n3Lqf5U12n4jh8ZLqM72dMbZxDpR2uxrQ2qWF5QHyGfLiadJpsIgd3rMS
+         pp9iRxhOSQXpOY4XZBzcT1Vy1XLzdjO2OA/PCCIIoRRhUAKHyXZmaoujq57zlud4C9W3
+         0hIg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=74czhvjJ5rBafAb+G+o9BQOxeRs8lk/OL7lfSj8DEaw=;
+        b=sARpkK21e0fzBrK3ylJhREIvk5uv7fVj/NUj5293XM6yYXmaFLtmDRDfwVQhsNNmgv
+         HNFi+KCzIVjhKCfxXMypIrUoZ08UzC+sX14whsKCAgaX4TE9cIrr7UYoHDhU188RvArj
+         A3YQoerNJTr9GUWs7V9x7JhCcy396NalaPkjfPAV/C7tygBOUHOYaoyEGANa4RZ5LXe4
+         APwQDmn5Bv8rGsT+SfTqvbateNfVUiEmgJDH6jkv2HrWXu2avyz1RX0vRCqOdFYgf4/t
+         V/dR+YScMFcxAM8VpEQgfT1XWD7aacC5OhAT9fY7ysW6A7oIP+5BWk3vqgLwLdBLGBNb
+         N9mQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=D7y6IlZo;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x136.google.com (mail-lf1-x136.google.com. [2a00:1450:4864:20::136])
+        by gmr-mx.google.com with ESMTPS id m84si539465lje.1.2019.07.01.10.20.45
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=AEAD-AES128-GCM-SHA256 bits=128/128);
+        Mon, 01 Jul 2019 10:20:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) client-ip=2a00:1450:4864:20::136;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=D7y6IlZo;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x136.google.com with SMTP id q26so9353611lfc.3
+        for <opensport@googlegroups.com>; Mon, 01 Jul 2019 10:20:45 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=74czhvjJ5rBafAb+G+o9BQOxeRs8lk/OL7lfSj8DEaw=;
+        b=D7y6IlZoZxXWQO+CgZ3W5JYySyZaCyEYrlDaP0IX9Xq0Hc5rELMvEa+u0iksFTfqQ6
+         GXWMOxGkLvqa8YkDuNy78dr8u2QbqouMuZDZAo7ko9/6RLv2JDED72IZx5CAIUCewQnz
+         Tw0t6tSEqjuednYX1Dx1LPxq5jkrA4WGj6oPwUScg/FZ/8LEj4ss30AEdKe5o+wBoo+R
+         xGVOZtNWFtI56+DIUjL+S30Apo2Q6RRHRl2WXgD7UGikBJz+cfyw932cD9IxN+nSoAoi
+         97+agbKPwxCetWBsLsZ2XJBpPF1Pbn6APOymzIhPknWFQVSUlJbOYJFSNV5Qi2qAEGqL
+         iWUw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=74czhvjJ5rBafAb+G+o9BQOxeRs8lk/OL7lfSj8DEaw=;
+        b=Hb898BwbtFWv3xVp2MSGTUhZZLBikZ4pPCnxmshZLB6CTHutPMDMtvrF5Zl8BT/9Fk
+         A+OllusuGziWyu5FfYUc/D3dShvdSA58KnrK2zrCKsU6xW39KKkgKRN3ECt3pJ4Fo/ON
+         1rUzp2kAYidf1kYGaLRqXu7BokWjuJXNSbow0hBz0cvT2jjsKwGh7oNfNZ0CFzdba7b7
+         q4MydMyHnOspkai+6pXatD0DDOyRoHOGy93M6AjXNW+WjURM7YnkS00BfPDwduGR/4j4
+         yVfMEeOTRGUeiJ/0GrKHFp1xEyTo4O0cBA4ax0udXNi7AQxoMWSxTG1Ot0WNZ+dSmGA4
+         3SMA==
+X-Gm-Message-State: APjAAAUfIn48jU1Jqqhtvo4omM20A6/tefdWSo92Zai1DrnIu/52eAEf
+	lF8TVImJcxKGr/BBtyJCyjC9iu+zyfqNPuGFEzJHZFwg2bo=
+X-Received: by 2002:a19:4208:: with SMTP id p8mr12108042lfa.8.1562001645439;
+ Mon, 01 Jul 2019 10:20:45 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAAxEZd_EbR1eEuJb97gYE=qgXvJetZ2F3TsxVGihEPrUuwrgJg@mail.gmail.com>
+ <344ede64-5b18-4a6c-a5c4-746284c37bb8@googlegroups.com> <CAAxEZd--M5cfi0teCh5ozW=6dq-zhJnrzqYUPBwqHJ7ymXQXhg@mail.gmail.com>
+ <7a8905c9-85ee-4cf3-a652-34935b2e01c5@googlegroups.com>
+In-Reply-To: <7a8905c9-85ee-4cf3-a652-34935b2e01c5@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 1 Jul 2019 19:20:34 +0200
+Message-ID: <CAAxEZd_6gAwVB2OwX3RWtx0PSmsZg2Cztz6PCRRoPZ5yR1fypg@mail.gmail.com>
+Subject: Re: [opensport] Re: New football.db Match Importer for CSV Packages
+ (incl. England, Deutschland, and More)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   Thanks for the offer. Still a work-in-progress but if you want to
+give it a try you're more than welcome.
+   What's news?
+
+   The (csv) text importer now requires a (shared local) copy of the
+clubs datasets [1].
+   Use
+      SportDb::Import.config.clubs_dir = './clubs'
+    to configure / set the directory holding the clubs datasets / text files.
+
+   I've updated the sample code for england in the readme [2].
+
+   Good luck if try. Cheers. Prost.
+
+[1] https://github.com/openfootball/clubs
+[2] https://github.com/sportdb/sport.db/tree/master/sportdb-import
+

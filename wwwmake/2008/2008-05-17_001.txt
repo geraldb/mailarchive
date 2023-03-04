@@ -1,0 +1,74 @@
+From 1882193920@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 2090860544
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,8bd07cefda4381c1,start
+X-Google-Attributes: gid592b7a,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.114.173.8 with SMTP id v8mr446809wae.17.1211060566836;
+        Sat, 17 May 2008 14:42:46 -0700 (PDT)
+Return-Path: <geraldbauer2007@gmail.com>
+Received: from wa-out-1112.google.com (wa-out-1112.google.com [209.85.146.177])
+        by mx.google.com with ESMTP id m36si43119162wag.3.2008.05.17.14.42.46;
+        Sat, 17 May 2008 14:42:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of geraldbauer2007@gmail.com designates 209.85.146.177 as permitted sender) client-ip=209.85.146.177;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of geraldbauer2007@gmail.com designates 209.85.146.177 as permitted sender) smtp.mail=geraldbauer2007@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by wa-out-1112.google.com with SMTP id j37so1014596waf.23
+        for <webslideshow@googlegroups.com>; Sat, 17 May 2008 14:42:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        bh=2xLL0weIRBC3VAQujhc1qEaDM3xoh8wMPkBs2E95Uq8=;
+        b=EZYPcojkY1p82eyPrbF6TRFcWV3WBRlmlL0DlWUpBQd28fh68dnvVSWQ/Skbk9EpuT6q6BHzv4iqQurH1VFWdJOqDyOys8CorDNqTJq6diofOqKYuFJ2SBq5xSpCGssU8mN83nX1Su2jx5J8sd7fYqGViWHNotBAVpdkuQILJyg=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        b=r5R8Q4EN1Bk6vZmxU3VyD1hCjqUS6C/YZjrLETclu0QG8wZyaOLIs5nfwosz8CZepdhYAxAbWQjjDqM1Vhv8bH+3QA3LJLJDBVkNBkFbZ5n92uBTQVe4PJe7RiS3bWZER1faZO644evJrURhqIGr717HBk0bX645mw3FhqgX9aU=
+Received: by 10.114.39.16 with SMTP id m16mr5465405wam.146.1211060566192;
+        Sat, 17 May 2008 14:42:46 -0700 (PDT)
+Received: by 10.114.144.11 with HTTP; Sat, 17 May 2008 14:42:46 -0700 (PDT)
+Message-ID: <7e7cb8940805171442s7be1e0a1pd98abc6204d4992f@mail.gmail.com>
+Date: Sat, 17 May 2008 14:42:46 -0700
+From: "Gerald Bauer" <geraldbauer2007@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Slide Show (S9) v0.3 - Author Your Slides Using Markdown; Now Opera Show Compatible
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello,
+
+   I've published an update to Slide Show (S9) - a Ruby gem that lets
+you create slide shows and author slides in plain text using a
+wiki-style markup language that's easy-to-write and easy-to-read.
+
+  What's new? You can now author your slides in Markdown.
+
+  You can find two samples online in Markdown:
+
+  o http://slideshow.rubyforge.org/svn/samples/rest.text
+  o http://slideshow.rubyforge.org/svn/samples/microformats.text
+
+  And the matching slide shows are online at:
+
+   o http://slideshow.rubyforge.org/rest.html
+   o http://slideshow.rubyforge.org/microformats.html
+
+   Note, Slide Show (S9) is now also compatible with the Opera Show
+Format and, thus, works with the Opera browser without requiring any
+plugins (it's all built-in - just press F11 to get started and page
+up/down to flip through the slide show).
+
+   Find out more about the Slide Show (S9) Ruby gem @
+http://slideshow.rubyforge.org
+
+   Questions and comments welcome.
+
+  Cheers.
+
+PS: Yuri Takhteyev has added S9-style slide shows to Sputnik - a wiki
+in Lua. More @ http://sputnik.freewisdom.org/en/Slideshow_Demo
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.wordpress.com
+

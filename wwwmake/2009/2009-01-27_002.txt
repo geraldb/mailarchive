@@ -1,0 +1,73 @@
+From 349470457856@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 236181258240
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,b526c63f44a856c2
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.150.192.7 with SMTP id p7mr166886ybf.20.1233090608385; Tue, 27 
+	Jan 2009 13:10:08 -0800 (PST)
+Date: Tue, 27 Jan 2009 13:10:08 -0800 (PST)
+In-Reply-To: <23133a06-7206-46c2-a05b-3fa81963a2e7@f40g2000pri.googlegroups.com>
+X-IP: 91.115.101.228
+References: <73274d3c-74bf-4ae0-b866-1593faebd6a0@n33g2000pri.googlegroups.com> 
+	<f0c9eb0e-b1f8-4e93-8f90-69d65da0f422@s9g2000prg.googlegroups.com> 
+	<dc8a84dd-8812-4deb-badf-3d2462a74eef@s9g2000prg.googlegroups.com> 
+	<6592a155-a315-49ac-9b45-f3646b77c0c2@p2g2000prn.googlegroups.com> 
+	<016db0ac-98ea-4e83-8f41-6abd33ed7afb@p23g2000prp.googlegroups.com> 
+	<3ba52c10-3d4d-4cf9-89f7-06a0cecadec5@i18g2000prf.googlegroups.com> 
+	<23133a06-7206-46c2-a05b-3fa81963a2e7@f40g2000pri.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EATaXgwAAAB4PFAaLxc92uHzBpf253PM
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) 
+	AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.43 Safari/525.19,gzip(gfe),gzip(gfe)
+Message-ID: <fb09ceda-a333-416b-aa4e-46f6e303bf89@r36g2000prf.googlegroups.com>
+Subject: Re: Contribute
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+> Hi Gerald: I'm done!
+> You can found my patch athttp://github.com/jcangas/slideshow/tree/master.
+> Please, note this is a fork from slideshow 0.6.1. I see you published
+> 0.7.1.
+> My changes are little, so I hope you can merge whit this last version
+> easy, but ask for help if you need
+
+   Fantastic. Thanks for showing the way!  I uploaded a new gem
+version, that is, 0.7.2 with all your changes added, that is:
+   1)  added support for full and relative paths for slideshow source
+files
+   2)  added a new option -o/--output that lets you set the output
+folder
+
+  Now you can use:
+
+   slideshow -o slides src/rest
+   slideshow -o ~/talks ../samples/tagging
+
+   and so on. Note, the output switch works for template package
+generation too e.g.
+
+   slideshow -g -o style
+
+
+  I only made a tiny change to set the default output folder to .
+(that is, the current folder). Please, use -o slides if that's your
+preference. I will work out and add a procedure in an upcoming update
+that lets you set your preferences once e.g. in a settings file in the
+home folder or a SLIDESHOWOPT=/o slides env variable or similar.
+
+> By the way, has you consider moving to github? Is a great chance to
+> get love for slideshow from comunity, you know: doc, test,
+> enhancements.
+> Well, is only an idea,
+
+  Thanks for the reminder. I plan to move to git and github in the
+next couple of weeks.
+
+  Cheers.
+

@@ -1,0 +1,63 @@
+From 360768864256@xxx Tue Jun 16 00:17:18 +0000 2015
+X-GM-THRID: 359372161024
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,3d7f86f6355f099e
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.189.228 with SMTP id gl4mr9508316pac.26.1393174061262;
+        Sun, 23 Feb 2014 08:47:41 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.44.101 with SMTP id f92ls342609qga.61.gmail; Sun, 23 Feb
+ 2014 08:47:41 -0800 (PST)
+X-Received: by 10.236.210.40 with SMTP id t28mr7345485yho.44.1393174061057;
+        Sun, 23 Feb 2014 08:47:41 -0800 (PST)
+Received: by 10.224.127.199 with SMTP id h7msqas;
+        Sun, 23 Feb 2014 06:32:21 -0800 (PST)
+X-Received: by 10.140.93.109 with SMTP id c100mr14928qge.16.1393165941680;
+        Sun, 23 Feb 2014 06:32:21 -0800 (PST)
+X-Google-Doc-Id: c79673dcd5d2c31b
+X-Google-Web-Client: true
+Date: Sun, 23 Feb 2014 06:32:20 -0800 (PST)
+From: Fabio <fabio.genoese@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <eb215b28-052e-42c7-afdc-6c070d8ea347@googlegroups.com>
+Subject: sportdb: show time of a fixture
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_273_9544287.1393165940990"
+X-Google-Token: EPSMqJgFberZocyTFZs0
+X-Google-IP: 91.183.211.151
+
+------=_Part_273_9544287.1393165940990
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_274_20662480.1393165940990"
+
+------=_Part_274_20662480.1393165940990
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+I just installed the sport.db.ruby<https://github.com/geraldb/sport.db.ruby>and fired up the server - works very well!
+
+I noticed that the sqlite database contains both the time and date of a 
+fixture but the JSON service only displays the date. Also, the group is not 
+shown in the case of a world cup, for example. How can I change this? 
+
+Admittedly, I installed via 'gem install sportdb' - but I have looked into 
+the source. Looks like it is something 
+in: https://github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/models/game.rb
+Could you please give me a hint?
+
+Thanks,
+Fabio
+
+------=_Part_274_20662480.1393165940990
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi Gerald,<div><br></div><div>I just installed the <a href="https://github.com/geraldb/sport.db.ruby">sport.db.ruby</a> and fired up the server - works very well!</div><div><br></div><div>I noticed that the sqlite database contains both the time and date of a fixture but the JSON service only displays the date. Also, the group is not shown in the case of a world cup, for example. How can I change this?&nbsp;</div><br>Admittedly, I installed via 'gem install sportdb' - but I have looked into the source. Looks like it is something in:&nbsp;https://github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/models/game.rb<div>Could you please give me a hint?</div><div><br></div><div>Thanks,</div><div>Fabio</div></div>
+------=_Part_274_20662480.1393165940990--
+
+------=_Part_273_9544287.1393165940990--
+

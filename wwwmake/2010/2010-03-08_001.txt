@@ -1,0 +1,99 @@
+From 606377869312@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 584561197056
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,386518f236493d23
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.204.39.201 with SMTP id h9ls698013bke.1.p; Mon, 08 Mar 2010 
+	10:40:25 -0800 (PST)
+Received: by 10.204.163.70 with SMTP id z6mr305928bkx.36.1268073625303;
+        Mon, 08 Mar 2010 10:40:25 -0800 (PST)
+Received: by 10.204.163.70 with SMTP id z6mr305927bkx.36.1268073625269;
+        Mon, 08 Mar 2010 10:40:25 -0800 (PST)
+Return-Path: <alex.boisvert@gmail.com>
+Received: from mail-wy0-f173.google.com (mail-wy0-f173.google.com [74.125.82.173])
+        by gmr-mx.google.com with ESMTP id v16si2501273bkt.3.2010.03.08.10.40.24;
+        Mon, 08 Mar 2010 10:40:24 -0800 (PST)
+Received-SPF: pass (google.com: domain of alex.boisvert@gmail.com designates 74.125.82.173 as permitted sender) client-ip=74.125.82.173;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of alex.boisvert@gmail.com designates 74.125.82.173 as permitted sender) smtp.mail=alex.boisvert@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by wyb36 with SMTP id 36so3177217wyb.18
+        for <webslideshow@googlegroups.com>; Mon, 08 Mar 2010 10:40:24 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:in-reply-to:references
+         :date:message-id:subject:from:to:content-type;
+        bh=pYDh7o9O/9195jYCgWcBBT3iq78J8yFR640O1gtSbeA=;
+        b=SVEmH0IGHEWMFjvjW9Vk1sgWQnUXbAwInsou7HU2T86+3ENvho3LvXVK9zjsWk1wWO
+         Ya/6a27UUjW03hpbB4nwoJd0tu4hgSeGBqjzeTLoF/hUqHVGc1yNVlZWT2EEalFu/t8r
+         REUpF7kDWD7OYzuKpZJ36s/K+H+mI+xWdlqU8=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        b=SlnnfAy4BJgyvB9EMiGyzYGFp51jcIssaBotXIjV1oS5ZFZa4zg5GXFXoGlgNOWJsf
+         c6dArCjs87IvZIS+WAFkDiasdxhPO7QHpC+KH+G47wgTjO0M2aoDQBzvfdRd2vyW0JXb
+         qpUmUouoSRB8Gx1LWAqRgCkgvmw2cLqLGwqhA=
+MIME-Version: 1.0
+Received: by 10.216.163.133 with SMTP id a5mr1212882wel.82.1268073623949; Mon, 
+	08 Mar 2010 10:40:23 -0800 (PST)
+In-Reply-To: <abacf3b61003081025n5970ebc2w7795d64967d0ce9d@mail.gmail.com>
+References: <abacf3b61003020922l6d34adet262379abafdc0379@mail.gmail.com>
+	 <4dcd15a91003071000o1af014feg760e34f3da9d981d@mail.gmail.com>
+	 <abacf3b61003081005y756b6a2aq233b2b4f29919489@mail.gmail.com>
+	 <4dcd15a91003081018y69b3e9beu40eee8aee2285792@mail.gmail.com>
+	 <abacf3b61003081025n5970ebc2w7795d64967d0ce9d@mail.gmail.com>
+Date: Mon, 8 Mar 2010 10:40:23 -0800
+Message-ID: <4dcd15a91003081040t7d076b59v6bfcef65d85fce1@mail.gmail.com>
+Subject: Re: [slideshow] Continuous Build System for Slideshows
+From: Alex Boisvert <alex.boisvert@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: multipart/alternative; boundary=0016363ba668e7930a04814e6561
+
+--0016363ba668e7930a04814e6561
+Content-Type: text/plain; charset=ISO-8859-1
+
+On Mon, Mar 8, 2010 at 10:25 AM, Kevin Gisi <kevin@kevingisi.com> wrote:
+
+> Yeah, you very clearly win on this one. My process had been to use
+> Selenium/Xvfb/Firefox-headless to click through each slide, get a
+> screenshot, and then use ImageMagick to combine them all into a
+> slightly-bloated PDF of images.
+
+
+Oh yeah, now I see that it's not so... hmmm... optimal.
+
+
+> It might still be worth grabbing the screenshots, but your solution is much
+> much stronger!
+>
+
+All kudos go to Assaf Arkin for finding this solution (initially with
+Docter, then with Jekyll).  I'm just a happy copycat.
+
+alex
+
+--0016363ba668e7930a04814e6561
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div class=3D"gmail_quote">On Mon, Mar 8, 2010 at 10:25 AM, Kevin Gisi <spa=
+n dir=3D"ltr">&lt;<a href=3D"mailto:kevin@kevingisi.com">kevin@kevingisi.co=
+m</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_quote" style=3D"borde=
+r-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-le=
+ft: 1ex;">
+Yeah, you very clearly win on this one. My process had been to use Selenium=
+/Xvfb/Firefox-headless to click through each slide, get a screenshot, and t=
+hen use ImageMagick to combine them all into a slightly-bloated PDF of imag=
+es.</blockquote>
+<div><br>Oh yeah, now I see that it&#39;s not so... hmmm... optimal.<br>=A0=
+<br></div><blockquote class=3D"gmail_quote" style=3D"border-left: 1px solid=
+ rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;"><div>
+It might still be worth grabbing the screenshots, but your solution is much=
+ much stronger!<br></div></blockquote><div><br>All kudos go to Assaf Arkin =
+for finding this solution (initially with Docter, then with Jekyll).=A0 I&#=
+39;m just a happy copycat.<br>
+<br>alex<br></div></div><br>
+
+--0016363ba668e7930a04814e6561--
+

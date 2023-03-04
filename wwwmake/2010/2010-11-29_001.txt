@@ -1,0 +1,49 @@
+From 790838116352@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 789508521984
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,df063140bb49779c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.101.172.8 with SMTP id z8mr777266ano.4.1291072000659;
+        Mon, 29 Nov 2010 15:06:40 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.100.26.21 with SMTP id 21ls1180823anz.2.p; Mon, 29 Nov 2010
+ 15:06:40 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.101.106.25 with SMTP id i25mr179127anm.48.1291072000115; Mon,
+ 29 Nov 2010 15:06:40 -0800 (PST)
+Received: by s5g2000yqm.googlegroups.com with HTTP; Mon, 29 Nov 2010 15:06:40
+ -0800 (PST)
+Date: Mon, 29 Nov 2010 15:06:40 -0800 (PST)
+In-Reply-To: <4a403744-dfa2-4dcc-909b-361cd3e9c266@a7g2000vbz.googlegroups.com>
+X-IP: 132.248.130.184
+References: <4a403744-dfa2-4dcc-909b-361cd3e9c266@a7g2000vbz.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EIDk0OcErwmdjOclAXs0
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.6)
+ Gecko/20100625 Firefox/3.6.6,gzip(gfe)
+Message-ID: <86cea953-c4ca-40d6-b186-13b65e57246c@s5g2000yqm.googlegroups.com>
+Subject: Re: How to center text
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello Jason,
+
+    Thanks for your kind words. To center text the easiest way is to
+use CSS. The built-in template already has some CSS classes defined
+for centering text, that is, center and fullscreen.
+
+    You can use it like (using Textile markup):
+
+    h1(fullscreen). Part 1 - What's REST?
+
+    or
+
+   h1(center). Part 1 - What's REST?
+
+   Cheers.
+
+PS: You can find the sample slideshow @ http://slideshow.rubyforge.org/rest.html
+and the textile source @ https://github.com/geraldb/slideshow/raw/master/samples/rest.textile
+

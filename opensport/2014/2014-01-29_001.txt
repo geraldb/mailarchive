@@ -1,0 +1,134 @@
+From 255202426880@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 252823207936
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,91274d0de1d6fc38
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.224.4.202 with SMTP id 10mr3726266qas.7.1391029035224;
+        Wed, 29 Jan 2014 12:57:15 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.112.131 with SMTP id iq3ls483282igb.15.gmail; Wed, 29 Jan
+ 2014 12:57:15 -0800 (PST)
+X-Received: by 10.50.66.243 with SMTP id i19mr394307igt.17.1391029035030;
+        Wed, 29 Jan 2014 12:57:15 -0800 (PST)
+X-Google-Doc-Id: 2fbee2cf5194418c
+X-Google-Web-Client: true
+Date: Wed, 29 Jan 2014 12:57:13 -0800 (PST)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <36cce30c-d387-437b-880a-54f9d3f654ea@googlegroups.com>
+In-Reply-To: <d7f4432d-8234-4fe2-9d86-ddb1405fa163@googlegroups.com>
+References: <d7f4432d-8234-4fe2-9d86-ddb1405fa163@googlegroups.com>
+Subject: Re: A couple of questions...
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_22_23375708.1391029033915"
+X-Google-Token: EKnWpZcFOnf3-4jesag0
+X-Google-IP: 201.103.47.151
+
+------=_Part_22_23375708.1391029033915
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_23_20235733.1391029033915"
+
+------=_Part_23_20235733.1391029033915
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+1 - As another user asked before, how are the data maintained? I mean, when 
+> are you gonna update a result after the match is played? (An example)
+>
+
+    The match data is a plain text file residing on GitHub. For example, 
+the match data for the World Cup 2014 in Brazil lives @ 
+ github.com/openfootball/world-cup/blob/master/2014/cup.txt
+
+   Basically, it works like a wiki - anybody can update it (if you're a 
+openfootball team member - you can update it directly; otherwise you may 
+use a pull request).   It's an all volunteer effort, thus, there is no 
+guarantee for updates. In practice I plan to update the World Cup 2014 at 
+least once a day (since I plan to use the results for sportbook).
+
+   Once the results got updated on GitHub - you can sync your app via the 
+built in machinery of the sportdb gem (basically just call SportDb.update! 
+)  or use the public HTTP JSON API that gets for now updated once a day 
+(that is, every 24 hours). 
+ 
+
+>
+> 2 - Which data is included for a result? (Who scored the goals?)
+>
+
+   For now only the results e.g.   Italy 3-0 Spain   etc.
+. Again see the plain text fixtures files, for an example. Goals scored by 
+players will get added later.    
+
+
+> 3 - I don't know where can I find all the possible available URLs for the 
+> web service.
+>
+
+   Sorry, the docu page for the web service is currently down [1], it 
+resides @ footballdb.herokuapp.com/api   but the service is working. 
+Example:
+
+  - Get the teams for the World Cup 2014 -> 
+footballdb.herokuapp.com/api/v1/event/world.2014/teams
+  - Get all rounds -> 
+footballdb.herokuapp.com/api/v1/event/world.2014/rounds
+  - Get 1st round games -> 
+footballdb.herokuapp.com/api/v1/event/world.2014/round/1
+  - etc.
+   
+  Cheers.
+
+[1] The docu source page for the HTTP JSON API resides @ 
+github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/service/views/index.erb
+
+------=_Part_23_20235733.1391029033915
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br><blockquote class=3D"gmail_quote" style=3D"m=
+argin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"=
+><div dir=3D"ltr"><div>1 - As another user asked before, how are the data m=
+aintained? I mean, when are you gonna update a result after the match is pl=
+ayed? (An example)</div></div></blockquote><div><br></div><div>&nbsp; &nbsp=
+; The match data is a plain text file residing on GitHub. For example, the =
+match data for the World Cup 2014 in Brazil lives @ &nbsp;github.com/openfo=
+otball/world-cup/blob/master/2014/cup.txt</div><div><br></div><div>&nbsp; &=
+nbsp;Basically, it works like a wiki - anybody can update it (if you're a o=
+penfootball team member - you can update it directly; otherwise you may use=
+ a pull request). &nbsp; It's an all volunteer effort, thus, there is no gu=
+arantee for updates. In practice I plan to update the World Cup 2014 at lea=
+st once a day (since I plan to use the results for sportbook).</div><div><b=
+r></div><div>&nbsp; &nbsp;Once the results got updated on GitHub - you can =
+sync your app via the built in machinery of the sportdb gem (basically just=
+ call SportDb.update! ) &nbsp;or use the public HTTP JSON API that gets for=
+ now updated once a day (that is, every 24 hours).&nbsp;</div><div>&nbsp;</=
+div><blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex=
+;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr"><div><br>=
+</div><div>2 - Which data is included for a result? (Who scored the goals?)=
+</div></div></blockquote><div><br></div><div>&nbsp; &nbsp;For now only the =
+results e.g. &nbsp; Italy 3-0 Spain &nbsp; etc.</div><div>. Again see the p=
+lain text fixtures files, for an example. Goals scored by players will get =
+added later. &nbsp; &nbsp;</div><div><br></div><blockquote class=3D"gmail_q=
+uote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;pad=
+ding-left: 1ex;"><div dir=3D"ltr"><div><br></div><div>3 - I don't know wher=
+e can I find all the possible available URLs for the web service.</div></di=
+v></blockquote><div><br></div><div>&nbsp; &nbsp;Sorry, the docu page for th=
+e web service is currently down [1], it resides @&nbsp;footballdb.herokuapp=
+.com/api &nbsp; but the service is working. Example:</div><div><br></div><d=
+iv>&nbsp; - Get the teams for the World Cup 2014 -&gt; footballdb.herokuapp=
+.com/api/v1/event/world.2014/teams</div><div>&nbsp; - Get all rounds -&gt; =
+footballdb.herokuapp.com/api/v1/event/world.2014/rounds</div><div>&nbsp; - =
+Get 1st round games -&gt; footballdb.herokuapp.com/api/v1/event/world.2014/=
+round/1</div><div>&nbsp; - etc.</div><div>&nbsp; &nbsp;</div><div>&nbsp; Ch=
+eers.</div><div><br></div><div>[1] The docu source page for the HTTP JSON A=
+PI resides @ github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/servi=
+ce/views/index.erb</div></div>
+------=_Part_23_20235733.1391029033915--
+
+------=_Part_22_23375708.1391029033915--
+

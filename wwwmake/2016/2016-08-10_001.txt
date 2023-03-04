@@ -1,0 +1,75 @@
+From 6317133677469892608@xxx Wed Aug 10 09:45:01 +0000 2016
+X-GM-THRID: 6317133676979159040
+X-Received: by 10.107.53.228 with SMTP id k97mr2699345ioo.10.1470822300783;
+        Wed, 10 Aug 2016 02:45:00 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.157.30.227 with SMTP id n90ls13139378otn.43.gmail; Wed, 10 Aug
+ 2016 02:45:00 -0700 (PDT)
+X-Received: by 10.129.41.5 with SMTP id p5mr2031297ywp.45.1470822300374;
+        Wed, 10 Aug 2016 02:45:00 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22a.google.com (mail-it0-x22a.google.com. [2607:f8b0:4001:c0b::22a])
+        by gmr-mx.google.com with ESMTPS id o123si450817ith.3.2016.08.10.02.45.00
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 10 Aug 2016 02:45:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) client-ip=2607:f8b0:4001:c0b::22a;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22a.google.com with SMTP id f6so39238459ith.0
+        for <wwwmake@googlegroups.com>; Wed, 10 Aug 2016 02:45:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=d29+9rZyTSDdcKmj82jeBi/aXwFLqHO8WJuSawrqiN4=;
+        b=m4Oz0VwoV2BDJq4rjmZH6k8zBEA1ynweRjeEerqy8xITTQxfhSgN2/Yv8LvanvPkKQ
+         0rUTwlqV/T9vXgeUc/++k8J0llfKDrogxfD/NlBnpYlGLXelNOX1ptI4bnIGiNY0HYw3
+         Fg/bMvhoep2JmcZur/dryX1OeprIJtQ8JhLzIVNC+7bmRqF29y3td/Tfv24PwhrjF/RF
+         Ed2axccTZPQyxEao1170lNytsaFXZW+J9WUf/LLEn7O/AgHI3ydW9bT6th9u0SP+viIT
+         b+eoad0tsJRZoXvB65wY+p9zKudss9HOw6WYw5VxOEYmFkYX+F8FXWsOE5fZBJP7UcVn
+         NEVQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=d29+9rZyTSDdcKmj82jeBi/aXwFLqHO8WJuSawrqiN4=;
+        b=EiSEgdFNdRD5ePU+a8qrJKTDuVGmSlS3/VsCLMEXYaPRiSbrRHpjBdQHyWL/1a8Hkj
+         p6rfDpDA6LyQBhWjW7kXbcCkhWin+Y8aH9AqZ77bwW/b9PegAf+zdYIeF4ewexxAcIDW
+         AmBspeia1liSBfJfeif546wR4qLy4oHiCongCTw6H9sLv9XK47vsTYIvldkZAQmNGhXB
+         Mxtqr+ygeyQrXDJocwPyqbvmhKP6SaIwKyl3HHw57kDSGq0qVZaEzz5j57kOeLsLN1QZ
+         CycTg0R5dJMPzUYRBY1BLq96riv68S5Acai/FGP76UKeqAyKgkiIPgBqaxACDsAHOo19
+         AiLQ==
+X-Gm-Message-State: AEkooutLDAPDrU1EnhEObR9vcgHLdo7IWKtlxAj/f6nEiKE4hMlY8FrLkJ3zai9MCag+CupNAwm52JcimVK8Zg==
+X-Received: by 10.36.123.139 with SMTP id q133mr2183710itc.10.1470822300055;
+ Wed, 10 Aug 2016 02:45:00 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Wed, 10 Aug 2016 02:44:59 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 10 Aug 2016 11:44:59 +0200
+Message-ID: <CAAxEZd_k--UEoY9P_6z6pnOmZHc1=eSyYTnf1=KzNO24-4RGDQ@mail.gmail.com>
+Subject: Nanoc - New Static Site Sample - Stay Static Showcase Update #3
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Inspired by the TodoMVC showcase I've started to put together a
+static (web)site builder / generator showcase named Stay Static [1].
+The idea is helping you find your static (web)site builder / generator
+that works best for you (e.g. Jekyll, Middleman or Webgen?)
+
+  The latest new static site samples includes Nanoc [2] plus source [3].
+
+  The standard sample showcases 1) pages 2) post and 3) custom content
+types (e.g. bookmarks 'n' links). Is your static (web)site builder /
+generator missing? New sample static sites welcome. Cheers.
+
+PS: Interested in Static (Web)Site News? Follow along the Static Times
+on twitter @statictimes [4].
+
+[1]: http://staystatic.github.io
+[2]: http://staystatic.github.io/sites/nanoc
+[3]: https://github.com/staystatic/staystatic/tree/master/nanoc
+[4]: https://twitter.com/statictimes
+

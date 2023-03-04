@@ -1,0 +1,108 @@
+From 6816648739527065600@xxx Fri Apr 17 11:58:34 +0000 2020
+X-GM-THRID: 6815540562521751552
+X-Received: by 2002:a7b:c313:: with SMTP id k19mr3031433wmj.100.1587124713519;
+        Fri, 17 Apr 2020 04:58:33 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a5d:4c50:: with SMTP id n16ls1814519wrt.11.gmail; Fri, 17
+ Apr 2020 04:58:32 -0700 (PDT)
+X-Google-Smtp-Source: APiQypL+gP1yW2J+qMa6XaIKZwMCWhcHgh03Qisi8xNVfugV+C4aQ4c/mD1fLPpXVJ9ih47Q0TKh
+X-Received: by 2002:a5d:5745:: with SMTP id q5mr3782056wrw.351.1587124712362;
+        Fri, 17 Apr 2020 04:58:32 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1587124712; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Bjq2fxLwLmoGchwtZrG6OaLqBiboB4mlff1h741Nz735H/hQ6sOYYvbd2zWq5u1HOg
+         Hs3pbRmT2meclPd+ubiyEfPLCc+sgMiszdPtNNHTW3HTSJH90X+JfsllXcUaQTdum7LH
+         bDWgwxntAhFNOIwa+r/G5JwBYjhk3U8Oze5X0I6qzviYAm2foCXNpDEHm98Cccns90q4
+         XLUrxLRjg2Ewih+qijS5x058tApCHMPI7XIGWULcJCRZ/NjQToGvY+BH3xWctIEA/gG2
+         LeWz2GhpURm8EpcELHOvdeEBIbrwRQDCclJA5mRu0wuop431RmZZ3ZLF2KlquzY924mz
+         9qKg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=O+CpUXbR/UUMAX/o0ddW+yldA6HKTXanoFbQ43joWig=;
+        b=PSOgbFiZ8fOcmTTJ0C6MB78nXFB/4TQQwACS0s5RK4V0ziJ2Q7OgjertQAFv4RwpDA
+         m7hQMNahpfA3vaqHEdmuHWZ+sUJoyVPf//rpcJjL32VCd5v8ZoKk+QAgIEznFe8NSzXt
+         eS0uK1kv5wpqbwwWPnkjGIO2wiyQtpDY8C3EwBVG9z4lAnCnQS24cc3mTu239e4fUy2g
+         56VL78lc4sMcljCvCCYa0Hb2wrDdXwFs8WV/aZGodbtnNm7YQtrtxgpmjQX6EpsviulP
+         GSXd/0qhoShUggV9L4BWmyg7L2FnmZjBeknDXQ6mDMXb6SNb7SOLFcTOg/kU+oR5EPMO
+         D8tA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ebFRk375;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::143 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x143.google.com (mail-lf1-x143.google.com. [2a00:1450:4864:20::143])
+        by gmr-mx.google.com with ESMTPS id u15si1095026wru.2.2020.04.17.04.58.32
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 17 Apr 2020 04:58:32 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::143 as permitted sender) client-ip=2a00:1450:4864:20::143;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ebFRk375;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::143 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x143.google.com with SMTP id t11so1576028lfe.4
+        for <wwwmake@googlegroups.com>; Fri, 17 Apr 2020 04:58:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=O+CpUXbR/UUMAX/o0ddW+yldA6HKTXanoFbQ43joWig=;
+        b=ebFRk375s1RaH/n6/UoKuDWwd9VayrPFwIyDr4URCoSC3lqEUUCaQlhuB3rljv/h78
+         N5y4yDH+LFkalErEJ7igD9boIG0wFAKH6u128H7QkCUsE3dsMYZb3CfZE5nIdVDl8cIH
+         jbPyz0tytxmyTQgdRrGlMKv8bPjKGxP8Vlde2a2rnafjfwKsr0GZxVtHfy/KEWBB0HC5
+         YDsmrEdo85iD+xVZlZaEHrCGvDvHQHmGD+2UG47nkwArm8LySdGFLHO9JaF+lkmuF0OJ
+         Zf63BlGSYYAUs0It01qNRSHHE+00WIWYTLDxABgwp/akB4D18BBspKBVAaxHzUQBdII/
+         pmBw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=O+CpUXbR/UUMAX/o0ddW+yldA6HKTXanoFbQ43joWig=;
+        b=S7nL9ztppzOLMYIJ9XF0eTx1Q0Y021iHu4zJQ6ccW3dJc2iRt7IUxE/YbbXFzI9OoC
+         fgnaObbsqQvKWToBTFhq9BRtRMtTNbzRpXbIuxkThDTG8T8eIQRxAhm7lDkHHkgp5W0g
+         BhNgktYes1zrcWvUuLWcftk5N+RxFKjDffBDNnUfZqLOsCkO+UL8TScUECWPJR0E08Tx
+         VqU+JUKYygM3jhNR6Vhl+cTH2B6HTl0oWvN7pduth2Jh4FGofn3GhjvUdqbx+7ygrWcp
+         rYDEJtWCuDoU5p6eP1b0RXuswAOVi158C08BEa65i7nKSNm7gI6Y08IVcXheI3LkpZBI
+         8Ptw==
+X-Gm-Message-State: AGi0PubSaPcnKYv8rjAZzSXWHQXux1lE9uLl9jsHU5rfjA5qyWeuj4aw
+	ZrYn6xfUw37gqgbBBkJwBKHivCh1uFvS2Gemjf+mGOTG
+X-Received: by 2002:a19:e308:: with SMTP id a8mr1825898lfh.135.1587124711712;
+ Fri, 17 Apr 2020 04:58:31 -0700 (PDT)
+MIME-Version: 1.0
+References: <e0988d6e-1f34-45e6-b256-231defffe529@googlegroups.com>
+ <CAAxEZd_7tJUKPMM6B5-Chb9woDzwGXy1xTAbcTiqvbuxcFMNZQ@mail.gmail.com>
+ <8f2ad5e3-b886-4ac8-bb60-eaab76e3c123@googlegroups.com> <1b3ff423-24e4-427b-9b72-c1fed85b5ae3@googlegroups.com>
+ <CAAxEZd84Z-Uf8vRHeVy2wCsLB_5c9m1wyYEt5Vdgxe3eNXVaRg@mail.gmail.com>
+ <CAAxEZd82QY3mt9fR+ruy=4+Dszo0YkjBfG4ND7XETvg9P6NO+Q@mail.gmail.com>
+ <b23193dc-7358-4067-91fd-20d9bcd94e23@googlegroups.com> <c15cee21-8651-4d0d-b75f-4fec9e4e0f23@googlegroups.com>
+ <CAAxEZd9YDa8U=g4d+uagiTHSbPFxjHZJ-Ff0=tjHHgkygQSWYw@mail.gmail.com>
+ <12d97ad0-c668-46e0-b916-c727dca5aea8@googlegroups.com> <5165c0a9-fed6-4b1b-a44e-dd46c6d89eee@googlegroups.com>
+ <CAAxEZd8_+bMe5B-0iNuf06kcqnnVaCzR-VoucKbaExiJ5CQ5NA@mail.gmail.com>
+ <CAPB-cT9t+Ogy+P0rwZB994X8+_Mmf8kFm=xdQ9eyVZn6i-t2MA@mail.gmail.com>
+ <3e1a6397-9014-43e5-adb6-b0f34784878f@googlegroups.com> <c02b4657-efdd-4673-845d-16fcb36f9bba@googlegroups.com>
+In-Reply-To: <c02b4657-efdd-4673-845d-16fcb36f9bba@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 17 Apr 2020 13:58:20 +0200
+Message-ID: <CAAxEZd8hbCtvLUukVqy3hCuhwJ-BbRwQVvSShABKFkMYPXMStQ@mail.gmail.com>
+Subject: Re: [wwwmake:493] Are there any videos showing how to setup a new
+ planet rss site?
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+> Did you make all the themes?
+
+  Initially I was the one and only users :-) - and, thus, all the
+themes at https://github.com/planet-templates are just examples that I
+put together some years ago.
+
+   A different "take" is to use pluto with a static website compiler /
+builder such as jekyll and than you can use all the jekyll themes (as
+done by OpenSUSE and others), see
+https://github.com/feedreader/planet.rb
+
+> I have got my setup humming and tweaked a template to my liking
+
+   Great news. Thanks for sharing. Keep it up. Cheers. Prost.
+

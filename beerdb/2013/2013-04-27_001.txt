@@ -1,0 +1,69 @@
+From 10215227392@xxx Sat Dec 20 19:01:40 +0000 2014
+X-GM-THRID: 12797870080
+X-Google-Groups: beerdb
+X-Google-Thread: 36096b4,467ea9086cb22ee4,start
+X-Google-Attributes: gid36096b4,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Beer & Brewery Database
+ (beer.db)" <beerdb@googlegroups.com>
+X-Received: by 10.224.18.133 with SMTP id w5mr3822723qaa.1.1367074734768;
+        Sat, 27 Apr 2013 07:58:54 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.49.50.197 with SMTP id e5ls558878qeo.42.gmail; Sat, 27 Apr
+ 2013 07:58:54 -0700 (PDT)
+MIME-Version: 1.0
+X-Received: by 10.49.4.169 with SMTP id l9mr2713386qel.29.1367074734617; Sat,
+ 27 Apr 2013 07:58:54 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by gb2g2000vbb.googlegroups.com with HTTP; Sat, 27 Apr 2013 07:58:54
+ -0700 (PDT)
+Date: Sat, 27 Apr 2013 07:58:54 -0700 (PDT)
+User-Agent: G2/1.0
+X-Google-Token: EK7P74sFdYY13Ynf1A00
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:20.0)
+ Gecko/20100101 Firefox/20.0,gzip(gfe)
+X-Google-IP: 188.22.251.24
+Message-ID: <07d1f66a-9945-4b8d-9d0f-8d1daa440884@gb2g2000vbb.googlegroups.com>
+Subject: vienna.rb Talk Slides - beer.db - Using Open Beer & Brewery Data in Ruby
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Open Beer & Brewery Database (beer.db)" <beerdb@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  FYI: I've posted the slides from the vienna.rb [1] talk titled
+"beer.db - Using Open Beer & Brewery Data in Ruby" [2]. Use left/right
+cursor keys (or space bar) to browse the slides and T-key to toggle
+between presentation and outline mode. Or check the all-in-one-page
+markdown source. [3]
+
+  Slides include:
+
+  - What's `beer.db `?
+  - Example: Breweries - `breweries.txt`
+  - Example: Beers  - `beers.txt`
+  - How to use `beer.db` in Ruby
+  - What's `world.db `?
+  - How to use `beer.db` & `world.db` in Ruby
+  - How to use HTTP JSON API - `GET /beer/guinness`
+  - Design - Plain text format options
+  - Design - Better comma separated values (CSV) format
+  - Design - "Magic" - Use folder and file names for values and
+structure
+  - Design - "Magic" - Use text patterns (regex) for fields
+
+  Cheers.
+
+PS: For more meetups in Central Europe (Vienna, Brno, Bratislava) see
+"Coders without Borders" [4].
+
+[1] http://www.meetup.com/vienna-rb
+[2] http://slideshow.rubyforge.org/beer_db_intro.html
+[3] https://github.com/geraldb/beer.db/blob/master/talks/beer_db_intro.md
+[4] http://coderswithoutborders.eu
+

@@ -1,0 +1,64 @@
+From 387670081536@xxx Tue Jun 16 00:17:14 +0000 2015
+X-GM-THRID: 389010161664
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,711fdfd32f014736,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.171.5 with SMTP id aq5mr3992750lbc.21.1394031956457;
+        Wed, 05 Mar 2014 07:05:56 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.42.134 with SMTP id o6ls382394lal.32.gmail; Wed, 05 Mar
+ 2014 07:05:56 -0800 (PST)
+X-Received: by 10.14.53.6 with SMTP id f6mr4069298eec.2.1394031956039;
+        Wed, 05 Mar 2014 07:05:56 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x230.google.com (mail-wg0-x230.google.com [2a00:1450:400c:c00::230])
+        by gmr-mx.google.com with ESMTPS id z49si274277eeo.0.2014.03.05.07.05.56
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 05 Mar 2014 07:05:56 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::230 as permitted sender) client-ip=2a00:1450:400c:c00::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f48.google.com with SMTP id b13so1386427wgh.31
+        for <opensport@googlegroups.com>; Wed, 05 Mar 2014 07:05:55 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=+F6Vq6SdF9lilYmAO7h93hCoh4JeO9Fu57cZOXAIMl0=;
+        b=VmMuWdekjgwHaMnWc9btu/z17d3zEfdwSl7SdQSzqv7wStB7EUNmHFK9LNdjg2bvoU
+         dIAoALmYCgzVv7w8sxMQBor87yFcxYdDloHAqrFEHOfLm/FoJzxJuZZvHc5M9DJ1KRZu
+         W3uvxTiKn9SyDBPLlQ1WCvowP3MUUkv9Kz6Y37wxOjWiy7cUinEbMLU9JjyqIoVvAZzm
+         lzzqKF4YXr+KTvJmrytm1fZi8mebELo50pafh3oqHtkUsDhirSYFZp3BzRGKHCLn7Lrc
+         gmlUHr/kXq4VD9vVu0h0O4cBbmkWraqauTnSZ2L7zZbgEqUVP94af+89lOFvttQ5lQNN
+         Sqyw==
+MIME-Version: 1.0
+X-Received: by 10.194.95.195 with SMTP id dm3mr1632710wjb.17.1394031955886;
+ Wed, 05 Mar 2014 07:05:55 -0800 (PST)
+Received: by 10.216.208.136 with HTTP; Wed, 5 Mar 2014 07:05:55 -0800 (PST)
+Date: Wed, 5 Mar 2014 16:05:55 +0100
+Message-ID: <CAAxEZd9hfknizhATn0LotC2_4AMW5LiW5TjBF2hRGBZhz5q1FA@mail.gmail.com>
+Subject: Meetups/Talks -- Open Football Data - Get Ready for the World Cup in
+ Brazil 2014
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   If anyone happens to be in Central Europe (in Austria), you're
+invited to two upcoming free events in Linz (March 12th) and Vienna
+(March 13th) in Austria.
+
+  If all works out I will talk about the football.db (10-20mins) at
+two upcoming Ruby meetups. The talk is titled:
+
+  Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ Ruby
+
+   Find out more @ meetup.com/Ruby-User-Group-Linz-RUGL (Linz, March 12th)
+             and @ meetup.com/vienna-rb   (Vienna, March 13th)
+
+   See you. Cheers.
+

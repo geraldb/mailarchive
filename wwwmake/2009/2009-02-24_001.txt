@@ -1,0 +1,89 @@
+From 519075528704@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 516118544384
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,6c9a30f5a30f514a,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.223.116.207 with SMTP id n15mr88081faq.10.1235502069499;
+        Tue, 24 Feb 2009 11:01:09 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from mail-fx0-f162.google.com (mail-fx0-f162.google.com [209.85.220.162])
+        by mx.google.com with ESMTP id 5si724458fge.12.2009.02.24.11.01.09;
+        Tue, 24 Feb 2009 11:01:09 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.220.162 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.220.162;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.220.162 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by fxm6 with SMTP id 6so3186568fxm.8
+        for <webslideshow@googlegroups.com>; Tue, 24 Feb 2009 11:01:09 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.86.66.9 with SMTP id o9mr46150fga.14.1235502068812; Tue, 24 
+	Feb 2009 11:01:08 -0800 (PST)
+Date: Tue, 24 Feb 2009 20:01:08 +0100
+Message-ID: <1f058eab0902241101w4e62a827qd4d3c25e3cf2f76b@mail.gmail.com>
+Subject: Slide Show (S9) Gem Updated (v0.7.5) - Supports Plugins/Helpers; New 
+	Built-in Helpers Include content_for, include and More
+From: Gerald Bauer <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  I uploaded a new slideshow gem version (that is, v0.7.5). What's new?
+
+  I added support for plugins and helpers. Now you can use Embedded
+Ruby (ERB) in your slide source e.g.
+
+  h1. Today's Date
+
+  <%= Time.now %>
+
+
+  If you want to use your own helpers put your code in the ./lib
+folder (or any subfolders) and your code gets loaded on startup.
+
+  For now the built-in helpers include:
+
+  * include     # Let's you include text. e.g.
+
+  <%= include 'help.txt' %>
+
+
+  * content_for # Lets you add content to your templates from your
+source a la Rails
+
+   In your slide source use:
+
+  <% content_for :head do %>
+
+     your content here e.g. more meta tags; javascript includes etc.
+
+  <% end %>
+
+   In your template use:
+
+   <%= content_for :head %>  and it will include the marked content
+from your source. Note, you can use :foo, :bar or whatever key you
+want instead of :head and also note a la Rails you can use the same
+key as many times as you want. The new content just gets added.
+
+
+   Finally I added support for (private) multi-line comments using
+__SKIP__/__END__. If you want to skip content in your source just
+enclose it with
+
+__SKIP__
+
+  not yet ready or private notes/comments
+
+__END__
+
+  As a shortcut if you just use __END__ (without __SKIP__) (Ruby-like)
+it will skip everything from __END__ until the end of the file.
+
+
+  That's it. I will add a couple of more built-in helpers in the next
+days and weeks and you're, of course, more than welcome and encouraged
+to create your own helpers.
+
+   Cheers.
+

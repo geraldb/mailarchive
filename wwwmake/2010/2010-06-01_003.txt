@@ -1,0 +1,46 @@
+From 650457907200@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 650817568768
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,74476603403a65b5,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.151.17.33 with SMTP id u33mr2379917ybi.21.1275432395091;
+        Tue, 01 Jun 2010 15:46:35 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.151.17.15 with SMTP id u15ls1976342ybi.0.p; Tue, 01 Jun 2010 
+	15:46:34 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.151.116.20 with SMTP id t20mr252180ybm.76.1275432394501; Tue, 
+	01 Jun 2010 15:46:34 -0700 (PDT)
+Received: by m21g2000vbr.googlegroups.com with HTTP; Tue, 1 Jun 2010 15:46:34 
+	-0700 (PDT)
+Date: Tue, 1 Jun 2010 15:46:34 -0700 (PDT)
+X-IP: 80.123.37.161
+User-Agent: G2/1.0
+X-Google-Token: EMqbluAE35RnLzoijYI0
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) 
+	AppleWebKit/532.5 (KHTML, like Gecko) Chrome/4.1.249.1064 
+	Safari/532.5,gzip(gfe)
+Message-ID: <d74d7889-258b-49d0-8334-02032087ec62@m21g2000vbr.googlegroups.com>
+Subject: S6 Tip: Creating a PDF Using Free Qt/WebKit Tool
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   Just to let you know that using the free, open source wkhtmltopdf
+tool [1] (available for Windows, Linux, Apple OS X) lets you create a
+PDF from your slides with a single command line call e.g.
+
+   $ wkhtmltopdf --print-media-type http://slideshow.rubyforge.org/tutorial.html
+tutorial.pdf
+
+   Note, however, that it only works for your print/outline view (and
+not for the presenation mode that includes your gradient background of
+choice. Sorry.)
+
+   Cheers. Gerald
+
+[1] http://code.google.com/p/wkhtmltopdf
+

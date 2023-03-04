@@ -1,0 +1,213 @@
+From 1651317407744@xxx Tue Jun 16 00:16:51 +0000 2015
+X-GM-THRID: 1591517118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.222.138 with SMTP id qm10mr7332227pac.9.1405805567552;
+        Sat, 19 Jul 2014 14:32:47 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.129.99 with SMTP id nv3ls960669igb.24.gmail; Sat, 19 Jul
+ 2014 14:32:47 -0700 (PDT)
+X-Received: by 10.50.50.169 with SMTP id d9mr845337igo.2.1405805567163;
+        Sat, 19 Jul 2014 14:32:47 -0700 (PDT)
+X-Google-Doc-Id: 28f0973efe91d4f9
+X-Google-Web-Client: true
+Date: Sat, 19 Jul 2014 14:32:45 -0700 (PDT)
+From: Carl-Erik Svensson <csvenss2@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+In-Reply-To: <CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+ <CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2163_2047065122.1405805566171"
+X-Google-Token: EP3Hq54F6bHAWiLcL540
+X-Google-IP: 24.130.213.187
+
+------=_Part_2163_2047065122.1405805566171
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2164_187996867.1405805566172"
+
+------=_Part_2164_187996867.1405805566172
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hey Gerald,
+
+I forked sport.db.ruby (https://github.com/cecomp64/sport.db.ruby) and 
+added my simplistic patch for squad parsing, as well as stat parsing.  My 
+intent was to allow stats to be associated with a person, team, game, or 
+just an event.  My initial implementation supports stats as part of a 
+person, which is parsed as part of a squad.  I setup a Stat and StatData 
+model and tables:
+
+create_table :stats do |t|
+  t.string     :key
+  t.string     :title
+  t.timestamps
+end
+
+create_table :stat_data do |t|
+  t.references  :team
+  t.references  :game
+  t.references  :event
+  t.references  :stat
+  t.integer     :person_id
+  t.string      :value
+  t.timestamps
+end
+
+I added some test data to major-league-soccer with the stats lines, and 
+created a football.db with that data:
+
+sportdb -n mls_stats.db --verbose setup all_stats --include 
+../major-league-soccer/ --worldinclude ../../openmundi/world.db/ &> log.txt
+
+The models have associations to get stats easily:
+
+>>  roster = SportDB::Models::Roster.all
+...
+>>  r = roster[0]
+=> #<SportDb::Model::Roster id: 1, person_id: 1, team_id: 10, event_id: 1, 
+pos: 25, created_at: "2014-07-19 20:55:42", updated_at: "2014-07-19 
+20:55:42">
+
+>>  r.person.stats
+=> #<ActiveRecord::Associations::CollectionProxy 
+[#<SportDb::Model::StatData id: 1, team_id: nil, game_id: nil, event_id: 1, 
+stat_id: 1, person_id: 1, value: " 17", created_at: "2014-07-19 20:55:42", 
+updated_at: "2014-07-19 20:55:42">,  ...]>
+
+>>  r.person.stats.map{|stat_data| [stat_data.stat.key, stat_data.value]}
+D, [2014-07-19T14:27:21.140139 #2317] DEBUG -- :   SportDb::Model::Stat 
+Load (0.4ms)  SELECT "stats".* FROM "stats" WHERE "stats"."id" = ? ORDER BY 
+"stats"."id" ASC LIMIT 1  [["id", 1]]
+...
+=> [["starts", " 17"], [" subIns", " 0"], [" saves", " 49"], [" 
+goalsConceded", " 27"], [" foulsCommitted", " 0"], [" foulsSuffered", " 
+2"], [" yellowCards", " 0"], [" redCards", " 0"], [" wins", " 0"], [" 
+losses", " 0"], [" draws", " 0"]]
+
+Some data is not available for every player on ESPN, so I have defaulted to 
+marking those fields as 0.  I am considering omitting any stats with a 
+value of 0, since this is kind of wasted space.  Maybe that's best left to 
+an app implementation, though.
+
+I tried to follow your conventions, but of course, this is just an 
+implementation to enable the projects I'm thinking of.  Please let me know 
+if you want to discuss adding this to the mainline, or any updates or 
+changes you would suggest.
+
+Oh, and congrats on that World Cup, too :)
+
+--Carl
+
+On Thursday, July 10, 2014 12:17:14 AM UTC-7, Gerald Bauer wrote:
+>
+> Hello Carl, 
+>    Great idea. Just started adding stats for teams and groups as a first 
+> step. 
+>
+>    Still working on getting the squads (player import) reader ready. 
+>
+>   Again great idea. As always you're welcome to go ahead and add new 
+> stats tables.  Keep it up. Thanks for getting it all started with the 
+> major soccer league. 
+>
+>    One plan  to check the squads and goal reader/parser for players is 
+> to calculate all time records for the world cup's best goal scorerer 
+> etc.  Cheers. 
+>
+
+------=_Part_2164_187996867.1405805566172
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hey Gerald,<div><br></div><div>I forked sport.db.ruby (htt=
+ps://github.com/cecomp64/sport.db.ruby) and added my simplistic patch for s=
+quad parsing, as well as stat parsing. &nbsp;My intent was to allow stats t=
+o be associated with a person, team, game, or just an event. &nbsp;My initi=
+al implementation supports stats as part of a person, which is parsed as pa=
+rt of a squad. &nbsp;I setup a Stat and StatData model and tables:</div><di=
+v><br></div><div><div><font face=3D"courier new, monospace">create_table :s=
+tats do |t|</font></div><div><font face=3D"courier new, monospace">&nbsp; t=
+.string &nbsp; &nbsp; :key</font></div><div><font face=3D"courier new, mono=
+space">&nbsp; t.string &nbsp; &nbsp; :title</font></div><div><font face=3D"=
+courier new, monospace">&nbsp; t.timestamps</font></div><div><font face=3D"=
+courier new, monospace">end</font></div><div><font face=3D"courier new, mon=
+ospace"><br></font></div><div><font face=3D"courier new, monospace">create_=
+table :stat_data do |t|</font></div><div><font face=3D"courier new, monospa=
+ce">&nbsp; t.references &nbsp;:team</font></div><div><font face=3D"courier =
+new, monospace">&nbsp; t.references &nbsp;:game</font></div><div><font face=
+=3D"courier new, monospace">&nbsp; t.references &nbsp;:event</font></div><d=
+iv><font face=3D"courier new, monospace">&nbsp; t.references &nbsp;:stat</f=
+ont></div><div><font face=3D"courier new, monospace">&nbsp; t.integer &nbsp=
+; &nbsp; :person_id</font></div><div><font face=3D"courier new, monospace">=
+&nbsp; t.string &nbsp; &nbsp; &nbsp;:value</font></div><div><font face=3D"c=
+ourier new, monospace">&nbsp; t.timestamps</font></div><div><font face=3D"c=
+ourier new, monospace">end</font></div><div><br></div><div>I added some tes=
+t data to major-league-soccer with the stats lines, and created a football.=
+db with that data:</div><div><br></div><div><font face=3D"courier new, mono=
+space">sportdb -n mls_stats.db --verbose setup all_stats --include ../major=
+-league-soccer/ --worldinclude ../../openmundi/world.db/ &amp;&gt; log.txt<=
+/font><br></div><div><br></div><div>The models have associations to get sta=
+ts easily:</div><div><br></div><div><font face=3D"courier new, monospace">&=
+gt;&gt; &nbsp;roster =3D SportDB::Models::Roster.all<br></font></div><div><=
+font face=3D"courier new, monospace">...</font></div><div><div><font face=
+=3D"courier new, monospace">&gt;&gt; &nbsp;r =3D roster[0]</font></div><div=
+><font face=3D"courier new, monospace">=3D&gt; #&lt;SportDb::Model::Roster =
+id: 1, person_id: 1, team_id: 10, event_id: 1, pos: 25, created_at: "2014-0=
+7-19 20:55:42", updated_at: "2014-07-19 20:55:42"&gt;</font></div><div><fon=
+t face=3D"courier new, monospace"><br></font></div><div><font face=3D"couri=
+er new, monospace">&gt;&gt; &nbsp;r.person.stats</font></div><div><font fac=
+e=3D"courier new, monospace">=3D&gt; #&lt;ActiveRecord::Associations::Colle=
+ctionProxy [#&lt;SportDb::Model::StatData id: 1, team_id: nil, game_id: nil=
+, event_id: 1, stat_id: 1, person_id: 1, value: " 17", created_at: "2014-07=
+-19 20:55:42", updated_at: "2014-07-19 20:55:42"&gt;, &nbsp;...]&gt;</font>=
+</div><div><font face=3D"courier new, monospace"><br></font></div><div><fon=
+t face=3D"courier new, monospace">&gt;&gt; &nbsp;r.person.stats.map{|stat_d=
+ata| [stat_data.stat.key, stat_data.value]}</font></div><div><font face=3D"=
+courier new, monospace">D, [2014-07-19T14:27:21.140139 #2317] DEBUG -- : &n=
+bsp; SportDb::Model::Stat Load (0.4ms) &nbsp;SELECT "stats".* FROM "stats" =
+WHERE "stats"."id" =3D ? ORDER BY "stats"."id" ASC LIMIT 1 &nbsp;[["id", 1]=
+]</font></div><div><font face=3D"courier new, monospace">...</font></div><d=
+iv><font face=3D"courier new, monospace">=3D&gt; [["starts", " 17"], [" sub=
+Ins", " 0"], [" saves", " 49"], [" goalsConceded", " 27"], [" foulsCommitte=
+d", " 0"], [" foulsSuffered", " 2"], [" yellowCards", " 0"], [" redCards", =
+" 0"], [" wins", " 0"], [" losses", " 0"], [" draws", " 0"]]</font></div></=
+div><div><br></div><div>Some data is not available for every player on ESPN=
+, so I have defaulted to marking those fields as 0. &nbsp;I am considering =
+omitting any stats with a value of 0, since this is kind of wasted space. &=
+nbsp;Maybe that's best left to an app implementation, though.</div><div><br=
+></div><div>I tried to follow your conventions, but of course, this is just=
+ an implementation to enable the projects I'm thinking of. &nbsp;Please let=
+ me know if you want to discuss adding this to the mainline, or any updates=
+ or changes you would suggest.</div><div><br></div><div>Oh, and congrats on=
+ that World Cup, too :)</div><div><br></div><div>--Carl</div><br>On Thursda=
+y, July 10, 2014 12:17:14 AM UTC-7, Gerald Bauer wrote:<blockquote class=3D=
+"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc s=
+olid;padding-left: 1ex;">Hello Carl,
+<br>&nbsp; &nbsp;Great idea. Just started adding stats for teams and groups=
+ as a first step.
+<br>
+<br>&nbsp; &nbsp;Still working on getting the squads (player import) reader=
+ ready.
+<br>
+<br>&nbsp; Again great idea. As always you're welcome to go ahead and add n=
+ew
+<br>stats tables. &nbsp;Keep it up. Thanks for getting it all started with =
+the
+<br>major soccer league.
+<br>
+<br>&nbsp; &nbsp;One plan &nbsp;to check the squads and goal reader/parser =
+for players is
+<br>to calculate all time records for the world cup's best goal scorerer
+<br>etc. &nbsp;Cheers.
+<br></blockquote></div></div>
+------=_Part_2164_187996867.1405805566172--
+
+------=_Part_2163_2047065122.1405805566171--
+

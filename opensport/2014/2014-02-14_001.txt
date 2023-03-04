@@ -1,0 +1,90 @@
+From 343029055488@xxx Tue Jun 16 00:17:16 +0000 2015
+X-GM-THRID: 323912466432
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,adbbcc06d99a64e7
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.86.238 with SMTP id w74mr3660343yhe.23.1392420864299;
+        Fri, 14 Feb 2014 15:34:24 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.122.4 with SMTP id lo4ls6006igb.11.gmail; Fri, 14 Feb 2014
+ 15:34:24 -0800 (PST)
+X-Received: by 10.50.43.161 with SMTP id x1mr108812igl.13.1392420863931;
+        Fri, 14 Feb 2014 15:34:23 -0800 (PST)
+X-Google-Doc-Id: 827db5902e243d4c
+X-Google-Web-Client: true
+Date: Fri, 14 Feb 2014 15:34:22 -0800 (PST)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <d569df5a-8beb-489a-a3b0-c795d53751ad@googlegroups.com>
+In-Reply-To: <0ce36c91-80d0-4f49-8286-ce4a92602ee8@googlegroups.com>
+References: <0ce36c91-80d0-4f49-8286-ce4a92602ee8@googlegroups.com>
+Subject: Re: No such file or directory ./setups/all.yml
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1095_5104284.1392420862994"
+X-Google-Token: EP7P-pcFEnrb3Xwqagk0
+X-Google-IP: 201.103.77.251
+
+------=_Part_1095_5104284.1392420862994
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1096_22580126.1392420862994"
+
+------=_Part_1096_22580126.1392420862994
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Andrew,
+
+>  it started to work beautifully
+
+   Great news. 
+
+>   I did run into an issue:   *** error: couldn't find team with key 
+'swansea'
+
+  Sorry my mistake. For the Premiere League you also have to include the 
+teams from Wales, that is, Swansea City and Cardiff City. Thus, load first 
+the teams from the europe repo [1] followed by the  teams and fixtures from 
+the en-england repo. Example:
+
+  $ sportdb setup teams --include ./europe --worldinclude ./world.db
+  $ sportdb update --include ./en-england
+
+  or using the Rakefile add:
+
+ task :importsport => :importbuiltin do
+  SportDb.read_setup( 'setups/teams',   './europe' )
+  SportDb.read_setup( 'setups/all',     './en-england' )
+ end 
+
+  Good luck. Let me know if it works. Cheers.
+
+[1] https://github.com/openfootball/europe
+
+
+------=_Part_1096_22580126.1392420862994
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hello Andrew,</div><div><br></div><div>&gt; &nbsp;it =
+started to work beautifully</div><div><br></div><div>&nbsp; &nbsp;Great new=
+s.&nbsp;</div><div><br></div><div>&gt; &nbsp; I did run into an issue: &nbs=
+p; *** error: couldn't find team with key 'swansea'</div><div><br></div><di=
+v>&nbsp; Sorry my mistake. For the Premiere League you also have to include=
+ the teams from Wales, that is, Swansea City and Cardiff City. Thus, load f=
+irst the teams from the europe repo [1] followed by the &nbsp;teams and fix=
+tures from the en-england repo. Example:</div><div><br></div><div>&nbsp; $ =
+sportdb setup teams --include ./europe --worldinclude ./world.db</div><div>=
+&nbsp; $ sportdb update --include ./en-england</div><div><br></div><div>&nb=
+sp; or using the Rakefile add:</div><div><br></div><div>&nbsp;task :imports=
+port =3D&gt; :importbuiltin do</div><div>&nbsp; SportDb.read_setup( 'setups=
+/teams', &nbsp; './europe' )</div><div>&nbsp; SportDb.read_setup( 'setups/a=
+ll', &nbsp; &nbsp; './en-england' )</div><div>&nbsp;end&nbsp;</div><div><br=
+></div><div>&nbsp; Good luck. Let me know if it works. Cheers.</div><div><b=
+r></div><div>[1] https://github.com/openfootball/europe</div><div><br></div=
+></div>
+------=_Part_1096_22580126.1392420862994--
+
+------=_Part_1095_5104284.1392420862994--
+

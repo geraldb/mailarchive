@@ -1,0 +1,186 @@
+From 6189031713104986112@xxx Mon Aug 31 04:43:57 +0000 2015
+X-GM-THRID: 6187619131688222720
+Date: Sun, 30 Aug 2015 21:43:56 -0700 (PDT)
+From: kaspi <vincentti@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <44e47012-8e73-4a24-85cd-8949cbc0cc56@googlegroups.com>
+In-Reply-To: <CAAxEZd_72eFZ2PQPB__MsY6dJ+ZzbLGHK=kEZZp39mcqU5WF2Q@mail.gmail.com>
+References: <CAAxEZd_72eFZ2PQPB__MsY6dJ+ZzbLGHK=kEZZp39mcqU5WF2Q@mail.gmail.com>
+Subject: Re: sport.db League Quick Starter Sample - Mauritius Premier League
+ - Create Your Own Repo/League(s) from Scratch
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2543_475398710.1440996236510"
+X-Google-Token: EIy3j68Fde8hTN0jsgk0
+X-Google-IP: 209.6.116.34
+
+------=_Part_2543_475398710.1440996236510
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2544_917900930.1440996236510"
+
+------=_Part_2544_917900930.1440996236510
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+I wish you wrote this a few days earlier :)
+this guide should really be more visible, not just in news section!
+
+Thanks for doing this Gerald!!
+
+
+On Thursday, August 27, 2015 at 5:22:25 AM UTC-4, Gerald Bauer wrote:
+>
+> Hello,=20
+>
+>   I've put together a new sport.db (football.db) quick starter sample=20
+> using the Mauritius Premier League [1] to get you started creating=20
+> your own leagues/cups/etc. from scratch.=20
+>
+>   You can test drive the quick starter sample with a single command e.g.=
+=20
+>
+>    $ sportdb build=20
+>
+>   To start from scratch follow these six steps:=20
+>
+>    - Step 1: Add all leagues=20
+>    - Step 2: Add all clubs=20
+>    - Step 3: Add all match fixtures and results=20
+>    - Step 4: Add the league season "front matter" settings=20
+>    - Step 5: Add a setups file list (also known as manifest)=20
+>    - Step 6: Add a datafile build script - That's it. Done.=20
+>
+>   Using a file structure like:=20
+>
+>   =E2=94=9C=E2=94=80=E2=94=80 2014-15              # 2014-15 season folde=
+r=20
+>    |   =E2=94=9C=E2=94=80=E2=94=80 league-i.txt     #   match fixtures / =
+results - matchdays  1-18=20
+>    |   =E2=94=9C=E2=94=80=E2=94=80 league-ii.txt    #                    =
+        - matchdays 19-36=20
+>    |   =E2=94=94=E2=94=80=E2=94=80 league.yml       #   "front matter" se=
+ttings=20
+>   =E2=94=9C=E2=94=80=E2=94=80 setups=20
+>    |   =E2=94=94=E2=94=80=E2=94=80 all.txt          #   file list (manife=
+st)=20
+>   =E2=94=9C=E2=94=80=E2=94=80 leagues.txt          # all leagues=20
+>   =E2=94=9C=E2=94=80=E2=94=80 clubs.txt            # all clubs=20
+>   =E2=94=94=E2=94=80=E2=94=80 Datafile             # build script=20
+>
+>   That's it. Now try:=20
+>
+>   $ sqlite3 sport.db=20
+>
+> >> SQLite version 3.7.16=20
+> >> Enter ".help" for instructions=20
+> >> Enter SQL statements terminated with a ";"=20
+>
+> >> sqlite> select * from countries;=20
+> >> 1|Mauritius|mauritius|mu|1|MUS|||1261200|2040|||f|t|f|f|=20
+>
+> >> sqlite> select * from teams;=20
+> >> 1|joachim|Cercle de Joachim||CDJ|Cercle de Joachim=20
+> SC|Joachim|1||t|||||f|=20
+> >> 2|chamarel|Chamarel SC||CHA|Chamarel|Chamarel Sport Club|1||t|||||f|=
+=20
+>
+>   and so on and so forth.=20
+>   Cheers.=20
+>
+> PS: As always make sure you have the latest (and greatest) library/gem=20
+> versions, for example, to support "in situ" local builds the latest=20
+> datafile (gem) version is required.=20
+>
+> [1] github.com/sportkit/mu-mauritius=20
+>
+
+------=_Part_2544_917900930.1440996236510
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I wish you wrote this a few days earlier :)<div>this guide=
+ should really be more visible, not just in news section!</div><div><br></d=
+iv><div>Thanks for doing this Gerald!!</div><div><br></div><div><br>On Thur=
+sday, August 27, 2015 at 5:22:25 AM UTC-4, Gerald Bauer wrote:<blockquote c=
+lass=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px=
+ #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 I&#39;ve put together a new sport.db (football.db) quick starter=
+ sample
+<br>using the Mauritius Premier League [1] to get you started creating
+<br>your own leagues/cups/etc. from scratch.
+<br>
+<br>=C2=A0 You can test drive the quick starter sample with a single comman=
+d e.g.
+<br>
+<br>=C2=A0 =C2=A0$ sportdb build
+<br>
+<br>=C2=A0 To start from scratch follow these six steps:
+<br>
+<br>=C2=A0 =C2=A0- Step 1: Add all leagues
+<br>=C2=A0 =C2=A0- Step 2: Add all clubs
+<br>=C2=A0 =C2=A0- Step 3: Add all match fixtures and results
+<br>=C2=A0 =C2=A0- Step 4: Add the league season &quot;front matter&quot; s=
+ettings
+<br>=C2=A0 =C2=A0- Step 5: Add a setups file list (also known as manifest)
+<br>=C2=A0 =C2=A0- Step 6: Add a datafile build script - That&#39;s it. Don=
+e.
+<br>
+<br>=C2=A0 Using a file structure like:
+<br>
+<br>=C2=A0 =E2=94=9C=E2=94=80=E2=94=80 2014-15 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0# 2014-15 season folder
+<br>=C2=A0 =C2=A0| =C2=A0 =E2=94=9C=E2=94=80=E2=94=80 league-i.txt =C2=A0 =
+=C2=A0 # =C2=A0 match fixtures / results - matchdays =C2=A01-18
+<br>=C2=A0 =C2=A0| =C2=A0 =E2=94=9C=E2=94=80=E2=94=80 league-ii.txt =C2=A0 =
+=C2=A0# =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0- matchdays 19-36
+<br>=C2=A0 =C2=A0| =C2=A0 =E2=94=94=E2=94=80=E2=94=80 league.yml =C2=A0 =C2=
+=A0 =C2=A0 # =C2=A0 &quot;front matter&quot; settings
+<br>=C2=A0 =E2=94=9C=E2=94=80=E2=94=80 setups
+<br>=C2=A0 =C2=A0| =C2=A0 =E2=94=94=E2=94=80=E2=94=80 all.txt =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A0# =C2=A0 file list (manifest)
+<br>=C2=A0 =E2=94=9C=E2=94=80=E2=94=80 leagues.txt =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0# all leagues
+<br>=C2=A0 =E2=94=9C=E2=94=80=E2=94=80 clubs.txt =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0# all clubs
+<br>=C2=A0 =E2=94=94=E2=94=80=E2=94=80 Datafile =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 # build script
+<br>
+<br>=C2=A0 That&#39;s it. Now try:
+<br>
+<br>=C2=A0 $ sqlite3 sport.db
+<br>
+<br>&gt;&gt; SQLite version 3.7.16
+<br>&gt;&gt; Enter &quot;.help&quot; for instructions
+<br>&gt;&gt; Enter SQL statements terminated with a &quot;;&quot;
+<br>
+<br>&gt;&gt; sqlite&gt; select * from countries;
+<br>&gt;&gt; 1|Mauritius|mauritius|mu|1|<wbr>MUS|||1261200|2040|||f|t|f|f|
+<br>
+<br>&gt;&gt; sqlite&gt; select * from teams;
+<br>&gt;&gt; 1|joachim|Cercle de Joachim||CDJ|Cercle de Joachim SC|Joachim|=
+1||t|||||f|
+<br>&gt;&gt; 2|chamarel|Chamarel SC||CHA|Chamarel|Chamarel Sport Club|1||t|=
+||||f|
+<br>
+<br>=C2=A0 and so on and so forth.
+<br>=C2=A0 Cheers.
+<br>
+<br>PS: As always make sure you have the latest (and greatest) library/gem
+<br>versions, for example, to support &quot;in situ&quot; local builds the =
+latest
+<br>datafile (gem) version is required.
+<br>
+<br>[1] <a href=3D"http://github.com/sportkit/mu-mauritius" target=3D"_blan=
+k" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/u=
+rl?q\75http%3A%2F%2Fgithub.com%2Fsportkit%2Fmu-mauritius\46sa\75D\46sntz\07=
+51\46usg\75AFQjCNHf2wgcIlPXnHfeTqpk9OMHNXM3BQ&#39;;return true;" onclick=3D=
+"this.href=3D&#39;http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fs=
+portkit%2Fmu-mauritius\46sa\75D\46sntz\0751\46usg\75AFQjCNHf2wgcIlPXnHfeTqp=
+k9OMHNXM3BQ&#39;;return true;">github.com/sportkit/mu-<wbr>mauritius</a>
+<br></blockquote></div></div>
+------=_Part_2544_917900930.1440996236510--
+
+------=_Part_2543_475398710.1440996236510--
+

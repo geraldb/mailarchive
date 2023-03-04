@@ -1,0 +1,118 @@
+From 6584259440106536960@xxx Tue Jul 31 06:09:23 +0000 2018
+X-GM-THRID: 6584254887509360640
+X-Received: by 2002:a1c:f213:: with SMTP id s19-v6mr183402wmc.23.1533017363508;
+        Mon, 30 Jul 2018 23:09:23 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a1c:f70e:: with SMTP id v14-v6ls344002wmh.5.gmail; Mon, 30
+ Jul 2018 23:09:22 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpe1GFJtbHvyWljPCFRdPZ2JMS9/SbQ38q4Bz5A1rK5Xnny/Fz3+i2TYeSLoy8hQgKqmgQqn
+X-Received: by 2002:a1c:7904:: with SMTP id l4-v6mr195685wme.31.1533017362813;
+        Mon, 30 Jul 2018 23:09:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533017362; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FrYb5dXqlT0OTrLsyn2ec8qXdtLzivkFTpIWrbIhoXmdXNZT9um4m7P/JNZvaRq39Z
+         paPKxZj/I3J+iOTnQ6ByE5uOLzA3SFt+ofdqZRJqM4n1/E5NjoFdbOMLAfFdLQQn+jT5
+         7ETLDZ0bvwAp0TDcKTeRTXSsIzBRxBSTCLqdZeGj/yLhuMon3okc+8c5eehBA4QGvl8J
+         fjX6hx0JKpK2fl2265eCsDIYxtYd2ZZ6f3ThWV2Hcu0kjqAxsD//OhSGtAfArLdGVBjD
+         StsNzsiuRSMKOZ95jKK7vMl5ysXJzST4LhnaLetTIcyKUmhJqYMRmakJ4T+rE6u/6qIY
+         JEWQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=fAWICzECioWcNKEe4eygYSlwbB4UybUrXckF0WOKxSM=;
+        b=A+dDWjfICHsRFLBzPBcVEC5Vjl8hMoqhr8F7WWtA1aNm/fQTgSFcaVKZtBF/UOK2Lx
+         FUPQr2rjr+TITAIwqmFQ/tWzZB6oWOym4UwD11juDIzVsPSM/29XyKENZ8Fm/wzbmYOh
+         Vq7xX3xlUTfMAM9gT1v5cnk4kZzCZQ9fwc1HZD+psUd8gBuLE1+DtM1j3OG/0xD1Sypf
+         mbkhWjsNg0JOqu2sYlFh6ZJOrikTeNgKl+DqfySHBzdzNQLTewYJBh89drtNTPvU2ZCB
+         bbfZ7ho4FYqgR6B1zmbOiXUgdW9uP+6gM4A7uLr6drX+0lTrT9V44ZqRBp/hvuwbmMus
+         3pnQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=US6BqzDw;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x235.google.com (mail-lj1-x235.google.com. [2a00:1450:4864:20::235])
+        by gmr-mx.google.com with ESMTPS id s3-v6si566795wri.2.2018.07.30.23.09.22
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 30 Jul 2018 23:09:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) client-ip=2a00:1450:4864:20::235;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=US6BqzDw;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x235.google.com with SMTP id q127-v6so12607798ljq.11
+        for <opensport@googlegroups.com>; Mon, 30 Jul 2018 23:09:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=fAWICzECioWcNKEe4eygYSlwbB4UybUrXckF0WOKxSM=;
+        b=US6BqzDw7urndXvRR0WYTprZS9FuXPOCMzfZEjxVd0T+JTyG12a1gqkw7K4HAvc+JA
+         5kOjrSSuADyFZOjE/3AkKNgHg0fvzc64ILDW7Ui/KlKVO4MeUSIrKH5O/jC08oTVKRcb
+         yF/xK27+Ta6rghrMFBQFA/0ST+Ht3E+yyY5nanYLXN/HtwaD4CTIysb35rS+5X+RWMGy
+         CuvEVKwQQbbjLLbNq2hycXf6vfhrZxrxkYYETU2LQhicjoGx/XDbQBP6vYmhLQC46Jmv
+         W4SAx4P/mnQSSoVrltcuSbvn+oGYypeAQxjFG5u7qMhWlcLg8u0llr64o8BiYHB/qjTu
+         xbFw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=fAWICzECioWcNKEe4eygYSlwbB4UybUrXckF0WOKxSM=;
+        b=UQQgw5dV6uMUTdCQlr4Br6MR6ksanYkutwDYYouVqSwX4MPT/zlQ4conzL5g5ZRVEE
+         LVXgO+VWBNZsBpj5bOD/xySYOMcXAhFiVtZeXkIABxQuAh9gVQYvbrNSdtWduNGgEeyb
+         dpVDZT7XuEpHetjFR6NHP5YaTc9x1AQrYXgk72Rs0lJPr8GHrSI0oGS6SYxn+6vu2dj9
+         O8wxshAYkH1GR3kghjEDBJ0yyyPvVqEZdtkbe93xqtrtHv0yndmXCnCG3P9jEBPMvuE8
+         GL9hrMELaU4bOs+4ur3TaxiuXlslUrbe9awq6YDRe7THJtHxzoKZXBG/yKaHo8tsc0lP
+         6JcQ==
+X-Gm-Message-State: AOUpUlG16M32JWAE+tkCxPtIKpTSQoHD0p9YUv8QIdl5X8UDpq3oRXGa
+	nou5DEJnCS45kyLAao9zmbpEgt6S4/W3bzdhHND5WXiv
+X-Received: by 2002:a2e:2f19:: with SMTP id v25-v6mr14455188ljv.113.1533017362331;
+ Mon, 30 Jul 2018 23:09:22 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:ab3:4c6b:0:0:0:0:0 with HTTP; Mon, 30 Jul 2018 23:09:21
+ -0700 (PDT)
+In-Reply-To: <e668136e-1c1e-49f1-b40e-61cab9348709@googlegroups.com>
+References: <e668136e-1c1e-49f1-b40e-61cab9348709@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 31 Jul 2018 08:09:21 +0200
+Message-ID: <CAAxEZd-GdFZPLiPfZBzi_fy7TXza6vMxK4tywWxwQD5mfFdLbA@mail.gmail.com>
+Subject: Re: [opensport] What do I do if I just want the Premiere League data
+ for all rounds?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   As a little follow up / advice:
+
+> And since I don't know any programming
+
+   If you want to write a book you need to - surprise, surprise -
+learn the alphabet.
+
+   If you want to analyze data - sorry to break the news - you need to
+learn how to code / programming.  Lots of great tutorials to get
+started.
+
+    Cheers. Prost. Happy coding / programming.
+
+
+2018-07-30 22:13 GMT+02:00 Jurij Fedorov <jurij.fedorov@gmail.com>:
+> Basically, I cannot really find any file or good site online that I can
+> extract league data from. All the files I have found are outdated and also
+> not with the data I need. And since I don't know any programming I can't
+> really know if this site has the data I need or not.
+>
+> I just need all the PL results for all rounds. Hopefully going back to 1888.
+>
+> All help will be appreciated. It's for a personal chart project.
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> To post to this group, send email to opensport@googlegroups.com.
+> Visit this group at https://groups.google.com/group/opensport.
+> For more options, visit https://groups.google.com/d/optout.
+

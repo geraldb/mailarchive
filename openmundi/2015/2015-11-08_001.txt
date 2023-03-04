@@ -1,0 +1,80 @@
+From 6214761339016970240@xxx Sun Nov 08 12:48:02 +0000 2015
+X-GM-THRID: 6213610254213578752
+X-Received: by 10.50.114.2 with SMTP id jc2mr16032201igb.5.1446986882565;
+        Sun, 08 Nov 2015 04:48:02 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.50.154.4 with SMTP id vk4ls942254igb.30.canary; Sun, 08 Nov
+ 2015 04:48:02 -0800 (PST)
+X-Received: by 10.67.1.97 with SMTP id bf1mr19873667pad.42.1446986882313;
+        Sun, 08 Nov 2015 04:48:02 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x232.google.com (mail-ig0-x232.google.com. [2607:f8b0:4001:c05::232])
+        by gmr-mx.google.com with ESMTPS id tg5si311108igb.2.2015.11.08.04.48.02
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 08 Nov 2015 04:48:02 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::232 as permitted sender) client-ip=2607:f8b0:4001:c05::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x232.google.com with SMTP id 9so14688823igl.0
+        for <openmundi@googlegroups.com>; Sun, 08 Nov 2015 04:48:02 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=TNv0UkR73nyjh0mWwKVWos0kGU5mJwgxBtUrRLeMlXA=;
+        b=d9p1JuA1A4QeW+AuqDwSmm28NabP1zNyQnLd4zh4Kv3zcVtSw5jDaBdNJRRGRmrs9M
+         5hUALjXAjoST+xFTyRZGHjUUMdaPhZHB8kx9IQEkMNk6TkUef5vdjC25s6fpLUCa5kPs
+         P5mnLDWKBr18YyOirvfYgRAuxZSBe/ArMoXuRuzMbu+3cR2Qyj4ek67950frg3ESq1br
+         lmfMG4R/3szHOywJO/4aIVI3D8MiGIexTIMR8vveyAX0PE1c27P19ASzpeF/SXqGfZUi
+         jObMokX0oYg3+9o4pwbH3eCKWDnOfnArgRNMkYXLFpjT30d0HpjbGdzjavnvCB+Y6jo5
+         pWSg==
+MIME-Version: 1.0
+X-Received: by 10.50.43.161 with SMTP id x1mr15765316igl.64.1446986882178;
+ Sun, 08 Nov 2015 04:48:02 -0800 (PST)
+Received: by 10.107.138.29 with HTTP; Sun, 8 Nov 2015 04:48:02 -0800 (PST)
+In-Reply-To: <CAAxEZd-1QcUEikn_JMsgPUNVzd_w7O-_X+f0iE6tT-TpALQFSw@mail.gmail.com>
+References: <CAAxEZd-1QcUEikn_JMsgPUNVzd_w7O-_X+f0iE6tT-TpALQFSw@mail.gmail.com>
+Date: Sun, 8 Nov 2015 13:48:02 +0100
+Message-ID: <CAAxEZd__WRvpmwGC3rGhZq0mnuVt+ZzZ0Spw8D1RnXDiD4Uy2g@mail.gmail.com>
+Subject: Re: World Factbook - meta/categories.json - Count(er) of All Categories
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   If anyone follows along - I've added a new pretty printed version
+(for humans ;-) [1] that also include codes for entries with less than
+ten profiles e.g.
+
+
+## Introduction (261)
+
+- Background (260)
+- Preliminary statement (1 - ee)
+-  (1 - ay)
+
+## Geography (261)
+
+- Location (259)
+   - metropolitan France (1 - fr)
+- Geographic coordinates (258)
+  - metropolitan France (1 - fr)
+- Map references (260)
+  - metropolitan France (1 - fr)
+- Area (260)
+   - total (257)
+   - land (249)
+   - water (248)
+   - note (53)
+
+...
+
+  Cheers.
+
+[1] github.com/worlddb/factbook/blob/master/CATEGORIES.md
+

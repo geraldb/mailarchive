@@ -1,0 +1,51 @@
+From 6204336722989285376@xxx Sun Oct 11 10:35:12 +0000 2015
+X-GM-THRID: 6204336720666689536
+X-Received: by 10.107.162.142 with SMTP id l136mr9183943ioe.32.1444559712253;
+        Sun, 11 Oct 2015 03:35:12 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.94.7 with SMTP id f7ls2066129qge.39.gmail; Sun, 11 Oct
+ 2015 03:35:09 -0700 (PDT)
+X-Received: by 10.31.15.16 with SMTP id 16mr3554514vkp.0.1444559709222;
+        Sun, 11 Oct 2015 03:35:09 -0700 (PDT)
+Received: by 10.50.82.40 with SMTP id f8msigy;
+        Sat, 10 Oct 2015 19:57:22 -0700 (PDT)
+X-Received: by 10.50.36.69 with SMTP id o5mr73711igj.7.1444532242476;
+        Sat, 10 Oct 2015 19:57:22 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Sat, 10 Oct 2015 19:57:21 -0700 (PDT)
+From: Fazle Taher <ftaher@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <17088f5e-4ab7-4fa5-acb7-e0c32046c29d@googlegroups.com>
+Subject: Error: sportdb new max
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3019_1245262534.1444532241670"
+X-Google-Token: EJGg57AFNCziEA6xckE0
+X-Google-IP: 108.48.154.228
+
+------=_Part_3019_1245262534.1444532241670
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3020_1281008106.1444532241670"
+
+------=_Part_3020_1281008106.1444532241670
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+When running, 'sportdb new max' getting the following error,
+
+[info] parsing data in zip (event) 'fr-france!/2014-15/2-ligue2' 
+(fr-france-master/2014-15/2-ligue2.yml)...
+[fatal] event reader - team keys: ["avignon", "ajaccio", "auxerre", 
+"havre", "ajacciogfc", "valenciennes", "chateauroux", "troyes", "nimes", 
+"angers", "tours", "creteil", "nancy", "dijon", "laval", "niort", 
+"sochaux", "orleans", "brest", "clermont"]
+[fatal] event reader - record for team key >ajacciogfc< not found
+
+------=_Part_3020_1281008106.1444532241670
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">When running, &#39;sportdb new max&#39; getting the following error,<div><br></div><div><div>[info] parsing data in zip (event) &#39;fr-france!/2014-15/2-ligue2&#39; (fr-france-master/2014-15/2-ligue2.yml)...</div><div>[fatal] event reader - team keys: [&quot;avignon&quot;, &quot;ajaccio&quot;, &quot;auxerre&quot;, &quot;havre&quot;, &quot;ajacciogfc&quot;, &quot;valenciennes&quot;, &quot;chateauroux&quot;, &quot;troyes&quot;, &quot;nimes&quot;, &quot;angers&quot;, &quot;tours&quot;, &quot;creteil&quot;, &quot;nancy&quot;, &quot;dijon&quot;, &quot;laval&quot;, &quot;niort&quot;, &quot;sochaux&quot;, &quot;orleans&quot;, &quot;brest&quot;, &quot;clermont&quot;]</div><div>[fatal] event reader - record for team key &gt;ajacciogfc&lt; not found</div></div></div>
+------=_Part_3020_1281008106.1444532241670--
+------=_Part_3019_1245262534.1444532241670--
+

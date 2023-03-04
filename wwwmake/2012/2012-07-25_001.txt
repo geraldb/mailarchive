@@ -1,0 +1,75 @@
+From 1123300671488@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1124184621056
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,82c0419e1d181739
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.224.180.205 with SMTP id bv13mr127930qab.8.1343261425936;
+        Wed, 25 Jul 2012 17:10:25 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.229.38.21 with SMTP id z21ls1774618qcd.2.gmail; Wed, 25 Jul
+ 2012 17:10:24 -0700 (PDT)
+Received: by 10.224.180.205 with SMTP id bv13mr127884qab.8.1343261424814;
+        Wed, 25 Jul 2012 17:10:24 -0700 (PDT)
+Received: by 10.224.106.136 with SMTP id x8msqao;
+        Wed, 25 Jul 2012 01:52:07 -0700 (PDT)
+Received: by 10.68.194.230 with SMTP id hz6mr2904265pbc.4.1343206325351;
+        Wed, 25 Jul 2012 01:52:05 -0700 (PDT)
+X-Google-Doc-Id: 4374cce2016da3ff
+X-Google-Web-Client: true
+Date: Wed, 25 Jul 2012 01:52:04 -0700 (PDT)
+From: mmx peng <mmxpeng@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <5abaddf7-02a1-4f79-a311-fbe58681eb7f@googlegroups.com>
+Subject: Some Problem with "Google HTML5 Rocks" template
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_17_6811220.1343206324758"
+X-Google-Token: ELTnvoAFSAcKLILNjFs0
+X-Google-IP: 202.153.202.43
+
+------=_Part_17_6811220.1343206324758
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_18_22010192.1343206324758"
+
+------=_Part_18_22010192.1343206324758
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+when i use google HTML5 Rocks templates 
+
+i saw two header on each slide
+
+the  html code is:
+
+        <div class="slide transitionSlide" id="slide2">
+>           <header><h1>Why a New Language?</h1></header>
+>           <section>
+>
+> <!-- _S9SLIDE_ -->
+> <h1>Why a New Language?</h1>
+>
+
+
+i think remove the following code is ok:
+
+<!-- _S9SLIDE_ -->
+> <h1>Why a New Language?</h1>
+>
+
+ how can i fix this?
+
+thanks...
+
+------=_Part_18_22010192.1343206324758
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+when i use google HTML5 Rocks templates <br><br>i saw two header on each slide<br><br>the&nbsp; html code is:<br><br><blockquote style="margin: 0px 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;" class="gmail_quote">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="slide transitionSlide" id="slide2"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;header&gt;&lt;h1&gt;Why a New Language?&lt;/h1&gt;&lt;/header&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;section&gt;<br><br>&lt;!-- _S9SLIDE_ --&gt;<br>&lt;h1&gt;Why a New Language?&lt;/h1&gt;<br></blockquote><br><br>i think remove the following code is ok:<br><br><blockquote style="margin: 0px 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;" class="gmail_quote">&lt;!-- _S9SLIDE_ --&gt;<br>&lt;h1&gt;Why a New Language?&lt;/h1&gt;<br></blockquote><div><br>&nbsp;how can i fix this?<br><br>thanks...<br></div>
+------=_Part_18_22010192.1343206324758--
+
+------=_Part_17_6811220.1343206324758--
+

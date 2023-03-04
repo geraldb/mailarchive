@@ -1,0 +1,113 @@
+From 6609509728174211072@xxx Sun Oct 07 07:13:24 +0000 2018
+X-GM-THRID: 6605547990025240576
+X-Received: by 2002:a2e:9cc2:: with SMTP id g2-v6mr515833ljj.18.1538896404146;
+        Sun, 07 Oct 2018 00:13:24 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a19:e342:: with SMTP id c2-v6ls405255lfk.45.gmail; Sun, 07
+ Oct 2018 00:13:23 -0700 (PDT)
+X-Google-Smtp-Source: ACcGV61ppreV9M2CTGCCplweCu1pMYHcGKDPjud+lGHjp+wOwxIR/9g5pJUP/wldkkMg+Ll4J1Jt
+X-Received: by 2002:a19:7010:: with SMTP id h16-v6mr491202lfc.12.1538896403148;
+        Sun, 07 Oct 2018 00:13:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1538896403; cv=none;
+        d=google.com; s=arc-20160816;
+        b=SbkkI/QQRFJ/N1Itb87zhZTEO1wNKXJMn7m3HUA3UujS4WOYs1HXd78XcJSwsFOfNF
+         qErEpL0F4cgoCE0GGp2D7LTWYVoGAOgrOgHZyEMBoQ7IK8gg7owjDf/bS0NpdFx2on4u
+         kKOJRIOS9J0wircEpTLhAqN33BY+QVnUNMpFAI8fGarPY3lv8J5JCLNcKKzTlQlsDPSd
+         aTMa5IWjOS9NGsR83x3aMCy+8dWJG8Sx5sJkktNb7o2X/laV7l7Z/x87N46XcBfY+nLR
+         /Kp6YKeNnE/2wdNyWSUdSsA9FHw8tLoxLoNVmeR9rPcj2L5VHz8N2Lgy9PFAtkeK9Y2R
+         YwPQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=t6T4GvEM91peoEaUJq7Jisl3KPZrQeHBFNrPeOGGW2M=;
+        b=p8KtzyuvFbeeN3nbn/jY5SEUML0jHvcYk+ZzWcrRFabCtUh5cx7TTfESnhi35fpN9S
+         TJoqxxSEtUHgqdiaW7s4vDcjIeMutJgTd4LQogXKPtF348mv5tIUjNNtW5nRB+CLvUiT
+         Ror45J0Ebw2+NojHm9LnlZbVSNOFvl4WHRbxf2prw1jYGrkaxEJn0eEnJF0JBl5/z7et
+         eg3VLKMfSxSkk/vxBhMT2shHe6VW31ZtL5dSB65ar4p7ayNdwiffaUpgUn8wY1IpoDX4
+         u2Lp7k9EFCONTvCdgF6q24Wf0E7/kcvo8NaQiKPy18Gxmdh38OZ8M0QezbLt/2D9fvHq
+         l6XA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Z3JvuUw1;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22b.google.com (mail-lj1-x22b.google.com. [2a00:1450:4864:20::22b])
+        by gmr-mx.google.com with ESMTPS id l19-v6si567331ljg.5.2018.10.07.00.13.23
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 07 Oct 2018 00:13:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22b as permitted sender) client-ip=2a00:1450:4864:20::22b;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Z3JvuUw1;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22b.google.com with SMTP id o14-v6so15098236ljj.2
+        for <opensport@googlegroups.com>; Sun, 07 Oct 2018 00:13:23 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=t6T4GvEM91peoEaUJq7Jisl3KPZrQeHBFNrPeOGGW2M=;
+        b=Z3JvuUw1R8G3jRtE/rFw0BPe9JID4BwTWsbR7E45/iQbGXd/u52xUlM3saoox5Y2qS
+         EwAmUIiL6Vs5c1Kgimy99ExHgkADcbBQQxWVWLR+jzBxlJcr9teQ3BdH9v80QGKl3sqt
+         aLErBWVeL8cInALPA/kOGjNGzOEPPKLTyRXuZWM8Y5OyA5QgbDfcxtLOtTojo+0g516J
+         FmLKXQVRv12mqYL/OpR5PI5UDT+HCn3+XJ6ivWT4SlVJwXTX+so4cgp8CVOzVKuz8KVq
+         x63nNpkBvatMOrr6Bck+En3s6HmnJk+PzJx+T19zeTmZHIQ5yAoPwVdHD2QCBP0OsHkz
+         A1/A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=t6T4GvEM91peoEaUJq7Jisl3KPZrQeHBFNrPeOGGW2M=;
+        b=azYXlNIoQ9yxfI42ozGhqmf9TzymmRnIdR0050lp9ZlyzBKFB8hJdlf2BJmG3lny+9
+         XjCgeLzOtj8zD7Owi7EIX86g46QYYnPIFv04d1ytgGCwrxGIMXf+TqhTU7dpiy+MvcAd
+         I5GgApC28UzZQBDwEdROImsWqMEAihVKL0TuwiYDeAVWEiOf1lz1uh9gV/aMyNEJzAg4
+         CFTpRv9+ysr7uJvARnGnSrxdfZ2tTKfhUfj9lDXB7esQbKMrK4jkhBjUq7XRczU9PqEF
+         muJe8knqSujAqg9TGpp26UV5I4F0qzWNTcAnBLm4ys4aQASHSPIwhJpu3RBkg5/uezsw
+         Xamw==
+X-Gm-Message-State: ABuFfoj0ZS5RuM0d2k2WQlJOS2LBzCa0uMPk575QuIp4BcfwIvovOzDM
+	bN95huRecAosXlSNG+Ad8bmGzw3mPofubFtEmer1qwWo
+X-Received: by 2002:a2e:9e10:: with SMTP id e16-v6mr2208100ljk.169.1538896402662;
+ Sun, 07 Oct 2018 00:13:22 -0700 (PDT)
+MIME-Version: 1.0
+References: <13f7fdc4-ed2d-4d0b-9f2f-fff0c2cf15e1@googlegroups.com> <0d0ee6b8-bb83-4dc4-9866-39351fce0cbc@googlegroups.com>
+In-Reply-To: <0d0ee6b8-bb83-4dc4-9866-39351fce0cbc@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 7 Oct 2018 09:13:10 +0200
+Message-ID: <CAAxEZd-7YFbkDk58LRM0v=YxZYpgOkhHpU1dtPR1Yy5cL08nEQ@mail.gmail.com>
+Subject: Re: [opensport] Re: Help for a beginner
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary="0000000000006d484605779e3da2"
+
+--0000000000006d484605779e3da2
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+    Congrats. Great news.  The datafile lists all the datasets imported
+e.g. it also includes the countries from the world.db.
+
+     About the tables / schema - yes, there a more tables for statistics,
+players, stadiums, etc. and the schema also
+   includes the world.db [1] (that is, countries, continents, language,
+cities, etc.)
+
+    Have a great weekend. Cheers. Prost.
+
+[1] http://openmundi.github.io
+
+--0000000000006d484605779e3da2
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr">Hello,<div><br></div><div>=C2=A0 =C2=A0 C=
+ongrats. Great news.=C2=A0 The datafile lists all the datasets imported e.g=
+. it also includes the countries from the world.db.</div><div><br></div><di=
+v>=C2=A0 =C2=A0 =C2=A0About the tables / schema - yes, there a more tables =
+for statistics, players, stadiums, etc. and the schema also=C2=A0</div><div=
+>=C2=A0 =C2=A0includes the world.db [1] (that is, countries, continents, la=
+nguage, cities, etc.)</div><div><br></div><div>=C2=A0 =C2=A0 Have a great w=
+eekend. Cheers. Prost.</div><div><br></div><div>[1]=C2=A0<a href=3D"http://=
+openmundi.github.io">http://openmundi.github.io</a></div></div></div>
+
+--0000000000006d484605779e3da2--
+

@@ -1,0 +1,273 @@
+From 6836134764412403712@xxx Tue Jun 09 00:14:17 +0000 2020
+X-GM-THRID: 6832099918990016512
+Date: Mon, 8 Jun 2020 17:14:17 -0700 (PDT)
+From: infominer <infominer33@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <3a11234f-dbc3-4dc3-aa5c-7302852f1af3o@googlegroups.com>
+In-Reply-To: <f0632548-bec5-45e9-bc99-5195ea0bcfe4@googlegroups.com>
+References: <f0632548-bec5-45e9-bc99-5195ea0bcfe4@googlegroups.com>
+Subject: Re: identosphere.net v 1.0 [pluto feedreader]
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_121_1873692652.1591661657296"
+X-Google-Token: ENmo-_YFGXqQFRmtmSk0
+X-Google-IP: 3.14.172.171
+
+------=_Part_121_1873692652.1591661657296
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_122_1406104538.1591661657296"
+
+------=_Part_122_1406104538.1591661657296
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+ok... that was a bit premature, but now I'm getting somewhere
+
+, pre, .wrap {
+white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+word-wrap: break-word; /* Internet Explorer 5.5+ */
+word-break: break-all;
+}
+
+Some css to catch all the unwrapping lines of text
+
+Also trying out this sanitize <https://github.com/rgrove/sanitize> gem... 
+Idk if I really need it... but it's quite configurable.. and I was really 
+struggling with how to catch all the overflowy \ not wrapping segments... 
+but it was too much trouble to try and use images with it, much easier to 
+just pull out an image and have control on how to display it.
+
+
+<div class='wrap'>
+<% if item.content %>
+<%= Sanitize.fragment(item.content,
+:elements => ['a','blockquote','code','br','p'],
+:attributes => {
+'a' => ['href', 'title'],
+'blockquote' => ['cite'],
+},
+:protocols => {
+'a' => {'href' => ['http', 'https', 'mailto']}
+}) %>
+<% 
+doc = Nokogiri::HTML(item.content)
+src = doc.css("img").attribute('src').to_s
+%> 
+<% if src.include? "http:" %>
+<% src.sub!(/http:/,'https:') %>
+<% end %>
+<% if src.nil? %> 
+<% elsif src.include? "stat?event=post.clientViewed" %>
+<% elsif src.include? "profile.jpg" %>
+<% else %>
+<div class="photo">
+<%= image_tag("#{ src }") %>
+</div>
+<% end %> 
+<% elsif item.summary %>
+<%= Sanitize.fragment(item.summary,
+:elements => ['a','blockquote','code','br','p'],
+:attributes => {
+'a' => ['href', 'title'],
+'blockquote' => ['cite'],
+},
+:protocols => {
+'a' => {'href' => ['http', 'https', 'mailto']}
+}) %>
+<% 
+doc = Nokogiri::HTML(item.content)
+src = doc.css("img").attribute('src').to_s
+%> 
+<% if src.include? "http:" %>
+<% src.sub!(/http:/,'https:') %>
+<% end %>
+<% if src.nil? %> 
+<% elsif src.include? "stat?event=post.clientViewed" %>
+<% elsif src.include? "profile.jpg" %>
+<% else %>
+<div class="photo">
+<%= image_tag("#{ src }") %>
+</div>
+<% end %> 
+<% else %>
+-/-
+<% end %>
+</div>
+</div>
+
+
+
+So now I have full-text image and a snippet preview image for all posts 
+supporting that (except for some relative url I haven't quite figured yet).
+
+On Thursday, May 28, 2020 at 11:17:01 PM UTC-4, infominer wrote:
+>
+> Yay! My very first planet!
+>
+> https://identosphere.net/
+>
+> [image: identosphere-1.0.png]
+>
+>
+> Still have some work to go... 
+>
+> I'd like to include images on the 'full-vew'.. and probably I need to go 
+> through and make a list of which feeds aren't loading 
+> <https://groups.google.com/forum/#!topic/wwwmake/9kqMWrZn9j4>.
+>
+> For now I'm super happy. It's been a labor of love over the past month. 
+> Looking forward to shifting focus for a bit, but it might be difficult to 
+> pull myself away from endlessly tweaking my template.
+>
+> -infominer
+>
+
+------=_Part_122_1406104538.1591661657296
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><br></div><div>ok... that was a bit premature, but no=
+w I&#39;m getting somewhere</div><div><br></div><div><div style=3D"color: r=
+gb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Menlo, M=
+onaco, &quot;Courier New&quot;, monospace; font-size: 12px; line-height: 18=
+px; white-space: pre;"><div>, <span style=3D"color: #d7ba7d;">pre</span>, <=
+span style=3D"color: #d7ba7d;">.wrap</span> {</div><div>  <span style=3D"co=
+lor: #9cdcfe;">white-space</span>: -moz-pre-wrap;  <span style=3D"color: #6=
+a9955;">/* Mozilla, since 1999 */</span></div><div>  <span style=3D"color: =
+#9cdcfe;">white-space</span>: -pre-wrap;      <span style=3D"color: #6a9955=
+;">/* Opera 4-6 */</span></div><div>  <span style=3D"color: #9cdcfe;">white=
+-space</span>: -o-pre-wrap;    <span style=3D"color: #6a9955;">/* Opera 7 *=
+/</span></div><div>  <span style=3D"color: #9cdcfe;">word-wrap</span>: <spa=
+n style=3D"color: #ce9178;">break-word</span>;       <span style=3D"color: =
+#6a9955;">/* Internet Explorer 5.5+ */</span></div><div>  <span style=3D"co=
+lor: #9cdcfe;">word-break</span>: <span style=3D"color: #ce9178;">break-all=
+</span>;</div><div>}</div></div></div><div><br></div><div>Some css to catch=
+ all the unwrapping lines of text</div><div><br></div><div>Also trying out =
+this <a href=3D"https://github.com/rgrove/sanitize">sanitize</a> gem... Idk=
+ if I really need it... but it&#39;s quite configurable.. and I was really =
+struggling with how to catch all the overflowy \ not wrapping segments... b=
+ut it was too much trouble to try and use images with it, much easier to ju=
+st pull out an image and have control on how to display it.</div><div><br><=
+/div><div><br></div><div><div style=3D"color: rgb(212, 212, 212); backgroun=
+d-color: rgb(30, 30, 30); font-family: Menlo, Monaco, &quot;Courier New&quo=
+t;, monospace; font-size: 12px; line-height: 18px; white-space: pre;"><div>=
+<span style=3D"color: #ce9178;">&lt;div class=3D&#39;</span>wrap<span style=
+=3D"color: #ce9178;">&#39;&gt;</span></div><div><span style=3D"color: #ce91=
+78;">&lt;% if item.content %&gt;</span></div><div><span style=3D"color: #ce=
+9178;">&lt;%=3D Sanitize.fragment(item.content,</span></div><div><span styl=
+e=3D"color: #ce9178;">  :elements =3D&gt; [&#39;</span>a<span style=3D"colo=
+r: #ce9178;">&#39;,&#39;</span>blockquote<span style=3D"color: #ce9178;">&#=
+39;,&#39;</span>code<span style=3D"color: #ce9178;">&#39;,&#39;</span>br<sp=
+an style=3D"color: #ce9178;">&#39;,&#39;</span><span style=3D"color: #dcdca=
+a;">p</span><span style=3D"color: #ce9178;">&#39;],</span></div><div><span =
+style=3D"color: #ce9178;">  :attributes =3D&gt; {</span></div><div><span st=
+yle=3D"color: #ce9178;">    &#39;</span>a<span style=3D"color: #ce9178;">&#=
+39;          =3D&gt; [&#39;</span>href<span style=3D"color: #ce9178;">&#39;=
+, &#39;</span>title<span style=3D"color: #ce9178;">&#39;],</span></div><div=
+><span style=3D"color: #ce9178;">    &#39;</span>blockquote<span style=3D"c=
+olor: #ce9178;">&#39; =3D&gt; [&#39;</span>cite<span style=3D"color: #ce917=
+8;">&#39;],</span></div><div><span style=3D"color: #ce9178;">    },</span><=
+/div><div><span style=3D"color: #ce9178;">  :protocols =3D&gt; {</span></di=
+v><div><span style=3D"color: #ce9178;">    &#39;</span>a<span style=3D"colo=
+r: #ce9178;">&#39; =3D&gt; {&#39;</span>href<span style=3D"color: #ce9178;"=
+>&#39; =3D&gt; [&#39;</span>http<span style=3D"color: #ce9178;">&#39;, &#39=
+;</span>https<span style=3D"color: #ce9178;">&#39;, &#39;</span>mailto<span=
+ style=3D"color: #ce9178;">&#39;]}</span></div><div><span style=3D"color: #=
+ce9178;">  }) %&gt;</span></div><div><span style=3D"color: #ce9178;">  &lt;=
+% </span></div><div><span style=3D"color: #ce9178;">  doc =3D Nokogiri::HTM=
+L(item.content)</span></div><div><span style=3D"color: #ce9178;">  src =3D =
+doc.css(&quot;img&quot;).attribute(&#39;</span>src<span style=3D"color: #ce=
+9178;">&#39;).to_s</span></div><div><span style=3D"color: #ce9178;">  %&gt;=
+ </span></div><div><span style=3D"color: #ce9178;">  &lt;% if src.include? =
+&quot;http:&quot; %&gt;</span></div><div><span style=3D"color: #ce9178;">  =
+  &lt;% src.sub!(/http:/,&#39;</span>https:<span style=3D"color: #ce9178;">=
+&#39;) %&gt;</span></div><div><span style=3D"color: #ce9178;">  &lt;% end %=
+&gt;</span></div><div><span style=3D"color: #ce9178;">  &lt;% if src.nil? %=
+&gt; </span></div><div><span style=3D"color: #ce9178;">  &lt;% elsif src.in=
+clude? &quot;stat?event=3Dpost.clientViewed&quot; %&gt;</span></div><div><s=
+pan style=3D"color: #ce9178;">  &lt;% elsif src.include? &quot;profile.jpg&=
+quot; %&gt;</span></div><div><span style=3D"color: #ce9178;">  &lt;% else %=
+&gt;</span></div><div><span style=3D"color: #ce9178;">  &lt;div class=3D&qu=
+ot;photo&quot;&gt;</span></div><div><span style=3D"color: #ce9178;">    &lt=
+;%=3D image_tag(&quot;#{ src }&quot;) %&gt;</span></div><div><span style=3D=
+"color: #ce9178;">  &lt;/div&gt;</span></div><div><span style=3D"color: #ce=
+9178;">  &lt;% end %&gt; </span></div><div><span style=3D"color: #ce9178;">=
+&lt;% elsif item.summary %&gt;</span></div><div><span style=3D"color: #ce91=
+78;">  &lt;%=3D Sanitize.fragment(item.summary,</span></div><div><span styl=
+e=3D"color: #ce9178;">  :elements =3D&gt; [&#39;</span>a<span style=3D"colo=
+r: #ce9178;">&#39;,&#39;</span>blockquote<span style=3D"color: #ce9178;">&#=
+39;,&#39;</span>code<span style=3D"color: #ce9178;">&#39;,&#39;</span>br<sp=
+an style=3D"color: #ce9178;">&#39;,&#39;</span><span style=3D"color: #dcdca=
+a;">p</span><span style=3D"color: #ce9178;">&#39;],</span></div><div><span =
+style=3D"color: #ce9178;">  :attributes =3D&gt; {</span></div><div><span st=
+yle=3D"color: #ce9178;">    &#39;</span>a<span style=3D"color: #ce9178;">&#=
+39;          =3D&gt; [&#39;</span>href<span style=3D"color: #ce9178;">&#39;=
+, &#39;</span>title<span style=3D"color: #ce9178;">&#39;],</span></div><div=
+><span style=3D"color: #ce9178;">    &#39;</span>blockquote<span style=3D"c=
+olor: #ce9178;">&#39; =3D&gt; [&#39;</span>cite<span style=3D"color: #ce917=
+8;">&#39;],</span></div><div><span style=3D"color: #ce9178;">    },</span><=
+/div><div><span style=3D"color: #ce9178;">  :protocols =3D&gt; {</span></di=
+v><div><span style=3D"color: #ce9178;">    &#39;</span>a<span style=3D"colo=
+r: #ce9178;">&#39; =3D&gt; {&#39;</span>href<span style=3D"color: #ce9178;"=
+>&#39; =3D&gt; [&#39;</span>http<span style=3D"color: #ce9178;">&#39;, &#39=
+;</span>https<span style=3D"color: #ce9178;">&#39;, &#39;</span>mailto<span=
+ style=3D"color: #ce9178;">&#39;]}</span></div><div><span style=3D"color: #=
+ce9178;">  }) %&gt;</span></div><div><span style=3D"color: #ce9178;">  &lt;=
+% </span></div><div><span style=3D"color: #ce9178;">  doc =3D Nokogiri::HTM=
+L(item.content)</span></div><div><span style=3D"color: #ce9178;">  src =3D =
+doc.css(&quot;img&quot;).attribute(&#39;</span>src<span style=3D"color: #ce=
+9178;">&#39;).to_s</span></div><div><span style=3D"color: #ce9178;">  %&gt;=
+ </span></div><div><span style=3D"color: #ce9178;">  &lt;% if src.include? =
+&quot;http:&quot; %&gt;</span></div><div><span style=3D"color: #ce9178;">  =
+  &lt;% src.sub!(/http:/,&#39;</span>https:<span style=3D"color: #ce9178;">=
+&#39;) %&gt;</span></div><div><span style=3D"color: #ce9178;">  &lt;% end %=
+&gt;</span></div><div><span style=3D"color: #ce9178;">  &lt;% if src.nil? %=
+&gt; </span></div><div><span style=3D"color: #ce9178;">  &lt;% elsif src.in=
+clude? &quot;stat?event=3Dpost.clientViewed&quot; %&gt;</span></div><div><s=
+pan style=3D"color: #ce9178;">  &lt;% elsif src.include? &quot;profile.jpg&=
+quot; %&gt;</span></div><div><span style=3D"color: #ce9178;">  &lt;% else %=
+&gt;</span></div><div><span style=3D"color: #ce9178;">  &lt;div class=3D&qu=
+ot;photo&quot;&gt;</span></div><div><span style=3D"color: #ce9178;">    &lt=
+;%=3D image_tag(&quot;#{ src }&quot;) %&gt;</span></div><div><span style=3D=
+"color: #ce9178;">  &lt;/div&gt;</span></div><div><span style=3D"color: #ce=
+9178;">  &lt;% end %&gt; </span></div><div><span style=3D"color: #ce9178;">=
+&lt;% else %&gt;</span></div><div><span style=3D"color: #ce9178;">  -/-</sp=
+an></div><div><span style=3D"color: #ce9178;">&lt;% end %&gt;</span></div><=
+div><span style=3D"color: #ce9178;">&lt;/div&gt;</span></div><div><span sty=
+le=3D"color: #ce9178;">&lt;/div&gt;</span></div><br><div><span style=3D"col=
+or: #ce9178;"></span></div></div></div><div><br></div><div><br></div><div>S=
+o now I have full-text image and a snippet preview image for all posts supp=
+orting that (except for some relative url I haven&#39;t quite figured yet).=
+</div><br>On Thursday, May 28, 2020 at 11:17:01 PM UTC-4, infominer wrote:<=
+blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;bord=
+er-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr"><div>Yay! My v=
+ery first planet!</div><div><br></div><a href=3D"https://identosphere.net/"=
+ target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https:/=
+/www.google.com/url?q\x3dhttps%3A%2F%2Fidentosphere.net%2F\x26sa\x3dD\x26sn=
+tz\x3d1\x26usg\x3dAFQjCNGh-sd4U8DXzIIXQ2no6SAp17oS1w&#39;;return true;" onc=
+lick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fiden=
+tosphere.net%2F\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGh-sd4U8DXzIIXQ2no6=
+SAp17oS1w&#39;;return true;">https://identosphere.net/</a><br><div><br></di=
+v><p style=3D"text-align:left;clear:both"><img src=3D"https://groups.google=
+.com/group/wwwmake/attach/786f10abf85c3/identosphere-1.0.png?part=3D0.1&amp=
+;view=3D1&amp;authuser=3D1" alt=3D"identosphere-1.0.png" width=3D"320" heig=
+ht=3D"116" style=3D"margin-left:1em;margin-right:1em"></p><div><br></div><d=
+iv><br></div><div>Still have some work to go...=C2=A0</div><div><br></div><=
+div>I&#39;d like to include images on the &#39;full-vew&#39;.. and probably=
+ I need to go through and make a list of <a href=3D"https://groups.google.c=
+om/forum/#!topic/wwwmake/9kqMWrZn9j4" target=3D"_blank" rel=3D"nofollow" on=
+mousedown=3D"this.href=3D&#39;https://groups.google.com/forum/#!topic/wwwma=
+ke/9kqMWrZn9j4&#39;;return true;" onclick=3D"this.href=3D&#39;https://group=
+s.google.com/forum/#!topic/wwwmake/9kqMWrZn9j4&#39;;return true;">which fee=
+ds aren&#39;t loading</a>.</div><div><br></div><div>For now I&#39;m super h=
+appy. It&#39;s been a labor of love over the past month. Looking forward to=
+ shifting focus for a bit, but it might be difficult to pull myself away fr=
+om endlessly tweaking my template.</div><div><br></div><div>-infominer</div=
+></div></blockquote></div>
+------=_Part_122_1406104538.1591661657296--
+
+------=_Part_121_1873692652.1591661657296--
+

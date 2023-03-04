@@ -1,0 +1,124 @@
+From 6523979277972537344@xxx Sun Feb 18 19:31:34 +0000 2018
+X-GM-THRID: 6523565184424869888
+X-Received: by 10.101.74.4 with SMTP id s4mr2826416pgq.81.1518982294576;
+        Sun, 18 Feb 2018 11:31:34 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.101.67.4 with SMTP id j4ls1317270pgq.6.gmail; Sun, 18 Feb 2018
+ 11:31:33 -0800 (PST)
+X-Google-Smtp-Source: AH8x225XE+WKF6jp72AoFtEo7Pe419zi+QZnWXWEP6w/JcR6K1bPDiZ55/0Pnkd1mMC14gZ7B/W8
+X-Received: by 10.99.166.25 with SMTP id t25mr2754970pge.164.1518982293423;
+        Sun, 18 Feb 2018 11:31:33 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1518982293; cv=none;
+        d=google.com; s=arc-20160816;
+        b=zSNSlJrwY+l37bFDVgv0mbcChrBMDH0naFuOi+cK/1EjxchR1eHSIJPODuqG35tW5w
+         grr8FE25OqQ/UjqBnVIG/CXctrE6U8K58PaExqdMxxpGwDOx3/+/Ndvx5E65L7iOsh4+
+         96LeTuyoVYd3QnQzGCYTPCv8nMpT3J6HXDoTvxdTrT9w80DDNq9NDkqVKS7VNiP8XRE0
+         dVr6i+au06Hy2yyeWo8S89POVeCxPJKOAU1pnCf5EgTTh0N8fq9W/IsFfm1DIZviYaiL
+         ymmAM19S8w9RYBPB0y0miPPkSP5UKQ81ZychEjKye1t3bTx1rdquPSiAUzzrqJsRdPaf
+         isqw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=YGXabjgw4+NHXGfbxWYEtu7ceFF84EyVTkvmI34JcFY=;
+        b=04byRDS96vMqRTYA9Hx0gRaw5a/njCTcVs6rW6nGgdpjfqw1e9vLdVLaB8WSAGRNA3
+         kHCY3yekgrOk4v2abFRrRwxSvVpZDY7NTTE/pVwqYVwwWF8GE84LHDchGVzt/bvULw2H
+         +Sx2IY+STKskwZHr8UkHM8yFwOBq97NsFfeJ3jvRbRZw+rLUArKomSh5bWoYsBh0GxdR
+         gdTRo7fEpg/yqVGqnJ/AtnQPSniu0D92ZtsBYtOJtHyb3ExO1M6wUMm/iNudiDERRvfX
+         y6UnBcq9YeqIx+oh01dOBwf650/Sp+BWq1NdL8sKqcS3KiMtRIFo20fVDBefE+Q1ASdu
+         hoBw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=W8GrRxoO;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22e.google.com (mail-it0-x22e.google.com. [2607:f8b0:4001:c0b::22e])
+        by gmr-mx.google.com with ESMTPS id y22si471664pfe.5.2018.02.18.11.31.33
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 18 Feb 2018 11:31:33 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22e as permitted sender) client-ip=2607:f8b0:4001:c0b::22e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=W8GrRxoO;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22e.google.com with SMTP id l187so7162023ith.4
+        for <opensport@googlegroups.com>; Sun, 18 Feb 2018 11:31:33 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=YGXabjgw4+NHXGfbxWYEtu7ceFF84EyVTkvmI34JcFY=;
+        b=W8GrRxoOiflBa3/lTzd4AWDMAagk9z5YeSdyPvRNVRXME2Eai1cLEdpM0tqd8/ds7i
+         cDMLcDYLgTGY8cDOcE+msKQZTQs5i48gu6nc4MZakgfmWzWcIp1strbuOXdXMRjZpb2n
+         Fna3cLZzrHwqRj6qX1yMZ0JDOf3EWHf1asmtsQBkr5QMZBJ50LeBNu/yALGraqmYyW6a
+         rDONJ462dMRGSoExVlwnbi7V8FAQTd74toREnLrF0+74LqVkFKaaIV0qYPK7Ri3aGmLq
+         WKGNFUGLM3ZMTescPhWrdo5GVWdakwjeYRu1/kSHNKouIVGAd8esv3Km78ijdH1YLFB8
+         lG2g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=YGXabjgw4+NHXGfbxWYEtu7ceFF84EyVTkvmI34JcFY=;
+        b=Yvb866NESSkaVC9awaqbP+J5UVCQXczsKJ+ZuRXhHwlJa92C6YAWp/xs5uYKkimbj0
+         kGvvvcBTA3TwnCZ4+s27UP35aXI4pcp3NN8UAG4Zsojvq9rXCMMV3BZt9/SLDhcrVlJF
+         pXoXujw2AFPd/VvlW+JSX2j8Dv9hEztyLVmpwFp6pAnmDdKgqImqV7SR4N9dlqd8M0Q0
+         IGDggokAny99LGhKGlLku2JpHJO1VsqV7LFipikAIVmmP6otF+OaxiB8TBByToI+gK+S
+         FRolDKWcLprrHpBmItxlW4OwKJv1Lk13+tLXyoekq36kxQOwTAfHqPR17DbFUw1MYGwv
+         TeHQ==
+X-Gm-Message-State: APf1xPACGA7TXVRlaYQ8cYDkkWy5JsD/5HKQmjhVC4SXEwz/+TBwvQjm
+	yWM5c8FmEfYDtmI+NdZiW86qHai4Iw7krSGc+7AJ2A==
+X-Received: by 10.36.79.149 with SMTP id c143mr17380873itb.63.1518982292447;
+ Sun, 18 Feb 2018 11:31:32 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.3.230 with HTTP; Sun, 18 Feb 2018 11:31:31 -0800 (PST)
+In-Reply-To: <def18bfa-cf45-48ee-ab0e-55c63f3655c7@googlegroups.com>
+References: <f87a3a7e-e9cb-4b11-8826-b668d833a6e6@googlegroups.com>
+ <CAAxEZd8Qp_DGOc7DXZf9VCBM9D388WU6dS-09+hzfCEHnJjBhg@mail.gmail.com> <def18bfa-cf45-48ee-ab0e-55c63f3655c7@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 18 Feb 2018 20:31:31 +0100
+Message-ID: <CAAxEZd9mAuhYaLtMrMb44+1zif_XU7hM=vri32Heyc8XssGSAg@mail.gmail.com>
+Subject: Re: [opensport] Uninitialized constant SportDb::Service::Server
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+    Wow. World Cup Brackets looks like a great project. Thanks for
+sharing and highlighting.
+
+     The "core" football.db functionality is the database models and
+readers. Use datafiles [1][2][3] to read the data into your SQL
+database of choice (defaults to sqlite). For the worldcup 2014, for
+example, try:
+
+       $ sportdb new worldcup2014
+
+   Cheers.
+
+[1] https://github.com/openfootball/datafile/blob/master/worldcup2014.rb
+[2] https://github.com/openfootball/datafile/blob/master/worldcup2018.rb
+[3] https://github.com/openfootball/datafile/blob/master/worldcup.rb
+
+2018-02-17 19:06 GMT+01:00  <joe@workmanmail.com>:
+> Thanks! The more I dig into this project that you have built, its amazing
+> the size and complexity. Although to be honest, its confusing since it
+> spread out across so many different GitHub accounts. Let me explain what I
+> am trying to build...
+>
+> I am building this... https://www.worldcupbrackets.info
+>
+> Right now, it only has data for 2014, that I manually collected. I
+> discovered your openfootball project and thought it would really help me
+> build previous years pages.
+>
+> What is the best way for me to get the data? I am happy with just the SQLite
+> databases or the JSON API to them if I can get that to work. I was only ever
+> to create a database for the 2014 World Cup though.
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> To post to this group, send email to opensport@googlegroups.com.
+> Visit this group at https://groups.google.com/group/opensport.
+> For more options, visit https://groups.google.com/d/optout.
+

@@ -1,0 +1,74 @@
+From 6244430473415622656@xxx Wed Jan 27 11:39:27 +0000 2016
+X-GM-THRID: 6212542687340396544
+X-Received: by 10.13.246.193 with SMTP id g184mr26995671ywf.44.1453894766983;
+        Wed, 27 Jan 2016 03:39:26 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.33.202 with SMTP id h193ls574417ioh.79.gmail; Wed, 27 Jan
+ 2016 03:39:26 -0800 (PST)
+X-Received: by 10.66.228.234 with SMTP id sl10mr26415788pac.29.1453894766645;
+        Wed, 27 Jan 2016 03:39:26 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22d.google.com (mail-io0-x22d.google.com. [2607:f8b0:4001:c06::22d])
+        by gmr-mx.google.com with ESMTPS id ti5si432550igb.2.2016.01.27.03.39.26
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 27 Jan 2016 03:39:26 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22d as permitted sender) client-ip=2607:f8b0:4001:c06::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22d.google.com with SMTP id 1so15732993ion.1
+        for <opensport@googlegroups.com>; Wed, 27 Jan 2016 03:39:26 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=871OgbKtQHTCriHaCKXYs+Og/FaCSoN28rSNAjytmXE=;
+        b=lEQqab6v7BXrQsTCgic9aROlVdyh6jhYOAK2vwRHxdlzUzw3rugAg7TUAu4CiW9PCj
+         ZSYupqzO5zZbwtOIqskkGpAgRDjz9j7Viz8YVTs/2tYacopa7dWTf7cBLIi4F5Z5WoLZ
+         ReDNRgbByi5eN1Nc9TXJZWYxgsr+j9YcEP7CiFPpQM1eYJ1I5QJoEXHVDQrc+rgwR5Zx
+         oS6j9tjJ+XWBK7Y7YG16AhsuiZvDq1Z0366bXo/aNApePAmp0dJBWwKE2iFeXh90998f
+         m+1ORVJ9BDGCf96I9p6g1vuvAQE3d+97hN4pc8mQmG1F369CDDs9XmrRCnLe+6NcgE/I
+         5vyA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to:content-type;
+        bh=871OgbKtQHTCriHaCKXYs+Og/FaCSoN28rSNAjytmXE=;
+        b=ETtCGOgtdHfsGm7At+VsS6TMLa04qhBJpmKMtT2BPnWL7dGTWooXsE0XPRk+xv81rA
+         5X0jCRYKEcMokJ+FpICF9thrK/CAMluOTOaaOOubD7a4TvNYSrHzMjviZy0RkIHkXcYI
+         ZXaNYc3xaWFDZqaO7SSAgF61Q4GCRt/N/Xk2O5ZzZFWb8jKp1o6Mbwd+MfkbicuUjHJ1
+         IBiGkWq2xTanEPemZKyl6aTgn1F+rngTbxQhmEo/pnVwT+5bn6aa8s3nONcYLRIhTXuS
+         bh0rzvIahigGfIYdw1vpDm57xwrmuGVbFzEdiGgUXn6Fb2cRTiEkEERMBwDr/ghM9lQq
+         qBzw==
+X-Gm-Message-State: AG10YOS405EYzrgfplRpg7JiR+WsTStYUAgUErKp9DoWvgPFYamwvEem1sdlbzEbD/xWlaUFPa1iOZKBqnUa6Q==
+MIME-Version: 1.0
+X-Received: by 10.107.40.76 with SMTP id o73mr25450308ioo.157.1453894766488;
+ Wed, 27 Jan 2016 03:39:26 -0800 (PST)
+Received: by 10.107.159.65 with HTTP; Wed, 27 Jan 2016 03:39:26 -0800 (PST)
+In-Reply-To: <5176e36d-554c-44df-9a7f-0c15333ede6e@googlegroups.com>
+References: <49ae2d67-5c87-4a42-9e32-ffd0f5800590@googlegroups.com>
+	<CAAxEZd-Qg2p_cWHN4Q_xJkGTCTLOCkuCMkm1-gBW8wDLoSDorQ@mail.gmail.com>
+	<5176e36d-554c-44df-9a7f-0c15333ede6e@googlegroups.com>
+Date: Wed, 27 Jan 2016 12:39:26 +0100
+Message-ID: <CAAxEZd-mo_9R6StL-U3JeN=W9kvwArx6_5mgukEr3om8zbz=HQ@mail.gmail.com>
+Subject: Re: [opensport] NameError: uninitialized constant WorldDb::ReaderBase
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Are you trying to setup the sportbook rails app?
+
+   You also have to push the code (e.g.)
+   1b:  $ git push heroku master
+
+
+   Can post your error log e.g. try:
+
+   $ bundle exec rake --trace db:setup
+
+   and than post the error log.  Cheers.
+

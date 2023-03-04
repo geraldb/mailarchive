@@ -1,0 +1,103 @@
+From 6963254025070313472@xxx Mon May 17 13:41:57 +0000 2021
+X-GM-THRID: 6963250611466797056
+X-Received: by 2002:a2e:9682:: with SMTP id q2mr32197435lji.104.1621258916683;
+        Mon, 17 May 2021 06:41:56 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a2e:6d09:: with SMTP id i9ls2137263ljc.2.gmail; Mon, 17 May
+ 2021 06:41:55 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxxYqwAq3kjr62qpVTxST0X7PxCRAA7Eml7Y4j/cLLXNQjacoC8G+Wz4Z5mkOkQW5+yDOUU
+X-Received: by 2002:a2e:9bd7:: with SMTP id w23mr48100035ljj.401.1621258915062;
+        Mon, 17 May 2021 06:41:55 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1621258915; cv=none;
+        d=google.com; s=arc-20160816;
+        b=0Rzi0fTe9XSan5+2jag4hism8jXZh9hRO3Wmqrp8t0zUfXY3tMgWJeZdHQ0wkLKeJ7
+         EXbzmoSwk8wQTEw6Jd3SxM9WPXEZNAqXO67Cdm488UrFd5hQODxr/dzF5NfWALnIgURD
+         hM0RNG3Eyhg7psZ0KbeSGBVxzQsmtLix2STO48tbngALf490mg62ncYbZt7iV01RFDJI
+         ZbyxBQRWpbR5zLuZgoCcoGdiMyipNe+ef5WCssTShPSqwK2nX4zhEBih3yEeA4iNDBYU
+         dR9sQGpsSd6qzY/T749d7BPf1pGAElu5QviY71NHZ9uPBbQ1M/Ogz8YDDhGREMKBpK1h
+         +Ulg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=srTpw4s9GzS3U+Awm3CZYQEw6Hnj7VdpNVQgh7b6SUo=;
+        b=K3uaff3JmEtopaRr8hq1ia6yhNZUnVlaJMAnvohCZiaF/9ZrGK+UUzzYj7Kwx3+HcT
+         ksk4O3DVySQMBizGXgOmD+KsEExkcxsruZEBjYjNtVQTlcGBWrdJmYsqvoxtOr+M/wet
+         W6fK9Bl7Kcu91vq/fwER12i+xUOQbRp+p4RpUZTfJhu0fT78/sIUEtxNYZMlNBo9LHSn
+         wKEggBOc6qfL5CiELiRPxnKED8On1CXGqK0t8m1ewIuYIukBYDWIKJRmhBf9gO187Vy3
+         3gON1EqXZQeAbJc4TOuinemBu8ukpL7D13K7rm924HR5WylWPLgEq7z+vgr7WsaNk1Ra
+         +R0w==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=I0jp7Zw6;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ed1-x52c.google.com (mail-ed1-x52c.google.com. [2a00:1450:4864:20::52c])
+        by gmr-mx.google.com with ESMTPS id a1si583588ljb.5.2021.05.17.06.41.55
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 17 May 2021 06:41:55 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52c as permitted sender) client-ip=2a00:1450:4864:20::52c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=I0jp7Zw6;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ed1-x52c.google.com with SMTP id a25so6923530edr.12
+        for <wwwmake@googlegroups.com>; Mon, 17 May 2021 06:41:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=srTpw4s9GzS3U+Awm3CZYQEw6Hnj7VdpNVQgh7b6SUo=;
+        b=I0jp7Zw65cIQNKQ8oV0iIHFR+8fYv96BDDchSFkHxjpsYVhQjewmti59KeLZpBTSTm
+         hZvoseTiFkRLl7nhA7lEE7tqquo8x8950tHDKB9xLMnvgYM2u27am74Gd6CWoBYL2lbC
+         uDuVGN45dcH7sZLZWBlwMNRX5+ZsHCdy2rwASrhnUdG/z/fFJw2hH5aW58IsvsRtTT0G
+         BML5Jgc1ZixMdBNU0gzMiLzrJA/unj5vkex7qd+qPfXHQlAoAk0FyHgXbjz0RzxfwHih
+         fwHZlOVeYBQ/BOTIaOa9v8mwI/QJG89tV4o113oxSitouxlnVcbzGt0bA5xI/qKqvOmP
+         BD8A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=srTpw4s9GzS3U+Awm3CZYQEw6Hnj7VdpNVQgh7b6SUo=;
+        b=BWq61B1oRzoa+pWOwCAcSZNtA6BTPFXF0EPOxA+uXdhwXPlCX4z7EWuDbkQx/jVbpB
+         F5t7JNYMDYZM0XUBW+wASvlMqMuzLg34o4lwnUtgshfloJFGHZ83B6uhgDX9F8f2jYjd
+         2jGWmprEQUKGdaZsM+MZgj47u8P7Yr7fWK2Z9twQsL/vrRPakrji6+n3ustoFJLEIO6P
+         FrKKDNOFYYDqbbRLkqRh56yffUhwYr6yHUqhmNLTnI120kxlZbG7z3qQCYhUwJhFEyip
+         msukHFee0DrzhyzLwnNh16N41qfXSgzwvLmk+7sYKzd/bJExa9Gd0PxLp1r8FytrK9wL
+         nwNw==
+X-Gm-Message-State: AOAM531GKs1TkNozTkGcSY0wFJrdq57vYds7ag/fJ3u+22DkjgEaysqH
+	wHOICj9bVMnuqH10fVeUD0uQ+WWWR3ZQsS3ShP2K8BjP/sxUGw==
+X-Received: by 2002:a50:ef15:: with SMTP id m21mr98202eds.226.1621258914642;
+ Mon, 17 May 2021 06:41:54 -0700 (PDT)
+MIME-Version: 1.0
+References: <c22f48e4-5f22-4190-bba6-c032e2b5e8f8n@googlegroups.com>
+In-Reply-To: <c22f48e4-5f22-4190-bba6-c032e2b5e8f8n@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 17 May 2021 15:41:43 +0200
+Message-ID: <CAAxEZd9rRM+-3A3wAgf6=dngNVAuD6CAQqAmRdtytOUq-Z3yCQ@mail.gmail.com>
+Subject: Re: [wwwmake:525] Pure Github Pages install
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  Planet OpenSUSE [1][1b] runs on Planet Pluto as far as I know. It's
+a two step setup:
+
+Step 1)  Planet Pluto  - manages the feed list and fetches all feeds
+and generates the "raw" static blog pages on github
+Step 2) GitHub Pages (w/ built-in Jekyll) renders the blog pages using
+a (custom) Jekyll theme and hosts the (static) generated web pages /
+website
+
+    Another option I have seen is automating step 1) that is, fetching
+all feeds with GitHub Actions every hour or every day or such.
+
+   So not sure if that fits your definition.  Yes, Planet Pluto works
+on GitHub and with GitHub Pages (Jekyll) and GitHub Actions BUT you
+have to decide what you want to configure or automate.
+
+   Cheers. Prost.
+
+[1]    https://github.com/opensuse/planet-o-o
+[1b]  https://github.com/openSUSE/planet-o-o/blob/master/bin/jekyll-planet.rb
+

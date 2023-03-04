@@ -1,0 +1,50 @@
+From 526194311168@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 525060800512
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,490fedd970346586,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.90.82.17 with SMTP id f17mr2942416agb.14.1236606946157;
+        Mon, 09 Mar 2009 06:55:46 -0700 (PDT)
+Return-Path: <gerald@vanbeta.com>
+Received: from yw-out-1718.google.com (yw-out-1718.google.com [74.125.46.155])
+        by gmr-mx.google.com with ESMTP id 15si765065gxk.0.2009.03.09.06.55.46;
+        Mon, 09 Mar 2009 06:55:46 -0700 (PDT)
+Received-SPF: neutral (google.com: 74.125.46.155 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=74.125.46.155;
+Authentication-Results: gmr-mx.google.com; spf=neutral (google.com: 74.125.46.155 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by yw-out-1718.google.com with SMTP id 4so693985ywq.40
+        for <webslideshow@googlegroups.com>; Mon, 09 Mar 2009 06:55:46 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.220.87.1 with SMTP id u1mr1517742vcl.2.1236606945809; Mon, 09 
+	Mar 2009 06:55:45 -0700 (PDT)
+Date: Mon, 9 Mar 2009 09:55:45 -0400
+Message-ID: <1f058eab0903090655p12b1400ct3a1ca9a10e84d409@mail.gmail.com>
+Subject: Slide Show (S9) Gem Updated (v0.7.8) - Use SLIDESHOWOPT env variable 
+	to set default command line options
+From: Gerald Bauer <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  FYI: Just a minor update to the slideshow gem. What's new?
+
+   I added support for the SLIDESHOWOPT environment variable that lets
+you set default command line options e.g.
+
+SLIDESHOWOPT=-o slides     # make slides your default output folder
+(instead of current folder, that is, .)
+
+SLIDESHOWOPT=-o slides --s5   # make S5-compatible slide show
+
+SLIDESHOWOPT=-t <your_template_manifest_here>   # make your own
+template package the default
+
+  And than use the gem executable as usual:
+
+   slideshow microformats      # will use/add your command line
+options stored in SLIDESHOWOPT
+
+  That's it. Cheers.
+

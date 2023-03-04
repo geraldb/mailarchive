@@ -1,0 +1,97 @@
+From 6621216722846220288@xxx Wed Nov 07 20:22:32 +0000 2018
+X-GM-THRID: 6620432779974803456
+X-Received: by 2002:adf:8229:: with SMTP id 38-v6mr376595wrb.17.1541622151607;
+        Wed, 07 Nov 2018 12:22:31 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a1c:96c9:: with SMTP id y192-v6ls78158wmd.5.canary-gmail;
+ Wed, 07 Nov 2018 12:22:30 -0800 (PST)
+X-Google-Smtp-Source: AJdET5eYJ8DbwO7D9+kh/OCBrtzcN9ywurOrh+8ObP+5RVMKI45FJYQwfK2tM9WL2GYADh0nHjXq
+X-Received: by 2002:a1c:8c0e:: with SMTP id o14-v6mr388859wmd.16.1541622150400;
+        Wed, 07 Nov 2018 12:22:30 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1541622150; cv=none;
+        d=google.com; s=arc-20160816;
+        b=NiWrRTYBzsZG8WB3EBpO3Q2yqT3XyRpgXaaBZpyA6qJcn+iXSQCEfzoms24nyEq4L3
+         xOUZyuVBGX6x/55v+/ebJ6W1Fit+1OzGu3qew2CvRQ1y4Tt9g/cQJidJd4gZb96qBJu9
+         8hL349nWdxXQyTp7DnEnLmNjfrIHplIoXgENBIlfvgxFR8bGVFUYxO+ViTFNxEoYB+CG
+         nmMae7GudU2Pdl/R3SgFjp7oxf6/u/VrywJEdxtUMGoTy7jseGC0xm6msArIa5wprMpL
+         1RFFCjj9JkGD3vnw0nuJMADAjFSJGAuH4hcxN3AZFoGyKcMli1hJ8WZfM3GnhBlX6bcG
+         8UDQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=JRq+19gDuZtihcuNM456AyWw+RKlZ7w9YKoMUpOnOZ4=;
+        b=iOv2DOKaGDEgII3GhVCEBqJ7lhDKhN3nrQYVNzpHGq0AfIPdBjwjqGYTF+XwfhIK/d
+         xcXz5GyyyPQBoqQ3xqQCcpivVpdlKgCzQo0SnqIK3PQJLL2SEX4UDCon1dl5HbBhbRwR
+         QVuBo3EzRgvt7AIK38tn8AamBXWQHFxv/dBrw2+XFHxdrXhu1JnV28IqaIDpkMJqXnln
+         FfJvTI9UCK6ddfBQ2ENB9qIOnFTdo219TGswyMQPITSd7eXZWXBP5ZFWjYTT/ujYpPgf
+         83lusVbvxVZfAUE0F7mqOQizoDclDiyMzIjp+lawtlC0D1SytuG4ps8FYDn5XLnHK0xB
+         wRVg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=GUSTj08Q;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x231.google.com (mail-lj1-x231.google.com. [2a00:1450:4864:20::231])
+        by gmr-mx.google.com with ESMTPS id v6-v6si67793wrn.0.2018.11.07.12.22.30
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 07 Nov 2018 12:22:30 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::231 as permitted sender) client-ip=2a00:1450:4864:20::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=GUSTj08Q;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x231.google.com with SMTP id e5-v6so11819290lja.4
+        for <wwwmake@googlegroups.com>; Wed, 07 Nov 2018 12:22:30 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=JRq+19gDuZtihcuNM456AyWw+RKlZ7w9YKoMUpOnOZ4=;
+        b=GUSTj08Q3wJN+w+wEcScyIGr319fNnmrUnEanP84hutw0bo8Pbnh55lFgBwK359MkG
+         9r19fgTtsTR+6S3DH7a5diw6FCtsj8hQV26xUHML1d3b1jnMbLjqJvu5hxMFOswHHJuk
+         3FfxtjzeZoWSXAaZ3MF4m+aFhcc64WPy6TVx7wMpNkkmxIzcNKKjGo9aSwiZ4zJS9m+z
+         lf8FtuIqy/Bv4lTkUIWCuUlrrLhZCQhJ8JGNGnt2C3YoDlQPoCXj/KTI5/uDxhOHU9AT
+         EMa/oqnotFt1HvfdkxfqjFOgT5uLsypklUtSb17RZBoJMVqKm2Zs83yDNKcFM1CT6DEi
+         V2jg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=JRq+19gDuZtihcuNM456AyWw+RKlZ7w9YKoMUpOnOZ4=;
+        b=A4ZeuO9URgs+nVpktTm5409jRDia1UkpoT1eRoUidCoCFrWsYTTh3UhwxNPhvqLPgk
+         O1YtwgjouPPRfnz/2jrb3c919bqaLVbWpMOgQaTuOyNfjPtAOwTdq7ONaWyPzvmdhnAs
+         4uvNKCJA9TXdoxrLABnRMDq586GQI1L96zp16EuVLjiFiWO+FUYCb6sQDakCDh5K0+m+
+         nnyeRIC5VgjMrpwnPbx7/xWfZDGXO5XlFCoQKqtrvttjPIDeg59BVsC/UAsfS7Aboth0
+         mKu0a2n+WDzhuSGeTNgKGnusymqGfj7YBKcEWKmM/nHy6wCJiA5GkQBpZ7yads+2p22l
+         EX/A==
+X-Gm-Message-State: AGRZ1gIj1QzMpwYHYSvBN7fD1oYYzP4xJLni6olVujHj2Fj0JYV0RPfZ
+	g0nxWFxWCmBIyeCpsTGzioJQ35KZ+EHsfX4JAVfyzD6S
+X-Received: by 2002:a2e:302:: with SMTP id 2-v6mr1088298ljd.152.1541622149608;
+ Wed, 07 Nov 2018 12:22:29 -0800 (PST)
+MIME-Version: 1.0
+References: <135107ef-bc78-4d06-960f-15259b4493cf@googlegroups.com>
+ <CAAxEZd9Xc-62PU+k=wOq7WtXqiL4vMZye_D6kodMdbMBp7LogA@mail.gmail.com>
+ <d8e54c23-8875-4d9c-b69e-a65b84b934c6@googlegroups.com> <CAAxEZd-O5v3o3zjVnPkMD_RpUMn82T0S8kBkcJNFcP0wP_=ozA@mail.gmail.com>
+ <23461016-fbcb-4a08-938b-1a1513da9aeb@googlegroups.com>
+In-Reply-To: <23461016-fbcb-4a08-938b-1a1513da9aeb@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 7 Nov 2018 21:22:17 +0100
+Message-ID: <CAAxEZd-mS_muVHpg4MHL14zfnVdKJYi5mdrxVdtokB4VAPim+g@mail.gmail.com>
+Subject: Re: [wwwmake:456] Noob question about performance
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Thanks for the benchmark updates. Greatly appreciated. Great to see
+that the theory holds up  to reality (that is, that the numeric is
+faster than the :converters => :all option) :-).   Cheers. Prost.
+
+
+PS:  Note: The parser, that is, ParserStd [1] is the same for numeric
+and "default" (with or without converters). For numeric the "data
+converter pipeline" is different. The parser is different, however,
+for tab, table, strict and others. See the base.rb script for all
+parser configurations (if interested)
+[1]  https://github.com/csvreader/csvreader/blob/master/lib/csvreader/parser_std.rb
+[2]  https://github.com/csvreader/csvreader/blob/master/lib/csvreader/base.rb
+

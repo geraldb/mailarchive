@@ -1,0 +1,73 @@
+From 6341302006317056000@xxx Fri Oct 14 12:50:28 +0000 2016
+X-GM-THRID: 6338740501126053888
+X-Received: by 10.66.180.45 with SMTP id dl13mr2631668pac.150.1476449427983;
+        Fri, 14 Oct 2016 05:50:27 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.36.23.134 with SMTP id 128ls468951ith.10.canary; Fri, 14 Oct
+ 2016 05:50:27 -0700 (PDT)
+X-Received: by 10.36.83.194 with SMTP id n185mr480972itb.32.1476449427820;
+        Fri, 14 Oct 2016 05:50:27 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x235.google.com (mail-io0-x235.google.com. [2607:f8b0:4001:c06::235])
+        by gmr-mx.google.com with ESMTPS id o71si73316ita.1.2016.10.14.05.50.27
+        for <beerdb@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 14 Oct 2016 05:50:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::235 as permitted sender) client-ip=2607:f8b0:4001:c06::235;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x235.google.com with SMTP id i202so118971527ioi.2
+        for <beerdb@googlegroups.com>; Fri, 14 Oct 2016 05:50:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=jhGhW40k9sJDR82ztZoc2VISMKaDmxj2PgudYtbKe+g=;
+        b=W76IrwdHCkvhU1XGGQVZLO9NO+AF3U1gwsJHP9swr8q57Rx6VFTTOsQ0UL7FDcZ7dG
+         iUdhZai1F57CItJArbgIyno4o07ffIGjJSXdyc4Cvz2Ysfcjsxtw9BUOM9GghqTmU25L
+         XsCaKMhWkQ9mvp5mfvz5TtYoUrPohG1vFcxSvBfSuOkl63Ue4zZywsPrb1VhsfE2rLOg
+         Hiw/9HIKuBSJ40CCzbhLdX3ABOq6xkCSs/BEywoMC8S56rBPie34w/6SiTxzNT6St0tc
+         iZrUbGIo1T36qoBkG8BoeWTq0pP2dx+WvS9G+cYLGNESwGApt2ibAGf0zI8POdz2abZ2
+         dkyA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=jhGhW40k9sJDR82ztZoc2VISMKaDmxj2PgudYtbKe+g=;
+        b=UZxHFx1kchmryAhRgxXJMLnCks1haECxKoehUmLJ3UzRuFxoCtyp2C+8ePvaDliuDb
+         5oXR/rOlWSlb2Fw0wV+RkAlDbqkWYRS+uJrhe+4/N34FubC2DmJViHWJFoH9m9JJAYDR
+         OcXgwzq2LgSflNxUzR9bPFD21813docNWy57LZN+xolYrjch+cmFYrZTB0WNNsP80Oim
+         b/DKojHHDZW8SNr4HSiOzHWP/xmVaLNYvAYIdPcw1dqvv4vl3+Rb9pwb6z/GSxirNl/a
+         pzW8a933ZHa3mvbeg0SZ5l5PcpHPiI4ytM+HxHXv+PAp005GzSHq0IgTmM9UNTeNvQaz
+         3eFg==
+X-Gm-Message-State: AA6/9RlyhqDKMBu+4d/3c87a5cJnRudLmw+IqNSx49XJYOpVohAKaUTzaPwRm8OYuf1kWFPweJV2Y6VqgdoGfw==
+X-Received: by 10.107.9.16 with SMTP id j16mr11557662ioi.230.1476449427430;
+ Fri, 14 Oct 2016 05:50:27 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.141.194 with HTTP; Fri, 14 Oct 2016 05:50:26 -0700 (PDT)
+In-Reply-To: <be9ebfb0-aaca-4774-9761-172043e4c370@googlegroups.com>
+References: <db64c374-35f8-4fe2-8150-3f1e8f88a4a4@googlegroups.com>
+ <CAAxEZd_MwEQE7JdQSTHXFMxip2K-Bf=DKL1iCcJ3nAz3k1VQoQ@mail.gmail.com>
+ <61b74e33-e9e2-49f0-9313-648e866095cd@googlegroups.com> <be9ebfb0-aaca-4774-9761-172043e4c370@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 14 Oct 2016 14:50:26 +0200
+Message-ID: <CAAxEZd9TpY_ZYAHNfT-DMo_cSPuP0mFTsN6w8eJ3x3QHszeEdQ@mail.gmail.com>
+Subject: Re: [beerdb] NameError: uninitialized constant WorldDb::Model::Region
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    thanks for trying beer.db.
+
+> *** error: Index name 'index_taggings_on_tag_id' on table 'taggings' already exists
+
+   Sorry. That is a known error with ActiveRecord / Rails 5.  The
+workaround again is to downgrade e.g.
+
+    Use ActiveRecord in the 4.2.x series. The latest and greatest v5.x
+series will NOT yet work (e.g. auto-creates indices that get now
+created "by hand", thus, the error on duplicate index.
+
+   Cheers.
+

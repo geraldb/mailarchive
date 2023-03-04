@@ -1,0 +1,84 @@
+From 2134518005760@xxx Tue Jun 16 00:16:51 +0000 2015
+X-GM-THRID: 1861086085120
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,f3433d66f198c649
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.42.229 with SMTP id r5mr274171lal.8.1409663706972;
+        Tue, 02 Sep 2014 06:15:06 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.95.168 with SMTP id dl8ls571179wib.35.canary; Tue, 02 Sep
+ 2014 06:15:06 -0700 (PDT)
+X-Received: by 10.180.218.171 with SMTP id ph11mr2475319wic.1.1409663706477;
+        Tue, 02 Sep 2014 06:15:06 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x233.google.com (mail-wg0-x233.google.com [2a00:1450:400c:c00::233])
+        by gmr-mx.google.com with ESMTPS id j12si646120wie.2.2014.09.02.06.15.06
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 02 Sep 2014 06:15:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) client-ip=2a00:1450:400c:c00::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f51.google.com with SMTP id l18so6770076wgh.34
+        for <opensport@googlegroups.com>; Tue, 02 Sep 2014 06:15:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=CwR1dYD0YlHpQegl+HWSDpdi4UfHFI62iP0rY+9VFdY=;
+        b=0N4IDoqj37IT8XWoM0rL6fdSESQXk1UDFauMskFDuCk0/37FjHJFLNsjSEYyl9hkpb
+         Kf86/f3YEJw61kwk2vT+D110GSGYhF8qNQxBbXgPMc6k7CGHjW+dnEtXG/xRkZMtY/u9
+         gusrC78V8LWWIce36csLZi/4NLUooAVaO8qKuSuLnm6cVS/zMUCIcSdzPzfQRiArIg1U
+         rB1QZB+TEmO795ka8ZIfMMo8rSzjYFfT5j7e+cOGZv9EXdrcUeWku9I/ReXIUb2dRTQh
+         WrJbgAFsrfAOT5SEZhJ4C4LlZiEHnvUYVD08SfdIeUcGXjcikCYOJgh8AeQEyeDp9Ka1
+         ns7w==
+MIME-Version: 1.0
+X-Received: by 10.180.14.101 with SMTP id o5mr7344432wic.25.1409663706392;
+ Tue, 02 Sep 2014 06:15:06 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Tue, 2 Sep 2014 06:15:06 -0700 (PDT)
+In-Reply-To: <CAAxEZd88CXybPpx6oHnPP_G=MOZOzVodibreoisQo-_Zjx7Guw@mail.gmail.com>
+References: <7d892c64-8738-47aa-8d1b-5b98beee6b96@googlegroups.com>
+	<7e0ca3ad-6e93-4e72-a099-5fbaf0cb6ea1@googlegroups.com>
+	<93c109c5-43b2-4701-8388-b8d15d4d14d4@googlegroups.com>
+	<CAAxEZd_CMG7SbXKZ-yHA_yUQYshbqpRicREY9=OB73MM8u8jTQ@mail.gmail.com>
+	<e05bef52-9437-4bc7-81b0-8860fb6fdb38@googlegroups.com>
+	<CAAxEZd_P3yj5PLfGk=R94pZ2jP1OUTbWNNg+s=vowJoT6dQTnw@mail.gmail.com>
+	<CAAxEZd88CXybPpx6oHnPP_G=MOZOzVodibreoisQo-_Zjx7Guw@mail.gmail.com>
+Date: Tue, 2 Sep 2014 15:15:06 +0200
+Message-ID: <CAAxEZd81jGidZsupeEzrvGf4OiRKBAhhfYrDUfn9hWa487tSwA@mail.gmail.com>
+Subject: Re: [opensport] Re: And ActiveRecord::RecordNotFound ERROR when
+ building champion league
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've updated all setups for the champions league and the build
+works now. Try:
+
+rake build DATA=cl201314      or
+rake build DATA=cl201415
+
+    If you still run into any trouble let us know. Cheers.
+
+PS: Here's the new updated rake task [1]:
+
+task :cl201415  => :importbuiltin do
+  SportDb.read_setup( 'setups/clubs',    CLUBS_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',    AT_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',    DE_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',    EN_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',    ES_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',    IT_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',    FR_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',    CH_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/2014-15',  EUROPE_CHAMPIONS_LEAGUE_INCLUDE_PATH )
+end
+
+[1] github.com/openfootball/build/blob/master/tasks/setups/cl.rake
+

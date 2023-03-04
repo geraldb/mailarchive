@@ -1,0 +1,208 @@
+From 383349948416@xxx Tue Jun 16 00:17:16 +0000 2015
+X-GM-THRID: 359372161024
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,3d7f86f6355f099e
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.172.103 with SMTP id bb7mr8940251pac.44.1393194969297;
+        Sun, 23 Feb 2014 14:36:09 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.80.149 with SMTP id c21ls1806456qgd.52.gmail; Sun, 23 Feb
+ 2014 14:36:08 -0800 (PST)
+X-Received: by 10.140.25.242 with SMTP id 105mr149642qgt.8.1393194968939;
+        Sun, 23 Feb 2014 14:36:08 -0800 (PST)
+X-Google-Doc-Id: 452186e5badd8241
+X-Google-Web-Client: true
+Date: Sun, 23 Feb 2014 14:36:08 -0800 (PST)
+From: Fabio <fabio.genoese@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <ceda564d-15b7-412c-8597-55ebbc53bb82@googlegroups.com>
+In-Reply-To: <CAAxEZd_K7sw-aGEaD0+1CkxvFbm13JhO1GtTyVPtr4n_C-dzFA@mail.gmail.com>
+References: <eb215b28-052e-42c7-afdc-6c070d8ea347@googlegroups.com>
+ <45c0bc7d-37ab-462e-8e97-cd4caa8a1735@googlegroups.com>
+ <b6417529-1f50-4dc0-9f56-46c02dcfa1db@googlegroups.com>
+ <56ff58fb-b1ee-47f7-ad69-515ce593950c@googlegroups.com>
+ <CAAxEZd_K7sw-aGEaD0+1CkxvFbm13JhO1GtTyVPtr4n_C-dzFA@mail.gmail.com>
+Subject: Re: [opensport] Re: sportdb: show time of a fixture
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2539_25203075.1393194968319"
+X-Google-Token: ENjvqZgFIig8IU7y5ns0
+X-Google-IP: 78.129.54.18
+
+------=_Part_2539_25203075.1393194968319
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2540_30502868.1393194968319"
+
+------=_Part_2540_30502868.1393194968319
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+That worked. Thank you, Gerald!
+
+Il giorno domenica 23 febbraio 2014 21:27:32 UTC+1, Gerald Bauer ha scritto:
+>
+> Hello, 
+>
+>    Try using the rake tasks for building the gem and installing. The 
+> sportdb.gemspec is only used for Travis e.g. continous testing (and 
+> might not be update-to-date). 
+>
+>   e.g. try 
+>
+> rake -T 
+>
+>    to see all tasks and then use 
+>
+> rake install_gem 
+>
+>    to build the gem from your source and install it into your local 
+> gemset.  Let me know if it work. Good look.Cheers. 
+>
+> 2014-02-23 13:02 GMT-06:00 Fabio <fabio....@gmail.com <javascript:>>: 
+> > Follow-up: 
+> > 
+> > I changed line 141, from: 
+> >> 
+> >> play_at: g.play_at.strftime('%Y/%m/%d'), 
+> > 
+> > 
+> > to: 
+> >> 
+> >> play_at: g.play_at.strftime('%Y/%m/%d %H:%M'), 
+> > 
+> > 
+> > Then built the gem: 
+> > 
+> > gem build sportdb.gemspec 
+> > 
+> > 
+> > And installed it: 
+> > 
+> > sudo gem install sportdb-1.8.2.gem 
+> > 
+> > 
+> > ...but I do not see any difference in the output. 
+> > 
+> > Did I miss something? 
+> > 
+> > Il giorno domenica 23 febbraio 2014 18:38:39 UTC+1, Fabio ha scritto: 
+> >> 
+> >> Thank you, Gerald! I think I managed to change the line but I was 
+> asking 
+> >> myself how to "build" a ruby project. :) 
+> >> I downloaded the source, changed the file and then entered "bundle gem 
+> >> sportsdb". Is that correct? If yes: what is the next step, i.e. where 
+> is the 
+> >> sportsdb that I can run? 
+> >> 
+> >> Best, Fabio 
+> >> 
+> >> Il giorno domenica 23 febbraio 2014 17:52:09 UTC+1, Gerald Bauer ha 
+> >> scritto: 
+> >>> 
+> >>> Hello Fabio, 
+> >>> 
+> >>>    Sorry the HTTP JSON API is currently a little basic. The good news 
+> >>> it's easy to change. It's basically a single-file Sinatra script in 
+> Ruby 
+> >>> [1]. Cheers. 
+> >>> 
+> >>> [1] 
+> >>> 
+> github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/service/server.rb 
+> >>> 
+> > -- 
+> > You received this message because you are subscribed to the Google 
+> Groups 
+> > "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends" 
+> > group. 
+> > To unsubscribe from this group and stop receiving emails from it, send 
+> an 
+> > email to opensport+...@googlegroups.com <javascript:>. 
+> > For more options, visit https://groups.google.com/groups/opt_out. 
+>
+
+------=_Part_2540_30502868.1393194968319
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">That worked. Thank you, Gerald!<br><br>Il giorno domenica 23 febbraio 2014 21:27:32 UTC+1, Gerald Bauer ha scritto:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;Try using the rake tasks for building the gem and installing. The
+<br>sportdb.gemspec is only used for Travis e.g. continous testing (and
+<br>might not be update-to-date).
+<br>
+<br>&nbsp; e.g. try
+<br>
+<br>rake -T
+<br>
+<br>&nbsp; &nbsp;to see all tasks and then use
+<br>
+<br>rake install_gem
+<br>
+<br>&nbsp; &nbsp;to build the gem from your source and install it into your local
+<br>gemset. &nbsp;Let me know if it work. Good look.Cheers.
+<br>
+<br>2014-02-23 13:02 GMT-06:00 Fabio &lt;<a href="javascript:" target="_blank" gdf-obfuscated-mailto="1lwi1MquQkoJ" onmousedown="this.href='javascript:';return true;" onclick="this.href='javascript:';return true;">fabio....@gmail.com</a>&gt;:
+<br>&gt; Follow-up:
+<br>&gt;
+<br>&gt; I changed line 141, from:
+<br>&gt;&gt;
+<br>&gt;&gt; play_at: g.play_at.strftime('%Y/%m/%d')<wbr>,
+<br>&gt;
+<br>&gt;
+<br>&gt; to:
+<br>&gt;&gt;
+<br>&gt;&gt; play_at: g.play_at.strftime('%Y/%m/%d %H:%M'),
+<br>&gt;
+<br>&gt;
+<br>&gt; Then built the gem:
+<br>&gt;
+<br>&gt; gem build sportdb.gemspec
+<br>&gt;
+<br>&gt;
+<br>&gt; And installed it:
+<br>&gt;
+<br>&gt; sudo gem install sportdb-1.8.2.gem
+<br>&gt;
+<br>&gt;
+<br>&gt; ...but I do not see any difference in the output.
+<br>&gt;
+<br>&gt; Did I miss something?
+<br>&gt;
+<br>&gt; Il giorno domenica 23 febbraio 2014 18:38:39 UTC+1, Fabio ha scritto:
+<br>&gt;&gt;
+<br>&gt;&gt; Thank you, Gerald! I think I managed to change the line but I was asking
+<br>&gt;&gt; myself how to "build" a ruby project. :)
+<br>&gt;&gt; I downloaded the source, changed the file and then entered "bundle gem
+<br>&gt;&gt; sportsdb". Is that correct? If yes: what is the next step, i.e. where is the
+<br>&gt;&gt; sportsdb that I can run?
+<br>&gt;&gt;
+<br>&gt;&gt; Best, Fabio
+<br>&gt;&gt;
+<br>&gt;&gt; Il giorno domenica 23 febbraio 2014 17:52:09 UTC+1, Gerald Bauer ha
+<br>&gt;&gt; scritto:
+<br>&gt;&gt;&gt;
+<br>&gt;&gt;&gt; Hello Fabio,
+<br>&gt;&gt;&gt;
+<br>&gt;&gt;&gt; &nbsp; &nbsp;Sorry the HTTP JSON API is currently a little basic. The good news
+<br>&gt;&gt;&gt; it's easy to change. It's basically a single-file Sinatra script in Ruby
+<br>&gt;&gt;&gt; [1]. Cheers.
+<br>&gt;&gt;&gt;
+<br>&gt;&gt;&gt; [1]
+<br>&gt;&gt;&gt; <a href="http://github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/service/server.rb" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fgeraldb%2Fsport.db.ruby%2Fblob%2Fmaster%2Flib%2Fsportdb%2Fservice%2Fserver.rb\46sa\75D\46sntz\0751\46usg\75AFQjCNGyG6F6b48WekdEgg13s5z04LrotA';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fgeraldb%2Fsport.db.ruby%2Fblob%2Fmaster%2Flib%2Fsportdb%2Fservice%2Fserver.rb\46sa\75D\46sntz\0751\46usg\75AFQjCNGyG6F6b48WekdEgg13s5z04LrotA';return true;">github.com/geraldb/sport.db.<wbr>ruby/blob/master/lib/sportdb/<wbr>service/server.rb</a>
+<br>&gt;&gt;&gt;
+<br>&gt; --
+<br>&gt; You received this message because you are subscribed to the Google Groups
+<br>&gt; "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+<br>&gt; group.
+<br>&gt; To unsubscribe from this group and stop receiving emails from it, send an
+<br>&gt; email to <a href="javascript:" target="_blank" gdf-obfuscated-mailto="1lwi1MquQkoJ" onmousedown="this.href='javascript:';return true;" onclick="this.href='javascript:';return true;">opensport+...@<wbr>googlegroups.com</a>.
+<br>&gt; For more options, visit <a href="https://groups.google.com/groups/opt_out" target="_blank" onmousedown="this.href='https://groups.google.com/groups/opt_out';return true;" onclick="this.href='https://groups.google.com/groups/opt_out';return true;">https://groups.google.com/<wbr>groups/opt_out</a>.
+<br></blockquote></div>
+------=_Part_2540_30502868.1393194968319--
+
+------=_Part_2539_25203075.1393194968319--
+

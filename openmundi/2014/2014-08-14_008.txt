@@ -1,0 +1,84 @@
+From 82703286272@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 74704748544
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,3bc96c9415837e1
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.118.200 with SMTP id y8mr6385689icq.4.1408017173702;
+        Thu, 14 Aug 2014 04:52:53 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.88.203 with SMTP id t69ls1002515qgd.30.gmail; Thu, 14 Aug
+ 2014 04:52:53 -0700 (PDT)
+X-Received: by 10.140.91.105 with SMTP id y96mr24335qgd.16.1408017173579;
+        Thu, 14 Aug 2014 04:52:53 -0700 (PDT)
+X-Google-Doc-Id: 82b737cb752069d9
+X-Google-Web-Client: true
+Date: Thu, 14 Aug 2014 04:52:53 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Message-Id: <da80b55a-9387-4b39-bb6a-5cec5f3fb5e4@googlegroups.com>
+In-Reply-To: <13a2c175-fa8f-4970-a8a0-16c11df09192@googlegroups.com>
+References: <13a2c175-fa8f-4970-a8a0-16c11df09192@googlegroups.com>
+Subject: Re: Factbook gem and JSON repo
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3875_1294908106.1408017173365"
+X-Google-Token: EJXGsp8FgOvZLyCci9o0
+X-Google-IP: 217.13.183.252
+
+------=_Part_3875_1294908106.1408017173365
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3876_921258844.1408017173365"
+
+------=_Part_3876_921258844.1408017173365
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  Thanks for your kind words and your interest in factbook.json. 
+
+1) About the update frequency: The HTML scraper script is open and public 
+domain (see the factbook gem) [1] To (re)generate the JSON documents just 
+takes a couple of minutes. If you need an update it's best to generate your 
+own up-date-date dataset (and ideally push back your changes to update it 
+for everyone). It's an open source all-volunteer efforts open to anyone. 
+
+2) About more countries: For now only the 193 UN countries are included 
+(plus the world and the European Union). To add more countries / 
+dependencies use the script. For example, to add Hong Kong use:
+
+    page = Factbook::Page.new( 'hk' ) # hk is the country code forHongKong
+    pp page.data # pretty print hash
+
+And so on. Cheers.
+
+[1]  github.com/worlddb/factbook.ruby
+
+PS: FYI: Due to spam - the first post is moderated - all others 
+(follow-ups) go through directly (that is, without moderation). Welcome.
+
+------=_Part_3876_921258844.1408017173365
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>&nbsp; Thanks for your kind words and your i=
+nterest in factbook.json. <br><br>1) About the update frequency:  The HTML =
+scraper script is open and public domain (see the factbook gem) [1]  To (re=
+)generate the JSON documents just takes a couple of minutes. If you need an=
+ update it's best to generate your own up-date-date dataset (and ideally pu=
+sh back your changes to update it for everyone). It's an open source all-vo=
+lunteer efforts open to anyone.&nbsp;<br><br>2) About more countries:  For =
+now only the 193 UN countries are included (plus the world and the European=
+ Union). To add more countries / dependencies use the script. For example, =
+to add Hong Kong use:<br><br>&nbsp; &nbsp; page =3D Factbook::Page.new( 'hk=
+' ) # hk is the country code forHongKong<br>&nbsp; &nbsp; pp page.data     =
+                 # pretty print hash<br><br> And so on. Cheers.<br><div><br=
+></div><div>[1] &nbsp;github.com/worlddb/factbook.ruby</div><div><br></div>=
+<div>PS: FYI: Due to spam - the first post is moderated - all others (follo=
+w-ups) go through directly (that is, without moderation). Welcome.</div></d=
+iv>
+------=_Part_3876_921258844.1408017173365--
+
+------=_Part_3875_1294908106.1408017173365--
+

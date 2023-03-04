@@ -1,0 +1,73 @@
+From 6238918746528808960@xxx Tue Jan 12 15:11:08 +0000 2016
+X-GM-THRID: 6238795039826247680
+X-Received: by 10.98.0.11 with SMTP id 11mr21081419pfa.2.1452611467911;
+        Tue, 12 Jan 2016 07:11:07 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.90.116 with SMTP id w107ls7762770qgd.20.gmail; Tue, 12 Jan
+ 2016 07:11:07 -0800 (PST)
+X-Received: by 10.129.110.7 with SMTP id j7mr111919774ywc.26.1452611467104;
+        Tue, 12 Jan 2016 07:11:07 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x236.google.com (mail-io0-x236.google.com. [2607:f8b0:4001:c06::236])
+        by gmr-mx.google.com with ESMTPS id w9si1024501igl.0.2016.01.12.07.11.07
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 12 Jan 2016 07:11:07 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) client-ip=2607:f8b0:4001:c06::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x236.google.com with SMTP id g73so190527713ioe.3
+        for <opensport@googlegroups.com>; Tue, 12 Jan 2016 07:11:07 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=yRgRQ72q8JbSzkH2+Q1zZRNjXVaA//bfngzGnyKJs9M=;
+        b=UmCEYU7sZrTSlElvglwf4Pz5crOIy2tfPLNaXSKf58R/r1umrPUj9NvYr2lChAaAz0
+         Uy+70ZJNdiw7WaucRg1oHiZxrpWZumyyiDe8DBGWhMrreQafstPUko6bybh0t733Rmvw
+         ZMwx83yC5qfhaXzbxceCzDNIlsQxPdriZLPzMkFlA2Jk4vhnqhgB2isUS0C4unsujhm8
+         JZK5FfJzqW10sV8uQJ/loAOslaI1ZOcr4R24FADBJHKFU8Gi8Rm0E+5ZzWVV/rUgdGRZ
+         slBoN3GGy/aqXJ0FR3inzTUDgmIR3p7xNiNSWWYMnGhtdMvrquHcftLExoPDp1/arNCC
+         PjeQ==
+MIME-Version: 1.0
+X-Received: by 10.107.150.141 with SMTP id y135mr37904027iod.52.1452611466956;
+ Tue, 12 Jan 2016 07:11:06 -0800 (PST)
+Received: by 10.107.63.198 with HTTP; Tue, 12 Jan 2016 07:11:06 -0800 (PST)
+In-Reply-To: <f6408a99-0267-4b04-ab58-85b3e210bdaf@googlegroups.com>
+References: <f6408a99-0267-4b04-ab58-85b3e210bdaf@googlegroups.com>
+Date: Tue, 12 Jan 2016 16:11:06 +0100
+Message-ID: <CAAxEZd8KXqR3G6d_cEDyH5+_RnWUmj_WXBCYNk8ryagvmrnn7A@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_=5Bopensport=5D_Spanish_Primera_Divisi=C3=B3n_=282014=2F15=29_?=
+	=?UTF-8?Q?2_match_miss?=
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+   Thanks for reporting the parsing error. Double checking the source
+e.g. 2014-15/liga-ii.txt [1] the matches read:
+
+Jornada 22
+[Dom. 8.2.]
+  RCD Espanol 1-2 Valencia CF
+
+and
+
+Jornada 25
+[Dom. 1.3.]
+  RCD Espanol 1-0 C=C3=B3rdoba CF
+
+  That looks ok. So it must be a parsing error / issue. Looking at the
+final league standings table [2] you're right two matches for Espanol
+are missing. Can you check the reader / parser log for the message why
+these two matches get skipped / ignored?   Cheers.
+
+
+[1] https://github.com/openfootball/es-espana/blob/master/2014-15/liga-ii.t=
+xt
+[2] https://github.com/openfootball/es-espana/tree/master/2014-15
+

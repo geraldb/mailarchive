@@ -1,0 +1,99 @@
+From 586052272128@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 584561197056
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,386518f236493d23,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.150.18.12 with SMTP id 12ls440215ybr.0.p; Sun, 07 Mar 2010 
+	02:33:39 -0800 (PST)
+Received: by 10.150.130.6 with SMTP id c6mr3376196ybd.29.1267958018791;
+        Sun, 07 Mar 2010 02:33:38 -0800 (PST)
+Received: by 10.101.186.16 with SMTP id n16mr6242238anp.5.1267550573238;
+        Tue, 02 Mar 2010 09:22:53 -0800 (PST)
+Received: by 10.101.186.16 with SMTP id n16mr6242235anp.5.1267550573210;
+        Tue, 02 Mar 2010 09:22:53 -0800 (PST)
+Return-Path: <kevin.gisi@gmail.com>
+Received: from mail-gw0-f48.google.com (mail-gw0-f48.google.com [74.125.83.48])
+        by gmr-mx.google.com with ESMTP id 18si521042gxk.11.2010.03.02.09.22.52;
+        Tue, 02 Mar 2010 09:22:52 -0800 (PST)
+Received-SPF: pass (google.com: domain of kevin.gisi@gmail.com designates 74.125.83.48 as permitted sender) client-ip=74.125.83.48;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of kevin.gisi@gmail.com designates 74.125.83.48 as permitted sender) smtp.mail=kevin.gisi@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by mail-gw0-f48.google.com with SMTP id a11so206958gwa.7
+        for <webslideshow@googlegroups.com>; Tue, 02 Mar 2010 09:22:52 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:sender:received:date
+         :x-google-sender-auth:message-id:subject:from:to:content-type;
+        bh=f4vURiyqPT0T401cyx297RL3dqn4mV6bm+BMhaZGyL8=;
+        b=X5xy4ZGYxVSPsNqwUTVnwvh5er4GBANkkoH/t0SU3poitP3hDICB+w+hwXwpDvpqke
+         3peEEJURzsL06rwVpxzD8SXpJBjQin5pSMW43pRnfTCjwxK7ycADl4IM3w4IZKzcbeH7
+         nj9xeH7yfdbPIs1wQQhzYcmOXc1KxsRf6wWvw=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:sender:date:x-google-sender-auth:message-id:subject
+         :from:to:content-type;
+        b=rMdxuyx9/9pJbCLc8/elVL/U8kHLqyyI87fQL02rDidSce09eb3kvzKqwzyyUw+UF8
+         26uBvHgRk8GLEBU4SBfB5Fd+1bE8S+tNfD5K8byf155wmDoEfOLcZsCQMGYIZvend5FR
+         bmt2j7xxuMGQPp9ipnkbBldzDWgUyNbFdWv/s=
+MIME-Version: 1.0
+Sender: kevin.gisi@gmail.com
+Received: by 10.91.193.19 with SMTP id v19mr3034721agp.4.1267550571966; Tue, 
+	02 Mar 2010 09:22:51 -0800 (PST)
+Date: Tue, 2 Mar 2010 11:22:51 -0600
+X-Google-Sender-Auth: 82669944b77bf66f
+Message-ID: <abacf3b61003020922l6d34adet262379abafdc0379@mail.gmail.com>
+Subject: Continuous Build System for Slideshows
+From: Kevin Gisi <kevin@kevingisi.com>
+To: webslideshow@googlegroups.com
+Content-Type: multipart/alternative; boundary=0016e64713b293b33f0480d49dc7
+
+--0016e64713b293b33f0480d49dc7
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hi all,
+
+I just posted part one of a tutorial on setting up a continuous build system
+for your slide decks. While the tutorial uses S9, I'm sure it could easily
+be adapted to work with most tools. The tutorial demonstrates how you can
+use GitHub and Heroku to handle all of this at no cost (or bandwidth) to
+you.
+
+I'm hoping to get the second half of the tutorial (using Selenium, Firefox
+headless to generate PDFs) pushed out in the next few weeks, so I'd love to
+hear your thoughts and feedback: http://bit.ly/ag9lq6
+
+Thanks so much!
+
+-Kevin W. Gisi
+kevin@kevingisi.com | (916) 538-4474
+http://www.kevingisi.com
+
+--0016e64713b293b33f0480d49dc7
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hi all,<div><br></div><div>I just posted part one of a tutorial on setting =
+up a continuous build system for your slide decks. While the tutorial uses =
+S9, I&#39;m sure it could easily be adapted to work with most tools. The tu=
+torial demonstrates how you can use GitHub and Heroku to handle all of this=
+ at no cost (or bandwidth) to you.</div>
+<div><br></div><div>I&#39;m hoping to get the second half of the tutorial (=
+using Selenium, Firefox headless to generate PDFs) pushed out in the next f=
+ew weeks, so I&#39;d love to hear your thoughts and feedback:=A0<span class=
+=3D"Apple-style-span" style=3D"font-family: &#39;Lucida Grande&#39;, sans-s=
+erif; font-size: 14px; color: rgb(51, 51, 51); line-height: 16px; "><a href=
+=3D"http://bit.ly/ag9lq6" class=3D"tweet-url web" rel=3D"nofollow" target=
+=3D"_blank" style=3D"margin-top: 0px; margin-right: 0px; margin-bottom: 0px=
+; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0=
+px; padding-left: 0px; text-decoration: underline; color: rgb(0, 132, 180);=
+ ">http://bit.ly/ag9lq6</a></span></div>
+<div><br></div><div>Thanks so much!</div><div><br clear=3D"all">-Kevin W. G=
+isi<br><a href=3D"mailto:kevin@kevingisi.com">kevin@kevingisi.com</a> | (91=
+6) 538-4474<br><a href=3D"http://www.kevingisi.com">http://www.kevingisi.co=
+m</a><br>
+
+</div>
+
+--0016e64713b293b33f0480d49dc7--
+

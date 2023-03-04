@@ -1,0 +1,69 @@
+From 2119085064192@xxx Tue Jun 16 00:16:48 +0000 2015
+X-GM-THRID: 2107993227264
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a2a51690b24c94bb
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.170.166 with SMTP id an6mr92499lbc.17.1409649027738;
+        Tue, 02 Sep 2014 02:10:27 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.102.66 with SMTP id fm2ls509395wib.20.canary; Tue, 02 Sep
+ 2014 02:10:27 -0700 (PDT)
+X-Received: by 10.194.184.209 with SMTP id ew17mr180440wjc.4.1409649027305;
+        Tue, 02 Sep 2014 02:10:27 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x232.google.com (mail-we0-x232.google.com [2a00:1450:400c:c03::232])
+        by gmr-mx.google.com with ESMTPS id fc7si629119wic.2.2014.09.02.02.10.27
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 02 Sep 2014 02:10:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::232 as permitted sender) client-ip=2a00:1450:400c:c03::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f178.google.com with SMTP id u57so6643658wes.37
+        for <opensport@googlegroups.com>; Tue, 02 Sep 2014 02:10:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=ekrbPj+VviZ147nUUbOKcEFwGAXpJk4PiLkXb6Uk/O4=;
+        b=xypCaKA7PxMvzNle+OfuMFpKUbRY/CpaFuskFvH3NOzcsKriyBKi2HNNzB74K5Sd4i
+         AKJ1h2miyk9MJT3EfSq3KEgIc6h3MyJBMmMfDJd3nXUgcwR8G3O3puZVOhyl4TG+kcbc
+         XyAXKRR1jlc78Tb3D4uibA/F/q87uLcVN7CGPDgmZPplLxwXanA1HVkR2O8GQD8AVqc+
+         DkJxX+SjJRQw9fSkEI638DcG6kP20vlOP3C0Xji1R+3nDG9dZDH018lYkuNr6YdEnwnb
+         wEfht5Co7OSZfBeDD41BB5ZzZRPC2RjBLC2NQTEWo990DysDryYe80e46pl/Go2mdGUi
+         Gegg==
+MIME-Version: 1.0
+X-Received: by 10.194.59.201 with SMTP id b9mr38443863wjr.43.1409649027210;
+ Tue, 02 Sep 2014 02:10:27 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Tue, 2 Sep 2014 02:10:27 -0700 (PDT)
+In-Reply-To: <bf125e2d-4231-4699-baf4-970aaa595541@googlegroups.com>
+References: <bf125e2d-4231-4699-baf4-970aaa595541@googlegroups.com>
+Date: Tue, 2 Sep 2014 11:10:27 +0200
+Message-ID: <CAAxEZd_rNvffWqmPOrtuD5Jqi7VHCS72BcaRTGgV=G_ojhnYnA@mail.gmail.com>
+Subject: Re: [opensport] find_person
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Thinking about it a little more. Sorry you're right  (and I'm
+mistaken) currently there's no way to match players with the same name
+for football clubs - it's unresolved, that is, the details need to get
+worked out.
+
+   Setting up the mapping table for a football club looks also more
+more difficult than a national team because players can be from any
+nation / country (players are for now organized by country [1]), thus,
+leading to more possible duplicate names.   Sorry I have no quick
+answer or solution. Again it's still open and details need to get
+worked out.  Keep it up.
+
+  Cheers.
+
+[1] github.com/openfootball/players
+

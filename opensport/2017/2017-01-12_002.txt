@@ -1,0 +1,314 @@
+From 6374761790462492672@xxx Thu Jan 12 16:51:30 +0000 2017
+X-GM-THRID: 6374761789815521280
+X-Received: by 10.176.0.15 with SMTP id 15mr4159775uai.11.1484239890186;
+        Thu, 12 Jan 2017 08:51:30 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.45.170 with SMTP id g39ls6686936otb.1.gmail; Thu, 12 Jan
+ 2017 08:51:29 -0800 (PST)
+X-Received: by 10.13.203.14 with SMTP id n14mr5068898ywd.42.1484239889663;
+        Thu, 12 Jan 2017 08:51:29 -0800 (PST)
+Received: by 10.202.117.4 with SMTP id q4msoic;
+        Thu, 12 Jan 2017 04:03:31 -0800 (PST)
+X-Received: by 10.157.18.211 with SMTP id g77mr759700otg.14.1484222610860;
+        Thu, 12 Jan 2017 04:03:30 -0800 (PST)
+X-Google-Web-Client: true
+Date: Thu, 12 Jan 2017 04:03:30 -0800 (PST)
+From: Daniele Mancini <dany2222@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <cca182e3-4058-4572-a073-4a249779176d@googlegroups.com>
+Subject: Error creating daabase
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_129_1665058666.1484222610503"
+X-Google-Token: EJLh3cMFu6zQGORn6Jg0
+X-Google-IP: 79.44.59.214
+
+------=_Part_129_1665058666.1484222610503
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_130_1135062283.1484222610503"
+
+------=_Part_130_1135062283.1484222610503
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+I am trying to setup a database, but I am getting errors during the create 
+phase.
+
+I am using
+ - RUBYGEMS VERSION: 2.5.2
+ - RUBY VERSION: 2.3.3 (2016-11-21 patchlevel 222) [x64-mingw32]
+
+this is the result I am getting
+C:\openfootball>sportdb create
+activerecord-utils/0.4.0 (activerecord/5.0.1) on Ruby 2.3.3 (2016-11-21) [
+x64-mingw32]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model >
+WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model >
+WorldDb::Model::StateBase<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model >
+WorldDb::Model::CityBase<
+sportdb-update/0.1.1 on Ruby 2.3.3 (2016-11-21) [x64-mingw32]
+sportdb-service/0.4.0 on Ruby 2.3.3 (2016-11-21) [x64-mingw32]
+sportdb/1.11.0 on Ruby 2.3.3 (2016-11-21) [x64-mingw32]
+sportdb/1.11.0 on Ruby 2.3.3 (2016-11-21) [x64-mingw32]
+working directory: C:/openfootball
+Connecting to db using settings:
+{:adapter=>"sqlite3", :database=>"./sport.db"}
+-- create_table(:logs)
+   -> 0.0045s
+-- create_table(:props, {})
+   -> 0.0009s
+-- create_table(:tags)
+   -> 0.0017s
+-- add_index(:tags, :key, {:unique=>true})
+   -> 0.0014s
+-- create_table(:taggings)
+   -> 0.0019s
+-- add_index(:taggings, :tag_id)
+
+
+*** error: Index name 'index_taggings_on_tag_id' on table 'taggings' 
+already exists
+
+I have read a closed issue regarding the fact that activerecord 5 is not 
+supported, if this is the issue how can I setup a working environment to 
+generate a DB?
+
+------=_Part_130_1135062283.1484222610503
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<div>I am trying to setup a database, but I am getti=
+ng errors during the create phase.</div><div><br></div><div>I am using</div=
+><div><div class=3D"prettyprint" style=3D"background-color: rgb(250, 250, 2=
+50); border-color: rgb(187, 187, 187); border-style: solid; border-width: 1=
+px; word-wrap: break-word;"><code class=3D"prettyprint"><div class=3D"subpr=
+ettyprint"><span style=3D"color: #000;" class=3D"styled-by-prettify">=C2=A0=
+</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><s=
+pan style=3D"color: #000;" class=3D"styled-by-prettify"> RUBYGEMS VERSION</=
+span><span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><spa=
+n style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">2.5</span><span style=3D"col=
+or: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #066;=
+" class=3D"styled-by-prettify">2</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify"><br>=C2=A0</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">-</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify"> RUBY VERSION</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">:</span><span style=3D"color: #000;" class=3D"styled-by-p=
+rettify"> </span><span style=3D"color: #066;" class=3D"styled-by-prettify">=
+2.3</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span=
+><span style=3D"color: #066;" class=3D"styled-by-prettify">3</span><span st=
+yle=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">(</span><span style=3D"color: #066=
+;" class=3D"styled-by-prettify">2016</span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">-</span><span style=3D"color: #066;" class=3D"sty=
+led-by-prettify">11</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">=
+21</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> patchle=
+vel </span><span style=3D"color: #066;" class=3D"styled-by-prettify">222</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">)</span><span=
+ style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">[</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify">x64</span><span style=3D"color: #660;" c=
+lass=3D"styled-by-prettify">-</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify">mingw32</span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">]</span></div></code></div><div><br></div></div><div>this i=
+s the result I am getting</div><div><div class=3D"prettyprint" style=3D"bac=
+kground-color: rgb(250, 250, 250); border-color: rgb(187, 187, 187); border=
+-style: solid; border-width: 1px; word-wrap: break-word;"><code class=3D"pr=
+ettyprint"><div class=3D"subprettyprint"><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">C</span><span style=3D"color: #660;" class=3D"style=
+d-by-prettify">:\</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify">openfootball</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">&gt;</span><span style=3D"color: #000;" class=3D"styled-by-prettif=
+y">sportdb create<br>activerecord</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">-</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">utils</span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">/</span><span style=3D"color: #066;" class=3D"styled-by-prettify"=
+>0.4</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</spa=
+n><span style=3D"color: #066;" class=3D"styled-by-prettify">0</span><span s=
+tyle=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"c=
+olor: #660;" class=3D"styled-by-prettify">(</span><span style=3D"color: #00=
+0;" class=3D"styled-by-prettify">activerecord</span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #066;" cla=
+ss=3D"styled-by-prettify">5.0</span><span style=3D"color: #660;" class=3D"s=
+tyled-by-prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-=
+prettify">1</span><span style=3D"color: #660;" class=3D"styled-by-prettify"=
+>)</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> on </sp=
+an><span style=3D"color: #606;" class=3D"styled-by-prettify">Ruby</span><sp=
+an style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><span style=3D"col=
+or: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #066;=
+" class=3D"styled-by-prettify">3</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify"> </span><span style=3D"color: #660;" class=3D"style=
+d-by-prettify">(</span><span style=3D"color: #066;" class=3D"styled-by-pret=
+tify">2016</span><span style=3D"color: #660;" class=3D"styled-by-prettify">=
+-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">11</span>=
+<span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span sty=
+le=3D"color: #066;" class=3D"styled-by-prettify">21</span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">)</span><span style=3D"color: #000=
+;" class=3D"styled-by-prettify"> </span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">[</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">x64</span><span style=3D"color: #660;" class=3D"styled-by-pr=
+ettify">-</span><span style=3D"color: #000;" class=3D"styled-by-prettify">m=
+ingw32</span><span style=3D"color: #660;" class=3D"styled-by-prettify">]</s=
+pan><span style=3D"color: #000;" class=3D"styled-by-prettify"><br>=C2=A0 </=
+span><span style=3D"color: #660;" class=3D"styled-by-prettify">[</span><spa=
+n style=3D"color: #606;" class=3D"styled-by-prettify">TagDb</span><span sty=
+le=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"col=
+or: #000;" class=3D"styled-by-prettify">has_many_tags</span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">]</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify"> adding taggings n tags has_many assocs t=
+o model </span><span style=3D"color: #660;" class=3D"styled-by-prettify">&g=
+t;</span><span style=3D"color: #606;" class=3D"styled-by-prettify">WorldDb<=
+/span><span style=3D"color: #660;" class=3D"styled-by-prettify">::</span><s=
+pan style=3D"color: #606;" class=3D"styled-by-prettify">Model</span><span s=
+tyle=3D"color: #660;" class=3D"styled-by-prettify">::</span><span style=3D"=
+color: #606;" class=3D"styled-by-prettify">Country</span><span style=3D"col=
+or: #660;" class=3D"styled-by-prettify">&lt;</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify"><br>=C2=A0 </span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">[</span><span style=3D"color: #606;" cla=
+ss=3D"styled-by-prettify">TagDb</span><span style=3D"color: #660;" class=3D=
+"styled-by-prettify">.</span><span style=3D"color: #000;" class=3D"styled-b=
+y-prettify">has_many_tags</span><span style=3D"color: #660;" class=3D"style=
+d-by-prettify">]</span><span style=3D"color: #000;" class=3D"styled-by-pret=
+tify"> adding taggings n tags has_many assocs to model </span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">&gt;</span><span style=3D"co=
+lor: #606;" class=3D"styled-by-prettify">WorldDb</span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">::</span><span style=3D"color: #606;"=
+ class=3D"styled-by-prettify">Model</span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">::</span><span style=3D"color: #606;" class=3D"sty=
+led-by-prettify">StateBase</span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">&lt;</span><span style=3D"color: #000;" class=3D"styled-by-=
+prettify"><br>=C2=A0 </span><span style=3D"color: #660;" class=3D"styled-by=
+-prettify">[</span><span style=3D"color: #606;" class=3D"styled-by-prettify=
+">TagDb</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</=
+span><span style=3D"color: #000;" class=3D"styled-by-prettify">has_many_tag=
+s</span><span style=3D"color: #660;" class=3D"styled-by-prettify">]</span><=
+span style=3D"color: #000;" class=3D"styled-by-prettify"> adding taggings n=
+ tags has_many assocs to model </span><span style=3D"color: #660;" class=3D=
+"styled-by-prettify">&gt;</span><span style=3D"color: #606;" class=3D"style=
+d-by-prettify">WorldDb</span><span style=3D"color: #660;" class=3D"styled-b=
+y-prettify">::</span><span style=3D"color: #606;" class=3D"styled-by-pretti=
+fy">Model</span><span style=3D"color: #660;" class=3D"styled-by-prettify">:=
+:</span><span style=3D"color: #606;" class=3D"styled-by-prettify">CityBase<=
+/span><span style=3D"color: #660;" class=3D"styled-by-prettify">&lt;</span>=
+<span style=3D"color: #000;" class=3D"styled-by-prettify"><br>sportdb</span=
+><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span st=
+yle=3D"color: #000;" class=3D"styled-by-prettify">update</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color=
+: #066;" class=3D"styled-by-prettify">0.1</span><span style=3D"color: #660;=
+" class=3D"styled-by-prettify">.</span><span style=3D"color: #066;" class=
+=3D"styled-by-prettify">1</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify"> on </span><span style=3D"color: #606;" class=3D"styled-by-p=
+rettify">Ruby</span><span style=3D"color: #000;" class=3D"styled-by-prettif=
+y"> </span><span style=3D"color: #066;" class=3D"styled-by-prettify">2.3</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span=
+ style=3D"color: #066;" class=3D"styled-by-prettify">3</span><span style=3D=
+"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">(</span><span style=3D"color: #066;" cla=
+ss=3D"styled-by-prettify">2016</span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">-</span><span style=3D"color: #066;" class=3D"styled-by=
+-prettify">11</span><span style=3D"color: #660;" class=3D"styled-by-prettif=
+y">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">21</sp=
+an><span style=3D"color: #660;" class=3D"styled-by-prettify">)</span><span =
+style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">[</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify">x64</span><span style=3D"color: #660;" cl=
+ass=3D"styled-by-prettify">-</span><span style=3D"color: #000;" class=3D"st=
+yled-by-prettify">mingw32</span><span style=3D"color: #660;" class=3D"style=
+d-by-prettify">]</span><span style=3D"color: #000;" class=3D"styled-by-pret=
+tify"><br>sportdb</span><span style=3D"color: #660;" class=3D"styled-by-pre=
+ttify">-</span><span style=3D"color: #000;" class=3D"styled-by-prettify">se=
+rvice</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</sp=
+an><span style=3D"color: #066;" class=3D"styled-by-prettify">0.4</span><spa=
+n style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">0</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify"> on </span><span style=3D"color: #606=
+;" class=3D"styled-by-prettify">Ruby</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify"> </span><span style=3D"color: #066;" class=3D"sty=
+led-by-prettify">2.3</span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-prettify"=
+>3</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span>=
+<span style=3D"color: #660;" class=3D"styled-by-prettify">(</span><span sty=
+le=3D"color: #066;" class=3D"styled-by-prettify">2016</span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #0=
+66;" class=3D"styled-by-prettify">11</span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">-</span><span style=3D"color: #066;" class=3D"sty=
+led-by-prettify">21</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">)</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+ </span><span style=3D"color: #660;" class=3D"styled-by-prettify">[</span><=
+span style=3D"color: #000;" class=3D"styled-by-prettify">x64</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">-</span><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify">mingw32</span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">]</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify"><br>sportdb</span><span style=3D"color: #660;"=
+ class=3D"styled-by-prettify">/</span><span style=3D"color: #066;" class=3D=
+"styled-by-prettify">1.11</span><span style=3D"color: #660;" class=3D"style=
+d-by-prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-pret=
+tify">0</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> on=
+ </span><span style=3D"color: #606;" class=3D"styled-by-prettify">Ruby</spa=
+n><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span s=
+tyle=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #=
+066;" class=3D"styled-by-prettify">3</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify"> </span><span style=3D"color: #660;" class=3D"sty=
+led-by-prettify">(</span><span style=3D"color: #066;" class=3D"styled-by-pr=
+ettify">2016</span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">11</spa=
+n><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span s=
+tyle=3D"color: #066;" class=3D"styled-by-prettify">21</span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">)</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify"> </span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">[</span><span style=3D"color: #000;" class=3D"styl=
+ed-by-prettify">x64</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">-</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+mingw32</span><span style=3D"color: #660;" class=3D"styled-by-prettify">]</=
+span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br>sportdb<=
+/span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><sp=
+an style=3D"color: #066;" class=3D"styled-by-prettify">1.11</span><span sty=
+le=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"col=
+or: #066;" class=3D"styled-by-prettify">0</span><span style=3D"color: #000;=
+" class=3D"styled-by-prettify"> on </span><span style=3D"color: #606;" clas=
+s=3D"styled-by-prettify">Ruby</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify"> </span><span style=3D"color: #066;" class=3D"styled-by-=
+prettify">2.3</span><span style=3D"color: #660;" class=3D"styled-by-prettif=
+y">.</span><span style=3D"color: #066;" class=3D"styled-by-prettify">3</spa=
+n><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span s=
+tyle=3D"color: #660;" class=3D"styled-by-prettify">(</span><span style=3D"c=
+olor: #066;" class=3D"styled-by-prettify">2016</span><span style=3D"color: =
+#660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066;" cl=
+ass=3D"styled-by-prettify">11</span><span style=3D"color: #660;" class=3D"s=
+tyled-by-prettify">-</span><span style=3D"color: #066;" class=3D"styled-by-=
+prettify">21</span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">)</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span=
+><span style=3D"color: #660;" class=3D"styled-by-prettify">[</span><span st=
+yle=3D"color: #000;" class=3D"styled-by-prettify">x64</span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify">mingw32</span><span style=3D"color: #660;=
+" class=3D"styled-by-prettify">]</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify"><br>working directory</span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify"> C</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">:</span><span style=3D"color: #080;" class=3D"styled-by-p=
+rettify">/openfootball<br>Connecting to db using settings:<br>{:adapter=3D&=
+gt;&quot;sqlite3&quot;, :database=3D&gt;&quot;./</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">sport</span><span style=3D"color: #66=
+0;" class=3D"styled-by-prettify">.</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">db</span><span style=3D"color: #080;" class=3D"styl=
+ed-by-prettify">&quot;}<br>-- create_table(:logs)<br>=C2=A0 =C2=A0-&gt; 0.0=
+045s<br>-- create_table(:props, {})<br>=C2=A0 =C2=A0-&gt; 0.0009s<br>-- cre=
+ate_table(:tags)<br>=C2=A0 =C2=A0-&gt; 0.0017s<br>-- add_index(:tags, :key,=
+ {:unique=3D&gt;true})<br>=C2=A0 =C2=A0-&gt; 0.0014s<br>-- create_table(:ta=
+ggings)<br>=C2=A0 =C2=A0-&gt; 0.0019s<br>-- add_index(:taggings, :tag_id)<b=
+r><br><br>*** error: Index name &#39;index_taggings_on_tag_id&#39; on table=
+ &#39;taggings&#39; already exists</span></div></code></div><br><div>I have=
+ read a closed issue regarding the fact that activerecord 5 is not supporte=
+d, if this is the issue how can I setup a working environment to generate a=
+ DB?</div></div></div>
+------=_Part_130_1135062283.1484222610503--
+
+------=_Part_129_1665058666.1484222610503--
+

@@ -1,0 +1,136 @@
+From 1373132292096@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1371358101504
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,f330162d7f89ec67,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,UTF8
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.42.54.147 with SMTP id r19mr3701126icg.13.1378543190445;
+        Sat, 07 Sep 2013 01:39:50 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.50.101.51 with SMTP id fd19ls987861igb.10.canary; Sat, 07 Sep
+ 2013 01:39:49 -0700 (PDT)
+X-Received: by 10.50.87.66 with SMTP id v2mr1901695igz.1.1378543189818;
+        Sat, 07 Sep 2013 01:39:49 -0700 (PDT)
+Received: by 10.50.73.1 with SMTP id h1msigv;
+        Sat, 7 Sep 2013 00:11:23 -0700 (PDT)
+X-Received: by 10.68.212.130 with SMTP id nk2mr1923072pbc.1.1378537883054;
+        Sat, 07 Sep 2013 00:11:23 -0700 (PDT)
+Return-Path: <cmpitg@gmail.com>
+Received: from mail-pa0-x231.google.com (mail-pa0-x231.google.com [2607:f8b0:400e:c03::231])
+        by gmr-mx.google.com with ESMTPS id px10si247435pbb.2.1969.12.31.16.00.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 07 Sep 2013 00:11:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of cmpitg@gmail.com designates 2607:f8b0:400e:c03::231 as permitted sender) client-ip=2607:f8b0:400e:c03::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of cmpitg@gmail.com designates 2607:f8b0:400e:c03::231 as permitted sender) smtp.mail=cmpitg@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) d=gmail.com
+Received: by mail-pa0-x231.google.com with SMTP id ld10so4202922pab.8
+        for <webslideshow@googlegroups.com>; Sat, 07 Sep 2013 00:11:23 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=message-id:date:from:user-agent:mime-version:to:subject
+         :content-type:content-transfer-encoding;
+        bh=8b3c6N5aXLDlMsytf8BN7iycyGglM/kJtKVV+Oedebg=;
+        b=aIoIzbbOiBLTu77iPTHN/CyH2YGdfJc/sSBPSbsLIWffG/ZWjnHIQF1v6WM1DYT6jb
+         pnhN0gGb4Plbqd6mdmtE/xvBiQ8qaEQh5ibqp1rX7jBzymJUvqLeSBaT21QIe/OgfEHj
+         QwnfW640vO6CBGgKdoajA0xRAxDDk5Pgj/ZN5sV6g0xjpZlTAqiJIi2irefHi+oMhXJX
+         MnYJr3lnI4yupDV1DgOKfIeb4VrdrKSDG+ykPUY3ZpDmVJTTyEvUJQHNG5+8gLO4UUA8
+         pUnxftKbobeYCutpRWrxHTArfwtBgvGMENJfjGaXH0M6krF4YQyB8vsGVUL/MyUP4Jb5
+         ZsUQ==
+X-Received: by 10.68.244.73 with SMTP id xe9mr7026275pbc.119.1378537882882;
+        Sat, 07 Sep 2013 00:11:22 -0700 (PDT)
+Return-Path: <cmpitg@gmail.com>
+Received: from [192.168.1.5] ([118.71.167.199])
+        by mx.google.com with ESMTPSA id xe9sm2812998pab.0.1969.12.31.16.00.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 07 Sep 2013 00:11:22 -0700 (PDT)
+Message-ID: <522AD195.1070303@gmail.com>
+Date: Sat, 07 Sep 2013 14:11:17 +0700
+From: =?UTF-8?B?Tmd1eeG7hW4gSMOgIETGsMahbmc=?= <cmpitg@gmail.com>
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:17.0) Gecko/20130801 Thunderbird/17.0.8
+MIME-Version: 1.0
+To: webslideshow@googlegroups.com
+Subject: Failed to build default example
+X-Enigmail-Version: 1.5.2
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi everyone,
+
+I have just installed Slideshow-S9 for the first time and failed to
+run the default example with the full output below.  May anyone help me?
+
+    $ ruby -v
+    ruby 1.9.3p448 (2013-06-27 revision 41675) [x86_64-linux]
+
+    $ slideshow n
+    fetcher 0.3.0 on Ruby 1.9.3 (2013-06-27) [x86_64-linux]
+    Slide Show (S9) 2.3.0 on Ruby 1.9.3 (2013-06-27) [x86_64-linux]
+    Copying template pack 'welcome.quick'
+      Loading template manifest
+/home/cmpitg/.rvm/gems/ruby-1.9.3-p448/gems/slideshow-2.3.0/templates/welcome.txt.quick...
+      Copying to welcome.text from
+/home/cmpitg/.rvm/gems/ruby-1.9.3-p448/gems/slideshow-2.3.0/templates/welcome.text...
+    Done (in 0.314113603 s).
+
+    $ slideshow b welcome.text
+    fetcher 0.3.0 on Ruby 1.9.3 (2013-06-27) [x86_64-linux]
+    Slide Show (S9) 2.3.0 on Ruby 1.9.3 (2013-06-27) [x86_64-linux]
+    Loading plugins in
+'/home/cmpitg/.slideshow/plugins/analytics/analytics_helper.rb'
+(/home/cmpitg/.slideshow/plugins/analytics/analytics_helper.rb)...
+    Preparing slideshow 'welcome'...
+      Patching !-directives (0 slide/style-directives)...
+      Preparing %-directives (0 slide/style directives, 0 class/clear
+expr-directives, 0/0 block-directives)...
+      Removing %-comments (4 lines, 0 begin/end-blocks, 0 end-blocks)...
+      Reading 1 headers: title...
+      Patching embedded Ruby (erb) code Django-style (0
+{{-expressions, 2/2 {%-statements)...
+      Patching embedded Ruby (erb) code for aliases (0
+include/class-aliases)...
+      Running embedded Ruby (erb) code/helpers...
+
+    *** error: undefined method `left' for
+#<Slideshow::Gen:0x000000019afe88>
+
+Best regards,
+Duong
+- -- 
+Duong Nguyen ("Nguyễn Hà Dương" in Vietnamese, 「グエンヤン」 in Japanese)
+Blog: http://reference-error.org
+Public Key: http://reference-error.org/public.key.txt
+"Life is a hack"
+
+- -----BEGIN GEEK CODE BLOCK-----
+Version: 3.12
+GIT/CS/CC/ED/P/TW d++ s:(-:-) !a C+++(++++) ULU++++ P-- L+++ E@
+W++>+++ N+ o+ K w--- O- M@ V- PS+ PE++ Y+>++ PGP++ t+ 5 X+ R- tv+ b+++
+DI+++ D++ G++ e* h* r* y-
+- -----END GEEK CODE BLOCK-----
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - http://www.enigmail.net/
+
+iQIcBAEBAgAGBQJSKtGNAAoJEIpp9nyHFJiiHU4P/R3r1gxce/B/qrrcq+Yg6df3
+x1RCWD7LRL/cFyG0/dNQHpE3kTkKqgnjhuOC2fV61CH17iaNOQP2EzeWJsk+zo5X
+n6am7NovvHoUfLRa/9IK39K8C2oPWBIGuj4PHWpPTcKOXzfyn4l4WjHypCGJjMKG
+9xdMZ+57+kcjLTEKM/f0B9s4LDpfnAv9rQzFtiFzuUC2rRn9muoUhlRQnkCFD7co
+yUmojikRYcsFfm9R2FCfLIXae3I0rI3VJVcFJpYzDtkjGWREPpGzuv4PqG4nRRs9
+y57EtKnnnNaXT/5gvlFAElVSdLcOIi++8F5Z2LHLfHZUTPwWZ+jBLRbBiKX0Ae2y
+29P5VaiFynuuI9G2ySUmT15srGqmOCOjebyIB3T0BbyFRcDnwm6F7zrvitytQ9eQ
+/FH0RqgVcw49FNFDvhzo8X9HscJ+1+/WDRofz34ByPos5GUmt4bySV+NS24mEqSB
+zVSONFH5HTSoDpJISevbTJ1A8KpoRRX+jnta7yII5Ry1Gb/sy/gDD5zNmtRNM8Tm
+4Fdyd0wwnAw3BgoVNaCpmw4krFigktTB+56cFzuS1Lh8mvnEfoH+g5Hfi/RYDrLM
+AZEXUBuW6Z920IRRS9cE/mmvKOl0VcrqF9BiKS2GBKcFO8IfQISh1+2p8cSPhaA6
+r8BKdZGh/8AWnqIZa8lF
+=/0+z
+-----END PGP SIGNATURE-----
+

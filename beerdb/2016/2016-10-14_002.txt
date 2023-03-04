@@ -1,0 +1,174 @@
+From 6341290707426213888@xxx Fri Oct 14 12:06:37 +0000 2016
+X-GM-THRID: 6338740501126053888
+Date: Fri, 14 Oct 2016 05:06:37 -0700 (PDT)
+From: Ram Thakur <mss.ramthakur@gmail.com>
+To: beerdb <beerdb@googlegroups.com>
+Message-Id: <be9ebfb0-aaca-4774-9761-172043e4c370@googlegroups.com>
+In-Reply-To: <61b74e33-e9e2-49f0-9313-648e866095cd@googlegroups.com>
+References: <db64c374-35f8-4fe2-8150-3f1e8f88a4a4@googlegroups.com>
+ <CAAxEZd_MwEQE7JdQSTHXFMxip2K-Bf=DKL1iCcJ3nAz3k1VQoQ@mail.gmail.com>
+ <61b74e33-e9e2-49f0-9313-648e866095cd@googlegroups.com>
+Subject: Re: [beerdb] NameError: uninitialized constant
+ WorldDb::Model::Region
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1160_1724769443.1476446797289"
+X-Google-Token: EM2Ug8AFptOZB66dT_A0
+X-Google-IP: 112.196.35.196
+
+------=_Part_1160_1724769443.1476446797289
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1161_196496372.1476446797289"
+
+------=_Part_1161_196496372.1476446797289
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks for your reply.
+
+I just downgrade the world.db model version to 2.2.0 and everything starts 
+working . Now I'm trying to create database with the following command i.e
+beerdb setup --include ./at-austria --worldinclude ./world.db
+
+and gettting the following error i.e
+
+acer@acer-veriton:/var/www/html/railsTestTask/openmundi$ beerdb setup 
+--include ./at-austria --worldinclude ./world.db
+activerecord-utils/0.4.0 (activerecord/5.0.0) on Ruby 2.3.0 (2015-12-25) 
+[x86_64-linux]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Region<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::City<
+beerdb/0.10.1 on Ruby 2.3.0 (2015-12-25) [x86_64-linux]
+beerdb-models/1.0.1 on Ruby 2.3.0 (2015-12-25) [x86_64-linux]
+working directory: /var/www/html/railsTestTask/openmundi
+Connecting to db using settings: 
+{:adapter=>"sqlite3", :database=>"./beer.db"}
+-- create_table(:logs)
+   -> 0.0929s
+-- create_table(:props, {})
+   -> 0.0781s
+-- create_table(:tags)
+   -> 0.1821s
+-- add_index(:tags, :key, {:unique=>true})
+   -> 0.0781s
+-- create_table(:taggings)
+   -> 0.2342s
+-- add_index(:taggings, :tag_id)
+
+*** error: Index name 'index_taggings_on_tag_id' on table 'taggings' 
+already exists
+
+and also can you tell show can I change default `sqlite` database `adapter` 
+to `postgresql` . Currently I'm working with the postgres sql .
+
+Any kind of help is appreciated . Thanks!!!!  
+
+On Friday, October 14, 2016 at 5:31:38 PM UTC+5:30, Ram Thakur wrote:
+>
+>
+>
+> On Friday, October 7, 2016 at 8:43:14 PM UTC+5:30, Gerald Bauer wrote:
+>>
+>> Hello, 
+>>    Thanks for trying beer.db (and world.db). 
+>>
+>> > Can you suggest how do i get fix this error to get the beer.db and 
+>> world.db ? 
+>>
+>>   You have two options: 
+>>
+>>   1) In your Gemfile downgrade the worlddb-models to an older version 
+>> (region changed to state). 
+>>
+>>   2) Wait for the next beerdb update (some weeks off - sorry) for a fix. 
+>>
+>>    Cheers. 
+>>
+>
+------=_Part_1161_196496372.1476446797289
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thanks for your reply.<br><br>I just downgrade the world.d=
+b model version to 2.2.0 and everything starts working . Now I&#39;m trying=
+ to create database with the following command i.e<div><div class=3D"pretty=
+print" style=3D"background-color: rgb(250, 250, 250); border-color: rgb(187=
+, 187, 187); border-style: solid; border-width: 1px; word-wrap: break-word;=
+"><code class=3D"prettyprint"><div class=3D"subprettyprint"><span style=3D"=
+color: #000;" class=3D"styled-by-prettify">beerdb setup </span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">--</span><span style=3D"colo=
+r: #000;" class=3D"styled-by-prettify">include </span><span style=3D"color:=
+ #660;" class=3D"styled-by-prettify">./</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify">at</span><span style=3D"color: #660;" class=3D=
+"styled-by-prettify">-</span><span style=3D"color: #000;" class=3D"styled-b=
+y-prettify">austria </span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">--</span><span style=3D"color: #000;" class=3D"styled-by-prettify=
+">worldinclude </span><span style=3D"color: #660;" class=3D"styled-by-prett=
+ify">./</span><span style=3D"color: #000;" class=3D"styled-by-prettify">wor=
+ld</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span>=
+<span style=3D"color: #000;" class=3D"styled-by-prettify">db<br></span></di=
+v></code></div><br>and gettting the following error i.e</div><div><br></div=
+><div><div class=3D"prettyprint" style=3D"background-color: rgb(250, 250, 2=
+50); border-color: rgb(187, 187, 187); border-style: solid; border-width: 1=
+px; word-wrap: break-word;"><code class=3D"prettyprint"><div class=3D"subpr=
+ettyprint"><font color=3D"#660066"><div class=3D"subprettyprint">acer@acer-=
+veriton:/var/www/html/railsTestTask/openmundi$ beerdb setup --include ./at-=
+austria --worldinclude ./world.db</div><div class=3D"subprettyprint">active=
+record-utils/0.4.0 (activerecord/5.0.0) on Ruby 2.3.0 (2015-12-25) [x86_64-=
+linux]</div><div class=3D"subprettyprint">=C2=A0 [TagDb.has_many_tags] addi=
+ng taggings n tags has_many assocs to model &gt;WorldDb::Model::Country&lt;=
+</div><div class=3D"subprettyprint">=C2=A0 [TagDb.has_many_tags] adding tag=
+gings n tags has_many assocs to model &gt;WorldDb::Model::Region&lt;</div><=
+div class=3D"subprettyprint">=C2=A0 [TagDb.has_many_tags] adding taggings n=
+ tags has_many assocs to model &gt;WorldDb::Model::City&lt;</div><div class=
+=3D"subprettyprint">beerdb/0.10.1 on Ruby 2.3.0 (2015-12-25) [x86_64-linux]=
+</div><div class=3D"subprettyprint">beerdb-models/1.0.1 on Ruby 2.3.0 (2015=
+-12-25) [x86_64-linux]</div><div class=3D"subprettyprint">working directory=
+: /var/www/html/railsTestTask/openmundi</div><div class=3D"subprettyprint">=
+Connecting to db using settings:=C2=A0</div><div class=3D"subprettyprint">{=
+:adapter=3D&gt;&quot;sqlite3&quot;, :database=3D&gt;&quot;./beer.db&quot;}<=
+/div><div class=3D"subprettyprint">-- create_table(:logs)</div><div class=
+=3D"subprettyprint">=C2=A0 =C2=A0-&gt; 0.0929s</div><div class=3D"subpretty=
+print">-- create_table(:props, {})</div><div class=3D"subprettyprint">=C2=
+=A0 =C2=A0-&gt; 0.0781s</div><div class=3D"subprettyprint">-- create_table(=
+:tags)</div><div class=3D"subprettyprint">=C2=A0 =C2=A0-&gt; 0.1821s</div><=
+div class=3D"subprettyprint">-- add_index(:tags, :key, {:unique=3D&gt;true}=
+)</div><div class=3D"subprettyprint">=C2=A0 =C2=A0-&gt; 0.0781s</div><div c=
+lass=3D"subprettyprint">-- create_table(:taggings)</div><div class=3D"subpr=
+ettyprint">=C2=A0 =C2=A0-&gt; 0.2342s</div><div class=3D"subprettyprint">--=
+ add_index(:taggings, :tag_id)</div><div class=3D"subprettyprint"><br></div=
+><div class=3D"subprettyprint">*** error: Index name &#39;index_taggings_on=
+_tag_id&#39; on table &#39;taggings&#39; already exists</div></font></div><=
+/code></div><br>and also can you tell show can I change default `sqlite` da=
+tabase `adapter` to `postgresql` . Currently I&#39;m working with the postg=
+res sql .</div><div><br></div><div>Any kind of help is appreciated . Thanks=
+!!!! =C2=A0<br><br>On Friday, October 14, 2016 at 5:31:38 PM UTC+5:30, Ram =
+Thakur wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-le=
+ft: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">=
+<br><br>On Friday, October 7, 2016 at 8:43:14 PM UTC+5:30, Gerald Bauer wro=
+te:<blockquote class=3D"gmail_quote" style=3D"margin:0;margin-left:0.8ex;bo=
+rder-left:1px #ccc solid;padding-left:1ex">Hello,
+<br>=C2=A0 =C2=A0Thanks for trying beer.db (and world.db).
+<br>
+<br>&gt; Can you suggest how do i get fix this error to get the beer.db and=
+ world.db ?
+<br>
+<br>=C2=A0 You have two options:
+<br>
+<br>=C2=A0 1) In your Gemfile downgrade the worlddb-models to an older vers=
+ion
+<br>(region changed to state).
+<br>
+<br>=C2=A0 2) Wait for the next beerdb update (some weeks off - sorry) for =
+a fix.
+<br>
+<br>=C2=A0 =C2=A0Cheers.
+<br></blockquote></div></blockquote></div></div>
+------=_Part_1161_196496372.1476446797289--
+
+------=_Part_1160_1724769443.1476446797289--
+

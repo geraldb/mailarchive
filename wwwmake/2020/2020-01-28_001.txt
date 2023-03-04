@@ -1,0 +1,94 @@
+From 6787099193860161536@xxx Tue Jan 28 20:51:14 +0000 2020
+X-GM-THRID: 6787099191620403200
+X-Received: by 2002:adf:ea05:: with SMTP id q5mr29295864wrm.48.1580244673625;
+        Tue, 28 Jan 2020 12:51:13 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:adf:ea84:: with SMTP id s4ls10214146wrm.11.gmail; Tue, 28
+ Jan 2020 12:51:12 -0800 (PST)
+X-Google-Smtp-Source: APXvYqx9tOcAnAN532UFBJ5H06GdScbFtknv9cYkHUOrKBXC8GS3F9t2OkusDTMCIO4JmcJrU6jz
+X-Received: by 2002:adf:e591:: with SMTP id l17mr31208916wrm.139.1580244672513;
+        Tue, 28 Jan 2020 12:51:12 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1580244672; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Jtb5GGUmwMYZ9i++V8g0Zs9nc4awv20edkSG4jm7g3m7vJ+qMfZxbFG/TgNZiZ2ei/
+         dQx9sNBPaj0+hwrYJk3AkBW78D0ZYZVAUnAFazggIpOWPxoAG8N/RQSyOaSzcfEA5EbA
+         kFFC2qw0PS5WDIsXA+sd90/rJqy2nPkcb6pziU9J04Z5KMtFzwQMk+YydCiS6ia7T87v
+         QQtZ64jo1mTx19HrDu/m/xLwGQeb1KUpoizqZ/Jljyf+48a4RI4Glk37S9PZU9aQbUdP
+         aBc9UOfsCsq8t3pcdfKosmKobZ41LPTVmJL8rQEW6/AlHtf1ZPxZB7NARuEDa17Fj6hw
+         dV0w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=HV1R22E+HjDTY4zVyU1rd653meZIDJq6Lc/r2rqlAxc=;
+        b=SIEOUDPu0zXUskd+p1q5tb0TxiuNgQix9nuHBHYktCnrZidV/jmH8KUmbGSYsTmJcX
+         +2Qzbsq1gbiflFRPqfcqO3SSLcIGprO1/2ua6amb9p3vdy1pE+Ck2YWDMVS//O130wTC
+         IZUfByUNxAFikjCsThCyL6Ewfw2NOXjrT4zyEqWwyRI/HSqV61nzIXH4tzF4/6YyX4x6
+         jTRwaxgk9HFKv/scJN1PAF+uqeF9PJ3m/3vzMqSm2UH3yde5LhC5YsCE28dP5Shhi7z7
+         SrXhCAeaZZw0vWzvMDZq+WsO8Bz8EwZtuX8vSPagTcu5anT7r+7VdaaY0sRyq8qPlter
+         WCpg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ekYTGwUn;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::142 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x142.google.com (mail-lf1-x142.google.com. [2a00:1450:4864:20::142])
+        by gmr-mx.google.com with ESMTPS id 202si135219wme.0.2020.01.28.12.51.12
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 28 Jan 2020 12:51:12 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::142 as permitted sender) client-ip=2a00:1450:4864:20::142;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ekYTGwUn;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::142 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x142.google.com with SMTP id n25so10203242lfl.0
+        for <wwwmake@googlegroups.com>; Tue, 28 Jan 2020 12:51:12 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=HV1R22E+HjDTY4zVyU1rd653meZIDJq6Lc/r2rqlAxc=;
+        b=ekYTGwUn/w8nVu60cY5iX1ob9lLoEPlDYSar6Cqe+hHlfWIjGBS4an/fr4nYQR5FgV
+         LVGpp3F7rDtXg/Hmdl6wuYmxQQ6T6Kn/7Uh/C7wWpKqrMkGIHXg4Wv2VqKHlsmpkNK6G
+         HmAJ8XPiGM4eCWKIORKXElQtBVe2qXt90buLio9OQ3nNpMJglJQqvNZLTy1ua88A/r3S
+         YWAWu/pGdz7TDkqHfpMRr8TdnBYgPskSc89kiMYeyFWgNHW1Z/WFLc08AT6DzYbGY46l
+         EOa381uQ1pLsFzr4267ehKMTP7lq2b3DWhbggrOdFMyvd2YWcRFrDWqzwDDqEJBnFCWw
+         6YJQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=HV1R22E+HjDTY4zVyU1rd653meZIDJq6Lc/r2rqlAxc=;
+        b=YfpIHd8f6ksfc+96b8UFj2UuxYYQll6hHj0GNYscVxbXEq0yaYZ5/+I9buMF38ZU6B
+         wPxCeE6kVihWXkbDBbzQ3k1MomvkuSsj3Zb3nes5+blnUp1uIFeTgW6OISV9WAx54cQU
+         pU2vtVjlt22Jcnhie8b1MVGE4yQLNYibuKAz2LNU+VuQjBSpCk3vDLwrzpxSHX0vYKwe
+         TLQ34bAONNznopastjdMO1YXCRyjugVWoZNMlluYX5yvba3ekiF9PlzPGorXqMeNMtq3
+         K27WIYiWztRKENx1QhMGOtTas17cJFYHjZeA6YI1GSw4vv63IEmru56s2FdtFsJBOWAl
+         aD6w==
+X-Gm-Message-State: APjAAAW/SwAhfwJIxUsE50P577ive9O2NtC29ho8Xam/urWzXEM1wkcZ
+	g7pOUxAwWNTwGHMIm+BceuEtLCG6wT5AGcmyBN7R06e+
+X-Received: by 2002:ac2:42ca:: with SMTP id n10mr3448416lfl.215.1580244671469;
+ Tue, 28 Jan 2020 12:51:11 -0800 (PST)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 28 Jan 2020 21:51:00 +0100
+Message-ID: <CAAxEZd9bg-DwC6yqAKVMHjT1tA-z75Ojy3BhCUJWLkagS1XehQ@mail.gmail.com>
+Subject: planet.rb quick starter script updated (v1.0) - (auto-)add articles &
+ blog posts to your static (jekyll & friends) website via feeds (and planet pluto)
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  I've updated (and un-gemified) the planet.rb quick starter script v1.0 [1]
+that lets you (auto-)add articles & blog posts to your static (jekyll
+& friends) website via feeds (and planet pluto).
+
+  Happy planet! Prosit 2020!
+
+PS: You can find a live sample "Planet Ruby" website built with
+the planet.rb quick starter script (and jekyll / github pages) online [2].
+
+For a great real-world example / setup see the "Planet OpenSUSE - Linux OS" [3].
+
+[1] https://github.com/feedreader/planet.rb
+[2] http://feedreader.github.io/jekyll.planet.sample
+[3] https://github.com/openSUSE/planet-o-o
+

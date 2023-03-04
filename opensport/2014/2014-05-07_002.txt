@@ -1,0 +1,86 @@
+From 600236359680@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 600049713152
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,c740960133f6591a
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.94.238 with SMTP id n74mr4469909yhf.27.1399494775125;
+        Wed, 07 May 2014 13:32:55 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.47.82 with SMTP id l76ls642290qga.61.gmail; Wed, 07 May
+ 2014 13:32:54 -0700 (PDT)
+X-Received: by 10.140.50.239 with SMTP id s102mr107797qga.7.1399494774868;
+        Wed, 07 May 2014 13:32:54 -0700 (PDT)
+X-Google-Doc-Id: 2c7a32399cf8eb41
+X-Google-Web-Client: true
+Date: Wed, 7 May 2014 13:32:54 -0700 (PDT)
+From: Martin Fischer <arthur.spooner@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <11117b8b-69a5-42fb-9343-ace265021289@googlegroups.com>
+Subject: Timezone information in world-cup
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_300_19656073.1399494774216"
+X-Google-Token: EPawqpsFZyCzQDg-d1Y0
+X-Google-IP: 88.65.211.78
+
+------=_Part_300_19656073.1399494774216
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_301_16236812.1399494774216"
+
+------=_Part_301_16236812.1399494774216
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Gerald,
+
+the data for the world-cup contain time zone information, e.g.:
+
+Group A:(17) Tue Jun/17 16:00   Brazil - Mexico        @ Est=C3=A1dio Caste=
+l=C3=A3o, Fortaleza (UTC-3)
+(18) Wed Jun/18 18:00   Cameroon - Croatia     @ Arena Amaz=C3=B4nia, Manau=
+s (UTC-4)
+
+The imported data within sqlite hold=20
+
+936  {null} 116  17  1  211 190  2014-06-17 16:00:00 ...
+937  {null} 117  18  1  22  154  2014-06-18 18:00:00 ...
+
+which means the time zone is not explicitly set to a default one during=20
+import. I tried to find a way to join with -> grounds -> cities or -> citie=
+sdirectly but the cities table does not store time zone information nor doe=
+s=20
+the grounds table.
+
+Am I missing something? Is there an easy way to fix this?
+
+Cheers,
+Martin
+
+------=_Part_301_16236812.1399494774216
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald,<br><br>the data for the world-cup contain time =
+zone information, e.g.:<br><br><pre><span style=3D"font-family: courier new=
+,monospace;"><code>Group A:
+</code></span><code><span style=3D"font-family: courier new,monospace;"><co=
+de>(17) Tue Jun/17 16:00   Brazil - Mexico        @ Est=C3=A1dio Castel=C3=
+=A3o, Fortaleza (UTC-3)
+(18) Wed Jun/18 18:00   Cameroon - Croatia     @ Arena Amaz=C3=B4nia, Manau=
+s (UTC-4)</code></span><br><br><font face=3D"arial,sans-serif">The imported=
+ data within sqlite hold </font><br><br></code></pre><span style=3D"font-fa=
+mily: courier new,monospace;">936&nbsp; {null} 116&nbsp; 17&nbsp; 1&nbsp; 2=
+11 190&nbsp; 2014-06-17 16:00:00 ...<br>937&nbsp; {null} 117&nbsp; 18&nbsp;=
+ 1&nbsp; 22&nbsp; 154&nbsp; 2014-06-18 18:00:00 ...<br></span><br>which mea=
+ns the time zone is not explicitly set to a default one during import. I tr=
+ied to find a way to join with <span style=3D"font-family: courier new,mono=
+space;">-&gt; grounds -&gt; cities</span> or<span style=3D"font-family: cou=
+rier new,monospace;"> -&gt; cities</span> directly but the cities table doe=
+s not store time zone information nor does the grounds table.<br><br>Am I m=
+issing something? Is there an easy way to fix this?<br><br>Cheers,<br>Marti=
+n<br></div>
+------=_Part_301_16236812.1399494774216--
+
+------=_Part_300_19656073.1399494774216--
+

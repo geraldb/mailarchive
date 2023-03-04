@@ -1,0 +1,100 @@
+From 6550969297229840384@xxx Wed May 02 13:06:39 +0000 2018
+X-GM-THRID: 6550967134313250816
+X-Received: by 2002:a65:60d6:: with SMTP id r22-v6mr3877508pgv.167.1525266398664;
+        Wed, 02 May 2018 06:06:38 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a63:3d0e:: with SMTP id k14-v6ls2714526pga.17.gmail; Wed, 02
+ May 2018 06:06:37 -0700 (PDT)
+X-Google-Smtp-Source: AB8JxZrWYxW7u9EwiSpAIZXa7Xxh91t/a0kchcumwYE9lrudFIZ/tJDj727ZS/K1VYUG/DLYhze6
+X-Received: by 2002:a65:4e0b:: with SMTP id r11-v6mr3880974pgt.151.1525266397571;
+        Wed, 02 May 2018 06:06:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1525266397; cv=none;
+        d=google.com; s=arc-20160816;
+        b=MmuPmjkBCyGBL4XRkcXt0vC6r3zdoPsNeS3vuSkwvwGOcMJxXFD6vhlqgVLhnVUBRE
+         iwc+hpaUCrA3mcwiIWWLOm8rVd93+JDxJIXCGroNHhyXWV7eN1i8pI9zzCqv47rn9+mS
+         +20APiCQHZzhF5FrDkyc3Zv7FEuRB4TjJJCaj4D9ZdtkHsbzCg2WragG2gE0XSgie4Ei
+         J+PSTdqBeiy/ehptynQiz+BISuZPh60oucOFHSbxalwf5hX54InogTNiWA17OsdYFiWS
+         s3KAL0qJ9hoUB62gwHS7ZFbeswIblQbKOfPhpmbV94JqZ6WEa1sAyLwO8s3/dLMVyPhL
+         oeUw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=+0HpWmfCGHIpPPpys2FW9JqF2Ji5kPR4m6n+9L3qos4=;
+        b=dMsY8MiSBDLIBnRMW9UsbasNprKaN/02wByLp9mGHd+maEaxORe8TsoOV/TMvlVeGJ
+         FEEJiXjeyf8M7lwKiUlR7PcRPs1Az2vbMjVXMK9Z94kCDX9+sUzOBRcyzP40ZcE9Jvnr
+         3AKj6uH0mlROKGyrNUNOGnsT9UdmpEWclDly0SXPjfQIThUOsvNAYNezHowD20bw738t
+         SYXRiy6D6wumeMELkA+3STBkjTivmF6wCfJFtN1/Ik9cPHMXytQAByEu6i+U/AJzf42q
+         hSs2QVhxppJeBeO0cib0mf/JPgTZdvOM54MBBC+BF14OVqCGIBSHCHSg0VjnX3w24AE6
+         yoHw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=OrUZeL+W;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x230.google.com (mail-it0-x230.google.com. [2607:f8b0:4001:c0b::230])
+        by gmr-mx.google.com with ESMTPS id v17si190008pfn.1.2018.05.02.06.06.37
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 02 May 2018 06:06:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) client-ip=2607:f8b0:4001:c0b::230;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=OrUZeL+W;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x230.google.com with SMTP id 144-v6so17379452iti.5
+        for <opensport@googlegroups.com>; Wed, 02 May 2018 06:06:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=+0HpWmfCGHIpPPpys2FW9JqF2Ji5kPR4m6n+9L3qos4=;
+        b=OrUZeL+WL0EffnG/0a18voOo9QFUH0m8iLSwWRhj803cnuDKQl4692PgSlInnC9Qy1
+         +znSjdYDD05F3kSTU2H7JNHiurAgBYpDQE3dsIlnI79LqtHyL4qxhi2cfB5q2vyTMe/K
+         H9fdi+YaMd+mDkjsqsQmbHr+Es1CvpHr+M8Ph6LKHL8JEs34A2ObJc46EQLKU5cAaMC6
+         JpVJB+OmYakfy3nDi4303zZOWGkuUHduq4fjasijRd4gW6SwScX3KFAEG68a96gCMNif
+         yRfwvAoYDi7aCYcHsmC+Wx8eWsFSPdpb3QZhoA1YLIAtLNyoyTQNZ1vur4gn6+Jb8TvY
+         1GQg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=+0HpWmfCGHIpPPpys2FW9JqF2Ji5kPR4m6n+9L3qos4=;
+        b=oczdORGsyJOFDTyzb0nTR60u1SnWoIlpCR/AWOWoojw04binof6a7O/im2b/fdKN7/
+         hZ31bThon/JYFOcm1BgE1YPP/8Qhpw7YEv/pCkezWTWy9l+Xr8wjRM+tIMTtEEBWqjYq
+         V0Dh70VeQgXD1U4PTptE07kLnegwShwz0v0CFXulhGobr3p5v2CI4Ta1p24FJ8nwc8+0
+         CYT6xCPnBzZeW1TkzAzpbiTzWK+qMQnZSBPBzANsXLMgJ0mi5UQNLv+FQwpJaMjib1WW
+         FmiA1M+LT5XgEaAawLOdupczYbxLR49ctqUua42J5kA7nvmV3AeySBo79Fk6iXwHqjCs
+         1XVg==
+X-Gm-Message-State: ALQs6tAYY6UBqfLlbfp315vJXIyUAtrHRPeve3FTI/rCWS7oJX6C8DZY
+	on304Bv8vZkwH3Bfi8OEK/ibuxe8MWuR7oe1GE/r1g==
+X-Received: by 2002:a24:2e94:: with SMTP id i142-v6mr21103309ita.42.1525266397111;
+ Wed, 02 May 2018 06:06:37 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.38.132 with HTTP; Wed, 2 May 2018 06:06:36 -0700 (PDT)
+In-Reply-To: <e093cc68-2b44-40a6-ad84-55c094f3fdc5@googlegroups.com>
+References: <e093cc68-2b44-40a6-ad84-55c094f3fdc5@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 2 May 2018 15:06:36 +0200
+Message-ID: <CAAxEZd__PF8ypnUKSOeaMXnDY3ZJ3bmvRKnUJXFNWRV661zM0w@mail.gmail.com>
+Subject: Re: [opensport] Dataset: football clubs and their league affiliations
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+    Welcome.
+
+>  a dataset that contains all football clubs in the world plus information on what leagues the club played in in 2014
+
+     Sorry to break the (sad / bad ) news - there's almost no open
+football data - yes, there are billions (maybe about  3 500 000 000+
+more than on facebook :-) of football fans enjoying the beautiful game
+but the tragedy of the commons and a great real-world case study of
+free-riding  in action  - free downloads, yes, yes, yes! but what fool
+/ lunatic is going to share data for free?
+
+    Anyways, Joe Kampschmidt's has collected  the definite listing on
+open football data [1].
+
+    Let us know if you find something. All the best. Cheers. Prost.
+
+[1] https://www.jokecamp.com/blog/guide-to-football-and-soccer-data-and-apis/
+

@@ -1,0 +1,134 @@
+From 6691716256672776192@xxx Thu May 16 19:56:43 +0000 2019
+X-GM-THRID: 6691714393683525632
+X-Received: by 2002:ac2:5bdb:: with SMTP id u27mr10738223lfn.92.1558036603157;
+        Thu, 16 May 2019 12:56:43 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:ac2:494e:: with SMTP id o14ls690677lfi.4.gmail; Thu, 16 May
+ 2019 12:56:42 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqzJWQjuFWTealDAYhS1d8dA1477s66cT+QSDNib5+BcXbc4bbBAwIm7YdyP/zS5yeQop1Vq
+X-Received: by 2002:ac2:42c8:: with SMTP id n8mr26094038lfl.28.1558036602384;
+        Thu, 16 May 2019 12:56:42 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1558036602; cv=none;
+        d=google.com; s=arc-20160816;
+        b=PhV61NN7bXceAx6IZZktu4N1ZR1JL+Rxi57YYK+4l8auF2xUQWe9/wfEn0QuhZteUZ
+         oKEBUsunDeR47Xt0ZHYi/DXhRp0LlTE3r1ChOHgqGLF53GaSi0amArZXK9Ptcj32jOrt
+         QQvPaL+yHa3CuYnOSNr5TkDZnNsY9ypD0FgAbmJ1M+4DFThtAeCYEDp8Z1inCtq0+ZO5
+         GySs4/fPs+VO5MrJnPbIsgctQdf5jyfaYu5uggYiQFBS91xj11xePUWRKpQKii9wuBO7
+         48iTAcd/KqmhIqJiE6wqknhrED4XlvbyCyTegm7ElAzU18dqFxIuV34NDyqf+q8wxTbU
+         vG9Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=w87p/zu03pu/8XjDAMP5negE2bJqBSyS1oH18cv3IWE=;
+        b=RDjPsPAL784pNS0tVowrc/Jd5HGanpLZCjz2Vd+ZOfOMWyP/iTg/uwHug/VT1BmW7V
+         MWOZXSD+OQ01j/BWvnaagpyx628ZnRuK+cjbGqLzhJbU/BbfRvxSszQanUCpuxB9X4Ag
+         bleXnYbrhbGAD9J4nwqspEe14Rtw9GxSbe3A/LV0kG7oJxwytRgfz/uO+F6P6eiGMI1x
+         A82MmR1AHluy7xcXatNiVR1n6tGR5kDLBkNA2mycJPuR0lKpZfdRrawVYO3uOmxko9FD
+         9ckTUO/BkIVK7XtcdFDVHfsm6a9Vil9Q1H7mlvJDYE1mWNgNdDKsbcUu5kOYLWFpoOtE
+         vRMw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=e8Ym5cJn;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x235.google.com (mail-lj1-x235.google.com. [2a00:1450:4864:20::235])
+        by gmr-mx.google.com with ESMTPS id i12si1077901lfo.5.2019.05.16.12.56.42
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 16 May 2019 12:56:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) client-ip=2a00:1450:4864:20::235;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=e8Ym5cJn;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x235.google.com with SMTP id h11so2866547ljb.2
+        for <opensport@googlegroups.com>; Thu, 16 May 2019 12:56:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=w87p/zu03pu/8XjDAMP5negE2bJqBSyS1oH18cv3IWE=;
+        b=e8Ym5cJnmk9NyXlWMJ5Un/rFVwpXFkC+xGnoeR/gFiKmJroFS0JQpXKOqEmJpubex8
+         G51m4k73mm2yh8iqByxERzLYppqEqIbQOt5l+nCs4uTMKI3gZJip9+DLTXbBp/JCQqMT
+         27jKPCnzjiOalF8YAvboQLmHu83jf5IMFQRf0wyxres5+ErZZULyd3g6SAAUXN9/V/yF
+         C5idA1YBz/m/F+otiOcASDOY5wWUKeQsH50WenKzEsR+2U9MX1ps8QgAJ5Pfvih7GCSA
+         Ck14nU0ov7n1bvmuzEz9EbebHWcoYDX08lkMj50S7gY3pSf8tMYw4aYzdDe4jDKrcT6p
+         10xQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=w87p/zu03pu/8XjDAMP5negE2bJqBSyS1oH18cv3IWE=;
+        b=n9SB+xZZ1wZuSiei1dWH8TTitXObM1jsSKbkbfBasDR3C1CutWBxlSfJTk3JC8RSwm
+         FPKJWd2txdUeIiMw5u8fRzBQ1WnosevJ0IjhljsXIEEsAQhCRxQKx69ioJiutx+/kWq1
+         qgBR6oXKJTRTHssk3TT66p5UEbVjHx0z3sXMPidmVd7g/XGQKKFyeEj3d/tFyh2Aax7o
+         5mz7iRSts4EKLl11ijJxfRlJ+OGTvZRerfMuB9f+KNLzp/VnY+FHAsil43UU627qQPAS
+         vVpMcoPQzchMpVZy46+8N5ftKvFYZM93748kgZlWZ9HCgAi4LFfMLpcjqX5r4I4MOGQU
+         Szrg==
+X-Gm-Message-State: APjAAAXkrdMDyRzY4XAajR6HIRETr7ta/huSTSejZbhQ6gRHZNzYeXqS
+	UJpx9z/ehrgzUZnyVdhDNc26A/M0Ah6I6mGK+u/RQMx9
+X-Received: by 2002:a2e:350f:: with SMTP id z15mr17574845ljz.36.1558036601887;
+ Thu, 16 May 2019 12:56:41 -0700 (PDT)
+MIME-Version: 1.0
+References: <a9d58aac-2eeb-4d38-8da1-3a51ea386ca8@googlegroups.com>
+In-Reply-To: <a9d58aac-2eeb-4d38-8da1-3a51ea386ca8@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 16 May 2019 21:56:30 +0200
+Message-ID: <CAAxEZd_HHYQpWF1TyQ1Fa8Kb17TMQFh7FLkaPDD-emQfqDCb3A@mail.gmail.com>
+Subject: Re: [opensport] How do I create scripts for postgresql?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+> How can I specify that I want the rows inserted in a postgresql database =
+and not sqlite?
+
+  Welcome to the football.db.  Search the forum for postgresql :-).
+See for example "Help for a beginner by Guillaume Bleuz=C3=A9".
+
+  To quote:
+   You can read the datasets into your (SQL) database of choice e.g.
+postgresql. However, you, will have to learn to use a (build) script
+on the command line (in ruby). Example:
+
+ build.rb:
+
+require 'sportdb/models'
+require 'datafile'
+
+
+DB_CONFIG =3D {
+  adapter:  'postgresql',
+  encoding: 'unicode',
+  username: 'you',
+  password:  'topsecrect',
+  pool:      5,
+  timeout:   5000
+}
+
+
+ActiveRecord::Base.establish_connection( DB_CONFIG )
+
+
+SportDb.create
+SportDb.read_builtin
+
+
+datafile =3D Datafile::Datafile.load_file( "./worldcup.rb" )
+
+datafile.dump
+
+datafile.download    ## download zips from github - saved to ./tmp
+datafile.read            ## read into / import into sql database
+
+
+   If you run this build script with ruby and you install the ruby
+libraries / gems (sportdb-models, datafile) and if you use the
+worldcup datafile, you're all set.
+
+  $ ruby ./build.rb
+
+   Good luck. Cheers. Prost.
+

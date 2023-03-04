@@ -1,0 +1,51 @@
+From 283448967168@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 282293436416
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,731e56176700f81e,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Received: by 10.100.253.7 with SMTP id a7mr2109762ani.21.1232905948556; Sun, 
+	25 Jan 2009 09:52:28 -0800 (PST)
+Date: Sun, 25 Jan 2009 09:52:28 -0800 (PST)
+X-IP: 75.118.30.38
+User-Agent: G2/1.0
+X-Google-Token: 9xzY0AwAAADKA_d1UnUI1JZIqfy1teyG
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_6; en-us) 
+	AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1,gzip(gfe),gzip(gfe)
+Message-ID: <b6b53919-958d-4e54-bb83-15867a3d0e56@e1g2000pra.googlegroups.com>
+Subject: oniguruma
+From: dsanson <dsanson@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+X-Google-Approved: gerald@vanbeta.com via web at 2009-01-25 20:59:09
+
+I struggled to get the oniguruma gem to install both on my powerbook
+g4 running Leopard, and on my dreamhost account. It was bad enough
+that I almost gave up on slideshow. Since I imagine others have run
+into the same problem, and since it took a lot of googling and sifting
+to figure it out, I thought I'd post the fix here.
+
+The problem has two dimensions. First, the oniguruma gem depends on
+the oniguruma library, so you have to install that library. You can do
+that on a mac using macports. You can do it on any other *nix by
+building from source.
+
+The trouble, it turns out, is that the oniguruma gem can't find the
+oniguruma library if it is in a non-standard location. Macports will
+put it in a non-standard location. And if you don't have admin
+privileges (as on my dreamhost account), you'll have to put it in a
+non-standard location, by, e.g.,
+
+% ./configure --prefix=$HOME/mypackages
+
+So you have to modify the oniguruma gem to allow specifying a non-
+standard location for the library. I eventually found instructions for
+doing just this, and they worked like a charm for me:
+
+http://www.sysadminschronicles.com/2008/12/24/installing-oniguruma-on-mac-os-x-leopard
+
+Best,
+David
+

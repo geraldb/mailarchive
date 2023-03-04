@@ -1,0 +1,103 @@
+From 6621755946350673920@xxx Fri Nov 09 07:15:00 +0000 2018
+X-GM-THRID: 6621754029295796224
+X-Received: by 2002:a17:906:29c1:: with SMTP id y1-v6mr222667eje.12.1541747699841;
+        Thu, 08 Nov 2018 23:14:59 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a17:906:19d5:: with SMTP id h21-v6ls153832ejd.12.gmail; Thu,
+ 08 Nov 2018 23:14:58 -0800 (PST)
+X-Google-Smtp-Source: AJdET5fdebFWcRCyPmgM4Pu72qx28fp1YLcr+In4xEJSzUYmqc+gdR6/38x5GofkaMfze/SeB1eQ
+X-Received: by 2002:a17:906:4f95:: with SMTP id o21-v6mr228049eju.6.1541747698583;
+        Thu, 08 Nov 2018 23:14:58 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1541747698; cv=none;
+        d=google.com; s=arc-20160816;
+        b=r8fGZl3+ywwkPfKdLlmLEI9/uKHOTNDVxq38lafnbw4bb/3b37anWCr2MghjDT/WGk
+         9j0lIWhsg5ycO5U1GKrdPNygqHTFNhyWlLSlXqSHZWVK7/y+UOo4FkRsYr+4JFDrpVkr
+         sXaAnn4MIHxUJXYKaZ7jebFAHy44MgTsmbAz5HL4iIR1VwhMWLbKq+dClIZz4jRqVoLY
+         0IXObqqCMaG27GM8SQ+lMbEMqJGXRbzrlPzKTwtIXrAbF/790s0JEg26QkL+acXCmxZf
+         uBf3Q2hhPTAMhWS0g01gF64TXB/01Ae3Rxb+adSS3yiBiUfetTONmt8ZR37Zgw//v+dK
+         3PVg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=P2VT87uyvqfb25YgSaqTTD5CGsFLBgXP38+aqnbEtDA=;
+        b=semAVdLBV5T+oWMvbx+VVqFvqFKXNCx1+b12S9bRkIRDq7Te/8eEPhXKHxL8A6ndO9
+         ZshzOOZOcGaGzAiwTHPt6oLQdCXJ2t+8lQsoS5elNTQ9ndQZAwXeBg2Tp7MsLm15BA8B
+         ZIEapkkTeUnjfK+5cpHd6u9LDgZCv6oKVsIgLCTLrug1UycfXBX2JUbI2fRQXhNCZ8Is
+         ImPv1djHLfEPtK7rECNBrlveSC7+/cCfIiGwYP/zVeHEN+IwUN3FC5v7k15hFfzAl78r
+         2RWSihyJQLhb8WV7/LEd3EAs5ZBks2nA9mq6PUWxh4DP+/h+TwdgQj/EaBzh5FS5emf5
+         fTcA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=se1ACLE+;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x229.google.com (mail-lj1-x229.google.com. [2a00:1450:4864:20::229])
+        by gmr-mx.google.com with ESMTPS id y16-v6si319501eds.0.2018.11.08.23.14.58
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 08 Nov 2018 23:14:58 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::229 as permitted sender) client-ip=2a00:1450:4864:20::229;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=se1ACLE+;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x229.google.com with SMTP id g26-v6so696143lja.10
+        for <wwwmake@googlegroups.com>; Thu, 08 Nov 2018 23:14:58 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=P2VT87uyvqfb25YgSaqTTD5CGsFLBgXP38+aqnbEtDA=;
+        b=se1ACLE+aRqD3KrZW0TcFLhBcQF3RE/TRFjdX8DqYAfD8+UvvAid8xsmYUX5TInhc8
+         jdVdUn9wovQI/hswVFS6AqhP+LAJQ2s6fP+UNs3AU98iuSb74qTp3G5JJ1VS0imIKWi+
+         iwpESV7FWnzfFL1cMj0nM+TwDlRV4j/3Wvgy5ikb9Z/QUZX/7RSa2oGVTDDrus8mqlmK
+         terMHthomXBgqNqZ0f97Tn/h3Ktojt4H3O/3H0Kk6LKZoBGHVqI1pBQ7tNeOhKA/+Xjs
+         hWg9bBgw/Hkp1+fseKfBvRZ/vd2G6xKpIEPdJJyBxVpfegsCTjC9OQKXXFygLk3TvnI0
+         njgg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=P2VT87uyvqfb25YgSaqTTD5CGsFLBgXP38+aqnbEtDA=;
+        b=TPxGiSoBteqEvEMySLaCcuOEOYby+TYAyikEcBXiX9qQSfNrlnaeEBIaeRjG4JfLXq
+         J5Da8PLUypL3kT6fCfz3qD7MrDq9SMmzk9qIQCsi/mRby7EJL//bWbDtX5WS6z4/hmtC
+         vuwTfOioivaoExhI1WEqAbWFxXCjQEVPDUnH1UF9Arstmdba/QH7rJn+VV0Lis8/VxA3
+         Nl8l90g9Gtjg9mYCj1fSYsCXfZwWqE50OivRV0PfOJZVFol0/ZZNAltlYxMDL6WoqkPF
+         dCo6v/9SKEIkgr17FzfdSzK5TxdbvTcyTk1RVmvoCXSjfM2TxwdqZyTnJdxXgXbwOzQm
+         jc+Q==
+X-Gm-Message-State: AGRZ1gKPf5QUQCZXb4Q7SrZsaRuzipIao5xN8C4t1d9/5ae5+lTUrB/4
+	GHbDEl92PirjBDUhd1Sb8ihLk3wFdrLVW1LAaWmV1H4e
+X-Received: by 2002:a2e:8945:: with SMTP id b5-v6mr4908741ljk.55.1541747697562;
+ Thu, 08 Nov 2018 23:14:57 -0800 (PST)
+MIME-Version: 1.0
+References: <320fd681-22f5-48c5-8d91-5d1e6c0e3d01@googlegroups.com>
+In-Reply-To: <320fd681-22f5-48c5-8d91-5d1e6c0e3d01@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 9 Nov 2018 08:14:45 +0100
+Message-ID: <CAAxEZd-nMUXrejmjgZ6-n6Gn-Kjjon1OvJ-q1-m_c_x4KHfuwg@mail.gmail.com>
+Subject: Re: [wwwmake:456] csvreader encoding options
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+    Thanks for trying the (new) csvreader library.
+
+> Is there a way to pass encoding options to csvreader? I keep getting "invalid byte sequence in UTF-8" when trying to read a CSV file.
+
+     By default all files are opened with the (file) mode set to
+'r:bom|utf-8' [1]
+
+      If you use CsvReader.open  (or Csv.open) you can pass in the
+mode as a second parameter (it works like File.open because it is
+File.open :-).
+
+      The recommendation is to (always use utf-8 internally) and
+convert your "external" source e.g.:
+
+       Csv.open( "windows.csv", "r:windows-1251:utf-8" ).read / each /
+etc.  or something
+
+        Let us know how it goes. Cheers. Prost.
+
+[1] https://github.com/csvreader/csvreader/blob/master/lib/csvreader/reader.rb#L11
+

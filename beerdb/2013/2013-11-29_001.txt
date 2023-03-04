@@ -1,0 +1,84 @@
+From 51733594112@xxx Sat Dec 20 19:01:40 +0000 2014
+X-GM-THRID: 18531483648
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,9183dd27fdcc5ed2
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.150.106 with SMTP id uh10mr16737935pab.13.1385751671695;
+        Fri, 29 Nov 2013 11:01:11 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.49.36.161 with SMTP id r1ls3825033qej.71.gmail; Fri, 29 Nov
+ 2013 11:01:11 -0800 (PST)
+X-Received: by 10.49.85.2 with SMTP id d2mr61022qez.9.1385751671544;
+        Fri, 29 Nov 2013 11:01:11 -0800 (PST)
+X-Google-Doc-Id: cfe4402d496e38e4
+X-Google-Web-Client: true
+Date: Fri, 29 Nov 2013 11:01:11 -0800 (PST)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Message-Id: <80ac9a6c-1739-4cfd-be04-f65bfb01da3e@googlegroups.com>
+In-Reply-To: <7844a5a3-f278-4f73-8f1f-f98795838e61@googlegroups.com>
+References: <7844a5a3-f278-4f73-8f1f-f98795838e61@googlegroups.com>
+Subject: Re: Error trying to create my own copy of beer.db
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_333_30933143.1385751671190"
+X-Google-Token: EPfI45QFw59f1VVzfPk0
+X-Google-IP: 193.110.28.9
+
+------=_Part_333_30933143.1385751671190
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_334_972588.1385751671190"
+
+------=_Part_334_972588.1385751671190
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Jonny Fabuliss, 
+
+   Thanks for your persistence (and not giving up). 
+
+   I see you already got the united states import working. Congratulations. 
+Sorry, the united states repo now has mostly only breweries.
+
+  Tip: For the very first time issue: 
+
+   $ beerdb setup us --include ./us-united-states --worldinclude ./world.db 
+     # -- note: you missed the us after setup
+
+For all next updates issue only up (for update e.g.)
+
+   $ beerdb up us --include ./us-united-states
+
+To add more countries clone the country repos and issue
+
+  $ beerdb up at --include ./at-austria
+  $ beerdb up de --include ./de-deutschland    
+
+and so on and you will get more beers and breweries.  Good luck. Cheers.
+
+
+------=_Part_334_972588.1385751671190
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hello Jonny Fabuliss,&nbsp;</div><div><br></div><div>=
+&nbsp; &nbsp;Thanks for your persistence (and not giving up).&nbsp;</div><d=
+iv><br></div><div>&nbsp; &nbsp;I see you already got the united states impo=
+rt working. Congratulations. Sorry, the united states repo now has mostly o=
+nly breweries.</div><div><br></div><div>&nbsp; Tip: For the very first time=
+ issue:&nbsp;</div><div><br></div><div>&nbsp; &nbsp;$ beerdb setup us --inc=
+lude ./us-united-states --worldinclude ./world.db &nbsp; &nbsp; &nbsp;# -- =
+note: you missed the us after setup</div><div><br></div><div>For all next u=
+pdates issue only up (for update e.g.)</div><div><br></div><div>&nbsp; &nbs=
+p;$ beerdb up us --include ./us-united-states</div><div><br></div><div>To a=
+dd more countries clone the country repos and issue</div><div><br></div><di=
+v>&nbsp; $ beerdb up at --include ./at-austria</div><div>&nbsp; $ beerdb up=
+ de --include ./de-deutschland &nbsp; &nbsp;</div><div><br></div><div>and s=
+o on and you will get more beers and breweries. &nbsp;Good luck. Cheers.</d=
+iv><div><br></div></div>
+------=_Part_334_972588.1385751671190--
+
+------=_Part_333_30933143.1385751671190--
+

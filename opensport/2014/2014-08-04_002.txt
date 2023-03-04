@@ -1,0 +1,176 @@
+From 1811429720064@xxx Tue Jun 16 00:16:53 +0000 2015
+X-GM-THRID: 120477188096
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cfd207d2a36fadf3
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.102.34 with SMTP id fl2mr9416264obb.16.1407161194021;
+        Mon, 04 Aug 2014 07:06:34 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.19.199 with SMTP id h7ls111156obe.32.gmail; Mon, 04 Aug
+ 2014 07:06:33 -0700 (PDT)
+X-Received: by 10.182.220.170 with SMTP id px10mr6788obc.32.1407161193411;
+        Mon, 04 Aug 2014 07:06:33 -0700 (PDT)
+X-Google-Doc-Id: 865209042e538459
+X-Google-Web-Client: true
+Date: Mon, 4 Aug 2014 07:06:32 -0700 (PDT)
+From: =?UTF-8?B?5qyn5q+F?= <nttdocomo.ouyi@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <643848a3-c618-41ba-9cb0-830b54b2774c@googlegroups.com>
+In-Reply-To: <CAAxEZd9gsDH=JXu1a944m0ywNpXEJnXyVb5o3Wyz-7+BT53O4w@mail.gmail.com>
+References: <42ae00eb-0e90-4168-a288-e8fc44645386@googlegroups.com>
+ <49ad51e9-f5e3-4178-b7bd-63a937e01289@googlegroups.com>
+ <a9cc2851-c44b-4e75-8e91-a02498a73584@googlegroups.com>
+ <CAAxEZd9Mo9TPu=NzunmJ5EOJW8PakGnXpZ1gZg1cbTpNAYUGmg@mail.gmail.com>
+ <CAAxEZd9gsDH=JXu1a944m0ywNpXEJnXyVb5o3Wyz-7+BT53O4w@mail.gmail.com>
+Subject: Re: [opensport] Re: Trying to create a mysql database instead of
+ using command tool
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_25_1351446157.1407161192294"
+X-Google-Token: EOim_p4F289iaDM5fjc0
+X-Google-IP: 124.202.191.44
+
+------=_Part_25_1351446157.1407161192294
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_26_1968510027.1407161192294"
+
+------=_Part_26_1968510027.1407161192294
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+thx, I have fix the problem by myself, but another problem is occured.
+
+It's about the LogUtils, the LogUtils I had installed is 0.6.0, in your=20
+Rakefile it use the LogUtils like this:
+
+logger =3D LogUtils::Logger.root(this will cause the rake task fail)
+
+but I read the 0.6.0 doc is=EF=BC=9A
+
+logger =3D LogUtils::Logger.new(this rake task is pass but another LogUtils=
+=20
+call in WorldDB cause the task fail)
+
+any idea about this?
+
+
+=E5=9C=A8 2014=E5=B9=B48=E6=9C=884=E6=97=A5=E6=98=9F=E6=9C=9F=E4=B8=80UTC+8=
+=E4=B8=8B=E5=8D=887=E6=97=B605=E5=88=8647=E7=A7=92=EF=BC=8CGerald Bauer=E5=
+=86=99=E9=81=93=EF=BC=9A
+>
+> Hello,=20
+>
+>   FYI: Your MySQL settings hash might look something like:=20
+>
+> DB_CONFIG =3D {=20
+>   adapter: 'mysql2'=20
+>   encoding: 'utf8'=20
+>   database:  'footballdb'=20
+>   username: 'root'=20
+>   password: 'topsecred'=20
+>   host: 127.0.0.1=20
+>   port: 3306=20
+> }=20
+>
+>   or similar.  Cheers.=20
+>
+
+------=_Part_26_1968510027.1407161192294
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">thx, I have fix the problem by myself, but another problem=
+ is occured.<div><br></div><div>It's about the LogUtils, the LogUtils I had=
+ installed is 0.6.0, in your Rakefile it use the LogUtils like this:</div><=
+div><br></div><div><span class=3D"n" style=3D"box-sizing: border-box; color=
+: rgb(51, 51, 51); font-family: Consolas, 'Liberation Mono', Menlo, Courier=
+, monospace; font-size: 12px; line-height: 18px; white-space: pre;">logger<=
+/span><span style=3D"color: rgb(51, 51, 51); font-family: Consolas, 'Libera=
+tion Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; =
+white-space: pre;"> </span><span class=3D"o" style=3D"box-sizing: border-bo=
+x; font-weight: bold; color: rgb(51, 51, 51); font-family: Consolas, 'Liber=
+ation Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px;=
+ white-space: pre;">=3D</span><span style=3D"color: rgb(51, 51, 51); font-f=
+amily: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 1=
+2px; line-height: 18px; white-space: pre;"> </span><span class=3D"no" style=
+=3D"box-sizing: border-box; color: teal; font-family: Consolas, 'Liberation=
+ Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; whit=
+e-space: pre;">LogUtils</span><span class=3D"o" style=3D"box-sizing: border=
+-box; font-weight: bold; color: rgb(51, 51, 51); font-family: Consolas, 'Li=
+beration Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18=
+px; white-space: pre;">::</span><span class=3D"no" style=3D"box-sizing: bor=
+der-box; color: teal; font-family: Consolas, 'Liberation Mono', Menlo, Cour=
+ier, monospace; font-size: 12px; line-height: 18px; white-space: pre;">Logg=
+er</span><span class=3D"o" style=3D"box-sizing: border-box; font-weight: bo=
+ld; color: rgb(51, 51, 51); font-family: Consolas, 'Liberation Mono', Menlo=
+, Courier, monospace; font-size: 12px; line-height: 18px; white-space: pre;=
+">.</span><span class=3D"n" style=3D"box-sizing: border-box; color: rgb(51,=
+ 51, 51); font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospa=
+ce; font-size: 12px; line-height: 18px; white-space: pre;">root(this will c=
+ause the rake task fail)</span><br></div><div><span class=3D"n" style=3D"bo=
+x-sizing: border-box; color: rgb(51, 51, 51); font-family: Consolas, 'Liber=
+ation Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px;=
+ white-space: pre;"><br></span></div><div><span class=3D"n" style=3D"box-si=
+zing: border-box; color: rgb(51, 51, 51); font-family: Consolas, 'Liberatio=
+n Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; whi=
+te-space: pre;">but I read the 0.6.0 doc is=EF=BC=9A</span></div><div><span=
+ class=3D"n" style=3D"box-sizing: border-box; color: rgb(51, 51, 51); font-=
+family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: =
+12px; line-height: 18px; white-space: pre;"><br></span></div><div><span cla=
+ss=3D"n" style=3D"box-sizing: border-box; color: rgb(51, 51, 51); font-fami=
+ly: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px=
+; line-height: 18px; white-space: pre;">logger</span><span style=3D"color: =
+rgb(51, 51, 51); font-family: Consolas, 'Liberation Mono', Menlo, Courier, =
+monospace; font-size: 12px; line-height: 18px; white-space: pre;"> </span><=
+span class=3D"o" style=3D"box-sizing: border-box; font-weight: bold; color:=
+ rgb(51, 51, 51); font-family: Consolas, 'Liberation Mono', Menlo, Courier,=
+ monospace; font-size: 12px; line-height: 18px; white-space: pre;">=3D</spa=
+n><span style=3D"color: rgb(51, 51, 51); font-family: Consolas, 'Liberation=
+ Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 18px; whit=
+e-space: pre;"> </span><span class=3D"no" style=3D"box-sizing: border-box; =
+color: teal; font-family: Consolas, 'Liberation Mono', Menlo, Courier, mono=
+space; font-size: 12px; line-height: 18px; white-space: pre;">LogUtils</spa=
+n><span class=3D"o" style=3D"box-sizing: border-box; font-weight: bold; col=
+or: rgb(51, 51, 51); font-family: Consolas, 'Liberation Mono', Menlo, Couri=
+er, monospace; font-size: 12px; line-height: 18px; white-space: pre;">::</s=
+pan><span class=3D"no" style=3D"box-sizing: border-box; color: teal; font-f=
+amily: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 1=
+2px; line-height: 18px; white-space: pre;">Logger</span><span class=3D"o" s=
+tyle=3D"box-sizing: border-box; font-weight: bold; color: rgb(51, 51, 51); =
+font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-s=
+ize: 12px; line-height: 18px; white-space: pre;">.new</span><span style=3D"=
+color: rgb(51, 51, 51); font-family: Consolas, 'Liberation Mono', Menlo, Co=
+urier, monospace; font-size: 12px; line-height: 18px; white-space: pre;">(t=
+his rake task is pass but another LogUtils call in WorldDB cause the task f=
+ail)</span></div><div><span style=3D"color: rgb(51, 51, 51); font-family: C=
+onsolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; lin=
+e-height: 18px; white-space: pre;"><br></span></div><div><span style=3D"col=
+or: rgb(51, 51, 51); font-family: Consolas, 'Liberation Mono', Menlo, Couri=
+er, monospace; font-size: 12px; line-height: 18px; white-space: pre;">any i=
+dea about this?</span></div><div><font color=3D"#333333" face=3D"Consolas, =
+Liberation Mono, Menlo, Courier, monospace"><span style=3D"font-size: 12px;=
+ line-height: 18px; white-space: pre;"><b><br></b></span></font><br>=E5=9C=
+=A8 2014=E5=B9=B48=E6=9C=884=E6=97=A5=E6=98=9F=E6=9C=9F=E4=B8=80UTC+8=E4=B8=
+=8B=E5=8D=887=E6=97=B605=E5=88=8647=E7=A7=92=EF=BC=8CGerald Bauer=E5=86=99=
+=E9=81=93=EF=BC=9A<blockquote class=3D"gmail_quote" style=3D"margin: 0;marg=
+in-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; FYI: Your MySQL settings hash might look something like:
+<br>
+<br>DB_CONFIG =3D {
+<br>&nbsp; adapter: 'mysql2'
+<br>&nbsp; encoding: 'utf8'
+<br>&nbsp; database: &nbsp;'footballdb'
+<br>&nbsp; username: 'root'
+<br>&nbsp; password: 'topsecred'
+<br>&nbsp; host: 127.0.0.1
+<br>&nbsp; port: 3306
+<br>}
+<br>
+<br>&nbsp; or similar. &nbsp;Cheers.
+<br></blockquote></div></div>
+------=_Part_26_1968510027.1407161192294--
+
+------=_Part_25_1351446157.1407161192294--
+

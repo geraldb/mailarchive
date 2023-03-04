@@ -1,0 +1,53 @@
+From 6182859367318028288@xxx Fri Aug 14 13:32:07 +0000 2015
+X-GM-THRID: 6182858396292612096
+X-Received: by 10.107.168.94 with SMTP id r91mr18663943ioe.4.1439559126868;
+        Fri, 14 Aug 2015 06:32:06 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.20.175 with SMTP id 44ls1307983qgj.92.gmail; Fri, 14 Aug
+ 2015 06:32:06 -0700 (PDT)
+X-Received: by 10.129.109.12 with SMTP id i12mr40358134ywc.29.1439559126561;
+        Fri, 14 Aug 2015 06:32:06 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22c.google.com (mail-ig0-x22c.google.com. [2607:f8b0:4001:c05::22c])
+        by gmr-mx.google.com with ESMTPS id 4si154908igl.1.2015.08.14.06.32.06
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 14 Aug 2015 06:32:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22c as permitted sender) client-ip=2607:f8b0:4001:c05::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22c.google.com with SMTP id i7so11835797igu.0
+        for <openmundi@googlegroups.com>; Fri, 14 Aug 2015 06:32:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=Ob5S2TQab3jI77zCjTM8bd+iW9o4u10ycBLNPr+mVM8=;
+        b=Ye8idTV042JGKAr5g/yk1PH6S8qiCkGxHQdL+dW1kYRyRCl+EX8q6uyoa6xBT9wZuu
+         TCy/mx3gFgT6xfAnODBytD6zglOPw4FbG/3oHbv3qSKJrXi2CWvF4bFCQDybuukqu0HI
+         vrX2Jp7e8G+Lq/3wPUn7dOBNrKDPdmXuhEAfvIWpUVCdzZPLIsEWjlHQ7LpVkPiLMFzx
+         KyRmm7e0j0X6Yw0FPWsiix14uON4tl4XUDs8R5nFJc8y6W9TxsiG5w+rRKDnVXtj47mr
+         Vluzc/ZDt4pDmy2AgjTuRULSfcO9mG7PrtqzilEbsnitxuZfHYyGBdevur5yj3x3lBWD
+         Q2gA==
+MIME-Version: 1.0
+X-Received: by 10.50.138.73 with SMTP id qo9mr2481052igb.64.1439559126408;
+ Fri, 14 Aug 2015 06:32:06 -0700 (PDT)
+Received: by 10.107.15.196 with HTTP; Fri, 14 Aug 2015 06:32:06 -0700 (PDT)
+In-Reply-To: <d2cb6f58-e1cd-45d2-8583-36f1484188eb@googlegroups.com>
+References: <d2cb6f58-e1cd-45d2-8583-36f1484188eb@googlegroups.com>
+Date: Fri, 14 Aug 2015 15:32:06 +0200
+Message-ID: <CAAxEZd-vKN29rkgGSRXs7HraBb53vGnZkPRCakSaz5_pgN-8Hg@mail.gmail.com>
+Subject: Re: [openmundi] Wrong link to Tools on "How To Build Your Own Copy"
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Victor DD <victorddesigner@gmail.com>
+Cc: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Good catch. Thanks. I've corrected the link/page [1]. Cheers.
+
+[1] github.com/openmundi/openmundi.github.io/blob/master/build.md
+

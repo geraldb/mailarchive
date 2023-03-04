@@ -1,0 +1,52 @@
+From 6590763981902708736@xxx Fri Aug 17 18:50:20 +0000 2018
+X-GM-THRID: 6590763985022222336
+X-Received: by 2002:aca:ef56:: with SMTP id n83-v6mr19696399oih.59.1534531820629;
+        Fri, 17 Aug 2018 11:50:20 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:aca:1219:: with SMTP id 25-v6ls4601662ois.12.gmail; Fri, 17
+ Aug 2018 11:50:20 -0700 (PDT)
+X-Received: by 2002:aca:56d4:: with SMTP id k203-v6mr20931442oib.16.1534531820074;
+        Fri, 17 Aug 2018 11:50:20 -0700 (PDT)
+Received: by 2002:aca:cdc9:0:0:0:0:0 with SMTP id d192-v6msoig;
+        Fri, 17 Aug 2018 10:37:24 -0700 (PDT)
+X-Google-Smtp-Source: AA+uWPzRXA4NRTASbUumffBTA4tVveOdWKeRIMQpdLMIDhumH8ueLPq4QbJ69wKuyWnTTc0w/jbXIo7I7A==
+X-Received: by 2002:aca:c6ca:: with SMTP id w193-v6mr913527oif.1.1534527443602;
+        Fri, 17 Aug 2018 10:37:23 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Fri, 17 Aug 2018 10:37:23 -0700 (PDT)
+From: viresh16118@iiitd.ac.in
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <1d9371fd-1f10-45ef-97ac-cae61d4f5fce@googlegroups.com>
+Subject: jekyll-planet: Adding a link to original url
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_932_318416691.1534527443412"
+X-Google-Token: ENOP3NsFtRqxLOigbYU0
+X-Google-IP: 2405:204:1384:dfdb:542a:ef72:c37e:2470
+
+------=_Part_932_318416691.1534527443412
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_933_242521755.1534527443412"
+
+------=_Part_933_242521755.1534527443412
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+While making a blog aggregator, I'd like to be able to add in a reference 
+to the original blog post, (especially to give due credit to the original 
+author).
+This doesn't appear in the front-matter by default, any specific reasons to 
+omit this ?
+
+(PS: I'd be happy to send in a PR for this addition if it's not omitted for 
+a reason)
+
+------=_Part_933_242521755.1534527443412
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">While making a blog aggregator, I&#39;d like to be able to add in a reference to the original blog post, (especially to give due credit to the original author).<br>This doesn&#39;t appear in the front-matter by default, any specific reasons to omit this ?<br><br>(PS: I&#39;d be happy to send in a PR for this addition if it&#39;s not omitted for a reason)</div>
+------=_Part_933_242521755.1534527443412--
+
+------=_Part_932_318416691.1534527443412--
+

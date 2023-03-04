@@ -1,0 +1,142 @@
+From 1997706100736@xxx Tue Jun 16 00:16:51 +0000 2015
+X-GM-THRID: 1986179104768
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,bf62143d621330b6
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.43.1.133 with SMTP id nq5mr13808667icb.21.1407749729416;
+        Mon, 11 Aug 2014 02:35:29 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.105.131 with SMTP id gm3ls392527obb.18.gmail; Mon, 11 Aug
+ 2014 02:35:28 -0700 (PDT)
+X-Received: by 10.182.102.168 with SMTP id fp8mr6607obb.28.1407749728814;
+        Mon, 11 Aug 2014 02:35:28 -0700 (PDT)
+X-Google-Doc-Id: 4c7d3840fc1e920b
+X-Google-Web-Client: true
+Date: Mon, 11 Aug 2014 02:35:27 -0700 (PDT)
+From: Deegii <pdelgermurun@gmail.com>
+To: opensport@googlegroups.com
+Cc: pdelgermurun@gmail.com
+Message-Id: <38605627-a6df-4c91-a663-f27b5cb7e65b@googlegroups.com>
+In-Reply-To: <CAAxEZd-jAYrpKDJ=62sx3TkDYX_=U4fnbonJm_S8Nr52-kh1Xw@mail.gmail.com>
+References: <CAAxEZd-jAYrpKDJ=62sx3TkDYX_=U4fnbonJm_S8Nr52-kh1Xw@mail.gmail.com>
+Subject: Re: [opensport] Is there any schema/structure explanation?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_646_890699852.1407749728039"
+X-Google-Token: EN-cop8FVeBAloZEfng0
+X-Google-IP: 103.26.193.26
+
+------=_Part_646_890699852.1407749728039
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_647_926694012.1407749728044"
+
+------=_Part_647_926694012.1407749728044
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you very much.
+
+
+
+On Monday, August 11, 2014 2:47:05 PM UTC+8, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    No worries. 
+>
+> > league.club 
+>
+>    It's a boolean flag if the team is a club (e.g. Manchester United) 
+> if true or a national (selection) team (e.g.  Italy) if false  - it's 
+> basically a reverse copy of the national flag and, thus, redundant. 
+>
+> > city.popm (I guess population in million but data doesn't seem so) 
+>
+>    This will change into its own table - it is the metropolitan 
+> population  and not the city proper population    e.g.  New York might 
+> have 10 m city proper and the metropolitan pop (popm( might have 15m 
+> or more) 
+>
+> > region.nuts 
+>
+>     It's the eurostats code - kind of european iso region code 
+>
+> > country.net/motor/fifa 
+>
+>    net - is the tld  - the country domain e.g.  .at ,.jp etc. 
+>    fifa  - is the fifa country code 
+>    motor  - is the motor vehicle licence country code e.g.  A - for 
+> Austria, D- Germany, etc. 
+>
+> > place.kind - What kind of choices do have totally? 
+>
+>    Best to look in the three country/region/city models. The should 
+> have all a place_kind method e.g. 
+>
+> def place_kind 
+>   if is_metro? 
+>     'MTRO' 
+>   elsif is_district? 
+>     'DIST' 
+>    else 
+>     'CITY' 
+>    end 
+> end 
+>
+>   Hope that helps. All the best, Keep it up. Cheers.example. 
+>
+
+------=_Part_647_926694012.1407749728044
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Thank you very much.<div><br></div><div><br><br>On Monday, August 11, 2014 2:47:05 PM UTC+8, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;No worries.
+<br>
+<br>&gt; league.club
+<br>
+<br>&nbsp; &nbsp;It's a boolean flag if the team is a club (e.g. Manchester United)
+<br>if true or a national (selection) team (e.g. &nbsp;Italy) if false &nbsp;- it's
+<br>basically a reverse copy of the national flag and, thus, redundant.
+<br>
+<br>&gt; city.popm (I guess population in million but data doesn't seem so)
+<br>
+<br>&nbsp; &nbsp;This will change into its own table - it is the metropolitan
+<br>population &nbsp;and not the city proper population &nbsp; &nbsp;e.g. &nbsp;New York might
+<br>have 10 m city proper and the metropolitan pop (popm( might have 15m
+<br>or more)
+<br>
+<br>&gt; region.nuts
+<br>
+<br>&nbsp; &nbsp; It's the eurostats code - kind of european iso region code
+<br>
+<br>&gt; <a href="http://country.net/motor/fifa" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fcountry.net%2Fmotor%2Ffifa\46sa\75D\46sntz\0751\46usg\75AFQjCNHiIKoRDUhK6VwbNh8G0sIDx7vx-w';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fcountry.net%2Fmotor%2Ffifa\46sa\75D\46sntz\0751\46usg\75AFQjCNHiIKoRDUhK6VwbNh8G0sIDx7vx-w';return true;">country.net/motor/fifa</a>
+<br>
+<br>&nbsp; &nbsp;net - is the tld &nbsp;- the country domain e.g. &nbsp;.at ,.jp etc.
+<br>&nbsp; &nbsp;fifa &nbsp;- is the fifa country code
+<br>&nbsp; &nbsp;motor &nbsp;- is the motor vehicle licence country code e.g. &nbsp;A - for
+<br>Austria, D- Germany, etc.
+<br>
+<br>&gt; place.kind - What kind of choices do have totally?
+<br>
+<br>&nbsp; &nbsp;Best to look in the three country/region/city models. The should
+<br>have all a place_kind method e.g.
+<br>
+<br>def place_kind
+<br>&nbsp; if is_metro?
+<br>&nbsp; &nbsp; 'MTRO'
+<br>&nbsp; elsif is_district?
+<br>&nbsp; &nbsp; 'DIST'
+<br>&nbsp; &nbsp;else
+<br>&nbsp; &nbsp; 'CITY'
+<br>&nbsp; &nbsp;end
+<br>end
+<br>
+<br>&nbsp; Hope that helps. All the best, Keep it up. Cheers.example.
+<br></blockquote></div></div>
+------=_Part_647_926694012.1407749728044--
+
+------=_Part_646_890699852.1407749728039--
+

@@ -1,0 +1,64 @@
+From 1955078340608@xxx Tue Jun 16 00:16:50 +0000 2015
+X-GM-THRID: 1954653667328
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,28e41e751bb6f799,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.188.136 with SMTP id ga8mr95290lbc.8.1407660435451;
+        Sun, 10 Aug 2014 01:47:15 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.94.134 with SMTP id dc6ls350931wib.28.canary; Sun, 10 Aug
+ 2014 01:47:14 -0700 (PDT)
+X-Received: by 10.180.104.163 with SMTP id gf3mr1114659wib.1.1407660434926;
+        Sun, 10 Aug 2014 01:47:14 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x233.google.com (mail-wg0-x233.google.com [2a00:1450:400c:c00::233])
+        by gmr-mx.google.com with ESMTPS id fg8si775287wic.1.2014.08.10.01.47.14
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 10 Aug 2014 01:47:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) client-ip=2a00:1450:400c:c00::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f51.google.com with SMTP id b13so7259738wgh.10
+        for <opensport@googlegroups.com>; Sun, 10 Aug 2014 01:47:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:cc:content-type;
+        bh=p3eEuiEWPlP5lKjx8vnPEEYArDZ0PLtrWV0FzHQ7C6I=;
+        b=T/IGo9srXjjcIk4sy/F82dd33SRwhvx83GPOw/IxzfAA9nHf6MasIMEubLkIqJCBgE
+         1uMTEOi/XYz0K163vgeiVxUNWltCh3dyLRS9psfgssKocNWwXZsbE0tVggPsaosGGCLW
+         IbI2sm6hbCZWMFccJNfapSLehIquni+waHHTQtPmzqpvHqvztpPTkUvU2zMVLYUGmZme
+         xu1qpvSwxIOyOxuxSR584Bq4ver3/rT+5J7RUGxxSR7XBOQ0IE3f9tBTDZBPkRAGoXKi
+         6x5iEjo2df2tV4cUjBPdWVjXvRr6yhFmKvD89VKnJimG3eYD/gna3rJtyS/bJgamA2zB
+         qJag==
+MIME-Version: 1.0
+X-Received: by 10.194.20.230 with SMTP id q6mr45228828wje.43.1407660434856;
+ Sun, 10 Aug 2014 01:47:14 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Sun, 10 Aug 2014 01:47:14 -0700 (PDT)
+Date: Sun, 10 Aug 2014 10:47:14 +0200
+Message-ID: <CAAxEZd_9TSBpAn-VK2FT2x2p_tV+oAXHF9HiG9yTo36=XS_FkA@mail.gmail.com>
+Subject: Preparing /fr-france - Ligue 1 n Ligue 2 for build (and JSON HTTP API upload)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Cc: d4vidalvarez@gmail.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   I'm preparing the Ligue 1 n Ligue 2 for the build and if all works
+out for the JSON HTTP API upload later today.
+
+
+  Note, I changed the 2014-2015 folder to 2014-15 to follow the
+convention of all other repos. You might need to update your script,
+sorry.
+
+  Some minor changes -  teams.txt changed to the "new" clubs.txt name.
+
+  Plus added the /setups folder with two setups, that is, all and clubs.
+
+  Cheers.
+

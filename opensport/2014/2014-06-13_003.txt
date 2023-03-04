@@ -1,0 +1,75 @@
+From 1215862669312@xxx Tue Jun 16 00:16:58 +0000 2015
+X-GM-THRID: 1178432700416
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,1b96976d0c3d8f8f
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.14.5 with SMTP id l5mr171738lbc.6.1402651179018;
+        Fri, 13 Jun 2014 02:19:39 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.109.43 with SMTP id hp11ls20253wib.1.canary; Fri, 13 Jun
+ 2014 02:19:38 -0700 (PDT)
+X-Received: by 10.194.200.133 with SMTP id js5mr171341wjc.1.1402651178602;
+        Fri, 13 Jun 2014 02:19:38 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x233.google.com (mail-wi0-x233.google.com [2a00:1450:400c:c05::233])
+        by gmr-mx.google.com with ESMTPS id e12si82145wiv.1.2014.06.13.02.19.38
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 13 Jun 2014 02:19:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::233 as permitted sender) client-ip=2a00:1450:400c:c05::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f179.google.com with SMTP id cc10so505705wib.6
+        for <opensport@googlegroups.com>; Fri, 13 Jun 2014 02:19:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=9h999wiS6RvDAynagJBnoscWvjT9HPwXA6nnEzJo0Kw=;
+        b=o9eRH043Lcc8GAnEKnzcS2rS6KKBlUfmq790AOxFd8rE5CbX8+tgz8CS3k1CvXxmup
+         GSBoug34IX7r0O8ZUTv0BP1oLE1+EGBw258rmBnC8zG7+Xu6qZevEOgqii3E/xEtXztG
+         3EqVMrt32qxscmpaQdyausMm0XF1a82F3BG8pBxTLCCZin8yLlRPnN6w14Eq86rZKoC/
+         5m7PqBHRHB/HgdOBTbi4iIZ8AXV0S3fb3j76WVuDcB5SN0YV3DMSa58jO5m7hWqCtiNm
+         bqJG21WTwmpAxIUTqy5Sm5qWEfsgs1UrE86NqHnsuZHoDsMbTOsHEkdfFrVevpOkQQ5j
+         jTpQ==
+MIME-Version: 1.0
+X-Received: by 10.194.5.103 with SMTP id r7mr2320516wjr.41.1402651178473; Fri,
+ 13 Jun 2014 02:19:38 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Fri, 13 Jun 2014 02:19:38 -0700 (PDT)
+In-Reply-To: <cbcfe01f-3877-4680-996c-5cd3ceaaba8d@googlegroups.com>
+References: <CAAxEZd_8JLoxdXbzF0oWnR76wBCcbfa_G1d_g=v8Ba0ytbhhCA@mail.gmail.com>
+	<cbcfe01f-3877-4680-996c-5cd3ceaaba8d@googlegroups.com>
+Date: Fri, 13 Jun 2014 11:19:38 +0200
+Message-ID: <CAAxEZd9wxm8fk5m_sV+Kk5sCxM=zThqzf7mvaGgDdSHcmpXQ2A@mail.gmail.com>
+Subject: Re: [opensport] Re: New - Frequently Asked Questions and Answers
+ (FAQs) Page - openfootball.github.io/questions.html
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+> Is it possible for me, to update the score in your database?
+> If it's possible, can you explain me how can I have to do?
+
+  It works like a wiki (sort of). You update (e.g. add the results) to
+the plain text files in the repos.
+
+  For example,  world-cup/2014--brazil/cup.txt  - before:
+
+(1) Thu Jun/12 17:00   Brazil - Croatia
+
+  After:
+
+(1) Thu Jun/12 17:00   Brazil 3-1 Croatia
+
+  That's it.
+
+   If you're member you can edit/update the files without pull request
+(in your browser via GitHub or your local copy and then push changes
+upstream etc.).   If you're not yet a member you have to send a pull
+request.  Cheers.
+

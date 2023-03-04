@@ -1,0 +1,87 @@
+From 565487599616@xxx Tue Jun 16 00:17:12 +0000 2015
+X-GM-THRID: 566485843968
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,340fbfdd169c6c9b,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.89.10 with SMTP id bk10mr1004561lbb.5.1398945833456;
+        Thu, 01 May 2014 05:03:53 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.94.69 with SMTP id da5ls948955wib.18.canary; Thu, 01 May
+ 2014 05:03:53 -0700 (PDT)
+X-Received: by 10.180.182.17 with SMTP id ea17mr184389wic.3.1398945833003;
+        Thu, 01 May 2014 05:03:53 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x236.google.com (mail-we0-x236.google.com [2a00:1450:400c:c03::236])
+        by gmr-mx.google.com with ESMTPS id ng3si74321wic.0.2014.05.01.05.03.52
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 01 May 2014 05:03:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) client-ip=2a00:1450:400c:c03::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f182.google.com with SMTP id u57so2969883wes.41
+        for <opensport@googlegroups.com>; Thu, 01 May 2014 05:03:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=SaEqndOphPwKvc6v1ELvkGq8fKhvUvcZn1U1VmMwVzo=;
+        b=K4ngShY2IQk1NCAXFaTrl41GIcJFDVs9AeNUYhMX2z3FQywPlVkeZoGdQs8pffPnVz
+         A4MxGyknW3Hj6P7OjgHJPC1LOkekSyHnd5pJ75szYIJSoPEgJ8BGpNf4LQCImQnTPD3r
+         e2/qW1sRniOu3y/dnla9Xv2P5DB8gFnrbOH4idlVSoklUxcAEsXYWTuhkAfGfxmHYF0G
+         GfYcqqlsiOjZTnn1d3yITwSDa0t25ugvZeBfq+lEPbjyvfH0w6RJ5ff8M5j437+kjkOW
+         L778l3h4JGHfR2d9f3B4PT8S/gyOzdF6zzkg8eVijARRJL1nfRNLsdAB1PbCoYsqToJ8
+         fSAA==
+MIME-Version: 1.0
+X-Received: by 10.180.8.40 with SMTP id o8mr1941078wia.25.1398945832915; Thu,
+ 01 May 2014 05:03:52 -0700 (PDT)
+Received: by 10.216.189.196 with HTTP; Thu, 1 May 2014 05:03:52 -0700 (PDT)
+Date: Thu, 1 May 2014 14:03:52 +0200
+Message-ID: <CAAxEZd9zHy=AFegvg7JAq4ecTiEoGOtSYg+t+E8tvJvn45Ea4A@mail.gmail.com>
+Subject: Slide Deck - Using Open Football Data - Get Ready for the World Cup
+ in Brazil 2014 w/ JavaScript
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI:  If anyone is interested the slide deck [1] (and an all-in-one
+page version)[2] for yesterday's Vienna.js talk titled "Using Open
+Football Data - Get Ready for the World Cup in Brazil 2014 w/
+JavaScript".
+
+   The agenda includes:
+
+  - Part I: Basics
+
+    - World Cup in Brazil 2014 - The World's Biggest (Sport) Event
+    - Let's Use an HTTP JSON API
+    - What's `football.db?`
+    - What's Open Data? - Terms of Use
+        - Public Domain. No Rights Reserved. vs. =C2=A9 FIFA 2014. All
+Rights Reserved.
+    - What's Structured Data?
+        - Ex. FIFA - Free-Form Text vs. Structured Data
+        - Ex. Wikipedia - Free-Form Text vs. Structured Data
+        - Football Match Schedule Mini Language - New Structured Data
+Format Example
+
+  - Part II: Code, Code, Code
+
+    - Matchday Widget Example - `footballdb.widget.js` - v1.0
+    - Matchday Widget Example - `footballdb.widget.js` - v2.0
+    - Web Components Machinery - New Web Standard Building Blocks
+    - Matchday Widget Example - `<football-js>` - v3.0
+
+
+   Questions or comments? As always sent them along.  Cheers.
+
+[1] slideshow-s9.github.io/open_data_world_cup_with_js.html
+[2] github.com/openfootball/openfootball.github.io/blob/master/talks/open_d=
+ata_world_cup_with_js.md
+

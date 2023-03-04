@@ -1,0 +1,66 @@
+From 2278575570944@xxx Tue Jun 16 00:16:45 +0000 2015
+X-GM-THRID: 2230893674496
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,3f65f5bbbb46b14d
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.19.42 with SMTP id b10mr2984901wie.0.1416674331492;
+        Sat, 22 Nov 2014 08:38:51 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.42.137 with SMTP id o9ls249653lal.17.gmail; Sat, 22 Nov
+ 2014 08:38:50 -0800 (PST)
+X-Received: by 10.152.26.72 with SMTP id j8mr3535062lag.3.1416674330561;
+        Sat, 22 Nov 2014 08:38:50 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22e.google.com (mail-wg0-x22e.google.com. [2a00:1450:400c:c00::22e])
+        by gmr-mx.google.com with ESMTPS id ed6si138880wib.3.2014.11.22.08.38.50
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 22 Nov 2014 08:38:50 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) client-ip=2a00:1450:400c:c00::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f46.google.com with SMTP id x12so9244355wgg.5
+        for <opensport@googlegroups.com>; Sat, 22 Nov 2014 08:38:50 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=OnxK7YVRSDSvLRrzXLgvK59prttqa8kKGuVLqyiCJks=;
+        b=bbwe7FO1Vb1d7eSgbnFRZ+U+jjEgPdlQCK07N2s2uNTd8YMVfa5R8Slz6YRnPBdMir
+         uiFdCGGc/O2vPsRDyyVPUIC2pFwaoBavJxVmj44NGVigWFgVbboWTH4hKRc27rBZG9JL
+         QfOVPN0YaCrS1idxsbufXIEFVikB/vjfLeMTkj8Xbvr1Q8ySF2c8iU4Hmb67KbNSNtjK
+         V2JyG+bpkgGaXa7SFtyuG+63KiSamm3/1KJN9sqch30XvM0sY3RQSqNcKkqYg6d5GkSf
+         TuvqqlvnjBOGZNKo4yqR0M+fYzM0LOzNx3KHKwy4GWw4x6p5WFHtTtp0gZ6ye39MJcyb
+         Q68g==
+MIME-Version: 1.0
+X-Received: by 10.194.58.8 with SMTP id m8mr18639875wjq.43.1416674330451; Sat,
+ 22 Nov 2014 08:38:50 -0800 (PST)
+Received: by 10.216.205.135 with HTTP; Sat, 22 Nov 2014 08:38:50 -0800 (PST)
+In-Reply-To: <CAAxEZd9rQ5121fGQiCZLqxFwhtvtfViwgvymOEitQy5gWcH=jg@mail.gmail.com>
+References: <6fe987ba-3c67-4076-b067-937c34e402e8@googlegroups.com>
+	<CAAxEZd9rQ5121fGQiCZLqxFwhtvtfViwgvymOEitQy5gWcH=jg@mail.gmail.com>
+Date: Sat, 22 Nov 2014 17:38:50 +0100
+Message-ID: <CAAxEZd9X8W=gucQd-soJPw__TRUXfWhXZo7kTcLAUMuQoP7baw@mail.gmail.com>
+Subject: Re: [opensport] Getting an error "no implicit conversion of nil into
+ String" importing data
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Sorry for the long wait. I tried the build this weekend e.g.
+
+$ rake build DATA=es
+
+   And it works again (as advertised). To fix the broken build please
+update the sportdb gem to the latest version  (v1.9.10+) e.g. issue
+
+$ gem install sportdb
+
+  Let us know if it works. Cheers.
+

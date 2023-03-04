@@ -1,0 +1,74 @@
+From 6567336718263910400@xxx Fri Jun 15 15:40:35 +0000 2018
+X-GM-THRID: 6567336719448801280
+X-Received: by 2002:a5b:186:: with SMTP id r6-v6mr581595ybl.1.1529077235012;
+        Fri, 15 Jun 2018 08:40:35 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a81:304b:: with SMTP id w72-v6ls1478567yww.37.gmail; Fri, 15
+ Jun 2018 08:40:34 -0700 (PDT)
+X-Received: by 2002:a81:5fc1:: with SMTP id t184-v6mr600251ywb.96.1529077234383;
+        Fri, 15 Jun 2018 08:40:34 -0700 (PDT)
+Received: by 2002:a81:5703:0:0:0:0:0 with SMTP id l3-v6msywb;
+        Fri, 15 Jun 2018 07:58:44 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKKO8ezKZcLaJT445F3nyT9tR1u9TuJSyew+mLo/oO+9/KCuSlzak8IR7/XaGyiIuKvWPsUpX/iBDA==
+X-Received: by 2002:a0d:dd09:: with SMTP id g9-v6mr105861ywe.6.1529074723590;
+        Fri, 15 Jun 2018 07:58:43 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Fri, 15 Jun 2018 07:58:43 -0700 (PDT)
+From: Bozzetti Giovanni <lirasoft.alice.it@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <50e24cb0-3186-4020-be69-cd1535aa0414@googlegroups.com>
+Subject: I DON'T UNDERSTAND SENSE OF ALL
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_7883_111394360.1529074723431"
+X-Google-Token: EKOoj9kFSI6vur5XIy40
+X-Google-IP: 2.228.6.145
+
+------=_Part_7883_111394360.1529074723431
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7884_1329267148.1529074723431"
+
+------=_Part_7884_1329267148.1529074723431
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I am skilled senior c# programmer. Now i am preparing a football real time 
+program in c#
+i am interested to query json of italian serie a league.
+How to ? not programatically. That i know. But ... ? i would to know which 
+url i must download to receive json of matches played of 2017-18 season and 
+future 2018-19 where will be ready to query. 
+Now i wrote a code like:
+ using (var webClient = new System.Net.WebClient())
+            {
+                var json = 
+webClient.DownloadString("http://footballdb.herokuapp.com/api/event/");
+                // Now parse with JSON.Net
+            }
+Sure, the url isn't right. What's the correct url to query programatically 
+to accomplish my request ?
+
+Thx
+
+------=_Part_7884_1329267148.1529074723431
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I am skilled senior c# programmer. Now i am preparing a fo=
+otball real time program in c#<div>i am interested to query json of italian=
+ serie a league.</div><div>How to ? not programatically. That i know. But .=
+.. ? i would to know which url i must download to receive json of matches p=
+layed of 2017-18 season and future 2018-19 where will be ready to query.=C2=
+=A0</div><div>Now i wrote a code like:</div><div><div>=C2=A0using (var webC=
+lient =3D new System.Net.WebClient())</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 {</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 var json =3D webClient.DownloadString(&quot;http://footballdb.herok=
+uapp.com/api/event/&quot;);</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 // Now parse with JSON.Net</div><div>=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 }</div></div><div>Sure, the url isn&#39;t right. W=
+hat&#39;s the correct url to query programatically to accomplish my request=
+ ?</div><div><br></div><div>Thx</div></div>
+------=_Part_7884_1329267148.1529074723431--
+
+------=_Part_7883_111394360.1529074723431--
+

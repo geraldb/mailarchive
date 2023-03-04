@@ -1,0 +1,84 @@
+From 1691928756224@xxx Tue Jun 16 00:16:53 +0000 2015
+X-GM-THRID: 1691137081344
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,74232545a77abc78,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.135.169 with SMTP id pt9mr200218lbb.16.1406027200636;
+        Tue, 22 Jul 2014 04:06:40 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.199.180 with SMTP id jl20ls560549wic.6.gmail; Tue, 22 Jul
+ 2014 04:06:40 -0700 (PDT)
+X-Received: by 10.194.6.138 with SMTP id b10mr1911810wja.0.1406027200084;
+        Tue, 22 Jul 2014 04:06:40 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22f.google.com (mail-wg0-x22f.google.com [2a00:1450:400c:c00::22f])
+        by gmr-mx.google.com with ESMTPS id r19si888521wik.0.2014.07.22.04.06.40
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 22 Jul 2014 04:06:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22f as permitted sender) client-ip=2a00:1450:400c:c00::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f47.google.com with SMTP id b13so7621487wgh.18
+        for <opensport@googlegroups.com>; Tue, 22 Jul 2014 04:06:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=QCNLiTA/XDpzAoDNUG30sUB6CWjyy2ihXfA2UelFvbo=;
+        b=OeOucrzEQnx26XsZ8olMOd3C6p+6mh5jJc9YFLDkuh5AF+I41nxcHXN1/T7kTVqj/8
+         U/HgxErFPtyBDhBOBbYPeBXW+Bpz8eQRJ9tOT+538TLu1slbshHrbZBGUqvOPVKk/Ixh
+         VttI1d5i2yyGOn+IhftlqeWCPL2SK0oIT++MUoUulT39VlUqGWFOW2ohRMc5r/WdVp17
+         hsKm6vRI0aBAn+hYg9W8VMwpX7oudL+hw6mvueJOp2QJMwJqchMu4e72YXjaNC4f82c5
+         1G4R9lEnzrlu+mQfeij8tlYyPNappzECWCGC2mTxN23uR2sS0n+bHq5/KWtOTKA9Rsht
+         /98A==
+MIME-Version: 1.0
+X-Received: by 10.180.108.1 with SMTP id hg1mr13805327wib.25.1406027199987;
+ Tue, 22 Jul 2014 04:06:39 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Tue, 22 Jul 2014 04:06:39 -0700 (PDT)
+Date: Tue, 22 Jul 2014 13:06:39 +0200
+Message-ID: <CAAxEZd-AE_RLWf7YAKuNpBcADbt00wm5gPSz6AWG4FYBTKJEfw@mail.gmail.com>
+Subject: New Country Repo Switzerland (/ch-confoederatio-helvetica) - Super
+ League 2014/15 etc.
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: I've added a new country repo for Switzerland Schweiz, Suisse,
+Svizzera, Svizra) incl. Lichtenstein, that is,
+/ch-confoederatio-helvetica [1]
+
+   I've also started adding the Super League Match Schedule for
+2014/15. Example:
+
+   Spieltag 1
+
+  [Sa 19.7.]
+    17.45   FC Aarau       1:2 (0:2)  FC Basel             @ Br=C3=BCgglife=
+ld, Aarau
+              [Schultz 85'; Embolo 15' Aliji 38']
+    20.00   FC St. Gallen  2:2 (1:1)  BSC Young Boys       @ AFG
+Arena, St. Gallen
+              [Cavusevic 14' Gajic  52' (ET); Kubo 23' Afum 90' ]
+  [So 20.7.]
+    13.45   FC Thun        1:0 (1:0)  FC Vaduz             @ Stockhorn
+Arena, Thun
+              [Sadik (P) 33']
+    13.45   FC Luzern      1:1 (1:1)  FC Sion              @
+Swissporarena, Luzern
+              [Schneuwly 41'; Vanczak 45+4']
+    16.00   FC Z=C3=BCrich      1:0 (0:0)  Grasshoppers Z=C3=BCrich  @ Letz=
+igrund, Z=C3=BCrich
+              [Chiumiento 59']
+
+
+   Cheers.
+
+[1] github.com/openfootball/ch-confoederatio-helvetica
+

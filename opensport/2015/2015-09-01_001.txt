@@ -1,0 +1,64 @@
+From 6189541299945734144@xxx Tue Sep 01 13:41:24 +0000 2015
+X-GM-THRID: 6189541298005868544
+X-Received: by 10.52.107.106 with SMTP id hb10mr13802257vdb.1.1441114884360;
+        Tue, 01 Sep 2015 06:41:24 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.70.74 with SMTP id k10ls1177770igu.11.canary; Tue, 01 Sep
+ 2015 06:41:24 -0700 (PDT)
+X-Received: by 10.107.46.16 with SMTP id i16mr37623876ioo.21.1441114884035;
+        Tue, 01 Sep 2015 06:41:24 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22a.google.com (mail-io0-x22a.google.com. [2607:f8b0:4001:c06::22a])
+        by gmr-mx.google.com with ESMTPS id o7si171335igp.1.2015.09.01.06.41.24
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 01 Sep 2015 06:41:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) client-ip=2607:f8b0:4001:c06::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x22a.google.com with SMTP id z6so309834ioi.2
+        for <opensport@googlegroups.com>; Tue, 01 Sep 2015 06:41:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=pmAbCZ3WlnNmFk3XxGNxYWVL4YmIRGBmtMpRDJXSOI0=;
+        b=x/TKHnCkXt6wynM1EL2baKkAC3ZCm5qAdw+XBf/+PJt8q6DSjVhQVp9d43xa/9i+6r
+         rm3fyOC5GpVj/qaA67d6WpL02eU/RZaVWOmg4o1BF/xvE278dczW1C+kJP/hsIpsZEEW
+         UbB4prexDi4nq2RQM6i2trW5ulcC5f8HqGutPoi7cd/cJxAPiyqCIHkGbkdt9wW78puW
+         It9liMMZCVNRakonBw0aVie19PI9J7whKEuPM1d8c7O4NY781+BIqtxn7SOkxJrPK6M4
+         ebki7iTX7Ukr5RLcfpaXyqalTFwNQhId57n2j+sFdt3QbCyFJipx7yF16AbCzWVrN0Ma
+         Yz9Q==
+MIME-Version: 1.0
+X-Received: by 10.107.8.164 with SMTP id h36mr6134335ioi.35.1441114883841;
+ Tue, 01 Sep 2015 06:41:23 -0700 (PDT)
+Received: by 10.107.190.132 with HTTP; Tue, 1 Sep 2015 06:41:23 -0700 (PDT)
+Date: Tue, 1 Sep 2015 15:41:23 +0200
+Message-ID: <CAAxEZd94U54j1OCACek3Db5SYWrq3kqk7ZKpkbrJTxb8kiCDAw@mail.gmail.com>
+Subject: Auto-Update Standings (League Tables) with Skript Bot - Premier
+ League 2015/16, Bundesliga 2015/16, etc.
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've started trying out a new build script that auto-updates the
+standings, that is, the league tables (matches played, points, etc.)
+in the repos' READMEs.
+
+  To mark the updates as "non-human" edits I've created a new
+skriptbot user [1], thus, if you run in the new skriptbot in the repo
+that's the new build script in action.
+
+  For example, see the Premier Leauge 2015/16 [2] or the Bundesliga
+2015/16 season standings [3] calculated today.
+
+  Questions? Comments? As always welcome. Cheers.
+
+[1] github.com/skriptbot
+[2] github.com/openfootball/eng-england/tree/master/2015-16
+[3] github.com/openfootball/de-deutschland/tree/master/2015-16
+

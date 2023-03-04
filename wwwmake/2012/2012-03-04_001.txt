@@ -1,0 +1,75 @@
+From 1072802299904@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1070485995520
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,31bb79bbfbc2255e,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.236.145.135 with SMTP id p7mr20025499yhj.2.1330863589654;
+        Sun, 04 Mar 2012 04:19:49 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.101.10.12 with SMTP id n12ls3847695ani.5.gmail; Sun, 04 Mar
+ 2012 04:19:48 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.236.156.73 with SMTP id l49mr1749687yhk.15.1330863588284; Sun,
+ 04 Mar 2012 04:19:48 -0800 (PST)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by q18g2000yqh.googlegroups.com with HTTP; Sun, 4 Mar 2012 04:19:48
+ -0800 (PST)
+Date: Sun, 4 Mar 2012 04:19:48 -0800 (PST)
+User-Agent: G2/1.0
+X-Google-Token: EOS7zfoEK3j_Vy6uraA0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:10.0.2)
+ Gecko/20100101 Firefox/10.0.2,gzip(gfe)
+X-Google-IP: 93.82.48.40
+Message-ID: <c261923a-16b4-4bb6-a9f4-61177986395d@q18g2000yqh.googlegroups.com>
+Subject: impress.js - Prezi-like Presentations using CSS3 Transitions and Transforms
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  Bartek Szopka - inspired by the idea behind prezi.com - has created
+a presentation template using the power of CSS3 transforms and
+transitions that works in modern browsers (Safari 5.1+, Firefox 10+,
+Internet Explorer 10+) and lets you zoom in, zoom out, rotate, or use
+other special effects on your slides.
+
+  See a live sample deck @ http://bartaz.github.com/impress.js
+
+  Find out more @ https://github.com/bartaz/impress.js
+
+  Cheers.
+
+PS: I've bundled up the impress.js template and machinery in a Slide
+Show (S9) pack that lets you generate impress.js presentations using
+Markdown or Textile. Example:
+
+!SLIDE
+
+Slide One
+
+!SLIDE y=600
+
+Slide Two
+
+!SLIDE x=1200 y=600 rotate=180
+
+Slide Three
+
+!SLIDE x=1200 scale=0.5
+
+Slide Four
+
+Find out more @ https://github.com/geraldb/slideshow-impress.js
+
+Note, requires the Slideshow gem 1.0.0. Update the gem first to get
+the required HTML5 data attribute support.
+

@@ -1,0 +1,103 @@
+From 6815300106904928256@xxx Mon Apr 13 20:45:10 +0000 2020
+X-GM-THRID: 6813664299634917376
+Date: Mon, 13 Apr 2020 13:45:10 -0700 (PDT)
+From: =?UTF-8?Q?Juan_Esteban_Casta=C3=B1o_Medina?=
+ <juan.castano.m@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <bd1ef5ed-3c56-46c6-a705-762aa03d5a64@googlegroups.com>
+In-Reply-To: <CAAxEZd-__c8U+C3bQA4gNw0KO=onVGsrvCO2t_akrC03XiAZYg@mail.gmail.com>
+References: <36828b89-c0a2-4090-803e-8feed2ebadeb@googlegroups.com>
+ <CAAxEZd-__c8U+C3bQA4gNw0KO=onVGsrvCO2t_akrC03XiAZYg@mail.gmail.com>
+Subject: Re: [opensport] *** error: Unknown command 'setup'
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_657_1750439238.1586810710693"
+X-Google-Token: ENae0_QFBZ0FDhQC4Vw0
+X-Google-IP: 181.58.39.160
+
+------=_Part_657_1750439238.1586810710693
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_658_541123799.1586810710693"
+
+------=_Part_658_541123799.1586810710693
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello, thanks for the answer.
+
+Following the manual install ok, I did the test with eng2019-20 but if I=20
+want to install another DB it shows error
+
+**** error: SQLite3 :: SQLException: table "logs" already exists*
+
+Thanks!!!
+
+El jueves, 9 de abril de 2020, 6:05:04 (UTC-5), Gerald Bauer escribi=C3=B3:
+>
+> Hello,=20
+>    Thanks for trying football.db / sports.db.=20
+>
+>    As you already know - the build process was too complicated - and I=20
+> tried to make it simpler - the bad news is that the 4 year old (?)=20
+> setup guide by Joe K is a little out of date (and yes, sorry broken).=20
+>
+>     There is no longer a need to setup first a world.db since this is=20
+> now done "auto-magically" thanks to the built-in FIFA gem / library=20
+> (that includes all world countries) and so it goes...=20
+>
+>     Anyways, long story short I recommend using datafiles for your=20
+> setup, see <https://github.com/openfootball/quick-starter>=20
+>
+>    For example, to setup the English Premier League try:=20
+>
+>       $ sportdb new eng=20
+>
+>    Good luck. Let us know how it goes. Cheers. Prost.=20
+>
+
+------=_Part_658_541123799.1586810710693
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hello, thanks for the answer.</div><div><br></div><di=
+v>Following the manual install ok, I did the test with eng2019-20 but if I =
+want to install another DB it shows error</div><div><br></div><div><b>*** e=
+rror: SQLite3 :: SQLException: table &quot;logs&quot; already exists</b></d=
+iv><div><br></div><div>Thanks!!!</div><br>El jueves, 9 de abril de 2020, 6:=
+05:04 (UTC-5), Gerald Bauer  escribi=C3=B3:<blockquote class=3D"gmail_quote=
+" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding=
+-left: 1ex;">Hello,
+<br>=C2=A0 =C2=A0Thanks for trying football.db / sports.db.
+<br>
+<br>=C2=A0 =C2=A0As you already know - the build process was too complicate=
+d - and I
+<br>tried to make it simpler - the bad news is that the 4 year old (?)
+<br>setup guide by Joe K is a little out of date (and yes, sorry broken).
+<br>
+<br>=C2=A0 =C2=A0 There is no longer a need to setup first a world.db since=
+ this is
+<br>now done &quot;auto-magically&quot; thanks to the built-in FIFA gem / l=
+ibrary
+<br>(that includes all world countries) and so it goes...
+<br>
+<br>=C2=A0 =C2=A0 Anyways, long story short I recommend using datafiles for=
+ your
+<br>setup, see &lt;<a href=3D"https://github.com/openfootball/quick-starter=
+" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https:=
+//www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fquick-s=
+tarter\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNEAl8XM3j1NrI3QDvBjm8DV6J72cQ=
+&#39;;return true;" onclick=3D"this.href=3D&#39;https://www.google.com/url?=
+q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fquick-starter\x26sa\x3dD\x26=
+sntz\x3d1\x26usg\x3dAFQjCNEAl8XM3j1NrI3QDvBjm8DV6J72cQ&#39;;return true;">h=
+ttps://github.com/<wbr>openfootball/quick-starter</a>&gt;
+<br>
+<br>=C2=A0 =C2=A0For example, to setup the English Premier League try:
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0 $ sportdb new eng
+<br>
+<br>=C2=A0 =C2=A0Good luck. Let us know how it goes. Cheers. Prost.
+<br></blockquote></div>
+------=_Part_658_541123799.1586810710693--
+
+------=_Part_657_1750439238.1586810710693--
+

@@ -1,0 +1,139 @@
+From 6429164431073083392@xxx Thu Jun 08 07:21:32 +0000 2017
+X-GM-THRID: 6429164431482028032
+X-Received: by 10.157.27.179 with SMTP id z48mr18215322otd.45.1496906492629;
+        Thu, 08 Jun 2017 00:21:32 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.107.11.211 with SMTP id 80ls2064067iol.33.gmail; Thu, 08 Jun
+ 2017 00:21:31 -0700 (PDT)
+X-Received: by 10.107.15.66 with SMTP id x63mr14836529ioi.87.1496906491965;
+        Thu, 08 Jun 2017 00:21:31 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1496906491; cv=none;
+        d=google.com; s=arc-20160816;
+        b=tXVegueWlK6lOuFUPb5+3cf1hd1M4gILLV9r4Wz5A4epqABJlVHz7PJEPPgMybDYhd
+         40Jb5eTU/oTR2WxaLNb8bSRb6fWaqwhRi0JcPadxGk5ENsek8O5+Af0xNY8i+7I152wQ
+         Nq0lq8CFSQZVA+/EghJ7SrU4lirAKMKxMkiXD6N3ymheT4gqBeW/6MyalyY+N3NYRRHX
+         ESs+Cmxvlxyl4KZXguhMMG6Nr6YSHi9N9xlhssDtrwCV5zxkMSCqmdrarsmXRrvv1Cfi
+         c6pdec0meli0kVO6O6u8dUTF2yQy9WNLM6zUlAqMdOsE4cECUynofFrXKbqutWHy/VdW
+         L21g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=PYTmi9dWNGTEmS8aiJoPgUtAuFq+Av1/9ujzR1WxuiI=;
+        b=PxFFFoIB8dwFy0cYhhdNie6y0NHFuSQh4JGXd1AfjHBK2IqcNfiouTb8q6lAZb5I//
+         uDkyPwPHJgyPHlkRfB49jsn0sKUkdnxs8sfV/peNUw3BPrYl7z7fXxG/H51L5tlisbx/
+         fCautBcKQCs+HIXGGibt81WQp4AL96Iaw0AgoYykGFA8s2hfWoIRgKJaLa4ueMTm3gtu
+         mcW3JPuT3j9/1ykQK7UQVvt57w991RONKw98ptI6jpZ3WpfjClaOY4QY0wPKrH18v+2q
+         k1FCs3WTiLI6X0FKBL76r+n8h5PhwfyGb4ajJGVwqrcwzw7o1LHrWGPi1jyanIT7XrIC
+         dq6Q==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22b.google.com (mail-io0-x22b.google.com. [2607:f8b0:4001:c06::22b])
+        by gmr-mx.google.com with ESMTPS id c14si273486itc.3.2017.06.08.00.21.31
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 08 Jun 2017 00:21:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22b as permitted sender) client-ip=2607:f8b0:4001:c06::22b;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22b.google.com with SMTP id i7so16564649ioe.1
+        for <wwwmake@googlegroups.com>; Thu, 08 Jun 2017 00:21:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=PYTmi9dWNGTEmS8aiJoPgUtAuFq+Av1/9ujzR1WxuiI=;
+        b=W8A6LDY0YWVyrc+q+IFkHBZomAKxF24zdXqj89+JbFtWrT3jSMDPEJwmRMspZE73Zv
+         dL8VLDJ5z/3eGcgXpIPPqw2laLuSrRPX8pmxqtF2UH2mhcR4VruPhqx3lOnVAVJ00VT+
+         mleSP4TGNnj/FSLHNrvSFn+iz6Res2hGvuOBJ4BJNKx6NGiKiYssY7i2dq1/k1G1bzUw
+         AE28zcsZ0O4cEgSvLjGbIpejZU5CEARv0ajWEtxSb4sDhdEPN8ILzt0feUWHJFh+l7Zq
+         RLoK7nm0YLqCMXP5TFO33awnvpRxEHKXLZG4qa/Ye0dWPt6PArjLPTBi/lXEoGBz0gQH
+         IOUg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=PYTmi9dWNGTEmS8aiJoPgUtAuFq+Av1/9ujzR1WxuiI=;
+        b=lAqccvYqcaq6+7aRWYAiRuvIxi5EwkH66SgdyOYpR0RLwcms/FRb0aPIul0bSSxFCG
+         RVz8pwl05zJN7rF36jyhAbLLi7ah41QQiQPqcbBnF1c0kudOTFLDWbbK8P7I1jmmOucw
+         Rpqp7MIZMjQeKmE+1490v3vlBMfdFf7RIWedyVIlIL1g7kqWYcb2884hOlDiF1djQrPg
+         2itOzweJdzLzEUhkTdhKRv4P3eilHGCU/h2ffekxGXu1EXlIjacvgScQJp+rAI0gYLqt
+         LPGXXliJlwg9kwyC/21aRj3/2wY1uxvUqA67M+2OFVFGoNh/1BWr8yTQ/nAVKv2hEEi1
+         xy/g==
+X-Gm-Message-State: AKS2vOzrQp7qKoyB5hFbfC5OG+1WVqLb9c39pKU1wicqhf4udxf/gvWf
+	skmuL1NPzAfs1g0RZhqLh7SlRoOvRsYs
+X-Received: by 10.107.53.142 with SMTP id k14mr29824410ioo.136.1496906491551;
+ Thu, 08 Jun 2017 00:21:31 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.47.145 with HTTP; Thu, 8 Jun 2017 00:21:30 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 8 Jun 2017 09:21:30 +0200
+Message-ID: <CAAxEZd8VBPior3eGu8JcAJ=psaz3gp5k6sSqWmgNq-uYTD6PWg@mail.gmail.com>
+Subject: Universal feedparser gem v2.0.0 Adds HTML Feeds w/ Microformats
+ (h-entry, h-feed, etc.)
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   The universal feedparser gem [1] that reads web feeds in XML (RSS,
+Atom) and JSON (JSON Feed)
+  now supports HTML feeds w/ Microformats (h-entry, h-feed, etc.) [2][3].
+
+Note: Microformats support in feedparser is optional.
+Install and require the the microformats gem[4] to read
+feeds in HTML with Microformats.
+
+
+```
+require 'feedparser'
+require 'microformats'
+
+text =<<HTML
+<article class="h-entry">
+  <h1 class="p-name">Microformats are amazing</h1>
+  <p>Published by
+    <a class="p-author h-card" href="http://example.com">W. Developer</a>
+     on <time class="dt-published" datetime="2013-06-13
+12:00:00">13<sup>th</sup> June 2013</time>
+
+  <p class="p-summary">In which I extoll the virtues of using microformats.</p>
+
+  <div class="e-content">
+    <p>Blah blah blah</p>
+  </div>
+</article>
+HTML
+
+feed = FeedParser::Parser.parse( text )
+
+puts feed.format
+# => "html"
+puts feed.items.size
+# =>  1
+puts feed.items[0].authors.size
+# => 1
+puts feed.items[0].content_html
+# => "<p>Blah blah blah</p>"
+puts feed.items[0].content_text
+# => "Blah blah blah"
+puts feed.items[0].title
+# => "Microformats are amazing"
+puts feed.items[0].summary
+# => "In which I extoll the virtues of using microformats."
+puts feed.items[0].published
+# => 2013-06-13 12:00:00
+puts feed.items[0].authors[0].name
+# => "W. Developer"
+...
+```
+
+   Happy publishing w/ web feeds. Cheers.
+
+[1] https://github.com/feedparser/feedparser
+[2] https://github.com/feedparser/feedparser#Microformats
+[3] http://microformats.org/wiki/h-entry
+[4] https://github.com/indieweb/microformats-ruby
+

@@ -1,0 +1,54 @@
+From 6196904476279832576@xxx Mon Sep 21 09:54:17 +0000 2015
+X-GM-THRID: 6196904475760787456
+X-Received: by 10.31.108.28 with SMTP id h28mr16195987vkc.4.1442829257057;
+        Mon, 21 Sep 2015 02:54:17 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.25.137 with SMTP id 131ls1064071ioz.45.gmail; Mon, 21 Sep
+ 2015 02:54:16 -0700 (PDT)
+X-Received: by 10.68.238.74 with SMTP id vi10mr16190083pbc.9.1442829256727;
+        Mon, 21 Sep 2015 02:54:16 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x234.google.com (mail-io0-x234.google.com. [2607:f8b0:4001:c06::234])
+        by gmr-mx.google.com with ESMTPS id x8si960374igx.2.2015.09.21.02.54.16
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 21 Sep 2015 02:54:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::234 as permitted sender) client-ip=2607:f8b0:4001:c06::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by ioii196 with SMTP id i196so114154837ioi.3
+        for <opensport@googlegroups.com>; Mon, 21 Sep 2015 02:54:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=RNiA3n4p6r/CmyXUKPqRu44D33hvYUImY+0I5+ziDD4=;
+        b=pPyKXRFb5tsU9bRjXPJyyVepXCPT8zFM6hSSwgXE2Y99da35zstozq77636F8DbsXP
+         elJk6FPicFIjjHLInw0UxeYQMMCSbLoCO8oabIeyz2y1u62SmqOvbJXVIc/8MRR0+o4p
+         TcCbYwAvNLsRlEsI+9fdw87SB4nAQUcjVN6wsES0Pz0bfT3VALKy5J5M9VpwrW/dhbDX
+         UCnMv3iaPpyhhqAOZd0knMhEHjimKbJlxEc8M2lZRrdmfFeRmmpfi/XQpaRnZh8hFy4p
+         cO48GhFY1l32tJQncrfl+6twQNd/alJgCrsFeq5+nsRCz2RiR+3MM/4WwTkaqNGfMyFX
+         n0Wg==
+MIME-Version: 1.0
+X-Received: by 10.107.3.94 with SMTP id 91mr23685496iod.178.1442829256581;
+ Mon, 21 Sep 2015 02:54:16 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Mon, 21 Sep 2015 02:54:16 -0700 (PDT)
+Date: Mon, 21 Sep 2015 11:54:16 +0200
+Message-ID: <CAAxEZd_KSMr+zJk7GY2O0WCf3KUxXQQqo_JneK1F29oRCU-B9A@mail.gmail.com>
+Subject: Q: Any open public datasets for the Rugby World Cup (in England 2015)?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've posted a data request to the open data stack exchange e.g.
+ "Any open public data sets for the Rugby World Cup (in England 2015)?" [1]
+
+  Any insight appreciated. Please post any comments here or over at
+the open data stackexchange. Cheers.
+
+[1] opendata.stackexchange.com/questions/6057/any-open-public-data-sets-for-the-rugby-world-cup-in-england-2015
+

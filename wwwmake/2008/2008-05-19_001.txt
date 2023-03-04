@@ -1,0 +1,91 @@
+From 7146045440@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 8034189312
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,5095a83b04ae9ba5,start
+X-Google-Attributes: gid592b7a,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.35.13.4 with SMTP id q4mr6792857pyi.7.1211171387977;
+        Sun, 18 May 2008 21:29:47 -0700 (PDT)
+Return-Path: <geraldbauer2007@gmail.com>
+Received: from py-out-1112.google.com (py-out-1112.google.com [64.233.166.181])
+        by mx.google.com with ESMTP id a28si60466382pye.0.2008.05.18.21.29.47;
+        Sun, 18 May 2008 21:29:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of geraldbauer2007@gmail.com designates 64.233.166.181 as permitted sender) client-ip=64.233.166.181;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of geraldbauer2007@gmail.com designates 64.233.166.181 as permitted sender) smtp.mail=geraldbauer2007@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by py-out-1112.google.com with SMTP id y77so1373201pyg.28
+        for <webslideshow@googlegroups.com>; Sun, 18 May 2008 21:29:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        bh=cq5GQmEb2vq+IfvC6BukNA2fFDgxVTkzHIbPCwX6fes=;
+        b=SP7nsK/kjlvHxemfSHG6FOia3W4ssKpGBLoZWJHiwXm7axb9nIsX3hGcuPzJu5hGBmP2wnsF96b2Vezi3c4vEspr0KaNtDuOPjrFkP1ZKjkcYFoHoNTfj+e92Ibju3VlwN62GtqCnKYfoprxJ9/BxfGUDJkmp5Le8dgJ7Ya4MR8=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        b=KNrI1Y8KY1kC5nNSDzG8xzxp8PAZ4D8pinDFvQZNw5qPrYwkbgdMf1IJVlv6y86aW0YxI4IOeOCUtW1Ch1XxmeaQvf7iad1nLWqBZX1dXtDsq31UNwtkYVHn5lrmudQmTkYv1etKDL+SRfL9WCDiiT5nPxRDxEzRJXuXTEeXn+g=
+Received: by 10.115.77.1 with SMTP id e1mr6960546wal.208.1211171386337;
+        Sun, 18 May 2008 21:29:46 -0700 (PDT)
+Received: by 10.114.144.11 with HTTP; Sun, 18 May 2008 21:29:46 -0700 (PDT)
+Message-ID: <7e7cb8940805182129u63be6726x3284dac62fa490a8@mail.gmail.com>
+Date: Sun, 18 May 2008 21:29:46 -0700
+From: "Gerald Bauer" <geraldbauer2007@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Slide Show (S9) Gem Now Supports Code Syntax Highlighting and Headers for Gradients, Title, etc
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello,
+
+   I've published an update to Slide Show (S9) - a Ruby gem that lets
+you create slide shows and author slides in plain text using a
+wiki-style markup language that's easy-to-write and easy-to-read.
+
+  What's new?
+
+  The Slide Show (S9) gem now supports headers that let you set
+options in your source e.g. use
+
+  title: Microformats - Adding Semantics to Your Web Site - Web 3.0 in Action
+
+  to set the web page title. Use
+
+ gradient-colors: green lime
+ gradient-colors: #0e1f5b #3b5998
+ gradient: top-bottom black grey
+
+  to set the style and/or colors for your gradient background theme.
+
+  Use
+
+ code-theme: blackboard
+ code-line-numbers: false
+
+  to select the Ultraviolet syntax highlighting theme and turn off
+line numbering. Thanks to zimbatm (*1) for sending in patches for
+fixing the slideshow gem executable on Unix and on getting started
+with syntax highlighting using the Ultraviolet (*2) gem.
+
+  To use/turn on the experimental syntax highlighting in your slide
+shows specify the language using #! ruby after the code block e.g.:
+
+{{{
+#!ruby
+puts "syntaxes:"
+puts Uv.syntaxes.join( ", " )
+
+puts "themes:"
+puts Uv.themes.join( ", " )
+}}}
+
+  Find out more about the Slide Show (S9) gem @ http://slideshow.rubyforge.org
+
+  Cheers.
+
+(*1) http://oree.ch
+(*2) http://ultraviolet.rubyforge.org
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.wordpress.com
+

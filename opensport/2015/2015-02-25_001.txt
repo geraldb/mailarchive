@@ -1,0 +1,69 @@
+From 2451303301120@xxx Tue Jun 16 00:16:45 +0000 2015
+X-GM-THRID: 2438133186560
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a6ac75f7f7071934
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.126.12 with SMTP id mu12mr4673043obb.13.1424892035660;
+        Wed, 25 Feb 2015 11:20:35 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.18.46 with SMTP id t14ls436998igd.3.canary; Wed, 25 Feb
+ 2015 11:20:35 -0800 (PST)
+X-Received: by 10.50.25.137 with SMTP id c9mr4332273igg.0.1424892035164;
+        Wed, 25 Feb 2015 11:20:35 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x234.google.com (mail-ie0-x234.google.com. [2607:f8b0:4001:c03::234])
+        by gmr-mx.google.com with ESMTPS id u2si1478528igh.0.2015.02.25.11.20.34
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 25 Feb 2015 11:20:34 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::234 as permitted sender) client-ip=2607:f8b0:4001:c03::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ie0-x234.google.com with SMTP id at20so7722122iec.12
+        for <opensport@googlegroups.com>; Wed, 25 Feb 2015 11:20:34 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=eMZIjkXD2Ux6tHLw67ckj/NvAJaPH4hJMmQcTu6pZ9g=;
+        b=MrZsHX6WYCToZu4haMMan40HnGF8lz4/YFxvhnOVEktjWfykQkvutjGpdOSt0MCgJA
+         Km8DmrFtZlsvdIDj2uqCRd6NgduP2FgT3mwYhgZX+erL0joEDzmM0Ros94eoWRBJmmbv
+         ZpCEXtuFTrJxKGlooFlaxDbviXN5t2nFln9o0QPWCuzgPgmpuElVFIWulQ+2qSti7fG0
+         WFzde4tANEBB96/7qRDgCfiE1Y8jQ5Y0Z09AAf1HRvT9ShHb/ek9siqTxwov+EYRKfB3
+         Npevez/d8vZr7wSQqR+HYUIc8Z6tPccwenOv6CSVox2RCixxs51R7ZF+5gcj+NLfkBdl
+         PA7A==
+MIME-Version: 1.0
+X-Received: by 10.50.111.168 with SMTP id ij8mr6768141igb.43.1424892034895;
+ Wed, 25 Feb 2015 11:20:34 -0800 (PST)
+Received: by 10.64.142.11 with HTTP; Wed, 25 Feb 2015 11:20:34 -0800 (PST)
+In-Reply-To: <6fdf12c1-8d09-4735-916e-44fd88f10efb@googlegroups.com>
+References: <e46546a3-6576-4691-bf03-29be42566230@googlegroups.com>
+	<CAAxEZd9YG_QPt7WDYvbM3q8zF7=CRri6A3ycu2Ug=JeGpPniTg@mail.gmail.com>
+	<6fdf12c1-8d09-4735-916e-44fd88f10efb@googlegroups.com>
+Date: Wed, 25 Feb 2015 20:20:34 +0100
+Message-ID: <CAAxEZd-Q8DQQ2a6mEiYPe098HWdTxHCLgkfTcMA8n0M1NFkuYA@mail.gmail.com>
+Subject: Re: [opensport] Problems building database
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+> *** error: 70198166365280 is out of range for ActiveRecord::Type::Integer with limit 4
+
+  I'm asking because it's a know bug with mysql , that is, the logs
+table needs to a bigint with limit 8.
+
+   I'm using sqlite3 on my local machine and postgresql on heroku
+where I have yet to get this error with the logs table.
+
+   Anyways, the quick workaround is to NOT log to the database (if
+you're using your own build script).  If not, I will try to
+publish/push a fixed  logutils-activerecord gem in the next days.
+Thanks for your patience. Cheers.
+
+[1] github.com/rubylibs/logutils-activerecord
+

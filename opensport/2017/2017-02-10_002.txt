@@ -1,0 +1,67 @@
+From 6385399425902051328@xxx Fri Feb 10 08:50:58 +0000 2017
+X-GM-THRID: 6385397718574956544
+X-Received: by 10.107.136.105 with SMTP id k102mr2683078iod.21.1486716658297;
+        Fri, 10 Feb 2017 00:50:58 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.56.85 with SMTP id f82ls6654745ioa.31.gmail; Fri, 10 Feb
+ 2017 00:50:57 -0800 (PST)
+X-Received: by 10.99.98.68 with SMTP id w65mr2393940pgb.133.1486716657791;
+        Fri, 10 Feb 2017 00:50:57 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22c.google.com (mail-io0-x22c.google.com. [2607:f8b0:4001:c06::22c])
+        by gmr-mx.google.com with ESMTPS id b188si20593ite.3.2017.02.10.00.50.57
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 10 Feb 2017 00:50:57 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22c as permitted sender) client-ip=2607:f8b0:4001:c06::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22c.google.com with SMTP id l66so45571235ioi.1
+        for <opensport@googlegroups.com>; Fri, 10 Feb 2017 00:50:57 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=lPCT4knw0S23xSEMeY6kZ2DMUL5vq09DY/DLuEfhqe0=;
+        b=JxwikJyZFrnVrU0EUyhdZcq32AVTbb9kGqVYZzRKjK/NYpi4mFNxyKTciwpAjG8luV
+         rJa4yB+gXhOMnkC+Rqey1HImtDnp56j8R7bvZG4t5Y73plQAG9qbTBKiYdVQcmViuR6p
+         fxQ5/+H1ZVaus9TZGCe6nDO6ac+DXreA2NMa+09Vt5u3deTkTbYllU+J63h3llEp52QM
+         1sBAb+xekdXqZYs9C2MtAHVMxPreGbLZ20tsn7Cqgi3OPcxU2IG7TQga8+Xt+1U+M9Of
+         9astA17xH/OCDpvQSF9hJXsdKGSBq/DgJrJcoM3UvAkm8/IO0qsipj6WSW5P31hwdZyB
+         B7AQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=lPCT4knw0S23xSEMeY6kZ2DMUL5vq09DY/DLuEfhqe0=;
+        b=O0afFVEnE2E1tKnl7GGTaMehx0LyYMH8b/I2Zu0LWcgBhtfgckeFsG8FLIMvmxvHl0
+         Yzouq9cSrWVZLXupYRjEw1qHFC6wa48H9ixINNiU1zKkBpRePVkjHjbauVBJZZU41i+f
+         fWlENCZ3WJysbmYBIk+eB03KvtKVGLb9TjHpz2oXK/sHM10ROKD0a+Wqezh++CdJuoXE
+         c27Ag8bQyHdoLs8m7MVLxl/dD8O7Wc5dvdLg15CIJ2CwwQX0r0PBTWE5zRCywgUo/7M/
+         HDtxKSnYbzOrvVLXv2caYwRVtpoEscxCzE6IyjdSGBIuny7EHeG4NPn9ttTgHpSfKO8l
+         S/yw==
+X-Gm-Message-State: AMke39nJtamjXUucoOf2Fier/FDn29AQaQLesXsP1hMAW52H7uKhcMbVxVkxMOe/CHWMdzisWPc1rXRf5Q0ERg==
+X-Received: by 10.107.10.42 with SMTP id u42mr7000430ioi.197.1486716657380;
+ Fri, 10 Feb 2017 00:50:57 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.34.209 with HTTP; Fri, 10 Feb 2017 00:50:56 -0800 (PST)
+In-Reply-To: <c27f8916-8bfe-4db7-9b96-a46a0f278e14@googlegroups.com>
+References: <c27f8916-8bfe-4db7-9b96-a46a0f278e14@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 10 Feb 2017 09:50:56 +0100
+Message-ID: <CAAxEZd-cN3wKMKOBvhtO0JQfw9NwTqy0BBNOTZQORq5RBQ1ocA@mail.gmail.com>
+Subject: Re: [opensport] enquiry
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+Hola,
+
+  See the Guide to Football/Soccer data and APIs [1] by Joe
+Kampschmidt for an in-depth listing. Cheers.
+
+  PS: Not sure how you translate 2-1 or 4-1 into Spanish ;-).
+
+[1] https://www.jokecamp.com/blog/guide-to-football-and-soccer-data-and-apis/
+

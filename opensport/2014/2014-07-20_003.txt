@@ -1,0 +1,186 @@
+From 1663653904384@xxx Tue Jun 16 00:16:51 +0000 2015
+X-GM-THRID: 1591517118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.102.34 with SMTP id fl2mr9827879obb.16.1405865728148;
+        Sun, 20 Jul 2014 07:15:28 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.111.195 with SMTP id ik3ls1163247igb.37.canary; Sun, 20 Jul
+ 2014 07:15:27 -0700 (PDT)
+X-Received: by 10.50.88.9 with SMTP id bc9mr921776igb.14.1405865727543;
+        Sun, 20 Jul 2014 07:15:27 -0700 (PDT)
+X-Google-Doc-Id: 285caaa388234c1c
+X-Google-Web-Client: true
+Date: Sun, 20 Jul 2014 07:15:26 -0700 (PDT)
+From: Carl-Erik Svensson <csvenss2@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <16257216-0d9c-4d01-9f36-b00d26a612e2@googlegroups.com>
+In-Reply-To: <CAAxEZd9E7zgoReL0RprdZxXKLkBKvC5xVTNYUgFfsm02WZq=aQ@mail.gmail.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+ <CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+ <3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+ <CAAxEZd9E7zgoReL0RprdZxXKLkBKvC5xVTNYUgFfsm02WZq=aQ@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1820_1465978660.1405865726307"
+X-Google-Token: EP6dr54FEC-Jk0HJiuI0
+X-Google-IP: 24.130.213.187
+
+------=_Part_1820_1465978660.1405865726307
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1821_623456589.1405865726307"
+
+------=_Part_1821_623456589.1405865726307
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+> PS:  I'm actually Austrian
+
+Ah, sorry for the mistake!  I've had the opportunity to visit both Germany 
+and Austria in the past, so I should be able to tell the difference :)
+
+A plugin model sounds fine to me, but I might need some guidance on how to 
+enable that.  I suppose I could start a project, include the sportdb gem, 
+and just keep adding to the sportdb module and its classes.  Is that what 
+you were thinking of?  An example will help if you have one.
+
+I started with generic stats because I hadn't thought through all the 
+possible stats that I might want to track.  As I went searching for data, I 
+noticed there are many common stats (goals, yellow cards, red cards, etc), 
+but also some sites had one or two items that others didn't (minutes 
+played, sub outs).  I also wanted to reuse code for player, team, and game 
+stats.  Finally, I was thinking it would be useful for any sport, not just 
+football (I'm interested in making some NHL hockey apps, too).   I wanted 
+to make it as flexible a possible, so I could change my mind... plus, then 
+I didn't have to remap each data source's stat to a common name.  If I 
+start using more than one data source, I'd have to do that in both cases, I 
+guess.  But in that case, it might be easier to make a table of aliases for 
+a stat (stat_id, alias).
+
+In short, I think it's good for flexibility and data integrity, however I 
+agree it's worse for performance, since it generates a lot of queries and 
+joins.  There are probably some common stats for players, and even games 
+(points, fouls), so maybe for performance we can put some common stats in 
+new models - or perhaps add them to the team, player, game models.  For 
+now, I might stick with generic stats until I get a clearer idea of the 
+apps I want to build.
+
+Thanks for the help and suggestions!
+Carl
+
+On Sunday, July 20, 2014 12:21:16 AM UTC-7, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>     If I may suggest - to not complicate stats queries  - I suggest 
+> using the "generic" property model only as a last resort/fallback and 
+> actually roll out/spell out all properties and tables you need e.g. 
+>
+> create_table : player_stats do |t| 
+>   t.references :person 
+>   t.references  :team 
+>   t.references  :game 
+>   t.integer       :prop1    # fix: use real name here 
+>   t.integer       :prop2    # fix: use real name here 
+>   t.integer       :prop3    # fix:  use real name here 
+>   t.integer       :prop3    # fix: use real name here 
+>   t.string        :prop3    # fix: use real name here 
+>   t.timestamps 
+> end 
+>
+> create_table : team_stats do |t| 
+>   t.references  :team 
+>   t.references  :game 
+>   t.integer       :prop1    # fix: use real name here 
+>   t.integer       :prop2    # fix: use real name here 
+>   t.integer       :prop3    # fix: use real name here 
+>   t.integer       :prop3    # fix: use real name here 
+>   t.integer       :prop3    # fix: use real name here 
+>   t.timestamps 
+> end 
+>
+> and so on. Cheers. 
+>
+
+------=_Part_1821_623456589.1405865726307
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">&gt;&nbsp;PS: &nbsp;I'm actually Austrian<div><br></div><d=
+iv>Ah, sorry for the mistake! &nbsp;I've had the opportunity to visit both =
+Germany and Austria in the past, so I should be able to tell the difference=
+ :)</div><div><br></div><div>A plugin model sounds fine to me, but I might =
+need some guidance on how to enable that. &nbsp;I suppose I could start a p=
+roject, include the sportdb gem, and just keep adding to the sportdb module=
+ and its classes. &nbsp;Is that what you were thinking of? &nbsp;An example=
+ will help if you have one.</div><div><br></div><div>I started with generic=
+ stats because I hadn't thought through all the possible stats that I might=
+ want to track. &nbsp;As I went searching for data, I noticed there are man=
+y common stats (goals, yellow cards, red cards, etc), but also some sites h=
+ad one or two items that others didn't (minutes played, sub outs). &nbsp;I =
+also wanted to reuse code for player, team, and game stats. &nbsp;Finally, =
+I was thinking it would be useful for any sport, not just football (I'm int=
+erested in making some NHL hockey apps, too). &nbsp; I wanted to make it as=
+ flexible a possible, so I could change my mind... plus, then I didn't have=
+ to remap each data source's stat to a common name. &nbsp;If I start using =
+more than one data source, I'd have to do that in both cases, I guess. &nbs=
+p;But in that case, it might be easier to make a table of aliases for a sta=
+t (stat_id, alias).</div><div><br></div><div>In short, I think it's good fo=
+r flexibility and data integrity, however I agree it's worse for performanc=
+e, since it generates a lot of queries and joins. &nbsp;There are probably =
+some common stats for players, and even games (points, fouls), so maybe for=
+ performance we can put some common stats in new models - or perhaps add th=
+em to the team, player, game models. &nbsp;For now, I might stick with gene=
+ric stats until I get a clearer idea of the apps I want to build.</div><div=
+><br></div><div>Thanks for the help and suggestions!</div><div>Carl<br><br>=
+On Sunday, July 20, 2014 12:21:16 AM UTC-7, Gerald Bauer wrote:<blockquote =
+class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1p=
+x #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp; If I may suggest - to not complicate stats queries &nbsp;=
+- I suggest
+<br>using the "generic" property model only as a last resort/fallback and
+<br>actually roll out/spell out all properties and tables you need e.g.
+<br>
+<br>create_table : player_stats do |t|
+<br>&nbsp; t.references :person
+<br>&nbsp; t.references &nbsp;:team
+<br>&nbsp; t.references &nbsp;:game
+<br>&nbsp; t.integer &nbsp; &nbsp; &nbsp; :prop1 &nbsp; &nbsp;# fix: use re=
+al name here
+<br>&nbsp; t.integer &nbsp; &nbsp; &nbsp; :prop2 &nbsp; &nbsp;# fix: use re=
+al name here
+<br>&nbsp; t.integer &nbsp; &nbsp; &nbsp; :prop3 &nbsp; &nbsp;# fix: &nbsp;=
+use real name here
+<br>&nbsp; t.integer &nbsp; &nbsp; &nbsp; :prop3 &nbsp; &nbsp;# fix: use re=
+al name here
+<br>&nbsp; t.string &nbsp; &nbsp; &nbsp; &nbsp;:prop3 &nbsp; &nbsp;# fix: u=
+se real name here
+<br>&nbsp; t.timestamps
+<br>end
+<br>
+<br>create_table : team_stats do |t|
+<br>&nbsp; t.references &nbsp;:team
+<br>&nbsp; t.references &nbsp;:game
+<br>&nbsp; t.integer &nbsp; &nbsp; &nbsp; :prop1 &nbsp; &nbsp;# fix: use re=
+al name here
+<br>&nbsp; t.integer &nbsp; &nbsp; &nbsp; :prop2 &nbsp; &nbsp;# fix: use re=
+al name here
+<br>&nbsp; t.integer &nbsp; &nbsp; &nbsp; :prop3 &nbsp; &nbsp;# fix: use re=
+al name here
+<br>&nbsp; t.integer &nbsp; &nbsp; &nbsp; :prop3 &nbsp; &nbsp;# fix: use re=
+al name here
+<br>&nbsp; t.integer &nbsp; &nbsp; &nbsp; :prop3 &nbsp; &nbsp;# fix: use re=
+al name here
+<br>&nbsp; t.timestamps
+<br>end
+<br>
+<br>and so on. Cheers.
+<br></blockquote></div></div>
+------=_Part_1821_623456589.1405865726307--
+
+------=_Part_1820_1465978660.1405865726307--
+

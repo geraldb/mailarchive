@@ -1,0 +1,59 @@
+From 1583602466816@xxx Tue May 05 16:52:56 +0000 2015
+X-GM-THRID: 1581471760384
+X-Google-Groups: wwwmake
+X-Google-Thread: befe626adc,e9310241f3d3e41f,start
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.10.33 with SMTP id 21mr32030958yhu.33.1430844775900;
+        Tue, 05 May 2015 09:52:55 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.107.136.5 with SMTP id k5ls2222772iod.85.gmail; Tue, 05 May
+ 2015 09:52:55 -0700 (PDT)
+X-Received: by 10.66.121.137 with SMTP id lk9mr52703120pab.11.1430844775505;
+        Tue, 05 May 2015 09:52:55 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qk0-x234.google.com (mail-qk0-x234.google.com. [2607:f8b0:400d:c09::234])
+        by gmr-mx.google.com with ESMTPS id do9si2353970qcb.0.2015.05.05.09.52.55
+        for <wwwmake@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 05 May 2015 09:52:55 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::234 as permitted sender) client-ip=2607:f8b0:400d:c09::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qk0-x234.google.com with SMTP id g7so109991567qkh.2
+        for <wwwmake@googlegroups.com>; Tue, 05 May 2015 09:52:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=m8DpV3cT4ZvXrDh/MXzTnuUs9sE2pNvucQBuTw86mUY=;
+        b=yRQcNo8207SCw2jsB13LcEfty0IPl1YFsOR7wWD+VRKtFo3xTHmatfj9K/J7pBOvr1
+         Bg6CZBPP+0xBjr0SI40CveskWzQjIYnfNkLwQGr4yIMnNFDxZPapELqPlTxV6fPc6XP0
+         CsmdydH+6k/nYDQfnQbkVbeQB5HzJg9fyZRQ10w5QsfRlA/VQwf/G4KRC1zRENLTiRYA
+         hnleRrpI3CRD4UnUf1aVxIxbBWl8iX8ZifRB4RdDzZufbhKKRhuAO9Ghw5uC+SRh5Riw
+         JWlnQObBW382lwlLPDjFNKSwatP0+Lw+ZCOYpzAuxdPQJDc4lnKBX40xXPaeDr0Es9f9
+         MmWA==
+MIME-Version: 1.0
+X-Received: by 10.140.94.104 with SMTP id f95mr34222795qge.38.1430844775364;
+ Tue, 05 May 2015 09:52:55 -0700 (PDT)
+Received: by 10.229.5.6 with HTTP; Tue, 5 May 2015 09:52:55 -0700 (PDT)
+Date: Tue, 5 May 2015 18:52:55 +0200
+Message-ID: <CAAxEZd9GwiM6hpbM9KFur9pktD7XzzyfeFU_dUWqKgX7_y8exw@mail.gmail.com>
+Subject: New Page - Planet Template Gallery - Incl. Live Demos (Cards, Digest,
+ Hacker, etc.)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've added a new gallery page [1] that lists all planet
+template/theme packs with live demos. Template/theme packs include:
+
+  - Blank, Cards, Digest, Hacker, Forty, News, Paper, Top
+
+  Happy planet. Cheers.
+
+[1] planet-templates.github.io/gallery
+

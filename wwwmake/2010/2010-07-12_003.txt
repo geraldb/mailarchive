@@ -1,0 +1,47 @@
+From 726343352320@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 724800897024
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,2e3281a7b816dc3
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.101.11.10 with SMTP id o10mr9816126ani.19.1278914335716;
+        Sun, 11 Jul 2010 22:58:55 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.100.49.22 with SMTP id w22ls1101151anw.2.p; Sun, 11 Jul 2010 
+	22:58:40 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.101.138.14 with SMTP id q14mr640141ann.45.1278914318484; Sun, 
+	11 Jul 2010 22:58:38 -0700 (PDT)
+Received: by c33g2000yqm.googlegroups.com with HTTP; Sun, 11 Jul 2010 22:58:38 
+	-0700 (PDT)
+Date: Sun, 11 Jul 2010 22:58:38 -0700 (PDT)
+In-Reply-To: <5228c0f8-66d1-49f3-9d21-c6acfc04c008@c33g2000yqm.googlegroups.com>
+X-IP: 75.118.30.38
+References: <5228c0f8-66d1-49f3-9d21-c6acfc04c008@c33g2000yqm.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EI7e6uEEcHNZuwdGlbI0
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; 
+	rv:1.9.2.6) Gecko/20100625 Firefox/3.6.6,gzip(gfe)
+Message-ID: <1eaafdfe-9f95-4f25-8fff-58afed9aebb3@c33g2000yqm.googlegroups.com>
+Subject: Re: a very clean and simple s6 template
+From: dsanson <dsanson@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+I'm sorry. It is late and I was being absent minded.
+
+This template really *only* works in combination with my patched
+version of slideshow, using pandoc-ruby. This is because the
+slides.html.erb file doesn't contain <div class="layout"> bits that
+pandoc happily supplies.
+
+And, on the flip side, my patched version of slideshow only really
+works with this template: with other templates you will get duplicate
+layout divs.
+
+Both are fairly easy to fix. Probably the right thing to do is modify
+markdown.rb to chop off the layout div that pandoc-ruby produces, so
+that the patched version works with all templates, and then add those
+bits back into the template...
+
+

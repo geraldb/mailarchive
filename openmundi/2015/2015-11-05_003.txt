@@ -1,0 +1,189 @@
+From 6213574811055030272@xxx Thu Nov 05 08:03:42 +0000 2015
+X-GM-THRID: 6209936297020096512
+Date: Thu, 5 Nov 2015 00:03:41 -0800 (PST)
+From: Eckhard Licher <eckhard.licher@googlemail.com>
+To: openmundi <openmundi@googlegroups.com>
+Message-Id: <c355ef1d-cdf7-479c-8145-f71292da04f4@googlegroups.com>
+In-Reply-To: <CAAxEZd-4wHDKYowuQ0H3Ygzb0VYEWwSR6a9w24UNTY7UTi+Png@mail.gmail.com>
+References: <CAAxEZd-4wHDKYowuQ0H3Ygzb0VYEWwSR6a9w24UNTY7UTi+Png@mail.gmail.com>
+Subject: Re: factbook.json - 260+ Public Domain (Free) Country Profiles
+ Updated
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_61_564259906.1446710622065"
+X-Google-Token: EN2a7LEF9_Op9IVN-O80
+X-Google-IP: 85.158.138.21
+
+------=_Part_61_564259906.1446710622065
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_62_620450763.1446710622066"
+
+------=_Part_62_620450763.1446710622066
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+the json repo is great, just what is needed as input for the=20
+openw=E1=BA=82orldFactbook.
+
+May I suggest to include header information in the json files, such as the=
+=20
+following (taken form the de-chromed html files):
+
+---
+layout:       country
+title:        aa - Aruba
+permalink:    aa.html
+last_updated: 2015-09-24
+country_code: aa
+country_name: "Aruba"
+country_affiliation: (part of the Kingdom of the Netherlands)
+region_code:  cam
+region_name:  Central America and Caribbean
+---
+
+Taken the Aruba example the json file would look like the following:=20
+{
+  "Header": {
+    "layout": "country",
+    "title": "aa - Aruba",=20
+    "permalink": "aa.html"
+    "last_updated": "2015-09-24",
+     ...
+  },=20
+  "Introduction": {
+    "Background": {
+      "text": "Discovered and claimed for Spain in 1499, ..."
+    }
+  },
+....
+}
+
+Thanks
+
+Eckhard
+
+
+Am Montag, 26. Oktober 2015 13:44:25 UTC+1 schrieb Gerald Bauer:
+>
+> Hello,=20
+>
+>   If anyone follows along I've updated and rearranged the=20
+> /factbook.json [1] archive (repo). What's news?=20
+>
+>   All country profiles got updated using the latest (live) pages from=20
+> the CIA World Factbook site.=20
+>
+>   The /factbook.json archive now follows 1:1 the "official" structure e.g=
+.=20
+>
+>   All country profiles now use the two-letter GEC (formerly FIPS) codes=
+=20
+>     e.g. au for Austria, gm for Germany, and so on.=20
+>   All country profiles are now included (not just a selection) including=
+=20
+>    all oceans, the world, the gaza strip, the west bank etc.=20
+>
+>   The country profiles now get organized / stored by region=20
+>    as used / assigned by the World Factbook site e.g.:=20
+>
+>   - africa=20
+>   - antarctica=20
+>   - australia-oceania=20
+>   - central-america-n-caribbean=20
+>   - central-asia=20
+>   - east-n-southeast-asia=20
+>   - europe=20
+>   - middle-east=20
+>   - north-america=20
+>   - oceans=20
+>   - south-america=20
+>   - south-asia=20
+>   - world=20
+>
+>   That's it. Questions? Comments?  As always welcome. Cheers.=20
+>
+> [1] github.com/factbook/factbook.json=20
+>
+
+------=_Part_62_620450763.1446710622066
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<div><br></div><div>the json repo is great, just wha=
+t is needed as input for the openw=E1=BA=82orldFactbook.</div><div><br></di=
+v><div>May I suggest to include header information in the json files, such =
+as the following (taken form the de-chromed html files):</div><div><br></di=
+v><div><div>---</div><div>layout: =C2=A0 =C2=A0 =C2=A0 country</div><div>ti=
+tle: =C2=A0 =C2=A0 =C2=A0 =C2=A0aa - Aruba</div><div>permalink: =C2=A0 =C2=
+=A0aa.html</div><div>last_updated: 2015-09-24</div><div>country_code: aa</d=
+iv><div>country_name: &quot;Aruba&quot;</div><div>country_affiliation: (par=
+t of the Kingdom of the Netherlands)</div><div>region_code: =C2=A0cam</div>=
+<div>region_name: =C2=A0Central America and Caribbean</div><div>---</div><d=
+iv><br></div><div>Taken the Aruba example the json file would look like the=
+ following:=C2=A0</div><div><div>{</div><div>=C2=A0 &quot;Header&quot;: {</=
+div><div><div>=C2=A0 =C2=A0 &quot;layout&quot;: &quot;country&quot;,</div><=
+div>=C2=A0 =C2=A0 &quot;title&quot;: &quot;aa - Aruba&quot;,=C2=A0</div><di=
+v>=C2=A0 =C2=A0 &quot;permalink&quot;: &quot;aa.html&quot;</div><div>=C2=A0=
+ =C2=A0 &quot;last_updated&quot;: &quot;2015-09-24&quot;,</div><div>=C2=A0 =
+=C2=A0 =C2=A0...</div><div>=C2=A0 },=C2=A0<br></div></div><div>=C2=A0 &quot=
+;Introduction&quot;: {</div><div>=C2=A0 =C2=A0 &quot;Background&quot;: {</d=
+iv><div>=C2=A0 =C2=A0 =C2=A0 &quot;text&quot;: &quot;Discovered and claimed=
+ for Spain in 1499, ...&quot;</div><div>=C2=A0 =C2=A0 }</div><div>=C2=A0 },=
+</div></div><div>....</div><div>}</div><div><br></div><div>Thanks</div><div=
+><br></div><div>Eckhard</div><div><br></div><br>Am Montag, 26. Oktober 2015=
+ 13:44:25 UTC+1 schrieb Gerald Bauer:<blockquote class=3D"gmail_quote" styl=
+e=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left:=
+ 1ex;">Hello,
+<br>
+<br>=C2=A0 If anyone follows along I&#39;ve updated and rearranged the
+<br>/factbook.json [1] archive (repo). What&#39;s news?
+<br>
+<br>=C2=A0 All country profiles got updated using the latest (live) pages f=
+rom
+<br>the CIA World Factbook site.
+<br>
+<br>=C2=A0 The /factbook.json archive now follows 1:1 the &quot;official&qu=
+ot; structure e.g.
+<br>
+<br>=C2=A0 All country profiles now use the two-letter GEC (formerly FIPS) =
+codes
+<br>=C2=A0 =C2=A0 e.g. au for Austria, gm for Germany, and so on.
+<br>=C2=A0 All country profiles are now included (not just a selection) inc=
+luding
+<br>=C2=A0 =C2=A0all oceans, the world, the gaza strip, the west bank etc.
+<br>
+<br>=C2=A0 The country profiles now get organized / stored by region
+<br>=C2=A0 =C2=A0as used / assigned by the World Factbook site e.g.:
+<br>
+<br>=C2=A0 - africa
+<br>=C2=A0 - antarctica
+<br>=C2=A0 - australia-oceania
+<br>=C2=A0 - central-america-n-caribbean
+<br>=C2=A0 - central-asia
+<br>=C2=A0 - east-n-southeast-asia
+<br>=C2=A0 - europe
+<br>=C2=A0 - middle-east
+<br>=C2=A0 - north-america
+<br>=C2=A0 - oceans
+<br>=C2=A0 - south-america
+<br>=C2=A0 - south-asia
+<br>=C2=A0 - world
+<br>
+<br>=C2=A0 That&#39;s it. Questions? Comments? =C2=A0As always welcome. Che=
+ers.
+<br>
+<br>[1] <a href=3D"http://github.com/factbook/factbook.json" target=3D"_bla=
+nk" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/=
+url?q\75http%3A%2F%2Fgithub.com%2Ffactbook%2Ffactbook.json\46sa\75D\46sntz\=
+0751\46usg\75AFQjCNHmXGSEHZS7ILWWipRb6A1WX1njhw&#39;;return true;" onclick=
+=3D"this.href=3D&#39;http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%=
+2Ffactbook%2Ffactbook.json\46sa\75D\46sntz\0751\46usg\75AFQjCNHmXGSEHZS7ILW=
+WipRb6A1WX1njhw&#39;;return true;">github.com/factbook/factbook.<wbr>json</=
+a>
+<br></blockquote></div></div>
+------=_Part_62_620450763.1446710622066--
+
+------=_Part_61_564259906.1446710622065--
+

@@ -1,0 +1,68 @@
+From 2182243942400@xxx Tue Jun 16 00:16:45 +0000 2015
+X-GM-THRID: 2181341118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,db79862b51040cc
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.167.165 with SMTP id zp5mr4031788lbb.9.1410597080457;
+        Sat, 13 Sep 2014 01:31:20 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.205.76 with SMTP id le12ls115985lac.34.gmail; Sat, 13 Sep
+ 2014 01:31:19 -0700 (PDT)
+X-Received: by 10.152.120.166 with SMTP id ld6mr4010000lab.0.1410597079033;
+        Sat, 13 Sep 2014 01:31:19 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22a.google.com (mail-wi0-x22a.google.com [2a00:1450:400c:c05::22a])
+        by gmr-mx.google.com with ESMTPS id j12si282272wie.2.2014.09.13.01.31.19
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 13 Sep 2014 01:31:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22a as permitted sender) client-ip=2a00:1450:400c:c05::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f170.google.com with SMTP id em10so319815wid.3
+        for <opensport@googlegroups.com>; Sat, 13 Sep 2014 01:31:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=7QUx08BJD0OgB2ZXPHVOwak9/9Gvacdor7gNVxsZW2w=;
+        b=QJWOArJ+OtBdXSKPhQoWFmgsYkadym8cYMHOnwt4+MJIGipaza3jA2wzYeOin4/8uz
+         Q//QNd0ELoIwaPwgM14+pzRy6pd/i9Qhs7h6R8FphR3/dO9LhwV2DSvLr7TsIjedVBu9
+         WgHjqzyYfwfdKz5SSefZpfVPgvZ/SErOhRDNnPMhYL952ct4J9LTcvnhZRhyFWBTDTBw
+         ZREtq0MziBWvHUKzajD2WsuQEESAcxwGwDbCtCCPazMGoy75TcH4OQic5slQwdAS12ux
+         cfi2V5lQQitGMrCXklcD4BuSoRInHEesQmZC9FGE086SdZJsSGcy5j2zbqzok+gNdd0x
+         yFIQ==
+MIME-Version: 1.0
+X-Received: by 10.194.59.201 with SMTP id b9mr18033554wjr.43.1410597078930;
+ Sat, 13 Sep 2014 01:31:18 -0700 (PDT)
+Received: by 10.217.59.194 with HTTP; Sat, 13 Sep 2014 01:31:18 -0700 (PDT)
+In-Reply-To: <33e334d4-dbfe-42c3-9e6b-2c5f5ee7ba8b@googlegroups.com>
+References: <33e334d4-dbfe-42c3-9e6b-2c5f5ee7ba8b@googlegroups.com>
+Date: Sat, 13 Sep 2014 10:31:18 +0200
+Message-ID: <CAAxEZd9z91skvCEVWUY_j6965_tc6fc=U2NS503UUQrH=ikWLQ@mail.gmail.com>
+Subject: Re: [opensport] How to use the api?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Always best and recommend to use your database (with your leagues
+etc.) and run your own server.
+
+   To get started you can use the demo server running on
+footballdb.herokuapp.com
+
+   You can see all events listed @ footballdb.herokuapp.com/events
+
+   And the docu resides @ github.com/openfootball/api
+
+  Cheers.
+
+PS: For example try to get the champions league 2014/15 group phase
+teams  - http://footballdb.herokuapp.com/api/v1/event/cl.2014_15/teams
+ and so on.
+

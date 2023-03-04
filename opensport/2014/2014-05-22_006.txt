@@ -1,0 +1,66 @@
+From 750039072768@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 735777390592
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4c0ddad8e50128c7
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.232.38 with SMTP id tl6mr23666909pac.33.1400740808985;
+        Wed, 21 May 2014 23:40:08 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.29.225 with SMTP id b88ls1056597qgb.32.gmail; Wed, 21 May
+ 2014 23:40:08 -0700 (PDT)
+X-Received: by 10.140.109.199 with SMTP id l65mr1498qgf.32.1400740808739;
+        Wed, 21 May 2014 23:40:08 -0700 (PDT)
+X-Google-Doc-Id: 3fcdb279731f3c1e
+X-Google-Web-Client: true
+Date: Wed, 21 May 2014 23:40:07 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <d4a6dfef-f4ec-4a5a-93f1-1ca10dc68274@googlegroups.com>
+In-Reply-To: <1628d48d-ad59-46f9-8f13-a86e1d4e9399@googlegroups.com>
+References: <1628d48d-ad59-46f9-8f13-a86e1d4e9399@googlegroups.com>
+Subject: Re: Error building db
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_5251_1494242.1400740807577"
+X-Google-Token: EMe39psFXVog_wbm2pk0
+X-Google-IP: 62.47.153.145
+
+------=_Part_5251_1494242.1400740807577
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5252_15021461.1400740807577"
+
+------=_Part_5252_15021461.1400740807577
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+     Thanks for your interest in football.db.  The world-cup fixtures 
+requires / depend on the national teams and leagues (stored in the 
+national-teams [1] repo.
+
+   Thus, try:
+
+   $ sportdb setup   --include ./national-teams --worldinclude ./world.db 
+   $ sportdb update --include ./world-cup
+   
+   Or use the official build script [2]: 
+
+    rake build DATA=worldcup2014
+
+  Let us know if it works. Cheers.
+
+[1] github.com/openfootball/national-teams
+[2] github.com/openfootball/build
+
+------=_Part_5252_15021461.1400740807577
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<br><br>&nbsp; &nbsp;&nbsp; Thanks for your interest in football.db.&nbsp; The world-cup fixtures requires / depend on the national teams and leagues (stored in the national-teams [1] repo.<br><br>&nbsp;&nbsp; Thus, try:<br><br>&nbsp;&nbsp; $ sportdb setup&nbsp;&nbsp; --include ./national-teams --worldinclude ./world.db
+<br>&nbsp;&nbsp; $ sportdb update --include ./world-cup<br>&nbsp;&nbsp; <br>&nbsp;&nbsp; Or use the official build script [2]: <br><br>&nbsp; &nbsp; rake build DATA=worldcup2014<br><br>&nbsp; Let us know if it works. Cheers.<br><br>[1] github.com/openfootball/national-teams<br>[2] github.com/openfootball/build<br></div>
+------=_Part_5252_15021461.1400740807577--
+
+------=_Part_5251_1494242.1400740807577--
+

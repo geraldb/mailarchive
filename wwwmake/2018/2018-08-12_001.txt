@@ -1,0 +1,176 @@
+From 6588898378791256064@xxx Sun Aug 12 18:10:50 +0000 2018
+X-GM-THRID: 6588898378768187392
+X-Received: by 2002:a1c:7319:: with SMTP id d25-v6mr975140wmb.10.1534097450670;
+        Sun, 12 Aug 2018 11:10:50 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a7b:c0c8:: with SMTP id s8-v6ls1684828wmh.10.canary-gmail;
+ Sun, 12 Aug 2018 11:10:49 -0700 (PDT)
+X-Google-Smtp-Source: AA+uWPxw2hVakQKokAgxihodzkKUQP0P9kDXjfNTcB24joyXAndnLNsL5UNKosiO8ossilVgwrwm
+X-Received: by 2002:a1c:ae53:: with SMTP id x80-v6mr1015039wme.29.1534097449587;
+        Sun, 12 Aug 2018 11:10:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1534097449; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Eu0MQilw1uua9vIV84KzBiSnBI9JI13w49hN2Q+omDOztvPy3rpJSxu964EPGBosov
+         P0T4YTLZ7N6SPNQnxTmvWOrhbE1D1umE4aODXrWIvdSM6iKgOcSYKRM5bPBdUKoNrL2W
+         QyubkkZc++AFbymJ7NcHoCV6zd7Gn6DMBeQKMAk7mwNCRZxWgA4f/wbbfli2XsfBkb2K
+         C5xTEY41i0GOpbYKMic6Pv3dgO8CLjh6R2CK/YcPn1xH25+DMOvT+6AIiriVPEfLInF+
+         H0vk/hA3C4NJ7ZNHX0pZQpYk7fndgjVPKqWwnHks6Fw6aOfjUNbaWjG8PNDLu5gEzX9u
+         mJ2g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :mime-version:dkim-signature:arc-authentication-results;
+        bh=CklRCpvUDPsN26vqFvxrDSDJgcDWrSOM0dbg+Kd3aNE=;
+        b=AjD408ri/1ZV4nGl2A2VUN93rQBaI1ASSMgDUx1y1RMhA4/AnUDfeWui+DU4cNZSl3
+         aI009R4JX2PrqnDPIJQLrMMTtYpIiRXv+1YR0MoXnIJOOLnAvPmw8pA3QcsbiOyHvPbm
+         xcQGqVt3Xpt3Wxqb38B9WgwiYMbOvuZLN0Yi1zHFxGCqc6oXiBidha1GnxUmKRxmKo+1
+         qmvA7pcf9gUer15DPJRkO54uOLMm0Zo7I/IRNiePoQI8RJvlQl9cDL1TgGFp4/jzuGLY
+         JTHkotZymt/7oC2pveXEqJGlyuo7SB+Nrqh3JNUPVIqrt5V80avI5NyJACWQ2piyTBPR
+         jd2g==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=t4BZHRU8;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22f.google.com (mail-lj1-x22f.google.com. [2a00:1450:4864:20::22f])
+        by gmr-mx.google.com with ESMTPS id v18-v6si272296wmc.1.2018.08.12.11.10.49
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 12 Aug 2018 11:10:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22f as permitted sender) client-ip=2a00:1450:4864:20::22f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=t4BZHRU8;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22f.google.com with SMTP id f1-v6so10827288ljc.9
+        for <wwwmake@googlegroups.com>; Sun, 12 Aug 2018 11:10:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=CklRCpvUDPsN26vqFvxrDSDJgcDWrSOM0dbg+Kd3aNE=;
+        b=t4BZHRU8Y66QmpryA8f2d8S6vBdYeqywYYDv8omVP9Yq5afZZ3eMNTRx3V63ZLZ5f7
+         x6Ej+O8EJAUK9OhqArQ3GUf1dvl1vrr3uL25ZkAL/lI0l0gL+97zRdop6MP5ztTo0z8x
+         StFQvCg0lNn63rS8DLTxUhm9698laa+QStRHlobVqR/cGfctTDsocmYqPIdGy1cZ+ep0
+         HAGyKKgjRSS2zwKVmMfJyVZHfx3RO8FcrfxjjW9hwEq7fqsNENaswIv/pZJhS3UC671u
+         +K7ZiqAwirFAsBlUbhiB9wMkt8zTfvhrsN/6GOWAcRJ6IXEEeLgzsllXon1DGJ66+Ez+
+         9GxA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=CklRCpvUDPsN26vqFvxrDSDJgcDWrSOM0dbg+Kd3aNE=;
+        b=rvP+Dpw8s+Faj59C26Js5M4jB9ryGv8CJEiKbm0gzjEoBMMYluJYP9tZ9pHwi3Makz
+         wMkmYM6S9qnd6YUihv2mGMSNtxBoyufzIuj4C8DbU8h6nLYwEzBVzxYvtSMF4YdqKYN3
+         KuQJUc1MbWt2zLahXooAChWOy2gGRLreGeWe+KfEuDQ1eR1iPzx6K0ODhC7++dTbOAeq
+         VT4MDXBQIt+DDb4Vvak4z94LOIJ2Xh3JKQSlytGufk+6Q6zXi0kZjX4CyOeFoPs8kjOt
+         BdOflcmo4l/JJjaGy4Mxl1uKPj2gNx1G+hDhqwezhF88W3QZSbn4KPZ8CNlyzXkPezKn
+         fuUg==
+X-Gm-Message-State: AOUpUlHHRF6jxyWd+iqxt0gAxMbl2Z7f+aBrb88la/MaSLelZaODvQ5k
+	zgdhYy3cbNtLzwUeuWJNExmcD80/JUVwg1cXT/n0XV9H
+X-Received: by 2002:a2e:1b02:: with SMTP id b2-v6mr9822319ljb.24.1534097448853;
+ Sun, 12 Aug 2018 11:10:48 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:ab3:4c6b:0:0:0:0:0 with HTTP; Sun, 12 Aug 2018 11:10:48
+ -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 12 Aug 2018 20:10:48 +0200
+Message-ID: <CAAxEZd8zd3RDm+XR1t2nH=GnHxyAgNtTa7qmPZwZv2umqwRErg@mail.gmail.com>
+Subject: csvrecord - read in comma-separated values (csv) records with typed
+ structs / schemas
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I've put together a new library / gem called csvrecord [1] that
+let's you read in comma-separated values (csv) records
+with typed structs / schemas. Example.
+
+beer.csv:
+```
+Brewery,City,Name,Abv
+Andechser Klosterbrauerei,Andechs,Doppelbock Dunkel,7%
+Augustiner Br=C3=A4u M=C3=BCnchen,M=C3=BCnchen,Edelstoff,5.6%
+Bayerische Staatsbrauerei Weihenstephan,Freising,Hefe Weissbier,5.4%
+Brauerei Spezial,Bamberg,Rauchbier M=C3=A4rzen,5.1%
+Hacker-Pschorr Br=C3=A4u,M=C3=BCnchen,M=C3=BCnchner Dunkel,5.0%
+Staatliches Hofbr=C3=A4uhaus M=C3=BCnchen,M=C3=BCnchen,Hofbr=C3=A4u Oktober=
+festbier,6.3%
+```
+
+Step 1: Define a (typed) struct for the comma-separated values (csv)
+records. Example:
+
+    require 'csvrecord'
+
+   Beer =3D CsvRecord.define do
+     field :brewery        ## note: default type is :string
+     field :city
+     field :name
+     field :abv, Float     ## allows type specified as class (or use :float=
+)
+   end
+
+   # or in "classic" style:
+
+   class Beer < CsvRecord::Base
+     field :brewery
+     field :city
+     field :name
+     field :abv, Float
+   end
+
+
+ Step 2: Read in the comma-separated values (csv) datafile. Example:
+
+   beers =3D Beer.read( 'beer.csv' ).to_a
+
+   puts "#{beers.size} beers:"
+   pp beers
+
+pretty prints (pp):
+
+6 beers:
+[#<Beer:0x302c760
+    @abv     =3D 7.0,
+    @brewery =3D "Andechser Klosterbrauerei",
+    @city    =3D "Andechs",
+    @name    =3D "Doppelbock Dunkel">,
+ #<Beer:0x3026fe8
+    @abv     =3D 5.6,
+    @brewery =3D "Augustiner Br\u00E4u M\u00FCnchen",
+    @city    =3D "M\u00FCnchen",
+    @name    =3D "Edelstoff">,
+ ...
+]
+
+Or loop over the records. Example:
+
+  Beer.read( data ).each do |rec|
+    puts "#{rec.name} (#{rec.abv}%) by #{rec.brewery}, #{rec.city}"
+  end
+
+printing:
+
+Doppelbock Dunkel (7.0%) by Andechser Klosterbrauerei, Andechs
+Edelstoff (5.6%) by Augustiner Br=C3=A4u M=C3=BCnchen, M=C3=BCnchen
+Hefe Weissbier (5.4%) by Bayerische Staatsbrauerei Weihenstephan, Freising
+Rauchbier M=C3=A4rzen (5.1%) by Brauerei Spezial, Bamberg
+M=C3=BCnchner Dunkel (5.0%) by Hacker-Pschorr Br=C3=A4u, M=C3=BCnchen
+Hofbr=C3=A4u Oktoberfestbier (6.3%) by Staatliches Hofbr=C3=A4uhaus M=C3=BC=
+nchen, M=C3=BCnchen
+
+
+Or create new records from scratch. Example:
+
+beer =3D Beer.new( brewery: 'Andechser Klosterbrauerei',
+                 city:    'Andechs',
+                 name:    'Doppelbock Dunkel' )
+
+And so on and so forth.
+Happy hacking and data wrangling with ruby. Cheers. Prost.
+
+
+[1] https://github.com/csv11/csvrecord
+

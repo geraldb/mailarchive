@@ -1,0 +1,311 @@
+From 6231756232217067520@xxx Thu Dec 24 07:56:54 +0000 2015
+X-GM-THRID: 6231756229931171840
+X-Received: by 10.129.155.210 with SMTP id s201mr23866028ywg.9.1450943814684;
+        Wed, 23 Dec 2015 23:56:54 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.32.247 with SMTP id h110ls3212058qgh.60.gmail; Wed, 23 Dec
+ 2015 23:56:54 -0800 (PST)
+X-Received: by 10.140.161.6 with SMTP id h6mr29888791qhh.1.1450943814079;
+        Wed, 23 Dec 2015 23:56:54 -0800 (PST)
+Received: by 10.50.7.99 with SMTP id i3msiga;
+        Wed, 23 Dec 2015 21:45:57 -0800 (PST)
+X-Received: by 10.50.73.202 with SMTP id n10mr590900igv.8.1450935957363;
+        Wed, 23 Dec 2015 21:45:57 -0800 (PST)
+X-Google-Web-Client: true
+Date: Wed, 23 Dec 2015 21:45:56 -0800 (PST)
+From: Johan Oakes <johanoakes@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <4b6414c5-ecaa-495c-a89c-3a5975ba9246@googlegroups.com>
+Subject: Querying nested documents
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1323_1890347308.1450935956412"
+X-Google-Token: EJSN7rMFMYKlv8APdUM0
+X-Google-IP: 24.240.239.209
+
+------=_Part_1323_1890347308.1450935956412
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1324_1753732548.1450935956413"
+
+------=_Part_1324_1753732548.1450935956413
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+So am I trying to use the Node.js driver to query a set of JSON data, 
+specifically en.1.json in football.json. I've seen all the posts using dot 
+notation, and all that, but I am not getting anywhere. Below is an example 
+JSON of the data that I am working with. I am trying to query all the 
+matches that Arsenal is involved in. I am getting nowhere since I am not 
+too sure how to query the name under team1, or team2 for that matter (such 
+that it will only show documents if Arsenal was in team1 or team2). I 
+thought team1, team2 should be an array, and that would make things easier. 
+
+
+{
+    "_id" : ObjectId("56773d88a09bc70f31a900d5"),
+    "name" : "English Premier League 2012/13",
+    "rounds" : [ 
+        {
+            "name" : "Matchday 1",
+            "matches" : [ 
+                {
+                    "date" : "2012-08-18",
+                    "team1" : {
+                        "key" : "arsenal",
+                        "name" : "Arsenal",
+                        "code" : "ARS"
+                    },
+                    "team2" : {
+                        "key" : "sunderland",
+                        "name" : "Sunderland",
+                        "code" : "SUN"
+                    },
+                    "score1" : 0,
+                    "score2" : 0
+                }, 
+                {
+                    "date" : "2012-08-18",
+                    "team1" : {
+                        "key" : "fulham",
+                        "name" : "Fulham",
+                        "code" : "FUL"
+                    },
+                    "team2" : {
+                        "key" : "norwich",
+                        "name" : "Norwich",
+                        "code" : "NOR"
+                    },
+                    "score1" : 5,
+                    "score2" : 0
+                }, 
+
+
+------=_Part_1324_1753732548.1450935956413
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><span style=3D"color: rgb(34, 36, 38); font-family: Arial,=
+ &#39;Helvetica Neue&#39;, Helvetica, sans-serif; font-size: 15px; line-hei=
+ght: 19.5px;">So am I trying to use the Node.js driver to query a set of JS=
+ON data, specifically en.1.json in football.json. I&#39;ve seen all the pos=
+ts using dot notation, and all that, but I am not getting anywhere. Below i=
+s an example JSON of the data that I am working with. I am trying to query =
+all the matches that Arsenal is involved in. I am getting nowhere since I a=
+m not too sure how to query the name under team1, or team2 for that matter =
+(such that it will only show documents if Arsenal was in team1 or team2). I=
+ thought team1, team2 should be an array, and that would make things easier=
+.=C2=A0</span><div><font color=3D"#222426" face=3D"Arial, Helvetica Neue, H=
+elvetica, sans-serif"><span style=3D"font-size: 15px; line-height: 19.5px;"=
+><br></span></font></div><div><font color=3D"#222426" face=3D"Arial, Helvet=
+ica Neue, Helvetica, sans-serif"><span style=3D"font-size: 15px; line-heigh=
+t: 19.5px;"><br></span></font><div><pre class=3D"default prettyprint pretty=
+printed" style=3D"margin-bottom: 1em; padding: 5px; overflow: auto; width: =
+auto; max-height: 600px; font-family: Consolas, Menlo, Monaco, &#39;Lucida =
+Console&#39;, &#39;Liberation Mono&#39;, &#39;DejaVu Sans Mono&#39;, &#39;B=
+itstream Vera Sans Mono&#39;, &#39;Courier New&#39;, monospace, sans-serif;=
+ color: rgb(57, 51, 24); word-wrap: normal; background-color: rgb(238, 238,=
+ 238);"><code style=3D"font-family: Consolas, Menlo, Monaco, &#39;Lucida Co=
+nsole&#39;, &#39;Liberation Mono&#39;, &#39;DejaVu Sans Mono&#39;, &#39;Bit=
+stream Vera Sans Mono&#39;, &#39;Courier New&#39;, monospace, sans-serif; w=
+hite-space: inherit;"><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">{<=
+/span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);">
+    </span><span class=3D"str" style=3D"color: rgb(128, 0, 0);">&quot;_id&q=
+uot;</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span=
+ class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><span class=3D"pln" s=
+tyle=3D"color: rgb(0, 0, 0);"> </span><span class=3D"typ" style=3D"color: r=
+gb(43, 145, 175);">ObjectId</span><span class=3D"pun" style=3D"color: rgb(0=
+, 0, 0);">(</span><span class=3D"str" style=3D"color: rgb(128, 0, 0);">&quo=
+t;56773d88a09bc70f31a900d5&quot;</span><span class=3D"pun" style=3D"color: =
+rgb(0, 0, 0);">),</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);">
+    </span><span class=3D"str" style=3D"color: rgb(128, 0, 0);">&quot;name&=
+quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><spa=
+n class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><span class=3D"pln" =
+style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"str" style=3D"color: =
+rgb(128, 0, 0);">&quot;English Premier League 2012/13&quot;</span><span cla=
+ss=3D"pun" style=3D"color: rgb(0, 0, 0);">,</span><span class=3D"pln" style=
+=3D"color: rgb(0, 0, 0);">
+    </span><span class=3D"str" style=3D"color: rgb(128, 0, 0);">&quot;round=
+s&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><s=
+pan class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><span class=3D"pln=
+" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"pun" style=3D"color=
+: rgb(0, 0, 0);">[</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);"=
+>=20
+        </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">{</span><=
+span class=3D"pln" style=3D"color: rgb(0, 0, 0);">
+            </span><span class=3D"str" style=3D"color: rgb(128, 0, 0);">&qu=
+ot;name&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </s=
+pan><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><span class=
+=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"str" style=
+=3D"color: rgb(128, 0, 0);">&quot;Matchday 1&quot;</span><span class=3D"pun=
+" style=3D"color: rgb(0, 0, 0);">,</span><span class=3D"pln" style=3D"color=
+: rgb(0, 0, 0);">
+            </span><span class=3D"str" style=3D"color: rgb(128, 0, 0);">&qu=
+ot;matches&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> =
+</span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><span cla=
+ss=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"pun" style=
+=3D"color: rgb(0, 0, 0);">[</span><span class=3D"pln" style=3D"color: rgb(0=
+, 0, 0);">=20
+                </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">{=
+</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);">
+                    </span><span class=3D"str" style=3D"color: rgb(128, 0, =
+0);">&quot;date&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0=
+);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><spa=
+n class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"str" =
+style=3D"color: rgb(128, 0, 0);">&quot;2012-08-18&quot;</span><span class=
+=3D"pun" style=3D"color: rgb(0, 0, 0);">,</span><span class=3D"pln" style=
+=3D"color: rgb(0, 0, 0);">
+                    </span><span class=3D"str" style=3D"color: rgb(128, 0, =
+0);">&quot;team1&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0, =
+0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><sp=
+an class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"pun"=
+ style=3D"color: rgb(0, 0, 0);">{</span><span class=3D"pln" style=3D"color:=
+ rgb(0, 0, 0);">
+                        </span><span class=3D"str" style=3D"color: rgb(128,=
+ 0, 0);">&quot;key&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0=
+, 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><=
+span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"st=
+r" style=3D"color: rgb(128, 0, 0);">&quot;arsenal&quot;</span><span class=
+=3D"pun" style=3D"color: rgb(0, 0, 0);">,</span><span class=3D"pln" style=
+=3D"color: rgb(0, 0, 0);">
+                        </span><span class=3D"str" style=3D"color: rgb(128,=
+ 0, 0);">&quot;name&quot;</span><span class=3D"pln" style=3D"color: rgb(0, =
+0, 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span>=
+<span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"s=
+tr" style=3D"color: rgb(128, 0, 0);">&quot;Arsenal&quot;</span><span class=
+=3D"pun" style=3D"color: rgb(0, 0, 0);">,</span><span class=3D"pln" style=
+=3D"color: rgb(0, 0, 0);">
+                        </span><span class=3D"str" style=3D"color: rgb(128,=
+ 0, 0);">&quot;code&quot;</span><span class=3D"pln" style=3D"color: rgb(0, =
+0, 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span>=
+<span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"s=
+tr" style=3D"color: rgb(128, 0, 0);">&quot;ARS&quot;</span><span class=3D"p=
+ln" style=3D"color: rgb(0, 0, 0);">
+                    </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0)=
+;">},</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);">
+                    </span><span class=3D"str" style=3D"color: rgb(128, 0, =
+0);">&quot;team2&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0, =
+0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><sp=
+an class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"pun"=
+ style=3D"color: rgb(0, 0, 0);">{</span><span class=3D"pln" style=3D"color:=
+ rgb(0, 0, 0);">
+                        </span><span class=3D"str" style=3D"color: rgb(128,=
+ 0, 0);">&quot;key&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0=
+, 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><=
+span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"st=
+r" style=3D"color: rgb(128, 0, 0);">&quot;sunderland&quot;</span><span clas=
+s=3D"pun" style=3D"color: rgb(0, 0, 0);">,</span><span class=3D"pln" style=
+=3D"color: rgb(0, 0, 0);">
+                        </span><span class=3D"str" style=3D"color: rgb(128,=
+ 0, 0);">&quot;name&quot;</span><span class=3D"pln" style=3D"color: rgb(0, =
+0, 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span>=
+<span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"s=
+tr" style=3D"color: rgb(128, 0, 0);">&quot;Sunderland&quot;</span><span cla=
+ss=3D"pun" style=3D"color: rgb(0, 0, 0);">,</span><span class=3D"pln" style=
+=3D"color: rgb(0, 0, 0);">
+                        </span><span class=3D"str" style=3D"color: rgb(128,=
+ 0, 0);">&quot;code&quot;</span><span class=3D"pln" style=3D"color: rgb(0, =
+0, 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span>=
+<span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"s=
+tr" style=3D"color: rgb(128, 0, 0);">&quot;SUN&quot;</span><span class=3D"p=
+ln" style=3D"color: rgb(0, 0, 0);">
+                    </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0)=
+;">},</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);">
+                    </span><span class=3D"str" style=3D"color: rgb(128, 0, =
+0);">&quot;score1&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0,=
+ 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><s=
+pan class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"lit=
+" style=3D"color: rgb(128, 0, 0);">0</span><span class=3D"pun" style=3D"col=
+or: rgb(0, 0, 0);">,</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0)=
+;">
+                    </span><span class=3D"str" style=3D"color: rgb(128, 0, =
+0);">&quot;score2&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0,=
+ 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><s=
+pan class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"lit=
+" style=3D"color: rgb(128, 0, 0);">0</span><span class=3D"pln" style=3D"col=
+or: rgb(0, 0, 0);">
+                </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">}=
+,</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);">=20
+                </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">{=
+</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);">
+                    </span><span class=3D"str" style=3D"color: rgb(128, 0, =
+0);">&quot;date&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0=
+);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><spa=
+n class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"str" =
+style=3D"color: rgb(128, 0, 0);">&quot;2012-08-18&quot;</span><span class=
+=3D"pun" style=3D"color: rgb(0, 0, 0);">,</span><span class=3D"pln" style=
+=3D"color: rgb(0, 0, 0);">
+                    </span><span class=3D"str" style=3D"color: rgb(128, 0, =
+0);">&quot;team1&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0, =
+0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><sp=
+an class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"pun"=
+ style=3D"color: rgb(0, 0, 0);">{</span><span class=3D"pln" style=3D"color:=
+ rgb(0, 0, 0);">
+                        </span><span class=3D"str" style=3D"color: rgb(128,=
+ 0, 0);">&quot;key&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0=
+, 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><=
+span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"st=
+r" style=3D"color: rgb(128, 0, 0);">&quot;fulham&quot;</span><span class=3D=
+"pun" style=3D"color: rgb(0, 0, 0);">,</span><span class=3D"pln" style=3D"c=
+olor: rgb(0, 0, 0);">
+                        </span><span class=3D"str" style=3D"color: rgb(128,=
+ 0, 0);">&quot;name&quot;</span><span class=3D"pln" style=3D"color: rgb(0, =
+0, 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span>=
+<span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"s=
+tr" style=3D"color: rgb(128, 0, 0);">&quot;Fulham&quot;</span><span class=
+=3D"pun" style=3D"color: rgb(0, 0, 0);">,</span><span class=3D"pln" style=
+=3D"color: rgb(0, 0, 0);">
+                        </span><span class=3D"str" style=3D"color: rgb(128,=
+ 0, 0);">&quot;code&quot;</span><span class=3D"pln" style=3D"color: rgb(0, =
+0, 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span>=
+<span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"s=
+tr" style=3D"color: rgb(128, 0, 0);">&quot;FUL&quot;</span><span class=3D"p=
+ln" style=3D"color: rgb(0, 0, 0);">
+                    </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0)=
+;">},</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);">
+                    </span><span class=3D"str" style=3D"color: rgb(128, 0, =
+0);">&quot;team2&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0, =
+0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><sp=
+an class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"pun"=
+ style=3D"color: rgb(0, 0, 0);">{</span><span class=3D"pln" style=3D"color:=
+ rgb(0, 0, 0);">
+                        </span><span class=3D"str" style=3D"color: rgb(128,=
+ 0, 0);">&quot;key&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0=
+, 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><=
+span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"st=
+r" style=3D"color: rgb(128, 0, 0);">&quot;norwich&quot;</span><span class=
+=3D"pun" style=3D"color: rgb(0, 0, 0);">,</span><span class=3D"pln" style=
+=3D"color: rgb(0, 0, 0);">
+                        </span><span class=3D"str" style=3D"color: rgb(128,=
+ 0, 0);">&quot;name&quot;</span><span class=3D"pln" style=3D"color: rgb(0, =
+0, 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span>=
+<span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"s=
+tr" style=3D"color: rgb(128, 0, 0);">&quot;Norwich&quot;</span><span class=
+=3D"pun" style=3D"color: rgb(0, 0, 0);">,</span><span class=3D"pln" style=
+=3D"color: rgb(0, 0, 0);">
+                        </span><span class=3D"str" style=3D"color: rgb(128,=
+ 0, 0);">&quot;code&quot;</span><span class=3D"pln" style=3D"color: rgb(0, =
+0, 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span>=
+<span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"s=
+tr" style=3D"color: rgb(128, 0, 0);">&quot;NOR&quot;</span><span class=3D"p=
+ln" style=3D"color: rgb(0, 0, 0);">
+                    </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0)=
+;">},</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);">
+                    </span><span class=3D"str" style=3D"color: rgb(128, 0, =
+0);">&quot;score1&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0,=
+ 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><s=
+pan class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"lit=
+" style=3D"color: rgb(128, 0, 0);">5</span><span class=3D"pun" style=3D"col=
+or: rgb(0, 0, 0);">,</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0)=
+;">
+                    </span><span class=3D"str" style=3D"color: rgb(128, 0, =
+0);">&quot;score2&quot;</span><span class=3D"pln" style=3D"color: rgb(0, 0,=
+ 0);"> </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">:</span><s=
+pan class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span><span class=3D"lit=
+" style=3D"color: rgb(128, 0, 0);">0</span><span class=3D"pln" style=3D"col=
+or: rgb(0, 0, 0);">
+                </span><span class=3D"pun" style=3D"color: rgb(0, 0, 0);">}=
+,</span><span class=3D"pln" style=3D"color: rgb(0, 0, 0);"> </span></code><=
+/pre></div></div></div>
+------=_Part_1324_1753732548.1450935956413--
+------=_Part_1323_1890347308.1450935956412--
+

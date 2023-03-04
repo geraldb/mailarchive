@@ -1,0 +1,56 @@
+From 545548926976@xxx Tue Jun 16 00:17:14 +0000 2015
+X-GM-THRID: 549100453888
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,bc0aee3ceaa5c427,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.15.53.136 with SMTP id r8mr145392eew.5.1397842214735;
+        Fri, 18 Apr 2014 10:30:14 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.87.51 with SMTP id u19ls328274laz.52.gmail; Fri, 18 Apr
+ 2014 10:30:14 -0700 (PDT)
+X-Received: by 10.152.115.171 with SMTP id jp11mr2089288lab.3.1397842214340;
+        Fri, 18 Apr 2014 10:30:14 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x230.google.com (mail-wg0-x230.google.com [2a00:1450:400c:c00::230])
+        by gmr-mx.google.com with ESMTPS id fp6si100557wib.2.2014.04.18.10.30.14
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 18 Apr 2014 10:30:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::230 as permitted sender) client-ip=2a00:1450:400c:c00::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f48.google.com with SMTP id l18so730693wgh.19
+        for <opensport@googlegroups.com>; Fri, 18 Apr 2014 10:30:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=bE3UIoMOFeJDSzCfdF+j/OraLKYTpHan3KOHNcx5JhM=;
+        b=ws/tkW3s59/nTKjjCV+Oj9qAOXjXkZVunnFKNguWyzryXWTca5EUDpru09l7DP7e0n
+         xYid2MACMY+69l0rxnSrzO/IhxvXXP+mrk5JLriwnK9HRe3NpZeSzuMtJVGfk877077G
+         /9YI2Hx73bIHA18uNTbPC1ewidTS9MZg+ODSDW5h72bKYm3QDALf4wqHYeb6jQEI6GRA
+         Czg2Gi3zlZwX7O8f/82I0IW//I1/8RDfKNvBqndFjRC4NHUxCQB3nBpwaCm7Qcd5J0r1
+         dnAM7w3fmuoN61+bp3/0foLGths2Gm74g3jkzI7zOG4zvyUuWRobSJVY8hkUa7HGHIqN
+         Qzzw==
+MIME-Version: 1.0
+X-Received: by 10.180.99.40 with SMTP id en8mr3240192wib.24.1397842214228;
+ Fri, 18 Apr 2014 10:30:14 -0700 (PDT)
+Received: by 10.217.66.200 with HTTP; Fri, 18 Apr 2014 10:30:14 -0700 (PDT)
+Date: Fri, 18 Apr 2014 19:30:14 +0200
+Message-ID: <CAAxEZd9TZdS-nbi0GYa2VbSsCbFPX6mpJfosw8o+H04P8SUU_w@mail.gmail.com>
+Subject: New Football Repo for the Club World Cup - github.com/openfootball/club-world-cup
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: The Club World Cup now lives in its own repo [1]. Tournaments
+so far include the world cup in Japan 2012 and Morocco 2013.
+
+   Cheers.
+
+[1] github.com/openfootball/club-world-cup
+

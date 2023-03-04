@@ -1,0 +1,100 @@
+From 2043141947392@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 2040254169088
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,c573aa3a44abd38,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.201.198 with SMTP id kc6mr3306377wjc.0.1408397312517;
+        Mon, 18 Aug 2014 14:28:32 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.75.104 with SMTP id b8ls414472wiw.24.canary; Mon, 18 Aug
+ 2014 14:28:31 -0700 (PDT)
+X-Received: by 10.180.89.170 with SMTP id bp10mr239790wib.4.1408397311938;
+        Mon, 18 Aug 2014 14:28:31 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22c.google.com (mail-wi0-x22c.google.com [2a00:1450:400c:c05::22c])
+        by gmr-mx.google.com with ESMTPS id m6si686665wik.2.2014.08.18.14.28.31
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 18 Aug 2014 14:28:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22c as permitted sender) client-ip=2a00:1450:400c:c05::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22c as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f172.google.com with SMTP id n3so4446532wiv.11
+        for <opensport@googlegroups.com>; Mon, 18 Aug 2014 14:28:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=I4/488LZXRqMxQyb8GwZO0vSaaCrN5fq2rbrLPqYVJo=;
+        b=qkMj7J4IMRVEGHbW6Dl+bo571/CuvlQpInCBxwg1Een8lXHbNVfbFpRjdvvwR9shMd
+         +cOpyyTuXv78u6YenVUsxUuOHZ7r0IlEX4HZkxhRaIXeI4C7cNSGHbb2bwkXADJwD61E
+         6U+vjcwePfCs5ojp5uYMJtTqUIaK9Ww7VRhMc5cois/grkLX118zkkQAcUrxy5uP4xpE
+         rjfQdGCVFhVClGKNk860lYMjRTYhUuxkej5xPrO0PrWVgLT8RcPHkrgk8aZc7QnhDf5/
+         Hx+JNzm5vgMQJX8euW3icmzkwOgn8XalK9NkCakcZr3zUatvdsJtfWKxxmZ6x1nOieJy
+         tRdQ==
+MIME-Version: 1.0
+X-Received: by 10.180.189.4 with SMTP id ge4mr1703446wic.25.1408397311839;
+ Mon, 18 Aug 2014 14:28:31 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Mon, 18 Aug 2014 14:28:31 -0700 (PDT)
+Date: Mon, 18 Aug 2014 23:28:31 +0200
+Message-ID: <CAAxEZd9=8MWBSiNwRRVFmMrzRRD661LM+tT2UdUdn6zo1TkocA@mail.gmail.com>
+Subject: sportkit - sport.db.starter Update - Build Your Own HTTP JSON API
+ (Ruby Edition)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've updated the sport.db.starter kit (Ruby Edition) [1]. What's new?
+
+  I've cleaned up the code - the idea is to make it easier to get
+started and change as needed, for example:
+
+  To start the sample web service there's no longer a rackup config.ru
+(might confuse newbies - what's rack anyway?) - now just use:
+
+  $ ruby server.rb
+
+  I moved the database configuration into config/database.yml e.g.
+
+ development:
+    adapter: sqlite3
+    database: football.db
+
+  Again the idea is making it easier to use.
+
+  Last but not least I added two new sample services, that is, / and /events.
+
+  The /events service lists all events in your database you can use
+for /events/:key/teams|rounds and so on.
+
+  The / (index) service lists all endpoints (services) e.g.
+
+{
+  "endpoints": {
+    "list_events": {
+      "doc": "list all events",
+      "url": "/events"
+    },
+    "list_event_teams": {
+      "doc": "list teams for an event",
+      "url": "/event/:key/teams"
+    },
+    "list_event_rounds": {
+      "doc": "list rounds for an event",
+      "url": "/event/:key/rounds"
+    },
+    "list_event_games_for_round": {
+      "doc": "list games for an event round",
+      "url": "/event/:key/round/:pos"
+    }
+  }
+}
+
+  The idea is kind of little builtin self-docu.  That's it. Enjoy. Cheers.
+
+[1] github.com/sportkit/sport.db.starter.ruby
+

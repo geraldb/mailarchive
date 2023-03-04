@@ -1,0 +1,106 @@
+From 1860617371648@xxx Tue Jun 16 00:16:51 +0000 2015
+X-GM-THRID: 1861086085120
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,f3433d66f198c649
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.68.69.98 with SMTP id d2mr4218457pbu.0.1407292106426;
+        Tue, 05 Aug 2014 19:28:26 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.56.105 with SMTP id z9ls3128991igp.9.canary; Tue, 05 Aug
+ 2014 19:28:25 -0700 (PDT)
+X-Received: by 10.50.21.4 with SMTP id r4mr237133ige.5.1407292105846;
+        Tue, 05 Aug 2014 19:28:25 -0700 (PDT)
+X-Google-Doc-Id: 7b74982b38a9df16
+X-Google-Web-Client: true
+Date: Tue, 5 Aug 2014 19:28:24 -0700 (PDT)
+From: =?UTF-8?B?5qyn5q+F?= <nttdocomo.ouyi@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <7d892c64-8738-47aa-8d1b-5b98beee6b96@googlegroups.com>
+Subject: And ActiveRecord::RecordNotFound ERROR when building champion
+ league
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2_876178409.1407292104393"
+X-Google-Token: EMilhp8FmtlMkkpA-G00
+X-Google-IP: 74.82.169.71
+
+------=_Part_2_876178409.1407292104393
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3_635152584.1407292104393"
+
+------=_Part_3_635152584.1407292104393
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+When the step go to build champion league, I got this error
+
+[debug] enter load( name=>>europe-champions-league!/2011-12/cl<<, 
+include_path=>>../europe-champions-league<<)
+[info] parsing data 'europe-champions-league!/2011-12/cl' 
+(../europe-champions-league/2011-12/cl.yml)...
+[debug] yaml key:String >>league<<, value:String >>cl<<
+[debug] yaml key:String >>season<<, value:String >>2011/12<<
+[debug] yaml key:String >>start_at<<, value:Date >>2011-10-10<<
+[debug] yaml key:String >>team3<<, value:FalseClass >>false<<
+[debug] yaml key:String >>fixtures<<, value:Array >>["cl_finals"]<<
+[debug] yaml key:String >>teams<<, value:Array >>["madrid", "barcelona", 
+"bayern", "leverkusen", "chelsea", "arsenal", "marseille", "lyon", "inter", 
+"napoli", "milan", "moskva", "zenit", "benfica", "basel", "apoel"]<<
+rake aborted!
+ActiveRecord::RecordNotFound
+/var/www/openfootball/openfootball/build/tasks/setups/all.rake:41:in `block 
+in <top (required)>'
+Tasks: TOP => build => importsport => all
+
+
+I seems to be the ActiveRecord can't find the team "moskva" or "basel" in 
+the database, because I search the two team in database and got nothing. I 
+seems like the russia clubs just import the "zenit", but other is ignore. 
+but I can't find any error in the setups files
+
+------=_Part_3_635152584.1407292104393
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+When the step go to&nbsp;build champion league, I got this error<div><br></=
+div><div><div class=3D"prettyprint" style=3D"border: 1px solid rgb(187, 187=
+, 187); word-wrap: break-word; background-color: rgb(250, 250, 250);"><code=
+ class=3D"prettyprint"><div class=3D"subprettyprint"><div class=3D"subprett=
+yprint">[debug] enter load( name=3D&gt;&gt;europe-champions-league!/2011-12=
+/cl&lt;&lt;, include_path=3D&gt;&gt;../europe-champions-league&lt;&lt;)</di=
+v><div class=3D"subprettyprint">[info] parsing data 'europe-champions-leagu=
+e!/2011-12/cl' (../europe-champions-league/2011-12/cl.yml)...</div><div cla=
+ss=3D"subprettyprint">[debug] yaml key:String &gt;&gt;league&lt;&lt;, value=
+:String &gt;&gt;cl&lt;&lt;</div><div class=3D"subprettyprint">[debug] yaml =
+key:String &gt;&gt;season&lt;&lt;, value:String &gt;&gt;2011/12&lt;&lt;</di=
+v><div class=3D"subprettyprint">[debug] yaml key:String &gt;&gt;start_at&lt=
+;&lt;, value:Date &gt;&gt;2011-10-10&lt;&lt;</div><div class=3D"subprettypr=
+int">[debug] yaml key:String &gt;&gt;team3&lt;&lt;, value:FalseClass &gt;&g=
+t;false&lt;&lt;</div><div class=3D"subprettyprint">[debug] yaml key:String =
+&gt;&gt;fixtures&lt;&lt;, value:Array &gt;&gt;["cl_finals"]&lt;&lt;</div><d=
+iv class=3D"subprettyprint">[debug] yaml key:String &gt;&gt;teams&lt;&lt;, =
+value:Array &gt;&gt;["madrid", "barcelona", "bayern", "leverkusen", "chelse=
+a", "arsenal", "marseille", "lyon", "inter", "napoli", "milan", "moskva", "=
+zenit", "benfica", "basel", "apoel"]&lt;&lt;</div><div class=3D"subprettypr=
+int">rake aborted!</div><div class=3D"subprettyprint">ActiveRecord::RecordN=
+otFound</div><div class=3D"subprettyprint">/var/www/openfootball/openfootba=
+ll/build/tasks/setups/all.rake:41:in `block in &lt;top (required)&gt;'</div=
+><div class=3D"subprettyprint">Tasks: TOP =3D&gt; build =3D&gt; importsport=
+ =3D&gt; all</div><div><br></div></div></code></div><br>I seems to be the&n=
+bsp;<span style=3D"font-family: monospace; background-color: rgb(250, 250, =
+250);">ActiveRecord can't find the team "</span><span style=3D"font-family:=
+ monospace; background-color: rgb(250, 250, 250);">moskva</span><span style=
+=3D"font-family: monospace; background-color: rgb(250, 250, 250);">" or "</=
+span><span style=3D"font-family: monospace; background-color: rgb(250, 250,=
+ 250);">basel</span><span style=3D"font-family: monospace; background-color=
+: rgb(250, 250, 250);">" in the database, because I search the two team in =
+database and got nothing. I seems like the russia clubs just import the "</=
+span><span style=3D"font-family: monospace; background-color: rgb(250, 250,=
+ 250);">zenit</span><span style=3D"font-family: monospace; background-color=
+: rgb(250, 250, 250);">", but other is ignore. but I can't find any error i=
+n the setups files</span></div>
+------=_Part_3_635152584.1407292104393--
+
+------=_Part_2_876178409.1407292104393--
+

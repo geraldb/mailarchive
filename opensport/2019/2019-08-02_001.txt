@@ -1,0 +1,157 @@
+From 6720619104298860544@xxx Fri Aug 02 17:14:31 +0000 2019
+X-GM-THRID: 6720619103775621120
+X-Received: by 2002:a05:600c:20c1:: with SMTP id y1mr5480556wmm.10.1564766071171;
+        Fri, 02 Aug 2019 10:14:31 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a1c:2d02:: with SMTP id t2ls26726082wmt.0.canary-gmail; Fri,
+ 02 Aug 2019 10:14:30 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqzzQfACahwV/vimZqgcwhRJOkOrJQJrSLJs2j7OHZLl41vwkRQQjUce1zUeJvzw9zcytArP
+X-Received: by 2002:a1c:e009:: with SMTP id x9mr5212313wmg.5.1564766070447;
+        Fri, 02 Aug 2019 10:14:30 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1564766070; cv=none;
+        d=google.com; s=arc-20160816;
+        b=pjkUJed3XhXxWWQhV4HufrOLBU6pws+vco7yG8+must1eBFbyUShT+gWGitKqjtI4r
+         DjHhAssAqvDvXYoMWvgPiifzxw4IPRwfaHNwGIruMBhpWUfyBKnGycSd1G0SOxd0Mplq
+         EL/4n++LzLXd4Q+8CnVx+if/y2vhMTDlHN5ssynGXn3q+MX5MNRTJ2umDjXFI7qxYqoK
+         4sEhmiVuRr/+OyIWFcaEABDONPDlr5X318P/uMXZXbwYLk5sKP80CqVLdjVLN7QF2Uys
+         fxvjEDTa/U3bOQawadDL3gAbdQBf7Bnh6gJL32unW9oTsUokr+qvPvUCRFv4PWJgf3dK
+         +FUA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=moSF3qAkQg7T3pt7XguLfrbZtWG/9NB2kli6FyeYwfM=;
+        b=A6ComefIM386FLfjn8qrJosT0sw292Ox3lqxMRkg8L96IOfSKa4XH+PqOnuz9vkcTQ
+         1r/9n/k1OnJDY0WGNqFVv4E2QQt6UAho+9VysXm+49pG/z44TFqwNcd5hWDVi5wIuBmQ
+         eDJndzruZFvStaRrPR/b93hBnF9wXpF/VwUgHD0Okur5SuHAChv7eEoVOIEd+iUFlX7W
+         6O//FqV+2YQI2WhYOXuLCt3Jxux0Te/UFLSaWFbBxCJPxPF9v6+gCZWu0jzN703yxp0s
+         T85PhqP4/DhvJUZjc2IMStmYNrMJ4Zoi52Z2pAM3kFTk0bkFnAZAURW5L/ZCrmwLutjQ
+         AiRQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=t5quA6Gc;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x231.google.com (mail-lj1-x231.google.com. [2a00:1450:4864:20::231])
+        by gmr-mx.google.com with ESMTPS id a10si4136660wmm.2.2019.08.02.10.14.30
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=AEAD-AES128-GCM-SHA256 bits=128/128);
+        Fri, 02 Aug 2019 10:14:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::231 as permitted sender) client-ip=2a00:1450:4864:20::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=t5quA6Gc;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x231.google.com with SMTP id p17so73548644ljg.1
+        for <opensport@googlegroups.com>; Fri, 02 Aug 2019 10:14:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=moSF3qAkQg7T3pt7XguLfrbZtWG/9NB2kli6FyeYwfM=;
+        b=t5quA6GcQ6MhsVilh/jiQFRA+t/pM3IPhtsWJa+zSzSCnZ2vTFM2SnWSxX1QmVneJj
+         w4dw6C1Hf08eq1YT3qltbE5uIf1DUXrOkvipF6byPKkLO3dEGeaghJWEAZgkaAPBMbo/
+         dtOWz5IypL/M3IRu9kWPbbUv7E+8LFP/Wk52ki7LjtO9NSo27PVSEw/KmrjKD2NbP3Gz
+         B/9o2rdz7h/oPwWU5PpRzwiHyjqgRIEJSC+kCMfGyVQIQHWc3HwjJSzr8mZR6bhHgOTX
+         vzkvPCMF72MjQJve5Ud744gLxrbMaUC74eBK1maOaWml3ishOlsDfm8prxLSey/ejPsY
+         ka2Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=moSF3qAkQg7T3pt7XguLfrbZtWG/9NB2kli6FyeYwfM=;
+        b=anWNDXoVjAvq18DSDl/WpYGXrxI51sauRff8Hztudb6nEAbfdnm4/uq6vh4J+zyEnb
+         74ZXGtXpr2JL1fvlni3LiMRC+EVl3e/3D6ZI8OHAoP+hfBd+gNlxuX3pA7ZAJNTJYBtP
+         uk1PpC3fLpbc8/6Kx9lYnrBvoaFwUzeSmp2NJDUqtcYNfXUbnaEok7g9VxBdS6htH15D
+         g2EfrapgI4q8OB83mMDRsyR3m9d31tSm/57EdxRsixInluUfNceu/3eh1o3jzuyHwT3s
+         uYtke8xT0Ta/4SdQkvMMwWsOyNbV1cMMSbL8zmRZQ+kYkSXxx97q+RzRpzrtmjkMedTK
+         mKuw==
+X-Gm-Message-State: APjAAAXNiG8NjYUQl5smNRdugWRRM2tEjGlP8LjMv5YIdhB3oeR4olwL
+	QsyvwR4whoyW4gylha8qhVJ+Zd0+sZjcEzaMC2qglrZ4vfg=
+X-Received: by 2002:a2e:2b9d:: with SMTP id r29mr71657240ljr.181.1564766061797;
+ Fri, 02 Aug 2019 10:14:21 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 2 Aug 2019 19:14:10 +0200
+Message-ID: <CAAxEZd9yPWGhqt7iYVCnNN63y8MCFqUeaQFove3OaTnbS4HD_A@mail.gmail.com>
+Subject: Football Data Wrangling w/ Ruby - Match 1500+ Football Club Names
+ from Around the World using the sportdb Library and Open football.db Datasets
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  To prepare for the 2019/2020 football season kick-off I've put together
+  a football data wrangling w/ sample that lets you match 1500+
+football club names
+  from 100+ leagues from around the world using the sportdb gem / library
+  and open football.db (public domain) datasets.
+  Example:
+
+``` ruby
+require 'sportdb/config'
+
+## note: requires a local copy of the football.db clubs datasets
+##          see https://github.com/openfootball/clubs
+SportDb::Import.config.clubs_dir =3D './clubs'
+
+m =3D SportDb::Import.config.clubs.match( 'Arsenal' )
+m.size     # 3 club matches found
+#=3D> 3
+m[0].name; m[0].city; m[0].country
+#=3D> "Arsenal FC", "London", "England"
+m[1].name; m[1].city; m[1].country
+#=3D> "Arsenal Tula", "Tula", "Russia"
+m[2].name; m[2].city; m[2].country
+#=3D> "Arsenal de Sarand=C3=AD", "Sarand=C3=AD", "Argentina"
+
+
+m =3D SportDb::Import.config.clubs.match_by( name: 'Arsenal', country: 'eng=
+' )
+# -or- try alternative names (and auto-generated spelling variants)
+m =3D SportDb::Import.config.clubs.match_by( name: 'Arsenal FC', country: '=
+eng' )
+m =3D SportDb::Import.config.clubs.match_by( name: 'Arsenal F.C.',
+country: 'eng' )
+m =3D SportDb::Import.config.clubs.match_by( name: '...A.r.s.e.n.a.l...
+F.C...', country: 'eng' )
+m.size     # 1 club match found
+#=3D> 1
+m[0].name; m[0].city; m[0].country
+#=3D> "Arsenal FC", "London", "England"
+
+m =3D SportDb::Import.config.clubs.match_by( name: 'Arsenal', country: 'ar'=
+ )
+# -or- try alternative names (and auto-generated spelling variants)
+m =3D SportDb::Import.config.clubs.match_by( name: 'Arsenal Sarand=C3=AD',
+country: 'ar' )
+m =3D SportDb::Import.config.clubs.match_by( name: 'Arsenal Sarandi',
+country: 'ar' )
+m.size     # 1 club match found
+#=3D> 1
+m[0].name; m[0].city; m[0].country
+#=3D> "Arsenal de Sarand=C3=AD", "Sarand=C3=AD", "Argentina"
+
+
+# try some more
+m =3D SportDb::Import.config.clubs.match( 'AZ' )
+m[0].name; m[0].city; m[0].country
+#=3D> "AZ Alkmaar", "Alkmaar", "Netherlands"
+
+m =3D SportDb::Import.config.clubs.match( 'Bayern' )
+# -or- try alternative names (and auto-generated spelling variants)
+m =3D SportDb::Import.config.clubs.match( 'Bayern M=C3=BCnchen' )
+m =3D SportDb::Import.config.clubs.match( 'Bayern Munchen' )
+m =3D SportDb::Import.config.clubs.match( 'Bayern Muenchen' )
+m[0].name; m[0].city; m[0].country
+#=3D> "Bayern M=C3=BCnchen", "M=C3=BCnchen", "Germany"
+
+# and so on
+# ...
+```
+
+   Enjoy the beautiful game. Cheers. Prost.
+
+[1] https://github.com/sportdb/sport.db/tree/master/sportdb-config
+[2] https://github.com/openfootball/clubs
+

@@ -1,0 +1,71 @@
+From 2589000204288@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2580327432192
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,1631df092ed45367
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.11.114 with SMTP id 78mr6553718yhw.22.1428740282892;
+        Sat, 11 Apr 2015 01:18:02 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.80.130 with SMTP id r2ls744545obx.83.gmail; Sat, 11 Apr
+ 2015 01:18:02 -0700 (PDT)
+X-Received: by 10.182.158.37 with SMTP id wr5mr6289566obb.1.1428740282632;
+        Sat, 11 Apr 2015 01:18:02 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qk0-x233.google.com (mail-qk0-x233.google.com. [2607:f8b0:400d:c09::233])
+        by gmr-mx.google.com with ESMTPS id kt5si625131qcb.3.2015.04.11.01.18.02
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 11 Apr 2015 01:18:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::233 as permitted sender) client-ip=2607:f8b0:400d:c09::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qk0-x233.google.com with SMTP id 63so68833965qku.3
+        for <opensport@googlegroups.com>; Sat, 11 Apr 2015 01:18:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=JgEVta50cxtlNGM/O7dUF7+wY6/pLkxjiF+nQnyDFUU=;
+        b=kLa+3f0pm4DHoVun2NvBaaNPRH4OuRGbPzp36A1OVdxdM1UTzQw24PXb5zO9oIJQre
+         4f5eOIZEJgz7HOCGU7JpOWQ5XmMoH62jPuVLjJB2anf4G96V9WVZEEp2kEPPDK4kgpVr
+         gQXO2vqKVgRXq5xLuJQSPawCOft7/YT7Ysh1c3bDjzvIT/kbhYdXMdr8UyZLnTcjlqpn
+         DbzB6u5+xAEx8jFHyJYfvB4CJ5EHDKLc2VYL1yaxKTM/eKgJUwtpPt8bVJjvGF5ZcfQ9
+         qhED59Ke2qSv815cOEWATg/smTGpdxs1iWv0Z++GwXBZK8yedsJmhrhBnJX1kNg1532s
+         6vbA==
+MIME-Version: 1.0
+X-Received: by 10.140.94.104 with SMTP id f95mr6233532qge.38.1428740282515;
+ Sat, 11 Apr 2015 01:18:02 -0700 (PDT)
+Received: by 10.229.5.6 with HTTP; Sat, 11 Apr 2015 01:18:02 -0700 (PDT)
+In-Reply-To: <91effa04-541f-44f1-97a6-d8954d8cb619@googlegroups.com>
+References: <91effa04-541f-44f1-97a6-d8954d8cb619@googlegroups.com>
+Date: Sat, 11 Apr 2015 10:18:02 +0200
+Message-ID: <CAAxEZd_N_dfVu9wd=x1zvdaCfJaekQ_VKd9ZX=D9yJB2Zx-9Ow@mail.gmail.com>
+Subject: Re: [opensport] errors when building build.sh
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for trying the build.sh script.  And thanks for the details
+error reports.
+
+  For debugging try the --verbose option/switch. For example:
+
+> $ sportdb --dbname football.db update --include 'stadiums'
+
+change to
+
+$ sportdb --verbose --dbname football.db update --include 'stadiums'
+
+  That should result in a more detailed error report (you're invited
+to post the new dump.)
+
+  In general it's recommended to use the new build system, that is,
+the easiest and recommended (yes, best) way is using datafiles. See
+github.com/openfootball/datafile
+
+  Cheers.
+

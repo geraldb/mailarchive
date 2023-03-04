@@ -1,0 +1,89 @@
+From 187890139136@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 180688519168
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,f27a57e5f74dd9c7
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,CP1252
+Received: by 10.114.190.6 with SMTP id n6mr369883waf.19.1222467668316;
+        Fri, 26 Sep 2008 15:21:08 -0700 (PDT)
+Return-Path: <geraldbauer2007@gmail.com>
+Received: from wa-out-1112.google.com ([172.21.187.22])
+        by mx.google.com with ESMTP id m37si5851873waf.0.2008.09.26.15.21.07;
+        Fri, 26 Sep 2008 15:21:08 -0700 (PDT)
+Received-SPF: neutral (google.com: 172.21.187.22 is neither permitted nor denied by domain of geraldbauer2007@gmail.com) client-ip=172.21.187.22;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 172.21.187.22 is neither permitted nor denied by domain of geraldbauer2007@gmail.com) smtp.mail=geraldbauer2007@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by wa-out-1112.google.com with SMTP id k22so642026waf.20
+        for <webslideshow@googlegroups.com>; Fri, 26 Sep 2008 15:21:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type
+         :content-transfer-encoding:content-disposition:references;
+        bh=5W/AQg4sXDd8/HS57BfkLmUDl5jnyal80H/uLXb8LMM=;
+        b=W9sJOIx69/bncytuOQUIhDB8Wc9DV9o1sLaCTAvTjURthsyj+1hULUaqY8mrIfZHtj
+         QLF4tP5aHXR3fGyzRsaXqwYjm4ra/n1bp/qyvx5RWrZ/arrm8enOAMR7S/v3Zpzg9p9a
+         rccF/jl/84M8U+lTAjzgdHu/lusTjhu04ySAI=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:content-transfer-encoding:content-disposition
+         :references;
+        b=pdsMtA8lt1TwSc0XkF4nTgLuh5/tv63obDzld05HLGyXuqR1aTxv2oBujMrsOe6WqD
+         kFkIHAVJN7BXQP1X15EcopcrXWwdbuW6QqMIs817+F6EpfnrXC7SaPi27h+KrCq2F6KZ
+         40NG5eT1j4iFUI06jgfoJ/zqv5tEoHJMh76XE=
+Received: by 10.115.90.1 with SMTP id s1mr2206248wal.51.1222467667209;
+        Fri, 26 Sep 2008 15:21:07 -0700 (PDT)
+Received: by 10.114.75.11 with HTTP; Fri, 26 Sep 2008 15:21:07 -0700 (PDT)
+Message-ID: <7e7cb8940809261521i707fed64j361ed31e952611f0@mail.gmail.com>
+Date: Fri, 26 Sep 2008 15:21:07 -0700
+From: "Gerald Bauer" <geraldbauer2007@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow] How to use S6
+In-Reply-To: <e3fb97f30809261352q6f1482c1o35ecbd4643931763@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=WINDOWS-1252
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+References: <e3fb97f30809261352q6f1482c1o35ecbd4643931763@mail.gmail.com>
+
+Hello Narendra Sisodiya,
+
+> Q1 -> Please tell me how to use s6,  I have downloaded the all files,
+> I have made changed in intro html file of s5 (mainly changing names
+> of .js files)
+> Still it is not having slideshow effect as of s5
+
+  The easiest way to get started is using the slideshow gem. Once you
+have the slideshow gem installed just create a plain text file such as
+(intro.textile):
+
+title:  Slide Show (S9) 10-Minute Tutorial
+
+h1. What's Slide Show (S9)?
+
+yada yada
+
+h1. Wiki-Style Markup Language =96 Markdown, Textile
+
+yada yada
+
+
+   And then run:
+
+ slideshow intro
+
+ That's it. Now you can open the generated intro.html page in your
+browser. All the S6 machinery gets copied into the S6 folder.
+
+  More info on the project site @ http://slideshow.rubyforge.org   and
+ http://slideshow.rubyforge.org/tutorial.html
+
+  Cheers.
+
+PS: If you want to change/customize the S6 templates, see the posting
+@ http://groups.google.com/group/webslideshow/browse_thread/thread/31cc570c=
+14cbc769
+
+--=20
+Gerald Bauer - Internet Professional - http://geraldbauer.ca
+

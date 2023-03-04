@@ -1,0 +1,84 @@
+From 20228079616@xxx Sat Dec 13 20:08:19 +0000 2014
+X-GM-THRID: 18031312896
+X-Google-Groups: openmundi
+X-Google-Thread: 37decc9,a6cf25e2d4b7d844,start
+X-Google-Attributes: gid37decc9,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open World Database - world.db
+ and Friends" <openmundi@googlegroups.com>
+X-Received: by 10.43.152.202 with SMTP id kx10mr7960744icc.3.1380377777557;
+        Sat, 28 Sep 2013 07:16:17 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.50.126.39 with SMTP id mv7ls935802igb.41.gmail; Sat, 28 Sep
+ 2013 07:16:17 -0700 (PDT)
+X-Received: by 10.42.210.68 with SMTP id gj4mr7854511icb.1.1380377777233;
+        Sat, 28 Sep 2013 07:16:17 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x235.google.com (mail-ie0-x235.google.com [2607:f8b0:4001:c03::235])
+        by gmr-mx.google.com with ESMTPS id l7si447782igt.3.1969.12.31.16.00.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 28 Sep 2013 07:16:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::235 as permitted sender) client-ip=2607:f8b0:4001:c03::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::235 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ie0-f181.google.com with SMTP id tp5so6225205ieb.26
+        for <openmundi@googlegroups.com>; Sat, 28 Sep 2013 07:16:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=Yp8KbgTg6K7Wo5TFd4wUmj+pNjixLwDJr+EqtgJQ8cc=;
+        b=vOGcOoOLcvPBvyyrfhBSw1dhO0+JvX6iFp6SNZTG0vnMBtOXEAXT6DfcZjfMatBKo9
+         gujMQXbIpQa0kLRrF0SgAQ0MQPopbmPn5Y2y/YtyM4LqPE08q6pfwT+IdpbnHJHKWE4N
+         I7eaD7XjOw+A0QbPTplLsUNCLiCnXsJX9aajkZkbnHAGhxRTSCb+yqCed9fRB2KvDnqG
+         BNNrjZ3DkUzqgP7QpJwA6P8HKhqwpCF+srYs/RyCaFYSaOdzpDIDTsX8sht3CWcxNO6p
+         9aYY3GnJqcFhPdA73MIGIfW14L/+RB6zQPhge98Dlz2FOYEsG6iygq/QKoGTUtX7sKOh
+         92xw==
+MIME-Version: 1.0
+X-Received: by 10.50.79.164 with SMTP id k4mr6790619igx.10.1380377776694; Sat,
+ 28 Sep 2013 07:16:16 -0700 (PDT)
+Received: by 10.64.93.41 with HTTP; Sat, 28 Sep 2013 07:16:16 -0700 (PDT)
+Date: Sat, 28 Sep 2013 16:16:16 +0200
+Message-ID: <CAAxEZd8zVb_2nDJ66TnPGw6cZCbSoPQvmJDLN8+OrUdfhw_UuA@mail.gmail.com>
+Subject: world.db Now Includes Web Admin Rails Engine - mount WorldDbAdmin::Engine
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: multipart/alternative; boundary=089e01294784092ff704e7723fea
+
+--089e01294784092ff704e7723fea
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  The open world database (world.db) now includes a web admin Rails engine
+[1] that you can include in your web app. Example:
+
+   mount WorldDbAdmin::Engine, :at => '/worlddb'
+
+  See the Rails engine in action in the Sportbook - a free football
+(soccer) match predication bookie - for example [1].
+
+  Cheers.
+
+[1] github.com/geraldb/world.db.admin
+[2] sportbook.herokuapp.com/worlddb
+
+--089e01294784092ff704e7723fea
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>=A0 The open world database (world.db) now i=
+ncludes a web admin Rails engine [1] that you can include in your web app. =
+Example: <br><br>=A0=A0 mount WorldDbAdmin::Engine, :at =3D&gt; &#39;/world=
+db&#39; <br>
+<br>=A0 See the Rails engine in action in the Sportbook - a free football (=
+soccer) match predication bookie - for example [1]. <br><br>=A0 Cheers.<br>=
+<br>[1] <a href=3D"http://github.com/geraldb/world.db.admin">github.com/ger=
+aldb/world.db.admin</a><br>
+[2] <a href=3D"http://sportbook.herokuapp.com/worlddb">sportbook.herokuapp.=
+com/worlddb</a><br><br></div>
+
+--089e01294784092ff704e7723fea--
+

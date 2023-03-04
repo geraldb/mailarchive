@@ -1,0 +1,130 @@
+From 6407373973248540672@xxx Mon Apr 10 14:03:26 +0000 2017
+X-GM-THRID: 6406170137222709248
+Date: Mon, 10 Apr 2017 07:03:26 -0700 (PDT)
+From: Brian Forsythe <brian.t.forsythe@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <21069fdc-4b3d-4934-aa2a-89cf63ca60d1@googlegroups.com>
+In-Reply-To: <CAAxEZd9mXaZ0nABGk4=U=qsNPck-p6BgNOTQESOZrPAgx9VqfQ@mail.gmail.com>
+References: <13f542c8-23e0-4fc8-9d35-30750be86bfc@googlegroups.com>
+ <CAAxEZd-_fu=FzC7FP3vWGB7YpWikxu7AmXm0Az=Vo+TgnYUj=Q@mail.gmail.com> <9117c7cd-2d5f-4235-b604-e354db3f8e53@googlegroups.com>
+ <CAAxEZd9mXaZ0nABGk4=U=qsNPck-p6BgNOTQESOZrPAgx9VqfQ@mail.gmail.com>
+Subject: Re: [wwwmake:418] Problems with Slide Show (S9) ignoring headers
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_254_1663626496.1491833006252"
+X-Google-Token: EK6hrscFrfijZwWgF-o0
+X-Google-IP: 75.118.55.89
+
+------=_Part_254_1663626496.1491833006252
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_255_2086809851.1491833006252"
+
+------=_Part_255_2086809851.1491833006252
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks, Gerald. That did it!
+
+On Saturday, April 8, 2017 at 12:13:18 PM UTC-4, Gerald Bauer wrote:
+>
+> Hello, 
+>
+> > So, it's reading the headers but they're not getting inserted? Even a 
+> >  suggestion of where to look in the code would be great. 
+>
+>    I just tried your setup e.g. 
+>
+> $ slideshow update   # update registry index 
+> $ slideshow install reveal.js 
+> $ slideshow build test.md -t reveal.js 
+>
+>    and it works as expected ;-) 
+>
+>   and than I tried 
+>
+> $ gem install liquid          # will update liquid from 3.0.6 to 4.0  [1] 
+>
+>   and if I rererun 
+>
+> $ slideshow build test.md -t reveal.js 
+>
+>   suprise, surprise - it no longer works! Sorry.  So the cause / error 
+> is that you have the latest and greatest liquid gem version 4.0  try: 
+>
+> $ gem list liquid 
+>
+>   If you downgrade to 3.0.6 it will (should) work as expected. Again 
+> thanks for reporting. Sorry not yet sure what changed in the liquid 
+> gem in the new version. 
+>
+>   Cheers. 
+>
+> [1] https://rubygems.org/gems/liquid 
+>
+
+------=_Part_255_2086809851.1491833006252
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thanks, Gerald. That did it!<div><br>On Saturday, April 8,=
+ 2017 at 12:13:18 PM UTC-4, Gerald Bauer wrote:<blockquote class=3D"gmail_q=
+uote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;pad=
+ding-left: 1ex;">Hello,
+<br>
+<br>&gt; So, it&#39;s reading the headers but they&#39;re not getting inser=
+ted? Even a
+<br>&gt; =C2=A0suggestion of where to look in the code would be great.
+<br>
+<br>=C2=A0 =C2=A0I just tried your setup e.g.
+<br>
+<br>$ slideshow update =C2=A0 # update registry index
+<br>$ slideshow install reveal.js
+<br>$ slideshow build <a href=3D"http://test.md" target=3D"_blank" rel=3D"n=
+ofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/url?q\x3dhtt=
+p%3A%2F%2Ftest.md\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFIn5JJBuaqA0AuEwi=
+z2_cCoETlyQ&#39;;return true;" onclick=3D"this.href=3D&#39;http://www.googl=
+e.com/url?q\x3dhttp%3A%2F%2Ftest.md\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjC=
+NFIn5JJBuaqA0AuEwiz2_cCoETlyQ&#39;;return true;">test.md</a> -t reveal.js
+<br>
+<br>=C2=A0 =C2=A0and it works as expected ;-)
+<br>
+<br>=C2=A0 and than I tried
+<br>
+<br>$ gem install liquid =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0# will update li=
+quid from 3.0.6 to 4.0 =C2=A0[1]
+<br>
+<br>=C2=A0 and if I rererun
+<br>
+<br>$ slideshow build <a href=3D"http://test.md" target=3D"_blank" rel=3D"n=
+ofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/url?q\x3dhtt=
+p%3A%2F%2Ftest.md\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFIn5JJBuaqA0AuEwi=
+z2_cCoETlyQ&#39;;return true;" onclick=3D"this.href=3D&#39;http://www.googl=
+e.com/url?q\x3dhttp%3A%2F%2Ftest.md\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjC=
+NFIn5JJBuaqA0AuEwiz2_cCoETlyQ&#39;;return true;">test.md</a> -t reveal.js
+<br>
+<br>=C2=A0 suprise, surprise - it no longer works! Sorry. =C2=A0So the caus=
+e / error
+<br>is that you have the latest and greatest liquid gem version 4.0 =C2=A0t=
+ry:
+<br>
+<br>$ gem list liquid
+<br>
+<br>=C2=A0 If you downgrade to 3.0.6 it will (should) work as expected. Aga=
+in
+<br>thanks for reporting. Sorry not yet sure what changed in the liquid
+<br>gem in the new version.
+<br>
+<br>=C2=A0 Cheers.
+<br>
+<br>[1] <a href=3D"https://rubygems.org/gems/liquid" target=3D"_blank" rel=
+=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.google.com/url?q\=
+x3dhttps%3A%2F%2Frubygems.org%2Fgems%2Fliquid\x26sa\x3dD\x26sntz\x3d1\x26us=
+g\x3dAFQjCNHdr8m4cKVRwprsz54hQCraaO2clw&#39;;return true;" onclick=3D"this.=
+href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Frubygems.org%2Fge=
+ms%2Fliquid\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHdr8m4cKVRwprsz54hQCraa=
+O2clw&#39;;return true;">https://rubygems.org/gems/<wbr>liquid</a>
+<br></blockquote></div></div>
+------=_Part_255_2086809851.1491833006252--
+
+------=_Part_254_1663626496.1491833006252--
+

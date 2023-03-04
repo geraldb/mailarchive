@@ -1,0 +1,171 @@
+From 326659735552@xxx Tue Jun 16 00:17:18 +0000 2015
+X-GM-THRID: 323912466432
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,adbbcc06d99a64e7
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.221.168 with SMTP id r38mr1456601yhp.54.1392329902103;
+        Thu, 13 Feb 2014 14:18:22 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.152.71 with SMTP id uw7ls683827igb.6.canary; Thu, 13 Feb
+ 2014 14:18:21 -0800 (PST)
+X-Received: by 10.50.107.102 with SMTP id hb6mr116155igb.11.1392329901852;
+        Thu, 13 Feb 2014 14:18:21 -0800 (PST)
+X-Google-Doc-Id: bc912f11c4d771af
+X-Google-Web-Client: true
+Date: Thu, 13 Feb 2014 14:18:20 -0800 (PST)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <b3bdbfd5-022c-4b26-8753-235da3dba488@googlegroups.com>
+In-Reply-To: <0ce36c91-80d0-4f49-8286-ce4a92602ee8@googlegroups.com>
+References: <0ce36c91-80d0-4f49-8286-ce4a92602ee8@googlegroups.com>
+Subject: Re: No such file or directory ./setups/all.yml
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_6_13127880.1392329900969"
+X-Google-Token: EKyJ9ZcFA9iMEGpXmbE0
+X-Google-IP: 187.207.100.42
+
+------=_Part_6_13127880.1392329900969
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7_19904094.1392329900969"
+
+------=_Part_7_19904094.1392329900969
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+   Try running with the --verbose switch to get more details about the 
+error e.g.
+
+  $ sportdb --verbose setup --include ./en-england --worldinclude ./world.db
+
+>
+> Any advice?
+>
+>   Might be easier and it's recommend to use a build script, that is, a 
+Rakefile. Example:
+
+Rakefile:
+-------------------------------
+BUILD_DIR = "."
+
+FOOTBALL_DB_PATH = "#{BUILD_DIR}/football.db"
+
+
+DB_CONFIG = {
+  adapter:    'sqlite3',
+  database:   FOOTBALL_DB_PATH
+}
+
+
+directory BUILD_DIR
+
+
+task :clean do
+  rm FOOTBALL_DB_PATH if File.exists?( FOOTBALL_DB_PATH )
+end
+
+task :env => BUILD_DIR do
+ require 'worlddb'
+ require 'sportdb'
+ require 'logutils/db'
+
+ LogUtils::Logger.root.level = :info
+
+ pp DB_CONFIG
+ ActiveRecord::Base.establish_connection( DB_CONFIG )
+end
+
+task :create => :env do
+  LogDb.create
+  WorldDb.create
+  SportDb.create
+end
+
+task :importworld => :env do
+  WorldDb.read_setup( 'setups/sport.db.admin', './world.db', skip_tags: 
+true )  # populate world tables
+end
+
+task :importbuiltin => :env do
+  SportDb.read_builtin
+end
+
+
+task :importsport => :importbuiltin do
+  SportDb.read_setup( 'setups/all',   './en-england' )
+end
+
+desc 'footballdb - build from scratch'
+task :build => [:clean, :create, :importworld, :importsport] do
+  puts 'Done.'
+end
+
+desc 'footballdb - update'
+task :update => [:importsport] do
+  puts 'Done.'
+end 
+-------------------------------
+
+
+  Use $ rake -T           to list all tasks
+ and use
+
+  $ rake build       to run a clean build
+ and
+  $ rake update   to run an update (e.g. only the football fixtures - skip 
+world.db updates/imports)
+
+  Let me know if it works or you get any futher. Good look. Cheers. 
+
+------=_Part_7_19904094.1392329900969
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>&nbsp; &nbsp;Try running with the --verbose =
+switch to get more details about the error e.g.<div><br></div><div>&nbsp; $=
+&nbsp;<span style=3D"background-color: rgb(243, 243, 243); color: rgb(0, 0,=
+ 0);">sportdb --verbose setup --include ./en-england --worldinclude ./world=
+.db</span></div><div><blockquote class=3D"gmail_quote" style=3D"margin: 0;m=
+argin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=
+=3D"ltr"><div><br></div><div>Any advice?</div><div><br></div></div></blockq=
+uote><div>&nbsp; Might be easier and it's recommend to use a build script, =
+that is, a Rakefile. Example:</div><div><br></div><div>Rakefile:</div><div>=
+-------------------------------</div><div><div>BUILD_DIR =3D "."</div><div>=
+<br></div><div>FOOTBALL_DB_PATH =3D "#{BUILD_DIR}/football.db"</div><div><b=
+r></div><div><br></div><div>DB_CONFIG =3D {</div><div>&nbsp; adapter: &nbsp=
+; &nbsp;'sqlite3',</div><div>&nbsp; database: &nbsp; FOOTBALL_DB_PATH</div>=
+<div>}</div><div><br></div><div><br></div><div>directory BUILD_DIR</div><di=
+v><br></div><div><br></div><div>task :clean do</div><div>&nbsp; rm FOOTBALL=
+_DB_PATH if File.exists?( FOOTBALL_DB_PATH )</div><div>end</div><div><br></=
+div><div>task :env =3D&gt; BUILD_DIR do</div><div>&nbsp;require 'worlddb'</=
+div><div>&nbsp;require 'sportdb'</div><div>&nbsp;require 'logutils/db'</div=
+><div><br></div><div>&nbsp;LogUtils::Logger.root.level =3D :info</div><div>=
+<br></div><div>&nbsp;pp DB_CONFIG</div><div>&nbsp;ActiveRecord::Base.establ=
+ish_connection( DB_CONFIG )</div><div>end</div><div><br></div><div>task :cr=
+eate =3D&gt; :env do</div><div>&nbsp; LogDb.create</div><div>&nbsp; WorldDb=
+.create</div><div>&nbsp; SportDb.create</div><div>end</div><div><br></div><=
+div>task :importworld =3D&gt; :env do</div><div>&nbsp; WorldDb.read_setup( =
+'setups/sport.db.admin', './world.db', skip_tags: true ) &nbsp;# populate w=
+orld tables</div><div>end</div><div><br></div><div>task :importbuiltin =3D&=
+gt; :env do</div><div>&nbsp; SportDb.read_builtin</div><div>end</div><div><=
+br></div><div><br></div><div>task :importsport =3D&gt; :importbuiltin do</d=
+iv><div>&nbsp; SportDb.read_setup( 'setups/all', &nbsp; './en-england' )</d=
+iv><div>end</div><div><br></div><div>desc 'footballdb - build from scratch'=
+</div><div>task :build =3D&gt; [:clean, :create, :importworld, :importsport=
+] do</div><div>&nbsp; puts 'Done.'</div><div>end</div><div><br></div><div>d=
+esc 'footballdb - update'</div><div>task :update =3D&gt; [:importsport] do<=
+/div><div>&nbsp; puts 'Done.'</div><div>end&nbsp;</div></div><div>---------=
+----------------------</div><div><br></div><div><br></div><div>&nbsp; Use $=
+ rake -T &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; to list all tasks</div><div>&nb=
+sp;and use</div><div><br></div><div>&nbsp; $ rake build &nbsp; &nbsp; &nbsp=
+; to run a clean build</div><div>&nbsp;and</div><div>&nbsp; $ rake update &=
+nbsp; to run an update (e.g. only the football fixtures - skip world.db upd=
+ates/imports)</div><div><br></div><div>&nbsp; Let me know if it works or yo=
+u get any futher. Good look. Cheers.&nbsp;</div></div></div>
+------=_Part_7_19904094.1392329900969--
+
+------=_Part_6_13127880.1392329900969--
+

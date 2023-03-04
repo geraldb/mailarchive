@@ -1,0 +1,296 @@
+From 6828938779297841152@xxx Wed May 20 14:50:11 +0000 2020
+X-GM-THRID: 6825956099307339776
+Date: Wed, 20 May 2020 07:50:11 -0700 (PDT)
+From: infominer <infominer33@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <2b1045f2-0c03-4d19-a9b5-506859753f23@googlegroups.com>
+In-Reply-To: <2cf4fb7c-c7c0-434c-9fd1-7735f6fb8b40@googlegroups.com>
+References: <2cf4fb7c-c7c0-434c-9fd1-7735f6fb8b40@googlegroups.com>
+Subject: Re: using github actions to build feeds after commit to master and
+ 3 times a day
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_169_1748908060.1589986211244"
+X-Google-Token: EKOHlfYFrvMwnfl7_1k0
+X-Google-IP: 3.14.172.171
+
+------=_Part_169_1748908060.1589986211244
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_170_706246025.1589986211244"
+
+------=_Part_170_706246025.1589986211244
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I'm new to cron syntax.. so I messed up and accidentally made it run every 
+minute of those hours and every pull\push.. that little bot was running 
+wild...:
+
+- cron: '* 3,11,19 * * *' 
+          
+that needed to be '0 3,11,19 * * *'  so it only runs at the beginning of 
+those hours... 
+
+I may end up changing it to hourly.... and maybe some other tweaks... so if 
+you land on this forum and think this is what you were looking for, maybe 
+wanna check the source to see it's evolution.
+
+
+On Tuesday, May 12, 2020 at 9:55:52 AM UTC-4, infominer wrote:
+>
+> his was my first github action and I'm really stoked about how 
+> (relatively) easy it was. You should be able to copy this and use it in 
+> your project to get Pluto running and requiring minimal intervention on 
+> your part :D
+>
+>
+>
+> https://github.com/didecentral/planetid-reboot/blob/master/.github/workflows/ruby.yml
+>
+>            name: Ruby 
+> on: 
+> push: 
+> branches: [ master ] 
+> pull_request: 
+> branches: [ master ] 
+> schedule:
+> - cron: '* 3,11,19 * * *' 
+>
+> jobs: 
+> test: 
+>
+> runs-on: ubuntu-latest 
+>
+> steps: 
+> - uses: actions/checkout@v2 
+> - name: Set up Ruby
+> uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0 
+> with: 
+> ruby-version: 2.6 
+> - name: Install dependencies 
+> run: sudo apt-get install libsqlite3-dev && gem install pluto 
+> - name: build reader 
+> run: pluto b planetid.ini -t planetid -o docs 
+> - name: Deploy Files 
+> run: | 
+> git remote add gh-token "
+> https://github.com/didecentral/planetid-reboot.git" 
+> git config user.name "github-actions[bot]" # I use the GitHub Actions bot 
+> here. 
+> git config user.email "41898282+github-actions[bot]@
+> users.noreply.github.com" 
+> git add . 
+> git commit -a -m "update feeds" 
+>
+> git push gh-token master
+>
+>
+>
+>
+------=_Part_170_706246025.1589986211244
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>I&#39;m new to cron syntax.. so I messed up and accid=
+entally made it run every minute of those hours and every pull\push.. that =
+little bot was running wild...:</div><div>
+     =20
+      <table style=3D"margin-left:40px"><tbody><tr><td><span></span><br></t=
+d></tr><tr></tr></tbody></table><table style=3D"margin-left:40px"><tbody><t=
+r><td><span style=3D"background-color: rgb(243, 243, 243);">- <span>cron</s=
+pan>:  <span><span>&#39;</span>* 3,11,19 * * *<span>&#39;</span></span></sp=
+an></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><span style=3D"background-color: rgb(243, 243,=
+ 243);">
+</span><table><tbody><tr><td><span style=3D"background-color: rgb(243, 243,=
+ 243);"><span style=3D"background-color: rgb(255, 255, 255);">=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0</span><span><br><span styl=
+e=3D"background-color: rgb(255, 255, 255);">that needed to be</span> &#39;0=
+ 3,11,19 * * *&#39;<span style=3D"background-color: rgb(255, 255, 255);">=
+=C2=A0 so it only runs at the beginning of those hours... </span><br><br><s=
+pan style=3D"background-color: rgb(255, 255, 255);">I may end up changing i=
+t to hourly.... and maybe some other tweaks... so if you land on this forum=
+ and think this is what you were looking for, maybe wanna check the source =
+to see it&#39;s evolution.</span><br></span></span></td></tr></tbody></tabl=
+e></div><div><br></div><br>On Tuesday, May 12, 2020 at 9:55:52 AM UTC-4, in=
+fominer wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-l=
+eft: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr"=
+>his was my first github action and I&#39;m really stoked about how (relati=
+vely) easy it was. You should be able to copy this and use it in your proje=
+ct to get Pluto running and requiring minimal intervention on your part :D<=
+br><div><br></div><div><br></div><div><a href=3D"https://github.com/didecen=
+tral/planetid-reboot/blob/master/.github/workflows/ruby.yml" target=3D"_bla=
+nk" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.google.com=
+/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fdidecentral%2Fplanetid-reboot%2Fblob%2=
+Fmaster%2F.github%2Fworkflows%2Fruby.yml\x26sa\x3dD\x26sntz\x3d1\x26usg\x3d=
+AFQjCNGchxDh3eLN5fUg5pJ77zpxzERB3g&#39;;return true;" onclick=3D"this.href=
+=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fdidecent=
+ral%2Fplanetid-reboot%2Fblob%2Fmaster%2F.github%2Fworkflows%2Fruby.yml\x26s=
+a\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGchxDh3eLN5fUg5pJ77zpxzERB3g&#39;;retur=
+n true;">https://github.com/<wbr>didecentral/planetid-reboot/<wbr>blob/mast=
+er/.github/workflows/<wbr>ruby.yml</a></div><div><br></div><div>
+      <table><tbody><tr><td>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0 <span>name</span>: <span>Ruby</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td><span>on</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>  <span>push</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>    <span>branches</span>: <span>[ master ]</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>  <span>pull_request</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>    <span>branches</span>: <span>[ master ]</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>  <span>schedule</span>:</td></tr><tr></tr></tbody></table><table style=
+=3D"margin-left:40px"><tbody><tr><td></td></tr><tr></tr></tbody></table><ta=
+ble style=3D"margin-left:40px"><tbody><tr><td>- <span>cron</span>:  <span><=
+span>&#39;</span>* 3,11,19 * * *<span>&#39;</span></span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>
+<br></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td><span>jobs</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>  <span>test</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>
+<br></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>    <span>runs-on</span>: <span>ubuntu-latest</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>
+<br></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>    <span>steps</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>    - <span>uses</span>: <span>actions/checkout@v2</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>    - <span>name</span>: <span>Set up Ruby</span></td></tr><tr></tr></tb=
+ody></table><table style=3D"margin-left:40px"><tbody><tr><td></td></tr><tr>=
+</tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><td><span=
+>uses</span>: <span>ruby/setup-ruby@<wbr>ec106b438a1ff6ff109590de34ddc6<wbr=
+>2c540232e0</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>      <span>with</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>        <span>ruby-version</span>: <span>2.6</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>    - <span>name</span>: <span>Install dependencies</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>      <span>run</span>: <span>sudo apt-get install libsqlite3-dev &amp;&=
+amp; gem install pluto</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>    - <span>name</span>: <span>build reader</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>      <span>run</span>: <span>pluto b planetid.ini -t planetid -o docs</=
+span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>    - <span>name</span>: <span>Deploy Files</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td>      <span>run</span>: <span>|</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td><span>        git remote add gh-token &quot;<a href=3D"https://github.co=
+m/didecentral/planetid-reboot.git" target=3D"_blank" rel=3D"nofollow" onmou=
+sedown=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgi=
+thub.com%2Fdidecentral%2Fplanetid-reboot.git\x26sa\x3dD\x26sntz\x3d1\x26usg=
+\x3dAFQjCNF_IzYNk8e2voZwI5-fISnlazC41g&#39;;return true;" onclick=3D"this.h=
+ref=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fdidec=
+entral%2Fplanetid-reboot.git\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNF_IzYN=
+k8e2voZwI5-fISnlazC41g&#39;;return true;">https://github.com/<wbr>didecentr=
+al/planetid-reboot.<wbr>git</a>&quot;</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td><span>        git config <a href=3D"http://user.name" target=3D"_blank" =
+rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/url?=
+q\x3dhttp%3A%2F%2Fuser.name\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFu0SPm6=
+QpHZ5742pOucYZFgv7vIQ&#39;;return true;" onclick=3D"this.href=3D&#39;http:/=
+/www.google.com/url?q\x3dhttp%3A%2F%2Fuser.name\x26sa\x3dD\x26sntz\x3d1\x26=
+usg\x3dAFQjCNFu0SPm6QpHZ5742pOucYZFgv7vIQ&#39;;return true;">user.name</a> =
+&quot;github-actions[bot]&quot; # I use the GitHub Actions bot here.</span>=
+</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td><span>        git config user.email &quot;41898282+github-actions[bot]@<=
+a href=3D"http://users.noreply.github.com" target=3D"_blank" rel=3D"nofollo=
+w" onmousedown=3D"this.href=3D&#39;http://www.google.com/url?q\x3dhttp%3A%2=
+F%2Fusers.noreply.github.com\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGAvX5J=
+6zbfvB7QuP2cA3HmH-6c1A&#39;;return true;" onclick=3D"this.href=3D&#39;http:=
+//www.google.com/url?q\x3dhttp%3A%2F%2Fusers.noreply.github.com\x26sa\x3dD\=
+x26sntz\x3d1\x26usg\x3dAFQjCNGAvX5J6zbfvB7QuP2cA3HmH-6c1A&#39;;return true;=
+"><wbr>users.noreply.github.com</a>&quot;</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td><span>        git add .</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table style=3D"margin-left:40px"><tbody><tr><=
+td><span>        git commit -a -m &quot;update feeds&quot;</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><div style=3D"margin-left:40px"><span>        =
+git push gh-token master</span></div><br><br><table><tbody><tr><td><span></=
+span><span></span><br></td>
+      </tr><tr>
+        </tr></tbody></table></div></div></blockquote></div>
+------=_Part_170_706246025.1589986211244--
+
+------=_Part_169_1748908060.1589986211244--
+

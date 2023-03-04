@@ -1,0 +1,93 @@
+From 142895742976@xxx Tue Jun 16 00:17:25 +0000 2015
+X-GM-THRID: 145996382208
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,e75034d955af78d1,start
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+X-Received: by 10.180.87.200 with SMTP id ba8mr1376363wib.0.1377427465284;
+        Sun, 25 Aug 2013 03:44:25 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.206.197 with SMTP id lq5ls719244wic.18.gmail; Sun, 25 Aug
+ 2013 03:44:25 -0700 (PDT)
+X-Received: by 10.180.14.72 with SMTP id n8mr1372513wic.3.1377427465038;
+        Sun, 25 Aug 2013 03:44:25 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x236.google.com (mail-wi0-x236.google.com [2a00:1450:400c:c05::236])
+        by gmr-mx.google.com with ESMTPS id bp12si188721wib.2.1969.12.31.16.00.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 25 Aug 2013 03:44:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::236 as permitted sender) client-ip=2a00:1450:400c:c05::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) d=gmail.com
+Received: by mail-wi0-f182.google.com with SMTP id c10so469174wiw.3
+        for <opensport@googlegroups.com>; Sun, 25 Aug 2013 03:44:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=dvdOL+VXx6bVv+n0mM7IkSO0R8W2Nv0eGvKVNs1EfEs=;
+        b=ohnSZw+iyg6OhGA92ajVOKR0HlL7mVkpVDL+0NPoy/eksA09BmNaVr7BdEmoOkKGS0
+         1+M0ulxBkX6SvnJqDnA6oEjgpeaiHjS3YQwadHaK5EE8ldLlDxKfpvkEr76sgKz0Nuh/
+         2J5Y1YKmfg919sj1FmhI7SmF+Ox8Qesa1TS3+EXRb4Eqc0xdl2HQ+vNZRX2fA0uLJVhk
+         D/jL7EQEDM15ZD6cSrzw0Hu4jb1dDlNbUr6utJaZ4HCl+Aa0i8cCCSMF6Sg50pfkx3Ft
+         OnSf0FwvNLWihXHOFBD7KxdpHYxRZWugzbIM+gsDArhbns2+hhWsDhNOVq2L+HsjG0oa
+         L4KQ==
+MIME-Version: 1.0
+X-Received: by 10.180.84.65 with SMTP id w1mr4043893wiy.4.1377427464938; Sun,
+ 25 Aug 2013 03:44:24 -0700 (PDT)
+Received: by 10.216.202.72 with HTTP; Sun, 25 Aug 2013 03:44:24 -0700 (PDT)
+Date: Sun, 25 Aug 2013 12:44:24 +0200
+Message-ID: <CAAxEZd9zkVCZZ=+GGhrC8TGTs0gzYe95z9M2AmQuVOu8hAn3TA@mail.gmail.com>
+Subject: football.db Now Includes Web Admin Rails Engine - mount SportDbAdmin::Engine
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary=f46d04440274c06c5704e4c3528f
+
+--f46d04440274c06c5704e4c3528f
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+The open football database (football.db)[1] now includes a web admin Rails
+engine that you can include in your web app. Example:
+
+   mount SportDbAdmin::Engine, :at => '/db'
+
+See the Rails engine in action[2] in the Sportbook - a free football
+(soccer) match predication bookie - updated for the UEFA Champions League
+Playoff[3][4], for example.
+
+  Cheers.
+
+[1] https://github.com/openfootball
+[2] http://sportbook.herokuapp.com/db
+[3] http://sportbook.herokuapp.com/db/cl.2013_14
+[4]
+https://github.com/openfootball/europe/blob/master/2013_14/cl_playoffs.txt
+
+--f46d04440274c06c5704e4c3528f
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>The open football database (football.db)[1] =
+now includes a web admin Rails engine that you can include in your web app.=
+ Example: <br><br>=A0=A0 mount SportDbAdmin::Engine, :at =3D&gt; &#39;/db&#=
+39;<br>
+<br>See the Rails engine in action[2] in the Sportbook - a free football (s=
+occer) match predication bookie - updated for the UEFA Champions League Pla=
+yoff[3][4], for example. <br><br>=A0 Cheers.<br><br>[1] <a href=3D"https://=
+github.com/openfootball">https://github.com/openfootball</a><br>
+[2] <a href=3D"http://sportbook.herokuapp.com/db">http://sportbook.herokuap=
+p.com/db</a><br>[3] <a href=3D"http://sportbook.herokuapp.com/db/cl.2013_14=
+">http://sportbook.herokuapp.com/db/cl.2013_14</a><br>[4] <a href=3D"https:=
+//github.com/openfootball/europe/blob/master/2013_14/cl_playoffs.txt">https=
+://github.com/openfootball/europe/blob/master/2013_14/cl_playoffs.txt</a><b=
+r>
+<br></div>
+
+--f46d04440274c06c5704e4c3528f--
+

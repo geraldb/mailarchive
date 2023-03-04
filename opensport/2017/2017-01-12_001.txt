@@ -1,0 +1,77 @@
+From 6374764032070516736@xxx Thu Jan 12 17:00:12 +0000 2017
+X-GM-THRID: 6374761789815521280
+X-Received: by 10.36.83.66 with SMTP id n63mr3920065itb.19.1484240412575;
+        Thu, 12 Jan 2017 09:00:12 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.131.34 with SMTP id f34ls2117390iod.36.gmail; Thu, 12 Jan
+ 2017 09:00:12 -0800 (PST)
+X-Received: by 10.107.8.143 with SMTP id h15mr4855376ioi.71.1484240411956;
+        Thu, 12 Jan 2017 09:00:11 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x230.google.com (mail-it0-x230.google.com. [2607:f8b0:4001:c0b::230])
+        by gmr-mx.google.com with ESMTPS id v140si238036itc.0.2017.01.12.09.00.11
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 12 Jan 2017 09:00:11 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) client-ip=2607:f8b0:4001:c0b::230;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x230.google.com with SMTP id x2so4486389itf.1
+        for <opensport@googlegroups.com>; Thu, 12 Jan 2017 09:00:11 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=jxlnLe+TqeEsOfBwEETnjgI3Hw1e/bONsshpUWXMZ30=;
+        b=TptoxfXbHiHuhJU/6FK367Vppk5JOM9sbNTBJ+JzO98ONDdiipPPzXoQKQaRBSUsRO
+         ZrynRr8TOL2ZToP0K9vb6/98NviB5U5s1aQYV2lWujJmaV+R/L2GZpGmyB75PrmZYFqY
+         uvjw34ZpdNrjJHfp0O5dnGmtRy/cszL59LdNq09s0ne5PqJ8t/hQj89dwcstkj9jDhsL
+         nAqDtClF0xtmcO5lSEAjG5c0fSLc8ujKy+a3xm1pWrvNCAf0pAqodY5f+KlbwyTxkngZ
+         C7GSqyxI7OB2X0H16CQ7HEHQvSujDtHFtJeOdqq9gIw4eBdJ6QtrpLNbY4Qa4bDNszl0
+         De4A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=jxlnLe+TqeEsOfBwEETnjgI3Hw1e/bONsshpUWXMZ30=;
+        b=HGRhGo2k2edVh/sZEQuQRWnh38tTZhx252etCv7WkjFWj4qsmrU4R1D7T9+Ky7B4no
+         yfRAYwa67D0F5MV+FzM1HXphOmNvFiihsYmgkqfew2mfkJSgRysUZe+ZbvMykkquPxwL
+         zSbGcVrxB4e10YD9PxOZjPqQxv3W3LAaNlDrihZjbI0UY2jf17j1PQkFxfkCqISqT/JR
+         luPmp/EOMaqUcK294JHbBw7MQk11ABgg2bMVsasGeHJnNptWS5KUxrhA/Hg3XOYYvrop
+         DUqyksHvCufeyO42C+jtPUM/l59/TYppL7YTXXu6aXJ6D6vxjhFD+kNfC3D4++5lFncs
+         gKSA==
+X-Gm-Message-State: AIkVDXJ89h78qgEpm+r5tskMS3JRe3o44BK/ddruqOh3YnPiz7rAy/riwZa/z1rgE/JaH1ksaQ3Sfjy0LWtN5w==
+X-Received: by 10.36.160.131 with SMTP id o125mr4506084ite.13.1484240411294;
+ Thu, 12 Jan 2017 09:00:11 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.165.67 with HTTP; Thu, 12 Jan 2017 09:00:10 -0800 (PST)
+In-Reply-To: <cca182e3-4058-4572-a073-4a249779176d@googlegroups.com>
+References: <cca182e3-4058-4572-a073-4a249779176d@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 12 Jan 2017 11:00:10 -0600
+Message-ID: <CAAxEZd_YANtqUnrDfDCxn3CuNkEVr=rdjqCn2TCN5QRJTXD98w@mail.gmail.com>
+Subject: Re: [opensport] Error creating daabase
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+>  *** error: Index name 'index_taggings_on_tag_id' on table 'taggings' already exists
+
+   Thanks for trying football.db.  Yes, this is a known issue. Sorry.
+Please "downgrade" activerecord to the 4.2.x series.
+
+> I have read a closed issue regarding the fact that activerecord 5 is not supported,
+>  if this is the issue how can I setup a working environment to generate a DB?
+
+   One way is to use a Gemfile (and bundler) to install the sportdb
+and activerecord with a specific version e.g.
+
+   Gemfile:
+
+gem 'sportdb'
+gem 'activerecord', '~>4.2'
+
+   Cheers.
+

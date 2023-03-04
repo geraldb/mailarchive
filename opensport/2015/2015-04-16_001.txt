@@ -1,0 +1,70 @@
+From 2616422563840@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2611669368832
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,f977a54d35f02aa8
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.29.51 with SMTP id h39mr20044915yha.12.1429218628655;
+        Thu, 16 Apr 2015 14:10:28 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.171.168 with SMTP id av8ls26591igc.39.canary; Thu, 16 Apr
+ 2015 14:10:28 -0700 (PDT)
+X-Received: by 10.50.142.39 with SMTP id rt7mr8187979igb.5.1429218628338;
+        Thu, 16 Apr 2015 14:10:28 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qk0-x22d.google.com (mail-qk0-x22d.google.com. [2607:f8b0:400d:c09::22d])
+        by gmr-mx.google.com with ESMTPS id k6si1415430qca.0.2015.04.16.14.10.28
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 16 Apr 2015 14:10:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::22d as permitted sender) client-ip=2607:f8b0:400d:c09::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qk0-x22d.google.com with SMTP id g7so141177563qkh.2
+        for <opensport@googlegroups.com>; Thu, 16 Apr 2015 14:10:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=Y4vzyPB5DbRfoMbBE8m4Pg4/FkJjp4R0OqpPUMlS1tc=;
+        b=eAr6PX6RudzcsmmXin86hEJ+BKe3qqsVGlfuGaEk1G7yLkEKKls7uzGUCz0PqHgPwt
+         liClj2ajN8ybOVZTsyjIYOMQMREYvIvV/1apb19FqoMV0dNiCuAPyfbAci6UntaeweIu
+         iB1KAsHFSAPLH5ovkUZ5KwMg7ARrZ4rVxD9NFjRvWbTzAX+h+Iao+OqpD6VJHl/qryjx
+         4D34dp6FlSJn17O4AvcrTxVKFcZ1V+/iLu5B1MkU6wo7I9Gho6FbSPgT9M7nCKe/c6bg
+         NPo9xT5fOkUwuIP23DG7xpANQW1zXQnKBqNsq+qTvdygqvUAllufD79z8Vq6n91Vs5XU
+         BOLg==
+MIME-Version: 1.0
+X-Received: by 10.140.232.3 with SMTP id d3mr42419860qhc.46.1429218628243;
+ Thu, 16 Apr 2015 14:10:28 -0700 (PDT)
+Received: by 10.229.5.6 with HTTP; Thu, 16 Apr 2015 14:10:28 -0700 (PDT)
+In-Reply-To: <3edab176-02be-456a-82b4-130cd1a968f6@googlegroups.com>
+References: <3edab176-02be-456a-82b4-130cd1a968f6@googlegroups.com>
+Date: Thu, 16 Apr 2015 23:10:28 +0200
+Message-ID: <CAAxEZd8d-EEC5-oyG5uoOPLStjiose8BiYJtRWWX3w3d4YnAiw@mail.gmail.com>
+Subject: Re: [opensport] women's world cup database?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+> Has anyone created a db for the upcoming Women's World Cup?
+
+  Good question. To get you started I've just created a new repo, that
+is, /world-cup-women [1]
+
+  I've also added the Canada 2015 finals schedule w/ all 24 national
+teams in 6 groups [2]
+
+  To try use the new worldcupwomen Datafile [3] e.g. try:
+
+$ sportdb new worldcupwomen
+
+  Cheers.
+
+[1] github.com/openfootball/world-cup-women
+[2] github.com/openfootball/world-cup-women/blob/master/2015--canada/cup.txt
+[3] github.com/openfootball/datafile/blob/master/worldcupwomen.rb
+

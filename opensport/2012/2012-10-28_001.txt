@@ -1,0 +1,47 @@
+From 12183404544@xxx Tue Jun 16 00:17:25 +0000 2015
+X-GM-THRID: 8611954688
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,e3922ed024621154,start
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+Received: by 10.236.119.145 with SMTP id n17mr20085890yhh.22.1351439353962;
+        Sun, 28 Oct 2012 08:49:13 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.100.213.19 with SMTP id l19ls356845ang.3.gmail; Sun, 28 Oct
+ 2012 08:49:13 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.236.116.67 with SMTP id f43mr2180672yhh.13.1351439353790; Sun,
+ 28 Oct 2012 08:49:13 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by c17g2000yqe.googlegroups.com with HTTP; Sun, 28 Oct 2012 08:49:13
+ -0700 (PDT)
+Date: Sun, 28 Oct 2012 08:49:13 -0700 (PDT)
+User-Agent: G2/1.0
+X-Google-Token: EPmntYQFMmXG3eW3ih80
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:16.0)
+ Gecko/20100101 Firefox/16.0,gzip(gfe)
+X-Google-IP: 194.166.223.120
+Message-ID: <f5a5b7d2-9883-4569-859c-8a27e2b2b39f@c17g2000yqe.googlegroups.com>
+Subject: sportdb Adds Plain Text Fixtures & More
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Open Sports Database (sport.db) and Friends" <opensport@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   I've added a plain text fixture reader for easy data import to the
+sportdb gem. For samples, see the English Premier League [1] or the
+Deutsche Bundesliga fixtures [2].
+
+  Cheers.
+
+[1] https://github.com/geraldb/sport.db/blob/master/db/en/2012_13/pl.txt
+[2] https://github.com/geraldb/sport.db/blob/master/db/de/2012_13/bl.txt
+

@@ -1,0 +1,94 @@
+From 6718442115084320768@xxx Sat Jul 27 20:26:42 +0000 2019
+X-GM-THRID: 6710981832719990784
+X-Received: by 2002:a1c:4d01:: with SMTP id o1mr93219697wmh.55.1564259202066;
+        Sat, 27 Jul 2019 13:26:42 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a5d:448b:: with SMTP id j11ls16961346wrq.3.gmail; Sat, 27
+ Jul 2019 13:26:41 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqxd3I5FRQ5j19p//RsptDClVJjIdi9gXtLthXbT3XhkdYlfJqMHuSBLgtl6EXIH3F39sUR1
+X-Received: by 2002:adf:df10:: with SMTP id y16mr86427553wrl.302.1564259201219;
+        Sat, 27 Jul 2019 13:26:41 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1564259201; cv=none;
+        d=google.com; s=arc-20160816;
+        b=aDqOGXkvEZgk8/nS86jCu08Y1nYyo41wfLnBnlO/x7R3rMmbSO63ZuLsYweYStP0eh
+         KKuKSr7DCazLyj/sN92OnfFx0q1UTliQzFWwd2k9q2t87n4Ia7PRa92kfp99gNKo0ZkR
+         FtmOjPA9FkXdmdYghSP0wi1NErXwGdOZqkYtSdsvoMl7DYQkwqMGlt96k5vwYC958/36
+         BEk48a19f0+P5xPhn8asA0crNSadH/v0y3LXgCdqOYA9HICKLrT0ALk0FfQ5r4NKQbJT
+         WVls/M1AHQKM74SqqYAqV7/jHOo3DEx0CuXb5U172yLbI8T5L1jR1LX+zN3/lMTwFZlK
+         L2SA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=7BTqtw3JFyyenomRdgnG5LTBiTuKBxmq1+ISGPdbMtI=;
+        b=wWbm2WIo0vya4EXJVcmGza7Ezp6PyzV6ZPE4/WLNDNBz2iinfUkPhC/Ag8X6YHlesS
+         SudCq52zxaO+SwHGm/DxhTscUh76B0S1bu24k/LRL3uWxzhpqum81nSy0iyRKD60WueU
+         n2juQVbczTwMLpCfIw5Y83uIrlJ8RcwoNPGz/Nl2NpEGuyu22LgjRZKHETnKa/DjDtl3
+         GQDa4dRnd+rxSBkJ+N2zFi9UvBG9/blKqvI65+Sprz8GwZb2X44ocD8rXB51DzW7YB1r
+         77DG/Bp3M/wZ+/RGB6wWTiaqxbHboEDyCfgg7JqpsOXTZDelXrcZCYo4dIYmclSREY0k
+         M1wQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=GTRafsGm;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x236.google.com (mail-lj1-x236.google.com. [2a00:1450:4864:20::236])
+        by gmr-mx.google.com with ESMTPS id p23si2289111wma.1.2019.07.27.13.26.41
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=AEAD-AES128-GCM-SHA256 bits=128/128);
+        Sat, 27 Jul 2019 13:26:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::236 as permitted sender) client-ip=2a00:1450:4864:20::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=GTRafsGm;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x236.google.com with SMTP id m23so54640634lje.12
+        for <opensport@googlegroups.com>; Sat, 27 Jul 2019 13:26:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=7BTqtw3JFyyenomRdgnG5LTBiTuKBxmq1+ISGPdbMtI=;
+        b=GTRafsGmyvtG4fhfb3I+qi0bXAVx0c+PflU2mJUMS6tbIIEB5QObuX9PGkuruWc6gE
+         ZOw/rcjBY+XNo7+kPu3uM+NAY9SX9zqEdEJ//OWNII2a4DLu2duWF6EE952biKKDH4XA
+         Wn9BnAyJvypYpDd90An0VjJgUcPtSGGIU0tOohlX6sstt8YduHwYU1UekGCXXmjIlrIx
+         qZl3FptMcBK5G8SwEdE7ZLPhRBLVpUNTI9gPW6G51vXPcO3xJsMYbj76Er/dS5+5Bwd5
+         dz58ugkKU9AvHl+z6zQk5Qj6wA+sd4lHJo1fHZGWmgF3xAyJY7j+pPwv7iT7TUMGLl5c
+         OLwg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=7BTqtw3JFyyenomRdgnG5LTBiTuKBxmq1+ISGPdbMtI=;
+        b=SFDcmFRTIRCnzkj1Q7EyOjd0trPBf4hruQ2ffNb6gzEbXVtXm52Uni1tJAN70H3qld
+         +YgeV9PSS5ETni95fyRmTgIuepiu5DguOnauMmzN7hb7RgEzeF0biioC+n5nzyJ7rbxZ
+         h9EFDuuJRpjEEngCO3tJ6lCzsXcZ7rr0IaiY8nW7PrLtZPUzU6g+4aLMQVrg3uyNiHyq
+         IIvZHFtgtiI2HGRXusObfndjiKeryoGrL7EqnGW7fMPiW7VO1N2P2LVDLCZsSCMMM9J0
+         DbJWuXjahGAxP+znGncQ6LSTIkNlOY87It7k6ZE37YY/zhplmClj3PV7N72R01esiJre
+         +Eiw==
+X-Gm-Message-State: APjAAAUIVT5qZlUaT5Rqham5YynzESdsHJKMh9np/mxJe8PPIqK9QKg7
+	ZOfRYscyLBFePYNYk1cVCf649F2WjSc1iP2vo/aqBojnhFE=
+X-Received: by 2002:a2e:a171:: with SMTP id u17mr8089873ljl.209.1564259200516;
+ Sat, 27 Jul 2019 13:26:40 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAAxEZd8yA6pHbk+y7zNxhaR+C-sj3NY9WRA+XyizFjBCkx9n6g@mail.gmail.com>
+ <7a72e99f-c2a4-466d-985a-4143a27d514f@googlegroups.com> <CAAxEZd94c4W5HvqUyaH0ozbqwbgAth2d6RSK+zSmi6qGbp3y+g@mail.gmail.com>
+ <9edfa3d6-660a-4add-aa0b-6f08b118537d@googlegroups.com> <CAAxEZd-3GGzNX76j0O6OKXNMUUpqdyLg6JGx9cjNrdAwm3H1Kw@mail.gmail.com>
+ <2e4ee551-2870-4d62-87d0-1f3691f5e263@googlegroups.com>
+In-Reply-To: <2e4ee551-2870-4d62-87d0-1f3691f5e263@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 27 Jul 2019 22:26:30 +0200
+Message-ID: <CAAxEZd9MBZRy4SkYmdZU8=s=KbcCNpRU3o4z4BCue5v4yjbYtA@mail.gmail.com>
+Subject: Re: [opensport] Re: /clubs - New Central Package / Repo for World's
+ Football Clubs (incl. Premier League, Bundesliga, La Liga, etc.)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Paul,
+
+> here was also a bug where it could not find harrowgate but I just deleted that file
+
+  If there is a club name missing it might be easier to add the
+missing club name.
+
+    Once I've reworked the club reader / matcher / index I will try a
+new import.  Thanks for reporting the error. Cheers. Prost.
+

@@ -1,0 +1,46 @@
+From 176081076224@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 157340925952
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,3384e9daa8ef2695
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.150.12.4 with SMTP id 4mr260220ybl.10.1222273460772; Wed, 24 
+	Sep 2008 09:24:20 -0700 (PDT)
+Date: Wed, 24 Sep 2008 09:24:20 -0700 (PDT)
+In-Reply-To: <22534c0b-b3a0-410a-8031-4c86fcfa5ba1@26g2000hsk.googlegroups.com>
+X-IP: 70.79.19.119
+References: <22534c0b-b3a0-410a-8031-4c86fcfa5ba1@26g2000hsk.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: cHNjbgwAAAAA1sC6Fg5u3ipUton9ixw6
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) 
+	AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.30 Safari/525.13,gzip(gfe),gzip(gfe)
+Message-ID: <2c3f3c0f-6ce5-4493-a46a-9129a38f0650@a8g2000prf.googlegroups.com>
+Subject: Re: Is it possible to auto increment slides after a set period of 
+	time? (S9)
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello JD,
+
+> Is it possible to create an S9 presentation that will auto increment
+> slides after a set period of time? I'd like to use it in a kiosk like
+> functionality.
+
+  It's not built-in yet into the S6 slide show code. I've rewritten
+the S5 code using the jQuery JavaScript library to with the intention
+to offer easier to understand and easier to extend code. Add plugins,
+effects and more. That's the idea.
+
+  You can find the code in the subversion repo @
+http://slideshow.rubyforge.org/svn/trunk/lib/templates/s6   and to get
+started have a look at the jQuery S6 slide show code @
+http://slideshow.rubyforge.org/svn/trunk/lib/templates/s6/slides.js
+
+  If you use the original S5 code you might be able to find some
+extension that offer auto-play.
+
+  Cheers.
+

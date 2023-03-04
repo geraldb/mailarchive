@@ -1,0 +1,68 @@
+From 754372837376@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 742258638848
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,ce260373049a0f66
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.58.107.203 with SMTP id he11mr25226141veb.12.1400741188584;
+        Wed, 21 May 2014 23:46:28 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.109.71 with SMTP id k65ls1153735qgf.88.gmail; Wed, 21 May
+ 2014 23:46:28 -0700 (PDT)
+X-Received: by 10.140.97.119 with SMTP id l110mr13198qge.21.1400741188377;
+        Wed, 21 May 2014 23:46:28 -0700 (PDT)
+X-Google-Doc-Id: 2655fc1bbbbdcdd5
+X-Google-Web-Client: true
+Date: Wed, 21 May 2014 23:46:27 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <2b309d51-4f4b-4366-a36d-ec19f6d376ca@googlegroups.com>
+In-Reply-To: <c51c8122-aeca-415e-aa9f-f26df43aee73@googlegroups.com>
+References: <c51c8122-aeca-415e-aa9f-f26df43aee73@googlegroups.com>
+Subject: Re: JSON of cup.txt and cup-finals.txt
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1012_29064806.1400741187627"
+X-Google-Token: EMO69psFQEVamxiEG100
+X-Google-IP: 62.47.153.145
+
+------=_Part_1012_29064806.1400741187627
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1013_6778603.1400741187627"
+
+------=_Part_1013_6778603.1400741187627
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  Thanks for your interest in football.db. 
+
+  > I downloaded the worldcup2014.db SQLite release but didn't anything 
+similar in there. 
+
+   Can you be more specific what's missing in the database?  The matchday 
+number? The stadiums? The bracket rules (e.g. winner group a vs runner-up 
+groub b) etc.
+
+   Cheers.
+
+   Try 
+
+   $ sqlite3 worldcup2014.db
+   >  select * from games;
+   etc.  to query the db etc.
+
+   Using free tools such as SQLite Studio you can always export all tables 
+to csv or sql, for example.
+
+------=_Part_1013_6778603.1400741187627
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<br><br>&nbsp; Thanks for your interest in football.db. <br><br>&nbsp; &gt; I downloaded the worldcup2014.db SQLite release but didn't anything similar in there. <br><br>&nbsp;&nbsp; Can you be more specific what's missing in the database?&nbsp; The matchday number? The stadiums? The bracket rules (e.g. winner group a vs runner-up groub b) etc.<br><br>&nbsp;&nbsp; Cheers.<br><br>&nbsp;&nbsp; Try <br><br>&nbsp;&nbsp; $ sqlite3 worldcup2014.db<br>&nbsp;&nbsp; &gt;&nbsp; select * from games;<br>&nbsp;&nbsp; etc.&nbsp; to query the db etc.<br><br>&nbsp;&nbsp; Using free tools such as SQLite Studio you can always export all tables to csv or sql, for example.<br></div>
+------=_Part_1013_6778603.1400741187627--
+
+------=_Part_1012_29064806.1400741187627--
+

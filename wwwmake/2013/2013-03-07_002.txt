@@ -1,0 +1,70 @@
+From 1196478693376@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1195140710400
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,af728395f2774684,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.180.76.235 with SMTP id n11mr5321550wiw.0.1362653375908;
+        Thu, 07 Mar 2013 02:49:35 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.180.93.232 with SMTP id cx8ls565915wib.38.canary; Thu, 07 Mar
+ 2013 02:49:35 -0800 (PST)
+X-Received: by 10.180.94.41 with SMTP id cz9mr5329257wib.1.1362653375252;
+        Thu, 07 Mar 2013 02:49:35 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22a.google.com ([2a00:1450:400c:c05::22a])
+        by gmr-mx.google.com with ESMTPS id bk3si956014wib.3.2013.03.07.02.49.35
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 07 Mar 2013 02:49:35 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22a as permitted sender) client-ip=2a00:1450:400c:c05::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-wi0-f170.google.com with SMTP id hm11so3436203wib.5
+        for <webslideshow@googlegroups.com>; Thu, 07 Mar 2013 02:49:35 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:x-received:date:message-id:subject:from:to
+         :content-type;
+        bh=b+eQgQjCYybu8VyzbpgscPejd18DAelwW11dmgnUdys=;
+        b=MvmRQxLAlfq1TZaEiMX/sDXeCAiJ+bJBXf+FlnIQDSoyYaea6D3yDjWcvFBQ2vkr/2
+         OBinQ3XvJytA727dkI8gIqsWpXxTBPRXEU2uXxzOM593YIOGUyuIHO0fHzKOXefO1B7X
+         u9nCYpmfEdYzrcpuvPviIt4Kaiq+E0XatTdSYepOM6zBnHKUm9M2pLgX+64iGZ2JYa4a
+         IwodlY7or28uLJk5vpxAZj/70wiSaVOjUI783/4Xfsu/1dZG1iuY6N2wW1m7MliH37Ik
+         OBQfK0kfwg56lk3vU6dvpLNSS+dpJicAwGqVUUAq5hS9ByIEQQEVzX0y/xKmqMrVEivU
+         x3HQ==
+MIME-Version: 1.0
+X-Received: by 10.194.122.131 with SMTP id ls3mr26406445wjb.55.1362653371554;
+ Thu, 07 Mar 2013 02:49:31 -0800 (PST)
+Received: by 10.216.152.161 with HTTP; Thu, 7 Mar 2013 02:49:31 -0800 (PST)
+Date: Thu, 7 Mar 2013 11:49:31 +0100
+Message-ID: <CAAxEZd_oi4vg4HHTPOjbwv7RT0JHJKzA6tPCEw840HnSNwo5pQ@mail.gmail.com>
+Subject: onslyde - Add Live Voting To Your Slide Deck // HydeSlides -
+ Reveal.js template pack for Jekyll
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  Some links / projects that I found:
+
+  o Wesley Hales has created onslyde - that lets you add live voting
+(via mobile phones) to your slide decks. [1][2]
+
+  o Jordan McCullough has created HydeSlides - that lets you build
+Reveal.js[3] slide decks with Jekyll. [4][5]
+
+  Found anything interesting? Let us know.
+
+Cheers.
+
+[1] http://onslyde.com
+[2] https://github.com/wesleyhales/onslyde
+[3] http://lab.hakim.se/reveal-js
+[4] https://github.com/jordanmccullough/HydeSlides
+[5] http://teach.github.com/presentations/git-foundations.html
+

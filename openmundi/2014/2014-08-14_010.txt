@@ -1,0 +1,93 @@
+From 75959894016@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 74704748544
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,3bc96c9415837e1
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.216.67 with SMTP id f63mr2260901yhp.10.1408016507290;
+        Thu, 14 Aug 2014 04:41:47 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.50.13.40 with SMTP id e8ls3837026igc.7.canary; Thu, 14 Aug
+ 2014 04:41:47 -0700 (PDT)
+X-Received: by 10.50.138.167 with SMTP id qr7mr6191616igb.6.1408016507157;
+        Thu, 14 Aug 2014 04:41:47 -0700 (PDT)
+Received: by 10.224.74.199 with SMTP id v7msqaj;
+        Wed, 13 Aug 2014 19:48:03 -0700 (PDT)
+X-Received: by 10.140.19.97 with SMTP id 88mr143225qgg.3.1407984483327;
+        Wed, 13 Aug 2014 19:48:03 -0700 (PDT)
+X-Google-Doc-Id: 580b8e3ae5bccf00
+X-Google-Web-Client: true
+Date: Wed, 13 Aug 2014 19:48:02 -0700 (PDT)
+From: Eckhard Licher <eckhard.licher@googlemail.com>
+To: openmundi@googlegroups.com
+Message-Id: <13a2c175-fa8f-4970-a8a0-16c11df09192@googlegroups.com>
+Subject: Factbook gem and JSON repo
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3544_935803848.1407984482957"
+X-Google-Token: EOLGsJ8FqhNLJYapjPY0
+X-Google-IP: 217.51.2.252
+
+------=_Part_3544_935803848.1407984482957
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3545_2032526355.1407984482957"
+
+------=_Part_3545_2032526355.1407984482957
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Gerald,
+ 
+I just found your Factbook gem and the Factbook JSON repo. Thanks for the 
+work -- I was about to write a similar tool in Python.
+ 
+Are you planning to update the JSON repo regularly or is this supposed to 
+be a one-time snapshop? I am asking because I had written a similar HTML 
+scaper for the factbook more than a decade ago. Unfortunately, the HTML 
+pages provided by CIA were changing rather rapidly at that time so I gave 
+up to update my scraper eventually. Hope that the pages are a bit more 
+stable these days so that your tool stays useful quite a while.
+
+The repo contains 194 entries for the independent states plus entries for 
+the European Union and the world. Shouldn't it contain (for the sake of 
+completeness) the 55 additional entries for dependent territories as 
+recognized by ISO (in ISO 3166-1) and which are usually found in other geo 
+databases, e.g. geonames.org, statoids.com, naturalearthdata.com etc.? 
+Anyway, good work, thanks again.
+
+Keep up the good work
+ 
+Eckhard Licher
+
+------=_Part_3545_2032526355.1407984482957
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr"><div class="moz-text-html" lang="x-unicode"><div style="font-family: Verdana;font-size: 12.0px;"><div>Gerald,</div>
+
+<div>&nbsp;</div>
+
+<div>I just found your Factbook gem and the Factbook JSON repo. Thanks for the work -- I was about to write a similar tool in Python.</div>
+
+<div>&nbsp;</div>
+
+<div>Are you planning to update the JSON repo regularly or is this 
+supposed to be a one-time snapshop? I am asking because I had written a 
+similar HTML scaper for the factbook more than a decade ago. 
+Unfortunately, the HTML pages provided by CIA were changing rather 
+rapidly at that time so I gave up to update my scraper eventually. Hope 
+that the pages are a bit more stable these days so that your tool stays 
+useful quite a while.</div>
+
+<div><br>The repo contains 194 entries for the independent states plus entries for the European Union and the world. Shouldn't it contain (for the sake of completeness) the 55 additional entries for dependent territories as recognized by ISO (in ISO 3166-1) and which are usually found in other geo databases, e.g. geonames.org, statoids.com, naturalearthdata.com etc.? Anyway, good work, thanks again.<br><br></div>
+
+<div>Keep up the good work</div>
+
+<div>&nbsp;</div>
+
+<div>Eckhard Licher</div></div>
+</div></div>
+------=_Part_3545_2032526355.1407984482957--
+
+------=_Part_3544_935803848.1407984482957--
+

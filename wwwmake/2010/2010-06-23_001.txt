@@ -1,0 +1,72 @@
+From 687542894592@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 688329326592
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,17afe14cdc243fe2,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.100.27.25 with SMTP id a25mr3759182ana.11.1277251922702;
+        Tue, 22 Jun 2010 17:12:02 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.101.11.8 with SMTP id o8ls1146015ani.6.p; Tue, 22 Jun 2010 
+	17:12:02 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.101.179.36 with SMTP id g36mr356260anp.0.1277251921969; Tue, 
+	22 Jun 2010 17:12:01 -0700 (PDT)
+Received: by z10g2000yqb.googlegroups.com with HTTP; Tue, 22 Jun 2010 17:12:01 
+	-0700 (PDT)
+Date: Tue, 22 Jun 2010 17:12:01 -0700 (PDT)
+X-IP: 93.82.33.172
+User-Agent: G2/1.0
+X-Google-Token: ENGiheEEunkqsrUZc0s0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.3) 
+	Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3,gzip(gfe)
+Message-ID: <19fba446-53ec-4d80-ae53-415afad7207f@z10g2000yqb.googlegroups.com>
+Subject: New Slideshow (S9) Template Pack (html5blank) Using Google's 
+	html5-slides Code
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  As a follow-up to the "Best HTML5 Slides Ever" posting, I've wrapped-
+up Google's html5-slides code[1] into a new Slideshow (S9) template
+package called html5blank.
+
+  To see the original slides in action, stop @ http://slides.html5rocks.com
+
+  To see the slides in action generated from the unchanged Textile
+source for the Slideshow (S9) Tutorial, stop @
+http://slideshow.rubyforge.org/tutorial.html5.html
+
+
+  If you want to try it yourself, install (fetch) the new template.
+Issue the command:
+
+$ slideshow -f http://github.com/geraldb/sandbox/raw/master/html5blank/html5blank.txt
+
+  To check if the new templated got installed, use the -l/--list
+switch/command:
+
+$ slideshow -l
+
+Listing something like:
+
+Installed templates include:
+   html5blank.txt (/home/gerald/.slideshow/templates/html5blank/
+html5blank.txt)
+
+  Now you're ready to use it using the -t/--template switch. Example:
+
+$ slideshow -t html5blank.txt tutorial
+
+   Note, that you will need to update the slideshow gem first to the
+latest version, that is, v0.8.3.
+
+  That's it. If anyone tries out the new HTML5 template package, let
+us know how it goes.
+
+ Cheers. Gerald
+
+[1] http://code.google.com/p/html5-slides
+

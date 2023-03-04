@@ -1,0 +1,102 @@
+From 40695234560@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 40793800704
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,db033c664f277426,start
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.173.105 with SMTP id bj9mr27961657lbc.4.1395645652052;
+        Mon, 24 Mar 2014 00:20:52 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.153.6.12 with SMTP id cq12ls206502lad.40.gmail; Mon, 24 Mar
+ 2014 00:20:51 -0700 (PDT)
+X-Received: by 10.112.145.162 with SMTP id sv2mr25638480lbb.15.1395645651812;
+        Mon, 24 Mar 2014 00:20:51 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x236.google.com (mail-we0-x236.google.com [2a00:1450:400c:c03::236])
+        by gmr-mx.google.com with ESMTPS id x2si634517wif.1.2014.03.24.00.20.51
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 24 Mar 2014 00:20:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) client-ip=2a00:1450:400c:c03::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f182.google.com with SMTP id p61so3174568wes.13
+        for <openmundi@googlegroups.com>; Mon, 24 Mar 2014 00:20:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=MQVdtnS+0ach6SHaNlUdRo0Ebqc3DxGxDNeOngQqFHw=;
+        b=Tu0rM99Q0Blfu1RYCkmA4zMAyj0+fG3LNaA91AXGyfk7CUS28Vua1efdHL7Y1ydXKk
+         DEgZjsKc3pHxnGe6XW5Dc68T7TLGL4LV33b2dYuV1Dn/4qKwf5J9e6AyTSJCtViA3pG7
+         MUpchVGV8F12bmiq4/ubX4NitzNH5VmeqFAjO52dprrYPi9m2cnRDt3K+YpvVCEKYsFL
+         r5Sr0iflF8VGrCqc0qcIiM1b6IL6VkbNDGkcdOETbIEEmLXFeOFjqC38mfRe8vmow8PX
+         qdoskIyUf4OFLEvJ59MxvZXZqhFTpPmhFP3jje47ibS80eRzo5ZJC+ETXB+BFvV0VVvf
+         zHhw==
+MIME-Version: 1.0
+X-Received: by 10.180.37.12 with SMTP id u12mr13074133wij.0.1395645651703;
+ Mon, 24 Mar 2014 00:20:51 -0700 (PDT)
+Received: by 10.216.208.136 with HTTP; Mon, 24 Mar 2014 00:20:51 -0700 (PDT)
+Date: Mon, 24 Mar 2014 08:20:51 +0100
+Message-ID: <CAAxEZd8Wze3qeb-pgYAxhkP4FXCAqkq-so6SOtm0EcGW5kby9w@mail.gmail.com>
+Subject: worlddb gem v2.0 - Free Open World Data, Schema n Models (Places/Countries/Regions/Cities)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I've updated the worlddb gem [1] that includes models for places,
+continent, countries, regions, cities and more. What's new in v2.0?
+
+  The worlddb gem now includes new places and names tables, that is,
+every continent, country, region, city is also a place w/ longitude
+and latitude.
+
+   The project also includes free open public domain plain text
+fixtures [2] for all countries and territories in the world plus some
+regions/state/provinces and some cities/towns/hamlets/etc.
+
+   Use it like:
+
+    at =3D Country.find_by! key: 'at'
+    at.name
+    # =3D> 'Austria'
+    at.pop
+    # =3D> 8_414_638
+    at.area
+    # =3D> 83_871
+
+    at.regions.count
+    # =3D> 9
+    at.regions
+    # =3D> [ 'Wien', 'Nieder=F6sterreich', 'Ober=F6sterreich', ... ]
+
+    at.cities.by_pop
+    # =3D> [ 'Wien', 'Graz', 'Linz', 'Salzburg', ... ]
+
+ Note, the worlddb also supports tags and taggings:
+
+   euro =3D Tag.find_by! key: 'euro'
+   euro.countries.count
+   # =3D> 17
+   euro.countries
+   # =3D> ['Austria, 'Belgium', 'Cyprus', ... ]
+
+   flanders =3D Tag.find_by! key: 'flanders'
+   flanders.regions.count
+   # =3D> 5
+   flanders.regions
+   # =3D> ['Antwerpen', 'Brabant Wallon', 'Limburg', 'Oost-Vlaanderen', ...=
+ ]
+   flanders.regions.first.country.name
+   # =3D> 'Belgium'
+
+  Cheers.
+
+[1] github.com/geraldb/world.db.ruby
+[2] github.com/openmundi
+

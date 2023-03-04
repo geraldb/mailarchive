@@ -1,0 +1,83 @@
+From 618348412928@xxx Tue Jun 16 00:17:12 +0000 2015
+X-GM-THRID: 582791200768
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b7f9b188ad7fd297
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.169.231 with SMTP id ah7mr7237727pac.40.1399756538427;
+        Sat, 10 May 2014 14:15:38 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.101.4 with SMTP id t4ls887283qge.1.gmail; Sat, 10 May 2014
+ 14:15:38 -0700 (PDT)
+X-Received: by 10.140.95.141 with SMTP id i13mr368653qge.3.1399756538284;
+        Sat, 10 May 2014 14:15:38 -0700 (PDT)
+X-Google-Doc-Id: e6a195708afd880d
+X-Google-Web-Client: true
+Date: Sat, 10 May 2014 14:15:37 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <b0c09a1f-5602-462f-89c2-129f481b0325@googlegroups.com>
+In-Reply-To: <CAAxEZd-0fmYY0EPUUNwrtGZ+wHKz86OE4Pwp9=sb1Z0vi9UdEg@mail.gmail.com>
+References: <CAAxEZd-0fmYY0EPUUNwrtGZ+wHKz86OE4Pwp9=sb1Z0vi9UdEg@mail.gmail.com>
+Subject: Re: football.js - new GitHub org - football matchday widget,
+ football.db HTTP JSON API wrapper n more
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_386_8073097.1399756537791"
+X-Google-Token: EPmtupsFBFXiV7EC4SQ0
+X-Google-IP: 193.83.215.174
+
+------=_Part_386_8073097.1399756537791
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_387_23984846.1399756537791"
+
+------=_Part_387_23984846.1399756537791
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+> However, I dont mean to sound like such a newbie but I am really 
+confused. I newly joined github and I have worked 
+> with various JSON apis in the past but this one seems to confuse me alot. 
+What is the exact url to use the api. like 
+> https://github.com/openfootball/api/event/world.2014/teams to get list of 
+teams. or do I host them on my 
+> own server and how.
+
+Sorry for the confusion. The documentation (only) for the API is hosted at 
+the github.com/openfootball/api repo.
+
+A public api endpoint/service runs at 
+http://footballdb.herokuapp.com/api/v1 - since this runs on the Heroku free 
+plan it is fairly limited e.g. only 10,000 records max. thus it only 
+include a couple of events ( see footballdb.herokuapp.com/events )
+
+Thus, it's always an option to self-host your own api service (locally) and 
+you're also welcome to provide a public endpoint with the leagues / 
+tournaments that are of interest to you, for example, also to the world. 
+Cheers.
+
+------=_Part_387_23984846.1399756537791
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>&gt; However, I dont mean to sound like such=
+ a newbie but I am really confused. I newly joined github and I have worked=
+ <br>&gt; with various JSON apis in the past but this one seems to confuse =
+me alot. What is the exact url to use the api. like <br>&gt;  <a href=3D"ht=
+tps://github.com/openfootball/api/">https://github.com/openfootball/api/</a=
+>event/world.2014/teams to get list of teams. or do I host them on my <br>&=
+gt; own server and how.<br>  <br>  Sorry for the confusion.  The documentat=
+ion (only) for the API is hosted at the github.com/openfootball/api repo.<b=
+r><br>   A public api endpoint/service runs at http://footballdb.herokuapp.=
+com/api/v1   - since this runs on the Heroku free plan it is fairly limited=
+ e.g. only 10,000 records max. thus it only include a couple of events ( se=
+e footballdb.herokuapp.com/events )<br><br>   Thus, it's always an option t=
+o self-host your own api service (locally) and you're also welcome to provi=
+de a public endpoint with the leagues / tournaments that are of interest to=
+ you, for example, also to the world. Cheers.<br></div>
+------=_Part_387_23984846.1399756537791--
+
+------=_Part_386_8073097.1399756537791--
+

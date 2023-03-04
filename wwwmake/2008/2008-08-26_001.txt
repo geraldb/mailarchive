@@ -1,0 +1,51 @@
+From 100913905664@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 82657148928
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,9c647c4e74c87091
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.100.197.3 with SMTP id u3mr361076anf.6.1219783749159; Tue, 26 
+	Aug 2008 13:49:09 -0700 (PDT)
+Date: Tue, 26 Aug 2008 13:49:09 -0700 (PDT)
+In-Reply-To: <4dcd15a90808181144u67791a4bj7681c0509af0b028@mail.gmail.com>
+X-IP: 70.79.19.119
+References: <4dcd15a90808181144u67791a4bj7681c0509af0b028@mail.gmail.com>
+User-Agent: G2/1.0
+X-Google-Token: _sjIsgwAAACTJtIk0SUN5x9FynHkMBV2
+X-HTTP-UserAgent: Opera/9.50 (Windows NT 6.0; U; en),gzip(gfe),gzip(gfe)
+Message-ID: <39c6eeb5-783a-467d-864f-0d962e7c04d4@l33g2000pri.googlegroups.com>
+Subject: Re: Encoding
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello Alex,
+
+> Is there a way to set the character encoding in the resulting HTML file
+> using slideshow? =A0I'd like to explicitly set it to UTF-8 to avoid brows=
+er
+> guessing (and getting it wrong).
+>
+> Right now I'm editing the HTML after generation but I would rather set th=
+is
+> as a property in the .textile file.
+
+  With the new S9 update you can now use your own slide show templates
+with the load path -i/--include option and you no longer need to edit
+the HTML after generation.
+
+  If you want to add a property/header in the .textile file you can
+add that too e.g. use whatever header you like e.g.:
+
+  encoding: UTF-8
+
+  And than add in your template:
+
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3D"<%=3D
+@headers['title'] || 'UTF-8'  %>" />
+
+  or similar. That's all there is to it. Let me know if that works for
+you. Cheers.
+

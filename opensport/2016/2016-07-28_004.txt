@@ -1,0 +1,71 @@
+From 6312297257493331968@xxx Thu Jul 28 08:57:13 +0000 2016
+X-GM-THRID: 6312297256737308672
+Date: Thu, 28 Jul 2016 01:57:13 -0700 (PDT)
+From: "Gabriele N." <gabriele.nosatti@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <083e3356-7574-48fa-ae9f-17d912ce6932@googlegroups.com>
+Subject: Errors creating Serie A 2016/17 db from updated dataset
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2079_978576662.1469696233198"
+X-Google-Token: EOmR57wFHJn4oZNArFE0
+X-Google-IP: 87.4.95.110
+
+------=_Part_2079_978576662.1469696233198
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2080_547016440.1469696233198"
+
+------=_Part_2080_547016440.1469696233198
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+So, I updated the Serie A dataset for season 2016/17. When importing data 
+in a DB, I got several errors:
+
+[info] parsing data (fixture) 'it-italy!/2016-17/seriea' 
+(it-italy/2016-17/seriea.yml)...
+*** [DEPRECATED] old event config format w/ yaml, please use new plain text 
+format >it-italy/2016-17/seriea.yml<
+[info]   build_title_table_for - deprecated API - use TitleMapper.new 
+instead
+[info] skipping line (no match found): >Pescara - Napoli<
+[info] skipping line (no match found): >Sassuolo - Pescara<
+[info] skipping line (no match found): >Pescara - Inter<
+[info] skipping line (no match found): >Inter - Juve<
+
+I'm pretty sure this depends on the files I created, so I'd need help how 
+to fix these.
+
+My questions: 
+- what's the new format for the YML file? Where can I see an example or 
+documentation?
+- any hint why some matches are skipped (there are more; I pasted few, as 
+example)
+
+Thanks!
+Gabriele
+
+------=_Part_2080_547016440.1469696233198
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">So, I updated the Serie A dataset for season 2016/17. When=
+ importing data in a DB, I got several errors:<br><font size=3D"2"><span st=
+yle=3D"color: rgb(0, 0, 0);"><br><span style=3D"font-family: courier new,mo=
+nospace;">[info] parsing data (fixture) &#39;it-italy!/2016-17/seriea&#39; =
+(it-italy/2016-17/seriea.yml)...<br>*** [DEPRECATED] old event config forma=
+t w/ yaml, please use new plain text format &gt;it-italy/2016-17/seriea.yml=
+&lt;<br>[info]=C2=A0=C2=A0 build_title_table_for - deprecated API - use Tit=
+leMapper.new instead<br>[info] skipping line (no match found): &gt;Pescara =
+- Napoli&lt;<br>[info] skipping line (no match found): &gt;Sassuolo - Pesca=
+ra&lt;<br>[info] skipping line (no match found): &gt;Pescara - Inter&lt;<br=
+>[info] skipping line (no match found): &gt;Inter - Juve&lt;<br></span></sp=
+an></font><br>I&#39;m pretty sure this depends on the files I created, so I=
+&#39;d need help how to fix these.<br><br>My questions: <br>- what&#39;s th=
+e new format for the YML file? Where can I see an example or documentation?=
+<br>- any hint why some matches are skipped (there are more; I pasted few, =
+as example)<br><br>Thanks!<br>Gabriele<br></div>
+------=_Part_2080_547016440.1469696233198--
+
+------=_Part_2079_978576662.1469696233198--
+

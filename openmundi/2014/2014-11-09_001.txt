@@ -1,0 +1,70 @@
+From 332503449600@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 331076337664
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,9fb2f6f0238a1286,start
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.147.131 with SMTP id tk3mr4116010lbb.2.1415535584578;
+        Sun, 09 Nov 2014 04:19:44 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.152.9.168 with SMTP id a8ls342513lab.55.gmail; Sun, 09 Nov
+ 2014 04:19:43 -0800 (PST)
+X-Received: by 10.152.246.40 with SMTP id xt8mr2362332lac.0.1415535583866;
+        Sun, 09 Nov 2014 04:19:43 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22b.google.com (mail-wi0-x22b.google.com. [2a00:1450:400c:c05::22b])
+        by gmr-mx.google.com with ESMTPS id l9si603381wix.1.2014.11.09.04.19.43
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 09 Nov 2014 04:19:43 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22b as permitted sender) client-ip=2a00:1450:400c:c05::22b;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22b as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x22b.google.com with SMTP id r20so8139823wiv.10
+        for <openmundi@googlegroups.com>; Sun, 09 Nov 2014 04:19:43 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=s5h1Z580n/oEiVRvH5dKo9hmUdhJJw7vqEyH/xxvmRQ=;
+        b=hq7mQr2YLRlklSXojUj3DrnfpIHqnXYzn98FCoUmn3anO1BPW69jctZltRUYMRf/eU
+         BLaFgG5ZMTiPm7pD6srOOy3IymZIc7zY9m6qOkFE6vyiXKI4lQzjSR+OgOZ3BR4B/vpP
+         0VSxKwSCcH2Y3w2n0vZ5U/7Bg+TsjQ+2P10eA73U6w29sbsf1WKQBmexBLJag9UU4OOM
+         TcsP0Jza1GuD6bjd7rK0pGE7Wt4c8W4vysMSMVoxr3t2RSC7v+sPgbZMzjHRsoqyNOOC
+         70CdEmg0rax7yth/wg/FF9vXdlXSBQEs45uLl/SQ+SAf4p2y8du7BFb9Fg5JXvsqb5b6
+         OouA==
+MIME-Version: 1.0
+X-Received: by 10.194.58.8 with SMTP id m8mr34227027wjq.43.1415535583770; Sun,
+ 09 Nov 2014 04:19:43 -0800 (PST)
+Received: by 10.216.205.135 with HTTP; Sun, 9 Nov 2014 04:19:43 -0800 (PST)
+Date: Sun, 9 Nov 2014 13:19:43 +0100
+Message-ID: <CAAxEZd-rUMF_pyKsJ7aok3Sev0Hosg9tWTcVEbtEVfB3E8=EHQ@mail.gmail.com>
+Subject: [ANN] worlddb v2.0.5 Update - Includes Zip Archive Reader
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've udpated the worlddb command line tool (gem), that is,
+v2.0.5. What's news?
+
+  Now you can read in all you datasets from zip archives. For example:
+
+ To load the world.db datset use:
+
+    WorldDb.read_setup_from_zip( 'world.db-master', 'setups/all', './dl' )
+
+  Or to load the austria.db dataset use:
+
+    WorldDb.read_setup_from_zip( 'austria.db-master', 'setups/all', './dl' )
+
+  The arguments for read_setup_from_zip include:
+
+   1) name of the zip archive (w/o .zip extension) e.g. austria.db-master
+   2) name of the setup fixture manifest (w/o .txt extension e.g. setups/all
+   3) include path - where to find the zip archive e.g. ./dl
+
+  That's it. Cheers.
+

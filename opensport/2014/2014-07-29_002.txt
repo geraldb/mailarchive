@@ -1,0 +1,74 @@
+From 1729272741888@xxx Tue Jun 16 00:16:54 +0000 2015
+X-GM-THRID: 1591517118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.7.71 with SMTP id h7mr344825laa.2.1406646569320;
+        Tue, 29 Jul 2014 08:09:29 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.37.194 with SMTP id a2ls49488lak.1.gmail; Tue, 29 Jul 2014
+ 08:09:28 -0700 (PDT)
+X-Received: by 10.112.54.169 with SMTP id k9mr338019lbp.1.1406646568491;
+        Tue, 29 Jul 2014 08:09:28 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22b.google.com (mail-wg0-x22b.google.com [2a00:1450:400c:c00::22b])
+        by gmr-mx.google.com with ESMTPS id e20si712808wiw.0.2014.07.29.08.09.28
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 29 Jul 2014 08:09:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22b as permitted sender) client-ip=2a00:1450:400c:c00::22b;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22b as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f43.google.com with SMTP id l18so9019901wgh.14
+        for <opensport@googlegroups.com>; Tue, 29 Jul 2014 08:09:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=ect+630boXhCaEZfSQCG5pR3QzzgckIMtp7sHZdhHBI=;
+        b=z3+zaHEuXNp4eiudHsHNogmIbKWHPteE1ZtRMnMMJgXBYbJUL6zs0sJfqGzy6HAGv/
+         K/sPx/Jt59UKwpdE5eLRzW+baeMyeMZQ0UsCM0uIf4yofXxQpMwv8uRDgOkA36GyiBLd
+         H8KDD1DVX5J6lkHA5DwtCl4jiy5xR5xYCHkCoM441OsFyCMbu1CIM9+T5v3yFf9+vUxR
+         /hU43jvYxa0LOh1RMyPvBuxbrtgs13hGyIU2F8caN0M154wWbxNOxMXIIlFRLIP1WSXY
+         rUqiKKDFT+Q4Meyf5elK1o7ZuuPvulT6NcEeQOaPmedkY3NlgjnBe1fHOLc2Jsj/VDUj
+         Demw==
+MIME-Version: 1.0
+X-Received: by 10.180.108.1 with SMTP id hg1mr43208006wib.25.1406646568386;
+ Tue, 29 Jul 2014 08:09:28 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Tue, 29 Jul 2014 08:09:28 -0700 (PDT)
+In-Reply-To: <CANEDzNpOtPJDnYCUTV0zmzHPji2s87jtHgWgWLFvsFN9rXQ77A@mail.gmail.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+	<CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+	<3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+	<CAAxEZd9E7zgoReL0RprdZxXKLkBKvC5xVTNYUgFfsm02WZq=aQ@mail.gmail.com>
+	<16257216-0d9c-4d01-9f36-b00d26a612e2@googlegroups.com>
+	<CAAxEZd_oN6Z5nKLG1-znCwf7W_yEhQ-yyns0jxr5KVepFCmKHw@mail.gmail.com>
+	<c3e24314-de47-456d-bfd9-8973c1e1809f@googlegroups.com>
+	<CAAxEZd_EHOT-A-W5nFv8j6ZbvtAp+oKeJ=20XTw=wj625A3T3w@mail.gmail.com>
+	<CANEDzNpAaL-2oWLyQ7HpHhnz1=H8Xx+ajefJq4WOPhBpsygHvg@mail.gmail.com>
+	<CAAxEZd9wq+f_71pMTChpmQ5p00DcFXjiQEONtS1OLKiVdFBREA@mail.gmail.com>
+	<b41f388c-7c9a-4cef-9009-86dcc5b8c449@googlegroups.com>
+	<CAAxEZd_G609VULuuBL16AB9GkhF=+kUGD3b9MQqEpsBY73JnLQ@mail.gmail.com>
+	<CANEDzNpOtPJDnYCUTV0zmzHPji2s87jtHgWgWLFvsFN9rXQ77A@mail.gmail.com>
+Date: Tue, 29 Jul 2014 17:09:28 +0200
+Message-ID: <CAAxEZd9rJ4KOtBAC8-TR4dX-sDYgUC_ghZbKA78ThYEaWqDHvA@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for your follow-up. Sorry still need a day or two for the addon.
+
+>  I ran into with the squads was that the team keys were more than 3 characters and it actually
+> matched on some race track parsing.
+
+  Thanks for bringing it up. This also needs to get added (fixed) to
+the sportdb reader. Cheers.
+
+PS: Can you post a line or two of your stats format in use for squads?
+I might try to add a small example w/ a test case/unit in the addon.
+

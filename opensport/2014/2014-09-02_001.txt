@@ -1,0 +1,67 @@
+From 2137899663360@xxx Tue Jun 16 00:16:48 +0000 2015
+X-GM-THRID: 2138078969856
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,9ac81e255d4d1e26,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.218.171 with SMTP id ph11mr2738118wic.1.1409694655474;
+        Tue, 02 Sep 2014 14:50:55 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.23.3 with SMTP id i3ls565553laf.62.gmail; Tue, 02 Sep 2014
+ 14:50:54 -0700 (PDT)
+X-Received: by 10.152.6.9 with SMTP id w9mr40571law.7.1409694654788;
+        Tue, 02 Sep 2014 14:50:54 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x230.google.com (mail-wi0-x230.google.com [2a00:1450:400c:c05::230])
+        by gmr-mx.google.com with ESMTPS id gg11si5222wic.0.2014.09.02.14.50.54
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 02 Sep 2014 14:50:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::230 as permitted sender) client-ip=2a00:1450:400c:c05::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f176.google.com with SMTP id bs8so15109456wib.3
+        for <opensport@googlegroups.com>; Tue, 02 Sep 2014 14:50:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=Yimz0FManPh/xsi7Dv9EjR/25egU6E7QooDZCenX4TY=;
+        b=V9SRO4ti/lFUOwEi5qVrNE+i7Yk/GKZVMa58u0P/tAYsSs58tiEY0ZXUmA2WewntUW
+         UPfbY5G27w6jfmUwiX5nlKpPSCGhJLrws3rK1yfPRqWz/yWx4eSXPUZVn/NfFpuXk0EX
+         KVrNCrtUIW+ny9QWLM0/mSSivIHlEhozA6No1JTqDtnzECZcfI7UgxO3Cy5To3zdpfls
+         z/4qbJYX0jGljYtSkvpg+kN/AirVMsIPEUvo/Ny5b+DiVzHfvKFnNdud1/EBiW7edU5G
+         mYj9pBSICPpvk5q2azGxJLmHCYQ90lhZ3mo4Y/b3+x2r8Mh6+fATI9/Gb2QpOJLBWQpV
+         lDrQ==
+MIME-Version: 1.0
+X-Received: by 10.180.211.207 with SMTP id ne15mr31220693wic.29.1409694654687;
+ Tue, 02 Sep 2014 14:50:54 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Tue, 2 Sep 2014 14:50:54 -0700 (PDT)
+Date: Tue, 2 Sep 2014 23:50:54 +0200
+Message-ID: <CAAxEZd_mSR_fBXiD894hfiNzJOeuQfv45re2VZvX75YawcHb1g@mail.gmail.com>
+Subject: Champions League 2014/15 Group Stage (32 Teams, 8 Groups, 96 Matches) Added
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've added all 32 teams, 8 groups and 96 matches for the
+Champions League 2014/15 group stage kicking off on Tuesday, September
+16th.
+
+  See the 2014-15/cl.txt [1] group stage match schedule for details.
+
+  To build a database from the datasets from scratch use:
+
+    $ rake build DATA=cl201415
+
+  for an update (w/ world.db already setup) use:
+
+    $ rake update DATA=cl201415
+
+  Enjoy. Cheers.
+
+[1] github.com/openfootball/europe-champions-league/blob/master/2014-15/cl.txt
+

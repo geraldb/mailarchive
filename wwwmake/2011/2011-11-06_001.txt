@@ -1,0 +1,63 @@
+From 995912318976@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 987338113024
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,6ffac01d3c9122eb
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.224.27.10 with SMTP id g10mr8855676qac.5.1320582279872;
+        Sun, 06 Nov 2011 04:24:39 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.224.203.195 with SMTP id fj3ls7472935qab.5.gmail; Sun, 06 Nov
+ 2011 04:24:39 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.224.218.133 with SMTP id hq5mr4257152qab.14.1320582279535;
+ Sun, 06 Nov 2011 04:24:39 -0800 (PST)
+Received: by ek5g2000vbb.googlegroups.com with HTTP; Sun, 6 Nov 2011 04:24:39
+ -0800 (PST)
+Date: Sun, 6 Nov 2011 04:24:39 -0800 (PST)
+In-Reply-To: <d4a0111c-0fa1-4f42-9218-8a65a6af40ed@h24g2000yqm.googlegroups.com>
+References: <d4a0111c-0fa1-4f42-9218-8a65a6af40ed@h24g2000yqm.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EIf52fUEuR1Hi_42nWQ0
+X-Google-Web-Client: true
+X-Google-Header-Order: HUALESNKRC
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.23)
+ Gecko/20110921 Ubuntu/10.04 (lucid) Firefox/3.6.23,gzip(gfe)
+X-Google-IP: 91.115.42.105
+Message-ID: <d78fde74-dd97-4050-8580-3a7158de1035@ek5g2000vbb.googlegroups.com>
+Subject: Re: S6 Blank Updated - Now Includes Minimalistic Template (All Styles Inline)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   I've added some more updates to the S6 Blank Templates[1]. What's
+new?
+
+   * Added a fix/workaround for Chrome for inline styles (now using
+media='screen,projection' instead of media 'projection'; projection
+only won't work in chrome for style switching).
+
+   * Moved code to addons using new slideshow custom events (triggers)
+such as slideshow.change,
+     slideshow.init, slideshow.start, slideshow.keys, etc.; New addons
+include:
+
+     * counter (slide counter e.g. 1/7)
+     * controls (toggle, next, prev buttons, jumplist)
+     * autoplay
+     * footer/header
+
+  * Moved sample transitions to jquery.slideshow.transitions.js
+  * Changed box-sizing for .slide to border-box that lets you use
+simply use width: 100%; height: 100%;
+  * Some minor fixes.
+
+  That's it. Questions and comments welcome. Cheers.
+
+[1] https://github.com/geraldb/s6
+

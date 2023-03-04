@@ -1,0 +1,57 @@
+From 6174291595712528384@xxx Wed Jul 22 11:24:46 +0000 2015
+X-GM-THRID: 2656382746624
+Date: Wed, 22 Jul 2015 04:24:45 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport <opensport@googlegroups.com>, knservis@gmail.com
+Message-Id: <668e9cbc-4ee7-4cf1-99b8-fe1163816a83@googlegroups.com>
+In-Reply-To: <98f20ffb-d01c-4a53-ab1a-2fae9511380c@googlegroups.com>
+References: <98f20ffb-d01c-4a53-ab1a-2fae9511380c@googlegroups.com>
+Subject: Re: Sportdb error
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_611_876944243.1437564285947"
+X-Google-Token: EP36va0FEYBijiU-U2k0
+X-Google-IP: 217.13.183.252
+
+------=_Part_611_876944243.1437564285947
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_612_2027591761.1437564285947"
+
+------=_Part_612_2027591761.1437564285947
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  FYI:
+
+> error: uninitialized constant WorldDb::Model::Region (NameError)
+
+  I've updated the
+
+ - persondb-models v0.5
+ - sportdb-models v1.12
+
+   libs (gems) to use the new (WorldDb) State model (was Region). Using the 
+lastest version  e.g. 0.5+ and 1.12+ now everything should again work as 
+advertised.
+
+   If you run into any trouble, let us know. Cheers.
+
+------=_Part_612_2027591761.1437564285947
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hello,</div><div><br></div><div>=C2=A0 FYI:</div><div=
+><br></div><div>&gt; error:=C2=A0uninitialized constant WorldDb::Model::Reg=
+ion (NameError)</div><div><br></div><div>=C2=A0 I&#39;ve updated the</div><=
+div><br></div><div>=C2=A0- persondb-models v0.5</div><div>=C2=A0- sportdb-m=
+odels v1.12</div><div><br></div><div>=C2=A0 =C2=A0libs (gems) to use the ne=
+w (WorldDb) State model (was Region). Using the lastest version =C2=A0e.g. =
+0.5+ and 1.12+ now everything should again work as advertised.</div><div><b=
+r></div><div>=C2=A0 =C2=A0If you run into any trouble, let us know. Cheers.=
+</div></div>
+------=_Part_612_2027591761.1437564285947--
+
+------=_Part_611_876944243.1437564285947--
+

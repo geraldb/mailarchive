@@ -1,0 +1,178 @@
+From 1552336027648@xxx Tue Jun 16 00:16:55 +0000 2015
+X-GM-THRID: 1443995058176
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b420b99f7c108f3c
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.70.48.38 with SMTP id i6mr5822079pdn.5.1404502617787;
+        Fri, 04 Jul 2014 12:36:57 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.119.10 with SMTP id kq10ls1346889igb.5.gmail; Fri, 04 Jul
+ 2014 12:36:57 -0700 (PDT)
+X-Received: by 10.50.221.39 with SMTP id qb7mr99578igc.0.1404502617427;
+        Fri, 04 Jul 2014 12:36:57 -0700 (PDT)
+X-Google-Doc-Id: a4f7f1bf3d2bf3ac
+X-Google-Web-Client: true
+Date: Fri, 4 Jul 2014 12:36:56 -0700 (PDT)
+From: Carl-Erik Svensson <csvenss2@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <5bb398d9-51f0-476e-bfbe-3a762cdd8882@googlegroups.com>
+In-Reply-To: <CAAxEZd-9--4qHsGbJ5uF9duA20Bd0XWb2Z-s7XpO43W0qfovAg@mail.gmail.com>
+References: <8ef4037c-46cf-4d5f-a582-05fa64e3c2d9@googlegroups.com>
+ <CAAxEZd-dXv9CA4o+s8GhX9izd-tMnvDgzkFZL_2GFUUbVXhOVw@mail.gmail.com>
+ <CAAxEZd-cMT2CHPoMh4On8Pw_Qn+6unERLA57T9Hy9u8tHq=GQA@mail.gmail.com>
+ <8be0dd97-b415-45e0-bd80-a1a610a54fba@googlegroups.com>
+ <b8975d50-737d-47de-96a9-8d43fe71769c@googlegroups.com>
+ <CAAxEZd-9--4qHsGbJ5uF9duA20Bd0XWb2Z-s7XpO43W0qfovAg@mail.gmail.com>
+Subject: Re: [opensport] MLS Data
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1752_12170683.1404502616175"
+X-Google-Token: ENiE3J0FMH8sjqQGUnc0
+X-Google-IP: 24.130.213.187
+
+------=_Part_1752_12170683.1404502616175
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1753_4859945.1404502616176"
+
+------=_Part_1753_4859945.1404502616176
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello again, Gerald,
+
+I have populated my copy of major-league-soccer with some more data, and 
+had a few questions about the input format:
+
+1) I wanted to make the rounds for each year something like "Qualifying" or 
+"Regular Season", "Quarter Final", "Semifinal", and "Final", but I can't 
+seem to get the format right.  This is the format I'm trying:
+
+Qualifying
+
+Sat Mar/2 08:00 Philadelphia Union           1-3 Sporting Kansas City
+Sat Mar/2 10:45 Vancouver Whitecaps FC           1-0 Toronto FC
+...
+
+Quarter Final
+
+Sat Nov/2 12:00 New England Revolution           2-1 Sporting Kansas City
+Sat Nov/2 14:20 Seattle Sounders           1-2 Portland Timbers
+...
+
+Final
+
+Sat Dec/7 08:20 Sporting Kansas City           1-1 Real Salt Lake
+
+
+.. etc.  This doesn't seem to work for any of the years, except it 
+partially works for the 2008 data.  As far as I can tell it's all the same 
+format, so I'm not sure why the difference there.  Instead of the rounds 
+I'm trying to specify, I get a default "Matchday N" round.  Do you know how 
+I can correctly specify the rounds?
+
+2) Perhaps related to #1, I get a number of warnings about no round match 
+being found:
+
+[warn]   !!!! no round match found for date 2014-03-15T08:00:00+00:00
+
+Any ideas how to correct it?
+
+Many thanks!
+Carl
+
+On Monday, June 30, 2014 2:27:13 AM UTC-7, Gerald Bauer wrote:
+>
+> Hello Carl, 
+>
+>  Great stuff. I added mls to the build script and tried it e.g. 
+>
+>   $ rake build DATA=mls 
+>
+>  Just some minor changes needed: 
+>
+>   In  mls.yml you need to also add the three Canadian teams (Oh 
+> Canada, eh?) e.g. 
+>
+>   - toronto 
+>   - vancouver 
+>   - montreal 
+>
+>   And some alternative names are missing: 
+>
+> [debug]  no game match (two teams required) found for line: >Sun Mar/9 
+> CD Chivas USA          3-2   [TEAM1] < 
+>
+>   E.g. Club Deportivo Chivas US needs 
+>
+>  chivasusa, Club Deportivo Chivas US|CD Chivas USA, us 
+>  saltlake, Real Salt Lake|Real Salt Lake City, RSL, city:saltlakecity, us 
+>
+>    That's really all. Keep it up. Cheers. 
+>
+
+------=_Part_1753_4859945.1404502616176
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hello again, Gerald,</div><div><br></div><div>I have =
+populated my copy of major-league-soccer with some more data, and had a few=
+ questions about the input format:</div><div><br></div><div>1) I wanted to =
+make the rounds for each year something like "Qualifying" or "Regular Seaso=
+n", "Quarter Final", "Semifinal", and "Final", but I can't seem to get the =
+format right. &nbsp;This is the format I'm trying:</div><div><br></div><div=
+>Qualifying</div><div><br></div><div>Sat Mar/2 08:00 Philadelphia Union &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; 1-3 Sporting Kansas City</div><div>Sat Mar/=
+2 10:45 Vancouver Whitecaps FC &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-0 Toron=
+to FC</div><div>...</div><div><br></div><div>Quarter Final</div><div><br></=
+div><div>Sat Nov/2 12:00 New England Revolution &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; 2-1 Sporting Kansas City</div><div>Sat Nov/2 14:20 Seattle Sounders=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-2 Portland Timbers</div><div>...</div=
+><div><br></div><div>Final</div><div><br></div><div>Sat Dec/7 08:20 Sportin=
+g Kansas City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-1 Real Salt Lake</div><d=
+iv><br></div><div><br></div><div>.. etc. &nbsp;This doesn't seem to work fo=
+r any of the years, except it partially works for the 2008 data. &nbsp;As f=
+ar as I can tell it's all the same format, so I'm not sure why the differen=
+ce there. &nbsp;Instead of the rounds I'm trying to specify, I get a defaul=
+t "Matchday N" round. &nbsp;Do you know how I can correctly specify the rou=
+nds?</div><div><br></div><div>2) Perhaps related to #1, I get a number of w=
+arnings about no round match being found:</div><div><br></div><div>[warn] &=
+nbsp; !!!! no round match found for date 2014-03-15T08:00:00+00:00</div><di=
+v><br></div><div>Any ideas how to correct it?</div><div><br></div><div>Many=
+ thanks!</div><div>Carl</div><br>On Monday, June 30, 2014 2:27:13 AM UTC-7,=
+ Gerald Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;ma=
+rgin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello Carl=
+,
+<br>
+<br>&nbsp;Great stuff. I added mls to the build script and tried it e.g.
+<br>
+<br>&nbsp; $ rake build DATA=3Dmls
+<br>
+<br>&nbsp;Just some minor changes needed:
+<br>
+<br>&nbsp; In &nbsp;mls.yml you need to also add the three Canadian teams (=
+Oh
+<br>Canada, eh?) e.g.
+<br>
+<br>&nbsp; - toronto
+<br>&nbsp; - vancouver
+<br>&nbsp; - montreal
+<br>
+<br>&nbsp; And some alternative names are missing:
+<br>
+<br>[debug] &nbsp;no game match (two teams required) found for line: &gt;Su=
+n Mar/9
+<br>CD Chivas USA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3-2 &nbsp; [TEAM1] &lt;
+<br>
+<br>&nbsp; E.g. Club Deportivo Chivas US needs
+<br>
+<br>&nbsp;chivasusa, Club Deportivo Chivas US|CD Chivas USA, us
+<br>&nbsp;saltlake, Real Salt Lake|Real Salt Lake City, RSL, city:saltlakec=
+ity, us
+<br>
+<br>&nbsp; &nbsp;That's really all. Keep it up. Cheers.
+<br></blockquote></div>
+------=_Part_1753_4859945.1404502616176--
+
+------=_Part_1752_12170683.1404502616175--
+

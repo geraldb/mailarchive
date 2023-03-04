@@ -1,0 +1,69 @@
+From 1065285058560@xxx Tue Jun 16 00:17:02 +0000 2015
+X-GM-THRID: 1065927835648
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,853b1d88666435fc,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.42.141 with SMTP id o13mr4794lal.7.1402144658844;
+        Sat, 07 Jun 2014 05:37:38 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.206.66 with SMTP id lm2ls186225lac.88.gmail; Sat, 07 Jun
+ 2014 05:37:38 -0700 (PDT)
+X-Received: by 10.112.40.1 with SMTP id t1mr1420lbk.19.1402144658508;
+        Sat, 07 Jun 2014 05:37:38 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x232.google.com (mail-we0-x232.google.com [2a00:1450:400c:c03::232])
+        by gmr-mx.google.com with ESMTPS id x7si157396wiw.1.2014.06.07.05.37.38
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 07 Jun 2014 05:37:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::232 as permitted sender) client-ip=2a00:1450:400c:c03::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x232.google.com with SMTP id p10so1941563wes.9
+        for <opensport@googlegroups.com>; Sat, 07 Jun 2014 05:37:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=4O92bqu/87DEQclvp5V8tn7RNQuc/bdjpn0LgGwmHjE=;
+        b=YMCYkO183j0snq7DZzwzO1qmGGILM0Q2eKTzLcYmyudTXnVU/GD/PNssNPN4kl6TBB
+         H5VsWsL+bsd3Nu8Z/h1jKT+8wEvV2rUA+Wnu97z4l4xx1Izi8RICj+ae/TQ3c+Aexw/m
+         Vgws9r1kQr5w5cXejfQs/WJR71ZMRmU7mEa/h3eABUEiV8C6fkL6vFrLPmnDO4byhn/k
+         nQ6M96MbTbJNmKvnn7+GjBDPcdW9n5zKZ22z4oqkT0CKSMDwC4D6qj4U0xRzFCS7Lhg7
+         HJTQO+7PUTtebR2/8hHCYTEyydJqarOAzSJmxbxRYfwmO0HnZYG1MRYNAcxEA76Wk7rT
+         wr2Q==
+MIME-Version: 1.0
+X-Received: by 10.194.62.104 with SMTP id x8mr15549071wjr.15.1402144658432;
+ Sat, 07 Jun 2014 05:37:38 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Sat, 7 Jun 2014 05:37:38 -0700 (PDT)
+Date: Sat, 7 Jun 2014 14:37:38 +0200
+Message-ID: <CAAxEZd-WGma5RAJYJ2xTUUzzix71hopz2jCrBbN3-mN10zJJug@mail.gmail.com>
+Subject: New GitHub Org sportdb - sport.db Tools & Scripts @ github.com/sportdb
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've created (yet another) GitHub org, that is, sportdb [1],
+that collects all tools and scripts for the open sport(s) data project
+(incl. football.db, ski.db, etc.) for easy use and reference.
+
+  So far the repos include:
+
+  - sport.db.ruby (sportdb gem - open sports database command line
+tool in ruby (includes schema 'n' models for easy reuse))
+
+  - sport.db.api.starter (sportdb web service starter sample - build
+your own HTTP JSON API using the football.db, worldcup.db, ski.db,
+formulal1.db, etc.)
+
+  -  sport.db.admin (sport.db web app - Open Sports Database Web Admin
+Tool in Ruby on Rails (version 3.2 and up))
+
+  Cheers.
+
+[1] github.com/sportdb
+

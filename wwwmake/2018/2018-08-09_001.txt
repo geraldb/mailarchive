@@ -1,0 +1,146 @@
+From 6587633843851755520@xxx Thu Aug 09 08:23:48 +0000 2018
+X-GM-THRID: 6587633845182398464
+X-Received: by 2002:a19:c717:: with SMTP id x23-v6mr56200lff.36.1533803028397;
+        Thu, 09 Aug 2018 01:23:48 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a2e:9348:: with SMTP id m8-v6ls776812ljh.3.gmail; Thu, 09
+ Aug 2018 01:23:47 -0700 (PDT)
+X-Google-Smtp-Source: AA+uWPy13KeF7m/vIk3U5de8HEYEz8icnKHahLQaI4DnVGjYn4CrBJcLqzmrYLVfEQy7zLx6yXO+
+X-Received: by 2002:a2e:2244:: with SMTP id i65-v6mr36999lji.38.1533803027295;
+        Thu, 09 Aug 2018 01:23:47 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533803027; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CJrgo1jy/NFsFH3kg0RmoHLMT0WBR9gN26rTbu7Cu3r0ls3yIj1uk/vE8F6wXqfnR4
+         gEpXoY5tq1fHNaN4Od/jY+zOuvJTaOxvHJF5UNJ5jBizqIciTOp3hC+rgbuFSbFt+yHR
+         ebf6jihe1MNhBSwnMWJ8xDhi0qEX1JY7eniy7evWHFdz5qqRW/eBQHpOXwkMCZ2fpX9B
+         gnU+PdhHESJU2SX68auh95Xuf80a4XYOrUaCJ6q+m5JEgXiLdaVwIjWsu2WfS584n0J/
+         PMMexw6Ugirg0brTN6hLAtenmUzdkzhW2f8ucXnK+y/n0hyHJ/ChE6Kp1syBx8tvxeWZ
+         nMvg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=KYG3QDD1rrQaI7ioDCtKgrnxQk0ijY7CQ7zGTWQaNWM=;
+        b=binxyW+EIAxsPKs0d/lqXvv4erGlsGCrbId0aB8NDscQJVxqEknDrtQ1y5uYSEJE6m
+         BICgwBKRwVJ1SA5m1O0v+Cvzr+q5jqPoNl7p0haNERU5RoeOUp1BlgbxMEMnD3QC0SDW
+         BxaTnQsZCUvZKpixqnQxuNhTgnvjz8EuWUM7zHmv4CqyLjfS2qVwwiKvNHzu2ApAh7HU
+         9xrghmIeBJI5O4M11LsmYlEubzvNm7kLbwTdSyxXbUaFbdHYi9UQQRQv3clw8d2vbQPv
+         HK9PhNtR/uBHeNlZnVrHYpDHxmhHzorp5mB737Q5cz4HabhloamtWa1EPrw9veNiyHFE
+         coVA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=aNkJbsfg;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22f.google.com (mail-lj1-x22f.google.com. [2a00:1450:4864:20::22f])
+        by gmr-mx.google.com with ESMTPS id v6-v6si247855ljj.2.2018.08.09.01.23.47
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 09 Aug 2018 01:23:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22f as permitted sender) client-ip=2a00:1450:4864:20::22f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=aNkJbsfg;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22f.google.com with SMTP id s12-v6so3825598ljj.0
+        for <wwwmake@googlegroups.com>; Thu, 09 Aug 2018 01:23:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=KYG3QDD1rrQaI7ioDCtKgrnxQk0ijY7CQ7zGTWQaNWM=;
+        b=aNkJbsfgSFoI640KdMIgwzgErn/HOYFI3mzBBAGINtYIGEB4tRcXE7a9jPIuBgB8Ia
+         S8UYbR0OedEGvFMpABDy0lcZz/uh4McYwS7qQng8xDSffA9fds/0hw87rro/zY8xX3pv
+         dnhTRj2MHFrUC/PnbG12dVcApli4wu1Ft80lOflp4cyZnwhi0kXl8CPKaJoZ6ANckYmW
+         QCiQS9OBem48Cl7ckj9WWCCW3VUZ2pmgjwHt9NAOllwVUa0nGCnjGj2mtaNowDQr3L8S
+         ACspO/HGJYhVSNgkzKPRsHzGaLgEjs9OUKuak1ZOALJVQxUVXH9Zav1RK9BCI72LnVvH
+         95IA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=KYG3QDD1rrQaI7ioDCtKgrnxQk0ijY7CQ7zGTWQaNWM=;
+        b=OVl+fjzEyLpfMSbmraTpqMREHy1UUnqudFDQzondMMtn/V1qfQ+bjO8SLL2sHG+2qA
+         Smdr9BAmXs9v1EReTS4+OIQSlxaO7nujb8Cl+ICn5y/WhPA42XiWXd/S/Chj1+2hQpoK
+         jni9Hh2oxfR+r3apoxxcGuEWuq7k67e965J1moSgw9KVRi1rMw42tY60W6nfp0CNzevL
+         kCJ/Q79pKVXxYMVfg8oV0ZM+cYSXhhIt6RwlAjvLrlLDBlZuEz99OWUL1ykdjTVR2Ek+
+         pk1SQ+n7kgbuKEUGcrq3Pmj/y9jBT1TXl29AJsBlEKl7/wymcgFBQKTCzuvBhnSyC2zi
+         i5UQ==
+X-Gm-Message-State: AOUpUlE+7EECZgo7Rwg5v0GHPt6MdR5OR3NbU7iXK3DTU9Q37lX/B648
+	WHdtMGe/VftBqc5+J2wpyirmNvNH5SReRu69+rwtuTmM
+X-Received: by 2002:a2e:40c:: with SMTP id 12-v6mr966908lje.146.1533803026880;
+ Thu, 09 Aug 2018 01:23:46 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:ab3:4c6b:0:0:0:0:0 with HTTP; Thu, 9 Aug 2018 01:23:46 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 9 Aug 2018 10:23:46 +0200
+Message-ID: <CAAxEZd9TfJ0016cWJ-7_3s_3J=1EgB-ODGVWeeSNF=PT_14XYA@mail.gmail.com>
+Subject: csvutils - tools 'n' scripts for working with comma-separated values
+ (csv) datafiles - the world's most popular tabular data interchange format in text
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  I've put together a new library / gem called csvutils [1] that collects
+  scripts for wrangling with comma-separated values (csv) datafiles -
+  the world's most popular tabular data interchange format in text.
+
+  Try the help option `-h/--help` with the command line tools. Example:
+
+   $ csvhead -h          # or
+   $ csvhead --help
+
+resulting in:
+
+  Usage: csvhead [OPTS] datafile ...
+    -n, --num=NUM                    Number of rows
+    -h, --help                       Prints this help
+
+  Now try it with csvheader -h, csvstat -h, csvsplit -h, csvcut -h and so on.
+
+
+  Note: You can use all tools in your script using the CsvUtils class methods:
+
+  Shell     => Ruby
+  csvhead   => CsvUtils.head( path, n: 4 )
+  csvheader => CsvUtils.header( path )
+  csvstat   =>  CsvUtils.stat( path, *columns )
+  csvsplit  => CsvUtils.split( path, *columns )
+  csvcut   =>  CsvUtils.cut( path, *columns, output: path)
+
+  Let's retry the sample from the reamde in a ruby script:
+
+  require 'csvutils'
+
+
+  CsvUtils.head( 'ENG.csv' )
+  # same as:
+  #  $ csvhead ENG.csv
+
+  CsvUtils.header( 'ENG.csv' )
+  # same as:
+  #  $ csvheader ENG.csv
+
+  CsvUtils.stat( 'ENG.csv', 'Team1', 'Team2' )
+  # same as:
+  #  $ csvstat -c Team1,Team2 ENG.csv
+
+
+  CsvUtils.stat( 'AUT.csv', 'Season' )
+  # same as:
+  #  $ csvstat -c Season AUT.csv
+
+  CsvUtils.split( 'AUT.csv', 'Season' )
+  # same as:
+  #  $ csvsplit -c Season AUT.csv
+
+  CsvUtils.cut( 'AUT_2016-2017.csv', 'Date', 'Team1', 'Team2', 'FT1', 'FT2' )
+  # same as:
+  #  $ csvcut -c Date,Team1,Team2,FT1,FT2 AUT_2016-2017.csv
+
+
+   Happy hacking and wrangling with comma-separated values (csv)
+datafiles in ruby.
+  Cheers. Prost.
+
+
+[1] https://github.com/csv11/csvutils
+

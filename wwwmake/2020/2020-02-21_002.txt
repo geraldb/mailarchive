@@ -1,0 +1,95 @@
+From 6795807844535894016@xxx Fri Feb 21 08:05:15 +0000 2020
+X-GM-THRID: 6795806536526462976
+X-Received: by 2002:a05:600c:290e:: with SMTP id i14mr2137397wmd.139.1582272314896;
+        Fri, 21 Feb 2020 00:05:14 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:adf:fac2:: with SMTP id a2ls357298wrs.4.gmail; Fri, 21 Feb
+ 2020 00:05:13 -0800 (PST)
+X-Google-Smtp-Source: APXvYqy7P2gRd3vUCaXeFi6wJHyU9xX1E8a9Gb8M9ngkO1t7NDLWloSz3JNy1ovKSoijiGeI/VRp
+X-Received: by 2002:a05:6000:118e:: with SMTP id g14mr49886093wrx.39.1582272313586;
+        Fri, 21 Feb 2020 00:05:13 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1582272313; cv=none;
+        d=google.com; s=arc-20160816;
+        b=SBgzbyUAa5HC7ldnFSBpr7+8qFidKLjWzfxwNQBOvwAXKJFwQTwyBqjGCIdg5lKZUP
+         661eExGqMrFh08AArl2KZSbiMsGQLBjM0qlGlLfnABIpOw4y8XnsMxqIXivRxeff/Tfo
+         4s61gb23kmDpp4bBU+LQXYX/99M3vPQ5srGkdowM5LZvjp8C69wuym1IML+/n3YETUwQ
+         ojvXpshmVb+UC3Cz66EWXFOzWCn28vv0hebZ0hKASBQQYhnmRp6EZaOsPrzNPfdgx8nZ
+         dnHjLrEchuZQjthAV//xxGcJVVZQnwR0YL7xPRbk7n6ZhZZkh7Mvxwu00FsKg8bWLNnn
+         wlZQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=x6q8KX+aBP0snA/kyFuy188XwUeKLhdVSJ316TTgNBs=;
+        b=hStcQt3xx73mUxA+itpTNXgHnXLgF4wM4p++zwns5nR+YkbDSxxWi6oZAZVrTMo6bM
+         EtMOKK6x1TGluwXGdZgHiE26f9Exu58lCRL6lxNREKI0viCjaewwdHLGsNlQLU4MVmmq
+         MLWgR7IhGkVu5RwsVxAsYcMIsGPHZR1zhAsIrbg+h5pv7zk/jaK9phn4BJXzjmti2XRQ
+         MEqCrpgSw1aHqdDk6uQhfg4wE6HvnQgNTSJfUaI4pld7+LZY8U9QsmABE7PIyj/4C350
+         bqnDib1uJJTXKRhKiTtweHiqopWYQZUuEdhXBQm0+zbDESCzehRJYwA4n+l9J5A7CD5Q
+         rO6Q==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="W/6GKfP/";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::132 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x132.google.com (mail-lf1-x132.google.com. [2a00:1450:4864:20::132])
+        by gmr-mx.google.com with ESMTPS id t131si36121wmb.1.2020.02.21.00.05.13
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 21 Feb 2020 00:05:13 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::132 as permitted sender) client-ip=2a00:1450:4864:20::132;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="W/6GKfP/";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::132 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x132.google.com with SMTP id m30so800000lfp.8
+        for <wwwmake@googlegroups.com>; Fri, 21 Feb 2020 00:05:13 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=x6q8KX+aBP0snA/kyFuy188XwUeKLhdVSJ316TTgNBs=;
+        b=W/6GKfP/2BLiAiobUM5qL0QerxjhwrGPOmEz3gtcZFgs5OtmBWrkHP+JKvwTgufGmb
+         O4KIBbW3/P4sXI1bS/YgfgAD0vmSUWVBt1Lnjf4FiHpe9ytJBZ6e2bkTqNBzoy+xa1O4
+         bpANgBelmQAOBcoG+zhCN4NJ4z7JHctFFsEUgHFunFqPA+Z5Dkc/qAx20UYcNPGUAFYo
+         bE+mF0jhARqjznigP28p1h6NWsxMG2/50E3DXxl4W1UbyEOtwm1mOf1IT21k94T4IqTP
+         fCpOTfSmPn6PTLEv+ZfHTEvJeSoUZs28DwcDh/gop5K0nWvBTVAWcn2Lg8JPZLJVvewz
+         Iw1g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=x6q8KX+aBP0snA/kyFuy188XwUeKLhdVSJ316TTgNBs=;
+        b=FFdxtICesF/7lZPO+R66xWTWFc9Pr3fv2NQcGkbA+kjp8RXKmn7HWu6KaMULm+E4bX
+         l2Nd3laM05JTpm70pqjQ1lzQ/rnNnbauF64j7Ky7rE/XJ6z31GrPD0cxGWWgfZbn7Rcz
+         A0MT+kGLK0SsPRXtXUxlR17PdfuQc5zWQz+xsbS2zYdWRnLbSlnKrPw/TaFmqRiBabHg
+         2qUP14Hb2DuDMBGeEhTnIkeTStmmRVceVc63+tzccyxJgB+zOik5MVC74AfbnI8CY1+A
+         /bsx8bmuoUVR5pqyuFg99AIZw52Dhid+KvSiNO/VaFileTVm9ChvLlTsi2rNfOBeo1n0
+         r+OA==
+X-Gm-Message-State: APjAAAXCkz55HrCDUcyCEg8S4xUNOP93zxyNZj7qyMCb18Vq+vXQfS6Q
+	NyS/wkThhBqxc8oIvR8jWQEhzW6/ReBuRmv0+ejq/yfR
+X-Received: by 2002:a19:7d04:: with SMTP id y4mr19198344lfc.111.1582272312160;
+ Fri, 21 Feb 2020 00:05:12 -0800 (PST)
+MIME-Version: 1.0
+References: <aa0a9a48-1cee-4fcf-927a-fa91a14be7ce@googlegroups.com>
+In-Reply-To: <aa0a9a48-1cee-4fcf-927a-fa91a14be7ce@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 21 Feb 2020 09:05:01 +0100
+Message-ID: <CAAxEZd9GXNtSd7zT4SyOSfeo+M08-kGJ3i1xeXpOkBHqyNmFTA@mail.gmail.com>
+Subject: Re: [wwwmake:472] `require': cannot load such file -- pluto/update (LoadError)
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+    thanks for trying rubynews and reporting the installation error:
+
+> `require': cannot load such file -- pluto/update (LoadError)
+
+    You can install the missing pluto-update gem / library [1] using:
+
+      $ gem install pluto-update
+
+    And than please, retry.  I will add the missing dependency to
+rubynews itself with the next update.
+    Cheers. Prost.
+
+[1] https://rubygems.org/gems/pluto-update
+

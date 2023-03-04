@@ -1,0 +1,232 @@
+From 1478259376128@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1456305340416
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,2568c5e341d64211
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.144.170 with SMTP id sn10mr1762786pab.43.1392216723890;
+        Wed, 12 Feb 2014 06:52:03 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.182.96.166 with SMTP id dt6ls1176329obb.78.gmail; Wed, 12 Feb
+ 2014 06:52:03 -0800 (PST)
+X-Received: by 10.182.230.168 with SMTP id sz8mr1795312obc.9.1392216723164;
+        Wed, 12 Feb 2014 06:52:03 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-vc0-x234.google.com (mail-vc0-x234.google.com [2607:f8b0:400c:c03::234])
+        by gmr-mx.google.com with ESMTPS id c1si4897405vdv.0.2014.02.12.06.52.03
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 12 Feb 2014 06:52:03 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c03::234 as permitted sender) client-ip=2607:f8b0:400c:c03::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c03::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-vc0-f180.google.com with SMTP id ks9so6992281vcb.39
+        for <webslideshow@googlegroups.com>; Wed, 12 Feb 2014 06:52:03 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=yOu9BZtDb8cP8+ZlBNtmYOUFWIW91eluo+Exzn45A/I=;
+        b=TsVYLxxwq5/a6TOHsaLDCROt7cxuneBLgJc7Pq9Dxq7Rog/CQeGe+yyZNWl0kcNCbb
+         nQ5JKCJGNWBs703yDa/KH+CERms1YcoJnCiqo54YGhEQE1yg1b4isN1eoA7LOEkXrkBP
+         YRV0xur2p+B1v6XaSWDvxdcKpEyHmRKEmPh3X4/Mg/wrmHcZitBFh8SHaIgpheBHAlRJ
+         A/kDlm8trZlXYpPlL73agsguBlYy4lh/KRxJYY3KkRP9xxZiw5mQj8g9L9twYqPJdoWs
+         vtUGBBd28HQYPK7UjEhyui54JyQuXIyEp704BdO3prS7ynHr2DBPPXxKIkE/M8T29bE/
+         67Zg==
+MIME-Version: 1.0
+X-Received: by 10.58.252.8 with SMTP id zo8mr124434vec.55.1392216722955; Wed,
+ 12 Feb 2014 06:52:02 -0800 (PST)
+Received: by 10.58.156.10 with HTTP; Wed, 12 Feb 2014 06:52:02 -0800 (PST)
+In-Reply-To: <e508d7aa-e0a8-4c2b-8ea9-b3ef909b0b36@googlegroups.com>
+References: <cc360c27-7967-4404-942f-e2c201024e4c@googlegroups.com>
+	<CAAxEZd8Yc0zOu4tdB9fQUy+Wy2b8wfn3Fp5mZDaPYOn4-1fLLg@mail.gmail.com>
+	<CAGz-Eo7zMq_k0R7XkJA5iYEvAAoTfpvqpjcz2g2BbUju87ey8w@mail.gmail.com>
+	<CAAxEZd9O=iVO8d7Hk=YyqvvBWyNPxaZP1VmRA+BpYDzM7T90bw@mail.gmail.com>
+	<e508d7aa-e0a8-4c2b-8ea9-b3ef909b0b36@googlegroups.com>
+Date: Wed, 12 Feb 2014 08:52:02 -0600
+Message-ID: <CAAxEZd-h1Hr20ZJBKXieALSfxAfM6g+4Bv3nBz-1Ve1LG75mog@mail.gmail.com>
+Subject: Re: [slideshow:340] Markdown incremental steps
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   To mark individual list item (as seems to be required by deck.js &
+friends) add the block attribute list after the marker. Quote from the
+kramdown docu [1]:
+
+> A optional IAL [=inline attribute list] for applying attributes to a list item can be used after the list > item marker:
+>
+> * {:.cls} This item has the class "cls".
+>  Here continues the above paragraph.
+>
+> * This is a normal list item.
+
+  Thus use something like:
+
+ * {: .slide} item 1
+ * {: .slide} item 2
+ * {: .slide} item 3
+
+or
+
+ * {: .slide} item 1
+ * {: .slide} item 2
+ * {: .slide} item 3
+ {: .step}
+
+  to try to make it work for all themes. Cheers.
+
+[1] http://kramdown.gettalong.org/syntax.html#lists
+
+2014-02-11 20:18 GMT-06:00 Micah Cooper <coopermj@miamioh.edu>:
+> Thanks for all the help! One last question, though:
+>
+> https://github.com/geraldb/s6/blob/gh-pages/DOCS/FORMAT.md states " Shortcut
+> Tip: If a list gets marked up with .step, all its children get marked up
+> automatically."
+>
+> Does that mean each <li> should get the class? It looks as if the default
+> template works if step/slide/fragment (for reveal.js) tag is on the <ol>,
+> but deck.js and reveal.js seem to need it on the <li>. Unfortunately,
+> kramdown seems to only tag the <ol>, not the <li>
+>
+> * one
+>
+> * two
+>
+> * three
+>
+> {: .step}
+>
+> <ul class="step">
+>
+>   <li>one</li>
+>
+>   <li>two</li>
+>
+>   <li>three</li>
+>
+> </ul>
+>
+> Does that make sense? Am I making it too complicated on myself? :D
+>
+>
+> On Monday, February 10, 2014 5:58:41 PM UTC-5, Gerald Bauer wrote:
+>>
+>> Hello,
+>>   Great to hear.   I don't know deck.js in detail. Try adding both classes
+>> e.g.
+>>
+>> {: .step .slide }
+>>
+>>   instead of just
+>>
+>> {: .step }
+>>
+>>   and it should work with both themes. Cheers.
+>>
+>> 2014-02-10 13:37 GMT-06:00 Micah Cooper <coop...@miamioh.edu>:
+>> > Fantastic -- thanks for the quick reply!
+>> >
+>> > Looks as if the native theme respects step and deck.js (for example)
+>> > requires .slide, which breaks my dream of flipping packs back and forth.
+>> > I'm
+>> > assuming translation for different themes would require adding a
+>> > parser/rewriter?
+>> >
+>> > Thanks again!
+>> >
+>> >
+>> > On Mon, Feb 10, 2014 at 11:47 AM, Gerald Bauer <gerald...@gmail.com>
+>> > wrote:
+>> >>
+>> >> Hello,
+>> >>
+>> >> > Sorry for the possible double post -- didn't see the first one
+>> >> > appear.
+>> >>
+>> >>   Sorry, the first post is moderated - unfortunately even this list
+>> >> gets lots of spam.
+>> >>
+>> >> > I'm trying to do step with Markdown and can't get it to work. It
+>> >> > looks
+>> >> > as if the example with incremental bullets is in Textile
+>> >> > and when I try *(step) in Markdown, it displays the (step) literally.
+>> >> > Am
+>> >> > I just messing up the syntax in Markdown?
+>> >>
+>> >>   Standard "plain" or "classic" markdown has no support for css style
+>> >> classes. However, markdown extras such as MultiMarkdown offer, for
+>> >> example, block attribute list e.g.
+>> >>
+>> >> * item 1
+>> >> * item 2
+>> >> * item 3
+>> >> {: .step}
+>> >>
+>> >>   That should work if you use kramdown, for example, for your markdown
+>> >> conversion. See the syntax page [1], for details. Cheers.
+>> >>
+>> >> [1] http://kramdown.gettalong.org/syntax.html#block-ials
+>> >>
+>> >> 2014-02-10 8:31 GMT-06:00 Micah Cooper <coop...@miamioh.edu>:
+>> >> > Sorry for the possible double post -- didn't see the first one
+>> >> > appear.
+>> >> >
+>> >> > I'm trying to do step with Markdown and can't get it to work. It
+>> >> > looks
+>> >> > as if
+>> >> > the example with incremental bullets is in Textile and when I try
+>> >> > *(step) in
+>> >> > Markdown, it displays the (step) literally. Am I just messing up the
+>> >> > syntax
+>> >> > in Markdown?
+>> >> >
+>> >> >
+>> >> > --
+>> >> > You received this message because you are subscribed to the Google
+>> >> > Groups
+>> >> > "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n'
+>> >> > Friends"
+>> >> > group.
+>> >> > To unsubscribe from this group and stop receiving emails from it,
+>> >> > send
+>> >> > an
+>> >> > email to webslideshow...@googlegroups.com.
+>> >> > For more options, visit https://groups.google.com/groups/opt_out.
+>> >>
+>> >> --
+>> >> You received this message because you are subscribed to the Google
+>> >> Groups
+>> >> "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n'
+>> >> Friends"
+>> >> group.
+>> >> To unsubscribe from this group and stop receiving emails from it, send
+>> >> an
+>> >> email to webslideshow...@googlegroups.com.
+>> >> For more options, visit https://groups.google.com/groups/opt_out.
+>> >
+>> >
+>> > --
+>> > You received this message because you are subscribed to the Google
+>> > Groups
+>> > "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n'
+>> > Friends"
+>> > group.
+>> > To unsubscribe from this group and stop receiving emails from it, send
+>> > an
+>> > email to webslideshow...@googlegroups.com.
+>> > For more options, visit https://groups.google.com/groups/opt_out.
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n' Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to webslideshow+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/groups/opt_out.
+

@@ -1,0 +1,59 @@
+From 180946468864@xxx Sat Dec 20 19:01:39 +0000 2014
+X-GM-THRID: 182250897408
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,931d8eb5793cc03d,start
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.147.131 with SMTP id tk3mr9243834lbb.2.1415145265899;
+        Tue, 04 Nov 2014 15:54:25 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.152.206.104 with SMTP id ln8ls257239lac.22.gmail; Tue, 04 Nov
+ 2014 15:54:25 -0800 (PST)
+X-Received: by 10.152.7.73 with SMTP id h9mr109688laa.6.1415145265359;
+        Tue, 04 Nov 2014 15:54:25 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22e.google.com (mail-wi0-x22e.google.com. [2a00:1450:400c:c05::22e])
+        by gmr-mx.google.com with ESMTPS id l9si564960wix.1.2014.11.04.15.54.25
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 04 Nov 2014 15:54:25 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) client-ip=2a00:1450:400c:c05::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f174.google.com with SMTP id d1so10931846wiv.7
+        for <beerdb@googlegroups.com>; Tue, 04 Nov 2014 15:54:25 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=1mzk2DZ9gv6wFbbnNbG3WGapBFmv6GIWAcGhvo8akNM=;
+        b=zok0fo6qVyNMSGJIkaIiUMAbFWPsawgizrPZqULGu0WfJaiu5F8gqiEPEkZW+QpSbE
+         3ANBeFjsulvF4yMn6AxKkWf1+Yrq7qpKw6NN98zUNfMdPyVGVfNtnCIRN34lQxNj0rkK
+         XMNEb9nE8ZH+gqoSFN63rjpmrGXDTBC7zF6QoiENzrKt/hYrhRyP7IuAO6e/tskK3lD8
+         Cu+MLAXF6ve2SZMOMhDTkPMgfrpvENtrKZBds4RrIEdUpl4Xa4wtJAVvRdzVKe+gQHog
+         EFPzqd6yQxPTADiUAtmOdAeQqh73QLj7hhr+eUY7Wu9UJeJfaA+Ij2seEuzjK71M4UEU
+         i37g==
+MIME-Version: 1.0
+X-Received: by 10.194.178.231 with SMTP id db7mr14471833wjc.112.1415145265234;
+ Tue, 04 Nov 2014 15:54:25 -0800 (PST)
+Received: by 10.216.205.135 with HTTP; Tue, 4 Nov 2014 15:54:25 -0800 (PST)
+Date: Wed, 5 Nov 2014 00:54:25 +0100
+Message-ID: <CAAxEZd-RXN05LB6azLYn0b2KhdC+nZ73bkV70MJNeiBQFaJLrQ@mail.gmail.com>
+Subject: Beer-A-Day - Open Data "Eternal" Page-A-Day Calender - beer.db Web
+ App Sample in Ruby on Rails
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  As an example of using the beer.db - open public domain beer n
+brewery data - I've put together a page-a-day "eternal" calendar
+serving a different beer w/ every request. See a live demo with an
+all-Austrian taproom [1] or build your own [2]. All code and data is
+public domain.  Cheers. Prost. Kampai.
+
+[1] at365.herokuapp.com
+[2] github.com/beerkit/beer.db.day
+

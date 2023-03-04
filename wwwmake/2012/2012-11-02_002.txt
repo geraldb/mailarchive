@@ -1,0 +1,68 @@
+From 1157554503680@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1154170748928
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,e0c6d78404f1be89
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.58.189.35 with SMTP id gf3mr360567vec.11.1351846190389;
+        Fri, 02 Nov 2012 01:49:50 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.52.141.116 with SMTP id rn20ls3281077vdb.5.gmail; Fri, 02 Nov
+ 2012 01:49:49 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.52.76.36 with SMTP id h4mr197971vdw.17.1351846189973; Fri, 02
+ Nov 2012 01:49:49 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by r10g2000vby.googlegroups.com with HTTP; Fri, 2 Nov 2012 01:49:49
+ -0700 (PDT)
+Date: Fri, 2 Nov 2012 01:49:49 -0700 (PDT)
+In-Reply-To: <84714203-1fff-4f30-86b5-ce93fd2b33a1@googlegroups.com>
+References: <84714203-1fff-4f30-86b5-ce93fd2b33a1@googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EK2SzoQFJuml8jZl8NY0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:16.0)
+ Gecko/20100101 Firefox/16.0,gzip(gfe)
+X-Google-IP: 91.115.40.128
+Message-ID: <dd699f9c-5869-4126-a84d-8ca05932e67b@r10g2000vby.googlegroups.com>
+Subject: Re: How to enable 'bullet point' transitions
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+> http://slideshow.rubyforge.org/tutorial.html#2displays each bullet point
+> when pressing right arrow key.
+>
+> What template was used to create this slideshow? How can I enable this kind
+> of 'show bullet points one by one' feature in my own decks?
+
+   The tutorial sample uses the S6 template pack [1]. To enable bullet
+points one by one with this template pack mark your list items with
+a .step style class e.g.
+
+    h3. Getting Started in 1-2-3 Easy Steps
+
+    *(step) Step 1: Author your slides in plain text using a wiki-
+style markup language
+    *(step) Step 2: Generate your slide show using the @slideshow@ gem
+    *(step) Step 3: Open up your slide show in your browser and hit
+the space bar to flip through your slides
+    *(step) That's it. Showtime!
+
+
+   For more examples, see the source [2].
+
+   Cheers.
+
+[1] https://github.com/geraldb/slideshow-s6-blank
+[2] https://raw.github.com/geraldb/slideshow/master/samples/tutorial.textile
+

@@ -1,0 +1,91 @@
+From 6880547286651240448@xxx Tue Oct 06 16:37:34 +0000 2020
+X-GM-THRID: 6880547286222372864
+X-Received: by 2002:aa7:c447:: with SMTP id n7mr6517104edr.134.1602002253677;
+        Tue, 06 Oct 2020 09:37:33 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:6402:160e:: with SMTP id f14ls9127963edv.2.gmail; Tue,
+ 06 Oct 2020 09:37:31 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxFRKeNCniyVfiifaM44CiNNBY8iYzEtcIDMDu4s/jD1IaG8iVC/KN8Tvq5WQZ5klX8WpN4
+X-Received: by 2002:a05:6402:2076:: with SMTP id bd22mr6645847edb.197.1602002251590;
+        Tue, 06 Oct 2020 09:37:31 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1602002251; cv=none;
+        d=google.com; s=arc-20160816;
+        b=diuYDOsDrHuj3+UZ0jKqOWfytljMZcY5HoMHazt0JkG6V2qzCT4XTUPKbnyQXQjtF1
+         IfOAnLhQ3lYvq6PSOuS/jt/r9UNiyy87kegi7uwZYhNdFMsK7PnywEzzuQJBG3FoYycn
+         IeEyalaiUpZ58yGX8Dd1SfDTBg8WBSZfWaHUDJHJbPPnDTiZmMTOANW//oJ+lDApjHY8
+         I+7vJ+xx6ygWytz22aYBwZkwbz9yzVJhtFVI6TIaHNkgnFmqH/Z+jZqnQ3GKW2PoVlUg
+         tKudrCfjjrkuOVsRO/HVMb4wmkM8xg2vGBa9uYRUXvrDQqpk+UFZ/xen3qdK47GiQcRM
+         XOaA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=lkU/2YqYTSlOdGKNiPXpIQXNXZx5TKiZnpELqFb/es8=;
+        b=TZsDXpwe4l0AlR7ZuPVjXiPLkHy9vFE0zam+/l2pCcA0BTFYj/X9N8LbB006T7fyJE
+         5JdXwRq9N8D0jHg4/ANGXjnljWMylTaGIRdCGD4cysqF6V7G0pXyLtzQE7a489bZNqjb
+         rvImgryN8mfSeEdep8puld/q6+gd11hNV9X8F2x181X3My7lWI1rdbwRREfrVZ5kuCmD
+         JLnpyFffJTr6DQPikQKxfphL0KcA8v57YDu3rvYqEWX895oHY6SFoFmRGZrQx8VcwxUP
+         to6pgClxfA3UiQA5Rd+0AG8sAug6xzebfQjRspgYFFhtldO5B7lg2us+xNR1/tRmf/i+
+         N84Q==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Pdf9mufA;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::635 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ej1-x635.google.com (mail-ej1-x635.google.com. [2a00:1450:4864:20::635])
+        by gmr-mx.google.com with ESMTPS id g25si105161eds.3.2020.10.06.09.37.31
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 06 Oct 2020 09:37:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::635 as permitted sender) client-ip=2a00:1450:4864:20::635;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Pdf9mufA;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::635 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ej1-x635.google.com with SMTP id lw21so14582201ejb.6
+        for <opensport@googlegroups.com>; Tue, 06 Oct 2020 09:37:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=lkU/2YqYTSlOdGKNiPXpIQXNXZx5TKiZnpELqFb/es8=;
+        b=Pdf9mufAt9TUtEft7p951mRm813eBVvt0KZyBTcSWCDe6zJX1iyvWK0/sMdUF+R2y4
+         RzZo6V8ANvH+zPCXZ9ZZ38XWh7x05MyaYYUAAeRx7iPS7MRmhBWrBwjSpaAGGh5JnTd6
+         VfoFu12zV2LbSjqoWzo+OggKVhc1HKMINZt6jHd8aH3ikS0DMQc6K864x8vBKhDQVsIC
+         0XVs9lIZoDf+KL8Ph11D98xv6PnHnc6Y4dP2ZZngFp8zqUlNJiBoIdoMSFCyCcQSG97T
+         Ibbot3IEl0FPBsfNuZ6OSvD5l1uovexsiy4cSBFJKaH+fOpGzlKBR52c+mKnGHafFoP5
+         hqyw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=lkU/2YqYTSlOdGKNiPXpIQXNXZx5TKiZnpELqFb/es8=;
+        b=I68bYmMGqHIk6SuM3hG6BlhDYeW8zZva6OD+Zu+jrtcpPV5juL7qEmzPuSC+qB6pB+
+         s0tfK9JAjbdtKYDmL3areyPEzG/X8G2rC52bqj2xcJ2B4XIrRK6pbjq2b8g/VOR/dYCp
+         15BPFOGpM0QUR5k1oXp1v+JITqbNkdbrbmACLDDTLI8cXcKDtLNQGZ/m7E2fTk0jCtWe
+         T0rh7BoHGGnz8P5FMmFy2O+4CNFtpkkFOqNr2+0jvq8lZHKv6eTDUilKj414Iz8fqSAj
+         E6WpP1zjgDUO9b3wJdXjv+4GrOo/yZ/s/D2ODfjSdDKF6mUVfgJiSVD0+/uF8MtiGO3o
+         UEyQ==
+X-Gm-Message-State: AOAM532ZmhIGPuMUWa7gkgrcDzpiufsotLS88UKHUWaLI/y7W5PfG0lv
+	/W0CvIU9slOl485dz8XCtEuIn9Rx+MctLEJqQYceAsmBqNqN+w==
+X-Received: by 2002:a17:907:20b2:: with SMTP id pw18mr351449ejb.159.1602002251070;
+ Tue, 06 Oct 2020 09:37:31 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 6 Oct 2020 18:37:21 +0200
+Message-ID: <CAAxEZd-PaZG+0RJoaU1n9gUjx1r7ZuP+rwr4NKU001cC_mqgvQ@mail.gmail.com>
+Subject: Reorg - New football.db Datasets / Repos for Europe and South America
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   If anyone follows along I reorganized the football.db datasets a little.
+   The /brazil country repo is now /south-america [1] and includes
+datasets from Argentina and more countries upcoming.
+
+   The /france country repo is now /europe [2] and includes all
+datasets from Europe (e.g. Belgium, Netherlands, Ireland, Iceland,
+Scotland, etc.) from the /world [3] repo.
+
+    Enjoy the beautiful game. Cheers. Prost.
+
+[1] https://github.com/openfootball/south-america
+[2] https://github.com/openfootball/europe
+[3] https://github.com/openfootball/world
+

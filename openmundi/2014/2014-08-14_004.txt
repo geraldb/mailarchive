@@ -1,0 +1,93 @@
+From 100106502144@xxx Sat Dec 13 20:08:19 +0000 2014
+X-GM-THRID: 74704748544
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,3bc96c9415837e1
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.24.8 with SMTP id q8mr6210231obf.25.1408031631875;
+        Thu, 14 Aug 2014 08:53:51 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.51.51 with SMTP id t48ls1045658qga.67.gmail; Thu, 14 Aug
+ 2014 08:53:51 -0700 (PDT)
+X-Received: by 10.140.102.104 with SMTP id v95mr45243qge.6.1408031631605;
+        Thu, 14 Aug 2014 08:53:51 -0700 (PDT)
+X-Google-Doc-Id: aa1578071766d15b
+X-Google-Web-Client: true
+Date: Thu, 14 Aug 2014 08:53:51 -0700 (PDT)
+From: Eckhard Licher <eckhard.licher@googlemail.com>
+To: openmundi@googlegroups.com
+Cc: eckhard.licher@googlemail.com
+Message-Id: <d8e253c7-a4c4-498e-95c8-44fb2e608284@googlegroups.com>
+In-Reply-To: <CAAxEZd_J-A3K_YSUktFjYZ1PAB6Kp2YXg39Cd5HCiK7MY4ACjg@mail.gmail.com>
+References: <13a2c175-fa8f-4970-a8a0-16c11df09192@googlegroups.com>
+ <da80b55a-9387-4b39-bb6a-5cec5f3fb5e4@googlegroups.com>
+ <786573dd-a23d-4825-9bef-3d76b8922756@googlegroups.com>
+ <CAAxEZd_J-A3K_YSUktFjYZ1PAB6Kp2YXg39Cd5HCiK7MY4ACjg@mail.gmail.com>
+Subject: Re: Factbook gem and JSON repo
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_5956_1694774183.1408031631312"
+X-Google-Token: EI-3s58FnPQDKF_jk5M0
+X-Google-IP: 217.51.2.252
+
+------=_Part_5956_1694774183.1408031631312
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5957_1994083520.1408031631312"
+
+------=_Part_5957_1994083520.1408031631312
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Gerald,
+
+FYI, I tried to install the factbook gem on three different systems without 
+success, every time with the same error building the dependencies:
+- Debian stable (eheezy)
+- Linux Mint (2014-05 LTS release)
+- Linux Mint Debian edition
+
+Of course, the packages mentioned were all previously installed ...
+  
+:-/
+
+Cheers
+
+Am Donnerstag, 14. August 2014 14:48:37 UTC+2 schrieb Gerald Bauer:
+>
+> Hello, 
+>    Looking at it again you might need to install the build-essentials 
+> - Do you have the build-essentials package and friends installed? 
+>
+>   It looks something like: 
+>
+> $ sudo apt-get install build-essential openssl libreadline6 
+> libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev 
+> libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev 
+> libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison 
+> subversion 
+>
+>    Cheers. 
+>
+
+------=_Part_5957_1994083520.1408031631312
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Gerald,<br><br>FYI, I tried to install the factbook gem on three different systems without success, every time with the same error building the dependencies:<br>- Debian stable (eheezy)<br>- Linux Mint (2014-05 LTS release)<br>- Linux Mint Debian edition<br><br>Of course, the packages mentioned were all previously installed ...<br>&nbsp; <br>:-/<br><br>Cheers<br><br>Am Donnerstag, 14. August 2014 14:48:37 UTC+2 schrieb Gerald Bauer:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>&nbsp; &nbsp;Looking at it again you might need to install the build-essentials
+<br>- Do you have the build-essentials package and friends installed?
+<br>
+<br>&nbsp; It looks something like:
+<br>
+<br>$ sudo apt-get install build-essential openssl libreadline6
+<br>libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev
+<br>libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev
+<br>libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison
+<br>subversion
+<br>
+<br>&nbsp; &nbsp;Cheers.
+<br></blockquote></div>
+------=_Part_5957_1994083520.1408031631312--
+
+------=_Part_5956_1694774183.1408031631312--
+

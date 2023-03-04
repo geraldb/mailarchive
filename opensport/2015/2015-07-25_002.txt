@@ -1,0 +1,106 @@
+From 6175526890178084864@xxx Sat Jul 25 19:18:20 +0000 2015
+X-GM-THRID: 6175526890608001024
+X-Received: by 10.182.231.138 with SMTP id tg10mr20392784obc.2.1437851900473;
+        Sat, 25 Jul 2015 12:18:20 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.63.40 with SMTP id d8ls981762obs.5.gmail; Sat, 25 Jul 2015
+ 12:18:20 -0700 (PDT)
+X-Received: by 10.182.142.72 with SMTP id ru8mr21374832obb.47.1437851900116;
+        Sat, 25 Jul 2015 12:18:20 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x231.google.com (mail-ie0-x231.google.com. [2607:f8b0:4001:c03::231])
+        by gmr-mx.google.com with ESMTPS id a11si241800igv.3.2015.07.25.12.18.20
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 25 Jul 2015 12:18:20 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::231 as permitted sender) client-ip=2607:f8b0:4001:c03::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ie0-x231.google.com with SMTP id rl10so36077233iec.1
+        for <opensport@googlegroups.com>; Sat, 25 Jul 2015 12:18:20 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=CAsjQSojbFbmXv/RsVh/HqbxCTEoIzu9LiS5vv/VHZ4=;
+        b=g0ZgQ6Rki+CjpebiQPY0AZeSq9Kchm3HxNn8hSu42t5n7ucLQYCZ0dfZnM3+5j1hNA
+         MRAgYMicb35Cv0leQga09d8uVpSffo3lmiafvkgOPtzzsY0rBA7wMMcg6ILjhGTA+omd
+         o8mjXC9r5pheq8aIzxWbsUksXD3uAsceKPEJOcKdBMyI6nMqGUVSf2uxRs8bpSXxAJgE
+         dWaWHgWFK4+ND/ex3em0jFsOqZ8i/zfiacf7HinzfChyK5adYau/9CMZN68b/jLznv2M
+         ePeRZWal98q/pOGIkrOT55Jli4XHv9wglKP+GLH5W6pcFMzX/jAg8LIzkFC74QVVY/V5
+         Cuaw==
+MIME-Version: 1.0
+X-Received: by 10.107.14.148 with SMTP id 142mr31304567ioo.175.1437851899999;
+ Sat, 25 Jul 2015 12:18:19 -0700 (PDT)
+Received: by 10.107.55.8 with HTTP; Sat, 25 Jul 2015 12:18:19 -0700 (PDT)
+Date: Sat, 25 Jul 2015 21:18:19 +0200
+Message-ID: <CAAxEZd9VtPaOpVmFAryL1bFcvQHPSnR+BEd9W1SnUwyHHtmJiA@mail.gmail.com>
+Subject: football.db RSSSF (Rec.Sport.Soccer Statistics Foundation) Archive
+ Data Importer Updated
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   FYI: I've reworked the import procedure for the massive RSSSF
+(Rec.Sport.Soccer Statistics Foundation) archive data. What's news?
+
+  1) HTML to .txt converter
+
+   I've created a HTML to .txt converter for the RSSSF table pages.
+The script will fetch an RSSSF table page, for example,
+rsssf.com/tablese/eng2015.html and turn it into plain text e.g.
+
+## England 2014/15
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Premier League
+Cup Tournaments
+Championship
+Division 1
+Division 2
+Conference
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+#### Premier League
+
+Final Table:
+
+1.Chelsea         38 26 9 3 73-32 87            Champions
+2.Manchester City 38 24 7 7 83-38 79
+...
+
+ See (real-world) examples in /tables folder in all rsssf repos.
+
+
+  2) Match Schedule Finder / Extractor
+
+  Next I've created a script that will split-up the all-in-one table
+docs into one file for each match schedules - ready-to-use for
+importing into the football.db e.g.
+
+Round 1
+[Aug 16]
+Arsenal 2-1 Crystal P
+Leicester 2-2 Everton
+Manchester U 1-2 Swansea
+QPR 0-1 Hull
+Stoke 0-1 Aston Villa
+West Bromwich 2-2 Sunderland
+West Ham 0-1 Tottenham
+[Aug 17]
+Liverpool 2-1 Southampton
+Newcastle 0-2 Manchester C
+[Aug 18]
+Burnley 1-3 Chelsea
+
+  Again see (real-world) examples in all /2015-16, /2014-15, and so on
+folders in all rsssf repos.
+
+  Questions? Comments? Welcome. Cheers.
+
+[1] github.com/rsssf
+

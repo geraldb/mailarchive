@@ -1,0 +1,54 @@
+From 482792701952@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 480056967168
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,b11a8b217f22cf71
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.86.66.9 with SMTP id o9mr5301fga.29.1234387303301;
+        Wed, 11 Feb 2009 13:21:43 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from mail-fx0-f16.google.com (mail-fx0-f16.google.com [209.85.220.16])
+        by mx.google.com with ESMTP id 3si1284634fgg.16.2009.02.11.13.21.43;
+        Wed, 11 Feb 2009 13:21:43 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.220.16 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.220.16;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.220.16 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by fxm9 with SMTP id 9so953259fxm.18
+        for <webslideshow@googlegroups.com>; Wed, 11 Feb 2009 13:21:43 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.181.60.13 with SMTP id n13mr30778bkk.39.1234387211225; Wed, 11 
+	Feb 2009 13:20:11 -0800 (PST)
+In-Reply-To: <39090aa1-1690-41e7-a544-2ff31b008ce2@g39g2000pri.googlegroups.com>
+References: <39090aa1-1690-41e7-a544-2ff31b008ce2@g39g2000pri.googlegroups.com>
+Date: Wed, 11 Feb 2009 22:20:11 +0100
+Message-ID: <1f058eab0902111320i58d889f0r804edf396fd884d9@mail.gmail.com>
+Subject: Re: [slideshow] "Notes" mode?
+From: Gerald Bauer <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+> How hard would it be to mimick something similar to (but better than)
+> PowerPoint's "notes" mode?
+>
+> 1. The screen is divided into the presentation window and the "notes"
+> or "handout" window.
+> 2. The presentation is shown as usual in the presentation window.
+> 3. However, at the bottom of the screen, the "handouts" are shown
+> i.e., whatever is tagged with the "handout" or "notes" class for that
+> slide.
+>
+> Here's something akin to an example:
+>
+> http://www.garrreynolds.com/Presentation/sample1.html
+>
+> Caveats: Rhe bottom of the screen doesn't actually change. But you get
+> the idea...
+
+  Not sure really. If you add a preview with notes you might start
+with the S5key code. See a demo and read more @
+http://snook.ca/archives/javascript/s5key_slideshow
+
+  As far as I can remember the S5 1.2alpha also includes a notes window. Cheers.
+

@@ -1,0 +1,90 @@
+From 6212449727154225152@xxx Mon Nov 02 07:17:49 +0000 2015
+X-GM-THRID: 6212449726003937280
+X-Received: by 10.50.114.162 with SMTP id jh2mr6102448igb.9.1446448668590;
+        Sun, 01 Nov 2015 23:17:48 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.107.19.34 with SMTP id b34ls1181661ioj.84.gmail; Sun, 01 Nov
+ 2015 23:17:48 -0800 (PST)
+X-Received: by 10.66.249.6 with SMTP id yq6mr5154082pac.14.1446448668446;
+        Sun, 01 Nov 2015 23:17:48 -0800 (PST)
+Received: by 10.50.78.105 with SMTP id a9msigx;
+        Sun, 1 Nov 2015 17:35:46 -0800 (PST)
+X-Received: by 10.50.6.40 with SMTP id x8mr140670igx.0.1446428146025;
+        Sun, 01 Nov 2015 17:35:46 -0800 (PST)
+X-Google-Web-Client: true
+Date: Sun, 1 Nov 2015 17:35:45 -0800 (PST)
+From: Michael Falconer <michael.j.falconer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Message-Id: <5680da27-dc2b-481e-b650-a285865a177c@googlegroups.com>
+Subject: Error in install process
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_54_2026299705.1446428145854"
+X-Google-Token: EPH72rEF5aUUYOavlMY0
+X-Google-IP: 1.152.97.118
+
+------=_Part_54_2026299705.1446428145854
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_55_1701477589.1446428145855"
+
+------=_Part_55_1701477589.1446428145855
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+been taking a look at this which looks most interesting. First learned of 
+this when Gerard post on the SQLite list. Downloaded the archive, extracted 
+and ran the recommended 'gem install factbook'. DOH! I ran it againg with a 
+sudo and at least then I had write permissions to the lib64 tree. Running 
+again produced the following output:
+
+Fetching: logutils-0.6.1.gem (100%)
+Successfully installed logutils-0.6.1
+Fetching: fetcher-0.4.5.gem (100%)
+Successfully installed fetcher-0.4.5
+Fetching: mini_portile-0.6.2.gem (100%)
+Successfully installed mini_portile-0.6.2
+Fetching: nokogiri-1.6.6.2.gem (100%)
+Building native extensions.  This could take a while...
+ERROR:  Error installing factbook:
+        ERROR: Failed to build gem native extension.
+
+    /usr/bin/ruby2.0 extconf.rb
+mkmf.rb can't find header files for ruby at /usr/lib64/ruby/include/ruby.h
+
+
+
+
+*System: openSuse 13.1Ruby: 2.0.0p247 (2013-06-27) [x86_64-linux]Gem: 2.0.3*
+I know very little about ruby so thought I'd ask here before diving in. 
+There was a gem_make.out file mentioned too but it just repeated the error 
+relating to missing header. Cheers.
+
+
+
+------=_Part_55_1701477589.1446428145855
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi,<br><br>been taking a look at this which looks most int=
+eresting. First learned of this when Gerard post on the SQLite list. Downlo=
+aded the archive, extracted and ran the recommended &#39;gem install factbo=
+ok&#39;. DOH! I ran it againg with a sudo and at least then I had write per=
+missions to the lib64 tree. Running again produced the following output:<br=
+><br>Fetching: logutils-0.6.1.gem (100%)<br>Successfully installed logutils=
+-0.6.1<br>Fetching: fetcher-0.4.5.gem (100%)<br>Successfully installed fetc=
+her-0.4.5<br>Fetching: mini_portile-0.6.2.gem (100%)<br>Successfully instal=
+led mini_portile-0.6.2<br>Fetching: nokogiri-1.6.6.2.gem (100%)<br>Building=
+ native extensions.=C2=A0 This could take a while...<br>ERROR:=C2=A0 Error =
+installing factbook:<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 ERROR: F=
+ailed to build gem native extension.<br><br>=C2=A0=C2=A0=C2=A0 /usr/bin/rub=
+y2.0 extconf.rb<br>mkmf.rb can&#39;t find header files for ruby at /usr/lib=
+64/ruby/include/ruby.h<br><br><b>System: openSuse 13.1<br>Ruby: 2.0.0p247 (=
+2013-06-27) [x86_64-linux]<br>Gem: 2.0.3<br></b><br>I know very little abou=
+t ruby so thought I&#39;d ask here before diving in. There was a gem_make.o=
+ut file mentioned too but it just repeated the error relating to missing he=
+ader. Cheers.<br><br><br></div>
+------=_Part_55_1701477589.1446428145855--
+------=_Part_54_2026299705.1446428145854--
+

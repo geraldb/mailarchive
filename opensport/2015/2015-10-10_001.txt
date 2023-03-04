@@ -1,0 +1,78 @@
+From 6204336724126990336@xxx Sun Oct 11 10:35:12 +0000 2015
+X-GM-THRID: 6204336722951536640
+X-Received: by 10.66.55.104 with SMTP id r8mr18951150pap.46.1444559712094;
+        Sun, 11 Oct 2015 03:35:12 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.158.170 with SMTP id wv10ls1155163obb.40.gmail; Sun, 11
+ Oct 2015 03:35:09 -0700 (PDT)
+X-Received: by 10.182.44.228 with SMTP id h4mr19347982obm.5.1444559709088;
+        Sun, 11 Oct 2015 03:35:09 -0700 (PDT)
+Received: by 10.50.78.105 with SMTP id a9msigx;
+        Sat, 10 Oct 2015 10:42:01 -0700 (PDT)
+X-Received: by 10.50.110.69 with SMTP id hy5mr63515igb.17.1444498921905;
+        Sat, 10 Oct 2015 10:42:01 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Sat, 10 Oct 2015 10:42:00 -0700 (PDT)
+From: Fazle Taher <ftaher@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <446123ea-0a1c-456a-897c-b6a3853689f5@googlegroups.com>
+Subject: ERROR: worlddb setup
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2863_1551218645.1444498920981"
+X-Google-Token: EOib5bAFCywmYSL7Uyo0
+X-Google-IP: 108.48.154.228
+
+------=_Part_2863_1551218645.1444498920981
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2864_915011082.1444498920981"
+
+------=_Part_2864_915011082.1444498920981
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+When trying to setup worlddb with the following command,
+
+sportdb --dbname football.db setup --worldinclude world.db
+
+I'm getting stuck importing cities from pakistan,
+
+  {:place_id=3D>729, :place_kind=3D>"MTRO", :name=3D>"Gujr=C4=81nw=C4=81la"=
+}
+[Name.parse] adding Name record:
+  {:place_id=3D>730, :place_kind=3D>"CITY", :name=3D>"Gujr=C4=81nw=C4=81la"=
+}
+[Name.parse] adding Name record:
+  {:place_id=3D>730, :place_kind=3D>"CITY", :name=3D>"Gujranwala"}
+
+it doesn't do anything any more at this stage.
+
+Please help.
+
+ruby version - 2.0.0-p645
+OS X - 10.11
+
+Thank you,
+
+Fazle
+
+------=_Part_2864_915011082.1444498920981
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">When trying to setup worlddb with the following command,<d=
+iv><br></div><div>sportdb --dbname football.db setup --worldinclude world.d=
+b<br></div><div><br></div><div>I&#39;m getting stuck importing cities from =
+pakistan,</div><div><br></div><div><div>=C2=A0 {:place_id=3D&gt;729, :place=
+_kind=3D&gt;&quot;MTRO&quot;, :name=3D&gt;&quot;Gujr=C4=81nw=C4=81la&quot;}=
+</div><div>[Name.parse] adding Name record:</div><div>=C2=A0 {:place_id=3D&=
+gt;730, :place_kind=3D&gt;&quot;CITY&quot;, :name=3D&gt;&quot;Gujr=C4=81nw=
+=C4=81la&quot;}</div><div>[Name.parse] adding Name record:</div><div>=C2=A0=
+ {:place_id=3D&gt;730, :place_kind=3D&gt;&quot;CITY&quot;, :name=3D&gt;&quo=
+t;Gujranwala&quot;}</div></div><div><br></div><div>it doesn&#39;t do anythi=
+ng any more at this stage.</div><div><br></div><div>Please help.</div><div>=
+<br></div><div>ruby version - 2.0.0-p645</div><div>OS X - 10.11</div><div><=
+br></div><div>Thank you,</div><div><br></div><div>Fazle</div></div>
+------=_Part_2864_915011082.1444498920981--
+------=_Part_2863_1551218645.1444498920981--
+

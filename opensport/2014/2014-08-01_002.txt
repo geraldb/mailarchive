@@ -1,0 +1,71 @@
+From 1763073589248@xxx Tue Jun 16 00:16:53 +0000 2015
+X-GM-THRID: 1764710416384
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,529e79a791be1040,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.198.172 with SMTP id jd12mr298818wic.6.1406882950109;
+        Fri, 01 Aug 2014 01:49:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.205.34 with SMTP id ld2ls256152lac.13.gmail; Fri, 01 Aug
+ 2014 01:49:09 -0700 (PDT)
+X-Received: by 10.112.33.116 with SMTP id q20mr330641lbi.6.1406882949475;
+        Fri, 01 Aug 2014 01:49:09 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x230.google.com (mail-wg0-x230.google.com [2a00:1450:400c:c00::230])
+        by gmr-mx.google.com with ESMTPS id mx7si126408wic.1.2014.08.01.01.49.09
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 01 Aug 2014 01:49:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::230 as permitted sender) client-ip=2a00:1450:400c:c00::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f48.google.com with SMTP id x13so3964633wgg.7
+        for <opensport@googlegroups.com>; Fri, 01 Aug 2014 01:49:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=/w3GDgzEgaKJQ/jfNd03LkQm6EbIcF3LBfvKmQyYsRc=;
+        b=DNq+yDwBCKQW0sbSkBU0YrFrBOTVEQEABZcVZwOXr47sJ1Y96vOcFANB9RPbyh75BR
+         SaVEejp/AU46DY9A4nWxmShYnnkx7thkdfUilzZIdCI9PZTIeOeSQ71WyvuXIXzBSc4O
+         nRgP3gN539glwP1kKFlNG5tyCglvW3w3VDlXXsoPeQ8VOb2MvIclNSegeod846CF/gfY
+         /Sh1AMyOdB6A95wVDY8b62F3K8Rj0IviFdEm1jXss1qU6v4oPj9ylSljNnQEJNB1fEB9
+         C5Lf8pQLUb+WWzSzff0r6g/+DqQnvvIjFE2RdjwCPHtNVo/STBowtv/WDBDnMNgC88lF
+         nGSg==
+MIME-Version: 1.0
+X-Received: by 10.194.20.230 with SMTP id q6mr5763070wje.43.1406882949356;
+ Fri, 01 Aug 2014 01:49:09 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Fri, 1 Aug 2014 01:49:09 -0700 (PDT)
+Date: Fri, 1 Aug 2014 10:49:09 +0200
+Message-ID: <CAAxEZd89KajGw4t-vJ_G6Qcv4aSow1fSL0aXTfWuQJ=SjD3eWQ@mail.gmail.com>
+Subject: racing.db - new addon for racing (e.g. formula 1, tour de france, ski
+ racing, marathons, etc.)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   FYI: If anyone follows along - I'm moving all the racing related
+tables, models, readers etc. out of the sportdb gem and into its own
+addon gem, that is, racingdb [1].
+
+  So far tables moved over include:
+
+  - races
+  - runs
+  - records
+  - tracks
+
+  Note: If anyone is using the formula 1 datsets [2] or alpine ski
+datasets [3] you will need to update your build script etc.  Say hello
+if you run into any trouble or have any questions or comments.
+
+  Cheers.
+
+[1] github.com/sportdb/racing.db.ruby
+[2] github.com/opensport/formula1.db
+[3] github.com/opensport/ski.db
+

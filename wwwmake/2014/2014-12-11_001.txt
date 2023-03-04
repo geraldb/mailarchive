@@ -1,0 +1,89 @@
+From 1559040622592@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1558035038208
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,fb988f2b67c84240,start
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.98.39 with SMTP id ef7mr187891wib.6.1418338035803;
+        Thu, 11 Dec 2014 14:47:15 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.152.5.135 with SMTP id s7ls374013las.33.gmail; Thu, 11 Dec
+ 2014 14:47:14 -0800 (PST)
+X-Received: by 10.112.204.71 with SMTP id kw7mr20313lbc.13.1418338034672;
+        Thu, 11 Dec 2014 14:47:14 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x236.google.com (mail-wg0-x236.google.com. [2a00:1450:400c:c00::236])
+        by gmr-mx.google.com with ESMTPS id h10si45540wiw.2.2014.12.11.14.47.14
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 11 Dec 2014 14:47:14 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::236 as permitted sender) client-ip=2a00:1450:400c:c00::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-x236.google.com with SMTP id l2so7753296wgh.27
+        for <webslideshow@googlegroups.com>; Thu, 11 Dec 2014 14:47:14 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=1bjcHRx/CwwGmkZCNix0ahmrR3ZQZ4YqyDkQ3tdpLTM=;
+        b=NYXQYNWUVlyzQwBrZdIV890MCG2INKGpawDd1aKIFHfJMuiND2NmDZPBorXLG5Lb21
+         NWzDsE5R9slTZb9jB2xgPLgOe2dcME6BqAlJSjQbUxQ1wl6aZ91U2QEtjcySZ+s4teVg
+         SucZV+FLuU7K0yl01rhnPwneCrq86SfgrXEz6Mb8XY9in1Sni248tXaDITnzADuKZKRQ
+         /+vfePLWUaxr80mEYd82zZO4ejqfawLU7FXPfRPdU9JtySaLR9RM73WHtB83mrM9iN06
+         qkN9Rr2V5TCgYemZi4OCpRqxY2M+qrkFSJZejPgMn7akpINGPWwm9MFi2yAsF8d960BB
+         27KA==
+MIME-Version: 1.0
+X-Received: by 10.180.93.167 with SMTP id cv7mr2286807wib.12.1418338034526;
+ Thu, 11 Dec 2014 14:47:14 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Thu, 11 Dec 2014 14:47:14 -0800 (PST)
+Date: Thu, 11 Dec 2014 23:47:14 +0100
+Message-ID: <CAAxEZd-+-98DkmR1A9HM9V1TQxu3=wAV=y4BO30KDpTGSa3e9Q@mail.gmail.com>
+Subject: [ANN] Slide Show (S9) Update - Adds npm Package Support e.g. $ npm
+ install slideshow-s6-blank
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've updated the slideshow-models machinery, that is, v2.5.0. What's news?
+
+  Now you can use npm [1] to install slideshow template packs. For
+example to install the slideshow-s6-blank pack type:
+
+  $ npm install slideshow-s6-blank
+
+   No magic here. The npm package manager will download and copy the
+package to your working folder in the node_modules/ folder.
+
+   That's it. Now the template pack is ready to use with Slide Show
+(S9). To double check type:
+
+  $ slideshow ls
+
+   Will print something like:
+
+Installed template packs in search path
+    [1] templates/*.txt
+    [2] templates/*/*.txt
+    [3] node_modules/*/*.txt
+  include:
+         s6blank (node_modules/slideshow-s6-blank/s6blank.txt)
+         ...
+
+  To use the new template pack add as usual the -t/--template option e.g.
+
+  $ slideshow build welcome.text --template s6blank
+
+  Note: I've published most template packs on npm. Search for
+slideshow-templates, s9 or similar [2].
+
+  Cheers.
+
+PS: To update the slideshow-models gem type: $ gem update slideshow-models
+
+[1] docs.npmjs.com
+[2] www.npmjs.com/browse/keyword/slideshow-templates
+

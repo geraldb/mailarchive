@@ -1,0 +1,81 @@
+From 6283404479950749696@xxx Wed May 11 12:18:29 +0000 2016
+X-GM-THRID: 6283054842980073472
+X-Received: by 10.129.158.2 with SMTP id v2mr2008442ywg.7.1462969109213;
+        Wed, 11 May 2016 05:18:29 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.102.132 with SMTP id w4ls403915qge.29.gmail; Wed, 11 May
+ 2016 05:18:28 -0700 (PDT)
+X-Received: by 10.140.176.18 with SMTP id w18mr1921699qhw.30.1462969108909;
+        Wed, 11 May 2016 05:18:28 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22c.google.com (mail-ig0-x22c.google.com. [2607:f8b0:4001:c05::22c])
+        by gmr-mx.google.com with ESMTPS id v62si198160itf.3.2016.05.11.05.18.28
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 11 May 2016 05:18:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22c as permitted sender) client-ip=2607:f8b0:4001:c05::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ig0-x22c.google.com with SMTP id bi2so155060159igb.0
+        for <opensport@googlegroups.com>; Wed, 11 May 2016 05:18:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=RG4Dsj3kuA5fnrVjqCei6L0jzWB0T2CQc24TuGQrQyg=;
+        b=O+vo84HKRC0xjMX5FijXh7vtlCjtsPQd7s/oi0d6aPMor8xvl9gORD7YWmCVTDMRo5
+         N0Fo2VOTKFVYSC+yh8YkYs3AKTa4chNBBTDM/vrVt6jnNYBgmvLuO7WUP9iY3PeOkOIA
+         G1DW8gQ7U+jHHrlObQP0NYUgl6XYiNPnbyroezrxG2rqcgGqY+JGyG/eycCAYWJh1Cc0
+         J/L0LPmByktltMAizZIXcPR4178ecv2yVnHRHEfVZ9a2beE1bGDprIs+AB7HaN19vTVt
+         JiajlYeGm5Ex0lpxrkO+wJqbZhMrR1FP4fbJd5sDlkpa5kWkGq9c4VOsQzgtPkslrIEF
+         lSnw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=RG4Dsj3kuA5fnrVjqCei6L0jzWB0T2CQc24TuGQrQyg=;
+        b=F3d5bJOgLYm2yCwWEORMeYUQg5kPRDR8zAVLmxehElEkkQ/i5oroGWaZBtWsi6u48o
+         GzJ0vD6j8GUO1X5eOOSa/0LlJzUvkqP62OuuE9FtvsgucPUj49xDC+DX3y5TGuqGJ250
+         2pAUw0v8nmvLUZpMCDAgmWkcox9AB5qdn0bQtR/r1qrIYYV1EjRCkToR9KlGziyyp8SJ
+         7p1ku/9k0F308fOEl89qZGEC8gCYnwol2ykjp/6gYSL1KxaIfTYiZ26k5Xlx5P8aIDm0
+         UjsKNCuYjZRJ7r6peMu9rjCraAtn8yMLuRp5aklWO7O1WUDulXRXKKRzm08S1C/lihrx
+         eUCw==
+X-Gm-Message-State: AOPr4FXjfpl9m97L2V0GcukDVFByYkHRCCz8RfQC2cN6lPJnHUOGd63vpMW//VVXweZTpduCRwjIn7v5o8+J9g==
+MIME-Version: 1.0
+X-Received: by 10.50.92.3 with SMTP id ci3mr23009886igb.5.1462969108690; Wed,
+ 11 May 2016 05:18:28 -0700 (PDT)
+Received: by 10.107.138.84 with HTTP; Wed, 11 May 2016 05:18:28 -0700 (PDT)
+In-Reply-To: <c6c59df2-7f2f-4ec5-9088-38ec5269e8b0@googlegroups.com>
+References: <CAAxEZd_73Q-5h1czpr8Qe1mOOZHCBy0wxC6GXRtPPC2kPM3V2g@mail.gmail.com>
+	<9c3f923e-5376-4e81-8ad9-66e4ee101fba@googlegroups.com>
+	<CAAxEZd_ZFD279_LSP-diEmd1TCznmMzVM85giungsysECRy4cg@mail.gmail.com>
+	<c6c59df2-7f2f-4ec5-9088-38ec5269e8b0@googlegroups.com>
+Date: Wed, 11 May 2016 14:18:28 +0200
+Message-ID: <CAAxEZd8JPdqtrsTQj=+KzXb-Q+Je=zsbnK3mOgr3YnTHvU=CBQ@mail.gmail.com>
+Subject: Re: [opensport] Re: Any Open Data Sets for the (Football) Euro Cup
+ (in France 2016)?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+ The football-data.org project looks great, Just needs a statement
+about how you can use the JSON data files. Unfortunately, if you don't
+say anything than the "standard" copyright "rules" are assumed.
+
+  For example, the football.db simply states:
+
+>  The football.db schema, data and scripts are dedicated to the public domain.
+>  Use it as you please with no restrictions whatsoever.
+
+  That's really (ideally) all that's needed to make it clear that
+you're free and invited to (re)use the data anyway you want etc.
+(instead of assuming "all rights reserved".)
+
+  Cheers.
+
+PS: Here's a great open data definition published by the Open
+Knowledge Foundaton (OKFN). -> http://opendefinition.org
+

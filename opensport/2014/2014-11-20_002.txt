@@ -1,0 +1,57 @@
+From 2259180060672@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 2254972125184
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fdd82ec609b6c4e4
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.50.111.170 with SMTP id ij10mr47326933igb.1.1416523044168;
+        Thu, 20 Nov 2014 14:37:24 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.85.233 with SMTP id n96ls7872qgd.48.gmail; Thu, 20 Nov
+ 2014 14:37:23 -0800 (PST)
+X-Received: by 10.140.36.231 with SMTP id p94mr11143qgp.13.1416523043895;
+        Thu, 20 Nov 2014 14:37:23 -0800 (PST)
+X-Google-Doc-Id: a78436597ff04d80
+X-Google-Web-Client: true
+Date: Thu, 20 Nov 2014 14:37:23 -0800 (PST)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <bee9b9b6-ca46-4101-9b8e-44332ac9e364@googlegroups.com>
+In-Reply-To: <923ec44d-6a0f-4f21-903a-0835e94f1b4c@googlegroups.com>
+References: <923ec44d-6a0f-4f21-903a-0835e94f1b4c@googlegroups.com>
+Subject: Re: Cannot build football.db with world cup data
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_7131_635825264.1416523043558"
+X-Google-Token: EKPauaMFVpqZFZtVECw0
+X-Google-IP: 178.191.83.95
+
+------=_Part_7131_635825264.1416523043558
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7132_436584576.1416523043558"
+
+------=_Part_7132_436584576.1416523043558
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  Thanks for trying the football.db build script for the world cup.  I will 
+try a build on the weekend to check the setup. Thanks for your patience. 
+
+    Maybe you can try:
+
+   $ rake update DATA=worldcup2014         # use update (instead of build) 
+to not read in the world.db again (just the football datasets)
+
+    And than post the first twenty lines from the log/console it should 
+tell what's going on.  Cheers.
+
+------=_Part_7132_436584576.1416523043558
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<br><br>&nbsp; Thanks for trying the football.db build script for the world cup.&nbsp; I will try a build on the weekend to check the setup. Thanks for your patience. <br><br>&nbsp;&nbsp;&nbsp; Maybe you can try:<br><br>&nbsp;&nbsp; $ rake update DATA=worldcup2014&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; # use update (instead of build) to not read in the world.db again (just the football datasets)<br><br>&nbsp;&nbsp;&nbsp; And than post the first twenty lines from the log/console it should tell what's going on.&nbsp; Cheers.<br></div>
+------=_Part_7132_436584576.1416523043558--
+------=_Part_7131_635825264.1416523043558--
+

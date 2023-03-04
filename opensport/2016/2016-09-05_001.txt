@@ -1,0 +1,74 @@
+From 6326807975140786176@xxx Mon Sep 05 11:26:13 +0000 2016
+X-GM-THRID: 6319151478389866496
+X-Received: by 10.157.47.200 with SMTP id b8mr12484853otd.37.1473074773559;
+        Mon, 05 Sep 2016 04:26:13 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.35.74 with SMTP id k10ls9283719otd.48.gmail; Mon, 05 Sep
+ 2016 04:26:13 -0700 (PDT)
+X-Received: by 10.31.162.198 with SMTP id l189mr29083509vke.6.1473074773347;
+        Mon, 05 Sep 2016 04:26:13 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x229.google.com (mail-it0-x229.google.com. [2607:f8b0:4001:c0b::229])
+        by gmr-mx.google.com with ESMTPS id 125si654883itw.2.2016.09.05.04.26.13
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 05 Sep 2016 04:26:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::229 as permitted sender) client-ip=2607:f8b0:4001:c0b::229;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x229.google.com with SMTP id i184so22960456itf.1
+        for <opensport@googlegroups.com>; Mon, 05 Sep 2016 04:26:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=0SdsB5xxSJG8Qrd3Q3V+N9P7aoxtxV4ralrxpJkPX/Q=;
+        b=NktLR5iRnm5bNquZMcy/1KKhpJXJ1NoxAWO7+0AMAZ6t8EUmK1lTnuwIt60x+iK+5V
+         My9haaPGxHPDBkWluizYlfIVG1HnE5h16zMKHVOP9j01bAK8UCwdvkK+HGcUb5S9LRIc
+         7qBC0V6tih5rzz6ubt+QZ5z74vkpK7vOQOo0CM6NVCsX6faHt5JeWL37zv+nKbdBvkR1
+         EGBYaRIL8Aojw4tuyUjYjs5J6a7GM312BSdwYus/mA3CMgnagtyofkL+qfbW2fgoZYqT
+         Fe1+t0haegQAVk4ryclYw0mYCOBu3jFEvWZUlpYRfV+TqISoa80+quZeQwRwM6Nu9unM
+         ueFw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=0SdsB5xxSJG8Qrd3Q3V+N9P7aoxtxV4ralrxpJkPX/Q=;
+        b=Q82SDSiA+GT43dFGQX2sGib1D5BnmrvJvi61qYEdgzPrzWRGhIPcjYEQyB4PDBp59O
+         RhJ6zWB9kW8Jf1B6TYtWe9tF1foFcRsdotRsBUk6IIiPIE6yIcAcyt6qfZhAtXw7eeRz
+         zW9YZp07QA3wluZOKdWe5EN5bI1XaiXtj3ngYLxeycUX6OI0it9u0VUyM17GzGKYxjoq
+         4+nCm5Qdy1HXERg/JES7k/9IsX+c+Y9oUj632RELK0Byf4lk7IM3gGV7Bq3DqnUYKhD7
+         pSadHZz4px1b3P+euNRvHJaEMCMJ28KHMfSM2bVbd4BSN4LmCxOUHDhtSDnlfyzAR4vo
+         Bc9Q==
+X-Gm-Message-State: AE9vXwOp4uWN/KzGgeC10GesXPKMZcpYx/l2MLgLVLrqpjphe0Izv/oZC0Rh0xrQSNhoCkj8DlpwWFyelJIE6A==
+X-Received: by 10.36.64.138 with SMTP id n132mr23316735ita.10.1473074772938;
+ Mon, 05 Sep 2016 04:26:12 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Mon, 5 Sep 2016 04:26:12 -0700 (PDT)
+In-Reply-To: <5c5e55c8-906d-41b2-8bb2-b6a6b986a7b9@googlegroups.com>
+References: <3bc1224e-e12b-47d9-8f35-b635651acc5f@googlegroups.com>
+ <CAAxEZd_SNQWwDgDEqOm7_=C6=1RwxVjGpGnweHsGVwTK0gZ36g@mail.gmail.com>
+ <0e869f0b-e0d6-497d-ba60-0062eb11350e@googlegroups.com> <CAAxEZd_Dfey2F0jkwCbSoHQRZkwbuj4+iJxLDFacmLCptGzPwQ@mail.gmail.com>
+ <5c5e55c8-906d-41b2-8bb2-b6a6b986a7b9@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 5 Sep 2016 13:26:12 +0200
+Message-ID: <CAAxEZd-JeJUNdTWE_JPfMB9-ZNuBneem7AzohH=pCQHUactJBQ@mail.gmail.com>
+Subject: Re: [opensport] error when installing
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Thanks for trying sport.db / football.db.
+
+ > active record 4.7.2.1
+
+  The 4.7.2.1 version doesn't exit - I assume 4.3.2.1  (that latest
+before the 5.x series)
+
+   Anyways, sorry hard to tell without seeing any logs etc.
+
+   I'd suggest using a Gemfile and than bundle exec spordb ...  etc.
+to make sure you have all version locked down. Good luck. Cheers.
+

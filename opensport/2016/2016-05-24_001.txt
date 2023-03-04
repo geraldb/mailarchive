@@ -1,0 +1,64 @@
+From 6288325964602540032@xxx Tue May 24 18:36:22 +0000 2016
+X-GM-THRID: 6283054842980073472
+X-Received: by 10.176.0.56 with SMTP id 53mr3991159uai.5.1464114981828;
+        Tue, 24 May 2016 11:36:21 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.36.133.195 with SMTP id r186ls1027247itd.21.canary; Tue, 24
+ May 2016 11:36:21 -0700 (PDT)
+X-Received: by 10.66.194.170 with SMTP id hx10mr3861281pac.17.1464114981257;
+        Tue, 24 May 2016 11:36:21 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22f.google.com (mail-io0-x22f.google.com. [2607:f8b0:4001:c06::22f])
+        by gmr-mx.google.com with ESMTPS id x12si185370igx.2.2016.05.24.11.36.21
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 24 May 2016 11:36:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) client-ip=2607:f8b0:4001:c06::22f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22f.google.com with SMTP id f8so17633253ioe.3
+        for <opensport@googlegroups.com>; Tue, 24 May 2016 11:36:21 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=8/WhspmjYxN4WevHZGSwCLK77Y+Bsy93ZgfVs0EUWMk=;
+        b=tsY1L9tPf7Jx7aWzQB1lYIe3Q5t5nZL9Qd6wbjogojykct6x7O0fdhCtqbkZ8JBU4j
+         r5AaZfjEhnUi7FTdR5FP9EfvHY6I5O0qOC/Xio30o0yau7J7om4sRZxrWqpOnsPBdHEf
+         Zb4wE1hxR5Da/Pu0AZWAT/2d8d4WimsJOJMBYaADRzkYqApKJQ8nngj0qX3Yeb1rNe8W
+         4q8WM4W1Zw72duYgJllIW3zXq/00U6Y9fbxJTyiKa7PDR3hBEFRNyLxGgR7pVW/MXEyj
+         LY4IyyYrYpXr3f7s3yScZ9Ve3aLREgw5uidpszJ6uvOsVQUi/hA/gNWJHCsby6AugMqT
+         xvnw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=8/WhspmjYxN4WevHZGSwCLK77Y+Bsy93ZgfVs0EUWMk=;
+        b=cqjWTvJqvA3A0H86bHldxC+yIdNPtlwb+bQsBQs73i8g1/wgMpw0saqB9NQQj86Kgs
+         DR0Ecsq+MHzZstKYRR7I/ag6SplF6/FZn6weY2EImmGOVhybYD7rXHYACU7RyJ8bAidw
+         sUY85i5jF2vy3S/mr53uo5k1ZquxgVz1bO40rtuAaILUHS9rRS/Nh4IaqREmS6scN59Z
+         0H89GqGlDq/is6wrKYRjzvsTOMpgcypBNcioaKB4x+LkyY/vwsDoo+mlWlmb/Fx0JxTu
+         1ODWMgqSuVUcpXfk24M3WQxNyvrd+iTObvqgZ5rdd1/yE4mDEl6np3waq3PTtrDhANeV
+         T5cA==
+X-Gm-Message-State: ALyK8tK4SP1H7Awfr+FTzADSHsKj5maJde4liBy/kNjomJFnIakbhTex578Kyhn8vG5gvr0YlYS7Sxirb1h6gQ==
+MIME-Version: 1.0
+X-Received: by 10.107.21.194 with SMTP id 185mr203309iov.59.1464114981066;
+ Tue, 24 May 2016 11:36:21 -0700 (PDT)
+Received: by 10.107.129.101 with HTTP; Tue, 24 May 2016 11:36:21 -0700 (PDT)
+In-Reply-To: <CAAxEZd_73Q-5h1czpr8Qe1mOOZHCBy0wxC6GXRtPPC2kPM3V2g@mail.gmail.com>
+References: <CAAxEZd_73Q-5h1czpr8Qe1mOOZHCBy0wxC6GXRtPPC2kPM3V2g@mail.gmail.com>
+Date: Tue, 24 May 2016 20:36:21 +0200
+Message-ID: <CAAxEZd9XHSGeYw45cjb-rwYh7jwD-wMbS0=FQcwCfWxhWPTXJg@mail.gmail.com>
+Subject: Re: Any Open Data Sets for the (Football) Euro Cup (in France 2016)?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+> 30 days to kick off!
+
+  (Update May/24) 17 days to kick off!  Any new sources? Any datasets?
+Any insight and pointers appreciated. Cheers.
+

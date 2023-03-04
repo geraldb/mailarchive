@@ -1,0 +1,177 @@
+From 1010693046272@xxx Tue Jun 16 00:17:06 +0000 2015
+X-GM-THRID: 923854176256
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,d32db7d7f6a63723
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.157.129 with SMTP id wm1mr541554lbb.17.1401812597102;
+        Tue, 03 Jun 2014 09:23:17 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.96.34 with SMTP id dp2ls120658wib.24.canary; Tue, 03 Jun
+ 2014 09:23:16 -0700 (PDT)
+X-Received: by 10.14.218.9 with SMTP id j9mr653638eep.2.1401812596579;
+        Tue, 03 Jun 2014 09:23:16 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x236.google.com (mail-we0-x236.google.com [2a00:1450:400c:c03::236])
+        by gmr-mx.google.com with ESMTPS id gz10si552883wib.0.2014.06.03.09.23.16
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 03 Jun 2014 09:23:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) client-ip=2a00:1450:400c:c03::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x236.google.com with SMTP id t60so7199904wes.27
+        for <opensport@googlegroups.com>; Tue, 03 Jun 2014 09:23:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=u/tXFcL9wZf3AUG0UcZu0nfUACJVsjAPzmiD0j47qg4=;
+        b=BsLoQP/swzJsN83hYmcuZzpHX5HGd69we6AJLjQ89+j9ty8+nnboP5AOrCpW285mmC
+         sxdDJo871oTzGdEn3wzDsXc5roIan3tNwI8Q3+T6YDrfFjksZ/sPJMSyFmTzJpoOW1dY
+         5KGXkGgjYKJq1UWKgDwkHXk7wUkbWY+py4aiO9j0FKzG50Q4WOLEGafrklaOq+yeTGMi
+         t3Q6cBjMhf7k5AVBy+7XV7BtFgUoUrmgddEQKr8ORAFiIadMbWZyexQvHqKw7X6fQf0b
+         RK4aE3DTP7gTn8mAYo7b0BR20IUGUzK2NLKoYuBh5ztElhRmDnk2o/CEoUVmKertTc+9
+         cAAg==
+MIME-Version: 1.0
+X-Received: by 10.180.218.4 with SMTP id pc4mr21172624wic.21.1401812596497;
+ Tue, 03 Jun 2014 09:23:16 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Tue, 3 Jun 2014 09:23:16 -0700 (PDT)
+In-Reply-To: <46f731f3-bcfd-443f-8a91-25ca1058c5c8@googlegroups.com>
+References: <CAAxEZd9j_7b5+8XCQk8R8PrJeG0f4EGycXMOG1ALBLg=aXEjxA@mail.gmail.com>
+	<4ddbbd16-58ff-4d90-ad9a-b16bd0f0c781@googlegroups.com>
+	<e3455618-1eac-44b2-98e6-c72e0e18e910@googlegroups.com>
+	<CAAxEZd_jL1Uyn7UfLVfSeY7YzPpppWxjW1Oce2jrwAf1w6V3Sg@mail.gmail.com>
+	<46f731f3-bcfd-443f-8a91-25ca1058c5c8@googlegroups.com>
+Date: Tue, 3 Jun 2014 18:23:16 +0200
+Message-ID: <CAAxEZd8gantpUTRVFJdYD9T707O=-j8QGZe=_GwzqwuRkwTkQg@mail.gmail.com>
+Subject: Re: [opensport] Re: World Cup 2014 Match Picks/Predictions (w/ Open
+ Source Sportbook Rails Web App)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for the update. Good to know its working.
+
+> How will the knock-out stages work? are these added by the fixtures page
+> in admin?
+
+   You can update all results and the fixtures using a rake task:
+
+$ rake update
+
+And that's the source:
+
+desc 'sportbook: auto-update fixtures'
+task :update => [:environment] do |t|
+  SportDb.update!
+end
+
+> btw all of the users in the demo seem to have access to admin and can
+> change anything seems to be the same on your herukoapp demo.
+> Is there a way to restrict normal users to only use the main app?
+
+  Good point. For now everybody has access if you know the admin link.
+The admin login required functionality needs to get added. Cheers.
+
+
+2014-06-03 17:10 GMT+02:00 red band <gpsundergrnd@gmail.com>:
+> Aah, that sorted it out!  I had deleted everything and restarted a couple of
+> times but always with the rake db:setup deleting the db and using rake
+> db:migrate then seed worked great.
+>
+> Thank you very much for your efforts producing this and the help to get it
+> working.
+>
+> How will the knock-out stages work? are these added by the fixtures page in
+> admin?
+>
+> btw all of the users in the demo seem to have access to admin and can change
+> anything seems to be the same on your herukoapp demo.
+> Is there a way to restrict normal users to only use the main app?
+>
+> Grtz
+>
+> Red
+>
+>
+> On Tuesday, June 3, 2014 1:53:29 PM UTC+1, Gerald Bauer wrote:
+>>
+>> Hello,
+>>   Thanks for the info. I just tried a new installation. It works.
+>>
+>>   Sorry. Note: If you update an installation you have to delete the
+>> database first!  Sorry, the sportbook does NOT use auto database
+>> migration magic  (most tables reside in gems).  If the schema changes
+>> (e.g. gets new tables or fields) you have to recreate the database
+>> (and delete the database first)
+>>
+>>   If your installation is an update, please delete your database and
+>> recreate:
+>>
+>> $ rake db:migrate
+>>
+>> You should see
+>>
+>> -- create_table(:alltime_standings)
+>>    -> 0.0010s
+>> -- create_table(:alltime_standing_entries)
+>>    -> 0.0010s
+>>   ...
+>>
+>>   Let us know if it works. Good luck. Cheers.
+>>
+>> 2014-06-03 12:37 GMT+02:00 red band <gpsund...@gmail.com>:
+>> > No, it still fails, and it looks like it could be the same place as when
+>> > I
+>> > ran rake db:setup
+>> > rake aborted!
+>> > ActiveRecord::StatementInvalid: SQLite3::SQLException: no such table:
+>> > alltime_standing_entries: DELETE FROM "alltime_standing_entries"
+>> >
+>> > Is this table missing from the schema?
+>> >
+>> > Grtz
+>> >
+>> > Red
+>> >
+>> >
+>> > On Tuesday, June 3, 2014 11:00:46 AM UTC+1, Gerald Bauer wrote:
+>> >>
+>> >> Hello,
+>> >>
+>> >>   Thanks for your interest in sportbook. Please, replace the all-in-one
+>> >> database setup command
+>> >>
+>> >> $ rake db:setup
+>> >>
+>> >>    with two steps
+>> >>
+>> >> $ rake db:migrate                       # will create the database
+>> >> tables
+>> >> / schema
+>> >> $ rake db:seed DATA=demo       # will load all data for the demo setup
+>> >>
+>> >>    Let us know if it works. Cheers.
+>> >
+>> > --
+>> > You received this message because you are subscribed to the Google
+>> > Groups
+>> > "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+>> > group.
+>> > To unsubscribe from this group and stop receiving emails from it, send
+>> > an
+>> > email to opensport+...@googlegroups.com.
+>> > For more options, visit https://groups.google.com/d/optout.
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+

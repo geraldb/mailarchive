@@ -1,0 +1,86 @@
+From 6274510046206361600@xxx Sun Apr 17 13:03:32 +0000 2016
+X-GM-THRID: 6274510045112696832
+X-Received: by 10.157.39.161 with SMTP id c30mr19596053otb.20.1460898212667;
+        Sun, 17 Apr 2016 06:03:32 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.182.86.1 with SMTP id l1ls383112obz.4.gmail; Sun, 17 Apr 2016
+ 06:03:32 -0700 (PDT)
+X-Received: by 10.157.3.149 with SMTP id f21mr8577701otf.18.1460898212206;
+        Sun, 17 Apr 2016 06:03:32 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22c.google.com (mail-ig0-x22c.google.com. [2607:f8b0:4001:c05::22c])
+        by gmr-mx.google.com with ESMTPS id au10si2159510igc.3.2016.04.17.06.03.32
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 17 Apr 2016 06:03:32 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22c as permitted sender) client-ip=2607:f8b0:4001:c05::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ig0-x22c.google.com with SMTP id f1so53164371igr.1
+        for <wwwmake@googlegroups.com>; Sun, 17 Apr 2016 06:03:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to;
+        bh=7kjZKujCkIbRuuQbTncVdVvdYt6p2ApFfNRletU3YOQ=;
+        b=G8GBZN3Mxe5dWMFLIIMaIo2H0FiRVHt3vBThE8G8c41XjBcMrk0m35t2dfIyuaUI4H
+         7N+aFle9BFN5oqAyMZg6RySwkc8oayAVIwL9uD9cWskzurbjsGvfOtNwiJkVU36ImzP8
+         bG1S8kI03wjpu+IuobtziLBAOXSM+Q7OPmER6xnQ3Iu3rzgWUkLKtg1gTqxYf/aZ7BXl
+         zSLkXX1o6wPoQcCF1Dt2YSsTn7F1We6Z2F1nBRGkRCwkc78e3vyqHNQ/qjkh08bDbQbX
+         skH0duauUAW1bFKQRwBjewo5QjqyTaT/Lal4O+gD6BZ5EFkr+edGcZx4lDP9oMNmKDwA
+         sjNg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:date:message-id:subject:from:to;
+        bh=7kjZKujCkIbRuuQbTncVdVvdYt6p2ApFfNRletU3YOQ=;
+        b=YRd2X/XipDHgMm/5SH7QpZZMvZaotqmioghJZEB1fXegfqlEIklzmKUaOyzBlJ+L/d
+         jh1LNKNiou4N5b08OqevlIcE6w9QjcidcpMmCN1zMadI9sZgzIZAW7OO6FklGk7BFM1N
+         yMRMnluTWT7OkInINugeHVPZF4/YvCncuUqFzNSr/f0Q079OvyCruFTTd2rpPP7UmmHE
+         y7VugMGx0g4uZimQhLbdPpOBMx6JiNeIaVw/dUlqql0BMoJYxLE2m0tOjPCgpITxHWW9
+         y7rSyVPcSdSPygw/C/WItrPuc/Tf3aVDX0A+sooq4IZMUWjo4USOQ3fRzvWi9HF7fJ/V
+         tzPA==
+X-Gm-Message-State: AOPr4FXTjkPKpt0DqMZgnqL7X/cW8m+M0Y9eqrd6Vwul6zKdN31A3EPiIEm/kdJv7Qg7Od3Xxup8B7uc6qcrJQ==
+MIME-Version: 1.0
+X-Received: by 10.50.30.41 with SMTP id p9mr12946812igh.86.1460898212025; Sun,
+ 17 Apr 2016 06:03:32 -0700 (PDT)
+Received: by 10.107.169.83 with HTTP; Sun, 17 Apr 2016 06:03:31 -0700 (PDT)
+Date: Sun, 17 Apr 2016 15:03:31 +0200
+Message-ID: <CAAxEZd9bsfgmgnWsjCFoKP97yYD=X4NYhMNt+kSz=-y-9DgdeA@mail.gmail.com>
+Subject: Try kramdown Online Editor & HTTP JSON API Service - Convert Markdown
+ to HTML & LaTeX
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've put together a simple online editor [1] that lets you try the
+kramdown library converting markdown to HTML or LaTeX. The online app
+also includes a HTTP JSON API service (e.g. /markdown) for conversion.
+
+ All is packed up in a kramdown-service gem [2] for easy (re)use and
+as an extra bonus includes a binary, that is, kramup, that starts up
+the online editor and service on your local machine (e.g. use $
+kramup).
+
+    Supported conversion options/modes include:
+
+    - HTML  - kramdown in GitHub-Flavored Markdown (GFM) Mode
+    - HTML  - kramdown in GitHub-Flavored Markdown (GFM) Mode w/
+Syntax Highlighter (rouge)
+    - HTML  - kramdown in "Classic" Mode
+    - LaTeX - kramdown in GitHub-Flavored Markdown (GFM) Mode
+
+    All code public domain. Questions? Comments? Welcome. Cheers.
+
+
+PS: What's kramdown?
+
+kramdown is a fast markdown converter in Ruby (no C-extension required);
+supports conversion to HTML or LaTeX; kramdown is the "standard"
+markdown converter used by GitHub Pages, Jekyll and others.
+
+[1] http://trykramdown.herokuapp.com
+[2] https://github.com/writekit/kramdown-service
+

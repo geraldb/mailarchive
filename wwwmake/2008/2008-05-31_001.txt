@@ -1,0 +1,50 @@
+From 22619881472@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 17273192448
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,881dd44606314bf3
+X-Google-Attributes: gid592b7a,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.100.153.6 with SMTP id a6mr79684ane.0.1212214907940; Fri, 30 
+	May 2008 23:21:47 -0700 (PDT)
+Date: Fri, 30 May 2008 23:21:47 -0700 (PDT)
+In-Reply-To: <be6cb54e-2541-44a9-96b9-8cb32f2aeebc@k37g2000hsf.googlegroups.com>
+X-IP: 64.46.5.199
+References: <be6cb54e-2541-44a9-96b9-8cb32f2aeebc@k37g2000hsf.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: WHuqHwwAAAA8lw65CiTU4IiAJTuS_kDU
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9) 
+	Gecko/2008051206 Firefox/3.0,gzip(gfe),gzip(gfe)
+Message-ID: <b5b837ea-d3a8-4ee0-b6c3-230e00fd0e4b@i18g2000prn.googlegroups.com>
+Subject: Re: Help me get codex started
+From: Gerald Bauer <geraldbauer2007@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S9, FullerScreen And Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+> I installed the gem, first from Dave's github, and then again with
+> drnic's version. =A0codex is installed.
+>
+> I've got my little C Tutorial directory started:
+>
+> mel:~/ctut : find . -type f | grep -v .svn
+> ./code/malloc.c
+> ./slides/malloc.slides
+> ./slides/metadata.yml
+> ./slides/table_of_contents.slides
+>
+> Fabulous. =A0But how do I start codex? =A0 Whenever I run "codex foo", it
+> populates the foo/ directory with the default presentation.
+> Overwrites my table_of_contents.slides, too.
+>
+> Am I misunderstanding what codex does?
+
+   codex operates like a generator and creates a skeleton for your
+presentation including a rake (build) script. To create or update your
+presentation you need to issue the command 'rake all' from the foo
+directory. That's my understanding. Let us know if it works.
+
+   Cheers.
+

@@ -1,0 +1,57 @@
+From 1257989210112@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1243889008640
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fad29618c7bcba3
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.11.229 with SMTP id t5mr529235lbb.10.1402917717638;
+        Mon, 16 Jun 2014 04:21:57 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.9.179 with SMTP id a19ls249131wib.33.canary; Mon, 16 Jun
+ 2014 04:21:57 -0700 (PDT)
+X-Received: by 10.194.243.35 with SMTP id wv3mr126940wjc.7.1402917717075;
+        Mon, 16 Jun 2014 04:21:57 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22b.google.com (mail-wg0-x22b.google.com [2a00:1450:400c:c00::22b])
+        by gmr-mx.google.com with ESMTPS id ck3si586849wib.0.2014.06.16.04.21.57
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 16 Jun 2014 04:21:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22b as permitted sender) client-ip=2a00:1450:400c:c00::22b;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22b as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f43.google.com with SMTP id b13so5291938wgh.26
+        for <opensport@googlegroups.com>; Mon, 16 Jun 2014 04:21:57 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=Dl305cdxHR7cJ4HWFXJpGwdd/z3Hd1+EKgSuJeuSJXY=;
+        b=OeugglPnSXZ2GX3sCC59zl+Ku4Dnf9nszWw49GZlqRYpjwa+vUrXPhyfR4Ajx2irMr
+         gSThjmBmIjYX8JuGwa6nbGMD8YD6rbcBWM480n/bP7K6mv9xkyttmgBfNPGFTx6dEBSe
+         rffOIdfpFn5uGtBjS2Kph4oWYy/EtOuH5ydxaqOR5a9hofkKM5mbhCfxoZUaPTKiuJeU
+         19qmHbBx7rHX0d8+W6nfHv/6zrtPviTvX0soDXfTAqMGFye6e0Jye4gqdhNftOGnGsmj
+         NUORw+ZyBQcPuFO55Nq9oYdNAqKzOuVEiUuftG5MEuF2qNWFdI3RVs1cYxoHvy2m8T8/
+         gZIQ==
+MIME-Version: 1.0
+X-Received: by 10.180.83.225 with SMTP id t1mr26482855wiy.28.1402917716971;
+ Mon, 16 Jun 2014 04:21:56 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Mon, 16 Jun 2014 04:21:56 -0700 (PDT)
+In-Reply-To: <423d2170-df19-49b1-870c-48f5d1f03411@googlegroups.com>
+References: <d03cd443-cfe5-4640-9c7d-0e51eb7cd99c@googlegroups.com>
+	<4429ed03-e8e0-455a-97a7-6b4045d00d67@googlegroups.com>
+	<423d2170-df19-49b1-870c-48f5d1f03411@googlegroups.com>
+Date: Mon, 16 Jun 2014 13:21:56 +0200
+Message-ID: <CAAxEZd_OgkfdweTTYjk+C8o7HM8HAgHQCO0cn0taE1AUiVzvcg@mail.gmail.com>
+Subject: Re: [opensport] Re: Wrong Order/ No Time
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  I see. Sorry for now you have to add the datetime/time yourself. See
+some old postings on how to add time to the JSON service using the
+sport.db.api.starter kit. Cheers.
+

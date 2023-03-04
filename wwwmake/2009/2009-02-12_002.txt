@@ -1,0 +1,70 @@
+From 493038338048@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 490515464192
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,37e77ac5cca65e53,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.223.124.147 with SMTP id u19mr14766far.22.1234458983757;
+        Thu, 12 Feb 2009 09:16:23 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from mail-bw0-f180.google.com (mail-bw0-f180.google.com [209.85.218.180])
+        by mx.google.com with ESMTP id 5si25914fge.6.2009.02.12.09.16.23;
+        Thu, 12 Feb 2009 09:16:23 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.218.180 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.218.180;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.218.180 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by bwz28 with SMTP id 28so1153981bwz.23
+        for <webslideshow@googlegroups.com>; Thu, 12 Feb 2009 09:16:23 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.181.148.2 with SMTP id a2mr372953bko.117.1234458982926; Thu, 
+	12 Feb 2009 09:16:22 -0800 (PST)
+Date: Thu, 12 Feb 2009 18:16:22 +0100
+Message-ID: <1f058eab0902120916q14ce5941sf77609dbaaa56b1c@mail.gmail.com>
+Subject: Slide Show (S9) Gem V0.7 - Now JRuby Compatible - JRuby: Ready for 
+	Action Sample Online
+From: Gerald Bauer <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  With the lastest update (0.7.x series) the slideshow gem now works
+out-of-the-box with JRuby - a Ruby version for the Java runtime.
+
+ Just issue:
+
+$ jruby -S gem install slideshow
+
+ or similar resulting in:
+
+Successfully installed RedCloth-4.1.1-universal-java
+Successfully installed BlueCloth-1.0.0
+Successfully installed slideshow-0.7.4
+3 gems installed
+
+ To create a slide show (S5, S6, FullerScreen) etc. issue, for example:
+
+$ jruby -S slideshow jruby
+
+ Resulting in
+
+Slide Show (S9) Version: 0.7.4 on Ruby 1.8.6 (2008-12-17) [java]
+ Loading template manifest s6.txt...
+Preparing slideshow 'jruby'...
+Preparing jruby.svg...
+ Loading template gradient.svg.erb...
+ ...
+Done.
+
+
+ You can find the sample slideshow-gem-generated all-in-one-web-page
+presentation (w/ three stylesheets and modes, that is, projection,
+outline and print) online at:
+
+ http://slideshow.rubyforge.org/jruby.html
+
+ It's an adapted S6/S9 version of the "JRuby: Ready for Action",
+EuRuKo 2008 talk by Charles Oliver Nutter and Thomas Enebo.
+
+ Cheers.
+

@@ -1,0 +1,51 @@
+From 711961083904@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 709795774464
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,a05227ef94b28cc2,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.100.10.4 with SMTP id 4mr5902725anj.33.1278554949408;
+        Wed, 07 Jul 2010 19:09:09 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.101.200.2 with SMTP id c2ls8450063anq.4.p; Wed, 07 Jul 2010 
+	19:09:09 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.101.142.33 with SMTP id u33mr488666ann.2.1278554949104; Wed, 
+	07 Jul 2010 19:09:09 -0700 (PDT)
+Received: by q12g2000yqj.googlegroups.com with HTTP; Wed, 7 Jul 2010 19:09:09 
+	-0700 (PDT)
+Date: Wed, 7 Jul 2010 19:09:09 -0700 (PDT)
+X-IP: 93.82.40.90
+User-Agent: G2/1.0
+X-Google-Token: EMXm1OEE9vhWw2UfUQM0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.6) 
+	Gecko/20100628 Ubuntu/10.04 (lucid) Firefox/3.6.6,gzip(gfe)
+Message-ID: <56d8670b-a4f1-4f9e-a5e3-f89b7c1dbd73@q12g2000yqj.googlegroups.com>
+Subject: New Slide Show Demo - Using (CSS3 Background) Gradients
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  I've converted Mozilla's "Using Gradients" Article[1] into a slide
+show where every slide uses a different CSS gradient background.
+
+  Using a different CSS gradient background is easy using the new
+background helper. Example:
+
+  <%= background '-moz-linear-gradient(top, yellow, orange, yellow,
+orange)' %>
+
+   Try the slide show live @ http://slideshow.rubyforge.org/gradients.html
+   or http://slideshow.rubyforge.org/gradients.pdf.html
+
+   For details, see the Markdown source @
+http://github.com/geraldb/slideshow/blob/master/samples/gradients.text
+
+   Note, that all CSS gradient backgrounds only work in Firefox 3.6+.
+
+   Cheers. Gerald
+
+[1] https://developer.mozilla.org/en/Using_gradients
+

@@ -1,0 +1,75 @@
+From 327833092096@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 230668894208
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,62dcd4fef002a41c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.100.91.3 with SMTP id o3mr1768133anb.7.1232981678606; Mon, 26 
+	Jan 2009 06:54:38 -0800 (PST)
+Date: Mon, 26 Jan 2009 06:54:38 -0800 (PST)
+In-Reply-To: <4b516795-001c-4eae-ae8a-b5f64ad57368@n2g2000vbl.googlegroups.com>
+X-IP: 24.210.246.49
+References: <140cca6b-bca9-4743-a6f0-dd20e641cde1@v39g2000pro.googlegroups.com> 
+	<3a6a2b5d-5189-4e10-8a4d-4104524fa4b5@o4g2000pra.googlegroups.com> 
+	<a1c9be27-31c8-4704-a708-227163d989cd@y1g2000pra.googlegroups.com> 
+	<d39a1737-65cd-4366-a227-8c9dc4286080@r37g2000prr.googlegroups.com> 
+	<f76b2c12-23c1-4ed4-80ca-29d9abf8a484@33g2000yqm.googlegroups.com> 
+	<4b516795-001c-4eae-ae8a-b5f64ad57368@n2g2000vbl.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: yxm2MgwAAACgvwlFrosH8NhsQNrlFvCQ
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; 
+	rv:1.9.0.5) Gecko/2008120121 Firefox/3.0.5,gzip(gfe),gzip(gfe)
+Message-ID: <ee93dc59-38a3-40a5-9f44-242903870b99@z28g2000prd.googlegroups.com>
+Subject: Re: S6 and SVG
+From: Bruce <bdarcus.lists@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hi Gerald,
+
+Am running into a problem ...
+
+On Jan 26, 4:02=A0am, Gerald <ger...@vanbeta.com> wrote:
+
+> =A0 =A0I uploaded a new slideshow gem (version 0.7) to RubyForge that now
+> supports custom template packages using manifests (simple text files
+> listing all files). It might take a couple of hours until the gem is
+> available according to the RubyForge service.
+>
+> =A0 =A0What's new? How does it work?
+>
+> =A0 =A0As usual use the -g/--generate switch to generate a sample templat=
+e
+> package w/ manifest to get started (now using, of course, the new
+> packaging format). Example:
+>
+> =A0 =A0slideshow -g =A0 =A0 =A0 =A0# generates a template package w/ mani=
+fest in
+> your working folder (using the s6 package)
+
+When running the above, I get a missing file error:
+
+
+Slide Show (S9) Version: 0.7 on Ruby 1.8.7 (2008-08-11) [i686-darwin9]
+  Loading template manifest /opt/local/lib/ruby/gems/1.8/gems/
+slideshow-0.7/lib/templates/s6.txt.gen...
+Copying to s6.txt from /opt/local/lib/ruby/gems/1.8/gems/slideshow-0.7/
+lib/templates/s...xt.sample
+/opt/local/lib/ruby/1.8/ftools.rb:59:in `stat': No such file or
+directory - /opt/local (Errno::ENOENT).8/gems/slideshow-0.7/lib/
+templates/s6.txt.sample
+
+
+But I'm confused, b/c the file is there:
+
+ls /opt/local/lib/ruby/gems/1.8/gems/slideshow-0.7/lib/templates
+footer.html.erb		header.html.erb		s6
+fullerscreen.txt	s5			s6.txt
+fullerscreen.txt.gen	s5.txt			s6.txt.gen
+fullerscreen.txt.sample	s5.txt.gen		s6.txt.sample
+gradient.svg.erb	s5.txt.sample		style.css.erb
+
+Bruce
+

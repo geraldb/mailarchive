@@ -1,0 +1,54 @@
+From 6227317682668044288@xxx Sat Dec 12 08:53:04 +0000 2015
+X-GM-THRID: 6227037093254660096
+X-Received: by 10.182.18.3 with SMTP id s3mr18974029obd.14.1449910384412;
+        Sat, 12 Dec 2015 00:53:04 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.103.182 with SMTP id y51ls258502qge.5.gmail; Sat, 12 Dec
+ 2015 00:53:03 -0800 (PST)
+X-Received: by 10.129.155.67 with SMTP id s64mr10960600ywg.9.1449910383580;
+        Sat, 12 Dec 2015 00:53:03 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x232.google.com (mail-ig0-x232.google.com. [2607:f8b0:4001:c05::232])
+        by gmr-mx.google.com with ESMTPS id lr9si491694igb.1.2015.12.12.00.53.03
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 12 Dec 2015 00:53:03 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::232 as permitted sender) client-ip=2607:f8b0:4001:c05::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x232.google.com with SMTP id xm8so54457883igb.1
+        for <opensport@googlegroups.com>; Sat, 12 Dec 2015 00:53:03 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=d/r134IMHoDkXBs2Oxi36ipj6azViKKk/RNoSfNsNq0=;
+        b=Wol+2dlNRzDXxF+Fr5J7ND2eKf0e0HG9Pc4iQgnJCNnLcKI6iN3BpiRnLbeGmFIrk9
+         l3spYjkEahe0ryaMyuPFWvLtZcJz0QWjTWp3yothcO4C8POm3PZYkGMAwTTKTeEW67wJ
+         7nHoavHns2hljZUkZgLjKOPRKxv3JCuoz2vZJ9Ov4RNK5KVUJFW19n35V3wkKQe3tlXz
+         hzvKOpbhfjajFAnuQ6tRQGE20efz6Pz2zHVCxWMPPKNKKv4vebG5psF+XMktByHwbzzh
+         H9ujCOFHwqde1qJ4XQR6Td/rXJxKY1JUgsTR93mzdFcfADN9v250adKLc7W/e7kDjViZ
+         H/Yw==
+MIME-Version: 1.0
+X-Received: by 10.50.67.41 with SMTP id k9mr277808igt.64.1449910383399; Sat,
+ 12 Dec 2015 00:53:03 -0800 (PST)
+Received: by 10.107.140.12 with HTTP; Sat, 12 Dec 2015 00:53:03 -0800 (PST)
+In-Reply-To: <52ab5261-e54d-4299-ad8d-9ac05936f417@googlegroups.com>
+References: <3e97f6a6-54cc-4931-b25c-933403e73a88@googlegroups.com>
+	<CAAxEZd-jpNP6f8KJvjHdXwwrsCBu5FVUQ-gszwVFFsbFOndy-g@mail.gmail.com>
+	<e29fd86e-1067-49fd-9427-ce73b165388a@googlegroups.com>
+	<CAAxEZd_tzWTm=ZHwWdggS3R-=YPyo+QU+f0dv5nX8C_U4H7qpQ@mail.gmail.com>
+	<52ab5261-e54d-4299-ad8d-9ac05936f417@googlegroups.com>
+Date: Sat, 12 Dec 2015 09:53:03 +0100
+Message-ID: <CAAxEZd-BXKfEc18L20uWS_T01bBn3itCzf269wXvNwo5ru+K0Q@mail.gmail.com>
+Subject: Re: [opensport] ActiveRecord::StatementInvalid: Could not find table 'persons'
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Great news. Thanks for trying and the tip and fix. Cheers.
+

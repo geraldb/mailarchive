@@ -1,0 +1,80 @@
+From 2143571410944@xxx Tue Jun 16 00:16:48 +0000 2015
+X-GM-THRID: 2147047440384
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,c110b5d6db2ef57f,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.48.41 with SMTP id i9mr7842lbn.22.1409839386600;
+        Thu, 04 Sep 2014 07:03:06 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.189.144 with SMTP id gi16ls517411wic.40.canary; Thu, 04
+ Sep 2014 07:03:06 -0700 (PDT)
+X-Received: by 10.180.37.211 with SMTP id a19mr456799wik.6.1409839386060;
+        Thu, 04 Sep 2014 07:03:06 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22c.google.com (mail-we0-x22c.google.com [2a00:1450:400c:c03::22c])
+        by gmr-mx.google.com with ESMTPS id v3si98388wib.1.2014.09.04.07.03.06
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 04 Sep 2014 07:03:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22c as permitted sender) client-ip=2a00:1450:400c:c03::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22c as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x22c.google.com with SMTP id q59so10353495wes.3
+        for <opensport@googlegroups.com>; Thu, 04 Sep 2014 07:03:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=W8WRLsc/R7KPAH4japxyA/DWwcAQytam//m4/NAyN+w=;
+        b=c26grPXcXZCBpAryUs+vaA09br4P4LUO2xcucbDWo4FOFdm4ImJvih55PExi00TCbE
+         LA7GeFq4ed5a6p0RXRl6oh1z3PrDtg+i+AtFsiqBQVR+pAihDK79iqt3CwF0FOoRsDnl
+         nMfPOeIEcME3dMjm7Dfy+FA/11ZZ+IEpOOslbMuXSuhboVaMSb0j62LK3M9PXFjlwx95
+         7JJgzwKXci0dn6A2w2naCBfSYF6OSq3nGTCmOTBrb0J3d7qd3cCwlkGDPNW2yEG1KwBi
+         rqRQbNzOpzXU5t6aL1rFvyfmYf97h27vADLoZC6uDjBft0C9MQ8U+eGuS5E/wVl0b2Xr
+         qDNw==
+MIME-Version: 1.0
+X-Received: by 10.180.88.167 with SMTP id bh7mr6366044wib.12.1409839385954;
+ Thu, 04 Sep 2014 07:03:05 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Thu, 4 Sep 2014 07:03:05 -0700 (PDT)
+Date: Thu, 4 Sep 2014 16:03:05 +0200
+Message-ID: <CAAxEZd84DQC-GdQPs2fAR1Xv=aSt+O8arP5D6u=VaxBg5e1HYw@mail.gmail.com>
+Subject: =?UTF-8?Q?New_Season_=2D_La_Liga_=2F_Primera_Divisi=C3=B3n_de_Espa=C3=B1a_?=
+	=?UTF-8?Q?2014=2D15_Added?=
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: I've added the new 2014/15 season for the Spanish La Liga /
+Primera Divisi=C3=B3n [1].
+
+ Jornada 1
+
+[S=C3=A1b. 23.8.]
+  M=C3=A1laga CF   1-0  Athletic Bilbao
+  Sevilla FC  1-1  Valencia CF
+  Granada CF  2-1  Deportivo La Coru=C3=B1a
+  UD Almer=C3=ADa  1-1  RCD Espanyol
+[Dom. 24.8.]
+  SD Eibar      1-0  Real Sociedad San Sebastian
+  Celta Vigo    3-1  Getafe CF
+  FC Barcelona  3-0  Elche CF
+  Levante UD    0-2  Villarreal CF
+[Lun. 25.8.]
+  Real Madrid     2-0  C=C3=B3rdoba CF
+  Rayo Vallecano  0-0  Atl=C3=A9tico Madrid
+
+
+   To build yourself a copy use:
+
+    $ rake build DATA=3Des
+
+   Cheers.
+
+[1] github.com/openfootball/es-espana/blob/master/2014-15
+

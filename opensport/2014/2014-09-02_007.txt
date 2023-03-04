@@ -1,0 +1,70 @@
+From 2111574114304@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 1861086085120
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,f3433d66f198c649
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.95.228 with SMTP id dn4mr2979140lbb.2.1409640884580;
+        Mon, 01 Sep 2014 23:54:44 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.207.36 with SMTP id lt4ls508340lac.19.gmail; Mon, 01 Sep
+ 2014 23:54:43 -0700 (PDT)
+X-Received: by 10.152.116.104 with SMTP id jv8mr51151lab.9.1409640883968;
+        Mon, 01 Sep 2014 23:54:43 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x235.google.com (mail-wi0-x235.google.com [2a00:1450:400c:c05::235])
+        by gmr-mx.google.com with ESMTPS id v3si587896wib.1.2014.09.01.23.54.43
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 01 Sep 2014 23:54:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::235 as permitted sender) client-ip=2a00:1450:400c:c05::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::235 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f181.google.com with SMTP id e4so7207478wiv.14
+        for <opensport@googlegroups.com>; Mon, 01 Sep 2014 23:54:43 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=8t02Jg1sR0EyEtUss/5k4Ngg7KFsyyxwgmyX3QKYqOA=;
+        b=o/g9EmEhdUdl651SZBpl9GVXb+XacOfGRbHSxXP8hxTNqcQQ84CE9zA92VidD0SI1Y
+         9SnbidbEjZwOjegHju69HaxCv1asCVohBbCUB6OUUdwXcdKHO29kDw3e1EeY+mNpB9HM
+         5lYwuakLxXD68mru+c6jdDNHG6knwwu/Bf4JMhNqWx/gxmXufLYoQ0RbU+J6+W2qoSfT
+         O+ib94TQqb77EO0huIW0+zyJH4X05wpkb/cURDaJGJRrwEH4bmPqcTLKSI6oBltrdGkE
+         1eacED+75TrVIH6BW2uTNov74vKNjlBxxIVmGLHp6y6wipPSjlo5nKEJhrwNVBs4xZIY
+         tJMQ==
+MIME-Version: 1.0
+X-Received: by 10.194.161.231 with SMTP id xv7mr14344974wjb.78.1409640883879;
+ Mon, 01 Sep 2014 23:54:43 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Mon, 1 Sep 2014 23:54:43 -0700 (PDT)
+In-Reply-To: <e05bef52-9437-4bc7-81b0-8860fb6fdb38@googlegroups.com>
+References: <7d892c64-8738-47aa-8d1b-5b98beee6b96@googlegroups.com>
+	<7e0ca3ad-6e93-4e72-a099-5fbaf0cb6ea1@googlegroups.com>
+	<93c109c5-43b2-4701-8388-b8d15d4d14d4@googlegroups.com>
+	<CAAxEZd_CMG7SbXKZ-yHA_yUQYshbqpRicREY9=OB73MM8u8jTQ@mail.gmail.com>
+	<e05bef52-9437-4bc7-81b0-8860fb6fdb38@googlegroups.com>
+Date: Tue, 2 Sep 2014 08:54:43 +0200
+Message-ID: <CAAxEZd_84wcARUMKysP+bY1f2_Qi1chou7t85_ccPy1iYfjshg@mail.gmail.com>
+Subject: Re: [opensport] Re: And ActiveRecord::RecordNotFound ERROR when
+ building champion league
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Thanks for trying. Will clean up the champions league build later
+this week. What's needed?
+
+    The football clubs of France (and Monaco) now reside in their own
+country repo /fr-france
+    The football clubs of Switzerland now reside in their own country
+reop /ch-confoederatio-helvetica
+
+    The recommended fixture name for teams.txt changed to clubs.txt
+(teams.txt now recommend only for national teams).
+
+ That's pretty much should be all. Thanks for your patience.  Cheers.
+

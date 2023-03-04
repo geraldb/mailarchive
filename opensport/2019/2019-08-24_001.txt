@@ -1,0 +1,226 @@
+From 6728811149401260032@xxx Sat Aug 24 19:03:51 +0000 2019
+X-GM-THRID: 6728805207557275648
+X-Received: by 2002:a1f:591:: with SMTP id 139mr5373069vkf.23.1566673430719;
+        Sat, 24 Aug 2019 12:03:50 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a67:318e:: with SMTP id x136ls1382977vsx.0.gmail; Sat, 24
+ Aug 2019 12:03:50 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqwBfzBdIX2Txc3AFR+MKCwJL8hlzfzWCp3jzd2n/v150Yk7paRVvjyTUAB1QyJBmj9/cwXP
+X-Received: by 2002:a67:8941:: with SMTP id l62mr6571522vsd.133.1566673430094;
+        Sat, 24 Aug 2019 12:03:50 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1566673430; cv=none;
+        d=google.com; s=arc-20160816;
+        b=UQ+CfUqY3ih4LTDS7ajxgre9quQSad8q3uZVJu1LGPgRPbuK3FIaBPXXatBr4F7+c4
+         cHxOMGQzbI+m+QV6q0A1Nx9DrkD36kG9DLhheBGqHuL8vOHX3Btf06xqDFqwQ4ZCqlSc
+         pQQ7am7TG9Kz0uIOUVZNgwPYkcEhoKwd27OXocDUawefwT1oK7HjAEXFqIM2RpXYyDYh
+         CpSxe3fY8AmHOWTAjGF1No9tytFYLtJeyxUiNOcHU8Ji1EQDX3OPSG5EsE+UQxmOjHkb
+         Nk6+loIYXCIxC87zPNC+tzjlsP94R5Onp15voxXB+LI2kNrVYfCsmQDpQ6kJGPOYyYd+
+         GR/A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=c+2OqG6jbEqewa8BUfOWXtXqSkqcV1sev0We5jx497Y=;
+        b=NUxlKxc0J510GPKVheNvhrYeTJueKKwF9nX0C+MeugU4LNzwNJwthCkZAbJrsk1MLp
+         t/IRUk0jHWmJh+6fMPRXsSKYCoEp2r6MRpbqORLpWYdPKdnqeBwOmuyycDAGoD8VOX5x
+         cHKnxHLTvz7tPjfKuWSj8gvctPrHaOypDH41ffBXiVPIhHmRo5yPfRrrFX0aABs0z+hG
+         BfSAJDgypCKnWthZZfCu5Ml6nH4eeTLPhEXJKXCh97lYfOqZls03mAbfaGbrYZmVDh4+
+         CZU3PIIigRBiGcN+EtUt9bI7E3NscRa44VwnK1qvtJ7sGVLdfCzHMcHzqjfvQtBLJvG7
+         CJWA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ijwWmVR5;
+       spf=pass (google.com: domain of maxilandia@gmail.com designates 2607:f8b0:4864:20::330 as permitted sender) smtp.mailfrom=maxilandia@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <maxilandia@gmail.com>
+Received: from mail-ot1-x330.google.com (mail-ot1-x330.google.com. [2607:f8b0:4864:20::330])
+        by gmr-mx.google.com with ESMTPS id v22si269195vsm.0.2019.08.24.12.03.50
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 24 Aug 2019 12:03:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of maxilandia@gmail.com designates 2607:f8b0:4864:20::330 as permitted sender) client-ip=2607:f8b0:4864:20::330;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ijwWmVR5;
+       spf=pass (google.com: domain of maxilandia@gmail.com designates 2607:f8b0:4864:20::330 as permitted sender) smtp.mailfrom=maxilandia@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ot1-x330.google.com with SMTP id p23so7564968oto.0
+        for <opensport@googlegroups.com>; Sat, 24 Aug 2019 12:03:50 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=c+2OqG6jbEqewa8BUfOWXtXqSkqcV1sev0We5jx497Y=;
+        b=ijwWmVR5YtHAwgeWLeGVUFWEx2e/RHFxRUQadgkQQ97Pnee75mySatmr8umcmQIOQP
+         zZL0j49eOMt8Jz1dc2+cOlZ7P48LCWcQzl4KR+5IAtMs8iQPZc+Zy5UIGVEwWxq28kIb
+         gULLuWrEv1FlCaxUpEH1WtIaVSthbO6/sreofm8RfpwYd5kclBDZI/qEgTzWr1y5k3y9
+         CnCjOVqLSTPEmW3qVRmsuS8hwzjgdoUCabAsC4xEFPm+P3SFF8V1U4xns6B/WMbWm13v
+         qDN//2njgNmnyQfy1xLV5X3AF3SsXkdEMwLn++8ewvechp8WkUK9GG1uY20iUAyx1UrV
+         fMTQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=c+2OqG6jbEqewa8BUfOWXtXqSkqcV1sev0We5jx497Y=;
+        b=Z3zp7NwJ/VR1G23/vt/rt6v2WnAeQjFO5JCk2eHUrZSvXc71/ZAYwU+F9zWSqMLVF1
+         B4mG+dng8W9XC+TIcl4y/RuFasxGXclUoEliVNEFuXp6ap74acHl2hkhYTza1xFhzmqy
+         d2CeS9+OhyBWzRNwse98V9LLqtLYwuqi0pmnp/PkKk4+1z9ZTrDrE5deeswiB972/H1o
+         G+fO9KGAMLAtZY6HKPZmzuVhVS6cdPdTt7EDeYZTNq+lUhGUuUUrogzCQ5Y0gl37dWsk
+         6mwQT4bW6OZGqka9z71kH2GXRHpYHr64R54K5H5yuvGUlKsW8bjOL6H1NFikfoQ4EXNS
+         6UJQ==
+X-Gm-Message-State: APjAAAWjNKp/FvB7gOTuAMUCYakqLexsKTpOIyH8ySzfFRf0oYDVWSmF
+	3NWOw7Ee2gvo4gVkb0NXqID/1s0V1RPTuYw9jOn65VwU
+X-Received: by 2002:a9d:1288:: with SMTP id g8mr9186933otg.306.1566673429392;
+ Sat, 24 Aug 2019 12:03:49 -0700 (PDT)
+MIME-Version: 1.0
+References: <77d31082-fa86-46b0-8d5e-28fc12857bb8@googlegroups.com> <CAAxEZd_xQQem8_GLQXEiNsAGimGT5EuJLJFy5sdGZhPMaR1zuQ@mail.gmail.com>
+In-Reply-To: <CAAxEZd_xQQem8_GLQXEiNsAGimGT5EuJLJFy5sdGZhPMaR1zuQ@mail.gmail.com>
+From: Max <maxilandia@gmail.com>
+Date: Sat, 24 Aug 2019 21:03:37 +0200
+Message-ID: <CAPnzP1Bweoo7ggsrzuYFJPfiHyLJvxkysSmTDKAmqubV0UhmwA@mail.gmail.com>
+Subject: Re: [opensport] Maintainer openfootball/es-espana
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary="0000000000003cf4300590e195d3"
+
+--0000000000003cf4300590e195d3
+Content-Type: text/plain; charset="UTF-8"
+
+Thanks for your reply.
+
+Yes I saw football.csv site, which has a nicer format but unfortunately it
+contained only historical data and I'm more interested in the current
+season: I maintain a web page dedicated to a second league team (Racing
+Santander) and I'm trying to automatically update the time for the matches
+and the results of the current season.
+
+Since I have to do the scraping anyway I thought it might be a good idea to
+share the results in football.db.
+
+But as I understand now the idea is to integrate everything in the
+football.csv, so I guess I picked the wrong dataset.
+
+Kind regards
+
+Max Tuni <https://maxtuni.es>
+
+
+On Sat, Aug 24, 2019 at 8:51 PM Gerald Bauer <gerald.bauer@gmail.com> wrote:
+
+> Hello,
+>    Welcome to football.db. Again thanks for your contributions.  Yes,
+> the repo gets updated mostly by hand - the idea is to make it work
+> like wikipedia / like a wiki and over time add more information e.g.
+> goals, etc.
+>
+>   For auto-generated / auto-updated / auto-formated match datafiles
+> there's the sister project called football.csv, see
+> https://github.com/footballcsv    so that might a better fit for your
+> ideas / scripts.
+>
+>   For now the football.csv get sourced from Joseph Buchdahl's Football
+> Data website
+> that gets updated twice a week and includes the secunda division too
+> (as far as I can remember), see
+>
+> https://github.com/yorobot/football.csv/tree/master/sportdb-source-footballdata
+>
+>    Sorry that I don't have an easy yes or no answer.  Yes,
+> auto-updates are welcome for football.csv  (but for now not for
+> football.db) - in the next months the football.csv will, of course,
+> sync and double-check hand-edited datafiles - but sorry for now the
+> focus is on improving the football.csv  auto-update infrastructure.
+>
+>    The football.csv format is designed for automation and processing
+> with scripts.  Not sure if that makes sense.  Again you're welcome to
+> join and help or since the project is by design decentralized you're
+> welcome to keep your own datasets up-to-date and we can sync or share
+> from time to time.      Not sure if that makes sense.   Cheers. Prost.
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit
+> https://groups.google.com/d/msgid/opensport/CAAxEZd_xQQem8_GLQXEiNsAGimGT5EuJLJFy5sdGZhPMaR1zuQ%40mail.gmail.com
+> .
+>
+
+--0000000000003cf4300590e195d3
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Thanks for your reply. <br></div><div><br></div><div>=
+Yes I saw football.csv site, which has a nicer format but unfortunately it =
+contained only=20
+historical data and I&#39;m more interested in the current season: I mainta=
+in a
+ web page dedicated to a second league team (Racing Santander) and I&#39;m=
+=20
+trying to automatically update the time for the matches and the results of =
+the current season. <br></div><div><br></div><div> Since I have to do the s=
+craping anyway I thought it might be a good=20
+idea to share the results in football.db. <br></div><div><br></div><div>But=
+ as I understand now the idea is to integrate everything in the football.cs=
+v, so I guess I picked the wrong dataset.<br></div><div><div dir=3D"ltr" cl=
+ass=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"=
+><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><br></div><div>Kind regar=
+ds</div><div><br></div><div><a href=3D"https://maxtuni.es" target=3D"_blank=
+">Max Tuni</a></div></div></div></div></div></div></div></div><br></div><br=
+><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Sat, A=
+ug 24, 2019 at 8:51 PM Gerald Bauer &lt;<a href=3D"mailto:gerald.bauer@gmai=
+l.com">gerald.bauer@gmail.com</a>&gt; wrote:<br></div><blockquote class=3D"=
+gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(20=
+4,204,204);padding-left:1ex">Hello,<br>
+=C2=A0 =C2=A0Welcome to football.db. Again thanks for your contributions.=
+=C2=A0 Yes,<br>
+the repo gets updated mostly by hand - the idea is to make it work<br>
+like wikipedia / like a wiki and over time add more information e.g.<br>
+goals, etc.<br>
+<br>
+=C2=A0 For auto-generated / auto-updated / auto-formated match datafiles<br=
+>
+there&#39;s the sister project called football.csv, see<br>
+<a href=3D"https://github.com/footballcsv" rel=3D"noreferrer" target=3D"_bl=
+ank">https://github.com/footballcsv</a>=C2=A0 =C2=A0 so that might a better=
+ fit for your<br>
+ideas / scripts.<br>
+<br>
+=C2=A0 For now the football.csv get sourced from Joseph Buchdahl&#39;s Foot=
+ball<br>
+Data website<br>
+that gets updated twice a week and includes the secunda division too<br>
+(as far as I can remember), see<br>
+<a href=3D"https://github.com/yorobot/football.csv/tree/master/sportdb-sour=
+ce-footballdata" rel=3D"noreferrer" target=3D"_blank">https://github.com/yo=
+robot/football.csv/tree/master/sportdb-source-footballdata</a><br>
+<br>
+=C2=A0 =C2=A0Sorry that I don&#39;t have an easy yes or no answer.=C2=A0 Ye=
+s,<br>
+auto-updates are welcome for football.csv=C2=A0 (but for now not for<br>
+football.db) - in the next months the football.csv will, of course,<br>
+sync and double-check hand-edited datafiles - but sorry for now the<br>
+focus is on improving the football.csv=C2=A0 auto-update infrastructure.<br=
+>
+<br>
+=C2=A0 =C2=A0The football.csv format is designed for automation and process=
+ing<br>
+with scripts.=C2=A0 Not sure if that makes sense.=C2=A0 Again you&#39;re we=
+lcome to<br>
+join and help or since the project is by design decentralized you&#39;re<br=
+>
+welcome to keep your own datasets up-to-date and we can sync or share<br>
+from time to time.=C2=A0 =C2=A0 =C2=A0 Not sure if that makes sense.=C2=A0 =
+=C2=A0Cheers. Prost.<br>
+<br>
+-- <br>
+You received this message because you are subscribed to the Google Groups &=
+quot;opensport&quot; group.<br>
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:opensport%2Bunsubscribe@googlegroups.com" target=
+=3D"_blank">opensport+unsubscribe@googlegroups.com</a>.<br>
+To view this discussion on the web visit <a href=3D"https://groups.google.c=
+om/d/msgid/opensport/CAAxEZd_xQQem8_GLQXEiNsAGimGT5EuJLJFy5sdGZhPMaR1zuQ%40=
+mail.gmail.com" rel=3D"noreferrer" target=3D"_blank">https://groups.google.=
+com/d/msgid/opensport/CAAxEZd_xQQem8_GLQXEiNsAGimGT5EuJLJFy5sdGZhPMaR1zuQ%4=
+0mail.gmail.com</a>.<br>
+</blockquote></div>
+
+--0000000000003cf4300590e195d3--
+

@@ -1,0 +1,127 @@
+From 6603188821784788992@xxx Thu Sep 20 06:25:04 +0000 2018
+X-GM-THRID: 6603186617065668608
+X-Received: by 2002:aa7:d5ca:: with SMTP id d10-v6mr485590eds.2.1537424703978;
+        Wed, 19 Sep 2018 23:25:03 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a50:add4:: with SMTP id b20-v6ls737495edd.7.gmail; Wed, 19
+ Sep 2018 23:25:03 -0700 (PDT)
+X-Google-Smtp-Source: ANB0VdadVKk52Or+ocfDI+lVRSVbfgSH723XGpFtKWcDucj9I+5esyQ+M/vKeZlTNoeKY7kZKlhx
+X-Received: by 2002:a50:b1db:: with SMTP id n27-v6mr471197edd.10.1537424703316;
+        Wed, 19 Sep 2018 23:25:03 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1537424703; cv=none;
+        d=google.com; s=arc-20160816;
+        b=oMSBS2yYTV2k6sOzT1DR6OSiQGbNjVAt+y3AOQYTCW4wLxXo536i9UfM6dJN40FHWg
+         ++qBadZcmOJleVsU3Uc1eXL4phar7fpLayKpyCPT0nAf4xgP0HzZdIU5BkHm4drSDaex
+         kj9M20IESO0R5XGpt9W+8crZ2sJKa2ElhNzEugTyWTsmpSJGNm9UCmVLabcecx5ULcgF
+         cszhkigbofVxy7UEm5UA6XLtM1/iPicHA/KswxGu5uSWn9zhmNxfjr6I/yLq9VQ0YXZa
+         9zXJkeRR9bu6ROIONHx7lP46yowug88zC1Pl2Xq0nPjn32TzdiPELOtkkjQRmN4RlBdY
+         vufw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=qPXYQlGs7snFg0Jn26QIjiXws1T9zJIDEZqB4PcBRmE=;
+        b=Qd3rqdTjsElncxA872/EYYaYCYVDGwXI5u3fhyyELTwjkQeiGoNLZ8HolH1uBvzV0x
+         cL1Qfk6kMPOt7vlGgaW6zPDRucFgIcTowSePH52Mec5aDE4vgAzyLuQcBq3mc/6ZxwBy
+         Mght8KxRhrn4BNXwEMEnSJhYh7S9Ai8TOU4oVb3d++jXSnGnasGYZea4yxJ6GZ8j0ZNY
+         EPUFxJsd1IoX11x4yqaU4t9ssI4oebFfY/xZ8XACnn2ifcgC7dijVwQ78JS9nKBcnsiT
+         xYjnwJpo/pxg4DJEYPVcJFJXGBgeeWr7xGav5FIGbSy86xB2zLe3Zsv1hC99IHlmSmne
+         t1yA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=uI191+3i;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x136.google.com (mail-lf1-x136.google.com. [2a00:1450:4864:20::136])
+        by gmr-mx.google.com with ESMTPS id b23-v6si31994edn.1.2018.09.19.23.25.03
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 19 Sep 2018 23:25:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) client-ip=2a00:1450:4864:20::136;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=uI191+3i;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x136.google.com with SMTP id l26-v6so7276833lfc.8
+        for <opensport@googlegroups.com>; Wed, 19 Sep 2018 23:25:03 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=qPXYQlGs7snFg0Jn26QIjiXws1T9zJIDEZqB4PcBRmE=;
+        b=uI191+3iv1T/B1yxacjsmnprmX3/KohZM4g1HiynetP6WldcX58/mDUcmlqMCN5Pz/
+         pJC03zP00OYON7zPEfq+XbRSkE7IDlvM4L5rKRkyiBsKdkfe/S8IQM7s1C/nLVbfxQ+A
+         4TgO0K0sOJgd2va8hEcFGAEQhfblRmWXbfCmJl2h3IP/5lCWnpaUZBUE/Xwsye91BvbF
+         BLFtEpjpJzxFdRnJ9IxsELMseu/vHSlESXC2PgZH1aH6byhGxWlZsqEf7McvKYvDEOOc
+         5p+XgozOempaM8T/ZuxOCqyC/gjrLI0vPmMk06cItffaXVeOAU+pQ6d+n78x65Sp5n/P
+         eMMg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=qPXYQlGs7snFg0Jn26QIjiXws1T9zJIDEZqB4PcBRmE=;
+        b=rjMSeMyHIVlilEczoy0Ym9kw8JYCY6pcIjwPVjFWWAKbtW5CQbC8S3erABE1O9yp5H
+         MXemI/kjiyJhgyuJAcvgSjFGClCjM5VSPIffQA7PD6WuF4aD6GW48fGFrrnj34b5djT1
+         F+6tw7e6pQEBchsFWiS2LtfQJ7ZMXPrOTGjBB1rkSP0nP+wuU59TS43CDG/6wTbdaIFc
+         PoeXTHIJvxkVQBY6IoB+ydKhYNsbMfJDKXHLQ/o/De7HiuTx9XrWZazwANRDWdyUpd3C
+         a7xQEGP02hLqVkM3FQP4BbFxSDJQPYkke8PMaV3O0Q7VY4nXhGOD02DIWy1FK86hqdcv
+         80nA==
+X-Gm-Message-State: APzg51A0dhgJK2S3+Fi8vib2KHeejtlPV0765T/zh9xkP04CpdZSK+Vt
+	7Q5bciGBT22LYIdAGxRfuMs0hpQUCvv8zZgykykphclP
+X-Received: by 2002:a19:124b:: with SMTP id h72-v6mr11509802lfi.72.1537424702460;
+ Wed, 19 Sep 2018 23:25:02 -0700 (PDT)
+MIME-Version: 1.0
+References: <a509dfa8-e97a-4904-aaef-536f79472122@googlegroups.com>
+In-Reply-To: <a509dfa8-e97a-4904-aaef-536f79472122@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 20 Sep 2018 08:24:49 +0200
+Message-ID: <CAAxEZd8ChvHrw_U6JvcuSW7sNEmx1AB+YfQvey9xABokD91Sqg@mail.gmail.com>
+Subject: Re: [opensport] Brazilian Leagues
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+    Thanks for your kind word. Welcome to football.db.
+
+     Sorry the /br-brazil repo [1] or results are currently without
+maintainer / updates. Thanks to Rafael Pereira [2] for adding most of
+the match schedules and results (in the past).
+
+    The repo is setup to be "self-contained", that is, all you need is
+the clone the single country repo and than use the Datafile [3] to
+build a copy e.g.
+
+   $ cd br-brazil
+   $ cat Datafile        # check Datafile, that is, build script
+   $ sportdb build     #  will use (default) to the "local" Datafile
+
+  That's it. The readme also has instructions :-). Cheers. Prost.
+
+[1] https://github.com/openfootball/br-brazil
+[2] https://github.com/rlpereira
+[3] https://github.com/openfootball/br-brazil/blob/master/Datafile
+El jue., 20 sept. 2018 a las 8:16, Marcos Perez
+(<marcos.tengelmann@gmail.com>) escribi=C3=B3:
+>
+> Hi,
+>
+> First of all I am impressed with the amount of information and effort tha=
+t was put into this project. Amazing and Congratulations for the good work.
+>
+> I am trying to undertand how I can get and build a DB with Brazilian leag=
+ues results. I mean the repos I have to clone and steps I have to make in o=
+rder to build the database that I want, and also if there is anyone maintai=
+ning Brazilian results.
+>
+> Thanks
+>
+> --
+> You received this message because you are subscribed to the Google Groups=
+ "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an=
+ email to opensport+unsubscribe@googlegroups.com.
+> To post to this group, send email to opensport@googlegroups.com.
+> Visit this group at https://groups.google.com/group/opensport.
+> For more options, visit https://groups.google.com/d/optout.
+

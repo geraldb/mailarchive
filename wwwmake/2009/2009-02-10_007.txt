@@ -1,0 +1,47 @@
+From 438889873408@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 421630312448
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,d4f0359cf6240f62
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.86.96.18 with SMTP id t18mr166969fgb.6.1234264959499;
+        Tue, 10 Feb 2009 03:22:39 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from fk-out-0910.google.com (fk-out-0910.google.com [209.85.128.184])
+        by mx.google.com with ESMTP id 5si1132559fge.12.2009.02.10.03.22.39;
+        Tue, 10 Feb 2009 03:22:39 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.128.184 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.128.184;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.128.184 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by fk-out-0910.google.com with SMTP id 19so1849868fkr.10
+        for <webslideshow@googlegroups.com>; Tue, 10 Feb 2009 03:22:39 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.181.215.9 with SMTP id s9mr1308086bkq.212.1234264958903; Tue, 
+	10 Feb 2009 03:22:38 -0800 (PST)
+In-Reply-To: <f235cb22-d26a-4662-9532-48f27510de38@40g2000prx.googlegroups.com>
+References: <701271e9-29a6-4c88-b92b-ebae30281edc@n33g2000pri.googlegroups.com>
+	 <1f058eab0902062321w28470847y3595ed9587864ed8@mail.gmail.com>
+	 <f235cb22-d26a-4662-9532-48f27510de38@40g2000prx.googlegroups.com>
+Date: Tue, 10 Feb 2009 12:22:38 +0100
+Message-ID: <1f058eab0902100322t312158efs97e2570b5bf907b6@mail.gmail.com>
+Subject: Re: [slideshow] Re: s6 documentation?
+From: Gerald Bauer <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+> Yeah, I noticed that the css is a little cleaner and easier. (I just
+> tried to tweak the layout of the original s5 and it was a pain in the
+> rear :-) ).
+>
+> However, I didn't notice an incremental class? How is that implemented
+> in s6 -- I wanted to show one bullet at a time, how would I do that in
+> s6?
+
+   Incremental display is not yet added to the S6 package. If you're
+not in a rush I try to add it next week. Otherwise, you're, of course,
+always more than welcome to add it yourself.
+
+  Cheers.
+

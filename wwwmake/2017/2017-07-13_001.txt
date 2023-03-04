@@ -1,0 +1,113 @@
+From 6442325031075708928@xxx Thu Jul 13 18:31:23 +0000 2017
+X-GM-THRID: 6442325031678640128
+X-Received: by 10.13.194.196 with SMTP id e187mr2740703ywd.39.1499970683304;
+        Thu, 13 Jul 2017 11:31:23 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.107.143.88 with SMTP id r85ls5569620iod.5.gmail; Thu, 13 Jul
+ 2017 11:31:22 -0700 (PDT)
+X-Received: by 10.99.124.9 with SMTP id x9mr7253297pgc.119.1499970682749;
+        Thu, 13 Jul 2017 11:31:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1499970682; cv=none;
+        d=google.com; s=arc-20160816;
+        b=GHnn/6DUDEblE5081HlRF5A7ekcSnnNindBW1r9rbb/138D+bwWGfjh+bOORIVKt4/
+         md9WBMLwZNZmDUjA/hIYw6+gAQGH1EA3yJBupltwwpCiRBSfk7nHChN+ExwvO6Rnfrp4
+         tbThljPnlxswxlMnmgWiDDcM3gYVymsoIWXxf3BLfctor69LYbTJPfgPf4fFxd8a5I/o
+         6eiKI4BUAjW/W6Qx8uv06Cl2YRSJEcZXjpDiOs3nhIqAeDpaX43BnwT9Lt1+YIdDE4Qo
+         +psZJ212dkJ7jlW4L4usJ/69ZWRYCOHUwehp4E1JoeWDtjunY0v8J0Nvz2uD0McjUNyy
+         P5aQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :mime-version:dkim-signature:arc-authentication-results;
+        bh=KkHDuMdyhR5+IeehXtOuhhDQEbOb5HWZVPIx1ikeFlw=;
+        b=M04m2WJVuVKW8h+74Ek/yg8Vn/XG/AxToCIAffuqlpVhShtYKyUaRN3zNZvpaPd2Bw
+         itwR6HQcA4DwXWBtaRuMHu5KZ49pRDDV17q7s0ZHuo/8+nmuH/uSFpz2CgYsADzG0EaZ
+         BWbcKxwbaDOHlBVb3swXV5Z5s2Ih+nXc5RU6rnGMNK1cNJlcTOJDsgxzxggnu4hPmLkD
+         UuycjEjwq/UbG754sOx4Ddfpsob8UjsDkFOatUWAQo+GJFdMby6S+I6OpA1kFyJRxU7I
+         8kLl81n9d7OpkjznYXmjXqYOpQPscI/D4j2+n9iLHtDOCoJcR1kVGl6iPc0sBc76ncgh
+         ORww==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=rj5SOKu/;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x236.google.com (mail-it0-x236.google.com. [2607:f8b0:4001:c0b::236])
+        by gmr-mx.google.com with ESMTPS id t139si113470itb.1.2017.07.13.11.31.22
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 13 Jul 2017 11:31:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::236 as permitted sender) client-ip=2607:f8b0:4001:c0b::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=rj5SOKu/;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x236.google.com with SMTP id m68so973647ith.1
+        for <wwwmake@googlegroups.com>; Thu, 13 Jul 2017 11:31:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=KkHDuMdyhR5+IeehXtOuhhDQEbOb5HWZVPIx1ikeFlw=;
+        b=rj5SOKu/1gUfEIIiqgRtABKigHJwX82E0aE9F5cbIBEpC+/DN3t+FTA1mYIoU1DqHA
+         RDS6T4/gXneDh9wK7iXo34W3MKuFBy/abebs5yF62E2OUgGJRlDYZJTr+ziLVrozFZTS
+         yPUZBW6S2BJQxhuw5J+4KpOfJ8zlVVGgO4oqPdMBVqevvSJBgykR6IeBqdy1+/+Kc0k9
+         +OtNt//6mGXs4QH8uA7Qh3rPqHF3CEPCBFbI38ZQ4cOfIofIFC9gwRfMENtamQEdyPYJ
+         HjlLFCAPv5hA++ULRxVM9pmO/mxaWrUtFKKi72at0UGeBSMYId1vxYvy5TrLTJV2rRWO
+         lruQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=KkHDuMdyhR5+IeehXtOuhhDQEbOb5HWZVPIx1ikeFlw=;
+        b=iHjZqBwAZcWTJShgQ4bw6a9Vw/+kW4fJKJlA65IxFvne4P39xAeBUyiOUB0ORRR5XN
+         fPcpUG64MfuppmuuXLtojbzxMhAErDJjXQx2C2s3B6vn6CaVnzR2v9PwgZPzA6KcSKxv
+         /CjokYnyFY6ILbaAQPfPygm+vzBlZwCzX9kg1AVWavOUYxtIH4MRM1fhX9FPdGmEiW7x
+         c+EwYlqm8++nT01LM1GeWiXM03CMyysJUxHmpLozyMNi3wyB0KPn5qQb5uWtEwZ3dwz9
+         cRISJ1gwzFjbkRARkajgImrMoaEJ5WjeuniDo7sPqBjeF5lRZchmRYdL8RhOk0RJT8aH
+         2stg==
+X-Gm-Message-State: AIVw110TxVzxTmkCzCyySFEJB39BOLdK7LkJB5eJPR4tcAu1oToSn8hw
+	xIJoqo1qBTRcpD/kqHs0h1QEanVJiM+D
+X-Received: by 10.107.27.210 with SMTP id b201mr4766005iob.76.1499970682310;
+ Thu, 13 Jul 2017 11:31:22 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.4.17 with HTTP; Thu, 13 Jul 2017 11:31:21 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 13 Jul 2017 20:31:21 +0200
+Message-ID: <CAAxEZd-SavrBvawXhzHk36Eo_nfiB0vhqM6KsSPWV5FojLUecg@mail.gmail.com>
+Subject: JSON: 1.1 # JSON with Extensions (JSONX) - New JSON (Next) Format w/
+ json-next (formerly jasony) library
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   One more JSON news byte: I've updated the JSON readers library now calle=
+d
+json-next [1], formerly jasony.
+
+  What's news?
+
+   The latest (and greatest) next generation JSON parser / reader
+included is a world-wide ruby's 1st - `JSONX.parse` for the new JSON:
+1.1 # JSON with Extensions (JSONX) [2] format.  Using JSONX you can
+use all the JSON extension of HanSON (JSON for Humans) and SON (Simple
+Object Notation) and some more e.g. use Ruby (Shell)-like #-comments,
+unquoted keys, optional commas, and much more.
+
+  Note: `JSONX.parse` is the same as `JSON.parse(
+JSONX.convert(text))`, that is, JSONX works like a preprocessor for
+JSON.
+
+Cheers.
+
+
+PS: What=E2=80=99s your favorite JSON format? e.g. =E2=80=9CVanilla=E2=80=
+=9D JSON 1.0 or JSON5
+or HJSON or HanSON or SON or CSON or USON or JSONX/JSON11/JSON
+XI/JSONII ?
+
+
+[1] https://github.com/jsonii/json-next  or https://rubygems.org/gems/json-=
+next
+[2] https://jsonii.github.io
+

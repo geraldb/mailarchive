@@ -1,0 +1,90 @@
+From 6895300699785003008@xxx Sun Nov 15 10:48:21 +0000 2020
+X-GM-THRID: 6895300700309291008
+X-Received: by 2002:a19:be14:: with SMTP id o20mr3932932lff.453.1605437300579;
+        Sun, 15 Nov 2020 02:48:20 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a2e:9b9a:: with SMTP id z26ls1903224lji.7.gmail; Sun, 15 Nov
+ 2020 02:48:18 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJwotKbY2R7tbXw4XdPvfxR+kpSXRyimFb32DJ7jdSbZEqvfddFYHJttTxOtXZhSuPXmlpvi
+X-Received: by 2002:a2e:9654:: with SMTP id z20mr4698498ljh.267.1605437298797;
+        Sun, 15 Nov 2020 02:48:18 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1605437298; cv=none;
+        d=google.com; s=arc-20160816;
+        b=pMawA2NUiVvOfgPyuaRKTwhrncl6sYRSnCtEgWWVDhv9ZUPCcwCvjbtRODL1omP7rf
+         4trd3SNI3uWrtv3uDwSkwV65bgmS0ihbZI2OrXt3k0ng0zHf2NH8B4vDnUHOHiHqEcy3
+         kXdoa24LZx2tvr38uRRzSiEmm6G8+cY+wdlY+Kxw6DcRWqY7fTkGSBYNHVvmuCZbztUm
+         mrMv9VDgsOHqZCidwpyCd73I4MsUiAghi2zY2RO8a2MlfIX5oE0Xmww3Ne4Wwy9A2u4Q
+         TXtVmrQMr4WmVcu4FLci8iTUn8Gs4hHsNLkA8EZyzz+4yLaoEyhj8DZv+nTLfRAMGQA6
+         pHnQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=dRTrFkR//JDo1FwjyyMWr2W5j4AyX1tswDehILABCMk=;
+        b=HkiwliKrBr7TOPoWfBd3iadY146UiLYbrBHmgAN5Lljul9ZklEwnqvKPC3QFSRY9Sy
+         Xu+frnP3c4qmQthiuDh/fS3vcL4e8wOsp0DdVmGeojdH/iUVZvsgtsf8uxVJWiA08pAk
+         F2nvXcZ9bJpPRd07bIPrUH8bXOVwM4MED/nzPKxjfu5gqsE5zNjXgR7uB1AtZ+IyfcBn
+         vYmHXAsluyQcf/IEXcFeQGoBoDECWb/vJL4uZyn+Gicu9QxYkIRzz8FUgBnaIz6wPWCO
+         R6m5m4snFmvXQjzGHSZXDrYn1Lu+QGWddyS5g+9esj9YuNRmysf5Td/o0FCSG55/uKqg
+         vpeQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=WR7fmSZe;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ej1-x62f.google.com (mail-ej1-x62f.google.com. [2a00:1450:4864:20::62f])
+        by gmr-mx.google.com with ESMTPS id f28si415509ljp.3.2020.11.15.02.48.18
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 15 Nov 2020 02:48:18 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62f as permitted sender) client-ip=2a00:1450:4864:20::62f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=WR7fmSZe;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ej1-x62f.google.com with SMTP id f23so20283375ejk.2
+        for <opensport@googlegroups.com>; Sun, 15 Nov 2020 02:48:18 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=dRTrFkR//JDo1FwjyyMWr2W5j4AyX1tswDehILABCMk=;
+        b=WR7fmSZe5w6Qq5gsIxoxJyeEilF12JLc59SZaP6NaR9hCnY8a/CNPQ0SIk/Xk1w1uF
+         sEBrjKsbixztCYhOPhYv0Q3B+2NTh3xfgnGhec85MNLxm4VBJ8gs4di4nJofu5A9lKwx
+         Wn6tdQeM3U+KcHTZdbbRHYtjv8tUSZhyJ9etnI9AyA96deN99z1wvmXbv4oGqW5loWDl
+         VIUEu2VAoMWBcLpdaAOdQeQzHJfi8AANvwodzUCvaFsvl24qLg936KGwkgAmY89Dkt5v
+         v2w4jKsolUhDjphLDd7DFnZMgX+YtCWLH78CcBrDcTjStpXNNJgEh0rfoGH+AMtSYMER
+         PVyg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=dRTrFkR//JDo1FwjyyMWr2W5j4AyX1tswDehILABCMk=;
+        b=t+BW5ITsZwdlbOCtTQCzZWLlaPpuOOYBPAF8U8/1NcTa5N19W0vLUGKBZDvsRZ/NiV
+         LrPKI5IDV6LdHMDVSAXlsjFl20J82RCQb98eYUe6oSogq6z5iIIij/eCg2WlqO7GS1mC
+         5kRxbCaFwjt6LOaOSthUmUPvAVQBwY8SsJ0G0GgQrey6inqmYyeQM+Tfkuxa+bB3fW2R
+         /f6q72kClbvXIe6Z07hl52WPMGe1Y5c99mjIKy1+7e/pAIRi+lXoXCeB1e17T2ZO9xh9
+         oyKRXEP37qovZOVR3cuHGn0CRu4lOALJnkpZq/5oHk2N/0obUCY9GP4KOoWIvuecGogw
+         lxJw==
+X-Gm-Message-State: AOAM531hQyleGYRPDxpz6PNsjfJFPAkVBzCOkSzW0uwJ5Usz8qP0tOyS
+	7KZATuaPitCxWyvoKWPPpiZijFCu4FJwDhBMqyaiNFoY6bDsUQ==
+X-Received: by 2002:a17:906:94d4:: with SMTP id d20mr9767779ejy.392.1605437298244;
+ Sun, 15 Nov 2020 02:48:18 -0800 (PST)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 15 Nov 2020 11:48:05 +0100
+Message-ID: <CAAxEZd-donQdX8L004BjjE47-BOKUFahY_d-zfmKCZ0LDntV3w@mail.gmail.com>
+Subject: new football-cat scripts / tool - concatenate football.csv datafiles
+ - make out of many, one (for easy (re)use or imports)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  I have put together the new little football-cat tool / script [1]
+that lets you concatenate match files (for clubs or national teams)
+in the one-line, one-match & one-file, one-season Football.CSV format
+into one PLUS (auto-)adding the missing league and season headers / columns
+inferred from the file's basename (e.g. es.1.csv => ES1)
+and the file's directory (e.g. /2020-21/ => 2020/21), for example.
+
+  Happy data wrangling. Enjoy the beautiful game. Cheers. Prost.
+
+[1] https://github.com/sportdb/football.db/tree/master/football-cat
+

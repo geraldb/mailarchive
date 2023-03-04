@@ -1,0 +1,58 @@
+From 355219800064@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 354129281024
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,5b14052e84fffe4a
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.222.74 with SMTP id s70mr14196328yhp.54.1418408015316;
+        Fri, 12 Dec 2014 10:13:35 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.81.149 with SMTP id f21ls1745006qgd.73.gmail; Fri, 12 Dec
+ 2014 10:13:35 -0800 (PST)
+X-Received: by 10.52.116.148 with SMTP id jw20mr9337702vdb.7.1418408015227;
+        Fri, 12 Dec 2014 10:13:35 -0800 (PST)
+Received: by 10.50.45.71 with SMTP id k7msigm;
+        Fri, 12 Dec 2014 08:52:53 -0800 (PST)
+X-Received: by 10.50.30.202 with SMTP id u10mr93648igh.6.1418403173469;
+        Fri, 12 Dec 2014 08:52:53 -0800 (PST)
+X-Google-Doc-Id: 8172f1824294328a
+X-Google-Web-Client: true
+Date: Fri, 12 Dec 2014 08:52:52 -0800 (PST)
+From: Jane Heather Dee <jane.buzzlightyear@gmail.com>
+To: openmundi@googlegroups.com
+Message-Id: <7e727ad0-b397-41ad-a58e-f6bd1440e830@googlegroups.com>
+Subject: [TagDb.has_many_tags]  warning
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_79_1416513325.1418403172607"
+X-Google-Token: EOS6rKQFHBHjsfv2e9E0
+X-Google-IP: 114.108.232.60
+
+------=_Part_79_1416513325.1418403172607
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_80_335742633.1418403172607"
+
+------=_Part_80_335742633.1418403172607
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+How do I remove this warning? It appears everytime i run Rails console or 
+rSpec tests..
+
+activerecord-utils/0.2.0 (activerecord/4.1.8) on Ruby 2.1.1 (2014-02-24) 
+[x86_64-darwin12.0]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Region<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::City<
+
+------=_Part_80_335742633.1418403172607
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">How do I remove this warning? It appears everytime i run Rails console or rSpec tests..<div><br></div><div><div>activerecord-utils/0.2.0 (activerecord/4.1.8) on Ruby 2.1.1 (2014-02-24) [x86_64-darwin12.0]</div><div>&nbsp; [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Model::Country&lt;</div><div>&nbsp; [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Model::Region&lt;</div><div>&nbsp; [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Model::City&lt;</div></div></div>
+------=_Part_80_335742633.1418403172607--
+------=_Part_79_1416513325.1418403172607--
+

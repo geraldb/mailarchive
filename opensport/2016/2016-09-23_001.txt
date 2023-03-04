@@ -1,0 +1,94 @@
+From 6333552685162168320@xxx Fri Sep 23 15:39:08 +0000 2016
+X-GM-THRID: 6331933113927598080
+X-Received: by 10.237.53.90 with SMTP id b26mr1599732qte.8.1474645148161;
+        Fri, 23 Sep 2016 08:39:08 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.34.18 with SMTP id o18ls8983383ota.40.gmail; Fri, 23 Sep
+ 2016 08:39:07 -0700 (PDT)
+X-Received: by 10.13.210.129 with SMTP id u123mr1711187ywd.148.1474645147742;
+        Fri, 23 Sep 2016 08:39:07 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22c.google.com (mail-it0-x22c.google.com. [2607:f8b0:4001:c0b::22c])
+        by gmr-mx.google.com with ESMTPS id u125si365735itc.0.2016.09.23.08.39.07
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 23 Sep 2016 08:39:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22c as permitted sender) client-ip=2607:f8b0:4001:c0b::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22c.google.com with SMTP id o3so18278728ita.1
+        for <opensport@googlegroups.com>; Fri, 23 Sep 2016 08:39:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=KwyYSgur6hlWJPI8WlztEdjO1lLkqNZICPgLgD5RBW4=;
+        b=qkoiDw5QU5YQxD5vNtkUBAptQO39yS6l4S+nvAC6iwSarO2WeQASw7hNbK3mu0L4iK
+         0FRMBs2KtTwM13j1HSLkRYkVhbKt2LBX3MiUF3HBhUlbF5EhKwfqrinCS8ENcCySoKst
+         FGuW5AJjzyHNGkyihmEcHvVvlOL0rnb1tioan49BQQH3YW9xKk2Icjdf6PC4SidNfeYM
+         p6fsnKiwn7g3w6PPf6c3nUALa2gd09kC1xduECnY68ru8c3y3/7c+nAjCzE9KYYi9M2E
+         yrnwJ3DpkCHG692WJCXsQOuHpYRuLArMMs9fyFjqVLws9VPh/a0i+921C+jQdR5TN+O9
+         u35g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=KwyYSgur6hlWJPI8WlztEdjO1lLkqNZICPgLgD5RBW4=;
+        b=fJZ5cxPj0T/uWHvdZ//hebSg9SNSmDGtUAUqHVYFQbRmWb5+O2TmPNCzI0ghPBO+M2
+         pomOp9jewUf8rS2MxIleWk2tQ+DyZTYbYsN5iV198BUKEeUYqn6PxiqKlXkQnBTAX7f3
+         p07mCYXSZPeMtQSDAp/IAIuEIqiyPRgq8BjkoP0Kf58gsiMTeLlkuKgnDr09DIXw9ACA
+         hMLHtd7ElTx4ZT6Un5ToBMSQH5cFeMILc9Lc4yKs3ZGvbVGzU+hsC0E+pB1D0LWiQiT/
+         m6Qgss/aRHO2gmAs3LIjlOpVeF/FssD/zkjomZjMc/ueHkuaEfWqX2qsNMqgjCWcu024
+         zCLQ==
+X-Gm-Message-State: AA6/9Rnh3Kl1g7Knxhssmw+u34GSeDns9v8EelQk8ctyAJGoJPVl/p0z5+NAnQbj2qROfzhdrEnfcnPMCVI2Rw==
+X-Received: by 10.36.108.84 with SMTP id w81mr4116120itb.20.1474645147125;
+ Fri, 23 Sep 2016 08:39:07 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.168.231 with HTTP; Fri, 23 Sep 2016 08:39:06 -0700 (PDT)
+In-Reply-To: <b313a724-2004-4bdd-b873-a831f59c2fcb@googlegroups.com>
+References: <b313a724-2004-4bdd-b873-a831f59c2fcb@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 23 Sep 2016 17:39:06 +0200
+Message-ID: <CAAxEZd_8-GPtnwGpmJJtv6C+2ZaCJP=rwX-M-G1xuKcKfX=02A@mail.gmail.com>
+Subject: Re: [opensport] How to contribute?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+  FYI: I've updated the match day 5 in the source [1]. It looks like:
+
+Matchday 5
+[Fri Sept/16]
+  Chelsea FC 1-2 (0-2) Liverpool FC @ Stamford Bridge, London
+    [Diego Costa 61'; Lovren '17 J. Henderson '36]
+[Sat Sept/17]
+   Hull City 1-4 (0-1) Arsenal FC @ Kingston Communications Stadium, Hull
+    [Snodgrass '79 (pen.); A. Sanchez 17', 83' Walcott 55' Xhaka 90+2']
+   Leicester City 3-0 (1-0) Burnley FC @ King Power Stadium, Leicester
+    [Slimani 45+1' Slimani 48' Mee 78' (o.g.)]
+   Manchester City 4-0 (2-0) AFC Bournemouth @ Etihad Stadium, Manchester
+    [De Bruyne '15 Iheanacho '25 Sterling '48 G=C3=BCndogan '66]
+   West Bromwich Albion 4-2 (3-0) West Ham United @ The Hawthorns, West Bro=
+mwich
+    [Chadli 8' (pen.), 56' Rondon 37' McClean 44'; Antonio 61' Lanzini
+65' (pen.)]
+   Everton FC 3-1 (3-1) Middlesbrough FC @ Goodison Park, Liverpool
+     [Barry 24' Coleman 42' R. Lukaku 45+1'; Stekelenburg 21' (o.g.)]
+[Sun Sept/18]
+  Watford FC 3-1 (1-0) Manchester United @ Vicarage Road, Watford
+    [Capoue 34' Zuniga 83' Deeney 90+5' (pen.); Rashford 62']
+  Crystal Palace 4-1 (2-0) Stoke City @ Selhurst Park, London
+    [Tomkins 9' Dann 11' McArthur 71' A. Townsend 75'; Arnautovic 90+4']
+  Southampton FC 1-0 (0-0) Swansea City @ St. Mary's Stadium, Southampton
+    [Austin 64']
+  Tottenham Hotspur 1-0 (0-0) Sunderland AFC @ White Hart Lane, London
+    [H. Kane 59']
+
+  You're welcome to join in / help out. Cheers.
+
+[1] https://github.com/openfootball/eng-england/blob/master/2016-17/1-premi=
+erleague-i.txt
+

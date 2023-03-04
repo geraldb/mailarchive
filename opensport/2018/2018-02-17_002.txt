@@ -1,0 +1,97 @@
+From 6523566590524391424@xxx Sat Feb 17 16:50:08 +0000 2018
+X-GM-THRID: 6523565184424869888
+X-Received: by 10.36.93.81 with SMTP id w78mr7419969ita.28.1518886208693;
+        Sat, 17 Feb 2018 08:50:08 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.36.29.16 with SMTP id 16ls944287itj.4.gmail; Sat, 17 Feb 2018
+ 08:50:07 -0800 (PST)
+X-Google-Smtp-Source: AH8x226YUBZAnIjo93h+LgwHIuGAttO6fhgAkqVZ4RX0Si+qYEkStyHfXrofUxeLhoZAkiDCpY7d
+X-Received: by 10.36.47.131 with SMTP id j125mr7314783itj.40.1518886207942;
+        Sat, 17 Feb 2018 08:50:07 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1518886207; cv=none;
+        d=google.com; s=arc-20160816;
+        b=xA1AzXp4j/jgS81zXtwiuXsyTI98MXgATf4XJp5FSE+i4ok4Ei/NZpkmxRC1InWH7q
+         fuYUsU2mIfYBz5GhhLmVPuK0vrnF49xl4cvaq1QQzJP6WDx9xs2xk/vFGUQtJN3hpZQ6
+         WtIsPRAvhPa0roLPT1yTURj8sgPYFezsWsNot5VwEwJlwRGUIcBgnqdE+kf2YW36ajNW
+         733P9dnsSJ8MTEGBgufGiWGoY/ubwArCCblxGwn7fEq3WZnatGd6YkFo5sBwhxgKUd6Z
+         0ZBSgnrzTLCmfyA3jHh81TE7gEtcUASuj1vSm3bpjq4mvxhQ3BW2JTx8tKOJrzIVOjp4
+         nkPw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=b6MmRRCjzT1YegP3Ix9PtNQ0zQVQtNqF7/FCKvBXZVA=;
+        b=iQ0f9SMnRW2zbrNS3C8ng1lpnGffTwLPZh3qj68wNwduZbl9mcZFEnylpVpWcfzdUt
+         /kgGN8KHualKpbYrvsv0DQbcL+XwPgl7H4qC0g3G4HcknBoOa8DXqS04wO6BNn0OzSul
+         xp9vG4ysVdQ97E7co8/pYba4nqz5o0ZuW3myx7sN8HwTH4ljvHrK2CUSwO1LkUjGrssj
+         K6wLtBkZS7YXUodMe9kkiFp2uJrDwFcDLO8+OXOBj7A5dXFrAAv2kyHCnGf/fjEYnNbT
+         kAvkmOq3uIBov27COUijuwYYQvVqeD1qGjdms+pndH8pfGypHaMh7H+K16CXYy8OERNn
+         4qaQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Y0dI0O+d;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x229.google.com (mail-it0-x229.google.com. [2607:f8b0:4001:c0b::229])
+        by gmr-mx.google.com with ESMTPS id l7si149336iog.5.2018.02.17.08.50.07
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 17 Feb 2018 08:50:07 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::229 as permitted sender) client-ip=2607:f8b0:4001:c0b::229;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Y0dI0O+d;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x229.google.com with SMTP id y16so5061730itc.0
+        for <opensport@googlegroups.com>; Sat, 17 Feb 2018 08:50:07 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=b6MmRRCjzT1YegP3Ix9PtNQ0zQVQtNqF7/FCKvBXZVA=;
+        b=Y0dI0O+dJEnpF+Vy522la5I/9v2IrnGHQmDwj40fsf0GnbIoGUsNjZNFmozdoBBYV9
+         W4aA8ltMwjLxm5WQ0xS5BWGvV4JfNDD3VkIx13eBJ0FrJOj4OMY1X1XfO/4jds5bUiln
+         /H2DDFAP3OYHJ2a/FAVajRnwLSSMWusCCOngZziYytNYV9iDXvdezHrZUEI3mUv51T4p
+         kWlcZQnwEAeRemyE7UUGfve3o17cDB3cZIjIzk7/tYAzhHyJuBx/zu5Y61QnetdaCOTx
+         0wQJFOzOCOcfw/SVMScM0aPpNaYmSiHm7TXCX4vMRA4tcyEUzU+LAH1SHfDK1+6JSqVZ
+         vGyA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=b6MmRRCjzT1YegP3Ix9PtNQ0zQVQtNqF7/FCKvBXZVA=;
+        b=oA82yg7ZYyArkigsGfd+TAiZc/QX+eMkNMkMvvfyycuQOJYNYJ9Mwo+XGAptf7WRUw
+         wj/W4MuBAS+YAFpzfqLQBaDkM92Ya9v8HQP1ArVRThD4xxwGvm7X/JkUtBItpsOuA1Ze
+         7bLu+AFDX99F5k4TLFGZGMIpMhUXY3UjAAwJc3UceIzOby1KJfzPEAa8gQSj/tK7n2CZ
+         dSFP3csz134dwHdnqltIrwZVgf62kEAimtkmTqjsiDXVbTRyhuMdk5ywKba0rRtnnP5j
+         CoIYduXlS9z8AaV0kvd13jChnns8RXAyc6VvySwUXRcAqbMnNd+JaETS1R8mYUisKfwp
+         PSjg==
+X-Gm-Message-State: APf1xPAhwTxfkqQbvMc0NY1rgIyft9N8hh2D0UBu8Be/cqwtM5n/zWMK
+	3FPq0IxuU2NceuLPAyEhTh+TDHz+O9kAoAPFwGIf9Q==
+X-Received: by 10.36.79.149 with SMTP id c143mr13499865itb.63.1518886207592;
+ Sat, 17 Feb 2018 08:50:07 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.3.230 with HTTP; Sat, 17 Feb 2018 08:50:07 -0800 (PST)
+In-Reply-To: <f87a3a7e-e9cb-4b11-8826-b668d833a6e6@googlegroups.com>
+References: <f87a3a7e-e9cb-4b11-8826-b668d833a6e6@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 17 Feb 2018 17:50:07 +0100
+Message-ID: <CAAxEZd8Qp_DGOc7DXZf9VCBM9D388WU6dS-09+hzfCEHnJjBhg@mail.gmail.com>
+Subject: Re: [opensport] Uninitialized constant SportDb::Service::Server
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Joe,
+
+   Thanks for trying the football.db and the sportdb machinery. Sorry
+for the trouble.
+
+   The JSON API service gets remodel / reworked to make it easier to
+change - the new version will use the webservice gem that support
+dynamic loading and some more. Will take a couple of weeks to get
+ready sorry.
+
+   Anyways, to get started today the ruby JSON HTTP API starter sample
+(source) -> https://github.com/sportkit/sport.db.starter.ruby  should
+work as advertised and get you started.
+
+   Cheers. Prost.
+

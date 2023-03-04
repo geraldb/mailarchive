@@ -1,0 +1,71 @@
+From 1179468693504@xxx Tue Jun 16 00:16:55 +0000 2015
+X-GM-THRID: 1178432700416
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,1b96976d0c3d8f8f,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.204.201 with SMTP id la9mr4621981lbc.3.1402474059993;
+        Wed, 11 Jun 2014 01:07:39 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.12.11 with SMTP id u11ls228477wib.25.canary; Wed, 11 Jun
+ 2014 01:07:39 -0700 (PDT)
+X-Received: by 10.194.143.109 with SMTP id sd13mr79062wjb.6.1402474059567;
+        Wed, 11 Jun 2014 01:07:39 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x231.google.com (mail-we0-x231.google.com [2a00:1450:400c:c03::231])
+        by gmr-mx.google.com with ESMTPS id pk3si854499wic.0.2014.06.11.01.07.39
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 11 Jun 2014 01:07:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::231 as permitted sender) client-ip=2a00:1450:400c:c03::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f177.google.com with SMTP id u56so6309642wes.8
+        for <opensport@googlegroups.com>; Wed, 11 Jun 2014 01:07:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=KxmU/3W2gl+SyE37kRrJOKG+PNWbprJvOLG47apr4Bk=;
+        b=DRwOO6mQTKdpEIeCdaruhtj7uG0vBELjUtV83m8xQGgh9KRlFxXJu9bnQ+lQndNmpC
+         oSc/VHtWU9tdOQnBVxtgm8IiXFLPJ37Dkoq1Fsmau/HYLkxVBP6+Mj0nCfxABu/kJKvK
+         Cnf/MjbmY4FKoJdKRfBF28oYt7RU9r64xW/AYimwEsJufRIPGGE940ZNimctEI+G9FBJ
+         imEe0begMb7DgitPnICMbv+HNzgaBpdwUwzVUk6zx8UJtL3vDnZqrCoKCRVBGGs9WMMo
+         6LiLtj+62sPSfOAt5W910/OVyobg8XEOpIvqsKk/Af8nYvxygbjr6OiTXqZcZrr/2PJl
+         5Y6g==
+MIME-Version: 1.0
+X-Received: by 10.180.83.225 with SMTP id t1mr23975433wiy.28.1402474059473;
+ Wed, 11 Jun 2014 01:07:39 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Wed, 11 Jun 2014 01:07:39 -0700 (PDT)
+Date: Wed, 11 Jun 2014 10:07:39 +0200
+Message-ID: <CAAxEZd_8JLoxdXbzF0oWnR76wBCcbfa_G1d_g=v8Ba0ytbhhCA@mail.gmail.com>
+Subject: New - Frequently Asked Questions and Answers (FAQs) Page - openfootball.github.io/questions.html
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  Thanks for interest in football.db and all your questions so far.
+I've started to collect some questions and answers on a new page [1].
+Questions so far include:
+
+  Q: Is there any API (web service) to get live scores for the World
+Cup 2014 in Brazil?
+  Q: What=E2=80=99s the update frequency of the data sets?
+  Q: Where can I get (download) pre-built football.db, worldcup.cp etc. cop=
+ies?
+  Q: How can I get started building my own up-to-date copy using the
+latest data sets?
+  Q: How can I get datasets in JSON, CSV, SQL or [your data format here]?
+  Q: How can I get datasets in JSON, CSV or [your data format here]
+using [your database here]?
+  Q: Any real world apps using this?
+
+  Questions? Comments? Welcome as always. Cheers.
+
+[1] openfootball.github.io/questions.html
+

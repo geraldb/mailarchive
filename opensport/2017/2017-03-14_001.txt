@@ -1,0 +1,67 @@
+From 6397372114303713280@xxx Tue Mar 14 15:11:07 +0000 2017
+X-GM-THRID: 6397316263445528576
+X-Received: by 10.36.65.21 with SMTP id x21mr18755ita.23.1489504267363;
+        Tue, 14 Mar 2017 08:11:07 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.11.133 with SMTP id 5ls5231793oth.45.gmail; Tue, 14 Mar
+ 2017 08:11:07 -0700 (PDT)
+X-Received: by 10.129.102.215 with SMTP id a206mr17926224ywc.141.1489504267057;
+        Tue, 14 Mar 2017 08:11:07 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x236.google.com (mail-io0-x236.google.com. [2607:f8b0:4001:c06::236])
+        by gmr-mx.google.com with ESMTPS id a17si456114itd.1.2017.03.14.08.11.07
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 14 Mar 2017 08:11:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) client-ip=2607:f8b0:4001:c06::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x236.google.com with SMTP id l7so1132658ioe.3
+        for <opensport@googlegroups.com>; Tue, 14 Mar 2017 08:11:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=76OTlZBZDq3M0Tkj+ap1IPEn3Xmcn4fJv0kMI2+zdRc=;
+        b=XKyKwYQCWdd8/eTjqrSGJf6BTf/o7PJzKL3OKT+/7cbsfNYMYoZHS/kDaLBwU45Enx
+         fEWmKxltVSYP9O0Ua6mGE0iZKuh5/Uo7GPPjt5+EGPNUDrgrwePTtRmeXIbolXlahkpg
+         NcWwf1f7+2hPHzsCbYhZ2srbjMxrmjv5piEp2rK+Z6HdqXAV8gpcEXwVt9akeMLHYftY
+         xujh8qjeAhtf7SId7OaeZe+cbVZUEV45vlOJ8V82T02DxbvfUErzZ7DUFZHNXCYhOGEa
+         SU0wGQI/HlAmdRMhvBsTU4SByfeEAnWZV6qCjSOvgpJj4wixEgYSS3vI1v18zGxl235a
+         E8fA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=76OTlZBZDq3M0Tkj+ap1IPEn3Xmcn4fJv0kMI2+zdRc=;
+        b=rivGdlmwbXBC1+M0LftXJVzQ3t+uFq/Mc823M8876fGgpjdFEwde9RpvMLveYANf1K
+         eGTJSPT6LZUucvEkWMN4xVS/A4QgCYQIqt+IXxEzNzM+2KoiaSDD/rYeray4zmXlxuZK
+         td/KBkd++F4Oqtzzmbbvo9VdIBmTcqHZiQfP85bVztXr61T3ByhLN8zcVb1lVNi3VlOM
+         voY3n8Y/zCgiPo2V9nMJx6644Rh2Amxy9CroEkZ01ljW4mK274a9OtDwgn96VpXfckhE
+         4obtNx83eAnRa2HYxSPFu0M+aJDciYoBdleJF6g73Q8ONFvZcRfefn+VeqCLmskMJL/e
+         ZEyQ==
+X-Gm-Message-State: AFeK/H25bYk6gN7Pw4Yo7r3PsV0GMgoOZyfu5IKZfI3zUYRBYsJ8ML9YuyM/Ok3ZcYnOMOGGkmOGTOtuoAvWNA==
+X-Received: by 10.107.59.86 with SMTP id i83mr258715ioa.197.1489504266690;
+ Tue, 14 Mar 2017 08:11:06 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.170.209 with HTTP; Tue, 14 Mar 2017 08:11:06 -0700 (PDT)
+In-Reply-To: <b220e341-456d-4e51-a4b0-f157cff36fe7@googlegroups.com>
+References: <456df624-e46e-450b-b483-f31154e2875e@googlegroups.com>
+ <CAAxEZd_sva4d3O4Ap7HxKofA8ZtcywpRGrtaPjFhdv7n612JaA@mail.gmail.com> <b220e341-456d-4e51-a4b0-f157cff36fe7@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 14 Mar 2017 16:11:06 +0100
+Message-ID: <CAAxEZd_9H1GcDKuABZpjo2xSEd1HEfUB_VLZ0JWj0Os44kFKgA@mail.gmail.com>
+Subject: Re: [opensport] No players and goals data in football.db
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+> How can I import these datasets to the database ?
+
+  You import all datasets the same way, that is, use a datafile. See
+the /datafile repo  [1] for examples. good luck. Cheers.
+
+[1] https://github.com/openfootball/datafile
+

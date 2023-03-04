@@ -1,0 +1,58 @@
+From 2465541914624@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2468799840256
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,3ba6a9b3b6f45a9b,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.70.55.233 with SMTP id v9mr17073901pdp.5.1425121589224;
+        Sat, 28 Feb 2015 03:06:29 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.32.200 with SMTP id h66ls967329qgh.65.gmail; Sat, 28 Feb
+ 2015 03:06:29 -0800 (PST)
+X-Received: by 10.236.17.168 with SMTP id j28mr17575068yhj.0.1425121588975;
+        Sat, 28 Feb 2015 03:06:28 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22d.google.com (mail-ig0-x22d.google.com. [2607:f8b0:4001:c05::22d])
+        by gmr-mx.google.com with ESMTPS id g3si400900igr.2.2015.02.28.03.06.28
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 28 Feb 2015 03:06:28 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) client-ip=2607:f8b0:4001:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ig0-x22d.google.com with SMTP id l13so6660452iga.0
+        for <opensport@googlegroups.com>; Sat, 28 Feb 2015 03:06:28 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=8L8W9Z7LfSF5YmAcuVLVaD4gGm5ggKGEda4Ea63enQs=;
+        b=QQBcdgVT5K1ArvcDGnyVU35UM0mFQfQE7xLXnZg1bFrDDYw8pNx8zcmkeZmUTya/2A
+         zbDSCBH0iAr8F80XCuLACKjmN3DTOKXQRKcBjvntxCqimR8Er9v0vriVh8/2sbe3UdEI
+         hr3i9mefIcHz5s/xVoYM4HNob1TSJ2OlM4hRc1AU3cB/kBU3FhGlFmyOzRAynUij5mVt
+         bwauScZpYX+RnijA0XGz8htL3GQ7P6x/1pHfvbsllFXFN/qzxYxAaLzRVLHc48UGV6Fk
+         d1tci40h+FcG5HmrE9yOlkiRypoYArqVqGukQ11kUbMkhACwEGMZNO8Czb8XQWTKWwr0
+         Bm0Q==
+MIME-Version: 1.0
+X-Received: by 10.50.13.97 with SMTP id g1mr8822702igc.42.1425121588854; Sat,
+ 28 Feb 2015 03:06:28 -0800 (PST)
+Received: by 10.64.142.11 with HTTP; Sat, 28 Feb 2015 03:06:28 -0800 (PST)
+Date: Sat, 28 Feb 2015 12:06:28 +0100
+Message-ID: <CAAxEZd8FjLxEffmotiFCER+5_YQ=McRP+qZXvSABWVhzCS_Z1A@mail.gmail.com>
+Subject: logutils-activerecord update - Fix for MySQL - tid column now bigint
+ e.g. limit:8 (bytes)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  If you get range erros when using the MySQL database - the good news
+- the latest logutils-activerecord update fixes the issue.
+
+  The logs table column tid is now a bigint w/ 8 bytes instead of a
+plain int w/ 4 bytes.
+
+  Thanks to Kevin Ndung'u for sending in the bug fix. Cheers.
+

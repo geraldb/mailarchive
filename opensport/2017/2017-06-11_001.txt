@@ -1,0 +1,72 @@
+From 6430430642856525824@xxx Sun Jun 11 17:15:05 +0000 2017
+X-GM-THRID: 6430410062572814336
+Date: Sun, 11 Jun 2017 10:15:05 -0700 (PDT)
+From: Ching Kiu Chan <jeffrey1234ish@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <545fa93c-d638-4d8a-b203-dc95574b1c01@googlegroups.com>
+In-Reply-To: <CAAxEZd9kPTAByB67FHtYHc_X3ji+Nwh9unNqhZq7V9R3auSZ3w@mail.gmail.com>
+References: <7be1395f-233c-4756-a3b8-db41b85b8784@googlegroups.com>
+ <CAAxEZd9kPTAByB67FHtYHc_X3ji+Nwh9unNqhZq7V9R3auSZ3w@mail.gmail.com>
+Subject: Re: [opensport] SystemStackError when executing sportdb create
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2326_1602979313.1497201305310"
+X-Google-Token: EJn19ckFzKhUKdyyInE0
+X-Google-IP: 183.178.159.127
+
+------=_Part_2326_1602979313.1497201305310
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2327_839711381.1497201305310"
+
+------=_Part_2327_839711381.1497201305310
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for replying. I fixed the problem by downgrading ruby to 2.3.0. , 
+seems like a problem with ruby 2.4.0
+
+On Sunday, 11 June 2017 23:58:05 UTC+8, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>     Thanks for trying sportdb. Hard to tell. What are you trying to do? 
+>
+>
+>     If you try to create a database, please retry with the verbose 
+> option / flag e.g. 
+>
+>      $ sportdb --verbose create 
+>
+>      to get more (debug) info. 
+>
+>     Cheers. 
+>
+
+------=_Part_2327_839711381.1497201305310
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Thank you for replying. I fixed the problem by downgr=
+ading ruby to 2.3.0. , seems like a problem with ruby 2.4.0</div><div><br>O=
+n Sunday, 11 June 2017 23:58:05 UTC+8, Gerald Bauer  wrote:<blockquote clas=
+s=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #c=
+cc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 =C2=A0 Thanks for trying sportdb. Hard to tell. What are you try=
+ing to do?
+<br>
+<br>
+<br>=C2=A0 =C2=A0 If you try to create a database, please retry with the ve=
+rbose
+<br>option / flag e.g.
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0$ sportdb --verbose create
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0to get more (debug) info.
+<br>
+<br>=C2=A0 =C2=A0 Cheers.
+<br></blockquote></div></div>
+------=_Part_2327_839711381.1497201305310--
+
+------=_Part_2326_1602979313.1497201305310--
+

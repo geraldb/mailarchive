@@ -1,0 +1,256 @@
+From 2232089051136@xxx Tue Jun 16 00:16:45 +0000 2015
+X-GM-THRID: 2230893674496
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,3f65f5bbbb46b14d
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.50.46.1 with SMTP id r1mr36974920igm.7.1415888873223;
+        Thu, 13 Nov 2014 06:27:53 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.149.195 with SMTP id uc3ls1321934obb.21.gmail; Thu, 13 Nov
+ 2014 06:27:52 -0800 (PST)
+X-Received: by 10.182.81.37 with SMTP id w5mr45465245obx.29.1415888872970;
+        Thu, 13 Nov 2014 06:27:52 -0800 (PST)
+Received: by 10.224.72.140 with SMTP id m12msqaj;
+        Thu, 13 Nov 2014 05:43:04 -0800 (PST)
+X-Received: by 10.140.86.9 with SMTP id o9mr1503qgd.29.1415886184412;
+        Thu, 13 Nov 2014 05:43:04 -0800 (PST)
+X-Google-Doc-Id: f7ee36e6d12a4664
+X-Google-Web-Client: true
+Date: Thu, 13 Nov 2014 05:43:04 -0800 (PST)
+From: Jordan Tigani <jtigani@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <6fe987ba-3c67-4076-b067-937c34e402e8@googlegroups.com>
+Subject: Getting an error "no implicit conversion of nil into String"
+ importing data
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1657_279467832.1415886184074"
+X-Google-Token: EOjqkqMF9zm6XRIPRXs0
+X-Google-IP: 2620:0:105f:311:9184:49b8:bfd0:757b
+
+------=_Part_1657_279467832.1415886184074
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1658_469116435.1415886184074"
+
+------=_Part_1658_469116435.1415886184074
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I've tried a number of  ways (running rake, running downloadAndBuild.sh, 
+running sportdb commands) and I get an error "no implicit conversion of nil 
+into string", which causes a fatal error. I'm trying to import the spain 
+club data, specifically, but being able to build the full db would be nice 
+too.
+
+Below is the last part of the output when I run "rake --trace build 
+DATA=es_2014_15"
+
+Any idea what is going on?
+Thanks
+-jordan
+
+[debug] fixture setup:
+[debug] 
+["es-espana!/leagues","es-espana!/clubs","es-espana!/clubs_2","es-espana!/clubs_x","es-espana!/2014-15/liga"]
+[debug] enter load( name=>>es-espana!/leagues<<, 
+include_path=>>../es-espana<<)
+[info] ValuesReader.new - deprecated API - use ValuesReader.from_file() 
+instead
+rake aborted!
+no implicit conversion of nil into String
+/Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/core_ext/file.rb:5:in 
+`initialize'
+/Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/core_ext/file.rb:5:in 
+`open'
+/Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/core_ext/file.rb:5:in 
+`read_utf8'
+/Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/reader/values_reader.rb:72:in 
+`initialize'
+/Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/reader/values_reader_v2.rb:37:in 
+`new'
+/Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/reader/values_reader_v2.rb:37:in 
+`each_line'
+/Library/Ruby/Gems/2.0.0/gems/sportdb-1.9.8/lib/sportdb/readers/league.rb:25:in 
+`read'
+/Library/Ruby/Gems/2.0.0/gems/sportdb-1.9.8/lib/sportdb/reader.rb:91:in 
+`block in load'
+/Library/Ruby/Gems/2.0.0/gems/worlddb-2.0.5/lib/worlddb/matcher.rb:24:in 
+`match_xxx_for_country'
+/Library/Ruby/Gems/2.0.0/gems/sportdb-1.9.8/lib/sportdb/matcher.rb:10:in 
+`match_leagues_for_country'
+/Library/Ruby/Gems/2.0.0/gems/sportdb-1.9.8/lib/sportdb/reader.rb:86:in 
+`load'
+/Library/Ruby/Gems/2.0.0/gems/sportdb-1.9.8/lib/sportdb/reader.rb:30:in 
+`block in load_setup'
+/Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/reader/fixture_reader.rb:121:in 
+`block in each'
+/Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/reader/fixture_reader.rb:120:in 
+`each'
+/Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/reader/fixture_reader.rb:120:in 
+`each'
+/Library/Ruby/Gems/2.0.0/gems/sportdb-1.9.8/lib/sportdb/reader.rb:29:in 
+`load_setup'
+/Library/Ruby/Gems/2.0.0/gems/sportdb-1.9.8/lib/sportdb.rb:150:in 
+`read_setup'
+/Users/tigani/wc/footballdb/build/build/tasks/setups/es.rake:9:in `block in 
+<top (required)>'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:228:in 
+`call'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:228:in 
+`block in execute'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:223:in 
+`each'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:223:in 
+`execute'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:166:in 
+`block in invoke_with_call_chain'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in 
+`mon_synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:159:in 
+`invoke_with_call_chain'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:187:in 
+`block in invoke_prerequisites'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:185:in 
+`each'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:185:in 
+`invoke_prerequisites'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:165:in 
+`block in invoke_with_call_chain'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in 
+`mon_synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:159:in 
+`invoke_with_call_chain'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:187:in 
+`block in invoke_prerequisites'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:185:in 
+`each'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:185:in 
+`invoke_prerequisites'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:165:in 
+`block in invoke_with_call_chain'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in 
+`mon_synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:159:in 
+`invoke_with_call_chain'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:152:in 
+`invoke'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:143:in 
+`invoke_task'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:101:in 
+`block (2 levels) in top_level'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:101:in 
+`each'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:101:in 
+`block in top_level'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:110:in 
+`run_with_threads'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:95:in 
+`top_level'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:73:in 
+`block in run'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:160:in 
+`standard_exception_handling'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:70:in 
+`run'
+
+
+------=_Part_1658_469116435.1415886184074
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I've tried a number of &nbsp;ways (running rake, running d=
+ownloadAndBuild.sh, running sportdb commands) and I get an error "no implic=
+it conversion of nil into string", which causes a fatal error. I'm trying t=
+o import the spain club data, specifically, but being able to build the ful=
+l db would be nice too.<div><br></div><div>Below is the last part of the ou=
+tput when I run "<span style=3D"font-size: 13px; line-height: 18px;">rake -=
+-trace build DATA=3Des_2014_15"</span></div><div><span style=3D"line-height=
+: 18px;"><br></span></div><div><span style=3D"line-height: 18px;">Any idea =
+what is going on?</span></div><div><span style=3D"line-height: 18px;">Thank=
+s</span></div><div><span style=3D"line-height: 18px;">-jordan</span><div><b=
+r></div><div><div>[debug] fixture setup:</div><div>[debug] ["es-espana!/lea=
+gues","es-espana!/clubs","es-espana!/clubs_2","es-espana!/clubs_x","es-espa=
+na!/2014-15/liga"]</div><div>[debug] enter load( name=3D&gt;&gt;es-espana!/=
+leagues&lt;&lt;, include_path=3D&gt;&gt;../es-espana&lt;&lt;)</div><div>[in=
+fo] ValuesReader.new - deprecated API - use ValuesReader.from_file() instea=
+d</div><div>rake aborted!</div><div>no implicit conversion of nil into Stri=
+ng</div><div>/Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/c=
+ore_ext/file.rb:5:in `initialize'</div><div>/Library/Ruby/Gems/2.0.0/gems/t=
+extutils-0.9.10/lib/textutils/core_ext/file.rb:5:in `open'</div><div>/Libra=
+ry/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/core_ext/file.rb:5:i=
+n `read_utf8'</div><div>/Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/=
+textutils/reader/values_reader.rb:72:in `initialize'</div><div>/Library/Rub=
+y/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/reader/values_reader_v2.rb=
+:37:in `new'</div><div>/Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/t=
+extutils/reader/values_reader_v2.rb:37:in `each_line'</div><div>/Library/Ru=
+by/Gems/2.0.0/gems/sportdb-1.9.8/lib/sportdb/readers/league.rb:25:in `read'=
+</div><div>/Library/Ruby/Gems/2.0.0/gems/sportdb-1.9.8/lib/sportdb/reader.r=
+b:91:in `block in load'</div><div>/Library/Ruby/Gems/2.0.0/gems/worlddb-2.0=
+.5/lib/worlddb/matcher.rb:24:in `match_xxx_for_country'</div><div>/Library/=
+Ruby/Gems/2.0.0/gems/sportdb-1.9.8/lib/sportdb/matcher.rb:10:in `match_leag=
+ues_for_country'</div><div>/Library/Ruby/Gems/2.0.0/gems/sportdb-1.9.8/lib/=
+sportdb/reader.rb:86:in `load'</div><div>/Library/Ruby/Gems/2.0.0/gems/spor=
+tdb-1.9.8/lib/sportdb/reader.rb:30:in `block in load_setup'</div><div>/Libr=
+ary/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/reader/fixture_read=
+er.rb:121:in `block in each'</div><div>/Library/Ruby/Gems/2.0.0/gems/textut=
+ils-0.9.10/lib/textutils/reader/fixture_reader.rb:120:in `each'</div><div>/=
+Library/Ruby/Gems/2.0.0/gems/textutils-0.9.10/lib/textutils/reader/fixture_=
+reader.rb:120:in `each'</div><div>/Library/Ruby/Gems/2.0.0/gems/sportdb-1.9=
+.8/lib/sportdb/reader.rb:29:in `load_setup'</div><div>/Library/Ruby/Gems/2.=
+0.0/gems/sportdb-1.9.8/lib/sportdb.rb:150:in `read_setup'</div><div>/Users/=
+tigani/wc/footballdb/build/build/tasks/setups/es.rake:9:in `block in &lt;to=
+p (required)&gt;'</div><div>/System/Library/Frameworks/Ruby.framework/Versi=
+ons/2.0/usr/lib/ruby/2.0.0/rake/task.rb:228:in `call'</div><div>/System/Lib=
+rary/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb=
+:228:in `block in execute'</div><div>/System/Library/Frameworks/Ruby.framew=
+ork/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:223:in `each'</div><div>/S=
+ystem/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rak=
+e/task.rb:223:in `execute'</div><div>/System/Library/Frameworks/Ruby.framew=
+ork/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:166:in `block in invoke_wi=
+th_call_chain'</div><div>/System/Library/Frameworks/Ruby.framework/Versions=
+/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'</div><div>/Syst=
+em/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/t=
+ask.rb:159:in `invoke_with_call_chain'</div><div>/System/Library/Frameworks=
+/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:187:in `block =
+in invoke_prerequisites'</div><div>/System/Library/Frameworks/Ruby.framewor=
+k/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:185:in `each'</div><div>/Sys=
+tem/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/=
+task.rb:185:in `invoke_prerequisites'</div><div>/System/Library/Frameworks/=
+Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:165:in `block i=
+n invoke_with_call_chain'</div><div>/System/Library/Frameworks/Ruby.framewo=
+rk/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'</div=
+><div>/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2=
+.0.0/rake/task.rb:159:in `invoke_with_call_chain'</div><div>/System/Library=
+/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:187=
+:in `block in invoke_prerequisites'</div><div>/System/Library/Frameworks/Ru=
+by.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:185:in `each'</di=
+v><div>/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/=
+2.0.0/rake/task.rb:185:in `invoke_prerequisites'</div><div>/System/Library/=
+Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/task.rb:165:=
+in `block in invoke_with_call_chain'</div><div>/System/Library/Frameworks/R=
+uby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchr=
+onize'</div><div>/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr=
+/lib/ruby/2.0.0/rake/task.rb:159:in `invoke_with_call_chain'</div><div>/Sys=
+tem/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/=
+task.rb:152:in `invoke'</div><div>/System/Library/Frameworks/Ruby.framework=
+/Versions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:143:in `invoke_task'</=
+div><div>/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/rub=
+y/2.0.0/rake/application.rb:101:in `block (2 levels) in top_level'</div><di=
+v>/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0=
+/rake/application.rb:101:in `each'</div><div>/System/Library/Frameworks/Rub=
+y.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:101:in `blo=
+ck in top_level'</div><div>/System/Library/Frameworks/Ruby.framework/Versio=
+ns/2.0/usr/lib/ruby/2.0.0/rake/application.rb:110:in `run_with_threads'</di=
+v><div>/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/=
+2.0.0/rake/application.rb:95:in `top_level'</div><div>/System/Library/Frame=
+works/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:73=
+:in `block in run'</div><div>/System/Library/Frameworks/Ruby.framework/Vers=
+ions/2.0/usr/lib/ruby/2.0.0/rake/application.rb:160:in `standard_exception_=
+handling'</div><div>/System/Library/Frameworks/Ruby.framework/Versions/2.0/=
+usr/lib/ruby/2.0.0/rake/application.rb:70:in `run'</div></div><div><br></di=
+v></div></div>
+------=_Part_1658_469116435.1415886184074--
+
+------=_Part_1657_279467832.1415886184074--
+

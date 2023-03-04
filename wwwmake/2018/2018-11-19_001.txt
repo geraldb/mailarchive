@@ -1,0 +1,109 @@
+From 6625505163686707200@xxx Mon Nov 19 09:43:52 +0000 2018
+X-GM-THRID: 6624595092768292864
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 2002:a1c:1887:: with SMTP id 129-v6mr2044298wmy.3.1542620631935;
+        Mon, 19 Nov 2018 01:43:51 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:adf:8186:: with SMTP id 6ls664438wra.9.gmail; Mon, 19 Nov
+ 2018 01:43:50 -0800 (PST)
+X-Google-Smtp-Source: AFSGD/VoV54y4biSGVB1Q6ffOimaLxrfp3douyLZru9AmRIAvF8RyR4UNvt2sIbn2qtN5Aczkpt1
+X-Received: by 2002:a5d:4e88:: with SMTP id e8-v6mr3719622wru.23.1542620630901;
+        Mon, 19 Nov 2018 01:43:50 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1542620630; cv=none;
+        d=google.com; s=arc-20160816;
+        b=nXtwR6f+FhZkVHkxcz5tQApiVPLlVzXA9ZJUlGYAteGM7AwEixif+86Xstrp/A1dyx
+         bSVw/T/QgvL/l5BhxPfbowNt3C1k5zBz2xzXQNgvko4HYvVSTe9kjJHbKLfje7/JTuNh
+         rRGyhjqKq5E3OWL3S0IWMqw1a99YRNHt8CvAbSgDii2engou6gqL8xMdauSZwoBa05Az
+         8Zb+Z/51u98Vj3KMCGmOCfBPJWj6LQTpft3UAEQm9pIjJDxdQOoZAXb/U0CrmvlTg6tJ
+         IXwNTAJKiFqQ5n7fHtFT39mMDa7NBIl5u91+BrU8JvdnH+x6FlGw80ScmkBwIshrZgDl
+         TV9g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=V5O3eGhxOxMN4dGig+e09QS8Uw9jBNtM6qtVapDCLKw=;
+        b=BFnykPlESupVmP9U7J1MZBcZGyJ3deqeeQaT2iXeHFP/GPNItdI0LMzd8Y+hlG/vMb
+         EbPB04b/Pc7by95o2pnnq8lpufk8Qbd8gb0Eug975hhCZBeQ9urlw5EO6GPvxx6Aw2R8
+         UxTZD5ERykqP0EuwIlqUURvw8qxLls2KABjQU/nIaD0TAUcr670tvK8QK+6nEhs//yll
+         CD882EHtmahv+Bbf9ap3XNniF8wqR19/iiMCYtblygQdqWhCZpdeosA2GWW7yP9/ClIY
+         +djXzIMb9AS5+kNaXQlrpouDlpRpvnWA2dwMCLagpzqGvDOlDhF/FVIUHyf4f9b+roc4
+         0RIQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=kB986fbZ;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::134 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x134.google.com (mail-lf1-x134.google.com. [2a00:1450:4864:20::134])
+        by gmr-mx.google.com with ESMTPS id 191-v6si314888wmv.0.2018.11.19.01.43.50
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 19 Nov 2018 01:43:50 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::134 as permitted sender) client-ip=2a00:1450:4864:20::134;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=kB986fbZ;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::134 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x134.google.com with SMTP id u18so20806246lff.10
+        for <wwwmake@googlegroups.com>; Mon, 19 Nov 2018 01:43:50 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=V5O3eGhxOxMN4dGig+e09QS8Uw9jBNtM6qtVapDCLKw=;
+        b=kB986fbZhnygxyQKeY7mkOe32VN6LNLE95oQwJEw1RpvDgFAE8iPXNWSn2/UVkViZW
+         VY/Kb0yOrt6y2GJMD2PPLZbL4XcKNdjINjRkdQjCRBoEZ61keny6ZpcU06v3OdIbIAbn
+         me3bzOAAltWEtuCXkglc68CoQV2/r5ex7/9YClMC3UtyiiZWPVCyLrr5mWT8EYtTkSFj
+         pPT6doxRKY0qleIVD4kf+fn+EM7H4HJQCw6ej1U8PoT/6lt033RMShKbJ6j0QzCXphYd
+         PgwA/zA9CiXuFUJqMtO/KJF9K6iOmTz13/49ORmE+ndCBqLoLfTG8rjfBrs8queRJDgI
+         gvFg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=V5O3eGhxOxMN4dGig+e09QS8Uw9jBNtM6qtVapDCLKw=;
+        b=WQj1BttJCZBUoqJubWgtuPbV+Dro1SorxlPUGj7aAqwd5CyionttvkMbtTNguOfcar
+         36qKBAsujLZpQj+l7TKXbrOuin7XDmNwfY3Fbf/eKUWBEM73JLQo5owR4VlGsfhoB+w8
+         /xY7A7M/hLXjTYQa1M+nv0+YFt5vYWpW/9VwYvWis86CzkfJK77tPU9bXnRtBmpACyUL
+         vYmUounlHCYq/nlRxAQxi8JEhpdp16oSvb5/WP7Hd1tvP4UDQ+H2IhkX4jsRlDriRYoL
+         nHHBwIU9p5XLsqD0eAz72Pxuf16POlhsAdxeDpWcJlUXcte47l4zy3vOadoU1xewYakW
+         wg9w==
+X-Gm-Message-State: AGRZ1gInWlqdZIsOnIK2bHgYoabls6zFSZD6Ta2T2q187pe4wIbOOnHM
+	Hgzm11ZJJtwCm9lr+PlozooR+6sZf6AcVfnniGU3CVvO
+X-Received: by 2002:a19:db82:: with SMTP id t2mr11061515lfi.130.1542620630000;
+ Mon, 19 Nov 2018 01:43:50 -0800 (PST)
+MIME-Version: 1.0
+References: <965993f2-872a-4140-80b5-e296e8cc5ef6@googlegroups.com>
+ <CAAxEZd-p8LnZAHH5E=UBD6ZeyshdnE2jNDsxtpXYE36DdumY8Q@mail.gmail.com> <157c04be-2051-483e-bbae-311b4733e14c@googlegroups.com>
+In-Reply-To: <157c04be-2051-483e-bbae-311b4733e14c@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 19 Nov 2018 10:43:37 +0100
+Message-ID: <CAAxEZd96duiPUpciw0NxL8U3EhBoN5EzjN7DBKjxG5Q3sOvS2g@mail.gmail.com>
+Subject: Re: [wwwmake:462] [csvreader] Is there any way to keep going after
+ encountering an error?
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   FYI: I uploaded / pushed a new csvreader version, that is,v 1.2.2
+that now handles / includes an auto-fix for quoted values with extra
+trailing values.  Try:
+
+
+def test_quote_with_trailing_value    # see [1]
+   recs = [[ "Farrokh", "\"Freddy\" Mercury", "Bulsara" ]]
+   assert_equal recs, parser.parse( %Q{Farrokh,"Freddy" Mercury,Bulsara} )
+   assert_equal recs, parser.parse( %Q{ Farrokh , "Freddy" Mercury , Bulsara } )
+   assert_equal recs, parser.parse( %Q{Farrokh, "Freddy" Mercury ,Bulsara} )
+end
+
+  The new "auto-fix" will read
+
+   "Freddy" Mercury
+
+   as is, that is, turn it into an "unquoted" value with "literal"
+quotes.  Note: Leading and trailing whitespaces get trimmed / ignored
+as usual.
+
+  Cheers. Prost.
+
+[1] https://github.com/csvreader/csvreader/blob/master/test/test_parser_autofix.rb
+

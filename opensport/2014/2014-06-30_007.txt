@@ -1,0 +1,81 @@
+From 1501568172032@xxx Tue Jun 16 00:16:56 +0000 2015
+X-GM-THRID: 1443995058176
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b420b99f7c108f3c
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.89.232 with SMTP id br8mr2688874wib.1.1404120433897;
+        Mon, 30 Jun 2014 02:27:13 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.44.228 with SMTP id h4ls270661lam.33.gmail; Mon, 30 Jun
+ 2014 02:27:13 -0700 (PDT)
+X-Received: by 10.112.188.229 with SMTP id gd5mr544481lbc.13.1404120433023;
+        Mon, 30 Jun 2014 02:27:13 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x230.google.com (mail-we0-x230.google.com [2a00:1450:400c:c03::230])
+        by gmr-mx.google.com with ESMTPS id bz15si418203wib.2.2014.06.30.02.27.12
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 30 Jun 2014 02:27:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::230 as permitted sender) client-ip=2a00:1450:400c:c03::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f176.google.com with SMTP id u56so7695605wes.21
+        for <opensport@googlegroups.com>; Mon, 30 Jun 2014 02:27:12 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=jNdzRJhxCDakTP6KV1nhfN6G85TG3goXdGyIf5fq/p4=;
+        b=RYT4qndx1nPr7UtlGe3NcI2XPZHwHu7Vb6caapY5KR3L5ursZf5EbFF8LayPtVIWaf
+         9WDZ7St4WlAQC3kmltIlRCyF/wGDL/od72RSQVXs/WCKRRge7oVzc4fx6UdmhUI5/1/C
+         EuLNU+Xt/6W5jGzKT2g50gOlxIxLhhnZ2rQnYXara50GhLH+jv/0owRMcwBzRPR2kQ8l
+         PTfUcTxNOoqpZoLujUqbRPwsi1lp50vyJJkkw6BxmX1P28xl56V74Cz5VQWOvVjIE4dQ
+         g9MFqSognrh95/8Tkv50O1GOGv6qvPPMmbe4/fxS9pnGM5U5vvFkqNJfpvbBA007l9Ez
+         6kgQ==
+MIME-Version: 1.0
+X-Received: by 10.180.90.242 with SMTP id bz18mr28662986wib.12.1404120432928;
+ Mon, 30 Jun 2014 02:27:12 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Mon, 30 Jun 2014 02:27:12 -0700 (PDT)
+In-Reply-To: <b8975d50-737d-47de-96a9-8d43fe71769c@googlegroups.com>
+References: <8ef4037c-46cf-4d5f-a582-05fa64e3c2d9@googlegroups.com>
+	<CAAxEZd-dXv9CA4o+s8GhX9izd-tMnvDgzkFZL_2GFUUbVXhOVw@mail.gmail.com>
+	<CAAxEZd-cMT2CHPoMh4On8Pw_Qn+6unERLA57T9Hy9u8tHq=GQA@mail.gmail.com>
+	<8be0dd97-b415-45e0-bd80-a1a610a54fba@googlegroups.com>
+	<b8975d50-737d-47de-96a9-8d43fe71769c@googlegroups.com>
+Date: Mon, 30 Jun 2014 11:27:12 +0200
+Message-ID: <CAAxEZd-9--4qHsGbJ5uF9duA20Bd0XWb2Z-s7XpO43W0qfovAg@mail.gmail.com>
+Subject: Re: [opensport] MLS Data
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Carl,
+
+ Great stuff. I added mls to the build script and tried it e.g.
+
+  $ rake build DATA=mls
+
+ Just some minor changes needed:
+
+  In  mls.yml you need to also add the three Canadian teams (Oh
+Canada, eh?) e.g.
+
+  - toronto
+  - vancouver
+  - montreal
+
+  And some alternative names are missing:
+
+[debug]  no game match (two teams required) found for line: >Sun Mar/9
+CD Chivas USA          3-2   [TEAM1] <
+
+  E.g. Club Deportivo Chivas US needs
+
+ chivasusa, Club Deportivo Chivas US|CD Chivas USA, us
+ saltlake, Real Salt Lake|Real Salt Lake City, RSL, city:saltlakecity, us
+
+   That's really all. Keep it up. Cheers.
+

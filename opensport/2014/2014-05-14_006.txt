@@ -1,0 +1,99 @@
+From 649729146880@xxx Tue Jun 16 00:17:12 +0000 2015
+X-GM-THRID: 645323030528
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cd7f628daf55e885
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.190.202 with SMTP id gs10mr841718pac.0.1400047991583;
+        Tue, 13 May 2014 23:13:11 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.91.201 with SMTP id z67ls2150295qgd.59.gmail; Tue, 13 May
+ 2014 23:13:11 -0700 (PDT)
+X-Received: by 10.140.18.194 with SMTP id 60mr295qgf.36.1400047991444;
+        Tue, 13 May 2014 23:13:11 -0700 (PDT)
+X-Google-Doc-Id: a2456e3a880736e5
+X-Google-Web-Client: true
+Date: Tue, 13 May 2014 23:13:10 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <3b51fbbb-25aa-4350-b2ed-20ecc856b24f@googlegroups.com>
+In-Reply-To: <31a12f2f-778d-4c32-9796-4c5cf1641103@googlegroups.com>
+References: <31a12f2f-778d-4c32-9796-4c5cf1641103@googlegroups.com>
+Subject: Re: Plans for the openfootball HTTP JSON API
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_5875_11782995.1400047990618"
+X-Google-Token: EPaSzJsFw4TX4TixUpM0
+X-Google-IP: 93.82.52.92
+
+------=_Part_5875_11782995.1400047990618
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5876_32107743.1400047990618"
+
+------=_Part_5876_32107743.1400047990618
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello C=C3=A9dric,
+
+Thanks for you interest in football.db. Thanks for the reminder. Yes a new=
+=20
+service for squads (lineups) is definitely missing and planed to get added=
+=20
+(it will just be a couple of lines of Ruby) [1]
+
+No worries the Ruby part is the easy part. The Wikipedia entry on the World=
+=20
+Cup 2014 squads [2] says:
+
+> The 32 national teams involved in the tournament will be required to=20
+register a squad of 23 players; only players in these=20
+> squads will be eligible to take part in the tournament.=20
+> A provisional list of 30 players per national team will be submitted to=
+=20
+FIFA by 13 May 2014. FIFA will publish the
+> provisional lists on their website on 16 May 2014. The final list of 23=
+=20
+players per national team will be submitted to FIFA
+> by 2 June 2014, FIFA will publish the final lists of 23 players on their=
+=20
+website on 5 June 2014.=20
+
+  So the plan is to add the official squads / team players to the database=
+=20
+as soon as the get published. You're welcome to help out (no Ruby required;=
+=20
+just plain text [3]).  Cheers.
+
+[1]=20
+github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/service/server.rb
+[2] en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+[3] github.com/openfootball/players
+
+------=_Part_5876_32107743.1400047990618
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello C=C3=A9dric,<br><br>    Thanks for you interest in f=
+ootball.db. Thanks for the reminder. Yes a new service for squads (lineups)=
+ is definitely missing and planed to get added (it will just be a couple of=
+ lines of Ruby) [1]<br><br>   No worries the Ruby part is the easy part.  T=
+he Wikipedia entry on the World Cup 2014 squads [2] says:<br><br>&gt; The 3=
+2 national teams involved in the tournament will be required to register a =
+squad of 23 players; only players in these <br>&gt; squads will be eligible=
+ to take part in the tournament. <br>&gt; A provisional list of 30 players =
+per national team will be submitted to FIFA by 13 May 2014. FIFA will publi=
+sh the<br>&gt; provisional lists on their website on 16 May 2014. The final=
+ list of 23 players per national team will be submitted to FIFA<br>&gt; by =
+2 June 2014, FIFA will publish the final lists of 23 players on their websi=
+te on 5 June 2014. <br><br>&nbsp; So the plan is to add the official squads=
+ / team players to the database as soon as the get published. You're welcom=
+e to help out (no Ruby required; just plain text [3]).&nbsp; Cheers.<br><br=
+>[1] github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/service/serve=
+r.rb<br>[2] en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads<br>[3] github.=
+com/openfootball/players<br></div>
+------=_Part_5876_32107743.1400047990618--
+
+------=_Part_5875_11782995.1400047990618--
+

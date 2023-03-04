@@ -1,0 +1,62 @@
+From 6322034537095233536@xxx Tue Aug 23 14:42:51 +0000 2016
+X-GM-THRID: 6321924895499354112
+X-Received: by 10.13.204.198 with SMTP id o189mr20859795ywd.35.1471963370919;
+        Tue, 23 Aug 2016 07:42:50 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.36.41.80 with SMTP id p77ls4958788itp.4.gmail; Tue, 23 Aug
+ 2016 07:42:50 -0700 (PDT)
+X-Received: by 10.107.7.149 with SMTP id g21mr21001247ioi.11.1471963370337;
+        Tue, 23 Aug 2016 07:42:50 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x229.google.com (mail-it0-x229.google.com. [2607:f8b0:4001:c0b::229])
+        by gmr-mx.google.com with ESMTPS id n187si1487340ith.2.2016.08.23.07.42.50
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 23 Aug 2016 07:42:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::229 as permitted sender) client-ip=2607:f8b0:4001:c0b::229;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x229.google.com with SMTP id x131so151163023ite.0
+        for <wwwmake@googlegroups.com>; Tue, 23 Aug 2016 07:42:50 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=EB3VVVuUbbgpFEdfuJrbiS0ATaJ0eOfA+nFQtCGHAeU=;
+        b=k/uJFPfcs+oN/fw1VLTT8vxNv7juYxWmHUtUsGKl0Yxahl/xk6mMckE2tP5sMq//8p
+         Iu+T09zOSX3m5F09dChbVXJ/UC6xsnDRtFMMo4xaJ7I+LXdQqZ2uDMa/+SAkv81vBGw6
+         az07vRfYnJbNXuL/D9Dt0k8p3Y8yZx1jD/1rjpZ/fax29reMn3BYF+nc8hXRPm8tTIhr
+         BcC8qOTVE69DHSn3QmlLRZB69+5beYLJjqBbKysoAZfItFcpGXv5xdffUxYTP08yhiuG
+         Qn3dEq8QnBUIMxUz7FUcuKK+JPdBXeT7y1ODw41/ToJ3S71goMVFbUaEX8sRqryCQOPp
+         DUmg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=EB3VVVuUbbgpFEdfuJrbiS0ATaJ0eOfA+nFQtCGHAeU=;
+        b=JxxrmZIcKDKq0vzV38AhjW2XvK/uPoaz7oe1jClnw1ObYCUbowdBL8YVA2ji5CPSo5
+         vdTaflvflAz5XtrIbEthyJxJtM3RqrelT2R8BrYZ0TA/uwxItJHirNeoXC0Pq8MxuWqt
+         fAdvQV3CfmdBs7FfOkALy8cq2KjAqTE9tnp1UCMDfJukXRpAKigAF8jnUvl9lwZks28i
+         pKj0eDgbvD2lw9j8BNLJAq5R5aC+rufpU7KMSXENhBDdvmDOVxUv8WJpOBI++f6/+WBd
+         76/2P/qjw1jfjQn5ARYQVbBFxdUFYpG400ecArFpALOc3mqGHogC9EoOiyt8JNCOttMR
+         MVqQ==
+X-Gm-Message-State: AEkoout6n/NCsSqJPdFxsBvqz13V08NTPEx422ky4n4tiOypPr0USR0GgnRj160qa15pe3n+NxYWyc8cMOy9lA==
+X-Received: by 10.36.233.196 with SMTP id f187mr27889254ith.19.1471963370040;
+ Tue, 23 Aug 2016 07:42:50 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Tue, 23 Aug 2016 07:42:49 -0700 (PDT)
+In-Reply-To: <94bf3378-3da0-4a17-9a07-6e80246da44d@googlegroups.com>
+References: <197f2510-7e6a-41c0-b5f3-47d25df639c1@googlegroups.com>
+ <484763cd-b10a-41c1-a4e4-7f2a4bcbf5ad@googlegroups.com> <94bf3378-3da0-4a17-9a07-6e80246da44d@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 23 Aug 2016 16:42:49 +0200
+Message-ID: <CAAxEZd9E2C=ObUyR4dot7tS_0=9f2=Ack31N5kre1uYU4WQMMA@mail.gmail.com>
+Subject: Re: [wwwmake:402] Re: Slide Show S9 & Jekyll
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Odin,
+   Thanks for the update and sharing your site and how you make it
+work. Looks great.  Cheers.
+

@@ -1,0 +1,82 @@
+From 1760844316672@xxx Tue Jun 16 00:16:58 +0000 2015
+X-GM-THRID: 1591517118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.91.73 with SMTP id cc9mr1251309wib.4.1406818057081;
+        Thu, 31 Jul 2014 07:47:37 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.83.195 with SMTP id s3ls915338wiy.11.canary; Thu, 31 Jul
+ 2014 07:47:36 -0700 (PDT)
+X-Received: by 10.180.231.36 with SMTP id td4mr1244402wic.2.1406818056676;
+        Thu, 31 Jul 2014 07:47:36 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x234.google.com (mail-wi0-x234.google.com [2a00:1450:400c:c05::234])
+        by gmr-mx.google.com with ESMTPS id hl14si419060wib.2.2014.07.31.07.47.36
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 31 Jul 2014 07:47:36 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::234 as permitted sender) client-ip=2a00:1450:400c:c05::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x234.google.com with SMTP id n3so4279471wiv.7
+        for <opensport@googlegroups.com>; Thu, 31 Jul 2014 07:47:36 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=Y5cnKidQqzjlifKk07IH2DO2c6vyq1+1FGVtQXA3Wzw=;
+        b=PHY1yFaDrqGXcVcRGowqw+nRzc/4/RTOE0suYC20wy1TRZ0ei6Bj2t2iHrRAGYoPs2
+         FCIvkfcGzqarJJaUzeTmi2tp+RDD2EIbxvPh4ZWsejOF/Jbr9mpb3oLq7XOmerORT3Ya
+         sAiyNamqLkk61Zs04T5sHnbwVBl+C8H3L1enMFENWxBqDy16V4S8bE9tA4UpQX5UTFeQ
+         5kmzQb9T9x0jBNRyCV8c9YiWu31pAPHt+pml9vOycYwf7FoT3+yPgnfmWtAZhTC5zn4w
+         gtw8+BVTKbBdv8qlVfRUzu4vQF+869cKC3NsVsHa7I4NhKTtFUmN1IB2mtnrcP6Kczsu
+         Ty9w==
+MIME-Version: 1.0
+X-Received: by 10.194.20.230 with SMTP id q6mr17778874wje.43.1406818056603;
+ Thu, 31 Jul 2014 07:47:36 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Thu, 31 Jul 2014 07:47:36 -0700 (PDT)
+In-Reply-To: <CANEDzNo=kQHfjjmyEJOYrzDQBVXP=1uAJBKpLsOgyyxdvhJ=Rw@mail.gmail.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+	<CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+	<3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+	<CAAxEZd9E7zgoReL0RprdZxXKLkBKvC5xVTNYUgFfsm02WZq=aQ@mail.gmail.com>
+	<16257216-0d9c-4d01-9f36-b00d26a612e2@googlegroups.com>
+	<CAAxEZd_oN6Z5nKLG1-znCwf7W_yEhQ-yyns0jxr5KVepFCmKHw@mail.gmail.com>
+	<c3e24314-de47-456d-bfd9-8973c1e1809f@googlegroups.com>
+	<CAAxEZd_EHOT-A-W5nFv8j6ZbvtAp+oKeJ=20XTw=wj625A3T3w@mail.gmail.com>
+	<CANEDzNpAaL-2oWLyQ7HpHhnz1=H8Xx+ajefJq4WOPhBpsygHvg@mail.gmail.com>
+	<CAAxEZd9wq+f_71pMTChpmQ5p00DcFXjiQEONtS1OLKiVdFBREA@mail.gmail.com>
+	<b41f388c-7c9a-4cef-9009-86dcc5b8c449@googlegroups.com>
+	<CAAxEZd_G609VULuuBL16AB9GkhF=+kUGD3b9MQqEpsBY73JnLQ@mail.gmail.com>
+	<CANEDzNpOtPJDnYCUTV0zmzHPji2s87jtHgWgWLFvsFN9rXQ77A@mail.gmail.com>
+	<CAAxEZd9rJ4KOtBAC8-TR4dX-sDYgUC_ghZbKA78ThYEaWqDHvA@mail.gmail.com>
+	<9cf339e0-2ccf-4abc-be3a-16fd55d01717@googlegroups.com>
+	<CAAxEZd828PS+iMDmPCEmmkRjghE6_cW379k3NRaWumZsmBb9KQ@mail.gmail.com>
+	<CANEDzNo=kQHfjjmyEJOYrzDQBVXP=1uAJBKpLsOgyyxdvhJ=Rw@mail.gmail.com>
+Date: Thu, 31 Jul 2014 16:47:36 +0200
+Message-ID: <CAAxEZd9V=0TSQKkUu1rXWXfRQ+49q=EZ-mnReB39Yggj6sEfVw@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Take your time no rush. Will try to add the CVS reader for the
+stats later today. To try the unit tests for the new/updated gem use
+($ rake test).
+
+   Good point. If you do updates for an event I suggest using a
+Rakefile (build script) and using the readers directly - when using
+readers you can specify an event etc.
+
+   Note, usually - by design - if you re(run) the datasets they should
+update your database (will NOT work if you want to DELETE records only
+works for INSERT and UPDATES).
+
+ Cheers.
+

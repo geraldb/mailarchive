@@ -1,0 +1,58 @@
+From 347236990976@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 347620769792
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,dc68df14041ca500,start
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.8.67 with SMTP id p3mr2057945laa.4.1418338526694;
+        Thu, 11 Dec 2014 14:55:26 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.152.23.229 with SMTP id p5ls381933laf.4.gmail; Thu, 11 Dec
+ 2014 14:55:26 -0800 (PST)
+X-Received: by 10.112.32.163 with SMTP id k3mr1450lbi.17.1418338526047;
+        Thu, 11 Dec 2014 14:55:26 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x229.google.com (mail-wi0-x229.google.com. [2a00:1450:400c:c05::229])
+        by gmr-mx.google.com with ESMTPS id by17si49202wib.3.2014.12.11.14.55.26
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 11 Dec 2014 14:55:26 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) client-ip=2a00:1450:400c:c05::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f169.google.com with SMTP id r20so2968758wiv.4
+        for <openmundi@googlegroups.com>; Thu, 11 Dec 2014 14:55:26 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=Rseq1huvbsJIgVQTB7dh3laHWzc0TXwTEfVIUQNNML8=;
+        b=FetBvTXkDjGUC71gq1eHtTMiIIZCwhUS2Vbd2mzIc2dvRgk5CUKUr6e8B/tHVOSZEI
+         FN0NEEFfRMweBAF5Y7OgXs06zfsefkGGi63TU5FQ38A+PUwdRVn7ASc5DydrPO9f9APx
+         esZqoEq1jMY+vfB6DyTJwA5/h14Lkmkd0hwILbaSt/5ZocpaUBh1yOJGLdKVvib0lrL5
+         3m5VMDXAPDtxMJ5GkeZqFfY5bLWLG+mvYSySO/9A5DF2MGT1KFPUpF2MxxdkJcH2prKV
+         hQhgMeFuey3HNQmoLZs1v0EhQVZD9oJoCmYDqZ4LEz5bwssELAukgsNLOZfu+TX0WqeL
+         8yxQ==
+MIME-Version: 1.0
+X-Received: by 10.180.94.230 with SMTP id df6mr2129589wib.25.1418338525740;
+ Thu, 11 Dec 2014 14:55:25 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Thu, 11 Dec 2014 14:55:25 -0800 (PST)
+Date: Thu, 11 Dec 2014 23:55:25 +0100
+Message-ID: <CAAxEZd_=NL0kp9QtgdskNAEZi8JxRBaLzBU8P-FE14SJ73qqjA@mail.gmail.com>
+Subject: factbook.json Case Study - Importing the World Factbook into ConceptJS
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: Sridhar Ramachandran has written up a little blog post about
+importing the world factbook data (using the factbook.json datasets)
+into ConceptJS - that bills itself as "a social Platform as a Service
+(PaaS) for the next-generation of web applications".
+
+  Full post @ lambdazen.blogspot.com/2014/12/importing-cia-world-factbook-into.html
+
+  Cheers.
+

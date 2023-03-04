@@ -1,0 +1,119 @@
+From 503592255488@xxx Tue Jun 16 00:17:14 +0000 2015
+X-GM-THRID: 501653438464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,d786e4121fda5685
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.100.35 with SMTP id ev3mr846113wib.6.1397473195192;
+        Mon, 14 Apr 2014 03:59:55 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.19.170 with SMTP id g10ls416294lae.101.gmail; Mon, 14 Apr
+ 2014 03:59:54 -0700 (PDT)
+X-Received: by 10.112.64.68 with SMTP id m4mr212418lbs.10.1397473194830;
+        Mon, 14 Apr 2014 03:59:54 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x231.google.com (mail-wi0-x231.google.com [2a00:1450:400c:c05::231])
+        by gmr-mx.google.com with ESMTPS id w9si538325wij.0.2014.04.14.03.59.54
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 14 Apr 2014 03:59:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) client-ip=2a00:1450:400c:c05::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f177.google.com with SMTP id cc10so3796967wib.16
+        for <opensport@googlegroups.com>; Mon, 14 Apr 2014 03:59:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=OOgt8qE8AH06d9w4c5LeAthwGkwK9wAkd1CButjA32M=;
+        b=WCxVjM3KXqPgzOJ40pUvLA98ySvIK1nm4RDM6j4aScycbxX3F4YI5/uNQPClNli+Wn
+         LuLdKgqJmaB6b9jYrZoNxmpCOPXIGCox85gaNjSeNs1necDms73tKKZ4dNPDWtEVtVQX
+         Fu2ngbkzl0TiVQW0JvXT7bDVRdSR+oM5ojOCk2ZB6rgSw8VIRDjGBqWo16gyQKu6MDTS
+         xduAfGGRquOzljTwUTV6U1bnynvfOreqw7YSVQ8+s9mXsQoruW4Yl/v0hnbTb+i+QhAa
+         HKqDpyezwFGSxh6mrKkjzCB0C7IBIat3WifIA330fjLwigt4L5/TZKwtX32/So5S05db
+         EIeQ==
+MIME-Version: 1.0
+X-Received: by 10.194.78.4 with SMTP id x4mr1084803wjw.58.1397473194722; Mon,
+ 14 Apr 2014 03:59:54 -0700 (PDT)
+Received: by 10.217.66.200 with HTTP; Mon, 14 Apr 2014 03:59:54 -0700 (PDT)
+In-Reply-To: <32f5fa1d-f48b-4056-baa9-5ff6a0e13cf9@googlegroups.com>
+References: <32f5fa1d-f48b-4056-baa9-5ff6a0e13cf9@googlegroups.com>
+Date: Mon, 14 Apr 2014 12:59:54 +0200
+Message-ID: <CAAxEZd_Dtkv3b9kbrV5O6a8yjY0UYvOFLS8uHbpRi0od2OLMFQ@mail.gmail.com>
+Subject: Re: [opensport] Rails 4 support and setup errors
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   Thanks for trying the sportdb gem.
+
+>  Is there a plan to upgrade these libraries to support rails 4 in the near future?
+
+   Yes, of course. Will try to fix all regex anchors in the next
+weeks. Thanks for your patience.
+
+> Also, I fixed these errors locally to see if it still worked, and I keep getting file parsing erros when
+> running 'sportdb setup'  when attempting to read a file which is not located within a gem:
+
+   If you know Rails / Ruby  I recommend using a build script
+(Rakefile). Otherwise please try the --verbose flag and post the stack
+trace.
+
+  Note, if you use sportdb setup you always need use the --include
+option to point to your fixtures - the fixtures are NOT included in
+the gem. You have to clone - get copies from GitHub ( see
+github.com/openfootball ).   Let me know if it works or what errors
+you get or what questions you have.
+
+  Cheers.
+
+2014-04-13 13:49 GMT+02:00 Thor Helgason <thorvaldurhelga@gmail.com>:
+> Hi there!
+>
+> I've been looking into using sportdb for creating a non-commercial app for
+> the world cup. When trying to use it with Rails 4 I've encountered number of
+> issues regarding multiline anchors in regular expressions in sportdb and
+> some of the dependencies (worlddb and tagutils). Is there a plan to upgrade
+> these libraries to support rails 4 in the near future?
+>
+> Also, I fixed these errors locally to see if it still worked, and I keep
+> getting file parsing erros when running 'sportdb setup'  when attempting to
+> read a file which is not located within a gem:
+>
+> "[info] parsing data 'setups/all'
+> (/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/setups/all.txt)...
+> [info] parsing data 'seasons'
+> (/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/seasons.txt)...
+> [info] parsing data 'setups/all' (/setups/all.txt)...
+> *** error: No such file or directory @ rb_sysopen - /setups/all.txt"
+>
+> Similarly when I run 'sportdb --dbname world-cup-2014.db setup --include
+> ./world-cup --worldinclude ./world.db' I get in the end:
+>
+> "[info] parsing data 'setups/all'
+> (/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/setups/all.txt)...
+> [info] parsing data 'seasons'
+> (/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/seasons.txt)...
+> [info] parsing data 'setups/all' (./world.db/setups/all.txt)...
+> *** error: No such file or directory @ rb_sysopen -
+> ./world.db/setups/all.txt"
+>
+> Otherwise the models seem to work fine in the sportdb/console, I just don't
+> have any data because of these missing file errors.
+>
+> Cheers,
+> Thor
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+

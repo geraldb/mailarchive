@@ -1,0 +1,41 @@
+From 542724063232@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 541888348160
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,6d425bbbfc6b9810,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Received: by 10.100.144.11 with SMTP id r11mr407606and.19.1241740784427; Thu, 
+	07 May 2009 16:59:44 -0700 (PDT)
+Date: Thu, 7 May 2009 16:59:44 -0700 (PDT)
+X-IP: 67.243.145.166
+User-Agent: G2/1.0
+X-Google-Token: QmGBvQwAAACmAM4N6B5gtsnW9-uoM-zw
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.10) 
+	Gecko/2009042316 Firefox/3.0.10,gzip(gfe),gzip(gfe)
+Message-ID: <844eafa6-81cb-4d68-9f8e-b11e31846c03@e20g2000vbc.googlegroups.com>
+Subject: getting stepped lists working with markdown
+From: Matt K <snarkhunt@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+X-Google-Approved: gerald@vanbeta.com via web at 2009-05-08 07:53:27
+
+My syntax of choice is markdown extended.
+
+I've been using the excellent pandoc by john macfarlane to produce
+slides, but I'd rather use a ruby solution as I've got more experience
+with it than Haskell.
+
+pandoc uses
+> - item one
+> - item two
+for producing stepped lists.  see http://johnmacfarlane.net/pandoc/README.html#producing-s5-with-pandoc
+I'm wondering if there is a way to get this working in slideshow as
+well.  All of the examples seem to be very textile oriented.
+
+If there isn't, any suggestions about how I'd go about extending
+slideshow to do this.  put some sort of wrapper on redcloth?
+
+Thanks for any help
+

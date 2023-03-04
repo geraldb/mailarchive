@@ -1,0 +1,77 @@
+From 356370087936@xxx Tue Jun 16 00:17:16 +0000 2015
+X-GM-THRID: 355490332672
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,93b16cae3953a2ea,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.189.69 with SMTP id gg5mr1554087lac.9.1392918662529;
+        Thu, 20 Feb 2014 09:51:02 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.21.148 with SMTP id v20ls558wie.39.gmail; Thu, 20 Feb 2014
+ 09:51:02 -0800 (PST)
+X-Received: by 10.180.20.177 with SMTP id o17mr1846245wie.7.1392918662072;
+        Thu, 20 Feb 2014 09:51:02 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x236.google.com (mail-wi0-x236.google.com [2a00:1450:400c:c05::236])
+        by gmr-mx.google.com with ESMTPS id c20si9644wib.3.2014.02.20.09.51.02
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 20 Feb 2014 09:51:02 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::236 as permitted sender) client-ip=2a00:1450:400c:c05::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x236.google.com with SMTP id f8so2074922wiw.3
+        for <opensport@googlegroups.com>; Thu, 20 Feb 2014 09:51:02 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=4/lCkJaoZnyi49Jt3SZOGyu7BXJo4pTk6ng6k98Yvds=;
+        b=Jh1d7WbGSnjCVrcaVS88pkg3v9EJUw6jtmrFkAYumai+w70o8KoV13FQ6t2Eewyl86
+         Lm5F/+uVOuE3PYpt72PF0FC7/COE4iZo3gJD4oYvm+jJqhUCdLkARa0NIEn2vjcheozh
+         rkZFIl9gtRJpekUqgCjIVaHCwc6+oMISbrtu+LoLKJMr0TVtLFdBqRdK1Y7UbW8QbEyK
+         QihKvlAtZLTbytBTo1dTkBxAec2bIn5EPxecW/5y2AVchNQNr0nKJcO8dl+1PIzqcTvH
+         P4T5+lhpG4lTQ6C4qF+6MJb9sO+09L1XjggxQ/Ik8SjxbGdwO9BA44tD1erczcEACqT/
+         gk5g==
+MIME-Version: 1.0
+X-Received: by 10.180.185.232 with SMTP id ff8mr3692871wic.25.1392918661954;
+ Thu, 20 Feb 2014 09:51:01 -0800 (PST)
+Received: by 10.216.208.136 with HTTP; Thu, 20 Feb 2014 09:51:01 -0800 (PST)
+Date: Thu, 20 Feb 2014 11:51:01 -0600
+Message-ID: <CAAxEZd_HB1fK8_rSdT=T-5_np-z0Un6CXzvMaAUJrwFd-g8yqA@mail.gmail.com>
+Subject: Sport(s) Logos - Football Club Logos Album (football.db.logos) n
+ National Team Logos (sport.db.logos) - 24x24,32x32
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: I've collected some football club logos and national team logos
+at the sportlogos project. You can see album pages / logo previews
+online at:
+
+   - Football Clubs (24x24) [1] n (32x32) [2]  and
+   - National Teams (24x24) [3] n (32x32) [4]
+
+   The logo filenames match the keys in the football.db or sport.db
+setups, for example:
+
+   The club logo filename for FC Barcelona is barcelona.png and
+   for Santos S=E3o Paulo it is santossp.png and so on.
+
+   For national teams, the three-letter FIFA code get used, for example:
+
+   The national team logo filename for Austria is aut.png and for
+England it is eng.png and so on.
+
+   Cheers.
+
+[1] sportlogos.github.io/football.db.logos.ruby/24.html
+[2] sportlogos.github.io/football.db.logos.ruby/32.html
+[3] sportlogos.github.io/sport.db.logos.ruby/24.html
+[4] sportlogos.github.io/sport.db.logos.ruby/32.html
+

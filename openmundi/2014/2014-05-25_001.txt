@@ -1,0 +1,110 @@
+From 55642685440@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 53053751296
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,35550e477e76e00d
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.50.9 with SMTP id y9mr8715362icf.1.1401085644629;
+        Sun, 25 May 2014 23:27:24 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.50.134.36 with SMTP id ph4ls1502122igb.10.gmail; Sun, 25 May
+ 2014 23:27:24 -0700 (PDT)
+X-Received: by 10.66.65.109 with SMTP id w13mr9787321pas.21.1401085644469;
+        Sun, 25 May 2014 23:27:24 -0700 (PDT)
+Received: by 10.224.189.8 with SMTP id dc8msqab;
+        Sun, 25 May 2014 15:18:46 -0700 (PDT)
+X-Received: by 10.182.99.199 with SMTP id es7mr204obb.17.1401056326506;
+        Sun, 25 May 2014 15:18:46 -0700 (PDT)
+X-Google-Doc-Id: 30fe566ab10b65e5
+X-Google-Web-Client: true
+Date: Sun, 25 May 2014 15:18:45 -0700 (PDT)
+From: Ryan Pedela <rpedela@datalanche.com>
+To: openmundi@googlegroups.com
+Message-Id: <d8727ee6-407d-4596-bc85-d129fa7ee9b0@googlegroups.com>
+Subject: creating copy fails
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1451_25072452.1401056325952"
+X-Google-Token: EMXYiZwFAlwYkaBgWjo0
+X-Google-IP: 24.9.78.37
+
+------=_Part_1451_25072452.1401056325952
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1452_16156246.1401056325952"
+
+------=_Part_1452_16156246.1401056325952
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+ 
+
+Here is the output on Ubuntu 12.04 with Ruby 1.9.3.
+
+$ git clone git://github.com/openmundi/world.db.git
+$ worlddb setup --include ./world.db
+confdb/1.1.1 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+tagutils/0.2.2 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model >WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model >WorldDb::Model::Region<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model >WorldDb::Model::City<
+worlddb/2.0.4 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+logdb 0.6.0 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+worlddb/2.0.4 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+worlddb/2.0.4 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+working directory: /home/pedela/source/worlddb
+Connecting to db using settings: 
+{:adapter=>"sqlite3", :database=>"./world.db"}
+-- create_table(:logs)
+
+*** error: unable to open database file
+
+======================================
+ 
+
+Then I tried executing worlddb inside the repo directory which succeeded.
+
+$ git clone git://github.com/openmundi/world.db.git
+$ cd world.db
+$ worlddb setup
+
+WORKS!!!
+
+ 
+------=_Part_1452_16156246.1401056325952
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr"><div class="edit-comment-hide">
+        <div class="comment-body markdown-body markdown-format js-comment-body">
+            <p>Here is the output on Ubuntu 12.04 with Ruby 1.9.3.</p>
+
+<pre><code>$ git clone git://github.com/openmundi/world.db.git
+$ worlddb setup --include ./world.db
+confdb/1.1.1 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+tagutils/0.2.2 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Model::Country&lt;
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Model::Region&lt;
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Model::City&lt;
+worlddb/2.0.4 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+logdb 0.6.0 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+worlddb/2.0.4 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+worlddb/2.0.4 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+working directory: /home/pedela/source/worlddb
+Connecting to db using settings: 
+{:adapter=&gt;"sqlite3", :database=&gt;"./world.db"}
+-- create_table(:logs)
+
+*** error: unable to open database file<br><br>======================================<br>&nbsp;</code></pre>
+
+<p>Then I tried executing <code>worlddb</code> inside the repo directory which succeeded.</p>
+
+<pre><code>$ git clone git://github.com/openmundi/world.db.git
+$ cd world.db
+$ worlddb setup<br><br>WORKS!!!
+</code></pre>
+        </div>
+      </div></div>
+------=_Part_1452_16156246.1401056325952--
+
+------=_Part_1451_25072452.1401056325952--
+

@@ -1,0 +1,101 @@
+From 1127291551744@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1124184621056
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,82c0419e1d181739
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.224.39.72 with SMTP id f8mr5607361qae.7.1343519950240;
+        Sat, 28 Jul 2012 16:59:10 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.224.98.8 with SMTP id o8ls6970745qan.3.gmail; Sat, 28 Jul 2012
+ 16:59:08 -0700 (PDT)
+Received: by 10.224.100.137 with SMTP id y9mr5110969qan.2.1343519948790;
+        Sat, 28 Jul 2012 16:59:08 -0700 (PDT)
+Received: by 10.224.18.72 with SMTP id v8msqaa;
+        Thu, 26 Jul 2012 13:33:00 -0700 (PDT)
+Received: by 10.52.155.207 with SMTP id vy15mr44270vdb.13.1343334779498;
+        Thu, 26 Jul 2012 13:32:59 -0700 (PDT)
+X-Google-Doc-Id: 75fe6cb68518969d
+X-Google-Web-Client: true
+Date: Thu, 26 Jul 2012 13:32:58 -0700 (PDT)
+From: Capi Etheriel <barraponto@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <f9a3eb1f-0639-47cc-8051-d230530cb748@googlegroups.com>
+In-Reply-To: <5abaddf7-02a1-4f79-a311-fbe58681eb7f@googlegroups.com>
+References: <5abaddf7-02a1-4f79-a311-fbe58681eb7f@googlegroups.com>
+Subject: Re: Some Problem with "Google HTML5 Rocks" template
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_321_7173370.1343334779015"
+X-Google-Token: EPrSxoAF0bD7lRfSg_Y0
+X-Google-IP: 200.238.1.1
+
+------=_Part_321_7173370.1343334779015
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_322_1757833.1343334779015"
+
+------=_Part_322_1757833.1343334779015
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+yeah, i'm feeling the same issue.
+idk why it is printing the title twice.
+i'm using a textile source, fwiw.
+
+Em quarta-feira, 25 de julho de 2012 05h52min04s UTC-3, mmx peng escreveu:
+>
+> when i use google HTML5 Rocks templates 
+>
+> i saw two header on each slide
+>
+> the  html code is:
+>
+>         <div class="slide transitionSlide" id="slide2">
+>>           <header><h1>Why a New Language?</h1></header>
+>>           <section>
+>>
+>> <!-- _S9SLIDE_ -->
+>> <h1>Why a New Language?</h1>
+>>
+>
+>
+> i think remove the following code is ok:
+>
+> <!-- _S9SLIDE_ -->
+>> <h1>Why a New Language?</h1>
+>>
+>
+>  how can i fix this?
+>
+> thanks...
+>
+
+------=_Part_322_1757833.1343334779015
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+yeah, i'm feeling the same issue.<br>idk why it is printing the title twice=
+.<br>i'm using a textile source, fwiw.<br><br>Em quarta-feira, 25 de julho =
+de 2012 05h52min04s UTC-3, mmx peng  escreveu:<blockquote class=3D"gmail_qu=
+ote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padd=
+ing-left: 1ex;">when i use google HTML5 Rocks templates <br><br>i saw two h=
+eader on each slide<br><br>the&nbsp; html code is:<br><br><blockquote style=
+=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding=
+-left:1ex" class=3D"gmail_quote">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ &lt;div class=3D"slide transitionSlide" id=3D"slide2"&gt;<br>&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;header&gt;&lt;h1&gt;Why a New=
+ Language?&lt;/h1&gt;&lt;/header&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; &lt;section&gt;<br><br>&lt;!-- _S9SLIDE_ --&gt;<br>&lt;=
+h1&gt;Why a New Language?&lt;/h1&gt;<br></blockquote><br><br>i think remove=
+ the following code is ok:<br><br><blockquote style=3D"margin:0px 0px 0px 0=
+.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex" class=3D"gmai=
+l_quote">&lt;!-- _S9SLIDE_ --&gt;<br>&lt;h1&gt;Why a New Language?&lt;/h1&g=
+t;<br></blockquote><div><br>&nbsp;how can i fix this?<br><br>thanks...<br><=
+/div></blockquote>
+------=_Part_322_1757833.1343334779015--
+
+------=_Part_321_7173370.1343334779015--
+

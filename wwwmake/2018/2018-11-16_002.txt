@@ -1,0 +1,111 @@
+From 6624593515824283648@xxx Fri Nov 16 22:46:12 +0000 2018
+X-GM-THRID: 6621754029295796224
+Date: Fri, 16 Nov 2018 14:46:12 -0800 (PST)
+From: Steven Jeffries <stevenjeffries@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <7300efa4-1dc2-4382-a6f1-bd0091e9dc89@googlegroups.com>
+In-Reply-To: <CAAxEZd-nMUXrejmjgZ6-n6Gn-Kjjon1OvJ-q1-m_c_x4KHfuwg@mail.gmail.com>
+References: <320fd681-22f5-48c5-8d91-5d1e6c0e3d01@googlegroups.com>
+ <CAAxEZd-nMUXrejmjgZ6-n6Gn-Kjjon1OvJ-q1-m_c_x4KHfuwg@mail.gmail.com>
+Subject: Re: [wwwmake:456] csvreader encoding options
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1198_504273715.1542408372366"
+X-Google-Token: ELSRvd8FEdoWfek7JL00
+X-Google-IP: 2603:3004:92:800:e88d:1132:b4f5:5559
+
+------=_Part_1198_504273715.1542408372366
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1199_1034733316.1542408372366"
+
+------=_Part_1199_1034733316.1542408372366
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I finally got around to testing that out. It works, thanks!
+
+I do have another question, but it's not related to this, so I'll start a 
+new thread.
+
+Thanks again!
+
+
+On Thursday, November 8, 2018 at 11:14:59 PM UTC-8, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>     Thanks for trying the (new) csvreader library. 
+>
+> > Is there a way to pass encoding options to csvreader? I keep getting 
+> "invalid byte sequence in UTF-8" when trying to read a CSV file. 
+>
+>      By default all files are opened with the (file) mode set to 
+> 'r:bom|utf-8' [1] 
+>
+>       If you use CsvReader.open  (or Csv.open) you can pass in the 
+> mode as a second parameter (it works like File.open because it is 
+> File.open :-). 
+>
+>       The recommendation is to (always use utf-8 internally) and 
+> convert your "external" source e.g.: 
+>
+>        Csv.open( "windows.csv", "r:windows-1251:utf-8" ).read / each / 
+> etc.  or something 
+>
+>         Let us know how it goes. Cheers. Prost. 
+>
+> [1] 
+> https://github.com/csvreader/csvreader/blob/master/lib/csvreader/reader.rb#L11 
+>
+
+------=_Part_1199_1034733316.1542408372366
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I finally got around to testing that out. It works, thanks=
+!<div><br></div><div>I do have another question, but it&#39;s not related t=
+o this, so I&#39;ll start a new thread.</div><div><br></div><div>Thanks aga=
+in!</div><div><br><br>On Thursday, November 8, 2018 at 11:14:59 PM UTC-8, G=
+erald Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;marg=
+in-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 =C2=A0 Thanks for trying the (new) csvreader library.
+<br>
+<br>&gt; Is there a way to pass encoding options to csvreader? I keep getti=
+ng &quot;invalid byte sequence in UTF-8&quot; when trying to read a CSV fil=
+e.
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0By default all files are opened with the (file) mod=
+e set to
+<br>&#39;r:bom|utf-8&#39; [1]
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0 If you use CsvReader.open =C2=A0(or Csv.open) you =
+can pass in the
+<br>mode as a second parameter (it works like File.open because it is
+<br>File.open :-).
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0 The recommendation is to (always use utf-8 interna=
+lly) and
+<br>convert your &quot;external&quot; source e.g.:
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0 =C2=A0Csv.open( &quot;windows.csv&quot;, &quot;r:w=
+indows-1251:utf-8&quot; ).read / each /
+<br>etc. =C2=A0or something
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0 =C2=A0 Let us know how it goes. Cheers. Prost.
+<br>
+<br>[1] <a href=3D"https://github.com/csvreader/csvreader/blob/master/lib/c=
+svreader/reader.rb#L11" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"t=
+his.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2F=
+csvreader%2Fcsvreader%2Fblob%2Fmaster%2Flib%2Fcsvreader%2Freader.rb%23L11\x=
+26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHhzK9LtW6cAz2OcKP0ag_NaInjzg&#39;;re=
+turn true;" onclick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhtt=
+ps%3A%2F%2Fgithub.com%2Fcsvreader%2Fcsvreader%2Fblob%2Fmaster%2Flib%2Fcsvre=
+ader%2Freader.rb%23L11\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHhzK9LtW6cAz=
+2OcKP0ag_NaInjzg&#39;;return true;">https://github.com/csvreader/<wbr>csvre=
+ader/blob/master/lib/<wbr>csvreader/reader.rb#L11</a>
+<br></blockquote></div></div>
+------=_Part_1199_1034733316.1542408372366--
+
+------=_Part_1198_504273715.1542408372366--
+

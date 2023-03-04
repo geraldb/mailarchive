@@ -1,0 +1,83 @@
+From 1658753908736@xxx Tue Jun 16 00:16:54 +0000 2015
+X-GM-THRID: 1591517118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.42.229 with SMTP id r5mr19376lbl.23.1405840876315;
+        Sun, 20 Jul 2014 00:21:16 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.234.228 with SMTP id uh4ls42509lac.59.gmail; Sun, 20 Jul
+ 2014 00:21:15 -0700 (PDT)
+X-Received: by 10.152.43.77 with SMTP id u13mr6999lal.7.1405840875795;
+        Sun, 20 Jul 2014 00:21:15 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22c.google.com (mail-we0-x22c.google.com [2a00:1450:400c:c03::22c])
+        by gmr-mx.google.com with ESMTPS id b9si409126wic.2.2014.07.20.00.21.15
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 20 Jul 2014 00:21:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22c as permitted sender) client-ip=2a00:1450:400c:c03::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22c as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f172.google.com with SMTP id x48so6131486wes.17
+        for <opensport@googlegroups.com>; Sun, 20 Jul 2014 00:21:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=03KqExyh24Q/qQlxmdTO3UPOZxV6tia+NtMgq0CTTHs=;
+        b=hCjrcmreHw8kbtXv0ZbRUuG+z2YD9gaa8zlqlc9dn/2SBCOYZf9BwkFcpX3l6W1KZD
+         pzhEglM59AdF7GbNuyzO3Fepo+Cd1d7mvLJTyVYsAuT3wnZW4nGKD37ja6Wcx/K/eILO
+         kz5hkNWuhs/0UGtU8Oyr6lYbHdTalcUOa1xyIsIylZnVBgKpaHyGAWwv3nGjFwJqhFGI
+         RYoAjjuQBtr7wnij3uPM5MB+pWAelFEzsro8UXx3gTXt2yC5KyMtcnfy/DgK/b6Mo5+j
+         BQmjiA7Jan3T4X5XDBEesfxH5pvMMUTBZkdIk+lCmC6ciVDYW5xbQGzixm2diZOPfBkP
+         hR3w==
+MIME-Version: 1.0
+X-Received: by 10.194.20.230 with SMTP id q6mr10910783wje.43.1405840875707;
+ Sun, 20 Jul 2014 00:21:15 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Sun, 20 Jul 2014 00:21:15 -0700 (PDT)
+In-Reply-To: <3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+	<CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+	<3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+Date: Sun, 20 Jul 2014 09:21:15 +0200
+Message-ID: <CAAxEZd9E7zgoReL0RprdZxXKLkBKvC5xVTNYUgFfsm02WZq=aQ@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+    If I may suggest - to not complicate stats queries  - I suggest
+using the "generic" property model only as a last resort/fallback and
+actually roll out/spell out all properties and tables you need e.g.
+
+create_table : player_stats do |t|
+  t.references :person
+  t.references  :team
+  t.references  :game
+  t.integer       :prop1    # fix: use real name here
+  t.integer       :prop2    # fix: use real name here
+  t.integer       :prop3    # fix:  use real name here
+  t.integer       :prop3    # fix: use real name here
+  t.string        :prop3    # fix: use real name here
+  t.timestamps
+end
+
+create_table : team_stats do |t|
+  t.references  :team
+  t.references  :game
+  t.integer       :prop1    # fix: use real name here
+  t.integer       :prop2    # fix: use real name here
+  t.integer       :prop3    # fix: use real name here
+  t.integer       :prop3    # fix: use real name here
+  t.integer       :prop3    # fix: use real name here
+  t.timestamps
+end
+
+and so on. Cheers.
+

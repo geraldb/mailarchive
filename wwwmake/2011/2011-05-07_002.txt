@@ -1,0 +1,48 @@
+From 882963906560@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 879261384704
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,31bced0271611906
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.224.210.2 with SMTP id gi2mr394274qab.28.1304761464774;
+        Sat, 07 May 2011 02:44:24 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.224.176.70 with SMTP id bd6ls806914qab.5.gmail; Sat, 07 May
+ 2011 02:44:24 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.224.209.197 with SMTP id gh5mr590888qab.34.1304761464369; Sat,
+ 07 May 2011 02:44:24 -0700 (PDT)
+Received: by f9g2000vbz.googlegroups.com with HTTP; Sat, 7 May 2011 02:44:24
+ -0700 (PDT)
+Date: Sat, 7 May 2011 02:44:24 -0700 (PDT)
+In-Reply-To: <9ba424a6-84bf-4c7c-aaa0-b8595645720f@a26g2000vbo.googlegroups.com>
+X-IP: 188.22.222.244
+References: <9ba424a6-84bf-4c7c-aaa0-b8595645720f@a26g2000vbo.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EPiolO4EmTSD_1JI69c0
+X-HTTP-UserAgent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/534.24 (KHTML, like
+ Gecko) Chrome/11.0.696.60 Safari/534.24,gzip(gfe)
+Message-ID: <e01adf3e-9cb5-4dd1-9173-de27591e1ebf@f9g2000vbz.googlegroups.com>
+Subject: Re: web slide show message
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  It's great news that IE9 supports vector graphics builtin. However,
+the latest and recommded way for background gradients is using CSS3.
+Unfortunately, IE9 doesn't support CSS3 gradients, thus, the "Please,
+use a better browser banner" is still valid.
+
+  If you use the built-in S6 template pack and want to use it for IE
+just don't use CSS3 gradient yet and remove the conditional include
+(just one script include) from the slide template e.g.
+
+<!-- Better Browser Banner for Microsoft Internet Explorer (IE) -->
+<!--[if IE]>
+<script src="shared/jquery.microsoft.js"></script>
+<![endif]-->
+
+   Cheers. Gerald
+

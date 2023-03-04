@@ -1,0 +1,151 @@
+From 6441506503632355328@xxx Tue Jul 11 13:35:05 +0000 2017
+X-GM-THRID: 6441506504104214528
+X-Received: by 10.36.3.4 with SMTP id e4mr9945198ite.20.1499780105074;
+        Tue, 11 Jul 2017 06:35:05 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.107.23.135 with SMTP id 129ls1496960iox.0.gmail; Tue, 11 Jul
+ 2017 06:35:04 -0700 (PDT)
+X-Received: by 10.200.1.5 with SMTP id e5mr13648693qtg.89.1499780104526;
+        Tue, 11 Jul 2017 06:35:04 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1499780104; cv=none;
+        d=google.com; s=arc-20160816;
+        b=QvCPYMhKwPJ/eeaO070epphjeHFronNmDbeosaZcv4LW853Gi+GF/nqcISbnL+G0ZL
+         V/Kl7q/IpzgIWob0EpTSugvkKvT1OK5lNUBr251nfUZn7NtYpKFVt/5CEZMOX/V9jeCH
+         xqFo4FSgeDHy3KcundMlA09feq3wWSV9704daY3M7dkvNYCqWNpe/I1qv+djtewtpCHN
+         xxfP0CwwkJvHNcfDrHAZj/AcwCKsoCpQAiaIsih5UvTcCZSsJzJWcXA8OuHM8TwDyEGF
+         WhWVgrWOdjUc6rEn+M0/TLvCv2Gl3rFBxP5t6xXvDA/OIagfwJnUymGy43EKlh0k7fRJ
+         xTUw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=Ll0wQhQTQwtVP70swnQodLS3S+ApDrj6bNmszvEjN8w=;
+        b=CoxW1xGfWf9nQw1wMfoYrTopzVRpUuAKpCgaW7dorIA1i504QPbbcG91YVjJuD42Fv
+         e20fCzUUlW9x1JbW5mPJE37/kGIZ3SYI/fHxW49nSlBxhAQ3kjAp+hAqqHHIJo698mcW
+         jN2p5+GgYCo6ijwbTApdUFooksgwdZVhZS0T5eB/NA7a8Qb1LoepVInOW8dRDrzrrSr8
+         tFSjUzdu4TezlG7ghAbbBDkBFzvbsoFILp85WZuBXdLElC4sLo2OJLAQ4wkwxzymRskc
+         /h+yYnGhYlxfwRNYVAhzUjAkwrdmuPN1sQLi7YJVlz3VJOWZ1YZ89RMjd8T2w5mMO0ww
+         qeXg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=H1qBMA4b;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x230.google.com (mail-it0-x230.google.com. [2607:f8b0:4001:c0b::230])
+        by gmr-mx.google.com with ESMTPS id 71si74793ita.2.2017.07.11.06.35.04
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 11 Jul 2017 06:35:04 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) client-ip=2607:f8b0:4001:c0b::230;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=H1qBMA4b;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x230.google.com with SMTP id m84so20302617ita.0
+        for <wwwmake@googlegroups.com>; Tue, 11 Jul 2017 06:35:04 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=Ll0wQhQTQwtVP70swnQodLS3S+ApDrj6bNmszvEjN8w=;
+        b=H1qBMA4bUc5SocgnVapwjMZPhQ/Vgq2Qe8NxcR+/yVhO8867xAoLhQCEey0927NTxe
+         kmE0gDFtgCepKvpOCKEY2OmNKLTKFeUUK7drttDt10o7GRQMH46HYmIMJ+NVlfcNjtBh
+         jDDq2sivi5+QvS3GpFNJA7uRp0pHm9nLOstxEMr0Wgwap72YAOzE8do0yG+JS/8c+QPW
+         xti05Wn/TISDobwZI0t3kKI+2uZZCaevSyR2CmkIlF0x3b5FTMRhy76vRMu+sRWnnluj
+         gGKwS0dISbP/oUB41h4faoApz+etahu/KgTZCZt60G7GfpJD59lFXFJB0j8yIbKEPaXP
+         MfvA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=Ll0wQhQTQwtVP70swnQodLS3S+ApDrj6bNmszvEjN8w=;
+        b=iK31PYIFhXlRKRBTllQcX37gopNYLZQWeGHKMqAZdkLk0YI4kc0kUP6m5sg3VgJ2Bm
+         66U4XCXq13+dRU4k01IuYHlILTkRep+vx/Xj+6JKgnU8N2OZgeo34t4TN6Svh1WJEyya
+         ZQ8rUHV1hXP/8TNDmIu9udaOqsxULAT4Po23aMC6/GxJR9xfjnLzFSpVtY3uYgrYBfm7
+         UhxVgXttXIRTvEVwCCLi62lDdAJoaSALopLHj5kWpd6JxiDFBvHz7wZOlF7fTvPRfjtP
+         3YKqvCtkbrwoS+rAuqwzmfNZhIsez9AOrbmeq/PhuV5y3I8izzlzf4pA5ZmK/DjfSntQ
+         y9DQ==
+X-Gm-Message-State: AIVw113VcfkjDIUxEG8HlJgcMffTOhYrotHRUSIz5yYe41u/e66AdNyz
+	FwwvRuGbC1M1xTCkyeEJwXuo1XcKMmfd
+X-Received: by 10.107.150.67 with SMTP id y64mr8429835iod.129.1499780104080;
+ Tue, 11 Jul 2017 06:35:04 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.4.17 with HTTP; Tue, 11 Jul 2017 06:35:03 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 11 Jul 2017 15:35:03 +0200
+Message-ID: <CAAxEZd8rrwSSJTWzF97otFJTD13ae=yRnOOLW6_0-uqFWMisag@mail.gmail.com>
+Subject: Announcing JSON v1.1 Feed - JSON Feed Evolved for Humans thanks to
+ JSON: 1.1 # JSON with Extensions (JSONX)
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+ I've put together a humanized JSON Feed version called JSON v1.1 Feed
+  thanks to JSON: 1.1 # JSON with Extensions (JSONX) making JSON
+easier-to-write and easier-to-read.
+
+
+ JSON v1.1 Feed follows JSON Feed but allows all JSON v1.1 extensions e.g.:
+
+- quotes for strings are optional if they follow JavaScript identifier
+rules (with some additions e.g. `.-+/^@`)
+- single line comments start with `#` or `//`
+- commas after object key-value pairs are optional
+- commas after array items are optional
+- and much more
+
+Plus some extras for JSON Feed:
+
+- feed gets auto-wrapped in object, that is, `{ ... }`
+- version number gets shortend to `1` instead of
+`https://jsonfeed.org/version/1`
+
+
+  Example:
+
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "My Example Feed",
+    "home_page_url": "https://example.org/",
+    "feed_url": "https://example.org/feed.json",
+    "items": [
+        {
+            "id": "2",
+            "content_text": "This is a second item.",
+            "url": "https://example.org/second-item"
+        },
+        {
+            "id": "1",
+            "content_html": "<p>Hello, world!</p>",
+            "url": "https://example.org/initial-post"
+        }
+    ]
+}
+
+
+  Can get shortened to:
+
+
+ # JSON Feed Simplified w/ JSON v1.1, JSON with Extensions (JSONX)
+
+ version       : '1'
+ title         : 'My Example Feed'
+ home_page_url : 'https://example.org/'
+ feed_url      : 'https://example.org/feed.json'
+ items         : [
+   {
+     id           : '2'
+     content_text : 'This is a second item.'
+     url          : 'https://example.org/second-item'
+   }
+   {
+     id           : '1'
+     content_html : '<p>Hello, world!</p>'
+     url          : 'https://example.org/initial-post'
+   }
+ ]
+
+
+   Find out more at the JSON v1.1 Feed page [1]. Cheers.
+
+
+[1] https://github.com/jsonii/json-feed
+

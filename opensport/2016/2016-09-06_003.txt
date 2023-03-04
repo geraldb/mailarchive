@@ -1,0 +1,73 @@
+From 6327091035190067200@xxx Tue Sep 06 05:44:38 +0000 2016
+X-GM-THRID: 6327070589248864256
+X-Received: by 10.13.226.212 with SMTP id l203mr31990145ywe.32.1473140678395;
+        Mon, 05 Sep 2016 22:44:38 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.13.112 with SMTP id 103ls10052545oti.11.gmail; Mon, 05 Sep
+ 2016 22:44:38 -0700 (PDT)
+X-Received: by 10.129.168.197 with SMTP id f188mr33101585ywh.39.1473140677991;
+        Mon, 05 Sep 2016 22:44:37 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-oi0-x244.google.com (mail-oi0-x244.google.com. [2607:f8b0:4003:c06::244])
+        by gmr-mx.google.com with ESMTPS id u125si1312950itc.0.2016.09.05.22.44.37
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 05 Sep 2016 22:44:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4003:c06::244 as permitted sender) client-ip=2607:f8b0:4003:c06::244;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4003:c06::244 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-oi0-x244.google.com with SMTP id 2so12214335oif.2
+        for <opensport@googlegroups.com>; Mon, 05 Sep 2016 22:44:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=TPzEwFA+avy6yAhUwMTHHaERy2+vzuc3qlE2dCRnSew=;
+        b=YflI1HZvnksI0ORLFmJ3AuNN5trqw5gE13DrxqawrbgKK5w5n6vA6MyFrRsUGFSqlg
+         tiizFyy8DflGIAelQ+e8oGkxI9/dz7+xUndLvQMreGNCPmfWjtLU5sLsBUeDcNVqx1+X
+         abh6DFcE5ft+bTb2XAtCbOvGgbZU0jNlNe7A3Pf/c6OigBo47ZdFFMdjwr06d9Im93VE
+         o4hzFCIYsNFwOx4AiS+JRuRLGw52H3G9DlrLrjklWVg8Xm+clLOerNwzl200w4XIJ4ZE
+         91wetn/T4PCZwOd/MynR2kCGQcMLAl8CaonzneyflWHBs/+Onsye53kS2ux99CJLZJ20
+         QzBA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=TPzEwFA+avy6yAhUwMTHHaERy2+vzuc3qlE2dCRnSew=;
+        b=gQwJH9QZ059N0W08xa+x9e5rEyajsPFRGfe9AiVIQJoQA4NSgXW7qdqRe7hODCSSaC
+         amaNf0Vlsda+ABvOsWVdSG2memq8590KBffK2mkgbf0jnEL1KrN/wp5ZPaBWEXks7nVr
+         hh0LPRVzop0ZDbGfTuC10yEDA/B8WVRTBFEOmkDCGf14HrSAATysyLtgEFlabeEKmN00
+         griBySTIaa/BmZE9fMgooM4Lo4rH69h4rzQpH0fUbWECqFxe+0uwlJwInGMTZCZsZh+p
+         H3ST92bv+mu3NqMKedZgKaKTyn1HfGj/ZHFLzL3tyqwbl+7dtSxolJtEFCOmHZmfc7ud
+         YEow==
+X-Gm-Message-State: AE9vXwPPbLtku5IePP+QYfSEdA3RrUA+fpghn4gHvln8hOlrph8hxRvr2135R3FnOGVmKHsAuepLWgW88pxfcg==
+X-Received: by 10.36.121.77 with SMTP id z74mr28455472itc.19.1473140677533;
+ Mon, 05 Sep 2016 22:44:37 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Mon, 5 Sep 2016 22:44:37 -0700 (PDT)
+In-Reply-To: <ca4525cd-a47e-4569-93e0-f9efbbcb779b@googlegroups.com>
+References: <ca4525cd-a47e-4569-93e0-f9efbbcb779b@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 6 Sep 2016 07:44:37 +0200
+Message-ID: <CAAxEZd9W3+3Hq=S__0_Ff7SPxcUZbo_gbJGbSTh+k7PbSQXc6w@mail.gmail.com>
+Subject: Re: [opensport] rake db:setup failure
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    If you use bundler, try (it w/ bundle exec to lock down the
+version via gemfile):
+
+$ bundle exec rake db:setup --trace
+
+    Are you trying to run the sportbook rails app? (e.g. sportbook
+will not run with the latest sportdb/worldb versions)
+
+> NameError: uninitialized constant WorldDb::ReaderBase
+
+  Unless you're using sportbook try to use the latest (and greatest)
+versions ;-)
+
+   Cheers.
+

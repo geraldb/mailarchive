@@ -1,0 +1,76 @@
+From 2078313283584@xxx Tue Jun 16 00:16:51 +0000 2015
+X-GM-THRID: 2078362566656
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,7032b8f52aaf527f,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.30.3 with SMTP id o3mr435393lah.4.1408989427001;
+        Mon, 25 Aug 2014 10:57:07 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.207.77 with SMTP id lu13ls322689wic.6.canary; Mon, 25 Aug
+ 2014 10:57:06 -0700 (PDT)
+X-Received: by 10.194.235.166 with SMTP id un6mr2015378wjc.2.1408989426650;
+        Mon, 25 Aug 2014 10:57:06 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x233.google.com (mail-wg0-x233.google.com [2a00:1450:400c:c00::233])
+        by gmr-mx.google.com with ESMTPS id gg11si68527wic.0.2014.08.25.10.57.06
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 25 Aug 2014 10:57:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) client-ip=2a00:1450:400c:c00::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f51.google.com with SMTP id b13so13505826wgh.22
+        for <opensport@googlegroups.com>; Mon, 25 Aug 2014 10:57:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=oKj3oFp1JNC6V8BQPxocRC3t2DCivFXtNlUnCHEhYZg=;
+        b=EexWxZB/m5+yh/YfhV9wgNJ34+2KQ0jcJP//avVvyo3dYskh2CbSrwVMnkjs3RUhwE
+         mR6h/OeXUHWlPmbh4Ev5tkj8gHqfulXSqk1fzxd7ma5zO1IDhpbvalXfp25wrO7RiDNL
+         0/SRSyDT6QtlKf3moFatrJ19ZGzSIGMAp3wHbcwMuFfs8qs4tp/4PHVp9Vx0Wf7uU4xv
+         JiAjS8HMA4j7YuMR78nGOw+OH/0kDKTC5rgT+rXXunqNP3tP/GqkzouU0RSVZesxPDNv
+         CvxgIH9o8m9cjajnRdTzIoAGmk+PKwC6/5d8jQyWwe0T7hHR935nuHwWKFEMD9WIoXBD
+         E2Ig==
+MIME-Version: 1.0
+X-Received: by 10.194.78.100 with SMTP id a4mr4377693wjx.106.1408989426568;
+ Mon, 25 Aug 2014 10:57:06 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Mon, 25 Aug 2014 10:57:06 -0700 (PDT)
+Date: Mon, 25 Aug 2014 19:57:06 +0200
+Message-ID: <CAAxEZd9DxqAume2vHS5S+jYpbM702UYTvq=gZ_as5SV51G_GvQ@mail.gmail.com>
+Subject: Upcoming Meetups / Talks - Vienna, Linz, Salzburg (Austria) -
+ Aug/Sep/Oct 2014
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  If you happen to be around in Central Europe (in Austria) you're
+invited to meet-up.
+
+  Over the next couple of weeks if all works out I will attend (or
+speak) at these meetups:
+
+  In Vienna:
+  - Wed, Aug/27  at Vienna.js [1]
+  - Thu, Sep/4   at Vienna.rb [2]
+
+  In Linz:
+  - Wed, Sep/10  at Ruby User Group Linz [3]
+
+  In Salzburg:
+  - Fri-Sun Oct/24-26 at Barcamp "The next web" 2014 [4]
+
+   If you're interested to talk in person say hello here on the list.
+All events free. Everyone welcome.
+
+ Cheers.
+
+[1] www.meetup.com/viennajs
+[2] www.meetup.com/vienna-rb
+[3] www.meetup.com/Ruby-User-Group-Linz-RUGL
+[4] www.meetup.com/salzburgwebdev
+

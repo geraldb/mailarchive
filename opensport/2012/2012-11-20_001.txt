@@ -1,0 +1,55 @@
+From 40489713664@xxx Tue Jun 16 00:17:25 +0000 2015
+X-GM-THRID: 39901462528
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,8946ca9c3b80d567,start
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+Received: by 10.224.111.140 with SMTP id s12mr10351653qap.5.1353400266776;
+        Tue, 20 Nov 2012 00:31:06 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.49.94.103 with SMTP id db7ls3011891qeb.69.gmail; Tue, 20 Nov
+ 2012 00:31:06 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.49.24.164 with SMTP id v4mr3145674qef.6.1353400266625; Tue, 20
+ Nov 2012 00:31:06 -0800 (PST)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by a14g2000yqh.googlegroups.com with HTTP; Tue, 20 Nov 2012 00:31:06
+ -0800 (PST)
+Date: Tue, 20 Nov 2012 00:31:06 -0800 (PST)
+User-Agent: G2/1.0
+X-Google-Token: EMr_rIUFOnrx3uHgchY0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:16.0)
+ Gecko/20100101 Firefox/16.0,gzip(gfe)
+X-Google-IP: 178.190.96.99
+Message-ID: <c365d95a-e612-42d1-9a94-c4a92af3f0b4@a14g2000yqh.googlegroups.com>
+Subject: sportdb/console - Try sport.db w/ Interactive Ruby Console
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Open Sports Database (sport.db) and Friends" <opensport@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   I've added support for the interactive Ruby console (irb) to the
+open sports database gem. Use irb -r sportdb/console and you're ready
+to go.  Try
+
+  en = Country.find_by_key! 'en'; en.teams.all
+
+or
+
+   mun = Team.find_by_key! 'manunited'; mun.games.all
+
+  and so on.
+
+  Cheers.
+
+PS: By the way the sportdb/console also works for the world.db because
+all world tables and data is included.
+

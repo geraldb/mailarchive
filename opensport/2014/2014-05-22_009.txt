@@ -1,0 +1,91 @@
+From 738573942784@xxx Tue Jun 16 00:17:12 +0000 2015
+X-GM-THRID: 735777390592
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4c0ddad8e50128c7
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.58.106.75 with SMTP id gs11mr16570078veb.18.1400740084225;
+        Wed, 21 May 2014 23:28:04 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.92.247 with SMTP id b110ls1074243qge.16.gmail; Wed, 21 May
+ 2014 23:28:04 -0700 (PDT)
+X-Received: by 10.236.144.136 with SMTP id n8mr22035426yhj.22.1400740084134;
+        Wed, 21 May 2014 23:28:04 -0700 (PDT)
+Received: by 10.50.253.99 with SMTP id zz3msigc;
+        Wed, 21 May 2014 22:18:27 -0700 (PDT)
+X-Received: by 10.50.66.129 with SMTP id f1mr247330igt.13.1400735906992;
+        Wed, 21 May 2014 22:18:26 -0700 (PDT)
+X-Google-Doc-Id: af188c06d4fedb1f
+X-Google-Web-Client: true
+Date: Wed, 21 May 2014 22:18:26 -0700 (PDT)
+From: Unreal Hoang <unrealhoang@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <1628d48d-ad59-46f9-8f13-a86e1d4e9399@googlegroups.com>
+Subject: Error building db
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_275_19075806.1400735906158"
+X-Google-Token: EKKR9psFL_56TIei7Y80
+X-Google-IP: 1.52.237.91
+
+------=_Part_275_19075806.1400735906158
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_276_28034565.1400735906158"
+
+------=_Part_276_28034565.1400735906158
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+I tried to build using sportdb with
+
+sportdb setup --include ./world-cup --worldinclude ./world.db
+
+But when it runs to the brazil-2014 it yields the following error:
+
+[info] parsing data 'world-cup!/2014--brazil/quali/africa' (./world-cup/2014--brazil/quali/africa.yml)...
+[error] league with key >>world.quali.africa<< missing
+
+
+------=_Part_276_28034565.1400735906158
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p style=3D"box-sizing: border-box; margin-bottom: 15px; c=
+olor: rgb(51, 51, 51); font-family: Helvetica, arial, freesans, clean, sans=
+-serif; font-size: 14px; line-height: 23px;">I tried to build using sportdb=
+ with</p><div><pre style=3D"box-sizing: border-box; font-family: Consolas, =
+'Liberation Mono', Courier, monospace; margin-top: 15px; margin-bottom: 15p=
+x; background-color: rgb(248, 248, 248); border: 1px solid rgb(221, 221, 22=
+1); line-height: 19px; overflow: auto; padding: 6px 10px; border-top-left-r=
+adius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; =
+border-bottom-left-radius: 3px; word-wrap: normal; color: rgb(51, 51, 51);"=
+><code style=3D"box-sizing: border-box; font-family: Consolas, 'Liberation =
+Mono', Courier, monospace; font-size: 12px; border-style: none; background-=
+color: transparent; border-top-left-radius: 3px; border-top-right-radius: 3=
+px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; word-w=
+rap: normal; display: inline; line-height: inherit;">sportdb setup --includ=
+e ./world-cup --worldinclude ./world.db
+</code></pre><p style=3D"box-sizing: border-box; margin-top: 15px; margin-b=
+ottom: 15px; color: rgb(51, 51, 51); font-family: Helvetica, arial, freesan=
+s, clean, sans-serif; font-size: 14px; line-height: 23px;">But when it runs=
+ to the brazil-2014 it yields the following error:</p><pre style=3D"box-siz=
+ing: border-box; font-family: Consolas, 'Liberation Mono', Courier, monospa=
+ce; margin-top: 15px; background-color: rgb(248, 248, 248); border: 1px sol=
+id rgb(221, 221, 221); line-height: 19px; overflow: auto; padding: 6px 10px=
+; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-=
+right-radius: 3px; border-bottom-left-radius: 3px; word-wrap: normal; color=
+: rgb(51, 51, 51);"><code style=3D"box-sizing: border-box; font-family: Con=
+solas, 'Liberation Mono', Courier, monospace; font-size: 12px; border-style=
+: none; background-color: transparent; border-top-left-radius: 3px; border-=
+top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-=
+radius: 3px; word-wrap: normal; display: inline; line-height: inherit;">[in=
+fo] parsing data 'world-cup!/2014--brazil/quali/africa' (./world-cup/2014--=
+brazil/quali/africa.yml)...
+[error] league with key &gt;&gt;world.quali.africa&lt;&lt; missing</code></=
+pre></div></div>
+------=_Part_276_28034565.1400735906158--
+
+------=_Part_275_19075806.1400735906158--
+

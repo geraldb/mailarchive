@@ -1,0 +1,107 @@
+From 6412469093958418432@xxx Mon Apr 24 07:35:07 +0000 2017
+X-GM-THRID: 6412469095303741440
+X-Received: by 10.99.0.212 with SMTP id 203mr11347133pga.60.1493019306822;
+        Mon, 24 Apr 2017 00:35:06 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.131.157 with SMTP id n29ls3492241ioi.11.gmail; Mon, 24 Apr
+ 2017 00:35:06 -0700 (PDT)
+X-Received: by 10.107.58.2 with SMTP id h2mr11734909ioa.31.1493019306326;
+        Mon, 24 Apr 2017 00:35:06 -0700 (PDT)
+Received: by 10.202.86.72 with SMTP id k69msoib;
+        Sun, 23 Apr 2017 14:54:16 -0700 (PDT)
+X-Received: by 10.157.37.213 with SMTP id q79mr133069ota.11.1492984456616;
+        Sun, 23 Apr 2017 14:54:16 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Sun, 23 Apr 2017 14:54:16 -0700 (PDT)
+From: Yogesh K <yogeshkadvekar@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <b00815ae-a51f-4076-8c16-7442c769a917@googlegroups.com>
+Subject: Error sportdb create
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1133_979530235.1492984456343"
+X-Google-Token: EIjF9McFSgBY8CKLhIg0
+X-Google-IP: 213.89.174.88
+
+------=_Part_1133_979530235.1492984456343
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1134_867165597.1492984456343"
+
+------=_Part_1134_867165597.1492984456343
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+I am new here  tried to setup on windows machine after following step in 
+documentation. I am getting below error. I checked the group discussion 
+about setup up Gemfile. I am new in ruby programming. can anyone  help me 
+to setup Gemfile ?
+
+
+activerecord-utils/0.4.0 (activerecord/5.0.2) on Ruby 2.3.3 (2016-11-21) 
+[i386-mingw32]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::StateBase<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::CityBase<
+sportdb-update/0.1.1 on Ruby 2.3.3 (2016-11-21) [i386-mingw32]
+sportdb-service/0.4.0 on Ruby 2.3.3 (2016-11-21) [i386-mingw32]
+sportdb/1.11.0 on Ruby 2.3.3 (2016-11-21) [i386-mingw32]
+sportdb/1.11.0 on Ruby 2.3.3 (2016-11-21) [i386-mingw32]
+working directory: C:/openfootball
+Connecting to db using settings:
+{:adapter=>"sqlite3", :database=>"./sport.db"}
+-- create_table(:logs)
+   -> 0.0049s
+-- create_table(:props, {})
+   -> 0.0006s
+-- create_table(:tags)
+   -> 0.0013s
+-- add_index(:tags, :key, {:unique=>true})
+   -> 0.0008s
+-- create_table(:taggings)
+   -> 0.0017s
+-- add_index(:taggings, :tag_id)
+
+*** error: Index name 'index_taggings_on_tag_id' on table 'taggings' 
+already exists
+
+Regards,
+Yogesh
+
+------=_Part_1134_867165597.1492984456343
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi,<div><br></div><div>I am new here =C2=A0tried to setup =
+on windows machine after following step in documentation. I am getting belo=
+w error. I checked the group discussion about setup up Gemfile. I am new in=
+ ruby programming. can anyone =C2=A0help me to setup Gemfile ?</div><div><b=
+r></div><div><br></div><div><div>activerecord-utils/0.4.0 (activerecord/5.0=
+.2) on Ruby 2.3.3 (2016-11-21) [i386-mingw32]</div><div>=C2=A0 [TagDb.has_m=
+any_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Mode=
+l::Country&lt;</div><div>=C2=A0 [TagDb.has_many_tags] adding taggings n tag=
+s has_many assocs to model &gt;WorldDb::Model::StateBase&lt;</div><div>=C2=
+=A0 [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &=
+gt;WorldDb::Model::CityBase&lt;</div><div>sportdb-update/0.1.1 on Ruby 2.3.=
+3 (2016-11-21) [i386-mingw32]</div><div>sportdb-service/0.4.0 on Ruby 2.3.3=
+ (2016-11-21) [i386-mingw32]</div><div>sportdb/1.11.0 on Ruby 2.3.3 (2016-1=
+1-21) [i386-mingw32]</div><div>sportdb/1.11.0 on Ruby 2.3.3 (2016-11-21) [i=
+386-mingw32]</div><div>working directory: C:/openfootball</div><div>Connect=
+ing to db using settings:</div><div>{:adapter=3D&gt;&quot;sqlite3&quot;, :d=
+atabase=3D&gt;&quot;./sport.db&quot;}</div><div>-- create_table(:logs)</div=
+><div>=C2=A0 =C2=A0-&gt; 0.0049s</div><div>-- create_table(:props, {})</div=
+><div>=C2=A0 =C2=A0-&gt; 0.0006s</div><div>-- create_table(:tags)</div><div=
+>=C2=A0 =C2=A0-&gt; 0.0013s</div><div>-- add_index(:tags, :key, {:unique=3D=
+&gt;true})</div><div>=C2=A0 =C2=A0-&gt; 0.0008s</div><div>-- create_table(:=
+taggings)</div><div>=C2=A0 =C2=A0-&gt; 0.0017s</div><div>-- add_index(:tagg=
+ings, :tag_id)</div><div><br></div><div>*** error: Index name &#39;index_ta=
+ggings_on_tag_id&#39; on table &#39;taggings&#39; already exists</div></div=
+><div><br></div><div>Regards,</div><div>Yogesh</div></div>
+------=_Part_1134_867165597.1492984456343--
+
+------=_Part_1133_979530235.1492984456343--
+

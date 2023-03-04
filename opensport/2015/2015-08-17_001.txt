@@ -1,0 +1,135 @@
+From 6183951434048864256@xxx Mon Aug 17 12:09:53 +0000 2015
+X-GM-THRID: 6183883826462195712
+X-Received: by 10.107.17.84 with SMTP id z81mr837464ioi.5.1439813392691;
+        Mon, 17 Aug 2015 05:09:52 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.152.81 with SMTP id a78ls1496269ioe.104.gmail; Mon, 17 Aug
+ 2015 05:09:51 -0700 (PDT)
+X-Received: by 10.70.36.162 with SMTP id r2mr839438pdj.4.1439813391720;
+        Mon, 17 Aug 2015 05:09:51 -0700 (PDT)
+Return-Path: <ajithcp92may@gmail.com>
+Received: from mail-vk0-x234.google.com (mail-vk0-x234.google.com. [2607:f8b0:400c:c05::234])
+        by gmr-mx.google.com with ESMTPS id cu1si396752vdc.0.2015.08.17.05.09.51
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 17 Aug 2015 05:09:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of ajithcp92may@gmail.com designates 2607:f8b0:400c:c05::234 as permitted sender) client-ip=2607:f8b0:400c:c05::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of ajithcp92may@gmail.com designates 2607:f8b0:400c:c05::234 as permitted sender) smtp.mailfrom=ajithcp92may@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-vk0-x234.google.com with SMTP id i73so53983423vkf.2
+        for <opensport@googlegroups.com>; Mon, 17 Aug 2015 05:09:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=D/JgtODl9Rd1sn+UJd7B7uGx+z+XCj4qEPpvhy+RYA8=;
+        b=nXDYjOskkLMOkHd+JvLGyCuME8XM4Qfa/ejKDAnh6iIHvyf1hwPi/tUnl+MQXTzy3L
+         +V4aiQOuinOaAXyCa54OVvxWjcy4XxIqfACpUYixY1JFHQukEf1MwrtwTEjFNSfQEBvB
+         eZAS0NO8VXT5gXdbkic2FO/xukS0udDBAoszDPOkhHakvvCP3QOFv1p8G/K0Ohe5SaRl
+         Qs9u6/jb3LGchwEn1S3NKLewrLRHlGCatlUp3ZNlg1lrD+tQ8Tthyp1yntG7p2G4E7RL
+         4I8a2Sydb6EysPe/Kb5SFv7hJICDq0QVH+unMMznw8BGLLfjeHHsHZ1mWP/tb6uv2AUW
+         TXhg==
+MIME-Version: 1.0
+X-Received: by 10.52.180.225 with SMTP id dr1mr1071546vdc.42.1439813391428;
+ Mon, 17 Aug 2015 05:09:51 -0700 (PDT)
+Received: by 10.31.203.5 with HTTP; Mon, 17 Aug 2015 05:09:51 -0700 (PDT)
+In-Reply-To: <CAAxEZd_d=GHtBc+007wiL9MV4ypjaurhd8jtQc_KKpQKfZS-sw@mail.gmail.com>
+References: <cb981462-e8d6-4f3c-8220-bd9215069460@googlegroups.com>
+	<CAAxEZd9E70abpQkUBmH0Xt7+t3Z32KzZz3Y_gwnFEBHWvdNrKw@mail.gmail.com>
+	<2c437960-979f-4d86-8c23-bc640a431e09@googlegroups.com>
+	<CAAxEZd_d=GHtBc+007wiL9MV4ypjaurhd8jtQc_KKpQKfZS-sw@mail.gmail.com>
+Date: Mon, 17 Aug 2015 17:39:51 +0530
+Message-ID: <CAN5M2eC=k+e+BqFZDsEa5Kq_KW=Hfw8i_R18Uwogjt6mbbJeGw@mail.gmail.com>
+Subject: Re: [opensport] Help ! Possible Team Lineups
+From: Ajith C Purushothaman <ajithcp92may@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary=bcaec517a990bd319d051d80adff
+
+--bcaec517a990bd319d051d80adff
+Content-Type: text/plain; charset=UTF-8
+
+Thanks Gerald, I m looking for a free API. Ithink I can use
+
+   - football-data.org
+   <http://www.jokecamp.com/blog/guide-to-football-and-soccer-data-and-apis/#footballdata>
+(beta)
+   (RESTful)
+
+
+On Mon, Aug 17, 2015 at 5:25 PM, Gerald Bauer <gerald.bauer@gmail.com>
+wrote:
+
+> Hello,
+>    If you're looking for football player team/squad data - Joe
+> Kampschmidt has put togheter a
+> detailed page titled  "Guide to Football/Soccer data and APIs" [1] -
+> that might get you started finding out more. Let us know what you find
+> out. Cheers.
+>
+> [1] www.jokecamp.com/blog/guide-to-football-and-soccer-data-and-apis
+>
+> --
+> You received this message because you are subscribed to a topic in the
+> Google Groups "opensport" group.
+> To unsubscribe from this topic, visit
+> https://groups.google.com/d/topic/opensport/IJjBL6HBctY/unsubscribe.
+> To unsubscribe from this group and all its topics, send an email to
+> opensport+unsubscribe@googlegroups.com.
+> To post to this group, send email to opensport@googlegroups.com.
+> Visit this group at http://groups.google.com/group/opensport.
+> For more options, visit https://groups.google.com/d/optout.
+>
+
+--bcaec517a990bd319d051d80adff
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thanks Gerald, I m looking for a free API. Ithink I can us=
+e=C2=A0<ul style=3D"margin-top:0px;margin-bottom:1rem;color:rgb(81,81,81);f=
+ont-family:&#39;Open Sans&#39;,&#39;Helvetica Neue&#39;,Helvetica,Arial,san=
+s-serif;font-size:16px;line-height:24px"><li style=3D"box-sizing: border-bo=
+x;"><a href=3D"http://www.jokecamp.com/blog/guide-to-football-and-soccer-da=
+ta-and-apis/#footballdata" style=3D"color:rgb(38,139,210);text-decoration:n=
+one">football-data.org</a>=C2=A0(beta) (RESTful)</li></ul></div><div class=
+=3D"gmail_extra"><br><div class=3D"gmail_quote">On Mon, Aug 17, 2015 at 5:2=
+5 PM, Gerald Bauer <span dir=3D"ltr">&lt;<a href=3D"mailto:gerald.bauer@gma=
+il.com" target=3D"_blank">gerald.bauer@gmail.com</a>&gt;</span> wrote:<br><=
+blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px=
+ #ccc solid;padding-left:1ex">Hello,<br>
+=C2=A0 =C2=A0If you&#39;re looking for football player team/squad data - Jo=
+e<br>
+Kampschmidt has put togheter a<br>
+detailed page titled=C2=A0 &quot;Guide to Football/Soccer data and APIs&quo=
+t; [1] -<br>
+that might get you started finding out more. Let us know what you find<br>
+out. Cheers.<br>
+<br>
+[1] <a href=3D"http://www.jokecamp.com/blog/guide-to-football-and-soccer-da=
+ta-and-apis" rel=3D"noreferrer" target=3D"_blank">www.jokecamp.com/blog/gui=
+de-to-football-and-soccer-data-and-apis</a><br>
+<div class=3D"HOEnZb"><div class=3D"h5"><br>
+--<br>
+You received this message because you are subscribed to a topic in the Goog=
+le Groups &quot;opensport&quot; group.<br>
+To unsubscribe from this topic, visit <a href=3D"https://groups.google.com/=
+d/topic/opensport/IJjBL6HBctY/unsubscribe" rel=3D"noreferrer" target=3D"_bl=
+ank">https://groups.google.com/d/topic/opensport/IJjBL6HBctY/unsubscribe</a=
+>.<br>
+To unsubscribe from this group and all its topics, send an email to <a href=
+=3D"mailto:opensport%2Bunsubscribe@googlegroups.com">opensport+unsubscribe@=
+googlegroups.com</a>.<br>
+To post to this group, send email to <a href=3D"mailto:opensport@googlegrou=
+ps.com">opensport@googlegroups.com</a>.<br>
+Visit this group at <a href=3D"http://groups.google.com/group/opensport" re=
+l=3D"noreferrer" target=3D"_blank">http://groups.google.com/group/opensport=
+</a>.<br>
+For more options, visit <a href=3D"https://groups.google.com/d/optout" rel=
+=3D"noreferrer" target=3D"_blank">https://groups.google.com/d/optout</a>.<b=
+r>
+</div></div></blockquote></div><br></div>
+
+--bcaec517a990bd319d051d80adff--
+

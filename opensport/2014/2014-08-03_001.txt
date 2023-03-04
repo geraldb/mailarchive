@@ -1,0 +1,79 @@
+From 1782859169792@xxx Tue Jun 16 00:16:51 +0000 2015
+X-GM-THRID: 1775881945088
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,80658d2df518cf2e
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.129.170 with SMTP id nx10mr1457375lbb.21.1407085703509;
+        Sun, 03 Aug 2014 10:08:23 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.121.41 with SMTP id lh9ls320124lab.97.gmail; Sun, 03 Aug
+ 2014 10:08:22 -0700 (PDT)
+X-Received: by 10.112.190.1 with SMTP id gm1mr1510549lbc.20.1407085702791;
+        Sun, 03 Aug 2014 10:08:22 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x235.google.com (mail-we0-x235.google.com [2a00:1450:400c:c03::235])
+        by gmr-mx.google.com with ESMTPS id o6si722984wij.1.2014.08.03.10.08.22
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 03 Aug 2014 10:08:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::235 as permitted sender) client-ip=2a00:1450:400c:c03::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::235 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f181.google.com with SMTP id k48so6663617wev.12
+        for <opensport@googlegroups.com>; Sun, 03 Aug 2014 10:08:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=QD882+ehmZy22Vm3LKWnd7A2JJziO2hPIuETG3mmFcc=;
+        b=KkA3i+YcG80ydrcFBoMaZJxvNaCGr1Drk4hc07xU54I3nQSfN35X+tFbh0J5IkREYt
+         Xv05tcFygnShkvThkDeiec7Ltw78KI7qo0USMyxHk+i/ci49Q7cnRcP0e2wxbBnY7+Gq
+         T3BWR5Y5UkO3mR6d6EA9Iis8b7m1XnIKtuQjErW9spDbuqTEE7DnKe6YbQY59naScwGC
+         i3cnYgiGqBodDCDvAnOGEp0EDKdJj+eqcZQEdkBXrgSKiZrqk7sQBsJHO5xEIghGG5F1
+         7roTB1ugq2c38Kz2Zb8GkQQA4P/Oa6K7PM8CvBbvy9yEy33ZOeCqlkMt8nA7kZAu6ek9
+         Rg4g==
+MIME-Version: 1.0
+X-Received: by 10.194.81.70 with SMTP id y6mr6433183wjx.106.1407085702692;
+ Sun, 03 Aug 2014 10:08:22 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Sun, 3 Aug 2014 10:08:22 -0700 (PDT)
+In-Reply-To: <af21c846-93b8-4e3d-871a-2b68a193eca4@googlegroups.com>
+References: <53DD1042.6010109@columbia.edu>
+	<af21c846-93b8-4e3d-871a-2b68a193eca4@googlegroups.com>
+Date: Sun, 3 Aug 2014 19:08:22 +0200
+Message-ID: <CAAxEZd_i2jXeY42hTx=nUtxK0E7PwfhGo6RV9xmoW-Mwh1TrzA@mail.gmail.com>
+Subject: Re: [opensport] Re: Results of all English soccer games played in top
+ 4 tiers, 1888-2014
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  Again thanks for sharing the data and your scripts. Fantastic.
+
+ FYI:  I added all the data (all seasons before 1993/94) to the
+football.csv/en-england repo [1] and split up the huge all-in-one file
+into a folder for each season and a file for each division. I also
+added an auto-generated README in every season folder - that includes
+standings (home,away, totals) auto-generated from the .csv files in
+the folder. As an example, the 1955-56 seaons [2] looks like:
+
+  /en-england/
+    /1950s
+      /1955-56
+         1-division1.csv
+         2-division2.csv
+         3a-division3n.csv
+         3b-division3s.csv
+         README
+
+  Again thanks for sharing. Keep it up. Cheers.
+
+PS: The import script (e.g. rake engsoccer) [3] resides in the build repo.
+
+[1] github.com/footballcsv/en-england
+[2] github.com/footballcsv/en-england/tree/master/1950s/1955-56
+[3] github.com/footballcsv/build/blob/master/tasks/imports/engsoccer.rake
+

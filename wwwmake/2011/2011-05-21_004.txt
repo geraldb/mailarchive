@@ -1,0 +1,60 @@
+From 891577958400@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 891760410624
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,2ccc9d79c2a8c7a7,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.224.196.66 with SMTP id ef2mr176749qab.22.1305974115686;
+        Sat, 21 May 2011 03:35:15 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.224.181.131 with SMTP id by3ls501500qab.3.gmail; Sat, 21 May
+ 2011 03:35:15 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.224.210.198 with SMTP id gl6mr55087qab.21.1305974115405; Sat,
+ 21 May 2011 03:35:15 -0700 (PDT)
+Received: by f11g2000vbx.googlegroups.com with HTTP; Sat, 21 May 2011 03:35:15
+ -0700 (PDT)
+Date: Sat, 21 May 2011 03:35:15 -0700 (PDT)
+X-IP: 93.82.48.209
+User-Agent: G2/1.0
+X-Google-Token: EOOq3u4EvSdzkb8Wpwo0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.17)
+ Gecko/20110422 Ubuntu/10.04 (lucid) Firefox/3.6.17,gzip(gfe)
+Message-ID: <d21793ae-f128-4108-b4af-1f071ed752e8@f11g2000vbx.googlegroups.com>
+Subject: Semantic Version of S6 HTML Blank Template Pack using article,
+ section, footer, header Tags
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+ Ryan McIlmoyl has published a semantic version of the S6 HTML Blank
+Template pack that lets you create slideshows in HTML5+CSS3+JavaScript
+(w/jQuery).
+
+<div class="presentation">
+  <div class='slide cover'>
+    <h1>Your Slide Title Here</h1>
+    <ul>
+      <li>Item One Here</li>
+      <li>Item Two Here</li>
+    </ul>
+  </div>
+
+  Becomes:
+
+<article class="presentation">
+  <section class='slide cover'>
+    <h1>Your Slide Title Here</h1>
+    <ul>
+      <li>Item One Here</li>
+      <li>Item Two Here</li>
+    </ul>
+  </section>
+
+
+   Find out more @ https://github.com/ryanmcilmoyl/s6
+
+   Cheers.
+

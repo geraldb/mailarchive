@@ -1,0 +1,73 @@
+From 1772266455040@xxx Tue Jun 16 00:16:53 +0000 2015
+X-GM-THRID: 927995002880
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cc2704da6a7f0905
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.181.9.65 with SMTP id dq1mr1016949wid.7.1406992090725;
+        Sat, 02 Aug 2014 08:08:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.37.38 with SMTP id v6ls71001laj.49.gmail; Sat, 02 Aug 2014
+ 08:08:10 -0700 (PDT)
+X-Received: by 10.152.120.198 with SMTP id le6mr2487lab.10.1406992090045;
+        Sat, 02 Aug 2014 08:08:10 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22b.google.com (mail-we0-x22b.google.com [2a00:1450:400c:c03::22b])
+        by gmr-mx.google.com with ESMTPS id mx7si376665wic.1.2014.08.02.08.08.10
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 02 Aug 2014 08:08:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22b as permitted sender) client-ip=2a00:1450:400c:c03::22b;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22b as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f171.google.com with SMTP id p10so5635388wes.2
+        for <opensport@googlegroups.com>; Sat, 02 Aug 2014 08:08:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type:content-transfer-encoding;
+        bh=kutpvWx9AJRH4IB0zY2dnd9leNe7FuWT7aftElmawdI=;
+        b=ClkblLzqmsRopzl1ZBQs+AG6B0FYZYsmfT/FEz0i1AdJ0VE5W1JmneT7L8xvBIYuXP
+         0pPWsTxUnRlNhqjTbE/E9fzUh5uAfMGjB/tBzg7dpHMDpIH263I0+Id+LLDR8tQJOfjH
+         nzrf9fonqWqmrBNWK76cxnBgeWXGtVS0rSpTL0S58k9cBlRWtMolXIhFO8VGqSXU3M9p
+         M3Fpruo8KSC29+k40DVsdP0e70xUT/IASUis0R8N/5nLkAG8KsPklIjepKjRBMTgNhww
+         jbBrWZWlc4/XFn3dNnSXSP+YoWLam4eeNvVB7Luf+PHKTL4vBGwXvFB9V66CIDxyr/7Q
+         A2Xg==
+MIME-Version: 1.0
+X-Received: by 10.194.222.197 with SMTP id qo5mr18780703wjc.78.1406992089929;
+ Sat, 02 Aug 2014 08:08:09 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Sat, 2 Aug 2014 08:08:09 -0700 (PDT)
+In-Reply-To: <5f5a95ac-4d4c-44d4-9f9b-3b44334a098e@googlegroups.com>
+References: <5f5a95ac-4d4c-44d4-9f9b-3b44334a098e@googlegroups.com>
+Date: Sat, 2 Aug 2014 17:08:09 +0200
+Message-ID: <CAAxEZd8oy6SZoM348dCxJy=N+pm+PTmuwov3tR4G0HLgfJR2pg@mail.gmail.com>
+Subject: Re: [opensport] Bundesliga Data 1963 - 2014
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Cc: arne.warnke@gmail.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI:  Thanks again. I added all seasons 1963 to 2014 to the new
+football.csv org.  See the /de-deutschland repo [1]    Every season is
+now stored in its own .csv file using the football.csv format.
+
+  Example:  1960s/1963-64/1-bundesliga.csv
+
+Round,Date,Time,Team 1,Team 2,FT,HT
+1,1963-08-24,17:00,Werder Bremen,Borussia Dortmund,3-2,1-1
+1,1963-08-24,17:00,1. FC Saarbr=C3=BCcken,1. FC K=C3=B6ln,0-2,0-2
+1,1963-08-24,17:00,TSV 1860 M=C3=BCnchen,Eintracht Braunschweig,1-1,1-0
+1,1963-08-24,17:00,Eintracht Frankfurt,1. FC Kaiserslautern,1-1,1-1
+...
+
+
+Cheers.
+
+[1] github.com/footballcsv/de-deutschland
+

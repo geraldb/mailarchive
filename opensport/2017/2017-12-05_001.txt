@@ -1,0 +1,100 @@
+From 6496149512485076992@xxx Tue Dec 05 19:37:53 +0000 2017
+X-GM-THRID: 6496149514723786752
+X-Received: by 10.31.162.201 with SMTP id l192mr1747389vke.108.1512502672891;
+        Tue, 05 Dec 2017 11:37:52 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.31.199.2 with SMTP id x2ls3256473vkf.17.gmail; Tue, 05 Dec
+ 2017 11:37:52 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMbtdbrSaEmWJrdYflwyiHhOTr6w5iVKaRFcVPbJIDZkNzWwHCN19yXQfrddpwadqzI1hkMa
+X-Received: by 10.31.15.18 with SMTP id 18mr1812747vkp.81.1512502672178;
+        Tue, 05 Dec 2017 11:37:52 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1512502672; cv=none;
+        d=google.com; s=arc-20160816;
+        b=DG462V9CnJgfn8o8/WgcenoDoJ0xFc/obiGdI0raZKTGIqxe5BnZcJipb5RI6KCidg
+         kMqsqgAjs/4sa9bGnItevpPMTADe0WwFKMtB74C41yKZB4IZcx+Un6Bmr2kv6e2C34Bo
+         X2CtZ1QaZoHbZg0XxuL3cKixF5h360kXsdMUc1oftIigx64z7akCiqvNVXa2C5DWKOXV
+         6kuZO2KHDGj5XtWQ0I6TpabHSIug578vsnjazrxONeY77gfOt6icXBy/qgSVOvdpPwWE
+         tc5TG0OQqXCdL0NXZCK1FTgdNgb0BDpJle9PGsT5skz1sD/o1B6i+VX4vliUaEVG/CCm
+         KUpg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=/PNlQIWgBUP7sZ1qLs3gwqmIonZbN2NCfffIky7sJBs=;
+        b=xF1xfnOY/DJSoh9pNVhRqcBxPQ8D9BGt9glKcEOlSBcX9EvGDhH06sZjoYfUy838qe
+         Mxlm9dI980ULlpjXSRS+NvyYgztddO2rqqssmiB4sb0ml0j5HR1s46AC02s2u9vuR9+i
+         nu130Nf7XYwLyJ5V9o9W0FAvxbLhvMq5mewmcKz4hQZbIkCndEZLAV27hLJff8FWXkd6
+         Uxgz2gh6ywlHc0DlpAGCsgcL6G5Z0qG0hAd45XnarbXAGZft07iDWfcTX92YNB5vy/el
+         hn6bJ2vuVgugSkLnk9P3odsHdbmGT+ckcuvgTW024qF6Hnf1u2F/xHQ0F4NgNatwHaPS
+         RR6g==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=HTejozsV;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22a.google.com (mail-it0-x22a.google.com. [2607:f8b0:4001:c0b::22a])
+        by gmr-mx.google.com with ESMTPS id k67si69403vki.0.2017.12.05.11.37.52
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 05 Dec 2017 11:37:52 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) client-ip=2607:f8b0:4001:c0b::22a;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=HTejozsV;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22a.google.com with SMTP id p139so4389547itb.1
+        for <opensport@googlegroups.com>; Tue, 05 Dec 2017 11:37:52 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=/PNlQIWgBUP7sZ1qLs3gwqmIonZbN2NCfffIky7sJBs=;
+        b=HTejozsVCov/FgFqHYOYLkrH6CEEZ+JlWw7R4uTllHlGMEh9BW71PowGBuv1PilB22
+         jILHykDslZaq/pB8w01GtXWvELTkzpkzFdgR7YfOod+tPrcKJVF9dYCUefZcM6ZQJ07b
+         W7AsPOMS0Gt7c7lWwv5nFmm9I5dyinHqAWr+A423drrWF2QOoDy+Yo8lP3jQG6dlEbeZ
+         2taSXNs0eUPWELVJyE1a3BffTrbBgL7BzI5m7tQi+17TMgJlhVWvYgI6h25ARfMy9szr
+         KslY6vA3unMXCfqg6CaxQqYnEc1jXL1mvmN/E5asHggZDZS+1Dxop5EmHU7f44sWtd1Z
+         nRAA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=/PNlQIWgBUP7sZ1qLs3gwqmIonZbN2NCfffIky7sJBs=;
+        b=CfIFmSX+/T7XBZN17ZD968hmCk+Wr774QH32u5nMxQ1qXZ+l9XtZrE6HMZG82quVtE
+         OZ3TOzQKGHrP0jLndXkiPbZTbuJF8RUSc3IaabjoFeaanIhOzNBzyENkWkfD06n9aPzV
+         YggFRkdDE0t9uLlk9iPhYMGPgTUp0EvHd9zEBT0BMUtndJe+u0aAJG4kDo/jCpWZTr8m
+         fBggLUGZjQ7/ZgCdVkpFHduhd1JAFphe4y3/u61gZqbkwbi12MXBxmhkupBXDimabszN
+         Jrq8CaEeYSP+lHMw33qJfIBIt9q3bsC4oGUxCD4Nthf6ujctRh7ZNuNJcm8BislT7qGL
+         BR3w==
+X-Gm-Message-State: AJaThX70WS5hhxsUmZIoE8mdbWUD37GxOSYHEhvhn5Is3ELulvK9wCRH
+	NLwnQRsD6hDZRsZMifuUbgcvr0LXJ+n4oShBH2poEg==
+X-Received: by 10.36.243.13 with SMTP id t13mr18028298ith.19.1512502671551;
+ Tue, 05 Dec 2017 11:37:51 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.156.69 with HTTP; Tue, 5 Dec 2017 11:37:51 -0800 (PST)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 5 Dec 2017 20:37:51 +0100
+Message-ID: <CAAxEZd-OpU_g=cexgSaAUwG3e_kSc6HcksDzi9QpUxJBE=-BXw@mail.gmail.com>
+Subject: football.db Datafiles Updated - New 2017/18 Seasons e.g. at2017-18,
+ de2017-18, en2017-18, etc.
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  I've updated the datafiles [1] for the 2017/18 seasons. New datafiles include:
+
+  - at2017-18
+  - de2017-18
+  - en2017-18
+  - es2017-18
+  - it2017-18
+  - top2017-18
+
+  Try:
+
+      $ sportdb new at2017-18          # and so on.
+
+   If you run into any trouble, please report any errors to the list. Thanks!
+
+   Enjoy the beautiful game. Cheers. Prost.
+
+[1] https://github.com/openfootball/datafile
+

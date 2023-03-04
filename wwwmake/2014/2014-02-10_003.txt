@@ -1,0 +1,91 @@
+From 1461258813440@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1456305340416
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,2568c5e341d64211
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.83.206 with SMTP id q54mr9810380yhe.47.1392050850571;
+        Mon, 10 Feb 2014 08:47:30 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.50.111.49 with SMTP id if17ls2063820igb.39.canary; Mon, 10 Feb
+ 2014 08:47:29 -0800 (PST)
+X-Received: by 10.66.240.4 with SMTP id vw4mr9824325pac.10.1392050849945;
+        Mon, 10 Feb 2014 08:47:29 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-vc0-x231.google.com (mail-vc0-x231.google.com [2607:f8b0:400c:c03::231])
+        by gmr-mx.google.com with ESMTPS id hh7si409055vdb.1.2014.02.10.08.47.29
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 10 Feb 2014 08:47:29 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c03::231 as permitted sender) client-ip=2607:f8b0:400c:c03::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c03::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-vc0-x231.google.com with SMTP id if11so4859161vcb.8
+        for <webslideshow@googlegroups.com>; Mon, 10 Feb 2014 08:47:29 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=dI4WvtoXvo9S5Sf1LttviCRPu4zgGF/GwtaFYM/dMIc=;
+        b=a2EfkS4lP2qeRqvvqlP2zJShFflrAZDa+8xZraJ9tuQMpS0Nl9vfGQ+5MNGFohN6xr
+         mQWOfpJSv8Zj+YWfitAvhX488RWWgs8knwq6AVBOnlB0XkhttMSrhWiaLTqU0LQtrhLY
+         MS++FRSSWAuMjyFTPtJczaVjzVwYa85Y+yLGIsh0Sty2Wj9GrRVTKSPUsckd4BBYIlgn
+         +dWVEAyh6carQarfx+kx4ixBqPrmwLpDBeRz2r4ZSWTvP9fvRZKsgqB0/T5ac0ckAYjV
+         z5P+sG22Juhc/xSdMWxV0lBgTS4EE5wKl6fkorUKOHarLqKtN+HuxURJqnEfdCxaZ4wl
+         6zvA==
+MIME-Version: 1.0
+X-Received: by 10.58.161.46 with SMTP id xp14mr298999veb.37.1392050849670;
+ Mon, 10 Feb 2014 08:47:29 -0800 (PST)
+Received: by 10.58.156.10 with HTTP; Mon, 10 Feb 2014 08:47:29 -0800 (PST)
+In-Reply-To: <cc360c27-7967-4404-942f-e2c201024e4c@googlegroups.com>
+References: <cc360c27-7967-4404-942f-e2c201024e4c@googlegroups.com>
+Date: Mon, 10 Feb 2014 10:47:29 -0600
+Message-ID: <CAAxEZd8Yc0zOu4tdB9fQUy+Wy2b8wfn3Fp5mZDaPYOn4-1fLLg@mail.gmail.com>
+Subject: Re: [slideshow:334] Markdown incremental steps
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+> Sorry for the possible double post -- didn't see the first one appear.
+
+  Sorry, the first post is moderated - unfortunately even this list
+gets lots of spam.
+
+> I'm trying to do step with Markdown and can't get it to work. It looks as if the example with incremental bullets is in Textile
+> and when I try *(step) in Markdown, it displays the (step) literally. Am I just messing up the syntax in Markdown?
+
+  Standard "plain" or "classic" markdown has no support for css style
+classes. However, markdown extras such as MultiMarkdown offer, for
+example, block attribute list e.g.
+
+* item 1
+* item 2
+* item 3
+{: .step}
+
+  That should work if you use kramdown, for example, for your markdown
+conversion. See the syntax page [1], for details. Cheers.
+
+[1] http://kramdown.gettalong.org/syntax.html#block-ials
+
+2014-02-10 8:31 GMT-06:00 Micah Cooper <coopermj@miamioh.edu>:
+> Sorry for the possible double post -- didn't see the first one appear.
+>
+> I'm trying to do step with Markdown and can't get it to work. It looks as if
+> the example with incremental bullets is in Textile and when I try *(step) in
+> Markdown, it displays the (step) literally. Am I just messing up the syntax
+> in Markdown?
+>
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n' Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to webslideshow+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/groups/opt_out.
+

@@ -1,0 +1,70 @@
+From 1618382684160@xxx Tue Jun 16 00:16:50 +0000 2015
+X-GM-THRID: 1616016048128
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fdf4cd8620f9c54a,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.37.137 with SMTP id y9mr1688893lbj.6.1405374820025;
+        Mon, 14 Jul 2014 14:53:40 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.84.66 with SMTP id w2ls305586wiy.26.gmail; Mon, 14 Jul
+ 2014 14:53:39 -0700 (PDT)
+X-Received: by 10.180.89.232 with SMTP id br8mr76653wib.1.1405374819563;
+        Mon, 14 Jul 2014 14:53:39 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22d.google.com (mail-wi0-x22d.google.com [2a00:1450:400c:c05::22d])
+        by gmr-mx.google.com with ESMTPS id b9si534048wic.2.2014.07.14.14.53.39
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 14 Jul 2014 14:53:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22d as permitted sender) client-ip=2a00:1450:400c:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f173.google.com with SMTP id f8so2463193wiw.12
+        for <opensport@googlegroups.com>; Mon, 14 Jul 2014 14:53:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=/ENgA3RlcpevjTj3kNidqBjoUcLo2HE0Arc9blUnD7I=;
+        b=gUJWWMGfWJc5MHvgjYnlW5QtFnyJHfwKt9bddMurd/w0lVqdKkoPomfXJ8L1+x07ZW
+         2MLheoRlwTp4KhF5CQMkWPolMIFX9IxHhPfWrV7FiyMwFEjtjsO+5X3CqAGD2RYjcsba
+         i6TTZN3wJB7lE3KI1P6wJsg0Ig9xM2HbUdiObEokQrJ8hiWcDU+1e/MRcfHppG4Bl27C
+         jtFGQQSwQHeqJENbfDR8JE5DpJDkjVXoZACazzii/MsObbjseZdPHsqy7Px3TF92s6La
+         P2WPiP0vaqS35/cV9Drm4SlLLBQfVBsBU4YT2SyY/Mpx5pUPVF/jS/3KcgQd8yXv9aAg
+         9/5A==
+MIME-Version: 1.0
+X-Received: by 10.194.222.197 with SMTP id qo5mr23055409wjc.78.1405374819383;
+ Mon, 14 Jul 2014 14:53:39 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Mon, 14 Jul 2014 14:53:39 -0700 (PDT)
+Date: Mon, 14 Jul 2014 23:53:39 +0200
+Message-ID: <CAAxEZd8dPUjTctpYZ9wxbWVEjzbN1i+odVo0ipC7UTzrC9OZVg@mail.gmail.com>
+Subject: New Season - English Premier League 2014/15 Added
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   FYI: I've started to add the new 2014/15 season for the English
+Premier League [1]! The first matchday still some weeks away:
+
+Matchday 1
+
+[Sat Aug/16]
+  Arsenal FC - Crystal Palace
+  Burnley FC - Chelsea FC
+  Leicester City - Everton FC
+  Liverpool FC - Southampton FC
+  Manchester United - Swansea City
+  Newcastle United - Manchester City
+  Queens Park Rangers - Hull City
+  Stoke City - Aston Villa
+  West Bromwich Albion - Sunderland AFC
+  West Ham United - Tottenham Hotspur
+
+   Cheers.
+
+[1] github.com/openfootball/en-england/tree/master/2014_15
+

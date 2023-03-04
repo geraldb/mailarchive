@@ -1,0 +1,71 @@
+From 1523849363456@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1523449856000
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,60599c20c301e16f
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.21.209 with SMTP id l17mr14311275icb.8.1408260008188;
+        Sun, 17 Aug 2014 00:20:08 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.50.62.19 with SMTP id u19ls1261269igr.34.gmail; Sun, 17 Aug
+ 2014 00:20:07 -0700 (PDT)
+X-Received: by 10.42.85.142 with SMTP id q14mr15632491icl.16.1408260007530;
+        Sun, 17 Aug 2014 00:20:07 -0700 (PDT)
+Received: by 10.224.188.74 with SMTP id cz10msqab;
+        Sat, 16 Aug 2014 15:00:36 -0700 (PDT)
+X-Received: by 10.140.87.67 with SMTP id q61mr432402qgd.1.1408226436213;
+        Sat, 16 Aug 2014 15:00:36 -0700 (PDT)
+X-Google-Doc-Id: 77227bdab7064a38
+X-Google-Web-Client: true
+Date: Sat, 16 Aug 2014 15:00:35 -0700 (PDT)
+From: dalyad@gmail.com
+To: webslideshow@googlegroups.com
+Message-Id: <67e67cec-fdd1-4d49-b2c4-941b2abf1a81@googlegroups.com>
+Subject: slideshow error: stack level too deep
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1097_1481909951.1408226435955"
+X-Google-Token: EIOpv58F9PiIoPjgR7A0
+X-Google-IP: 99.44.168.18
+
+------=_Part_1097_1481909951.1408226435955
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1098_2092692198.1408226435955"
+
+------=_Part_1098_2092692198.1408226435955
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+A complete newbie to Ruby & S9.
+I'm testing the slideshow application using Cygwin on Windows 7.  
+
+
+I installed slideshow-2.3.0, and my ruby version is:
+                   ruby 1.9.3p545 (2014-02-24) [x86_64-cygwin]
+
+I also installed several plugins: (activerecord, coderay, uv, pandoc-ruby)
+
+When I type the command "slideshow new", it generates a 'welcome.text' file 
+in the working directory.
+
+But when I type "slideshow build welcome.text" I get these two errors 
+printed to the screen:
+
+** error: failed loading plugins in 'lib/slideshow/cli/main.rb': version 
+has already been specified as a switch in global context
+
+*** error: stack level too deep
+
+any guidance on how to proceed?
+
+
+
+------=_Part_1098_2092692198.1408226435955
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">A complete newbie to Ruby &amp; S9.<br>I'm testing the slideshow application using Cygwin on Windows 7.&nbsp; <br><br><br>I installed slideshow-2.3.0, and my ruby version is:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ruby 1.9.3p545 (2014-02-24) [x86_64-cygwin]<br><br>I also installed several plugins: (activerecord, coderay, uv, pandoc-ruby)<br><br>When I type the command "slideshow new", it generates a 'welcome.text' file in the working directory.<br><br>But when I type "slideshow build welcome.text" I get these two errors printed to the screen:<br><br>** error: failed loading plugins in 'lib/slideshow/cli/main.rb': version has already been specified as a switch in global context<br><br>*** error: stack level too deep<br><br>any guidance on how to proceed?<br><br><br></div>
+------=_Part_1098_2092692198.1408226435955--
+
+------=_Part_1097_1481909951.1408226435955--
+

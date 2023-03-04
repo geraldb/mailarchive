@@ -1,0 +1,65 @@
+From 698103103488@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 697461374976
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,5d8176b0c9afce57,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.204.143.68 with SMTP id t4mr167780bku.19.1277672223763;
+        Sun, 27 Jun 2010 13:57:03 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.204.6.8 with SMTP id 8ls3865439bkx.3.p; Sun, 27 Jun 2010 
+	13:57:01 -0700 (PDT)
+Received: by 10.204.142.16 with SMTP id o16mr160715bku.12.1277672221643;
+        Sun, 27 Jun 2010 13:57:01 -0700 (PDT)
+Received: by 10.204.142.16 with SMTP id o16mr160714bku.12.1277672221623;
+        Sun, 27 Jun 2010 13:57:01 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-bw0-f48.google.com (mail-bw0-f48.google.com [209.85.214.48])
+        by gmr-mx.google.com with ESMTP id b32si1911108bks.5.2010.06.27.13.57.00;
+        Sun, 27 Jun 2010 13:57:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.214.48 as permitted sender) client-ip=209.85.214.48;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.214.48 as permitted sender) smtp.mail=gerald.bauer@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by mail-bw0-f48.google.com with SMTP id 8so717217bwz.35
+        for <webslideshow@googlegroups.com>; Sun, 27 Jun 2010 13:57:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:received:date:message-id
+         :subject:from:to:content-type;
+        bh=WWBucwA7uSzN/0z+FXwO2CkEln9Rdv9+O9Wn6ekTAxM=;
+        b=w9kNxNOFKY5m4KVjb6YU5vJlYbJT/OmIhS1qyxHmbVBIcINQR1y8kN68wpUnWtTIGn
+         peNasZrTNqykyQHLt9lzYv67QOp7Sewttvq5eFiYy4Lew7HAlJDZjXhJLha6zTq43a+N
+         FQDlS0M0bzqIv7PZsx6/oEgQIFaZEPHJeoetc=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        b=rS1tU0IF4jfzhaOZCevx8QP1mykwsyEikpNuSBQhY8rZgym4lZNp5KgqiJOUrtWMbi
+         nRJvsr3T9I3ldCzTaz45T76VdN58i00AlOp+evchwoUCeiQqlbUue9nLmO65xJMzCbkO
+         UNZaXwBisx6maD5VNfC7E/WC8Erwv1BaiHqSc=
+MIME-Version: 1.0
+Received: by 10.204.136.87 with SMTP id q23mr2783364bkt.161.1277672220066; 
+	Sun, 27 Jun 2010 13:57:00 -0700 (PDT)
+Received: by 10.204.123.145 with HTTP; Sun, 27 Jun 2010 13:57:00 -0700 (PDT)
+Date: Sun, 27 Jun 2010 22:57:00 +0200
+Message-ID: <AANLkTinnTfgIevKNI_5i0MWf7xLz0p2q_VsX5QKThPsI@mail.gmail.com>
+Subject: New Slide Show (S9) Template Pack (slidy) Using W3C's Slidy
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   As another example I'v bundled up W3C's Slidy[1] as a Slide Show
+(S9) template pack.
+
+   You can see the Slide Show (S9) generated sample slides @
+http://slideshow.rubyforge.org/slidy/tutorial.html
+
+   More info @ http://github.com/geraldb/slideshow-slidy
+
+   If anyone is using Slidy and tries out the new template pack, let
+us know how it goes.
+
+   Cheers.
+
+[1] http://www.w3.org/Talks/Tools/#slidy
+

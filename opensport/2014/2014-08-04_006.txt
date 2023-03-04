@@ -1,0 +1,62 @@
+From 1791333761024@xxx Tue Jun 16 00:16:53 +0000 2015
+X-GM-THRID: 1794027552768
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,c14c4861489a6514
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.177.5 with SMTP id bg5mr31835888icb.27.1407148968365;
+        Mon, 04 Aug 2014 03:42:48 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.137.100 with SMTP id qh4ls1388144igb.17.gmail; Mon, 04 Aug
+ 2014 03:42:48 -0700 (PDT)
+X-Received: by 10.42.82.79 with SMTP id c15mr32486416icl.7.1407148968135;
+        Mon, 04 Aug 2014 03:42:48 -0700 (PDT)
+Received: by 10.50.218.169 with SMTP id ph9msigc;
+        Mon, 4 Aug 2014 01:34:02 -0700 (PDT)
+X-Received: by 10.50.138.69 with SMTP id qo5mr525113igb.7.1407141242695;
+        Mon, 04 Aug 2014 01:34:02 -0700 (PDT)
+X-Google-Doc-Id: 4f9bf40e13049c78
+X-Google-Web-Client: true
+Date: Mon, 4 Aug 2014 01:34:01 -0700 (PDT)
+From: =?UTF-8?B?5qyn5q+F?= <nttdocomo.ouyi@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <1df5e895-c137-4916-967a-7b231f2dc696@googlegroups.com>
+Subject: build openfootball in mysql cause an error
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3200_2140781826.1407141241541"
+X-Google-Token: EPmK_Z4FwXXfqDloEMU0
+X-Google-IP: 74.82.169.71
+
+------=_Part_3200_2140781826.1407141241541
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3201_1179127744.1407141241541"
+
+------=_Part_3201_1179127744.1407141241541
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Today I try to build the openfootball worldcup2014 in my mysql database, 
+and after several time of fail and retry I finally start the build task, 
+but after create some of the table, the task abort at a insert query, the 
+error display:
+
+rake aborted!
+Mysql::Error: Out of range value for column 'tid' at row 1: INSERT INTO 
+`logs` (`created_at`, `level`, `msg`, `pid`, `tid`, `ts`, `updated_at`) 
+VALUES (?, ?, ?, ?, ?, ?, ?)
+/var/www/openfootball/openfootball/build/Rakefile:74:in `block in <to )>'
+Tasks: TOP => build => importworld => configworld => config
+(See full trace by running task with --trace)
+
+Is it a database charset error?
+
+------=_Part_3201_1179127744.1407141241541
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Today I try to build the openfootball worldcup2014 in my mysql database, and after several time of fail and retry I finally start the build task, but after create some of the table, the task abort at a insert query, the error display:<div><br></div><div><div><div>rake aborted!</div><div>Mysql::Error: Out of range value for column 'tid' at row 1: INSERT INTO `logs` (`created_at`, `level`, `msg`, `pid`, `tid`, `ts`, `updated_at`) VALUES (?, ?, ?, ?, ?, ?, ?)</div></div><div>/var/www/openfootball/openfootball/build/Rakefile:74:in `block in &lt;to )&gt;'</div><div>Tasks: TOP =&gt; build =&gt; importworld =&gt; configworld =&gt; config</div><div>(See full trace by running task with --trace)</div></div><div><br></div><div>Is it a database charset error?</div>
+------=_Part_3201_1179127744.1407141241541--
+
+------=_Part_3200_2140781826.1407141241541--
+

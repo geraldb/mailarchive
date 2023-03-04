@@ -1,0 +1,72 @@
+From 6382952440729174016@xxx Fri Feb 03 18:35:25 +0000 2017
+X-GM-THRID: 6382859402075963392
+X-Received: by 10.237.59.162 with SMTP id r31mr3850544qte.60.1486146925638;
+        Fri, 03 Feb 2017 10:35:25 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.42.46 with SMTP id t43ls8557649ota.17.gmail; Fri, 03 Feb
+ 2017 10:35:25 -0800 (PST)
+X-Received: by 10.31.96.145 with SMTP id u139mr3171320vkb.11.1486146925345;
+        Fri, 03 Feb 2017 10:35:25 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x231.google.com (mail-it0-x231.google.com. [2607:f8b0:4001:c0b::231])
+        by gmr-mx.google.com with ESMTPS id a17si900972itd.1.2017.02.03.10.35.25
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 03 Feb 2017 10:35:25 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::231 as permitted sender) client-ip=2607:f8b0:4001:c0b::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x231.google.com with SMTP id d9so10782499itc.0
+        for <opensport@googlegroups.com>; Fri, 03 Feb 2017 10:35:25 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=Kz5klM1LFtvmEW6kGVwLKW2Nuv0jvdHjZL7D0QwE8BE=;
+        b=kAP1ChEwYHPB+KDJtLpz8z6KKDFJT/hlilw0w46bfdoUtLTX61JrwrdCoPiBty3tCO
+         0mn/v1dRrGWU5L5/pc0UEAqIvNod3sEpLWxTL85oqPXNKMl6hqtimZ9OdWjQCqRmtOXL
+         l9wtKjA4whdYGeAumYw+tWxlAavifclYeRzSbQtaEb3x62YuvYraBw+dDe4P9IrIQAB6
+         OyF7UpFE4JqsgAZ4dX3NZIBU+2lL4cfwMAwUqLODbU7e5eG5ekfrgg0BBr230akjWam2
+         IwUaYzdGM+ZvVYodyqETiAn0dl0cKGiH66GVPx6eslLG5f1Hn/guDlZESh/KVXCLjoFH
+         Qxkw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=Kz5klM1LFtvmEW6kGVwLKW2Nuv0jvdHjZL7D0QwE8BE=;
+        b=cJx3QjHxw0OY2iYM6srKEpsnfH/Y0VlCmpOXt2jRtJY7XQj+/AyLJUMgp6leQPJYzT
+         0QYKZnHXwYs1AHC0Tsltn9Uqf1oPXhOs6dqcS2Ur/gIyUprLQBG6UC651OdMIgAA42XB
+         7Ca3uRa7TkHElJaL+d3RaPW9Lvhitl7DjpfxH39WL1Z4JcIIM8pYdluawOBXTCtAG+3C
+         9lkT/NPsBu0XP9aSvoxUKwuybQn4rJde6jEYRxiyPQZZTdcFk07mCqfqDhGp/EWDIlf1
+         hWF7wAxhUSvM7ZMGHo9TA5unQnhk+cykBjfXZ9xSl5OkwI0jWJReDk249hRuX3gC6fpl
+         neNA==
+X-Gm-Message-State: AIkVDXKCrNJGDrWamZ7qvsd+YShkp/dC/hZ/kpLYR3KLu527KkkIR1OPM6Ecy81vUS80LvIJ9KY9aYqNbbVEkw==
+X-Received: by 10.36.160.131 with SMTP id o125mr2210680ite.13.1486146924798;
+ Fri, 03 Feb 2017 10:35:24 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.34.209 with HTTP; Fri, 3 Feb 2017 10:35:24 -0800 (PST)
+In-Reply-To: <a8f9ce84-6e89-4701-9611-e5c591602483@googlegroups.com>
+References: <a8f9ce84-6e89-4701-9611-e5c591602483@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 3 Feb 2017 19:35:24 +0100
+Message-ID: <CAAxEZd9_HdroQq+-habSdB5GPtgox=YD=MitQ3OuoLct57jF2A@mail.gmail.com>
+Subject: Re: [opensport] Champions League full database
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Welcome to football.db.
+
+> [fatal] event reader - record for team key >moskva< not found
+
+   You might be missing the russian teams / clubs. See the /ru-russia
+repo [1] it includes in teams.txt:
+
+moskva, Moskva, city: Moscow
+
+Cheers.
+
+[1] https://github.com/openfootball/ru-russia/blob/master/teams.txt
+

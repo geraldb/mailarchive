@@ -1,0 +1,105 @@
+From 6817392262601768960@xxx Sun Apr 19 12:03:49 +0000 2020
+X-GM-THRID: 6817157413221695488
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 2002:adf:ea44:: with SMTP id j4mr14559333wrn.38.1587297828485;
+        Sun, 19 Apr 2020 05:03:48 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a1c:a754:: with SMTP id q81ls10702655wme.3.canary-gmail;
+ Sun, 19 Apr 2020 05:03:47 -0700 (PDT)
+X-Google-Smtp-Source: APiQypK8g7QBbKgDDNLaWoJdiib/Vt+d/1m8qvtYar2iRapimeoWuyvQHoLptel4M7ZWHGhWH7Qx
+X-Received: by 2002:a05:600c:2214:: with SMTP id z20mr13564900wml.189.1587297827306;
+        Sun, 19 Apr 2020 05:03:47 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1587297827; cv=none;
+        d=google.com; s=arc-20160816;
+        b=MSJD3MJ3xYlDLhxIxtWXR8xfs2oR94cT5IlxFS/9MUDJKg9/s73LEV45D3SuesDnVJ
+         GDNm5sX4um82DvVH3JJKEpAJPgvoCOb2wQyAsG0Fk+OhyeH1QBgUBwgUj3G40Q+lFuxS
+         nsFyGKnAbxU2sjADbmbgQEoDlUeNqUevRuAvDj7B162mDb2TXUwh/eoD9XQYuUuwxcHZ
+         fDlOSNHbv2Jp9Lv4dPcpWc45KLHjyA00oEJIWgkLOit255UZqQ0+touZjJISgo3okynp
+         xk6gZ+TW+OuEtFIpOM/XLSxqfH/KM9C84UQMYZ1pME8isX/A/y4UIzfbBUJ9v8Ir2Jel
+         7t1Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=ou6FnfDCu0HJN2ye2/l3Usird4NG/ncoKoRxRmOstI4=;
+        b=vHxxlhuLE+VOTq6CPhPdw+nbuhunx5jcAHJct7DanVBfnunlUb593Tq5dC7WgHdQVp
+         UW6Ma/gGM9zVANFGug+pAxAy39+EjcQXdky7KMAx3MrDPoJiKhdWT4c2Z57KXl2APTUh
+         mHNVOYwjGTbNonA0as9KDOkDdvHwlIDHjdFDYd2r/FmVBA3yV/Op5ILiaOO5vzzewruB
+         ELBOMk7oL4tX3utvT7WrAd6Uqw05y7s0aUtP/8ek6YcSXmAlHzU+bI4wYBo7hJNTsrF8
+         43zPVvgewWtFIpgKUzqdunwo0KihyUKihMhLVmz03TZv7JoUhcWeGghr9eJ7qonFlYbP
+         0m1Q==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=BwG3QYPi;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x136.google.com (mail-lf1-x136.google.com. [2a00:1450:4864:20::136])
+        by gmr-mx.google.com with ESMTPS id t22si184922wmt.0.2020.04.19.05.03.47
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 19 Apr 2020 05:03:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) client-ip=2a00:1450:4864:20::136;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=BwG3QYPi;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x136.google.com with SMTP id t11so5545390lfe.4
+        for <wwwmake@googlegroups.com>; Sun, 19 Apr 2020 05:03:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=ou6FnfDCu0HJN2ye2/l3Usird4NG/ncoKoRxRmOstI4=;
+        b=BwG3QYPiQ8szH5vcXLK82tEarym072jikviJ8ODwymJa5mdVA/HUAbbhDYn4Wj4Jzv
+         hdfcQ+TJX2RFlMnMzZXkE/fd7u53yvEzWH2eS7TwQioPvuekZahgU/l/ZiJGj5Mq6CBd
+         1ntoaSzUoxRODwVWVesokWo4/rNfNM1EtpZThdvUrqFyVISbbx1mYyQ799wwJzwEQryY
+         n3lnLs2o4q3QvLVGVsEWX7o3+I9BhrYJ0YC9z7aiufIeguQVSgc6yRsYmGcZ8MN5UNId
+         zEiMg/UlfYPBSmkPr9pN4EgRRH/iBaIHgz5UtUGSJCDxdbjs03DjLVFPxx++0m6RfU6F
+         AS+w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=ou6FnfDCu0HJN2ye2/l3Usird4NG/ncoKoRxRmOstI4=;
+        b=Sd58I9GCBmPziE+DgTcZRA1Rc/5z0YNnZcBR2TLO3TruMm/gUnYUAohlKzTNKUcYG6
+         zfS0btttedp1IS5B5mW56IxYKLuee+mnUEiz9qDVo1aJgiCjO/u1UfaaTgEI3xvCKpEU
+         mCA+SI9Hx6zdUKclEWZ76i9GlNljfqNKWAw+S3nGLEEsvz1LjkgyCN/12b+CqOxcIth5
+         ZNl03mSv9B5fHJfVIB+fF7W7c3o653W/3BnGNPUzXB2KH4k5xHRkAcTIhzQcRGQROQH8
+         VQP6Ut8wVavJAebFJ4qMbouQ680OoqIUUPCncA8KvAlkNCxLYsOo3z2AZAgWxfikN6m2
+         iWdQ==
+X-Gm-Message-State: AGi0PubMgxluwo+hDAIzNLjgEzujz4nI7hkhdHzaT4VsrJiNoHTVI93f
+	XypDkRDVUDiiO0knyU6xKbW7zE6moYIw7+BQquLaIEME
+X-Received: by 2002:ac2:4257:: with SMTP id m23mr7280692lfl.141.1587297826234;
+ Sun, 19 Apr 2020 05:03:46 -0700 (PDT)
+MIME-Version: 1.0
+References: <f82824b4-a67c-454f-9262-037072e7aa7a@googlegroups.com>
+In-Reply-To: <f82824b4-a67c-454f-9262-037072e7aa7a@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 19 Apr 2020 14:03:36 +0200
+Message-ID: <CAAxEZd9RF+8FXkL0Mp8=r_DR41EyEbPOfSk1kJHDjh4X2VSmzQ@mail.gmail.com>
+Subject: Re: [wwwmake:495] How are articles prioritized in planet.ini
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+> Is there a way to process the entire list of sources and only publish articles for the whole list chronologically?
+
+  Yes, it's all up-to-you, that is, all feeds and feed items get
+stored in SQL tables all you have to do is to put together your own
+SQL query for how you want the sources (feeds) or articles (feed
+items) returned in your template.
+
+     For example, to list all articles (that is, from all sources)
+reverse chronologically  - this should do:
+
+   site.items.latest.limit(24).each do |item|
+      ...
+   end
+
+    Limit is the SQL LIMIT that tells the query how many records
+(articles) to include - if you leave it out you will get all. You can
+count how many with count e.g.
+
+   site.items.count
+
+   And so on. Cheers. Prost.
+

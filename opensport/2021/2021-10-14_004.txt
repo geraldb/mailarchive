@@ -1,0 +1,96 @@
+From 7018847245192658944@xxx Thu Oct 14 09:12:02 +0000 2021
+X-GM-THRID: 6961100163747151872
+X-Received: by 2002:a05:6512:3b21:: with SMTP id f33mr4110137lfv.88.1634202721974;
+        Thu, 14 Oct 2021 02:12:01 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:6512:3a83:: with SMTP id q3ls183304lfu.2.gmail; Thu, 14
+ Oct 2021 02:12:00 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyKguX4DPTTfwW2qGuUA9qtugCd+XBuVphNvZWCOeuY754jtF/9ureGecziJuex176gJPpZ
+X-Received: by 2002:a05:6512:a8b:: with SMTP id m11mr4009031lfu.220.1634202720552;
+        Thu, 14 Oct 2021 02:12:00 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1634202720; cv=none;
+        d=google.com; s=arc-20160816;
+        b=rhvlR6SBqKeeTgkIs0rCr+TgMFtL3UcJuJpHQ1G6w7SZ4HvpgDK4swfRxgEHAlX7cY
+         u10gJENEIRKNIc1aAY+JT9ApU7IjSCDvGVOSAn1JwG+3UuqroDARpsKupnejT2qth2I8
+         ajfd1WFB4xSxjGRDleuAlkb/C5xpQj4lorRL2rrk1+bisIb5R/ZhYD1AM/stUrTNOLyB
+         95TSP+LDA2Rb6NvbUt9iLvz18Bd8cfa7XzMFR+nEQMZpV7ewZcvIrT/ZJJrsdM8NJ+Z8
+         DLcHxuffA+cGED5jws8TXW48zvLBIievxpNHplFqh9uYdyF5u5YfOpLaPPGMaRs3hevM
+         ErTg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=MC3zEBYXyswziABUFwa4hdo46T8o3VjZNZgQcB7P/4w=;
+        b=l4k+geIK6LVYiy8D5IIrcmut6v67rfV7i7dDwjMXecWkDtCQYzgW/TyZPgK4ulQ/M5
+         IqQ6TxAG/uwfym2LkS/VesEeA+B0gqmGbue2N7uJMInUmI0tv3ZkU7+Y83sryByr0CkD
+         p+ffg8FTgQgqmfap847j07DvhyV+7KMXvRLtlV0tO7rk6XZTgJyftn9HyUIniFAZU+vO
+         iFltxXyhq5RTFyQPZZUCLGooOD2x7qvR+lGEaivwDpPcxVrZHnhMEeLTkxNpOKBNhsUN
+         FXofKMar+nKujGJC/nHxmaIUXEhQBTRjVLZpxcE4ZKbZ1s1otXsSsbfj+82oMXbTAVUL
+         8L2Q==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=Bz3OPJ9j;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::535 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ed1-x535.google.com (mail-ed1-x535.google.com. [2a00:1450:4864:20::535])
+        by gmr-mx.google.com with ESMTPS id f20si70547ljn.4.2021.10.14.02.12.00
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 14 Oct 2021 02:12:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::535 as permitted sender) client-ip=2a00:1450:4864:20::535;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=Bz3OPJ9j;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::535 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ed1-x535.google.com with SMTP id g10so21626046edj.1
+        for <opensport@googlegroups.com>; Thu, 14 Oct 2021 02:12:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=MC3zEBYXyswziABUFwa4hdo46T8o3VjZNZgQcB7P/4w=;
+        b=Bz3OPJ9jGJPf9nOzLMdB56DN0X2AwqBlujtpciENjDpcUBuUqF6XuTalosvKkgZxqk
+         PUDAX5lMkUKtzEKCPGl1K3DJotH5l9KCicLtzgkCgpWfmtUsZDUxEkt/ybi2C3s4ZOQE
+         HAYpMFsjMvmaaTux2sL/kkUIZePAuncR3lwIXIUN93t8GXROVsmoNl0HxSQVPAIRdBrh
+         ESj5v+0cQ2PNV483eNUsTxZOh3t/pke+jo/qgwFHqTz/hibCAIwsvEqA/bGLEymPA+wO
+         xZvMR7uDCB37MKnmJKWdTvg0O3SsNe6N0G5pc9+iZcCNAUD9BVS7VXsyw5AaE+d/m4z0
+         jXCA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=MC3zEBYXyswziABUFwa4hdo46T8o3VjZNZgQcB7P/4w=;
+        b=VkUdu9z+dMSWGEcnsWa8axDQeTaeecUtwaXYVbtpimaiacTqcO9c5l9oujlxwQhecC
+         8wMThAF++ZZuxrjeHYBfSWVRYSpsieHoozl86IyrjkPOu379IN+1iVy6rlDwZ4F7Do6S
+         YH/VCWX8va0TGN7ByEKOWME3YWA5G0jsOti0WrPEoiXd8bdtjzaYp4Itug/Aof2Vn8K/
+         vJef/51EON8yYa3CYWmh/NxhfCm/LCo/+c5Q5/dxsY9lU1udnAwmMo9RQwCivlTmywQh
+         sWoZco2WcLHTPADlJHhVDx6HoMVtvmEXfUe9yj7JKMb1aSY+OYhF6YK+G+/mETUIud4e
+         BkMQ==
+X-Gm-Message-State: AOAM532oVNWFs/ffiHOx2uizYoMBMFHAxSNM1hwblh81caweu4Ek9UPK
+	vg+ILPxhi58F6J0YUWZNmKHy/Z7ExdQP0GPllLhL4uZYiUWeag==
+X-Received: by 2002:a17:906:4d04:: with SMTP id r4mr2467895eju.252.1634202719814;
+ Thu, 14 Oct 2021 02:11:59 -0700 (PDT)
+MIME-Version: 1.0
+References: <ed2bac25-07cf-41da-bc35-2ea87f0eeaddn@googlegroups.com>
+ <CAAxEZd8wJST0=_f3236xEAEZ5gVt7uZYwQZVxm27K4W-ADoc9A@mail.gmail.com> <ee6b00d8-10da-45b9-a3a3-118359e83a42n@googlegroups.com>
+In-Reply-To: <ee6b00d8-10da-45b9-a3a3-118359e83a42n@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 14 Oct 2021 11:11:52 +0200
+Message-ID: <CAAxEZd9Q=+eKa1J2TZyEOXmOx-2=NkHiJaQj4FhxRqaTA_1zaA@mail.gmail.com>
+Subject: Re: [opensport] Creating the eng2020-21 for the first time
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   thanks for trying football.db / sport.db.
+
+> error: wrong number of arguments (given 1, expected 0)
+
+   Sorry for the trouble - I assume this is a ruby 3.x compabitiblity
+error (about keyword arguments).
+  Sorry I am still running on the ruby 2.x series  (I try to update /
+upgrade later this year)
+   but for now - sorry - the only workaround is to downgrade your ruby
+installation from the 3.x series to 2.x.
+
+   Cheers. Prost.
+

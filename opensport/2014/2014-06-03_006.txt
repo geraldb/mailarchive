@@ -1,0 +1,198 @@
+From 1006960115712@xxx Tue Jun 16 00:17:05 +0000 2015
+X-GM-THRID: 923854176256
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,d32db7d7f6a63723
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.52.36.211 with SMTP id s19mr14704701vdj.7.1401808249101;
+        Tue, 03 Jun 2014 08:10:49 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.32.203 with SMTP id h69ls2680071qgh.56.gmail; Tue, 03 Jun
+ 2014 08:10:48 -0700 (PDT)
+X-Received: by 10.140.100.204 with SMTP id s70mr184064qge.9.1401808248791;
+        Tue, 03 Jun 2014 08:10:48 -0700 (PDT)
+X-Google-Doc-Id: 19672364d3847546
+X-Google-Web-Client: true
+Date: Tue, 3 Jun 2014 08:10:47 -0700 (PDT)
+From: red band <gpsundergrnd@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <46f731f3-bcfd-443f-8a91-25ca1058c5c8@googlegroups.com>
+In-Reply-To: <CAAxEZd_jL1Uyn7UfLVfSeY7YzPpppWxjW1Oce2jrwAf1w6V3Sg@mail.gmail.com>
+References: <CAAxEZd9j_7b5+8XCQk8R8PrJeG0f4EGycXMOG1ALBLg=aXEjxA@mail.gmail.com>
+ <4ddbbd16-58ff-4d90-ad9a-b16bd0f0c781@googlegroups.com>
+ <e3455618-1eac-44b2-98e6-c72e0e18e910@googlegroups.com>
+ <CAAxEZd_jL1Uyn7UfLVfSeY7YzPpppWxjW1Oce2jrwAf1w6V3Sg@mail.gmail.com>
+Subject: Re: [opensport] Re: World Cup 2014 Match Picks/Predictions (w/ Open
+ Source Sportbook Rails Web App)
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3155_6948856.1401808247556"
+X-Google-Token: EPfKt5wFvJDJoWdoZvY0
+X-Google-IP: 81.152.64.145
+
+------=_Part_3155_6948856.1401808247556
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3156_20014980.1401808247556"
+
+------=_Part_3156_20014980.1401808247556
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Aah, that sorted it out!  I had deleted everything and restarted a couple 
+of times but always with the rake db:setup deleting the db and using rake 
+db:migrate then seed worked great.
+
+Thank you very much for your efforts producing this and the help to get it 
+working.
+
+How will the knock-out stages work? are these added by the fixtures page in 
+admin?
+
+btw all of the users in the demo seem to have access to admin and can 
+change anything seems to be the same on your herukoapp demo.
+Is there a way to restrict normal users to only use the main app?
+
+Grtz
+
+Red
+
+On Tuesday, June 3, 2014 1:53:29 PM UTC+1, Gerald Bauer wrote:
+>
+> Hello, 
+>   Thanks for the info. I just tried a new installation. It works. 
+>
+>   Sorry. Note: If you update an installation you have to delete the 
+> database first!  Sorry, the sportbook does NOT use auto database 
+> migration magic  (most tables reside in gems).  If the schema changes 
+> (e.g. gets new tables or fields) you have to recreate the database 
+> (and delete the database first) 
+>
+>   If your installation is an update, please delete your database and 
+> recreate: 
+>
+> $ rake db:migrate 
+>
+> You should see 
+>
+> -- create_table(:alltime_standings) 
+>    -> 0.0010s 
+> -- create_table(:alltime_standing_entries) 
+>    -> 0.0010s 
+>   ... 
+>
+>   Let us know if it works. Good luck. Cheers. 
+>
+> 2014-06-03 12:37 GMT+02:00 red band <gpsund...@gmail.com <javascript:>>: 
+> > No, it still fails, and it looks like it could be the same place as when 
+> I 
+> > ran rake db:setup 
+> > rake aborted! 
+> > ActiveRecord::StatementInvalid: SQLite3::SQLException: no such table: 
+> > alltime_standing_entries: DELETE FROM "alltime_standing_entries" 
+> > 
+> > Is this table missing from the schema? 
+> > 
+> > Grtz 
+> > 
+> > Red 
+> > 
+> > 
+> > On Tuesday, June 3, 2014 11:00:46 AM UTC+1, Gerald Bauer wrote: 
+> >> 
+> >> Hello, 
+> >> 
+> >>   Thanks for your interest in sportbook. Please, replace the all-in-one 
+> >> database setup command 
+> >> 
+> >> $ rake db:setup 
+> >> 
+> >>    with two steps 
+> >> 
+> >> $ rake db:migrate                       # will create the database 
+> tables 
+> >> / schema 
+> >> $ rake db:seed DATA=demo       # will load all data for the demo setup 
+> >> 
+> >>    Let us know if it works. Cheers. 
+> > 
+> > -- 
+> > You received this message because you are subscribed to the Google 
+> Groups 
+> > "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends" 
+> > group. 
+> > To unsubscribe from this group and stop receiving emails from it, send 
+> an 
+> > email to opensport+...@googlegroups.com <javascript:>. 
+> > For more options, visit https://groups.google.com/d/optout. 
+>
+
+------=_Part_3156_20014980.1401808247556
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Aah, that sorted it out!&nbsp; I had deleted everything and restarted a couple of times but always with the rake db:setup deleting the db and using rake db:migrate then seed worked great.<br><br>Thank you very much for your efforts producing this and the help to get it working.<br><br>How will the knock-out stages work? are these added by the fixtures page in admin?<br><br>btw all of the users in the demo seem to have access to admin and can change anything seems to be the same on your herukoapp demo.<br>Is there a way to restrict normal users to only use the main app?<br><br>Grtz<br><br>Red<br><br>On Tuesday, June 3, 2014 1:53:29 PM UTC+1, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>&nbsp; Thanks for the info. I just tried a new installation. It works.
+<br>
+<br>&nbsp; Sorry. Note: If you update an installation you have to delete the
+<br>database first! &nbsp;Sorry, the sportbook does NOT use auto database
+<br>migration magic &nbsp;(most tables reside in gems). &nbsp;If the schema changes
+<br>(e.g. gets new tables or fields) you have to recreate the database
+<br>(and delete the database first)
+<br>
+<br>&nbsp; If your installation is an update, please delete your database and recreate:
+<br>
+<br>$ rake db:migrate
+<br>
+<br>You should see
+<br>
+<br>-- create_table(:alltime_<wbr>standings)
+<br>&nbsp; &nbsp;-&gt; 0.0010s
+<br>-- create_table(:alltime_<wbr>standing_entries)
+<br>&nbsp; &nbsp;-&gt; 0.0010s
+<br>&nbsp; ...
+<br>
+<br>&nbsp; Let us know if it works. Good luck. Cheers.
+<br>
+<br>2014-06-03 12:37 GMT+02:00 red band &lt;<a href="javascript:" target="_blank" gdf-obfuscated-mailto="820S_ZJLaBoJ" onmousedown="this.href='javascript:';return true;" onclick="this.href='javascript:';return true;">gpsund...@gmail.com</a>&gt;:
+<br>&gt; No, it still fails, and it looks like it could be the same place as when I
+<br>&gt; ran rake db:setup
+<br>&gt; rake aborted!
+<br>&gt; ActiveRecord::<wbr>StatementInvalid: SQLite3::SQLException: no such table:
+<br>&gt; alltime_standing_entries: DELETE FROM "alltime_standing_entries"
+<br>&gt;
+<br>&gt; Is this table missing from the schema?
+<br>&gt;
+<br>&gt; Grtz
+<br>&gt;
+<br>&gt; Red
+<br>&gt;
+<br>&gt;
+<br>&gt; On Tuesday, June 3, 2014 11:00:46 AM UTC+1, Gerald Bauer wrote:
+<br>&gt;&gt;
+<br>&gt;&gt; Hello,
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; Thanks for your interest in sportbook. Please, replace the all-in-one
+<br>&gt;&gt; database setup command
+<br>&gt;&gt;
+<br>&gt;&gt; $ rake db:setup
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; &nbsp;with two steps
+<br>&gt;&gt;
+<br>&gt;&gt; $ rake db:migrate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # will create the database tables
+<br>&gt;&gt; / schema
+<br>&gt;&gt; $ rake db:seed DATA=demo &nbsp; &nbsp; &nbsp; # will load all data for the demo setup
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; &nbsp;Let us know if it works. Cheers.
+<br>&gt;
+<br>&gt; --
+<br>&gt; You received this message because you are subscribed to the Google Groups
+<br>&gt; "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+<br>&gt; group.
+<br>&gt; To unsubscribe from this group and stop receiving emails from it, send an
+<br>&gt; email to <a href="javascript:" target="_blank" gdf-obfuscated-mailto="820S_ZJLaBoJ" onmousedown="this.href='javascript:';return true;" onclick="this.href='javascript:';return true;">opensport+...@<wbr>googlegroups.com</a>.
+<br>&gt; For more options, visit <a href="https://groups.google.com/d/optout" target="_blank" onmousedown="this.href='https://groups.google.com/d/optout';return true;" onclick="this.href='https://groups.google.com/d/optout';return true;">https://groups.google.com/d/<wbr>optout</a>.
+<br></blockquote></div>
+------=_Part_3156_20014980.1401808247556--
+
+------=_Part_3155_6948856.1401808247556--
+

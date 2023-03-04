@@ -1,0 +1,75 @@
+From 6241040350280941568@xxx Mon Jan 18 08:24:01 +0000 2016
+X-GM-THRID: 6238795039826247680
+X-Received: by 10.182.24.41 with SMTP id r9mr21184984obf.25.1453105441141;
+        Mon, 18 Jan 2016 00:24:01 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.87.196 with SMTP id ba4ls1160479obb.36.gmail; Mon, 18 Jan
+ 2016 00:24:00 -0800 (PST)
+X-Received: by 10.182.49.164 with SMTP id v4mr6896899obn.39.1453105440764;
+        Mon, 18 Jan 2016 00:24:00 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x236.google.com (mail-io0-x236.google.com. [2607:f8b0:4001:c06::236])
+        by gmr-mx.google.com with ESMTPS id ht5si629981igb.1.2016.01.18.00.24.00
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 18 Jan 2016 00:24:00 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) client-ip=2607:f8b0:4001:c06::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x236.google.com with SMTP id 77so510869908ioc.2
+        for <opensport@googlegroups.com>; Mon, 18 Jan 2016 00:24:00 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=kEu0ybXJPi7sCbbFqv4TQf3imYBkh7uM92w1SFKY08Q=;
+        b=jTBULQbDZQD6G8DYRBHZEkuxyUh4X7izJBge3jfMUokma6zbjD5MuHLn2HTBMavq9M
+         xynGsiZ8zZ8tBBSaKoex7r9PtQIcjcggW9EMuAlp1ndYk/3bfmPJGsKTWRWTesliuhi3
+         DVBhuhAdt6qYMX5Q8onmU88EeV29J4hkiMnm+ImyKetQwov96GzkD3Q8nssKvlGUb8cM
+         Rv6HiZUG/9L0Pm6l+lL1Ti3RYPz+ggPBScUXWHDFjR3Co2YtmTdBrq4np3xu403lhcNE
+         xR2pJEUKiOOdzyjj+nt/9u1OTnPHMRZ62lyU3DqhLEkiDJPExaOgOhhwyz09tcyiS1fT
+         nfLQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to:content-type;
+        bh=kEu0ybXJPi7sCbbFqv4TQf3imYBkh7uM92w1SFKY08Q=;
+        b=E9/H5EDKrwwVPttXYFhyeiEwxMI9U6MAeaUswq82hTNrfk3c2HM8NlBPx0zUTp+O8O
+         B9bbWajcohMgp67d20T9ZTcG+8o5NqEEEPsV6KePbNEqcjeHzcfU11jtP7n+ElgqI4N9
+         jnVEGR0wl+ZqV8HLfPp5bbximuYrYym0+W8AsEN6sgJg/2hpihMrH5QuwULK3weXASnM
+         nj3UjdAXMh5TlIs50EMqT1E54Gb3vL42Yk2oA5H6Ni4/OmylbkkXSr6HiqbzjyDbHYf6
+         t0nQQtY8YLvjWvNBc7eu5HyvZu1tc25h2EvRQ0jUpcoDBeyfB22zNoegJZiycvhKC59q
+         zung==
+X-Gm-Message-State: ALoCoQnzbitLn++l3hJCaeFtlIGbhM2CRl77dgs0Vva+Q+I+99mJYEA/efC80K9kjXdgihJRz4iiK843xWOhI87u8D7N5pzeAw==
+MIME-Version: 1.0
+X-Received: by 10.107.150.141 with SMTP id y135mr24161693iod.52.1453105440661;
+ Mon, 18 Jan 2016 00:24:00 -0800 (PST)
+Received: by 10.107.63.198 with HTTP; Mon, 18 Jan 2016 00:24:00 -0800 (PST)
+In-Reply-To: <CAAxEZd-eoyJ-RrXMv4cxskfvAv5WD3dxPOe0+5OxDeAMW9iJqA@mail.gmail.com>
+References: <f6408a99-0267-4b04-ab58-85b3e210bdaf@googlegroups.com>
+	<CAAxEZd8KXqR3G6d_cEDyH5+_RnWUmj_WXBCYNk8ryagvmrnn7A@mail.gmail.com>
+	<10356ddb-d61d-4f89-9479-421e99c16942@googlegroups.com>
+	<CAAxEZd-eoyJ-RrXMv4cxskfvAv5WD3dxPOe0+5OxDeAMW9iJqA@mail.gmail.com>
+Date: Mon, 18 Jan 2016 09:24:00 +0100
+Message-ID: <CAAxEZd_y6sUmz_HR_5vBmJ3XWkozUU5eepp23Vr8W9zbWRZPYg@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_=5Bopensport=5D_Spanish_Primera_Divisi=C3=B3n_=282014=2F15=29_?=
+	=?UTF-8?Q?2_match_miss?=
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    Thanks to Markus Ziller [1] for the fix! If you look closer the
+errors were actually just simple typos:  e.g.
+
+    RCD Espanol   =>   RCD Espanyol
+    RCD Espanol   =>   RCD Espanyol
+
+   Thanks again to Markus Ziller for the fixes. All matches should be
+now included. Cheers.
+
+[1] github.com/markusz
+

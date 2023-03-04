@@ -1,0 +1,66 @@
+From 2030241316864@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 1616016048128
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fdf4cd8620f9c54a
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.241.130 with SMTP id wi2mr248384wjc.0.1407827679826;
+        Tue, 12 Aug 2014 00:14:39 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.37.36 with SMTP id v4ls599523wij.49.canary; Tue, 12 Aug
+ 2014 00:14:39 -0700 (PDT)
+X-Received: by 10.194.241.130 with SMTP id wi2mr248383wjc.0.1407827679459;
+        Tue, 12 Aug 2014 00:14:39 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22d.google.com (mail-wi0-x22d.google.com [2a00:1450:400c:c05::22d])
+        by gmr-mx.google.com with ESMTPS id d9si1390854wie.3.2014.08.12.00.14.39
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 12 Aug 2014 00:14:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22d as permitted sender) client-ip=2a00:1450:400c:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f173.google.com with SMTP id f8so5353037wiw.12
+        for <opensport@googlegroups.com>; Tue, 12 Aug 2014 00:14:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=jOtOpfhDpjY2SsMLyUh7orN6EJIDOcvrkLHK5lxrv0I=;
+        b=Re/uCFNGx6eCf8QM19fIMK4lpOi8Zom86rBUThxn3AUFDrvCS/1CQ0vhadx1lQ6z2j
+         7ReBJ9cjcPFpRhhA1U5RB2mLigBxxPT0CBtHzPWCilVhD6EaFyyUU8qCqndcLh2oH/R3
+         1erSwaPsIbwRHdGNjVwz7ygOoEb8V8EHby5by2tSxKrIVqS3xb6oqofBZ0uFHS1BIe/P
+         w0G76PcewpGM8/XLCwUDYpHNTFBjXOLxA9STzMmPfvf0xyNCuQBHrGEDUp1g/Gm8Jwic
+         V11gO0H+mjke37a4lPAfKUWnb3t4HB0U8QUVhHcvQZzYaGOIjZs3UqnANRbArmzo+Esy
+         BrfQ==
+MIME-Version: 1.0
+X-Received: by 10.180.102.130 with SMTP id fo2mr22362677wib.29.1407827679350;
+ Tue, 12 Aug 2014 00:14:39 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Tue, 12 Aug 2014 00:14:39 -0700 (PDT)
+In-Reply-To: <2211b22a-3e0b-4ba5-9f5b-74a03530c6f9@googlegroups.com>
+References: <CAAxEZd8dPUjTctpYZ9wxbWVEjzbN1i+odVo0ipC7UTzrC9OZVg@mail.gmail.com>
+	<11a9a774-0559-4585-8921-43c9ecee13c6@googlegroups.com>
+	<CAAxEZd9MT=-L=MOz07EcdmHBS-7-HGzfvPsyYh_8qEQwkW9dRQ@mail.gmail.com>
+	<2211b22a-3e0b-4ba5-9f5b-74a03530c6f9@googlegroups.com>
+Date: Tue, 12 Aug 2014 09:14:39 +0200
+Message-ID: <CAAxEZd9vJNn7eucomj2jiQME50Ymhy7B8N_UNZtuaWmfO=CpAQ@mail.gmail.com>
+Subject: Re: [opensport] Re: New Season - English Premier League 2014/15 Added
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    Thanks for kind words. Will try to add the standings table in the
+coming weeks.
+
+    The icons get matched using the football.db club key - there's yet
+another github org - surprise, surprise - sportlogos [1]  Here's the
+"album" page for the uploaded football club logos [2] so far.
+
+  Cheers.
+
+[1] github.com/sportlogos
+[2] sportlogos.github.io/football.db.logos.ruby/32.html
+

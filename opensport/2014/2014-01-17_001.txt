@@ -1,0 +1,65 @@
+From 240009609216@xxx Tue Jun 16 00:17:21 +0000 2015
+X-GM-THRID: 238054014976
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4c1a89e593a48cc0,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.170.137 with SMTP id am9mr1242337lbc.3.1389974896885;
+        Fri, 17 Jan 2014 08:08:16 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.25.169 with SMTP id d9ls284011lag.99.gmail; Fri, 17 Jan
+ 2014 08:08:16 -0800 (PST)
+X-Received: by 10.112.25.39 with SMTP id z7mr1271056lbf.4.1389974896500;
+        Fri, 17 Jan 2014 08:08:16 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22f.google.com (mail-wi0-x22f.google.com [2a00:1450:400c:c05::22f])
+        by gmr-mx.google.com with ESMTPS id pl6si154161wic.2.2014.01.17.08.08.16
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 17 Jan 2014 08:08:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22f as permitted sender) client-ip=2a00:1450:400c:c05::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x22f.google.com with SMTP id hr1so907667wib.2
+        for <opensport@googlegroups.com>; Fri, 17 Jan 2014 08:08:16 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=sa0A9mnVxHttC3Z7uK9pTJdX7OJGMsHCqxQ2O8Csm2w=;
+        b=w7bH62YS11NRoZfaF+Ks0hoo/LijAV3IXTLsSeGbxE3gZpKlAdW3STq+YSU9w27hmB
+         T7A79j4mYwonRN1Yuz+vgyUFv1EcQ+oc9A6f87w5bdDk+tR0LaMGNnzBpz5lSxWW0Y1D
+         bPwVvdh2AG7a+GdK3vm1mRG2jAfy9ubSYoyz4eLQQMa2qLaeumDuHgD1sE0Xk914WOy/
+         NU1LlSjkuhfysK6bpr6pSbRTi/rJ0VfoUYGRKLciZ5FaLuCOcpcmuYi1CkFAS/8Enn8y
+         NJEXTyR8rojQTskxYTk10cvNpsAdkmx4x1qL8iH3xhyUYor3MhJFqRxxUJSkfXm2TE0p
+         vPnA==
+MIME-Version: 1.0
+X-Received: by 10.181.12.20 with SMTP id em20mr3154969wid.0.1389974896329;
+ Fri, 17 Jan 2014 08:08:16 -0800 (PST)
+Received: by 10.216.67.196 with HTTP; Fri, 17 Jan 2014 08:08:16 -0800 (PST)
+Date: Fri, 17 Jan 2014 10:08:16 -0600
+Message-ID: <CAAxEZd-xnzsm2DcB2NPa643T711O+rYvEKyqXv5VW18--OvnBw@mail.gmail.com>
+Subject: American Football / NFL Fixtures, Games, Stats, Rankings, Database,
+ HTTP API Service n More
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  FYI: Andrew Gallant (aka BurntSushi) has a couple of open source
+projects (scripted in Python) that lets you build up NFL database from
+the NFL Game Center JSON data service and that lets you rank players
+on game stats and much more.
+
+  The projects include:
+
+   - github.com/BurntSushi/nflgame
+   - github.com/BurntSushi/nfldb
+   - github.com/BurntSushi/nflcmd
+
+   Know any other open sport data projects? Let us know.
+
+   Cheers.
+

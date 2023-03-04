@@ -1,0 +1,88 @@
+From 409275990016@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 389709561856
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,58db04fab18bc715
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.103.189.15 with SMTP id r15mr64686mup.13.1233921585409;
+        Fri, 06 Feb 2009 03:59:45 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from mail-fx0-f13.google.com (mail-fx0-f13.google.com [209.85.220.13])
+        by mx.google.com with ESMTP id 5si147658fge.9.2009.02.06.03.59.45;
+        Fri, 06 Feb 2009 03:59:45 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.220.13 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.220.13;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.220.13 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by mail-fx0-f13.google.com with SMTP id 6so1385567fxm.4
+        for <webslideshow@googlegroups.com>; Fri, 06 Feb 2009 03:59:45 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.181.52.14 with SMTP id e14mr560556bkk.99.1233921584888; Fri, 
+	06 Feb 2009 03:59:44 -0800 (PST)
+In-Reply-To: <1f058eab0902051019ybb15153m2f23c399eca3bc0a@mail.gmail.com>
+References: <b010b579-b47d-4f23-a54c-0a902a804043@t26g2000prh.googlegroups.com>
+	 <976bdc0d-b03c-4c17-acb2-5a1f49e98815@v5g2000prm.googlegroups.com>
+	 <3011f7d0-f27e-4b46-ad24-5353cbe75cdb@z27g2000prd.googlegroups.com>
+	 <1f058eab0902051019ybb15153m2f23c399eca3bc0a@mail.gmail.com>
+Date: Fri, 6 Feb 2009 12:59:44 +0100
+Message-ID: <1f058eab0902060359g3cd78a50n967dff6d5858c9ee@mail.gmail.com>
+Subject: Re: [slideshow] Re: How to use s5 theme?
+From: Gerald Bauer <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+>   To start documenting the new packaging format I'd say the easiest
+> is if I package up the original S5 pack as an sample how it all works
+> and fits together.  If you're not in a rush I'll post the new sample
+> package in a couple of days.
+
+
+    I updated the slideshow gem (- that is, version 0.7.4 -) to
+include a sample starter template package to demo how to bundle up the
+original S5 v11 blank package.
+
+ Update your slideshow gem/installation than issue:
+
+  slideshow -g -t s5blank.txt
+
+ This will generate a sample template package w/ manifest for the S5
+v11 blank package in your working folder. If you want to store it
+somewhere else add the -o/--output switch e.g.
+
+  slideshow -g -t s5blank.txt -o tpl
+
+Note, the sample package also includes a "starter" slide show called
+blank.textile. Delete it once you write your own slide shows.
+
+ To test and use the generated sample package run:
+
+  slideshow -t s5blank.txt blank.textile -o o
+
+ Note, change your output folder using the -o/--output switch
+otherwise you may override your templates. Or if you stored the
+generated package in tpl folder run:
+
+  slideshow -t tpl/s5blank.txt tpl/blank.textile
+
+That's it. Open up the generated web page, that is, blank.html or
+o/blank.html depending on your ouput folder settings and enjoy.
+
+
+Some more details:
+
+The package is configured to use the following headers in header.html.erb:
+
+author: Your Name Here
+company: Your Company Here
+title: Your Slide Show Title Here
+subtitle: Your Subtitle Here
+footer: Your Footer Here
+subfooter: Your Subfooter Here
+
+
+Open up the header.html.erb folder for details. All other included
+files get copied verbatim.
+
+ Cheers.
+

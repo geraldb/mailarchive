@@ -1,0 +1,67 @@
+From 765950164992@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 763178778624
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,7f66a6bdcf0d95d8
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.100.32.3 with SMTP id f3mr3485270anf.1.1288193825272;
+        Wed, 27 Oct 2010 08:37:05 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.101.24.7 with SMTP id b7ls321528anj.6.p; Wed, 27 Oct 2010
+ 08:37:04 -0700 (PDT)
+Received: by 10.100.213.16 with SMTP id l16mr3846509ang.13.1288193824738;
+        Wed, 27 Oct 2010 08:37:04 -0700 (PDT)
+Received: by 10.100.213.16 with SMTP id l16mr3846508ang.13.1288193824673;
+        Wed, 27 Oct 2010 08:37:04 -0700 (PDT)
+Return-Path: <schettino72@gmail.com>
+Received: from mail-gx0-f171.google.com (mail-gx0-f171.google.com [209.85.161.171])
+        by gmr-mx.google.com with ESMTP id m25si3095918yha.13.2010.10.27.08.37.03;
+        Wed, 27 Oct 2010 08:37:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of schettino72@gmail.com designates 209.85.161.171 as permitted sender) client-ip=209.85.161.171;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of schettino72@gmail.com designates 209.85.161.171 as permitted sender) smtp.mail=schettino72@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by gxk19 with SMTP id 19so510490gxk.30
+        for <webslideshow@googlegroups.com>; Wed, 27 Oct 2010 08:37:03 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:received:in-reply-to
+         :references:date:message-id:subject:from:to:content-type;
+        bh=4TAPLP1AV3g/t/PaEuxRIHqfmEGphh0ZdvnuerjN1cw=;
+        b=aT/GaU/WnoMPHC1SVOr7dntCrPo1+ABaLNLH9cOAtDPj2rLuMM90oBAbT43dCfkDD8
+         4YgfBlZzERVI6jhr2m+tSZYxKWuh4JSpTuql5q+81z3FTsYpRrOzme7Jm7rQNRIJ8upx
+         0T+/bLY4/8ip9VbTBuCDTxEcMAxZuvbXFSB/Y=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        b=jPNmBVytXxInyc/0Ik5FMguhjmiN52Bf2R/6uK/s8zhhe1BK9WtF2xTcnhc8kPlzvu
+         9NJWeBkSRg+03Ng602zlbmHJYCxTHWYoUFfE0H8JPVUmeiWG7LckZ3JtzfpBpGobVAjC
+         9jVCHZ0b1D8SGzxyGb4uJ7AcNDtkbm3EX+Y9U=
+MIME-Version: 1.0
+Received: by 10.239.173.202 with SMTP id g10mr2806186hbf.0.1288193821523; Wed,
+ 27 Oct 2010 08:37:01 -0700 (PDT)
+Received: by 10.239.169.10 with HTTP; Wed, 27 Oct 2010 08:37:01 -0700 (PDT)
+In-Reply-To: <f0105d0f-cf53-479c-abcb-fe2193e50475@x42g2000yqx.googlegroups.com>
+References: <f0105d0f-cf53-479c-abcb-fe2193e50475@x42g2000yqx.googlegroups.com>
+Date: Wed, 27 Oct 2010 23:37:01 +0800
+Message-ID: <AANLkTi=OFSkKi-kPRLNqEiDqHrfmLBXXzMThqPP4HYaK@mail.gmail.com>
+Subject: Re: [slideshow] prezi-like zoom interface option?
+From: Eduardo Schettino <schettino72@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+On Wed, Oct 27, 2010 at 10:39 PM, Bruce <bdarcus.lists@gmail.com> wrote:
+> Am not exactly sure how this might work in the context of an S6-like
+> system, but thought I'd throw it out there:
+>
+> <http://janne.aukia.com/zoomooz/>
+>
+> Could anyone see using this to build an open alternative to Prezi? I
+> grant that this approach is probably better suited to SVG-based
+> images, but thought I'd ask anyway.
+>
+> Bruce
+
+check this
+
+http://code.google.com/p/jessyink/
+

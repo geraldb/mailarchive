@@ -1,0 +1,59 @@
+From 2228808056832@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 2205978460160
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,aa2ece1413fdc78
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.75.83 with SMTP id a19mr4411620wiw.2.1413547808333;
+        Fri, 17 Oct 2014 05:10:08 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.76.232 with SMTP id n8ls745741wiw.2.canary; Fri, 17 Oct
+ 2014 05:10:07 -0700 (PDT)
+X-Received: by 10.180.182.164 with SMTP id ef4mr1959469wic.0.1413547807990;
+        Fri, 17 Oct 2014 05:10:07 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22f.google.com (mail-wi0-x22f.google.com. [2a00:1450:400c:c05::22f])
+        by gmr-mx.google.com with ESMTPS id ca20si245057wib.3.2014.10.17.05.10.07
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 17 Oct 2014 05:10:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22f as permitted sender) client-ip=2a00:1450:400c:c05::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x22f.google.com with SMTP id d1so1896384wiv.8
+        for <opensport@googlegroups.com>; Fri, 17 Oct 2014 05:10:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=qAWUNZgrqvw70+Y/3FHA5IWf22Hg6wlHcjEleAlOYhY=;
+        b=XOo8J1piGGGGthmMdsJ7ISe1+lUkS18nj+4VBeWs856RupiepGtJjlpbmxyka5akQ7
+         KMbvp6QP2mkzQBFMYUJvKOcFHN+abj2dEpH3FhXLnrj+8nSiS3xWakbeKVo5b9Ao0IZp
+         RwULPYIJns6G9lnXaB1Sqc2e4L6s1BlIEsYUQL42/BDebBxZg3sMz7hGecNG12vB4w7+
+         QK8LPGS/YmKQRupZ52EVjEFEoOhKS62+gg4tHUOY2LKd5O9TPx+QirHssszadM9ZBJs9
+         sgc7KpepcWYRkageElToDlrt+cZAF/EvSYPXRs/I/SOwC13WX+ewdxjVA7lIeSxcD4sJ
+         UJZA==
+MIME-Version: 1.0
+X-Received: by 10.194.78.238 with SMTP id e14mr9617793wjx.106.1413547807892;
+ Fri, 17 Oct 2014 05:10:07 -0700 (PDT)
+Received: by 10.216.205.135 with HTTP; Fri, 17 Oct 2014 05:10:07 -0700 (PDT)
+In-Reply-To: <760a12c8-08c9-4aee-975d-b4d02dfd2817@googlegroups.com>
+References: <CAAxEZd9jFt=xkdnAXP2pCMdbEF7f_HkeZ78B9sJiH-iyq_4nuA@mail.gmail.com>
+	<6b455329-d1c6-4083-89b9-a1513dd54184@googlegroups.com>
+	<760a12c8-08c9-4aee-975d-b4d02dfd2817@googlegroups.com>
+Date: Fri, 17 Oct 2014 14:10:07 +0200
+Message-ID: <CAAxEZd_qUVBxpvJNwBW8GOS7-NM1iGqA4O_a0YcGJduDW-eDXw@mail.gmail.com>
+Subject: Re: [opensport] Re: sport.db starter kit - Node.js Edition -
+ sport.db.starter.node.js v0.0.1
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  Thanks for trying. It's early stage.   The idea of using "event" is
+following the english grammar   -  lots of inconsistencies  ;-) -
+sorry.  Good point - will try to add support for both singular 'n'
+plurar with the next update.  Cheers.
+

@@ -1,0 +1,92 @@
+From 2581789147136@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2567687897088
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,622da71fe85b08d1
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.20.234 with SMTP id p70mr6564124yhp.46.1428739738702;
+        Sat, 11 Apr 2015 01:08:58 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.165.75 with SMTP id o72ls1458503ioe.86.gmail; Sat, 11 Apr
+ 2015 01:08:58 -0700 (PDT)
+X-Received: by 10.66.119.174 with SMTP id kv14mr6691879pab.21.1428739738334;
+        Sat, 11 Apr 2015 01:08:58 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qk0-x236.google.com (mail-qk0-x236.google.com. [2607:f8b0:400d:c09::236])
+        by gmr-mx.google.com with ESMTPS id k6si624567qca.0.2015.04.11.01.08.58
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 11 Apr 2015 01:08:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::236 as permitted sender) client-ip=2607:f8b0:400d:c09::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qk0-x236.google.com with SMTP id g7so68182117qkh.2
+        for <opensport@googlegroups.com>; Sat, 11 Apr 2015 01:08:58 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=ze/30LAlNvXMrzMPGsF4BXesNe3AI6gToLCXiIerQ8s=;
+        b=cMMDGRhYjYOLrKv5XJxt/hj9aalXtNFmMEHrxHIxDYji7TBbzvWc2kjMSAb6fdOK6K
+         FzGKXtChM9EpFNGHC57kOpM6tc1ck5eCKgluCTw4GzlPIfyCzuszu4xlS82gSvT8Wt3L
+         x04IqOEF6dcynzax9WguS0PrSmnz6W78DX2ewC2MYNtj3THvlfj/2+xNhCMEE+xv22pn
+         DDVdVTp82wgBl2cAi+XNpS5IFcsW1ivxa4kbQkF3+DmOEnH6HOBtEJ75BNHUq5oIW0qv
+         EenyGOs1/Oeu51OVTQzgCyOMpzdVXCtXuqbhuKdIW67pENtH2ZTzz+Se/ceajgNg1vLe
+         7hLQ==
+MIME-Version: 1.0
+X-Received: by 10.55.31.85 with SMTP id f82mr10365094qkf.6.1428739738188; Sat,
+ 11 Apr 2015 01:08:58 -0700 (PDT)
+Received: by 10.229.5.6 with HTTP; Sat, 11 Apr 2015 01:08:58 -0700 (PDT)
+In-Reply-To: <274d258a-d991-4e05-8deb-82d01a7f1936@googlegroups.com>
+References: <4be6b079-3d30-4e06-82c2-d2a7f115a168@googlegroups.com>
+	<CAAxEZd_5YHVgrqSf6Mwjd-WojHv9Rc0VAZS=X_PY72O=p9kV1Q@mail.gmail.com>
+	<274d258a-d991-4e05-8deb-82d01a7f1936@googlegroups.com>
+Date: Sat, 11 Apr 2015 10:08:58 +0200
+Message-ID: <CAAxEZd-GOh6P0Ad+moUD9ComgBo-23TKrZNjtsRo6MQBTev_tg@mail.gmail.com>
+Subject: Re: [opensport] problem with sportdb after gem install
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for retrying. Great news that it's working.
+
+> if you don't mind i have a couple of non related (to this post) questions:
+
+  Please check the FAQ page [1] that should cover most (some) question
+in details. Some more comments follow.
+
+> 1. are the game scores updated manually by you?
+
+   For now there's now script for updates - it basically still kind of
+by hand (manually). It works like a wiki.
+
+> 2. do intend to on (re)updating the american football section?
+
+  Not sure what you mean
+     1) national football league ?  or
+     2) major soccer league
+
+    My current plan (focus) for the next weeks is a better build - the
+idea is to get a daily build going or something. Plus include the
+build of books (almancs) in the builds and so on.
+
+> 3. any intentions on expansions for nba, mlb (baseball), etc?
+
+  There's the opensport github org - see github.com/opensport  The
+database schema should (more or less) work for all team sports - you
+will need your own statistics tables etc.
+
+4. and one last thing. and it might be there but i missed it, what is
+the best way to get your score updates (not live of course)? is there
+an api call?
+
+    Good questions. There's no best way so far. Still trying out what
+works best. So far now winner found. Try what works (best) for you.
+
+ Cheers.
+
+[1] openfootball.github.io/questions.html
+

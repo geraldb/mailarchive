@@ -1,0 +1,47 @@
+From 287004688384@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 285796728832
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,d61a16acd8afd09c,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Received: by 10.100.231.16 with SMTP id d16mr2107830anh.20.1232902461442; Sun, 
+	25 Jan 2009 08:54:21 -0800 (PST)
+Date: Sun, 25 Jan 2009 08:54:21 -0800 (PST)
+X-IP: 75.118.30.38
+User-Agent: G2/1.0
+X-Google-Token: zrCEhAwAAABDf2J2H8x4u2rbLms0kmJc
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_6; en-us) 
+	AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1,gzip(gfe),gzip(gfe)
+Message-ID: <30f836e9-c1f5-4052-8552-5c1b5ab31ff5@e22g2000vbe.googlegroups.com>
+Subject: alternatives to maruku
+From: dsanson <dsanson@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+X-Google-Approved: gerald@vanbeta.com via web at 2009-01-25 20:59:09
+
+Hi All,
+
+I've been playing around with slideshow and enjoying it. I use
+markdown rather than textile, but I immediately ran into problems with
+maruku.
+
+I want to use slideshow for academic lectures, and the lectures
+involve quotes, and the quotes sometimes involve additions or
+omissions in brackets, as in: "Ask not [...] what you can do for your
+country." Maruku chokes on the [...], thinking it is a badly defined
+link of some sort. Other markdown implementations do not. You can see
+the results for yourself in babelmark:
+
+http://babelmark.bobtfish.net/?markdown=Ask+not+%5B...%5D+what+you+can+do+for+your+country.&src=1&dest=2
+
+Happily, it is trivial to modify slideshow.rb, replacing maruku with
+the gem rdiscount, which handles these cases just fine. I think it
+might have been equally trivial to tell maruku not to "break on
+error", but I didn't look into that. It seems to me that one or the
+other change ought to be made to slideshow.rb, unless there is some
+countervailing reason not to.
+
+David
+

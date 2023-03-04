@@ -1,0 +1,117 @@
+From 6926235190980247552@xxx Sat Feb 06 19:29:58 +0000 2021
+X-GM-THRID: 6926235188372439040
+X-Received: by 2002:aca:1e0f:: with SMTP id m15mr6786116oic.41.1612639797775;
+        Sat, 06 Feb 2021 11:29:57 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 2002:a05:6808:10d0:: with SMTP id s16ls1767775ois.7.gmail; Sat,
+ 06 Feb 2021 11:29:57 -0800 (PST)
+X-Received: by 2002:aca:1c05:: with SMTP id c5mr6882394oic.93.1612639797487;
+        Sat, 06 Feb 2021 11:29:57 -0800 (PST)
+Received: by 2002:a05:6808:10c5:b029:df:6bb:110a with SMTP id s5-20020a05680810c5b02900df06bb110amsois;
+        Fri, 5 Feb 2021 13:11:52 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJwes2XPaio8HsrM9AxdLIktUAdWNYFddxe0fOFADzsKtIY8cbKAjxM30VN3/JPQ8bWHrw+D
+X-Received: by 2002:a63:514d:: with SMTP id r13mr6081929pgl.287.1612559511658;
+        Fri, 05 Feb 2021 13:11:51 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1612559511; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ydUTViqUl4vNFpkQkhS9bQ73kYLyOjHHI4c9SbT9YzM6t4kkStRekeEwj7mfcW9oTi
+         j4E4PW1G2PxdXYRA+2fPKiTjqmiorr8o5sNJr9iF01TbxQAaCLkMuYXwk8F5fU6d7Hr8
+         sCAy3B5B9vnDgOqUvXee0ZP1UsJaA/JBVN+atyDKTj4fbThviNAEogwCPuvHaMZ+Gbyw
+         haXTsccDqnWX53lNxCF0rhT9JU8OBjmWyEtsOu6WwZI+yT1u/C94FN5WrzhoEtLo1+Jc
+         Ed56T9xwrRPFDYFmCIdhjf6lKB9UYkQkp99322bJeqNViv3pcnTliSfKjoykYZykb4my
+         U07w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:message-id:to:from:date:dkim-signature;
+        bh=S9N8AhU/vC0Gh5AAoVHhA9LrA8o3hktNXGGL0mN0Hwo=;
+        b=Gt5+x5pHKuTzM8y/KKRc7VQ/kfE5BgOV/DceMxjgxIsebvwHAjXwKnurqu2wHqboGQ
+         UDCXN0Dqqu4JKjiPGArdSCi2ZcA2qAGJuOeY2pJ39PgyAMRMo24s1n+iSXafGFo9PVOO
+         CDnq7jHAVwXbnUhguYFgTSnl6L/BHAHz0J4b+XGwN2OUH8vL5AjdidmXGIb2qjjDk/u6
+         dCepSciNSQ+dW5WfO1U91Ur8Zb1Ps3dkAwWEj5gYo1qaQNOcH2pBYWKBA+bs6ZRPQNmm
+         0/HjIBWndD9SHE67DAB3thzNtYh/GcdjwVKXYvvsF4HKVqDBWD+DDk3GUW78PQlAMT6r
+         9pmQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@redhat.com header.s=mimecast20190719 header.b=H1Mtu1Ca;
+       spf=pass (google.com: domain of presshar@redhat.com designates 216.205.24.124 as permitted sender) smtp.mailfrom=presshar@redhat.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=redhat.com
+Return-Path: <presshar@redhat.com>
+Received: from us-smtp-delivery-124.mimecast.com (us-smtp-delivery-124.mimecast.com. [216.205.24.124])
+        by gmr-mx.google.com with ESMTPS id i23si499076pjl.3.2021.02.05.13.11.51
+        for <beerdb@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 05 Feb 2021 13:11:51 -0800 (PST)
+Received-SPF: pass (google.com: domain of presshar@redhat.com designates 216.205.24.124 as permitted sender) client-ip=216.205.24.124;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@redhat.com header.s=mimecast20190719 header.b=H1Mtu1Ca;
+       spf=pass (google.com: domain of presshar@redhat.com designates 216.205.24.124 as permitted sender) smtp.mailfrom=presshar@redhat.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=redhat.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=redhat.com;
+	s=mimecast20190719; t=1612559511;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type;
+	bh=S9N8AhU/vC0Gh5AAoVHhA9LrA8o3hktNXGGL0mN0Hwo=;
+	b=H1Mtu1Ca78AAeJ5DPGFRV0/qCdBtatIjBD9stKnqKksuJhECI9f3LG9l54fUV7N8B8UWe1
+	co7YAeQvKvJlnLSQ+ArDIiEfLrOnHvs7uMEgvQfLRYS2HVAf/Z4c/cwOsJzEec14SdHO4s
+	uMbI8wTtDGN4NobyEm0KGwcHW9drDNM=
+Received: from mail-qv1-f71.google.com (mail-qv1-f71.google.com
+ [209.85.219.71]) (Using TLS) by relay.mimecast.com with ESMTP id
+ us-mta-507-AYwbKE1WPN2ySS-ILcEj0w-1; Fri, 05 Feb 2021 16:11:46 -0500
+X-MC-Unique: AYwbKE1WPN2ySS-ILcEj0w-1
+Received: by mail-qv1-f71.google.com with SMTP id j4so6005640qvi.8
+        for <beerdb@googlegroups.com>; Fri, 05 Feb 2021 13:11:46 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:date:from:to:message-id:subject:mime-version;
+        bh=S9N8AhU/vC0Gh5AAoVHhA9LrA8o3hktNXGGL0mN0Hwo=;
+        b=qJzX4HuMv2RZG23kEW4P4dqSbMaNWJIO0C+VLP4mp2Uxj4JPaeo7qAjlsff7R2TGlR
+         6+M+8S3L/wu+gxg+D1EQLBMq4xYBB0V5kR1siB3MFAyMYSrorrGK+PKEL+7Lnom0FV9W
+         eTd77AE63XCzQdO5HkAtPBOJHmvxT8ZAeSCxZGt3i5ARN+1SBmHI181ZSx6nA7yeGAqu
+         n23VMS87REvuaPjyIXDurnlB5SoOsU464CMPKWuVM4P+gn+8wUcuSk+gIPxR9l9dqp99
+         HvqaG2TrPxgDO4pGKeDz8JxbgVxGinGGUGzPE4p0jMDrgNvddURuM9CHtMYA51w11c2l
+         ExwQ==
+X-Gm-Message-State: AOAM53265FQ7c4SVKYFLZWXMRNmZR5oNts47wu58o6zN2yzRasqJes4j
+	A7fnA1Y4THLy5Kn06whhEFlgmAtd3xe4hVY78sQfrRCoR9KUrFUVEL2JCbcU/x7rHOIi6AouP7C
+	GugMt5haTuoghgXCZZUcwZORTyfSdOxgp41JauhyXarg8nijmJjJ003ByQWdVmSXsK12UauZCm/
+	Tv
+X-Received: by 2002:a37:7fc2:: with SMTP id a185mr6673067qkd.202.1612559505777;
+        Fri, 05 Feb 2021 13:11:45 -0800 (PST)
+X-Received: by 2002:a37:7fc2:: with SMTP id a185mr6673043qkd.202.1612559505533;
+        Fri, 05 Feb 2021 13:11:45 -0800 (PST)
+X-Google-Thread-Subscription: Yes
+X-Google-Web-Client: true
+Date: Fri, 5 Feb 2021 13:11:45 -0800 (PST)
+From: Preska Sharma <presshar@redhat.com>
+To: beerdb <beerdb@googlegroups.com>
+Message-Id: <d0e75e1c-8052-4c5f-803e-861d15d91905n@googlegroups.com>
+Subject: beerdb API
+MIME-Version: 1.0
+Authentication-Results: relay.mimecast.com;
+	auth=pass smtp.auth=CUSA124A263 smtp.mailfrom=presshar@redhat.com
+X-Mimecast-Spam-Score: 0
+X-Mimecast-Originator: redhat.com
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_498_1678896670.1612559505297"
+
+------=_Part_498_1678896670.1612559505297
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_499_262286032.1612559505297"
+
+------=_Part_499_262286032.1612559505297
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+Is the API still available to use?
+
+Thanks
+
+------=_Part_499_262286032.1612559505297
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello,<div><br></div><div>Is the API still available to use?</div><div><br></div><div>Thanks</div>
+------=_Part_499_262286032.1612559505297--
+
+------=_Part_498_1678896670.1612559505297--
+
+

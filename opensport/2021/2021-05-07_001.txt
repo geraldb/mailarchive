@@ -1,0 +1,149 @@
+From 6959465507624845312@xxx Fri May 07 08:40:34 +0000 2021
+X-GM-THRID: 6959446546034196480
+X-Received: by 2002:a2e:9f55:: with SMTP id v21mr2498152ljk.420.1620376833333;
+        Fri, 07 May 2021 01:40:33 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:ac2:5592:: with SMTP id v18ls3987671lfg.0.gmail; Fri, 07 May
+ 2021 01:40:31 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwxbFNG15B8EChigXIqjgzFPQVIwBtAV5tgGSWT9mw6U2jrGj4L5Gxk51AHDAC5Z27JTMPn
+X-Received: by 2002:a05:6512:1109:: with SMTP id l9mr5729798lfg.550.1620376831802;
+        Fri, 07 May 2021 01:40:31 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1620376831; cv=none;
+        d=google.com; s=arc-20160816;
+        b=P5xke7S7TkoWKD/yTXuDfL56wGyf8d8C2oS/MUxaZM75jYyGMqLhLJilJ50fZxUQXA
+         359UZzHu2Ja4F0hIjJYmRPtSifypD2C9oEdyfKocreKO4UxqJjJyjSliN06t9tl1KzYD
+         j4to2DYM53lShDE/hV9/RpI+oJpghIEa4K5K8GfClHZjuISQaotsOpOye5Kh5zDKLKZQ
+         XCkQLJSgvSDASC87S/AS18fRxAmMgKi1jjDlQJ/n+VRa537nBJhT/wYIpXvo9YA9gDnx
+         d2l07d69lQRVmbasyZKa8Rwd3ctDgzqsGOFM1+a8kb4V7cw0OQoHhc9QtSaXk3YtDxJ1
+         yK1A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=h/nqcKJYdcFCUO/jZihiSX3rjxFh0JA4vKfaLeaAj/Y=;
+        b=Z+Y0l8s0SJYOo9WWsE9H+47lHkxqlm3ur+RmnuzUFpv55ENspEXthhmzvTnshdG1QX
+         rwlVA9fb/EcFu1wYZLlmnJoV8WIiCGCT2qnjGZSOpVmUs6cWCxg5E3tIvK3je+JlG54b
+         Z4TKncrKLaA/8pHO9xrQhAhd4w5s9Xa5hVPA6dH3m2uZCe4tMKZrEfjhnlKOjG2ZIsip
+         Kymi0hrsi/tYX4Nd1fuTRIi0I8V1Vu99KUahHIjY6W9w19lBzxffnfK+mdqfWQZfXNI0
+         /SSjWCViUODBausWmemlvPPjUp1eUQbBDoIZTG57YKq6utjaJus8cdT9oT2OgAG12tBw
+         k1JA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=SNU2estI;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::533 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ed1-x533.google.com (mail-ed1-x533.google.com. [2a00:1450:4864:20::533])
+        by gmr-mx.google.com with ESMTPS id a10si192191lfs.11.2021.05.07.01.40.31
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 07 May 2021 01:40:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::533 as permitted sender) client-ip=2a00:1450:4864:20::533;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=SNU2estI;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::533 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ed1-x533.google.com with SMTP id c22so9261363edn.7
+        for <opensport@googlegroups.com>; Fri, 07 May 2021 01:40:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=h/nqcKJYdcFCUO/jZihiSX3rjxFh0JA4vKfaLeaAj/Y=;
+        b=SNU2estIyTL6q4QOIRuf0tjSnUUgAtUuP/qXHoQUodbBgTs9YkzSbjiI3zl0YpGUo+
+         nLYtct9nJSyc4W9j8U0Eoewmx14EF7uHqPJubxSLIjuXmfKSUSOan1o99OGxNH2YZ0UB
+         2hUWmhllfPOa0muzrqLNPZK9NVlnOfkft4bSIFWrn73O/Blw1zTJ3aNhlNF01VjrpUN2
+         5ScFStTsta28s0ATbZt0n/ir7HWV489/e4upau0fSGjEgenmmfG8kxnDRWfLvqLMVlbV
+         jilrbBN6JwW4xEUE4SiNMiRH+SMhGRUq1oPjniSk4oUtxFH8nIP9DfpORgqRVkAqTE7J
+         SK6g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=h/nqcKJYdcFCUO/jZihiSX3rjxFh0JA4vKfaLeaAj/Y=;
+        b=XHZy28SjwhgGMx/Ktb3v5hSH8IrDEfHvbxvgFDY4wqu2MNJipd3XtSP9+tYsGmOBWS
+         m9RYWoQ7gq7sfZjDo8HKcaztASz33egrqrNgtBGIWDomMtCrfCKd7q8DNBHCNtthmges
+         zQNIdFRm8qYBu4g6u/Wq6ZQjY3FhtT5uKDPQ+ipS24JEJUHx26qPnQl9LBrRhfUYgIKU
+         x7SHu9ANIX6tPePTW+qUrhJXH2uuRdP55GkJH/BU3T2z63oWmRuqf7Sj7lIIjJu7TT75
+         CcwvkjNDMYDoV/7rrekF4qJxBOLmyzbyCfHZsz6dIYQL8X6PyqukbMR8ySJ0r2TeLy1A
+         K6qw==
+X-Gm-Message-State: AOAM530KwyAlN1TOvdZu3rGfT6muToUf7rK27riimZ8jWtuIergtYbEb
+	ropK/1DRzzYzxJAWDpTfmXH2QsRScuIaEXWmeq+EXoATuW5B2Q==
+X-Received: by 2002:aa7:c957:: with SMTP id h23mr9768661edt.301.1620376831264;
+ Fri, 07 May 2021 01:40:31 -0700 (PDT)
+MIME-Version: 1.0
+References: <eacebec8-d32b-4416-adc7-6c60af1e44d6n@googlegroups.com>
+In-Reply-To: <eacebec8-d32b-4416-adc7-6c60af1e44d6n@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 7 May 2021 10:40:20 +0200
+Message-ID: <CAAxEZd-01Jv3LameYKS0y3oe3YGYrR2rN3nDv6Coh_VnABbfgg@mail.gmail.com>
+Subject: Re: [opensport] Build World-Cups database
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary="0000000000006e0b3f05c1b9618e"
+
+--0000000000006e0b3f05c1b9618e
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+Thanks for trying football.db.
+
+> I've been trying for a few hours now to get the .db file for world-cups
+> but i always reach the same stage and error:
+
+I tried a fresh install via:
+
+   $ gem install sportdb
+
+And than a fresh build of the world cup datasets via:
+
+   $ sportdb new worldcup
+
+Sorry - it's working here. I haven't checked the data in details the stats
+via:
+
+   $ sportdb stats
+
+read
+
+    {:adapter=>"sqlite3", :database=>"./sport.db"}
+     1 leagues  /  21 seasons
+     21 events (league+season recs)  /  211 rounds  /  117 groups  /  0
+stages
+     84 teams
+     900 matches
+
+
+How are you building the datasets?
+What command do you use? Are you using the same steps?
+
+Note: Sorry - for now you CANNOT update the datasets (that is, running the
+build twice) - you
+always have to start with a fresh database (and your updated datasets if
+desired).
+
+   Cheers. Prost.
+
+--0000000000006e0b3f05c1b9618e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr">Hello,</div><div dir=3D"ltr"><br></div>Th=
+anks for trying football.db.<br><br>&gt; I&#39;ve been trying for a few hou=
+rs now to get the .db file for world-cups <br>&gt; but i always reach the s=
+ame stage and error:<br><br>I tried a fresh install via:<br><br>=C2=A0 =C2=
+=A0$ gem install sportdb<br><br>And than a fresh build of the world cup dat=
+asets via:<br><br>=C2=A0 =C2=A0$ sportdb new worldcup<br><br>Sorry - it&#39=
+;s working here. I haven&#39;t checked the data in details the stats via:<b=
+r><br>=C2=A0 =C2=A0$ sportdb stats<br><br>read<br><br>=C2=A0 =C2=A0 {:adapt=
+er=3D&gt;&quot;sqlite3&quot;, :database=3D&gt;&quot;./sport.db&quot;}<br>=
+=C2=A0 =C2=A0 =C2=A01 leagues =C2=A0/ =C2=A021 seasons<br>=C2=A0 =C2=A0 =C2=
+=A021 events (league+season recs) =C2=A0/ =C2=A0211 rounds =C2=A0/ =C2=A011=
+7 groups =C2=A0/ =C2=A00 stages<br>=C2=A0 =C2=A0 =C2=A084 teams<br>=C2=A0 =
+=C2=A0 =C2=A0900 matches<br><br><br>How are you building the datasets?<br>W=
+hat command do you use? Are you using the same steps?<br><br>Note: Sorry - =
+for now you CANNOT update the datasets (that is, running the build twice) -=
+ you <br>always have to start with a fresh database (and your updated datas=
+ets if desired).<br><br><div dir=3D"ltr">=C2=A0 =C2=A0Cheers. Prost.=C2=A0 =
+=C2=A0</div><div dir=3D"ltr"><br></div><div dir=3D"ltr"><br></div><div dir=
+=3D"ltr"><br></div></div>
+
+--0000000000006e0b3f05c1b9618e--
+

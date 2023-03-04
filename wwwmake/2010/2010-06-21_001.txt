@@ -1,0 +1,84 @@
+From 685318864896@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 684964446208
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,98ebb41f3caa9d06,start
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+Received: by 10.101.211.5 with SMTP id n5mr2504132anq.50.1277156134196;
+        Mon, 21 Jun 2010 14:35:34 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.101.200.2 with SMTP id c2ls839532anq.4.p; Mon, 21 Jun 2010 
+	14:35:33 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.101.175.34 with SMTP id c34mr232867anp.27.1277156133850; Mon, 
+	21 Jun 2010 14:35:33 -0700 (PDT)
+Received: by w31g2000yqb.googlegroups.com with HTTP; Mon, 21 Jun 2010 14:35:33 
+	-0700 (PDT)
+Date: Mon, 21 Jun 2010 14:35:33 -0700 (PDT)
+X-IP: 80.123.35.64
+User-Agent: G2/1.0
+X-Google-Token: EKW2_-AEiVsVJ0JQov80
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.3) 
+	Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3,gzip(gfe)
+Message-ID: <a8b9f24b-2f5a-4eb0-80cb-60dd7ca5e8ea@w31g2000yqb.googlegroups.com>
+Subject: Tip: Use Ruby Helper to Add Images to Your Presentation in Markdown
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   I try to work through all the cons listed in Clayton Parker's write-
+up and offer some suggestions on how S9 can do better. Lets get
+started with:
+
+  ++ Adding images to a presentation is a pain
+
+   I assume this means the syntax in Markdown is not intuitive
+compared to lets say Textile:
+
+   In Markdown you need to type at a minimum:
+
+![](img/friendsbadge.png)
+
+   In Textile it's just:
+
+!img/friendsbadge.png!
+
+  If you don't like the markup syntax you can always create and use a
+Ruby helper. Example:
+
+<%= image 'friendsbadge.png' %>
+
+  Is this better? If you think so, just put your helper code in the ./
+lib folder (or any subfolders) and your code gets loaded on startup.
+Example:
+
+lib/markdown_helper.rb:
+------------------------
+
+module MarkdownHelper
+
+  # helper/shortcut for adding embedded image to slide in markdown
+syntax:
+  #  ![alt text](/path/to/img.jpg "Title")
+  #
+  #  use it like:
+  #  <%= image 'friendsbadge.png' %>
+  #
+  #  note: alternate text (alt) and title are optional
+
+  def image( path, alt="", title="" )
+    %Q{![#{alt}](#{path} "#{title}")}
+  end
+
+end
+
+Slideshow::Gen.__send__( :include, MarkdownHelper )
+---------------------------------
+
+
+  That's it. Comments, questions, suggestions welcome.
+
+Cheers. Gerald
+

@@ -1,0 +1,76 @@
+From 761273516032@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 735777390592
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4c0ddad8e50128c7
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.203.202 with SMTP id fj10mr23470840icb.0.1400757878135;
+        Thu, 22 May 2014 04:24:38 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.102.87 with SMTP id v81ls1169816qge.0.gmail; Thu, 22 May
+ 2014 04:24:37 -0700 (PDT)
+X-Received: by 10.140.20.227 with SMTP id 90mr593554qgj.6.1400757877949;
+        Thu, 22 May 2014 04:24:37 -0700 (PDT)
+X-Google-Doc-Id: 412d49272ef6b98c
+X-Google-Web-Client: true
+Date: Thu, 22 May 2014 04:24:37 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <56400f5a-6f20-42a1-b8f0-45a9bbabad21@googlegroups.com>
+In-Reply-To: <1628d48d-ad59-46f9-8f13-a86e1d4e9399@googlegroups.com>
+References: <1628d48d-ad59-46f9-8f13-a86e1d4e9399@googlegroups.com>
+Subject: Re: Error building db
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_5541_26544047.1400757877277"
+X-Google-Token: EPW895sFUiyZxeUAyDw0
+X-Google-IP: 62.47.153.145
+
+------=_Part_5541_26544047.1400757877277
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5542_19636776.1400757877277"
+
+------=_Part_5542_19636776.1400757877277
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  No worries. If you use the build script, use this folder structure
+
+    openmundi/               ##-> create folder
+       world.db                 ##-> git clone
+    openfootball/             ## -> create folder
+       build                      ## -> git clone
+       national-teams        ## ..
+       world-cup               ## ..
+
+    and start you build from inside openfootball/build.  You can see all 
+folder references here [1]  Cheers.
+
+[1] github.com/openfootball/build/blob/master/settings.rb
+
+------=_Part_5542_19636776.1400757877277
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>&nbsp; No worries. If you use the build scri=
+pt, use this folder structure<br><br>&nbsp;&nbsp;&nbsp; openmundi/&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ ##-&gt; create folder<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; world.db&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp; ##-&gt; git clone<br>&nbsp;&nbsp;&nbsp; openfootball/&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ## -&g=
+t; create folder<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; build&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ## -&gt; git clone<br>&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; national-teams&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp; ## ..<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; world-cup&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ## ..=
+<br><br>&nbsp;&nbsp;&nbsp; and start you build from inside openfootball/bui=
+ld.&nbsp; You can see all folder references here [1]&nbsp; Cheers.<br><br>[=
+1] github.com/openfootball/build/blob/master/settings.rb<br></div>
+------=_Part_5542_19636776.1400757877277--
+
+------=_Part_5541_26544047.1400757877277--
+

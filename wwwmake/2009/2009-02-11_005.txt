@@ -1,0 +1,95 @@
+From 468678868992@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 434086346752
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,c6ff1ba71100663f
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.103.117.8 with SMTP id u8mr246838mum.23.1234350436130;
+        Wed, 11 Feb 2009 03:07:16 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from fk-out-0910.google.com (fk-out-0910.google.com [209.85.128.187])
+        by mx.google.com with ESMTP id 14si1358518bwz.5.2009.02.11.03.07.15;
+        Wed, 11 Feb 2009 03:07:15 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.128.187 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.128.187;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.128.187 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by fk-out-0910.google.com with SMTP id 22so108768fkq.1
+        for <webslideshow@googlegroups.com>; Wed, 11 Feb 2009 03:07:15 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.181.238.16 with SMTP id p16mr2605866bkr.112.1234350435351; 
+	Wed, 11 Feb 2009 03:07:15 -0800 (PST)
+In-Reply-To: <815c2e64-e551-45ad-842e-6566bad4878d@a12g2000yqm.googlegroups.com>
+References: <5a6741ee-4c68-4847-b000-0c754ce02f8e@p20g2000yqi.googlegroups.com>
+	 <e9e6d454-1eb0-402f-83e9-e4d82916c6da@z1g2000yqn.googlegroups.com>
+	 <1f058eab0902101014h41702f46ia7191e650d4d2ae0@mail.gmail.com>
+	 <815c2e64-e551-45ad-842e-6566bad4878d@a12g2000yqm.googlegroups.com>
+Date: Wed, 11 Feb 2009 12:07:15 +0100
+Message-ID: <1f058eab0902110307j7e6851c3n6a149dfefbc964e0@mail.gmail.com>
+Subject: Re: [slideshow] Re: S6 Slide Show Package Now on GitHub - Download, 
+	Watch, Clone, Push, Pull or Fork S6
+From: Gerald Bauer <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello Bruce,
+
+> I forked your repo, added the changes to mine, and sent you a pull
+> request. Add as you see fit.
+
+  Thanks, I pushed (checked in) some changes to allow plugins/modules
+and let you change the startup/document ready code so you can
+customize the scripts to your needs without requiring changes to the
+core script now residing in slides.core.js.
+
+  What's new?
+
+   I split the shared/slides.js script in two scripts:
+
+   o shared/slides.core.js (NEW) - core slide show machinery (without
+startup/document ready code - works like a lib)
+
+   o shared/slides.js - sample all-in-one convenience script for
+"out-of-the-box" use without plugins or extensions (replace with your
+own code and extionsion)
+
+
+   Now you have two options to add your extensions/changes:
+
+   1)
+
+   o Include shared/slides.core.js instead of previous
+shared/slides.js in your web page
+
+   o Move your extractBlockquoteInfo() function to a new script and
+include it too
+
+   o Use your own document ready code (that includes
+extractBlockquoteInfo() call and drops check for vector graphics
+support) and add it to your script or to a new script or to the web
+page inline.
+
+
+   2)
+
+   o Create your own slides.js following the checked in example and
+include it in your web page:
+
+your_slides.js
+
+/* add your extensions code inline here */
+
+$.ajaxSetup({async: false});
+$.getScript( 'shared/slides.core.js' );
+
+/* or include it here */
+$.ajaxSetup({async: true});
+
+
+$(document).ready(function(){
+  /* customize as needed */
+ }
+});
+
+
+: I also updated the jQuery library to 1.3.1. That's it. Cheers.
+

@@ -1,0 +1,47 @@
+From 1261493551104@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1240908955648
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,6fdd99431870da51
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.224.59.205 with SMTP id m13mr16010143qah.7.1369686890214;
+        Mon, 27 May 2013 13:34:50 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.128.104 with SMTP id nn8ls3253212qeb.38.gmail; Mon, 27 May
+ 2013 13:34:49 -0700 (PDT)
+MIME-Version: 1.0
+X-Received: by 10.49.97.104 with SMTP id dz8mr2257155qeb.15.1369686889786;
+ Mon, 27 May 2013 13:34:49 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by m18g2000vbo.googlegroups.com with HTTP; Mon, 27 May 2013 13:34:49
+ -0700 (PDT)
+Date: Mon, 27 May 2013 13:34:49 -0700 (PDT)
+In-Reply-To: <d40a90d9-cfe5-45d7-9821-0eff047b6bbe@q8g2000vbl.googlegroups.com>
+References: <d40a90d9-cfe5-45d7-9821-0eff047b6bbe@q8g2000vbl.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EOmGj40FiylMA6ykors0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:20.0)
+ Gecko/20100101 Firefox/20.0,gzip(gfe)
+X-Google-IP: 178.190.100.45
+Message-ID: <2d8efe9f-01fd-4da6-9484-5a95d96925b3@m18g2000vbo.googlegroups.com>
+Subject: Re: markdown 1.1.1 - Markdown Engine Wrapper Now Includes HTTP API /
+ Web Service
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  FYI: The markdown gem site moved to http://note.herokuapp.com   Also
+note that I moved the markdown editor into its own repo as a simple
+single-page, server-less package (now called Markdown Note) for easy
+reuse [1].
+
+  Cheers.
+
+[1] https://github.com/geraldb/markdown-note
+

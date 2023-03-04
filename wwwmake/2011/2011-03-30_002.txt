@@ -1,0 +1,50 @@
+From 871619362816@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 865083588608
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,51b7d1ec615bd568
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.150.251.25 with SMTP id y25mr1671623ybh.56.1301742296097;
+        Sat, 02 Apr 2011 04:04:56 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.150.58.20 with SMTP id g20ls1194318yba.0.p; Sat, 02 Apr 2011
+ 04:04:55 -0700 (PDT)
+Received: by 10.150.32.16 with SMTP id f16mr1420539ybf.16.1301742295869;
+        Sat, 02 Apr 2011 04:04:55 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.90.16.32 with SMTP id 32mr242126agp.34.1301486238027; Wed, 30
+ Mar 2011 04:57:18 -0700 (PDT)
+Received: by b13g2000prf.googlegroups.com with HTTP; Wed, 30 Mar 2011 04:57:17
+ -0700 (PDT)
+Date: Wed, 30 Mar 2011 04:57:17 -0700 (PDT)
+X-IP: 94.194.203.212
+User-Agent: G2/1.0
+X-Google-Token: EJ21zOwEr6-NayFerF00
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US)
+ AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.151 Safari/534.16,gzip(gfe)
+Message-ID: <d4a306ed-3485-4088-a0e5-aa961d47568c@b13g2000prf.googlegroups.com>
+Subject: Escaping <% syntax
+From: jam13 <jamie.neil@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hi,
+
+I'm trying to use markdown code similar to this:
+
+<% code do %>
+<% control Test %>$Link<% end_control %>
+<% end %>
+
+where I want the "<% control Test" line to be rendered as code.
+
+As shown the parser will fail to compile the slides, and I don't seem
+to be able to escape it despite trying every combination I can think
+of.
+
+Has anyone got a suggestion on how I can get this to work?
+
+Regards,
+
+Jamie Neil
+

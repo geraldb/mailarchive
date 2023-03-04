@@ -1,0 +1,104 @@
+From 2462818762752@xxx Tue Jun 16 00:16:45 +0000 2015
+X-GM-THRID: 2377276981248
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cd242d30f1f3615d
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.174.177 with SMTP id bt17mr1951987pac.40.1425059276686;
+        Fri, 27 Feb 2015 09:47:56 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.51.17.7 with SMTP id ga7ls252990igd.7.gmail; Fri, 27 Feb 2015
+ 09:47:56 -0800 (PST)
+X-Received: by 10.50.51.67 with SMTP id i3mr91685igo.15.1425059276288;
+        Fri, 27 Feb 2015 09:47:56 -0800 (PST)
+X-Google-Doc-Id: 9cf8342c7a25ab04
+X-Google-Web-Client: true
+Date: Fri, 27 Feb 2015 09:47:55 -0800 (PST)
+From: maizarw@gmail.com
+To: opensport@googlegroups.com
+Message-Id: <c1109677-ed16-4a98-9030-e5778193f2b6@googlegroups.com>
+In-Reply-To: <CAAxEZd9+Y5Y8KiVmtYpds058rv=XdKM8BUgfipx8Lopvf5QRhQ@mail.gmail.com>
+References: <ec906df1-8c4e-4e7f-818f-4a7804b24d82@googlegroups.com>
+ <CAAxEZd-YTsKsA3kjKPv=rW97xza38tv2jTS6RycyDU5Q3Rh1Xw@mail.gmail.com>
+ <050ea85e-361e-4129-aa03-4072002f20a3@googlegroups.com>
+ <CAAxEZd80+_DS9oT5DaibtdPDQiHBSRHMyjR2-yvSzaOnozZuhA@mail.gmail.com>
+ <016077bc-2d07-450a-a9a0-c0bf31feed15@googlegroups.com>
+ <CAAxEZd8aqWBcP7-Ek=rmjnXNR-av36Nkd4jqCOQBhG++22=YxQ@mail.gmail.com>
+ <f16d3951-a274-4b95-ac77-29a20298000e@googlegroups.com>
+ <CAAxEZd9AZJL9sQ7bG1XLsX+aAvnYpoDxRKA=tfSjknXxEXpMjA@mail.gmail.com>
+ <f0733f7b-2f74-43b6-9550-90825c773877@googlegroups.com>
+ <CAAxEZd9+Y5Y8KiVmtYpds058rv=XdKM8BUgfipx8Lopvf5QRhQ@mail.gmail.com>
+Subject: Re: [opensport] Unable to build en-england repo
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_841_1662138317.1425059275343"
+X-Google-Token: EMvbwqcF5NbWxTxc3HU0
+X-Google-IP: 122.167.97.22
+
+------=_Part_841_1662138317.1425059275343
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_842_1091413643.1425059275343"
+
+------=_Part_842_1091413643.1425059275343
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+Thanks for the clarification.I will try it out. Appreciate the quick 
+response.
+
+Regards,
+
+- Maizar
+
+On Friday, February 27, 2015 at 12:53:13 AM UTC+5:30, Gerald Bauer wrote:
+>
+> Hello, 
+>   FYI: You must use all UPCASE for your rake variables e.g.  rake 
+> update DATA=eng 
+>
+>    To see the difference it's best to check the source of the 
+> Rakefile.  For now update -  will NOT recreate the database schema and 
+> will NOT update the world datasets  but it will basically rebuild all 
+> football datasets (delete the old ones first). 
+>
+>    Yes, if you just want to update a single file season you can pass 
+> it along and the parser will try to update the database records (you 
+> will have to use your own little (custom) build script - just make 
+> sure you do NOT call #delete_all or similar). 
+>
+>    If you want to have goals added - somebody has to add the goals to 
+> the dataset first ;-) sorry no magic here. For now only some world cup 
+> datsets have goals included if you need some examples to get started. 
+>
+>   Have a great weekend. Cheers. 
+>
+
+------=_Part_842_1091413643.1425059275343
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi Gerald,<div><br></div><div>Thanks for the clarification.I will try it out. Appreciate the quick response.</div><div><br></div><div>Regards,</div><div><br></div><div>- Maizar<br><br></div><div>On Friday, February 27, 2015 at 12:53:13 AM UTC+5:30, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>&nbsp; FYI: You must use all UPCASE for your rake variables e.g. &nbsp;rake
+<br>update DATA=eng
+<br>
+<br>&nbsp; &nbsp;To see the difference it's best to check the source of the
+<br>Rakefile. &nbsp;For now update - &nbsp;will NOT recreate the database schema and
+<br>will NOT update the world datasets &nbsp;but it will basically rebuild all
+<br>football datasets (delete the old ones first).
+<br>
+<br>&nbsp; &nbsp;Yes, if you just want to update a single file season you can pass
+<br>it along and the parser will try to update the database records (you
+<br>will have to use your own little (custom) build script - just make
+<br>sure you do NOT call #delete_all or similar).
+<br>
+<br>&nbsp; &nbsp;If you want to have goals added - somebody has to add the goals to
+<br>the dataset first ;-) sorry no magic here. For now only some world cup
+<br>datsets have goals included if you need some examples to get started.
+<br>
+<br>&nbsp; Have a great weekend. Cheers.
+<br></blockquote></div></div>
+------=_Part_842_1091413643.1425059275343--
+------=_Part_841_1662138317.1425059275343--
+

@@ -1,0 +1,122 @@
+From 92775907328@xxx Sat Dec 20 19:01:40 +0000 2014
+X-GM-THRID: 80286318592
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,6076fbffdd049d1a
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.236.74 with SMTP id us10mr7223683obc.36.1391817615010;
+        Fri, 07 Feb 2014 16:00:15 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.140.27.239 with SMTP id 102ls1227230qgx.23.gmail; Fri, 07 Feb
+ 2014 16:00:14 -0800 (PST)
+X-Received: by 10.52.53.73 with SMTP id z9mr6084658vdo.4.1391817614799;
+        Fri, 07 Feb 2014 16:00:14 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-vb0-x22a.google.com (mail-vb0-x22a.google.com [2607:f8b0:400c:c02::22a])
+        by gmr-mx.google.com with ESMTPS id c1si1540792vdv.0.2014.02.07.16.00.14
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 07 Feb 2014 16:00:14 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c02::22a as permitted sender) client-ip=2607:f8b0:400c:c02::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c02::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-vb0-f42.google.com with SMTP id i11so9513vbh.15
+        for <beerdb@googlegroups.com>; Fri, 07 Feb 2014 16:00:14 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=v+5RfJIE3zIxpe9tF4KayOc3qGFBnrovm+FnI/kbWM8=;
+        b=mzfyn6HfMDHMdnScvMnsovqK06fniTppIA3lw1KpMsqpOLt5MSbYBjF99OYQQ7XO+E
+         lUTIr2O3hQLFV71YWlcfxTJHFcImEXgR7UQnZPqs7A11zH9/IXeU3U3GV7nIzooCPzcq
+         lGh6AhAgSeAJ3D/oahgc/EzA2nFqBLTFECvE8+ynGfJDaWVZQ0mJRMuVg9NtuPan6zIa
+         jXc5xmNnehhAumSW5l6vCE0skiI1ixic+tMN+CwiXe4vZ7aMCLDZgEN9GhItg2ix7mU+
+         NOopGQoY8JC71E33s2SWjjHNUsD4960TIUwUUCPeAfMUAY0tOgZ80Kbvh8kt8AyehzJU
+         u+BA==
+MIME-Version: 1.0
+X-Received: by 10.52.110.201 with SMTP id ic9mr10585177vdb.22.1391817614441;
+ Fri, 07 Feb 2014 16:00:14 -0800 (PST)
+Received: by 10.58.156.10 with HTTP; Fri, 7 Feb 2014 16:00:14 -0800 (PST)
+In-Reply-To: <cca4beea-f902-4fbd-883f-6fe0028653fb@googlegroups.com>
+References: <471d7bd0-8087-4a24-b509-3544069e9b5e@googlegroups.com>
+	<80d06536-ed58-41a3-8567-456abf791e64@googlegroups.com>
+	<cca4beea-f902-4fbd-883f-6fe0028653fb@googlegroups.com>
+Date: Fri, 7 Feb 2014 18:00:14 -0600
+Message-ID: <CAAxEZd9May_GPJbEaYbu=EXqc4XqFziFnRdpNz91inri3NwW0Q@mail.gmail.com>
+Subject: Re: [beerdb] Re: Adding to beer.db?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   The text format works like a wiki, that is, the beer and brewery
+plain text files are hand crafted with the idea for easy reading and
+writing (you can add comments, blank lines, use multi-line records,
+etc.), that is, they are not really designed for simple database
+dumps.
+
+   Anyways, you're welcome for new countries and regions to try to
+generate the files first and let's see how this works out.  The format
+is basically a better (improved) version of comma separated values.
+I started to document the format at the csv2 site [1]       The main
+idea is to use folder and file name conventions for countries and
+regions and than  use single-line or multi-line comma separated value
+records  where simple text patterns are used for types (e.g. alcohol
+by volume uses %, original gravitiy uses =B0,  [0-9]{4} is the founding
+year, // is used for the address line etc.)
+
+  Cheers.
+
+[1] https://github.com/csv2/notes
+[1a] https://github.com/csv2/notes/blob/master/MAGIC.md
+[1b] https://github.com/csv2/notes/blob/master/TYPES.md
+
+2014-02-07 13:36 GMT-06:00 Derek Cunningham <cunninghamd@nosleep.ca>:
+> Hi Gerald,
+>
+> Excellent. I'll do that.
+>
+> One issue, you provide a ruby utility, however I will be building a
+> web-based front-end to this data, and would like to automate exporting of
+> added data into your format. Do you provide the schema of the text db for=
+mat
+> anywhere, and if not can you either add that somewhere within the notes, =
+or
+> reply with it here? That way I can honour your format but work with the d=
+ata
+> in my database, otherwise it'll be an import only and exporting will be
+> difficult.
+>
+> Thanks,
+>
+> Derek
+>
+> On Friday, 7 February 2014 14:27:25 UTC-5, Gerald Bauer wrote:
+>>
+>> Hello Derek,
+>>
+>>   You're more than welcome to add new beers n breweries.  If you're new
+>> I'd suggest forking a country repo or the world repo and than send in a =
+pull
+>> request.
+>>
+>>   If you keep adding beers n breweries I will add you to the  GitHub org
+>> team and than you can add the data directly (e.g. in the browser) or pus=
+h
+>> commits to the repo w/o going through a pull request.  All the best. Che=
+ers.
+>> Prost.
+>>>
+>>>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Beer & Brewery Database (beer.db)" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to beerdb+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/groups/opt_out.
+

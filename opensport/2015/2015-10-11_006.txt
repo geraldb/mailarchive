@@ -1,0 +1,61 @@
+From 6204339183428829184@xxx Sun Oct 11 10:44:45 +0000 2015
+X-GM-THRID: 6204336722951536640
+X-Received: by 10.129.108.133 with SMTP id h127mr18721720ywc.8.1444560285410;
+        Sun, 11 Oct 2015 03:44:45 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.47.162 with SMTP id e2ls135088obn.69.gmail; Sun, 11 Oct
+ 2015 03:44:45 -0700 (PDT)
+X-Received: by 10.182.46.196 with SMTP id x4mr19863701obm.22.1444560285038;
+        Sun, 11 Oct 2015 03:44:45 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22f.google.com (mail-ig0-x22f.google.com. [2607:f8b0:4001:c05::22f])
+        by gmr-mx.google.com with ESMTPS id n7si346015iga.3.2015.10.11.03.44.45
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 11 Oct 2015 03:44:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22f as permitted sender) client-ip=2607:f8b0:4001:c05::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22f.google.com with SMTP id z10so29869714igk.1
+        for <opensport@googlegroups.com>; Sun, 11 Oct 2015 03:44:45 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=Uzd6eKcrqQfnkf/f4HYKQcjRBTqdo6KJxvtqZZ2AfCg=;
+        b=oJ8dN7Gg6APPZWVaqqnRJUz1LvlqNByWOYBkQVtlkSkOCgpgTGNrvAgzv08cvtMMMS
+         S5FgPLbDE0uqfCMhxmIt+2WHKB1G4M4QcoWK7w5PikLCqdNKuCzJgBR1lzweUODmU5ld
+         880/L7TajwrGqcJ7LxZ3GFYtjJ9xCEXoPxED6jJ7QEeiT44yfb+LKBA1jLWsE7sSpXNl
+         vU4i+aexETAVapBNLOCkkPRYdCEp08awge1ZIGPQ0+ojLR8vuB3d0/Uuk6pPRENs3U3R
+         qncTjdswyGjLKqJe3ms538rRVIlFo6uJyMe2SnnHQDSewyNXZmI24ODE1zsVNLi0RrPI
+         1nRQ==
+MIME-Version: 1.0
+X-Received: by 10.50.41.104 with SMTP id e8mr6659261igl.64.1444560284889; Sun,
+ 11 Oct 2015 03:44:44 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Sun, 11 Oct 2015 03:44:44 -0700 (PDT)
+In-Reply-To: <446123ea-0a1c-456a-897c-b6a3853689f5@googlegroups.com>
+References: <446123ea-0a1c-456a-897c-b6a3853689f5@googlegroups.com>
+Date: Sun, 11 Oct 2015 12:44:44 +0200
+Message-ID: <CAAxEZd8M0DSjTU1B4ChLAOkGvwE0Rj9sKmwu=j7g-DOQaP2fdQ@mail.gmail.com>
+Subject: Re: [opensport] ERROR: worlddb setup
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Again thanks for trying the football.db.
+
+   If you want to load / read football datasets you have to pass them
+along too in the command line or use some extra  sportdb update
+lines.
+
+    Note: The "best" recommended way to build yourself a "custom"
+football.db is using Datafile. In a datafile you list all datasets you
+want to include. See the /datafile repo [1] for more examples. Cheers.
+
+[1] github.com/openfootball/datafile
+

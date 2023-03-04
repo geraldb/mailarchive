@@ -1,0 +1,58 @@
+From 1833960472576@xxx Tue Jun 16 00:16:51 +0000 2015
+X-GM-THRID: 1794027552768
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,c14c4861489a6514
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.13.235 with SMTP id k11mr2036120wic.0.1407222055752;
+        Tue, 05 Aug 2014 00:00:55 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.93.163 with SMTP id cv3ls560653wib.21.canary; Tue, 05 Aug
+ 2014 00:00:55 -0700 (PDT)
+X-Received: by 10.194.6.138 with SMTP id b10mr236609wja.0.1407222055351;
+        Tue, 05 Aug 2014 00:00:55 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x229.google.com (mail-we0-x229.google.com [2a00:1450:400c:c03::229])
+        by gmr-mx.google.com with ESMTPS id e20si86368wiw.0.2014.08.05.00.00.55
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 05 Aug 2014 00:00:55 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::229 as permitted sender) client-ip=2a00:1450:400c:c03::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f169.google.com with SMTP id u56so490367wes.14
+        for <opensport@googlegroups.com>; Tue, 05 Aug 2014 00:00:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=LZJjYPfMEcat7QvORM63qJfcyikaPNwEVOcbXVjjN+Q=;
+        b=uSToX7+9osm8u/j6lNxsg5C3+76SrLLV6v8sACT/1hJpOF8UE57saSe7Ve4CbftaAn
+         nF1P++Uota1hnITRrDHRiLpDRVpl64W2WBjFv59VMCpHdm+eAWUcKiVNyLASyLC1wPeH
+         HOrBBviZRZy3AZMWtdPKLqi04qdudAzzqMxDpFcGcmugKdQMRNuETxS0TiUuXLj10axm
+         6RNEsYs5tFMAs+YE2TybqbYrhzwiimDwZnwrQuthRZ9cjAk26hsLKyUMR8OMWk73AhEA
+         68Pn8ZgF2RjLy68wpZE6zJdG3pI5Tz/Up3IK95j/ynPmpWjf4T5q30szYWhSAD1AfCNr
+         BF4A==
+MIME-Version: 1.0
+X-Received: by 10.194.81.70 with SMTP id y6mr2713856wjx.106.1407222055227;
+ Tue, 05 Aug 2014 00:00:55 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Tue, 5 Aug 2014 00:00:55 -0700 (PDT)
+In-Reply-To: <45ef1d81-7a9a-4bdb-8de0-70c6cd2d411a@googlegroups.com>
+References: <1df5e895-c137-4916-967a-7b231f2dc696@googlegroups.com>
+	<CAAxEZd8_BUFg=eSMMT35mHX+6n96RGa6whBxXsA726PiokuODg@mail.gmail.com>
+	<45ef1d81-7a9a-4bdb-8de0-70c6cd2d411a@googlegroups.com>
+Date: Tue, 5 Aug 2014 09:00:55 +0200
+Message-ID: <CAAxEZd9d68FJqn_+Ky1=y5cFb-QB-omBQViCoWZg1_B2U3bYaw@mail.gmail.com>
+Subject: Re: [opensport] build openfootball in mysql cause an error
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  Can you post your build script (you might use a pastie service e.g.
+gist - if too large)? Cheers.
+
+PS: Please do NOT cross-post (that is, post duplicates). Do NOT panic.
+

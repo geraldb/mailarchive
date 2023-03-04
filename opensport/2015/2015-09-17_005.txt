@@ -1,0 +1,117 @@
+From 6195403870181523456@xxx Thu Sep 17 08:51:10 +0000 2015
+X-GM-THRID: 6195403870807523328
+X-Received: by 10.66.164.227 with SMTP id yt3mr7782234pab.10.1442479870121;
+        Thu, 17 Sep 2015 01:51:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.30.101 with SMTP id r5ls1988828igh.1.canary; Thu, 17 Sep
+ 2015 01:51:09 -0700 (PDT)
+X-Received: by 10.66.102.73 with SMTP id fm9mr29463983pab.16.1442479869710;
+        Thu, 17 Sep 2015 01:51:09 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x233.google.com (mail-io0-x233.google.com. [2607:f8b0:4001:c06::233])
+        by gmr-mx.google.com with ESMTPS id z7si167142igw.0.2015.09.17.01.51.09
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 17 Sep 2015 01:51:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) client-ip=2607:f8b0:4001:c06::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x233.google.com with SMTP id i196so14610362ioi.3
+        for <opensport@googlegroups.com>; Thu, 17 Sep 2015 01:51:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=DafX91SU/ATrbvDVXXdK3K+AI/ODG4DzbCMaoLKWuh8=;
+        b=KPfHl4z/bpYUE6XGZrOX7P+0oFSJrd9gcHA+Y4h9UmEfBW3WkFqEhbuc5ae78e0QDP
+         bO2cimAIzmrZ0mKznucLaQs04JytomKq+MvkuvS0v5FFU3iHq4Yy+1CSFiRvnvr9rPBC
+         XQK/HikTLuz1UWwKp6v75erU8oFSfA0FE6//xmUIoPvMJkE+XzODy8EAz6QdGxRAE04o
+         DsaqDzXPhE17B9sno4HPW3gy5VV2Cj2fvmnfzW79yb1b8Dk/DhNlmNQYK7y5F7HCI3IB
+         +Rx/xmVXtaATikXj/S/qPWnnMTEj1vsdFzkLrONo1nw7kyLv2470n+4tk+zGkwsww841
+         DuBA==
+MIME-Version: 1.0
+X-Received: by 10.107.19.70 with SMTP id b67mr3974998ioj.144.1442479869539;
+ Thu, 17 Sep 2015 01:51:09 -0700 (PDT)
+Received: by 10.107.162.82 with HTTP; Thu, 17 Sep 2015 01:51:09 -0700 (PDT)
+Date: Thu, 17 Sep 2015 10:51:09 +0200
+Message-ID: <CAAxEZd9qGLWrF=izBivM3waygVWwAyymTMSzhrscokqTbGxU4A@mail.gmail.com>
+Subject: =?UTF-8?Q?New_CSV_Reader_In_Action_=2D_Deutsche_Bundesliga_2013=2F?=
+	=?UTF-8?Q?14_=28e=2Eg=2E_1=2Dbundesliga=2Ecsv=29_=2D=2D_Dortmund=2C_Bayern_M=C3=BCnchen=2C_2=2D1?=
+	=?UTF-8?Q?=2C_1=2D0?=
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   I've added a new CSV (comma-separated values) match schedule reader
+[1] for leagues supporting the "football.csv" [2] format:
+
+Round,Date,Team 1,Team 2,FT,HT
+1,2013-08-09,Bayern M=C3=BCnchen,Bor. M=C3=B6nchengladbach,3-1,2-1
+1,2013-08-10,Bayer Leverkusen,SC Freiburg,3-1,1-1
+1,2013-08-10,Hannover 96,VfL Wolfsburg,2-0,1-0
+1,2013-08-10,1899 Hoffenheim,1. FC N=C3=BCrnberg,2-2,1-0
+1,2013-08-10,FC Augsburg,Borussia Dortmund,0-4,0-1
+1,2013-08-10,Hertha BSC,Eintracht Frankfurt,6-1,2-1
+1,2013-08-10,Eintracht Braunschweig,Werder Bremen,0-1,0-0
+1,2013-08-11,1. FSV Mainz 05,VfB Stuttgart,3-2,1-1
+1,2013-08-11,FC Schalke 04,Hamburger SV,3-3,2-2
+
+  (Source: footballcsv/de-deutschland/2010s/2013-14/1-bundesliga.csv) [3]
+
+
+  For now there's no Datafile or all-in-one-method read_setup call support.
+  Read the datasets one by one. Example:
+
+
+  ## DE_INCLUDE_PATH =3D "../../openfootball/de-deutschland"
+
+   de =3D WorldDb::Model::Country.find_by!( key: 'de' )
+
+  ## read in clubs
+  ##  note: requires country_id   e.g. de.id
+  ['1-bundesliga', '2-bundesliga2'].each do |clubs|
+    r =3D SportDb::TeamReader.from_file(
+"#{DE_INCLUDE_PATH}/clubs/#{clubs}.txt", country_id: de.id)
+    r.read
+  end
+
+  ## read in leagues
+  ##  note: requires country_id   e.g. de.id
+  r =3D SportDb::LeagueReader.from_file(
+"#{DE_INCLUDE_PATH}/leagues.txt", country_id: de.id )
+  r.read
+
+  ## read in event configs (no match results/fixtures)
+  ['2012-13', '2013-14'].each do |season|
+    r =3D SportDb::EventReader.from_file(
+"#{DE_INCLUDE_PATH}/#{season}/1-bundesliga.yml" )
+    r.read
+  end
+
+  ## last but not least read CSV files (from footballcsv repo)
+  ['2012-13', '2013-14'].each do |season|
+    txt =3D File.read( "../de-deutschland/2010s/#{season}/1-bundesliga.txt"=
+ )
+
+    event_key =3D "de.#{season.tr('-','/')}"    ## e.g. 2014-15 =3D> de.201=
+4/15
+    r =3D SportDb::CsvGameReader.from_string( event_key, txt )
+    r.read
+  end
+
+   That's it. If anyone reads in some CSV datasets, let us know how it goes=
+.
+Cheers.
+
+[1] github.com/sportdb/sport.db.models/blob/master/lib/sportdb/csv_reader.r=
+b
+[2] github.com/footballcsv
+[3] github.com/footballcsv/de-deutschland/blob/master/2010s/2013-14/1-bunde=
+sliga.csv
+

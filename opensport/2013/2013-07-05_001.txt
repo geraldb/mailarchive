@@ -1,0 +1,77 @@
+From 117717336064@xxx Tue Jun 16 00:17:23 +0000 2015
+X-GM-THRID: 116498890752
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,5a617f46acf349c
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+X-Received: by 10.236.38.106 with SMTP id z70mr4527939yha.29.1373008065244;
+        Fri, 05 Jul 2013 00:07:45 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.49.117.231 with SMTP id kh7ls862010qeb.26.gmail; Fri, 05 Jul
+ 2013 00:07:44 -0700 (PDT)
+X-Received: by 10.49.101.34 with SMTP id fd2mr208263qeb.12.1373008064890;
+        Fri, 05 Jul 2013 00:07:44 -0700 (PDT)
+X-Google-Doc-Id: 9b86ed9a2d0940f0
+X-Google-Web-Client: true
+Date: Fri, 5 Jul 2013 00:07:44 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <33b16577-3e5f-4642-b888-11d41fd04334@googlegroups.com>
+Subject: football.js -  Football Matchday Widget for World Confed,
+ Bundesliga, etc.
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_6664_1165128.1373008064451"
+X-Google-Token: EMDh2Y4Fi8DjxgS3Zg40
+X-Google-IP: 62.47.154.150
+
+------=_Part_6664_1165128.1373008064451
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_6665_20083741.1373008064451"
+
+------=_Part_6665_20083741.1373008064451
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+   I've started on simple JavaScript widgets [1]. The first one lets you 
+add all the matchdays for an event such as the World Confed, Bundesliga, 
+Premier League, etc.   The widget uses the football.db HTTP JSON(P) API [2]
+
+  Example:
+
+  <div id='euro'></div>
+
+  <script>
+    football_widget_new( '#euro', { event: 'euro.2012' } );
+  </script>
+
+   or as a jQuery plugin [3]
+
+  <div id='confed'></div>
+
+  <script>
+   $( '#confed' ).football( { event: 'world.confed.2013' } );
+  </script>
+  
+
+   Questions? Comments? Cheers. 
+
+[1] https://github.com/geraldb/football.js
+[2] http://footballdb.herokuapp.com/api
+[3] http://plugins.jquery.com/football
+
+------=_Part_6665_20083741.1373008064451
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello,<br><br>&nbsp;&nbsp; I've started on simple JavaScript widgets [1]. The first one lets you add all the matchdays for an event such as the World Confed, Bundesliga, Premier League, etc.&nbsp;&nbsp; The widget uses the football.db HTTP JSON(P) API [2]<br><br>&nbsp; Example:<br><br>&nbsp; &lt;div id='euro'&gt;&lt;/div&gt;<br><br>&nbsp; &lt;script&gt;<br>&nbsp;&nbsp;&nbsp; football_widget_new( '#euro', { event: 'euro.2012' } );<br>&nbsp; &lt;/script&gt;<br><br>&nbsp;&nbsp; or as a jQuery plugin [3]<br><br>&nbsp; &lt;div id='confed'&gt;&lt;/div&gt;<br><br>&nbsp; &lt;script&gt;<br>&nbsp;&nbsp; $( '#confed' ).football( { event: 'world.confed.2013' } );<br>&nbsp; &lt;/script&gt;<br>&nbsp; <br><br>&nbsp;&nbsp; Questions? Comments? Cheers. <br><br>[1] https://github.com/geraldb/football.js<br>[2] http://footballdb.herokuapp.com/api<br>[3] http://plugins.jquery.com/football<br>
+------=_Part_6665_20083741.1373008064451--
+
+------=_Part_6664_1165128.1373008064451--
+

@@ -1,0 +1,69 @@
+From 6397032882318082048@xxx Mon Mar 13 17:14:44 +0000 2017
+X-GM-THRID: 6397031792085303296
+X-Received: by 10.99.5.134 with SMTP id 128mr14709751pgf.123.1489425283759;
+        Mon, 13 Mar 2017 10:14:43 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.61.119 with SMTP id a110ls15930425otc.29.gmail; Mon, 13
+ Mar 2017 10:14:43 -0700 (PDT)
+X-Received: by 10.129.137.3 with SMTP id z3mr15915465ywf.20.1489425283357;
+        Mon, 13 Mar 2017 10:14:43 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x233.google.com (mail-io0-x233.google.com. [2607:f8b0:4001:c06::233])
+        by gmr-mx.google.com with ESMTPS id 13si115692iti.0.2017.03.13.10.14.43
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 13 Mar 2017 10:14:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) client-ip=2607:f8b0:4001:c06::233;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x233.google.com with SMTP id g6so88263951ioj.1
+        for <opensport@googlegroups.com>; Mon, 13 Mar 2017 10:14:43 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=9ZYjGP+TBsN4kCDvbwcPkW496iYITjr6yCjboDMlUWM=;
+        b=SxZ8uaE612CebVd4dww7bxxpWS7PR2Xsc6KZnTN/7xQF9SLCS3G8sbOtnXr1vgEhbP
+         t94nYagM2LW/S43GQAIWssde4nEpwu0iZVv1xGWLaZ6KhyF/xW2AqBh5vM0e3lvKLxfq
+         ORdfyGl5NvehqdDLCsXRz+cKg/Brpc8sj4etZh5XG6PJ//3CzvQLsBzARhVBGIWK72M3
+         ekZaZb4xbtukwAmV2vG5ojmq6oE6bG7fouqOubpmcUogGkLJekhmxGRje4hoxdr4DbAN
+         dwSr2t0ZH2daOV4YoQAe+ow8LzwG9GvHvrJPqb27Ttr5sDooM1TcuUELV/3xDHq4EDPR
+         2Spw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=9ZYjGP+TBsN4kCDvbwcPkW496iYITjr6yCjboDMlUWM=;
+        b=r8+UJgme5++BXZN3UHYJf0MOXvgT21ov2kjct2EWIZfyYJ7pDahp0BsH6kCz9/mOUD
+         L2NUdIxSdzsMPgMIGyC2hjpoZQ4umufRDNhKJqWsdOy644MNhbX72zqLG/bGdg/jWN41
+         xEBKE7D0Ew9zPXttvFbycxcS6Wme1WHgTy+9zah9GksMx8UWsadhmTs/9GxoZMRzP/xA
+         mKco1Elhjx+herq3KNOi07bdh8qoaZh6RjbEbPTYDqC6hgp/+9dKPVT/ssSLSDIHlQhy
+         rPpibpO8Qu/3C8FSz82Np0lZOCamYC4RcN5ozcKMxkCzpO7UDO1yYbZNNM4jqyOaWDbj
+         Sbww==
+X-Gm-Message-State: AMke39lcl8BkA8kumrJ4inS4rNd1Nu4s7iUILZtTm0NzRuNzGKL5TS2B3Tm75HBEJVoQRiRzcCukl/zxDWloOw==
+X-Received: by 10.107.133.86 with SMTP id h83mr28851169iod.230.1489425282903;
+ Mon, 13 Mar 2017 10:14:42 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.170.209 with HTTP; Mon, 13 Mar 2017 10:14:42 -0700 (PDT)
+In-Reply-To: <d18a9bd3-a886-4690-8812-a0003319ba7c@googlegroups.com>
+References: <d18a9bd3-a886-4690-8812-a0003319ba7c@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 13 Mar 2017 18:14:42 +0100
+Message-ID: <CAAxEZd-CW_M=pFntk5ZF-wWzXnHYmdEB84zo_sdDmWbBRZ93fw@mail.gmail.com>
+Subject: Re: [opensport] Documentation
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Welcome to football.db. The database schema is documented
+(auto-generated) with schemadoc [1].
+
+   For more comments you might check the schema script in ruby [2].
+
+   Cheers.
+
+[1] http://openfootball.github.io/schema
+[2] https://github.com/sportdb/sport.db/blob/master/sportdb-models/lib/sportdb/schema.rb
+

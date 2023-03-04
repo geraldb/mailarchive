@@ -1,0 +1,105 @@
+From 958231740416@xxx Tue Jun 16 00:17:02 +0000 2015
+X-GM-THRID: 889315131392
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,2bead3678bdf8975
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.142.9 with SMTP id rs9mr2669594pab.47.1401697042071;
+        Mon, 02 Jun 2014 01:17:22 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.49.130 with SMTP id q2ls1937330qga.91.gmail; Mon, 02 Jun
+ 2014 01:17:21 -0700 (PDT)
+X-Received: by 10.140.49.67 with SMTP id p61mr19388qga.21.1401697041874;
+        Mon, 02 Jun 2014 01:17:21 -0700 (PDT)
+X-Google-Doc-Id: 9c5be8ea24c948b
+X-Google-Web-Client: true
+Date: Mon, 2 Jun 2014 01:17:20 -0700 (PDT)
+From: =?UTF-8?Q?Brice_Van=C3=A7on?= <vanconbrice@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <294a369a-e2d6-45af-be94-46d4512ecfc8@googlegroups.com>
+In-Reply-To: <e79618e9-fbe1-4fbd-90b7-5b87ab628ce3@googlegroups.com>
+References: <e79618e9-fbe1-4fbd-90b7-5b87ab628ce3@googlegroups.com>
+Subject: Re: http://footballdb.herokuapp.com/api/v1/event/world.2014/round/1
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1985_10295966.1401697041276"
+X-Google-Token: EJDmsJwFGhJRbUFs4FA0
+X-Google-IP: 80.12.110.201
+
+------=_Part_1985_10295966.1401697041276
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1986_4106110.1401697041276"
+
+------=_Part_1986_4106110.1401697041276
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Thank for reply,
+I understand that :
+
+
+  Looks more complicated than it is:=20
+1) check 90 minute score* =3D> score1 and score2*
+2) if equal check extra time score  (if present otherwise draw/tie) * =3D>=
+=20
+score1ot and score2ot*
+3) if equal check penalty shootout score (if present otherwise draw/tie) *=
+=20
+=3D> score1p and score2p*
+
+
+When you say "extra time", you say "over time" ? It's thame things ?
+Because there is no score1et but "ot" :
+
+...
+"score1":null,
+"score2":null,
+"score1ot":null,
+"score2ot":null,
+"score1p":null,
+"score2p":null
+...
+
+
+
+Le vendredi 30 mai 2014 09:55:50 UTC+2, Brice Van=C3=A7on a =C3=A9crit :
+>
+> Hi,
+> I'm trying to know what is the "score1ot" or "score1p" filed ?
+> How do I know which team wons, in egality case ?
+> Thanks
+>
+
+------=_Part_1986_4106110.1401697041276
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thank for reply,<br>I understand that :<br><br><br>&nbsp; =
+Looks more complicated than it is:
+<br>1) check 90 minute score<b>
+=3D&gt; score1 and score2</b><br>2) if equal check extra time score &nbsp;(=
+if present otherwise draw/tie)&nbsp;<b>
+=3D&gt; score1ot and score2ot</b><br>3) if equal check penalty shootout sco=
+re (if present otherwise draw/tie)&nbsp;<b>
+=3D&gt; score1p and score2p</b><br><br><br>When you say "extra time", you s=
+ay "over time" ? It's thame things ?<br>Because there is no score1et but "o=
+t" :<br><br><pre><span class=3D"p">...</span><span class=3D"p"></span><span=
+ class=3D"nt"><br>"score1"</span><span class=3D"p">:</span><span class=3D"k=
+c">null</span><span class=3D"p">,</span><span class=3D"nt"><br>"score2"</sp=
+an><span class=3D"p">:</span><span class=3D"kc">null</span><span class=3D"p=
+">,</span><span class=3D"nt"><br>"score1ot"</span><span class=3D"p">:</span=
+><span class=3D"kc">null</span><span class=3D"p">,</span><span class=3D"nt"=
+><br>"score2ot"</span><span class=3D"p">:</span><span class=3D"kc">null</sp=
+an><span class=3D"p">,</span><span class=3D"nt"><br>"score1p"</span><span c=
+lass=3D"p">:</span><span class=3D"kc">null</span><span class=3D"p">,<br></s=
+pan><span class=3D"nt">"score2p"</span><span class=3D"p">:</span><span clas=
+s=3D"kc">null</span><br>...<br></pre><br><br>Le vendredi 30 mai 2014 09:55:=
+50 UTC+2, Brice Van=C3=A7on a =C3=A9crit&nbsp;:<blockquote class=3D"gmail_q=
+uote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;pad=
+ding-left: 1ex;"><div dir=3D"ltr">Hi,<br>I'm trying to know what is the "sc=
+ore1ot" or "score1p" filed ?<br>How do I know which team wons, in egality c=
+ase ?<br>Thanks<br></div></blockquote></div>
+------=_Part_1986_4106110.1401697041276--
+
+------=_Part_1985_10295966.1401697041276--
+

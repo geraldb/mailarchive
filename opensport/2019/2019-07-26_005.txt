@@ -1,0 +1,195 @@
+From 6718007563371151360@xxx Fri Jul 26 16:20:25 +0000 2019
+X-GM-THRID: 6710981832719990784
+Date: Fri, 26 Jul 2019 09:20:24 -0700 (PDT)
+From: Paul Cowan <paul.cowan@cutting.scot>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <9edfa3d6-660a-4add-aa0b-6f08b118537d@googlegroups.com>
+In-Reply-To: <CAAxEZd94c4W5HvqUyaH0ozbqwbgAth2d6RSK+zSmi6qGbp3y+g@mail.gmail.com>
+References: <CAAxEZd8yA6pHbk+y7zNxhaR+C-sj3NY9WRA+XyizFjBCkx9n6g@mail.gmail.com>
+ <7a72e99f-c2a4-466d-985a-4143a27d514f@googlegroups.com>
+ <CAAxEZd94c4W5HvqUyaH0ozbqwbgAth2d6RSK+zSmi6qGbp3y+g@mail.gmail.com>
+Subject: Re: [opensport] Re: /clubs - New Central Package / Repo for World's
+ Football Clubs (incl. Premier League, Bundesliga, La Liga, etc.)
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_7464_2115816134.1564158024985"
+X-Google-Token: EMjQ7OkFHWjTbZbcF_g0
+X-Google-IP: 2a02:c7f:b075:4f00:496c:12a5:c7fb:9ffc
+
+------=_Part_7464_2115816134.1564158024985
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7465_821689174.1564158024986"
+
+------=_Part_7465_821689174.1564158024986
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi after running this script as per the readme
+
+require 'sportdb/import'
+
+## note: requires a local copy of the football.db clubs datasets
+## see https://github.com/openfootball/clubs
+SportDb::Import.config.clubs_dir =3D './clubs'
+
+DB_CONFIG =3D {
+adapter: 'postgresql',
+encoding: 'unicode',
+username: 'postgres',
+password: 'changeme',
+host: 'localhost',
+database: 'premiership',
+pool: 5,
+timeout: 5000
+}
+
+ActiveRecord::Base.establish_connection( DB_CONFIG )
+
+## build database schema / tables
+SportDb.create_all
+
+## turn on logging to console
+ActiveRecord::Base.logger =3D Logger.new(STDOUT)
+
+
+## note: requires a local copy of the football.csv england datasets
+## see https://github.com/footballcsv/england
+pack =3D CsvMatchImporter.new( './england' )
+pack.import_leagues
+
+
+It seems to have picked up the wrong liverpool and arsenal, i have these=20
+entries in teams
+
+"Arsenal de Sarand=C3=AD"
+"Liverpool Montevideo"
+
+other than that works really well
+
+
+On Sunday, July 21, 2019 at 6:43:53 PM UTC+1, Gerald Bauer wrote:
+>
+> Hello Paul,=20
+>
+>     The easiest way is to use the new csv import and the football.csv=20
+> datasets for england.=20
+>     To import all datasets, see the sportdb-import readme for the full=20
+> sample script / code [1]=20
+>
+>     Note: You can change:=20
+>
+>     pack.import_leagues=20
+>
+>      to=20
+>
+>     pack.import_leagues( start: '1970-71' )=20
+>
+>     in your case to start with the 1970 season and not all the way=20
+> back from the 1880s.=20
+>
+>     Note: Sure what's your meaning / definition of premiership.  Is it=20
+> only the first level or all four levels?=20
+>
+>      For now all levels get added - let me know if that works.  If you=20
+> got so far I'm can offer to add a new levels parameter=20
+>     to import_leagues so you can filter out all others but the first=20
+> level, for example e.g. levels: [1] or something.=20
+>
+>      Let us know how it goes. Good luck. Cheers. Prost.=20
+>
+> [1] https://github.com/sportdb/sport.db/tree/master/sportdb-import=20
+>
+
+------=_Part_7465_821689174.1564158024986
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi after running this script as per the readme<div><br></d=
+iv><div><div style=3D"color: rgb(212, 212, 212); background-color: rgb(30, =
+30, 30); font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; li=
+ne-height: 20px; white-space: pre;"><div><span style=3D"color: #569cd6;">re=
+quire</span> <span style=3D"color: #ce9178;">&#39;sportdb/import&#39;</span=
+></div><br><div><span style=3D"color: #6a9955;">## note: requires a local c=
+opy of the football.db clubs datasets</span></div><div><span style=3D"color=
+: #6a9955;">##          see https://github.com/openfootball/clubs</span></d=
+iv><div><span style=3D"color: #4ec9b0;">SportDb</span>::<span style=3D"colo=
+r: #4ec9b0;">Import</span>.config.clubs_dir =3D <span style=3D"color: #ce91=
+78;">&#39;./clubs&#39;</span></div><br><div><span style=3D"color: #9cdcfe;"=
+>DB_CONFIG</span> =3D {</div><div>  adapter:  <span style=3D"color: #ce9178=
+;">&#39;postgresql&#39;</span>,</div><div>  encoding: <span style=3D"color:=
+ #ce9178;">&#39;unicode&#39;</span>,</div><div>  username: <span style=3D"c=
+olor: #ce9178;">&#39;postgres&#39;</span>,</div><div>  password:  <span sty=
+le=3D"color: #ce9178;">&#39;changeme&#39;</span>,</div><div>  host: <span s=
+tyle=3D"color: #ce9178;">&#39;localhost&#39;</span>,</div><div>  database: =
+<span style=3D"color: #ce9178;">&#39;premiership&#39;</span>,</div><div>  p=
+ool:      <span style=3D"color: #b5cea8;">5</span>,</div><div>  timeout:   =
+<span style=3D"color: #b5cea8;">5000</span></div><div>}</div><br><div><span=
+ style=3D"color: #4ec9b0;">ActiveRecord</span>::<span style=3D"color: #4ec9=
+b0;">Base</span>.establish_connection( <span style=3D"color: #9cdcfe;">DB_C=
+ONFIG</span> )</div><br><div><span style=3D"color: #6a9955;">## build datab=
+ase schema / tables</span></div><div><span style=3D"color: #4ec9b0;">SportD=
+b</span>.create_all</div><br><div><span style=3D"color: #6a9955;">## turn o=
+n logging to console</span></div><div><span style=3D"color: #4ec9b0;">Activ=
+eRecord</span>::<span style=3D"color: #4ec9b0;">Base</span>.logger =3D <spa=
+n style=3D"color: #4ec9b0;">Logger</span>.<span style=3D"color: #569cd6;">n=
+ew</span>(<span style=3D"color: #9cdcfe;">STDOUT</span>)</div><br><br><div>=
+<span style=3D"color: #6a9955;">## note: requires a local copy of the footb=
+all.csv england datasets</span></div><div><span style=3D"color: #6a9955;">#=
+#          see https://github.com/footballcsv/england</span></div><div>pack=
+ =3D <span style=3D"color: #4ec9b0;">CsvMatchImporter</span>.<span style=3D=
+"color: #569cd6;">new</span>( <span style=3D"color: #ce9178;">&#39;./englan=
+d&#39;</span> )</div><div>pack.import_leagues</div></div><div><br></div><di=
+v><br></div><div>It seems to have picked up the wrong liverpool and arsenal=
+, i have these entries in teams</div><div><br></div><div>&quot;Arsenal de S=
+arand=C3=AD&quot;<br></div><div>&quot;Liverpool Montevideo&quot;<br></div><=
+div><br></div><div>other than that works really well</div><div><br></div><b=
+r>On Sunday, July 21, 2019 at 6:43:53 PM UTC+1, Gerald Bauer wrote:<blockqu=
+ote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left=
+: 1px #ccc solid;padding-left: 1ex;">Hello Paul,
+<br>
+<br>=C2=A0 =C2=A0 The easiest way is to use the new csv import and the foot=
+ball.csv
+<br>datasets for england.
+<br>=C2=A0 =C2=A0 To import all datasets, see the sportdb-import readme for=
+ the full
+<br>sample script / code [1]
+<br>
+<br>=C2=A0 =C2=A0 Note: You can change:
+<br>
+<br>=C2=A0 =C2=A0 pack.import_leagues
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0to
+<br>
+<br>=C2=A0 =C2=A0 pack.import_leagues( start: &#39;1970-71&#39; )
+<br>
+<br>=C2=A0 =C2=A0 in your case to start with the 1970 season and not all th=
+e way
+<br>back from the 1880s.
+<br>
+<br>=C2=A0 =C2=A0 Note: Sure what&#39;s your meaning / definition of premie=
+rship. =C2=A0Is it
+<br>only the first level or all four levels?
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0For now all levels get added - let me know if that =
+works. =C2=A0If you
+<br>got so far I&#39;m can offer to add a new levels parameter
+<br>=C2=A0 =C2=A0 to import_leagues so you can filter out all others but th=
+e first
+<br>level, for example e.g. levels: [1] or something.
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0Let us know how it goes. Good luck. Cheers. Prost.
+<br>
+<br>[1] <a href=3D"https://github.com/sportdb/sport.db/tree/master/sportdb-=
+import" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;=
+https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fsportdb%2Fsport.=
+db%2Ftree%2Fmaster%2Fsportdb-import\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjC=
+NFLvlFeTVgULmK7PkV8fwYsVmVbmQ&#39;;return true;" onclick=3D"this.href=3D&#3=
+9;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fsportdb%2Fspor=
+t.db%2Ftree%2Fmaster%2Fsportdb-import\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQ=
+jCNFLvlFeTVgULmK7PkV8fwYsVmVbmQ&#39;;return true;">https://github.com/sport=
+db/<wbr>sport.db/tree/master/sportdb-<wbr>import</a>
+<br></blockquote></div></div>
+------=_Part_7465_821689174.1564158024986--
+
+------=_Part_7464_2115816134.1564158024985--
+

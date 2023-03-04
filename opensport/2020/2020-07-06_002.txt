@@ -1,0 +1,171 @@
+From 6846402050922643456@xxx Mon Jul 06 16:16:36 +0000 2020
+X-GM-THRID: 6844588380482699264
+X-Received: by 2002:a0c:8643:: with SMTP id p61mr48487810qva.43.1594052196451;
+        Mon, 06 Jul 2020 09:16:36 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a37:6809:: with SMTP id d9ls7929292qkc.3.gmail; Mon, 06 Jul
+ 2020 09:16:35 -0700 (PDT)
+X-Received: by 2002:a37:2c46:: with SMTP id s67mr47161395qkh.151.1594052195478;
+        Mon, 06 Jul 2020 09:16:35 -0700 (PDT)
+Received: by 2002:a37:7dc4:0:b029:f9:71db:3eb4 with SMTP id y187-20020a377dc40000b02900f971db3eb4msqkc;
+        Mon, 6 Jul 2020 03:12:43 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwSd67kTNDBSWs0SMIJDcQyZK39/vffL6toz8Oeew9CP5kkfVrskemtm+zMasdXCsYg/KSiXjF3Ow==
+X-Received: by 2002:a25:6f02:: with SMTP id k2mr71052921ybc.481.1594030362976;
+        Mon, 06 Jul 2020 03:12:42 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Mon, 6 Jul 2020 03:12:42 -0700 (PDT)
+From: Rae Leighton <louise.rae@hotmail.co.uk>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <4fb6e3be-7696-4234-a35c-2349169d61f4o@googlegroups.com>
+In-Reply-To: <CAAxEZd9x+rFQUzxVScnbghfv9+crD+5fxHLTs2mrEiGbCvGtUQ@mail.gmail.com>
+References: <CAAxEZd9x+rFQUzxVScnbghfv9+crD+5fxHLTs2mrEiGbCvGtUQ@mail.gmail.com>
+Subject: Re: football.csv - England (Premier League, Championship, etc.)
+ Datasets - Reboot
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1618_2006778694.1594030362776"
+X-Google-Token: EJryi_gFFtFAU_uldcY0
+X-Google-IP: 2a00:23c4:1f91:6e00:e8d2:ade0:4492:62a2
+
+------=_Part_1618_2006778694.1594030362776
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1619_1866557826.1594030362776"
+
+------=_Part_1619_1866557826.1594030362776
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald, 
+
+I've been trying to download the England database using the '$ sportdb new 
+eng' command, however I'm getting the following error:
+
+*league >English Division One<, season >2000/01<*
+
+
+*** !!! ERROR - no league match found for >English Division One<, add to 
+leagues table; sorry*
+**** error: exit*
+
+Which means that only season 2010/11 is loading at the moment.
+
+I have successfully downloaded it in the past, but I'm not sure how to 
+overcome this error (I'm not very experienced with programming!). Any help 
+would be very much appreciated. Thank you for making such a fabulous data 
+resource so accessible - it's amazing!
+
+Best wishes,
+R.
+
+On Wednesday, 1 July 2020 19:58:38 UTC+1, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>   I've rebooted the football.csv datasets for England [1]. 
+> What's new? What's different? 
+>
+>   The datasets are now a 1:1 mirror, that is, 
+> an export in the comma-separated values (CSV) format 
+> from the open football.db /england datasets [2]. 
+>
+>   The idea is to have a "single source of truth" with the 
+> /england datasets in the Football.TXT format. 
+>
+>  Questions and comments welcome. 
+>
+>   Happy data wrangling. Enjoy the beautiful game. 
+> Cheers. Prost. 
+>
+>
+> PS:  You can find some of the "old" datasets in CSV going back to 1888 
+> and the latest seasons 
+> now in the cached datasets, that is, James P. Curley's R soccerdata [3] 
+> and Joseph Buchdahl's football data [4], for example. 
+>
+> [1] https://github.com/footballcsv/england 
+> [2] https://github.com/openfootball/england 
+> [3] https://github.com/footballcsv/cache.soccerdata 
+> [4] https://github.com/footballcsv/cache.footballdata 
+>
+
+------=_Part_1619_1866557826.1594030362776
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hi Gerald, <br></div><div><br></div><div>I&#39;ve bee=
+n trying to download the England database using the &#39;$ sportdb new eng&=
+#39; command, however I&#39;m getting the following error:<br></div><div><b=
+r></div><div><b>league &gt;English Division One&lt;, season &gt;2000/01&lt;=
+</b></div><b>** !!! ERROR - no league match found for &gt;English Division =
+One&lt;, add to leagues table; sorry<br><br></b><div><b>*** error: exit</b>=
+</div><div><br></div><div>Which means that only season 2010/11 is loading a=
+t the moment.</div><div><br></div><div>I have successfully downloaded it in=
+ the past, but I&#39;m not sure how to overcome this error (I&#39;m not ver=
+y experienced with programming!). Any help would be very much appreciated. =
+Thank you for making such a fabulous data resource so accessible - it&#39;s=
+ amazing!</div><div><br></div><div>Best wishes,</div><div>R.<br></div><br>O=
+n Wednesday, 1 July 2020 19:58:38 UTC+1, Gerald Bauer  wrote:<blockquote cl=
+ass=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px =
+#ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 I&#39;ve rebooted the football.csv datasets for England [1].
+<br>What&#39;s new? What&#39;s different?
+<br>
+<br>=C2=A0 The datasets are now a 1:1 mirror, that is,
+<br>an export in the comma-separated values (CSV) format
+<br>from the open football.db /england datasets [2].
+<br>
+<br>=C2=A0 The idea is to have a &quot;single source of truth&quot; with th=
+e
+<br>/england datasets in the Football.TXT format.
+<br>
+<br>=C2=A0Questions and comments welcome.
+<br>
+<br>=C2=A0 Happy data wrangling. Enjoy the beautiful game.
+<br>Cheers. Prost.
+<br>
+<br>
+<br>PS: =C2=A0You can find some of the &quot;old&quot; datasets in CSV goin=
+g back to 1888
+<br>and the latest seasons
+<br>now in the cached datasets, that is, James P. Curley&#39;s R soccerdata=
+ [3]
+<br>and Joseph Buchdahl&#39;s football data [4], for example.
+<br>
+<br>[1] <a href=3D"https://github.com/footballcsv/england" target=3D"_blank=
+" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.google.com/u=
+rl?q\x3dhttps%3A%2F%2Fgithub.com%2Ffootballcsv%2Fengland\x26sa\x3dD\x26sntz=
+\x3d1\x26usg\x3dAFQjCNFkGkXzpL8clCK49t5IrofozcB2pQ&#39;;return true;" oncli=
+ck=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub=
+.com%2Ffootballcsv%2Fengland\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFkGkXz=
+pL8clCK49t5IrofozcB2pQ&#39;;return true;">https://github.com/<wbr>footballc=
+sv/england</a>
+<br>[2] <a href=3D"https://github.com/openfootball/england" target=3D"_blan=
+k" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.google.com/=
+url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fengland\x26sa\x3dD\x26sn=
+tz\x3d1\x26usg\x3dAFQjCNGbXlcmK0w8Es6qrsox0SAY5vrwiA&#39;;return true;" onc=
+lick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgith=
+ub.com%2Fopenfootball%2Fengland\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGbX=
+lcmK0w8Es6qrsox0SAY5vrwiA&#39;;return true;">https://github.com/<wbr>openfo=
+otball/england</a>
+<br>[3] <a href=3D"https://github.com/footballcsv/cache.soccerdata" target=
+=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.go=
+ogle.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Ffootballcsv%2Fcache.soccerdata=
+\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFBp9iB0bkj2zmtZUDvmcfvLFg6YQ&#39;;=
+return true;" onclick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dh=
+ttps%3A%2F%2Fgithub.com%2Ffootballcsv%2Fcache.soccerdata\x26sa\x3dD\x26sntz=
+\x3d1\x26usg\x3dAFQjCNFBp9iB0bkj2zmtZUDvmcfvLFg6YQ&#39;;return true;">https=
+://github.com/<wbr>footballcsv/cache.soccerdata</a>
+<br>[4] <a href=3D"https://github.com/footballcsv/cache.footballdata" targe=
+t=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.g=
+oogle.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Ffootballcsv%2Fcache.footballd=
+ata\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHODQD5Qw3BEdcSRqlZ5ZFHMITpqA&#3=
+9;;return true;" onclick=3D"this.href=3D&#39;https://www.google.com/url?q\x=
+3dhttps%3A%2F%2Fgithub.com%2Ffootballcsv%2Fcache.footballdata\x26sa\x3dD\x2=
+6sntz\x3d1\x26usg\x3dAFQjCNHODQD5Qw3BEdcSRqlZ5ZFHMITpqA&#39;;return true;">=
+https://github.com/<wbr>footballcsv/cache.footballdata</a>
+<br></blockquote></div>
+------=_Part_1619_1866557826.1594030362776--
+
+------=_Part_1618_2006778694.1594030362776--
+

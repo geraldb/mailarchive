@@ -1,0 +1,71 @@
+From 6345693212049408000@xxx Wed Oct 26 08:50:35 +0000 2016
+X-GM-THRID: 6345415112559427584
+X-Received: by 10.200.57.73 with SMTP id t9mr140974qtb.38.1477471834152;
+        Wed, 26 Oct 2016 01:50:34 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.107.176.201 with SMTP id z192ls359579ioe.43.gmail; Wed, 26 Oct
+ 2016 01:50:33 -0700 (PDT)
+X-Received: by 10.36.14.133 with SMTP id 127mr2456188ite.35.1477471833780;
+        Wed, 26 Oct 2016 01:50:33 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x230.google.com (mail-it0-x230.google.com. [2607:f8b0:4001:c0b::230])
+        by gmr-mx.google.com with ESMTPS id f131si97213itc.3.2016.10.26.01.50.33
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 26 Oct 2016 01:50:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) client-ip=2607:f8b0:4001:c0b::230;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x230.google.com with SMTP id u205so18530653itc.0
+        for <wwwmake@googlegroups.com>; Wed, 26 Oct 2016 01:50:33 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=9iQyF0+adk28JmkG65+uNNCvpKrAwz9XdpxuGiYxrxw=;
+        b=nLSSwqVpFMUOKdEd7Im96jJWiNs+/XzSnssSZ0aZwdVL4Ml11OADkrOBQhMjDVg2Ft
+         I9ZQGKYSHOyRk0TmFwZkoAa3kmKltTsfJBKZuTqLRPtzoqvcWIkYsXowCeLTQsTdjg22
+         2hKq/4l0hjY+QsctAa2A8yFtC8ZlbdUD/aJn87+byCN8KqsKFrXXzl+Ssw6CMtv/zVe6
+         jEXhwMIavuQ+RLqTUtK5HR3+CaeZTEHgiBYEhutUmj7Bk62UziLZ6xwJJ8I+LDjNe/b7
+         Py43H+stVTzAP+ykJ+T+qs9Btq2oXlnVZXNg+NonbrETny+dlE/XbHPdG7qm3mMSmB5Q
+         7JhQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=9iQyF0+adk28JmkG65+uNNCvpKrAwz9XdpxuGiYxrxw=;
+        b=hQFvc3SRIrJ8E5s9+xjKPS+Yk/6TaepwQ4Gx3cPglL316dA1IQDhGiu9vRN0WVSLaV
+         b7yqYl8iYCL3jOnaO3IbmZC4TKQbEIB6xpS4YxFCar5xrxrkyk0fXfyvylVbJBONOnkx
+         KcequXTdnf5rOZEGFP6ht3YpEm9dFi0s1XpOsgcjfmOEQf/03IPWYolmNTWTzpkg5o3D
+         dDmy7dibpEiLEa93XVs+svq0si4+CkVTNVb4tMJjGTaDCT+QSEer89IrS1GAN6GhK5xH
+         Oyvub75no2LkoO2xnLS8Ya2WV9SnYlEj8yO8QIjoiIYQWJerWOqBfA5Nqw8q/sr7jXUb
+         P2fw==
+X-Gm-Message-State: ABUngvfp8oCXlls5Ac2Qot76AhurSY72s4RFFUDlX0zgXHw0woaFLKZapXRXVEpn7SGNxVY7QhM7+8lLzOVP3w==
+X-Received: by 10.107.171.194 with SMTP id u185mr1231397ioe.102.1477471833304;
+ Wed, 26 Oct 2016 01:50:33 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.141.194 with HTTP; Wed, 26 Oct 2016 01:50:32 -0700 (PDT)
+In-Reply-To: <c8622153-3abe-4439-bf76-21adb0fdcb1c@googlegroups.com>
+References: <e502bb69-1cd5-4a8a-b5f9-19fef385d2e4@googlegroups.com>
+ <CAAxEZd_caWbhFm4NWFUYw3Pj_sPu-OwY9f+fYk92q_vc-_w2Qg@mail.gmail.com>
+ <7062ae78-1e58-4bfb-a93c-7772134d2d87@googlegroups.com> <CAAxEZd-fYL_y7=8y2AxNZwOV7MUn37j5vrNv_56rC7TaPL2qmw@mail.gmail.com>
+ <c8622153-3abe-4439-bf76-21adb0fdcb1c@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 26 Oct 2016 10:50:32 +0200
+Message-ID: <CAAxEZd-q=kkg1BdO26H27hOKXTUK6UTeQC4j+YK4kb1R4YS1gw@mail.gmail.com>
+Subject: Re: [wwwmake:411] what you could sudgest to me?
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   > I was wondering what was the best way.
+   There are many ways - there is no best way ;-)
+
+   I am a "fan" of the Ruby philosophy e.g. there are many ways to do it.
+   I am not a "fan" of the Python philosophy e.g. there is only one
+way (best) way.
+
+   Anyways, no worries if you use markdown (e.g. plain text) you're on
+the right way. Good luck. Cheers.
+

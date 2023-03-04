@@ -1,0 +1,266 @@
+From 262313869312@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 263084572672
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,496bf51cee87d588
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.70.103.67 with SMTP id fu3mr22401960pdb.6.1409737817070;
+        Wed, 03 Sep 2014 02:50:17 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.28.9 with SMTP id 9ls8734qgy.52.gmail; Wed, 03 Sep 2014
+ 02:50:16 -0700 (PDT)
+X-Received: by 10.140.98.243 with SMTP id o106mr22724qge.17.1409737816908;
+        Wed, 03 Sep 2014 02:50:16 -0700 (PDT)
+X-Google-Doc-Id: ed9ac75ac5ee59d1
+X-Google-Web-Client: true
+Date: Wed, 3 Sep 2014 02:50:16 -0700 (PDT)
+From: Eckhard Licher <eckhard.licher@googlemail.com>
+To: openmundi@googlegroups.com
+Message-Id: <aa11e983-05fc-46dd-b746-abc5bcd10efe@googlegroups.com>
+Subject: Factbook scraper for missing elements
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3251_2016896121.1409737816615"
+X-Google-Token: ENjIm6AFLzbABsm5WP40
+X-Google-IP: 85.158.138.19
+
+------=_Part_3251_2016896121.1409737816615
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3252_2091221399.1409737816615"
+
+------=_Part_3252_2091221399.1409737816615
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+the factbook HTML scraper omits in its output three items needed for the 
+reconstruction of the WFB
+
+   - date of last update
+   - affiliation
+   - names of region and parent region
+
+I have written an ad-hoc command line utility (see attachment) that expects 
+the path to the factbook/geos directory (local copy of the WFB) as cmd line 
+argument and prints to stdout the missing info for all 286 entries in JSON 
+format. A sample entry looks like this:
+
+  "fp": {
+    "affiliation": "overseas lands of France", 
+    "last_update": "Page last updated on June 20, 2014", 
+    "parent__region": "Australia-Oceania :: French Polynesia", 
+    "parent_name": "Australia-Oceania", 
+    "region_name": "French Polynesia"
+  },  
+
+Takes a while to run as each entry is effectively parsed three times 
+("brute force attack" in order to minimize development time :-)
+
+Dedicated to the public domain.
+
+Cheers
+
+
+------=_Part_3252_2091221399.1409737816615
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>the factbook HTML scraper omits in its outpu=
+t three items needed for the reconstruction of the WFB<br><ul><li>date of l=
+ast update</li><li>affiliation</li><li>names of region and parent region</l=
+i></ul><p>I have written an ad-hoc command line utility (see attachment) th=
+at expects the path to the <font face=3D"courier new,monospace">factbook/ge=
+os <font face=3D"arial,sans-serif">directory </font></font><font face=3D"co=
+urier new,monospace"><font face=3D"arial,sans-serif"><font face=3D"courier =
+new,monospace"><font face=3D"arial,sans-serif"> (local copy of the WFB) </f=
+ont></font>as cmd line argument and pr</font></font>ints to <font face=3D"c=
+ourier new,monospace">stdout <font face=3D"arial,sans-serif">the missing in=
+fo for all 286 entries in <span style=3D"font-family: courier new,monospace=
+;">JSON</span> format. A sample entry looks like this:<br></font></font></p=
+><p><font face=3D"courier new,monospace">&nbsp; "fp": {<br>&nbsp;&nbsp;&nbs=
+p; "affiliation": "overseas lands of France", <br>&nbsp;&nbsp;&nbsp; "last_=
+update": "Page last updated on June 20, 2014", <br>&nbsp;&nbsp;&nbsp; "pare=
+nt__region": "Australia-Oceania :: French Polynesia", <br>&nbsp;&nbsp;&nbsp=
+; "parent_name": "Australia-Oceania", <br>&nbsp;&nbsp;&nbsp; "region_name":=
+ "French Polynesia"<br>&nbsp; },&nbsp; <br></font></p><p>Takes a while to r=
+un as each entry is effectively parsed three times ("brute force attack" in=
+ order to minimize development time :-)</p><p>Dedicated to the public domai=
+n.</p><p>Cheers<br><br></p></div>
+------=_Part_3252_2091221399.1409737816615--
+
+------=_Part_3251_2016896121.1409737816615
+Content-Type: text/x-python; charset=US-ASCII; name=create_fixtures.py
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename=create_fixtures.py
+X-Attachment-Id: b92f79b7-a3e4-4452-b489-3d8b24d26a2b
+Content-ID: <b92f79b7-a3e4-4452-b489-3d8b24d26a2b>
+
+#!/usr/bin/python
+
+'''
+Utility to scrape some elements off .html pages of the World Factbook
+which are not provided by the factbook gem:
+   - last update
+   - affiliation
+   - region and parent names
+
+Call from the command line as follows:
+
+   python 01-create_fixtures.py geosdir
+   
+where geosdir is a path name of the factbook/geos directory containing 
+the files to be scraped. 
+
+Returns the scraped elements for all files in geodir in a single hash 
+with JSON notation (printed to stdout). Sample result entry: 
+
+  "fp": {
+    "affiliation": "overseas lands of France", 
+    "last_update": "Page last updated on June 20, 2014", 
+    "parent__region": "Australia-Oceania :: French Polynesia", 
+    "parent_name": "Australia-Oceania", 
+    "region_name": "French Polynesia"
+  },  
+
+Dedicated to the public domain on 2014-09-02 by Eckhard Licher, Frankfurt.
+'''
+
+import sys, glob, json
+
+from os.path import sep
+from HTMLParser import HTMLParser
+
+
+class wfbScraper(HTMLParser):
+    ''' specialized HTML parser that stores intermediate results internally
+        and provides a get_result() method for the final scraping result '''
+    def __init__(self):
+        HTMLParser.__init__(self)
+        self.result = []
+        self.sampling = False
+    def get_result(self):
+        # strip whitespace from partial results and remove empty partial results 
+        res = [chunk.strip() for chunk in self.result if chunk.strip()]
+        # join partial results with single space
+        return " ".join(res) 
+        
+        
+class RegParentParser(wfbScraper):
+    #
+    # scrape entity and parent name
+    #
+    def handle_starttag(self, tag, attrs):
+        if tag == "div" and not self.result:
+            for attr in attrs:
+                if attr == ("class", "region1"):
+                    self.sampling = True            
+    def handle_endtag(self, tag):
+        if tag == "div" and self.sampling:
+            self.sampling = False
+    def handle_data(self, data):
+        if self.sampling:
+            self.result.append(data.strip())
+            
+
+class AffiliationParser(wfbScraper):
+    #
+    # scrape affiliation
+    #
+    def handle_starttag(self, tag, attrs):
+        if tag == "div":
+            for attr in attrs:
+                if attr == ("class", "affiliation"):
+                    self.sampling = True            
+    def handle_endtag(self, tag):
+        if tag == "div" and self.sampling:
+            self.sampling = False
+    def handle_data(self, data):
+        if self.sampling:
+            self.result.append(data.strip())
+
+
+class LastUpdateParser(wfbScraper):
+    #
+    # scrape last update information 
+    #
+    def handle_data(self, data):
+        if data.find("Page last updated on") >= 0:
+            self.result.append(data.strip())
+
+
+def process(code, filename):
+    '''get last update, affiliation and region name and parent name from wFB .html file '''
+    
+    # load .html file
+    try:
+        data = open(filename, "r").read()
+    except IOError:
+        print >> sys.stderr, "file not found:", filename
+        return {}
+    fix = {}
+
+    # scrape last update
+    parser = LastUpdateParser()
+    parser.feed(data)
+    update = parser.get_result()
+    fix["last_update"] = update
+
+    # scrape affiliation, remove brackets
+    parser = AffiliationParser()
+    parser.feed(data)
+    affiliation = parser.get_result()
+    fix["affiliation"] = affiliation.replace("(","").replace(")","")
+
+    # scrape  region name and parent name
+    parser = RegParentParser()
+    parser.feed(data)
+    regparent = parser.get_result()
+    fix["parent__region"] = regparent
+    
+    # store region name and parent name separately
+    chunks = regparent.split("::")
+    if len(chunks) > 0:
+        fix["parent_name"] = chunks[0].strip()
+    else:
+        fix["parent_name"] = ""
+    if len(chunks) > 1:
+        fix["region_name"] = chunks[1].strip()
+    else:
+        fix["region_name"] = ""    
+
+    return fix
+    
+    
+def main():
+    
+    # make sure the path to geosdir is given
+    if len(sys.argv) != 2:
+        print >> sys.stderr, "usage: %s geos_path" % sys.argv[0]
+        exit(1)
+
+    # create hash with fips: filename association
+    files = {}
+    geosdir = sys.argv[1]
+    if not geosdir.endswith(sep):
+        geosdir += sep
+    for fn in glob.glob(geosdir + "??.html"):
+        fips = fn[-7:-5]
+        files[fips] = fn
+    
+    # get fixtures
+    fixtures = {}
+    for fips in files.keys():
+        fixtures[fips] = process(fips, files[fips])
+    # print to stdout
+    output = json.dumps(fixtures, sort_keys=True, indent=2)
+    print output
+
+
+if __name__ == "__main__":
+    main()
+
+
+------=_Part_3251_2016896121.1409737816615--
+

@@ -1,0 +1,80 @@
+From 6209936299175968768@xxx Mon Oct 26 12:44:25 +0000 2015
+X-GM-THRID: 6209936297020096512
+X-Received: by 10.129.85.80 with SMTP id j77mr30223473ywb.31.1445863465492;
+        Mon, 26 Oct 2015 05:44:25 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.107.46.218 with SMTP id u87ls279641iou.94.gmail; Mon, 26 Oct
+ 2015 05:44:25 -0700 (PDT)
+X-Received: by 10.66.97.33 with SMTP id dx1mr16289253pab.9.1445863465300;
+        Mon, 26 Oct 2015 05:44:25 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22e.google.com (mail-ig0-x22e.google.com. [2607:f8b0:4001:c05::22e])
+        by gmr-mx.google.com with ESMTPS id a11si749222igv.1.2015.10.26.05.44.25
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 26 Oct 2015 05:44:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22e as permitted sender) client-ip=2607:f8b0:4001:c05::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22e.google.com with SMTP id kq10so71594377igb.0
+        for <openmundi@googlegroups.com>; Mon, 26 Oct 2015 05:44:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=xt2ilUTS9jLsdan71uDLOHhV7CwbjbiDPrrQWzNlkoQ=;
+        b=kJoIQYx5agN5S/91HzI5md4qJM1rL1kS84Tv/CcmLTfpfTvPqaTTR2vUkG0T/L0eHD
+         vbfkltP4FtSVzLuAEUOZZ0fRXcpTbIKD/cTKtlbEvt12jOd77bvrfP7xsVjBrxflS1eq
+         h4iDSvYOK3hWpSUSPrJfngTWf3jSglpEPjRf1J9YxCUWDH+SCAoLCPNXY6kwJeJWxsfT
+         1S6oOurfH1tMy2s8dGb3H+T1Iqejt1xunbs/pAcyYurUKphSaHhmFpun6J1tv7SxuFDb
+         lJJE6V9lUY85rlW8dSbQY1Xdl9OxAiZRM9YFXrYwmTMbYj6IXjDy6f28KSO+ZO0d7tp1
+         Yxeg==
+MIME-Version: 1.0
+X-Received: by 10.50.143.12 with SMTP id sa12mr9643790igb.7.1445863465180;
+ Mon, 26 Oct 2015 05:44:25 -0700 (PDT)
+Received: by 10.107.138.29 with HTTP; Mon, 26 Oct 2015 05:44:25 -0700 (PDT)
+Date: Mon, 26 Oct 2015 13:44:25 +0100
+Message-ID: <CAAxEZd-4wHDKYowuQ0H3Ygzb0VYEWwSR6a9w24UNTY7UTi+Png@mail.gmail.com>
+Subject: factbook.json - 260+ Public Domain (Free) Country Profiles Updated
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  If anyone follows along I've updated and rearranged the
+/factbook.json [1] archive (repo). What's news?
+
+  All country profiles got updated using the latest (live) pages from
+the CIA World Factbook site.
+
+  The /factbook.json archive now follows 1:1 the "official" structure e.g.
+
+  All country profiles now use the two-letter GEC (formerly FIPS) codes
+    e.g. au for Austria, gm for Germany, and so on.
+  All country profiles are now included (not just a selection) including
+   all oceans, the world, the gaza strip, the west bank etc.
+
+  The country profiles now get organized / stored by region
+   as used / assigned by the World Factbook site e.g.:
+
+  - africa
+  - antarctica
+  - australia-oceania
+  - central-america-n-caribbean
+  - central-asia
+  - east-n-southeast-asia
+  - europe
+  - middle-east
+  - north-america
+  - oceans
+  - south-america
+  - south-asia
+  - world
+
+  That's it. Questions? Comments?  As always welcome. Cheers.
+
+[1] github.com/factbook/factbook.json
+

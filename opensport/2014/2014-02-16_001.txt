@@ -1,0 +1,57 @@
+From 343648763904@xxx Tue Jun 16 00:17:15 +0000 2015
+X-GM-THRID: 345456508928
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,ebf2f160f8e84b4b,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.69.35 with SMTP id m23mr6172184yhd.6.1392510801746;
+        Sat, 15 Feb 2014 16:33:21 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.21.8 with SMTP id 8ls493738qgk.51.gmail; Sat, 15 Feb 2014
+ 16:33:21 -0800 (PST)
+X-Received: by 10.236.210.40 with SMTP id t28mr5775890yho.44.1392510801597;
+        Sat, 15 Feb 2014 16:33:21 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-vc0-x232.google.com (mail-vc0-x232.google.com [2607:f8b0:400c:c03::232])
+        by gmr-mx.google.com with ESMTPS id kf5si1818195vdb.3.2014.02.15.16.33.21
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 15 Feb 2014 16:33:21 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c03::232 as permitted sender) client-ip=2607:f8b0:400c:c03::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c03::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-vc0-f178.google.com with SMTP id ik5so10742821vcb.9
+        for <opensport@googlegroups.com>; Sat, 15 Feb 2014 16:33:21 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=lPpqUjHKB6mZMNb1Q7MB0VIf4Lz7mZQ5Zk33sAaKP9g=;
+        b=msqS538f8ErLe7J7y5E/u0O9Yi62F7euRkU/NnT4aFJbqRFKfjBPM3XfFBRZ8jXjl2
+         N4V9NE3SvMSzVyeOsbMDfdEuJ7aiE47MhDhbqpO0PBL3QllYU8NhrJy0Z2sjNvO/r6FV
+         MB1X7jShDzS744WvCxILveiN5/K6KE+Y8Se5cJwEYZpwxy0SzrGgqPrewPaJoO4adlxz
+         dWVuKWsOOYTwBx+Y8YjFGVE9Z1IuDP/kuDSqPcb4qMo1R7bhON7Kk/uXesYMJYHdCDJj
+         9a+lNO6WizKuQFzZFJkR00WJJX2mglIy5HVQb+0Lxe/ROIEtBgc6NH0CVxgJzfHW2Dz0
+         s5GA==
+MIME-Version: 1.0
+X-Received: by 10.52.181.199 with SMTP id dy7mr2315290vdc.43.1392510801465;
+ Sat, 15 Feb 2014 16:33:21 -0800 (PST)
+Received: by 10.58.156.10 with HTTP; Sat, 15 Feb 2014 16:33:21 -0800 (PST)
+Date: Sat, 15 Feb 2014 18:33:21 -0600
+Message-ID: <CAAxEZd9taSo3=Hi3X3_0MZ-4R3=+ewLwxx62rCpJ7SJbcFkFgw@mail.gmail.com>
+Subject: football.db - Pre-Built SQLite Database for Download - Release v2014.02.15
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  FYI: I've tried out the GitHub releases functionality and uploaded a
+pre-built football.db using SQLite (~ 1.3 Megs).  You can get
+(download) a copy @ github.com/openfootball/build/releases
+
+   Let me know if there's any interest in pre-built database releases.
+Or if you know any other options (other than GitHub releases) for
+distributions of binaries. Cheers.
+

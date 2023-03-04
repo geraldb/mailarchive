@@ -1,0 +1,124 @@
+From 170852876288@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 159536644096
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,adf2072367aa369f
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.43.77 with SMTP id u13mr3831lal.7.1408462097985;
+        Tue, 19 Aug 2014 08:28:17 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.180.93.135 with SMTP id cu7ls560351wib.1.gmail; Tue, 19 Aug
+ 2014 08:28:17 -0700 (PDT)
+X-Received: by 10.180.218.170 with SMTP id ph10mr716935wic.1.1408462097600;
+        Tue, 19 Aug 2014 08:28:17 -0700 (PDT)
+Return-Path: <eckhard.licher@googlemail.com>
+Received: from mail-lb0-x22c.google.com (mail-lb0-x22c.google.com [2a00:1450:4010:c04::22c])
+        by gmr-mx.google.com with ESMTPS id nw2si449630lbb.0.2014.08.19.08.28.17
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 19 Aug 2014 08:28:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of eckhard.licher@googlemail.com designates 2a00:1450:4010:c04::22c as permitted sender) client-ip=2a00:1450:4010:c04::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of eckhard.licher@googlemail.com designates 2a00:1450:4010:c04::22c as permitted sender) smtp.mail=eckhard.licher@googlemail.com;
+       dkim=pass header.i=@googlemail.com
+Received: by mail-lb0-f172.google.com with SMTP id z11so5649111lbi.17
+        for <openmundi@googlegroups.com>; Tue, 19 Aug 2014 08:28:17 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlemail.com; s=20120113;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references
+         :in-reply-to:content-type;
+        bh=QE/pYLIQk+JcxnGPAF+9r+D83+nG3XJxAJafBJefPT4=;
+        b=PZy45Zr/YwNBMGaLkicrnDdt/e/w6lTObAqKmz7UR5sswN0w+lZ9kcN2KLhexDa0vS
+         53EywwOgHHrOq1tQZcclweRze3fwjJqutOBspTtac1ijcI47aGcfGXco++YQ0i2HZr3G
+         pElSOCXmf91oCE2PfsLvRMaY86vjU6JFpiLx1bs8cyfNWQUzG1NE3l3tx1xruatEOpIO
+         k4Ns4S8rOgYQUbG8a7VPf8b77jm9EH7fKrHS+SwgR2Tqg5I7gQRWV/8qBGBztc0yAM1R
+         5CvBNA6b+c9DAGw+/KzN/eNoMSemO8UxRM78xcKfJZ1LKsSoIZ3oToCQChn1G8dDnB9r
+         0d2g==
+X-Received: by 10.152.29.135 with SMTP id k7mr37395574lah.14.1408462097507;
+        Tue, 19 Aug 2014 08:28:17 -0700 (PDT)
+Return-Path: <eckhard.licher@googlemail.com>
+Received: from [192.168.2.44] (frnk-5f74de82.pool.mediaWays.net. [95.116.222.130])
+        by mx.google.com with ESMTPSA id kz10sm3378573lab.11.2014.08.19.08.28.15
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 19 Aug 2014 08:28:16 -0700 (PDT)
+Message-ID: <53F36D0E.2010207@googlemail.com>
+Date: Tue, 19 Aug 2014 17:28:14 +0200
+From: Eckhard <eckhard.licher@googlemail.com>
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Thunderbird/31.0
+MIME-Version: 1.0
+To: openmundi@googlegroups.com
+Subject: Re: Feature request
+References: <0fa756e5-06af-41b4-8119-ee9cee864a43@googlegroups.com> <CAAxEZd80juUdSSF7=anthkWRD6i8mg+mO8LrcS_+_CfPe4R62A@mail.gmail.com>
+In-Reply-To: <CAAxEZd80juUdSSF7=anthkWRD6i8mg+mO8LrcS_+_CfPe4R62A@mail.gmail.com>
+Content-Type: multipart/alternative;
+ boundary="------------040606060609070509010607"
+
+This is a multi-part message in MIME format.
+--------------040606060609070509010607
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Gerald,
+
+are you plannig to include a header section in the update?
+
+The header, if included, should contain
+
+  * name of the territory in question, e.g. Virgin Islands
+  * name of parent region, e.g. Central America and Caribbean
+  * dependency, e.g (territory of the US)
+  * //date of last update, e.g Page last updated on June 20, 2014
+  * fips code, e.g., VQ
+  * date & time when the json file was produced
+
+see for reference 
+https://www.cia.gov/library/publications/the-world-factbook/geos/vq.html
+
+No problem if these additions would take a few days more to implement, 
+if not weeks. I am in no hurry.
+
+Cheerio
+
+--------------040606060609070509010607
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+    <div class="moz-text-html" lang="x-unicode"> Gerald,<br>
+      <br>
+      are you plannig to include a header section in the update?<br>
+      <br>
+      The header, if included, should contain<br>
+      <ul>
+        <li>name of the territory in question, e.g. <span
+            class="region_name1">Virgin Islands</span></li>
+        <li><span class="region_name1">name of parent region, e.g.
+            Central America and Caribbean</span></li>
+        <li><span class="region_name1">dependency, e.g </span><span
+            class="region_name1">(territory of the US)</span></li>
+        <li><span class="region_name1"><em></em>date of last update, e.g
+          </span><span class="region_name1">Page last updated on June
+            20, 2014 </span></li>
+        <li><span class="region_name1">fips code, e.g., VQ</span></li>
+        <li><span class="region_name1">date &amp; time when the json
+            file was produced </span></li>
+      </ul>
+      <span class="region_name1"> </span>see for reference <a
+        class="moz-txt-link-freetext"
+href="https://www.cia.gov/library/publications/the-world-factbook/geos/vq.html">https://www.cia.gov/library/publications/the-world-factbook/geos/vq.html</a><br>
+      <br>
+      No problem if these additions would take a few days more to
+      implement, if not weeks. I am in no hurry.<br>
+      <br>
+      Cheerio<br>
+    </div>
+  </body>
+</html>
+
+--------------040606060609070509010607--
+

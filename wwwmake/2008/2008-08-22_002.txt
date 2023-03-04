@@ -1,0 +1,52 @@
+From 88063606784@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 82657148928
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,9c647c4e74c87091
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+Received: by 10.100.239.11 with SMTP id m11mr115395anh.14.1219403047226; Fri, 
+	22 Aug 2008 04:04:07 -0700 (PDT)
+Date: Fri, 22 Aug 2008 04:04:07 -0700 (PDT)
+In-Reply-To: <4dcd15a90808181144u67791a4bj7681c0509af0b028@mail.gmail.com>
+X-IP: 92.224.4.37
+References: <4dcd15a90808181144u67791a4bj7681c0509af0b028@mail.gmail.com>
+User-Agent: G2/1.0
+X-Google-Token: Whw_BgwAAADfRz0pLPoNx39Jy2EyneQj
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.0.1) 
+	Gecko/2008072820 Firefox/3.0.1,gzip(gfe),gzip(gfe)
+Message-ID: <ef1466c0-c04c-48c6-88c8-da0ca790ec78@a70g2000hsh.googlegroups.com>
+Subject: Re: Encoding
+From: aycko <ayckoster@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+X-Google-Approved: geraldbauer2007@gmail.com via email at 2008-08-22 15:12:40
+
+I need the same feature. But I would go further and would propose to
+use a file which is yielded in the header. Projectwide and for
+different slides.
+
+The rails convention seem reasonable. If there is a file slide.head
+and no further specifications this file should just be yielded into
+the html head. If there is a file slidename.head then only
+slidename.slides should be affected.
+
+This is most effective with the least code changes.
+
+On 18 Aug., 20:44, "Alex Boisvert" <alex.boisv...@gmail.com> wrote:
+> Hi everybody,
+>
+> Is there a way to set the character encoding in the resulting HTML file
+> using slideshow? =A0I'd like to explicitly set it to UTF-8 to avoid brows=
+er
+> guessing (and getting it wrong).
+>
+> Right now I'm editing the HTML after generation but I would rather set th=
+is
+> as a property in the .textile file.
+>
+> thanks,
+> alex
+

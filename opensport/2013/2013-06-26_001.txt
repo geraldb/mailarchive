@@ -1,0 +1,69 @@
+From 110253572096@xxx Tue Jun 16 00:17:25 +0000 2015
+X-GM-THRID: 107437096960
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,2c1ceb3421c5a7e0,start
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+X-Received: by 10.180.207.44 with SMTP id lt12mr680274wic.5.1372230265487;
+        Wed, 26 Jun 2013 00:04:25 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.83.40 with SMTP id n8ls1245412wiy.19.canary; Wed, 26 Jun
+ 2013 00:04:25 -0700 (PDT)
+X-Received: by 10.181.11.130 with SMTP id ei2mr5550951wid.7.1372230265180;
+        Wed, 26 Jun 2013 00:04:25 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x231.google.com (mail-wi0-x231.google.com [2a00:1450:400c:c05::231])
+        by gmr-mx.google.com with ESMTPS id bs9si387862wib.0.2013.06.26.00.04.25
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 26 Jun 2013 00:04:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) client-ip=2a00:1450:400c:c05::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-wi0-f177.google.com with SMTP id ey16so1522364wid.10
+        for <opensport@googlegroups.com>; Wed, 26 Jun 2013 00:04:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=dFafhsyCW4rQiFm8nTkIjK546lameMH8FC/WAs+Gvho=;
+        b=Guh1GHI0SzSlExeh/kZXSk3ilCOC0JXnmO+BH3PVEJV3p3HkqXeWmBeLynOOt5bXDI
+         MIfmYpjG4M65NWkUubCxNVs6lxcEq4TqonwCL9rBiVKBxWVex3xhy63UrrswKwQvI12G
+         g6CVGfjtyBkqKeyE3m6T+58z4cMeUnqe+kSoazspldtYPm+Gbt62AXEUfmamb1dk7wlO
+         xEzz/9ela88E+2Q61E9bMDiBUSTPbvjPysabQDZADSOc+mC59ahcXL550BO2vXEam41b
+         fXokTrNAdxozFodkPI56iRNwnW2pSjxJy17LQElUrVqMK24Xb1tMbQ71ZSIXEqlK9BHM
+         WDxg==
+MIME-Version: 1.0
+X-Received: by 10.180.73.81 with SMTP id j17mr1571712wiv.51.1372230265111;
+ Wed, 26 Jun 2013 00:04:25 -0700 (PDT)
+Received: by 10.216.54.202 with HTTP; Wed, 26 Jun 2013 00:04:24 -0700 (PDT)
+Date: Wed, 26 Jun 2013 09:04:24 +0200
+Message-ID: <CAAxEZd9gKjr4ucWXAY0+s4+KJ15RhCE_PNwOKaDLxsZu1392-A@mail.gmail.com>
+Subject: football.db Country Repos - Austria, Germany (Bundesliga, DFB Cup etc.)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  The plain text football fixtures that you can read with the sportdb
+gem now sports for easy management and contributions country repos.
+The first repos include
+
+  - Austria (=D6sterreich) [1] and
+  - Germany (Deutschland) [2].
+
+  See the Deutsche Bundesliga 2013/14 [3] match schedule, as an example.
+
+Cheers.
+
+[1] https://github.com/openfootball/at-austria
+[2] https://github.com/openfootball/de-deutschland
+[3] https://github.com/openfootball/de-deutschland/blob/master/2013_14/bl.t=
+xt
+

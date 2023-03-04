@@ -1,0 +1,94 @@
+From 6199307551501189120@xxx Sun Sep 27 21:19:27 +0000 2015
+X-GM-THRID: 6199307551146770432
+X-Received: by 10.182.28.100 with SMTP id a4mr15489823obh.20.1443388767526;
+        Sun, 27 Sep 2015 14:19:27 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.107.39.198 with SMTP id n189ls1514365ion.60.gmail; Sun, 27 Sep
+ 2015 14:19:27 -0700 (PDT)
+X-Received: by 10.66.228.67 with SMTP id sg3mr8718597pac.36.1443388767374;
+        Sun, 27 Sep 2015 14:19:27 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x233.google.com (mail-io0-x233.google.com. [2607:f8b0:4001:c06::233])
+        by gmr-mx.google.com with ESMTPS id o7si1140672igp.1.2015.09.27.14.19.27
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 27 Sep 2015 14:19:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) client-ip=2607:f8b0:4001:c06::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x233.google.com with SMTP id b144so157684234iof.1
+        for <openmundi@googlegroups.com>; Sun, 27 Sep 2015 14:19:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=aCbZfg015oZfviGzyNuFforCkgOgN9pMqP4NsJTARzo=;
+        b=Z3JnDySKBoMuouSlkBd+bpD4wvNEPJNLQs0+SLCMXBc4PvGyzSaeB4IZ1iYtvm8Dk7
+         o+PPDg2JyxtmuGITYhdz8Ro0jZK8KygiKn1ZRM1r0BtJIEb377ZpMd/LxhCTFf2hLVRj
+         3WZktEma6i7e57p+7X2PAvwuVai0Cdw2RBBvPCa6XYgrG5L16hol7dS3U177QKIc33xT
+         XTTk1wAmOboYgmP/L4MtDFAdDwB0wO4Q3Mp6awl2A/oNmNbmav4OZBJDRLkIP/W2XFP4
+         o6cU5g4DbNJfYdXQo1ln0fT52G7gOFAiKrp6YnGDkxu5kf27BppzxsvhFh99B1isre1G
+         Vt+Q==
+MIME-Version: 1.0
+X-Received: by 10.107.25.143 with SMTP id 137mr18578104ioz.52.1443388767240;
+ Sun, 27 Sep 2015 14:19:27 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Sun, 27 Sep 2015 14:19:27 -0700 (PDT)
+Date: Sun, 27 Sep 2015 23:19:27 +0200
+Message-ID: <CAAxEZd8xxsBK9qO56qPPK3ZcP8XvS_6oMbj3FL7cC_i4WpQhbQ@mail.gmail.com>
+Subject: factbook/codes.csv - All 261 World Factbook Codes, Names, Regions, Categories
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   For easy (re)use I've put together all 261 world factbook codes
+with all "official" names, regions and categories in a single
+comma-separated values (CSV) file, that is, codes.csv [1]. Example:
+
+    Code,Name,Category,Region
+    af,Afghanistan,Countries,South Asia
+    al,Albania,Countries,Europe
+    ag,Algeria,Countries,Africa
+    ac,Antigua and Barbuda,Countries,Central America and Caribbean
+    ar,Argentina,Countries,South America
+    am,Armenia,Countries,Middle East
+    as,Australia,Countries,Australia-Oceania
+    ...
+
+   Note: The next version of the factbook gem (library) has the
+codes.csv built-in plus a Factbook::Codes class that lets you slice
+and dice all codes. For examples, see the test_codes.rb script [2].
+Example:
+
+    assert_equal 261, Factbook.codes.size
+
+    assert_equal 195, Factbook.codes.countries.size
+    assert_equal  52, Factbook.codes.dependencies.size
+    assert_equal   5, Factbook.codes.category('Oceans').size
+    assert_equal   1, Factbook.codes.category('World').size
+    assert_equal   2, Factbook.codes.others.size
+    assert_equal   6, Factbook.codes.misc.size
+
+    assert_equal  55, Factbook.codes.europe.size
+    assert_equal   9, Factbook.codes.south_asia.size
+    assert_equal   6, Factbook.codes.central_asia.size
+    assert_equal  22, Factbook.codes.east_n_souteast_asia.size
+    assert_equal  19, Factbook.codes.middle_east.size
+    assert_equal  56, Factbook.codes.africa.size
+    assert_equal   7, Factbook.codes.north_america.size
+    assert_equal  33, Factbook.codes.central_america_n_caribbean.size
+    assert_equal  14, Factbook.codes.south_america.size
+    assert_equal  30, Factbook.codes.australia_oceania.size
+    assert_equal   4, Factbook.codes.antartica.size
+    assert_equal   5, Factbook.codes.region('Oceans').size
+    assert_equal   1, Factbook.codes.region('World').size
+    ...
+
+   Cheers.
+
+[1] github.com/worlddb/factbook/blob/master/data/codes.csv
+[2] github.com/worlddb/factbook/blob/master/test/test_codes.rb
+

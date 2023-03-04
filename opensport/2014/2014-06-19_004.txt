@@ -1,0 +1,59 @@
+From 1369620611072@xxx Tue Jun 16 00:16:58 +0000 2015
+X-GM-THRID: 1354774872064
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,19595499e5ad9212
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.72.97 with SMTP id c1mr290631wiv.2.1403168867879;
+        Thu, 19 Jun 2014 02:07:47 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.206.66 with SMTP id lm2ls84587lac.88.gmail; Thu, 19 Jun
+ 2014 02:07:47 -0700 (PDT)
+X-Received: by 10.152.87.226 with SMTP id bb2mr292273lab.5.1403168867410;
+        Thu, 19 Jun 2014 02:07:47 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x232.google.com (mail-we0-x232.google.com [2a00:1450:400c:c03::232])
+        by gmr-mx.google.com with ESMTPS id h4si1409025wib.2.2014.06.19.02.07.47
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 19 Jun 2014 02:07:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::232 as permitted sender) client-ip=2a00:1450:400c:c03::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f178.google.com with SMTP id x48so1998501wes.37
+        for <opensport@googlegroups.com>; Thu, 19 Jun 2014 02:07:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=rggR6a/Q/g7Md4lw2oLTnV2+71f+CuABKvVTyQTSvig=;
+        b=lyI+WdC+DjTNNVbW78RmddO1v+bOLz7BVp95odmgVti4/NGu0wFEq5nIR0IsdeVkxq
+         kvHymsY5gdGxJr7QtbLuKb6Odw+tb4zSIBIkJH75jeLomc/O88AqVXoY5MD9eVFRk22C
+         wdM0/bjP4S/d8S3D0MCI/DN46ZepGBf8f24al647fw0yC7SLcbHmdDNF4GTrEuajAhpK
+         FaD5z8su3Z5Y3Ccg0nV5cvxOQYMsPk2zggTGDHBe2KT3hti2LEPdoSf65hrZbgQENtMA
+         wkoW+7LR8pSK5GRH8rsoipnFPTBx3jhXbimsNKhD/hRXYk7Y0tY8uvjmk7vejzWccGiv
+         WjRw==
+MIME-Version: 1.0
+X-Received: by 10.180.92.161 with SMTP id cn1mr4575443wib.21.1403168867321;
+ Thu, 19 Jun 2014 02:07:47 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Thu, 19 Jun 2014 02:07:47 -0700 (PDT)
+In-Reply-To: <4ba96924-77e0-49fe-92d3-d3bbdc91d03a@googlegroups.com>
+References: <4ba96924-77e0-49fe-92d3-d3bbdc91d03a@googlegroups.com>
+Date: Thu, 19 Jun 2014 11:07:47 +0200
+Message-ID: <CAAxEZd_hhRE9FFRidOfSnTczca2khwJoouW8MjF+6B5NdVq6Gg@mail.gmail.com>
+Subject: Re: [opensport] update prebuild db
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   One way to update the database is to build yourself a new
+up-to-date copy using the build script and updated datasets. See the
+FAQ [1] entry on "How can I get started building my own up-to-date
+copy using the latest data sets?"  Cheers.
+
+[1] openfootball.github.io/questions.html
+

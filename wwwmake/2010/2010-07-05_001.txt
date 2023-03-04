@@ -1,0 +1,149 @@
+From 706637463552@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 706394193920
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,5dcb490a89b962d,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,CP1252
+Received: by 10.90.55.17 with SMTP id d17mr2547170aga.12.1278361693425;
+        Mon, 05 Jul 2010 13:28:13 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.90.233.16 with SMTP id f16ls1342162agh.4.p; Mon, 05 Jul 2010 
+	13:28:12 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.91.42.38 with SMTP id u38mr306440agj.20.1278361691998; Mon, 05 
+	Jul 2010 13:28:11 -0700 (PDT)
+Received: by w31g2000yqb.googlegroups.com with HTTP; Mon, 5 Jul 2010 13:28:11 
+	-0700 (PDT)
+Date: Mon, 5 Jul 2010 13:28:11 -0700 (PDT)
+X-IP: 93.82.42.88
+User-Agent: G2/1.0
+X-Google-Token: ENuAyeEErCLmQ3SPjn80
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.6) 
+	Gecko/20100628 Ubuntu/10.04 (lucid) Firefox/3.6.6,gzip(gfe)
+Message-ID: <7f55e81e-6ad5-4a14-9c65-5a59a15531c7@w31g2000yqb.googlegroups.com>
+Subject: Slide Show (S9) Gem Updated (v0.9) - Slides w/o Title, Two-Column 
+	Layout, Google Analytics Helper and Much More
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=windows-1252
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I uploaded a new slideshow gem version (that is, v0.9). What's new?
+
+  * Added support for !SLIDE (and alternative syntax %slide)
+  * Added support for comments using %, %begin/%end and %end
+  * Added more helpers (step, google_analytics, left/right for two-
+column layouts)
+  * Added support for Django-style expressions and statements as an
+alternative to <% %>
+  * Added support for configuring text filters in slideshow.yml
+  * Added support for configuring Markdown engines in slideshow.yml
+  * Added fetch shortcuts (configure in slideshow.yml)
+  * Added support for template manifests w/o .txt extensions
+  * Removed old options -s5,=97fullerscreen (use -t s5blank or -t
+fullerscreen instead)
+
+  I've tested the new features with a new sample slideshow, that is,
+Jim Weirich's "10 Things Every Java Programmer Should Know About Ruby"
+talk.
+
+  You can find the slides @ http://slideshow.rubyforge.org/10things.html
+  And the PDF version @ http://slideshow.rubyforge.org/10things.pdf.html
+  And the generated PDF @ http://slideshow.rubyforge.org/10things.pdf
+
+ The source is online @ http://github.com/geraldb/slideshow/blob/master/sam=
+ples/10things.text
+
+ Allow me to highlight some features:
+
+  ** Use !SLIDE for slides with no title. Example:
+
+   !SLIDE
+
+      $ ri Array
+      ----------------------------------------------------------
+Module: Array
+            Arrays are ordered, integer-indexed collections of any
+object.
+
+
+
+   ** Use % for comments anywhere (including headers) and %begin/%end
+for multi-line comments. Example:
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Start off with some headers
+
+    title: 10 Things Every Java Programmer Should Know About Ruby
+    author: Jim Weirich
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Let's go. The presentation starts here
+
+    # 10 Things Every Java Programmer Should Know About Ruby
+
+    Jim Weirich
+    {: .center}
+
+
+   ** New helpers such as Google Analytics tracker. Just add:
+
+    {{ google_analytics :code =3D> 'UA-YOUR-CODE-HERE' }}
+
+
+   ** left/right helpers for two-column layout. Example:
+
+    {% left %}
+
+    ### Java is
+
+    * Strongly,
+    * Statically,
+    * Manifestly
+
+    typed.
+    {% end %}
+
+    {% right %}
+
+    ### Ruby is
+
+    * Strongly,
+    * Dynamically,
+    * Implicitly
+
+    typed.
+    {% end %}
+
+
+ ** Fetch template packs with shortcuts (configured in slideshow.yml)
+Example:
+
+  Instead of
+
+    slideshow -f http://github.com/geraldb/slideshow-s6-blank/raw/master/s6=
+blank.txt
+
+  Just use
+
+    slideshow -f s6blank
+
+
+ ** Use template manifests without .txt extensions
+
+   Another shortcut. If you use your own templates you can now pass
+along the manifest without .txt extension.
+
+   Instead of
+
+     slideshow -t s6blank.txt tutorial.textile
+
+   Just use
+
+     slideshow -t s6blank tutorial.textile
+
+
+ That's it. Questions and comments welcome. Cheers. Gerald
+

@@ -1,0 +1,62 @@
+From 199277674496@xxx Sat Dec 13 20:08:19 +0000 2014
+X-GM-THRID: 191974342656
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,3370afe0db84b32b
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.87.237 with SMTP id bb13mr251248lab.3.1408910050640;
+        Sun, 24 Aug 2014 12:54:10 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.181.13.167 with SMTP id ez7ls194574wid.48.canary; Sun, 24 Aug
+ 2014 12:54:10 -0700 (PDT)
+X-Received: by 10.181.13.166 with SMTP id ez6mr862558wid.3.1408910050362;
+        Sun, 24 Aug 2014 12:54:10 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x231.google.com (mail-wi0-x231.google.com [2a00:1450:400c:c05::231])
+        by gmr-mx.google.com with ESMTPS id fj7si298386wib.3.2014.08.24.12.54.10
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 24 Aug 2014 12:54:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) client-ip=2a00:1450:400c:c05::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f177.google.com with SMTP id ho1so1651005wib.16
+        for <openmundi@googlegroups.com>; Sun, 24 Aug 2014 12:54:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=rDp9EaD9G3JsxxsLUN3TQG4Xo14AEaUgNWrxTd4Mxh0=;
+        b=EUNIrS09XIldd8YSdxtKEVsiK3Hk/i3LkBo86LSR2+RYJM+wASmJTfKzRlk2ottD6t
+         QspnBgRpIjwMupzJEN8Zteq4iQbwyajxG7/NTmKFoGGtPK55B6unhakRzscLiaTOT0my
+         gyd/G69HUJHQFUSe+2f9nsrRGNzEYDPT7S9JWovVA7Xh9JP867KyYJjum5LQTtBRXE05
+         a8PLQd1TfD0p3uAOKHJwjWzd20L7qlWSVi8yU5IB4LeeHf9cHnoJsZv+stwhhAV0Th4S
+         2Mcm7sAywcUMU/C1wX7YgmlwbEh9Ck29SqB1nA/n+ctnWM5hOsf2gBPyHj/hJHl4fDfr
+         9PpQ==
+MIME-Version: 1.0
+X-Received: by 10.180.189.4 with SMTP id ge4mr11140594wic.25.1408910050261;
+ Sun, 24 Aug 2014 12:54:10 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Sun, 24 Aug 2014 12:54:10 -0700 (PDT)
+In-Reply-To: <9e6edbbb-f1ea-44d4-9402-1ce8c74a7e6a@googlegroups.com>
+References: <CAAxEZd9SDpRYfyVqJaLDTo8p+PjMCzPGT3+Nq=yg5OOpsYhUPw@mail.gmail.com>
+	<9e6edbbb-f1ea-44d4-9402-1ce8c74a7e6a@googlegroups.com>
+Date: Sun, 24 Aug 2014 21:54:10 +0200
+Message-ID: <CAAxEZd86O7Pw-F1+V+=abg52EpX1vPGiuY2fcfYg8kzNUfQ_DA@mail.gmail.com>
+Subject: Re: factbook Update - Includes Header n Long Form Categry / Field
+ Name Option
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Eckhard Licher <eckhard.licher@googlemail.com>
+Cc: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Thanks for the update. Looking good. Thanks for the offer about
+joining forces. As a fact we already work together sort of ;-) that's
+how open source works. There isn't much ceremony needed.
+
+   I'd suggest starting with your own repo(s) and than we can see how
+it all fits together. Keep it up. Cheers.
+

@@ -1,0 +1,109 @@
+From 6237433222814236672@xxx Fri Jan 08 15:06:32 +0000 2016
+X-GM-THRID: 6237377165412794368
+Date: Fri, 8 Jan 2016 07:06:31 -0800 (PST)
+From: Football 365 <thiennhan1080@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <887136ea-fe8e-40ba-82ed-d0cfdf026811@googlegroups.com>
+In-Reply-To: <CAAxEZd8sKLkn_atSq2_=cToDrQKFxK_TzqbfppUNpfvC=uKbGA@mail.gmail.com>
+References: <9bba312a-2310-4124-a105-a1689a9663bc@googlegroups.com>
+ <CAAxEZd8sKLkn_atSq2_=cToDrQKFxK_TzqbfppUNpfvC=uKbGA@mail.gmail.com>
+Subject: Re: [opensport] Can't build my own football.db
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1204_2020663463.1452265592107"
+X-Google-Token: EPegv7QFK1gFmWcp_ic0
+X-Google-IP: 116.98.161.13
+
+------=_Part_1204_2020663463.1452265592107
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1205_877284590.1452265592107"
+
+------=_Part_1205_877284590.1452265592107
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Using datafiles to get my own database, I have result like this .
+
+<https://lh3.googleusercontent.com/--JBd-WAbhqI/Vo_PcXQz8wI/AAAAAAAAAIE/od7=
+wDXcgHCA/s1600/Untitled.png>
+
+
+To update the standings tables / data you will need to use a (build)=20
+script (in Ruby).
+How do I run this script? I don't know anything about ruby, I just wanna=20
+build this database to import to mysql server. Can you make an example for=
+=20
+me? Thanks so much
+
+V=C3=A0o 18:42:00 UTC+7 Th=E1=BB=A9 S=C3=A1u, ng=C3=A0y 08 th=C3=A1ng 1 n=
+=C4=83m 2016, Gerald Bauer =C4=91=C3=A3 vi=E1=BA=BFt:
+>
+> Hello,=20
+>
+> > But my standing table is empty. How can I update my standing table data=
+.=20
+>
+>   To update the standings tables / data you will need to use a (build)=20
+> script (in Ruby). Example:=20
+>
+>   world_2014 =3D SportDb::Model::Event.find_by!( key: 'world.2014' )=20
+>
+>   st =3D SportDb::Model::EventStanding.create!( event: world_2014 )=20
+>   st.recalc!=20
+>
+>   world_2014.groups.each do |g|=20
+>    st =3D SportDb::Model::GroupStanding.create!( group: g )=20
+>    st.recalc!=20
+>   end=20
+>
+>
+>   Cheers.=20
+>
+
+------=_Part_1205_877284590.1452265592107
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Using datafiles to get my own database, I have result like=
+ this .<p class=3D"separator" style=3D"text-align: center; clear: both;"><a=
+ imageanchor=3D"1" href=3D"https://lh3.googleusercontent.com/--JBd-WAbhqI/V=
+o_PcXQz8wI/AAAAAAAAAIE/od7wDXcgHCA/s1600/Untitled.png" style=3D"margin-left=
+: 1em; margin-right: 1em;"><img src=3D"https://lh3.googleusercontent.com/--=
+JBd-WAbhqI/Vo_PcXQz8wI/AAAAAAAAAIE/od7wDXcgHCA/s320/Untitled.png" border=3D=
+"0" width=3D"320" height=3D"72"></a></p><p class=3D"separator" style=3D"tex=
+t-align: center; clear: both;"><br></p><div>To update the standings tables =
+/ data you will need to use a (build)=C2=A0<br>script (in Ruby).</div><div>=
+How do I run this script? I don&#39;t know anything about ruby, I just wann=
+a build this database to import to mysql server. Can you make an example fo=
+r me? Thanks so much<br><br>V=C3=A0o 18:42:00 UTC+7 Th=E1=BB=A9 S=C3=A1u, n=
+g=C3=A0y 08 th=C3=A1ng 1 n=C4=83m 2016, Gerald Bauer =C4=91=C3=A3 vi=E1=BA=
+=BFt:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8e=
+x;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&gt; But my standing table is empty. How can I update my standing table=
+ data.
+<br>
+<br>=C2=A0 To update the standings tables / data you will need to use a (bu=
+ild)
+<br>script (in Ruby). Example:
+<br>
+<br>=C2=A0 world_2014 =3D SportDb::Model::Event.find_by!<wbr>( key: &#39;wo=
+rld.2014&#39; )
+<br>
+<br>=C2=A0 st =3D SportDb::Model::EventStanding.<wbr>create!( event: world_=
+2014 )
+<br>=C2=A0 st.recalc!
+<br>
+<br>=C2=A0 world_2014.groups.each do |g|
+<br>=C2=A0 =C2=A0st =3D SportDb::Model::GroupStanding.<wbr>create!( group: =
+g )
+<br>=C2=A0 =C2=A0st.recalc!
+<br>=C2=A0 end
+<br>
+<br>
+<br>=C2=A0 Cheers.
+<br></blockquote></div></div>
+------=_Part_1205_877284590.1452265592107--
+
+------=_Part_1204_2020663463.1452265592107--
+

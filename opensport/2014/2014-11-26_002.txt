@@ -1,0 +1,86 @@
+From 2308742053888@xxx Tue Jun 16 00:16:48 +0000 2015
+X-GM-THRID: 2254972125184
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fdd82ec609b6c4e4
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.86.193 with SMTP id v1mr9780189icl.10.1416997749953;
+        Wed, 26 Nov 2014 02:29:09 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.141.229 with SMTP id rr5ls1292606igb.34.gmail; Wed, 26 Nov
+ 2014 02:29:09 -0800 (PST)
+X-Received: by 10.50.33.37 with SMTP id o5mr330550igi.3.1416997749666;
+        Wed, 26 Nov 2014 02:29:09 -0800 (PST)
+X-Google-Doc-Id: d92d2d0f53425af6
+X-Google-Web-Client: true
+Date: Wed, 26 Nov 2014 02:29:08 -0800 (PST)
+From: anonfunction@gmail.com
+To: opensport@googlegroups.com
+Message-Id: <7e879a78-59a5-4b6d-9b86-59b949486e69@googlegroups.com>
+In-Reply-To: <CAAxEZd-JtkE6HpmeFDn34c8G52oHfycH+W=TttSmphPkqwrSkw@mail.gmail.com>
+References: <923ec44d-6a0f-4f21-903a-0835e94f1b4c@googlegroups.com>
+ <bee9b9b6-ca46-4101-9b8e-44332ac9e364@googlegroups.com>
+ <05ebac69-a367-49a7-ae47-91f4fbaac2dd@googlegroups.com>
+ <CAAxEZd8BYxG4v-LZD_7nxVfB=t31w9jt7F0zrKYZ9gpmLWjv9Q@mail.gmail.com>
+ <3fa255f0-d6d2-4265-a6a3-01f920a0b8a0@googlegroups.com>
+ <CAAxEZd_ZkKTAtN0sW+V54SsNp3CHBJR8h8CfK_NtqO77bB=+3g@mail.gmail.com>
+ <41601d23-dd94-4943-b34b-d3b0af78de8e@googlegroups.com>
+ <CAAxEZd-JtkE6HpmeFDn34c8G52oHfycH+W=TttSmphPkqwrSkw@mail.gmail.com>
+Subject: Re: [opensport] Re: Cannot build football.db with world cup data
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3626_1982883527.1416997748803"
+X-Google-Token: EPTW1qMFotNnPUX6nUs0
+X-Google-IP: 67.174.196.203
+
+------=_Part_3626_1982883527.1416997748803
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3627_1672204143.1416997748803"
+
+------=_Part_3627_1672204143.1416997748803
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you.
+
+Other world cups work so it's got to be the data just isn't there even 
+after I did a clean install of the latest on GitHub as per above. I know 
+the official API used to have the scores, but like I said it's been down 
+with an Internal Server Error. 
+
+On Monday, November 24, 2014 3:43:20 AM UTC-8, Gerald Bauer wrote:
+>
+> Hello, 
+>
+> >  the matches are returning null for the scores. 
+>
+>    You might check the database first - check the games tables - are 
+> the score1,score2,score1et,etc.stored in the database? 
+>
+>    If yes, than the import for the scores worked - then the error must 
+> be in the Ruby service code - check if the field/attribue names 
+> match). Good luck. Thanks for trying. 
+>
+>   Cheers. 
+>
+
+------=_Part_3627_1672204143.1416997748803
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr"><div>Thank you.</div><div><br></div><div>Other world cups work so it's got to be the data just isn't there even after I did a clean install of the latest on GitHub as per above. I know the official API used to have the scores, but like I said it's been down with an Internal Server Error.&nbsp;</div><br>On Monday, November 24, 2014 3:43:20 AM UTC-8, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&gt; &nbsp;the matches are returning null for the scores.
+<br>
+<br>&nbsp; &nbsp;You might check the database first - check the games tables - are
+<br>the score1,score2,score1et,etc.<wbr>stored in the database?
+<br>
+<br>&nbsp; &nbsp;If yes, than the import for the scores worked - then the error must
+<br>be in the Ruby service code - check if the field/attribue names
+<br>match). Good luck. Thanks for trying.
+<br>
+<br>&nbsp; Cheers.
+<br></blockquote></div>
+------=_Part_3627_1672204143.1416997748803--
+------=_Part_3626_1982883527.1416997748803--
+

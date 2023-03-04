@@ -1,0 +1,66 @@
+From 927608078336@xxx Tue Jun 16 00:17:06 +0000 2015
+X-GM-THRID: 923854176256
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,d32db7d7f6a63723,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.6.97 with SMTP id z1mr2295130laz.0.1401618797994;
+        Sun, 01 Jun 2014 03:33:17 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.26.4 with SMTP id h4ls244759lag.58.gmail; Sun, 01 Jun 2014
+ 03:33:17 -0700 (PDT)
+X-Received: by 10.112.49.229 with SMTP id x5mr109802lbn.14.1401618797511;
+        Sun, 01 Jun 2014 03:33:17 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22c.google.com (mail-wi0-x22c.google.com [2a00:1450:400c:c05::22c])
+        by gmr-mx.google.com with ESMTPS id s1si323182wiw.3.2014.06.01.03.33.17
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 01 Jun 2014 03:33:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22c as permitted sender) client-ip=2a00:1450:400c:c05::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22c as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f172.google.com with SMTP id hi2so3108043wib.11
+        for <opensport@googlegroups.com>; Sun, 01 Jun 2014 03:33:17 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=ZPzqktZbzTgOi2IO15fStSHBk7hglerZFTm75L9f148=;
+        b=uNIV0EtyoUjwkLJD2Y2qt7QKKpfERxGsLH+J62htEMK5epCJ6CDL+0g5gkWw9TLhyB
+         Hq+QP1VrEE6fBkI0gmBHEjREMxiU7Mc6WdNPRgJCBOoFB3Autilwf8nGwfz5Dxb8L1lt
+         Es2+skSaFJKsj+XFrBEsS3+Z+J5CsZiA7h44xvnaDoPtjTOS/XmBffnsIbiz3aaoqq19
+         GWJ4ym1s2atzWs6lqweNN5NrIlUCv8ZAgZvzxp6JkM9DRksFNk5J20Vts37oslorR4FI
+         8WWeBa3KrxHyM470GGHuUjPLKW6/sbdWLJTAP5mYq8TgC17Pin0X75bhUNpR+sei6Ibh
+         K6pQ==
+MIME-Version: 1.0
+X-Received: by 10.180.182.115 with SMTP id ed19mr13268875wic.29.1401618797404;
+ Sun, 01 Jun 2014 03:33:17 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Sun, 1 Jun 2014 03:33:17 -0700 (PDT)
+Date: Sun, 1 Jun 2014 12:33:17 +0200
+Message-ID: <CAAxEZd9j_7b5+8XCQk8R8PrJeG0f4EGycXMOG1ALBLg=aXEjxA@mail.gmail.com>
+Subject: World Cup 2014 Match Picks/Predictions (w/ Open Source Sportbook
+ Rails Web App)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've reconfigured the sportbook [1] - an open source Ruby on Rails
+web app for match picks/predictions - for the World Cup 2014 in Brazil
+(11 days an counting!).
+
+  The sportdb gem lets you load the plain text fixtures into your SQL
+database of choice; see the worldcup.db [2] fixtures in plain text or
+served up via a web app [3] or try the World Cup Brazil 2014 picks
+demo [4] (login with demo/demo).
+
+  Cheers.
+
+[1] github.com/openbookie/sportbook
+[2] github.com/openfootball/world-cup/tree/master/2014--brazil
+[3] sportbook.herokuapp.com/db/world.2014
+[4] sportbook.herokuapp.com
+

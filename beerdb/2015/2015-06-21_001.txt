@@ -1,0 +1,67 @@
+From 6162873016700108800@xxx Sun Jun 21 16:54:51 +0000 2015
+X-GM-THRID: 6162873018440744960
+X-Received: by 10.129.50.15 with SMTP id y15mr34162545ywy.18.1434905691383;
+        Sun, 21 Jun 2015 09:54:51 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.50.78.35 with SMTP id y3ls747509igw.39.gmail; Sun, 21 Jun 2015
+ 09:54:51 -0700 (PDT)
+X-Received: by 10.66.249.198 with SMTP id yw6mr34748304pac.35.1434905691201;
+        Sun, 21 Jun 2015 09:54:51 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x233.google.com (mail-ie0-x233.google.com. [2607:f8b0:4001:c03::233])
+        by gmr-mx.google.com with ESMTPS id f17si914240igt.0.2015.06.21.09.54.51
+        for <beerdb@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 21 Jun 2015 09:54:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::233 as permitted sender) client-ip=2607:f8b0:4001:c03::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ie0-x233.google.com with SMTP id y10so13295888ieq.0
+        for <beerdb@googlegroups.com>; Sun, 21 Jun 2015 09:54:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=2HsIcbagb0aY4YOtFnqoZWA257nim6+pshoDm3NtqOY=;
+        b=pepzItVy0wPfZ9BnQrC213ladpMOJ6COAc7FwcI5JpBPPejgXHBjpIYOfbpD/w4Azk
+         FraUR8gZXiwYO+XygsxAj7Y3p6LMcmTF67HwE6bDpdmuIP5n9fkYKOsuVb4OH7wjlkmZ
+         qw1KrRFZpz6uMGcHtcz4r37E8WISdoHaCT4EdnLTTra0+MDgttfAvQD4/Dy4Tq/RfSEP
+         qtCuCh5+z2xBcRhLFX+5vi/Dc9kg99n2cu042gqyegNTqNATnphWP/AhF+EtPIeDrGms
+         cl1KW15MS9YV93hE3cIF+tgmbRIvJKMT3jNgokdrYfyi11RxGa9Ox0Yn2OPnz0IuoydD
+         sf7A==
+MIME-Version: 1.0
+X-Received: by 10.50.7.68 with SMTP id h4mr16662433iga.40.1434905691106; Sun,
+ 21 Jun 2015 09:54:51 -0700 (PDT)
+Received: by 10.107.15.79 with HTTP; Sun, 21 Jun 2015 09:54:51 -0700 (PDT)
+Date: Sun, 21 Jun 2015 18:54:51 +0200
+Message-ID: <CAAxEZd9VGWV-OG8rmdW1X0WDANhOoF6o=8FCYzbXtj1OVsxvtQ@mail.gmail.com>
+Subject: Beerfest Calendar - A collection of awesome beer events (oktoberfest,
+ starkbierfest, etc ) from around the world
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   I've started an all-in-one-page calendar collecting beer events
+from around the world. The first beer festivals listed from Austria
+and Bavaria, Germany include:
+
+   - Wiener Bierfest @ Wien
+   - Ottakringer Braukultur Wochen (9 Brauereien in 9 Wochen) @ Wien
+   - Biermesse Ried (Festival der Biervielfalt) @ Ried i. Innkreis
+   - M=C3=BChlviertler Bierfestival @ Freistadt
+
+   - Oktoberfest ("Die Wiesn") @ M=C3=BCnchen
+   - Sandwerka (Sandkirchweih) @ Bamberg
+   - Annafest ("Auf den Kellern") @ Forchheim
+   - Kulmbacher Bierwoche @ Kulmbach
+
+  More @ github.com/openbeer/calendar
+
+   Anything missing? Contributions welcome. Cheers.
+

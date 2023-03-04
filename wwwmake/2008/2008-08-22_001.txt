@@ -1,0 +1,46 @@
+From 91127545856@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 82657148928
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,9c647c4e74c87091
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.100.11.7 with SMTP id 7mr127261ank.13.1219418818955; Fri, 22 
+	Aug 2008 08:26:58 -0700 (PDT)
+Date: Fri, 22 Aug 2008 08:26:58 -0700 (PDT)
+In-Reply-To: <ef1466c0-c04c-48c6-88c8-da0ca790ec78@a70g2000hsh.googlegroups.com>
+X-IP: 70.79.19.119
+References: <4dcd15a90808181144u67791a4bj7681c0509af0b028@mail.gmail.com> 
+	<ef1466c0-c04c-48c6-88c8-da0ca790ec78@a70g2000hsh.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: lhHP5wwAAABcbkWm8R_IqrPU2k3noMYS
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.1) 
+	Gecko/2008070208 Firefox/3.0.1,gzip(gfe),gzip(gfe)
+Message-ID: <0489baad-d138-46fc-8fa7-105a44447cf8@n38g2000prl.googlegroups.com>
+Subject: Re: Encoding
+From: Gerald Bauer <geraldbauer2007@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  Thanks for the suggestions and highlighting that the encoding is
+missing in the template. I try my best to get an update out later this
+week that includes updated templates that include default UTF-8
+encoding plus a property that lets you change the encoding in the
+template in your slide source.
+
+  About yielding some content into the header I think it might just be
+easier to actually let you overwrite and use your own header template.
+If you look at the existing template @
+http://slideshow.rubyforge.org/svn/trunk/lib/templates/s6/header.html.erb
+it should be straightforward. I'm not sure what's the best location
+for storing the templates (e.g. in your working directory, in your
+home directory or in template/ folder in your working directory and so
+on).
+
+  Thanks for your interested in S6/S9.
+
+   Cheers.
+

@@ -1,0 +1,148 @@
+From 6625309648536731648@xxx Sun Nov 18 21:05:09 +0000 2018
+X-GM-THRID: 6624595092768292864
+Date: Sun, 18 Nov 2018 13:05:09 -0800 (PST)
+From: Steven Jeffries <stevenjeffries@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <157c04be-2051-483e-bbae-311b4733e14c@googlegroups.com>
+In-Reply-To: <CAAxEZd-p8LnZAHH5E=UBD6ZeyshdnE2jNDsxtpXYE36DdumY8Q@mail.gmail.com>
+References: <965993f2-872a-4140-80b5-e296e8cc5ef6@googlegroups.com>
+ <CAAxEZd-p8LnZAHH5E=UBD6ZeyshdnE2jNDsxtpXYE36DdumY8Q@mail.gmail.com>
+Subject: Re: [wwwmake:460] [csvreader] Is there any way to keep going after
+ encountering an error?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1786_1869973889.1542575109228"
+X-Google-Token: EIWox98Fdv7XgLGQU6s0
+X-Google-IP: 2601:1c2:600:3c1a:80f4:fc67:28ab:cb01
+
+------=_Part_1786_1869973889.1542575109228
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1787_105254757.1542575109228"
+
+------=_Part_1787_105254757.1542575109228
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+Thanks for always responding so quickly!
+
+I'm not really talking about any specific errors, I'm more talking about 
+continuing through errors once one is encountered. As anyone who has ever 
+worked with client generated CSVs will know, this is *always* an issue.
+
+An example would be something like this:
+
+First Name,Middle Name,Last Name
+> Johnathan,Madeup,Smith
+> Farrokh,"Freddy" Mercury,Bulsara
+> Jane,AlsoMadeup,Smith
+
+
+The improperly quoted line for Freddy Mercury will fail, and we will not 
+get to the Jane Smith line. Now imagine there was 2GB of data before that 
+line and another 1GB of data after it (a scenario that comes up far more 
+frequently than I'd like).
+
+It would be really nice to be able to say, "Hey, line 123456 failed" while 
+still importing the rest of the data.
+
+I'm not sure of how possible that is, or if something like that is even 
+within the scope of this project, but it would be super cool.
+
+Also, I can't say this enough, your CSV library is one of the best out 
+there right now. Thanks for all of the work you've put into it!
+
+Thanks!
+- Steve
+
+On Saturday, November 17, 2018 at 4:41:18 AM UTC-8, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    First thanks for trying a different encoding. Great to hear it works. 
+>
+> > I'm processing some huge files. It really sucks to get an error 80% of 
+> the way through and not be able to finish. Is there any way to get an error 
+> on a line, do something with it (probably log it), but continue processing 
+> the rest of the file? 
+>
+>     Good point. Yes, of course. The idea is - since this is a kind of 
+> new (alternative) csv reader / library to learn from the real world 
+> and from real experience - that is, where your help is needed :-). 
+>
+>     The point is and the idea is to collect the "real-world" errors 
+> one-by-one and add options and tests to make the reader more "stable" 
+> handling real-world cases / error conditions. The point is - again - 
+> the more real-world cases that get reported - the better the reader 
+> and they more I can fix / handle and so on. 
+>
+>     Thus, to conclude - if you want to help out I invite you to post 
+> the "offending" csv line(s) / text record(s) and what error you get - 
+> they more the better. 
+>
+>     Cheers. Prost. 
+>
+
+------=_Part_1787_105254757.1542575109228
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><br></div><div>Thanks for always responding so quickl=
+y!</div><div><br></div><div>I&#39;m not really talking about any specific e=
+rrors, I&#39;m more talking about continuing through errors once one is enc=
+ountered. As anyone who has ever worked with client generated CSVs will kno=
+w, this is <i>always</i>=C2=A0an issue.</div><div><br></div><div>An example=
+ would be something like this:</div><div><br></div><blockquote class=3D"gma=
+il_quote" style=3D"margin: 0px 0px 0px 0.8ex; border-left: 1px solid rgb(20=
+4, 204, 204); padding-left: 1ex;"><font face=3D"courier new, monospace"><fo=
+nt size=3D"2">First Name,Middle Name,Last Name<br></font><font size=3D"2">J=
+ohnathan,Madeup,Smith<br></font><font size=3D"2">Farrokh,&quot;Freddy&quot;=
+ Mercury,Bulsara<br></font><font size=3D"2" style=3D"">Jane,AlsoMadeup,Smit=
+h</font></font></blockquote><div><br></div><div>The improperly quoted line =
+for Freddy Mercury will fail, and we will not get to the Jane Smith line. N=
+ow imagine there was 2GB of data before that line and another 1GB of data a=
+fter it (a scenario that comes up far more frequently than I&#39;d like).</=
+div><div><br></div><div>It would be really nice to be able to say, &quot;He=
+y, line 123456 failed&quot; while still importing the rest of the data.</di=
+v><div><br></div><div>I&#39;m not sure of how possible that is, or if somet=
+hing like that is even within the scope of this project, but it would be su=
+per cool.</div><div><br></div>Also, I can&#39;t say this enough, your CSV l=
+ibrary is one of the best out there right now. Thanks for all of the work y=
+ou&#39;ve put into it!<div><br></div><div>Thanks!</div><div>- Steve<br><br>=
+On Saturday, November 17, 2018 at 4:41:18 AM UTC-8, Gerald Bauer wrote:<blo=
+ckquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-=
+left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 =C2=A0First thanks for trying a different encoding. Great to hea=
+r it works.
+<br>
+<br>&gt; I&#39;m processing some huge files. It really sucks to get an erro=
+r 80% of the way through and not be able to finish. Is there any way to get=
+ an error on a line, do something with it (probably log it), but continue p=
+rocessing the rest of the file?
+<br>
+<br>=C2=A0 =C2=A0 Good point. Yes, of course. The idea is - since this is a=
+ kind of
+<br>new (alternative) csv reader / library to learn from the real world
+<br>and from real experience - that is, where your help is needed :-).
+<br>
+<br>=C2=A0 =C2=A0 The point is and the idea is to collect the &quot;real-wo=
+rld&quot; errors
+<br>one-by-one and add options and tests to make the reader more &quot;stab=
+le&quot;
+<br>handling real-world cases / error conditions. The point is - again -
+<br>the more real-world cases that get reported - the better the reader
+<br>and they more I can fix / handle and so on.
+<br>
+<br>=C2=A0 =C2=A0 Thus, to conclude - if you want to help out I invite you =
+to post
+<br>the &quot;offending&quot; csv line(s) / text record(s) and what error y=
+ou get -
+<br>they more the better.
+<br>
+<br>=C2=A0 =C2=A0 Cheers. Prost.
+<br></blockquote></div></div>
+------=_Part_1787_105254757.1542575109228--
+
+------=_Part_1786_1869973889.1542575109228--
+

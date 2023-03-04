@@ -1,0 +1,66 @@
+From 301432045568@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 285796728832
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,d61a16acd8afd09c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,UTF8
+Received: by 10.90.96.1 with SMTP id t1mr1275524agb.15.1232938115127;
+        Sun, 25 Jan 2009 18:48:35 -0800 (PST)
+Return-Path: <sunaku@gmail.com>
+Received: from yw-out-2324.google.com (yw-out-2324.google.com [74.125.46.31])
+        by mx.google.com with ESMTP id 39si4375267yxd.12.2009.01.25.18.48.34;
+        Sun, 25 Jan 2009 18:48:34 -0800 (PST)
+Received-SPF: pass (google.com: domain of sunaku@gmail.com designates 74.125.46.31 as permitted sender) client-ip=74.125.46.31;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of sunaku@gmail.com designates 74.125.46.31 as permitted sender) smtp.mail=sunaku@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by yw-out-2324.google.com with SMTP id 3so2005941ywj.5
+        for <webslideshow@googlegroups.com>; Sun, 25 Jan 2009 18:48:34 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:in-reply-to:references
+         :date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=HexPlv7fckvz5JWQIK2fOOEJtbIMvn6Y+/m5/GFSGo8=;
+        b=QbrcQgZg/qmEcF1CG1jloRkrYyI9i3yTcvnElIqwgaX9mhZvT+TC45qhjV9JMswjcE
+         ay9/hNWkNiPv3Mz/5VywdUQaK/NNACrUSsdmwmHl3SY+dHYFEXzbU4Nx+Js705Y1PUVH
+         zRm37hi3uvFa4P1oLtgfuf1mG0CmcRy1fs1gY=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        b=GzOrnn6UrpDn7ZMGCMS3w0f1YOAv6OZKTo152EDpQH3kKN+OS4wVU5W0Z6Pyno3gKb
+         CJ/CaOCn9nYJywplJu3YmxXv95b0WLTLP8idQW3nP8S5i8y8eYITnwyz+JbHmJBhUMk3
+         iCDUofdSWFkS+H1SWa8eejj09PVeAu4n7CXdw=
+MIME-Version: 1.0
+Received: by 10.65.59.11 with SMTP id m11mr1633623qbk.90.1232938113949; Sun, 
+	25 Jan 2009 18:48:33 -0800 (PST)
+In-Reply-To: <45189a8d-bfd5-4af9-b891-8bbef8c60bce@35g2000pry.googlegroups.com>
+References: <30f836e9-c1f5-4052-8552-5c1b5ab31ff5@e22g2000vbe.googlegroups.com>
+	 <8d292ccd-3e43-44a2-a1e3-4fe1ea77875c@x16g2000prn.googlegroups.com>
+	 <45189a8d-bfd5-4af9-b891-8bbef8c60bce@35g2000pry.googlegroups.com>
+Date: Sun, 25 Jan 2009 18:48:33 -0800
+Message-ID: <cfbcd2f00901251848l7ef6217bw69b5e49bd16577fc@mail.gmail.com>
+Subject: Re: [slideshow] Re: alternatives to maruku
+From: Suraj Kurapati <sunaku@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+On Sun, Jan 25, 2009 at 5:07 PM, dsanson <dsanson@gmail.com> wrote:
+> Thanks for the tip. I hadn't played around with maruku much, so, while
+> I guessed some such escaping might keep it from choking, I wasn't
+> sure. That said, I'm used to markdown processors that handle these
+> cases gracefully (markdown.pl and pandoc, mostly, but as that
+> babelmark link showed, *all* the others get it right),
+
+Technically, maruku also gets it right by producing the same output.
+The only difference is that it simply warns you (on STDERR) of
+ambiguity, whereas the other Markdown processors do not.  For example,
+if I silence the STDERR stream, I see only the wanted output:
+
+# echo 'Ask not [...] what you can do for your country.' | maruku 2>/dev/null
+<p>Ask not <span>&#8230;</span> what you can do for your country.</p>
+
+I personally prefer the warning because it lets me catch spelling
+mistakes I might have made or adds/deletes/edits I may have forgotten
+to make while revising my documents.
+

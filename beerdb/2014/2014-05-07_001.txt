@@ -1,0 +1,71 @@
+From 125877354496@xxx Sat Dec 20 19:01:39 +0000 2014
+X-GM-THRID: 127915786240
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,f5a0c0943267328c,start
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.14.102 with SMTP id o6mr1230316wic.0.1399478318292;
+        Wed, 07 May 2014 08:58:38 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.180.8.102 with SMTP id q6ls366936wia.44.gmail; Wed, 07 May
+ 2014 08:58:37 -0700 (PDT)
+X-Received: by 10.180.187.239 with SMTP id fv15mr1234303wic.2.1399478317936;
+        Wed, 07 May 2014 08:58:37 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x230.google.com (mail-wi0-x230.google.com [2a00:1450:400c:c05::230])
+        by gmr-mx.google.com with ESMTPS id jc9si687784wic.0.2014.05.07.08.58.37
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 07 May 2014 08:58:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::230 as permitted sender) client-ip=2a00:1450:400c:c05::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x230.google.com with SMTP id n15so6625654wiw.9
+        for <beerdb@googlegroups.com>; Wed, 07 May 2014 08:58:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=5dk4QlI1vvjPrxy1piWQDQYvSFGfZSCr92PvUhZlZkQ=;
+        b=oprzPKfRqAjgsddRONlC70QYt72ytNCB6M0VLloY/eXXxOn+4A23Jl0SjT2Y05Uv0C
+         g1HZfmKq0KmiITbmEiQ+G8scVmJpZd9hHb7DdgzCiRHhy0vbQ8gB3jDrKkfBcVu++crl
+         AOfGvrs+QbRCHtJimTydcBebBsETw6UUHTGlLRiaoPRivKFt3lddYv41wBVsVsAIIV00
+         ighC34WXTwYtY4kkOMbzkN9zBsUmWgo9VjP4hiiCkbY2JNRUke3J7OTfWdeT1BibjT8Y
+         zZc09PoeoeMm41TLbqEq/9px25ZJhC3LUptR854M+aBjMkL8jMwgLTnAWk51a8N4703S
+         ouFA==
+MIME-Version: 1.0
+X-Received: by 10.194.58.79 with SMTP id o15mr3351329wjq.62.1399478317845;
+ Wed, 07 May 2014 08:58:37 -0700 (PDT)
+Received: by 10.216.189.196 with HTTP; Wed, 7 May 2014 08:58:37 -0700 (PDT)
+Date: Wed, 7 May 2014 17:58:37 +0200
+Message-ID: <CAAxEZd_b5N17cxCXhtejMK2YvvQHOCdm9YvLCgiGW+7PFRub-A@mail.gmail.com>
+Subject: beer.js - new GitHub org - brewery of the day widget, beer.db HTTP
+ JSON API wrapper n more
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I moved the "old" geraldb/beer.js repo to its own GitHub org,
+that is, github.com/brewjs [1].
+
+  Why? The idea is it to make it easier to use and reuse.  The new
+repos include:
+
+  1) /beer.api.js
+
+    The "official" HTTP JSON API wrapper for the beer.db (will also
+become a bower module, e.g. install with $ bower install beer-api).
+
+  2) /beer.js
+
+    Some sample beer n brewery widgets in JavaScript (early stage).
+
+
+    That's it. Questions? Comments?  Cheers.
+
+
+[1] github.com/brewjs
+

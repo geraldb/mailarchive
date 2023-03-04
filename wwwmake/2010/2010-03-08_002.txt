@@ -1,0 +1,160 @@
+From 602001113088@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 584561197056
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,386518f236493d23
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.91.27.2 with SMTP id e2ls1018660agj.4.p; Mon, 08 Mar 2010 
+	10:25:50 -0800 (PST)
+Received: by 10.90.37.22 with SMTP id k22mr5830347agk.0.1268072749673;
+        Mon, 08 Mar 2010 10:25:49 -0800 (PST)
+Received: by 10.90.37.22 with SMTP id k22mr5830346agk.0.1268072749633;
+        Mon, 08 Mar 2010 10:25:49 -0800 (PST)
+Return-Path: <kevin.gisi@gmail.com>
+Received: from mail-gy0-f173.google.com (mail-gy0-f173.google.com [209.85.160.173])
+        by gmr-mx.google.com with ESMTP id 12si584739gxk.10.2010.03.08.10.25.48;
+        Mon, 08 Mar 2010 10:25:48 -0800 (PST)
+Received-SPF: pass (google.com: domain of kevin.gisi@gmail.com designates 209.85.160.173 as permitted sender) client-ip=209.85.160.173;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of kevin.gisi@gmail.com designates 209.85.160.173 as permitted sender) smtp.mail=kevin.gisi@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by gyh4 with SMTP id 4so2567046gyh.32
+        for <webslideshow@googlegroups.com>; Mon, 08 Mar 2010 10:25:48 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:sender:received:in-reply-to
+         :references:date:x-google-sender-auth:message-id:subject:from:to
+         :content-type;
+        bh=3rcpj7BPWqZZUo2G6r+u5Br1jqgWBj1YCxQI43wjSWw=;
+        b=Q+KVigD0ntd+nB1NGfb4yalDkKj/eIgyF+2qDrWXszqK4q/k6NeabvxwH626td4Vsz
+         gr5sB0KJudBRqpcn41wxj7dlv4SmIotxI0DS0XxWccEzwcl4Yn7yg8CyXuFbNlo89BvE
+         HlPR5RHcCV1z3IxKUITLxLwByPaQIUrdaRKwA=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:sender:in-reply-to:references:date
+         :x-google-sender-auth:message-id:subject:from:to:content-type;
+        b=mvOwvqTLryiQGQISblab3hApJ9ypkhVj15FsqdhVJthuAi1EVBHmu9+9cU+oEjTdJ/
+         ulbGABYtX2GAlpiWiW/7cC16iMd04bxsp5MJwaJB5kJ3vkPRZqmu5oEreauyGQNWRLn7
+         Gir1EaZs35TcBsBfdkM4b0NTmK6HGXWqNcxYk=
+MIME-Version: 1.0
+Sender: kevin.gisi@gmail.com
+Received: by 10.90.246.19 with SMTP id t19mr5364533agh.119.1268072747636; Mon, 
+	08 Mar 2010 10:25:47 -0800 (PST)
+In-Reply-To: <4dcd15a91003081018y69b3e9beu40eee8aee2285792@mail.gmail.com>
+References: <abacf3b61003020922l6d34adet262379abafdc0379@mail.gmail.com>
+	 <4dcd15a91003071000o1af014feg760e34f3da9d981d@mail.gmail.com>
+	 <abacf3b61003081005y756b6a2aq233b2b4f29919489@mail.gmail.com>
+	 <4dcd15a91003081018y69b3e9beu40eee8aee2285792@mail.gmail.com>
+Date: Mon, 8 Mar 2010 12:25:47 -0600
+X-Google-Sender-Auth: fc6e374db843b6f0
+Message-ID: <abacf3b61003081025n5970ebc2w7795d64967d0ce9d@mail.gmail.com>
+Subject: Re: [slideshow] Continuous Build System for Slideshows
+From: Kevin Gisi <kevin@kevingisi.com>
+To: webslideshow@googlegroups.com
+Content-Type: multipart/alternative; boundary=001636283dceac27b204814e31d7
+
+--001636283dceac27b204814e31d7
+Content-Type: text/plain; charset=ISO-8859-1
+
+Yeah, you very clearly win on this one. My process had been to use
+Selenium/Xvfb/Firefox-headless to click through each slide, get a
+screenshot, and then use ImageMagick to combine them all into a
+slightly-bloated PDF of images.
+
+It might still be worth grabbing the screenshots, but your solution is much
+much stronger!
+
+-Kevin W. Gisi
+kevin@kevingisi.com | (916) 538-4474
+http://www.kevingisi.com
+
+
+On Mon, Mar 8, 2010 at 12:18 PM, Alex Boisvert <alex.boisvert@gmail.com>wrote:
+
+> On Mon, Mar 8, 2010 at 10:05 AM, Kevin Gisi <kevin@kevingisi.com> wrote:
+>
+>> Oh geez! I had forgotten about GH pages. I'll have to do a revision to the
+>> tutorial - I still think it's valuable to use Heroku to do the actual
+>> building for a few other things I plan to cover in a more advanced tutorial
+>> (pulling out code snippets, generating PDFs, etc)
+>>
+>> What do you think?
+>>
+>
+> Sounds like a good plan.
+>
+> BTW, the way I generate PDFs is usually through Jekyll and Prince.   This
+> is roughly explained in
+> http://labnotes.org/2009/03/14/buildr-how-we-generate-the-documentation-web-site-and-pdf/.
+> I'm curious to see how your approach compares.
+>
+> alex
+>
+>
+>
+>  --
+> You received this message because you are subscribed to the "Free Web Slide
+> Show Alternatives - S5, S9 And Friends" group.
+> To post to this group, send email to webslideshow@googlegroups.com
+> To unsubscribe from this group, send email to
+> webslideshow-unsubscribe@googlegroups.com
+> For more options, visit this group at
+> http://groups.google.com/group/webslideshow?hl=en
+>
+
+--001636283dceac27b204814e31d7
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Yeah, you very clearly win on this one. My process had been to use Selenium=
+/Xvfb/Firefox-headless to click through each slide, get a screenshot, and t=
+hen use ImageMagick to combine them all into a slightly-bloated PDF of imag=
+es.<div>
+<br></div><div>It might still be worth grabbing the screenshots, but your s=
+olution is much much stronger!<br><div><br clear=3D"all">-Kevin W. Gisi<br>=
+<a href=3D"mailto:kevin@kevingisi.com">kevin@kevingisi.com</a> | (916) 538-=
+4474<br>
+<a href=3D"http://www.kevingisi.com">http://www.kevingisi.com</a><br>
+<br><br><div class=3D"gmail_quote">On Mon, Mar 8, 2010 at 12:18 PM, Alex Bo=
+isvert <span dir=3D"ltr">&lt;<a href=3D"mailto:alex.boisvert@gmail.com">ale=
+x.boisvert@gmail.com</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_qu=
+ote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex=
+;">
+<div class=3D"im"><div class=3D"gmail_quote">On Mon, Mar 8, 2010 at 10:05 A=
+M, Kevin Gisi <span dir=3D"ltr">&lt;<a href=3D"mailto:kevin@kevingisi.com" =
+target=3D"_blank">kevin@kevingisi.com</a>&gt;</span> wrote:<br><blockquote =
+class=3D"gmail_quote" style=3D"border-left:1px solid rgb(204, 204, 204);mar=
+gin:0pt 0pt 0pt 0.8ex;padding-left:1ex">
+
+Oh geez! I had forgotten about GH pages. I&#39;ll have to do a revision to =
+the tutorial - I still think it&#39;s valuable to use Heroku to do the actu=
+al building for a few other things I plan to cover in a more advanced tutor=
+ial (pulling out code snippets, generating PDFs, etc)<div>
+
+
+<br></div><div>What do you think?<br></div></blockquote><div><br></div></di=
+v></div>Sounds like a good plan.=A0 <br><br>BTW, the way I generate PDFs is=
+ usually through Jekyll and Prince.=A0=A0 This is roughly explained in <a h=
+ref=3D"http://labnotes.org/2009/03/14/buildr-how-we-generate-the-documentat=
+ion-web-site-and-pdf/" target=3D"_blank">http://labnotes.org/2009/03/14/bui=
+ldr-how-we-generate-the-documentation-web-site-and-pdf/</a>.=A0 I&#39;m cur=
+ious to see how your approach compares.<br>
+<font color=3D"#888888">
+<br>alex</font><div><div></div><div class=3D"h5"><br><br><br>
+
+<p></p>
+
+-- <br>
+You received this message because you are subscribed to the &quot;Free Web =
+Slide Show Alternatives - S5, S9 And Friends&quot; group.<br>
+To post to this group, send email to <a href=3D"mailto:webslideshow@googleg=
+roups.com" target=3D"_blank">webslideshow@googlegroups.com</a><br>
+To unsubscribe from this group, send email to<br>
+<a href=3D"mailto:webslideshow-unsubscribe@googlegroups.com" target=3D"_bla=
+nk">webslideshow-unsubscribe@googlegroups.com</a><br>
+For more options, visit this group at<br>
+<a href=3D"http://groups.google.com/group/webslideshow?hl=3Den" target=3D"_=
+blank">http://groups.google.com/group/webslideshow?hl=3Den</a></div></div><=
+/blockquote></div><br></div></div>
+
+--001636283dceac27b204814e31d7--
+

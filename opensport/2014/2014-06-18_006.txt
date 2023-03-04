@@ -1,0 +1,64 @@
+From 1314236923904@xxx Tue Jun 16 00:16:59 +0000 2015
+X-GM-THRID: 1311230656512
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,5397194d6f6c951,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.212.12 with SMTP id ng12mr318389wic.7.1403094382682;
+        Wed, 18 Jun 2014 05:26:22 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.120.2 with SMTP id ky2ls21009lab.96.gmail; Wed, 18 Jun
+ 2014 05:26:22 -0700 (PDT)
+X-Received: by 10.112.89.10 with SMTP id bk10mr203795lbb.5.1403094382257;
+        Wed, 18 Jun 2014 05:26:22 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22e.google.com (mail-wg0-x22e.google.com [2a00:1450:400c:c00::22e])
+        by gmr-mx.google.com with ESMTPS id x7si157497wiw.1.2014.06.18.05.26.22
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 18 Jun 2014 05:26:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) client-ip=2a00:1450:400c:c00::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-x22e.google.com with SMTP id y10so765842wgg.5
+        for <opensport@googlegroups.com>; Wed, 18 Jun 2014 05:26:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=dSj9XhjMiVmAwQEI1xB5H8754RoaKvSmLD0sGkx4D8Y=;
+        b=jXJRZ208g/6OJwFfYY3KF2ShdT8vlTBo/C9JWW+tX2aeFaJVDVOFgi3udmEVlfLTYL
+         KSPABvf9g83A4Lpxo0RHwHb49sB47gxty0jivmZj+rH2Ouc5FP1e255bx44PxaJXSDYS
+         Q7tw/56ZNnfCvejLCY+PvcrCduKXr0FYwBU5P4q36Ms+8fvNrD+oBJe1qC4RRnNFBTq+
+         z8QyOlzIQMtzA6WRFjzRUzdVbzU7IVNzEaXYmZ1NLOdXURoWgGWjUmGNvU9OBBxhbrGC
+         f7fitV1IOpHmnleYSNVRq8GmKSdPU1I1ExDm8DDwWSojAv/HcetvvIo/FTcS618obWQq
+         JDNQ==
+MIME-Version: 1.0
+X-Received: by 10.194.5.103 with SMTP id r7mr46678782wjr.41.1403094382157;
+ Wed, 18 Jun 2014 05:26:22 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Wed, 18 Jun 2014 05:26:22 -0700 (PDT)
+Date: Wed, 18 Jun 2014 14:26:22 +0200
+Message-ID: <CAAxEZd9BbEqBSnio5qD_t67LDFzVt1Aomw5w0nKRBke8tbemdw@mail.gmail.com>
+Subject: Alternative HTTP JSON API for World Cup by Eric Stiens (Soccer for Good)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: Eric Stiens has put together a free open source HTTP JSON API
+service that gets its results from the FIFA site.
+
+   Services (endpoints) include:
+
+    - worldcup.sfg.io/teams
+    - worldcup.sfg.io/matches
+    - worldcup.sfg.io/matches/today
+    - worldcup.sfg.io/matches/country?fifa_code=BRA
+    - worldcup.sfg.io/group_results
+
+   More info @ github.com/estiens/world_cup_json
+
+   If you know any other services, let us know.   Cheers.
+

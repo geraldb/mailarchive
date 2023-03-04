@@ -1,0 +1,207 @@
+From 2589951262720@xxx Tue Jun 16 00:16:42 +0000 2015
+X-GM-THRID: 2580327432192
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,1631df092ed45367
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.0.167 with SMTP id 27mr8831088yhb.53.1428769382307;
+        Sat, 11 Apr 2015 09:23:02 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.84.175 with SMTP id l44ls2094282qgd.96.gmail; Sat, 11 Apr
+ 2015 09:23:01 -0700 (PDT)
+X-Received: by 10.140.98.116 with SMTP id n107mr87699qge.11.1428769381951;
+        Sat, 11 Apr 2015 09:23:01 -0700 (PDT)
+X-Google-Doc-Id: 862d5a00667d191e
+X-Google-Web-Client: true
+Date: Sat, 11 Apr 2015 09:23:01 -0700 (PDT)
+From: amit benvenisti <amitbenvenisti@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <cebac3cf-c766-4ad8-ba3a-abf2f310c4c7@googlegroups.com>
+In-Reply-To: <CAAxEZd_N_dfVu9wd=x1zvdaCfJaekQ_VKd9ZX=D9yJB2Zx-9Ow@mail.gmail.com>
+References: <91effa04-541f-44f1-97a6-d8954d8cb619@googlegroups.com>
+ <CAAxEZd_N_dfVu9wd=x1zvdaCfJaekQ_VKd9ZX=D9yJB2Zx-9Ow@mail.gmail.com>
+Subject: Re: [opensport] errors when building build.sh
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2181_166715034.1428769381393"
+X-Google-Token: EOWUpakFw7p6wrVxE7s0
+X-Google-IP: 79.180.139.1
+
+------=_Part_2181_166715034.1428769381393
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2182_1660900750.1428769381393"
+
+------=_Part_2182_1660900750.1428769381393
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hey Gerald, 
+thank you for taking your time in answering, i have used your 
+recommendation on using the build script,
+but the script built the db, again, without the stadiums (used sportdb new 
+en)
+
+when trying out the new code you suggested i get:
+$ sportdb --verbose --dbname football.db update --include 'stadiums'
+...
+[debug] enter load( name=>>africa/ma-morocco--stadiums<<)
+[info] parsing data (ground) 'africa/ma-morocco--stadiums' 
+(stadiums/africa/ma-morocco--stadiums.txt)...
+
+*** error: wrong number of arguments (0 for 1..2)
+/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-models-1.11.0/lib/sportdb/readers/ground.rb:43:in 
+`read'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-models-1.11.0/lib/sportdb/reader.rb:74:in 
+`block in load'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/worlddb-models-2.2.2/lib/worlddb/matcher.rb:41:in 
+`match_xxx_for_country'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-models-1.11.0/lib/sportdb/matcher.rb:26:in 
+`match_stadiums_for_country'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-models-1.11.0/lib/sportdb/reader.rb:71:in 
+`load'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-models-1.11.0/lib/sportdb/reader.rb:20:in 
+`block in load_setup'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/textutils-1.2.1/lib/textutils/reader/fixture_reader.rb:121:in 
+`block in each'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/textutils-1.2.1/lib/textutils/reader/fixture_reader.rb:120:in 
+`each'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/textutils-1.2.1/lib/textutils/reader/fixture_reader.rb:120:in 
+`each'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-models-1.11.0/lib/sportdb/reader.rb:19:in 
+`load_setup'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-models-1.11.0/lib/sportdb/models.rb:137:in 
+`read_setup'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-1.11.0/lib/sportdb/cli/main.rb:239:in 
+`block (2 levels) in <class:Toolii>'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/gli-2.13.0/lib/gli/command_support.rb:126:in 
+`call'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/gli-2.13.0/lib/gli/command_support.rb:126:in 
+`execute'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/gli-2.13.0/lib/gli/app_support.rb:296:in 
+`block in call_command'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/gli-2.13.0/lib/gli/app_support.rb:309:in 
+`call'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/gli-2.13.0/lib/gli/app_support.rb:309:in 
+`call_command'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/gli-2.13.0/lib/gli/app_support.rb:83:in 
+`run'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-1.11.0/lib/sportdb/cli/main.rb:16:in 
+`run'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-1.11.0/lib/sportdb.rb:24:in 
+`main'
+/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-1.11.0/bin/sportdb:5:in `<top 
+(required)>'
+/home/amit/.rvm/gems/ruby-2.1.4/bin/sportdb:23:in `load'
+/home/amit/.rvm/gems/ruby-2.1.4/bin/sportdb:23:in `<main>'
+/home/amit/.rvm/gems/ruby-2.1.4/bin/ruby_executable_hooks:15:in `eval'
+/home/amit/.rvm/gems/ruby-2.1.4/bin/ruby_executable_hooks:15:in `<main>'
+
+thanks
+
+On Saturday, April 11, 2015 at 11:18:02 AM UTC+3, Gerald Bauer wrote:
+>
+> Hello, 
+>    Thanks for trying the build.sh script.  And thanks for the details 
+> error reports. 
+>
+>   For debugging try the --verbose option/switch. For example: 
+>
+> > $ sportdb --dbname football.db update --include 'stadiums' 
+>
+> change to 
+>
+> $ sportdb --verbose --dbname football.db update --include 'stadiums' 
+>
+>   That should result in a more detailed error report (you're invited 
+> to post the new dump.) 
+>
+>   In general it's recommended to use the new build system, that is, 
+> the easiest and recommended (yes, best) way is using datafiles. See 
+> github.com/openfootball/datafile 
+>
+>   Cheers. 
+>
+
+------=_Part_2182_1660900750.1428769381393
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hey Gerald,&nbsp;<br>thank you for taking your time in ans=
+wering, i have used your recommendation on using the build script,<br>but t=
+he script built the db, again, without the stadiums (used sportdb new en)<b=
+r><br>when trying out the new code you suggested i get:<br>$ sportdb --verb=
+ose --dbname football.db update --include 'stadiums'<br>...<br><div><div>[d=
+ebug] enter load( name=3D&gt;&gt;africa/ma-morocco--stadiums&lt;&lt;)</div>=
+<div>[info] parsing data (ground) 'africa/ma-morocco--stadiums' (stadiums/a=
+frica/ma-morocco--stadiums.txt)...</div><div><br></div><div>*** error: wron=
+g number of arguments (0 for 1..2)</div><div>/home/amit/.rvm/gems/ruby-2.1.=
+4/gems/sportdb-models-1.11.0/lib/sportdb/readers/ground.rb:43:in `read'</di=
+v><div>/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-models-1.11.0/lib/sport=
+db/reader.rb:74:in `block in load'</div><div>/home/amit/.rvm/gems/ruby-2.1.=
+4/gems/worlddb-models-2.2.2/lib/worlddb/matcher.rb:41:in `match_xxx_for_cou=
+ntry'</div><div>/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-models-1.11.0/=
+lib/sportdb/matcher.rb:26:in `match_stadiums_for_country'</div><div>/home/a=
+mit/.rvm/gems/ruby-2.1.4/gems/sportdb-models-1.11.0/lib/sportdb/reader.rb:7=
+1:in `load'</div><div>/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-models-1=
+.11.0/lib/sportdb/reader.rb:20:in `block in load_setup'</div><div>/home/ami=
+t/.rvm/gems/ruby-2.1.4/gems/textutils-1.2.1/lib/textutils/reader/fixture_re=
+ader.rb:121:in `block in each'</div><div>/home/amit/.rvm/gems/ruby-2.1.4/ge=
+ms/textutils-1.2.1/lib/textutils/reader/fixture_reader.rb:120:in `each'</di=
+v><div>/home/amit/.rvm/gems/ruby-2.1.4/gems/textutils-1.2.1/lib/textutils/r=
+eader/fixture_reader.rb:120:in `each'</div><div>/home/amit/.rvm/gems/ruby-2=
+.1.4/gems/sportdb-models-1.11.0/lib/sportdb/reader.rb:19:in `load_setup'</d=
+iv><div>/home/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-models-1.11.0/lib/spor=
+tdb/models.rb:137:in `read_setup'</div><div>/home/amit/.rvm/gems/ruby-2.1.4=
+/gems/sportdb-1.11.0/lib/sportdb/cli/main.rb:239:in `block (2 levels) in &l=
+t;class:Toolii&gt;'</div><div>/home/amit/.rvm/gems/ruby-2.1.4/gems/gli-2.13=
+.0/lib/gli/command_support.rb:126:in `call'</div><div>/home/amit/.rvm/gems/=
+ruby-2.1.4/gems/gli-2.13.0/lib/gli/command_support.rb:126:in `execute'</div=
+><div>/home/amit/.rvm/gems/ruby-2.1.4/gems/gli-2.13.0/lib/gli/app_support.r=
+b:296:in `block in call_command'</div><div>/home/amit/.rvm/gems/ruby-2.1.4/=
+gems/gli-2.13.0/lib/gli/app_support.rb:309:in `call'</div><div>/home/amit/.=
+rvm/gems/ruby-2.1.4/gems/gli-2.13.0/lib/gli/app_support.rb:309:in `call_com=
+mand'</div><div>/home/amit/.rvm/gems/ruby-2.1.4/gems/gli-2.13.0/lib/gli/app=
+_support.rb:83:in `run'</div><div>/home/amit/.rvm/gems/ruby-2.1.4/gems/spor=
+tdb-1.11.0/lib/sportdb/cli/main.rb:16:in `run'</div><div>/home/amit/.rvm/ge=
+ms/ruby-2.1.4/gems/sportdb-1.11.0/lib/sportdb.rb:24:in `main'</div><div>/ho=
+me/amit/.rvm/gems/ruby-2.1.4/gems/sportdb-1.11.0/bin/sportdb:5:in `&lt;top =
+(required)&gt;'</div><div>/home/amit/.rvm/gems/ruby-2.1.4/bin/sportdb:23:in=
+ `load'</div><div>/home/amit/.rvm/gems/ruby-2.1.4/bin/sportdb:23:in `&lt;ma=
+in&gt;'</div><div>/home/amit/.rvm/gems/ruby-2.1.4/bin/ruby_executable_hooks=
+:15:in `eval'</div><div>/home/amit/.rvm/gems/ruby-2.1.4/bin/ruby_executable=
+_hooks:15:in `&lt;main&gt;'</div><div><br>thanks</div><br>On Saturday, Apri=
+l 11, 2015 at 11:18:02 AM UTC+3, Gerald Bauer wrote:<blockquote class=3D"gm=
+ail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc soli=
+d;padding-left: 1ex;">Hello,
+<br>&nbsp; &nbsp;Thanks for trying the build.sh script. &nbsp;And thanks fo=
+r the details
+<br>error reports.
+<br>
+<br>&nbsp; For debugging try the --verbose option/switch. For example:
+<br>
+<br>&gt; $ sportdb --dbname football.db update --include 'stadiums'
+<br>
+<br>change to
+<br>
+<br>$ sportdb --verbose --dbname football.db update --include 'stadiums'
+<br>
+<br>&nbsp; That should result in a more detailed error report (you're invit=
+ed
+<br>to post the new dump.)
+<br>
+<br>&nbsp; In general it's recommended to use the new build system, that is=
+,
+<br>the easiest and recommended (yes, best) way is using datafiles. See
+<br><a href=3D"http://github.com/openfootball/datafile" target=3D"_blank" r=
+el=3D"nofollow" onmousedown=3D"this.href=3D'http://www.google.com/url?q\75h=
+ttp%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\46sa\75D\46sntz\0751\46usg=
+\75AFQjCNGuSSz2iZM4_c46k47eU9RFDWMMTQ';return true;" onclick=3D"this.href=
+=3D'http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2F=
+datafile\46sa\75D\46sntz\0751\46usg\75AFQjCNGuSSz2iZM4_c46k47eU9RFDWMMTQ';r=
+eturn true;">github.com/openfootball/<wbr>datafile</a>
+<br>
+<br>&nbsp; Cheers.
+<br></blockquote></div></div>
+------=_Part_2182_1660900750.1428769381393--
+------=_Part_2181_166715034.1428769381393--
+

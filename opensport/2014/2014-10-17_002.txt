@@ -1,0 +1,144 @@
+From 2220513820672@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 2205978460160
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,aa2ece1413fdc78
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.222.67 with SMTP id qk3mr5489751pac.20.1413544727168;
+        Fri, 17 Oct 2014 04:18:47 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.16.199 with SMTP id 65ls1181387qgb.67.gmail; Fri, 17 Oct
+ 2014 04:18:46 -0700 (PDT)
+X-Received: by 10.140.84.21 with SMTP id k21mr111721qgd.6.1413544726631;
+        Fri, 17 Oct 2014 04:18:46 -0700 (PDT)
+X-Google-Doc-Id: c8bcf4c84c78cdd5
+X-Google-Web-Client: true
+Date: Fri, 17 Oct 2014 04:18:46 -0700 (PDT)
+From: Joe Kampschmidt <jokecamp@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <760a12c8-08c9-4aee-975d-b4d02dfd2817@googlegroups.com>
+In-Reply-To: <6b455329-d1c6-4083-89b9-a1513dd54184@googlegroups.com>
+References: <CAAxEZd9jFt=xkdnAXP2pCMdbEF7f_HkeZ78B9sJiH-iyq_4nuA@mail.gmail.com>
+ <6b455329-d1c6-4083-89b9-a1513dd54184@googlegroups.com>
+Subject: Re: sport.db starter kit - Node.js Edition -
+ sport.db.starter.node.js v0.0.1
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_642_120230752.1413544726217"
+X-Google-Token: EJb2g6IFM_6Mfm5pAwY0
+X-Google-IP: 66.44.120.8
+
+------=_Part_642_120230752.1413544726217
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_643_220570484.1413544726222"
+
+------=_Part_643_220570484.1413544726222
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Very nice. I downloaded it and got it working pretty fast.
+
+As for the routes I got confused for a little bit because of the dropped 
+plural in the routes:
+
+
+   - http://localhost:9292/events
+   - http://localhost:9292/event/en.2014_15/teams
+
+Might want to keep it always "events" for consistency. Very minor but 
+wanted to share. I
+
+On Saturday, September 27, 2014 4:25:07 PM UTC-4, Gerald Bauer wrote:
+>
+> Hello,
+>
+>   FYI: I've added some services to the new starter sample for Node.js now 
+> using the Express web library. Still early and rough. The server-side 
+> scripts include:
+>
+>    - sportdb.js   -- sqlite3 db access (queries)
+>    - app.js       -- HTTP JSON APIs (services)
+>    - server.js    -- startup server
+>
+>    To try it on your machine:
+>
+>  Step 0: Install node modules via the node package manager (npm). Type:
+>
+>     npm install
+>
+>  Step 1: Copy an SQLite database e.g. football.db into your folder.
+>
+>  Step 2: Startup the web service (HTTP JSON API). Type:
+>
+>    $ node ./server.js
+>
+>   That's it. Open your web browser and try some services running on your 
+> machine on port 9292 (e.g. localhost:9292). Example:
+>
+>   List all events:
+>
+>     http://localhost:9292/events
+>
+>   And so on. Now change the sources to fit your needs.  More info @ 
+> github.com/sportkit 
+>
+>     Cheers.
+>
+>
+------=_Part_643_220570484.1413544726222
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Very nice. I downloaded it and got it working pretty fast.=
+<div><br></div><div>As for the routes I got confused for a little bit becau=
+se of the dropped plural in the routes:</div><div><br></div><div><ul class=
+=3D"task-list" style=3D"box-sizing: border-box; padding: 0px 0px 0px 2em; m=
+argin-top: 0px; margin-bottom: 16px; color: rgb(51, 51, 51); font-family: '=
+Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-s=
+ize: 16px; line-height: 25.6000003814697px;"><li style=3D"box-sizing: borde=
+r-box;"><code style=3D"box-sizing: border-box; font-family: Consolas, 'Libe=
+ration Mono', Menlo, Courier, monospace; font-size: 14px; line-height: norm=
+al; padding-top: 0.2em; padding-bottom: 0.2em; border-top-left-radius: 3px;=
+ border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bott=
+om-left-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157);">http://lo=
+calhost:9292/events</code></li><li style=3D"box-sizing: border-box;"><code =
+style=3D"box-sizing: border-box; font-family: Consolas, 'Liberation Mono', =
+Menlo, Courier, monospace; font-size: 14px; line-height: normal; padding-to=
+p: 0.2em; padding-bottom: 0.2em; border-top-left-radius: 3px; border-top-ri=
+ght-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius=
+: 3px; background-color: rgba(0, 0, 0, 0.0392157);">http://localhost:9292/e=
+vent/en.2014_15/teams</code></li></ul><div>Might want to keep it always "ev=
+ents" for consistency. Very minor but wanted to share. I</div><br>On Saturd=
+ay, September 27, 2014 4:25:07 PM UTC-4, Gerald Bauer wrote:<blockquote cla=
+ss=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #=
+ccc solid;padding-left: 1ex;"><div dir=3D"ltr">Hello,<br><br>&nbsp; FYI: I'=
+ve added some services to the new starter sample for Node.js now using the =
+Express web library. Still early and rough. The server-side scripts include=
+:<br><br>&nbsp;&nbsp; - sportdb.js&nbsp;&nbsp; -- sqlite3 db access (querie=
+s)<br>&nbsp;&nbsp; - app.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- HTTP JSO=
+N APIs (services)<br>&nbsp;&nbsp; - server.js&nbsp;&nbsp;&nbsp; -- startup =
+server<br><br>&nbsp;&nbsp; To try it on your machine:<br><br>&nbsp;Step 0: =
+Install node modules via the node package manager (npm). Type:<br><br>&nbsp=
+;&nbsp;&nbsp; npm install<br><br>&nbsp;Step 1: Copy an SQLite database e.g.=
+ football.db into your folder.<br><br>&nbsp;Step 2: Startup the web service=
+ (HTTP JSON API). Type:<br><br>&nbsp;&nbsp; $ node ./server.js<br><br>&nbsp=
+; That's it. Open your web browser and try some services running on your ma=
+chine on port 9292 (e.g. localhost:9292). Example:<br><br>&nbsp; List all e=
+vents:<br><br>&nbsp;&nbsp;&nbsp; <a href=3D"http://localhost:9292/events" t=
+arget=3D"_blank" onmousedown=3D"this.href=3D'http://www.google.com/url?q\75=
+http%3A%2F%2Flocalhost%3A9292%2Fevents\46sa\75D\46sntz\0751\46usg\75AFQjCNG=
+CckFf1M9-7PKlYCjQort0QcW3ow';return true;" onclick=3D"this.href=3D'http://w=
+ww.google.com/url?q\75http%3A%2F%2Flocalhost%3A9292%2Fevents\46sa\75D\46snt=
+z\0751\46usg\75AFQjCNGCckFf1M9-7PKlYCjQort0QcW3ow';return true;">http://loc=
+alhost:9292/events</a><br><br>&nbsp; And so on. Now change the sources to f=
+it your needs.&nbsp; More info @ <a href=3D"http://github.com/sportkit" tar=
+get=3D"_blank" onmousedown=3D"this.href=3D'http://www.google.com/url?q\75ht=
+tp%3A%2F%2Fgithub.com%2Fsportkit\46sa\75D\46sntz\0751\46usg\75AFQjCNFdz0P9K=
+Q8-mYqa4HUK-MFsB_xFbg';return true;" onclick=3D"this.href=3D'http://www.goo=
+gle.com/url?q\75http%3A%2F%2Fgithub.com%2Fsportkit\46sa\75D\46sntz\0751\46u=
+sg\75AFQjCNFdz0P9KQ8-mYqa4HUK-MFsB_xFbg';return true;">github.com/sportkit<=
+/a> <br><br>&nbsp; &nbsp; Cheers.<br><br></div></blockquote></div></div>
+------=_Part_643_220570484.1413544726222--
+
+------=_Part_642_120230752.1413544726217--
+

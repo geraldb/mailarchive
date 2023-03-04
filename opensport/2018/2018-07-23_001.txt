@@ -1,0 +1,110 @@
+From 6581367141924077568@xxx Mon Jul 23 11:05:48 +0000 2018
+X-GM-THRID: 6581331949659357184
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 2002:a1c:342:: with SMTP id 63-v6mr780231wmd.1.1532343947986;
+        Mon, 23 Jul 2018 04:05:47 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:adf:ae12:: with SMTP id x18-v6ls2512074wrc.6.gmail; Mon, 23
+ Jul 2018 04:05:47 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpdNqTLg54Z9Gk00SUAaTH9XgW5HywBX6z6G1hNIbx6v8ArPM4J0wMJL8kYDV9KS/NBKUVBj
+X-Received: by 2002:adf:e348:: with SMTP id n8-v6mr1065551wrj.29.1532343947204;
+        Mon, 23 Jul 2018 04:05:47 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1532343947; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VJVUESvMRk/Yqf+pQXb6Rr4prBJxPOCr8RUiMSeT0I45cNV14owWG+N68TwiFcEvIn
+         orAon1Xsrwk6NHui1YRLZ0iMYZaXZC3+hed5ahIdVvxlYlkzxAKq3cYmp8ELQxfkvgB2
+         /+Ywe1qa++QGjt66upLBO+0pJji4QDYGD4Yzvhm05asludphzoNzXaMuxAU4Y8Ka58fg
+         xo1aTLXMtlcq0Zg3NEDdOcT9f8SOOvyV44NBK8X/NZtDLcbOjzHeI+GfwU9l6paBa59t
+         P2T/z8Hq/xBAnvr5nJ5VTtiIoObbYyhjxugmFDfZKHNbhy7MtYF0HrSwFjCHM2tsnGUr
+         QHUA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=nzITD9g4VlqJzfXXoojmmINHJtf8dyve3oAodioWuJM=;
+        b=HGLFsBtip7aY5y+ZuWzLiKyFPifEY3/pWUDmsRspmWN1A8tJj484OfeBMGqTVRZ2L+
+         E93swWf7SAh1TusrPjGJ0yNo4XRx+SemFg1Co4hriDDGOOBbIZH2LnzX02wdFyYO6Iy9
+         8K1esxDimKaM20BQ1LLA5q6yDJC84FIztT7jPDYq/NrliMHD3JcmXlXvvrBxGQ7qaVRS
+         2KG6PP+a2VIF2SbarCB7BwNwugo/eC4MjDyCW28TK+xfpGOumYeTPVC13sVhf+LfVZNM
+         kFXn4rdG6FVQpRIJ92VQl4e261fvgjcDwGccTci+Vw6fMue2Sx1r/45ii0gbB64v2YWf
+         4Afg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=fcVk3AHw;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x12f.google.com (mail-lf1-x12f.google.com. [2a00:1450:4864:20::12f])
+        by gmr-mx.google.com with ESMTPS id v15-v6si249805wmc.1.2018.07.23.04.05.47
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 23 Jul 2018 04:05:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12f as permitted sender) client-ip=2a00:1450:4864:20::12f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=fcVk3AHw;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x12f.google.com with SMTP id m12-v6so151270lfc.10
+        for <opensport@googlegroups.com>; Mon, 23 Jul 2018 04:05:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=nzITD9g4VlqJzfXXoojmmINHJtf8dyve3oAodioWuJM=;
+        b=fcVk3AHwj8s0huKBh87yWf/h8HugsuAtWyBoBxt+mEKEsOHKZRj8Zkskh20EftfUbJ
+         dwK7vp7vwKqqsHE2OLG5liZak3zQXv6jlP5bCvtYHheMR6njtj9t3pR5hHe2GVwbrsar
+         xIBdoVuiVo7/Cr/fGP7CJYQyVCfNtFOtNNchCEabjs2kaMJeUsuanZQQfkJVewBRF2f0
+         zd0227yPkukR+jOZkVYakt4ZeJycNR9pRJZfCw6aFvw+EZFYPkA7u2sRVmaD8DnXBCcC
+         ScmKxJmmbN1TmNER2i/4YkqUcm9BvmQ0IB1Mn8zHYr+BXX03BO1nVS3Q9+Ij27XZZv9M
+         WxoQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=nzITD9g4VlqJzfXXoojmmINHJtf8dyve3oAodioWuJM=;
+        b=lLCrjYr29P9CEeZrd2YqyVjks9oSuqnbuhbBDeggkNzqY9RLL7HTsrFISS72Gth+Gi
+         JaMl9y3nuyZtplcWvjxjw6F6InNxH0QMMknw7md6r8uYc6llt4t2rdySlj9tQJv8GllR
+         jVaiU+mECMx11pWTh9dMgQd5NZHy4ozsWJ3xPJuBEPF2f39iIZqiJCotw/7DWBPEt+tJ
+         7hv8a8KjHgGpE5TZArrzHRKmZPELCqc9uDt0nSP7WCP33NP82SvoNMuxjpw7MFKdLvHa
+         R6IGVxyuB8n9irYH7uVVLEPIe6//2TY3rGVdCXGD0BX9kg0wJ+15GBowRiz5JKiQZsrh
+         oLwg==
+X-Gm-Message-State: AOUpUlGUPT1TmHg0A55PEeG6ehnNnDv/G5T3xEduiPztp2sitkZ7Mk9L
+	pkhZWuRRANLiCqFwssjDpPDKxUNYa0/ZPeN5AruAhJ6x
+X-Received: by 2002:a19:7403:: with SMTP id v3-v6mr7011718lfe.97.1532343946750;
+ Mon, 23 Jul 2018 04:05:46 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:ab3:4c6b:0:0:0:0:0 with HTTP; Mon, 23 Jul 2018 04:05:46
+ -0700 (PDT)
+In-Reply-To: <ad91902f-73ae-4359-8921-d1eb8fa664b6@googlegroups.com>
+References: <ad91902f-73ae-4359-8921-d1eb8fa664b6@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 23 Jul 2018 13:05:46 +0200
+Message-ID: <CAAxEZd_yHaZoWeYkjqkvGCWry8p5-hK49gbMybFpZKbT1sGrCw@mail.gmail.com>
+Subject: Re: [opensport] footty README.md spelling mistake?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   thanks for reporting the typos. Great catch. Yes, it should always
+be footty with two tt's for tty which is short for teletype the
+traditional name for the command line in the old unix days.
+
+    Fixed and updated the readme. Cheers. Prost.
+
+2018-07-23 10:49 GMT+02:00 Marcel van Vuuren <mvanvuuren1970@gmail.com>:
+> is there a spelling mistake in the README.md
+> https://github.com/sportdb/footty
+>
+> in de text lines and the next day with footy yesterday: & and the next day
+> with footy y:
+> it seems that there is a letter t missing. footy instead of footty is this
+> correct?
+>
+> Marcel
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> To post to this group, send email to opensport@googlegroups.com.
+> Visit this group at https://groups.google.com/group/opensport.
+> For more options, visit https://groups.google.com/d/optout.
+

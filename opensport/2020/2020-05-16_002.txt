@@ -1,0 +1,161 @@
+From 6827453567836618752@xxx Sat May 16 14:46:49 +0000 2020
+X-GM-THRID: 6827453566769168384
+X-Received: by 2002:adf:8287:: with SMTP id 7mr10062705wrc.396.1589640408652;
+        Sat, 16 May 2020 07:46:48 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:adf:db47:: with SMTP id f7ls2104041wrj.8.gmail; Sat, 16 May
+ 2020 07:46:47 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyFdPwFEbpKhTIu5pANNRKDMOfCqVBBSEZ95gtd7ut1qCymdoRN9F0jgLVXawVj0wI+h5X0
+X-Received: by 2002:adf:c38c:: with SMTP id p12mr10468215wrf.357.1589640407513;
+        Sat, 16 May 2020 07:46:47 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1589640407; cv=none;
+        d=google.com; s=arc-20160816;
+        b=sCvFMmTRy1Ed1zbFOobuMmB8AEV7C6zt/+Ei7mYJnq9p9Fyb16ifCI6H2/OnvJW9LL
+         ktbPBHapJIpY8S+XSi+uPbmmpD4Dx0cjuOe3Rlkq0Q01Hi9iy4CLg0cQ17yItlQLr4s6
+         smRnKaRgZodvC1wvDEtodM5Mx/Xmhck9iEY8cvSc/PyGEuu5JkfXtvrhzaNMDzaI0uIG
+         xJsCPHuTjXUI6nmqWY4N3Z9rkh5kLM1m9rKRUKEEtoWD5coBmjByjOoqdx4W3ouz8aqn
+         vukyg2Zxx/D/BP7wtE56uh/9VdMlaDN5ercK2V98eQJiuLITAJYx4n2kzYG+9lLd0oHv
+         aBHw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=BGArcDS/zc3yZWx3L2dxCXZy8IAFbNmyKnvznN2lLJg=;
+        b=SanMLybCXe72qujz+Mep8dEqJjn6NN5s+4G2/W8HJGe42gVgDUslCPOU6NgbBhLHOm
+         8gAK2EqR/rzgu6gI2qAIph7uFQg4V+alxedyU0cvCgEYxakHnzdopsfxo8WbHlyNExSA
+         GIQizLGnCcw67gq2Tv8El/LdP+KkAElx/XLeCpBT24cse3VM7zbBeuSi7J1/UtgqpDE5
+         lCc44wDUMFmtFySkf/w/5EcgQcV8F6srU4abjnCacrphhcaBbaPtzgNWDngx9jOiPazZ
+         vQjlzU0pyXJK9ge3f3OBByhz7goO8rpKC3M2TDGGHioskLuvs2+R0rtPzn7oHDIPCRRH
+         bAJQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=IHzTyo43;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x236.google.com (mail-lj1-x236.google.com. [2a00:1450:4864:20::236])
+        by gmr-mx.google.com with ESMTPS id y12si1708897wmd.1.2020.05.16.07.46.47
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 16 May 2020 07:46:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::236 as permitted sender) client-ip=2a00:1450:4864:20::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=IHzTyo43;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x236.google.com with SMTP id h4so5241592ljg.12
+        for <opensport@googlegroups.com>; Sat, 16 May 2020 07:46:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=BGArcDS/zc3yZWx3L2dxCXZy8IAFbNmyKnvznN2lLJg=;
+        b=IHzTyo43B11H4HQVsP4JNeS50uGvxRVoR0yGyJFGk0hmqxfTsxvEBsZIOr0M8R08pK
+         0E6nObh4gXOpsm5nzB5t3ux8226R4Np+qbr1poPDH66r5n84bfUW9dME1hhvF4rRUoEx
+         ZaRu+DJICH9FmSlEmWp/ywXA1zS0iIbLpI5vmA2pAEses7xgAfdqnOF3yQfLR5kOuC2m
+         mgO3MgF5lqxp9uypaU41HXlVvIIVFbahCGeg1ZyByBebdtd74u49nCtFwAgiFNtMnW23
+         SiogyknYPHXjQeXvWjTvD/eEPcb2UhkFj8mNZFrl6D9uVWS7+Qti+Rq7nTtK3Ec9wkdk
+         1DRg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=BGArcDS/zc3yZWx3L2dxCXZy8IAFbNmyKnvznN2lLJg=;
+        b=ijjcghZUDAx46dc2+HG9fTvTISH9vFGEygo869vRzLSbU7IYwKid9ixEl1g/77KXIk
+         w6+GH/0eIkcNRzPX0T/1buFW9W90PFs2NIPGbDeHU41ZMpCTcN2uMHn9x0H6FskrtT6f
+         VcAAKgQefyLLPaDTY/yccTiwI12i0ZnTEL8mnziaTCQCa+6l+ErlpdK9JY8CO8cq6ZFn
+         x0TA23TIPGtfxNzCufECBoxlqS2tBGvqIssASiPk/aEW5xofkZSTESypVtRNcLowZfAR
+         FU1P70nK7uaH7O8Mk0gmUItRPnBAfQlf9ghnBajR7nlzgFctf4gCfLjFbbFuZsy0D1Dv
+         BvEA==
+X-Gm-Message-State: AOAM530d6dG7oLcvovKc086OXc1XWFRNxSIZZHh+o2jUPmow3JVBhquH
+	ZiY+aD39H6ylzjmGxFFFR5DpH3om49l05IiNGeM8dkBvWhM=
+X-Received: by 2002:a2e:a211:: with SMTP id h17mr5634426ljm.289.1589640406485;
+ Sat, 16 May 2020 07:46:46 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 16 May 2020 16:46:35 +0200
+Message-ID: <CAAxEZd_4AeNZ-TxpGb=973q2n=wQBRa6uTW6k559_c69q0vaMQ@mail.gmail.com>
+Subject: sportdb-importers Lib v1.0 - sport.db (incl. football)
+ comma-separated values (csv) match readers
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  I've put together the sportdb-importers library v1.0 [1] that lets
+you read in (import) match datafiles in comma-separated values (csv)
+format into any SQL database (using the sport.db schema / tables)
+using `SportDb.read_csv`.
+
+  Try it with the English Premier League e.g. 2019-20/eng.1.csv [2a]
+  or the Deutsche Bundesliga e.g. 2019-20/de.1.csv [2b], for example.
+
+  Show me the code! From the readme - here we script:
+
+Step 1
+
+Setup the (SQL) database. Let's use and build a single-file SQLite
+database (from scratch), as an example:
+
+```
+require 'sportdb/importers'
+
+SportDb.connect( adapter:  'sqlite3',
+                 database: './england.db' )
+SportDb.create_all       ## build database schema (tables, indexes, etc.)
+```
+
+
+Step 2
+
+Let's use the public domain football.csv datasets for England (see
+`footballcsv/england`, as an example:
+
+```
+Round, Date,              Team 1,               FT,  HT,  Team 2
+1,     (Fri)  9 Aug 2019, Liverpool FC,         4-1, 4-0, Norwich City FC
+1,     (Sat) 10 Aug 2019, West Ham United FC,   0-5, 0-1, Manchester City FC
+1,     (Sat) 10 Aug 2019, AFC Bournemouth,      1-1, 0-0, Sheffield United FC
+1,     (Sat) 10 Aug 2019, Burnley FC,           3-0, 0-0, Southampton FC
+1,     (Sat) 10 Aug 2019, Crystal Palace FC,    0-0, 0-0, Everton FC
+1,     (Sat) 10 Aug 2019, Watford FC,           0-3, 0-1, Brighton &
+Hove Albion FC
+1,     (Sat) 10 Aug 2019, Tottenham Hotspur FC, 3-1, 0-1, Aston Villa FC
+1,     (Sun) 11 Aug 2019, Leicester City FC,    0-0, 0-0,
+Wolverhampton Wanderers FC
+1,     (Sun) 11 Aug 2019, Newcastle United FC,  0-1, 0-0, Arsenal FC
+1,     (Sun) 11 Aug 2019, Manchester United FC, 4-0, 1-0, Chelsea FC
+...
+```
+(Source: england/2019-20/eng.1.csv)
+
+
+and let's try:
+
+```
+## assumes football.csv datasets for England in ./england directory
+##   see github.com/footballcsv/england
+SportDb.read_csv( './england/2019-20/eng.1.csv' )
+
+## let's try another season
+SportDb.read_csv( './england/2018-19/eng.1.csv' )
+SportDb.read_csv( './england/2018-19/eng.2.csv' )
+```
+
+All leagues, seasons, clubs, match days and rounds, match fixtures and results,
+and more are now in your (SQL) database of choice.
+
+
+Bonus: Let's import all datafiles for all seasons (from 1888-89 to today)
+for England, use:
+
+```
+## note: requires a local copy of the football.csv england datasets
+##          see https://github.com/footballcsv/england
+SportDb.read_csv( './england' )
+# -or-    use a zip archive
+SportDb.read_csv( './england.zip' )
+```
+
+   Enjoy the beautiful game. Cheers. Prost.
+
+
+[1]  https://github.com/sportdb/sport.db/tree/master/sportdb-importers
+[2a] https://github.com/footballcsv/england/blob/master/2010s/2019-20/eng.1.csv
+[2b] https://github.com/footballcsv/deutschland/blob/master/2010s/2019-20/de.1.csv
+

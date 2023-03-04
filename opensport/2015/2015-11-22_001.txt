@@ -1,0 +1,61 @@
+From 6219895432543207424@xxx Sun Nov 22 08:50:58 +0000 2015
+X-GM-THRID: 6216913658664976384
+X-Received: by 10.66.102.106 with SMTP id fn10mr19071215pab.5.1448182257901;
+        Sun, 22 Nov 2015 00:50:57 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.96.100 with SMTP id j91ls2382656qge.57.gmail; Sun, 22 Nov
+ 2015 00:50:57 -0800 (PST)
+X-Received: by 10.129.4.135 with SMTP id 129mr18336030ywe.41.1448182257104;
+        Sun, 22 Nov 2015 00:50:57 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x232.google.com (mail-ig0-x232.google.com. [2607:f8b0:4001:c05::232])
+        by gmr-mx.google.com with ESMTPS id jc2si316484igb.3.2015.11.22.00.50.57
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 22 Nov 2015 00:50:57 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::232 as permitted sender) client-ip=2607:f8b0:4001:c05::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x232.google.com with SMTP id xm8so39206918igb.1
+        for <opensport@googlegroups.com>; Sun, 22 Nov 2015 00:50:57 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=CRwN14gIKHTYtz3K+2O6PGDxhsPe5gp9VTfS/SLtPmY=;
+        b=c9nILq9kqdcSfUfx4BkqUS8pseUvnjqdjy4JTzbFa1WOSvPuDW/JfzpOsfuZGSXjH9
+         szpo4iYCYBlmC7TLwaiWfWLDIT1/Ko2XXp8DoCU8sXUD7zCabQswQ5PqF1J6ykeokJbB
+         MfOnHQ9QQNjTowR4XxFzCN2FUOzfQSZEQTPfjqtBEPVM0t5nqopOwT5Jfetqo5PqKdLs
+         Ie4gWfuBVq4RZyxD351WgsyqVFTGAaSb+7PnBWLLm9dHB+VHqSb+prNVFQqtjctV547J
+         6DomMMYP73AVCHwWxOgSeATmw1Ci5K/Si2lskmXgplA5CkUPym6NO4s7E9+zHPbhrTxi
+         A+8g==
+MIME-Version: 1.0
+X-Received: by 10.50.43.161 with SMTP id x1mr6770621igl.64.1448182256942; Sun,
+ 22 Nov 2015 00:50:56 -0800 (PST)
+Received: by 10.107.140.12 with HTTP; Sun, 22 Nov 2015 00:50:56 -0800 (PST)
+In-Reply-To: <80a30c99-70a8-4869-b8d9-7dca286495f7@googlegroups.com>
+References: <74d57559-7e13-4238-ad20-98c00595424f@googlegroups.com>
+	<CAAxEZd_VwuR+g7+trrV4OvoZGtRGN0TuN4KUgvM+rreiXGg9pw@mail.gmail.com>
+	<b8299e26-8ce6-4f47-a6c4-7d11188c2fd0@googlegroups.com>
+	<CAAxEZd87moLskxiBU9f7Ep9uk7yO8e-+4hR6qZkH2e5y-bzT4w@mail.gmail.com>
+	<b8cf56b9-673f-4d95-b0e2-7ceb10829a40@googlegroups.com>
+	<CAAxEZd9SdGdPTAtqyPB1+gmshFBXnxTdVZkORBDBrgESe20O8w@mail.gmail.com>
+	<80a30c99-70a8-4869-b8d9-7dca286495f7@googlegroups.com>
+Date: Sun, 22 Nov 2015 09:50:56 +0100
+Message-ID: <CAAxEZd8CFRnz7kK36RUS_YMLNHZf4ziZ6Y5a9gD_UgFjHAFRxw@mail.gmail.com>
+Subject: Re: [opensport] World Cup 2014 Dataset
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Looks good. Cheers. PS: If you're trying to learn to use the
+command line I suggest looking into some books e.g. Learn Enough
+Command Line to Be Dangerous by Michael Hartl   or something.
+
+[1] www.learnenough.com/command-line-tutorial
+

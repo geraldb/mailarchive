@@ -1,0 +1,81 @@
+From 540882763776@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 533939093504
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,efd34bffe5468fbb
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.204.31.104 with SMTP id x40mr63006bkc.15.1237496045835;
+        Thu, 19 Mar 2009 13:54:05 -0700 (PDT)
+Return-Path: <gerald@vanbeta.com>
+Received: from mu-out-0910.google.com (mu-out-0910.google.com [209.85.134.191])
+        by gmr-mx.google.com with ESMTP id 14si94946bwz.1.2009.03.19.13.54.05;
+        Thu, 19 Mar 2009 13:54:05 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.134.191 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.134.191;
+Authentication-Results: gmr-mx.google.com; spf=neutral (google.com: 209.85.134.191 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by mu-out-0910.google.com with SMTP id w8so236909mue.0
+        for <webslideshow@googlegroups.com>; Thu, 19 Mar 2009 13:54:05 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.103.227.13 with SMTP id e13mr1313001mur.20.1237496045353; Thu, 
+	19 Mar 2009 13:54:05 -0700 (PDT)
+In-Reply-To: <2be1ac43-a916-4e09-a9c0-99e1254b6532@d25g2000prn.googlegroups.com>
+References: <2be1ac43-a916-4e09-a9c0-99e1254b6532@d25g2000prn.googlegroups.com>
+Date: Thu, 19 Mar 2009 21:54:05 +0100
+Message-ID: <1f058eab0903191354s34e60a33n38b673fc1dd3426d@mail.gmail.com>
+Subject: Re: [slideshow] How to use S5 blue template with S9
+From: Gerald Bauer <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello Mohan Gupta,
+
+> What I really need are the details I should have for the manifest file
+> and header.html.erb, style.css.erb in order to get S5 blue template to
+> work.
+
+  I bundled up and uploaded a new sample S5 package with themes
+(including blue).
+ It's online @ http://github.com/geraldb/sandbox/tree/master/s5themes
+
+  The sample includes all the works e.g. the manifest, header.html.erb, etc.
+
+  You can download it using the -f/--fetch option e.g. issue the command:
+
+$ slideshow -f http://github.com/geraldb/sandbox/raw/master/s5themes/s5themes.txt
+
+  The downloaded templates get stored by default in
+~/.slideshow/templates/s5themes
+
+
+  To use the new templates use the -t/--template MANIFEST option e.g.
+issue, for example:
+
+$ slideshow -t s5themes.txt sample -o slides
+
+Note, in your sample.textile source you will need to set the required
+theme e.g. (theme: blue # or i18n|pixel|default)
+
+sample.textile:
+---------------
+theme: blue
+author: Your Name Here
+company: Your Company Here
+title: Your Slide Show Title Here
+subtitle: Your Subtitle Here
+footer: Your Footer Here
+subfooter: Your Subfooter Here
+
+
+h1. Slide Title Here
+
+* Point One Here
+* Point Two Here
+
+h1. Another Slide Title Here
+
+Questions? Comments?
+
+
+  That's it basically. Let me know if it works or if you have any
+further questions or comments. Cheers.
+

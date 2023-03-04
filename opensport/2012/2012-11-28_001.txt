@@ -1,0 +1,46 @@
+From 52183433216@xxx Tue Jun 16 00:17:26 +0000 2015
+X-GM-THRID: 47976546304
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,9b330d42373b42a
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+Received: by 10.224.219.144 with SMTP id hu16mr11894555qab.1.1354092960251;
+        Wed, 28 Nov 2012 00:56:00 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.49.94.48 with SMTP id cz16ls2842007qeb.72.gmail; Wed, 28 Nov
+ 2012 00:56:00 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.49.87.9 with SMTP id t9mr3913089qez.16.1354092960114; Wed, 28
+ Nov 2012 00:56:00 -0800 (PST)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by f19g2000vbv.googlegroups.com with HTTP; Wed, 28 Nov 2012 00:56:00
+ -0800 (PST)
+Date: Wed, 28 Nov 2012 00:56:00 -0800 (PST)
+In-Reply-To: <71e210ba-a58a-4f18-96ac-7e2f966a3be3@googlegroups.com>
+References: <71e210ba-a58a-4f18-96ac-7e2f966a3be3@googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EKCj14UFqxiaweSBuTo0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0,gzip(gfe)
+X-Google-IP: 178.190.96.46
+Message-ID: <f82b4f52-f293-46ea-aec2-346aa9c30c66@f19g2000vbv.googlegroups.com>
+Subject: Re: great first stones
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Open Sports Database (sport.db) and Friends" <opensport@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  Thanks for your kind words. The Sportbook rails app uses its own
+login/logout code for now. See [1].
+Cheers.
+
+[1] https://github.com/geraldb/sportbook/blob/master/app/controllers/sessions_controller.rb
+

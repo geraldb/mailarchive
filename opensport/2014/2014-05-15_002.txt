@@ -1,0 +1,129 @@
+From 691209764864@xxx Tue Jun 16 00:16:59 +0000 2015
+X-GM-THRID: 659563741184
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,57206a7667e526a
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.54.169 with SMTP id k9mr770437lbp.1.1400136962269;
+        Wed, 14 May 2014 23:56:02 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.11.226 with SMTP id t2ls1210268wib.12.canary; Wed, 14 May
+ 2014 23:56:01 -0700 (PDT)
+X-Received: by 10.180.14.102 with SMTP id o6mr830092wic.0.1400136961832;
+        Wed, 14 May 2014 23:56:01 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x229.google.com (mail-wi0-x229.google.com [2a00:1450:400c:c05::229])
+        by gmr-mx.google.com with ESMTPS id q13si6707wiw.1.2014.05.14.23.56.01
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 14 May 2014 23:56:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) client-ip=2a00:1450:400c:c05::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f169.google.com with SMTP id hi2so85102wib.4
+        for <opensport@googlegroups.com>; Wed, 14 May 2014 23:56:01 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=Ttol7Cb7V7Co3PawfRVBw4id65/Km1lIvnTnczi1kQQ=;
+        b=XyIf7NeqFjJByDhu4emntWeeJuhTmBCiTgWuw2SzlhPE7NJ+Mc5evumZMtZ+4ROCDc
+         sM2nG/9MdhAxuGBCaw48H1159P8l9Yr6EowbxPCKyw46M9CSN3KOlqUZKLdxjj8OHe1f
+         dDK13t5yVXdmCFXI/ATpZ9n3MrA05xw6K87jM9S7n8aTwfItJp8mjuCjAegDtFSR91nz
+         7bglvlJnKuB2wHL1+TwQNDhTzBywpz5rB5SmN3TjN5cruWeTk/8ne40AGGDiw3HnkAQ3
+         bzzfUmh0wI+dKHdY8aWHNoH2VXXy3oUK+JY9zZ++PcyxbbxkyHcrFDy/QwoQAqvuqSVF
+         Ke5w==
+MIME-Version: 1.0
+X-Received: by 10.194.189.116 with SMTP id gh20mr6925685wjc.41.1400136961753;
+ Wed, 14 May 2014 23:56:01 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Wed, 14 May 2014 23:56:01 -0700 (PDT)
+In-Reply-To: <dcc74fd7-3922-4a8f-8d0d-4cb51750e3be@googlegroups.com>
+References: <1f778ca9-5f50-4d9a-a298-6007c48991cc@googlegroups.com>
+	<e2e0205d-767c-4b6a-b7fd-c7beaf5c902f@googlegroups.com>
+	<dcc74fd7-3922-4a8f-8d0d-4cb51750e3be@googlegroups.com>
+Date: Thu, 15 May 2014 08:56:01 +0200
+Message-ID: <CAAxEZd-UfoaBSmeOKALTu5x6h2s0367mdbVH_jrByCx0T3cysw@mail.gmail.com>
+Subject: Re: [opensport] Re: Presentation and question about live scores
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello Orlando,
+
+> 5 minutes sounds me like as "live". I don't know if exists an open
+> database that I can query. My idea is send push notifications from a
+> remote service by using a trigger. For now I'll make it simple. I'll writ=
+e the
+> scores manually.
+
+  To track / watch all 64 world cup matches and enter all data in less
+than five minutes might be a challenge.
+
+   The football.db- uses plain text files -  that get imported into
+your database of choice - as it's source.   Thus, one way (the
+"official" way) might be:
+  - Change  world-cup/2014/cup.txt and save/commit
+  - Git web hook pings your web app (online db w/ built-in json service)
+  - web app fetches (via HTTP GET) updated cup.txt and reads/imports into d=
+b
+  - web app pushes changes to registers apps
+  - and so on.
+
+  I'd say the challenge will be getting the data entered on time.
+Might also be easier / more manageable to enter the data into the db
+directly (not via git). Sorry I have no magic formula. Your're welcome
+to try what works for you.    Cheers.
+
+
+2014-05-15 0:36 GMT+02:00 Orlando Alem=C3=A1n Ortiz <orlandoaleortiz@gmail.=
+com>:
+> Hi again!
+>
+> El mi=C3=A9rcoles, 14 de mayo de 2014 21:44:18 UTC+1, Gerald Bauer escrib=
+i=C3=B3:
+>>
+>> Hello Orlando,
+>>
+>>    Thanks for your interest in football.db.  Any help appreciated. Maybe
+>> you can share an example of your JSON file - this will help adding what'=
+s
+>> missing (e.g. stadium, group, etc.) You know it better ;-)
+>
+>
+> Yes, I can. I'll upload some examples and code to my github account as so=
+on
+> as I can.  ;-)
+>
+>> > Is there any way to get the results live?
+>>
+>>     Depends on how often the results gets updated.  If there's any
+>> interest - one way is to work out a schedule for entering updates.
+>>
+>>
+>>    What is your definition of live?  An update every minute? Is that goo=
+d
+>> enough? Every five minutes? Every ten seconds?
+>
+>
+> 5 minutes sounds me like as "live". I don't know if exists an open databa=
+se
+> that I can query. My idea is send push notifications from a remote servic=
+e
+> by using a trigger. For now I'll make it simple. I'll write the scores
+> manually.
+>
+>>
+>>
+>>    Cheers.
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+

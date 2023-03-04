@@ -1,0 +1,226 @@
+From 570572144640@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 566485843968
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,340fbfdd169c6c9b
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.87.71 with SMTP id v7mr460539wiz.2.1399053007658;
+        Fri, 02 May 2014 10:50:07 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.94.196 with SMTP id de4ls128200wib.25.gmail; Fri, 02 May
+ 2014 10:50:07 -0700 (PDT)
+X-Received: by 10.112.168.198 with SMTP id zy6mr371009lbb.15.1399053007297;
+        Fri, 02 May 2014 10:50:07 -0700 (PDT)
+Received: by 10.194.51.226 with SMTP id n2mswjo;
+        Fri, 2 May 2014 05:10:33 -0700 (PDT)
+X-Received: by 10.180.187.18 with SMTP id fo18mr269482wic.5.1399032633110;
+        Fri, 02 May 2014 05:10:33 -0700 (PDT)
+Return-Path: <ulrich.atz@theodi.org>
+Received: from mail-la0-f44.google.com (mail-la0-f44.google.com [209.85.215.44])
+        by gmr-mx.google.com with ESMTPS id u49si421904eeo.1.2014.05.02.05.10.33
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 02 May 2014 05:10:33 -0700 (PDT)
+Received-SPF: none (google.com: ulrich.atz@theodi.org does not designate permitted sender hosts) client-ip=209.85.215.44;
+Authentication-Results: gmr-mx.google.com;
+       spf=neutral (google.com: ulrich.atz@theodi.org does not designate permitted sender hosts) smtp.mail=ulrich.atz@theodi.org
+Received: by mail-la0-f44.google.com with SMTP id hr17so3029494lab.31
+        for <opensport@googlegroups.com>; Fri, 02 May 2014 05:10:32 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to:content-type;
+        bh=nm4BjRiwjIwotQH2LCLTlu+w8LgvEWwPuAuIP2ZMr8w=;
+        b=TjS2rzQPuO4+fuqi3LzpNRxQu0THvgk4Eltv3VH8Uf4BHwyy5SPSFhrTE7OZjfmQrj
+         2TPordqPJjwGmBvQp8B+sbUAAXgArpoNMbwkZ5nvvptIBH4dqxkBfMtlupgKXA4vlwNs
+         hR85LGBn6quzqhwRZNtR0uGWSzlM0dH1g8CX2JXRYVHRy4zyHSBX46YGMlmeJ4UK5BSG
+         SeRCY7H3hUPpOytBKZpl6Ui7Saf8buNU+jaE+lt6gGG5Me/CbnJ4B02G/4hCDk/egS4Q
+         kxU5ARTickCMY8te6CxSXfjk4eXRxVCai/iHewucJTnPz+/2RsnbXR86Y6KurqH0isHQ
+         QVdQ==
+X-Gm-Message-State: ALoCoQnR7GU71GCfRIkYJ5GTJX3GIFNSxZ/fa6cgNX3fAQGbkjaxIBiGhQOlQd7s2J+m2dinYROQ
+X-Received: by 10.112.126.7 with SMTP id mu7mr11331960lbb.17.1399032632878;
+ Fri, 02 May 2014 05:10:32 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.112.51.98 with HTTP; Fri, 2 May 2014 05:10:12 -0700 (PDT)
+In-Reply-To: <CAAxEZd9zHy=AFegvg7JAq4ecTiEoGOtSYg+t+E8tvJvn45Ea4A@mail.gmail.com>
+References: <CAAxEZd9zHy=AFegvg7JAq4ecTiEoGOtSYg+t+E8tvJvn45Ea4A@mail.gmail.com>
+From: Ulrich Atz <ulrich.atz@theodi.org>
+Date: Fri, 2 May 2014 13:10:12 +0100
+Message-ID: <CAHTkVuu77Oj6YucbR8tFRjZLPmQZiZGwm3KGbVwJqj1HAajtXw@mail.gmail.com>
+Subject: Re: [opensport] Slide Deck - Using Open Football Data - Get Ready for
+ the World Cup in Brazil 2014 w/ JavaScript
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary=001a11c36b0e1cba9b04f869ab35
+
+--001a11c36b0e1cba9b04f869ab35
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Gerald,
+
+this is great! Can we have a conversation of whether we could create a
+media story around this?
+
+At the minimum, I can suggest a blog post on our website.
+
+Cheers,
+
+Ulrich
+
+
+On 1 May 2014 13:03, Gerald Bauer <gerald.bauer@gmail.com> wrote:
+
+> Hello,
+>
+>   FYI:  If anyone is interested the slide deck [1] (and an all-in-one
+> page version)[2] for yesterday's Vienna.js talk titled "Using Open
+> Football Data - Get Ready for the World Cup in Brazil 2014 w/
+> JavaScript".
+>
+>    The agenda includes:
+>
+>   - Part I: Basics
+>
+>     - World Cup in Brazil 2014 - The World's Biggest (Sport) Event
+>     - Let's Use an HTTP JSON API
+>     - What's `football.db?`
+>     - What's Open Data? - Terms of Use
+>         - Public Domain. No Rights Reserved. vs. =C2=A9 FIFA 2014. All
+> Rights Reserved.
+>     - What's Structured Data?
+>         - Ex. FIFA - Free-Form Text vs. Structured Data
+>         - Ex. Wikipedia - Free-Form Text vs. Structured Data
+>         - Football Match Schedule Mini Language - New Structured Data
+> Format Example
+>
+>   - Part II: Code, Code, Code
+>
+>     - Matchday Widget Example - `footballdb.widget.js` - v1.0
+>     - Matchday Widget Example - `footballdb.widget.js` - v2.0
+>     - Web Components Machinery - New Web Standard Building Blocks
+>     - Matchday Widget Example - `<football-js>` - v3.0
+>
+>
+>    Questions or comments? As always sent them along.  Cheers.
+>
+> [1] slideshow-s9.github.io/open_data_world_cup_with_js.html
+> [2]
+> github.com/openfootball/openfootball.github.io/blob/master/talks/open_dat=
+a_world_cup_with_js.md
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+>
+
+
+
+--=20
+Ulrich Atz, Head of Statistics
+theodi.org | 65 Clifton Street, London, EC2A 4JE
++44 (0)20 3598 9395 | @statshero <https://twitter.com/statshero>
+
+--001a11c36b0e1cba9b04f869ab35
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald,<div><br></div><div>this is great! Can we have a=
+ conversation of whether we could create a media story around this?=C2=A0</=
+div><div><br></div><div>At the minimum, I can suggest a blog post on our we=
+bsite.</div>
+
+<div><br></div><div>Cheers,</div><div><br></div><div>Ulrich</div></div><div=
+ class=3D"gmail_extra"><br><br><div class=3D"gmail_quote">On 1 May 2014 13:=
+03, Gerald Bauer <span dir=3D"ltr">&lt;<a href=3D"mailto:gerald.bauer@gmail=
+.com" target=3D"_blank">gerald.bauer@gmail.com</a>&gt;</span> wrote:<br>
+
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">Hello,<br>
+<br>
+=C2=A0 FYI: =C2=A0If anyone is interested the slide deck [1] (and an all-in=
+-one<br>
+page version)[2] for yesterday&#39;s Vienna.js talk titled &quot;Using Open=
+<br>
+Football Data - Get Ready for the World Cup in Brazil 2014 w/<br>
+JavaScript&quot;.<br>
+<br>
+=C2=A0 =C2=A0The agenda includes:<br>
+<br>
+=C2=A0 - Part I: Basics<br>
+<br>
+=C2=A0 =C2=A0 - World Cup in Brazil 2014 - The World&#39;s Biggest (Sport) =
+Event<br>
+=C2=A0 =C2=A0 - Let&#39;s Use an HTTP JSON API<br>
+=C2=A0 =C2=A0 - What&#39;s `football.db?`<br>
+=C2=A0 =C2=A0 - What&#39;s Open Data? - Terms of Use<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 - Public Domain. No Rights Reserved. vs. =C2=A9=
+ FIFA 2014. All<br>
+Rights Reserved.<br>
+=C2=A0 =C2=A0 - What&#39;s Structured Data?<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 - Ex. FIFA - Free-Form Text vs. Structured Data=
+<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 - Ex. Wikipedia - Free-Form Text vs. Structured=
+ Data<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 - Football Match Schedule Mini Language - New S=
+tructured Data<br>
+Format Example<br>
+<br>
+=C2=A0 - Part II: Code, Code, Code<br>
+<br>
+=C2=A0 =C2=A0 - Matchday Widget Example - `footballdb.widget.js` - v1.0<br>
+=C2=A0 =C2=A0 - Matchday Widget Example - `footballdb.widget.js` - v2.0<br>
+=C2=A0 =C2=A0 - Web Components Machinery - New Web Standard Building Blocks=
+<br>
+=C2=A0 =C2=A0 - Matchday Widget Example - `&lt;football-js&gt;` - v3.0<br>
+<br>
+<br>
+=C2=A0 =C2=A0Questions or comments? As always sent them along. =C2=A0Cheers=
+.<br>
+<br>
+[1] <a href=3D"http://slideshow-s9.github.io/open_data_world_cup_with_js.ht=
+ml" target=3D"_blank">slideshow-s9.github.io/open_data_world_cup_with_js.ht=
+ml</a><br>
+[2] <a href=3D"http://github.com/openfootball/openfootball.github.io/blob/m=
+aster/talks/open_data_world_cup_with_js.md" target=3D"_blank">github.com/op=
+enfootball/openfootball.github.io/blob/master/talks/open_data_world_cup_wit=
+h_js.md</a><br>
+
+
+<span class=3D"HOEnZb"><font color=3D"#888888"><br>
+--<br>
+You received this message because you are subscribed to the Google Groups &=
+quot;Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends=
+&quot; group.<br>
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:opensport%2Bunsubscribe@googlegroups.com">openspo=
+rt+unsubscribe@googlegroups.com</a>.<br>
+For more options, visit <a href=3D"https://groups.google.com/d/optout" targ=
+et=3D"_blank">https://groups.google.com/d/optout</a>.<br>
+</font></span></blockquote></div><br><br clear=3D"all"><div><br></div>-- <b=
+r><div dir=3D"ltr"><font color=3D"#666666" face=3D"Helvetica Neue" style=3D=
+"font-size:12px"><span style=3D"vertical-align:baseline">Ulrich Atz, Head o=
+f Statistics</span><br>
+
+</font><div style=3D"color:rgb(80,0,80);font-family:&#39;Helvetica Neue&#39=
+;,Helvetica,Arial,sans-serif;font-size:12px"><a href=3D"http://theodi.org/"=
+ style=3D"color:rgb(17,85,204);font-family:&#39;Helvetica Neue&#39;" target=
+=3D"_blank">theodi.org</a>=C2=A0<font color=3D"#666666" style=3D"font-famil=
+y:&#39;Helvetica Neue&#39;">|=C2=A0</font><span style=3D"font-family:&#39;H=
+elvetica Neue&#39;;vertical-align:baseline"><font color=3D"#666666">65 Clif=
+ton Street, London, EC2A 4JE</font></span></div>
+
+<div style=3D"color:rgb(80,0,80);font-family:&#39;Helvetica Neue&#39;,Helve=
+tica,Arial,sans-serif;font-size:12px"><font color=3D"#666666" face=3D"Helve=
+tica Neue"><a value=3D"+442035989395" style=3D"color:rgb(17,85,204)">+44 (0=
+)20 3598 9395</a>=C2=A0|=C2=A0</font><a href=3D"https://twitter.com/statshe=
+ro" style=3D"color:rgb(17,85,204)" target=3D"_blank">@statshero</a></div>
+
+</div>
+</div>
+
+--001a11c36b0e1cba9b04f869ab35--
+

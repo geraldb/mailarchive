@@ -1,0 +1,59 @@
+From 136536129536@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 103662223360
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,dace1ed56b0a7281
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.150.49.11 with SMTP id w11mr124892ybw.22.1220165110416; Sat, 
+	30 Aug 2008 23:45:10 -0700 (PDT)
+Date: Sat, 30 Aug 2008 23:45:10 -0700 (PDT)
+In-Reply-To: <48B9967D.3060207@gmail.com>
+X-IP: 70.79.19.119
+References: <b521af78-25b2-449d-adf8-d32aebe3ae35@v39g2000pro.googlegroups.com> 
+	<e936ac58-89e7-4965-ae95-93cc51559306@p10g2000prf.googlegroups.com> 
+	<558343f5-a8d2-4976-8003-f76a507c9eb0@p10g2000prf.googlegroups.com> 
+	<e97d8aa4-10cb-4ab0-8170-a0c55ab3ca75@r15g2000prh.googlegroups.com> 
+	<48B9967D.3060207@gmail.com>
+User-Agent: G2/1.0
+X-Google-Token: tanP8AwAAAB-1-fl-l5vEQokc_Tt-qg5
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.1) 
+	Gecko/2008070208 Firefox/3.0.1,gzip(gfe),gzip(gfe)
+Message-ID: <ca8f9cbc-6352-408b-8308-06215af114db@b30g2000prf.googlegroups.com>
+Subject: Re: PATCH for gradient keywords bug
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+> > I will include your code later today (I'm on Pacific Time) and
+> > upload a new gem (e.g 6.0.1) to get the gradient bug fixed.
+>
+> I've done some more clean up and re-uploaded here (the previous
+> patch broke the "- footer not found -" and other messages that would
+> normally appear):
+>
+> http://snk.rubyforge.org/tmp/slideshow.rbhttp://snk.rubyforge.org/tmp/slideshow-0.6.diff
+>
+> Please review & include this new patch instead.
+
+  Thanks again. I've updated the code and uploaded a new gem (e.g.
+6.0.1) to fix the gradient bug. It now works again as advertised.
+
+  I've also changed the footer and subfooter headings/headers to
+optional using empty (string) defaults so the -footer not found- and -
+subfooter not found- messages will no longer show up in your slide
+show if undefined.
+
+  Lastly, if you're wondering why I haven't included your code that
+"sanitizes"/normalizes values: Please, note that not all values get
+normalized, and, thus, the changing of - to _ cannot get generalized.
+It's more an exception than a rule. Lets say you set
+
+title: Merb - All you Need, None You Don't
+
+  than you'd expect your title to be unchanged. Again thanks for your
+patch and all the best for your presentation. Cheers.
+

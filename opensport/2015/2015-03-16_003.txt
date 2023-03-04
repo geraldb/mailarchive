@@ -1,0 +1,108 @@
+From 2525598056448@xxx Tue Jun 16 00:16:39 +0000 2015
+X-GM-THRID: 2513988222976
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b207fcdca166b700
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.52.90.11 with SMTP id bs11mr45733501vdb.8.1426512870411;
+        Mon, 16 Mar 2015 06:34:30 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.34.46 with SMTP id k43ls2617836qgk.27.gmail; Mon, 16 Mar
+ 2015 06:34:30 -0700 (PDT)
+X-Received: by 10.140.18.213 with SMTP id 79mr926626qgf.38.1426512870076;
+        Mon, 16 Mar 2015 06:34:30 -0700 (PDT)
+X-Google-Doc-Id: 2a2d1d0495d20d20
+X-Google-Web-Client: true
+Date: Mon, 16 Mar 2015 06:34:29 -0700 (PDT)
+From: Corneil du Plessis <corneil.duplessis@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <f3131b38-1312-47ac-8359-e2f4330189b1@googlegroups.com>
+In-Reply-To: <CAAxEZd87cJbDt+s9riziPS-zr09xhiF5mAUP6Tq=ciot3emPDg@mail.gmail.com>
+References: <f613f935-42ed-407c-b7e3-549fdcecd8fc@googlegroups.com>
+ <CAAxEZd87cJbDt+s9riziPS-zr09xhiF5mAUP6Tq=ciot3emPDg@mail.gmail.com>
+Subject: Re: [opensport] Empty tables after build
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_383_691701190.1426512869282"
+X-Google-Token: EOW3m6gF91lP3OrFt2A0
+X-Google-IP: 105.208.145.196
+
+------=_Part_383_691701190.1426512869282
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_384_1092919119.1426512869282"
+
+------=_Part_384_1092919119.1426512869282
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I did the following:
+in openfootball
+mkdir newdir
+cd newdir
+sportdb new worldcup
+
+afterwards open sport.db
+The table roster is empty.
+
+On Sunday, 15 March 2015 22:56:35 UTC+2, Gerald Bauer wrote:
+>
+> Hello, 
+>    Thanks for trying football.db    To get started it is now 
+> recommended to use Datafiles [1].For example, to build yourself a 
+> football.db using the worldcup datasets use: 
+>
+> $ sportdb new worldcup 
+> and for the spanish liga 
+> $ sportdb new es2014-15 
+>
+> Note: Always start spordb new in a new folder/directory   e.g. mkdir 
+> es; cd es; sportdb new es2014-15   otherwise you will get your 
+> Datafiles mixed up. 
+>
+> > I end up with now rows in assocs or assocs_assocs. 
+>
+>   The football assocications is an optional datasets [2]. It is not 
+> included in any default build. The national teams get stored in the 
+> teams table - if you import the world cup they should be read-to-go. 
+>
+>   Not sure if this answers your questions. 
+>
+>   Cheers. 
+>
+> [1] https://github.com/openfootball/datafile 
+> [2] https://github.com/openfootball/assocs 
+>
+
+------=_Part_384_1092919119.1426512869282
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">I did the following:<div>in openfootball</div><div>mkdir newdir</div><div>cd newdir</div><div>sportdb new worldcup</div><div><br></div><div>afterwards open sport.db</div><div>The table roster is empty.<br><br>On Sunday, 15 March 2015 22:56:35 UTC+2, Gerald Bauer  wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>&nbsp; &nbsp;Thanks for trying football.db &nbsp; &nbsp;To get started it is now
+<br>recommended to use Datafiles [1].For example, to build yourself a
+<br>football.db using the worldcup datasets use:
+<br>
+<br>$ sportdb new worldcup
+<br>and for the spanish liga
+<br>$ sportdb new es2014-15
+<br>
+<br>Note: Always start spordb new in a new folder/directory &nbsp; e.g. mkdir
+<br>es; cd es; sportdb new es2014-15 &nbsp; otherwise you will get your
+<br>Datafiles mixed up.
+<br>
+<br>&gt; I end up with now rows in assocs or assocs_assocs.
+<br>
+<br>&nbsp; The football assocications is an optional datasets [2]. It is not
+<br>included in any default build. The national teams get stored in the
+<br>teams table - if you import the world cup they should be read-to-go.
+<br>
+<br>&nbsp; Not sure if this answers your questions.
+<br>
+<br>&nbsp; Cheers.
+<br>
+<br>[1] <a href="https://github.com/openfootball/datafile" target="_blank" rel="nofollow" onmousedown="this.href='https://www.google.com/url?q\75https%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\46sa\75D\46sntz\0751\46usg\75AFQjCNFVeAE8Za-R20bAXFhVtRKEGiIMZQ';return true;" onclick="this.href='https://www.google.com/url?q\75https%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\46sa\75D\46sntz\0751\46usg\75AFQjCNFVeAE8Za-R20bAXFhVtRKEGiIMZQ';return true;">https://github.com/<wbr>openfootball/datafile</a>
+<br>[2] <a href="https://github.com/openfootball/assocs" target="_blank" rel="nofollow" onmousedown="this.href='https://www.google.com/url?q\75https%3A%2F%2Fgithub.com%2Fopenfootball%2Fassocs\46sa\75D\46sntz\0751\46usg\75AFQjCNGlYIIlamD62wxDbPm48usVgyMUYw';return true;" onclick="this.href='https://www.google.com/url?q\75https%3A%2F%2Fgithub.com%2Fopenfootball%2Fassocs\46sa\75D\46sntz\0751\46usg\75AFQjCNGlYIIlamD62wxDbPm48usVgyMUYw';return true;">https://github.com/<wbr>openfootball/assocs</a>
+<br></blockquote></div></div>
+------=_Part_384_1092919119.1426512869282--
+------=_Part_383_691701190.1426512869282--
+

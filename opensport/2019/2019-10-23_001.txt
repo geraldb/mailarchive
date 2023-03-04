@@ -1,0 +1,151 @@
+From 6751057739412144128@xxx Wed Oct 23 18:19:08 +0000 2019
+X-GM-THRID: 6751057739343986688
+X-Received: by 2002:a1c:2e94:: with SMTP id u142mr1061625wmu.69.1571853118947;
+        Wed, 23 Oct 2019 10:51:58 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a5d:68ca:: with SMTP id p10ls1782921wrw.11.gmail; Wed, 23
+ Oct 2019 10:51:58 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqxMTg3ocsuto33e3u3HZmUqKXKlin9FBq2rbmDwXkJMvv3g1w32ga3WdKipTz8d976s2dbe
+X-Received: by 2002:adf:e805:: with SMTP id o5mr10294304wrm.223.1571852960892;
+        Wed, 23 Oct 2019 10:49:20 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1571852960; cv=none;
+        d=google.com; s=arc-20160816;
+        b=u+O8q/woV4LiNOLqNf3bfJv8Jx24CRCiBIQjEDrLqekD3r4ddw/oakOxW+mjBHapAH
+         X7drvmO+sDbK/x1hi4l7/ZW0Yo6WDZSJhi9l59QbNJCdLChxBFe1TC/7/V5cF5+vxuHY
+         5pO7I2ge3gNY1MNj4S7EdzsihR7nxU5Qa1iLz3LJDIoL4SmYE48ID83tt6oBqCCH2dcE
+         NHXP1rOm+0/+pEcKEJZAx9iFJj+/7t9dTMpigQdM1cs230jxnhbVquOzYie8OTJqkD/x
+         hUTYPDBqIoc32h5dSKccype0Sdc1OUuVBUFkQG/1K3JZUSbEtAkFW4o+7GUiS297u2qn
+         sOIg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=q25d5ctDwLISOe8ikjRwYq/uuTUCy3+xnNVODmEDo2g=;
+        b=RjKeM0DCBLnYb14u+TTN1fwghxYw1wX+u2YI7HscrR/edqKuQKPl2Qye8pEv+dk04i
+         UFmhUqCwOPMMZzWNjTm2/eqsZS4X0yFJTDF/xRhP4YUvm0Z/K4DeY2ZevpStRW7cy7br
+         Z4QCA93L+06MY6q3uvqFLYfxIhx0VV0wo2afdSHz6y5TwBsPhjFMgpTrZk47F5AN0A3U
+         9lg14/gK/zawkqCjhk80AiV11f+j3pa3FTn/kwomgyfETpNxRJLh2db+WgICnuvXa3HV
+         niwA3RyagjEB2KuHbMo0FT9vsocPtqoPDheS/UBU0NllkjarxhvMcdY0xb/WBPDuLEfT
+         Vg+A==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Iait1+2+;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x235.google.com (mail-lj1-x235.google.com. [2a00:1450:4864:20::235])
+        by gmr-mx.google.com with ESMTPS id a14si806551wrm.1.2019.10.23.10.49.20
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 23 Oct 2019 10:49:20 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) client-ip=2a00:1450:4864:20::235;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Iait1+2+;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x235.google.com with SMTP id m7so22045146lji.2
+        for <opensport@googlegroups.com>; Wed, 23 Oct 2019 10:49:20 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=q25d5ctDwLISOe8ikjRwYq/uuTUCy3+xnNVODmEDo2g=;
+        b=Iait1+2+3QbPK7JGnRNaMkYfRsffcp0P9CIkcquNQ2wHneDzi9VvwlPIz+Iokr18hl
+         ZTzGQmhjs+wJbXBNdAt2jv2ryHB4Nz0hOILfRrBATe7hYYH8OenvzIe3lGKVIFC9xyvC
+         TCz0Vjo3kKXx/bfo17b74Y/Lu6IfApNlvTvUYJP+uAhknOEiAmrPFIk46WaWFMmOtcGE
+         RIWsr8ngGgfwLi8CFG/eOYYpI96VPltU17Yaw9SRhL/w6+feIuOR/vTOn6VIB6FDhWDN
+         H8wcQIVsBE20+SRfrW8SA8GJ4XkngViAhm3+cndej4C5Q/HCBkWt5F1sY8dAa1+QsPSs
+         X4wA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=q25d5ctDwLISOe8ikjRwYq/uuTUCy3+xnNVODmEDo2g=;
+        b=CtvEEQPtjhRSuGklOMSe75SmKRhxRI69q8VJFGHmejgHJ87zOGV5oxbPLfuvCYEd8b
+         k7RrAPY9q/UAHVhl+Y2P3qMPKm87umpLBQA0/81Dcsnb+1h5B4XeN17LRomZmbOTeGgM
+         PlDTiogzE2GiDZ1HIBhDrAnz29XvzZWOJEvHLvcbbwwxNG1I2/+3cT9DnY+ihPvsmbM6
+         TQ26OmRqqM0V/QwJu7t/5NousfGnrQUu9Y27vHxWm+kM6iRfj4AvOMFekA0HGZ/TTFaL
+         qUu2TZf1ceIIT6j0rA68qSTwNrW/XgldpTCJ7DE5HjBPGFSzwxANHkHwOO4bTTV69Ffd
+         VGyA==
+X-Gm-Message-State: APjAAAW2YZVuToS+UFQXlcL/o2CtECSoEjNVo4UqR+K2N3zD96A3pzIA
+	pIMB6OnUZMBm/cii7AXAKEfUtQ5M2X5XUBckdTLk/sz1
+X-Received: by 2002:a2e:5b82:: with SMTP id m2mr7481779lje.184.1571852959707;
+ Wed, 23 Oct 2019 10:49:19 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 23 Oct 2019 19:49:08 +0200
+Message-ID: <CAAxEZd848p_7DomfVus0-C_b8E_XhiUSU+L9AW1edYZcqMG_1w@mail.gmail.com>
+Subject: New footballdb-leagues Library - Match the World's Top 100+ Football
+ Leagues & Cups
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   I've put together the footballdb-leagues library [1]
+that bundles-up an all-in-one football.db /leagues datafile
+and lets you match 100+ football league & cup names
+from around the world "out-of-the-box" with zero-configuration.
+
+  It's as easy as:
+
+```
+require 'footballdb/leagues'
+
+pp League.all
+```
+
+resulting in:
+
+```
+[#<League @name="English Premier League", @country="England", ...>,
+ #<League @name="English Championship",   @country="England", ...>,
+ #<League @name="English League One",     @country="England", ...>,
+ #<League @name="English League Two",     @country="England", ...>,
+ ...
+]
+```
+
+Let's find football leagues in the world that run
+with the name `Premier League`:
+
+
+```
+m = League.match( 'Premier League' )
+m.size     # 7 league matches found
+#=> 7
+m[0].name; m[0].country
+#=> "English Premier League", "England"
+m[1].name; m[1].country
+#=> "Welsh Premier League", "Wales"
+m[2].name;  m[2].country
+#=> "Russian Premier League", "Russia"
+# ...
+
+m = League.match_by( name: 'Premier League', country: 'eng' )
+# -or- try more alternative (unique) names
+m = League.match( 'England Premier League' )
+m = League.match( 'ENG 1' )
+m = League.match( 'ENG PL' )
+m.size     # 1 league match found
+#=> 1
+m[0].name; m[0].country
+#=> "English Premier League",  "England"
+
+m = League.match_by( name: 'Premier League', country: 'ru' )
+# -or- try more alternative (unique) names
+m = League.match( 'Russia Premier League' )
+m = League.match( 'RUS 1' )
+m = League.match( 'RUS PL' )
+m.size     # 1 league match found
+#=> 1
+m[0].name; m[0].country
+#=> "Russian Premier League", "Russia"
+...
+```
+
+And so on and so forth. Enjoy the beautiful game. Happy data wrangling
+with ruby.
+
+  Cheers. Prost.
+
+PS: Trivia Quiz: What league will League.match( 'NB I' ) match?
+
+[1] https://github.com/sportdb/sport.db/tree/master/footballdb-leagues
+[2] https://github.com/sportdb/sport.db/blob/master/footballdb-leagues/config/leagues.txt
+

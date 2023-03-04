@@ -1,0 +1,61 @@
+From 205591150592@xxx Sat Dec 27 23:34:23 +0000 2014
+X-GM-THRID: 204431425536
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,1e53e37c9f757ff0,start
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.148.198 with SMTP id tu6mr7389341lbb.3.1420364040503;
+        Sun, 04 Jan 2015 01:34:00 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.180.109.226 with SMTP id hv2ls215687wib.33.gmail; Sun, 04 Jan
+ 2015 01:34:00 -0800 (PST)
+X-Received: by 10.194.95.74 with SMTP id di10mr9700646wjb.0.1420364040205;
+        Sun, 04 Jan 2015 01:34:00 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22a.google.com (mail-we0-x22a.google.com. [2a00:1450:400c:c03::22a])
+        by gmr-mx.google.com with ESMTPS id f6si295108wiv.0.2015.01.04.01.34.00
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 04 Jan 2015 01:34:00 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22a as permitted sender) client-ip=2a00:1450:400c:c03::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f170.google.com with SMTP id w61so6381913wes.29
+        for <beerdb@googlegroups.com>; Sun, 04 Jan 2015 01:34:00 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=r9Sjmbg087MXf6TZ0q4x+Q9U57ECpayXDGeUTFFgnYs=;
+        b=corM3t+qBnc5mrdrkpUPUlGn3gVRKiiYnXGWP7daMTMAdm4YnBAeQQP0xTd4bGzft1
+         fxyOLfL7zL/eGdE3EDTkKDhv+XqnR2JRka+OwRG8gQ88EiIEILezCdEUmwOjuuW+uBc4
+         va1Xo5ClQmrGdZCmNMB+T+s0x03Y8y/uQp0GM1A/QuF8Nr5AmkAAu8Iwytk05IgSUrTp
+         UeejYmQa4bosCbkd7wCox5k+kwgGvpEwJzVncyBM/N+67fwK90VtAzN9B0QInV/BMZ51
+         6AeHSgSxarHBi72zPvklbpqsvj2zPwbAzOIHpzSAFPf/Ea/86RWkTOksTpWwdPXmVTev
+         tC6Q==
+MIME-Version: 1.0
+X-Received: by 10.194.85.197 with SMTP id j5mr162899808wjz.106.1420364040094;
+ Sun, 04 Jan 2015 01:34:00 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Sun, 4 Jan 2015 01:34:00 -0800 (PST)
+Date: Sun, 4 Jan 2015 10:34:00 +0100
+Message-ID: <CAAxEZd_1xw6dzEZOzeeJoD0V=E_e=tO5GO5i=OJNXz2PYVFKvA@mail.gmail.com>
+Subject: beer.db - Open Beer, Brewery n Brewpubs News & Updates Feed - /atom.xml
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've added a new News & Updates section on the beer.db -
+Open Beer, Brewery n Brewpubs website. Note: You can also subscribe to
+the news feed [1].
+
+  For example, you can now find the beer.db News on the Planet Open
+Data [2] thanks to news syndication via web feeds.
+
+  Cheers. Prosit 2015.
+
+[1] openbeer.github.io/atom.xml
+[2] planetopendata.herokuapp.com/opendatanews?style=top
+

@@ -1,0 +1,71 @@
+From 367273181184@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 236181258240
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,b526c63f44a856c2
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.151.155.12 with SMTP id h12mr873344ybo.18.1233179533534; Wed, 
+	28 Jan 2009 13:52:13 -0800 (PST)
+Date: Wed, 28 Jan 2009 13:52:13 -0800 (PST)
+In-Reply-To: <fb09ceda-a333-416b-aa4e-46f6e303bf89@r36g2000prf.googlegroups.com>
+X-IP: 81.184.187.142
+References: <73274d3c-74bf-4ae0-b866-1593faebd6a0@n33g2000pri.googlegroups.com> 
+	<f0c9eb0e-b1f8-4e93-8f90-69d65da0f422@s9g2000prg.googlegroups.com> 
+	<dc8a84dd-8812-4deb-badf-3d2462a74eef@s9g2000prg.googlegroups.com> 
+	<6592a155-a315-49ac-9b45-f3646b77c0c2@p2g2000prn.googlegroups.com> 
+	<016db0ac-98ea-4e83-8f41-6abd33ed7afb@p23g2000prp.googlegroups.com> 
+	<3ba52c10-3d4d-4cf9-89f7-06a0cecadec5@i18g2000prf.googlegroups.com> 
+	<23133a06-7206-46c2-a05b-3fa81963a2e7@f40g2000pri.googlegroups.com> 
+	<fb09ceda-a333-416b-aa4e-46f6e303bf89@r36g2000prf.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: e9maOwwAAACA-7rHEfzTQ7U5P7tOyAab
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-ES; rv:1.9.0.5) 
+	Gecko/2008121622 Ubuntu/8.10 (intrepid) Firefox/3.0.5 Ubiquity/0.1.3rc9,gzip(gfe),gzip(gfe)
+Message-ID: <455fee5a-0306-4ed9-9bc2-7bd60f205623@r10g2000prf.googlegroups.com>
+Subject: Re: Contribute
+From: jcangas <jorge.cangas@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+
+
+On Jan 27, 10:10=A0pm, Gerald <ger...@vanbeta.com> wrote:
+> =A0 =A0Fantastic. Thanks for showing the way! =A0I uploaded a new gem
+> version, that is, 0.7.2 with all your changes added, that is:
+> =A0 =A01) =A0added support for full and relative paths for slideshow sour=
+ce
+> files
+> =A0 =A02) =A0added a new option -o/--output that lets you set the output
+> folder
+> =A0 =A0and so on. Note, the output switch works for template package
+> generation too e.g.
+
+Yeah! I'm glad you merged so fast. Thanks
+
+>
+> =A0 =A0slideshow -g -o style
+>
+> =A0 I only made a tiny change to set the default output folder to .
+> (that is, the current folder). Please, use -o slides if that's your
+> preference. I will work out and add a procedure in an upcoming update
+> that lets you set your preferences once e.g. in a settings file in the
+> home folder or a SLIDESHOWOPT=3D/o slides env variable or similar.
+
+I see, you are right . is a better default. A settings file will be
+very nice
+
+I will update my patch page
+Cheers
+
+> > By the way, has you consider moving to github? Is a great chance to
+> > get love for slideshow from comunity, you know: doc, test,
+> > enhancements.
+> > Well, is only an idea,
+>
+> =A0 Thanks for the reminder. I plan to move to git and github in the
+> next couple of weeks.
+>
+> =A0 Cheers.
+

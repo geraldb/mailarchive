@@ -1,0 +1,94 @@
+From 6739413621269331968@xxx Sun Sep 22 08:46:52 +0000 2019
+X-GM-THRID: 6739413623598219264
+X-Received: by 2002:a1c:9c96:: with SMTP id f144mr10037962wme.96.1569142011823;
+        Sun, 22 Sep 2019 01:46:51 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:adf:f5c1:: with SMTP id k1ls3410478wrp.0.gmail; Sun, 22 Sep
+ 2019 01:46:51 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqx6mjMUJIimgpwv3ZNBa4uM4piuDaAtHpfr2IA8NhiTfsz7Lj6V3LSCBULKRLXzTRgVyb2k
+X-Received: by 2002:adf:e488:: with SMTP id i8mr17496457wrm.20.1569142011044;
+        Sun, 22 Sep 2019 01:46:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1569142011; cv=none;
+        d=google.com; s=arc-20160816;
+        b=lJIb+8IJbg4k6al4NTkbMYdlgKbLhflXFKzTibFRr8bwC+VEY7t/4mCD+yZJ5eGCQm
+         1HsIid7koN+WszN0r7n/vqftpPUIkF82MU9erfhE43XUmfKfGeb4R3YM3StKt4J5amU1
+         4B3+oS8aC6b+mjVDzxQnBrhWOmeMrNon+B2aXBWB4R6eRpumVEoZdXFl2zjRnJJZ+yHs
+         wwtsF2ge4zYrQpYoMHTP8Cub3aMRreJuiK7dG+nlw2wJTBFSyHVPklncwCl/fXTcgw4N
+         H3HyFycbrxsSmn+B3WtxmYTAH5Kz74/n6+mjO3Scr2IBPcVJ970HOkWzvF2B1YYmXDDI
+         qJww==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Kx/vQHWtPJ0SPepbS/jikgEHycHALkRr9rlrsZy8YRI=;
+        b=XPOtdP/ft5CWC2piy+wxNzvfZmGB5TiKMR+EhCWmDmcl0SJr6G6UTf1qlKZSe1Mi3s
+         DiL7NIKoDGUA1m95gansk+TefqB/heWdP/jfIj7gQA68PeOOfdUDfK0VQQOXF+rblPOc
+         avgqSiSmu60+iV3odWbI7NSLqql3MhPK/JDX09CN4D/qagBQneweXZbSabCeuYzhSIVb
+         Ee2rZJ5wC4754s5WJ0iu1mTu8mF2lJCZKW5qvyXDdGlG/igaHAmTUYpfhWeVqVOPEhTq
+         QGTqYMn6BEqT/aAGAigmhOwgMKFgplW9Jhf0sDwPm4iaZE6jJ0sNEQ/MplejVAvYfZa6
+         ioOA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Tmsv20En;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x136.google.com (mail-lf1-x136.google.com. [2a00:1450:4864:20::136])
+        by gmr-mx.google.com with ESMTPS id l3si933623wmg.0.2019.09.22.01.46.51
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 22 Sep 2019 01:46:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) client-ip=2a00:1450:4864:20::136;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Tmsv20En;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x136.google.com with SMTP id c195so7850288lfg.9
+        for <opensport@googlegroups.com>; Sun, 22 Sep 2019 01:46:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=Kx/vQHWtPJ0SPepbS/jikgEHycHALkRr9rlrsZy8YRI=;
+        b=Tmsv20EnVkWuDwE36ixCGxSlPcNUWrdolvTHWW7DQaXT0ts5mpzpMM28b3KZ49oXHi
+         xDuk+zIJj86/T0lqOcGa4VeleujvGimzj1nWN7vjRNYCJlCy27gKDEiiQoFnB+EaSfV8
+         X3jetiLtGJC9sULTrsOzjd6kC0uHUZtrmUj38+Hz90E0j5Byv1OPIKBuKHzLklr81znM
+         gG3josICdqQeyb1iD+iYX0zmvvdS9hx79aLZS7llyaa++145Cka6ThSO4CDZC+3hT19t
+         nQVS+5bnogP3qMhsVX7/ajOJFXgj/eW5JIzl9csSREskMlXCARsTclD2k8dLLFEKUUwi
+         UX7A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=Kx/vQHWtPJ0SPepbS/jikgEHycHALkRr9rlrsZy8YRI=;
+        b=hMN5ItmV0wSBmRUqy2ev4b4/EUYLYqdp0MLPrxWNbeIuA5jbOzzPUNpA7S5Ml4I0LA
+         TH/WLykyF28+ipEJ/a3b1cvN+2HppthhHOIpbzb3axUMs8vK8ygGd5VOROAdJvBG4sPk
+         8DW0UXywbRrq1Oqqt+jGuJzi3k6MlQY5jHVO9WruQ1A5GAOtSBxKDY2MGuYbvfoz2nsw
+         qf6Yu6ZZaD4XN71lMVBhc1AR2K+0vDFWS1mhSzlJFcGPuy7bq1wvKhfDdYeiDQBcrHOG
+         LwloXKKeY82psH7IkMwYJMrzl9hkghS0j/kqdCFTrwMFm/UtJhb6HDSBNbJ4kjsAhnYq
+         biKg==
+X-Gm-Message-State: APjAAAWEp2JN/tfvIa1ZZP3bgcDn+n38Tg/VQcd2gdlueB9egcqq/Ev7
+	bVXBEEKyQkALnoVJXvmU2kU05uU5+11YtM7ypx49r/69
+X-Received: by 2002:a19:c7d3:: with SMTP id x202mr13461501lff.124.1569142010298;
+ Sun, 22 Sep 2019 01:46:50 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 22 Sep 2019 10:46:39 +0200
+Message-ID: <CAAxEZd9ThbxLVesMzkt1F3vLxN9qwe1J3z7QLngjGPDOaUEZ3A@mail.gmail.com>
+Subject: New Article - Working with / Importing (Football) CSV Packages in an
+ SQL Database
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   I've written up / published a new from zero / scratch getting
+started guide for importing football.csv packages [1]
+into an SQL database. The example uses all English football leagues, clubs
+and matches (from 1888-89 to today) [2]. The steps include:
+
+- Step 0:  Setup - Install the Sport.db Libraries
+- Step 1:  Download (or Clone) the CSV Package / Datasets
+- Step 2:  Add the Import / Build Script
+- Step 3:  Kick off and Run
+
+   That's it. Enjoy the beautiful game. Cheers. Prost.
+
+[1] https://github.com/sportdb/docs/blob/master/working-with-csv-packages.md
+[2] https://github.com/footballcsv/england
+

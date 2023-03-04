@@ -1,0 +1,62 @@
+From 2086386270208@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 2083479617536
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,451323d5a7de4e5a
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.43.164 with SMTP id x4mr11659880obl.5.1409457608162;
+        Sat, 30 Aug 2014 21:00:08 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.41.69 with SMTP id d5ls1168293igl.26.gmail; Sat, 30 Aug
+ 2014 21:00:07 -0700 (PDT)
+X-Received: by 10.50.18.17 with SMTP id s17mr233935igd.10.1409457607757;
+        Sat, 30 Aug 2014 21:00:07 -0700 (PDT)
+X-Google-Doc-Id: dd66ceb2185f7006
+X-Google-Web-Client: true
+Date: Sat, 30 Aug 2014 21:00:06 -0700 (PDT)
+From: Carl-Erik Svensson <csvenss2@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <6f233201-c3fc-4d17-81dd-70c6d68e866c@googlegroups.com>
+Subject: Seed A Database in Production Environment
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_127_79055119.1409457606590"
+X-Google-Token: EMa7iqAFuqUYe7-g7TY0
+X-Google-IP: 24.130.213.187
+
+------=_Part_127_79055119.1409457606590
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_128_1534491187.1409457606590"
+
+------=_Part_128_1534491187.1409457606590
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+I took a bit of a break, but I'm just now getting back into the swing of 
+things.  I haven't forgotten about the stats - will look into that soon - 
+but I wanted to deploy my sample app on Heroku.  I was just wondering - how 
+do you initialize the db for the web admin you have running on heroku?  
+
+Everything is pretty simple with an sqlite3 databse, but heroku only 
+supports Postgresql, so I'm trying to create a build script or Rake task to 
+load various setups, but I don't know if I can install the different 
+repositories (i.e. world.db, openfootball/major-league-soccer) on the 
+heroku app, so I might not be able to give a local path to the data.  Is 
+there a way to install from a Git URL?  Any other suggestions.
+
+BTW, I looked at your talk on WebComponents - very interesting!
+
+Thanks!
+Carl
+
+------=_Part_128_1534491187.1409457606590
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi Gerald,<div><br></div><div>I took a bit of a break, but I'm just now getting back into the swing of things. &nbsp;I haven't forgotten about the stats - will look into that soon - but I wanted to deploy my sample app on Heroku. &nbsp;I was just wondering - how do you initialize the db for the web admin you have running on heroku? &nbsp;</div><div><br></div><div>Everything is pretty simple with an sqlite3 databse, but heroku only supports Postgresql, so I'm trying to create a build script or Rake task to load various setups, but I don't know if I can install the different repositories (i.e. world.db, openfootball/major-league-soccer) on the heroku app, so I might not be able to give a local path to the data. &nbsp;Is there a way to install from a Git URL? &nbsp;Any other suggestions.</div><div><br></div><div>BTW, I looked at your talk on WebComponents - very interesting!</div><div><br></div><div>Thanks!</div><div>Carl</div></div>
+------=_Part_128_1534491187.1409457606590--
+
+------=_Part_127_79055119.1409457606590--
+

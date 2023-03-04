@@ -1,0 +1,96 @@
+From 6872660259464282112@xxx Tue Sep 15 10:31:51 +0000 2020
+X-GM-THRID: 6872350314586963968
+X-Received: by 2002:a5d:522d:: with SMTP id i13mr21805597wra.296.1600165911203;
+        Tue, 15 Sep 2020 03:31:51 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:adf:e3c3:: with SMTP id k3ls1158803wrm.1.gmail; Tue, 15 Sep
+ 2020 03:31:49 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJy+q2Lij7GOwL/o65iTJO57gBBdRcMpiKC9KyG9MLgoJRBwAXlGhKhRB23mwLdNof1BD1Cp
+X-Received: by 2002:adf:fd8c:: with SMTP id d12mr20570259wrr.283.1600165909824;
+        Tue, 15 Sep 2020 03:31:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1600165909; cv=none;
+        d=google.com; s=arc-20160816;
+        b=NYJvsfJlJqKtbiGRaH87jrDg+UGM7ToZFcbh5wDr/5pRdU2E4LTzuugzzh6wnPNGar
+         s+bM8u44ECxP+4QR357QNAqrpG9h8ZDaPTQpAZ3KgTwSctQnoQS276DdnNlbFuAiuZ4V
+         m6z7j7m5frvfgoFm3KoORJOD2eUfWojSbDf1iDmyBH7yT8t/Y7/7EO+OiyVWVuJ0wTMQ
+         k3flGygq6lfWnH7qcI9KdnNuYpHnclYMb/GphVKx/D4EYjQq0yaBK4/SClCVmfElD8pU
+         c+3fUOrq+ObxMe7+MmnCbho/T/BGlr7LMovrUVWF/DT2DdaxTbDozcd5uY9h7nJhGvGI
+         rMXQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=jNJDPmYcbwNCxiIbp/b7NnDWgJYNuv0LBqhE9DE76MY=;
+        b=K6fDcTxVFlmPPbOjSS2UcmEORthDp0h7Eliy0Dy0X6OnkLRzoP3BmEbCeHClBv1Wfg
+         qRWkzJ46U9WezIZ2JDGck+avuNkGzoRR9J+1v25lXnYN2Rp01TRuyyapOS30+hcTjImQ
+         Z5mf+hY3NZ40le8MWhQ5KvjTi+DV7Mh/2e5fdyWYLNiZt8MqHouqEljYXukish0JR6+n
+         weU8361mAUyx+TxyLuTlA5c8tXSBGM3KvCoTDoVk5CJiwyFKwG1nV+lys56n/T9glMAb
+         G9SpKQY6A9dX90w1J8TJFI6lwrczG0/rnSHV+AsQsZsvQyf6GaVMDehlGHd5dOA2DhJ4
+         +sXg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=fjW2MOH2;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::636 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ej1-x636.google.com (mail-ej1-x636.google.com. [2a00:1450:4864:20::636])
+        by gmr-mx.google.com with ESMTPS id f134si756968wme.4.2020.09.15.03.31.49
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 15 Sep 2020 03:31:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::636 as permitted sender) client-ip=2a00:1450:4864:20::636;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=fjW2MOH2;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::636 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ej1-x636.google.com with SMTP id q13so4252174ejo.9
+        for <opensport@googlegroups.com>; Tue, 15 Sep 2020 03:31:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=jNJDPmYcbwNCxiIbp/b7NnDWgJYNuv0LBqhE9DE76MY=;
+        b=fjW2MOH2SJ0wnbub7oAjTGihyQYCixqDzFpU4l1n2R6WRl/gug0fMa4C1q216zQGMS
+         20+gEW+okjkvCsirAqHvdKzjyQ9R5Wp0o/207mkpUXBGGYCntIB7SHhoc0wuXZJ8oFu/
+         yhWK4Gts+i1AQ/PqSQyKQe9R8GdMUojxFru+45NMoYq1q1LhYCd7RIqyPl0ho5m5j6u4
+         EyVnXRdatqJxSuvnO5eHZWG7fpcKmrfKCGAIPpggpbOCSmG+Y3Lue6heTEXcrMF+JkaG
+         Tgc98Sc968RFG1sFwyOtu3rBMDvucNWfUMENZmO5ADJlenJZwHEgkEa7zmTxAB73czro
+         oTXw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=jNJDPmYcbwNCxiIbp/b7NnDWgJYNuv0LBqhE9DE76MY=;
+        b=okGfp+Ik9CZ9FJpKGggIVBMTEqTal9u3fhs2Y4+RwpVJhVrTdoK25PzhpuSInHAU1M
+         +MI/FHCDMHcSG7R5Kq90Sho4AuqODtF3x0Pxp0nry/mQUFZsaXsZShsTYAgXdRdyNe0v
+         A6AjTpL17GqCeCp3T9WeIvzc89BRHDjVsGEWyaRLPztou6dJQV1b3qQ8wB6+W3ZyRX3u
+         d7dOxaM6aIiBvDxCf3/ftOtTGVvWL8cJpUwB5voDrFuYEYE8+WmQI4jvqYfwSTb+ryh2
+         WVMHn4x0H+qgScmd/6XTwQBUmJQylig8bSVPNEi7urDABeOpej76SdZscJyO+jO80Dm6
+         GQsw==
+X-Gm-Message-State: AOAM5319pmvKNwCzH5AThEI1JJ1ONq1LqVmKhNZkwyvXHad0JX41fXzW
+	8iyi65xYqQsWWeoMOHAc7o1pfjXm0/MTj3YYM6uinn09wK1+JQ==
+X-Received: by 2002:a17:906:60d5:: with SMTP id f21mr19144794ejk.94.1600165909328;
+ Tue, 15 Sep 2020 03:31:49 -0700 (PDT)
+MIME-Version: 1.0
+References: <53399441-0fd3-4a82-82e5-ba94de6dfa55n@googlegroups.com>
+In-Reply-To: <53399441-0fd3-4a82-82e5-ba94de6dfa55n@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 15 Sep 2020 12:31:38 +0200
+Message-ID: <CAAxEZd8mJe-Y00NZ1PhS2xLqupxzTnRWVdL62or2o_waGYgK-w@mail.gmail.com>
+Subject: Re: [opensport] Cannot persuade sportdb to install england
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   I have updated all gems. Please update (especially the
+footballdb-leagues [1] & footballdb-clubs [2] gems) and retry.
+   On my test run / build over here (e.g. sportdb new eng) after some
+minutes I get this stats (via sportdb stats):
+
+ 9 leagues  /  34 seasons
+  143 events (league+season recs)  /  4202 rounds
+  155 teams
+  48559 matches
+
+  Let us know how it goes. Cheers. Prost.
+
+[1] https://rubygems.org/gems/footballdb-leagues
+[2] https://rubygems.org/gems/footballdb-clubs
+

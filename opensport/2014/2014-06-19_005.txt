@@ -1,0 +1,63 @@
+From 1365072936960@xxx Tue Jun 16 00:16:55 +0000 2015
+X-GM-THRID: 1330545426432
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4da4215bac1abda4
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.204.201 with SMTP id la9mr287153lbc.3.1403168542769;
+        Thu, 19 Jun 2014 02:02:22 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.97.98 with SMTP id dz2ls192168wib.43.gmail; Thu, 19 Jun
+ 2014 02:02:22 -0700 (PDT)
+X-Received: by 10.194.3.34 with SMTP id 2mr292928wjz.4.1403168542244;
+        Thu, 19 Jun 2014 02:02:22 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x233.google.com (mail-wi0-x233.google.com [2a00:1450:400c:c05::233])
+        by gmr-mx.google.com with ESMTPS id gc5si1325106wic.1.2014.06.19.02.02.22
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 19 Jun 2014 02:02:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::233 as permitted sender) client-ip=2a00:1450:400c:c05::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x233.google.com with SMTP id cc10so2457519wib.6
+        for <opensport@googlegroups.com>; Thu, 19 Jun 2014 02:02:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=PDnvIallpCiehGaISNC9/0hdDtnipNaYc2fqCpK6Xbg=;
+        b=OCiLEBlgiyQFvsuHKQ6Tn+Uch7epTu5nX5ZWMCp1K6EtfGaXfSx0i2GXmgh1eh9GQs
+         O01Vks19+aJomBP4yc4cFtkdN/vTv3oKhNjMBMUPBwFwGKGlyeRe5jAk9KXcKgua8fF9
+         gi5LC1iUIg3mhQffzoPO3gIGlKfWw1ZgvL5QhMj2tJzkQy6tQ5e/UVvp8O/i/4aLPEPT
+         HlJq8d1irZbmL04MPudludBiQKqE3ft/YRqYKHoxKZzQ8V1rCmlBj6+C0t/uBsnKwo8Z
+         T3OBoJSG7YbCISoaH+aNdAvH8XbqA+JFtVxQvsAMytgP9u+i+FYnRYA5KMY8iPk7tC5m
+         p2zQ==
+MIME-Version: 1.0
+X-Received: by 10.194.92.176 with SMTP id cn16mr3492314wjb.43.1403168542152;
+ Thu, 19 Jun 2014 02:02:22 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Thu, 19 Jun 2014 02:02:21 -0700 (PDT)
+In-Reply-To: <cff8d069-a8fb-489d-95aa-25b032d43b24@googlegroups.com>
+References: <202c0c98-9e47-4577-acd3-997de84014ef@googlegroups.com>
+	<5ab54c50-c2fa-4642-81e6-c7f3d4270857@googlegroups.com>
+	<cff8d069-a8fb-489d-95aa-25b032d43b24@googlegroups.com>
+Date: Thu, 19 Jun 2014 11:02:21 +0200
+Message-ID: <CAAxEZd_o9p3us8j-o=XimqKsVfbaMBqA_TsuCrSJNu_GNOoT_A@mail.gmail.com>
+Subject: Re: [opensport] Re: How to contribute
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+> For the moment just French leagues (Ligue 1 & Ligue 2)
+
+  All football data for France is currently in the world repo
+(europe/fr-france) [1]    You might better start your own repo (e.g.
+fr-france). For example, see the country repos for Germany, Spain,
+England etc.   Cheers.
+
+[1] github.com/openfootball/world/tree/master/europe/fr-france
+

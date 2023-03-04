@@ -1,0 +1,68 @@
+From 1290103947264@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1273188319232
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,a107a50f8aae9c2b
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.224.215.68 with SMTP id hd4mr4169446qab.5.1371331467179;
+        Sat, 15 Jun 2013 14:24:27 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.121.5 with SMTP id lg5ls616408qeb.21.gmail; Sat, 15 Jun
+ 2013 14:24:25 -0700 (PDT)
+MIME-Version: 1.0
+X-Received: by 10.49.86.98 with SMTP id o2mr231296qez.4.1371331465424; Sat, 15
+ Jun 2013 14:24:25 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by q8g2000vbl.googlegroups.com with HTTP; Sat, 15 Jun 2013 14:24:25
+ -0700 (PDT)
+Date: Sat, 15 Jun 2013 14:24:25 -0700 (PDT)
+In-Reply-To: <CAAxEZd_WnS2PePP2NLaYu5303SvwPGANyHkd3UCJCxREc+xntg@mail.gmail.com>
+References: <71414604-4298-4368-85c4-e1d4ddcab69a@googlegroups.com>
+ <caa30178-e4d8-4676-a5e0-90df9fb413f0@ce7g2000vbb.googlegroups.com>
+ <737dbaa4-e1ff-4b22-8892-acad65d19cbf@googlegroups.com> <CAAxEZd_WnS2PePP2NLaYu5303SvwPGANyHkd3UCJCxREc+xntg@mail.gmail.com>
+User-Agent: G2/1.0
+X-Google-Token: EIm3840FKpKrcHQNooM0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:20.0)
+ Gecko/20100101 Firefox/20.0,gzip(gfe)
+X-Google-IP: 188.22.217.154
+Message-ID: <a1835b89-79f8-41c8-9f44-9be5e3e63a8f@q8g2000vbl.googlegroups.com>
+Subject: Re: Slurping a file into a template [ruby s9 template]
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello Derek,
+
+  I pushed a new slideshow gem version, that is, 1.2.4. Please, update
+and try it. What's new?
+
+  - New @pakdir variable holds the template pack root dir
+  - Before the template pack merge the working folder gets set to the
+template pack root (that is, @pakdir)
+
+   Now all these three options should work:
+
+    <div class="slide">
+    <!-- contact1 -->
+    <%= IO.read("contact.html") %>
+    </div>
+
+    <div class="slide">
+    <!-- contact2 -->
+    <%= IO.read("./contact.html") %>
+    </div>
+
+    <div class="slide">
+    <!-- contact1 -->
+    <%= IO.read("#{@pakdir}/contact.html") %>
+    </div>
+
+   Cheers.
+

@@ -1,0 +1,148 @@
+From 6382916458491412480@xxx Fri Feb 03 16:15:47 +0000 2017
+X-GM-THRID: 6382859402075963392
+Date: Fri, 3 Feb 2017 08:15:47 -0800 (PST)
+From: "Maria A. Flores" <m.angeles.flores@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <c3754abd-7d71-4ed7-955f-fe4f614d65ac@googlegroups.com>
+In-Reply-To: <a8f9ce84-6e89-4701-9611-e5c591602483@googlegroups.com>
+References: <a8f9ce84-6e89-4701-9611-e5c591602483@googlegroups.com>
+Subject: Re: Champions League full database
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_638_456539771.1486138547348"
+X-Google-Token: ELPZ0sQFgJGJ8N9t9Kk0
+X-Google-IP: 92.21.3.94
+
+------=_Part_638_456539771.1486138547348
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_639_261173977.1486138547348"
+
+------=_Part_639_261173977.1486138547348
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+More info on the subject, I have successfully created the historical world=
+=20
+cup database using the instructions in the thread:
+https://groups.google.com/forum/#!topic/opensport/jYNVDF_QSJA
+
+But I'm not able to do the same with the Champions League data, using:
+
+
+world  'world.db', setup: 'countries'
+football 'clubs'
+
+#football 'at-austria',     setup: 'clubs'
+#football 'de-deutschland', setup: 'clubs'
+#football 'eng-england',    setup: 'clubs'
+#football 'es-espana',      setup: 'clubs'
+#football 'it-italy',       setup: 'clubs'
+#football 'fr-france',      setup: 'clubs'
+#football 'ch-confoederatio-helvetica', setup: 'clubs'
+football 'clubs', setup: 'history'
+football 'europe-champions-league', setup: 'history'
+
+
+El viernes, 3 de febrero de 2017, 12:34:22 (UTC), Maria A. Flores escribi=
+=C3=B3:
+>
+> Hi all,
+>
+> First of all, thank you for this great effort. I'm new, both to Ruby and=
+=20
+> opensport, so sorry if my question is silly.
+>
+> I had some problems with activerecord and json gems when running sportdb=
+=20
+> in the latest version of Ruby, so I managed to install and use rvm in ord=
+er=20
+> to run it in Ruby 1.9 and now is working.
+>
+> When I run sportdb new all, I'm getting a lot of warnings about missing=
+=20
+> info:
+>
+> ...
+> [info] skipping line (no match found) ...
+> ...
+> [warn] city with key wil missing
+>
+>
+> Finally, the process ends with the error:
+>
+> [fatal] event reader - record for team key >moskva< not found
+>
+>
+> But, if I want to build a new database with only the info about Champions=
+=20
+> League, including historic data (all the data available in=20
+> https://github.com/openfootball/europe-champions-league),
+> would you point me to the correct procedure to do it?
+>
+> Thank you!
+>
+
+------=_Part_639_261173977.1486138547348
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">More info on the subject, I have successfully created the =
+historical world cup database using the instructions in the thread:<div>htt=
+ps://groups.google.com/forum/#!topic/opensport/jYNVDF_QSJA</div><div><br></=
+div><div>But I&#39;m not able to do the same with the Champions League data=
+, using:</div><div><blockquote style=3D"margin: 0 0 0 40px; border: none; p=
+adding: 0px;"><div><font face=3D"courier new, monospace"><br></font></div><=
+div><div><font face=3D"courier new, monospace">world =C2=A0&#39;world.db&#3=
+9;, setup: &#39;countries&#39;</font></div></div><div><div><font face=3D"co=
+urier new, monospace">football &#39;clubs&#39;</font></div></div><div><div>=
+<font face=3D"courier new, monospace"><br></font></div></div><div><div><fon=
+t face=3D"courier new, monospace">#football &#39;at-austria&#39;, =C2=A0 =
+=C2=A0 setup: &#39;clubs&#39;</font></div></div><div><div><font face=3D"cou=
+rier new, monospace">#football &#39;de-deutschland&#39;, setup: &#39;clubs&=
+#39;</font></div></div><div><div><font face=3D"courier new, monospace">#foo=
+tball &#39;eng-england&#39;, =C2=A0 =C2=A0setup: &#39;clubs&#39;</font></di=
+v></div><div><div><font face=3D"courier new, monospace">#football &#39;es-e=
+spana&#39;, =C2=A0 =C2=A0 =C2=A0setup: &#39;clubs&#39;</font></div></div><d=
+iv><div><font face=3D"courier new, monospace">#football &#39;it-italy&#39;,=
+ =C2=A0 =C2=A0 =C2=A0 setup: &#39;clubs&#39;</font></div></div><div><div><f=
+ont face=3D"courier new, monospace">#football &#39;fr-france&#39;, =C2=A0 =
+=C2=A0 =C2=A0setup: &#39;clubs&#39;</font></div></div><div><div><font face=
+=3D"courier new, monospace">#football &#39;ch-confoederatio-helvetica&#39;,=
+ setup: &#39;clubs&#39;</font></div></div><div><div><span class=3D"Apple-ta=
+b-span" style=3D"white-space:pre"><font face=3D"courier new, monospace">=09=
+</font></span></div></div><div><div><font face=3D"courier new, monospace">f=
+ootball &#39;clubs&#39;, setup: &#39;history&#39;</font></div></div><div><d=
+iv><font face=3D"courier new, monospace">football &#39;europe-champions-lea=
+gue&#39;, setup: &#39;history&#39;</font></div></div></blockquote></div><di=
+v><br>El viernes, 3 de febrero de 2017, 12:34:22 (UTC), Maria A. Flores  es=
+cribi=C3=B3:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-lef=
+t: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">H=
+i all,<div><br></div><div>First of all, thank you for this great effort. I&=
+#39;m new, both to Ruby and opensport, so sorry if my question is silly.</d=
+iv><div><br></div><div>I had some problems with activerecord and json gems =
+when running sportdb in the latest version of Ruby, so I managed to install=
+ and use rvm in order to run it in Ruby 1.9 and now is working.</div><div><=
+br></div><div>When I run sportdb new all, I&#39;m getting a lot of warnings=
+ about missing info:</div><blockquote style=3D"margin:0 0 0 40px;border:non=
+e;padding:0px"><div>...</div><div>[info] skipping line (no match found) ...=
+</div><div>...</div><div>[warn] city with key wil missing</div></blockquote=
+><div><br></div><div>Finally, the process ends with the error:</div><div><b=
+r></div><blockquote style=3D"margin:0 0 0 40px;border:none;padding:0px"><di=
+v>[fatal] event reader - record for team key &gt;moskva&lt; not found</div>=
+</blockquote><div><br></div><div>But, if I want to build a new database wit=
+h only the info about Champions League, including historic data (all the da=
+ta available in <a href=3D"https://github.com/openfootball/europe-champions=
+-league" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39=
+;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2F=
+europe-champions-league\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGGC7PbvukSG=
+IvRPYpnRETJWSpFFw&#39;;return true;" onclick=3D"this.href=3D&#39;https://ww=
+w.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Feurope-cham=
+pions-league\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGGC7PbvukSGIvRPYpnRETJ=
+WSpFFw&#39;;return true;">https://github.com/<wbr>openfootball/europe-champ=
+ions-<wbr>league</a>),</div><div>would you point me to the correct procedur=
+e to do it?</div><div><br></div><div>Thank you!</div></div></blockquote></d=
+iv></div>
+------=_Part_639_261173977.1486138547348--
+
+------=_Part_638_456539771.1486138547348--
+

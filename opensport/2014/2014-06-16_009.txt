@@ -1,0 +1,55 @@
+From 1231595503616@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1230028931072
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,6c550dafbb294d67
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.145.65 with SMTP id o41mr586078yhj.41.1402905766988;
+        Mon, 16 Jun 2014 01:02:46 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.2.33 with SMTP id 1ls855558igr.13.canary; Mon, 16 Jun 2014
+ 01:02:46 -0700 (PDT)
+X-Received: by 10.50.13.4 with SMTP id d4mr1461911igc.1.1402905766750;
+        Mon, 16 Jun 2014 01:02:46 -0700 (PDT)
+Received: by 10.50.82.104 with SMTP id h8msigy;
+        Mon, 16 Jun 2014 00:33:03 -0700 (PDT)
+X-Received: by 10.50.103.10 with SMTP id fs10mr415432igb.12.1402903982997;
+        Mon, 16 Jun 2014 00:33:02 -0700 (PDT)
+X-Google-Doc-Id: 6e047765daacbb86
+X-Google-Web-Client: true
+Date: Mon, 16 Jun 2014 00:33:01 -0700 (PDT)
+From: Alex Howington <alex.howington@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <a2d628b1-1adb-464d-8928-09a0d62b7eaf@googlegroups.com>
+Subject: World Cup Game Ordering
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2090_12498988.1402903981945"
+X-Google-Token: EK27-pwFaaf59mAjr2c0
+X-Google-IP: 24.2.102.159
+
+------=_Part_2090_12498988.1402903981945
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2091_19759699.1402903981945"
+
+------=_Part_2091_19759699.1402903981945
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I'm trying to make a visualization that is dependent on knowing the order 
+the games were played in and I'm just wondering where the POS data came 
+from? As far as I can tell, the 3rd and 4th games are out of order unless 
+I'm misunderstanding how it works. I tried to order the games by play_at 
+date using the query "Event.last.games.order('play_at')", but my query 
+contains "ORDER BY pos, play_at". Any ideas on whether the data is wrong or 
+why the 'sportdb/console' automatically orders by 'pos'?
+
+------=_Part_2091_19759699.1402903981945
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr"><span style="color: rgb(51, 51, 51); font-family: Helvetica, arial, freesans, clean, sans-serif; font-size: 14px; line-height: 23.799999237060547px;">I'm trying to make a visualization that is dependent on knowing the order the games were played in and I'm just wondering where the POS data came from? As far as I can tell, the 3rd and 4th games are out of order unless I'm misunderstanding how it works. I tried to order the games by play_at date using the query "Event.last.games.order('play_at')", but my query contains "ORDER BY pos, play_at". Any ideas on whether the data is wrong or why the 'sportdb/console' automatically orders by 'pos'?</span><br></div>
+------=_Part_2091_19759699.1402903981945--
+
+------=_Part_2090_12498988.1402903981945--
+

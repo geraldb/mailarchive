@@ -1,0 +1,300 @@
+From 6739568640765460480@xxx Sun Sep 22 18:48:25 +0000 2019
+X-GM-THRID: 6739392979940671488
+X-Received: by 2002:a17:906:ce46:: with SMTP id se6mr27232804ejb.198.1569178104601;
+        Sun, 22 Sep 2019 11:48:24 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a50:9796:: with SMTP id e22ls3331358edb.14.gmail; Sun, 22
+ Sep 2019 11:48:23 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqxfb3vGibNl4GIb+AUnpZIOPmucjtfrcDBUECNeYPehXCavuZPrPbivh6eRNG7vRlAhSPfa
+X-Received: by 2002:a50:ef12:: with SMTP id m18mr32793161eds.18.1569178103899;
+        Sun, 22 Sep 2019 11:48:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1569178103; cv=none;
+        d=google.com; s=arc-20160816;
+        b=TJBPIpDaBnXn47VzssRx/QTk1jCRAbyE6Tp7alsQwC0zz6rerv/As08Cz2P1KebUDj
+         /f6dguk+6asRtkhJwq1DY9TUASVisrFIyoDAlgdbzSsIDhWtZWjRdB41eRcm4i+h2jOx
+         GEqg7jQhdDZOhMndmLJzSpu/8vMXB8GjpjV/HrxdxABengAi8hIlZkiFqA4KO+/d9R3Z
+         5JQVsNOib7KKHd38KwLF8eZfLM2u+TZcY51IKvMGgnAUJDlnlQF6aAY350SDRtYNg9w0
+         ZBr1JlSRSkKhbsQCjWgWIymS4aksRwoeX9Bns+EJt/ldpZ80j8DMseiXvUeHXb9Tdivh
+         cCBg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=uNVP37FchufwHVM/UrIG2ZDi4K4Z3PfXG5BQs3PgjUE=;
+        b=SoTpr0bYoaVtX5OkmZtTQpes4V+4sE3FpaWAdfLq2p7J8sG4K2GaDE6hIdWTIFzr4m
+         gYBkLUUUYfQfq3aNBsCvOfqZKlz5c8v0unQrkK0ymM83+pDjiZ+F6bYgioaYGpFKFo5H
+         NReTa3nBDaA2HIqtZKJhcRbSJGuToaunSzRUItbWgPtIIqEXodJ+kK9hwCrS+sDmicwv
+         cjiWjZCYUFm6Q6/3e6kxMD5JjWnziCrKJOyPXrwwRiACp/a+8ApDzh3v1g2URmWwdDHe
+         3US3FyaBeiNHje79ipacLXMLTjuAnEXsZI1HFeOLN7Lig0U1D6cYVam2HAVI/H7BvJiH
+         TlmQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=j+Xy4THE;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x234.google.com (mail-lj1-x234.google.com. [2a00:1450:4864:20::234])
+        by gmr-mx.google.com with ESMTPS id c31si541535edb.0.2019.09.22.11.48.23
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 22 Sep 2019 11:48:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) client-ip=2a00:1450:4864:20::234;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=j+Xy4THE;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x234.google.com with SMTP id a22so11599425ljd.0
+        for <opensport@googlegroups.com>; Sun, 22 Sep 2019 11:48:23 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=uNVP37FchufwHVM/UrIG2ZDi4K4Z3PfXG5BQs3PgjUE=;
+        b=j+Xy4THE1DE5uF4Eqcoo8yYCsOpeMg2aMPcGDN/NJDxvO7otWJOg+22i9cR8/51NbP
+         Z4t4QUmUfA5KxVui4XkG7hxR7wqRmeEeOwQQOCDPVsoS2nj8opDIWFlSuc3uIgfjhcSy
+         LNQCq5BDja9gkjM+Jr/3dmOZQHv0P8+/CTVwUvo8/zrghK+I3N14KW37w6TEP3ToRY0X
+         o7Eh2MNiMN/uC6Kagc/HOeNhSUdHyPQt8nMI3HU6qg1xuAIOvnxkjoclgtiOMhFiV9Hu
+         0zS4rixeAGz+KVbU0qWG6wYjKEPtKbclUcFcr0OTk8o/znyCTpfnEmILuyNRqHgYHK5O
+         ynPg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=uNVP37FchufwHVM/UrIG2ZDi4K4Z3PfXG5BQs3PgjUE=;
+        b=PELinyPjpAYy3A44aavuJUGSNsSTACiwSWADzcJTg1Av1Q0XFIPhr4NuGwwHVJEgW4
+         Vzw56rRIsO3srutFJLs+4JghPHfevgXU/oEKSCq30XQWqq8n/6l5DhabfAUPmwnCBqqk
+         MVrFF8bT5Y8EvAkyofcF4CvtO2mP1kalf+ed5PBl3g+8tQDh3mfMXN8E7iKNyqqjMsjG
+         Z7nmEAtAICNjkvShk4+6U0YekEVaVxg+rz3yQBdV2BiCFjyS8IgIhbfwa8r9OGE54iVa
+         pOcXMf+QUc6XaqyFHSKKo3zRajVaik9OvVC9MV++xqfaNHa55AJWd4UkCE0iX0gy65gO
+         YPig==
+X-Gm-Message-State: APjAAAXP/hDoZw4IUcsAWW8PtO1nQzxCHyDmIOTw4nHTreA4Boay7WYw
+	i1oXSCzbDLi58Mo/Tv75ayl+P4gsiT3nfcGugooRvWtR
+X-Received: by 2002:a2e:6e04:: with SMTP id j4mr1802615ljc.99.1569178102910;
+ Sun, 22 Sep 2019 11:48:22 -0700 (PDT)
+MIME-Version: 1.0
+References: <9c669f31-748c-46e2-8eee-f511453ef631@googlegroups.com>
+ <CAAxEZd_nJHgGpTxuGcq+0h24Z8L7QrAu=jNiYx7JabY2pFzvQA@mail.gmail.com>
+ <a500c625-fe58-4e2b-b476-e20d4f788db4@googlegroups.com> <5e8c7901-7259-440b-98ec-0b495377a2e2@googlegroups.com>
+In-Reply-To: <5e8c7901-7259-440b-98ec-0b495377a2e2@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 22 Sep 2019 20:48:11 +0200
+Message-ID: <CAAxEZd-KjYJqwv-AkcOyaqHw7HG0RDtQ0PU9NYq6H6TChMY6Mw@mail.gmail.com>
+Subject: Re: [opensport] Issues with loading into postgresql
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+    It looks like you're almost there as far as I can tell. Thanks for
+not giving up.
+
+    It looks like you're missing the postgres ruby library / gem  -
+sorry I use SQLite for testing.
+
+> Could not find 'pg' (>=3D 0.18, < 2.0) among 52 total gem(s)
+
+    So all you have to do is add the pg gem to the Gemfile e.g.
+
+    gem 'pg'     # see https://rubygems.org/gems/pg
+
+    And than reinstall with bundler  e.g.
+
+     bundle install
+
+   (Note: you might or better delete the Gemfile.lock first for a
+"fresh" start, that is, before bundle install).
+
+    Now you should have everything in place. Good luck. Cheers. Prost.
+
+
+
+El dom., 22 sept. 2019 a las 19:59, Kevin K (<Kevin.L.Kimm@gmail.com>) escr=
+ibi=C3=B3:
+>
+> Got confused on creating the gemfile correctly (and how to save it as a g=
+emfile) so I used "bundle init" to create the file and then updated it with=
+ your instructions.
+>
+> Now just getting error message when trying to run "ruby build.rb"
+>
+> require 'sportdb/import'
+>
+>
+> ## SportDb.connect( adapter:  'sqlite3',
+> ##                 database: './eng.db' )
+> DB_CONFIG =3D {
+>   adapter:  'postgresql',
+>   encoding: 'unicode',
+>   username: 'postgres',
+>   password:  'postgres',
+>   host: 'localhost',
+>   database: 'sports_project',
+>   pool:      5,
+>   timeout:   5000
+> }
+>
+> ActiveRecord::Base.establish_connection( DB_CONFIG )
+>
+> ## build database schema / tables
+> SportDb.create_all
+>
+> ## turn on logging to console
+> ActiveRecord::Base.logger =3D Logger.new(STDOUT)
+>
+>
+> ## note: requires a local copy of the football.csv england datasets
+> ##          see https://github.com/footballcsv/england
+> pack =3D CsvMatchImporter.new( './england' )
+> pack.import_leagues
+>
+> Terminal Output with Error:
+>>
+>> macbook-airs-MacBook-Air:import standard_user$ ls
+>> Gemfile        build.rb    england
+>> Gemfile.lock    bundle.rb    sport.db
+>> macbook-airs-MacBook-Air:import standard_user$ ruby ./build.rb
+>> sportdb-countries/0.2.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+>> alphabets/0.1.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+>> sportdb-clubs/0.2.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+>> sportdb-leagues/0.1.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+>> fifa/1.0.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+>> footballdb-clubs/1.0.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+>> sportdb-config/0.8.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+>> sportdb-text/0.3.3 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+>> activerecord-utils/0.4.0 (activerecord/6.0.0) on Ruby 2.6.4 (2019-08-28)=
+ [x86_64-darwin18]
+>>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model =
+>WorldDb::Model::Country<
+>>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model =
+>WorldDb::Model::StateBase<
+>>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model =
+>WorldDb::Model::CityBase<
+>> sportdb-import/0.2.4 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+>> Traceback (most recent call last):
+>>     12: from ./build.rb:17:in `<main>'
+>>     11: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/=
+active_record/connection_handling.rb:51:in `establish_connection'
+>>     10: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/=
+active_record/connection_adapters/abstract/connection_pool.rb:1044:in `esta=
+blish_connection'
+>>      9: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/=
+active_record/connection_adapters/connection_specification.rb:170:in `spec'
+>>      8: from /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib=
+/active_support/dependencies.rb:325:in `require'
+>>      7: from /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib=
+/active_support/dependencies.rb:291:in `load_dependency'
+>>      6: from /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib=
+/active_support/dependencies.rb:325:in `block in require'
+>>      5: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core=
+_ext/kernel_require.rb:54:in `require'
+>>      4: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core=
+_ext/kernel_require.rb:54:in `require'
+>>      3: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/=
+active_record/connection_adapters/postgresql_adapter.rb:4:in `<top (require=
+d)>'
+>>      2: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core=
+_ext/kernel_gem.rb:65:in `gem'
+>>      1: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/depe=
+ndency.rb:323:in `to_spec'
+>> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:311=
+:in `to_specs': Could not find 'pg' (>=3D 0.18, < 2.0) among 52 total gem(s=
+) (Gem::MissingSpecError)
+>> Checked in 'GEM_PATH=3D/Users/standard_user/.gem/ruby/2.6.0:/usr/local/l=
+ib/ruby/gems/2.6.0:/usr/local/Cellar/ruby/2.6.4_2/lib/ruby/gems/2.6.0', exe=
+cute `gem env` for more information
+>>     13: from ./build.rb:17:in `<main>'
+>>     12: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/=
+active_record/connection_handling.rb:51:in `establish_connection'
+>>     11: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/=
+active_record/connection_adapters/abstract/connection_pool.rb:1044:in `esta=
+blish_connection'
+>>     10: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/=
+active_record/connection_adapters/connection_specification.rb:170:in `spec'
+>>      9: from /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib=
+/active_support/dependencies.rb:325:in `require'
+>>      8: from /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib=
+/active_support/dependencies.rb:291:in `load_dependency'
+>>      7: from /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib=
+/active_support/dependencies.rb:325:in `block in require'
+>>      6: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core=
+_ext/kernel_require.rb:34:in `require'
+>>      5: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core=
+_ext/kernel_require.rb:130:in `rescue in require'
+>>      4: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core=
+_ext/kernel_require.rb:130:in `require'
+>>      3: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/=
+active_record/connection_adapters/postgresql_adapter.rb:4:in `<top (require=
+d)>'
+>>      2: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core=
+_ext/kernel_gem.rb:65:in `gem'
+>>      1: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/depe=
+ndency.rb:323:in `to_spec'
+>> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:311=
+:in `to_specs': Could not find 'pg' (>=3D 0.18, < 2.0) among 52 total gem(s=
+) (Gem::MissingSpecError)
+>> Checked in 'GEM_PATH=3D/Users/standard_user/.gem/ruby/2.6.0:/usr/local/l=
+ib/ruby/gems/2.6.0:/usr/local/Cellar/ruby/2.6.4_2/lib/ruby/gems/2.6.0', exe=
+cute `gem env` for more information
+>>     13: from ./build.rb:17:in `<main>'
+>>     12: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/=
+active_record/connection_handling.rb:51:in `establish_connection'
+>>     11: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/=
+active_record/connection_adapters/abstract/connection_pool.rb:1044:in `esta=
+blish_connection'
+>>     10: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/=
+active_record/connection_adapters/connection_specification.rb:170:in `spec'
+>>      9: from /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib=
+/active_support/dependencies.rb:325:in `require'
+>>      8: from /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib=
+/active_support/dependencies.rb:291:in `load_dependency'
+>>      7: from /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib=
+/active_support/dependencies.rb:325:in `block in require'
+>>      6: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core=
+_ext/kernel_require.rb:34:in `require'
+>>      5: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core=
+_ext/kernel_require.rb:130:in `rescue in require'
+>>      4: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core=
+_ext/kernel_require.rb:130:in `require'
+>>      3: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/=
+active_record/connection_adapters/postgresql_adapter.rb:4:in `<top (require=
+d)>'
+>>      2: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core=
+_ext/kernel_gem.rb:65:in `gem'
+>>      1: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/depe=
+ndency.rb:323:in `to_spec'
+>> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:311=
+:in `to_specs': Error loading the 'postgresql' Active Record adapter. Missi=
+ng a gem it depends on? Could not find 'pg' (>=3D 0.18, < 2.0) among 52 tot=
+al gem(s) (LoadError)
+>> Checked in 'GEM_PATH=3D/Users/standard_user/.gem/ruby/2.6.0:/usr/local/l=
+ib/ruby/gems/2.6.0:/usr/local/Cellar/ruby/2.6.4_2/lib/ruby/gems/2.6.0', exe=
+cute `gem env` for more information
+>
+>
+> On Sunday, September 22, 2019 at 9:28:29 AM UTC-4, Kevin K wrote:
+>>
+>> This is fantastic. Will give it a go today and provide feedback - but fr=
+om a first glance it looks very easy to follow.
+>>
+>> Thanks for all of your hard work!
+>>
+>> On Sunday, September 22, 2019 at 4:39:42 AM UTC-4, Gerald Bauer wrote:
+>>>
+>>> Hello,
+>>>
+>>>    I've written up / published a new from zero / scratch getting
+>>> started guide for football.csv packages [1] that includes Step 0 for
+>>> setting up / installing all libraries (and dependencies).
+>>>
+>>>    Cheers. Prost.
+>>>
+>>> [1] https://github.com/sportdb/docs/blob/master/working-with-csv-packag=
+es.md
+>
+> --
+> You received this message because you are subscribed to the Google Groups=
+ "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an=
+ email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit https://groups.google.com/d/msgi=
+d/opensport/5e8c7901-7259-440b-98ec-0b495377a2e2%40googlegroups.com.
+

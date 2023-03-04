@@ -1,0 +1,168 @@
+From 6187525218977710080@xxx Thu Aug 27 03:18:00 +0000 2015
+X-GM-THRID: 6185793007810248704
+Date: Wed, 26 Aug 2015 20:17:59 -0700 (PDT)
+From: kaspi <vincentti@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Cc: vincentti@gmail.com
+Message-Id: <d9417ae7-0ee6-423c-9d9f-4b80549e61fe@googlegroups.com>
+In-Reply-To: <CAAxEZd-xZQz7aeaMqa65f3dY60nBSpGHujHGJxfqA=S57Wy5QQ@mail.gmail.com>
+References: <fd122790-128b-496a-9018-2f536e57c176@googlegroups.com>
+ <CAAxEZd-xZQz7aeaMqa65f3dY60nBSpGHujHGJxfqA=S57Wy5QQ@mail.gmail.com>
+Subject: Re: [opensport] Russian league for football.db
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_4999_2037663658.1440645479495"
+X-Google-Token: EOeC-q4FziTNrIIy0sM0
+X-Google-IP: 209.6.116.34
+
+------=_Part_4999_2037663658.1440645479495
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5000_1667047164.1440645479495"
+
+------=_Part_5000_1667047164.1440645479495
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Gerard,
+
+I finally did manage to import data without any errors and skipped matches.
+The most problems I had is with adjusting teams.yml to match with the names=
+=20
+of the clubs in actual fixtures data.=20
+Btw, Datafiles makes testing much easier.=20
+
+My plan is to add information about goals scored in each match and to keep=
+=20
+up with current results (I have yet to figure how to better setup cron to=
+=20
+update them more or less automatically)
+
+
+On Sunday, August 23, 2015 at 4:50:17 AM UTC-4, Gerald Bauer wrote:
+>
+> Hello,=20
+>     As a follow-up to get you started with the import into an SQL=20
+> database:=20
+>
+>    The easiest way is to use a Datafile [1], for example, create a new=20
+> directory/folder=20
+>    and put in an empty Datafile.=20
+>
+>    Now add something like:=20
+>
+>   inline do=20
+>     WorldDb::Model::Country.parse( 'ru', 'Russia', 'RUS', '1 km=C2=B2', '=
+1' )=20
+>   end=20
+>
+>   football 'Kaspi/ru-russia'=20
+>
+> '=20
+>   Now try to run it.=20
+>
+>   $ sportdb --verbose build            # will default to use the=20
+> (local) Datafile; use the verbose debug switch=20
+>
+>   It should download your datasets as a zip archive.=20
+>
+>   As a next step you will have to add a setups/all.txt to your repo e.g.=
+=20
+>
+> setups/all.txt:=20
+>
+>    ru-russia!/leagues=20
+>    ru-russia!/teams=20
+>    ru-russia!/2014-15/rflp=20
+>    ru-russia!/2015-16/rflp=20
+>
+>  And than retry (best to clean out the local directory e.g. remove=20
+> sport.db etc.) and the import should start working for real - next up=20
+> is fixingthe remaing issues poping up. For example, rename your=20
+> russian flp from teams.yml  to rflp.yml in 2014-15 and 2015-16 and=20
+> make sure you include a fixtures block (matching your fixtures/match=20
+> schedule/results files) e.g.=20
+>
+> fixtures:=20
+> -  rflp-i=20
+> -  rflp-ii=20
+>
+>   Let us know how it goes or if you continue. Keep it up. Cheers.=20
+>
+> [1] github.com/openfootball/datafile=20
+>
+
+------=_Part_5000_1667047164.1440645479495
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Gerard,<div><br></div><div>I finally did manage to import =
+data without any errors and skipped matches.</div><div>The most problems I =
+had is with adjusting teams.yml to match with the names of the clubs in act=
+ual fixtures data.=C2=A0</div><div>Btw, Datafiles makes testing much easier=
+.=C2=A0</div><div><br></div><div>My plan is to add information about goals =
+scored in each match and to keep up with current results (I have yet to fig=
+ure how to better setup cron to update them more or less automatically)</di=
+v><div><br></div><br>On Sunday, August 23, 2015 at 4:50:17 AM UTC-4, Gerald=
+ Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-le=
+ft: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>=C2=A0 =C2=A0 As a follow-up to get you started with the import into an=
+ SQL database:
+<br>
+<br>=C2=A0 =C2=A0The easiest way is to use a Datafile [1], for example, cre=
+ate a new
+<br>directory/folder
+<br>=C2=A0 =C2=A0and put in an empty Datafile.
+<br>
+<br>=C2=A0 =C2=A0Now add something like:
+<br>
+<br>=C2=A0 inline do
+<br>=C2=A0 =C2=A0 WorldDb::Model::Country.parse( &#39;ru&#39;, &#39;Russia&=
+#39;, &#39;RUS&#39;, &#39;1 km=C2=B2&#39;, &#39;1&#39; )
+<br>=C2=A0 end
+<br>
+<br>=C2=A0 football &#39;Kaspi/ru-russia&#39;
+<br>
+<br>&#39;
+<br>=C2=A0 Now try to run it.
+<br>
+<br>=C2=A0 $ sportdb --verbose build =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0# will default to use the
+<br>(local) Datafile; use the verbose debug switch
+<br>
+<br>=C2=A0 It should download your datasets as a zip archive.
+<br>
+<br>=C2=A0 As a next step you will have to add a setups/all.txt to your rep=
+o e.g.
+<br>
+<br>setups/all.txt:
+<br>
+<br>=C2=A0 =C2=A0ru-russia!/leagues
+<br>=C2=A0 =C2=A0ru-russia!/teams
+<br>=C2=A0 =C2=A0ru-russia!/2014-15/rflp
+<br>=C2=A0 =C2=A0ru-russia!/2015-16/rflp
+<br>
+<br>=C2=A0And than retry (best to clean out the local directory e.g. remove
+<br>sport.db etc.) and the import should start working for real - next up
+<br>is fixingthe remaing issues poping up. For example, rename your
+<br>russian flp from teams.yml =C2=A0to rflp.yml in 2014-15 and 2015-16 and
+<br>make sure you include a fixtures block (matching your fixtures/match
+<br>schedule/results files) e.g.
+<br>
+<br>fixtures:
+<br>- =C2=A0rflp-i
+<br>- =C2=A0rflp-ii
+<br>
+<br>=C2=A0 Let us know how it goes or if you continue. Keep it up. Cheers.
+<br>
+<br>[1] <a href=3D"http://github.com/openfootball/datafile" target=3D"_blan=
+k" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/u=
+rl?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\46sa\75D\46sntz\07=
+51\46usg\75AFQjCNGuSSz2iZM4_c46k47eU9RFDWMMTQ&#39;;return true;" onclick=3D=
+"this.href=3D&#39;http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fo=
+penfootball%2Fdatafile\46sa\75D\46sntz\0751\46usg\75AFQjCNGuSSz2iZM4_c46k47=
+eU9RFDWMMTQ&#39;;return true;">github.com/openfootball/<wbr>datafile</a>
+<br></blockquote></div>
+------=_Part_5000_1667047164.1440645479495--
+
+------=_Part_4999_2037663658.1440645479495--
+

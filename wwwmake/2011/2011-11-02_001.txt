@@ -1,0 +1,50 @@
+From 986397540352@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 987338113024
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,6ffac01d3c9122eb,start
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+Received: by 10.52.35.206 with SMTP id k14mr3873773vdj.5.1320221687317;
+        Wed, 02 Nov 2011 01:14:47 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.49.3 with SMTP id t3ls5465787vcf.2.gmail; Wed, 02 Nov 2011
+ 01:14:46 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.52.34.144 with SMTP id z16mr680654vdi.18.1320221686212; Wed,
+ 02 Nov 2011 01:14:46 -0700 (PDT)
+Received: by h24g2000yqm.googlegroups.com with HTTP; Wed, 2 Nov 2011 01:14:46
+ -0700 (PDT)
+Date: Wed, 2 Nov 2011 01:14:46 -0700 (PDT)
+User-Agent: G2/1.0
+X-Google-Token: EPb3w_UEY6ODiQ8QQnQ0
+X-Google-Web-Client: true
+X-Google-Header-Order: HUALESNKRC
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.23)
+ Gecko/20110921 Ubuntu/10.04 (lucid) Firefox/3.6.23,gzip(gfe)
+X-Google-IP: 62.47.156.32
+Message-ID: <d4a0111c-0fa1-4f42-9218-8a65a6af40ed@h24g2000yqm.googlegroups.com>
+Subject: S6 Blank Updated - Now Includes Minimalistic Template (All Styles Inline)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  I've updated the S6 Blank Templates [1] that lets you create
+slideshows/presentations using HTML5/CSS3. What's new?
+
+  To allow easy theming with CSS I've moved all CSS rules for controls
+and structure out of projection.css/screen.css/print.css into
+slideshow.js.
+
+  I've also added minimalistic.html [2] - a template that includes all
+styles (projection, screen, print) inline in plain "old" css, that is,
+no less.js used or required.
+
+  Finally, I've split the /shared folder into /js and /css.
+
+  That's it. Questions and comments welcome. Cheers.
+
+[1] https://github.com/geraldb/s6
+[2] https://github.com/geraldb/s6/blob/master/minimalistic.html
+

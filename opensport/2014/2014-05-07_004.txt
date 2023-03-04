@@ -1,0 +1,59 @@
+From 590233993216@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 586431856640
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a4ce9e32a3e9a88e
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.14.102 with SMTP id o6mr983498wic.0.1399457106383;
+        Wed, 07 May 2014 03:05:06 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.205.234 with SMTP id lj10ls327132wic.22.gmail; Wed, 07 May
+ 2014 03:05:03 -0700 (PDT)
+X-Received: by 10.180.187.239 with SMTP id fv15mr983596wic.2.1399457103300;
+        Wed, 07 May 2014 03:05:03 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x229.google.com (mail-wi0-x229.google.com [2a00:1450:400c:c05::229])
+        by gmr-mx.google.com with ESMTPS id gh4si48265wib.3.2014.05.07.03.05.03
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 07 May 2014 03:05:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) client-ip=2a00:1450:400c:c05::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f169.google.com with SMTP id hi2so4279894wib.0
+        for <opensport@googlegroups.com>; Wed, 07 May 2014 03:05:03 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=4A3mzDwQCX5AmhlEw8cYdNaxvN/yaAUB0ejBUCcANd0=;
+        b=PINXSj8bboJlL27y4+m653H0fiQtm5SpX16erjH2UQd0pTo2cwTee2E7MD1OlUoRsI
+         nWDZZDBlV8L8b6UKAUmmzvTI/q6yBFHvJrQK0NKtPOkjMbO0HZb/CIHXf6eHcP2yYz1O
+         u8mSoFRyDByevUJfV1d/UuIt5lSB13nC3kW7ULrKeus0VNEQY3iEpwIhOrakXSOLZwaq
+         ObrI15H7u99YDelbYfLyM5R5jEUamK8CzecU7BDVVW7nS1i3Rr0LcVFOmB1y6RqMItfm
+         m6uaFEy8Opy5detXlhaOF5x3pDyHcSJeLjCHxs7srlJgaC5J4m9iQgmRirquCSh7wNkq
+         M2cQ==
+MIME-Version: 1.0
+X-Received: by 10.180.83.196 with SMTP id s4mr7024076wiy.24.1399457096356;
+ Wed, 07 May 2014 03:04:56 -0700 (PDT)
+Received: by 10.216.189.196 with HTTP; Wed, 7 May 2014 03:04:56 -0700 (PDT)
+In-Reply-To: <97b02ec2-5252-42ef-a48d-89a7f0e6339b@googlegroups.com>
+References: <97b02ec2-5252-42ef-a48d-89a7f0e6339b@googlegroups.com>
+Date: Wed, 7 May 2014 12:04:56 +0200
+Message-ID: <CAAxEZd_BE6awJ+nMijYvm5BcKMeeAPckomWy6NZKCJ9ribWM-w@mail.gmail.com>
+Subject: Re: [opensport] sportdb unable to read world-cup fixtures
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Thanks for reporting. That's was an oversight with the folder name
+change from /2014/ to /2014--brazil/ last week. Sorry.
+
+  I pushed a new version, that is, 1.8.17. Please, update the gem and
+retry. Now all should work with the new (and old) fixture names (e.g.
+/2014--brazil/ etc.). Cheers.
+

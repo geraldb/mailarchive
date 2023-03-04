@@ -1,0 +1,62 @@
+From 2001663426560@xxx Tue Jun 16 00:16:50 +0000 2015
+X-GM-THRID: 2004713734144
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,f8cbbbbfba1c9e29,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.57.237 with SMTP id l13mr11215wjq.7.1407773740546;
+        Mon, 11 Aug 2014 09:15:40 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.80.229 with SMTP id u5ls518406wix.36.canary; Mon, 11 Aug
+ 2014 09:15:40 -0700 (PDT)
+X-Received: by 10.180.198.172 with SMTP id jd12mr1808323wic.6.1407773740113;
+        Mon, 11 Aug 2014 09:15:40 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x230.google.com (mail-wi0-x230.google.com [2a00:1450:400c:c05::230])
+        by gmr-mx.google.com with ESMTPS id m6si1196180wik.2.2014.08.11.09.15.40
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 11 Aug 2014 09:15:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::230 as permitted sender) client-ip=2a00:1450:400c:c05::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x230.google.com with SMTP id bs8so4521639wib.15
+        for <opensport@googlegroups.com>; Mon, 11 Aug 2014 09:15:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=14+BOE3jQwxpyhwgxij/E5sGNIRBu+cU5PXFP/O4CpE=;
+        b=YEt5arWV8t4bmRAuSGcE9Aa5rqd/E7/65gGRH7P/4JoOixe+QZLsKr7iMjT/m1t2yA
+         BpS7rWGtYSDChd8KIinvjguzU4C3A97K/1pxIOGFhwXaTiJnobkq473hmoSuD7LX6exv
+         f5WecBpYm250lx1+SXFLLnefNDLULXhbahOXnwyaT4B5pgMGzjbDDe1LJX0PfKEF7zWg
+         wUY3MvphrhyH1b9IEav2nPpL5X8FZ6jGkgfWPk6A/zGkjownXGDwWWKygXEpeT0l5Emg
+         oLvHDln3e4F6ej4fuha9pbGtiW1uTs5p63Nq/mjaAYTz+q1IX+vcKrAv0h398AmFSkb/
+         c5nw==
+MIME-Version: 1.0
+X-Received: by 10.194.20.230 with SMTP id q6mr56814481wje.43.1407773740055;
+ Mon, 11 Aug 2014 09:15:40 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Mon, 11 Aug 2014 09:15:39 -0700 (PDT)
+Date: Mon, 11 Aug 2014 18:15:39 +0200
+Message-ID: <CAAxEZd92OUFygS9F8nnhk+itJyfok9V+XYDDPjpPU6U2ivjQaQ@mail.gmail.com>
+Subject: New org sportkit - sport.db Starter Kits (for building your own HTTP
+ JSON APIs)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've created (yet another) GitHub org, that is, sportkit [1].
+The idea is to collect starter kits (samples)  for using the sport.db
+in various languages (e.g. Ruby, Python, JavaScript, etc.)
+
+  To get started I've moved over the sport.db.api.starter repo to the
+new org; now renamed to sport.db.starter (Ruby Edition) [2].
+
+   Cheers.
+
+[1] github.com/sportkit
+[2] github.com/sportkit/sport.db.starter.ruby
+

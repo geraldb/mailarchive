@@ -1,0 +1,75 @@
+From 6203715736389550080@xxx Fri Oct 09 18:25:27 +0000 2015
+X-GM-THRID: 6202971126650372096
+X-Received: by 10.107.47.12 with SMTP id j12mr12485797ioo.26.1444415127546;
+        Fri, 09 Oct 2015 11:25:27 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.129.195 with SMTP id ny3ls778246obb.31.gmail; Fri, 09 Oct
+ 2015 11:25:27 -0700 (PDT)
+X-Received: by 10.182.46.132 with SMTP id v4mr12203095obm.10.1444415127202;
+        Fri, 09 Oct 2015 11:25:27 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x231.google.com (mail-io0-x231.google.com. [2607:f8b0:4001:c06::231])
+        by gmr-mx.google.com with ESMTPS id rr9si249631igb.1.2015.10.09.11.25.27
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 09 Oct 2015 11:25:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) client-ip=2607:f8b0:4001:c06::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x231.google.com with SMTP id 1so99923580iow.1
+        for <opensport@googlegroups.com>; Fri, 09 Oct 2015 11:25:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=Od/IZ3AmfGiuVQidK6jcjrhd3YhoBNwXS97bcS0/ch8=;
+        b=k5HwO5fNgnVFZZVB7ezR0z3+voQnsuiB6otenO6wUJpgO9MUNOk9TQxdJSO/Ws1tb/
+         T2QWYH+uM09CoYNbQfN5P3TQP2UbmvGOdHTxLq7howFx8t72AGj5WIHvEgwrY9/FO1vT
+         NthC9MRTS160ute5SRszv46KeKI6zbdq/ESBrmE4wD1+o6ZJK0g+zsqKDCYbhg143U6z
+         +VxjzPVgXN79HqYK6zY0aSBje3pKDQ4cekEw8Z2rmbwkp4pSjovJcCOu/Sc40yIZl/Iz
+         MEKI/y0retsBd55//Rwc9g0XtOTj7c05D1shfCf1SBv2/+P0epoJQIxgGO01S04umZE1
+         djCQ==
+MIME-Version: 1.0
+X-Received: by 10.107.8.140 with SMTP id h12mr6072205ioi.35.1444415127044;
+ Fri, 09 Oct 2015 11:25:27 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Fri, 9 Oct 2015 11:25:26 -0700 (PDT)
+In-Reply-To: <6cb04241-a8e4-4348-9821-6681ca031586@googlegroups.com>
+References: <bb1410a2-a76d-447b-b054-0be81d0c1e19@googlegroups.com>
+	<CAAxEZd9rB9SRaHLaoWncTTaXJkeOAVUi=tY-R=RVz1D_9KvWZQ@mail.gmail.com>
+	<6cb04241-a8e4-4348-9821-6681ca031586@googlegroups.com>
+Date: Fri, 9 Oct 2015 20:25:26 +0200
+Message-ID: <CAAxEZd-RZPt8m6d+nDhCnKNYDbigfTsvPpSSBekj856UQW1LeA@mail.gmail.com>
+Subject: Re: [opensport] could not load sqlite3_adapter
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   That's weird / strange.  Looks like the activerecord gem and
+sqlite3 gem are installed. Try this little script to test if it works:
+
+test.rb:
+
+  require 'sportdb/models'
+
+  ## Let's create an in-memory SQLite database
+
+  DB_CONFIG = {
+    adapter: 'sqlite3',
+    database: ':memory:'
+  }
+
+  ActiveRecord::Base.establish_connection( DB_CONFIG )
+
+  SportDb.create_all   ## create tables (e.g. teams, seasons, etc.)
+
+
+  Try to run it with:
+
+$ ruby ./test.rb
+
+   Does it work or do you get the same error?  Cheers.
+

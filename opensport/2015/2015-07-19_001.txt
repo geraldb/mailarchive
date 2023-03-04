@@ -1,0 +1,64 @@
+From 6173279757951565824@xxx Sun Jul 19 17:58:19 +0000 2015
+X-GM-THRID: 6173278112413908992
+X-Received: by 10.129.76.70 with SMTP id z67mr3173104ywa.25.1437328699065;
+        Sun, 19 Jul 2015 10:58:19 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.166.1 with SMTP id p1ls1733471ioe.62.gmail; Sun, 19 Jul
+ 2015 10:58:18 -0700 (PDT)
+X-Received: by 10.66.65.75 with SMTP id v11mr28414194pas.7.1437328698728;
+        Sun, 19 Jul 2015 10:58:18 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x229.google.com (mail-ie0-x229.google.com. [2607:f8b0:4001:c03::229])
+        by gmr-mx.google.com with ESMTPS id fk9si431462igb.0.2015.07.19.10.58.18
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 19 Jul 2015 10:58:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::229 as permitted sender) client-ip=2607:f8b0:4001:c03::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ie0-x229.google.com with SMTP id x8so24766338ieh.3
+        for <opensport@googlegroups.com>; Sun, 19 Jul 2015 10:58:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=dkRZS0+mN7XjDGR6iDYEYolYTXft2dHfOo+1azdYAMo=;
+        b=XoIYcEY/DQa2/39L04DdqKQSDXR3DUuWsmkyLFGpkiJjItmKjG13rYEYqe0qXziw6g
+         v2CGtGQxr0H22Qly7bYUl9PkXjP7N/JapGmwRk/A7BpL7YflZIlOwAV/rYYmrB72sq2Q
+         BFmcwbWXZwa4bTbi63U+KIIGwlzQQyMVdmLcOB2Gdg87NN12n/BhWXJ369OnvFxsBlR7
+         o/IGWu6yB8d4nXNcU9YO36NyU9Y30Fa9nJXPe7Brn0b8JNTvBWreND9C88Y+P+9QNaXY
+         FAGbTNc29IjX+cgaawX61P3qj+04pV+en+9gJE9KjN4RYmCCoEiyXGi2ES6FmrBYihDx
+         ZN6Q==
+MIME-Version: 1.0
+X-Received: by 10.50.30.9 with SMTP id o9mr8291560igh.36.1437328698635; Sun,
+ 19 Jul 2015 10:58:18 -0700 (PDT)
+Received: by 10.107.128.97 with HTTP; Sun, 19 Jul 2015 10:58:18 -0700 (PDT)
+In-Reply-To: <55ABA8CE.8030001@gmail.com>
+References: <55ABA8CE.8030001@gmail.com>
+Date: Sun, 19 Jul 2015 19:58:18 +0200
+Message-ID: <CAAxEZd-EPz7qY--rFcVVQBTB6A1uvXvKn1Y5FJDtOGXapOPdzQ@mail.gmail.com>
+Subject: Re: [opensport] Deutsche Bundesliga 2015/16 datasets?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Willkommen. Welcome. Thanks for your interest in football.db.
+
+> anybody is working on new datasets for the German leagues?
+
+   I try my best to get the match schedule for the 1. and 2. (German)
+Bundesliga online sometime next week.
+
+   Of course, any help appreciated. Please, go ahead adding the new
+season. See the Bundesliga repo [1] for examples, look for the 2014/15
+season for the format.
+
+  Cheers.
+
+[1] github.com/openfootball/de-deutschland
+

@@ -1,0 +1,87 @@
+From 6796283045169070080@xxx Sat Feb 22 14:49:15 +0000 2020
+X-GM-THRID: 6795806536526462976
+X-Received: by 2002:a05:6402:70f:: with SMTP id w15mr37348506edx.255.1582382955019;
+        Sat, 22 Feb 2020 06:49:15 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a50:9d0b:: with SMTP id v11ls1191660ede.11.gmail; Sat, 22
+ Feb 2020 06:49:13 -0800 (PST)
+X-Google-Smtp-Source: APXvYqxAxwTKMABVq5D3WCvmVh1DPE1CRUo3sw6H4mdl7VRgEICuxp2EMhPyXB8j1GCiMybSC3M4
+X-Received: by 2002:a05:6402:1347:: with SMTP id y7mr39244305edw.140.1582382953893;
+        Sat, 22 Feb 2020 06:49:13 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1582382953; cv=none;
+        d=google.com; s=arc-20160816;
+        b=yWXB+R0jT2iHJtsniDmvL/GZmbaQV55NA02ovSqNMzk3uS8oc+KMgfNGPhYP+t0KDZ
+         48pDuNSay/WFqwe44vzlqUjivSlFxJaLSbTlE3Va7CSTOJM/vkBSqktAuRa8K4OK8Fii
+         rCZ20UeV+ZiXHbzXqcUJ2NkASQxRyzdQl4p3hHphH38lePQ5w7cnbStL/4b1aPUfnb7G
+         il2rpq3y7PAQ2QH7IXmQkmq+CVEGlyjfh4Shjtlu6Ac+pvnB7r+Jhg+Rb7792IfRGqTS
+         d1IREoj7Z+GExs/3QAcdZ//G7oMit/i4u0vcg758xq5MPf8BfJwaJHFHBjwowNCtgEdQ
+         iQ7A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=NeBKGGKmuyaX7w09dlIT56ooBGXrcN/0yMhi1CxWFuA=;
+        b=XVmt8nZRhbw0ck3OHxHS04rTSI4RJ6ew91VKNV9ecMQTgCHn70S36xWM9x8uCxc+KY
+         kD7GAzoiZaQTVV9AG4NdsGfdlnfX5QHOAhvLicqJpq5k0K6lmsWAJwe2SdIzbRu+s81m
+         L3CJQtk0BuANPcDvRg+3wa2VS4+Izu5Fu9CPooLggIWcJo7t/61fiw1uAVhMrx8P/oXB
+         fodrJRjBfTxGa7CymbHs0kNAEfcgYzdGaCUk7esFkFvVmfu8YwVOPlvo/PG4HtNu2x2f
+         Ghv2I6BDxL5qflJXjR9GvRqy1sxfXO7NbMHjy49e9opcPiK12k/Jl/eqwm7bZKbzOCsz
+         qr8w==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=qTyDtjiY;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22c.google.com (mail-lj1-x22c.google.com. [2a00:1450:4864:20::22c])
+        by gmr-mx.google.com with ESMTPS id z20si195341ejx.1.2020.02.22.06.49.13
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 22 Feb 2020 06:49:13 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) client-ip=2a00:1450:4864:20::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=qTyDtjiY;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22c.google.com with SMTP id e18so5272123ljn.12
+        for <wwwmake@googlegroups.com>; Sat, 22 Feb 2020 06:49:13 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=NeBKGGKmuyaX7w09dlIT56ooBGXrcN/0yMhi1CxWFuA=;
+        b=qTyDtjiYAxyvbsuc8YFrBhE4WWAZUClzqE7dmwQoAKXVESsLrBt/ny4CR1KXaV8B7d
+         30nIqacIjAFw/pld+3JhE5gtMsgf8H4WdY2DtacyoxSmKwUk4yiThJDOz1v7rXLdn18x
+         Q0f1d+bx4VuFaKOtHzeamMvVzSrNvd7Fkv2RY0ujByiiFgNfZQUBGhjOMhqC/VTB4NNC
+         h0F+/eS8XRLuoamYTIFOxxcQ8BTLW8P6aqlQ8BhgsJJN5BS14Zl7i30TU9wbebz9UbuI
+         1xmx/6nV8/cvOH9bDhO7emF8JE4OwpLDUXwecWGRNW7h3chWPZghmexFtXiOBED3MPXG
+         JYuA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=NeBKGGKmuyaX7w09dlIT56ooBGXrcN/0yMhi1CxWFuA=;
+        b=BvhF04pZBh5iWK4j6NbvCAqmeGg3jqSqOl1t5B8cX5AnmJbu6QnvMPN2lKRZHINSQ/
+         q2SspSoMOpkiDrQepekjoHM9Of75UO3Um1YAdxNU8gSGVWbDZujKTTQ0zNd+lWKp4gDF
+         +cmlv4vwtRsn+rSUqz+YAD44/VG8i06MQN4L7hLs7B1ccLTuuXKVjm8m3aPkGDVHdMNu
+         bHcw+m5jPLDa4bkqi4FonrwTVgdyZW7UoRuIRkGY8/oJx4xlG6PLBsnzQyhX/mjx2Nxw
+         V8yynYA15BPb854ZfNVO4R1r1SkXfyoynLGu+q+t6P6I15Iifo8B2jY+hp2SgvFEi4Wf
+         cRKg==
+X-Gm-Message-State: APjAAAXtlvoCCXDbVQ14u3/GXYpZHIEJws6C4CCGQqrtX3GgfAr7ghtF
+	KQGrZHSY8gD4RSHkQxzssiwusK45Jye+1hFAmB5ftg==
+X-Received: by 2002:a2e:8e84:: with SMTP id z4mr24276306ljk.207.1582382952908;
+ Sat, 22 Feb 2020 06:49:12 -0800 (PST)
+MIME-Version: 1.0
+References: <aa0a9a48-1cee-4fcf-927a-fa91a14be7ce@googlegroups.com>
+ <CAAxEZd9GXNtSd7zT4SyOSfeo+M08-kGJ3i1xeXpOkBHqyNmFTA@mail.gmail.com>
+ <CAAxEZd_9BGvrOnaBKtf6H6D_DNqeeWng6jmic2nJ=Z=q-P2P2w@mail.gmail.com> <018e8af2-7002-41f6-b43d-91654c472387@googlegroups.com>
+In-Reply-To: <018e8af2-7002-41f6-b43d-91654c472387@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 22 Feb 2020 15:49:01 +0100
+Message-ID: <CAAxEZd_4-gUERM7Z1MF2w+Xg4hp9uOKFndmLnsHXT3ECmMho1w@mail.gmail.com>
+Subject: Re: [wwwmake:476] `require': cannot load such file -- pluto/update (LoadError)
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   Great news :-).  Thanks for (re)trying and for your kind words.
+Have a great weekend. Cheers. Prost.
+

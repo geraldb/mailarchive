@@ -1,0 +1,60 @@
+From 1333534916608@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1320226390016
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,9b2a3cc0c80f2a0a
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.180.205.133 with SMTP id lg5mr1969016wic.6.1374010541341;
+        Tue, 16 Jul 2013 14:35:41 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.180.211.194 with SMTP id ne2ls274279wic.3.gmail; Tue, 16 Jul
+ 2013 14:35:40 -0700 (PDT)
+X-Received: by 10.180.210.168 with SMTP id mv8mr1978666wic.0.1374010540301;
+        Tue, 16 Jul 2013 14:35:40 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22a.google.com (mail-wi0-x22a.google.com [2a00:1450:400c:c05::22a])
+        by gmr-mx.google.com with ESMTPS id q2si749208wij.3.2013.07.16.14.35.40
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 16 Jul 2013 14:35:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22a as permitted sender) client-ip=2a00:1450:400c:c05::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-wi0-f170.google.com with SMTP id ey16so4699238wid.3
+        for <webslideshow@googlegroups.com>; Tue, 16 Jul 2013 14:35:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=4yTSDGDtGcIydgO1t1FHMyJby2csbW7GJKo7evqXQGA=;
+        b=eirsnvVVlhhKdskqRstWRTdMLw4HCUaIV0bql2QwD43PusQaN+IcwVFGuryCVLS8QP
+         RgP8QNRhjcnMxDVx3PF7mns4lvZcuEP4JgIF1ySkJBFzJ4FDrYxmaW88RoOsS0ZkObJG
+         9hRs4j3U3LwbMdmSMpx2GVlgZ29H3HJQ4bPsar5+MDzgaDnGbUFxyXIMNoBb8As7ZQow
+         u4i4/wTVrudPvXkLudFntSW6Tm8463iQkV9ssBRvnrcuQwacwfAQJFL6ig6zezqmsXkD
+         VrETqoy+TWsr/a4G7sQolPzM8qLevE1+fSvfJcDHFMmD1ik1eup0mWOmQrQAYdQz5EZc
+         xUpg==
+MIME-Version: 1.0
+X-Received: by 10.180.96.227 with SMTP id dv3mr2521404wib.59.1374010540061;
+ Tue, 16 Jul 2013 14:35:40 -0700 (PDT)
+Received: by 10.216.54.202 with HTTP; Tue, 16 Jul 2013 14:35:39 -0700 (PDT)
+In-Reply-To: <237a57b7-ed83-45dc-b721-2f1be0bcb7fd@googlegroups.com>
+References: <fa26f980-c786-4116-bc44-fee38766ef52@googlegroups.com>
+	<d803668f-5ad1-4afc-b5b5-ad49fdc12562@googlegroups.com>
+	<237a57b7-ed83-45dc-b721-2f1be0bcb7fd@googlegroups.com>
+Date: Tue, 16 Jul 2013 23:35:39 +0200
+Message-ID: <CAAxEZd885494zwWQZ00BxCmM0SROwQTuXEXAXVS7rNp2qofY5A@mail.gmail.com>
+Subject: Re: [slideshow:307] Re: Failing to install on RedCloth?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  No worries. I pushed a new slideshow version to Rubygems, that is,
+v2.3.0.  The RedCloth library is now optional. Let me know if it
+works. Cheers.
+

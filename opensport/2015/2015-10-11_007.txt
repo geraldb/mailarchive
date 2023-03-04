@@ -1,0 +1,71 @@
+From 6204338179723493376@xxx Sun Oct 11 10:40:52 +0000 2015
+X-GM-THRID: 6204336718697463808
+X-Received: by 10.129.102.4 with SMTP id a4mr18961569ywc.30.1444560051769;
+        Sun, 11 Oct 2015 03:40:51 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.35.179 with SMTP id n48ls2492949qgn.82.gmail; Sun, 11 Oct
+ 2015 03:40:51 -0700 (PDT)
+X-Received: by 10.13.216.77 with SMTP id a74mr21101151ywe.9.1444560051372;
+        Sun, 11 Oct 2015 03:40:51 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22a.google.com (mail-io0-x22a.google.com. [2607:f8b0:4001:c06::22a])
+        by gmr-mx.google.com with ESMTPS id hx4si359722igb.0.2015.10.11.03.40.51
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 11 Oct 2015 03:40:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) client-ip=2607:f8b0:4001:c06::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by iow1 with SMTP id 1so129447259iow.1
+        for <opensport@googlegroups.com>; Sun, 11 Oct 2015 03:40:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=0hTXBLblA3bGA2Uc2DOtp0USC34nIMV8Fnu++dI7IKk=;
+        b=jrk/0UePD73cWcdamSZT46/DqpxgOt4rPMfbx2/lbVcW1nkrMWikEbsmVKZEcRg6WY
+         aP0bD2p/uAp3S2RT+I8NzvRidfuWUcsSKIF504umY8nfaFBauhF4elFJp+fmSfSvd3Bi
+         HwJ1canIxvza2y8BG2t1Kbiq/fapse3EzgAP/DE0AEdCbrnLKuL/ddtFlX93mLCff4nQ
+         Px25eY1qd5+mOUE2S6IwvUqJ2q0gKEi72pwcqeSAzT+xon5TdeNvo9IWwoNeYJqIaGcu
+         yfuDRAcbXYERivS8tLNqz8FC5qjHlnqcL5pu8nyiR2I131/6QyBFzsoxOlVHfJOCaeWa
+         a12g==
+MIME-Version: 1.0
+X-Received: by 10.107.3.94 with SMTP id 91mr21385550iod.178.1444560051233;
+ Sun, 11 Oct 2015 03:40:51 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Sun, 11 Oct 2015 03:40:51 -0700 (PDT)
+In-Reply-To: <6418975c-576c-4259-a128-633be882ef04@googlegroups.com>
+References: <6418975c-576c-4259-a128-633be882ef04@googlegroups.com>
+Date: Sun, 11 Oct 2015 12:40:51 +0200
+Message-ID: <CAAxEZd-JRvkysQrnoJChP5thxDtFhf0Xj2Mksb+-=c+H1qDwoQ@mail.gmail.com>
+Subject: Re: [opensport] ERROR: Major League Soccer
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for trying football.db
+
+> event reader - record for team key >kcwizards< not found
+
+  The team format e.g. 2010/mls.yml  has been updated, that is, the
+"old" format using "hard-coded" keys e.g.
+
+teams:
+- kcwizards
+...
+
+   has been deprecated. The team / club names need to get changed /
+updated to use the "literal" full name e.g.
+
+teams:
+- Kansas City Wizards
+
+  Cheers.
+
+PS: For now you can mix 'n' match e.g. just updating
+- kcwizards to
+- Kansas City Wizards    should (quick) fix it.
+

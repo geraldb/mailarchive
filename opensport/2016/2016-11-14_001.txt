@@ -1,0 +1,72 @@
+From 6352878919139459072@xxx Mon Nov 14 17:34:47 +0000 2016
+X-GM-THRID: 6212542687340396544
+X-Received: by 10.99.55.77 with SMTP id g13mr5731965pgn.38.1479144887178;
+        Mon, 14 Nov 2016 09:34:47 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.29.137 with SMTP id y9ls4622699otd.39.gmail; Mon, 14 Nov
+ 2016 09:34:46 -0800 (PST)
+X-Received: by 10.176.81.142 with SMTP id g14mr2792690uaa.24.1479144886645;
+        Mon, 14 Nov 2016 09:34:46 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22c.google.com (mail-it0-x22c.google.com. [2607:f8b0:4001:c0b::22c])
+        by gmr-mx.google.com with ESMTPS id 197si1567110ita.0.2016.11.14.09.34.46
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 14 Nov 2016 09:34:46 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22c as permitted sender) client-ip=2607:f8b0:4001:c0b::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22c.google.com with SMTP id q124so132266122itd.1
+        for <opensport@googlegroups.com>; Mon, 14 Nov 2016 09:34:46 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=iKruyTAyS+7KhmKd0I4U6C5ncZsQGsncrAJu5uy8mjQ=;
+        b=cFpdtRrmiWtIWhgXcG798/d61h8/qYXrZLtjjogIdzHaiyzte3P/iNIBwmmdfm21vH
+         vZednmevyUGgQNrK9GPp/7BBU6lnq8XsDUBFbKsT7wSPFkRr5XnoD3hYoA+COT0CvUaa
+         NTzi5dXng9DyU4JetWZGedcvVRC/FaHCOoYeGHaE/1kwcc22I6ndxvhdqiqy8Ee9tZsD
+         7y+3qC92/9JqgtkErkeb8wRrUNge4M//SdIiLxY7ICIIhBpHdK2YV5aOYRNLvimu/UH2
+         mBThJOW9NQtIyn8qT0uwH7QsDcIgrwDNaBngWyAA/5ZbGpJuCxxKQShJ8X6Yndn4xwaa
+         lRLQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=iKruyTAyS+7KhmKd0I4U6C5ncZsQGsncrAJu5uy8mjQ=;
+        b=XKmByjVVteLMog8vz/5uME6aeoRrYCYDJT6asDPaXLfDH14rGvTe3vO5O8sOy/u54e
+         LBB7o2nOS0BgwTFAFsX+goEwWiS3DHYIH11i8b6494U06XFAvLvohViHOdBGsgVn7GxB
+         /bqHyveMz2s2/6/XXn33XR6PMTl8MIb3WZziT0SaRtm/C4V8tFytpoc1n8LAKJ496PCc
+         ZqqHSWbJPRVCv1Lx2xzShOV3M+zo8bm5lJ2QAbameJByw/uJouSd8rZjbMDqwWxhU6t/
+         HyLhXuLhlgANMd37Kh/b4j+7t5XgMOz27aiUqMWyp1fKPJ+H1eC4/XkhNrCB7xMgZt2A
+         oHAQ==
+X-Gm-Message-State: ABUngvfzCyOW+MfXHSInAgF+qkswChnaCPXZXQ/YaghrnqhBGFU7+Gicc4geCcXR05kPl+CeyjlyYDVUbWgUqQ==
+X-Received: by 10.107.9.82 with SMTP id j79mr17811254ioi.197.1479144886082;
+ Mon, 14 Nov 2016 09:34:46 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.131.210 with HTTP; Mon, 14 Nov 2016 09:34:45 -0800 (PST)
+In-Reply-To: <8d8669c7-4560-4ade-8f0d-154cb0384836@googlegroups.com>
+References: <49ae2d67-5c87-4a42-9e32-ffd0f5800590@googlegroups.com>
+ <CAAxEZd-Qg2p_cWHN4Q_xJkGTCTLOCkuCMkm1-gBW8wDLoSDorQ@mail.gmail.com>
+ <c11b85b4-ff7d-4d30-89f2-7a6b2f47f8b1@googlegroups.com> <ae9b9044-15b2-4f03-997a-dcfea03d246a@googlegroups.com>
+ <CAAxEZd_1cM3hiSHtVaYW0m7L=JM17wQTH5N0yONdkkmo5hUk5g@mail.gmail.com> <8d8669c7-4560-4ade-8f0d-154cb0384836@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 14 Nov 2016 18:34:45 +0100
+Message-ID: <CAAxEZd9CAakwNBTu3hH_8UyO=Egg_X14-fJGFkx_ot=PqLJ3Gw@mail.gmail.com>
+Subject: Re: [opensport] NameError: uninitialized constant WorldDb::ReaderBase
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+>> Gem Load Error is: uninitialized constant WorldDb::ReaderBase
+
+> Sorry for the newbie question, but isn't version 2.0.4 the one I'm using?
+
+  Good point. You also have to use the "old" locked down version of
+sportdb etc.  (newer versions include a reference to ReaderBase, and,
+thus, will NOT work).
+
+   Cheers.
+

@@ -1,0 +1,110 @@
+From 6739395845735579648@xxx Sun Sep 22 07:37:53 +0000 2019
+X-GM-THRID: 6739392979940671488
+X-Received: by 2002:a2e:86c5:: with SMTP id n5mr13987182ljj.153.1569137872544;
+        Sun, 22 Sep 2019 00:37:52 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a19:7102:: with SMTP id m2ls1104015lfc.15.gmail; Sun, 22 Sep
+ 2019 00:37:51 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqwbqa4P3bnFuFPHcsP/g/34/yJ0EoQ6ehSArT4Ua5jjBd+8MQoByiYqWZm3sm2c9JCuWLeA
+X-Received: by 2002:ac2:44d2:: with SMTP id d18mr13978212lfm.67.1569137871786;
+        Sun, 22 Sep 2019 00:37:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1569137871; cv=none;
+        d=google.com; s=arc-20160816;
+        b=LbFm/J57nBSWcvWLm+jvyivDF6pbd6zNnDdS2unPoz+HT93xCEsHJcKfs0LXY6rdQd
+         kulXDuk8rAlDO4Y3pqvnuhAfyWbo7RFRrtyuEGY4q6Vx3OQX2ZKb5nAAsE4bt/HyQnyv
+         EtRofVdlMOXiF05F3xjGAbFMka1H4VX5Oo+oWFAp8yW4l5x8tYLy2SmQn//yyMoSAbI/
+         YfQeZ/Ks+a90tKccyXda/wUcINQTWXCNs8MF77oX2tucx3Ti0r48S0ApDJC5cR1tVXXt
+         XiwH2Ab6oxZdsN3+E0lRBPUDCBzF28be+qyUiPfXj2DbvoluwQDYVzbrmZMvtg8LWbut
+         pCHQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=M3+Wjl76JxZL1U7fOIVdoZm0Rvg2XskqOJ8vu0LvbbY=;
+        b=s3pY/+iFb/bP7Fmg/cKrtlLlGuNV7jXAt9KxgydGanHoWKpIwVik8ivfNvump5OZ5K
+         EeKEb+z5od2siK9Mr/8xfpgFxB7x40xUPpLcxg1kpQDONmBiyWjTDCpHR+brL+9WmZUH
+         CAS+iFgzPZZ55zZyoI+G4dAEwwiDu9d48eGvYHgRFD8qPJKYOPSakAwb2odfFZ6zEOST
+         +SKYJXMKB4R1cdxjwMUvR4iRAEIO0+HXYBkI7kCz+/zWe0YfjD9GhuXa9/4WGYqVl58X
+         w7vblS+POKldXSn5ShWQBVf/TrhZE6MRxKovGDpR706fMWemyl/i/+r8bBl29HmNyhJ+
+         48fA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=HeBwuetJ;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x136.google.com (mail-lf1-x136.google.com. [2a00:1450:4864:20::136])
+        by gmr-mx.google.com with ESMTPS id y6si444927lji.0.2019.09.22.00.37.51
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 22 Sep 2019 00:37:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) client-ip=2a00:1450:4864:20::136;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=HeBwuetJ;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x136.google.com with SMTP id 72so7815734lfh.6
+        for <opensport@googlegroups.com>; Sun, 22 Sep 2019 00:37:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=M3+Wjl76JxZL1U7fOIVdoZm0Rvg2XskqOJ8vu0LvbbY=;
+        b=HeBwuetJm6OpSuxSvCwTsrkLbunOCE2Ur87vgxUeOOcp0tXIBY7AxVsi+IteMrt200
+         cSaFYXtsCrEXT6KvWRJ1AsZ8XEruxTRjxMwEU+eJKXRYI7Vpq/y6EXzJJ3BE0Q12CYXG
+         lRmj2wsz8uFYSZpKcBT78iADrbwmbhdMQ4kGjLgiaV0CLvOJvCBobToR7mgFhr7xjdqJ
+         FA6qE5OXeS+tWbPI/Q1naAxpQhuSZUcW/9HKb5cIKWZK6uZoKy20U5tnLqXji58Vd9Of
+         xk8f+FQWy9xpbrohSfEmOtXm6ZV1JsKKSssF+u3Zk9pBWEo9ISejSPZKVLa//BiyGn23
+         vnsg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=M3+Wjl76JxZL1U7fOIVdoZm0Rvg2XskqOJ8vu0LvbbY=;
+        b=YiOcVu3qiYchv7vWhoAdFx/iLdWy7RoVV3yZwUHKJK632g/Gc/HTvuLJeUK8iGbJML
+         pQ6goJHyl+wqxNdpivGP9uc/Yuw/4KE4/yWHjfp0kmOjTQhZxlUOg0M8+p397bjpHoov
+         T0KpnMY+tP7DiPpJjbo6utAIova9cd6BmrV6caTA895TzL9vKdVCMzVKPPWrHcuKZp5Y
+         Oej/IjLMYjQXIyyCaHbGDlqFJiLxAuhsqzAdRRH6cBGfsjM17eEEdj91bzCr3EUUW9fn
+         u3oihbWZc97sDOV/gOsTJKZdU11SDW+4X+IWD1LTV0f/jwjbwL+ZOJbUYLL8RhAYdUcs
+         B7mA==
+X-Gm-Message-State: APjAAAXkeqU3x/07eUKRppf06Q89DnTqNUdXswqezTyG4tT/WdDT7slX
+	BH6bODtrHe6lvqnSdunDSHAk6aUezsHUPbgP57UW4hjN
+X-Received: by 2002:a19:4912:: with SMTP id w18mr13273764lfa.93.1569137871092;
+ Sun, 22 Sep 2019 00:37:51 -0700 (PDT)
+MIME-Version: 1.0
+References: <9c669f31-748c-46e2-8eee-f511453ef631@googlegroups.com>
+In-Reply-To: <9c669f31-748c-46e2-8eee-f511453ef631@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 22 Sep 2019 09:37:40 +0200
+Message-ID: <CAAxEZd8yydc+EXYdCmKSJ8d1P1+z-QLosWH=J83o8uxzmprPCw@mail.gmail.com>
+Subject: Re: [opensport] Issues with loading into postgresql
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+    Welcome to football.db. Thanks for trying.  Sorry for the trouble
+I'm currently reworking the football.db setup (to make it easier) and
+it will take another week or two until everything works again.
+
+    As a workaround (and recommended alternative) you can import all
+football.csv datafiles [1].  Find the example import script in the
+sportdb-import readme [2]  - you will need to change the database
+config from 'sqlite3' to 'postgresql'.   All see the posts by Paul
+Cowan who imported the English leagues (using football.csv)
+successfully into PostgreSQL.
+
+    Cheers. Prost.
+
+PS: For installing all required sportdb libraries (and dependencies)
+use a Gemfile e.g.
+
+Gemfile:
+------------------
+source 'https://rubygems.org'
+gem 'sportdb-import'
+------------------
+
+And use $ bundle install  to  download / install all libraries / gems.
+
+
+[1] https://github.com/footballcsv/england
+[2] https://github.com/sportdb/sport.db/tree/master/sportdb-import
+

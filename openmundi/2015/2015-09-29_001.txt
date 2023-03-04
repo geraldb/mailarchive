@@ -1,0 +1,91 @@
+From 6199982312843640832@xxx Tue Sep 29 16:57:52 +0000 2015
+X-GM-THRID: 6199982313766387712
+X-Received: by 10.66.160.135 with SMTP id xk7mr24393732pab.28.1443545872052;
+        Tue, 29 Sep 2015 09:57:52 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.107.155.19 with SMTP id d19ls2135738ioe.19.gmail; Tue, 29 Sep
+ 2015 09:57:51 -0700 (PDT)
+X-Received: by 10.50.43.233 with SMTP id z9mr21732646igl.9.1443545871838;
+        Tue, 29 Sep 2015 09:57:51 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22b.google.com (mail-ig0-x22b.google.com. [2607:f8b0:4001:c05::22b])
+        by gmr-mx.google.com with ESMTPS id z7si2324158igw.0.2015.09.29.09.57.51
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 29 Sep 2015 09:57:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22b as permitted sender) client-ip=2607:f8b0:4001:c05::22b;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22b.google.com with SMTP id kq10so81623502igb.0
+        for <openmundi@googlegroups.com>; Tue, 29 Sep 2015 09:57:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=DBAj4puovAiTcw6lHPbdV+B16gi/5V1ilBgTcU00RHk=;
+        b=QltJWFvARSXD0rQea8bFys1Kn3Jy3owuLRfZRiqYu2aUEOsNSaq4dctMnQv1txUg74
+         jbXZM+LR0AzNcvluFIqEjISIzuZZ+WQd+OqCDoYHONsGvQ8LnIEOAj1LOUPNiiDqTSbV
+         b/6lrf2gXynK9xLUCUGRCD1wHUKG29UKEzrNPR4aQYiKBg4kLHnXxAzTYotz3MCtGDa1
+         d3XkjmLSwMQKZVVDiV4j9mtND1yMNlOUmQh6DbaS9xcYtuwuvInIEkUn3pUJaumQb13k
+         2IVQBXJEoqtccbp4kRVw98eKfvHgv8K24mt/klFA4W0ZVq7rFQi5Zdzk3nn3+VtUKUF5
+         BsYw==
+MIME-Version: 1.0
+X-Received: by 10.50.112.69 with SMTP id io5mr10138849igb.64.1443545871662;
+ Tue, 29 Sep 2015 09:57:51 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Tue, 29 Sep 2015 09:57:51 -0700 (PDT)
+Date: Tue, 29 Sep 2015 18:57:51 +0200
+Message-ID: <CAAxEZd-sbQGBqj7BarKvAg82BEH_ix=kvnW=Vtqxpbu84rFjrg@mail.gmail.com>
+Subject: factbook.csv - World Factbook Country Profile Data in CSV
+ (Comma-Separated Values) Format - New Repo
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  If anyone follows along - surprise, surprise - the new factbook org
+now includes a new factbook.csv repo [1].
+
+  What's the /factbook.csv repo good for?
+
+  For now it will include all country comparisons sorted from highest to lowest.
+  For example data/c2147.csv [2] includes the area (in sq km)
+statistics and reads:
+
+    Pos,Name,Value
+    1,Russia,17098242
+    2,Canada,9984670
+    3,United States,9826675
+    4,China,9596960
+    5,Brazil,8514877
+    6,Australia,7741220
+    7,India,3287263
+    8,Argentina,2780400
+    9,Kazakhstan,2724900
+    10,Algeria,2381741
+    ...
+
+  And, for example data/c2119.csv [3] includes the population
+statistics and reads:
+
+    Pos,Name,Value
+    1,China,1355692576
+    2,India,1236344631
+    3,European Union,511434812
+    4,United States,318892103
+    5,Indonesia,253609643
+    6,Brazil,202656788
+    7,Pakistan,196174380
+    8,Nigeria,177155754
+    9,Bangladesh,166280712
+    10,Russia,142470272
+    ...
+
+   As always questions and comments welcome. Cheers.
+
+[1] github.com/factbook/factbook.csv
+[2] github.com/factbook/factbook.csv/blob/master/data/c2147.csv
+[3] github.com/factbook/factbook.csv/blob/master/data/c2119.csv
+

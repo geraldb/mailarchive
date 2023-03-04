@@ -1,0 +1,157 @@
+From 6846433735153287168@xxx Mon Jul 06 18:19:34 +0000 2020
+X-GM-THRID: 6844588380482699264
+X-Received: by 2002:adf:a4cf:: with SMTP id h15mr48654178wrb.229.1594059573868;
+        Mon, 06 Jul 2020 11:19:33 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a1c:2049:: with SMTP id g70ls143336wmg.0.gmail; Mon, 06 Jul
+ 2020 11:19:32 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzmROpxOxbSyuczWUhdYPwRMTuNGttYtIaTD6rPov6w4EyKLk4BvWWd61B8mp1Y9MShPBoO
+X-Received: by 2002:a1c:a949:: with SMTP id s70mr461565wme.137.1594059572816;
+        Mon, 06 Jul 2020 11:19:32 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1594059572; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ANHeTUf1ZcARO96MuNoi5LzwodgFPJVOiPfzCDvs7DWiwmFwe8RsjO2IMpFkAUy/S0
+         NMaKgtKcmLgZKYPcm7Br8PBgSHyl9iZDMyhsCjCzTBryXljU5vvzLrnretw3f0PVA//Q
+         5nzoJTTW6MjhJJTfeL6hBUzYn66q9j4Yn7N17zcHVJL9nkhrmdPpMiuWas9myk6LDgMb
+         CsNY8VXcP9zZFNMX/h4iAnITJ2MCTcUF/2rCOXZ94RauZEVVkTbW4LaCq0EDKCIqxeY+
+         Vyqpqi3NJshFNkemfVbFOETiLH1AJOaH50NqUpdmdoljtgSRs/FHCgkKjI9avvzqjHnn
+         5qEA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=aBjKcm186bPWseDja6XKbNR/6L34rXZ6YHAALyAdVxA=;
+        b=IrWoUE3apgcP9hBO3mjZd21yk3Wz+07cNjGo51u6svUayUkwQjuhiU8jwZtBnRBsUp
+         NP0gKHR4dQPJe/v2B9j8HSTgF1lTqpWQ0+U9RonjMElb4+9UV3/N6w5kRIqmNWg1V6Nx
+         BcGHxHYqQ0JorThvNboCuZbkLlfeaL/DiGajmGxcQqs562pLhVXeQG54KB+I5iwbcAP/
+         wJ6wkG56fQIa/lJXEweNPWUHc74ZQx+I3FXShmPum3coIx6gMUC/qUc2wK3h8L1cj6Cl
+         78IacmPg+XUa/bubN8SUlHM8hVZ8/iTrz+aEsog4YwR4RJUYAKAcotkV2RkgqsuW9a6J
+         1Yyw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=NXeaCN3A;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22c.google.com (mail-lj1-x22c.google.com. [2a00:1450:4864:20::22c])
+        by gmr-mx.google.com with ESMTPS id m3si13743wme.0.2020.07.06.11.19.32
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 06 Jul 2020 11:19:32 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) client-ip=2a00:1450:4864:20::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=NXeaCN3A;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22c.google.com with SMTP id h19so46625926ljg.13
+        for <opensport@googlegroups.com>; Mon, 06 Jul 2020 11:19:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=aBjKcm186bPWseDja6XKbNR/6L34rXZ6YHAALyAdVxA=;
+        b=NXeaCN3A64OC1M2cudxURrzYX2Ksts5+xpy7K0eOwt1sYf+xdQSjbrarmkJMtEhsCz
+         g/xsJkmmB42HDi5OFgEcCW24lNyNL5S/6p7yY9kCuTHLOcSJIMs/QvvfN8MiPbDOhmFf
+         LNBUvWRE91EBeaK19iI/xbBP41zxMqRfq+YRSWwfO0PbF7FfsZQM1GTDoKFuKy05ev6U
+         tyHDBG8dcs3EPtUMbv3FhG+htihKP1COXA+2h2FJBiMoCRteXPMbgRCPmylDx12ED4lQ
+         7KdYUczl4TEY2W2/Aewq5yRlXE6qYfNrW5moVBNlBPfbUA7wkwLc+i3WtVmRBth0k+ZK
+         z5cA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=aBjKcm186bPWseDja6XKbNR/6L34rXZ6YHAALyAdVxA=;
+        b=CXLgcYIOYA1ElWdrnH2n3EQhgpKJ2WuhTp75xmSfkpskkOKhbxaR2RUF4dOOdCAAuB
+         KJ8G7i1dgClCfWge7NekvQMIQkK/y0BEyRkogrhlxKN36BBnbhODBVXVfkPHCBPZB9pQ
+         Ei7nE1yUm8TfGat6N9vbnszzQ3EslEaYuAuCzfFHSPh7VRLUIMbLsvelWMLI3R42KGLv
+         GM5cih15q4ToaU2dVaqng+PP+kolC2AVb5buTC8E5cu4PMfQml0aVGfafFpxPUxmjzXo
+         zahRtd9tMmFH7agnb84u//TB0TVFKb5l3+/KCuaK45Zaaje6fQ0w76/Da8TlEgGGlEXF
+         ldJQ==
+X-Gm-Message-State: AOAM531LYA48Lkk6qAcFE2rWAVHSvNq+LGXQ24BkhXd0rp34Htihyw2c
+	tPBrczA8rpE+nL6RktSloVdz9svXnWDIsEOVaAVTu44J+CU=
+X-Received: by 2002:a2e:7c07:: with SMTP id x7mr17346010ljc.166.1594059571784;
+ Mon, 06 Jul 2020 11:19:31 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAAxEZd9x+rFQUzxVScnbghfv9+crD+5fxHLTs2mrEiGbCvGtUQ@mail.gmail.com>
+ <4fb6e3be-7696-4234-a35c-2349169d61f4o@googlegroups.com>
+In-Reply-To: <4fb6e3be-7696-4234-a35c-2349169d61f4o@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 6 Jul 2020 20:19:19 +0200
+Message-ID: <CAAxEZd83v3S=GvpmuhjsbMcsQtNKTemYjUE0AgdYZVz=fm3yVQ@mail.gmail.com>
+Subject: Re: [opensport] Re: football.csv - England (Premier League,
+ Championship, etc.) Datasets - Reboot
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+   Thanks for your kind words and thanks for reporting the build error.
+
+    Sorry for the trouble.  Some libraries incl. the
+footballdb-leagues [1a] (that bundles all known built-in leagues [1b])
+need to get updated. I try to get it all done by tomorrow (Tuesday)
+and report back.  Thanks for your patience.
+
+[1a] https://rubygems.org/gems/footballdb-leagues
+[1b] https://github.com/openfootball/leagues
+
+El lun., 6 jul. 2020 a las 18:16, Rae Leighton
+(<louise.rae@hotmail.co.uk>) escribi=C3=B3:
+>
+> Hi Gerald,
+>
+> I've been trying to download the England database using the '$ sportdb ne=
+w eng' command, however I'm getting the following error:
+>
+> league >English Division One<, season >2000/01<
+> ** !!! ERROR - no league match found for >English Division One<, add to l=
+eagues table; sorry
+>
+> *** error: exit
+>
+> Which means that only season 2010/11 is loading at the moment.
+>
+> I have successfully downloaded it in the past, but I'm not sure how to ov=
+ercome this error (I'm not very experienced with programming!). Any help wo=
+uld be very much appreciated. Thank you for making such a fabulous data res=
+ource so accessible - it's amazing!
+>
+> Best wishes,
+> R.
+>
+> On Wednesday, 1 July 2020 19:58:38 UTC+1, Gerald Bauer wrote:
+>>
+>> Hello,
+>>
+>>   I've rebooted the football.csv datasets for England [1].
+>> What's new? What's different?
+>>
+>>   The datasets are now a 1:1 mirror, that is,
+>> an export in the comma-separated values (CSV) format
+>> from the open football.db /england datasets [2].
+>>
+>>   The idea is to have a "single source of truth" with the
+>> /england datasets in the Football.TXT format.
+>>
+>>  Questions and comments welcome.
+>>
+>>   Happy data wrangling. Enjoy the beautiful game.
+>> Cheers. Prost.
+>>
+>>
+>> PS:  You can find some of the "old" datasets in CSV going back to 1888
+>> and the latest seasons
+>> now in the cached datasets, that is, James P. Curley's R soccerdata [3]
+>> and Joseph Buchdahl's football data [4], for example.
+>>
+>> [1] https://github.com/footballcsv/england
+>> [2] https://github.com/openfootball/england
+>> [3] https://github.com/footballcsv/cache.soccerdata
+>> [4] https://github.com/footballcsv/cache.footballdata
+>
+> --
+> You received this message because you are subscribed to the Google Groups=
+ "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an=
+ email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit https://groups.google.com/d/msgi=
+d/opensport/4fb6e3be-7696-4234-a35c-2349169d61f4o%40googlegroups.com.
+

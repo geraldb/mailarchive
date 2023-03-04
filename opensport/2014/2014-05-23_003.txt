@@ -1,0 +1,81 @@
+From 798006181888@xxx Tue Jun 16 00:17:06 +0000 2015
+X-GM-THRID: 796826533888
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,5c1732ce71187a57,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.14.127.6 with SMTP id c6mr357878eei.0.1400834972526;
+        Fri, 23 May 2014 01:49:32 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.95.137 with SMTP id dk9ls55192wib.49.canary; Fri, 23 May
+ 2014 01:49:32 -0700 (PDT)
+X-Received: by 10.180.82.98 with SMTP id h2mr193787wiy.0.1400834972083;
+        Fri, 23 May 2014 01:49:32 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x236.google.com (mail-we0-x236.google.com [2a00:1450:400c:c03::236])
+        by gmr-mx.google.com with ESMTPS id xk11si42822wib.0.2014.05.23.01.49.32
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 23 May 2014 01:49:32 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) client-ip=2a00:1450:400c:c03::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f182.google.com with SMTP id t60so4481811wes.41
+        for <opensport@googlegroups.com>; Fri, 23 May 2014 01:49:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=yh3XJeNuoCIp4LcnRpMCW+Wm3EHZzCJG/pVx0lK8MXo=;
+        b=AaGF6t1dBYVv1n0dKTe4XZSNzz/bZV3VXXJYw6R/T3rVzK8O490MgMwxoj0vQx08m3
+         m2Z8+t+bXnvAcAd8ChqmTxPruYhye/NBuy4PFzaEmlsxlGsEQUTJwlE71qi/7VUA1d7Q
+         YlRv4w0aW2flbZ02hW/d9oieGPnKga125IqzXjlojd69X2K3vXlmxfuO1BvUN87d2flT
+         Yo5amo+UI8+mxmu/uyuDP6OHtxMcsy+Jj/UaX5NtAQlERPM3zg4O+XE3siWtjzlAnaY5
+         0PX4Pb+Yvr/SdaYZQzAmMjqkSarXIy1o+H7VuPAerc8/Ti8gyaU8c8pB3dQwQi3F2hmD
+         Upbw==
+MIME-Version: 1.0
+X-Received: by 10.180.77.70 with SMTP id q6mr1985914wiw.28.1400834971973; Fri,
+ 23 May 2014 01:49:31 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Fri, 23 May 2014 01:49:31 -0700 (PDT)
+Date: Fri, 23 May 2014 10:49:31 +0200
+Message-ID: <CAAxEZd9C=VAYM8VtcF0D01wjhZ1TrZybiQRXAtTww-Lt=0rSTA@mail.gmail.com>
+Subject: sportdb Command Line Update - What's New? Read/Import Players and Squads/Rosters
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've updated the sportdb gem, that is, version 1.8.25. What's new?
+
+  Still a little rough but you can now read in football players
+(goalkeepers, defenders, midfielders, etc.). See the players repo [1]
+that lists players by country.
+
+  "Unassigned" players will get read (imported) into the persons
+table. If you use the build script, try for example:
+
+  $ rake update DATA=players
+
+ That will read in all football players in the players repo.
+
+ Next you can add players to teams (for squads/rosters). See the World
+Cup 2014 team squads as an example (/2014--brazil/squads/*) [2].
+"Assigned" players will get read (imported) into the rosters (soon to
+be renamed squads) join table (event ref+team ref+player ref). Again
+if you use the build script, try for example:
+
+  $ rake update DATA=squads
+
+  There's really no "magic" the build instructions read:
+
+  SportDb.read_setup( 'setups/all',         PLAYERS_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/all',         NATIONAL_TEAMS_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/2014_squads', WORLD_CUP_INCLUDE_PATH )
+
+   That's it. Again still a little rough so expect some surprises. Cheers.
+
+[1] github.com/openfootball/players
+[2] github.com/openfootball/world-cup/tree/master/2014--brazil/squads
+

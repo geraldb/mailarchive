@@ -1,0 +1,74 @@
+From 6342339135996428288@xxx Mon Oct 17 07:55:03 +0000 2016
+X-GM-THRID: 6342113564983033856
+X-Received: by 10.200.53.22 with SMTP id y22mr6702309qtb.58.1476690903224;
+        Mon, 17 Oct 2016 00:55:03 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.40.182 with SMTP id s51ls12274758ota.14.gmail; Mon, 17 Oct
+ 2016 00:55:02 -0700 (PDT)
+X-Received: by 10.31.171.201 with SMTP id u192mr3439084vke.12.1476690902716;
+        Mon, 17 Oct 2016 00:55:02 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x231.google.com (mail-it0-x231.google.com. [2607:f8b0:4001:c0b::231])
+        by gmr-mx.google.com with ESMTPS id d184si600693itg.0.2016.10.17.00.55.02
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 17 Oct 2016 00:55:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::231 as permitted sender) client-ip=2607:f8b0:4001:c0b::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x231.google.com with SMTP id e187so11188701itc.1
+        for <opensport@googlegroups.com>; Mon, 17 Oct 2016 00:55:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=GW6Zj8Qkem18p/h5oWw1guaBfITNpLzEXphHpwahlYo=;
+        b=sTuMLx6ZvZgHoN9Z3IHn5+W2ZVA69r4ioU392ICqPsD6kX/+7Hh5NSgeXRWSUbpCbA
+         QRjzqc5uB41u7fN02k+MPnEuwf5G8W+7jS1eJ1HYyrYbcjU7AT4Qs1RgSe1pYRoFx+9Q
+         zetkmyIFeHe9CSOkoPWITKqgd5DbKUgYSsNSTQUR/M1xJYIbXRrBU6CI6fMCVgHw7EUh
+         eyoXP9LnB+GiM2XI7ti74OI1HUJMm6X97w45ltrM29PeESGUsGMXzDDIXth87+24ykEM
+         3rBl31wiwT19HNGcTcXOFkhhhIG7vTO/eKBtQdS1ywwR1yPn3eMNFtwjmWKubFinjhD5
+         s02g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=GW6Zj8Qkem18p/h5oWw1guaBfITNpLzEXphHpwahlYo=;
+        b=b8X9WMaPJnhbWajMz4q9sMSKYcFMqZKRGotlY/o9XB7laCHZl0gYqmelbfxSFhYAhC
+         VXeYVnjOCLTou2Fz2f86j+4JTzYT5/QrI4fCANV72P3deEOEXfQN3jk6jvVauJHRfKWJ
+         WDdXbmkF/ir6bX+eCG9mJmSMawkh8iKVSMI809OITBJH1YxWCvkyeK0joKoXLgjwZfAS
+         F+1T2FyqvOoet3CA2Py2c088S/3MzDMqWPp9Rc8SnbdY/0z4+pL5mmll2QAzdnZRUD4L
+         Ip04412e0n4FoXsxdWjwwAoLgW6p4HozZ2qljqHazNoeUAacTXH4FHnUPMGY8cL57uum
+         W7oA==
+X-Gm-Message-State: AA6/9RmlE+UlR1OtWtwmSV7fGNyfFLA1c8JPx1Wqm2kuisw7Xi98Vplc9J36BKOwERhVggGrytXzrO/eAMoujA==
+X-Received: by 10.36.135.201 with SMTP id f192mr8031640ite.13.1476690902402;
+ Mon, 17 Oct 2016 00:55:02 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.141.194 with HTTP; Mon, 17 Oct 2016 00:55:01 -0700 (PDT)
+In-Reply-To: <66920b62-aa9b-4e82-9273-121ee2019003@googlegroups.com>
+References: <f6259f69-0d0f-4ca1-9ac8-af45aeca4c1b@googlegroups.com> <66920b62-aa9b-4e82-9273-121ee2019003@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 17 Oct 2016 09:55:01 +0200
+Message-ID: <CAAxEZd9s3ApLdYMH90+U+3EHRN5Af3jSTr+7vp3mYOZik_CVew@mail.gmail.com>
+Subject: Re: [opensport] Re: How to use the .txt files in the world-cup repo?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Ben,
+
+> Actually disregard my second feedback comment "The builder doesn't check for
+> existence of the zip files so I had to download them again every time I ran
+> the command".
+>
+> Looks like if they're there, they won't get re-downloaded.
+
+   No - you are right. The datasets (zips) get downloaded everytime
+(and overwritten). There is no check yet for double downloading or
+caching etc. Sorry that's a todo.
+
+   There are, however, indiviudal commands e.g. download, read etc. to
+run / execute only steps.  Thanks for your comments and trying.
+
+   Cheers.
+

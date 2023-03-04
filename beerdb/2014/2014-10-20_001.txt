@@ -1,0 +1,62 @@
+From 173185957888@xxx Sat Dec 20 19:01:39 +0000 2014
+X-GM-THRID: 174694858752
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,f6f6a26e06d5690e,start
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.83.134 with SMTP id q6mr2813865wiy.7.1413838179836;
+        Mon, 20 Oct 2014 13:49:39 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.180.103.34 with SMTP id ft2ls367236wib.48.canary; Mon, 20 Oct
+ 2014 13:49:39 -0700 (PDT)
+X-Received: by 10.181.27.135 with SMTP id jg7mr2810650wid.5.1413838179569;
+        Mon, 20 Oct 2014 13:49:39 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22d.google.com (mail-wi0-x22d.google.com. [2a00:1450:400c:c05::22d])
+        by gmr-mx.google.com with ESMTPS id o2si442786wib.2.2014.10.20.13.49.39
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 20 Oct 2014 13:49:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22d as permitted sender) client-ip=2a00:1450:400c:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f173.google.com with SMTP id fb4so8285780wid.12
+        for <beerdb@googlegroups.com>; Mon, 20 Oct 2014 13:49:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=7+18qOyhzW7Y0ZdjUBBwLL+VgOugl1avBrQBH7rvu3I=;
+        b=wH/K9ViyvQsqvaET0Oq+TbfzRo+fSqXNNDMBoOm4uihYm1qvviNJ/Vwlhrtsk2x4qI
+         LGItumdI2EtIrbwplbezoPgVaoF/MW6wJXLIbdxt6gnwrOPnfGnfdJo/TRFoAlxXIkBq
+         gRPCGkWKcHvv3g5NGScwoxFQAanl+6+eJpwEnNy9MIojcfeEEZTS66C6IAVGWf7bh3+m
+         +M/b1hR2TGfe8PJvxOx6tKalmwV3oXNhhoD3rwPFnhMSg+b9hPL+DwcS/38lKPXVi2ef
+         99PWAzdchQDzvctWlWgoKRZoed/ghesgDLhBnENfi4LlUFMwUib6C5NEaAf/V+0ZSeBr
+         qHaQ==
+MIME-Version: 1.0
+X-Received: by 10.194.78.238 with SMTP id e14mr14369020wjx.106.1413838179485;
+ Mon, 20 Oct 2014 13:49:39 -0700 (PDT)
+Received: by 10.216.205.135 with HTTP; Mon, 20 Oct 2014 13:49:39 -0700 (PDT)
+Date: Mon, 20 Oct 2014 22:49:39 +0200
+Message-ID: <CAAxEZd81w+EV+si8iO+SxWgz4e0fPXsYFKuXjy3AsOKDSwUdSw@mail.gmail.com>
+Subject: New Repo - Bayern (Baviria) - incl. European Beer Stars 2011, 2012, 2013
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   FYI: I've moved all beer, brewpub n brewery data for Bayern
+(Baviria) to its own repo, that is, openbeer/by-bayern [1].
+
+   I've also included all European Beer Star winners from Bayern
+(Baviria) for the years 2011, 2012 and 2013  [2][3][4].
+
+  Cheers. Prost.
+
+[1] github.com/openbeer/by-bayern
+[2] github.com/openbeer/by-bayern/blob/master/beerstar-2011.txt
+[3] github.com/openbeer/by-bayern/blob/master/beerstar-2012.txt
+[4] github.com/openbeer/by-bayern/blob/master/beerstar-2013.txt
+

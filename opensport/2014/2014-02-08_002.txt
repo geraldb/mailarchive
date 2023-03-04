@@ -1,0 +1,65 @@
+From 284757590016@xxx Tue Jun 16 00:17:16 +0000 2015
+X-GM-THRID: 286075650048
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,3936e32cd5dc7e73,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.153.68 with SMTP id ve4mr7496193obb.39.1391834798861;
+        Fri, 07 Feb 2014 20:46:38 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.153.11 with SMTP id vc11ls932800igb.12.gmail; Fri, 07 Feb
+ 2014 20:46:38 -0800 (PST)
+X-Received: by 10.43.69.210 with SMTP id yd18mr170170icb.10.1391834798655;
+        Fri, 07 Feb 2014 20:46:38 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-vb0-x229.google.com (mail-vb0-x229.google.com [2607:f8b0:400c:c02::229])
+        by gmr-mx.google.com with ESMTPS id ys4si1683162vdc.2.2014.02.07.20.46.38
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 07 Feb 2014 20:46:38 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c02::229 as permitted sender) client-ip=2607:f8b0:400c:c02::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c02::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-vb0-f41.google.com with SMTP id g10so3285910vbg.14
+        for <opensport@googlegroups.com>; Fri, 07 Feb 2014 20:46:38 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=lXNVa6kGmEC8VA8Ba2hdGJNUeiV3VMYfdyU4ykD42ek=;
+        b=HsRGABLzFNVhpDbDwgwwRTL92TVXK/vaVnz4e/UzojEyiIIdGSyk7ABas3XStdyAeU
+         RRMty81BdrNwpOQAWAn6GZPu2NdBYi1q+ww841e6tszsKLpgExtFpmBELKC0H1/IJOJb
+         DS9HOSiIMZfDUAoqUBsJcKryZVrDiya7fZedFlid9FQeNjZRT1uakmnOO+Uph4xikzUt
+         6qazymOM53cGRK99JBU5bYIXZoRDUzC9f/9rz/KOe43hzWHcvLQA5ctRnXCy2YxJMUE8
+         /VYhWMacSRC1XX3D7YH5k+NvgrL9bq97x9Fk7zE2yPgDuH/ZNzi59cOJlwBmygjC7TaB
+         0FYQ==
+MIME-Version: 1.0
+X-Received: by 10.220.92.135 with SMTP id r7mr13400643vcm.11.1391834798511;
+ Fri, 07 Feb 2014 20:46:38 -0800 (PST)
+Received: by 10.58.156.10 with HTTP; Fri, 7 Feb 2014 20:46:38 -0800 (PST)
+Date: Fri, 7 Feb 2014 22:46:38 -0600
+Message-ID: <CAAxEZd8jydi=VjyHySrWpwP2Pvx6dbXSc=HJH-CNJ7uAHEpTSw@mail.gmail.com>
+Subject: The Free World Football Almanac (Auto-Build n Auto-Updated by football.db)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   The football.db - a free open public domain football dataset - now
+includes Ruby templates and scripts that let you build a complete
+book.  See the "The Free World Football Almanc"  live in two versions
+- there's an all-in-one HTML page [1] version and an HTML page per
+country version [2].
+
+ Still a little rough and early stage but always adding more teams and
+working on improving the layout/design.
+
+ More info at the project site @ github.com/openfootball/book
+
+Cheers.
+
+[1] http://openfootball.github.io/book/book.html
+[2] http://openfootball.github.io/book
+

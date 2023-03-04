@@ -1,0 +1,60 @@
+From 6627882995238830080@xxx Sun Nov 25 19:31:03 +0000 2018
+X-GM-THRID: 6627882992023896064
+X-Received: by 2002:a81:7105:: with SMTP id m5mr11603414ywc.26.1543174263153;
+        Sun, 25 Nov 2018 11:31:03 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a25:ab26:: with SMTP id u35-v6ls6798272ybi.10.gmail; Sun, 25
+ Nov 2018 11:31:02 -0800 (PST)
+X-Received: by 2002:a25:b3ca:: with SMTP id x10-v6mr11685331ybf.94.1543174262813;
+        Sun, 25 Nov 2018 11:31:02 -0800 (PST)
+Received: by 2002:a81:538b:0:0:0:0:0 with SMTP id h133-v6msywb;
+        Sun, 25 Nov 2018 09:47:48 -0800 (PST)
+X-Google-Smtp-Source: AJdET5c8df5qakqrMNVr1uorN+mblHsB5C2ez04GJ9zCmoYyn4yyY4B8JRZRaXCBeWYak9HzenVMraEz8A==
+X-Received: by 2002:a81:5bc6:: with SMTP id p189-v6mr297795ywb.3.1543168068187;
+        Sun, 25 Nov 2018 09:47:48 -0800 (PST)
+X-Google-Web-Client: true
+Date: Sun, 25 Nov 2018 09:47:47 -0800 (PST)
+From: Constantinos Morfakis <cmorphakis@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <7d7b7041-f478-4320-a8f5-a25941ef81f8@googlegroups.com>
+Subject: sqlite3 error
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_944_1101851756.1543168067982"
+X-Google-Token: EMPA698F_3hPk7NDhwI0
+X-Google-IP: 212.50.109.166
+
+------=_Part_944_1101851756.1543168067982
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_945_1240261867.1543168067982"
+
+------=_Part_945_1240261867.1543168067982
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi everyone,
+
+I am trying to build the database but after the datafiles are successfully 
+downloaded the following error comes up:
+
+{:adapter=>"sqlite3", :database=>"./sport.db"}
+
+*** error: Error loading the 'sqlite3' Active Record adapter. Missing a gem 
+it depends on? cannot load such file -- sqlite3/sqlite3_native
+
+I have tried to 'gem install sqlite3' and although this is successful, the 
+same error comes up.
+
+Any ideas?
+
+Thanks for your time.
+
+------=_Part_945_1240261867.1543168067982
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi everyone,<div><br></div><div>I am trying to build the database but after the datafiles are successfully downloaded the following error comes up:</div><div><br></div><div><div>{:adapter=&gt;&quot;sqlite3&quot;, :database=&gt;&quot;./sport.db&quot;}</div><div><br></div><div>*** error: Error loading the &#39;sqlite3&#39; Active Record adapter. Missing a gem it depends on? cannot load such file -- sqlite3/sqlite3_native</div></div><div><br></div><div>I have tried to &#39;gem install sqlite3&#39; and although this is successful, the same error comes up.</div><div><br></div><div>Any ideas?</div><div><br></div><div>Thanks for your time.</div></div>
+------=_Part_945_1240261867.1543168067982--
+
+------=_Part_944_1101851756.1543168067982--
+

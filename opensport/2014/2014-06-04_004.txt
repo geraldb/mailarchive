@@ -1,0 +1,59 @@
+From 1039543566336@xxx Tue Jun 16 00:17:04 +0000 2015
+X-GM-THRID: 1026589458432
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,7bcfdf6a68923c03
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.203.226 with SMTP id kt2mr4675662lac.2.1401872430888;
+        Wed, 04 Jun 2014 02:00:30 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.109.43 with SMTP id hp11ls228137wib.1.canary; Wed, 04 Jun
+ 2014 02:00:30 -0700 (PDT)
+X-Received: by 10.181.13.196 with SMTP id fa4mr365734wid.6.1401872430620;
+        Wed, 04 Jun 2014 02:00:30 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x231.google.com (mail-wi0-x231.google.com [2a00:1450:400c:c05::231])
+        by gmr-mx.google.com with ESMTPS id s1si460473wiw.3.2014.06.04.02.00.30
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 04 Jun 2014 02:00:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) client-ip=2a00:1450:400c:c05::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x231.google.com with SMTP id f8so987293wiw.10
+        for <opensport@googlegroups.com>; Wed, 04 Jun 2014 02:00:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=FR9LKBlb/xx0H6jZ/AP3wNXsf+A52qE63YX/aYllaa4=;
+        b=HHJ17uHuSaWuWdjWyZtq7q3E1QYU+WPaVu1Gso+mXMfwVFN24ES4yIGKXGUlO3O6sd
+         yEboA5UFOTQQpmrXXQyQWljZHBCZceIuOZaitkYCxamk5RqFJpfj0CrgvI3Toep5M+sV
+         ZYs62V/dZQK7JymEISx4idXIxvbCBV8S1TR7LbPhtIUaLRjKFhg5yzQhY1Y2viZ2wZ9Q
+         N/7p++8on3xIscsH7rDCevKPItTkREsQ3lGBz2d6bqwSVhx13KsUlHXjQ6Gy8TRInM3d
+         VOU8WrhhB+f+3BYfgoQW38tSbaYc1gEm4Gzv/GcHhmITJRUF7D6OUKC1AST/X1z0D451
+         TJWg==
+MIME-Version: 1.0
+X-Received: by 10.180.77.70 with SMTP id q6mr3202687wiw.28.1401872430557; Wed,
+ 04 Jun 2014 02:00:30 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Wed, 4 Jun 2014 02:00:30 -0700 (PDT)
+In-Reply-To: <3192e563-aad9-4f34-8407-a6fbbfa7e34f@googlegroups.com>
+References: <3192e563-aad9-4f34-8407-a6fbbfa7e34f@googlegroups.com>
+Date: Wed, 4 Jun 2014 11:00:30 +0200
+Message-ID: <CAAxEZd_7fRk66_OzudafZZFoDzW8pKozfh+_pKjEUF6caw1SiQ@mail.gmail.com>
+Subject: Re: [opensport] campeonato brasileiro
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Thanks for your interest in football.db.  Brazil (Brasil) has its
+very own repo [1]. Add a new folder 2014 and add cb.txt with the
+matches, for example.  Cheers.
+
+[1] github.com/openfootball/br-brazil
+

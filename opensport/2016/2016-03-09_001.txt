@@ -1,0 +1,69 @@
+From 6259948102929612800@xxx Wed Mar 09 07:15:46 +0000 2016
+X-GM-THRID: 6259946783825199104
+X-Received: by 10.98.67.142 with SMTP id l14mr2587584pfi.13.1457507746540;
+        Tue, 08 Mar 2016 23:15:46 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.43.226 with SMTP id z2ls1706723igl.9.canary; Tue, 08 Mar
+ 2016 23:15:46 -0800 (PST)
+X-Received: by 10.107.10.30 with SMTP id u30mr2524974ioi.31.1457507746295;
+        Tue, 08 Mar 2016 23:15:46 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x233.google.com (mail-io0-x233.google.com. [2607:f8b0:4001:c06::233])
+        by gmr-mx.google.com with ESMTPS id a12si1160288ign.0.2016.03.08.23.15.46
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 08 Mar 2016 23:15:46 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) client-ip=2607:f8b0:4001:c06::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x233.google.com with SMTP id g203so55789934iof.2
+        for <opensport@googlegroups.com>; Tue, 08 Mar 2016 23:15:46 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=1IQgrffxlmc1+Y609ehITWWeAAWnygoKnEqGpxmjJ1s=;
+        b=GGcUnSVJ8eVHK7dZLfYWGzX8XBxJf7epzVrzkcIjjdQ6OWVwOt6TI6wWWP+HyOkzXr
+         2BxdgVuk8vO3tKW9imIawn105zb9/Pebw2phdfyo+3Qjcp1h6zmQ2ue45KZlPLxDpBaJ
+         HsRk0E3fW7a4+F3jwmuikKFdgxT898AULBUhYxqvoK4LBuKJnkopDHSHs375S6O02oYp
+         WgVMXhiVVxeNvBLuGrrGRssdv90BRkEH3ElGj/z9Qluye1N/gXcLvKHGadk8Gmot17vh
+         G2/eMc/PoSemddwPk/Lmx/yc+Qz3Q/qNyZwIkTnFujW3wSDGqyt7WUgv0KtgDaTIQ67j
+         zrKw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=1IQgrffxlmc1+Y609ehITWWeAAWnygoKnEqGpxmjJ1s=;
+        b=Q2uffkG59JCReS3sct4iUxOpZ81UbLkBrIIUxvxlmHgYsMA8VCXOO2IqU9i9E4mizp
+         eaDGL/vat55JNs+obzlPVVjgxlwWw+VIT88ZfqAWPHSlp/t95uFUfaChYxL8Ryv7CqS7
+         UpREINwUPEKfrxUjouzflYPISUzcabZBBKIwks3j7BXLfJtJhx1jTM8PX1op73NvO5Ha
+         Q3nZ54E4kDorhYI7fZ2XsC7VAqimRzr3TM9TUOhjFY7dfJe4doTviVcvv1OYtxqQl1FJ
+         hnKT/d0GaVHGHLQEeHkgebljdvACbdrTTBi4cVLjqLztV6M5eggx7VALMsSfqk410Fzh
+         M9Mg==
+X-Gm-Message-State: AD7BkJIgToSb13ZvMFRxnllO1vIjVl742TO/Zmenn5exFoB/DCliq8gVx4R8nmlZUdbcEMT9W5BBLgJJX8KCOQ==
+MIME-Version: 1.0
+X-Received: by 10.107.155.80 with SMTP id d77mr30232771ioe.59.1457507746186;
+ Tue, 08 Mar 2016 23:15:46 -0800 (PST)
+Received: by 10.107.133.217 with HTTP; Tue, 8 Mar 2016 23:15:46 -0800 (PST)
+In-Reply-To: <df3e17c8-ef2f-4c78-b822-7afb4e720070@googlegroups.com>
+References: <df3e17c8-ef2f-4c78-b822-7afb4e720070@googlegroups.com>
+Date: Wed, 9 Mar 2016 08:15:46 +0100
+Message-ID: <CAAxEZd8Da=fpfyuuM2LWsbfsss7iUbjTYFNSaL7VGZjRett_0g@mail.gmail.com>
+Subject: Re: [opensport] Is there a plan to update footballcsv repos to
+ include data after 2014?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    Thanks for your interest in football.csv.
+
+     You can find the (auto-)update scripts in the yorobot/football.csv repo [1]
+
+     The idea is to get a weekly or something auto-update job running
+sometime later this year.  I'd say do not wait - try to use the
+scripts for an update.  Cheers.
+
+[1] https://github.com/yorobot/football.csv
+

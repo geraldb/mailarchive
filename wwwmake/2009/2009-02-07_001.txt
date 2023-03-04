@@ -1,0 +1,59 @@
+From 426084663296@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 421630312448
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,d4f0359cf6240f62
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.223.103.83 with SMTP id j19mr92654fao.0.1233991284221;
+        Fri, 06 Feb 2009 23:21:24 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from mail-fx0-f19.google.com (mail-fx0-f19.google.com [209.85.220.19])
+        by mx.google.com with ESMTP id 16si433633bwz.4.2009.02.06.23.21.23;
+        Fri, 06 Feb 2009 23:21:23 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.220.19 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.220.19;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.220.19 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by fxm12 with SMTP id 12so1582463fxm.8
+        for <webslideshow@googlegroups.com>; Fri, 06 Feb 2009 23:21:23 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.181.239.8 with SMTP id q8mr249157bkr.1.1233991281181; Fri, 06 
+	Feb 2009 23:21:21 -0800 (PST)
+In-Reply-To: <701271e9-29a6-4c88-b92b-ebae30281edc@n33g2000pri.googlegroups.com>
+References: <701271e9-29a6-4c88-b92b-ebae30281edc@n33g2000pri.googlegroups.com>
+Date: Sat, 7 Feb 2009 08:21:21 +0100
+Message-ID: <1f058eab0902062321w28470847y3595ed9587864ed8@mail.gmail.com>
+Subject: Re: [slideshow] s6 documentation?
+From: Gerald Bauer <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+> As per the wikipedia page for s5, the s6 site seems to be down:
+>
+> http://tzi.org:2000/s6.html
+>
+> (1) Anyone know where you can get the documentation for it?
+>
+> Searching the web, I stumbled upon this presentation:
+>
+> http://amachang.art-code.org/pr/
+>
+> (2) Is that s6? Those transition effects are really sweet. It's
+> starting to remind me of Apple's presentation software.
+
+   The S6 packaged with the Slide Show (S9) gem is a rewrite of S5 by
+yours truly w/ the intention of making S5-style slideshow code easier
+to understand and extend and the built-in S6 package is, thus,
+different from some other S6 packages floating around.
+
+  For now the built-in S6 package has no standalone documentation or
+site but that will all change starting next week.
+
+  Using the built-in S6 package you're also welcome to add your own
+effects using the jQuery library. An autoplay demo with effects is
+online @ http://slideshow.rubyforge.org/autoplay.html   More info @
+http://groups.google.com/group/webslideshow/msg/a516df26b62adefb
+
+  Cheers.
+

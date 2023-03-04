@@ -1,0 +1,100 @@
+From 6770969610647764992@xxx Mon Dec 16 09:40:12 +0000 2019
+X-GM-THRID: 6770969610541858816
+X-Received: by 2002:a2e:880c:: with SMTP id x12mr16919479ljh.44.1576489212225;
+        Mon, 16 Dec 2019 01:40:12 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a2e:a49c:: with SMTP id h28ls1109347lji.11.gmail; Mon, 16
+ Dec 2019 01:40:11 -0800 (PST)
+X-Google-Smtp-Source: APXvYqxJlGl8CGtMVseTY0VHLsZjIxrYGvv6b8Em5GePPDTg8AigF4LakYwq3qHg4nLC1XCPbo5M
+X-Received: by 2002:a2e:8544:: with SMTP id u4mr18447192ljj.191.1576489211225;
+        Mon, 16 Dec 2019 01:40:11 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1576489211; cv=none;
+        d=google.com; s=arc-20160816;
+        b=tBS1sx+DY6JC9oPgqHptxLBYAoXyjgl2VkLd0Zsu+OO6L3VKBn0r2fE8XhzSPSlVQv
+         h4i5bvyBJ2rP3/ST9upsptS9FQD3JecUwl+eERZBX9q5s2wlYBy+acCQcWhXjSTAci+w
+         ctqvnlDJ9zQZ9hgNufqrv/ILLHLIfqIIwK1AcaIm6/s3A/AFeyeNrTcze2wxHGSEQ+v9
+         QnT0tQLkj6JWlR095o+kAQ2jC0kJtboAutXaOm78yeh1DwBopIQxF+t0Ny97Qdp3rH4+
+         JqTp8YQz5b/LTXSmldzYUFd6SNo7nQeDuWuSMbDMCE4gCE1oGc+83k0f8RUQ1Vmd/vcR
+         ZlxA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=ws1bdC/A12fnVqHMqzudPMHx5X5p//Q9Zwk++GrQaRM=;
+        b=lq346w93NaYUH/jP0VV+dHcs1K2B7W5CjRV8tD/mFGdYXewo4l9vFKA8/ilQIIqazu
+         pUaPKpT7h4JC6gNMeEnx6aWtw9kQp8K1dIKV1ef/piHajvpDGR5iY5uxAtLCopQNiv8y
+         mm5lJ6Dpg6hcwusnZRvMXSeC9CI31IXuP8brPc7h331TSKc/QQGwwaT0F4j9bWKBDX2R
+         rzg2z9MTcCMK6vSHjFr5WVVGCVOfSXgTmEuOgCXsmna5wfImF9YJ5TVFR8e90ozer+Mo
+         ywvFHVjwbRTWrGn6ZHA/mObgHx49m0bo4czybLShdj3gl3V4tCZPGQqYSrBHpCZVPt1L
+         oo8w==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=haBe4VK+;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22d.google.com (mail-lj1-x22d.google.com. [2a00:1450:4864:20::22d])
+        by gmr-mx.google.com with ESMTPS id e3si561921ljg.2.2019.12.16.01.40.11
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 16 Dec 2019 01:40:11 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22d as permitted sender) client-ip=2a00:1450:4864:20::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=haBe4VK+;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22d.google.com with SMTP id h23so6028834ljc.8
+        for <opensport@googlegroups.com>; Mon, 16 Dec 2019 01:40:11 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=ws1bdC/A12fnVqHMqzudPMHx5X5p//Q9Zwk++GrQaRM=;
+        b=haBe4VK+fZt+Owmy9YTHD5Ua3JrqR85/3eZwJNngyF/J7TTeQrLzDqoHs7/arlZmBk
+         ZjQhFBaPEf86KpMvnLA/wzcXVVFAPQxSuoWOrBvGmG4deNhD/z1Cocw1OM4RoSXksz8o
+         2nKG0i3k1rfX0nWtaYWEXCLaiz8HcwsgnGTU2Hi55l+80JoaXyoJ6xm69jI6/sU3MXJ2
+         cQTOWBP0fQAXMK8v0vsXa3nnxq94FYthRaqVYhRtvJWBx99nprlqw8IiaoupFS+DHNNX
+         9Ajh22b7JU8Y2YUWs/LEfAx1H7QTWlV3sdQdJl+Uz3avXtlMDHU3zKzyqwLnWH4XRk1+
+         9kQw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=ws1bdC/A12fnVqHMqzudPMHx5X5p//Q9Zwk++GrQaRM=;
+        b=VX0eGoLb7iXnJ3D/E/8hJYf9AV18ac/duFHKmLfjTHBh6z06J+4EazqK86EfqaEGry
+         BQLYtQEGHT1VDXluqRVa8N6vpYnzhzAbyrvhRNz2wECA2D7vY8VVbo+cj+HD47Mle52D
+         d95CjqiQ54eEct6fGf4vLjgchctNh0XM9jTvqk7evGs3sqZvAOlmqPnOo2Hky1S9MKoN
+         MBAklGMO/ZhMO5JrVvSIL8xpdpzdze12jli0579Fs5vWHpY5t9Eh7ULpkUd2Hf4cPQvA
+         X3QaZijjxPruM/TWYTDGDA2dRRMrEydVPXPG9cR+be147voamvcF9M4/tTjghs9hidZ2
+         bUTQ==
+X-Gm-Message-State: APjAAAUJhM+Vwqbznc0jj06fHBJ5UR/nRK/j2h0Dlk8quqJryGVY/ULy
+	nsnDzY8FgaQygKKvP5OdE0cphmKMdH5ZfKTcSCL7WYsR
+X-Received: by 2002:a2e:2417:: with SMTP id k23mr18037678ljk.29.1576489210552;
+ Mon, 16 Dec 2019 01:40:10 -0800 (PST)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 16 Dec 2019 10:40:00 +0100
+Message-ID: <CAAxEZd9-ntjdUO7sA1BJJN0nWurb-Cc1O7Jhiao-=gqoZNc4QQ@mail.gmail.com>
+Subject: $ sportdb new eng - England (incl. Premier League) Datasets Now All
+ Moved to New Setup / Conf(iguration) Format
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   If you follow along the football.db datasets for England [1]
+   are now all moved / converted to the new (easier) setup and
+config(uration) formats.
+
+   Try:
+
+     $ sportdb new eng
+
+   to read in all leagues & cups and all seasons; resulting in:
+
+     $ sportdb stats
+
+        4 leagues  /  27 seasons
+       39 events (league+season recs)  /  959 rounds
+       96 teams
+    10486 games
+
+   Cheers. Prost.
+
+[1] https://github.com/openfootball/england
+

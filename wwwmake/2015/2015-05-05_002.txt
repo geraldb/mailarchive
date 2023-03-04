@@ -1,0 +1,80 @@
+From 1588013826048@xxx Tue May 05 16:58:58 +0000 2015
+X-GM-THRID: 1588368244736
+X-Received: by 10.42.182.7 with SMTP id ca7mr59226871icb.9.1430845137822;
+        Tue, 05 May 2015 09:58:57 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.107.169.31 with SMTP id s31ls2385095ioe.54.gmail; Tue, 05 May
+ 2015 09:58:57 -0700 (PDT)
+X-Received: by 10.66.170.234 with SMTP id ap10mr32192354pac.0.1430845137498;
+        Tue, 05 May 2015 09:58:57 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qk0-x229.google.com (mail-qk0-x229.google.com. [2607:f8b0:400d:c09::229])
+        by gmr-mx.google.com with ESMTPS id do9si2356404qcb.0.2015.05.05.09.58.57
+        for <wwwmake@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 05 May 2015 09:58:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::229 as permitted sender) client-ip=2607:f8b0:400d:c09::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qk0-x229.google.com with SMTP id x75so110343828qkg.1
+        for <wwwmake@googlegroups.com>; Tue, 05 May 2015 09:58:57 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=Zpp39KXa9RDSShhE/2l3F755E2hQd+tQ/QdQ/bjp9z0=;
+        b=aCE+z8BmyNOoBgpy53a9jHcXCZ7ZyCrzpdyhM/9WPxuyeW0fK7USsG++BtNnSAYCXK
+         xzkmxifkkZGaHOitRDwYNyYzcL94kH8C59/+2xKfonh1FkCVpaU/tQELdGgNj6nNTMb7
+         Ky49iMKrzlgVgISv86ifCXcObjRj5sJpYASChQFSd8J4s0Fbk3KWk/jjkW5MkEVkHIOq
+         uMRjJLZ8hZ87ytDhXDOMK/MPWFZicueH2xdobghFQVF2n96r9yW7UFsRG7P4WgxRh5wi
+         F/ua/yrX1Od0BhBKpHH6/WVAeoLWnQq8Knh2ys/E0C6/IG0BYPXLfnUEVkDYYAe7Yyei
+         JR4Q==
+MIME-Version: 1.0
+X-Received: by 10.55.53.8 with SMTP id c8mr57236030qka.63.1430845137260; Tue,
+ 05 May 2015 09:58:57 -0700 (PDT)
+Received: by 10.229.5.6 with HTTP; Tue, 5 May 2015 09:58:57 -0700 (PDT)
+Date: Tue, 5 May 2015 18:58:57 +0200
+Message-ID: <CAAxEZd_kwkuZJj2m3jafm+c6vZrp0hU2q_LKWW--=gVNqW6Ubw@mail.gmail.com>
+Subject: New Web Feed Libraries - feedparser and feedfilter gems
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've uploaded two new feed tool gems, that is, feedparser [1]
+and feedfilter [2].
+
+  What's feedparser?
+
+  The feedparser gem is (yet) another gem that tries to "normalize"
+web feeds in RSS 2.0 and Atom flavors offering two "normalized" Ruby
+classes, that is, Feed and Item  (plus the mapping in builders, that
+is, RssFeedBuilder and AtomFeedBuilder).
+
+
+  What's feedfilter?
+
+  The feedfilter gem collects filters for feeds e.g. using strip_ads
+lets you strip feedflare ads or feedburner bags and so on using
+(builtin) text patterns (regexes) e.g.
+
+   %r{
+     <div[^>]*?
+        class=("|')feedflare\1
+        [^>]*?>
+          .*?
+     <\/div>
+       }mix
+
+
+  Both gems get used by the planet pluto machinery that runs, for
+example, Planet Ruby [3].
+
+   Cheers.
+
+[1] github.com/feedreader/feed.parser
+[2] github.com/feedreader/feed.filter
+[3] planetruby.herokuapp.com
+

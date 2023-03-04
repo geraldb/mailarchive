@@ -1,0 +1,69 @@
+From 6792839258175438848@xxx Thu Feb 13 08:05:37 +0000 2020
+X-GM-THRID: 6792839258874839040
+X-Received: by 2002:a05:6830:22cd:: with SMTP id q13mr12641923otc.224.1581581136962;
+        Thu, 13 Feb 2020 00:05:36 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:aca:895:: with SMTP id 143ls7315749oii.1.gmail; Thu, 13 Feb
+ 2020 00:05:36 -0800 (PST)
+X-Received: by 2002:aca:514e:: with SMTP id f75mr2164263oib.103.1581581136422;
+        Thu, 13 Feb 2020 00:05:36 -0800 (PST)
+Received: by 2002:aca:5655:0:0:0:0:0 with SMTP id k82msoib;
+        Wed, 12 Feb 2020 14:35:16 -0800 (PST)
+X-Google-Smtp-Source: APXvYqwder8E0KW8okZ3ZBPYrwJ8Gk72o/eGtrYUHvR1EeyNtksOLfFT+aG4AVmlF0oLBPzkZgbfz9LCTw==
+X-Received: by 2002:aca:2416:: with SMTP id n22mr872472oic.169.1581546916424;
+        Wed, 12 Feb 2020 14:35:16 -0800 (PST)
+X-Google-Thread-Subscription: Yes
+X-Google-Web-Client: true
+Date: Wed, 12 Feb 2020 14:35:16 -0800 (PST)
+From: Nathan Wallach <taniwallach@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <d6c56855-ddff-4406-b015-f5b3c0c6d1c9@googlegroups.com>
+Subject: Issue with pluto.starter / pluto reported on GitHub: error:
+ undefined method `to_time' for nil:NilClass
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2431_878544672.1581546916191"
+X-Google-Token: EKT7kfIFZ8thhICWEKg0
+X-Google-IP: 109.67.251.4
+
+------=_Part_2431_878544672.1581546916191
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2432_190936077.1581546916192"
+
+------=_Part_2432_190936077.1581546916192
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+On a new install on Debian, I ran into problems when trying to run "bundle 
+exec pluto build planet.ini -t starter -o build".
+
+Removing several lines from planet-starter/planet.starter.html.erb bypassed 
+the error but causes loss of information in the generated output. (Date 
+information is not being parsed or included in the output.)
+
+See: https://github.com/feedreader/pluto.starter/issues/1
+
+------=_Part_2432_190936077.1581546916192
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div><font face=3D"arial, sans-serif" size=3D"2"><br>=
+</font></div></div><div><font face=3D"arial, sans-serif" size=3D"2">On a ne=
+w install on Debian, I ran into problems when trying to run &quot;<span sty=
+le=3D"color: rgb(0, 0, 0);">bundle exec pluto build planet.ini -t starter -=
+o build&quot;.</span></font></div><div style=3D"color: rgb(0, 0, 0);"><font=
+ face=3D"arial, sans-serif" size=3D"2"><br></font></div><div style=3D"color=
+: rgb(0, 0, 0);"><font face=3D"arial, sans-serif" size=3D"2">Removing sever=
+al lines from=C2=A0planet-starter/planet.starter.html.erb bypassed the erro=
+r but causes loss of information in the generated output. (Date information=
+ is not being parsed or included in the output.)<br></font></div><div style=
+=3D"color: rgb(0, 0, 0);"><font face=3D"arial, sans-serif" size=3D"2"><br><=
+/font></div><div style=3D"color: rgb(0, 0, 0);"><font face=3D"arial, sans-s=
+erif" style=3D"" size=3D"2">See:=C2=A0<a href=3D"https://github.com/feedrea=
+der/pluto.starter/issues/1">https://github.com/feedreader/pluto.starter/iss=
+ues/1</a></font></div></div>
+------=_Part_2432_190936077.1581546916192--
+
+------=_Part_2431_878544672.1581546916191--
+

@@ -1,0 +1,80 @@
+From 2036718370816@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 2036282163200
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,309018655f761026,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.188.136 with SMTP id ga8mr248493lbc.8.1408205355709;
+        Sat, 16 Aug 2014 09:09:15 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.8.67 with SMTP id p3ls410888laa.3.gmail; Sat, 16 Aug 2014
+ 09:09:15 -0700 (PDT)
+X-Received: by 10.112.163.104 with SMTP id yh8mr2083532lbb.5.1408205355028;
+        Sat, 16 Aug 2014 09:09:15 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22a.google.com (mail-wg0-x22a.google.com [2a00:1450:400c:c00::22a])
+        by gmr-mx.google.com with ESMTPS id q1si327936wij.1.2014.08.16.09.09.14
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 16 Aug 2014 09:09:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22a as permitted sender) client-ip=2a00:1450:400c:c00::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-x22a.google.com with SMTP id l18so3251262wgh.13
+        for <opensport@googlegroups.com>; Sat, 16 Aug 2014 09:09:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=uuV50SxktiY0VRt4WgGpOEsqCaFyrtvFM3y6/zRT5XU=;
+        b=JARk3hxMwmaIUpSpG/s5gUkYzL5n2Hp73quNXwzRaQQrIuHb6b0rNAbs0iZX44jlF5
+         8qMA4DHRRTVby1LgrdgVUjFZXq6oG/RSn62gG4hGAfAFw6hRChi3TPNXrFOtJozvSLIH
+         Q0/XvbBh2O0h2+ytI5ts8+sVNg2kjid6LAZh4jnrrIcM13PiZDmSrjST3G+4hcbPMkkZ
+         jWVKpq5UyH9WPVFVOjPYNv1ZAFEEph/tfljjVT7EyneLJavqqNq0leD03VmKOVlwdhII
+         qpwqG3qRiRm0OvinSLBwh10jDK3L+uRSA8Mhg+9C3VmMpFHf0ittZeeiSd6dXnxHXq/J
+         hcaQ==
+MIME-Version: 1.0
+X-Received: by 10.194.161.231 with SMTP id xv7mr25617911wjb.78.1408205354880;
+ Sat, 16 Aug 2014 09:09:14 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Sat, 16 Aug 2014 09:09:14 -0700 (PDT)
+Date: Sat, 16 Aug 2014 18:09:14 +0200
+Message-ID: <CAAxEZd9HnLFz2qnsYVGCPWcD4FWd_2TuZO4z+HcHrc1AQw_DQQ@mail.gmail.com>
+Subject: New Tool - sportweb - Instant Open Sports Web Browser (Server) e.g.
+ Use $ sportweb
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI:  I've bundled up the sport.db.admin web app into an easy-to-use
+command line tool [1] for (local) use on your own machine. How does it
+work?
+
+  Let's say you have an SQLite database - e.g. football.db - in your
+folder, than just type
+
+  $ sportweb
+
+  and that's it - open your browser (e.g. use localhost:3000) and
+start browsing your local SQLite database.
+
+
+  How to install the machinery?
+
+   It's a Ruby gem [2], thus, type:
+
+   $ gem install sportweb
+
+   That's it.
+
+  Note: I've frozen all libraries (20+) including Ruby on Rails and
+friends to avoid any version conflicts or missing libraries.
+
+  As always still a little rough; questions and comments welcome. Give
+it a try. Cheers.
+
+[1] github.com/sportdb/sport.db.web.ruby
+[2] rubygems.org/gems/sportweb
+

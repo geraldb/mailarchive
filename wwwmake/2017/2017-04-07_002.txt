@@ -1,0 +1,94 @@
+From 6406339460616683520@xxx Fri Apr 07 19:09:01 +0000 2017
+X-GM-THRID: 6406170137222709248
+X-Received: by 10.98.69.130 with SMTP id n2mr12366875pfi.9.1491592140795;
+        Fri, 07 Apr 2017 12:09:00 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.157.11.209 with SMTP id 75ls7324387oth.27.gmail; Fri, 07 Apr
+ 2017 12:09:00 -0700 (PDT)
+X-Received: by 10.157.4.75 with SMTP id 69mr7041031otc.149.1491592140290;
+        Fri, 07 Apr 2017 12:09:00 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x236.google.com (mail-io0-x236.google.com. [2607:f8b0:4001:c06::236])
+        by gmr-mx.google.com with ESMTPS id n184si492004itg.0.2017.04.07.12.09.00
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 07 Apr 2017 12:09:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) client-ip=2607:f8b0:4001:c06::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x236.google.com with SMTP id l7so55035855ioe.3
+        for <wwwmake@googlegroups.com>; Fri, 07 Apr 2017 12:09:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=g4zA5kDW5+VYQbsouZcfm+mIV02D+9v518cGThzOlJA=;
+        b=IdDXuhLdGcuCBMZYEVxRjMRfbgQr2DNaGmhRuuR7ReIljL9/Qp//HAIyA/RHcNj/To
+         5n9wVeE0GfMjPvbZ9VvBmEh1IpinYhysVX7zAf6vLm8IcdYnoCdfG6zTWNujlKYcPOpJ
+         w3AqbzU3QvHv11quC9IGWA2CPwGDEX1r1qv5nIPukmsLR9twsdQk9Mle4GUwlseWPAnB
+         SVIhizTEIey52Mxh4t4iSgRyREPzr1tQr7jOvwlzTUFJbxrNGj9c1hXY3pfhLke4+36F
+         y2QWvz/q3JesgFhfgiup0u0+G1iULtx1jTYB4Q1VlOHnyEbCquPAMuv9KNPleLFts8HX
+         cOmQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=g4zA5kDW5+VYQbsouZcfm+mIV02D+9v518cGThzOlJA=;
+        b=lgKvFfjXwEGyEraSo+hKG0WZ+q/P4mxjocWIKjp7gRQXKTdfzNvJWkWrl0dGPBqrBI
+         Hq41fEHo9V7rka97ukATUPVQe+JDbWJ8FnyL/OZlNw7/1npftGte4Vol/bVKD7yu6JMG
+         g7bJcRCi4ogD7FiTb+mKCrzFJwK9w4wJ6QRs+zd8n7NuxmmwriQt8f+LNnoxfgMAQEnX
+         EQFWwfDORIVbi2uA+7KzIyfuzJRsuK4OtVkgNhv9hQGQnv7cVgvLNga6sM03ECh851Bx
+         RqoImynbfllxYNWprxOQr2/RJalCFc8Hi5ykZckcTNV+bkxH29QEqcCHXB3U+X6ild+/
+         cVBA==
+X-Gm-Message-State: AFeK/H0CxZcpungBlds0L4jINBI14NFlSiJnpoWKyC/FxC8GatA6MQBnANViCKCDCu+RF1ulWtR0uKhHz8yIqA==
+X-Received: by 10.107.59.86 with SMTP id i83mr39056562ioa.197.1491592139797;
+ Fri, 07 Apr 2017 12:08:59 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.170.209 with HTTP; Fri, 7 Apr 2017 12:08:59 -0700 (PDT)
+In-Reply-To: <9117c7cd-2d5f-4235-b604-e354db3f8e53@googlegroups.com>
+References: <13f542c8-23e0-4fc8-9d35-30750be86bfc@googlegroups.com>
+ <CAAxEZd-_fu=FzC7FP3vWGB7YpWikxu7AmXm0Az=Vo+TgnYUj=Q@mail.gmail.com> <9117c7cd-2d5f-4235-b604-e354db3f8e53@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 7 Apr 2017 21:08:59 +0200
+Message-ID: <CAAxEZd_=s+=GorAYUm85SxeF8gsfy8hAFQASaaToUmKgtpUHrQ@mail.gmail.com>
+Subject: Re: [wwwmake:418] Problems with Slide Show (S9) ignoring headers
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Sorry. I see. I misread/misunderstood your question. Good news that
+you have the template pack installed.
+
+   The missing theme header error. That's weird. In the slides.html
+template the line [1] reads:
+
+   <link rel="stylesheet" href="css/theme/{{ headers['theme'] }}.css"
+id="theme">
+
+    and later in the template:
+
+  <h1>{{ headers['title'] }}</h1>
+
+
+    So if the title >Boo, no theme< gets added than so should the
+theme. I see now in your pastie:
+
+<section>
+<h1></h1>
+<h3></h3>
+<p>
+<small>by </small>
+</p>
+</section>
+
+
+   So the title is also missing and it looks like all headers are
+missing / not working. Thanks for reporting. That's weird just built a
+prezo yesterday ;-) (but with a different theme but some system). Will
+try to double check with a local build tomorrow. Cheers.
+
+
+[1] https://github.com/slideshow-templates/slideshow-reveal.js/blob/master/slides.html#L26
+

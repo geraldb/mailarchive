@@ -1,0 +1,73 @@
+From 1001488646144@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 989622960128
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,5fa0511941349adb
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.52.67.145 with SMTP id n17mr923455vdt.0.1321947723037;
+        Mon, 21 Nov 2011 23:42:03 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.52.76.137 with SMTP id k9ls14112087vdw.2.gmail; Mon, 21 Nov
+ 2011 23:42:02 -0800 (PST)
+Received: by 10.52.30.195 with SMTP id u3mr23000724vdh.3.1321947722656;
+        Mon, 21 Nov 2011 23:42:02 -0800 (PST)
+Received: by 10.52.30.195 with SMTP id u3mr23000723vdh.3.1321947722647;
+        Mon, 21 Nov 2011 23:42:02 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-vx0-f183.google.com (mail-vx0-f183.google.com [209.85.220.183])
+        by gmr-mx.google.com with ESMTPS id b8si6230248vdu.2.2011.11.21.23.42.02
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Mon, 21 Nov 2011 23:42:02 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.220.183 as permitted sender) client-ip=209.85.220.183;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.220.183 as permitted sender) smtp.mail=gerald.bauer@gmail.com
+Received: by vcge1 with SMTP id e1so7295422vcg.0
+        for <webslideshow@googlegroups.com>; Mon, 21 Nov 2011 23:42:02 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.52.76.169 with SMTP id l9mr2733027vdw.17.1321947722581; Mon,
+ 21 Nov 2011 23:42:02 -0800 (PST)
+Received: by v5g2000yqn.googlegroups.com with HTTP; Mon, 21 Nov 2011 23:42:02
+ -0800 (PST)
+Date: Mon, 21 Nov 2011 23:42:02 -0800 (PST)
+In-Reply-To: <31371679.17.1320507697250.JavaMail.geo-discussion-forums@yqan20>
+References: <31371679.17.1320507697250.JavaMail.geo-discussion-forums@yqan20>
+User-Agent: G2/1.0
+X-Google-Token: EMqkrfYEuVlk1JKA0rw0
+X-Google-Web-Client: true
+X-Google-Header-Order: HUALESNKRC
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.24)
+ Gecko/20111107 Ubuntu/10.04 (lucid) Firefox/3.6.24,gzip(gfe)
+X-Google-IP: 188.23.61.31
+Message-ID: <a9f0a7a1-7498-4152-b780-9fe261a050a8@v5g2000yqn.googlegroups.com>
+Subject: Re: author in G5 nit displayed
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   It's best to check the template [1]. Here's the code for the title
+slide:
+
+<div class="slide" id="title-slide">
+          <section class="middle">
+            <hgroup>
+              <h1>
+                <%= @headers['title'] %>
+              </h1>
+              <h2>
+                <%= @headers['subtitle'] %>
+              </h2>
+            </hgroup>
+          </section>
+        </div>
+
+   It only includes the title and subtitle. If you want to include the
+author, change the template to fit your needs (e.g. use
+@headers['author']). Cheers.
+
+[1] https://github.com/geraldb/slideshow-google-html5-slides/blob/master/html5.html.erb
+

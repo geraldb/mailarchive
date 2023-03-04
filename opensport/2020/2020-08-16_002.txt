@@ -1,0 +1,155 @@
+From 6862194086923730944@xxx Tue Aug 18 05:37:47 +0000 2020
+X-GM-THRID: 6862194086842990592
+X-Received: by 2002:a37:ae03:: with SMTP id x3mr15629146qke.313.1597729066658;
+        Mon, 17 Aug 2020 22:37:46 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a37:a2c2:: with SMTP id l185ls8810231qke.9.gmail; Mon, 17
+ Aug 2020 22:37:45 -0700 (PDT)
+X-Received: by 2002:a37:9f94:: with SMTP id i142mr15751664qke.310.1597729065744;
+        Mon, 17 Aug 2020 22:37:45 -0700 (PDT)
+Received: by 2002:a05:620a:696:b029:102:b6b:b400 with SMTP id f22-20020a05620a0696b02901020b6bb400msqkh;
+        Sun, 16 Aug 2020 10:15:21 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxh/ZI0quf1CKWwamroutu5Xqf3p/zExsIorGWxxsFq0CGsoqskffSaKyxXviIniFftTT17L3iLug==
+X-Received: by 2002:ac8:4b69:: with SMTP id g9mr10098735qts.113.1597598120809;
+        Sun, 16 Aug 2020 10:15:20 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Sun, 16 Aug 2020 10:15:20 -0700 (PDT)
+From: Ronilson Alves <ronyllson.alves@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <7b16a50c-2fb7-4340-b3ae-791dd054eb0ao@googlegroups.com>
+Subject: Error during setup on Heroku
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_506_1748654630.1597598120607"
+X-Google-Token: EKjT5fkFDzgOtOlwkco0
+X-Google-IP: 177.47.93.241
+
+------=_Part_506_1748654630.1597598120607
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_507_413493432.1597598120608"
+
+------=_Part_507_413493432.1597598120608
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I'm trying to install on Heroku, following the Read ME file, but when I try 
+to push files to server I'm receiving this error below:
+
+remote:        Resolving dependencies...
+> remote:        Bundler could not find compatible versions for gem "props":
+> remote:          In Gemfile:
+> remote:            props (= 1.1.1)
+> remote:
+> remote:            sportdb (= 1.9.8) was resolved to 1.9.8, which depends 
+> on
+> remote:              props
+> remote:
+> remote:        Bundler could not find compatible versions for gem 
+> "sportdb-console":
+> remote:          In Gemfile:
+> remote:            sportdb (= 1.9.8) was resolved to 1.9.8, which depends 
+> on
+> remote:              sportdb-console
+> remote:
+> remote:        Could not find gem 'sportdb-console', which is required by 
+> gem 'sportdb (=
+> remote:        1.9.8)', in any of the sources.
+> remote:
+> remote:        Bundler could not find compatible versions for gem 
+> "tagutils":
+> remote:          In Gemfile:
+> remote:            tagutils (= 0.2.2)
+> remote:
+> remote:            sportdb (= 1.9.8) was resolved to 1.9.8, which depends 
+> on
+> remote:              tagutils
+> remote:
+> remote:        Bundler could not find compatible versions for gem 
+> "worlddb":
+> remote:          In Gemfile:
+> remote:            worlddb (= 2.0.4)
+> remote:
+> remote:            sportdb (= 1.9.8) was resolved to 1.9.8, which depends 
+> on
+> remote:              worlddb (>= 2.0.2)
+> remote:
+> remote:  !
+> remote:  !     Failed to install gems via Bundler.
+> remote:  !
+> remote:  !     Push rejected, failed to compile Ruby app.
+> remote:
+> remote:  !     Push failed
+> remote: Verifying deploy...
+> remote:
+> remote: !       Push rejected to sportbook-app-v2.
+> remote:
+>
+>
+Someone can help me?
+
+------=_Part_507_413493432.1597598120608
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I&#39;m trying to install on Heroku, following the Read ME=
+ file, but when I try to push files to server I&#39;m receiving this error =
+below:<div><br></div><blockquote class=3D"gmail_quote" style=3D"margin: 0px=
+ 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1e=
+x;"><div class=3D"prettyprint" style=3D"background-color: rgb(250, 250, 250=
+); border-color: rgb(187, 187, 187); border-style: solid; border-width: 1px=
+; overflow-wrap: break-word;"><code class=3D"prettyprint"><div class=3D"sub=
+prettyprint"><div class=3D"subprettyprint">remote:=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 Resolving dependencies...</div><div class=3D"subprettyprint">remote:=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 Bundler could not find compatible versions for gem=
+ &quot;props&quot;:</div><div class=3D"subprettyprint">remote:=C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 In Gemfile:</div><div class=3D"subprettyprint">remote=
+:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 props (=3D 1.1.1)</div><div clas=
+s=3D"subprettyprint">remote:</div><div class=3D"subprettyprint">remote:=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 sportdb (=3D 1.9.8) was resolved to =
+1.9.8, which depends on</div><div class=3D"subprettyprint">remote:=C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 props</div><div class=3D"subprett=
+yprint">remote:</div><div class=3D"subprettyprint">remote:=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 Bundler could not find compatible versions for gem &quot;sportdb=
+-console&quot;:</div><div class=3D"subprettyprint">remote:=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 In Gemfile:</div><div class=3D"subprettyprint">remote:=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 sportdb (=3D 1.9.8) was resolved to =
+1.9.8, which depends on</div><div class=3D"subprettyprint">remote:=C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 sportdb-console</div><div class=
+=3D"subprettyprint">remote:</div><div class=3D"subprettyprint">remote:=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 Could not find gem &#39;sportdb-console&#39;, whic=
+h is required by gem &#39;sportdb (=3D</div><div class=3D"subprettyprint">r=
+emote:=C2=A0 =C2=A0 =C2=A0 =C2=A0 1.9.8)&#39;, in any of the sources.</div>=
+<div class=3D"subprettyprint">remote:</div><div class=3D"subprettyprint">re=
+mote:=C2=A0 =C2=A0 =C2=A0 =C2=A0 Bundler could not find compatible versions=
+ for gem &quot;tagutils&quot;:</div><div class=3D"subprettyprint">remote:=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 In Gemfile:</div><div class=3D"subpretty=
+print">remote:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 tagutils (=3D 0.2.2=
+)</div><div class=3D"subprettyprint">remote:</div><div class=3D"subprettypr=
+int">remote:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 sportdb (=3D 1.9.8) w=
+as resolved to 1.9.8, which depends on</div><div class=3D"subprettyprint">r=
+emote:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 tagutils</div><div c=
+lass=3D"subprettyprint">remote:</div><div class=3D"subprettyprint">remote:=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Bundler could not find compatible versions for =
+gem &quot;worlddb&quot;:</div><div class=3D"subprettyprint">remote:=C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 In Gemfile:</div><div class=3D"subprettyprint">=
+remote:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 worlddb (=3D 2.0.4)</div><=
+div class=3D"subprettyprint">remote:</div><div class=3D"subprettyprint">rem=
+ote:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 sportdb (=3D 1.9.8) was resol=
+ved to 1.9.8, which depends on</div><div class=3D"subprettyprint">remote:=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 worlddb (&gt;=3D 2.0.2)</d=
+iv><div class=3D"subprettyprint">remote:</div><div class=3D"subprettyprint"=
+>remote:=C2=A0 !</div><div class=3D"subprettyprint">remote:=C2=A0 !=C2=A0 =
+=C2=A0 =C2=A0Failed to install gems via Bundler.</div><div class=3D"subpret=
+typrint">remote:=C2=A0 !</div><div class=3D"subprettyprint">remote:=C2=A0 !=
+=C2=A0 =C2=A0 =C2=A0Push rejected, failed to compile Ruby app.</div><div cl=
+ass=3D"subprettyprint">remote:</div><div class=3D"subprettyprint">remote:=
+=C2=A0 !=C2=A0 =C2=A0 =C2=A0Push failed</div><div class=3D"subprettyprint">=
+remote: Verifying deploy...</div><div class=3D"subprettyprint">remote:</div=
+><div class=3D"subprettyprint">remote: !=C2=A0 =C2=A0 =C2=A0 =C2=A0Push rej=
+ected to sportbook-app-v2.</div><div class=3D"subprettyprint">remote:</div>=
+<div><br></div></div></code></div></blockquote><div><br></div><div>Someone =
+can help me?</div></div>
+------=_Part_507_413493432.1597598120608--
+
+------=_Part_506_1748654630.1597598120607--
+

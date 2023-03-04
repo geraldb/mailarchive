@@ -1,0 +1,71 @@
+From 6412470592228818944@xxx Mon Apr 24 07:40:55 +0000 2017
+X-GM-THRID: 6412469095303741440
+X-Received: by 10.200.56.252 with SMTP id g57mr12073431qtc.68.1493019655123;
+        Mon, 24 Apr 2017 00:40:55 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.12.68 with SMTP id 62ls13450940otr.26.gmail; Mon, 24 Apr
+ 2017 00:40:54 -0700 (PDT)
+X-Received: by 10.157.57.247 with SMTP id y110mr12709641otb.36.1493019654754;
+        Mon, 24 Apr 2017 00:40:54 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22e.google.com (mail-it0-x22e.google.com. [2607:f8b0:4001:c0b::22e])
+        by gmr-mx.google.com with ESMTPS id a17si898631itd.1.2017.04.24.00.40.54
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 24 Apr 2017 00:40:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22e as permitted sender) client-ip=2607:f8b0:4001:c0b::22e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22e.google.com with SMTP id e132so43943521ite.1
+        for <opensport@googlegroups.com>; Mon, 24 Apr 2017 00:40:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=GX8+9uDNMTC2lsioVMS50R0riYNyWYEDY9ejP8fo9YI=;
+        b=bycd4YvMz8nyZV6Eg5mcnf80He29cIT766JqJtWFUmmsWH8luLN4wOpdEx2vIp08Px
+         dTc/tJVCves9mrYM0GBcbcVmQceVDiUk4Np9pjezcltpjSmaOPbpum6ZSMAnm8Cizj69
+         VHMwTfvtpeIGMbnzgDLOPpYjf0Wo9P2OFV5IB5fzysdOwyEeq0it1DtVoCXMM9rYkJpr
+         EeWQT3Da7MjUc3D2M0dwychHSvrDVljPCXwZaeg6gGVwPEkiBDIvZ4DTzcZj1tcFHTcW
+         Cr3MXQmHnuQhqFFC4x2a4a9wMO7rLlcQKcIXLc2Fyyu78fAKtYY1QK531ooGRwTELJCH
+         6xJA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=GX8+9uDNMTC2lsioVMS50R0riYNyWYEDY9ejP8fo9YI=;
+        b=P/rBwRabYgFXw+J2JOWrx4DTRolONF5amkemSZpGPrPsG2tWlZ/jcA9M6A+QChzyk9
+         s1wWrZY4FOJ8Omr7WGSqbxDcEsOmke4xA9Kz86Q2qLn6kJFXiQV4CPf4TvQZfE5EjMGT
+         TTPTLUqER+zDPqlFNsT92Km7BxvXOEFkvG0gh4OME62ql5p7OvwS19LHg79vWhQBSsXw
+         7tF8FvLzZijduDjrI6D1Ia+VQEl22HY/SjImuRI1WG9P4Tqt9F0dhYvTI/zRMAa735f+
+         bwsjjD2l5Tow6F1Ib09UocGlh42nv1xWd3dP8W8zLOj9YwTduT56jbUbJAaYAMS/Lbn+
+         e5qA==
+X-Gm-Message-State: AN3rC/7AnvA2jZLQFcTmS95OXS5I1/rBcjnn/eGvtnefAZmUpIlzqz4I
+	9eI/44h20EdJD3L2zRWJsLAFOptX2OlQugU=
+X-Received: by 10.36.43.213 with SMTP id h204mr12323961ita.113.1493019531254;
+ Mon, 24 Apr 2017 00:38:51 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.156.142 with HTTP; Mon, 24 Apr 2017 00:38:50 -0700 (PDT)
+In-Reply-To: <b00815ae-a51f-4076-8c16-7442c769a917@googlegroups.com>
+References: <b00815ae-a51f-4076-8c16-7442c769a917@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 24 Apr 2017 09:38:50 +0200
+Message-ID: <CAAxEZd9h4hxuSyxMd-5K_2qzFSojS7hiEY8-XxaXQ_=C4yoVVA@mail.gmail.com>
+Subject: Re: [opensport] Error sportdb create
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Welcome to sport.db / football.db.
+
+> *** error: Index name 'index_taggings_on_tag_id' on table 'taggings' already exists
+
+    Sorry for the trouble. That is a known error with ActiveRecord
+5.x. The 5.x series is not yet supported. You're using 5.0.2.
+
+    Please, use a Gemfile and downgrade ActiveRecord to the 4.2.x series.
+
+     Search this mailing list / forum for examples. Cheers.
+

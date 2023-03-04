@@ -1,0 +1,79 @@
+From 1450002350080@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1447654588416
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,4ab069db22ad1dc0,start
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.134.200 with SMTP id pm8mr6940354obb.19.1391819303317;
+        Fri, 07 Feb 2014 16:28:23 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.182.60.199 with SMTP id j7ls542051obr.99.gmail; Fri, 07 Feb
+ 2014 16:28:22 -0800 (PST)
+X-Received: by 10.182.116.39 with SMTP id jt7mr7028225obb.33.1391819302839;
+        Fri, 07 Feb 2014 16:28:22 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ve0-x235.google.com (mail-ve0-x235.google.com [2607:f8b0:400c:c01::235])
+        by gmr-mx.google.com with ESMTPS id ai11si1554893vdc.3.2014.02.07.16.28.22
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 07 Feb 2014 16:28:22 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c01::235 as permitted sender) client-ip=2607:f8b0:400c:c01::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c01::235 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ve0-f181.google.com with SMTP id cz12so3388243veb.12
+        for <webslideshow@googlegroups.com>; Fri, 07 Feb 2014 16:28:22 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=2Sg8FytytdXfnF2jw92FE7f0tCBKWtwx+ftMi8+gxuY=;
+        b=vGsnDvX3zEKa43SdDYPfyi0UOooTp+g8vI68FXp9pRaKY1guaEmGN/lIhuMabzxz0T
+         rJoISay2Ex4HtoVuUDXXvC5tlGPeZ32KOOLLdNwtXMSGqn8DI9Ceip8bz5g/hxeGNhrG
+         8CgxMrvq4Lc2lco9VqWLYnJvXwv7zh15Gwatxm7kJBpIYCVS4mJofbuXt8D7DEn69TD2
+         Z8A9d405gkyjRX2khKRn6798fS/mV9bF9+Ryl0s9qtJEMMf17NdK5PXW0AD0HndfR6/I
+         poZsNlSLdhDGPDXuaXMSJDwfZzhnA2pP9KW4Byy4nbBX9MiXvU5nkkM/j3CFHX3z4ogM
+         z/zQ==
+MIME-Version: 1.0
+X-Received: by 10.58.186.132 with SMTP id fk4mr12615196vec.9.1391819302713;
+ Fri, 07 Feb 2014 16:28:22 -0800 (PST)
+Received: by 10.58.156.10 with HTTP; Fri, 7 Feb 2014 16:28:22 -0800 (PST)
+Date: Fri, 7 Feb 2014 18:28:22 -0600
+Message-ID: <CAAxEZd-VzGhra2JgrwSY88Q6NSS0HaLMJ5g-SCv0mGFf8U396g@mail.gmail.com>
+Subject: Keypoint: Web-Based Slide Decks (Packaged up for Mobile App Stores w/ PhoneGap/Cordova)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: I stumbled across Keypoint by Christophe Coenraets - that shows
+you how you can bundle up your HTML presentation / slide deck for app
+stores.
+
+   Christophe Coenraets writes:
+
+> I've been using HTML slides instead of Keynote or Powerpoint for a while =
+now. Since I'm doing a lot of PhoneGap/Cordova presentations, it also occur=
+red to me some time ago that I could go one step further and package my HTM=
+L slide decks as PhoneGap applications. That way, I can demonstrate the Pho=
+neGap APIs within my presentation, instead of constantly switching back and=
+ forth between my presentation and a demo app: My slides are the demo app.
+>
+> To enable this, I built a simple presentation micro-framework that I call=
+ed Keypoint. Keypoint uses Matteo Spinelli's SwipeView as the swipable cont=
+ainer. It is resource-conscious and fast, with only three slides in the DOM=
+ at any given time.
+>
+> Because it is a Web application, you can also run your presentation in a =
+browser on your laptop and navigate with the arrow keys. You'll just not be=
+ able to use the PhoneGap specific capabilities.
+
+
+   Full story @
+http://coenraets.org/blog/2013/10/keypoint-phonegap-based-html-slide-decks
+
+   Anybody tried it? Thoughts? Comments? Cheers.
+

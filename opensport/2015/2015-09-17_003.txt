@@ -1,0 +1,99 @@
+From 6195621227845910528@xxx Thu Sep 17 22:54:38 +0000 2015
+X-GM-THRID: 6195533932054708224
+X-Received: by 10.50.78.170 with SMTP id c10mr5654769igx.6.1442530478256;
+        Thu, 17 Sep 2015 15:54:38 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.137.102 with SMTP id qh6ls72035igb.37.canary; Thu, 17 Sep
+ 2015 15:54:37 -0700 (PDT)
+X-Received: by 10.66.63.39 with SMTP id d7mr1664349pas.20.1442530477907;
+        Thu, 17 Sep 2015 15:54:37 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22d.google.com (mail-ig0-x22d.google.com. [2607:f8b0:4001:c05::22d])
+        by gmr-mx.google.com with ESMTPS id z7si263892igw.0.2015.09.17.15.54.37
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 17 Sep 2015 15:54:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) client-ip=2607:f8b0:4001:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22d.google.com with SMTP id x6so6040951igx.1
+        for <opensport@googlegroups.com>; Thu, 17 Sep 2015 15:54:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=iAedorXr6/UwArx+ZdviHQhFCkSNeWwN9VL2/wufjU0=;
+        b=EaJ68ciMfT8VO1cOqYL3q6S+GSaM1u+r7dnA/6HjKMDMjJWe2gwAgbgPWaZQy3MvUC
+         JM9EQYrX9gJYAl6xJTojYlm0D2jDu4Tu2t0x8YcCNaPrEpqAETHxmvQTjqfyBb42l1OU
+         H07OWe3hj2q0Pjx5yh7mMr2gyF3fMG5bLa++lHyb9WMDHwacAhItZdJGCa78Secb8SBs
+         8YTXA4WW/UH+DzfuQ7U1xjZusfGmJfB5ay2fbZjN2u7YhqcKGOq4y8JKr0nvQN8mfJmW
+         7N1H/jjwv0GTWOgdhNa6SsSPcmmR+5/V07YeFc3t6OlDG5Xd1fQHAKTSVTaRCiW1DN6M
+         YVhg==
+MIME-Version: 1.0
+X-Received: by 10.50.64.146 with SMTP id o18mr10804742igs.81.1442530477750;
+ Thu, 17 Sep 2015 15:54:37 -0700 (PDT)
+Received: by 10.107.162.82 with HTTP; Thu, 17 Sep 2015 15:54:37 -0700 (PDT)
+In-Reply-To: <CAAxEZd-K+hcc9X+VzAsCSMHTbxbwARp4Jy69orWUG_pEdU+a9Q@mail.gmail.com>
+References: <CAAxEZd-K+hcc9X+VzAsCSMHTbxbwARp4Jy69orWUG_pEdU+a9Q@mail.gmail.com>
+Date: Fri, 18 Sep 2015 00:54:37 +0200
+Message-ID: <CAAxEZd9+zM5C8GBydBbiPyoZA3zS6TvLJi5Pc1mrA=qGTZfr5w@mail.gmail.com>
+Subject: Re: football.json - Football Data in JSON - Request for Comments on Format
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+  If anyone follows along I've added some more seasons (e.g. 2013/14
+[1], 2014/15 [2], 2015/16 [3], etc.) and added the English Premier
+League, the Deutsche Bundesliga and the =C3=96sterr. Bundesliga.
+
+  The repo structure (designed for requests) is now:
+
+football.json/
+=E2=94=9C=E2=94=80=E2=94=80=E2=94=802011-12/
+=E2=94=82       at.1.clubs.json
+=E2=94=82       at.1.json
+=E2=94=82
+=E2=94=9C=E2=94=80=E2=94=80=E2=94=802012-13/
+=E2=94=82       at.1.clubs.json
+=E2=94=82       at.1.json
+=E2=94=82       de.1.clubs.json
+=E2=94=82       de.1.json
+=E2=94=82       en.1.clubs.json
+=E2=94=82       en.1.json
+=E2=94=82
+=E2=94=9C=E2=94=80=E2=94=80=E2=94=802013-14/
+=E2=94=82       at.1.clubs.json
+=E2=94=82       at.1.json
+=E2=94=82       de.1.clubs.json
+=E2=94=82       de.1.json
+=E2=94=82       en.1.clubs.json
+=E2=94=82       en.1.json
+=E2=94=82
+=E2=94=9C=E2=94=80=E2=94=80=E2=94=802014-15/
+=E2=94=82       at.1.clubs.json
+=E2=94=82       at.1.json
+=E2=94=82       de.1.clubs.json
+=E2=94=82       de.1.json
+=E2=94=82       en.1.clubs.json
+=E2=94=82       en.1.json
+=E2=94=82
+=E2=94=94=E2=94=80=E2=94=80=E2=94=802015-16/
+        at.1.clubs.json
+        at.1.json
+        de.1.clubs.json
+        de.1.json
+        en.1.clubs.json
+        en.1.json
+
+
+  Cheers.
+
+[1] github.com/openfootball/football.json/tree/master/2013-14
+[2] github.com/openfootball/football.json/tree/master/2014-15
+[3] github.com/openfootball/football.json/tree/master/2015-16
+

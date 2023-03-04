@@ -1,0 +1,176 @@
+From 6566214797928431616@xxx Tue Jun 12 15:06:57 +0000 2018
+X-GM-THRID: 6342113564983033856
+X-Received: by 2002:a81:c641:: with SMTP id q1-v6mr234404ywj.77.1528816017254;
+        Tue, 12 Jun 2018 08:06:57 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a81:f108:: with SMTP id h8-v6ls316261ywm.10.gmail; Tue, 12
+ Jun 2018 08:06:56 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKLmAP8E0r1t96VIk9zfesQTUM2+DJG4wnMzND39H/rs7Pdg7J4PPWb7+NxQTrdYjuA0TLM0
+X-Received: by 2002:a81:92c8:: with SMTP id j191-v6mr259823ywg.120.1528816016396;
+        Tue, 12 Jun 2018 08:06:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1528816016; cv=none;
+        d=google.com; s=arc-20160816;
+        b=RGpE/1MZ2xU8yE2hKKDAAamGtWbOkmnuDAZJLZ0BNgvxJU3GZBpZICfa3XjqietnjO
+         iJiiQL0CBV6U0C9FNPKZ8iRRlC1tqgQd5eOMwH0lFcJa+3MtLo8dVzDU2E2DNE5L9WbJ
+         WOCq1XFji4+DDhOYmSApFHLRzjKFmxuCvox/J/k171FgLlEcDfHpRG3C74f8HqZNQpun
+         QmIMY61alnsLLG8teMMI0MnNo34ImD51q9QQfMN+m6Dn7kx9KqZPgP7klhojeKU5uYET
+         jACHWoQsBu0bh1QU7DifyMSjQqGk+ZTbnyb5jF1IDoz6LzwAUdyt4tVxB5sjNJMR+lTI
+         yK2A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=iWL1aeCkO+4r9S6aZoTHrq57z3O4cvZQlEUV/XdjrJk=;
+        b=eev88HWvFwjVRxcAZ8hOx1qjigerKH99Rf6/7QA8RTUHUv/w1yv7suTzfbk/1No13s
+         j0+/lal5+o4krJDG1qhbtG4RMu7Jbi1EmaojTNWzp9E0Hv6EJihcioORvCCvNgg+IlmA
+         7fpKHKFh9kw1OROgECLADDoBzlM86edSUyDhum+QWJAdxwvCoCzTqYW5lWzWuNRv0iKI
+         d2yYB51iei6RJ6jFfn5ttS/sCwzH28Z9HYm3grkL7VpZh09dAIOSsHH+ZQP3QFfW2PvY
+         2IITNbXwV68KCXT/hsJXrzYe9hqwpblcE+1Ll4UiYhkld9v/Qr3b69rn1oW46hHCwul+
+         9FVw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=gN8h3ryW;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22a.google.com (mail-it0-x22a.google.com. [2607:f8b0:4001:c0b::22a])
+        by gmr-mx.google.com with ESMTPS id e23-v6si15950ybb.4.2018.06.12.08.06.56
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 12 Jun 2018 08:06:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) client-ip=2607:f8b0:4001:c0b::22a;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=gN8h3ryW;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22a.google.com with SMTP id k17-v6so14424912ita.0
+        for <opensport@googlegroups.com>; Tue, 12 Jun 2018 08:06:56 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=iWL1aeCkO+4r9S6aZoTHrq57z3O4cvZQlEUV/XdjrJk=;
+        b=gN8h3ryWstsaUe2rK7STU5FwCQP/I6KLXXWSl+/sk80Nu9m3c+/Du0hJDfkvvpYUlH
+         D26buFlsjVV5NK17ljzjPQoASN9VF+p+3OVJch5p57JXoZBkdvmgzx0FNm62zsnWhAzw
+         Olm4Nl6ps8Kkc/h9T7LqmlWt+QqRt9dv+hBCJsFrbPfHyQK1okXHASLIFAmFvh1CBCAA
+         cvwVlisieE1EhYJzAmXkjQypUyn+d1AFcAiGgkp0hLQhzha9yVk/uB3AwXloZlh1qwKe
+         I7syTpkRv/ORBczQUoynCjVbdWuOKOJgLWk2nFGqtoSMD45TnWfjiNp66oYtjXja3P8M
+         i7BQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=iWL1aeCkO+4r9S6aZoTHrq57z3O4cvZQlEUV/XdjrJk=;
+        b=ilQlV/D0mThQZYu1qSwIrEEXgIFHI4PYCp8jRIvA+9PkaJDrBBYrzkU8eIKCtUzCTa
+         B8DvYDujOioQssguYmxPzDRQmAVdUbgIRmLfshRNw5f1ZMTvTs0gChMJJJWep9fKng6O
+         OXyHfCcnQrfwsu4S7lAPm5C+zcQAfthugg46kyPd/tLGqZ1FHZs9NV8BF8jt0HErytuO
+         wqWKsk/kuZ3bRiLePKS1nv0JlEFZ2TWZ7aEBeukF54JHLvP4rtcC5pWnSaHiLuiruJ0n
+         Ar8aXL3RCOLdHK02p++tMaWFMMemD6YJ6GKntcIyLMO94GoT4VpCquiASU7mkdmu+a+m
+         nHuw==
+X-Gm-Message-State: APt69E2BtF7ddkXjLPT732RonFMj3C2LqMuxpBN57AZmd+C/hFTNKK83
+	/ffygH54MdDKxigdfsOgL3TWfhWzoc7xzQXJkQ9GZw==
+X-Received: by 2002:a24:b611:: with SMTP id g17-v6mr814618itf.63.1528816015729;
+ Tue, 12 Jun 2018 08:06:55 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a6b:d90:0:0:0:0:0 with HTTP; Tue, 12 Jun 2018 08:06:55 -0700 (PDT)
+In-Reply-To: <d1a2b4a3-9799-425b-87fe-38d5f53c2c60@googlegroups.com>
+References: <f6259f69-0d0f-4ca1-9ac8-af45aeca4c1b@googlegroups.com>
+ <d767b1e9-47ad-43f5-83e7-f5a9e0991ad5@googlegroups.com> <d1a2b4a3-9799-425b-87fe-38d5f53c2c60@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 12 Jun 2018 17:06:55 +0200
+Message-ID: <CAAxEZd8QRCpib+FLdzQodrCnsqSRX4UJ3+Um1zHS8_aBCfP7=w@mail.gmail.com>
+Subject: Re: [opensport] Re: How to use the .txt files in the world-cup repo?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   To use your own Datafile create a new directory e.g. worldcup
+
+   Next create the Datafile in the worldcup direcotry - it's just a
+regular text file with the name Datafile
+
+  Add:
+
+world  'world.db', setup: 'countries'
+football 'national-teams'
+football 'national-teams', setup: 'history'
+football 'world-cup', setup: 'history'
+
+   to the Datafile.
+
+   And finally build your own database use the sportdb machinery. Type:
+
+   $ sportdb build
+
+   And that's it. The build command will look for a Datafile in the
+working / local directory and start downloading the datasets / zips /
+archives and build the sqlite database (called sport.db by default).
+
+   Enjoy the beautiful game. Cheers. Prost.
+
+
+2018-06-12 14:47 GMT+02:00 'Peter Coghill' via opensport
+<opensport@googlegroups.com>:
+> Gerald - first, massive thank you for the data set. Astonishing work.
+>
+> Ben - I'm trying to do a similar thing to you. Generate a .db containing all
+> historical WC games.  I'm trying to follow along this thread, but can't see
+> how you got it working.
+>
+> How did you parse sportdb this custom Datafile? What were the steps?
+>
+> Recognise its been 18 months past, so you may not recall.
+>
+> On Friday, 21 October 2016 16:32:52 UTC+1, Ben Burlingham wrote:
+>>
+>> Hi Gerald,
+>>
+>> I'm pleased to report everything works as expected!
+>>
+>> I used this Datafile:
+>>
+>> world  'world.db', setup: 'countries'
+>> football 'national-teams'
+>> football 'national-teams', setup: 'history'
+>> football 'world-cup', setup: 'history'
+>>
+>> ...and it works great!  Thanks for your help!
+>>
+>> On Sunday, October 16, 2016 at 10:19:43 AM UTC-7, Ben Burlingham wrote:
+>>>
+>>> Hi Gerald, thank you for your work on building and publishing these
+>>> datasets!
+>>>
+>>> I'm interested in how to use sportdb to generate datasets for the text
+>>> files found at https://github.com/openfootball/world-cup.
+>>>
+>>> The README says "use the sportdb command line tool to build your own
+>>> worldcup.db copy from the plain text data sets." but I haven't found
+>>> resources on how to do that.
+>>>
+>>> I've been digging around in various places:
+>>> - Built a sport.db file using a Datafile approach at
+>>> https://github.com/openfootball/datafile, but it only contains the 2014
+>>> data, and too much of it (has qualifiers and everything)
+>>> - Tried Jokecamp's approach at
+>>> https://github.com/jokecamp/sportdb-build-scripts but it seems to be similar
+>>> to the above
+>>> - Used the pre-built releases at
+>>> https://github.com/openfootball/build/releases but they don't have 2014 data
+>>> - Experimented with the Rakefiles approach at
+>>> https://github.com/openfootball/build but that didn't feel right
+>>>
+>>> I seem to be missing the part on how to parse the individual text files,
+>>> such as
+>>> https://github.com/openfootball/world-cup/blob/master/1930--uruguay/cup.txt.
+>>>
+>>> I'm close to writing my own parser to do it but wanted to check here
+>>> first! Thanks for any help!
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> To post to this group, send email to opensport@googlegroups.com.
+> Visit this group at https://groups.google.com/group/opensport.
+> For more options, visit https://groups.google.com/d/optout.
+

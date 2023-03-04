@@ -1,0 +1,58 @@
+From 155228045312@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 132292542464
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,88088887a6cdb9c3
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.9.34 with SMTP id w2mr7452lba.12.1408344038100;
+        Sun, 17 Aug 2014 23:40:38 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.152.219.165 with SMTP id pp5ls379906lac.97.gmail; Sun, 17 Aug
+ 2014 23:40:37 -0700 (PDT)
+X-Received: by 10.152.184.225 with SMTP id ex1mr2733060lac.0.1408344037739;
+        Sun, 17 Aug 2014 23:40:37 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x231.google.com (mail-we0-x231.google.com [2a00:1450:400c:c03::231])
+        by gmr-mx.google.com with ESMTPS id m6si537303wik.2.2014.08.17.23.40.37
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 17 Aug 2014 23:40:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::231 as permitted sender) client-ip=2a00:1450:400c:c03::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f177.google.com with SMTP id w62so4440385wes.8
+        for <openmundi@googlegroups.com>; Sun, 17 Aug 2014 23:40:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=AM9OdKmWruXXj7vYiIWm/CSrIjADPaE6Ff4lSMMRcUw=;
+        b=rGCdLSJfoLldrcBz08W6tunra1y1sA7Sj8ceEtNIsIWQSP6Vbadoqw66b9bSa13yeL
+         2ui2l5VSjyrAJknbpKgaUCrKAumypSwOceN/4R0NZxbwW9KEEQ0T/vo3GFNY2tXKAN/5
+         XvoujpiLSLUXUiXbdxn/UKKbs6jtA36ctwywaPjwe58PhxKarNINRO0WZ0+8+FEYF4jE
+         PeAbeodnZ8YL5jwf/gNzFKEeclupulSfo+Nd9w3VNXM/ZehkRIljBwZnfbinyO/MKMLh
+         xBJi/WAoaYr4QIbTdXe7+OHwARmE0+NX0Yv5csjKDjp1Q3yeiId9k/0LYRBa1orkiCml
+         03Hg==
+MIME-Version: 1.0
+X-Received: by 10.194.78.100 with SMTP id a4mr5955041wjx.106.1408344037644;
+ Sun, 17 Aug 2014 23:40:37 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Sun, 17 Aug 2014 23:40:37 -0700 (PDT)
+In-Reply-To: <954ed934-9e5c-4a2c-bdcd-fb0422d8bd8c@googlegroups.com>
+References: <53EFB3DA.4070800@googlemail.com>
+	<954ed934-9e5c-4a2c-bdcd-fb0422d8bd8c@googlegroups.com>
+Date: Mon, 18 Aug 2014 08:40:37 +0200
+Message-ID: <CAAxEZd9GYvMSejoKK4P=SGknboh=Jd4RCPA1a3C=oi0E7Q3pFA@mail.gmail.com>
+Subject: Re: Word Factbook -- Field names an descriptions
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Eckhard Licher <eckhard.licher@googlemail.com>
+Cc: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+    Thanks for the update. I've added the new script to
+worlddb/factbook.python and the two new files to
+openmundi/factbook.json. Keep it up. Cheers.
+

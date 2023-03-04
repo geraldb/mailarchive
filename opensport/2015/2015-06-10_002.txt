@@ -1,0 +1,85 @@
+From 2662640648192@xxx Tue Jun 16 00:16:42 +0000 2015
+X-GM-THRID: 2656382746624
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,9c73b0cae67bd669
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.52.177.138 with SMTP id cq10mr4233817vdc.11.1433948396213;
+        Wed, 10 Jun 2015 07:59:56 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.83.7 with SMTP id i7ls1125574qgd.74.gmail; Wed, 10 Jun
+ 2015 07:59:56 -0700 (PDT)
+X-Received: by 10.140.19.76 with SMTP id 70mr60492qgg.21.1433948396001;
+        Wed, 10 Jun 2015 07:59:56 -0700 (PDT)
+X-Google-Doc-Id: e28fcb1f83c43363
+X-Google-Web-Client: true
+Date: Wed, 10 Jun 2015 07:59:55 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com, knservis@gmail.com
+Message-Id: <99b92dbc-2c21-46e1-a98e-2e2c1792e3e5@googlegroups.com>
+In-Reply-To: <98f20ffb-d01c-4a53-ab1a-2fae9511380c@googlegroups.com>
+References: <98f20ffb-d01c-4a53-ab1a-2fae9511380c@googlegroups.com>
+Subject: Re: Sportdb error
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_234_1353377266.1433948395316"
+X-Google-Token: EOuh4asFqFu2dEVkoV80
+X-Google-IP: 217.13.183.252
+
+------=_Part_234_1353377266.1433948395316
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_235_64920638.1433948395316"
+
+------=_Part_235_64920638.1433948395316
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+   Thanks for trying football.db  and the sportdb tool.  Sorry for the 
+trouble - I'm currently reworking the worlddb  (region got deleted and 
+state/part/county/muni/etc. added) [1].   I try my best to get the sportdb 
+tools updated in the next week to make it all work as advertised.
+
+   In the mean time you can make it all work using a Gemfile.  Make sure 
+you use worlddb-models with a version smaller than 2.3.0 (e.g. the latest 
+"old" working version is 2.2.2). 
+
+  As a (simpler) alternative uninstall your versions of worlddb-models 
+greater than 2.2.2 e.g.
+
+  $ gem uninstall worlddb-models -v 2.3.0
+
+  and install version 2.2.2 e.g.
+
+  $ gem install worlddb-models -v 2.2.2
+
+   All should work again as advertised. Sorry for the trouble. 
+
+   Cheers.
+
+[1] github.com/worlddb/world.db.models
+
+
+------=_Part_235_64920638.1433948395316
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<div>&nbsp; &nbsp;Thanks for trying football.db &nbs=
+p;and the sportdb tool. &nbsp;Sorry for the trouble - I'm currently reworki=
+ng the worlddb &nbsp;(region got deleted and state/part/county/muni/etc. ad=
+ded) [1]. &nbsp; I try my best to get the sportdb tools updated in the next=
+ week to make it all work as advertised.</div><div><br></div><div>&nbsp; &n=
+bsp;In the mean time you can make it all work using a Gemfile. &nbsp;Make s=
+ure you use worlddb-models with a version smaller than 2.3.0 (e.g. the late=
+st "old" working version is 2.2.2).&nbsp;</div><div><br></div><div>&nbsp; A=
+s a (simpler) alternative uninstall your versions of worlddb-models greater=
+ than 2.2.2 e.g.</div><div><br></div><div>&nbsp; $ gem uninstall worlddb-mo=
+dels -v 2.3.0</div><div><br></div><div>&nbsp; and install version 2.2.2 e.g=
+.</div><div><br></div><div>&nbsp; $ gem install worlddb-models -v 2.2.2</di=
+v><div><br></div><div>&nbsp; &nbsp;All should work again as advertised. Sor=
+ry for the trouble.&nbsp;</div><div><br></div><div>&nbsp; &nbsp;Cheers.<br>=
+</div><div><br></div><div>[1]&nbsp;github.com/worlddb/world.db.models</div>=
+<div><br></div></div>
+------=_Part_235_64920638.1433948395316--
+------=_Part_234_1353377266.1433948395316--
+

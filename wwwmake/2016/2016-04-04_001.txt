@@ -1,0 +1,74 @@
+From 6269840130745303040@xxx Mon Apr 04 23:01:54 +0000 2016
+X-GM-THRID: 6269840131576823808
+X-Received: by 10.107.128.22 with SMTP id b22mr2566763iod.10.1459810913477;
+        Mon, 04 Apr 2016 16:01:53 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.182.22.129 with SMTP id d1ls179564obf.6.gmail; Mon, 04 Apr
+ 2016 16:01:52 -0700 (PDT)
+X-Received: by 10.157.7.81 with SMTP id 75mr10235235ote.0.1459810912808;
+        Mon, 04 Apr 2016 16:01:52 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22d.google.com (mail-ig0-x22d.google.com. [2607:f8b0:4001:c05::22d])
+        by gmr-mx.google.com with ESMTPS id b18si867672igm.0.2016.04.04.16.01.52
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 04 Apr 2016 16:01:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) client-ip=2607:f8b0:4001:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ig0-x22d.google.com with SMTP id g8so54101492igr.0
+        for <wwwmake@googlegroups.com>; Mon, 04 Apr 2016 16:01:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to;
+        bh=WfzbgOEsIQhO5UJiuvUk2RF4oRmkpQwoJ/ftCqFp8/U=;
+        b=KDp1liRl7WGj0NZozSKJVi8AK2QQfc8cNQ3ONxFWJM5j5YJoTiRQ2vGq/RB9LNa3Sf
+         wRNy7F0H0zX3qY2yzXee9lKJYXPyOHu54B/H6jj0WtE+0jGLGNNPiIv2XdbHD84TYuUI
+         IzZJKlNpgkKfhKxZ4xplNPSd6Ad4ewr5cyBMhNl0ekTa/XFlA+jG/zCgk73kh0dvBbiJ
+         +2RPP6s/iOSteaQE1McYgLgV70IO2auAeuaKR8Czi1RwUgm3THz6bkcCziyPT/mQTm/6
+         touRz8rlgAGJ/Y6/Vw1XtTA7GVGRlr+BeDj5kXg1T8ZqewmubZKahXwkrDruCQT6jiIR
+         VlpA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:date:message-id:subject:from:to;
+        bh=WfzbgOEsIQhO5UJiuvUk2RF4oRmkpQwoJ/ftCqFp8/U=;
+        b=Xc37qX+7ARiy9PJ8zY9ls2WhsVrefOGOj1pQ2NHwHZYe64V2QVEvwvz6dakesO5ETD
+         7D7ATH9Z/gfSqDEGxVsGNsHRSkvaLAkOx0JCZeOyyEdypTVjL5/IUyiPSI2BocMQAinD
+         wFiLfgBJyEUtcXiWaHd4O69x7RzTV4Ntqlz9hTk1UPmXAs4TG4L2E89xO3Bm1gNQ418V
+         dg1IUHE8jbySYI6frvtx209Yt5I0e1BreGoLaSqlUzX3W6x698s0IAKEr2e2eIJrtzJC
+         xV5kaacZO7WgEbvPdFW75JcLkjRnj4jZvXIVSxLKPcug7M27JT9iRmQhAXlgcGB3LJh2
+         urJA==
+X-Gm-Message-State: AD7BkJJhwZDnws2HFyumFm4+sujkaNLZna4IA9oL8rXVw0G8rnshQqu/s5wd6SJ22ykt5ZIwa/4jteqJ0TX1NQ==
+MIME-Version: 1.0
+X-Received: by 10.50.79.229 with SMTP id m5mr11562615igx.5.1459810912650; Mon,
+ 04 Apr 2016 16:01:52 -0700 (PDT)
+Received: by 10.107.169.83 with HTTP; Mon, 4 Apr 2016 16:01:52 -0700 (PDT)
+Date: Tue, 5 Apr 2016 01:01:52 +0200
+Message-ID: <CAAxEZd_w=f0wN8dmX7G--bDODaOnOTn3x1kNo1JmwU-3a1DeSw@mail.gmail.com>
+Subject: Awesome Slide Shows / Presentations Templates in HTML, CSS & JS
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   I've started to collect awesome slide show / presentation / talk
+templates [1]
+in html, css and javascript. So far the line-up includes:
+
+- reveal.js
+- bespoke.js
+- impress.js
+- deck.js
+- shower
+- spectacle (react.js)
+- s6 / slidekit
+- s5
+- slidy
+
+Anything missing? Let us know here or add the package to the list. Cheers.
+
+[1] github.com/slideshow-s9/awesome-slideshows
+

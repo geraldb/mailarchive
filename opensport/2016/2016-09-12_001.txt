@@ -1,0 +1,72 @@
+From 6329426254481063936@xxx Mon Sep 12 12:46:28 +0000 2016
+X-GM-THRID: 6319151478389866496
+X-Received: by 10.66.152.201 with SMTP id va9mr2827705pab.18.1473684388064;
+        Mon, 12 Sep 2016 05:46:28 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.36.211.200 with SMTP id n191ls57783itg.12.canary; Mon, 12 Sep
+ 2016 05:46:25 -0700 (PDT)
+X-Received: by 10.36.29.7 with SMTP id 7mr10995065itj.2.1473684385606;
+        Mon, 12 Sep 2016 05:46:25 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-oi0-x22b.google.com (mail-oi0-x22b.google.com. [2607:f8b0:4003:c06::22b])
+        by gmr-mx.google.com with ESMTPS id f133si1259846ita.1.2016.09.12.05.46.25
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 12 Sep 2016 05:46:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4003:c06::22b as permitted sender) client-ip=2607:f8b0:4003:c06::22b;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4003:c06::22b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-oi0-x22b.google.com with SMTP id q188so192058424oia.3
+        for <opensport@googlegroups.com>; Mon, 12 Sep 2016 05:46:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=MVvDJYHrsIcbS2odyhAYneUyPI0erYEEit6owZYEBxk=;
+        b=mlVtjRKdKxRRR6mRuq/zOId5zWaghphqDzjuQRSeT87cpczxoR+CWinzUyzXqsGL8x
+         WPCVD2jYLOgzmnypKnlEQ7NF2DvoaMM5urEycDBAMylRFcqwa86LDqHmzTpGPWaujXf+
+         oArd8eRBCNk437Syd2adhLT8SZm0i9eunQia+JdpXGk2mSkKllKC1y3gZgBcKcoP1BaO
+         7dOgEnzSXG9HQ1hH6Ut4FaOriPN1Q/RaTNasMM4oaDW+EsRXK0z8KKvquJazoxllZnQM
+         k9SVz6jcDmWNILEUPQfbmROpVbl+lqmVkOMcCzcNZm5ZN6zDZdBJySfqCs5dhmrUjIN9
+         kg5Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=MVvDJYHrsIcbS2odyhAYneUyPI0erYEEit6owZYEBxk=;
+        b=ltsKReWepHFLGwFJcXVPxVMCEa7i3XPKaciG40riMuvlZESDtfEugIJKrm66rX6+2B
+         //Aulo1z1I/a1WyvbLwD4XCfJMLtdo7a88w3scfCZ4T6PCLXCuPJKbycCxovp7nfIIdP
+         v+nAbM+1lmEgbeRlKeFmVzYQ9WSGyznTsd9AvPiZGPLlLHG6E29u8f/7XJt6EaoXdQgp
+         duWRFfk+dNxWwOjjyb9cpiO2zgdkfzX/OvLIEUl4tycKPbt0N1H7+HGl71sGsYQwZNJn
+         cMFYNymGw2rmKPP20+Jsd8bmo1TNoKzjOKdP53tPXQpIIAZxcNlNfsJpFJWsUGzLJBVA
+         tvxw==
+X-Gm-Message-State: AE9vXwPnAmxJ9guum9rsVNzW403T2lStp6FAp3J2SVt0PTR5AhH6hScTCNsRguftxA5kOyvuXOHDvtssQwj5ng==
+X-Received: by 10.202.74.149 with SMTP id x143mr25814625oia.125.1473684385041;
+ Mon, 12 Sep 2016 05:46:25 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.145 with HTTP; Mon, 12 Sep 2016 05:46:24 -0700 (PDT)
+In-Reply-To: <a027bd3b-cfce-4387-865e-dcf45e9fa018@googlegroups.com>
+References: <3bc1224e-e12b-47d9-8f35-b635651acc5f@googlegroups.com>
+ <CAAxEZd_SNQWwDgDEqOm7_=C6=1RwxVjGpGnweHsGVwTK0gZ36g@mail.gmail.com>
+ <0e869f0b-e0d6-497d-ba60-0062eb11350e@googlegroups.com> <CAAxEZd_Dfey2F0jkwCbSoHQRZkwbuj4+iJxLDFacmLCptGzPwQ@mail.gmail.com>
+ <5c5e55c8-906d-41b2-8bb2-b6a6b986a7b9@googlegroups.com> <CAAxEZd-JeJUNdTWE_JPfMB9-ZNuBneem7AzohH=pCQHUactJBQ@mail.gmail.com>
+ <a027bd3b-cfce-4387-865e-dcf45e9fa018@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 12 Sep 2016 14:46:24 +0200
+Message-ID: <CAAxEZd825kzWAuPE6wWRx=SBsbOJLHnRw72AyPWc=dvE2FstAQ@mail.gmail.com>
+Subject: Re: [opensport] error when installing
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+> Work like a charm!
+> BTW best practice is using a Gemfile and add this to it
+> gem "activerecord", "= 4.2.7.1"
+
+  Thanks for the update and best practice recommendation. Good to hear
+it's working.
+
+   Cheers.
+

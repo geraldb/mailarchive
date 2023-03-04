@@ -1,0 +1,78 @@
+From 5491392512@xxx Sat Dec 20 19:01:40 +0000 2014
+X-GM-THRID: 6721372160
+X-Google-Groups: beerdb
+X-Google-Thread: 36096b4,271a86f5ffbb7d63,start
+X-Google-Attributes: gid36096b4,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Beer & Brewery Database
+ (beer.db) - Cheers, Prost, Salud" <beerdb@googlegroups.com>
+X-Received: by 10.224.215.194 with SMTP id hf2mr21821128qab.0.1366703242161;
+        Tue, 23 Apr 2013 00:47:22 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.49.48.112 with SMTP id k16ls182075qen.59.gmail; Tue, 23 Apr
+ 2013 00:47:21 -0700 (PDT)
+MIME-Version: 1.0
+X-Received: by 10.49.72.194 with SMTP id f2mr2710456qev.34.1366703241939; Tue,
+ 23 Apr 2013 00:47:21 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by c15g2000vbl.googlegroups.com with HTTP; Tue, 23 Apr 2013 00:47:21
+ -0700 (PDT)
+Date: Tue, 23 Apr 2013 00:47:21 -0700 (PDT)
+User-Agent: G2/1.0
+X-Google-Token: EIn52IsF5JZ2zJxyI2g0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:20.0)
+ Gecko/20100101 Firefox/20.0,gzip(gfe)
+X-Google-IP: 188.22.219.18
+Message-ID: <1901735c-96df-4158-b1a3-360fd186efa9@c15g2000vbl.googlegroups.com>
+Subject: beer.db & beerdb gem - Free Beer & Brewery Data, Models 'n' More
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Open Beer & Brewery Database (beer.db) - Cheers, Prost, Salud" <beerdb@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  I've collected some beers and breweries for a new free open public
+domain beer database, that is, beer.db[1]. Use the beerdb Ruby gem [2]
+to read (import) the plain text fixtures and setup your database e.g.
+
+  $  beerdb setup --include ../beer.db --worldinclude ../world.db
+
+  For easy reuse the gem includes some ActiveRecord models e.g.
+
+    >> brooklyn = Brewery.find_by_key( 'brooklyn' )
+
+    >> brooklyn.title
+    => "Brooklyn Brewery"
+
+    >> brooklyn.beers
+    => "Brooklyn Lager"
+       "Brooklyn Brown Ale"
+       "Brooklyn Black Chocolate Stout"
+        ...
+
+    >> asahi = Beer.find_by_key( 'asahisuperdry' )
+    >> asahi.title
+    => "Asahi Super Dry"
+    >> asahi.brewery
+    => "Asahi Breweries"
+
+    and so on.
+
+   Note, there's also a litte HTTP JSON API web service included [3]
+and last but not least  I've started on a litte web app
+(beer.db.admin) [4]. All code and data is public domain.
+
+ Cheers. Prost. Salud. Kampai. Yung sing. Slinte.
+
+  - Gerald
+
+[1] https://github.com/geraldb/beer.db
+[2] https://rubygems.org/gems/beerdb
+[3] https://github.com/geraldb/beer.db.ruby/blob/master/lib/beerdb/server.rb
+[4] http://prost.herokuapp.com/countries
+

@@ -1,0 +1,60 @@
+From 187309228032@xxx Sat Dec 13 20:08:19 +0000 2014
+X-GM-THRID: 159536644096
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,adf2072367aa369f
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.231.36 with SMTP id td4mr705092wic.2.1408879062295;
+        Sun, 24 Aug 2014 04:17:42 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.152.7.8 with SMTP id f8ls314280laa.86.gmail; Sun, 24 Aug 2014
+ 04:17:41 -0700 (PDT)
+X-Received: by 10.152.27.2 with SMTP id p2mr4585lag.8.1408879061861;
+        Sun, 24 Aug 2014 04:17:41 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x232.google.com (mail-wg0-x232.google.com [2a00:1450:400c:c00::232])
+        by gmr-mx.google.com with ESMTPS id fj7si243049wib.3.2014.08.24.04.17.41
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 24 Aug 2014 04:17:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::232 as permitted sender) client-ip=2a00:1450:400c:c00::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f50.google.com with SMTP id n12so11803373wgh.21
+        for <openmundi@googlegroups.com>; Sun, 24 Aug 2014 04:17:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=gHgktsICr77oVQ2e7w8WB+/fYBXoGHVZKgCKNF3G4aM=;
+        b=LkNlHN68/Q2Esv0hX+dbJ7VYguCO25PInfUvWUb3/PaREsFJWGCJe5JFkY6kiTo/BF
+         9H/N0kuI9eV6R6t0bSGyXNWUUGsR36Fdo3M/PeEMZjXcAmnUhV5aZgR0pyj2b2VjHxCZ
+         IOdD5eYkJRpkIHI0mJxBg42BwogJdvEfnZ8spmas8/y3dTa6+JmHCG4XBlyHvsjKQhfx
+         7KXq61NhKQhrhzPUqgq9TyoLYkxbs4LmEiGmAavSipXWXuWZ4UK+VDBuUfnsT9XvydQN
+         sSfGEaPAIF5sa0yZXy/pbIhjpWp5HLIxVmLSkYN9A9CYZ7eUcCD0soAHkVyOjmR4dcqj
+         Xb9A==
+MIME-Version: 1.0
+X-Received: by 10.180.78.201 with SMTP id d9mr8947375wix.12.1408879061752;
+ Sun, 24 Aug 2014 04:17:41 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Sun, 24 Aug 2014 04:17:41 -0700 (PDT)
+In-Reply-To: <CAAxEZd80juUdSSF7=anthkWRD6i8mg+mO8LrcS_+_CfPe4R62A@mail.gmail.com>
+References: <0fa756e5-06af-41b4-8119-ee9cee864a43@googlegroups.com>
+	<CAAxEZd80juUdSSF7=anthkWRD6i8mg+mO8LrcS_+_CfPe4R62A@mail.gmail.com>
+Date: Sun, 24 Aug 2014 13:17:41 +0200
+Message-ID: <CAAxEZd8nTkXkL7xhsXz-T+njaO0YDy1va051EKV7Z15OEckA3g@mail.gmail.com>
+Subject: Re: Feature request
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Cc: Eckhard Licher <eckhard.licher@googlemail.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   FYI: I've uploaded a new factbook gem version, that is, 0.1.3.  See
+the announcment post for changes (e.g. header option n "long" form
+category/field name option, etc.)  Thanks again for trying the
+factbook gem and your ideas and comments.  Cheers.
+

@@ -1,0 +1,89 @@
+From 2573403684864@xxx Tue Jun 16 00:16:39 +0000 2015
+X-GM-THRID: 2567687897088
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,622da71fe85b08d1
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.14.138 with SMTP id d10mr5476109yhd.41.1428721138796;
+        Fri, 10 Apr 2015 19:58:58 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.93.85 with SMTP id c79ls1938939qge.21.gmail; Fri, 10 Apr
+ 2015 19:58:58 -0700 (PDT)
+X-Received: by 10.140.30.118 with SMTP id c109mr65600qgc.15.1428721138571;
+        Fri, 10 Apr 2015 19:58:58 -0700 (PDT)
+X-Google-Doc-Id: 2c21b31c7cd0132
+X-Google-Web-Client: true
+Date: Fri, 10 Apr 2015 19:58:57 -0700 (PDT)
+From: amit benvenisti <amitbenvenisti@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <274d258a-d991-4e05-8deb-82d01a7f1936@googlegroups.com>
+In-Reply-To: <CAAxEZd_5YHVgrqSf6Mwjd-WojHv9Rc0VAZS=X_PY72O=p9kV1Q@mail.gmail.com>
+References: <4be6b079-3d30-4e06-82c2-d2a7f115a168@googlegroups.com>
+ <CAAxEZd_5YHVgrqSf6Mwjd-WojHv9Rc0VAZS=X_PY72O=p9kV1Q@mail.gmail.com>
+Subject: Re: [opensport] problem with sportdb after gem install
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1605_239014707.1428721137939"
+X-Google-Token: EPGboqkFTjS_tzEt-y00
+X-Google-IP: 79.180.118.15
+
+------=_Part_1605_239014707.1428721137939
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1606_1325760659.1428721137939"
+
+------=_Part_1606_1325760659.1428721137939
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Gerald,
+Thank you very much for the sportdb gem, although i am still in the process 
+of learning it, it looks great!
+about my question, your answer might help, but i have found my self needing 
+to reinstalling all my .rvm anyway, so it works.
+
+if you don't mind i have a couple of non related (to this post) questions:
+1. are the game scores updated manually by you? 
+2. do intend to on (re)updating the american football section?
+3. any intentions on expansions for nba, mlb (baseball), etc?
+4. and one last thing. and it might be there but i missed it, what is the 
+best way to get your score updates (not live of course)? is there an api 
+call?
+
+thanks!
+
+On Friday, April 10, 2015 at 10:58:46 AM UTC+3, Gerald Bauer wrote:
+>
+> Hello, 
+>    Thanks for trying football.db. 
+>
+> > cannot load such file -- datafile/datasets/football (LoadError) 
+>
+>   Looks like you're missing the datafile gem [1]. Try: 
+>
+> $ gem install datafile 
+>
+>    And than retry. Cheers. 
+>
+> [1] github.com/textkit/datafile 
+>
+
+------=_Part_1606_1325760659.1428721137939
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Gerald,<br>Thank you very much for the sportdb gem, although i am still in the process of learning it, it looks great!<br>about my question, your answer might help, but i have found my self needing to reinstalling all my .rvm anyway, so it works.<br><br>if you don't mind i have a couple of non related (to this post) questions:<div>1. are the game scores updated manually by you?&nbsp;<br>2. do intend to on (re)updating the american football section?</div><div>3. any intentions on expansions for nba, mlb (baseball), etc?</div><div>4. and one last thing. and it might be there but i missed it, what is the best way to get your score updates (not live of course)? is there an api call?</div><div><br>thanks!<br><br><div>On Friday, April 10, 2015 at 10:58:46 AM UTC+3, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>&nbsp; &nbsp;Thanks for trying football.db.
+<br>
+<br>&gt; cannot load such file -- datafile/datasets/football (LoadError)
+<br>
+<br>&nbsp; Looks like you're missing the datafile gem [1]. Try:
+<br>
+<br>$ gem install datafile
+<br>
+<br>&nbsp; &nbsp;And than retry. Cheers.
+<br>
+<br>[1] <a href="http://github.com/textkit/datafile" target="_blank" rel="nofollow" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Ftextkit%2Fdatafile\46sa\75D\46sntz\0751\46usg\75AFQjCNEovxjPjcP_NC0W9S5SzmRv9jYm5w';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Ftextkit%2Fdatafile\46sa\75D\46sntz\0751\46usg\75AFQjCNEovxjPjcP_NC0W9S5SzmRv9jYm5w';return true;">github.com/textkit/datafile</a>
+<br></blockquote></div></div></div>
+------=_Part_1606_1325760659.1428721137939--
+------=_Part_1605_239014707.1428721137939--
+

@@ -1,0 +1,62 @@
+From 1202849841152@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1182263148544
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,260cbfa3b0ad717f
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.21.133 with SMTP id v5mr361014lae.9.1402591336649;
+        Thu, 12 Jun 2014 09:42:16 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.108.180 with SMTP id hl20ls477779wib.36.canary; Thu, 12
+ Jun 2014 09:42:16 -0700 (PDT)
+X-Received: by 10.180.89.232 with SMTP id br8mr451875wib.1.1402591336255;
+        Thu, 12 Jun 2014 09:42:16 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x234.google.com (mail-wg0-x234.google.com [2a00:1450:400c:c00::234])
+        by gmr-mx.google.com with ESMTPS id r13si211863wib.0.2014.06.12.09.42.16
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 12 Jun 2014 09:42:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::234 as permitted sender) client-ip=2a00:1450:400c:c00::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f52.google.com with SMTP id b13so1495965wgh.23
+        for <opensport@googlegroups.com>; Thu, 12 Jun 2014 09:42:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=/dQkfd+v6BV+JzmOmeEy2DJeI5kk9gNH7VhddO7QGWU=;
+        b=X+vcAB0bkcBKD85BKCaZQPkzTPb2O6fhPBKNTDm6TSxC1X2hySEIxd0EPMbmEKAWRr
+         Fue11fhGvq6EkU3enlzccgfLjs+2EfMZXY251UZVO7ZEUooMAbccaxiex719320sxhDD
+         jeaPEqiqTeYdydRg8xMG5p6s7S6EzGNzDQLsEJmGUO652mA9qX+znX+kvLxSnlcKBTQ6
+         RTa4lw9wj+Wk7Pgv/svXs6wGP22bfJv3L7E723wOH1ek1uY4+YyHyzs3L06SssEPeSrR
+         gEECK81aIh7qfwnakgVx5lNMOAWrsQUdBRax265AK7bM8Le0OaF7kD49ALySwr9K3dJO
+         JqcA==
+MIME-Version: 1.0
+X-Received: by 10.180.83.225 with SMTP id t1mr8170732wiy.28.1402591336169;
+ Thu, 12 Jun 2014 09:42:16 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Thu, 12 Jun 2014 09:42:16 -0700 (PDT)
+In-Reply-To: <67391d34-6c7f-4412-b377-a7f128b4d6e9@googlegroups.com>
+References: <0e18624d-cdc7-4134-9996-b3b40850d72b@googlegroups.com>
+	<f7fb0f43-b37a-431e-835c-3ff662f2d5a2@googlegroups.com>
+	<67391d34-6c7f-4412-b377-a7f128b4d6e9@googlegroups.com>
+Date: Thu, 12 Jun 2014 18:42:16 +0200
+Message-ID: <CAAxEZd_bvnm3r5t9zgxbPVqCnFOyRT4DVuAtK08gx1jNf95oiA@mail.gmail.com>
+Subject: Re: [opensport] Re: Group-wise structured data
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   There are no groups so far in the API. Sorry. You can add groups,
+standings etc. using the sport.db.api.starter kit as a starting point
+(it's Ruby though).
+
+    The easiest way is to import the data into your database (MySQL?
+PostgreSQL? or whatever you use) and than use PHP and SQL to query it.
+Cheers.
+

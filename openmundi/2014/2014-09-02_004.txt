@@ -1,0 +1,57 @@
+From 245005025280@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 247966203904
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,83c5805a6cb8f0df
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.7.14 with SMTP id 14mr18259236yho.34.1409651687401;
+        Tue, 02 Sep 2014 02:54:47 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.89.5 with SMTP id u5ls2291175qgd.72.gmail; Tue, 02 Sep
+ 2014 02:54:47 -0700 (PDT)
+X-Received: by 10.140.83.180 with SMTP id j49mr776766qgd.1.1409651687276;
+        Tue, 02 Sep 2014 02:54:47 -0700 (PDT)
+X-Google-Doc-Id: 429d987d876bdb76
+X-Google-Web-Client: true
+Date: Tue, 2 Sep 2014 02:54:47 -0700 (PDT)
+From: Eckhard Licher <eckhard.licher@googlemail.com>
+To: openmundi@googlegroups.com
+Message-Id: <6c181f40-2aa3-45dd-b6c5-5b4caf0f2592@googlegroups.com>
+Subject: Scraping of local files
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_71_864806749.1409651687031"
+X-Google-Token: EOenlqAFP0b-5haYxsE0
+X-Google-IP: 85.158.138.19
+
+------=_Part_71_864806749.1409651687031
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_72_637707547.1409651687031"
+
+------=_Part_72_637707547.1409651687031
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Gerald,
+
+I ran the factbook gem on all 268 entries of the WFB over the weekend and 
+was stuck with about half a dozen empty JSON files (server timeout?) for 
+which I had to re-run the scraper.
+
+It would be useful to have an option "geos_path" or something to scrape the 
+local copy of a file in the factbook/geos/ directory instead of downloading 
+it on the fly. 
+
+Just a suggestion for 0.1.4. What do you think?
+
+Greetings
+
+------=_Part_72_637707547.1409651687031
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello Gerald,<br><br>I ran the factbook gem on all 268 entries of the WFB over the weekend and was stuck with about half a dozen empty JSON files (server timeout?) for which I had to re-run the scraper.<br><br>It would be useful to have an option "<span style="font-family: courier new,monospace;">geos_path</span>" or something to scrape the local copy of a file in the<span style="font-family: courier new,monospace;"> factbook/geos/ </span>directory instead of downloading it on the fly. <br><br>Just a suggestion for 0.1.4. What do you think?<br><br>Greetings<br></div>
+------=_Part_72_637707547.1409651687031--
+
+------=_Part_71_864806749.1409651687031--
+

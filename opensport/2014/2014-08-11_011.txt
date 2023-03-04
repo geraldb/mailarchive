@@ -1,0 +1,154 @@
+From 1978568540160@xxx Tue Jun 16 00:16:53 +0000 2015
+X-GM-THRID: 1912480989184
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,bc854168932351a9
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.126.103 with SMTP id a67mr13221985yhi.4.1407732002027;
+        Sun, 10 Aug 2014 21:40:02 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.153.194 with SMTP id vi2ls564788obb.67.gmail; Sun, 10 Aug
+ 2014 21:40:01 -0700 (PDT)
+X-Received: by 10.182.19.138 with SMTP id f10mr164obe.42.1407732001508;
+        Sun, 10 Aug 2014 21:40:01 -0700 (PDT)
+X-Google-Doc-Id: 89589a54c4cde2de
+X-Google-Web-Client: true
+Date: Sun, 10 Aug 2014 21:40:00 -0700 (PDT)
+From: Deegii <pdelgermurun@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <c7c7e3c9-9bd9-448c-b521-fae7bee5ad82@googlegroups.com>
+In-Reply-To: <CAAxEZd9ovWf0YOgMPGsfD4akv6nkVemAKkjEaibazhmy_oc-mw@mail.gmail.com>
+References: <b3f0bd6c-13c0-42e1-8a8a-f9d8e12907f4@googlegroups.com>
+ <CAAxEZd9WUvVhsv6aXCN_h-iyciAMJbWBFZkx9MyZQra=SNxdhg@mail.gmail.com>
+ <CAAxEZd9ovWf0YOgMPGsfD4akv6nkVemAKkjEaibazhmy_oc-mw@mail.gmail.com>
+Subject: Re: [opensport] Is there any schema/structure explanation?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1868_526632294.1407732000411"
+X-Google-Token: EKCSoZ8FDvNekVzH9tM0
+X-Google-IP: 103.26.193.9
+
+------=_Part_1868_526632294.1407732000411
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1869_1328855971.1407732000411"
+
+------=_Part_1869_1328855971.1407732000411
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for your extensive response.
+
+I saw models source code, actually it is very useful. But I still have some 
+unknown fields. At MVP 1 level I'm only doing league standing (event & 
+event standing) related things. So for now here is a list of fields that I 
+can't guess:
+
+   - league.club
+   - city.popm (I guess population in million but data doesn't seem so)
+   - region.nuts
+   - country.net/motor/fifa
+   - place.kind - What kind of choices do have totally? I can collect some 
+   kind from models, but I can't make sure it's complete or not.
+
+
+Thank you.
+
+
+On Friday, August 8, 2014 10:50:57 PM UTC+8, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>   As short followup: 
+>
+> >  For example: event.team3, countries.s/c/d etc.. 
+>
+>   For now these fields / attributes are document not in the schema but 
+> in the (Ruby) models e.g.  you can find the country model [1] in the 
+> worlddb gem. 
+>
+>    Might be easier to post what you cannot guess and I will add it to 
+> the new schema repo and docu page. 
+>
+>     event.team3  ->   is a boolean flag  - if it is a knockout cup - 
+> it means if there's a match for 3rd place  (or if they do not care 
+> about who is no 3 or 4) e.g. in the world cup there's a match for the 
+> 3rd place (e.g Brazil - Netherlands)  but in the Euro 2012 there's no 
+> match and in the Championsleague either, for example. 
+>
+>    country s/c/d    - is the type of "country"  e.g.  s => supranation 
+>  (actually there's now only one - e.g. the european union),   c => 
+> country   and d => dependency (e.g. Hong Kong, Puerto Rico, and so on) 
+>
+>   Cheers. 
+>
+> [1] 
+> github.com/worlddb/world.db.ruby/blob/master/lib/worlddb/models/country.rb 
+>
+
+------=_Part_1869_1328855971.1407732000411
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thank you for your&nbsp;extensive response.<div><br></div>=
+<div>I saw models source code, actually it is very useful. But I still have=
+ some unknown fields. At MVP 1 level I'm only doing league standing (event =
+&amp; event standing) related things. So for now here is a list of fields t=
+hat I can't guess:</div><div><ul><li><span style=3D"line-height: normal;">l=
+eague.club</span></li><li><span style=3D"line-height: normal;">city.popm (I=
+ guess population in million but data doesn't seem so)</span></li><li><span=
+ style=3D"line-height: normal;">region.nuts</span></li><li><span style=3D"l=
+ine-height: normal;">country.net/motor/fifa</span></li><li><span style=3D"l=
+ine-height: normal;">place.kind - What kind of choices do have totally? I c=
+an collect some kind from models, but I can't make sure it's complete or no=
+t.</span></li></ul><div><br></div><div>Thank you.</div><div><br></div><br>O=
+n Friday, August 8, 2014 10:50:57 PM UTC+8, Gerald Bauer wrote:<blockquote =
+class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1p=
+x #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; As short followup:
+<br>
+<br>&gt; &nbsp;For example: event.team3, countries.s/c/d etc..
+<br>
+<br>&nbsp; For now these fields / attributes are document not in the schema=
+ but
+<br>in the (Ruby) models e.g. &nbsp;you can find the country model [1] in t=
+he
+<br>worlddb gem.
+<br>
+<br>&nbsp; &nbsp;Might be easier to post what you cannot guess and I will a=
+dd it to
+<br>the new schema repo and docu page.
+<br>
+<br>&nbsp; &nbsp; event.team3 &nbsp;-&gt; &nbsp; is a boolean flag &nbsp;- =
+if it is a knockout cup -
+<br>it means if there's a match for 3rd place &nbsp;(or if they do not care
+<br>about who is no 3 or 4) e.g. in the world cup there's a match for the
+<br>3rd place (e.g Brazil - Netherlands) &nbsp;but in the Euro 2012 there's=
+ no
+<br>match and in the Championsleague either, for example.
+<br>
+<br>&nbsp; &nbsp;country s/c/d &nbsp; &nbsp;- is the type of "country" &nbs=
+p;e.g. &nbsp;s =3D&gt; supranation
+<br>&nbsp;(actually there's now only one - e.g. the european union), &nbsp;=
+ c =3D&gt;
+<br>country &nbsp; and d =3D&gt; dependency (e.g. Hong Kong, Puerto Rico, a=
+nd so on)
+<br>
+<br>&nbsp; Cheers.
+<br>
+<br>[1] <a href=3D"http://github.com/worlddb/world.db.ruby/blob/master/lib/=
+worlddb/models/country.rb" target=3D"_blank" onmousedown=3D"this.href=3D'ht=
+tp://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fworlddb%2Fworld.db.ru=
+by%2Fblob%2Fmaster%2Flib%2Fworlddb%2Fmodels%2Fcountry.rb\46sa\75D\46sntz\07=
+51\46usg\75AFQjCNGJYoVggqz1XicY2gAN8Q0J2H6pWQ';return true;" onclick=3D"thi=
+s.href=3D'http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fworlddb%2=
+Fworld.db.ruby%2Fblob%2Fmaster%2Flib%2Fworlddb%2Fmodels%2Fcountry.rb\46sa\7=
+5D\46sntz\0751\46usg\75AFQjCNGJYoVggqz1XicY2gAN8Q0J2H6pWQ';return true;">gi=
+thub.com/worlddb/world.db.<wbr>ruby/blob/master/lib/worlddb/<wbr>models/cou=
+ntry.rb</a>
+<br></blockquote></div></div>
+------=_Part_1869_1328855971.1407732000411--
+
+------=_Part_1868_526632294.1407732000411--
+

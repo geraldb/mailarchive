@@ -1,0 +1,70 @@
+From 96657735680@xxx Tue Jun 16 00:17:25 +0000 2015
+X-GM-THRID: 95516884992
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,fd7224970ecd38c2,start
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+X-Received: by 10.236.36.44 with SMTP id v32mr3815382yha.33.1367074550657;
+        Sat, 27 Apr 2013 07:55:50 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.49.14.195 with SMTP id r3ls1035314qec.63.gmail; Sat, 27 Apr
+ 2013 07:55:50 -0700 (PDT)
+MIME-Version: 1.0
+X-Received: by 10.49.64.196 with SMTP id q4mr1423095qes.2.1367074550397; Sat,
+ 27 Apr 2013 07:55:50 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by o19g2000vbm.googlegroups.com with HTTP; Sat, 27 Apr 2013 07:55:50
+ -0700 (PDT)
+Date: Sat, 27 Apr 2013 07:55:50 -0700 (PDT)
+User-Agent: G2/1.0
+X-Google-Token: EPbN74sF8srt_CV5nEg0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:20.0)
+ Gecko/20100101 Firefox/20.0,gzip(gfe)
+X-Google-IP: 188.22.251.24
+Message-ID: <c34c7177-1d5b-477c-ac63-a00c340fa016@o19g2000vbm.googlegroups.com>
+Subject: vienna.js Talk Slides -  football.db - Using Open Football Data in JavaScript
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Open Sports Database (sport.db) and Friends" <opensport@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  FYI: I've posted the slides from the vienna.js [1] talk titled
+"football.db - Using Open Football Data in JavaScript" [2]. Use left/
+right cursor keys (or space bar) to browse the slides and T-key to
+toggle between presentation and outline mode. Or check the all-in-one-
+page markdown source. [3]
+
+  Slides include:
+
+  - What's `football.db`?
+  - Example: La Liga - `es/teams.txt`
+  - Example: Champions League - `club/europe/2012_13/cl_ii.txt`
+  - Leagues and Tournaments / National Teams
+  - Intn'l Club Tournaments (Champions Leagues & Friends)
+  - National Club Leagues & Cups
+  - How to use `football.db` in JavaScript
+  - How to use HTTP JSON API - `GET /event/euro.2012/teams`
+  - How to use HTTP JSON API II - `GET /event/euro.2012/rounds`
+  - How to use HTTP JSON API III - `GET /event/euro.2012/round/6`
+  - How to use HTTP JSON(P) API in JavaScript & jQuery
+  - All Together Now - Machday Widget Example -
+`footballdb.widget.js`
+
+  Cheers.
+
+PS: For more meetups in Central Europe (Vienna, Brno, Bratislava) see
+"Coders without Borders" [4].
+
+[1] http://www.meetup.com/viennajs
+[2] http://slideshow.rubyforge.org/football_db_intro.html
+[3] https://github.com/geraldb/football.db/blob/master/talks/football_db_intro.md
+[4] http://coderswithoutborders.eu
+

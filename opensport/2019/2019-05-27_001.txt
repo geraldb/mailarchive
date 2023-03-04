@@ -1,0 +1,221 @@
+From 6695630057098969088@xxx Mon May 27 09:04:15 +0000 2019
+X-GM-THRID: 6695630055941341184
+Date: Mon, 27 May 2019 02:04:15 -0700 (PDT)
+From: Paul Cowan <paul.cowan@cutting.scot>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <0e37938f-4c11-48a4-9e00-8419e35a58a2@googlegroups.com>
+Subject: import data from an older sportdb format
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_618_1302724535.1558947855370"
+X-Google-Token: EI_QrucFZFpnaVVo--w0
+X-Google-IP: 2a02:c7f:b075:4f00:b19c:9290:cda2:3530
+
+------=_Part_618_1302724535.1558947855370
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_619_1536664930.1558947855371"
+
+------=_Part_619_1536664930.1558947855371
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+I want to import all the data in this repo:
+
+https://github.com/openfootball/eng-england
+
+I have created this script in my limited ruby knowledge:
+
+require 'sportdb/models'
+require 'datafile'
+
+DB_CONFIG =3D {
+adapter: 'postgresql',
+encoding: 'unicode',
+username: 'postgres',
+password: 'changeme',
+host: 'localhost',
+database: 'premiership',
+pool: 5,
+timeout: 5000
+}
+
+ActiveRecord::Base.establish_connection( DB_CONFIG )
+
+Dir.chdir "eng-england"
+
+SportDb.create_all
+SportDb.read_builtin
+
+datafile =3D Datafile::Datafile.load_file( "./Datafile" )
+
+datafile.dump
+
+datafile.download ## download zips from github - saved to ./tmp
+datafile.read ## read into / import into sql database
+
+
+
+And here is my Datfile
+
+
+################################################
+# Datafile for England (and Wales)
+#
+#  use (inside the eng-england/ folder)
+#    $ sportdb build
+
+
+
+
+inline do
+  Country.parse 'eng', 'England',  'ENG',  '130_395 km=C2=B2',  '53_013_000=
+'
+  Country.parse 'wal', 'Wales',    'WAL',  '20_779 km=C2=B2',   '3_064_000'
+end
+
+
+football 'eng-england'
+
+
+
+When I run the following sql command against the postgres db:
+
+SELECT min(play_at) from games;
+
+I get this result
+
+2010-08-14 12:00:00
+
+So it is not bringing in any data before 2010.
+
+If I look at a folder for before 2010, e.,g=20
+https://github.com/openfootball/eng-england/tree/master/2002-03
+
+There appear to be different files that post 2010.
+
+What would I need to do, to transform these folders and allow me to bring=
+=20
+in all the data?
+
+------=_Part_619_1536664930.1558947855371
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I want to import all the data in this repo:<br><br><a href=
+=3D"https://github.com/openfootball/eng-england">https://github.com/openfoo=
+tball/eng-england</a><br><div><br></div><div>I have created this script in =
+my limited ruby knowledge:<br><br><div style=3D"color: rgb(212, 212, 212); =
+background-color: rgb(30, 30, 30); font-family: Menlo, Monaco, &quot;Courie=
+r New&quot;, monospace; line-height: 20px; white-space: pre;"><div><span st=
+yle=3D"color: #569cd6;">require</span> <span style=3D"color: #ce9178;">&#39=
+;sportdb/models&#39;</span></div><div><span style=3D"color: #569cd6;">requi=
+re</span> <span style=3D"color: #ce9178;">&#39;datafile&#39;</span></div><b=
+r><div><span style=3D"color: #9cdcfe;">DB_CONFIG</span> =3D {</div><div>  a=
+dapter:  <span style=3D"color: #ce9178;">&#39;postgresql&#39;</span>,</div>=
+<div>  encoding: <span style=3D"color: #ce9178;">&#39;unicode&#39;</span>,<=
+/div><div>  username: <span style=3D"color: #ce9178;">&#39;postgres&#39;</s=
+pan>,</div><div>  password:  <span style=3D"color: #ce9178;">&#39;changeme&=
+#39;</span>,</div><div>  host: <span style=3D"color: #ce9178;">&#39;localho=
+st&#39;</span>,</div><div>  database: <span style=3D"color: #ce9178;">&#39;=
+premiership&#39;</span>,</div><div>  pool:      <span style=3D"color: #b5ce=
+a8;">5</span>,</div><div>  timeout:   <span style=3D"color: #b5cea8;">5000<=
+/span></div><div>}</div><br><div><span style=3D"color: #4ec9b0;">ActiveReco=
+rd</span>::<span style=3D"color: #4ec9b0;">Base</span>.establish_connection=
+( <span style=3D"color: #9cdcfe;">DB_CONFIG</span> )</div><br><div><span st=
+yle=3D"color: #4ec9b0;">Dir</span>.chdir <span style=3D"color: #ce9178;">&q=
+uot;eng-england&quot;</span></div><br><div><span style=3D"color: #4ec9b0;">=
+SportDb</span>.create_all</div><div><span style=3D"color: #4ec9b0;">SportDb=
+</span>.read_builtin</div><br><div>datafile =3D <span style=3D"color: #4ec9=
+b0;">Datafile</span>::<span style=3D"color: #4ec9b0;">Datafile</span>.load_=
+file( <span style=3D"color: #ce9178;">&quot;./Datafile&quot;</span> )</div>=
+<br><div>datafile.dump</div><br><div>datafile.download    <span style=3D"co=
+lor: #6a9955;">## download zips from github - saved to ./tmp</span></div><d=
+iv>datafile.read        <span style=3D"color: #6a9955;">## read into / impo=
+rt into sql database</span></div><br></div></div><div class=3D"prettyprint"=
+ style=3D"background-color: rgb(250, 250, 250); border-color: rgb(187, 187,=
+ 187); border-style: solid; border-width: 1px; overflow-wrap: break-word;">=
+<code class=3D"prettyprint"><div class=3D"subprettyprint"><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify"><br><br></span><span style=3D"colo=
+r: #606;" class=3D"styled-by-prettify">And</span><span style=3D"color: #000=
+;" class=3D"styled-by-prettify"> here </span><span style=3D"color: #008;" c=
+lass=3D"styled-by-prettify">is</span><span style=3D"color: #000;" class=3D"=
+styled-by-prettify"> </span><span style=3D"color: #008;" class=3D"styled-by=
+-prettify">my</span><span style=3D"color: #000;" class=3D"styled-by-prettif=
+y"> </span><span style=3D"color: #606;" class=3D"styled-by-prettify">Datfil=
+e</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br><br><=
+br></span><span style=3D"color: #800;" class=3D"styled-by-prettify">#######=
+#########################################</span><span style=3D"color: #000;=
+" class=3D"styled-by-prettify"><br></span><span style=3D"color: #800;" clas=
+s=3D"styled-by-prettify"># Datafile for England (and Wales)</span><span sty=
+le=3D"color: #000;" class=3D"styled-by-prettify"><br></span><span style=3D"=
+color: #800;" class=3D"styled-by-prettify">#</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify"><br></span><span style=3D"color: #800;" c=
+lass=3D"styled-by-prettify"># =C2=A0use (inside the eng-england/ folder)</s=
+pan><span style=3D"color: #000;" class=3D"styled-by-prettify"><br></span><s=
+pan style=3D"color: #800;" class=3D"styled-by-prettify"># =C2=A0 =C2=A0$ sp=
+ortdb build</span><span style=3D"color: #000;" class=3D"styled-by-prettify"=
+><br><br><br><br><br></span><span style=3D"color: #008;" class=3D"styled-by=
+-prettify">inline</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify"> </span><span style=3D"color: #008;" class=3D"styled-by-prettify">do=
+</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br>=C2=A0=
+ </span><span style=3D"color: #606;" class=3D"styled-by-prettify">Country</=
+span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><spa=
+n style=3D"color: #000;" class=3D"styled-by-prettify">parse </span><span st=
+yle=3D"color: #080;" class=3D"styled-by-prettify">&#39;eng&#39;</span><span=
+ style=3D"color: #660;" class=3D"styled-by-prettify">,</span><span style=3D=
+"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #=
+080;" class=3D"styled-by-prettify">&#39;England&#39;</span><span style=3D"c=
+olor: #660;" class=3D"styled-by-prettify">,</span><span style=3D"color: #00=
+0;" class=3D"styled-by-prettify"> =C2=A0</span><span style=3D"color: #080;"=
+ class=3D"styled-by-prettify">&#39;ENG&#39;</span><span style=3D"color: #66=
+0;" class=3D"styled-by-prettify">,</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify"> =C2=A0</span><span style=3D"color: #080;" class=3D=
+"styled-by-prettify">&#39;130_395 km=C2=B2&#39;</span><span style=3D"color:=
+ #660;" class=3D"styled-by-prettify">,</span><span style=3D"color: #000;" c=
+lass=3D"styled-by-prettify"> =C2=A0</span><span style=3D"color: #080;" clas=
+s=3D"styled-by-prettify">&#39;53_013_000&#39;</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify"><br>=C2=A0 </span><span style=3D"color: =
+#606;" class=3D"styled-by-prettify">Country</span><span style=3D"color: #66=
+0;" class=3D"styled-by-prettify">.</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">parse </span><span style=3D"color: #080;" class=3D"=
+styled-by-prettify">&#39;wal&#39;</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">,</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify"> </span><span style=3D"color: #080;" class=3D"styled-by-pret=
+tify">&#39;Wales&#39;</span><span style=3D"color: #660;" class=3D"styled-by=
+-prettify">,</span><span style=3D"color: #000;" class=3D"styled-by-prettify=
+"> =C2=A0 =C2=A0</span><span style=3D"color: #080;" class=3D"styled-by-pret=
+tify">&#39;WAL&#39;</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">,</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+ =C2=A0</span><span style=3D"color: #080;" class=3D"styled-by-prettify">&#3=
+9;20_779 km=C2=B2&#39;</span><span style=3D"color: #660;" class=3D"styled-b=
+y-prettify">,</span><span style=3D"color: #000;" class=3D"styled-by-prettif=
+y"> =C2=A0 </span><span style=3D"color: #080;" class=3D"styled-by-prettify"=
+>&#39;3_064_000&#39;</span><span style=3D"color: #000;" class=3D"styled-by-=
+prettify"><br></span><span style=3D"color: #008;" class=3D"styled-by-pretti=
+fy">end</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br=
+><br><br>football </span><span style=3D"color: #080;" class=3D"styled-by-pr=
+ettify">&#39;eng-england&#39;</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify"><br><br></span></div></code></div><div><br><br>When I ru=
+n the following sql command against the postgres db:<br><br><div class=3D"p=
+rettyprint" style=3D"background-color: rgb(250, 250, 250); border-color: rg=
+b(187, 187, 187); border-style: solid; border-width: 1px; overflow-wrap: br=
+eak-word;"><code class=3D"prettyprint"><div class=3D"subprettyprint"><span =
+style=3D"color: #000;" class=3D"styled-by-prettify">SELECT min</span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">(</span><span style=3D"=
+color: #000;" class=3D"styled-by-prettify">play_at</span><span style=3D"col=
+or: #660;" class=3D"styled-by-prettify">)</span><span style=3D"color: #000;=
+" class=3D"styled-by-prettify"> </span><span style=3D"color: #008;" class=
+=3D"styled-by-prettify">from</span><span style=3D"color: #000;" class=3D"st=
+yled-by-prettify"> games</span><span style=3D"color: #660;" class=3D"styled=
+-by-prettify">;</span></div></code></div><br>I get this result</div><div><b=
+r></div><div>2010-08-14 12:00:00<br><br>So it is not bringing in any data b=
+efore 2010.<br><br>If I look at a folder for before 2010, e.,g=C2=A0<a href=
+=3D"https://github.com/openfootball/eng-england/tree/master/2002-03">https:=
+//github.com/openfootball/eng-england/tree/master/2002-03</a><br><br>There =
+appear to be different files that post 2010.<br><br>What would I need to do=
+, to transform these folders and allow me to bring in all the data?</div></=
+div>
+------=_Part_619_1536664930.1558947855371--
+
+------=_Part_618_1302724535.1558947855370--
+

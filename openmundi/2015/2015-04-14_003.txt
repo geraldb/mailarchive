@@ -1,0 +1,108 @@
+From 395376066560@xxx Tue Apr 14 12:06:28 +0000 2015
+X-GM-THRID: 387975217152
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,fef09ed28899b008
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+Date: Tue, 14 Apr 2015 05:06:27 -0700 (PDT)
+From: Filipe Sousa <filipe.oliveira.sousa@gmail.com>
+To: openmundi@googlegroups.com
+Message-Id: <65f7489e-c65f-4c91-bf3b-4c815e6dbc21@googlegroups.com>
+In-Reply-To: <6ccb048b-ebeb-41a5-8e92-5c130aff55e0@googlegroups.com>
+References: <6ccb048b-ebeb-41a5-8e92-5c130aff55e0@googlegroups.com>
+Subject: Re: CIA Factbook change the country html
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3999_1610289013.1429013187766"
+X-Google-Token: EMOFtKkFtPI9ppppZ040
+X-Google-IP: 62.48.248.126
+
+------=_Part_3999_1610289013.1429013187766
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4000_1538521997.1429013187766"
+
+------=_Part_4000_1538521997.1429013187766
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+page.rb  seaches for divs that are not in the current HTML of factbook such 
+as:
+
+          [ @opts[:fields] ? 'Introduction'        : 'intro',    '<div 
+id="CollapsiblePanel1_Intro"'   ],
+          [ @opts[:fields] ? 'Geography'           : 'geo',      '<div 
+id="CollapsiblePanel1_Geo"'     ],
+          [ @opts[:fields] ? 'People and Society'  : 'people',   '<div 
+id="CollapsiblePanel1_People"'  ],
+          [ @opts[:fields] ? 'Government'          : 'govt',     '<div 
+id="CollapsiblePanel1_Govt"'    ],
+          [ @opts[:fields] ? 'Economy'             : 'econ',     '<div 
+id="CollapsiblePanel1_Econ"'    ],
+          [ @opts[:fields] ? 'Energy'              : 'energy',   '<div 
+id="CollapsiblePanel1_Energy"'  ],
+          [ @opts[:fields] ? 'Communications'      : 'comm',     '<div 
+id="CollapsiblePanel1_Comm"'    ],
+          [ @opts[:fields] ? 'Transportation'      : 'trans',    '<div 
+id="CollapsiblePanel1_Trans"'   ],
+          [ @opts[:fields] ? 'Military'            : 'military', '<div 
+id="CollapsiblePanel1_Military"'],
+          [ @opts[:fields] ? 'Transnational Issues': 'issues',   '<div 
+id="CollapsiblePanel1_Issues"'  ]
+
+So the resulting data is always empty.
+
+On Tuesday, April 14, 2015 at 12:44:46 PM UTC+1, Filipe Sousa wrote:
+>
+> Hi guys, 
+>
+> It seems that CIA changed the html of the factbook. This gem is not 
+> working anymore.
+>
+>
+>
+------=_Part_4000_1538521997.1429013187766
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br>page.rb&nbsp; seaches for divs that are not in the cur=
+rent HTML of factbook such as:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp; [ @opts[:fields] ? 'Introduction'&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; : 'intro',&nbsp;&nbsp;&nbsp; '&lt;div id=3D"CollapsibleP=
+anel1_Intro"'&nbsp;&nbsp; ],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp; [ @opts[:fields] ? 'Geography'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp; : 'geo',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; '&lt;div=
+ id=3D"CollapsiblePanel1_Geo"'&nbsp;&nbsp;&nbsp;&nbsp; ],<br>&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ @opts[:fields] ? 'People and Soc=
+iety'&nbsp; : 'people',&nbsp;&nbsp; '&lt;div id=3D"CollapsiblePanel1_People=
+"'&nbsp; ],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ @op=
+ts[:fields] ? 'Government'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp; : 'govt',&nbsp;&nbsp;&nbsp;&nbsp; '&lt;div id=3D"CollapsiblePanel1_Go=
+vt"'&nbsp;&nbsp;&nbsp; ],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp; [ @opts[:fields] ? 'Economy'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 'econ',&nbsp;&nbsp;&nbsp;&nbsp; '&lt;d=
+iv id=3D"CollapsiblePanel1_Econ"'&nbsp;&nbsp;&nbsp; ],<br>&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ @opts[:fields] ? 'Energy'&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 'ene=
+rgy',&nbsp;&nbsp; '&lt;div id=3D"CollapsiblePanel1_Energy"'&nbsp; ],<br>&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ @opts[:fields] ? 'Com=
+munications'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 'comm',&nbsp;&nbsp;&nbsp;&nbsp=
+; '&lt;div id=3D"CollapsiblePanel1_Comm"'&nbsp;&nbsp;&nbsp; ],<br>&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ @opts[:fields] ? 'Transport=
+ation'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 'trans',&nbsp;&nbsp;&nbsp; '&lt;div =
+id=3D"CollapsiblePanel1_Trans"'&nbsp;&nbsp; ],<br>&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ @opts[:fields] ? 'Military'&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 'military', '&lt;div i=
+d=3D"CollapsiblePanel1_Military"'],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; [ @opts[:fields] ? 'Transnational Issues': 'issues',&nbs=
+p;&nbsp; '&lt;div id=3D"CollapsiblePanel1_Issues"'&nbsp; ]<br><br>So the re=
+sulting data is always empty.<br><br>On Tuesday, April 14, 2015 at 12:44:46=
+ PM UTC+1, Filipe Sousa wrote:<blockquote class=3D"gmail_quote" style=3D"ma=
+rgin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">=
+<div dir=3D"ltr">Hi guys, <br><br>It seems that CIA changed the html of the=
+ factbook. This gem is not working anymore.<br><br><br></div></blockquote><=
+/div>
+------=_Part_4000_1538521997.1429013187766--
+
+------=_Part_3999_1610289013.1429013187766--
+

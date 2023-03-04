@@ -1,0 +1,91 @@
+From 6565708156298592256@xxx Mon Jun 11 06:20:57 +0000 2018
+X-GM-THRID: 6565708157973168128
+X-Received: by 2002:a5e:8703:: with SMTP id y3-v6mr7295944ioj.1.1528698056902;
+        Sun, 10 Jun 2018 23:20:56 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a6b:84ea:: with SMTP id o103-v6ls1775637ioi.23.gmail; Sun,
+ 10 Jun 2018 23:20:56 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKJ8SUvw2Xu+lZ+mM/2xGVc58jpCMVS6/gXUDqpJivi32FRqevsTRgGM2w9DNHzIuC4kCSRh
+X-Received: by 2002:a6b:5f15:: with SMTP id t21-v6mr7682362iob.124.1528698056275;
+        Sun, 10 Jun 2018 23:20:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1528698056; cv=none;
+        d=google.com; s=arc-20160816;
+        b=KmSwkS7XvCS7CESAIODGQCoWbGvGYYFbqdqbbA4HAxeltZTy9gx6gjlYMolLI228Hc
+         1FmQT/wUmr1FTHg0UIQ9K+84iVMw7kKg8OmLkf1gl5a81oUQ6Zqs4nIqraXLUwLlZC8W
+         FYGXUQ47uQ34SDJxPY8qjGjpOze9LgNWEql8Wj2fcSM9vigyUGEABwEI6ZDgPcaDzV0D
+         Qjk2WY4lv/9hTaTTttMaG2YY2jCH8+s1w6yNz/5m0d/sJpmEJ5ErUklUaRSe7qsKpL35
+         VFrsJ1Q7z1UkykiVwLHKxsR7FpJ6uR6wqkZ5tdo+oW2UvI5YHaRaJGiXr5i1Ho22/V3T
+         fx3g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=qyQWX++izHaxBuSIlOZgTOoy1d6srOglwvQKjk4NMEg=;
+        b=gW32thbb8NRh7WbSplQJsy4cpJlLU/KJVB95quFVs1mDidlBn8PaT+qZuK8X/yjIyw
+         3P+ey1X3ZgSgRjwQlcfsG7XwP2iUIsnbZsaeLClhomdQP2C9MWD5kazJA1IiLi0maNiY
+         QnyqlmM5uo5AWUtrDS+IruBwbSldpB6DSFruNQ0IAWCEHjxoH0ddq4/mtlwzY1McYjBk
+         blflbAh5xKJTc5Xw9anf0rvyYQbRs3XU64csPJHl5dO4P4q7d2jFIHipiToYxwe57A7Y
+         raMRGhWPvEuETWyQXHVwJmT2PEqY56YnMzR9mC0z47jMNd7oKMA1y70KSw1b/tOORi6l
+         aVjA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=bj8aPkaS;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x234.google.com (mail-io0-x234.google.com. [2607:f8b0:4001:c06::234])
+        by gmr-mx.google.com with ESMTPS id k12-v6si2644687ioc.1.2018.06.10.23.20.56
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 10 Jun 2018 23:20:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::234 as permitted sender) client-ip=2607:f8b0:4001:c06::234;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=bj8aPkaS;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x234.google.com with SMTP id k3-v6so8557445iog.3
+        for <opensport@googlegroups.com>; Sun, 10 Jun 2018 23:20:56 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=qyQWX++izHaxBuSIlOZgTOoy1d6srOglwvQKjk4NMEg=;
+        b=bj8aPkaSgSVgRvmx2A1RS9ZfUhg7qvsPoreg58hNUU5mj7nZX+h4L6ln9jgaIadgA3
+         +tekDyHBCo4p5LopBrxHLDMtOyd2jKloVqmtsP57+ERXciwmoLvLCshwhWVOtMJefHel
+         zEfJrTeIZoeCpXg0eCyA5yf7rk9l1C9gXdM3C0Ep8XiI6zZT0LYeKfvvKmeB/LLeWB4J
+         30CBZOoZP1zFwg1/ij9r4y6No0l5GsRu+D5Cy2uMQlt9SElnx3sgyPFwakWHq1gouVoS
+         F2Q30RNRTGK6yYcFVd6t+Yc3voOwmAP+KSlGa9fdhs6pi8+q+PG6zPoSySNhg3phAkaw
+         JDpQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=qyQWX++izHaxBuSIlOZgTOoy1d6srOglwvQKjk4NMEg=;
+        b=bpfLy5cksqscZV7qz29RrbxecqJUIgvo9nUvIhHqOX/eGu1iSTVfBFbEbUWPc4lGDo
+         Px6/JlgcWO3c7p0LmvRqi1Qwha9bUBXHHK+MSWiF5kDtuL2wpJin1Bh1zW0V0aIDwCEh
+         Lnem1NKrgypn8/0M2hls8Aaj0UFlNQUuMvqEjnmwqU+DqBnEmPBve0VuFm37C6nzMVIr
+         AnVTRUjBsZJofgjK1NQmtDfk7R8gXTe70pa4dvDkP7iUb8O2V/UYZEdhRYxO2f8cAQbn
+         6viaYPQn8mBKB/2iK+9pXqU+qEZkO0gNGnVTGvmh4L2zkkbx8AJgvmc3Lh8UBUhFC8jb
+         /Itg==
+X-Gm-Message-State: APt69E0svmFJAFuxL7EK4DrblTJCqUFKM0TX2ayvlNnT62zv9VDiZ3y+
+	RSQKFmdBRP0Pz/VuPNPIcekrlChDIO7S2wgNJTVNug==
+X-Received: by 2002:a6b:988f:: with SMTP id a137-v6mr12654235ioe.212.1528698055706;
+ Sun, 10 Jun 2018 23:20:55 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a6b:d90:0:0:0:0:0 with HTTP; Sun, 10 Jun 2018 23:20:55 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 11 Jun 2018 08:20:55 +0200
+Message-ID: <CAAxEZd-Po-VNUDAGr52FpNNsdF2DYdiaEZMkcSnAyuRjwSs4=A@mail.gmail.com>
+Subject: European Champions League Update - First Timers Welcome - Help Wanted
+ - Yes, You Can
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   Over the next days I will try to update the datasets for the
+Champions League [1] trying to add the missing 2016/17 and 2017/18
+season.
+
+    Any help appreciated. Yes, you can. First timers more than welcome.
+
+    Cheers. Prost.
+
+[1] https://github.com/openfootball/europe-champions-league
+

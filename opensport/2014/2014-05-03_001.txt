@@ -1,0 +1,62 @@
+From 576492404736@xxx Tue Jun 16 00:17:12 +0000 2015
+X-GM-THRID: 576090800128
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,1dfcb5d52af9ce51,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.8.66 with SMTP id p2mr4239laa.10.1399114336224;
+        Sat, 03 May 2014 03:52:16 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.3.168 with SMTP id d8ls22231lad.108.gmail; Sat, 03 May
+ 2014 03:52:15 -0700 (PDT)
+X-Received: by 10.152.5.170 with SMTP id t10mr194795lat.4.1399114335864;
+        Sat, 03 May 2014 03:52:15 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22b.google.com (mail-wi0-x22b.google.com [2a00:1450:400c:c05::22b])
+        by gmr-mx.google.com with ESMTPS id ck4si73000wib.1.2014.05.03.03.52.15
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 03 May 2014 03:52:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22b as permitted sender) client-ip=2a00:1450:400c:c05::22b;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22b as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f171.google.com with SMTP id hm4so3497750wib.16
+        for <opensport@googlegroups.com>; Sat, 03 May 2014 03:52:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=nKAZ5TMgAcohQhwW2SjWeEBP3NZGSKscCKLsB0R7J5I=;
+        b=PZX5i05/SkM87pKWuapk2+G0Mfkv6Z4U+8eXvI9A0t5V0zA+IBQfLLy/DODR9InvTT
+         NItkPZZ1wkPSP4jA/TjWoq9exzp85gNLcruohCbc5d4ChYkSXhky0vx13J2QEevIJ61M
+         ASFNsohUkilF8kt0l4fpCftqL2ugs1/gke/l6W7S+nfWRxAwQpkMbZ0r8FXvifV+Q8rb
+         krLq7Iw9HEdG2ZQm8FRsNLE+3WrqE26S/cnk3q9miOQjRGfbmjnURWfSUJdi0jfbgxqP
+         L1FYp1vHxQMpjxa2rWWNN9P8gLqd0lRuUE8xyVUw2tGEf/y2g1BQ/kRu1L2mlA7H596O
+         jQXQ==
+MIME-Version: 1.0
+X-Received: by 10.194.48.80 with SMTP id j16mr18179065wjn.44.1399114335625;
+ Sat, 03 May 2014 03:52:15 -0700 (PDT)
+Received: by 10.216.189.196 with HTTP; Sat, 3 May 2014 03:52:15 -0700 (PDT)
+Date: Sat, 3 May 2014 12:52:15 +0200
+Message-ID: <CAAxEZd_poSAOxZd01xiJNDDshX=1VftVQSJaU_id3YPoKdpd3Q@mail.gmail.com>
+Subject: All Football World Cups (Uruguay 1930, Italy 1934, France 1938,
+ Brazil 1950, etc.)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've added folders for all twenty world cups and I started
+adding all matches for Uruguay 1930, Italy 1934, France 1938 and
+Brazil 1950 [1].
+
+  Note: I moved the Confederations Cup data sets to its own repo, that
+is, confed-cup [2].
+
+   Cheers.
+
+[1] github.com/openfootball/world-cup
+[2] github.com/openfootball/confed-cup
+

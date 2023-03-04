@@ -1,0 +1,83 @@
+From 834793373696@xxx Tue Jun 16 00:17:06 +0000 2015
+X-GM-THRID: 830560272384
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,e7981ce49cae0dd7
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.148.10 with SMTP id to10mr13063723pab.12.1401192457464;
+        Tue, 27 May 2014 05:07:37 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.107.247 with SMTP id h110ls3173387qgf.44.gmail; Tue, 27
+ May 2014 05:07:37 -0700 (PDT)
+X-Received: by 10.140.106.67 with SMTP id d61mr612qgf.41.1401192457221;
+        Tue, 27 May 2014 05:07:37 -0700 (PDT)
+X-Google-Doc-Id: 24cddf65119aaea1
+X-Google-Web-Client: true
+Date: Tue, 27 May 2014 05:07:36 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <0d7c3e02-7929-408f-a291-890902aa30b6@googlegroups.com>
+In-Reply-To: <9deba4b4-1692-452a-acbf-b1580d3acac3@googlegroups.com>
+References: <9deba4b4-1692-452a-acbf-b1580d3acac3@googlegroups.com>
+Subject: Re: kickoff times / api data updates
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_301_24166097.1401192456669"
+X-Google-Token: EIiAkpwFMMeQBD4LISE0
+X-Google-IP: 193.110.28.9
+
+------=_Part_301_24166097.1401192456669
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_302_16760407.1401192456669"
+
+------=_Part_302_16760407.1401192456669
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  Thanks for your interest in football.db.
+
+> - in the example (http://footballdb.herokuapp.com/) are the 
+kickoff-times. also in cup.txt 
+> (
+https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt). 
+how can i get them through the API? is that 
+> possible?
+
+  The API is document here -> github.com/openfootball/api  or  use the 
+source -> github.com/geraldb/sport.db.api.starter
+
+>- i want to host the api by myself. so i build the DB and started it with 
+"sportdb -n football.db serve". whats the best way to
+> update the db? writing a script to pull the new data from the repos and 
+building them? or is something like this implemented
+> in the sportdb command?
+
+   I'd recommed updating with the build script (e.g. rake update 
+DATA=worldcup), for example Use what works for you. Good luck. Cheers.
+
+------=_Part_302_16760407.1401192456669
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<div><br></div><div>&nbsp; Thanks for your interest =
+in football.db.</div><br>&gt;&nbsp;- in the example (<a href=3D"http://foot=
+balldb.herokuapp.com/">http://footballdb.herokuapp.com/</a>) are the kickof=
+f-times. also in cup.txt&nbsp;<div>&gt; (<a href=3D"https://github.com/open=
+football/world-cup/blob/master/2014--brazil/cup.txt">https://github.com/ope=
+nfootball/world-cup/blob/master/2014--brazil/cup.txt</a>). how can i get th=
+em through the API? is that&nbsp;</div><div>&gt; possible?</div><div><br></=
+div><div>&nbsp; The API is document here -&gt; github.com/openfootball/api =
+&nbsp;or &nbsp;use the source -&gt;&nbsp;github.com/geraldb/sport.db.api.st=
+arter<br><br>&gt;- i want to host the api by myself. so i build the DB and =
+started it with "sportdb -n football.db serve". whats the best way to</div>=
+<div>&gt; update the db? writing a script to pull the new data from the rep=
+os and building them? or is something like this implemented</div><div>&gt; =
+in the sportdb command?</div><div><br></div><div>&nbsp; &nbsp;I'd recommed =
+updating with the build script (e.g. rake update DATA=3Dworldcup), for exam=
+ple Use what works for you. Good luck. Cheers.</div></div>
+------=_Part_302_16760407.1401192456669--
+
+------=_Part_301_24166097.1401192456669--
+

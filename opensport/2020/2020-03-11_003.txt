@@ -1,0 +1,71 @@
+From 6802922666284023808@xxx Wed Mar 11 12:14:23 +0000 2020
+X-GM-THRID: 6802922667939725312
+Date: Wed, 11 Mar 2020 05:14:23 -0700 (PDT)
+From: Jerry Brown <jjbrownhhr@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <6c4ba349-d504-4dab-8309-d110d781aa50@googlegroups.com>
+Subject: Club missing when using footballdata
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_625_931468257.1583928863438"
+X-Google-Token: EJ-so_MFg2xMqrWBl6k0
+X-Google-IP: 67.209.188.50
+
+------=_Part_625_931468257.1583928863438
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_626_170973551.1583928863438"
+
+------=_Part_626_170973551.1583928863438
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi all.
+When trying to convert IRL.csv file into sqlite using the following 
+code(from footballdata 
+<https://github.com/yorobot/football.csv/tree/master/sportdb-source-footballdata>
+): 
+
+## build database schema / tables
+SportDb.create_all
+
+## turn on logging to console
+ActiveRecord::Base.logger = Logger.new(STDOUT)
+## no ie
+Footballdata.import
+
+it said "!!! *** ERROR *** no matching club found for >Cabinteely< - add to 
+clubs setup".
+
+And this club cannot be found in 
+https://github.com/sportdb/sport.db/blob/master/footballdb-clubs/config/clubs.txt
+.
+
+
+P.S. There are some club name errors in other CSV files.
+In SWE.csv, "Brage" should be "IK Brage".
+In USA.csv, "Atlanta Utd" should be "Atlanta United".
+
+------=_Part_626_170973551.1583928863438
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi all.<div>When trying to convert IRL.csv file into sqlit=
+e using the following code(from <a href=3D"https://github.com/yorobot/footb=
+all.csv/tree/master/sportdb-source-footballdata">footballdata</a>):=C2=A0</=
+div><div><br></div><div><div>## build database schema / tables</div><div>Sp=
+ortDb.create_all</div><div><br></div><div>## turn on logging to console</di=
+v><div>ActiveRecord::Base.logger =3D Logger.new(STDOUT)</div><div>## no ie<=
+/div><div>Footballdata.import</div></div><div><br></div><div>it said &quot;=
+!!! *** ERROR *** no matching club found for &gt;Cabinteely&lt; - add to cl=
+ubs setup&quot;.</div><div><br></div><div>And this club cannot be found in=
+=C2=A0<a href=3D"https://github.com/sportdb/sport.db/blob/master/footballdb=
+-clubs/config/clubs.txt">https://github.com/sportdb/sport.db/blob/master/fo=
+otballdb-clubs/config/clubs.txt</a>.</div><div><br></div><div><br></div><di=
+v>P.S. There are some club name errors in other CSV files.</div><div>In SWE=
+.csv, &quot;Brage&quot; should be &quot;IK Brage&quot;.</div><div>In USA.cs=
+v, &quot;Atlanta Utd&quot; should be &quot;Atlanta United&quot;.</div></div=
+>
+------=_Part_626_170973551.1583928863438--
+
+------=_Part_625_931468257.1583928863438--
+

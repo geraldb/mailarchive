@@ -1,0 +1,89 @@
+From 6213610250623254528@xxx Thu Nov 05 10:21:14 +0000 2015
+X-GM-THRID: 6213610254213578752
+X-Received: by 10.31.159.209 with SMTP id i200mr5516322vke.14.1446718874072;
+        Thu, 05 Nov 2015 02:21:14 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.107.202 with SMTP id h68ls1347911qgf.63.gmail; Thu, 05 Nov
+ 2015 02:21:13 -0800 (PST)
+X-Received: by 10.13.230.14 with SMTP id p14mr5554908ywe.2.1446718873777;
+        Thu, 05 Nov 2015 02:21:13 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x234.google.com (mail-ig0-x234.google.com. [2607:f8b0:4001:c05::234])
+        by gmr-mx.google.com with ESMTPS id f7si1497055igc.0.2015.11.05.02.21.13
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 05 Nov 2015 02:21:13 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::234 as permitted sender) client-ip=2607:f8b0:4001:c05::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x234.google.com with SMTP id hv6so7722885igb.0
+        for <openmundi@googlegroups.com>; Thu, 05 Nov 2015 02:21:13 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=dNbCzOd8LJrVd5RhmehoVJi5R9wrJi4fSqYfetn4FN8=;
+        b=xVmXTl+OsbJr0cRDag7kMq+eipuEqTxjMbMWr+M7KNKTd/XZa35RKUZVdG44oGlGBD
+         p6P3FCH11/X38sPsd0W18FoD98oJYWnoF+VFy/mDNdH9j1RySE8Qe9ipN5zU36IPAgMF
+         bFgz4OZRvKlUiASdcWp/zzUAfkjFJzvilqPBXifsb+Tu3ou067ULTKzGBSfoj4Zba/D9
+         o529V6v5wS08wXQv1hpKwmPhrLj7OfQ4TRIXZR9dnvznnGsg3S3lm89KNFffdlyGVUXD
+         yVbtjXO1CywngRwcTcbb69FuqnlN9t5HBmo8TTx3A4cHW1+PkhzP461IhWlJAOfpnKQ5
+         z3gA==
+MIME-Version: 1.0
+X-Received: by 10.50.122.106 with SMTP id lr10mr1932724igb.86.1446718873595;
+ Thu, 05 Nov 2015 02:21:13 -0800 (PST)
+Received: by 10.107.138.29 with HTTP; Thu, 5 Nov 2015 02:21:13 -0800 (PST)
+Date: Thu, 5 Nov 2015 11:21:13 +0100
+Message-ID: <CAAxEZd-1QcUEikn_JMsgPUNVzd_w7O-_X+f0iE6tT-TpALQFSw@mail.gmail.com>
+Subject: World Factbook - meta/categories.json - Count(er) of All Categories
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   If anyone follows along I've added a new meta/catgories.json [1]
+file to the /factbook.json repo.  Why?
+
+   The new meta/categories.json lets you browse / analyze the world
+factbook structure in all its glory. Example:
+
+  "Introduction": {
+    "count": 261,
+    "Background": {
+      "count": 261,
+    },
+    "Preliminary statement": {
+      "count": 1
+    }
+  },
+  "Geography": {
+    "count": 261,
+    "Location": {
+      "count": 260,
+    }, ...
+
+  For example, this reads as:
+
+  - 261 profiles (pages) have an Introduction section.
+ -  261 profiles (pages) have a Background section in Introduction.
+ -   1 profile (page) has a Preliminary statement section in Introduction.
+ -  261 profiles (pages) have a Geography section.
+  - 260 profiles (pages) have a Location section in Geography.
+  and so on.
+
+  The file includes all "extra" custom sections including typos e.g.:
+
+"Languages": {
+      "count": 241,
+      "note": { "count": 60 },
+      "ntoe": { "count": 1 },
+     "overseas departments": { "count": 1 },
+     ...
+
+   Cheers.
+
+[1] github.com/factbook/factbook.json/blob/master/meta/categories.json
+

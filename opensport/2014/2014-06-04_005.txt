@@ -1,0 +1,58 @@
+From 1035905007616@xxx Tue Jun 16 00:17:04 +0000 2015
+X-GM-THRID: 1033654763520
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,28d3412620afa233
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.211.234 with SMTP id nf10mr358511wic.1.1401872196458;
+        Wed, 04 Jun 2014 01:56:36 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.99.166 with SMTP id er6ls230148wib.22.canary; Wed, 04 Jun
+ 2014 01:56:36 -0700 (PDT)
+X-Received: by 10.180.211.234 with SMTP id nf10mr358509wic.1.1401872196129;
+        Wed, 04 Jun 2014 01:56:36 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22f.google.com (mail-we0-x22f.google.com [2a00:1450:400c:c03::22f])
+        by gmr-mx.google.com with ESMTPS id eh2si460946wib.2.2014.06.04.01.56.36
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 04 Jun 2014 01:56:36 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22f as permitted sender) client-ip=2a00:1450:400c:c03::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x22f.google.com with SMTP id p10so7971361wes.6
+        for <opensport@googlegroups.com>; Wed, 04 Jun 2014 01:56:36 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=HLgXinQzFpfPv/vOE9/8kfM3g5Olr5FawsZBQaHo99s=;
+        b=enfc2FNgLBVXMMX1171zWk/pGRMPWnyc7afW6AIDdtp/MdojFm7VYH+0U9tWs09yvr
+         ZVDah3a5ud1j30jGjQ/C4mHr+x+8WzVde1nIgMhXwsy3tYxrWOjuUoJOLTpVp+ItLaVl
+         o2NAcFN1x9sPPqVSI/xdjYlD85PWlqmjv7Md1Mew9PKrMsrQNisSam9AC/CKG01EX2Qq
+         QUWcfd4jI+MfUV/qTV7VR3ldm5ZknWNqov/rATuFymaynThvDd7ZjkrQpx2dtycGuA2k
+         LE6t58siT2cx7XT63jQpPuzBaapxsH0k/a2n+TE6P49xTx0XIfG4qsWcyyfJqk6ROpDP
+         F4wQ==
+MIME-Version: 1.0
+X-Received: by 10.194.62.104 with SMTP id x8mr68614197wjr.15.1401872196065;
+ Wed, 04 Jun 2014 01:56:36 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Wed, 4 Jun 2014 01:56:36 -0700 (PDT)
+In-Reply-To: <8d1f86e7-4d88-4bfc-9043-b906f835bc86@googlegroups.com>
+References: <8d1f86e7-4d88-4bfc-9043-b906f835bc86@googlegroups.com>
+Date: Wed, 4 Jun 2014 10:56:36 +0200
+Message-ID: <CAAxEZd99JF8M87A=cSgCyYnjVr_fLTHD3q4VNF-yaq9E85usmw@mail.gmail.com>
+Subject: Re: [opensport] Want to access groups, match time stamp
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Sorry. No magic. You have to add the missing parts yourself. Just a
+couple of lines in Ruby or start a new service in your language of
+choice. To get started see the sport.db.api.starter kit [1]. Good
+luck. Cheers.
+
+[1] github.com/geraldb/sport.db.api.starter
+

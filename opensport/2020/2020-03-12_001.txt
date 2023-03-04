@@ -1,0 +1,110 @@
+From 6803372570784563200@xxx Thu Mar 12 17:20:15 +0000 2020
+X-GM-THRID: 6802922667939725312
+X-Received: by 2002:a19:c3d8:: with SMTP id t207mr5817814lff.44.1584033614923;
+        Thu, 12 Mar 2020 10:20:14 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a2e:8647:: with SMTP id i7ls1285612ljj.11.gmail; Thu, 12 Mar
+ 2020 10:20:13 -0700 (PDT)
+X-Google-Smtp-Source: ADFU+vu96ig6IEufrhif6J4MeLmBHdP5CfzsImXYqNB3OVD69uMD/f0LSCqS00SSNFBO7Vn+Nn3v
+X-Received: by 2002:a2e:90d1:: with SMTP id o17mr2014670ljg.284.1584033613795;
+        Thu, 12 Mar 2020 10:20:13 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1584033613; cv=none;
+        d=google.com; s=arc-20160816;
+        b=p8yNT+LuK5mS0/Gb/+WCme2IwG5GkDTJbcnUY2FPnHd6MEJQ7Kf8Y3pC1jl3CaDTJx
+         undXvH/ixLg/23A/cWWF2opQ2mDFbUuJxBHyUYrv7sXtESSN4j52UBOZ/ywot892bAUf
+         UW+RaC1LfRsN3pVOJOSRkNZSs58V41zUB3l9PaIhP68a/wS2S98IJBJRfJMaBU++dKZd
+         8Lu9bxVckY9DyowZB6dR97vCB7dILq5CA9ukVB2HLG+l8z2+wVInBqb1ytB+jcXt1JJY
+         vlPgRInrHZOvgWfpss3mLGqZ2QUukwIdXkRqLQd29e6a9e8eaLon1rbuyMSFR+Z8tzBQ
+         t+Zw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=/PutrrzagV6cR0bRTWjq0jaruZtPbfMfib+kEgsRtxs=;
+        b=EMhbgbZrFBt1zwHv/nfaH9LoLgrpYiA2MMPLEZGe3fqqBDwh1qyT/1vFCpHKf2sevt
+         7B4wF/p0oiu/tohbcJAI4MqKPp9pJ3BZ3qNw+qfGEht6tT/rzecd/4qdUT7/GiUUJjk0
+         Z9fCbYCpq4oAbuEOxdy0eZxm8oeSvUYWgAOPNRwGFcwPl0m8vIV3Ti6vHa4yeBi5BaGt
+         4CiE4sqea+nAklGSi0py0n0ljfF1QCd5noEDnWIwY0TfmORVp/hFnfgNEhDJUJmZLcJI
+         KVzOVoePJ6dywEXbl9JQLlW74qeilONq1rkI3VCfD3+l105kuxdz8ARu5TsMLZsu+TDx
+         P5IA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=CSJPbpIV;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x236.google.com (mail-lj1-x236.google.com. [2a00:1450:4864:20::236])
+        by gmr-mx.google.com with ESMTPS id t3si333845lfq.5.2020.03.12.10.20.13
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 12 Mar 2020 10:20:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::236 as permitted sender) client-ip=2a00:1450:4864:20::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=CSJPbpIV;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x236.google.com with SMTP id q19so7307458ljp.9
+        for <opensport@googlegroups.com>; Thu, 12 Mar 2020 10:20:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=/PutrrzagV6cR0bRTWjq0jaruZtPbfMfib+kEgsRtxs=;
+        b=CSJPbpIV4a+xONiBGddj4amowHHeZ6Um4WX+kp4xOgXdexwUBPnwrCPRfb6nTd8LKa
+         leVAwM9+W8TsEwzAgW1oQYziMNVydhJ0g6HMfEt2UoB0DwoG/di9nIChnKRq2mWa5IYd
+         omjtbCN4MQzWijGoL7V+2Dr0rpFcKsXxfZzK031IAcLQvpS67t3BTrFiXYY8s0Bew79d
+         wG+fRfWvj9hM7wrOSW97aBQCyce3rGkWZguTwC+ZXKpADA95mYaHWw+gG+9b8+Je9FoW
+         0BkLZGISE41chDgwCB791IQ0qxL7DD5dGhDOfA2GXy1nXtfLdwP73kz2vro4E9+qS8kh
+         4Cjg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=/PutrrzagV6cR0bRTWjq0jaruZtPbfMfib+kEgsRtxs=;
+        b=q+ByxfKnKPxXNc2N7bHo52uSzi3b5gg2h60LDramV++BKoODZgHfNX9bqHnn+e683N
+         4scWyJSWmw2dYUx5Jkl073ECN+NkHFqJZGmLDyl7pfYg2jwl6ul85yL9cOh2RBGq7WP7
+         Dn6GdEZtzSYHyjInsvmlJzwI8PC7pQuoAtDtRHCw5XXd9C8xC5Cd9NHHmC2UCju3KnKn
+         SSUmVSGa59Bqbs2OZ+4GqmWjulZws/MQdkMZk2ghDygo/+8MG+7YXgODWGx4UpdwRHQs
+         crVyA+uFIV01tFM/acXAUu19KqVbgEpK2FpSq7nOI93vPnxBh1N1APWxRtlozQC/h6Vn
+         tR+g==
+X-Gm-Message-State: ANhLgQ0Uzzkxd4bULY09YvTwe4jL+zwd7yrkc/FqRvQcDkf1IxJ6ONNQ
+	J1yAnGBvyBwIMXe0UJEwKUug9DzDq9sNOFtwO0XVNWaZ
+X-Received: by 2002:a2e:9852:: with SMTP id e18mr2968611ljj.249.1584033613067;
+ Thu, 12 Mar 2020 10:20:13 -0700 (PDT)
+MIME-Version: 1.0
+References: <6c4ba349-d504-4dab-8309-d110d781aa50@googlegroups.com>
+ <89af49f4-60e2-4c06-9cd8-dbd580ad93da@googlegroups.com> <CAAxEZd9qU+3HjBVbjxFZ+rqR5Q7OO-keWCsff+DdaaaLHem4jw@mail.gmail.com>
+ <60c6e67e-d685-4b08-b9fb-1dbab36e8bb0@googlegroups.com>
+In-Reply-To: <60c6e67e-d685-4b08-b9fb-1dbab36e8bb0@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 12 Mar 2020 18:20:01 +0100
+Message-ID: <CAAxEZd-CjavqPmj0DxNb8EoOzKo0jNNtROPkEaN_cbhwbc4SPA@mail.gmail.com>
+Subject: Re: [opensport] Re: Club missing when using footballdata
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   Yes, sorry the /clubs repo might be (always) be a little ahead -
+you can easily check since the packaged footballdb-clubs version is
+the actual date e.g. the latest version is v2019.12.19  (2019 Dec/19).
+
+    Thanks for the update / patch.
+
+    For future reference you do NOT need to change / edit the READMEs
+- this files get auto-generated. Only the .txt files are the source
+(sorry for any confusion or missing documentation on updates).
+
+   About testing:
+
+    You can download a copy of the /clubs repo and than change your
+script and use:
+
+ ## use (switch to) "external" datasets
+ SportDb::Import.config.clubs_dir   = "./clubs"
+
+   Yes, it should be that easy to use the up-to-date "external" datasets.
+
+   Cheers. Prost.
+
+PS:  FC FC Voluntari - that looks like a typo? Is this really the
+misspelled name in the csv file (footballdata.uk) for the Romanian
+club?
+

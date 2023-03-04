@@ -1,0 +1,95 @@
+From 6827540476613099520@xxx Sat May 16 20:24:04 +0000 2020
+X-GM-THRID: 6827540475506851840
+X-Received: by 2002:a2e:85d1:: with SMTP id h17mr6036310ljj.70.1589660643867;
+        Sat, 16 May 2020 13:24:03 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a2e:3208:: with SMTP id y8ls885591ljy.6.gmail; Sat, 16 May
+ 2020 13:24:02 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzW7f+v3+1i5ESM/M5e8bac9BH5/EQyISR/YEeZNRAOF3jEOsYjJ4Q4KEMm0ozdA4SvxAFT
+X-Received: by 2002:a2e:b4e3:: with SMTP id s3mr5816861ljm.11.1589660642744;
+        Sat, 16 May 2020 13:24:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1589660642; cv=none;
+        d=google.com; s=arc-20160816;
+        b=xvYuUgYEyD8MUth+DtLpeXKhTo8x9UZqVzI3lw2IU/eD+phVBEIO+NRrey8uLakjKi
+         XY3A2uE6Sj8AEsUG+To18sK79NCjvi2YZ0ZmwiIQRp3jcaDXl9hv3gshFpndzYEBnNQF
+         my78kvDuutSezAMQUQY7lC7b0AsFE2LHff82l8EQd2GtlKUxhPfd5ckN9vJwNp3C6TMn
+         XgX+fQjbjRdLF/IosU5WPWMG9QEgQCd+KKF0B1aJOPmkrK/AeCwOWSEpgInIW8YOsZjC
+         YiJ28+Hr1y90ErgErC4xydCJE1yvNg+A3QQuDybK9N/+iq/Xr1fzhX1gAkI4OnKqojXC
+         2vRA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=CTvNVs9ZFGWgB6Dlau8kwamKSpouINv4PLAAexL3TKA=;
+        b=rH9FsFGeWp+rn/gx13y7BYQd46oBL4cK0+mygDYw3RlfgHO3g4mbaaWLrTdQmDMAON
+         1F+8dqiDn9/wvBAMa8PFBzz6dg/EQJBCUJz8EYdhGxg/imr3qi9UXugecl3vZPRN1src
+         AkEoH0hzBJdE1RXSqwEgtiaxXRF3UAy768VsJUgfgsWhE8atr1pdzXDhhF0KtviHTMu7
+         IQ7FBWclim6HKKUrwgzbGVc9vqaJGpCsLSKj0g+51QNFyJ39N0KWepgk9ZEaNPujRj/9
+         ykn56O1Q4SPqCPucVDAhLjSRS2O/MtPYHXDNkEz+pLR3h/SlZvCet+iNrr1OCWk98ELF
+         B41A==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=MieNK0Vi;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22c.google.com (mail-lj1-x22c.google.com. [2a00:1450:4864:20::22c])
+        by gmr-mx.google.com with ESMTPS id q24si460648ljg.4.2020.05.16.13.24.02
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 16 May 2020 13:24:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) client-ip=2a00:1450:4864:20::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=MieNK0Vi;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22c.google.com with SMTP id e25so5804246ljg.5
+        for <opensport@googlegroups.com>; Sat, 16 May 2020 13:24:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=CTvNVs9ZFGWgB6Dlau8kwamKSpouINv4PLAAexL3TKA=;
+        b=MieNK0Vi0d7Aynj2+K6vCfUGbrBOmHUGLHUxVHCt8uVHjAOBUwbp17zZ0pGL5iDzl4
+         SgamhrKB4xaGBqNRmi8LpT63DnU8u79Seogv/Y00IR7xqOlGmoDJQf5rowKO0q6c54ba
+         xVXB81XwM8/XPe5y0IF5ji6pYqiGMRimMrOgv66sbd60aQI3rPIUmhvcXclLAKVFPC4L
+         Hxu+RWnX1lWf983zuqAnd01gDVLpCaCAlAq+wazvZhk9+Qr0aHmhWSK0stozUof1nztF
+         uDmxXYZuOccxDdbMAG2CgNaNGXtxzhoJ3cEyQRTnvspThoq/WRV8GtOhLZdOA7wkBDW2
+         HPlQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=CTvNVs9ZFGWgB6Dlau8kwamKSpouINv4PLAAexL3TKA=;
+        b=hOxD3rPrlML5sb8ID/rGvD1yskloiFYo95uZwfo7rYPoVpEc6vKv5PdP+q0NqGWyWh
+         qij7u2qIsR8nKye1bxo5nMl1eEz8u5F0KdZFP4GhpwuOW0mmYMAKZvF0TdzIzQGo1Apu
+         enNig9bKdyFLEsmIaHen2yLg8ERHPsy2eknJVFK29mGpWdGKSBCCI/oK3gVm7o2G+Mvj
+         pqmOKySgymtwMMXKoVwCiODRcjEdzM7Y/s62vzYNyVou7HjLGilvyam99okzqcjGi64n
+         fkOGvQ0WP+AjDrYZ4pX0VyhJeAOO0DLj2WQdaG84PO62ldgFcqe6D/tLtE7elpJkL91G
+         vJSQ==
+X-Gm-Message-State: AOAM532RZDGFNtCU8sTddHCED5AA1nhSujiygdly2nWHrOxp6p+jMg94
+	J2NVwY6LMT2dn86ZNY02tr280yCUaVkkIxLSJd8OyB0SNsE=
+X-Received: by 2002:a2e:9d5:: with SMTP id 204mr4864664ljj.168.1589660642022;
+ Sat, 16 May 2020 13:24:02 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 16 May 2020 22:23:52 +0200
+Message-ID: <CAAxEZd8Ffq5peC3h67wbJr1mM54guSfqS9viM-gOr+YpD5zDGg@mail.gmail.com>
+Subject: sport.db Tools & Scripts - New Website!
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   The sport.db command line tools and scripts now have a little website [1].
+The content so far includes:
+
+- Quick Starter Guides
+  - football.db League Starter Sample - Mauritius Premier League
+  - football.db Quick Starter Datafile Templates
+- Command Line Tools
+  - sportdb
+- Scripting
+  - Reading Match Datasets in (Structured) Text in the Football.TXT Format
+  - Reading Match Datasets in Comma-Separated Values (CSV) Format
+- Questions? Comments?
+
+   Cheers. Prost.
+
+[1]  http://sportdb.github.io
+

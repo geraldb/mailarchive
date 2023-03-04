@@ -1,0 +1,105 @@
+From 1556122435584@xxx Tue Jun 16 00:16:55 +0000 2015
+X-GM-THRID: 1443995058176
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b420b99f7c108f3c
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.225.166 with SMTP id rl6mr188002lbc.11.1404563374044;
+        Sat, 05 Jul 2014 05:29:34 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.43.225 with SMTP id z1ls217288lal.100.gmail; Sat, 05 Jul
+ 2014 05:29:33 -0700 (PDT)
+X-Received: by 10.112.145.233 with SMTP id sx9mr1760949lbb.2.1404563373624;
+        Sat, 05 Jul 2014 05:29:33 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22d.google.com (mail-wi0-x22d.google.com [2a00:1450:400c:c05::22d])
+        by gmr-mx.google.com with ESMTPS id x7si1481061wiw.1.2014.07.05.05.29.33
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 05 Jul 2014 05:29:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22d as permitted sender) client-ip=2a00:1450:400c:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f173.google.com with SMTP id cc10so13940057wib.0
+        for <opensport@googlegroups.com>; Sat, 05 Jul 2014 05:29:33 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=mUiV+tegnqcLO4Ulqf3aLAx4JSDZA+Yitp8XD6LIwOI=;
+        b=kknlriS/nXDDoe68IWuQkb6EGO+wv7SWyE8z4ss+yNCI4VorPwNHDmho6xF8PMpjDf
+         luNA0b4kFfX7pgpIchodijKJeWLm538JmjbmZRDPsrYXUrum9Y4L7/En2Mrk0NBJmNkh
+         knQCj5AnbU5I6xN1BoI03XRQIuSyCsrE01Sn7UBUjPOuGG0Xgs39e1tJw97zcR4gyZZv
+         f6rRFKEtorIPef2alb0Tw8refqmRcCiE15dJwcpiuDpfBg7lC6qJOYph9yTPIJcctggR
+         yGgixTKtC4tSLOdDpyh+gngEa0X7gSvC7WcxT7YMpkP8Y9e92irSgtusJn1GycE4VlX9
+         Vfxg==
+MIME-Version: 1.0
+X-Received: by 10.180.109.101 with SMTP id hr5mr24613955wib.25.1404563373522;
+ Sat, 05 Jul 2014 05:29:33 -0700 (PDT)
+Received: by 10.216.253.201 with HTTP; Sat, 5 Jul 2014 05:29:33 -0700 (PDT)
+In-Reply-To: <5bb398d9-51f0-476e-bfbe-3a762cdd8882@googlegroups.com>
+References: <8ef4037c-46cf-4d5f-a582-05fa64e3c2d9@googlegroups.com>
+	<CAAxEZd-dXv9CA4o+s8GhX9izd-tMnvDgzkFZL_2GFUUbVXhOVw@mail.gmail.com>
+	<CAAxEZd-cMT2CHPoMh4On8Pw_Qn+6unERLA57T9Hy9u8tHq=GQA@mail.gmail.com>
+	<8be0dd97-b415-45e0-bd80-a1a610a54fba@googlegroups.com>
+	<b8975d50-737d-47de-96a9-8d43fe71769c@googlegroups.com>
+	<CAAxEZd-9--4qHsGbJ5uF9duA20Bd0XWb2Z-s7XpO43W0qfovAg@mail.gmail.com>
+	<5bb398d9-51f0-476e-bfbe-3a762cdd8882@googlegroups.com>
+Date: Sat, 5 Jul 2014 14:29:33 +0200
+Message-ID: <CAAxEZd8XVmmWMTP89A2ktDbuCCvT1hxQC7Px2poisE14c5HYqw@mail.gmail.com>
+Subject: Re: [opensport] MLS Data
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Great stuff. There's currently no concept of stages or phases in
+the fixture parser. However, there are some alternatives.
+
+   The easiest - use comments to mark the stage (of course, the
+comment will not get added to the database) e.g.
+
+ # Qualifying
+
+or
+
+# Kockout phase
+
+or
+
+## Qualifying stage ....     - everything after # or ## or ### is free
+comment text.
+
+   All rounds (regular or knockout) are defined in the language
+mappings e.g. for English  [1] it is:
+
+round:      Round|Matchday
+
+playoffs:       Playoff|Playoffs|Play-off|Play-offs|Play-off for quarter-finals
+round32:        Round of 32|Last 32
+round16:        Round of 16|Last 16|8th finals
+quarterfinals:  Quarterfinals|Quarter-finals|Quarters|Quarterfinal|Last 8
+semifinals:     Semifinals|Semi-finals|Semis|Last 4
+fifthplace:     Fifth place match|Fifth place|5th place match|5th
+place final|5th place|Match for fifth place|Match for 5th place
+thirdplace:     Third place match|Third-place match|Third place|3rd
+place match|3rd place final|3rd place|Match for third place|Match for
+3rd place|Third-place play-off|Third place play-off
+final:          Final|Finals
+
+
+  To define/use your own "custom" round as a workaround for now you can use
+
+(1)  Round  //  Qualifying    # e.g. round num - round workaround
+after // the "real name" for your round.
+
+  If you collect some missing round (names) that you need I can try to
+add them to parser w/ an upcoming update. Keep it up. Cheers.
+
+
+[1] github.com/openfootball/lang/blob/master/en.yml
+

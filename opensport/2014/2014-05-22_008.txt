@@ -1,0 +1,70 @@
+From 740529537024@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 742258638848
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,ce260373049a0f66
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.138.17 with SMTP id qm17mr24074617pab.34.1400740084185;
+        Wed, 21 May 2014 23:28:04 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.18.200 with SMTP id 66ls1116157qgf.24.gmail; Wed, 21 May
+ 2014 23:28:04 -0700 (PDT)
+X-Received: by 10.236.19.7 with SMTP id m7mr11185586yhm.35.1400740084064;
+        Wed, 21 May 2014 23:28:04 -0700 (PDT)
+Received: by 10.224.103.196 with SMTP id l4msqao;
+        Wed, 21 May 2014 23:19:01 -0700 (PDT)
+X-Received: by 10.140.101.111 with SMTP id t102mr1030018qge.5.1400739540983;
+        Wed, 21 May 2014 23:19:00 -0700 (PDT)
+X-Google-Doc-Id: a27f879806c12231
+X-Google-Web-Client: true
+Date: Wed, 21 May 2014 23:18:59 -0700 (PDT)
+From: wnstnsmth87@gmail.com
+To: opensport@googlegroups.com
+Message-Id: <c51c8122-aeca-415e-aa9f-f26df43aee73@googlegroups.com>
+Subject: JSON of cup.txt and cup-finals.txt
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_112_29272262.1400739539713"
+X-Google-Token: ENOt9psFPTjmn0_WbdM0
+X-Google-IP: 213.55.176.197
+
+------=_Part_112_29272262.1400739539713
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_113_3825941.1400739539714"
+
+------=_Part_113_3825941.1400739539714
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+I work for a daily newspaper in Switzerland and we are planning on building 
+some kind of a match simulation app. 
+
+For this, the only data I need are contained in 
+https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt 
+and 
+https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup_finals.txt 
+as it allows to reference the winners of previous matches. I don't need 
+actual results or anything. 
+
+Now, I don't know how to parse this DSL, or do not have the time to write a 
+parser. The only thing I would need is a list of all matches containing 
+this info, e.g., as a CSV or JSON, so that I can parse it with JS. 
+
+I downloaded the worldcup2014.db SQLite release but didn't anything similar 
+in there. 
+
+So is the same data available in another format? Or how do I compile a CSV 
+or a JSON from it? 
+
+Thanks!
+
+------=_Part_113_3825941.1400739539714
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi,<br>I work for a daily newspaper in Switzerland and we are planning on building some kind of a match simulation app. <br><br>For this, the only data I need are contained in https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt and https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup_finals.txt as it allows to reference the winners of previous matches. I don't need actual results or anything. <br><br>Now, I don't know how to parse this DSL, or do not have the time to write a parser. The only thing I would need is a list of all matches containing this info, e.g., as a CSV or JSON, so that I can parse it with JS. <br><br>I downloaded the worldcup2014.db SQLite release but didn't anything similar in there. <br><br>So is the same data available in another format? Or how do I compile a CSV or a JSON from it? <br><br>Thanks!<br></div>
+------=_Part_113_3825941.1400739539714--
+
+------=_Part_112_29272262.1400739539713--
+

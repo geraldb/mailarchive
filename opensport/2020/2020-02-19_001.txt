@@ -1,0 +1,118 @@
+From 6795522910155964416@xxx Thu Feb 20 13:39:34 +0000 2020
+X-GM-THRID: 6770740700331900928
+X-Received: by 2002:ae9:e114:: with SMTP id g20mr28042617qkm.458.1582205973679;
+        Thu, 20 Feb 2020 05:39:33 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:620a:52b:: with SMTP id h11ls787488qkh.5.gmail; Thu, 20
+ Feb 2020 05:39:33 -0800 (PST)
+X-Received: by 2002:a05:620a:c1a:: with SMTP id l26mr28806781qki.317.1582205973012;
+        Thu, 20 Feb 2020 05:39:33 -0800 (PST)
+Received: by 2002:a37:644d:0:0:0:0:0 with SMTP id y74msqkb;
+        Wed, 19 Feb 2020 15:08:39 -0800 (PST)
+X-Google-Smtp-Source: APXvYqwm0068Tnu6N8lQs3uBcwvkXfg+Ymlqg8BNzmELzILBU9Q2pMUjtFdg+l1vdjniLKQg76RgDCMlow==
+X-Received: by 2002:a0d:cc55:: with SMTP id o82mr23399062ywd.426.1582153719053;
+        Wed, 19 Feb 2020 15:08:39 -0800 (PST)
+X-Google-Web-Client: true
+Date: Wed, 19 Feb 2020 15:08:38 -0800 (PST)
+From: Dominika Oles <do.in1solutions@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <238552c5-dca7-47d4-9439-6e86f00316a2@googlegroups.com>
+In-Reply-To: <d1cfad45-09bc-4ae8-bf31-3c0cf3e2ad20@googlegroups.com>
+References: <d1cfad45-09bc-4ae8-bf31-3c0cf3e2ad20@googlegroups.com>
+Subject: Re: Error on running sportdb new worldcup
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2271_591740424.1582153718843"
+X-Google-Token: EPb_tvIFNSgY-YfcXFg0
+X-Google-IP: 2001:bb6:882e:6f58:c9cc:443f:6967:5042
+
+------=_Part_2271_591740424.1582153718843
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2272_1480701054.1582153718843"
+
+------=_Part_2272_1480701054.1582153718843
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+Same error still here in February 2020. I commented out 'national-teams' 
+and all '*-cups' from Datafile.
+
+This revealed another error with 'clubs' about duplicate alt names:
+
+*** !!! WARN !!! - 1 duplicate alt name mapping(s):
+{"alahly"=>["Al Ahly", "Al-Ahly"]}
+#<SportDb::Import::Club:0x000055e6d52f27d8
+...
+** !!! ERROR !!! - (canonical) name conflict - duplicate - >Al Ahly< will 
+overwrite >Al Ahly<:
+#<SportDb::Import::Club:0x000055e6d4e9ba18
+ @alt_names=
+  ["Al-Ahly", "Al Ahly Cairo", "Al Ahly SC", "Al Ahly Sporting Club"],
+
+
+If I remove 'clubs' from Datafile, I get error about missing clubs 
+obviously:
+** !!! ERROR !!! no match for club >Carpi FC<
+
+Then I tried to load into same DB just clubs and later all other european 
+zips. This got me further, but again new error about leagues:
+*** error: SQLite3::ConstraintException: UNIQUE constraint failed: 
+events_teams.event_id, events_teams.team_id
+
+Then I tried doing this from scratch on a new database. I read in clubs - 
+got the error. Then I edited Datafile, commented out clubs and put in all 
+european leagues. Read that in, and I am back with the following error:
+** !!! ERROR !!! no match for club >Carpi FC<
+
+Any ideas? Is this easy to fix?
+
+>  
+>
+
+------=_Part_2272_1480701054.1582153718843
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hi,</div><div>Same error still here in February 2020.=
+ I commented out &#39;national-teams&#39; and all &#39;*-cups&#39; from Dat=
+afile.<br><br></div><div>This revealed another error with &#39;clubs&#39; a=
+bout duplicate alt names:</div><div><br></div><div><div><font face=3D"couri=
+er new, monospace" size=3D"1">*** !!! WARN !!! - 1 duplicate alt name mappi=
+ng(s):</font></div><div><font face=3D"courier new, monospace" size=3D"1">{&=
+quot;alahly&quot;=3D&gt;[&quot;Al Ahly&quot;, &quot;Al-Ahly&quot;]}</font><=
+/div><div><font face=3D"courier new, monospace" size=3D"1">#&lt;SportDb::Im=
+port::Club:0x000055e6d52f27d8</font></div></div><div><font face=3D"courier =
+new, monospace" size=3D"1">...</font></div><div><div><font face=3D"courier =
+new, monospace" size=3D"1">** !!! ERROR !!! - (canonical) name conflict - d=
+uplicate - &gt;Al Ahly&lt; will overwrite &gt;Al Ahly&lt;:</font></div><div=
+><font face=3D"courier new, monospace" size=3D"1">#&lt;SportDb::Import::Clu=
+b:0x000055e6d4e9ba18</font></div><div><font face=3D"courier new, monospace"=
+ size=3D"1">=C2=A0@alt_names=3D</font></div><div><font face=3D"courier new,=
+ monospace" size=3D"1">=C2=A0 [&quot;Al-Ahly&quot;, &quot;Al Ahly Cairo&quo=
+t;, &quot;Al Ahly SC&quot;, &quot;Al Ahly Sporting Club&quot;],</font></div=
+></div><div><br></div><div><br></div><div>If I remove &#39;clubs&#39; from =
+Datafile, I get error about missing clubs obviously:</div><div><div><font f=
+ace=3D"courier new, monospace" style=3D"font-size: x-small;">** !!! ERROR !=
+!! no match for club &gt;Carpi FC&lt;</font><br><br><font face=3D"arial, sa=
+ns-serif" style=3D"" size=3D"2">Then I tried to load into same DB just club=
+s and later all other european zips. This got me further, but again new err=
+or about leagues:</font></div></div><div><div style=3D""><font style=3D"" s=
+ize=3D"1" face=3D"courier new, monospace">*** error: SQLite3::ConstraintExc=
+eption: UNIQUE constraint failed: events_teams.event_id, events_teams.team_=
+id</font></div><div style=3D"font-size: small; font-family: arial, sans-ser=
+if;"><br></div><div style=3D"font-size: small; font-family: arial, sans-ser=
+if;">Then I tried doing this from scratch on a new database. I read in club=
+s - got the error. Then I edited Datafile, commented out clubs and put in a=
+ll european leagues. Read that in, and I am back with the following error:<=
+/div><div style=3D""><div style=3D""><font face=3D"courier new, monospace" =
+style=3D"" size=3D"1">** !!! ERROR !!! no match for club &gt;Carpi FC&lt;<b=
+r><br></font></div></div><div style=3D"font-size: small; font-family: arial=
+, sans-serif;">Any ideas? Is this easy to fix?</div></div><blockquote class=
+=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #cc=
+c solid;padding-left: 1ex;"><div dir=3D"ltr"><div><p>=C2=A0</p></div></div>=
+</blockquote></div>
+------=_Part_2272_1480701054.1582153718843--
+
+------=_Part_2271_591740424.1582153718843--
+

@@ -1,0 +1,43 @@
+From 724444381184@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 724800897024
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,2e3281a7b816dc3,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.100.4.9 with SMTP id 9mr9288508and.26.1278913891866;
+        Sun, 11 Jul 2010 22:51:31 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.101.146.2 with SMTP id y2ls1095932ann.6.p; Sun, 11 Jul 2010 
+	22:51:31 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.101.141.11 with SMTP id t11mr551840ann.19.1278913891518; Sun, 
+	11 Jul 2010 22:51:31 -0700 (PDT)
+Received: by c33g2000yqm.googlegroups.com with HTTP; Sun, 11 Jul 2010 22:51:31 
+	-0700 (PDT)
+Date: Sun, 11 Jul 2010 22:51:31 -0700 (PDT)
+X-IP: 75.118.30.38
+User-Agent: G2/1.0
+X-Google-Token: EOPa6uEEPtwPvO_Cgwc0
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; 
+	rv:1.9.2.6) Gecko/20100625 Firefox/3.6.6,gzip(gfe)
+Message-ID: <5228c0f8-66d1-49f3-9d21-c6acfc04c008@c33g2000yqm.googlegroups.com>
+Subject: a very clean and simple s6 template
+From: dsanson <dsanson@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+I've put together an s6 template that aims to be clean and simple. It
+is black and white---no fancy gradients, no colorful headers or
+footers. It tries to improve legibility by avoiding long horizontal
+runs of text. It also styles some of the features provided by pandoc---
+e.g., definition lists.
+
+You can find it here:
+
+http://github.com/dsanson/s6clean
+
+Though I haven't tried it, I assume you can install it with
+
+slideshow -f http://github.com/dsanson/s6clean/raw/master/s6clean.txt
+
+

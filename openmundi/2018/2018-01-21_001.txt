@@ -1,0 +1,157 @@
+From 6513603162749796352@xxx Sun Jan 21 20:26:57 +0000 2018
+X-GM-THRID: 6513595883287740416
+X-Received: by 10.176.3.195 with SMTP id 61mr3022855uau.3.1516566416845;
+        Sun, 21 Jan 2018 12:26:56 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.31.238.73 with SMTP id m70ls1676692vkh.5.gmail; Sun, 21 Jan
+ 2018 12:26:56 -0800 (PST)
+X-Google-Smtp-Source: AH8x225GluQB/kTwg+08i3gRVhXeXzV5ogDaPNCkQMpPCT3IPX17ySN63iAH7/OeRRp7U5mKtpOT
+X-Received: by 10.176.24.135 with SMTP id t7mr2812011uag.96.1516566416534;
+        Sun, 21 Jan 2018 12:26:56 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1516566416; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YJ5+L5OfqK++F5R7zrRQ0U4KqasZgdkFjG3uB6dcJl8rVhzWHdWZfMLyMaZIakH054
+         om4TBMrN+3NhINtqE2SYVzdoQmGC8d3w9TCMAAPP/cfru8wKA5Dry9qUCJK03vkWETKx
+         HZitXyDu07xNex0GABR6/QtzaxmWa/ot4ZwM7UnP23SytPg6Ljbno3ayHNBDwciW/P9o
+         tT9wenvamQg9u5tblmVSxRiifIgXYbfFhZ9udtZK3h8Xf4WKkfByNAWBzmcrD+Ufkkt9
+         OMRvMSoJVGkT+8666HGRy3y8f0bH/2bsVLiqQf94Vu7UcysPH2ef+MeyKubHTmmnJWAX
+         BM1A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:references:in-reply-to
+         :mime-version:dkim-signature:arc-authentication-results;
+        bh=K2yIklEEa0qFRvTs8lCTyWjJXvKeBaix0uGj7TSOYtA=;
+        b=o3q5f49yUJcdXcSIwu7GiXTiAEjaffFLsvYP0QfTBHVd2SUbnnefJVS+vHwgcaFoCr
+         Xym63MhPZyfjdNGb0X8es63+qLp4jJ8QFB6CCtuvh1TFHCwBpafu0QtRLYRbZbTnq/GC
+         3lVx2zx9ANV9gOnEeDuQsWrWuZhKEEmcEcileuxtacCL3itJVIU5UPs4gB4XAfGziF8N
+         cSdz7tSI2C6v0zNtQjRvrvyE3JllvFL6Gs1rkjE9InGg6f0cP2pyrEerm62q8N89uGH/
+         OBQ1S+p7FKqSvO788lrc8OO0wgOZYP/0P/J4r6hw2kOh2Ytr6V1FIn7P0Zn7UD38qfRL
+         N6YQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=HCv6FRu6;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::244 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x244.google.com (mail-it0-x244.google.com. [2607:f8b0:4001:c0b::244])
+        by gmr-mx.google.com with ESMTPS id k11si965504ual.2.2018.01.21.12.26.56
+        for <openmundi@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 21 Jan 2018 12:26:56 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::244 as permitted sender) client-ip=2607:f8b0:4001:c0b::244;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=HCv6FRu6;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::244 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x244.google.com with SMTP id q8so7598665itb.2
+        for <openmundi@googlegroups.com>; Sun, 21 Jan 2018 12:26:56 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to
+         :cc;
+        bh=K2yIklEEa0qFRvTs8lCTyWjJXvKeBaix0uGj7TSOYtA=;
+        b=HCv6FRu6ZWT/u9zm8Og3h1KnlatzcHFPsJy/+W6isjGdo8XK8Nw5MwC97B7MK3+GF2
+         dhAKWfIwBS9Xxt69GOe7clp/4b2S8+eM6EIWiRlC/R+e2NK4yaTY9aexsYt4Isu+Juzf
+         d7CzzvY7jrObsqtO8ilf9W2pmhZ33O0yO7d0JMT9l2AC++F/7YfODpijzZq84wTMwJV9
+         1riKuh7hukn7ZoJpluvG6P1j43RQ6ek7QNXpafqRW/hAPl9XHsAkT7HoTJeMaPOIZe7Z
+         p8Uy2LJXuJcNa7nGUT5IFY0ekZTyci8VmpT8OCa3Zvk34FTt410e/7xWmCmk3ee1t8fZ
+         I+hQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to:cc;
+        bh=K2yIklEEa0qFRvTs8lCTyWjJXvKeBaix0uGj7TSOYtA=;
+        b=jZV6bpmKWNaIbkEiI3o2/ZIcFc+MkKjL+E31iMy9N4El/mr3kGT/wGjwddNPCJYxqO
+         EKE13ha9DIoa0KQR1h3xLIMNgxkxdGFqmOnh3WPIKGMDihK2MxAXLC6dmjsUu5A3xmYR
+         qRzZBiJck5q1KU2yBmA1MUBzQ3UyTVkXIUPHt9SmRG/upjVFw+Jr2iCvMsuooEjrMeV8
+         SL1ujSyhWIAFOLuputbjMVNI+F43wKxH8t4A0kaYjk0YWMGnle0KyRH3xszZ0wA0vJ23
+         0NlW9s+Lwr1vBCxXSd/2YrfrTiq2ASOVWpZp6+qnEQe9n7/l0uFJDCYWnoLa523Greyb
+         jQbw==
+X-Gm-Message-State: AKwxytehU8LhYkIPIfCFMkeTo+Y4e1VLCTMr3VjVlwJDUMUTewuOuLhP
+	33nvvtthfjcw3w5zSYH2humw2ZPfTdS1JuHmNfAxjw==
+X-Received: by 10.36.101.2 with SMTP id u2mr5728991itb.55.1516566415887; Sun,
+ 21 Jan 2018 12:26:55 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.3.233 with HTTP; Sun, 21 Jan 2018 12:26:55 -0800 (PST)
+In-Reply-To: <CAAxEZd8P41P15v0R6WkNLfC7ysq21PKei5ctK37D7SFMqE_C=A@mail.gmail.com>
+References: <77c25fe2-20bd-4644-a125-43661f513d0a@googlegroups.com> <CAAxEZd8P41P15v0R6WkNLfC7ysq21PKei5ctK37D7SFMqE_C=A@mail.gmail.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 21 Jan 2018 21:26:55 +0100
+Message-ID: <CAAxEZd_RX4qwcwN6JCMUQSnm+Q=oHBHvzQNCLdzTNL=NFOY9Bw@mail.gmail.com>
+Subject: Re: [openmundi] Getting started with factdb and dumping the data to
+ other formats
+To: Jason Rogers <jasonr1234@gmail.com>
+Cc: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+    One more thing and for more detail why it might not be so easy to
+convert the data (straight) to tables and columns, see the issue #201
+/ discusson at the datasets/registry repo titled "CIA World Factbook"
+-> https://github.com/datasets/registry/issues/201  includes comments
+form Ian Coleman too.
+
+   Cheers.
+
+2018-01-21 21:13 GMT+01:00 Gerald Bauer <gerald.bauer@gmail.com>:
+> Hello,
+>
+>    Thanks for your interest in the factbook. Please note I do NOT work
+> for the CIA - I'm just a volunteer.
+>
+>   You can find "dumps" of all factbook data in json at the
+> /factbook.json repo - see
+> https://github.com/opendatajson/factbook.json
+>
+>    There's also a guide on how to import the datasets into MongoDb (a
+> "schemaless" database) - see
+> https://github.com/opendatajson/factbook.json/blob/master/MONGO.md
+>
+>
+>    The factbook data is not really all 100% tables and columns it's a
+> mix of table-oriented and document-oriented. So importing in SQL or
+> converting to  CSV only works for a subset and that subset you can
+> download from the official CIA site :-)
+>
+>   Look for the alternative factbook project by Ian Coleman  that tries
+> to clean-up / unify the datasets so you can easier import into tables
+> / convert to comma-separated values (csv) records -
+> https://github.com/iancoleman/cia_world_factbook_api
+>
+>    Greetings from Vienna. Let us know how it goes. All the best. Cheers.
+>
+>
+>
+> 2018-01-21 1:18 GMT+01:00 Jason Rogers <jasonr1234@gmail.com>:
+>> Hi, I'm interested in using the data posted in factdb, but I'm quite
+>> confused about how to properly use the database and I can't find much in the
+>> way of a manual or tutorial.
+>>
+>> First, if there is a good manual/tutorial please point me to it and I'll
+>> read through it thoroughly. If not, then here are my questions:
+>>
+>> 1. I see there are separate pages for factdb, openmundi, world.db, etc. What
+>> is the relationship between these? Are they different (outdated) versions of
+>> the same thing? Or part of a larger parent project, etc.?
+>>
+>> 2. As someone who is familiar with coding/terminal/scripting, but not
+>> familiar with json or working with databases, what is the proper way to use
+>> and access the data?
+>>
+>> 3. Would it be possible to post a dump of all the data to a csv file or
+>> similar? Ultimately I want to have a data table where rows are countries and
+>> columns are all categories. It would also be ok to have one master json file
+>> which I can then parse in R. Alternatively, if you could even just tell me
+>> conceptually the right steps to follow to get to this result, I can probably
+>> figure out the rest myself.
+>>
+>> Thank you for maintaning this project!
+>>
+>> --
+>> You received this message because you are subscribed to the Google Groups
+>> "openmundi" group.
+>> To unsubscribe from this group and stop receiving emails from it, send an
+>> email to openmundi+unsubscribe@googlegroups.com.
+>> To post to this group, send email to openmundi@googlegroups.com.
+>> Visit this group at https://groups.google.com/group/openmundi.
+>> For more options, visit https://groups.google.com/d/optout.
+

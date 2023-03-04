@@ -1,0 +1,51 @@
+From 391784693760@xxx Tue Apr 14 11:49:29 +0000 2015
+X-GM-THRID: 387975217152
+X-Received: by 10.66.218.163 with SMTP id ph3mr25341012pac.46.1429012168639;
+        Tue, 14 Apr 2015 04:49:28 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.182.254.10 with SMTP id ae10ls34126obd.76.gmail; Tue, 14 Apr
+ 2015 04:49:28 -0700 (PDT)
+X-Received: by 10.182.65.37 with SMTP id u5mr27356011obs.27.1429012168430;
+        Tue, 14 Apr 2015 04:49:28 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qk0-x22a.google.com (mail-qk0-x22a.google.com. [2607:f8b0:400d:c09::22a])
+        by gmr-mx.google.com with ESMTPS id ks9si83517qcb.3.2015.04.14.04.49.28
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 14 Apr 2015 04:49:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::22a as permitted sender) client-ip=2607:f8b0:400d:c09::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qk0-x22a.google.com with SMTP id 63so13642665qku.3
+        for <openmundi@googlegroups.com>; Tue, 14 Apr 2015 04:49:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=LRq7MAKu0tVa7C1uD6UnMeLX0jYF+dh4sTB/ARINMI0=;
+        b=nbVqMvzW84oUPoDxGBmz80MBBEYHxUNxuy88OENxvuv1MFdKoMACI3SpVY7QFccbPS
+         ZJiYHvgQ/a1FNbcLJDknXet52CVx28ucfeIvSL2K0eN6YKELj9mHsLn45BolZSsoWhq3
+         RZi5j3RW+gP8JlkwfxIMJPaimry/T+Kz5efSmaIMvg6w2OtMUUdq5f2OPAA4v/ZT4P8Q
+         Jy23hoJihaNF0HtI4Lq1J7SzNPIVn3OUocWpS2gba3TT8B1HSayHVBJdA7sFtZQFLNd7
+         BM2lDke02QnE/WGwfDIYHbYF4eo0t8SSPUU4Xxm4mTxYhkbeOF1hHkriQsuwZ9BjTm03
+         zEuQ==
+MIME-Version: 1.0
+X-Received: by 10.55.53.8 with SMTP id c8mr29528448qka.63.1429012149559; Tue,
+ 14 Apr 2015 04:49:09 -0700 (PDT)
+Received: by 10.229.5.6 with HTTP; Tue, 14 Apr 2015 04:49:09 -0700 (PDT)
+In-Reply-To: <6ccb048b-ebeb-41a5-8e92-5c130aff55e0@googlegroups.com>
+References: <6ccb048b-ebeb-41a5-8e92-5c130aff55e0@googlegroups.com>
+Date: Tue, 14 Apr 2015 13:49:09 +0200
+Message-ID: <CAAxEZd-BvrfaRPZN9+mOuJjooJf3STybfsdhC6b_uKXfJbQ-ig@mail.gmail.com>
+Subject: Re: CIA Factbook change the country html
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Filipe Sousa <filipe.oliveira.sousa@gmail.com>
+Cc: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for reporting. Can you post some details - what errors do you get?
+ Cheers.
+

@@ -1,0 +1,124 @@
+From 1124870389760@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1070877114368
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,ee3355fbf99011aa
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.58.86.41 with SMTP id m9mr4773vez.40.1402250674379;
+        Sun, 08 Jun 2014 11:04:34 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.60.163 with SMTP id i3ls808334obr.15.gmail; Sun, 08 Jun
+ 2014 11:04:34 -0700 (PDT)
+X-Received: by 10.182.196.104 with SMTP id il8mr20231obc.24.1402250674105;
+        Sun, 08 Jun 2014 11:04:34 -0700 (PDT)
+X-Google-Doc-Id: 380b883632edea21
+X-Google-Web-Client: true
+Date: Sun, 8 Jun 2014 11:04:33 -0700 (PDT)
+From: alex olsen <alexolsen03@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <109fa723-50a2-4895-abf4-837898e7bb48@googlegroups.com>
+In-Reply-To: <f1f83edd-8758-495f-8921-71dcf30458e1@googlegroups.com>
+References: <e372a846-c449-40c6-80c4-a05921c06a91@googlegroups.com>
+ <f1f83edd-8758-495f-8921-71dcf30458e1@googlegroups.com>
+Subject: Re: Noob help
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_144_9084525.1402250673728"
+X-Google-Token: ELHL0pwFN745sY5drQI0
+X-Google-IP: 68.13.85.16
+
+------=_Part_144_9084525.1402250673728
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_145_10946671.1402250673728"
+
+------=_Part_145_10946671.1402250673728
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Ah that's brilliant man, that did the trick.  I really appreciate your help 
+and prompt responses with this.  I really wanted to get this set up over 
+the weekend and was afraid I wouldn't get it done in time.  I'm now able to 
+get the json objects from my other site.  Really really thankful.  I'll be 
+following the project.
+
+On Sunday, June 8, 2014 12:44:05 PM UTC-5, Gerald Bauer wrote:
+>
+> Hello,
+>
+>   Great idea about using pg:push. Never tried it but sure way easier than 
+> uploading all data and loading with rake tasks. Yes, you have to change the 
+> database connection code a little just a couple of lines.
+>
+>   From the Heroku docu
+>
+> Database access - Using ActiveRecord
+>
+> For non-Rails apps using ActiveRecord standalone, put this code into
+>  your application to access the DATABASE_URL:
+>
+> require 'active_record'
+>
+> ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 
+> 'postgres://localhost/mydb')
+>
+> The code above uses a default local PostgreSQL database named mydb, but 
+> you can change this value to point anywhere you like, or override 
+> by running your app with the DATABASE_URL environment variable set in your 
+> shell.
+>
+>   ------------
+>
+>   Thus replace in boot.rb:
+>
+> # Database Setup & Config
+> db_config = {
+>   adapter: 'sqlite3',
+>   database: 'football.db' # NOTE: change to use your db of choice (e.g. 
+> worldcup.db, bundesliga.db, ski.db etc.)
+> }
+> pp db_config
+> ActiveRecord::Base.establish_connection( db_config )
+>
+>   with or similar:
+>
+>   ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 
+> 'postgres://localhost/mydb')
+>
+>    Good luck. Cheers. 
+>
+
+------=_Part_145_10946671.1402250673728
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Ah that's brilliant man, that did the trick. &nbsp;I reall=
+y appreciate your help and prompt responses with this. &nbsp;I really wante=
+d to get this set up over the weekend and was afraid I wouldn't get it done=
+ in time. &nbsp;I'm now able to get the json objects from my other site. &n=
+bsp;Really really thankful. &nbsp;I'll be following the project.<br><br>On =
+Sunday, June 8, 2014 12:44:05 PM UTC-5, Gerald Bauer wrote:<blockquote clas=
+s=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #c=
+cc solid;padding-left: 1ex;"><div dir=3D"ltr">Hello,<br><br>&nbsp; Great id=
+ea about using pg:push. Never tried it but sure way easier than uploading a=
+ll data and loading with rake tasks. Yes, you have to change the database c=
+onnection code a little just a couple of lines.<br><br>&nbsp; From the Hero=
+ku docu<br><br>Database access - Using ActiveRecord<br><br>For non-Rails ap=
+ps using ActiveRecord standalone, put this code into<br>&nbsp;your applicat=
+ion to access the DATABASE_URL:<br><br>require 'active_record'<br><br>Activ=
+eRecord::Base.establish_<wbr>connection(ENV['DATABASE_URL'] || 'postgres://=
+localhost/mydb')<br><br>The code above uses a default local PostgreSQL data=
+base named mydb, but you can change this value to point anywhere you like, =
+or override <br>by running your app with the DATABASE_URL environment varia=
+ble set in your shell.<br><br>&nbsp; ------------<br><br>&nbsp; Thus replac=
+e in boot.rb:<br><br># Database Setup &amp; Config<br>db_config =3D {<br>&n=
+bsp; adapter: 'sqlite3',<br>&nbsp; database: 'football.db' # NOTE: change t=
+o use your db of choice (e.g. worldcup.db, bundesliga.db, ski.db etc.)<br>}=
+<br>pp db_config<br>ActiveRecord::Base.establish_<wbr>connection( db_config=
+ )<br><br>&nbsp; with or similar:<br><br>&nbsp; ActiveRecord::Base.establis=
+h_<wbr>connection(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')<br><b=
+r>&nbsp;&nbsp; Good luck. Cheers. <br></div></blockquote></div>
+------=_Part_145_10946671.1402250673728--
+
+------=_Part_144_9084525.1402250673728--
+

@@ -1,0 +1,65 @@
+From 828947562496@xxx Tue Jun 16 00:17:06 +0000 2015
+X-GM-THRID: 830560272384
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,e7981ce49cae0dd7
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.224.61.203 with SMTP id u11mr5834722qah.6.1401192129382;
+        Tue, 27 May 2014 05:02:09 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.91.99 with SMTP id y90ls3086842qgd.82.gmail; Tue, 27 May
+ 2014 05:02:09 -0700 (PDT)
+X-Received: by 10.236.19.7 with SMTP id m7mr12556745yhm.35.1401192129238;
+        Tue, 27 May 2014 05:02:09 -0700 (PDT)
+Received: by 10.224.13.71 with SMTP id b7msqaa;
+        Tue, 27 May 2014 04:27:07 -0700 (PDT)
+X-Received: by 10.140.38.199 with SMTP id t65mr35641qgt.17.1401190027798;
+        Tue, 27 May 2014 04:27:07 -0700 (PDT)
+X-Google-Doc-Id: 1e234f99641483d
+X-Google-Web-Client: true
+Date: Tue, 27 May 2014 04:27:06 -0700 (PDT)
+From: Marvin Preuss <xsteadfastx@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <9deba4b4-1692-452a-acbf-b1580d3acac3@googlegroups.com>
+Subject: kickoff times / api data updates
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_221_20259638.1401190026950"
+X-Google-Token: EIrtkZwF3T2P0NcMBQE0
+X-Google-IP: 47.68.171.125
+
+------=_Part_221_20259638.1401190026950
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_222_26927913.1401190026950"
+
+------=_Part_222_26927913.1401190026950
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+im doing my first experiments with football.db. i plan to write a little 
+flask-based app to bet with my family on the world cup games. 
+
+ - in the example (http://footballdb.herokuapp.com/) are the kickoff-times. 
+also in cup.txt 
+(https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt). 
+how can i get them through the API? is that possible?
+
+- i want to host the api by myself. so i build the DB and started it with 
+"sportdb -n football.db serve". whats the best way to update the db? 
+writing a script to pull the new data from the repos and building them? or 
+is something like this implemented in the sportdb command?
+
+thank you for the awesome work on this. i love opendata... and even more if 
+they are about football ;-)
+
+------=_Part_222_26927913.1401190026950
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi,<br><br>im doing my first experiments with football.db. i plan to write a little flask-based app to bet with my family on the world cup games. <br><br>&nbsp;- in the example (http://footballdb.herokuapp.com/) are the kickoff-times. also in cup.txt (https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt). how can i get them through the API? is that possible?<br><br>- i want to host the api by myself. so i build the DB and started it with "sportdb -n football.db serve". whats the best way to update the db? writing a script to pull the new data from the repos and building them? or is something like this implemented in the sportdb command?<br><br>thank you for the awesome work on this. i love opendata... and even more if they are about football ;-)<br></div>
+------=_Part_222_26927913.1401190026950--
+
+------=_Part_221_20259638.1401190026950--
+

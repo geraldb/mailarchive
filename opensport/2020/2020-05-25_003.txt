@@ -1,0 +1,122 @@
+From 6830696784739696640@xxx Mon May 25 08:32:09 +0000 2020
+X-GM-THRID: 6827160283432091648
+X-Received: by 2002:adf:ed01:: with SMTP id a1mr6676047wro.271.1590395528867;
+        Mon, 25 May 2020 01:32:08 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a1c:a70e:: with SMTP id q14ls1764724wme.0.gmail; Mon, 25 May
+ 2020 01:32:07 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxBg5+cId3gZY6s0LQm+bB3OyUO+uuNrva1aziVonViwubgKX/wwS+uT+X3GGc5+iHXPCXZ
+X-Received: by 2002:a1c:9e51:: with SMTP id h78mr26259486wme.177.1590395527925;
+        Mon, 25 May 2020 01:32:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1590395527; cv=none;
+        d=google.com; s=arc-20160816;
+        b=MQJjyb53cYBjXhnPzJDmKtp8PDVhk0eNR4vH7p3V1OoJNCwUF9U8IrW29QABg9FX5f
+         XkNRFGrnAVDHAoGx/nq8XwW6GztfMY2ausS7TW+SizqIUp0FhZZHYZYMEdrqGSpOTbof
+         Jht3i5LWNtKPg8y/WXlNK0Y7Eo9ihopVdkmU7DijibucuuIVy3na5YmRy+S42BIIHN0I
+         nAfFAZdWQgpxJ/eZcF+8kDdwTnrhlZs7upIPqynXaw4y+CW1eQsv1gL0DEQqCkMFGrfR
+         qT1rYriLvZCFExhhhDRHWN15BFTn3xVIA8TAevw/MnlSFA0/G3MDsHVp0Rodh3cF33jd
+         +MlA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=gJ25fCqWFaeKNw9hQvvYFcIcP4BgpGg8Y9hKHEPjD14=;
+        b=QP5k5a2396EF2uPYCndTXyjJlyBTlrzsXAb30p6BzHtFTTste1YF75d/n0m0sva4e4
+         DXeRw/GTiMC0M7d0lPYf6Wn5xp5QLUEQT1OHDmNIIzrqQ+RKbbVftp9Bs+A7HuxK090r
+         1ACgSAcAgcVysEHMXM0Ape2JMI3FjW609hhyL3VnQ9MB704kIXkbCR7ibtP19VwpQwfJ
+         JBl7w4YHXzvKbZhAVNNMgLBaIm7BUjNlQedX2HLDrwJdVVHfNKop88RQl4X/JA36PbNw
+         nKcH2VEmKlVkdXKKjDMNQe6t+mL2/N3CmtsQsRsjC+/GHZr4IfxkszccrGWt7T7teuKt
+         Pv7Q==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ujDyBHdK;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x12c.google.com (mail-lf1-x12c.google.com. [2a00:1450:4864:20::12c])
+        by gmr-mx.google.com with ESMTPS id x12si848853wmj.0.2020.05.25.01.32.07
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 25 May 2020 01:32:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12c as permitted sender) client-ip=2a00:1450:4864:20::12c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ujDyBHdK;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x12c.google.com with SMTP id x22so10068817lfd.4
+        for <opensport@googlegroups.com>; Mon, 25 May 2020 01:32:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=gJ25fCqWFaeKNw9hQvvYFcIcP4BgpGg8Y9hKHEPjD14=;
+        b=ujDyBHdKP3KdQWthg66clRYXTCP1cBvCFdE5AZvr6KhtjuceQbZ8X3WNr3kXPQVu+w
+         XlifhLzvjSugiLPYHD5XPhWGUa9o5G+TdTgewZlOBYX7NjHqlpgpNZcA/LbOF7L7nHSz
+         4aX1nFlx/0WEOVJC5Yu0rxD7oEWttDUGGqX+XkfUgaTAEtgemz5MCuCcIlIIcWFrVQ/q
+         w8wK4yygO1AxwmHtwryjEqcR3Pp4CbGtCXAiQWj3oJ3weN5yvdvJLE4FXkXNVnpHS3S0
+         vn0aVF5v9g8EjgWYve/+08HVP5g8BnQuH/wcwgWqG3sH2eNxQEWcpLaYzybmCb9M8tdu
+         F63A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=gJ25fCqWFaeKNw9hQvvYFcIcP4BgpGg8Y9hKHEPjD14=;
+        b=r+L4/EwsJ0TKVLQQaxgHDM6PD7a+9yivL4BQewejbsuV9CZD3jtsGygH6GtW1RBcQE
+         DSDsDowy1jqLqc+1WIc1/lPlROvd167fCVfMoQItvnM61mbewacYHIgAKVj9aLpGPZ30
+         ytzQfdHBB57CywdFs+/Y3WAhDs6zgh3gQ+H1JCxge0vzqbK+xqqvhl5fZg3OgKbxaw4t
+         Wr3IhM2hTwqmyJ2is4nHcdkehtPRiBV9REBoFSN/qXQzP0s4dQQ9L/YTOlcDk26KRwt8
+         seaGzEEevbn9kdoWYP1gAUn5C4079nVV0mei8qirdvwEGC5fpmqCneWXedrLQ6zkSjXI
+         sAYw==
+X-Gm-Message-State: AOAM530mCDhOvW2pgyR1wa8S+wrHdK2AI1gELkn7l+GTxQmd672ytbTR
+	PIqspokLYUEW91MSH2ZVr0258ZQIV+hJ91GPPCI4eCNL+gw=
+X-Received: by 2002:a19:990:: with SMTP id 138mr13707731lfj.135.1590395527098;
+ Mon, 25 May 2020 01:32:07 -0700 (PDT)
+MIME-Version: 1.0
+References: <31f975f5-294e-4281-9afc-d0971f90160b@googlegroups.com>
+ <CAAxEZd_U=UxLNT++FpopeKciJsw-2Ec_JMWV2y0_peUYtrXCjA@mail.gmail.com>
+ <3884165b-25e5-43dd-90c1-b5fe9aa1aa03@googlegroups.com> <f98aa1da-373c-4b7d-8388-2ec7be5a9d39@googlegroups.com>
+In-Reply-To: <f98aa1da-373c-4b7d-8388-2ec7be5a9d39@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 25 May 2020 10:31:56 +0200
+Message-ID: <CAAxEZd-mkei+eD3TkrOcRHJdgLZxntT_Uj+r7XowUu8VAa3v+g@mail.gmail.com>
+Subject: Re: [opensport] Historical football player dataset
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+    Thanks for the update and highlighting football data sources.
+
+     About the sport.db / football.db  world cup datasets   if you use:
+
+    $ sportdb new worldcup
+    -or-
+     $ git clone https://github.com/openfootball/world-cup.git
+     $ cd world-cup
+     $ sportdb build
+
+      Than it should build a sport.db in your working folder /
+directory from scratch / zero without any errors.
+
+      Yes, sorry, due to the reorg / rewrite the players and goals
+still get skipped / ignored and some world cups still need to get
+converted  to the new format (otherwise they get skipped / ignored
+too).   Cheers. Prost.
+
+
+
+
+
+El lun., 25 may. 2020 a las 0:20, Leonardo Lozano
+(<lozano.leonardo@gmail.com>) escribi=C3=B3:
+>
+> Also, I wonder if anyone has the sportsdb worldcup dataset in sqllite or =
+csv already parsed. When running the sportdb cli the process fails not find=
+ing a relationship.
+>
+> --
+> You received this message because you are subscribed to the Google Groups=
+ "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an=
+ email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit https://groups.google.com/d/msgi=
+d/opensport/f98aa1da-373c-4b7d-8388-2ec7be5a9d39%40googlegroups.com.
+

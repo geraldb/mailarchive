@@ -1,0 +1,72 @@
+From 1611888852992@xxx Tue Jun 16 00:16:54 +0000 2015
+X-GM-THRID: 1613993345024
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,e5e4bee4c598b8d,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.181.13.133 with SMTP id ey5mr2211253wid.0.1405361692376;
+        Mon, 14 Jul 2014 11:14:52 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.36.4 with SMTP id m4ls247826laj.95.gmail; Mon, 14 Jul 2014
+ 11:14:51 -0700 (PDT)
+X-Received: by 10.152.42.129 with SMTP id o1mr404123lal.7.1405361691930;
+        Mon, 14 Jul 2014 11:14:51 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x236.google.com (mail-we0-x236.google.com [2a00:1450:400c:c03::236])
+        by gmr-mx.google.com with ESMTPS id r19si365323wik.0.2014.07.14.11.14.51
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 14 Jul 2014 11:14:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) client-ip=2a00:1450:400c:c03::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x236.google.com with SMTP id q59so4525536wes.27
+        for <opensport@googlegroups.com>; Mon, 14 Jul 2014 11:14:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=mbBTZQea/zN9xee05bPwgePvIAQyONqTRLf6p1lrNMo=;
+        b=qMTLHPO09bGQUiacw3YeVlzsM+9F+c84z0SAde29usaTVIqQ6m3QO6/ExZWy/BdVVQ
+         l4X6ARZRo3FhsjmmVufzSPil7cjMh+bTGhsxqI8J5LteqpyvdyH7WLLGC/ljYanLg5ns
+         syLdSu9d6UMNw/XNx694GFAQQc1yHP0f/llrF4Ap55D28SoYWs5Escjep0DE5Gkh/tHA
+         6OsOHxbENETw8iUeitXl9ntUzsxSQcY8eRKwHdD3321h7tqeYwhyQpUM77E3P7KA9MJP
+         OLAQyJbqCFAkf+gQ8B2WgF0JGVNd5RyVRc+QbF35tSMjo0nzS1eiTXGTERAtpryCvJVy
+         HwPQ==
+MIME-Version: 1.0
+X-Received: by 10.180.10.98 with SMTP id h2mr26531748wib.29.1405361691839;
+ Mon, 14 Jul 2014 11:14:51 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Mon, 14 Jul 2014 11:14:51 -0700 (PDT)
+Date: Mon, 14 Jul 2014 20:14:51 +0200
+Message-ID: <CAAxEZd_kyXUCS02BMHAyHNz5m_inC=-YmuNc5cDzh-C1US38+Q@mail.gmail.com>
+Subject: =?UTF-8?Q?New_Season_=2D_=C3=96sterr=2E_Bundesliga_2014=2F15_=28Austria=29_A?=
+	=?UTF-8?Q?dded?=
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: No more world cup matches? No worries. Just added the Austrian
+Bundesliga [1]! The first round starts this Saturday (5 days and
+counting):
+
+      1. Runde
+
+      [Sa 19.7.]
+      16.30   RB Salzburg       -  Rapid Wien
+      19.00   SV Ried           -  SC Wiener Neustadt
+      19.00   FC Admira Wacker  -  Wolfsberger AC
+      19.00   SCR Altach        -  Sturm Graz
+
+      [So 20.7.]
+      16.30   Austria Wien      -  SV Gr=C3=B6dig
+
+
+   Cheers.
+
+[1] github.com/openfootball/at-austria/tree/master/2014_15
+

@@ -1,0 +1,1249 @@
+From 7018846334338727936@xxx Thu Oct 14 09:08:29 +0000 2021
+X-GM-THRID: 7018846334692098048
+X-Received: by 2002:a05:6214:308:: with SMTP id i8mr4310141qvu.7.1634202509049;
+        Thu, 14 Oct 2021 02:08:29 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a0c:e10d:: with SMTP id w13ls1579419qvk.0.gmail; Thu, 14 Oct
+ 2021 02:08:28 -0700 (PDT)
+X-Received: by 2002:ad4:5de9:: with SMTP id jn9mr4069636qvb.41.1634202508484;
+        Thu, 14 Oct 2021 02:08:28 -0700 (PDT)
+Received: by 2002:a37:f903:0:b0:45f:a992:8d2e with SMTP id af79cd13be357-45faf54a5abms85a;
+        Wed, 13 Oct 2021 07:45:47 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwJygPahuPIZiIUQE0srfDCaQ4mQYBsxv+IEFW4I0Tqyxya8wOHjgfh2KeVeAkHbQkZ8Np2of7W1Q==
+X-Received: by 2002:a37:458:: with SMTP id 85mr15973874qke.39.1634136346581;
+        Wed, 13 Oct 2021 07:45:46 -0700 (PDT)
+X-Google-Thread-Subscription: Yes
+X-Google-Web-Client: true
+Date: Wed, 13 Oct 2021 07:45:46 -0700 (PDT)
+From: Alex Spiers <advspiers@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <fe06b93c-8b86-4cb6-9b4e-f9c642c712c6n@googlegroups.com>
+Subject: Cannot get started with sportdb commandline - bug report
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2774_1525718665.1634136346377"
+
+------=_Part_2774_1525718665.1634136346377
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2775_277246404.1634136346377"
+
+------=_Part_2775_277246404.1634136346377
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi there,
+
+I am really excited to use sportdb. Unfortunately every time I tried to=20
+build database (e.g. using:
+
+sportdb new eng
+
+or=20
+
+sportdb build
+(inside england git repository clone)
+
+I am getting a similar error.
+
+Here's the error I get when just trying the command:
+
+football-to-sqlite england.db 2020-21/1-premierleague.txt
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 184 errors:
+["** !!! WARN !!! - (norm) name conflict/duplicate for club - >Al-Ahly<=20
+normalized to >alahly< already included >Al Ahly, Egypt<",
+ "** !!! WARN !!! - name conflict/duplicate - >Al-Ittihad< will overwrite=
+=20
+>Al Ittihad Al Sakandary, Egypt< with >Al-Ittihad, Saudi Arabia<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Busan IPark<=
+=20
+normalized to >busanipark< already included >Busan I'Park, South Korea<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >FC=20
+Gandzasar-Kapan< normalized to >fcgandzasarkapan< already included >FC=20
+Gandzasar Kapan, Armenia<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >SC/ESV=20
+Parndorf< normalized to >scesvparndorf< already included >SC-ESV Parndorf,=
+=20
+Austria<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >SC/ESV=20
+Parndorf 1919< normalized to >scesvparndorf1919< already included >SC-ESV=
+=20
+Parndorf, Austria<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >SV St. Jakob=
+=20
+Rosental< normalized to >svstjakobrosental< already included >SV St.=20
+Jakob/Rosental, Austria<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Zira FK<=20
+normalized to >zirafk< already included >Zir=C3=A4 FK, Azerbaijan<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Turan-T IK<=
+=20
+normalized to >turantik< already included >PFK Turan Tovuz, Azerbaijan<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Turan-Tovuz=
+=20
+IK< normalized to >turantovuzik< already included >PFK Turan Tovuz,=20
+Azerbaijan<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Turan IK<=20
+normalized to >turanik< already included >PFK Turan Tovuz, Azerbaijan<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Turan Idman=
+=20
+Klubu< normalized to >turanidmanklubu< already included >PFK Turan Tovuz,=
+=20
+Azerbaijan<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Club Brugge<=
+=20
+normalized to >clubbrugge< already included >Club Brugge, Belgium<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Cercle=20
+Brugge< normalized to >cerclebrugge< already included >Cercle Brugge,=20
+Belgium<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Cercle=20
+Brugge KSV< normalized to >cerclebruggeksv< already included >Cercle=20
+Brugge, Belgium<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >PFC=20
+CSKA-Sofia< normalized to >pfccskasofia< already included >PFC CSKA Sofia,=
+=20
+Bulgaria<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >CSKA-Sofia<=
+=20
+normalized to >cskasofia< already included >PFC CSKA Sofia, Bulgaria<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Kjobenhavns=
+=20
+Boldklub< normalized to >kjobenhavnsboldklub< already included >KB=20
+K=C3=B8benhavn (1876-1992), Denmark<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Bronshoj BK<=
+=20
+normalized to >bronshojbk< already included >Br=C3=B8nsh=C3=B8j BK, Denmark=
+<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Vanlose IF<=
+=20
+normalized to >vanloseif< already included >Vanl=C3=B8se IF, Denmark<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >HB Koge<=20
+normalized to >hbkoge< already included >HB K=C3=B8ge, Denmark<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Nykobing FC<=
+=20
+normalized to >nykobingfc< already included >Nyk=C3=B8bing FC, Denmark<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Hillerod=20
+Fodbold< normalized to >hillerodfodbold< already included >Hiller=C3=B8d=20
+Fodbold, Denmark<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >B1901=20
+Nykobing< normalized to >b1901nykobing< already included >B 1901 Nyk=C3=B8b=
+ing=20
+(1901-1994), Denmark<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Man. City<=
+=20
+normalized to >mancity< already included >Manchester City FC, England<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >A.F.C.=20
+Bournemouth< normalized to >afcbournemouth< already included >AFC=20
+Bournemouth, England<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Brighton=20
+Hove Albion< normalized to >brightonhovealbion< already included >Brighton=
+=20
+& Hove Albion FC, England<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Accrington=
+=20
+FC< normalized to >accringtonfc< already included >Accrington FC=20
+(1878-1896), England<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >FC Suduroy<=
+=20
+normalized to >fcsuduroy< already included >FC Su=C3=B0uroy, Faroe Islands<=
+",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >MyPa<=20
+normalized to >mypa< already included >Myllykosken Pallo -47, Finland<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Myllykosken=
+=20
+Pallo-47< normalized to >myllykoskenpallo47< already included >Myllykosken=
+=20
+Pallo -47, Finland<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Myllykosken=
+=20
+Pallo =E2=88=9247< normalized to >myllykoskenpallo47< already included >Myl=
+lykosken=20
+Pallo -47, Finland<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >JJK=20
+Jyvaskyla< normalized to >jjkjyvaskyla< already included >JJK Jyv=C3=A4skyl=
+=C3=A4,=20
+Finland<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Paris Saint=
+=20
+Germain< normalized to >parissaintgermain< already included >Paris=20
+Saint-Germain, France<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >AS St.=20
+=C3=89tienne< normalized to >asst=C3=A9tienne< already included >AS Saint-=
+=C3=89tienne,=20
+France<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >AS St.=20
+Etienne< normalized to >asstetienne< already included >AS Saint-=C3=89tienn=
+e,=20
+France<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >AS=20
+Nancy-Lorraine< normalized to >asnancylorraine< already included >AS Nancy=
+=20
+Lorraine, France<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club -=20
+>Quevilly-Rouen< normalized to >quevillyrouen< already included >US=20
+Quevilly-Rouen M=C3=A9tropole, France<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >=C3=89vian=
+=20
+Thonon-Gaillard FC< normalized to >=C3=A9vianthonongaillardfc< already incl=
+uded=20
+>=C3=89vian TG FC, France<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Evian=20
+Thonon-Gaillard FC< normalized to >evianthonongaillardfc< already included=
+=20
+>=C3=89vian TG FC, France<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Rot-Weiss=20
+Oberhausen< normalized to >rotweissoberhausen< already included >Rot-Wei=C3=
+=9F=20
+Oberhausen, Germany<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Blau-Weiss=
+=20
+90 Berlin< normalized to >blauweiss90berlin< already included >Blau-Wei=C3=
+=9F 90=20
+Berlin (-1992), Germany<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >St. Pauli<=
+=20
+normalized to >stpauli< already included >FC St. Pauli, Germany<",
+ "** !!! WARN !!! - name conflict/duplicate - >Lincoln< will overwrite=20
+>Lincoln City FC, England< with >Lincoln FC, Gibraltar<",
+ "** !!! WARN !!! - name conflict/duplicate - >Apollon< will overwrite=20
+>Apollon Limassol FC, Cyprus< with >Apollon Smyrnis FC, Greece<",
+ "** !!! WARN !!! - name conflict/duplicate - >Olympiakos< will overwrite=
+=20
+>Olympiakos Nicosia FC, Cyprus< with >Olympiacos Piraeus FC, Greece<",
+ "** !!! WARN !!! - name conflict/duplicate - >AEL< will overwrite >AEL=20
+Limassol, Cyprus< with >AE Larissa FC, Greece<",
+ "** !!! WARN !!! - name conflict/duplicate - >Doxa< will overwrite >Doxa=
+=20
+Katokopia FC, Cyprus< with >Doxa Dramas FC, Greece<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Ferencvaros<=
+=20
+normalized to >ferencvaros< already included >Ferencv=C3=A1rosi TC, Hungary=
+<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Gyori ETO<=
+=20
+normalized to >gyorieto< already included >Gy=C5=91ri ETO FC, Hungary<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Raba ETO=20
+Gyor< normalized to >rabaetogyor< already included >Gy=C5=91ri ETO FC, Hung=
+ary<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >ETO Gyor<=20
+normalized to >etogyor< already included >Gy=C5=91ri ETO FC, Hungary<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Diosgyori=20
+VTK< normalized to >diosgyorivtk< already included >Di=C3=B3sgy=C5=91ri VTK=
+,=20
+Hungary<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Diosgyor<=20
+normalized to >diosgyor< already included >Di=C3=B3sgy=C5=91ri VTK, Hungary=
+<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Bekescsabai=
+=20
+Elore< normalized to >bekescsabaielore< already included >B=C3=A9k=C3=A9scs=
+aba 1912=20
+El=C5=91re, Hungary<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >FH=20
+Hafnarfjordur< normalized to >fhhafnarfjordur< already included >FH=20
+Hafnarfj=C3=B6r=C3=B0ur, Iceland<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Breidablik<=
+=20
+normalized to >breidablik< already included >Brei=C3=B0ablik, Iceland<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Stjarnan=20
+Gardab.< normalized to >stjarnangardab< already included >Stjarnan,=20
+Iceland<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >St.=20
+Patricks< normalized to >stpatricks< already included >St Patrick's=20
+Athletic FC, Ireland<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >VVV-Venlo<=
+=20
+normalized to >vvvvenlo< already included >VVV Venlo, Netherlands<",
+ "** !!! WARN !!! - name conflict/duplicate - >Heracles< will overwrite=20
+>Iraklis 1908 Thessaloniki FC, Greece< with >Heracles Almelo, Netherlands<"=
+,
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Lillestrom=
+=20
+SK< normalized to >lillestromsk< already included >Lillestr=C3=B8m SK, Norw=
+ay<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Mjondalen<=
+=20
+normalized to >mjondalen< already included >Mj=C3=B8ndalen IF, Norway<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Bodo Glimt<=
+=20
+normalized to >bodoglimt< already included >Bod=C3=B8/Glimt, Norway<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Ham-Kam<=20
+normalized to >hamkam< already included >Hamarkameratene, Norway<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Strommen IF<=
+=20
+normalized to >strommenif< already included >Str=C3=B8mmen IF, Norway<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Rakow=20
+Czestochowa< normalized to >rakowczestochowa< already included >Rak=C3=B3w=
+=20
+Cz=C4=99stochowa, Poland<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Steaua=20
+Bucuresti< normalized to >steauabucuresti< already included >Steaua=20
+Bucure=C8=99ti, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >FC Steaua=20
+Bucuresti< normalized to >fcsteauabucuresti< already included >Steaua=20
+Bucure=C8=99ti, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Dinamo=20
+Bucuresti< normalized to >dinamobucuresti< already included >Dinamo=20
+Bucure=C8=99ti, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >FC Dinamo=20
+Bucuresti< normalized to >fcdinamobucuresti< already included >Dinamo=20
+Bucure=C8=99ti, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Dinamo=20
+Bucuresti< normalized to >dinamobucuresti< already included >Dinamo=20
+Bucure=C8=99ti, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >FC Rapid=20
+Bucuresti< normalized to >fcrapidbucuresti< already included >Rapid=20
+Bucure=C8=99ti, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Rapid=20
+Bucuresti< normalized to >rapidbucuresti< already included >Rapid=20
+Bucure=C8=99ti, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Daco-Getica=
+=20
+Bucuresti< normalized to >dacogeticabucuresti< already included=20
+>Daco-Getica Bucure=C8=99ti, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >U. Cluj<=20
+normalized to >ucluj< already included >U Cluj, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Ceahlaul=20
+Piatra Neamt< normalized to >ceahlaulpiatraneamt< already included=20
+>Ceahl=C4=83ul Piatra Neam=C8=9B, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Gaz Metan=20
+Medias< normalized to >gazmetanmedias< already included >Gaz Metan Media=C8=
+=99,=20
+Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >CS Gaz Metan=
+=20
+Medias< normalized to >csgazmetanmedias< already included >Gaz Metan=20
+Media=C8=99, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Gloria=20
+Bistrita< normalized to >gloriabistrita< already included >Gloria Bistri=C8=
+=9Ba,=20
+Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Petrolul=20
+Ploiesti< normalized to >petrolulploiesti< already included >FC Petrolul=20
+Ploie=C8=99ti, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >FC Petrolul=
+=20
+Ploiesti< normalized to >fcpetrolulploiesti< already included >FC Petrolul=
+=20
+Ploie=C8=99ti, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >FC Botosani<=
+=20
+normalized to >fcbotosani< already included >FC Boto=C8=99ani, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Otelul<=20
+normalized to >otelul< already included >O=C8=9Belul Gala=C8=9Bi, Romania<"=
+,
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Poli Iasi<=
+=20
+normalized to >poliiasi< already included >FC Politehnica Ia=C8=99i, Romani=
+a<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >CSM=20
+Politehnica Iasi< normalized to >csmpolitehnicaiasi< already included >FC=
+=20
+Politehnica Ia=C8=99i, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Politehnica=
+=20
+Iasi< normalized to >politehnicaiasi< already included >FC Politehnica=20
+Ia=C8=99i, Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >ASA Targu=20
+Mures< normalized to >asatargumures< already included >ASA T=C3=A2rgu Mure=
+=C8=99=20
+(2008-2018), Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Targu Mures<=
+=20
+normalized to >targumures< already included >ASA T=C3=A2rgu Mure=C8=99 (200=
+8-2018),=20
+Romania<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Sibir'<=20
+normalized to >sibir< already included >FC Sibir Novosibirsk, Russia<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Kryl'ia=20
+Sovetov< normalized to >kryliasovetov< already included >PFC Krylya Sovetov=
+=20
+Samara, Russia<",
+ "** !!! WARN !!! - name conflict/duplicate - >Arsenal< will overwrite=20
+>Arsenal FC, England< with >Arsenal Tula, Russia<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >FC=20
+Krasnodar-2< normalized to >fckrasnodar2< already included >FC Krasnodar 2,=
+=20
+Russia<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Kuban'<=20
+normalized to >kuban< already included >FC Kuban, Russia<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Tom'<=20
+normalized to >tom< already included >Tom Tomsk, Russia<",
+ "** !!! WARN !!! - name conflict/duplicate - >Tekstilshchik< will=20
+overwrite >FC Tekstilshchik Ivanovo, Russia< with >FC Tekstilshchik=20
+Kamyshin, Russia<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >AC=20
+Juvenes/Dogana< normalized to >acjuvenesdogana< already included >AC=20
+Juvenes-Dogana, San Marino<",
+ "** !!! WARN !!! - name conflict/duplicate - >Rangers< will overwrite >FC=
+=20
+R=C3=A0nger's, Andorra< with >Rangers FC, Scotland<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Queens Park<=
+=20
+normalized to >queenspark< already included >Queen's Park, Scotland<",
+ "** !!! WARN !!! - name conflict/duplicate - >Hibernians< will overwrite=
+=20
+>Hibernians FC, Malta< with >Hibernian FC, Scotland<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >St.=20
+Johnstone< normalized to >stjohnstone< already included >St Johnstone FC,=
+=20
+Scotland<",
+ "** !!! WARN !!! - name conflict/duplicate - >Red Star< will overwrite=20
+>Red Star FC, France< with >Red Star Belgrade, Serbia<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >SK Slovan=20
+Bratislava< normalized to >skslovanbratislava< already included >=C5=A0K Sl=
+ovan=20
+Bratislava, Slovakia<",
+ "** !!! WARN !!! - name conflict/duplicate - >Valencia< will overwrite=20
+>Valencia FC, Haiti< with >Valencia CF, Spain<",
+ "** !!! WARN !!! - name conflict/duplicate - >Sporting< will overwrite=20
+>Sporting CP, Portugal< with >Sporting Gij=C3=B3n, Spain<",
+ "** !!! WARN !!! - name conflict/duplicate - >Extremadura< will overwrite=
+=20
+>CF Extremadura (-2010), Spain< with >Extremadura UD, Spain<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Djurgarden<=
+=20
+normalized to >djurgarden< already included >Djurg=C3=A5rdens IF, Sweden<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >IFK=20
+Goteborg< normalized to >ifkgoteborg< already included >IFK G=C3=B6teborg,=
+=20
+Sweden<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Goteborg<=20
+normalized to >goteborg< already included >IFK G=C3=B6teborg, Sweden<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Hacken<=20
+normalized to >hacken< already included >BK H=C3=A4cken, Sweden<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Malmo FF<=20
+normalized to >malmoff< already included >Malm=C3=B6 FF, Sweden<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Orebro<=20
+normalized to >orebro< already included >=C3=96rebro SK, Sweden<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Norrkoping<=
+=20
+normalized to >norrkoping< already included >IFK Norrk=C3=B6ping, Sweden<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Galatasar.=
+=20
+Istanbul< normalized to >galatasaristanbul< already included >Galatasaray=
+=20
+=C4=B0stanbul A=C5=9E, Turkey<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Galatasaray=
+=20
+Istanbul< normalized to >galatasarayistanbul< already included >Galatasaray=
+=20
+=C4=B0stanbul A=C5=9E, Turkey<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club -=20
+>Istanbulspor< normalized to >istanbulspor< already included >=C4=B0stanbul=
+spor,=20
+Turkey<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Istanbulspor=
+=20
+AS< normalized to >istanbulsporas< already included >=C4=B0stanbulspor, Tur=
+key<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Altay Izmir<=
+=20
+normalized to >altayizmir< already included >Altay SK, Turkey<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Mersin =C4=
+=B0dman=20
+Yurdu< normalized to >mersinidmanyurdu< already included >Mersin=20
+=C4=B0dmanyurdu, Turkey<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Mersin=20
+Idmanyurdu< normalized to >mersinidmanyurdu< already included >Mersin=20
+=C4=B0dmanyurdu, Turkey<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Mersin Idman=
+=20
+Yurdu< normalized to >mersinidmanyurdu< already included >Mersin=20
+=C4=B0dmanyurdu, Turkey<",
+ "** !!! WARN !!! - name conflict/duplicate - >Guadalajara< will overwrite=
+=20
+>CD Guadalajara, Spain< with >CD Guadalajara Chivas, Mexico<",
+ "** !!! WARN !!! - name conflict/duplicate - >CD Guadalajara< will=20
+overwrite >CD Guadalajara, Spain< with >CD Guadalajara Chivas, Mexico<",
+ "** !!! WARN !!! - name conflict/duplicate - >Atl=C3=A9tico< will overwrit=
+e=20
+>Atl=C3=A9tico Madrid, Spain< with >Atl=C3=A9tico San Luis, Mexico<",
+ "** !!! WARN !!! - name conflict/duplicate - >Atletico< will overwrite=20
+>Atl=C3=A9tico Madrid, Spain< with >Atl=C3=A9tico San Luis, Mexico<",
+ "** !!! WARN !!! - name conflict/duplicate - >Santos< will overwrite=20
+>Santos de Gu=C3=A1piles, Costa Rica< with >Santos Laguna, Mexico<",
+ "** !!! WARN !!! - name conflict/duplicate - >M=C3=A9rida< will overwrite =
+>CP=20
+M=C3=A9rida, Spain< with >M=C3=A9rida, Mexico<",
+ "** !!! WARN !!! - name conflict/duplicate - >Merida< will overwrite >CP=
+=20
+M=C3=A9rida, Spain< with >M=C3=A9rida, Mexico<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >New York Red=
+=20
+Bulls U-23< normalized to >newyorkredbullsu23< already included >New York=
+=20
+Red Bulls U23, United States<",
+ "** !!! WARN !!! - name conflict/duplicate - >Newcastle< will overwrite=20
+>Newcastle United FC, England< with >Newcastle United Jets, Australia<",
+ "** !!! WARN !!! - name conflict/duplicate - >Boca Juniors< will overwrite=
+=20
+>Boca Juniors Gibraltar FC, Gibraltar< with >Boca Juniors, Argentina<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Velez=20
+Sarsfield< normalized to >velezsarsfield< already included >V=C3=A9lez=20
+Sarsfield, Argentina<",
+ "** !!! WARN !!! - name conflict/duplicate - >Velez< will overwrite >FK=20
+Vele=C5=BE, Bosnia and Herzegovina< with >V=C3=A9lez Sarsfield, Argentina<"=
+,
+ "** !!! WARN !!! - name conflict/duplicate - >Atlanta< will overwrite=20
+>Atlanta United FC, United States< with >Atlanta, Argentina<",
+ "** !!! WARN !!! - name conflict/duplicate - >Arsenal< will overwrite=20
+>Arsenal FC, England< with >Arsenal de Sarand=C3=AD, Argentina<",
+ "** !!! WARN !!! - name conflict/duplicate - >Arsenal FC< will overwrite=
+=20
+>Arsenal FC, England< with >Arsenal de Sarand=C3=AD, Argentina<",
+ "** !!! WARN !!! - name conflict/duplicate - >Estudiantes< will overwrite=
+=20
+>Estudiantes UAG, Mexico< with >Estudiantes LP, Argentina<",
+ "** !!! WARN !!! - name conflict/duplicate - >Club Atl=C3=A9tico Hurac=C3=
+=A1n< will=20
+overwrite >Hurac=C3=A1n, Argentina< with >Hurac=C3=A1n de Tres Arroyos, Arg=
+entina<",
+ "** !!! WARN !!! - name conflict/duplicate - >Club Atletico Huracan< will=
+=20
+overwrite >Hurac=C3=A1n, Argentina< with >Hurac=C3=A1n de Tres Arroyos, Arg=
+entina<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Colon Santa=
+=20
+Fe< normalized to >colonsantafe< already included >Col=C3=B3n Santa Fe,=20
+Argentina<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Newells Old=
+=20
+Boys< normalized to >newellsoldboys< already included >Newell's Old Boys,=
+=20
+Argentina<",
+ "** !!! WARN !!! - name conflict/duplicate - >Gimnasia y Esgrima< will=20
+overwrite >Gimnasia y Esgrima LP, Argentina< with >Gimnasia y Esgrima de=20
+Mendoza, Argentina<",
+ "** !!! WARN !!! - name conflict/duplicate - >San Mart=C3=ADn< will overwr=
+ite=20
+>San Mart=C3=ADn San Juan, Argentina< with >San Mart=C3=ADn de Tucum=C3=A1n=
+, Argentina<",
+ "** !!! WARN !!! - name conflict/duplicate - >Club Atl=C3=A9tico San Mart=
+=C3=ADn<=20
+will overwrite >San Mart=C3=ADn San Juan, Argentina< with >San Mart=C3=ADn =
+de=20
+Tucum=C3=A1n, Argentina<",
+ "** !!! WARN !!! - name conflict/duplicate - >San Martin< will overwrite=
+=20
+>San Mart=C3=ADn San Juan, Argentina< with >San Mart=C3=ADn de Tucum=C3=A1n=
+, Argentina<",
+ "** !!! WARN !!! - name conflict/duplicate - >Club Atletico San Martin<=20
+will overwrite >San Mart=C3=ADn San Juan, Argentina< with >San Mart=C3=ADn =
+de=20
+Tucum=C3=A1n, Argentina<",
+ "** !!! WARN !!! - name conflict/duplicate - >San Jose< will overwrite=20
+>San Jose Earthquakes, United States< with >Club Deportivo San Jos=C3=A9,=
+=20
+Bolivia<",
+ "** !!! WARN !!! - name conflict/duplicate - >Santos< will overwrite=20
+>Santos de Gu=C3=A1piles, Costa Rica< with >Santos SP, Brazil<",
+ "** !!! WARN !!! - name conflict/duplicate - >Bragantino< will overwrite=
+=20
+>CA Bragantino (1928-2019), Brazil< with >RB Bragantino, Brazil<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Botafogo=20
+(RJ)< normalized to >botafogorj< already included >Botafogo RJ, Brazil<",
+ "** !!! WARN !!! - name conflict/duplicate - >America< will overwrite=20
+>Club Am=C3=A9rica, Mexico< with >America RJ, Brazil<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Atl=C3=A9tic=
+o/MG<=20
+normalized to >atl=C3=A9ticomg< already included >Atl=C3=A9tico MG, Brazil<=
+",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Atletico MG<=
+=20
+normalized to >atleticomg< already included >Atl=C3=A9tico MG, Brazil<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Atletico/MG<=
+=20
+normalized to >atleticomg< already included >Atl=C3=A9tico MG, Brazil<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Gremio<=20
+normalized to >gremio< already included >Gr=C3=AAmio RS, Brazil<",
+ "** !!! WARN !!! - name conflict/duplicate - >Am=C3=A9rica Futebol Clube< =
+will=20
+overwrite >Am=C3=A9rica MG, Brazil< with >Am=C3=A9rica de Natal, Brazil<",
+ "** !!! WARN !!! - name conflict/duplicate - >Am=C3=A9rica FC< will overwr=
+ite=20
+>Am=C3=A9rica MG, Brazil< with >Am=C3=A9rica de Natal, Brazil<",
+ "** !!! WARN !!! - name conflict/duplicate - >America Futebol Clube< will=
+=20
+overwrite >Am=C3=A9rica MG, Brazil< with >Am=C3=A9rica de Natal, Brazil<",
+ "** !!! WARN !!! - name conflict/duplicate - >America FC< will overwrite=
+=20
+>Am=C3=A9rica MG, Brazil< with >Am=C3=A9rica de Natal, Brazil<",
+ "** !!! WARN !!! - (norm) name conflict/duplicate for club - >Coritiba=20
+Foot Ball Club< normalized to >coritibafootballclub< already included=20
+>Coritiba PR, Brazil<",
+ "** !!! WARN !!! - name conflict/duplicate - >Vit=C3=B3ria< will overwrite=
+=20
+>Vit=C3=B3ria de Guimar=C3=A3es, Portugal< with >EC Vit=C3=B3ria, Brazil<",
+ "** !!! WARN !!! - name conflict/duplicate - >Vitoria< will overwrite=20
+>Vit=C3=B3ria de Guimar=C3=A3es, Portugal< with >EC Vit=C3=B3ria, Brazil<",
+ "** !!! WARN !!! - name conflict/duplicate - >Everton< will overwrite=20
+>Everton FC, England< with >Everton de Vi=C3=B1a del Mar, Chile<",
+ "** !!! WARN !!! - name conflict/duplicate - >Jaguares< will overwrite=20
+>Jaguares Chiapas, Mexico< with >Jaguares de C=C3=B3rdoba, Colombia<",
+ "** !!! WARN !!! - name conflict/duplicate - >Universidad Cat=C3=B3lica< w=
+ill=20
+overwrite >Universidad Cat=C3=B3lica, Chile< with >CD Universidad Cat=C3=B3=
+lica del=20
+Ecuador, Ecuador<",
+ "** !!! WARN !!! - name conflict/duplicate - >Universidad Catolica< will=
+=20
+overwrite >Universidad Cat=C3=B3lica, Chile< with >CD Universidad Cat=C3=B3=
+lica del=20
+Ecuador, Ecuador<",
+ "** !!! WARN !!! - name conflict/duplicate - >Barcelona< will overwrite=20
+>FC Barcelona, Spain< with >Barcelona Guayaquil, Ecuador<",
+ "** !!! WARN !!! - name conflict/duplicate - >Olimpia< will overwrite >CD=
+=20
+Olimpia, Honduras< with >Club Olimpia, Paraguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >Nacional< will overwrite >CD=
+=20
+Nacional Madeira, Portugal< with >Club Nacional, Paraguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >Guarani< will overwrite=20
+>Guarani FC, Brazil< with >Club Guaran=C3=AD, Paraguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >River Plate< will overwrite=
+=20
+>River Plate, Argentina< with >Club River Plate, Paraguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >San Lorenzo< will overwrite=
+=20
+>San Lorenzo, Argentina< with >Club Sportivo San Lorenzo, Paraguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >Sport Boys< will overwrite=
+=20
+>Sport Boys Warnes, Bolivia< with >Sport Boys, Peru<",
+ "** !!! WARN !!! - name conflict/duplicate - >Liverpool< will overwrite=20
+>Liverpool FC, England< with >Liverpool Montevideo, Uruguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >Liverpool FC< will overwrite=
+=20
+>Liverpool FC, England< with >Liverpool Montevideo, Uruguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >Nacional< will overwrite >CD=
+=20
+Nacional Madeira, Portugal< with >Nacional de Montevideo, Uruguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >Club Nacional< will=20
+overwrite >Club Nacional, Paraguay< with >Nacional de Montevideo, Uruguay<"=
+,
+ "** !!! WARN !!! - name conflict/duplicate - >Racing< will overwrite=20
+>Racing Club, Argentina< with >Racing CM, Uruguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >CA River Plate< will=20
+overwrite >River Plate, Argentina< with >CA River Plate, Uruguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >River Plate< will overwrite=
+=20
+>River Plate, Argentina< with >CA River Plate, Uruguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >Club Atl=C3=A9tico River Pla=
+te<=20
+will overwrite >River Plate, Argentina< with >CA River Plate, Uruguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >Club Atletico River Plate<=
+=20
+will overwrite >River Plate, Argentina< with >CA River Plate, Uruguay<",
+ "** !!! WARN !!! - name conflict/duplicate - >Estudiantes< will overwrite=
+=20
+>Estudiantes UAG, Mexico< with >Estudiantes de M=C3=A9rida, Venezuela<",
+ "** !!! WARN !!! - name conflict/duplicate - >Portuguesa< will overwrite=
+=20
+>Portuguesa, Brazil< with >Portuguesa FC, Venezuela<"]
+[debug]    [parse_matchdata] hash: >{:day_name=3D>"Fri", :month_name=3D>"Au=
+g",=20
+:day=3D>"9"}<
+[debug]    [calc_year] ????-8-9 -- start: 2019-07-01
+[debug]    date: >2019-08-09<
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-structs-0.1.2/lib/sportdb/st=
+ructs/structs/match.rb:40:in=20
+`update': wrong number of arguments (given 1, expected 0) (ArgumentError)
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-structs-0.1.2/lib/sportdb/st=
+ructs/structs/match.rb:37:in=20
+`initialize'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/fo=
+rmats/match/match_parser.rb:390:in=20
+`new'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/fo=
+rmats/match/match_parser.rb:390:in=20
+`parse_game'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/fo=
+rmats/match/match_parser.rb:313:in=20
+`try_parse_game'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/fo=
+rmats/match/match_parser.rb:59:in=20
+`block in parse'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/fo=
+rmats/match/match_parser.rb:43:in=20
+`each'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/fo=
+rmats/match/match_parser.rb:43:in=20
+`parse'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/re=
+aders/match_reader.rb:109:in=20
+`block in parse'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/re=
+aders/match_reader.rb:44:in=20
+`each'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/re=
+aders/match_reader.rb:44:in=20
+`parse'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/re=
+aders/match_reader.rb:13:in=20
+`parse'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/re=
+aders/match_reader.rb:9:in=20
+`read'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/re=
+aders.rb:23:in=20
+`read_match'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/football-to-sqlite-0.2.2/lib/footbal=
+l-to-sqlite.rb:65:in=20
+`block in run'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/football-to-sqlite-0.2.2/lib/footbal=
+l-to-sqlite.rb:62:in=20
+`each'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/football-to-sqlite-0.2.2/lib/footbal=
+l-to-sqlite.rb:62:in=20
+`run'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/football-to-sqlite-0.2.2/lib/footbal=
+l-to-sqlite.rb:91:in=20
+`main'
+        from=20
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/football-to-sqlite-0.2.2/bin/footbal=
+l-to-sqlite:17:in=20
+`<top (required)>'
+        from C:/Ruby30-x64/bin/football-to-sqlite:23:in `load'
+        from C:/Ruby30-x64/bin/football-to-sqlite:23:in `<main>'
+
+Any help would be greatly appreciated!
+
+Alex
+
+------=_Part_2775_277246404.1634136346377
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi there,<div><br></div><div>I am really excited to use sportdb. Unfortunat=
+ely every time I tried to build database (e.g. using:</div><div><br></div><=
+div>sportdb new eng</div><div><br></div><div>or&nbsp;</div><div><br></div><=
+div>sportdb build</div><div>(inside england git repository clone)</div><div=
+><br></div><div>I am getting a similar error.</div><div><br></div><div>Here=
+'s the error I get when just trying the command:</div><div><br></div><div>f=
+ootball-to-sqlite england.db 2020-21/1-premierleague.txt<br></div><div><br>=
+</div><div><div>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</div><d=
+iv>&nbsp;184 errors:</div><div>["** !!! WARN !!! - (norm) name conflict/dup=
+licate for club - &gt;Al-Ahly&lt; normalized to &gt;alahly&lt; already incl=
+uded &gt;Al Ahly, Egypt&lt;",</div><div>&nbsp;"** !!! WARN !!! - name confl=
+ict/duplicate - &gt;Al-Ittihad&lt; will overwrite &gt;Al Ittihad Al Sakanda=
+ry, Egypt&lt; with &gt;Al-Ittihad, Saudi Arabia&lt;",</div><div>&nbsp;"** !=
+!! WARN !!! - (norm) name conflict/duplicate for club - &gt;Busan IPark&lt;=
+ normalized to &gt;busanipark&lt; already included &gt;Busan I'Park, South =
+Korea&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplica=
+te for club - &gt;FC Gandzasar-Kapan&lt; normalized to &gt;fcgandzasarkapan=
+&lt; already included &gt;FC Gandzasar Kapan, Armenia&lt;",</div><div>&nbsp=
+;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;SC/ESV Pa=
+rndorf&lt; normalized to &gt;scesvparndorf&lt; already included &gt;SC-ESV =
+Parndorf, Austria&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conf=
+lict/duplicate for club - &gt;SC/ESV Parndorf 1919&lt; normalized to &gt;sc=
+esvparndorf1919&lt; already included &gt;SC-ESV Parndorf, Austria&lt;",</di=
+v><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &=
+gt;SV St. Jakob Rosental&lt; normalized to &gt;svstjakobrosental&lt; alread=
+y included &gt;SV St. Jakob/Rosental, Austria&lt;",</div><div>&nbsp;"** !!!=
+ WARN !!! - (norm) name conflict/duplicate for club - &gt;Zira FK&lt; norma=
+lized to &gt;zirafk&lt; already included &gt;Zir=C3=A4 FK, Azerbaijan&lt;",=
+</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club=
+ - &gt;Turan-T IK&lt; normalized to &gt;turantik&lt; already included &gt;P=
+FK Turan Tovuz, Azerbaijan&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) =
+name conflict/duplicate for club - &gt;Turan-Tovuz IK&lt; normalized to &gt=
+;turantovuzik&lt; already included &gt;PFK Turan Tovuz, Azerbaijan&lt;",</d=
+iv><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - =
+&gt;Turan IK&lt; normalized to &gt;turanik&lt; already included &gt;PFK Tur=
+an Tovuz, Azerbaijan&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name c=
+onflict/duplicate for club - &gt;Turan Idman Klubu&lt; normalized to &gt;tu=
+ranidmanklubu&lt; already included &gt;PFK Turan Tovuz, Azerbaijan&lt;",</d=
+iv><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - =
+&gt;Club Brugge&lt; normalized to &gt;clubbrugge&lt; already included &gt;C=
+lub Brugge, Belgium&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name co=
+nflict/duplicate for club - &gt;Cercle Brugge&lt; normalized to &gt;cercleb=
+rugge&lt; already included &gt;Cercle Brugge, Belgium&lt;",</div><div>&nbsp=
+;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;Cercle Br=
+ugge KSV&lt; normalized to &gt;cerclebruggeksv&lt; already included &gt;Cer=
+cle Brugge, Belgium&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name co=
+nflict/duplicate for club - &gt;PFC CSKA-Sofia&lt; normalized to &gt;pfccsk=
+asofia&lt; already included &gt;PFC CSKA Sofia, Bulgaria&lt;",</div><div>&n=
+bsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;CSKA-S=
+ofia&lt; normalized to &gt;cskasofia&lt; already included &gt;PFC CSKA Sofi=
+a, Bulgaria&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/d=
+uplicate for club - &gt;Kjobenhavns Boldklub&lt; normalized to &gt;kjobenha=
+vnsboldklub&lt; already included &gt;KB K=C3=B8benhavn (1876-1992), Denmark=
+&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate fo=
+r club - &gt;Bronshoj BK&lt; normalized to &gt;bronshojbk&lt; already inclu=
+ded &gt;Br=C3=B8nsh=C3=B8j BK, Denmark&lt;",</div><div>&nbsp;"** !!! WARN !=
+!! - (norm) name conflict/duplicate for club - &gt;Vanlose IF&lt; normalize=
+d to &gt;vanloseif&lt; already included &gt;Vanl=C3=B8se IF, Denmark&lt;",<=
+/div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club =
+- &gt;HB Koge&lt; normalized to &gt;hbkoge&lt; already included &gt;HB K=C3=
+=B8ge, Denmark&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflic=
+t/duplicate for club - &gt;Nykobing FC&lt; normalized to &gt;nykobingfc&lt;=
+ already included &gt;Nyk=C3=B8bing FC, Denmark&lt;",</div><div>&nbsp;"** !=
+!! WARN !!! - (norm) name conflict/duplicate for club - &gt;Hillerod Fodbol=
+d&lt; normalized to &gt;hillerodfodbold&lt; already included &gt;Hiller=C3=
+=B8d Fodbold, Denmark&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name =
+conflict/duplicate for club - &gt;B1901 Nykobing&lt; normalized to &gt;b190=
+1nykobing&lt; already included &gt;B 1901 Nyk=C3=B8bing (1901-1994), Denmar=
+k&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate f=
+or club - &gt;Man. City&lt; normalized to &gt;mancity&lt; already included =
+&gt;Manchester City FC, England&lt;",</div><div>&nbsp;"** !!! WARN !!! - (n=
+orm) name conflict/duplicate for club - &gt;A.F.C. Bournemouth&lt; normaliz=
+ed to &gt;afcbournemouth&lt; already included &gt;AFC Bournemouth, England&=
+lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for=
+ club - &gt;Brighton Hove Albion&lt; normalized to &gt;brightonhovealbion&l=
+t; already included &gt;Brighton &amp; Hove Albion FC, England&lt;",</div><=
+div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;=
+Accrington FC&lt; normalized to &gt;accringtonfc&lt; already included &gt;A=
+ccrington FC (1878-1896), England&lt;",</div><div>&nbsp;"** !!! WARN !!! - =
+(norm) name conflict/duplicate for club - &gt;FC Suduroy&lt; normalized to =
+&gt;fcsuduroy&lt; already included &gt;FC Su=C3=B0uroy, Faroe Islands&lt;",=
+</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club=
+ - &gt;MyPa&lt; normalized to &gt;mypa&lt; already included &gt;Myllykosken=
+ Pallo -47, Finland&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name co=
+nflict/duplicate for club - &gt;Myllykosken Pallo-47&lt; normalized to &gt;=
+myllykoskenpallo47&lt; already included &gt;Myllykosken Pallo -47, Finland&=
+lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for=
+ club - &gt;Myllykosken Pallo =E2=88=9247&lt; normalized to &gt;myllykosken=
+pallo47&lt; already included &gt;Myllykosken Pallo -47, Finland&lt;",</div>=
+<div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt=
+;JJK Jyvaskyla&lt; normalized to &gt;jjkjyvaskyla&lt; already included &gt;=
+JJK Jyv=C3=A4skyl=C3=A4, Finland&lt;",</div><div>&nbsp;"** !!! WARN !!! - (=
+norm) name conflict/duplicate for club - &gt;Paris Saint Germain&lt; normal=
+ized to &gt;parissaintgermain&lt; already included &gt;Paris Saint-Germain,=
+ France&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/dupli=
+cate for club - &gt;AS St. =C3=89tienne&lt; normalized to &gt;asst=C3=A9tie=
+nne&lt; already included &gt;AS Saint-=C3=89tienne, France&lt;",</div><div>=
+&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;AS S=
+t. Etienne&lt; normalized to &gt;asstetienne&lt; already included &gt;AS Sa=
+int-=C3=89tienne, France&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) na=
+me conflict/duplicate for club - &gt;AS Nancy-Lorraine&lt; normalized to &g=
+t;asnancylorraine&lt; already included &gt;AS Nancy Lorraine, France&lt;",<=
+/div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club =
+- &gt;Quevilly-Rouen&lt; normalized to &gt;quevillyrouen&lt; already includ=
+ed &gt;US Quevilly-Rouen M=C3=A9tropole, France&lt;",</div><div>&nbsp;"** !=
+!! WARN !!! - (norm) name conflict/duplicate for club - &gt;=C3=89vian Thon=
+on-Gaillard FC&lt; normalized to &gt;=C3=A9vianthonongaillardfc&lt; already=
+ included &gt;=C3=89vian TG FC, France&lt;",</div><div>&nbsp;"** !!! WARN !=
+!! - (norm) name conflict/duplicate for club - &gt;Evian Thonon-Gaillard FC=
+&lt; normalized to &gt;evianthonongaillardfc&lt; already included &gt;=C3=
+=89vian TG FC, France&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name =
+conflict/duplicate for club - &gt;Rot-Weiss Oberhausen&lt; normalized to &g=
+t;rotweissoberhausen&lt; already included &gt;Rot-Wei=C3=9F Oberhausen, Ger=
+many&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicat=
+e for club - &gt;Blau-Weiss 90 Berlin&lt; normalized to &gt;blauweiss90berl=
+in&lt; already included &gt;Blau-Wei=C3=9F 90 Berlin (-1992), Germany&lt;",=
+</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club=
+ - &gt;St. Pauli&lt; normalized to &gt;stpauli&lt; already included &gt;FC =
+St. Pauli, Germany&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/d=
+uplicate - &gt;Lincoln&lt; will overwrite &gt;Lincoln City FC, England&lt; =
+with &gt;Lincoln FC, Gibraltar&lt;",</div><div>&nbsp;"** !!! WARN !!! - nam=
+e conflict/duplicate - &gt;Apollon&lt; will overwrite &gt;Apollon Limassol =
+FC, Cyprus&lt; with &gt;Apollon Smyrnis FC, Greece&lt;",</div><div>&nbsp;"*=
+* !!! WARN !!! - name conflict/duplicate - &gt;Olympiakos&lt; will overwrit=
+e &gt;Olympiakos Nicosia FC, Cyprus&lt; with &gt;Olympiacos Piraeus FC, Gre=
+ece&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;=
+AEL&lt; will overwrite &gt;AEL Limassol, Cyprus&lt; with &gt;AE Larissa FC,=
+ Greece&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - =
+&gt;Doxa&lt; will overwrite &gt;Doxa Katokopia FC, Cyprus&lt; with &gt;Doxa=
+ Dramas FC, Greece&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name con=
+flict/duplicate for club - &gt;Ferencvaros&lt; normalized to &gt;ferencvaro=
+s&lt; already included &gt;Ferencv=C3=A1rosi TC, Hungary&lt;",</div><div>&n=
+bsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;Gyori =
+ETO&lt; normalized to &gt;gyorieto&lt; already included &gt;Gy=C5=91ri ETO =
+FC, Hungary&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/d=
+uplicate for club - &gt;Raba ETO Gyor&lt; normalized to &gt;rabaetogyor&lt;=
+ already included &gt;Gy=C5=91ri ETO FC, Hungary&lt;",</div><div>&nbsp;"** =
+!!! WARN !!! - (norm) name conflict/duplicate for club - &gt;ETO Gyor&lt; n=
+ormalized to &gt;etogyor&lt; already included &gt;Gy=C5=91ri ETO FC, Hungar=
+y&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate f=
+or club - &gt;Diosgyori VTK&lt; normalized to &gt;diosgyorivtk&lt; already =
+included &gt;Di=C3=B3sgy=C5=91ri VTK, Hungary&lt;",</div><div>&nbsp;"** !!!=
+ WARN !!! - (norm) name conflict/duplicate for club - &gt;Diosgyor&lt; norm=
+alized to &gt;diosgyor&lt; already included &gt;Di=C3=B3sgy=C5=91ri VTK, Hu=
+ngary&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplica=
+te for club - &gt;Bekescsabai Elore&lt; normalized to &gt;bekescsabaielore&=
+lt; already included &gt;B=C3=A9k=C3=A9scsaba 1912 El=C5=91re, Hungary&lt;"=
+,</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for clu=
+b - &gt;FH Hafnarfjordur&lt; normalized to &gt;fhhafnarfjordur&lt; already =
+included &gt;FH Hafnarfj=C3=B6r=C3=B0ur, Iceland&lt;",</div><div>&nbsp;"** =
+!!! WARN !!! - (norm) name conflict/duplicate for club - &gt;Breidablik&lt;=
+ normalized to &gt;breidablik&lt; already included &gt;Brei=C3=B0ablik, Ice=
+land&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicat=
+e for club - &gt;Stjarnan Gardab.&lt; normalized to &gt;stjarnangardab&lt; =
+already included &gt;Stjarnan, Iceland&lt;",</div><div>&nbsp;"** !!! WARN !=
+!! - (norm) name conflict/duplicate for club - &gt;St. Patricks&lt; normali=
+zed to &gt;stpatricks&lt; already included &gt;St Patrick's Athletic FC, Ir=
+eland&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplica=
+te for club - &gt;VVV-Venlo&lt; normalized to &gt;vvvvenlo&lt; already incl=
+uded &gt;VVV Venlo, Netherlands&lt;",</div><div>&nbsp;"** !!! WARN !!! - na=
+me conflict/duplicate - &gt;Heracles&lt; will overwrite &gt;Iraklis 1908 Th=
+essaloniki FC, Greece&lt; with &gt;Heracles Almelo, Netherlands&lt;",</div>=
+<div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt=
+;Lillestrom SK&lt; normalized to &gt;lillestromsk&lt; already included &gt;=
+Lillestr=C3=B8m SK, Norway&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) =
+name conflict/duplicate for club - &gt;Mjondalen&lt; normalized to &gt;mjon=
+dalen&lt; already included &gt;Mj=C3=B8ndalen IF, Norway&lt;",</div><div>&n=
+bsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;Bodo G=
+limt&lt; normalized to &gt;bodoglimt&lt; already included &gt;Bod=C3=B8/Gli=
+mt, Norway&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/du=
+plicate for club - &gt;Ham-Kam&lt; normalized to &gt;hamkam&lt; already inc=
+luded &gt;Hamarkameratene, Norway&lt;",</div><div>&nbsp;"** !!! WARN !!! - =
+(norm) name conflict/duplicate for club - &gt;Strommen IF&lt; normalized to=
+ &gt;strommenif&lt; already included &gt;Str=C3=B8mmen IF, Norway&lt;",</di=
+v><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &=
+gt;Rakow Czestochowa&lt; normalized to &gt;rakowczestochowa&lt; already inc=
+luded &gt;Rak=C3=B3w Cz=C4=99stochowa, Poland&lt;",</div><div>&nbsp;"** !!!=
+ WARN !!! - (norm) name conflict/duplicate for club - &gt;Steaua Bucuresti&=
+lt; normalized to &gt;steauabucuresti&lt; already included &gt;Steaua Bucur=
+e=C8=99ti, Romania&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name con=
+flict/duplicate for club - &gt;FC Steaua Bucuresti&lt; normalized to &gt;fc=
+steauabucuresti&lt; already included &gt;Steaua Bucure=C8=99ti, Romania&lt;=
+",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for cl=
+ub - &gt;Dinamo Bucuresti&lt; normalized to &gt;dinamobucuresti&lt; already=
+ included &gt;Dinamo Bucure=C8=99ti, Romania&lt;",</div><div>&nbsp;"** !!! =
+WARN !!! - (norm) name conflict/duplicate for club - &gt;FC Dinamo Bucurest=
+i&lt; normalized to &gt;fcdinamobucuresti&lt; already included &gt;Dinamo B=
+ucure=C8=99ti, Romania&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name=
+ conflict/duplicate for club - &gt;Dinamo Bucuresti&lt; normalized to &gt;d=
+inamobucuresti&lt; already included &gt;Dinamo Bucure=C8=99ti, Romania&lt;"=
+,</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for clu=
+b - &gt;FC Rapid Bucuresti&lt; normalized to &gt;fcrapidbucuresti&lt; alrea=
+dy included &gt;Rapid Bucure=C8=99ti, Romania&lt;",</div><div>&nbsp;"** !!!=
+ WARN !!! - (norm) name conflict/duplicate for club - &gt;Rapid Bucuresti&l=
+t; normalized to &gt;rapidbucuresti&lt; already included &gt;Rapid Bucure=
+=C8=99ti, Romania&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conf=
+lict/duplicate for club - &gt;Daco-Getica Bucuresti&lt; normalized to &gt;d=
+acogeticabucuresti&lt; already included &gt;Daco-Getica Bucure=C8=99ti, Rom=
+ania&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicat=
+e for club - &gt;U. Cluj&lt; normalized to &gt;ucluj&lt; already included &=
+gt;U Cluj, Romania&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name con=
+flict/duplicate for club - &gt;Ceahlaul Piatra Neamt&lt; normalized to &gt;=
+ceahlaulpiatraneamt&lt; already included &gt;Ceahl=C4=83ul Piatra Neam=C8=
+=9B, Romania&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/=
+duplicate for club - &gt;Gaz Metan Medias&lt; normalized to &gt;gazmetanmed=
+ias&lt; already included &gt;Gaz Metan Media=C8=99, Romania&lt;",</div><div=
+>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;CS =
+Gaz Metan Medias&lt; normalized to &gt;csgazmetanmedias&lt; already include=
+d &gt;Gaz Metan Media=C8=99, Romania&lt;",</div><div>&nbsp;"** !!! WARN !!!=
+ - (norm) name conflict/duplicate for club - &gt;Gloria Bistrita&lt; normal=
+ized to &gt;gloriabistrita&lt; already included &gt;Gloria Bistri=C8=9Ba, R=
+omania&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplic=
+ate for club - &gt;Petrolul Ploiesti&lt; normalized to &gt;petrolulploiesti=
+&lt; already included &gt;FC Petrolul Ploie=C8=99ti, Romania&lt;",</div><di=
+v>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;FC=
+ Petrolul Ploiesti&lt; normalized to &gt;fcpetrolulploiesti&lt; already inc=
+luded &gt;FC Petrolul Ploie=C8=99ti, Romania&lt;",</div><div>&nbsp;"** !!! =
+WARN !!! - (norm) name conflict/duplicate for club - &gt;FC Botosani&lt; no=
+rmalized to &gt;fcbotosani&lt; already included &gt;FC Boto=C8=99ani, Roman=
+ia&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate =
+for club - &gt;Otelul&lt; normalized to &gt;otelul&lt; already included &gt=
+;O=C8=9Belul Gala=C8=9Bi, Romania&lt;",</div><div>&nbsp;"** !!! WARN !!! - =
+(norm) name conflict/duplicate for club - &gt;Poli Iasi&lt; normalized to &=
+gt;poliiasi&lt; already included &gt;FC Politehnica Ia=C8=99i, Romania&lt;"=
+,</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for clu=
+b - &gt;CSM Politehnica Iasi&lt; normalized to &gt;csmpolitehnicaiasi&lt; a=
+lready included &gt;FC Politehnica Ia=C8=99i, Romania&lt;",</div><div>&nbsp=
+;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;Politehni=
+ca Iasi&lt; normalized to &gt;politehnicaiasi&lt; already included &gt;FC P=
+olitehnica Ia=C8=99i, Romania&lt;",</div><div>&nbsp;"** !!! WARN !!! - (nor=
+m) name conflict/duplicate for club - &gt;ASA Targu Mures&lt; normalized to=
+ &gt;asatargumures&lt; already included &gt;ASA T=C3=A2rgu Mure=C8=99 (2008=
+-2018), Romania&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name confli=
+ct/duplicate for club - &gt;Targu Mures&lt; normalized to &gt;targumures&lt=
+; already included &gt;ASA T=C3=A2rgu Mure=C8=99 (2008-2018), Romania&lt;",=
+</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club=
+ - &gt;Sibir'&lt; normalized to &gt;sibir&lt; already included &gt;FC Sibir=
+ Novosibirsk, Russia&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name c=
+onflict/duplicate for club - &gt;Kryl'ia Sovetov&lt; normalized to &gt;kryl=
+iasovetov&lt; already included &gt;PFC Krylya Sovetov Samara, Russia&lt;",<=
+/div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Arsenal&lt=
+; will overwrite &gt;Arsenal FC, England&lt; with &gt;Arsenal Tula, Russia&=
+lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for=
+ club - &gt;FC Krasnodar-2&lt; normalized to &gt;fckrasnodar2&lt; already i=
+ncluded &gt;FC Krasnodar 2, Russia&lt;",</div><div>&nbsp;"** !!! WARN !!! -=
+ (norm) name conflict/duplicate for club - &gt;Kuban'&lt; normalized to &gt=
+;kuban&lt; already included &gt;FC Kuban, Russia&lt;",</div><div>&nbsp;"** =
+!!! WARN !!! - (norm) name conflict/duplicate for club - &gt;Tom'&lt; norma=
+lized to &gt;tom&lt; already included &gt;Tom Tomsk, Russia&lt;",</div><div=
+>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Tekstilshchik&lt; w=
+ill overwrite &gt;FC Tekstilshchik Ivanovo, Russia&lt; with &gt;FC Tekstils=
+hchik Kamyshin, Russia&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name=
+ conflict/duplicate for club - &gt;AC Juvenes/Dogana&lt; normalized to &gt;=
+acjuvenesdogana&lt; already included &gt;AC Juvenes-Dogana, San Marino&lt;"=
+,</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Rangers&=
+lt; will overwrite &gt;FC R=C3=A0nger's, Andorra&lt; with &gt;Rangers FC, S=
+cotland&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/dupli=
+cate for club - &gt;Queens Park&lt; normalized to &gt;queenspark&lt; alread=
+y included &gt;Queen's Park, Scotland&lt;",</div><div>&nbsp;"** !!! WARN !!=
+! - name conflict/duplicate - &gt;Hibernians&lt; will overwrite &gt;Hiberni=
+ans FC, Malta&lt; with &gt;Hibernian FC, Scotland&lt;",</div><div>&nbsp;"**=
+ !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;St. Johnstone=
+&lt; normalized to &gt;stjohnstone&lt; already included &gt;St Johnstone FC=
+, Scotland&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate=
+ - &gt;Red Star&lt; will overwrite &gt;Red Star FC, France&lt; with &gt;Red=
+ Star Belgrade, Serbia&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name=
+ conflict/duplicate for club - &gt;SK Slovan Bratislava&lt; normalized to &=
+gt;skslovanbratislava&lt; already included &gt;=C5=A0K Slovan Bratislava, S=
+lovakia&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - =
+&gt;Valencia&lt; will overwrite &gt;Valencia FC, Haiti&lt; with &gt;Valenci=
+a CF, Spain&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicat=
+e - &gt;Sporting&lt; will overwrite &gt;Sporting CP, Portugal&lt; with &gt;=
+Sporting Gij=C3=B3n, Spain&lt;",</div><div>&nbsp;"** !!! WARN !!! - name co=
+nflict/duplicate - &gt;Extremadura&lt; will overwrite &gt;CF Extremadura (-=
+2010), Spain&lt; with &gt;Extremadura UD, Spain&lt;",</div><div>&nbsp;"** !=
+!! WARN !!! - (norm) name conflict/duplicate for club - &gt;Djurgarden&lt; =
+normalized to &gt;djurgarden&lt; already included &gt;Djurg=C3=A5rdens IF, =
+Sweden&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplic=
+ate for club - &gt;IFK Goteborg&lt; normalized to &gt;ifkgoteborg&lt; alrea=
+dy included &gt;IFK G=C3=B6teborg, Sweden&lt;",</div><div>&nbsp;"** !!! WAR=
+N !!! - (norm) name conflict/duplicate for club - &gt;Goteborg&lt; normaliz=
+ed to &gt;goteborg&lt; already included &gt;IFK G=C3=B6teborg, Sweden&lt;",=
+</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club=
+ - &gt;Hacken&lt; normalized to &gt;hacken&lt; already included &gt;BK H=C3=
+=A4cken, Sweden&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name confli=
+ct/duplicate for club - &gt;Malmo FF&lt; normalized to &gt;malmoff&lt; alre=
+ady included &gt;Malm=C3=B6 FF, Sweden&lt;",</div><div>&nbsp;"** !!! WARN !=
+!! - (norm) name conflict/duplicate for club - &gt;Orebro&lt; normalized to=
+ &gt;orebro&lt; already included &gt;=C3=96rebro SK, Sweden&lt;",</div><div=
+>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;Nor=
+rkoping&lt; normalized to &gt;norrkoping&lt; already included &gt;IFK Norrk=
+=C3=B6ping, Sweden&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name con=
+flict/duplicate for club - &gt;Galatasar. Istanbul&lt; normalized to &gt;ga=
+latasaristanbul&lt; already included &gt;Galatasaray =C4=B0stanbul A=C5=9E,=
+ Turkey&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/dupli=
+cate for club - &gt;Galatasaray Istanbul&lt; normalized to &gt;galatasarayi=
+stanbul&lt; already included &gt;Galatasaray =C4=B0stanbul A=C5=9E, Turkey&=
+lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for=
+ club - &gt;Istanbulspor&lt; normalized to &gt;istanbulspor&lt; already inc=
+luded &gt;=C4=B0stanbulspor, Turkey&lt;",</div><div>&nbsp;"** !!! WARN !!! =
+- (norm) name conflict/duplicate for club - &gt;Istanbulspor AS&lt; normali=
+zed to &gt;istanbulsporas&lt; already included &gt;=C4=B0stanbulspor, Turke=
+y&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate f=
+or club - &gt;Altay Izmir&lt; normalized to &gt;altayizmir&lt; already incl=
+uded &gt;Altay SK, Turkey&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) n=
+ame conflict/duplicate for club - &gt;Mersin =C4=B0dman Yurdu&lt; normalize=
+d to &gt;mersinidmanyurdu&lt; already included &gt;Mersin =C4=B0dmanyurdu, =
+Turkey&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplic=
+ate for club - &gt;Mersin Idmanyurdu&lt; normalized to &gt;mersinidmanyurdu=
+&lt; already included &gt;Mersin =C4=B0dmanyurdu, Turkey&lt;",</div><div>&n=
+bsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - &gt;Mersin=
+ Idman Yurdu&lt; normalized to &gt;mersinidmanyurdu&lt; already included &g=
+t;Mersin =C4=B0dmanyurdu, Turkey&lt;",</div><div>&nbsp;"** !!! WARN !!! - n=
+ame conflict/duplicate - &gt;Guadalajara&lt; will overwrite &gt;CD Guadalaj=
+ara, Spain&lt; with &gt;CD Guadalajara Chivas, Mexico&lt;",</div><div>&nbsp=
+;"** !!! WARN !!! - name conflict/duplicate - &gt;CD Guadalajara&lt; will o=
+verwrite &gt;CD Guadalajara, Spain&lt; with &gt;CD Guadalajara Chivas, Mexi=
+co&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;A=
+tl=C3=A9tico&lt; will overwrite &gt;Atl=C3=A9tico Madrid, Spain&lt; with &g=
+t;Atl=C3=A9tico San Luis, Mexico&lt;",</div><div>&nbsp;"** !!! WARN !!! - n=
+ame conflict/duplicate - &gt;Atletico&lt; will overwrite &gt;Atl=C3=A9tico =
+Madrid, Spain&lt; with &gt;Atl=C3=A9tico San Luis, Mexico&lt;",</div><div>&=
+nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Santos&lt; will overw=
+rite &gt;Santos de Gu=C3=A1piles, Costa Rica&lt; with &gt;Santos Laguna, Me=
+xico&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt=
+;M=C3=A9rida&lt; will overwrite &gt;CP M=C3=A9rida, Spain&lt; with &gt;M=C3=
+=A9rida, Mexico&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/dupl=
+icate - &gt;Merida&lt; will overwrite &gt;CP M=C3=A9rida, Spain&lt; with &g=
+t;M=C3=A9rida, Mexico&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name =
+conflict/duplicate for club - &gt;New York Red Bulls U-23&lt; normalized to=
+ &gt;newyorkredbullsu23&lt; already included &gt;New York Red Bulls U23, Un=
+ited States&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicat=
+e - &gt;Newcastle&lt; will overwrite &gt;Newcastle United FC, England&lt; w=
+ith &gt;Newcastle United Jets, Australia&lt;",</div><div>&nbsp;"** !!! WARN=
+ !!! - name conflict/duplicate - &gt;Boca Juniors&lt; will overwrite &gt;Bo=
+ca Juniors Gibraltar FC, Gibraltar&lt; with &gt;Boca Juniors, Argentina&lt;=
+",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for cl=
+ub - &gt;Velez Sarsfield&lt; normalized to &gt;velezsarsfield&lt; already i=
+ncluded &gt;V=C3=A9lez Sarsfield, Argentina&lt;",</div><div>&nbsp;"** !!! W=
+ARN !!! - name conflict/duplicate - &gt;Velez&lt; will overwrite &gt;FK Vel=
+e=C5=BE, Bosnia and Herzegovina&lt; with &gt;V=C3=A9lez Sarsfield, Argentin=
+a&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;At=
+lanta&lt; will overwrite &gt;Atlanta United FC, United States&lt; with &gt;=
+Atlanta, Argentina&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/d=
+uplicate - &gt;Arsenal&lt; will overwrite &gt;Arsenal FC, England&lt; with =
+&gt;Arsenal de Sarand=C3=AD, Argentina&lt;",</div><div>&nbsp;"** !!! WARN !=
+!! - name conflict/duplicate - &gt;Arsenal FC&lt; will overwrite &gt;Arsena=
+l FC, England&lt; with &gt;Arsenal de Sarand=C3=AD, Argentina&lt;",</div><d=
+iv>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Estudiantes&lt; w=
+ill overwrite &gt;Estudiantes UAG, Mexico&lt; with &gt;Estudiantes LP, Arge=
+ntina&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &g=
+t;Club Atl=C3=A9tico Hurac=C3=A1n&lt; will overwrite &gt;Hurac=C3=A1n, Arge=
+ntina&lt; with &gt;Hurac=C3=A1n de Tres Arroyos, Argentina&lt;",</div><div>=
+&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Club Atletico Huraca=
+n&lt; will overwrite &gt;Hurac=C3=A1n, Argentina&lt; with &gt;Hurac=C3=A1n =
+de Tres Arroyos, Argentina&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) =
+name conflict/duplicate for club - &gt;Colon Santa Fe&lt; normalized to &gt=
+;colonsantafe&lt; already included &gt;Col=C3=B3n Santa Fe, Argentina&lt;",=
+</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club=
+ - &gt;Newells Old Boys&lt; normalized to &gt;newellsoldboys&lt; already in=
+cluded &gt;Newell's Old Boys, Argentina&lt;",</div><div>&nbsp;"** !!! WARN =
+!!! - name conflict/duplicate - &gt;Gimnasia y Esgrima&lt; will overwrite &=
+gt;Gimnasia y Esgrima LP, Argentina&lt; with &gt;Gimnasia y Esgrima de Mend=
+oza, Argentina&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/dupli=
+cate - &gt;San Mart=C3=ADn&lt; will overwrite &gt;San Mart=C3=ADn San Juan,=
+ Argentina&lt; with &gt;San Mart=C3=ADn de Tucum=C3=A1n, Argentina&lt;",</d=
+iv><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Club Atl=C3=
+=A9tico San Mart=C3=ADn&lt; will overwrite &gt;San Mart=C3=ADn San Juan, Ar=
+gentina&lt; with &gt;San Mart=C3=ADn de Tucum=C3=A1n, Argentina&lt;",</div>=
+<div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;San Martin&lt; =
+will overwrite &gt;San Mart=C3=ADn San Juan, Argentina&lt; with &gt;San Mar=
+t=C3=ADn de Tucum=C3=A1n, Argentina&lt;",</div><div>&nbsp;"** !!! WARN !!! =
+- name conflict/duplicate - &gt;Club Atletico San Martin&lt; will overwrite=
+ &gt;San Mart=C3=ADn San Juan, Argentina&lt; with &gt;San Mart=C3=ADn de Tu=
+cum=C3=A1n, Argentina&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflic=
+t/duplicate - &gt;San Jose&lt; will overwrite &gt;San Jose Earthquakes, Uni=
+ted States&lt; with &gt;Club Deportivo San Jos=C3=A9, Bolivia&lt;",</div><d=
+iv>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Santos&lt; will o=
+verwrite &gt;Santos de Gu=C3=A1piles, Costa Rica&lt; with &gt;Santos SP, Br=
+azil&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt=
+;Bragantino&lt; will overwrite &gt;CA Bragantino (1928-2019), Brazil&lt; wi=
+th &gt;RB Bragantino, Brazil&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm=
+) name conflict/duplicate for club - &gt;Botafogo (RJ)&lt; normalized to &g=
+t;botafogorj&lt; already included &gt;Botafogo RJ, Brazil&lt;",</div><div>&=
+nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;America&lt; will over=
+write &gt;Club Am=C3=A9rica, Mexico&lt; with &gt;America RJ, Brazil&lt;",</=
+div><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club -=
+ &gt;Atl=C3=A9tico/MG&lt; normalized to &gt;atl=C3=A9ticomg&lt; already inc=
+luded &gt;Atl=C3=A9tico MG, Brazil&lt;",</div><div>&nbsp;"** !!! WARN !!! -=
+ (norm) name conflict/duplicate for club - &gt;Atletico MG&lt; normalized t=
+o &gt;atleticomg&lt; already included &gt;Atl=C3=A9tico MG, Brazil&lt;",</d=
+iv><div>&nbsp;"** !!! WARN !!! - (norm) name conflict/duplicate for club - =
+&gt;Atletico/MG&lt; normalized to &gt;atleticomg&lt; already included &gt;A=
+tl=C3=A9tico MG, Brazil&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) nam=
+e conflict/duplicate for club - &gt;Gremio&lt; normalized to &gt;gremio&lt;=
+ already included &gt;Gr=C3=AAmio RS, Brazil&lt;",</div><div>&nbsp;"** !!! =
+WARN !!! - name conflict/duplicate - &gt;Am=C3=A9rica Futebol Clube&lt; wil=
+l overwrite &gt;Am=C3=A9rica MG, Brazil&lt; with &gt;Am=C3=A9rica de Natal,=
+ Brazil&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - =
+&gt;Am=C3=A9rica FC&lt; will overwrite &gt;Am=C3=A9rica MG, Brazil&lt; with=
+ &gt;Am=C3=A9rica de Natal, Brazil&lt;",</div><div>&nbsp;"** !!! WARN !!! -=
+ name conflict/duplicate - &gt;America Futebol Clube&lt; will overwrite &gt=
+;Am=C3=A9rica MG, Brazil&lt; with &gt;Am=C3=A9rica de Natal, Brazil&lt;",</=
+div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;America FC&=
+lt; will overwrite &gt;Am=C3=A9rica MG, Brazil&lt; with &gt;Am=C3=A9rica de=
+ Natal, Brazil&lt;",</div><div>&nbsp;"** !!! WARN !!! - (norm) name conflic=
+t/duplicate for club - &gt;Coritiba Foot Ball Club&lt; normalized to &gt;co=
+ritibafootballclub&lt; already included &gt;Coritiba PR, Brazil&lt;",</div>=
+<div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Vit=C3=B3ria&lt=
+; will overwrite &gt;Vit=C3=B3ria de Guimar=C3=A3es, Portugal&lt; with &gt;=
+EC Vit=C3=B3ria, Brazil&lt;",</div><div>&nbsp;"** !!! WARN !!! - name confl=
+ict/duplicate - &gt;Vitoria&lt; will overwrite &gt;Vit=C3=B3ria de Guimar=
+=C3=A3es, Portugal&lt; with &gt;EC Vit=C3=B3ria, Brazil&lt;",</div><div>&nb=
+sp;"** !!! WARN !!! - name conflict/duplicate - &gt;Everton&lt; will overwr=
+ite &gt;Everton FC, England&lt; with &gt;Everton de Vi=C3=B1a del Mar, Chil=
+e&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Ja=
+guares&lt; will overwrite &gt;Jaguares Chiapas, Mexico&lt; with &gt;Jaguare=
+s de C=C3=B3rdoba, Colombia&lt;",</div><div>&nbsp;"** !!! WARN !!! - name c=
+onflict/duplicate - &gt;Universidad Cat=C3=B3lica&lt; will overwrite &gt;Un=
+iversidad Cat=C3=B3lica, Chile&lt; with &gt;CD Universidad Cat=C3=B3lica de=
+l Ecuador, Ecuador&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/d=
+uplicate - &gt;Universidad Catolica&lt; will overwrite &gt;Universidad Cat=
+=C3=B3lica, Chile&lt; with &gt;CD Universidad Cat=C3=B3lica del Ecuador, Ec=
+uador&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &g=
+t;Barcelona&lt; will overwrite &gt;FC Barcelona, Spain&lt; with &gt;Barcelo=
+na Guayaquil, Ecuador&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflic=
+t/duplicate - &gt;Olimpia&lt; will overwrite &gt;CD Olimpia, Honduras&lt; w=
+ith &gt;Club Olimpia, Paraguay&lt;",</div><div>&nbsp;"** !!! WARN !!! - nam=
+e conflict/duplicate - &gt;Nacional&lt; will overwrite &gt;CD Nacional Made=
+ira, Portugal&lt; with &gt;Club Nacional, Paraguay&lt;",</div><div>&nbsp;"*=
+* !!! WARN !!! - name conflict/duplicate - &gt;Guarani&lt; will overwrite &=
+gt;Guarani FC, Brazil&lt; with &gt;Club Guaran=C3=AD, Paraguay&lt;",</div><=
+div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;River Plate&lt; =
+will overwrite &gt;River Plate, Argentina&lt; with &gt;Club River Plate, Pa=
+raguay&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &=
+gt;San Lorenzo&lt; will overwrite &gt;San Lorenzo, Argentina&lt; with &gt;C=
+lub Sportivo San Lorenzo, Paraguay&lt;",</div><div>&nbsp;"** !!! WARN !!! -=
+ name conflict/duplicate - &gt;Sport Boys&lt; will overwrite &gt;Sport Boys=
+ Warnes, Bolivia&lt; with &gt;Sport Boys, Peru&lt;",</div><div>&nbsp;"** !!=
+! WARN !!! - name conflict/duplicate - &gt;Liverpool&lt; will overwrite &gt=
+;Liverpool FC, England&lt; with &gt;Liverpool Montevideo, Uruguay&lt;",</di=
+v><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Liverpool FC&=
+lt; will overwrite &gt;Liverpool FC, England&lt; with &gt;Liverpool Montevi=
+deo, Uruguay&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplica=
+te - &gt;Nacional&lt; will overwrite &gt;CD Nacional Madeira, Portugal&lt; =
+with &gt;Nacional de Montevideo, Uruguay&lt;",</div><div>&nbsp;"** !!! WARN=
+ !!! - name conflict/duplicate - &gt;Club Nacional&lt; will overwrite &gt;C=
+lub Nacional, Paraguay&lt; with &gt;Nacional de Montevideo, Uruguay&lt;",</=
+div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Racing&lt; =
+will overwrite &gt;Racing Club, Argentina&lt; with &gt;Racing CM, Uruguay&l=
+t;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;CA Ri=
+ver Plate&lt; will overwrite &gt;River Plate, Argentina&lt; with &gt;CA Riv=
+er Plate, Uruguay&lt;",</div><div>&nbsp;"** !!! WARN !!! - name conflict/du=
+plicate - &gt;River Plate&lt; will overwrite &gt;River Plate, Argentina&lt;=
+ with &gt;CA River Plate, Uruguay&lt;",</div><div>&nbsp;"** !!! WARN !!! - =
+name conflict/duplicate - &gt;Club Atl=C3=A9tico River Plate&lt; will overw=
+rite &gt;River Plate, Argentina&lt; with &gt;CA River Plate, Uruguay&lt;",<=
+/div><div>&nbsp;"** !!! WARN !!! - name conflict/duplicate - &gt;Club Atlet=
+ico River Plate&lt; will overwrite &gt;River Plate, Argentina&lt; with &gt;=
+CA River Plate, Uruguay&lt;",</div><div>&nbsp;"** !!! WARN !!! - name confl=
+ict/duplicate - &gt;Estudiantes&lt; will overwrite &gt;Estudiantes UAG, Mex=
+ico&lt; with &gt;Estudiantes de M=C3=A9rida, Venezuela&lt;",</div><div>&nbs=
+p;"** !!! WARN !!! - name conflict/duplicate - &gt;Portuguesa&lt; will over=
+write &gt;Portuguesa, Brazil&lt; with &gt;Portuguesa FC, Venezuela&lt;"]</d=
+iv><div>[debug]&nbsp; &nbsp; [parse_matchdata] hash: &gt;{:day_name=3D&gt;"=
+Fri", :month_name=3D&gt;"Aug", :day=3D&gt;"9"}&lt;</div><div>[debug]&nbsp; =
+&nbsp; [calc_year] ????-8-9 -- start: 2019-07-01</div><div>[debug]&nbsp; &n=
+bsp; date: &gt;2019-08-09&lt;</div><div>C:/Ruby30-x64/lib/ruby/gems/3.0.0/g=
+ems/sportdb-structs-0.1.2/lib/sportdb/structs/structs/match.rb:40:in `updat=
+e': wrong number of arguments (given 1, expected 0) (ArgumentError)</div><d=
+iv>&nbsp; &nbsp; &nbsp; &nbsp; from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/=
+sportdb-structs-0.1.2/lib/sportdb/structs/structs/match.rb:37:in `initializ=
+e'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from C:/Ruby30-x64/lib/ruby/gems/3=
+.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/formats/match/match_parser.rb:3=
+90:in `new'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from C:/Ruby30-x64/lib/ru=
+by/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/formats/match/match_pa=
+rser.rb:390:in `parse_game'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from C:/R=
+uby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/format=
+s/match/match_parser.rb:313:in `try_parse_game'</div><div>&nbsp; &nbsp; &nb=
+sp; &nbsp; from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.=
+6/lib/sportdb/formats/match/match_parser.rb:59:in `block in parse'</div><di=
+v>&nbsp; &nbsp; &nbsp; &nbsp; from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/s=
+portdb-formats-1.1.6/lib/sportdb/formats/match/match_parser.rb:43:in `each'=
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from C:/Ruby30-x64/lib/ruby/gems/3.0=
+.0/gems/sportdb-formats-1.1.6/lib/sportdb/formats/match/match_parser.rb:43:=
+in `parse'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from C:/Ruby30-x64/lib/rub=
+y/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/readers/match_reader.rb=
+:109:in `block in parse'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from C:/Ruby=
+30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/readers/m=
+atch_reader.rb:44:in `each'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from C:/R=
+uby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/reader=
+s/match_reader.rb:44:in `parse'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from =
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/re=
+aders/match_reader.rb:13:in `parse'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; f=
+rom C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportd=
+b/readers/match_reader.rb:9:in `read'</div><div>&nbsp; &nbsp; &nbsp; &nbsp;=
+ from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/spor=
+tdb/readers.rb:23:in `read_match'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; fro=
+m C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/football-to-sqlite-0.2.2/lib/footb=
+all-to-sqlite.rb:65:in `block in run'</div><div>&nbsp; &nbsp; &nbsp; &nbsp;=
+ from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/football-to-sqlite-0.2.2/lib/f=
+ootball-to-sqlite.rb:62:in `each'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; fro=
+m C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/football-to-sqlite-0.2.2/lib/footb=
+all-to-sqlite.rb:62:in `run'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from C:/=
+Ruby30-x64/lib/ruby/gems/3.0.0/gems/football-to-sqlite-0.2.2/lib/football-t=
+o-sqlite.rb:91:in `main'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from C:/Ruby=
+30-x64/lib/ruby/gems/3.0.0/gems/football-to-sqlite-0.2.2/bin/football-to-sq=
+lite:17:in `&lt;top (required)&gt;'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; f=
+rom C:/Ruby30-x64/bin/football-to-sqlite:23:in `load'</div><div>&nbsp; &nbs=
+p; &nbsp; &nbsp; from C:/Ruby30-x64/bin/football-to-sqlite:23:in `&lt;main&=
+gt;'</div></div><div><br></div><div>Any help would be greatly appreciated!<=
+/div><div><br></div><div>Alex</div>
+------=_Part_2775_277246404.1634136346377--
+
+------=_Part_2774_1525718665.1634136346377--
+

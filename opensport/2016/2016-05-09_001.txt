@@ -1,0 +1,67 @@
+From 6282638862553448448@xxx Mon May 09 10:47:30 +0000 2016
+X-GM-THRID: 6274810235088535552
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 10.50.32.101 with SMTP id h5mr7315390igi.3.1462790850458;
+        Mon, 09 May 2016 03:47:30 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.232.137 with SMTP id to9ls860982obc.34.gmail; Mon, 09 May
+ 2016 03:47:29 -0700 (PDT)
+X-Received: by 10.157.2.72 with SMTP id 66mr22308646otb.31.1462790849899;
+        Mon, 09 May 2016 03:47:29 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22f.google.com (mail-io0-x22f.google.com. [2607:f8b0:4001:c06::22f])
+        by gmr-mx.google.com with ESMTPS id d2si1260000igx.2.2016.05.09.03.47.29
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 09 May 2016 03:47:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) client-ip=2607:f8b0:4001:c06::22f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22f.google.com with SMTP id d62so168089370iof.2
+        for <opensport@googlegroups.com>; Mon, 09 May 2016 03:47:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=fy0LMTw6NXoME343xbN2k3se/3atucFWM2GXqvb1RuY=;
+        b=MJXeVSQhuxtoUV4NZwdgNxzlz2NvEVUC4nD3DR5meh8bgYo8NSifVs9UjQBo6l/0ET
+         fatnYuSip21tjRCnAVHuApbDOlf1blYzLmW+/p0+Vdu/jAdlpm9YoWbUsTQPaShQ2UdK
+         1gREAEmX2Lb0zkHmlXmOKy8PgTPcS/offpT0S19g1Ho4/Gcdqa/HFgoHJichkj0s+Yxy
+         ZGOA0X3hM/hVBlBecVXlvfZa5AvhZPvcBEF7oEGdNzZ1Y+Ug7K78KmTWWWZ5HY3gK9ZQ
+         JpzCP1ZXT3mPRkpzNjIC7V+yLLYMBftbTzHOEULULEqqxIrtVhhGCC3Gi5ox4QY4BTwH
+         hUpg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=fy0LMTw6NXoME343xbN2k3se/3atucFWM2GXqvb1RuY=;
+        b=Qx+5QTtTll2DVNRd+O3b/hAWw4AKdvDCqOhJSyg4QbVp80qZR7npx/bgHAoiFcdNK9
+         L0LqSwYMvMXY3FsUWPBF3HWFMnn7it14kSEkCIOMZTxJ5Q6z5zPQmjsR8sLZTVLubLmY
+         b1eFfHUFxgh5EZQEvAIPYbPMjGrtBk4Rpse+lPpXl8jmi7Ypo4ji2af7tbj6gHUm3UOd
+         5OSYJlhTtxoHU0RtI/kNNQIHLmquwFfKJA4RgQMRNM8VaHdozdkHlb+ujrg9NnRuHwMl
+         t4iXaEG8Wb417h4gqa7oFodzM+sjfHTGn4kMJCcJVaR7Zw7bW9MnIOPURBvFO666gPaz
+         KNmQ==
+X-Gm-Message-State: AOPr4FWXOHRqKbzcdM1Izf+gzjSsk5LrTvddS+5yJI2EJDztjHIFibz5zkvzKe1kGVQi8WPEwrnrWfTlfBiBbQ==
+MIME-Version: 1.0
+X-Received: by 10.107.63.214 with SMTP id m205mr37542929ioa.15.1462790849745;
+ Mon, 09 May 2016 03:47:29 -0700 (PDT)
+Received: by 10.107.138.84 with HTTP; Mon, 9 May 2016 03:47:29 -0700 (PDT)
+In-Reply-To: <39741348-fcab-4c22-87db-09bc994a91db@googlegroups.com>
+References: <90030c7c-525b-4998-b693-b38fced59185@googlegroups.com>
+	<CAAxEZd-B5eRtxoP9oOSbhfriHL-qj3ipYa_qkcfN3EDZC-6DEA@mail.gmail.com>
+	<9063df30-6b04-4f7c-91b7-421870fd9c77@googlegroups.com>
+	<CAAxEZd9=2X=aM7kTaTXasfcCcQOJYmpdhbvMqYJerA4yb8q3Aw@mail.gmail.com>
+	<39741348-fcab-4c22-87db-09bc994a91db@googlegroups.com>
+Date: Mon, 9 May 2016 12:47:29 +0200
+Message-ID: <CAAxEZd-SkH5LeqHYL8Fx9f1_e6PTr-4oDZ3fyAYQ62_1J751kA@mail.gmail.com>
+Subject: Re: [opensport] Euro 2016 data
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Fantastic. Thanks.  Merged your patch / pull request. 32 to go to
+kick off. Cheers.
+

@@ -1,0 +1,53 @@
+From 1061626576896@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 1027645374464
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,50fabe4ce4bf1a4a
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.52.35.169 with SMTP id i9mr11220585vdj.6.1329947469558;
+        Wed, 22 Feb 2012 13:51:09 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.3.135 with SMTP id 7ls1096446vcn.8.gmail; Wed, 22 Feb 2012
+ 13:51:09 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.52.180.102 with SMTP id dn6mr3494045vdc.6.1329947469182; Wed,
+ 22 Feb 2012 13:51:09 -0800 (PST)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by l1g2000vbc.googlegroups.com with HTTP; Wed, 22 Feb 2012 13:51:09
+ -0800 (PST)
+Date: Wed, 22 Feb 2012 13:51:09 -0800 (PST)
+In-Reply-To: <f7dfc993-6ae3-462f-a708-6a110f326d23@w1g2000vbg.googlegroups.com>
+References: <aadd0f29-af03-45f8-825f-8ec53116ac66@w4g2000vbc.googlegroups.com>
+ <c61948d1-36c4-4134-9ae2-c1e20cb6cfec@e27g2000vbu.googlegroups.com>
+ <38a529db-f2ed-457a-9fb9-d64200e0e9ad@ge5g2000vbb.googlegroups.com>
+ <d42cde4e-5e7f-4457-afa7-2ff12faf513e@z31g2000vbt.googlegroups.com> <f7dfc993-6ae3-462f-a708-6a110f326d23@w1g2000vbg.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EM3GlfoEM8JsKn2G0Wg0
+X-Google-Web-Client: true
+X-Google-Header-Order: HUALENKRC
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:10.0.2)
+ Gecko/20100101 Firefox/10.0.2,gzip(gfe)
+X-Google-IP: 178.190.96.160
+Message-ID: <0a679797-9178-4782-a52c-29baaf1c2fdb@l1g2000vbc.googlegroups.com>
+Subject: Re: Using Images?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   I see. If you use Markdown starting a line with four spaces or more
+will turn it into a code block[1]. A code block will NOT get
+translated to HTML. Thus, if that's the case in your code remove the
+leading spaces.
+
+  Cheers.
+
+[1] http://kramdown.rubyforge.org/quickref.html#code-blocks
+

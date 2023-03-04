@@ -1,0 +1,107 @@
+From 1274295615488@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1273188319232
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,a107a50f8aae9c2b
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.236.153.202 with SMTP id f50mr3719156yhk.48.1371286863550;
+        Sat, 15 Jun 2013 02:01:03 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.60.200 with SMTP id j8ls577353qer.42.gmail; Sat, 15 Jun
+ 2013 02:01:03 -0700 (PDT)
+X-Received: by 10.224.200.202 with SMTP id ex10mr2908777qab.8.1371286863139;
+        Sat, 15 Jun 2013 02:01:03 -0700 (PDT)
+Received: by 10.224.181.200 with SMTP id bz8msqab;
+        Fri, 14 Jun 2013 13:16:26 -0700 (PDT)
+X-Received: by 10.49.62.3 with SMTP id u3mr134164qer.26.1371240986431;
+        Fri, 14 Jun 2013 13:16:26 -0700 (PDT)
+X-Google-Doc-Id: f534739e1b992906
+X-Google-Web-Client: true
+Date: Fri, 14 Jun 2013 13:16:26 -0700 (PDT)
+From: Goozbach <friocorte@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <71414604-4298-4368-85c4-e1d4ddcab69a@googlegroups.com>
+Subject: Slurping a file into a template [ruby s9 template]
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1168_7245769.1371240986211"
+X-Google-Token: EJr07Y0FNrSjU5CKtho0
+X-Google-IP: 96.38.241.146
+
+------=_Part_1168_7245769.1371240986211
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1169_10617991.1371240986212"
+
+------=_Part_1169_10617991.1371240986212
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I've got a slide which I want to make a part of my template.
+
+My template layout looks like this
+
+45427c60eda6298b2783dd8367123c89.jpg  css/                                 
+ slides.html.erb
+Makefile                                                                 
+goozbach.txt                  ui/
+contact.html                                                           lib/ 
+                                  yaml/
+
+
+I want to, at output time, take the contents of 'contact.html' and insert 
+them into my output.
+
+I tried doing this with the following code inside my .erb file:
+
+<div class="slide">
+<!-- contact -->
+<%= IO.read('./contact.html') %>
+</div>
+
+
+But I get file not found errors.
+
+What is the current working directory when  running the slideshow command?
+Or better yet; how can I reference the template directory, to do this 
+"slurp"?
+
+--
+Derek
+
+------=_Part_1169_10617991.1371240986212
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+I've got a slide which I want to make a part of my template.<div><br></div>=
+<div>My template layout looks like this</div><div><br></div><blockquote sty=
+le=3D"margin: 0 0 0 40px; border: none; padding: 0px;"><div><div>45427c60ed=
+a6298b2783dd8367123c89.jpg &nbsp;css/ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp;slides.html.erb</div></div><div><div>Makefile &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; goozbach.txt &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ui/</div></div><div><div=
+>contact.html &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lib/ &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; yaml/</div></div></blockquote><div=
+><br></div><div>I want to, at output time, take the contents of 'contact.ht=
+ml' and insert them into my output.</div><div><br></div><div>I tried doing =
+this with the following code inside my .erb file:</div><div><br></div><bloc=
+kquote style=3D"margin: 0 0 0 40px; border: none; padding: 0px;"><div><span=
+ style=3D"font-size: 13px;">&lt;div class=3D"slide"&gt;</span></div><div>&l=
+t;!-- contact --&gt;</div><div>&lt;%=3D IO.read('./contact.html') %&gt;</di=
+v><div>&lt;/div&gt;</div></blockquote><div><br></div><div>But I get file no=
+t found errors.</div><div><br></div><div>What is the current working direct=
+ory when &nbsp;running the slideshow command?</div><div>Or better yet; how =
+can I reference the template directory, to do this "slurp"?</div><div><br><=
+/div><div>--</div><div>Derek</div>
+------=_Part_1169_10617991.1371240986212--
+
+------=_Part_1168_7245769.1371240986211--
+

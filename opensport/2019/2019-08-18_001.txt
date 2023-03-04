@@ -1,0 +1,132 @@
+From 6726557726369906688@xxx Sun Aug 18 17:19:26 +0000 2019
+X-GM-THRID: 6726557727273779200
+X-Received: by 2002:adf:f584:: with SMTP id f4mr21569244wro.160.1566148765616;
+        Sun, 18 Aug 2019 10:19:25 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:600c:283:: with SMTP id 3ls3172452wmk.5.canary-gmail;
+ Sun, 18 Aug 2019 10:19:24 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqz4LLcx07dw3HKsM1J19pEzRI+BdhNsw1CJbk6YrnVtKdaCmOrGjvtNM3SadxPaCsEUboaW
+X-Received: by 2002:a7b:cb89:: with SMTP id m9mr17288417wmi.50.1566148764799;
+        Sun, 18 Aug 2019 10:19:24 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1566148764; cv=none;
+        d=google.com; s=arc-20160816;
+        b=GuLUdM+wCdPn8/4oKThTPI1M54hqZ29VY9mt+sbRdrhSDxJtuAHNZ83utCiI665Vm6
+         TCcJFLocG9IPrSFScvqi7wlKmQhIf/lJ2186nWz3whwG8zzI6zSyJeXPaJkTqx0DmDRb
+         W7hD5PlYfZlxwRU7R+eDxPpGhxC11PoZZNbHe4zM8CyWPTdJAlxIXe0UZUgcTTB2c68x
+         Rru5j8NVgb5jhMs9Er2hJEmBTQgxoOdZm08ksul7nbRwU0Cd2SxPLJIpT/x1m8w4qKZy
+         SqftXNdE2FoDwZWDPQMflwDbxpgKvPWpGlJvX5UNd6tnkGTssdTmRpP40kbdfVTiZCCJ
+         PKBw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=4k+SCYuD9cIX1uWmDcFUxNoJThxzdpTUmF/CwUKomw8=;
+        b=xmQbBQSU8Qryezlu+VdmsaKXPckCD03PRi7E49grd/Dw2sKVWrGCrpUIDwIJIwf4Qa
+         jXh6sMnoApkkOuoHR+QGf0YQ+syYDImrY/KphC1TKYZheAxcSvum2CxmGp7vmM0syr2R
+         RwpZj0j4nbdQLUSLZqHxtquD2M6GBuYoCTGcummtB6/yC8HWA8l3nSN9KHobGnPOeFyv
+         jeI7wvTciV8+0HivzmGJ9mH/WnQ9uhnhB0F4qgcCd2DJh1fo6QlRcZbbKgcoRb1RxXxL
+         zKLBYIc9o7QmxxDITt8z/ECltaFCToWW/jP8k8ni1Kxa7NXsDrN1R/7CKGTfGXZm0bKE
+         FgTA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ZQXeIhoZ;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x136.google.com (mail-lf1-x136.google.com. [2a00:1450:4864:20::136])
+        by gmr-mx.google.com with ESMTPS id r13si678059wrn.3.2019.08.18.10.19.24
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 18 Aug 2019 10:19:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) client-ip=2a00:1450:4864:20::136;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ZQXeIhoZ;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::136 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x136.google.com with SMTP id b29so7291099lfq.1
+        for <opensport@googlegroups.com>; Sun, 18 Aug 2019 10:19:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=4k+SCYuD9cIX1uWmDcFUxNoJThxzdpTUmF/CwUKomw8=;
+        b=ZQXeIhoZECjSZFGFz+YBe70UF4KJtu77gx//OZQUQ/MpkECqnkaM8xJsRDF8oJyQGW
+         8iF5oVryo50Dbj9QAFUM0OVN603e+tbCHSnu5+wP89qed0bNZXVdX33Ah9r6MLY0Ihd/
+         MS/lbtsMh8h63RqK8R4A3B4fJYR0rU79/9EGASbVM07ViVZxpKunsWBMdrPelcHAcQU2
+         Mef5xu+Zv2dEwnHQvObcaSl/TL3XDDdnqZH+XMbqD4KOnQ7lbsLCztxFd/6RpfZO1TB8
+         XC1F+DYwuvPjoK3gLy4kLp2ORoLJP9uslpN8Rr03ExdY/oqsjAD7fqIfM85rmDbAo4C9
+         uPRA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=4k+SCYuD9cIX1uWmDcFUxNoJThxzdpTUmF/CwUKomw8=;
+        b=ud0zZUmiqAE28tuZoj2WAnhWhNTVf4aM9G0FwkRmU14yqbgjw4z3WvbcooXf9O59ss
+         IuVcD6Ef9BQ3GeLClw5RE8JORYeGTb8PPXz5Te0VwQAeRfns+/tnCfy53RpHBL+oXQop
+         LtMmFa9kFe2o0LOcffyMFIA0ZoD6Bcp687xTss1aGJRzAwDf+lHdoeXNULZ16vQ0XDTA
+         PINP040Crk5B/G/2gqdyM39jqPLhemgXUsjacgZbX+uCoILn0TUNDjakv2QBqibFjD/Y
+         Vgy48rooJia5sDe4Av4kBaXX9IKZ03KQYaZOBXDr4qgkIVGUYKylCfmZd2eG01igvM3Z
+         atEw==
+X-Gm-Message-State: APjAAAX08BtpGYlZ5gd92k00D3iWMyzbL392Bjwi8WKccE9AUlGJ5OLy
+	I4sPazJ9vNhvws3cSofq/0bRraoZMk9YriKzSfV++C/pVVk=
+X-Received: by 2002:ac2:563c:: with SMTP id b28mr9932205lff.93.1566148764207;
+ Sun, 18 Aug 2019 10:19:24 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 18 Aug 2019 19:19:13 +0200
+Message-ID: <CAAxEZd8e8s0MwMATNppShjo1Lg6aO2=0a_PiaN94_pgNTUmvew@mail.gmail.com>
+Subject: footballdb-clubs Library - Match 1500+ Football Club Names from 100+
+ Leagues from Around the World
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   I've put together a new footballdb-clubs library [1]
+that bundles-up an all-in-one football.db /clubs datafile [2]
+and lets you match 1500+ football club names from around the world
+"out-of-the-box " with zero-configuration.
+
+  It's as easy as:
+
+```
+require 'footballdb/clubs'
+
+pp Club.all
+```
+
+resulting in:
+
+```
+[#<Club @name="Al Ahly",              @city="Cairo", @country="Egypt", ...>,
+ #<Club @name="Al Mokawloon Al Arab", @city="Cairo", @country="Egypt", ...>,
+ #<Club @name="El Dakhleya",          @city="Cairo", @country="Egypt", ...>,
+ #<Club @name="El Entag El Harby",    @city="Cairo", @country="Egypt", ...>,
+ ...
+]
+```
+
+What else is new?
+
+Let's match football club names to find the wikipedia page name and url
+(for the English edition):
+
+```
+m = Club.match( 'Club Brugge KV' )
+m[0].wikipedia      #=> "Club Brugge KV"
+m[0].wikipedia_url  #=> "https://en.wikipedia.org/wiki/Club_Brugge_KV"
+
+m = Club.match( 'RSC Anderlecht' )
+m[0].wikipedia      #=> "R.S.C. Anderlecht"
+m[0].wikipedia_url  #=> "https://en.wikipedia.org/wiki/R.S.C._Anderlecht"
+
+# and so on
+# ...
+```
+
+Note:  Find all football club wikipedia page names in the built-in copy
+bundled-up into a single clubs.wiki.txt datafile [3].
+
+
+  Enjoy the beautiful game. Cheers. Prost.
+
+
+[1] https://github.com/sportdb/sport.db/tree/master/footballdb-clubs
+[2] https://github.com/sportdb/sport.db/blob/master/footballdb-clubs/config/clubs.txt
+[3] https://github.com/sportdb/sport.db/blob/master/footballdb-clubs/config/clubs.wiki.txt
+

@@ -1,0 +1,52 @@
+From 6204664896930447360@xxx Mon Oct 12 07:48:41 +0000 2015
+X-GM-THRID: 6204336718697463808
+X-Received: by 10.31.149.200 with SMTP id x191mr22930113vkd.14.1444636121100;
+        Mon, 12 Oct 2015 00:48:41 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.157.149 with SMTP id g143ls1443099ioe.30.gmail; Mon, 12
+ Oct 2015 00:48:40 -0700 (PDT)
+X-Received: by 10.68.236.167 with SMTP id uv7mr22968466pbc.12.1444636120326;
+        Mon, 12 Oct 2015 00:48:40 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22e.google.com (mail-io0-x22e.google.com. [2607:f8b0:4001:c06::22e])
+        by gmr-mx.google.com with ESMTPS id rr9si542055igb.1.2015.10.12.00.48.40
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 12 Oct 2015 00:48:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) client-ip=2607:f8b0:4001:c06::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x22e.google.com with SMTP id v82so43713511iod.0
+        for <opensport@googlegroups.com>; Mon, 12 Oct 2015 00:48:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=nphsRINRJdT5ofUhx8HLrhwzoAWyoIwnWQn6hkSG8nU=;
+        b=sXXK27GGGiW67EG/n9/2JkI1zvMZDWZcu7B3Jbem6fRV7DvkOqAk25YYMFpNjQYrvq
+         aw2V+SNHCBam2BzQnTh0HKbMskrprpHT0nXU44JLK77lWkaohMImV5frbSp5/5KNnr3s
+         oh5DIpH3qbfNOINMxFpj7DR5f0sJWvOCGG47LNFSh1wTkmz5hbUGcXMQHYJmAefXX1/C
+         DUqypbIFiYpu+Gt1qkobH7n3EzBUW+upnHB9TAl381/3hSNMmNlW2CWocR3xn5lLK8tB
+         bSjOkBea2ah7jgiR1CrB1HwcUB0gKh31sYtCE+/8dWhPG0aVsIGRCN3Vf+m5wGumdjwN
+         WYgg==
+MIME-Version: 1.0
+X-Received: by 10.107.25.143 with SMTP id 137mr29485131ioz.52.1444636120157;
+ Mon, 12 Oct 2015 00:48:40 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Mon, 12 Oct 2015 00:48:40 -0700 (PDT)
+In-Reply-To: <724c0697-7859-497c-86e8-b0ba93626d8d@googlegroups.com>
+References: <6418975c-576c-4259-a128-633be882ef04@googlegroups.com>
+	<724c0697-7859-497c-86e8-b0ba93626d8d@googlegroups.com>
+Date: Mon, 12 Oct 2015 09:48:40 +0200
+Message-ID: <CAAxEZd_WyVTHJNZfFQFq7CT56bbFBN81+ynfspHzeg+L1Ap1FA@mail.gmail.com>
+Subject: Re: [opensport] Re: ERROR: Major League Soccer
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for the update. Great to hear that it's working. Thanks for
+the quick fix. Cheers.
+

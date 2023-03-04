@@ -1,0 +1,71 @@
+From 6338741201933434880@xxx Fri Oct 07 15:13:14 +0000 2016
+X-GM-THRID: 6338740501126053888
+X-Received: by 10.36.181.9 with SMTP id v9mr7301505ite.37.1475853194199;
+        Fri, 07 Oct 2016 08:13:14 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.157.16.48 with SMTP id h45ls5489025ote.22.gmail; Fri, 07 Oct
+ 2016 08:13:13 -0700 (PDT)
+X-Received: by 10.157.10.80 with SMTP id 74mr5083323otg.125.1475853193886;
+        Fri, 07 Oct 2016 08:13:13 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x234.google.com (mail-io0-x234.google.com. [2607:f8b0:4001:c06::234])
+        by gmr-mx.google.com with ESMTPS id f196si234054ita.1.2016.10.07.08.13.13
+        for <beerdb@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 07 Oct 2016 08:13:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::234 as permitted sender) client-ip=2607:f8b0:4001:c06::234;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x234.google.com with SMTP id r30so50002848ioi.1
+        for <beerdb@googlegroups.com>; Fri, 07 Oct 2016 08:13:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=H+VFbPv1TygDdb/nhn+aejpLosSjiTV25J9YKIo05gQ=;
+        b=X2PWbB2MHdP2KxGsj1y9TX6qicoUcIDPKfePBgI8KtS9lDM2CBMfO4NondtJClv1Qy
+         Wk1AtAzCfB2DLA3vxk4IM3gJ5unA0/H5Ps0DiEenCIEUa67yT0qkN4ls3QPkk/E4KboC
+         N6yyXkGNAUv/YPCB2gBTlDTqDiNp2kImTM12/Pge7D19Wxu1s2vnVN3cwDHBbNvhOlAQ
+         2nhSagoguruKLnflvxdQyeGnJtrmSBlCreHtH9wWawkU4bKqIbClCtSp0U8gRBkYTkhC
+         8l7HgpG5zY000A/usAgxVwzsRIDRMFGr8bm8S9iUhq64eaWo5H+BnLFkHFR/hk2AISDN
+         y8XQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=H+VFbPv1TygDdb/nhn+aejpLosSjiTV25J9YKIo05gQ=;
+        b=KXw+BwXoTUMqPLqwySWTrFvZiEBt12OnrImES2MvFr+Dz/BF2BdHwX/0PV+sbhqLTN
+         lHmcbAhHos1IWxpho4jutchLVVCXLGdQJUIR+yuRj5FaEcOaCF/xMxLoCcgnxgI8zs1U
+         Kdyz66rS8wH9XNt/BmRIrrUdWItO5/+6GQiSxoBQYstOA7PFNjH/UWDvf55BMudCSKly
+         92z8pAr0HXL4BsORfEsLx7J3olnaP6ipNE/CfnYgQGsZT3IYZEYfDSLPydRD0nM5upQl
+         zYj2PXc7kNkWYKSxWiUWaqieS5SFyCF9zcSeQktanQ4TM4H5ocvGSa6BC5Ajfd2FGgnz
+         trcw==
+X-Gm-Message-State: AA6/9Rmg+cfc+dpYlgRTHp2cJg2X3JBtZMNBMu/b5+aUmVD0fuDupZRGxnqBE71SP8PStDsFjCk/nzH6xevZTA==
+X-Received: by 10.107.171.133 with SMTP id u127mr20723568ioe.102.1475853193457;
+ Fri, 07 Oct 2016 08:13:13 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.141.194 with HTTP; Fri, 7 Oct 2016 08:13:13 -0700 (PDT)
+In-Reply-To: <db64c374-35f8-4fe2-8150-3f1e8f88a4a4@googlegroups.com>
+References: <db64c374-35f8-4fe2-8150-3f1e8f88a4a4@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 7 Oct 2016 17:13:13 +0200
+Message-ID: <CAAxEZd_MwEQE7JdQSTHXFMxip2K-Bf=DKL1iCcJ3nAz3k1VQoQ@mail.gmail.com>
+Subject: Re: [beerdb] NameError: uninitialized constant WorldDb::Model::Region
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for trying beer.db (and world.db).
+
+> Can you suggest how do i get fix this error to get the beer.db and world.db ?
+
+  You have two options:
+
+  1) In your Gemfile downgrade the worlddb-models to an older version
+(region changed to state).
+
+  2) Wait for the next beerdb update (some weeks off - sorry) for a fix.
+
+   Cheers.
+

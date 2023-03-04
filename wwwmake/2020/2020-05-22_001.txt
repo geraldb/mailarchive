@@ -1,0 +1,111 @@
+From 6829579652120444928@xxx Fri May 22 08:17:07 +0000 2020
+X-GM-THRID: 6829348481155465216
+X-Received: by 2002:a2e:9395:: with SMTP id g21mr5143679ljh.417.1590135426907;
+        Fri, 22 May 2020 01:17:06 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a05:6512:3047:: with SMTP id b7ls238769lfb.1.gmail; Fri, 22
+ May 2020 01:17:05 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwCrIsAblyFhurN7cSM8Us3GapTrX1P5NJdCtgzhTOHOKbpTR6bqJJC8zt7+jYYXpUC5S8X
+X-Received: by 2002:a19:f813:: with SMTP id a19mr6857063lff.212.1590135425446;
+        Fri, 22 May 2020 01:17:05 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1590135425; cv=none;
+        d=google.com; s=arc-20160816;
+        b=tKPS8vMgGToaQTWfPSKKWZY9FpLVQTPMHI/z//A5j+oog+XJtKLkjugKIA8mTDyO78
+         EmOWWWFWy3uai7yJznIUs+KfveLl+ttGLP5PDjgsmTpZG+bxLBreQapJ7yk1xLV76RvC
+         JEaj+DYxdLTjGev/yjEnieCnaOA4K86FavmZJ7RcUl4FGNWuxnOQTEgXKGQ3LU358Oef
+         FwsfSFqGrscP6fhxHVV4h3TN+ZKmGuUq8Ral1zEROyL/dimH7BKUE4Ye7TQ0sqGoxEIQ
+         Dar4I/nn0ffPwOdidkvMRgfkIDVWj4XV7LNGmGunl9gz687AZc8EuF8ZuCRzzIXagrsq
+         hAWg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=VIEe43uOKwDlpso0wHySKij+LFbJXjttvaeCP+PQ2mA=;
+        b=tig2F79Lb8Bl3eOJYZMW9AVuOj42N9Cb7sbtue88LvVzijeOEmdeUyZoJD5MJS1fBS
+         KFCPZ2EX8oQKqNZqELH7qwfY9IADxtOadX5iUXBbkmH6RU4igdYo53KtT0AZKC1fwcpU
+         jB0Y5XIMeM/wzkw3kD2ZPWzi6lhThkSE8K+zSsHZ1B1HA4jnL4N1SbHJf2JeTVFKmQZs
+         7jKjR6+Q9VRgNv2kjDDtqdeIXlMIty+kiiosfOiowX8yz5pRxKvPDfNRHqQp4vDgWJyT
+         tpmbk6hrs0vsPCguJqmi/fR0C27UUh9VR9Yaa6/KeaUKTy8BuGWw218Oo1mba80ugYIE
+         frPQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=KqGARdp7;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22e.google.com (mail-lj1-x22e.google.com. [2a00:1450:4864:20::22e])
+        by gmr-mx.google.com with ESMTPS id f16si230950lfm.0.2020.05.22.01.17.05
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 22 May 2020 01:17:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) client-ip=2a00:1450:4864:20::22e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=KqGARdp7;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22e.google.com with SMTP id m12so9188780ljc.6
+        for <wwwmake@googlegroups.com>; Fri, 22 May 2020 01:17:05 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=VIEe43uOKwDlpso0wHySKij+LFbJXjttvaeCP+PQ2mA=;
+        b=KqGARdp7VL9KHIAM1+POyqb6oAFvoSVh6bHw4+yNu5WD7+LIAh4Z7IAdWBawXIh3VZ
+         CP6yEMzeSHKylA6pFxlDgZW2KdfK5iRQ57I0KRzsfRqkaCP/TI7jcifrin8KqWjNp/Oc
+         NPcS0Ij7KJ6uFWLHH32S7mn7TmaXezMFdqZlc2xrmaXK8pXQxPE0S88BIXVAP4RPx/NK
+         SkVgXRoKY+aJ+WFe+wpoIgrzLtZb56iwF1uLhvMh0bjsk+EYWUR2RNGXEA3ht/IZHvUx
+         mn97EmmqxQwrDvT5M2nc6EOcojBrc+HVvIisTMh09erqcof4ZmDJ+GrhYtC/Qk3aXbr7
+         RIfA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=VIEe43uOKwDlpso0wHySKij+LFbJXjttvaeCP+PQ2mA=;
+        b=VKD95H+YnWXi9cBNef2fPu115nbbWBhMS/OW9C29z4QGsT6SzGEG/R7r52kZKIyI3c
+         dg57CVQVy/sJL9lcavlwhWik8oDX8z4nfqZqEohRclaRSdk75tAYOmy2K+KAhRI/k2G8
+         iRpVVKjQuBIRHNCPKk5Nm2rIwvZZ82xeB28sw2zInGFluWgfNqluE7hLQCbaZM7euMQr
+         lonBS/VG3uQ4WLqEHMe53nIVx4xPjEkCKcXcf6HGCLKdB1xQdcOOWiRo+/9sinzFjrwJ
+         5gfGJXUPmN4A1v75jinUh3EH6YMr4bHL3xRBd5Gqh6CJisQvbxSlCExbkmW+SACdF1P/
+         Lodg==
+X-Gm-Message-State: AOAM532qpLpmISqgJzchjoYoZVVFoFwSdnhEoIT3jU3KQfqwopPimM6n
+	HJKC/TfVMZiJzEB6VmaHnixp7/qJ4q+8yBH/qtTeo9uCqcY=
+X-Received: by 2002:a2e:3208:: with SMTP id y8mr7178741ljy.166.1590135424667;
+ Fri, 22 May 2020 01:17:04 -0700 (PDT)
+MIME-Version: 1.0
+References: <3fd5324b-86cd-4ca4-8d75-2e82e9b067b9@googlegroups.com>
+In-Reply-To: <3fd5324b-86cd-4ca4-8d75-2e82e9b067b9@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 22 May 2020 10:16:52 +0200
+Message-ID: <CAAxEZd8SZ7=+gaa_DGMywOcN9hGq8qhYeAkmpz+EKVmzCdDqLg@mail.gmail.com>
+Subject: Re: [wwwmake:504] customizing pluto themes
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   As always thanks for posting your updates, examples and
+tips&tricks. That  keeps the forum alive and maybe sometime more join
+in.
+
+> One thing I've been really curious about, is it possible to make snippets view default?
+
+  A quick and dirty way is to add at the end in js/blank.js:
+
+$(document).ready( function() {
+   ...
+   showSnippets();
+}
+
+   A more "clean" way is to change the blank.css / scss - and remove
+the  display: none
+
+.item-snippet {
+display: none; // hide on startup
+}
+
+  from .item-snippet and add add a new rule
+
+ .item-content {
+  display: none;
+}
+
+    Note - that - sorry - that's just a sketch - that is, untested but
+should give you the idea. Don't be afraid to break things :-).
+Cheers. Prost.
+

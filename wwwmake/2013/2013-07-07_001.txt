@@ -1,0 +1,66 @@
+From 1314252652544@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1312901038080
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,61ca21caaaea5daf,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Date: Sun, 7 Jul 2013 06:02:21 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <5de2e527-7d42-40e7-b638-0f4db33aacf2@googlegroups.com>
+Subject: Slide Show (S9) Update - Adds Light-Weight Plugins (e.g. slideshow
+ install analytics)
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_5642_21736829.1373202141560"
+X-Google-Token: EN3N5Y4FBbmNKcKmFNI0
+X-Google-IP: 188.22.117.39
+
+------=_Part_5642_21736829.1373202141560
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5643_27327603.1373202141563"
+
+------=_Part_5643_27327603.1373202141563
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  I've updated the Slide Show (S9) gem. What's new?
+
+  I've added support for light-weight plugins that you can install the same 
+way as template packs. Example:
+
+     slideshow install analytics   
+
+     or
+  
+     slideshow install 
+https://raw.github.com/slideshow-s9/analytics/master/analytics.txt.plugin
+
+   This will install the analytics helper plugin [1]. Now you can use it in 
+your slides:
+
+     {{ google_analytics code=UA-YOUR-CODE-HERE }}
+
+    To create your own plugins add a manifest to your repo (e.g. 
+analytics.txt.plugin) that lists your Ruby scripts (e.g. 
+analytics_helper.rb).
+
+   That's it. Enjoy. Cheers.
+
+[1] https://github.com/slideshow-s9/analytics
+
+------=_Part_5643_27327603.1373202141563
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello,<br><br>&nbsp; I've updated the Slide Show (S9) gem. What's new?<br><br>&nbsp; I've added support for light-weight plugins that you can install the same way as template packs. Example:<br><br>&nbsp;&nbsp;&nbsp;&nbsp; slideshow install analytics&nbsp;&nbsp; <br><br>&nbsp;&nbsp;&nbsp;&nbsp; or<br>&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp; slideshow install https://raw.github.com/slideshow-s9/analytics/master/analytics.txt.plugin<br><br>&nbsp;&nbsp; This will install the analytics helper plugin [1]. Now you can use it in your slides:<br><br>&nbsp;&nbsp;&nbsp;&nbsp; {{ google_analytics code=UA-YOUR-CODE-HERE }}<br><br>&nbsp;&nbsp;&nbsp; To create your own plugins add a manifest to your repo (e.g. analytics.txt.plugin) that lists your Ruby scripts (e.g. analytics_helper.rb).<br><br>&nbsp;&nbsp; That's it. Enjoy. Cheers.<br><br>[1] https://github.com/slideshow-s9/analytics<br>
+------=_Part_5643_27327603.1373202141563--
+
+------=_Part_5642_21736829.1373202141560--
+

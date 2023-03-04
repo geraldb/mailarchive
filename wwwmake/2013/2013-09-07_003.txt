@@ -1,0 +1,117 @@
+From 1381010243584@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1371358101504
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,f330162d7f89ec67
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,UTF8
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.42.142.135 with SMTP id s7mr3713633icu.21.1378543900610;
+        Sat, 07 Sep 2013 01:51:40 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.50.25.34 with SMTP id z2ls1000243igf.37.canary; Sat, 07 Sep
+ 2013 01:51:40 -0700 (PDT)
+X-Received: by 10.66.160.36 with SMTP id xh4mr2435943pab.11.1378543900232;
+        Sat, 07 Sep 2013 01:51:40 -0700 (PDT)
+Return-Path: <cmpitg@gmail.com>
+Received: from mail-pa0-x22a.google.com (mail-pa0-x22a.google.com [2607:f8b0:400e:c03::22a])
+        by gmr-mx.google.com with ESMTPS id hx4si367866pad.1.1969.12.31.16.00.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 07 Sep 2013 01:51:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of cmpitg@gmail.com designates 2607:f8b0:400e:c03::22a as permitted sender) client-ip=2607:f8b0:400e:c03::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of cmpitg@gmail.com designates 2607:f8b0:400e:c03::22a as permitted sender) smtp.mail=cmpitg@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) d=gmail.com
+Received: by mail-pa0-f42.google.com with SMTP id lj1so4308736pab.29
+        for <webslideshow@googlegroups.com>; Sat, 07 Sep 2013 01:51:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references
+         :in-reply-to:content-type:content-transfer-encoding;
+        bh=PWXUBY14Y0botPz1fg6PmD4jhAybR/7pi5IdXEjTyt8=;
+        b=DmrjYG6+cQiEItUanSWBy5n+jd+PRUgiLidj82IkJSJsnzX/XRSK7FvGTiEJ6WgT+9
+         mkvKSLoiEBzhojUTB+lp4c7EONmp3WcAiPG0y1I7KbKtLhutKGdtzwL/aT5UO5op/9ax
+         Rtv3sJDOJzLp6mPV6RdOIfEGcoATaloz8u9a6Wnn30/uHoLoOqWRTxITmpXRDojUHaYl
+         mkMLpycAzl1s4MiVf7YvVE9q+pYuavwxfxP3studu7SFjaYqVX70z7UTn78BcLdUBnKm
+         xfyNvaHwrYN2VyLFel3EgARYGQbwExfxLRM2Yo+0LEhnoANh6LCHY77ZqxBmCNKwcmJf
+         Pkxw==
+X-Received: by 10.66.163.164 with SMTP id yj4mr8545069pab.91.1378543900109;
+        Sat, 07 Sep 2013 01:51:40 -0700 (PDT)
+Return-Path: <cmpitg@gmail.com>
+Received: from [192.168.1.5] ([118.71.167.199])
+        by mx.google.com with ESMTPSA id wd6sm3375908pab.3.1969.12.31.16.00.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 07 Sep 2013 01:51:39 -0700 (PDT)
+Message-ID: <522AE918.2030706@gmail.com>
+Date: Sat, 07 Sep 2013 15:51:36 +0700
+From: =?UTF-8?B?Tmd1eeG7hW4gSMOgIETGsMahbmc=?= <cmpitg@gmail.com>
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:17.0) Gecko/20130801 Thunderbird/17.0.8
+MIME-Version: 1.0
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow:318] Re: Failed to build default example
+References: <522AD195.1070303@gmail.com> <02aa08d7-25ab-490f-9453-55ccd693c21e@googlegroups.com>
+In-Reply-To: <02aa08d7-25ab-490f-9453-55ccd693c21e@googlegroups.com>
+X-Enigmail-Version: 1.5.2
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi,
+
+El 09/07/2013 03:44 PM, Gerald Bauer escribió:
+> Hello,
+> 
+> Thanks for trying Slideshow (S9). Sorry for the trouble.  Starting
+> w/ the latest version some helpers [1] (e.g. left,right,etc.) moved
+> out of the core gem. Use
+> 
+> $ slideshow update              # to update the shortcut index [2] 
+> $ slideshow install plugins    # install plugins, that is, helpers 
+> (e.g. left,right)
+> 
+> Retry. No everything should work fine. Cheers.
+> 
+> [1] https://github.com/slideshow-s9/tables [2]
+> https://github.com/slideshow-s9/update
+> 
+
+It's good now, thank you very much!  :-)  Should the installation
+instruction change a bit to suit the current release?
+
+All the best,
+Duong
+- -- 
+Duong Nguyen ("Nguyễn Hà Dương" in Vietnamese, 「グエンヤン」 in Japanese)
+Blog: http://reference-error.org
+Public Key: http://reference-error.org/public.key.txt
+"Life is a hack"
+
+- -----BEGIN GEEK CODE BLOCK-----
+Version: 3.12
+GIT/CS/CC/ED/P/TW d++ s:(-:-) !a C+++(++++) ULU++++ P-- L+++ E@
+W++>+++ N+ o+ K w--- O- M@ V- PS+ PE++ Y+>++ PGP++ t+ 5 X+ R- tv+ b+++
+DI+++ D++ G++ e* h* r* y-
+- -----END GEEK CODE BLOCK-----
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - http://www.enigmail.net/
+
+iQIcBAEBAgAGBQJSKukYAAoJEIpp9nyHFJiiK/0P/0w5AsMRLnBKA+0EoEaU8Kb3
+txY+WJBvvKRy1Zz/eXnVxrRjn2cpQpmg6MKWtt9aIqD7w5+L6YTDO+GlkGHR1Oqg
+b1CUAbNlJukxBWi/cNMN5QHwmHod8LQly5q/4nzNLLTtc1Hs46YkpZEcDSN1iBzo
++an69uV0wr6ulLhPwvKSEULGuPKNMZWmCkkPTUmLVum6ywvh1N6QYbpQgsRrIFi8
+wO0QgNCMUBiBO9HfcMAtGZZ14+poUZAD6pPqQ/NHW11zF8j/FitobOFepzaB8606
+L9FLBTd8gIBek6/00RDnrDhcCqvua6bzn5jEfaHojy43bnz7PBwyuK8DACu8mTBJ
+e49mMcYWk7GkMGF3By99Jarfbo7l7w7SFwwhRZwhBwMYvz7WTjyeBSaInbzxwyWl
+MZiBnPUUqiW6Nw+i2b5/L4Jgb+kGSIsKEsi1Yb1TaSYylIrTmPHbozF5zTvICwog
+BvnPJnqkZS8jyZ4BNJjKojOTRiBJHGt+YEf1SxbeNy6454OvDv867oYurFTLO++B
+xnvRR1gsvmlvJBoIagdSPXigZLW6Ye/gRfM/0etcGw+RAxnpZIB2q2TXcFZoFL7d
+sZoFLp56LnIve4gu0ivTun2IP8wobDKh/EHzqStO+P8n8ENLER4T4qV1Lffr7QL3
+ryE1JrDzLcBpCv2qNSiF
+=ADuN
+-----END PGP SIGNATURE-----
+

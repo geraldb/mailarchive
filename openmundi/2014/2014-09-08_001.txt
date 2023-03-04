@@ -1,0 +1,64 @@
+From 287473401856@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 277669216256
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,e4aae085c3c0df3b
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.26.225 with SMTP id o1mr541832lag.4.1410200113887;
+        Mon, 08 Sep 2014 11:15:13 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.180.92.3 with SMTP id ci3ls437480wib.33.canary; Mon, 08 Sep
+ 2014 11:15:13 -0700 (PDT)
+X-Received: by 10.180.72.42 with SMTP id a10mr2146701wiv.7.1410200113570;
+        Mon, 08 Sep 2014 11:15:13 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x232.google.com (mail-wg0-x232.google.com [2a00:1450:400c:c00::232])
+        by gmr-mx.google.com with ESMTPS id i6si235907wiy.0.2014.09.08.11.15.13
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 08 Sep 2014 11:15:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::232 as permitted sender) client-ip=2a00:1450:400c:c00::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f50.google.com with SMTP id x13so3593054wgg.33
+        for <openmundi@googlegroups.com>; Mon, 08 Sep 2014 11:15:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=fkn5/rPQHVq4yt/o+J0T0ADsBqV1Sl6qvPbVRab00eo=;
+        b=VA+RIrkXBGqFyoWkltbu4FOzzz4av4HxoETp5DAu/H9NPCxQM4gNukR/d1OEeU16Kp
+         lo8LC4DDY0yTUq5p26Pa4ooqqMxbUwjCPI/MUPZLahEp5ve60X2xK3FYCWNXFwJaXnkb
+         Kz8IGVfIXLaEwir5HNGC1lTlXQZY3ej0jIMXaEUqIkMsk/KBS7fQiDQ8GrOTlFbrCAhy
+         R2hnoRaxyChR68WvvuYb+i5y9vHiwexZOkzWvktWQUbVnIl+G2eQKKg8EoF3WDJlklfG
+         kD8gciJwn55vP/lo0Ju4BZsStux/GOMdKcp6Bz6gP2h0M9czE1irOMRbbTXiDSe+AnZi
+         eX6A==
+MIME-Version: 1.0
+X-Received: by 10.180.102.130 with SMTP id fo2mr24949567wib.29.1410200113219;
+ Mon, 08 Sep 2014 11:15:13 -0700 (PDT)
+Received: by 10.217.59.194 with HTTP; Mon, 8 Sep 2014 11:15:13 -0700 (PDT)
+In-Reply-To: <697409bd-66cc-4790-a1e2-243f7299aab0@googlegroups.com>
+References: <df9c0513-dd61-4365-a176-00fa220f3b04@googlegroups.com>
+	<697409bd-66cc-4790-a1e2-243f7299aab0@googlegroups.com>
+Date: Mon, 8 Sep 2014 20:15:13 +0200
+Message-ID: <CAAxEZd9W+S+Y_WbkHumFffGdJO6g_E=GHVFYE+YQZ=HY9vbW2g@mail.gmail.com>
+Subject: Re: openWordFactbook repo set up on github
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Eckhard Licher <eckhard.licher@googlemail.com>
+Cc: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Wow. Fantastic. Keep it up. Cheers.
+
+PS: Welcome to the wonders of Github. One idea - suggestion is to use
+a github organization and than split your all-in-one repo into smaller
+repos  (it's your preference) - as seen on openmundi I'm also a "fan"
+of using a pseudo-continent-like folder structure and adding the
+country name to the country code in the filename.  Small changes but
+makes it easier to use / browse ( in my opinion of course). Same for
+more smaller repos - makes it easier to (re)use a part.
+

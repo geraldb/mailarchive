@@ -1,0 +1,102 @@
+From 6868203823742058496@xxx Thu Sep 03 10:18:37 +0000 2020
+X-GM-THRID: 6868203827165659136
+X-Received: by 2002:aed:3a27:: with SMTP id n36mr2588755qte.215.1599128317557;
+        Thu, 03 Sep 2020 03:18:37 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:620a:13c9:: with SMTP id g9ls2724409qkl.4.gmail; Thu, 03
+ Sep 2020 03:18:36 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyE3PH6FwPQf8pUQS/a7OWA6jXDuH/o/KuvItX7X5PO1P8JBiJi7A5d+2DY0keReluy1LcW
+X-Received: by 2002:a37:97c6:: with SMTP id z189mr2413106qkd.74.1599128316644;
+        Thu, 03 Sep 2020 03:18:36 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1599128316; cv=none;
+        d=google.com; s=arc-20160816;
+        b=m0XcLQjDLxQAcjceH6D4x9SgWy3qQ2YFPBjCJnHL7+rnPjTju0JLe1Zc+9vtJsnQXW
+         i6GN6xy8Nq2/YbFN53kwjmuUCi0UKn0RfpsUBP/8npzQBsdw9Oy2GcZ7XjswVmolxz9m
+         BNa+k8BtKhXhzUReHurt2yeFkQ4PNG0odH0kV3HNoESMNYZEVkijLRdOMGS8Hv94vXWZ
+         WSqc0PbAFdpme7hWbz0WbU5j/U0QjhUHAhh9+0dfS9DJ4la5zuShrMFudxEjVs6LuBVY
+         Hyf3Xze4nbNWKPUT7JRSW1gqPFmQNpNgkET7ykUoSHKQFPRX+eO0aQCMzvSVd6IJ0G01
+         H4QQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=7UFfh4esoI+mptpOIYbpLKZBM6MJXjrBnFtKU7zlo1k=;
+        b=bTqgqagLVhosUxLSv13I6FyqYSIK7aV1N+rcVEvnqONy62ziVw2supSZ4l2R1NzS6I
+         5jqNv/zxHvJKzaCGRwHjmDeEc9usbgzfCeZi8DqZN3naePzvfGvg9djlBpxxayP3WfbN
+         /FnKyVBys+qcseBtfoWPx3vLAxKUz0lnZtJdQYa3VbfCH5c5K+PnfzifenMma/YBueLk
+         97DMqt+ynBwX/3c7j11tzEmF287nQbH/x6kq1tgPhhtH6GSx0Eom5Qn8igRqSha9wkil
+         fOELCvb/iog4YYDiZmBw9UR1NkL8NfW/dR4aTrj6DmEzDWnOOR0hNQYofKE0FL+ozgrx
+         LyEw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=mzPHrOAX;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4864:20::102e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-pj1-x102e.google.com (mail-pj1-x102e.google.com. [2607:f8b0:4864:20::102e])
+        by gmr-mx.google.com with ESMTPS id i9si129653qkg.0.2020.09.03.03.18.36
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 03 Sep 2020 03:18:36 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4864:20::102e as permitted sender) client-ip=2607:f8b0:4864:20::102e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=mzPHrOAX;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4864:20::102e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-pj1-x102e.google.com with SMTP id g6so1253913pjl.0
+        for <opensport@googlegroups.com>; Thu, 03 Sep 2020 03:18:36 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=7UFfh4esoI+mptpOIYbpLKZBM6MJXjrBnFtKU7zlo1k=;
+        b=mzPHrOAXt88qdcPT6/7dlUt5EIBWpbR9JOmRPLh6SZlDC9aZLh7aWjeqze/bnMT68U
+         oC9O1V4Kl2E4Ru06KexnqJyjpDpc/BVznh2AImfaH57BpFxJRtkAZspmkHCoJk2MJyq8
+         99AFykpHqAoX3Qgey1o5g0gapSwnOYj66kugqmtMDwlVNGWxdKErW1pmcN1s6G/hv9yA
+         2wQB/KaerHhpeR1dJqVHUzpy5Az+eJqnVBwSDaDdLxZswy7hF4xMJ1ks1nTswsBkqaEU
+         czvUFYsvs0pFW+3PwFN5E+9zWs8Vrx4wbAMAispujSAgILUWOH+6RS2lV6FconSY7FvH
+         Ocdg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=7UFfh4esoI+mptpOIYbpLKZBM6MJXjrBnFtKU7zlo1k=;
+        b=a3n5z/gYLcQ9QtEhlxBCzFawrUQSrdFsrsHALfkn32ZN8YmSM/qvjEMYwE4DTs0/Z3
+         /fCrmD6JAiEpPBhpkXMue1n9tsTjKRmmvnqkWJ+B8j1bN3fTRKc/5BJxp7newyIgo/Ov
+         HnsrSJUFs3HdhsGCtoX+7BV4beYnN2pLWKQzCqIgd9kaS+X0IxOdDhwBUUVQsYX9tTNA
+         9VN4CGGWJYZWQdL8bzrudvtwvKZgMTnPZTWgbHGJg90gd3MEV/P9xTF49fCJnw9zu6K7
+         u4eEzzfVM0Bati2FbKIXvrK1+sjATjljuhhEO1yCnOC4DrRl17aubwcP9ybVjA/iNk+m
+         A32g==
+X-Gm-Message-State: AOAM532oRP8pHAVk1UG5uXmy3CwnSsSji01PAMXc1nm1/uCDIbcFSbzl
+	xqIClB4o13it5QCQJt4m9pT2V0vpT/Hx1Oz/AuwqM2rgIcY2ew==
+X-Received: by 2002:a17:90a:8d85:: with SMTP id d5mr2463030pjo.45.1599128315580;
+ Thu, 03 Sep 2020 03:18:35 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 3 Sep 2020 12:18:25 +0200
+Message-ID: <CAAxEZd-guVrx=0QfwEdeC4shJajaYZ4OfMNBFW+9hJbkdkThfg@mail.gmail.com>
+Subject: football.db - New 2020/21 Seasons - Top 5 Leagues Added - England,
+ Spain, Italy, Germany, France
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I've add the match schedules for the top 5 leagues for the
+new 2020/21 season:
+
+- English Premier League 2020/21
+- Deutsche Bundesliga 2020/21
+- Spanish Primera Divisi=C3=B3n 2020/21
+- Italian Serie A 2020/21
+- French Ligue 2020/21
+
+  See the /2020-21 folder in the country repos / datasets [1][2][3][4][5].
+
+  Enjoy the beautiful game. Cheers. Prost.
+
+[1] https://github.com/openfootball/england
+[2] https://github.com/openfootball/deutschland
+[3] https://github.com/openfootball/espana
+[4] https://github.com/openfootball/italy
+[5] https://github.com/openfootball/france
+

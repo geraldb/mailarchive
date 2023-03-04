@@ -1,0 +1,159 @@
+From 6831683034247331840@xxx Thu May 28 00:19:19 +0000 2020
+X-GM-THRID: 6831424910904000512
+X-Received: by 2002:a9d:2927:: with SMTP id d36mr493173otb.317.1590625158275;
+        Wed, 27 May 2020 17:19:18 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a9d:6a1a:: with SMTP id g26ls108980otn.0.gmail; Wed, 27 May
+ 2020 17:19:17 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJw3NicSz3eGEeb2cIsaUlvBDVP3tFUctSMulDNEBkq+0VMk8XowGo2rx669S66fD0GKNHAc
+X-Received: by 2002:a05:6830:18a:: with SMTP id q10mr504529ota.25.1590625157512;
+        Wed, 27 May 2020 17:19:17 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1590625157; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VzZlTDrgWJQkSlhr5cDDk0jSrjSnwbDP6/b0s4bxVylDAuJ6XoQbjjWOK2v4gAZE0B
+         1RksATcdjCQOM9BqtMKFnzXoMSc/j+t1oUKRgu47PbEvBs2anDo/iTGb5rBAxiCmYkK+
+         +cljFn97IvU97tcrrYj4/bMEdG/pDlx89+9Jl84oXEzUG1cbNkHXVuCJyQMvQm0P3AnZ
+         rg4KudPdzYu3bSMRcnYBC8B0vngqtSsSqFoweP9k58lM9FqLwIkn835V20Gy3oO4ikcX
+         ggUzzqnZ9cGDzhXGetRQh5dEPO7b9R1t+SKYrH3x/gwkeImn8WwGDlLnRk2rz1mHfQ5i
+         nhSw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=wuFU71MCvWI5skz3eVCzzkzIB9Zkjf+YxIVuv1fY6VY=;
+        b=iVjqKjome5cKbowm2SWPAetvT+fPX2UUPOTOcmrGrTx469vEN+cFZe5sG2W+P1R7Cp
+         +cxf0XPB76SdR9IsUa3BeK+nBepbPzyihdtLaShRLJ0IF8dsJ9vF0e0hyaSa8i01SZoh
+         vY3qfg6igcgHIQELq5/CsG8Ntz3z9LgN7G/EkfgYrh/Y5mZUC/VS0xz5DSfb885SfiHv
+         I8keFAzcW4R0X/hTcvpCmTwR1/gkmmHHrXojwT71DYqnxIWcTtcAQPxhu1LaeTHg0RT+
+         GH3afNjwoJP+54TxcUW3Qu2HDQMdziBu/bLzc4BbRu9SnaD5eNGDcwEFK9iT6XzfQtQZ
+         dYNw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=EFhwsGt4;
+       spf=pass (google.com: domain of oscarbatori@gmail.com designates 2607:f8b0:4864:20::f36 as permitted sender) smtp.mailfrom=oscarbatori@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <oscarbatori@gmail.com>
+Received: from mail-qv1-xf36.google.com (mail-qv1-xf36.google.com. [2607:f8b0:4864:20::f36])
+        by gmr-mx.google.com with ESMTPS id e20si390548oie.4.2020.05.27.17.19.17
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 27 May 2020 17:19:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of oscarbatori@gmail.com designates 2607:f8b0:4864:20::f36 as permitted sender) client-ip=2607:f8b0:4864:20::f36;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=EFhwsGt4;
+       spf=pass (google.com: domain of oscarbatori@gmail.com designates 2607:f8b0:4864:20::f36 as permitted sender) smtp.mailfrom=oscarbatori@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-qv1-xf36.google.com with SMTP id z9so12101466qvi.12
+        for <opensport@googlegroups.com>; Wed, 27 May 2020 17:19:17 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=wuFU71MCvWI5skz3eVCzzkzIB9Zkjf+YxIVuv1fY6VY=;
+        b=EFhwsGt4hfUwZjwtenSnqZ2dN3eVjwDvL/JJafdUqbJDpiuLXRPOJ3TcDHwt3gE4dN
+         WaGVR//6Sguxp10kCGvaPD/zWz9pMH+jG95JqQFtnfOt6bJSJD4rxLoG7VAr5TUhFFcb
+         41T+bRi6SP3HceiJ/6Pj16rqXtx7/PQFUr4vhgBxZt7OMwqPTRLKXNT4CfPGgeNihKRu
+         NXlgyPgZwajK+KLfl9fk/+bSLLjxDCSWtolPvF+TCbvBv9/m7bSzqQ2Pwz6GWoWsWBGg
+         KxxSJyDuQMTpjPTorTNGC8yfUPwCEFg35z2VBRm6LFQQ2vEeS4p7QUK7lFemC+edmDtp
+         fU0w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=wuFU71MCvWI5skz3eVCzzkzIB9Zkjf+YxIVuv1fY6VY=;
+        b=PMBTfQ0XQkS2TuiR0VaNeLQWPwqVVWKjLyOHFucj9I0SFoHFYLYXPI0HSB6gkYm8zC
+         BesJjwetsy9nYlBl7SKFgSaVnyCBeO4ApzIS2YI/maMwsETFcq14qhtH+7n7kIeTkRaB
+         1vCsHigzHOBaShFFQBYgwNwGhQNBJsoROkRqMavKOCXadf86qEzE6hPeEz1+hBC6N9xb
+         vAi2VYVWTUUCZK/Icb45jWWOCfvEuHdLZzwAPk0aSWZOImKKI/GIUzTfmOnqvaXX5J1b
+         3Junf7hnz87iOkzv9PJVwG+H1BT/Ow3NptgipvxYjCd6zLYjGVkYRq13AK9p8PtTCv4L
+         pNNA==
+X-Gm-Message-State: AOAM531II8MZaGkgI1S2PG5Q7zlMvyz2IFo8+6CGleV91TfWx/ipJ3Ll
+	TN3GSCC7xwkNFCHyk5lFbqTZGaHpIUW0rrlNzk6qFPMr4zQ=
+X-Received: by 2002:a05:6214:118e:: with SMTP id t14mr573785qvv.201.1590625156830;
+ Wed, 27 May 2020 17:19:16 -0700 (PDT)
+MIME-Version: 1.0
+References: <8a4c2a38-6a6b-4f14-a50b-d1c69366477a@googlegroups.com> <CAAxEZd83BYuMW100SH+PT14Lf+aBobFNAi8EYRW1ABL4ivdVfQ@mail.gmail.com>
+In-Reply-To: <CAAxEZd83BYuMW100SH+PT14Lf+aBobFNAi8EYRW1ABL4ivdVfQ@mail.gmail.com>
+From: Oscar Batori <oscarbatori@gmail.com>
+Date: Wed, 27 May 2020 17:19:06 -0700
+Message-ID: <CAOpxBGzTvUpc-AOokdNh_6HihHEwAxdqAse5tnRSKtghKqFvcQ@mail.gmail.com>
+Subject: Re: [opensport] Hosting data on DoltHub
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary="0000000000007198da05a6aa47a2"
+
+--0000000000007198da05a6aa47a2
+Content-Type: text/plain; charset="UTF-8"
+
+I can allocate time to this starting this weekend, and I am happy to do so.
+I have a good deal of experience designing data infrastructure, and I'd
+love to use this to make an amazing open football database. I will start
+with this one: https://github.com/openfootball/football.json.
+
+I'd like to understand a bit more about the structure of your repos and
+broader goals, so if you have time it would be great to chat for a few
+minutes, that'd be great.
+
+
+
+On Wed, May 27, 2020 at 12:42 AM Gerald Bauer <gerald.bauer@gmail.com>
+wrote:
+
+> Hello,
+>     Thanks for your kind words and thanks for highlighting dolt and
+> dolthub.  Great initiative.
+>
+>     Unfortunately, for now my time is limited and the priority for the
+> next week is to get the format / setup change to v2.0 back to normal.
+>
+>      Keep up your great work on dolt and dolthub. Cheers.
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit
+> https://groups.google.com/d/msgid/opensport/CAAxEZd83BYuMW100SH%2BPT14Lf%2BaBobFNAi8EYRW1ABL4ivdVfQ%40mail.gmail.com
+> .
+>
+
+--0000000000007198da05a6aa47a2
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I can allocate time to this starting this weekend, and I a=
+m happy to do so. I have a good deal of experience designing data infrastru=
+cture, and I&#39;d love to use this to make an amazing open football databa=
+se. I will start with this one:=C2=A0<a href=3D"https://github.com/openfoot=
+ball/football.json">https://github.com/openfootball/football.json</a>.<div>=
+<br></div><div>I&#39;d like to understand a bit more about the structure of=
+ your repos and broader goals, so if you have time it would be great to cha=
+t for a few minutes, that&#39;d be great.=C2=A0<br><div><div><br></div><div=
+><br></div></div></div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr=
+" class=3D"gmail_attr">On Wed, May 27, 2020 at 12:42 AM Gerald Bauer &lt;<a=
+ href=3D"mailto:gerald.bauer@gmail.com">gerald.bauer@gmail.com</a>&gt; wrot=
+e:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0=
+.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex">Hello,<br>
+=C2=A0 =C2=A0 Thanks for your kind words and thanks for highlighting dolt a=
+nd<br>
+dolthub.=C2=A0 Great initiative.<br>
+<br>
+=C2=A0 =C2=A0 Unfortunately, for now my time is limited and the priority fo=
+r the<br>
+next week is to get the format / setup change to v2.0 back to normal.<br>
+<br>
+=C2=A0 =C2=A0 =C2=A0Keep up your great work on dolt and dolthub. Cheers.<br=
+>
+<br>
+-- <br>
+You received this message because you are subscribed to the Google Groups &=
+quot;opensport&quot; group.<br>
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:opensport%2Bunsubscribe@googlegroups.com" target=
+=3D"_blank">opensport+unsubscribe@googlegroups.com</a>.<br>
+To view this discussion on the web visit <a href=3D"https://groups.google.c=
+om/d/msgid/opensport/CAAxEZd83BYuMW100SH%2BPT14Lf%2BaBobFNAi8EYRW1ABL4ivdVf=
+Q%40mail.gmail.com" rel=3D"noreferrer" target=3D"_blank">https://groups.goo=
+gle.com/d/msgid/opensport/CAAxEZd83BYuMW100SH%2BPT14Lf%2BaBobFNAi8EYRW1ABL4=
+ivdVfQ%40mail.gmail.com</a>.<br>
+</blockquote></div>
+
+--0000000000007198da05a6aa47a2--
+

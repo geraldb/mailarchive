@@ -1,0 +1,65 @@
+From 6204340827533082624@xxx Sun Oct 11 10:51:08 +0000 2015
+X-GM-THRID: 6204336720666689536
+X-Received: by 10.68.165.5 with SMTP id yu5mr19246504pbb.1.1444560668141;
+        Sun, 11 Oct 2015 03:51:08 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.158.101 with SMTP id wt5ls1007379obb.25.gmail; Sun, 11 Oct
+ 2015 03:51:07 -0700 (PDT)
+X-Received: by 10.182.126.228 with SMTP id nb4mr19024367obb.19.1444560667766;
+        Sun, 11 Oct 2015 03:51:07 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x230.google.com (mail-ig0-x230.google.com. [2607:f8b0:4001:c05::230])
+        by gmr-mx.google.com with ESMTPS id hx4si360918igb.0.2015.10.11.03.51.07
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 11 Oct 2015 03:51:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::230 as permitted sender) client-ip=2607:f8b0:4001:c05::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x230.google.com with SMTP id z10so29916888igk.1
+        for <opensport@googlegroups.com>; Sun, 11 Oct 2015 03:51:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=pouAPIhnT1OOf9zMa/n8pwGiU3LH+bqq5oLyz75C6jg=;
+        b=SBPLP4slJLG+Rzt9ydXsHM5E/IE6oX1xLNPTOqbPkJfRDAV+xZ1q7ImZdABKZ3dBM2
+         SaNjkz6E0uI9SdQdmLXpdzolhb4sVn6pG3MIk18ntZ2qPZ6xyzfhm6Y2xseuEKhMvMPG
+         9O6jhd/P9n0DRSlDlNQXgWNkuT2VAvbWzxAZhET2OxTb11cWY4UAH0GCVve3JVB+2wH1
+         C9hVw8xfWc+AMoTKXBrI4yQFDHCDzx8rMJJD86tiLvZl7J5HnaxiZNXPbuP3u+CMvqC7
+         rQMBO8c7ohB5c+311zpxeeZzFsoNdNezgzki/jEZeg810bDwL0BfmOj2C/lsNbUw2ciX
+         yS1w==
+MIME-Version: 1.0
+X-Received: by 10.50.41.104 with SMTP id e8mr6671489igl.64.1444560667641; Sun,
+ 11 Oct 2015 03:51:07 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Sun, 11 Oct 2015 03:51:07 -0700 (PDT)
+In-Reply-To: <17088f5e-4ab7-4fa5-acb7-e0c32046c29d@googlegroups.com>
+References: <17088f5e-4ab7-4fa5-acb7-e0c32046c29d@googlegroups.com>
+Date: Sun, 11 Oct 2015 12:51:07 +0200
+Message-ID: <CAAxEZd_+x4FaxOCM0CSoOo=DzT9m0AueTNbGfUFpap2paR-Hzg@mail.gmail.com>
+Subject: Re: [opensport] Error: sportdb new max
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Again thanks for trying the football.db and for trying out the
+max.rb datafile.
+
+> event reader - record for team key >ajacciogfc< not found
+
+   Sorry about the missing update. As with the missing key error in
+the major league soccer dataset the 2014-15/2-ligue2.yml file needs to
+get updated to use the new "literal" format for teams / clubs e.g.
+change
+
+- ajacciogfc
+to
+- GFC Ajaccio
+
+   Cheers.
+

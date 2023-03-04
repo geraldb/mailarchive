@@ -1,0 +1,220 @@
+From 6830415318415835136@xxx Sun May 24 14:19:55 +0000 2020
+X-GM-THRID: 6830148481396506624
+X-Gmail-Labels: Topic type: DISCUSSION
+Date: Sun, 24 May 2020 07:19:55 -0700 (PDT)
+From: infominer <infominer33@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <1aca6108-683e-4cbd-9b62-42fbd1f0c2d4@googlegroups.com>
+In-Reply-To: <86a8c872-b04f-481e-8124-3035a23ffb3e@googlegroups.com>
+References: <86a8c872-b04f-481e-8124-3035a23ffb3e@googlegroups.com>
+Subject: Re: using datasette to explore sqlite .db files
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_37_1378930163.1590329995635"
+X-Google-Token: EIuFqvYF1tFr-a9Gp640
+X-Google-IP: 3.14.172.171
+
+------=_Part_37_1378930163.1590329995635
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_38_842179537.1590329995635"
+
+------=_Part_38_842179537.1590329995635
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Just found this related repository:
+
+https://github.com/dogsheep/dogsheep.github.io
+
+Dogsheep is a collection of tools for *personal analytics* using SQLite 
+> <https://www.sqlite.org/> and Datasette 
+> <https://github.com/simonw/datasette>.
+>
+> Big internet companies know a *lot* about us. By exporting that data back 
+> out of them we can see what they know and maybe learn something interesting 
+> about ourselves.
+>
+> Read more about Dogsheep on my blog: simonwillison.net/tags/dogsheep
+>
+
+Then there's a handful of tools for transforming your data exports from 
+various services into sqlite, to be explorable via Datasette
+
+>
+>    - *twitter-to-sqlite <https://github.com/dogsheep/twitter-to-sqlite>* 
+>    uses the Twitter API or Twitter's "export your data" zip archive to create 
+>    a database of your tweets, followers, people you follow, favourited tweets 
+>    and much more besides.
+>    - *healthkit-to-sqlite 
+>    <https://github.com/dogsheep/healthkit-to-sqlite>* converts your Apple 
+>    HealthKit export into a database, with details of your heart rate, 
+>    workouts, step count and more.
+>    - *swarm-to-sqlite <https://github.com/dogsheep/swarm-to-sqlite>* 
+>    imports your checkin history from Foursquare Swarm.
+>    - *inaturalist-to-sqlite 
+>    <https://github.com/dogsheep/inaturalist-to-sqlite>* imports the 
+>    wildlife and plants you have spotted on iNaturalist 
+>    <https://www.inaturalist.org/>.
+>    - *google-takeout-to-sqlite 
+>    <https://github.com/dogsheep/google-takeout-to-sqlite>* imports data 
+>    from Google Takeout, which can include your Google Maps location history, 
+>    your search history on Google and more to come.
+>    - *genome-to-sqlite <https://github.com/dogsheep/genome-to-sqlite>* 
+>    imports your genome from 23andMe <https://www.23andme.com/> into a 
+>    SQLite database.
+>    - *github-to-sqlite <https://github.com/dogsheep/github-to-sqlite>* 
+>    imports repositories you have created or starred on GitHub.
+>    - *pocket-to-sqlite <https://github.com/dogsheep/pocket-to-sqlite>* 
+>    imports articles you have saved using Pocket <https://getpocket.com/>.
+>    - *goodreads-to-sqlite <https://github.com/rixx/goodreads-to-sqlite>* 
+>    by Tobias Kunze imports your reading history from Goodreads 
+>    <https://www.goodreads.com/>.
+>    - *pinboard-to-sqlite <https://github.com/jacobian/pinboard-to-sqlite>* 
+>    by Jacob Kaplan-Moss saves your bookmarks from Pinboard 
+>    <https://pinboard.in/>.
+>
+>
+On Saturday, May 23, 2020 at 5:04:27 PM UTC-4, infominer wrote:
+>
+> I found this tool for exploring the sqlite files. I've been wondering, 
+> because the syntax for querying database is a bit arcane, from my 
+> perspective, what the simplest way to get started playing with these 
+> datasets?
+>
+> Meet Datasette <https://github.com/simonw/datasette>!
+>
+> % pip3 install datasette
+>
+> % datasette planetid.db 
+> ...
+> ...
+> INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+>
+>
+> A tool for exploring and publishing data http://datasette.readthedocs.io/
+>>
+>
+>
+>
+------=_Part_38_842179537.1590329995635
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Just found this related repository:</div><div><br></d=
+iv><div><a href=3D"https://github.com/dogsheep/dogsheep.github.io">https://=
+github.com/dogsheep/dogsheep.github.io</a><br></div><div><br></div><blockqu=
+ote class=3D"gmail_quote" style=3D"margin: 0px 0px 0px 0.8ex; border-left: =
+1px solid rgb(204, 204, 204); padding-left: 1ex;"><div><p>Dogsheep is a col=
+lection of tools for <em>personal analytics</em> using <a href=3D"https://w=
+ww.sqlite.org/" rel=3D"nofollow">SQLite</a> and <a href=3D"https://github.c=
+om/simonw/datasette">Datasette</a>.</p>
+<p>Big internet companies know a <em>lot</em> about us. By exporting=20
+that data back out of them we can see what they know and maybe learn=20
+something interesting about ourselves.</p>
+<p>Read more about Dogsheep on my blog: <a href=3D"https://simonwillison.ne=
+t/tags/dogsheep/" rel=3D"nofollow">simonwillison.net/tags/dogsheep</a></p><=
+/div></blockquote><div><br></div><div>Then there&#39;s a handful of tools f=
+or transforming your data exports from various services into sqlite, to be =
+explorable via Datasette<br></div><div>
+<blockquote class=3D"gmail_quote" style=3D"margin: 0px 0px 0px 0.8ex; borde=
+r-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;"><ul><li><strong><=
+a href=3D"https://github.com/dogsheep/twitter-to-sqlite">twitter-to-sqlite<=
+/a></strong>
+ uses the Twitter API or Twitter&#39;s &quot;export your data&quot; zip arc=
+hive to=20
+create a database of your tweets, followers, people you follow,=20
+favourited tweets and much more besides.</li><li><strong><a href=3D"https:/=
+/github.com/dogsheep/healthkit-to-sqlite">healthkit-to-sqlite</a></strong> =
+converts your Apple HealthKit export into a database, with details of your =
+heart rate, workouts, step count and more.</li><li><strong><a href=3D"https=
+://github.com/dogsheep/swarm-to-sqlite">swarm-to-sqlite</a></strong> import=
+s your checkin history from Foursquare Swarm.</li><li><strong><a href=3D"ht=
+tps://github.com/dogsheep/inaturalist-to-sqlite">inaturalist-to-sqlite</a><=
+/strong> imports the wildlife and plants you have spotted on <a href=3D"htt=
+ps://www.inaturalist.org/" rel=3D"nofollow">iNaturalist</a>.</li><li><stron=
+g><a href=3D"https://github.com/dogsheep/google-takeout-to-sqlite">google-t=
+akeout-to-sqlite</a></strong>
+ imports data from Google Takeout, which can include your Google Maps=20
+location history, your search history on Google and more to come.</li><li><=
+strong><a href=3D"https://github.com/dogsheep/genome-to-sqlite">genome-to-s=
+qlite</a></strong> imports your genome from <a href=3D"https://www.23andme.=
+com/" rel=3D"nofollow">23andMe</a> into a SQLite database.</li><li><strong>=
+<a href=3D"https://github.com/dogsheep/github-to-sqlite">github-to-sqlite</=
+a></strong> imports repositories you have created or starred on GitHub.</li=
+><li><strong><a href=3D"https://github.com/dogsheep/pocket-to-sqlite">pocke=
+t-to-sqlite</a></strong> imports articles you have saved using <a href=3D"h=
+ttps://getpocket.com/" rel=3D"nofollow">Pocket</a>.</li><li><strong><a href=
+=3D"https://github.com/rixx/goodreads-to-sqlite">goodreads-to-sqlite</a></s=
+trong> by Tobias Kunze imports your reading history from <a href=3D"https:/=
+/www.goodreads.com/" rel=3D"nofollow">Goodreads</a>.</li><li><strong><a hre=
+f=3D"https://github.com/jacobian/pinboard-to-sqlite">pinboard-to-sqlite</a>=
+</strong> by Jacob Kaplan-Moss saves your bookmarks from <a href=3D"https:/=
+/pinboard.in/" rel=3D"nofollow">Pinboard</a>.</li></ul></blockquote></div><=
+div><br></div>On Saturday, May 23, 2020 at 5:04:27 PM UTC-4, infominer wrot=
+e:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;b=
+order-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr"><div>I foun=
+d this tool for exploring the sqlite files. I&#39;ve been wondering, becaus=
+e the syntax for querying database is a bit arcane, from my perspective, wh=
+at the simplest way to get started playing with these datasets?<br></div><d=
+iv><br></div><div>Meet <a href=3D"https://github.com/simonw/datasette" targ=
+et=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.=
+google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fsimonw%2Fdatasette\x26sa\x3d=
+D\x26sntz\x3d1\x26usg\x3dAFQjCNFmGtHMHHroZPsud2f1nDDkmqu_NA&#39;;return tru=
+e;" onclick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F=
+%2Fgithub.com%2Fsimonw%2Fdatasette\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCN=
+FmGtHMHHroZPsud2f1nDDkmqu_NA&#39;;return true;">Datasette</a>!<br></div><di=
+v><br></div><div><div style=3D"background-color:rgb(250,250,250);border-col=
+or:rgb(187,187,187);border-style:solid;border-width:1px"><code><div><span s=
+tyle=3D"color:#660">%</span><span style=3D"color:#000"> pip3 install datase=
+tte<br></span></div></code></div><br></div><div><div style=3D"background-co=
+lor:rgb(250,250,250);border-color:rgb(187,187,187);border-style:solid;borde=
+r-width:1px"><code><div><span style=3D"color:#660">%</span><span style=3D"c=
+olor:#000"> datasette planetid</span><span style=3D"color:#660">.</span><sp=
+an style=3D"color:#000">db <br></span></div></code></div>...</div><div>...<=
+br></div><div><div style=3D"background-color:rgb(250,250,250);border-color:=
+rgb(187,187,187);border-style:solid;border-width:1px"><code><div><span styl=
+e=3D"color:#000">INFO</span><span style=3D"color:#660">:</span><span style=
+=3D"color:#000"> =C2=A0 =C2=A0 </span><span style=3D"color:#606">Uvicorn</s=
+pan><span style=3D"color:#000"> running on http</span><span style=3D"color:=
+#660">:</span><span style=3D"color:#800">//<a href=3D"http://127.0.0.1:8001=
+" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http:/=
+/www.google.com/url?q\x3dhttp%3A%2F%2F127.0.0.1%3A8001\x26sa\x3dD\x26sntz\x=
+3d1\x26usg\x3dAFQjCNE8lctURZp4thmlXiKDuirqv4TmeA&#39;;return true;" onclick=
+=3D"this.href=3D&#39;http://www.google.com/url?q\x3dhttp%3A%2F%2F127.0.0.1%=
+3A8001\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNE8lctURZp4thmlXiKDuirqv4TmeA=
+&#39;;return true;">127.0.0.1:8001</a> (Press CTRL+C to quit)</span><span s=
+tyle=3D"color:#000"><br></span></div></code></div><br><img src=3D"https://g=
+roups.google.com/group/wwwmake/attach/48e5ce605cfcd/Auto%20Generated%20Inli=
+ne%20Image%201?part=3D0.1&amp;view=3D1&amp;authuser=3D1" alt=3D"" width=3D"=
+400" height=3D"166"></div><br><blockquote class=3D"gmail_quote" style=3D"ma=
+rgin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:=
+1ex"><div><span style=3D"color:rgb(36,41,46);margin-right:8px!important;fon=
+t-family:-apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-=
+serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;font-size:16=
+px;font-style:normal;font-weight:400;letter-spacing:normal;text-align:start=
+;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;ba=
+ckground-color:rgb(255,255,255)">A tool for exploring and publishing data<s=
+pan>=C2=A0</span></span><span style=3D"color:rgb(36,41,46);font-family:-app=
+le-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;A=
+pple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;font-size:16px;font-style=
+:normal;font-weight:400;letter-spacing:normal;text-align:start;text-indent:=
+0px;text-transform:none;white-space:normal;word-spacing:0px;background-colo=
+r:rgb(255,255,255);display:inline!important;float:none"></span><span style=
+=3D"color:rgb(36,41,46);font-family:-apple-system,system-ui,&quot;Segoe UI&=
+quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe =
+UI Emoji&quot;;font-size:16px;font-style:normal;font-weight:400;letter-spac=
+ing:normal;text-align:start;text-indent:0px;text-transform:none;white-space=
+:normal;word-spacing:0px;background-color:rgb(255,255,255)"><a rel=3D"nofol=
+low" href=3D"http://datasette.readthedocs.io/" style=3D"background-color:in=
+itial;color:rgb(3,102,214);text-decoration:none" target=3D"_blank" onmoused=
+own=3D"this.href=3D&#39;http://www.google.com/url?q\x3dhttp%3A%2F%2Fdataset=
+te.readthedocs.io%2F\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFZAAZGWIbFb36G=
+X7jWr1S6zIjQAA&#39;;return true;" onclick=3D"this.href=3D&#39;http://www.go=
+ogle.com/url?q\x3dhttp%3A%2F%2Fdatasette.readthedocs.io%2F\x26sa\x3dD\x26sn=
+tz\x3d1\x26usg\x3dAFQjCNFZAAZGWIbFb36GX7jWr1S6zIjQAA&#39;;return true;">htt=
+p://datasette.<wbr>readthedocs.io/<br></a></span></div></blockquote><div><b=
+r></div><br></div></blockquote></div>
+------=_Part_38_842179537.1590329995635--
+
+------=_Part_37_1378930163.1590329995635--
+

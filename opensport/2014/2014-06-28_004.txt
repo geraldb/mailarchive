@@ -1,0 +1,68 @@
+From 1433284902912@xxx Tue Jun 16 00:16:56 +0000 2015
+X-GM-THRID: 1394058723328
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b87e8084361ba758
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.13.18 with SMTP id d18mr1886077wic.2.1403955483313;
+        Sat, 28 Jun 2014 04:38:03 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.23.199 with SMTP id o7ls170174laf.15.gmail; Sat, 28 Jun
+ 2014 04:38:02 -0700 (PDT)
+X-Received: by 10.112.0.162 with SMTP id 2mr3022985lbf.3.1403955482509;
+        Sat, 28 Jun 2014 04:38:02 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x233.google.com (mail-wg0-x233.google.com [2a00:1450:400c:c00::233])
+        by gmr-mx.google.com with ESMTPS id mx7si108732wic.1.2014.06.28.04.38.02
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 28 Jun 2014 04:38:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) client-ip=2a00:1450:400c:c00::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f51.google.com with SMTP id x12so6076130wgg.34
+        for <opensport@googlegroups.com>; Sat, 28 Jun 2014 04:38:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=OevCFNEl6PZIiLgwuK4CfsEJ3sNxGjFj0u9qz2Hi+4Y=;
+        b=Eqkvoshjg9MULyNAwwKzw26sXy5Y0jDYOhMk4Tu0o658Kja1LNKRvKJyI7vgxba0lK
+         fX+Uwc6ItCLk7+Lnpe/HWe28xplnIoiJUpWxYiWT2OyDWCleaNy0yuu0OnkRCnBrfcO/
+         WcsrRKxmH31q5al5Sl2b2cdluFQH6JkFN+Bc7igaSl3oKhNYjbBAJVgAkI4SkMLuhviO
+         G41ZTuUuIt7zpjJnsl2BGT9BJoM/UN6nmZJoQumnHiyTwWl0KGxlhtH0NUKl3DaEG126
+         YewrPuuhLO7+SJBZl/ggOmwYyYPbCP0U7osg66Un8cW5pS6X9R1OaZydkWCdEJxBgvO7
+         HhIg==
+MIME-Version: 1.0
+X-Received: by 10.180.83.202 with SMTP id s10mr17920818wiy.25.1403955482366;
+ Sat, 28 Jun 2014 04:38:02 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Sat, 28 Jun 2014 04:38:02 -0700 (PDT)
+In-Reply-To: <f75d85e4-9bb5-4d9e-ab34-d5a9db2c5d5b@googlegroups.com>
+References: <78c634bf-896c-40a2-82c0-e41403915984@googlegroups.com>
+	<CAAxEZd8rfBXurP6wJzB1pMCYZPec-eA_fpj_sWhdAttU92wWiw@mail.gmail.com>
+	<f75d85e4-9bb5-4d9e-ab34-d5a9db2c5d5b@googlegroups.com>
+Date: Sat, 28 Jun 2014 13:38:02 +0200
+Message-ID: <CAAxEZd_tv_Ui1NZj9mRewWQsn9pMtEsSZFFC=VtZ3_Ln5yW14w@mail.gmail.com>
+Subject: Re: [opensport] Add a wiki to github project openfootball/world-cup
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Joe,
+
+  FYI:  Note, to list all world cup teams you can use the events_teams
+table (no need to go through the groups_teams join table and groups).
+Example:
+
+  select t.*
+  from teams t
+  inner join event_teams et on et.team_id = t.id
+  inner join events e on e.id = et.event_id
+  where e.key = 'world.2014'
+
+
+  I've upated the NOTES.md. Thanks again. Great idea. Cheers.
+

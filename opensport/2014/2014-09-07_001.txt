@@ -1,0 +1,60 @@
+From 2177214971904@xxx Tue Jun 16 00:16:48 +0000 2015
+X-GM-THRID: 2176949682176
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,c3fbdf30b3a363d5,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.182.8 with SMTP id ea8mr1873lbc.11.1410108035484;
+        Sun, 07 Sep 2014 09:40:35 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.23.200 with SMTP id o8ls331260laf.89.gmail; Sun, 07 Sep
+ 2014 09:40:34 -0700 (PDT)
+X-Received: by 10.152.6.9 with SMTP id w9mr46050law.7.1410108034173;
+        Sun, 07 Sep 2014 09:40:34 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22e.google.com (mail-wg0-x22e.google.com [2a00:1450:400c:c00::22e])
+        by gmr-mx.google.com with ESMTPS id p7si455575wiz.1.2014.09.07.09.40.34
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 07 Sep 2014 09:40:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) client-ip=2a00:1450:400c:c00::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f46.google.com with SMTP id n12so2708849wgh.29
+        for <opensport@googlegroups.com>; Sun, 07 Sep 2014 09:40:34 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=d/bJyxXIZuErSNrOLTGaZH519w8oXNDYD7An7dNo1K0=;
+        b=mJ0JMzlJ/LhnJUT9Cs2wGyxHRkAdPyk2vk4qNy1dhIF/2e/UPyvIZKBogxXZPvViTY
+         wRbwJe8OCqtDa45AZA8+nnutpOrioQNcQ1SRcdfj8RvE3yLT8uT2EweQ2JWnRxAWfEAz
+         QFs0X7/6zA34m9s3AH/4V8fdvL/g236iB0BkrFd2/AznFDrs+3hYEFbdFTgVxGSRZDyf
+         bAeNostauuGYUicA319K0ObFb/Ld3InOLNmk1nc/4c0TpbSF+r/a6z7hEjDt12GT4Mke
+         oWxBVpdlWWpH7idxpOUAN8BGg6aQMH1sWClyzY2WnUbkOQbwqNfw4tZ5SYpGURMawz5m
+         zV2g==
+MIME-Version: 1.0
+X-Received: by 10.180.188.70 with SMTP id fy6mr17301498wic.25.1410108034086;
+ Sun, 07 Sep 2014 09:40:34 -0700 (PDT)
+Received: by 10.217.59.194 with HTTP; Sun, 7 Sep 2014 09:40:34 -0700 (PDT)
+Date: Sun, 7 Sep 2014 18:40:34 +0200
+Message-ID: <CAAxEZd9BQ-hB7fDY2WuacQZXHd3B-TpwcAZCwaETr1ESm7QLtw@mail.gmail.com>
+Subject: Season Standings Table for English Premier League, Bundesliga, Serie
+ A, etc.
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've started to add standings tables to all football club
+leagues. The README.md in the season folder e.g. /2014-15 will get
+auto-generated from the datasets via the build script.
+
+   See an example for the English Premier League 2014/15 [1] or the
+Austrian Bundesliga 2014/15 [2].  Still a little rough.  Cheers.
+
+[1] github.com/openfootball/en-england/tree/master/2014-15
+[2] github.com/openfootball/at-austria/tree/master/2014-15
+

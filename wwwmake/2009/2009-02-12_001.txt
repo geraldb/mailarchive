@@ -1,0 +1,131 @@
+From 496276340736@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 496034119680
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,3acd15719c355d2c,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,UTF8
+Received: by 10.114.151.4 with SMTP id y4mr248621wad.12.1234465695343;
+        Thu, 12 Feb 2009 11:08:15 -0800 (PST)
+Return-Path: <narendra.sisodiya@gmail.com>
+Received: from wa-out-1112.google.com ([172.21.214.28])
+        by mx.google.com with ESMTP id m37si339593waf.2.2009.02.12.11.08.14;
+        Thu, 12 Feb 2009 11:08:14 -0800 (PST)
+Received-SPF: neutral (google.com: 172.21.214.28 is neither permitted nor denied by domain of narendra.sisodiya@gmail.com) client-ip=172.21.214.28;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 172.21.214.28 is neither permitted nor denied by domain of narendra.sisodiya@gmail.com) smtp.mail=narendra.sisodiya@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by wa-out-1112.google.com with SMTP id m28so416917wag.14
+        for <webslideshow@googlegroups.com>; Thu, 12 Feb 2009 11:08:14 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:date:message-id:subject
+         :from:to:content-type;
+        bh=ToleGDEMpGYy4YJpjW4xsPOdMaEhjzKTFLJy7QntXAY=;
+        b=KuHXAvWdq/24Q88NpOZIK1OTTFsi/Svz0+LsjHQ3rc0PZmn5bfLiTxW9k1giBc6bzc
+         33dBndTVAtjItmza+fyaJMRF2rFFql/9PfCBv+dvz9/l0DCWf6fSKcECqqVcb/+XDfSb
+         3ZKMp4jj5ImwDitACZOwPIRgCSKPqh0mkpEow=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        b=xhvfRRSctjOGW4Z5/B+UVG6u3QWxmlE2VkjBfELX0UvYcGE5bXCpJPX65wNAlid2oq
+         8GvKogmjimBqqoW/88gHeIbpRCplY206GIdg2KNac5qhSuYDPuzFRLdUhpTzUpbe8Xry
+         VzL3DbtWhhl0lyxtDSlWCwf7D1M2+Prlnf0us=
+MIME-Version: 1.0
+Received: by 10.115.16.14 with SMTP id t14mr506376wai.185.1234465694011; Thu, 
+	12 Feb 2009 11:08:14 -0800 (PST)
+Date: Fri, 13 Feb 2009 00:38:13 +0530
+Message-ID: <e3fb97f30902121108l34f29821o8933b6a7ffc17629@mail.gmail.com>
+Subject: resizing of Slides
+From: narendra sisodiya <narendra.sisodiya@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: multipart/alternative; boundary=0016e64ca8342dd2d90462bd71a0
+
+--0016e64ca8342dd2d90462bd71a0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi to all,
+     I am creating some sort of web slidehow ( Project
+Eduvid<http://eduvid.techfandu.org>), where I need to show a
+SlideSorter also, SlideSorter will just show small
+thumbnails of all slides. As I am using javascript and HTML. No flash and
+java.
+I can get resize functionality very easy ,, example --
+http://www.twinhelix.com/javascript/dragresize/demo/
+But while resizing , all text and content show also resize according. AS a
+simple thought , I first need to play font-size property of element. But
+this is not the end, a slide can contain table also, I need to adjust heigh=
+t
+and weight also. and many issues.
+I think the simple thought is,, Use font-size property and all height and
+width parameter in percentage. So there will be only need to vary font and
+height-width parameter of main div slide . Ex
+<div id=3D"slide2" class=3D"slide"> // we will vary font and height-width
+parameter of this div element
+  ..... Content will go here with percentages ....
+</div>
+
+
+I need your input and further complication in this issue. If you pointed ou=
+t
+any similar work , It will be a great help.
+
+
+--=20
+=E2=94=8C=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=90
+=E2=94=82    Narendra Sisodiya ( =E0=A4=A8=E0=A4=B0=E0=A5=87=E0=A4=A8=E0=A5=
+=8D=E0=A4=A6=E0=A5=8D=E0=A4=B0 =E0=A4=B8=E0=A4=BF=E0=A4=B8=E0=A5=8B=E0=A4=
+=A6=E0=A4=BF=E0=A4=AF=E0=A4=BE )
+=E2=94=82    R&D Engineer
+=E2=94=82    http://narendra.techfandu.org
+=E2=94=94=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=98
+
+--0016e64ca8342dd2d90462bd71a0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi to all,<br>&nbsp;&nbsp;&nbsp;&nbsp; I am creating some sort of web slide=
+how ( <a href=3D"http://eduvid.techfandu.org">Project Eduvid</a> ), where I=
+ need to show a SlideSorter also, SlideSorter will just show small thumbnai=
+ls of all slides. As I am using javascript and HTML. No flash and java.<br>
+
+I can get resize functionality very easy ,, example -- <a href=3D"http://ww=
+w.twinhelix.com/javascript/dragresize/demo/" target=3D"_blank">http://www.t=
+winhelix.com/javascript/dragresize/demo/</a><br>But while resizing , all te=
+xt and content show also resize according. AS a simple thought , I first ne=
+ed to play font-size property of element. But this is not the end, a slide =
+can contain table also, I need to adjust height and weight also. and many i=
+ssues.<br>
+
+I think the simple thought is,, Use font-size property and all height and w=
+idth parameter in percentage. So there will be only need to vary font and h=
+eight-width parameter of main div slide . Ex<br>&lt;div id=3D&quot;slide2&q=
+uot; class=3D&quot;slide&quot;&gt; // we will vary font and height-width pa=
+rameter of this div element<br>
+
+&nbsp; ..... Content will go here with percentages ....<br>&lt;/div&gt;<br =
+clear=3D"all"><br><br>I need your input and further complication in this is=
+sue. If you pointed out any similar work , It will be a great help.<br><br>=
+<br>
+
+-- <br>=E2=94=8C=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=90<br>=E2=94=82 &nbsp; &nbsp;Narendra Sisodiya ( =
+=E0=A4=A8=E0=A4=B0=E0=A5=87=E0=A4=A8=E0=A5=8D=E0=A4=A6=E0=A5=8D=E0=A4=B0 =
+=E0=A4=B8=E0=A4=BF=E0=A4=B8=E0=A5=8B=E0=A4=A6=E0=A4=BF=E0=A4=AF=E0=A4=BE )<=
+br>=E2=94=82 &nbsp; &nbsp;R&amp;D Engineer<br>=E2=94=82 &nbsp; &nbsp;<a hre=
+f=3D"http://narendra.techfandu.org" target=3D"_blank">http://narendra.techf=
+andu.org</a><br>=E2=94=94=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=98<br>
+
+
+
+--0016e64ca8342dd2d90462bd71a0--
+

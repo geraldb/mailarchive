@@ -1,0 +1,55 @@
+From 428430327808@xxx Tue Apr 28 06:51:02 +0000 2015
+X-GM-THRID: 417908916224
+X-Received: by 10.66.100.198 with SMTP id fa6mr25867634pab.31.1430203861995;
+        Mon, 27 Apr 2015 23:51:01 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.107.35.207 with SMTP id j198ls139872ioj.46.gmail; Mon, 27 Apr
+ 2015 23:51:01 -0700 (PDT)
+X-Received: by 10.66.222.41 with SMTP id qj9mr26084824pac.30.1430203861815;
+        Mon, 27 Apr 2015 23:51:01 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qc0-x232.google.com (mail-qc0-x232.google.com. [2607:f8b0:400d:c01::232])
+        by gmr-mx.google.com with ESMTPS id ks9si2168875qcb.3.2015.04.27.23.51.01
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 27 Apr 2015 23:51:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c01::232 as permitted sender) client-ip=2607:f8b0:400d:c01::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c01::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qc0-x232.google.com with SMTP id m10so66117560qcp.3
+        for <openmundi@googlegroups.com>; Mon, 27 Apr 2015 23:51:01 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=foA9I/4yYrjQ3JFE6+8LHugfsaIu9lttTVD4HdPKVfI=;
+        b=U5hRE90W+aunOZ2mdU/9q5eSkBmFUGSx0WGbS7kP6582lmkX+m9Q3Vj39blwMlA4oM
+         7wCYbyQW8mSj3tMunuOppIZU2/zwIO3cCh5kvwaLzZdAqVHonBMwDBSyP5zBmWiVFAdS
+         zQKH/s4svJF3pv7BNHvGJgfIusXa4IWfc4I/w+hc0FIoLH8ygnE2PDSLZdwCgCQX3Kej
+         KKCy0YH/lMhZ6hYO3XRECTa0+q9NIuh6ICS/dtl1rSMKKRoHkmNyltJNAmv3oLWw42sg
+         MmdBYfAZjMrJ/IOs7MudVCZ4gSalmzyUJvGz2WlHZOLOlIkBDE8dcqlOllkuWRu6J81+
+         HGUQ==
+MIME-Version: 1.0
+X-Received: by 10.140.31.54 with SMTP id e51mr10276824qge.95.1430203861714;
+ Mon, 27 Apr 2015 23:51:01 -0700 (PDT)
+Received: by 10.229.5.6 with HTTP; Mon, 27 Apr 2015 23:51:01 -0700 (PDT)
+In-Reply-To: <2c24d183-0c17-46d5-af2b-9f6a6ee8fb82@googlegroups.com>
+References: <CAAxEZd-TGZMrH6fmg3SeqoFVPtaiopNgmHwqHoDppHbOSU08Mg@mail.gmail.com>
+	<2c24d183-0c17-46d5-af2b-9f6a6ee8fb82@googlegroups.com>
+Date: Tue, 28 Apr 2015 08:51:01 +0200
+Message-ID: <CAAxEZd82hDnmgkuZZFqG3D2YPJDD+rtpNPzS28NvoN7a0QeGyw@mail.gmail.com>
+Subject: Re: awesome-world - A collection of awesome world (countries, cities,
+ flags, codes, etc.) datasets
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Eckhard Licher <eckhard.licher@googlemail.com>
+Cc: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for the great additions. Will try to get the list updated later today.
+
+   About the factbook HTML change / update - sorry will have to wait
+for now.  Keep it up with the openfactbook project. Cheers.
+

@@ -1,0 +1,321 @@
+From 6825956100341235712@xxx Tue May 12 13:55:52 +0000 2020
+X-GM-THRID: 6825956099307339776
+X-Received: by 2002:a05:6830:1089:: with SMTP id y9mr16120956oto.253.1589291752581;
+        Tue, 12 May 2020 06:55:52 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a9d:363:: with SMTP id 90ls712368otv.6.gmail; Tue, 12 May
+ 2020 06:55:52 -0700 (PDT)
+X-Received: by 2002:a05:6830:605:: with SMTP id w5mr3433416oti.204.1589291752122;
+        Tue, 12 May 2020 06:55:52 -0700 (PDT)
+Received: by 2002:aca:b945:0:b029:a8:5e85:9dd3 with SMTP id j66-20020acab9450000b02900a85e859dd3msoif;
+        Tue, 12 May 2020 04:02:51 -0700 (PDT)
+X-Google-Smtp-Source: APiQypIffbmq4aW2LcOORvesR5fFOQM3fsBzNI1kYltk47InDTHkBOttfeJdgMbn2riZ1JvO9EdzUnoGtA==
+X-Received: by 2002:a05:6830:14d:: with SMTP id j13mr16317167otp.140.1589281370916;
+        Tue, 12 May 2020 04:02:50 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Tue, 12 May 2020 04:02:50 -0700 (PDT)
+From: infominer <infominer33@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <2cf4fb7c-c7c0-434c-9fd1-7735f6fb8b40@googlegroups.com>
+Subject: using github actions to build feeds after commit to master and 3
+ times a day
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2124_382666817.1589281370748"
+X-Google-Token: ENqE6vUFm4fJuuIGBJ00
+X-Google-IP: 3.14.172.171
+
+------=_Part_2124_382666817.1589281370748
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2125_3315440.1589281370748"
+
+------=_Part_2125_3315440.1589281370748
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+his was my first github action and I'm really stoked about how (relatively) 
+easy it was. You should be able to copy this and use it in your project to 
+get Pluto running and requiring minimal intervention on your part :D
+
+
+https://github.com/didecentral/planetid-reboot/blob/master/.github/workflows/ruby.yml
+
+           name: Ruby 
+on: 
+push: 
+branches: [ master ] 
+pull_request: 
+branches: [ master ] 
+schedule:
+- cron: '* 3,11,19 * * *' 
+
+jobs: 
+test: 
+
+runs-on: ubuntu-latest 
+
+steps: 
+- uses: actions/checkout@v2 
+- name: Set up Ruby
+uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0 
+with: 
+ruby-version: 2.6 
+- name: Install dependencies 
+run: sudo apt-get install libsqlite3-dev && gem install pluto 
+- name: build reader 
+run: pluto b planetid.ini -t planetid -o docs 
+- name: Deploy Files 
+run: | 
+git remote add gh-token "https://github.com/didecentral/planetid-reboot.git" 
+git config user.name "github-actions[bot]" # I use the GitHub Actions bot 
+here. 
+git config user.email 
+"41898282+github-actions[bot]@users.noreply.github.com" 
+git add . 
+git commit -a -m "update feeds" 
+
+git push gh-token master
+
+
+
+
+------=_Part_2125_3315440.1589281370748
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">his was my first github action and I&#39;m really stoked a=
+bout how (relatively) easy it was. You should be able to copy this and use =
+it in your project to get Pluto running and requiring minimal intervention =
+on your part :D<br><div><br></div><div><br></div><div>https://github.com/di=
+decentral/planetid-reboot/blob/master/.github/workflows/ruby.yml</div><div>=
+<br></div><div>
+      <table class=3D"highlight tab-size js-file-line-container" data-tab-s=
+ize=3D"8" data-paste-markdown-skip=3D""><tbody><tr><td id=3D"LC9" class=3D"=
+blob-code blob-code-inner js-file-line">=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0 <span class=3D"pl-ent">name</span>: <span class=
+=3D"pl-s">Ruby</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC10" class=3D"blob-code blob-code-in=
+ner js-file-line"><span class=3D"pl-ent">on</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC11" class=3D"blob-code blob-code-in=
+ner js-file-line">  <span class=3D"pl-ent">push</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC12" class=3D"blob-code blob-code-in=
+ner js-file-line">    <span class=3D"pl-ent">branches</span>: <span class=
+=3D"pl-s">[ master ]</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC13" class=3D"blob-code blob-code-in=
+ner js-file-line">  <span class=3D"pl-ent">pull_request</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC14" class=3D"blob-code blob-code-in=
+ner js-file-line">    <span class=3D"pl-ent">branches</span>: <span class=
+=3D"pl-s">[ master ]</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC15" class=3D"blob-code blob-code-in=
+ner js-file-line">  <span class=3D"pl-ent">schedule</span>:</td></tr><tr></=
+tr></tbody></table><table class=3D"highlight tab-size js-file-line-containe=
+r" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"margin-left: =
+40px;"><tbody><tr><td id=3D"LC16" class=3D"blob-code blob-code-inner js-fil=
+e-line"></td></tr><tr></tr></tbody></table><table class=3D"highlight tab-si=
+ze js-file-line-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"=
+" style=3D"margin-left: 40px;"><tbody><tr><td id=3D"LC17" class=3D"blob-cod=
+e blob-code-inner js-file-line">- <span class=3D"pl-ent">cron</span>:  <spa=
+n class=3D"pl-s"><span class=3D"pl-pds">&#39;</span>* 3,11,19 * * *<span cl=
+ass=3D"pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC18" class=3D"blob-code blob-code-in=
+ner js-file-line">
+<br></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC20" class=3D"blob-code blob-code-in=
+ner js-file-line"></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC21" class=3D"blob-code blob-code-in=
+ner js-file-line"><span class=3D"pl-ent">jobs</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC22" class=3D"blob-code blob-code-in=
+ner js-file-line">  <span class=3D"pl-ent">test</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC23" class=3D"blob-code blob-code-in=
+ner js-file-line">
+<br></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC24" class=3D"blob-code blob-code-in=
+ner js-file-line">    <span class=3D"pl-ent">runs-on</span>: <span class=3D=
+"pl-s">ubuntu-latest</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC25" class=3D"blob-code blob-code-in=
+ner js-file-line">
+<br></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC26" class=3D"blob-code blob-code-in=
+ner js-file-line">    <span class=3D"pl-ent">steps</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC27" class=3D"blob-code blob-code-in=
+ner js-file-line">    - <span class=3D"pl-ent">uses</span>: <span class=3D"=
+pl-s">actions/checkout@v2</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC28" class=3D"blob-code blob-code-in=
+ner js-file-line">    - <span class=3D"pl-ent">name</span>: <span class=3D"=
+pl-s">Set up Ruby</span></td></tr><tr></tr></tbody></table><table class=3D"=
+highlight tab-size js-file-line-container" data-tab-size=3D"8" data-paste-m=
+arkdown-skip=3D"" style=3D"margin-left: 40px;"><tbody><tr><td id=3D"LC29" c=
+lass=3D"blob-code blob-code-inner js-file-line"></td></tr><tr></tr></tbody>=
+</table><table class=3D"highlight tab-size js-file-line-container" data-tab=
+-size=3D"8" data-paste-markdown-skip=3D"" style=3D"margin-left: 40px;"><tbo=
+dy><tr><td id=3D"LC32" class=3D"blob-code blob-code-inner js-file-line"><sp=
+an class=3D"pl-ent">uses</span>: <span class=3D"pl-s">ruby/setup-ruby@ec106=
+b438a1ff6ff109590de34ddc62c540232e0</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC33" class=3D"blob-code blob-code-in=
+ner js-file-line">      <span class=3D"pl-ent">with</span>:</td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC34" class=3D"blob-code blob-code-in=
+ner js-file-line">        <span class=3D"pl-ent">ruby-version</span>: <span=
+ class=3D"pl-c1">2.6</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC35" class=3D"blob-code blob-code-in=
+ner js-file-line">    - <span class=3D"pl-ent">name</span>: <span class=3D"=
+pl-s">Install dependencies</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC36" class=3D"blob-code blob-code-in=
+ner js-file-line">      <span class=3D"pl-ent">run</span>: <span class=3D"p=
+l-s">sudo apt-get install libsqlite3-dev &amp;&amp; gem install pluto</span=
+></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC37" class=3D"blob-code blob-code-in=
+ner js-file-line">    - <span class=3D"pl-ent">name</span>: <span class=3D"=
+pl-s">build reader</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC38" class=3D"blob-code blob-code-in=
+ner js-file-line">      <span class=3D"pl-ent">run</span>: <span class=3D"p=
+l-s">pluto b planetid.ini -t planetid -o docs</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC39" class=3D"blob-code blob-code-in=
+ner js-file-line">    - <span class=3D"pl-ent">name</span>: <span class=3D"=
+pl-s">Deploy Files</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC40" class=3D"blob-code blob-code-in=
+ner js-file-line">      <span class=3D"pl-ent">run</span>: <span class=3D"p=
+l-s">|</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC41" class=3D"blob-code blob-code-in=
+ner js-file-line"><span class=3D"pl-s">        git remote add gh-token &quo=
+t;https://github.com/didecentral/planetid-reboot.git&quot;</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC42" class=3D"blob-code blob-code-in=
+ner js-file-line"><span class=3D"pl-s">        git config user.name &quot;g=
+ithub-actions[bot]&quot; # I use the GitHub Actions bot here.</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC43" class=3D"blob-code blob-code-in=
+ner js-file-line"><span class=3D"pl-s">        git config user.email &quot;=
+41898282+github-actions[bot]@users.noreply.github.com&quot;</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC44" class=3D"blob-code blob-code-in=
+ner js-file-line"><span class=3D"pl-s">        git add .</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><table class=3D"highlight tab-size js-file-lin=
+e-container" data-tab-size=3D"8" data-paste-markdown-skip=3D"" style=3D"mar=
+gin-left: 40px;"><tbody><tr><td id=3D"LC45" class=3D"blob-code blob-code-in=
+ner js-file-line"><span class=3D"pl-s">        git commit -a -m &quot;updat=
+e feeds&quot;</span></td>
+      </tr>
+      <tr>
+        </tr></tbody></table><div style=3D"margin-left: 40px;"><span class=
+=3D"pl-s">        git push gh-token master</span></div><br><br><table class=
+=3D"highlight tab-size js-file-line-container" data-tab-size=3D"8" data-pas=
+te-markdown-skip=3D""><tbody><tr><td id=3D"LC8" class=3D"blob-code blob-cod=
+e-inner js-file-line"><span class=3D"pl-ent"></span><span class=3D"pl-s"></=
+span><br></td>
+      </tr><tr>
+        </tr></tbody></table></div></div>
+------=_Part_2125_3315440.1589281370748--
+
+------=_Part_2124_382666817.1589281370748--
+

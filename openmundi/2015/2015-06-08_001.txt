@@ -1,0 +1,150 @@
+From 6158011677096804352@xxx Mon Jun 08 14:30:22 +0000 2015
+X-GM-THRID: 6158011679038767104
+X-Received: by 10.182.118.162 with SMTP id kn2mr24450022obb.22.1433773822024;
+        Mon, 08 Jun 2015 07:30:22 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.107.133.67 with SMTP id h64ls909219iod.32.gmail; Mon, 08 Jun
+ 2015 07:30:21 -0700 (PDT)
+X-Received: by 10.50.142.39 with SMTP id rt7mr17989836igb.5.1433773821798;
+        Mon, 08 Jun 2015 07:30:21 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qg0-x234.google.com (mail-qg0-x234.google.com. [2607:f8b0:400d:c04::234])
+        by gmr-mx.google.com with ESMTPS id jk4si330445qcb.3.2015.06.08.07.30.21
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 08 Jun 2015 07:30:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c04::234 as permitted sender) client-ip=2607:f8b0:400d:c04::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c04::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qg0-x234.google.com with SMTP id 75so46458144qgf.1
+        for <openmundi@googlegroups.com>; Mon, 08 Jun 2015 07:30:21 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=mkBcpFqd5dBJIFsAXZIgryihZOADSCLKKjRt/MTQaYc=;
+        b=swK/yBehLJQvQFJGpF3Wi6pLaOVYSwym9vTCK/1OcvLKWanfSRA/kzQeZhcYoaANLN
+         uqrIjrZy+/5Zflc2D51GoOPLm0O4Bj09P20w0uC36RUJQDZrgqD3sNfK77ETfK7Zs7pK
+         so+c6342TGGTdwJR1KtGoUIhT2IgVBSL6pZJXIKvpcaZ0DMiySlauRaYWcFcknZqyH5H
+         DCotDM1vMfnNq+GzXryuI8546dVY+OeN6EGKkBQ2wnLmYXJWugMmibCyuB75F/4SjTw/
+         qkH6UZNAeucU/zWOgsuUI3Cg+NPvEjdv4RedPfz4kzDkY2CBjuyT2ZSQn2DXsK6tkH+C
+         aYGA==
+MIME-Version: 1.0
+X-Received: by 10.55.40.89 with SMTP id o86mr32474487qkh.6.1433773821636; Mon,
+ 08 Jun 2015 07:30:21 -0700 (PDT)
+Received: by 10.229.180.2 with HTTP; Mon, 8 Jun 2015 07:30:21 -0700 (PDT)
+Date: Mon, 8 Jun 2015 16:30:21 +0200
+Message-ID: <CAAxEZd-D_WrLJdcZw8E3M3ed58p==_P=hFRtTE-5XsXJjmOh1g@mail.gmail.com>
+Subject: worlddb Update - Now Incl. Part/County/Muni/etc, StateTreeReader, and more
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: I've updated the worlddb tool [1] and models [2]. What's news?
+
+  The state and city models got split up into separate models and
+tables e.g. the worlddb now includes for administrative divisions new
+models and tabels:
+
+   state (ADM1)               -- Land/State/Province/etc.
+   part  (ADM2 - optional)   -- Regierungskreis/etc.
+   county (ADM2/ADM3)      -- Landkreis/Bezirk/County/etc.
+   muni   (ADM3/ADM4)      -- Gemeinde/Municipality/etc.
+
+   And for cities:
+
+   metro    -- e.g. Ruhrgebiet/K=C3=B6ln-Bonn/etc.
+   city     -- e.g. M=C3=BCnchen/Wien/etc.
+   district -- e.g. Innere Stadt/Ottakring, 2. Bezirk/etc.
+
+   Example:
+
+    de =3D Country.create!( key: 'de',
+                          name: 'Deutschland',
+                          code: 'DEU',
+                          pop: 1,
+                          area: 1 )
+
+    by =3D State.create!(  key:  'by',
+                         name: 'Bayern',
+                         country_id: de.id,
+                         pop: 1,
+                         area: 1 )
+
+   ob =3D Part.create!(  key: 'ob',
+                       name: 'Oberbayern',
+                       state_id: by.id,
+                       pop: 1,
+                       area: 1 )
+
+   fs =3D County.create!( key: 'fs',
+                         name: 'Freising',
+                         state_id: by.id,
+                         part_id: ob.id,
+                         pop: 1,
+                         area: 1,
+                         level: 3 )
+
+    au =3D Muni.create!( key: 'auidhallertau',
+                       name: 'Au i.d. Hallertau',
+                       state_id: by.id,
+                       county_id: fs.id,
+                       pop: 1,
+                       area: 1,
+                       level: 4 )
+
+    ##  test assocs
+
+    assert_equal  'Freising',    by.counties.first.name
+    assert_equal  'Au i.d. Hallertau', by.munis.first.name
+
+    assert_equal  'Au i.d. Hallertau', fs.munis.first.name
+
+    assert_equal  'Bayern',       au.county.state.name
+    assert_equal  'Oberbayern',   au.county.part.name
+
+    and so on
+
+
+   To read in state/part/county/muni data you can use the new tree format
+   and StateTreeReader. For example, to read in all admins for
+Oberfranken (in Bavaria) [3]. Use:
+
+2     Bayern
+24    .. Oberfranken
+241   .... Bamberg (Stadt)     ## Kreisfreie Stadt
+      ...... Bamberg
+      ........ Bamberg
+245   .... Bamberg (Land)    ## Landkreis   -- 36 Gemeinden; see
+de.wikipedia.org/wiki/Landkreis_Bamberg
+             ## 4 St=C3=A4dte
+      ...... Baunach        ## (4013, 30,9 km=C2=B2)
+      ........ Baunach
+      ...... Hallstadt      ## (8364, 14,5 km=C2=B2)
+      ........ Hallstadt    ## (7588)
+      ........ D=C3=B6rfleins    ## (1380)
+      ...... Sche=C3=9Flitz      ## (7184, 94,9 km=C2=B2)
+      ........ Sche=C3=9Flitz
+      ........ K=C3=B6ttensdorf
+      ........ W=C3=BCrgau
+
+
+   To see it all in action try, for example:
+
+    $ worlddb new de     # build a copy using the deutschland.db dataset   =
+or
+    $ worlddb new at     # build a copy using the austria.db dataset
+
+   That's it. Questions, comments as always welcome. Cheers.
+
+
+[1] github.com/worlddb/world.db.tools
+[2] github.com/worlddb/world.db.models
+[3] github.com/openmundi/deutschland.db/blob/master/3--by-bayern/4--oberfra=
+nken/orte.txt
+

@@ -1,0 +1,71 @@
+From 1744797958144@xxx Tue Jun 16 00:16:54 +0000 2015
+X-GM-THRID: 1330545426432
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4da4215bac1abda4
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.59.67 with SMTP id x3mr454411lbq.13.1406728704090;
+        Wed, 30 Jul 2014 06:58:24 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.101.170 with SMTP id fh10ls743426wib.9.canary; Wed, 30 Jul
+ 2014 06:58:23 -0700 (PDT)
+X-Received: by 10.180.104.163 with SMTP id gf3mr467127wib.1.1406728703066;
+        Wed, 30 Jul 2014 06:58:23 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x236.google.com (mail-wi0-x236.google.com [2a00:1450:400c:c05::236])
+        by gmr-mx.google.com with ESMTPS id cj4si917166wid.0.2014.07.30.06.58.23
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 30 Jul 2014 06:58:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::236 as permitted sender) client-ip=2a00:1450:400c:c05::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x236.google.com with SMTP id d1so2383410wiv.15
+        for <opensport@googlegroups.com>; Wed, 30 Jul 2014 06:58:23 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=Wq6Dg9VEF9wlkFD4tgEYoqQN23lXGY/lIPHoDh1ai9s=;
+        b=ovXwPzWjWVRlV8Z9CCZXf/NRWbZkncXHvomqB7MLCzV/l/MhFknk87EL6WGOPiNcme
+         TdjxB9spgaC+V8HgQymZWJtqRe4XOT/tzrvDqaAkEg8lt15QKaqhTdS8ZlH1XW7FLpZP
+         qVX2gZZ9CZ3MTXgfx2DWk1amhTEHqID54kZEh+HiUXK6GMKpIj3Yu9h4TwqH7dqeEb6V
+         vN8FQtrWfADR1lm3hsAyhPvh9uZHVPk0E/88aXV/MwSTFv3x9ZhiFZhHujyQHddoiBsX
+         6bmaP9lOb704O26PptMPQyYkZq5JZBMVL+xV27ZwAeIKQI9jLVWrZH4r9XpoGkBCOuM9
+         ECnw==
+MIME-Version: 1.0
+X-Received: by 10.180.10.98 with SMTP id h2mr6353061wib.29.1406728702968; Wed,
+ 30 Jul 2014 06:58:22 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Wed, 30 Jul 2014 06:58:22 -0700 (PDT)
+In-Reply-To: <1c5902c4-82d1-471a-b851-cb1e7517849e@googlegroups.com>
+References: <202c0c98-9e47-4577-acd3-997de84014ef@googlegroups.com>
+	<5ab54c50-c2fa-4642-81e6-c7f3d4270857@googlegroups.com>
+	<cff8d069-a8fb-489d-95aa-25b032d43b24@googlegroups.com>
+	<CAAxEZd_o9p3us8j-o=XimqKsVfbaMBqA_TsuCrSJNu_GNOoT_A@mail.gmail.com>
+	<CAAxEZd94GBzKdW380Rgm1WqFxpwpqxV1QNJa4TUkqfP39f-aWA@mail.gmail.com>
+	<55a3cf5e-2b70-4de9-a74c-d7d4484d7bfd@googlegroups.com>
+	<CAAxEZd_MBsxBBneb38bj4PQGKVkfSMKX2Vjk5Dpjd_gt4jc_+w@mail.gmail.com>
+	<1c5902c4-82d1-471a-b851-cb1e7517849e@googlegroups.com>
+Date: Wed, 30 Jul 2014 15:58:22 +0200
+Message-ID: <CAAxEZd8r2aufv091QqxkHKHuMP1zTxK2Jy+uJ6BND0uFHsyobw@mail.gmail.com>
+Subject: Re: [opensport] Re: How to contribute
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   If you add a single season you might for example try/use copy n
+paste ;-) and than some search n replace, for example.
+
+   If you want to "mass" import match data you can use generated .csv
+files - see github/footballcsv
+
+  Or, of course, you can use (invent) your own method / solution.
+
+  What league or leagues / season or season are your trying to add?
+
+  Cheers.
+

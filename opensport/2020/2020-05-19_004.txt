@@ -1,0 +1,96 @@
+From 6828451368201617408@xxx Tue May 19 07:18:48 +0000 2020
+X-GM-THRID: 6828449998508654592
+X-Received: by 2002:a7b:c41a:: with SMTP id k26mr3777253wmi.85.1589872727819;
+        Tue, 19 May 2020 00:18:47 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:adf:fac9:: with SMTP id a9ls6857860wrs.2.gmail; Tue, 19 May
+ 2020 00:18:47 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyDqXGQOsZRemhoPs7qDI9Sb+8F5cg2I9MzAJWnY1puOYPctQvEAY9uagf2Yxn7nIqZPZyz
+X-Received: by 2002:a5d:6a01:: with SMTP id m1mr25247528wru.64.1589872727020;
+        Tue, 19 May 2020 00:18:47 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1589872727; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VSfP+a57MsBpLYNlGTY3SDXmNSkPYr+B3mCGYscdVFrWNbrz5gshq3Pv7sOO365Bvn
+         MooGTD4ERf3lcxKohx+qt/gu0OT+68XseL3Z7kQTVSQl7L7RVRhcduY+hUQvBydKCo87
+         c6zI1zjplE+LoWrd9DW19/p6kuyjmbEhe1wNE9qnY4M4uvl7CHsnKLZvLwHgS4ak996d
+         C/h40vymIe6dBU4hSkJAl42HXdoAAgAfj//QZe/67BPlBQJWbHfajpeRs8KUWG+dQBbP
+         GUtzxawTSWbJXfmTWY2p5p2h9OnwwtCYKtxX1wkRPwl+AJ4UqjW8wgP0Xwqr7SYFhBn/
+         Prrg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=+m+qRnJwes8kLOZ6AC5F0rJTzVilz7dXspt5AHSbLSc=;
+        b=NeUx1517/SS18p5BdnsIwDCOmqtnCQjbPk/NPW/b5GDyCscPZ4msT0CyDRVNYjeSIr
+         GMKfKKXVGynmcUv/L/oWCXo20cAF40EOXgPs2PWKcUGw3K3m1SPDQ5cdxKQZPhxzzVGZ
+         R4bUU1UUmcojI9jotHWzP/54yluWX1ySZaKxIxN6ERZk/fp6Y/wwx7Bxbe368KTia62W
+         BvA5ZMi4xfOthGJlVwetul3qH6W3YPcF5REJske+74LcKanvEA2jKil3pRCCYB8vw0ak
+         9IG96xdnQdPlH37yhigFb6HwHb+X6Tk/BYFRM81LTVZ+dqbxZ6cq+DpUp6m37ASueDSf
+         XhYA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=gPWZkBGd;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x12b.google.com (mail-lf1-x12b.google.com. [2a00:1450:4864:20::12b])
+        by gmr-mx.google.com with ESMTPS id h10si106671wml.1.2020.05.19.00.18.47
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 19 May 2020 00:18:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12b as permitted sender) client-ip=2a00:1450:4864:20::12b;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=gPWZkBGd;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x12b.google.com with SMTP id e125so9527351lfd.1
+        for <opensport@googlegroups.com>; Tue, 19 May 2020 00:18:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=+m+qRnJwes8kLOZ6AC5F0rJTzVilz7dXspt5AHSbLSc=;
+        b=gPWZkBGdko2JsC+o5WQ7FoHU0gGd49jrJkrHJuLGenxLV5BDS/EiPHrqmrJBSo3lkA
+         LOrlSF8gfbRxE2DjpIQhJCp3Px46s8+Tkgl6yKp5mXDarOBjYZXGjyMqXguemFvR8nah
+         nYd6Dcwy3GdwVcp77+y7c9gl7Cc0uUoTBV9ihfqfHJaq4ekMnHnsssk0H/i2oj4qS2Il
+         kzSZKJN/lYNWCxhdrJGYZg9BR87TS+DHoW/9jozIORia7ebqETtNABtvUFms+BQp+wq/
+         IrjhTutdBtlP176lkQEauPz+caRNfwBJgk8oTyCJDbWaU8mScl4W+9MTigkH1Vu5vQ35
+         j7/Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=+m+qRnJwes8kLOZ6AC5F0rJTzVilz7dXspt5AHSbLSc=;
+        b=NYNa2Z1sXD3mfltPDEiG2fyvMB0YXFFcrgXUYGbhpRpPo5H2EGy8fnQ2WfT752pOQ8
+         T2V4EjE9xZ9fUQI9xpDsRMwNaw9o3GdgkX+GhLRkWq/LaQ5fN11gvI79Qt5KUCBQkkM1
+         TFzl/iLdtwc+1dtlu9n3GLh6735c942O2TSSeuN3mOF7OFdSIoheYqG5AnCsUe71iISl
+         L1DbhKtEWIU/w2eAft0SlvwI+TMFWRApYekE5uRvlx4sXVCVKsE47WvUy/tu8Ebp+TKl
+         0aKqGs9WNcufVi5efyw0013zEqiWlLtmi9t2b7FrPiO8xpEf2j49KRXof/ICv7Vkw91x
+         vyYw==
+X-Gm-Message-State: AOAM533T0cxXSzIYJvIPkyWbngpZsyU71eQ/3wd9UyusVj5kxku/ekul
+	6AF+Z9NIp6Sm3UI4nINZykN18EElZ8zgLdEhI6GqCMT7ZQ4=
+X-Received: by 2002:a19:7714:: with SMTP id s20mr6973472lfc.161.1589872725976;
+ Tue, 19 May 2020 00:18:45 -0700 (PDT)
+MIME-Version: 1.0
+References: <f762e249-a1c1-4ba9-ab37-19848ce1bd05@googlegroups.com>
+In-Reply-To: <f762e249-a1c1-4ba9-ab37-19848ce1bd05@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 19 May 2020 09:18:34 +0200
+Message-ID: <CAAxEZd84Qb35CqHg6gaT-=56DXaCSdnnVw1oFbp2C1P03-02vA@mail.gmail.com>
+Subject: Re: [opensport] 404 status code from accessing endpoint
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   Hard to tell. Can you provide more details?  What datasets have you
+read in / imported?  And can you post the error stack trace from the
+console output when you access the route e.g. /events and
+/event/france.2019_20/teams?
+
+    Looks like the league key is wrong (depending on the dataset) -
+france - what kind of league do you expect?
+
+    For the Ligue 1 try - fr.1:
+
+      /event/fr.1.2019_20/teams
+
+  Cheers. Prost.
+

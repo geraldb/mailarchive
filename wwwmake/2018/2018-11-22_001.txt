@@ -1,0 +1,127 @@
+From 6626700790763356160@xxx Thu Nov 22 15:03:31 +0000 2018
+X-GM-THRID: 6626700790471852032
+X-Received: by 2002:a1c:c81:: with SMTP id 123mr1728189wmm.20.1542899010415;
+        Thu, 22 Nov 2018 07:03:30 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a1c:1c7:: with SMTP id 190ls2749522wmb.14.gmail; Thu, 22 Nov
+ 2018 07:03:29 -0800 (PST)
+X-Google-Smtp-Source: AFSGD/UtAQO7lR+PUO2P702iAhsEeSWspMdvrhJN1mZxqtXTa8UVifyn376Sh/djQjHDHRAb/vFz
+X-Received: by 2002:a1c:2d12:: with SMTP id t18mr1684234wmt.9.1542899009413;
+        Thu, 22 Nov 2018 07:03:29 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1542899009; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ysSk/tls2wYrq04+3BkYA/NpBb/MU0MTTm4PWunur//u1wchil+89O/HfUuGrbgrM4
+         20CuJCkEpS+wVyTTxfXN3mlt3a6hGAy4EUjn3/F87Kvvs8Geaqic8k9lwRIZlUom8nXC
+         ms3+OM7ojw2m7etuoPIfJqPkKPPYy/oja3tjNy1R2mpqS7pbGgipRfy8SCbEfc5nTByY
+         ntpBWLlxrJO5KwuNDsN4hhgUK58fUF1ybifuw8+EflsKtv3cPZu/pwUCTjngZG75xED7
+         3OvC558+FHGkVZN3vJeRVpKxwIkzMjhPqME5lr47tckmhpRrfNnExm+mcQexSeOIa+V0
+         Vpow==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=br9PnqzMrpzgk0wSPh7sx+fqTYidZLteE042ki54tQ0=;
+        b=tBomDgu71sPx8PXCVz990PHLpZT6AZk5XSUECODjC79vuq2u+UTRIz4rYPZ2/+u9M6
+         DvwcIkglHq5SP1sbegsFtbqS/CqSR8AknsHR+le6bsogD6Q72cx+PYrh2fGVaUaap2H0
+         F986c849eKrmRAw4+r9QQ05yGGSmd0EQ+cTthu10nTWFFyzbdJS9wqV1a80x5DtSKrl2
+         dPYX7Dy4+ZtD9dZ2oFYzYjtWazd7H+1iOZG3D/PYotaM5cagMf9BLqmys4/BivSULUZz
+         pCIMWnTxvt1/RX6Jz8l3+di4COUfSBhKpcnegOL2/qFs4r/TZM1224zh5jBk5PUz1q0j
+         rgpA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=pkcPjJPL;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x12d.google.com (mail-lf1-x12d.google.com. [2a00:1450:4864:20::12d])
+        by gmr-mx.google.com with ESMTPS id z129-v6si134346wmc.0.2018.11.22.07.03.29
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 22 Nov 2018 07:03:29 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12d as permitted sender) client-ip=2a00:1450:4864:20::12d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=pkcPjJPL;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x12d.google.com with SMTP id u18so6728659lff.10
+        for <wwwmake@googlegroups.com>; Thu, 22 Nov 2018 07:03:29 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=br9PnqzMrpzgk0wSPh7sx+fqTYidZLteE042ki54tQ0=;
+        b=pkcPjJPLiyxBll5CUb4afxPM2ucdvtyg75UB6Lchv22iQj3bKstn0LKH5V7wyk4xir
+         qCLlKa0plrjYS7I08WdUdswPBzOHbQBJmVfTUvcw5sdTIEYRc850+YIy+oHWfDBc/Sik
+         XZtlPjzCyHFfMdEnCYq3qpaKIeup6ezNM4E3MHAfb/goWYFJBcYyIB2E9O9esFve9WVY
+         tWhWAG3W5oMk+J1v0JNMggVvEg/cuMsd4cFd8HtPlpptpJv/Y6gQg1tswFNqZVUe7Ium
+         7lYUhenljoPRaG1ojpOLhu0cqQL33YJ3ERS3n3DAB5RGn8BKZ2BtPZ0KgwEO7aXWL+Wx
+         Nxmw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=br9PnqzMrpzgk0wSPh7sx+fqTYidZLteE042ki54tQ0=;
+        b=QFzLtMvyA0/uHyzqEHmdMUbTVb1htbBMG0No6cd+jS9lgfijlMO8M7mPxv6xJGkIpQ
+         4OJH2xdOM8gB8DYNELAKSTBczepdHplQCL1hcebmsH/0b68vXQ4K2KMuS/oMO7akp1wZ
+         koPK5wFGl6j5XYp1BM/ooBw9D907pXBCrlgi4udhp41S+70jW63Ekw+dJV/Py6ppz7/C
+         wxyVCy8srdYz5ff1Onsw6t93PIX/undD94R4iHGzTRs4TauRetNJs9xZunQwbyC2Jxos
+         1Hi7XLrkHgWM4ePqfxqRn3IojVt+rYP5kH871RJ4HQjbc5a5G8LpxpVaMg7VWUZEkjyt
+         8C4A==
+X-Gm-Message-State: AGRZ1gIuUYt2/5718ZYdCFUEZ2ViPwAsNOkO/NR5roHeqGMoRPpP7l5r
+	G7Z/h58qdAHD/dEfMY4lH622kEjfuSz7aGOtcOcWDJV2
+X-Received: by 2002:a19:c954:: with SMTP id z81mr6491540lff.150.1542899008286;
+ Thu, 22 Nov 2018 07:03:28 -0800 (PST)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 22 Nov 2018 16:03:16 +0100
+Message-ID: <CAAxEZd9SGh23+FPYGzxk6Oh7A_Cs2L4qSJad2V2y9Wbhv3nL1w@mail.gmail.com>
+Subject: CSV Reader (and Type Inference and Data Conversion) Benchmarks
+ (Faster, Fasterer, Fastest) - And the Winner is... String#split
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  I've put together some basic csv reader / parser benchmarks [1].
+  The "Raw" Read Benchmark returns all strings - no type inference or
+data conversion (*)
+and the Numerics Benchmark returns all numbers - simple type inference
+or data conversion  -
+it's all numbers - all the time (except for the header row).
+
+  Here's the result for the numerics benchmark using the weather
+station data from
+the University of Waterloo, Ontario, Canada:
+
+   n = 100
+                      user     system      total        real
+std:             20.781000   0.234000  21.015000 ( 21.039186)
+split:            1.531000   0.063000   1.594000 (  1.582496)
+split(table):     2.000000   0.015000   2.015000 (  2.016913)
+reader:          63.500000   0.203000  63.703000 ( 63.691851)
+reader(table):   37.407000   0.188000  37.595000 ( 37.601160)
+reader(numeric): 40.421000   0.141000  40.562000 ( 40.595467)
+reader(json):     1.125000   0.062000   1.187000 (  1.191145)
+reader(yaml):    38.485000  15.672000  54.157000 ( 54.229705)
+
+   And the winner is...
+
+Of course - nothing is faster than "plain" string#split (with "simple
+csv", that is,
+no escape rules and edge cases):
+
+   def read_faster_csv( path, sep: ',' )
+     recs = []
+     File.open( path, 'r:utf-8' ) do |f|
+        f.each_line do |line|
+          line   = line.chomp( '' )
+          values = line.split( sep )
+          recs << values
+        end
+     end
+     recs
+   end
+
+
+(*) Note: YAML and JSON - of course - always use YAML and JSON
+encoding (and data conversion) rules :-).
+
+  Happy data wrangling with ruby.  Cheers. Prost.
+
+[1] https://github.com/csvreader/benchmarks
+

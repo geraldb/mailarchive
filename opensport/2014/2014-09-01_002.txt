@@ -1,0 +1,157 @@
+From 2095897903104@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 2083479617536
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,451323d5a7de4e5a
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.32.1 with SMTP id e1mr14750107obi.11.1409533726393;
+        Sun, 31 Aug 2014 18:08:46 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.138.199 with SMTP id qs7ls1587644igb.14.canary; Sun, 31 Aug
+ 2014 18:08:45 -0700 (PDT)
+X-Received: by 10.50.18.17 with SMTP id s17mr298517igd.10.1409533725920;
+        Sun, 31 Aug 2014 18:08:45 -0700 (PDT)
+X-Google-Doc-Id: 59f3cb7a6bb0d743
+X-Google-Web-Client: true
+Date: Sun, 31 Aug 2014 18:08:44 -0700 (PDT)
+From: Carl-Erik Svensson <csvenss2@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <3749272a-0338-42de-beea-6c45a1513847@googlegroups.com>
+In-Reply-To: <CAAxEZd9LD4=CkADt71YKWDCTGXkYCxeQj=-b0r=o_0bj1+2VfQ@mail.gmail.com>
+References: <6f233201-c3fc-4d17-81dd-70c6d68e866c@googlegroups.com>
+ <CAAxEZd9LD4=CkADt71YKWDCTGXkYCxeQj=-b0r=o_0bj1+2VfQ@mail.gmail.com>
+Subject: Re: [opensport] Seed A Database in Production Environment
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3104_1553262135.1409533724820"
+X-Google-Token: EJyOj6AFj_66QjTJ_tQ0
+X-Google-IP: 24.130.213.187
+
+------=_Part_3104_1553262135.1409533724820
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3105_865490013.1409533724820"
+
+------=_Part_3105_865490013.1409533724820
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Ah, that worked nicely!  I didn't realize you could point to non-gem git 
+source in the Gemfile (like the data sets).  The only other gotcha I had 
+was connecting to the right database, but with a rails app, you can simply 
+require config/environment, and it will connect to proper database based on 
+the RAILS_ENV, and require all the gems and libraries.  That made the 
+Rakefile very easy to write.
+
+[1] https://github.com/cecomp64/mls-almanac.wiki.git
+[2] http://mls-almanac.herokuapp.com/
+
+On Sunday, August 31, 2014 1:09:18 AM UTC-7, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    Thanks for the update and thanks for keep going.   I haven't 
+> forgotten the stats - will try to add the missing FootballStatsReader. 
+>
+>    To add football data on a heroku install you have at least two 
+> options  (a third easier one with zip archives is in planning): 
+>
+>    Option 1)   Never tried it put was successful if you check older 
+> postings - e.g. install the data into your local postgress database 
+> and than use pg dump or something and than load the copy into your 
+> remote heroku postgres db. 
+>
+>    Option 2)   Add the datasets you want to load into your Gemfile - 
+> that's how you get them onto the remote heroku machine. Example (see 
+> the sport.db.admin Gemfile): 
+>
+>
+> gem 'worlddb-data', '9.9.9', git: '
+> https://github.com/openmundi/world.db.git' 
+>
+> gem 'footballdb-data-national-teams', '9.9.9', git: 
+> 'https://github.com/openfootball/national-teams.git' 
+> gem 'footballdb-data-world-cup', '9.9.9', git: 
+> 'https://github.com/openfootball/world-cup.git' 
+>
+>   and so on. 
+>
+>    Now you just need to code a litte rake build script (again see the 
+> sport.db.admin sample task in db/seeds.rb ) e.g. 
+>
+> SportDb.read_builtin 
+>
+> sportdb_setups = [ 
+>   ['fr-france', '2014-15'], 
+>   ['de-deutschland', '2014-15'], 
+>   ['en-england', '2014-15'], 
+> ] 
+>
+> sportdb_setups.each do |setup| 
+>   SportDb.read_setup( "setups/#{setup[1]}", 
+> find_data_path_from_gemfile_gitref( setup[0]) ) 
+> end 
+>
+>   and than after you push your app to heroku you can use, for example: 
+>
+>    $ heroku run rake db:seed 
+>
+>     or something. That's all. Good luck. Cheers. 
+>
+
+------=_Part_3105_865490013.1409533724820
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Ah, that worked nicely! &nbsp;I didn't realize you could point to non-gem git source in the Gemfile (like the data sets). &nbsp;The only other gotcha I had was connecting to the right database, but with a rails app, you can simply require config/environment, and it will connect to proper database based on the RAILS_ENV, and require all the gems and libraries. &nbsp;That made the Rakefile very easy to write.<div><br></div><div>[1]&nbsp;https://github.com/cecomp64/mls-almanac.wiki.git</div><div>[2]&nbsp;http://mls-almanac.herokuapp.com/<br><br>On Sunday, August 31, 2014 1:09:18 AM UTC-7, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;Thanks for the update and thanks for keep going. &nbsp; I haven't
+<br>forgotten the stats - will try to add the missing FootballStatsReader.
+<br>
+<br>&nbsp; &nbsp;To add football data on a heroku install you have at least two
+<br>options &nbsp;(a third easier one with zip archives is in planning):
+<br>
+<br>&nbsp; &nbsp;Option 1) &nbsp; Never tried it put was successful if you check older
+<br>postings - e.g. install the data into your local postgress database
+<br>and than use pg dump or something and than load the copy into your
+<br>remote heroku postgres db.
+<br>
+<br>&nbsp; &nbsp;Option 2) &nbsp; Add the datasets you want to load into your Gemfile -
+<br>that's how you get them onto the remote heroku machine. Example (see
+<br>the sport.db.admin Gemfile):
+<br>
+<br>
+<br>gem 'worlddb-data', '9.9.9', git: '<a href="https://github.com/openmundi/world.db.git" target="_blank" onmousedown="this.href='https://www.google.com/url?q\75https%3A%2F%2Fgithub.com%2Fopenmundi%2Fworld.db.git\46sa\75D\46sntz\0751\46usg\75AFQjCNHHxEg_Ar2VBvq0OPIpMCqefY08Lg';return true;" onclick="this.href='https://www.google.com/url?q\75https%3A%2F%2Fgithub.com%2Fopenmundi%2Fworld.db.git\46sa\75D\46sntz\0751\46usg\75AFQjCNHHxEg_Ar2VBvq0OPIpMCqefY08Lg';return true;">https://github.com/openmundi/<wbr>world.db.git</a>'
+<br>
+<br>gem 'footballdb-data-national-<wbr>teams', '9.9.9', git:
+<br>'<a href="https://github.com/openfootball/national-teams.git" target="_blank" onmousedown="this.href='https://www.google.com/url?q\75https%3A%2F%2Fgithub.com%2Fopenfootball%2Fnational-teams.git\46sa\75D\46sntz\0751\46usg\75AFQjCNE8Qq0GrZ3LgiJ2m69HjpvFNdwGhg';return true;" onclick="this.href='https://www.google.com/url?q\75https%3A%2F%2Fgithub.com%2Fopenfootball%2Fnational-teams.git\46sa\75D\46sntz\0751\46usg\75AFQjCNE8Qq0GrZ3LgiJ2m69HjpvFNdwGhg';return true;">https://github.com/<wbr>openfootball/national-teams.<wbr>git</a>'
+<br>gem 'footballdb-data-world-cup', '9.9.9', git:
+<br>'<a href="https://github.com/openfootball/world-cup.git" target="_blank" onmousedown="this.href='https://www.google.com/url?q\75https%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup.git\46sa\75D\46sntz\0751\46usg\75AFQjCNE3OFwzr_xGWELMlOTkRREa6Oah7Q';return true;" onclick="this.href='https://www.google.com/url?q\75https%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup.git\46sa\75D\46sntz\0751\46usg\75AFQjCNE3OFwzr_xGWELMlOTkRREa6Oah7Q';return true;">https://github.com/<wbr>openfootball/world-cup.git</a>'
+<br>
+<br>&nbsp; and so on.
+<br>
+<br>&nbsp; &nbsp;Now you just need to code a litte rake build script (again see the
+<br>sport.db.admin sample task in db/seeds.rb ) e.g.
+<br>
+<br>SportDb.read_builtin
+<br>
+<br>sportdb_setups = [
+<br>&nbsp; ['fr-france', '2014-15'],
+<br>&nbsp; ['de-deutschland', '2014-15'],
+<br>&nbsp; ['en-england', '2014-15'],
+<br>]
+<br>
+<br>sportdb_setups.each do |setup|
+<br>&nbsp; SportDb.read_setup( "setups/#{setup[1]}",
+<br>find_data_path_from_gemfile_<wbr>gitref( setup[0]) )
+<br>end
+<br>
+<br>&nbsp; and than after you push your app to heroku you can use, for example:
+<br>
+<br>&nbsp; &nbsp;$ heroku run rake db:seed
+<br>
+<br>&nbsp; &nbsp; or something. That's all. Good luck. Cheers.
+<br></blockquote></div></div>
+------=_Part_3105_865490013.1409533724820--
+
+------=_Part_3104_1553262135.1409533724820--
+

@@ -1,0 +1,96 @@
+From 118322364416@xxx Sat Dec 13 20:08:19 +0000 2014
+X-GM-THRID: 74704748544
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,3bc96c9415837e1
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.65.108 with SMTP id w12mr2421884pas.46.1408076616355;
+        Thu, 14 Aug 2014 21:23:36 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.88.203 with SMTP id t69ls1300194qgd.30.gmail; Thu, 14 Aug
+ 2014 21:23:36 -0700 (PDT)
+X-Received: by 10.140.23.163 with SMTP id 32mr11769qgp.8.1408076616183;
+        Thu, 14 Aug 2014 21:23:36 -0700 (PDT)
+X-Google-Doc-Id: f21203c111ce9930
+X-Google-Web-Client: true
+Date: Thu, 14 Aug 2014 21:23:35 -0700 (PDT)
+From: Eckhard Licher <eckhard.licher@googlemail.com>
+To: openmundi@googlegroups.com
+Cc: eckhard.licher@googlemail.com
+Message-Id: <38059fc1-23b5-4181-af9f-d836581c5321@googlegroups.com>
+In-Reply-To: <CAAxEZd-SBc+102hpfmXprd29KbCO0deBToG4HSMTtRXHk9R_WQ@mail.gmail.com>
+References: <CAAxEZd-SBc+102hpfmXprd29KbCO0deBToG4HSMTtRXHk9R_WQ@mail.gmail.com>
+Subject: Re: Factbook gem and JSON repo
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_171_1124296278.1408076615894"
+X-Google-Token: EMeWtp8FfbhLF1SDO-80
+X-Google-IP: 85.158.138.19
+
+------=_Part_171_1124296278.1408076615894
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_172_338934393.1408076615894"
+
+------=_Part_172_338934393.1408076615894
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Gerald,
+
+thanks for the trouble -- installing the ruby-dev package did the trick.
+
+For all non rubists out there it would be helpful to have the information, 
+that this package is needed to install the factbook gem on a "clean" 
+machine, in the Install section of README.md file.
+
+Thanks again, I really appreciate
+
+Eckhard
+
+Am Donnerstag, 14. August 2014 22:41:47 UTC+2 schrieb Gerald Bauer:
+>
+> Hello, 
+>
+>    I see. It looks like you're missing the ruby-dev package. 
+>
+>   Try google "ruby cannot load such file -- mkmf" 
+>
+>   And the first results should have all the info. For example, check 
+> this stackoverflow posting [1] 
+>
+>  > $ sudo aptitude install ruby1.9.1-dev   ## or something 
+>
+>   Cheers. 
+>
+> [1] 
+> stackoverflow.com/questions/7645918/require-no-such-file-to-load-mkmf-loaderror 
+>
+> PS: As recommended better use rvm - the Ruby Version Manager. 
+>
+
+------=_Part_172_338934393.1408076615894
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Gerald,<br><br>thanks for the trouble -- installing the ruby-dev package did the trick.<br><br>For all non rubists out there it would be helpful to have the information, that this package is needed to install the factbook gem on a "clean" machine, in the Install section of README.md file.<br><br>Thanks again, I really appreciate<br><br>Eckhard<br><br>Am Donnerstag, 14. August 2014 22:41:47 UTC+2 schrieb Gerald Bauer:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;I see. It looks like you're missing the ruby-dev package.
+<br>
+<br>&nbsp; Try google "ruby cannot load such file -- mkmf"
+<br>
+<br>&nbsp; And the first results should have all the info. For example, check
+<br>this stackoverflow posting [1]
+<br>
+<br>&nbsp;&gt; $ sudo aptitude install ruby1.9.1-dev &nbsp; ## or something
+<br>
+<br>&nbsp; Cheers.
+<br>
+<br>[1] <a href="http://stackoverflow.com/questions/7645918/require-no-such-file-to-load-mkmf-loaderror" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fstackoverflow.com%2Fquestions%2F7645918%2Frequire-no-such-file-to-load-mkmf-loaderror\46sa\75D\46sntz\0751\46usg\75AFQjCNE4pyCxNLrv2m-geWakon3y-cGRrg';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fstackoverflow.com%2Fquestions%2F7645918%2Frequire-no-such-file-to-load-mkmf-loaderror\46sa\75D\46sntz\0751\46usg\75AFQjCNE4pyCxNLrv2m-geWakon3y-cGRrg';return true;">stackoverflow.com/questions/<wbr>7645918/require-no-such-file-<wbr>to-load-mkmf-loaderror</a>
+<br>
+<br>PS: As recommended better use rvm - the Ruby Version Manager.
+<br></blockquote></div>
+------=_Part_172_338934393.1408076615894--
+
+------=_Part_171_1124296278.1408076615894--
+

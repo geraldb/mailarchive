@@ -1,0 +1,149 @@
+From 756660830208@xxx Tue Jun 16 00:17:12 +0000 2015
+X-GM-THRID: 735777390592
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4c0ddad8e50128c7
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.58.100.235 with SMTP id fb11mr17769282veb.33.1400756839005;
+        Thu, 22 May 2014 04:07:19 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.36.65 with SMTP id o1ls1790268igj.33.gmail; Thu, 22 May
+ 2014 04:07:18 -0700 (PDT)
+X-Received: by 10.50.143.71 with SMTP id sc7mr455261igb.4.1400756838614;
+        Thu, 22 May 2014 04:07:18 -0700 (PDT)
+X-Google-Doc-Id: f383c702e15c1b40
+X-Google-Web-Client: true
+Date: Thu, 22 May 2014 04:07:17 -0700 (PDT)
+From: Unreal Hoang <unrealhoang@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <d72ddb02-11f3-4ec4-93c2-2256c1040704@googlegroups.com>
+In-Reply-To: <d4a6dfef-f4ec-4a5a-93f1-1ca10dc68274@googlegroups.com>
+References: <1628d48d-ad59-46f9-8f13-a86e1d4e9399@googlegroups.com>
+ <d4a6dfef-f4ec-4a5a-93f1-1ca10dc68274@googlegroups.com>
+Subject: Re: Error building db
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3102_26890283.1400756837555"
+X-Google-Token: EOW095sF5dgtDN5lrLk0
+X-Google-IP: 1.52.237.91
+
+------=_Part_3102_26890283.1400756837555
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3103_345922.1400756837555"
+
+------=_Part_3103_345922.1400756837555
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+ 
+
+Thank, but if I want to use the official build script, how should I organize
+
+the folder so that the build can work? Because when I run that command
+
+inside build folder, it throws the following error:
+
+The current build documentation is not mentioning anything about that also.
+
+[info] parsing data 'setups/sport.db.admin'
+
+(../../openmundi/world.db/setups/sport.db.admin.txt)...
+
+rake aborted!
+
+Errno::ENOENT: No such file or directory @ rb_sysopen -
+
+../../openmundi/world.db/setups/sport.db.admin.txt
+
+
+Sorry for mis-posting, I'm not used with google group.
+On Thursday, May 22, 2014 1:40:07 PM UTC+7, Gerald Bauer wrote:
+>
+> Hello,
+>
+>      Thanks for your interest in football.db.  The world-cup fixtures 
+> requires / depend on the national teams and leagues (stored in the 
+> national-teams [1] repo.
+>
+>    Thus, try:
+>
+>    $ sportdb setup   --include ./national-teams --worldinclude ./world.db 
+>    $ sportdb update --include ./world-cup
+>    
+>    Or use the official build script [2]: 
+>
+>     rake build DATA=worldcup2014
+>
+>   Let us know if it works. Cheers.
+>
+> [1] github.com/openfootball/national-teams
+> [2] github.com/openfootball/build
+>
+
+------=_Part_3103_345922.1400756837555
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+
+
+
+
+
+
+
+<p class=3D"p1">Thank, but if I want to use the official build script, how =
+should I organize</p><p class=3D"p1">the folder so that the build can work?=
+ Because when I run that command</p><p class=3D"p1">inside build folder, it=
+ throws the following error:</p><p class=3D"p1">The current build documenta=
+tion is not mentioning anything about that also.</p><pre style=3D"margin-to=
+p: 15px; padding: 6px 10px; border: 1px solid rgb(221, 221, 221); font-fami=
+ly: Consolas, 'Liberation Mono', Courier, monospace; line-height: 19px; ove=
+rflow: auto; border-top-left-radius: 3px; border-top-right-radius: 3px; bor=
+der-bottom-right-radius: 3px; border-bottom-left-radius: 3px; word-wrap: no=
+rmal; color: rgb(51, 51, 51); background-color: rgb(248, 248, 248);"><p cla=
+ss=3D"p1" style=3D"color: rgb(34, 34, 34); font-family: Arial, Helvetica, s=
+ans-serif; white-space: normal; background-color: rgb(255, 255, 255);">[inf=
+o] parsing data 'setups/sport.db.admin'</p><p class=3D"p1" style=3D"color: =
+rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; white-space: no=
+rmal; background-color: rgb(255, 255, 255);">(../../openmundi/world.db/setu=
+ps/sport.db.admin.txt)...</p><p class=3D"p1" style=3D"color: rgb(34, 34, 34=
+); font-family: Arial, Helvetica, sans-serif; white-space: normal; backgrou=
+nd-color: rgb(255, 255, 255);">rake aborted!</p><p class=3D"p1" style=3D"co=
+lor: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; white-spac=
+e: normal; background-color: rgb(255, 255, 255);">Errno::ENOENT: No such fi=
+le or directory @ rb_sysopen -</p><p class=3D"p1" style=3D"color: rgb(34, 3=
+4, 34); font-family: Arial, Helvetica, sans-serif; white-space: normal; bac=
+kground-color: rgb(255, 255, 255);"></p><p class=3D"p1" style=3D"color: rgb=
+(34, 34, 34); font-family: Arial, Helvetica, sans-serif; white-space: norma=
+l; background-color: rgb(255, 255, 255);">../../openmundi/world.db/setups/s=
+port.db.admin.txt</p></pre><p class=3D"p1"><br></p><p class=3D"p1">Sorry fo=
+r mis-posting, I'm not used with google group.</p>On Thursday, May 22, 2014=
+ 1:40:07 PM UTC+7, Gerald Bauer wrote:<blockquote class=3D"gmail_quote" sty=
+le=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left=
+: 1ex;"><div dir=3D"ltr">Hello,<br><br>&nbsp; &nbsp;&nbsp; Thanks for your =
+interest in football.db.&nbsp; The world-cup fixtures requires / depend on =
+the national teams and leagues (stored in the national-teams [1] repo.<br><=
+br>&nbsp;&nbsp; Thus, try:<br><br>&nbsp;&nbsp; $ sportdb setup&nbsp;&nbsp; =
+--include ./national-teams --worldinclude ./world.db
+<br>&nbsp;&nbsp; $ sportdb update --include ./world-cup<br>&nbsp;&nbsp; <br=
+>&nbsp;&nbsp; Or use the official build script [2]: <br><br>&nbsp; &nbsp; r=
+ake build DATA=3Dworldcup2014<br><br>&nbsp; Let us know if it works. Cheers=
+.<br><br>[1] <a href=3D"http://github.com/openfootball/national-teams" targ=
+et=3D"_blank" onmousedown=3D"this.href=3D'http://www.google.com/url?q\75htt=
+p%3A%2F%2Fgithub.com%2Fopenfootball%2Fnational-teams\46sa\75D\46sntz\0751\4=
+6usg\75AFQjCNH6X4BVJ0toAgSKcEdn55SbGNvzFQ';return true;" onclick=3D"this.hr=
+ef=3D'http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%=
+2Fnational-teams\46sa\75D\46sntz\0751\46usg\75AFQjCNH6X4BVJ0toAgSKcEdn55SbG=
+NvzFQ';return true;">github.com/openfootball/<wbr>national-teams</a><br>[2]=
+ <a href=3D"http://github.com/openfootball/build" target=3D"_blank" onmouse=
+down=3D"this.href=3D'http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%=
+2Fopenfootball%2Fbuild\46sa\75D\46sntz\0751\46usg\75AFQjCNFlWteKPUCk2Nwu5Z_=
+tEe6-1V7xYQ';return true;" onclick=3D"this.href=3D'http://www.google.com/ur=
+l?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fbuild\46sa\75D\46sntz\0751\4=
+6usg\75AFQjCNFlWteKPUCk2Nwu5Z_tEe6-1V7xYQ';return true;">github.com/openfoo=
+tball/build</a><br></div></blockquote></div>
+------=_Part_3103_345922.1400756837555--
+
+------=_Part_3102_26890283.1400756837555--
+

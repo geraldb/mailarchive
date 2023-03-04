@@ -1,0 +1,100 @@
+From 2349446725632@xxx Tue Jun 16 00:16:42 +0000 2015
+X-GM-THRID: 2350741716992
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,8cdd601a47292b53,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.19.42 with SMTP id b10mr2717721wie.0.1419331308310;
+        Tue, 23 Dec 2014 02:41:48 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.42.170 with SMTP id p10ls1722233lal.35.gmail; Tue, 23 Dec
+ 2014 02:41:47 -0800 (PST)
+X-Received: by 10.112.154.232 with SMTP id vr8mr152567lbb.10.1419331307636;
+        Tue, 23 Dec 2014 02:41:47 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22c.google.com (mail-wg0-x22c.google.com. [2a00:1450:400c:c00::22c])
+        by gmr-mx.google.com with ESMTPS id j6si803025wix.1.2014.12.23.02.41.47
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 23 Dec 2014 02:41:47 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22c as permitted sender) client-ip=2a00:1450:400c:c00::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22c as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f44.google.com with SMTP id b13so8694883wgh.3
+        for <opensport@googlegroups.com>; Tue, 23 Dec 2014 02:41:47 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=AT4o8DrLgDFpEGXMXZsk9mTnpEmzUjH/WL2GTFzBkUI=;
+        b=OGljz6CjcmPmua+xRgvvn2itML3ejdU/vrWVMhQ+I3vIVdvP2MW2vOkDu8zovnQQvc
+         S77eH+6DLpvu0wiA+jxEAi+3uwokynidaUg+295cS6i4V8pa6gNgGVvPxlYOTzZFC/kf
+         6S40PTBDCwIhi1mNCEgsfuM93vISlxS4hXW8tnbgIYqIlYYZBzTmMbc1UXaBglauJgu0
+         doiYIQKO8unKJBCL+73fAZ5h4MrbiEAEof62ke6B+pxlBEqAAvYcDm275TxSf3G0s6Rw
+         QYKco97JTQ46p+6Yn4NjOaB3so6fCiKid3twLDQ8grLM4RSszghmfx0r1qOmf3es4PeL
+         wTmQ==
+MIME-Version: 1.0
+X-Received: by 10.180.78.233 with SMTP id e9mr21847661wix.25.1419331307511;
+ Tue, 23 Dec 2014 02:41:47 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Tue, 23 Dec 2014 02:41:47 -0800 (PST)
+Date: Tue, 23 Dec 2014 11:41:47 +0100
+Message-ID: <CAAxEZd_oK7Fdi5Rvm4UFHQo_3KS9gJbwUAYoseF9-8-HXgKbVw@mail.gmail.com>
+Subject: GitHub Spotlight - sport_db.Football - Alternative SQL Football
+ Schema w/ Diagrams
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've stumbled over another GitHub project called sport_db.Football
+by Phuong Nguyen (aka milkysunshine91) that documents and includes a
+database schema for football. Tables and views include:
+
+- nationality
+- country
+- city
+- position
+- league
+- team
+- player
+- season
+- game
+- scores
+- team_league_season
+- scorerrank (view)
+- scores_for_game (views)
+
+
+  Example:
+
+create table football.game
+(
+ id bigint not null auto_increment,
+ home_team_id bigint not null references football.team(id),
+ away_team_id bigint not null references football.team(id),
+ season_id bigint not null references football.season(id),
+ league_id bigint not null references football.league(id),
+ game_date date,
+ game_day tinyint,
+ primary key (id)
+);
+
+create table football.scores
+(
+ id bigint not null auto_increment,
+ game_id bigint not null references football.game(id),
+ player_id bigint not null references football.player(id),
+ team_id bigint not null references football.team(id),
+ own_goal tinyint default 0,
+ minute tinyint,
+ primary key (id)
+);
+
+  If you're looking for an alternative SQL schema check it out.
+
+  Cheers.
+
+[1] github.com/milkysunshine91/sport_db.Football
+

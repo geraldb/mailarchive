@@ -1,0 +1,74 @@
+From 6237443007664095232@xxx Fri Jan 08 15:44:31 +0000 2016
+X-GM-THRID: 6237377165412794368
+X-Received: by 10.66.102.68 with SMTP id fm4mr48951984pab.3.1452267870744;
+        Fri, 08 Jan 2016 07:44:30 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.79.133 with SMTP id j5ls1159746igx.21.canary; Fri, 08 Jan
+ 2016 07:44:30 -0800 (PST)
+X-Received: by 10.66.122.144 with SMTP id ls16mr60462635pab.2.1452267870264;
+        Fri, 08 Jan 2016 07:44:30 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22c.google.com (mail-io0-x22c.google.com. [2607:f8b0:4001:c06::22c])
+        by gmr-mx.google.com with ESMTPS id t9si1012901ige.1.2016.01.08.07.44.30
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 08 Jan 2016 07:44:30 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22c as permitted sender) client-ip=2607:f8b0:4001:c06::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x22c.google.com with SMTP id 77so258204434ioc.2
+        for <opensport@googlegroups.com>; Fri, 08 Jan 2016 07:44:30 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=J6Cj7hY1r/26yf7YGy7WmZnOuTJ2SXQHDwZ3FPVWa5I=;
+        b=tZIZyy+xFtOE8PWCnc493TtyHMRDgoVzdTFL8TEMWIz96UpGuM1po58hQ0ceGqcwrQ
+         UEuLHSWsu1LP7wKH+om4dEJ68mghdw0szyICg8t5JHE8pOHe3RWrvcqpbBKoy+YOyj+D
+         kqTclqX4eaes6MS9zNp75mmKHxoFfex/MKTKh3dwEnXSzPp+VCmSaYo2lB9KqwXflpic
+         yeDr4pfmqWpCNe1Hbm0dNUWy5yQ3YlPQmzKgk13LrHMe1moJg9Xil+f5Uk7/SNkqJFJb
+         ARZChMyDpmwy5+WFItdMBi72M6GjoHXjBfEyzpZMIIM2fab+ic/tVmMMgfPheSss+w45
+         8v3g==
+MIME-Version: 1.0
+X-Received: by 10.107.15.17 with SMTP id x17mr101011343ioi.35.1452267870121;
+ Fri, 08 Jan 2016 07:44:30 -0800 (PST)
+Received: by 10.107.63.198 with HTTP; Fri, 8 Jan 2016 07:44:30 -0800 (PST)
+In-Reply-To: <887136ea-fe8e-40ba-82ed-d0cfdf026811@googlegroups.com>
+References: <9bba312a-2310-4124-a105-a1689a9663bc@googlegroups.com>
+	<CAAxEZd8sKLkn_atSq2_=cToDrQKFxK_TzqbfppUNpfvC=uKbGA@mail.gmail.com>
+	<887136ea-fe8e-40ba-82ed-d0cfdf026811@googlegroups.com>
+Date: Fri, 8 Jan 2016 16:44:30 +0100
+Message-ID: <CAAxEZd9M3u2LWkp_K6V+yjau3TsDVFbcN6AiTWPTdi0TbwwthQ@mail.gmail.com>
+Subject: Re: [opensport] Can't build my own football.db
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary=001a113f1e2084766c0528d4768c
+
+--001a113f1e2084766c0528d4768c
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+> How do I run this script? I don't know anything about ruby, I just wanna
+build this database to import to
+> mysql server. Can you make an example for me?
+
+  Sorry if you want to update the standing you have to learn (and use) a
+little Ruby. Cheers.
+
+--001a113f1e2084766c0528d4768c
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<div>&gt;=C2=A0<span style=3D"font-size:12.8px">How =
+do I run this script? I don&#39;t know anything about ruby, I just wanna bu=
+ild this database to import to=C2=A0</span></div><div><span style=3D"font-s=
+ize:12.8px">&gt; mysql server. Can you make an example for me?</span><span =
+style=3D"font-size:12.8px">=C2=A0</span>=C2=A0=C2=A0</div><div><br></div><d=
+iv>=C2=A0 Sorry if you want to update the standing you have to learn (and u=
+se) a little Ruby. Cheers.</div><div><br></div></div>
+
+--001a113f1e2084766c0528d4768c--
+

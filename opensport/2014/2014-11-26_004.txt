@@ -1,0 +1,88 @@
+From 2300577841152@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 2300196159488
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,9a0e333c8d7d8d67,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.6.133 with SMTP id b5mr7668laa.10.1416960815774;
+        Tue, 25 Nov 2014 16:13:35 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.22.72 with SMTP id b8ls720061laf.2.gmail; Tue, 25 Nov 2014
+ 16:13:34 -0800 (PST)
+X-Received: by 10.112.201.169 with SMTP id kb9mr7471lbc.20.1416960814650;
+        Tue, 25 Nov 2014 16:13:34 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x231.google.com (mail-wi0-x231.google.com. [2a00:1450:400c:c05::231])
+        by gmr-mx.google.com with ESMTPS id j6si497272wix.1.2014.11.25.16.13.34
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 25 Nov 2014 16:13:34 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) client-ip=2a00:1450:400c:c05::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f177.google.com with SMTP id l15so3259095wiw.4
+        for <opensport@googlegroups.com>; Tue, 25 Nov 2014 16:13:34 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=BTuW2geYwaBPY3wh7qJRQBiJFs355xkKYLB4mlfXTZY=;
+        b=CJbSROiaQ82yaLTLMopS2nC54Gpo0hk+R/y+DOdWDEcqhW8dfGZ8Lq5jyHwcVNiJjY
+         RgekNGuyM3s4xqOAMasrlCOMLcglNZcYMZXVfsg2Dd6OJzSFSKEUgtPUQFlR5MczBBac
+         C0VPubaK3RL4dmvrl3WsZt3mXf/9PvrBZziabHLHO4/kh+uGRzn3ch4AQWXB2N+mhKL/
+         N4uIQGCGqQq9EBsl8hh2EnMMI9/uNXGRQIe8lA8h6CcZtn1nFXMMuouhddDDZW1rR92p
+         Vbv0KVLWsLK0oqqpj6MkBnGcRDe7joWk81p3fuMX9h0ls1b7C2v6l1JU50n6VKEw4uCj
+         y2+g==
+MIME-Version: 1.0
+X-Received: by 10.180.82.227 with SMTP id l3mr10711668wiy.0.1416960814518;
+ Tue, 25 Nov 2014 16:13:34 -0800 (PST)
+Received: by 10.216.205.135 with HTTP; Tue, 25 Nov 2014 16:13:34 -0800 (PST)
+Date: Wed, 26 Nov 2014 01:13:34 +0100
+Message-ID: <CAAxEZd_dfUksGeVWHxTxwW_GB=HE-GXtYeBddU6pbRq_PeHYFg@mail.gmail.com>
+Subject: New football.db Build System - Welcome Datafile - Goodbye Git 'n' Rake
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've uploaded a new sportdb command line tool version, that is,
+v1.9.11. What's news?
+
+  The sportdb command line tool includes a new build system (as a new
+and easier all-in-one option).
+
+  To try it - use the new Datafile - a mini language a.k.a.
+domain-specific language (DSL) that lets you setup new football.db in
+minutes.
+
+  For example, to setup a football.db for the World Cup 2014 use:
+
+Datafile:
+
+   world 'openmundi/world.db', setup: 'countries'
+
+   football 'openfootball/national-teams'
+   football 'openfootball/world-cup', setup: '2014'
+
+
+
+  That's it.  Now run
+
+$ sportdb build
+
+  The new build command will look for the ./Datafile script in your
+working folder
+and
+
+ Step 1)  Download all datasets as zip archives (from GitHub) to  ./tmp
+ Step 2)  Create all database tables
+ Step 3)  Read/import all datasets from the zip archives in ./tmp (no
+need to unpack)
+
+   That's it.  Still early and rough. If you try the new Datafile
+build let us know how it goes.
+
+   Cheers.
+

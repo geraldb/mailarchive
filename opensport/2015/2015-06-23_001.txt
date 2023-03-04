@@ -1,0 +1,97 @@
+From 6163626428741976064@xxx Tue Jun 23 17:38:29 +0000 2015
+X-GM-THRID: 6163626429711908864
+X-Received: by 10.13.231.133 with SMTP id q127mr47981403ywe.31.1435081108675;
+        Tue, 23 Jun 2015 10:38:28 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.33.75 with SMTP id h72ls239143ioh.47.gmail; Tue, 23 Jun
+ 2015 10:38:28 -0700 (PDT)
+X-Received: by 10.66.144.101 with SMTP id sl5mr48232569pab.0.1435081108373;
+        Tue, 23 Jun 2015 10:38:28 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x229.google.com (mail-ie0-x229.google.com. [2607:f8b0:4001:c03::229])
+        by gmr-mx.google.com with ESMTPS id fk9si33178igb.0.2015.06.23.10.38.28
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 23 Jun 2015 10:38:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::229 as permitted sender) client-ip=2607:f8b0:4001:c03::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ie0-x229.google.com with SMTP id vh10so16755207iec.3
+        for <opensport@googlegroups.com>; Tue, 23 Jun 2015 10:38:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=yaNzzhEEf3eyF4C2PtA8xi1tBJB9bhiq+Cxk7M9r2gY=;
+        b=AdW2EGyMchiuhpUXlAlUA7USIwDpHQvJC6U9Gl8e/19I4L517rGuylmiwOOzCL9Slz
+         n84QJ73g8PHSfQNYrTTP0VtrBOt4xlQbchP9Uk4JhWZ4wRj6iH3tYrH0MCFwLozaU6vz
+         Gzm0lzhd+bKx4465mBW/nNMIQZoMpk9lv8OmDDSla/ZtaKbk2CuVxeyYV1ISXa+Zt0RQ
+         aCfDbO2aGU5ffrDtxhHk5aWCfKv+LZUddk0yeJuGlT5TZJai4+EWh5BI18Em7TOgctMi
+         V9gauNN5UudFIHGgB09s4TVUmtiROwB5Ml0iM3GPEjpwvEoqER+qOn4s5odNqOZYSjVr
+         ISgQ==
+MIME-Version: 1.0
+X-Received: by 10.107.154.70 with SMTP id c67mr46679355ioe.22.1435081108233;
+ Tue, 23 Jun 2015 10:38:28 -0700 (PDT)
+Received: by 10.107.15.79 with HTTP; Tue, 23 Jun 2015 10:38:28 -0700 (PDT)
+Date: Tue, 23 Jun 2015 19:38:28 +0200
+Message-ID: <CAAxEZd-kT8wng7iD9htUacJ5cK=354JDcFB2ue7TVNh8V+Mr8w@mail.gmail.com>
+Subject: Football Tournament Calendar - A collection of national football cups
+ from around the world
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   I've started an all-in-one-page calendar [1] collecting football
+tournaments from around the world. The first entries include:
+
+ ## World (FIFA)
+
+ - World Cup
+    - 2022 @ Qatar;  Nov/21-Dec/18  (Nr. 22)
+    - 2018 @ Russia; Jun/14-Jul/15  (Nr. 21)
+    - 2014 @ Brazil; Jun/12-Jul/13  (Nr. 20)
+
+ - Women's World Cup
+   - 2019 @ France; ???            (Nr. 8)
+   - 2015 @ Canada; Jun/6-Jul/5    (Nr. 7)
+   - 2011 @ Germany; Jun/26-Jul/17 (Nr. 6)
+
+ ## Europe (UEFA)
+
+ - European Championship (Euro)
+   - 2020 @ 13 Cities - London, Munich,...;   ???  (Nr. 16)
+   - 2016 @ France; Jun/10-July/10        (Nr. 15)
+   - 2012 @ Poland+Ukraine; Jun/8-Jul/1   (Nr. 14)
+
+ ## America
+
+ ### North America (CONCACAF)
+
+ - Gold Cup / Copa de Oro
+    - 2017 @ ???
+    - 2015 @ United States+Canada; Jul/7-26 (Nr. 23)
+    - 2013 @ United States; Jul/7-28 (Nr. 22)
+
+ ### South America  (CONMEBOL)
+
+ - Copa Am=C3=A9rica
+    - 2019 @ Brazil; ??? (Nr. 46)
+    - 2016 @ United States; Jun/3-Jun/26 (Nr. 45)
+    - 2015 @ Chile; Jun/11-Jul/4 (Nr. 44)
+    - 2011 @ Argentina; Jul/1-24
+
+
+ Anything missing? Contributions welcome. Cheers.
+
+PS: Note, the page source is a format (e.g. Markdown) that can (and
+will) get auto-processed turning the "free-style" text into (open)
+structured data using a parser e.g. EventReader.rb, for example [2].
+
+[1] github.com/openfootball/calendar
+[2] github.com/textkit/event.db
+

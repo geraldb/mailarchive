@@ -1,0 +1,82 @@
+From 6181893367797907456@xxx Tue Aug 11 23:03:31 +0000 2015
+X-GM-THRID: 6181893365893693440
+X-Received: by 10.13.212.65 with SMTP id w62mr11066211ywd.44.1439334211104;
+        Tue, 11 Aug 2015 16:03:31 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.182.142.100 with SMTP id rv4ls1444283obb.6.gmail; Tue, 11 Aug
+ 2015 16:03:30 -0700 (PDT)
+X-Received: by 10.182.48.232 with SMTP id p8mr27379136obn.43.1439334210677;
+        Tue, 11 Aug 2015 16:03:30 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x233.google.com (mail-io0-x233.google.com. [2607:f8b0:4001:c06::233])
+        by gmr-mx.google.com with ESMTPS id o7si399495igp.1.2015.08.11.16.03.30
+        for <wwwmake@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 11 Aug 2015 16:03:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) client-ip=2607:f8b0:4001:c06::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x233.google.com with SMTP id t126so3297485iod.2
+        for <wwwmake@googlegroups.com>; Tue, 11 Aug 2015 16:03:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=Wk46BxzFzMhwq6Na3OvexVzGEdK13Jt6CqHS6rAVQZ0=;
+        b=B+k2sdIgmQjF8VWU3qLLMhIGm0Z6R6hoSX9AXlWFi3fwyizIYzi55liOfBfAIS+798
+         E9f047ZLjJBzFZtYgCgtSBQhfZIfMlt9RgYz6UgFgdp6azzEzeJikkIfN8H5mKg4Ofaz
+         HDpHkK4kr0a5PX3PHnLXwXRAgcIXPV4p/fHJs6BeOrsp4ZBMm09PzYFNTaBqjCu6sE6S
+         7V7ZfDDqJmbd7YOZ8Rkzn/h//h7CV6ClYMAwBGciqzBa+/RIOA1O+lAspqm97961MmF2
+         4RxDJKehQNrpQXcg2ARKBqqslpdnBN9qH6PhDTdA8qI5/Z+2YkKvvWLhR6EiqtgUsjYw
+         bFtQ==
+MIME-Version: 1.0
+X-Received: by 10.107.27.18 with SMTP id b18mr28912480iob.178.1439334210542;
+ Tue, 11 Aug 2015 16:03:30 -0700 (PDT)
+Received: by 10.107.15.196 with HTTP; Tue, 11 Aug 2015 16:03:30 -0700 (PDT)
+Date: Wed, 12 Aug 2015 01:03:30 +0200
+Message-ID: <CAAxEZd82tmkLUWO-xJa7q6qygUY1abPFjPwg8TQJZ09B=79UQg@mail.gmail.com>
+Subject: drj/drjekyll - The Missing Static Site Theme Package Manager - Jekyll
+ Command Line Tool
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   I've put together the drjekyll gem that includes a command line
+tool that lets you manage static site theme packages.
+
+For example, use:
+
+   $ drjekyll list   # or
+   $ drj ls
+
+ to list all 100+ themes e.g. resulting in:
+
+  1..Planet Jekyll's Starter (Minimal) (starter |
+planetjekyllsstarterminimal) by Gerald Bauer - #white
+  2..Dr Jekyll's Minimal (minimial | drjekyllsminimal) by Gerald Bauer - #white
+  3..Dr Jekyll's Bootstrap (bootstrap | drjekyllsbootstrap) by Gerald
+Bauer - #bootstrap #scss #white
+  4..Dr Jekyll's Classics Book (classics | drjekyllsclassicsbook) by
+Gerald Bauer - #books #white
+  5..Poole (poole) by Mark Otto - #poole
+  6..Poole's Hyde (pooleshyde) by Mark Otto - #poole
+  7..Poole's Lanyon (pooleslanyon) by Mark Otto - #poole
+  8..Beautiful Jekyll (beautifuljekyll) by Dean Attali
+   ...
+
+
+  To download and unzip a theme archive use the "installation code",
+for example, use
+
+  $ drjekyll new starter
+  $ drj new starter
+
+   to dowload and unzip the Planet Jekyll's Starter (Minimal) theme
+and so on. For more see the drj/drjekyll project site [1].  Cheers.
+
+[1] https://github.com/drjekyllthemes/drjekyll
+

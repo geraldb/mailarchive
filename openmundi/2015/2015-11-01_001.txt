@@ -1,0 +1,101 @@
+From 6212196063345901568@xxx Sun Nov 01 14:53:27 +0000 2015
+X-GM-THRID: 6212196061834903552
+X-Received: by 10.182.52.132 with SMTP id t4mr14764091obo.16.1446389607494;
+        Sun, 01 Nov 2015 06:53:27 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.50.43.161 with SMTP id x1ls556573igl.29.canary; Sun, 01 Nov
+ 2015 06:53:27 -0800 (PST)
+X-Received: by 10.50.114.162 with SMTP id jh2mr3262601igb.9.1446389607327;
+        Sun, 01 Nov 2015 06:53:27 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x234.google.com (mail-ig0-x234.google.com. [2607:f8b0:4001:c05::234])
+        by gmr-mx.google.com with ESMTPS id j7si484272igu.1.2015.11.01.06.53.27
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 01 Nov 2015 06:53:27 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::234 as permitted sender) client-ip=2607:f8b0:4001:c05::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x234.google.com with SMTP id dj2so39249193igb.1
+        for <openmundi@googlegroups.com>; Sun, 01 Nov 2015 06:53:27 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=lo0TT5x3fA6NJD6YiIka58Ctc8O6Uw/Qtw7f8DoSKQQ=;
+        b=LfJNH9GsEaWfflB5bB77cfuqPOdS2Kggg60ywFj1wynfpUwXcTPLUqFI9bpwU7wz77
+         /+POK3eRONoULAQ1XjuC5/6rKn+ZVgLiwWJCzGJokaZYObFhkszavlcv02yuISdtRwn3
+         fxFVEpky4mZlWjNJlKuNyzLPCURDxGoAIBQNPZK6YGcX4Ds5UMwG3AOs2+g2eYzSwlcD
+         BRjkOqpmJPVF4+L7N76u/tegFDw7Q6aLNcsuAnEgAins/LznkDl06ABAl4t5PPdxwULG
+         UuqG2CzIVR1QaJT+NThQazz4Q1MfjYKQei+Dp/B2H+gYtAZFgg/Sl7WQbiMJky47PDMb
+         /8qQ==
+MIME-Version: 1.0
+X-Received: by 10.50.62.104 with SMTP id x8mr6603284igr.7.1446389607236; Sun,
+ 01 Nov 2015 06:53:27 -0800 (PST)
+Received: by 10.107.138.29 with HTTP; Sun, 1 Nov 2015 06:53:27 -0800 (PST)
+Date: Sun, 1 Nov 2015 15:53:27 +0100
+Message-ID: <CAAxEZd84rgq1ZqSGXG9jm4Tm7ANa72o2egosH2c=cQ-4xQLSug@mail.gmail.com>
+Subject: factbook.sql World Factbook Country Profiles in SQL (Incl.
+ factbook.db - Single-File SQLite Distro)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've started a new project, that is, /factbook.sql [1] that offers
+an SQL schema for the World Factbookand also includes a pre-built
+single-file SQLite database, that is, factbook.db [2] for download.
+
+  What's the World Factbook?
+
+  The World Factbook [3] published by the Central Intelligence Agency
+(CIA) offers free 260+ country profiles in the public domain (that is,
+no copyright(s), no rights reserved).
+
+  Anyways, what's it good for? For example, to find the ten largest
+countries by area, try:
+
+    SELECT name, area FROM facts ORDER BY area DESC LIMIT 10;
+
+  Resulting in:
+
+  Russia         | 17_098_242
+  Canada         |  9_984_670
+  United States  |  9_826_675
+  China          |  9_596_960
+  Brazil         |  8_515_770
+  Australia      |  7_741_220
+  European Union |  4_324_782
+  India          |  3_287_263
+  Argentina      |  2_780_400
+  Kazakhstan     |  2_724_900
+
+   Or to find the ten largest countries by population, try:
+
+  SELECT name, population FROM facts ORDER BY population DESC LIMIT 10;
+
+   Resulting in:
+
+   World          | 7_256_490_011
+   China          | 1_367_485_388
+   India          | 1_251_695_584
+   European Union |   513_949_445
+   United States  |   321_368_864
+   Indonesia      |   255_993_674
+   Brazil         |   204_259_812
+   Pakistan       |   199_085_847
+   Nigeria        |   181_562_056
+   Bangladesh     |   168_957_745
+
+   And so on. Note: Using the factbook command line tool and scripts you
+   can build yourself an up-to-date copy.
+
+   Questions? Comments? Welcome. Enjoy. Cheers.
+
+[1] github.com/factbook/factbook.sql
+[2] github.com/factbook/factbook.sql/releases
+[3] www.cia.gov/library/publications/the-world-factbook
+

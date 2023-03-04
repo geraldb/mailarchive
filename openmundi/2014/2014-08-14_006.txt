@@ -1,0 +1,67 @@
+From 92725575680@xxx Sat Dec 13 20:08:19 +0000 2014
+X-GM-THRID: 74704748544
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,3bc96c9415837e1
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.81.226 with SMTP id d2mr3508946wiy.5.1408020249438;
+        Thu, 14 Aug 2014 05:44:09 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.152.88.45 with SMTP id bd13ls217732lab.84.gmail; Thu, 14 Aug
+ 2014 05:44:09 -0700 (PDT)
+X-Received: by 10.113.5.12 with SMTP id ci12mr205679lbd.14.1408020249056;
+        Thu, 14 Aug 2014 05:44:09 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x234.google.com (mail-wi0-x234.google.com [2a00:1450:400c:c05::234])
+        by gmr-mx.google.com with ESMTPS id q1si305815wij.1.2014.08.14.05.44.09
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 14 Aug 2014 05:44:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::234 as permitted sender) client-ip=2a00:1450:400c:c05::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f180.google.com with SMTP id n3so2227326wiv.13
+        for <openmundi@googlegroups.com>; Thu, 14 Aug 2014 05:44:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=w+uL6XtlKM64dvFXwEDmxBVs0t0H1aLsHt4A+HRkSDA=;
+        b=qGwYOF7pLtiFDGdDdPFDjJ+G7WbqVgWD1YXXuRmVMYkxt0GjoSb9IWUFp6eI0OhSM7
+         blm/xSI5ft9rgvXgfS9wZTT6ftL0SrhjT/9qSb6LJ0sUjLeLQqCBSEhcalrGDObkQASA
+         +j1ytpizpuk2bWieao3bhHzJFvKuhVB4a3Usts50xQgkbHOjuroRAwlH4U39zFSgt0jg
+         a07vvQ9QHgOKoDFpLn722xZ7fRrN08YG1mpx5u4lbUBpwEd/HfMcpxHQcGeQSAuCacKF
+         YEczeS/He90/fnmSDdVTtCDHTh7hSL8qoMmbbz6aGi6ch+PlPxQgT1iVjUmWAeHvA/mE
+         kc3Q==
+MIME-Version: 1.0
+X-Received: by 10.194.20.230 with SMTP id q6mr11994377wje.43.1408020248944;
+ Thu, 14 Aug 2014 05:44:08 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Thu, 14 Aug 2014 05:44:08 -0700 (PDT)
+In-Reply-To: <786573dd-a23d-4825-9bef-3d76b8922756@googlegroups.com>
+References: <13a2c175-fa8f-4970-a8a0-16c11df09192@googlegroups.com>
+	<da80b55a-9387-4b39-bb6a-5cec5f3fb5e4@googlegroups.com>
+	<786573dd-a23d-4825-9bef-3d76b8922756@googlegroups.com>
+Date: Thu, 14 Aug 2014 14:44:08 +0200
+Message-ID: <CAAxEZd_C9Fe-ZRhcGdot8KqpCos8NirCrTykufGNOOuV7HNU8w@mail.gmail.com>
+Subject: Re: Factbook gem and JSON repo
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Cc: Eckhard Licher <eckhard.licher@googlemail.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Looks like something is wrong w/ the nokogiri gem (uses C code and
+libxml). To debug use:
+
+$ gem install nokogiri
+
+Once that works install the factbook gem e.g. $ gem install factbook.
+
+To find out why the $ gem install nokogiri breaks on your machine I'd
+say try google "debian nokogiri ruby native extension" or something.
+Here's a q&a on stackoverflow for example. Good luck. Cheers.
+
+[1] stackoverflow.com/questions/8003523/error-installing-nokogiri-1-5-0-with-rails-3-1-0-and-ubuntu
+

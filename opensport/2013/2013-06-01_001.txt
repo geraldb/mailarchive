@@ -1,0 +1,61 @@
+From 105325264896@xxx Tue Jun 16 00:17:25 +0000 2015
+X-GM-THRID: 105996353536
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,b499aa6177bdf112,start
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+X-Received: by 10.180.91.40 with SMTP id cb8mr2907088wib.2.1370070533500;
+        Sat, 01 Jun 2013 00:08:53 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.78.138 with SMTP id b10ls445656wix.26.gmail; Sat, 01 Jun
+ 2013 00:08:53 -0700 (PDT)
+X-Received: by 10.180.14.40 with SMTP id m8mr2903094wic.7.1370070533183;
+        Sat, 01 Jun 2013 00:08:53 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22d.google.com (mail-we0-x22d.google.com [2a00:1450:400c:c03::22d])
+        by gmr-mx.google.com with ESMTPS id ch8si209961wib.3.2013.06.01.00.08.53
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 01 Jun 2013 00:08:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22d as permitted sender) client-ip=2a00:1450:400c:c03::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-we0-f173.google.com with SMTP id x55so333417wes.4
+        for <opensport@googlegroups.com>; Sat, 01 Jun 2013 00:08:53 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=nsdou67S/qLvtNRfSQV3ViWdY0u2BkfrO3meez4g5ck=;
+        b=pC9UvkbZOOnAgSCOlN3E4RJTXaeGerdfWNBwO/OVPwzHoCu3m0g1mSvX11HJyLLpK9
+         dBLjVcT1RXdv6lq+cy+S+VhWYW0rlGKCO+rikOM2BioQMfh5UaEXxWMVfRu4S7O2bcnx
+         teWKS7vU6qpxFvv/ICoG7Chxh4I315ZgI5qQESNHSgCoh5MC+xapggiNmiMgUV//Qwq3
+         gNUbDnE3JY72xXfr2+tyvojr0hbvDQTV+HdCtN4IKMeqq7NxB4uE8V+Zui7lZYCN68zb
+         d1/H33PR9hHrLGglQ85Jse+ymRCgCTk+DeF9wG3tHK+1So3yHM54oGRBOdrFRR///+5t
+         wA4w==
+MIME-Version: 1.0
+X-Received: by 10.180.208.81 with SMTP id mc17mr6096946wic.35.1370070533118;
+ Sat, 01 Jun 2013 00:08:53 -0700 (PDT)
+Received: by 10.216.192.8 with HTTP; Sat, 1 Jun 2013 00:08:52 -0700 (PDT)
+Date: Sat, 1 Jun 2013 09:08:52 +0200
+Message-ID: <CAAxEZd_kzNmOHxPwkwqMpX+LezqqMv0pvo3pFi9eZw6s7+0AOQ@mail.gmail.com>
+Subject: formula1.db - Free open public domain Formula 1/Formula One database
+ & schema
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  FYI: I've started adding the drivers, circuits and races to the new
+formula1.db - another free open public domain Formula 1/Formula One
+database & schema for use in any (programming) language (e.g. uses
+plain text fixtures/data sets).
+
+   Find out more @ https://github.com/geraldb/formula1.db
+
+   Questions, comments? Cheers.
+

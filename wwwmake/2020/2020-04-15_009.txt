@@ -1,0 +1,103 @@
+From 6815925216557924352@xxx Wed Apr 15 13:10:56 +0000 2020
+X-GM-THRID: 6815540562521751552
+X-Received: by 2002:a5d:6645:: with SMTP id f5mr30562698wrw.280.1586956255883;
+        Wed, 15 Apr 2020 06:10:55 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a1c:5644:: with SMTP id k65ls2185722wmb.1.gmail; Wed, 15 Apr
+ 2020 06:10:54 -0700 (PDT)
+X-Google-Smtp-Source: APiQypLZfXkGNln5Sf53DFx5JKPeJa3EYP7Gaq33VKbG0PlIbo+TqOyPl+3TjsJrXzTI9XnLw4Ki
+X-Received: by 2002:a1c:1b0b:: with SMTP id b11mr5430339wmb.182.1586956254692;
+        Wed, 15 Apr 2020 06:10:54 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1586956254; cv=none;
+        d=google.com; s=arc-20160816;
+        b=zYHzLNLQMQVhTqCjgHSWKPL8ZRBvlSZtBa+CPS7LaNsWUmsG+kl3KWgy38WegIjxl0
+         aLui1cAgpXA2I47wlMYqcqTT73jztxJp+t+pFdT1bcc092ZqcUNboemhTOtcMfWghEO7
+         4S5GLaj5kt4naLK7wstVLeBOHsmPDsTnLgDqHFB9Cnqm4Y7fOwrxUqdQBnxj211ZajLz
+         Qkv+OscUzHNRJtDJo56zq3TUI4E+CQJW27L7Uc5bt/m83/HJpkIbdO81sVWGzOdhYYZi
+         8HloQFQx6S9lfFR8SnOLUiYOnV2LqSs21hjPOnvtbUfs9DJHDKDbw4jQqODvWv8Tu+aB
+         QKYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=Dkmmfx0MNZaf80/ai+V7J2f+iEe3du9AJyvgIprUBTo=;
+        b=bVgMhM5RDz/TI/Xhb9C3CXA8DzwXk24pzS+aotio9CSoCagcUYLZJC+GZ0MXaE3MGD
+         WWFzFTIEGU63+Us9TOZLpBy24ywEqVVYKGoSBEvtMrhegZ8KN7cEDMt+t0w+SKP8a5pJ
+         7aWmkfqIPyZ3DAG7MS/tIryvajrirjW2u2NdF4sxtSmFMmCVNQpbV/C1M5O3K8zgj7/+
+         YXJ7v+B973/NSF2yMZx/R+cGquuSaTCVRJ7zAFN4R+4USKuahZgaKBiizedVMXHahvWM
+         yhOu7fBPLRkWcE5EX4Ue1Po5LFS08WqX0lzQ83qx3/Yz8fLLWLB1BCmvzio8jpmO8+Dn
+         AdpQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="S/+2BvX/";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x235.google.com (mail-lj1-x235.google.com. [2a00:1450:4864:20::235])
+        by gmr-mx.google.com with ESMTPS id z84si897016wmc.2.2020.04.15.06.10.54
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 15 Apr 2020 06:10:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) client-ip=2a00:1450:4864:20::235;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="S/+2BvX/";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x235.google.com with SMTP id u15so3618625ljd.3
+        for <wwwmake@googlegroups.com>; Wed, 15 Apr 2020 06:10:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=Dkmmfx0MNZaf80/ai+V7J2f+iEe3du9AJyvgIprUBTo=;
+        b=S/+2BvX/+jjeG2bE46OGLvu9zkpynwH8UpUQNW+SFO306pa9vWKgcXT+RXsjRHs5O/
+         ovQGooDtOlKS7I/noiGPSCB66XTZGngYbFwd7SWXpoRix4bfRJ1PayvcnPSc2Pz9F8FI
+         1j4KTjT9uh5Q6kk8vzmF1J4ateZEs+vSECT6OQbHXWxHYPaRGTFm7x8QrZydaZXnhPmB
+         Au+0Ggk8LPQDJKnsxXraIpDUPEdJOEDaYgFgxYPmY+60C2374+w5CeZnjlO3avDopr/Y
+         TOdYW4rpfF19oR5FkeXXwv3wU0UM5ecpdlwsd58EUepDbqwfJye+54GGdFF5GMwkehFU
+         vjfg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=Dkmmfx0MNZaf80/ai+V7J2f+iEe3du9AJyvgIprUBTo=;
+        b=UzpeJ+TI4PFhGForQ9cLrDxYDt8l5TOSx4XMc43Uk3oChmV3B19dJYPT1kytm7TJmB
+         b2Mdaz3SGinTW0EgLyUTgDcwYWfuy8TcynPjsUp+rgaVph77zbVBA3u0VheHDO48s1RC
+         dv2wTJcPe030cYJcMGIRB77UEg4JpfWVW24YGuwPzJFUpIqyvDDkL4viyYKCyQmCQhEh
+         qBiT6st75otj/oZzfaq8/nauDezcSn1u/TTlUcSX3deNNhL92Rc3Z/EiQ5wmtD3A2KSi
+         YrfQLDf7n5xRTuhlxH5GmXLPyt50CV/t1v0QwrrzQ+AVrioKh1xIRw7QB8zWGncYqs85
+         6FZw==
+X-Gm-Message-State: AGi0PuYcwb4jjJpNKAiT8xgVc9ixwAs8E1aY3rLqn7h4uFnf84M9wxm+
+	xx2wITYcNKDTPanuzOmxLWoV5VsPdpEBkCV31q4/KprI
+X-Received: by 2002:a2e:9843:: with SMTP id e3mr3211966ljj.249.1586956252754;
+ Wed, 15 Apr 2020 06:10:52 -0700 (PDT)
+MIME-Version: 1.0
+References: <e0988d6e-1f34-45e6-b256-231defffe529@googlegroups.com>
+ <CAAxEZd_7tJUKPMM6B5-Chb9woDzwGXy1xTAbcTiqvbuxcFMNZQ@mail.gmail.com>
+ <8f2ad5e3-b886-4ac8-bb60-eaab76e3c123@googlegroups.com> <1b3ff423-24e4-427b-9b72-c1fed85b5ae3@googlegroups.com>
+ <CAAxEZd84Z-Uf8vRHeVy2wCsLB_5c9m1wyYEt5Vdgxe3eNXVaRg@mail.gmail.com>
+In-Reply-To: <CAAxEZd84Z-Uf8vRHeVy2wCsLB_5c9m1wyYEt5Vdgxe3eNXVaRg@mail.gmail.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 15 Apr 2020 15:10:41 +0200
+Message-ID: <CAAxEZd82QY3mt9fR+ruy=4+Dszo0YkjBfG4ND7XETvg9P6NO+Q@mail.gmail.com>
+Subject: Re: [wwwmake:481] Are there any videos showing how to setup a new
+ planet rss site?
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Just for the record - your first steps:
+
+X    $ rails new .
+X    $ gem install sqlite3
+X    $ rails db:create
+OK $ gem install pluto
+OK $ pluto build planet.ini -t starter -o build
+
+   Not sure why you start with a rails app - it's not needed for now,
+thus, that's all that is needed to get started:
+
+$ gem install pluto
+$ pluto build planet.ini -o build
+
+    Plus - of course - you have to create a planet.ini configuration
+file  with your feeds to include. See the last answer.  Good luck.
+Cheers. Prost.
+

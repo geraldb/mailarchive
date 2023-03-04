@@ -1,0 +1,117 @@
+From 6270691679735382016@xxx Thu Apr 07 06:06:19 +0000 2016
+X-GM-THRID: 6270689525469544448
+X-Received: by 10.98.8.65 with SMTP id c62mr806141pfd.14.1460009179270;
+        Wed, 06 Apr 2016 23:06:19 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.230.12 with SMTP id su12ls320865obc.18.gmail; Wed, 06 Apr
+ 2016 23:06:18 -0700 (PDT)
+X-Received: by 10.157.14.116 with SMTP id n49mr809080otd.11.1460009178902;
+        Wed, 06 Apr 2016 23:06:18 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x234.google.com (mail-ig0-x234.google.com. [2607:f8b0:4001:c05::234])
+        by gmr-mx.google.com with ESMTPS id b18si97451igm.0.2016.04.06.23.06.18
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 06 Apr 2016 23:06:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::234 as permitted sender) client-ip=2607:f8b0:4001:c05::234;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ig0-x234.google.com with SMTP id ui10so61901441igc.1
+        for <opensport@googlegroups.com>; Wed, 06 Apr 2016 23:06:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=GAvMnS6ZvxvYepjV80qOmwRFb7vt+d+o+SGA7idPde0=;
+        b=qRHXutMVwm1ihahvxdWf2juDRy/FFdVdoX4r5syWMZW1pBvKLCEsNddre0Cej3rAI7
+         BgEm98JyjyWZLbzWPNNx25rRpvYrchozvLTburbeFX/yDx2TncRBiY/6lfZpHEBVkhOb
+         O3RM911mxLlIAARv8CnZp7dGDOjjOpZgx1Uzk46JyP0WgTcTixb5/IR9mtSxiGGq704K
+         b53h0SPhiAqwKcF+AuOvHwvJncwixECCZe/WYl7/xhUn1VAT/vfUmHY9DeI3Cyf/2tdi
+         rxJ4HkutsChRy4VohKzeFD6MslQzIrhWNCjxvgT81Fka6U67X7dLLsaYfJeBKk4lizus
+         LvwA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=GAvMnS6ZvxvYepjV80qOmwRFb7vt+d+o+SGA7idPde0=;
+        b=UXp6pXMrXcdD3nux9X8FGw3TnXM5MAaS2+2PapAVTgmKAovBdShUFQQCBetDv31RjE
+         zJsK8ZjtG8F6PfO/QqU+r+o1pJQ7LV6HSJYtSifslzhA0U7yYvYziLeHB+QY9/1cXTJp
+         BiTg8xxyFIHGzydsah8LiLw1ucff920ROp+3eJhbbUYhO2rTWKm0CBkdRroliT4OdkM8
+         FvXS+PmcdIgahc+yP1MEF9H1JQgNZtOZX8I5aMFfcJdIPRr3FUs/DuVdnSXQH8PmV3ES
+         VIlOLYkTBn7CRiBPeBLBW+h1lyfyrjEq9LH+FcY/7FtZAkcOKcAzL8ctaIfqWb0AMj85
+         bIPQ==
+X-Gm-Message-State: AD7BkJI/BROoiXKCTIjuQN6vXf71bp+mQpPlBuQ7vkuIxiS1RFfHL3aEdSJPyCGX/5ag1dzwp8PWTEiCltPMNQ==
+MIME-Version: 1.0
+X-Received: by 10.50.25.137 with SMTP id c9mr27222600igg.84.1460009178648;
+ Wed, 06 Apr 2016 23:06:18 -0700 (PDT)
+Received: by 10.107.169.83 with HTTP; Wed, 6 Apr 2016 23:06:18 -0700 (PDT)
+In-Reply-To: <02c84ff0-aace-48f8-a075-fa92197b2ebb@googlegroups.com>
+References: <02c84ff0-aace-48f8-a075-fa92197b2ebb@googlegroups.com>
+Date: Thu, 7 Apr 2016 08:06:18 +0200
+Message-ID: <CAAxEZd8e5UdJn8nJ1X7+NAK542XtYjqqfjTCFbHMMsc1vNkp_g@mail.gmail.com>
+Subject: Re: [opensport] Adding world cup db to MariaDB for XAMPP
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    thanks for your interest in football.db and the world cup
+datasets. Using rake (and a Rakefile, that is, a ruby build script)
+you can read in (import) the datasets directly into MariaDB (assuming
+it works like MySQL)
+
+   Search this group for mysql for details. Cheers.
+
+PS: Example:
+
+ Rakefile:
+---------------------
+
+BUILD_DIR = "./build"
+
+FOOTBALL_DB_PATH = "#{BUILD_DIR}/football.db"
+
+DB_CONFIG = {
+  :adapter   =>  'mysql',
+  :database  =>  FOOTBALL_DB_PATH
+}
+
+directory BUILD_DIR
+
+task :clean do
+  rm FOOTBALL_DB_PATH if File.exists?( FOOTBALL_DB_PATH )
+end
+
+task :env => BUILD_DIR do
+ require 'worlddb'
+ require 'sportdb'
+ require 'logutils/db'
+
+ LogUtils::Logger.root.level = :info
+
+ pp DB_CONFIG
+ ActiveRecord::Base.establish_connection( DB_CONFIG )
+end
+
+task :create => :env do
+  LogDb.create
+  WorldDb.create
+  SportDb.create
+end
+
+task :importworld => :env do
+  WorldDb.read_setup( 'setups/sport.db.admin', '../world.db',
+skip_tags: true )  # populate world tables
+  # WorldDb.stats
+end
+
+task :importsport => :env do
+  SportDb.read_setup( 'setups/all', '../openfootball/at-austria' )
+end
+
+desc 'footballdb - build from scratch'
+task :build => [:clean, :create, :importworld, :importsport] do
+  puts 'Done.'
+end
+

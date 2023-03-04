@@ -1,0 +1,81 @@
+From 6192924395125604352@xxx Thu Sep 10 16:29:33 +0000 2015
+X-GM-THRID: 6192924395972853760
+X-Received: by 10.129.39.87 with SMTP id n84mr35106608ywn.4.1441902573215;
+        Thu, 10 Sep 2015 09:29:33 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.88.177 with SMTP id t46ls276468qgd.2.gmail; Thu, 10 Sep
+ 2015 09:29:32 -0700 (PDT)
+X-Received: by 10.129.117.198 with SMTP id q189mr35668328ywc.50.1441902572690;
+        Thu, 10 Sep 2015 09:29:32 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x231.google.com (mail-ig0-x231.google.com. [2607:f8b0:4001:c05::231])
+        by gmr-mx.google.com with ESMTPS id o7si498518igp.1.2015.09.10.09.29.32
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 10 Sep 2015 09:29:32 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::231 as permitted sender) client-ip=2607:f8b0:4001:c05::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x231.google.com with SMTP id kq10so20596861igb.0
+        for <opensport@googlegroups.com>; Thu, 10 Sep 2015 09:29:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=D8pPz3/GqZAw3/a1DNNMN3yr2vgaxvmeVYr6VJQoQEc=;
+        b=dW8tirb9TiGsg1Gjl3dgF1LzBDQNrVrNwbtpxa9vQo/5S+3vr4ttDKg1Dl4D6NJ5rp
+         RBYQeIYfL0qN6B6ZI/05ylQ/V86cqhfpYkabCT2Er8ivN6TUZyDS2etnubWBWLaWWrS4
+         7vIHNui8mjYuek8KiyA7N2C9B90KR3Jm2i9PGlE/LdvAXA4a7+umRRCTzI3qZWuvKxC1
+         LBc1nRMmAvsuRwVvVKZdxnQJYTI3+CSfny3akoZbIJuXmdnU0fPjz2S+BIvqj7bqfShC
+         bhODqj0JwXMs3tWTWunkB/QTv1Ohu9I8eyGI90gKN2wug3tCKrrlNEgz8UFpJ1bw+DcN
+         2T+Q==
+MIME-Version: 1.0
+X-Received: by 10.50.2.68 with SMTP id 4mr7678493igs.7.1441902572474; Thu, 10
+ Sep 2015 09:29:32 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Thu, 10 Sep 2015 09:29:32 -0700 (PDT)
+Date: Thu, 10 Sep 2015 18:29:32 +0200
+Message-ID: <CAAxEZd8bov3ZRSCeScM-Jt_7VtwpHQ5MDKeOUiNpJqwBZTV80A@mail.gmail.com>
+Subject: Added Belgian First League 2015/16, Czech First League Clubs 2015/16
+ and More
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: Over the next weeks I try to update (add) all 43 european first
+leagues' clubs using the "modern" format with city (state), wikipedia
+article and web site etc. Example:
+
+[brugge]
+  Club Brugge|Club Brugge KV|Club Brugge Koninklijke Voetbalvereniging, 189=
+1
+  // Brugge    ## West Flanders > Flanders
+  wikipedia: Club_Brugge_KV
+  www.clubbrugge.be
+
+  or
+
+[boleslav]
+  Mlad=C3=A1 Boleslav|FK Mlad=C3=A1 Boleslav|Fotbalov=C3=BD klub Mlad=C3=A1=
+ Boleslav, 1902
+  // Mlad=C3=A1 Boleslav   ## Central Bohemia
+  wikipedia: FK_Mlad=C3=A1_Boleslav
+  www.fkmb.cz
+
+
+  Today I've updated all clubs for:
+
+  - Belgian First League 2015/16 [1]
+  - Czech First League Clubs 2015/16 [2]
+
+   As always contributions welcome. Cheers.
+
+[1] github.com/openfootball/clubs/blob/master/europe/be-belgium/clubs.txt
+[2] github.com/openfootball/clubs/blob/master/europe/cz-czech-republic/club=
+s.txt
+

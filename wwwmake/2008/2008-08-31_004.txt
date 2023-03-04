@@ -1,0 +1,85 @@
+From 130997551104@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 125722165248
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,4958d6a56460a27
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,UTF8
+Received: by 10.114.135.1 with SMTP id i1mr2346912wad.27.1220144685466;
+        Sat, 30 Aug 2008 18:04:45 -0700 (PDT)
+Return-Path: <sunaku@gmail.com>
+Received: from wa-out-1112.google.com ([172.21.186.32])
+        by mx.google.com with ESMTP id m37si3231055waf.0.2008.08.30.18.04.44;
+        Sat, 30 Aug 2008 18:04:45 -0700 (PDT)
+Received-SPF: neutral (google.com: 172.21.186.32 is neither permitted nor denied by domain of sunaku@gmail.com) client-ip=172.21.186.32;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 172.21.186.32 is neither permitted nor denied by domain of sunaku@gmail.com) smtp.mail=sunaku@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by wa-out-1112.google.com with SMTP id j32so1114219waf.7
+        for <webslideshow@googlegroups.com>; Sat, 30 Aug 2008 18:04:44 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from
+         :user-agent:mime-version:to:subject:references:in-reply-to
+         :content-type:content-transfer-encoding;
+        bh=TKzrhvxC7naX2hXC17f1Y4PTN+DTK0J5JenBI4Jo9es=;
+        b=NknW0NJFhUURdT9/+eD2G6r+EyPcVeZofbXtUEqlKODhvkFfdXdKwZW2qNiy0822mk
+         lda0Ubb33BBiMEJbFfByI3t/lIvbsmez1vxz6gJmHWg8871yaMYK7li9hsIpDs8CKXrD
+         Y/x8gnrdH91bia3EaF24Rb8qxxpTO8u+4KDTU=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references
+         :in-reply-to:content-type:content-transfer-encoding;
+        b=nZ5mTT1DH9jPINWNC7WLQJVoWD8H/K3oEfn9NXNgk5UhRsDZsQvMGMNr8WkPEL4bb4
+         a5Ytj1Vh/1F9XCVCW5d6CriYROI66GIMgkPwVW4JgtamRoq2hJc9wbnsKcazzRa7FdER
+         5V1W8W+8mPspk1b+g1w6djlc37QdVj2Mqi+m8=
+Received: by 10.114.161.11 with SMTP id j11mr4108348wae.105.1220144684369;
+        Sat, 30 Aug 2008 18:04:44 -0700 (PDT)
+Return-Path: <sunaku@gmail.com>
+Received: from ?10.0.0.101? ( [76.202.78.109])
+        by mx.google.com with ESMTPS id m28sm9505768poh.10.2008.08.30.18.04.43
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Sat, 30 Aug 2008 18:04:43 -0700 (PDT)
+Message-ID: <48B9EE2A.2050006@gmail.com>
+Date: Sat, 30 Aug 2008 18:04:42 -0700
+From: "Suraj N. Kurapati" <sunaku@gmail.com>
+User-Agent: Thunderbird 2.0.0.16 (X11/20080724)
+MIME-Version: 1.0
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Subject: Re: jumping to a slide number using the URL
+References: <48B9E506.8000701@gmail.com>
+In-Reply-To: <48B9E506.8000701@gmail.com>
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Suraj N. Kurapati wrote:
+> While creating my presentation, I often like to generate it and see how 
+> it looks (with the background theme, and my CSS styles, etc.)
+> 
+> So I put together a small javascript hack that will take me directly to 
+> any slide number that is specified in the URL of the browser.
+
+Here is an even better hack:  the slideshow magically remembers what 
+slide you were previously on (using cookies), and when you reload 
+the browser, it takes you back there!
+
+<script type="text/javascript">
+
+//
+// remember the slide that is currently being viewed
+//
+$(window).unload(function() {
+   document.cookie = "snum=" + snum;
+});
+
+//
+// restore the slide that was viewed most recently
+//
+$(document).ready(function() {
+   var parts = document.cookie.match( /snum=(\d+)/ );
+
+   if (parts != null && parts.length > 1)
+   {
+       goTo( parseInt( parts[1] ) );
+   }
+});
+
+</script>
+

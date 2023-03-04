@@ -1,0 +1,103 @@
+From 683343347712@xxx Tue Jun 16 00:17:02 +0000 2015
+X-GM-THRID: 659563741184
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,57206a7667e526a
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.155.67 with SMTP id vu3mr762269lbb.9.1400135879304;
+        Wed, 14 May 2014 23:37:59 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.181.13.50 with SMTP id ev18ls46020wid.48.gmail; Wed, 14 May
+ 2014 23:37:58 -0700 (PDT)
+X-Received: by 10.14.198.200 with SMTP id v48mr31321een.5.1400135878848;
+        Wed, 14 May 2014 23:37:58 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x234.google.com (mail-wg0-x234.google.com [2a00:1450:400c:c00::234])
+        by gmr-mx.google.com with ESMTPS id eo15si198557wid.2.2014.05.14.23.37.58
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 14 May 2014 23:37:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::234 as permitted sender) client-ip=2a00:1450:400c:c00::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-x234.google.com with SMTP id l18so2909546wgh.23
+        for <opensport@googlegroups.com>; Wed, 14 May 2014 23:37:58 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=geRaKuutqbFahhAEKY90ZQ4X25t/s5hZxI3X4cXJ+qU=;
+        b=cJOKMa8Z900DvbLFffy2FS4s8GY9WoWI0soLCKTVpv3qEQ9AZXrbA51aMqbKxDwCuu
+         5AcElAsdJYd40kJWbLbV+ho0jX2cfzJkJsTXLcgcQ+LDSju96LQ9fnSgrTNAKV7xBXlw
+         Va1LQnjBOEmcWDy3a7tqJQih+euTjPJ753smo2K0jyOnp2P6EJtxHjPfZ7VYP3CSZS1h
+         3+LFgLZThdjp4Gd/YzjuL8NrVgXQY7EtihWgG+4SCW4T57FBPhLZ5mQXu5aUQOagjJLu
+         v8tPmW7waL1r+s1lHDwjv87UojbnxYGtRF8sH86XOzsB9WhX2BVzyurvYMS5PTTvsHjN
+         6Z0Q==
+MIME-Version: 1.0
+X-Received: by 10.180.198.48 with SMTP id iz16mr6991067wic.29.1400135878787;
+ Wed, 14 May 2014 23:37:58 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Wed, 14 May 2014 23:37:58 -0700 (PDT)
+In-Reply-To: <5e16725e-8a9e-4c5b-985b-25468341c801@googlegroups.com>
+References: <1f778ca9-5f50-4d9a-a298-6007c48991cc@googlegroups.com>
+	<5e16725e-8a9e-4c5b-985b-25468341c801@googlegroups.com>
+Date: Thu, 15 May 2014 08:37:58 +0200
+Message-ID: <CAAxEZd-UuMhdWTeMWjY1oA=bz6dBinxxvdwZFmJkSX4mxume8w@mail.gmail.com>
+Subject: Re: [opensport] Re: Presentation and question about live scores
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello Orlando,
+
+   Gracias. Fantastico. Thanks for sharing. Looking good. Cheers.
+
+2014-05-15 1:37 GMT+02:00 Orlando Alem=C3=A1n Ortiz <orlandoaleortiz@gmail.=
+com>:
+> Well, as I said, here is the Github Repo.
+> https://github.com/orlandoaleman/FootballAppResources
+>
+> Some notes:
+> * Sample using the Euro 2012 does not include of the stadium neither time=
+.
+> But you can see as the included python script generates the squad files.
+> * I prefer use "event.json" instead of "rounds.json", reuniting informati=
+on
+> and adding the total number of matches and first-round.
+>
+> A greeting. I hope something helps.
+>
+> El mi=C3=A9rcoles, 14 de mayo de 2014 19:22:32 UTC+1, Orlando Alem=C3=A1n=
+ Ortiz
+> escribi=C3=B3:
+>>
+>> Hi Gerald:
+>>
+>> Here Orlando, from Spain. I'm developing a mobile application to follow
+>> the WorldCup.  First I want to thank you for this iniciative.
+>>
+>> I use some of your sharings, mainly the json files from GitHub. I needed
+>> to append some metadata, like the local time (including UTC+3/+4), stadi=
+um,
+>> group and slot (a special indicator for embed the crossings of next stag=
+e)
+>> of the games.
+>>
+>> Is there any way to get the results live? Maybe I could help somehow wit=
+h
+>> this or another thing, because anyway I need add same data to reach my
+>> purpose.
+>>
+>> Best regards,
+>> Orlando
+>>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+

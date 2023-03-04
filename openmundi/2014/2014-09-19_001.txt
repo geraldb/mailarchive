@@ -1,0 +1,69 @@
+From 305518346240@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 302770028544
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,a5c903eb6678991d
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.155.133 with SMTP id vw5mr244447lbb.14.1411132193101;
+        Fri, 19 Sep 2014 06:09:53 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.152.205.104 with SMTP id lf8ls285314lac.87.gmail; Fri, 19 Sep
+ 2014 06:09:52 -0700 (PDT)
+X-Received: by 10.112.6.138 with SMTP id b10mr15825lba.18.1411132192433;
+        Fri, 19 Sep 2014 06:09:52 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22e.google.com (mail-wi0-x22e.google.com [2a00:1450:400c:c05::22e])
+        by gmr-mx.google.com with ESMTPS id ht8si91214wib.1.2014.09.19.06.09.52
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 19 Sep 2014 06:09:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) client-ip=2a00:1450:400c:c05::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f174.google.com with SMTP id n3so4874883wiv.1
+        for <openmundi@googlegroups.com>; Fri, 19 Sep 2014 06:09:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=VEecsM7Oa8OQMIBu/DGfqOObHT7Bj6eLpO5VCQWqFJQ=;
+        b=rzsAszpkQMy+Gj9eFy7p6XZlJkdeUUpkbADCg3hj8E/wwzPNZb4nEcA5txyGMt9zKC
+         vimQ/j7cgdldh1PF01Tqr4pd9v+U7sqWog5LXu67UxUz8Ng/Q4dgp70b5Us1D8t635uK
+         D9U9dka+Siw7JwboIXXQ2OzZPDim0pSX0B7vmcOsTf3qNYl+fxtBYZXz1FR4oqPFF66l
+         xqeCZGcxv/QG3OH7t3nXxquuJCvceublM0yUCdjse1VI6UWS859ZPTMNs7z9eoY79Pt2
+         lU/uHRJnCypm/iZe4Rn19F/hBTQBVyzy0KRZmdCVsrPpnr7BML7t7N0YjIMot1d8l63z
+         FypA==
+MIME-Version: 1.0
+X-Received: by 10.180.211.197 with SMTP id ne5mr6173817wic.29.1411132192309;
+ Fri, 19 Sep 2014 06:09:52 -0700 (PDT)
+Received: by 10.216.205.135 with HTTP; Fri, 19 Sep 2014 06:09:52 -0700 (PDT)
+In-Reply-To: <29a67f4c-8fdc-4fe4-a956-3bb083beb817@googlegroups.com>
+References: <29a67f4c-8fdc-4fe4-a956-3bb083beb817@googlegroups.com>
+Date: Fri, 19 Sep 2014 15:09:52 +0200
+Message-ID: <CAAxEZd_qYzYOPZ1MnLWbFh=f+KYy3NFXYB2x7EHdHuCeNsSGdQ@mail.gmail.com>
+Subject: Re: New Python-based World Factbook scraper in the making
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Eckhard Licher <eckhard.licher@googlemail.com>
+Cc: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Thanks for the update. As a new GitHub user you're welcome to
+create a new github repo or better (re)use the worlddb/factbook.python
+and add the new script!   GitHub will pretty print your script, keep
+track of versions/updates etc. you can add a readme, examples and so
+on ;-)
+
+   About Ruby - thanks for highlighting rubyfull soup - in the Ruby
+world the "best" HTML parser in is called Nokogiri  [1]  - there's no
+need for rubyful soup - the Nokogiri library / gem is the better
+option (that's why in my humble opinion I'm using it in the factbook
+gem Ruby edition ;-).
+
+  Have a great weekend. Cheers.
+
+[1] http://nokogiri.org
+

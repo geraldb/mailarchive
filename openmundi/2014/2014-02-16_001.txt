@@ -1,0 +1,57 @@
+From 27750563840@xxx Sat Dec 13 20:08:19 +0000 2014
+X-GM-THRID: 26650607616
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,57bcdd36fc770b7a,start
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.201.198 with SMTP id kc6mr11208362lac.2.1392585080726;
+        Sun, 16 Feb 2014 13:11:20 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.153.7.194 with SMTP id de2ls202029lad.5.gmail; Sun, 16 Feb
+ 2014 13:11:20 -0800 (PST)
+X-Received: by 10.112.144.165 with SMTP id sn5mr11168277lbb.11.1392585080490;
+        Sun, 16 Feb 2014 13:11:20 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22d.google.com (mail-wg0-x22d.google.com [2a00:1450:400c:c00::22d])
+        by gmr-mx.google.com with ESMTPS id ek8si551125wib.0.2014.02.16.13.11.20
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 16 Feb 2014 13:11:20 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22d as permitted sender) client-ip=2a00:1450:400c:c00::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f45.google.com with SMTP id l18so1757261wgh.24
+        for <openmundi@googlegroups.com>; Sun, 16 Feb 2014 13:11:20 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=91LblLtKmmlNmE5pi86U17u/mQ0kAcKRFal+2u3hk5A=;
+        b=GwuG74p1YP9D9fm47rM7boMGh4Wtni5bJM4xvGqWt/6ZvFsNVKyBNAoCVGOAdau50K
+         hfoICiwdwZe0NVnuRF2mkBNKYAEJiWlmw4QIqO6PPfm72RNLKtsgFdhC1mleWutRLMfM
+         3e5REzq7H/xLVHZIMCAVkpDNTBkaTeY1sIxBI4CTJiGZYhf/YV96Jv6TcLHB7vVzcJ+j
+         Y6E6htZxi8/+PFszMG0ZFOlVWOUIEpMnnvw0f/J63wzSZkGmrNDeOfqY+LTjaIoVqxGH
+         wJCoi4jHoHk6B4j4gyCaifGAzdW1pNXuo+Xk0O6IstbrM6Reo9I/dqPZnNtrr8iqh8nV
+         UoLA==
+MIME-Version: 1.0
+X-Received: by 10.180.160.206 with SMTP id xm14mr10200288wib.25.1392585080340;
+ Sun, 16 Feb 2014 13:11:20 -0800 (PST)
+Received: by 10.216.208.136 with HTTP; Sun, 16 Feb 2014 13:11:20 -0800 (PST)
+Date: Sun, 16 Feb 2014 15:11:20 -0600
+Message-ID: <CAAxEZd-A4WACRX6b+uoDat9SntuLkpY+4Ng5zKLYnWvXaFex0w@mail.gmail.com>
+Subject: world.db - Pre-Built SQLite Database for Download - Release v2014.02.16
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  FYI: I've tried out the GitHub releases functionality and uploaded a
+pre-built world.db using SQLite (~ 0.5 Megs).  You can get (download)
+a copy @ github.com/openmundi/build/releases
+
+   Let me know if there's any interest in pre-built database releases.
+Or if you know any other options (other than GitHub releases) for
+distributions of binaries. Cheers.
+

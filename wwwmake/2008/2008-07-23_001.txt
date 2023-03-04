@@ -1,0 +1,57 @@
+From 71284293632@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 53477376000
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,c688e924858327ee
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.100.239.11 with SMTP id m11mr296597anh.14.1216795083932; Tue, 
+	22 Jul 2008 23:38:03 -0700 (PDT)
+Date: Tue, 22 Jul 2008 23:38:03 -0700 (PDT)
+In-Reply-To: <d552d1d6-003c-4977-b3cc-c827c3835234@t12g2000prg.googlegroups.com>
+X-IP: 64.46.5.199
+References: <487C960E.2070900@gmail.com> <7e7cb8940807151018k4b492e0ckca88ca75975a7e49@mail.gmail.com> 
+	<d552d1d6-003c-4977-b3cc-c827c3835234@t12g2000prg.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: 1PLQbwwAAABK93Pqy-IThA_vA162V1dK
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.1) 
+	Gecko/2008070208 Firefox/3.0.1,gzip(gfe),gzip(gfe)
+Message-ID: <b6bf9403-3c2a-427a-aade-75737593ddc4@x29g2000prd.googlegroups.com>
+Subject: New Slideshow (S9) Point Release (0.5.2) for RedCloth 4.0
+From: Gerald Bauer <geraldbauer2007@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+   Jason Garber officialy released the RedCloth 4.0 gem today. What's
+new?
+
+ * New SuperRedCloth (RedCloth 4.0) is a total rewrite using Ragel for
+the parsing.
+ * Markdown support has been removed.
+ * Single newlines become <br> tags, just as in traditional RedCloth
+and other Textile parsers.
+ * HTML special characters are automatically escaped inside code
+signatures, like Textile 2. This means you can simply write @<br />@
+and the symbols are escaped whereas in RedCloth 3 you had to write
+@&lt;br /&gt;@ to make the code fragment readable.
+ * HTML embedded in the Textile input does not often need to be
+escaped from Textile parsing.
+ * The parser will not wrap lines that begin with a space in paragraph
+tags.
+ * Rudimentary support for LaTeX is built in.
+ * RedCloth::VERSION on a line by itself inserts the version number
+into the output.
+ * Output (less newlines and tabs) is identical to Textile 2 except a
+few cases where the RedCloth way was preferable.
+ * Over 500 tests prevent regression
+ * It's 40 times faster than the previous version.
+
+  More at the new site @ http://redcloth.org
+
+  For the slideshow (S9) gem I've pumped up the RedCloth version to
+4.0 and pushed out a new point release, that is, 0.5.2. If you run
+into any issues with, let us know. Cheers.
+

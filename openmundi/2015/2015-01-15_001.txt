@@ -1,0 +1,58 @@
+From 370028838912@xxx Mon Jan 12 20:35:31 +0000 2015
+X-GM-THRID: 373033009152
+X-Received: by 10.112.13.161 with SMTP id i1mr98979lbc.20.1421314232056;
+        Thu, 15 Jan 2015 01:30:32 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.180.81.7 with SMTP id v7ls78232wix.3.canary; Thu, 15 Jan 2015
+ 01:30:31 -0800 (PST)
+X-Received: by 10.180.19.42 with SMTP id b10mr4194751wie.0.1421314231754;
+        Thu, 15 Jan 2015 01:30:31 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x233.google.com (mail-wi0-x233.google.com. [2a00:1450:400c:c05::233])
+        by gmr-mx.google.com with ESMTPS id gb6si1014365wib.3.2015.01.15.01.30.31
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 15 Jan 2015 01:30:31 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::233 as permitted sender) client-ip=2a00:1450:400c:c05::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x233.google.com with SMTP id ho1so7974814wib.0
+        for <openmundi@googlegroups.com>; Thu, 15 Jan 2015 01:30:31 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=geCG+Q+Fq5bO5t3s7cjUz3x78E3/ORqvhpphHq2oTvU=;
+        b=XXma95P19NOE6sVULj3fQRcmHjCefmBALcYNRgHnmPy65h8ao+yNge6ggqY2UCGLBA
+         mZy0V/uMh5Wpz4D+52v/LJV1VsQtiLsPOHjTFKOL7q4thAmhZGvg8EjIMF0LpDbQdPe5
+         gdjV254H+aTI2aNGKP/rjNuFhpu1qFuErdq6id093iIR4iA+2BmICBzo6q/00lKp76Ag
+         06IoSIzGA2cMwzDVo5Jc95vcYFB/+3kjxKrRlJ0bOzebJKuavUS5I+VGoG5rvZo6d/ek
+         +dNzXMgPAD3+rpz5vG1KpqSUtxzney0M0h9MsEjq+Sh9K88ybBYi6+MNHIJdXiW++Gdj
+         +pVQ==
+MIME-Version: 1.0
+X-Received: by 10.194.2.75 with SMTP id 11mr16605532wjs.78.1421314231676; Thu,
+ 15 Jan 2015 01:30:31 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Thu, 15 Jan 2015 01:30:31 -0800 (PST)
+Date: Thu, 15 Jan 2015 10:30:31 +0100
+Message-ID: <CAAxEZd9_K2Jtg1cgGtQtP9+HvvFJZVJKjhWb==QZrJaCA_i28g@mail.gmail.com>
+Subject: factbook.json Update 2015/1
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've updated the world factbook.json datasets [1] from the CIA
+page sources. Last update was 2014/8. The big suprise:
+
+  Nothing, zero, nada. Not a single update or change in almost six month.
+
+  Cheers.
+
+PS: I've moved the factbook.json build script to the openmundi/build
+repo [2]. To run into on your own machine; use $ rake factbook
+
+[1] github.com/openmundi/factbook.json
+[2] github.com/openmundi/build
+

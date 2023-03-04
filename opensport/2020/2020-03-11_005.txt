@@ -1,0 +1,214 @@
+From 6802848184151310336@xxx Wed Mar 11 07:25:21 +0000 2020
+X-GM-THRID: 6802848183010459648
+X-Received: by 2002:a37:7cc5:: with SMTP id x188mr1551084qkc.390.1583911521239;
+        Wed, 11 Mar 2020 00:25:21 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a0c:efc2:: with SMTP id a2ls270309qvt.5.gmail; Wed, 11 Mar
+ 2020 00:25:20 -0700 (PDT)
+X-Received: by 2002:a05:6214:1051:: with SMTP id l17mr1639273qvr.175.1583911520659;
+        Wed, 11 Mar 2020 00:25:20 -0700 (PDT)
+Received: by 2002:ae9:ef84:0:0:0:0:0 with SMTP id d126msqkg;
+        Tue, 10 Mar 2020 20:55:28 -0700 (PDT)
+X-Google-Smtp-Source: ADFU+vulTYaEBhpxaQO7Cityl6254zt2jry/+O2FbugyxQDBEl3/YZFBHHwOy3Pmmz6gmhqikzLNDtIPRQ==
+X-Received: by 2002:a25:aca8:: with SMTP id x40mr1058826ybi.512.1583898927725;
+        Tue, 10 Mar 2020 20:55:27 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Tue, 10 Mar 2020 20:55:27 -0700 (PDT)
+From: Jerry Brown <jjbrownhhr@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <86791ba6-d2de-418f-b724-b1fe2cbc6aeb@googlegroups.com>
+Subject: Errors when using footballdata library
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1863_2124430964.1583898927554"
+X-Google-Token: EK_CofMFEr_raC5euP80
+X-Google-IP: 67.209.188.50
+
+------=_Part_1863_2124430964.1583898927554
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1864_441271747.1583898927554"
+
+------=_Part_1864_441271747.1583898927554
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+HI all.
+I'm new in this forum and trying to use sportdb-source-footballdata library 
+<https://github.com/yorobot/football.csv/tree/master/sportdb-source-footballdata>
+.
+When executing the codes described under 'Usage' section, it said 
+'undefined method `new' for SportDb::Struct:Module (NoMethodError)'.
+Since I'm completely new to ruby, I have no idea about how to fix it. 
+
+
+Terminal output:
+
+alphabets/0.1.2 on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+date-formats/0.2.4 on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+sportdb-langs/0.1.0 on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+sportdb-formats/0.2.1 on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+sportdb-countries/0.5.1 on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+sportdb-clubs/0.4.3 on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+sportdb-leagues/0.2.3 on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+fifa/2019.11.27 on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+footballdb-clubs/2019.12.16 on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+footballdb-leagues/2019.12.16 on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+sportdb-config/0.9.0 on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+sportdb-text/0.3.3 on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::StateBase<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::CityBase<
+Traceback (most recent call last):
+24: from download.rb:1:in `<main>'
+23: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:39:in 
+`require'
+22: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:135:in 
+`rescue in require'
+21: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:135:in 
+`require'
+20: from 
+/var/lib/gems/2.5.0/gems/sportdb-source-footballdata-1.0.0/lib/sportdb/source/footballdata.rb:9:in 
+`<top (required)>'
+19: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in 
+`require'
+18: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in 
+`require'
+17: from 
+/var/lib/gems/2.5.0/gems/sportdb-import-0.2.4/lib/sportdb/import.rb:6:in 
+`<top (required)>'
+16: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in 
+`require'
+15: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in 
+`require'
+14: from 
+/var/lib/gems/2.5.0/gems/sportdb-models-1.18.6/lib/sportdb/models.rb:9:in 
+`<top (required)>'
+13: from 
+/var/lib/gems/2.5.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:325:in 
+`require'
+12: from 
+/var/lib/gems/2.5.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:291:in 
+`load_dependency'
+11: from 
+/var/lib/gems/2.5.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:325:in 
+`block in require'
+10: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in 
+`require'
+9: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in 
+`require'
+8: from 
+/var/lib/gems/2.5.0/gems/sportdb-match-formats-0.1.0/lib/sportdb/match/formats.rb:9:in 
+`<top (required)>'
+7: from 
+/var/lib/gems/2.5.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:325:in 
+`require'
+6: from 
+/var/lib/gems/2.5.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:291:in 
+`load_dependency'
+5: from 
+/var/lib/gems/2.5.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:325:in 
+`block in require'
+4: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in 
+`require'
+3: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in 
+`require'
+2: from 
+/var/lib/gems/2.5.0/gems/sportdb-match-formats-0.1.0/lib/sportdb/match/formats/mapper.rb:3:in 
+`<top (required)>'
+1: from 
+/var/lib/gems/2.5.0/gems/sportdb-match-formats-0.1.0/lib/sportdb/match/formats/mapper.rb:9:in 
+`<module:SportDb>'
+/var/lib/gems/2.5.0/gems/sportdb-match-formats-0.1.0/lib/sportdb/match/formats/mapper.rb:19:in 
+`<class:MapperV2>': undefined method `new' for SportDb::Struct:Module 
+(NoMethodError)
+
+
+------=_Part_1864_441271747.1583898927554
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">HI all.<div>I&#39;m new in this forum and trying to use <a=
+ href=3D"https://github.com/yorobot/football.csv/tree/master/sportdb-source=
+-footballdata">sportdb-source-footballdata library</a>.<br></div><div>When =
+executing the codes described under &#39;Usage&#39; section, it said &#39;u=
+ndefined method `new&#39; for SportDb::Struct:Module (NoMethodError)&#39;.<=
+/div><div>Since I&#39;m completely new to ruby, I have no idea about how to=
+ fix it.=C2=A0</div><div><br></div><div><br></div><div>Terminal output:</di=
+v><div><br></div><div><div>alphabets/0.1.2 on Ruby 2.5.5 (2019-03-15) [x86_=
+64-linux-gnu]</div><div>date-formats/0.2.4 on Ruby 2.5.5 (2019-03-15) [x86_=
+64-linux-gnu]</div><div>sportdb-langs/0.1.0 on Ruby 2.5.5 (2019-03-15) [x86=
+_64-linux-gnu]</div><div>sportdb-formats/0.2.1 on Ruby 2.5.5 (2019-03-15) [=
+x86_64-linux-gnu]</div><div>sportdb-countries/0.5.1 on Ruby 2.5.5 (2019-03-=
+15) [x86_64-linux-gnu]</div><div>sportdb-clubs/0.4.3 on Ruby 2.5.5 (2019-03=
+-15) [x86_64-linux-gnu]</div><div>sportdb-leagues/0.2.3 on Ruby 2.5.5 (2019=
+-03-15) [x86_64-linux-gnu]</div><div>fifa/2019.11.27 on Ruby 2.5.5 (2019-03=
+-15) [x86_64-linux-gnu]</div><div>footballdb-clubs/2019.12.16 on Ruby 2.5.5=
+ (2019-03-15) [x86_64-linux-gnu]</div><div>footballdb-leagues/2019.12.16 on=
+ Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]</div><div>sportdb-config/0.9.0 =
+on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]</div><div>sportdb-text/0.3.3 =
+on Ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]</div><div>=C2=A0 [TagDb.has_m=
+any_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Mode=
+l::Country&lt;</div><div>=C2=A0 [TagDb.has_many_tags] adding taggings n tag=
+s has_many assocs to model &gt;WorldDb::Model::StateBase&lt;</div><div>=C2=
+=A0 [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &=
+gt;WorldDb::Model::CityBase&lt;</div><div>Traceback (most recent call last)=
+:</div><div><span style=3D"white-space:pre">=09</span>24: from download.rb:=
+1:in `&lt;main&gt;&#39;</div><div><span style=3D"white-space:pre">=09</span=
+>23: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:39:in `re=
+quire&#39;</div><div><span style=3D"white-space:pre">=09</span>22: from /us=
+r/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:135:in `rescue in requ=
+ire&#39;</div><div><span style=3D"white-space:pre">=09</span>21: from /usr/=
+lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:135:in `require&#39;</di=
+v><div><span style=3D"white-space:pre">=09</span>20: from /var/lib/gems/2.5=
+.0/gems/sportdb-source-footballdata-1.0.0/lib/sportdb/source/footballdata.r=
+b:9:in `&lt;top (required)&gt;&#39;</div><div><span style=3D"white-space:pr=
+e">=09</span>19: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.=
+rb:59:in `require&#39;</div><div><span style=3D"white-space:pre">=09</span>=
+18: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in `req=
+uire&#39;</div><div><span style=3D"white-space:pre">=09</span>17: from /var=
+/lib/gems/2.5.0/gems/sportdb-import-0.2.4/lib/sportdb/import.rb:6:in `&lt;t=
+op (required)&gt;&#39;</div><div><span style=3D"white-space:pre">=09</span>=
+16: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in `req=
+uire&#39;</div><div><span style=3D"white-space:pre">=09</span>15: from /usr=
+/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in `require&#39;</di=
+v><div><span style=3D"white-space:pre">=09</span>14: from /var/lib/gems/2.5=
+.0/gems/sportdb-models-1.18.6/lib/sportdb/models.rb:9:in `&lt;top (required=
+)&gt;&#39;</div><div><span style=3D"white-space:pre">=09</span>13: from /va=
+r/lib/gems/2.5.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies=
+.rb:325:in `require&#39;</div><div><span style=3D"white-space:pre">=09</spa=
+n>12: from /var/lib/gems/2.5.0/gems/activesupport-6.0.2.1/lib/active_suppor=
+t/dependencies.rb:291:in `load_dependency&#39;</div><div><span style=3D"whi=
+te-space:pre">=09</span>11: from /var/lib/gems/2.5.0/gems/activesupport-6.0=
+.2.1/lib/active_support/dependencies.rb:325:in `block in require&#39;</div>=
+<div><span style=3D"white-space:pre">=09</span>10: from /usr/lib/ruby/2.5.0=
+/rubygems/core_ext/kernel_require.rb:59:in `require&#39;</div><div><span st=
+yle=3D"white-space:pre">=09</span> 9: from /usr/lib/ruby/2.5.0/rubygems/cor=
+e_ext/kernel_require.rb:59:in `require&#39;</div><div><span style=3D"white-=
+space:pre">=09</span> 8: from /var/lib/gems/2.5.0/gems/sportdb-match-format=
+s-0.1.0/lib/sportdb/match/formats.rb:9:in `&lt;top (required)&gt;&#39;</div=
+><div><span style=3D"white-space:pre">=09</span> 7: from /var/lib/gems/2.5.=
+0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:325:in `req=
+uire&#39;</div><div><span style=3D"white-space:pre">=09</span> 6: from /var=
+/lib/gems/2.5.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.=
+rb:291:in `load_dependency&#39;</div><div><span style=3D"white-space:pre">=
+=09</span> 5: from /var/lib/gems/2.5.0/gems/activesupport-6.0.2.1/lib/activ=
+e_support/dependencies.rb:325:in `block in require&#39;</div><div><span sty=
+le=3D"white-space:pre">=09</span> 4: from /usr/lib/ruby/2.5.0/rubygems/core=
+_ext/kernel_require.rb:59:in `require&#39;</div><div><span style=3D"white-s=
+pace:pre">=09</span> 3: from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_r=
+equire.rb:59:in `require&#39;</div><div><span style=3D"white-space:pre">=09=
+</span> 2: from /var/lib/gems/2.5.0/gems/sportdb-match-formats-0.1.0/lib/sp=
+ortdb/match/formats/mapper.rb:3:in `&lt;top (required)&gt;&#39;</div><div><=
+span style=3D"white-space:pre">=09</span> 1: from /var/lib/gems/2.5.0/gems/=
+sportdb-match-formats-0.1.0/lib/sportdb/match/formats/mapper.rb:9:in `&lt;m=
+odule:SportDb&gt;&#39;</div><div>/var/lib/gems/2.5.0/gems/sportdb-match-for=
+mats-0.1.0/lib/sportdb/match/formats/mapper.rb:19:in `&lt;class:MapperV2&gt=
+;&#39;: undefined method `new&#39; for SportDb::Struct:Module (NoMethodErro=
+r)</div></div><div><br></div></div>
+------=_Part_1864_441271747.1583898927554--
+
+------=_Part_1863_2124430964.1583898927554--
+

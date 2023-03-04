@@ -1,0 +1,67 @@
+From 1719377330176@xxx Tue Jun 16 00:16:53 +0000 2015
+X-GM-THRID: 1721166200832
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a2197e3d3d11c459,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.182.227 with SMTP id eh3mr1505080wic.4.1406546694204;
+        Mon, 28 Jul 2014 04:24:54 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.99.68 with SMTP id eo4ls8762wib.25.gmail; Mon, 28 Jul 2014
+ 04:24:53 -0700 (PDT)
+X-Received: by 10.180.36.38 with SMTP id n6mr2121481wij.0.1406546693684;
+        Mon, 28 Jul 2014 04:24:53 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x232.google.com (mail-wi0-x232.google.com [2a00:1450:400c:c05::232])
+        by gmr-mx.google.com with ESMTPS id cj4si435035wid.0.2014.07.28.04.24.53
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 28 Jul 2014 04:24:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::232 as permitted sender) client-ip=2a00:1450:400c:c05::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f178.google.com with SMTP id hi2so4139251wib.5
+        for <opensport@googlegroups.com>; Mon, 28 Jul 2014 04:24:53 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=0U11yHoGDeyXWOPI8kCY9mpCWC7ytywtNV37K8gg0go=;
+        b=OmHMAxuVZR6ZH+J2q+rCoRcqF2dQvnMVm2yekv7JX9EDWTdYfwjbnpsG0ggREaDYK2
+         ObSIh8STZvIBIlmdAvWhWoquwNwP61CDkGEVmBTx/Pyj2rAvESrV9yh2135otljWQaOH
+         zu7L+GbjLIT8euzycyN6Qb6cBCCFm2oVZ96AGKLv07AWpCZhtfOCqht+jsGZHUbDZL7N
+         MmXFFFgz3/WZ2dq9G/qOJ9+EivKh9EYvHbVjMhSOx91zlpAzJHZyAANFTNDk04i9HqcX
+         DtBfEde67jSIljH7NJzMOKMAc/U7wwbhYNGGyJss++HfqtaYxP0k5Wutn95g7xtvvqdi
+         KkDA==
+MIME-Version: 1.0
+X-Received: by 10.180.189.4 with SMTP id ge4mr30808354wic.25.1406546693589;
+ Mon, 28 Jul 2014 04:24:53 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Mon, 28 Jul 2014 04:24:53 -0700 (PDT)
+Date: Mon, 28 Jul 2014 13:24:53 +0200
+Message-ID: <CAAxEZd-LXjQcxfh1yq9B8r_A2k446xLVwXiN8+RvnQzcoN=qDg@mail.gmail.com>
+Subject: New Repo for Documentation - openfootball/docs - Articles, Tips,
+ Notes, Examples, etc.
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   FYI: I've created a new repo, that is, /docs [1][2] - to collect
+all the documentation in one place and make it easier to contribute.
+
+  As always still in an early stage the first pages include:
+
+   - Intro - football.db - What? Why?
+   - SQL Queries Examples
+   - HTTP JSON API Intro
+
+   Thanks again to Joe Kampschmidt for the first docu contribution,
+that is, notes on a couple of SQL query examples.
+
+   Cheers.
+
+[1] github.com/openfootball/docs    - Markdown sources
+[2] openfootball.github.io/docs      - "Live" Docu Site
+

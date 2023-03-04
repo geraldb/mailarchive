@@ -1,0 +1,94 @@
+From 6265053331834535936@xxx Wed Mar 23 01:26:39 +0000 2016
+X-GM-THRID: 6265053332040056832
+X-Received: by 10.50.61.100 with SMTP id o4mr17113534igr.10.1458696399045;
+        Tue, 22 Mar 2016 18:26:39 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.140.28.52 with SMTP id 49ls2370qgy.53.gmail; Tue, 22 Mar 2016
+ 18:26:38 -0700 (PDT)
+X-Received: by 10.141.7.2 with SMTP id j2mr143410qhd.10.1458696398248;
+        Tue, 22 Mar 2016 18:26:38 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22e.google.com (mail-io0-x22e.google.com. [2607:f8b0:4001:c06::22e])
+        by gmr-mx.google.com with ESMTPS id ph8si27588556igb.0.2016.03.22.18.26.38
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 22 Mar 2016 18:26:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) client-ip=2607:f8b0:4001:c06::22e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22e.google.com with SMTP id o5so7315699iod.2
+        for <wwwmake@googlegroups.com>; Tue, 22 Mar 2016 18:26:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to;
+        bh=NvBITP6goKUrAQKpbtkqhQAYcSO/plMBCaO73kfwH+8=;
+        b=lnDxIGim/akntkwbJQzyPP3Xo9mZrOLSusT9xPgeRTzZRmMGCHcOU0ITQNs2Rg7A1E
+         0nbaVdzEDfBiORDLtI8TDkzzstlB2XzXkEly/mgQnZCrmLjA4U+yU8m86Wv1JSgzJ/hs
+         VcpTJLi8FCzpnpgwRXTZjqjPZGbAeS/+VrQpo1rcQAJZ4JkzWK0N4ag1CMVcLndxxRet
+         s9QkIlJ7mRKIWRrdvbMbX51SmVcDhg8eQGj0r8uIo/Duqm5+Iv8+mNo+pLcDGU5nVosg
+         7tWxnrKSOKW7uvF83nRXgVkTbpQuFTYUbahxgXQy1ekHxCUMsPvfB9RTk/KOyk4FWip0
+         yIEQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:date:message-id:subject:from:to;
+        bh=NvBITP6goKUrAQKpbtkqhQAYcSO/plMBCaO73kfwH+8=;
+        b=iStDpo3E7WAkN1aJYc6DhK7gmbOErzWphlvlPsakhFtisssxBd3MDBk/+hovpkZHyZ
+         UgPEhiyA5Di6gyO80QQI6W1ZUgbez++2EXGrfks4nBSvCgQUc9UpRX5/L5/3MMRqecit
+         wZv3bKr38KAy2ohAdZ+7UPg94t/3Z9QiZTvK5UuY0RGWQXNbFOEkItyXxv8RPdfi0cNb
+         YiCQYJ+iTn+cgzOINUmIqhJDGDfqOXLJVgOd6W+zyT3Mwwx0kIcE/WbAMkY95UHi+Fc0
+         tSE8DD1qu8aiT6Ua3NvesaddPXmCD26mkJg7s9opYpytdwBbEmFTmM5mKZBguS2mKiZK
+         sAfg==
+X-Gm-Message-State: AD7BkJIs/p2F4BtNMM37fuHNzuAiP90C5ol8zSbpUfn6hzrLrvqUzhN41ONpctUOLpvQ+gXmP3S/uPPLaLovNA==
+MIME-Version: 1.0
+X-Received: by 10.50.1.115 with SMTP id 19mr22184323igl.5.1458696398014; Tue,
+ 22 Mar 2016 18:26:38 -0700 (PDT)
+Received: by 10.107.168.74 with HTTP; Tue, 22 Mar 2016 18:26:37 -0700 (PDT)
+Date: Wed, 23 Mar 2016 02:26:37 +0100
+Message-ID: <CAAxEZd8JcKRdMD2VwH7hqyL-Fwz0JmfyBqTiCt6ZbgNd1RRoDQ@mail.gmail.com>
+Subject: Liquid Template Language Docu Reformated - Single-Page Black-n-White
+ Book Version (Manuscripts Edition)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've reformated the official Liquid template language docu [1]
+  into a single-page black-n-white book version [2]
+  (using the Manuscripts [3] format).
+
+   The table of contents reads:
+
+  Basics
+  - What is Liquid?
+  - Introduction
+  - Operators
+  - Truthy and falsy
+  - Types
+  Tags
+  - Control flow
+  - Iteration
+  - Variable
+  Filters A-Z
+
+   Why? Some might want to print it. Some might want to download it as a PDF.
+   Some might prefer a simple black and white style.
+
+  Questions? Comments? Welcome. Cheers.
+
+  PS: Note - The book version is not (yet) perfect and a work-in-progress.
+  PPS: What's Liquid?
+
+Liquid is an open-source template language created by Shopify and
+written in Ruby. It is the backbone of Shopify themes and is used to
+load dynamic content on storefronts.
+
+Liquid has been in production use since June 2006 and is now used by
+many other hosted web applications.
+
+[1] http://liquidmarkup.org
+[2] http://hydepress.github.io/liquid
+[3] http://manuscripts.github.io
+

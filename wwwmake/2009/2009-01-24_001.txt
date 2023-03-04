@@ -1,0 +1,69 @@
+From 272541679616@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 230668894208
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,62dcd4fef002a41c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.150.49.15 with SMTP id w15mr1944884ybw.1.1232792675121; Sat, 
+	24 Jan 2009 02:24:35 -0800 (PST)
+Date: Sat, 24 Jan 2009 02:24:35 -0800 (PST)
+In-Reply-To: <a1c9be27-31c8-4704-a708-227163d989cd@y1g2000pra.googlegroups.com>
+X-IP: 62.47.162.17
+References: <140cca6b-bca9-4743-a6f0-dd20e641cde1@v39g2000pro.googlegroups.com> 
+	<3a6a2b5d-5189-4e10-8a4d-4104524fa4b5@o4g2000pra.googlegroups.com> 
+	<a1c9be27-31c8-4704-a708-227163d989cd@y1g2000pra.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: 71NouQwAAAAMkGN_ub4H2xfDB2KdBZwd
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) 
+	AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.43 Safari/525.19,gzip(gfe),gzip(gfe)
+Message-ID: <d39a1737-65cd-4366-a227-8c9dc4286080@r37g2000prr.googlegroups.com>
+Subject: Re: S6 and SVG
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello Bruce,
+
+> If it's any help, I modified the slides.js file as follows:
+>
+> @@ -176,15 +176,6 @@ function toggle() {
+>
+> =A0$(document).ready(function(){
+>
+> - =A0if( $.browser.msie )
+> - =A0 =A0 =A0 =A0{
+> - =A0 =A0 =A0 =A0 =A0$( '.layout > *').hide();
+> - =A0 =A0 =A0 =A0 =A0$( '.presentation').hide();
+> -
+> - =A0 =A0 =A0 =A0 =A0$( '#microsoft' ).show();
+> - =A0 =A0 =A0 =A0}
+> - =A0 =A0 =A0 =A0else
+> - =A0 =A0 =A0 =A0{
+> =A0 =A0 =A0 =A0 =A0 defaultCheck();
+> =A0 =A0 =A0 =A0 =A0 addSlideIds();
+> =A0 =A0 =A0 =A0 =A0 createControls();
+> @@ -197,5 +188,4 @@ $(document).ready(function(){
+> =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0toggle();
+>
+> =A0 =A0 =A0 =A0 =A0 document.onkeyup =3D keys;
+> - =A0 =A0 =A0 =A0}
+> =A0 =A0 =A0 });
+>
+> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+>
+> The CSS would just need very minor tweaks (like adding a background
+> color to the body) to display fine.
+
+  Thanks for the snippet. I'm back and I will work out a new packaging
+format so it's easy to use your own templates and JavaScript files in
+the next couple of days. Thanks for your patience. The current
+slideshow machinery/options for using your own templates is documented
+here [1].
+
+   Cheers.
+
+[1] http://groups.google.com/group/webslideshow/browse_thread/thread/31cc57=
+0c14cbc769
+

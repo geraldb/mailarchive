@@ -1,0 +1,96 @@
+From 6445509800411267072@xxx Sat Jul 22 08:29:55 +0000 2017
+X-GM-THRID: 6445509800309555200
+X-Received: by 10.200.3.71 with SMTP id w7mr1957399qtg.101.1500712195038;
+        Sat, 22 Jul 2017 01:29:55 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.36.147.195 with SMTP id y186ls822276itd.14.gmail; Sat, 22 Jul
+ 2017 01:29:54 -0700 (PDT)
+X-Received: by 10.200.49.248 with SMTP id i53mr298030qte.117.1500712194496;
+        Sat, 22 Jul 2017 01:29:54 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1500712194; cv=none;
+        d=google.com; s=arc-20160816;
+        b=MirFF1AjKIfvh0ujD/IBoLrzLPaCuDMdLf5NEFYBKs3+hcTvbDRQ2YhBJlY8QB1yac
+         mCg4/RuNtcKAQXeoDWffFRZthC/VB/C6f6SfFTZ5oaR/SHLQCPNsJYRZengM8wLGNEp/
+         Pgpw4FbdhjmJUvrFTaP3LPOFA0+6/ddvxXHrwD+GhVtOIN0Rvk5bNOS5RM83kSBYzwWh
+         TO7u+81UY39m77RsgHqf8Sb3PERDcE+qZtRdpVPXXa6eMeY3vj3Mo44jqmXT6fgPkgoG
+         9Oj8V4zZyomOR2sFXa9eB8bh5K8ekaVhg1j+0vTX1A8OleHEaZJBZndw6NHy5GsYsBQ8
+         2JUg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=ZgapqZRvub9jJGC0cG2XeeXAI7h9BShEC5fZ5SUbIu4=;
+        b=wOI+UOKsKVlpQBvNfCiZF4ngigz+G3suI30riGp5/4l0mXFNceU42JgIKYSXQacWAH
+         aPPIRWd+ELTpjRw4O/FOnf3TXbNi9IfkH/EV5C/CedjXjFlonl25Iz5v0loG4boa8SrW
+         X608DAcUwoFng2GsosHsf+awRtC4sxwE2JTvqXRLjk0Lsksy/ktCSLte3CXIA1zElBw/
+         mUfoq69VPsyK5HIg3pIvnkGjm4JoeivXYmN33Ww909Ij/1tmanw5+Qtdn8IzT2cZ5Ume
+         OjbCzngL5VhrXQ5sZYab1IGxFp1BlKsj2gQDshRkg0q1o018mgp4HOepVx28I8Z94cbu
+         QXzw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=IxfLgbHy;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x234.google.com (mail-it0-x234.google.com. [2607:f8b0:4001:c0b::234])
+        by gmr-mx.google.com with ESMTPS id 125si178236itx.5.2017.07.22.01.29.54
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 22 Jul 2017 01:29:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::234 as permitted sender) client-ip=2607:f8b0:4001:c0b::234;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=IxfLgbHy;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x234.google.com with SMTP id a62so16925837itd.1
+        for <wwwmake@googlegroups.com>; Sat, 22 Jul 2017 01:29:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=ZgapqZRvub9jJGC0cG2XeeXAI7h9BShEC5fZ5SUbIu4=;
+        b=IxfLgbHyzUbWS4kGkHw32L00T4ojv8WzvoUttX4Z8PKZfcouGHx88Xfxad/71nOm6l
+         HmlZ1ePPb/MmGgUAlRPIHFjU8V/ZBKXmYUpp3ObpsZgBzxzaCJD2XLabcS+hJtHFDIeV
+         PPCpNGJE12EixDIijG7shUVwY4o0hdqSoJbnzRT9R5cZYXhW7tQiZmoAglRoyHYIr4Qf
+         WuI/biFEaXHcg+PoZ6k1E78BPGWh/9ySZpshjoGdAEpdYuGmY0SJTqyguvPEbu6lnuJd
+         qpMOInAaX5fziIc3pKWZDILWpS1Enoi+zJ9VZalW91X37V0rXnGYSgzEIe2r/41b5k3j
+         jVRw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=ZgapqZRvub9jJGC0cG2XeeXAI7h9BShEC5fZ5SUbIu4=;
+        b=VdUHME5XuJuDjf+XgvKQ4tvW4dZI+MDxlZD2rC9x17VoNnQFUSyJR2aT3R/RnxZ4BA
+         CWTLntE6FI7B9bfJrWA18e5BnE1oUpgKFZfswUQOnzZoMC0mZTqxpeIPVjalifcmjhzs
+         Nc1XQTfEysmSci0ks7eEmZ7KIZ/6ut2Qa4SzaRRuLnbxexX+BeduShNfPAG4EekEP2Ox
+         Yv1UbC7Y96Rf6SxRZOxIX3q4tJLpQ80W10OZ6FJ3/9kZflrx65DmkhN4YDglhbtwiD9O
+         +fQLpciPzasgQQlaGL68tT1lvqAS8d9RSPI2iN1xtSYpyoCzWgGUEKrBP21n43Mv79L3
+         jasg==
+X-Gm-Message-State: AIVw112yYc/YHowH7zuLEPwLtd7MDXqOUkUeZ/4Q/8pv6DpeGXUgtVKW
+	+9U15ETYrx1Dk/292E7jYBTtXYui6NIu
+X-Received: by 10.36.40.196 with SMTP id h187mr1462299ith.43.1500712194004;
+ Sat, 22 Jul 2017 01:29:54 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.4.17 with HTTP; Sat, 22 Jul 2017 01:29:53 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 22 Jul 2017 10:29:53 +0200
+Message-ID: <CAAxEZd-sphZSk=60mMsHeZ4KCiih7m57d7GUa5hsNvE70o4ueQ@mail.gmail.com>
+Subject: journaltxt (jo) v1.0.0 gem and command line tool - reads single-file
+ Journal.TXT and writes out (auto-builds) a blog (w/ Jekyll posts etc.)
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+    I've put together a new journaltxt (jo) gem / library and command
+line tool [1] - reading single-file Journal.TXT [2] - the new human
+multi-document format for writers - and writes out (auto-builds) a
+blog (w/ Jekyll posts etc.).
+
+    Reinventing blogging on the internets! Single-file publishing is
+the new single push-button publishing ;-)  See the samples/Vienna.txt
+source [3] and live Vienna.TXT Blog [4] w/ Jekyll Minima as examples.
+
+    Happy writing. Happy publishing.
+
+[1] https://github.com/journaltxt/journaltxt
+[2] https://journaltxt.github.io
+[3] https://github.com/journaltxt/journaltxt.github.io/blob/master/samples/Vienna.txt
+[4] https://journaltxt.github.io/blog
+

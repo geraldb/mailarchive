@@ -1,0 +1,53 @@
+From 231918796800@xxx Mon Apr 20 15:32:53 +0000 2015
+X-GM-THRID: 229900288000
+X-Received: by 10.182.16.194 with SMTP id i2mr24030725obd.14.1429543973403;
+        Mon, 20 Apr 2015 08:32:53 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.140.37.100 with SMTP id q91ls2937166qgq.33.gmail; Mon, 20 Apr
+ 2015 08:32:53 -0700 (PDT)
+X-Received: by 10.236.50.227 with SMTP id z63mr24356820yhb.4.1429543973270;
+        Mon, 20 Apr 2015 08:32:53 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qg0-x232.google.com (mail-qg0-x232.google.com. [2607:f8b0:400d:c04::232])
+        by gmr-mx.google.com with ESMTPS id g6si2745670qcg.2.2015.04.20.08.32.53
+        for <beerdb@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Apr 2015 08:32:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c04::232 as permitted sender) client-ip=2607:f8b0:400d:c04::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c04::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qg0-x232.google.com with SMTP id i89so54282776qgf.1
+        for <beerdb@googlegroups.com>; Mon, 20 Apr 2015 08:32:53 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=BySlypMxbxgBmuJv268HxmlbrSW08lZxO2B8TQy44QE=;
+        b=ixEXYabPdfCKgLPZWsmOuWtbfVFIQRMEA0AyWNgqiUq9yCk+gNAkovRhg40e9mvWWx
+         72Fr3DzjbSREcrbUZmnUPZ2v2w9fQYQ4ypyAWY3+8je5hcC9JhCwhs7JBNWBcUmZHv92
+         9anCwzcA7h/c31dTasDR1R2SiH2Pa82D9cCu0FJO9zILwbeNGtP9xpj3PGwIQtWpf0Ag
+         sEdYZUPflCP/8bKjsNyIqYdlkBMs/tdBqUSDmvaD2kfpyU0U4i2VcLwc1+d1+4GGaWPI
+         OlnZzx3pOUZyk1jWvCI8gBQ8K7luAxujkze+BPZwdtDTAlYe3Wx16cX9443JmKFzvSll
+         9jgw==
+MIME-Version: 1.0
+X-Received: by 10.55.31.85 with SMTP id f82mr29286688qkf.6.1429543973175; Mon,
+ 20 Apr 2015 08:32:53 -0700 (PDT)
+Received: by 10.229.5.6 with HTTP; Mon, 20 Apr 2015 08:32:53 -0700 (PDT)
+Date: Mon, 20 Apr 2015 17:32:53 +0200
+Message-ID: <CAAxEZd90q5_9SuEYR9OrkHpfjsdCeespqAV=G5X2WdBFSWQCBA@mail.gmail.com>
+Subject: =?UTF-8?Q?Article=3A_Ruby_Gem_of_the_Week_=2315_=2D_beerdb_gem_=2D_ser?=
+	=?UTF-8?Q?ving_a_Bamberg_Aecht_Schlenkerla_Rauchbier_M=C3=A4rzen_as_JSON?=
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: Over at the Planet Ruby the Ruby Gem of the Week series covers
+- surprise, surprise - the beerdb gem in episode #15.
+
+   Full article @ planetruby.github.io/gems/beerdb.html
+
+   Cheers.
+

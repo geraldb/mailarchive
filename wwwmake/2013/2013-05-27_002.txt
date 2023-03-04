@@ -1,0 +1,100 @@
+From 1256756084736@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1253539053568
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,a24e25c3790958f3
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.119.106 with SMTP id m70mr15582634yhh.52.1369686504431;
+        Mon, 27 May 2013 13:28:24 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.35.136 with SMTP id h8ls3218571qej.31.gmail; Mon, 27 May
+ 2013 13:28:23 -0700 (PDT)
+MIME-Version: 1.0
+X-Received: by 10.49.59.162 with SMTP id a2mr365488qer.5.1369686503357; Mon,
+ 27 May 2013 13:28:23 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by w15g2000vbn.googlegroups.com with HTTP; Mon, 27 May 2013 13:28:23
+ -0700 (PDT)
+Date: Mon, 27 May 2013 13:28:23 -0700 (PDT)
+In-Reply-To: <fd209558-4e5b-4486-ace6-0f1f4c5d9bc6@googlegroups.com>
+References: <fd209558-4e5b-4486-ace6-0f1f4c5d9bc6@googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EOeDj40FiUMkhc5zY7o0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:20.0)
+ Gecko/20100101 Firefox/20.0,gzip(gfe)
+X-Google-IP: 178.190.100.45
+Message-ID: <d77be508-a7f8-4be6-be46-30528dabfbaa@w15g2000vbn.googlegroups.com>
+Subject: Re: Markdown support for the google io slide template
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   To generate your slides from markdown there are many options.
+Obviously, the option I know best is the Slide Show (S9) gem ;-)
+
+   To author your slide deck create a simple text file, e.g.
+beer_db_intro.md  and add some slides (slides by default use headings
+1, that is, #).  Example:
+
+
+# `beer.db` - Using Open Beer & Brewery Data in Ruby
+
+### Agenda
+
+- What's `beer.db `?
+- Example: Breweries - `breweries.txt`
+- Example: Beers  - `beers.txt`
+- How to use `beer.db` in Ruby
+- What's `world.db `?
+- How to use `beer.db` & `world.db` in Ruby
+- How to use HTTP JSON API - `GET /beer/guinness`
+- Design - Plain text format options
+- Design - Better comma separated values (CSV) format
+- Design - "Magic" - Use folder and file names for values and
+structure
+- Design - "Magic" - Use text patterns (regex) for fields
+
+
+
+# What's `beer.db `?
+
+A free open public domain beer database & schema
+for use in any (programming) language
+
+
+(e.g. uses plain text fixtures/data sets)
+
+~~~
+### Brewery
+
+guinness, St. James's Gate Brewery / Guinness Brewery, 1759, D,
+city:dublin
+~~~
+
+~~~
+### Beer
+
+Guinness|Guinness Draught, 4.2%, by:guinness, irish_dry_stout|
+dry_stout|stout
+~~~
+
+
+  Now issue the command:
+
+$ slideshow beer_db_intro.md
+
+  And voila you got your slide deck. Open beer_db_intro.html in your
+browser and enjoy.
+
+   Cheers.
+
+PS: The Google HTML5 (I/O 2011) template pack resides @
+https://github.com/slideshow-s9/slideshow-google-html5-slides
+

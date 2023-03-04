@@ -1,0 +1,99 @@
+From 2090005954560@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 2083479617536
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,451323d5a7de4e5a
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.6.9 with SMTP id w9mr44194law.7.1409472558773;
+        Sun, 31 Aug 2014 01:09:18 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.11.148 with SMTP id q20ls246291wib.14.canary; Sun, 31 Aug
+ 2014 01:09:18 -0700 (PDT)
+X-Received: by 10.180.81.226 with SMTP id d2mr1172718wiy.5.1409472558365;
+        Sun, 31 Aug 2014 01:09:18 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22b.google.com (mail-we0-x22b.google.com [2a00:1450:400c:c03::22b])
+        by gmr-mx.google.com with ESMTPS id sg7si138278wic.3.2014.08.31.01.09.18
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 31 Aug 2014 01:09:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22b as permitted sender) client-ip=2a00:1450:400c:c03::22b;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22b as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f171.google.com with SMTP id u56so3996116wes.30
+        for <opensport@googlegroups.com>; Sun, 31 Aug 2014 01:09:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=zURHeQx9zZBdbepH8mJD9rPC+9Hc2/MlenksYcrxUmY=;
+        b=IMb8U5z2Hlvekh24NH65t4pv9uwHADmVM90wuyN2P2TWHNNnEtFlZCCq494vBI+asB
+         JCQKSOdYUqdWKhmwJTazaUJ655JLIBaXcGVK4QBBERTEv9VdqaF2LVb4agE1SMWoriGH
+         ZW6EpfwtsAhXDexMGgPF8EkzTSDZwqGTGzgxt2ObbJOhwN0AFHXrCC7FVljV6cLaYON+
+         thdpDeBI+PmQJvUajDX9iW6JKaDIdsYyOWzQbOfe8ULOjmG2NxC8OdzFMTbyztyX2xNy
+         rlwQt00Z56D+077Q3s6tIGPfEYf+8ZLM3EBIeFwXdE46EwD8BRhp1N1tnhpIMVHEh/64
+         6DbA==
+MIME-Version: 1.0
+X-Received: by 10.180.88.167 with SMTP id bh7mr14699430wib.12.1409472558279;
+ Sun, 31 Aug 2014 01:09:18 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Sun, 31 Aug 2014 01:09:18 -0700 (PDT)
+In-Reply-To: <6f233201-c3fc-4d17-81dd-70c6d68e866c@googlegroups.com>
+References: <6f233201-c3fc-4d17-81dd-70c6d68e866c@googlegroups.com>
+Date: Sun, 31 Aug 2014 10:09:18 +0200
+Message-ID: <CAAxEZd9LD4=CkADt71YKWDCTGXkYCxeQj=-b0r=o_0bj1+2VfQ@mail.gmail.com>
+Subject: Re: [opensport] Seed A Database in Production Environment
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Thanks for the update and thanks for keep going.   I haven't
+forgotten the stats - will try to add the missing FootballStatsReader.
+
+   To add football data on a heroku install you have at least two
+options  (a third easier one with zip archives is in planning):
+
+   Option 1)   Never tried it put was successful if you check older
+postings - e.g. install the data into your local postgress database
+and than use pg dump or something and than load the copy into your
+remote heroku postgres db.
+
+   Option 2)   Add the datasets you want to load into your Gemfile -
+that's how you get them onto the remote heroku machine. Example (see
+the sport.db.admin Gemfile):
+
+
+gem 'worlddb-data', '9.9.9', git: 'https://github.com/openmundi/world.db.git'
+
+gem 'footballdb-data-national-teams', '9.9.9', git:
+'https://github.com/openfootball/national-teams.git'
+gem 'footballdb-data-world-cup', '9.9.9', git:
+'https://github.com/openfootball/world-cup.git'
+
+  and so on.
+
+   Now you just need to code a litte rake build script (again see the
+sport.db.admin sample task in db/seeds.rb ) e.g.
+
+SportDb.read_builtin
+
+sportdb_setups = [
+  ['fr-france', '2014-15'],
+  ['de-deutschland', '2014-15'],
+  ['en-england', '2014-15'],
+]
+
+sportdb_setups.each do |setup|
+  SportDb.read_setup( "setups/#{setup[1]}",
+find_data_path_from_gemfile_gitref( setup[0]) )
+end
+
+  and than after you push your app to heroku you can use, for example:
+
+   $ heroku run rake db:seed
+
+    or something. That's all. Good luck. Cheers.
+

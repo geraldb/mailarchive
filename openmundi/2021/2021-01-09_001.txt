@@ -1,0 +1,148 @@
+From 6915767251515736064@xxx Sat Jan 09 14:29:01 +0000 2021
+X-GM-THRID: 6914960440117166080
+X-Received: by 2002:a05:600c:211:: with SMTP id 17mr7521289wmi.84.1610202540445;
+        Sat, 09 Jan 2021 06:29:00 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 2002:a5d:5543:: with SMTP id g3ls670146wrw.0.gmail; Sat, 09 Jan
+ 2021 06:28:59 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8eEDqZQfiuSE3EPSB5InkfDZRSiIYThcbXPLWuYCfBUTGQsF4oiqrhM0pQbOUGywQzJP8
+X-Received: by 2002:a5d:67c3:: with SMTP id n3mr8301904wrw.297.1610202539700;
+        Sat, 09 Jan 2021 06:28:59 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1610202539; cv=none;
+        d=google.com; s=arc-20160816;
+        b=LXtPmNMpzMUd4DJ5m0CwWo+CB0NCTo7wzfpMXyM5OY0G+uzUOhW74xlX9nrRMY8hwE
+         NW0A7ZWPE2UwRNGb1axSG7lvheh+D6iDo5duvIY3xAgObQEvqq7lJZsXGj8aNj7QVI+v
+         3QlnAN/vfZWhpWxwydgUKmb16XROZRpHSS9ZvlamMhWDYVz4eB8nGLF+obpsw0rxXTcK
+         35811K1Yf52YXlBGdlT9dF8dNK/MAZZs2nrd39v/HrhMFWikHNZgcbWIG+zaSbeeVzUO
+         NvCO9sk9a315feX06JGrRkAb4X1H9Wh/yUHrmqRv7Em5y04TsCZI8XvM6iy8CVQfC2gY
+         mJXA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:dkim-signature;
+        bh=BovR8ugMEPIIuXe9BtrP9XV7mR/wZhE4DIF56BmDP/4=;
+        b=KdTchSl3MxFK7vAsZMPiWrMZipHhE5DmjsyuP4Ou3AzAzozw75Ad0kvsPJr4BmAfdi
+         N+ioL4e9eCRJ4xYtKGGGv0edkFYasE/5jDpdiXNv74hD86i25TmWbZ31ZILNEZ1ilhCS
+         pIafs4ReVMg0+dyIuV9uvBVlH6EVCrwIBrRy+YiJkIxbyTMZrUskkEe5fRruOAtdxsdD
+         r5h1UL0MBEkv7+to6p2JMTcDL3q7Dgxnx36YtkApgIQQX9Qd94Sh0WSXwtuWXiB+zJWE
+         b4iH7K9agtVist0KCQdKmzKg4oRwboTNM6SWWkTw5ZuSMc3aCHdm6cFqB1P175ycLC3o
+         mt6g==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=O2Oz6p7n;
+       spf=pass (google.com: domain of brady6791@gmail.com designates 2a00:1450:4864:20::131 as permitted sender) smtp.mailfrom=brady6791@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <brady6791@gmail.com>
+Received: from mail-lf1-x131.google.com (mail-lf1-x131.google.com. [2a00:1450:4864:20::131])
+        by gmr-mx.google.com with ESMTPS id y1si593949wrl.4.2021.01.09.06.28.59
+        for <openmundi@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 09 Jan 2021 06:28:59 -0800 (PST)
+Received-SPF: pass (google.com: domain of brady6791@gmail.com designates 2a00:1450:4864:20::131 as permitted sender) client-ip=2a00:1450:4864:20::131;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=O2Oz6p7n;
+       spf=pass (google.com: domain of brady6791@gmail.com designates 2a00:1450:4864:20::131 as permitted sender) smtp.mailfrom=brady6791@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x131.google.com with SMTP id o19so30061257lfo.1
+        for <openmundi@googlegroups.com>; Sat, 09 Jan 2021 06:28:59 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :cc;
+        bh=BovR8ugMEPIIuXe9BtrP9XV7mR/wZhE4DIF56BmDP/4=;
+        b=O2Oz6p7nDDHFtvWI55oGNhZZwtEiJuLkAwEw7ZKUSQwOL82CfIQEJ76TfuNyVBxOP+
+         aXA7Ctngk3ZHlRkpXMnnJqxJG7ol+WvslY4ojVQ1GY3Vj4ey+kElb7bcHyH5YjaC4Q1P
+         clFkAFEMMiz821KXYH9CFdx1SBx941NRCwC3S0Q8wSUAJBPNGYwGkAPLHbmE6RPipcuC
+         GGseRZuBW7MBM44ghDGlVH7CK5okmd+bEnWNooqkAKvEAcbXf1oBgCKWqwBuwWZjHe+o
+         otE2SdP6NAehrBUPSDq8jpS1Nphr7orotB9TcGA3AbfK8Z3mGevicIdT0exk+9cuxnpl
+         LTPQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:cc;
+        bh=BovR8ugMEPIIuXe9BtrP9XV7mR/wZhE4DIF56BmDP/4=;
+        b=T52MdxSBLBoIv+RhqUvho0xDaDu4l2WGKDa/mj+tiuzdLeE9mL8yOu68byxEKFKbYH
+         YzBgfvGjt1F3jJdrH4oicTlL+I7jx8EcEwW9NvZlAFLu754LCCnC6S0DeIJ0F/wYEiEX
+         tigpIU4FLXML8n49OWvYj3Irc9bS/CNtzGvxngB7aNXRFcyROuh6acCdvKLiTUOd9GAK
+         B2/eUUyipu3KNn0Z9RfHk9fcsWewxvHZKX9wi9QunNhIIYHxJrHRwZYXHEtnozwLTazJ
+         5HH6sF53wUoiGGiyj/81AGf5X3a8gpRiMHTVqwaDFOBuMGP5wRFDWnYtLk7wmyZxd5KC
+         kc0w==
+X-Gm-Message-State: AOAM530NsgNC69AdYJrcd9ZOM1dbCah1fLfOJ7F0IbARs2kvMCS/OjUK
+	F4yW6ZtwvlppvvDAM0Sp8V6Amgf39+8/6HApmoQ=
+X-Received: by 2002:a2e:b0f7:: with SMTP id h23mr3419811ljl.137.1610202539512;
+ Sat, 09 Jan 2021 06:28:59 -0800 (PST)
+MIME-Version: 1.0
+References: <6c347dce-9433-4755-b5c1-0623743ddfden@googlegroups.com> <CAAxEZd9dL1puGnUNGMwmgZQTmUmodePJzQkiQbmMc4vSOTkOXA@mail.gmail.com>
+In-Reply-To: <CAAxEZd9dL1puGnUNGMwmgZQTmUmodePJzQkiQbmMc4vSOTkOXA@mail.gmail.com>
+From: Marshall Brady <brady6791@gmail.com>
+Date: Sat, 9 Jan 2021 09:28:48 -0500
+Message-ID: <CACKmOqaLEEURRYOQ-r+rz56TWEWy2KsVE6oiCZ2i=vQ4Upwqhw@mail.gmail.com>
+Subject: Re: [openmundi] JSON Data
+To: Gerald Bauer <gerald.bauer@gmail.com>
+Cc: openmundi <openmundi@googlegroups.com>
+Content-Type: multipart/alternative; boundary="00000000000062550105b8787e90"
+
+--00000000000062550105b8787e90
+Content-Type: text/plain; charset="UTF-8"
+
+Before the site changed, you could put .json on any of the pages to get the
+json version of the page.
+
+It looks like you can still use these links too.
+
+https://www.cia.gov/the-world-factbook/fields/279.json
+https://www.cia.gov/the-world-factbook/fields/279rank.json
+
+On Thu, Jan 7, 2021 at 5:23 AM Gerald Bauer <gerald.bauer@gmail.com> wrote:
+
+> Hello,
+>
+> > Any reason you don't use the json data already available on the site?
+> >
+> > https://www.cia.gov/the-world-factbook/geos/ag.json
+>
+>   Ha. Good point. Some years back when I looked into getting a json
+> dataset there was no such official thing avaible at the CIA website.
+>
+>     Great news.  I wasn't expecting that :-).   Do you have any more
+> information or documentation about the json country profile datasets?
+> Is this now official and announced / published anywhere?
+>
+>   Thanks again. Cheers. Prosit 2021!
+>
+
+--00000000000062550105b8787e90
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Before the site changed, you could put .json on any of the=
+ pages to get the json version of the page.<div><br></div><div>It looks lik=
+e you can still use these links too.<br><br><a href=3D"https://www.cia.gov/=
+the-world-factbook/fields/279.json">https://www.cia.gov/the-world-factbook/=
+fields/279.json</a><br></div><div><a href=3D"https://www.cia.gov/the-world-=
+factbook/fields/279rank.json">https://www.cia.gov/the-world-factbook/fields=
+/279rank.json</a><br></div></div><br><div class=3D"gmail_quote"><div dir=3D=
+"ltr" class=3D"gmail_attr">On Thu, Jan 7, 2021 at 5:23 AM Gerald Bauer &lt;=
+<a href=3D"mailto:gerald.bauer@gmail.com">gerald.bauer@gmail.com</a>&gt; wr=
+ote:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px=
+ 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex">Hello,<br>
+<br>
+&gt; Any reason you don&#39;t use the json data already available on the si=
+te?<br>
+&gt;<br>
+&gt; <a href=3D"https://www.cia.gov/the-world-factbook/geos/ag.json" rel=3D=
+"noreferrer" target=3D"_blank">https://www.cia.gov/the-world-factbook/geos/=
+ag.json</a><br>
+<br>
+=C2=A0 Ha. Good point. Some years back when I looked into getting a json<br=
+>
+dataset there was no such official thing avaible at the CIA website.<br>
+<br>
+=C2=A0 =C2=A0 Great news.=C2=A0 I wasn&#39;t expecting that :-).=C2=A0 =C2=
+=A0Do you have any more<br>
+information or documentation about the json country profile datasets?<br>
+Is this now official and announced / published anywhere?<br>
+<br>
+=C2=A0 Thanks again. Cheers. Prosit 2021!<br>
+</blockquote></div>
+
+--00000000000062550105b8787e90--
+

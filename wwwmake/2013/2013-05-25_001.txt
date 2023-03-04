@@ -1,0 +1,55 @@
+From 1240033394688@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1240908955648
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,6fdd99431870da51,start
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.224.200.202 with SMTP id ex10mr10773853qab.8.1369487359221;
+        Sat, 25 May 2013 06:09:19 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.134.8 with SMTP id pg8ls2433364qeb.43.gmail; Sat, 25 May
+ 2013 06:09:18 -0700 (PDT)
+MIME-Version: 1.0
+X-Received: by 10.49.12.43 with SMTP id v11mr1940297qeb.38.1369487358552; Sat,
+ 25 May 2013 06:09:18 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by q8g2000vbl.googlegroups.com with HTTP; Sat, 25 May 2013 06:09:18
+ -0700 (PDT)
+Date: Sat, 25 May 2013 06:09:18 -0700 (PDT)
+User-Agent: G2/1.0
+X-Google-Token: EP7vgo0FMNjjFNATOys0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:20.0)
+ Gecko/20100101 Firefox/20.0,gzip(gfe)
+X-Google-IP: 194.166.222.176
+Message-ID: <d40a90d9-cfe5-45d7-9821-0eff047b6bbe@q8g2000vbl.googlegroups.com>
+Subject: markdown 1.1.1 - Markdown Engine Wrapper Now Includes HTTP API / Web Service
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  What's the markdown gem?
+
+   The Markdown Engine Wrapper (markdown) Ruby gem used by the Slide
+Show (S9) gem and others lets you use your markdown library of choice
+using ENV or markdown.yml settings.
+
+  What's new?
+
+   The markdown gem now includes a builtin web service/server. Try the
+markdown web service/HTTP API running on Heroku @ http://hypertext.herokuapp.com
+
+  or start your own server issue the command:
+
+   markdown server  or
+   markdown s
+
+  More info @ https://github.com/geraldb/markdown
+
+ Cheers.
+

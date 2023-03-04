@@ -1,0 +1,305 @@
+From 627111362560@xxx Tue Jun 16 00:17:14 +0000 2015
+X-GM-THRID: 629638430720
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cee1dc7df1649710
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.224.167.8 with SMTP id o8mr16007271qay.0.1399963570012;
+        Mon, 12 May 2014 23:46:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.49.113 with SMTP id t17ls2612737ign.0.canary; Mon, 12 May
+ 2014 23:46:09 -0700 (PDT)
+X-Received: by 10.66.157.35 with SMTP id wj3mr14790931pab.11.1399963569749;
+        Mon, 12 May 2014 23:46:09 -0700 (PDT)
+Received: by 10.224.95.198 with SMTP id e6msqan;
+        Mon, 12 May 2014 16:07:49 -0700 (PDT)
+X-Received: by 10.140.80.5 with SMTP id b5mr64187qgd.20.1399936069094;
+        Mon, 12 May 2014 16:07:49 -0700 (PDT)
+X-Google-Doc-Id: f7099647ac28afa9
+X-Google-Web-Client: true
+Date: Mon, 12 May 2014 16:07:47 -0700 (PDT)
+From: Nico <nicohasl@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <ea864852-ce76-4271-b9f8-677b26b094b5@googlegroups.com>
+Subject: Error when setting up.
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3265_9103592.1399936067834"
+X-Google-Token: EMOoxZsFv2yqdvg1uBs0
+X-Google-IP: 190.188.15.190
+
+------=_Part_3265_9103592.1399936067834
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3266_29417428.1399936067834"
+
+------=_Part_3266_29417428.1399936067834
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi guys,
+
+Hope you are fine and thanks for this project.=20
+
+I=C2=B4m trying to set up my environment using=20
+sportdb setup --worldinclude ./world.db
+
+I=C2=B4m not a Ruby guy but as far as I read error is when working with a=
+=20
+structure like a hash so after trying to find the error (and not finding=20
+it) I=C2=B4m posting here.
+
+The error I=C2=B4m receiving is the following:
+
+root@fnServer:/usr/local/src# sportdb setup --include ./at-austria=20
+--worldinclude ./world.db
+confdb/1.1.1 on Ruby 2.1.1 (2014-02-24) [i686-linux]
+tagutils/0.2.2 on Ruby 2.1.1 (2014-02-24) [i686-linux]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::Region<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::City<
+worlddb/2.0.4 on Ruby 2.1.1 (2014-02-24) [i686-linux]
+fetcher/0.4.3 on Ruby 2.1.1 (2014-02-24) [i686-linux]
+/usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/=
+core_ext/hash/keys.rb:71:in=20
+`block in assert_valid_keys': Unknown key: :order. Valid keys are:=20
+:class_name, :class, :foreign_key, :validate, :autosave, :table_name,=20
+:before_add, :after_add, :before_remove, :after_remove, :extend,=20
+:primary_key, :dependent, :as, :through, :source, :source_type,=20
+:inverse_of, :counter_cache (ArgumentError)
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/=
+core_ext/hash/keys.rb:69:in=20
+`each_key'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/=
+core_ext/hash/keys.rb:69:in=20
+`assert_valid_keys'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/activerecord-4.1.1/lib/active_record/as=
+sociations/builder/association.rb:81:in=20
+`validate_options'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/activerecord-4.1.1/lib/active_record/as=
+sociations/builder/association.rb:61:in=20
+`initialize'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/activerecord-4.1.1/lib/active_record/as=
+sociations/builder/collection_association.rb:18:in=20
+`initialize'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/activerecord-4.1.1/lib/active_record/as=
+sociations/builder/association.rb:46:in=20
+`new'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/activerecord-4.1.1/lib/active_record/as=
+sociations/builder/association.rb:46:in=20
+`create_builder'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/activerecord-4.1.1/lib/active_record/as=
+sociations/builder/association.rb:35:in=20
+`build'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/activerecord-4.1.1/lib/active_record/as=
+sociations.rb:1203:in=20
+`has_many'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/sportdb-1.8.17/lib/sportdb/models/event=
+.rb:11:in=20
+`<class:Event>'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/sportdb-1.8.17/lib/sportdb/models/event=
+.rb:6:in=20
+`<module:Model>'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/sportdb-1.8.17/lib/sportdb/models/event=
+.rb:4:in=20
+`<module:SportDb>'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/sportdb-1.8.17/lib/sportdb/models/event=
+.rb:3:in=20
+`<top (required)>'
+        from=20
+/usr/local/rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_re=
+quire.rb:55:in=20
+`require'
+        from=20
+/usr/local/rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_re=
+quire.rb:55:in=20
+`require'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/=
+dependencies.rb:247:in=20
+`block in require'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/=
+dependencies.rb:232:in=20
+`load_dependency'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/=
+dependencies.rb:247:in=20
+`require'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/sportdb-1.8.17/lib/sportdb.rb:39:in=20
+`<top (required)>'
+        from=20
+/usr/local/rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_re=
+quire.rb:55:in=20
+`require'
+        from=20
+/usr/local/rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_re=
+quire.rb:55:in=20
+`require'
+        from=20
+/usr/local/rvm/gems/ruby-2.1.1/gems/sportdb-1.8.17/bin/sportdb:3:in `<top=
+=20
+(required)>'
+        from /usr/local/rvm/gems/ruby-2.1.1/bin/sportdb:23:in `load'
+        from /usr/local/rvm/gems/ruby-2.1.1/bin/sportdb:23:in `<main>'
+        from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in=
+=20
+`eval'
+        from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in=
+=20
+`<main>'
+
+
+I=C2=B4ve tried to modify the issuer files (event.rb ; round.rb, group.rb),=
+ even=20
+not knowing if this impacts in a later step, and when I commented out the=
+=20
+lines which makes reference to the :order, script ran as expected. It=20
+failed in a later step but I=C2=B4m trying to set it up well from the scrat=
+ch.
+
+
+I faced the issue both in my PRD and DEV environments (different servers).=
+=20
+But I=C2=B4m putting information only about one of them:
+root@fnServer:~/world.db# lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 12.04.4 LTS
+Release:        12.04
+Codename:       precise
+
+
+root@fnServer:~/world.db# rvm list
+
+rvm rubies
+
+=3D* ruby-2.1.1 [ i686 ]
+
+root@fnServer:~/world.db# gem -v
+2.2.2
+
+
+
+Is this a known situation?!
+
+Thanks on advance.
+
+Nico
+
+------=_Part_3266_29417428.1399936067834
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi guys,<div><br></div><div>Hope you are fine and thanks f=
+or this project.&nbsp;</div><div><br></div><div>I=C2=B4m trying to set up m=
+y environment using&nbsp;</div><div><span style=3D"background-color: rgb(24=
+3, 243, 243); color: rgb(0, 0, 0);">sportdb setup --worldinclude ./world.db=
+</span></div><div><br></div><div>I=C2=B4m not a Ruby guy but as far as I re=
+ad error is when working with a structure like a hash so after trying to fi=
+nd the error (and not finding it) I=C2=B4m posting here.</div><div><br></di=
+v><div>The error I=C2=B4m receiving is the following:</div><div><br></div><=
+div><div>root@fnServer:/usr/local/src# sportdb setup --include ./at-austria=
+ --worldinclude ./world.db</div><div>confdb/1.1.1 on Ruby 2.1.1 (2014-02-24=
+) [i686-linux]</div><div>tagutils/0.2.2 on Ruby 2.1.1 (2014-02-24) [i686-li=
+nux]</div><div>&nbsp; [TagDb.has_many_tags] adding taggings n tags has_many=
+ assocs to model &gt;WorldDb::Model::Country&lt;</div><div>&nbsp; [TagDb.ha=
+s_many_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::M=
+odel::Region&lt;</div><div>&nbsp; [TagDb.has_many_tags] adding taggings n t=
+ags has_many assocs to model &gt;WorldDb::Model::City&lt;</div><div>worlddb=
+/2.0.4 on Ruby 2.1.1 (2014-02-24) [i686-linux]</div><div>fetcher/0.4.3 on R=
+uby 2.1.1 (2014-02-24) [i686-linux]</div><div>/usr/local/rvm/gems/ruby-2.1.=
+1/gems/activesupport-4.1.1/lib/active_support/core_ext/hash/keys.rb:71:in `=
+block in assert_valid_keys': Unknown key: :order. Valid keys are: :class_na=
+me, :class, :foreign_key, :validate, :autosave, :table_name, :before_add, :=
+after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent=
+, :as, :through, :source, :source_type, :inverse_of, :counter_cache (Argume=
+ntError)</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm/gems/rub=
+y-2.1.1/gems/activesupport-4.1.1/lib/active_support/core_ext/hash/keys.rb:6=
+9:in `each_key'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm/g=
+ems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/core_ext/hash/ke=
+ys.rb:69:in `assert_valid_keys'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from =
+/usr/local/rvm/gems/ruby-2.1.1/gems/activerecord-4.1.1/lib/active_record/as=
+sociations/builder/association.rb:81:in `validate_options'</div><div>&nbsp;=
+ &nbsp; &nbsp; &nbsp; from /usr/local/rvm/gems/ruby-2.1.1/gems/activerecord=
+-4.1.1/lib/active_record/associations/builder/association.rb:61:in `initial=
+ize'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm/gems/ruby-2.=
+1.1/gems/activerecord-4.1.1/lib/active_record/associations/builder/collecti=
+on_association.rb:18:in `initialize'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; =
+from /usr/local/rvm/gems/ruby-2.1.1/gems/activerecord-4.1.1/lib/active_reco=
+rd/associations/builder/association.rb:46:in `new'</div><div>&nbsp; &nbsp; =
+&nbsp; &nbsp; from /usr/local/rvm/gems/ruby-2.1.1/gems/activerecord-4.1.1/l=
+ib/active_record/associations/builder/association.rb:46:in `create_builder'=
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm/gems/ruby-2.1.1/=
+gems/activerecord-4.1.1/lib/active_record/associations/builder/association.=
+rb:35:in `build'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm/=
+gems/ruby-2.1.1/gems/activerecord-4.1.1/lib/active_record/associations.rb:1=
+203:in `has_many'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm=
+/gems/ruby-2.1.1/gems/sportdb-1.8.17/lib/sportdb/models/event.rb:11:in `&lt=
+;class:Event&gt;'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm=
+/gems/ruby-2.1.1/gems/sportdb-1.8.17/lib/sportdb/models/event.rb:6:in `&lt;=
+module:Model&gt;'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm=
+/gems/ruby-2.1.1/gems/sportdb-1.8.17/lib/sportdb/models/event.rb:4:in `&lt;=
+module:SportDb&gt;'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/r=
+vm/gems/ruby-2.1.1/gems/sportdb-1.8.17/lib/sportdb/models/event.rb:3:in `&l=
+t;top (required)&gt;'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local=
+/rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:5=
+5:in `require'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm/ru=
+bies/ruby-2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `r=
+equire'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm/gems/ruby=
+-2.1.1/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `=
+block in require'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm=
+/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/dependencies.r=
+b:232:in `load_dependency'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/=
+local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/depen=
+dencies.rb:247:in `require'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr=
+/local/rvm/gems/ruby-2.1.1/gems/sportdb-1.8.17/lib/sportdb.rb:39:in `&lt;to=
+p (required)&gt;'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm=
+/rubies/ruby-2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in=
+ `require'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm/rubies=
+/ruby-2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `requi=
+re'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm/gems/ruby-2.1=
+.1/gems/sportdb-1.8.17/bin/sportdb:3:in `&lt;top (required)&gt;'</div><div>=
+&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm/gems/ruby-2.1.1/bin/sportdb=
+:23:in `load'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm/gem=
+s/ruby-2.1.1/bin/sportdb:23:in `&lt;main&gt;'</div><div>&nbsp; &nbsp; &nbsp=
+; &nbsp; from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:i=
+n `eval'</div><div>&nbsp; &nbsp; &nbsp; &nbsp; from /usr/local/rvm/gems/rub=
+y-2.1.1/bin/ruby_executable_hooks:15:in `&lt;main&gt;'</div></div><div><br>=
+</div><div><br></div><div>I=C2=B4ve tried to modify the issuer files (event=
+.rb ; round.rb, group.rb), even not knowing if this impacts in a later step=
+, and when I commented out the lines which makes reference to the :order, s=
+cript ran as expected. It failed in a later step but I=C2=B4m trying to set=
+ it up well from the scratch.</div><div><br></div><div><br></div><div>I fac=
+ed the issue both in my PRD and DEV environments (different servers). But I=
+=C2=B4m putting information only about one of them:</div><div><div>root@fnS=
+erver:~/world.db# lsb_release -a</div><div>No LSB modules are available.</d=
+iv><div>Distributor ID: Ubuntu</div><div>Description: &nbsp; &nbsp;Ubuntu 1=
+2.04.4 LTS</div><div>Release: &nbsp; &nbsp; &nbsp; &nbsp;12.04</div><div>Co=
+dename: &nbsp; &nbsp; &nbsp; precise</div></div><div><br></div><div><br></d=
+iv><div><div>root@fnServer:~/world.db# rvm list</div><div><br></div><div>rv=
+m rubies</div><div><br></div><div>=3D* ruby-2.1.1 [ i686 ]</div></div><div>=
+<br></div><div><div>root@fnServer:~/world.db# gem -v</div><div>2.2.2</div><=
+/div><div><br></div><div><br></div><div><br></div><div>Is this a known situ=
+ation?!</div><div><br></div><div>Thanks on advance.</div><div><br></div><di=
+v>Nico</div></div>
+------=_Part_3266_29417428.1399936067834--
+
+------=_Part_3265_9103592.1399936067834--
+

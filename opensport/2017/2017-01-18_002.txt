@@ -1,0 +1,107 @@
+From 6376999977778937856@xxx Wed Jan 18 17:36:49 +0000 2017
+X-GM-THRID: 6374761789815521280
+X-Received: by 10.200.49.244 with SMTP id i49mr1090266qte.61.1484761009615;
+        Wed, 18 Jan 2017 09:36:49 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.10.211 with SMTP id 80ls598279iok.23.gmail; Wed, 18 Jan
+ 2017 09:36:49 -0800 (PST)
+X-Received: by 10.99.171.8 with SMTP id p8mr1233267pgf.165.1484761009158;
+        Wed, 18 Jan 2017 09:36:49 -0800 (PST)
+Received: by 10.202.239.138 with SMTP id n132msoih;
+        Wed, 18 Jan 2017 08:54:44 -0800 (PST)
+X-Received: by 10.157.20.145 with SMTP id d17mr481017ote.18.1484758484351;
+        Wed, 18 Jan 2017 08:54:44 -0800 (PST)
+X-Google-Web-Client: true
+Date: Wed, 18 Jan 2017 08:54:43 -0800 (PST)
+From: johnwhelchel@gmail.com
+To: opensport <opensport@googlegroups.com>
+Message-Id: <7cbd6e48-1b1b-44e5-b282-865f899d633d@googlegroups.com>
+In-Reply-To: <CAAxEZd_YANtqUnrDfDCxn3CuNkEVr=rdjqCn2TCN5QRJTXD98w@mail.gmail.com>
+References: <cca182e3-4058-4572-a073-4a249779176d@googlegroups.com>
+ <CAAxEZd_YANtqUnrDfDCxn3CuNkEVr=rdjqCn2TCN5QRJTXD98w@mail.gmail.com>
+Subject: Re: [opensport] Error creating daabase
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2230_478868108.1484758483741"
+X-Google-Token: ENO7_sMFtWBVaYS1lSU0
+X-Google-IP: 2601:14d:8380:2cc8:6ad6:8ce5:de3f:ec54
+
+------=_Part_2230_478868108.1484758483741
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2231_2004883662.1484758483741"
+
+------=_Part_2231_2004883662.1484758483741
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I found this very helpful and it solved my problem. Note that you'll have 
+to run the sportdb command preceded by, "bundle exec", so e.g. "bundle exec 
+sportdb new en".
+
+This would be worth adding to the FAQ on the main site.
+
+On Thursday, January 12, 2017 at 12:00:12 PM UTC-5, Gerald Bauer wrote:
+>
+> Hello, 
+>
+> >  *** error: Index name 'index_taggings_on_tag_id' on table 'taggings' 
+> already exists 
+>
+>    Thanks for trying football.db.  Yes, this is a known issue. Sorry. 
+> Please "downgrade" activerecord to the 4.2.x series. 
+>
+> > I have read a closed issue regarding the fact that activerecord 5 is not 
+> supported, 
+> >  if this is the issue how can I setup a working environment to generate 
+> a DB? 
+>
+>    One way is to use a Gemfile (and bundler) to install the sportdb 
+> and activerecord with a specific version e.g. 
+>
+>    Gemfile: 
+>
+> gem 'sportdb' 
+> gem 'activerecord', '~>4.2' 
+>
+>    Cheers. 
+>
+
+------=_Part_2231_2004883662.1484758483741
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I found this very helpful and it solved my problem. Note t=
+hat you&#39;ll have to run the sportdb command preceded by, &quot;bundle ex=
+ec&quot;, so e.g. &quot;bundle exec sportdb new en&quot;.<br><br>This would=
+ be worth adding to the FAQ on the main site.<br><br>On Thursday, January 1=
+2, 2017 at 12:00:12 PM UTC-5, Gerald Bauer wrote:<blockquote class=3D"gmail=
+_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;p=
+adding-left: 1ex;">Hello,
+<br>
+<br>&gt; =C2=A0*** error: Index name &#39;index_taggings_on_tag_id&#39; on =
+table &#39;taggings&#39; already exists
+<br>
+<br>=C2=A0 =C2=A0Thanks for trying football.db. =C2=A0Yes, this is a known =
+issue. Sorry.
+<br>Please &quot;downgrade&quot; activerecord to the 4.2.x series.
+<br>
+<br>&gt; I have read a closed issue regarding the fact that activerecord 5 =
+is not supported,
+<br>&gt; =C2=A0if this is the issue how can I setup a working environment t=
+o generate a DB?
+<br>
+<br>=C2=A0 =C2=A0One way is to use a Gemfile (and bundler) to install the s=
+portdb
+<br>and activerecord with a specific version e.g.
+<br>
+<br>=C2=A0 =C2=A0Gemfile:
+<br>
+<br>gem &#39;sportdb&#39;
+<br>gem &#39;activerecord&#39;, &#39;~&gt;4.2&#39;
+<br>
+<br>=C2=A0 =C2=A0Cheers.
+<br></blockquote></div>
+------=_Part_2231_2004883662.1484758483741--
+
+------=_Part_2230_478868108.1484758483741--
+

@@ -1,0 +1,81 @@
+From 6327186584213913600@xxx Tue Sep 06 11:55:24 +0000 2016
+X-GM-THRID: 6327186582472228864
+X-Received: by 10.107.131.71 with SMTP id f68mr3350184iod.1.1473162924323;
+        Tue, 06 Sep 2016 04:55:24 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.107.53.85 with SMTP id c82ls440888ioa.7.gmail; Tue, 06 Sep
+ 2016 04:55:22 -0700 (PDT)
+X-Received: by 10.107.30.5 with SMTP id e5mr3303467ioe.8.1473162922792;
+        Tue, 06 Sep 2016 04:55:22 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-oi0-x243.google.com (mail-oi0-x243.google.com. [2607:f8b0:4003:c06::243])
+        by gmr-mx.google.com with ESMTPS id c2si676664ith.3.2016.09.06.04.55.22
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 06 Sep 2016 04:55:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4003:c06::243 as permitted sender) client-ip=2607:f8b0:4003:c06::243;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4003:c06::243 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-oi0-x243.google.com with SMTP id v82so7226089oie.1
+        for <wwwmake@googlegroups.com>; Tue, 06 Sep 2016 04:55:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=otE+q7QCfL4wVGoCu81MRSEQT8XUYKaD+qve1/KWbzg=;
+        b=Od7lbfBDTV3huFHunUnXoL/xxSP6TkxbDnDJ+yh6DzrTp/pz0+SV9INLFD0lgyWEBR
+         Zw07wl29I+Jhq8D9CCYhneQJtrCJc0jUzhpRqlk7pEX/tWsEfyzzr8R0vF/AFmsElzF5
+         /edLSqQYYKIi+VqXUNT11SvsNyGV1G/B6kph+Dxo/AASW9nT5nKdAqVa/acmAK/M9O+e
+         3jcv/cAnhA0gCuuOqgD3YzGjmduWLgMNj2LU1ym0/P25kJSxq+ttK39F11og6N10Kzam
+         xMAupImu8qS1MR9HuuCvUnXTHsFDZTjQBz147XFhRqQDtEVdhQ4XPKlEjQSc+QtJca64
+         aVXA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=otE+q7QCfL4wVGoCu81MRSEQT8XUYKaD+qve1/KWbzg=;
+        b=j48OIYJ6wg1tq9K0CZCaQqTyHygI62Sxok1j+jhOHhuppxcATVtE2U4NupFGLhoh2S
+         r2uQn7NOaaP14cycxhA5sIAuarrOVi2Cf3+ZcLJcrdYzUWEquXOmmr+6551ETpG3vpdj
+         Nhiz9+C2+6zOsLAcug3cyJom7xtmK1UjojN7AIoBqBjZ8aK8lzISySzUEqwfLLg7mTCI
+         Krm9qiDMTqoDyfSBrOrzidBOcISrGiZD3WFKY2cbZBXjD3R9TzwDsLbLVkqPn6A7P00E
+         owcW9HV5L+6+rFvyfp4eD8AtTOLerb01Gq3KOzipIDlM26cPzKoI0FeaNs/7ULsFByX9
+         r0XQ==
+X-Gm-Message-State: AE9vXwMfmb0rkxJkxXAP96Ro7q0aYNdIs8dtbl5awe0wPakE4MByTEEsN4XX9KxTzGgsQ6Jp2L7iMNVEZP7MJw==
+X-Received: by 10.36.92.20 with SMTP id q20mr29574621itb.10.1473162922478;
+ Tue, 06 Sep 2016 04:55:22 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Tue, 6 Sep 2016 04:55:22 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 6 Sep 2016 13:55:22 +0200
+Message-ID: <CAAxEZd-pjTc0Xs28N=AFHjwnOD-eGEVuMRjnPZNqGabSCi8HUg@mail.gmail.com>
+Subject: Slide Show (S9) Update - Write Your Talks / Presentations in Plain
+ Text w / Markdown (kramdown) n Jekyll Themes
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+I've updated the Slide Show (S9) machinery [1]. All slide show
+templates / theme packs
+  are now just Jekyll themes (using Liquid) and thanks to the latest
+GitHub update
+  back on the  master branch. New theme packs include Reveal.js and Shower.
+
+ For some example see:
+
+ - Reveal.js templates [2] and the live demo [3]
+ - Shower templates [4] and the live demo [5].
+
+  Any favorite slide show/presentation package? Questions? Comments?
+Welcome. Cheers.
+
+PS: There's also a live online (demo) service using Sinatra called
+try-slideshow [6] on heroku.
+
+[1] http://slideshow-s9.github.io
+[2] https://github.com/slideshow-templates/slideshow-reveal.js
+[3] http://slideshow-templates.github.io/slideshow-reveal.js/slides.html
+[4] https://github.com/slideshow-templates/slideshow-shower
+[5] http://slideshow-templates.github.io/slideshow-shower/slides.html
+[6] http://tryslideshow.herokuapp.com
+

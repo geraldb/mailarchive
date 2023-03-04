@@ -1,0 +1,552 @@
+From 320044269568@xxx Tue Jun 16 00:17:19 +0000 2015
+X-GM-THRID: 252823207936
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,91274d0de1d6fc38
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.68.201.134 with SMTP id ka6mr645881pbc.4.1392302826693;
+        Thu, 13 Feb 2014 06:47:06 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.19.230 with SMTP id i6ls1421886obe.71.gmail; Thu, 13 Feb
+ 2014 06:47:06 -0800 (PST)
+X-Received: by 10.182.230.168 with SMTP id sz8mr603121obc.9.1392302826163;
+        Thu, 13 Feb 2014 06:47:06 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-vc0-x233.google.com (mail-vc0-x233.google.com [2607:f8b0:400c:c03::233])
+        by gmr-mx.google.com with ESMTPS id c1si364862vdv.0.2014.02.13.06.47.06
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 13 Feb 2014 06:47:06 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c03::233 as permitted sender) client-ip=2607:f8b0:400c:c03::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c03::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-vc0-f179.google.com with SMTP id lh14so8391555vcb.10
+        for <opensport@googlegroups.com>; Thu, 13 Feb 2014 06:47:06 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=/wpWSd7T9HegjhJM8/hzpMsqITUDZrNbbZVMXZdBM/k=;
+        b=cCBGTOYUdguu5U9eK9amvpuqeQ3jDTwotW4Nil2JSF6tUWV1bymJqjpe4/cMK4BbLf
+         nTenzafir2kU91j4D4fiByE0En/S6LNlO5IdFd7RnO+kdxfam4kYTRYXun7OFZayPD1p
+         /X/whIcQOogsqp6LJ2riK4NKSTuktQetADgzbLKnVVsVD3AiU6iyNuvYoHkrTk5rNWD9
+         eYUhsiiO3Sqes0jF7ejL9yJ+4gGbFrEX3/GAtGAjo6MjyNxwgZiWiRe/M2mS7C/Ryyem
+         9S0ltca0E6ovmlR1pDzBZDcC5cmMClSLE+1nBgkSIBPVW/Qh1GIgP3yRdwjuoXXRrtX6
+         dVHg==
+MIME-Version: 1.0
+X-Received: by 10.58.229.4 with SMTP id sm4mr1226434vec.10.1392302825947; Thu,
+ 13 Feb 2014 06:47:05 -0800 (PST)
+Received: by 10.58.156.10 with HTTP; Thu, 13 Feb 2014 06:47:05 -0800 (PST)
+In-Reply-To: <382a618e-0754-4f2b-bcbb-ae65d0b0cd9d@googlegroups.com>
+References: <d7f4432d-8234-4fe2-9d86-ddb1405fa163@googlegroups.com>
+	<36cce30c-d387-437b-880a-54f9d3f654ea@googlegroups.com>
+	<51f35b75-76da-4986-aee3-028b39c390a5@googlegroups.com>
+	<CAAxEZd-Bwo6-1OSj_JU0pCzTGqskxx8BWZKk2R3WirEw9c60Rg@mail.gmail.com>
+	<6622adba-9c9b-4c7f-be0e-2523db79734d@googlegroups.com>
+	<92623206-3be0-40ec-a654-8c4e9dcc9e3c@googlegroups.com>
+	<CAAxEZd8SAXOBaNFDtKFuBeftKEpmDwQ8_fTvohLQP5HzQ8K7iQ@mail.gmail.com>
+	<CAAxEZd-d+B8-tXGAF4Dgu+j0sOXYS6OvSO0towTyZkh0CbUiRg@mail.gmail.com>
+	<382a618e-0754-4f2b-bcbb-ae65d0b0cd9d@googlegroups.com>
+Date: Thu, 13 Feb 2014 08:47:05 -0600
+Message-ID: <CAAxEZd8iYqVJOFxRo-56EA-PukQWdUnj2zBUX+1GO=Y3_FH3iQ@mail.gmail.com>
+Subject: Re: [opensport] Re: A couple of questions...
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello Oriol,
+
+   No worries. Take your take.  Looking forward to your work: Please
+post a link or similar if it's online.
+
+  Note, add the following to your build script (now you need to load
+the stadiums/grounds first - before the game fixtures).
+
+  task :grounds  =3D> :importbuiltin do
+    SportDb.read_setup( 'setups/all',  ../stadiums )
+ end
+
+   And add the depencdency e.g.:
+
+  task :importsport =3D> [:importbuiltin, :grounds] do
+    ..
+  end
+
+   Good luck. Cheers.
+
+2014-02-12 16:36 GMT-06:00 Oriol Franquesa Cort=E9s <ofranquesa@gmail.com>:
+> Hi Gerald,
+>
+> Many thanks for the update. I'll have a look tomorrow and let you know if
+> everything is ok. Also I will try to find some time to complete the data =
+as
+> agreement for your work ;) It is really helping my project (hope I can sh=
+ow
+> it to you when it is done).
+>
+> Cheers.
+>
+>
+> On Wednesday, February 12, 2014 9:23:58 PM UTC+1, Gerald Bauer wrote:
+>>
+>> Hello,
+>>
+>>   I've added a new ground (stadium) tables plus associations for games
+>> and events (that is, a game belongs to a ground and a ground has many
+>> games; an event has many grounds using the events_ground join table).
+>>
+>>   If you update the sportdb gem (requires 1.8.2+) and the textutils
+>> gem (requires + 0.8.4+) plus use the stadiums repo and rebuild your
+>> schema and fixtures you can access the city for the game using
+>>
+>>     game.ground.city, for example.
+>>
+>>    Let me know if it works. Cheers.
+>>
+>>  PS: I've only added the stadiums/grounds for now to the world cup
+>> 2014 fixtures [1].  Also note some games miss the stadiums (you're
+>> welcome to add the missing stadiums/grounds).
+>>
+>> [1]  github.com/openfootball/world-cup/blob/master/2014/cup.txt
+>>
+>> 2014-02-05 13:58 GMT-06:00 Gerald Bauer <gerald...@gmail.com>:
+>> > Hello Oriol,
+>> >
+>> >>  I had a look on the entire generated DB and I couldn't see any
+>> >> relationship between games
+>> >>  and where are the played (cities). Am I wrong?
+>> >
+>> >   I'm sorry, you're not. It's currently missing.
+>> >
+>> >>  Could be consider to add the locations for all World Cup games?
+>> >>  Let me know if I could help you on this!
+>> >
+>> >   The good news it's planned to add a location via stadiums (see [1]
+>> > ). All stadiums for the world cup in Brazil are already included.  The
+>> > bad news it will realistically take a couple of weeks until I get
+>> > around adding the missing code.  Of course, you're more than welcome
+>> > to start adding the missing parts yourself. Thanks for your patience.
+>> >
+>> >   Cheers.
+>> >
+>> > [1]
+>> > https://github.com/openfootball/stadiums/blob/master/south-america/br-=
+brazil/stadiums.txt
+>> >
+>> > 2014-02-05 Oriol Franquesa Cort=E9s <ofran...@gmail.com>:
+>> >> Sorry Gerald, it's me again! :)
+>> >>
+>> >> Just one question. I realised that games have no "city" related... I
+>> >> had a
+>> >> look on the entire generated DB and I couldn't see any relationship
+>> >> between
+>> >> games and where are the played (cities). Am I wrong? Could be conside=
+r
+>> >> to
+>> >> add the locations for all World Cup games? Let me know if I could hel=
+p
+>> >> you
+>> >> on this!
+>> >>
+>> >> Best,
+>> >> Oriol.
+>> >>
+>> >>
+>> >> On Friday, January 31, 2014 5:20:24 PM UTC+1, Oriol Franquesa Cort=E9=
+s
+>> >> wrote:
+>> >>>
+>> >>> Hi Gerald!
+>> >>>
+>> >>> Many thanks! Now worked like a charm! :)
+>> >>>
+>> >>> Best.
+>> >>>
+>> >>> On Friday, January 31, 2014 2:41:16 PM UTC+1, Gerald Bauer wrote:
+>> >>>>
+>> >>>> Hello,
+>> >>>>
+>> >>>>    Sorry for the error and thanks for trying. Please, update the
+>> >>>> sportdb gem to use the latest version, that is, 1.8.0 and retry. It
+>> >>>> should work now.
+>> >>>>
+>> >>>>   Note, you will have to fix (update) your Rakefile too. You will
+>> >>>> need
+>> >>>> to import the
+>> >>>>   1) builtins (e.g. seasons) and
+>> >>>>   2) all national teams using the euro-cup, africa-cup,
+>> >>>> north-america-gold-cup n copa-america repos
+>> >>>>
+>> >>>>   Add to/change in your Rakefile:
+>> >>>>
+>> >>>> task :importbuiltin =3D> :env do
+>> >>>>   SportDb.read_builtin
+>> >>>> end
+>> >>>>
+>> >>>> task :importsport =3D> :importbuiltin do
+>> >>>>   SportDb.read_setup( 'setups/teams', './euro-cup' )
+>> >>>>   SportDb.read_setup( 'setups/teams', './africa-cup' )
+>> >>>>   SportDb.read_setup( 'setups/teams', './north-america-gold-cup' )
+>> >>>>   SportDb.read_setup( 'setups/teams', './copa-america' )
+>> >>>>   SportDb.read_setup( 'setups/all',   './world-cup' )
+>> >>>> end
+>> >>>>
+>> >>>> And that's it. Retry and it now should work. Optional: Add the abou=
+t
+>> >>>> task to check the gem versions e.g.:
+>> >>>>
+>> >>>> desc 'footballdb - check gem versions in use'
+>> >>>> task :about =3D> :env do
+>> >>>>   puts "textutils #{TextUtils::VERSION}"
+>> >>>>   puts "worlddb #{WorldDb::VERSION}"
+>> >>>>   puts "sportdb #{SportDb::VERSION}"
+>> >>>> end
+>> >>>>
+>> >>>> Let me know if it works. Cheers.
+>> >>>>
+>> >>>> 2014-01-30 Oriol Franquesa Cort=E9s <ofran...@gmail.com>:
+>> >>>> > Hi Gerald!
+>> >>>> >
+>> >>>> > Thanks a lot for your quick answer! :)
+>> >>>> >
+>> >>>> > Almost everything is clear now...
+>> >>>> >
+>> >>>> > I just wanted to know if there is some error on the files or with
+>> >>>> > the
+>> >>>> > parsers. I made a Rakefile to create my world cup database but
+>> >>>> > there's
+>> >>>> > no
+>> >>>> > manner to parse the world-cup files. This is my Rakefile:
+>> >>>> >
+>> >>>> > BUILD_DIR =3D "."
+>> >>>> >
+>> >>>> > FOOTBALL_DB_PATH =3D "#{BUILD_DIR}/football.db"
+>> >>>> >
+>> >>>> > DB_CONFIG =3D {
+>> >>>> >   :adapter   =3D>  'mysql2',
+>> >>>> >   :database  =3D>  'football',
+>> >>>> >   :username  =3D>  'root',
+>> >>>> >   :password  =3D>  'test'
+>> >>>> > }
+>> >>>> >
+>> >>>> >
+>> >>>> >
+>> >>>> > directory BUILD_DIR
+>> >>>> >
+>> >>>> > task :clean do
+>> >>>> >   rm FOOTBALL_DB_PATH if File.exists?( FOOTBALL_DB_PATH )
+>> >>>> > end
+>> >>>> >
+>> >>>> > task :env =3D> BUILD_DIR do
+>> >>>> >  require 'worlddb'
+>> >>>> >  require 'sportdb'
+>> >>>> >  require 'logutils/db'
+>> >>>> >
+>> >>>> >  LogUtils::Logger.root.level =3D :info
+>> >>>> >
+>> >>>> >  pp DB_CONFIG
+>> >>>> >  ActiveRecord::Base.establish_connection( DB_CONFIG )
+>> >>>> > end
+>> >>>> >
+>> >>>> > task :create =3D> :env do
+>> >>>> >   LogDb.create
+>> >>>> >   WorldDb.create
+>> >>>> >   SportDb.create
+>> >>>> > end
+>> >>>> >
+>> >>>> > task :importworld =3D> :env do
+>> >>>> >   WorldDb.read_setup( 'setups/sport.db.admin', './world.db',
+>> >>>> > skip_tags:
+>> >>>> > true
+>> >>>> > )  # populate world tables
+>> >>>> >   # WorldDb.stats
+>> >>>> > end
+>> >>>> >
+>> >>>> > task :importsport =3D> :env do
+>> >>>> >   SportDb.read_setup( 'setups/all', './world-cup' )
+>> >>>> >   # SportDb.stats
+>> >>>> > end
+>> >>>> >
+>> >>>> > desc 'footballdb - build from scratch'
+>> >>>> > task :build =3D> [:clean, :create, :importworld, :importsport] do
+>> >>>> >   puts 'Done.'
+>> >>>> > end
+>> >>>> >
+>> >>>> > And this is what I get:
+>> >>>> >
+>> >>>> > root@orioldebian:/var/www/sportsdb# rake --trace importsport
+>> >>>> > ** Invoke importsport (first_time)
+>> >>>> > ** Invoke env (first_time)
+>> >>>> > ** Invoke . (first_time, not_needed)
+>> >>>> > ** Execute env
+>> >>>> > worlddb 1.8.2 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]
+>> >>>> > fetcher 0.4.2 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]
+>> >>>> > sportdb/1.7.9 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]
+>> >>>> > logdb 0.6.0 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]
+>> >>>> > {:adapter=3D>"mysql2",
+>> >>>> >  :database=3D>"football",
+>> >>>> >  :username=3D>"root",
+>> >>>> >  :password=3D>"helliwood"}
+>> >>>> > ** Execute importsport
+>> >>>> > [info] parsing data 'setups/all' (./world-cup/setups/all.yml)...
+>> >>>> > rake aborted!
+>> >>>> > wrong number of arguments (3 for 2)
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/worlddb-1.8.2/lib/worlddb/mat=
+cher.rb:7:in
+>> >>>> > `match_xxx_for_country'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/rea=
+der.rb:18:in
+>> >>>> > `match_tracks_for_country'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/rea=
+der.rb:64:in
+>> >>>> > `load'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/rea=
+der.rb:53:in
+>> >>>> > `block in load_setup'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/textutils-0.8.1/lib/textutils=
+/reader/fixture_reader.rb:44:in
+>> >>>> > `block in each'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/textutils-0.8.1/lib/textutils=
+/reader/fixture_reader.rb:43:in
+>> >>>> > `each'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/textutils-0.8.1/lib/textutils=
+/reader/fixture_reader.rb:43:in
+>> >>>> > `each'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/rea=
+der.rb:52:in
+>> >>>> > `load_setup'
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb.rb:=
+122:in
+>> >>>> > `read_setup'
+>> >>>> > /mnt/hgfs/httdocs/sportsdb/Rakefile:43:in `block in <top
+>> >>>> > (required)>'
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:=
+236:in
+>> >>>> > `call'
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:=
+236:in
+>> >>>> > `block in execute'
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:=
+231:in
+>> >>>> > `each'
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:=
+231:in
+>> >>>> > `execute'
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:=
+175:in
+>> >>>> > `block in invoke_with_call_chain'
+>> >>>> > /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/monitor.rb:211:in
+>> >>>> > `mon_synchronize'
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:=
+168:in
+>> >>>> > `invoke_with_call_chain'
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:=
+161:in
+>> >>>> > `invoke'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/applicat=
+ion.rb:149:in
+>> >>>> > `invoke_task'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/applicat=
+ion.rb:106:in
+>> >>>> > `block (2 levels) in top_level'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/applicat=
+ion.rb:106:in
+>> >>>> > `each'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/applicat=
+ion.rb:106:in
+>> >>>> > `block in top_level'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/applicat=
+ion.rb:115:in
+>> >>>> > `run_with_threads'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/applicat=
+ion.rb:100:in
+>> >>>> > `top_level'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/applicat=
+ion.rb:78:in
+>> >>>> > `block in run'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/applicat=
+ion.rb:165:in
+>> >>>> > `standard_exception_handling'
+>> >>>> >
+>> >>>> >
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/applicat=
+ion.rb:75:in
+>> >>>> > `run'
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/bin/rake:33:in
+>> >>>> > `<top
+>> >>>> > (required)>'
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/bin/rake:23:in `load'
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/bin/rake:23:in `<main>'
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in
+>> >>>> > `eval'
+>> >>>> > /usr/local/rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in
+>> >>>> > `<main>'
+>> >>>> > Tasks: TOP =3D> importsport
+>> >>>> >
+>> >>>> >
+>> >>>> > Any help would be much appreciated! :)
+>> >>>> >
+>> >>>> > Oriol.
+>> >>>> >
+>> >>>> >
+>> >>>> > On Wednesday, January 29, 2014 9:57:13 PM UTC+1, Gerald Bauer
+>> >>>> > wrote:
+>> >>>> >>
+>> >>>> >> Hello,
+>> >>>> >>
+>> >>>> >>> 1 - As another user asked before, how are the data maintained? =
+I
+>> >>>> >>> mean,
+>> >>>> >>> when are you gonna update a result after the match is played? (=
+An
+>> >>>> >>> example)
+>> >>>> >>
+>> >>>> >>
+>> >>>> >>     The match data is a plain text file residing on GitHub. For
+>> >>>> >> example,
+>> >>>> >> the match data for the World Cup 2014 in Brazil lives @
+>> >>>> >> github.com/openfootball/world-cup/blob/master/2014/cup.txt
+>> >>>> >>
+>> >>>> >>    Basically, it works like a wiki - anybody can update it (if
+>> >>>> >> you're
+>> >>>> >> a
+>> >>>> >> openfootball team member - you can update it directly; otherwise
+>> >>>> >> you
+>> >>>> >> may use
+>> >>>> >> a pull request).   It's an all volunteer effort, thus, there is =
+no
+>> >>>> >> guarantee
+>> >>>> >> for updates. In practice I plan to update the World Cup 2014 at
+>> >>>> >> least
+>> >>>> >> once a
+>> >>>> >> day (since I plan to use the results for sportbook).
+>> >>>> >>
+>> >>>> >>    Once the results got updated on GitHub - you can sync your ap=
+p
+>> >>>> >> via
+>> >>>> >> the
+>> >>>> >> built in machinery of the sportdb gem (basically just call
+>> >>>> >> SportDb.update! )
+>> >>>> >> or use the public HTTP JSON API that gets for now updated once a
+>> >>>> >> day
+>> >>>> >> (that
+>> >>>> >> is, every 24 hours).
+>> >>>> >>
+>> >>>> >>>
+>> >>>> >>>
+>> >>>> >>> 2 - Which data is included for a result? (Who scored the goals?=
+)
+>> >>>> >>
+>> >>>> >>
+>> >>>> >>    For now only the results e.g.   Italy 3-0 Spain   etc.
+>> >>>> >> . Again see the plain text fixtures files, for an example. Goals
+>> >>>> >> scored by
+>> >>>> >> players will get added later.
+>> >>>> >>
+>> >>>> >>>
+>> >>>> >>> 3 - I don't know where can I find all the possible available UR=
+Ls
+>> >>>> >>> for
+>> >>>> >>> the
+>> >>>> >>> web service.
+>> >>>> >>
+>> >>>> >>
+>> >>>> >>    Sorry, the docu page for the web service is currently down [1=
+],
+>> >>>> >> it
+>> >>>> >> resides @ footballdb.herokuapp.com/api   but the service is
+>> >>>> >> working.
+>> >>>> >> Example:
+>> >>>> >>
+>> >>>> >>   - Get the teams for the World Cup 2014 ->
+>> >>>> >> footballdb.herokuapp.com/api/v1/event/world.2014/teams
+>> >>>> >>   - Get all rounds ->
+>> >>>> >> footballdb.herokuapp.com/api/v1/event/world.2014/rounds
+>> >>>> >>   - Get 1st round games ->
+>> >>>> >> footballdb.herokuapp.com/api/v1/event/world.2014/round/1
+>> >>>> >>   - etc.
+>> >>>> >>
+>> >>>> >>   Cheers.
+>> >>>> >>
+>> >>>> >> [1] The docu source page for the HTTP JSON API resides @
+>> >>>> >>
+>> >>>> >>
+>> >>>> >> github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/service=
+/views/index.erb
+>> >>>> >
+>> >>>> > --
+>> >>>> > You received this message because you are subscribed to the Googl=
+e
+>> >>>> > Groups
+>> >>>> > "Open Sport(s) Database - football.db, formula1.db, ski.db, and
+>> >>>> > Friends"
+>> >>>> > group.
+>> >>>> > To unsubscribe from this group and stop receiving emails from it,
+>> >>>> > send
+>> >>>> > an
+>> >>>> > email to opensport+...@googlegroups.com.
+>> >>>> > For more options, visit https://groups.google.com/groups/opt_out.
+>> >>
+>> >> --
+>> >> You received this message because you are subscribed to the Google
+>> >> Groups
+>> >> "Open Sport(s) Database - football.db, formula1.db, ski.db, and
+>> >> Friends"
+>> >> group.
+>> >> To unsubscribe from this group and stop receiving emails from it, sen=
+d
+>> >> an
+>> >> email to opensport+...@googlegroups.com.
+>> >> For more options, visit https://groups.google.com/groups/opt_out.
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/groups/opt_out.
+

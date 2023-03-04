@@ -1,0 +1,62 @@
+From 1308816834560@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1278199463936
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,ea3e6f7419da7567
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.6.138 with SMTP id b10mr2676907wja.0.1403084251587;
+        Wed, 18 Jun 2014 02:37:31 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.218.201 with SMTP id pi9ls30188wic.28.gmail; Wed, 18 Jun
+ 2014 02:37:31 -0700 (PDT)
+X-Received: by 10.180.72.230 with SMTP id g6mr224985wiv.3.1403084251149;
+        Wed, 18 Jun 2014 02:37:31 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x231.google.com (mail-wg0-x231.google.com [2a00:1450:400c:c00::231])
+        by gmr-mx.google.com with ESMTPS id h4si1186578wib.2.2014.06.18.02.37.31
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 18 Jun 2014 02:37:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::231 as permitted sender) client-ip=2a00:1450:400c:c00::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f49.google.com with SMTP id y10so534682wgg.8
+        for <opensport@googlegroups.com>; Wed, 18 Jun 2014 02:37:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=NCbPeevNE3KQ+Kq1p26N0DJFJNh6g6s27tUwj4mNfi0=;
+        b=xbxcGhICNrssLoOy0+2TmiyOv4fAQ1o7zk0yOk2T37FgqbNKhEeDjkBH9G9mjEhqRu
+         e6yMySc1BBJe0Wk1Ml5HS8RSDa7nKiidgBQaFR9Apu+VVn5t+FZ85niUINh+PnYIfXqw
+         gRsGoxTsW1sZYz7Yis32kz8E08bUuTUwI4m1ZmZhSl0/4hypzI/bYJHcwqIve1LVkr0o
+         yBuRTMRxkpL+6API2L5urWt9zdpvRh4v88KFlVHydvWSSxnF/XDBqyMdg6jWQTpH2sHr
+         vQFfNnUxLFl/f6awWoiSc6aVbi+jU3p1giHeu/hfyCKBp98lYR7mP2ct7aXhKIj76akK
+         ZKVQ==
+MIME-Version: 1.0
+X-Received: by 10.194.62.104 with SMTP id x8mr45348677wjr.15.1403084251080;
+ Wed, 18 Jun 2014 02:37:31 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Wed, 18 Jun 2014 02:37:31 -0700 (PDT)
+In-Reply-To: <48cde8a9-adef-4509-9ee6-53e200261546@googlegroups.com>
+References: <53e668a4-3f9f-4eaf-af10-6b5de1180349@googlegroups.com>
+	<a6bb0051-dde7-4997-beb0-29f386b79282@googlegroups.com>
+	<48cde8a9-adef-4509-9ee6-53e200261546@googlegroups.com>
+Date: Wed, 18 Jun 2014 11:37:31 +0200
+Message-ID: <CAAxEZd-e8XCpjT6igCiViqM5-Ewas9igLtnQ=WW7oNoxKa7CLw@mail.gmail.com>
+Subject: Re: [opensport] Re: Help in accessing the database
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    Sorry no magic. If you want to update the database you have to
+update it yourself of course e.g.
+
+Step 1)  update the datasets via git
+Step 2)  update the datasets in your database via sportdb script
+
+   As an alternative you can write of course your own update code. Cheers.
+

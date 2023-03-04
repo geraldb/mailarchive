@@ -1,0 +1,458 @@
+From 6828536191777767424@xxx Tue May 19 12:47:56 +0000 2020
+X-GM-THRID: 6828449998508654592
+X-Received: by 2002:a17:902:ba8e:: with SMTP id k14mr3885551pls.308.1589892476307;
+        Tue, 19 May 2020 05:47:56 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a17:902:a717:: with SMTP id w23ls4622168plq.7.gmail; Tue, 19
+ May 2020 05:47:55 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxGGL+h6GD95zra7w2K6VgK7faCloR05bEZj0KWH/TlmuANNnUQ0aJzQ2pHE8clWwANazIn
+X-Received: by 2002:a17:902:6ac3:: with SMTP id i3mr21822456plt.261.1589892475138;
+        Tue, 19 May 2020 05:47:55 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1589892475; cv=none;
+        d=google.com; s=arc-20160816;
+        b=znEwpUJzZjD1FEjteydkJnschJ3npS6XHe5TnqIot5dYFaWzOHqXhb3V6SGw6wEdiE
+         TmnsGFwLMx9j+6wCpBAgibZq4T0y1YFL5awqAMyg9qjyYSE1UPl456lC6JOjSA/Mfc+/
+         UCIdhybCW8rts3BkdsGKMQlY/O42EsRC1VCKPjopiIWBdi0/UtJKIPnpFqEDUsqGUhhz
+         rpq0ANEqqty+tQYqLGh6AGre3Y6GJzhuCu6dpME5Es9S9L39ujZxVVtTen2wW4GHjHve
+         FK1l9MLGY09EaQ59pIWj3yKYqd1onNnnh5r4KjNBe+4zk31zdDkaAqZ6K1NNmqT+H36P
+         VcDw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=TZUZJl86FtQmILhkJjCKMLXBHUuTEXCIi2OB+cIEmKM=;
+        b=SiREDLE96Ezz0GrWz6ygE7u4ihWjBX0haCqihslHEqN3n/x2zEoHI46C++ettVoNgl
+         iyLvKUuWATP3pQ+eeVZ+1pR9X5GDMkJb4Nd6bRHNLssorhE1EKs9yGrl8tz8Rck/IGPU
+         axcobTeyCT6t9YlJSIllumNQxZCzHW8JTlTeML4fIZ3IGrcxY8hsEIoS5URehD03yB42
+         XoCmjdd8CSqAXaJrdoBHNJ0FM5i0inmTdv7DCjembgFupF/zuWq5XzNT874nP6q7yjB4
+         1jHVj0aHXU4A5VFz2mIKXdRCIaGzfV0pgXEJwSvpcw4cWkoh5wgGIShfZt561RrV9Acu
+         9HxA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=kSM2ZHo9;
+       spf=pass (google.com: domain of patromeo12@gmail.com designates 2607:f8b0:4864:20::130 as permitted sender) smtp.mailfrom=patromeo12@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <patromeo12@gmail.com>
+Received: from mail-il1-x130.google.com (mail-il1-x130.google.com. [2607:f8b0:4864:20::130])
+        by gmr-mx.google.com with ESMTPS id lt18si64132pjb.0.2020.05.19.05.47.55
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 19 May 2020 05:47:55 -0700 (PDT)
+Received-SPF: pass (google.com: domain of patromeo12@gmail.com designates 2607:f8b0:4864:20::130 as permitted sender) client-ip=2607:f8b0:4864:20::130;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=kSM2ZHo9;
+       spf=pass (google.com: domain of patromeo12@gmail.com designates 2607:f8b0:4864:20::130 as permitted sender) smtp.mailfrom=patromeo12@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-il1-x130.google.com with SMTP id b15so13219325ilq.12
+        for <opensport@googlegroups.com>; Tue, 19 May 2020 05:47:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=TZUZJl86FtQmILhkJjCKMLXBHUuTEXCIi2OB+cIEmKM=;
+        b=kSM2ZHo9xkZ9jGyWQ+9iRfTognd+ACEO0xGyTVaV1AwNZtWPEHJ1NL894bGfY/4Oh7
+         cXy9XAxWz2582hCnZUSjmJGZavQLGBk3np21mtYcV6KPbehY2h3w8GU360sNQuDezF4N
+         R5WAwFSpV003ArDHfP0cZr2fnL8L3dAdXqHPhhpqnegQkw5kHLm7H9a9npws/zZFxm7N
+         Uv5i4PkJYaXcJCudf59WnSNvLphfNHOz29NLfvWVEq6hdBQaVRDvaiOcoJv+Xmzy3xxC
+         f1FfZMfEsOfd/QtpCQGUpbEa3PftvUYuqqvjiKe8dG673T+URtXaeWWaUmbsomtNfuFc
+         vcLw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=TZUZJl86FtQmILhkJjCKMLXBHUuTEXCIi2OB+cIEmKM=;
+        b=tikZ3P+ccSnUD6OUvwjWoftoHv9mj+Ql51GDKCjTtkfl+6ur7qyrV9OhhO+c5bsYmx
+         zbqCWuwNOJLsJrXXGHIJIrHK18qwc+GvMrgNjmbid9k859vmo5fy9w1qX15VmQNehLB3
+         E8fLNVcjpKg8C+ghvnx8rJz7iwCKWR2rLBgF3EksOwrwQlQmeEsaT2RxItOhC5DluhGH
+         B/0aJ6sEzwHAn/5ot/28DbBMwlrZNvDoDjbJOlM+xKsjp0GL0Z7Ehd9vErnD4s5u3OZl
+         jd2R5f0oWyAvhIpRS6X+mcz8usOMFycn1NV+4wZcqEApAdpB77muA2UGkAR9k8wv4S36
+         QWaA==
+X-Gm-Message-State: AOAM531cyeR9npYn5CNitwGGXzlIW2jEiSYOcOiTjkubojdS8nEnwyxL
+	D1yNVyNZT/yHGhBMax3yeWXb5pHdBigwpORag9GcQNHjr4w=
+X-Received: by 2002:a92:7f0e:: with SMTP id a14mr21202541ild.209.1589892474418;
+ Tue, 19 May 2020 05:47:54 -0700 (PDT)
+MIME-Version: 1.0
+References: <f762e249-a1c1-4ba9-ab37-19848ce1bd05@googlegroups.com>
+ <CAAxEZd84Qb35CqHg6gaT-=56DXaCSdnnVw1oFbp2C1P03-02vA@mail.gmail.com> <66862177-cbc7-4426-85c6-43f6260a8f82@googlegroups.com>
+In-Reply-To: <66862177-cbc7-4426-85c6-43f6260a8f82@googlegroups.com>
+From: anjaramanasoa romeo <patromeo12@gmail.com>
+Date: Tue, 19 May 2020 15:47:40 +0300
+Message-ID: <CAJGnaw8QNuGtCBkqxgS3=NZBp6WumzykhR4cQeFvvm8XxzE__w@mail.gmail.com>
+Subject: Re: [opensport] 404 status code from accessing endpoint
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary="0000000000002b397705a5ffb01a"
+
+--0000000000002b397705a5ffb01a
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Helllo,
+I have finished  solved the issue by choosing another option ,but getting
+following error:
+*TypeError* at */event/fr.1.2014_15/teams*Cannot visit Integer
+
+   - *file:* visitor.rb
+   - *location:* rescue in visit
+   - *line: *25
+
+
+Le mar. 19 mai 2020 =C3=A0 10:38, anjaramanasoa romeo <patromeo12@gmail.com=
+> a
+=C3=A9crit :
+
+>
+> Thanks for your reply. I have Dataset for france.after launching the
+>> following command: sportdb  new fr , and directly execute the following:
+>> sportdb  serve  (that use the default
+>
+> downloaded database  "sport.db" downloaded into the previous created
+> directory named  /france) ,this output these lines:
+>
+> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+> sportdb serve:
+>
+> alphabets/1.0.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+> date-formats/1.0.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+> sportdb-langs/0.1.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+> sportdb-formats/1.0.2 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+> fifa/2020.5.10 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+> footballdb-leagues/2020.5.10 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+> footballdb-clubs/2020.5.10 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+> sportdb-config/1.0.2 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model
+> >WorldDb::Model::Country<
+>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model
+> >WorldDb::Model::StateBase<
+>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model
+> >WorldDb::Model::CityBase<
+> sportdb-sync/1.0.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+> sportdb-readers/1.0.2 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+> [debug] Webservice::Metal.get - add route GET '/favicon.ico' to
+> #<Webservice::Base:70041739074380> : Class
+> [debug] Webservice::Metal.head - add route HEAD '/favicon.ico' to
+> #<Webservice::Base:70041739074380> : Class
+> [debug] Webservice::Metal.get - add route GET '/webservice-32x32.png' to
+> #<Webservice::Base:70041739074380> : Class
+> [debug] Webservice::Metal.head - add route HEAD '/webservice-32x32.png' t=
+o
+> #<Webservice::Base:70041739074380> : Class
+> [debug] Webservice::Metal.get - add route GET '/routes' to
+> #<Webservice::Base:70041739074380> : Class
+> [debug] Webservice::Metal.head - add route HEAD '/routes' to
+> #<Webservice::Base:70041739074380> : Class
+> [debug] Webservice::Metal.get - add route GET '/*' to
+> #<Webservice::Base:70041739074380> : Class
+> [debug] Webservice::Metal.head - add route HEAD '/*' to
+> #<Webservice::Base:70041739074380> : Class
+> [debug] Webservice::Metal.get - add route GET '/version(s)?' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.head - add route HEAD '/version(s)?' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.get - add route GET '/(stats|tables)' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.head - add route HEAD '/(stats|tables)' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.get - add route GET '/props(.:format)?' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.head - add route HEAD '/props(.:format)?' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.get - add route GET '/logs(.:format)?' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.head - add route HEAD '/logs(.:format)?' to
+> #<SportDbService:70041739255900> : Class
+> sportdb/2.3.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+> sportdb/2.3.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]
+> working directory: /home/debate/openfootball/france
+> Connecting to db using settings:
+> {:adapter=3D>"sqlite3", :database=3D>"./sport.db"}
+>   2 leagues  /  1 seasons
+>   2 events (league+season recs)  /  76 rounds  /  0 groups
+>   40 teams
+>   760 games
+>   0 badges
+>   0 rosters (person+team+event recs)
+>   0 goals (person+game recs)
+>   0  assocs|orgs
+>   0  grounds|stadiums
+> [debug] Webservice::Metal.get - add route GET '/rounds/:q' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.head - add route HEAD '/rounds/:q' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.get - add route GET '/event/:key/teams' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.head - add route HEAD '/event/:key/teams' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.get - add route GET '/event/:key/rounds' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.head - add route HEAD '/event/:key/rounds' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.get - add route GET '/event/:key/round/:pos' to
+> #<SportDbService:70041739255900> : Class
+> [debug] Webservice::Metal.head - add route HEAD '/event/:key/round/:pos'
+> to #<SportDbService:70041739255900> : Class
+> dump routes:
+> {"GET"=3D>
+>   [[#<Mustermann::Sinatra:"/version(s)?">,
+>     #<Proc:0x00007f67b9fc11d8@
+> /usr/local/lib/ruby/gems/2.6.0/gems/sportdb-2.3.0/lib/sportdb.rb:44>],
+>    [#<Mustermann::Sinatra:"/(stats|tables)">,
+>     #<Proc:0x00007f67b9fd48f0@
+> /usr/local/lib/ruby/gems/2.6.0/gems/sportdb-2.3.0/lib/sportdb.rb:58>],
+>    [#<Mustermann::Sinatra:"/props(.:format)?">,
+>     #<Proc:0x00007f67b9feb118@
+> /usr/local/lib/ruby/gems/2.6.0/gems/sportdb-2.3.0/lib/sportdb.rb:73>],
+>    [#<Mustermann::Sinatra:"/logs(.:format)?">,
+>     #<Proc:0x00007f67b9ffadc0@
+> /usr/local/lib/ruby/gems/2.6.0/gems/sportdb-2.3.0/lib/sportdb.rb:77>],
+>    [#<Mustermann::Sinatra:"/rounds/:q">, #<Proc:0x00007f67b8368298@
+> (eval):2>],
+>    [#<Mustermann::Sinatra:"/event/:key/teams">,
+>     #<Proc:0x00007f67b8eef8c8@(eval):42>],
+>    [#<Mustermann::Sinatra:"/event/:key/rounds">,
+>     #<Proc:0x00007f67b90bebe0@(eval):56>],
+>    [#<Mustermann::Sinatra:"/event/:key/round/:pos">,
+>     #<Proc:0x00007f67b96cc7a8@(eval):72>]],
+>  "HEAD"=3D>
+>   [[#<Mustermann::Sinatra:"/version(s)?">,
+>     #<Proc:0x00007f67b9fc0fa8@
+> /usr/local/lib/ruby/gems/2.6.0/gems/sportdb-2.3.0/lib/sportdb.rb:44>],
+>    [#<Mustermann::Sinatra:"/(stats|tables)">,
+>     #<Proc:0x00007f67b9fd46e8@
+> /usr/local/lib/ruby/gems/2.6.0/gems/sportdb-2.3.0/lib/sportdb.rb:58>],
+>    [#<Mustermann::Sinatra:"/props(.:format)?">,
+>     #<Proc:0x00007f67b9feaf10@
+> /usr/local/lib/ruby/gems/2.6.0/gems/sportdb-2.3.0/lib/sportdb.rb:73>],
+>    [#<Mustermann::Sinatra:"/logs(.:format)?">,
+>     #<Proc:0x00007f67b9ffabb8@
+> /usr/local/lib/ruby/gems/2.6.0/gems/sportdb-2.3.0/lib/sportdb.rb:77>],
+>    [#<Mustermann::Sinatra:"/rounds/:q">, #<Proc:0x00007f67b8372018@
+> (eval):2>],
+>    [#<Mustermann::Sinatra:"/event/:key/teams">,
+>     #<Proc:0x00007f67b8f0bb68@(eval):42>],
+>    [#<Mustermann::Sinatra:"/event/:key/rounds">,
+>     #<Proc:0x00007f67b90be640@(eval):56>],
+>    [#<Mustermann::Sinatra:"/event/:key/round/:pos">,
+>     #<Proc:0x00007f67b96cc460@(eval):72>]]}
+> starting server...
+> [debug] Webservice::Metal.run! - self =3D #<SportDbService:70041739255900=
+> :
+> Class
+> [2020-05-19 09:22:21] INFO  WEBrick 1.4.2
+> [2020-05-19 09:22:21] INFO  ruby 2.6.6 (2020-03-31) [x86_64-linux]
+> [2020-05-19 09:22:21] INFO  WEBrick::HTTPServer#start: pid=3D3743 port=3D=
+4567
+> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+>
+> and when I access the following endpoints :
+> http://localhost:4567/events(404 status code); /event/france.2014/15/team=
+s(404
+> status code); http://localhost:4567/event/france.2014_15/teams(500 status
+> code):
+>
+>
+> thank you in advance
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit
+> https://groups.google.com/d/msgid/opensport/66862177-cbc7-4426-85c6-43f62=
+60a8f82%40googlegroups.com
+> <https://groups.google.com/d/msgid/opensport/66862177-cbc7-4426-85c6-43f6=
+260a8f82%40googlegroups.com?utm_medium=3Demail&utm_source=3Dfooter>
+> .
+>
+
+--0000000000002b397705a5ffb01a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Helllo,<div>I have finished=C2=A0 solved the issue by choo=
+sing another option ,but getting following error:=C2=A0</div><h1 style=3D"m=
+argin:0px;padding:0px;border:0px;outline:0px;font-size:36px;color:rgb(152,2=
+5,25);font-family:&quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;=
+"><strong style=3D"margin:0px;padding:0px;border:0px;outline:0px">TypeError=
+</strong>=C2=A0at=C2=A0<strong style=3D"margin:0px;padding:0px;border:0px;o=
+utline:0px">/event/fr.1.2014_15/teams</strong></h1><h2 style=3D"margin:0px;=
+padding:0px;border:0px;outline:0px;font-size:22px;color:rgb(51,51,51);font-=
+family:&quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;">Cannot vi=
+sit Integer</h2><ul style=3D"margin:0px;padding:0px;border:0px;outline:0px;=
+list-style:none;font-size:12px;color:rgb(102,102,102);font-family:&quot;Luc=
+ida Grande&quot;,&quot;Lucida Sans Unicode&quot;"><li class=3D"gmail-first"=
+ style=3D"margin:0px;padding:0px 10px 0px 0px;border:0px;outline:0px;height=
+:18px;display:inline"><strong style=3D"margin:0px;padding:0px;border:0px;ou=
+tline:0px;color:rgb(68,68,68)">file:</strong>=C2=A0<code style=3D"margin:0p=
+x;padding:0px;border:0px;outline:0px;font-family:&quot;Lucida Console&quot;=
+,monospace">visitor.rb</code></li>=C2=A0<li style=3D"margin:0px;padding:0px=
+ 10px;border:0px;outline:0px;height:18px;display:inline"><strong style=3D"m=
+argin:0px;padding:0px;border:0px;outline:0px;color:rgb(68,68,68)">location:=
+</strong>=C2=A0<code style=3D"margin:0px;padding:0px;border:0px;outline:0px=
+;font-family:&quot;Lucida Console&quot;,monospace">rescue in visit=C2=A0</c=
+ode></li><li class=3D"gmail-last" style=3D"margin:0px;padding:0px 0px 0px 1=
+0px;border:0px;outline:0px;height:18px;display:inline"><strong style=3D"mar=
+gin:0px;padding:0px;border:0px;outline:0px;color:rgb(68,68,68)">line:=C2=A0=
+</strong>25</li></ul></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" =
+class=3D"gmail_attr">Le=C2=A0mar. 19 mai 2020 =C3=A0=C2=A010:38, anjaramana=
+soa romeo &lt;<a href=3D"mailto:patromeo12@gmail.com">patromeo12@gmail.com<=
+/a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" styl=
+e=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);paddin=
+g-left:1ex"><div dir=3D"ltr"><br><blockquote class=3D"gmail_quote" style=3D=
+"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-le=
+ft:1ex">Thanks for your reply. I have Dataset for france.after launching th=
+e following command: sportdb=C2=A0 new fr , and directly execute the follow=
+ing: sportdb=C2=A0 serve=C2=A0 (that use the default=C2=A0</blockquote><div=
+>downloaded database=C2=A0 &quot;sport.db&quot; downloaded into the previou=
+s created directory named=C2=A0 /france) ,this output these lines:</div><di=
+v><br></div><div>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</div>=
+<div><div>sportdb serve:</div><div><br></div><div>alphabets/1.0.0 on Ruby 2=
+.6.6 (2020-03-31) [x86_64-linux]</div><div>date-formats/1.0.0 on Ruby 2.6.6=
+ (2020-03-31) [x86_64-linux]</div><div>sportdb-langs/0.1.0 on Ruby 2.6.6 (2=
+020-03-31) [x86_64-linux]</div><div>sportdb-formats/1.0.2 on Ruby 2.6.6 (20=
+20-03-31) [x86_64-linux]</div><div>fifa/2020.5.10 on Ruby 2.6.6 (2020-03-31=
+) [x86_64-linux]</div><div>footballdb-leagues/2020.5.10 on Ruby 2.6.6 (2020=
+-03-31) [x86_64-linux]</div><div>footballdb-clubs/2020.5.10 on Ruby 2.6.6 (=
+2020-03-31) [x86_64-linux]</div><div>sportdb-config/1.0.2 on Ruby 2.6.6 (20=
+20-03-31) [x86_64-linux]</div><div>=C2=A0 [TagDb.has_many_tags] adding tagg=
+ings n tags has_many assocs to model &gt;WorldDb::Model::Country&lt;</div><=
+div>=C2=A0 [TagDb.has_many_tags] adding taggings n tags has_many assocs to =
+model &gt;WorldDb::Model::StateBase&lt;</div><div>=C2=A0 [TagDb.has_many_ta=
+gs] adding taggings n tags has_many assocs to model &gt;WorldDb::Model::Cit=
+yBase&lt;</div><div>sportdb-sync/1.0.0 on Ruby 2.6.6 (2020-03-31) [x86_64-l=
+inux]</div><div>sportdb-readers/1.0.2 on Ruby 2.6.6 (2020-03-31) [x86_64-li=
+nux]</div><div>[debug] Webservice::Metal.get - add route GET &#39;/favicon.=
+ico&#39; to #&lt;Webservice::Base:70041739074380&gt; : Class</div><div>[deb=
+ug] Webservice::Metal.head - add route HEAD &#39;/favicon.ico&#39; to #&lt;=
+Webservice::Base:70041739074380&gt; : Class</div><div>[debug] Webservice::M=
+etal.get - add route GET &#39;/webservice-32x32.png&#39; to #&lt;Webservice=
+::Base:70041739074380&gt; : Class</div><div>[debug] Webservice::Metal.head =
+- add route HEAD &#39;/webservice-32x32.png&#39; to #&lt;Webservice::Base:7=
+0041739074380&gt; : Class</div><div>[debug] Webservice::Metal.get - add rou=
+te GET &#39;/routes&#39; to #&lt;Webservice::Base:70041739074380&gt; : Clas=
+s</div><div>[debug] Webservice::Metal.head - add route HEAD &#39;/routes&#3=
+9; to #&lt;Webservice::Base:70041739074380&gt; : Class</div><div>[debug] We=
+bservice::Metal.get - add route GET &#39;/*&#39; to #&lt;Webservice::Base:7=
+0041739074380&gt; : Class</div><div>[debug] Webservice::Metal.head - add ro=
+ute HEAD &#39;/*&#39; to #&lt;Webservice::Base:70041739074380&gt; : Class</=
+div><div>[debug] Webservice::Metal.get - add route GET &#39;/version(s)?&#3=
+9; to #&lt;SportDbService:70041739255900&gt; : Class</div><div>[debug] Webs=
+ervice::Metal.head - add route HEAD &#39;/version(s)?&#39; to #&lt;SportDbS=
+ervice:70041739255900&gt; : Class</div><div>[debug] Webservice::Metal.get -=
+ add route GET &#39;/(stats|tables)&#39; to #&lt;SportDbService:70041739255=
+900&gt; : Class</div><div>[debug] Webservice::Metal.head - add route HEAD &=
+#39;/(stats|tables)&#39; to #&lt;SportDbService:70041739255900&gt; : Class<=
+/div><div>[debug] Webservice::Metal.get - add route GET &#39;/props(.:forma=
+t)?&#39; to #&lt;SportDbService:70041739255900&gt; : Class</div><div>[debug=
+] Webservice::Metal.head - add route HEAD &#39;/props(.:format)?&#39; to #&=
+lt;SportDbService:70041739255900&gt; : Class</div><div>[debug] Webservice::=
+Metal.get - add route GET &#39;/logs(.:format)?&#39; to #&lt;SportDbService=
+:70041739255900&gt; : Class</div><div>[debug] Webservice::Metal.head - add =
+route HEAD &#39;/logs(.:format)?&#39; to #&lt;SportDbService:70041739255900=
+&gt; : Class</div><div>sportdb/2.3.0 on Ruby 2.6.6 (2020-03-31) [x86_64-lin=
+ux]</div><div>sportdb/2.3.0 on Ruby 2.6.6 (2020-03-31) [x86_64-linux]</div>=
+<div>working directory: /home/debate/openfootball/france</div><div>Connecti=
+ng to db using settings:=C2=A0</div><div>{:adapter=3D&gt;&quot;sqlite3&quot=
+;, :database=3D&gt;&quot;./sport.db&quot;}</div><div>=C2=A0 2 leagues=C2=A0=
+ /=C2=A0 1 seasons</div><div>=C2=A0 2 events (league+season recs)=C2=A0 /=
+=C2=A0 76 rounds=C2=A0 /=C2=A0 0 groups</div><div>=C2=A0 40 teams</div><div=
+>=C2=A0 760 games</div><div>=C2=A0 0 badges</div><div>=C2=A0 0 rosters (per=
+son+team+event recs)</div><div>=C2=A0 0 goals (person+game recs)</div><div>=
+=C2=A0 0=C2=A0 assocs|orgs</div><div>=C2=A0 0=C2=A0 grounds|stadiums</div><=
+div>[debug] Webservice::Metal.get - add route GET &#39;/rounds/:q&#39; to #=
+&lt;SportDbService:70041739255900&gt; : Class</div><div>[debug] Webservice:=
+:Metal.head - add route HEAD &#39;/rounds/:q&#39; to #&lt;SportDbService:70=
+041739255900&gt; : Class</div><div>[debug] Webservice::Metal.get - add rout=
+e GET &#39;/event/:key/teams&#39; to #&lt;SportDbService:70041739255900&gt;=
+ : Class</div><div>[debug] Webservice::Metal.head - add route HEAD &#39;/ev=
+ent/:key/teams&#39; to #&lt;SportDbService:70041739255900&gt; : Class</div>=
+<div>[debug] Webservice::Metal.get - add route GET &#39;/event/:key/rounds&=
+#39; to #&lt;SportDbService:70041739255900&gt; : Class</div><div>[debug] We=
+bservice::Metal.head - add route HEAD &#39;/event/:key/rounds&#39; to #&lt;=
+SportDbService:70041739255900&gt; : Class</div><div>[debug] Webservice::Met=
+al.get - add route GET &#39;/event/:key/round/:pos&#39; to #&lt;SportDbServ=
+ice:70041739255900&gt; : Class</div><div>[debug] Webservice::Metal.head - a=
+dd route HEAD &#39;/event/:key/round/:pos&#39; to #&lt;SportDbService:70041=
+739255900&gt; : Class</div><div>dump routes:</div><div>{&quot;GET&quot;=3D&=
+gt;</div><div>=C2=A0 [[#&lt;Mustermann::Sinatra:&quot;/version(s)?&quot;&gt=
+;,</div><div>=C2=A0 =C2=A0 #&lt;Proc:0x00007f67b9fc11d8@/usr/local/lib/ruby=
+/gems/2.6.0/gems/sportdb-2.3.0/lib/sportdb.rb:44&gt;],</div><div>=C2=A0 =C2=
+=A0[#&lt;Mustermann::Sinatra:&quot;/(stats|tables)&quot;&gt;,</div><div>=C2=
+=A0 =C2=A0 #&lt;Proc:0x00007f67b9fd48f0@/usr/local/lib/ruby/gems/2.6.0/gems=
+/sportdb-2.3.0/lib/sportdb.rb:58&gt;],</div><div>=C2=A0 =C2=A0[#&lt;Musterm=
+ann::Sinatra:&quot;/props(.:format)?&quot;&gt;,</div><div>=C2=A0 =C2=A0 #&l=
+t;Proc:0x00007f67b9feb118@/usr/local/lib/ruby/gems/2.6.0/gems/sportdb-2.3.0=
+/lib/sportdb.rb:73&gt;],</div><div>=C2=A0 =C2=A0[#&lt;Mustermann::Sinatra:&=
+quot;/logs(.:format)?&quot;&gt;,</div><div>=C2=A0 =C2=A0 #&lt;Proc:0x00007f=
+67b9ffadc0@/usr/local/lib/ruby/gems/2.6.0/gems/sportdb-2.3.0/lib/sportdb.rb=
+:77&gt;],</div><div>=C2=A0 =C2=A0[#&lt;Mustermann::Sinatra:&quot;/rounds/:q=
+&quot;&gt;, #&lt;Proc:0x00007f67b8368298@(eval):2&gt;],</div><div>=C2=A0 =
+=C2=A0[#&lt;Mustermann::Sinatra:&quot;/event/:key/teams&quot;&gt;,</div><di=
+v>=C2=A0 =C2=A0 #&lt;Proc:0x00007f67b8eef8c8@(eval):42&gt;],</div><div>=C2=
+=A0 =C2=A0[#&lt;Mustermann::Sinatra:&quot;/event/:key/rounds&quot;&gt;,</di=
+v><div>=C2=A0 =C2=A0 #&lt;Proc:0x00007f67b90bebe0@(eval):56&gt;],</div><div=
+>=C2=A0 =C2=A0[#&lt;Mustermann::Sinatra:&quot;/event/:key/round/:pos&quot;&=
+gt;,</div><div>=C2=A0 =C2=A0 #&lt;Proc:0x00007f67b96cc7a8@(eval):72&gt;]],<=
+/div><div>=C2=A0&quot;HEAD&quot;=3D&gt;</div><div>=C2=A0 [[#&lt;Mustermann:=
+:Sinatra:&quot;/version(s)?&quot;&gt;,</div><div>=C2=A0 =C2=A0 #&lt;Proc:0x=
+00007f67b9fc0fa8@/usr/local/lib/ruby/gems/2.6.0/gems/sportdb-2.3.0/lib/spor=
+tdb.rb:44&gt;],</div><div>=C2=A0 =C2=A0[#&lt;Mustermann::Sinatra:&quot;/(st=
+ats|tables)&quot;&gt;,</div><div>=C2=A0 =C2=A0 #&lt;Proc:0x00007f67b9fd46e8=
+@/usr/local/lib/ruby/gems/2.6.0/gems/sportdb-2.3.0/lib/sportdb.rb:58&gt;],<=
+/div><div>=C2=A0 =C2=A0[#&lt;Mustermann::Sinatra:&quot;/props(.:format)?&qu=
+ot;&gt;,</div><div>=C2=A0 =C2=A0 #&lt;Proc:0x00007f67b9feaf10@/usr/local/li=
+b/ruby/gems/2.6.0/gems/sportdb-2.3.0/lib/sportdb.rb:73&gt;],</div><div>=C2=
+=A0 =C2=A0[#&lt;Mustermann::Sinatra:&quot;/logs(.:format)?&quot;&gt;,</div>=
+<div>=C2=A0 =C2=A0 #&lt;Proc:0x00007f67b9ffabb8@/usr/local/lib/ruby/gems/2.=
+6.0/gems/sportdb-2.3.0/lib/sportdb.rb:77&gt;],</div><div>=C2=A0 =C2=A0[#&lt=
+;Mustermann::Sinatra:&quot;/rounds/:q&quot;&gt;, #&lt;Proc:0x00007f67b83720=
+18@(eval):2&gt;],</div><div>=C2=A0 =C2=A0[#&lt;Mustermann::Sinatra:&quot;/e=
+vent/:key/teams&quot;&gt;,</div><div>=C2=A0 =C2=A0 #&lt;Proc:0x00007f67b8f0=
+bb68@(eval):42&gt;],</div><div>=C2=A0 =C2=A0[#&lt;Mustermann::Sinatra:&quot=
+;/event/:key/rounds&quot;&gt;,</div><div>=C2=A0 =C2=A0 #&lt;Proc:0x00007f67=
+b90be640@(eval):56&gt;],</div><div>=C2=A0 =C2=A0[#&lt;Mustermann::Sinatra:&=
+quot;/event/:key/round/:pos&quot;&gt;,</div><div>=C2=A0 =C2=A0 #&lt;Proc:0x=
+00007f67b96cc460@(eval):72&gt;]]}</div><div>starting server...</div><div>[d=
+ebug] Webservice::Metal.run! - self =3D #&lt;SportDbService:70041739255900&=
+gt; : Class</div><div>[2020-05-19 09:22:21] INFO=C2=A0 WEBrick 1.4.2</div><=
+div>[2020-05-19 09:22:21] INFO=C2=A0 ruby 2.6.6 (2020-03-31) [x86_64-linux]=
+</div><div>[2020-05-19 09:22:21] INFO=C2=A0 WEBrick::HTTPServer#start: pid=
+=3D3743 port=3D4567</div></div><div>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D</div><div><br></div><div>and when I access the fol=
+lowing endpoints :=C2=A0=C2=A0<span style=3D"color:rgb(80,80,80);font-famil=
+y:OpenSans,Helvetica,Arial,sans-serif;font-size:12px;white-space:pre-wrap">=
+<a href=3D"http://localhost:4567/events(404" target=3D"_blank">http://local=
+host:4567/events(404</a> status code);  </span><span style=3D"color:rgb(80,=
+80,80);font-family:OpenSans,Helvetica,Arial,sans-serif;font-size:12px;white=
+-space:pre-wrap">/event/france.2014/15/teams</span><span style=3D"color:rgb=
+(80,80,80);font-family:OpenSans,Helvetica,Arial,sans-serif;font-size:12px;w=
+hite-space:pre-wrap">(404 status code)</span><span style=3D"color:rgb(80,80=
+,80);font-family:OpenSans,Helvetica,Arial,sans-serif;font-size:12px;white-s=
+pace:pre-wrap">; </span><span style=3D"color:rgb(80,80,80);font-family:Open=
+Sans,Helvetica,Arial,sans-serif;font-size:12px;white-space:pre-wrap"><a hre=
+f=3D"http://localhost:4567/event/france.2014_15/teams(500" target=3D"_blank=
+">http://localhost:4567/event/france.2014_15/teams(500</a> status code): </=
+span></div><div><br></div><div><br></div><div><span style=3D"color:rgb(80,8=
+0,80);font-family:OpenSans,Helvetica,Arial,sans-serif;font-size:12px;white-=
+space:pre-wrap">thank you in advance   </span><br></div><div><span style=3D=
+"color:rgb(80,80,80);font-family:OpenSans,Helvetica,Arial,sans-serif;font-s=
+ize:12px;white-space:pre-wrap">  </span></div></div>
+
+<p></p>
+
+-- <br>
+You received this message because you are subscribed to the Google Groups &=
+quot;opensport&quot; group.<br>
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:opensport+unsubscribe@googlegroups.com" target=3D=
+"_blank">opensport+unsubscribe@googlegroups.com</a>.<br>
+To view this discussion on the web visit <a href=3D"https://groups.google.c=
+om/d/msgid/opensport/66862177-cbc7-4426-85c6-43f6260a8f82%40googlegroups.co=
+m?utm_medium=3Demail&amp;utm_source=3Dfooter" target=3D"_blank">https://gro=
+ups.google.com/d/msgid/opensport/66862177-cbc7-4426-85c6-43f6260a8f82%40goo=
+glegroups.com</a>.<br>
+</blockquote></div>
+
+--0000000000002b397705a5ffb01a--
+

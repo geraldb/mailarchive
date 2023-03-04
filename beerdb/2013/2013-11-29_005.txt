@@ -1,0 +1,210 @@
+From 36132880384@xxx Sat Dec 20 19:01:40 +0000 2014
+X-GM-THRID: 18531483648
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,9183dd27fdcc5ed2
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.211.114 with SMTP id nb18mr2759312wic.3.1385711130546;
+        Thu, 28 Nov 2013 23:45:30 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.152.37.199 with SMTP id a7ls520240lak.26.gmail; Thu, 28 Nov
+ 2013 23:45:30 -0800 (PST)
+X-Received: by 10.152.9.36 with SMTP id w4mr19961303laa.0.1385711130270;
+        Thu, 28 Nov 2013 23:45:30 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22f.google.com (mail-wg0-x22f.google.com [2a00:1450:400c:c00::22f])
+        by gmr-mx.google.com with ESMTPS id c4si1811587wiv.1.2013.11.28.23.45.30
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 28 Nov 2013 23:45:30 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22f as permitted sender) client-ip=2a00:1450:400c:c00::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-x22f.google.com with SMTP id n12so7782539wgh.2
+        for <beerdb@googlegroups.com>; Thu, 28 Nov 2013 23:45:30 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=ru4Ml36CPgWLO9ByyYVD9Ej3OpYnx4Qgz/Kdqq8h0yk=;
+        b=JcUlS7UJDs3QcSyEThqpUgZSumCaul0VHv/Ul6DCQcVt55ewI9KNPn6O4nIvL0LdO8
+         Jd9PHAIICliYfpEt6eJ2DvqG1ufJWVfcew70xKsfrOkeWZYwdyj4yldwqYL2wvJdLvQA
+         8/9b8Yq6ygcRXQF+NN/QHhWdw67Yqf0PDMWiA7lg/4h4vyEZB8N91E+9PGmaZEOjq6w0
+         +vTt6sEninhHp2w/U5diCQI5rGN42BQB5/neZT3rPNqjKTRrkYVRvlqTRy1MUZ0bW5gJ
+         Lmdf+GyEwN4RW7UFFZiQu0IrmTQ4tNaPupq1NKtnlx/d82fCsgrJdYoNs3DdkMiDAeVm
+         Ndfw==
+MIME-Version: 1.0
+X-Received: by 10.180.187.41 with SMTP id fp9mr5578530wic.33.1385711130141;
+ Thu, 28 Nov 2013 23:45:30 -0800 (PST)
+Received: by 10.216.67.196 with HTTP; Thu, 28 Nov 2013 23:45:30 -0800 (PST)
+In-Reply-To: <c865de2b-d222-4891-947c-cdd1e91929c1@googlegroups.com>
+References: <7844a5a3-f278-4f73-8f1f-f98795838e61@googlegroups.com>
+	<c865de2b-d222-4891-947c-cdd1e91929c1@googlegroups.com>
+Date: Fri, 29 Nov 2013 08:45:30 +0100
+Message-ID: <CAAxEZd_5H4MEPcbddKHFFk320K2o_RBTFjZE6XGKXoxeUKSKSA@mail.gmail.com>
+Subject: Re: [beerdb] Re: Error trying to create my own copy of beer.db
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   For Windows the easiest (and recommend) setup is to use the Rails
+installer -> railsinstaller.org   One package that includes everything
+(Ruby, activerecord, sqlite3 etc.)
+
+   All that's left to do is install the beerdb gem (that is, $ gem
+install beerdb) and you're ready to go.
+
+  If you're new to Ruby I'd suggest you try the Rails installer
+all-in-one setup package and say goodbye to the setup hassle. Cheers.
+
+ PS: By the way I also use it on my Windows machine.
+
+2013/11/29 Jonny Fabuliss <jonfabris@gmail.com>:
+>
+> I did:
+> $ gem install activerecord
+> $ gem install sqlite3
+> Still doesn't work
+>
+> D:\Android\workspace\HeyBartender\Original Data\beerdb>gem install
+> activerecord
+> Temporarily enhancing PATH to include DevKit...
+> Building native extensions.  This could take a while...
+> Successfully installed atomic-1.1.14
+> Fetching: thread_safe-0.1.3.gem (100%)
+> Successfully installed thread_safe-0.1.3
+> Fetching: activesupport-4.0.1.gem (100%)
+> Successfully installed activesupport-4.0.1
+> Fetching: builder-3.1.4.gem (100%)
+> Successfully installed builder-3.1.4
+> Fetching: activemodel-4.0.1.gem (100%)
+> Successfully installed activemodel-4.0.1
+> Fetching: arel-4.0.1.gem (100%)
+> Successfully installed arel-4.0.1
+> Fetching: activerecord-deprecated_finders-1.0.3.gem (100%)
+> Successfully installed activerecord-deprecated_finders-1.0.3
+> Fetching: activerecord-4.0.1.gem (100%)
+> Successfully installed activerecord-4.0.1
+> Installing ri documentation for activemodel-4.0.1
+> Installing ri documentation for activerecord-4.0.1
+> Installing ri documentation for activerecord-deprecated_finders-1.0.3
+> Installing ri documentation for activesupport-4.0.1
+> Installing ri documentation for arel-4.0.1
+> Installing ri documentation for atomic-1.1.14
+> Installing ri documentation for builder-3.1.4
+> Installing ri documentation for thread_safe-0.1.3
+> 8 gems installed
+>
+> D:\Android\workspace\HeyBartender\Original Data\beerdb>gem install sqlite3
+> Successfully installed sqlite3-1.3.8-x86-mingw32
+> 1 gem installed
+>
+>
+> D:\Android\workspace\HeyBartender\Original Data\beerdb>beerdb setup
+> --include ./
+> us-united-states --worldinclude ./world.db
+> worlddb 1.7.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> logdb 0.6.0 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> working directory: D:/Android/workspace/HeyBartender/Original Data/beerdb
+> Connecting to db using settings:
+> {:adapter=>"sqlite3", :database=>"./beer.db"}
+> Invalid gemspec in
+> [D:/Ruby/lib/ruby/gems/1.9.1/specifications/sqlite3-1.3.8-x86
+> -mingw32.gemspec]: undefined method `prerelease?' for "1.3.8":String
+>
+> *** error: undefined method `platform' for nil:NilClass
+>
+>
+>
+>
+>
+>
+>
+>
+> On Thursday, November 28, 2013 11:38:53 AM UTC-5, Jonny Fabuliss wrote:
+>>
+>> I am following the instructions in
+>>
+>> Command Line Tool - Build Your Own beer.db Copy
+>>
+>>
+>> I installed Ruby
+>> Installed rubygems-2.1.7
+>> Got a copy of the world.db fixtures
+>> Got a copy of the US data set
+>>
+>> First time I tried: beerdb setup --include ./us-united-states
+>> --worldinclude ./world.db
+>> I got a this error:
+>> *** error: Please install the sqlite3 adapter: `gem install
+>> activerecord-sqlite3
+>> -adapter` (Could not find 'sqlite3' (~> 1.3.5) among 21 total gem(s))
+>>
+>> Tried this: gem install activerecord-sqlite3-adapter
+>> Got this error:
+>> ERROR:  Could not find a valid gem 'activerecord-sqlite3-adapter' (>= 0)
+>> in any
+>> repository
+>> ERROR:  Possible alternatives: activerecord-jdbcsqlite3-adapter,
+>> activerecord-sq
+>> lserver-adapter, activerecord-mysql2-adapter,
+>> activerecord-spatialite-adapter, a
+>> ctiverecord-mysql-adapter
+>>
+>>
+>> tried this; gem install activerecord-jdbcsqlite3-adapter
+>> seemed to work
+>>
+>> Tried this again: beerdb setup --include ./us-united-states --worldinclude
+>> ./world.db
+>> And got the error below
+>>
+>>
+>> Can anyone either:
+>> 1 send me the beer.db file with all the data?
+>> 2 tell me what I'm doing wrong
+>> 3 shoot me
+>>
+>> Thanks
+>>
+>>
+>>
+>> D:\Android\workspace\HeyBartender\Original Data\beerdb>beerdb setup
+>> --include ./
+>> us-united-states --worldinclude ./world.db
+>> worlddb 1.7.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+>> beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+>> logdb 0.6.0 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+>> beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+>> beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+>> working directory: D:/Android/workspace/HeyBartender/Original Data/beerdb
+>> Connecting to db using settings:
+>> {:adapter=>"sqlite3", :database=>"./beer.db"}
+>> Invalid gemspec in
+>> [D:/Ruby/lib/ruby/gems/1.9.1/specifications/activerecord-jdbc
+>> -adapter-1.3.3.gemspec]: undefined method `prerelease?' for "1.3.3":String
+>> Invalid gemspec in
+>> [D:/Ruby/lib/ruby/gems/1.9.1/specifications/activerecord-jdbc
+>> sqlite3-adapter-1.3.3.gemspec]: undefined method `prerelease?' for
+>> "1.3.3":Strin
+>> g
+>> Invalid gemspec in
+>> [D:/Ruby/lib/ruby/gems/1.9.1/specifications/jdbc-sqlite3-3.7.
+>> 2.1.gemspec]: undefined method `prerelease?' for "3.7.2.1":String
+>>
+>> *** error: undefined method `name' for nil:NilClass
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Beer & Brewery Database (beer.db)" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to beerdb+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/groups/opt_out.
+

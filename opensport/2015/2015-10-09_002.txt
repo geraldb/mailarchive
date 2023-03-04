@@ -1,0 +1,178 @@
+From 6203709540536418304@xxx Fri Oct 09 18:01:25 +0000 2015
+X-GM-THRID: 6202971126650372096
+Date: Fri, 9 Oct 2015 11:01:24 -0700 (PDT)
+From: Angelo Di Maria <angelo.dimaria@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <6cb04241-a8e4-4348-9821-6681ca031586@googlegroups.com>
+In-Reply-To: <CAAxEZd9rB9SRaHLaoWncTTaXJkeOAVUi=tY-R=RVz1D_9KvWZQ@mail.gmail.com>
+References: <bb1410a2-a76d-447b-b054-0be81d0c1e19@googlegroups.com>
+ <CAAxEZd9rB9SRaHLaoWncTTaXJkeOAVUi=tY-R=RVz1D_9KvWZQ@mail.gmail.com>
+Subject: Re: [opensport] could not load sqlite3_adapter
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2178_1978822500.1444413685067"
+X-Google-Token: EPSB4LAFRYWRyVvbiaA0
+X-Google-IP: 93.40.247.154
+
+------=_Part_2178_1978822500.1444413685067
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2179_874101256.1444413685067"
+
+------=_Part_2179_874101256.1444413685067
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello Gerald,
+first of all thank you for your reply.
+I've reinstalled sqlite3 gem and launched "sportdb new en" but the error=20
+persist:
+
+--
+$gem install sqlite3
+
+Successfully installed sqlite3-1.3.10-x86-mingw32
+Parsing documentation for sqlite3-1.3.10-x86-mingw32
+Done installing documentation for sqlite3 after 1 seconds
+1 gem installed
+
+--
+$sportdb new en
+
+activerecord-utils/0.4.0 (activerecord/4.2.4) on Ruby 2.2.3 (2015-08-18)=20
+[i386-mingw32]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::StateBase<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::CityBase<
+sportdb-update/0.1.1 on Ruby 2.2.3 (2015-08-18) [i386-mingw32]
+sportdb-service/0.4.0 on Ruby 2.2.3 (2015-08-18) [i386-mingw32]
+sportdb/1.11.0 on Ruby 2.2.3 (2015-08-18) [i386-mingw32]
+sportdb/1.11.0 on Ruby 2.2.3 (2015-08-18) [i386-mingw32]
+[info] [builder] add world-dataset 'world.db'
+[info] [builder] add football-dataset 'eng-england'
+[info] [datafile] dowload
+[info] download dataset 'openmundi/world.db'
+[info]    from 'http://github.com/openmundi/world.db/archive/master.zip'
+[info]    to './tmp/openmundi--I--world.db.zip'...
+[info] downloading http://github.com/openmundi/world.db/archive/master.zip=
+=20
+to ./tmp/openmundi--I--world.db.zip...
+[info] download dataset 'openfootball/eng-england'
+[info]    from=20
+'http://github.com/openfootball/eng-england/archive/master.zip'
+[info]    to './tmp/openfootball--I--eng-england.zip'...
+[info] downloading=20
+http://github.com/openfootball/eng-england/archive/master.zip to=20
+./tmp/openfootball--I--eng-england.zip...
+working directory: C:/Users/Administrator
+Connecting to db using settings:=20
+{:adapter=3D>"sqlite3", :database=3D>"./sport.db"}
+
+*** error: Could not load=20
+'active_record/connection_adapters/sqlite3_adapter'. Make sure that the=20
+adapter in config/database.yml is valid. If you use an adapter other than=
+=20
+'mysql', 'mysql2', 'postgresql' or 'sqlite3' add the necessary adapter gem=
+=20
+to the Gemfile.
+
+
+any other suggestions?
+
+Thanks
+Angelo
+
+Il giorno mercoled=C3=AC 7 ottobre 2015 20:20:16 UTC+2, Gerald Bauer ha scr=
+itto:
+>
+> Hello,=20
+>
+>    Welcome. Benvenuti to football.db.   Hard to tell from the=20
+> screenshoot - in the future please post the error messages in text.=20
+>
+>     You might be missing the sqlite3 library / gem, thus, try:=20
+>
+> $ gem install sqlite3=20
+>
+>    And than retry.=20
+>
+>    Note: The best ("recommended") way to get started is using datafiles=
+=20
+> e.g.=20
+>
+> $ sportdb new en      # for example for the english premier league=20
+>
+> . Cheers.=20
+>
+
+------=_Part_2179_874101256.1444413685067
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello Gerald,<div>first of all thank you for your reply.</=
+div><div>I&#39;ve reinstalled sqlite3 gem and launched &quot;sportdb new en=
+&quot; but the error persist:</div><div><br></div><div><div>--</div><div>$g=
+em install sqlite3</div><div><br></div><div>Successfully installed sqlite3-=
+1.3.10-x86-mingw32</div><div>Parsing documentation for sqlite3-1.3.10-x86-m=
+ingw32</div><div>Done installing documentation for sqlite3 after 1 seconds<=
+/div><div>1 gem installed</div><div><br></div><div>--</div><div>$sportdb ne=
+w en</div><div><br></div><div>activerecord-utils/0.4.0 (activerecord/4.2.4)=
+ on Ruby 2.2.3 (2015-08-18) [i386-mingw32]</div><div>=C2=A0 [TagDb.has_many=
+_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Model::=
+Country&lt;</div><div>=C2=A0 [TagDb.has_many_tags] adding taggings n tags h=
+as_many assocs to model &gt;WorldDb::Model::StateBase&lt;</div><div>=C2=A0 =
+[TagDb.has_many_tags] adding taggings n tags has_many assocs to model &gt;W=
+orldDb::Model::CityBase&lt;</div><div>sportdb-update/0.1.1 on Ruby 2.2.3 (2=
+015-08-18) [i386-mingw32]</div><div>sportdb-service/0.4.0 on Ruby 2.2.3 (20=
+15-08-18) [i386-mingw32]</div><div>sportdb/1.11.0 on Ruby 2.2.3 (2015-08-18=
+) [i386-mingw32]</div><div>sportdb/1.11.0 on Ruby 2.2.3 (2015-08-18) [i386-=
+mingw32]</div><div>[info] [builder] add world-dataset &#39;world.db&#39;</d=
+iv><div>[info] [builder] add football-dataset &#39;eng-england&#39;</div><d=
+iv>[info] [datafile] dowload</div><div>[info] download dataset &#39;openmun=
+di/world.db&#39;</div><div>[info] =C2=A0 =C2=A0from &#39;http://github.com/=
+openmundi/world.db/archive/master.zip&#39;</div><div>[info] =C2=A0 =C2=A0to=
+ &#39;./tmp/openmundi--I--world.db.zip&#39;...</div><div>[info] downloading=
+ http://github.com/openmundi/world.db/archive/master.zip to ./tmp/openmundi=
+--I--world.db.zip...</div><div>[info] download dataset &#39;openfootball/en=
+g-england&#39;</div><div>[info] =C2=A0 =C2=A0from &#39;http://github.com/op=
+enfootball/eng-england/archive/master.zip&#39;</div><div>[info] =C2=A0 =C2=
+=A0to &#39;./tmp/openfootball--I--eng-england.zip&#39;...</div><div>[info] =
+downloading http://github.com/openfootball/eng-england/archive/master.zip t=
+o ./tmp/openfootball--I--eng-england.zip...</div><div>working directory: C:=
+/Users/Administrator</div><div>Connecting to db using settings:=C2=A0</div>=
+<div>{:adapter=3D&gt;&quot;sqlite3&quot;, :database=3D&gt;&quot;./sport.db&=
+quot;}</div><div><br></div><div>*** error: Could not load &#39;active_recor=
+d/connection_adapters/sqlite3_adapter&#39;. Make sure that the adapter in c=
+onfig/database.yml is valid. If you use an adapter other than &#39;mysql&#3=
+9;, &#39;mysql2&#39;, &#39;postgresql&#39; or &#39;sqlite3&#39; add the nec=
+essary adapter gem to the Gemfile.</div><div><br></div><div><br></div><div>=
+any other suggestions?</div><div><br></div><div>Thanks</div><div>Angelo</di=
+v><br>Il giorno mercoled=C3=AC 7 ottobre 2015 20:20:16 UTC+2, Gerald Bauer =
+ha scritto:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left=
+: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 =C2=A0Welcome. Benvenuti to football.db. =C2=A0 Hard to tell fro=
+m the
+<br>screenshoot - in the future please post the error messages in text.
+<br>
+<br>=C2=A0 =C2=A0 You might be missing the sqlite3 library / gem, thus, try=
+:
+<br>
+<br>$ gem install sqlite3
+<br>
+<br>=C2=A0 =C2=A0And than retry.
+<br>
+<br>=C2=A0 =C2=A0Note: The best (&quot;recommended&quot;) way to get starte=
+d is using datafiles e.g.
+<br>
+<br>$ sportdb new en =C2=A0 =C2=A0 =C2=A0# for example for the english prem=
+ier league
+<br>
+<br>. Cheers.
+<br></blockquote></div></div>
+------=_Part_2179_874101256.1444413685067--
+
+------=_Part_2178_1978822500.1444413685067--
+

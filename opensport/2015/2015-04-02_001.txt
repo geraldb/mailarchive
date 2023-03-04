@@ -1,0 +1,97 @@
+From 2559916900352@xxx Tue Jun 16 00:16:39 +0000 2015
+X-GM-THRID: 2563139174400
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,2615629f45ad8310,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.52.137.141 with SMTP id qi13mr28548858vdb.5.1427968880846;
+        Thu, 02 Apr 2015 03:01:20 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.31.82 with SMTP id f79ls524555iof.11.gmail; Thu, 02 Apr
+ 2015 03:01:20 -0700 (PDT)
+X-Received: by 10.68.134.66 with SMTP id pi2mr54306910pbb.9.1427968880444;
+        Thu, 02 Apr 2015 03:01:20 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qg0-x234.google.com (mail-qg0-x234.google.com. [2607:f8b0:400d:c04::234])
+        by gmr-mx.google.com with ESMTPS id z1si863075qcn.2.2015.04.02.03.01.20
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 02 Apr 2015 03:01:20 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c04::234 as permitted sender) client-ip=2607:f8b0:400d:c04::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c04::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qg0-x234.google.com with SMTP id p97so65120291qge.1
+        for <opensport@googlegroups.com>; Thu, 02 Apr 2015 03:01:20 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=NoFKoxmRNx0TopyuDy8Y8rS2DvjPXbESHafYXOefJxE=;
+        b=DTTf+hupHoR0I4AqvksUTqwxcbhG5AiXcT8+aEjODyFKHO46f4jBc8IZz2prLvFfcB
+         jVYLrfTrxklnJyLhCOBT05KJ2opKAOZo069DxuKJRr/Puebwz9HnU5zyxYJNf31kMeoJ
+         62Fz9OBmtEwaG/2lkOY9qFQQny6XZWPc//HCGxiMd8NO0XG1aDyojDo9d9nf8VUvct5s
+         02234MPkiFyvdtY00Ex/htxmk3m65mBWmguOEZ8VjG+vXdyXlTo98lKgT8ZE1s5CYf9v
+         vLRAXcyg0m/IcmmxV/BCRZr3W9auwKKuAzySSAXAOBtVCdwA1suQu4zuPFBHnfGsSsf3
+         37Bg==
+MIME-Version: 1.0
+X-Received: by 10.55.52.14 with SMTP id b14mr44441702qka.63.1427968880299;
+ Thu, 02 Apr 2015 03:01:20 -0700 (PDT)
+Received: by 10.229.25.131 with HTTP; Thu, 2 Apr 2015 03:01:20 -0700 (PDT)
+Date: Thu, 2 Apr 2015 12:01:20 +0200
+Message-ID: <CAAxEZd__TE8aP5x-59NMD7Ty_8RzNOA9+jw-JB-GntZ0QxQjBg@mail.gmail.com>
+Subject: New Repo /auto - Auto-Build football.dbs and Football Almanacs
+ (Books) W/ Single Command
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: Still early and rough - the new /auto repo [1] lets you
+(auto-)build football.dbs and Football Almanacs (books) with a single
+command e.g.
+
+ $ rake build SETUP=worldcup
+
+  This will:
+
+ - Fetch all (required) world and football datasets (using a Datafile)
+ - Build the football.db from scratch
+ - Fetch the football book template pack (using a Bookfile)
+ - Generate all book pages
+ - Run the static site generator (jekyll) to convert all
+templates/pages to hypertext (HTML)
+
+   Open up /book/book.html for an all-in-one page version or
+/book/index.html for a multi-page version.
+
+  Run
+
+  $ ./build_all
+
+   To build yourself more than a dozen football.dbs and books -
+datasets include so far:
+
+ worldcup, worldcup2014,
+ top, top2014-15,
+ cl2014-15,
+ en2014-15, en
+ de2014-15, de
+ es2014-15, es
+ it2014-15, it
+ fr2014-15, fr
+ at2014-15, at
+
+   If you try out the new script / machinery let us know how it goes.
+As always questions and comments welcome.
+
+   Cheers.
+
+[1] github.com/openfootball/auto
+
+PS: If you try it, make sure you have the latest (required) gems installed e.g.
+$ gem install bookfile
+$ gem install bookman
+and so on
+

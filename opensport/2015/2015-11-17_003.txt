@@ -1,0 +1,57 @@
+From 6218169948303261696@xxx Tue Nov 17 17:15:11 +0000 2015
+X-GM-THRID: 6218169194489315328
+X-Received: by 10.50.142.66 with SMTP id ru2mr1568741igb.4.1447780511517;
+        Tue, 17 Nov 2015 09:15:11 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.156.17 with SMTP id f17ls634027ioe.50.gmail; Tue, 17 Nov
+ 2015 09:15:10 -0800 (PST)
+X-Received: by 10.66.240.206 with SMTP id wc14mr38473610pac.16.1447780510790;
+        Tue, 17 Nov 2015 09:15:10 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22e.google.com (mail-io0-x22e.google.com. [2607:f8b0:4001:c06::22e])
+        by gmr-mx.google.com with ESMTPS id z1si927127igw.3.2015.11.17.09.15.10
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 17 Nov 2015 09:15:10 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) client-ip=2607:f8b0:4001:c06::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x22e.google.com with SMTP id r85so24984266ioi.1
+        for <opensport@googlegroups.com>; Tue, 17 Nov 2015 09:15:10 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=picC8mq44cdp+CtEAtyxy2GNVMHiJ31skMoo/S9aqH0=;
+        b=wEiWh66iLXW5RuL11EW1BRkTxQcxSNaqpHwZ0/57wyKLp0SFpW7B0GV6SZ61iFQTfd
+         OrGghl7/7LDrP+jMnMp6N6Mkt/1Gpyed0y6rOMBj1+5YP37lD4g/7Be3wnErohKMnQau
+         TROMASG7o9GJnwojRZlQxxx8bZ01gn6jhT7cBwwQoO0u/maAb5pMmM37lMJGHZKXs42T
+         ZS6uJ72CbMnV3Iub1OkaY5UunZy17NEhaAqfFJLnnSCumSw8Txfys6apqAzbSSbRqVQf
+         jd+NrHrNR3D+xbHHHTpcTocXqmrZuZGCAs0OrC0huPzazhV4u8XlI8xDeMSky4vDbnKS
+         FtXQ==
+MIME-Version: 1.0
+X-Received: by 10.107.170.213 with SMTP id g82mr37134466ioj.178.1447780510640;
+ Tue, 17 Nov 2015 09:15:10 -0800 (PST)
+Received: by 10.107.140.12 with HTTP; Tue, 17 Nov 2015 09:15:10 -0800 (PST)
+In-Reply-To: <6ada6859-561d-44b0-a896-0fe34aa51eb4@googlegroups.com>
+References: <6ada6859-561d-44b0-a896-0fe34aa51eb4@googlegroups.com>
+Date: Tue, 17 Nov 2015 18:15:10 +0100
+Message-ID: <CAAxEZd_VV0XWz5RKzrAb_+W45a-qUOoZUN2tPtxxMONbzVe-wg@mail.gmail.com>
+Subject: Re: [opensport] Request for sport API
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    Joe Kampschmidt has put togheter a detailed page titled
+"Guide to Football/Soccer data and APIs" [1]  What leagues are you
+looking?  Cheers.
+
+PS: For the major football leagues in Europe, see the football.json service.
+
+[1] www.jokecamp.com/blog/guide-to-football-and-soccer-data-and-apis
+[2] github.com/openfootball/football.json
+

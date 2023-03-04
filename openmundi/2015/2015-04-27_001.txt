@@ -1,0 +1,59 @@
+From 418464661504@xxx Mon Apr 27 14:27:22 +0000 2015
+X-GM-THRID: 417908916224
+X-Received: by 10.42.10.6 with SMTP id o6mr21275746ico.27.1430144841816;
+        Mon, 27 Apr 2015 07:27:21 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.81.234 with SMTP id f97ls2848708qgd.17.gmail; Mon, 27 Apr
+ 2015 07:27:21 -0700 (PDT)
+X-Received: by 10.236.44.101 with SMTP id m65mr20961520yhb.46.1430144841652;
+        Mon, 27 Apr 2015 07:27:21 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qg0-x233.google.com (mail-qg0-x233.google.com. [2607:f8b0:400d:c04::233])
+        by gmr-mx.google.com with ESMTPS id k6si2010615qca.0.2015.04.27.07.27.21
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 27 Apr 2015 07:27:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c04::233 as permitted sender) client-ip=2607:f8b0:400d:c04::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c04::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qg0-x233.google.com with SMTP id i89so50037775qgf.1
+        for <openmundi@googlegroups.com>; Mon, 27 Apr 2015 07:27:21 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=j1YbMl7njU26KVJVb+wHIiFqZAG/7W35Tpj9XXVzhUg=;
+        b=INlNHt8X3ARMcKZIxcCO5bYulMZAPYyMaDwk1yGzWhyYoEMegckOvk54lyPod4Y5Gt
+         QAesAGUwlbpMK2kcsOuMM4MwIB/45ZbW2+W+vAIHSwRn7Fz6dXRwgWTeO1C3rULjLCTG
+         tHQbBpdQdp9Vfn7l04AQkRAjxa/Y2scgIaJmXHStXoCT/p4tGt6Q3RUJn821ExUvP2gH
+         eTQSi5+njpidQO6hhuyaoYQaJFYiosAZ6TfkPqMwOQ0UMZkP/SNrbLK1vAkVknAww/91
+         2NusV0r28iDX6A9/2XXwO0weV9zYo1fUJLagl++4r4lIcuDUDGWzTacUSVQwXoADZM7w
+         32nQ==
+MIME-Version: 1.0
+X-Received: by 10.140.95.208 with SMTP id i74mr7380518qge.51.1430144841577;
+ Mon, 27 Apr 2015 07:27:21 -0700 (PDT)
+Received: by 10.229.5.6 with HTTP; Mon, 27 Apr 2015 07:27:21 -0700 (PDT)
+Date: Mon, 27 Apr 2015 16:27:21 +0200
+Message-ID: <CAAxEZd-TGZMrH6fmg3SeqoFVPtaiopNgmHwqHoDppHbOSU08Mg@mail.gmail.com>
+Subject: awesome-world - A collection of awesome world (countries, cities,
+ flags, codes, etc.) datasets
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've started a new awesome list in the tradition of
+awesome-<you-name-it> on GitHub. What's news?
+
+  The awesome-world [1] repo collects awesome world datasets (e.g. for
+countries, regions, cities, oceans, rivers, latitude/longitude, maps,
+flags, codes etc.)
+
+   Still early and rough. Anything missing? Contributions welcome.
+
+  Cheers.
+
+[1] github.com/planetopendata/awesome-world
+

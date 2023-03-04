@@ -1,0 +1,165 @@
+From 592244113408@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 584561197056
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,386518f236493d23
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.204.39.201 with SMTP id h9ls240355bke.1.p; Sun, 07 Mar 2010 
+	10:00:42 -0800 (PST)
+Received: by 10.204.130.199 with SMTP id u7mr188146bks.15.1267984842445;
+        Sun, 07 Mar 2010 10:00:42 -0800 (PST)
+Received: by 10.204.130.199 with SMTP id u7mr188145bks.15.1267984842361;
+        Sun, 07 Mar 2010 10:00:42 -0800 (PST)
+Return-Path: <alex.boisvert@gmail.com>
+Received: from mail-ww0-f52.google.com (mail-ww0-f52.google.com [74.125.82.52])
+        by gmr-mx.google.com with ESMTP id v16si1737283bkt.3.2010.03.07.10.00.41;
+        Sun, 07 Mar 2010 10:00:41 -0800 (PST)
+Received-SPF: pass (google.com: domain of alex.boisvert@gmail.com designates 74.125.82.52 as permitted sender) client-ip=74.125.82.52;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of alex.boisvert@gmail.com designates 74.125.82.52 as permitted sender) smtp.mail=alex.boisvert@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by mail-ww0-f52.google.com with SMTP id 15so2595195wwe.39
+        for <webslideshow@googlegroups.com>; Sun, 07 Mar 2010 10:00:41 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:in-reply-to:references
+         :date:message-id:subject:from:to:content-type;
+        bh=lye7BIpLlpR580aHbuJWmQMQGlgjsi53Yenkf3E3Ry8=;
+        b=l6TMctjCjQ1000axP1vnfAIyR0cHW1MGMCLlGo/mBQIw6BD1dQt2uxA7r+eMqodGvM
+         RjkBA2OGf9pJ8ZG+mmGoLtGYNkme9RgevQiyANr0yh6rjRvBTQIRBxgNSHavrGOKTBZH
+         KzSYfNL7AuKQD+EtIZdj7E+r8KPeEW0jQkEY4=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        b=p4UepxjkbwaQlFG5jAgRN/FTa9x13R9HZwl/b4kbPIDF7l4mTd9OyTRd25m360FqF4
+         W6ZkkMCXHpk0LLRzxPJ0UTe5eO5PPyhrAwaR3HXGpCy1hb9spgb8rTNXdDJZLjjwkHjV
+         plUH7WqL4IX+h5P6yMwtM6Z6PwzFUU750Iims=
+MIME-Version: 1.0
+Received: by 10.216.91.9 with SMTP id g9mr281331wef.194.1267984840166; Sun, 07 
+	Mar 2010 10:00:40 -0800 (PST)
+In-Reply-To: <abacf3b61003020922l6d34adet262379abafdc0379@mail.gmail.com>
+References: <abacf3b61003020922l6d34adet262379abafdc0379@mail.gmail.com>
+Date: Sun, 7 Mar 2010 10:00:40 -0800
+Message-ID: <4dcd15a91003071000o1af014feg760e34f3da9d981d@mail.gmail.com>
+Subject: Re: [slideshow] Continuous Build System for Slideshows
+From: Alex Boisvert <alex.boisvert@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: multipart/alternative; boundary=0016e6d99f6afa8ebc048139b986
+
+--0016e6d99f6afa8ebc048139b986
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hi Kevin,
+
+Pretty cool.  Thanks for taking the time to put all this in writing.
+
+I don't know if you know... but you can also directly host your generated
+slides on Github by placing the HTML files in the "gh-pages" branch of your
+project and let Github's post-commit hooks do all the work.
+
+Here's an example if you're interested,
+
+Github project: http://github.com/aboisvert/stopwatch (master branch)
+Documentation: http://aboisvert.github.com/stopwatch/  (generated from
+gh-pages branch)
+
+Slides source: http://github.com/aboisvert/stopwatch/tree/gh-pages/slides/
+Viewable slides: http://aboisvert.github.com/stopwatch/slides/stopwatch.html
+
+cheers,
+alex
+
+
+On Tue, Mar 2, 2010 at 9:22 AM, Kevin Gisi <kevin@kevingisi.com> wrote:
+
+> Hi all,
+>
+> I just posted part one of a tutorial on setting up a continuous build
+> system for your slide decks. While the tutorial uses S9, I'm sure it could
+> easily be adapted to work with most tools. The tutorial demonstrates how you
+> can use GitHub and Heroku to handle all of this at no cost (or bandwidth) to
+> you.
+>
+> I'm hoping to get the second half of the tutorial (using Selenium, Firefox
+> headless to generate PDFs) pushed out in the next few weeks, so I'd love to
+> hear your thoughts and feedback: http://bit.ly/ag9lq6
+>
+> Thanks so much!
+>
+> -Kevin W. Gisi
+> kevin@kevingisi.com | (916) 538-4474
+> http://www.kevingisi.com
+>
+> --
+> You received this message because you are subscribed to the "Free Web Slide
+> Show Alternatives - S5, S9 And Friends" group.
+> To post to this group, send email to webslideshow@googlegroups.com
+> To unsubscribe from this group, send email to
+> webslideshow-unsubscribe@googlegroups.com
+> For more options, visit this group at
+> http://groups.google.com/group/webslideshow?hl=en
+
+--0016e6d99f6afa8ebc048139b986
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hi Kevin,<br><br>Pretty cool.=A0 Thanks for taking the time to put all this=
+ in writing.<br><br>I don&#39;t know if you know... but you can also direct=
+ly host your generated slides on Github by placing the HTML files in the &q=
+uot;gh-pages&quot; branch of your project and let Github&#39;s post-commit =
+hooks do all the work.<br>
+<br>Here&#39;s an example if you&#39;re interested,<br><br>Github project: =
+<a href=3D"http://github.com/aboisvert/stopwatch">http://github.com/aboisve=
+rt/stopwatch</a> (master branch)<br>Documentation: <a href=3D"http://aboisv=
+ert.github.com/stopwatch/">http://aboisvert.github.com/stopwatch/</a>=A0 (g=
+enerated from gh-pages branch)<br>
+<br>Slides source: <a href=3D"http://github.com/aboisvert/stopwatch/tree/gh=
+-pages/slides/">http://github.com/aboisvert/stopwatch/tree/gh-pages/slides/=
+</a><br>Viewable slides: <a href=3D"http://aboisvert.github.com/stopwatch/s=
+lides/stopwatch.html">http://aboisvert.github.com/stopwatch/slides/stopwatc=
+h.html</a><br>
+<br>cheers,<br>alex<br><br><br><div class=3D"gmail_quote">On Tue, Mar 2, 20=
+10 at 9:22 AM, Kevin Gisi <span dir=3D"ltr">&lt;<a href=3D"mailto:kevin@kev=
+ingisi.com">kevin@kevingisi.com</a>&gt;</span> wrote:<br><blockquote class=
+=3D"gmail_quote" style=3D"border-left: 1px solid rgb(204, 204, 204); margin=
+: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+Hi all,<div><br></div><div>I just posted part one of a tutorial on setting =
+up a continuous build system for your slide decks. While the tutorial uses =
+S9, I&#39;m sure it could easily be adapted to work with most tools. The tu=
+torial demonstrates how you can use GitHub and Heroku to handle all of this=
+ at no cost (or bandwidth) to you.</div>
+
+<div><br></div><div>I&#39;m hoping to get the second half of the tutorial (=
+using Selenium, Firefox headless to generate PDFs) pushed out in the next f=
+ew weeks, so I&#39;d love to hear your thoughts and feedback:=A0<span style=
+=3D"font-family: &#39;Lucida Grande&#39;,sans-serif; font-size: 14px; color=
+: rgb(51, 51, 51); line-height: 16px;"><a href=3D"http://bit.ly/ag9lq6" rel=
+=3D"nofollow" style=3D"margin: 0px; padding: 0px; text-decoration: underlin=
+e; color: rgb(0, 132, 180);" target=3D"_blank">http://bit.ly/ag9lq6</a></sp=
+an></div>
+
+<div><br></div><div>Thanks so much!</div><div><br clear=3D"all">-Kevin W. G=
+isi<br><a href=3D"mailto:kevin@kevingisi.com" target=3D"_blank">kevin@kevin=
+gisi.com</a> | (916) 538-4474<br><a href=3D"http://www.kevingisi.com" targe=
+t=3D"_blank">http://www.kevingisi.com</a><br>
+
+
+</div>
+
+<p></p>
+
+-- <br>
+You received this message because you are subscribed to the &quot;Free Web =
+Slide Show Alternatives - S5, S9 And Friends&quot; group.<br>
+To post to this group, send email to <a href=3D"mailto:webslideshow@googleg=
+roups.com" target=3D"_blank">webslideshow@googlegroups.com</a><br>
+To unsubscribe from this group, send email to<br>
+<a href=3D"mailto:webslideshow-unsubscribe@googlegroups.com" target=3D"_bla=
+nk">webslideshow-unsubscribe@googlegroups.com</a><br>
+For more options, visit this group at<br>
+<a href=3D"http://groups.google.com/group/webslideshow?hl=3Den" target=3D"_=
+blank">http://groups.google.com/group/webslideshow?hl=3Den</a></blockquote>=
+</div><br>
+
+--0016e6d99f6afa8ebc048139b986--
+

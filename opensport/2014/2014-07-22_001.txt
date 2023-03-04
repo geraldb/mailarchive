@@ -1,0 +1,66 @@
+From 1699006644224@xxx Tue Jun 16 00:16:58 +0000 2015
+X-GM-THRID: 1591517118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.27.2 with SMTP id p2mr370521lag.8.1406038507715;
+        Tue, 22 Jul 2014 07:15:07 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.104.2 with SMTP id ga2ls584582wib.2.gmail; Tue, 22 Jul
+ 2014 07:15:06 -0700 (PDT)
+X-Received: by 10.180.36.38 with SMTP id n6mr1082886wij.0.1406038506948;
+        Tue, 22 Jul 2014 07:15:06 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22a.google.com (mail-wi0-x22a.google.com [2a00:1450:400c:c05::22a])
+        by gmr-mx.google.com with ESMTPS id hm4si87550wib.3.2014.07.22.07.15.06
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 22 Jul 2014 07:15:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22a as permitted sender) client-ip=2a00:1450:400c:c05::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x22a.google.com with SMTP id f8so5920641wiw.1
+        for <opensport@googlegroups.com>; Tue, 22 Jul 2014 07:15:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=xEpFwCCpMQtXIi/95M4/i3wwvDaMSLMt7NOFLiJLv10=;
+        b=i/73fhh1AoDDG5CRfAwXfOzAJuMzfusAhHoy/I1ri2WZz1zJb+z8keZga4RxajTpBi
+         kqE1mwz9OXJ7z1BQe3CcohmdXLyf5f2HugqICyfD/ZUkts2KD/sJri5SBvCTrvjnqy45
+         MGllEQk6mgHUVp1wAsJQAVlsl577TAXRvy8EFCT1GAA/j/7kndCFxNJMw3BKL8fvkfmA
+         4O1uiDzlVdR9ev/sYwmERC8vgytGXq7GCgRKaEqS+5ozQZLvXmVuv/aHk+uMyxbg8tDP
+         hiQ4E1TYqv36B50iUmRK6fPiIWD26GDl4lqNmgGsNjHWLYlDeQ3STYAZEXT4GADk+W91
+         LUBA==
+MIME-Version: 1.0
+X-Received: by 10.180.35.34 with SMTP id e2mr15573186wij.12.1406038506873;
+ Tue, 22 Jul 2014 07:15:06 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Tue, 22 Jul 2014 07:15:06 -0700 (PDT)
+In-Reply-To: <CANEDzNpAaL-2oWLyQ7HpHhnz1=H8Xx+ajefJq4WOPhBpsygHvg@mail.gmail.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+	<CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+	<3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+	<CAAxEZd9E7zgoReL0RprdZxXKLkBKvC5xVTNYUgFfsm02WZq=aQ@mail.gmail.com>
+	<16257216-0d9c-4d01-9f36-b00d26a612e2@googlegroups.com>
+	<CAAxEZd_oN6Z5nKLG1-znCwf7W_yEhQ-yyns0jxr5KVepFCmKHw@mail.gmail.com>
+	<c3e24314-de47-456d-bfd9-8973c1e1809f@googlegroups.com>
+	<CAAxEZd_EHOT-A-W5nFv8j6ZbvtAp+oKeJ=20XTw=wj625A3T3w@mail.gmail.com>
+	<CANEDzNpAaL-2oWLyQ7HpHhnz1=H8Xx+ajefJq4WOPhBpsygHvg@mail.gmail.com>
+Date: Tue, 22 Jul 2014 16:15:06 +0200
+Message-ID: <CAAxEZd9wq+f_71pMTChpmQ5p00DcFXjiQEONtS1OLKiVdFBREA@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   I'd say do NOT worry too much. Just keep going and change the code
+as you need (and if you have duplicate code - move to a lib/module for
+(re)use etc as you go along).  As the saying goes: It's hard to
+predict the future (unless you code it yourself).   Great stuff.  Do
+it the way that what works best for you. Keep it up.  Cheers.
+

@@ -1,0 +1,73 @@
+From 63611863040@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 50610569216
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,f5aea9e21ab38c34
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.140.186.20 with SMTP id j20mr613511rvf.9.1216142671738;
+        Tue, 15 Jul 2008 10:24:31 -0700 (PDT)
+Return-Path: <geraldbauer2007@gmail.com>
+Received: from yx-out-2324.google.com (yx-out-2324.google.com [74.125.44.30])
+        by mx.google.com with ESMTP id 22si6702958yxr.2.2008.07.15.10.24.31;
+        Tue, 15 Jul 2008 10:24:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of geraldbauer2007@gmail.com designates 74.125.44.30 as permitted sender) client-ip=74.125.44.30;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of geraldbauer2007@gmail.com designates 74.125.44.30 as permitted sender) smtp.mail=geraldbauer2007@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by yx-out-2324.google.com with SMTP id 8so2001156yxb.51
+        for <webslideshow@googlegroups.com>; Tue, 15 Jul 2008 10:24:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type
+         :content-transfer-encoding:content-disposition:references;
+        bh=0buTM91HJH0FIKHFkUTl4y/VbyEgCSy1fF8CItkgJNc=;
+        b=dXULekqTUciRY0yce779fC0lrNI7OlxHtE0Pyj1q7RQfEcL6yaUkHkw+flElsri4i4
+         Zpljct4yW/uB9KgizXV1R6ftwMP3BQlXal3tXxMsa3KUF6e1OkksZE4MANR8Eld4Bioc
+         H/Vc3o7qDK457hYyR+VM08A79sSVxNhOyxukE=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:content-transfer-encoding:content-disposition
+         :references;
+        b=EEVar0MycoR00zsdD0OwIRbc6TNcpaTXkYR8Zv8ltZzBZHg+HKz0JYgudgIF52The1
+         LKjOn4vJfGQP6YbonOfhNKqP/xrNZ+BtQkUF3Yka4An2dl545jqIx+AIqk31914AsQGS
+         mtvzsZJZ0tFPryhWhqVBBN5ehDd0NP+SWUJxY=
+Received: by 10.115.77.3 with SMTP id e3mr19404669wal.43.1216142670425;
+        Tue, 15 Jul 2008 10:24:30 -0700 (PDT)
+Received: by 10.114.75.11 with HTTP; Tue, 15 Jul 2008 10:24:29 -0700 (PDT)
+Message-ID: <7e7cb8940807151024y341d27b0yd78a1e116a5adc86@mail.gmail.com>
+Date: Tue, 15 Jul 2008 10:24:29 -0700
+From: "Gerald Bauer" <geraldbauer2007@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow] escaping html and line feeds
+In-Reply-To: <487C64A3.10908@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <487C64A3.10908@gmail.com>
+
+Hello Jeff,
+
+>  I'm having problems using normal HTML in slideshow.  It looks like
+> it's getting escaped to be &lt, &gt etc.
+
+   Your HTML snippets only get escaped if you put them inside code
+blocks (e.g. @ .. @ or {{{ ... }}} ). I might be mistaken.
+
+>  Also, the file is getting
+> filled with what I think are windows style line feeds (^M in vim...).
+> Are either of these supposed to be happening?  I'll work on them both,
+> but I don't want to duplicate effort if someone is already doing this.
+
+  Thanks for highlighting the line feeds issue. I'm actually currently
+using a Windows notebook for development (sorry - still having trouble
+with getting my wireless card working with Ubuntu ;-) but since I use
+the Komodo Edit (text editor) I will change the line ending settings
+and commit the update with the next release.  I wasn't aware it's an
+issue (other than for the binary startup script).
+
+  Cheers.
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.wordpress.com
+

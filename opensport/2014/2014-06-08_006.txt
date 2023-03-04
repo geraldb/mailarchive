@@ -1,0 +1,120 @@
+From 1106445860864@xxx Tue Jun 16 00:17:02 +0000 2015
+X-GM-THRID: 1082367410176
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,137db175b4bdf381
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.80.40 with SMTP id o8mr2028402obx.35.1402248742318;
+        Sun, 08 Jun 2014 10:32:22 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.26.51 with SMTP id 48ls1418353qgu.23.gmail; Sun, 08 Jun
+ 2014 10:32:22 -0700 (PDT)
+X-Received: by 10.140.27.40 with SMTP id 37mr3914qgw.24.1402248742113;
+        Sun, 08 Jun 2014 10:32:22 -0700 (PDT)
+X-Google-Doc-Id: 5a922012d9e0bd9f
+X-Google-Web-Client: true
+Date: Sun, 8 Jun 2014 10:32:21 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <27ad22b6-a962-4162-8942-bb54f4063814@googlegroups.com>
+In-Reply-To: <bd2092ea-4215-4fee-a1ba-fff042faf536@googlegroups.com>
+References: <bd2092ea-4215-4fee-a1ba-fff042faf536@googlegroups.com>
+Subject: Re: What kind of text format are you using?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1736_6708575.1402248741743"
+X-Google-Token: EKW80pwFfW5cle0g-AE0
+X-Google-IP: 188.22.249.181
+
+------=_Part_1736_6708575.1402248741743
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1737_8140900.1402248741743"
+
+------=_Part_1737_8140900.1402248741743
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  Thanks for your interest in football.db. Good questions. Sorry the 
+formats at first seem confusing. Why use custom formats and not JSON, CSV 
+etc.?
+
+   The idea of football.db is that you can import your data from 
+easy-to-read and easy-to-write plain text files. It works like a wiki, that 
+is, the definite source file are plain text file - some using tiny domain 
+specific languages (mostly w/ pattern matching paser that let you use names 
+for reference e.g. Austria instead of AUT or FC Barcelona instead of fbc 
+etc.)  The idea again is to make the source  as easy-to-write as possible 
+but also again easy-to-read.  
+
+   Sorry, not sure if this makes sense. Anyways, once in the database you 
+can export to any format you like e.g. CSV, JSON, etc.
+
+ > What kind of format are you using here? Is this just a custom whitespace 
+delimited format?
+
+  Yes, this is a custom mini language - you can see the reader / parser 
+here [1] .  The main idea is to match the player name from the player 
+database [2]. Why?  The player name is just a reference (will not include 
+birth date, birth place, height, etc.) - all this you will get from the 
+player database) once the name match.
+
+  I hope this makes sense. Again the idea is NOT to make it complicated but 
+actually easier.  JSON is a great format for data export or event data 
+import but not for hand-editing, thus, football.db is NOT using JSON as 
+it's wiki source.
+ 
+  Note, if you import data into the database tables directly you CAN of 
+course use json - but you have to write your own little importer.   Hope 
+this makes sense. Cheers.
+
+PS: The squad format is simple - a record for the world cup has three fields
+
+- jersey number (optional)   => must be first in line wrapped in ()  e.g.  
+(1)  (3) etc.
+- name of player  - needs to match player name in player database
+- position (optional)  - for now  GK, DF, etc.
+
+[1] 
+github.com/sportdb/sport.db.ruby/blob/master/lib/sportdb/readers/national_team.rb
+[2] github.com/openfootball/players
+
+------=_Part_1737_8140900.1402248741743
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>&nbsp; Thanks for your interest in football.=
+db. Good questions. Sorry the formats at first seem confusing. Why use cust=
+om formats and not JSON, CSV etc.?<br><br>&nbsp;&nbsp; The idea of football=
+.db is that you can import your data from easy-to-read and easy-to-write pl=
+ain text files. It works like a wiki, that is, the definite source file are=
+ plain text file - some using tiny domain specific languages (mostly w/ pat=
+tern matching paser that let you use names for reference e.g. Austria inste=
+ad of AUT or FC Barcelona instead of fbc etc.)&nbsp; The idea again is to m=
+ake the source&nbsp; as easy-to-write as possible but also again easy-to-re=
+ad.&nbsp; <br><br>&nbsp;&nbsp; Sorry, not sure if this makes sense. Anyways=
+, once in the database you can export to any format you like e.g. CSV, JSON=
+, etc.<br><br>&nbsp;&gt; What kind of format are you using here? Is this ju=
+st a custom whitespace delimited format?<br><br>&nbsp; Yes, this is a custo=
+m mini language - you can see the reader / parser here [1] .&nbsp; The main=
+ idea is to match the player name from the player database [2]. Why?&nbsp; =
+The player name is just a reference (will not include birth date, birth pla=
+ce, height, etc.) - all this you will get from the player database) once th=
+e name match.<br><br>&nbsp; I hope this makes sense. Again the idea is NOT =
+to make it complicated but actually easier.&nbsp; JSON is a great format fo=
+r data export or event data import but not for hand-editing, thus, football=
+.db is NOT using JSON as it's wiki source.<br>&nbsp;<br>&nbsp; Note, if you=
+ import data into the database tables directly you CAN of course use json -=
+ but you have to write your own little importer.&nbsp;&nbsp; Hope this make=
+s sense. Cheers.<br><br>PS: The squad format is simple - a record for the w=
+orld cup has three fields<br><br>- jersey number (optional) &nbsp; =3D&gt; =
+must be first in line wrapped in ()&nbsp; e.g.&nbsp; (1)&nbsp; (3) etc.<br>=
+- name of player&nbsp; - needs to match player name in player database<br>-=
+ position (optional)&nbsp; - for now&nbsp; GK, DF, etc.<br><br>[1] github.c=
+om/sportdb/sport.db.ruby/blob/master/lib/sportdb/readers/national_team.rb<b=
+r>[2] github.com/openfootball/players<br> </div>
+------=_Part_1737_8140900.1402248741743--
+
+------=_Part_1736_6708575.1402248741743--
+

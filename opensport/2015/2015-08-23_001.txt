@@ -1,0 +1,96 @@
+From 6186126510506639360@xxx Sun Aug 23 08:50:17 +0000 2015
+X-GM-THRID: 6185793007810248704
+X-Received: by 10.70.98.131 with SMTP id ei3mr16188004pdb.9.1440319817267;
+        Sun, 23 Aug 2015 01:50:17 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.171.226 with SMTP id ax2ls453igc.43.gmail; Sun, 23 Aug 2015
+ 01:50:16 -0700 (PDT)
+X-Received: by 10.70.132.70 with SMTP id os6mr16193199pdb.7.1440319816802;
+        Sun, 23 Aug 2015 01:50:16 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22f.google.com (mail-io0-x22f.google.com. [2607:f8b0:4001:c06::22f])
+        by gmr-mx.google.com with ESMTPS id i10si657666igh.3.2015.08.23.01.50.16
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 23 Aug 2015 01:50:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) client-ip=2607:f8b0:4001:c06::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by iodt126 with SMTP id t126so120920667iod.2
+        for <opensport@googlegroups.com>; Sun, 23 Aug 2015 01:50:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=mPtYHGtG7bkIOHf/sFynkIEA3psalCOAid54mU93C3w=;
+        b=XBNgKN0JojB0zlKQQqfHV1aOGxvKr1+tQ9JZ73HO3jL9BIe5ZCoe9OJ9SGAZ66oZUO
+         IMI/CDhFg8afGCCXhuIOVzBxELVK8nCPu2o5MIgA1zi76rxbdoI0pa/TFAf4gqlyxOgv
+         klV8GM0Yf6JBS4SkQZ0YvviUE+vOOKhUEz0oIUG/ZzfLq5jM0kiws6yen1SoGMN0oqlo
+         wqgAPWQ164dF6EIxO9pQIf1zV5IpoD0CM3bgR/d7EP04GlAdPmEVjokUPYjnUw2h4dGV
+         KwTWaARyRGQGm9RxwsUhuPulBImXQxGsv4D4ixSu+3AnDo1bOS7B8CNb6HCZkM7sXsB4
+         UIbQ==
+MIME-Version: 1.0
+X-Received: by 10.107.13.3 with SMTP id 3mr12731510ion.70.1440319816662; Sun,
+ 23 Aug 2015 01:50:16 -0700 (PDT)
+Received: by 10.107.142.205 with HTTP; Sun, 23 Aug 2015 01:50:16 -0700 (PDT)
+In-Reply-To: <fd122790-128b-496a-9018-2f536e57c176@googlegroups.com>
+References: <fd122790-128b-496a-9018-2f536e57c176@googlegroups.com>
+Date: Sun, 23 Aug 2015 10:50:16 +0200
+Message-ID: <CAAxEZd-xZQz7aeaMqa65f3dY60nBSpGHujHGJxfqA=S57Wy5QQ@mail.gmail.com>
+Subject: Re: [opensport] Russian league for football.db
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com, vincentti@gmail.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+    As a follow-up to get you started with the import into an SQL database:
+
+   The easiest way is to use a Datafile [1], for example, create a new
+directory/folder
+   and put in an empty Datafile.
+
+   Now add something like:
+
+  inline do
+    WorldDb::Model::Country.parse( 'ru', 'Russia', 'RUS', '1 km=C2=B2', '1'=
+ )
+  end
+
+  football 'Kaspi/ru-russia'
+
+'
+  Now try to run it.
+
+  $ sportdb --verbose build            # will default to use the
+(local) Datafile; use the verbose debug switch
+
+  It should download your datasets as a zip archive.
+
+  As a next step you will have to add a setups/all.txt to your repo e.g.
+
+setups/all.txt:
+
+   ru-russia!/leagues
+   ru-russia!/teams
+   ru-russia!/2014-15/rflp
+   ru-russia!/2015-16/rflp
+
+ And than retry (best to clean out the local directory e.g. remove
+sport.db etc.) and the import should start working for real - next up
+is fixingthe remaing issues poping up. For example, rename your
+russian flp from teams.yml  to rflp.yml in 2014-15 and 2015-16 and
+make sure you include a fixtures block (matching your fixtures/match
+schedule/results files) e.g.
+
+fixtures:
+-  rflp-i
+-  rflp-ii
+
+  Let us know how it goes or if you continue. Keep it up. Cheers.
+
+[1] github.com/openfootball/datafile
+

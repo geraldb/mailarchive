@@ -1,0 +1,82 @@
+From 6164276531482853376@xxx Thu Jun 25 11:41:12 +0000 2015
+X-GM-THRID: 6164276531015188480
+X-Received: by 10.129.115.3 with SMTP id o3mr60128335ywc.6.1435232472430;
+        Thu, 25 Jun 2015 04:41:12 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.6.12 with SMTP id 12ls811768iog.83.gmail; Thu, 25 Jun 2015
+ 04:41:12 -0700 (PDT)
+X-Received: by 10.70.96.41 with SMTP id dp9mr58776315pdb.13.1435232472025;
+        Thu, 25 Jun 2015 04:41:12 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x229.google.com (mail-ie0-x229.google.com. [2607:f8b0:4001:c03::229])
+        by gmr-mx.google.com with ESMTPS id g7si191818igr.0.2015.06.25.04.41.11
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 25 Jun 2015 04:41:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::229 as permitted sender) client-ip=2607:f8b0:4001:c03::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ie0-x229.google.com with SMTP id mu5so52241271ieb.1
+        for <opensport@googlegroups.com>; Thu, 25 Jun 2015 04:41:11 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=tbcQlRUKRPa6ZYu3LJtRMLaCFrBWW5/S7vC5+E8m6pc=;
+        b=JWnHcbodQQOKRiyvEVB4Hj9ktmt71Ra+Znbt4MqV6yQSKsWwJXQU8DasMwBgl1wZvs
+         SBPrNc4s0CGg/3sm5vOYN+2LlJzsX+4jAQoVVKifK8glg3robF3StpEyc/kUi/xYbcZd
+         G+OiKM4iKoeY9f6J3dge5UQ4eYbBqzBo9EH6+J3OJVG5FU0FRt8CC6E0cm/V8tRpO0s0
+         OZnSRRHKANDbQq6dwLC1UN4q9ErIvAiqLx5fWCfn0MrkVABlKVTR3oGfl+6JhBke+Wwo
+         Eu1ybBjEbIbzrD0TTtuQcoy5wpVKNOxER5ak3iKjTZqypKv7es9q+/6WwzWnlRLu2WPN
+         qzAA==
+MIME-Version: 1.0
+X-Received: by 10.42.90.138 with SMTP id k10mr19835402icm.86.1435232471915;
+ Thu, 25 Jun 2015 04:41:11 -0700 (PDT)
+Received: by 10.107.15.79 with HTTP; Thu, 25 Jun 2015 04:41:11 -0700 (PDT)
+Date: Thu, 25 Jun 2015 13:41:11 +0200
+Message-ID: <CAAxEZd9rwz0qsTKWTjiEnJjSPO1vHsdQm8JZSGQv+TCsFuT0eA@mail.gmail.com>
+Subject: whatson gem - Use $ kickoff to list upcoming football tournaments on
+ command line
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I=E2=80=99ve added another dataset to the whatson gem [1] that lets you l=
+ist
+upcoming football tournaments from around the world. Ever wonder how
+many days to the next World Cup? Just type in your shell:
+
+  $ kickoff
+
+  The command will fetch the event calendar page (from the intertubes)
+[2] and print out:
+
+ Upcoming Football Tournaments:
+
+  NOW ON 18d    Women's World Cup 2015, Sat-Sun Jun/6-Jul/5 (30d) @
+Canada =E2=80=BA World (FIFA)
+  NOW ON 13d    Copa Am=C3=A9rica 2015, Thu-Sat Jun/11-Jul/4 (24d) @ Chile
+=E2=80=BA South America (CONMEBOL)
+
+  in   14d  Gold Cup / Copa de Oro 2015, Tue-Sun Jul/7-26 (20d) @
+United States+Canada =E2=80=BA North America (CONCACAF)
+  in  346d  Copa Am=C3=A9rica 2016, Fri-Sun Jun/3-26 (24d) @ United States
+=E2=80=BA South America (CONMEBOL)
+  in  353d  European Championship (Euro) 2016, Fri-Sun Jun/10-Jul/10
+(31d) @ France =E2=80=BA Europe (UEFA)
+  in 1087d  World Cup 2018, Thu-Sun Jun/14-Jul/15 (32d) @ Russia =E2=80=BA =
+World (FIFA)
+  ...
+
+  and so on. Cheers.
+
+
+[1] github.com/openfootball/calendar
+[2] github.com/textkit/whatson
+

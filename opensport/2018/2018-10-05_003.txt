@@ -1,0 +1,76 @@
+From 6608769833752330240@xxx Fri Oct 05 07:22:14 +0000 2018
+X-GM-THRID: 6605547990025240576
+Date: Fri, 5 Oct 2018 00:22:13 -0700 (PDT)
+From: =?UTF-8?Q?Guillaume_Bleuz=C3=A9?= <guillaumebleuze@hotmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <9d647a28-0ed4-43de-a27e-41a253d23386@googlegroups.com>
+In-Reply-To: <13f7fdc4-ed2d-4d0b-9f2f-fff0c2cf15e1@googlegroups.com>
+References: <13f7fdc4-ed2d-4d0b-9f2f-fff0c2cf15e1@googlegroups.com>
+Subject: Re: Help for a beginner
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_669_1098555118.1538724133888"
+X-Google-Token: EKWi3N0F5gslGNtkvCw0
+X-Google-IP: 193.190.64.17
+
+------=_Part_669_1098555118.1538724133888
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_670_363226779.1538724133889"
+
+------=_Part_670_363226779.1538724133889
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+worldcup.rb is in my dir. And i changed create by create_all
+New error
+
+Traceback (most recent call last):
+        6: from ./build.rb:27:in `<main>'
+        5: from 
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/datafile-0.2.5/lib/datafile/datafile.rb:122:in 
+`download'
+        4: from 
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/datafile-0.2.5/lib/datafile/workers/zip/worker.rb:14:in 
+`download'
+        3: from 
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/datafile-0.2.5/lib/datafile/workers/zip/worker.rb:14:in 
+`each'
+        2: from 
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/datafile-0.2.5/lib/datafile/workers/zip/worker.rb:15:in 
+`block in download'
+        1: from 
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/datafile-0.2.5/lib/datafile/workers/zip/dataset.rb:39:in 
+`download'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/datafile-0.2.5/lib/datafile/workers/zip/dataset.rb:66:in 
+`download_blob': uninitialized constant Datafile::ZipDataset::Fetcher 
+(NameError)
+
+Cheers
+
+------=_Part_670_363226779.1538724133889
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<div>worldcup.rb is in my dir. And i changed create =
+by create_all<br><div>New error</div><div><br></div><div><div>Traceback (mo=
+st recent call last):</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 6: from ./build=
+.rb:27:in `&lt;main&gt;&#39;</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 5: from =
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/datafile-0.2.5/lib/datafile/datafile=
+.rb:122:in `download&#39;</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 4: from C:/=
+Ruby25-x64/lib/ruby/gems/2.5.0/gems/datafile-0.2.5/lib/datafile/workers/zip=
+/worker.rb:14:in `download&#39;</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 3: fr=
+om C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/datafile-0.2.5/lib/datafile/worke=
+rs/zip/worker.rb:14:in `each&#39;</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 2: =
+from C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/datafile-0.2.5/lib/datafile/wor=
+kers/zip/worker.rb:15:in `block in download&#39;</div><div>=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 1: from C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/datafile-0.2.5=
+/lib/datafile/workers/zip/dataset.rb:39:in `download&#39;</div><div>C:/Ruby=
+25-x64/lib/ruby/gems/2.5.0/gems/datafile-0.2.5/lib/datafile/workers/zip/dat=
+aset.rb:66:in `download_blob&#39;: uninitialized constant Datafile::ZipData=
+set::Fetcher (NameError)</div><div><br></div><div>Cheers</div></div></div><=
+/div>
+------=_Part_670_363226779.1538724133889--
+
+------=_Part_669_1098555118.1538724133888--
+

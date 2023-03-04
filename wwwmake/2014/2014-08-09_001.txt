@@ -1,0 +1,66 @@
+From 1518335950848@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1516809224192
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,372547516edb3d92,start
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.20.175 with SMTP id o15mr827491wie.7.1407593388169;
+        Sat, 09 Aug 2014 07:09:48 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.180.39.197 with SMTP id r5ls246526wik.54.canary; Sat, 09 Aug
+ 2014 07:09:47 -0700 (PDT)
+X-Received: by 10.194.235.166 with SMTP id un6mr2653155wjc.2.1407593387531;
+        Sat, 09 Aug 2014 07:09:47 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22a.google.com (mail-wi0-x22a.google.com [2a00:1450:400c:c05::22a])
+        by gmr-mx.google.com with ESMTPS id m15si538705wiw.0.2014.08.09.07.09.47
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 09 Aug 2014 07:09:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22a as permitted sender) client-ip=2a00:1450:400c:c05::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f170.google.com with SMTP id f8so3700877wiw.1
+        for <webslideshow@googlegroups.com>; Sat, 09 Aug 2014 07:09:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=iOP7+BJS85vTQj8FfmPbI4BTm4aywAiCsxO3AFruhwc=;
+        b=tWOprtgqcIkrmKKrPpM3m9XB+KumNANtceGpyMPN7JtOxeB8IYP7jIX8h9Ow97jvSN
+         GfzBmYGUDN5ep7Wd6a3tmE0nv1pX1Wyi7Cb1JKtAJW2doly1Bfl64ADuYtR4j3u1SUT1
+         KF+A0qso7kKsk+46WJI8Av1r5RNatOzhK9RzVFnoMILn8Rd767HjAHb1OdLcUByJb54D
+         ud7grm45eQHjVHyAWHCA8FLd7LINPM/SNXoJugiYmEOrXV5mKWj8tWKP4qTwydM9683a
+         n7RltqHBouJtWN6121O25JEcfTxdcrjCV83j8TxO4t/O15xhKc5NeTwJ4GZpmet3O8Fr
+         Pi/Q==
+MIME-Version: 1.0
+X-Received: by 10.180.97.129 with SMTP id ea1mr11231183wib.29.1407593387421;
+ Sat, 09 Aug 2014 07:09:47 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Sat, 9 Aug 2014 07:09:47 -0700 (PDT)
+Date: Sat, 9 Aug 2014 16:09:47 +0200
+Message-ID: <CAAxEZd9SU3-a1XxcLx94KDGv09PYz5GEt8890vT_+-7Gtu=yCA@mail.gmail.com>
+Subject: Slide Show (S9) - New Repos /samples, /demos, /talks
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've reorganized the website sources[1] a little. The idea is
+to focus more on the documentation. What's news?
+
+  - All 3rd party talk samples (sources only) moved to its own repo,
+that is, /samples [2]
+  - All of my own talks (sources only) moved to its own repo, that is,
+geraldb/talks [3]
+  - All generated HTML slide documents moved to its own repo, that is,
+/demos [4]
+
+   That's it. Cheers.
+
+[1] github.com/slideshow-s9/slideshow-s9.github.io
+[2] github.com/slideshow-s9/samples
+[3] github.com/geraldb/talks
+[4] github.com/slideshow-s9/demos
+

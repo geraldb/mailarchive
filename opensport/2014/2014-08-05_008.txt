@@ -1,0 +1,432 @@
+From 1827225468928@xxx Tue Jun 16 00:16:55 +0000 2015
+X-GM-THRID: 120477188096
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cfd207d2a36fadf3
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.111.170 with SMTP id ij10mr465949obb.6.1407205711213;
+        Mon, 04 Aug 2014 19:28:31 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.143.102 with SMTP id sd6ls214048igb.8.gmail; Mon, 04 Aug
+ 2014 19:28:30 -0700 (PDT)
+X-Received: by 10.50.21.4 with SMTP id r4mr41053ige.5.1407205710493;
+        Mon, 04 Aug 2014 19:28:30 -0700 (PDT)
+X-Google-Doc-Id: a047ad145b15a997
+X-Google-Web-Client: true
+Date: Mon, 4 Aug 2014 19:28:28 -0700 (PDT)
+From: =?UTF-8?B?5qyn5q+F?= <nttdocomo.ouyi@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <8a33976a-2139-41a2-9e72-b5575b9aba0a@googlegroups.com>
+In-Reply-To: <CAAxEZd-y9e+ABPzWn7-i4+=UukifDh+EeR_2drCKx53xCzZjnA@mail.gmail.com>
+References: <42ae00eb-0e90-4168-a288-e8fc44645386@googlegroups.com>
+ <49ad51e9-f5e3-4178-b7bd-63a937e01289@googlegroups.com>
+ <a9cc2851-c44b-4e75-8e91-a02498a73584@googlegroups.com>
+ <CAAxEZd9Mo9TPu=NzunmJ5EOJW8PakGnXpZ1gZg1cbTpNAYUGmg@mail.gmail.com>
+ <CAAxEZd9gsDH=JXu1a944m0ywNpXEJnXyVb5o3Wyz-7+BT53O4w@mail.gmail.com>
+ <643848a3-c618-41ba-9cb0-830b54b2774c@googlegroups.com>
+ <CAAxEZd-y9e+ABPzWn7-i4+=UukifDh+EeR_2drCKx53xCzZjnA@mail.gmail.com>
+Subject: Re: [opensport] Re: Trying to create a mysql database instead of
+ using command tool
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_129_2035950329.1407205708857"
+X-Google-Token: EMyCgZ8FZ--UPjcEFgw0
+X-Google-IP: 74.82.169.71
+
+------=_Part_129_2035950329.1407205708857
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_130_212748205.1407205708857"
+
+------=_Part_130_212748205.1407205708857
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Here is the trace:
+
+[warn] hash reader - found implicit bool (no) for key; adding quotes to=20
+turn into string; see yaml.org/refcard.html=20
+(path=3D../../openmundi/world.db/europe/2-more/continents.yml)
+rake aborted!
+Mysql::Error: Out of range value for column 'tid' at row 1: INSERT INTO=20
+`logs` (`created_at`, `level`, `msg`, `pid`, `tid`, `ts`, `updated_at`)=20
+VALUES (?, ?, ?, ?, ?, ?, ?)
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/connection_adapters/mysql_adapter.rb:497:in=20
+`execute'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/connection_adapters/mysql_adapter.rb:497:in=20
+`block in exec_stmt'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/connection_adapters/abstract_adapter.rb:373:in=20
+`block in log'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/acti=
+ve_support/notifications/instrumenter.rb:20:in=20
+`instrument'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/connection_adapters/abstract_adapter.rb:367:in=20
+`log'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/connection_adapters/mysql_adapter.rb:486:in=20
+`exec_stmt'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/connection_adapters/mysql_adapter.rb:285:in=20
+`exec_query'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/connection_adapters/abstract/database_statements.rb:68:in=20
+`exec_insert'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/connection_adapters/abstract/database_statements.rb:95:in=20
+`insert'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/connection_adapters/abstract/query_cache.rb:14:in=20
+`insert'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/relation.rb:64:in=20
+`insert'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/persistence.rb:502:in=20
+`_create_record'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/attribute_methods/dirty.rb:87:in=20
+`_create_record'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/callbacks.rb:306:in=20
+`block in _create_record'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/acti=
+ve_support/callbacks.rb:82:in=20
+`run_callbacks'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/callbacks.rb:306:in=20
+`_create_record'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/timestamp.rb:57:in=20
+`_create_record'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/persistence.rb:482:in=20
+`create_or_update'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/callbacks.rb:302:in=20
+`block in create_or_update'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/acti=
+ve_support/callbacks.rb:82:in=20
+`run_callbacks'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/callbacks.rb:302:in=20
+`create_or_update'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/persistence.rb:125:in=20
+`save!'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/validations.rb:57:in=20
+`save!'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/attribute_methods/dirty.rb:29:in=20
+`save!'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/transactions.rb:273:in=20
+`block in save!'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/transactions.rb:329:in=20
+`block in with_transaction_returning_status'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/connection_adapters/abstract/database_statements.rb:201:in=20
+`block in transaction'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/connection_adapters/abstract/database_statements.rb:209:in=20
+`within_new_transaction'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/connection_adapters/abstract/database_statements.rb:201:in=20
+`transaction'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/transactions.rb:208:in=20
+`transaction'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/transactions.rb:326:in=20
+`with_transaction_returning_status'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/transactions.rb:273:in=20
+`save!'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/activ=
+e_record/validations.rb:41:in=20
+`create!'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/logutils-0.6.0/lib/logutils/=
+db.rb:44:in=20
+`write'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/logutils-0.6.0/lib/logutils/=
+logger.rb:177:in=20
+`block in write'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/logutils-0.6.0/lib/logutils/=
+logger.rb:177:in=20
+`each'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/logutils-0.6.0/lib/logutils/=
+logger.rb:177:in=20
+`write'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/logutils-0.6.0/lib/logutils/=
+logger.rb:158:in=20
+`warn'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/textutils-0.9.4/lib/textutil=
+s/reader/hash_reader.rb:44:in=20
+`block in initialize'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/textutils-0.9.4/lib/textutil=
+s/reader/hash_reader.rb:43:in=20
+`gsub'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/textutils-0.9.4/lib/textutil=
+s/reader/hash_reader.rb:43:in=20
+`initialize'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/textutils-0.9.4/lib/textutil=
+s/reader/hash_reader_v2.rb:35:in=20
+`new'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/textutils-0.9.4/lib/textutil=
+s/reader/hash_reader_v2.rb:35:in=20
+`each'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/worlddb-2.0.4/lib/worlddb/re=
+ader.rb:135:in=20
+`load_continent_refs'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/worlddb-2.0.4/lib/worlddb/re=
+ader.rb:55:in=20
+`load'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/worlddb-2.0.4/lib/worlddb/re=
+ader.rb:45:in=20
+`block in load_setup'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/textutils-0.9.4/lib/textutil=
+s/reader/fixture_reader.rb:104:in=20
+`block in each'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/textutils-0.9.4/lib/textutil=
+s/reader/fixture_reader.rb:103:in=20
+`each'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/textutils-0.9.4/lib/textutil=
+s/reader/fixture_reader.rb:103:in=20
+`each'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/worlddb-2.0.4/lib/worlddb/re=
+ader.rb:44:in=20
+`load_setup'
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/worlddb-2.0.4/lib/worlddb.rb=
+:99:in=20
+`read_setup'
+/var/www/openfootball/openfootball/build/Rakefile:100:in `block in <top=20
+(required)>'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:236:in `call'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:236:in `block in execute'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:231:in `each'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:231:in `execute'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:175:in `block in=20
+invoke_with_call_chain'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:168:in=20
+`invoke_with_call_chain'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:197:in `block in=20
+invoke_prerequisites'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:195:in `each'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:195:in=20
+`invoke_prerequisites'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:174:in `block in=20
+invoke_with_call_chain'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:168:in=20
+`invoke_with_call_chain'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:161:in `invoke'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:149:in=20
+`invoke_task'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:106:in `block (2=
+=20
+levels) in top_level'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:106:in `each'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:106:in `block in=
+=20
+top_level'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:115:in=20
+`run_with_threads'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:100:in `top_level'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:78:in `block in=20
+run'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:165:in=20
+`standard_exception_handling'
+/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:75:in `run'
+/usr/local/ruby-2.1.2/bin/rake:33:in `<main>'
+
+
+
+
+=E5=9C=A8 2014=E5=B9=B48=E6=9C=884=E6=97=A5=E6=98=9F=E6=9C=9F=E4=B8=80UTC+8=
+=E4=B8=8B=E5=8D=8810=E6=97=B635=E5=88=8631=E7=A7=92=EF=BC=8CGerald Bauer=E5=
+=86=99=E9=81=93=EF=BC=9A
+>
+> Hello,=20
+>    Sorry. Hard to say from your comments. What error do you get? Can=20
+> you post your build script? Cheers.=20
+>
+
+------=_Part_130_212748205.1407205708857
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Here is the trace:<div><br></div><div><div><div class=3D"p=
+rettyprint" style=3D"border: 1px solid rgb(187, 187, 187); word-wrap: break=
+-word; background-color: rgb(250, 250, 250);"><code class=3D"prettyprint"><=
+div class=3D"subprettyprint"><div class=3D"subprettyprint">[warn] hash read=
+er - found implicit bool (no) for key; adding quotes to turn into string; s=
+ee yaml.org/refcard.html (path=3D../../openmundi/world.db/europe/2-more/con=
+tinents.yml)</div><div class=3D"subprettyprint">rake aborted!</div><div cla=
+ss=3D"subprettyprint">Mysql::Error: Out of range value for column 'tid' at =
+row 1: INSERT INTO `logs` (`created_at`, `level`, `msg`, `pid`, `tid`, `ts`=
+, `updated_at`) VALUES (?, ?, ?, ?, ?, ?, ?)</div><div class=3D"subprettypr=
+int">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/=
+active_record/connection_adapters/mysql_adapter.rb:497:in `execute'</div><d=
+iv class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/=
+activerecord-4.1.4/lib/active_record/connection_adapters/mysql_adapter.rb:4=
+97:in `block in exec_stmt'</div><div class=3D"subprettyprint">/usr/local/ru=
+by-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/conn=
+ection_adapters/abstract_adapter.rb:373:in `block in log'</div><div class=
+=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activesu=
+pport-4.1.4/lib/active_support/notifications/instrumenter.rb:20:in `instrum=
+ent'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems=
+/2.1.0/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstra=
+ct_adapter.rb:367:in `log'</div><div class=3D"subprettyprint">/usr/local/ru=
+by-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/conn=
+ection_adapters/mysql_adapter.rb:486:in `exec_stmt'</div><div class=3D"subp=
+rettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1=
+.4/lib/active_record/connection_adapters/mysql_adapter.rb:285:in `exec_quer=
+y'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2=
+.1.0/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract=
+/database_statements.rb:68:in `exec_insert'</div><div class=3D"subprettypri=
+nt">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/a=
+ctive_record/connection_adapters/abstract/database_statements.rb:95:in `ins=
+ert'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems=
+/2.1.0/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstra=
+ct/query_cache.rb:14:in `insert'</div><div class=3D"subprettyprint">/usr/lo=
+cal/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_recor=
+d/relation.rb:64:in `insert'</div><div class=3D"subprettyprint">/usr/local/=
+ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/pe=
+rsistence.rb:502:in `_create_record'</div><div class=3D"subprettyprint">/us=
+r/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_r=
+ecord/attribute_methods/dirty.rb:87:in `_create_record'</div><div class=3D"=
+subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord=
+-4.1.4/lib/active_record/callbacks.rb:306:in `block in _create_record'</div=
+><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/ge=
+ms/activesupport-4.1.4/lib/active_support/callbacks.rb:82:in `run_callbacks=
+'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.=
+1.0/gems/activerecord-4.1.4/lib/active_record/callbacks.rb:306:in `_create_=
+record'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/g=
+ems/2.1.0/gems/activerecord-4.1.4/lib/active_record/timestamp.rb:57:in `_cr=
+eate_record'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/r=
+uby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/persistence.rb:482=
+:in `create_or_update'</div><div class=3D"subprettyprint">/usr/local/ruby-2=
+.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/callback=
+s.rb:302:in `block in create_or_update'</div><div class=3D"subprettyprint">=
+/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/acti=
+ve_support/callbacks.rb:82:in `run_callbacks'</div><div class=3D"subprettyp=
+rint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib=
+/active_record/callbacks.rb:302:in `create_or_update'</div><div class=3D"su=
+bprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4=
+.1.4/lib/active_record/persistence.rb:125:in `save!'</div><div class=3D"sub=
+prettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.=
+1.4/lib/active_record/validations.rb:57:in `save!'</div><div class=3D"subpr=
+ettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.=
+4/lib/active_record/attribute_methods/dirty.rb:29:in `save!'</div><div clas=
+s=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activer=
+ecord-4.1.4/lib/active_record/transactions.rb:273:in `block in save!'</div>=
+<div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gem=
+s/activerecord-4.1.4/lib/active_record/transactions.rb:329:in `block in wit=
+h_transaction_returning_status'</div><div class=3D"subprettyprint">/usr/loc=
+al/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record=
+/connection_adapters/abstract/database_statements.rb:201:in `block in trans=
+action'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/g=
+ems/2.1.0/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abs=
+tract/database_statements.rb:209:in `within_new_transaction'</div><div clas=
+s=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activer=
+ecord-4.1.4/lib/active_record/connection_adapters/abstract/database_stateme=
+nts.rb:201:in `transaction'</div><div class=3D"subprettyprint">/usr/local/r=
+uby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/tra=
+nsactions.rb:208:in `transaction'</div><div class=3D"subprettyprint">/usr/l=
+ocal/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_reco=
+rd/transactions.rb:326:in `with_transaction_returning_status'</div><div cla=
+ss=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/active=
+record-4.1.4/lib/active_record/transactions.rb:273:in `save!'</div><div cla=
+ss=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/active=
+record-4.1.4/lib/active_record/validations.rb:41:in `create!'</div><div cla=
+ss=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/loguti=
+ls-0.6.0/lib/logutils/db.rb:44:in `write'</div><div class=3D"subprettyprint=
+">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/logutils-0.6.0/lib/logutil=
+s/logger.rb:177:in `block in write'</div><div class=3D"subprettyprint">/usr=
+/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/logutils-0.6.0/lib/logutils/logg=
+er.rb:177:in `each'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.=
+2/lib/ruby/gems/2.1.0/gems/logutils-0.6.0/lib/logutils/logger.rb:177:in `wr=
+ite'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems=
+/2.1.0/gems/logutils-0.6.0/lib/logutils/logger.rb:158:in `warn'</div><div c=
+lass=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/text=
+utils-0.9.4/lib/textutils/reader/hash_reader.rb:44:in `block in initialize'=
+</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1=
+.0/gems/textutils-0.9.4/lib/textutils/reader/hash_reader.rb:43:in `gsub'</d=
+iv><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/=
+gems/textutils-0.9.4/lib/textutils/reader/hash_reader.rb:43:in `initialize'=
+</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1=
+.0/gems/textutils-0.9.4/lib/textutils/reader/hash_reader_v2.rb:35:in `new'<=
+/div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.=
+0/gems/textutils-0.9.4/lib/textutils/reader/hash_reader_v2.rb:35:in `each'<=
+/div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.=
+0/gems/worlddb-2.0.4/lib/worlddb/reader.rb:135:in `load_continent_refs'</di=
+v><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/g=
+ems/worlddb-2.0.4/lib/worlddb/reader.rb:55:in `load'</div><div class=3D"sub=
+prettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/worlddb-2.0.4/l=
+ib/worlddb/reader.rb:45:in `block in load_setup'</div><div class=3D"subpret=
+typrint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/textutils-0.9.4/lib=
+/textutils/reader/fixture_reader.rb:104:in `block in each'</div><div class=
+=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/textutil=
+s-0.9.4/lib/textutils/reader/fixture_reader.rb:103:in `each'</div><div clas=
+s=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/textuti=
+ls-0.9.4/lib/textutils/reader/fixture_reader.rb:103:in `each'</div><div cla=
+ss=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/worldd=
+b-2.0.4/lib/worlddb/reader.rb:44:in `load_setup'</div><div class=3D"subpret=
+typrint">/usr/local/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/worlddb-2.0.4/lib/w=
+orlddb.rb:99:in `read_setup'</div><div class=3D"subprettyprint">/var/www/op=
+enfootball/openfootball/build/Rakefile:100:in `block in &lt;top (required)&=
+gt;'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/2.1.=
+0/rake/task.rb:236:in `call'</div><div class=3D"subprettyprint">/usr/local/=
+ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:236:in `block in execute'</div><div =
+class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:=
+231:in `each'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/=
+ruby/2.1.0/rake/task.rb:231:in `execute'</div><div class=3D"subprettyprint"=
+>/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:175:in `block in invoke_=
+with_call_chain'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/l=
+ib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'</div><div class=3D"subpre=
+ttyprint">/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:168:in `invoke_=
+with_call_chain'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/l=
+ib/ruby/2.1.0/rake/task.rb:197:in `block in invoke_prerequisites'</div><div=
+ class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb=
+:195:in `each'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib=
+/ruby/2.1.0/rake/task.rb:195:in `invoke_prerequisites'</div><div class=3D"s=
+ubprettyprint">/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:174:in `bl=
+ock in invoke_with_call_chain'</div><div class=3D"subprettyprint">/usr/loca=
+l/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'</div><div c=
+lass=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:1=
+68:in `invoke_with_call_chain'</div><div class=3D"subprettyprint">/usr/loca=
+l/ruby-2.1.2/lib/ruby/2.1.0/rake/task.rb:161:in `invoke'</div><div class=3D=
+"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:1=
+49:in `invoke_task'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.=
+2/lib/ruby/2.1.0/rake/application.rb:106:in `block (2 levels) in top_level'=
+</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/2.1.0/ra=
+ke/application.rb:106:in `each'</div><div class=3D"subprettyprint">/usr/loc=
+al/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:106:in `block in top_level=
+'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/2.1.0/r=
+ake/application.rb:115:in `run_with_threads'</div><div class=3D"subprettypr=
+int">/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:100:in `top_l=
+evel'</div><div class=3D"subprettyprint">/usr/local/ruby-2.1.2/lib/ruby/2.1=
+.0/rake/application.rb:78:in `block in run'</div><div class=3D"subprettypri=
+nt">/usr/local/ruby-2.1.2/lib/ruby/2.1.0/rake/application.rb:165:in `standa=
+rd_exception_handling'</div><div class=3D"subprettyprint">/usr/local/ruby-2=
+.1.2/lib/ruby/2.1.0/rake/application.rb:75:in `run'</div><div class=3D"subp=
+rettyprint">/usr/local/ruby-2.1.2/bin/rake:33:in `&lt;main&gt;'</div><div><=
+br></div></div></code></div><br><br></div><br>=E5=9C=A8 2014=E5=B9=B48=E6=
+=9C=884=E6=97=A5=E6=98=9F=E6=9C=9F=E4=B8=80UTC+8=E4=B8=8B=E5=8D=8810=E6=97=
+=B635=E5=88=8631=E7=A7=92=EF=BC=8CGerald Bauer=E5=86=99=E9=81=93=EF=BC=9A<b=
+lockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;borde=
+r-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>&nbsp; &nbsp;Sorry. Hard to say from your comments. What error do you g=
+et? Can
+<br>you post your build script? Cheers.
+<br></blockquote></div></div>
+------=_Part_130_212748205.1407205708857--
+
+------=_Part_129_2035950329.1407205708857--
+

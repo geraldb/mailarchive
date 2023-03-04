@@ -1,0 +1,1404 @@
+From 449603174400@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 252823207936
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,91274d0de1d6fc38
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.50.254.1 with SMTP id ae1mr8859967igd.6.1396547483733;
+        Thu, 03 Apr 2014 10:51:23 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.43.135 with SMTP id w7ls2605225igl.14.canary; Thu, 03 Apr
+ 2014 10:51:23 -0700 (PDT)
+X-Received: by 10.50.97.34 with SMTP id dx2mr134208igb.0.1396547483009;
+        Thu, 03 Apr 2014 10:51:23 -0700 (PDT)
+X-Google-Doc-Id: 2ae90a4457081848
+X-Google-Web-Client: true
+Date: Thu, 3 Apr 2014 10:51:22 -0700 (PDT)
+From: =?UTF-8?Q?Oriol_Franquesa_Cort=C3=A9s?= <ofranquesa@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <61b0db05-9dc8-42d2-92a9-e94e02f4bcba@googlegroups.com>
+In-Reply-To: <CAAxEZd8iYqVJOFxRo-56EA-PukQWdUnj2zBUX+1GO=Y3_FH3iQ@mail.gmail.com>
+References: <d7f4432d-8234-4fe2-9d86-ddb1405fa163@googlegroups.com>
+ <36cce30c-d387-437b-880a-54f9d3f654ea@googlegroups.com>
+ <51f35b75-76da-4986-aee3-028b39c390a5@googlegroups.com>
+ <CAAxEZd-Bwo6-1OSj_JU0pCzTGqskxx8BWZKk2R3WirEw9c60Rg@mail.gmail.com>
+ <6622adba-9c9b-4c7f-be0e-2523db79734d@googlegroups.com>
+ <92623206-3be0-40ec-a654-8c4e9dcc9e3c@googlegroups.com>
+ <CAAxEZd8SAXOBaNFDtKFuBeftKEpmDwQ8_fTvohLQP5HzQ8K7iQ@mail.gmail.com>
+ <CAAxEZd-d+B8-tXGAF4Dgu+j0sOXYS6OvSO0towTyZkh0CbUiRg@mail.gmail.com>
+ <382a618e-0754-4f2b-bcbb-ae65d0b0cd9d@googlegroups.com>
+ <CAAxEZd8iYqVJOFxRo-56EA-PukQWdUnj2zBUX+1GO=Y3_FH3iQ@mail.gmail.com>
+Subject: Re: [opensport] Re: A couple of questions...
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2958_28417398.1396547482203"
+X-Google-Token: EJq_9pkFXjBomKpbcsE0
+X-Google-IP: 177.156.144.3
+
+------=_Part_2958_28417398.1396547482203
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2959_30981428.1396547482203"
+
+------=_Part_2959_30981428.1396547482203
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Gerald,
+
+Hope you are doing well :)
+
+Just a short question... Trying to including the stadiums fixture, I get=20
+these errors:
+
+deprecated api - FixtureReader w/ yaml format - will get removed; please=20
+use new plain text manifest format
+
+[error] unknown sportdb fixture type >africa/ma-morocco--stadiums<
+
+[error] unknown sportdb fixture type >africa/za-south-africa--stadiums<
+
+[error] unknown sportdb fixture type >europe/at-austria--stadiums<
+
+[error] unknown sportdb fixture type >europe/ch-switzerland--stadiums<
+
+[error] unknown sportdb fixture type >europe/de-deutschland--stadiums<
+
+[error] unknown sportdb fixture type >europe/en-england--stadiums<
+
+[error] unknown sportdb fixture type >europe/es-espana--stadiums<
+
+[error] unknown sportdb fixture type >europe/fr-france--stadiums<
+
+[error] unknown sportdb fixture type >europe/it-italy--stadiums<
+
+[error] unknown sportdb fixture type >europe/nl-netherlands--stadiums<
+
+[error] unknown sportdb fixture type >europe/pl-poland--stadiums<
+
+[error] unknown sportdb fixture type >europe/pt-portugal--stadiums<
+
+[error] unknown sportdb fixture type >europe/ua-ukraine--stadiums<
+
+[error] unknown sportdb fixture type >north-america/ca-canada--stadiums<
+
+[error] unknown sportdb fixture type >north-america/mx-mexico--stadiums<
+
+[error] unknown sportdb fixture type=20
+>north-america/us-united-states--stadiums<
+
+[error] unknown sportdb fixture type >south-america/br-brazil--stadiums<
+
+
+Do you have any idea about where could be the problem? Thanks again!=20
+
+Best.
+
+On Thursday, February 13, 2014 12:47:05 PM UTC-2, Gerald Bauer wrote:
+>
+> Hello Oriol,=20
+>
+>    No worries. Take your take.  Looking forward to your work: Please=20
+> post a link or similar if it's online.=20
+>
+>   Note, add the following to your build script (now you need to load=20
+> the stadiums/grounds first - before the game fixtures).=20
+>
+>   task :grounds  =3D> :importbuiltin do=20
+>     SportDb.read_setup( 'setups/all',  ../stadiums )=20
+>  end=20
+>
+>    And add the depencdency e.g.:=20
+>
+>   task :importsport =3D> [:importbuiltin, :grounds] do=20
+>     ..=20
+>   end=20
+>
+>    Good luck. Cheers.=20
+>
+> 2014-02-12 16:36 GMT-06:00 Oriol Franquesa Cort=C3=A9s <ofran...@gmail.co=
+m<javascript:>>:=20
+>
+> > Hi Gerald,=20
+> >=20
+> > Many thanks for the update. I'll have a look tomorrow and let you know=
+=20
+> if=20
+> > everything is ok. Also I will try to find some time to complete the dat=
+a=20
+> as=20
+> > agreement for your work ;) It is really helping my project (hope I can=
+=20
+> show=20
+> > it to you when it is done).=20
+> >=20
+> > Cheers.=20
+> >=20
+> >=20
+> > On Wednesday, February 12, 2014 9:23:58 PM UTC+1, Gerald Bauer wrote:=
+=20
+> >>=20
+> >> Hello,=20
+> >>=20
+> >>   I've added a new ground (stadium) tables plus associations for games=
+=20
+> >> and events (that is, a game belongs to a ground and a ground has many=
+=20
+> >> games; an event has many grounds using the events_ground join table).=
+=20
+> >>=20
+> >>   If you update the sportdb gem (requires 1.8.2+) and the textutils=20
+> >> gem (requires + 0.8.4+) plus use the stadiums repo and rebuild your=20
+> >> schema and fixtures you can access the city for the game using=20
+> >>=20
+> >>     game.ground.city, for example.=20
+> >>=20
+> >>    Let me know if it works. Cheers.=20
+> >>=20
+> >>  PS: I've only added the stadiums/grounds for now to the world cup=20
+> >> 2014 fixtures [1].  Also note some games miss the stadiums (you're=20
+> >> welcome to add the missing stadiums/grounds).=20
+> >>=20
+> >> [1]  github.com/openfootball/world-cup/blob/master/2014/cup.txt=20
+> >>=20
+> >> 2014-02-05 13:58 GMT-06:00 Gerald Bauer <gerald...@gmail.com>:=20
+> >> > Hello Oriol,=20
+> >> >=20
+> >> >>  I had a look on the entire generated DB and I couldn't see any=20
+> >> >> relationship between games=20
+> >> >>  and where are the played (cities). Am I wrong?=20
+> >> >=20
+> >> >   I'm sorry, you're not. It's currently missing.=20
+> >> >=20
+> >> >>  Could be consider to add the locations for all World Cup games?=20
+> >> >>  Let me know if I could help you on this!=20
+> >> >=20
+> >> >   The good news it's planned to add a location via stadiums (see [1]=
+=20
+> >> > ). All stadiums for the world cup in Brazil are already included.=20
+>  The=20
+> >> > bad news it will realistically take a couple of weeks until I get=20
+> >> > around adding the missing code.  Of course, you're more than welcome=
+=20
+> >> > to start adding the missing parts yourself. Thanks for your patience=
+.=20
+> >> >=20
+> >> >   Cheers.=20
+> >> >=20
+> >> > [1]=20
+> >> >=20
+> https://github.com/openfootball/stadiums/blob/master/south-america/br-bra=
+zil/stadiums.txt=20
+> >> >=20
+> >> > 2014-02-05 Oriol Franquesa Cort=C3=A9s <ofran...@gmail.com>:=20
+> >> >> Sorry Gerald, it's me again! :)=20
+> >> >>=20
+> >> >> Just one question. I realised that games have no "city" related... =
+I=20
+> >> >> had a=20
+> >> >> look on the entire generated DB and I couldn't see any relationship=
+=20
+> >> >> between=20
+> >> >> games and where are the played (cities). Am I wrong? Could be=20
+> consider=20
+> >> >> to=20
+> >> >> add the locations for all World Cup games? Let me know if I could=
+=20
+> help=20
+> >> >> you=20
+> >> >> on this!=20
+> >> >>=20
+> >> >> Best,=20
+> >> >> Oriol.=20
+> >> >>=20
+> >> >>=20
+> >> >> On Friday, January 31, 2014 5:20:24 PM UTC+1, Oriol Franquesa Cort=
+=C3=A9s=20
+> >> >> wrote:=20
+> >> >>>=20
+> >> >>> Hi Gerald!=20
+> >> >>>=20
+> >> >>> Many thanks! Now worked like a charm! :)=20
+> >> >>>=20
+> >> >>> Best.=20
+> >> >>>=20
+> >> >>> On Friday, January 31, 2014 2:41:16 PM UTC+1, Gerald Bauer wrote:=
+=20
+> >> >>>>=20
+> >> >>>> Hello,=20
+> >> >>>>=20
+> >> >>>>    Sorry for the error and thanks for trying. Please, update the=
+=20
+> >> >>>> sportdb gem to use the latest version, that is, 1.8.0 and retry.=
+=20
+> It=20
+> >> >>>> should work now.=20
+> >> >>>>=20
+> >> >>>>   Note, you will have to fix (update) your Rakefile too. You will=
+=20
+> >> >>>> need=20
+> >> >>>> to import the=20
+> >> >>>>   1) builtins (e.g. seasons) and=20
+> >> >>>>   2) all national teams using the euro-cup, africa-cup,=20
+> >> >>>> north-america-gold-cup n copa-america repos=20
+> >> >>>>=20
+> >> >>>>   Add to/change in your Rakefile:=20
+> >> >>>>=20
+> >> >>>> task :importbuiltin =3D> :env do=20
+> >> >>>>   SportDb.read_builtin=20
+> >> >>>> end=20
+> >> >>>>=20
+> >> >>>> task :importsport =3D> :importbuiltin do=20
+> >> >>>>   SportDb.read_setup( 'setups/teams', './euro-cup' )=20
+> >> >>>>   SportDb.read_setup( 'setups/teams', './africa-cup' )=20
+> >> >>>>   SportDb.read_setup( 'setups/teams', './north-america-gold-cup' =
+)=20
+> >> >>>>   SportDb.read_setup( 'setups/teams', './copa-america' )=20
+> >> >>>>   SportDb.read_setup( 'setups/all',   './world-cup' )=20
+> >> >>>> end=20
+> >> >>>>=20
+> >> >>>> And that's it. Retry and it now should work. Optional: Add the=20
+> about=20
+> >> >>>> task to check the gem versions e.g.:=20
+> >> >>>>=20
+> >> >>>> desc 'footballdb - check gem versions in use'=20
+> >> >>>> task :about =3D> :env do=20
+> >> >>>>   puts "textutils #{TextUtils::VERSION}"=20
+> >> >>>>   puts "worlddb #{WorldDb::VERSION}"=20
+> >> >>>>   puts "sportdb #{SportDb::VERSION}"=20
+> >> >>>> end=20
+> >> >>>>=20
+> >> >>>> Let me know if it works. Cheers.=20
+> >> >>>>=20
+> >> >>>> 2014-01-30 Oriol Franquesa Cort=C3=A9s <ofran...@gmail.com>:=20
+> >> >>>> > Hi Gerald!=20
+> >> >>>> >=20
+> >> >>>> > Thanks a lot for your quick answer! :)=20
+> >> >>>> >=20
+> >> >>>> > Almost everything is clear now...=20
+> >> >>>> >=20
+> >> >>>> > I just wanted to know if there is some error on the files or=20
+> with=20
+> >> >>>> > the=20
+> >> >>>> > parsers. I made a Rakefile to create my world cup database but=
+=20
+> >> >>>> > there's=20
+> >> >>>> > no=20
+> >> >>>> > manner to parse the world-cup files. This is my Rakefile:=20
+> >> >>>> >=20
+> >> >>>> > BUILD_DIR =3D "."=20
+> >> >>>> >=20
+> >> >>>> > FOOTBALL_DB_PATH =3D "#{BUILD_DIR}/football.db"=20
+> >> >>>> >=20
+> >> >>>> > DB_CONFIG =3D {=20
+> >> >>>> >   :adapter   =3D>  'mysql2',=20
+> >> >>>> >   :database  =3D>  'football',=20
+> >> >>>> >   :username  =3D>  'root',=20
+> >> >>>> >   :password  =3D>  'test'=20
+> >> >>>> > }=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> > directory BUILD_DIR=20
+> >> >>>> >=20
+> >> >>>> > task :clean do=20
+> >> >>>> >   rm FOOTBALL_DB_PATH if File.exists?( FOOTBALL_DB_PATH )=20
+> >> >>>> > end=20
+> >> >>>> >=20
+> >> >>>> > task :env =3D> BUILD_DIR do=20
+> >> >>>> >  require 'worlddb'=20
+> >> >>>> >  require 'sportdb'=20
+> >> >>>> >  require 'logutils/db'=20
+> >> >>>> >=20
+> >> >>>> >  LogUtils::Logger.root.level =3D :info=20
+> >> >>>> >=20
+> >> >>>> >  pp DB_CONFIG=20
+> >> >>>> >  ActiveRecord::Base.establish_connection( DB_CONFIG )=20
+> >> >>>> > end=20
+> >> >>>> >=20
+> >> >>>> > task :create =3D> :env do=20
+> >> >>>> >   LogDb.create=20
+> >> >>>> >   WorldDb.create=20
+> >> >>>> >   SportDb.create=20
+> >> >>>> > end=20
+> >> >>>> >=20
+> >> >>>> > task :importworld =3D> :env do=20
+> >> >>>> >   WorldDb.read_setup( 'setups/sport.db.admin', './world.db',=20
+> >> >>>> > skip_tags:=20
+> >> >>>> > true=20
+> >> >>>> > )  # populate world tables=20
+> >> >>>> >   # WorldDb.stats=20
+> >> >>>> > end=20
+> >> >>>> >=20
+> >> >>>> > task :importsport =3D> :env do=20
+> >> >>>> >   SportDb.read_setup( 'setups/all', './world-cup' )=20
+> >> >>>> >   # SportDb.stats=20
+> >> >>>> > end=20
+> >> >>>> >=20
+> >> >>>> > desc 'footballdb - build from scratch'=20
+> >> >>>> > task :build =3D> [:clean, :create, :importworld, :importsport] =
+do=20
+> >> >>>> >   puts 'Done.'=20
+> >> >>>> > end=20
+> >> >>>> >=20
+> >> >>>> > And this is what I get:=20
+> >> >>>> >=20
+> >> >>>> > root@orioldebian:/var/www/sportsdb# rake --trace importsport=20
+> >> >>>> > ** Invoke importsport (first_time)=20
+> >> >>>> > ** Invoke env (first_time)=20
+> >> >>>> > ** Invoke . (first_time, not_needed)=20
+> >> >>>> > ** Execute env=20
+> >> >>>> > worlddb 1.8.2 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]=20
+> >> >>>> > fetcher 0.4.2 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]=20
+> >> >>>> > sportdb/1.7.9 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]=20
+> >> >>>> > logdb 0.6.0 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]=20
+> >> >>>> > {:adapter=3D>"mysql2",=20
+> >> >>>> >  :database=3D>"football",=20
+> >> >>>> >  :username=3D>"root",=20
+> >> >>>> >  :password=3D>"helliwood"}=20
+> >> >>>> > ** Execute importsport=20
+> >> >>>> > [info] parsing data 'setups/all' (./world-cup/setups/all.yml)..=
+.=20
+> >> >>>> > rake aborted!=20
+> >> >>>> > wrong number of arguments (3 for 2)=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/worlddb-1.8.2/lib/worlddb/matcher.rb:=
+7:in=20
+>
+> >> >>>> > `match_xxx_for_country'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/reader.rb:1=
+8:in=20
+>
+> >> >>>> > `match_tracks_for_country'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/reader.rb:6=
+4:in=20
+>
+> >> >>>> > `load'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/reader.rb:5=
+3:in=20
+>
+> >> >>>> > `block in load_setup'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/textutils-0.8.1/lib/textutils/reader/=
+fixture_reader.rb:44:in=20
+>
+> >> >>>> > `block in each'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/textutils-0.8.1/lib/textutils/reader/=
+fixture_reader.rb:43:in=20
+>
+> >> >>>> > `each'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/textutils-0.8.1/lib/textutils/reader/=
+fixture_reader.rb:43:in=20
+>
+> >> >>>> > `each'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/reader.rb:5=
+2:in=20
+>
+> >> >>>> > `load_setup'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb.rb:122:in=
+=20
+> >> >>>> > `read_setup'=20
+> >> >>>> > /mnt/hgfs/httdocs/sportsdb/Rakefile:43:in `block in <top=20
+> >> >>>> > (required)>'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:236:in=
+=20
+> >> >>>> > `call'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:236:in=
+=20
+> >> >>>> > `block in execute'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:231:in=
+=20
+> >> >>>> > `each'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:231:in=
+=20
+> >> >>>> > `execute'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:175:in=
+=20
+> >> >>>> > `block in invoke_with_call_chain'=20
+> >> >>>> >=20
+> /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/monitor.rb:211:in=20
+> >> >>>> > `mon_synchronize'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:168:in=
+=20
+> >> >>>> > `invoke_with_call_chain'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:161:in=
+=20
+> >> >>>> > `invoke'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:1=
+49:in=20
+>
+> >> >>>> > `invoke_task'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:1=
+06:in=20
+>
+> >> >>>> > `block (2 levels) in top_level'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:1=
+06:in=20
+>
+> >> >>>> > `each'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:1=
+06:in=20
+>
+> >> >>>> > `block in top_level'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:1=
+15:in=20
+>
+> >> >>>> > `run_with_threads'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:1=
+00:in=20
+>
+> >> >>>> > `top_level'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:7=
+8:in=20
+>
+> >> >>>> > `block in run'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:1=
+65:in=20
+>
+> >> >>>> > `standard_exception_handling'=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> >=20
+> /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:7=
+5:in=20
+>
+> >> >>>> > `run'=20
+> >> >>>> > /usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/bin/rake:33:in=
+=20
+> >> >>>> > `<top=20
+> >> >>>> > (required)>'=20
+> >> >>>> > /usr/local/rvm/gems/ruby-2.1.0/bin/rake:23:in `load'=20
+> >> >>>> > /usr/local/rvm/gems/ruby-2.1.0/bin/rake:23:in `<main>'=20
+> >> >>>> > /usr/local/rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in=
+=20
+> >> >>>> > `eval'=20
+> >> >>>> > /usr/local/rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in=
+=20
+> >> >>>> > `<main>'=20
+> >> >>>> > Tasks: TOP =3D> importsport=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> > Any help would be much appreciated! :)=20
+> >> >>>> >=20
+> >> >>>> > Oriol.=20
+> >> >>>> >=20
+> >> >>>> >=20
+> >> >>>> > On Wednesday, January 29, 2014 9:57:13 PM UTC+1, Gerald Bauer=
+=20
+> >> >>>> > wrote:=20
+> >> >>>> >>=20
+> >> >>>> >> Hello,=20
+> >> >>>> >>=20
+> >> >>>> >>> 1 - As another user asked before, how are the data maintained=
+?=20
+> I=20
+> >> >>>> >>> mean,=20
+> >> >>>> >>> when are you gonna update a result after the match is played?=
+=20
+> (An=20
+> >> >>>> >>> example)=20
+> >> >>>> >>=20
+> >> >>>> >>=20
+> >> >>>> >>     The match data is a plain text file residing on GitHub. Fo=
+r=20
+> >> >>>> >> example,=20
+> >> >>>> >> the match data for the World Cup 2014 in Brazil lives @=20
+> >> >>>> >> github.com/openfootball/world-cup/blob/master/2014/cup.txt=20
+> >> >>>> >>=20
+> >> >>>> >>    Basically, it works like a wiki - anybody can update it (if=
+=20
+> >> >>>> >> you're=20
+> >> >>>> >> a=20
+> >> >>>> >> openfootball team member - you can update it directly;=20
+> otherwise=20
+> >> >>>> >> you=20
+> >> >>>> >> may use=20
+> >> >>>> >> a pull request).   It's an all volunteer effort, thus, there i=
+s=20
+> no=20
+> >> >>>> >> guarantee=20
+> >> >>>> >> for updates. In practice I plan to update the World Cup 2014 a=
+t=20
+> >> >>>> >> least=20
+> >> >>>> >> once a=20
+> >> >>>> >> day (since I plan to use the results for sportbook).=20
+> >> >>>> >>=20
+> >> >>>> >>    Once the results got updated on GitHub - you can sync your=
+=20
+> app=20
+> >> >>>> >> via=20
+> >> >>>> >> the=20
+> >> >>>> >> built in machinery of the sportdb gem (basically just call=20
+> >> >>>> >> SportDb.update! )=20
+> >> >>>> >> or use the public HTTP JSON API that gets for now updated once=
+=20
+> a=20
+> >> >>>> >> day=20
+> >> >>>> >> (that=20
+> >> >>>> >> is, every 24 hours).=20
+> >> >>>> >>=20
+> >> >>>> >>>=20
+> >> >>>> >>>=20
+> >> >>>> >>> 2 - Which data is included for a result? (Who scored the=20
+> goals?)=20
+> >> >>>> >>=20
+> >> >>>> >>=20
+> >> >>>> >>    For now only the results e.g.   Italy 3-0 Spain   etc.=20
+> >> >>>> >> . Again see the plain text fixtures files, for an example.=20
+> Goals=20
+> >> >>>> >> scored by=20
+> >> >>>> >> players will get added later.=20
+> >> >>>> >>=20
+> >> >>>> >>>=20
+> >> >>>> >>> 3 - I don't know where can I find all the possible available=
+=20
+> URLs=20
+> >> >>>> >>> for=20
+> >> >>>> >>> the=20
+> >> >>>> >>> web service.=20
+> >> >>>> >>=20
+> >> >>>> >>=20
+> >> >>>> >>    Sorry, the docu page for the web service is currently down=
+=20
+> [1],=20
+> >> >>>> >> it=20
+> >> >>>> >> resides @ footballdb.herokuapp.com/api   but the service is=20
+> >> >>>> >> working.=20
+> >> >>>> >> Example:=20
+> >> >>>> >>=20
+> >> >>>> >>   - Get the teams for the World Cup 2014 ->=20
+> >> >>>> >> footballdb.herokuapp.com/api/v1/event/world.2014/teams=20
+> >> >>>> >>   - Get all rounds ->=20
+> >> >>>> >> footballdb.herokuapp.com/api/v1/event/world.2014/rounds=20
+> >> >>>> >>   - Get 1st round games ->=20
+> >> >>>> >> footballdb.herokuapp.com/api/v1/event/world.2014/round/1=20
+> >> >>>> >>   - etc.=20
+> >> >>>> >>=20
+> >> >>>> >>   Cheers.=20
+> >> >>>> >>=20
+> >> >>>> >> [1] The docu source page for the HTTP JSON API resides @=20
+> >> >>>> >>=20
+> >> >>>> >>=20
+> >> >>>> >>=20
+> github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/service/views/in=
+dex.erb=20
+> >> >>>> >=20
+> >> >>>> > --=20
+> >> >>>> > You received this message because you are subscribed to the=20
+> Google=20
+> >> >>>> > Groups=20
+> >> >>>> > "Open Sport(s) Database - football.db, formula1.db, ski.db, and=
+=20
+> >> >>>> > Friends"=20
+> >> >>>> > group.=20
+> >> >>>> > To unsubscribe from this group and stop receiving emails from=
+=20
+> it,=20
+> >> >>>> > send=20
+> >> >>>> > an=20
+> >> >>>> > email to opensport+...@googlegroups.com.=20
+> >> >>>> > For more options, visit https://groups.google.com/groups/opt_ou=
+t.=20
+>
+> >> >>=20
+> >> >> --=20
+> >> >> You received this message because you are subscribed to the Google=
+=20
+> >> >> Groups=20
+> >> >> "Open Sport(s) Database - football.db, formula1.db, ski.db, and=20
+> >> >> Friends"=20
+> >> >> group.=20
+> >> >> To unsubscribe from this group and stop receiving emails from it,=
+=20
+> send=20
+> >> >> an=20
+> >> >> email to opensport+...@googlegroups.com.=20
+> >> >> For more options, visit https://groups.google.com/groups/opt_out.=
+=20
+> >=20
+> > --=20
+> > You received this message because you are subscribed to the Google=20
+> Groups=20
+> > "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends=
+"=20
+> > group.=20
+> > To unsubscribe from this group and stop receiving emails from it, send=
+=20
+> an=20
+> > email to opensport+...@googlegroups.com <javascript:>.=20
+> > For more options, visit https://groups.google.com/groups/opt_out.=20
+>
+
+------=_Part_2959_30981428.1396547482203
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald,<div><br></div><div>Hope you are doing well :)</=
+div><div><br></div><div>Just a short question... Trying to including the st=
+adiums fixture, I get these errors:</div><div><br></div><div>
+
+
+
+
+
+
+
+<p class=3D"p1">deprecated api - FixtureReader w/ yaml format - will get re=
+moved; please use new plain text manifest format</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;africa/ma-morocco-=
+-stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;africa/za-south-af=
+rica--stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;europe/at-austria-=
+-stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;europe/ch-switzerl=
+and--stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;europe/de-deutschl=
+and--stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;europe/en-england-=
+-stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;europe/es-espana--=
+stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;europe/fr-france--=
+stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;europe/it-italy--s=
+tadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;europe/nl-netherla=
+nds--stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;europe/pl-poland--=
+stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;europe/pt-portugal=
+--stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;europe/ua-ukraine-=
+-stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;north-america/ca-c=
+anada--stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;north-america/mx-m=
+exico--stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;north-america/us-u=
+nited-states--stadiums&lt;</p>
+<p class=3D"p1">[error] unknown sportdb fixture type &gt;south-america/br-b=
+razil--stadiums&lt;</p><p class=3D"p1"><br></p><p class=3D"p1">Do you have =
+any idea about where could be the problem? Thanks again!&nbsp;</p><p class=
+=3D"p1">Best.</p><br>On Thursday, February 13, 2014 12:47:05 PM UTC-2, Gera=
+ld Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-=
+left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello Oriol,
+<br>
+<br>&nbsp; &nbsp;No worries. Take your take. &nbsp;Looking forward to your =
+work: Please
+<br>post a link or similar if it's online.
+<br>
+<br>&nbsp; Note, add the following to your build script (now you need to lo=
+ad
+<br>the stadiums/grounds first - before the game fixtures).
+<br>
+<br>&nbsp; task :grounds &nbsp;=3D&gt; :importbuiltin do
+<br>&nbsp; &nbsp; SportDb.read_setup( 'setups/all', &nbsp;../stadiums )
+<br>&nbsp;end
+<br>
+<br>&nbsp; &nbsp;And add the depencdency e.g.:
+<br>
+<br>&nbsp; task :importsport =3D&gt; [:importbuiltin, :grounds] do
+<br>&nbsp; &nbsp; ..
+<br>&nbsp; end
+<br>
+<br>&nbsp; &nbsp;Good luck. Cheers.
+<br>
+<br>2014-02-12 16:36 GMT-06:00 Oriol Franquesa Cort=C3=A9s &lt;<a href=3D"j=
+avascript:" target=3D"_blank" gdf-obfuscated-mailto=3D"ssPAZUv3oq4J" onmous=
+edown=3D"this.href=3D'javascript:';return true;" onclick=3D"this.href=3D'ja=
+vascript:';return true;">ofran...@gmail.com</a>&gt;:
+<br>&gt; Hi Gerald,
+<br>&gt;
+<br>&gt; Many thanks for the update. I'll have a look tomorrow and let you =
+know if
+<br>&gt; everything is ok. Also I will try to find some time to complete th=
+e data as
+<br>&gt; agreement for your work ;) It is really helping my project (hope I=
+ can show
+<br>&gt; it to you when it is done).
+<br>&gt;
+<br>&gt; Cheers.
+<br>&gt;
+<br>&gt;
+<br>&gt; On Wednesday, February 12, 2014 9:23:58 PM UTC+1, Gerald Bauer wro=
+te:
+<br>&gt;&gt;
+<br>&gt;&gt; Hello,
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; I've added a new ground (stadium) tables plus associati=
+ons for games
+<br>&gt;&gt; and events (that is, a game belongs to a ground and a ground h=
+as many
+<br>&gt;&gt; games; an event has many grounds using the events_ground join =
+table).
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; If you update the sportdb gem (requires 1.8.2+) and the=
+ textutils
+<br>&gt;&gt; gem (requires + 0.8.4+) plus use the stadiums repo and rebuild=
+ your
+<br>&gt;&gt; schema and fixtures you can access the city for the game using
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; &nbsp; game.ground.city, for example.
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; &nbsp;Let me know if it works. Cheers.
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp;PS: I've only added the stadiums/grounds for now to the =
+world cup
+<br>&gt;&gt; 2014 fixtures [1]. &nbsp;Also note some games miss the stadium=
+s (you're
+<br>&gt;&gt; welcome to add the missing stadiums/grounds).
+<br>&gt;&gt;
+<br>&gt;&gt; [1] &nbsp;<a href=3D"http://github.com/openfootball/world-cup/=
+blob/master/2014/cup.txt" target=3D"_blank" onmousedown=3D"this.href=3D'htt=
+p://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-c=
+up%2Fblob%2Fmaster%2F2014%2Fcup.txt\46sa\75D\46sntz\0751\46usg\75AFQjCNGTXl=
+hqfbmK0hoN7qq-t6Bi3CpjlA';return true;" onclick=3D"this.href=3D'http://www.=
+google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup%2Fblo=
+b%2Fmaster%2F2014%2Fcup.txt\46sa\75D\46sntz\0751\46usg\75AFQjCNGTXlhqfbmK0h=
+oN7qq-t6Bi3CpjlA';return true;">github.com/openfootball/<wbr>world-cup/blob=
+/master/2014/<wbr>cup.txt</a>
+<br>&gt;&gt;
+<br>&gt;&gt; 2014-02-05 13:58 GMT-06:00 Gerald Bauer &lt;<a>gerald...@gmail=
+.com</a>&gt;:
+<br>&gt;&gt; &gt; Hello Oriol,
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt; &nbsp;I had a look on the entire generated DB and I c=
+ouldn't see any
+<br>&gt;&gt; &gt;&gt; relationship between games
+<br>&gt;&gt; &gt;&gt; &nbsp;and where are the played (cities). Am I wrong?
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; &nbsp; I'm sorry, you're not. It's currently missing.
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt; &nbsp;Could be consider to add the locations for all =
+World Cup games?
+<br>&gt;&gt; &gt;&gt; &nbsp;Let me know if I could help you on this!
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; &nbsp; The good news it's planned to add a location via s=
+tadiums (see [1]
+<br>&gt;&gt; &gt; ). All stadiums for the world cup in Brazil are already i=
+ncluded. &nbsp;The
+<br>&gt;&gt; &gt; bad news it will realistically take a couple of weeks unt=
+il I get
+<br>&gt;&gt; &gt; around adding the missing code. &nbsp;Of course, you're m=
+ore than welcome
+<br>&gt;&gt; &gt; to start adding the missing parts yourself. Thanks for yo=
+ur patience.
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; &nbsp; Cheers.
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; [1]
+<br>&gt;&gt; &gt; <a href=3D"https://github.com/openfootball/stadiums/blob/=
+master/south-america/br-brazil/stadiums.txt" target=3D"_blank" onmousedown=
+=3D"this.href=3D'https://www.google.com/url?q\75https%3A%2F%2Fgithub.com%2F=
+openfootball%2Fstadiums%2Fblob%2Fmaster%2Fsouth-america%2Fbr-brazil%2Fstadi=
+ums.txt\46sa\75D\46sntz\0751\46usg\75AFQjCNHZ27lOzqX04AGEjU8ifI7xmTkCCw';re=
+turn true;" onclick=3D"this.href=3D'https://www.google.com/url?q\75https%3A=
+%2F%2Fgithub.com%2Fopenfootball%2Fstadiums%2Fblob%2Fmaster%2Fsouth-america%=
+2Fbr-brazil%2Fstadiums.txt\46sa\75D\46sntz\0751\46usg\75AFQjCNHZ27lOzqX04AG=
+EjU8ifI7xmTkCCw';return true;">https://github.com/<wbr>openfootball/stadium=
+s/blob/<wbr>master/south-america/br-<wbr>brazil/stadiums.txt</a>
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; 2014-02-05 Oriol Franquesa Cort=C3=A9s &lt;<a>ofran...@gm=
+ail.com</a>&gt;:
+<br>&gt;&gt; &gt;&gt; Sorry Gerald, it's me again! :)
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; Just one question. I realised that games have no "cit=
+y" related... I
+<br>&gt;&gt; &gt;&gt; had a
+<br>&gt;&gt; &gt;&gt; look on the entire generated DB and I couldn't see an=
+y relationship
+<br>&gt;&gt; &gt;&gt; between
+<br>&gt;&gt; &gt;&gt; games and where are the played (cities). Am I wrong? =
+Could be consider
+<br>&gt;&gt; &gt;&gt; to
+<br>&gt;&gt; &gt;&gt; add the locations for all World Cup games? Let me kno=
+w if I could help
+<br>&gt;&gt; &gt;&gt; you
+<br>&gt;&gt; &gt;&gt; on this!
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; Best,
+<br>&gt;&gt; &gt;&gt; Oriol.
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; On Friday, January 31, 2014 5:20:24 PM UTC+1, Oriol F=
+ranquesa Cort=C3=A9s
+<br>&gt;&gt; &gt;&gt; wrote:
+<br>&gt;&gt; &gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt; Hi Gerald!
+<br>&gt;&gt; &gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt; Many thanks! Now worked like a charm! :)
+<br>&gt;&gt; &gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt; Best.
+<br>&gt;&gt; &gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt; On Friday, January 31, 2014 2:41:16 PM UTC+1, Ger=
+ald Bauer wrote:
+<br>&gt;&gt; &gt;&gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; Hello,
+<br>&gt;&gt; &gt;&gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; &nbsp;Sorry for the error and thanks f=
+or trying. Please, update the
+<br>&gt;&gt; &gt;&gt;&gt;&gt; sportdb gem to use the latest version, that i=
+s, 1.8.0 and retry. It
+<br>&gt;&gt; &gt;&gt;&gt;&gt; should work now.
+<br>&gt;&gt; &gt;&gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; Note, you will have to fix (update) yo=
+ur Rakefile too. You will
+<br>&gt;&gt; &gt;&gt;&gt;&gt; need
+<br>&gt;&gt; &gt;&gt;&gt;&gt; to import the
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; 1) builtins (e.g. seasons) and
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; 2) all national teams using the euro-c=
+up, africa-cup,
+<br>&gt;&gt; &gt;&gt;&gt;&gt; north-america-gold-cup n copa-america repos
+<br>&gt;&gt; &gt;&gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; Add to/change in your Rakefile:
+<br>&gt;&gt; &gt;&gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; task :importbuiltin =3D&gt; :env do
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; SportDb.read_builtin
+<br>&gt;&gt; &gt;&gt;&gt;&gt; end
+<br>&gt;&gt; &gt;&gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; task :importsport =3D&gt; :importbuiltin do
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; SportDb.read_setup( 'setups/teams', '.=
+/euro-cup' )
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; SportDb.read_setup( 'setups/teams', '.=
+/africa-cup' )
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; SportDb.read_setup( 'setups/teams', '.=
+/north-america-gold-cup' )
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; SportDb.read_setup( 'setups/teams', '.=
+/copa-america' )
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; SportDb.read_setup( 'setups/all', &nbs=
+p; './world-cup' )
+<br>&gt;&gt; &gt;&gt;&gt;&gt; end
+<br>&gt;&gt; &gt;&gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; And that's it. Retry and it now should work. =
+Optional: Add the about
+<br>&gt;&gt; &gt;&gt;&gt;&gt; task to check the gem versions e.g.:
+<br>&gt;&gt; &gt;&gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; desc 'footballdb - check gem versions in use'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; task :about =3D&gt; :env do
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; puts "textutils #{TextUtils::VERSION}"
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; puts "worlddb #{WorldDb::VERSION}"
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &nbsp; puts "sportdb #{SportDb::VERSION}"
+<br>&gt;&gt; &gt;&gt;&gt;&gt; end
+<br>&gt;&gt; &gt;&gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; Let me know if it works. Cheers.
+<br>&gt;&gt; &gt;&gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; 2014-01-30 Oriol Franquesa Cort=C3=A9s &lt;<a=
+>ofran...@gmail.com</a>&gt;:
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; Hi Gerald!
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; Thanks a lot for your quick answer! :)
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; Almost everything is clear now...
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; I just wanted to know if there is some e=
+rror on the files or with
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; the
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; parsers. I made a Rakefile to create my =
+world cup database but
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; there's
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; no
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; manner to parse the world-cup files. Thi=
+s is my Rakefile:
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; BUILD_DIR =3D "."
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; FOOTBALL_DB_PATH =3D "#{BUILD_DIR}/footb=
+all.db"
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; DB_CONFIG =3D {
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; :adapter &nbsp; =3D&gt; &nbsp;'my=
+sql2',
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; :database &nbsp;=3D&gt; &nbsp;'fo=
+otball',
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; :username &nbsp;=3D&gt; &nbsp;'ro=
+ot',
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; :password &nbsp;=3D&gt; &nbsp;'te=
+st'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; }
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; directory BUILD_DIR
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; task :clean do
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; rm FOOTBALL_DB_PATH if File.exist=
+s?( FOOTBALL_DB_PATH )
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; end
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; task :env =3D&gt; BUILD_DIR do
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp;require 'worlddb'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp;require 'sportdb'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp;require 'logutils/db'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp;LogUtils::Logger.root.level =3D :i=
+nfo
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp;pp DB_CONFIG
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp;ActiveRecord::Base.establish_<wbr>=
+connection( DB_CONFIG )
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; end
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; task :create =3D&gt; :env do
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; LogDb.create
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; WorldDb.create
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; SportDb.create
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; end
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; task :importworld =3D&gt; :env do
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; WorldDb.read_setup( 'setups/sport=
+.db.admin', './world.db',
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; skip_tags:
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; true
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; ) &nbsp;# populate world tables
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; # WorldDb.stats
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; end
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; task :importsport =3D&gt; :env do
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; SportDb.read_setup( 'setups/all',=
+ './world-cup' )
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; # SportDb.stats
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; end
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; desc 'footballdb - build from scratch'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; task :build =3D&gt; [:clean, :create, :i=
+mportworld, :importsport] do
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp; puts 'Done.'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; end
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; And this is what I get:
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; root@orioldebian:/var/www/<wbr>sportsdb#=
+ rake --trace importsport
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; ** Invoke importsport (first_time)
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; ** Invoke env (first_time)
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; ** Invoke . (first_time, not_needed)
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; ** Execute env
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; worlddb 1.8.2 on Ruby 2.1.0 (2013-12-25)=
+ [x86_64-linux]
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; fetcher 0.4.2 on Ruby 2.1.0 (2013-12-25)=
+ [x86_64-linux]
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; sportdb/1.7.9 on Ruby 2.1.0 (2013-12-25)=
+ [x86_64-linux]
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; logdb 0.6.0 on Ruby 2.1.0 (2013-12-25) [=
+x86_64-linux]
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; {:adapter=3D&gt;"mysql2",
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp;:database=3D&gt;"football",
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp;:username=3D&gt;"root",
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; &nbsp;:password=3D&gt;"helliwood"}
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; ** Execute importsport
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; [info] parsing data 'setups/all' (./worl=
+d-cup/setups/all.yml)..<wbr>.
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; rake aborted!
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; wrong number of arguments (3 for 2)
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/worlddb-1.8.2/lib/<wbr>worlddb/matcher.rb:7:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `match_xxx_for_country'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/sportdb-1.7.9/lib/<wbr>sportdb/reader.rb:18:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `match_tracks_for_country'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/sportdb-1.7.9/lib/<wbr>sportdb/reader.rb:64:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `load'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/sportdb-1.7.9/lib/<wbr>sportdb/reader.rb:53:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `block in load_setup'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/textutils-0.8.1/lib/<wbr>textutils/reader/fixture_<wbr>reader.rb:44:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `block in each'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/textutils-0.8.1/lib/<wbr>textutils/reader/fixture_<wbr>reader.rb:43:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `each'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/textutils-0.8.1/lib/<wbr>textutils/reader/fixture_<wbr>reader.rb:43:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `each'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/sportdb-1.7.9/lib/<wbr>sportdb/reader.rb:52:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `load_setup'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/sportdb-1.7.9/lib/<wbr>sportdb.rb:122:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `read_setup'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /mnt/hgfs/httdocs/sportsdb/<wbr>Rakefile=
+:43:in `block in &lt;top
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; (required)&gt;'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>task.rb:236:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `call'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>task.rb:236:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `block in execute'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>task.rb:231:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `each'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>task.rb:231:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `execute'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>task.rb:175:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `block in invoke_with_call_chain'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/rubies/ruby-2.<wbr>1.0/li=
+b/ruby/2.1.0/monitor.rb:<wbr>211:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `mon_synchronize'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>task.rb:168:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `invoke_with_call_chain'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>task.rb:161:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `invoke'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>application.rb:149:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `invoke_task'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>application.rb:106:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `block (2 levels) in top_level'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>application.rb:106:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `each'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>application.rb:106:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `block in top_level'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>application.rb:115:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `run_with_threads'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>application.rb:100:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `top_level'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>application.rb:78:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `block in run'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>application.rb:165:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `standard_exception_handling'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/lib/rake/<wbr>application.rb:75:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `run'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/gems=
+/rake-10.1.1/bin/rake:<wbr>33:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `&lt;top
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; (required)&gt;'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/bin/=
+rake:23:in `load'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/bin/=
+rake:23:in `&lt;main&gt;'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/bin/=
+ruby_executable_hooks:<wbr>15:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `eval'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; /usr/local/rvm/gems/ruby-2.1.<wbr>0/bin/=
+ruby_executable_hooks:<wbr>15:in
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; `&lt;main&gt;'
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; Tasks: TOP =3D&gt; importsport
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; Any help would be much appreciated! :)
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; Oriol.
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; On Wednesday, January 29, 2014 9:57:13 P=
+M UTC+1, Gerald Bauer
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; wrote:
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; Hello,
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt; 1 - As another user asked before=
+, how are the data maintained? I
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt; mean,
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt; when are you gonna update a resu=
+lt after the match is played? (An
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt; example)
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; &nbsp; &nbsp; The match data is a pl=
+ain text file residing on GitHub. For
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; example,
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; the match data for the World Cup 201=
+4 in Brazil lives @
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; <a href=3D"http://github.com/openfoo=
+tball/world-cup/blob/master/2014/cup.txt" target=3D"_blank" onmousedown=3D"=
+this.href=3D'http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfo=
+otball%2Fworld-cup%2Fblob%2Fmaster%2F2014%2Fcup.txt\46sa\75D\46sntz\0751\46=
+usg\75AFQjCNGTXlhqfbmK0hoN7qq-t6Bi3CpjlA';return true;" onclick=3D"this.hre=
+f=3D'http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2=
+Fworld-cup%2Fblob%2Fmaster%2F2014%2Fcup.txt\46sa\75D\46sntz\0751\46usg\75AF=
+QjCNGTXlhqfbmK0hoN7qq-t6Bi3CpjlA';return true;">github.com/openfootball/wor=
+ld-<wbr>cup/blob/master/2014/cup.txt</a>
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; &nbsp; &nbsp;Basically, it works lik=
+e a wiki - anybody can update it (if
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; you're
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; a
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; openfootball team member - you can u=
+pdate it directly; otherwise
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; you
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; may use
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; a pull request). &nbsp; It's an all =
+volunteer effort, thus, there is no
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; guarantee
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; for updates. In practice I plan to u=
+pdate the World Cup 2014 at
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; least
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; once a
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; day (since I plan to use the results=
+ for sportbook).
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; &nbsp; &nbsp;Once the results got up=
+dated on GitHub - you can sync your app
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; via
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; the
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; built in machinery of the sportdb ge=
+m (basically just call
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; SportDb.update! )
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; or use the public HTTP JSON API that=
+ gets for now updated once a
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; day
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; (that
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; is, every 24 hours).
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt; 2 - Which data is included for a=
+ result? (Who scored the goals?)
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; &nbsp; &nbsp;For now only the result=
+s e.g. &nbsp; Italy 3-0 Spain &nbsp; etc.
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; . Again see the plain text fixtures =
+files, for an example. Goals
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; scored by
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; players will get added later.
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt; 3 - I don't know where can I fin=
+d all the possible available URLs
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt; for
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt; the
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt; web service.
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; &nbsp; &nbsp;Sorry, the docu page fo=
+r the web service is currently down [1],
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; it
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; resides @ <a href=3D"http://football=
+db.herokuapp.com/api" target=3D"_blank" onmousedown=3D"this.href=3D'http://=
+www.google.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.com%2Fapi\46sa\75D=
+\46sntz\0751\46usg\75AFQjCNHkdzDtV_018lMHZeDAoV6N97L4fQ';return true;" oncl=
+ick=3D"this.href=3D'http://www.google.com/url?q\75http%3A%2F%2Ffootballdb.h=
+erokuapp.com%2Fapi\46sa\75D\46sntz\0751\46usg\75AFQjCNHkdzDtV_018lMHZeDAoV6=
+N97L4fQ';return true;">footballdb.herokuapp.com/api</a> &nbsp; but the serv=
+ice is
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; working.
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; Example:
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; &nbsp; - Get the teams for the World=
+ Cup 2014 -&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; <a href=3D"http://footballdb.herokua=
+pp.com/api/v1/event/world.2014/teams" target=3D"_blank" onmousedown=3D"this=
+.href=3D'http://www.google.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.co=
+m%2Fapi%2Fv1%2Fevent%2Fworld.2014%2Fteams\46sa\75D\46sntz\0751\46usg\75AFQj=
+CNFw0AMatRk3_QEeQE7biLTYlQXSuw';return true;" onclick=3D"this.href=3D'http:=
+//www.google.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.com%2Fapi%2Fv1%2=
+Fevent%2Fworld.2014%2Fteams\46sa\75D\46sntz\0751\46usg\75AFQjCNFw0AMatRk3_Q=
+EeQE7biLTYlQXSuw';return true;">footballdb.herokuapp.com/api/<wbr>v1/event/=
+world.2014/teams</a>
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; &nbsp; - Get all rounds -&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; <a href=3D"http://footballdb.herokua=
+pp.com/api/v1/event/world.2014/rounds" target=3D"_blank" onmousedown=3D"thi=
+s.href=3D'http://www.google.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.c=
+om%2Fapi%2Fv1%2Fevent%2Fworld.2014%2Frounds\46sa\75D\46sntz\0751\46usg\75AF=
+QjCNGFXDVFfz9AGf90dzCW4F8AswfH-A';return true;" onclick=3D"this.href=3D'htt=
+p://www.google.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.com%2Fapi%2Fv1=
+%2Fevent%2Fworld.2014%2Frounds\46sa\75D\46sntz\0751\46usg\75AFQjCNGFXDVFfz9=
+AGf90dzCW4F8AswfH-A';return true;">footballdb.herokuapp.com/api/<wbr>v1/eve=
+nt/world.2014/rounds</a>
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; &nbsp; - Get 1st round games -&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; <a href=3D"http://footballdb.herokua=
+pp.com/api/v1/event/world.2014/round/1" target=3D"_blank" onmousedown=3D"th=
+is.href=3D'http://www.google.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.=
+com%2Fapi%2Fv1%2Fevent%2Fworld.2014%2Fround%2F1\46sa\75D\46sntz\0751\46usg\=
+75AFQjCNHnT2Dg_TgwsxH4EIPlsGU_HyQtzQ';return true;" onclick=3D"this.href=3D=
+'http://www.google.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.com%2Fapi%=
+2Fv1%2Fevent%2Fworld.2014%2Fround%2F1\46sa\75D\46sntz\0751\46usg\75AFQjCNHn=
+T2Dg_TgwsxH4EIPlsGU_HyQtzQ';return true;">footballdb.herokuapp.com/api/<wbr=
+>v1/event/world.2014/round/1</a>
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; &nbsp; - etc.
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; &nbsp; Cheers.
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; [1] The docu source page for the HTT=
+P JSON API resides @
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; <a href=3D"http://github.com/geraldb=
+/sport.db.ruby/blob/master/lib/sportdb/service/views/index.erb" target=3D"_=
+blank" onmousedown=3D"this.href=3D'http://www.google.com/url?q\75http%3A%2F=
+%2Fgithub.com%2Fgeraldb%2Fsport.db.ruby%2Fblob%2Fmaster%2Flib%2Fsportdb%2Fs=
+ervice%2Fviews%2Findex.erb\46sa\75D\46sntz\0751\46usg\75AFQjCNHwSq5B61HgLY_=
+p54tySy7dvdl3VQ';return true;" onclick=3D"this.href=3D'http://www.google.co=
+m/url?q\75http%3A%2F%2Fgithub.com%2Fgeraldb%2Fsport.db.ruby%2Fblob%2Fmaster=
+%2Flib%2Fsportdb%2Fservice%2Fviews%2Findex.erb\46sa\75D\46sntz\0751\46usg\7=
+5AFQjCNHwSq5B61HgLY_p54tySy7dvdl3VQ';return true;">github.com/geraldb/sport=
+.db.<wbr>ruby/blob/master/lib/sportdb/<wbr>service/views/index.erb</a>
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; --
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; You received this message because you ar=
+e subscribed to the Google
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; Groups
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; "Open Sport(s) Database - football.db, f=
+ormula1.db, ski.db, and
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; Friends"
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; group.
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; To unsubscribe from this group and stop =
+receiving emails from it,
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; send
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; an
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; email to <a>opensport+...@googlegroups.c=
+om</a><wbr>.
+<br>&gt;&gt; &gt;&gt;&gt;&gt; &gt; For more options, visit <a href=3D"https=
+://groups.google.com/groups/opt_out" target=3D"_blank" onmousedown=3D"this.=
+href=3D'https://groups.google.com/groups/opt_out';return true;" onclick=3D"=
+this.href=3D'https://groups.google.com/groups/opt_out';return true;">https:=
+//groups.google.com/<wbr>groups/opt_out</a>.
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; --
+<br>&gt;&gt; &gt;&gt; You received this message because you are subscribed =
+to the Google
+<br>&gt;&gt; &gt;&gt; Groups
+<br>&gt;&gt; &gt;&gt; "Open Sport(s) Database - football.db, formula1.db, s=
+ki.db, and
+<br>&gt;&gt; &gt;&gt; Friends"
+<br>&gt;&gt; &gt;&gt; group.
+<br>&gt;&gt; &gt;&gt; To unsubscribe from this group and stop receiving ema=
+ils from it, send
+<br>&gt;&gt; &gt;&gt; an
+<br>&gt;&gt; &gt;&gt; email to <a>opensport+...@googlegroups.com</a><wbr>.
+<br>&gt;&gt; &gt;&gt; For more options, visit <a href=3D"https://groups.goo=
+gle.com/groups/opt_out" target=3D"_blank" onmousedown=3D"this.href=3D'https=
+://groups.google.com/groups/opt_out';return true;" onclick=3D"this.href=3D'=
+https://groups.google.com/groups/opt_out';return true;">https://groups.goog=
+le.com/<wbr>groups/opt_out</a>.
+<br>&gt;
+<br>&gt; --
+<br>&gt; You received this message because you are subscribed to the Google=
+ Groups
+<br>&gt; "Open Sport(s) Database - football.db, formula1.db, ski.db, and Fr=
+iends"
+<br>&gt; group.
+<br>&gt; To unsubscribe from this group and stop receiving emails from it, =
+send an
+<br>&gt; email to <a href=3D"javascript:" target=3D"_blank" gdf-obfuscated-=
+mailto=3D"ssPAZUv3oq4J" onmousedown=3D"this.href=3D'javascript:';return tru=
+e;" onclick=3D"this.href=3D'javascript:';return true;">opensport+...@<wbr>g=
+ooglegroups.com</a>.
+<br>&gt; For more options, visit <a href=3D"https://groups.google.com/group=
+s/opt_out" target=3D"_blank" onmousedown=3D"this.href=3D'https://groups.goo=
+gle.com/groups/opt_out';return true;" onclick=3D"this.href=3D'https://group=
+s.google.com/groups/opt_out';return true;">https://groups.google.com/<wbr>g=
+roups/opt_out</a>.
+<br></blockquote></div></div>
+------=_Part_2959_30981428.1396547482203--
+
+------=_Part_2958_28417398.1396547482203--
+

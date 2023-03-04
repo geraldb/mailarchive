@@ -1,0 +1,267 @@
+From 6383913175522213888@xxx Mon Feb 06 08:43:33 +0000 2017
+X-GM-THRID: 6382859402075963392
+Date: Mon, 6 Feb 2017 00:43:33 -0800 (PST)
+From: "Maria A. Flores" <m.angeles.flores@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <ff33bb93-0ff1-4e6b-8e87-b187f7829f08@googlegroups.com>
+In-Reply-To: <aa67484d-ab88-429f-bd5a-79268ad30455@googlegroups.com>
+References: <a8f9ce84-6e89-4701-9611-e5c591602483@googlegroups.com>
+ <CAAxEZd9_HdroQq+-habSdB5GPtgox=YD=MitQ3OuoLct57jF2A@mail.gmail.com>
+ <aa67484d-ab88-429f-bd5a-79268ad30455@googlegroups.com>
+Subject: Re: [opensport] Champions League full database
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1194_1649259009.1486370613249"
+X-Google-Token: ELXu4MQFteQ47dbRHPs0
+X-Google-IP: 2.96.47.212
+
+------=_Part_1194_1649259009.1486370613249
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1195_846971139.1486370613249"
+
+------=_Part_1195_846971139.1486370613249
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello again and sorry for the double posts,
+
+I solved this problem and other similars changing the keys for some teams=
+=20
+in the data files (id for Spara Praha was spartapraha instead of praha, the=
+=20
+same for St.Petersburg, and so on).
+But now, taking a look at the logs, I realised that some world cities have=
+=20
+problems in the format of the txt, so I tried to solved it, but it seems=20
+that the task is taking me too much time. I don't know really what is the=
+=20
+problem, the import just stops importing this line and other similar:
+
+Pex=CC=8Cawar|Pish=C5=8Dr|Pish=C4=81war [Peshawar|Pekhawar], 1_218_773, m:1=
+.8m  ## Khyber=20
+Pakhtunkhwa
+
+
+h,  Hovedstaden [Greater Copenhagen|Capital Region], Hiller=C3=B8d, 2_561 k=
+m=C2=B2,=20
+1_714_486   ## use h - why? why not? in common use?
+sj, Sj=C3=A6lland [Zealand],                              Sor=C3=B8,     7_=
+273 km=C2=B2,  =20
+817_907   ## use sl - why? why not? in common use?=20
+
+
+I could avoid the error commenting or deleting these lines, but for sure=20
+this is not a solution. Any ideas?
+
+Also, I've tried to use the prebuilt db in 2014 and then importing the new=
+=20
+Champions League data using:
+
+sportdb --dbname football.db update --include 'europe-champions-league'
+
+
+I tried importing all the data and got this error:
+
+*** error: SQLite3::ConstraintException: NOT NULL constraint failed:=20
+persons.country_id: INSERT INTO "persons" ("key", "name", "created_at",=20
+"updated_at") VALUES (?, ?, ?, ?)
+
+
+
+Then, I deleted the previous data, up to 2013-2014 competition, and the=20
+problem I'm facing is this one, which I have no idea how to tackle it:
+
+
+[info] parsing data (fixture) 'europe-champions-league!/2013-14/cl'=20
+(europe-champions-league/2013-14/cl.yml)...
+*** [DEPRECATED] old event config format w/ yaml, please use new plain text=
+=20
+format >europe-champions-league/2013-14/cl.yml<
+[info]   build_title_table_for - deprecated API - use TitleMapper.new=20
+instead
+nil
+[warn]   !!!! no round match found for date 2013-09-19T12:00:00+00:00
+
+*** error: 70277522327500 is out of range for ActiveRecord::Type::Integer=
+=20
+with limit 4
+
+
+Any clues about how to continue?
+
+Thank you
+
+El viernes, 3 de febrero de 2017, 23:27:20 (UTC), Maria A. Flores escribi=
+=C3=B3:
+>
+> Hello Gerald,
+>
+> Thank you for your quick reply.
+> I'm trying to build a Champions League database, but it seems that I'm=20
+> missing something.
+> I'm using this Datafile:
+>
+> world  'world.db', setup: 'countries'
+> football 'clubs'
+>
+> football 'at-austria',     setup: 'clubs'
+> football 'de-deutschland', setup: 'clubs'
+> football 'eng-england',    setup: 'clubs'
+> football 'es-espana',      setup: 'clubs'
+> football 'it-italy',       setup: 'clubs'
+> football 'fr-france',      setup: 'clubs'
+> football 'ch-confoederatio-helvetica', setup: 'clubs'
+> football 'ru-russia'
+>
+> football 'europe-champions-league'
+> football 'europe-champions-league', setup: 'history'
+>
+> Now I get this error:
+> [fatal] event reader - record for team key >praha< not found
+>
+> As I'm getting the Czech Republic clubs in the generic "clubs", maybe the=
+=20
+> problem is that there isn't a club called Praha (it seems that there are=
+=20
+> more than one club in Praha city).
+>
+> Also, how could I import only the teams from Russia data, instead of all=
+=20
+> the data?
+>
+> Kind regards
+>
+>
+> El viernes, 3 de febrero de 2017, 18:35:25 (UTC), Gerald Bauer escribi=C3=
+=B3:
+>>
+>> Hello,=20
+>>
+>>   Welcome to football.db.=20
+>>
+>> > [fatal] event reader - record for team key >moskva< not found=20
+>>
+>>    You might be missing the russian teams / clubs. See the /ru-russia=20
+>> repo [1] it includes in teams.txt:=20
+>>
+>> moskva, Moskva, city: Moscow=20
+>>
+>> Cheers.=20
+>>
+>> [1] https://github.com/openfootball/ru-russia/blob/master/teams.txt=20
+>>
+>
+------=_Part_1195_846971139.1486370613249
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello again and sorry for the double posts,<div><br></div>=
+<div>I solved this problem and other similars changing the keys for some te=
+ams in the data files (id for Spara Praha=C2=A0was spartapraha instead of p=
+raha, the same for St.Petersburg, and so on).</div><div>But now, taking a l=
+ook at the logs, I realised that some world cities have problems in the for=
+mat of the txt, so I tried to solved it, but it seems that the task is taki=
+ng me too much time. I don&#39;t know really what is the problem, the impor=
+t just stops importing this line and other similar:</div><div><br></div><bl=
+ockquote style=3D"margin: 0 0 0 40px; border: none; padding: 0px;"><div>Pex=
+=CC=8Cawar|Pish=C5=8Dr|Pish=C4=81war [Peshawar|Pekhawar], 1_218_773, m:1.8m=
+ =C2=A0## Khyber Pakhtunkhwa</div></blockquote><div><br></div><blockquote s=
+tyle=3D"margin: 0 0 0 40px; border: none; padding: 0px;"><div>h, =C2=A0Hove=
+dstaden [Greater Copenhagen|Capital Region], Hiller=C3=B8d, 2_561 km=C2=B2,=
+ 1_714_486 =C2=A0 ## use h - why? why not? in common use?</div><div>sj, Sj=
+=C3=A6lland [Zealand], =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0Sor=C3=B8, =C2=A0 =C2=
+=A0 7_273 km=C2=B2, =C2=A0 817_907 =C2=A0 ## use sl - why? why not? in comm=
+on use?=C2=A0</div></blockquote><div><div><br></div><div>I could avoid the =
+error commenting or deleting these lines, but for sure this is not a soluti=
+on. Any ideas?</div><div><br></div></div><div><div>Also, I&#39;ve tried to =
+use the prebuilt db in 2014 and then importing the new Champions League dat=
+a using:</div></div><blockquote style=3D"margin: 0 0 0 40px; border: none; =
+padding: 0px;"><div><div>sportdb --dbname football.db update --include &#39=
+;europe-champions-league&#39;</div></div></blockquote><div><div><br></div><=
+div>I tried importing all the data and got this error:</div><div><br></div>=
+</div><blockquote style=3D"margin: 0 0 0 40px; border: none; padding: 0px;"=
+><div><div><div>*** error: SQLite3::ConstraintException: NOT NULL constrain=
+t failed: persons.country_id: INSERT INTO &quot;persons&quot; (&quot;key&qu=
+ot;, &quot;name&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALU=
+ES (?, ?, ?, ?)</div></div></div></blockquote><div><div><br></div><div><br>=
+</div><div>Then, I deleted the previous data, up to 2013-2014 competition, =
+and the problem I&#39;m facing is this one, which I have no idea how to tac=
+kle it:<br></div></div><blockquote style=3D"margin: 0 0 0 40px; border: non=
+e; padding: 0px;"><div><div><br></div></div><div><div><div>[info] parsing d=
+ata (fixture) &#39;europe-champions-league!/2013-14/cl&#39; (europe-champio=
+ns-league/2013-14/cl.yml)...</div></div></div><div><div><div>*** [DEPRECATE=
+D] old event config format w/ yaml, please use new plain text format &gt;eu=
+rope-champions-league/2013-14/cl.yml&lt;</div></div></div><div><div><div>[i=
+nfo] =C2=A0 build_title_table_for - deprecated API - use TitleMapper.new in=
+stead</div></div></div><div><div><div>nil</div></div></div><div><div><div>[=
+warn] =C2=A0 !!!! no round match found for date 2013-09-19T12:00:00+00:00</=
+div></div></div><div><div><div><br></div></div></div><div><div><div>*** err=
+or: 70277522327500 is out of range for ActiveRecord::Type::Integer with lim=
+it 4</div></div></div></blockquote><div><div><br></div><div>Any clues about=
+ how to continue?</div><div><br></div><div>Thank you</div><div><br>El viern=
+es, 3 de febrero de 2017, 23:27:20 (UTC), Maria A. Flores escribi=C3=B3:<bl=
+ockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border=
+-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">Hello Gerald,<di=
+v><br></div><div>Thank you for your quick reply.</div><div>I&#39;m trying t=
+o build a Champions League database, but it seems that I&#39;m missing some=
+thing.</div><div>I&#39;m using this Datafile:</div><div><br></div><div><div=
+><font face=3D"courier new, monospace">world =C2=A0&#39;world.db&#39;, setu=
+p: &#39;countries&#39;</font></div><div><font face=3D"courier new, monospac=
+e">football &#39;clubs&#39;</font></div><div><font face=3D"courier new, mon=
+ospace"><br></font></div><div><font face=3D"courier new, monospace">footbal=
+l &#39;at-austria&#39;, =C2=A0 =C2=A0 setup: &#39;clubs&#39;</font></div><d=
+iv><font face=3D"courier new, monospace">football &#39;de-deutschland&#39;,=
+ setup: &#39;clubs&#39;</font></div><div><font face=3D"courier new, monospa=
+ce">football &#39;eng-england&#39;, =C2=A0 =C2=A0setup: &#39;clubs&#39;</fo=
+nt></div><div><font face=3D"courier new, monospace">football &#39;es-espana=
+&#39;, =C2=A0 =C2=A0 =C2=A0setup: &#39;clubs&#39;</font></div><div><font fa=
+ce=3D"courier new, monospace">football &#39;it-italy&#39;, =C2=A0 =C2=A0 =
+=C2=A0 setup: &#39;clubs&#39;</font></div><div><font face=3D"courier new, m=
+onospace">football &#39;fr-france&#39;, =C2=A0 =C2=A0 =C2=A0setup: &#39;clu=
+bs&#39;</font></div><div><font face=3D"courier new, monospace">football &#3=
+9;ch-confoederatio-helvetica&#39;, setup: &#39;clubs&#39;</font></div><div>=
+<font face=3D"courier new, monospace">football &#39;ru-russia&#39;</font></=
+div><div><font face=3D"courier new, monospace"><br></font></div><div><font =
+face=3D"courier new, monospace">football &#39;europe-champions-league&#39;<=
+/font></div><div><font face=3D"courier new, monospace">football &#39;europe=
+-champions-league&#39;, setup: &#39;history&#39;</font></div></div><div><br=
+></div><div>Now I get this error:</div><div><font face=3D"courier new, mono=
+space">[fatal] event reader - record for team key &gt;praha&lt; not found</=
+font><br></div><div><br></div><div>As I&#39;m getting the Czech Republic cl=
+ubs in the generic &quot;clubs&quot;, maybe the problem is that there isn&#=
+39;t a club called Praha (it seems that there are more than one club in Pra=
+ha city).</div><div><br></div><div>Also, how could I import only the teams =
+from Russia data, instead of all the data?</div><div><br></div><div>Kind re=
+gards</div><div><br></div><div><br>El viernes, 3 de febrero de 2017, 18:35:=
+25 (UTC), Gerald Bauer escribi=C3=B3:<blockquote class=3D"gmail_quote" styl=
+e=3D"margin:0;margin-left:0.8ex;border-left:1px #ccc solid;padding-left:1ex=
+">Hello,
+<br>
+<br>=C2=A0 Welcome to football.db.
+<br>
+<br>&gt; [fatal] event reader - record for team key &gt;moskva&lt; not foun=
+d
+<br>
+<br>=C2=A0 =C2=A0You might be missing the russian teams / clubs. See the /r=
+u-russia
+<br>repo [1] it includes in teams.txt:
+<br>
+<br>moskva, Moskva, city: Moscow
+<br>
+<br>Cheers.
+<br>
+<br>[1] <a href=3D"https://github.com/openfootball/ru-russia/blob/master/te=
+ams.txt" rel=3D"nofollow" target=3D"_blank" onmousedown=3D"this.href=3D&#39=
+;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2F=
+ru-russia%2Fblob%2Fmaster%2Fteams.txt\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQ=
+jCNG845oIZoeWgP8TjX99tsP8cUz97A&#39;;return true;" onclick=3D"this.href=3D&=
+#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball=
+%2Fru-russia%2Fblob%2Fmaster%2Fteams.txt\x26sa\x3dD\x26sntz\x3d1\x26usg\x3d=
+AFQjCNG845oIZoeWgP8TjX99tsP8cUz97A&#39;;return true;">https://github.com/<w=
+br>openfootball/ru-russia/blob/<wbr>master/teams.txt</a>
+<br></blockquote></div></div></blockquote></div></div></div>
+------=_Part_1195_846971139.1486370613249--
+
+------=_Part_1194_1649259009.1486370613249--
+

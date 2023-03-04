@@ -1,0 +1,75 @@
+From 6532123047651966976@xxx Mon Mar 12 18:13:34 +0000 2018
+X-GM-THRID: 6531065892340498432
+Date: Mon, 12 Mar 2018 11:13:33 -0700 (PDT)
+From: Ayush Sharma <ayush.sharma@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <8d07d09d-061a-4895-a92f-52145a79b76c@googlegroups.com>
+In-Reply-To: <CAAxEZd_18x5mmB+ncSe1AOvQjDHh4KHi1s-JpQd4k9iBxQPTSg@mail.gmail.com>
+References: <8a75b1f4-9979-436f-bacd-a439f06c4609@googlegroups.com>
+ <CAAxEZd_18x5mmB+ncSe1AOvQjDHh4KHi1s-JpQd4k9iBxQPTSg@mail.gmail.com>
+Subject: Re: [opensport] Goals missing from leagues
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_15990_822831703.1520878413849"
+X-Google-Token: EM2Gm9UFcGkMGPJUqGA0
+X-Google-IP: 2001:4898:e008:1:70d8:10b7:804c:5391
+
+------=_Part_15990_822831703.1520878413849
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_15991_922501638.1520878413849"
+
+------=_Part_15991_922501638.1520878413849
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+On executing sportdb build in world cup directory, you get non-empty goals 
+table. When the same command is executed for es-espana, the goals tables is 
+empty. Which means goals data is not present for anything but world cup. Do 
+you think, we can bring in data about goals for every league ?
+
+>> select * from goals; returns nothing for anything but world cup
+
+On Saturday, 10 March 2018 07:22:05 UTC-8, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    can you show some examples what you mean by goals table on how they 
+> are different? 
+>
+> > the schema in which these the yml files are present is different b/w 
+> world cup and leagues. 
+>
+>   Again can you show an example what you mean? Sorry I don't understand. 
+>
+>    Cheers. Prost. Greetings from Vienna. 
+>
+
+------=_Part_15991_922501638.1520878413849
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">On executing sportdb build in world cup directory, you get=
+ non-empty goals table. When the same command is executed for=C2=A0es-espan=
+a, the goals tables is empty. Which means goals data is not present for any=
+thing but world cup. Do you think, we can bring in data about goals for eve=
+ry league ?<div><br></div><div>&gt;&gt; select * from goals; returns nothin=
+g for anything but world cup<br><br>On Saturday, 10 March 2018 07:22:05 UTC=
+-8, Gerald Bauer  wrote:<blockquote class=3D"gmail_quote" style=3D"margin: =
+0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 =C2=A0can you show some examples what you mean by goals table on=
+ how they
+<br>are different?
+<br>
+<br>&gt; the schema in which these the yml files are present is different b=
+/w world cup and leagues.
+<br>
+<br>=C2=A0 Again can you show an example what you mean? Sorry I don&#39;t u=
+nderstand.
+<br>
+<br>=C2=A0 =C2=A0Cheers. Prost. Greetings from Vienna.
+<br></blockquote></div></div>
+------=_Part_15991_922501638.1520878413849--
+
+------=_Part_15990_822831703.1520878413849--
+

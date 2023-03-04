@@ -1,0 +1,409 @@
+From 6739556084681277440@xxx Sun Sep 22 17:59:42 +0000 2019
+X-GM-THRID: 6739392979940671488
+Date: Sun, 22 Sep 2019 10:59:41 -0700 (PDT)
+From: Kevin K <Kevin.L.Kimm@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <5e8c7901-7259-440b-98ec-0b495377a2e2@googlegroups.com>
+In-Reply-To: <a500c625-fe58-4e2b-b476-e20d4f788db4@googlegroups.com>
+References: <9c669f31-748c-46e2-8eee-f511453ef631@googlegroups.com>
+ <CAAxEZd_nJHgGpTxuGcq+0h24Z8L7QrAu=jNiYx7JabY2pFzvQA@mail.gmail.com>
+ <a500c625-fe58-4e2b-b476-e20d4f788db4@googlegroups.com>
+Subject: Re: [opensport] Issues with loading into postgresql
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_5006_11125823.1569175181819"
+X-Google-Token: EI3tnuwFNU2uNI-z0jM0
+X-Google-IP: 24.98.149.71
+
+------=_Part_5006_11125823.1569175181819
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5007_240148637.1569175181819"
+
+------=_Part_5007_240148637.1569175181819
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Got confused on creating the gemfile correctly (and how to save it as a 
+gemfile) so I used "bundle init" to create the file and then updated it 
+with your instructions.
+
+Now just getting error message when trying to run "ruby build.rb"
+
+require 'sportdb/import'
+
+
+## SportDb.connect( adapter:  'sqlite3',
+##                 database: './eng.db' )
+DB_CONFIG = {
+  adapter:  'postgresql',
+  encoding: 'unicode',
+  username: 'postgres',
+  password:  'postgres',
+  host: 'localhost',
+  database: 'sports_project',
+  pool:      5,
+  timeout:   5000
+}
+
+ActiveRecord::Base.establish_connection( DB_CONFIG )
+
+## build database schema / tables
+SportDb.create_all
+
+## turn on logging to console
+ActiveRecord::Base.logger = Logger.new(STDOUT)
+
+
+## note: requires a local copy of the football.csv england datasets
+##          see https://github.com/footballcsv/england
+pack = CsvMatchImporter.new( './england' )
+pack.import_leagues
+
+Terminal Output with Error:
+
+> macbook-airs-MacBook-Air:import standard_user$ ls
+> Gemfile        build.rb    england
+> Gemfile.lock    bundle.rb    sport.db
+> macbook-airs-MacBook-Air:import standard_user$ ruby ./build.rb
+> sportdb-countries/0.2.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+> alphabets/0.1.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+> sportdb-clubs/0.2.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+> sportdb-leagues/0.1.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+> fifa/1.0.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+> footballdb-clubs/1.0.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+> sportdb-config/0.8.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+> sportdb-text/0.3.3 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+> activerecord-utils/0.4.0 (activerecord/6.0.0) on Ruby 2.6.4 (2019-08-28) 
+> [x86_64-darwin18]
+>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+> >WorldDb::Model::Country<
+>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+> >WorldDb::Model::StateBase<
+>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+> >WorldDb::Model::CityBase<
+> sportdb-import/0.2.4 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]
+> Traceback (most recent call last):
+>     12: from ./build.rb:17:in `<main>'
+>     11: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_handling.rb:51:in 
+> `establish_connection'
+>     10: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:1044:in 
+> `establish_connection'
+>      9: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_adapters/connection_specification.rb:170:in 
+> `spec'
+>      8: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib/active_support/dependencies.rb:325:in 
+> `require'
+>      7: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib/active_support/dependencies.rb:291:in 
+> `load_dependency'
+>      6: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib/active_support/dependencies.rb:325:in 
+> `block in require'
+>      5: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in 
+> `require'
+>      4: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in 
+> `require'
+>      3: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_adapters/postgresql_adapter.rb:4:in 
+> `<top (required)>'
+>      2: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_gem.rb:65:in 
+> `gem'
+>      1: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:323:in 
+> `to_spec'
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:311:in 
+> `to_specs': Could not find 'pg' (>= 0.18, < 2.0) among 52 total gem(s) 
+> (Gem::MissingSpecError)
+> Checked in 
+> 'GEM_PATH=/Users/standard_user/.gem/ruby/2.6.0:/usr/local/lib/ruby/gems/2.6.0:/usr/local/Cellar/ruby/2.6.4_2/lib/ruby/gems/2.6.0', 
+> execute `gem env` for more information
+>     13: from ./build.rb:17:in `<main>'
+>     12: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_handling.rb:51:in 
+> `establish_connection'
+>     11: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:1044:in 
+> `establish_connection'
+>     10: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_adapters/connection_specification.rb:170:in 
+> `spec'
+>      9: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib/active_support/dependencies.rb:325:in 
+> `require'
+>      8: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib/active_support/dependencies.rb:291:in 
+> `load_dependency'
+>      7: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib/active_support/dependencies.rb:325:in 
+> `block in require'
+>      6: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:34:in 
+> `require'
+>      5: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:130:in 
+> `rescue in require'
+>      4: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:130:in 
+> `require'
+>      3: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_adapters/postgresql_adapter.rb:4:in 
+> `<top (required)>'
+>      2: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_gem.rb:65:in 
+> `gem'
+>      1: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:323:in 
+> `to_spec'
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:311:in 
+> `to_specs': Could not find 'pg' (>= 0.18, < 2.0) among 52 total gem(s) 
+> (Gem::MissingSpecError)
+> Checked in 
+> 'GEM_PATH=/Users/standard_user/.gem/ruby/2.6.0:/usr/local/lib/ruby/gems/2.6.0:/usr/local/Cellar/ruby/2.6.4_2/lib/ruby/gems/2.6.0', 
+> execute `gem env` for more information
+>     13: from ./build.rb:17:in `<main>'
+>     12: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_handling.rb:51:in 
+> `establish_connection'
+>     11: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:1044:in 
+> `establish_connection'
+>     10: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_adapters/connection_specification.rb:170:in 
+> `spec'
+>      9: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib/active_support/dependencies.rb:325:in 
+> `require'
+>      8: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib/active_support/dependencies.rb:291:in 
+> `load_dependency'
+>      7: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib/active_support/dependencies.rb:325:in 
+> `block in require'
+>      6: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:34:in 
+> `require'
+>      5: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:130:in 
+> `rescue in require'
+>      4: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:130:in 
+> `require'
+>      3: from 
+> /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_adapters/postgresql_adapter.rb:4:in 
+> `<top (required)>'
+>      2: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_gem.rb:65:in 
+> `gem'
+>      1: from 
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:323:in 
+> `to_spec'
+> /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:311:in 
+> `to_specs': Error loading the 'postgresql' Active Record adapter. Missing a 
+> gem it depends on? Could not find 'pg' (>= 0.18, < 2.0) among 52 total 
+> gem(s) (LoadError)
+> Checked in 
+> 'GEM_PATH=/Users/standard_user/.gem/ruby/2.6.0:/usr/local/lib/ruby/gems/2.6.0:/usr/local/Cellar/ruby/2.6.4_2/lib/ruby/gems/2.6.0', 
+> execute `gem env` for more information
+>
+
+On Sunday, September 22, 2019 at 9:28:29 AM UTC-4, Kevin K wrote:
+>
+> This is fantastic. Will give it a go today and provide feedback - but from 
+> a first glance it looks very easy to follow.
+>
+> Thanks for all of your hard work!
+>
+> On Sunday, September 22, 2019 at 4:39:42 AM UTC-4, Gerald Bauer wrote:
+>>
+>> Hello, 
+>>
+>>    I've written up / published a new from zero / scratch getting 
+>> started guide for football.csv packages [1] that includes Step 0 for 
+>> setting up / installing all libraries (and dependencies). 
+>>
+>>    Cheers. Prost. 
+>>
+>> [1] 
+>> https://github.com/sportdb/docs/blob/master/working-with-csv-packages.md 
+>>
+>
+------=_Part_5007_240148637.1569175181819
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Got confused on creating the gemfile correctly (and h=
+ow to save it as a gemfile) so I used &quot;<code>bundle init&quot; <span s=
+tyle=3D"font-family: arial, sans-serif;">to create the file and then update=
+d it with your instructions</span>.<br></code></div><br>Now just getting er=
+ror message when trying to run &quot;ruby build.rb&quot;<div><code><br></co=
+de></div><div><div style=3D"margin-left: 40px;"><code>require &#39;sportdb/=
+import&#39;</code><br><code></code><br><code></code><br><code>## SportDb.co=
+nnect( adapter:=C2=A0 &#39;sqlite3&#39;,</code><br><code>##=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0 database: &#39;./eng.db&#39; )</code><br><code>DB_CONFIG =3D {</code=
+><br><code>=C2=A0 adapter:=C2=A0 &#39;postgresql&#39;,</code><br><code>=C2=
+=A0 encoding: &#39;unicode&#39;,</code><br><code>=C2=A0 username: &#39;post=
+gres&#39;,</code><br><code>=C2=A0 password:=C2=A0 &#39;postgres&#39;,</code=
+><br><code>=C2=A0 host: &#39;localhost&#39;,</code><br><code>=C2=A0 databas=
+e: &#39;sports_project&#39;,</code><br><code>=C2=A0 pool:=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0 5,</code><br><code>=C2=A0 timeout:=C2=A0=C2=A0 5000</code><br>=
+<code>}</code><br><code></code><br><code>ActiveRecord::Base.establish_conne=
+ction( DB_CONFIG )</code><br><code></code><br><code>## build database schem=
+a / tables</code><br><code>SportDb.create_all</code><br><code></code><br><c=
+ode>## turn on logging to console</code><br><code>ActiveRecord::Base.logger=
+ =3D Logger.new(STDOUT)</code><br><code></code><br><code></code><br><code>#=
+# note: requires a local copy of the football.csv england datasets</code><b=
+r><code>##=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 see https:=
+//github.com/footballcsv/england</code><br><code>pack =3D CsvMatchImporter.=
+new( &#39;./england&#39; )</code><br><code>pack.import_leagues</code><br><c=
+ode></code></div><code><br></code></div><div>Terminal Output with Error:<br=
+></div><blockquote class=3D"gmail_quote" style=3D"margin: 0px 0px 0px 0.8ex=
+; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;"><div><span=
+ style=3D"font-family: courier new, monospace;">macbook-airs-MacBook-Air:im=
+port standard_user$ ls<br>Gemfile=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 buil=
+d.rb=C2=A0=C2=A0=C2=A0 england<br>Gemfile.lock=C2=A0=C2=A0=C2=A0 bundle.rb=
+=C2=A0=C2=A0=C2=A0 sport.db<br>macbook-airs-MacBook-Air:import standard_use=
+r$ ruby ./build.rb<br>sportdb-countries/0.2.0 on Ruby 2.6.4 (2019-08-28) [x=
+86_64-darwin18]<br>alphabets/0.1.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwi=
+n18]<br>sportdb-clubs/0.2.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]<br=
+>sportdb-leagues/0.1.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]<br>fifa=
+/1.0.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]<br>footballdb-clubs/1.0=
+.0 on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]<br>sportdb-config/0.8.0 on =
+Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]<br>sportdb-text/0.3.3 on Ruby 2.6=
+.4 (2019-08-28) [x86_64-darwin18]<br>activerecord-utils/0.4.0 (activerecord=
+/6.0.0) on Ruby 2.6.4 (2019-08-28) [x86_64-darwin18]<br>=C2=A0 [TagDb.has_m=
+any_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Mode=
+l::Country&lt;<br>=C2=A0 [TagDb.has_many_tags] adding taggings n tags has_m=
+any assocs to model &gt;WorldDb::Model::StateBase&lt;<br>=C2=A0 [TagDb.has_=
+many_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Mod=
+el::CityBase&lt;<br>sportdb-import/0.2.4 on Ruby 2.6.4 (2019-08-28) [x86_64=
+-darwin18]<br>Traceback (most recent call last):<br>=C2=A0=C2=A0=C2=A0 12: =
+from ./build.rb:17:in `&lt;main&gt;&#39;<br>=C2=A0=C2=A0=C2=A0 11: from /us=
+r/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/conne=
+ction_handling.rb:51:in `establish_connection&#39;<br>=C2=A0=C2=A0=C2=A0 10=
+: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_re=
+cord/connection_adapters/abstract/connection_pool.rb:1044:in `establish_con=
+nection&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A09: from /usr/local/lib/ruby/gems/2=
+.6.0/gems/activerecord-6.0.0/lib/active_record/connection_adapters/connecti=
+on_specification.rb:170:in `spec&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A08: from /=
+usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib/active_support/d=
+ependencies.rb:325:in `require&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A07: from /us=
+r/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib/active_support/dep=
+endencies.rb:291:in `load_dependency&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A06: fr=
+om /usr/local/lib/ruby/gems/2.6.0/gems/activesupport-6.0.0/lib/active_suppo=
+rt/dependencies.rb:325:in `block in require&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=
+=A05: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/=
+kernel_require.rb:54:in `require&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A04: from /=
+usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_requi=
+re.rb:54:in `require&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A03: from /usr/local/li=
+b/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_adap=
+ters/postgresql_adapter.rb:4:in `&lt;top (required)&gt;&#39;<br>=C2=A0=C2=
+=A0=C2=A0 =C2=A02: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubyg=
+ems/core_ext/kernel_gem.rb:65:in `gem&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A01: f=
+rom /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:32=
+3:in `to_spec&#39;<br>/usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygem=
+s/dependency.rb:311:in `to_specs&#39;: Could not find &#39;pg&#39; (&gt;=3D=
+ 0.18, &lt; 2.0) among 52 total gem(s) (Gem::MissingSpecError)<br>Checked i=
+n &#39;GEM_PATH=3D/Users/standard_user/.gem/ruby/2.6.0:/usr/local/lib/ruby/=
+gems/2.6.0:/usr/local/Cellar/ruby/2.6.4_2/lib/ruby/gems/2.6.0&#39;, execute=
+ `gem env` for more information<br>=C2=A0=C2=A0=C2=A0 13: from ./build.rb:1=
+7:in `&lt;main&gt;&#39;<br>=C2=A0=C2=A0=C2=A0 12: from /usr/local/lib/ruby/=
+gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_handling.rb=
+:51:in `establish_connection&#39;<br>=C2=A0=C2=A0=C2=A0 11: from /usr/local=
+/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record/connection_a=
+dapters/abstract/connection_pool.rb:1044:in `establish_connection&#39;<br>=
+=C2=A0=C2=A0=C2=A0 10: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecor=
+d-6.0.0/lib/active_record/connection_adapters/connection_specification.rb:1=
+70:in `spec&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A09: from /usr/local/lib/ruby/ge=
+ms/2.6.0/gems/activesupport-6.0.0/lib/active_support/dependencies.rb:325:in=
+ `require&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A08: from /usr/local/lib/ruby/gems=
+/2.6.0/gems/activesupport-6.0.0/lib/active_support/dependencies.rb:291:in `=
+load_dependency&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A07: from /usr/local/lib/rub=
+y/gems/2.6.0/gems/activesupport-6.0.0/lib/active_support/dependencies.rb:32=
+5:in `block in require&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A06: from /usr/local/=
+Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:34:i=
+n `require&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A05: from /usr/local/Cellar/ruby/=
+2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:130:in `rescue i=
+n require&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A04: from /usr/local/Cellar/ruby/2=
+.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:130:in `require&#=
+39;<br>=C2=A0=C2=A0=C2=A0 =C2=A03: from /usr/local/lib/ruby/gems/2.6.0/gems=
+/activerecord-6.0.0/lib/active_record/connection_adapters/postgresql_adapte=
+r.rb:4:in `&lt;top (required)&gt;&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A02: from =
+/usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_gem.=
+rb:65:in `gem&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A01: from /usr/local/Cellar/ru=
+by/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:323:in `to_spec&#39;<br>/u=
+sr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:311:in `=
+to_specs&#39;: Could not find &#39;pg&#39; (&gt;=3D 0.18, &lt; 2.0) among 5=
+2 total gem(s) (Gem::MissingSpecError)<br>Checked in &#39;GEM_PATH=3D/Users=
+/standard_user/.gem/ruby/2.6.0:/usr/local/lib/ruby/gems/2.6.0:/usr/local/Ce=
+llar/ruby/2.6.4_2/lib/ruby/gems/2.6.0&#39;, execute `gem env` for more info=
+rmation<br>=C2=A0=C2=A0=C2=A0 13: from ./build.rb:17:in `&lt;main&gt;&#39;<=
+br>=C2=A0=C2=A0=C2=A0 12: from /usr/local/lib/ruby/gems/2.6.0/gems/activere=
+cord-6.0.0/lib/active_record/connection_handling.rb:51:in `establish_connec=
+tion&#39;<br>=C2=A0=C2=A0=C2=A0 11: from /usr/local/lib/ruby/gems/2.6.0/gem=
+s/activerecord-6.0.0/lib/active_record/connection_adapters/abstract/connect=
+ion_pool.rb:1044:in `establish_connection&#39;<br>=C2=A0=C2=A0=C2=A0 10: fr=
+om /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.0.0/lib/active_record=
+/connection_adapters/connection_specification.rb:170:in `spec&#39;<br>=C2=
+=A0=C2=A0=C2=A0 =C2=A09: from /usr/local/lib/ruby/gems/2.6.0/gems/activesup=
+port-6.0.0/lib/active_support/dependencies.rb:325:in `require&#39;<br>=C2=
+=A0=C2=A0=C2=A0 =C2=A08: from /usr/local/lib/ruby/gems/2.6.0/gems/activesup=
+port-6.0.0/lib/active_support/dependencies.rb:291:in `load_dependency&#39;<=
+br>=C2=A0=C2=A0=C2=A0 =C2=A07: from /usr/local/lib/ruby/gems/2.6.0/gems/act=
+ivesupport-6.0.0/lib/active_support/dependencies.rb:325:in `block in requir=
+e&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A06: from /usr/local/Cellar/ruby/2.6.4_2/l=
+ib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:34:in `require&#39;<br>=
+=C2=A0=C2=A0=C2=A0 =C2=A05: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.=
+6.0/rubygems/core_ext/kernel_require.rb:130:in `rescue in require&#39;<br>=
+=C2=A0=C2=A0=C2=A0 =C2=A04: from /usr/local/Cellar/ruby/2.6.4_2/lib/ruby/2.=
+6.0/rubygems/core_ext/kernel_require.rb:130:in `require&#39;<br>=C2=A0=C2=
+=A0=C2=A0 =C2=A03: from /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-6.=
+0.0/lib/active_record/connection_adapters/postgresql_adapter.rb:4:in `&lt;t=
+op (required)&gt;&#39;<br>=C2=A0=C2=A0=C2=A0 =C2=A02: from /usr/local/Cella=
+r/ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/core_ext/kernel_gem.rb:65:in `gem&#3=
+9;<br>=C2=A0=C2=A0=C2=A0 =C2=A01: from /usr/local/Cellar/ruby/2.6.4_2/lib/r=
+uby/2.6.0/rubygems/dependency.rb:323:in `to_spec&#39;<br>/usr/local/Cellar/=
+ruby/2.6.4_2/lib/ruby/2.6.0/rubygems/dependency.rb:311:in `to_specs&#39;: E=
+rror loading the &#39;postgresql&#39; Active Record adapter. Missing a gem =
+it depends on? Could not find &#39;pg&#39; (&gt;=3D 0.18, &lt; 2.0) among 5=
+2 total gem(s) (LoadError)<br>Checked in &#39;GEM_PATH=3D/Users/standard_us=
+er/.gem/ruby/2.6.0:/usr/local/lib/ruby/gems/2.6.0:/usr/local/Cellar/ruby/2.=
+6.4_2/lib/ruby/gems/2.6.0&#39;, execute `gem env` for more information<br><=
+/span></div></blockquote><br>On Sunday, September 22, 2019 at 9:28:29 AM UT=
+C-4, Kevin K wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;mar=
+gin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D=
+"ltr"><div>This is fantastic. Will give it a go today and provide feedback =
+- but from a first glance it looks very easy to follow.</div><div><br></div=
+><div>Thanks for all of your hard work!<br></div><br>On Sunday, September 2=
+2, 2019 at 4:39:42 AM UTC-4, Gerald Bauer wrote:<blockquote class=3D"gmail_=
+quote" style=3D"margin:0;margin-left:0.8ex;border-left:1px #ccc solid;paddi=
+ng-left:1ex">Hello,
+<br>
+<br>=C2=A0 =C2=A0I&#39;ve written up / published a new from zero / scratch =
+getting
+<br>started guide for football.csv packages [1] that includes Step 0 for
+<br>setting up / installing all libraries (and dependencies).
+<br>
+<br>=C2=A0 =C2=A0Cheers. Prost.
+<br>
+<br>[1] <a href=3D"https://github.com/sportdb/docs/blob/master/working-with=
+-csv-packages.md" rel=3D"nofollow" target=3D"_blank" onmousedown=3D"this.hr=
+ef=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fsportd=
+b%2Fdocs%2Fblob%2Fmaster%2Fworking-with-csv-packages.md\x26sa\x3dD\x26sntz\=
+x3d1\x26usg\x3dAFQjCNHxCEle5NKynpI0yUTN3yRQUD0BMA&#39;;return true;" onclic=
+k=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.=
+com%2Fsportdb%2Fdocs%2Fblob%2Fmaster%2Fworking-with-csv-packages.md\x26sa\x=
+3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHxCEle5NKynpI0yUTN3yRQUD0BMA&#39;;return t=
+rue;">https://github.com/sportdb/<wbr>docs/blob/master/working-with-<wbr>cs=
+v-packages.md</a>
+<br></blockquote></div></blockquote></div>
+------=_Part_5007_240148637.1569175181819--
+
+------=_Part_5006_11125823.1569175181819--
+

@@ -1,0 +1,315 @@
+From 6835848878134132736@xxx Mon Jun 08 05:44:54 +0000 2020
+X-GM-THRID: 6832099918990016512
+Date: Sun, 7 Jun 2020 22:44:54 -0700 (PDT)
+From: infominer <infominer33@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <391279e5-f498-47b3-a8bd-fa3f212a1a3ao@googlegroups.com>
+In-Reply-To: <CAAxEZd81xd89wSfL12Snp+jdCqJA-Nu39wkpEAj-mSKQ7A0VZw@mail.gmail.com>
+References: <f0632548-bec5-45e9-bc99-5195ea0bcfe4@googlegroups.com>
+ <CAAxEZd81xd89wSfL12Snp+jdCqJA-Nu39wkpEAj-mSKQ7A0VZw@mail.gmail.com>
+Subject: Re: [wwwmake:509] identosphere.net v 1.0 [pluto feedreader]
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1143_212211695.1591595094677"
+X-Google-Token: ENag9_YF6zfFUHy4fG40
+X-Google-IP: 68.133.67.53
+
+------=_Part_1143_212211695.1591595094677
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1144_692304375.1591595094678"
+
+------=_Part_1144_692304375.1591595094678
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Another milestone was grabbing images from the content\summary and then 
+displaying them with reasonable css max-width, and only over https
+
+<% if item.content %>
+<%= sanitize( item.content ) %>
+<% 
+doc = Nokogiri::HTML(item.content)
+src = doc.css("img").attribute('src').to_s
+%> 
+<% if src.include? "http:" %>
+<% src.sub!(/http:/,'https:') %>
+<% end %>
+<% if src.nil? %> 
+<% elsif src.include? "stat?event=post.clientViewed" %>
+<% elsif src.include? "profile.jpg" %>
+<% else %>
+<div class="photo">
+<%= image_tag("#{ src }") %>
+</div>
+<% end %> 
+<% elsif item.summary %>
+<%= sanitize( item.summary ) %>
+<% 
+doc = Nokogiri::HTML(item.summary)
+src = doc.css("img").attribute('src').to_s
+%> 
+<% if src.include? "http:" %>
+<% src.sub!(/http:/,'https:') %>
+<% end %>
+<% if src.nil? %> 
+<% elsif src.include? "stat?event=post.clientViewed" %>
+<% elsif src.include? "profile.jpg" %>
+<% else %>
+<div class="photo">
+<%= image_tag("#{ src }") %>
+</div>
+<% end %> 
+<% else %>
+-/-
+<% end %>
+
+
+
+All I need now is some overflow protection... now testing... 
+overflow-wrap: break-word;
+the problem is on mobile some long strings overflow... but I think I'll 
+wrangle it
+
+
+
+
+On Friday, May 29, 2020 at 6:29:04 AM UTC-4, Gerald Bauer wrote:
+>
+> Hello,
+>     Thanks for sharing the planet news. And thanks for adding Identosphere 
+> to the planets [1] page.  Keep it up. Cheers. Prost.
+>
+> [1] https://github.com/feedreader/planets
+>
+
+------=_Part_1144_692304375.1591595094678
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Another milestone was grabbing images from the conten=
+t\summary and then displaying them with reasonable css max-width, and only =
+over https</div><div><br></div><div><div style=3D"color: #d4d4d4;background=
+-color: #1e1e1e;font-family: &#39;Droid Sans Mono&#39;, &#39;monospace&#39;=
+, monospace, &#39;Droid Sans Fallback&#39;;font-weight: normal;font-size: 1=
+4px;line-height: 19px;white-space: pre;"><div><span style=3D"color: #569cd6=
+;">&lt;%</span><span style=3D"color: #d4d4d4;"> </span><span style=3D"color=
+: #c586c0;">if</span><span style=3D"color: #d4d4d4;"> </span><span style=3D=
+"color: #9cdcfe;">item</span><span style=3D"color: #d4d4d4;">.</span><span =
+style=3D"color: #dcdcaa;">content</span><span style=3D"color: #d4d4d4;"> </=
+span><span style=3D"color: #569cd6;">%&gt;</span></div><div><span style=3D"=
+color: #d4d4d4;">  </span><span style=3D"color: #569cd6;">&lt;%=3D</span><s=
+pan style=3D"color: #d4d4d4;"> </span><span style=3D"color: #dcdcaa;">sanit=
+ize</span><span style=3D"color: #d4d4d4;">( </span><span style=3D"color: #9=
+cdcfe;">item</span><span style=3D"color: #d4d4d4;">.</span><span style=3D"c=
+olor: #dcdcaa;">content</span><span style=3D"color: #d4d4d4;"> ) </span><sp=
+an style=3D"color: #569cd6;">%&gt;</span></div><div><span style=3D"color: #=
+d4d4d4;">  </span><span style=3D"color: #569cd6;">&lt;%</span><span style=
+=3D"color: #d4d4d4;"> </span></div><div><span style=3D"color: #d4d4d4;">   =
+  </span><span style=3D"color: #9cdcfe;">doc</span><span style=3D"color: #d=
+4d4d4;"> =3D </span><span style=3D"color: #4ec9b0;">Nokogiri</span><span st=
+yle=3D"color: #d4d4d4;">::</span><span style=3D"color: #51b6c4;">HTML</span=
+><span style=3D"color: #d4d4d4;">(</span><span style=3D"color: #9cdcfe;">it=
+em</span><span style=3D"color: #d4d4d4;">.</span><span style=3D"color: #dcd=
+caa;">content</span><span style=3D"color: #d4d4d4;">)</span></div><div><spa=
+n style=3D"color: #d4d4d4;">     </span><span style=3D"color: #9cdcfe;">src=
+</span><span style=3D"color: #d4d4d4;"> =3D </span><span style=3D"color: #9=
+cdcfe;">doc</span><span style=3D"color: #d4d4d4;">.</span><span style=3D"co=
+lor: #dcdcaa;">css</span><span style=3D"color: #d4d4d4;">(</span><span styl=
+e=3D"color: #ce9178;">&quot;img&quot;</span><span style=3D"color: #d4d4d4;"=
+>).</span><span style=3D"color: #dcdcaa;">attribute</span><span style=3D"co=
+lor: #d4d4d4;">(</span><span style=3D"color: #ce9178;">&#39;src&#39;</span>=
+<span style=3D"color: #d4d4d4;">).</span><span style=3D"color: #dcdcaa;">to=
+_s</span></div><div><span style=3D"color: #d4d4d4;">  </span><span style=3D=
+"color: #569cd6;">%&gt;</span><span style=3D"color: #d4d4d4;"> </span></div=
+><div><span style=3D"color: #d4d4d4;">  </span><span style=3D"color: #569cd=
+6;">&lt;%</span><span style=3D"color: #d4d4d4;"> </span><span style=3D"colo=
+r: #c586c0;">if</span><span style=3D"color: #d4d4d4;"> </span><span style=
+=3D"color: #9cdcfe;">src</span><span style=3D"color: #d4d4d4;">.</span><spa=
+n style=3D"color: #dcdcaa;">include?</span><span style=3D"color: #d4d4d4;">=
+ </span><span style=3D"color: #ce9178;">&quot;http:&quot;</span><span style=
+=3D"color: #d4d4d4;"> </span><span style=3D"color: #569cd6;">%&gt;</span></=
+div><div><span style=3D"color: #d4d4d4;">    </span><span style=3D"color: #=
+569cd6;">&lt;%</span><span style=3D"color: #d4d4d4;"> </span><span style=3D=
+"color: #9cdcfe;">src</span><span style=3D"color: #d4d4d4;">.</span><span s=
+tyle=3D"color: #dcdcaa;">sub!</span><span style=3D"color: #d4d4d4;">(</span=
+><span style=3D"color: #d16969;">/http:/</span><span style=3D"color: #d4d4d=
+4;">,</span><span style=3D"color: #ce9178;">&#39;https:&#39;</span><span st=
+yle=3D"color: #d4d4d4;">) </span><span style=3D"color: #569cd6;">%&gt;</spa=
+n></div><div><span style=3D"color: #d4d4d4;">  </span><span style=3D"color:=
+ #569cd6;">&lt;%</span><span style=3D"color: #d4d4d4;"> </span><span style=
+=3D"color: #c586c0;">end</span><span style=3D"color: #d4d4d4;"> </span><spa=
+n style=3D"color: #569cd6;">%&gt;</span></div><div><span style=3D"color: #d=
+4d4d4;">  </span><span style=3D"color: #569cd6;">&lt;%</span><span style=3D=
+"color: #d4d4d4;"> </span><span style=3D"color: #c586c0;">if</span><span st=
+yle=3D"color: #d4d4d4;"> </span><span style=3D"color: #9cdcfe;">src</span><=
+span style=3D"color: #d4d4d4;">.</span><span style=3D"color: #dcdcaa;">nil?=
+</span><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: #569cd=
+6;">%&gt;</span><span style=3D"color: #d4d4d4;"> </span></div><div><span st=
+yle=3D"color: #d4d4d4;">  </span><span style=3D"color: #569cd6;">&lt;%</spa=
+n><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: #c586c0;">e=
+lsif</span><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: #9=
+cdcfe;">src</span><span style=3D"color: #d4d4d4;">.</span><span style=3D"co=
+lor: #dcdcaa;">include?</span><span style=3D"color: #d4d4d4;"> </span><span=
+ style=3D"color: #ce9178;">&quot;stat?event=3Dpost.clientViewed&quot;</span=
+><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: #569cd6;">%&=
+gt;</span></div><div><span style=3D"color: #d4d4d4;">  </span><span style=
+=3D"color: #569cd6;">&lt;%</span><span style=3D"color: #d4d4d4;"> </span><s=
+pan style=3D"color: #c586c0;">elsif</span><span style=3D"color: #d4d4d4;"> =
+</span><span style=3D"color: #9cdcfe;">src</span><span style=3D"color: #d4d=
+4d4;">.</span><span style=3D"color: #dcdcaa;">include?</span><span style=3D=
+"color: #d4d4d4;"> </span><span style=3D"color: #ce9178;">&quot;profile.jpg=
+&quot;</span><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: =
+#569cd6;">%&gt;</span></div><div><span style=3D"color: #d4d4d4;">  </span><=
+span style=3D"color: #569cd6;">&lt;%</span><span style=3D"color: #d4d4d4;">=
+ </span><span style=3D"color: #c586c0;">else</span><span style=3D"color: #d=
+4d4d4;"> </span><span style=3D"color: #569cd6;">%&gt;</span></div><div><spa=
+n style=3D"color: #d4d4d4;">    </span><span style=3D"color: #808080;">&lt;=
+</span><span style=3D"color: #569cd6;">div</span><span style=3D"color: #d4d=
+4d4;"> </span><span style=3D"color: #9cdcfe;">class</span><span style=3D"co=
+lor: #d4d4d4;">=3D</span><span style=3D"color: #ce9178;">&quot;photo&quot;<=
+/span><span style=3D"color: #808080;">&gt;</span></div><div><span style=3D"=
+color: #d4d4d4;">      </span><span style=3D"color: #569cd6;">&lt;%=3D</spa=
+n><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: #dcdcaa;">i=
+mage_tag</span><span style=3D"color: #d4d4d4;">(</span><span style=3D"color=
+: #ce9178;">&quot;</span><span style=3D"color: #569cd6;">#{</span><span sty=
+le=3D"color: #d4d4d4;"> </span><span style=3D"color: #9cdcfe;">src</span><s=
+pan style=3D"color: #d4d4d4;"> </span><span style=3D"color: #569cd6;">}</sp=
+an><span style=3D"color: #ce9178;">&quot;</span><span style=3D"color: #d4d4=
+d4;">) </span><span style=3D"color: #569cd6;">%&gt;</span></div><div><span =
+style=3D"color: #d4d4d4;">    </span><span style=3D"color: #808080;">&lt;/<=
+/span><span style=3D"color: #569cd6;">div</span><span style=3D"color: #8080=
+80;">&gt;</span></div><div><span style=3D"color: #d4d4d4;">  </span><span s=
+tyle=3D"color: #569cd6;">&lt;%</span><span style=3D"color: #d4d4d4;"> </spa=
+n><span style=3D"color: #c586c0;">end</span><span style=3D"color: #d4d4d4;"=
+> </span><span style=3D"color: #569cd6;">%&gt;</span><span style=3D"color: =
+#d4d4d4;">  </span></div><div><span style=3D"color: #569cd6;">&lt;%</span><=
+span style=3D"color: #d4d4d4;"> </span><span style=3D"color: #c586c0;">elsi=
+f</span><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: #9cdc=
+fe;">item</span><span style=3D"color: #d4d4d4;">.</span><span style=3D"colo=
+r: #dcdcaa;">summary</span><span style=3D"color: #d4d4d4;"> </span><span st=
+yle=3D"color: #569cd6;">%&gt;</span></div><div><span style=3D"color: #d4d4d=
+4;">  </span><span style=3D"color: #569cd6;">&lt;%=3D</span><span style=3D"=
+color: #d4d4d4;"> </span><span style=3D"color: #dcdcaa;">sanitize</span><sp=
+an style=3D"color: #d4d4d4;">( </span><span style=3D"color: #9cdcfe;">item<=
+/span><span style=3D"color: #d4d4d4;">.</span><span style=3D"color: #dcdcaa=
+;">summary</span><span style=3D"color: #d4d4d4;"> ) </span><span style=3D"c=
+olor: #569cd6;">%&gt;</span></div><div><span style=3D"color: #d4d4d4;">  </=
+span><span style=3D"color: #569cd6;">&lt;%</span><span style=3D"color: #d4d=
+4d4;"> </span></div><div><span style=3D"color: #d4d4d4;">     </span><span =
+style=3D"color: #9cdcfe;">doc</span><span style=3D"color: #d4d4d4;"> =3D </=
+span><span style=3D"color: #4ec9b0;">Nokogiri</span><span style=3D"color: #=
+d4d4d4;">::</span><span style=3D"color: #51b6c4;">HTML</span><span style=3D=
+"color: #d4d4d4;">(</span><span style=3D"color: #9cdcfe;">item</span><span =
+style=3D"color: #d4d4d4;">.</span><span style=3D"color: #dcdcaa;">summary</=
+span><span style=3D"color: #d4d4d4;">)</span></div><div><span style=3D"colo=
+r: #d4d4d4;">     </span><span style=3D"color: #9cdcfe;">src</span><span st=
+yle=3D"color: #d4d4d4;"> =3D </span><span style=3D"color: #9cdcfe;">doc</sp=
+an><span style=3D"color: #d4d4d4;">.</span><span style=3D"color: #dcdcaa;">=
+css</span><span style=3D"color: #d4d4d4;">(</span><span style=3D"color: #ce=
+9178;">&quot;img&quot;</span><span style=3D"color: #d4d4d4;">).</span><span=
+ style=3D"color: #dcdcaa;">attribute</span><span style=3D"color: #d4d4d4;">=
+(</span><span style=3D"color: #ce9178;">&#39;src&#39;</span><span style=3D"=
+color: #d4d4d4;">).</span><span style=3D"color: #dcdcaa;">to_s</span></div>=
+<div><span style=3D"color: #d4d4d4;">  </span><span style=3D"color: #569cd6=
+;">%&gt;</span><span style=3D"color: #d4d4d4;"> </span></div><div><span sty=
+le=3D"color: #d4d4d4;">  </span><span style=3D"color: #569cd6;">&lt;%</span=
+><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: #c586c0;">if=
+</span><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: #9cdcf=
+e;">src</span><span style=3D"color: #d4d4d4;">.</span><span style=3D"color:=
+ #dcdcaa;">include?</span><span style=3D"color: #d4d4d4;"> </span><span sty=
+le=3D"color: #ce9178;">&quot;http:&quot;</span><span style=3D"color: #d4d4d=
+4;"> </span><span style=3D"color: #569cd6;">%&gt;</span></div><div><span st=
+yle=3D"color: #d4d4d4;">    </span><span style=3D"color: #569cd6;">&lt;%</s=
+pan><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: #9cdcfe;"=
+>src</span><span style=3D"color: #d4d4d4;">.</span><span style=3D"color: #d=
+cdcaa;">sub!</span><span style=3D"color: #d4d4d4;">(</span><span style=3D"c=
+olor: #d16969;">/http:/</span><span style=3D"color: #d4d4d4;">,</span><span=
+ style=3D"color: #ce9178;">&#39;https:&#39;</span><span style=3D"color: #d4=
+d4d4;">) </span><span style=3D"color: #569cd6;">%&gt;</span></div><div><spa=
+n style=3D"color: #d4d4d4;">  </span><span style=3D"color: #569cd6;">&lt;%<=
+/span><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: #c586c0=
+;">end</span><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: =
+#569cd6;">%&gt;</span></div><div><span style=3D"color: #d4d4d4;">  </span><=
+span style=3D"color: #569cd6;">&lt;%</span><span style=3D"color: #d4d4d4;">=
+ </span><span style=3D"color: #c586c0;">if</span><span style=3D"color: #d4d=
+4d4;"> </span><span style=3D"color: #9cdcfe;">src</span><span style=3D"colo=
+r: #d4d4d4;">.</span><span style=3D"color: #dcdcaa;">nil?</span><span style=
+=3D"color: #d4d4d4;"> </span><span style=3D"color: #569cd6;">%&gt;</span><s=
+pan style=3D"color: #d4d4d4;"> </span></div><div><span style=3D"color: #d4d=
+4d4;">  </span><span style=3D"color: #569cd6;">&lt;%</span><span style=3D"c=
+olor: #d4d4d4;"> </span><span style=3D"color: #c586c0;">elsif</span><span s=
+tyle=3D"color: #d4d4d4;"> </span><span style=3D"color: #9cdcfe;">src</span>=
+<span style=3D"color: #d4d4d4;">.</span><span style=3D"color: #dcdcaa;">inc=
+lude?</span><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: #=
+ce9178;">&quot;stat?event=3Dpost.clientViewed&quot;</span><span style=3D"co=
+lor: #d4d4d4;"> </span><span style=3D"color: #569cd6;">%&gt;</span></div><d=
+iv><span style=3D"color: #d4d4d4;">  </span><span style=3D"color: #569cd6;"=
+>&lt;%</span><span style=3D"color: #d4d4d4;"> </span><span style=3D"color: =
+#c586c0;">elsif</span><span style=3D"color: #d4d4d4;"> </span><span style=
+=3D"color: #9cdcfe;">src</span><span style=3D"color: #d4d4d4;">.</span><spa=
+n style=3D"color: #dcdcaa;">include?</span><span style=3D"color: #d4d4d4;">=
+ </span><span style=3D"color: #ce9178;">&quot;profile.jpg&quot;</span><span=
+ style=3D"color: #d4d4d4;"> </span><span style=3D"color: #569cd6;">%&gt;</s=
+pan></div><div><span style=3D"color: #d4d4d4;">  </span><span style=3D"colo=
+r: #569cd6;">&lt;%</span><span style=3D"color: #d4d4d4;"> </span><span styl=
+e=3D"color: #c586c0;">else</span><span style=3D"color: #d4d4d4;"> </span><s=
+pan style=3D"color: #569cd6;">%&gt;</span></div><div><span style=3D"color: =
+#d4d4d4;">    </span><span style=3D"color: #808080;">&lt;</span><span style=
+=3D"color: #569cd6;">div</span><span style=3D"color: #d4d4d4;"> </span><spa=
+n style=3D"color: #9cdcfe;">class</span><span style=3D"color: #d4d4d4;">=3D=
+</span><span style=3D"color: #ce9178;">&quot;photo&quot;</span><span style=
+=3D"color: #808080;">&gt;</span></div><div><span style=3D"color: #d4d4d4;">=
+      </span><span style=3D"color: #569cd6;">&lt;%=3D</span><span style=3D"=
+color: #d4d4d4;"> </span><span style=3D"color: #dcdcaa;">image_tag</span><s=
+pan style=3D"color: #d4d4d4;">(</span><span style=3D"color: #ce9178;">&quot=
+;</span><span style=3D"color: #569cd6;">#{</span><span style=3D"color: #d4d=
+4d4;"> </span><span style=3D"color: #9cdcfe;">src</span><span style=3D"colo=
+r: #d4d4d4;"> </span><span style=3D"color: #569cd6;">}</span><span style=3D=
+"color: #ce9178;">&quot;</span><span style=3D"color: #d4d4d4;">) </span><sp=
+an style=3D"color: #569cd6;">%&gt;</span></div><div><span style=3D"color: #=
+d4d4d4;">    </span><span style=3D"color: #808080;">&lt;/</span><span style=
+=3D"color: #569cd6;">div</span><span style=3D"color: #808080;">&gt;</span><=
+/div><div><span style=3D"color: #d4d4d4;">  </span><span style=3D"color: #5=
+69cd6;">&lt;%</span><span style=3D"color: #d4d4d4;"> </span><span style=3D"=
+color: #c586c0;">end</span><span style=3D"color: #d4d4d4;"> </span><span st=
+yle=3D"color: #569cd6;">%&gt;</span><span style=3D"color: #d4d4d4;">  </spa=
+n></div><div><span style=3D"color: #569cd6;">&lt;%</span><span style=3D"col=
+or: #d4d4d4;"> </span><span style=3D"color: #c586c0;">else</span><span styl=
+e=3D"color: #d4d4d4;"> </span><span style=3D"color: #569cd6;">%&gt;</span><=
+/div><div><span style=3D"color: #d4d4d4;">  -/-</span></div><div><span styl=
+e=3D"color: #569cd6;">&lt;%</span><span style=3D"color: #d4d4d4;"> </span><=
+span style=3D"color: #c586c0;">end</span><span style=3D"color: #d4d4d4;"> <=
+/span><span style=3D"color: #569cd6;">%&gt;</span></div></div></div><div><b=
+r></div><div><br></div><div><br></div><div>All I need now is some overflow =
+protection... now testing... <br><div style=3D"background-color: rgb(250, 2=
+50, 250); border-color: rgb(187, 187, 187); border-style: solid; border-wid=
+th: 1px; overflow-wrap: break-word;" class=3D"prettyprint"><code class=3D"p=
+rettyprint"><div class=3D"subprettyprint"><span style=3D"color: #000;" clas=
+s=3D"styled-by-prettify">overflow</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">-</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">wrap</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">:</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+ </span><span style=3D"color: #008;" class=3D"styled-by-prettify">break</sp=
+an><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span =
+style=3D"color: #000;" class=3D"styled-by-prettify">word</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">;</span></div></code></div><=
+/div><div>the problem is on mobile some long strings overflow... but I thin=
+k I&#39;ll wrangle it<br><br></div><div><br></div><div><br></div><div><br><=
+/div>On Friday, May 29, 2020 at 6:29:04 AM UTC-4, Gerald Bauer wrote:<block=
+quote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-le=
+ft: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr"><div dir=3D"ltr">He=
+llo,<div>=C2=A0 =C2=A0 Thanks for sharing the planet news. And thanks for a=
+dding Identosphere to the planets [1] page.=C2=A0 Keep it up. Cheers. Prost=
+.</div><div><br></div><div>[1]=C2=A0<a href=3D"https://github.com/feedreade=
+r/planets" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#=
+39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Ffeedreader%2F=
+planets\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGz3PHmPeYxyhKuwQ6-EcONE6yOI=
+g&#39;;return true;" onclick=3D"this.href=3D&#39;https://www.google.com/url=
+?q\x3dhttps%3A%2F%2Fgithub.com%2Ffeedreader%2Fplanets\x26sa\x3dD\x26sntz\x3=
+d1\x26usg\x3dAFQjCNGz3PHmPeYxyhKuwQ6-EcONE6yOIg&#39;;return true;">https://=
+github.com/<wbr>feedreader/planets</a></div></div></div>
+</blockquote></div>
+------=_Part_1144_692304375.1591595094678--
+
+------=_Part_1143_212211695.1591595094677--
+

@@ -1,0 +1,86 @@
+From 499423117312@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 499705184256
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,95f71f5c2c5a3d45,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.180.226.1 with SMTP id y1mr222272bkg.24.1235043449460;
+        Thu, 19 Feb 2009 03:37:29 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from mail-bw0-f160.google.com (mail-bw0-f160.google.com [209.85.218.160])
+        by mx.google.com with ESMTP id 14si132533bwz.5.2009.02.19.03.37.29;
+        Thu, 19 Feb 2009 03:37:29 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.218.160 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.218.160;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.218.160 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by bwz4 with SMTP id 4so1009861bwz.3
+        for <webslideshow@googlegroups.com>; Thu, 19 Feb 2009 03:37:29 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.180.244.19 with SMTP id r19mr2499538bkh.9.1235043448835; Thu, 
+	19 Feb 2009 03:37:28 -0800 (PST)
+Date: Thu, 19 Feb 2009 12:37:28 +0100
+Message-ID: <1f058eab0902190337g73afc15bl1d339c6b54a4223e@mail.gmail.com>
+Subject: S6 Updated; Now Includes Incremental Display (Steps); S9 Updated w/ 
+	S6 Templates
+From: Gerald Bauer <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  I added the missing support for incremental display (also known as
+steps) to S6 [1]. I also updated the S9 gem [2] to include the updated
+S6 templates.
+
+  What's new?
+
+  Use the step class to mark items you want to display step-by-step.
+Note, you can mark lists (e.g. ul,ol) to mark all items at once e.g.
+
+   <!-- mark list with class step to mark all items at once -->
+    <ul class='step'>
+      <li>Item 1.1 Here</li>
+      <li>Item 1.2 Here</li>
+    </ul>
+
+    <!-- or mark individual list items -->
+    <ul>
+      <li class='step'>Item 2.1 Here</li>
+      <li class='step'>Item 2.2 Here</li>
+    </ol>
+
+  To style your steps use the step class for upcoming steps (not yet
+displayed) and stepcurrent for the current step. Example:
+
+  .step { color: gray; }  /* or hide next steps e.g.  .step {
+visibility: hidden; } */
+
+  .stepcurrent { color: yellow; }
+
+
+  If you use S9 to generate slide shows w/ Textile mark items with
+(step) the Textile syntax for adding classes to tags. Here's an
+example:
+
+h1. Getting Started in 1-2-3 Easy Steps
+
+*(step) Step 1: Author your slides in plain text using a wiki-style
+markup language
+* Step 2: Generate your slide show using the @slideshow@ gem
+* Step 3: Open up your slide show in your browser and hit the space
+bar to flip through your slides
+* That's it. Showtime!
+
+h1. Gradient Themes
+
+p(step). Q: How To Use Built-In Gradient Themes?
+
+p(step). A: You can define your gradient theme in plain text in the
+slide show source in the header using a simple CSS-style name value
+pair.
+
+   That's it. Questions and comments welcome. Cheers.
+
+[1] http://github.com/geraldb/s6
+[2] http://slideshow.rubyforge.org
+

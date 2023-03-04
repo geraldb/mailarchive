@@ -1,0 +1,112 @@
+From 6186845941975220224@xxx Tue Aug 25 07:22:02 +0000 2015
+X-GM-THRID: 6186845938635505664
+X-Received: by 10.70.132.70 with SMTP id os6mr26641992pdb.7.1440487322013;
+        Tue, 25 Aug 2015 00:22:02 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.34.201 with SMTP id b9ls3711824obj.84.gmail; Tue, 25 Aug
+ 2015 00:22:01 -0700 (PDT)
+X-Received: by 10.141.28.206 with SMTP id f197mr26954129qhe.10.1440487321642;
+        Tue, 25 Aug 2015 00:22:01 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x235.google.com (mail-io0-x235.google.com. [2607:f8b0:4001:c06::235])
+        by gmr-mx.google.com with ESMTPS id 4si48473igl.1.2015.08.25.00.22.01
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 25 Aug 2015 00:22:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::235 as permitted sender) client-ip=2607:f8b0:4001:c06::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x235.google.com with SMTP id v127so176238717iod.3
+        for <opensport@googlegroups.com>; Tue, 25 Aug 2015 00:22:01 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=FslvbWJdRXbPaodq0gb5fFI7EsUkxEUyj0gOz12Cp4w=;
+        b=rMGUiIBPYyre8k07Ym1s6FEE0u0OBGdN78M7Xll+N+MrHHNtOQDpCOYfqwYY38Yr7S
+         GCKcIY7Q4pURI033dAf/LnVZTPzg/IDc68tzAuW934fh6fEByfNi9orTKYxdngsg5ZBT
+         YSOYC+ux6Z95rndYHcMbNhk5+2kBzJHtaemDjQtXHr3XYlKVRRJ2/y5xsP2Qu9WbOfEx
+         cbGkXbHbVRuSStsNJYhvahZHoGzAyWsH7XA8OfOuUi72YPk7BPc+73h9R70ZXPz162Hj
+         qVosl8uAi7+MiAuty++2vUS5i8XCIPfl9YZNfiqP3+YV1SRbzUA5rHR5jhGTgb+bDMz/
+         4/ZA==
+MIME-Version: 1.0
+X-Received: by 10.107.8.142 with SMTP id h14mr22381403ioi.35.1440487321419;
+ Tue, 25 Aug 2015 00:22:01 -0700 (PDT)
+Received: by 10.107.15.196 with HTTP; Tue, 25 Aug 2015 00:22:01 -0700 (PDT)
+Date: Tue, 25 Aug 2015 09:22:01 +0200
+Message-ID: <CAAxEZd8_HBjfpgpi5+AaQrWzf7yjiC2G6HS3B8kUYvEpJ6T5pw@mail.gmail.com>
+Subject: sportdb Event Reader Update v1.14 Now Supports "Standard" Club Names
+ (e.g. Manchester United) for Keys (e.g. manutd)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've updated the sportdb event reader (in the sportdb-models
+gem). What's news?
+
+  Now you can use the "standard" club names to list all clubs (teams)
+for an event (league, cup) etc.
+
+  Example - 2014-15/1-premierleague.yml - "old" style before - still working;-):
+
+ teams:
+- chelsea
+- manutd
+- mancity
+- everton
+- tottenham
+- westbrom
+- arsenal
+- westham
+- newcastle
+- swansea
+- stoke
+- sunderland
+- liverpool
+- astonvilla
+- southampton
+- hull
+- crystalpalace
+- leicester
+- burnley
+- qpr
+
+  And the new style. Example - 2015-16/1-premierleague.yml:
+
+20 teams:
+- Manchester United
+- Tottenham Hotspur
+- AFC Bournemouth
+- Aston Villa
+- Everton FC
+- Watford FC
+- Leicester City
+- Sunderland AFC
+- Norwich City
+- Crystal Palace
+- Chelsea FC
+- Swansea City
+- Arsenal FC
+- West Ham United
+- Newcastle United
+- Southampton FC
+- Stoke City
+- Liverpool FC
+- West Bromwich Albion
+- Manchester City
+
+  Use
+
+  $ gem install sportdb-models
+
+   to update to the latest readers/parsers. That's it. Cheers.
+
+PS: Now the English Premier League works as expected. Try:
+
+  $ sportdb new en     # or
+  $ sportdb new en2015-16
+

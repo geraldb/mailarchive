@@ -1,0 +1,118 @@
+From 6406346270534795264@xxx Fri Apr 07 19:35:25 +0000 2017
+X-GM-THRID: 6406346269300621312
+X-Received: by 10.129.29.2 with SMTP id d2mr15434887ywd.85.1491593725003;
+        Fri, 07 Apr 2017 12:35:25 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.36.200.10 with SMTP id w10ls447145itf.13.canary-gmail; Fri, 07
+ Apr 2017 12:35:24 -0700 (PDT)
+X-Received: by 10.98.42.195 with SMTP id q186mr3222546pfq.8.1491593724380;
+        Fri, 07 Apr 2017 12:35:24 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22c.google.com (mail-io0-x22c.google.com. [2607:f8b0:4001:c06::22c])
+        by gmr-mx.google.com with ESMTPS id p186si572387itc.2.2017.04.07.12.35.24
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 07 Apr 2017 12:35:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22c as permitted sender) client-ip=2607:f8b0:4001:c06::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22c.google.com with SMTP id b140so55899405iof.1
+        for <wwwmake@googlegroups.com>; Fri, 07 Apr 2017 12:35:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=yfIe36+zrlQ6MjxRu1dTX59sTYChtjr1JhqLDZCCPxE=;
+        b=FxD+cABhUuObk13/7IWAsBW0nsb5S5XfqCO52HnglojGCJ4v/qEnCSEByb7ZGs/DDO
+         SLX2MvkF3aVTmXrJvTtN/n68Nnob24YoFYwmBZG9aJg0ea7mqp5/uyFCrVk9JrrkHBJL
+         1sKkKP7yErI2HRXZLeUb5K51bpNfj+NOQbC8nXYda1zsi1yfg7TDnrY1y4P3kjIhBrQD
+         0cu2vStYWpsxL6ieaDjxcqYkyxyjHlVBjJ9G48BJE8YH8HaNK9Foq1kkwFectQ1pxEG0
+         wN/H/pE91CWUVPxD/yTj5dlTsn47WC2irEwkw4d+YFgOHE9IeTTZDXI2E1sY8KXrq6Zf
+         O3RQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=yfIe36+zrlQ6MjxRu1dTX59sTYChtjr1JhqLDZCCPxE=;
+        b=T96udrMCzGvR87sDRdbY1b8m4/P8LBm3gQYwz+xQb8ao/KgVLsQU5QTIidxugZ/2QF
+         pmEBpSP9WytwVRjsBpbX+ZdHoGTA2YF3HN7bJpRa3ielO2wN5OLsdoxHTnyZE8nKmVhC
+         CRmK39unS7brtZHT69EtNptEHUNLt5w+5cD9W4EGGZctm2K5yl5lYJmzDmhSxMNZAUwB
+         diddqvzD6rvUVMuhMxRzDnWTKhtTdVIeZ5WiNjOmC77aZbyZxFBgqnA3Bfa+parxeOtk
+         mAUNN96jLyhyee+y3TmZbQMTql6VreXmekEHa05nUfCNBWnfp/7AOtxG8zskXRJK3LAb
+         VNhw==
+X-Gm-Message-State: AN3rC/6CGboCKmebegRmjfnZ3Jf2vc6Qd9DBpysWp+8WSjkpTLoJbMuIBj7Z0IZPkziMPCBUMCiDL8m174guKg==
+X-Received: by 10.107.133.35 with SMTP id h35mr616606iod.230.1491593723735;
+ Fri, 07 Apr 2017 12:35:23 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.170.209 with HTTP; Fri, 7 Apr 2017 12:35:23 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 7 Apr 2017 21:35:23 +0200
+Message-ID: <CAAxEZd9FpOt9ccqOm2xbpaD9StrBVZD1Jxcp=r=3KFTACo0R-A@mail.gmail.com>
+Subject: New Horizons - Build Your Own (Static) Planet News Site w/ Pluto (and Ruby)
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   Hello, from yesterday=E2=80=99s Vienna.rb meetup - all about reading web
+feeds with ruby and building your own planet news sites. Browse the
+talk notes titled New Horizons - Build Your Own (Static) Planet News
+Site w/ Pluto (and Ruby) [1]
+ or the slide deck [2]. The agenda reads:
+
+- Lets Build a Planet News Site in Ruby
+  - What's a Web Feed?
+- Reading Web Feeds in Ruby - Options
+  - Module RSS - Standard (Built-In) Web Feed Reader & Writer Library
+  - Hello, feedparser gem!
+- Planet Feed Reader in 20 Lines of Ruby
+- What's Planet Pluto?
+  - Planet Ruby - Step 1 - Add Your Web Feeds
+  - Planet Ruby - Step 2 - Build Your Planet News Site
+- OpenStreetMap Blogs (blogs.openstreetmap.org)
+  - Step 1 - Add Your Web Feeds
+  - Step 2 - Build Planet News Site
+  - How-to Auto-Update Planet News Site Every Hour
+  - Design Your Own Templates
+- Design Your Own Planet Pluto Templates / Themes
+- Planet Pluto - Stay Static or Go Dynamic?
+- Jekyll Planet Pluto Addon / Importer
+- Bonus
+  - Planet Ruby - What's Happening in the Ruby Universe?
+  - Planet Pluto - What's Next? Plans & Ideas
+  - Tip - Add Profile Pics (Hacker Gotchis)
+
+
+
+  Bonus: Includes pluto trivia quiz questions e.g.
+
+  Q: The Mass of (Former) Planet Pluto is ... ?
+
+ (A) 7 Earths
+ (B) 1 Earth
+ (C) 0.01 (1/100) Earth
+ (D) 0.002 (1/500) Earth
+
+  Q: How big is the (former) planet Pluto
+   in km (circumference, that is, 2pi =C3=97 r)?
+
+ (A) 150 000 km
+ (B) 40 000 km
+ (C) 11 000 km
+ (D) 7 000 km
+
+  Q: What is NOT a classification of Pluto?
+
+ (A) King of the Kuiper Belt
+ (B) Outer Solar System Object
+ (C) Trans-Neptunian Object
+ (D) Planet
+
+  and some more. Happy (dwarf) planet. Cheers.
+
+[1] https://github.com/geraldb/talks/blob/master/planet.md
+[2] http://slideshow-s9.github.io/demos/planet.html
+

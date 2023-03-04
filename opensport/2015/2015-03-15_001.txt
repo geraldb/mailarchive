@@ -1,0 +1,62 @@
+From 2524853567488@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2513988222976
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b207fcdca166b700
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.157.194 with SMTP id wo2mr60116456pab.17.1426453270098;
+        Sun, 15 Mar 2015 14:01:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.13.17 with SMTP id 17ls182189ion.22.gmail; Sun, 15 Mar
+ 2015 14:01:09 -0700 (PDT)
+X-Received: by 10.42.99.140 with SMTP id w12mr26677785icn.12.1426453269903;
+        Sun, 15 Mar 2015 14:01:09 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x235.google.com (mail-ie0-x235.google.com. [2607:f8b0:4001:c03::235])
+        by gmr-mx.google.com with ESMTPS id u2si713713igh.0.2015.03.15.14.01.09
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 15 Mar 2015 14:01:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::235 as permitted sender) client-ip=2607:f8b0:4001:c03::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::235 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ie0-x235.google.com with SMTP id c3so159615720ieg.3
+        for <opensport@googlegroups.com>; Sun, 15 Mar 2015 14:01:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=FQT5wMRVQ74PlyVfn5SRSX6PsJ9I/fX5zu9xNdGZeRc=;
+        b=JFrIVGrjJduSk/COKv3aByPIbXfCDXvwVAP3qyTiytmaqC0Vs1U22blXIFNFYT41hQ
+         cH2bYYoglJLMkay0/zH6YqZewb4+LFNORO3GbSKQSeW2A34TBLIpFODpDIjL5ks+YnLz
+         B4dNJKIBvDBawDA5knGNy5Iy/0RLw/b06tRMWGeAt9/e6nQaMJO9wdz3ZZaJPhbzaDfA
+         8KS2NEBgCN40lhMEvIRVCJAVrm+oYMsQU8epeVpx3/taijUp/RciAucn9BGQcqqrZkRw
+         dRg3ripLnkNE0G9uRtJMS52Bkh1XAVZEdg7u9N8XSP47RH2wXslmo8vDDO8Np6m5NIZf
+         E9Jg==
+MIME-Version: 1.0
+X-Received: by 10.107.16.31 with SMTP id y31mr37197526ioi.53.1426453269844;
+ Sun, 15 Mar 2015 14:01:09 -0700 (PDT)
+Received: by 10.64.141.103 with HTTP; Sun, 15 Mar 2015 14:01:09 -0700 (PDT)
+In-Reply-To: <CAAxEZd87cJbDt+s9riziPS-zr09xhiF5mAUP6Tq=ciot3emPDg@mail.gmail.com>
+References: <f613f935-42ed-407c-b7e3-549fdcecd8fc@googlegroups.com>
+	<CAAxEZd87cJbDt+s9riziPS-zr09xhiF5mAUP6Tq=ciot3emPDg@mail.gmail.com>
+Date: Sun, 15 Mar 2015 22:01:09 +0100
+Message-ID: <CAAxEZd8WiaiecQD5yDWSThV7kZxH+X0mXbGce+XWVzYTu5PK0w@mail.gmail.com>
+Subject: Re: [opensport] Empty tables after build
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+ > There is no squad table and I can't find a way to link players to
+teams playing matches.
+
+  Sorry for the complications. The join table (for teams and players)
+will get renamed to squads - in the "current" version the table is
+stil called/named   rosters.
+
+ Cheers.
+

@@ -1,0 +1,143 @@
+From 2476586565632@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2473217490944
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a7e99e1f59db589e
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.62.193 with SMTP id y41mr4615655yhc.38.1425476111290;
+        Wed, 04 Mar 2015 05:35:11 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.101.111 with SMTP id t102ls661174qge.62.gmail; Wed, 04 Mar
+ 2015 05:35:11 -0800 (PST)
+X-Received: by 10.140.31.134 with SMTP id f6mr69228qgf.33.1425476111089;
+        Wed, 04 Mar 2015 05:35:11 -0800 (PST)
+X-Google-Doc-Id: 86d2d154afde394b
+X-Google-Web-Client: true
+Date: Wed, 4 Mar 2015 05:35:10 -0800 (PST)
+From: Joe Rapp <rapp.user06@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <c1923913-9cb4-409b-9075-e443828ba487@googlegroups.com>
+In-Reply-To: <CAAxEZd9JGpWW1UUtu-hMMa1QXMQhJcN-fKweWc7GyGaWBnf8MQ@mail.gmail.com>
+References: <CAAxEZd9JGpWW1UUtu-hMMa1QXMQhJcN-fKweWc7GyGaWBnf8MQ@mail.gmail.com>
+Subject: Re: New Datafiles for Top Leagues (en,de,es,fr,it) and Austria (at)
+ - e.g. use $ sportdb new top
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_382_1524116350.1425476110384"
+X-Google-Token: EI6U3KcFQGvxJ3XDGs00
+X-Google-IP: 78.192.191.16
+
+------=_Part_382_1524116350.1425476110384
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_383_638553034.1425476110384"
+
+------=_Part_383_638553034.1425476110384
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+Thank you for the updates.
+I'm still having an issue with the French data:  building DBs works fine 
+for all leagues except for the French league.
+
+Running sportdb new fr2014-15 crashes with the following:
+...
+[info] parsing data in zip 'setups/2014-15' 
+(fr-france-master/setups/2014-15.txt)...
+[info] parsing data in zip (league) 'fr-france!/leagues' 
+(fr-france-master/leagues.txt)...
+[info] parsing data in zip (team) 'fr-france!/clubs' 
+(fr-france-master/clubs.txt)...
+
+*** error: Validation failed: Key expected three or more lowercase letters 
+a-z /\A[a-z]{3,}\z/
+
+Same error, when I try sportdb new top2014-15
+
+I'm running this on a MacBook Pro OSX10.10.2 and gem list sportdb gives:
+*** LOCAL GEMS ***
+
+sportdb (1.11.0)
+sportdb-models (1.11.0)
+sportdb-service (0.4.0)
+sportdb-update (0.1.1)
+
+Cheers
+
+
+
+On Wednesday, March 4, 2015 at 9:04:55 AM UTC+1, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>   I've added some more datafiles [1] that let you build your own 
+> football.db with a single command e.g. 
+>
+>   $ sportdb new fr2014-15 
+>
+>   The new datafiles include: 
+>
+>   - de.rb  and de2014-15.rb 
+>   - es.rb  and es2014-15.rb 
+>   - it.rb  and it2014-15.rb 
+>   - fr.rb  and fr2014-15.rb 
+>   - at.rb  and at2014-15.rb 
+>   - top.rb and top2014-15.rb   (includes top leagues e.g. en,de,es,fr,it) 
+>
+>   That's it. As always if you run into any trouble or have questions 
+> or comments, let us know. Cheers. 
+>
+>  [1] github.com/openfootball/datafile 
+>
+
+------=_Part_383_638553034.1425476110384
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald,<br><br>Thank you for the updates.<br>I'm still =
+having an issue with the French data:&nbsp; building DBs works fine for all=
+ leagues except for the French league.<br><br>Running sportdb new fr2014-15=
+ crashes with the following:<br>...<br>[info] parsing data in zip 'setups/2=
+014-15' (fr-france-master/setups/2014-15.txt)...<br>[info] parsing data in =
+zip (league) 'fr-france!/leagues' (fr-france-master/leagues.txt)...<br>[inf=
+o] parsing data in zip (team) 'fr-france!/clubs' (fr-france-master/clubs.tx=
+t)...<br><br>*** error: Validation failed: Key expected three or more lower=
+case letters a-z /\A[a-z]{3,}\z/<br><br>Same error, when I try sportdb new =
+top2014-15<br><br>I'm running this on a MacBook Pro OSX10.10.2 and gem list=
+ sportdb gives:<br>*** LOCAL GEMS ***<br><br>sportdb (1.11.0)<br>sportdb-mo=
+dels (1.11.0)<br>sportdb-service (0.4.0)<br>sportdb-update (0.1.1)<br><br>C=
+heers<br><br><br><br>On Wednesday, March 4, 2015 at 9:04:55 AM UTC+1, Geral=
+d Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-l=
+eft: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; I've added some more datafiles [1] that let you build your own
+<br>football.db with a single command e.g.
+<br>
+<br>&nbsp; $ sportdb new fr2014-15
+<br>
+<br>&nbsp; The new datafiles include:
+<br>
+<br>&nbsp; - de.rb &nbsp;and de2014-15.rb
+<br>&nbsp; - es.rb &nbsp;and es2014-15.rb
+<br>&nbsp; - it.rb &nbsp;and it2014-15.rb
+<br>&nbsp; - fr.rb &nbsp;and fr2014-15.rb
+<br>&nbsp; - at.rb &nbsp;and at2014-15.rb
+<br>&nbsp; - top.rb and top2014-15.rb &nbsp; (includes top leagues e.g. en,=
+de,es,fr,it)
+<br>
+<br>&nbsp; That's it. As always if you run into any trouble or have questio=
+ns
+<br>or comments, let us know. Cheers.
+<br>
+<br>&nbsp;[1] <a href=3D"http://github.com/openfootball/datafile" target=3D=
+"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D'http://www.google.com=
+/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\46sa\75D\46sntz\=
+0751\46usg\75AFQjCNGuSSz2iZM4_c46k47eU9RFDWMMTQ';return true;" onclick=3D"t=
+his.href=3D'http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfoo=
+tball%2Fdatafile\46sa\75D\46sntz\0751\46usg\75AFQjCNGuSSz2iZM4_c46k47eU9RFD=
+WMMTQ';return true;">github.com/openfootball/<wbr>datafile</a>
+<br></blockquote></div>
+------=_Part_383_638553034.1425476110384--
+------=_Part_382_1524116350.1425476110384--
+

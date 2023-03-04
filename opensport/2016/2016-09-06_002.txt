@@ -1,0 +1,368 @@
+From 6327149871550693376@xxx Tue Sep 06 09:32:57 +0000 2016
+X-GM-THRID: 6327149872914890752
+X-Received: by 10.200.49.164 with SMTP id h33mr7932177qte.2.1473154377109;
+        Tue, 06 Sep 2016 02:32:57 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.6.108 with SMTP id 99ls7281031otn.17.gmail; Tue, 06 Sep
+ 2016 02:32:56 -0700 (PDT)
+X-Received: by 10.157.61.35 with SMTP id a32mr23086074otc.43.1473154376848;
+        Tue, 06 Sep 2016 02:32:56 -0700 (PDT)
+Received: by 10.202.97.198 with SMTP id v189msoib;
+        Mon, 5 Sep 2016 23:18:13 -0700 (PDT)
+X-Received: by 10.36.137.67 with SMTP id s64mr483782itd.1.1473142693624;
+        Mon, 05 Sep 2016 23:18:13 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Mon, 5 Sep 2016 23:18:13 -0700 (PDT)
+From: Jeronimo Martinez Sanchez <jfmsanchez@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <bde264df-e79b-48e6-9a6f-b98d521c0554@googlegroups.com>
+Subject: rake build failure
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_7406_1485450297.1473142693428"
+X-Google-Token: EKW_ub4FakDssD6wevM0
+X-Google-IP: 192.139.3.6
+
+------=_Part_7406_1485450297.1473142693428
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7407_1892546310.1473142693429"
+
+------=_Part_7407_1892546310.1473142693429
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi, pretty good project i test sportdb tool is cool and easy to use,  also 
+i was trying the `build` project (master branch)  from your repo, and i got 
+this error  
+after running  `rake build`  looks like the task worldcup is no defined.  
+
+** Invoke importsport (first_time) 
+rake aborted! 
+Don't know how to build task 'worldcup' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task_manager.rb:62:in 
+`[]' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:57:in 
+`lookup_prerequisite' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:53:in 
+`block in prerequisite_tasks' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:53:in 
+`map' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:53:in 
+`prerequisite_tasks' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:199:in 
+`invoke_prerequisites' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:178:in 
+`block in invoke_with_call_chain' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in 
+`mon_synchronize' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:172:in 
+`invoke_with_call_chain' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:201:in 
+`block in invoke_prerequisites' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:199:in 
+`each' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:199:in 
+`invoke_prerequisites' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:178:in 
+`block in invoke_with_call_chain' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in 
+`mon_synchronize' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:172:in 
+`invoke_with_call_chain' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/task.rb:165:in 
+`invoke' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/application.rb:150:in 
+`invoke_task' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/application.rb:106:in 
+`block (2 levels) in top_level' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/application.rb:106:in 
+`each' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/application.rb:106:in 
+`block in top_level' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/application.rb:115:in 
+`run_with_threads' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/application.rb:100:in 
+`top_level' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/application.rb:78:in 
+`block in run' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/application.rb:176:in 
+`standard_exception_handling' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/lib/rake/application.rb:75:in 
+`run' 
+/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/bin/rake:33:in 
+`<top (required)>' 
+/home/jms/.rbenv/versions/2.3.1/bin/rake:23:in `load' 
+/home/jms/.rbenv/versions/2.3.1/bin/rake:23:in `<main>'
+
+
+i setup the repo and the path on the settings.rb 
+
+seem to be ok when the `rake check` task is executed
+
+checking repo paths... 
+ OK                WORD_DB                        <../world.db> 
+ OK                STADIUMS                       <../stadiums> 
+ OK                PLAYERS                        <../players> 
+ OK                NATIONAL_TEAMS                 <../national-teams> 
+ OK                WORLD_CUP                      <../world-cup> 
+ OK                EURO_CUP                       <../euro-cup> 
+ OK                AFRICA_CUP                     <../africa-cup> 
+ OK                NORTH_AMERICA_GOLD_CUP 
+        <../north-america-gold-cup> 
+ OK                COPA_AMERICA                   <../copa-america> 
+ OK                CLUBS                          <../clubs> 
+ OK                AT                             <../at-austria> 
+ OK                DE                             <../de-deutschland> 
+ OK                EN                             <../eng-england> 
+ OK                ES                             <../es-espana> 
+ OK                IT                             <../it-italy> 
+ OK                EUROPE_CHAMPIONS_LEAGUE 
+       <../europe-champions-league> 
+ OK                MLS                            <../major-league-soccer> 
+ OK                MX                             <../mx-mexico> 
+ OK                BR                             <../br-brazil> 
+ OK                NORTH_AMERICA_CHAMPIONS_LEAGUE 
+<../north-america-champions-league> 
+ OK                COPA_LIBERTADORES              <../copa-libertadores> 
+ OK                COPA_SUDAMERICANA              <../copa-sudamericana>
+
+
+i'm using ruby 2.3.1 with these gems
+
+Gems included by the bundle: 
+ * activemodel (4.2.7.1) 
+ * activerecord (4.2.7.1) 
+ * activerecord-utils (0.4.0) 
+ * activesupport (4.2.7.1) 
+ * arel (6.0.3) 
+ * builder (3.2.2) 
+ * bundler (1.12.5) 
+ * datafile (0.2.5) 
+ * fetcher (0.4.5) 
+ * gli (2.14.0) 
+ * i18n (0.7.0) 
+ * json (1.8.3) 
+ * logutils (0.6.1) 
+ * logutils-activerecord (0.2.1) 
+ * minitest (5.9.0) 
+ * persondb-models (0.5.0) 
+ * pg (0.18.4) 
+ * props (1.1.2) 
+ * props-activerecord (0.1.0) 
+ * rubyzip (1.2.0) 
+ * sportdb (1.11.0) 
+ * sportdb-models (1.16.2) 
+ * sportdb-service (0.4.0) 
+ * sportdb-update (0.1.1) 
+ * sqlite3 (1.3.11) 
+ * tagutils (0.3.0) 
+ * textutils (1.4.0) 
+ * thread_safe (0.3.5) 
+ * tzinfo (1.2.2) 
+ * worlddb (2.3.0) 
+ * worlddb-models (2.3.4)
+
+
+
+------=_Part_7407_1892546310.1473142693429
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi, pretty good project i test sportdb tool is cool and ea=
+sy to use, =C2=A0also i was trying the `build` project (master branch) =C2=
+=A0from your repo, and i got this error =C2=A0<div>after running =C2=A0`rak=
+e build` =C2=A0looks like the task worldcup is no defined. =C2=A0</div><div=
+><div><br></div><div><span style=3D"font-family:monospace"><span style=3D"c=
+olor: rgb(0, 0, 0);">** Invoke importsport (first_time)
+</span><br>rake aborted!
+<br>Don&#39;t know how to build task &#39;worldcup&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task_manager.rb:62:in `[]&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:57:in `lookup_prerequisite&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:53:in `block in prerequisite_tasks&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:53:in `map&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:53:in `prerequisite_tasks&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:199:in `invoke_prerequisites&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:178:in `block in invoke_with_call_chain&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_s=
+ynchronize&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:172:in `invoke_with_call_chain&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:201:in `block in invoke_prerequisites&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:199:in `each&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:199:in `invoke_prerequisites&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:178:in `block in invoke_with_call_chain&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_s=
+ynchronize&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:172:in `invoke_with_call_chain&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/task.rb:165:in `invoke&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/application.rb:150:in `invoke_task&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/application.rb:106:in `block (2 levels) in top_level&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/application.rb:106:in `each&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/application.rb:106:in `block in top_level&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/application.rb:115:in `run_with_threads&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/application.rb:100:in `top_level&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/application.rb:78:in `block in run&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/application.rb:176:in `standard_exception_handling&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/li=
+b/rake/application.rb:75:in `run&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-10.4.2/bi=
+n/rake:33:in `&lt;top (required)&gt;&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/bin/rake:23:in `load&#39;
+<br>/home/jms/.rbenv/versions/2.3.1/bin/rake:23:in `&lt;main&gt;&#39;<br>
+<br></span></div><div><span style=3D"font-family:monospace"><br></span></di=
+v><div><span style=3D"font-family:monospace">i setup the repo and the path =
+on the settings.rb=C2=A0</span></div><div><span style=3D"font-family:monosp=
+ace"><br></span></div><div><span style=3D"font-family:monospace">seem to be=
+ ok when the `rake check` task is executed</span></div><div><span style=3D"=
+font-family:monospace"><br></span></div><div><span style=3D"font-family:mon=
+ospace"><span style=3D"color: rgb(0, 0, 0);">checking repo paths...
+</span><br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0WORD_DB =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../world.db&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0STADIUMS =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0&lt;../stadiums&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0PLAYERS =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../players&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0NATIONAL_TEAMS =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../na=
+tional-teams&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0WORLD_CUP =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0&lt;../world-cup&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0EURO_CUP =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0&lt;../euro-cup&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0AFRICA_CUP =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0&lt;../africa-cup&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0NORTH_AMERICA_GOLD_CUP =C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../north-america-gold-cup&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0COPA_AMERICA =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0&lt;../copa-america&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0CLUBS =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../clubs&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0AT =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../at-austria&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0DE =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../de-deutschland&gt=
+;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0EN =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../eng-england&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0ES =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../es-espana&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0IT =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../it-italy&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0EUROPE_CHAMPIONS_LEAGUE =C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0&lt;../europe-champions-league&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0MLS =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../major-league-soccer&=
+gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0MX =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../mx-mexico&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0BR =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../br-brazil&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0NORTH_AMERICA_CHAMPIONS_LEAGUE &lt;../north-a=
+merica-champions-league&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0COPA_LIBERTADORES =C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../copa-libertadores=
+&gt;
+<br> =C2=A0OK =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0COPA_SUDAMERICANA =C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0&lt;../copa-sudamericana=
+&gt;</span></div><div><span style=3D"font-family:monospace"><br></span></di=
+v><div><span style=3D"font-family:monospace"><br></span></div><div><span st=
+yle=3D"font-family:monospace">i&#39;m using ruby 2.3.1 with these gems</spa=
+n></div><div><span style=3D"font-family:monospace"><br></span></div><div><s=
+pan style=3D"font-family:monospace"><span style=3D"color: rgb(0, 0, 0);">Ge=
+ms included by the bundle:
+</span><br> =C2=A0* activemodel (4.2.7.1)
+<br> =C2=A0* activerecord (4.2.7.1)
+<br> =C2=A0* activerecord-utils (0.4.0)
+<br> =C2=A0* activesupport (4.2.7.1)
+<br> =C2=A0* arel (6.0.3)
+<br> =C2=A0* builder (3.2.2)
+<br> =C2=A0* bundler (1.12.5)
+<br> =C2=A0* datafile (0.2.5)
+<br> =C2=A0* fetcher (0.4.5)
+<br> =C2=A0* gli (2.14.0)
+<br> =C2=A0* i18n (0.7.0)
+<br> =C2=A0* json (1.8.3)
+<br> =C2=A0* logutils (0.6.1)
+<br> =C2=A0* logutils-activerecord (0.2.1)
+<br> =C2=A0* minitest (5.9.0)
+<br> =C2=A0* persondb-models (0.5.0)
+<br> =C2=A0* pg (0.18.4)
+<br> =C2=A0* props (1.1.2)
+<br> =C2=A0* props-activerecord (0.1.0)
+<br> =C2=A0* rubyzip (1.2.0)
+<br> =C2=A0* sportdb (1.11.0)
+<br> =C2=A0* sportdb-models (1.16.2)
+<br> =C2=A0* sportdb-service (0.4.0)
+<br> =C2=A0* sportdb-update (0.1.1)
+<br> =C2=A0* sqlite3 (1.3.11)
+<br> =C2=A0* tagutils (0.3.0)
+<br> =C2=A0* textutils (1.4.0)
+<br> =C2=A0* thread_safe (0.3.5)
+<br> =C2=A0* tzinfo (1.2.2)
+<br> =C2=A0* worlddb (2.3.0)
+<br> =C2=A0* worlddb-models (2.3.4)<br>
+<br></span><span style=3D"font-family:monospace">
+<br></span></div></div></div>
+------=_Part_7407_1892546310.1473142693429--
+
+------=_Part_7406_1485450297.1473142693428--
+

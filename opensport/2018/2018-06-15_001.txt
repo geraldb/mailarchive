@@ -1,0 +1,125 @@
+From 6567337779684966400@xxx Fri Jun 15 15:44:42 +0000 2018
+X-GM-THRID: 6567336719448801280
+X-Received: by 2002:a0c:9628:: with SMTP id 37-v6mr1075449qvx.38.1529077482397;
+        Fri, 15 Jun 2018 08:44:42 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:ac8:1344:: with SMTP id f4-v6ls5176176qtj.9.gmail; Fri, 15
+ Jun 2018 08:44:41 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKLTmqRJ4DgzeQ0mlB9uCZl5JPO9z1xY2h8ef5iLGMIMjnxnCm18HTuqNKGyOaioetnKpsFS
+X-Received: by 2002:ac8:660c:: with SMTP id c12-v6mr1062997qtp.41.1529077481764;
+        Fri, 15 Jun 2018 08:44:41 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1529077481; cv=none;
+        d=google.com; s=arc-20160816;
+        b=EjLlTmW8iDC0GSjEvtO5zhTa2dEHkkxJpLvX1cszLv180cSjfBDR7RoEFJ1oglUAhb
+         3WJhAAy0Ui1kSmWjDWYTan/p4G+plmrrumXy2oiGqsPWfJKx+ZtKkpoXCrjX0opth2eF
+         t3b941s0ASikYgEGYPjB5HAY+IaiSbR5JkCMw/1TfXiCLCqtZrN9xSOCfOleaAl6PQu/
+         b4gyHWiKEw5o3WN071AFVHOreutAGq37mHNWWG7GLMcnX3VYadzZQO74ej5ybJvltyvM
+         vI4G2pf8L267UW+SXkFnzZaB7IPuN/+zM7aKr4aQL0CcV3hWG/qxVm6IOhY5rwvVrp1Z
+         mquQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=0+O+S3zDWP59HHaHtTDTS1ZehdnGH9jkyntuJeAC2/M=;
+        b=T7y2pxz7UVlMNQX1HW+P7c7hkAYWzDQMEKJuOzW/3Icsj64O7SCa3SNWEwh3MosYCY
+         gKqXS+cytn8u+QH22ceDnb7JLCjwz/aL6DTmJuFEG83ZYcKHSZ/I4iUqbfNQnodts/M3
+         ilmj4sCbXXHevWBD4Y7yt6vZWK79W6pCoZPDWui/oBadgiQO+d7akakWw+myNtwm64pR
+         +NquLhOJueTjjX5QEbc5OMcDuzkK1zJVaFb0p4eGmZOtrYowdOxQ+Ohnba3rEjc7r1zU
+         McC+KTuTevyK7Q8XmDLith311LMHeXnrrqDeN3eJyYTBQEalqzyXZwGXm0+AGaJCklpr
+         +b3w==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=YYrglDdf;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x235.google.com (mail-it0-x235.google.com. [2607:f8b0:4001:c0b::235])
+        by gmr-mx.google.com with ESMTPS id d1-v6si399893qtp.5.2018.06.15.08.44.41
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 15 Jun 2018 08:44:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) client-ip=2607:f8b0:4001:c0b::235;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=YYrglDdf;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x235.google.com with SMTP id 16-v6so3247900itl.5
+        for <opensport@googlegroups.com>; Fri, 15 Jun 2018 08:44:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=0+O+S3zDWP59HHaHtTDTS1ZehdnGH9jkyntuJeAC2/M=;
+        b=YYrglDdfHpUh1I+5mx5kxUXiErwXb7C111z1Mb8vsRZXUZP1ySKH840UP2ma3Jo1lp
+         iUl1BFL1/2MOzLb/+Mxu09v+hFQ6Kh2xmBvUZI0LPVW/toBJ/lxLU28zLNIygEMNJdMZ
+         fbbQfnIP3ixJJVYnPVZPX/ZL9MzW+8UUZ+pGiuCkWFUYaG2oniaaeyDG1L3PuGPEKLLY
+         jlFsePR1pmzjdOje+KZgD8AvdarB3vZQZBHvafue5vsAY9aWFs7vXKAgBO8TC5CiLeZA
+         17tYuYb778xcwvf3odQ6bAhhRCJuuRxdrRXkUXHXdcUQ5BrbRVdi8hXMhgcG0PvwKGVu
+         GWRQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=0+O+S3zDWP59HHaHtTDTS1ZehdnGH9jkyntuJeAC2/M=;
+        b=YZ9D+ETNsOml/0DilyegiGwC95OfF87R7k+aK2yoGz/F7H/BVYfXiiGMkC+3w25nBO
+         xkl2+zhe+Nj+4xU9tgJgVmR/XwfSLQ9pjg4u2A48vIZPonJIYb3E7UBUQ2QGndoUqolm
+         RcUoQFDx5EbYpW5nNC3UPUh/FW7fLlZUBKgatg6/j24CZoFMkHQSYwYpYPOgfbdtRMVz
+         obQ/zoi4T0SkitK/SC4b2ELblOIoqabiFosjBeQuPG0my3JkaSc+tihzadFmxo2WCaVN
+         rZgcvvpt2I5vP6IZ2t9ZcVkrG+94hjyV1kMbhDb2s3+Ko0659S1NqDqst4HfwzsOnmvS
+         w1Jw==
+X-Gm-Message-State: APt69E2U/r+SMohnBgXixA3AYQufKckFAEPViFlqN+ZUHgFudP2tMcgH
+	70VReGrIsygeDHiuvpJJeed37juYqpxBDP9Gt20iwg==
+X-Received: by 2002:a24:a546:: with SMTP id w6-v6mr1804816iti.144.1529077481325;
+ Fri, 15 Jun 2018 08:44:41 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a6b:d90:0:0:0:0:0 with HTTP; Fri, 15 Jun 2018 08:44:40 -0700 (PDT)
+In-Reply-To: <50e24cb0-3186-4020-be69-cd1535aa0414@googlegroups.com>
+References: <50e24cb0-3186-4020-be69-cd1535aa0414@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 15 Jun 2018 17:44:40 +0200
+Message-ID: <CAAxEZd-X9Z99W8tLrogfAspWsG6+Z_BfzSi5G0y0vym-a+62WQ@mail.gmail.com>
+Subject: Re: [opensport] I DON'T UNDERSTAND SENSE OF ALL
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   the recommended way is to host / run your own JSON HTTP API service
+using the football.db.
+
+   For a ready-to-query sample try the pre-built /football.json [1]
+JSON HTTP API services that includes the Italian Serie A.
+   Example - All Matches for the 2017-18 season:
+
+   GET  https://raw.githubusercontent.com/openfootball/football.json/master/2017-18/it.1.json
+
+  and so on.
+
+   Cheers. Prost.
+
+[1] https://github.com/openfootball/football.json
+
+2018-06-15 16:58 GMT+02:00 Bozzetti Giovanni <lirasoft.alice.it@gmail.com>:
+> I am skilled senior c# programmer. Now i am preparing a football real time
+> program in c#
+> i am interested to query json of italian serie a league.
+> How to ? not programatically. That i know. But ... ? i would to know which
+> url i must download to receive json of matches played of 2017-18 season and
+> future 2018-19 where will be ready to query.
+> Now i wrote a code like:
+>  using (var webClient = new System.Net.WebClient())
+>             {
+>                 var json =
+> webClient.DownloadString("http://footballdb.herokuapp.com/api/event/");
+>                 // Now parse with JSON.Net
+>             }
+> Sure, the url isn't right. What's the correct url to query programatically
+> to accomplish my request ?
+>
+> Thx
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> To post to this group, send email to opensport@googlegroups.com.
+> Visit this group at https://groups.google.com/group/opensport.
+> For more options, visit https://groups.google.com/d/optout.
+

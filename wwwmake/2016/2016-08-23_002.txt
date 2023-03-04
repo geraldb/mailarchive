@@ -1,0 +1,144 @@
+From 6322006246663651328@xxx Tue Aug 23 12:53:03 +0000 2016
+X-GM-THRID: 6321924895499354112
+Date: Tue, 23 Aug 2016 05:53:03 -0700 (PDT)
+From: Ondrej Popelka <odinuv@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <94bf3378-3da0-4a17-9a07-6e80246da44d@googlegroups.com>
+In-Reply-To: <484763cd-b10a-41c1-a4e4-7f2a4bcbf5ad@googlegroups.com>
+References: <197f2510-7e6a-41c0-b5f3-47d25df639c1@googlegroups.com>
+ <484763cd-b10a-41c1-a4e4-7f2a4bcbf5ad@googlegroups.com>
+Subject: Re: Slide Show S9 & Jekyll
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_58_570524133.1471956783387"
+X-Google-Token: EK-O8b0FetCTMxbP8-g0
+X-Google-IP: 178.22.116.252
+
+------=_Part_58_570524133.1471956783387
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_59_1047526527.1471956783387"
+
+------=_Part_59_1047526527.1471956783387
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks for reply, I'm really set on the tight jekyll integration so that I 
+can deploy my site easily.
+
+I finally ended up following this 
+option http://luugiathuy.com/slides/jekyll-create-slides-with-revealjs/ - 
+which uses reveal.js for the presentation
+Which was still not exactly right because it uses client side rendering of 
+markdown (which failed to parse some complicated code examples)
+So I ended up with:
+
+ 
+> <section markdown='1'>
+> ## Slide title
+> - foo
+> - bar
+> </section>
+>
+ 
+
+> <section markdown='1'>
+> ## Another slide
+> - bar
+> - foo
+> </section>
+
+
+It is not as nice as markdown as with slideshow, but still acceptable for 
+me, and works with with jekyll out of the box.
+
+Regards, 
+ Odin
+
+
+On Tuesday, August 23, 2016 at 9:50:04 AM UTC+2, Gerald Bauer wrote:
+>
+> Hello,
+>     If you want to add your slideshows to your jekyll site just add the
+> output from 
+>
+>   $ slideshow build talk.txt -o o
+>
+>   to your jekyll site (e.g. all the html, css, js, and images) That's it. 
+> (Sorry there's no "magic" all-in-one integration with jekyll serve or 
+> something.) See an example here.[1] If you have more than one slideshow and 
+> you're using the same slideshow package (e.g. s6, deck.js, etc.)  you can 
+> (re)use the shared parts.
+>
+>  Cheers.
+>
+> [1]  https://github.com/slideshow-s9/demos
+>
+> Note: Not a "full" Jekyll-site but hosted on GitHub Pages. Just add your 
+> talks as a (sub)folder e.g. talks/ (instead of demos/) to your Jekyll site. 
+>
+> PS: Using Jekyll to build the slideshow output itself is for theme 
+> developers e.g. you can test / design your theme with Jekyll, that is, it's 
+> just a Jekyll theme. Hope that clears up the confusion.
+>
+
+------=_Part_59_1047526527.1471956783387
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thanks for reply, I&#39;m really set on the tight jekyll i=
+ntegration so that I can deploy my site easily.<div><br></div><div>I finall=
+y ended up following this option=C2=A0http://luugiathuy.com/slides/jekyll-c=
+reate-slides-with-revealjs/ - which uses reveal.js for the presentation</di=
+v><div>Which was still not exactly right because it uses client side render=
+ing of markdown (which failed to parse some complicated code examples)</div=
+><div>So I ended up with:</div><div><br></div><div><blockquote class=3D"gma=
+il_quote" style=3D"margin: 0px 0px 0px 0.8ex; border-left: 1px solid rgb(20=
+4, 204, 204); padding-left: 1ex;">=C2=A0<br>&lt;section markdown=3D&#39;1&#=
+39;&gt;<br>## Slide title<br>- foo<br>- bar<br>&lt;/section&gt;<br></blockq=
+uote><div>=C2=A0</div><blockquote class=3D"gmail_quote" style=3D"margin: 0p=
+x 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1=
+ex;">&lt;section markdown=3D&#39;1&#39;&gt;<br>## Another slide<br>- bar<br=
+>- foo<br>&lt;/section&gt;</blockquote></div><div><br></div><div>It is not =
+as nice as markdown as with slideshow, but still acceptable for me, and wor=
+ks with with jekyll out of the box.</div><div><br></div><div>Regards,=C2=A0=
+</div><div>=C2=A0Odin</div><div><br></div><div><br>On Tuesday, August 23, 2=
+016 at 9:50:04 AM UTC+2, Gerald Bauer wrote:<blockquote class=3D"gmail_quot=
+e" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;paddin=
+g-left: 1ex;"><div dir=3D"ltr"><span style=3D"font-family:arial,sans-serif;=
+font-size:12.8px">Hello,</span><div style=3D"font-family:arial,sans-serif;f=
+ont-size:12.8px">=C2=A0 =C2=A0 If you want to add your slideshows to your j=
+ekyll site just add the</div><div style=3D"font-family:arial,sans-serif;fon=
+t-size:12.8px">output from=C2=A0</div><div style=3D"font-family:arial,sans-=
+serif;font-size:12.8px"><br></div><div style=3D"font-family:arial,sans-seri=
+f;font-size:12.8px">=C2=A0 $ slideshow build talk.txt -o o</div><div style=
+=3D"font-family:arial,sans-serif;font-size:12.8px"><br></div><div style=3D"=
+font-family:arial,sans-serif;font-size:12.8px">=C2=A0 to your jekyll site (=
+e.g. all the html, css, js, and images) That&#39;s it. (Sorry there&#39;s n=
+o &quot;magic&quot; all-in-one integration with jekyll serve or something.)=
+ See an example here.[1] If you have more than one slideshow and you&#39;re=
+ using the same slideshow package (e.g. s6, deck.js, etc.) =C2=A0you can (r=
+e)use the shared parts.</div><div style=3D"font-family:arial,sans-serif;fon=
+t-size:12.8px"><br></div><div style=3D"font-family:arial,sans-serif;font-si=
+ze:12.8px">=C2=A0Cheers.</div><div style=3D"font-family:arial,sans-serif;fo=
+nt-size:12.8px"><br></div><div style=3D"font-family:arial,sans-serif;font-s=
+ize:12.8px">[1] =C2=A0<a href=3D"https://github.com/slideshow-s9/demos" sty=
+le=3D"color:rgb(17,85,204)" target=3D"_blank" rel=3D"nofollow" onmousedown=
+=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.c=
+om%2Fslideshow-s9%2Fdemos\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGwOOSszSC=
+93eIeRBQ5GKgWxCsvoQ&#39;;return true;" onclick=3D"this.href=3D&#39;https://=
+www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fslideshow-s9%2Fdemos\x26=
+sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGwOOSszSC93eIeRBQ5GKgWxCsvoQ&#39;;retu=
+rn true;">https://github.com/slideshow-<wbr>s9/demos</a></div><div style=3D=
+"font-family:arial,sans-serif;font-size:12.8px"><br></div><div style=3D"fon=
+t-family:arial,sans-serif;font-size:12.8px">Note: Not a &quot;full&quot; Je=
+kyll-site but hosted on GitHub Pages. Just add your talks as a (sub)folder =
+e.g. talks/ (instead of demos/) to your Jekyll site.=C2=A0</div><div style=
+=3D"font-family:arial,sans-serif;font-size:12.8px"><br></div><div style=3D"=
+font-family:arial,sans-serif;font-size:12.8px">PS: Using Jekyll to build th=
+e slideshow output itself is for theme developers e.g. you can test / desig=
+n your theme with Jekyll, that is, it&#39;s just a Jekyll theme. Hope that =
+clears up the confusion.</div></div></blockquote></div></div>
+------=_Part_59_1047526527.1471956783387--
+
+------=_Part_58_570524133.1471956783387--
+

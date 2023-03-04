@@ -1,0 +1,129 @@
+From 6818830977708589056@xxx Thu Apr 23 09:06:46 +0000 2020
+X-GM-THRID: 6818220389034885120
+X-Received: by 2002:a5d:50c9:: with SMTP id f9mr3893473wrt.191.1587632805365;
+        Thu, 23 Apr 2020 02:06:45 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a5d:618f:: with SMTP id j15ls4138498wru.3.gmail; Thu, 23 Apr
+ 2020 02:06:44 -0700 (PDT)
+X-Google-Smtp-Source: APiQypKQqSYU4o4JaoJaSkCyZtT0A/xAYcWYc0CqelrpscfvBqBMdGR9PDitTmWm6FOT9C/tWRNM
+X-Received: by 2002:a5d:6607:: with SMTP id n7mr3982752wru.150.1587632804032;
+        Thu, 23 Apr 2020 02:06:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1587632804; cv=none;
+        d=google.com; s=arc-20160816;
+        b=l9OcrRwPY2SI/ik+iVNplLE4rzrSsT0aebDb22dPrgkB5lwU67t3PcAzeYuUpMk+B1
+         +gSp6JT2nluRhenG/5w1pPQwkJJbfL61cAN4LAjVJd3y6u+n1NgHUh3eLk2YaFcTsmWC
+         5BT72NcCESjIaGHJHVhFgIxb0anntyiDrq8UdPd+4Tm0JnKtBQsbVClrIy4YMBJCsT3e
+         znvLVcYq7FeXV/KYnG7FLC5qhC6bWMiQ3MJm6YnCSoadf0VFWDGKbXo6yotR0QzdTMwX
+         2CbDaOTX4b2NhcSxnhBvmo3xZT8JZLBJcML1SkS5BAN8fyjXezoY+W9uJ+UB/TH//atF
+         ETBw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=N8iW7E0Xil9K8o80eOiylhP+EaOEaiFTvoBiQQeoXAM=;
+        b=SYIk8pTh3CYKZtk75kropVUzGpEsv4p1tZYwXbbsGwQ3a9kdOuTazR1dzIULCdIYTm
+         juXsbsVAOLcy3QsdhoqcG7cSfHTBq0AKlKZJ8e6BcxKZFMHa8DTKXAhCLSwA/rigc0S3
+         P0KwtN99cYbbdvj9Yq/8X+FZOYtQVMItSwUo3FUi7R0fLLo5q3Vi6pFcd/3SyFbGA1lF
+         sfTxrSJIbnBFu/EunoXesFppe741PPkym6Xn5FpnUckBoTely8X0D55MqFk0huNqpWZ/
+         m1fz/gwaopjZkA0o5zvS3CoNM3iRFmGjWVqtHnHefwQJ/E+fWHpemUfwH7xEs4pn/ESC
+         V/9g==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=UmZZO8Go;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22a.google.com (mail-lj1-x22a.google.com. [2a00:1450:4864:20::22a])
+        by gmr-mx.google.com with ESMTPS id u15si108745wru.2.2020.04.23.02.06.44
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 23 Apr 2020 02:06:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22a as permitted sender) client-ip=2a00:1450:4864:20::22a;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=UmZZO8Go;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22a.google.com with SMTP id y4so5417110ljn.7
+        for <wwwmake@googlegroups.com>; Thu, 23 Apr 2020 02:06:44 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=N8iW7E0Xil9K8o80eOiylhP+EaOEaiFTvoBiQQeoXAM=;
+        b=UmZZO8Go6fv9/YBEL4/K+uf6rZpNUmOtyw0/rxk4UahAmK5pRouw0pBK/MLOb+Axct
+         aybcVTO2ZrhjcoCWMctdjlvCOChjDwrTDhx23SXs1j5++r/xIzBrnK9b6noVBS4BoKRl
+         38IgvTHI3TGeaimJmwrOGiqeQ22SGyczDYVSGIhXK5R3V7i4LSqxd6+KWCNMJYNE+aGp
+         8SeROJQfPseRxtyBP7lM80myn89GciHZcz0/OXqrArbr4JAmi4QurSiKjCxVaTA+gDnt
+         d4rgOhTFIpwYvo/MimW2vJ7eP/lXafOwPDRUwSs2bVewHA9x/YNoM1uty6ECvrtWF14O
+         kF2A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=N8iW7E0Xil9K8o80eOiylhP+EaOEaiFTvoBiQQeoXAM=;
+        b=fOhF8wi06+DEu1F7thExJkXfD0CAyo/p7iHk/KizLXrpKvgby/rlEfo/pNvW+Uyups
+         rJ6U7aXcP2WtGsz2jxPjIyHNIZuDQ2H8HeDqZAQR7cG5ofjN9/Wwnw0dCiwLt4eqOPgl
+         ELEv5NZneE9vOGbDtADqtCWoUFHUJ7TM6eu9Ua+yJ4SVMQ01cTLJqdWST2oWCshbF/It
+         5vLh7J2EQFZ6iBUAdZp2T7LfZXfa7MUn79a0SZK8w5TvxeEwkPTZ9vUIBymid5WhsZ6f
+         c5VyDTKAb+xt18QFK4weqGnHX9yR7L60VauCB6i9znQaO6htkDkprQVlXAKKjXjEK3Uv
+         v28w==
+X-Gm-Message-State: AGi0Pub4thiS/nvTTpkojb1KDNe8mB7AfR/zEjNVpxQj8O0iJfeKO2/Y
+	l6UvvI8dJDAcl/yXs1jbN587yt9Lcx7v21qIcwsrCurU/xU=
+X-Received: by 2002:a2e:a367:: with SMTP id i7mr1807189ljn.289.1587632803357;
+ Thu, 23 Apr 2020 02:06:43 -0700 (PDT)
+MIME-Version: 1.0
+References: <92434cb1-1338-48ff-b6d5-7be2eae5b904@googlegroups.com>
+In-Reply-To: <92434cb1-1338-48ff-b6d5-7be2eae5b904@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 23 Apr 2020 11:06:30 +0200
+Message-ID: <CAAxEZd9oTJ2pedDqTvZPNTdPVg+sERxV_J72=x9XWT74SC1GvA@mail.gmail.com>
+Subject: Re: [wwwmake:497] Troubleshooting Error: This is not well formed XML
+To: wwwmake@googlegroups.com
+Content-Type: multipart/alternative; boundary="00000000000047289505a3f1915f"
+
+--00000000000047289505a3f1915f
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Joe,
+    First thanks for reporting errors and sending in questions.  Keep it up.
+
+> *** error: This is not well formed XML
+
+    This is a broken feed - XML has a "strict" error model - and currently
+the feedparser uses the standard library that uses the "builtin" xml and
+rss parser that follow the "strict" model.    The long term plan is to use
+a more "modern" (and tolerant) parser (such as nokogiri/libxml), alas that
+is month away.
+
+    Sorry for the long answer the short answer is I have no quick answer
+how to fix / troubleshoot the broken feed (XML source) - if excluding the
+feed is not an option :-).
+
+    If you send the link to feed - I can check and try to find a
+workaround  - one idea is to use a feed filter that fixes the error  -
+pluto includes an ad (feed) filter machinery  - but in your case you might
+need a "special" one-time custom "patch" filter.
+
+    Cheers. Prost.
+
+--00000000000047289505a3f1915f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr">Hello Joe,<div>=C2=A0 =C2=A0 First thanks=
+ for reporting errors and sending in questions.=C2=A0 Keep it up.</div><div=
+><br></div><div>&gt; *** error: This is not well formed XML</div><div><br><=
+/div><div>=C2=A0 =C2=A0 This is a broken feed - XML has a &quot;strict&quot=
+; error model - and currently the feedparser uses the standard library that=
+ uses the &quot;builtin&quot; xml and rss parser that follow the &quot;stri=
+ct&quot; model.=C2=A0 =C2=A0 The long term plan is to use a more &quot;mode=
+rn&quot; (and tolerant) parser (such as nokogiri/libxml), alas that is mont=
+h away.</div><div><br></div><div>=C2=A0 =C2=A0 Sorry for the long answer th=
+e short answer is I have no quick answer how to fix / troubleshoot the brok=
+en feed (XML source) - if excluding the feed is not an option :-).=C2=A0</d=
+iv><div><br></div><div>=C2=A0 =C2=A0 If you send the link to feed - I can c=
+heck and try to find a workaround=C2=A0 - one idea is to use a feed filter =
+that fixes the error=C2=A0 - pluto includes an ad (feed) filter machinery=
+=C2=A0 - but in your case you might need a &quot;special&quot; one-time cus=
+tom &quot;patch&quot; filter.</div><div><br></div><div>=C2=A0 =C2=A0 Cheers=
+. Prost.=C2=A0</div></div></div>
+
+--00000000000047289505a3f1915f--
+

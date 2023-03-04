@@ -1,0 +1,61 @@
+From 261886050304@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 247966203904
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,83c5805a6cb8f0df
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.201.198 with SMTP id kc6mr3442559wjc.0.1409690128385;
+        Tue, 02 Sep 2014 13:35:28 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.152.121.10 with SMTP id lg10ls578989lab.74.gmail; Tue, 02 Sep
+ 2014 13:35:27 -0700 (PDT)
+X-Received: by 10.112.126.226 with SMTP id nb2mr3416421lbb.3.1409690127853;
+        Tue, 02 Sep 2014 13:35:27 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x233.google.com (mail-wg0-x233.google.com [2a00:1450:400c:c00::233])
+        by gmr-mx.google.com with ESMTPS id gg11si750536wic.0.2014.09.02.13.35.27
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 02 Sep 2014 13:35:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) client-ip=2a00:1450:400c:c00::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f51.google.com with SMTP id l18so7446245wgh.10
+        for <openmundi@googlegroups.com>; Tue, 02 Sep 2014 13:35:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=6BenWnHHq3kgdNZHnY8c6vSiJEiLOwIuAk1YtzmLKRU=;
+        b=pOhqWPlr3KhrH4kn+Q202VeCNOUFwWWxGQn8eximYAien68HDrx5/6XIFQnNVz+S74
+         iBkUoeU2KlMltpaucoAhvFlBN1Ww26giXqQz7i5Z/Z6iqwK8bqtLgkAP3MNjhzVim0rE
+         gHRkP5YFa0QVrbRVZpRSZeO2flRKGBWamI/1bO538hBi/gsUOuuLUlrRdwKoyqh+EQle
+         GkU+83RLSSZ2l7q8l6uGdFtFMZr7fqdw2gfQqwvn7KyMtNXNyYwj2LLLO1+kRE5y/G9Z
+         T7fZeZ6SjENGtP0KTavDpiOJoDA6vUjKVzuqT1o/9C2RB52gELe/jAvCl6NY33ZB/FKp
+         ESKg==
+MIME-Version: 1.0
+X-Received: by 10.180.188.70 with SMTP id fy6mr1919617wic.25.1409690127772;
+ Tue, 02 Sep 2014 13:35:27 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Tue, 2 Sep 2014 13:35:27 -0700 (PDT)
+In-Reply-To: <5406080C.8030503@googlemail.com>
+References: <6c181f40-2aa3-45dd-b6c5-5b4caf0f2592@googlegroups.com>
+	<CAAxEZd8MkvL11Kn2d0rN+AGFPbOAG6fF510rVxXO-g5-OWc9=A@mail.gmail.com>
+	<5406080C.8030503@googlemail.com>
+Date: Tue, 2 Sep 2014 22:35:27 +0200
+Message-ID: <CAAxEZd_S1qjUnPm2+GbRVvq7pHpiC=nCJqJNOtkvBM273jw-Jw@mail.gmail.com>
+Subject: Re: Scraping of local files
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Eckhard <eckhard.licher@googlemail.com>
+Cc: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Good to hear. Thanks for the detailed glitches. Very helpful. Will
+try to add the :path option and a fix for the % and note glitches and
+(if all works out) push a new update sometime next week. Again thanks
+for checking the results.  Cheers.
+

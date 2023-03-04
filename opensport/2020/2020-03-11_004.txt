@@ -1,0 +1,71 @@
+From 6802857733689180160@xxx Wed Mar 11 08:02:24 +0000 2020
+X-GM-THRID: 6802848183010459648
+Date: Wed, 11 Mar 2020 01:02:24 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <dadf8450-5d7c-40a4-9b48-5ed8a9518a30@googlegroups.com>
+In-Reply-To: <86791ba6-d2de-418f-b724-b1fe2cbc6aeb@googlegroups.com>
+References: <86791ba6-d2de-418f-b724-b1fe2cbc6aeb@googlegroups.com>
+Subject: Re: Errors when using footballdata library
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2103_959370783.1583913744481"
+X-Google-Token: EJC2ovMFxfs6zrUG4v40
+X-Google-IP: 217.149.175.201
+
+------=_Part_2103_959370783.1583913744481
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2104_1436589406.1583913744481"
+
+------=_Part_2104_1436589406.1583913744481
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+     Thanks for trying sport.db / football.db. 
+   I double checked and I get the same weird dependency error. Not sure why 
+really for now.
+  The good news as a quick fix add this extra require to the top of your 
+script:
+
+    require 'sportdb/match/formats'
+
+   Thus, resulting, for example in my example test script in:
+
+    require 'sportdb/match/formats'
+    require 'sportdb/source/footballdata'
+
+    Footballdata.download( :at )
+
+  That again works as advertised. Sorry for the trouble. Good luck.Cheers.
+
+------=_Part_2104_1436589406.1583913744481
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><span style=3D"font-size: small;">Hello,</span><br style=
+=3D"font-size: small;"><br>=C2=A0 =C2=A0=C2=A0<span style=3D"font-size: sma=
+ll;">=C2=A0Thanks for trying sport.db / football.db.=C2=A0</span><br style=
+=3D"font-size: small;"><span style=3D"font-size: small;">=C2=A0 =C2=A0I dou=
+ble checked and I get the same weird dependency error. Not=C2=A0</span><spa=
+n style=3D"font-size: small;">sure why really for now.</span><br style=3D"f=
+ont-size: small;"><span style=3D"font-size: small;">=C2=A0 The good news as=
+ a quick fix add this extra require to the top of your script:</span><br st=
+yle=3D"font-size: small;"><br style=3D"font-size: small;"><span style=3D"fo=
+nt-size: small;">=C2=A0 =C2=A0 require &#39;sportdb/match/formats&#39;</spa=
+n><br style=3D"font-size: small;"><br style=3D"font-size: small;"><span sty=
+le=3D"font-size: small;">=C2=A0 =C2=A0Thus, resulting, for example in my ex=
+ample test script in:</span><br style=3D"font-size: small;"><br style=3D"fo=
+nt-size: small;"><span style=3D"font-size: small;">=C2=A0 =C2=A0 require &#=
+39;sportdb/match/formats&#39;</span><br style=3D"font-size: small;"><span s=
+tyle=3D"font-size: small;">=C2=A0 =C2=A0 require &#39;sportdb/source/footba=
+lldata&#39;</span><br style=3D"font-size: small;"><br style=3D"font-size: s=
+mall;"><span style=3D"font-size: small;">=C2=A0 =C2=A0 Footballdata.downloa=
+d( :at )</span><br style=3D"font-size: small;"><br style=3D"font-size: smal=
+l;"><span style=3D"font-size: small;">=C2=A0 That again works as advertised=
+. Sorry for the trouble. Good luck.Cheers.</span></div>
+------=_Part_2104_1436589406.1583913744481--
+
+------=_Part_2103_959370783.1583913744481--
+

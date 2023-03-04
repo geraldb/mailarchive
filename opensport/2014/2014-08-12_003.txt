@@ -1,0 +1,103 @@
+From 2023536721920@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 1616016048128
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fdf4cd8620f9c54a
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.141.165 with SMTP id rp5mr42845pab.47.1407805149400;
+        Mon, 11 Aug 2014 17:59:09 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.85.48 with SMTP id m45ls1695119qgd.18.gmail; Mon, 11 Aug
+ 2014 17:59:09 -0700 (PDT)
+X-Received: by 10.140.105.200 with SMTP id c66mr18515qgf.4.1407805149125;
+        Mon, 11 Aug 2014 17:59:09 -0700 (PDT)
+X-Google-Doc-Id: 3be201ed8f1ecdcc
+X-Google-Web-Client: true
+Date: Mon, 11 Aug 2014 17:59:08 -0700 (PDT)
+From: Joe Kampschmidt <jokecamp@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <2211b22a-3e0b-4ba5-9f5b-74a03530c6f9@googlegroups.com>
+In-Reply-To: <CAAxEZd9MT=-L=MOz07EcdmHBS-7-HGzfvPsyYh_8qEQwkW9dRQ@mail.gmail.com>
+References: <CAAxEZd8dPUjTctpYZ9wxbWVEjzbN1i+odVo0ipC7UTzrC9OZVg@mail.gmail.com>
+ <11a9a774-0559-4585-8921-43c9ecee13c6@googlegroups.com>
+ <CAAxEZd9MT=-L=MOz07EcdmHBS-7-HGzfvPsyYh_8qEQwkW9dRQ@mail.gmail.com>
+Subject: Re: [opensport] Re: New Season - English Premier League 2014/15
+ Added
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1031_1505028835.1407805148869"
+X-Google-Token: ENzNpZ8FQbBC7l7nbWI0
+X-Google-IP: 66.44.120.8
+
+------=_Part_1031_1505028835.1407805148869
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1032_1957235479.1407805148869"
+
+------=_Part_1032_1957235479.1407805148869
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Looking good. I like the presentation of this page. It is getting there. 
+Was curious where you get the icons from?
+
+http://footballdb.herokuapp.com/en.2014_15
+
+
+
+On Monday, August 11, 2014 4:53:21 PM UTC-4, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>   FYI:  The datasets are now loaded into the football.db running on 
+> heroku. See the English Premier League page [1] or try the HTTP JSON 
+> API e.g. 
+>
+>   to fetch the Premier League 2014/15 teams use: 
+>    events/en.2014_15/teams 
+>   to the the first round use 
+>    events/en.2014_15/round/1  and so on 
+>
+>   Note the season path changed in the repo e.g. 2014_15 changed to 
+> 2014-15, thus, find the 2014-15 schedule [2] or squads [3] at the new 
+> location, the teams.txt datasets changed to clubs.txt, thus, you find 
+> clubs_wal [4] under the new name. 
+>
+>  Cheers. 
+>
+> [1] footballdb.herokuapp.com/en.2014_15 
+> [2] github.com/openfootball/en-england/tree/master/2014-15 
+> [3] github.com/openfootball/en-england/tree/master/2014-15/squads 
+> [4] github.com/openfootball/en-england/blob/master/clubs_wal.txt 
+>
+
+------=_Part_1032_1957235479.1407805148869
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Looking good. I like the presentation of this page. It is getting there. Was curious where you get the icons from?<div><br></div><div>http://footballdb.herokuapp.com/en.2014_15</div><div><br></div><div><br><br>On Monday, August 11, 2014 4:53:21 PM UTC-4, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; FYI: &nbsp;The datasets are now loaded into the football.db running on
+<br>heroku. See the English Premier League page [1] or try the HTTP JSON
+<br>API e.g.
+<br>
+<br>&nbsp; to fetch the Premier League 2014/15 teams use:
+<br>&nbsp; &nbsp;events/en.2014_15/teams
+<br>&nbsp; to the the first round use
+<br>&nbsp; &nbsp;events/en.2014_15/round/1 &nbsp;and so on
+<br>
+<br>&nbsp; Note the season path changed in the repo e.g. 2014_15 changed to
+<br>2014-15, thus, find the 2014-15 schedule [2] or squads [3] at the new
+<br>location, the teams.txt datasets changed to clubs.txt, thus, you find
+<br>clubs_wal [4] under the new name.
+<br>
+<br>&nbsp;Cheers.
+<br>
+<br>[1] <a href="http://footballdb.herokuapp.com/en.2014_15" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.com%2Fen.2014_15\46sa\75D\46sntz\0751\46usg\75AFQjCNHTvDIhPo97tLa_UWru9yLpgKCilg';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.com%2Fen.2014_15\46sa\75D\46sntz\0751\46usg\75AFQjCNHTvDIhPo97tLa_UWru9yLpgKCilg';return true;">footballdb.herokuapp.com/en.<wbr>2014_15</a>
+<br>[2] <a href="http://github.com/openfootball/en-england/tree/master/2014-15" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fen-england%2Ftree%2Fmaster%2F2014-15\46sa\75D\46sntz\0751\46usg\75AFQjCNGbW5eb0Bu7IIzhPO2OAgfDIq9gOg';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fen-england%2Ftree%2Fmaster%2F2014-15\46sa\75D\46sntz\0751\46usg\75AFQjCNGbW5eb0Bu7IIzhPO2OAgfDIq9gOg';return true;">github.com/openfootball/en-<wbr>england/tree/master/2014-15</a>
+<br>[3] <a href="http://github.com/openfootball/en-england/tree/master/2014-15/squads" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fen-england%2Ftree%2Fmaster%2F2014-15%2Fsquads\46sa\75D\46sntz\0751\46usg\75AFQjCNHAAE8t0QwtW4yTT5yUaXrWzF5IBA';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fen-england%2Ftree%2Fmaster%2F2014-15%2Fsquads\46sa\75D\46sntz\0751\46usg\75AFQjCNHAAE8t0QwtW4yTT5yUaXrWzF5IBA';return true;">github.com/openfootball/en-<wbr>england/tree/master/2014-15/<wbr>squads</a>
+<br>[4] <a href="http://github.com/openfootball/en-england/blob/master/clubs_wal.txt" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fen-england%2Fblob%2Fmaster%2Fclubs_wal.txt\46sa\75D\46sntz\0751\46usg\75AFQjCNGvxXfdBjFLjC0e5BeS-G9InzrKcA';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fen-england%2Fblob%2Fmaster%2Fclubs_wal.txt\46sa\75D\46sntz\0751\46usg\75AFQjCNGvxXfdBjFLjC0e5BeS-G9InzrKcA';return true;">github.com/openfootball/en-<wbr>england/blob/master/clubs_wal.<wbr>txt</a>
+<br></blockquote></div></div>
+------=_Part_1032_1957235479.1407805148869--
+
+------=_Part_1031_1505028835.1407805148869--
+

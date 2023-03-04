@@ -1,0 +1,75 @@
+From 6384453603522772992@xxx Tue Feb 07 19:40:41 +0000 2017
+X-GM-THRID: 6382859402075963392
+X-Received: by 10.31.153.72 with SMTP id b69mr3472535vke.16.1486496441496;
+        Tue, 07 Feb 2017 11:40:41 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.37.197 with SMTP id l188ls4649949iol.14.gmail; Tue, 07 Feb
+ 2017 11:40:40 -0800 (PST)
+X-Received: by 10.99.102.68 with SMTP id a65mr5361598pgc.68.1486496440834;
+        Tue, 07 Feb 2017 11:40:40 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22c.google.com (mail-it0-x22c.google.com. [2607:f8b0:4001:c0b::22c])
+        by gmr-mx.google.com with ESMTPS id d20si39176itc.1.2017.02.07.11.40.40
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 07 Feb 2017 11:40:40 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22c as permitted sender) client-ip=2607:f8b0:4001:c0b::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22c.google.com with SMTP id r185so87341473ita.0
+        for <opensport@googlegroups.com>; Tue, 07 Feb 2017 11:40:40 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=JVw4Yqaeik72t/QHYfokWFJYE/KGhSn8PGc10nXSxnw=;
+        b=dmn53ROU/N+5HBc6PahAjw3uLItGKzS/v3ISieRdyLBN0tFfrXdni81UjomY5air+I
+         ZTpoF24Fc4FIFEaBwEQfODxcBQusa/9Yk5GNYJzKF6fOASpgAjHwg6AIkhTr6zgWNiE3
+         ciI4qWleqGHECeTs4F7CLciaEmlqUIRvoAdeWSYnMPhHV9CB5v97QiJbyNG5Xy0ACLa3
+         2JFiSa8mSb1kGjNVKaY8xv2EkFUmSus0bzuF1Q0kAckrxU0DyceTIlcZzKd+ge0neLHZ
+         XmBw/D2tIdSdUtIdG1YlI5KAgdjWyCG/pefC5vL9bUjD0rbPNvLY7Kc2WKgM47pU5w3C
+         8QTw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=JVw4Yqaeik72t/QHYfokWFJYE/KGhSn8PGc10nXSxnw=;
+        b=iMJi/KDOp71zkCmIpO4fBaDCEPYegk7MQfjyBbQLDUmFKCuJU8mpZNHUpaWc3B/X6d
+         lUxFQJLiHzGROluOlie7NKqeP+3wfBkgycns874UXG7pPUHnThCKTSj52BgibI+vqtUL
+         6bx2kah3nzKFqiyPubWqPCYdpqFcoLHyR529mufCMfTUpi2mPgMP4hLzVC9MzA740GsQ
+         i7hsJZWBQymTnWdPettwmLB+k5T5H2nMcfRn3MvLq6H8Knm/RjLLs6dE/hKFnC2UZx/H
+         A/VtC5io5bKV9I1GaqEFpRfIPDhBTA60pM58rGsoaF/KqKvfWuXDLUc8aTaTL0eumwr3
+         PZfQ==
+X-Gm-Message-State: AIkVDXI6K85+YvSvDMvLmXaEW6WtsMfu1d7NdwAEWxcxMXCpN/2b2Y2LGk2Pd72LYGQdxs2r/jbWPwzefcgfVw==
+X-Received: by 10.36.47.213 with SMTP id j204mr12961729itj.7.1486496440415;
+ Tue, 07 Feb 2017 11:40:40 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.34.209 with HTTP; Tue, 7 Feb 2017 11:40:39 -0800 (PST)
+In-Reply-To: <9c76c355-505f-4650-9ce5-6924a004b75f@googlegroups.com>
+References: <a8f9ce84-6e89-4701-9611-e5c591602483@googlegroups.com>
+ <CAAxEZd9_HdroQq+-habSdB5GPtgox=YD=MitQ3OuoLct57jF2A@mail.gmail.com>
+ <aa67484d-ab88-429f-bd5a-79268ad30455@googlegroups.com> <ff33bb93-0ff1-4e6b-8e87-b187f7829f08@googlegroups.com>
+ <CAAxEZd9KO0FpVoAK8d74ujXHWypn7Hxa7fupOpg5GTKPDz-Xww@mail.gmail.com> <9c76c355-505f-4650-9ce5-6924a004b75f@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 7 Feb 2017 20:40:39 +0100
+Message-ID: <CAAxEZd8u0B6Up_QOYdS3y81hvZdRXvETNW624UHpU1fKu=iMog@mail.gmail.com>
+Subject: Re: [opensport] Champions League full database
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+> Wow, it works, no more errors. Thanks a lot!
+
+  Great to hear it. Thanks for posting an update.
+
+ > Do you think there is a way to import the old data too?
+> I mean, the data from 1950's in the "archive" folder:
+
+  Sorry this data in the archive folder is a work-in-progress I
+started some time ago. It's not yet ready for processing. If anyone
+wants to help out, more than welcome ;-)
+
+   Cheers.
+

@@ -1,0 +1,66 @@
+From 6196972324164468736@xxx Mon Sep 21 14:17:35 +0000 2015
+X-GM-THRID: 6196970860531679232
+X-Received: by 10.66.227.166 with SMTP id sb6mr17188778pac.0.1442845054852;
+        Mon, 21 Sep 2015 07:17:34 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.182.29.105 with SMTP id j9ls864188obh.90.gmail; Mon, 21 Sep
+ 2015 07:17:34 -0700 (PDT)
+X-Received: by 10.182.65.134 with SMTP id x6mr17300807obs.14.1442845054337;
+        Mon, 21 Sep 2015 07:17:34 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x235.google.com (mail-io0-x235.google.com. [2607:f8b0:4001:c06::235])
+        by gmr-mx.google.com with ESMTPS id x8si1051471igx.2.2015.09.21.07.17.34
+        for <wwwmake@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 21 Sep 2015 07:17:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::235 as permitted sender) client-ip=2607:f8b0:4001:c06::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x235.google.com with SMTP id z6so120431143ioi.2
+        for <wwwmake@googlegroups.com>; Mon, 21 Sep 2015 07:17:34 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=DYv4FhM6bN3LX11CSQsY90uduB0xkKTmzDan2HMXk2c=;
+        b=suLOyyWftrZZjb+YD71YN9vr88+wj2trZBtBilOxX0tthQwqwYotOYByEnvJrOI2ak
+         eq0L7bT+g4X85ySR37MFNDuSzdqLbrYl3SofYqwnZn28X8GLWekcn+bNUeudOsqTbkAN
+         r0/EI1ADclxbWvlmjSvHoxNbaAYB9MFgiKsJuMHHXJGjGAU5Jn9VFVKdfPMfKCFxZVuW
+         xb2BdBrtC6RD76Z2Y6mpsp5GKwROFZAmAqrsn0W/rMzgl9P6WZ36aVMxNKCjC1y5Q6Uf
+         vHQ2E8rzGglSyjxGWshuO0suStLH8t59GfYblwu9Nf9Kt01Do5NFIL/4VZwsiT78M41e
+         eUrA==
+MIME-Version: 1.0
+X-Received: by 10.107.25.143 with SMTP id 137mr29720577ioz.52.1442845054209;
+ Mon, 21 Sep 2015 07:17:34 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Mon, 21 Sep 2015 07:17:34 -0700 (PDT)
+In-Reply-To: <7f03a5ec-69b9-445a-b55f-bb7a82a75034@googlegroups.com>
+References: <7f03a5ec-69b9-445a-b55f-bb7a82a75034@googlegroups.com>
+Date: Mon, 21 Sep 2015 16:17:34 +0200
+Message-ID: <CAAxEZd9Li=rJfCbJKE5_pK+sAYze5TDf3ZHxKCdyZaJ+x3-7yg@mail.gmail.com>
+Subject: Re: [wwwmake:372] Pluto 'command line tool'
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for your interest in trying out the pluto jekyll planet addon.
+
+   The pluto (feed reader) itself is (yet) another command line tool  [1]
+
+   To install use
+
+$ gem install pluto
+
+  Then try
+
+$  pluto help
+
+   For details see the pluto (feedreader) project site [2].  Let us
+know how it works out. Cheers.
+
+[1] github.com/feedreader/pluto
+[2] feedreader.github.io
+

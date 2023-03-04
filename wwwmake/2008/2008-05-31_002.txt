@@ -1,0 +1,42 @@
+From 20535312384@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 17273192448
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,881dd44606314bf3,start
+X-Google-Attributes: gid592b7a,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Received: by 10.151.103.2 with SMTP id f2mr58523ybm.6.1212214390287; Fri, 30 
+	May 2008 23:13:10 -0700 (PDT)
+Date: Fri, 30 May 2008 23:13:10 -0700 (PDT)
+X-IP: 64.81.227.163
+User-Agent: G2/1.0
+X-Google-Token: XGOfqgwAAADlpcZXKuqcT-b_LmHgyQLW
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; 
+	rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14,gzip(gfe),gzip(gfe)
+Message-ID: <be6cb54e-2541-44a9-96b9-8cb32f2aeebc@k37g2000hsf.googlegroups.com>
+Subject: Help me get codex started
+From: Andy Lester <petdance@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S9, FullerScreen And Friends" <webslideshow@googlegroups.com>
+X-Google-Approved: geraldbauer2007@gmail.com via web at 2008-05-31 06:13:52
+
+I'm missing something crazy simple.
+
+I installed the gem, first from Dave's github, and then again with
+drnic's version.  codex is installed.
+
+I've got my little C Tutorial directory started:
+
+mel:~/ctut : find . -type f | grep -v .svn
+./code/malloc.c
+./slides/malloc.slides
+./slides/metadata.yml
+./slides/table_of_contents.slides
+
+Fabulous.  But how do I start codex?   Whenever I run "codex foo", it
+populates the foo/ directory with the default presentation.
+Overwrites my table_of_contents.slides, too.
+
+Am I misunderstanding what codex does?
+

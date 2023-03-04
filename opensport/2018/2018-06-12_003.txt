@@ -1,0 +1,188 @@
+From 6566213467322187776@xxx Tue Jun 12 15:01:47 +0000 2018
+X-GM-THRID: 6342113564983033856
+X-Received: by 2002:a25:b282:: with SMTP id k2-v6mr217680ybj.75.1528815707296;
+        Tue, 12 Jun 2018 08:01:47 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a81:ad5f:: with SMTP id l31-v6ls269344ywk.34.gmail; Tue, 12
+ Jun 2018 08:01:46 -0700 (PDT)
+X-Received: by 2002:a81:7a81:: with SMTP id v123-v6mr238067ywc.168.1528815706836;
+        Tue, 12 Jun 2018 08:01:46 -0700 (PDT)
+Received: by 2002:a81:3490:0:0:0:0:0 with SMTP id b138-v6msywa;
+        Tue, 12 Jun 2018 05:47:10 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKKGUw4m+vep/DE1lf5wA3FI02DlAkbGSVYYCtH8DX9pPBKgCppYwH9noZQ4W71tmmHHLB7zT8Vajw==
+X-Received: by 2002:a25:d68d:: with SMTP id n135-v6mr14804ybg.6.1528807629718;
+        Tue, 12 Jun 2018 05:47:09 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Tue, 12 Jun 2018 05:47:09 -0700 (PDT)
+From: Peter Coghill <peter@alephinsights.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <d1a2b4a3-9799-425b-87fe-38d5f53c2c60@googlegroups.com>
+In-Reply-To: <d767b1e9-47ad-43f5-83e7-f5a9e0991ad5@googlegroups.com>
+References: <f6259f69-0d0f-4ca1-9ac8-af45aeca4c1b@googlegroups.com>
+ <d767b1e9-47ad-43f5-83e7-f5a9e0991ad5@googlegroups.com>
+Subject: Re: How to use the .txt files in the world-cup repo?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_113718_1014749827.1528807629535"
+X-Google-Token: EM2B_9gF15ppSHQXTrM0
+X-Google-IP: 2a00:23c4:7a93:8600:e388:694b:9997:ff45
+
+------=_Part_113718_1014749827.1528807629535
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_113719_1247116239.1528807629536"
+
+------=_Part_113719_1247116239.1528807629536
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Gerald - first, massive thank you for the data set. Astonishing work.
+
+Ben - I'm trying to do a similar thing to you. Generate a .db containing 
+all historical WC games.  I'm trying to follow along this thread, but can't 
+see how you got it working.
+
+How did you parse sportdb this custom Datafile? What were the steps?
+
+Recognise its been 18 months past, so you may not recall.
+
+On Friday, 21 October 2016 16:32:52 UTC+1, Ben Burlingham wrote:
+>
+> Hi Gerald,
+>
+> I'm pleased to report everything works as expected!  
+>
+> I used this Datafile:
+>
+> world  'world.db', setup: 'countries'
+> football 'national-teams'
+> football 'national-teams', setup: 'history'
+> football 'world-cup', setup: 'history'
+>
+> ...and it works great!  Thanks for your help!  
+>
+> On Sunday, October 16, 2016 at 10:19:43 AM UTC-7, Ben Burlingham wrote:
+>>
+>> Hi Gerald, thank you for your work on building and publishing these 
+>> datasets!
+>>
+>> I'm interested in how to use sportdb to generate datasets for the text 
+>> files found at https://github.com/openfootball/world-cup.
+>>
+>> The README says "use the sportdb command line tool to build your own 
+>> worldcup.db copy from the plain text data sets." but I haven't found 
+>> resources on how to do that.
+>>
+>> I've been digging around in various places:
+>> - Built a sport.db file using a Datafile approach at 
+>> https://github.com/openfootball/datafile, but it only contains the 2014 
+>> data, and too much of it (has qualifiers and everything) 
+>> - Tried Jokecamp's approach at 
+>> https://github.com/jokecamp/sportdb-build-scripts but it seems to be 
+>> similar to the above
+>> - Used the pre-built releases at 
+>> https://github.com/openfootball/build/releases but they don't have 2014 
+>> data
+>> - Experimented with the Rakefiles approach at 
+>> https://github.com/openfootball/build but that didn't feel right
+>>
+>> I seem to be missing the part on how to parse the individual text files, 
+>> such as 
+>> https://github.com/openfootball/world-cup/blob/master/1930--uruguay/cup.txt
+>> .
+>>
+>> I'm close to writing my own parser to do it but wanted to check here 
+>> first! Thanks for any help!
+>>
+>
+------=_Part_113719_1247116239.1528807629536
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Gerald - first, massive thank you for the data set. Astoni=
+shing work.<div><br></div><div>Ben - I&#39;m trying to do a similar thing t=
+o you. Generate a .db containing all historical WC games.=C2=A0 I&#39;m try=
+ing to follow along this thread, but can&#39;t see how you got it working.<=
+/div><div><br></div><div>How did you parse sportdb this custom Datafile? Wh=
+at were the steps?</div><div><br></div><div>Recognise its been 18 months pa=
+st, so you may not recall.</div><div><br>On Friday, 21 October 2016 16:32:5=
+2 UTC+1, Ben Burlingham  wrote:<blockquote class=3D"gmail_quote" style=3D"m=
+argin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"=
+><div dir=3D"ltr">Hi Gerald,<div><br></div><div>I&#39;m pleased to report e=
+verything works as expected! =C2=A0</div><div><br></div><div>I used this <f=
+ont face=3D"courier new, monospace">Datafile</font>:</div><div><br></div><d=
+iv><div><font face=3D"courier new, monospace">world =C2=A0&#39;world.db&#39=
+;, setup: &#39;countries&#39;</font></div><div><font face=3D"courier new, m=
+onospace">football &#39;national-teams&#39;</font></div><div><font face=3D"=
+courier new, monospace">football &#39;national-teams&#39;, setup: &#39;hist=
+ory&#39;</font></div><div><font face=3D"courier new, monospace">football &#=
+39;world-cup&#39;, setup: &#39;history&#39;</font></div><div><br></div><div=
+>...and it works great! =C2=A0Thanks for your help! =C2=A0</div><br>On Sund=
+ay, October 16, 2016 at 10:19:43 AM UTC-7, Ben Burlingham wrote:<blockquote=
+ class=3D"gmail_quote" style=3D"margin:0;margin-left:0.8ex;border-left:1px =
+#ccc solid;padding-left:1ex"><div dir=3D"ltr">Hi Gerald, thank you for your=
+ work on building and publishing these datasets!<div><br></div><div>I&#39;m=
+ interested in how to use sportdb to generate datasets for the text files f=
+ound at=C2=A0<a href=3D"https://github.com/openfootball/world-cup" rel=3D"n=
+ofollow" target=3D"_blank" onmousedown=3D"this.href=3D&#39;https://www.goog=
+le.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup\x26sa\x=
+3dD\x26sntz\x3d1\x26usg\x3dAFQjCNEAICj--c0gUYDHSS8XrjuWLHGyhA&#39;;return t=
+rue;" onclick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%=
+2F%2Fgithub.com%2Fopenfootball%2Fworld-cup\x26sa\x3dD\x26sntz\x3d1\x26usg\x=
+3dAFQjCNEAICj--c0gUYDHSS8XrjuWLHGyhA&#39;;return true;">https://github.com/=
+<wbr>openfootball/world-cup</a>.</div><div><br></div><div>The README says=
+=C2=A0&quot;use the sportdb command line tool to build your own worldcup.db=
+ copy from the plain text data sets.&quot; but I haven&#39;t found resource=
+s on how to do that.</div><div><br></div><div>I&#39;ve been digging around =
+in various places:</div><div>- Built a sport.db file using a Datafile appro=
+ach at <a href=3D"https://github.com/openfootball/datafile" rel=3D"nofollow=
+" target=3D"_blank" onmousedown=3D"this.href=3D&#39;https://www.google.com/=
+url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\x26sa\x3dD\x26s=
+ntz\x3d1\x26usg\x3dAFQjCNFVeAE8Za-R20bAXFhVtRKEGiIMZQ&#39;;return true;" on=
+click=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgit=
+hub.com%2Fopenfootball%2Fdatafile\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNF=
+VeAE8Za-R20bAXFhVtRKEGiIMZQ&#39;;return true;">https://github.com/<wbr>open=
+football/datafile</a>, but it only contains the 2014 data, and too much of =
+it (has qualifiers and everything)=C2=A0</div><div>- Tried Jokecamp&#39;s a=
+pproach at=C2=A0<a href=3D"https://github.com/jokecamp/sportdb-build-script=
+s" rel=3D"nofollow" target=3D"_blank" onmousedown=3D"this.href=3D&#39;https=
+://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fjokecamp%2Fsportdb-bu=
+ild-scripts\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNH5jsftFAtasSrGcV3wxdwN5=
+yDYIA&#39;;return true;" onclick=3D"this.href=3D&#39;https://www.google.com=
+/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fjokecamp%2Fsportdb-build-scripts\x26sa=
+\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNH5jsftFAtasSrGcV3wxdwN5yDYIA&#39;;return=
+ true;">https://github.com/<wbr>jokecamp/sportdb-build-scripts</a> but it s=
+eems to be similar to the above</div><div>- Used the pre-built releases at=
+=C2=A0<a href=3D"https://github.com/openfootball/build/releases" rel=3D"nof=
+ollow" target=3D"_blank" onmousedown=3D"this.href=3D&#39;https://www.google=
+.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fbuild%2Freleases\x2=
+6sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFUREojeT8n-ccUV5qg8J9GlliYuA&#39;;ret=
+urn true;" onclick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttp=
+s%3A%2F%2Fgithub.com%2Fopenfootball%2Fbuild%2Freleases\x26sa\x3dD\x26sntz\x=
+3d1\x26usg\x3dAFQjCNFUREojeT8n-ccUV5qg8J9GlliYuA&#39;;return true;">https:/=
+/github.com/<wbr>openfootball/build/releases</a> but they don&#39;t have 20=
+14 data</div><div>- Experimented with the Rakefiles approach at <a href=3D"=
+https://github.com/openfootball/build" rel=3D"nofollow" target=3D"_blank" o=
+nmousedown=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%=
+2Fgithub.com%2Fopenfootball%2Fbuild\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjC=
+NECKAMRegpH9eYh6M8nQ1WSVkVCbg&#39;;return true;" onclick=3D"this.href=3D&#3=
+9;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2=
+Fbuild\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNECKAMRegpH9eYh6M8nQ1WSVkVCbg=
+&#39;;return true;">https://github.com/<wbr>openfootball/build</a> but that=
+ didn&#39;t feel right</div><div><br></div><div>I seem to be missing the pa=
+rt on how to parse the individual text files, such as <a href=3D"https://gi=
+thub.com/openfootball/world-cup/blob/master/1930--uruguay/cup.txt" rel=3D"n=
+ofollow" target=3D"_blank" onmousedown=3D"this.href=3D&#39;https://www.goog=
+le.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup%2Fblob%=
+2Fmaster%2F1930--uruguay%2Fcup.txt\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCN=
+GfMvIk0xbX0y1NkzFUzE2rKxG9xw&#39;;return true;" onclick=3D"this.href=3D&#39=
+;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2F=
+world-cup%2Fblob%2Fmaster%2F1930--uruguay%2Fcup.txt\x26sa\x3dD\x26sntz\x3d1=
+\x26usg\x3dAFQjCNGfMvIk0xbX0y1NkzFUzE2rKxG9xw&#39;;return true;">https://gi=
+thub.com/<wbr>openfootball/world-cup/blob/<wbr>master/1930--uruguay/cup.txt=
+</a>.</div><div><br></div><div>I&#39;m close to writing my own parser to do=
+ it but wanted to check here first! Thanks for any help!</div></div></block=
+quote></div></div></blockquote></div></div>
+------=_Part_113719_1247116239.1528807629536--
+
+------=_Part_113718_1014749827.1528807629535--
+

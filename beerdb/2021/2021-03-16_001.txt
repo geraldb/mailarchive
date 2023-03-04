@@ -1,0 +1,91 @@
+From 6940523064245354496@xxx Wed Mar 17 07:34:12 +0000 2021
+X-GM-THRID: 6940523064578801664
+X-Received: by 2002:a05:622a:102:: with SMTP id u2mr2697730qtw.37.1615966452433;
+        Wed, 17 Mar 2021 00:34:12 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 2002:a05:620a:b19:: with SMTP id t25ls12490828qkg.1.gmail; Wed,
+ 17 Mar 2021 00:34:12 -0700 (PDT)
+X-Received: by 2002:ae9:e005:: with SMTP id m5mr3215246qkk.61.1615966452155;
+        Wed, 17 Mar 2021 00:34:12 -0700 (PDT)
+Received: by 2002:a05:620a:15f5:b029:281:d8fb:6112 with SMTP id p21-20020a05620a15f5b0290281d8fb6112msqkm;
+        Tue, 16 Mar 2021 12:16:18 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxxitL1LRSPKrIOT1GuGE/xFzl2dUW2PutmQZKBx7GxBoExFPpv9irHGkG9FC90KHHbQb+3QXzg1A==
+X-Received: by 2002:a37:9c92:: with SMTP id f140mr552451qke.415.1615922178284;
+        Tue, 16 Mar 2021 12:16:18 -0700 (PDT)
+X-Google-Thread-Subscription: Yes
+X-Google-Web-Client: true
+Date: Tue, 16 Mar 2021 12:16:18 -0700 (PDT)
+From: Sqvall <masster1987@gmail.com>
+To: beerdb <beerdb@googlegroups.com>
+Message-Id: <cb16b6a8-0092-4b1c-8255-4e9c62a60efan@googlegroups.com>
+Subject: [info] TODO / FIX: read dataset (zip) 'openbeer / at-austria', '';
+ sorry
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_5878_770688748.1615922178063"
+
+------=_Part_5878_770688748.1615922178063
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5879_1737712000.1615922178063"
+
+------=_Part_5879_1737712000.1615922178063
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello, who can help me?
+When installing a beer and trying to fill the base through a build or read, 
+I get the following error:
+```
+[info] [datafile] read
+[info] TODO / FIX: read dataset (zip) 'openmundi / world.db', ''; sorry
+[info] TODO / FIX: read dataset (zip) 'openbeer / at-austria', ''; sorry
+Done.
+```
+Accordingly, the data does not fall into the database.
+I'm not really into ruby, but as I understand it, the problem is somewhere 
+in gem datafile / workers / zip / dataset.rb:
+```ruby
+def read
+    if @ dataset.is_a? (FootballDataset)
+      logger.info ("read football dataset (zip) '# {@dataset.name}', '# 
+{@dataset.setup}'")
+
+      pack = SportDb :: ZipPackage.new (local_zip_path)
+      pack.read (season: @ dataset.setup) ## note: pass on (optional) setup 
+arg as season (filter) arg for now
+    else
+      logger.info ("TODO / FIX: read dataset (zip) '# {@dataset.name}', '# 
+{@dataset.setup}'; sorry")
+    end
+  end
+```
+Can you explain what FootballDataset has to do with it and what should I do 
+to fill the database?
+
+------=_Part_5879_1737712000.1615922178063
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div>Hello, who can help me?</div><div>When installing a beer and trying to=
+ fill the base through a build or read, I get the following error:<br>```</=
+div><div>[info] [datafile] read</div><div>[info] TODO / FIX: read dataset (=
+zip) 'openmundi / world.db', ''; sorry</div><div>[info] TODO / FIX: read da=
+taset (zip) 'openbeer / at-austria', ''; sorry</div><div>Done.<br>```</div>=
+<div>Accordingly, the data does not fall into the database.</div><div>I'm n=
+ot really into ruby, but as I understand it, the problem is somewhere in ge=
+m datafile / workers / zip / dataset.rb:<br>```ruby</div><div><div>def read=
+</div><div>&nbsp; &nbsp; if @ dataset.is_a? (FootballDataset)</div><div>&nb=
+sp; &nbsp; &nbsp; logger.info ("read football dataset (zip) '# {@dataset.na=
+me}', '# {@dataset.setup}'")</div><div><br></div><div>&nbsp; &nbsp; &nbsp; =
+pack =3D SportDb :: ZipPackage.new (local_zip_path)</div><div>&nbsp; &nbsp;=
+ &nbsp; pack.read (season: @ dataset.setup) ## note: pass on (optional) set=
+up arg as season (filter) arg for now</div><div>&nbsp; &nbsp; else</div><di=
+v>&nbsp; &nbsp; &nbsp; logger.info ("TODO / FIX: read dataset (zip) '# {@da=
+taset.name}', '# {@dataset.setup}'; sorry")</div><div>&nbsp; &nbsp; end</di=
+v><div>&nbsp; end</div></div><div>```</div><div><div>Can you explain what F=
+ootballDataset has to do with it and what should I do to fill the database?=
+</div></div>
+------=_Part_5879_1737712000.1615922178063--
+
+------=_Part_5878_770688748.1615922178063--
+

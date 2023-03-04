@@ -1,0 +1,95 @@
+From 6731404728486330368@xxx Sat Aug 31 18:48:15 +0000 2019
+X-GM-THRID: 6728805207557275648
+X-Received: by 2002:adf:e9c5:: with SMTP id l5mr3945387wrn.40.1567277295231;
+        Sat, 31 Aug 2019 11:48:15 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a7b:cc01:: with SMTP id f1ls3953744wmh.4.canary-gmail; Sat,
+ 31 Aug 2019 11:48:14 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqxYYRtzdR9c++8aWwUs0qztKC+1FZ3hQV8XoMM8IP9u2gjzVVuqP7YHcqTyDUMI0MzfX1pO
+X-Received: by 2002:a1c:f607:: with SMTP id w7mr1546637wmc.84.1567277294494;
+        Sat, 31 Aug 2019 11:48:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1567277294; cv=none;
+        d=google.com; s=arc-20160816;
+        b=z8xPzG3V2VBmd/5OqyzZdQVIbH9KXAOQTRIhOq8XnmVx7oTkw8H5AIUy3HatySo8DN
+         V4fsYvB65BH+hry8LS4de/DmWvLOQqv5tZk3UQuYFC2yBNqOZ346YgyYk3aL2fzoUaIa
+         blVENOLkl2ptrHZpzBUbG59+uclZsyOZacyWIVTFl/A8tmNDopTLUVu6MRqQbACKHU+a
+         imjbwdUsHNH7DaaTZbF6zxEejI8PmVO+NTNa1zmaVKc923n45wSl/uYlD9pLhhO3oGwD
+         wII16RcqfvSQPGAoSw6cbmPzGNFkLIseocYFcqVMZjhaglr3FNQ2tqeXCGd9AHMO/jRy
+         29fA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=E83fq9Jk65nHc/4aub5muI+M9ucBPimZn6L0we2EXxc=;
+        b=rSEsHS9/z7azlIY5D7GehxBuRql1kcvuZvMiIzk/PKcwpgXEzMhIhPUtSML6YrDh7U
+         HSppQFZG3FmhgJNY7QQ7ZTA8vPentcnuiFZ82ueVL485TBLREyqPxf+wMJIWrDflRfqc
+         s/aS9Dur+uVdB4GGe5hfsGQnZWvsYn7+9ntj4fATMw67pWg7wmACK4iVe7onXI8PyXAA
+         iionQ/dIX8WQTMuJob6ESX59dfORE+HPxqzWueBSvQbCEvRbcsA0IVHPTojoZh5WHJKl
+         XpN7wTCLKTq6Ydq9dkc06jHAIsEfyVkDgL7Muw+L2zfNQhpVFkzfIOk0jIuXgK1vTJk0
+         cf0A==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=iOO2eZTO;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22d.google.com (mail-lj1-x22d.google.com. [2a00:1450:4864:20::22d])
+        by gmr-mx.google.com with ESMTPS id f13si777958wmc.3.2019.08.31.11.48.14
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 31 Aug 2019 11:48:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22d as permitted sender) client-ip=2a00:1450:4864:20::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=iOO2eZTO;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22d.google.com with SMTP id t14so9385929lji.4
+        for <opensport@googlegroups.com>; Sat, 31 Aug 2019 11:48:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=E83fq9Jk65nHc/4aub5muI+M9ucBPimZn6L0we2EXxc=;
+        b=iOO2eZTOiRbp22jHKKMBpQjVThg26KNj5RbHxV6Zo1ieQzJ3RPdtAjKKtZO0W1rn/h
+         XFM7x+C9D1tVJ/xRNQVV3LPFy8haBd2EltZBTrh6UPo+M7FC+vLV/NiQCbDW+SHYCWVo
+         dC9HjjNKsUim+eJ4xTHTKJRNia3i7HpKFQTEJfdG0A4W8UwyivP53EvjeIetZKoe5GzA
+         +nlcB7k+j4dnJaxyXAweriNBGPIE514b/L6Vf0Yt268QCN85aG+szbSoFCXJENCQ1aUy
+         0eZNi8ya1uEpcpA+ucrrOBVXwiCkzV6x5Q11Plrlv9CquUhKuC/B2ptKPvYjcFVP79Eq
+         47tA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=E83fq9Jk65nHc/4aub5muI+M9ucBPimZn6L0we2EXxc=;
+        b=rDO8vmCd6skfSLMHbrlSin1zW1fvZJABt8neyJmAI2lJuxZa+d19tlK2g7l7mwpAvT
+         uITLttb6qbadfDllF2pxatW+tK4R4fYpXTUSDBH77Rx23KCg0bglhZSgEGobUBMPiteZ
+         91koH6AZ4OSIgcWBx7Rt8db3xmJM9cYSUUGBjjGJrXWkAZr1eFTR/tB/16PwzImKy7dD
+         UcMyZFvHu6/MBcT9dvlXrFQEa3IUNv1S+k/f/uvkKiVYE3H7Dy7C5M4Cdu5K8GPwZhFW
+         6Q9GXxLFVwlKp1Sm/p9EpLJJkahLZfYAppXCpMhZ+yHWK8eZ4UtKE/nLiVWNEyNwoXbU
+         RjLQ==
+X-Gm-Message-State: APjAAAVUwns9PVlWiH+9UiSrb6dCmHaBAg+zk+mwOJIwo/zVuKXdGJc4
+	zHnzaiTWWtDrbZ4eJ/Fk4H9taCWqu1+HPDENQosytRw4
+X-Received: by 2002:a2e:7013:: with SMTP id l19mr12106620ljc.141.1567277293551;
+ Sat, 31 Aug 2019 11:48:13 -0700 (PDT)
+MIME-Version: 1.0
+References: <77d31082-fa86-46b0-8d5e-28fc12857bb8@googlegroups.com>
+ <CAAxEZd_xQQem8_GLQXEiNsAGimGT5EuJLJFy5sdGZhPMaR1zuQ@mail.gmail.com>
+ <CAPnzP1Bweoo7ggsrzuYFJPfiHyLJvxkysSmTDKAmqubV0UhmwA@mail.gmail.com> <CAAxEZd-v1p=Wv5tubDad8iX8VgzYt_Lgn239h79ic7xiTv+SWg@mail.gmail.com>
+In-Reply-To: <CAAxEZd-v1p=Wv5tubDad8iX8VgzYt_Lgn239h79ic7xiTv+SWg@mail.gmail.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 31 Aug 2019 20:48:01 +0200
+Message-ID: <CAAxEZd8uSBzP-V4Jq2btT16eXxe4hgtBFysNiBLuBQ2i8kDu+A@mail.gmail.com>
+Subject: Re: [opensport] Maintainer openfootball/es-espana
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   FYI: I've added the 2019/2020 season datafiles for the Spanish
+Primera Divisi=C3=B3n ("La Liga") and Segunda Divisi=C3=B3n to the football=
+.csv
+project, see [1].
+
+   Cheers. Prost.
+
+[1]  https://github.com/footballcsv/espana/tree/master/2010s/2019-20
+

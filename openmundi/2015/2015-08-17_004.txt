@@ -1,0 +1,130 @@
+From 6183952783078588416@xxx Mon Aug 17 12:15:07 +0000 2015
+X-GM-THRID: 6183676375303454720
+Date: Mon, 17 Aug 2015 05:15:06 -0700 (PDT)
+From: Victor DD <victorddesigner@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Cc: victorddesigner@gmail.com
+Message-Id: <c50256cd-f894-420d-b53f-e36b3e7387bd@googlegroups.com>
+In-Reply-To: <CAAxEZd9JU6JKv12VGw_agpz=mmO_nZ30bB515YALJi9LsjVULA@mail.gmail.com>
+References: <b7d238a5-07df-48bc-8f14-ea75abc8ab07@googlegroups.com>
+ <CAAxEZd8kVvdzeA61PxLoOSEfkRvc8M=+3U2zN2GA-4+h_MCt4g@mail.gmail.com>
+ <4a1ca44c-6033-4a14-bb20-a914006ef7e0@googlegroups.com>
+ <CAAxEZd9JU6JKv12VGw_agpz=mmO_nZ30bB515YALJi9LsjVULA@mail.gmail.com>
+Subject: Re: [openmundi] loop/error on sutup
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_259_716712008.1439813706745"
+X-Google-Token: EMqgx64F5_RilqraxGM0
+X-Google-IP: 93.33.134.179
+
+------=_Part_259_716712008.1439813706745
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_260_1305654026.1439813706745"
+
+------=_Part_260_1305654026.1439813706745
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Gerald,
+I understand but the problem is that go in error when parse the data in=20
+txt. In my opinion there's a logic error=20
+here: https://github.com/textkit/textutils/blob/master/lib/textutils/parser=
+/name_tokenizer.rb#L25-L45
+
+The data of txt in more point have a pipe "|" inside the curly brackets:
+
+Hovedstaden [Greater Copenhagen|Capital Region],
+
+So in this case the parts (in the source code) return=20
+
+array(
+1=3D>Hovedstaden [Greater Copenhagen
+2 =3D>Capital Region]
+)
+
+What do you about this?=20
+
+Thanks.
+
+
+Il giorno luned=C3=AC 17 agosto 2015 14:02:21 UTC+2, Gerald Bauer ha scritt=
+o:
+>
+> Hello,=20
+>
+>   FYI: If you use the "old" build script using Rake e.g. Rakefile [1]=20
+> you can import the data into MySQL. Change the db settings e.g.:=20
+>
+> DB_CONFIG =3D {=20
+>   adapter: 'sqlite3',=20
+>   database: WORLD_DB_PATH=20
+> }=20
+>
+>   to something like:=20
+>
+> DB_CONFIG =3D {=20
+>   adapter: 'mysql',=20
+>   host: 'localhost',=20
+>   database: 'world',=20
+>   username: 'root',=20
+>   password: 'secret'=20
+> }=20
+>
+>   Cheers.=20
+>
+> [1] https://github.com/openmundi/build/blob/master/Rakefile=20
+>
+
+------=_Part_260_1305654026.1439813706745
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi=C2=A0Gerald,<div>I understand but the problem is that g=
+o in error when parse the data in txt. In my opinion there&#39;s a logic er=
+ror here:=C2=A0https://github.com/textkit/textutils/blob/master/lib/textuti=
+ls/parser/name_tokenizer.rb#L25-L45</div><div><br></div><div>The data of tx=
+t in more point have a pipe &quot;|&quot; inside the curly brackets:<br><br=
+>Hovedstaden [Greater Copenhagen|Capital Region],<br></div><div><br></div><=
+div>So in this case the parts (in the source code) return=C2=A0</div><div><=
+br></div><div>array(</div><div>1=3D&gt;Hovedstaden [Greater Copenhagen</div=
+><div>2 =3D&gt;Capital Region]</div><div>)</div><div><br></div><div>What do=
+ you about this?=C2=A0</div><div><br></div><div>Thanks.</div><div><br></div=
+><div><br>Il giorno luned=C3=AC 17 agosto 2015 14:02:21 UTC+2, Gerald Bauer=
+ ha scritto:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-lef=
+t: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 FYI: If you use the &quot;old&quot; build script using Rake e.g.=
+ Rakefile [1]
+<br>you can import the data into MySQL. Change the db settings e.g.:
+<br>
+<br>DB_CONFIG =3D {
+<br>=C2=A0 adapter: &#39;sqlite3&#39;,
+<br>=C2=A0 database: WORLD_DB_PATH
+<br>}
+<br>
+<br>=C2=A0 to something like:
+<br>
+<br>DB_CONFIG =3D {
+<br>=C2=A0 adapter: &#39;mysql&#39;,
+<br>=C2=A0 host: &#39;localhost&#39;,
+<br>=C2=A0 database: &#39;world&#39;,
+<br>=C2=A0 username: &#39;root&#39;,
+<br>=C2=A0 password: &#39;secret&#39;
+<br>}
+<br>
+<br>=C2=A0 Cheers.
+<br>
+<br>[1] <a href=3D"https://github.com/openmundi/build/blob/master/Rakefile"=
+ target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https:/=
+/www.google.com/url?q\75https%3A%2F%2Fgithub.com%2Fopenmundi%2Fbuild%2Fblob=
+%2Fmaster%2FRakefile\46sa\75D\46sntz\0751\46usg\75AFQjCNHevPxUGpPwrX-Cvqiie=
+aVZ9I4PkA&#39;;return true;" onclick=3D"this.href=3D&#39;https://www.google=
+.com/url?q\75https%3A%2F%2Fgithub.com%2Fopenmundi%2Fbuild%2Fblob%2Fmaster%2=
+FRakefile\46sa\75D\46sntz\0751\46usg\75AFQjCNHevPxUGpPwrX-CvqiieaVZ9I4PkA&#=
+39;;return true;">https://github.com/openmundi/<wbr>build/blob/master/Rakef=
+ile</a>
+<br></blockquote></div></div>
+------=_Part_260_1305654026.1439813706745--
+
+------=_Part_259_716712008.1439813706745--
+

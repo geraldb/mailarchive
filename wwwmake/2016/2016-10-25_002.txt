@@ -1,0 +1,69 @@
+From 6345416609993064448@xxx Tue Oct 25 14:57:14 +0000 2016
+X-GM-THRID: 6345415112559427584
+X-Received: by 10.129.164.215 with SMTP id b206mr13308142ywh.124.1477407433965;
+        Tue, 25 Oct 2016 07:57:13 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.157.54.247 with SMTP id s52ls14496247otd.39.gmail; Tue, 25 Oct
+ 2016 07:57:13 -0700 (PDT)
+X-Received: by 10.13.218.197 with SMTP id c188mr12692017ywe.144.1477407433688;
+        Tue, 25 Oct 2016 07:57:13 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-yb0-x229.google.com (mail-yb0-x229.google.com. [2607:f8b0:4002:c09::229])
+        by gmr-mx.google.com with ESMTPS id i84si1736628ywg.0.2016.10.25.07.57.13
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 25 Oct 2016 07:57:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4002:c09::229 as permitted sender) client-ip=2607:f8b0:4002:c09::229;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4002:c09::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-yb0-x229.google.com with SMTP id g68so829888ybi.0
+        for <wwwmake@googlegroups.com>; Tue, 25 Oct 2016 07:57:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=W6bDlI2+wyd787hsKurXebTcyWXnbD/gAUdtT3EzYMU=;
+        b=n456Xlx/1d6aKis8rbcUWp6YvY/9Vc0Zi7EinC0K9W2jGsJKJUWHjNr9SSnfSz/5Ev
+         Go9XhJNxAxWVSiBZGB5R7Bx/gtTLDrUvY1ik1/1UvhYIXRrAvwaxfwA3hnwuaUsbxgvy
+         C64f+PCU5NkeO3ZiyTWnBIG0PZ091GM8dj8Z6XRayk4guDwQQGBNWXQuDkrrPLFjxiVO
+         VlhYD/CG0FdMJGuiWWAlKsFxEryYamETS0BPIWYFZFBnxUcbbpB/g1JB+xW6jQucI8mq
+         72rc9nrmMdy+rOC8+PZxt8XA6GWWTyKwry585yhMRQcXbf3Rg+584FN5xzK0a5bMir9a
+         +kwg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=W6bDlI2+wyd787hsKurXebTcyWXnbD/gAUdtT3EzYMU=;
+        b=N4HAgy+wxYXBLvIB23Zs2rsG7r9Adsl0g1BjQhAUVSCaa2XPODj6uoGDuR4RAvUvQC
+         /l90CJRjaybYG3m9U8n7UIEGTRZRp9qIH4mj4SFzpqHHgep7n4L+/rOudqC1Ia52A7Y6
+         zXeBKO+59q29RxNs1p4Ugy17utXsNvFCiYj3E+547LnMWiVklusmPnAHdi2UWBwyXMIp
+         MQbDKLPM5KLj/GEXzanpw0GX6eMIYK7c7u6TnD1M7T06vHM4lcRZqjv/1QN8L0Ku7/Ax
+         qVYqeDNy0Q9yZ221/zMfhtseVzhQP2P/oa80hf4jB+KSeDk4Ccu7vHkirCqrU+j29EHX
+         7u/w==
+X-Gm-Message-State: ABUngvdYVCgqFL1c9c/bAyu5cHhG2oh3syO9hlyN4SGVxt4Rad47o7dicpQ8jcBETjQVKlMUW6peWAsmJt547Q==
+X-Received: by 10.36.189.69 with SMTP id x66mr2006103ite.13.1477407433238;
+ Tue, 25 Oct 2016 07:57:13 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.141.194 with HTTP; Tue, 25 Oct 2016 07:57:12 -0700 (PDT)
+In-Reply-To: <e502bb69-1cd5-4a8a-b5f9-19fef385d2e4@googlegroups.com>
+References: <e502bb69-1cd5-4a8a-b5f9-19fef385d2e4@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 25 Oct 2016 16:57:12 +0200
+Message-ID: <CAAxEZd_caWbhFm4NWFUYw3Pj_sPu-OwY9f+fYk92q_vc-_w2Qg@mail.gmail.com>
+Subject: Re: [wwwmake:406] what you could sudgest to me?
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   If you use GitHub you might consider just "plain" vanilla Jekyll
+and Markdown. See the Facebook React docs as an example [1] also used
+by Apple, Microsoft, Google, and many more.
+
+   For more tool options see the book (docs) builders page at Mundi Mark [2].
+
+   Cheers.
+
+[1] https://github.com/facebook/react/tree/master/docs
+[2] https://mundimark.github.io/markdown-tools-books
+

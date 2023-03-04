@@ -1,0 +1,194 @@
+From 1320837709824@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1320226390016
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,9b2a3cc0c80f2a0a
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.58.132.232 with SMTP id ox8mr5587379veb.18.1373955511004;
+        Mon, 15 Jul 2013 23:18:31 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.83.134 with SMTP id q6ls108921qey.89.gmail; Mon, 15 Jul
+ 2013 23:18:30 -0700 (PDT)
+X-Received: by 10.224.50.66 with SMTP id y2mr1490767qaf.7.1373955510467;
+        Mon, 15 Jul 2013 23:18:30 -0700 (PDT)
+Received: by 10.224.138.7 with SMTP id y7msqat;
+        Mon, 15 Jul 2013 21:10:28 -0700 (PDT)
+X-Received: by 10.49.82.50 with SMTP id f18mr1767326qey.22.1373947828277;
+        Mon, 15 Jul 2013 21:10:28 -0700 (PDT)
+X-Google-Doc-Id: d9ba927890b40c88
+X-Google-Web-Client: true
+Date: Mon, 15 Jul 2013 21:10:27 -0700 (PDT)
+From: Damon Overboe <damon.overboe@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <fa26f980-c786-4116-bc44-fee38766ef52@googlegroups.com>
+Subject: Failing to install on RedCloth?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1293_3651060.1373947827867"
+X-Google-Token: ELOPk48FIwFopdbMj_A0
+X-Google-IP: 75.249.219.226
+
+------=_Part_1293_3651060.1373947827867
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1294_25879509.1373947827867"
+
+------=_Part_1294_25879509.1373947827867
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I'm not a Ruby developer, so talk to me like I'm 2. :-D But I have used S9 
+a bit. I'm now on a new VM guest and cannot get it to install. 
+
+It seems to be the relative_require problem with version 1.9.x Ruby, but I 
+don't know how to solve it, because all of the help files speak to changing 
+your code to import rather than require. I may be able to do that, but 
+these are all gems, so I just kind of assumed they would already be changed?
+
+
+When I attempt to install slideshow, I get:
+
+Building native extensions.  This could take a while...
+ERROR:  Error installing RedCloth:
+    ERROR: Failed to build gem native extension.
+
+        /usr/bin/ruby1.9.1 extconf.rb
+/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': cannot load 
+such file -- mkmf (LoadError)
+    from /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+    from extconf.rb:1:in `<main>'
+
+
+Gem files will remain installed in /var/lib/gems/1.9.1/gems/RedCloth-4.2.9 
+for inspection.
+Results logged to 
+/var/lib/gems/1.9.1/gems/RedCloth-4.2.9/ext/redcloth_scan/gem_make.out
+
+
+The custom_require seems to be a filter that is supposed to do some 
+conversion. But if I'm reading the above correctly, it's RedCloth that's 
+passing `extconf.rb` and looking for `mkmf`. So I'm not 100% sure, but the 
+best I can tell, it's failing on RedCloth. I use Markdown, and it looks 
+like RedCloth is for Textile so I don't mind faking RedCloth if it is the 
+problem (and assuming that's possible).
+
+
+So next, I then tried to install RedCloth; and I also found a lot of text 
+on the web saying use versions 4.2.8 or 4.2.3; nothing worked. I always get 
+this error, similar to what I see on sildeshow, when installing RedCloth:
+
+ERROR:  Error installing RedCloth:
+    ERROR: Failed to build gem native extension.
+
+        /usr/bin/ruby1.9.1 extconf.rb
+/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': cannot load 
+such file -- mkmf (LoadError)
+    from /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+    from extconf.rb:1:in `<main>'
+
+
+I see that error with RedCloth when not specifying a version (which targets 
+4.2.9) or when trying the supposedly 4.2.3 and 4.2.8 versions; it's similar 
+to the error that I'm seeing installing slideshow, so I think it's the 
+culprit. But I don't know how to get around it, and I'm not positive it's 
+not my ruby setup.
+
+
+$ gem -v
+1.8.23
+$ ruby -v
+ruby 1.9.3p194 (2012-04-20 revision 35410) [i486-linux]
+$ gem env
+RubyGems Environment:
+  - RUBYGEMS VERSION: 1.8.23
+  - RUBY VERSION: 1.9.3 (2012-04-20 patchlevel 194) [i486-linux]
+  - INSTALLATION DIRECTORY: /var/lib/gems/1.9.1
+  - RUBY EXECUTABLE: /usr/bin/ruby1.9.1
+  - EXECUTABLE DIRECTORY: /usr/local/bin
+  - RUBYGEMS PLATFORMS:
+    - ruby
+    - x86-linux
+  - GEM PATHS:
+     - /var/lib/gems/1.9.1
+     - /home/damon/.gem/ruby/1.9.1
+  - GEM CONFIGURATION:
+     - :update_sources => true
+     - :verbose => true
+     - :benchmark => false
+     - :backtrace => false
+     - :bulk_threshold => 1000
+  - REMOTE SOURCES:
+     - http://rubygems.org/
+
+
+Again I wouldn't be surprised if it's my ruby setup, but any help or 
+pointers are greatly appreciated; I can't fully express how much I despise 
+PowerPoint and all of the knockoffs that just emulate its horrible behavior.
+
+
+------=_Part_1294_25879509.1373947827867
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+I'm not a Ruby developer, so talk to me like I'm 2. :-D But I have used S9 =
+a bit. I'm now on a new VM guest and cannot get it to install. <br><br>It s=
+eems to be the relative_require problem with version 1.9.x Ruby, but I don'=
+t know how to solve it, because all of the help files speak to changing you=
+r code to import rather than require. I may be able to do that, but these a=
+re all gems, so I just kind of assumed they would already be changed?<br><b=
+r><br>When I attempt to install slideshow, I get:<br><br><div style=3D"marg=
+in-left: 80px;">Building native extensions.&nbsp; This could take a while..=
+.<br>ERROR:&nbsp; Error installing RedCloth:<br>&nbsp;&nbsp;&nbsp; ERROR: F=
+ailed to build gem native extension.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp; /usr/bin/ruby1.9.1 extconf.rb<br>/usr/lib/ruby/1.9.1/rubygems/c=
+ustom_require.rb:36:in `require': cannot load such file -- mkmf (LoadError)=
+<br>&nbsp;&nbsp;&nbsp; from /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:=
+36:in `require'<br>&nbsp;&nbsp;&nbsp; from extconf.rb:1:in `&lt;main&gt;'<b=
+r><br><br>Gem files will remain installed in /var/lib/gems/1.9.1/gems/RedCl=
+oth-4.2.9 for inspection.<br>Results logged to /var/lib/gems/1.9.1/gems/Red=
+Cloth-4.2.9/ext/redcloth_scan/gem_make.out<br></div><br><br>The custom_requ=
+ire seems to be a filter that is supposed to do some conversion. But if I'm=
+ reading the above correctly, it's RedCloth that's passing `extconf.rb` and=
+ looking for `mkmf`. So I'm not 100% sure, but the best I can tell, it's fa=
+iling on RedCloth. I=20
+use Markdown, and it looks like RedCloth is for Textile so I don't mind fak=
+ing RedCloth if it is the problem (and=20
+assuming that's possible).<br><br><br>So next, I then tried to install RedC=
+loth; and I also found a lot of text on the web saying use versions 4.2.8 o=
+r 4.2.3; nothing worked. I always get this error, similar to what I see on =
+sildeshow, when installing RedCloth:<br><br><div style=3D"margin-left: 80px=
+;">ERROR:&nbsp; Error installing RedCloth:<br>&nbsp;&nbsp;&nbsp; ERROR: Fai=
+led to build gem native extension.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; /usr/bin/ruby1.9.1 extconf.rb<br>/usr/lib/ruby/1.9.1/rubygems/cus=
+tom_require.rb:36:in `require': cannot load such file -- mkmf (LoadError)<b=
+r>&nbsp;&nbsp;&nbsp; from /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36=
+:in `require'<br>&nbsp;&nbsp;&nbsp; from extconf.rb:1:in `&lt;main&gt;'<br>=
+<br></div><br>I see that error with RedCloth when not specifying a version =
+(which targets 4.2.9) or when trying the supposedly 4.2.3 and 4.2.8 version=
+s; it's similar to the error that I'm seeing installing slideshow, so I thi=
+nk it's the culprit. But I don't know how to get around it, and I'm not pos=
+itive it's not my ruby setup.<br><br><br><div style=3D"margin-left: 80px;">=
+$ gem -v<br>1.8.23<br>$ ruby -v<br>ruby 1.9.3p194 (2012-04-20 revision 3541=
+0) [i486-linux]<br>$ gem env<br>RubyGems Environment:<br>&nbsp; - RUBYGEMS =
+VERSION: 1.8.23<br>&nbsp; - RUBY VERSION: 1.9.3 (2012-04-20 patchlevel 194)=
+ [i486-linux]<br>&nbsp; - INSTALLATION DIRECTORY: /var/lib/gems/1.9.1<br>&n=
+bsp; - RUBY EXECUTABLE: /usr/bin/ruby1.9.1<br>&nbsp; - EXECUTABLE DIRECTORY=
+: /usr/local/bin<br>&nbsp; - RUBYGEMS PLATFORMS:<br>&nbsp;&nbsp;&nbsp; - ru=
+by<br>&nbsp;&nbsp;&nbsp; - x86-linux<br>&nbsp; - GEM PATHS:<br>&nbsp;&nbsp;=
+&nbsp;&nbsp; - /var/lib/gems/1.9.1<br>&nbsp;&nbsp;&nbsp;&nbsp; - /home/damo=
+n/.gem/ruby/1.9.1<br>&nbsp; - GEM CONFIGURATION:<br>&nbsp;&nbsp;&nbsp;&nbsp=
+; - :update_sources =3D&gt; true<br>&nbsp;&nbsp;&nbsp;&nbsp; - :verbose =3D=
+&gt; true<br>&nbsp;&nbsp;&nbsp;&nbsp; - :benchmark =3D&gt; false<br>&nbsp;&=
+nbsp;&nbsp;&nbsp; - :backtrace =3D&gt; false<br>&nbsp;&nbsp;&nbsp;&nbsp; - =
+:bulk_threshold =3D&gt; 1000<br>&nbsp; - REMOTE SOURCES:<br>&nbsp;&nbsp;&nb=
+sp;&nbsp; - http://rubygems.org/<br><br><br></div>Again I wouldn't be surpr=
+ised if it's my ruby setup, but any help or pointers are greatly appreciate=
+d; I can't fully express how much I despise PowerPoint and all of the knock=
+offs that just emulate its horrible behavior.<br><div style=3D"margin-left:=
+ 40px;"><br></div>
+------=_Part_1294_25879509.1373947827867--
+
+------=_Part_1293_3651060.1373947827867--
+

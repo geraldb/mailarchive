@@ -1,0 +1,57 @@
+From 175392161792@xxx Tue Jun 16 00:17:04 +0000 2015
+X-GM-THRID: 171183177728
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,7e5b91554d9be52b
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.220.163 with SMTP id px3mr2551649pac.38.1385205145059;
+        Sat, 23 Nov 2013 03:12:25 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.49.98.35 with SMTP id ef3ls1308654qeb.76.gmail; Sat, 23 Nov
+ 2013 03:12:24 -0800 (PST)
+X-Received: by 10.49.73.71 with SMTP id j7mr1qev.36.1385205144725;
+        Sat, 23 Nov 2013 03:12:24 -0800 (PST)
+X-Google-Doc-Id: d13deee1ca463ab5
+X-Google-Web-Client: true
+Date: Sat, 23 Nov 2013 03:12:23 -0800 (PST)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <718ea6de-5a7a-46e3-bbca-c9e3bfa1824b@googlegroups.com>
+In-Reply-To: <af2049ba-2bb7-4fb8-8c53-232edc8894f7@googlegroups.com>
+References: <af2049ba-2bb7-4fb8-8c53-232edc8894f7@googlegroups.com>
+Subject: Re: Access from external app
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_381_31832786.1385205143795"
+X-Google-Token: EJebwpQFAQF32Yd8WqE0
+X-Google-IP: 62.46.255.205
+
+------=_Part_381_31832786.1385205143795
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_382_21779934.1385205143795"
+
+------=_Part_382_21779934.1385205143795
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+   For the football.db you can use an online JSON(P) service -> 
+footballdb.herokuapp.com/api
+
+   For all other data for now it's up to you - to use a git clone, sql 
+database, json service etc. 
+
+   By the way the sportdb gem has built in auto-updates from git (or really 
+any online text source). Only downside (or upside) the sportdb gem 
+naturally requires Ruby.  Cheers. 
+
+------=_Part_382_21779934.1385205143795
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<br><br>&nbsp;&nbsp; For the football.db you can use an online JSON(P) service -&gt; footballdb.herokuapp.com/api<br><br>&nbsp;&nbsp; For all other data for now it's up to you - to use a git clone, sql database, json service etc. <br><br>&nbsp;&nbsp; By the way the sportdb gem has built in auto-updates from git (or really any online text source). Only downside (or upside) the sportdb gem naturally requires Ruby.&nbsp; Cheers. <br></div>
+------=_Part_382_21779934.1385205143795--
+
+------=_Part_381_31832786.1385205143795--
+

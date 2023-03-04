@@ -1,0 +1,84 @@
+From 1232936632320@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1230028931072
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,6c550dafbb294d67
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.93.238 with SMTP id l74mr3872407yhf.29.1402906514077;
+        Mon, 16 Jun 2014 01:15:14 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.34.196 with SMTP id l62ls4212784qgl.35.gmail; Mon, 16 Jun
+ 2014 01:15:13 -0700 (PDT)
+X-Received: by 10.140.98.203 with SMTP id o69mr17302qge.9.1402906513818;
+        Mon, 16 Jun 2014 01:15:13 -0700 (PDT)
+X-Google-Doc-Id: 443909c6c0fce6a1
+X-Google-Web-Client: true
+Date: Mon, 16 Jun 2014 01:15:12 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <bce7fae3-e409-4852-817a-d0d615ec6de5@googlegroups.com>
+In-Reply-To: <a2d628b1-1adb-464d-8928-09a0d62b7eaf@googlegroups.com>
+References: <a2d628b1-1adb-464d-8928-09a0d62b7eaf@googlegroups.com>
+Subject: Re: World Cup Game Ordering
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_77_12215123.1402906512678"
+X-Google-Token: EJDP-pwFzVTXSPwaUhA0
+X-Google-IP: 193.83.213.28
+
+------=_Part_77_12215123.1402906512678
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_78_13564733.1402906512678"
+
+------=_Part_78_13564733.1402906512678
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+   Thanks for your interest in football.db.
+
+   > I'm just wondering where the pos data came from?
+
+   For the world cup the official match number is used for pos. See an 
+example here [1]
+
+  > Any ideas on whether the data is wrong or why the 'sportdb/console' 
+automatically orders by 'pos'?
+
+   Not sure if it is a good idea. The games/matches get auto-sorted by pos 
+(that is, called default scope in ActiveRecord) e.g.
+
+   has_many :rounds, -> { order('pos') }
+   has_many :games, :through => :rounds
+
+   Use reorder to "delete" the default order scope e.g:
+
+   Event.last.games.reorder('play_at')
+
+   Cheers.
+
+[1] www.fifa.com/tournaments/archive/worldcup/mexico1986/matches
+
+------=_Part_78_13564733.1402906512678
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>&nbsp;&nbsp;   Thanks for your interest in f=
+ootball.db.<br><br>&nbsp;&nbsp; &gt; I'm just wondering where the pos data =
+came from?<br>  <br>&nbsp;&nbsp;  For the world cup the official match numb=
+er is used for pos. See an example here [1]<br><br>&nbsp; &gt; Any ideas on=
+ whether the data is wrong or why the 'sportdb/console' automatically order=
+s by 'pos'?<br><br>&nbsp;&nbsp;   Not sure if it is a good idea. The games/=
+matches get auto-sorted by pos (that is, called default scope in ActiveReco=
+rd) e.g.<br><br>&nbsp;&nbsp;  has_many :rounds, -&gt; { order('pos') }<br>&=
+nbsp;&nbsp;  has_many :games, :through =3D&gt; :rounds<br><br>&nbsp;&nbsp; =
+ Use reorder to "delete" the default order scope e.g:<br><br>&nbsp;&nbsp;  =
+    Event.last.games.reorder('play_at')<br>  <br>&nbsp;&nbsp;   Cheers.<br>=
+<br>[1] www.fifa.com/tournaments/archive/worldcup/mexico1986/matches<span s=
+tyle=3D"color:rgb(51,51,51);font-family:Helvetica,arial,freesans,clean,sans=
+-serif;font-size:14px;line-height:23.799999237060547px"><br></span></div>
+------=_Part_78_13564733.1402906512678--
+
+------=_Part_77_12215123.1402906512678--
+

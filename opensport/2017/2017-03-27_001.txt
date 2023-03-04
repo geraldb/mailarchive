@@ -1,0 +1,77 @@
+From 6402108580790534144@xxx Mon Mar 27 09:31:01 +0000 2017
+X-GM-THRID: 6401944330148249600
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 10.200.35.250 with SMTP id r55mr6624691qtr.39.1490607061550;
+        Mon, 27 Mar 2017 02:31:01 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.19.61 with SMTP id f58ls13247200ote.36.gmail; Mon, 27 Mar
+ 2017 02:31:01 -0700 (PDT)
+X-Received: by 10.200.4.33 with SMTP id v33mr6500499qtg.88.1490607061227;
+        Mon, 27 Mar 2017 02:31:01 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x230.google.com (mail-it0-x230.google.com. [2607:f8b0:4001:c0b::230])
+        by gmr-mx.google.com with ESMTPS id 125si4408ite.0.2017.03.27.02.31.01
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 27 Mar 2017 02:31:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) client-ip=2607:f8b0:4001:c0b::230;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x230.google.com with SMTP id y18so66135012itc.0
+        for <opensport@googlegroups.com>; Mon, 27 Mar 2017 02:31:01 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=xlRywceZYq+51zdVc1rUU3EHv5LZccr2HXWuSopdUjw=;
+        b=uLTBwmIUgjNiqyastPRToK/Dq3PF/0nCdJS+Jz6fkatSW8r16UnqC30Y/1A1S+sn7X
+         BTqRV9U5nmz6xEd1Cp1NCTqAXrxBzqS9FinMH4QUpHMerh14EUuz8zSp8846IfjPLG3f
+         dm7C9lCUDfpvJYsjhCTGxjMUiocmglXTI+FauAffuAvwmjHuSocXJnIxtoAE1HVBw5KZ
+         2UUWvTXFupK+fnY2FSHXXKPkePA8brgQBj9TjP+kt1v7OdmAfK+29/b3P7lVGhEjkRgl
+         UejU3kfT470GyVQRbgu1XaayXrLSG9//FK8vDoQ86fBTtJIsudls6n2qNJC0wlZyo57C
+         T1Mg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=xlRywceZYq+51zdVc1rUU3EHv5LZccr2HXWuSopdUjw=;
+        b=DKbR2hOVTDUh+zkwpJmIclTPqe0k/OfO/4H5ysQBYfGoA/JABfnkH8aA/1ybxBLLSX
+         AMSk9WwqxJbMhFdRYufxl5/VqNj5BjoAQxK/ctQWBPH1abQtOzYUph15SInsP1Lax3St
+         s4+ZSV49wbhicFpd1xl5hz2146ZaRoCUAWQz9OpgplnVD/4HkD/ucDhvxnXWRw3rF+Uz
+         ZQn8gMScxWROno5dwdkcs7BlkOkmZCKp5P7nmHhjLBTxZ5WWlC0HXmnr2hZyGU+V90Aw
+         6pODwgcatclOfdHBk3gKXcHWl4NBHaS/kf8keRBleuxdHiH6ltxbjH3CRrfMdccjVxzo
+         L+Uw==
+X-Gm-Message-State: AFeK/H0bRMCT2cG+W8qqxdGguRQ0KHC+mjfOJQk0Gy0t3I7D5Oz11DSOtNH6HHZwchwpu4GT4GLi9iLAdkDFYw==
+X-Received: by 10.107.171.67 with SMTP id u64mr19668992ioe.102.1490607060734;
+ Mon, 27 Mar 2017 02:31:00 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.170.209 with HTTP; Mon, 27 Mar 2017 02:31:00 -0700 (PDT)
+In-Reply-To: <d43070d9-656c-46d0-99ac-e27ee188db33@googlegroups.com>
+References: <d43070d9-656c-46d0-99ac-e27ee188db33@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 27 Mar 2017 11:31:00 +0200
+Message-ID: <CAAxEZd_n4+8HHp+MaozpvXvWDroug7=6ed_5dvF1yRQdYfhuUw@mail.gmail.com>
+Subject: Re: [opensport] Is yorobot working?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Thanks for your interest in football.db.
+
+> 'If all works weekly updates get pushed by yorobot
+>
+> Isn't the repo supposed to contain the latest game results or am I misunderstanding the
+> goal of the project?
+
+   Yes and no. The yorobot script is working but not yet running every
+week automatically - it still needs to get kicked off "by hand". The
+plan is - of course - to make it fully automatic sometime later this
+year.
+
+   Workaround - build your own copy (e.g. just run the build script
+[1] on your machine or server). Cheers.
+
+[1] https://github.com/yorobot/football.db.up
+

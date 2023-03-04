@@ -1,0 +1,82 @@
+From 6299758104520163328@xxx Fri Jun 24 13:58:55 +0000 2016
+X-GM-THRID: 6299758105599148032
+X-Received: by 10.36.73.214 with SMTP id e83mr5826264itd.10.1466776734969;
+        Fri, 24 Jun 2016 06:58:54 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.157.2.70 with SMTP id 64ls6775997otb.83.gmail; Fri, 24 Jun
+ 2016 06:58:54 -0700 (PDT)
+X-Received: by 10.157.45.227 with SMTP id g90mr3647394otb.1.1466776734423;
+        Fri, 24 Jun 2016 06:58:54 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x236.google.com (mail-it0-x236.google.com. [2607:f8b0:4001:c0b::236])
+        by gmr-mx.google.com with ESMTPS id f63si160652ith.3.2016.06.24.06.58.54
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 24 Jun 2016 06:58:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::236 as permitted sender) client-ip=2607:f8b0:4001:c0b::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x236.google.com with SMTP id g127so15480783ith.0
+        for <wwwmake@googlegroups.com>; Fri, 24 Jun 2016 06:58:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=z1RUFRgzD3f2PQ3WEjlHP1rcydGTdzuqGXT/HulUtwo=;
+        b=gpthc9/6BukQelrWe30+QcSPrYQNkiFpk22oWBHpjY4mldc5ORrNFc5XXbwDQ/aLDU
+         3J2H+2k5wkUgTHxBTqC2tDz3CwULB4z5/uDdmp8boClcFtunRy2qLmLLYhYz+SQ405nk
+         VqeHDJWxcsUDG9Rc25YhG4zHoFKInsYB/HSGHFoe+YY4fQO6Se+uuqR6CkHGHL4+lw+R
+         dBgK7mQiTpL1qDT30Lhj0bchS8W+Z1ShsidY1r+tA1ofKpuST4P7UQW4kJuh0jmJUvdJ
+         r8WzISQACHCi6IztqNLaE24Y7tZKawI/yPtAEeFvsi+7E42tamdRSGUTJzBJcW3srRd1
+         cCeQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=z1RUFRgzD3f2PQ3WEjlHP1rcydGTdzuqGXT/HulUtwo=;
+        b=Hw3YrIb9ZKx9kB8TOZCb/o0IkrhjxEeDj9MoQ59Jgjy2IF3Ow4dc5VMxmbgefu8Dma
+         7vKCABaHr5t+IOLekCGokriFB1McJ1FeyOQfQv4atNfQ6kWugKWeWFge8Ng73ZJ847kn
+         9F5ZShlOXviLEgMt3Xe/RxasKmxINKcXhe9k+fPTlC3VTm73KOGy7uuL1I0HGWU2Akvj
+         v2QSceydr9SmjAMGddOsSPdmTdMMmj9Q0jhSzn3ngkupTaUDZ1Bujsshkp7zKxk18Ora
+         txNPT9yH2Cd7ysBkzVUNWTcnAx2z8PeKXZxb0lVe6yR1p4P2aY5He0RUDiEkafMB5xat
+         sOPw==
+X-Gm-Message-State: ALyK8tIC1jXg1yZbYG8/jxOzKL9cziqon5OA/NLnBV/3C8LPb2ZJEWblK8DpDsDGILJhNXv754oM4BbqaQuOqg==
+X-Received: by 10.36.28.136 with SMTP id c130mr26244623itc.90.1466776734194;
+ Fri, 24 Jun 2016 06:58:54 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.8.76 with HTTP; Fri, 24 Jun 2016 06:58:53 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 24 Jun 2016 15:58:53 +0200
+Message-ID: <CAAxEZd_PAxk5b_oB+9SroooewQMohnQb0upT07+gWuYTt9grgA@mail.gmail.com>
+Subject: =?UTF-8?Q?Markdown_Tools_=E2=80=BA_Books_=2D_Build_=2F_Compile_Books_fro?=
+	=?UTF-8?Q?m_Markdown_Manuscripts_=2D_Add_Your_Tool?=
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   I've put together a new listing / directory [1] for open source
+tools for building / compiling books from - surprise (!) - Markdown
+manuscripts.
+
+    Book makers include:
+
+    - Git Book
+    - Pandoc
+    - Mk Docs
+    - Easy Book
+    - Md Book
+    - Softcover
+    - Bookdown (+Pandoc)
+    - Franklin (+Middleman)
+    - Octobook (+Jekyll)
+
+
+    Anything missing? Questions, comments? As always welcome. Cheers.
+
+
+PS: For more Markdown news follow along @manuscriptsnews [2]
+
+[1] http://manuscripts.github.io/markdown-tools-books
+[2] https://twitter.com/manuscriptsnews
+

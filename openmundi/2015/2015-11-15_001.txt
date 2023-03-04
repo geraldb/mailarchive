@@ -1,0 +1,57 @@
+From 6217405708120358912@xxx Sun Nov 15 15:49:32 +0000 2015
+X-GM-THRID: 6217405704513257472
+X-Received: by 10.107.160.8 with SMTP id j8mr27787719ioe.4.1447602572328;
+        Sun, 15 Nov 2015 07:49:32 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.50.154.74 with SMTP id vm10ls706182igb.15.gmail; Sun, 15 Nov
+ 2015 07:49:32 -0800 (PST)
+X-Received: by 10.50.66.210 with SMTP id h18mr11846880igt.9.1447602572159;
+        Sun, 15 Nov 2015 07:49:32 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x233.google.com (mail-ig0-x233.google.com. [2607:f8b0:4001:c05::233])
+        by gmr-mx.google.com with ESMTPS id ht1si159845igb.1.2015.11.15.07.49.32
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 15 Nov 2015 07:49:32 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::233 as permitted sender) client-ip=2607:f8b0:4001:c05::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x233.google.com with SMTP id i2so62308250igv.0
+        for <openmundi@googlegroups.com>; Sun, 15 Nov 2015 07:49:32 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=rmH6gOD4jPkP5SfUBZ0oOeTjSlstaL69sZ+NZwvR5tk=;
+        b=T+9Z+qVdJLEn8iVnmn5DDy/RMNdi0Hshvz/zkX7gSbTc2xPRxx4XsBAdnkTnNNXgfN
+         KKkXsgv63pXWYruvYsUfjqEpXU3qL8EZ5wAV/1Tp/I6gW5LrU7WHOn8UP6H49OeV6a1m
+         sk/AuhspNLt5+O2Wkd4iaAr7UaXwvN+lHkiLr2DfEBhAjO9LzwVwwgeFQcXVjFC7Swf6
+         qLqTzVb1hB1JHSlDvDGBUIIN1DSg9o/Uolh3sMeUYwwg0+o7ocODZRk6oGVr7ah3fjhJ
+         cdjjLUC/LzNRBGH0IG0cNCKyMjnaUh3qO0osUGvgQlnj6axnsUv+zgoOuevfM8PcLF0V
+         On+Q==
+MIME-Version: 1.0
+X-Received: by 10.50.62.104 with SMTP id x8mr11617939igr.7.1447602572015; Sun,
+ 15 Nov 2015 07:49:32 -0800 (PST)
+Received: by 10.107.140.12 with HTTP; Sun, 15 Nov 2015 07:49:31 -0800 (PST)
+Date: Sun, 15 Nov 2015 16:49:31 +0100
+Message-ID: <CAAxEZd8V4JFYnp_+WJEV6DZ40T0dQLXXDPbgq3YR=52ZaHk7fA@mail.gmail.com>
+Subject: factbook.json Update 2015/11 - 260+ Free (Public Domain) World
+ Factbook Country Profiles
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've updated the world factbook.json datasets [1] from the CIA
+(live) page sources.
+
+  It looks the new machinery [2] is now working. Lots of updates just
+in the last
+couple of weeks. See the commit diff for the lastest changes. Cheers.
+
+[1] github.com/factbook/factbook.json
+[2] github.com/worlddb/factbook
+

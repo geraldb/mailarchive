@@ -1,0 +1,97 @@
+From 6432649550539784192@xxx Sat Jun 17 16:45:35 +0000 2017
+X-GM-THRID: 6432649551864135680
+X-Received: by 10.129.52.2 with SMTP id b2mr8311603ywa.127.1497717935002;
+        Sat, 17 Jun 2017 09:45:35 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.14.242 with SMTP id 105ls3488259otj.0.gmail; Sat, 17 Jun
+ 2017 09:45:34 -0700 (PDT)
+X-Received: by 10.157.1.66 with SMTP id 60mr3812269otu.82.1497717934675;
+        Sat, 17 Jun 2017 09:45:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1497717934; cv=none;
+        d=google.com; s=arc-20160816;
+        b=BbRn22IeYyUjAo2HcWo/xotSRIwfH8yixZmj0flU5AChKTMPpJHBDeb8DsoDkSul2K
+         XVih4SAIRkLQoRfU4I1liW6mh1ToAys2BhowLz9LuV3IaZloVk94rKIgMkQ4PcoMhT+X
+         SWy/MAigNInIG+XwBmg7WuFqsio2tksBK3ljydTonBsH0B9B/U9axV9LNGG8MkPgxfGQ
+         Cc8ZMKU+y++hbdJYNTaSItK27x35TrDs6fYcbrYFzt9xdCAsAXuJF1RRhMZf8fgB9cei
+         mlDC0UEGAbRY5lrSdVo5imgqmwK+RQRC95XZ+BYQohjtNLic6FTsVCKoLUoOd9nT+fNV
+         L1Ug==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=6wQJNZlw7G94kWZP6LtRHM0HBq/TsAFNJy4DgWD9GCo=;
+        b=pQMUlEYN7ZtCdFhAWibUrlaa4PFj320CD9q7/RXgDsgqnuLWSxluENHdjciqSaOHL1
+         WKfqNehgdRw1y/sRgTtTqjRhVNJIK5Jfo9L6DdsMi37FFKhkXOAeChuZycmJO6rGTc4j
+         RnDA2E8y3Q/HAoWqgI3ilUc2pC8eSYIrPPmDY1n/rudfS0MDT3D4hUMo2jlvcouIS5Nx
+         X4sz4c1VOBHv1ol/93tmWUTnyQ+0W37Kru77SN3h3XuMCx374Z55bEdkEApggwI5McKw
+         JVIwU36xpC8JHOP45Ju0Z2AqUjqIu9O7EgaaLyWYRFGIHA9pbEFIfCOEF8Fy10najeo2
+         BbZg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=CFxanmOs;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22f.google.com (mail-io0-x22f.google.com. [2607:f8b0:4001:c06::22f])
+        by gmr-mx.google.com with ESMTPS id w66si414678ita.2.2017.06.17.09.45.34
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 17 Jun 2017 09:45:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) client-ip=2607:f8b0:4001:c06::22f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=CFxanmOs;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22f.google.com with SMTP id t87so45036163ioe.0
+        for <opensport@googlegroups.com>; Sat, 17 Jun 2017 09:45:34 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=6wQJNZlw7G94kWZP6LtRHM0HBq/TsAFNJy4DgWD9GCo=;
+        b=CFxanmOs745cnVh8A8V+D3kCewYEBNDHTzo2hOILH7SKe+j3ty05TXxxsAGIaDHgST
+         0Ww9DZUBfYZOqKPQhtGBRujFuH4lllnKvj4NKMbgLBlhPhzirJsuvEcb6yTgSV4a2mBS
+         sZZKMWLB316LcBBQiRNkbhNd2a7hypWRN017En7Bl8AOG1BlCFls2I1zAdREyh7kO43S
+         DO0HxIiWQp5PYf2YSxdI0n/VSIh/VSnq9QP8NU3GnZepgcX2l9ZS7P6McXLFYTkt5N2n
+         eh7joYO3+2+A+vceeRR4ztakU5JYOWopDyTNpc72pM+tBNUP6JHzp3kSESsLnZPTLTMQ
+         DBEw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=6wQJNZlw7G94kWZP6LtRHM0HBq/TsAFNJy4DgWD9GCo=;
+        b=CtFt13wwc7vbucm8MEXfM0o704sa0a6Wt5A3ePkzFhMRNJBNJVlt3knKVrxJk5LCcc
+         esCFMCe9cq5WSOa7THET4g6WHddebo5Vy4QUjA444j23aSyd3mFre2Nv5bb9iIQ2wFNH
+         zLZh3osVOSX2yYqELsltpxEOtXC4NxKFSqflhbhunDmt6Dsgg7aiHWtRN38Y4G+/iK9+
+         qmXuxZbzEU1FOyfrYf6tTG20ns72KD/RM39xBiGVSeDz4N4n34yhYYUCqgw95RsDy71L
+         zY4jgMtP+ZxfKfJJGpXdDvTJsFWaXtheni7tkElfWTHv1coTOnmMf6VLyzXodLTZIIdo
+         cSlQ==
+X-Gm-Message-State: AKS2vOwbKHLLmyup2CjOZcpC0z5ftI9wo5QejpfyjLV8iy/vc9mEKx5r
+	7hKdWXsTBI9rcJITaKBrpnctuO9ARoa7
+X-Received: by 10.107.197.67 with SMTP id v64mr3461238iof.136.1497717934273;
+ Sat, 17 Jun 2017 09:45:34 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.48.199 with HTTP; Sat, 17 Jun 2017 09:45:33 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 17 Jun 2017 18:45:33 +0200
+Message-ID: <CAAxEZd9s4sQL4yTv+Ez-QT0fxyZBU_0MpWpk9S8WyxgeFcBw6g@mail.gmail.com>
+Subject: Open Public Domain Datasets - Football Confederations Cup Russia'17 -
+ $ sportdb new confed2017
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  Today opens the Football Confederations Cup in Russia. To celebrate
+  the open football.db now includes public domain datasets for
+  the Confed Russia'17 match schedule / tournament [1].
+
+  Use the sportdb gem / tools [2] to read in the plain text fixtures
+  into your SQL database of choice (thanks to ActiveRecord). Use
+
+  $ sportdb new confed2017
+
+  to download the zip archives, build the schema
+  and read/parse the datasets resulting in a single-file SQLite football.db.
+
+  Enjoy the beautiful game. Cheers.
+
+[1] https://github.com/openfootball/confed-cup
+[2] https://rubygems.org/gems/sportdb
+

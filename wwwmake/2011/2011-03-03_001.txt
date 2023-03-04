@@ -1,0 +1,53 @@
+From 859849097216@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 861282500608
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,b9c591f688c43cb4,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.101.113.20 with SMTP id q20mr13821anm.55.1299199274088;
+        Thu, 03 Mar 2011 16:41:14 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.100.42.4 with SMTP id p4ls266844anp.6.p; Thu, 03 Mar 2011
+ 16:41:13 -0800 (PST)
+Received: by 10.101.171.5 with SMTP id y5mr1305ano.12.1299199273584;
+        Thu, 03 Mar 2011 16:41:13 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.91.32.36 with SMTP id k36mr114735agj.58.1299113188946; Wed, 02
+ Mar 2011 16:46:28 -0800 (PST)
+Received: by i39g2000prd.googlegroups.com with HTTP; Wed, 2 Mar 2011 16:46:28
+ -0800 (PST)
+Date: Wed, 2 Mar 2011 16:46:28 -0800 (PST)
+X-IP: 78.233.94.59
+User-Agent: G2/1.0
+X-Google-Token: EOTJu-sEGToh13drzpA0
+X-HTTP-Via: 1.1 gw.example.net
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/534.3
+ (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3,gzip(gfe)
+Message-ID: <003266f4-b69a-4e87-b4cf-068f9a41ad00@i39g2000prd.googlegroups.com>
+Subject: New g5syntax template for slideshow
+From: Val <vallar@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Cc: gerald.bauer@gmail.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hi,
+
+I've done some work while trying to update g5 template adding google-
+code-prettify support.
+
+Results a complete new template called g5syntax from latest version of
+slides.html5rocks.com.
+I did some hacks on slideshow sources too, see https://github.com/Val/slideshow-val
+
+New features (from HTML5rocks!):
+- dynamic theme selection
+- dynamic syntax coloration
+- popup notes
+- transition icons
+
+Samples in textile and markdown are provided.
+
+Feel free to include any part of this in Slide Show (S9) code.
+
+Regards.
+

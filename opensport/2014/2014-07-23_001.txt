@@ -1,0 +1,63 @@
+From 1704374304768@xxx Tue Jun 16 00:16:53 +0000 2015
+X-GM-THRID: 1703265959936
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,40bda9951a4e4f07,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.12.35 with SMTP id v3mr248090wib.3.1406121345203;
+        Wed, 23 Jul 2014 06:15:45 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.88.14 with SMTP id bc14ls67077lab.84.gmail; Wed, 23 Jul
+ 2014 06:15:44 -0700 (PDT)
+X-Received: by 10.113.5.12 with SMTP id ci12mr146752lbd.14.1406121344581;
+        Wed, 23 Jul 2014 06:15:44 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22a.google.com (mail-wg0-x22a.google.com [2a00:1450:400c:c00::22a])
+        by gmr-mx.google.com with ESMTPS id r19si167236wik.0.2014.07.23.06.15.44
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 23 Jul 2014 06:15:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22a as permitted sender) client-ip=2a00:1450:400c:c00::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f42.google.com with SMTP id l18so1131137wgh.1
+        for <opensport@googlegroups.com>; Wed, 23 Jul 2014 06:15:44 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=7bBC8zLwsSOdHBz//ljAhclpKypAGHtvqOhacgxEoN0=;
+        b=BOrrs/0r5gZwHvuYd9yJ1HhBY2wr58lcdeVh7aF1I6UzGZWCDk4ldF/Ge4JJXXYGG/
+         49/fIAvfPSLr6Jd2hE7NTOjGllUgViI+1i7n48detsvjxl5foBuHqoUFMkVzfX7hj9Bv
+         iFa7a4AtrkXrDAh23DNGdfprXpYMbT6kmMFV3V1w+6yNyt0rDXEVirCWhKcqvjb8Cp+J
+         /dQJxvLdXJSYpWfZceMpAzS7pWLUN60Q+PJ2eV9TxKphgOymLDodaBMyANdeGptC2Cq5
+         3qFyzEcmVZp2RniP+0O2nXylchXiZwi8JpPCP38nfHDU/k4SakYlu3tFNB2qtGh74KU9
+         u6Pg==
+MIME-Version: 1.0
+X-Received: by 10.180.35.36 with SMTP id e4mr8079397wij.12.1406121344472; Wed,
+ 23 Jul 2014 06:15:44 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Wed, 23 Jul 2014 06:15:44 -0700 (PDT)
+Date: Wed, 23 Jul 2014 15:15:44 +0200
+Message-ID: <CAAxEZd8hqGr46t9P_YLCTW3M9GBY0K5+cdjjqowoeEzZ9tPckw@mail.gmail.com>
+Subject: New Org football.csv - Football Match Data in CSV (Comma-Separated
+ Values) e.g. Arsenal, Liverpool, 2, 0, 1, 0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   FYI: I've created (yet another) GitHub org, that is, footballcsv
+[1], that collects football match data in the CSV (comma-separated
+values) format for easy (re)use.
+
+   To get started I've added all seasons for the English Premier League [2],
+    Championship League, League 1, etc. to the new /en-england repo from
+   football-data.co-uk.
+
+   Cheers.
+
+[1] github.com/footballcsv
+[2] github.com/footballcsv/en-england/blob/master/2013_14/pl.csv
+

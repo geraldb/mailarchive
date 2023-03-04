@@ -1,0 +1,37 @@
+From 236415090688@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 230668894208
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,62dcd4fef002a41c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Received: by 10.150.57.5 with SMTP id f5mr1181091yba.19.1232482242023; Tue, 20 
+	Jan 2009 12:10:42 -0800 (PST)
+Date: Tue, 20 Jan 2009 12:10:41 -0800 (PST)
+X-IP: 134.53.57.142
+User-Agent: G2/1.0
+X-Google-Token: Yw6_pQwAAAANnuntf92kuvrUkkzsp7rB
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; 
+	rv:1.9.0.5) Gecko/2008120121 Firefox/3.0.5,gzip(gfe),gzip(gfe)
+Message-ID: <140cca6b-bca9-4743-a6f0-dd20e641cde1@v39g2000pro.googlegroups.com>
+Subject: S6 and SVG
+From: Bruce <bdarcus.lists@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+X-Google-Approved: gerald@vanbeta.com via web at 2009-01-21 09:20:18
+
+Nice to see S6, as well as its support for SVG. However, if I read the
+example document sources correctly, SVG support is required and use of
+IE just yields an error message to upgrade to "better" browsers.
+
+While I sympathize with this sentiment, I need to use this for
+teaching, where students do use IE. Is there not a way to gracefully-
+degrade for non-SVG browsers?
+
+Bruce
+
+PS - I haven't gotten very far in testing, as doing "gem install
+slideshow" failed b/c oniguruma wouldn't compile on my machine for
+some reason.
+

@@ -1,0 +1,58 @@
+From 6183947768628772864@xxx Mon Aug 17 11:55:40 +0000 2015
+X-GM-THRID: 6183883826462195712
+X-Received: by 10.66.90.130 with SMTP id bw2mr784185pab.37.1439812539801;
+        Mon, 17 Aug 2015 04:55:39 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.19.234 with SMTP id i10ls794021obe.63.gmail; Mon, 17 Aug
+ 2015 04:55:39 -0700 (PDT)
+X-Received: by 10.182.4.69 with SMTP id i5mr848193obi.44.1439812539472;
+        Mon, 17 Aug 2015 04:55:39 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22d.google.com (mail-io0-x22d.google.com. [2607:f8b0:4001:c06::22d])
+        by gmr-mx.google.com with ESMTPS id g7si812571igr.0.2015.08.17.04.55.39
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 17 Aug 2015 04:55:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22d as permitted sender) client-ip=2607:f8b0:4001:c06::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x22d.google.com with SMTP id v127so131610020iod.3
+        for <opensport@googlegroups.com>; Mon, 17 Aug 2015 04:55:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=6a7Q6ISU+QPZ4C/2ylpzFA65S2aYBTOvg1ac6YRn3Ek=;
+        b=Pk3t4D6/exQAAuhe4WYK5SJPqBYJHTNzaRlE8XFkUOWbxrQ+CctNaRLbjenwjNZrtq
+         PTUtVP5vq1zz0h2UFTk8+Ci5p2juevHlnQnr47ySqV0wlwWFI+4HXdpRtQThxoGLDGL2
+         /tQfr+Gl78CpUR679lJhH0m7vBKEiDe6KRHqpm/WWAVtV9KM1dRFP2+TC2ygC19z+c0E
+         OYzRN8CHmqgdbRXxzt4Qqnm6oXexvQ9jPGzzZkEiyS8+b3zPioJqw46jXhFZQC5HdNrM
+         7rTzL13HEibepU7t5eeBIMS1kpcbUjHVkZIY0AFWw49qUDu2NcphzIzrNZ87tvhvU2oX
+         g5Lg==
+MIME-Version: 1.0
+X-Received: by 10.107.8.142 with SMTP id h14mr909224ioi.35.1439812539362; Mon,
+ 17 Aug 2015 04:55:39 -0700 (PDT)
+Received: by 10.107.15.196 with HTTP; Mon, 17 Aug 2015 04:55:39 -0700 (PDT)
+In-Reply-To: <2c437960-979f-4d86-8c23-bc640a431e09@googlegroups.com>
+References: <cb981462-e8d6-4f3c-8220-bd9215069460@googlegroups.com>
+	<CAAxEZd9E70abpQkUBmH0Xt7+t3Z32KzZz3Y_gwnFEBHWvdNrKw@mail.gmail.com>
+	<2c437960-979f-4d86-8c23-bc640a431e09@googlegroups.com>
+Date: Mon, 17 Aug 2015 13:55:39 +0200
+Message-ID: <CAAxEZd_d=GHtBc+007wiL9MV4ypjaurhd8jtQc_KKpQKfZS-sw@mail.gmail.com>
+Subject: Re: [opensport] Help ! Possible Team Lineups
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   If you're looking for football player team/squad data - Joe
+Kampschmidt has put togheter a
+detailed page titled  "Guide to Football/Soccer data and APIs" [1] -
+that might get you started finding out more. Let us know what you find
+out. Cheers.
+
+[1] www.jokecamp.com/blog/guide-to-football-and-soccer-data-and-apis
+

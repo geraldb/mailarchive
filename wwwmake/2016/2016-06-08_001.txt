@@ -1,0 +1,78 @@
+From 6293913076925202432@xxx Wed Jun 08 19:57:12 +0000 2016
+X-GM-THRID: 6293913074315296768
+X-Received: by 10.31.203.133 with SMTP id b127mr12790467vkg.8.1465415832447;
+        Wed, 08 Jun 2016 12:57:12 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.140.31.74 with SMTP id e68ls420233qge.23.gmail; Wed, 08 Jun
+ 2016 12:57:08 -0700 (PDT)
+X-Received: by 10.159.36.84 with SMTP id 78mr1015789uaq.9.1465415828692;
+        Wed, 08 Jun 2016 12:57:08 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x231.google.com (mail-io0-x231.google.com. [2607:f8b0:4001:c06::231])
+        by gmr-mx.google.com with ESMTPS id p189si214052itc.1.2016.06.08.12.57.08
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Jun 2016 12:57:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) client-ip=2607:f8b0:4001:c06::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x231.google.com with SMTP id 5so19288330ioy.1
+        for <wwwmake@googlegroups.com>; Wed, 08 Jun 2016 12:57:08 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=cyN/N8DA/gfTiov3lvBhZF+ech7eCRZFBRieeEqujuI=;
+        b=CTUpaON021D6Yj0W9Ra1h3XbfWRcuucflQUEOo2S+kVd+QeN7GzVL1V25SbGpBA2Oq
+         vi7DGoiRwkc10rrvyzUFxGHZmiRvb6xbuqdNTOIl5XMsnRtLGLMYIXV9JJ1jCVNsqXrW
+         DNJFBphVb9cMkekEOUoKkyoywle7witM3ypDzC8dcYzslJ9D5s8Pfwih6IjlWe/80MHF
+         KuNhc2nelb1u7boWo0BKnCjWZSUz2CMtLB7kfiqRL5e16biezOmZkGpTE17kQzUnAaT2
+         lvR1SOS64zxPLuqyKvft3+hCDwM++iGLcPw8v83Whg4BpKP+rx2yLbY3qkCsGSNhcDVW
+         4eZw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=cyN/N8DA/gfTiov3lvBhZF+ech7eCRZFBRieeEqujuI=;
+        b=Z8xcSCBz6jrwhSQM7vR7njUGshXlwZfloNY5M2MVtWEf3TsxM2gMTkITh43yf1GCkr
+         UHiEgwqJk+EaG1SJSKDjiLSpAd1H3L6VBix+8T5ddyeudt9ctPpcNaGBi9YsKLzFx57k
+         Qcq9lOF5+oXVZ/3YL4szzko4hBEHNrhm0cOXt2eGjpezB+xpNriwLATAzWRzyQPmRLL4
+         q5GPV0edzeW+WSfl9Q79T3Co/7UZVZTu+iAMFge8ibMYhjhROY+XEOjM1E8E9rt2Q9AL
+         1qy4GKK388oLIL6+BE+nhrgaGTBvmMpbQgywjizEc2AcUZDOB21YdanQ3g3IbtYBj5Gv
+         5yLA==
+X-Gm-Message-State: ALyK8tJq9rfRVfpo2aSqgqZ9NzfQae7+4UEvohlJP3q11F9WCGGiPySvbwCJmKPBWaQe2HIGy0FCyik4AIuxDA==
+X-Received: by 10.107.21.194 with SMTP id 185mr10759062iov.59.1465415828454;
+ Wed, 08 Jun 2016 12:57:08 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.8.76 with HTTP; Wed, 8 Jun 2016 12:57:08 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 8 Jun 2016 21:57:08 +0200
+Message-ID: <CAAxEZd8n5b8hDk4mi1i=mDXnQEouYR-YgK0SdFSZTU7WdG94pA@mail.gmail.com>
+Subject: =?UTF-8?Q?World_Classics_=2D_The_World=E2=80=99s_Greatest_=28Literature=29?=
+	=?UTF-8?Q?_Books_in_=2ETXT?=
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  If anyone follows along I've added a bookshelf [1] to the World
+Classics series that collects the world's greatest (literature) books
+in (surprise!) Markdown, that is, plain old text with some simple
+formatting conventions.
+
+
+  Using the Octobook Classics Book Theme [2] turns the pages into a
+single-page (online) book. The first two books in the series include:
+
+- The Trial by Franz Kafka
+- Strange Case of Dr. Jekyll and Mr. Hyde by Robert Louis Stevenson
+
+
+  If you know any other world classics in Markdown, let us know. As
+always comments, questions, etc. welcome. Happy reading. Enjoy the
+summer. Cheers.
+
+
+[1] http://worldclassics.github.io
+[2] https://github.com/octobook/book-classics-theme
+

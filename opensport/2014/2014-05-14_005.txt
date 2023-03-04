@@ -1,0 +1,66 @@
+From 653225099264@xxx Tue Jun 16 00:17:12 +0000 2015
+X-GM-THRID: 629638430720
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cee1dc7df1649710
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.58.152.37 with SMTP id uv5mr1044234veb.0.1400054562094;
+        Wed, 14 May 2014 01:02:42 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.48.210 with SMTP id o76ls2209238qga.66.gmail; Wed, 14 May
+ 2014 01:02:41 -0700 (PDT)
+X-Received: by 10.140.50.83 with SMTP id r77mr14489qga.15.1400054561914;
+        Wed, 14 May 2014 01:02:41 -0700 (PDT)
+X-Google-Doc-Id: a0d59e831b03e288
+X-Google-Web-Client: true
+Date: Wed, 14 May 2014 01:02:40 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <b771ae9a-e422-4460-aa22-11f8b1c440fd@googlegroups.com>
+In-Reply-To: <ea864852-ce76-4271-b9f8-677b26b094b5@googlegroups.com>
+References: <ea864852-ce76-4271-b9f8-677b26b094b5@googlegroups.com>
+Subject: Re: Error when setting up.
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2118_17055660.1400054560971"
+X-Google-Token: EKDGzJsFqo4OiN5mOG40
+X-Google-IP: 93.82.52.92
+
+------=_Part_2118_17055660.1400054560971
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2119_32526699.1400054560971"
+
+------=_Part_2119_32526699.1400054560971
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Nico,
+
+   I've uploaded a new sportdb gem version, that is, 1.8.18. What's new? 
+The new version supports the new order assoc syntax:
+
+    if ActiveRecord::VERSION::MAJOR == 3 
+       has_many :games, :order => 'pos' 
+    else 
+       has_many :games, -> { order('pos') } 
+    end 
+
+   and so. Now everything works with the latest ActiveRecord gem version, 
+that is, 4.1.1.
+   Please update the sportdb gem and try again. Cheers.
+
+------=_Part_2119_32526699.1400054560971
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello Nico,<br><br>&nbsp;&nbsp; I've uploaded a new sportdb gem version, that is, 1.8.18.   What's new?  The new version supports the new order assoc syntax:<br><br>&nbsp;&nbsp;&nbsp; if ActiveRecord::VERSION::MAJOR == 3
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; has_many :games, :order =&gt; 'pos'
+<br>&nbsp;&nbsp;&nbsp; else
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; has_many :games, -&gt; { order('pos') }
+<br>&nbsp;&nbsp;&nbsp; end
+<br><br>&nbsp;&nbsp;  and so. Now everything works with the latest ActiveRecord gem version, that is, 4.1.1.<br>&nbsp;&nbsp; Please update the sportdb gem and try again. Cheers.<br></div>
+------=_Part_2119_32526699.1400054560971--
+
+------=_Part_2118_17055660.1400054560971--
+

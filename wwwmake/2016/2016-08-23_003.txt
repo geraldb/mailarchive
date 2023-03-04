@@ -1,0 +1,86 @@
+From 6321928169499656192@xxx Tue Aug 23 07:50:04 +0000 2016
+X-GM-THRID: 6321924895499354112
+Date: Tue, 23 Aug 2016 00:50:04 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <484763cd-b10a-41c1-a4e4-7f2a4bcbf5ad@googlegroups.com>
+In-Reply-To: <197f2510-7e6a-41c0-b5f3-47d25df639c1@googlegroups.com>
+References: <197f2510-7e6a-41c0-b5f3-47d25df639c1@googlegroups.com>
+Subject: Re: Slide Show S9 & Jekyll
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_40_1437999763.1471938604104"
+X-Google-Token: EKyA8L0F3n9KMXM99H00
+X-Google-IP: 188.22.248.189
+
+------=_Part_40_1437999763.1471938604104
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_41_1445953276.1471938604104"
+
+------=_Part_41_1445953276.1471938604104
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+    If you want to add your slideshows to your jekyll site just add the
+output from 
+
+  $ slideshow build talk.txt -o o
+
+  to your jekyll site (e.g. all the html, css, js, and images) That's it. 
+(Sorry there's no "magic" all-in-one integration with jekyll serve or 
+something.) See an example here.[1] If you have more than one slideshow and 
+you're using the same slideshow package (e.g. s6, deck.js, etc.)  you can 
+(re)use the shared parts.
+
+ Cheers.
+
+[1]  https://github.com/slideshow-s9/demos
+
+Note: Not a "full" Jekyll-site but hosted on GitHub Pages. Just add your 
+talks as a (sub)folder e.g. talks/ (instead of demos/) to your Jekyll site. 
+
+PS: Using Jekyll to build the slideshow output itself is for theme 
+developers e.g. you can test / design your theme with Jekyll, that is, it's 
+just a Jekyll theme. Hope that clears up the confusion.
+
+------=_Part_41_1445953276.1471938604104
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><span style=3D"font-family: arial, sans-serif; font-size: =
+12.8px;">Hello,</span><div style=3D"font-family: arial, sans-serif; font-si=
+ze: 12.8px;">=C2=A0 =C2=A0 If you want to add your slideshows to your jekyl=
+l site just add the</div><div style=3D"font-family: arial, sans-serif; font=
+-size: 12.8px;">output from=C2=A0</div><div style=3D"font-family: arial, sa=
+ns-serif; font-size: 12.8px;"><br></div><div style=3D"font-family: arial, s=
+ans-serif; font-size: 12.8px;">=C2=A0 $ slideshow build talk.txt -o o</div>=
+<div style=3D"font-family: arial, sans-serif; font-size: 12.8px;"><br></div=
+><div style=3D"font-family: arial, sans-serif; font-size: 12.8px;">=C2=A0 t=
+o your jekyll site (e.g. all the html, css, js, and images) That&#39;s it. =
+(Sorry there&#39;s no &quot;magic&quot; all-in-one integration with jekyll =
+serve or something.) See an example here.[1] If you have more than one slid=
+eshow and you&#39;re using the same slideshow package (e.g. s6, deck.js, et=
+c.) =C2=A0you can (re)use the shared parts.</div><div style=3D"font-family:=
+ arial, sans-serif; font-size: 12.8px;"><br></div><div style=3D"font-family=
+: arial, sans-serif; font-size: 12.8px;">=C2=A0Cheers.</div><div style=3D"f=
+ont-family: arial, sans-serif; font-size: 12.8px;"><br></div><div style=3D"=
+font-family: arial, sans-serif; font-size: 12.8px;">[1] =C2=A0<a href=3D"ht=
+tps://github.com/slideshow-s9/demos" target=3D"_blank" data-saferedirecturl=
+=3D"https://www.google.com/url?hl=3Des&amp;q=3Dhttps://github.com/slideshow=
+-s9/demos&amp;source=3Dgmail&amp;ust=3D1472024873041000&amp;usg=3DAFQjCNEpW=
+ZbHZDbDosusdVLE3b-gixRBCw" style=3D"color: rgb(17, 85, 204);">https://githu=
+b.com/slideshow-<wbr>s9/demos</a></div><div style=3D"font-family: arial, sa=
+ns-serif; font-size: 12.8px;"><br></div><div style=3D"font-family: arial, s=
+ans-serif; font-size: 12.8px;">Note: Not a &quot;full&quot; Jekyll-site but=
+ hosted on GitHub Pages. Just add your talks as a (sub)folder e.g. talks/ (=
+instead of demos/) to your Jekyll site.=C2=A0</div><div style=3D"font-famil=
+y: arial, sans-serif; font-size: 12.8px;"><br></div><div style=3D"font-fami=
+ly: arial, sans-serif; font-size: 12.8px;">PS: Using Jekyll to build the sl=
+ideshow output itself is for theme developers e.g. you can test / design yo=
+ur theme with Jekyll, that is, it&#39;s just a Jekyll theme. Hope that clea=
+rs up the confusion.</div></div>
+------=_Part_41_1445953276.1471938604104--
+
+------=_Part_40_1437999763.1471938604104--
+

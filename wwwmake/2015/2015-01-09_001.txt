@@ -1,0 +1,66 @@
+From 1560560009216@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1561575030784
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,11034e1b3bf1afe7,start
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.13.161 with SMTP id i1mr33833lbc.20.1420820221177;
+        Fri, 09 Jan 2015 08:17:01 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.152.22.40 with SMTP id a8ls410875laf.66.gmail; Fri, 09 Jan
+ 2015 08:17:00 -0800 (PST)
+X-Received: by 10.112.13.161 with SMTP id i1mr33827lbc.20.1420820220226;
+        Fri, 09 Jan 2015 08:17:00 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22f.google.com (mail-wg0-x22f.google.com. [2a00:1450:400c:c00::22f])
+        by gmr-mx.google.com with ESMTPS id j6si1444826wix.1.2015.01.09.08.17.00
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 09 Jan 2015 08:17:00 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22f as permitted sender) client-ip=2a00:1450:400c:c00::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-x22f.google.com with SMTP id n12so8949154wgh.6
+        for <webslideshow@googlegroups.com>; Fri, 09 Jan 2015 08:17:00 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=5El8V+hQVKzex0kL5/NvvCZDk6nDmLiPBEdZ80JotzQ=;
+        b=PizTLykcC5zPZmyDP3uOG0PNHI10qmq3k5ho8hltRtgGh7syHRmdkL8TZOob4NVzJ/
+         6/3J1SLC8/t25P5WnBUKIqIuFt7Ii4xBv9BRlQjhENp1S3uy7eOO8kGCIs+7Ps5FU8zl
+         EKddkf4vWsnq195N2iGe2yClM9AqPL+REv4VxINF/7HhZQsKBcZDK5sjVplsrP1w+Boy
+         rOWM3BClMe8QmYPosAMkzUVwPXA4+HXvQGzFdMvKpOKjaASalOhssOdvvEPfRg1hW+gY
+         oWm5X1lMtAiEqa8K+vz8iNjKWLdSBPjEutO6gNdzd9c/9Y6xgpCIWOqCmmKzNQChv/bP
+         dHhw==
+MIME-Version: 1.0
+X-Received: by 10.194.90.10 with SMTP id bs10mr33951389wjb.43.1420820220049;
+ Fri, 09 Jan 2015 08:17:00 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Fri, 9 Jan 2015 08:16:55 -0800 (PST)
+Date: Fri, 9 Jan 2015 17:16:55 +0100
+Message-ID: <CAAxEZd_EwqRxik=gzdUaiEyxpP9PF9Wqek8zR1An4xEg=D=7ng@mail.gmail.com>
+Subject: hyhyhy - New Slide Show (Presentation) Generator in Ruby
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: Maciej A. Czyzewski (from Szczecin, Poland) has put together a
+new tool for generating HTML5 presentations w/ Markdown and includes
+support for
+    - nested slides
+    - math typesetting
+    - syntax highlighter
+    - Javascript API
+    and more.
+
+   Browse the intro presentation (slide show) [1] or check the GitHub
+site [2] for more info.  Know any other generator or slide show
+packages? Let us know.
+  Cheers.
+
+[1] maciejczyzewski.me/hyhyhy
+[2] github.com/MaciejCzyzewski/hyhyhy
+

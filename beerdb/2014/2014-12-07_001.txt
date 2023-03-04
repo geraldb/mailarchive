@@ -1,0 +1,95 @@
+From 185473171456@xxx Sat Dec 20 19:01:39 +0000 2014
+X-GM-THRID: 185087295488
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,b988a893a4eebebc,start
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.181.13.147 with SMTP id ey19mr2704667wid.2.1417973978820;
+        Sun, 07 Dec 2014 09:39:38 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.152.5.135 with SMTP id s7ls370284las.33.gmail; Sun, 07 Dec
+ 2014 09:39:38 -0800 (PST)
+X-Received: by 10.112.151.38 with SMTP id un6mr5525226lbb.0.1417973978333;
+        Sun, 07 Dec 2014 09:39:38 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x231.google.com (mail-wi0-x231.google.com. [2a00:1450:400c:c05::231])
+        by gmr-mx.google.com with ESMTPS id s6si211666wif.0.2014.12.07.09.39.38
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 07 Dec 2014 09:39:38 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) client-ip=2a00:1450:400c:c05::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f177.google.com with SMTP id l15so2873799wiw.4
+        for <beerdb@googlegroups.com>; Sun, 07 Dec 2014 09:39:38 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=frz+Jv5hAkmvXRqsTpSaIlj7DHOVbD4pdIbpVLpvj4w=;
+        b=ZmIaEiiAH7Ca5ekCoDwNfiAINcwVe0C0L7l8Ye9kOWOS5br0bYm+CnCtK0X2PAoID7
+         SCVFNlaZqQGzgFDhRgpsBRctUxp993Xzj/G7QIYXddXJmjbCdvqK6B8dqrWYVXRvEWKK
+         CfGlM9o2CJz2PrbJoRnwvHo0VzTFz9O11Y4Gx4wc12KCHKEcgJ+UgTawJaX5yBLttqxm
+         5R0hLOOF39NlrW5IaRsiQ1tYr00SnnTmcYhey9INV3yXisiAI1tFllU8/mONDhgX2mCi
+         w55MbU0ANANDkvORdm/tjg7Slo4aZjM0tWyUu9L/Ejazo/FHk7XNqhbN2YH1CTp7XuW4
+         sPWg==
+MIME-Version: 1.0
+X-Received: by 10.180.94.230 with SMTP id df6mr18993869wib.25.1417973978229;
+ Sun, 07 Dec 2014 09:39:38 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Sun, 7 Dec 2014 09:39:38 -0800 (PST)
+Date: Sun, 7 Dec 2014 18:39:38 +0100
+Message-ID: <CAAxEZd_9vqynTEZXyE93nvykZNq4xznd0T_ifj5Vk8yogf2vvA@mail.gmail.com>
+Subject: [ANN] New beer.db Build System - Welcome ./Datafile e.g. $beerdb new at
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've uploaded a new beerdb command line tool version, that is,
+v0.10.1 What's news?
+
+  The beerdb command line tool now includes a new build system (as a
+new and easier all-in-one option).
+
+  To try it - use the new Datafile - a mini language a.k.a.
+domain-specific language (DSL) that lets you setup new beer.db's in
+minutes.
+
+  For example, to setup a beer.db for Austria use:
+
+Datafile:
+
+   world 'openmundi/world.db', setup: 'countries'
+   world 'openmundi/austria.db'
+
+   beer 'openbeer/at-austria'
+
+
+  That's it.  Now run
+
+$ beerdb build
+
+  The new build command will look for the ./Datafile script in your
+working folder and
+
+ Step 1)  Download all datasets as zip archives (from GitHub) to  ./tmp
+ Step 2)  Create all database tables
+ Step 3)  Read/import all datasets from the zip archives in ./tmp (no
+need to unpack)
+
+   That's it.  Still early and rough. If you try the new Datafile
+build let us know how it goes.
+
+   Cheers.
+
+PS: The repo also includes new quick starter Datafile templates. Use like
+
+  $ beerdb new <name>  e.g.
+  $ beerdb new at
+
+See the new quick start Datafile repo [1] for details.
+
+[1] github.com/openbeer/datafile
+

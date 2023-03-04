@@ -1,0 +1,110 @@
+From 6831799303685537792@xxx Thu May 28 07:50:29 +0000 2020
+X-GM-THRID: 6831424910904000512
+X-Received: by 2002:a17:906:f0c6:: with SMTP id dk6mr1872576ejb.157.1590652229211;
+        Thu, 28 May 2020 00:50:29 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a17:906:c142:: with SMTP id dp2ls596376ejc.5.gmail; Thu, 28
+ May 2020 00:50:28 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJw2vI2fH3MWtcBPjRt8BmsR9Qw5dp/mXJHg3HVFhE0/FCzikmQo0YDvK/V7x2bRkc2O/S7D
+X-Received: by 2002:a17:907:2486:: with SMTP id zg6mr1874347ejb.225.1590652228036;
+        Thu, 28 May 2020 00:50:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1590652228; cv=none;
+        d=google.com; s=arc-20160816;
+        b=StMQs9INnTFU1FSq5ENBIzmmvN5DNv6v3Q9vUA08LxI6Q9h5b2VImnzy0a0glm+HWn
+         Y5oRA1dBhE3IH+2AgGRnpCftzaJXKDPXMpAe5A/7Yabt77YujAWP+LjqpHwX2+JIwbjD
+         YdV/8EVPkJXkicLGwoMbUXY2QzH8c2nJ//l9njxidnNsqmjBvJLj10k6lFAP4n1iREaW
+         9tyvtKquIDjVsg+Ib3o7aKLaFwouSpFR3PJ8GaAhBEObt7ayBLjqp4eDY5lsNBOPr84/
+         cGSbT914Ib5aFNbyClCetDBH0e8TeXRF2GWU6kurlaLx+BMKBJUqcgZUCbdG49JrdoQV
+         4pag==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=EZGWJiMzIfHhuyoH7RBdgAjjfB08MdWXBaEC9iMAyEI=;
+        b=aj9jlS6amtVvD8h9lDkcZJ+c6iBf2Zd7+AqNFt/MhxNxcX3TD2Ooiw3c/dT3qb1t5Q
+         6umOz0CepIV4elbfkBUzJa7CKIj6sTmWCGJDsyuUFpq7jdLg6w0mN9Leftp10j0mSDRt
+         NYbB+ugALRZoGasRdZZ5KldONDXAnmrGjZbl4AiYogCTKS9NDshdHyOk0tpTvu7ZUKQd
+         7/XRlpUsVbu4ZlwnpzrUAsnUWYEs5lW85ykEUIZDQVgPEGyDv/w4+l/wNpK53aPaFkXf
+         F5pNZnHt/Ifdr+s5joZK4ZB5DtFIf2JOIcjorfl/7h+UYNmpmwCD9URmcgGM+fK2eIx5
+         fULw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=FsbC0Vmc;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x234.google.com (mail-lj1-x234.google.com. [2a00:1450:4864:20::234])
+        by gmr-mx.google.com with ESMTPS id o23si276761edz.4.2020.05.28.00.50.28
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 28 May 2020 00:50:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) client-ip=2a00:1450:4864:20::234;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=FsbC0Vmc;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x234.google.com with SMTP id o9so495620ljj.6
+        for <opensport@googlegroups.com>; Thu, 28 May 2020 00:50:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=EZGWJiMzIfHhuyoH7RBdgAjjfB08MdWXBaEC9iMAyEI=;
+        b=FsbC0VmcpWtqvim6CUx1yp0Jt0DNe/AXGe+u49QPVFFFOgRrxLgS1LE1z7iSN7wN4J
+         WzSFVAifiyB2GLLTPZHVVEvv79GnGoIqlLQ6zYeIqp9utJLQv95JGFL4yK9LMbAbKyq/
+         5vqnr/BU0ahQM80I0QQi3/AvKqquJjGjqN3cPdJllRajgYb35TjewTsc8Hmca+kG4zL4
+         5t7RIaMctz8wC1wAgBZQinqfO7z9UIqOuN1jh8sZaH46Jy4F7b/kzM7fluRZR/gTrmer
+         W6huUfpre2LvXCvQKjn7n+hrrsvEQZSmVKwoQbxR2Xl5ds3jHB3sJscUS1MEAXRCR4kA
+         yHGQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=EZGWJiMzIfHhuyoH7RBdgAjjfB08MdWXBaEC9iMAyEI=;
+        b=DzZiECq1viWN5uY6v6tWs9LOfA9Mv6e5JtYvkxozh2jOvdYq9l58p/Gnv4a7Iz8+C1
+         05P0Sgx2C3ffzWmDbJBURXmi4ABasLFPBl+qJCdDCYqM/1tJm35gK4uMfOsJohiRDqeF
+         qHxUurLMIv9Aa7Lt4jXf2tE2Jkj4H1AlazABn8oNC1/GxOSQq8KqoELf2suJ78T35d6j
+         462Nmd4xPvc9rJX+wu4Am84+JwUANvH6tigvAMSGJaDUBZFm56Jto1JrgeEw7uic6ZxY
+         H15T96aHt0zK78WTc8/oUrPKqZ5Z6SHumubySlSipLYkyrF20mkecRMFx4AM7wxA1dMI
+         xurQ==
+X-Gm-Message-State: AOAM530/L1AEUTRjN+H95ulQxut8TE6Qaf3rv/fa+NRguZTLRlKaRQYo
+	XXX7SFKIRU0/xhYlFs1Vy9fflU0Ky2SDfQRX6jkZv8o97kg=
+X-Received: by 2002:a2e:9891:: with SMTP id b17mr803297ljj.320.1590652227003;
+ Thu, 28 May 2020 00:50:27 -0700 (PDT)
+MIME-Version: 1.0
+References: <8a4c2a38-6a6b-4f14-a50b-d1c69366477a@googlegroups.com>
+ <CAAxEZd83BYuMW100SH+PT14Lf+aBobFNAi8EYRW1ABL4ivdVfQ@mail.gmail.com> <CAOpxBGzTvUpc-AOokdNh_6HihHEwAxdqAse5tnRSKtghKqFvcQ@mail.gmail.com>
+In-Reply-To: <CAOpxBGzTvUpc-AOokdNh_6HihHEwAxdqAse5tnRSKtghKqFvcQ@mail.gmail.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 28 May 2020 09:50:15 +0200
+Message-ID: <CAAxEZd8FjU_q+Vo65N=85h_=Ks-CNGNT_fJiiqwBRoe-RrwxCw@mail.gmail.com>
+Subject: Re: [opensport] Hosting data on DoltHub
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+    All datasets are dedicated to the public domain - that is - you're
+free to serve-yourself without any requirement for attribution, remix,
+etc
+
+    To build yourself a single-file SQLite database e.g. sport.db for
+the top 4 leagues (as exported in football.json) use / create a
+Datafile:
+
+Datafile:
+-----cut---
+football 'england'
+football 'deutschland'
+football 'espana'
+football 'italy'
+----cut--
+
+and than use
+$ sportdb build
+
+that will download the datasets to /tmp and build everything from
+scratch / zero.
+As an alternative you can create one SQLite database per country e.g.
+england.db, italy.db, etc. See the quick starter (datafile) templates
+for some more examples. [1] Good luck. Let us know how it goes.
+Cheers.
+
+ [1] https://github.com/openfootball/quick-starter
+

@@ -1,0 +1,101 @@
+From 6802938790530777088@xxx Wed Mar 11 13:16:57 +0000 2020
+X-GM-THRID: 6802922667939725312
+Date: Wed, 11 Mar 2020 06:16:56 -0700 (PDT)
+From: Jerry Brown <jjbrownhhr@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <89af49f4-60e2-4c06-9cd8-dbd580ad93da@googlegroups.com>
+In-Reply-To: <6c4ba349-d504-4dab-8309-d110d781aa50@googlegroups.com>
+References: <6c4ba349-d504-4dab-8309-d110d781aa50@googlegroups.com>
+Subject: Re: Club missing when using footballdata
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1576_2044130751.1583932617104"
+X-Google-Token: EMjJo_MFsoEpZtkGq7A0
+X-Google-IP: 67.209.188.50
+
+------=_Part_1576_2044130751.1583932617104
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1577_1775870597.1583932617104"
+
+------=_Part_1577_1775870597.1583932617104
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Another similay error is 'Inter Miami CF' in USA.csv
+
+=E5=9C=A8 2020=E5=B9=B43=E6=9C=8811=E6=97=A5=E6=98=9F=E6=9C=9F=E4=B8=89 UTC=
++8=E4=B8=8B=E5=8D=888:14:23=EF=BC=8CJerry Brown=E5=86=99=E9=81=93=EF=BC=9A
+>
+> Hi all.
+> When trying to convert IRL.csv file into sqlite using the following=20
+> code(from footballdata=20
+> <https://github.com/yorobot/football.csv/tree/master/sportdb-source-footb=
+alldata>
+> ):=20
+>
+> ## build database schema / tables
+> SportDb.create_all
+>
+> ## turn on logging to console
+> ActiveRecord::Base.logger =3D Logger.new(STDOUT)
+> ## no ie
+> Footballdata.import
+>
+> it said "!!! *** ERROR *** no matching club found for >Cabinteely< - add=
+=20
+> to clubs setup".
+>
+> And this club cannot be found in=20
+> https://github.com/sportdb/sport.db/blob/master/footballdb-clubs/config/c=
+lubs.txt
+> .
+>
+>
+> P.S. There are some club name errors in other CSV files.
+> In SWE.csv, "Brage" should be "IK Brage".
+> In USA.csv, "Atlanta Utd" should be "Atlanta United".
+>
+
+------=_Part_1577_1775870597.1583932617104
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Another similay error is &#39;Inter Miami CF&#39; in USA.c=
+sv<br><br>=E5=9C=A8 2020=E5=B9=B43=E6=9C=8811=E6=97=A5=E6=98=9F=E6=9C=9F=E4=
+=B8=89 UTC+8=E4=B8=8B=E5=8D=888:14:23=EF=BC=8CJerry Brown=E5=86=99=E9=81=93=
+=EF=BC=9A<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: =
+0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">Hi a=
+ll.<div>When trying to convert IRL.csv file into sqlite using the following=
+ code(from <a href=3D"https://github.com/yorobot/football.csv/tree/master/s=
+portdb-source-footballdata" target=3D"_blank" rel=3D"nofollow" onmousedown=
+=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.c=
+om%2Fyorobot%2Ffootball.csv%2Ftree%2Fmaster%2Fsportdb-source-footballdata\x=
+26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNF6wNyl-lHtnuhWhGDNjNYHTpL5ug&#39;;re=
+turn true;" onclick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhtt=
+ps%3A%2F%2Fgithub.com%2Fyorobot%2Ffootball.csv%2Ftree%2Fmaster%2Fsportdb-so=
+urce-footballdata\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNF6wNyl-lHtnuhWhGD=
+NjNYHTpL5ug&#39;;return true;">footballdata</a>):=C2=A0</div><div><br></div=
+><div><div>## build database schema / tables</div><div>SportDb.create_all</=
+div><div><br></div><div>## turn on logging to console</div><div>ActiveRecor=
+d::Base.logger =3D Logger.new(STDOUT)</div><div>## no ie</div><div>Football=
+data.import</div></div><div><br></div><div>it said &quot;!!! *** ERROR *** =
+no matching club found for &gt;Cabinteely&lt; - add to clubs setup&quot;.</=
+div><div><br></div><div>And this club cannot be found in=C2=A0<a href=3D"ht=
+tps://github.com/sportdb/sport.db/blob/master/footballdb-clubs/config/clubs=
+.txt" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;ht=
+tps://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fsportdb%2Fsport.db=
+%2Fblob%2Fmaster%2Ffootballdb-clubs%2Fconfig%2Fclubs.txt\x26sa\x3dD\x26sntz=
+\x3d1\x26usg\x3dAFQjCNFMkBYqDY3TnkS9lYiUGQ0IWpSEcg&#39;;return true;" oncli=
+ck=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub=
+.com%2Fsportdb%2Fsport.db%2Fblob%2Fmaster%2Ffootballdb-clubs%2Fconfig%2Fclu=
+bs.txt\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFMkBYqDY3TnkS9lYiUGQ0IWpSEcg=
+&#39;;return true;">https://github.com/sportdb/<wbr>sport.db/blob/master/<w=
+br>footballdb-clubs/config/clubs.<wbr>txt</a>.</div><div><br></div><div><br=
+></div><div>P.S. There are some club name errors in other CSV files.</div><=
+div>In SWE.csv, &quot;Brage&quot; should be &quot;IK Brage&quot;.</div><div=
+>In USA.csv, &quot;Atlanta Utd&quot; should be &quot;Atlanta United&quot;.<=
+/div></div></blockquote></div>
+------=_Part_1577_1775870597.1583932617104--
+
+------=_Part_1576_2044130751.1583932617104--
+

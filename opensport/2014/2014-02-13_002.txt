@@ -1,0 +1,85 @@
+From 324085481472@xxx Tue Jun 16 00:17:18 +0000 2015
+X-GM-THRID: 323912466432
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,adbbcc06d99a64e7
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.69.35 with SMTP id m23mr1338840yhd.6.1392329138792;
+        Thu, 13 Feb 2014 14:05:38 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.143.34 with SMTP id sb2ls734100igb.41.canary; Thu, 13 Feb
+ 2014 14:05:38 -0800 (PST)
+X-Received: by 10.42.28.2 with SMTP id l2mr1316459icc.20.1392329138383;
+        Thu, 13 Feb 2014 14:05:38 -0800 (PST)
+Received: by 10.224.127.199 with SMTP id h7msqas;
+        Thu, 13 Feb 2014 12:43:04 -0800 (PST)
+X-Received: by 10.140.105.54 with SMTP id b51mr61256qgf.29.1392324184006;
+        Thu, 13 Feb 2014 12:43:04 -0800 (PST)
+X-Google-Doc-Id: f467186d6bbea0b1
+X-Google-Web-Client: true
+Date: Thu, 13 Feb 2014 12:43:03 -0800 (PST)
+From: Andrew Durber <aidurber@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <0ce36c91-80d0-4f49-8286-ce4a92602ee8@googlegroups.com>
+Subject: No such file or directory ./setups/all.yml
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_514_24729342.1392324183548"
+X-Google-Token: ENfc9JcFq5pHONSHMgo0
+X-Google-IP: 86.8.117.166
+
+------=_Part_514_24729342.1392324183548
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_515_20869303.1392324183548"
+
+------=_Part_515_20869303.1392324183548
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi, 
+
+Perhaps I'm doing it completely wrong but I am getting this error when I 
+try to do run:
+
+sportdb setup --include ./en-england --worldinclude ./world.db
+
+
+Error: 
+
+
+[info] parsing data 'setups/all' (C:/Ruby200-x64/lib/ruby/g
+b-1.8.2/data/setups/all.yml)...
+[info] parsing data 'seasons' (C:/Ruby200-x64/lib/ruby/gems
+.8.2/data/seasons.txt)...
+[info] parsing data 'setups/all' (./setups/all.yml)...
+*** error: No such file or directory - ./setups/all.yml
+
+I installed the sportdb and I cloned the repositories from the github pages
+I'm a newbie to Ruby and Github. 
+
+Any advice?
+
+
+------=_Part_515_20869303.1392324183548
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi,&nbsp;<br><br>Perhaps I'm doing it completely wrong but=
+ I am getting this error when I try to do run:<br><pre style=3D"padding: 4p=
+x; border-top-color: rgb(187, 187, 187); border-top-width: 1px; border-top-=
+style: solid; border-bottom-color: rgb(187, 187, 187); border-bottom-width:=
+ 1px; border-bottom-style: solid; background-color: rgb(243, 243, 243); col=
+or: rgb(0, 0, 0);"><code>sportdb setup --include ./en-england --worldinclud=
+e ./world.db</code></pre><div><br></div><blockquote>Error:&nbsp;<br></block=
+quote><div><br></div><blockquote>[info] parsing data 'setups/all' (C:/Ruby2=
+00-x64/lib/ruby/g<br>b-1.8.2/data/setups/all.yml)...<br>[info] parsing data=
+ 'seasons' (C:/Ruby200-x64/lib/ruby/gems<br>.8.2/data/seasons.txt)...<br>[i=
+nfo] parsing data 'setups/all' (./setups/all.yml)...<br>*** error: No such =
+file or directory - ./setups/all.yml</blockquote><div>I installed the sport=
+db and I cloned the repositories from the github pages</div><div>I'm a newb=
+ie to Ruby and Github.&nbsp;</div><div><br></div><div>Any advice?</div><div=
+><br></div></div>
+------=_Part_515_20869303.1392324183548--
+
+------=_Part_514_24729342.1392324183548--
+

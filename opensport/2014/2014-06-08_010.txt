@@ -1,0 +1,108 @@
+From 1090765455360@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1088439713792
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4b9cee51d6eb9eaa
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.50.55.35 with SMTP id o3mr10982igp.6.1402246083771;
+        Sun, 08 Jun 2014 09:48:03 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.22.145 with SMTP id 17ls1373645qgn.21.gmail; Sun, 08 Jun
+ 2014 09:48:03 -0700 (PDT)
+X-Received: by 10.236.136.231 with SMTP id w67mr3681713yhi.37.1402246083574;
+        Sun, 08 Jun 2014 09:48:03 -0700 (PDT)
+Received: by 10.224.189.8 with SMTP id dc8msqab;
+        Sun, 8 Jun 2014 06:58:07 -0700 (PDT)
+X-Received: by 10.140.27.244 with SMTP id 107mr6539qgx.18.1402235887025;
+        Sun, 08 Jun 2014 06:58:07 -0700 (PDT)
+X-Google-Doc-Id: 71cd4d817525aeb8
+X-Google-Web-Client: true
+Date: Sun, 8 Jun 2014 06:58:06 -0700 (PDT)
+From: gcharhon@smartmobilesoftware.com
+To: opensport@googlegroups.com
+Message-Id: <f5e06275-fcb9-4e24-89de-f9c3f6730551@googlegroups.com>
+Subject: Trouble gettings worldcup players/squads
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_99_5865587.1402235886622"
+X-Google-Token: EO7X0ZwFb9y3PqQ9RwI0
+X-Google-IP: 82.224.164.162
+
+------=_Part_99_5865587.1402235886622
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_100_7154.1402235886623"
+
+------=_Part_100_7154.1402235886623
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,=20
+
+I have created this directories in my file system:
+
+.
+
+=E2=94=9C=E2=94=80=E2=94=80 openfootball
+
+=E2=94=82   =E2=94=9C=E2=94=80=E2=94=80 build
+
+=E2=94=82   =E2=94=9C=E2=94=80=E2=94=80 national-teams
+
+=E2=94=82   =E2=94=94=E2=94=80=E2=94=80 world-cup
+
+=E2=94=94=E2=94=80=E2=94=80 openmundi
+
+    =E2=94=94=E2=94=80=E2=94=80 world.db
+
+
+Inside the build directory I have run :
+
+rake build DATA=3Dworldcup2014
+
+When I open the foodball.db file, the "roster" and the "persons" table are=
+=20
+emtpy. How can I get the players loaded ?=20
+
+Thanks !
+
+
+
+------=_Part_100_7154.1402235886623
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,&nbsp;<div><br></div><div>I have created this direct=
+ories in my file system:</div><div>
+
+
+
+
+
+
+
+<p class=3D"p1">.</p>
+<p class=3D"p1">=E2=94=9C=E2=94=80=E2=94=80 openfootball</p>
+<p class=3D"p1">=E2=94=82&nbsp;&nbsp; =E2=94=9C=E2=94=80=E2=94=80 build</p>
+<p class=3D"p1">=E2=94=82&nbsp;&nbsp; =E2=94=9C=E2=94=80=E2=94=80 national-=
+teams</p>
+<p class=3D"p1">=E2=94=82&nbsp;&nbsp; =E2=94=94=E2=94=80=E2=94=80 world-cup=
+</p>
+<p class=3D"p1">=E2=94=94=E2=94=80=E2=94=80 openmundi</p>
+<p class=3D"p1">&nbsp; &nbsp; =E2=94=94=E2=94=80=E2=94=80 world.db</p><p cl=
+ass=3D"p1"><br></p><p class=3D"p1">Inside the build directory I have run :<=
+/p><p class=3D"p1">rake build DATA=3Dworldcup2014</p><p class=3D"p1">When I=
+ open the foodball.db file, the "roster" and the "persons" table are emtpy.=
+ How can I get the players loaded ?&nbsp;<br><br>Thanks !</p><p class=3D"p1=
+"><br></p>
+
+
+
+
+
+
+
+</div></div>
+------=_Part_100_7154.1402235886623--
+
+------=_Part_99_5865587.1402235886622--
+

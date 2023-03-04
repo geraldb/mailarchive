@@ -1,0 +1,357 @@
+From 6227045008355098624@xxx Fri Dec 11 15:14:57 +0000 2015
+X-GM-THRID: 6227037093254660096
+Date: Fri, 11 Dec 2015 07:14:56 -0800 (PST)
+From: brian king <wangxydlut@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <e29fd86e-1067-49fd-9427-ce73b165388a@googlegroups.com>
+In-Reply-To: <CAAxEZd-jpNP6f8KJvjHdXwwrsCBu5FVUQ-gszwVFFsbFOndy-g@mail.gmail.com>
+References: <3e97f6a6-54cc-4931-b25c-933403e73a88@googlegroups.com>
+ <CAAxEZd-jpNP6f8KJvjHdXwwrsCBu5FVUQ-gszwVFFsbFOndy-g@mail.gmail.com>
+Subject: Re: [opensport] ActiveRecord::StatementInvalid: Could not find
+ table 'persons'
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2717_1866227771.1449846897024"
+X-Google-Token: EPDQq7MFrIYWFQpwlDk0
+X-Google-IP: 110.74.192.235
+
+------=_Part_2717_1866227771.1449846897024
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2718_255484700.1449846897024"
+
+------=_Part_2718_255484700.1449846897024
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+=E5=9C=A8 2015=E5=B9=B412=E6=9C=8811=E6=97=A5=E6=98=9F=E6=9C=9F=E4=BA=94 UT=
+C+8=E4=B8=8B=E5=8D=8810:54:28=EF=BC=8CGerald Bauer=E5=86=99=E9=81=93=EF=BC=
+=9A
+>
+> Hello,=20
+>     Good question. Thanks for trying sportbook. Please make sure you=20
+> have the correct gems (libraries) installed e.g. try:=20
+>
+>    $ bundle install=20
+>    $ bundle exec rake db:setup=20
+>
+>    If you still get the error can you try:=20
+>
+>    $ bundle exec rake --trace db:setup=20
+>
+>    and post all details about the error. Cheers.=20
+>
+
+
+
+ActiveRecord::StatementInvalid: Could not find table 'persons'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/connection_a=
+dapters/sqlite_adapter.rb:472:in=20
+`table_structure'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/connection_a=
+dapters/sqlite_adapter.rb:346:in=20
+`columns'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/connection_a=
+dapters/schema_cache.rb:12:in=20
+`block in initialize'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/model_schema=
+.rb:228:in=20
+`yield'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/model_schema=
+.rb:228:in=20
+`default'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/model_schema=
+.rb:228:in=20
+`columns'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/model_schema=
+.rb:237:in=20
+`columns_hash'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/locking/opti=
+mistic.rb:129:in=20
+`locking_enabled?'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/relation.rb:=
+170:in=20
+`exec_queries'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/relation.rb:=
+160:in=20
+`block in to_a'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/explain.rb:3=
+3:in=20
+`logging_query_plan'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/relation.rb:=
+159:in=20
+`to_a'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/relation/fin=
+der_methods.rb:378:in=20
+`find_first'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/relation/fin=
+der_methods.rb:122:in=20
+`first'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:642:in=
+=20
+`block in parse_goals'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:639:in=
+=20
+`each'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:639:in=
+=20
+`parse_goals'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:724:in=
+=20
+`block in parse_fixtures'
+/var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/line_reader.r=
+b:86:in=20
+`block in each_line'
+/var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/line_reader.r=
+b:57:in=20
+`each_line'
+/var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/line_reader.r=
+b:57:in=20
+`each_line'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:721:in=
+=20
+`parse_fixtures'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:131:in=
+=20
+`load_fixtures_worker'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:95:in=20
+`read_fixtures'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:40:in=20
+`block in read'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:39:in=20
+`each'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:39:in=20
+`read'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/reader.rb:131:in `load'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/reader.rb:30:in `block=
+=20
+in load_setup'
+/var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/fixture_reade=
+r.rb:104:in=20
+`block in each'
+/var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/fixture_reade=
+r.rb:103:in=20
+`each'
+/var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/fixture_reade=
+r.rb:103:in=20
+`each'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/reader.rb:29:in=20
+`load_setup'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb.rb:150:in `read_setup'
+/home/brian/sportbook/db/setups/brazil2014/seeds.rb:11:in `block in <top=20
+(required)>'
+/home/brian/sportbook/db/setups/brazil2014/seeds.rb:10:in `each'
+/home/brian/sportbook/db/setups/brazil2014/seeds.rb:10:in `<top (required)>=
+'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/dependenci=
+es.rb:251:in=20
+`require'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/dependenci=
+es.rb:251:in=20
+`block in require'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/dependenci=
+es.rb:236:in=20
+`load_dependency'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/dependenci=
+es.rb:251:in=20
+`require'
+/home/brian/sportbook/db/seeds.rb:62:in `block in <top (required)>'
+/home/brian/sportbook/db/seeds.rb:60:in `each'
+/home/brian/sportbook/db/seeds.rb:60:in `<top (required)>'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/dependenci=
+es.rb:245:in=20
+`load'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/dependenci=
+es.rb:245:in=20
+`block in load'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/dependenci=
+es.rb:236:in=20
+`load_dependency'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/dependenci=
+es.rb:245:in=20
+`load'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/engine.rb:520:in=20
+`load_seed'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/railties/dat=
+abases.rake:333:in=20
+`block (2 levels) in <top (required)>'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:240:in `call'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:240:in `block in=20
+execute'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:235:in `each'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:235:in `execute'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:179:in `block in=20
+invoke_with_call_chain'
+/usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:172:in=20
+`invoke_with_call_chain'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:201:in `block in=20
+invoke_prerequisites'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:199:in `each'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:199:in=20
+`invoke_prerequisites'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:178:in `block in=20
+invoke_with_call_chain'
+/usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:172:in=20
+`invoke_with_call_chain'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:165:in `invoke'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb:150:in=20
+`invoke_task'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb:106:in `block=
+=20
+(2 levels) in top_level'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb:106:in `each'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb:106:in `block=
+=20
+in top_level'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb:115:in=20
+`run_with_threads'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb:100:in=20
+`top_level'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb:78:in `block=
+=20
+in run'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb:176:in=20
+`standard_exception_handling'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb:75:in `run'
+/var/lib/gems/1.9.1/gems/rake-10.3.2/bin/rake:33:in `<top (required)>'
+/usr/local/bin/rake:23:in `load'
+/usr/local/bin/rake:23:in `<main>'
+Tasks: TOP =3D> db:setup =3D> db:seed
+
+=20
+
+------=_Part_2718_255484700.1449846897024
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><br>=E5=9C=A8 2015=E5=B9=B412=E6=9C=8811=E6=97=A5=E6=
+=98=9F=E6=9C=9F=E4=BA=94 UTC+8=E4=B8=8B=E5=8D=8810:54:28=EF=BC=8CGerald Bau=
+er=E5=86=99=E9=81=93=EF=BC=9A<blockquote class=3D"gmail_quote" style=3D"mar=
+gin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">H=
+ello,
+<br>=C2=A0 =C2=A0 Good question. Thanks for trying sportbook. Please make s=
+ure you
+<br>have the correct gems (libraries) installed e.g. try:
+<br>
+<br>=C2=A0 =C2=A0$ bundle install
+<br>=C2=A0 =C2=A0$ bundle exec rake db:setup
+<br>
+<br>=C2=A0 =C2=A0If you still get the error can you try:
+<br>
+<br>=C2=A0 =C2=A0$ bundle exec rake --trace db:setup
+<br>
+<br>=C2=A0 =C2=A0and post all details about the error. Cheers.
+<br></blockquote><div><br></div><div><br></div><div><br></div><div><div>Act=
+iveRecord::StatementInvalid: Could not find table &#39;persons&#39;</div><d=
+iv>/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/connectio=
+n_adapters/sqlite_adapter.rb:472:in `table_structure&#39;</div><div>/var/li=
+b/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/connection_adapters=
+/sqlite_adapter.rb:346:in `columns&#39;</div><div>/var/lib/gems/1.9.1/gems/=
+activerecord-3.2.12/lib/active_record/connection_adapters/schema_cache.rb:1=
+2:in `block in initialize&#39;</div><div>/var/lib/gems/1.9.1/gems/activerec=
+ord-3.2.12/lib/active_record/model_schema.rb:228:in `yield&#39;</div><div>/=
+var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/model_schema.=
+rb:228:in `default&#39;</div><div>/var/lib/gems/1.9.1/gems/activerecord-3.2=
+.12/lib/active_record/model_schema.rb:228:in `columns&#39;</div><div>/var/l=
+ib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/model_schema.rb:23=
+7:in `columns_hash&#39;</div><div>/var/lib/gems/1.9.1/gems/activerecord-3.2=
+.12/lib/active_record/locking/optimistic.rb:129:in `locking_enabled?&#39;</=
+div><div>/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/rel=
+ation.rb:170:in `exec_queries&#39;</div><div>/var/lib/gems/1.9.1/gems/activ=
+erecord-3.2.12/lib/active_record/relation.rb:160:in `block in to_a&#39;</di=
+v><div>/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/expla=
+in.rb:33:in `logging_query_plan&#39;</div><div>/var/lib/gems/1.9.1/gems/act=
+iverecord-3.2.12/lib/active_record/relation.rb:159:in `to_a&#39;</div><div>=
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/relation/fin=
+der_methods.rb:378:in `find_first&#39;</div><div>/var/lib/gems/1.9.1/gems/a=
+ctiverecord-3.2.12/lib/active_record/relation/finder_methods.rb:122:in `fir=
+st&#39;</div><div>/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/reader=
+s/game.rb:642:in `block in parse_goals&#39;</div><div>/var/lib/gems/1.9.1/g=
+ems/sportdb-1.9.8/lib/sportdb/readers/game.rb:639:in `each&#39;</div><div>/=
+var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:639:in `p=
+arse_goals&#39;</div><div>/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportd=
+b/readers/game.rb:724:in `block in parse_fixtures&#39;</div><div>/var/lib/g=
+ems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/line_reader.rb:86:in `b=
+lock in each_line&#39;</div><div>/var/lib/gems/1.9.1/gems/textutils-0.9.4/l=
+ib/textutils/reader/line_reader.rb:57:in `each_line&#39;</div><div>/var/lib=
+/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/line_reader.rb:57:in =
+`each_line&#39;</div><div>/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportd=
+b/readers/game.rb:721:in `parse_fixtures&#39;</div><div>/var/lib/gems/1.9.1=
+/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:131:in `load_fixtures_worke=
+r&#39;</div><div>/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers=
+/game.rb:95:in `read_fixtures&#39;</div><div>/var/lib/gems/1.9.1/gems/sport=
+db-1.9.8/lib/sportdb/readers/game.rb:40:in `block in read&#39;</div><div>/v=
+ar/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers/game.rb:39:in `eac=
+h&#39;</div><div>/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/readers=
+/game.rb:39:in `read&#39;</div><div>/var/lib/gems/1.9.1/gems/sportdb-1.9.8/=
+lib/sportdb/reader.rb:131:in `load&#39;</div><div>/var/lib/gems/1.9.1/gems/=
+sportdb-1.9.8/lib/sportdb/reader.rb:30:in `block in load_setup&#39;</div><d=
+iv>/var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/fixture_re=
+ader.rb:104:in `block in each&#39;</div><div>/var/lib/gems/1.9.1/gems/textu=
+tils-0.9.4/lib/textutils/reader/fixture_reader.rb:103:in `each&#39;</div><d=
+iv>/var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/fixture_re=
+ader.rb:103:in `each&#39;</div><div>/var/lib/gems/1.9.1/gems/sportdb-1.9.8/=
+lib/sportdb/reader.rb:29:in `load_setup&#39;</div><div>/var/lib/gems/1.9.1/=
+gems/sportdb-1.9.8/lib/sportdb.rb:150:in `read_setup&#39;</div><div>/home/b=
+rian/sportbook/db/setups/brazil2014/seeds.rb:11:in `block in &lt;top (requi=
+red)&gt;&#39;</div><div>/home/brian/sportbook/db/setups/brazil2014/seeds.rb=
+:10:in `each&#39;</div><div>/home/brian/sportbook/db/setups/brazil2014/seed=
+s.rb:10:in `&lt;top (required)&gt;&#39;</div><div>/var/lib/gems/1.9.1/gems/=
+activesupport-3.2.12/lib/active_support/dependencies.rb:251:in `require&#39=
+;</div><div>/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_suppor=
+t/dependencies.rb:251:in `block in require&#39;</div><div>/var/lib/gems/1.9=
+.1/gems/activesupport-3.2.12/lib/active_support/dependencies.rb:236:in `loa=
+d_dependency&#39;</div><div>/var/lib/gems/1.9.1/gems/activesupport-3.2.12/l=
+ib/active_support/dependencies.rb:251:in `require&#39;</div><div>/home/bria=
+n/sportbook/db/seeds.rb:62:in `block in &lt;top (required)&gt;&#39;</div><d=
+iv>/home/brian/sportbook/db/seeds.rb:60:in `each&#39;</div><div>/home/brian=
+/sportbook/db/seeds.rb:60:in `&lt;top (required)&gt;&#39;</div><div>/var/li=
+b/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/dependencies.rb:2=
+45:in `load&#39;</div><div>/var/lib/gems/1.9.1/gems/activesupport-3.2.12/li=
+b/active_support/dependencies.rb:245:in `block in load&#39;</div><div>/var/=
+lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/dependencies.rb=
+:236:in `load_dependency&#39;</div><div>/var/lib/gems/1.9.1/gems/activesupp=
+ort-3.2.12/lib/active_support/dependencies.rb:245:in `load&#39;</div><div>/=
+var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/engine.rb:520:in `load_se=
+ed&#39;</div><div>/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_r=
+ecord/railties/databases.rake:333:in `block (2 levels) in &lt;top (required=
+)&gt;&#39;</div><div>/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:=
+240:in `call&#39;</div><div>/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/t=
+ask.rb:240:in `block in execute&#39;</div><div>/var/lib/gems/1.9.1/gems/rak=
+e-10.3.2/lib/rake/task.rb:235:in `each&#39;</div><div>/var/lib/gems/1.9.1/g=
+ems/rake-10.3.2/lib/rake/task.rb:235:in `execute&#39;</div><div>/var/lib/ge=
+ms/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:179:in `block in invoke_with_cal=
+l_chain&#39;</div><div>/usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchroni=
+ze&#39;</div><div>/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:172=
+:in `invoke_with_call_chain&#39;</div><div>/var/lib/gems/1.9.1/gems/rake-10=
+.3.2/lib/rake/task.rb:201:in `block in invoke_prerequisites&#39;</div><div>=
+/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:199:in `each&#39;</di=
+v><div>/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:199:in `invoke=
+_prerequisites&#39;</div><div>/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake=
+/task.rb:178:in `block in invoke_with_call_chain&#39;</div><div>/usr/lib/ru=
+by/1.9.1/monitor.rb:211:in `mon_synchronize&#39;</div><div>/var/lib/gems/1.=
+9.1/gems/rake-10.3.2/lib/rake/task.rb:172:in `invoke_with_call_chain&#39;</=
+div><div>/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/task.rb:165:in `invo=
+ke&#39;</div><div>/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application=
+.rb:150:in `invoke_task&#39;</div><div>/var/lib/gems/1.9.1/gems/rake-10.3.2=
+/lib/rake/application.rb:106:in `block (2 levels) in top_level&#39;</div><d=
+iv>/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb:106:in `eac=
+h&#39;</div><div>/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.=
+rb:106:in `block in top_level&#39;</div><div>/var/lib/gems/1.9.1/gems/rake-=
+10.3.2/lib/rake/application.rb:115:in `run_with_threads&#39;</div><div>/var=
+/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb:100:in `top_level&=
+#39;</div><div>/var/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb=
+:78:in `block in run&#39;</div><div>/var/lib/gems/1.9.1/gems/rake-10.3.2/li=
+b/rake/application.rb:176:in `standard_exception_handling&#39;</div><div>/v=
+ar/lib/gems/1.9.1/gems/rake-10.3.2/lib/rake/application.rb:75:in `run&#39;<=
+/div><div>/var/lib/gems/1.9.1/gems/rake-10.3.2/bin/rake:33:in `&lt;top (req=
+uired)&gt;&#39;</div><div>/usr/local/bin/rake:23:in `load&#39;</div><div>/u=
+sr/local/bin/rake:23:in `&lt;main&gt;&#39;</div><div>Tasks: TOP =3D&gt; db:=
+setup =3D&gt; db:seed</div></div><div><br></div><div>=C2=A0</div></div>
+------=_Part_2718_255484700.1449846897024--
+
+------=_Part_2717_1866227771.1449846897024--
+

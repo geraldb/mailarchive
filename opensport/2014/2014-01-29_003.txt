@@ -1,0 +1,109 @@
+From 245450670080@xxx Tue Jun 16 00:17:19 +0000 2015
+X-GM-THRID: 241360175104
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,5eb5d144d0b940d2
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.191.136 with SMTP id g8mr1747271yhn.48.1390972523955;
+        Tue, 28 Jan 2014 21:15:23 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.121.169 with SMTP id ll9ls992831obb.67.gmail; Tue, 28 Jan
+ 2014 21:15:23 -0800 (PST)
+X-Received: by 10.182.199.39 with SMTP id jh7mr28785obc.25.1390972523757;
+        Tue, 28 Jan 2014 21:15:23 -0800 (PST)
+X-Google-Doc-Id: 8a4ea454fede80ef
+X-Google-Web-Client: true
+Date: Tue, 28 Jan 2014 21:15:23 -0800 (PST)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <5b1c71d3-40fe-4b90-8fdf-70366402e062@googlegroups.com>
+In-Reply-To: <63329249-38de-4add-aefd-f8483ff2f7d5@googlegroups.com>
+References: <63329249-38de-4add-aefd-f8483ff2f7d5@googlegroups.com>
+Subject: Re: World Cup 2014 Application
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_Part_5_8890811.1390972523265"
+X-Google-Token: EOucopcFixDCUBlAblg0
+X-Google-IP: 201.141.11.53
+
+------=_Part_5_8890811.1390972523265
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_6_9988768.1390972523265"
+
+------=_Part_6_9988768.1390972523265
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+=20
+
+> 1) Is the wold cup information currently up to date? (How is it maintaine=
+d=20
+> when the cup starts)
+>
+
+   The data is online @ http://footballdb.herokuapp.com/world.2014  and the=
+=20
+source is the github repo. The data gets synced once a day (it=C2=B4s reall=
+y up=20
+to you).
+=20
+
+> 2) Is it possible to make a iOS application that will take date from your=
+=20
+> site and display to the user.
+>
+
+   One option is to use the HTTP JSON API (web service) to get the data,=20
+for example another is to use the SQLite DB and bundle the data with your=
+=20
+app.The data is public domain you can do whatever you want.=20
+=20
+
+> 3) Is there any applications on the web / mobile that make use of the ope=
+n=20
+> source sports db, to view a example
+>
+
+   Two main open source applications using the sport.db/football.db are:
+
+    Sportbook        -> see https://github.com/openbookie  and
+    sport.db.admin -> see https://github.com/geraldb/sport.db.admin
+=20
+
+> .Cheers.
+>
+
+------=_Part_6_9988768.1390972523265
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><div>&nbsp;<br></div><blockquote class=3D"gmail_=
+quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;pa=
+dding-left: 1ex;"><div dir=3D"ltr">1) Is the wold cup information currently=
+ up to date? (How is it maintained when the cup starts)<br></div></blockquo=
+te><div><br></div><div>&nbsp; &nbsp;The data is online @&nbsp;http://footba=
+lldb.herokuapp.com/world.2014 &nbsp;and the source is the github repo. The =
+data gets synced once a day (it=C2=B4s really up to you).</div><div>&nbsp;<=
+/div><blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8e=
+x;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">2) Is it=
+ possible to make a iOS application that will take date from your site and =
+display to the user.<br></div></blockquote><div><br></div><div>&nbsp; &nbsp=
+;One option is to use the HTTP JSON API (web service) to get the data, for =
+example another is to use the SQLite DB and bundle the data with your app.T=
+he data is public domain you can do whatever you want.&nbsp;</div><div>&nbs=
+p;</div><blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0=
+.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">3) Is=
+ there any applications on the web / mobile that make use of the open sourc=
+e sports db, to view a example</div></blockquote><div><br></div><div>&nbsp;=
+ &nbsp;Two main open source applications using the sport.db/football.db are=
+:</div><div><br></div><div>&nbsp; &nbsp; Sportbook &nbsp; &nbsp; &nbsp; &nb=
+sp;-&gt; see https://github.com/openbookie &nbsp;and</div><div>&nbsp; &nbsp=
+; sport.db.admin -&gt; see https://github.com/geraldb/sport.db.admin</div><=
+div>&nbsp;</div><blockquote class=3D"gmail_quote" style=3D"margin: 0;margin=
+-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"lt=
+r">.Cheers.<br></div></blockquote></div>
+------=_Part_6_9988768.1390972523265--
+
+------=_Part_5_8890811.1390972523265--
+

@@ -1,0 +1,92 @@
+From 985170706432@xxx Tue Jun 16 00:17:05 +0000 2015
+X-GM-THRID: 923854176256
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,d32db7d7f6a63723
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.43.103.136 with SMTP id di8mr14427014icc.14.1401791871147;
+        Tue, 03 Jun 2014 03:37:51 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.51.132 with SMTP id u4ls2340700qga.36.gmail; Tue, 03 Jun
+ 2014 03:37:51 -0700 (PDT)
+X-Received: by 10.140.95.141 with SMTP id i13mr766537qge.3.1401791870999;
+        Tue, 03 Jun 2014 03:37:50 -0700 (PDT)
+X-Google-Doc-Id: 2e43e983d75e7b48
+X-Google-Web-Client: true
+Date: Tue, 3 Jun 2014 03:37:50 -0700 (PDT)
+From: red band <gpsundergrnd@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <e3455618-1eac-44b2-98e6-c72e0e18e910@googlegroups.com>
+In-Reply-To: <4ddbbd16-58ff-4d90-ad9a-b16bd0f0c781@googlegroups.com>
+References: <CAAxEZd9j_7b5+8XCQk8R8PrJeG0f4EGycXMOG1ALBLg=aXEjxA@mail.gmail.com>
+ <4ddbbd16-58ff-4d90-ad9a-b16bd0f0c781@googlegroups.com>
+Subject: Re: World Cup 2014 Match Picks/Predictions (w/ Open Source
+ Sportbook Rails Web App)
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2912_31941630.1401791870402"
+X-Google-Token: EP7KtpwF1DiuxdB_-R00
+X-Google-IP: 81.152.64.145
+
+------=_Part_2912_31941630.1401791870402
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2913_5623869.1401791870402"
+
+------=_Part_2913_5623869.1401791870402
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+No, it still fails, and it looks like it could be the same place as when I 
+ran rake db:setup
+rake aborted!
+ActiveRecord::StatementInvalid: SQLite3::SQLException: no such table: 
+alltime_standing_entries: DELETE FROM "alltime_standing_entries"
+
+Is this table missing from the schema?
+
+Grtz
+
+Red
+
+On Tuesday, June 3, 2014 11:00:46 AM UTC+1, Gerald Bauer wrote:
+>
+> Hello,
+>
+>   Thanks for your interest in sportbook. Please, replace the all-in-one 
+> database setup command 
+>
+> $ rake db:setup 
+>
+>    with two steps
+>
+> $ rake db:migrate                       # will create the database tables 
+> / schema
+> $ rake db:seed DATA=demo       # will load all data for the demo setup
+>
+>    Let us know if it works. Cheers.
+>
+
+------=_Part_2913_5623869.1401791870402
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">No, it still fails, and it looks like it could be the same=
+ place as when I ran rake db:setup<br>rake aborted!<br>ActiveRecord::Statem=
+entInvalid: SQLite3::SQLException: no such table: alltime_standing_entries:=
+ DELETE FROM "alltime_standing_entries"<br><br>Is this table missing from t=
+he schema?<br><br>Grtz<br><br>Red<br><br>On Tuesday, June 3, 2014 11:00:46 =
+AM UTC+1, Gerald Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"mar=
+gin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><=
+div dir=3D"ltr">Hello,<div><br></div><div>&nbsp; Thanks for your interest i=
+n sportbook. Please, replace the all-in-one database setup command&nbsp;</d=
+iv><div><br></div><div>$ rake db:setup&nbsp;</div><div><br></div><div>&nbsp=
+; &nbsp;with two steps</div><div><br></div><div>$&nbsp;rake db:migrate &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # =
+will create the database tables / schema</div><div>$&nbsp;rake db:seed DATA=
+=3Ddemo &nbsp; &nbsp; &nbsp; # will load all data for the demo setup</div><=
+div><br></div><div>&nbsp; &nbsp;Let us know if it works. Cheers.</div></div=
+></blockquote></div>
+------=_Part_2913_5623869.1401791870402--
+
+------=_Part_2912_31941630.1401791870402--
+

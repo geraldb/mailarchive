@@ -1,0 +1,60 @@
+From 1841734615040@xxx Tue Jun 16 00:16:54 +0000 2015
+X-GM-THRID: 1794027552768
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,c14c4861489a6514
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.105.3 with SMTP id gi3mr2618988wib.3.1407222378845;
+        Tue, 05 Aug 2014 00:06:18 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.29.106 with SMTP id j10ls41317lah.9.gmail; Tue, 05 Aug
+ 2014 00:06:18 -0700 (PDT)
+X-Received: by 10.152.243.33 with SMTP id wv1mr231477lac.2.1407222378338;
+        Tue, 05 Aug 2014 00:06:18 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22d.google.com (mail-we0-x22d.google.com [2a00:1450:400c:c03::22d])
+        by gmr-mx.google.com with ESMTPS id e20si87795wiw.0.2014.08.05.00.06.18
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 05 Aug 2014 00:06:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22d as permitted sender) client-ip=2a00:1450:400c:c03::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f173.google.com with SMTP id q58so510189wes.18
+        for <opensport@googlegroups.com>; Tue, 05 Aug 2014 00:06:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=BbpHiXmDBDMQu0zAL92YyAHSr1Q49aTj20CJWQ7jWkE=;
+        b=LoEnq8dBny3Wgr0GXPh0+NNi89XsFz/LmUtDEYePTXvU3kUB7moR7G5E4UEmk/ccnz
+         dFjtHZHXVr0WpzGJ6CbzNrR0dfjIh0C+p9FknRvKMgDd7qLvWA+LbgovJsY+byp9v+n1
+         WsiLXr7/BBTBI3cJJtdSlHHPSrqYcvGD+G/6555RMSvP96YInI+v/4nVk+e5Rj33w2QK
+         3z3Vmnu707f87j7X1FOXXanYvLNDy/+y6CklwnH0/9hZxiqr0cgITJyFJ4JVMSh/FrSc
+         sZCrE7Dg5Se4yenT5Dvq/pPBgnU8qcWW/Ax0IOor5XwKTXpwWC5XN6Z8vXjo1hkXlUKU
+         CXtQ==
+MIME-Version: 1.0
+X-Received: by 10.194.20.230 with SMTP id q6mr2781222wje.43.1407222378248;
+ Tue, 05 Aug 2014 00:06:18 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Tue, 5 Aug 2014 00:06:18 -0700 (PDT)
+In-Reply-To: <45ef1d81-7a9a-4bdb-8de0-70c6cd2d411a@googlegroups.com>
+References: <1df5e895-c137-4916-967a-7b231f2dc696@googlegroups.com>
+	<CAAxEZd8_BUFg=eSMMT35mHX+6n96RGa6whBxXsA726PiokuODg@mail.gmail.com>
+	<45ef1d81-7a9a-4bdb-8de0-70c6cd2d411a@googlegroups.com>
+Date: Tue, 5 Aug 2014 09:06:18 +0200
+Message-ID: <CAAxEZd_p0ewaw0_wxgHYijfAdmx7vZknSwwCZg08YBd0b3csfQ@mail.gmail.com>
+Subject: Re: [opensport] build openfootball in mysql cause an error
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+> tid value is 70025440777000, length is 14, but in the db, the tid defined length is 11.
+
+  If that's the cause, than change the tid field in the schema to
+bigint or something. Cheers.
+

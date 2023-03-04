@@ -1,0 +1,82 @@
+From 408134090752@xxx Tue Jun 16 00:17:15 +0000 2015
+X-GM-THRID: 345456508928
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,ebf2f160f8e84b4b
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.14.32.137 with SMTP id o9mr6073807eea.4.1395152487798;
+        Tue, 18 Mar 2014 07:21:27 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.153.1.33 with SMTP id bd1ls292242lad.14.gmail; Tue, 18 Mar
+ 2014 07:21:27 -0700 (PDT)
+X-Received: by 10.112.14.33 with SMTP id m1mr13527000lbc.8.1395152487535;
+        Tue, 18 Mar 2014 07:21:27 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x241.google.com (mail-we0-x241.google.com [2a00:1450:400c:c03::241])
+        by gmr-mx.google.com with ESMTPS id v8si750442wiw.2.2014.03.18.07.21.27
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 18 Mar 2014 07:21:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::241 as permitted sender) client-ip=2a00:1450:400c:c03::241;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::241 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f193.google.com with SMTP id w61so1784492wes.4
+        for <opensport@googlegroups.com>; Tue, 18 Mar 2014 07:21:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=sDoE9bHpwV1UecWf1S1LiW+5vf0YklosIF7SfRcEh9Y=;
+        b=zxtLG0bGpF29K16tBIYUaRP6N0qF8+8SBR3n4oqEUk6bC1cVSbdCiXhBEzsfkcHleb
+         KXKQviJLp/C38z286oj9x1Ee1LiaJ/69PbPPQZ9vI5HOFjweXa32AAXdgOwTY3fOLMmp
+         MmsY4sy/f23cxWi4CfIn7C/+OIu8HgPnDoHeBkINnhmXw2BMe4CAED+T4eOC0Nc+hOUx
+         dxzg8SlP3G1d6lhU6nCzU4Y9JOhujvUuoecnjF7EbTxTY5Uwi76DfZs9+JAIZcvHkvXL
+         TxTYW9kwrmsmU6lUpeIIXeShUralFuPTgQRlhi29i8u/5YnMA4w4Rty9YRt86YcO5kqk
+         XOew==
+MIME-Version: 1.0
+X-Received: by 10.180.12.14 with SMTP id u14mr15281751wib.0.1395152487409;
+ Tue, 18 Mar 2014 07:21:27 -0700 (PDT)
+Received: by 10.216.208.136 with HTTP; Tue, 18 Mar 2014 07:21:27 -0700 (PDT)
+In-Reply-To: <89772df4-cac5-4ef9-af9e-75252dc3330b@googlegroups.com>
+References: <CAAxEZd9taSo3=Hi3X3_0MZ-4R3=+ewLwxx62rCpJ7SJbcFkFgw@mail.gmail.com>
+	<89772df4-cac5-4ef9-af9e-75252dc3330b@googlegroups.com>
+Date: Tue, 18 Mar 2014 15:21:27 +0100
+Message-ID: <CAAxEZd8u1Ae-Bvv-=beotfbEDaEpbyWySgGHDgd-_DwAsYuPfw@mail.gmail.com>
+Subject: Re: [opensport] Re: football.db - Pre-Built SQLite Database for
+ Download - Release v2014.02.15
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello Christos,
+
+   The pre-built SQLite Database for Download already has the data
+sets (files) imported into an SQL Database, that is, football.db.
+Use the sqlite3 command to query the db. Check if the sqlite3 tool is
+installed e.g.
+
+  $ sqlite3 -help
+
+  And to query use, for example:
+
+  $ sqlite3 football.db
+  sqlite> select * from teams;
+
+  and so and so forth.
+  Learn more about SQLite @ www.sqlite.org/sqlite.html or try visual
+tools like SQLite Studio (free) and friends.  Cheers.
+
+2014-03-17 21:45 GMT+01:00 Christos Kapa <audiomixroom@gmail.com>:
+> Can you please explain how i import these files into an sql database
+> please???
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+

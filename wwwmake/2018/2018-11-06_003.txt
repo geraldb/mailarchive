@@ -1,0 +1,219 @@
+From 6620719983034892288@xxx Tue Nov 06 12:14:55 +0000 2018
+X-GM-THRID: 6620719985233756160
+X-Received: by 2002:adf:eb0d:: with SMTP id s13-v6mr2599051wrn.23.1541506495164;
+        Tue, 06 Nov 2018 04:14:55 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:adf:fd07:: with SMTP id e7-v6ls1094488wrr.13.gmail; Tue, 06
+ Nov 2018 04:14:54 -0800 (PST)
+X-Google-Smtp-Source: AJdET5eft0Wn2PCnP4uMv+uPAeIx0708iXPGTRcHUX/sc0M3crgZdyHVV/VZveE2yZXOi/UVrQnA
+X-Received: by 2002:adf:d0ce:: with SMTP id z14-v6mr724851wrh.26.1541506494028;
+        Tue, 06 Nov 2018 04:14:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1541506494; cv=none;
+        d=google.com; s=arc-20160816;
+        b=jO1cDTAxxia5mSUDL6P3e+BdfzSaTio4PrfGlrmlVCftx246r6jm0UQCUHaRFA8xDy
+         RTKyxoOmDjyG6COMknjPOWI0zufiWIn8pQ38EKJVYAEuD4JnP1bnfxNCZUr6hIjUJ7Rz
+         qTmFF6Rl/8Z024chHLn5ddCoRgBI0/qDJ5rgru0JQtfdqo9bhqCc/ENg11VesnVQ1j+c
+         /IujVeuElipZBtKbP/P+BnGBbp6kqegeJqKo+MAyYpZlvAnPgLcBxTLP0JzzEWt3jqhP
+         dGrz6N3WbPfsaPekZXAxBpl1XEWa0Vx5zNrdMdgen3biHGuW6wl4Ri77re8P+pfHFLcy
+         zeGg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Rv53H9/wadWqqQLOPG/N+i28e4cB0LkOO3yornYtQuw=;
+        b=NmiUMbINHy5covxXnHVr8znnycsG77TpZnPPGdDGs+AElp/+GCez/7iXM5AXgSKlAV
+         cDWzv4SzgDgAS58GYiO8tCF6B08xyvkoP27s6fgnYwlgWzAdQTYTGDtz76AwMqJaEnC6
+         MDyl3NzDyHGq8BH1cieVi2a+Q65MiDLzOoTLf9sOkb9dbtmUT+nzufPHSaW6/h4C2q0Z
+         TVC3RRZdIrhvaXUARFRkjdE85EzO+YGitEP5S9v7oOgWznopt5kK60laJxhbrnFA/mo2
+         L/KZUYhNacXYFv9Vuea0lTZHAWzy/1KXJBvYj8jolP5XHOv+oybXpoFGNCdi5uV3MZEs
+         BcbA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=YQpxxfov;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x229.google.com (mail-lj1-x229.google.com. [2a00:1450:4864:20::229])
+        by gmr-mx.google.com with ESMTPS id i190-v6si64294wme.4.2018.11.06.04.14.53
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 06 Nov 2018 04:14:53 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::229 as permitted sender) client-ip=2a00:1450:4864:20::229;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=YQpxxfov;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x229.google.com with SMTP id v1-v6so4984781ljd.0
+        for <wwwmake@googlegroups.com>; Tue, 06 Nov 2018 04:14:53 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=Rv53H9/wadWqqQLOPG/N+i28e4cB0LkOO3yornYtQuw=;
+        b=YQpxxfovmjatx/3O59gR7195bvpaKfLPD0L+31ZNlSNt3Fs+AvUEPG8ZvglzBPK1ES
+         R879j8XnlXdi/p9m5DKJUh159CNyxALkDmrdjamkvn/o758hGiPrfztsBM19TN5CY3HQ
+         pe6lhtKbTiaTbs+/wqVlAalwwUYLCxeDQrzeZgbUiev9HXAXadv8l2WRG/RiMivjqHg7
+         kYdxvcgChN+5r/8qRYiJ+xOMSuFFBCIy6Lq1ObGwDGe93jPex0swzsIIt1pqIrqWF1wB
+         IvRgPCCAsrCsr9Pc8Y1h1lVbPqOi0fhjF2VZviMn+14Uawuk1H3p217cafXfHkWvAT3B
+         fEXQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=Rv53H9/wadWqqQLOPG/N+i28e4cB0LkOO3yornYtQuw=;
+        b=DMLJQKNocq+B9p9TbNxdCSlgk1woMrO3DajiC7DUTYU7QnsNpsPyn1uUQLlA+K+GR9
+         ZRYolEV76Uo/Mez4pDP7aSBdX2Htj6S/Lc/ccgm3Xc5/w3ST+lOCmSwmeF+S8TmbXjsH
+         tkCBY3htWQUmFQ32d4V9qtHXmxr291OUZ2yfHBa8F/b+KvkPcMQplxoAKgQrdpgmdGXQ
+         vcr6L4EVMmTKRdjDY8hJiHUlpTqQvm0VJpaF2NiuGaXIVJsM41Hru9uWcsU7WRkd1wIM
+         Cw3n2LepB1j5efweNSAysXWB2cXt4q1vShDj+sr8CzJmG+uXyYFYTu5x5Apity5MbJAv
+         B99g==
+X-Gm-Message-State: AGRZ1gJ3F+clvIrq+nz52FcKSVVqOotms4ThvnmzIvn/KWlzQiNsuY68
+	dLSEZPrFLJwQkjWIdcItA0Y0NqrgfdyhgFZ84Jriz8JP
+X-Received: by 2002:a2e:851a:: with SMTP id j26-v6mr6825531lji.163.1541506493241;
+ Tue, 06 Nov 2018 04:14:53 -0800 (PST)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 6 Nov 2018 13:14:42 +0100
+Message-ID: <CAAxEZd_bXZFHHVi=HwbAp7Biuns5G5XvY0NWsojd9HOzyJLahw@mail.gmail.com>
+Subject: csvhuman v0.1 - read tabular data in the CSV Humanitarian eXchange
+ Language (HXL) format
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  I've put together a first version of the csvhuman library / gem [1] that
+  adds support for the Humanitarian eXchange Language (HXL) to ruby
+  and lets you read tabular data in the
+  comma-separated values (CSV) with Humanitarian eXchange Language
+(HXL) [2] hashtags format.
+
+   Questions and comments welcome.
+
+[1] https://github.com/csvreader/csvhuman
+[2] https://github.com/csvspecs/csv-hxl
+
+  Cheers. Prost.
+
+
+PS:
+
+Usage
+
+Pass in an array of arrays (or a stream responding to `#each` with an
+array of strings).
+Example:
+
+
+```
+pp CsvHuman.parse( [["Organisation", "Cluster", "Province" ], ## or
+use HXL.parse
+                    [ "#org", "#sector", "#adm1" ],
+                    [ "Org A", "WASH", "Coastal Province" ],
+                    [ "Org B", "Health", "Mountain Province" ],
+                    [ "Org C", "Education", "Coastal Province" ],
+                    [ "Org A", "WASH", "Plains Province" ]]
+```
+
+resulting in:
+
+```
+[{"org" => "Org A", "sector" => "WASH",      "adm1" => "Coastal Province"},
+ {"org" => "Org B", "sector" => "Health",    "adm1" => "Mountain Province"},
+ {"org" => "Org C", "sector" => "Education", "adm1" => "Coastal Province"},
+ {"org" => "Org A", "sector" => "WASH",      "adm1" => "Plains Province"}]
+```
+
+Or pass in the text. Example:
+
+```
+pp CsvHuman.parse( <<TXT )      ## or use HXL.parse
+  What,,,Who,Where,For whom,
+  Record,Sector/Cluster,Subsector,Organisation,Country,Males,Females,Subregion
+  ,#sector+en,#subsector,#org,#country,#sex+#targeted,#sex+#targeted,#adm1
+  001,WASH,Subsector 1,Org 1,Country 1,100,100,Region 1
+  002,Health,Subsector 2,Org 2,Country 2,,,Region 2
+  003,Education,Subsector 3,Org 3,Country 2,250,300,Region 3
+  004,WASH,Subsector 4,Org 1,Country 3,80,95,Region 4
+TXT
+```
+
+resulting in:
+
+```
+[{"sector+en"    => "WASH",
+  "subsector"    => "Subsector 1",
+  "org"          => "Org 1",
+  "country"      => "Country 1",
+  "sex+targeted" => ["100", "100"],
+  "adm1"         => "Region 1"},
+ {"sector+en"    => "Health",
+  "subsector"    => "Subsector 2",
+  "org"          => "Org 2",
+  "country"      => "Country 2",
+  "sex+targeted" => ["", ""],
+  "adm1"         => "Region 2"},
+ {"sector+en"    => "Education",
+  "subsector"    => "Subsector 3",
+  "org"          => "Org 3",
+  "country"      => "Country 2",
+  "sex+targeted" => ["250", "300"],
+  "adm1"         => "Region 3"},
+ {"sector+en"    => "WASH",
+  "subsector"    => "Subsector 4",
+  "org"          => "Org 1",
+  "country"      => "Country 3",
+  "sex+targeted" => ["80", "95"],
+  "adm1"         => "Region 4"}]
+```
+
+
+More ways to use the reader:
+
+```
+csv = CsvHuman.new( recs )
+csv.each do |rec|
+  pp rec
+end
+
+pp csv.read
+
+
+CsvHuman.parse( recs ).each do |rec|
+  pp rec
+end
+
+
+pp CsvHuman.read( "./test.csv" )
+
+CsvHuman.foreach( "./test.csv" ) do |rec|
+  pp rec
+end
+
+#...
+
+```
+
+or use the `HXL` alias:
+
+```
+hxl = HXL.new( recs )
+hxl.each do |rec|
+  pp rec
+end
+
+pp hxl.read
+
+
+HXL.parse( recs ).each do |rec|
+  pp rec
+end
+
+
+pp HXL.read( "./test.csv" )
+
+HXL.foreach( "./test.csv" ) do |rec|
+  pp rec
+end
+
+#...
+```
+
+Note: More aliases for `CsvHuman`, `HXL`? Yes, you can use
+`CsvHum`, `CSV_HXL`, `CSVHXL` too.
+

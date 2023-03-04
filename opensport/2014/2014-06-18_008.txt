@@ -1,0 +1,103 @@
+From 1302503358464@xxx Tue Jun 16 00:16:59 +0000 2015
+X-GM-THRID: 1278199463936
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,ea3e6f7419da7567
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.141.11 with SMTP id f11mr534037yhj.54.1403084013730;
+        Wed, 18 Jun 2014 02:33:33 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.81.178 with SMTP id f47ls20455qgd.95.gmail; Wed, 18 Jun
+ 2014 02:33:33 -0700 (PDT)
+X-Received: by 10.140.38.199 with SMTP id t65mr11948qgt.17.1403084013565;
+        Wed, 18 Jun 2014 02:33:33 -0700 (PDT)
+X-Google-Doc-Id: 670733bcf372283c
+X-Google-Web-Client: true
+Date: Wed, 18 Jun 2014 02:33:32 -0700 (PDT)
+From: Ricardo Barquero Carranza <ricardobarcar@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <48cde8a9-adef-4509-9ee6-53e200261546@googlegroups.com>
+In-Reply-To: <a6bb0051-dde7-4997-beb0-29f386b79282@googlegroups.com>
+References: <53e668a4-3f9f-4eaf-af10-6b5de1180349@googlegroups.com>
+ <a6bb0051-dde7-4997-beb0-29f386b79282@googlegroups.com>
+Subject: Re: Help in accessing the database
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_19_29574281.1403084013199"
+X-Google-Token: EOy5hZ0F0nSsNaYYJ140
+X-Google-IP: 181.194.118.16
+
+------=_Part_19_29574281.1403084013199
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_20_13151862.1403084013199"
+
+------=_Part_20_13151862.1403084013199
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Thanks, im actually using Linux and trying first to connect with SQLite and=
+=20
+later with PHP.
+
+Another question. After building footbal.db is it going to keep update=20
+since it stays sync with git or do i have to run sportdb to updated.
+
+Thanks
+
+El martes, 17 de junio de 2014 23:54:13 UTC-6, Gerald Bauer escribi=C3=B3:
+>
+> Hello,
+>
+>     If you download / get a copy of football.db - you can access it via=
+=20
+> SQL queries using your SQLite tool of choice (try the free SQLiteStudio=
+=20
+> [1], for example) or use your script/programming language (PHP, Python,=
+=20
+> JavaScript, Java etc.) of choice.
+>
+>    Using sportdb you can:
+>
+>    1) build an up-to-date version of football.db / worldcup.db etc   or
+>    2) use Ruby to (re)use all model and access the data via scripts (usin=
+g=20
+> Ruby).
+>
+>   Cheers.
+>
+> [1] sqlitestudio.pl
+>
+> PS: If you're on Windows and try to access the data via Excel try to=20
+> connect via an ODBC data source.
+>
+
+------=_Part_20_13151862.1403084013199
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thanks, im actually using Linux and trying first to connec=
+t with SQLite and later with PHP.<div><br></div><div>Another question. Afte=
+r building footbal.db is it going to keep update since it stays sync with g=
+it or do i have to run sportdb to updated.</div><div><br></div><div>Thanks<=
+br><br>El martes, 17 de junio de 2014 23:54:13 UTC-6, Gerald Bauer  escribi=
+=C3=B3:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.=
+8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">Hello,=
+<br><br>&nbsp;&nbsp;&nbsp; If you download / get a copy of football.db - yo=
+u can access it via SQL queries using your SQLite tool of choice (try the f=
+ree SQLiteStudio [1], for example) or use your script/programming language =
+(PHP, Python, JavaScript, Java etc.) of choice.<br><br>&nbsp;&nbsp; Using s=
+portdb you can:<br><br>&nbsp;&nbsp; 1) build an up-to-date version of footb=
+all.db / worldcup.db etc&nbsp;&nbsp; or<br>&nbsp;&nbsp; 2) use Ruby to (re)=
+use all model and access the data via scripts (using Ruby).<br><br>&nbsp; C=
+heers.<br><br>[1] <cite></cite><a href=3D"http://sqlitestudio.pl" target=3D=
+"_blank" onmousedown=3D"this.href=3D'http://www.google.com/url?q\75http%3A%=
+2F%2Fsqlitestudio.pl\46sa\75D\46sntz\0751\46usg\75AFQjCNFvmrhJNW4MFfgo1XTsb=
+YcoGCQFJg';return true;" onclick=3D"this.href=3D'http://www.google.com/url?=
+q\75http%3A%2F%2Fsqlitestudio.pl\46sa\75D\46sntz\0751\46usg\75AFQjCNFvmrhJN=
+W4MFfgo1XTsbYcoGCQFJg';return true;">sqlitestudio.pl</a><br><br>PS: If you'=
+re on Windows and try to access the data via Excel try to connect via an OD=
+BC data source.<br></div></blockquote></div></div>
+------=_Part_20_13151862.1403084013199--
+
+------=_Part_19_29574281.1403084013199--
+

@@ -1,0 +1,68 @@
+From 84690337792@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 82657148928
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,9c647c4e74c87091,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.214.11.19 with SMTP id 19mr9104040qak.21.1219085074857;
+        Mon, 18 Aug 2008 11:44:34 -0700 (PDT)
+Return-Path: <alex.boisvert@gmail.com>
+Received: from fg-out-1718.google.com (fg-out-1718.google.com [72.14.220.156])
+        by mx.google.com with ESMTP id 7si15878293yxg.0.2008.08.18.11.44.33;
+        Mon, 18 Aug 2008 11:44:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of alex.boisvert@gmail.com designates 72.14.220.156 as permitted sender) client-ip=72.14.220.156;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of alex.boisvert@gmail.com designates 72.14.220.156 as permitted sender) smtp.mail=alex.boisvert@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by fg-out-1718.google.com with SMTP id l26so1560828fgb.30
+        for <webslideshow@googlegroups.com>; Mon, 18 Aug 2008 11:44:33 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:mime-version:content-type;
+        bh=//o43/iNKr6jzs4v1r7AEFcaa22l/P6zZlIRWvZxjRk=;
+        b=i5d99+a1nyJRZDgVhVAWiq6bh8mfaz+7NoRsvcuWJNXGoQhMTEjUa4gnIKEzPm/3fZ
+         +uH+sxj2j2Cw4CiJzfSmKjF207f7ZD/Bt5Jx4jYqsvsTm9F5m6aksKeJ1odQD0RO0wBq
+         msec2ftDB50ym3TlL7ypIBsllj/Jc93/NiC7M=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type;
+        b=mQHZ4qQh80FWFokNXTuoxmNC4PKmgKSfaC6RrtWCaORbnCLip9sOFeq4fcehaCZMMv
+         qoo03365AMK8/gFBKVOld2vfTEK/GHB3GQSpv3sgqH7cFFlhGV5AzrPFbdywySy2/T7w
+         GLL+EQsBmcHimVo2wEfj0F464W1qHSDVcKzQ0=
+Received: by 10.86.80.5 with SMTP id d5mr4872698fgb.11.1219085073002;
+        Mon, 18 Aug 2008 11:44:33 -0700 (PDT)
+Received: by 10.86.93.10 with HTTP; Mon, 18 Aug 2008 11:44:32 -0700 (PDT)
+Message-ID: <4dcd15a90808181144u67791a4bj7681c0509af0b028@mail.gmail.com>
+Date: Mon, 18 Aug 2008 11:44:32 -0700
+From: "Alex Boisvert" <alex.boisvert@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow] Encoding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_Part_62936_32599000.1219085072989"
+X-Google-Approved: geraldbauer2007@gmail.com via email at 2008-08-18 20:43:07
+
+------=_Part_62936_32599000.1219085072989
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hi everybody,
+
+Is there a way to set the character encoding in the resulting HTML file
+using slideshow?  I'd like to explicitly set it to UTF-8 to avoid browser
+guessing (and getting it wrong).
+
+Right now I'm editing the HTML after generation but I would rather set this
+as a property in the .textile file.
+
+thanks,
+alex
+
+------=_Part_62936_32599000.1219085072989
+Content-Type: text/html; charset=ISO-8859-1
+
+<div dir="ltr">Hi everybody,<br><br>Is there a way to set the character encoding in the resulting HTML file using slideshow?&nbsp; I&#39;d like to explicitly set it to UTF-8 to avoid browser guessing (and getting it wrong).<br>
+<br>Right now I&#39;m editing the HTML after generation but I would rather set this as a property in the .textile file.<br><br>thanks,<br>alex<br><br></div>
+
+------=_Part_62936_32599000.1219085072989--
+
+

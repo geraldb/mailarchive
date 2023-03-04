@@ -1,0 +1,66 @@
+From 518917193728@xxx Tue Jun 16 00:17:14 +0000 2015
+X-GM-THRID: 501653438464
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,d786e4121fda5685
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.50.70.66 with SMTP id k2mr9935329igu.7.1397543233346;
+        Mon, 14 Apr 2014 23:27:13 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.47.197 with SMTP id m63ls2797qga.58.gmail; Mon, 14 Apr
+ 2014 23:27:13 -0700 (PDT)
+X-Received: by 10.140.90.111 with SMTP id w102mr1003qgd.41.1397543233221;
+        Mon, 14 Apr 2014 23:27:13 -0700 (PDT)
+X-Google-Doc-Id: 72ec293d5778a083
+X-Google-Web-Client: true
+Date: Mon, 14 Apr 2014 23:27:12 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <fe56ed05-08f5-43ea-a09a-91a925aa259b@googlegroups.com>
+In-Reply-To: <32f5fa1d-f48b-4056-baa9-5ff6a0e13cf9@googlegroups.com>
+References: <32f5fa1d-f48b-4056-baa9-5ff6a0e13cf9@googlegroups.com>
+Subject: Re: Rails 4 support and setup errors
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2651_18840308.1397543232387"
+X-Google-Token: EMCis5oFtzOx4UrD8lg0
+X-Google-IP: 193.80.74.62
+
+------=_Part_2651_18840308.1397543232387
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2652_29439765.1397543232387"
+
+------=_Part_2652_29439765.1397543232387
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Thor,
+
+> When trying to use it with Rails 4 I've encountered number of issues 
+regarding multiline anchors in regular expressions in sportdb and some
+> of the dependencies (worlddb and tagutils). Is there a plan to upgrade 
+these libraries to support rails 4 in the near future? 
+
+  I've updated all gems to use /A/z anchors (instead of ^$) for model 
+validations, that is, the new versions are:
+ 
+ - worlddb v2.0.4
+ - sportdb v1.8.13
+ - tagutils v0.2.2
+
+   If you still get an exception for model format regexes after the update, 
+it's now considered a bug and please report it. Thanks. Cheers.
+
+------=_Part_2652_29439765.1397543232387
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello Thor,<br><br>&gt; When trying to use it with Rails 4 I've encountered 
+number of issues regarding multiline anchors in regular expressions in 
+sportdb and some<br>&gt; of the dependencies (worlddb and tagutils). Is there a 
+plan to upgrade these libraries to support rails 4 in the near future? <br><br>&nbsp; I've updated all gems to use /A/z anchors (instead of ^$) for model validations, that is, the new versions are:<br>&nbsp;<br>&nbsp;- worlddb v2.0.4<br>&nbsp;- sportdb v1.8.13<br>&nbsp;- tagutils v0.2.2<br><br>&nbsp;&nbsp; If you still get an exception for model format regexes after the update, it's now considered a bug and please report it. Thanks. Cheers.<br></div>
+------=_Part_2652_29439765.1397543232387--
+
+------=_Part_2651_18840308.1397543232387--
+

@@ -1,0 +1,103 @@
+From 6846844667533721600@xxx Tue Jul 07 20:54:10 +0000 2020
+X-GM-THRID: 6846844665709199360
+X-Received: by 2002:aa7:c24d:: with SMTP id y13mr66168241edo.123.1594155250059;
+        Tue, 07 Jul 2020 13:54:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a17:906:6d58:: with SMTP id a24ls5298343ejt.1.gmail; Tue, 07
+ Jul 2020 13:54:09 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzOEkc1HTHePiFRn2LGkzXjmh05znQ40/rrGVcGu+hMcEmXjeXFHA2JW7BOUq6YhYya55Gf
+X-Received: by 2002:a17:906:3984:: with SMTP id h4mr43709548eje.254.1594155249126;
+        Tue, 07 Jul 2020 13:54:09 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1594155249; cv=none;
+        d=google.com; s=arc-20160816;
+        b=E6DtX9UQtwmCqsXeZZ780wNMDxnkpOeCcDTC6TI+t08xtK6YTcmZ7cFByXrNdoXMS2
+         k0dqg8fW/Y91wyoo2wqRcP2D17Rppz5+O3YQ7bx8JSoBh/pH2mkxGRv4Q/tjXfttUSo6
+         d0tfxbItMF1vYwRlyDOwk+BfvHFzBGdhgR/9RHcBWSyWOAzNtP8WzOKy20F5+4u6r+rv
+         2V4+RN/k++YLLgtnGBSbFhVZ9ejNZPhdXD/WGNskDUVFLUOSm86oK0a2c163rnFKglRk
+         HJ61Q0YUm447MzA+aeT82k//2dbyts1pdYRTWKICtjB+49SxOqXWZsrrn6o6dP3oVfAq
+         HMHA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=SvYyYwJzed1LEUGGLGo24aBmPUrkulVHrjKRuE6I3Gw=;
+        b=CsfdKWB/aQeHKh5OnzsqYlvB8L1IFh9E6qV+Aq8qLfJcO+wn6X/VtruOfllP0csM31
+         R5cIp3c9+sAgrUfPwMsQSd2vi2l5eYodu0csfF+Q6LW0LfmIAE39F5PzZXN6sB9SGL6o
+         JuSiWEmVcNQ5fwlIkHSm9evwq3oFo03HUhp0m1gGqdoa+RpYMdsnD8TmCjUEfAUCFojU
+         ZVSAZU1RKtCMN8sLaxwRC5ymcy/47PRmwxjOp8+AwlDV6iZbG6SorP/78EZ9JDSrKtlj
+         3AET8amSHXcOp1VImwwfnp+Ht0kH/C3P+YFQCkxMPlE3KTzmrD76dMYYjp8xR3+qnGjg
+         kMOg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Fve1AObK;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22f.google.com (mail-lj1-x22f.google.com. [2a00:1450:4864:20::22f])
+        by gmr-mx.google.com with ESMTPS id a23si1573647edn.0.2020.07.07.13.54.09
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 07 Jul 2020 13:54:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22f as permitted sender) client-ip=2a00:1450:4864:20::22f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Fve1AObK;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22f.google.com with SMTP id h19so51658823ljg.13
+        for <opensport@googlegroups.com>; Tue, 07 Jul 2020 13:54:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=SvYyYwJzed1LEUGGLGo24aBmPUrkulVHrjKRuE6I3Gw=;
+        b=Fve1AObKzhoOeRaTL6Ru+KOWMmRJFUZ9Dr5ucHWfMia6xWYIcI7HdoWpa7PmCgFD8O
+         BR6OtokdipSDUamT8/L8PJfSN/xHh7uQbjsFFqSgFK2bHfXfqdIdfgPMuGpCQflyU/WZ
+         Fyd2S2THhMCesPKz8Td1FbI5agjexsThVSvM7s3wfscP85/94x1OjiHcrVyBpA3aC5ve
+         2l2zsxSV7DA65awlZMPzRKTG3wzpiTMqnIxWTcwKahzZx1ee0iZQH2ngXfAXZy1gTb69
+         wddQg3SzbBQyGi1ptQayaSKwiMnaga3S5ohUfBOdxIH4hMVaNIn1CcWs891XEC8/9nNl
+         x2cw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=SvYyYwJzed1LEUGGLGo24aBmPUrkulVHrjKRuE6I3Gw=;
+        b=L4XTWsCrEBq+OKRD3ZRMhEmLBFQ3Rt6H2BP5/nTnQHNQBGDTBmH0m9oRk3HtT9sC38
+         /EzKnmCkUCQq98143pFEv8dlJd3LkCkuudguXSXVsuTcr6CIyjwBa3DDIn0gzu2nOPIH
+         wpK4TAWToaF1SvtFX1A3/fByqrTvakAW26Lu5zuzDCxZigPrZtqbKDQE5lme+hgBO5g8
+         1yABPdmAIaWCXVmz7gdRoDm3vK/NgJHF6EzXHqLG/TZtcuD9mtnq8iI6OO/QGyNKlduZ
+         Wn4g1mlBF2Jlsbf5qMVwnBjiwCCdd5xUEnbMWY7pHyAoUZKrtNF4E62CtXbFH5uDCaRi
+         wkAQ==
+X-Gm-Message-State: AOAM531ZQ4I650gFHhj58aHQuxfYk7AlwhZdwLoeVXW7k4psYBgGYvBi
+	Cm3kQQOwUcuHyJZyE93GfV2EF2ui+XNbEDNcc56mRcJuHBw=
+X-Received: by 2002:a05:651c:502:: with SMTP id o2mr30352136ljp.434.1594155248348;
+ Tue, 07 Jul 2020 13:54:08 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 7 Jul 2020 22:53:56 +0200
+Message-ID: <CAAxEZd-+ogFK2_OUcLMU3zrmxHa3mLLkyeXbu4_eaKkbqBrb_A@mail.gmail.com>
+Subject: =?UTF-8?Q?football=2Ejson_Update_=2D_Now_Incl=2E_Swiss_Super_League_?=
+	=?UTF-8?Q?=26_Challenge_League=2C_Turkish_S=C3=BCper_Lig_=26_1=2E_Lig?=
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I've updated the football.json datasets for the 2019/20 season. What's ne=
+ws?
+
+  Let's welcome the Swiss Super League & Challenge League
+   and the Turkish S=C3=BCper Lig & 1. Lig.
+
+   Look for the 2019-20/ch.1.json,ch.1.clubs.json and ch.2.json, ch.2.clubs=
+.json
+   files covering the Swiss Super League & Challenge League
+   and  for 2019-20/tr.1.json,tr.1.clubs.json and tr.2.json,
+tr.2.clubs.json files
+  for the Turkish S=C3=BCper Lig & 1. Lig.
+
+   The Swiss and Turkish datasets are sourced from the /world [1] repo.
+   Look for the /switzerland and /turkey folders in /europe.
+
+   Happy data wrangling. Enjoy the beautiful game.  Cheers. Prost.
+
+[1] https://github.com/openfootball/world
+

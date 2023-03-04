@@ -1,0 +1,176 @@
+From 6269959680435421184@xxx Tue Apr 05 06:45:48 +0000 2016
+X-GM-THRID: 6269840131576823808
+X-Received: by 10.140.222.210 with SMTP id s201mr9366806qhb.2.1459838748684;
+        Mon, 04 Apr 2016 23:45:48 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.50.85.50 with SMTP id e18ls1184140igz.25.canary; Mon, 04 Apr
+ 2016 23:45:48 -0700 (PDT)
+X-Received: by 10.66.63.68 with SMTP id e4mr15085783pas.40.1459838748125;
+        Mon, 04 Apr 2016 23:45:48 -0700 (PDT)
+Received: by 10.140.163.6 with SMTP id j6msqhj;
+        Mon, 4 Apr 2016 18:52:42 -0700 (PDT)
+X-Received: by 10.182.44.132 with SMTP id e4mr7563695obm.33.1459821161846;
+        Mon, 04 Apr 2016 18:52:41 -0700 (PDT)
+Return-Path: <kazuyoshi.ha@gmail.com>
+Received: from mail-yw0-x236.google.com (mail-yw0-x236.google.com. [2607:f8b0:4002:c05::236])
+        by gmr-mx.google.com with ESMTPS id v6si1335364ywa.3.2016.04.04.18.52.41
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 04 Apr 2016 18:52:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kazuyoshi.ha@gmail.com designates 2607:f8b0:4002:c05::236 as permitted sender) client-ip=2607:f8b0:4002:c05::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of kazuyoshi.ha@gmail.com designates 2607:f8b0:4002:c05::236 as permitted sender) smtp.mailfrom=kazuyoshi.ha@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-yw0-x236.google.com with SMTP id g3so276063312ywa.3
+        for <wwwmake@googlegroups.com>; Mon, 04 Apr 2016 18:52:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=WUysWNBAscqocLNbVfPZjzWb22CrK0RiGTCYwaEv8/c=;
+        b=JPNcxRzYZLRM6UnU5QhOAmqvjBbOHSD9CfkJ6BeSf670RA3luAKBFSKp6BxIHf9RBW
+         5jjp/6Nv8LdeqifBIc91Zuk0HqDG4xsymARPfBGxTQ71qTVZmPq3lttlSnLqngwygxqI
+         xzGwSb9AzeAmDLOWPgpKrwffocd8OBcWI/Cu6w2YUfsUbfee7NUm6IkkaxwezHATjHo7
+         fmThp6XfwmYotAuFZp2SxEqSzanjtl+VOhus5SzHuz05m9ZLiLXDg7Oxvoi/PQ9/N22m
+         rZRscBRGM6j4P4wyCGJrUfL2wch7yaOBW0BtwQTZo4LiwQToyUidPT1cIHBk4rEfgBWL
+         AjGA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=WUysWNBAscqocLNbVfPZjzWb22CrK0RiGTCYwaEv8/c=;
+        b=YSPqi/lo1MwVcJJrR70FCrsIVId5sbZHwA7e5EH+R9j0uHoMoSeFVvU1hr3A9PpJaN
+         m6vQm/aQh4muBxoOJ1ccVo/xwhRVS702WYLK1RBQWh8BtgkyXALtWZ6nDPZWvEAc0+yH
+         4MGnTPt3WVqZTrDba2fuhDbj5nQyYwlN6+w+ixfYD1aueQYuzEacabEj9B8Ud6dcLXRu
+         cRMEOJ7W2w5xEJEkG48XdwiP5znhwVltYHwn1Aprtmf/GkUdivpb0g2i2B0Chgu+nsbl
+         ivBC4J2+ceJB3o/6tL/6pG6M+adFgDMZkqMCK2LlCcnT6IDJ2IrotxqPKb1yszO5+jez
+         7lTw==
+X-Gm-Message-State: AD7BkJLSlVc5eAUcyZ9IFsCPjQisMjYlb5txvFNVZQTHuydDCD6iHH5hm3QWT6Sm4tYQk05lb76nmYjzEZaB+w==
+MIME-Version: 1.0
+X-Received: by 10.13.209.193 with SMTP id t184mr11507842ywd.99.1459821161579;
+ Mon, 04 Apr 2016 18:52:41 -0700 (PDT)
+Received: by 10.83.39.131 with HTTP; Mon, 4 Apr 2016 18:52:41 -0700 (PDT)
+In-Reply-To: <CAAxEZd_w=f0wN8dmX7G--bDODaOnOTn3x1kNo1JmwU-3a1DeSw@mail.gmail.com>
+References: <CAAxEZd_w=f0wN8dmX7G--bDODaOnOTn3x1kNo1JmwU-3a1DeSw@mail.gmail.com>
+Date: Tue, 5 Apr 2016 10:52:41 +0900
+Message-ID: <CAF68Xurrxb5FPmo+EfWYKE-oEUg8cyjWUpMKTYTcBabqchc2EA@mail.gmail.com>
+Subject: Re: [wwwmake:388] Awesome Slide Shows / Presentations Templates in
+ HTML, CSS & JS
+From: Kazuyoshi Mii <kazuyoshi.ha@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: multipart/alternative; boundary=001a114e3f64c5a69c052fb319a1
+
+--001a114e3f64c5a69c052fb319a1
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+Nice list! Thank you.
+
+`remark`_ will be another tool to be added.
+
+_: https://github.com/gnab/remark
+
+Cheers.
+
+
+
+
+On Tue, Apr 5, 2016 at 8:01 AM, Gerald Bauer <gerald.bauer@gmail.com> wrote:
+
+> Hello,
+>
+>    I've started to collect awesome slide show / presentation / talk
+> templates [1]
+> in html, css and javascript. So far the line-up includes:
+>
+> - reveal.js
+> - bespoke.js
+> - impress.js
+> - deck.js
+> - shower
+> - spectacle (react.js)
+> - s6 / slidekit
+> - s5
+> - slidy
+>
+> Anything missing? Let us know here or add the package to the list. Cheers.
+>
+> [1] github.com/slideshow-s9/awesome-slideshows
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "wwwmake" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to wwwmake+unsubscribe@googlegroups.com.
+> To post to this group, send email to wwwmake@googlegroups.com.
+> Visit this group at https://groups.google.com/group/wwwmake.
+> For more options, visit https://groups.google.com/d/optout.
+>
+
+
+
+-- 
+Kazuyoshi Mii
+Linux-HA Japan  http://linux-ha.sourceforge.jp
+<http://linux-ha.sourceforge.jp/wp/>/
+
+--001a114e3f64c5a69c052fb319a1
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<div><br></div><div>Nice list! Thank you.</div><div>=
+<br></div><div>`remark`_ will be another tool to be added.</div><div><br></=
+div><div>_: <a href=3D"https://github.com/gnab/remark" target=3D"_blank">ht=
+tps://github.com/gnab/remark</a><br></div><div><br></div><div>Cheers.</div>=
+<div><br></div><div><br></div><div><br></div></div><div class=3D"gmail_extr=
+a"><br><div class=3D"gmail_quote">On Tue, Apr 5, 2016 at 8:01 AM, Gerald Ba=
+uer <span dir=3D"ltr">&lt;<a href=3D"mailto:gerald.bauer@gmail.com" target=
+=3D"_blank">gerald.bauer@gmail.com</a>&gt;</span> wrote:<br><blockquote cla=
+ss=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;pa=
+dding-left:1ex">Hello,<br>
+<br>
+=C2=A0 =C2=A0I&#39;ve started to collect awesome slide show / presentation =
+/ talk<br>
+templates [1]<br>
+in html, css and javascript. So far the line-up includes:<br>
+<br>
+- reveal.js<br>
+- bespoke.js<br>
+- impress.js<br>
+- deck.js<br>
+- shower<br>
+- spectacle (react.js)<br>
+- s6 / slidekit<br>
+- s5<br>
+- slidy<br>
+<br>
+Anything missing? Let us know here or add the package to the list. Cheers.<=
+br>
+<br>
+[1] <a href=3D"http://github.com/slideshow-s9/awesome-slideshows" rel=3D"no=
+referrer" target=3D"_blank">github.com/slideshow-s9/awesome-slideshows</a><=
+br>
+<span class=3D"HOEnZb"><font color=3D"#888888"><br>
+--<br>
+You received this message because you are subscribed to the Google Groups &=
+quot;wwwmake&quot; group.<br>
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:wwwmake%2Bunsubscribe@googlegroups.com">wwwmake+u=
+nsubscribe@googlegroups.com</a>.<br>
+To post to this group, send email to <a href=3D"mailto:wwwmake@googlegroups=
+.com">wwwmake@googlegroups.com</a>.<br>
+Visit this group at <a href=3D"https://groups.google.com/group/wwwmake" rel=
+=3D"noreferrer" target=3D"_blank">https://groups.google.com/group/wwwmake</=
+a>.<br>
+For more options, visit <a href=3D"https://groups.google.com/d/optout" rel=
+=3D"noreferrer" target=3D"_blank">https://groups.google.com/d/optout</a>.<b=
+r>
+</font></span></blockquote></div><br><br clear=3D"all"><div><br></div>-- <b=
+r><div class=3D"gmail_signature">Kazuyoshi Mii<div>Linux-HA Japan =C2=A0<a =
+href=3D"http://linux-ha.sourceforge.jp/wp/" target=3D"_blank">http://linux-=
+ha.sourceforge.jp</a>/</div></div>
+</div>
+
+--001a114e3f64c5a69c052fb319a1--
+

@@ -1,0 +1,128 @@
+From 6490566444841959424@xxx Mon Nov 20 18:32:43 +0000 2017
+X-GM-THRID: 6490508634025361408
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 10.157.66.242 with SMTP id c47mr6438310otj.32.1511202763127;
+        Mon, 20 Nov 2017 10:32:43 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.202.73.132 with SMTP id w126ls2201237oia.8.gmail; Mon, 20 Nov
+ 2017 10:32:42 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMaC3ZZekmsyDib0kHTseiQkWBy7eUS7+XA56Rxhx11gLlq4A57tt+UZZdvOYgk+Y2CHRhR2
+X-Received: by 10.202.61.138 with SMTP id k132mr5272088oia.26.1511202762553;
+        Mon, 20 Nov 2017 10:32:42 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1511202762; cv=none;
+        d=google.com; s=arc-20160816;
+        b=vNMKRB0sIrGwO1DTWgrXpig5ZxTvNJeMRivfm9ZQ6TaJZXg7Y/VUzuWeyCpvHWThbG
+         U5HJwo/A9fpI0Oa9rQjtd66ZC5hW8yBBb2Hz7s0/T6MuEFpt5x0f25RR5pPVLgFqv9iG
+         bHWqUviKQGgrgBzpuAyVJdK8yHavLHovKzibXTfM4AIt7OPVp0IU54pYSw+/8RoZ8MgK
+         1SUgbKGWj4vuufOcB4Dd819GL1/a7zg+fEWNvKrCanakAF32SVd7sdi+GBv0sl/ouDli
+         KII/mdOqGfAJiwUBj7ghc1aqTjF+4N5cbot73TOFTDWQU4OprYfe4R6cd9GSqPwrndu4
+         1QMA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:references:in-reply-to
+         :mime-version:dkim-signature:arc-authentication-results;
+        bh=M4qG6lkmAP7/bMXSvouLaljsQxa1k9J91LLCdx/bq9I=;
+        b=vTaMgTjbu74lC7ZJKRJ25joA70cmEZMZ79/UR/zqs35zCy+7YfgTcHIsyppfgp5a4G
+         C2Ce1G05rveeUxrUkmz9jP5kixKtum5ysNeBC1RRzabqPeTp3DtpyF1ZtwGxQ2OpjHXX
+         Zac6tF/5BCOxbBkS8Xieq87ZIFi5w2BPGQjsQWmjk1SipLfA6pXR8EUd/4rGdk9ol7pr
+         cGQ9F5qZL6qpSpmLqgS5QPjShq55j5yu3FELDIQsR7I+P5uhd5LispYkXLa/cWdtCUkk
+         /IigUf+tU8POaNXmG/XW2OvY+/Uf6GEFr0rmWJsKH4xyAV9W82pB/ymcBjDG5fPUmrCe
+         mXpw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Y3wiCupY;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22d.google.com (mail-it0-x22d.google.com. [2607:f8b0:4001:c0b::22d])
+        by gmr-mx.google.com with ESMTPS id q55si892828otc.3.2017.11.20.10.32.42
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Nov 2017 10:32:42 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22d as permitted sender) client-ip=2607:f8b0:4001:c0b::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Y3wiCupY;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22d.google.com with SMTP id o130so5102575itg.0
+        for <wwwmake@googlegroups.com>; Mon, 20 Nov 2017 10:32:42 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to
+         :cc;
+        bh=M4qG6lkmAP7/bMXSvouLaljsQxa1k9J91LLCdx/bq9I=;
+        b=Y3wiCupYjvt0h3X6pOIUqMd9tk04N2I/UidyIPKvHuI3eqEvK7K1NMNLT2zOBXub+y
+         z5SgeXuQcCz0RBc47Lw/sCs9v7C+JpTwpP/Bq6KhyEz8SoeorJxTTe3jdamPYup3Kf2a
+         6sPMJiCHkxyxZMCJaV//PltsjZIO8ZAeG9xJrkX6i1GIsMx71yjb2mpZAbUv6sP9b50u
+         P2qyc9hG/Ga4xsstcxwjtE0/elKl1rHWFdc3xmMhG0oHDjXx4m22drvxouui8q1wL+9T
+         6vaSiwaTe9ZZNF0SCMLxoIvT78lZ8TPOk24CaZntTkJjucGjt9N2Tc4OZ3iZSAcZ3kn+
+         QDTw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to:cc;
+        bh=M4qG6lkmAP7/bMXSvouLaljsQxa1k9J91LLCdx/bq9I=;
+        b=V71bk6FaHH5iSxT3GI+CyyI7rMP+o/y4/swszq0T1gtPdP6QDgmPKmZck1N8SlOf4D
+         lqI1ByLvZuOOsvIW8jih7OV9eE5JxwOG7V0dPgexG+LI9YgNYFmVeCT4PA9Q5Cfh7uvu
+         oXTJum25u/4jCTHNyeF3WlI8ArTg0wWbExTKMhMHvivAIvA7jP5yTBRnMGDicI2ItUkV
+         S7Kk9O8w/qXSt3XPnz3OxRWQ5+r2Lu0jH2lzPaFPP1HHfbhz81rKQpvLc5TLC1JoO0hg
+         zXJrqO09z9jKl7EuOgGWeQiPw7KKE4ueGsHp+1GsQod08FS32VSFGSTnjTYoP8YW+2Gz
+         gUTg==
+X-Gm-Message-State: AJaThX5+G+RCHXYUMyUWMyHtdy8ByBPMoTLnwtSG6I7zI0tpTjj5lZE0
+	9DtNuFPm/l+ePpFxedrkN8psmqlHZgsN5ZFTe231Gw==
+X-Received: by 10.36.176.9 with SMTP id d9mr14760314itf.125.1511202762095;
+ Mon, 20 Nov 2017 10:32:42 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.156.130 with HTTP; Mon, 20 Nov 2017 10:32:41 -0800 (PST)
+In-Reply-To: <228d29ef-7458-47dc-8cf3-460d6412aca4@googlegroups.com>
+References: <228d29ef-7458-47dc-8cf3-460d6412aca4@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 20 Nov 2017 19:32:41 +0100
+Message-ID: <CAAxEZd9HRa4hhNLAUMCBQsbn5GZJsv62v7rA-9KNLdY+D4OEgA@mail.gmail.com>
+Subject: Re: [wwwmake:437] pluto development how-to
+To: wwwmake@googlegroups.com
+Cc: Harry Wood <harry.wood@gmail.com>
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+    You're more than welcome.
+
+    About hoe it's a dev / build only use
+
+$ gem install hoe
+
+   And than you can list all task in the project eg.
+
+$ rake --tasks    # or $ rake -T
+
+    Little article about hoe (rake tasks) here ->
+http://planetruby.github.io/gems/hoe
+
+
+> And there are no .gemspec files. How would I build / rebuild the pluto gems?
+
+    If you want to build a local test version try / use:
+
+    $ rake gem
+
+   If you want to install too
+
+    $ rake install_gem
+
+
+> And do I need to do that as a step in seeing the results of code changes on a pluto site?
+> or what's a sensible development workflow to do that?
+
+
+   Good question. Depends on what you try to do.
+
+    If you change the templates you do NOT need to change the ruby
+code and push / publish a new gem update.
+
+   If you're interested in adding more functionality than you will
+need to push / publish a new gem update.
+
+  You can, however, of course, first test your changes locally or
+using your own"custom" gem version from github
+   (instead of the "official" rubygems version).
+
+   You're more than welcome. and I'm happy to assit. Cheers.
+

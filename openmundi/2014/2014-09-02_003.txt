@@ -1,0 +1,73 @@
+From 252001124352@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 247966203904
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,83c5805a6cb8f0df
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.170.166 with SMTP id an6mr40295lbc.17.1409654571994;
+        Tue, 02 Sep 2014 03:42:51 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.180.87.1 with SMTP id t1ls488830wiz.13.canary; Tue, 02 Sep
+ 2014 03:42:51 -0700 (PDT)
+X-Received: by 10.194.57.237 with SMTP id l13mr6405wjq.7.1409654571683;
+        Tue, 02 Sep 2014 03:42:51 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x232.google.com (mail-wi0-x232.google.com [2a00:1450:400c:c05::232])
+        by gmr-mx.google.com with ESMTPS id p7si591257wiz.1.2014.09.02.03.42.51
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 02 Sep 2014 03:42:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::232 as permitted sender) client-ip=2a00:1450:400c:c05::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x232.google.com with SMTP id r20so7585298wiv.5
+        for <openmundi@googlegroups.com>; Tue, 02 Sep 2014 03:42:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=LWAqvEaR4CaNm32x04XxirXK0Tnrwyac9RBai1vLbew=;
+        b=OmEE2xWk3UTaTHc5BPdCdfJPDnQGXWRM1FZDu4gPjIQ0x6xhIJWxEkmhN/zJ+FZkYk
+         S66rUu/qe1S5E/l3UsTRmYtaIAv8F5YCxfi4URRtfIPHwVqB0IwNszidr3xg79oYI/Jz
+         d6tdfpEituAVtDg+tOfFByYHrlwyF02BiK9noAGXJMJc4GV/2Zja7o2gtK/EkqfOJ3Te
+         BYV5t9fQuozvIfVfEm4m4Fdu03jK7OC3zF3wirSFULPwCLk+O3QHZkFXcv19Rc4+qYV7
+         rjSOng7ji41xJLvL3WJdeGlnKdneVYoRRaseDq5fiDF7NueDJ1hwOXlvk1s59MY3C9tc
+         EzQA==
+MIME-Version: 1.0
+X-Received: by 10.194.161.231 with SMTP id xv7mr15765067wjb.78.1409654571519;
+ Tue, 02 Sep 2014 03:42:51 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Tue, 2 Sep 2014 03:42:51 -0700 (PDT)
+In-Reply-To: <6c181f40-2aa3-45dd-b6c5-5b4caf0f2592@googlegroups.com>
+References: <6c181f40-2aa3-45dd-b6c5-5b4caf0f2592@googlegroups.com>
+Date: Tue, 2 Sep 2014 12:42:51 +0200
+Message-ID: <CAAxEZd8MkvL11Kn2d0rN+AGFPbOAG6fF510rVxXO-g5-OWc9=A@mail.gmail.com>
+Subject: Re: Scraping of local files
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Eckhard Licher <eckhard.licher@googlemail.com>
+Cc: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+     If I understand it correcty you want to parse/scrape a local html
+page copy instead of fetching a "live" version online.
+
+    The good news - it already works (see the factbook tests - they
+use local copies). In a nutshell create a new page object and than set
+the html attribute to the local copy. Example:
+
+page = Factbook::Page.new( 'au' )   # note: will NOT fetch the page
+
+## assign html from local copy
+page.html = File.read( "./test/data/countrytemplate_au.html" )
+
+page.data.to_json  # now (trigger) scrape/parse
+
+   Let us know if that works for you.
+
+PS: Thanks again. Good idea to make it more "obvious" and add a path
+option or something.
+
+[1] github.com/worlddb/factbook.ruby/blob/master/test/test_page.rb
+

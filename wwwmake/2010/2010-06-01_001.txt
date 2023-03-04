@@ -1,0 +1,62 @@
+From 659978977280@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 650817568768
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,74476603403a65b5
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.150.159.9 with SMTP id h9mr2391488ybe.20.1275434560907;
+        Tue, 01 Jun 2010 16:22:40 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.151.93.13 with SMTP id v13ls1978190ybl.2.p; Tue, 01 Jun 2010 
+	16:22:40 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.150.174.6 with SMTP id w6mr255360ybe.52.1275434560558; Tue, 01 
+	Jun 2010 16:22:40 -0700 (PDT)
+Received: by a20g2000vbc.googlegroups.com with HTTP; Tue, 1 Jun 2010 16:22:40 
+	-0700 (PDT)
+Date: Tue, 1 Jun 2010 16:22:40 -0700 (PDT)
+In-Reply-To: <AANLkTim9m3ql9MqkqZyMpt4xNPYFQmJ8bhpBUV_REU-1@mail.gmail.com>
+X-IP: 80.123.37.161
+References: <d74d7889-258b-49d0-8334-02032087ec62@m21g2000vbr.googlegroups.com> 
+	<AANLkTim9m3ql9MqkqZyMpt4xNPYFQmJ8bhpBUV_REU-1@mail.gmail.com>
+User-Agent: G2/1.0
+X-Google-Token: EMCsluAET38IaTnHfJY0
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) 
+	AppleWebKit/532.5 (KHTML, like Gecko) Chrome/4.1.249.1064 
+	Safari/532.5,gzip(gfe)
+Message-ID: <d33c4790-a57b-434a-b0b2-232d28674029@a20g2000vbc.googlegroups.com>
+Subject: Re: S6 Tip: Creating a PDF Using Free Qt/WebKit Tool
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+> Awesome, is this like an open-source Prince?
+
+  The tool uses WebKit (shipping with Qt) as its rendering engine,
+and, thus supports HTML5, CSS3, JavaScript, SVG, etc.
+
+   However, WebKit doesn't support yet the CSS3 Paged Media Module[1],
+that is supported by Prince and, thus, you cannot, for example, use
+@page rules in your CSS:
+
+@page
+{
+   background: url( gradients.svg );
+}
+
+  That would be handy to get a PDF page covered from top-to-bottom
+without any margins left over with the gradient of your choice.
+
+> Could you apply print stylesheets in order to style the PDF further?
+
+ Using the --print-media-type switch applies the print stylesheet and
+you can style it further as you like it   or you can just use a
+regular stylesheet without the --print-media-type switch and remove
+the JavaScript that hides and shows the slides.
+
+   Cheers.
+
+[1] http://www.w3.org/TR/css3-page/
+

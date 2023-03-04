@@ -1,0 +1,61 @@
+From 1288398962688@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1273188319232
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,a107a50f8aae9c2b
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.180.36.211 with SMTP id s19mr965415wij.1.1371322862155;
+        Sat, 15 Jun 2013 12:01:02 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.180.14.7 with SMTP id l7ls117238wic.38.canary; Sat, 15 Jun
+ 2013 12:01:00 -0700 (PDT)
+X-Received: by 10.180.36.211 with SMTP id s19mr965392wij.1.1371322860803;
+        Sat, 15 Jun 2013 12:01:00 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x234.google.com (mail-wi0-x234.google.com [2a00:1450:400c:c05::234])
+        by gmr-mx.google.com with ESMTPS id d5si251202wie.1.2013.06.15.12.01.00
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 15 Jun 2013 12:01:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::234 as permitted sender) client-ip=2a00:1450:400c:c05::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-wi0-f180.google.com with SMTP id c10so1160325wiw.7
+        for <webslideshow@googlegroups.com>; Sat, 15 Jun 2013 12:01:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=e2ZtTQR8dfC3LxtRLIWigabm3cyEeDPRa0BN24ThQGY=;
+        b=V0qty6xEuEi/NHud+E7kzCEkkEkJgYp+PyHa7dtjS+jZN/h0nN8pMIW2gDmifcvpYf
+         mluDYLego1kfu9Seiws9v2gLsRZqLWdH2JtPx3BoCVYusRU5PQV2taKlLJVfvmplyRKS
+         qKLkMamJcnxVO8Tb4hhY+zTIEDOzHgmp7sRSUDS/9MXr8J2CBCENpZqSMiI2+rI0yCF6
+         cm8bNC6z44xzGu2N1aYwPuQZCX84zX15pks7cn5/AITBI2cZNhouWv4cRmYhxLga+swh
+         DjGRwVtOHPQv858bUE24gXNLimQvoTo5Id7FdTTZWvuDf9GqH+l5nKZ+t6Tlj4045OHR
+         KXVA==
+MIME-Version: 1.0
+X-Received: by 10.180.83.9 with SMTP id m9mr1540614wiy.4.1371322860733; Sat,
+ 15 Jun 2013 12:01:00 -0700 (PDT)
+Received: by 10.216.54.202 with HTTP; Sat, 15 Jun 2013 12:01:00 -0700 (PDT)
+In-Reply-To: <737dbaa4-e1ff-4b22-8892-acad65d19cbf@googlegroups.com>
+References: <71414604-4298-4368-85c4-e1d4ddcab69a@googlegroups.com>
+	<caa30178-e4d8-4676-a5e0-90df9fb413f0@ce7g2000vbb.googlegroups.com>
+	<737dbaa4-e1ff-4b22-8892-acad65d19cbf@googlegroups.com>
+Date: Sat, 15 Jun 2013 21:01:00 +0200
+Message-ID: <CAAxEZd_WnS2PePP2NLaYu5303SvwPGANyHkd3UCJCxREc+xntg@mail.gmail.com>
+Subject: Re: [slideshow:295] Re: Slurping a file into a template [ruby s9 template]
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello Derek,
+
+  I see. Thanks for the example. Looks like it's best to add the
+functionality to the gem itself and change the working folder to the
+template pack root folder. Will do. I'll push a new slideshow gem
+version shortly.  Cheers.
+

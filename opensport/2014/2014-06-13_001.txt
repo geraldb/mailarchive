@@ -1,0 +1,57 @@
+From 1225077555200@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1222091210752
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,267cf8c5bf1c3fd1
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.168.198 with SMTP id zy6mr430860lbb.15.1402679642663;
+        Fri, 13 Jun 2014 10:14:02 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.74.241 with SMTP id x17ls81320wiv.20.canary; Fri, 13 Jun
+ 2014 10:14:02 -0700 (PDT)
+X-Received: by 10.180.14.138 with SMTP id p10mr486444wic.2.1402679642169;
+        Fri, 13 Jun 2014 10:14:02 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x232.google.com (mail-wi0-x232.google.com [2a00:1450:400c:c05::232])
+        by gmr-mx.google.com with ESMTPS id gc5si227486wic.1.2014.06.13.10.14.02
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 13 Jun 2014 10:14:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::232 as permitted sender) client-ip=2a00:1450:400c:c05::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x232.google.com with SMTP id n15so1254184wiw.17
+        for <opensport@googlegroups.com>; Fri, 13 Jun 2014 10:14:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=ljQTDi4O8XrzckHMg8jKVcjawXPXKlI/ZzySrn0or/Y=;
+        b=qcBlth55LMfDfxgTw17C62aXwBOG1mkz/K0jeh49i+diDGLS1+2DbpnW8x5KWgZ5Ib
+         /8abNxzQQ9qAK5e5dXLs7N+gnIYPaKYIw1SAYm/cN/xBOpbaX+QWl8m509e+te5KKkSO
+         I20amALYZG2Gv0DDlmoKov/eo7+Rj8DyXZAw8qrTwyP+4oa3aCtIWop7ZP6ldxMBo1bO
+         N9PGOweGzRFRNAt0v1rfT8YQgUEpSggX0scpvF2gIfk6kEjocxwtoqiWx+LgJvcE1fJK
+         slIRjCewykJAHDImo1UpPjNDAx/cHpW2GDBRIkEY7p6Ug/uWZziREWbjU5Lj7cc4Dwrg
+         kzyg==
+MIME-Version: 1.0
+X-Received: by 10.180.13.47 with SMTP id e15mr2762930wic.28.1402679641958;
+ Fri, 13 Jun 2014 10:14:01 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Fri, 13 Jun 2014 10:14:01 -0700 (PDT)
+In-Reply-To: <ab9dcedc-9740-4c7d-968f-34f6701215a5@googlegroups.com>
+References: <ab9dcedc-9740-4c7d-968f-34f6701215a5@googlegroups.com>
+Date: Fri, 13 Jun 2014 19:14:01 +0200
+Message-ID: <CAAxEZd8C7-_JiRxnbe16piqL310mHMs5_rySXwOfyGMf09LY0g@mail.gmail.com>
+Subject: Re: [opensport] How long does it take to update football.db API
+ database and sync with the original text files?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   The service running on footballdb.herokuapp.com gets synced /
+updated once a day with a cron job (around 3am utc or something).
+Cheers.
+

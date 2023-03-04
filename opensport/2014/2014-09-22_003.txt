@@ -1,0 +1,64 @@
+From 2203698855936@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 2205978460160
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,aa2ece1413fdc78,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.19.131 with SMTP id f3mr4771880lae.0.1411406659553;
+        Mon, 22 Sep 2014 10:24:19 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.100.68 with SMTP id ew4ls222940wib.28.gmail; Mon, 22 Sep
+ 2014 10:24:18 -0700 (PDT)
+X-Received: by 10.180.87.228 with SMTP id bb4mr570514wib.3.1411406658990;
+        Mon, 22 Sep 2014 10:24:18 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x234.google.com (mail-we0-x234.google.com [2a00:1450:400c:c03::234])
+        by gmr-mx.google.com with ESMTPS id f9si550832wib.2.2014.09.22.10.24.18
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 22 Sep 2014 10:24:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::234 as permitted sender) client-ip=2a00:1450:400c:c03::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x234.google.com with SMTP id u56so3266851wes.39
+        for <opensport@googlegroups.com>; Mon, 22 Sep 2014 10:24:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=ZzlvnR2b2hxA9ykeY8bD9jKhVtOdeioPfnr6u5ANcmE=;
+        b=kS6ziM7zvKT1fsJFyq9MAGbOEYt+4jW2A4H1iyuY2szZYKJywnn1ynRbvTyt4iwtTx
+         pAC4f48ETEousiy/MxibFez13Z48OKiyHGkKIS8Gb44J0hsMy32nA9PNqbnbqLkpzM7w
+         ooW6sKVPDNr4B9MdI6zXLcZXAQnItKlepB+jfKxTn3g/QdF2rYFLpE0WklhxAqUKeM/v
+         MF8Zcc8vpOPBdk13p0vD0lNhG5g6X0gVZJm6yFDINsCC3WwXtP6jAAm0nbVvx7p0ks0n
+         ivzWXwG2YnvQs3ilxkX5sIdL1WSiu+4X0soXI6I63dpc/4HyFG8zewyTbkTWUD/fyNGw
+         PQfA==
+MIME-Version: 1.0
+X-Received: by 10.194.161.231 with SMTP id xv7mr22896054wjb.78.1411406658919;
+ Mon, 22 Sep 2014 10:24:18 -0700 (PDT)
+Received: by 10.216.205.135 with HTTP; Mon, 22 Sep 2014 10:24:18 -0700 (PDT)
+Date: Mon, 22 Sep 2014 19:24:18 +0200
+Message-ID: <CAAxEZd9jFt=xkdnAXP2pCMdbEF7f_HkeZ78B9sJiH-iyq_4nuA@mail.gmail.com>
+Subject: sport.db starter kit - Node.js Edition - sport.db.starter.node.js v0.0.1
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've started with a new starter sample for Node.js, that is,
+server-side JavaScript.
+
+  It's very early - you're welcome to help out to get some services
+(HTTP JSON APIs) added.
+
+    $ node app.js
+
+    >> events:
+    >> [ { event_key: 'it.2014/15', event_name: 'Serie A 2014/15' } ]
+
+  More info @ github.com/sportkit
+
+  Cheers.
+

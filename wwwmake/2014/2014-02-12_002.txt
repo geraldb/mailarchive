@@ -1,0 +1,296 @@
+From 1476672880640@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1456305340416
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,2568c5e341d64211
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.65.202 with SMTP id z10mr820008pas.45.1392171488586;
+        Tue, 11 Feb 2014 18:18:08 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.182.116.37 with SMTP id jt5ls1059813obb.12.gmail; Tue, 11 Feb
+ 2014 18:18:08 -0800 (PST)
+X-Received: by 10.182.158.196 with SMTP id ww4mr289388obb.5.1392171488008;
+        Tue, 11 Feb 2014 18:18:08 -0800 (PST)
+X-Google-Doc-Id: 6c7635d6916fa4
+X-Google-Web-Client: true
+Date: Tue, 11 Feb 2014 18:18:07 -0800 (PST)
+From: Micah Cooper <coopermj@miamioh.edu>
+To: webslideshow@googlegroups.com
+Message-Id: <e508d7aa-e0a8-4c2b-8ea9-b3ef909b0b36@googlegroups.com>
+In-Reply-To: <CAAxEZd9O=iVO8d7Hk=YyqvvBWyNPxaZP1VmRA+BpYDzM7T90bw@mail.gmail.com>
+References: <cc360c27-7967-4404-942f-e2c201024e4c@googlegroups.com>
+ <CAAxEZd8Yc0zOu4tdB9fQUy+Wy2b8wfn3Fp5mZDaPYOn4-1fLLg@mail.gmail.com>
+ <CAGz-Eo7zMq_k0R7XkJA5iYEvAAoTfpvqpjcz2g2BbUju87ey8w@mail.gmail.com>
+ <CAAxEZd9O=iVO8d7Hk=YyqvvBWyNPxaZP1VmRA+BpYDzM7T90bw@mail.gmail.com>
+Subject: Re: [slideshow:337] Markdown incremental steps
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1748_23574038.1392171487231"
+X-Google-Token: EN-z65cFkAH8K-x2ZPc0
+X-Google-IP: 75.185.206.239
+
+------=_Part_1748_23574038.1392171487231
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1749_31692144.1392171487231"
+
+------=_Part_1749_31692144.1392171487231
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks for all the help! One last question, though:
+
+https://github.com/geraldb/s6/blob/gh-pages/DOCS/FORMAT.md states 
+" Shortcut Tip: If a list gets marked up with .step, all its children get 
+marked up automatically."
+
+Does that mean each <li> should get the class? It looks as if the default 
+template works if step/slide/fragment (for reveal.js) tag is on the <ol>, 
+but deck.js and reveal.js seem to need it on the <li>. Unfortunately, 
+kramdown seems to only tag the <ol>, not the <li>
+
+* one
+
+* two
+
+* three
+
+{: .step}
+
+<ul class="step">
+
+  <li>one</li>
+
+  <li>two</li>
+
+  <li>three</li>
+
+</ul>
+Does that make sense? Am I making it too complicated on myself? :D
+
+
+On Monday, February 10, 2014 5:58:41 PM UTC-5, Gerald Bauer wrote:
+>
+> Hello, 
+>   Great to hear.   I don't know deck.js in detail. Try adding both classes 
+> e.g. 
+>
+> {: .step .slide } 
+>
+>   instead of just 
+>
+> {: .step } 
+>
+>   and it should work with both themes. Cheers. 
+>
+> 2014-02-10 13:37 GMT-06:00 Micah Cooper <coop...@miamioh.edu <javascript:>>: 
+>
+> > Fantastic -- thanks for the quick reply! 
+> > 
+> > Looks as if the native theme respects step and deck.js (for example) 
+> > requires .slide, which breaks my dream of flipping packs back and forth. 
+> I'm 
+> > assuming translation for different themes would require adding a 
+> > parser/rewriter? 
+> > 
+> > Thanks again! 
+> > 
+> > 
+> > On Mon, Feb 10, 2014 at 11:47 AM, Gerald Bauer <gerald...@gmail.com<javascript:>> 
+>
+> > wrote: 
+> >> 
+> >> Hello, 
+> >> 
+> >> > Sorry for the possible double post -- didn't see the first one 
+> appear. 
+> >> 
+> >>   Sorry, the first post is moderated - unfortunately even this list 
+> >> gets lots of spam. 
+> >> 
+> >> > I'm trying to do step with Markdown and can't get it to work. It 
+> looks 
+> >> > as if the example with incremental bullets is in Textile 
+> >> > and when I try *(step) in Markdown, it displays the (step) literally. 
+> Am 
+> >> > I just messing up the syntax in Markdown? 
+> >> 
+> >>   Standard "plain" or "classic" markdown has no support for css style 
+> >> classes. However, markdown extras such as MultiMarkdown offer, for 
+> >> example, block attribute list e.g. 
+> >> 
+> >> * item 1 
+> >> * item 2 
+> >> * item 3 
+> >> {: .step} 
+> >> 
+> >>   That should work if you use kramdown, for example, for your markdown 
+> >> conversion. See the syntax page [1], for details. Cheers. 
+> >> 
+> >> [1] http://kramdown.gettalong.org/syntax.html#block-ials 
+> >> 
+> >> 2014-02-10 8:31 GMT-06:00 Micah Cooper <coop...@miamioh.edu<javascript:>>: 
+>
+> >> > Sorry for the possible double post -- didn't see the first one 
+> appear. 
+> >> > 
+> >> > I'm trying to do step with Markdown and can't get it to work. It 
+> looks 
+> >> > as if 
+> >> > the example with incremental bullets is in Textile and when I try 
+> >> > *(step) in 
+> >> > Markdown, it displays the (step) literally. Am I just messing up the 
+> >> > syntax 
+> >> > in Markdown? 
+> >> > 
+> >> > 
+> >> > -- 
+> >> > You received this message because you are subscribed to the Google 
+> >> > Groups 
+> >> > "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n' 
+> >> > Friends" 
+> >> > group. 
+> >> > To unsubscribe from this group and stop receiving emails from it, 
+> send 
+> >> > an 
+> >> > email to webslideshow...@googlegroups.com <javascript:>. 
+> >> > For more options, visit https://groups.google.com/groups/opt_out. 
+> >> 
+> >> -- 
+> >> You received this message because you are subscribed to the Google 
+> Groups 
+> >> "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n' 
+> Friends" 
+> >> group. 
+> >> To unsubscribe from this group and stop receiving emails from it, send 
+> an 
+> >> email to webslideshow...@googlegroups.com <javascript:>. 
+> >> For more options, visit https://groups.google.com/groups/opt_out. 
+> > 
+> > 
+> > -- 
+> > You received this message because you are subscribed to the Google 
+> Groups 
+> > "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n' 
+> Friends" 
+> > group. 
+> > To unsubscribe from this group and stop receiving emails from it, send 
+> an 
+> > email to webslideshow...@googlegroups.com <javascript:>. 
+> > For more options, visit https://groups.google.com/groups/opt_out. 
+>
+
+------=_Part_1749_31692144.1392171487231
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Thanks for all the help! One last question, though:<div><br></div><div>https://github.com/geraldb/s6/blob/gh-pages/DOCS/FORMAT.md states "&nbsp;Shortcut Tip: If a list gets marked up with .step, all its children get marked up automatically."</div><div><br></div><div>Does that mean each &lt;li&gt; should get the class? It looks as if the default template works if step/slide/fragment (for reveal.js) tag is on the &lt;ol&gt;, but deck.js and reveal.js seem to need it on the &lt;li&gt;. Unfortunately, kramdown seems to only tag the &lt;ol&gt;, not the &lt;li&gt;</div><div><br></div><div>
+
+
+
+
+
+
+
+<p class="p1">* one</p>
+<p class="p1">* two</p>
+<p class="p1">* three</p>
+<p class="p1">{: .step}</p>
+<p class="p1">&lt;ul class="step"&gt;</p>
+<p class="p1">&nbsp; &lt;li&gt;one&lt;/li&gt;</p>
+<p class="p1">&nbsp; &lt;li&gt;two&lt;/li&gt;</p>
+<p class="p1">&nbsp; &lt;li&gt;three&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p></div><div>Does that make sense? Am I making it too complicated on myself? :D</div><div><br><br>On Monday, February 10, 2014 5:58:41 PM UTC-5, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>&nbsp; Great to hear. &nbsp; I don't know deck.js in detail. Try adding both classes e.g.
+<br>
+<br>{: .step .slide }
+<br>
+<br>&nbsp; instead of just
+<br>
+<br>{: .step }
+<br>
+<br>&nbsp; and it should work with both themes. Cheers.
+<br>
+<br>2014-02-10 13:37 GMT-06:00 Micah Cooper &lt;<a href="javascript:" target="_blank" gdf-obfuscated-mailto="WSJl4F38rccJ" onmousedown="this.href='javascript:';return true;" onclick="this.href='javascript:';return true;">coop...@miamioh.edu</a>&gt;:
+<br>&gt; Fantastic -- thanks for the quick reply!
+<br>&gt;
+<br>&gt; Looks as if the native theme respects step and deck.js (for example)
+<br>&gt; requires .slide, which breaks my dream of flipping packs back and forth. I'm
+<br>&gt; assuming translation for different themes would require adding a
+<br>&gt; parser/rewriter?
+<br>&gt;
+<br>&gt; Thanks again!
+<br>&gt;
+<br>&gt;
+<br>&gt; On Mon, Feb 10, 2014 at 11:47 AM, Gerald Bauer &lt;<a href="javascript:" target="_blank" gdf-obfuscated-mailto="WSJl4F38rccJ" onmousedown="this.href='javascript:';return true;" onclick="this.href='javascript:';return true;">gerald...@gmail.com</a>&gt;
+<br>&gt; wrote:
+<br>&gt;&gt;
+<br>&gt;&gt; Hello,
+<br>&gt;&gt;
+<br>&gt;&gt; &gt; Sorry for the possible double post -- didn't see the first one appear.
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; Sorry, the first post is moderated - unfortunately even this list
+<br>&gt;&gt; gets lots of spam.
+<br>&gt;&gt;
+<br>&gt;&gt; &gt; I'm trying to do step with Markdown and can't get it to work. It looks
+<br>&gt;&gt; &gt; as if the example with incremental bullets is in Textile
+<br>&gt;&gt; &gt; and when I try *(step) in Markdown, it displays the (step) literally. Am
+<br>&gt;&gt; &gt; I just messing up the syntax in Markdown?
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; Standard "plain" or "classic" markdown has no support for css style
+<br>&gt;&gt; classes. However, markdown extras such as MultiMarkdown offer, for
+<br>&gt;&gt; example, block attribute list e.g.
+<br>&gt;&gt;
+<br>&gt;&gt; * item 1
+<br>&gt;&gt; * item 2
+<br>&gt;&gt; * item 3
+<br>&gt;&gt; {: .step}
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; That should work if you use kramdown, for example, for your markdown
+<br>&gt;&gt; conversion. See the syntax page [1], for details. Cheers.
+<br>&gt;&gt;
+<br>&gt;&gt; [1] <a href="http://kramdown.gettalong.org/syntax.html#block-ials" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fkramdown.gettalong.org%2Fsyntax.html%23block-ials\46sa\75D\46sntz\0751\46usg\75AFQjCNFJgeMA9TNwr0Pdlz6O3n9eoB84Cg';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fkramdown.gettalong.org%2Fsyntax.html%23block-ials\46sa\75D\46sntz\0751\46usg\75AFQjCNFJgeMA9TNwr0Pdlz6O3n9eoB84Cg';return true;">http://kramdown.gettalong.org/<wbr>syntax.html#block-ials</a>
+<br>&gt;&gt;
+<br>&gt;&gt; 2014-02-10 8:31 GMT-06:00 Micah Cooper &lt;<a href="javascript:" target="_blank" gdf-obfuscated-mailto="WSJl4F38rccJ" onmousedown="this.href='javascript:';return true;" onclick="this.href='javascript:';return true;">coop...@miamioh.edu</a>&gt;:
+<br>&gt;&gt; &gt; Sorry for the possible double post -- didn't see the first one appear.
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; I'm trying to do step with Markdown and can't get it to work. It looks
+<br>&gt;&gt; &gt; as if
+<br>&gt;&gt; &gt; the example with incremental bullets is in Textile and when I try
+<br>&gt;&gt; &gt; *(step) in
+<br>&gt;&gt; &gt; Markdown, it displays the (step) literally. Am I just messing up the
+<br>&gt;&gt; &gt; syntax
+<br>&gt;&gt; &gt; in Markdown?
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; --
+<br>&gt;&gt; &gt; You received this message because you are subscribed to the Google
+<br>&gt;&gt; &gt; Groups
+<br>&gt;&gt; &gt; "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n'
+<br>&gt;&gt; &gt; Friends"
+<br>&gt;&gt; &gt; group.
+<br>&gt;&gt; &gt; To unsubscribe from this group and stop receiving emails from it, send
+<br>&gt;&gt; &gt; an
+<br>&gt;&gt; &gt; email to <a href="javascript:" target="_blank" gdf-obfuscated-mailto="WSJl4F38rccJ" onmousedown="this.href='javascript:';return true;" onclick="this.href='javascript:';return true;">webslideshow...@<wbr>googlegroups.com</a>.
+<br>&gt;&gt; &gt; For more options, visit <a href="https://groups.google.com/groups/opt_out" target="_blank" onmousedown="this.href='https://groups.google.com/groups/opt_out';return true;" onclick="this.href='https://groups.google.com/groups/opt_out';return true;">https://groups.google.com/<wbr>groups/opt_out</a>.
+<br>&gt;&gt;
+<br>&gt;&gt; --
+<br>&gt;&gt; You received this message because you are subscribed to the Google Groups
+<br>&gt;&gt; "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n' Friends"
+<br>&gt;&gt; group.
+<br>&gt;&gt; To unsubscribe from this group and stop receiving emails from it, send an
+<br>&gt;&gt; email to <a href="javascript:" target="_blank" gdf-obfuscated-mailto="WSJl4F38rccJ" onmousedown="this.href='javascript:';return true;" onclick="this.href='javascript:';return true;">webslideshow...@<wbr>googlegroups.com</a>.
+<br>&gt;&gt; For more options, visit <a href="https://groups.google.com/groups/opt_out" target="_blank" onmousedown="this.href='https://groups.google.com/groups/opt_out';return true;" onclick="this.href='https://groups.google.com/groups/opt_out';return true;">https://groups.google.com/<wbr>groups/opt_out</a>.
+<br>&gt;
+<br>&gt;
+<br>&gt; --
+<br>&gt; You received this message because you are subscribed to the Google Groups
+<br>&gt; "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n' Friends"
+<br>&gt; group.
+<br>&gt; To unsubscribe from this group and stop receiving emails from it, send an
+<br>&gt; email to <a href="javascript:" target="_blank" gdf-obfuscated-mailto="WSJl4F38rccJ" onmousedown="this.href='javascript:';return true;" onclick="this.href='javascript:';return true;">webslideshow...@<wbr>googlegroups.com</a>.
+<br>&gt; For more options, visit <a href="https://groups.google.com/groups/opt_out" target="_blank" onmousedown="this.href='https://groups.google.com/groups/opt_out';return true;" onclick="this.href='https://groups.google.com/groups/opt_out';return true;">https://groups.google.com/<wbr>groups/opt_out</a>.
+<br></blockquote></div></div>
+------=_Part_1749_31692144.1392171487231--
+
+------=_Part_1748_23574038.1392171487231--
+

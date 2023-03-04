@@ -1,0 +1,98 @@
+From 6579549482029940736@xxx Wed Jul 18 13:32:21 +0000 2018
+X-GM-THRID: 6451155775166349312
+X-Received: by 2002:a50:be04:: with SMTP id a4-v6mr2233424edi.4.1531920740921;
+        Wed, 18 Jul 2018 06:32:20 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:aa7:d7c9:: with SMTP id e9-v6ls1546074eds.7.gmail; Wed, 18
+ Jul 2018 06:32:20 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpeSMrrF9GQuUeiyVu3g5TlO2nF/OcO4XfP3JMUJlKNMUnC/q8Wl5XPecE+dXJk8PIx0rGHo
+X-Received: by 2002:aa7:c48c:: with SMTP id m12-v6mr2237443edq.11.1531920740236;
+        Wed, 18 Jul 2018 06:32:20 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1531920740; cv=none;
+        d=google.com; s=arc-20160816;
+        b=AEfBqd8l80DA2aTOcu7fzqqm8nV1alifg9dNiKk9Z8F7eAK6mlaY8DjKgCuyWb1wbN
+         EFekJy42xFF04Q5FwdLAnJrzgQ4NjWtifSyVN06PVaqTcTIZJLLZlmFu3CYui82ff1PA
+         ZcD7BHg1b37Q0w1qXPxBIEG/8ISA+Gl/KAQHXIhUD+kLHcbR3rF0+Baa8w4ysigVoGx6
+         KanWtpyI9UlpmKsk5bt+veEz7fd6Gvymmk4vf9ax/NhGSNR0++A9NkQyK2LVL1buS1vZ
+         Sum3r/S8ra1yMt1qJsRN9/vyac5Il5+weEpAf68igwE1TlDAWK7/rku2wWgy5TrUUuCF
+         8EgA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=uRsA9RBQoJyHTgbgNHGDwF08jW9nPBLqttfPdd9vKXU=;
+        b=x3gnu9ddkjK8lAI3yAQw/kj7aS8SIpgYSDMLUp7x4sRmtOOP22B4pTL39QzpITSjS1
+         Tr4usUynq/f7RZxn5Kr4cDOMeWuuOvD3Fqusrhvx20RCJxdv/JhyCfXcW394ZwbtfMNT
+         YSARXrrLNNiKEviRFRBbr0VKVIZzdAFjO0r+HmTZF8GsYyA2pURzONLLYwr7Yl7EuvLN
+         DCMKmwAsJZ7/6dWUB4MCrY+uV/Nmo6LGAgmhzOckDCj1xYravCVQ2hI7huBeWviIT8CJ
+         WEZO+QGSNFacvH19HQJqERu1p3WfdCrS8FXZdtm2gRpwHuKeixKDa03s76pU5hFod0rn
+         J2Dw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ITnqdIB+;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4010:c07::242 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf0-x242.google.com (mail-lf0-x242.google.com. [2a00:1450:4010:c07::242])
+        by gmr-mx.google.com with ESMTPS id a26-v6si222512edn.2.2018.07.18.06.32.20
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 18 Jul 2018 06:32:20 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4010:c07::242 as permitted sender) client-ip=2a00:1450:4010:c07::242;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ITnqdIB+;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4010:c07::242 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf0-x242.google.com with SMTP id f18-v6so3469777lfc.2
+        for <opensport@googlegroups.com>; Wed, 18 Jul 2018 06:32:20 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=uRsA9RBQoJyHTgbgNHGDwF08jW9nPBLqttfPdd9vKXU=;
+        b=ITnqdIB+y4A8N3R7eqqubitmaeCOmPpK74DBOz2SsDrqtwnXD9ASOKBoPliM1Y/fOn
+         WAQTiOh4KUvgjG+PoX/gUMy05rtaevOkoOgVZiFgPckVQ5SUYXRr649LWHU/mS1a0sEm
+         OiMSUgggegjY7dutKXxlWJhrNF2XYv81UC0WY8BzFyAmyr3ix8n/8ZGfdxGoQsMBFDkc
+         aS03a6HAfqVPCNq59qGJw756iZEh3HFFtkeWXptEKaNDsiWsXGJVx2/TBTSQE3+LfOmi
+         FZt/4+pG3brpNtS3brqs0oFhM7h9bAEocdNPrOxcWbj1gKlMdN2AnTdftWucR7EhY/ZI
+         uImA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=uRsA9RBQoJyHTgbgNHGDwF08jW9nPBLqttfPdd9vKXU=;
+        b=MJsFiPHnv8RFhPpjaD4jcm+6wQQdMp9TkoqNIocaF8ulh9ahgYJPBV7WrWs6kMTlyX
+         Abe4JQnO+g+MutD1Lsbs6eNNpXXyjDOtHYFfHmO5TlFfc5HSG0Ii27Al/oooCodEQ1DG
+         qY1Itm2vxvc3QpMZaCdCsbUnazN7TsCqzVuyEmf0SGzt3OnabnM5bQspjGmd20UAKTXM
+         sxJd9EmRbXbIGyZSfUSfeh9V4fMEZnEq4iRzVqGUWgpWuRvG84QWUU2KiTs+sT9bCXJt
+         3iTo2XU3n0/pWJL6Kz9tPUidkwQD3J1S/qY6h6m+5QywYupPyoHFP0JMFABYnBE/4AQ8
+         C2gA==
+X-Gm-Message-State: AOUpUlHzxDGIdywuDQumykQxxSG7XKMzWzlI0+eaU14Iem2pD/3MHWSv
+	39Ifeu3h8eLELZCVYbvHAWB0OUnB0jBQSGIoYbmhNw==
+X-Received: by 2002:a19:7403:: with SMTP id v3-v6mr449013lfe.97.1531920739826;
+ Wed, 18 Jul 2018 06:32:19 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:ab3:4c6b:0:0:0:0:0 with HTTP; Wed, 18 Jul 2018 06:32:19
+ -0700 (PDT)
+In-Reply-To: <CAAxEZd_=ZffA47z5HG7LwVedvyK7QOGY9=uEcsuDinO5oWUNZg@mail.gmail.com>
+References: <95729064-a94c-492d-aacc-da2009a27524@googlegroups.com> <CAAxEZd_=ZffA47z5HG7LwVedvyK7QOGY9=uEcsuDinO5oWUNZg@mail.gmail.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 18 Jul 2018 15:32:19 +0200
+Message-ID: <CAAxEZd-1Y7LPqE-WoAcHK1_h88yfjOGr1hPnCrVcci1WDwXh7g@mail.gmail.com>
+Subject: Re: [opensport] ActiveRecord::Migration is not supported
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  For the record:
+
+>>  Directly inheriting from ActiveRecord::Migration is not supported.
+>
+> Sorry this is a know issue / problem, that is, the ActiveRecord
+> 5.x series is NOT yet supported. The workaround for now is to
+> downgrade to the 4.2.x series. Please use a Gemfile and bundle exec.
+
+   The sportdb and worlddb libraries / gems have (long) been updated
+and work with the latest (and greatest) ActiveRecord 5.x series. In
+fact it's now recommend to use the 5.x series (and soon required :-)).
+
+   Cheers. Prost.
+

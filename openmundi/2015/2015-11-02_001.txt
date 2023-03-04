@@ -1,0 +1,77 @@
+From 6212452697437634560@xxx Mon Nov 02 07:29:21 +0000 2015
+X-GM-THRID: 6212449726003937280
+X-Received: by 10.129.72.83 with SMTP id v80mr17037032ywa.11.1446449360785;
+        Sun, 01 Nov 2015 23:29:20 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.182.230.75 with SMTP id sw11ls894368obc.77.gmail; Sun, 01 Nov
+ 2015 23:29:20 -0800 (PST)
+X-Received: by 10.182.236.4 with SMTP id uq4mr18805141obc.3.1446449360599;
+        Sun, 01 Nov 2015 23:29:20 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22d.google.com (mail-ig0-x22d.google.com. [2607:f8b0:4001:c05::22d])
+        by gmr-mx.google.com with ESMTPS id k4si653908igt.1.2015.11.01.23.29.20
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 01 Nov 2015 23:29:20 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) client-ip=2607:f8b0:4001:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22d.google.com with SMTP id w7so43460819igp.1
+        for <openmundi@googlegroups.com>; Sun, 01 Nov 2015 23:29:20 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=JcKjXvQz1Yy44kxF94pyLh4EAjvMeM0NfItSLucMHeg=;
+        b=b067k9RhSBprBGl8/QxIq52qmrGGDcqkiemjATQbS1ad4QnrwTyhBuGD9D3vNORGyM
+         k3mxCB5u95+QZzOKeqV6W5jLP6Nt/bS+/nTbSl0G+rdX19vI/DGO7mvcUQ7ujfdqVWqd
+         Pmvh1SiLrhXlthJsoJGNu/jx+UhNbyKJ1FNKZvdSHb0dD2U0VY1Q5iWIxiidKEM7giir
+         kaBnCTU8SiQUwa5/EmeAssiF37QPTl0/qczTwXBERmBxuFZ1mDTxUccWa+V+UZZaITr2
+         G6usQBtB+liIc9ZnsMQEwnaw3yQaiyiiK9pF90vvzXFTqK/2EAXElZHXKmQNHb4X4UF+
+         Hbmg==
+MIME-Version: 1.0
+X-Received: by 10.50.143.12 with SMTP id sa12mr9117338igb.7.1446449360470;
+ Sun, 01 Nov 2015 23:29:20 -0800 (PST)
+Received: by 10.107.138.29 with HTTP; Sun, 1 Nov 2015 23:29:20 -0800 (PST)
+In-Reply-To: <5680da27-dc2b-481e-b650-a285865a177c@googlegroups.com>
+References: <5680da27-dc2b-481e-b650-a285865a177c@googlegroups.com>
+Date: Mon, 2 Nov 2015 08:29:20 +0100
+Message-ID: <CAAxEZd86xrHobhe3PbyrGvejZwMT3cxBke4XR8oweYzHTie6ZA@mail.gmail.com>
+Subject: Re: [openmundi] Error in install process
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Michael Falconer <michael.j.falconer@gmail.com>
+Cc: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    Welcome. Thanks for trying the factbook machinery / scripts.
+
+    Sorry for the installation troubles. The nokogiri [1] gem /
+library uses C extensions and libraries (e.g. libxml2, libxslt etc.),
+thus, you have to make sure you have all build tools (e.g. c/c++
+compiler, headers, etc.) and c-libraries installed as a pre-condition.
+
+    I'd say the best way might be google "nokogiri linux install" or
+"nokogiri suse install" for some tips and how-tos.
+
+    Then you can retry installing the nokogiri gem e.g.
+
+$ gem install nokogiri
+
+     If that works - install the factbook machinery e.g.
+
+$ gem install factbook
+
+    Cheers.
+
+
+PS:  An alternative might be to use the ruby version manager, that is,
+rvm [2]. As far as I know rvm sets up everything so you can install
+(sandboxed) gems etc.
+
+[1] www.nokogiri.org/tutorials/installing_nokogiri.html
+[2] rvm.io
+

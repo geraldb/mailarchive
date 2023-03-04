@@ -1,0 +1,55 @@
+From 6235849128605122560@xxx Mon Jan 04 08:39:26 +0000 2016
+X-GM-THRID: 6235847864793169920
+X-Received: by 10.66.237.38 with SMTP id uz6mr76601813pac.12.1451896766332;
+        Mon, 04 Jan 2016 00:39:26 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.62.86 with SMTP id l83ls3355282ioa.54.gmail; Mon, 04 Jan
+ 2016 00:39:26 -0800 (PST)
+X-Received: by 10.107.164.39 with SMTP id n39mr44741359ioe.25.1451896766061;
+        Mon, 04 Jan 2016 00:39:26 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22f.google.com (mail-ig0-x22f.google.com. [2607:f8b0:4001:c05::22f])
+        by gmr-mx.google.com with ESMTPS id lr9si3747467igb.1.2016.01.04.00.39.26
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 04 Jan 2016 00:39:26 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22f as permitted sender) client-ip=2607:f8b0:4001:c05::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22f.google.com with SMTP id ph11so240117661igc.1
+        for <opensport@googlegroups.com>; Mon, 04 Jan 2016 00:39:26 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=Fd95tiuKefhYj8IzZeQtXJ3ZWW7Q3jIC3v+f8jrkmnw=;
+        b=LIcxbHyse+vhajjpkvVCe1IoPmfUYABV5qhkUy471x9oOHUnmX/H+v+q1RXvXBhjxV
+         vQ2UYAP9RsSHaDzMxLYMylNn8gOrBfe1Sh+qqDbsrSnsTN20TeFugUTy6GdqvTrL4DYf
+         D8PAWE7FFEoNuYkrsd6dD12Ct5FN59OUcBq2YCrPEWLIrcTzHVu/NHhVT4AGIncZNyuH
+         b7wpor5ynrppCPnqu4w9zeaAwc2yQeKWrSI+zLVEQ06WHG48Upg6GyAi1VHMVng1NvxB
+         qt+9FYlf3gadWuRk9TUr2w4EFZOqWgSX3RR5Yuq00B4gyB51yKhNc1HN9TboPuFlRe0Z
+         U4vA==
+MIME-Version: 1.0
+X-Received: by 10.50.18.113 with SMTP id v17mr59879397igd.64.1451896765934;
+ Mon, 04 Jan 2016 00:39:25 -0800 (PST)
+Received: by 10.107.63.198 with HTTP; Mon, 4 Jan 2016 00:39:25 -0800 (PST)
+In-Reply-To: <6bc7dbf7-13ff-4fe2-85f5-50e4ff41a8ab@googlegroups.com>
+References: <6bc7dbf7-13ff-4fe2-85f5-50e4ff41a8ab@googlegroups.com>
+Date: Mon, 4 Jan 2016 09:39:25 +0100
+Message-ID: <CAAxEZd9keuK0P9KjCMLvRcq-YQBm=N6dr-A5r+z+fif46+zLEQ@mail.gmail.com>
+Subject: Re: [opensport] did anyone manage to get free live soccer data from
+ betting website by scraping or using API?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    Joe Kampschmidt has put together a detailed page titled "Guide to
+Football/Soccer data and APIs" [1]  Cheers. What leagues or
+tournaments are you looking for?
+
+[1] www.jokecamp.com/blog/guide-to-football-and-soccer-data-and-apis
+

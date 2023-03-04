@@ -1,0 +1,82 @@
+From 220972711936@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 215940595712
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,6b17b5734598971f
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.90.32.14 with SMTP id f14mr247270agf.27.1227294243573;
+        Fri, 21 Nov 2008 11:04:03 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from yw-out-1718.google.com (yw-out-1718.google.com [74.125.46.158])
+        by mx.google.com with ESMTP id 22si1690357yxr.1.2008.11.21.11.04.03;
+        Fri, 21 Nov 2008 11:04:03 -0800 (PST)
+Received-SPF: neutral (google.com: 74.125.46.158 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=74.125.46.158;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 74.125.46.158 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by yw-out-1718.google.com with SMTP id 5so522946ywr.42
+        for <webslideshow@googlegroups.com>; Fri, 21 Nov 2008 11:04:03 -0800 (PST)
+Received: by 10.143.5.21 with SMTP id h21mr414714wfi.183.1227294242492;
+        Fri, 21 Nov 2008 11:04:02 -0800 (PST)
+Received: by 10.143.44.20 with HTTP; Fri, 21 Nov 2008 11:04:02 -0800 (PST)
+Message-ID: <1f058eab0811211104o70b9d726jaf57fda8d97d7c76@mail.gmail.com>
+Date: Fri, 21 Nov 2008 11:04:02 -0800
+From: "Gerald Bauer" <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow] Trouble installing slideshow gem
+In-Reply-To: <fea6de5d-e953-4490-a8c2-26dcd7234313@20g2000yqt.googlegroups.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <fea6de5d-e953-4490-a8c2-26dcd7234313@20g2000yqt.googlegroups.com>
+
+Hello,
+
+   The installation troubles are caused by the Oniguruma gem [1] (a
+new regular expression engine) that is required by the Ultraviolet gem
+[2] (a syntax highlighting engine).
+
+  On Windows the Oniguruma gem includes the pre-built C extension
+required for the gem. However, on all other systems - including OS X -
+the Oniguruma gem assumes you have the Oniguruma regular expression
+engine pre-installed and pre-built from the C sources.
+
+  To get the Oniguruma C sources and built the engine use these steps:
+
+  1) Download the Oniguruma source package
+
+ $ wget http://www.geocities.jp/kosako3/oniguruma/archive/onig-5.8.0.tar.gz
+
+  2) Decompress and unpack the source package
+
+ $ tar zxvf onig-5.8.0.tar.gz
+
+  3) Change current directory to Oniguruma
+
+ $ cd onig-5.8.0/
+
+  4) Run configure
+
+ $ ./configure
+
+  5) Build Oniguruma engine from C sources
+
+  $ make
+
+  6) Install Oniguruma
+
+  $ sudo make install
+
+
+   That's it. Now retry to install the gem.
+
+ $ gem install oniguruma   or
+ $ gem install slideshow
+
+   Cheers.
+
+[1] http://oniguruma.rubyforge.org
+[2] http://ultraviolet.rubyforge.org
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.ca
+

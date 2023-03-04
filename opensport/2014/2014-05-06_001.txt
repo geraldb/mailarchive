@@ -1,0 +1,81 @@
+From 582112772096@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 582791200768
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b7f9b188ad7fd297,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.187.18 with SMTP id fo18mr571049wic.5.1399398911750;
+        Tue, 06 May 2014 10:55:11 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.92.234 with SMTP id cp10ls189822wib.42.gmail; Tue, 06 May
+ 2014 10:55:11 -0700 (PDT)
+X-Received: by 10.180.82.98 with SMTP id h2mr574966wiy.0.1399398911057;
+        Tue, 06 May 2014 10:55:11 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22e.google.com (mail-wg0-x22e.google.com [2a00:1450:400c:c00::22e])
+        by gmr-mx.google.com with ESMTPS id jc9si554839wic.0.2014.05.06.10.55.11
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 06 May 2014 10:55:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) client-ip=2a00:1450:400c:c00::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f46.google.com with SMTP id n12so7487804wgh.5
+        for <opensport@googlegroups.com>; Tue, 06 May 2014 10:55:11 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=jbKGgU2XoVyyz7qVbZF06/8y9tLz1aI1V+jgsfJ286U=;
+        b=xuGwoTlbL4zraKSxSli33m7u/leAaqV2vSvNfJXywk72M8kZuFwy7NWdhL8TY8eqEX
+         wm/sT2N8tNk5gsE5Cf8sumAwyNzOHUaGFPfrgUVun1ZAsPtNJF7jW/rGz8say18jChL1
+         AtXYkmqe5G5+iOcMC2I7VrIXa461PKuU1I6XIrKLiqcJ/YeX6V+NRlRnJw8AFn0azhcq
+         zY9lY0ezZr69993ivnv8hKwIKxQ916aa77smZOZdrFAq9LYR7oNXsKeLX0UFjGR8pU6+
+         5jN8I21KrOCyjHcSxXJuqzAPmM8dZVhUsnwb7BVnVKXcYKi6QkAANUJXKuc1XxmLa5uR
+         TWBA==
+MIME-Version: 1.0
+X-Received: by 10.180.89.241 with SMTP id br17mr3662573wib.0.1399398910788;
+ Tue, 06 May 2014 10:55:10 -0700 (PDT)
+Received: by 10.216.189.196 with HTTP; Tue, 6 May 2014 10:55:10 -0700 (PDT)
+Date: Tue, 6 May 2014 19:55:10 +0200
+Message-ID: <CAAxEZd-0fmYY0EPUUNwrtGZ+wHKz86OE4Pwp9=sb1Z0vi9UdEg@mail.gmail.com>
+Subject: football.js - new GitHub org - football matchday widget, football.db
+ HTTP JSON API wrapper n more
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I moved the "old" geraldb/football.js repo to its own GitHub
+org, that is, gihub.com/footballjs [1].
+
+  Why? The idea is it to make it easier to use and reuse.  The new
+repos include:
+
+  1) /starter
+
+    A simple starter template and script for a football matchday widget.
+
+  2) /football.api.js
+
+    The "official" HTTP JSON API wrapper for the football.db (will
+also become a bower module, e.g. install with $ bower install
+football-api).
+
+  3) /football.js
+
+    Some sample football matchday widgets in JavaScript.
+
+  4)  /football.html
+
+    Some sample football matchday custom tags / elements / web
+components (very early stage).
+
+
+    That's it. Questions? Comments?  Cheers.
+
+
+[1] github.com/footballjs
+

@@ -1,0 +1,57 @@
+From 2494647238656@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2491996438528
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a297314b7a767fe9
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.50.253.196 with SMTP id ac4mr7714180igd.7.1425489351074;
+        Wed, 04 Mar 2015 09:15:51 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.29.74 with SMTP id a68ls675884qga.76.gmail; Wed, 04 Mar
+ 2015 09:15:50 -0800 (PST)
+X-Received: by 10.140.108.182 with SMTP id j51mr99358qgf.24.1425489350862;
+        Wed, 04 Mar 2015 09:15:50 -0800 (PST)
+X-Google-Doc-Id: ca9acd8c17307a01
+X-Google-Web-Client: true
+Date: Wed, 4 Mar 2015 09:15:49 -0800 (PST)
+From: Joe Rapp <rapp.user06@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <c7f96af1-dd1a-43ac-be94-718e25b2e129@googlegroups.com>
+Subject: How to upload data to a Postgresql instance ?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_926_1392707191.1425489349923"
+X-Google-Token: EMX73KcFMZGU-leweig0
+X-Google-IP: 78.192.191.16
+
+------=_Part_926_1392707191.1425489349923
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_927_1895984286.1425489349924"
+
+------=_Part_927_1895984286.1425489349924
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I'm trying to set up a NodeJS server running on Heroku and pulling its data 
+from a postgresql instance.
+
+I now have a sport.db file that I would like to upload to the postgresql 
+instance.  Reading some older posts in the group, I think others were 
+successful and managed to simply pg push the data.
+
+My problem is that it seems that I cannot push directly the sport.db and 
+that I first need to dump the database into a file that postgresql can 
+process.  If anybody has done it or knows how to do it, I would appreciate 
+any pointers.
+
+Thanks,
+Joe
+
+------=_Part_927_1895984286.1425489349924
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">I'm trying to set up a NodeJS server running on Heroku and pulling its data from a postgresql instance.<br><br>I now have a sport.db file that I would like to upload to the postgresql instance.&nbsp; Reading some older posts in the group, I think others were successful and managed to simply pg push the data.<br><br>My problem is that it seems that I cannot push directly the sport.db and that I first need to dump the database into a file that postgresql can process.&nbsp; If anybody has done it or knows how to do it, I would appreciate any pointers.<br><br>Thanks,<br>Joe<br></div>
+------=_Part_927_1895984286.1425489349924--
+------=_Part_926_1392707191.1425489349923--
+

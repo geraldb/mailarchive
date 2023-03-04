@@ -1,0 +1,98 @@
+From 6204389638145048576@xxx Sun Oct 11 14:00:32 +0000 2015
+X-GM-THRID: 6204336722951536640
+Date: Sun, 11 Oct 2015 07:00:31 -0700 (PDT)
+From: Fazle Taher <ftaher@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <92b0ce09-be31-4eb2-ae64-7c0fc3c06acd@googlegroups.com>
+In-Reply-To: <CAAxEZd8M0DSjTU1B4ChLAOkGvwE0Rj9sKmwu=j7g-DOQaP2fdQ@mail.gmail.com>
+References: <446123ea-0a1c-456a-897c-b6a3853689f5@googlegroups.com>
+ <CAAxEZd8M0DSjTU1B4ChLAOkGvwE0Rj9sKmwu=j7g-DOQaP2fdQ@mail.gmail.com>
+Subject: Re: [opensport] ERROR: worlddb setup
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3692_1213182826.1444572031812"
+X-Google-Token: EP_W6bAFom-NGML7Z1Q0
+X-Google-IP: 108.48.154.228
+
+------=_Part_3692_1213182826.1444572031812
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3693_1985559704.1444572031813"
+
+------=_Part_3693_1985559704.1444572031813
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for your prompt response. Importing worlddb step gets stuck at 
+the point as mentioned earlier but works just fine when importing through 
+Datafile. FYI, I've also tried, 
+
+sportdb -n mls.db setup --include major-league-soccer --worldinclude 
+world.db
+
+but still had the same problem. As for now I'm using datafile to import 
+world db and load sports data directly from git repos. 
+
+Thank you
+
+
+On Sunday, October 11, 2015 at 6:44:45 AM UTC-4, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    Again thanks for trying the football.db. 
+>
+>    If you want to load / read football datasets you have to pass them 
+> along too in the command line or use some extra  sportdb update 
+> lines. 
+>
+>     Note: The "best" recommended way to build yourself a "custom" 
+> football.db is using Datafile. In a datafile you list all datasets you 
+> want to include. See the /datafile repo [1] for more examples. Cheers. 
+>
+> [1] github.com/openfootball/datafile 
+>
+
+------=_Part_3693_1985559704.1444572031813
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thank you for your prompt response. Importing worlddb step=
+ gets stuck at the point as mentioned earlier but works just fine when impo=
+rting through Datafile. FYI, I&#39;ve also tried,=C2=A0<div><br><div><span =
+style=3D"font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, =
+monospace; font-size: 13.6px; line-height: inherit; color: rgb(51, 51, 51);=
+ background-color: transparent;">sportdb -n mls.db setup --include major-le=
+ague-soccer --worldinclude world.db</span></div><div><font color=3D"#333333=
+" face=3D"Consolas, Liberation Mono, Menlo, Courier, monospace"><span style=
+=3D"font-size: 13.6px;"><br></span></font></div><div>but still had the same=
+ problem. As for now I&#39;m using datafile to import world db and load spo=
+rts data directly from git repos.=C2=A0</div><div><br></div><div>Thank you<=
+/div><div><br></div><div><br></div><div>On Sunday, October 11, 2015 at 6:44=
+:45 AM UTC-4, Gerald Bauer wrote:<blockquote class=3D"gmail_quote" style=3D=
+"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex=
+;">Hello,
+<br>
+<br>=C2=A0 =C2=A0Again thanks for trying the football.db.
+<br>
+<br>=C2=A0 =C2=A0If you want to load / read football datasets you have to p=
+ass them
+<br>along too in the command line or use some extra =C2=A0sportdb update
+<br>lines.
+<br>
+<br>=C2=A0 =C2=A0 Note: The &quot;best&quot; recommended way to build yours=
+elf a &quot;custom&quot;
+<br>football.db is using Datafile. In a datafile you list all datasets you
+<br>want to include. See the /datafile repo [1] for more examples. Cheers.
+<br>
+<br>[1] <a href=3D"http://github.com/openfootball/datafile" target=3D"_blan=
+k" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/u=
+rl?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\46sa\75D\46sntz\07=
+51\46usg\75AFQjCNGuSSz2iZM4_c46k47eU9RFDWMMTQ&#39;;return true;" onclick=3D=
+"this.href=3D&#39;http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fo=
+penfootball%2Fdatafile\46sa\75D\46sntz\0751\46usg\75AFQjCNGuSSz2iZM4_c46k47=
+eU9RFDWMMTQ&#39;;return true;">github.com/openfootball/<wbr>datafile</a>
+<br></blockquote></div></div></div>
+------=_Part_3693_1985559704.1444572031813--
+
+------=_Part_3692_1213182826.1444572031812--
+

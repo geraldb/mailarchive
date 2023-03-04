@@ -1,0 +1,55 @@
+From 6213602263525490688@xxx Thu Nov 05 09:50:14 +0000 2015
+X-GM-THRID: 6209936297020096512
+X-Received: by 10.182.28.70 with SMTP id z6mr5262913obg.41.1446717014240;
+        Thu, 05 Nov 2015 01:50:14 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.50.183.9 with SMTP id ei9ls122654igc.42.gmail; Thu, 05 Nov
+ 2015 01:50:14 -0800 (PST)
+X-Received: by 10.50.79.234 with SMTP id m10mr1533917igx.5.1446717014083;
+        Thu, 05 Nov 2015 01:50:14 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22c.google.com (mail-io0-x22c.google.com. [2607:f8b0:4001:c06::22c])
+        by gmr-mx.google.com with ESMTPS id f7si1489703igc.0.2015.11.05.01.50.14
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 05 Nov 2015 01:50:14 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22c as permitted sender) client-ip=2607:f8b0:4001:c06::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x22c.google.com with SMTP id 74so18026298ioc.2
+        for <openmundi@googlegroups.com>; Thu, 05 Nov 2015 01:50:14 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=XI0Mxy7KWkwLV4dITn9juFv+ewrmePPZjCKaBpi3XVw=;
+        b=gh9Y7Bniag/O0dq8Qr1cIOIsi7eFh0Xqzqu84azx52HDY+AwbZ7+jdLVMEiM7A/gdw
+         Nsj33ObTtiHQJq88YThbR5sjzeeueUM+VRy96HlyDaN11X7O3CZu0qfS0+cBzZoGWhHj
+         uH0/YFGEakvzKe11+z4JQ0AVmL/PEZW7DqQzu5WYydmluJf34qxtkNzMpXSf40dVD8pB
+         Ty4aBD0Rwln9czz9vecDdzYVGQCi66SQsgXhr0O2xICfMrqgtk/ygunu9E+aWD3yhtOY
+         CIsFjigtIA9IgPvheMktqrIvTg6Ha/Wev3z/DJRgr2OoEeUe440dF6ZxRxfrEt035Ur4
+         lomQ==
+MIME-Version: 1.0
+X-Received: by 10.107.150.12 with SMTP id y12mr9599519iod.52.1446717013973;
+ Thu, 05 Nov 2015 01:50:13 -0800 (PST)
+Received: by 10.107.138.29 with HTTP; Thu, 5 Nov 2015 01:50:13 -0800 (PST)
+In-Reply-To: <c355ef1d-cdf7-479c-8145-f71292da04f4@googlegroups.com>
+References: <CAAxEZd-4wHDKYowuQ0H3Ygzb0VYEWwSR6a9w24UNTY7UTi+Png@mail.gmail.com>
+	<c355ef1d-cdf7-479c-8145-f71292da04f4@googlegroups.com>
+Date: Thu, 5 Nov 2015 10:50:13 +0100
+Message-ID: <CAAxEZd_Ce+pHcyV1Z4DtPWBkAki_ekWx7t8sDcSX2H=yxqztHg@mail.gmail.com>
+Subject: Re: [openmundi] Re: factbook.json - 260+ Public Domain (Free) Country
+ Profiles Updated
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Eckhard Licher <eckhard.licher@googlemail.com>
+Cc: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Good point. Thanks for the reminder. The page info is (still)
+missing in the json output. Will try to get it added with the next
+/factbook.json update. Cheers.
+

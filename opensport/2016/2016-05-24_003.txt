@@ -1,0 +1,63 @@
+From 6288320167559561216@xxx Tue May 24 18:13:53 +0000 2016
+X-GM-THRID: 6288318359550296064
+X-Received: by 10.66.80.37 with SMTP id o5mr3778781pax.13.1464113632752;
+        Tue, 24 May 2016 11:13:52 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.7.8 with SMTP id 8ls256480ioh.81.gmail; Tue, 24 May 2016
+ 11:13:52 -0700 (PDT)
+X-Received: by 10.50.152.193 with SMTP id va1mr16680829igb.7.1464113632388;
+        Tue, 24 May 2016 11:13:52 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22f.google.com (mail-ig0-x22f.google.com. [2607:f8b0:4001:c05::22f])
+        by gmr-mx.google.com with ESMTPS id v62si164516itf.3.2016.05.24.11.13.52
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 24 May 2016 11:13:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22f as permitted sender) client-ip=2607:f8b0:4001:c05::22f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ig0-x22f.google.com with SMTP id ww4so57248349igb.1
+        for <opensport@googlegroups.com>; Tue, 24 May 2016 11:13:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=S+UsYVEWYKXEk7tqALTGuD4SUhhGFoBYAnA8M8g5ub4=;
+        b=DPyPH1VlPOTvUPkaOer3udxZFWfNoCG7tjGmWs5gZQrs7keacrWAPWFrYSKEl5wSrX
+         FewyG8QzFttE32j4WgcVhqm3yGGRKhHn87tnDetJNqUPG/av1Gnr/S22qMTwBPfFqjAe
+         T1gnghv8aRlCl/0kD5DE2IFgxGb0eYnEUr7e+6wlAM46l73RjjoEcy4ZHw5q9xeIy9Pi
+         KfuCP12AlXfw9Ft7HyJWywA7oPajUq86I91LNnSp/I3LbteTqydvWWINWgsNyWPmo4Pc
+         FKjyrauDn+QLn7l5Jl8xfoRMkRyjK0fuIdbTgpcYNdh7c4kkEot1bBTqIXLJeaauE1GI
+         SldQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=S+UsYVEWYKXEk7tqALTGuD4SUhhGFoBYAnA8M8g5ub4=;
+        b=E4GVtBrCxAum8SZSE8gNQByfOCcQEG1JeWdnGbTj9EKFtqV3IWsbitRwA/xAClIzLG
+         M4+o4tvzqRpXe9HoxUcV/3SpdeDZrwgzR6WHU+Bre88TCNEEz8py+nLlE/8Bpz2NYCoz
+         5C8wWMTpxgOk5tQA6MwKAJX5lkdZz9egLb0nTlMyoCZyqjYRxIAB1OEeU010Q6IU6tyH
+         swn6Gu0F06zie/tO39jKysd8+UpeIwjZkX1c3Qiys8mXP/c5wWKJaVhwHt2PnYCHKgL8
+         wThLDS0nv/V/0RnrKRCTsvLFq9M1cMPgzHjlIJxTRGoQz+vVDnkGaADkItv7no9c5RM7
+         NQew==
+X-Gm-Message-State: ALyK8tKC3jXk09aXQNYv5/UbyEO1yPl1Qc6afoOyQHbzZm9s47TUMoyWhwFuwlcOzKJOfDz5JbOgI4vaYCwDeg==
+MIME-Version: 1.0
+X-Received: by 10.50.20.132 with SMTP id n4mr145200ige.5.1464113632223; Tue,
+ 24 May 2016 11:13:52 -0700 (PDT)
+Received: by 10.107.129.101 with HTTP; Tue, 24 May 2016 11:13:52 -0700 (PDT)
+In-Reply-To: <CAAxEZd-AXaerwu2iRYo7ZkFYFJQUC3DJB99J4KTyp6WLRJgXaQ@mail.gmail.com>
+References: <62525b30-de0f-48b8-a7de-75c89df57b42@googlegroups.com>
+	<CAAxEZd-AXaerwu2iRYo7ZkFYFJQUC3DJB99J4KTyp6WLRJgXaQ@mail.gmail.com>
+Date: Tue, 24 May 2016 20:13:52 +0200
+Message-ID: <CAAxEZd9f9XpuJvC75VSrUt7Gt4wHwQW_AeCJfqN3qAfmdctoCA@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_=5Bopensport=5D_Copa_Am=C3=A9rica_Centenario?=
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Yuriy,
+
+   Errata: Sorry for misspelling your name try to get it wright next
+time. Cheers.
+

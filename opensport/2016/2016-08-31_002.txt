@@ -1,0 +1,94 @@
+From 6324939758780809216@xxx Wed Aug 31 10:36:35 +0000 2016
+X-GM-THRID: 6324939761964285952
+X-Received: by 10.13.215.207 with SMTP id z198mr6391446ywd.47.1472639795020;
+        Wed, 31 Aug 2016 03:36:35 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.47.105 with SMTP id h96ls3456838otb.40.gmail; Wed, 31 Aug
+ 2016 03:36:34 -0700 (PDT)
+X-Received: by 10.157.56.117 with SMTP id r50mr6442156otd.19.1472639794660;
+        Wed, 31 Aug 2016 03:36:34 -0700 (PDT)
+Received: by 10.202.74.73 with SMTP id x70msoia;
+        Tue, 30 Aug 2016 19:20:02 -0700 (PDT)
+X-Received: by 10.36.127.195 with SMTP id r186mr370146itc.0.1472610002318;
+        Tue, 30 Aug 2016 19:20:02 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Tue, 30 Aug 2016 19:20:01 -0700 (PDT)
+From: Charles Humphries <charles.humphries.jr@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <6c088125-462a-4774-b208-761a686b028e@googlegroups.com>
+Subject: Error when running sportdb stats
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1442_1212914511.1472610001580"
+X-Google-Token: ENH9mL4F9YdXl1ElW4c0
+X-Google-IP: 71.57.205.131
+
+------=_Part_1442_1212914511.1472610001580
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1443_1575595662.1472610001580"
+
+------=_Part_1443_1575595662.1472610001580
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+I am trying to set this up using Ruby per your suggestion. Got it all 
+setup, cloned the eng-england repo. 
+
+When I run 'sportdb stats' to double check everything is set up, I get the 
+following:
+
+Connecting to db using settings: 
+
+{:adapter=>"sqlite3", :database=>"./sport.db"}
+
+
+*** error: Could not find table 'leagues'
+
+
+As far as I can tell, the leagues table is there. 
+
+
+Any suggestions?
+
+
+Thanks
+
+
+
+
+------=_Part_1443_1575595662.1472610001580
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi,<div><br></div><div>I am trying to set this up using Ru=
+by per your suggestion. Got it all setup, cloned the eng-england repo.=C2=
+=A0</div><div><br></div><div>When I run &#39;sportdb stats&#39; to double c=
+heck everything is set up, I get the following:</div><div><br></div><div><p=
+ class=3D"p1"><span class=3D"s1">Connecting to db using settings:=C2=A0</sp=
+an></p><p class=3D"p1"><span class=3D"s1">{:adapter=3D&gt;&quot;sqlite3&quo=
+t;, :database=3D&gt;&quot;./sport.db&quot;}</span></p><p class=3D"p2"><span=
+ class=3D"s1"></span><br></p><p class=3D"p1">
+
+
+
+
+
+
+
+
+
+
+</p><p class=3D"p1"><span class=3D"s1">*** error: Could not find table &#39=
+;leagues&#39;</span></p><p class=3D"p1"><span class=3D"s1"><br></span></p><=
+p class=3D"p1"><span class=3D"s1">As far as I can tell, the leagues table i=
+s there.=C2=A0</span></p><p class=3D"p1"><span class=3D"s1"><br></span></p>=
+<p class=3D"p1"><span class=3D"s1">Any suggestions?</span></p><p class=3D"p=
+1"><span class=3D"s1"><br></span></p><p class=3D"p1"><span class=3D"s1">Tha=
+nks</span></p><p class=3D"p1"><span class=3D"s1"><br></span></p><p class=3D=
+"p1"><span class=3D"s1"><br></span></p></div></div>
+------=_Part_1443_1575595662.1472610001580--
+
+------=_Part_1442_1212914511.1472610001580--
+

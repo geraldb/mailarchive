@@ -1,0 +1,63 @@
+From 2666302275584@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2656382746624
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,9c73b0cae67bd669
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.141.102 with SMTP id rn6mr4397796pab.37.1433948704529;
+        Wed, 10 Jun 2015 08:05:04 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.6.7 with SMTP id 7ls584462iog.26.gmail; Wed, 10 Jun 2015
+ 08:05:04 -0700 (PDT)
+X-Received: by 10.42.216.11 with SMTP id hg11mr5929789icb.28.1433948704078;
+        Wed, 10 Jun 2015 08:05:04 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qg0-x22d.google.com (mail-qg0-x22d.google.com. [2607:f8b0:400d:c04::22d])
+        by gmr-mx.google.com with ESMTPS id u1si1208349qck.0.2015.06.10.08.05.03
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 10 Jun 2015 08:05:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c04::22d as permitted sender) client-ip=2607:f8b0:400d:c04::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c04::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qg0-x22d.google.com with SMTP id 75so17061965qgf.1
+        for <opensport@googlegroups.com>; Wed, 10 Jun 2015 08:05:03 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=ItpL5DDwhAclYhH6WTMaWGTi4ANSyq9vtuZvMiHOq00=;
+        b=Kr5zzuDTo3vQE60Zxp+hNtZGhykzbucW7v104BWvSOwQXC9ycDajeIWVXWIbuzdsRt
+         6E81Vr7cTpw0WbHSpvAO9RQn0VqLrXEIlf8ZTFEBsIsbiKW1/Q8ddh/nu8VZ3GCfQltB
+         EG2UOvh9lv7KzksChUr8DvqseTQjRg7NfnIPWDqoXQEM6F6y4vmGeg7vDlFVn63/2CQB
+         sBEegb0mmvUYc7eomMrzjec8wRFHoj4HnEnrvuRF7lcyxFvhOW63tn07pvtXJ//xHvbB
+         niH395LtqP03vkL2yar0UZuKf5RrLlZh87yptIAA8/3A27BWgBllG6mmDeP4cpMFFv8K
+         SBdg==
+MIME-Version: 1.0
+X-Received: by 10.55.22.130 with SMTP id 2mr7492023qkw.45.1433948703846; Wed,
+ 10 Jun 2015 08:05:03 -0700 (PDT)
+Received: by 10.229.180.2 with HTTP; Wed, 10 Jun 2015 08:05:03 -0700 (PDT)
+In-Reply-To: <99b92dbc-2c21-46e1-a98e-2e2c1792e3e5@googlegroups.com>
+References: <98f20ffb-d01c-4a53-ab1a-2fae9511380c@googlegroups.com>
+	<99b92dbc-2c21-46e1-a98e-2e2c1792e3e5@googlegroups.com>
+Date: Wed, 10 Jun 2015 17:05:03 +0200
+Message-ID: <CAAxEZd_-tGGCT9F+crHwaA4UR1L6Utov8vaChMtVOwfFb93mXg@mail.gmail.com>
+Subject: Re: [opensport] Re: Sportdb error
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  Just one more thing - sorry - you will also need an "old" version of
+textutils (the latest working version is 1.2.1) e.g.
+
+   $ gem install textutils -v 1.2.1
+
+  and uninstall the new version e.g. 1.2.2, for example e.g.
+
+  $ gem uninstall textutils -v 1.2.2
+
+  Cheers.
+

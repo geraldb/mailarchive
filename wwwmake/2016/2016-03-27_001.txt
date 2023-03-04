@@ -1,0 +1,81 @@
+From 6266743179043667968@xxx Sun Mar 27 14:44:08 +0000 2016
+X-GM-THRID: 6266743178541400064
+X-Received: by 10.107.134.221 with SMTP id q90mr15571548ioi.29.1459089847711;
+        Sun, 27 Mar 2016 07:44:07 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.50.59.211 with SMTP id b19ls684873igr.34.canary; Sun, 27 Mar
+ 2016 07:44:07 -0700 (PDT)
+X-Received: by 10.66.163.4 with SMTP id ye4mr15032822pab.23.1459089847294;
+        Sun, 27 Mar 2016 07:44:07 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x230.google.com (mail-io0-x230.google.com. [2607:f8b0:4001:c06::230])
+        by gmr-mx.google.com with ESMTPS id oq8si191478igb.0.2016.03.27.07.44.07
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 27 Mar 2016 07:44:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) client-ip=2607:f8b0:4001:c06::230;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x230.google.com with SMTP id c63so157089273iof.0
+        for <wwwmake@googlegroups.com>; Sun, 27 Mar 2016 07:44:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to;
+        bh=mY4x6Rf8spoU5UvhpeVthpQaSzEregvAkmHvNNS9DQw=;
+        b=perXGhWyU9Mm5wE1htB0ngO+H1WpeX2+oEx/4gwhpueRvpVuSUd9oPBgVdHtJp31rk
+         TvKi/w+yArF3/3SdkVadz2ZTP8S+bW393yvcHloDMxG7cePbJTB3b9xdAWxDllzDqgfp
+         fFx4/ylfZUe6JOA/rri5Thf1v9wEHqghvjO6mBKLQfpAEYRz1TuZxtDILPTHCPouDqA5
+         jsHvZuapZYJNazK1CiReb6/9K1MiPTC34cjUKDjptxPAFshErUQvOaxt3ExUwZfLbJoZ
+         2/Q9JeJvedc7J6gZ6a3fgCYbgKwvRhtguRr2SOtloJTNqKjblCDdv+3yENzQF0bcaWPw
+         GGyw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:date:message-id:subject:from:to;
+        bh=mY4x6Rf8spoU5UvhpeVthpQaSzEregvAkmHvNNS9DQw=;
+        b=CEFBd628LMG9JeDGTLutH3I1b9SEvXxNuu+AWpxot+87UqWf2dDQs/GZbdbZLTCOF3
+         ZByc+FijvM5tvreS2RNK8AacqQ/Vg7FiMGX7f/SE8Zi65hzBizmasXYJwm4np3CCueHl
+         IbXtSn9bvaa5KJqAYd+Hb2unxgYV3ngbV8yQnTGKYT2VTlzZpHR5nBKMz5ua5/bSEvmS
+         tOn12CuRLXCDwL3UYA2xADNfyTkLqUQSKCoZGgibir+2bvHBLOIQbF49OOkcSRy93Sjb
+         CCtXor9FlLid3vo/dzl0wbut975m5gY1ci6eB9rif9VNVMTvzN4xRYM9q5BCPv+fW5+Z
+         nKgw==
+X-Gm-Message-State: AD7BkJIH5Jh9EYgbVTSWBeRIDsCkh+920mscZsEwi48bJyRy2nvsMFhmfWxw/T0J3GymmlCDIECsAiTOGmK+Cw==
+MIME-Version: 1.0
+X-Received: by 10.107.8.160 with SMTP id h32mr22493153ioi.15.1459089847009;
+ Sun, 27 Mar 2016 07:44:07 -0700 (PDT)
+Received: by 10.107.129.232 with HTTP; Sun, 27 Mar 2016 07:44:06 -0700 (PDT)
+Date: Sun, 27 Mar 2016 16:44:06 +0200
+Message-ID: <CAAxEZd8srDGuMN7gcmay=ZMsGc6jHGNbFRrH1eg=gKmPP9VqEw@mail.gmail.com>
+Subject: Slide Show (S9) Presentation Templates Now Jekyll-Compatible (Using
+ Liquid) - S6 Blank, deck.js 'n' More
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Starting with Slide Show (S9)[1] v3.0 all slide show/presentation
+templates are now Jekyll-compatible and use Liquid.
+
+  Why? The idea is that your slide show template pack is "just" a
+Jekyll site and, thus, you can use your Liquid template skills for
+creating or changing slide show / presentation templates and if you
+use GitHub you can use the free built-in GitHub pages service for live
+previews, testing, and more.
+
+  For some first example see:
+
+  - S6 Blank templates [2] and the live demo [3]
+  - deck.js templates [4] and the live demo [5]
+
+   Any favorite slide show/presentation package? Questions? Comments?
+Welcome. Cheers.
+
+
+[1] http://slideshow-s9.github.io
+[2] https://github.com/slideshow-templates/slideshow-s6-blank
+[3] http://slideshow-templates.github.io/slideshow-s6-blank/slides.html
+[4] https://github.com/slideshow-templates/slideshow-deck.js
+[5] http://slideshow-templates.github.io/slideshow-deck.js/slides.html
+

@@ -1,0 +1,100 @@
+From 6183906150648381440@xxx Mon Aug 17 09:14:09 +0000 2015
+X-GM-THRID: 6183676375303454720
+Date: Mon, 17 Aug 2015 02:14:08 -0700 (PDT)
+From: Victor DD <victorddesigner@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Cc: victorddesigner@gmail.com
+Message-Id: <f9777b8a-a64e-4091-b6a5-f2fd2c04874a@googlegroups.com>
+In-Reply-To: <CAAxEZd8kVvdzeA61PxLoOSEfkRvc8M=+3U2zN2GA-4+h_MCt4g@mail.gmail.com>
+References: <b7d238a5-07df-48bc-8f14-ea75abc8ab07@googlegroups.com>
+ <CAAxEZd8kVvdzeA61PxLoOSEfkRvc8M=+3U2zN2GA-4+h_MCt4g@mail.gmail.com>
+Subject: Re: [openmundi] loop/error on sutup
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_94_1518118589.1439802849014"
+X-Google-Token: EODLxq4FHo0BJTpidjU0
+X-Google-IP: 93.51.249.50
+
+------=_Part_94_1518118589.1439802849014
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_95_90680341.1439802849014"
+
+------=_Part_95_90680341.1439802849014
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+I understand the error finally.
+
+The problem is in line 13 of file world.db/asia/pk-pakistan/cities.txt,=20
+when parse this line:
+
+Pex=CC=8Cawar|Pish=C5=8Dr|Pish=C4=81war [Peshawar|Pekhawar], 1_218_773, m:1=
+.8m  ## Khyber=20
+Pakhtunkhwa
+
+found the pipe "|" and go to on error :
+
+[debug] [NameTokenizer] eos?: false, rest: >[Peshawar<
+
+I change the line into:
+
+Peshawar [Peshawar], 1_218_773, m:1.8m  ## Khyber Pakhtunkhwa
+
+Il giorno domenica 16 agosto 2015 22:37:43 UTC+2, Gerald Bauer ha scritto:
+>
+> Hello,=20
+>    Can you post the stack trace (error messages)? Hard to tell from=20
+> your description.=20
+>
+>   The "easiest" and recommend way to build the world.db is using=20
+> datafiles [1] e.g.=20
+>
+>    $ worlddb new world=20
+>
+>   Cheers.=20
+>
+> [1] github.com/openmundi/datafile=20
+>
+
+------=_Part_95_90680341.1439802849014
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><blockquote style=3D"margin: 0 0 0 40px; border: none; pad=
+ding: 0px;">I understand the error finally.</blockquote><div>The problem is=
+ in line 13 of file world.db/asia/pk-pakistan/cities.txt, when parse this l=
+ine:<br><br>Pex=CC=8Cawar|Pish=C5=8Dr|Pish=C4=81war [Peshawar|Pekhawar], 1_=
+218_773, m:1.8m =C2=A0## Khyber Pakhtunkhwa<br><br>found the pipe &quot;|&q=
+uot; and go to on error :</div><div><br></div><div>[debug] [NameTokenizer] =
+eos?: false, rest: &gt;[Peshawar&lt;<br></div><div><br></div><div>I change =
+the line into:</div><div><br></div><div>Peshawar [Peshawar], 1_218_773, m:1=
+.8m =C2=A0## Khyber Pakhtunkhwa<br></div><br>Il giorno domenica 16 agosto 2=
+015 22:37:43 UTC+2, Gerald Bauer ha scritto:<blockquote class=3D"gmail_quot=
+e" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;paddin=
+g-left: 1ex;">Hello,
+<br>=C2=A0 =C2=A0Can you post the stack trace (error messages)? Hard to tel=
+l from
+<br>your description.
+<br>
+<br>=C2=A0 The &quot;easiest&quot; and recommend way to build the world.db =
+is using
+<br>datafiles [1] e.g.
+<br>
+<br>=C2=A0 =C2=A0$ worlddb new world
+<br>
+<br>=C2=A0 Cheers.
+<br>
+<br>[1] <a href=3D"http://github.com/openmundi/datafile" target=3D"_blank" =
+rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/url?=
+q\75http%3A%2F%2Fgithub.com%2Fopenmundi%2Fdatafile\46sa\75D\46sntz\0751\46u=
+sg\75AFQjCNGhhvH94KClxkfOIxB9ORasIGExeA&#39;;return true;" onclick=3D"this.=
+href=3D&#39;http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenmun=
+di%2Fdatafile\46sa\75D\46sntz\0751\46usg\75AFQjCNGhhvH94KClxkfOIxB9ORasIGEx=
+eA&#39;;return true;">github.com/openmundi/datafile</a>
+<br></blockquote></div>
+------=_Part_95_90680341.1439802849014--
+
+------=_Part_94_1518118589.1439802849014--
+

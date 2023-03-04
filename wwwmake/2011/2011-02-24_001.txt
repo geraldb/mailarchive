@@ -1,0 +1,92 @@
+From 853705490432@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 830420811776
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,cfa826538012f8f0
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.143.157.1 with SMTP id j1mr213852wfo.6.1298579983255;
+        Thu, 24 Feb 2011 12:39:43 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.142.97.18 with SMTP id u18ls771069wfb.2.p; Thu, 24 Feb 2011
+ 12:39:42 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.142.239.6 with SMTP id m6mr93857wfh.54.1298579982206; Thu, 24
+ Feb 2011 12:39:42 -0800 (PST)
+Received: by y31g2000prd.googlegroups.com with HTTP; Thu, 24 Feb 2011 12:39:42
+ -0800 (PST)
+Date: Thu, 24 Feb 2011 12:39:42 -0800 (PST)
+In-Reply-To: <AANLkTi=gL=0xkySHiwcBp=aX3EqdMxj9CUnjTMPNFVtE@mail.gmail.com>
+X-IP: 216.92.130.84
+References: <249a085f-193f-478d-b64b-9d1b2427b4da@r4g2000vbq.googlegroups.com> <AANLkTi=gL=0xkySHiwcBp=aX3EqdMxj9CUnjTMPNFVtE@mail.gmail.com>
+User-Agent: G2/1.0
+X-Google-Token: EI6Em-sEGrg89W9eh7U0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.9.2.12)
+ Gecko/20101031 Firefox/3.6.12,gzip(gfe)
+Message-ID: <4175dcc1-5703-463d-9533-ca3b2ab95b18@y31g2000prd.googlegroups.com>
+Subject: Re: slideshow 0.9.9 doesn't seem to support gradients anymore?
+From: Mike Kelly <mkelly32@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+So, looks like I have to include that before every slide, then? That's
+kinda annoying. I guess I should just write my own CSS for this then?
+Something like this seems to work, will it continue to work in the
+future?
+
+%css
+.slide {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(blue),
+to(black));
+    background: -moz-linear-gradient(top, blue, black);
+}
+body { color: white; }
+a:link, a:visited { color: white; }
+%end
+
+Also, if this is the preferred way to do things, the website could
+probably use an update: http://slideshow.rubyforge.org/themes.html
+
+On Feb 17, 4:44=A0pm, Gerald Bauer <gerald.ba...@gmail.com> wrote:
+> Hello Mike,
+>
+> > I just updated my slideshow gem (don't know what version I had before,
+> > but probably something about a year old), and now it seems that the
+> > gradient: settings don't do anything anymore -- I just get a solid
+> > white background. Any suggestions?
+>
+> =A0 =A0 The old way of gradient support using SVG is discouraged (outdate=
+d
+> to be honest). It's far easier to use CSS3 gradients. There's nothing
+> special about it just add it to your stylesheet.
+>
+> =A0 =A0 To make it easy to use gradients cross-browser you can use the
+> built-in gradient helper. As an example search for gradient in the
+> rest example online @https://github.com/geraldb/slideshow/raw/master/samp=
+les/rest.textile
+>
+> =A0 =A0 Examples include:
+>
+> =A0 =A0 {{ gradient silver white silver white }}
+>
+> =A0 =A0 or
+>
+> =A0 =A0{{ gradient yellow orange yellow orange }}
+>
+> =A0 =A0This basically is just a shortcut for:
+>
+> .gradient_yellow_orange {
+>
+> =A0 background: -webkit-gradient(linear, 0% 0%, 0% 100%,
+> =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0from(yellow), to(orange),
+> =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0color-stop(0.33,orange), color-stop(0.=
+66,yellow));
+>
+> =A0 background: -moz-linear-gradient(top, yellow, orange, yellow, orange)=
+;
+>
+> }
+>
+> =A0 =A0 =A0Let me know if this makes sense. Question, comments welcome. C=
+heers.
+

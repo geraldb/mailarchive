@@ -1,0 +1,136 @@
+From 1350488293376@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1320226390016
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,9b2a3cc0c80f2a0a
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.236.156.33 with SMTP id l21mr7254721yhk.18.1374182424617;
+        Thu, 18 Jul 2013 14:20:24 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.18.196 with SMTP id y4ls1592253qed.38.gmail; Thu, 18 Jul
+ 2013 14:20:24 -0700 (PDT)
+X-Received: by 10.49.101.34 with SMTP id fd2mr643928qeb.12.1374182424150;
+        Thu, 18 Jul 2013 14:20:24 -0700 (PDT)
+X-Google-Doc-Id: f0eaeacbbe540c56
+X-Google-Web-Client: true
+Date: Thu, 18 Jul 2013 14:20:23 -0700 (PDT)
+From: Damon Overboe <damon.overboe@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <b8f4c7ea-65ca-49e8-8f16-ce6a660da7d5@googlegroups.com>
+In-Reply-To: <CAAxEZd8T-wgS0ntDHRFsa_=sdOWeReDtiA8jU0rj=3LcgiZkww@mail.gmail.com>
+References: <fa26f980-c786-4116-bc44-fee38766ef52@googlegroups.com>
+ <d803668f-5ad1-4afc-b5b5-ad49fdc12562@googlegroups.com>
+ <237a57b7-ed83-45dc-b721-2f1be0bcb7fd@googlegroups.com>
+ <CAAxEZd885494zwWQZ00BxCmM0SROwQTuXEXAXVS7rNp2qofY5A@mail.gmail.com>
+ <bdfc7e2d-29d7-4965-b988-ca168edc8ccb@googlegroups.com>
+ <CAAxEZd8T-wgS0ntDHRFsa_=sdOWeReDtiA8jU0rj=3LcgiZkww@mail.gmail.com>
+Subject: Re: [slideshow:310] Re: Failing to install on RedCloth?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_20_21718136.1374182423891"
+X-Google-Token: EJe4oY8FHIFkzFiBIMY0
+X-Google-IP: 64.22.232.2
+
+------=_Part_20_21718136.1374182423891
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_21_11616645.1374182423891"
+
+------=_Part_21_11616645.1374182423891
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+On Thursday, July 18, 2013 2:36:20 AM UTC-5, Gerald Bauer wrote:
+>
+> Hello, 
+>
+> > It made it further it seems but failed on `atomic` with a similar error. 
+> > 
+> > Is it possible or probable that there's something wrong with my ruby 
+> > environment? 
+> > 
+> > $ sudo gem install slideshow 
+> > 
+> > Fetching: gli-2.7.0.gem (100%) 
+> > Fetching: slideshow-2.3.0.gem (100%) 
+> > *** Tips on themes removed *** 
+> > Fetching: kramdown-1.1.0.gem (100%) 
+> > Fetching: i18n-0.6.4.gem (100%) 
+> > Fetching: tzinfo-0.3.37.gem (100%) 
+> > Fetching: minitest-4.7.5.gem (100%) 
+> > Fetching: atomic-1.1.10.gem (100%) 
+> > 
+> > Building native extensions.  This could take a while... 
+> > ERROR:  Error installing slideshow: 
+> > 
+> >     ERROR: Failed to build gem native extension. 
+>
+>     Sorry not sure what's wrong. It looks like you cannot install Ruby 
+> libraries that require native extension, that is, that ship as C/C++ 
+> code and require a C/C++ tool chain to get compiled during 
+> installation. If you're on Linux try installing the build-essentials 
+> package or similar. Not sure if that helps. Cheers. 
+>
+> PS: I will be offline (on vaction) for ten days. 
+>
+
+Enjoy your digital vacation!
+
+Turns out, my skills at Google suck I guess. I had the `build-essential` 
+package loaded already. The results I found the other night led me to the 
+assumption, probably because of `require` that the problem was with the 
+relative paths.
+
+But, I just found [this 
+article](http://stackoverflow.com/questions/12731904/rails-installation-failed-on-ubuntu-with-cannot-load-such-file-mkmf) 
+which seems to key off of `mkmf`. The problem was that I did not have ruby 
+dev installed, so this solved it:
+
+`sudo apt-get install ruby1.9.1-dev`
+
+After that, slideshow installed without a hiccup. Thanks for your help!
+
+------=_Part_21_11616645.1374182423891
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<br><br>On Thursday, July 18, 2013 2:36:20 AM UTC-5, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&gt; It made it further it seems but failed on `atomic` with a similar error.
+<br>&gt;
+<br>&gt; Is it possible or probable that there's something wrong with my ruby
+<br>&gt; environment?
+<br>&gt;
+<br>&gt; $ sudo gem install slideshow
+<br>&gt;
+<br>&gt; Fetching: gli-2.7.0.gem (100%)
+<br>&gt; Fetching: slideshow-2.3.0.gem (100%)
+<br>&gt; *** Tips on themes removed ***
+<br>&gt; Fetching: kramdown-1.1.0.gem (100%)
+<br>&gt; Fetching: i18n-0.6.4.gem (100%)
+<br>&gt; Fetching: tzinfo-0.3.37.gem (100%)
+<br>&gt; Fetching: minitest-4.7.5.gem (100%)
+<br>&gt; Fetching: atomic-1.1.10.gem (100%)
+<br>&gt;
+<br>&gt; Building native extensions. &nbsp;This could take a while...
+<br>&gt; ERROR: &nbsp;Error installing slideshow:
+<br>&gt;
+<br>&gt; &nbsp; &nbsp; ERROR: Failed to build gem native extension.
+<br>
+<br>&nbsp; &nbsp; Sorry not sure what's wrong. It looks like you cannot install Ruby
+<br>libraries that require native extension, that is, that ship as C/C++
+<br>code and require a C/C++ tool chain to get compiled during
+<br>installation. If you're on Linux try installing the build-essentials
+<br>package or similar. Not sure if that helps. Cheers.
+<br>
+<br>PS: I will be offline (on vaction) for ten days.
+<br></blockquote><div><br>Enjoy your digital vacation!<br><br>Turns out, my skills at Google suck I guess. I had the `build-essential` package loaded already. The results I found the other night led me to the assumption, probably because of `require` that the problem was with the relative paths.<br><br>But, I just found [this article](http://stackoverflow.com/questions/12731904/rails-installation-failed-on-ubuntu-with-cannot-load-such-file-mkmf) which seems to key off of `mkmf`. The problem was that I did not have ruby dev installed, so this solved it:<br><br>`sudo apt-get install ruby1.9.1-dev`<br><br>After that, slideshow installed without a hiccup. Thanks for your help!<br></div>
+------=_Part_21_11616645.1374182423891--
+
+------=_Part_20_21718136.1374182423891--
+

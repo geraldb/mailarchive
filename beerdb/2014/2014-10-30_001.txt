@@ -1,0 +1,70 @@
+From 176193273856@xxx Sat Dec 20 19:01:39 +0000 2014
+X-GM-THRID: 178502238208
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,68fe9c741eaac4bc,start
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.242.36 with SMTP id wn4mr786705wjc.4.1414704632335;
+        Thu, 30 Oct 2014 14:30:32 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.152.6.5 with SMTP id w5ls396949law.71.gmail; Thu, 30 Oct 2014
+ 14:30:31 -0700 (PDT)
+X-Received: by 10.152.21.170 with SMTP id w10mr913850lae.6.1414704631836;
+        Thu, 30 Oct 2014 14:30:31 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x229.google.com (mail-wg0-x229.google.com. [2a00:1450:400c:c00::229])
+        by gmr-mx.google.com with ESMTPS id ca20si1086569wib.3.2014.10.30.14.30.31
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 30 Oct 2014 14:30:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::229 as permitted sender) client-ip=2a00:1450:400c:c00::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f41.google.com with SMTP id k14so5219393wgh.28
+        for <beerdb@googlegroups.com>; Thu, 30 Oct 2014 14:30:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=XITHoF0rdJFK1DSq8lLs+8IUwVvwJd/cs7L+nBeJ6gI=;
+        b=G1Bqg1Wrn1UQz905bmMkUWYDbZpLzp/uJ4yZa0q0jg1Q4itb3ZALYptopu6eXzz7Qy
+         4LT5YmUJFcTWF0jbpvqKX9yxXRgGfzmsc4cctiuEjHnWdJ7kAWWJNSzcE3Ts+7VMKyzd
+         ShFaKt33KiccSMeimFhKvVGYHTRK644zvNmxxwEYYeKVKkIe5JFRbU8eFZkymM8VTCCB
+         edP+Eq6cd9Zr9ew/GokPzmckqTF94zufRCqzWMU2kk6Nu9iG/3LcloalRRtGIakqFUpI
+         mW5sklCDnZdO+LnFd2MZ6Qo6dMYXdEj/XrgNfvujC0RR2q/I3+PgmR9WXDGhkrPugjqw
+         obTg==
+MIME-Version: 1.0
+X-Received: by 10.194.188.15 with SMTP id fw15mr7759020wjc.66.1414704631708;
+ Thu, 30 Oct 2014 14:30:31 -0700 (PDT)
+Received: by 10.216.205.135 with HTTP; Thu, 30 Oct 2014 14:30:31 -0700 (PDT)
+Date: Thu, 30 Oct 2014 22:30:31 +0100
+Message-ID: <CAAxEZd_ua+_bfuxVz19=uOZqAHrFYjfh8zWj5vTtGiZgAaYNnA@mail.gmail.com>
+Subject: New Repo /maps - Free "Full-Screen" Interactive Beer Maps w/ Brewery Listings
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+New Repo /maps - Free "Full-Screen" Interactive Beer Maps w/ Brewery Listings
+
+Hello,
+
+   FYI: I've created a new repo, that is, /maps for hosting
+"full-screen" interactive beer maps with brewery listings.
+
+   See an example beer map for Austria (~200 breweries n brewpubs)
+live [1] or check the source using the mapbox.js mapping library [2].
+
+  Cheers.
+
+PS: For your inspiration: Dave Shea (of CSS Zen Garden fame) a.k.a.
+mezzoblue has put together a craft beer map for Canada using .geojson
+[3] and mapbox.js [4][5].  If you know any other open beer maps let us
+know.
+
+[1] openbeer.github.io/maps/at
+[2] github.com/openbeer/maps   (Source)
+[3] github.com/mezzoblue/canadian-craft-breweries (GeoJSON Data)
+[4] beermap.ca
+[5] github.com/mezzoblue/beermap.ca (Source)
+

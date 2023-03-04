@@ -1,0 +1,208 @@
+From 6603216540651225088@xxx Thu Sep 20 08:12:37 +0000 2018
+X-GM-THRID: 6603186617065668608
+Date: Thu, 20 Sep 2018 01:12:36 -0700 (PDT)
+From: Marcos Perez <marcos.tengelmann@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <494c7139-c863-439d-a2a5-2214bbb6bd60@googlegroups.com>
+In-Reply-To: <CAAxEZd8ChvHrw_U6JvcuSW7sNEmx1AB+YfQvey9xABokD91Sqg@mail.gmail.com>
+References: <a509dfa8-e97a-4904-aaef-536f79472122@googlegroups.com>
+ <CAAxEZd8ChvHrw_U6JvcuSW7sNEmx1AB+YfQvey9xABokD91Sqg@mail.gmail.com>
+Subject: Re: [opensport] Brazilian Leagues
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_257_917947611.1537431156995"
+X-Google-Token: EPSsjd0FrHXynXGgpaw0
+X-Google-IP: 86.190.115.10
+
+------=_Part_257_917947611.1537431156995
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_258_1774694821.1537431156995"
+
+------=_Part_258_1774694821.1537431156995
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi,=20
+
+Thanks for your reply. I should have read the instructions :), Sorry about=
+=20
+it.
+
+If I volunteer to maintain, it is just a matter of pull request ? Is there=
+=20
+any tools or processes in order to do that?=20
+
+I found repo [1] (did not read yet) which I think is bare minimum=20
+documentation I have to read in order to begin to understand the whole=20
+project. Is this assumption correct?
+
+Regards
+Marcos
+
+[1] https://github.com/openfootball/docs
+
+
+Em quinta-feira, 20 de setembro de 2018 07:25:03 UTC+1, Gerald Bauer=20
+escreveu:
+>
+> Hello,=20
+>
+>     Thanks for your kind word. Welcome to football.db.=20
+>
+>      Sorry the /br-brazil repo [1] or results are currently without=20
+> maintainer / updates. Thanks to Rafael Pereira [2] for adding most of=20
+> the match schedules and results (in the past).=20
+>
+>     The repo is setup to be "self-contained", that is, all you need is=20
+> the clone the single country repo and than use the Datafile [3] to=20
+> build a copy e.g.=20
+>
+>    $ cd br-brazil=20
+>    $ cat Datafile        # check Datafile, that is, build script=20
+>    $ sportdb build     #  will use (default) to the "local" Datafile=20
+>
+>   That's it. The readme also has instructions :-). Cheers. Prost.=20
+>
+> [1] https://github.com/openfootball/br-brazil=20
+> [2] https://github.com/rlpereira=20
+> [3] https://github.com/openfootball/br-brazil/blob/master/Datafile=20
+> El jue., 20 sept. 2018 a las 8:16, Marcos Perez=20
+> (<marcos.t...@gmail.com <javascript:>>) escribi=C3=B3:=20
+> >=20
+> > Hi,=20
+> >=20
+> > First of all I am impressed with the amount of information and effort=
+=20
+> that was put into this project. Amazing and Congratulations for the good=
+=20
+> work.=20
+> >=20
+> > I am trying to undertand how I can get and build a DB with Brazilian=20
+> leagues results. I mean the repos I have to clone and steps I have to mak=
+e=20
+> in order to build the database that I want, and also if there is anyone=
+=20
+> maintaining Brazilian results.=20
+> >=20
+> > Thanks=20
+> >=20
+> > --=20
+> > You received this message because you are subscribed to the Google=20
+> Groups "opensport" group.=20
+> > To unsubscribe from this group and stop receiving emails from it, send=
+=20
+> an email to opensport+...@googlegroups.com <javascript:>.=20
+> > To post to this group, send email to open...@googlegroups.com=20
+> <javascript:>.=20
+> > Visit this group at https://groups.google.com/group/opensport.=20
+> > For more options, visit https://groups.google.com/d/optout.=20
+>
+
+------=_Part_258_1774694821.1537431156995
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hi, <br></div><div><br></div><div>Thanks for your rep=
+ly. I should have read the instructions :), Sorry about it.</div><div><br><=
+/div><div>If I volunteer to maintain, it is just a matter of pull request ?=
+ Is there any tools or processes in order to do that? <br></div><div><br></=
+div><div>I found repo [1] (did not read yet) which I think is bare minimum =
+documentation I have to read in order to begin to understand the whole proj=
+ect. Is this assumption correct?</div><div><br></div><div>Regards</div><div=
+>Marcos<br></div><div><br></div><div>[1] https://github.com/openfootball/do=
+cs</div><div><br></div><br>Em quinta-feira, 20 de setembro de 2018 07:25:03=
+ UTC+1, Gerald Bauer  escreveu:<blockquote class=3D"gmail_quote" style=3D"m=
+argin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"=
+>Hello,
+<br>
+<br>=C2=A0 =C2=A0 Thanks for your kind word. Welcome to football.db.
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0Sorry the /br-brazil repo [1] or results are curren=
+tly without
+<br>maintainer / updates. Thanks to Rafael Pereira [2] for adding most of
+<br>the match schedules and results (in the past).
+<br>
+<br>=C2=A0 =C2=A0 The repo is setup to be &quot;self-contained&quot;, that =
+is, all you need is
+<br>the clone the single country repo and than use the Datafile [3] to
+<br>build a copy e.g.
+<br>
+<br>=C2=A0 =C2=A0$ cd br-brazil
+<br>=C2=A0 =C2=A0$ cat Datafile =C2=A0 =C2=A0 =C2=A0 =C2=A0# check Datafile=
+, that is, build script
+<br>=C2=A0 =C2=A0$ sportdb build =C2=A0 =C2=A0 # =C2=A0will use (default) t=
+o the &quot;local&quot; Datafile
+<br>
+<br>=C2=A0 That&#39;s it. The readme also has instructions :-). Cheers. Pro=
+st.
+<br>
+<br>[1] <a href=3D"https://github.com/openfootball/br-brazil" target=3D"_bl=
+ank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.google.co=
+m/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fbr-brazil\x26sa\x3dD\x=
+26sntz\x3d1\x26usg\x3dAFQjCNG9p2k3a0hsSSApwlbATLcHZ59cYA&#39;;return true;"=
+ onclick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2F=
+github.com%2Fopenfootball%2Fbr-brazil\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQ=
+jCNG9p2k3a0hsSSApwlbATLcHZ59cYA&#39;;return true;">https://github.com/<wbr>=
+openfootball/br-brazil</a>
+<br>[2] <a href=3D"https://github.com/rlpereira" target=3D"_blank" rel=3D"n=
+ofollow" onmousedown=3D"this.href=3D&#39;https://www.google.com/url?q\x3dht=
+tps%3A%2F%2Fgithub.com%2Frlpereira\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCN=
+EBGJtlhr-_dxghdJyNhsJJcFUVig&#39;;return true;" onclick=3D"this.href=3D&#39=
+;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Frlpereira\x26sa=
+\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNEBGJtlhr-_dxghdJyNhsJJcFUVig&#39;;return=
+ true;">https://github.com/rlpereira</a>
+<br>[3] <a href=3D"https://github.com/openfootball/br-brazil/blob/master/Da=
+tafile" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;=
+https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fb=
+r-brazil%2Fblob%2Fmaster%2FDatafile\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjC=
+NHttFwDHfXMwpM7W_9WWcTm3_l3Ig&#39;;return true;" onclick=3D"this.href=3D&#3=
+9;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2=
+Fbr-brazil%2Fblob%2Fmaster%2FDatafile\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQ=
+jCNHttFwDHfXMwpM7W_9WWcTm3_l3Ig&#39;;return true;">https://github.com/<wbr>=
+openfootball/br-brazil/blob/<wbr>master/Datafile</a>
+<br>El jue., 20 sept. 2018 a las 8:16, Marcos Perez
+<br>(&lt;<a href=3D"javascript:" target=3D"_blank" gdf-obfuscated-mailto=3D=
+"Rx1rAp3xCQAJ" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;javascript:=
+&#39;;return true;" onclick=3D"this.href=3D&#39;javascript:&#39;;return tru=
+e;">marcos.t...@gmail.com</a>&gt;<wbr>) escribi=C3=B3:
+<br>&gt;
+<br>&gt; Hi,
+<br>&gt;
+<br>&gt; First of all I am impressed with the amount of information and eff=
+ort that was put into this project. Amazing and Congratulations for the goo=
+d work.
+<br>&gt;
+<br>&gt; I am trying to undertand how I can get and build a DB with Brazili=
+an leagues results. I mean the repos I have to clone and steps I have to ma=
+ke in order to build the database that I want, and also if there is anyone =
+maintaining Brazilian results.
+<br>&gt;
+<br>&gt; Thanks
+<br>&gt;
+<br>&gt; --
+<br>&gt; You received this message because you are subscribed to the Google=
+ Groups &quot;opensport&quot; group.
+<br>&gt; To unsubscribe from this group and stop receiving emails from it, =
+send an email to <a href=3D"javascript:" target=3D"_blank" gdf-obfuscated-m=
+ailto=3D"Rx1rAp3xCQAJ" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;jav=
+ascript:&#39;;return true;" onclick=3D"this.href=3D&#39;javascript:&#39;;re=
+turn true;">opensport+...@<wbr>googlegroups.com</a>.
+<br>&gt; To post to this group, send email to <a href=3D"javascript:" targe=
+t=3D"_blank" gdf-obfuscated-mailto=3D"Rx1rAp3xCQAJ" rel=3D"nofollow" onmous=
+edown=3D"this.href=3D&#39;javascript:&#39;;return true;" onclick=3D"this.hr=
+ef=3D&#39;javascript:&#39;;return true;">open...@googlegroups.com</a>.
+<br>&gt; Visit this group at <a href=3D"https://groups.google.com/group/ope=
+nsport" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;=
+https://groups.google.com/group/opensport&#39;;return true;" onclick=3D"thi=
+s.href=3D&#39;https://groups.google.com/group/opensport&#39;;return true;">=
+https://groups.google.com/<wbr>group/opensport</a>.
+<br>&gt; For more options, visit <a href=3D"https://groups.google.com/d/opt=
+out" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;htt=
+ps://groups.google.com/d/optout&#39;;return true;" onclick=3D"this.href=3D&=
+#39;https://groups.google.com/d/optout&#39;;return true;">https://groups.go=
+ogle.com/d/<wbr>optout</a>.
+<br></blockquote></div>
+------=_Part_258_1774694821.1537431156995--
+
+------=_Part_257_917947611.1537431156995--
+

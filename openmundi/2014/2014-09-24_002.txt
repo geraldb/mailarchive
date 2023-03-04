@@ -1,0 +1,67 @@
+From 313299828736@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 302770028544
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,a5c903eb6678991d
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.224.37.6 with SMTP id v6mr4678373qad.9.1411553587312;
+        Wed, 24 Sep 2014 03:13:07 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.83.166 with SMTP id j35ls467388qgd.40.gmail; Wed, 24 Sep
+ 2014 03:13:07 -0700 (PDT)
+X-Received: by 10.140.19.2 with SMTP id 2mr33qgg.35.1411553587162;
+        Wed, 24 Sep 2014 03:13:07 -0700 (PDT)
+X-Google-Doc-Id: b656c23bd2faa7
+X-Google-Web-Client: true
+Date: Wed, 24 Sep 2014 03:13:06 -0700 (PDT)
+From: Eckhard Licher <eckhard.licher@googlemail.com>
+To: openmundi@googlegroups.com
+Message-Id: <faedd91e-1e75-4f95-af79-47db23149637@googlegroups.com>
+In-Reply-To: <29a67f4c-8fdc-4fe4-a956-3bb083beb817@googlegroups.com>
+References: <29a67f4c-8fdc-4fe4-a956-3bb083beb817@googlegroups.com>
+Subject: Re: New Python-based World Factbook scraper in the making
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_190_2036592897.1411553586782"
+X-Google-Token: ELKyiqEFjrgtNHdOwgQ0
+X-Google-IP: 85.158.138.21
+
+------=_Part_190_2036592897.1411553586782
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_191_274970346.1411553586782"
+
+------=_Part_191_274970346.1411553586782
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Gerald,
+
+FYI, I have completed the python WFB scanner so that it outputs all 
+information needed to re-master an entity's entry in the WFB. The scanner 
+outputs ``JSON`` structured very similar to the JSON output of your gem. 
+The differences are described here: 
+https://github.com/openfactbook/geos.json/blob/master/README.md
+
+On the Python side, beautiful soup is an add-on to and comaptible with 
+various existing HTML/XML parsers. Currently only the parser from the 
+standard Python library was tested which is extremely slow but said to be 
+very lenient (forgiving). Maybe faster (and less lenient) parsers work as 
+well, but I kind of doubt it. The original markup is anything but clean and 
+elegant ...
+
+I will now brush up the tools a bit so they can be posted and will take 
+over the two repos soon.
+
+Cheers
+
+
+
+------=_Part_191_274970346.1411553586782
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello Gerald,<br><br>FYI, I have completed the python WFB scanner so that it outputs all information needed to re-master an entity's entry in the WFB. The scanner outputs ``JSON`` structured very similar to the JSON output of your gem. The differences are described here: https://github.com/openfactbook/geos.json/blob/master/README.md<br><br>On the Python side, beautiful soup is an add-on to and comaptible with various existing HTML/XML parsers. Currently only the parser from the standard Python library was tested which is extremely slow but said to be very lenient (forgiving). Maybe faster (and less lenient) parsers work as well, but I kind of doubt it. The original markup is anything but clean and elegant ...<br><br>I will now brush up the tools a bit so they can be posted and will take over the two repos soon.<br><br>Cheers<br><br><div dir="ltr"><br></div></div>
+------=_Part_191_274970346.1411553586782--
+
+------=_Part_190_2036592897.1411553586782--
+

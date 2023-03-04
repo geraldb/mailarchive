@@ -1,0 +1,59 @@
+From 611084926976@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 611425714176
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,2530f8cd1a3ad5f2,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.150.234.22 with SMTP id g22ls525600ybh.7.p; Sun, 21 Mar 2010 
+	13:49:46 -0700 (PDT)
+Received: by 10.150.56.8 with SMTP id e8mr104396yba.10.1269204586131;
+        Sun, 21 Mar 2010 13:49:46 -0700 (PDT)
+Received: by 10.150.235.3 with SMTP id i3mr140671ybh.14.1268145631324;
+        Tue, 09 Mar 2010 06:40:31 -0800 (PST)
+Received: by 10.150.235.3 with SMTP id i3mr140668ybh.14.1268145631302;
+        Tue, 09 Mar 2010 06:40:31 -0800 (PST)
+Return-Path: <ben.thorp@gmail.com>
+Received: from mail-yw0-f150.google.com (mail-yw0-f150.google.com [209.85.211.150])
+        by gmr-mx.google.com with ESMTP id 24si259210yxe.5.2010.03.09.06.40.31;
+        Tue, 09 Mar 2010 06:40:31 -0800 (PST)
+Received-SPF: pass (google.com: domain of ben.thorp@gmail.com designates 209.85.211.150 as permitted sender) client-ip=209.85.211.150;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of ben.thorp@gmail.com designates 209.85.211.150 as permitted sender) smtp.mail=ben.thorp@gmail.com
+Received: by mail-yw0-f150.google.com with SMTP id 14so12402721ywh.16
+        for <webslideshow@googlegroups.com>; Tue, 09 Mar 2010 06:40:31 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.100.230.17 with SMTP id c17mr186589anh.61.1268145631209; Tue, 
+	09 Mar 2010 06:40:31 -0800 (PST)
+Date: Tue, 9 Mar 2010 06:40:31 -0800 (PST)
+X-IP: 93.97.173.19
+User-Agent: G2/1.0
+X-Google-Token: EN-72dwEGutXdNF-aIU0
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; 
+	rv:1.9.2) Gecko/20100115 Firefox/3.6,gzip(gfe),gzip(gfe)
+Message-ID: <4ef0e932-ca8a-4014-a467-4f47d4065f5b@t20g2000yqe.googlegroups.com>
+Subject: Which slideshow to use?
+From: mrben <ben.thorp@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hi,
+
+I'm in the process of planning/building a new project, based on
+Django, that will generate a browser-based slideshow as part of it's
+output. I was already aware of S5, but suddenly there are so many
+other options, that I'm a bit confused!
+
+Ultimately I want to use what is most extensible, so I'm leaning
+towards S6 at the moment, as I have some experience with jQuery, but
+thought I would ask here to see if anyone had any helpful tips.
+
+The other main thing to note is that I will be looking to implement
+'dual-screen' type functionality, a bit like what is used in the s5key
+demo ( http://www.snook.ca/technical/s5key/ ), and I'm also hoping to
+add some additional keystrokes if possible, which is why extensibility
+is so important.
+
+Any thoughts gratefully received
+
+mrben
+

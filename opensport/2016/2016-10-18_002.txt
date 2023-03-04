@@ -1,0 +1,97 @@
+From 6342704204454297600@xxx Tue Oct 18 07:31:42 +0000 2016
+X-GM-THRID: 6319151478389866496
+X-Received: by 10.31.115.77 with SMTP id o74mr423943vkc.5.1476775902221;
+        Tue, 18 Oct 2016 00:31:42 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.7.18 with SMTP id 18ls14840458ote.9.gmail; Tue, 18 Oct
+ 2016 00:31:41 -0700 (PDT)
+X-Received: by 10.31.189.198 with SMTP id n189mr432493vkf.23.1476775901807;
+        Tue, 18 Oct 2016 00:31:41 -0700 (PDT)
+Received: by 10.202.77.11 with SMTP id a11msoib;
+        Mon, 17 Oct 2016 21:19:13 -0700 (PDT)
+X-Received: by 10.36.129.198 with SMTP id q189mr446050itd.4.1476764352929;
+        Mon, 17 Oct 2016 21:19:12 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Mon, 17 Oct 2016 21:19:11 -0700 (PDT)
+From: Akalanka Galappaththi <boney.ag@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <a21fff84-c434-45c1-a8ff-d033b45a8bca@googlegroups.com>
+In-Reply-To: <a027bd3b-cfce-4387-865e-dcf45e9fa018@googlegroups.com>
+References: <3bc1224e-e12b-47d9-8f35-b635651acc5f@googlegroups.com>
+ <CAAxEZd_SNQWwDgDEqOm7_=C6=1RwxVjGpGnweHsGVwTK0gZ36g@mail.gmail.com>
+ <0e869f0b-e0d6-497d-ba60-0062eb11350e@googlegroups.com> <CAAxEZd_Dfey2F0jkwCbSoHQRZkwbuj4+iJxLDFacmLCptGzPwQ@mail.gmail.com>
+ <5c5e55c8-906d-41b2-8bb2-b6a6b986a7b9@googlegroups.com>
+ <CAAxEZd-JeJUNdTWE_JPfMB9-ZNuBneem7AzohH=pCQHUactJBQ@mail.gmail.com>
+ <a027bd3b-cfce-4387-865e-dcf45e9fa018@googlegroups.com>
+Subject: Re: [opensport] error when installing
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2056_1267520868.1476764351846"
+X-Google-Token: EL_FlsAFLTXUYoudoPY0
+X-Google-IP: 68.150.216.184
+
+------=_Part_2056_1267520868.1476764351846
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2057_462490567.1476764351846"
+
+------=_Part_2057_462490567.1476764351846
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+In which gem file should I change the activerecord version number...
+
+On Monday, September 12, 2016 at 4:41:38 AM UTC-6, Hilda Merom wrote:
+>
+> Thank, Work like a charm!
+> BTW best practice is using a Gemfile and add this to it
+> gem "activerecord", "= 4.2.7.1"
+>
+> On Monday, September 5, 2016 at 6:26:13 PM UTC+7, Gerald Bauer wrote:
+>>
+>> Hello, 
+>>
+>>   Thanks for trying sport.db / football.db. 
+>>
+>>  > active record 4.7.2.1 
+>>
+>>   The 4.7.2.1 version doesn't exit - I assume 4.3.2.1  (that latest 
+>> before the 5.x series) 
+>>
+>>    Anyways, sorry hard to tell without seeing any logs etc. 
+>>
+>>    I'd suggest using a Gemfile and than bundle exec spordb ...  etc. 
+>> to make sure you have all version locked down. Good luck. Cheers. 
+>>
+>
+------=_Part_2057_462490567.1476764351846
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">In which gem file should I change the activerecord version=
+ number...<br><br>On Monday, September 12, 2016 at 4:41:38 AM UTC-6, Hilda =
+Merom wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-lef=
+t: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">T=
+hank, Work like a charm!<div>BTW best practice is using a Gemfile and add t=
+his to it</div><div>gem &quot;activerecord&quot;, &quot;=3D 4.2.7.1&quot;<b=
+r><br>On Monday, September 5, 2016 at 6:26:13 PM UTC+7, Gerald Bauer wrote:=
+<blockquote class=3D"gmail_quote" style=3D"margin:0;margin-left:0.8ex;borde=
+r-left:1px #ccc solid;padding-left:1ex">Hello,
+<br>
+<br>=C2=A0 Thanks for trying sport.db / football.db.
+<br>
+<br>=C2=A0&gt; active record 4.7.2.1
+<br>
+<br>=C2=A0 The 4.7.2.1 version doesn&#39;t exit - I assume 4.3.2.1 =C2=A0(t=
+hat latest
+<br>before the 5.x series)
+<br>
+<br>=C2=A0 =C2=A0Anyways, sorry hard to tell without seeing any logs etc.
+<br>
+<br>=C2=A0 =C2=A0I&#39;d suggest using a Gemfile and than bundle exec spord=
+b ... =C2=A0etc.
+<br>to make sure you have all version locked down. Good luck. Cheers.
+<br></blockquote></div></div></blockquote></div>
+------=_Part_2057_462490567.1476764351846--
+
+------=_Part_2056_1267520868.1476764351846--
+

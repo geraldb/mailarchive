@@ -1,0 +1,107 @@
+From 6842336083554861056@xxx Thu Jun 25 17:18:35 +0000 2020
+X-GM-THRID: 6841574442821222400
+Date: Thu, 25 Jun 2020 10:18:34 -0700 (PDT)
+From: "cren.gu...@gmail.com" <cren.guillaume@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <7f3dad99-fad6-4932-8983-ae57386ea927n@googlegroups.com>
+In-Reply-To: <CAAxEZd_eVubK3AYioJwUtmOWhrFtiRG=_grUJ7kt_n9P9ywNug@mail.gmail.com>
+References: <4ad97936-3063-4864-b4bd-491d72e3c056o@googlegroups.com>
+ <CAAxEZd_1hbR0PkmQqbnMy_x670eptreWDCzOei4oXo-3OVq3UA@mail.gmail.com>
+ <CAAxEZd_eVubK3AYioJwUtmOWhrFtiRG=_grUJ7kt_n9P9ywNug@mail.gmail.com>
+Subject: Re: [opensport] How update results ?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_58_338575618.1593105514511"
+
+------=_Part_58_338575618.1593105514511
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_59_1249820989.1593105514511"
+
+------=_Part_59_1249820989.1593105514511
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Thanks for all these informations. I'm trying to do this. But, how can i=20
+add the "sportdb/readers" ? (i don't know the "require") I've to clone the=
+=20
+repos dans add the source in mine ?
+How import sportdb ? I'm following=20
+https://github.com/sportdb/docs/blob/master/generating-json-datasets.md
+
+Thanks.
+
+
+Le mardi 23 juin 2020 =C3=A0 18:29:21 UTC+2, Gerald Bauer a =C3=A9crit :
+
+> Hello,
+> FYI: Some weeks ago I posted a little note / write-up on
+> generating JSON datasets, see [1]
+>
+> If you replace
+>
+> ## assumes football.db datasets for England in local ./england directory
+> SportDb.read( './england' )
+>
+> with
+>
+> ## just read the latest season
+> SportDb.read( './england/2019-20/1-premierleague.txt' )
+>
+> That should work.
+>
+> Of course - you are more than welcome to use any other scripts or
+> language for the JSON generation. Let us know how it goes / what you
+> decide..
+>
+> [1]=20
+> https://github.com/sportdb/docs/blob/master/generating-json-datasets.md
+>
+
+------=_Part_59_1249820989.1593105514511
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,<div><br></div><div>Thanks for all these informations. I'm trying to =
+do this. But, how can i add the "sportdb/readers" ? (i don't know the "requ=
+ire") I've to clone the repos dans add the source in mine ?</div><div>How i=
+mport sportdb ? I'm following&nbsp;<a href=3D"https://github.com/sportdb/do=
+cs/blob/master/generating-json-datasets.md">https://github.com/sportdb/docs=
+/blob/master/generating-json-datasets.md</a></div><div><br></div><div>Thank=
+s.</div><div><br></div><div><br></div><div class=3D"gmail_quote"><div dir=
+=3D"auto" class=3D"gmail_attr">Le mardi 23 juin 2020 =C3=A0 18:29:21 UTC+2,=
+ Gerald Bauer a =C3=A9crit=C2=A0:<br/></div><blockquote class=3D"gmail_quot=
+e" style=3D"margin: 0 0 0 0.8ex; border-left: 1px solid rgb(204, 204, 204);=
+ padding-left: 1ex;">Hello,
+<br>     FYI: Some weeks ago I posted a little note / write-up on
+<br>generating JSON datasets, see [1]
+<br>
+<br>   If you replace
+<br>
+<br>## assumes football.db datasets for England in local ./england director=
+y
+<br>SportDb.read( &#39;./england&#39; )
+<br>
+<br>   with
+<br>
+<br>##  just read the latest season
+<br>SportDb.read( &#39;./england/2019-20/1-premierleague.txt&#39; )
+<br>
+<br>  That should work.
+<br>
+<br>   Of course - you are more than welcome to use any other scripts or
+<br>language for the JSON generation. Let us know how it goes / what you
+<br>decide..
+<br>
+<br>[1] <a href=3D"https://github.com/sportdb/docs/blob/master/generating-j=
+son-datasets.md" target=3D"_blank" rel=3D"nofollow" data-saferedirecturl=3D=
+"https://www.google.com/url?hl=3Dfr&amp;q=3Dhttps://github.com/sportdb/docs=
+/blob/master/generating-json-datasets.md&amp;source=3Dgmail&amp;ust=3D15931=
+89799287000&amp;usg=3DAFQjCNHHea-9enXjf7x7RHcNokw7a1u-Lw">https://github.co=
+m/sportdb/docs/blob/master/generating-json-datasets.md</a>
+<br></blockquote></div>
+------=_Part_59_1249820989.1593105514511--
+
+------=_Part_58_338575618.1593105514511--
+

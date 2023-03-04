@@ -1,0 +1,93 @@
+From 662070886400@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 664924061696
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,7b797d86f6223e4c,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.101.160.23 with SMTP id m23mr1171089ano.53.1276375626039;
+        Sat, 12 Jun 2010 13:47:06 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.101.145.32 with SMTP id x32ls4420354ann.0.p; Sat, 12 Jun 2010 
+	13:47:04 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.101.180.35 with SMTP id h35mr243218anp.62.1276375623925; Sat, 
+	12 Jun 2010 13:47:03 -0700 (PDT)
+Received: by z10g2000yqb.googlegroups.com with HTTP; Sat, 12 Jun 2010 13:47:03 
+	-0700 (PDT)
+Date: Sat, 12 Jun 2010 13:47:03 -0700 (PDT)
+X-IP: 80.123.47.109
+User-Agent: G2/1.0
+X-Google-Token: EMfkz-AE_xM_FzGhBdQ0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.3) 
+	Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3,gzip(gfe)
+Message-ID: <2b74b5ea-924c-42da-b2ad-8202456a6568@z10g2000yqb.googlegroups.com>
+Subject: New Slideshow Template Package for PDF Generation (pdfblank)
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   As a follow-up to the tip of using the free, open source
+wkhtmltopdf tool to create a PDF version of your slideshow, I've
+created a new slideshow template package (that is, pdfblank) that lets
+you create a PDF version of your slideshow that displays one slide per
+page and that uses no JavaScript and just some little CSS rules making
+it easy to change to fit your needs and styles.
+
+  To see the new template package in action, I've uploaded the PDF
+version for the S9 tutorial:
+
+  o http://slideshow.rubyforge.org/tutorial.pdf   (PDF Version)
+  o http://slideshow.rubyforge.org/tutorial.pdf.html  (HTML Version
+for PDF Generation)
+
+
+  If you want to try it yourself, install (fetch) the new template.
+Issue the command:
+
+$ slideshow -f http://github.com/geraldb/sandbox/raw/master/pdfblank/pdfblank.txt
+
+  To check if the new templated got installed, use the -l/--list
+switch/command:
+
+$ slideshow -l
+
+Listing something like:
+
+Installed templates include:
+  pdfblank.txt (/home/gerald/.slideshow/templates/pdfblank/
+pdfblank.txt)
+  s6.txt (/var/lib/gems/1.8/gems/slideshow-0.8/templates/s6.txt)
+  fullerscreen.txt (/var/lib/gems/1.8/gems/slideshow-0.8/templates/
+fullerscreen.txt)
+  s5.txt (/var/lib/gems/1.8/gems/slideshow-0.8/templates/s5.txt)
+
+
+  Now you're ready to use it using the -t/--template switch. Example:
+
+$ slideshow -t pdfblank.txt tutorial.textile
+
+  Now all that's left is to feed it to a html to pdf converter tool:
+
+$ wkhtmltopdf --outline --orientation Landscape tutorial.pdf.html
+tutorial.pdf
+
+  That's it. If anyone tries out the new template package, let us know
+how it goes.
+
+ Cheers. Gerald
+
+
+PS:  If you want to change the template, use the -g/--generate switch
+e.g.
+
+$ slideshow -t pdfblank.txt -g -o tpl
+
+Change it to your needs. Look for header.html.erb in the tpl folder
+and than use:
+
+$ slideshow -t tpl/pdfblank.txt tutorial.textile
+
+to tell slideshow to use your own template copy. That's it.
+

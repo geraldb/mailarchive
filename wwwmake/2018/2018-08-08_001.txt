@@ -1,0 +1,107 @@
+From 6587326661538086912@xxx Wed Aug 08 12:31:47 +0000 2018
+X-GM-THRID: 6587326661555912704
+X-Received: by 2002:a2e:7a17:: with SMTP id v23-v6mr98701ljc.18.1533731506879;
+        Wed, 08 Aug 2018 05:31:46 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a19:1a15:: with SMTP id a21-v6ls269180lfa.29.gmail; Wed, 08
+ Aug 2018 05:31:45 -0700 (PDT)
+X-Google-Smtp-Source: AA+uWPzQ8cFNVE+AjwQonunAD5dV11GjIKW5iVlISek8mN8V/e6rtH1xRNJgIeSG8g0tgJjJKKl9
+X-Received: by 2002:a19:9643:: with SMTP id y64-v6mr137953lfd.42.1533731505514;
+        Wed, 08 Aug 2018 05:31:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533731505; cv=none;
+        d=google.com; s=arc-20160816;
+        b=fAxhH2tjxyq3gMigYUNaQwGQwS5XAyLa+b+pZ7sbZ0jXO/yoie8Uhmtl6ibWFR+fi0
+         HgCcaAuIA9tXIBYwXLWJZFr0xb18jSXYWAS7nLU7HSxBh5R/cxCO5sxfpcjtPEzRVDyb
+         2pHEK1VaKvueP0druzB0j/aw+qCZNC5pE6rKh+0A57iuwXZ/8wjl4wf/Dimd6fLn5TeP
+         wY8NstLXhNm7o/QssTMTPygsUiD5qR6IE+vJweoTglLEAlahf4+R96Irajsn2zpZBYlD
+         yt4NyrfKtaoSuY45lSHPZaHUPdPxX9M3A/0MI79gvTMNA0E9hqHsdLWDkDPdWcigNWs9
+         bW1Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=3q3neZvAWBEp2Y0BvZdwce50a5vbSmR4vygwpYJeaaY=;
+        b=YsR5tj2j/72ao8fk5fiwcbXipWWAwpPya9Hmqj8OfTugIPrTmpq5h0/mKl0uRvBrU8
+         JOqgn38rrw+lTdDTYsCchhZo1B0bGrWZcY1R/EKKH36KE6kiw3hNBVZBOjjnf/Fzrqjh
+         fAga+yd1DlMprKRYigKRErr6IDcM4eH3Pu4+0rXmipd4IUsUjCbQL6s21Nw9LGdyj/68
+         QOII3x//3OXxyaSO/2xQfi5QLyMUE8uhk4+knSoCRry4v4hlFDjmumoPo80q+FgSyTMW
+         nYDTeGhLZx/D0tn2w1EEoQTPN+UnouATtR+S/HZid8jklmp2qW1jjiVrq9/W+thakwmL
+         0Uyw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Dfo9L3FP;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x232.google.com (mail-lj1-x232.google.com. [2a00:1450:4864:20::232])
+        by gmr-mx.google.com with ESMTPS id q4-v6si134460ljj.5.2018.08.08.05.31.45
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Aug 2018 05:31:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::232 as permitted sender) client-ip=2a00:1450:4864:20::232;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Dfo9L3FP;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x232.google.com with SMTP id j19-v6so1568605ljc.7
+        for <wwwmake@googlegroups.com>; Wed, 08 Aug 2018 05:31:45 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=3q3neZvAWBEp2Y0BvZdwce50a5vbSmR4vygwpYJeaaY=;
+        b=Dfo9L3FPALTyjMmKwDJ2MYR1+9yl5pMxXxVBQ1ameENvJ+Ax5MUZySaw2QNYVCCaVc
+         yEdkKmOKIMqVJHuVJMOdhciK0QAhcsjXo9FkmCONtLOiiSrbQtk2Bh/IVD8HWqd5IyUF
+         FW+21gm23rxLKybP+btVM70Sl5xtJUyU347Ve8ha4ccwm0iHbF5ccAYIPc6MOWpiLrHp
+         Q4AbhaAvIZf9EwV7UHJQYouKfIN14KN1690QFxc/Br6eyYdGj130mkcpwt80Caea4fb5
+         F+9xIk569wyYMc431w0YQmFnsoxQN8rGVTLXpNFSFMdNCIcVE5a8X6YniDEVDVaFaAmh
+         GsrA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=3q3neZvAWBEp2Y0BvZdwce50a5vbSmR4vygwpYJeaaY=;
+        b=erLPLS778nyAWL5pVF23gOAntaM4DEk0bhnaTgtb6o4IhPgoUDEs7lBvp74dXwMbuS
+         cRZCMGYzJggZaSBRSzmLENxKnhLAQ68HLuzsp9DkDv7cMSLPLZ9dCZ4Hdjkx5yKNEcx6
+         AbuOqrZsil6ylPvUiHUDCGrXvaALsWmymJtJqmFjWeed7Fs5zixeS5Xmny8NVG5SV1lE
+         szP9OZQdU+iVyKVaptoOARM7gnGSrS6zrn5BoFboq8LGrVU1xx7ppiIFAYeNP22DfSvs
+         pwfkwuiGuNAWLcX3lPHGSZvOzFYeIIyw/7Qonpji9LgLWtnW4VBm6BuYKfZKjcEoxxUs
+         IaOg==
+X-Gm-Message-State: AOUpUlGXeo58W3sh41zTedVNWtrKM+/mqnzEf8dHOA22T9l8yMK0S0Wz
+	T69DklhCek/1fI4rlOTgkEEmcfhzaHe/kPqnyDlum/sy1+o=
+X-Received: by 2002:a2e:1207:: with SMTP id t7-v6mr1893384lje.129.1533731505061;
+ Wed, 08 Aug 2018 05:31:45 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:ab3:4c6b:0:0:0:0:0 with HTTP; Wed, 8 Aug 2018 05:31:44 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 8 Aug 2018 14:31:44 +0200
+Message-ID: <CAAxEZd_=eK6ttYu=AiDL70dKvwDVQ=VFg6=GxBDXVigw57DEDw@mail.gmail.com>
+Subject: csvpack Update - Work with tabular data packages in ruby (download,
+ import into sql, query w/ ActiveRecord and more)
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   I've updated the csvpack (*) library / gem [1] that let's you work
+with tabular data packages in ruby.
+
+  Download comma-separated values (CSV) datafiles in text - also known
+as tabular datafiles and read into any sql database (e.g. SQLite,
+PostgreSQL, ...), query w/ ActiveRecord and more. Example:
+
+     require 'csvpack'
+
+     CsvPack.import(
+       's-and-p-500-companies',
+       'gdb'
+     )
+
+
+   Cheers. Prost.
+
+PS: You can find 100+ (starter) tabular data packages at the /datasets
+github org [2] (thanks to the DataHub.io folks).
+
+(*): formerly known (published) as datapak
+
+
+[1]: https://github.com/csv11/csvpack
+[2]: https://github.com/datasets
+

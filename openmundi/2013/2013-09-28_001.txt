@@ -1,0 +1,84 @@
+From 22424846336@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 21993881600
+X-Google-Groups: openmundi
+X-Google-Thread: 37decc9,cd5746dce33c45ed,start
+X-Google-Attributes: gid37decc9,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open World Database - world.db
+ and Friends" <openmundi@googlegroups.com>
+X-Received: by 10.43.151.16 with SMTP id kq16mr7552452icc.22.1380378043054;
+        Sat, 28 Sep 2013 07:20:43 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.50.47.105 with SMTP id c9ls1000642ign.0.gmail; Sat, 28 Sep
+ 2013 07:20:42 -0700 (PDT)
+X-Received: by 10.50.61.242 with SMTP id t18mr5772132igr.3.1380378042857;
+        Sat, 28 Sep 2013 07:20:42 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x22d.google.com (mail-ie0-x22d.google.com [2607:f8b0:4001:c03::22d])
+        by gmr-mx.google.com with ESMTPS id 8si450840igl.2.1969.12.31.16.00.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 28 Sep 2013 07:20:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::22d as permitted sender) client-ip=2607:f8b0:4001:c03::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ie0-x22d.google.com with SMTP id ar20so6396006iec.4
+        for <openmundi@googlegroups.com>; Sat, 28 Sep 2013 07:20:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=0wfIRwWQoC4SciPt1m/dxZMHRCgCFHEtQzV9lfgG7Ds=;
+        b=FG2S5cCm3JxbeEbOJTaoQmBKEA7NCf86FyWP+HPv5NEFkssk5+3ToL9WFlPilYtMry
+         0vzHJYzuAN835/mOhdhfKzELTmWnIyk43I50Lj295i9vl1g/Ow/+mQOZQqKEZpXlrLWC
+         w7U3kBLx4Dn/sBQVB/1aBxMzxfxjvB4caxm+7GmQ3Nyd3tgihyiLI1EDFDyaBb3qgj0h
+         5WAtxPHBwHydMXQywRQFoMOda4z7x0TXJP8iEAPNAnVh1bupKVHRA/4Up0opPxREZ9ZF
+         2qO3/9ntxbQgBSWX59vPyyItecOgMEbBn08XqZv6vMRKWXROzgiHpHbwnGPXOoeFjP/B
+         1EKg==
+MIME-Version: 1.0
+X-Received: by 10.50.79.164 with SMTP id k4mr6805582igx.10.1380378042617; Sat,
+ 28 Sep 2013 07:20:42 -0700 (PDT)
+Received: by 10.64.93.41 with HTTP; Sat, 28 Sep 2013 07:20:42 -0700 (PDT)
+Date: Sat, 28 Sep 2013 16:20:42 +0200
+Message-ID: <CAAxEZd-K_5YLQmrBwNiB9m4AFDQm6A-k5YBiZk9MwHa16NRo3g@mail.gmail.com>
+Subject: world.db Now Includes Continents n Territories and More
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: multipart/alternative; boundary=089e01294784e2e5cb04e7724eb2
+
+--089e01294784e2e5cb04e7724eb2
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  I've added continents[1] to the world.db that includes 196 countries and
+(new!) 48 territories[2]. Note, you can now configure your own continent
+mappings e.g. the football.db uses FIFA associations e.g. Australia gets
+included in Asia, Isreal in Europe, Guyana in the Caribbean etc. More info
+about the world.db and the world.db gem [3].
+
+  Cheers.
+
+[1] worlddb.herokuapp.com/continents
+[2] worlddb.herokuapp.com/territories
+[3] github.com/openmundi
+
+--089e01294784e2e5cb04e7724eb2
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>=A0 I&#39;ve added continents[1] to the worl=
+d.db that includes 196 countries and (new!) 48 territories[2]. Note, you ca=
+n now configure your own continent mappings e.g. the football.db uses FIFA =
+associations e.g. Australia gets included in Asia, Isreal in Europe, Guyana=
+ in the Caribbean etc. More info about the world.db and the world.db gem [3=
+]. <br>
+<br>=A0 Cheers.<br><br>[1] <a href=3D"http://worlddb.herokuapp.com/continen=
+ts">worlddb.herokuapp.com/continents</a> <br>[2] <a href=3D"http://worlddb.=
+herokuapp.com/territories">worlddb.herokuapp.com/territories</a><br>[3] <a =
+href=3D"http://github.com/openmundi">github.com/openmundi</a><br>
+<br></div>
+
+--089e01294784e2e5cb04e7724eb2--
+

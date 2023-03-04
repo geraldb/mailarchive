@@ -1,0 +1,57 @@
+From 6183885196154109952@xxx Mon Aug 17 07:52:51 +0000 2015
+X-GM-THRID: 6183240612496539648
+X-Received: by 10.66.142.42 with SMTP id rt10mr69770pab.39.1439797970883;
+        Mon, 17 Aug 2015 00:52:50 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.44.66 with SMTP id f60ls2207954qga.6.gmail; Mon, 17 Aug
+ 2015 00:52:50 -0700 (PDT)
+X-Received: by 10.13.239.197 with SMTP id y188mr127768ywe.0.1439797970443;
+        Mon, 17 Aug 2015 00:52:50 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22e.google.com (mail-io0-x22e.google.com. [2607:f8b0:4001:c06::22e])
+        by gmr-mx.google.com with ESMTPS id g7si776594igr.0.2015.08.17.00.52.50
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 17 Aug 2015 00:52:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) client-ip=2607:f8b0:4001:c06::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x22e.google.com with SMTP id t126so142718789iod.2
+        for <opensport@googlegroups.com>; Mon, 17 Aug 2015 00:52:50 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=psMQ6dkxZ7b6RsIvaPV+M9RWXqaef329pRql0A7OWm4=;
+        b=XAykhzgUWe4Ncw2KzzG4jwfYxwJ8ONEixDHWXYAyIEx+hQAWR8w9TfDFWsL+Jji88f
+         0Aib/qLIyK0bwZn/RMNm6rtM1Y4D9t3UpVxiHUqs10pqXWJunRT65wqd7EepgeHPmKnR
+         nUB6Vlx1I9gGTNPiN40JAwbg/jGBTbRo/TOfHeYN+g4ZHoL8rwvW2sOktcQOPuLu5Fe2
+         TiaVr24EYsfyoK5Kf/zSU2Ctpn3X3Y6dU6iwuoHVCHpD78XqF7IXwXRJL6R1dTqP1gpj
+         dR0w/StBSW+Qp1rihG0npw0T+/xFVM32iqHT+a/8lkWlZnBS+r1kgfA1fWJ5cveae5oh
+         Vh8w==
+MIME-Version: 1.0
+X-Received: by 10.107.7.77 with SMTP id 74mr95984ioh.178.1439797970315; Mon,
+ 17 Aug 2015 00:52:50 -0700 (PDT)
+Received: by 10.107.15.196 with HTTP; Mon, 17 Aug 2015 00:52:50 -0700 (PDT)
+In-Reply-To: <9b340875-08ea-4d50-8b92-fdc4ba29882b@googlegroups.com>
+References: <9b340875-08ea-4d50-8b92-fdc4ba29882b@googlegroups.com>
+Date: Mon, 17 Aug 2015 09:52:50 +0200
+Message-ID: <CAAxEZd9SbQ8CRcxwCyTMX8hWrtc0uDxGU_F7vxN9wbdV8TmZDg@mail.gmail.com>
+Subject: Re: [opensport] Newbie: Any detail on the match stats?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Sorry I don't know any links/pointers to (free) detailed stats
+about the English Premier League. Joe Kampschmidt has put togheter a
+detailed page titled  "Guide to Football/Soccer data and APIs" [1] -
+that might get you started finding out more. Let us know what you find
+out. Cheers.
+
+[1] www.jokecamp.com/blog/guide-to-football-and-soccer-data-and-apis
+

@@ -1,0 +1,95 @@
+From 6862198114076327936@xxx Tue Aug 18 05:53:24 +0000 2020
+X-GM-THRID: 6862194087182729216
+X-Received: by 2002:a62:f904:: with SMTP id o4mr14480348pfh.14.1597730003714;
+        Mon, 17 Aug 2020 22:53:23 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a17:902:b602:: with SMTP id b2ls8132820pls.11.gmail; Mon, 17
+ Aug 2020 22:53:22 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwxebvlNzO/vwNG+CLvNkzXMSmKES8Jr+fBGQu6s3ZrWeB0cY6WsFoi1lC7np11njq8EhwJ
+X-Received: by 2002:a17:90a:aa8e:: with SMTP id l14mr16456191pjq.67.1597730002713;
+        Mon, 17 Aug 2020 22:53:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1597730002; cv=none;
+        d=google.com; s=arc-20160816;
+        b=V2MHQ9sKKVceKRb3Y5cKeEAykWmiXfa+rOBhGyPLNRdvgmq7BbBdjuRwt35uKRq6QJ
+         EFP/OA8+C+7Ser52D45rI1wINOsBxfPjToPvCgCaf1Xu67dagnhlYcbSxoGJxozyvNKx
+         792PTCL8+cdDCqTV4klx/l+Vf6lWPsWPB4OUD+3q0lCdcZ2uwJb8pz2SFupgfzOeJyDG
+         RPKKdw2EBHOrlfgTcgFRTQni0K4g4UpIXKMnJr/feuD2S4bVhLlFUL+pcduaVrC46kwu
+         LZxMainQykna6rKDnMXAVzPC6yiUQCSsmH40p+lTBqvFE9jjRBXC2pIp1+TKcWaYB5MC
+         Q3cA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=cfPRLzIRKaWwH+0GbaMDxWwWEN1qeR7iARD3Ez5w8sI=;
+        b=c+Y7srhEKtvJrt/iVbLrXo7B1ALlNXti6+6szJFePZDM8NILqTQqQJwsHfaRoSUdmO
+         rPqMdqJsnFuS3dVLXOZanyeTGnqt1qXWjbneh1Wniuj6hRvo4APxm/xQPwTMLgRpvC5J
+         rXsTqrAXYFElQZO2JmHKMJRIUWeB7jI7og6bhVIqYIvxph/QS8sXD4LEmQ8RH6f8CI1V
+         gQUNVloL/2eayTo4wfDC8zG2gnRh/tyjTcl5/WwHwLaIEZgDb0bZTlUMHPp0clULtnmx
+         WPnRsLcNyAaRXoJBwibp2x8G/U+GKku+VtQssyy72yzh9puK5W3sGzi+8rGujowEW9Ie
+         k2eQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=LhgbWQ04;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4864:20::1029 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-pj1-x1029.google.com (mail-pj1-x1029.google.com. [2607:f8b0:4864:20::1029])
+        by gmr-mx.google.com with ESMTPS id v127si988287pfc.0.2020.08.17.22.53.22
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 17 Aug 2020 22:53:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4864:20::1029 as permitted sender) client-ip=2607:f8b0:4864:20::1029;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=LhgbWQ04;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4864:20::1029 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-pj1-x1029.google.com with SMTP id d4so8740723pjx.5
+        for <opensport@googlegroups.com>; Mon, 17 Aug 2020 22:53:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=cfPRLzIRKaWwH+0GbaMDxWwWEN1qeR7iARD3Ez5w8sI=;
+        b=LhgbWQ04rEkCXL6FK8BiDpS0ojRN2rWTmpfe6LULQJrFglZbgg8R+d5t+phKOM8HRD
+         kkK/k8DTAc+MzvPz16zfD3S0PYzT3TXW/IAqsPBrzRJtv72rQS5lXVcYzAs3nRvoyJ+W
+         5U3pXeZhSeqGr9dJsQK086kAiRbkqzVDgxZyCHaAtJJVADAb7zDqUQ4PyZ57NgNK3wAD
+         V+WY7zocfXB1MZYkpqnvZWaSoEWo2WEwkvAKSMdR+qO8nwKz3H24KMYzQ/JHTFji3axC
+         HlYymWHL9lx2JFmumDDPUr4r71m+qdIHSPnBEYAdPhZsyuDDl8dlUkG8sWd9piWvJeGs
+         xabw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=cfPRLzIRKaWwH+0GbaMDxWwWEN1qeR7iARD3Ez5w8sI=;
+        b=jSS3pQXeOUNRnvbhdChz4WoRrdgW+ZaLx7P4O++8OI4NQ7rOwcTnsPyn5SUd4Yx7s7
+         09c91nRyP4GCoBTwNDNldngJrPxDG/Op/yi3FZu+/MivdMgRE8I+o+Y6Ei49mU6QVJfN
+         aZHjdX5DPg2VImtRijl8uB7r9FruqSMFhmsjHNEMElOB5n3WDvJNnEa9vSBkawSU0kAk
+         j2wzbXu/i+ClAPUsOBw5WX3UId+bs57iGGm2IrdkK9IFAapW3mGrx/qvD/ZH3Zi8v0gl
+         p4S6bZhVcMFIJtsBeYnucmHY49+3t+VF2S0eThKZYY+0YhZ5oeTpqIxrd/ZvsS4y95g2
+         kvlg==
+X-Gm-Message-State: AOAM530EADtvkn0exGgUx7YsO2oQ/dUlYYW7bTafYCAGNTgG/XnVjNdO
+	DRccotFDEZVa4/LsJXw0u7AK5ygFlZtBpX+CPuZ5gTIcD1V5NQ==
+X-Received: by 2002:a17:902:8f8f:: with SMTP id z15mr11690866plo.221.1597730002138;
+ Mon, 17 Aug 2020 22:53:22 -0700 (PDT)
+MIME-Version: 1.0
+References: <5235aa6c-a621-4abf-ae1c-b5fb62b28af1o@googlegroups.com>
+In-Reply-To: <5235aa6c-a621-4abf-ae1c-b5fb62b28af1o@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 18 Aug 2020 07:53:10 +0200
+Message-ID: <CAAxEZd-Em0dis-W9-yJnO9+x4SkVdMQNMZ7H+j9Dw3rW_UkprQ@mail.gmail.com>
+Subject: Re: [opensport] Event Time mx.1.json 2020/21
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Thanks for your interest in football.db.   Yes, the mx.1 gets
+currently (auto-) generated from a csv file [1] sourced via the web.
+
+   The plan is to add the time over the next days if available (with
+the timezone/offset fixed). Please, check back next week. Sorry - I
+try to start with England and Austria.
+
+ Thanks for sharing the link to the official schedule  (unfortunately,
+so far I have no scripts for handling pdfs only for web pages, that
+is, html [2]).
+
+[1] https://github.com/yorobot/stage/blob/master/two/2020-21/mx.1.csv
+[2] https://github.com/yorobot/cache.csv
+

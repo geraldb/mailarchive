@@ -1,0 +1,171 @@
+From 6729032780738461696@xxx Sun Aug 25 09:23:54 +0000 2019
+X-GM-THRID: 6728805207557275648
+X-Received: by 2002:a5d:4e90:: with SMTP id e16mr15171686wru.339.1566725033536;
+        Sun, 25 Aug 2019 02:23:53 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a1c:4e0c:: with SMTP id g12ls5190187wmh.4.gmail; Sun, 25 Aug
+ 2019 02:23:52 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqyxFTvqKnHhFtMztPoFphfciMPwjyEBCLC97KoZGIiOHdpE+0D7VoDC4WCmG4Wjrt0E4JvS
+X-Received: by 2002:a1c:20c8:: with SMTP id g191mr14893832wmg.55.1566725032884;
+        Sun, 25 Aug 2019 02:23:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1566725032; cv=none;
+        d=google.com; s=arc-20160816;
+        b=pfVwqJmJgu4wWp46tKWa4zOk/riLeT7mGlmu+rzwQvAQHAy9D2LmZRy9YCHkhGuaE6
+         Qu/fsjbKXF6uyFoDj0tRcjL9SD2ZJRxJZuypcM1BwdVACFZZZ2UUddNY6fuDE3ZjsFyN
+         LoSw3GgI1eVWvhjBgvpBFxSQn/GdPFlF0AW6GJ0Brfr1BEyVTOhcQHLbCojg2RB8jWYJ
+         HeLsqELVFbLrpXmt9c+ZP7iJqpG85DRDMpe6jjGxhLfbdkm8MDBxwQ25y6RpVhZIrSXj
+         B79djzxPGMtAxvS05G0ZfbFZt3QJCuXwOaGe9+ouOHjcyhsInuTUhZoFrPRykl3dcrnC
+         tQKw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=RBivypU0SbYg3Mvf8lkpWuOnI2Elx2qgYnrlt3gO0qU=;
+        b=uoyzpfVisdNkzbPTXWtkiIJVPYUJwVCrYAtqvxS+QD+vhTgjbIJ0DOWmXVQM64NBtE
+         GYX/xiSBGN5AI0zjbzMyyYv/+eZgJJs5cSEWq0OdsUIZq+3xcPblf8xuALqrtGy8QiFK
+         47L2Xhf3L0zAiVaANG/lggUNz81mc+yO+uuNVHUd1UJi4/yv1Q+sZow6TsNA+plpUNO8
+         iDexTGAsBWzu3KufPwuus/fepDNd5EmrDEdG1sqQuAAtTYyZRsQDjirH0LPOmOIR2R99
+         hbbxWoj8DEmiAXj2QCZ9t1OaErxwfKjLxf1MZ9ctrMiJMHTMiY7aEzYJ+KS8Vq4uK7nk
+         IwbA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="L/reQT8s";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22e.google.com (mail-lj1-x22e.google.com. [2a00:1450:4864:20::22e])
+        by gmr-mx.google.com with ESMTPS id o4si443844wrp.4.2019.08.25.02.23.52
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 25 Aug 2019 02:23:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) client-ip=2a00:1450:4864:20::22e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="L/reQT8s";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22e.google.com with SMTP id x18so12513530ljh.1
+        for <opensport@googlegroups.com>; Sun, 25 Aug 2019 02:23:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=RBivypU0SbYg3Mvf8lkpWuOnI2Elx2qgYnrlt3gO0qU=;
+        b=L/reQT8sH4aW4oeG871T0vc/wXfLXcQ3iTRG3m+CkEF7XfmQ2ScyAHNmCa6Kfl/FBp
+         6zTyEEIhNGWF8HrLR4NCSBudOO4yK2rp1OHBDCE+tM0ozWW62jqDvIu+j3xGEVQOqDfI
+         LAxGTpqriYCsNz1ug+C0pGAZjO3JzFvT3D8t5AEpnW1Koy6Uy9vI6G8naKSb6wTPt4iI
+         KV6Rlo1vW2oa+S6k/5DyGwoF/rrvTwu6ejl4J2OBYL3s0HIHZtMWLa99NSQvdzQe2AHS
+         3l/aAcYWfDy2Lo173f2xs018e16oeKDpiisbPS5SUs0Tx3INatGSLd06FocjLSsXU6t3
+         Hr/A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=RBivypU0SbYg3Mvf8lkpWuOnI2Elx2qgYnrlt3gO0qU=;
+        b=jZqXB/K813lMksrIye0OWSmxuqOZgkub2cbTh9rM3of47v3kHsYofW1tt4VneWu6wm
+         3E25PsT6i/JTT2eO7Yuwnalsl900MWEjy8eopmIi5E0akcp6oBTUfSX8dFzM6Cdblid5
+         elYS3hMmW81KQRxX4a7bnrzEckFs7kA7Qz4aI5IPB7FA2gWrZIkXi+ogeA6t9zw6r9Zy
+         AS6TJ4i2cCGhfus+AaTv5Ep3q157WnkNPSai4PTUspAwbCxFMAfLIfaDr9zNafoZfKM0
+         pkBC655gjf3Cu4viWkKdUOhHAaL6SiQwMRu6176ArbNROK/7qkr7iHeh8F655YokHOrE
+         kfNg==
+X-Gm-Message-State: APjAAAXnctyloo85tytuADXXh0pyHUYNkRk2PYfhoVziyde53pVhn0NH
+	Tvu1g33uq26rEUT3Qo8zwqVih7qCWY6Ow0R0//T58Q==
+X-Received: by 2002:a2e:b4e6:: with SMTP id s6mr7380706ljm.169.1566725031864;
+ Sun, 25 Aug 2019 02:23:51 -0700 (PDT)
+MIME-Version: 1.0
+References: <77d31082-fa86-46b0-8d5e-28fc12857bb8@googlegroups.com>
+ <CAAxEZd_xQQem8_GLQXEiNsAGimGT5EuJLJFy5sdGZhPMaR1zuQ@mail.gmail.com> <CAPnzP1Bweoo7ggsrzuYFJPfiHyLJvxkysSmTDKAmqubV0UhmwA@mail.gmail.com>
+In-Reply-To: <CAPnzP1Bweoo7ggsrzuYFJPfiHyLJvxkysSmTDKAmqubV0UhmwA@mail.gmail.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 25 Aug 2019 11:23:39 +0200
+Message-ID: <CAAxEZd-v1p=Wv5tubDad8iX8VgzYt_Lgn239h79ic7xiTv+SWg@mail.gmail.com>
+Subject: Re: [opensport] Maintainer openfootball/es-espana
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+     Again thanks for sharing your code.  The football.csv is no
+different from the the football.db, that is, it is not limited to
+historic data.     In your case - if you miss the latest season
+including all upcoming matches just add it :-).
+
+    I will add the new 2019/20 season in the next days for all leagues
+but this will NOT include the upcoming matches - but as written above
+- there's no rule or limitation on adding the upcoming matches too
+(and the missing round / matchday number now set to ?).
+
+   Again thanks for sharing your code and data. Gracias. Keep it up.
+Cheers. Prost.
+
+El s=C3=A1b., 24 ago. 2019 a las 21:03, Max (<maxilandia@gmail.com>) escrib=
+i=C3=B3:
+>
+> Thanks for your reply.
+>
+> Yes I saw football.csv site, which has a nicer format but unfortunately i=
+t contained only historical data and I'm more interested in the current sea=
+son: I maintain a web page dedicated to a second league team (Racing Santan=
+der) and I'm trying to automatically update the time for the matches and th=
+e results of the current season.
+>
+> Since I have to do the scraping anyway I thought it might be a good idea =
+to share the results in football.db.
+>
+> But as I understand now the idea is to integrate everything in the footba=
+ll.csv, so I guess I picked the wrong dataset.
+>
+> Kind regards
+>
+> Max Tuni
+>
+>
+> On Sat, Aug 24, 2019 at 8:51 PM Gerald Bauer <gerald.bauer@gmail.com> wro=
+te:
+>>
+>> Hello,
+>>    Welcome to football.db. Again thanks for your contributions.  Yes,
+>> the repo gets updated mostly by hand - the idea is to make it work
+>> like wikipedia / like a wiki and over time add more information e.g.
+>> goals, etc.
+>>
+>>   For auto-generated / auto-updated / auto-formated match datafiles
+>> there's the sister project called football.csv, see
+>> https://github.com/footballcsv    so that might a better fit for your
+>> ideas / scripts.
+>>
+>>   For now the football.csv get sourced from Joseph Buchdahl's Football
+>> Data website
+>> that gets updated twice a week and includes the secunda division too
+>> (as far as I can remember), see
+>> https://github.com/yorobot/football.csv/tree/master/sportdb-source-footb=
+alldata
+>>
+>>    Sorry that I don't have an easy yes or no answer.  Yes,
+>> auto-updates are welcome for football.csv  (but for now not for
+>> football.db) - in the next months the football.csv will, of course,
+>> sync and double-check hand-edited datafiles - but sorry for now the
+>> focus is on improving the football.csv  auto-update infrastructure.
+>>
+>>    The football.csv format is designed for automation and processing
+>> with scripts.  Not sure if that makes sense.  Again you're welcome to
+>> join and help or since the project is by design decentralized you're
+>> welcome to keep your own datasets up-to-date and we can sync or share
+>> from time to time.      Not sure if that makes sense.   Cheers. Prost.
+>>
+>> --
+>> You received this message because you are subscribed to the Google Group=
+s "opensport" group.
+>> To unsubscribe from this group and stop receiving emails from it, send a=
+n email to opensport+unsubscribe@googlegroups.com.
+>> To view this discussion on the web visit https://groups.google.com/d/msg=
+id/opensport/CAAxEZd_xQQem8_GLQXEiNsAGimGT5EuJLJFy5sdGZhPMaR1zuQ%40mail.gma=
+il.com.
+>
+> --
+> You received this message because you are subscribed to the Google Groups=
+ "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an=
+ email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit https://groups.google.com/d/msgi=
+d/opensport/CAPnzP1Bweoo7ggsrzuYFJPfiHyLJvxkysSmTDKAmqubV0UhmwA%40mail.gmai=
+l.com.
+

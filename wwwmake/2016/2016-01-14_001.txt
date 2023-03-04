@@ -1,0 +1,82 @@
+From 6239634796384878592@xxx Thu Jan 14 13:29:45 +0000 2016
+X-GM-THRID: 6239634795639341056
+X-Received: by 10.31.58.69 with SMTP id h66mr3455544vka.9.1452778185313;
+        Thu, 14 Jan 2016 05:29:45 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.50.27.33 with SMTP id q1ls1453507igg.5.canary; Thu, 14 Jan
+ 2016 05:29:44 -0800 (PST)
+X-Received: by 10.107.7.22 with SMTP id 22mr4038051ioh.19.1452778184716;
+        Thu, 14 Jan 2016 05:29:44 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22a.google.com (mail-ig0-x22a.google.com. [2607:f8b0:4001:c05::22a])
+        by gmr-mx.google.com with ESMTPS id lr9si429467igb.1.2016.01.14.05.29.44
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 14 Jan 2016 05:29:44 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22a as permitted sender) client-ip=2607:f8b0:4001:c05::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22a.google.com with SMTP id mw1so169128047igb.1
+        for <wwwmake@googlegroups.com>; Thu, 14 Jan 2016 05:29:44 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=jFe2XpB70XyVjJtZcZ9psMmO2BNlwzeDju9mTJoVkYM=;
+        b=q5MHxYPOYe1XXGKmANRsiQu644iAeaISDgkRkorm5lS8/gAcP6G/9PtdIJXW20UxSp
+         MhjbTqc6xQGuqXwHFHnqRbkRHUWQsxmsLrE4UlPJCV8P1hMMKJTs0d/DB26v0NowqMGc
+         9psTO8sE7nbjIHY4stM4ZiEftUFtvGSx7Q1PR+xKzg2z1XMShpUPyZN02z46r/LiIn79
+         NN3HLpjPalymVif2c9sADSqmOQjPeALmPmy0F6QyJcqMb9odfXHH9y0yslD49ogwcxVf
+         FW/lMUkvj4IAOr/SdVQ9iyghivpyFaHiJetfU+HJEceYRnl/2Qbr3RoWOB87ZF4Z8FWj
+         1h+Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=jFe2XpB70XyVjJtZcZ9psMmO2BNlwzeDju9mTJoVkYM=;
+        b=Cj0ZUUKi3aSbu3VgEgH+C+xcI+6MLMrL9zhvXky7CZPmmggMiwSNp2eYvzEuIIBqMn
+         +5G92D0cMfJr5YNragFBh+FGSX5ynMquN1wRu78lEOtFQvHUgwR3ZwnzxaJblr3XwoDw
+         KgC1YaDR63i6KcThtVPi7QaUVGl9Bz1VA4fcjC/tfnN69leK6yHLud5QPjFjT0DTeGRT
+         vXJe8hiow+P6DCXoZsP+YgrFBombu00FpmSqrxxDZBaDtjgW5km41J9vlhcg5ttrv0+m
+         FabpQWZq2U1/L1BaPXp6utCJ/vmgOZinyyxhWrQJypFVhDWOHqBVgj8GAAYANipokCHB
+         i6sA==
+X-Gm-Message-State: ALoCoQmR5IiIl/hacjBKzPgflHY+NUbDYqzGuxQ2/m3miNta2zOtiLoidzXPs/3d7praQy5Y+sb+22lWO+ssekbPhu0vTtYshQ==
+MIME-Version: 1.0
+X-Received: by 10.50.61.243 with SMTP id t19mr4430740igr.86.1452778184577;
+ Thu, 14 Jan 2016 05:29:44 -0800 (PST)
+Received: by 10.107.63.198 with HTTP; Thu, 14 Jan 2016 05:29:44 -0800 (PST)
+Date: Thu, 14 Jan 2016 14:29:44 +0100
+Message-ID: <CAAxEZd-GnKZj7ewZ2BCRPatAsr-SZBbewuOZudQ-644PHBAXPQ@mail.gmail.com>
+Subject: Interested in Learning Markdown? Join us for the Vienna.html Meetup
+ Feb/23rd (Free)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  If you happen to be in Central Europe - you're invited to the next
+Vienna.html meetup [1] on Feb/23rd in Austria.
+
+   We're proud to host the lead developer of the kramdown library 'n'
+tools that power GitHub Pages, Jekyll, LeanPub, etc.
+
+   Title: Using Markdown (HTML =E2=80=9CShortcodes=E2=80=9D in Plain Vanill=
+a Text)
+with the kramdown Library and Tools by Thomas Leitner
+
+  Bio: Thomas Leitner is head of the computer group of the mathematics
+department of the University of Vienna and lead developer of the
+kramdown library and tool - a fast, markdown-superset processor (in
+ruby) for converting plain old vanilla text into hypertext (powering
+GitHub Pages, Jekyll, and friends).
+
+
+  Join us. Free, everyone welcome. Cheers.
+
+[1] http://viennahtml.github.io
+

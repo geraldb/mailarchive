@@ -1,0 +1,89 @@
+From 854737289216@xxx Tue Jun 16 00:17:06 +0000 2015
+X-GM-THRID: 785360355328
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,443c39991bfa31a2
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.141.11 with SMTP id f11mr15016853yhj.54.1401263222235;
+        Wed, 28 May 2014 00:47:02 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.23.7 with SMTP id 7ls3539837qgo.60.gmail; Wed, 28 May 2014
+ 00:47:01 -0700 (PDT)
+X-Received: by 10.140.48.241 with SMTP id o104mr1422qga.38.1401263221900;
+        Wed, 28 May 2014 00:47:01 -0700 (PDT)
+X-Google-Doc-Id: 190f4c6d452d0ac1
+X-Google-Web-Client: true
+Date: Wed, 28 May 2014 00:47:00 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <8a35ab68-a2b9-464f-8b7a-b9f7a88ca2ce@googlegroups.com>
+In-Reply-To: <22f20b30-4202-4cc7-b442-9ff3ce1f2feb@googlegroups.com>
+References: <22f20b30-4202-4cc7-b442-9ff3ce1f2feb@googlegroups.com>
+Subject: Re: Football : How to add league standings?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_51_32764792.1401263220919"
+X-Google-Token: EPSolpwFM9ajOSXAeYE0
+X-Google-IP: 188.23.97.246
+
+------=_Part_51_32764792.1401263220919
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_52_16082938.1401263220919"
+
+------=_Part_52_16082938.1401263220919
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+   I have started adding standing calculations. Still early and rough. You 
+can now calculate league and group standings. For auto-calculating all 
+league standings use
+
+    EventStanding.recalc!   and  for all groups
+    GroupStanding.recalc!
+
+   You can see the calc "engine" here [1] The "engine" calculates:
+
+    - pos (ranking e.g. 1st place, 2nd place etc.)
+    - played (matches played)
+    - won
+    - drawn
+    - lost
+    - goals_for
+    - goals_against
+
+   Cheers.
+
+PS: New stats tables include:
+
+ - AlltimeStanding / AlltimeStandingEntry 
+ - EventStanding / EventStandingEntry
+ - GroupStanding / GroupStandingEntry
+
+[1] github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/calc.rb
+
+
+------=_Part_52_16082938.1401263220919
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>&nbsp;&nbsp; I have started adding standing =
+calculations. Still early and rough. You can now calculate league and group=
+ standings. For auto-calculating all league standings use<br><br>&nbsp;&nbs=
+p;&nbsp; EventStanding.recalc!&nbsp;&nbsp; and&nbsp; for all groups<br>&nbs=
+p;&nbsp;&nbsp; GroupStanding.recalc!<br><br>&nbsp;&nbsp; You can see the ca=
+lc "engine" here [1] The "engine" calculates:<br><br>&nbsp;&nbsp;&nbsp; - p=
+os (ranking e.g. 1st place, 2nd place etc.)<br>&nbsp;&nbsp;&nbsp; - played =
+(matches played)<br>&nbsp;&nbsp;&nbsp; - won<br>&nbsp;&nbsp;&nbsp; - drawn<=
+br>&nbsp;&nbsp;&nbsp; - lost<br>&nbsp;&nbsp;&nbsp; - goals_for<br>&nbsp;&nb=
+sp;&nbsp; - goals_against<br><br>&nbsp;&nbsp; Cheers.<br><br>PS: New stats =
+tables include:<br><br>&nbsp;- AlltimeStanding / AlltimeStandingEntry <br>&=
+nbsp;- EventStanding / EventStandingEntry<br>&nbsp;- GroupStanding / GroupS=
+tandingEntry<br><br>[1] github.com/geraldb/sport.db.ruby/blob/master/lib/sp=
+ortdb/calc.rb<br><br></div>
+------=_Part_52_16082938.1401263220919--
+
+------=_Part_51_32764792.1401263220919--
+

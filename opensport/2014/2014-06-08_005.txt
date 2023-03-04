@@ -1,0 +1,105 @@
+From 1110735585280@xxx Tue Jun 16 00:17:04 +0000 2015
+X-GM-THRID: 1070877114368
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,ee3355fbf99011aa
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.52.27.174 with SMTP id u14mr6373957vdg.9.1402249445770;
+        Sun, 08 Jun 2014 10:44:05 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.26.183 with SMTP id 52ls1321869qgv.15.gmail; Sun, 08 Jun
+ 2014 10:44:05 -0700 (PDT)
+X-Received: by 10.140.93.23 with SMTP id c23mr4750qge.14.1402249445600;
+        Sun, 08 Jun 2014 10:44:05 -0700 (PDT)
+X-Google-Doc-Id: eaaea6b9c3520c8c
+X-Google-Web-Client: true
+Date: Sun, 8 Jun 2014 10:44:05 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <f1f83edd-8758-495f-8921-71dcf30458e1@googlegroups.com>
+In-Reply-To: <e372a846-c449-40c6-80c4-a05921c06a91@googlegroups.com>
+References: <e372a846-c449-40c6-80c4-a05921c06a91@googlegroups.com>
+Subject: Re: Noob help
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_0_11285111.1402249445112"
+X-Google-Token: EOXB0pwFe2GMsn-2Mws0
+X-Google-IP: 188.22.249.181
+
+------=_Part_0_11285111.1402249445112
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1_3391330.1402249445117"
+
+------=_Part_1_3391330.1402249445117
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  Great idea about using pg:push. Never tried it but sure way easier than 
+uploading all data and loading with rake tasks. Yes, you have to change the 
+database connection code a little just a couple of lines.
+
+  From the Heroku docu
+
+Database access - Using ActiveRecord
+
+For non-Rails apps using ActiveRecord standalone, put this code into
+ your application to access the DATABASE_URL:
+
+require 'active_record'
+
+ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 
+'postgres://localhost/mydb')
+
+The code above uses a default local PostgreSQL database named mydb, but you 
+can change this value to point anywhere you like, or override 
+by running your app with the DATABASE_URL environment variable set in your 
+shell.
+
+  ------------
+
+  Thus replace in boot.rb:
+
+# Database Setup & Config
+db_config = {
+  adapter: 'sqlite3',
+  database: 'football.db' # NOTE: change to use your db of choice (e.g. 
+worldcup.db, bundesliga.db, ski.db etc.)
+}
+pp db_config
+ActiveRecord::Base.establish_connection( db_config )
+
+  with or similar:
+
+  ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 
+'postgres://localhost/mydb')
+
+   Good luck. Cheers. 
+
+------=_Part_1_3391330.1402249445117
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>&nbsp; Great idea about using pg:push. Never=
+ tried it but sure way easier than uploading all data and loading with rake=
+ tasks. Yes, you have to change the database connection code a little just =
+a couple of lines.<br><br>&nbsp; From the Heroku docu<br><br>Database acces=
+s - Using ActiveRecord<br><br>For non-Rails apps using ActiveRecord standal=
+one, put this code into<br>&nbsp;your application to access the DATABASE_UR=
+L:<br><br>require 'active_record'<br><br>ActiveRecord::Base.establish_conne=
+ction(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')<br><br>The code a=
+bove uses a default local PostgreSQL database named mydb, but you can chang=
+e this value to point anywhere you like, or override <br>by running your ap=
+p with the DATABASE_URL environment variable set in your shell.<br><br>&nbs=
+p; ------------<br><br>&nbsp; Thus replace in boot.rb:<br><br># Database Se=
+tup &amp; Config<br>db_config =3D {<br>&nbsp; adapter: 'sqlite3',<br>&nbsp;=
+ database: 'football.db' # NOTE: change to use your db of choice (e.g. worl=
+dcup.db, bundesliga.db, ski.db etc.)<br>}<br>pp db_config<br>ActiveRecord::=
+Base.establish_connection( db_config )<br><br>&nbsp; with or similar:<br><b=
+r>&nbsp; ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'po=
+stgres://localhost/mydb')<br><br>&nbsp;&nbsp; Good luck. Cheers. <br></div>
+------=_Part_1_3391330.1402249445117--
+
+------=_Part_0_11285111.1402249445112--
+

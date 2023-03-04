@@ -1,0 +1,72 @@
+From 380455878656@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 285796728832
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,d61a16acd8afd09c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.86.36.11 with SMTP id j11mr151501fgj.26.1233747941923;
+        Wed, 04 Feb 2009 03:45:41 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from fk-out-0910.google.com (fk-out-0910.google.com [209.85.128.190])
+        by mx.google.com with ESMTP id 5si788517fge.6.2009.02.04.03.45.41;
+        Wed, 04 Feb 2009 03:45:41 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.128.190 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.128.190;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.128.190 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by fk-out-0910.google.com with SMTP id 18so2043109fkq.9
+        for <webslideshow@googlegroups.com>; Wed, 04 Feb 2009 03:45:41 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.181.199.16 with SMTP id b16mr1042208bkq.142.1233747941373; 
+	Wed, 04 Feb 2009 03:45:41 -0800 (PST)
+In-Reply-To: <7a557f74-d337-4670-872b-ed7619a7f43a@r15g2000prh.googlegroups.com>
+References: <30f836e9-c1f5-4052-8552-5c1b5ab31ff5@e22g2000vbe.googlegroups.com>
+	 <7a557f74-d337-4670-872b-ed7619a7f43a@r15g2000prh.googlegroups.com>
+Date: Wed, 4 Feb 2009 12:45:41 +0100
+Message-ID: <1f058eab0902040345m2a0c77ddg6b0f2b401eecfea9@mail.gmail.com>
+Subject: Re: [slideshow] Re: alternatives to maruku
+From: Gerald Bauer <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello David,
+
+  To follow up:
+
+> If I can work it out in the next couple of days I will try my best
+> to add a new switch that lets you choose the Markdown library for the
+> slideshow package or add a check on startup for installed Markdown
+> packages so the package that's already installed (e.g. rdiscount) gets
+> used.
+
+   I updated the slideshow gem (- that is, version 0.7.3 -) to remove
+th dependency on Maruku (and Oniguruma) and allow and check for
+optional installed Markdown libraries/gems.
+
+  For now the search order for markdown libraries is first come, first
+serve, that is: rdiscount > rpeg-markdown > maruku > bluecloth
+(fallback, always present because it's required in gem spec).
+
+  If you want to use rdiscount as your markdown library install it
+using RubyGems e.g.
+
+  gem install rdiscount
+
+  Same goes for rpeg-markdown or maruku.
+
+  In an upcoming release/update I plan to add a command line switch or
+config settings or similar that lets you finetune and override the
+markdown library selection. Not yet settled on what's the best
+practice.
+
+  Cheers.
+
+PS: If you want to check/troubleshoot what markdown library gets
+picked up by slideshow add the -v/--verbose switch and look for:
+
+DEBUG: Markdown library rdiscount not found. Use gem install rdiscount
+to install.
+DEBUG: Markdown library rpeg-markdown not found. Use gem install
+rpeg-markdown to install.
+DEBUG: Installed Markdown libraries: maruku, bluecloth
+DEBUG: Using Markdown library maruku.
+

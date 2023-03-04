@@ -1,0 +1,81 @@
+From 129018888192@xxx Sat Dec 20 19:01:39 +0000 2014
+X-GM-THRID: 133053808640
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,225734de8ef0f2b1,start
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.162.193 with SMTP id yc1mr219718lbb.19.1400175620412;
+        Thu, 15 May 2014 10:40:20 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.152.37.69 with SMTP id w5ls60612laj.103.gmail; Thu, 15 May
+ 2014 10:40:19 -0700 (PDT)
+X-Received: by 10.152.21.133 with SMTP id v5mr8383lae.9.1400175619767;
+        Thu, 15 May 2014 10:40:19 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x236.google.com (mail-wi0-x236.google.com [2a00:1450:400c:c05::236])
+        by gmr-mx.google.com with ESMTPS id gt1si73833wib.0.2014.05.15.10.40.19
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 15 May 2014 10:40:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::236 as permitted sender) client-ip=2a00:1450:400c:c05::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f182.google.com with SMTP id r20so4633008wiv.9
+        for <beerdb@googlegroups.com>; Thu, 15 May 2014 10:40:19 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=C3o6e3YWIzUEe3h25AYYWnAe2lSDADwxZbgz9tr/OBQ=;
+        b=kkI2T9oxVYo8XcuyTj4H3nfinaM6R0ya0EM7GXbDHPm5dkQyLgOVTgmw65kxkh5ECb
+         TsTurnr/8AAl73dsjJtkelMPFfHngbAYPw37kdwMQJN0UJxj3QBQ27/PVsj09hG1yi5/
+         FXsNJ12GkUi3BCjNS03dqw8RpbHxo5SGwtJfMuxg6YjsZ1NOOM8rxoilY5hfZKdUver8
+         kFnPORBsYVjsC+8hXTi9iK8IJVwc96+EK6QUFgMmIp+QyzVmMyxJeK+DPoiv+qNJhV6g
+         JU9ZbMBOCsIUlnzZwmg1cdnBGn4av0Wyu93FhpFrOKL15G11ZK0Ft0nqEQWm86U5BJ8b
+         mi8Q==
+MIME-Version: 1.0
+X-Received: by 10.180.198.48 with SMTP id iz16mr9697316wic.29.1400175619654;
+ Thu, 15 May 2014 10:40:19 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Thu, 15 May 2014 10:40:19 -0700 (PDT)
+Date: Thu, 15 May 2014 19:40:19 +0200
+Message-ID: <CAAxEZd_pgdcbxjR0Fau6OK41R59+gNjD9Fr7wX3OpOBE+QLcgg@mail.gmail.com>
+Subject: Article Series - Beer Locker: Building a RESTful API With Node by
+ Scott Smith
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: Scott K. Smith started an article series on building a  Beer
+Locker with Node.js. Scott writes:
+
+  With an ever growing collection of beer, I am in dire need of a way
+to store and track my beer. What better way to do this than to create
+an application where I can add, remove, update, and view my beer
+collection. Like any motivated developer, I want my friends to be able
+to create their own lockers and control who has access to mine.
+
+  In this multipart series we=E2=80=99ll be creating a RESTful API using No=
+de,
+Express, Mongoose to interact with MongoDB, Passport for
+authentication, OAuth2orize for OAuth support, and explore best
+practices and tools.
+
+  When we are done, we should have an API that allows users to
+authenticate, perform CRUD operations, authorize other applications
+via OAuth to access the API, have a solid understanding of best
+practices and tooling, and most important of all, a place to store our
+beer!
+
+
+  First two articles [1][2] in the series. Know any other dev articles
+about beer? Let us know. Cheers.
+
+[1] scottksmith.com/blog/2014/05/02/building-restful-apis-with-node
+[2] scottksmith.com/blog/2014/05/05/beer-locker-building-a-restful-api-with=
+-node-crud
+

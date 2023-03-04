@@ -1,0 +1,61 @@
+From 1116700934144@xxx Tue Jun 16 00:17:02 +0000 2015
+X-GM-THRID: 1088439713792
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4b9cee51d6eb9eaa
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.15.32.13 with SMTP id z13mr81358eeu.4.1402250435964;
+        Sun, 08 Jun 2014 11:00:35 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.206.101 with SMTP id ln5ls200224lac.105.gmail; Sun, 08 Jun
+ 2014 11:00:35 -0700 (PDT)
+X-Received: by 10.112.54.169 with SMTP id k9mr3182276lbp.1.1402250435414;
+        Sun, 08 Jun 2014 11:00:35 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22f.google.com (mail-wg0-x22f.google.com [2a00:1450:400c:c00::22f])
+        by gmr-mx.google.com with ESMTPS id h4si461691wib.2.2014.06.08.11.00.35
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 08 Jun 2014 11:00:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22f as permitted sender) client-ip=2a00:1450:400c:c00::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f47.google.com with SMTP id k14so3887911wgh.6
+        for <opensport@googlegroups.com>; Sun, 08 Jun 2014 11:00:35 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=28DBcA5/7L7a7SuS1Vpp6E46seCJYdEepoOcmX1S6nI=;
+        b=m0OCLxuUXpk4OEbeq+mPBOORb8ig4pfdpAXxhKBVtKqFiHcy/SkguuKgXVaBhvjPUN
+         NwsepQ6gAsSUv5TtTRyf/dLeHwe90bckdZhg+EgV4HMUPQ62GLfysDx1XcVS3MLQIO1k
+         rdfHCJfPxgrkllKgtpLEsyLxHvJ3ZnCmQk23OK4UbP+2R1qQMVFpQcZ2vlXukbBN0iEf
+         VHE/Wvro7muh2B5cZiIJ6WgQ3txZUKcq3yprkYZB9jn/9WGV+6L0RGgkJ42Iu0dtCUEx
+         WOaJix3O7Y9gnM/cyYg6VYK0V+zIfCBJE57/Mw3y+SOV33W3wSv/E1dFDQOwey4IOLAn
+         ieGg==
+MIME-Version: 1.0
+X-Received: by 10.194.59.65 with SMTP id x1mr12981552wjq.60.1402250435309;
+ Sun, 08 Jun 2014 11:00:35 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Sun, 8 Jun 2014 11:00:35 -0700 (PDT)
+In-Reply-To: <CAAxEZd9kO+3L2vX28Vt4nByo3mk4LL4W5mO-fAN76bQXadYaqQ@mail.gmail.com>
+References: <f5e06275-fcb9-4e24-89de-f9c3f6730551@googlegroups.com>
+	<CAAxEZd9kO+3L2vX28Vt4nByo3mk4LL4W5mO-fAN76bQXadYaqQ@mail.gmail.com>
+Date: Sun, 8 Jun 2014 20:00:35 +0200
+Message-ID: <CAAxEZd86Ui==MQ0H4rgg3eXUoVE4Q8jBLETdi5q3qzKm_or5-A@mail.gmail.com>
+Subject: Re: [opensport] Trouble gettings worldcup players/squads
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  Sorry the link was missing:
+
+>To get the squads included you will first need a copy of the player
+database / repo [1].
+
+  Just clone the players repo (to get a local copy, for example). Cheers.
+
+[1] github.com/openfootball/players
+

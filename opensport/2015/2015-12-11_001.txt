@@ -1,0 +1,71 @@
+From 6227048406742728704@xxx Fri Dec 11 15:28:08 +0000 2015
+X-GM-THRID: 6227037093254660096
+X-Received: by 10.129.95.132 with SMTP id t126mr10738212ywb.30.1449847688286;
+        Fri, 11 Dec 2015 07:28:08 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.109.37 with SMTP id k34ls2004827qgf.25.gmail; Fri, 11 Dec
+ 2015 07:28:07 -0800 (PST)
+X-Received: by 10.129.101.66 with SMTP id z63mr6895627ywb.14.1449847687701;
+        Fri, 11 Dec 2015 07:28:07 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22d.google.com (mail-ig0-x22d.google.com. [2607:f8b0:4001:c05::22d])
+        by gmr-mx.google.com with ESMTPS id t9si252507ign.3.2015.12.11.07.28.07
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 11 Dec 2015 07:28:07 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) client-ip=2607:f8b0:4001:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22d.google.com with SMTP id ph11so40612318igc.1
+        for <opensport@googlegroups.com>; Fri, 11 Dec 2015 07:28:07 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=3PNUnyfj//L3EJAITf2CjdZKxUA1WUVJh3znejBkuO0=;
+        b=iGX2HlCcTsFOAMxWnV9mNgdUaD+K747XL4+HP3F01rK92muglEZVLuLc5doL8xe1In
+         h6ajbeRYYibWA5SRH5+8b5Vv1msv26ez4qGZP7SdNGFcTm2xubqKbw6FyZiyxC7h1wOC
+         gD45OlaeDumWSglY7NmEddhAdnpFqd10V/crwaXSKFVIBLCHsqrLK01WTveWK1cBya8S
+         5WqoepGDs9mCuugPqHgJN4Dnb+PtkuY08RzIGIWDe1tDpU0Gd1mYfttImaQ3mMjMpCxe
+         A3DvJ0+PO57GeIYFJbysSmtQJ0PkJho5hamZKlqHDS0vDYaxDAF5dW1rPgbdoEEd3wpy
+         5lPQ==
+MIME-Version: 1.0
+X-Received: by 10.50.20.164 with SMTP id o4mr4643079ige.86.1449847687580; Fri,
+ 11 Dec 2015 07:28:07 -0800 (PST)
+Received: by 10.107.140.12 with HTTP; Fri, 11 Dec 2015 07:28:07 -0800 (PST)
+In-Reply-To: <e29fd86e-1067-49fd-9427-ce73b165388a@googlegroups.com>
+References: <3e97f6a6-54cc-4931-b25c-933403e73a88@googlegroups.com>
+	<CAAxEZd-jpNP6f8KJvjHdXwwrsCBu5FVUQ-gszwVFFsbFOndy-g@mail.gmail.com>
+	<e29fd86e-1067-49fd-9427-ce73b165388a@googlegroups.com>
+Date: Fri, 11 Dec 2015 16:28:07 +0100
+Message-ID: <CAAxEZd_tzWTm=ZHwWdggS3R-=YPyo+QU+f0dv5nX8C_U4H7qpQ@mail.gmail.com>
+Subject: Re: [opensport] ActiveRecord::StatementInvalid: Could not find table 'persons'
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks looks like the "old" match schedule parser cannot handle
+players and goals (e.g.  parse_goals).
+
+    As a workaround you can try:
+
+   1)  Add the missing table e.g.
+
+    use:
+
+     PersonDb.create    e.g. add it to  create_db migration [1]
+
+   or 2)
+
+    Use match fixtures (schedules) without players and goals. They
+(that is, player and goals)  are not used in any way in sportbook
+anyways.
+
+   Cheers.
+
+[1] https://github.com/openbookie/sportbook/blob/master/db/migrate/001_create_db.rb
+

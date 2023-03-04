@@ -1,0 +1,630 @@
+From 146775474176@xxx Sat Dec 13 20:08:19 +0000 2014
+X-GM-THRID: 132292542464
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,88088887a6cdb9c3
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.43.1.133 with SMTP id nq5mr16289806icb.21.1408281547590;
+        Sun, 17 Aug 2014 06:19:07 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.90.47 with SMTP id w44ls1973624qgd.56.gmail; Sun, 17 Aug
+ 2014 06:19:07 -0700 (PDT)
+X-Received: by 10.140.20.86 with SMTP id 80mr277091qgi.4.1408281547445;
+        Sun, 17 Aug 2014 06:19:07 -0700 (PDT)
+X-Google-Doc-Id: 847ec9fa84ecc128
+X-Google-Web-Client: true
+Date: Sun, 17 Aug 2014 06:19:06 -0700 (PDT)
+From: Eckhard Licher <eckhard.licher@googlemail.com>
+To: openmundi@googlegroups.com
+Message-Id: <30cddcb3-e7d0-42e6-a056-ac296963653b@googlegroups.com>
+In-Reply-To: <53EFB3DA.4070800@googlemail.com>
+References: <53EFB3DA.4070800@googlemail.com>
+Subject: Re: Word Factbook -- Field names an descriptions
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1612_730414961.1408281546911"
+X-Google-Token: EMrXwp8FnPx5TafhgAM0
+X-Google-IP: 217.51.60.236
+
+------=_Part_1612_730414961.1408281546911
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1613_1067723275.1408281546911"
+
+------=_Part_1613_1067723275.1408281546911
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+sluggifying the file field_list.txt would give the attached file 
+field_names.txt which pretty much looks like a mapping of the field names 
+produced by the factbook gem and the fieldhash  (field-ID) used in the 
+factbook to reference the files in the fields/ directory. Haven't tested 
+the field-names against the JSON produced by the gem yet but I am pretty 
+sure the mapping provides a 98+ per cent hit rate...
+
+Most probably there is no need to update the gem as the missing pieces are 
+coming together this way...
+
+By the way, I have written a Python script that reads the raw data files in 
+the rankorder/ directory and the list of county names created by the third 
+scanner (both files attached). The script produces a large data file in 
+JSON format (approx. 2.6 MB) with the fips codes and field-hashes as keys 
+to the not-yet fully sanitized data items contained in the raw data tables 
+in rankorder/ directoy. The script needs a bit of cleanup before I am 
+willing to post it, maybe tomorrow.
+
+Cheers
+
+Eckhard
+
+------=_Part_1613_1067723275.1408281546911
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>sluggifying the file field_list.txt would gi=
+ve the attached file field_names.txt which pretty much looks like a mapping=
+ of the field names produced by the factbook gem and the fieldhash&nbsp; (f=
+ield-ID) used in the factbook to reference the files in the fields/ directo=
+ry. Haven't tested the field-names against the JSON produced by the gem yet=
+ but I am pretty sure the mapping provides a 98+ per cent hit rate...<br><b=
+r>Most probably there is no need to update the gem as the missing pieces ar=
+e coming together this way...<br><br>By the way, I have written a Python sc=
+ript that reads the raw data files in the rankorder/ directory and the list=
+ of county names created by the third scanner (both files attached). The sc=
+ript produces a large data file in JSON format (approx. 2.6 MB) with the fi=
+ps codes and field-hashes as keys to the not-yet fully sanitized data items=
+ contained in the raw data tables in rankorder/ directoy. The script needs =
+a bit of cleanup before I am willing to post it, maybe tomorrow.<br><br>Che=
+ers<br><br>Eckhard<br></div>
+------=_Part_1613_1067723275.1408281546911--
+
+------=_Part_1612_730414961.1408281546911
+Content-Type: text/plain; charset=US-ASCII; name=field_names.txt
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename=field_names.txt
+X-Attachment-Id: 19d5ae5b-7d91-45ce-b5f0-f3f58d6c9299
+Content-ID: <19d5ae5b-7d91-45ce-b5f0-f3f58d6c9299>
+
+2001	gdp_purchasing_power_parity
+2002	population_growth_rate
+2003	gdp_real_growth_rate
+2004	gdp_per_capita_ppp
+2005	affiliation
+2006	dependency_status
+2007	diplomatic_representation_from_the_us
+2008	transportation_note
+2010	age_structure
+2011	geographic_coordinates
+2012	gdp_composition,_by_sector_of_origin
+2018	sex_ratio
+2019	heliports
+2020	elevation_extremes
+2021	natural_hazards
+2022	people_note
+2023	area_comparative
+2024	military_service_age_and_obligation
+2025	manpower_fit_for_military_service
+2026	manpower_reaching_militarily_significant_age_annually
+2028	background
+2030	airports_with_paved_runways
+2031	airports_with_unpaved_runways
+2032	environment_current_issues
+2033	environment_international_agreements
+2034	military_expenditures
+2046	population_below_poverty_line
+2047	household_income_or_consumption_by_percentage_share
+2048	labor_force_by_occupation
+2049	exports_commodities
+2050	exports_partners
+2051	administrative_divisions
+2052	agriculture_products
+2053	airports
+2054	birth_rate
+2055	military_branches
+2056	budget
+2057	capital
+2058	imports_commodities
+2059	climate
+2060	coastline
+2061	imports_partners
+2063	constitution
+2066	death_rate
+2068	dependent_areas
+2070	disputes_international
+2075	ethnic_groups
+2076	exchange_rates
+2077	executive_branch
+2078	exports
+2079	debt_external
+2080	fiscal_year
+2081	flag_description
+2085	roadways
+2086	illicit_drugs
+2087	imports
+2088	independence
+2089	industrial_production_growth_rate
+2090	industries
+2091	infant_mortality_rate
+2092	inflation_rate_consumer_prices
+2093	waterways
+2094	judicial_branch
+2095	labor_force
+2096	land_boundaries
+2097	land_use
+2098	languages
+2100	legal_system
+2101	legislative_branch
+2102	life_expectancy_at_birth
+2103	literacy
+2105	manpower_available_for_military_service
+2106	maritime_claims
+2107	international_organization_participation
+2108	merchant_marine
+2109	national_holiday
+2110	nationality
+2111	natural_resources
+2112	net_migration_rate
+2113	geography_note
+2115	political_pressure_groups_and_leaders
+2116	economy_overview
+2117	pipelines
+2118	political_parties_and_leaders
+2119	population
+2120	ports_and_terminals
+2121	railways
+2122	religions
+2123	suffrage
+2124	telephone_system
+2125	terrain
+2127	total_fertility_rate
+2128	government_type
+2129	unemployment_rate
+2137	military_note
+2138	communications_note
+2140	government_note
+2141	group
+2142	country_name
+2144	location
+2145	map_references
+2146	irrigated_land
+2147	area
+2149	diplomatic_representation_in_the_us
+2150	telephones_main_lines_in_use
+2151	telephones_mobile_cellular
+2153	internet_users
+2154	internet_country_code
+2155	hiv/aids_adult_prevalence_rate
+2156	hiv/aids_people_living_with_hiv/aids
+2157	hiv/aids_deaths
+2172	distribution_of_family_income_gini_index
+2177	median_age
+2184	internet_hosts
+2186	public_debt
+2187	current_account_balance
+2188	reserves_of_foreign_exchange_and_gold
+2189	union_name
+2190	political_structure
+2191	member_states
+2192	preliminary_statement
+2193	major_infectious_diseases
+2194	refugees_and_internally_displaced_persons
+2195	gdp_official_exchange_rate
+2196	trafficking_in_persons
+2198	stock_of_direct_foreign_investment_at_home
+2199	stock_of_direct_foreign_investment_abroad
+2200	market_value_of_publicly_traded_shares
+2201	total_renewable_water_resources
+2202	freshwater_withdrawal_domestic/industrial/agricultural
+2203	geographic_overview
+2204	economy_of_the_area_administered_by_turkish_cypriots
+2205	school_life_expectancy_primary_to_tertiary_education
+2206	education_expenditures
+2207	central_bank_discount_rate
+2208	commercial_bank_prime_lending_rate
+2211	stock_of_domestic_credit
+2212	urbanization
+2213	broadcast_media
+2214	stock_of_narrow_money
+2215	stock_of_broad_money
+2216	drinking_water_source
+2217	sanitation_facility_access
+2218	national_anthem
+2219	major_urban_areas_population
+2220	international_law_organization_participation
+2221	taxes_and_other_revenues
+2222	budget_surplus_+_or_deficit
+2223	maternal_mortality_rate
+2224	children_under_the_age_of_5_years_underweight
+2225	health_expenditures
+2226	physicians_density
+2227	hospital_bed_density
+2228	obesity_adult_prevalence_rate
+2229	unemployment,_youth_ages_15_24
+2230	national_symbol_s
+2232	electricity_production
+2233	electricity_consumption
+2234	electricity_exports
+2235	electricity_imports
+2236	electricity_installed_generating_capacity
+2237	electricity_from_fossil_fuels
+2238	electricity_from_hydroelectric_plants
+2239	electricity_from_nuclear_fuels
+2240	electricity_from_other_renewable_sources
+2241	crude_oil_production
+2242	crude_oil_exports
+2243	crude_oil_imports
+2244	crude_oil_proved_reserves
+2245	refined_petroleum_products_production
+2246	refined_petroleum_products_consumption
+2247	refined_petroleum_products_exports
+2248	refined_petroleum_products_imports
+2249	natural_gas_production
+2250	natural_gas_consumption
+2251	natural_gas_exports
+2252	natural_gas_imports
+2253	natural_gas_proved_reserves
+2254	carbon_dioxide_emissions_from_consumption_of_energy
+2255	child_labor_children_ages_5_14
+2256	mother's_mean_age_at_first_birth
+2257	demographic_profile
+2258	contraceptive_prevalence_rate
+2259	gdp_composition,_by_end_use
+2260	gross_national_saving
+2261	dependency_ratios
+2263	pipelines
+2264	ports_and_terminals
+2265	major_urban_areas_population
+
+
+------=_Part_1612_730414961.1408281546911
+Content-Type: text/plain; charset=US-ASCII; name=region_names.txt
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename=region_names.txt
+X-Attachment-Id: 6f354dae-e24e-4ff9-83d1-d9b73473326e
+Content-ID: <6f354dae-e24e-4ff9-83d1-d9b73473326e>
+
+aa	Aruba
+ac	Antigua and Barbuda
+ae	United Arab Emirates
+af	Afghanistan
+ag	Algeria
+aj	Azerbaijan
+al	Albania
+am	Armenia
+an	Andorra
+ao	Angola
+aq	American Samoa
+ar	Argentina
+as	Australia
+at	Ashmore and Cartier Islands
+au	Austria
+av	Anguilla
+ax	Akrotiri
+ay	Antarctica
+ba	Bahrain
+bb	Barbados
+bc	Botswana
+bd	Bermuda
+be	Belgium
+bf	Bahamas, The
+bg	Bangladesh
+bh	Belize
+bk	Bosnia and Herzegovina
+bl	Bolivia
+bm	Burma
+bn	Benin
+bo	Belarus
+bp	Solomon Islands
+bq	Navassa Island
+br	Brazil
+bt	Bhutan
+bu	Bulgaria
+bv	Bouvet Island
+bx	Brunei
+by	Burundi
+ca	Canada
+cb	Cambodia
+cc	Curacao
+cd	Chad
+ce	Sri Lanka
+cf	Congo, Republic of the
+cg	Congo, Democratic Republic of the
+ch	China
+ci	Chile
+cj	Cayman Islands
+ck	Cocos (Keeling) Islands
+cm	Cameroon
+cn	Comoros
+co	Colombia
+cq	Northern Mariana Islands
+cr	Coral Sea Islands
+cs	Costa Rica
+ct	Central African Republic
+cu	Cuba
+cv	Cape Verde
+cw	Cook Islands
+cy	Cyprus
+da	Denmark
+dj	Djibouti
+do	Dominica
+dq	Jarvis Island
+dr	Dominican Republic
+dx	Dhekelia
+ec	Ecuador
+ee	European Union
+eg	Egypt
+ei	Ireland
+ek	Equatorial Guinea
+en	Estonia
+er	Eritrea
+es	El Salvador
+et	Ethiopia
+ez	Czech Republic
+fi	Finland
+fj	Fiji
+fk	Falkland Islands (Islas Malvinas)
+fm	Micronesia, Federated States of
+fo	Faroe Islands
+fp	French Polynesia
+fq	Baker Island
+fr	France
+fs	French Southern and Antarctic Lands
+ga	Gambia, The
+gb	Gabon
+gg	Georgia
+gh	Ghana
+gi	Gibraltar
+gj	Grenada
+gk	Guernsey
+gl	Greenland
+gm	Germany
+gq	Guam
+gr	Greece
+gt	Guatemala
+gv	Guinea
+gy	Guyana
+gz	Gaza Strip
+ha	Haiti
+hk	Hong Kong
+hm	Heard Island and McDonald Islands
+ho	Honduras
+hq	Howland Island
+hr	Croatia
+hu	Hungary
+ic	Iceland
+id	Indonesia
+im	Isle of Man
+in	India
+io	British Indian Ocean Territory
+ip	Clipperton Island
+ir	Iran
+is	Israel
+it	Italy
+iv	Cote d'Ivoire
+iz	Iraq
+ja	Japan
+je	Jersey
+jm	Jamaica
+jn	Jan Mayen
+jo	Jordan
+jq	Johnston Atoll
+ke	Kenya
+kg	Kyrgyzstan
+kn	Korea, North
+kq	Kingman Reef
+kr	Kiribati
+ks	Korea, South
+kt	Christmas Island
+ku	Kuwait
+kv	Kosovo
+kz	Kazakhstan
+la	Laos
+le	Lebanon
+lg	Latvia
+lh	Lithuania
+li	Liberia
+lo	Slovakia
+lq	Palmyra Atoll
+ls	Liechtenstein
+lt	Lesotho
+lu	Luxembourg
+ly	Libya
+ma	Madagascar
+mc	Macau
+md	Moldova
+mg	Mongolia
+mh	Montserrat
+mi	Malawi
+mj	Montenegro
+mk	Macedonia
+ml	Mali
+mn	Monaco
+mo	Morocco
+mp	Mauritius
+mq	Midway Islands
+mr	Mauritania
+mt	Malta
+mu	Oman
+mv	Maldives
+mx	Mexico
+my	Malaysia
+mz	Mozambique
+nc	New Caledonia
+ne	Niue
+nf	Norfolk Island
+ng	Niger
+nh	Vanuatu
+ni	Nigeria
+nl	Netherlands
+no	Norway
+np	Nepal
+nr	Nauru
+ns	Suriname
+nu	Nicaragua
+nz	New Zealand
+od	South Sudan
+oo	Southern Ocean
+pa	Paraguay
+pc	Pitcairn Islands
+pe	Peru
+pf	Paracel Islands
+pg	Spratly Islands
+pk	Pakistan
+pl	Poland
+pm	Panama
+po	Portugal
+pp	Papua New Guinea
+ps	Palau
+pu	Guinea-Bissau
+qa	Qatar
+ri	Serbia
+rm	Marshall Islands
+rn	Saint Martin
+ro	Romania
+rp	Philippines
+rq	Puerto Rico
+rs	Russia
+rw	Rwanda
+sa	Saudi Arabia
+sb	Saint Pierre and Miquelon
+sc	Saint Kitts and Nevis
+se	Seychelles
+sf	South Africa
+sg	Senegal
+sh	Saint Helena, Ascension, and Tristan da Cunha
+si	Slovenia
+sk	Sint Maarten
+sl	Sierra Leone
+sm	San Marino
+sn	Singapore
+so	Somalia
+sp	Spain
+st	Saint Lucia
+su	Sudan
+sv	Svalbard
+sw	Sweden
+sx	South Georgia and South Sandwich Islands
+sy	Syria
+sz	Switzerland
+tb	Saint Barthelemy
+td	Trinidad and Tobago
+th	Thailand
+ti	Tajikistan
+tk	Turks and Caicos Islands
+tl	Tokelau
+tn	Tonga
+to	Togo
+tp	Sao Tome and Principe
+ts	Tunisia
+tt	Timor-Leste
+tu	Turkey
+tv	Tuvalu
+tw	Taiwan
+tx	Turkmenistan
+tz	Tanzania
+ug	Uganda
+uk	United Kingdom
+um	United States Pacific Island Wildlife Refuges
+up	Ukraine
+us	United States
+uv	Burkina Faso
+uy	Uruguay
+uz	Uzbekistan
+vc	Saint Vincent and the Grenadines
+ve	Venezuela
+vi	British Virgin Islands
+vm	Vietnam
+vq	Virgin Islands
+vt	Holy See (Vatican City)
+wa	Namibia
+we	West Bank
+wf	Wallis and Futuna
+wi	Western Sahara
+wq	Wake Island
+ws	Samoa
+wz	Swaziland
+xo	Indian Ocean
+xq	Arctic Ocean
+xx	
+ym	Yemen
+za	Zambia
+zh	Atlantic Ocean
+zi	Zimbabwe
+zn	Pacific Ocean
+
+------=_Part_1612_730414961.1408281546911
+Content-Type: text/x-python; charset=US-ASCII; name=scrape-region-names.py
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename=scrape-region-names.py
+X-Attachment-Id: 82b943bb-da83-41a7-a729-61a3ad846b9b
+Content-ID: <82b943bb-da83-41a7-a729-61a3ad846b9b>
+
+#!/usr/bin/python
+
+# Tools for the World Factbook
+# 
+# This script scrapes the country's name (in plain language) from the 
+# contents of one or more files named "print_XXXX.html" in the 
+# fields/ directory of the world factbook.
+#
+# The fips code(s) is/are taken from the name(s) supplied.
+# The script implies the CIA naming convention "XX.html"
+# where XX is the fips code in lower case. 
+# The field descriptions(s) and the name(s) are printed to stdout (tab-delimited).
+#
+# 2014-08-16 Eckhard Licher, Frankfurt.
+# This script is put in the public domain.
+
+from HTMLParser import HTMLParser
+
+result = []
+sampling = False
+
+class MyHTMLParser(HTMLParser):
+    #
+    # scrape ...
+    #
+    def handle_starttag(self, tag, attrs):
+        global result, sampling
+        if tag == "span" and not result:
+            for attr in attrs:
+                if attr == ("class", "region_name1"):
+                    sampling = True            
+    def handle_endtag(self, tag):
+        global sampling
+        if tag == "span" and sampling:
+            sampling = False
+    def handle_data(self, data):
+        global result, sampling
+        if sampling:
+            result.append(data.strip())
+            
+
+def main():
+    import sys
+    global result
+    args = sys.argv[1:]
+    if not args:
+        print >> sys.stderr, "usage: %s file(s)" % sys.argv[0]
+        exit(1)
+    for arg in args:
+        try:
+            contents = open(arg, "r").read()
+        except IOError:
+            print >> sys.sterr, "file not found:", arg
+            continue
+        result = []
+        # instantiate the parser and feed it some HTML
+        parser = MyHTMLParser()
+        parser.feed(contents)
+        pos = arg.rfind("/")
+        fips = arg[pos+1:pos+3]
+        print "%s\t%s" % (fips, " ".join(result).strip())
+    exit(0)
+
+if __name__ == "__main__":
+    main()
+
+------=_Part_1612_730414961.1408281546911--
+

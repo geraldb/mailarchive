@@ -1,0 +1,382 @@
+From 6574399749611323392@xxx Wed Jul 04 16:28:45 +0000 2018
+X-GM-THRID: 6574089139036094464
+Date: Wed, 4 Jul 2018 09:28:44 -0700 (PDT)
+From: Marcel van Vuuren <mvanvuuren1970@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <b3461060-fda6-4d35-bedb-1ec1bd958753@googlegroups.com>
+In-Reply-To: <3f3f1bc5-54c2-4786-a9a6-e7f95e1c21b3@googlegroups.com>
+References: <3f3f1bc5-54c2-4786-a9a6-e7f95e1c21b3@googlegroups.com>
+Subject: Re: Error loading the 'sqlite3' Active Record adapter
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_27178_1746141804.1530721724947"
+X-Google-Token: ELzr89kF0J1wsk4FarY0
+X-Google-IP: 86.87.105.73
+
+------=_Part_27178_1746141804.1530721724947
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_27179_1234483441.1530721724948"
+
+------=_Part_27179_1234483441.1530721724948
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I have uninstalled Ruby installation because I saw that I had an unstable 
+version. After installing the stable Ruby version everything works fine and 
+the db file is created.
+
+@Gerald Bauer: I want to work on the openfootball/world-cup.json files from 
+2010 till 1930 is that necessary for others?
+
+Marcel
+
+Op dinsdag 3 juli 2018 22:23:25 UTC+2 schreef Marcel van Vuuren:
+>
+> Hello people,
+>
+> This is my first DB setup using Ruby and GitHub. 
+>
+>
+>    1. I have installed "Ruby+Devkit 2.5.1-2 (x64)" on my Windows 10 
+>    computer.
+>    2. After installing Ruby I have installed the DevKit 'option 3' from 
+>    the Ruby command line and exit the installation
+>    3. I opend the command line with Ruby and went to the direcory 
+>    C:\xampp\htdocs\worldcup>
+>    4. Run the command 
+>    gem install sportdb
+>    
+>    *OUTPUT/RESULT*
+>    
+>    Done installing documentation for iniparser, props, logutils, rubyzip, 
+>>    concurrent-ruby, i18n, thread_safe, tzinfo, activesupport, textutils, 
+>>    activemodel, arel, activerecord, tagutils, activerecord-utils, 
+>>    props-activerecord, logutils-activerecord, worlddb-models, persondb-models, 
+>>    sportdb-models, fetcher, datafile, sportdb-update, sportdb-service, gli, 
+>>    sqlite3, sportdb after 63 seconds
+>    
+>    27 gems installed
+>    
+>    
+>    5. Created a Datafile in the directory C:\xampp\htdocs\worldcup with 
+>    the code:
+>    
+>    world  'world.db', setup: 'countries'
+>    football 'national-teams'
+>    football 'national-teams', setup: 'history'
+>    football 'world-cup', setup: 'history'
+>    
+>    6. Run the command 
+>    sportdb build
+>    
+>
+> *             OUTPUT/RESULT*         
+>
+> C:\xampp\htdocs\worldcup>sportdb build
+>>
+>> activerecord-utils/0.4.0 (activerecord/5.2.0) on Ruby 2.5.1 (2018-03-29) 
+>>> [x64-mingw32]
+>>
+>>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>>> >WorldDb::Model::Country<
+>>
+>>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>>> >WorldDb::Model::StateBase<
+>>
+>>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>>> >WorldDb::Model::CityBase<
+>>
+>> sportdb-update/0.1.1 on Ruby 2.5.1 (2018-03-29) [x64-mingw32]
+>>
+>> sportdb-service/0.4.0 on Ruby 2.5.1 (2018-03-29) [x64-mingw32]
+>>
+>> sportdb/1.11.0 on Ruby 2.5.1 (2018-03-29) [x64-mingw32]
+>>
+>> sportdb/1.11.0 on Ruby 2.5.1 (2018-03-29) [x64-mingw32]
+>>
+>> [info] [builder] add world-dataset 'world.db'
+>>
+>> [info] [builder] add football-dataset 'national-teams'
+>>
+>> [info] [builder] add football-dataset 'national-teams'
+>>
+>> [info] [builder] add football-dataset 'world-cup'
+>>
+>> [info] [datafile] dowload
+>>
+>> [info] download dataset 'openmundi/world.db'
+>>
+>> [info]    from 'http://github.com/openmundi/world.db/archive/master.zip'
+>>
+>> [info]    to './tmp/openmundi--I--world.db.zip'...
+>>
+>> [info] downloading 
+>>> http://github.com/openmundi/world.db/archive/master.zip to 
+>>> ./tmp/openmundi--I--world.db.zip...
+>>
+>> [info] download dataset 'openfootball/national-teams'
+>>
+>> [info]    from '
+>>> http://github.com/openfootball/national-teams/archive/master.zip'
+>>
+>> [info]    to './tmp/openfootball--I--national-teams.zip'...
+>>
+>> [info] downloading 
+>>> http://github.com/openfootball/national-teams/archive/master.zip to 
+>>> ./tmp/openfootball--I--national-teams.zip...
+>>
+>> [info] download dataset 'openfootball/national-teams'
+>>
+>> [info]    from '
+>>> http://github.com/openfootball/national-teams/archive/master.zip'
+>>
+>> [info]    to './tmp/openfootball--I--national-teams.zip'...
+>>
+>> [info] downloading 
+>>> http://github.com/openfootball/national-teams/archive/master.zip to 
+>>> ./tmp/openfootball--I--national-teams.zip...
+>>
+>> [info] download dataset 'openfootball/world-cup'
+>>
+>> [info]    from '
+>>> http://github.com/openfootball/world-cup/archive/master.zip'
+>>
+>> [info]    to './tmp/openfootball--I--world-cup.zip'...
+>>
+>> [info] downloading 
+>>> http://github.com/openfootball/world-cup/archive/master.zip to 
+>>> ./tmp/openfootball--I--world-cup.zip...
+>>
+>> working directory: C:/xampp/htdocs/worldcup
+>>
+>> Connecting to db using settings:
+>>
+>> {:adapter=>"sqlite3", :database=>"./sport.db"}
+>>
+>>
+>>> **** error: Error loading the 'sqlite3' Active Record adapter. Missing a 
+>>> gem it depends on? cannot load such file -- sqlite3/sqlite3_native*
+>>
+>>
+>>>
+> On command line I get the error in red above.
+>
+> Maybe my local xampp installation is in the way or I am doing something 
+> wrong?
+>
+> Can somebody help me out here. Thanks in advance for your cooperation
+>
+>
+>
+>
+>
+------=_Part_27179_1234483441.1530721724948
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I have uninstalled Ruby installation because I saw that I =
+had an unstable version. After installing the stable Ruby version everythin=
+g works fine and the db file is created.<div><br></div><div>@Gerald Bauer: =
+I want to work on the=C2=A0openfootball/world-cup.json files from 2010 till=
+ 1930 is that necessary for others?</div><div><br></div><div>Marcel<br><br>=
+Op dinsdag 3 juli 2018 22:23:25 UTC+2 schreef Marcel van Vuuren:<blockquote=
+ class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1=
+px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">Hello people,<div><br></=
+div><div>This is my first DB setup using Ruby and GitHub.=C2=A0</div><div><=
+br></div><div><ol><li>I have installed &quot;Ruby+Devkit 2.5.1-2 (x64)&quot=
+; on my Windows 10 computer.<br></li><li>After installing Ruby I have insta=
+lled the DevKit &#39;option 3&#39; from the Ruby command line and exit the =
+installation</li><li>I opend the command line with Ruby and went to the dir=
+ecory C:\xampp\htdocs\worldcup&gt;</li><li>Run the command <div style=3D"ba=
+ckground-color:rgb(250,250,250);border-color:rgb(187,187,187);border-style:=
+solid;border-width:1px;word-wrap:break-word"><code><div><span style=3D"colo=
+r:rgb(34,34,34);font-family:Arial,Helvetica,sans-serif;background-color:rgb=
+(255,255,255)"><span style=3D"color:#000">gem install sportdb</span></span>=
+<span style=3D"color:#000"><br></span></div></code></div><br><blockquote cl=
+ass=3D"gmail_quote" style=3D"border-left:1px solid rgb(204,204,204);padding=
+-left:1ex"><b>OUTPUT/RESULT</b></blockquote><blockquote class=3D"gmail_quot=
+e" style=3D"border-left:1px solid rgb(204,204,204);padding-left:1ex">Done i=
+nstalling documentation for iniparser, props, logutils, rubyzip, concurrent=
+-ruby, i18n, thread_safe, tzinfo, activesupport, textutils, activemodel, ar=
+el, activerecord, tagutils, activerecord-utils, props-activerecord, logutil=
+s-activerecord, worlddb-models, persondb-models, sportdb-models, fetcher, d=
+atafile, sportdb-update, sportdb-service, gli, sqlite3, sportdb after 63 se=
+conds</blockquote><blockquote class=3D"gmail_quote" style=3D"border-left:1p=
+x solid rgb(204,204,204);padding-left:1ex">27 gems installed</blockquote><b=
+r></li><li><div>Created a Datafile in the directory C:\xampp\htdocs\worldcu=
+p with the code:</div><div><br></div><div><div>world=C2=A0 &#39;world.db&#3=
+9;, setup: &#39;countries&#39;</div><div>football &#39;national-teams&#39;<=
+/div><div>football &#39;national-teams&#39;, setup: &#39;history&#39;</div>=
+<div>football &#39;world-cup&#39;, setup: &#39;history&#39;<br><br></div></=
+div></li><li>Run the command=C2=A0<div style=3D"background-color:rgb(250,25=
+0,250);border-color:rgb(187,187,187);border-style:solid;border-width:1px;wo=
+rd-wrap:break-word"><code><div><span style=3D"font-family:Arial,Helvetica,s=
+ans-serif;background-color:rgb(255,255,255)"><span style=3D"color:#000">spo=
+rtdb build</span></span></div></code></div></li></ol></div><div><div><br></=
+div></div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8=
+ex;border-left:1px solid rgb(204,204,204);padding-left:1ex"><b>=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0OUTPUT/RESULT</b>=C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0</blockquote><div><blockquote class=3D"gmail_quote" style=3D"=
+margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-lef=
+t:1ex"><blockquote class=3D"gmail_quote" style=3D"border-left:1px solid rgb=
+(204,204,204);padding-left:1ex">C:\xampp\htdocs\worldcup&gt;<wbr>sportdb bu=
+ild</blockquote><blockquote class=3D"gmail_quote" style=3D"border-left:1px =
+solid rgb(204,204,204);padding-left:1ex">activerecord-utils/0.4.0 (activere=
+cord/5.2.0) on Ruby 2.5.1 (2018-03-29) [x64-mingw32]</blockquote><blockquot=
+e class=3D"gmail_quote" style=3D"border-left:1px solid rgb(204,204,204);pad=
+ding-left:1ex">=C2=A0 [TagDb.has_many_tags] adding taggings n tags has_many=
+ assocs to model &gt;WorldDb::Model::Country&lt;</blockquote><blockquote cl=
+ass=3D"gmail_quote" style=3D"border-left:1px solid rgb(204,204,204);padding=
+-left:1ex">=C2=A0 [TagDb.has_many_tags] adding taggings n tags has_many ass=
+ocs to model &gt;WorldDb::Model::StateBase&lt;</blockquote><blockquote clas=
+s=3D"gmail_quote" style=3D"border-left:1px solid rgb(204,204,204);padding-l=
+eft:1ex">=C2=A0 [TagDb.has_many_tags] adding taggings n tags has_many assoc=
+s to model &gt;WorldDb::Model::CityBase&lt;</blockquote><blockquote class=
+=3D"gmail_quote" style=3D"border-left:1px solid rgb(204,204,204);padding-le=
+ft:1ex">sportdb-update/0.1.1 on Ruby 2.5.1 (2018-03-29) [x64-mingw32]</bloc=
+kquote><blockquote class=3D"gmail_quote" style=3D"border-left:1px solid rgb=
+(204,204,204);padding-left:1ex">sportdb-service/0.4.0 on Ruby 2.5.1 (2018-0=
+3-29) [x64-mingw32]</blockquote><blockquote class=3D"gmail_quote" style=3D"=
+border-left:1px solid rgb(204,204,204);padding-left:1ex">sportdb/1.11.0 on =
+Ruby 2.5.1 (2018-03-29) [x64-mingw32]</blockquote><blockquote class=3D"gmai=
+l_quote" style=3D"border-left:1px solid rgb(204,204,204);padding-left:1ex">=
+sportdb/1.11.0 on Ruby 2.5.1 (2018-03-29) [x64-mingw32]</blockquote><blockq=
+uote class=3D"gmail_quote" style=3D"border-left:1px solid rgb(204,204,204);=
+padding-left:1ex">[info] [builder] add world-dataset &#39;world.db&#39;</bl=
+ockquote><blockquote class=3D"gmail_quote" style=3D"border-left:1px solid r=
+gb(204,204,204);padding-left:1ex">[info] [builder] add football-dataset &#3=
+9;national-teams&#39;</blockquote><blockquote class=3D"gmail_quote" style=
+=3D"border-left:1px solid rgb(204,204,204);padding-left:1ex">[info] [builde=
+r] add football-dataset &#39;national-teams&#39;</blockquote><blockquote cl=
+ass=3D"gmail_quote" style=3D"border-left:1px solid rgb(204,204,204);padding=
+-left:1ex">[info] [builder] add football-dataset &#39;world-cup&#39;</block=
+quote><blockquote class=3D"gmail_quote" style=3D"border-left:1px solid rgb(=
+204,204,204);padding-left:1ex">[info] [datafile] dowload</blockquote><block=
+quote class=3D"gmail_quote" style=3D"border-left:1px solid rgb(204,204,204)=
+;padding-left:1ex">[info] download dataset &#39;openmundi/world.db&#39;</bl=
+ockquote><blockquote class=3D"gmail_quote" style=3D"border-left:1px solid r=
+gb(204,204,204);padding-left:1ex">[info]=C2=A0 =C2=A0 from &#39;<a href=3D"=
+http://github.com/openmundi/world.db/archive/master.zip" target=3D"_blank" =
+rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/url?=
+q\x3dhttp%3A%2F%2Fgithub.com%2Fopenmundi%2Fworld.db%2Farchive%2Fmaster.zip\=
+x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHO3MeqEFW-p7lymRmPBqlYzFC5gg&#39;;r=
+eturn true;" onclick=3D"this.href=3D&#39;http://www.google.com/url?q\x3dhtt=
+p%3A%2F%2Fgithub.com%2Fopenmundi%2Fworld.db%2Farchive%2Fmaster.zip\x26sa\x3=
+dD\x26sntz\x3d1\x26usg\x3dAFQjCNHO3MeqEFW-p7lymRmPBqlYzFC5gg&#39;;return tr=
+ue;">http://github.com/openmundi/<wbr>world.db/archive/master.zip</a>&#39;<=
+/blockquote><blockquote class=3D"gmail_quote" style=3D"border-left:1px soli=
+d rgb(204,204,204);padding-left:1ex">[info]=C2=A0 =C2=A0 to &#39;./tmp/open=
+mundi--I--world.db.<wbr>zip&#39;...</blockquote><blockquote class=3D"gmail_=
+quote" style=3D"border-left:1px solid rgb(204,204,204);padding-left:1ex">[i=
+nfo] downloading <a href=3D"http://github.com/openmundi/world.db/archive/ma=
+ster.zip" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#3=
+9;http://www.google.com/url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenmundi%2Fworl=
+d.db%2Farchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHO3MeqE=
+FW-p7lymRmPBqlYzFC5gg&#39;;return true;" onclick=3D"this.href=3D&#39;http:/=
+/www.google.com/url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenmundi%2Fworld.db%2Fa=
+rchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHO3MeqEFW-p7lym=
+RmPBqlYzFC5gg&#39;;return true;">http://github.com/openmundi/<wbr>world.db/=
+archive/master.zip</a> to ./tmp/openmundi--I--world.db.<wbr>zip...</blockqu=
+ote><blockquote class=3D"gmail_quote" style=3D"border-left:1px solid rgb(20=
+4,204,204);padding-left:1ex">[info] download dataset &#39;openfootball/nati=
+onal-teams&#39;</blockquote><blockquote class=3D"gmail_quote" style=3D"bord=
+er-left:1px solid rgb(204,204,204);padding-left:1ex">[info]=C2=A0 =C2=A0 fr=
+om &#39;<a href=3D"http://github.com/openfootball/national-teams/archive/ma=
+ster.zip" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#3=
+9;http://www.google.com/url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenfootball%2Fn=
+ational-teams%2Farchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQj=
+CNFq2minyXiMOSo6PZpPybBBfoARPw&#39;;return true;" onclick=3D"this.href=3D&#=
+39;http://www.google.com/url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenfootball%2F=
+national-teams%2Farchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQ=
+jCNFq2minyXiMOSo6PZpPybBBfoARPw&#39;;return true;">http://github.com/<wbr>o=
+penfootball/national-teams/<wbr>archive/master.zip</a>&#39;</blockquote><bl=
+ockquote class=3D"gmail_quote" style=3D"border-left:1px solid rgb(204,204,2=
+04);padding-left:1ex">[info]=C2=A0 =C2=A0 to &#39;./tmp/openfootball--I--<w=
+br>national-teams.zip&#39;...</blockquote><blockquote class=3D"gmail_quote"=
+ style=3D"border-left:1px solid rgb(204,204,204);padding-left:1ex">[info] d=
+ownloading <a href=3D"http://github.com/openfootball/national-teams/archive=
+/master.zip" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D=
+&#39;http://www.google.com/url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenfootball%=
+2Fnational-teams%2Farchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dA=
+FQjCNFq2minyXiMOSo6PZpPybBBfoARPw&#39;;return true;" onclick=3D"this.href=
+=3D&#39;http://www.google.com/url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenfootba=
+ll%2Fnational-teams%2Farchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x=
+3dAFQjCNFq2minyXiMOSo6PZpPybBBfoARPw&#39;;return true;">http://github.com/<=
+wbr>openfootball/national-teams/<wbr>archive/master.zip</a> to ./tmp/openfo=
+otball--I--<wbr>national-teams.zip...</blockquote><blockquote class=3D"gmai=
+l_quote" style=3D"border-left:1px solid rgb(204,204,204);padding-left:1ex">=
+[info] download dataset &#39;openfootball/national-teams&#39;</blockquote><=
+blockquote class=3D"gmail_quote" style=3D"border-left:1px solid rgb(204,204=
+,204);padding-left:1ex">[info]=C2=A0 =C2=A0 from &#39;<a href=3D"http://git=
+hub.com/openfootball/national-teams/archive/master.zip" target=3D"_blank" r=
+el=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/url?q=
+\x3dhttp%3A%2F%2Fgithub.com%2Fopenfootball%2Fnational-teams%2Farchive%2Fmas=
+ter.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFq2minyXiMOSo6PZpPybBBfoARP=
+w&#39;;return true;" onclick=3D"this.href=3D&#39;http://www.google.com/url?=
+q\x3dhttp%3A%2F%2Fgithub.com%2Fopenfootball%2Fnational-teams%2Farchive%2Fma=
+ster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFq2minyXiMOSo6PZpPybBBfoAR=
+Pw&#39;;return true;">http://github.com/<wbr>openfootball/national-teams/<w=
+br>archive/master.zip</a>&#39;</blockquote><blockquote class=3D"gmail_quote=
+" style=3D"border-left:1px solid rgb(204,204,204);padding-left:1ex">[info]=
+=C2=A0 =C2=A0 to &#39;./tmp/openfootball--I--<wbr>national-teams.zip&#39;..=
+.</blockquote><blockquote class=3D"gmail_quote" style=3D"border-left:1px so=
+lid rgb(204,204,204);padding-left:1ex">[info] downloading <a href=3D"http:/=
+/github.com/openfootball/national-teams/archive/master.zip" target=3D"_blan=
+k" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/u=
+rl?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenfootball%2Fnational-teams%2Farchive%2=
+Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFq2minyXiMOSo6PZpPybBBf=
+oARPw&#39;;return true;" onclick=3D"this.href=3D&#39;http://www.google.com/=
+url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenfootball%2Fnational-teams%2Farchive%=
+2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFq2minyXiMOSo6PZpPybBB=
+foARPw&#39;;return true;">http://github.com/<wbr>openfootball/national-team=
+s/<wbr>archive/master.zip</a> to ./tmp/openfootball--I--<wbr>national-teams=
+.zip...</blockquote><blockquote class=3D"gmail_quote" style=3D"border-left:=
+1px solid rgb(204,204,204);padding-left:1ex">[info] download dataset &#39;o=
+penfootball/world-cup&#39;</blockquote><blockquote class=3D"gmail_quote" st=
+yle=3D"border-left:1px solid rgb(204,204,204);padding-left:1ex">[info]=C2=
+=A0 =C2=A0 from &#39;<a href=3D"http://github.com/openfootball/world-cup/ar=
+chive/master.zip" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.hr=
+ef=3D&#39;http://www.google.com/url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenfoot=
+ball%2Fworld-cup%2Farchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dA=
+FQjCNEVu5UkI1Uz7eG3teWqPdxa8Rr7ig&#39;;return true;" onclick=3D"this.href=
+=3D&#39;http://www.google.com/url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenfootba=
+ll%2Fworld-cup%2Farchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQ=
+jCNEVu5UkI1Uz7eG3teWqPdxa8Rr7ig&#39;;return true;">http://github.com/<wbr>o=
+penfootball/world-cup/<wbr>archive/master.zip</a>&#39;</blockquote><blockqu=
+ote class=3D"gmail_quote" style=3D"border-left:1px solid rgb(204,204,204);p=
+adding-left:1ex">[info]=C2=A0 =C2=A0 to &#39;./tmp/openfootball--I--world-<=
+wbr>cup.zip&#39;...</blockquote><blockquote class=3D"gmail_quote" style=3D"=
+border-left:1px solid rgb(204,204,204);padding-left:1ex">[info] downloading=
+ <a href=3D"http://github.com/openfootball/world-cup/archive/master.zip" ta=
+rget=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www=
+.google.com/url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup%2Fa=
+rchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNEVu5UkI1Uz7eG3t=
+eWqPdxa8Rr7ig&#39;;return true;" onclick=3D"this.href=3D&#39;http://www.goo=
+gle.com/url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup%2Farchi=
+ve%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNEVu5UkI1Uz7eG3teWqP=
+dxa8Rr7ig&#39;;return true;">http://github.com/<wbr>openfootball/world-cup/=
+<wbr>archive/master.zip</a> to ./tmp/openfootball--I--world-<wbr>cup.zip...=
+</blockquote><blockquote class=3D"gmail_quote" style=3D"border-left:1px sol=
+id rgb(204,204,204);padding-left:1ex">working directory: C:/xampp/htdocs/wo=
+rldcup</blockquote><blockquote class=3D"gmail_quote" style=3D"border-left:1=
+px solid rgb(204,204,204);padding-left:1ex">Connecting to db using settings=
+:</blockquote><blockquote class=3D"gmail_quote" style=3D"border-left:1px so=
+lid rgb(204,204,204);padding-left:1ex">{:adapter=3D&gt;&quot;sqlite3&quot;,=
+ :database=3D&gt;&quot;./sport.db&quot;}</blockquote><blockquote class=3D"g=
+mail_quote" style=3D"border-left:1px solid rgb(204,204,204);padding-left:1e=
+x"><br></blockquote><blockquote class=3D"gmail_quote" style=3D"border-left:=
+1px solid rgb(204,204,204);padding-left:1ex"><b><font color=3D"#ff0000">***=
+ error: Error loading the &#39;sqlite3&#39; Active Record adapter. Missing =
+a gem it depends on? cannot load such file -- sqlite3/sqlite3_native</font>=
+</b></blockquote><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px =
+0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex"><br></bl=
+ockquote></blockquote><div><br></div><div>On command line I get the error i=
+n red above.</div></div><div><br></div><div>Maybe my local xampp installati=
+on is in the way or I am doing something wrong?<br></div><div><br></div><di=
+v>Can somebody help me out here. Thanks in advance for your cooperation</di=
+v><div><br></div><div><br></div><div><br></div><div><br></div></div></block=
+quote></div></div>
+------=_Part_27179_1234483441.1530721724948--
+
+------=_Part_27178_1746141804.1530721724947--
+

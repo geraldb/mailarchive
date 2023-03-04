@@ -1,0 +1,110 @@
+From 6620844139744329728@xxx Tue Nov 06 20:16:42 +0000 2018
+X-GM-THRID: 6620432779974803456
+X-Received: by 2002:aca:7247:: with SMTP id p68-v6mr21360670oic.0.1541535402203;
+        Tue, 06 Nov 2018 12:16:42 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:aca:807:: with SMTP id 7-v6ls156194oii.10.gmail; Tue, 06 Nov
+ 2018 12:16:41 -0800 (PST)
+X-Received: by 2002:aca:7247:: with SMTP id p68-v6mr21360643oic.0.1541535401903;
+        Tue, 06 Nov 2018 12:16:41 -0800 (PST)
+Received: by 2002:aca:3dd7:0:0:0:0:0 with SMTP id k206-v6msoia;
+        Tue, 6 Nov 2018 09:32:41 -0800 (PST)
+X-Google-Smtp-Source: AJdET5dj8kjao4DhG0wwpAGBLI7HQQ42MymPtRuB/3h+IvNDClIoIG4q0Y/CQbxOE1Od1xL9zNSLuVYjjA==
+X-Received: by 2002:aca:5803:: with SMTP id m3-v6mr54059oib.4.1541525560951;
+        Tue, 06 Nov 2018 09:32:40 -0800 (PST)
+X-Google-Thread-Subscription: Yes
+X-Google-Web-Client: true
+Date: Tue, 6 Nov 2018 09:32:40 -0800 (PST)
+From: Steffen Roller <steffen.roller@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <d8e54c23-8875-4d9c-b69e-a65b84b934c6@googlegroups.com>
+In-Reply-To: <CAAxEZd9Xc-62PU+k=wOq7WtXqiL4vMZye_D6kodMdbMBp7LogA@mail.gmail.com>
+References: <135107ef-bc78-4d06-960f-15259b4493cf@googlegroups.com>
+ <CAAxEZd9Xc-62PU+k=wOq7WtXqiL4vMZye_D6kodMdbMBp7LogA@mail.gmail.com>
+Subject: Re: [wwwmake:450] Noob question about performance
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2499_654779019.1541525560731"
+X-Google-Token: ELigh98FYUoHFznJVc00
+X-Google-IP: 204.138.115.201
+
+------=_Part_2499_654779019.1541525560731
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2500_637492289.1541525560731"
+
+------=_Part_2500_637492289.1541525560731
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I'm fiddling with some weather data from the University of Waterloo in 
+Ontario, Canada.
+
+I just did some very basic testing and found CsvReader 2-3 times slower 
+than the builtin gem,
+*BUT* the builtin gem couldn't even read the file on Windows!
+My tests were executed on a Linux system (Ubuntu 18.4 Bionic) with Ruby 
+2.5.3
+
+You can find my test script on PasteBin https://pastebin.com/XvPeuP3M
+-st
+
+
+On Monday, November 5, 2018 at 12:47:07 PM UTC-5, Gerald Bauer wrote:
+>
+> Hello, 
+>    Welcome. Thanks for your interest in the (new) csv library / 
+> reader. The best way is to try it :-) 
+>
+>     Sorry I haven't run any benchmarks yet (and do not claim that it's 
+> faster).  The best way for a faster csv library is to use a 
+> c-extension :-). See the fastcsv, fasterercsv, fastestcsv and so on 
+> libraries. 
+>
+>    The (new) csv library has a "front-end" and "back-end" - the idea 
+> is that you can plugin new parsers - and one would be with a 
+> c-extension.  Since I currently have no need that's months off on the 
+> roadmap. 
+>
+>     Anyways, if you try the (new) csv library and compare / benchmark, 
+> let us know!  All the best. Cheers. Prost. 
+>
+
+------=_Part_2500_637492289.1541525560731
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I&#39;m fiddling with some weather data from the Universit=
+y of Waterloo in Ontario, Canada.<div><br></div><div>I just did some very b=
+asic testing and found CsvReader 2-3 times slower than the builtin gem,</di=
+v><div>*BUT* the builtin gem couldn&#39;t even read the file on Windows!</d=
+iv><div>My tests were executed on a Linux system (Ubuntu 18.4 Bionic) with =
+Ruby 2.5.3<br><br>You can find my test script on PasteBin=C2=A0https://past=
+ebin.com/XvPeuP3M</div><div>-st<br><br><br>On Monday, November 5, 2018 at 1=
+2:47:07 PM UTC-5, Gerald Bauer wrote:<blockquote class=3D"gmail_quote" styl=
+e=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left:=
+ 1ex;">Hello,
+<br>=C2=A0 =C2=A0Welcome. Thanks for your interest in the (new) csv library=
+ /
+<br>reader. The best way is to try it :-)
+<br>
+<br>=C2=A0 =C2=A0 Sorry I haven&#39;t run any benchmarks yet (and do not cl=
+aim that it&#39;s
+<br>faster). =C2=A0The best way for a faster csv library is to use a
+<br>c-extension :-). See the fastcsv, fasterercsv, fastestcsv and so on
+<br>libraries.
+<br>
+<br>=C2=A0 =C2=A0The (new) csv library has a &quot;front-end&quot; and &quo=
+t;back-end&quot; - the idea
+<br>is that you can plugin new parsers - and one would be with a
+<br>c-extension. =C2=A0Since I currently have no need that&#39;s months off=
+ on the
+<br>roadmap.
+<br>
+<br>=C2=A0 =C2=A0 Anyways, if you try the (new) csv library and compare / b=
+enchmark,
+<br>let us know! =C2=A0All the best. Cheers. Prost.
+<br></blockquote></div></div>
+------=_Part_2500_637492289.1541525560731--
+
+------=_Part_2499_654779019.1541525560731--
+

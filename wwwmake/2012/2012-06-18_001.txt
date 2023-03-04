@@ -1,0 +1,62 @@
+From 1104424206336@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1104284745728
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,58e98727f1ddf19d,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.52.29.193 with SMTP id m1mr11230553vdh.4.1340044014098;
+        Mon, 18 Jun 2012 11:26:54 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.52.75.106 with SMTP id b10ls1713718vdw.4.gmail; Mon, 18 Jun
+ 2012 11:26:53 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.52.20.51 with SMTP id k19mr975563vde.8.1340044013689; Mon, 18
+ Jun 2012 11:26:53 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by 5g2000vbf.googlegroups.com with HTTP; Mon, 18 Jun 2012 11:26:53
+ -0700 (PDT)
+Date: Mon, 18 Jun 2012 11:26:53 -0700 (PDT)
+User-Agent: G2/1.0
+X-Google-Token: EO3l_f4EtM0AXuS5W3g0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:13.0)
+ Gecko/20100101 Firefox/13.0,gzip(gfe)
+X-Google-IP: 91.115.43.91
+Message-ID: <56751cd9-df3b-451b-b91b-03995affbfa7@5g2000vbf.googlegroups.com>
+Subject: Modul-mania - Slide Show (S9) Spin Off Five New Gems - props,
+ textutils, markdown, fetcher, pakman
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   I've cleaned up the Slide Show (S9) code a little and moved more
+code in its own gem to make it easier for others to reuse parts of the
+code or to contribute.  The new gems include:
+
+   - props     => Manage Settings Hierachies [1]
+   - textutils => Text Filters 'n' Helpers [2]
+   - markdown  => Markdown Engine Wrapper - Use Your Markdown Library
+of Choice [3]
+   - fetcher   => Fetch Text Documents or Binary Blobs via HTTP, HTTPS
+[4]
+   - pakman    => Template Pack Manager [5]
+
+  All new gems are dedicated to the public domain, that is, use the
+code as you please with no restrictions whatsoever.
+
+  Cheers.
+
+[1] http://geraldb.github.com/props
+[2] http://geraldb.github.com/textutils
+[3] http://geraldb.github.com/markdown
+[4] http://geraldb.github.com/fetcher
+[5] http://geraldb.github.com/pakman
+

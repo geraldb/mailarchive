@@ -1,0 +1,78 @@
+From 115452411904@xxx Tue Jun 16 00:17:25 +0000 2015
+X-GM-THRID: 111680684032
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,879c3751d2b50e05,start
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+X-Received: by 10.180.185.132 with SMTP id fc4mr4793088wic.7.1372506583329;
+        Sat, 29 Jun 2013 04:49:43 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.181.13.176 with SMTP id ez16ls373354wid.0.canary; Sat, 29 Jun
+ 2013 04:49:42 -0700 (PDT)
+X-Received: by 10.180.11.239 with SMTP id t15mr4820673wib.3.1372506582879;
+        Sat, 29 Jun 2013 04:49:42 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22e.google.com (mail-wi0-x22e.google.com [2a00:1450:400c:c05::22e])
+        by gmr-mx.google.com with ESMTPS id a5si100000wiz.2.2013.06.29.04.49.42
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 29 Jun 2013 04:49:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) client-ip=2a00:1450:400c:c05::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-wi0-x22e.google.com with SMTP id k10so1632136wiv.7
+        for <opensport@googlegroups.com>; Sat, 29 Jun 2013 04:49:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=kQ2HP/kSmym1mKwBNDm5EOdScEl/qmg+eX5UpNfeeWU=;
+        b=T4xHOZN4cI+QiPtgvYmpxz2Q0qlnbOjz+c5yaTgWgw+US0SdfzoETXK+s7N0+/mh1J
+         DygLobAXuyI7RM+O/MPcnEtlVHF+mJngaoWKdNNaoQufMVtpiLAs2cVjTGQk+zZ/3kLO
+         r4dUt8WDjSNIWeVAaUxYiPiZQC9xZxD80DZkhi64ZUbVP6JqAhejUbMrwIacNHZwvq7s
+         g/EBFIV8p3+4dQEMLll31vAlRrkrwPsihk/7AAynL9rv208Iss9Lt6oDM5gTrlwqWMCr
+         y6OLI5WTjeSa2b5tjEXkZs9F4TJIwx4hQZqUsbcHqFnjzDik4hZw2bAhFvVmc6JPIfzZ
+         Yl6g==
+MIME-Version: 1.0
+X-Received: by 10.194.174.137 with SMTP id bs9mr13548868wjc.59.1372506582807;
+ Sat, 29 Jun 2013 04:49:42 -0700 (PDT)
+Received: by 10.216.54.202 with HTTP; Sat, 29 Jun 2013 04:49:42 -0700 (PDT)
+Date: Sat, 29 Jun 2013 13:49:42 +0200
+Message-ID: <CAAxEZd8GsSb02fjkcQj_8XuADgQ+w+A59JiYBj_zNtOG+WKubA@mail.gmail.com>
+Subject: Confed Brazil 2013 - From Plain Text Fixtures to Structured Data and
+ HTTP JSON APIs in Minutes
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  I've updated the plain text football.db fixtures for the
+Confederations Cup 2013 in Brazil[1].
+
+  The sportdb Ruby gem[2] lets you load the plain text fixtures into
+your database of choice (e.g SQLite, PostgreSQL, etc.) and
+lets you use the sportdb models such as Event, Team, Round, Group,
+Game, etc. for
+
+ - web pages (e.g. Confederations Cup 2013 Schedule[3]) or
+ - HTTP JSON APIs (e.g. all teams[4], all rounds[5], semi final
+matches e.g. Brazil-Uruguay; Spain-Italy etc.) or
+ - console scripts etc.
+
+ All plain text fixture, Ruby code and samples public domain.
+Questions? Comments?
+
+  Enjoy. Cheers.
+
+
+[1] https://github.com/openfootball/world/blob/master/2013/conf.txt
+[2] http://rubydoc.info/gems/sportdb/1.6.18/frames
+[3] http://footballdb.herokuapp.com/world.conf.2013
+[4] http://footballdb.herokuapp.com/api/v1/event/world.conf.2013/teams
+[5] http://footballdb.herokuapp.com/api/v1/event/world.conf.2013/rounds
+[6] http://footballdb.herokuapp.com/api/v1/event/world.conf.2013/round/4
+

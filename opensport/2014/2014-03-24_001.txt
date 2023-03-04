@@ -1,0 +1,98 @@
+From 420278697984@xxx Tue Jun 16 00:17:14 +0000 2015
+X-GM-THRID: 416173522944
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4c04929adcdcb298
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.43.14.137 with SMTP id pq9mr22550164icb.12.1395645263409;
+        Mon, 24 Mar 2014 00:14:23 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.105.197 with SMTP id c63ls712120qgf.3.gmail; Mon, 24 Mar
+ 2014 00:14:23 -0700 (PDT)
+X-Received: by 10.140.101.171 with SMTP id u40mr1247473qge.1.1395645263251;
+        Mon, 24 Mar 2014 00:14:23 -0700 (PDT)
+X-Google-Doc-Id: 15a8c7868a43d3cb
+X-Google-Web-Client: true
+Date: Mon, 24 Mar 2014 00:14:22 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <03ea5cdb-e7f3-4876-a591-ffc15762d76e@googlegroups.com>
+In-Reply-To: <2019e7d1-0c78-41c7-93fc-465ce4935ebb@googlegroups.com>
+References: <2019e7d1-0c78-41c7-93fc-465ce4935ebb@googlegroups.com>
+Subject: Re: A couple of Question
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_337_27380384.1395645262696"
+X-Google-Token: EM62v5kF3oQDtOVII7g0
+X-Google-IP: 194.166.222.15
+
+------=_Part_337_27380384.1395645262696
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_338_16649936.1395645262696"
+
+------=_Part_338_16649936.1395645262696
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+1- I see from your page that i had to set the database for the information, 
+> is any othe way to access the data no locally? I see that this<https://github.com/geraldb/football.js>is a way, is the only way?
+>
+2- I use football.js but when a have to access i get a 500 Internal Server 
+> Error... so, is any other place for the data?
+>
+
+  For now the only known public football.db HTTP JSON API service runs on 
+footballdb.herokuapp.com   The API docu lives @ github.com/openfootball/api
+
+   Note, you can start you own local service:
+
+   $ sportdb service
+  
+
+> 3- How update the data in real time?
+>
+
+     One way to update the data (- the official recommended way -) is to 
+update the plain text fixtures in the git repo and than sync your database 
+or web app. If you use Ruby for your server the sportdb gem has builtin 
+auto-sync machinery e.g. use SportDb.update.
+
+   Cheers. 
+
+------=_Part_338_16649936.1395645262696
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br><blockquote class=3D"gmail_quote" style=3D"m=
+argin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"=
+><div dir=3D"ltr"><div>1- I see from your page that i had to set the databa=
+se for the information, is any othe way to access the data no locally? I se=
+e that <a href=3D"https://github.com/geraldb/football.js" target=3D"_blank"=
+ onmousedown=3D"this.href=3D'https://www.google.com/url?q\75https%3A%2F%2Fg=
+ithub.com%2Fgeraldb%2Ffootball.js\46sa\75D\46sntz\0751\46usg\75AFQjCNH5hnw8=
+HfTLNcFTZqPIJfFFRw6F-A';return true;" onclick=3D"this.href=3D'https://www.g=
+oogle.com/url?q\75https%3A%2F%2Fgithub.com%2Fgeraldb%2Ffootball.js\46sa\75D=
+\46sntz\0751\46usg\75AFQjCNH5hnw8HfTLNcFTZqPIJfFFRw6F-A';return true;">this=
+</a> is a way, is the only way?</div></div></blockquote><blockquote class=
+=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #cc=
+c solid;padding-left: 1ex;"><div dir=3D"ltr"><div>2- I use football.js but =
+when a have to access i get a 500 Internal Server Error... so, is any other=
+ place for the data?</div></div></blockquote><div><br>&nbsp; For now the on=
+ly known public football.db HTTP JSON API service runs on footballdb.heroku=
+app.com&nbsp;&nbsp; The API docu lives @ github.com/openfootball/api<br><br=
+>&nbsp;&nbsp; Note, you can start you own local service:<br><br>&nbsp;&nbsp=
+; $ sportdb service<br>&nbsp; <br></div><blockquote class=3D"gmail_quote" s=
+tyle=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-le=
+ft: 1ex;"><div dir=3D"ltr"><div>3- How update the data in real time?</div><=
+/div></blockquote><div><br>&nbsp;&nbsp; &nbsp; One way to update the data (=
+- the official recommended way -) is to update the plain text fixtures in t=
+he git repo and than sync your database or web app. If you use Ruby for you=
+r server the sportdb gem has builtin auto-sync machinery e.g. use SportDb.u=
+pdate.<br><br>&nbsp;&nbsp; Cheers.&nbsp;</div></div>
+------=_Part_338_16649936.1395645262696--
+
+------=_Part_337_27380384.1395645262696--
+

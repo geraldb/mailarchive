@@ -1,0 +1,94 @@
+From 205003948032@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 200310521856
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,f95ca3b7efa5b201
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.151.142.16 with SMTP id u16mr292899ybn.10.1224047388056;
+        Tue, 14 Oct 2008 22:09:48 -0700 (PDT)
+Return-Path: <narendra.sisodiya@gmail.com>
+Received: from mail-gx0-f14.google.com (mail-gx0-f14.google.com [209.85.217.14])
+        by mx.google.com with ESMTP id 39si11767336yxd.2.2008.10.14.22.09.46;
+        Tue, 14 Oct 2008 22:09:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of narendra.sisodiya@gmail.com designates 209.85.217.14 as permitted sender) client-ip=209.85.217.14;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of narendra.sisodiya@gmail.com designates 209.85.217.14 as permitted sender) smtp.mail=narendra.sisodiya@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by mail-gx0-f14.google.com with SMTP id 7so5914949gxk.23
+        for <webslideshow@googlegroups.com>; Tue, 14 Oct 2008 22:09:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type:references;
+        bh=B3Hnt3utjTLZLgoQfIpXtk8+tJyCM7kslXpVGL7y3nw=;
+        b=LSiLJiMLo9B1LtMyu9m8G/Dr9EFmpiBuUOiUMKiFR834sccW+wn3g0WM7XV+yygZkS
+         0scL39j9J8nRWN7wqX9lU3DnyE4WYJ3wVYKFwCjCInj6NHfu2gToAFCTFC/UaxYnUZ3S
+         gVD4Dp6s0aW4Ir1t0m8rl/mJOviRoVrFqjonY=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:references;
+        b=BGRlVM3UtQ8SxxWEQy6yuolRULzXWi9FV/i8bpnpVvmGOHjYihpVFlCNnjN8yF2Lm4
+         jE0jqXlF8fJN46Y797r+k7eApAA01NcseSod3zV/fExeAFe/x4nPan6shdqyQO2UYKkp
+         cl3qcr0NVIfBs6kDh7fwUK6wYPBD3XMmmfVq8=
+Received: by 10.142.245.6 with SMTP id s6mr235344wfh.157.1224047386441;
+        Tue, 14 Oct 2008 22:09:46 -0700 (PDT)
+Received: by 10.142.111.20 with HTTP; Tue, 14 Oct 2008 22:09:46 -0700 (PDT)
+Message-ID: <e3fb97f30810142209v67ab8bd1l8447761e9d818817@mail.gmail.com>
+Date: Wed, 15 Oct 2008 10:39:46 +0530
+From: "narendra sisodiya" <narendra.sisodiya@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow] Slide Show (S6) Autoplay Addon Beta (w/ Scroll-Up Effect) - jQuery Animate in Action
+In-Reply-To: <1f058eab0810142145l59003e80ha0ebfcadda12c00@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_22670_8516475.1224047386437"
+References: <1f058eab0810142145l59003e80ha0ebfcadda12c00@mail.gmail.com>
+
+------=_Part_22670_8516475.1224047386437
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+I am working on similar project,
+at weekend, i am going to release alpha version,
+
+Well. In my project. currently their are 3 mode
+*1 Edit mode*
+-* *write your slides in wiki format (s9 type) , it will automatically
+converted to html slideshow
+*2 Record mode*
+- When you will present your slideshow (using website, ) your slide timings
+will be recorded in xml format. I am trying to record audio also
+*3 play mode*
+- Anyone who missed your presentation, will watch it online , this will be a
+automated slideshow but it will use the your timings, in backend audio will
+be played back so that it will give a overall effect of screen casting ,
+without recording the actual screen
+
+---- See more at http://eduvid.techfandu.org/
+a *pre-alpha* demo version is availbe at --
+http://wiki.techfandu.org/eduvid/Eduvid-0.011/wiki-eduvid-slideshow.html
+
+
+Please all files at http://wiki.techfandu.org/eduvid/Eduvid-0.011/
+
+Please note that,. I am a single developer who is working on it, so in
+anybody is interested can contact me.
+
+Regards
+--
+Narendra Sisodiya
+http://narendra.techfandu.org/
+
+------=_Part_22670_8516475.1224047386437
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+<div dir="ltr">I am working on similar project,<br>at weekend, i am going to release alpha version,<br><br>Well. In my project. currently their are 3 mode<br><b>1 Edit mode</b><br>-<b> </b>write your slides in wiki format (s9 type) , it will automatically converted to html slideshow<br>
+<b>2 Record mode</b><br>- When you will present your slideshow (using website, ) your slide timings will be recorded in xml format. I am trying to record audio also<br><b>3 play mode</b><br>- Anyone who missed your presentation, will watch it online , this will be a automated slideshow but it will use the your timings, in backend audio will be played back so that it will give a overall effect of screen casting , without recording the actual screen<br>
+<br>---- See more at <a href="http://eduvid.techfandu.org/">http://eduvid.techfandu.org/</a><br>a <b>pre-alpha</b> demo version is availbe at -- <a href="http://wiki.techfandu.org/eduvid/Eduvid-0.011/wiki-eduvid-slideshow.html">http://wiki.techfandu.org/eduvid/Eduvid-0.011/wiki-eduvid-slideshow.html</a><br>
+<br><br>Please all files at <a href="http://wiki.techfandu.org/eduvid/Eduvid-0.011/">http://wiki.techfandu.org/eduvid/Eduvid-0.011/</a><br><br>Please note that,. I am a single developer who is working on it, so in anybody is interested can contact me.<br>
+<br>Regards <br>--<br>Narendra Sisodiya<br><a href="http://narendra.techfandu.org/">http://narendra.techfandu.org/</a><br></div>
+
+------=_Part_22670_8516475.1224047386437--
+

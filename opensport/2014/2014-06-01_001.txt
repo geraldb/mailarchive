@@ -1,0 +1,99 @@
+From 937157459968@xxx Tue Jun 16 00:16:53 +0000 2015
+X-GM-THRID: 927995002880
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cc2704da6a7f0905
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.50.203 with SMTP id e11mr4056lbo.23.1401627136046;
+        Sun, 01 Jun 2014 05:52:16 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.153.8.140 with SMTP id dk12ls287250lad.64.gmail; Sun, 01 Jun
+ 2014 05:52:15 -0700 (PDT)
+X-Received: by 10.152.29.169 with SMTP id l9mr2321796lah.3.1401627135646;
+        Sun, 01 Jun 2014 05:52:15 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22a.google.com (mail-wg0-x22a.google.com [2a00:1450:400c:c00::22a])
+        by gmr-mx.google.com with ESMTPS id e12si93623wiv.1.2014.06.01.05.52.15
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 01 Jun 2014 05:52:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22a as permitted sender) client-ip=2a00:1450:400c:c00::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f42.google.com with SMTP id y10so3863663wgg.13
+        for <opensport@googlegroups.com>; Sun, 01 Jun 2014 05:52:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=Gimip90gXxpM6hjbGScNaxbEjybsECzNgQcKLQ9gTRU=;
+        b=N36H1xWH3kQXdR2qLIC3qc1eP+7ha2FbW70UJPb55vAtyK6QkAR3FeEElZ9BUK+NqN
+         8XzN9oiqN34Bo2Y7Ui1CdLCscmX/Wps/rXmLBYrrUcXiULi9Gmu4VqPt+VErVMYMfE/8
+         lf1m7/UOdVEtfsR082/zTQ6bBu5xZb3Ep3RCGd0ktIiUAf3R+IgoaPNSMl7DD0WyGMiz
+         cqUmdqSttH99Eh3pBCJ3vHRX08P77vSW48ab0gkpWkTN6d0s9W++KOqyld8j/jqioy2J
+         qcKz1sAFvii8bX8uvFyhBa5XFi+GO+5D72C4mx0zH382hTe4iwM+dpOOxXrRlSUYs1Zw
+         cF3g==
+MIME-Version: 1.0
+X-Received: by 10.194.62.104 with SMTP id x8mr41015541wjr.15.1401627135536;
+ Sun, 01 Jun 2014 05:52:15 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Sun, 1 Jun 2014 05:52:15 -0700 (PDT)
+In-Reply-To: <19eacbc8-171b-4eef-8551-745d02ab4dbc@googlegroups.com>
+References: <5f5a95ac-4d4c-44d4-9f9b-3b44334a098e@googlegroups.com>
+	<19eacbc8-171b-4eef-8551-745d02ab4dbc@googlegroups.com>
+Date: Sun, 1 Jun 2014 14:52:15 +0200
+Message-ID: <CAAxEZd_fsFG-N0AOO_KfCt_h44TMz=tprgRyhO31DS_Nqs4Q5A@mail.gmail.com>
+Subject: Re: [opensport] Re: Bundesliga Data 1963 - 2014
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello Arne,
+
+  As a working "real-world" example I've added the first two machdays
+for 1963/1964 [1].  You're welcome to add the missing seasons. Cheers.
+
+[1] github.com/openfootball/de-deutschland/blob/master/1963_64/bl.txt
+
+Example:
+
+##############################
+# Deutsche Bundesliga 1963/64
+
+1. Spieltag
+
+1963-08-24 17:00 Werder Bremen Borussia Dortmund 3:2 (1:1)
+1963-08-24 17:00 1. FC Saarbr=C3=BCcken 1. FC K=C3=B6ln 0:2 (0:2)
+1963-08-24 17:00 TSV 1860 M=C3=BCnchen Eintracht Braunschweig 1:1 (1:0)
+1963-08-24 17:00 Eintracht Frankfurt 1. FC Kaiserslautern 1:1 (1:1)
+1963-08-24 17:00 FC Schalke 04 VfB Stuttgart 2:0 (2:0)
+1963-08-24 17:00 Preussen M=C3=BCnster Hamburger SV 1:1 (0:0)
+1963-08-24 17:00 Karlsruher SC MSV Duisburg 1:4 (0:3)
+1963-08-24 17:00 Hertha BSC 1. FC N=C3=BCrnberg 1:1 (0:1)
+...
+
+
+2014-06-01 14:24 GMT+02:00 Gerald Bauer <gerald.bauer@gmail.com>:
+> Hello Arne,
+>
+>   Thanks for your interest in football.db and thanks for sharing.
+>
+>    You're invited to add the missing Bundesliga seasons. The football.db
+> project uses plain text files - you're files are pretty close.   You can =
+see
+> an example here [1].  Let me know if you're interested in adding missing
+> seasons (files need to get split per season) and I can assist you to get
+> started.   Cheers.
+>
+> [1]  github.com/openfootball/de-deutschland/blob/master/2013_14/bl.txt
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+

@@ -1,0 +1,83 @@
+From 6483544833831993344@xxx Wed Nov 01 20:25:16 +0000 2017
+X-GM-THRID: 6483544831205310464
+X-Received: by 10.13.229.131 with SMTP id o125mr648338ywe.116.1509567916209;
+        Wed, 01 Nov 2017 13:25:16 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.129.72.20 with SMTP id v20ls102868ywa.12.gmail; Wed, 01 Nov
+ 2017 13:25:15 -0700 (PDT)
+X-Received: by 10.129.78.3 with SMTP id c3mr643830ywb.145.1509567915699;
+        Wed, 01 Nov 2017 13:25:15 -0700 (PDT)
+Received: by 10.129.109.148 with SMTP id i142msywc;
+        Tue, 31 Oct 2017 14:55:53 -0700 (PDT)
+X-Google-Smtp-Source: ABhQp+Qh51aUyecqoAYrQ5sJk3jrGHn/RNLpfD9IFHX41aC9I4J4eGN6gonOcDb/Kg7WngZG9bzKlkXYsQ==
+X-Received: by 10.31.161.87 with SMTP id k84mr256580vke.7.1509486953065;
+        Tue, 31 Oct 2017 14:55:53 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Tue, 31 Oct 2017 14:55:52 -0700 (PDT)
+From: Mari Nero <marinero70@email.de>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <f415b522-e28a-4f5b-b805-0223bfff9f99@googlegroups.com>
+Subject: Getting Error when creating a DB
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_4338_1737284091.1509486952905"
+X-Google-Token: EOji488FTN2VyxCh9Bs0
+X-Google-IP: 178.200.106.102
+
+------=_Part_4338_1737284091.1509486952905
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4339_1016874214.1509486952905"
+
+------=_Part_4339_1016874214.1509486952905
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+I was trying to create a new db with:
+
+sportdb new de
+
+
+But I always get:
+
+
+*** error: Index name 'index_rounds_on_event_id' on table 'rounds' already 
+exists
+
+Any Ideas appreciated.
+
+Best regards,
+Thomas
+
+------=_Part_4339_1016874214.1509486952905
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi,<div><br></div><div>I was trying to create a new db wit=
+h:</div><div><br></div><div><p style=3D"font-stretch: normal; font-size: 11=
+px; line-height: normal; font-family: Menlo;"><span style=3D"font-variant-l=
+igatures: no-common-ligatures">sportdb new de</span></p><p style=3D"font-st=
+retch: normal; font-size: 11px; line-height: normal; font-family: Menlo;"><=
+span style=3D"font-variant-ligatures: no-common-ligatures"><br></span></p><=
+p style=3D"font-stretch: normal; font-size: 11px; line-height: normal; font=
+-family: Menlo;"><span style=3D"font-variant-ligatures: no-common-ligatures=
+">But I always get:</span></p><p style=3D"font-stretch: normal; font-size: =
+11px; line-height: normal; font-family: Menlo;"><span style=3D"font-variant=
+-ligatures: no-common-ligatures"><br></span></p><p style=3D"font-stretch: n=
+ormal; font-size: 11px; line-height: normal; font-family: Menlo;"><span sty=
+le=3D"font-variant-ligatures: no-common-ligatures"></span></p><p style=3D"f=
+ont-stretch: normal; font-size: 11px; line-height: normal; font-family: Men=
+lo;"><span style=3D"font-variant-ligatures: no-common-ligatures">*** error:=
+ Index name &#39;index_rounds_on_event_id&#39; on table &#39;rounds&#39; al=
+ready exists</span></p></div><div><span style=3D"font-variant-ligatures: no=
+-common-ligatures"><br></span></div><div><span style=3D"font-variant-ligatu=
+res: no-common-ligatures">Any Ideas appreciated.</span></div><div><span sty=
+le=3D"font-variant-ligatures: no-common-ligatures"><br></span></div><div><s=
+pan style=3D"font-variant-ligatures: no-common-ligatures">Best regards,</sp=
+an></div><div><span style=3D"font-variant-ligatures: no-common-ligatures">T=
+homas</span></div></div>
+------=_Part_4339_1016874214.1509486952905--
+
+------=_Part_4338_1737284091.1509486952905--
+

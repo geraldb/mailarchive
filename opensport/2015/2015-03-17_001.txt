@@ -1,0 +1,77 @@
+From 2542350106624@xxx Tue Jun 16 00:16:39 +0000 2015
+X-GM-THRID: 2513988222976
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b207fcdca166b700
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.142.69 with SMTP id r5mr66940335icu.3.1426627600424;
+        Tue, 17 Mar 2015 14:26:40 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.40.41 with SMTP id w38ls381295qgw.85.gmail; Tue, 17 Mar
+ 2015 14:26:40 -0700 (PDT)
+X-Received: by 10.140.89.116 with SMTP id u107mr1098622qgd.18.1426627600103;
+        Tue, 17 Mar 2015 14:26:40 -0700 (PDT)
+X-Google-Doc-Id: 4a46d45493ca6201
+X-Google-Web-Client: true
+Date: Tue, 17 Mar 2015 14:26:39 -0700 (PDT)
+From: Corneil du Plessis <corneil.duplessis@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <719d8403-288b-4a30-9930-92b7cce5813b@googlegroups.com>
+In-Reply-To: <CAAxEZd86VnHXjF29jrVx9rFd092+CQfWwckKM8gwEHx6+_8OOw@mail.gmail.com>
+References: <f613f935-42ed-407c-b7e3-549fdcecd8fc@googlegroups.com>
+ <CAAxEZd87cJbDt+s9riziPS-zr09xhiF5mAUP6Tq=ciot3emPDg@mail.gmail.com>
+ <f3131b38-1312-47ac-8359-e2f4330189b1@googlegroups.com>
+ <CAAxEZd86VnHXjF29jrVx9rFd092+CQfWwckKM8gwEHx6+_8OOw@mail.gmail.com>
+Subject: Re: [opensport] Empty tables after build
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_5505_1505950863.1426627599406"
+X-Google-Token: EI-4oqgFJ12ONC-JDWA0
+X-Google-IP: 105.210.26.143
+
+------=_Part_5505_1505950863.1426627599406
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5506_273890899.1426627599407"
+
+------=_Part_5506_273890899.1426627599407
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Are there any datasets that contains rosters?
+I would like to tests some analysis ideas and I am not too picky about the 
+dataset I would just like to try some algorithms and compare to history etc.
+
+On Monday, 16 March 2015 20:10:39 UTC+2, Gerald Bauer wrote:
+>
+> Hello, 
+>    Yes, that is as expected. The worldcup "standard" build includes 
+> the teams and schedule but does NOT include any players and squads, 
+> thus, the rosters table is empty. Sorry. 
+>
+>    The players and squad support is for now experimental and not part 
+> of any "standard" build. If you want to include the players and squads 
+> than you will have to use a "custom", that is, write your own build 
+> script.  In theory and practice the World Cup Brazil 2014 dataset 
+> includes the squad datasets for the final round.  Sorry there's no 
+> "easy"  (single command line) way for now.   Cheers. 
+>
+
+------=_Part_5506_273890899.1426627599407
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Are there any datasets that contains rosters?<div>I would like to tests some analysis ideas and I am not too picky about the dataset I would just like to try some algorithms and compare to history etc.<br><br>On Monday, 16 March 2015 20:10:39 UTC+2, Gerald Bauer  wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>&nbsp; &nbsp;Yes, that is as expected. The worldcup "standard" build includes
+<br>the teams and schedule but does NOT include any players and squads,
+<br>thus, the rosters table is empty. Sorry.
+<br>
+<br>&nbsp; &nbsp;The players and squad support is for now experimental and not part
+<br>of any "standard" build. If you want to include the players and squads
+<br>than you will have to use a "custom", that is, write your own build
+<br>script. &nbsp;In theory and practice the World Cup Brazil 2014 dataset
+<br>includes the squad datasets for the final round. &nbsp;Sorry there's no
+<br>"easy" &nbsp;(single command line) way for now. &nbsp; Cheers.
+<br></blockquote></div></div>
+------=_Part_5506_273890899.1426627599407--
+------=_Part_5505_1505950863.1426627599406--
+

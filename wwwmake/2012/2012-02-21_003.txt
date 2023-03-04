@@ -1,0 +1,66 @@
+From 1046421176320@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 1027645374464
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,50fabe4ce4bf1a4a
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.52.91.17 with SMTP id ca17mr8992768vdb.1.1329851214066;
+        Tue, 21 Feb 2012 11:06:54 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.228.196 with SMTP id jf4ls5350896vcb.5.gmail; Tue, 21 Feb
+ 2012 11:06:53 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.52.70.242 with SMTP id p18mr2617403vdu.18.1329851213700; Tue,
+ 21 Feb 2012 11:06:53 -0800 (PST)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ matthew.thomas@bedarra.com designates internal as permitted sender)
+ smtp.mail=matthew.thomas@bedarra.com; dkim=pass
+ header.i=@bedarra.com
+Received: by db5g2000vbb.googlegroups.com with HTTP; Tue, 21 Feb 2012 11:06:53
+ -0800 (PST)
+Date: Tue, 21 Feb 2012 11:06:53 -0800 (PST)
+In-Reply-To: <CAMf=vNoffcHXVMyF-5xUKNKpBzUQeUUpe8Jy8eU_cJEaJzG7-w@mail.gmail.com>
+References: <aadd0f29-af03-45f8-825f-8ec53116ac66@w4g2000vbc.googlegroups.com>
+ <c61948d1-36c4-4134-9ae2-c1e20cb6cfec@e27g2000vbu.googlegroups.com>
+ <38a529db-f2ed-457a-9fb9-d64200e0e9ad@ge5g2000vbb.googlegroups.com> <CAMf=vNoffcHXVMyF-5xUKNKpBzUQeUUpe8Jy8eU_cJEaJzG7-w@mail.gmail.com>
+User-Agent: G2/1.0
+X-Google-Token: EM3Wj_oETi8vOzJYJew0
+X-Google-Web-Client: true
+X-Google-Header-Order: HNKUARELSC
+X-HTTP-UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11
+ (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11,gzip(gfe)
+X-Google-IP: 209.87.237.22
+Message-ID: <0fa9a385-5220-4ed6-be14-991bfa1a298f@db5g2000vbb.googlegroups.com>
+Subject: Re: Using Images?
+From: Matthew Thomas <matthew.thomas@bedarra.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+I thought that may have been an issue and have all the files in the
+same dir and called them both with and without the paths with no
+success.
+
+On Feb 21, 1:59=A0pm, Alex Chaffee <a...@stinky.com> wrote:
+> > ### =A0 =A0 Can I deal with Images?
+>
+> > =A0 =A0 =A0 =A0Heres an image of some of the kids.
+> > <img src=3D"c:/IMG_0679.jpg">
+> > ![Kids](C:/IMG_0679.jpg)
+>
+> Uh-oh! You're on Windows and you're using absolute paths. Try putting
+> a copy of the image in the same directory as your slides and referring
+> to it without the C:/.
+>
+> I don't know how Slideshow deals with external files but that would do
+> it if you were using deck.rb.http://github.com/alexch/deck.rb
+>
+> =A0- A
+>
+> --
+> Alex Chaffee - a...@stinky.comhttp://alexchaffee.comhttp://twitter.com/al=
+exch
+

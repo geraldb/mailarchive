@@ -1,0 +1,61 @@
+From 329919758336@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 327250083840
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,59a6f17ab78a294c
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.52.164.207 with SMTP id ys15mr11744261vdb.6.1412857759506;
+        Thu, 09 Oct 2014 05:29:19 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.29.203 with SMTP id b69ls329201qgb.3.gmail; Thu, 09 Oct
+ 2014 05:29:19 -0700 (PDT)
+X-Received: by 10.140.97.10 with SMTP id l10mr64514qge.1.1412857759373;
+        Thu, 09 Oct 2014 05:29:19 -0700 (PDT)
+X-Google-Doc-Id: 8b31601fe0f9a71b
+X-Google-Web-Client: true
+Date: Thu, 9 Oct 2014 05:29:19 -0700 (PDT)
+From: Eckhard Licher <eckhard.licher@googlemail.com>
+To: openmundi@googlegroups.com
+Message-Id: <6965d4d9-91bf-4aef-b19e-a45f0277ee66@googlegroups.com>
+Subject: JSON to X conversion script for the open World Factbook posted
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1611_796584522.1412857759089"
+X-Google-Token: EJ__2aEF7t3GSQmoabc0
+X-Google-IP: 85.158.138.19
+
+------=_Part_1611_796584522.1412857759089
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1612_783005856.1412857759090"
+
+------=_Part_1612_783005856.1412857759090
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+I posted a script that creates various formats from JSON files created by 
+the Python based World Factbook scraper (wfbScraper.py), see 
+https://github.com/openfactbook/master/tree/master/tools for 
+details.Supported formats are currently markdown (default), plain text and 
+custom LaTeX.
+
+The script reads a country profile via stdin and writes the result to 
+stdout. The script is also compatible with JSON files created by Gerald's 
+factbook gem. However, references to external media (flags, locators and 
+maps) in the created files require header information which are only 
+provided by wfbScraper.py.
+
+Enjoy.
+
+
+------=_Part_1612_783005856.1412857759090
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<br><br>I posted a script that creates various formats from JSON files created by the Python based World Factbook scraper (wfbScraper.py), see https://github.com/openfactbook/master/tree/master/tools for details.Supported formats are currently markdown (default), plain text and custom LaTeX.<br><br>The script reads a country profile via stdin and writes the result to stdout. The script is also compatible with JSON files created by Gerald's factbook gem. However, references to external media (flags, locators and maps) in the created files require header information which are only provided by wfbScraper.py.<br><br>Enjoy.<br><br></div>
+------=_Part_1612_783005856.1412857759090--
+
+------=_Part_1611_796584522.1412857759089--
+

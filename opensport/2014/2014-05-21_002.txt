@@ -1,0 +1,85 @@
+From 725949087744@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 728981569536
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,91a9a4fe39b2b390,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.78.101 with SMTP id a5mr1269443wix.7.1400705926213;
+        Wed, 21 May 2014 13:58:46 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.207.105 with SMTP id lv9ls174478lac.24.gmail; Wed, 21 May
+ 2014 13:58:45 -0700 (PDT)
+X-Received: by 10.152.43.3 with SMTP id s3mr3124355lal.5.1400705925830;
+        Wed, 21 May 2014 13:58:45 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22d.google.com (mail-we0-x22d.google.com [2a00:1450:400c:c03::22d])
+        by gmr-mx.google.com with ESMTPS id gt1si136775wib.0.2014.05.21.13.58.45
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 21 May 2014 13:58:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22d as permitted sender) client-ip=2a00:1450:400c:c03::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x22d.google.com with SMTP id u57so2583176wes.4
+        for <opensport@googlegroups.com>; Wed, 21 May 2014 13:58:45 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=XX9qyidx2q8AwlcWYgoxR1/Cnje3JdpMhaO42yQAeBc=;
+        b=zq8Vd4Dja7xPOrvrp3CWCqqMCaRektK2L283DdriV7AZ5wMMLGxWh4YuFQeSt0BbTh
+         PxpaPp/596a9wOXRCpbLcTtrh8xHyx2nqRrp5lT8Sp0C53n6Y3c7DHAZRVoyWuQvDkVz
+         X+vfpNtRJF4dGkLHap5jPM2phSjUQuyP5ZJqIyTow14Nn+AQFLmkXWy54mthG+8juKAw
+         YKwpyDTegiQEgtZJCmIDftkqUqH+yOPNW5Xn5uDcx7XMPKzrkpwu0gVV6kSbqQfR5y28
+         PU7//nG01G429lhYgtiWnwAMk37UKpuhuXatlb/wUbQXlIEHWglsvqsfcj+ctDPiSf3C
+         Ojyw==
+MIME-Version: 1.0
+X-Received: by 10.194.222.197 with SMTP id qo5mr4445089wjc.78.1400705925188;
+ Wed, 21 May 2014 13:58:45 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Wed, 21 May 2014 13:58:45 -0700 (PDT)
+Date: Wed, 21 May 2014 22:58:45 +0200
+Message-ID: <CAAxEZd_FbwiuGK1PV8zZjt47SitQ9dYvjrfnzsbaOJL2c4NWeA@mail.gmail.com>
+Subject: Project Spotlight - FootballData n OpenFootballApi and by Joe Kampschmidt
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Just found a new football (soccer) data project on GitHub.
+
+  Joe Kampschmidt from Washington, DC has put together football data
+sets (using comma-separated values) mostly sourced from
+football-data.co.uk  in the FootballData [1] repo on GitHub. The
+readme reads:
+
+  Football/Soccer data for anyone to use. The data is INCOMPLETE but
+should serve as a good starting point for anyone interested. The data
+includes most of the premier/first division leagues in the world. The
+teams attributed to leagues will mostly adhere to the last year's
+league tables.
+
+  When using the data some cleanup will be required. Some teams might
+show up twice in the team league. This will happen if the team was
+recently in multiple leagues/cups.
+
+ Data is in CSV format. Available Data/Schema:
+
+    Leagues @ Leagues.csv
+     -   Name (full name)
+     -   Code (5-6 alphanumeric abbreviation)
+    Teams @ Teams.csv
+     -   Name (full team name)
+     -   League (League Code) that team has recently been involved in
+    ...
+
+  Joe Kampschmidt has also put together an open source football
+(soccer) data API using C# backed by an SQLite database in another
+repo on GitHub titled OpenFootballApi [2].
+
+  Know any other open football projects? Let us know. Cheers.
+
+[1] github.com/jokecamp/FootballData
+[2] github.com/jokecamp/OpenFootballApi
+

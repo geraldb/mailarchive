@@ -1,0 +1,75 @@
+From 6387668800735543296@xxx Thu Feb 16 11:37:18 +0000 2017
+X-GM-THRID: 6387667141910331392
+X-Received: by 10.31.219.197 with SMTP id s188mr370970vkg.39.1487245038413;
+        Thu, 16 Feb 2017 03:37:18 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.36.175.67 with SMTP id l3ls444375iti.5.gmail; Thu, 16 Feb 2017
+ 03:37:17 -0800 (PST)
+X-Received: by 10.99.95.18 with SMTP id t18mr524773pgb.164.1487245037898;
+        Thu, 16 Feb 2017 03:37:17 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22d.google.com (mail-it0-x22d.google.com. [2607:f8b0:4001:c0b::22d])
+        by gmr-mx.google.com with ESMTPS id i189si1680324iti.0.2017.02.16.03.37.17
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 16 Feb 2017 03:37:17 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22d as permitted sender) client-ip=2607:f8b0:4001:c0b::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22d.google.com with SMTP id 203so96100990ith.0
+        for <opensport@googlegroups.com>; Thu, 16 Feb 2017 03:37:17 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=VR+fhO+Fz4U7KiqHwNHXKkQDcDHYYl5FAiaHPBDpayA=;
+        b=WQBMuRsFC3xYyH3QwcLYTlVdkWmtmxvUr1e2AaHSGILSV6vsOWDXohcXRSc2XFzytv
+         sBlrZ9bH0BTEapXJL5bv14RLVlpe6QWm0PDVReig6uL1XgGitQbgf3uiGC9Y9c9h0gv2
+         cx7KnuOdaRzNF2Ald/m0uKQZeFYl0z0vLb8z5xuKHjvQuYy2yxoazeJNKv1o3NcirNF2
+         OzHJpchoLFaw/2cJF3oI5CI1OZvihtvUPqIP58Rh1fol5U9DODa7NdlynYHZCXVlui+l
+         YNgg17zOEWF5MWI7H/v9WxEw4OvX5IorbaEOKGOvQ10nbh3jnfmcsxJYKyo3vcH3O9fC
+         aV0A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=VR+fhO+Fz4U7KiqHwNHXKkQDcDHYYl5FAiaHPBDpayA=;
+        b=tN/R+KZeTeQ75wITQHzSuZHUX4ZcIupSVPjqoxyys7hIy6hmlo8RYVruVPXQWtgwfm
+         N91qi/iAK8NRv8/L0gmXzkkqXliveTzontYDuK5TQmhKGtG3rDAmy7Xdq/wG1xn1z1RU
+         Eoutf9dHUq7RttT0QBili02yDDlxQZ5IE/PKywd8BQ1IVt3umiRg+6mUEhDxeRkyKjwH
+         JJ3KCfdplnTgNZu2wGYBfjKqE+UyRpb0dMwW5H0k+21djUf5w5zChWMkdJtQagb0fOVo
+         HMWT+YYbMQWisMT+eawLvjzyULv8x0VdHloznYgYX4Eq4+dJvUHPURh5H0zUMOt8Utm1
+         /16A==
+X-Gm-Message-State: AMke39mC2/GoYBdXctIaQ0XQoVuEITm0MG58RlscWNWIA0UpQIaZhyC9QbG+jCo0td9WgBuqLx87EM3pgxYATA==
+X-Received: by 10.107.171.135 with SMTP id u129mr1661917ioe.102.1487245037368;
+ Thu, 16 Feb 2017 03:37:17 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.34.209 with HTTP; Thu, 16 Feb 2017 03:37:16 -0800 (PST)
+In-Reply-To: <5ff6c1d2-64f2-489c-bb28-08b5223cd609@googlegroups.com>
+References: <5ff6c1d2-64f2-489c-bb28-08b5223cd609@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 16 Feb 2017 12:37:16 +0100
+Message-ID: <CAAxEZd9Vk=uWdYVGn3jOjdx-6vRfq_hn8k1ng0xtzUWgqQ1k0A@mail.gmail.com>
+Subject: Re: [opensport] Django ORM adapter available
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+    Thanks for your kind words. Welcome to football.db.
+
+    Thanks for sharing. It's up to you. Starting with a gist might be
+a first step.
+
+    You're welcome to add it to /docs [1] as an example on how to use
+the football.db with Django / Python
+
+    or if you want to create a repo - there's the sportlabs org [2] if
+you're interested I'll add you to the org.
+
+   Again thanks for sharing. Keep it up. Cheers.
+
+[1] https://github.com/openfootball/docs
+[2] https://github.com/sportlabs
+

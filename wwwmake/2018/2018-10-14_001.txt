@@ -1,0 +1,124 @@
+From 6612231388345139200@xxx Sun Oct 14 15:14:50 +0000 2018
+X-GM-THRID: 6610379816603484160
+X-Received: by 2002:a19:4f05:: with SMTP id d5-v6mr356525lfb.11.1539530090323;
+        Sun, 14 Oct 2018 08:14:50 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a2e:9204:: with SMTP id k4-v6ls910554ljg.31.gmail; Sun, 14
+ Oct 2018 08:14:49 -0700 (PDT)
+X-Google-Smtp-Source: ACcGV61NKf4cg5YR95+ils31x7EfIBgkyDO3EHblkuqyMEif7s/+WtRseq/FkgdIiCQgFTwcXSoL
+X-Received: by 2002:a2e:9597:: with SMTP id w23-v6mr367384ljh.25.1539530089288;
+        Sun, 14 Oct 2018 08:14:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1539530089; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FFo/biMlSkXpSWv4XK/R6ru3H2bwzZkckFB2chLLl8/+uz4mZzTjiYuBc0+wi8girT
+         1LL6/ZQNspvlq0nzRP69j1Vkg2h0Nuf1S/+D0gf1GqdapUrHbrhZZZp8ORzDucfCq4l/
+         f+eLeSqVNDdSjqcfqj+ZlewOsObYcp9ibplHWu48ulf+ODKKY/u0gTmWWENMLm7AGGkt
+         +K1NXsA/8uPLL3p06iIpssE1y00mbp04lYPa72vD3MKMV8XuorvgMv0i4o+tbFjpzolO
+         lYf3jWdDwSNhLWNeYMJfiRCwiO9e3zYmEqGd3E1ym9zTTING2Q0HLQvIpN0z0c9lR1OH
+         H/Kg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=Yt90BZ3FvNDteEfvQ70bv4zk8YagC2mbQun8N6TiD2U=;
+        b=dSuvf+Qi9dV39EE7bkAB6uRSEPoupmxDdWZvdHQ5MXOtLonjkFSrjc03dPcOovpwRi
+         Cm/9GfXykN8W3/ENNnnNyFHlch07u+kwZzhZJmrHXA2g5axVESqem2U2RG/pZi3gR7ni
+         jrsXVj5HtK5vbzrxV9x/6xfgRYSAGhM6cKW9SnzhpOmwsoVOTUk2s8LQdHE35Tc27TlC
+         AjOx/jDu2DbAc0xGhC9Wupd3TtPzIES7+008G8cP5qqBWqRZHgH/0qUxiWerGV+5z4l1
+         bv0e48z86dhd/TiI6cR03vliGsuxB7Hx/6WR6Jh9OXT1p7hqyTg/ZXCt1qq62UtVm9SQ
+         fPqg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ogqpys1+;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::129 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x129.google.com (mail-lf1-x129.google.com. [2a00:1450:4864:20::129])
+        by gmr-mx.google.com with ESMTPS id y66-v6si202520lje.0.2018.10.14.08.14.49
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 14 Oct 2018 08:14:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::129 as permitted sender) client-ip=2a00:1450:4864:20::129;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ogqpys1+;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::129 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x129.google.com with SMTP id o21-v6so12358525lfe.0
+        for <wwwmake@googlegroups.com>; Sun, 14 Oct 2018 08:14:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=Yt90BZ3FvNDteEfvQ70bv4zk8YagC2mbQun8N6TiD2U=;
+        b=ogqpys1+ZXn6hynWaE1Tm9wyl42LS7bk2FKiNTUv/C8IUumLCJQUWL2eCBifN16cpq
+         8BPijfI3zTRGQifIgEgzpkq4NKCWo2Hpg60IfRx5INBekVNRcoD1PMBwk7YE51/hJT7M
+         cSijX40YTGfWS9Th+TvqjYfBCDOq7dvA41xnk9clCs/y/Go3JW03I9FMl0hKwryMhoJR
+         Bigc/pL5orHtR7JmVZ1b8gXaDwCzjwl/Md/0D+KOgUUuk1PoH60DJ5VJrMTEobR+yCnZ
+         tIPlGRKrm/OI/S6LaeT56PBWHDHx3NdlD3p3AdYzv1QooaXa3c/i0Fh5YNX0o0uUVO13
+         v0TA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=Yt90BZ3FvNDteEfvQ70bv4zk8YagC2mbQun8N6TiD2U=;
+        b=CrYVSfDgJZAPnAWBtII8z6ZERc5MKlBQV8dLVOIESVQKo+QfIxEJod6qEXaG9tkEE2
+         dd5yXW6c/jib7GOJppPlbcHacXdQNXOqC2IrbJyO/bdubgXrZuB62qL4t8ZvBeGLgXqJ
+         HsZbCmQa978MISAOHCzIyHqCL8c2AlUU8k57q5M/MUyWL1/eS+VUJ1jDXKRo4aEle7nk
+         Hdg+VvWXXt38wuNANLLHVdtXiC6fiFAS1PbfVYilnmgCYAio5OtxJSCvag3MoGvYcdKN
+         Bec6k6aaVFKfVHTyLzjUUJJeTMMj5U7Xm7hOZMzGH7tHqoS2yY6zPS/XzXYGzF7203+n
+         GxWA==
+X-Gm-Message-State: ABuFfojIAEi+dMMVsAnegSGYjPl/j1z6KwGT4azPvcuU7krT5ySk8EFN
+	WgskhWFxbC7DRz+GLHl+F/tUeAqixPiqhcRkaDZuuKMy
+X-Received: by 2002:a19:18d:: with SMTP id 135-v6mr5351519lfb.96.1539530088740;
+ Sun, 14 Oct 2018 08:14:48 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAAxEZd_tcDtt7Q5twCjm2aEo1=yDmB8YJu9+gjcUt6__ARiM6g@mail.gmail.com>
+ <695a90e7-e72c-4ee7-a5cd-3a9413ffd900@googlegroups.com>
+In-Reply-To: <695a90e7-e72c-4ee7-a5cd-3a9413ffd900@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 14 Oct 2018 17:14:37 +0200
+Message-ID: <CAAxEZd-YLkouaw_T2o0AGfbJxtg=NUp8wOaLpf9KneyQ+03K9g@mail.gmail.com>
+Subject: Re: [wwwmake:446] Re: csvreader v1.0 - read tabular comma-separated
+ values (csv) the right way (incl. hash readers, converters, enumerables,
+ dialects, and more)
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+    Thanks for your kind words. Sorry for the confusion. It all
+started with csv 1.1, thus, the csv11 org.
+
+>  it is a gem, but has no gemspec?
+
+    All gems (100+) that help to maintain use rake tasks (with hoe) to
+"manage" the gemspec, releases, etc.  use:
+
+    $ rake debug_gem     # to generate auto-generate the gemspec
+
+    For the the "long" story, see the (online, free) booklet title
+"Hoe Developer's Guide - Build, Package and Publish Gems with Rake
+Tasks - Ready-to-Use Build Scripts (Book Edition)" [1]
+
+> csv11 an early aborted attempt?
+
+  Yes, the csv11 library / gem is an in-progress under-construction
+attempt for a "generic" csv version 1.1 parser - the worlddb, sportdb
+etc. already use variants that live inside the textutils library / gem
+[2]
+
+> Does one [csv11] underpin the other [csvreader]?
+
+   No, they are completly separate. The "newer" csvreader is now
+version 1.0 and "production-ready".
+  It reads csv in "v1.0" variants e.g. classic, excel, postgres,
+numeric and more.
+
+  Yes, it's built on purpose to add your own parser. I try to add the
+csv <3 json format next [3]
+   and eventually v1.1 too (but that is a long way off as the v1.1
+format / parser is not yet ready (see above) and there's only so much
+I can do.
+
+  Hope that answers your questions. All the best. Cheers. Prost.
+
+[1] http://yukimotopress.github.io/gem-tasks
+[2] https://github.com/textkit/textutils
+[3] https://github.com/csv11/csv-json
+

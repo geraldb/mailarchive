@@ -1,0 +1,67 @@
+From 84197507072@xxx Tue Jun 16 00:17:25 +0000 2015
+X-GM-THRID: 81624301568
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,6eea4d0b52978c33,start
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+X-Received: by 10.180.75.8 with SMTP id y8mr978964wiv.1.1362316195496;
+        Sun, 03 Mar 2013 05:09:55 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.108.212 with SMTP id hm20ls269238wib.16.gmail; Sun, 03 Mar
+ 2013 05:09:55 -0800 (PST)
+X-Received: by 10.180.94.41 with SMTP id cz9mr990560wib.1.1362316195212;
+        Sun, 03 Mar 2013 05:09:55 -0800 (PST)
+X-Received: by 10.180.94.41 with SMTP id cz9mr990559wib.1.1362316195203;
+        Sun, 03 Mar 2013 05:09:55 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-f51.google.com (mail-wg0-f51.google.com [74.125.82.51])
+        by gmr-mx.google.com with ESMTPS id y5si249020wiv.3.2013.03.03.05.09.55
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 03 Mar 2013 05:09:55 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 74.125.82.51 as permitted sender) client-ip=74.125.82.51;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 74.125.82.51 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-wg0-f51.google.com with SMTP id 8so3525322wgl.18
+        for <opensport@googlegroups.com>; Sun, 03 Mar 2013 05:09:55 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:x-received:date:message-id:subject:from:to
+         :content-type;
+        bh=uCq0u4AR/iuCNcG3T2Jfucv/CRKo5pDNNO0wTYj9uGE=;
+        b=C77e9BQktdObPJD0RibhrhxOO0NhmIGCU/stsxpFBzqlUqdH8lHx3njdTqxTv9uEhk
+         LCkbjjIVFw1XCo+bTrYnRicZauK/yVs3fx/IeNb/whxI8UFY84I+i24u9znDtYHVZSC9
+         WiHKap3HdtmFx+mH1cw9QE5s8Xc+cqUUjaXPyDYi129e2Tui6fUxNnH1T0NIvolumiED
+         N5f0eVOK5qa3BG26hmThYB5LuQSLVcUyKK+p61LBsnqZa8N6rPIvizfdbIn8GWyZ/QBu
+         fg//1g3WW+/FnAxZBhEZSIj7Hd4ZcsAQ9NChTO8cYRUzoLm6nLGGm40A+6UyF3IryxMi
+         cvGg==
+MIME-Version: 1.0
+X-Received: by 10.180.104.10 with SMTP id ga10mr6509479wib.23.1362316195111;
+ Sun, 03 Mar 2013 05:09:55 -0800 (PST)
+Received: by 10.216.152.161 with HTTP; Sun, 3 Mar 2013 05:09:54 -0800 (PST)
+Date: Sun, 3 Mar 2013 14:09:54 +0100
+Message-ID: <CAAxEZd-XBx+guzbNh_HsfnieB5bh9WQry57zRh8NArvdziR3ZQ@mail.gmail.com>
+Subject: sport.db JSON(P) HTTP API Sample w/ Sinatra - Service moved to sportdbdemo.herokuapp.com/api
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  FYI: I have added the JSON/JSONP API service for the open sports
+database (that is, sport.db) to the demo site itself [1]. As usual,
+for example /event/en.2012_13/round/2 [1] gets you the football
+fixtures for the 2nd round of the English Premier League (season
+2012/2013).
+
+  Cheers.
+
+PS: The sportdb service is also available as a Ruby gem [3].
+
+[1] http://sportdbdemo.herokuapp.com/api
+[2] http://sportdbdemo.herokuapp.com/api/v1/event/en.2012_13/round/2
+[3] https://rubygems.org/gems/sportdb-service
+

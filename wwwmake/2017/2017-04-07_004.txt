@@ -1,0 +1,84 @@
+From 6406172693861761024@xxx Fri Apr 07 08:21:52 +0000 2017
+X-GM-THRID: 6406170137222709248
+X-Received: by 10.157.35.104 with SMTP id k37mr1280316otd.87.1491553311937;
+        Fri, 07 Apr 2017 01:21:51 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.157.33.91 with SMTP id l27ls2356982otd.0.gmail; Fri, 07 Apr
+ 2017 01:21:51 -0700 (PDT)
+X-Received: by 10.13.193.65 with SMTP id c62mr15671505ywd.94.1491553311687;
+        Fri, 07 Apr 2017 01:21:51 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22d.google.com (mail-it0-x22d.google.com. [2607:f8b0:4001:c0b::22d])
+        by gmr-mx.google.com with ESMTPS id n127si312383ita.3.2017.04.07.01.21.51
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 07 Apr 2017 01:21:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22d as permitted sender) client-ip=2607:f8b0:4001:c0b::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22d.google.com with SMTP id y18so115291868itc.0
+        for <wwwmake@googlegroups.com>; Fri, 07 Apr 2017 01:21:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=0e2X6BeNF710g/L75L79y9lbk0rMiUrik0Xy4GXvwWU=;
+        b=Mza3aDrRYVbtG0qXgWOisSGnkLzWCNjEZ9hHsv28l9gYuZL7EquNXwKpxh/hVgttLg
+         UaHPoh9N+xGKg7M1lfr6XypvwNEIY89gMI8vTbTLGjYT2ZjYVmT5h6p/1/pAFmfAhUq5
+         uX9sR0oiWr7CDCOEnhtkSTyRWJNnttUw52AmkkN54Ev3IdzEC+ppxeWTRgQgLJNtChoc
+         066eQERd8M7Mo1UkqQXMJbM5MADFAJTS2G0rqxhJIXzIyfvVDJSPwDQJzBdzyNFX2SDD
+         Txh8VGrDam/GQJMLeuFgIspWOJ5d5y1dpzJcNhNS/5KpYsCaa7w44ys36aHE2cggXPBf
+         9Bwg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=0e2X6BeNF710g/L75L79y9lbk0rMiUrik0Xy4GXvwWU=;
+        b=A3a9kKOXs3S/ZtzeP0Gq5nBFvG5GomGDtucjNo4Vk0WlRZLwMQAy4/M0h57Y62La3V
+         7fFVePJywb5IMqWVvkx8seArBYzRfaKRyQ6+LWcjT+eDvSOi2bNR+C7T3yOh+K9IEeaZ
+         IT7VSQg1bzog3bKGUrZyUZQLT1p74ahCgA0RUXtD2l326JIP3rMmzFwv3bGRQQc+Op7Z
+         LCmqJXMicu+CEsMjr39T3/J1JtX76kIuusDUEEffY+nlMf+HJRWPE0Vmj/ZB4VRBXrqw
+         8ndscajPPp5KpuJfJPkzG1PoqVZHx7agmHuKehcMb5vqWZsEJVdVKv9xW2rBHPMbN4td
+         nmtA==
+X-Gm-Message-State: AFeK/H0Q+SRIPT3uT0pQSkgGCGiPY9DDmjkeeIelhmwj/2jL0qQx7PoQ
+	SKSvocfFoDD7g7UNGd0U8JHqD0MmzYUiayI=
+X-Received: by 10.36.66.85 with SMTP id i82mr6321456itb.7.1491553311330; Fri,
+ 07 Apr 2017 01:21:51 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.170.209 with HTTP; Fri, 7 Apr 2017 01:21:50 -0700 (PDT)
+In-Reply-To: <13f542c8-23e0-4fc8-9d35-30750be86bfc@googlegroups.com>
+References: <13f542c8-23e0-4fc8-9d35-30750be86bfc@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 7 Apr 2017 10:21:50 +0200
+Message-ID: <CAAxEZd-_fu=FzC7FP3vWGB7YpWikxu7AmXm0Az=Vo+TgnYUj=Q@mail.gmail.com>
+Subject: Re: [wwwmake:415] Problems with Slide Show (S9) ignoring headers
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for trying slide show (S9).
+
+    Hard to tell. I'd say the safest (easiest) way is to install the
+theme first with git e.g.:
+
+$ cd ~/.slideshow/templates
+$ git clone https://github.com/slideshow-templates/slideshow-reveal.js.git
+
+    Please use git clone (with the switch over from the old reveal.js
+theme) it is "safer". Now try:
+
+$ slideshow list
+
+And it should list the reveal.js theme and than rerun (retry):
+
+$ slideshow build -t reveal.js index.md
+
+ Let us know how it goes. Cheers.
+
+PS:
+
+If it still doesn't work try the verbose logging for (even) more debug info e.g.
+
+$ slideshow --verbose build -t reveal.js index.md
+

@@ -1,0 +1,50 @@
+From 582385401856@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 581133402112
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,ef697d8f087e1781,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.150.38.5 with SMTP id l5ls808670ybl.1.p; Sun, 28 Feb 2010 
+	02:36:35 -0800 (PST)
+Received: by 10.150.246.7 with SMTP id t7mr3024268ybh.19.1267353395532;
+        Sun, 28 Feb 2010 02:36:35 -0800 (PST)
+Received: by 10.100.72.10 with SMTP id u10mr4757682ana.15.1266896490729;
+        Mon, 22 Feb 2010 19:41:30 -0800 (PST)
+Received: by 10.100.72.10 with SMTP id u10mr4757681ana.15.1266896490705;
+        Mon, 22 Feb 2010 19:41:30 -0800 (PST)
+Return-Path: <mkelly32@gmail.com>
+Received: from mail-yw0-f142.google.com (mail-yw0-f142.google.com [209.85.211.142])
+        by gmr-mx.google.com with ESMTP id 12si197921gxk.10.2010.02.22.19.41.30;
+        Mon, 22 Feb 2010 19:41:30 -0800 (PST)
+Received-SPF: pass (google.com: domain of mkelly32@gmail.com designates 209.85.211.142 as permitted sender) client-ip=209.85.211.142;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of mkelly32@gmail.com designates 209.85.211.142 as permitted sender) smtp.mail=mkelly32@gmail.com
+Received: by mail-yw0-f142.google.com with SMTP id 6so4710921ywh.17
+        for <webslideshow@googlegroups.com>; Mon, 22 Feb 2010 19:41:30 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.101.26.33 with SMTP id d33mr153408anj.14.1266896487162; Mon, 
+	22 Feb 2010 19:41:27 -0800 (PST)
+Date: Mon, 22 Feb 2010 19:41:27 -0800 (PST)
+X-IP: 96.236.149.110
+User-Agent: G2/1.0
+X-Google-Token: EOecjdwEdZmEa_4fmiI0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2) 
+	Gecko/20100130 Firefox/3.6,gzip(gfe),gzip(gfe)
+Message-ID: <dd561b67-e78d-470c-b253-ae82b7b9f602@a1g2000vbl.googlegroups.com>
+Subject: [slideshow] Markup in (sub)footer lines
+From: Mike Kelly <mkelly32@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+I think it might be nice to support markup in the footer and subfooter
+lines. For example, to be able to do something like:
+
+  footer: [My Name](http://www.example.com)
+  subfooter: <%= Time.now %>
+
+How might I go about tweaking my header.html.erb template to do that
+for me? Or, would I have to tweak the main s9 code?
+
+--
+Mike Kelly
+

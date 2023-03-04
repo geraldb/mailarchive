@@ -1,0 +1,88 @@
+From 6909153211609776128@xxx Tue Dec 22 18:43:09 +0000 2020
+X-GM-THRID: 6909151556650663936
+X-Received: by 2002:adf:e84f:: with SMTP id d15mr25963154wrn.245.1608662589399;
+        Tue, 22 Dec 2020 10:43:09 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:adf:eb0e:: with SMTP id s14ls5302684wrn.2.gmail; Tue, 22 Dec
+ 2020 10:43:08 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJwJHAlyTAUN9zcjO3Jq4A0wWwuM/JPqJmResjo8Kj8CCppQoVGG/y1guw2Ri5BJU1FE1nIt
+X-Received: by 2002:a05:6000:1082:: with SMTP id y2mr25076810wrw.233.1608662588088;
+        Tue, 22 Dec 2020 10:43:08 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1608662588; cv=none;
+        d=google.com; s=arc-20160816;
+        b=RWHxJnXXWYZA8gbLckv19an8Oz1yqXrgQo7REh/1teqsGcIyff325XVXMcmqBGwHDf
+         cTtolvMne50WIdHnsF0ycCPyWUlSLv1VgSC+NHIEI91PDMVSlRy55vQg9SuxYSXcEFix
+         iRCtU6vwVQmiBHjB5YrrSNDy1Bn2FNxwmwl1Ds/pE688t/4AUKwi/5c/n1duatnVeJMt
+         XVy4uR7PXPeA+5/TFBylAAfAPGLx6QLspGfHq+ZxZYxFunQ0zrzlK0b2gjPo3oDeIyeY
+         xU3MvKjsnVeKz6Uej9aOT1mLfaOAAquzNumulLhnz7s21JTiQg1CfGwItmva1G8WPJX8
+         oSXA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=oMr0uG5TgHkIUf92uEvypD/cgaCyikGi06zThFPioxM=;
+        b=xKXXFe7SpKCynR/QKaLWmSHe3siLdGhUUWKu4SPRa7vyuOdd3qBmgwz6GzOOY4d23m
+         GwXyKiRXQ0C/L39Ka9fuWvC+2PGDUHxiHKchaKQFKkizOLI3p42Jn78feRu228WqY9tG
+         mqln+c7055VPP7xMEKDY+oL88706/QDbhLy0qkQmdL+k4+2X51A01xK75HPw45kX6srU
+         hpVKB/qk+nF4qPtffPk5owHhEB7iWb6myOwe+wT6rlQ3ZgLbtOlJFPEMPCkg4EURs7So
+         3gJ8ibzKESDQ7plSYrxstyvrnpTBksyJWnWkmzB3e5fIEyKfCSWU+2Jw/C6RVnOvUBDU
+         y+jw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=uYNC8fnU;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ej1-x62b.google.com (mail-ej1-x62b.google.com. [2a00:1450:4864:20::62b])
+        by gmr-mx.google.com with ESMTPS id d2si75046wrc.2.2020.12.22.10.43.08
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 22 Dec 2020 10:43:08 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62b as permitted sender) client-ip=2a00:1450:4864:20::62b;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=uYNC8fnU;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ej1-x62b.google.com with SMTP id x16so19556019ejj.7
+        for <opensport@googlegroups.com>; Tue, 22 Dec 2020 10:43:08 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=oMr0uG5TgHkIUf92uEvypD/cgaCyikGi06zThFPioxM=;
+        b=uYNC8fnUAtu0aeTuTHkklelLZcKxXMsvjRy8lqmUSrKpCmnNbBnwUojpIMzBg4gnXn
+         jcHLvszJzF/hXvKMvehdnsZKnY/uXYEnFctNzpjti0m9lDN8boMnpc5jHVbwz/pwwcpK
+         tkf+yMMNn2ipAvWQmBikKS18FwdlgG0u4cJqcsPXvfY4MGXyScJEuIF6K1Nna2gQdQIz
+         7Cz1hzNbwaci1YuG/Hn2EZF0J5Tx02iy/cNVOgoODz8uUoHDb40KL6GOXSWxIRLGMFa8
+         6u1hEVBZ/E7WNivlKomsng8+fKOF7PFJD/SVCwyrHJGcYF569iLj5/CpHF8VhSQFLobG
+         017Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=oMr0uG5TgHkIUf92uEvypD/cgaCyikGi06zThFPioxM=;
+        b=fdhnHHXj/rPcc7kQWMtti9Bq8XqoST1FB+d17QgzHubDclHBBXNwHPdsBqpOENOawR
+         JZuoF9PFLq/yRIgrswgp0aI3RI14//8uMrn5ld6+uHZrDSVdV5AGh9UPC4pymLaB3yJT
+         Ou+opEtq/PAgqWCYg8JrArUEBKbrydTq/pUh7fjyxpdVISxTELqgY4RK427IgFGt7JkK
+         20YMewnZFxECfCWrktB1ND8SOJ+HG9wQnqmPCM0ifJSol0XJk+yueg+5Zt7dOwop5XiV
+         xhylYBQQjPi1Ydtg6LbqgpTL1EqyC9N+TBLX2DBeju9lccIXl6xNRTANFCulnnNwVMAG
+         queA==
+X-Gm-Message-State: AOAM531/m8oD/Fx/F49DHkoE+iPlxB/R/cipH05dYwNRkwEqJcg+0ki5
+	su7aO9L5LcIij7W+G1m+TO5ojY7xOO7HqOnU8Kro2rj8gEyD9w==
+X-Received: by 2002:a17:906:fa8b:: with SMTP id lt11mr21120540ejb.94.1608662587547;
+ Tue, 22 Dec 2020 10:43:07 -0800 (PST)
+MIME-Version: 1.0
+References: <85a67eec-5aa6-4427-8697-5ff2ac4485c7n@googlegroups.com>
+In-Reply-To: <85a67eec-5aa6-4427-8697-5ff2ac4485c7n@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 22 Dec 2020 19:42:55 +0100
+Message-ID: <CAAxEZd-6=Heb=0GdsxHTKytSdQ+TZbPwKw_evF+e1H-jLqeQCQ@mail.gmail.com>
+Subject: Re: [opensport] player statistics available?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+    Sorry I can only point you to Joe Kampschmidt's Guide to
+Football/Soccer data and APIs [1].
+
+   Let us know if you find anything. Cheers. Prost.
+
+[1] https://www.jokecamp.com/blog/guide-to-football-and-soccer-data-and-apis/
+

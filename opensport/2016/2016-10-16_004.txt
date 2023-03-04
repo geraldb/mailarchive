@@ -1,0 +1,96 @@
+From 6342115917296566272@xxx Sun Oct 16 17:28:51 +0000 2016
+X-GM-THRID: 6342113564983033856
+X-Received: by 10.157.35.36 with SMTP id j33mr1957245otb.81.1476638931016;
+        Sun, 16 Oct 2016 10:28:51 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.36.85 with SMTP id p79ls10921417ota.25.gmail; Sun, 16 Oct
+ 2016 10:28:50 -0700 (PDT)
+X-Received: by 10.129.178.129 with SMTP id q123mr5499239ywh.103.1476638930589;
+        Sun, 16 Oct 2016 10:28:50 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22e.google.com (mail-it0-x22e.google.com. [2607:f8b0:4001:c0b::22e])
+        by gmr-mx.google.com with ESMTPS id n132si396204ith.1.2016.10.16.10.28.50
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 16 Oct 2016 10:28:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22e as permitted sender) client-ip=2607:f8b0:4001:c0b::22e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22e.google.com with SMTP id 4so32087066itv.0
+        for <opensport@googlegroups.com>; Sun, 16 Oct 2016 10:28:50 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=Z/1WJ8OVAqThblqRLHob0hvr/y/dANKEGUIw7tGLhFw=;
+        b=ejCa8Wt9lULTvQVlhqF/F7GwIqhqkM1iHx+EeLyvGVixKMaWxrM1lPDSN6xfjXZgRO
+         TYSWD/aYvI1I/6AcCZ2+a57MXMItcSAr1a9BlcGbe/E9RKXorTN/JY7LpQiqtK/DuEza
+         Cdul2g8Wto4D8Rg1e9sT53drl2gdZSX/GORLkvJnQmY45FbWBOijU/y1KJFQUAARyucw
+         iTvwaYNa61+mK0BqUq6Pb9KTat+Hrw2sNG5DcZb7sfbFOSCfUygDswgRFQtuI5I1hSig
+         2C8keCtnfFzgL4GZNwS5ZmkYTr+9vUbVsvWMP2HAP4gX3A/Vevzzx3HEnTNN17fc+whT
+         J38Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=Z/1WJ8OVAqThblqRLHob0hvr/y/dANKEGUIw7tGLhFw=;
+        b=VDvc7ocY8lwU1wMXQc9/TMMH2U8CQA/CP+T3MR4VStkiYTv3vwseWYahnIUK0pP6/r
+         OM6zSFOmJal0PdJi/36l6mSEPxLZ67E4Tgq2xVOUKnt0nm1KoQp/AuOwnMWcuvxHw+9O
+         FX8lWcJrQMtmH9LUhMDyerghsPXSr7Xbpg8tOC/i6c9LfS8vU7bZBNUMC712Wd7uPCSl
+         1Va3pbzGbqTvidna0fvacU0zBE5i/woLEIJ4zxfmnqEWL6Cg1uutFs7JTJEin3CQLtdd
+         edA1Y9O2r9svNNzH4YLHr2WBYtwmlXXMYnhgtYWiUmvqTwm9H+EjUJusd8ynqnHz3nIK
+         jZag==
+X-Gm-Message-State: AA6/9Rk58psQaxXn5BfNtkmy8ODZMjW/UvODOynS1M4D0qr1z5NULc3MfV4N5iatkXsBkkY/l7hSP01fswpqcA==
+X-Received: by 10.36.135.201 with SMTP id f192mr5944378ite.13.1476638930233;
+ Sun, 16 Oct 2016 10:28:50 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.141.194 with HTTP; Sun, 16 Oct 2016 10:28:49 -0700 (PDT)
+In-Reply-To: <f6259f69-0d0f-4ca1-9ac8-af45aeca4c1b@googlegroups.com>
+References: <f6259f69-0d0f-4ca1-9ac8-af45aeca4c1b@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 16 Oct 2016 19:28:49 +0200
+Message-ID: <CAAxEZd-NeVHTuSBzpbgRMbyx=O_ATWjShhuEQV+LgSLKARdA3A@mail.gmail.com>
+Subject: Re: [opensport] How to use the .txt files in the world-cup repo?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Ben,
+
+   Welcome to football.db. Thanks for your kind words.
+
+   Sorry for the missing and confusing (sometimes outdated) docu -
+there's onyl so much I can do. Anyways,
+
+    To install the command line tool [1] - all the machinery is in
+Ruby. Packages in Ruby are called gem (RubyGems) it's a wordplay on
+Ruby.
+
+    Anyways, once you have ruby installed (it's shipping with Appe
+MacOS, by the way built-in).
+
+   You can install the machinery with:
+
+$ gem install sportdb
+
+   Once installed try:
+
+$ sportdb help
+
+   To see if you now have the machinery in place.
+
+To setup and parse the world cup datesets use a datafile [2] (it's
+built into the sportdb command line tool), thus, try:
+
+$ sportdb new worldcup
+
+   That should download the datasets (in a zip), setup an SQLite
+sport.db database and parse all datasets (from the local zip).
+
+   That's it.
+
+   Let us know who it goes or if that makes any sense. Cheers.
+
+[1] https://rubygems.org/gems/sportdb
+[2] https://github.com/openfootball/datafile/blob/master/worldcup.rb
+

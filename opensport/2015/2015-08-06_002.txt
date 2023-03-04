@@ -1,0 +1,72 @@
+From 6179892174310604800@xxx Thu Aug 06 13:37:53 +0000 2015
+X-GM-THRID: 6179784849499357184
+X-Received: by 10.107.9.231 with SMTP id 100mr1429090ioj.12.1438868272835;
+        Thu, 06 Aug 2015 06:37:52 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.91.139 with SMTP id z11ls1249642qgd.17.gmail; Thu, 06 Aug
+ 2015 06:37:52 -0700 (PDT)
+X-Received: by 10.13.207.1 with SMTP id r1mr1486019ywd.46.1438868272242;
+        Thu, 06 Aug 2015 06:37:52 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x232.google.com (mail-ig0-x232.google.com. [2607:f8b0:4001:c05::232])
+        by gmr-mx.google.com with ESMTPS id x1si194553igb.2.2015.08.06.06.37.52
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 06 Aug 2015 06:37:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::232 as permitted sender) client-ip=2607:f8b0:4001:c05::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x232.google.com with SMTP id f3so11332762igg.1
+        for <opensport@googlegroups.com>; Thu, 06 Aug 2015 06:37:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=eNcHnWTC8cfMZELDp2+wjWoV4PmfGHyTKNu9a6xj1EQ=;
+        b=NatbcrJMC9kC8sBukHz8IUdnRQ7R8C/m0SvLoR7/UPKlbG3OYS/qvd6Qz9YFmLX0Vd
+         z8J9Z3Hivne6D6RGwRq1pOkM8V4mdwGy7mNF+vFU2m5qISYlD4BuBFFIqbrTQJNhPcmx
+         HZo3CYMwqtj6wbALXFVQwLbVKab8fT56B5MWMSas49enakiLDKx110n1eyUOHysHbdTT
+         WAThrOacTuPi3ZyjSFzcVWARLqKKtk+UZzvnlb+IJmA2+hJ+22WZzDrTm+4aUZpk2/Uu
+         aZInwpyqzVkwsphHPdcQKgR9YPqaoDEEKF1+MUMgl9g90zQLYtg0GQI85y5LMLTSPmBd
+         He8A==
+MIME-Version: 1.0
+X-Received: by 10.50.30.10 with SMTP id o10mr2370428igh.86.1438868272082; Thu,
+ 06 Aug 2015 06:37:52 -0700 (PDT)
+Received: by 10.107.55.8 with HTTP; Thu, 6 Aug 2015 06:37:52 -0700 (PDT)
+In-Reply-To: <a0ff3bc8-c564-499e-b49c-10d0c4253fae@googlegroups.com>
+References: <a0ff3bc8-c564-499e-b49c-10d0c4253fae@googlegroups.com>
+Date: Thu, 6 Aug 2015 15:37:52 +0200
+Message-ID: <CAAxEZd_xB2y1pdngi9RLgcV025iZMK45zFr9F4Nsh0vyAAmFDw@mail.gmail.com>
+Subject: Re: [opensport] footbal.db - Premier League 2015/16 dataset
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  Thanks for the reminder. I've added the Premier League 2015/16 season [1] e.g.
+
+Matchday 1
+[Sa Aug/8]
+  Manchester United - Tottenham Hotspur
+  AFC Bournemouth - Aston Villa
+  Everton FC - Watford FC
+  Leicester City - Sunderland AFC
+  Norwich City - Crystal Palace
+  Chelsea FC - Swansea City
+[So Aug/9]
+  Arsenal FC - West Ham United
+  Newcastle United - Southampton FC
+  Stoke City - Liverpool FC
+[Mo Aug/10]
+  West Bromwich Albion - Manchester City
+
+
+    Note: For the auto-import (into SQL dbs) I will try to get the
+setup files updated later this week If anyone runs into any trouble,
+let us know. Cheers.
+
+[1] github.com/openfootball/eng-england/tree/master/2015-16
+

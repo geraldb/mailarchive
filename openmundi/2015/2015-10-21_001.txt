@@ -1,0 +1,59 @@
+From 6208148588149604352@xxx Wed Oct 21 17:07:11 +0000 2015
+X-GM-THRID: 6208148589070254080
+X-Received: by 10.129.155.83 with SMTP id s80mr8979625ywg.55.1445447231423;
+        Wed, 21 Oct 2015 10:07:11 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.182.85.130 with SMTP id h2ls462755obz.65.gmail; Wed, 21 Oct
+ 2015 10:07:11 -0700 (PDT)
+X-Received: by 10.182.236.100 with SMTP id ut4mr2076532obc.36.1445447231227;
+        Wed, 21 Oct 2015 10:07:11 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22a.google.com (mail-io0-x22a.google.com. [2607:f8b0:4001:c06::22a])
+        by gmr-mx.google.com with ESMTPS id mh4si507004igb.0.2015.10.21.10.07.11
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 21 Oct 2015 10:07:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) client-ip=2607:f8b0:4001:c06::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x22a.google.com with SMTP id z202so64137542iof.2
+        for <openmundi@googlegroups.com>; Wed, 21 Oct 2015 10:07:11 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=oh+whwF1VlPslYfCll//YDQ4/0eYPCB8B3PJ+Pg18bU=;
+        b=dYpVgGV+iefGp+D9JcRjtBD4rdNwjp93WqhuEUpNkYSjljKVUJzjG2JvqQ3K28zi4+
+         NkZziksJiz7oc38eBELp9/aUxm0SEMvvw9TvUSMzg3NjQbVLj7pgPDLimLdxDHezueoc
+         Wlqj03i4UCn3N9CBF1/pJ4bLgak1xFh3HchHz4iSFphFJndi7KZ9WungdhSBtG4ZvTvx
+         T0W7c80As7iGiuvvvhhFkvPCQPjanS5YT24AGzPI46HgyPpuOp28E8Aawcu80tZ/gmlV
+         2c0M5CzBzsj2xh/k9yjCj2wuLjHlJ21lvjZoWAgpV9/eFIV0lfMh+s4a+qJyLHStptye
+         k/RQ==
+MIME-Version: 1.0
+X-Received: by 10.107.130.220 with SMTP id m89mr11595522ioi.35.1445447231090;
+ Wed, 21 Oct 2015 10:07:11 -0700 (PDT)
+Received: by 10.107.138.29 with HTTP; Wed, 21 Oct 2015 10:07:11 -0700 (PDT)
+Date: Wed, 21 Oct 2015 19:07:11 +0200
+Message-ID: <CAAxEZd_yN=E7K2oXZHm4L6f2soyz8eODmG-7tVSL1AoKO6Z7DQ@mail.gmail.com>
+Subject: World Factbook Changes - Countries Added, Dropped, Renamed - World
+ History - New history.md File
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've added a new page history.md [1] to the world factbook to keep
+track of changes e.g. countries added, dropped, renamed, etc.
+
+   The main source is the official What's New [2] page and the
+unofficial Wikipedia page Changes in The World Factbook [3].
+
+   If anything is missing, let us know. Cheers.
+
+[1] github.com/factbook/factbook.github.io/blob/master/history.md
+[2] www.cia.gov/library/publications/the-world-factbook/docs/whatsnew.html
+[3] en.wikipedia.org/wiki/List_of_entities_and_changes_in_The_World_Factbook#Changes_in_The_World_Factbook
+

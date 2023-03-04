@@ -1,0 +1,117 @@
+From 6815923432811659264@xxx Wed Apr 15 13:04:00 +0000 2020
+X-GM-THRID: 6815540562521751552
+X-Received: by 2002:a7b:c5cd:: with SMTP id n13mr4950062wmk.125.1586955839193;
+        Wed, 15 Apr 2020 06:03:59 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:adf:f5cc:: with SMTP id k12ls5441683wrp.6.gmail; Wed, 15 Apr
+ 2020 06:03:58 -0700 (PDT)
+X-Google-Smtp-Source: APiQypKE5opY5qAmucdspV/RcbLewPV7t9R9YbaBBYkdYcgcBD0bOKiWrCbnBCVugfMdTWu540d4
+X-Received: by 2002:adf:bbca:: with SMTP id z10mr26446327wrg.288.1586955838029;
+        Wed, 15 Apr 2020 06:03:58 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1586955838; cv=none;
+        d=google.com; s=arc-20160816;
+        b=V8C8lop3mK6zjEJInI1dP9zmmsQt7FWCU+WMa7sDw4+leuQneLCW7fkEd/ZlJ64Ded
+         Vy79eqMiS+NLO5dcdHAUAzasVN0nF9dLY3CcjTbEZgIoynRC3GXhmkQQ0Pave3rZvfaJ
+         gfl9c9bEu9P+OQ8MnYzUbrrFYtoCVZCyEPaCtQWn0TW0KWVtosLQniEpYiQDosExrGhl
+         bQeCPB2VbP/pXZ8EJmb0tNec/NszjWC0QQrU/BYYspf3EVPlOuLardB5kMaxvz/YbY8q
+         Nxuq+l6sn9Un87MR6VtW/zDxIyYdkxV4suAErfksDaDgxKFNz6YgyyRsqH4xfVH9fmQY
+         od4w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=lk5R9C/vKy0mqMoNRTc2Z9SIhKRoALAulhhzVfW42EA=;
+        b=qAxkXyhu6VERax3SSvQvwe8bLO49iHVz2m/ZNLtQbNx9Oo6coWTSXJ11O+thvixX2f
+         821YMkGM3LpN1uGqClOF9V1NuOJ+n1QYcaHZd5M9jsuW0uVz0rJKpeJDG//LqLicHne8
+         Yw522iLcpDSE2leWqwjM2999A0yJgEWaROYvxITxOUPbHT3V57sgA0LCznb4iGQcALgu
+         k22W0BpVk/BwU+bF/CTMzZDEJMXIfdVHVO4E6nmjmQTno7/T3ZUMPzZnlP1kGJZHRQuE
+         xm9FJUGMhtZGibyDAyH6k2N05O7OMs/TQYFtXPxq47Y5nlGRVTz6xIWw4oCTNuX8VAgR
+         Q+KA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=sjJpJybi;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x236.google.com (mail-lj1-x236.google.com. [2a00:1450:4864:20::236])
+        by gmr-mx.google.com with ESMTPS id u23si1155371wmn.0.2020.04.15.06.03.58
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 15 Apr 2020 06:03:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::236 as permitted sender) client-ip=2a00:1450:4864:20::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=sjJpJybi;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x236.google.com with SMTP id z26so3519596ljz.11
+        for <wwwmake@googlegroups.com>; Wed, 15 Apr 2020 06:03:57 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=lk5R9C/vKy0mqMoNRTc2Z9SIhKRoALAulhhzVfW42EA=;
+        b=sjJpJybiCTpymj70ZkDN1IqCKxoc6+UU/TQMRcrNqT2pQ0sLUW8GJi80jXiGL+V5rO
+         F8cX9yhRRhKFTu765kbcOiJynrvuLDvgP19vAJGoOakCLVCT+K3j9gBr02UkFHzDpy9z
+         aYaYn/ULfgpI7xYV0hWm3HG1thbQ94ENLwSI8N7SlV7qmbuG3IOGpYr8I39bWKgzEzdk
+         sbfNFEg7aPrNkkXDs8jJh9rGXzdEPgvRuhnZ5bhxR4ciDaAnWrOwNlEHVz4rCwRqHhBm
+         ap9spPEdI9wLeEK7OYelTPwfpBDgj/6BM8E1U3kgPYhNRjju0kEuuQmVDa7q097PKBk+
+         sDAA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=lk5R9C/vKy0mqMoNRTc2Z9SIhKRoALAulhhzVfW42EA=;
+        b=hNgyRdpOuZjdD+QJE35wD3e//3eaElGZf8RGoUFP3SEjLTVDSrCd962hbrzbdb6KzJ
+         h2UkkSivirwjUUH30TuTYNG+G1hQV42cJJrZWEyLkM9FCm21aWruSH71SKaM+JnY4y3Z
+         QFz0lmsr4bzQ7MUeUMY5W1fWhHkf1RruVc8roFxC+CyIg0XgrAGQPL7F6WqIZ8JK4Wde
+         fAbVsmkq03gJ2sXBL4jZMpaJNcejXYUgF/CEWsgWMtLaJIjE70HgQ5eEgttjyQKgvYN9
+         txRPA9g7VBzwfDFl7epcn933mithqJ9wbBObbpcCcyKaaEn12z6jXQltixhJmXgenEO/
+         LKfg==
+X-Gm-Message-State: AGi0PubezQ09f7OkGvs+XCGjRnSM44B+gTSkg37WMdIL89+2I9Eecnze
+	Qgr/vAgMoCL+5z8C9la49PumrUhlO6LgtW22PHaHJ+WF
+X-Received: by 2002:a2e:8019:: with SMTP id j25mr3098697ljg.207.1586955837419;
+ Wed, 15 Apr 2020 06:03:57 -0700 (PDT)
+MIME-Version: 1.0
+References: <e0988d6e-1f34-45e6-b256-231defffe529@googlegroups.com>
+ <CAAxEZd_7tJUKPMM6B5-Chb9woDzwGXy1xTAbcTiqvbuxcFMNZQ@mail.gmail.com>
+ <8f2ad5e3-b886-4ac8-bb60-eaab76e3c123@googlegroups.com> <1b3ff423-24e4-427b-9b72-c1fed85b5ae3@googlegroups.com>
+In-Reply-To: <1b3ff423-24e4-427b-9b72-c1fed85b5ae3@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 15 Apr 2020 15:03:46 +0200
+Message-ID: <CAAxEZd84Z-Uf8vRHeVy2wCsLB_5c9m1wyYEt5Vdgxe3eNXVaRg@mail.gmail.com>
+Subject: Re: [wwwmake:481] Are there any videos showing how to setup a new
+ planet rss site?
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+    FYI: You don't need a rails app for the planet.  The easiest setup
+is a static website setup using the pluto command line tool - that is
+- you delete everything except the missing (required) planet.ini
+configuration.
+
+    I would start with this simple setup in step 1   and than once
+that is working you can always add more or go "dynamic" with a web
+app.
+
+   Anyways, the error:
+
+*** error: No such file or directory @ rb_sysopen - planet.ini
+
+    That's just saying that the required planet.ini (that is, your
+feed list is missing).
+    Add a new planet.ini file and add your feeds and than retry. Example:
+
+  title = Planet Ruby
+
+[rubylang]
+  title = Ruby Lang News
+  link  = http://www.ruby-lang.org/en/news
+  feed  = http://www.ruby-lang.org/en/feeds/news.rss
+
+[rubyonrails]
+  title = Ruby on Rails News
+  link  = http://weblog.rubyonrails.org
+  feed  = http://weblog.rubyonrails.org/feed/atom.xml
+
+
+   Cheers. Prost. Good luck.
+

@@ -1,0 +1,82 @@
+From 298461429760@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 289693237248
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,4999096ab1ea8d15
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.188.136 with SMTP id ga8mr5313994lbc.8.1410672985992;
+        Sat, 13 Sep 2014 22:36:25 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.180.206.18 with SMTP id lk18ls284417wic.41.canary; Sat, 13 Sep
+ 2014 22:36:25 -0700 (PDT)
+X-Received: by 10.180.221.169 with SMTP id qf9mr3613753wic.5.1410672985618;
+        Sat, 13 Sep 2014 22:36:25 -0700 (PDT)
+Return-Path: <eckhard.licher@googlemail.com>
+Received: from mail-la0-x22a.google.com (mail-la0-x22a.google.com [2a00:1450:4010:c03::22a])
+        by gmr-mx.google.com with ESMTPS id b6si1486204lbd.1.2014.09.13.22.36.25
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 13 Sep 2014 22:36:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of eckhard.licher@googlemail.com designates 2a00:1450:4010:c03::22a as permitted sender) client-ip=2a00:1450:4010:c03::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of eckhard.licher@googlemail.com designates 2a00:1450:4010:c03::22a as permitted sender) smtp.mail=eckhard.licher@googlemail.com;
+       dkim=pass header.i=@googlemail.com
+Received: by mail-la0-f42.google.com with SMTP id hz20so3014801lab.15
+        for <openmundi@googlegroups.com>; Sat, 13 Sep 2014 22:36:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlemail.com; s=20120113;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references
+         :in-reply-to:content-type:content-transfer-encoding;
+        bh=HTEu6nyadZiUZhlMKOs7zGfVdwJP/HiRbSFaLIgS+pA=;
+        b=RV/dhYI4xwcnT2e7tZ6i46GQ9TfcjCRJFhdci50UhboUoADyODXag98mEAMK80N2pM
+         s+6gZfYqRoqBqD02YSXAfJJkMbFI37/SSoFR79u6xsGmOZLBNC6+jSCeoqvfPxqmtY8j
+         2ZMNqMlki23uSzmQwYUlrOdrMLwzH1QSrfnPkQoIFp4bSzUIL6VQ6Sq2Q/fx0/JFLOoA
+         kwIKKZ1LgwTv0+QDlRhiHsy05sqNe8MMcY8r93pDwywUwqozPOa2YoYJM0bgRQM4fhbt
+         rjm1MOOnXTVBWq3J6fgZUyRXNVF/sx7GOY6k82MZNQzvDSW34mHxYnsBXHd4ye8Sn293
+         l7qA==
+X-Received: by 10.112.149.2 with SMTP id tw2mr8389139lbb.21.1410672985496;
+        Sat, 13 Sep 2014 22:36:25 -0700 (PDT)
+Return-Path: <eckhard.licher@googlemail.com>
+Received: from [192.168.2.44] (frnk-5f74fde4.pool.mediaWays.net. [95.116.253.228])
+        by mx.google.com with ESMTPSA id t1sm2807683laz.28.2014.09.13.22.36.23
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 13 Sep 2014 22:36:24 -0700 (PDT)
+Message-ID: <54152956.3020506@googlemail.com>
+Date: Sun, 14 Sep 2014 07:36:22 +0200
+From: Eckhard <eckhard.licher@googlemail.com>
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Thunderbird/31.1.0
+MIME-Version: 1.0
+To: openmundi@googlegroups.com
+Subject: Re: openWorldFactbook updated, now with own organization
+References: <e98126e9-ee86-4c3d-a5e8-85542eb5054d@googlegroups.com> <CAAxEZd-BHd5Ce=ZEq95LpWWY0Vc6ESQkR3hbX3ytDimj6XFURA@mail.gmail.com>
+In-Reply-To: <CAAxEZd-BHd5Ce=ZEq95LpWWY0Vc6ESQkR3hbX3ytDimj6XFURA@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+thanks for the tips. I've created a "logo" from pieces found on 
+openclipart and updated the org page.
+
+The project would not be what it is without the factbook gem which 
+really does the hard work. The rest requires more transpiration than 
+inspiration :-)
+
+Hoe the original publisher sticks with its current Coldfusion 
+infrastructure for a while... HTML scrapers really chase a moving target 
+as I experienced more than a decade ago with the very same target, the 
+World Factbook.
+
+BTW the factbook crawler at 
+https://github.com/twigkit/worldfactbook-dataset seems to be out of sync 
+and does not produce meaningful results anymore from a recent download. 
+Anyway, the JSON produced by the gem is exactly what is needed to 
+re-master the WFB...
+
+Keep up the good work!
+
+Greetings from Frankfurt and enjoy the rest of the weekend
+
+

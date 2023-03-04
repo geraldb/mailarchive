@@ -1,0 +1,93 @@
+From 2289217568768@xxx Tue Jun 16 00:16:45 +0000 2015
+X-GM-THRID: 2254972125184
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fdd82ec609b6c4e4
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.26.5 with SMTP id b5mr3589063yha.15.1416812991223;
+        Sun, 23 Nov 2014 23:09:51 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.38.68 with SMTP id m65ls1183620iom.73.gmail; Sun, 23 Nov
+ 2014 23:09:50 -0800 (PST)
+X-Received: by 10.50.33.39 with SMTP id o7mr122490igi.14.1416812990865;
+        Sun, 23 Nov 2014 23:09:50 -0800 (PST)
+X-Google-Doc-Id: 68e838f7e1840b2f
+X-Google-Web-Client: true
+Date: Sun, 23 Nov 2014 23:09:49 -0800 (PST)
+From: anonfunction@gmail.com
+To: opensport@googlegroups.com
+Message-Id: <41601d23-dd94-4943-b34b-d3b0af78de8e@googlegroups.com>
+In-Reply-To: <CAAxEZd_ZkKTAtN0sW+V54SsNp3CHBJR8h8CfK_NtqO77bB=+3g@mail.gmail.com>
+References: <923ec44d-6a0f-4f21-903a-0835e94f1b4c@googlegroups.com>
+ <bee9b9b6-ca46-4101-9b8e-44332ac9e364@googlegroups.com>
+ <05ebac69-a367-49a7-ae47-91f4fbaac2dd@googlegroups.com>
+ <CAAxEZd8BYxG4v-LZD_7nxVfB=t31w9jt7F0zrKYZ9gpmLWjv9Q@mail.gmail.com>
+ <3fa255f0-d6d2-4265-a6a3-01f920a0b8a0@googlegroups.com>
+ <CAAxEZd_ZkKTAtN0sW+V54SsNp3CHBJR8h8CfK_NtqO77bB=+3g@mail.gmail.com>
+Subject: Re: [opensport] Re: Cannot build football.db with world cup data
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_150_778185471.1416812989487"
+X-Google-Token: EL2zy6MFOECENingXZ00
+X-Google-IP: 67.174.196.203
+
+------=_Part_150_778185471.1416812989487
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_151_787800867.1416812989487"
+
+------=_Part_151_787800867.1416812989487
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks again for your help.
+
+I got the ruby version up and running but the matches are returning null 
+for the scores.
+
+See: http://192.241.227.237:9292/event/world.2014/round/1
+
+Any ideas?
+
+
+On Sunday, November 23, 2014 1:57:19 AM UTC-8, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>   Good news. Thanks for retrying and not giving up. 
+>
+> > I'm using the starter kit (tried with both the Go and Node versions) 
+> > and cannot get `/rounds` or `/games` to work. 
+>
+>    Sorry to disappoint you but only the starter kit Ruby edition 
+> includes all (advertised) services (endpoints). 
+>
+>     For the Go and Node version you will have to add the missing 
+> services e.g /rounds or /games. The idea is that anyone interested 
+> might add the missing services (endpoints). 
+>
+>    Cheers. 
+>
+
+------=_Part_151_787800867.1416812989487
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr"><div>Thanks again for your help.</div><div><br></div><div>I got the ruby version up and running but the matches are returning null for the scores.</div><div><br></div><div>See:&nbsp;http://192.241.227.237:9292/event/world.2014/round/1</div><div><br></div><div>Any ideas?</div><br><br>On Sunday, November 23, 2014 1:57:19 AM UTC-8, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; Good news. Thanks for retrying and not giving up.
+<br>
+<br>&gt; I'm using the starter kit (tried with both the Go and Node versions)
+<br>&gt; and cannot get `/rounds` or `/games` to work.
+<br>
+<br>&nbsp; &nbsp;Sorry to disappoint you but only the starter kit Ruby edition
+<br>includes all (advertised) services (endpoints).
+<br>
+<br>&nbsp; &nbsp; For the Go and Node version you will have to add the missing
+<br>services e.g /rounds or /games. The idea is that anyone interested
+<br>might add the missing services (endpoints).
+<br>
+<br>&nbsp; &nbsp;Cheers.
+<br></blockquote></div>
+------=_Part_151_787800867.1416812989487--
+------=_Part_150_778185471.1416812989487--
+

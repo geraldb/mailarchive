@@ -1,0 +1,197 @@
+From 6885964949764440064@xxx Wed Oct 21 07:00:52 +0000 2020
+X-GM-THRID: 6884578720937410560
+X-Received: by 2002:a37:478c:: with SMTP id u134mr1983924qka.206.1603263651625;
+        Wed, 21 Oct 2020 00:00:51 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:ac8:2fab:: with SMTP id l40ls1661877qta.5.gmail; Wed, 21 Oct
+ 2020 00:00:50 -0700 (PDT)
+X-Received: by 2002:ac8:160f:: with SMTP id p15mr1771275qtj.57.1603263650763;
+        Wed, 21 Oct 2020 00:00:50 -0700 (PDT)
+Received: by 2002:a37:4a57:0:b029:142:7499:cf3a with SMTP id x84-20020a374a570000b02901427499cf3amsqka;
+        Mon, 19 Oct 2020 22:26:07 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzcnHG0/a/2eiwWgxPpUpXEqnSI9WgtDeekCLVPZUkP8KcYd28OxYbe1cb3UYlhhcA+TT1lTF1zjg==
+X-Received: by 2002:a37:a74e:: with SMTP id q75mr1211048qke.277.1603171566853;
+        Mon, 19 Oct 2020 22:26:06 -0700 (PDT)
+X-Google-Thread-Subscription: Yes
+X-Google-Web-Client: true
+Date: Mon, 19 Oct 2020 22:26:06 -0700 (PDT)
+From: NIKHIL B N <nikhilbnaradhya1.gem@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <a23746f7-3095-4a5b-b74b-0f4dc6329d05n@googlegroups.com>
+In-Reply-To: <CAAxEZd9+4s4d-0RYtF8wqLYfVXmJW3FKLq==-YCANSgJ2cy+_w@mail.gmail.com>
+References: <CAAxEZd9+4s4d-0RYtF8wqLYfVXmJW3FKLq==-YCANSgJ2cy+_w@mail.gmail.com>
+Subject: Re: New football-to-sqlite build tool - load / read football.txt
+ match datafiles (e.g. English Premier League, German Bundesliga, Spanish La
+ Liga, etc.) into a sqlite database
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1984_322737586.1603171566452"
+
+------=_Part_1984_322737586.1603171566452
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1985_1826878126.1603171566452"
+
+------=_Part_1985_1826878126.1603171566452
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+Great work! I am first and foremost a Barcelona fan ! 
+I  have created a react app as a personal project to display football stats 
+from top 5 leagues, UCL and other cup competitions. I was looking for some 
+free way to get data. Those api endpoints are very slow. 
+
+Today I found out your amazing work on openfootball. 
+
+Now I can run my own server to serve my frontend ( That would be my 
+back-end project as well ! )
+
+I would really appreciate if you could tell me how to download 
+football-to-sqlite command line tool.
+
+Thanks and regards,
+Nikhil BN
+
+
+On Saturday, October 17, 2020 at 6:51:34 PM UTC+5:30 Gerald Bauer wrote:
+
+> Hello,
+>
+> inspired by the datasette
+> {db,dbf,markdown,geojson,shapefile}-to-sqlite series [1] I have put
+> together the missing football-to-sqlite [2] tool that - surprise,
+> surprise - lets you load / read football.txt match datafiles (e.g.
+> English Premier League, German Bundesliga, Spanish La Liga 2020/21,
+> etc.) into a sqlite database.
+>
+> Usage:
+>
+> Run this tool against match files in the Football.TXT format like so:
+>
+> ```
+> $ football-to-sqlite england.db 2020-21\1-premierleague.txt
+> ```
+>
+> or pass in more than one match file:
+>
+> ```
+> $ football-to-sqlite england.db 2020-21\1-premierleague.txt \
+> 2020-21\2-championship.txt \
+> 2020-21\3-league1.txt \
+> 2020-21\4-league2.txt \
+> 2020-21\5-nationalleague.txt
+> ```
+>
+>
+> Note: If the single-file SQLite database (and its tables, views &
+> indices) do not (yet) exist, they get auto-created on the first run.
+>
+> Note: You can use `football2sqlite` as an alias / alternate name.
+>
+>
+> **Pipes & Standard Input (STDIN)**
+>
+> You can use any command line tool to download match files and pipe
+> (via stdin) into this tool like so:
+>
+> ```
+> $ curl 
+> https://raw.githubusercontent.com/openfootball/world-cup/master/2018--russia/cup.txt
+> | football-to-sqlite worldcup.db
+> ```
+>
+> That's it for now. Enjoy the beautiful game with ruby. Cheers. Prost.
+>
+>
+> [1] https://docs.datasette.io/en/stable/ecosystem.html
+> [2] https://github.com/sportdb/football.db/tree/master/football-to-sqlite
+>
+
+------=_Part_1985_1826878126.1603171566452
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div>Hi Gerald,</div><div><br></div><div>Great work! I am first and foremos=
+t a Barcelona fan ! <br></div><div>I&nbsp; have created a react app as a pe=
+rsonal project to display football stats from top 5 leagues, UCL and other =
+cup competitions. I was looking for some free way to get data. Those api en=
+dpoints are very slow. <br></div><div><br></div><div>Today I found out your=
+ amazing work on openfootball. <br></div><div><br></div><div>Now I can run =
+my own server to serve my frontend ( That would be my back-end project as w=
+ell ! )</div><div><br></div><div>I would really appreciate if you could tel=
+l me how to download football-to-sqlite command line tool.</div><div><br></=
+div><div>Thanks and regards,</div><div>Nikhil BN<br></div><div><br></div><b=
+r><div class=3D"gmail_quote"><div dir=3D"auto" class=3D"gmail_attr">On Satu=
+rday, October 17, 2020 at 6:51:34 PM UTC+5:30 Gerald Bauer wrote:<br/></div=
+><blockquote class=3D"gmail_quote" style=3D"margin: 0 0 0 0.8ex; border-lef=
+t: 1px solid rgb(204, 204, 204); padding-left: 1ex;">Hello,
+<br>
+<br>    inspired by the datasette
+<br>{db,dbf,markdown,geojson,shapefile}-to-sqlite series [1] I have put
+<br>together the missing football-to-sqlite [2] tool that - surprise,
+<br>surprise - lets you load / read football.txt match datafiles (e.g.
+<br>English Premier League, German Bundesliga, Spanish La Liga 2020/21,
+<br>etc.) into a sqlite database.
+<br>
+<br>Usage:
+<br>
+<br>Run this tool against match files in the Football.TXT format like so:
+<br>
+<br>```
+<br>$ football-to-sqlite england.db 2020-21\1-premierleague.txt
+<br>```
+<br>
+<br>or pass in more than one match file:
+<br>
+<br>```
+<br>$ football-to-sqlite england.db 2020-21\1-premierleague.txt \
+<br>                                2020-21\2-championship.txt  \
+<br>                                2020-21\3-league1.txt       \
+<br>                                2020-21\4-league2.txt       \
+<br>                                2020-21\5-nationalleague.txt
+<br>```
+<br>
+<br>
+<br>Note: If the single-file SQLite database (and its tables, views &amp;
+<br>indices) do not (yet) exist, they get auto-created on the first run.
+<br>
+<br>Note: You can use `football2sqlite` as an alias / alternate name.
+<br>
+<br>
+<br>**Pipes &amp; Standard Input (STDIN)**
+<br>
+<br>You can use any command line tool to download match files and pipe
+<br>(via stdin) into this tool like so:
+<br>
+<br>```
+<br>$ curl <a href=3D"https://raw.githubusercontent.com/openfootball/world-=
+cup/master/2018--russia/cup.txt" target=3D"_blank" rel=3D"nofollow" data-sa=
+feredirecturl=3D"https://www.google.com/url?hl=3Den&amp;q=3Dhttps://raw.git=
+hubusercontent.com/openfootball/world-cup/master/2018--russia/cup.txt&amp;s=
+ource=3Dgmail&amp;ust=3D1603255863958000&amp;usg=3DAFQjCNHZDt_lbPmeaN5uLIPL=
+UjuBcndmcg">https://raw.githubusercontent.com/openfootball/world-cup/master=
+/2018--russia/cup.txt</a>
+<br>| football-to-sqlite worldcup.db
+<br>```
+<br>
+<br>That&#39;s it for now. Enjoy the beautiful game with ruby. Cheers. Pros=
+t.
+<br>
+<br>
+<br>[1] <a href=3D"https://docs.datasette.io/en/stable/ecosystem.html" targ=
+et=3D"_blank" rel=3D"nofollow" data-saferedirecturl=3D"https://www.google.c=
+om/url?hl=3Den&amp;q=3Dhttps://docs.datasette.io/en/stable/ecosystem.html&a=
+mp;source=3Dgmail&amp;ust=3D1603255863958000&amp;usg=3DAFQjCNEStPGkoMoB4KqJ=
+3Gt94mWChQcoMw">https://docs.datasette.io/en/stable/ecosystem.html</a>
+<br>[2] <a href=3D"https://github.com/sportdb/football.db/tree/master/footb=
+all-to-sqlite" target=3D"_blank" rel=3D"nofollow" data-saferedirecturl=3D"h=
+ttps://www.google.com/url?hl=3Den&amp;q=3Dhttps://github.com/sportdb/footba=
+ll.db/tree/master/football-to-sqlite&amp;source=3Dgmail&amp;ust=3D160325586=
+3958000&amp;usg=3DAFQjCNGQGw-0LpBWrhklVnHVKU_pSlUYSw">https://github.com/sp=
+ortdb/football.db/tree/master/football-to-sqlite</a>
+<br></blockquote></div>
+------=_Part_1985_1826878126.1603171566452--
+
+------=_Part_1984_322737586.1603171566452--
+

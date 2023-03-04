@@ -1,0 +1,61 @@
+From 66843574272@xxx Sat Dec 20 19:01:40 +0000 2014
+X-GM-THRID: 65671266304
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,721791a8b8e1778d,start
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.137.196 with SMTP id qk4mr5509322lbb.11.1390274400085;
+        Mon, 20 Jan 2014 19:20:00 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.152.37.9 with SMTP id u9ls249176laj.20.gmail; Mon, 20 Jan 2014
+ 19:19:59 -0800 (PST)
+X-Received: by 10.152.210.197 with SMTP id mw5mr7084309lac.5.1390274399824;
+        Mon, 20 Jan 2014 19:19:59 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22f.google.com (mail-wi0-x22f.google.com [2a00:1450:400c:c05::22f])
+        by gmr-mx.google.com with ESMTPS id x2si1185194wif.1.2014.01.20.19.19.59
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 20 Jan 2014 19:19:59 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22f as permitted sender) client-ip=2a00:1450:400c:c05::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x22f.google.com with SMTP id hr1so3894024wib.2
+        for <beerdb@googlegroups.com>; Mon, 20 Jan 2014 19:19:59 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=6t/niEB3aCLE8HvelcPF0oVWpIXrEKdWPPh60qm2KK8=;
+        b=dusoKNKr/iLVxdGHgAItMMxDt/kUmtz7YY5Fx/bkRYLXPEbeo5sXOXo2Spi0esDv4X
+         IJ6u/V1PnlE1yXU/NCPEgCSruBbg3P/7RRcJGSnodDqmNFf1TGH0RjdrtLMQAF9BYmze
+         OMW5FKMLWQ3mlhzt5Q7rSbGPoNXbkC1PwOTUTq//W9u9rslL//RP6WLfo0DRFxyxBtga
+         SBezYTcwaBMtex0IP5ZVm2E8a569JfMN8TMEvkuOlUCuhq6fEEhcHDd9e//dZtugsyrS
+         hzpfkxFgO5YzFhEDFvfHsUi3L2GgOm1wGNyGzELhIGiDl9MqHdwPn4GygrOl/aIrlZpn
+         NB9Q==
+MIME-Version: 1.0
+X-Received: by 10.194.22.129 with SMTP id d1mr17219282wjf.22.1390274399727;
+ Mon, 20 Jan 2014 19:19:59 -0800 (PST)
+Received: by 10.216.67.196 with HTTP; Mon, 20 Jan 2014 19:19:59 -0800 (PST)
+Date: Mon, 20 Jan 2014 21:19:59 -0600
+Message-ID: <CAAxEZd9cdN4CBXDFA11YEbEs_bYo-w0=9DAvbU+icQUa8syqtw@mail.gmail.com>
+Subject: beer.db - 1000+ Beers, 1000+ Breweries, 100+ Countries, New
+ Multi-Line Record Format and More
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  FYI: I've updated the plain text beer.db fixtures now including more
+than 1000+ beers, 1000+ breweries, 10+ countries [1].
+
+  Use the beerdb gem [2] to load the free open public domain data into
+your SQL database of choice. More info at the open beer project site
+[3]. Cheers. Prost.
+
+[1] http://prost.herokuapp.com
+[2] https://rubygems.org/gems/beerdb
+[3] http://openbeer.github.io
+

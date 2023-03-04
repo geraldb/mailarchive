@@ -1,0 +1,90 @@
+From 749272563712@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 721059577856
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,343485c5520b1088
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.100.110.4 with SMTP id i4mr5101837anc.4.1279068888382;
+        Tue, 13 Jul 2010 17:54:48 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.101.202.24 with SMTP id e24ls2003886anq.1.p; Tue, 13 Jul 2010 
+	17:54:48 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.101.175.25 with SMTP id c25mr1674991anp.68.1279068887960; Tue, 
+	13 Jul 2010 17:54:47 -0700 (PDT)
+Received: by d16g2000yqb.googlegroups.com with HTTP; Tue, 13 Jul 2010 17:54:47 
+	-0700 (PDT)
+Date: Tue, 13 Jul 2010 17:54:47 -0700 (PDT)
+In-Reply-To: <675a0516-5817-42cb-80f8-9ee508d9265e@z10g2000yqb.googlegroups.com>
+X-IP: 80.123.36.75
+References: <deea554e-d198-4640-872a-332e5ff9a084@k39g2000yqb.googlegroups.com> 
+	<d7c5dc42-b693-46af-b1a8-747daee88743@t10g2000yqg.googlegroups.com> 
+	<675a0516-5817-42cb-80f8-9ee508d9265e@z10g2000yqb.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: ENeV9OEEDE7NDm2p0js0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.6) 
+	Gecko/20100628 Ubuntu/10.04 (lucid) Firefox/3.6.6,gzip(gfe)
+Message-ID: <bd145cc4-5cc1-4e9c-97f7-c16239fb190d@d16g2000yqb.googlegroups.com>
+Subject: Re: support for pandoc-ruby
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello David,
+
+>(On a related note, I, like Bruce D'Arcus, would like to
+> see support for "incremental" in addition to "step", for compatibility
+>reasons...)
+
+  Good idea. I put it on my list to add once I get to work on the
+JavaScript-side a little.
+
+> (1) Some way to indicate, in the markdown source, that a list should
+> be a "step" list.
+
+  If you use an alternative Markdown engine/converter such as the
+default in slideshow, that is, kramdown - you can use a Markdown
+extension like this:
+
+* point one
+* point two
+{:.step}
+
+  See http://kramdown.rubyforge.org/quickref.html#block-attributes for
+details.
+
+> Both pandoc and rdiscount pass the {.step} part through untouched. So
+> it would be a matter of writing a filter to find <li>...{.step}</li>
+> and convert it into <li class="step">...</li>. But maruku (in a quick
+> test) seems to strip it out. So this might not work for all
+> processors.
+
+ As an alternative you might try add your own little filter. Just add
+the filter code inside your own Pandoc converter.
+
+> (3)  A command-line switch to generate a "title" slide from the yaml
+> metadata at the top of the file.
+
+  Good news. That already works today. Just change your
+slides.html.erb template. Lets say you use these headers in your
+source:
+
+Title: Your Title Here
+Subtitle: Your Subtitle Here
+Author: Your Name Here
+Company: Your Company Here
+
+  Than just add a title slide to your template before <%= @content %>.
+Sample:
+
+<div class="slide titlepage">
+<h1><%= @headers['title'] %></h1>
+<h2><%= @headers['subtitle'] %></h2>
+<h3><%= @headers['author']%></h3>
+<h4><%= @headers['company']%></h4>
+</div>
+
+  See a sample here @ http://github.com/geraldb/slideshow-s5-blank/blob/master/slides.html.erb
+
+   Again thanks for your comments. Cheers. Gerald
+

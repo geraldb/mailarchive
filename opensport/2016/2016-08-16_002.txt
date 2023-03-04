@@ -1,0 +1,97 @@
+From 6319522569014738944@xxx Tue Aug 16 20:15:07 +0000 2016
+X-GM-THRID: 6319522571312168960
+X-Received: by 10.129.154.196 with SMTP id r187mr25927468ywg.54.1471378507203;
+        Tue, 16 Aug 2016 13:15:07 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.19.40 with SMTP id f37ls10284189ote.42.gmail; Tue, 16 Aug
+ 2016 13:15:06 -0700 (PDT)
+X-Received: by 10.176.6.38 with SMTP id f35mr26411255uaf.0.1471378506702;
+        Tue, 16 Aug 2016 13:15:06 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22e.google.com (mail-io0-x22e.google.com. [2607:f8b0:4001:c06::22e])
+        by gmr-mx.google.com with ESMTPS id i2si1239688ith.1.2016.08.16.13.15.06
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 16 Aug 2016 13:15:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) client-ip=2607:f8b0:4001:c06::22e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22e.google.com with SMTP id b62so117876956iod.3
+        for <opensport@googlegroups.com>; Tue, 16 Aug 2016 13:15:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=6WtrdlsnARc1Nqyss21BrR3QmE2xXjocul+fwZI4bsI=;
+        b=IgveG5ixDqDmw32b0ZbYWURXquDnrOS7F1qAu61ubCilcUkrW9hmTo3yCK/GozJk6p
+         76NstxsfNtVqqnQwNXo2E4MjSy2JRovIapHdoHrmz4i+lQe3svnhLmOGoIxW7uc9+IgY
+         z4wU6ODVTK8If6CRSk1NX+7A//ZaQu9mcESIXWrKza2JC8s6CNHdEG4MhQBU2w3EE3ZZ
+         D4oOJiaOQj60GXDwBAA3HvoRS/NtFtEsP8Zm/PHM4NGBpn191ceFY6WLHPVS+nnsHwT0
+         ExwVAWLrpVhh1bwms2TMLSeTmJ95sQfg787Mc3T2ACjgip4QlUYw695HAwLU1zAQLOKd
+         Zouw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=6WtrdlsnARc1Nqyss21BrR3QmE2xXjocul+fwZI4bsI=;
+        b=mKYdUbhAdh/KPxcAzmVtvTib5pi63HHJ0ns7Qh82aSlOjgVMetbAAmB4rg/xFvjUGs
+         KuoXVNKytuJYoalm/dsAiGcXDV8+j2VSoBRRe8BPMQMx7QGX+nqjOxeN0utd7JbhDl62
+         I3LG8+wY4NuEG5FKQJhEZeG3l6dVWZ59cOflQ3lnS7tcWj1UP8Y8GUDcqqMbkUG9/q1g
+         3Qy9LMKNLO+6mjmhnaCRycrJjob7qM398CfluGCBUlsBdy5YYwmm19GU+OXu/vcuIC3T
+         TFt8LSKki4h/ZREb8lkqo3yMfbs4j3ShPiU/i5N0TFWTA7QjVcZShw6JnHUE8vXLVUXm
+         H29g==
+X-Gm-Message-State: AEkoousltyER0xavL4PJu1+S3vplDoj4x3KFQUVWK+tSXq7BX+ZnhxByshmrSYmuHCh12zohsYMvvdonKcHnLw==
+X-Received: by 10.107.21.134 with SMTP id 128mr40951155iov.59.1471378506139;
+ Tue, 16 Aug 2016 13:15:06 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Tue, 16 Aug 2016 13:15:05 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 16 Aug 2016 22:15:05 +0200
+Message-ID: <CAAxEZd_VRPdJCTqwRo4OPqEvP6yB=anVm8CHuvLWYgVhR282KA@mail.gmail.com>
+Subject: English Premier League (EPL) 2016/17 Season - Public Domain Open
+ Datasets in Plain Text (n SQL, JSON, etc.)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: I've started to add the new 2016/17 season for the English
+Premier League. The datasets [1] reads:
+
+
+Matchday 1
+
+[Sat Aug/13]
+  Hull City    2-1 (1-0)   Leicester City
+    [Diomande 45+1' Snodgrass 57'; Mahrez 47' (Pen.)]
+  Burnley FC   0-1 (0-0)   Swansea City
+    [-; Fer 82']
+  Crystal Palace  0-1 (0-0)  West Bromwich Albion
+    [-; Rondon 74']
+  Everton FC  1-1 (1-0)  Tottenham Hotspur
+    [Barkley 5'; Lamela 59']
+  Middlesbrough FC  1-1 (1-0)  Stoke City
+    [Negredo 11'; Shaqiri 67']
+  Southampton FC  1-1 (0-1)   Watford FC
+    [Redmond 58'; Capoue 9']
+  Manchester City  2-1 (1-0)   Sunderland AFC
+    [Aguero 4' (Pen.).; Defoe 71' McNair 87' (OG)]
+[Sun Aug/14]
+  AFC Bournemouth  1-3 (0-1)   Manchester United
+    [A. Smith 69'; Mata 40' Rooney 59' Ibrahimovic 64']
+  Arsenal FC    3-4 (1-1)  Liverpool FC
+    [Walcott 31' Oxlade-Chamberlain 64' Chambers 75'; Coutinho 45+1',
+56' Lallana 49' S. Man=C3=A9 63']
+[Mon Aug/15]
+ Chelsea FC   2-1 (0-0)   West Ham United
+    [Hazard 47' (Pen.) Diego Costa 89'; J. Collins 77']
+
+
+  And so on. Cheers.
+
+[1] https://github.com/openfootball/eng-england/blob/master/2016-17/1-premi=
+erleague-i.txt
+

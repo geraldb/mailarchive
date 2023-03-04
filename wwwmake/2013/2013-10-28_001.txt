@@ -1,0 +1,115 @@
+From 1423431434240@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1356955910144
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,73a629bc872965b5
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Web Slide Shows - S5, S6,
+ S9, Slidy, deck.js, impress.js 'n' Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.112.141.135 with SMTP id ro7mr5837257lbb.11.1382956411726;
+        Mon, 28 Oct 2013 03:33:31 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.152.37.226 with SMTP id b2ls274086lak.93.gmail; Mon, 28 Oct
+ 2013 03:33:30 -0700 (PDT)
+X-Received: by 10.112.125.234 with SMTP id mt10mr5836956lbb.0.1382956410755;
+        Mon, 28 Oct 2013 03:33:30 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22c.google.com (mail-wi0-x22c.google.com [2a00:1450:400c:c05::22c])
+        by gmr-mx.google.com with ESMTPS id nb7si587840wic.3.2013.10.28.03.33.30
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 28 Oct 2013 03:33:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22c as permitted sender) client-ip=2a00:1450:400c:c05::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22c as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x22c.google.com with SMTP id ez12so3598359wid.11
+        for <webslideshow@googlegroups.com>; Mon, 28 Oct 2013 03:33:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=hk2xJhiAp0DVgHsWQcsBemnIM78tpwuT+1DNu+rwVGk=;
+        b=fKELPJmHwUmCyJ75gbzacBfDE53qE6A4IByaNQXoW4+hh5iORey3xak1xyKLrRnx1V
+         AetRR5S0I6sC6utQr0BE4T7fer8Y4tieLPkKNZD5g2L+Hssdvl9KMi3ZKLmR6FAnnXcx
+         8hjLkItX1eB2U2o0EYL4TtqnsbtOtTt/LOFLgUgEsE8DgTPQErGhqV/pZk7r226X1yi7
+         PUkh5HdKeVJahvj3h0JrS3KOMsyiEJBRQqDsAAXjDtQDb2ek5kRasXkMm5M/n6sEANCT
+         QOwHZlOaCu4x3lEMj4R8kg2UxHUvLlRTujcYVyHIOrpxOAyBnp5i1FcWFAoWs0jqgzb3
+         e3ew==
+MIME-Version: 1.0
+X-Received: by 10.194.60.73 with SMTP id f9mr774664wjr.65.1382956410649; Mon,
+ 28 Oct 2013 03:33:30 -0700 (PDT)
+Received: by 10.216.232.10 with HTTP; Mon, 28 Oct 2013 03:33:30 -0700 (PDT)
+In-Reply-To: <662aa730-7bc9-4970-86cc-bb87c624c0f0@googlegroups.com>
+References: <7c33ab67-45db-4ba3-9cac-9690848209ad@googlegroups.com>
+	<a5b8519b-896b-42ae-a1fc-ece9c11e5ba8@googlegroups.com>
+	<9b8665c3-3333-4a3f-a0b4-8853a6a77b70@googlegroups.com>
+	<708373c6-d30a-4cab-a414-8cdec49fcecf@googlegroups.com>
+	<662aa730-7bc9-4970-86cc-bb87c624c0f0@googlegroups.com>
+Date: Mon, 28 Oct 2013 11:33:30 +0100
+Message-ID: <CAAxEZd9YxYW7VP7FvNQUW8=0_z3Nm=hDFvKng0xE3RVdM1n6rg@mail.gmail.com>
+Subject: Re: [slideshow:328] Re: Download Slideshow Gem
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+   The package manager tool (RubyGems - gem)  is included in a
+standard Ruby install starting with version 1.9, thus, it's already on
+your computer. Try:
+
+  $ gem env
+
+  And than install the slideshow gem by typing in the shell:
+
+  $ gem install slideshow
+
+   Good luck. All the best. Cheers.
+
+2013/10/27 Christian Gedge <ostrophobia@gmail.com>:
+> I installed Ruby 1.9.3-p448 and don't see a "manager tool" anywhere.  So I
+> assume it relates to Dev Kit-tdm?  So, I extracted Dev Kit-tdm but I cannot
+> find "install" among the various folders.
+>
+>
+> On Sunday, October 27, 2013 11:39:38 PM UTC+13, Gerald Bauer wrote:
+>>
+>> Hello,
+>>
+>> 1. Where do I get 'slideshow gem?
+>>
+>>   Use the package manager tool bundled with Ruby e.g. issue
+>>
+>>   $ gem install slideshow
+>>
+>>   Try first if the gem tool is available, for example, issue:
+>>
+>>    $ gem env       or
+>>    $ gem list slideshow -r
+>>
+>>    That's it.  After the install try
+>>
+>>    $ slideshow help
+>>
+>> 2. Is it compatible with a Drupal website?
+>>
+>>     The generated slideshow is static, that is, it's just a bunch of
+>> files, that is, HTML, CSS, JS, plus images. No content management system or
+>> application server or scripting runtime (other than JavaScript, of course)
+>> needed for hosting on the server. Please, check the Drupal docu how to
+>> handle static web content, I don't know what's the best practice.
+>>
+>>     All the best. Good luck. Cheers.
+>>>>
+>>>>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n' Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to webslideshow+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/groups/opt_out.
+

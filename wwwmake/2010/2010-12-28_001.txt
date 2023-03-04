@@ -1,0 +1,61 @@
+From 794708410368@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 789508521984
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,df063140bb49779c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.100.126.2 with SMTP id y2mr2247054anc.17.1293565184328;
+        Tue, 28 Dec 2010 11:39:44 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.100.55.28 with SMTP id d28ls2164771ana.6.p; Tue, 28 Dec 2010
+ 11:39:43 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.101.41.5 with SMTP id t5mr412748anj.15.1293565183942; Tue, 28
+ Dec 2010 11:39:43 -0800 (PST)
+Received: by j25g2000yqa.googlegroups.com with HTTP; Tue, 28 Dec 2010 11:39:43
+ -0800 (PST)
+Date: Tue, 28 Dec 2010 11:39:43 -0800 (PST)
+In-Reply-To: <86cea953-c4ca-40d6-b186-13b65e57246c@s5g2000yqm.googlegroups.com>
+X-IP: 69.47.134.49
+References: <4a403744-dfa2-4dcc-909b-361cd3e9c266@a7g2000vbz.googlegroups.com> <86cea953-c4ca-40d6-b186-13b65e57246c@s5g2000yqm.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EP_56OgEm0vbocRWGo00
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.13)
+ Gecko/20101206 Ubuntu/9.10 (karmic) Firefox/3.6.13,gzip(gfe)
+Message-ID: <0c85d0aa-c07a-40ea-8cb7-0345e7fdbaf5@j25g2000yqa.googlegroups.com>
+Subject: Re: How to center text
+From: Jason <wjgilmore@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hi.
+
+I have one more related question regarding this matter. How can I
+center text both horizontally and vertically on a slide?
+
+Thanks so much!
+Jason
+
+On Nov 29, 6:06=A0pm, Gerald Bauer <gerald.ba...@gmail.com> wrote:
+> Hello Jason,
+>
+> =A0 =A0 Thanks for your kind words. To center text the easiest way is to
+> use CSS. The built-in template already has some CSS classes defined
+> for centering text, that is, center and fullscreen.
+>
+> =A0 =A0 You can use it like (using Textile markup):
+>
+> =A0 =A0 h1(fullscreen). Part 1 - What's REST?
+>
+> =A0 =A0 or
+>
+> =A0 =A0h1(center). Part 1 - What's REST?
+>
+> =A0 =A0Cheers.
+>
+> PS: You can find the sample slideshow @http://slideshow.rubyforge.org/res=
+t.html
+> and the textile source @https://github.com/geraldb/slideshow/raw/master/s=
+amples/rest.textile
+

@@ -1,0 +1,112 @@
+From 976570286080@xxx Tue Jun 16 00:17:06 +0000 2015
+X-GM-THRID: 923854176256
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,d32db7d7f6a63723
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.52.142.72 with SMTP id ru8mr13447784vdb.0.1401789423496;
+        Tue, 03 Jun 2014 02:57:03 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.86.163 with SMTP id p32ls2466310qgd.42.gmail; Tue, 03 Jun
+ 2014 02:57:03 -0700 (PDT)
+X-Received: by 10.236.209.97 with SMTP id r61mr14323669yho.33.1401789423330;
+        Tue, 03 Jun 2014 02:57:03 -0700 (PDT)
+Received: by 10.224.13.71 with SMTP id b7msqaa;
+        Tue, 3 Jun 2014 00:37:49 -0700 (PDT)
+X-Received: by 10.140.92.227 with SMTP id b90mr16032qge.25.1401781069650;
+        Tue, 03 Jun 2014 00:37:49 -0700 (PDT)
+X-Google-Doc-Id: 752c89f49a445cf7
+X-Google-Web-Client: true
+Date: Tue, 3 Jun 2014 00:37:48 -0700 (PDT)
+From: red band <gpsundergrnd@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <5cb802f5-64b2-4dfe-8c43-d99e85d1fa90@googlegroups.com>
+In-Reply-To: <CAAxEZd9j_7b5+8XCQk8R8PrJeG0f4EGycXMOG1ALBLg=aXEjxA@mail.gmail.com>
+References: <CAAxEZd9j_7b5+8XCQk8R8PrJeG0f4EGycXMOG1ALBLg=aXEjxA@mail.gmail.com>
+Subject: Re: World Cup 2014 Match Picks/Predictions (w/ Open Source
+ Sportbook Rails Web App)
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2902_21452694.1401781068989"
+X-Google-Token: EMz2tZwFYSWAQGHkuwE0
+X-Google-IP: 81.152.64.145
+
+------=_Part_2902_21452694.1401781068989
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2903_13059537.1401781068989"
+
+------=_Part_2903_13059537.1401781068989
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Tried following the instructions to build this but it looks like the db 
+fails to create... Do I miss something?
+Does the db need to be created first?
+
+git clone git://github.com/openbookie/sportbook.git
+
+cd sportbook 
+bundle install --without production 
+rake db:setup 
+rails server 
+
+The server starts, I'm presented with the login screen but it rejects 
+demo/demo
+
+Grtz
+
+Red 
+
+
+On Sunday, June 1, 2014 11:33:17 AM UTC+1, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>   I've reconfigured the sportbook [1] - an open source Ruby on Rails 
+> web app for match picks/predictions - for the World Cup 2014 in Brazil 
+> (11 days an counting!). 
+>
+>   The sportdb gem lets you load the plain text fixtures into your SQL 
+> database of choice; see the worldcup.db [2] fixtures in plain text or 
+> served up via a web app [3] or try the World Cup Brazil 2014 picks 
+> demo [4] (login with demo/demo). 
+>
+>   Cheers. 
+>
+> [1] github.com/openbookie/sportbook 
+> [2] github.com/openfootball/world-cup/tree/master/2014--brazil 
+> [3] sportbook.herokuapp.com/db/world.2014 
+> [4] sportbook.herokuapp.com 
+>
+
+------=_Part_2903_13059537.1401781068989
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Tried following the instructions to build this but it looks like the db fails to create... Do I miss something?<br>Does the db need to be created first?<br><br><pre><code>git clone git://github.com/openbookie/sportbook.git
+</code></pre><code>cd sportbook
+<br>bundle install --without production
+</code><code><br>rake db:setup
+</code><code><br>rails server
+</code><br><br>The server starts, I'm presented with the login screen but it rejects demo/demo<br><br>Grtz<br><br>Red <br><br><br>On Sunday, June 1, 2014 11:33:17 AM UTC+1, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; I've reconfigured the sportbook [1] - an open source Ruby on Rails
+<br>web app for match picks/predictions - for the World Cup 2014 in Brazil
+<br>(11 days an counting!).
+<br>
+<br>&nbsp; The sportdb gem lets you load the plain text fixtures into your SQL
+<br>database of choice; see the worldcup.db [2] fixtures in plain text or
+<br>served up via a web app [3] or try the World Cup Brazil 2014 picks
+<br>demo [4] (login with demo/demo).
+<br>
+<br>&nbsp; Cheers.
+<br>
+<br>[1] <a href="http://github.com/openbookie/sportbook" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenbookie%2Fsportbook\46sa\75D\46sntz\0751\46usg\75AFQjCNEiWkZ7yFYmg-qYvayfZLqkQVB6kw';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenbookie%2Fsportbook\46sa\75D\46sntz\0751\46usg\75AFQjCNEiWkZ7yFYmg-qYvayfZLqkQVB6kw';return true;">github.com/openbookie/<wbr>sportbook</a>
+<br>[2] <a href="http://github.com/openfootball/world-cup/tree/master/2014--brazil" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup%2Ftree%2Fmaster%2F2014--brazil\46sa\75D\46sntz\0751\46usg\75AFQjCNG9EeWi0XDf9erJAwa4vkVNRxeEag';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup%2Ftree%2Fmaster%2F2014--brazil\46sa\75D\46sntz\0751\46usg\75AFQjCNG9EeWi0XDf9erJAwa4vkVNRxeEag';return true;">github.com/openfootball/world-<wbr>cup/tree/master/2014--brazil</a>
+<br>[3] <a href="http://sportbook.herokuapp.com/db/world.2014" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fsportbook.herokuapp.com%2Fdb%2Fworld.2014\46sa\75D\46sntz\0751\46usg\75AFQjCNFt7bT1QHz2vflqoasDYu_nQUPUtQ';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fsportbook.herokuapp.com%2Fdb%2Fworld.2014\46sa\75D\46sntz\0751\46usg\75AFQjCNFt7bT1QHz2vflqoasDYu_nQUPUtQ';return true;">sportbook.herokuapp.com/db/<wbr>world.2014</a>
+<br>[4] <a href="http://sportbook.herokuapp.com" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fsportbook.herokuapp.com\46sa\75D\46sntz\0751\46usg\75AFQjCNEVRVKfRYqkd7c6MflCQPaQYjSO6A';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fsportbook.herokuapp.com\46sa\75D\46sntz\0751\46usg\75AFQjCNEVRVKfRYqkd7c6MflCQPaQYjSO6A';return true;">sportbook.herokuapp.com</a>
+<br></blockquote></div>
+------=_Part_2903_13059537.1401781068989--
+
+------=_Part_2902_21452694.1401781068989--
+

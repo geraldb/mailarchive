@@ -1,0 +1,185 @@
+From 6272168007045218304@xxx Mon Apr 11 05:35:14 +0000 2016
+X-GM-THRID: 6270689525469544448
+Date: Sun, 10 Apr 2016 22:35:13 -0700 (PDT)
+From: S K <hsk4ng@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <bb68ced2-d332-48dd-9750-6d741d060ccd@googlegroups.com>
+In-Reply-To: <0b142833-8bef-451e-b077-8d7f6acaad09@googlegroups.com>
+References: <02c84ff0-aace-48f8-a075-fa92197b2ebb@googlegroups.com>
+ <CAAxEZd8e5UdJn8nJ1X7+NAK542XtYjqqfjTCFbHMMsc1vNkp_g@mail.gmail.com>
+ <0b142833-8bef-451e-b077-8d7f6acaad09@googlegroups.com>
+Subject: Re: [opensport] Adding world cup db to MariaDB for XAMPP
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_7_1251291581.1460352914017"
+X-Google-Token: EJHvrLgF5bMoFmhOHzg0
+X-Google-IP: 50.153.242.181
+
+------=_Part_7_1251291581.1460352914017
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_8_1477230347.1460352914018"
+
+------=_Part_8_1477230347.1460352914018
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I keep getting this error.
+
+rake aborted!
+
+LoadError: cannot load such file -- worlddb
+
+On Monday, April 11, 2016 at 1:21:36 AM UTC-4, S K wrote:
+>
+> Do I run this Ruby script?
+> What steps do I need to take beforehand?
+>
+> On Thursday, April 7, 2016 at 2:06:19 AM UTC-4, Gerald Bauer wrote:
+>>
+>> Hello, 
+>>     thanks for your interest in football.db and the world cup 
+>> datasets. Using rake (and a Rakefile, that is, a ruby build script) 
+>> you can read in (import) the datasets directly into MariaDB (assuming 
+>> it works like MySQL) 
+>>
+>>    Search this group for mysql for details. Cheers. 
+>>
+>> PS: Example: 
+>>
+>>  Rakefile: 
+>> --------------------- 
+>>
+>> BUILD_DIR = "./build" 
+>>
+>> FOOTBALL_DB_PATH = "#{BUILD_DIR}/football.db" 
+>>
+>> DB_CONFIG = { 
+>>   :adapter   =>  'mysql', 
+>>   :database  =>  FOOTBALL_DB_PATH 
+>> } 
+>>
+>> directory BUILD_DIR 
+>>
+>> task :clean do 
+>>   rm FOOTBALL_DB_PATH if File.exists?( FOOTBALL_DB_PATH ) 
+>> end 
+>>
+>> task :env => BUILD_DIR do 
+>>  require 'worlddb' 
+>>  require 'sportdb' 
+>>  require 'logutils/db' 
+>>
+>>  LogUtils::Logger.root.level = :info 
+>>
+>>  pp DB_CONFIG 
+>>  ActiveRecord::Base.establish_connection( DB_CONFIG ) 
+>> end 
+>>
+>> task :create => :env do 
+>>   LogDb.create 
+>>   WorldDb.create 
+>>   SportDb.create 
+>> end 
+>>
+>> task :importworld => :env do 
+>>   WorldDb.read_setup( 'setups/sport.db.admin', '../world.db', 
+>> skip_tags: true )  # populate world tables 
+>>   # WorldDb.stats 
+>> end 
+>>
+>> task :importsport => :env do 
+>>   SportDb.read_setup( 'setups/all', '../openfootball/at-austria' ) 
+>> end 
+>>
+>> desc 'footballdb - build from scratch' 
+>> task :build => [:clean, :create, :importworld, :importsport] do 
+>>   puts 'Done.' 
+>> end 
+>>
+>
+------=_Part_8_1477230347.1460352914018
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I keep getting this error.<div><br><div>
+
+
+
+
+
+
+
+<p class=3D"p1"><span class=3D"s1">rake aborted!</span></p>
+<p class=3D"p1"><span class=3D"s1">LoadError: cannot load such file -- worl=
+ddb</span></p><br>On Monday, April 11, 2016 at 1:21:36 AM UTC-4, S K wrote:=
+<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;bor=
+der-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">Do I run this=
+ Ruby script?<div>What steps do I need to take beforehand?<br><br>On Thursd=
+ay, April 7, 2016 at 2:06:19 AM UTC-4, Gerald Bauer wrote:<blockquote class=
+=3D"gmail_quote" style=3D"margin:0;margin-left:0.8ex;border-left:1px #ccc s=
+olid;padding-left:1ex">Hello,
+<br>=C2=A0 =C2=A0 thanks for your interest in football.db and the world cup
+<br>datasets. Using rake (and a Rakefile, that is, a ruby build script)
+<br>you can read in (import) the datasets directly into MariaDB (assuming
+<br>it works like MySQL)
+<br>
+<br>=C2=A0 =C2=A0Search this group for mysql for details. Cheers.
+<br>
+<br>PS: Example:
+<br>
+<br>=C2=A0Rakefile:
+<br>---------------------
+<br>
+<br>BUILD_DIR =3D &quot;./build&quot;
+<br>
+<br>FOOTBALL_DB_PATH =3D &quot;#{BUILD_DIR}/football.db&quot;
+<br>
+<br>DB_CONFIG =3D {
+<br>=C2=A0 :adapter =C2=A0 =3D&gt; =C2=A0&#39;mysql&#39;,
+<br>=C2=A0 :database =C2=A0=3D&gt; =C2=A0FOOTBALL_DB_PATH
+<br>}
+<br>
+<br>directory BUILD_DIR
+<br>
+<br>task :clean do
+<br>=C2=A0 rm FOOTBALL_DB_PATH if File.exists?( FOOTBALL_DB_PATH )
+<br>end
+<br>
+<br>task :env =3D&gt; BUILD_DIR do
+<br>=C2=A0require &#39;worlddb&#39;
+<br>=C2=A0require &#39;sportdb&#39;
+<br>=C2=A0require &#39;logutils/db&#39;
+<br>
+<br>=C2=A0LogUtils::Logger.root.level =3D :info
+<br>
+<br>=C2=A0pp DB_CONFIG
+<br>=C2=A0ActiveRecord::Base.establish_<wbr>connection( DB_CONFIG )
+<br>end
+<br>
+<br>task :create =3D&gt; :env do
+<br>=C2=A0 LogDb.create
+<br>=C2=A0 WorldDb.create
+<br>=C2=A0 SportDb.create
+<br>end
+<br>
+<br>task :importworld =3D&gt; :env do
+<br>=C2=A0 WorldDb.read_setup( &#39;setups/sport.db.admin&#39;, &#39;../wor=
+ld.db&#39;,
+<br>skip_tags: true ) =C2=A0# populate world tables
+<br>=C2=A0 # WorldDb.stats
+<br>end
+<br>
+<br>task :importsport =3D&gt; :env do
+<br>=C2=A0 SportDb.read_setup( &#39;setups/all&#39;, &#39;../openfootball/a=
+t-austria&#39; )
+<br>end
+<br>
+<br>desc &#39;footballdb - build from scratch&#39;
+<br>task :build =3D&gt; [:clean, :create, :importworld, :importsport] do
+<br>=C2=A0 puts &#39;Done.&#39;
+<br>end
+<br></blockquote></div></div></blockquote></div></div></div>
+------=_Part_8_1477230347.1460352914018--
+
+------=_Part_7_1251291581.1460352914017--
+

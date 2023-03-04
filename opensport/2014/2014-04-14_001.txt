@@ -1,0 +1,252 @@
+From 508977741824@xxx Tue Jun 16 00:17:12 +0000 2015
+X-GM-THRID: 501653438464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,d786e4121fda5685
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.15.94.8 with SMTP id ba8mr3447645eeb.1.1397473730482;
+        Mon, 14 Apr 2014 04:08:50 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.96.193 with SMTP id du1ls473479wib.28.gmail; Mon, 14 Apr
+ 2014 04:08:50 -0700 (PDT)
+X-Received: by 10.180.160.231 with SMTP id xn7mr850589wib.1.1397473730064;
+        Mon, 14 Apr 2014 04:08:50 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x233.google.com (mail-we0-x233.google.com [2a00:1450:400c:c03::233])
+        by gmr-mx.google.com with ESMTPS id u3si534961wiw.3.2014.04.14.04.08.50
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 14 Apr 2014 04:08:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::233 as permitted sender) client-ip=2a00:1450:400c:c03::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f179.google.com with SMTP id x48so7737000wes.24
+        for <opensport@googlegroups.com>; Mon, 14 Apr 2014 04:08:50 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=9chkstn3zGR2586PjezbUYW6q3LHqslCphFBV5GvLZU=;
+        b=wFnXay3Qm0DEZAf3qV61//V1Q92mY3z3souSTQGSTseGnGhTj9UPgMMtqwDj/wLNfA
+         TJUqYyYxxxk9D0eMvOf1DRtrVDl1/IB5wOX+DT8buoigVLZ5N0JvLuncQtLYTgBJovDZ
+         rHBwS08BCdGR32/TQSx08WKfNz05NrHu3DNvFyfJBmIXvbxy5BxCRJlGOfnx4pZ820+K
+         sTotqtKvyCKqBsdlppNBDyfD/oWpSC1QmtXwS7v6G3133Q7WYKsLgMztcRZHQYlX+W+W
+         kfr1ZTrsgEcgNLFc4lW8Q2+VbK7Vxo8wqoNFiMJuCSb5LJd+DUuRKvFh80UV4pHYYy2h
+         P5Zg==
+MIME-Version: 1.0
+X-Received: by 10.180.14.199 with SMTP id r7mr9289473wic.0.1397473729971; Mon,
+ 14 Apr 2014 04:08:49 -0700 (PDT)
+Received: by 10.217.66.200 with HTTP; Mon, 14 Apr 2014 04:08:49 -0700 (PDT)
+In-Reply-To: <32f5fa1d-f48b-4056-baa9-5ff6a0e13cf9@googlegroups.com>
+References: <32f5fa1d-f48b-4056-baa9-5ff6a0e13cf9@googlegroups.com>
+Date: Mon, 14 Apr 2014 13:08:49 +0200
+Message-ID: <CAAxEZd-inZo8BD1-8om1c-bLv9oKVB+5crh1Wps2+M_amiZmkw@mail.gmail.com>
+Subject: Re: [opensport] Rails 4 support and setup errors
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   FYI: If it helps a "simplified" build script for the world cup.
+Full "official" build script online @ github.com/openfootball/build
+Cheers.
+
+Rakefile:
+------------------------------
+
+
+BUILD_DIR = "./build"
+
+# -- output db config
+FOOTBALL_DB_PATH = "#{BUILD_DIR}/football.db"
+
+
+DB_CONFIG = {
+  adapter:    'sqlite3',
+  database:   FOOTBALL_DB_PATH
+}
+
+
+# input repo sources config
+
+# --- world.db ---
+
+OPENMUNDI_ROOT        = "../../openmundi"
+WORLD_DB_INCLUDE_PATH = "#{OPENMUNDI_ROOT}/world.db"
+
+
+# --- football.db ---
+
+OPENFOOTBALL_ROOT = ".."
+
+# national teams
+WORLD_CUP_INCLUDE_PATH              = "#{OPENFOOTBALL_ROOT}/world-cup"
+EURO_CUP_INCLUDE_PATH               = "#{OPENFOOTBALL_ROOT}/euro-cup"
+AFRICA_CUP_INCLUDE_PATH             = "#{OPENFOOTBALL_ROOT}/africa-cup"
+NORTH_AMERICA_GOLD_CUP_INCLUDE_PATH =
+"#{OPENFOOTBALL_ROOT}/north-america-gold-cup"
+COPA_AMERICA_INCLUDE_PATH           = "#{OPENFOOTBALL_ROOT}/copa-america"
+
+
+puts settings
+
+
+
+task :default => :build
+
+directory BUILD_DIR
+
+
+task :clean do
+  rm FOOTBALL_DB_PATH if File.exists?( FOOTBALL_DB_PATH )
+end
+
+
+task :env => BUILD_DIR do
+  require 'worlddb'
+  require 'sportdb'
+  require 'logutils/db'
+
+  LogUtils::Logger.root.level = :info
+
+  pp DB_CONFIG
+  ActiveRecord::Base.establish_connection( DB_CONFIG )
+end
+
+
+task :create => :env do
+  LogDb.create
+  ConfDb.create
+  TagDb.create
+  WorldDb.create
+  SportDb.create
+end
+
+task :importworld => :env do
+  # populate world tables
+  WorldDb.read_setup( 'setups/sport.db.admin', WORLD_DB_INCLUDE_PATH,
+skip_tags: true )
+end
+
+task :importbuiltin => :env do
+  SportDb.read_builtin
+  LogUtils::Logger.root.level = :debug
+end
+
+
+#####################
+# national teams
+
+task :worldcup => :importbuiltin do
+  SportDb.read_setup( 'setups/teams', EURO_CUP_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/teams', AFRICA_CUP_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/teams', NORTH_AMERICA_GOLD_CUP_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/teams', COPA_AMERICA_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/all',   WORLD_CUP_INCLUDE_PATH )
+end
+
+
+task :importsport => :worldcup do
+  # nothing here
+end
+
+
+task :deletesport => :env do
+  SportDb.delete!
+end
+
+
+desc 'build football.db from scratch (default)'
+task :build => [:clean, :create, :importworld, :importsport] do
+  puts 'Done.'
+end
+
+desc 'update football.db'
+task :update => [:deletesport, :importsport] do
+  puts 'Done.'
+end
+
+desc 'pull (auto-update) football.db from upstream sources'
+task :pull => :env do
+  SportDb.update!
+  puts 'Done.'
+end
+
+
+
+desc 'print versions of gems'
+task :about => :env do
+  puts ''
+  puts 'gem versions'
+  puts '============'
+  puts "textutils #{TextUtils::VERSION}     (#{TextUtils.root})"
+  puts "worlddb   #{WorldDb::VERSION}     (#{WorldDb.root})"
+  puts "sportdb   #{SportDb::VERSION}     (#{SportDb.root})"
+
+  ## todo - add LogUtils  LogDb ??  - check for .root too
+end
+
+
+desc 'print stats for football.db tables/records'
+task :stats => :env do
+  puts ''
+  puts 'world.db'
+  puts '============'
+  WorldDb.tables
+
+  puts ''
+  puts 'football.db'
+  puts '==========='
+  SportDb.tables
+end
+
+
+
+2014-04-13 13:49 GMT+02:00 Thor Helgason <thorvaldurhelga@gmail.com>:
+> Hi there!
+>
+> I've been looking into using sportdb for creating a non-commercial app for
+> the world cup. When trying to use it with Rails 4 I've encountered number of
+> issues regarding multiline anchors in regular expressions in sportdb and
+> some of the dependencies (worlddb and tagutils). Is there a plan to upgrade
+> these libraries to support rails 4 in the near future?
+>
+> Also, I fixed these errors locally to see if it still worked, and I keep
+> getting file parsing erros when running 'sportdb setup'  when attempting to
+> read a file which is not located within a gem:
+>
+> "[info] parsing data 'setups/all'
+> (/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/setups/all.txt)...
+> [info] parsing data 'seasons'
+> (/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/seasons.txt)...
+> [info] parsing data 'setups/all' (/setups/all.txt)...
+> *** error: No such file or directory @ rb_sysopen - /setups/all.txt"
+>
+> Similarly when I run 'sportdb --dbname world-cup-2014.db setup --include
+> ./world-cup --worldinclude ./world.db' I get in the end:
+>
+> "[info] parsing data 'setups/all'
+> (/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/setups/all.txt)...
+> [info] parsing data 'seasons'
+> (/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/seasons.txt)...
+> [info] parsing data 'setups/all' (./world.db/setups/all.txt)...
+> *** error: No such file or directory @ rb_sysopen -
+> ./world.db/setups/all.txt"
+>
+> Otherwise the models seem to work fine in the sportdb/console, I just don't
+> have any data because of these missing file errors.
+>
+> Cheers,
+> Thor
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+

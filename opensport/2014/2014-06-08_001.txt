@@ -1,0 +1,69 @@
+From 1127242268672@xxx Tue Jun 16 00:17:04 +0000 2015
+X-GM-THRID: 1082367410176
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,137db175b4bdf381
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.204.201 with SMTP id la9mr3131046lbc.3.1402251685119;
+        Sun, 08 Jun 2014 11:21:25 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.96.9 with SMTP id do9ls329999wib.53.canary; Sun, 08 Jun
+ 2014 11:21:24 -0700 (PDT)
+X-Received: by 10.180.228.107 with SMTP id sh11mr2309678wic.6.1402251684797;
+        Sun, 08 Jun 2014 11:21:24 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x232.google.com (mail-wi0-x232.google.com [2a00:1450:400c:c05::232])
+        by gmr-mx.google.com with ESMTPS id h4si465394wib.2.2014.06.08.11.21.24
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 08 Jun 2014 11:21:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::232 as permitted sender) client-ip=2a00:1450:400c:c05::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x232.google.com with SMTP id n15so194647wiw.5
+        for <opensport@googlegroups.com>; Sun, 08 Jun 2014 11:21:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=99jUst0BUMO9p40LmWI+cQta6BHpTbF/h+8TDrejbWI=;
+        b=Q+7kuq4eY0Buy4f9BrhA8cEQWNeZv8CiS3gMgmIF7XP2HNNlVI6/PRod3YO1x83UWr
+         lC29mEFcCtQhccrYm1Wlx8GBTm1gpwWbT6njz0XobgnKcESgyWpndMUutRxny0W9Kxyr
+         TSNsX7/8T2MQTmVzkm2/yqX2uolq9IQC0R2K4/AGdtnlZKx7zjkVxgAbvAdn+7aZ/Bq/
+         UXwDEwpIQcZ9TOlgcJocFZDwnrHavz4hJSyO28MFLWtGJ1kgMxRZPBHt6XXdg8A/xNjJ
+         MekYGvQOdz98aMqM0sI/nIEgeckIbLOy2rTEFtkWed16hhnr2KD8iXay0Rkh9nAH1yGd
+         kEfg==
+MIME-Version: 1.0
+X-Received: by 10.180.83.225 with SMTP id t1mr1399895wiy.28.1402251684686;
+ Sun, 08 Jun 2014 11:21:24 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Sun, 8 Jun 2014 11:21:24 -0700 (PDT)
+In-Reply-To: <bd2092ea-4215-4fee-a1ba-fff042faf536@googlegroups.com>
+References: <bd2092ea-4215-4fee-a1ba-fff042faf536@googlegroups.com>
+Date: Sun, 8 Jun 2014 20:21:24 +0200
+Message-ID: <CAAxEZd-aC1d2uHC5RGGk5DC4Tac42zRhRrBK+rNrm=XFsjahHw@mail.gmail.com>
+Subject: Re: [opensport] What kind of text format are you using?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+ Just a shorter answer if the first was too confusing. Sorry.
+
+>Any plans to allow the sports db to import other formats like json or csv?
+
+  It's an open source project. You're more than welcome to add a json
+or csv importer (in C# or whatever is your language of choice).  It's
+a great addition and welcome. You can see the "raw" database table
+schema [1] in the Ruby gem or, of course, download an SQLite copy [2]
+and browse the tables and schema w/ SQLite Studio (free, open-source
+single-exe tool) or similar to see it without the Ruby flavor.
+
+ Cheers.
+
+[1] github.com/sportdb/sport.db.ruby/blob/master/lib/sportdb/schema.rb
+[2] github.com/openfootball/build/releases
+[3] sqlitestudio.pl
+

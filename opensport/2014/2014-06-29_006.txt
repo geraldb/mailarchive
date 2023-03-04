@@ -1,0 +1,63 @@
+From 1468875669504@xxx Tue Jun 16 00:16:56 +0000 2015
+X-GM-THRID: 1435622178816
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,701adb0c82c3ce1e
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.2.130 with SMTP id 2mr219478wju.5.1404073413250;
+        Sun, 29 Jun 2014 13:23:33 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.14.232 with SMTP id s8ls326562wic.42.canary; Sun, 29 Jun
+ 2014 13:23:32 -0700 (PDT)
+X-Received: by 10.194.143.109 with SMTP id sd13mr214508wjb.6.1404073412396;
+        Sun, 29 Jun 2014 13:23:32 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22e.google.com (mail-wi0-x22e.google.com [2a00:1450:400c:c05::22e])
+        by gmr-mx.google.com with ESMTPS id mx7si325812wic.1.2014.06.29.13.23.32
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 29 Jun 2014 13:23:32 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) client-ip=2a00:1450:400c:c05::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f174.google.com with SMTP id bs8so5078161wib.1
+        for <opensport@googlegroups.com>; Sun, 29 Jun 2014 13:23:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=A2rMt8pXrRdnTw+3puTiz5oZTQnb+/vDv1AJQe8Dvt4=;
+        b=kSoyhHzg+AtRLL+5Ktjlu6owsG4YO7L9nqDO3wOnFW/ngKDfYgPCe1EX40v9CVIPhj
+         yWSduAvLKOWoiIzVhKI9WbSZ/SEdxe/+W1JXupHBqUM9v1uUDCtJy/eavjJLJGjzNqo7
+         Lmbd4xbpsemPYewguOI1I4ho4JklW4BUUEMpkFsHNRBiIMutpl9Fduxdo3kUSzGArup8
+         qlf53FIGvzMJug0qJPt8vm1BbE5+Pstw8dUzMwE7+lVb0PxvtJbTJDtgKi07ecLbwE8A
+         Xoe28do8nNR0t2gaNiBBZA1pujpHUCd2SwpByLv/iPSfOsMps2l1VPS0y7SqSLPtqyv1
+         iFcA==
+MIME-Version: 1.0
+X-Received: by 10.194.90.7 with SMTP id bs7mr38606927wjb.25.1404073412298;
+ Sun, 29 Jun 2014 13:23:32 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Sun, 29 Jun 2014 13:23:32 -0700 (PDT)
+In-Reply-To: <eca7ad2a-7105-4ea2-b13e-ecf90c2c1264@googlegroups.com>
+References: <248c9b5e-83a6-45c7-8a72-0236cbeb3616@googlegroups.com>
+	<ffaf55be-0ede-4b25-82b0-c896fd5fe47a@googlegroups.com>
+	<CAAxEZd8VNX3rHsPTp6oZr6rjTUM8npuz_qMaZt+Rx1Cnx7DKyg@mail.gmail.com>
+	<eca7ad2a-7105-4ea2-b13e-ecf90c2c1264@googlegroups.com>
+Date: Sun, 29 Jun 2014 22:23:32 +0200
+Message-ID: <CAAxEZd_2kqHVv4xjWZB3LP_j79+4Ov3qf0JkQ11vDiNsApCXhQ@mail.gmail.com>
+Subject: Re: [opensport] Re: Alternate way to build football.db - instructions
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Joe,
+  I'm not a GitHub org expert - so not sure what's the best (easiest) way.
+
+  I forked your project and renamed it to build-shell [1]. I also
+created a new team, that is, build-shell admin, and you have now admin
+access to the forked repo. Welcome.  Thanks again. Great contribution.
+Cheers.
+
+[1] github.com/openfootball/build-shell
+

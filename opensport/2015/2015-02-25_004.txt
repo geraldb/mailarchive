@@ -1,0 +1,95 @@
+From 2437410717696@xxx Tue Jun 16 00:16:42 +0000 2015
+X-GM-THRID: 2438133186560
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a6ac75f7f7071934,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.97.38 with SMTP id dx6mr3024044pab.39.1424876022109;
+        Wed, 25 Feb 2015 06:53:42 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.28.75 with SMTP id 69ls3256504qgy.7.gmail; Wed, 25 Feb
+ 2015 06:53:41 -0800 (PST)
+X-Received: by 10.140.147.130 with SMTP id 124mr3250770qht.8.1424876021584;
+        Wed, 25 Feb 2015 06:53:41 -0800 (PST)
+Received: by 10.50.55.66 with SMTP id q2msigp;
+        Wed, 25 Feb 2015 02:16:03 -0800 (PST)
+X-Received: by 10.140.109.181 with SMTP id l50mr30786qgf.3.1424859363059;
+        Wed, 25 Feb 2015 02:16:03 -0800 (PST)
+X-Google-Web-Client: true
+Date: Wed, 25 Feb 2015 02:16:02 -0800 (PST)
+From: Joe Rapp <rapp.user06@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <e46546a3-6576-4691-bf03-29be42566230@googlegroups.com>
+Subject: Problems building database
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_5886_1511972125.1424859362954"
+X-Google-Token: EOLBtqcFkToEw0QJ3yA0
+X-Google-IP: 78.192.191.16
+
+------=_Part_5886_1511972125.1424859362954
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5887_541509924.1424859362954"
+
+------=_Part_5887_541509924.1424859362954
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+First of all, thanks for this great tool and making it oss.
+
+I'm trying to build a database with the command line.
+
+After creating a Datafile with the following:
+world 'openmundi/world.db', setup: 'countries' 
+football 'openfootball/fr-france' 
+
+Running the sportdb build command seems to fail while parsing the world.db 
+data:
+...
+[info] parsing data (hash) in zip 'antartica/2-more/continents' 
+(world.db-master/antartica/2-more/continents.yml)...
+[info] parsing data (hash) in zip 'asia/2-more/continents' 
+(world.db-master/asia/2-more/continents.yml)...
+[info] parsing data (hash) in zip 'caribbean/2-more/continents' 
+(world.db-master/caribbean/2-more/continents.yml)...
+[info] parsing data (hash) in zip 'central-america/2-more/continents' 
+(world.db-master/central-america/2-more/continents.yml)...
+[info] parsing data (hash) in zip 'europe/2-more/continents' 
+(world.db-master/europe/2-more/continents.yml)...
+[warn] hash reader - found implicit bool (no) for key; adding quotes to 
+turn into string; see yaml.org/refcard.html (path=)
+
+*** error: 70198166365280 is out of range for ActiveRecord::Type::Integer 
+with limit 4
+
+
+
+
+
+
+------=_Part_5887_541509924.1424859362954
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>First of all, thanks for this great tool and=
+ making it oss.<br><br>I'm trying to build a database with the command line=
+.<br><br>After creating a Datafile with the following:<br>world 'openmundi/=
+world.db', setup: 'countries' <br>football 'openfootball/fr-france' <br><br=
+>Running the sportdb build command seems to fail while parsing the world.db=
+ data:<br>...<br>[info] parsing data (hash) in zip 'antartica/2-more/contin=
+ents' (world.db-master/antartica/2-more/continents.yml)...<br>[info] parsin=
+g data (hash) in zip 'asia/2-more/continents' (world.db-master/asia/2-more/=
+continents.yml)...<br>[info] parsing data (hash) in zip 'caribbean/2-more/c=
+ontinents' (world.db-master/caribbean/2-more/continents.yml)...<br>[info] p=
+arsing data (hash) in zip 'central-america/2-more/continents' (world.db-mas=
+ter/central-america/2-more/continents.yml)...<br>[info] parsing data (hash)=
+ in zip 'europe/2-more/continents' (world.db-master/europe/2-more/continent=
+s.yml)...<br>[warn] hash reader - found implicit bool (no) for key; adding =
+quotes to turn into string; see yaml.org/refcard.html (path=3D)<br><br>*** =
+error: 70198166365280 is out of range for ActiveRecord::Type::Integer with =
+limit 4<br><br><br><br><br><br></div>
+------=_Part_5887_541509924.1424859362954--
+------=_Part_5886_1511972125.1424859362954--
+

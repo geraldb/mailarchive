@@ -1,0 +1,182 @@
+From 6962029079893639168@xxx Fri May 14 06:28:32 +0000 2021
+X-GM-THRID: 6959446546034196480
+X-Received: by 2002:a1c:c206:: with SMTP id s6mr7853650wmf.47.1620973711656;
+        Thu, 13 May 2021 23:28:31 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:adf:9b95:: with SMTP id d21ls2358383wrc.0.gmail; Thu, 13 May
+ 2021 23:28:30 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJy1uroGLm9BeXwpYF91xA2UoTozeh5CHFSYiCbn488MPO8xmaNFQkZXVvXwYiBQhVLgMCzB
+X-Received: by 2002:adf:f3cd:: with SMTP id g13mr49507220wrp.94.1620973710423;
+        Thu, 13 May 2021 23:28:30 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1620973710; cv=none;
+        d=google.com; s=arc-20160816;
+        b=lkPRAm02EMzgQcig1DXTfa2etQygCvXUpoiGdLXaIitoAYIOYM5q6TaZUvyWrewT54
+         wpfOwkBPSsWmzg2DczjyqjFDVhekX7DpEu7u0i7G56rh9z7kPrnsXx5di6WiEt61BCcE
+         20VPv3bXjNqvTPMaIUX2akllkoASrlGT1ggZXChkvUc7GFF0gLaf3wsdqRuagefsk/bK
+         7olDRgSmk7b5vlOa5dsdSVMcCwT17iGvbvDoRrIMs3fcjWAq5O7b9tMN/SR6BcX/B4dy
+         Jajk5YNzcLhXPLVXEuY7UkKBOnNE/jkuVs7HF6h765Oiym5UecmXkiZxhPqYsdko7e9J
+         SzRw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=ooR/2ucmb/tvqvnZ8x9dDkpc+NdULycJcdnBVaEnFFo=;
+        b=ZjRFdtOCQL2r6Udi8/qqIfYZp/h7xIxDlHwUQ2PYMJUeM8djoC0ayxcEPldXSQ/mNz
+         uEGeTCe6F4MsWaNuskJv3MbfgRLLz3/7ENffHC8LPENXNPJeP/rIy8KU0gN2f9Ny8Uvg
+         WZW0NuiVXGriExXoK0sxkubmsJ18FeXv7BPpFavcyLDJwy/Cd7AhE+IH6/Rt5YIj4lx4
+         aSr7Y5BD3P9puNNtcFF8k3YkJEZqInMNIxwC1vEWB65UGmbTdRZh1nplzKUNEbX+hG05
+         XbOuw7gMF9j+LPhIgeMfqwQ+6RBh6gdiz182kcMpq5FlwKIsXy6afB7YGtWOj24PVrKC
+         SL7w==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=VfKxH2fs;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ej1-x62e.google.com (mail-ej1-x62e.google.com. [2a00:1450:4864:20::62e])
+        by gmr-mx.google.com with ESMTPS id f74si434763wmf.4.2021.05.13.23.28.30
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 13 May 2021 23:28:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62e as permitted sender) client-ip=2a00:1450:4864:20::62e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=VfKxH2fs;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ej1-x62e.google.com with SMTP id j14so1793039ejy.1
+        for <opensport@googlegroups.com>; Thu, 13 May 2021 23:28:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=ooR/2ucmb/tvqvnZ8x9dDkpc+NdULycJcdnBVaEnFFo=;
+        b=VfKxH2fsr3JEfHmgnWLrCorbA1ob5Y4F81ur8GWsBoxWF51+EWge1f3gy43RuMxj6J
+         WU9HTlEP/piCNxOuFnabmbt61L2xJA/bksCanGNmi59MwXFurJ/pAVYbrlCBjxfNwXOo
+         3rQ7Slrbg98FqBrMIF/DvIzUaVWRROVG1t8vC+Ht69DCLDmTO9ltl/ZnoS/SSYtAlzzY
+         qmRjWMV88QJ6pSTnzMFCdBN12w13HI3fvfbvmK+3gz95zLdffKvHV1pTUxmFCuzQDRtr
+         HhE9r/c9iHuI3wbfB2UsCoOupOfq+wR8+DromG82XRmwqXrVqLZUltyop116mtGS5vEz
+         YKiA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=ooR/2ucmb/tvqvnZ8x9dDkpc+NdULycJcdnBVaEnFFo=;
+        b=LfinU6h8AggUXld7FWrbCE3MD39zE3RQd4ow0cd6/f89ewiv6WbqRfEk/LxAMF9SvN
+         pASMMp2iZV8z4c5ihGc9gd4Zi2lUBoOJEDffBGgo8XzLx0NxdCrwkkdlNZHtIwum1Qui
+         XygZlTelZ9jxjgss+LSHtcz5+tUhemalBhFQn4YhCQYku8ZDfMrIXLMT9HxX8LlvEi1x
+         1Lo7/DAhivIKd4BezHprxup40kqP2LLYG5m/alBezqJtF0cvzNdb4+rIeHwr/57i1fp5
+         +LWxt6maCsxNQjKCI0pxOXJfnWqAXls+oiSi3bGkUmBscM+WBaZNGzIs4U/SRPw5m5kB
+         /9Jw==
+X-Gm-Message-State: AOAM5323RQM55mA8VI/r9KIXlDFFS6A3oPMq0GJQJMZCHL9M5cfZOMEf
+	DkcKbQFUtyzAp82agLKmizwdGhRXkWQgcDVKhBYo1M0dQ5gZzA==
+X-Received: by 2002:a17:906:b0d:: with SMTP id u13mr3437585ejg.159.1620973709982;
+ Thu, 13 May 2021 23:28:29 -0700 (PDT)
+MIME-Version: 1.0
+References: <eacebec8-d32b-4416-adc7-6c60af1e44d6n@googlegroups.com>
+ <CAAxEZd-01Jv3LameYKS0y3oe3YGYrR2rN3nDv6Coh_VnABbfgg@mail.gmail.com> <8b05e2ac-5ad4-4752-8fb1-e53669bcc353n@googlegroups.com>
+In-Reply-To: <8b05e2ac-5ad4-4752-8fb1-e53669bcc353n@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 14 May 2021 08:28:16 +0200
+Message-ID: <CAAxEZd-wznouZGiaC+gMzDROphDTPoZq1yJ4Fxh7NFq9eogHZg@mail.gmail.com>
+Subject: Re: [opensport] Build World-Cups database
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+> I was following the exact steps, no extra script or anything, just using
+>  the $ sportdb new worldcup command inside an empty directory.
+>
+> I got a somewhat working file that was the query to build the database bu=
+t not the content itself.
+> Am i missing something? something that i should have installed and i didn=
+'t?
+
+     It is hard to tell as I cannot see what is in your directory.
+     If you run $ sportdb new worldcup   the command has kind of three step=
+s:
+
+Step 1 - the build scripts gets download, that is, Datafile and stored
+in the (empty) directory.
+Step 2- the zip archives get download and stored in the (almost empty)
+directory.
+Step 3-  the single-file sport.db SQLite database/file gets created in
+the directory and the datasets read in from the local zip archives
+from Step 2.
+
+    If you get an error, please try the --verbose option e.g. in an
+empty (cleared out) directory:
+
+     $ sportdb --verbose new worldcup
+
+
+     Cheers. Prost.
+
+
+El vie, 14 may 2021 a las 0:27, Jonathan Bergara
+(<jonathan.bergara@gmail.com>) escribi=C3=B3:
+>
+> Hi Gerald, thanks for answering so quickly and sorry i couldn't get back =
+to you sooner.
+>
+> I was following the exact steps, no extra script or anything, just using =
+the $ sportdb new worldcup command inside an empty directory.
+>
+> I got a somewhat working file that was the query to build the database bu=
+t not the content itself. Am i missing something? something that i should h=
+ave installed and i didn't?
+>
+> El viernes, 7 de mayo de 2021 a las 5:40:33 UTC-3, Gerald Bauer escribi=
+=C3=B3:
+>>
+>> Hello,
+>>
+>> Thanks for trying football.db.
+>>
+>>
+>> > I've been trying for a few hours now to get the .db file for world-cup=
+s
+>> > but i always reach the same stage and error:
+>>
+>> I tried a fresh install via:
+>>
+>>    $ gem install sportdb
+>>
+>> And than a fresh build of the world cup datasets via:
+>>
+>>    $ sportdb new worldcup
+>>
+>> Sorry - it's working here. I haven't checked the data in details the sta=
+ts via:
+>>
+>>    $ sportdb stats
+>>
+>> read
+>>
+>>     {:adapter=3D>"sqlite3", :database=3D>"./sport.db"}
+>>      1 leagues  /  21 seasons
+>>      21 events (league+season recs)  /  211 rounds  /  117 groups  /  0 =
+stages
+>>      84 teams
+>>      900 matches
+>>
+>>
+>> How are you building the datasets?
+>> What command do you use? Are you using the same steps?
+>>
+>> Note: Sorry - for now you CANNOT update the datasets (that is, running t=
+he build twice) - you
+>> always have to start with a fresh database (and your updated datasets if=
+ desired).
+>>
+>>    Cheers. Prost.
+>>
+>>
+>>
+> --
+> You received this message because you are subscribed to the Google Groups=
+ "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an=
+ email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit https://groups.google.com/d/msgi=
+d/opensport/8b05e2ac-5ad4-4752-8fb1-e53669bcc353n%40googlegroups.com.
+

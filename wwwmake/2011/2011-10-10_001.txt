@@ -1,0 +1,53 @@
+From 961725595648@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 945040654336
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,e2bdae5cd763d129
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.101.75.8 with SMTP id c8mr4394583anl.28.1318278589095;
+        Mon, 10 Oct 2011 13:29:49 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.101.163.13 with SMTP id q13ls12747004ano.0.gmail; Mon, 10 Oct
+ 2011 13:29:48 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.101.54.15 with SMTP id g15mr1305442ank.8.1318278588786; Mon,
+ 10 Oct 2011 13:29:48 -0700 (PDT)
+Received: by i9g2000yqe.googlegroups.com with HTTP; Mon, 10 Oct 2011 13:29:48
+ -0700 (PDT)
+Date: Mon, 10 Oct 2011 13:29:48 -0700 (PDT)
+In-Reply-To: <20279154.270.1317723297265.JavaMail.geo-discussion-forums@yqar15>
+References: <20279154.270.1317723297265.JavaMail.geo-discussion-forums@yqar15>
+User-Agent: G2/1.0
+X-Google-Token: ELyrzfQEXNB_0BL0im80
+X-Google-Web-Client: true
+X-Google-Header-Order: HUALESNKRC
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.23)
+ Gecko/20110921 Ubuntu/10.04 (lucid) Firefox/3.6.23,gzip(gfe)
+X-Google-IP: 62.47.158.247
+Message-ID: <cbb4e2fd-ae2d-422e-9ee6-9d122232e67c@i9g2000yqe.googlegroups.com>
+Subject: Re: Unknown command slideshow
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   Once you have installed the gem you get a "free standing" binary.
+Thus, instead of
+
+       sudo gem slideshow test
+
+   Try:
+
+       slideshow test
+
+    or
+
+      slideshow -h
+
+    Cheers.
+

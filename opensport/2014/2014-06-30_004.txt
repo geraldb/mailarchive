@@ -1,0 +1,57 @@
+From 1513723265024@xxx Tue Jun 16 00:16:55 +0000 2015
+X-GM-THRID: 1514902913024
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4543632f4fb094cc,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.189.138 with SMTP id gi10mr2734603wic.0.1404126099846;
+        Mon, 30 Jun 2014 04:01:39 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.8.4 with SMTP id n4ls217997laa.98.gmail; Mon, 30 Jun 2014
+ 04:01:39 -0700 (PDT)
+X-Received: by 10.112.13.36 with SMTP id e4mr606784lbc.11.1404126099110;
+        Mon, 30 Jun 2014 04:01:39 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22a.google.com (mail-we0-x22a.google.com [2a00:1450:400c:c03::22a])
+        by gmr-mx.google.com with ESMTPS id bz15si434194wib.2.2014.06.30.04.01.39
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 30 Jun 2014 04:01:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22a as permitted sender) client-ip=2a00:1450:400c:c03::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x22a.google.com with SMTP id w61so7917826wes.29
+        for <opensport@googlegroups.com>; Mon, 30 Jun 2014 04:01:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=3YjkkhFp1mZnDF0WaluKWU+RAlckyHCuPuBoRobEmLU=;
+        b=IQr5dYEopSJH83BJ/xwW1nApco8H0FG5g6kU3KrhoHtTtPSvPNovTmkbkLj62RleML
+         bzd8MtNDN1khf22rrEEhCz3STq8drzWEsrm5/9K5KyA+yshQP0FleHZC/kAGvjpX/iLA
+         WGPfQbRaJsOiLjRvu84vPoGcUySkE/vXz1Kcni3TaToyrt53nXpH4h0lP9FJlGMqmFz6
+         YTHuW/ry+lLx6+kohR8DhMmI+35rzWyx3gF/79VcVXRf17dm0nILsUiEjpy1jnlSQttX
+         oV87J0Qa7+yhomRY+Ohi168HbsUUzAtMlQ4N02xpvHq+WIS3shRAecOqaXa0qM7QQ7em
+         +uHQ==
+MIME-Version: 1.0
+X-Received: by 10.180.91.194 with SMTP id cg2mr29259288wib.12.1404126099031;
+ Mon, 30 Jun 2014 04:01:39 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Mon, 30 Jun 2014 04:01:39 -0700 (PDT)
+Date: Mon, 30 Jun 2014 13:01:39 +0200
+Message-ID: <CAAxEZd9_81vGk7N5A7YL7bUuFfgs3wKTuEzhAhETJn7SE76AsQ@mail.gmail.com>
+Subject: Unofficial FIFA HTTP JSON API @ live.mobileapp.fifa.com/api/wc/matches
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   FYI: Just found via a Hacker News (HN) comment:
+
+    You might try/ check the "unofficial" FIFA JSON API [1] for mobile apps.
+
+    Cheers.
+
+[1] live.mobileapp.fifa.com/api/wc/matches
+

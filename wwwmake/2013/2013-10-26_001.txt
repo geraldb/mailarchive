@@ -1,0 +1,89 @@
+From 1406365859840@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1397708816384
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,5d449b8b567da683
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Web Slide Shows - S5, S6,
+ S9, Slidy, deck.js, impress.js 'n' Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.112.169.101 with SMTP id ad5mr3215414lbc.1.1382804567190;
+        Sat, 26 Oct 2013 09:22:47 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.180.92.67 with SMTP id ck3ls274987wib.10.gmail; Sat, 26 Oct
+ 2013 09:22:46 -0700 (PDT)
+X-Received: by 10.15.99.195 with SMTP id bl43mr5062545eeb.3.1382804566125;
+        Sat, 26 Oct 2013 09:22:46 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22c.google.com (mail-we0-x22c.google.com [2a00:1450:400c:c03::22c])
+        by gmr-mx.google.com with ESMTPS id p3si314027wia.3.2013.10.26.09.22.46
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 26 Oct 2013 09:22:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22c as permitted sender) client-ip=2a00:1450:400c:c03::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22c as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f172.google.com with SMTP id q58so5101660wes.3
+        for <webslideshow@googlegroups.com>; Sat, 26 Oct 2013 09:22:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=iF41VMU65Sznt6uVgqT/BHj6b93xDrH8BLO5nbdYjgQ=;
+        b=NWFNJhFGNLNdtFijNrX6ApcnD99sL763cIaJkX6gVyl2287tQJ0qrEeLdH3my3snYk
+         MJGjzpFLkPQNQZJgOj3dGYy5GwjCA34g/ML5gGp2Cyqa8qRjyhU3HndvEFe7Oz1Y+8kW
+         HDYB9eMUtGFOfj5IinkfCcFm5QGBjCGTqM01H+N2i/SMzkEDCDmLIbStXW3N+Zltf7Lr
+         /6F1K/kvhx+qoGkHeutP02uvQtay/FpC5wJd0ZxMnzMtNg+px8elxantRLWxRZN06AqW
+         3XtZiZwSscIVrApk4hJqAI9WiGJ5xvM5jyr3essWKOSoV19nbapR+UtgsihLqzLjiYp2
+         6XOg==
+MIME-Version: 1.0
+X-Received: by 10.180.188.144 with SMTP id ga16mr2841688wic.42.1382804566031;
+ Sat, 26 Oct 2013 09:22:46 -0700 (PDT)
+Received: by 10.216.232.10 with HTTP; Sat, 26 Oct 2013 09:22:45 -0700 (PDT)
+In-Reply-To: <8c137451-6d70-4d7b-991b-0fab8e287a82@googlegroups.com>
+References: <876f1a22-2475-449b-aaae-70a826912a43@googlegroups.com>
+	<8c137451-6d70-4d7b-991b-0fab8e287a82@googlegroups.com>
+Date: Sat, 26 Oct 2013 18:22:45 +0200
+Message-ID: <CAAxEZd9XHXnSQSYihLC=ZUCaM1omS-s_Y9q2w-f+G2L+utTPug@mail.gmail.com>
+Subject: Re: [slideshow:324] Re: Include text in notes/handout view only
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+   FYI: The S6 Format (that is, CSS classes) are documente here ->
+https://github.com/geraldb/s6/wiki/S6-Format
+  All the best. Cheers.
+
+2013/10/25 Damon Overboe <damon.overboe@gmail.com>:
+> Hiccup, it's `<div class="notes" />` using **class** not name. I guess I
+> just needed to post it to see my error! :-D
+>
+>
+> On Friday, October 25, 2013 3:12:28 PM UTC-5, Damon Overboe wrote:
+>>
+>> I thought there used to be a way to mark some text to display only in the
+>> toggled handout mode, but I cannot seem to remember it nor find it.
+>>
+>> I'm using Markdown as the input language and the standard s6 themes.
+>>
+>> I *thought* that it was either using the `<!--  your comments in here -->`
+>> or something like `<div name="notes" />` but none of those seem to be
+>> working, and I'm not coming up with anything when searching this group or
+>> the web.
+>>
+>> Is this only in a specific theme pack? And what is the proper syntax?
+>>
+>> Thanks!
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n' Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to webslideshow+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/groups/opt_out.
+

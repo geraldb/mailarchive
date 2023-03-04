@@ -1,0 +1,89 @@
+From 193087930368@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 191974342656
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,3370afe0db84b32b,start
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.89.170 with SMTP id bp10mr707307wib.4.1408879435101;
+        Sun, 24 Aug 2014 04:23:55 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.180.198.81 with SMTP id ja17ls159814wic.18.canary; Sun, 24 Aug
+ 2014 04:23:54 -0700 (PDT)
+X-Received: by 10.181.13.166 with SMTP id ez6mr705966wid.3.1408879434863;
+        Sun, 24 Aug 2014 04:23:54 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x230.google.com (mail-wg0-x230.google.com [2a00:1450:400c:c00::230])
+        by gmr-mx.google.com with ESMTPS id hk1si250591wib.2.2014.08.24.04.23.54
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 24 Aug 2014 04:23:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::230 as permitted sender) client-ip=2a00:1450:400c:c00::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f48.google.com with SMTP id x13so12112569wgg.7
+        for <openmundi@googlegroups.com>; Sun, 24 Aug 2014 04:23:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=IWhev+GrR5yIbMlHJ+LjigSGoSsDAcs3L4wjF6Fi14k=;
+        b=xfWOEkPXcrWDAIEuhfyy0IOu9WpwnHYfxjNuEYw3P50jIfGivjjsVdvray/pbN2eNe
+         DQez78fK6NtEnZT3WkAKUMwJZk1QdvuBiyHEzldFGqsP3p1VGq67f0TBS2R/rtSDXm8c
+         yvVTjC4ADMP1iakzDcfIK6szksDxufxMZDJ1YF2DuJ+1qGok944cc6Pvz2hsGAgNoSG5
+         L30xY9v76/d+TyCUkHhBxuZ8KYWzXio7wmeBc2S8UBwUIQpV1fEXaxXwO1B/pUXItF6u
+         gSSned3KW94vXk1nK1aG8JPm4/icPGp+WDP8utUDIfuu6o5zF1Td4adIYOVgH3jf+uFb
+         jhjQ==
+MIME-Version: 1.0
+X-Received: by 10.180.108.1 with SMTP id hg1mr8861549wib.25.1408879434779;
+ Sun, 24 Aug 2014 04:23:54 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Sun, 24 Aug 2014 04:23:54 -0700 (PDT)
+Date: Sun, 24 Aug 2014 13:23:54 +0200
+Message-ID: <CAAxEZd9SDpRYfyVqJaLDTo8p+PjMCzPGT3+Nq=yg5OOpsYhUPw@mail.gmail.com>
+Subject: factbook Update - Includes Header n Long Form Categry / Field Name Option
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've uploaded a new factbook gem [1] version, that is, 0.1.3.
+What's news?
+
+
+ Now you can use an include header option e.g.
+
+   page = Factbook::Page.new( 'br', header: true )
+
+ will include a leading header section. Example:
+
+{
+ "Header": {
+   "code": "au",
+   "generator": "factbook/0.1.2",
+   "last_built": "2014-08-24 12:55:39 +0200"
+ }
+ ...
+}
+
+ and you can now use the new long form category / field names option e.g.
+
+   page = Factbook::Page.new( 'br', fields: 'long')
+
+  will change the category / field names to the long form (that is,
+passing through unchanged from the source). e.g.
+
+  page['econ']['budget_surplus_or_deficit']['text']
+  page['econ']['labor_force_by_occupation']['agriculture']
+  page['trans']['ports_and_terminals']['river_ports']
+
+  becomes
+
+  page['Economy']['Budget surplus (+) or deficit (-)']['text']
+  page['Economy']['Labor force - by occupation']['agriculture']
+  page['Transportation']['Ports and terminals']['river port(s)']
+
+  That's it. Cheers.
+
+[1] github.com/worlddb/factbook.ruby
+

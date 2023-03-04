@@ -1,0 +1,71 @@
+From 1521158717440@xxx Tue Jun 16 00:16:55 +0000 2015
+X-GM-THRID: 1524135624704
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,230dc9464d134de6,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.29.169 with SMTP id l9mr4426296lah.3.1404147494371;
+        Mon, 30 Jun 2014 09:58:14 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.5.100 with SMTP id r4ls288139lar.107.gmail; Mon, 30 Jun
+ 2014 09:58:13 -0700 (PDT)
+X-Received: by 10.112.158.8 with SMTP id wq8mr824516lbb.12.1404147493520;
+        Mon, 30 Jun 2014 09:58:13 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22d.google.com (mail-wi0-x22d.google.com [2a00:1450:400c:c05::22d])
+        by gmr-mx.google.com with ESMTPS id gc5si591676wic.1.2014.06.30.09.58.13
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 30 Jun 2014 09:58:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22d as permitted sender) client-ip=2a00:1450:400c:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f173.google.com with SMTP id cc10so6414292wib.0
+        for <opensport@googlegroups.com>; Mon, 30 Jun 2014 09:58:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=9JiPh6vbxEsVbZ/yv+tqbF/ZSfYtCi7ybMyHc3iSuOk=;
+        b=RlCyqP6ah9nRGhkfdw+0e9GibJ+DQvXPX0Pwc45xRZ45IMU6UOHWZon+FmqlWs4e/4
+         /yJNGedUs8d/7EyEHD0GTWW/YDpcNK7GtMtL5tomwu7dke63Qq6n7k9TDUJa9oE0Q9fZ
+         UFB3+Za6stOYaQGigeO92FP5b1WIzumle8LvHcFCcC6oo2Y4cYktjtK4fHlqdmLdy995
+         337xO/d2Q5AgUA1WKwsrfYIJf2zng6dP3V2VEuhYC5nOk1gTTRv1Sn3C1XH9ch+Dvk1u
+         QW4h/wfSC+VrEdVSpwhCJBBj/fPr6sI8ESx1uDQbxAjHj8P59xAm0KGtYeG6yuetwxkK
+         MGIQ==
+MIME-Version: 1.0
+X-Received: by 10.180.109.101 with SMTP id hr5mr31309692wib.25.1404147493436;
+ Mon, 30 Jun 2014 09:58:13 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Mon, 30 Jun 2014 09:58:13 -0700 (PDT)
+Date: Mon, 30 Jun 2014 18:58:13 +0200
+Message-ID: <CAAxEZd-9K4XRQVBdLi6etb3ODP2MoBu-1OyLToLXkxxjkRS7GA@mail.gmail.com>
+Subject: sportdb update (v1.9.3) - Now Includes Better Squads Reader
+ (Auto-Creates Missing Players)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've uploaded a new sportdb version, that is, v1.9.3   What's new?
+
+   The sportdb reader for squads (rosters) will now auto-add missing
+players. You can try it for example using the World Cup 1930 squads
+e.g.
+
+   $ rake update DATA=history     # loads/reads/parses all world cup
+from 1930 to 2010
+
+   Squads get added to the rosters join table (one record per player)
+and missing players get auto-added to the persons table.
+
+  All still a little rough. Still trying to figure out how to deal
+with a circular reference e.g. schedules/fixtures include goals scored
+by players (from squads) but the schedules get currently read before
+the squads.
+
+   That's it.
+
+   Enjoy the France - Nigeria  and Germany - Algeria matches today!   Cheers.
+

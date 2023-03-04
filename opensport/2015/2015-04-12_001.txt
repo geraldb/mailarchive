@@ -1,0 +1,68 @@
+From 2598125961216@xxx Tue Jun 16 00:16:39 +0000 2015
+X-GM-THRID: 2580327432192
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,1631df092ed45367
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.224.73 with SMTP id ra9mr13124371pac.9.1428828673247;
+        Sun, 12 Apr 2015 01:51:13 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.38.148 with SMTP id t20ls2421608qgt.98.gmail; Sun, 12 Apr
+ 2015 01:51:13 -0700 (PDT)
+X-Received: by 10.236.0.167 with SMTP id 27mr13023974yhb.53.1428828672996;
+        Sun, 12 Apr 2015 01:51:12 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qk0-x230.google.com (mail-qk0-x230.google.com. [2607:f8b0:400d:c09::230])
+        by gmr-mx.google.com with ESMTPS id k6si974800qca.0.2015.04.12.01.51.12
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 12 Apr 2015 01:51:12 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::230 as permitted sender) client-ip=2607:f8b0:400d:c09::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qk0-x230.google.com with SMTP id x75so116841039qkg.1
+        for <opensport@googlegroups.com>; Sun, 12 Apr 2015 01:51:12 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=313lMY1MlxrQIzweNn+BeKXHsFfA41ormgxwYWS0qx4=;
+        b=ncly0J8tFpDepq4VWgUpBmjYHQ6W0YHxVJkjwtwdtKz4c31SASdcVHq+5P5FaQcqCN
+         vyYY+2HIVpnb32yG0WUbhS2KVi3o4zwvtXQLofayOz6tpbiQK3T3e+bua0aIHmsjXieB
+         o5TPk5ijDC29n6BqIzgvUuCxd6eQNGWjXvK6gq4il5yK64iEtiUb5VeK3CyMP2r3NrKa
+         9C8wwjWhwTvpTH/XhAt3vO/GliX+UlqEA5GUat1ZcFNGrMZ9sJ7sBa/U4QL8figEWZlF
+         UbFNouJZixDkEg4B5PO6Fg6bolOBkqE8NThj6c1JfziC6DEjeAfjwoqhDhRztWY9wylU
+         ytcQ==
+MIME-Version: 1.0
+X-Received: by 10.140.31.54 with SMTP id e51mr11095619qge.95.1428828672908;
+ Sun, 12 Apr 2015 01:51:12 -0700 (PDT)
+Received: by 10.229.5.6 with HTTP; Sun, 12 Apr 2015 01:51:12 -0700 (PDT)
+In-Reply-To: <cebac3cf-c766-4ad8-ba3a-abf2f310c4c7@googlegroups.com>
+References: <91effa04-541f-44f1-97a6-d8954d8cb619@googlegroups.com>
+	<CAAxEZd_N_dfVu9wd=x1zvdaCfJaekQ_VKd9ZX=D9yJB2Zx-9Ow@mail.gmail.com>
+	<cebac3cf-c766-4ad8-ba3a-abf2f310c4c7@googlegroups.com>
+Date: Sun, 12 Apr 2015 10:51:12 +0200
+Message-ID: <CAAxEZd9ASJakacNoaCWW9myZEQrRhqNCC7i=1CO1sXpnGRWtnA@mail.gmail.com>
+Subject: Re: [opensport] errors when building build.sh
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Thanks for retrying. Sorry that was a bug in the ground/stadium
+reader (the read method no longer takes arguments).  I uploaded a new
+sportdb-models gem, that is, 1.11.1.  Please update e.g.
+
+  $ gem install sportdb-models
+
+  and retry. You should end-up with 200 stadium records. I also fixed
+the en=>eng country code. Cheers.
+
+PS: I added a new stadiums.rb datafile [1] - You can try:
+$ sportdb new stadiums
+
+[1] github.com/openfootball/datafile/blob/master/stadiums.rb
+

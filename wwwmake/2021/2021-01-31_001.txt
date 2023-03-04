@@ -1,0 +1,95 @@
+From 6923985094520602624@xxx Sun Jan 31 17:58:27 +0000 2021
+X-GM-THRID: 6923441330876055552
+X-Received: by 2002:a19:7403:: with SMTP id v3mr6936074lfe.67.1612115906475;
+        Sun, 31 Jan 2021 09:58:26 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a2e:8745:: with SMTP id q5ls2617024ljj.6.gmail; Sun, 31 Jan
+ 2021 09:58:24 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJye9ygfYZo+3iN0jBWDWgUVO3Tg/s4rPTXkdEx5ekINUOaKZwihPXp3eJ8aN891kyXONaul
+X-Received: by 2002:a2e:9ed1:: with SMTP id h17mr7679298ljk.160.1612115904659;
+        Sun, 31 Jan 2021 09:58:24 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1612115904; cv=none;
+        d=google.com; s=arc-20160816;
+        b=g/7t7KVugBHouLSsub9+9M7pf2xeBLCz+soc13pNKgCrGaTIu/wMDsvBtQQDZGM8uf
+         AqbhDdAuLkQtXkYoVTwSw99mBrL6hWKRF/gaqHEHQRCOSzDYte0+pWadulPV21pm3Zrc
+         hcVGo2v7HObOr/9wGlPzdj7BHfdHykLMCHtjNAsnLYJd2YZ8fsAsKnCX4zmu5f/NxkEq
+         A+7G+EVC1vxXU1zgzsID+dFkILaR3wx78uOmPnz76EwC4MO4wZohO48gkdlFEhb65znn
+         MwGfrwWyjgrHn1/FhG5QB8jopImYjyzvlexnoPKOYHGNQLMOVMleClntzaPROM9HyZ/o
+         M9NA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=3NdCOQ8TLRUe17EJ5zNLUyVvySttmmjTIdIJoG83kV0=;
+        b=kVnpv8E32Mtx7gIvvL6uUESR7XsFoFxHXSeVgogGU41AOteYy+ixG5+sAYTi6QVxkg
+         FcnNusgZEfd2AOsvBoyGfdt8bmAbLc8lHh+pyPtIWLZc2RGBWlS3VycyDo65At7D575O
+         SJC4ZTg9JoRy/EtOJBIvxeTOSuLZOk4Arg2HthEWnGUeYWPx5hJ28M1LbIbhNYOZAXm2
+         q2d1DVRCayPQ5/Yi6AO0UdasL9BALRI+Bn/E6PNGhN8fLFSuEoAcfrEKL92mHnbM5zRt
+         PWejuHwv4vtkrUhoifp5V4Ew6vNUdjUgJAEyg/ykXQS0AbKDb9ZcxwxhPve9yHY6MidT
+         oiSg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Ao04iZGu;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::631 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ej1-x631.google.com (mail-ej1-x631.google.com. [2a00:1450:4864:20::631])
+        by gmr-mx.google.com with ESMTPS id c6si526634ljk.2.2021.01.31.09.58.24
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 31 Jan 2021 09:58:24 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::631 as permitted sender) client-ip=2a00:1450:4864:20::631;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Ao04iZGu;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::631 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ej1-x631.google.com with SMTP id sa23so4467456ejb.0
+        for <wwwmake@googlegroups.com>; Sun, 31 Jan 2021 09:58:24 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=3NdCOQ8TLRUe17EJ5zNLUyVvySttmmjTIdIJoG83kV0=;
+        b=Ao04iZGus5JC+jUpEOQVLwxvB8ghfnL2n17A4ydiLchbePA8LdW/US8cUPV4lzAoF3
+         K+d347QYKxdRX+sd5kKq0yoRMX/MtW6fWB78vmhvUHCBnRSF1PXpdtiBKobA82sh4pav
+         MafMMBzaAQx6wGaL1hOurur1/NhkL51QhTNxgVIGiQvsxKAPrY1MLAsY/Au31DxbaXVD
+         sqL7fgQ92j9HJtgTIUK2l6TbVn1ElX3kQeWtFPBPJyVh6Rm4LnLvgJV4O8a50/vQWaPP
+         ULpdzH2epQl/eKF5UkKWIehUfBj0oFlFhyPfUrX9zzfOk/syE+aRotL++++KnRezk6CI
+         ih1g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=3NdCOQ8TLRUe17EJ5zNLUyVvySttmmjTIdIJoG83kV0=;
+        b=Uq4ZD27FP1u5F/zMG1BBkNEGorgQOFS91GgM3o6S7VxX/5O1EKOTBDNgkt9rncKACk
+         PC59xDAXOfwwP8gAasWKyoqaNBBzjiQrIhttYXCB3JBMuYGu0fuo3hctXD42VgTEix6M
+         XK+niL0RGVNmAI0Kqn0aaC4H1K/PnCBcMRTsbjEt7NhLwDlu7mN2dHXeeELsxJmeJY3M
+         d3dM21JWeER8rog/R7e7VEnkEnO66aT8madPnfeEU6WbS/4kXXLczBFb45PQYdlqzW3i
+         62QDBYjxKIMZjdemHgqBKAf4AGagZ2IaulGoK6BxgGaLaZ3BV0qMDeQeVu87unOvP3vv
+         Dcjg==
+X-Gm-Message-State: AOAM532sVSKrhFDKbaBv3TZ0FxjuCrwicO6SUd4cGd2dG1wSVJW644JC
+	FoI5SbX01g9hPWmw0pfWswDE997uMOa4m4se0YOpZNWcwBRgxQ==
+X-Received: by 2002:a17:906:c410:: with SMTP id u16mr13602711ejz.159.1612115904234;
+ Sun, 31 Jan 2021 09:58:24 -0800 (PST)
+MIME-Version: 1.0
+References: <b6a3cb0e-60ed-46b7-83ca-ccec842e2924n@googlegroups.com>
+In-Reply-To: <b6a3cb0e-60ed-46b7-83ca-ccec842e2924n@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 31 Jan 2021 18:58:12 +0100
+Message-ID: <CAAxEZd86enAvyY8kREk04so0+nSKFWVbPqj6zz7h72ErGgoDfQ@mail.gmail.com>
+Subject: Re: [wwwmake:521] how to reference variables from ini ?
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+ > how to reference variables from ini?
+
+   Yeah, I know - sorry - adding "custom" variables / settings in the
+ini and than reference it in the template is a missing feature.
+   I am all for it - as always I hope to find some time later this
+year to work on some missing features.
+
+   For now only "hard-coded" known variables / settings are supported
+(and they must have a 1:1 mapping in the database schema).
+   Not sure if this helps.
+
+  Cheers. Prosit 2021!
+

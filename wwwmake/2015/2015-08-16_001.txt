@@ -1,0 +1,122 @@
+From 6183563602836848640@xxx Sun Aug 16 11:04:53 +0000 2015
+X-GM-THRID: 6183563601644617728
+X-Received: by 10.50.114.98 with SMTP id jf2mr11413439igb.4.1439723093391;
+        Sun, 16 Aug 2015 04:04:53 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.50.79.161 with SMTP id k1ls644723igx.17.canary; Sun, 16 Aug
+ 2015 04:04:52 -0700 (PDT)
+X-Received: by 10.50.82.100 with SMTP id h4mr11388649igy.9.1439723092702;
+        Sun, 16 Aug 2015 04:04:52 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x234.google.com (mail-io0-x234.google.com. [2607:f8b0:4001:c06::234])
+        by gmr-mx.google.com with ESMTPS id g7si599880igr.0.2015.08.16.04.04.52
+        for <wwwmake@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 16 Aug 2015 04:04:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::234 as permitted sender) client-ip=2607:f8b0:4001:c06::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x234.google.com with SMTP id s203so124390796iod.0
+        for <wwwmake@googlegroups.com>; Sun, 16 Aug 2015 04:04:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=VZ1e/N9Jhc397lPSZbM0U0cc/t/e1E4bhiRACFj6i+4=;
+        b=TtwKf0WxxFWtzaJ1s3HoBWLzlvYvEiPNjS3iNWEAEbT2SxUps82urXRQxYRt/9h39E
+         4nKSBDYhX6Z/GxJo+QntJkPKvn0jewYp8YpvM+F8BLp49QkeaV6b1v1MXffSLQ6htsE2
+         25k5DcRtvqaD1zc0DNCevWLKDVvHd2Q84MoXlU4a5EcUcpgp+S6ZLtKHwcqBMz9WDUz0
+         Sjk4ecscHPefNb0+sadJvijZN7IfWFmIPZI4XqbbK/8kPd+tXAHDEPZk3h6gW2+WXvOk
+         NB7QxbdHfYW3bldn/at5HS2UqOvjDfFXnD0rvYrpJ1zNIy7igjHV/GJNkWIU2sj5Cw5I
+         B0jQ==
+MIME-Version: 1.0
+X-Received: by 10.107.7.77 with SMTP id 74mr8694600ioh.178.1439723092610; Sun,
+ 16 Aug 2015 04:04:52 -0700 (PDT)
+Received: by 10.107.15.196 with HTTP; Sun, 16 Aug 2015 04:04:52 -0700 (PDT)
+Date: Sun, 16 Aug 2015 13:04:52 +0200
+Message-ID: <CAAxEZd_y4m2FsLR9KOgxm0LrrP3HGkYwpw2YeGfJxyb=tRH6Jg@mail.gmail.com>
+Subject: New Jekyll Command Line Tool - mrh/mrhyde - Static Site Quick Starter
+ Script Wizard - Automate, Automate, Automate (w/ Ruby)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I=E2=80=99ve put together the mrhyde-tools gem [1] that includes a comman=
+d
+line tool that lets you run static site quick starter wizard scripts.
+For example, use
+
+  $ mrhyde new starter   # or
+  $ mrh n starter
+
+  to download and install (unzip/unpack) a theme archive and configure
+a static site ready-to-use e.g.:
+
+>> Welcome, before setting up your site Mr. Hyde will ask you some question=
+s.
+>>
+>> Q: What's your site's title? [Your Site Title]:  Another Beautiful Stati=
+c Site
+>> Q: What's your name? [Henry Jekyll]: Edward Hyde
+>> Q: Select your theme:
+>>     1 - Starter
+>>     2 - Bootstrap
+>>     3 - Minimal
+>>   Your choice (1-3)? [1]: 2
+>>
+>> Thanks! Ready-to-go. Stand back.
+>>
+>>  Downloading Dr. Jekyll's Bootstrap Theme...
+>>  Setting up Dr. Jeykll's Bootstrap Theme..
+>>  ...
+>>  Updating settings in _config.yml...
+>>    title: "Another Beautiful Static Site"
+>>    author.name: "Edward Hyde"
+>>  ...
+>> Done.
+
+
+  Write your own Mr. Hyde wizard script. It's just Ruby (with an added
+mini language) e.g.:
+
+    say "Welcome, before setting up your site Mr. Hyde will ask you
+some questions."
+
+    title =3D ask "What's your site's title", "Your Site Title"
+
+    name  =3D ask "What's your name", "Henry Jekyll"
+
+    theme =3D select "Select your theme", ["Starter", "Bootstrap", "Minimal=
+"]
+
+    say "Thanks! Ready-to-go. Stand back."
+
+    install_theme theme
+
+    config do |c|
+      c.title        =3D title
+      c.author.name  =3D name
+
+      c.mrhyde.last_updated =3D Time.now
+      c.mrhyde.title        =3D title
+      c.mrhyde.name         =3D name
+      c.mrhyde.theme        =3D theme
+    end
+
+    say "Done."
+
+
+  For more quick starter wizard scripts see the Mr. Hyde's Scripts [2] libr=
+ary.
+  For more themes see the Dr. Jekyll's Themes [3] directory. Cheers.
+
+[1] github.com/mrhydescripts/mrhyde
+[2] github.com/mrhydescripts/scripts
+[3] drjekyllthemes.github.io
+

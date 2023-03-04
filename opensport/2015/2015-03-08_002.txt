@@ -1,0 +1,217 @@
+From 2507275239424@xxx Tue Jun 16 00:16:42 +0000 2015
+X-GM-THRID: 2377276981248
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cd242d30f1f3615d
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.147.39 with SMTP id th7mr12482786pab.40.1425842027210;
+        Sun, 08 Mar 2015 12:13:47 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.7.208 with SMTP id g77ls203166ioi.10.gmail; Sun, 08 Mar
+ 2015 12:13:46 -0700 (PDT)
+X-Received: by 10.50.85.17 with SMTP id d17mr612402igz.7.1425842026692;
+        Sun, 08 Mar 2015 12:13:46 -0700 (PDT)
+X-Google-Doc-Id: 3ad4a8d2a2019317
+X-Google-Web-Client: true
+Date: Sun, 8 Mar 2015 12:13:43 -0700 (PDT)
+From: maizarw@gmail.com
+To: opensport@googlegroups.com
+Message-Id: <4677f145-4962-4ef7-955a-1a2d465fd2f2@googlegroups.com>
+In-Reply-To: <c1109677-ed16-4a98-9030-e5778193f2b6@googlegroups.com>
+References: <ec906df1-8c4e-4e7f-818f-4a7804b24d82@googlegroups.com>
+ <CAAxEZd-YTsKsA3kjKPv=rW97xza38tv2jTS6RycyDU5Q3Rh1Xw@mail.gmail.com>
+ <050ea85e-361e-4129-aa03-4072002f20a3@googlegroups.com>
+ <CAAxEZd80+_DS9oT5DaibtdPDQiHBSRHMyjR2-yvSzaOnozZuhA@mail.gmail.com>
+ <016077bc-2d07-450a-a9a0-c0bf31feed15@googlegroups.com>
+ <CAAxEZd8aqWBcP7-Ek=rmjnXNR-av36Nkd4jqCOQBhG++22=YxQ@mail.gmail.com>
+ <f16d3951-a274-4b95-ac77-29a20298000e@googlegroups.com>
+ <CAAxEZd9AZJL9sQ7bG1XLsX+aAvnYpoDxRKA=tfSjknXxEXpMjA@mail.gmail.com>
+ <f0733f7b-2f74-43b6-9550-90825c773877@googlegroups.com>
+ <CAAxEZd9+Y5Y8KiVmtYpds058rv=XdKM8BUgfipx8Lopvf5QRhQ@mail.gmail.com>
+ <c1109677-ed16-4a98-9030-e5778193f2b6@googlegroups.com>
+Subject: Re: [opensport] Unable to build en-england repo
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2051_1546674788.1425842023913"
+X-Google-Token: EOe-8qcFsCQJlcOB6x00
+X-Google-IP: 122.167.213.135
+
+------=_Part_2051_1546674788.1425842023913
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2052_1821098628.1425842023913"
+
+------=_Part_2052_1821098628.1425842023913
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+You were correct about creating a custom build script for update. When I 
+removed 'deletesport', it has stopped deleting all the records in MySQL.
+desc 'update football.db'
+task :update => [:deletesport, :importsport] do
+  puts 'Done.'
+end
+
+I still ended up having a failry large amount of tables without any data. 
+Could you help me pinpoint the tables that should have some data after 
+running 'builld' and 'update' commands for EPL?
+
+empty tables list:
+footballdb BASE TABLE alltime_standing_entries
+footballdb BASE TABLE alltime_standings
+footballdb BASE TABLE assocs
+footballdb BASE TABLE assocs_assocs
+footballdb BASE TABLE badges
+footballdb BASE TABLE country_codes
+footballdb BASE TABLE event_standing_entries
+footballdb BASE TABLE event_standings
+footballdb BASE TABLE events_grounds
+footballdb BASE TABLE goals
+footballdb BASE TABLE grounds
+footballdb BASE TABLE group_standing_entries
+footballdb BASE TABLE group_standings
+footballdb BASE TABLE groups
+footballdb BASE TABLE groups_teams
+footballdb BASE TABLE langs
+footballdb BASE TABLE names
+footballdb BASE TABLE persons
+footballdb BASE TABLE rosters
+footballdb BASE TABLE usages
+
+
+Regards,
+
+- Maizar 
+
+On Friday, February 27, 2015 at 11:17:55 PM UTC+5:30, mai...@gmail.com 
+wrote:
+>
+> Hi Gerald,
+>
+> Thanks for the clarification.I will try it out. Appreciate the quick 
+> response.
+>
+> Regards,
+>
+> - Maizar
+>
+> On Friday, February 27, 2015 at 12:53:13 AM UTC+5:30, Gerald Bauer wrote:
+>>
+>> Hello, 
+>>   FYI: You must use all UPCASE for your rake variables e.g.  rake 
+>> update DATA=eng 
+>>
+>>    To see the difference it's best to check the source of the 
+>> Rakefile.  For now update -  will NOT recreate the database schema and 
+>> will NOT update the world datasets  but it will basically rebuild all 
+>> football datasets (delete the old ones first). 
+>>
+>>    Yes, if you just want to update a single file season you can pass 
+>> it along and the parser will try to update the database records (you 
+>> will have to use your own little (custom) build script - just make 
+>> sure you do NOT call #delete_all or similar). 
+>>
+>>    If you want to have goals added - somebody has to add the goals to 
+>> the dataset first ;-) sorry no magic here. For now only some world cup 
+>> datsets have goals included if you need some examples to get started. 
+>>
+>>   Have a great weekend. Cheers. 
+>>
+>
+------=_Part_2052_1821098628.1425842023913
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald,<div><br></div><div>You were correct about creat=
+ing a custom build script for update. When I removed 'deletesport', it has =
+stopped deleting all the records in MySQL.</div><div><div>desc 'update foot=
+ball.db'</div><div>task :update =3D&gt; [:deletesport, :importsport] do</di=
+v><div>&nbsp; puts 'Done.'</div><div>end</div></div><div><br></div><div>I s=
+till ended up having a failry large amount of tables without any data. Coul=
+d you help me pinpoint the tables that should have some data after running =
+'builld' and 'update' commands for EPL?</div><div><br></div><div><div>empty=
+ tables list:</div><div>footballdb<span class=3D"Apple-tab-span" style=3D"w=
+hite-space:pre">=09</span>BASE TABLE<span class=3D"Apple-tab-span" style=3D=
+"white-space:pre">=09</span>alltime_standing_entries</div><div>footballdb<s=
+pan class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>BASE TABLE=
+<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>alltime_=
+standings</div><div>footballdb<span class=3D"Apple-tab-span" style=3D"white=
+-space:pre">=09</span>BASE TABLE<span class=3D"Apple-tab-span" style=3D"whi=
+te-space:pre">=09</span>assocs</div><div>footballdb<span class=3D"Apple-tab=
+-span" style=3D"white-space:pre">=09</span>BASE TABLE<span class=3D"Apple-t=
+ab-span" style=3D"white-space:pre">=09</span>assocs_assocs</div><div>footba=
+lldb<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>BASE=
+ TABLE<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>ba=
+dges</div><div>footballdb<span class=3D"Apple-tab-span" style=3D"white-spac=
+e:pre">=09</span>BASE TABLE<span class=3D"Apple-tab-span" style=3D"white-sp=
+ace:pre">=09</span>country_codes</div><div>footballdb<span class=3D"Apple-t=
+ab-span" style=3D"white-space:pre">=09</span>BASE TABLE<span class=3D"Apple=
+-tab-span" style=3D"white-space:pre">=09</span>event_standing_entries</div>=
+<div>footballdb<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09=
+</span>BASE TABLE<span class=3D"Apple-tab-span" style=3D"white-space:pre">=
+=09</span>event_standings</div><div>footballdb<span class=3D"Apple-tab-span=
+" style=3D"white-space:pre">=09</span>BASE TABLE<span class=3D"Apple-tab-sp=
+an" style=3D"white-space:pre">=09</span>events_grounds</div><div>footballdb=
+<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>BASE TAB=
+LE<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>goals<=
+/div><div>footballdb<span class=3D"Apple-tab-span" style=3D"white-space:pre=
+">=09</span>BASE TABLE<span class=3D"Apple-tab-span" style=3D"white-space:p=
+re">=09</span>grounds</div><div>footballdb<span class=3D"Apple-tab-span" st=
+yle=3D"white-space:pre">=09</span>BASE TABLE<span class=3D"Apple-tab-span" =
+style=3D"white-space:pre">=09</span>group_standing_entries</div><div>footba=
+lldb<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>BASE=
+ TABLE<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>gr=
+oup_standings</div><div>footballdb<span class=3D"Apple-tab-span" style=3D"w=
+hite-space:pre">=09</span>BASE TABLE<span class=3D"Apple-tab-span" style=3D=
+"white-space:pre">=09</span>groups</div><div>footballdb<span class=3D"Apple=
+-tab-span" style=3D"white-space:pre">=09</span>BASE TABLE<span class=3D"App=
+le-tab-span" style=3D"white-space:pre">=09</span>groups_teams</div><div>foo=
+tballdb<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>B=
+ASE TABLE<span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span=
+>langs</div><div>footballdb<span class=3D"Apple-tab-span" style=3D"white-sp=
+ace:pre">=09</span>BASE TABLE<span class=3D"Apple-tab-span" style=3D"white-=
+space:pre">=09</span>names</div><div>footballdb<span class=3D"Apple-tab-spa=
+n" style=3D"white-space:pre">=09</span>BASE TABLE<span class=3D"Apple-tab-s=
+pan" style=3D"white-space:pre">=09</span>persons</div><div>footballdb<span =
+class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>BASE TABLE<spa=
+n class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>rosters</div=
+><div>footballdb<span class=3D"Apple-tab-span" style=3D"white-space:pre">=
+=09</span>BASE TABLE<span class=3D"Apple-tab-span" style=3D"white-space:pre=
+">=09</span>usages</div></div><div><br></div><div><br></div><div><div>Regar=
+ds,</div><div><br></div><div>- Maizar&nbsp;</div><div><br></div>On Friday, =
+February 27, 2015 at 11:17:55 PM UTC+5:30, mai...@gmail.com wrote:<blockquo=
+te class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left:=
+ 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">Hi Gerald,<div><br></d=
+iv><div>Thanks for the clarification.I will try it out. Appreciate the quic=
+k response.</div><div><br></div><div>Regards,</div><div><br></div><div>- Ma=
+izar<br><br></div><div>On Friday, February 27, 2015 at 12:53:13 AM UTC+5:30=
+, Gerald Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin:0;ma=
+rgin-left:0.8ex;border-left:1px #ccc solid;padding-left:1ex">Hello,
+<br>&nbsp; FYI: You must use all UPCASE for your rake variables e.g. &nbsp;=
+rake
+<br>update DATA=3Deng
+<br>
+<br>&nbsp; &nbsp;To see the difference it's best to check the source of the
+<br>Rakefile. &nbsp;For now update - &nbsp;will NOT recreate the database s=
+chema and
+<br>will NOT update the world datasets &nbsp;but it will basically rebuild =
+all
+<br>football datasets (delete the old ones first).
+<br>
+<br>&nbsp; &nbsp;Yes, if you just want to update a single file season you c=
+an pass
+<br>it along and the parser will try to update the database records (you
+<br>will have to use your own little (custom) build script - just make
+<br>sure you do NOT call #delete_all or similar).
+<br>
+<br>&nbsp; &nbsp;If you want to have goals added - somebody has to add the =
+goals to
+<br>the dataset first ;-) sorry no magic here. For now only some world cup
+<br>datsets have goals included if you need some examples to get started.
+<br>
+<br>&nbsp; Have a great weekend. Cheers.
+<br></blockquote></div></div></blockquote></div></div>
+------=_Part_2052_1821098628.1425842023913--
+------=_Part_2051_1546674788.1425842023913--
+

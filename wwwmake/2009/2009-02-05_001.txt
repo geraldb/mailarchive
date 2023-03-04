@@ -1,0 +1,77 @@
+From 405758017536@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 389709561856
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,58db04fab18bc715
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.223.105.72 with SMTP id s8mr26046fao.13.1233857948181;
+        Thu, 05 Feb 2009 10:19:08 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from mail-fx0-f20.google.com (mail-fx0-f20.google.com [209.85.220.20])
+        by mx.google.com with ESMTP id 13si146016bwz.7.2009.02.05.10.19.07;
+        Thu, 05 Feb 2009 10:19:07 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.220.20 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.220.20;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.220.20 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by mail-fx0-f20.google.com with SMTP id 13so560586fxm.21
+        for <webslideshow@googlegroups.com>; Thu, 05 Feb 2009 10:19:07 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.181.221.7 with SMTP id y7mr245114bkq.195.1233857947675; Thu, 
+	05 Feb 2009 10:19:07 -0800 (PST)
+In-Reply-To: <3011f7d0-f27e-4b46-ad24-5353cbe75cdb@z27g2000prd.googlegroups.com>
+References: <b010b579-b47d-4f23-a54c-0a902a804043@t26g2000prh.googlegroups.com>
+	 <976bdc0d-b03c-4c17-acb2-5a1f49e98815@v5g2000prm.googlegroups.com>
+	 <3011f7d0-f27e-4b46-ad24-5353cbe75cdb@z27g2000prd.googlegroups.com>
+Date: Thu, 5 Feb 2009 19:19:07 +0100
+Message-ID: <1f058eab0902051019ybb15153m2f23c399eca3bc0a@mail.gmail.com>
+Subject: Re: [slideshow] Re: How to use s5 theme?
+From: Gerald Bauer <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+> Unfortunately, I had already read that thread for using your own
+> template and couldn't make sense of it. In particular, I don't
+> understand how the "manifest" file works. This is the manifest file
+> for s5:
+>
+>   __file__.svg    gradient.svg.erb
+>   __file__.html   header.html.erb + footer.html.erb
+>   __file__.css    style.css.erb
+>   s5/opera.css
+>   s5/outline.css
+>   s5/print.css
+>   s5/s5-core.css
+>   s5/slides.js
+>
+> It seems to include the s5 files opera.css, outline.css, etc.. But
+> what do the first three lines do? And what are erb files? Sorry, for
+> the newbie questions -- it's just that I'm not familiar with ruby  :(
+
+    To start documenting the new packaging format I'd say the easiest
+is if I package up the original S5 pack as an sample how it all works
+and fits together.  If you're not in a rush I'll post the new sample
+package in a couple of days.
+
+   The manifest format basically just lists all files and templates to
+copy and generate.
+
+   If the destination is the same as the source as a shortcut you can
+drop the source (second para) e.g.:
+
+   s5/slides.js  s5/slides.js   # copy to
+<current_working_dir>/s5/slides.js from <template_root>/s5/slides.j
+
+   is the same as:
+
+   s5/slides.js
+
+  Names that include __file__ will run through a template engine, that
+is, erb (embedded ruby) and __file__ gets replaced using your
+slideshow's name ( __file__.css becomes  microformats.css, for
+example).
+
+  All other files get copied verbatim. That's basically the procedure
+for now. Cheers.
+

@@ -1,0 +1,59 @@
+From 635167571968@xxx Tue Jun 16 00:17:12 +0000 2015
+X-GM-THRID: 629638430720
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cee1dc7df1649710
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.137.50 with SMTP id x38mr15529333yhi.9.1399964038518;
+        Mon, 12 May 2014 23:53:58 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.97.200 with SMTP id m66ls1657457qge.83.gmail; Mon, 12 May
+ 2014 23:53:58 -0700 (PDT)
+X-Received: by 10.140.48.241 with SMTP id o104mr1976qga.38.1399964038303;
+        Mon, 12 May 2014 23:53:58 -0700 (PDT)
+X-Google-Doc-Id: 835ef095a52c68a4
+X-Google-Web-Client: true
+Date: Mon, 12 May 2014 23:53:57 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <fc89f8ba-195a-4e2d-9008-3e1a7cdcf020@googlegroups.com>
+In-Reply-To: <ea864852-ce76-4271-b9f8-677b26b094b5@googlegroups.com>
+References: <ea864852-ce76-4271-b9f8-677b26b094b5@googlegroups.com>
+Subject: Re: Error when setting up.
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_4578_22772934.1399964037197"
+X-Google-Token: EIWDx5sFDFownsGr_-M0
+X-Google-IP: 62.47.152.51
+
+------=_Part_4578_22772934.1399964037197
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4579_22851049.1399964037197"
+
+------=_Part_4579_22851049.1399964037197
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Nico,
+
+   Thanks for reporting the bug w/ activerecord. 
+
+   It looks like an issue with the latest ActiveRecord gem version, that 
+is, 4.1.1.  Maybe it no longer supports :order  - that might be strange 
+news - will check the gem shortly - in the meantime you can always use an 
+older activerecord version eg. 4.0.0.
+
+  What match schedule / fixture are you trying to read?   Austria? World 
+Cup?  
+
+  Cheers.
+
+------=_Part_4579_22851049.1399964037197
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello Nico,<br><br>&nbsp;&nbsp; Thanks for reporting the bug w/ activerecord. <br><br>&nbsp;&nbsp; It looks like an issue with the latest ActiveRecord gem version, that is, 4.1.1.&nbsp; Maybe it no longer supports :order&nbsp; - that might be strange news - will check the gem shortly - in the meantime you can always use an older activerecord version eg. 4.0.0.<br><br>&nbsp; What match schedule / fixture are you trying to read?&nbsp;&nbsp; Austria? World Cup?&nbsp; <br><br>&nbsp; Cheers.</div>
+------=_Part_4579_22851049.1399964037197--
+
+------=_Part_4578_22772934.1399964037197--
+

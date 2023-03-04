@@ -1,0 +1,76 @@
+From 6198882078446059520@xxx Sat Sep 26 17:48:24 +0000 2015
+X-GM-THRID: 6197747507220447232
+X-Received: by 10.129.101.196 with SMTP id z187mr10094517ywb.41.1443289704713;
+        Sat, 26 Sep 2015 10:48:24 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.107.151.145 with SMTP id z139ls1225768iod.46.gmail; Sat, 26
+ Sep 2015 10:48:24 -0700 (PDT)
+X-Received: by 10.67.3.137 with SMTP id bw9mr10711703pad.4.1443289704506;
+        Sat, 26 Sep 2015 10:48:24 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x233.google.com (mail-io0-x233.google.com. [2607:f8b0:4001:c06::233])
+        by gmr-mx.google.com with ESMTPS id j7si1174828igu.1.2015.09.26.10.48.24
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 26 Sep 2015 10:48:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) client-ip=2607:f8b0:4001:c06::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x233.google.com with SMTP id b144so140086155iof.1
+        for <openmundi@googlegroups.com>; Sat, 26 Sep 2015 10:48:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=2P2H4vgKtAslAlB01Mm/iSKsLszgGZuO692xEewm2W8=;
+        b=CndApmcI34A4RBTeIH+JgfQlEhdkMp7BRFg+znWgI3GrsGT8MzIr20wwI+jcxe0ygr
+         IUu+xdCW4JrlmjPrs+73n0Te0/lGheZOAFgXcpsyHL7u/d1YFxo7fWuwCVJMq4GPRIPq
+         L8s+29ylX7vbxc4j+V22kGcE1w4dLl+hhT4RvH1lXmvWQO7jcN9ZLIsdkGfCuQ/5nU5X
+         J4eew9Iml4JwwqyrC8DVWc0q1HJ085ZO2Bdb2Wwy8QFRKtZ1OC7zkhevWp9yJO8f2yBj
+         MA+iKtRUhOsbFrTvHgWYb8LAS1G4qJmoe8LgFd3vvHlAd5ASlsdDwTgo0UG5L4nEG/Em
+         Nb8Q==
+MIME-Version: 1.0
+X-Received: by 10.107.8.164 with SMTP id h36mr11854925ioi.35.1443289704338;
+ Sat, 26 Sep 2015 10:48:24 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Sat, 26 Sep 2015 10:48:24 -0700 (PDT)
+In-Reply-To: <65a169bb-ab35-4176-8c36-37082762e16e@googlegroups.com>
+References: <CAAxEZd83kRPwywx-H_1VDDANsT4zp9Kjm=_XG1n44gnpyKFpMA@mail.gmail.com>
+	<65a169bb-ab35-4176-8c36-37082762e16e@googlegroups.com>
+Date: Sat, 26 Sep 2015 19:48:24 +0200
+Message-ID: <CAAxEZd-4+w7OL41ROi90YgHQ9H2roAnLjao-DFbjgnXvGiwTFA@mail.gmail.com>
+Subject: Re: [openmundi] Re: World Factbook Country Profiles (Pages) without
+ Chrome (Just "Core" Data in HTML) - New Repo /factbook
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+    In case anyone follows along - the new facebook/ repo now includes
+all 200+ country profiles [1] (as cleaned-up HTML pages, that is,
+without any headers, footers, scripts, etc - just the "core" country
+profile).
+
+   Note: You can now browse the pages online also by region [2]. The
+regions used (see below) are - of course - the regions 1:1 copied from
+the original pages:
+
+  -  Europe
+  - South Asia | Central Asia | East & Southeast Asia | Middle East
+  -  Africa
+  -  North America | Central America and Caribbean | South America
+  -  Australia-Oceania
+  -  Antarctica
+  - Oceans | World
+
+ Cheers.
+
+PS: To download all pages (stored in the _profiles/ folder) clone the
+git archive or use the .zip archive download button.
+
+[1]  openmundi.github.io/factbook
+[2]  openmundi.github.io/factbook/regions
+

@@ -1,0 +1,47 @@
+From 232939061248@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 236181258240
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,b526c63f44a856c2,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Received: by 10.100.142.15 with SMTP id p15mr939042and.8.1232416339061; Mon, 
+	19 Jan 2009 17:52:19 -0800 (PST)
+Date: Mon, 19 Jan 2009 17:52:19 -0800 (PST)
+X-IP: 81.184.187.142
+User-Agent: G2/1.0
+X-Google-Token: 23YQRgwAAAA0CDMfOHW5LZ5onTGZvERe
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) 
+	AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.43 Safari/525.19,gzip(gfe),gzip(gfe)
+Message-ID: <73274d3c-74bf-4ae0-b866-1593faebd6a0@n33g2000pri.googlegroups.com>
+Subject: Contribute
+From: jcangas <jorge.cangas@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+X-Google-Approved: gerald@vanbeta.com via web at 2009-01-21 09:20:17
+
+Hi Gerald! thanks a lot by slideshow: great tool to build slides with
+ruby.
+
+I'm maniatic about separate source from build products, but slideshow
+writes outputs files where it founds the input file. More: slideshow
+only support the input file at current path, i .e. "slideshow ./src/
+sample.textile" don't works.
+
+I'm maniatic, so I chnged the slideshow source code. I added support
+for full and relative paths in input file name, and I added an extra
+option "-o my/output/path". So now I can run
+
+slideshow -o slides1 src/sample.textile
+
+and I get my slides in slides1 directory. By defautlt if no -o is
+given, the ouput is writen to directory slides, relative to current,
+but you can "-o ." for backward compatibility.
+
+I think this can be useful to more people so, the question is: do you
+want merge it?  Maybe  can move to GitHub and fork??. If you dont want
+to move now, I can push my version to GitHub, if you want.
+
+best regards
+

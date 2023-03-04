@@ -1,0 +1,159 @@
+From 2102799630336@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 1861086085120
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,f3433d66f198c649
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.56.200 with SMTP id c8mr18808223obq.7.1409634772660;
+        Mon, 01 Sep 2014 22:12:52 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.38.135 with SMTP id g7ls757063obk.12.gmail; Mon, 01 Sep
+ 2014 22:12:52 -0700 (PDT)
+X-Received: by 10.182.225.167 with SMTP id rl7mr54726obc.13.1409634772196;
+        Mon, 01 Sep 2014 22:12:52 -0700 (PDT)
+X-Google-Doc-Id: 2f4401866014ce84
+X-Google-Web-Client: true
+Date: Mon, 1 Sep 2014 22:12:51 -0700 (PDT)
+From: Carl-Erik Svensson <csvenss2@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <e05bef52-9437-4bc7-81b0-8860fb6fdb38@googlegroups.com>
+In-Reply-To: <CAAxEZd_CMG7SbXKZ-yHA_yUQYshbqpRicREY9=OB73MM8u8jTQ@mail.gmail.com>
+References: <7d892c64-8738-47aa-8d1b-5b98beee6b96@googlegroups.com>
+ <7e0ca3ad-6e93-4e72-a099-5fbaf0cb6ea1@googlegroups.com>
+ <93c109c5-43b2-4701-8388-b8d15d4d14d4@googlegroups.com>
+ <CAAxEZd_CMG7SbXKZ-yHA_yUQYshbqpRicREY9=OB73MM8u8jTQ@mail.gmail.com>
+Subject: Re: [opensport] Re: And ActiveRecord::RecordNotFound ERROR when
+ building champion league
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_513_194574171.1409634771513"
+X-Google-Token: ENOjlaAFdTkITx4sIOs0
+X-Google-IP: 24.130.213.187
+
+------=_Part_513_194574171.1409634771513
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_514_178520747.1409634771519"
+
+------=_Part_514_178520747.1409634771519
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I tried working on this a little.  I found the following satisfied the 
+build tasks if you are using openfootball/build[1].
+
+Add the following to build/tasks/setups/cl.rake:
+
+task :cl201415  => :importbuiltin do
+  SportDb.read_setup( 'setups/clubs',    CLUBS_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',    AT_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',    DE_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',    EN_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/teams',    ES_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/teams',    IT_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/2014_15', 
+ EUROPE_CHAMPIONS_LEAGUE_INCLUDE_PATH )
+end
+
+Comment out the following teams (or alternatively properly add them in the 
+respecitve repos) in 2014-2015/cl.yml and cl_quali.yml    
+
+    paris
+
+    monaco
+
+    aktobe
+
+    lille
+
+    salzburg
+
+    grasshopper
+
+    athletic
+
+    leverkusen
+
+    basel
+Couldn't push those to the build and champions league repos respectively 
+bcs I don't have permission :)
+
+Then, you can use the build repo[1] to build:
+
+rake build DATA=cl201415
+
+Hope that gets you going!  Looks like there's probably more cleanup to be 
+done.
+
+--Carl
+
+On Monday, August 25, 2014 10:31:17 AM UTC-7, Gerald Bauer wrote:
+>
+> Hello, 
+>    Sorry for any trouble. Likely you're missing a football club in 
+> your setup / database.  For debugging set the logging level to :debug 
+> in your build script and for details about the stack trace use the 
+> --verbose flag.  What record is mssing e.g. what key will not get 
+> found? 
+>
+>    Also maybe someone else can help out - that's the point of the 
+> mailing list / forum. Welcome. 
+>
+>    Cheers. 
+>
+
+------=_Part_514_178520747.1409634771519
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I tried working on this a little. &nbsp;I found the follow=
+ing satisfied the build tasks if you are using openfootball/build[1].<div><=
+br></div><div>Add the following to build/tasks/setups/cl.rake:</div><div><b=
+r></div><div><div><font face=3D"courier new, monospace">task :cl201415 &nbs=
+p;=3D&gt; :importbuiltin do</font></div><div><font face=3D"courier new, mon=
+ospace">&nbsp; SportDb.read_setup( 'setups/clubs', &nbsp; &nbsp;CLUBS_INCLU=
+DE_PATH )</font></div><div><font face=3D"courier new, monospace">&nbsp; Spo=
+rtDb.read_setup( 'setups/clubs', &nbsp; &nbsp;AT_INCLUDE_PATH )</font></div=
+><div><font face=3D"courier new, monospace">&nbsp; SportDb.read_setup( 'set=
+ups/clubs', &nbsp; &nbsp;DE_INCLUDE_PATH )</font></div><div><font face=3D"c=
+ourier new, monospace">&nbsp; SportDb.read_setup( 'setups/clubs', &nbsp; &n=
+bsp;EN_INCLUDE_PATH )</font></div><div><font face=3D"courier new, monospace=
+">&nbsp; SportDb.read_setup( 'setups/teams', &nbsp; &nbsp;ES_INCLUDE_PATH )=
+</font></div><div><font face=3D"courier new, monospace">&nbsp; SportDb.read=
+_setup( 'setups/teams', &nbsp; &nbsp;IT_INCLUDE_PATH )</font></div><div><fo=
+nt face=3D"courier new, monospace">&nbsp; SportDb.read_setup( 'setups/2014_=
+15', &nbsp;EUROPE_CHAMPIONS_LEAGUE_INCLUDE_PATH )</font></div><div><font fa=
+ce=3D"courier new, monospace">end</font></div></div><div><br></div><div>Com=
+ment out the following teams (or alternatively properly add them in the res=
+pecitve repos) in 2014-2015/cl.yml and cl_quali.yml<span style=3D"line-heig=
+ht: 18px;">&nbsp; &nbsp;&nbsp;</span></div><div><p class=3D"p1">&nbsp; &nbs=
+p; paris</p><p class=3D"p1">&nbsp; &nbsp; monaco</p><p class=3D"p1">&nbsp; =
+&nbsp; aktobe</p><p class=3D"p1">&nbsp; &nbsp; lille</p><p class=3D"p1">&nb=
+sp; &nbsp; salzburg</p><p class=3D"p1">&nbsp; &nbsp; grasshopper</p><p clas=
+s=3D"p1">&nbsp; &nbsp; athletic</p><p class=3D"p1">&nbsp; &nbsp; leverkusen=
+</p><p class=3D"p1">&nbsp; &nbsp; basel</p><div>Couldn't push those to the =
+build and champions league repos respectively bcs I don't have permission :=
+)</div><div><br></div><div>Then, you can use the build repo[1] to build:</d=
+iv><div><br></div><div>rake build DATA=3Dcl201415</div><div><br></div><div>=
+Hope that gets you going! &nbsp;Looks like there's probably more cleanup to=
+ be done.</div><div><br></div><div>--Carl</div><br>On Monday, August 25, 20=
+14 10:31:17 AM UTC-7, Gerald Bauer wrote:<blockquote class=3D"gmail_quote" =
+style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-l=
+eft: 1ex;">Hello,
+<br>&nbsp; &nbsp;Sorry for any trouble. Likely you're missing a football cl=
+ub in
+<br>your setup / database. &nbsp;For debugging set the logging level to :de=
+bug
+<br>in your build script and for details about the stack trace use the
+<br>--verbose flag. &nbsp;What record is mssing e.g. what key will not get
+<br>found?
+<br>
+<br>&nbsp; &nbsp;Also maybe someone else can help out - that's the point of=
+ the
+<br>mailing list / forum. Welcome.
+<br>
+<br>&nbsp; &nbsp;Cheers.
+<br></blockquote></div></div>
+------=_Part_514_178520747.1409634771519--
+
+------=_Part_513_194574171.1409634771513--
+

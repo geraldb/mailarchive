@@ -1,0 +1,119 @@
+From 6389105023289131008@xxx Mon Feb 20 08:30:34 +0000 2017
+X-GM-THRID: 6387667141910331392
+Date: Mon, 20 Feb 2017 00:30:34 -0800 (PST)
+From: Kevin Christopher Henry <k@severian.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <60167144-366a-4dc5-be02-3ebf0bc5be82@googlegroups.com>
+In-Reply-To: <CAAxEZd8G6jvcvJMebU5vOuuXFceLJY0zpY+R2EhDkpCWkyL1Yw@mail.gmail.com>
+References: <5ff6c1d2-64f2-489c-bb28-08b5223cd609@googlegroups.com>
+ <CAAxEZd9Vk=uWdYVGn3jOjdx-6vRfq_hn8k1ng0xtzUWgqQ1k0A@mail.gmail.com> <c09e3a70-ad11-44a6-b4da-30fb4f011754@googlegroups.com>
+ <CAAxEZd8G6jvcvJMebU5vOuuXFceLJY0zpY+R2EhDkpCWkyL1Yw@mail.gmail.com>
+Subject: Re: [opensport] Django ORM adapter available
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_823_1802000486.1487579434068"
+X-Google-Token: EKrSqsUFOiO-d_4E3C80
+X-Google-IP: 96.232.169.190
+
+------=_Part_823_1802000486.1487579434068
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_824_464548526.1487579434068"
+
+------=_Part_824_464548526.1487579434068
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+Thanks, I've updated the documentation.
+
+The "right" way to do this is really to make a reusable Django app that 
+users can just install and configure (e.g. pip install 
+django-openfootball). However, since there's no evidence that anyone else 
+wants to use this, I think I'll hold off for now. :-) I'll leave it as a 
+Gist for the time being, but if there's sufficient interest I'll make it a 
+proper app and host it at a sportlabs repository.
+
+Cheers,
+Kevin
+
+On Friday, February 17, 2017 at 3:00:51 AM UTC-5, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>  >  the Gist is here: 
+> https://gist.github.com/marfire/44822f94af25f11a2fda5beba2593229 
+>
+>    Wow. Looks great. Thanks for sharing. 
+>
+>   If you want to add some notes to the docu - I've created a new 
+> Python page [1]. 
+>
+>   If you don't mind I have sent you two inviations (via GitHub) to 
+> join the openfootball and sportlabs teams  - if you accept you can 
+> change the /docs "inline" in your browser or if interested you're 
+> welcome to add a new repo to sportlabs org.  Or just keep it as is and 
+> see how it evolves. No rush or anyhting. 
+>
+>    Again thanks for sharing the Django models. Cheers. 
+>
+> [1] https://github.com/openfootball/docs/blob/master/python.md 
+>
+
+------=_Part_824_464548526.1487579434068
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald,<br><br>Thanks, I&#39;ve updated the documentati=
+on.<br><br>The &quot;right&quot; way to do this is really to make a reusabl=
+e Django app that users can just install and configure (e.g. pip install dj=
+ango-openfootball). However, since there&#39;s no evidence that anyone else=
+ wants to use this, I think I&#39;ll hold off for now. :-) I&#39;ll leave i=
+t as a Gist for the time being, but if there&#39;s sufficient interest I&#3=
+9;ll make it a proper app and host it at a sportlabs repository.<br><br>Che=
+ers,<br>Kevin<br><br>On Friday, February 17, 2017 at 3:00:51 AM UTC-5, Gera=
+ld Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-=
+left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0&gt; =C2=A0the Gist is here:
+<br><a href=3D"https://gist.github.com/marfire/44822f94af25f11a2fda5beba259=
+3229" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;ht=
+tps://www.google.com/url?q\x3dhttps%3A%2F%2Fgist.github.com%2Fmarfire%2F448=
+22f94af25f11a2fda5beba2593229\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNEPCe5=
+1KTE5rwnloxrouEKphGpiPA&#39;;return true;" onclick=3D"this.href=3D&#39;http=
+s://www.google.com/url?q\x3dhttps%3A%2F%2Fgist.github.com%2Fmarfire%2F44822=
+f94af25f11a2fda5beba2593229\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNEPCe51K=
+TE5rwnloxrouEKphGpiPA&#39;;return true;">https://gist.github.com/<wbr>marfi=
+re/<wbr>44822f94af25f11a2fda5beba25932<wbr>29</a>
+<br>
+<br>=C2=A0 =C2=A0Wow. Looks great. Thanks for sharing.
+<br>
+<br>=C2=A0 If you want to add some notes to the docu - I&#39;ve created a n=
+ew
+<br>Python page [1].
+<br>
+<br>=C2=A0 If you don&#39;t mind I have sent you two inviations (via GitHub=
+) to
+<br>join the openfootball and sportlabs teams =C2=A0- if you accept you can
+<br>change the /docs &quot;inline&quot; in your browser or if interested yo=
+u&#39;re
+<br>welcome to add a new repo to sportlabs org. =C2=A0Or just keep it as is=
+ and
+<br>see how it evolves. No rush or anyhting.
+<br>
+<br>=C2=A0 =C2=A0Again thanks for sharing the Django models. Cheers.
+<br>
+<br>[1] <a href=3D"https://github.com/openfootball/docs/blob/master/python.=
+md" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http=
+s://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fdocs%=
+2Fblob%2Fmaster%2Fpython.md\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNEISXfm9=
+2bwLZbzyacpIPRvSAU0wA&#39;;return true;" onclick=3D"this.href=3D&#39;https:=
+//www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fdocs%2F=
+blob%2Fmaster%2Fpython.md\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNEISXfm92b=
+wLZbzyacpIPRvSAU0wA&#39;;return true;">https://github.com/<wbr>openfootball=
+/docs/blob/master/<wbr>python.md</a>
+<br></blockquote></div>
+------=_Part_824_464548526.1487579434068--
+
+------=_Part_823_1802000486.1487579434068--
+

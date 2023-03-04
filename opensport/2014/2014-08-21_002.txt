@@ -1,0 +1,154 @@
+From 2048579862528@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 2032746364928
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,46cbd558a9bb5e41
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.111.170 with SMTP id ij10mr1205421obb.6.1408662638651;
+        Thu, 21 Aug 2014 16:10:38 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.97.134 with SMTP id m6ls1003859qge.8.gmail; Thu, 21 Aug
+ 2014 16:10:38 -0700 (PDT)
+X-Received: by 10.140.25.162 with SMTP id 31mr21458qgt.9.1408662638397;
+        Thu, 21 Aug 2014 16:10:38 -0700 (PDT)
+X-Google-Doc-Id: 6d62c54bac897e02
+X-Google-Web-Client: true
+Date: Thu, 21 Aug 2014 16:10:38 -0700 (PDT)
+From: Joe Kampschmidt <jokecamp@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <067a025d-0df1-40dd-a485-c9e1102ea999@googlegroups.com>
+In-Reply-To: <CAAxEZd98CUUhCza6sk0nDtOA1FqpFEoyJjsXn-p-g7ejcw_VoQ@mail.gmail.com>
+References: <CAAxEZd98CUUhCza6sk0nDtOA1FqpFEoyJjsXn-p-g7ejcw_VoQ@mail.gmail.com>
+Subject: Re: football.db SQL Queries Made Easy (Thanks to Views) e.g. select
+ * from games_list;
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_722_358163840.1408662638151"
+X-Google-Token: EO742Z8FOQ2_HmHKRtw0
+X-Google-IP: 66.44.120.8
+
+------=_Part_722_358163840.1408662638151
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_723_262996339.1408662638151"
+
+------=_Part_723_262996339.1408662638151
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+The Views are a great idea. This will definitely help people get started!
+
+
+Joe
+
+On Tuesday, August 12, 2014 2:00:23 PM UTC-4, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>   First thanks to Joe Kampschmidt for getting started w/ some SQL 
+> queries examples [1]. 
+>
+>
+>   FYI:  I've started to create some SQL views to make it easier to 
+> query the football.db. 
+>
+> Example - List World Cup Brazil 2014 Games: 
+>
+> Before (Table Edition): 
+>
+> SELECT t1.title, 
+>        t2.title, 
+>        g.* 
+>   FROM games g 
+>        LEFT OUTER JOIN teams t1 ON t1.id = g.team1_id 
+>        LEFT OUTER JOIN teams t2 ON t2.id = g.team2_id 
+>        INNER JOIN rounds r ON r.id = g.round_id 
+>        INNER JOIN events e ON e.id = r.event_id 
+>  WHERE e.key = 'world.2014' 
+>
+>
+> After (View Edition): 
+>
+> SELECT * 
+>   FROM events_games_list 
+>  WHERE e.key = 'world.2014'; 
+>
+>
+>  More views [2][3] include: 
+>
+> - teams_list 
+> - games_list 
+> - events_list 
+> - events_teams_list 
+> - events_games_list 
+> - events_rounds_list 
+> - events_groups_list 
+>
+>
+>   Cheers. 
+>
+> PS: The SQL views will get auto-created w/ the next sportdb gem update. 
+>
+> [1] openfootball.github.io/docs/sql-queries-intro.html 
+> [2] github.com/openfootball/schema.sql/blob/master/football.views.sql 
+> [3] 
+> github.com/openfootball/schema.sql/blob/master/football.events.views.sql 
+>
+
+------=_Part_723_262996339.1408662638151
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">The Views are a great idea. This will definitely help people get started!<div><br></div><div><div><br></div><div>Joe<br><br>On Tuesday, August 12, 2014 2:00:23 PM UTC-4, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; First thanks to Joe Kampschmidt for getting started w/ some SQL
+<br>queries examples [1].
+<br>
+<br>
+<br>&nbsp; FYI: &nbsp;I've started to create some SQL views to make it easier to
+<br>query the football.db.
+<br>
+<br>Example - List World Cup Brazil 2014 Games:
+<br>
+<br>Before (Table Edition):
+<br>
+<br>SELECT t1.title,
+<br>&nbsp; &nbsp; &nbsp; &nbsp;t2.title,
+<br>&nbsp; &nbsp; &nbsp; &nbsp;g.*
+<br>&nbsp; FROM games g
+<br>&nbsp; &nbsp; &nbsp; &nbsp;LEFT OUTER JOIN teams t1 ON <a href="http://t1.id" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Ft1.id\46sa\75D\46sntz\0751\46usg\75AFQjCNFUSAPqycKag5PTtPTdajv-cdD10A';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Ft1.id\46sa\75D\46sntz\0751\46usg\75AFQjCNFUSAPqycKag5PTtPTdajv-cdD10A';return true;">t1.id</a> = g.team1_id
+<br>&nbsp; &nbsp; &nbsp; &nbsp;LEFT OUTER JOIN teams t2 ON <a href="http://t2.id" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Ft2.id\46sa\75D\46sntz\0751\46usg\75AFQjCNG52wQIzs7juXMS43cxwYjRWmvT1g';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Ft2.id\46sa\75D\46sntz\0751\46usg\75AFQjCNG52wQIzs7juXMS43cxwYjRWmvT1g';return true;">t2.id</a> = g.team2_id
+<br>&nbsp; &nbsp; &nbsp; &nbsp;INNER JOIN rounds r ON <a href="http://r.id" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fr.id\46sa\75D\46sntz\0751\46usg\75AFQjCNEL4L7SM7Gz-H8MZKMiKpliUoACSQ';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fr.id\46sa\75D\46sntz\0751\46usg\75AFQjCNEL4L7SM7Gz-H8MZKMiKpliUoACSQ';return true;">r.id</a> = g.round_id
+<br>&nbsp; &nbsp; &nbsp; &nbsp;INNER JOIN events e ON <a href="http://e.id" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fe.id\46sa\75D\46sntz\0751\46usg\75AFQjCNHU7W3acfVsQzDju1XAx56zrQvvBg';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fe.id\46sa\75D\46sntz\0751\46usg\75AFQjCNHU7W3acfVsQzDju1XAx56zrQvvBg';return true;">e.id</a> = r.event_id
+<br>&nbsp;WHERE e.key = 'world.2014'
+<br>
+<br>
+<br>After (View Edition):
+<br>
+<br>SELECT *
+<br>&nbsp; FROM events_games_list
+<br>&nbsp;WHERE e.key = 'world.2014';
+<br>
+<br>
+<br>&nbsp;More views [2][3] include:
+<br>
+<br>- teams_list
+<br>- games_list
+<br>- events_list
+<br>- events_teams_list
+<br>- events_games_list
+<br>- events_rounds_list
+<br>- events_groups_list
+<br>
+<br>
+<br>&nbsp; Cheers.
+<br>
+<br>PS: The SQL views will get auto-created w/ the next sportdb gem update.
+<br>
+<br>[1] <a href="http://openfootball.github.io/docs/sql-queries-intro.html" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fopenfootball.github.io%2Fdocs%2Fsql-queries-intro.html\46sa\75D\46sntz\0751\46usg\75AFQjCNHKlkocVKYLoPWw-nT1WMx4Hm6S5A';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fopenfootball.github.io%2Fdocs%2Fsql-queries-intro.html\46sa\75D\46sntz\0751\46usg\75AFQjCNHKlkocVKYLoPWw-nT1WMx4Hm6S5A';return true;">openfootball.github.io/docs/<wbr>sql-queries-intro.html</a>
+<br>[2] <a href="http://github.com/openfootball/schema.sql/blob/master/football.views.sql" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fschema.sql%2Fblob%2Fmaster%2Ffootball.views.sql\46sa\75D\46sntz\0751\46usg\75AFQjCNGki8IqC_vav9p0slW5TrYf0YJc3A';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fschema.sql%2Fblob%2Fmaster%2Ffootball.views.sql\46sa\75D\46sntz\0751\46usg\75AFQjCNGki8IqC_vav9p0slW5TrYf0YJc3A';return true;">github.com/openfootball/<wbr>schema.sql/blob/master/<wbr>football.views.sql</a>
+<br>[3] <a href="http://github.com/openfootball/schema.sql/blob/master/football.events.views.sql" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fschema.sql%2Fblob%2Fmaster%2Ffootball.events.views.sql\46sa\75D\46sntz\0751\46usg\75AFQjCNEjPhgwUtgDJEqFrRwWxg-_ZLUa3Q';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fschema.sql%2Fblob%2Fmaster%2Ffootball.events.views.sql\46sa\75D\46sntz\0751\46usg\75AFQjCNEjPhgwUtgDJEqFrRwWxg-_ZLUa3Q';return true;">github.com/openfootball/<wbr>schema.sql/blob/master/<wbr>football.events.views.sql</a>
+<br></blockquote></div></div></div>
+------=_Part_723_262996339.1408662638151--
+
+------=_Part_722_358163840.1408662638151--
+

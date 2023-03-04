@@ -1,0 +1,72 @@
+From 6185795856616128512@xxx Sat Aug 22 11:27:10 +0000 2015
+X-GM-THRID: 6185793007810248704
+X-Received: by 10.182.199.33 with SMTP id jh1mr4901512obc.45.1440242830400;
+        Sat, 22 Aug 2015 04:27:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.74.228 with SMTP id x4ls107699obv.16.gmail; Sat, 22 Aug
+ 2015 04:27:10 -0700 (PDT)
+X-Received: by 10.182.24.196 with SMTP id w4mr10203279obf.19.1440242830149;
+        Sat, 22 Aug 2015 04:27:10 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22c.google.com (mail-io0-x22c.google.com. [2607:f8b0:4001:c06::22c])
+        by gmr-mx.google.com with ESMTPS id kr5si472969igb.2.2015.08.22.04.27.10
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 22 Aug 2015 04:27:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22c as permitted sender) client-ip=2607:f8b0:4001:c06::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x22c.google.com with SMTP id b91so106096131iod.1
+        for <opensport@googlegroups.com>; Sat, 22 Aug 2015 04:27:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=r6KPmA96vb+isgYgVRBDDG84AItucgw/zXyaj6neD9I=;
+        b=iF+Qxf5XB0Aj7jcCEkQ0HvLkDeVTElOeA6H+XRiDpXsB18mMQULrpQ6jCCL5uonMjQ
+         XFAq+0f81/XZRVJInpe5H1imiKV0pCFuonNyW4IysnEN3J4jIsAP/Pu+m4grNkVScYY2
+         7EnMrmdE0g+xMWCr0DangzO1lHo2xqAi97Sl5P1GvaaPvB2djfZvVv4dsbNWhhQfK50k
+         A9Q1N5b/UDZRoq0Ip17an4lodM7fv19+CKANXfG7RZztlt43tK+b74l937VlGla8dk6t
+         VNns8ixu92zUcBrZ4Byp9nUAVwruaXM1XhvzUH2gDUhETYu+Ei+BoVh3OITFFF0qk8NZ
+         G98A==
+MIME-Version: 1.0
+X-Received: by 10.107.7.77 with SMTP id 74mr10613275ioh.178.1440242829968;
+ Sat, 22 Aug 2015 04:27:09 -0700 (PDT)
+Received: by 10.107.15.196 with HTTP; Sat, 22 Aug 2015 04:27:09 -0700 (PDT)
+In-Reply-To: <fd122790-128b-496a-9018-2f536e57c176@googlegroups.com>
+References: <fd122790-128b-496a-9018-2f536e57c176@googlegroups.com>
+Date: Sat, 22 Aug 2015 13:27:09 +0200
+Message-ID: <CAAxEZd9O-ycxHO2SRtthm6wRRtoWhj5t3CLSyHpdSra5PZdrMg@mail.gmail.com>
+Subject: Re: [opensport] Russian league for football.db
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Great stuff. Welcome to football.db
+
+   The "best" way to test your datasets is to actually try to import
+the datasets into a SQL database (e.g. SQLite, PostgreSQL).
+
+   Browsing your repo you will have to add some setup files and than
+try to import
+
+   Note: The football.db is by definition public domain.  Thus, if you
+want to contribute to the "official" project repos you will have to
+change the "license".  MIT, CC-BY, and others NOT accepted. Public
+domain is no copyright, no rights reservered, no license. Learn more
+here [1], for example.
+
+   Cheers.
+
+PS: Minor issue - the convention for season folder is 2014-15 (not
+2014-2015) or 2015-16 (not 2015-2016) and so on. Again you're welcome
+to run/manage your own repo with your own org, your own license, etc.
+Git by definition is distributed (e.g. distributed is the new
+centralized and everything is local etc. ;-)
+
+[1] https://wiki.creativecommons.org/wiki/Public_domain
+

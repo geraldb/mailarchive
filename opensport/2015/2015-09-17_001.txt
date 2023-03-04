@@ -1,0 +1,57 @@
+From 6195623597226065920@xxx Thu Sep 17 23:03:50 +0000 2015
+X-GM-THRID: 6179784849499357184
+X-Received: by 10.31.149.14 with SMTP id x14mr1610349vkd.7.1442531029997;
+        Thu, 17 Sep 2015 16:03:49 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.65.163 with SMTP id y3ls212335obs.66.gmail; Thu, 17 Sep
+ 2015 16:03:49 -0700 (PDT)
+X-Received: by 10.182.81.70 with SMTP id y6mr1673447obx.4.1442531029607;
+        Thu, 17 Sep 2015 16:03:49 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22e.google.com (mail-io0-x22e.google.com. [2607:f8b0:4001:c06::22e])
+        by gmr-mx.google.com with ESMTPS id f4si428449igo.2.2015.09.17.16.03.49
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 17 Sep 2015 16:03:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) client-ip=2607:f8b0:4001:c06::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x22e.google.com with SMTP id h134so38871512iof.0
+        for <opensport@googlegroups.com>; Thu, 17 Sep 2015 16:03:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=nTjEIgsm07UGxgGnRyA/tnudJ4NYWfvCjOXsakdGexk=;
+        b=C/VZzKhbCka2fzVk+cV8YqbatvqZXeMC9gN15Y27mnqYiZVXRogZmyEtYepKDpPXad
+         x+xivV8WRNCm0pZONrj1BtD9H+udS59yiPMbpuPtU1lrWd9Ba+PM0xfMhDZmedl/CWbV
+         t2HhS3aMpR+fe+KhHAYA2ZfN75kD+IV5jrwJ8BI/sIG4hLMVrf6LGJvsrxG070hdNc/3
+         VEAaayH1p5kcDjkNuPlhrkelB0+taASVd0sFPfuXRtqgqgJ1tvH6EvY+E1x+T9SgEFRh
+         KxaAPLjf/uM7JOHnkvtfKEftInc7eEJqbLx6LERsPh3fX4KC51IAhYL+02d5cBdJYIxI
+         kNQA==
+MIME-Version: 1.0
+X-Received: by 10.107.19.70 with SMTP id b67mr10359126ioj.144.1442531029513;
+ Thu, 17 Sep 2015 16:03:49 -0700 (PDT)
+Received: by 10.107.162.82 with HTTP; Thu, 17 Sep 2015 16:03:49 -0700 (PDT)
+In-Reply-To: <CAAxEZd_xB2y1pdngi9RLgcV025iZMK45zFr9F4Nsh0vyAAmFDw@mail.gmail.com>
+References: <a0ff3bc8-c564-499e-b49c-10d0c4253fae@googlegroups.com>
+	<CAAxEZd_xB2y1pdngi9RLgcV025iZMK45zFr9F4Nsh0vyAAmFDw@mail.gmail.com>
+Date: Fri, 18 Sep 2015 01:03:49 +0200
+Message-ID: <CAAxEZd9Bd3z1ZEvdKwAKVr4Zfm9zTWR7vWMtsD8Z0Gp54s5Jiw@mail.gmail.com>
+Subject: Re: [opensport] footbal.db - Premier League 2015/16 dataset
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   FYI:  The new football.json/ repo now includes an (auto-) generated
+version of the complete season match schedule [1] and all clubs [2] in
+JSON (JavaScript Object Notation).
+   Cheers.
+
+[1] github.com/openfootball/football.json/blob/master/2015-16/en.1.json
+[2] github.com/openfootball/football.json/blob/master/2015-16/en.1.clubs.json
+

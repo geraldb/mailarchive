@@ -1,0 +1,65 @@
+From 475013316608@xxx Tue Jun 16 00:17:14 +0000 2015
+X-GM-THRID: 473423675392
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,9b94b704bb62d17c,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.50.50 with SMTP id z18mr3500553lbn.7.1396712040938;
+        Sat, 05 Apr 2014 08:34:00 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.90.166 with SMTP id bx6ls254617wib.19.gmail; Sat, 05 Apr
+ 2014 08:34:00 -0700 (PDT)
+X-Received: by 10.180.20.177 with SMTP id o17mr848708wie.7.1396712040658;
+        Sat, 05 Apr 2014 08:34:00 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x234.google.com (mail-wi0-x234.google.com [2a00:1450:400c:c05::234])
+        by gmr-mx.google.com with ESMTPS id fy7si249046wib.1.2014.04.05.08.34.00
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 05 Apr 2014 08:34:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::234 as permitted sender) client-ip=2a00:1450:400c:c05::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f180.google.com with SMTP id q5so2802100wiv.1
+        for <opensport@googlegroups.com>; Sat, 05 Apr 2014 08:34:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=lRx8W9MzNRziFIQYcwtXOZDYv0Vh2sTkz53r6x3E+/w=;
+        b=bEfQbM9XUqHxlXV2C2dRefcCbf8oHX3C79rB0el9O+Tv+sKX0ShL44qHMA/X3RDTPj
+         DVSyILvcMubUQyGAP6cdXWRKnFyy7R86Ozhb7qUdPNN9/i9ThCguiLSSnauSV4sGGo1N
+         V0aZQFE/6krv9kycYYPq3jqcITQQrLj5YJx1LZH4cL9ghsppgMsbJkaYvgNwngDTZjcb
+         XLtpvcbb1G6n6mc+QcWDtfVdcZpoZEXkfdq4ipnTMfB6DqTITebozarW0CauJG06HIbM
+         E2PjZ0ppRWRxiYmdJwXniVvjzM2Ru7++VHncNIKl79hAp85EaEfXHz8cm1yLynpJmb7A
+         v1fw==
+MIME-Version: 1.0
+X-Received: by 10.180.37.12 with SMTP id u12mr12798487wij.0.1396712040573;
+ Sat, 05 Apr 2014 08:34:00 -0700 (PDT)
+Received: by 10.216.253.68 with HTTP; Sat, 5 Apr 2014 08:34:00 -0700 (PDT)
+Date: Sat, 5 Apr 2014 17:34:00 +0200
+Message-ID: <CAAxEZd_TC8RZXisxu2CS1FJ+95rZ8A=jsSKjTZ-Y4wQ1ave1Ug@mail.gmail.com>
+Subject: football.db Public HTTP JSON API service Update - Bundesliga, Serie
+ A, Premier League, La Liga
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: I've updated the online database (used by the public HTTP JSON
+API service)  @ footballdb.herokuapp.com
+
+   What's new? Added all fixtures for the 2013/14 season for:
+
+   - Deutsche Bundesliga (Germany)
+   - English Premier League (England)
+   - Primera Divisi=F3n (Spain)
+   - Serie A (Italy)
+   - =D6sterr. Bundesliga (Austria)
+
+   Cheers.
+

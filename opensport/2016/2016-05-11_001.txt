@@ -1,0 +1,80 @@
+From 6283446889200222208@xxx Wed May 11 15:03:03 +0000 2016
+X-GM-THRID: 6283054842980073472
+X-Received: by 10.129.120.140 with SMTP id t134mr2445126ywc.27.1462978983136;
+        Wed, 11 May 2016 08:03:03 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.9.244 with SMTP id 49ls374502otz.23.gmail; Wed, 11 May
+ 2016 08:03:01 -0700 (PDT)
+X-Received: by 10.157.1.207 with SMTP id e73mr2527988ote.38.1462978981463;
+        Wed, 11 May 2016 08:03:01 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x233.google.com (mail-io0-x233.google.com. [2607:f8b0:4001:c06::233])
+        by gmr-mx.google.com with ESMTPS id l19si292349itb.2.2016.05.11.08.03.01
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 11 May 2016 08:03:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) client-ip=2607:f8b0:4001:c06::233;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x233.google.com with SMTP id d62so57171779iof.2
+        for <opensport@googlegroups.com>; Wed, 11 May 2016 08:03:01 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=/VA1FiW6rUV6fYAGZmAbChRAU/c7O15zp3OYpyPfm/s=;
+        b=ZfDfQil+56lzv/Q+dEo4zK1M955eOdj4hjsVXScgpo5Qud8UDUUIAxavlK/cXp/9uV
+         SfbToLaFJgA+ZWsVI1seD8Srf+9I8vkUXy/jg+MXR9obhrWgG5qYN9CuD+Pkbyo5Ad99
+         k5wnIxsD7M1swtmKTm331e5faebg1UVJcaW0ZxLfm3PPzVNsRYEcZR00QkoypUyplFiJ
+         fyieQSNnxoMSVLKeJooTx2o/G5mgtR5PMJLOmfusGilVycuYOsH9P0zbmh4/47XYNo78
+         S2rQn62HpP95TccfevJboUehmAvEWlJK9YLzOtEqMeoJlEqg9xqnEeNj+356TOFTJiUs
+         wjNQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=/VA1FiW6rUV6fYAGZmAbChRAU/c7O15zp3OYpyPfm/s=;
+        b=mcVNAd8rvNTNIP0A2doc/To1aFI8BN5kIKJ1iaJU07syN5M5junp9obzQH06fO1Bwu
+         ZfVB/zMyh9ryTxbEoCpi/ujhifNpJQiN4RtnHoouvZyvxla16faHR+PAsH5fgMAS361X
+         1dwSi8nktajXxED8+3LVbpDZg74suY35liTcMzRssKohfgklwhwdeJnmNi/QJkWtvpAN
+         6WA+3pvTU8Gi9TEvJeZAdK80OXNGOsltJU3uPoKm+G8daYnnaGldEDp3y1qCTwICqOM+
+         pEuIZQ5S+0GvQsX3RThPQTl4coakbeRKhHINR8LjnNdQvN4OHp8dAJcMmJxweGBU7LGK
+         rGlg==
+X-Gm-Message-State: AOPr4FU2wbGfkQOzapp4BM7ISwSIEkr2/ogy+F3j01yTmdfWtd2+JlHa+SL3ElOp31qmZ3HFuUbHbadAGmnGTw==
+MIME-Version: 1.0
+X-Received: by 10.107.21.197 with SMTP id 188mr3510940iov.59.1462978981027;
+ Wed, 11 May 2016 08:03:01 -0700 (PDT)
+Received: by 10.107.138.84 with HTTP; Wed, 11 May 2016 08:03:00 -0700 (PDT)
+In-Reply-To: <80c0e690-41bc-4c0d-956b-d9bc31ee393b@googlegroups.com>
+References: <CAAxEZd_73Q-5h1czpr8Qe1mOOZHCBy0wxC6GXRtPPC2kPM3V2g@mail.gmail.com>
+	<9c3f923e-5376-4e81-8ad9-66e4ee101fba@googlegroups.com>
+	<CAAxEZd_ZFD279_LSP-diEmd1TCznmMzVM85giungsysECRy4cg@mail.gmail.com>
+	<c6c59df2-7f2f-4ec5-9088-38ec5269e8b0@googlegroups.com>
+	<CAAxEZd8JPdqtrsTQj=+KzXb-Q+Je=zsbnK3mOgr3YnTHvU=CBQ@mail.gmail.com>
+	<80c0e690-41bc-4c0d-956b-d9bc31ee393b@googlegroups.com>
+Date: Wed, 11 May 2016 17:03:00 +0200
+Message-ID: <CAAxEZd8Qc_KHocZ6=yohHLmxQz5RJ=G19z87y4VLd514A3GP8Q@mail.gmail.com>
+Subject: Re: [opensport] Re: Any Open Data Sets for the (Football) Euro Cup
+ (in France 2016)?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  Wow. Thanks for highlighting the Sports Open Data site / service.
+Looks great. Let's see how it works out.
+
+  Cheers.
+
+PS:
+
+> We're the first Sports Open Data Service on World Wide Web
+
+Well, I guess football.db was earlier ;-). The first open sports data
+service that still is in operation as far as I know is the great
+openligadb.de service [1] (more than 10 years in operation or
+something) by Marcel Siegel.
+
+[1] http://www.openligadb.de
+

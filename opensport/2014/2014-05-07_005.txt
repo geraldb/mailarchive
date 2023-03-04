@@ -1,0 +1,58 @@
+From 586380476416@xxx Tue Jun 16 00:17:08 +0000 2015
+X-GM-THRID: 586431856640
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a4ce9e32a3e9a88e
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.66.109 with SMTP id e13mr3753912pat.1.1399454319178;
+        Wed, 07 May 2014 02:18:39 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.83.240 with SMTP id j103ls3263920qgd.47.gmail; Wed, 07 May
+ 2014 02:18:38 -0700 (PDT)
+X-Received: by 10.236.118.38 with SMTP id k26mr3746795yhh.35.1399454318983;
+        Wed, 07 May 2014 02:18:38 -0700 (PDT)
+Received: by 10.224.62.9 with SMTP id v9msqah;
+        Wed, 7 May 2014 01:10:39 -0700 (PDT)
+X-Received: by 10.140.32.166 with SMTP id h35mr22362qgh.23.1399450239053;
+        Wed, 07 May 2014 01:10:39 -0700 (PDT)
+X-Google-Doc-Id: 897de04b392d6c1b
+X-Google-Web-Client: true
+Date: Wed, 7 May 2014 01:10:37 -0700 (PDT)
+From: Martin Fischer <arthur.spooner@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <97b02ec2-5252-42ef-a48d-89a7f0e6339b@googlegroups.com>
+Subject: sportdb unable to read world-cup fixtures
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1958_20411145.1399450237644"
+X-Google-Token: EP3Up5sFXEN_iGLCoF40
+X-Google-IP: 131.188.78.79
+
+------=_Part_1958_20411145.1399450237644
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1959_23170807.1399450237645"
+
+------=_Part_1959_23170807.1399450237645
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+the current (and 1.8.16) sportdb is not able to read the world-cup repo:
+[error] unknown sportdb fixture type >world-cup!/2014--brazil/cup<
+
+Renaming the folders (e.g. 2014--brazil to 2014) and changing the setups 
+will fix the problem. Am I doing anything wrong?
+
+Cheers
+Martin
+
+------=_Part_1959_23170807.1399450237645
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi,<br><br>the current (and 1.8.16) sportdb is not able to read the world-cup repo:<br>[error] unknown sportdb fixture type &gt;world-cup!/2014--brazil/cup&lt;<br><br>Renaming the folders (e.g. 2014--brazil to 2014) and changing the setups will fix the problem. Am I doing anything wrong?<br><br>Cheers<br>Martin<br></div>
+------=_Part_1959_23170807.1399450237645--
+
+------=_Part_1958_20411145.1399450237644--
+

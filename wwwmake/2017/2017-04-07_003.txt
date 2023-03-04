@@ -1,0 +1,201 @@
+From 6406293547870322688@xxx Fri Apr 07 16:10:51 +0000 2017
+X-GM-THRID: 6406170137222709248
+Date: Fri, 7 Apr 2017 09:10:50 -0700 (PDT)
+From: Brian Forsythe <brian.t.forsythe@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <9117c7cd-2d5f-4235-b604-e354db3f8e53@googlegroups.com>
+In-Reply-To: <CAAxEZd-_fu=FzC7FP3vWGB7YpWikxu7AmXm0Az=Vo+TgnYUj=Q@mail.gmail.com>
+References: <13f542c8-23e0-4fc8-9d35-30750be86bfc@googlegroups.com>
+ <CAAxEZd-_fu=FzC7FP3vWGB7YpWikxu7AmXm0Az=Vo+TgnYUj=Q@mail.gmail.com>
+Subject: Re: [wwwmake:415] Problems with Slide Show (S9) ignoring headers
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2282_1381557389.1491581450699"
+X-Google-Token: EIr0nscFY0WAwBP8YXY0
+X-Google-IP: 173.88.86.50
+
+------=_Part_2282_1381557389.1491581450699
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2283_1294171196.1491581450700"
+
+------=_Part_2283_1294171196.1491581450700
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks for the response, Gerald.
+
+Here's a gist with the generated index.html and the verbose 
+output: https://gist.github.com/btforsythe/1cdc85a4c145644c91134a94b56d4fcf
+
+This is the line where it looks like it should have inserted the theme:
+
+<link rel="stylesheet" href="css/theme/.css" id="theme">
+
+This is all that I see that is relevant in the log:
+
+  run filter leading_headers...
+[debug]   adding header: key=>author< value=>Me Me<
+[debug]   adding header: key=>title< value=>Boo, No Theme<
+[debug]   adding header: key=>theme< value=>league<
+  Reading 3 headers: author, title, theme...
+
+
+So, it's reading the headers but they're not getting inserted? Even a 
+suggestion of where to look in the code would be great.
+
+Thanks,
+Brian
+
+On Friday, April 7, 2017 at 4:21:51 AM UTC-4, Gerald Bauer wrote:
+>
+> Hello, 
+>    Thanks for trying slide show (S9). 
+>
+>     Hard to tell. I'd say the safest (easiest) way is to install the 
+> theme first with git e.g.: 
+>
+> $ cd ~/.slideshow/templates 
+> $ git clone https://github.com/slideshow-templates/slideshow-reveal.js.git 
+>
+>     Please use git clone (with the switch over from the old reveal.js 
+> theme) it is "safer". Now try: 
+>
+> $ slideshow list 
+>
+> And it should list the reveal.js theme and than rerun (retry): 
+>
+> $ slideshow build -t reveal.js index.md 
+>
+>  Let us know how it goes. Cheers. 
+>
+> PS: 
+>
+> If it still doesn't work try the verbose logging for (even) more debug 
+> info e.g. 
+>
+> $ slideshow --verbose build -t reveal.js index.md 
+>
+
+------=_Part_2283_1294171196.1491581450700
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Thanks for the response, Gerald.</div><div><br></div>=
+<div>Here&#39;s a gist with the generated index.html and the verbose output=
+:=C2=A0https://gist.github.com/btforsythe/1cdc85a4c145644c91134a94b56d4fcf<=
+br></div><div><br></div><div>This is the line where it looks like it should=
+ have inserted the theme:</div><div><br></div><div><span style=3D"color: rg=
+b(36, 41, 46); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono=
+&quot;, Menlo, Courier, monospace; font-size: 12px; white-space: pre;">&lt;=
+</span><span class=3D"pl-ent" style=3D"box-sizing: border-box; color: rgb(9=
+9, 163, 92); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&q=
+uot;, Menlo, Courier, monospace; font-size: 12px; white-space: pre;">link</=
+span><span style=3D"color: rgb(36, 41, 46); font-family: SFMono-Regular, Co=
+nsolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: =
+12px; white-space: pre;"> </span><span class=3D"pl-e" style=3D"box-sizing: =
+border-box; color: rgb(121, 93, 163); font-family: SFMono-Regular, Consolas=
+, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 12px; =
+white-space: pre;">rel</span><span style=3D"color: rgb(36, 41, 46); font-fa=
+mily: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier=
+, monospace; font-size: 12px; white-space: pre;">=3D</span><span class=3D"p=
+l-s" style=3D"box-sizing: border-box; color: rgb(24, 54, 145); font-family:=
+ SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, mon=
+ospace; font-size: 12px; white-space: pre;"><span class=3D"pl-pds" style=3D=
+"box-sizing: border-box;">&quot;</span>stylesheet<span class=3D"pl-pds" sty=
+le=3D"box-sizing: border-box;">&quot;</span></span><span style=3D"color: rg=
+b(36, 41, 46); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono=
+&quot;, Menlo, Courier, monospace; font-size: 12px; white-space: pre;"> </s=
+pan><span class=3D"pl-e" style=3D"box-sizing: border-box; color: rgb(121, 9=
+3, 163); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;=
+, Menlo, Courier, monospace; font-size: 12px; white-space: pre;">href</span=
+><span style=3D"color: rgb(36, 41, 46); font-family: SFMono-Regular, Consol=
+as, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 12px=
+; white-space: pre;">=3D</span><span class=3D"pl-s" style=3D"box-sizing: bo=
+rder-box; color: rgb(24, 54, 145); font-family: SFMono-Regular, Consolas, &=
+quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 12px; whi=
+te-space: pre;"><span class=3D"pl-pds" style=3D"box-sizing: border-box;">&q=
+uot;</span>css/theme/.css<span class=3D"pl-pds" style=3D"box-sizing: border=
+-box;">&quot;</span></span><span style=3D"color: rgb(36, 41, 46); font-fami=
+ly: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, =
+monospace; font-size: 12px; white-space: pre;"> </span><span class=3D"pl-e"=
+ style=3D"box-sizing: border-box; color: rgb(121, 93, 163); font-family: SF=
+Mono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monosp=
+ace; font-size: 12px; white-space: pre;">id</span><span style=3D"color: rgb=
+(36, 41, 46); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&=
+quot;, Menlo, Courier, monospace; font-size: 12px; white-space: pre;">=3D</=
+span><span class=3D"pl-s" style=3D"box-sizing: border-box; color: rgb(24, 5=
+4, 145); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;=
+, Menlo, Courier, monospace; font-size: 12px; white-space: pre;"><span clas=
+s=3D"pl-pds" style=3D"box-sizing: border-box;">&quot;</span>theme<span clas=
+s=3D"pl-pds" style=3D"box-sizing: border-box;">&quot;</span></span><span st=
+yle=3D"color: rgb(36, 41, 46); font-family: SFMono-Regular, Consolas, &quot=
+;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 12px; white-s=
+pace: pre;">&gt;</span><br></div><div><span style=3D"color: rgb(36, 41, 46)=
+; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo=
+, Courier, monospace; font-size: 12px; white-space: pre;"><br></span></div>=
+This is all that I see that is relevant in the log:<div><br></div><blockquo=
+te style=3D"margin: 0 0 0 40px; border: none; padding: 0px;"><div><div>=C2=
+=A0 run filter leading_headers...</div></div><div><div>[debug] =C2=A0 addin=
+g header: key=3D&gt;author&lt; value=3D&gt;Me Me&lt;</div></div><div><div>[=
+debug] =C2=A0 adding header: key=3D&gt;title&lt; value=3D&gt;Boo, No Theme&=
+lt;</div></div><div><div>[debug] =C2=A0 adding header: key=3D&gt;theme&lt; =
+value=3D&gt;league&lt;</div></div><div><div>=C2=A0 Reading 3 headers: autho=
+r, title, theme...</div></div></blockquote><div><div><br></div><div>So, it&=
+#39;s reading the headers but they&#39;re not getting inserted? Even a sugg=
+estion of where to look in the code would be great.</div><div><br></div><di=
+v>Thanks,</div><div>Brian</div><div><br>On Friday, April 7, 2017 at 4:21:51=
+ AM UTC-4, Gerald Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"ma=
+rgin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">=
+Hello,
+<br>=C2=A0 =C2=A0Thanks for trying slide show (S9).
+<br>
+<br>=C2=A0 =C2=A0 Hard to tell. I&#39;d say the safest (easiest) way is to =
+install the
+<br>theme first with git e.g.:
+<br>
+<br>$ cd ~/.slideshow/templates
+<br>$ git clone <a href=3D"https://github.com/slideshow-templates/slideshow=
+-reveal.js.git" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=
+=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fslidesho=
+w-templates%2Fslideshow-reveal.js.git\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQ=
+jCNFPkzGAtX7pwQTgAMn6osc8EOTM2Q&#39;;return true;" onclick=3D"this.href=3D&=
+#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fslideshow-te=
+mplates%2Fslideshow-reveal.js.git\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNF=
+PkzGAtX7pwQTgAMn6osc8EOTM2Q&#39;;return true;">https://github.com/slideshow=
+-<wbr>templates/slideshow-reveal.js.<wbr>git</a>
+<br>
+<br>=C2=A0 =C2=A0 Please use git clone (with the switch over from the old r=
+eveal.js
+<br>theme) it is &quot;safer&quot;. Now try:
+<br>
+<br>$ slideshow list
+<br>
+<br>And it should list the reveal.js theme and than rerun (retry):
+<br>
+<br>$ slideshow build -t reveal.js <a href=3D"http://index.md" target=3D"_b=
+lank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.google.co=
+m/url?q\x3dhttp%3A%2F%2Findex.md\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNH7=
+F38po3hZ2GJbuo-B39UHs_Eecg&#39;;return true;" onclick=3D"this.href=3D&#39;h=
+ttp://www.google.com/url?q\x3dhttp%3A%2F%2Findex.md\x26sa\x3dD\x26sntz\x3d1=
+\x26usg\x3dAFQjCNH7F38po3hZ2GJbuo-B39UHs_Eecg&#39;;return true;">index.md</=
+a>
+<br>
+<br>=C2=A0Let us know how it goes. Cheers.
+<br>
+<br>PS:
+<br>
+<br>If it still doesn&#39;t work try the verbose logging for (even) more de=
+bug info e.g.
+<br>
+<br>$ slideshow --verbose build -t reveal.js <a href=3D"http://index.md" ta=
+rget=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www=
+.google.com/url?q\x3dhttp%3A%2F%2Findex.md\x26sa\x3dD\x26sntz\x3d1\x26usg\x=
+3dAFQjCNH7F38po3hZ2GJbuo-B39UHs_Eecg&#39;;return true;" onclick=3D"this.hre=
+f=3D&#39;http://www.google.com/url?q\x3dhttp%3A%2F%2Findex.md\x26sa\x3dD\x2=
+6sntz\x3d1\x26usg\x3dAFQjCNH7F38po3hZ2GJbuo-B39UHs_Eecg&#39;;return true;">=
+index.md</a>
+<br></blockquote></div></div></div>
+------=_Part_2283_1294171196.1491581450700--
+
+------=_Part_2282_1381557389.1491581450699--
+

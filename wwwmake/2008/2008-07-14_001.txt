@@ -1,0 +1,153 @@
+From 42918215680@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 40904949760
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,595a58049c5d9419,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Received: by 10.100.124.13 with SMTP id w13mr422212anc.5.1216041125012; Mon, 
+	14 Jul 2008 06:12:05 -0700 (PDT)
+Date: Mon, 14 Jul 2008 06:12:04 -0700 (PDT)
+X-IP: 195.176.178.209
+User-Agent: G2/1.0
+X-Google-Token: ieIcrAwAAAATSlzmG7poL0u2pXFlnEt1
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9) 
+	Gecko/2008061017 Firefox/3.0,gzip(gfe),gzip(gfe)
+Message-ID: <677787a1-c46f-442a-b9aa-62ff1788191e@d1g2000hsg.googlegroups.com>
+Subject: [patch] inline code for generated content in slideshow
+From: Jeff <rosejn@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+X-Google-Approved: geraldbauer2007@gmail.com via email at 2008-07-14 15:36:28
+
+Hey folks,
+  I've just added support for doing inline content generation in
+slideshow.  With this patch you can use ruby to generate the content
+in some of your slides.  Eventually this could get really interesting
+using inline SVG, for example, but this is a super generic way that
+should support just about anything.  It works like this:
+
+---------------------------------------------------
+h1. This is a sample slide
+
+begin_ruby
+
+# This is now ruby code
+def foo(a, b)
+  a + b
+end
+
+# Whatever is returned from this code will be inserted into the slide
+as content.
+"#{foo(232, 43)}"
+end_ruby
+
+h1. next slide
+...
+-------------------------------------------------
+
+Let me know what you think.
+
+I also cleaned up a couple regular expressions that had a comment
+requesting it.  Another option I was thinking would be nice (and easy
+to add), is to support the execution of arbitrary scripts and
+programs, whose output would be inserted.  This can be done with the
+included patch using ruby back-quotes, but it might be nice to have
+something simpler too...
+
+This is a patch generated from git (using git-svn), but let me know if
+something else would be easier to deal with.
+
+Cheers,
+Jeff
+
+---
+ trunk/lib/slideshow.rb |   41 ++++++++++++++++++++++++++++
++------------
+ 1 files changed, 29 insertions(+), 12 deletions(-)
+
+diff --git a/trunk/lib/slideshow.rb b/trunk/lib/slideshow.rb
+index ac079a8..e7db014 100644
+--- a/trunk/lib/slideshow.rb
++++ b/trunk/lib/slideshow.rb
+@@ -8,6 +8,8 @@ require 'ftools'
+ require 'hpricot'
+ require 'uv'
+
++# A global binding for eval'ing inline code
++$free_binding = binding()
+
+ module Slideshow
+
+@@ -98,16 +100,34 @@ def Slideshow.create_slideshow( fn )
+
+   logger.debug "inname=#{inname}"
+
+-  content = File.read( inname )
+-
+   # read source document
+   # strip leading optional headers (key/value pairs) including
+optional empty lines
+
+   read_headers = true
+   content = ""
+
+-  File.open( inname ).readlines.each do |line|
+-    if read_headers && line =~ /^\s*(\w[\w-]*)[ \t]*:[ \t]*(.*)/
++  read_code = false
++  code = ""
++
++  File.open( inname ).readlines.each_with_index do |line, line_num|
++    if line =~ /^\s*begin_ruby/
++      logger.debug "reading code..."
++      read_code = true
++      code = ""
++    elsif read_code
++      if line =~ /^\s*end_ruby/
++        logger.debug("evaluating code:\n#{code}\n---------\n")
++        content << eval(code, $free_binding, fn, line_num)
++        read_code = false
++      else
++        code << line
++      end
++
++    # allow arbitrary require statements to support inline content
+generation
++    elsif line =~ /^\s*require(.*)$/
++      require $1.strip.gsub(/['"]/,'')
++
++    elsif read_headers && line =~ /^\s*(\w[\w-]*)[ \t]*:[ \t]*(.*)/
+       key = $1.downcase
+       value = $2.strip
+
+@@ -124,13 +144,10 @@ def Slideshow.create_slideshow( fn )
+   # run pre-filters (built-in macros)
+   # o replace {{{  w/ <pre class='code'>
+   # o replace }}}  w/ </pre>
+-  content.gsub!( "{{{{{{", "<pre class='code'>_S9BEGIN_" )
+-  content.gsub!( "}}}}}}", "_S9END_</pre>" )
+-  content.gsub!( "{{{", "<pre class='code'>" )
+-  content.gsub!( "}}}", "</pre>" )
+-  # restore escaped {{{}}} I'm sure there's a better way! Rubyize
+this! Anyone?
+-  content.gsub!( "_S9BEGIN_", "{{{" )
+-  content.gsub!( "_S9END_", "}}}" )
++  # When using more than 3 curly braces only the first and last
+triplets
++  # will be replaced.
++  content.gsub!(/\{{3}(\{*)/, '<pre class="code">\1')
++  content.gsub!(/(\}*)\}{3}/, '\1</pre>')
+
+   set_default_options()
+   params = Params.new( basename, $options )
+@@ -385,4 +402,4 @@ end
+
+ end
+
+-Slideshow.main if __FILE__ == $0
+\ No newline at end of file
++Slideshow.main if __FILE__ == $0
+--
+1.5.4.3
+

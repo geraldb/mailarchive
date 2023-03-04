@@ -1,0 +1,71 @@
+From 1796135190528@xxx Tue Jun 16 00:16:48 +0000 2015
+X-GM-THRID: 120477188096
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cfd207d2a36fadf3
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.188.136 with SMTP id ga8mr596069lbc.8.1407149306453;
+        Mon, 04 Aug 2014 03:48:26 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.45.105 with SMTP id l9ls121184lam.4.gmail; Mon, 04 Aug
+ 2014 03:48:25 -0700 (PDT)
+X-Received: by 10.112.184.197 with SMTP id ew5mr1198824lbc.0.1407149305919;
+        Mon, 04 Aug 2014 03:48:25 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x229.google.com (mail-wi0-x229.google.com [2a00:1450:400c:c05::229])
+        by gmr-mx.google.com with ESMTPS id mx7si662725wic.1.2014.08.04.03.48.25
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 04 Aug 2014 03:48:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) client-ip=2a00:1450:400c:c05::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x229.google.com with SMTP id n3so5975370wiv.4
+        for <opensport@googlegroups.com>; Mon, 04 Aug 2014 03:48:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=onp46fkIqVPL9t+ML5b6WdJWCs0b1ySrNQEqdy2YbK0=;
+        b=Gw3EkfyRYfi3bbE6XGGDmBZ1kgqxaWdG7DUQ5OkV+sJaHiMOE+7TJTrkPb2JLBqgpm
+         DKUolTQkbLaLTF5TkzLNwOKg3bJLP18jL27BsvG+46RH3Bc6bxEQWo1jrrSL878N/5sb
+         6tW51QzaWdF30Csrm1kmkfNSaoGkEJfWvKFQDpa3m5khSSyTz9fLg61PJcCwlg7DvNNQ
+         q3hCoBlCS9cKfHQeZvugcro9GR4Wn32e7bIzoSdj14RuKIXmlU1KLo7FNOtqMsyJgz6U
+         lLKe9GmFcED3zjb5UPPysTC74asSA8aKwCwuVu2cQjc+DoUlfZ8IWoqsK+M7hglNcgeO
+         R9zQ==
+MIME-Version: 1.0
+X-Received: by 10.194.222.197 with SMTP id qo5mr31243595wjc.78.1407149305822;
+ Mon, 04 Aug 2014 03:48:25 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Mon, 4 Aug 2014 03:48:25 -0700 (PDT)
+In-Reply-To: <a9cc2851-c44b-4e75-8e91-a02498a73584@googlegroups.com>
+References: <42ae00eb-0e90-4168-a288-e8fc44645386@googlegroups.com>
+	<49ad51e9-f5e3-4178-b7bd-63a937e01289@googlegroups.com>
+	<a9cc2851-c44b-4e75-8e91-a02498a73584@googlegroups.com>
+Date: Mon, 4 Aug 2014 12:48:25 +0200
+Message-ID: <CAAxEZd9Mo9TPu=NzunmJ5EOJW8PakGnXpZ1gZg1cbTpNAYUGmg@mail.gmail.com>
+Subject: Re: [opensport] Re: Trying to create a mysql database instead of
+ using command tool
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Thanks for your interest in football.db if you're trying to use
+mysql you need to fix/change the build script -  mysql is a
+client/sever db system (not a file/lib db system like SQLite).
+
+  Thus, you have to fix the db settings - using the proper mysql settings e.g.:
+
+FOOTBALL_DB_PATH = "#{BUILD_DIR}/football.db"    ## fix: not needed
+for mysql - delete
+
+DB_CONFIG = {
+  :adapter   =>  'mysql',
+  :database  =>  FOOTBALL_DB_PATH   ## fix: works different in mysql
+}
+
+  Cheers.
+

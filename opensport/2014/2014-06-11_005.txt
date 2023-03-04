@@ -1,0 +1,60 @@
+From 1174205890560@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1166392950784
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b0f71368cb8e3c87
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.213.106 with SMTP id nr10mr9274256obc.30.1402467983140;
+        Tue, 10 Jun 2014 23:26:23 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.2.33 with SMTP id 1ls833000igr.13.canary; Tue, 10 Jun 2014
+ 23:26:22 -0700 (PDT)
+X-Received: by 10.50.131.198 with SMTP id oo6mr516828igb.1.1402467982879;
+        Tue, 10 Jun 2014 23:26:22 -0700 (PDT)
+X-Google-Doc-Id: 8524e4496b603e01
+X-Google-Web-Client: true
+Date: Tue, 10 Jun 2014 23:26:21 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <efc99c5b-ee7f-4c06-b909-1d1bb6161c99@googlegroups.com>
+In-Reply-To: <3823a33d-fe31-405f-a04f-cc92cc8e398f@googlegroups.com>
+References: <3823a33d-fe31-405f-a04f-cc92cc8e398f@googlegroups.com>
+Subject: Re: Sportbook Heroku Rake Error
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2190_4731847.1402467981960"
+X-Google-Token: EI3t35wFSCW2SRPUn_I0
+X-Google-IP: 188.22.116.247
+
+------=_Part_2190_4731847.1402467981960
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2191_4160280.1402467981960"
+
+------=_Part_2191_4160280.1402467981960
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Craig,
+
+   Thanks for your interest in sportbook. Sorry that is a known issue (will 
+add it to the docu once I get around)   If the database schema changes (in 
+sportdb) you have to delete and recreate your database in your sportbook 
+setup e.g. on Heroku try
+
+   $ heroku pg:reset DATABASE_URL --confirm <your_app_here>
+
+   or similar before rerunning (recreating) the database / setup. Cheers.
+
+PS: Why?  Sorry, sportbook and sportdb do NOT use any database migration 
+magic, thus, if the database changes you have to recreate it.
+
+------=_Part_2191_4160280.1402467981960
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello Craig,<br><br>&nbsp;&nbsp; Thanks for your interest in sportbook. Sorry that is a known issue (will add it to the docu once I get around) &nbsp; If the database schema changes (in sportdb) you have to delete and recreate your database in your sportbook setup e.g. on Heroku try<br><br>&nbsp;&nbsp; $ heroku pg:reset DATABASE_URL --confirm &lt;your_app_here&gt;<br><br>&nbsp;&nbsp; or similar before rerunning (recreating) the database / setup. Cheers.<br><br>PS: Why?&nbsp; Sorry, sportbook and sportdb do NOT use any database migration magic, thus, if the database changes you have to recreate it.<br></div>
+------=_Part_2191_4160280.1402467981960--
+
+------=_Part_2190_4731847.1402467981960--
+

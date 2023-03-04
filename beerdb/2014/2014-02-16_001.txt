@@ -1,0 +1,57 @@
+From 100114890752@xxx Sat Dec 20 19:01:39 +0000 2014
+X-GM-THRID: 99169075200
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,999914130b30be09,start
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.52.121.68 with SMTP id li4mr6078349vdb.6.1392511107357;
+        Sat, 15 Feb 2014 16:38:27 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.50.102.7 with SMTP id fk7ls468021igb.8.canary; Sat, 15 Feb
+ 2014 16:38:27 -0800 (PST)
+X-Received: by 10.66.240.4 with SMTP id vw4mr6870791pac.10.1392511107118;
+        Sat, 15 Feb 2014 16:38:27 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-vc0-x22e.google.com (mail-vc0-x22e.google.com [2607:f8b0:400c:c03::22e])
+        by gmr-mx.google.com with ESMTPS id hh7si1821641vdb.1.2014.02.15.16.38.27
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 15 Feb 2014 16:38:27 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c03::22e as permitted sender) client-ip=2607:f8b0:400c:c03::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c03::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-vc0-f174.google.com with SMTP id im17so10370882vcb.19
+        for <beerdb@googlegroups.com>; Sat, 15 Feb 2014 16:38:27 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=b/7PHQM3vsXtmAvFBlyknhNdntZ2/DfV2zGuZ6eK7dM=;
+        b=03qEM0pByg7KURwkt8Vwh5xjrbzi5+FYjO+y3x1ij2/oEIhU4Fxnd66Oh9oFrGogfO
+         db6cA6ISkt7oEf1BlsuQWukwCCoNrnycZjfUSJgu+FhXUBMSAGLyXsHX5STBGiUaR2Bt
+         ABfaeVYLucKiTPX1Gh7c1HA+Ie+YlDdT3e+hrhh31hTYu+82P3U8WMMtlidvyqqXYyq8
+         dn/omKrO/aPa4aeY2dX03VIrvad3P2X6wKiTpCthqzPw8DYJzzRukdWvwJnlrWix2uU3
+         RylzXMShFKyDVrbwU53DfTah0iCWlY8OL2CzcrY+edHES9GcKznSIcrOepK82ZGO8Fr0
+         MdRA==
+MIME-Version: 1.0
+X-Received: by 10.221.30.14 with SMTP id sa14mr308358vcb.44.1392511106998;
+ Sat, 15 Feb 2014 16:38:26 -0800 (PST)
+Received: by 10.58.156.10 with HTTP; Sat, 15 Feb 2014 16:38:26 -0800 (PST)
+Date: Sat, 15 Feb 2014 18:38:26 -0600
+Message-ID: <CAAxEZd9jPv+0Vw+soKddjA4XH_E5+bXa2KqY=3OCeKvF7BpMNQ@mail.gmail.com>
+Subject: beer.db - Pre-Built SQLite Database for Download - Release v2014.02.15
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  FYI: I've tried out the GitHub releases functionality and uploaded a
+pre-built beer.db using SQLite (~ 1 Meg).  You can get (download) a
+copy @ github.com/openbeer/build/releases
+
+   Let me know if there's any interest in pre-built database releases.
+Or if you know any other options (other than GitHub releases) for
+distributions of binaries. Cheers.
+

@@ -1,0 +1,51 @@
+From 248244076544@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 230668894208
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,62dcd4fef002a41c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.150.192.7 with SMTP id p7mr899188ybf.3.1232530731715; Wed, 21 
+	Jan 2009 01:38:51 -0800 (PST)
+Date: Wed, 21 Jan 2009 01:38:51 -0800 (PST)
+In-Reply-To: <140cca6b-bca9-4743-a6f0-dd20e641cde1@v39g2000pro.googlegroups.com>
+X-IP: 91.115.105.198
+References: <140cca6b-bca9-4743-a6f0-dd20e641cde1@v39g2000pro.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: P1dLqgwAAAABv4vJM8rBwSmYf2s44XMk
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) 
+	AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.43 Safari/525.19,gzip(gfe),gzip(gfe)
+Message-ID: <3a6a2b5d-5189-4e10-8a4d-4104524fa4b5@o4g2000pra.googlegroups.com>
+Subject: Re: S6 and SVG
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello Bruce,
+
+> Nice to see S6, as well as its support for SVG. However, if I read the
+> example document sources correctly, SVG support is required and use of
+> IE just yields an error message to upgrade to "better" browsers.
+>
+> While I sympathize with this sentiment, I need to use this for
+> teaching, where students do use IE. Is there not a way to gracefully-
+> degrade for non-SVG browsers?
+>
+> Bruce
+>
+> PS - I haven't gotten very far in testing, as doing "gem install
+> slideshow" failed b/c oniguruma wouldn't compile on my machine for
+> some reason.
+
+  Thanks for your comments and ideas. The plan is to make the
+oniguruma dependency optional to make installation easier on Unix/
+Linux systems and also to continue with better breaking out the
+JavaScript slide show package to make it easier to use different
+templates, that, for example, won't depend on or use SVG, and, thus
+will run on IE or any other browsers without SVG support. I'm
+currently on the road with limited internet access (only once or twice
+a week). Sorry for the short and late response. Thanks for your
+understanding and patience. I'll be back later this week. Cheers.
+
+

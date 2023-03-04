@@ -1,0 +1,414 @@
+From 7018846332415639552@xxx Thu Oct 14 09:08:29 +0000 2021
+X-GM-THRID: 6961100163747151872
+X-Received: by 2002:a05:622a:1807:: with SMTP id t7mr5027814qtc.140.1634202509044;
+        Thu, 14 Oct 2021 02:08:29 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a37:bb05:: with SMTP id l5ls2772995qkf.3.gmail; Thu, 14 Oct
+ 2021 02:08:28 -0700 (PDT)
+X-Received: by 2002:a37:43d8:: with SMTP id q207mr3619731qka.476.1634202508478;
+        Thu, 14 Oct 2021 02:08:28 -0700 (PDT)
+Received: by 2002:a05:620a:68c:b0:3d5:acbd:f8ae with SMTP id af79cd13be357-45faf220f9cms85a;
+        Wed, 13 Oct 2021 08:02:15 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwd+KYP6Xgpf7LOssVWaUVUAE2yYJJjKQ01jphPTgLlD6qumN9lL2wnSP7V+pMXJSTVg9v6GA2u2A==
+X-Received: by 2002:a37:9185:: with SMTP id t127mr25429326qkd.228.1634137334826;
+        Wed, 13 Oct 2021 08:02:14 -0700 (PDT)
+X-Google-Thread-Subscription: Yes
+X-Google-Web-Client: true
+Date: Wed, 13 Oct 2021 08:02:14 -0700 (PDT)
+From: Alex Spiers <advspiers@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <ee6b00d8-10da-45b9-a3a3-118359e83a42n@googlegroups.com>
+In-Reply-To: <CAAxEZd8wJST0=_f3236xEAEZ5gVt7uZYwQZVxm27K4W-ADoc9A@mail.gmail.com>
+References: <ed2bac25-07cf-41da-bc35-2ea87f0eeaddn@googlegroups.com>
+ <CAAxEZd8wJST0=_f3236xEAEZ5gVt7uZYwQZVxm27K4W-ADoc9A@mail.gmail.com>
+Subject: Re: [opensport] Creating the eng2020-21 for the first time
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2440_629847157.1634137334663"
+
+------=_Part_2440_629847157.1634137334663
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2441_1028550215.1634137334663"
+
+------=_Part_2441_1028550215.1634137334663
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+HI I am getting similar error message.
+
+>From within the cloned local england git repository, I've tried running *sp=
+ortdb=20
+--verbose build*.
+
+I get the following error message:
+
+*(auto config) try matching teams:*
+*["Leeds United FC", "Middlesbrough FC"]*
+*[debug] parsing round header line: >Matchday 1<*
+*[debug]   find_round_header_name! line-before: >>Matchday 1<<*
+*[debug]   find_round_name! line-after: >>Matchday 1<<*
+*[debug]    name: >>Matchday 1<<*
+*[debug]   line: >[ROUND.NAME]<*
+*[debug] parsing game (fixture) line: >[Sat Aug/18]<*
+*[debug]   no game match (two teams required) found for line: >[Sat=20
+Aug/18]<*
+*[debug]    [parse_matchdata] hash: >{:day_name=3D>"Sat", :month_name=3D>"A=
+ug",=20
+:day=3D>"18"}<*
+*[debug]    [calc_year] ????-8-18 -- start: 2001-07-01*
+*[debug]    date: >2001-08-18<*
+*[debug] date header line found: >[[EN_DAY_MONTH_DD]]<*
+*[debug]     date: 2001-08-18 with start: 2001-07-01*
+*[debug] parsing game (fixture) line: >Charlton Athletic FC     1-2 =20
+Everton FC<*
+*[debug]      match for team  >charltonathleticfc< >Charlton\ Athletic\ FC<=
+*
+*[debug]      match for team  >evertonfc< >Everton\ FC<*
+*[debug]    team1: >charltonathleticfc<*
+*[debug]    team2: >evertonfc<*
+*[debug]   line: >[TEAM1]      [SCORE.EN__FT_(HT)?]  [TEAM2] <*
+
+**** error: wrong number of arguments (given 1, expected 0)*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-structs-0.1.2/lib/sportdb/s=
+tructs/structs/match.rb:40:in=20
+`update'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-structs-0.1.2/lib/sportdb/s=
+tructs/structs/match.rb:37:in=20
+`initialize'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/f=
+ormats/match/match_parser.rb:390:in=20
+`new'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/f=
+ormats/match/match_parser.rb:390:in=20
+`parse_game'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/f=
+ormats/match/match_parser.rb:313:in=20
+`try_parse_game'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/f=
+ormats/match/match_parser.rb:59:in=20
+`block in parse'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/f=
+ormats/match/match_parser.rb:43:in=20
+`each'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/f=
+ormats/match/match_parser.rb:43:in=20
+`parse'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/r=
+eaders/match_reader.rb:109:in=20
+`block in parse'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/r=
+eaders/match_reader.rb:44:in=20
+`each'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/r=
+eaders/match_reader.rb:44:in=20
+`parse'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/r=
+eaders/match_reader.rb:13:in=20
+`parse'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/r=
+eaders.rb:24:in=20
+`parse_match'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/r=
+eaders/package.rb:36:in=20
+`block in read_match'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/f=
+ormats/package.rb:244:in=20
+`block in each'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/f=
+ormats/datafile_package.rb:58:in=20
+`block in each'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/f=
+ormats/datafile_package.rb:52:in=20
+`each'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/f=
+ormats/datafile_package.rb:52:in=20
+`each'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/f=
+ormats/package.rb:242:in=20
+`each'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/f=
+ormats/package.rb:253:in=20
+`each_match'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/r=
+eaders/package.rb:35:in=20
+`read_match'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/r=
+eaders/package.rb:54:in=20
+`read'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-2.3.2/lib/sportdb/cli/main.=
+rb:123:in=20
+`block (2 levels) in <class:Toolii>'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/gli-2.20.1/lib/gli/command_support.=
+rb:131:in=20
+`execute'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/gli-2.20.1/lib/gli/app_support.rb:2=
+96:in=20
+`block in call_command'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/gli-2.20.1/lib/gli/app_support.rb:3=
+09:in=20
+`call_command'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/gli-2.20.1/lib/gli/app_support.rb:8=
+3:in=20
+`run'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-2.3.2/lib/sportdb/cli/main.=
+rb:16:in=20
+`run'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-2.3.2/lib/sportdb.rb:24:in=
+=20
+`main'*
+*C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-2.3.2/bin/sportdb:5:in=20
+`<top (required)>'*
+*C:/Ruby30-x64/bin/sportdb:23:in `load'*
+*C:/Ruby30-x64/bin/sportdb:23:in `<main>'*
+
+Any ideas how to fix? If not, please tell what version of Ruby/etc to=20
+install (i.e. what technical stack are you using) so at least I can=20
+replicate a working version
+
+Thanks so much for your help!
+
+best wishes,
+
+Alex
+
+
+On Tuesday, 11 May 2021 at 19:33:29 UTC+1 Gerald Bauer wrote:
+
+> Hello,
+> some days ago some reported as similar error while building the
+> world cup dataset. I know sorry it sounds like a joke it's working
+> over here on a test run / build.
+>
+> Looks like the sportdb tool is installed (from your log printout). Try=20
+> again:
+>
+> $ sportdb help
+>
+> Usually the recommendation is to start a build with new in an empty
+> directory. Thus, retry in an empty director such as:
+>
+> $ mkdir eng # or such
+> $ cd eng
+> $ sportdb new eng2020-21
+>
+> If it fails again - now you can debug a "local" build assuming
+> you have the downloaded zips in your directory.
+>
+> Note: Everytime you try a new build you have to DELETE the local
+> sport.db file, thus, try:
+>
+> $ del sport.db
+>
+> And now start a "local" build using the download Datafile that you
+> should see in your directory.
+>
+> $ sportdb build
+>
+> If it fails again you can help with some more debug information and
+> the --verbose flag - that is, delete sport.db again and
+> try:
+>
+> $ sportdb --verbose build
+>
+> And see if this error message is more helpful - if you post it here
+> I might be able to find out more. Sorry for the trouble. Cheers.
+> Prost.
+>
+>
+>
+> El mar, 11 may 2021 a las 20:23, Nicky Hogg (<nicky....@gmail.com>)=20
+> escribi=C3=B3:
+> >
+> > Hi Gerald, Im new to ruby and just got it installed and installed=20
+> sportdb with gem, im running the command "sportdb new eng2020-21" shown i=
+n=20
+> the example documentation on github, this does create a sport.db file on =
+my=20
+> computer however all this is created is the tables, and content has not=
+=20
+> been populated as get the command line error, shown in the photo attached=
+.=20
+> Im really new to this so I'm probably making some silly mistake but I can=
+'t=20
+> get it to work please could you let me know what I'm doing wrong. Thanks =
+: )
+> >
+> > --
+> > You received this message because you are subscribed to the Google=20
+> Groups "opensport" group.
+> > To unsubscribe from this group and stop receiving emails from it, send=
+=20
+> an email to opensport+...@googlegroups.com.
+> > To view this discussion on the web visit=20
+> https://groups.google.com/d/msgid/opensport/ed2bac25-07cf-41da-bc35-2ea87=
+f0eeaddn%40googlegroups.com
+> .
+>
+
+------=_Part_2441_1028550215.1634137334663
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+HI I am getting similar error message.<div><br></div><div>From within the c=
+loned local england git repository, I've tried running <b>sportdb --verbose=
+ build</b>.</div><div><br></div><div>I get the following error message:</di=
+v><div><br></div><div><div><i>(auto config) try matching teams:</i></div><d=
+iv><i>["Leeds United FC", "Middlesbrough FC"]</i></div><div><i>[debug] pars=
+ing round header line: &gt;Matchday 1&lt;</i></div><div><i>[debug]&nbsp; &n=
+bsp;find_round_header_name! line-before: &gt;&gt;Matchday 1&lt;&lt;</i></di=
+v><div><i>[debug]&nbsp; &nbsp;find_round_name! line-after: &gt;&gt;Matchday=
+ 1&lt;&lt;</i></div><div><i>[debug]&nbsp; &nbsp; name: &gt;&gt;Matchday 1&l=
+t;&lt;</i></div><div><i>[debug]&nbsp; &nbsp;line: &gt;[ROUND.NAME]&lt;</i><=
+/div><div><i>[debug] parsing game (fixture) line: &gt;[Sat Aug/18]&lt;</i><=
+/div><div><i>[debug]&nbsp; &nbsp;no game match (two teams required) found f=
+or line: &gt;[Sat Aug/18]&lt;</i></div><div><i>[debug]&nbsp; &nbsp; [parse_=
+matchdata] hash: &gt;{:day_name=3D&gt;"Sat", :month_name=3D&gt;"Aug", :day=
+=3D&gt;"18"}&lt;</i></div><div><i>[debug]&nbsp; &nbsp; [calc_year] ????-8-1=
+8 -- start: 2001-07-01</i></div><div><i>[debug]&nbsp; &nbsp; date: &gt;2001=
+-08-18&lt;</i></div><div><i>[debug] date header line found: &gt;[[EN_DAY_MO=
+NTH_DD]]&lt;</i></div><div><i>[debug]&nbsp; &nbsp; &nbsp;date: 2001-08-18 w=
+ith start: 2001-07-01</i></div><div><i>[debug] parsing game (fixture) line:=
+ &gt;Charlton Athletic FC&nbsp; &nbsp; &nbsp;1-2&nbsp; Everton FC&lt;</i></=
+div><div><i>[debug]&nbsp; &nbsp; &nbsp; match for team&nbsp; &gt;charltonat=
+hleticfc&lt; &gt;Charlton\ Athletic\ FC&lt;</i></div><div><i>[debug]&nbsp; =
+&nbsp; &nbsp; match for team&nbsp; &gt;evertonfc&lt; &gt;Everton\ FC&lt;</i=
+></div><div><i>[debug]&nbsp; &nbsp; team1: &gt;charltonathleticfc&lt;</i></=
+div><div><i>[debug]&nbsp; &nbsp; team2: &gt;evertonfc&lt;</i></div><div><i>=
+[debug]&nbsp; &nbsp;line: &gt;[TEAM1]&nbsp; &nbsp; &nbsp; [SCORE.EN__FT_(HT=
+)?]&nbsp; [TEAM2] &lt;</i></div><div><i><br></i></div><div><i>*** error: wr=
+ong number of arguments (given 1, expected 0)</i></div><div><i>C:/Ruby30-x6=
+4/lib/ruby/gems/3.0.0/gems/sportdb-structs-0.1.2/lib/sportdb/structs/struct=
+s/match.rb:40:in `update'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.=
+0/gems/sportdb-structs-0.1.2/lib/sportdb/structs/structs/match.rb:37:in `in=
+itialize'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-f=
+ormats-1.1.6/lib/sportdb/formats/match/match_parser.rb:390:in `new'</i></di=
+v><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/=
+sportdb/formats/match/match_parser.rb:390:in `parse_game'</i></div><div><i>=
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/fo=
+rmats/match/match_parser.rb:313:in `try_parse_game'</i></div><div><i>C:/Rub=
+y30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/formats/=
+match/match_parser.rb:59:in `block in parse'</i></div><div><i>C:/Ruby30-x64=
+/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/formats/match/m=
+atch_parser.rb:43:in `each'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.=
+0.0/gems/sportdb-formats-1.1.6/lib/sportdb/formats/match/match_parser.rb:43=
+:in `parse'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb=
+-readers-1.1.2/lib/sportdb/readers/match_reader.rb:109:in `block in parse'<=
+/i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1=
+.2/lib/sportdb/readers/match_reader.rb:44:in `each'</i></div><div><i>C:/Rub=
+y30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/readers/=
+match_reader.rb:44:in `parse'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/=
+3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/readers/match_reader.rb:13:in =
+`parse'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-rea=
+ders-1.1.2/lib/sportdb/readers.rb:24:in `parse_match'</i></div><div><i>C:/R=
+uby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/reader=
+s/package.rb:36:in `block in read_match'</i></div><div><i>C:/Ruby30-x64/lib=
+/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/formats/package.rb:=
+244:in `block in each'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/g=
+ems/sportdb-formats-1.1.6/lib/sportdb/formats/datafile_package.rb:58:in `bl=
+ock in each'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportd=
+b-formats-1.1.6/lib/sportdb/formats/datafile_package.rb:52:in `each'</i></d=
+iv><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib=
+/sportdb/formats/datafile_package.rb:52:in `each'</i></div><div><i>C:/Ruby3=
+0-x64/lib/ruby/gems/3.0.0/gems/sportdb-formats-1.1.6/lib/sportdb/formats/pa=
+ckage.rb:242:in `each'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/g=
+ems/sportdb-formats-1.1.6/lib/sportdb/formats/package.rb:253:in `each_match=
+'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1=
+.1.2/lib/sportdb/readers/package.rb:35:in `read_match'</i></div><div><i>C:/=
+Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-readers-1.1.2/lib/sportdb/reade=
+rs/package.rb:54:in `read'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0=
+.0/gems/sportdb-2.3.2/lib/sportdb/cli/main.rb:123:in `block (2 levels) in &=
+lt;class:Toolii&gt;'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gem=
+s/gli-2.20.1/lib/gli/command_support.rb:131:in `execute'</i></div><div><i>C=
+:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/gli-2.20.1/lib/gli/app_support.rb:296=
+:in `block in call_command'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.=
+0.0/gems/gli-2.20.1/lib/gli/app_support.rb:309:in `call_command'</i></div><=
+div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/gli-2.20.1/lib/gli/app_suppor=
+t.rb:83:in `run'</i></div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sp=
+ortdb-2.3.2/lib/sportdb/cli/main.rb:16:in `run'</i></div><div><i>C:/Ruby30-=
+x64/lib/ruby/gems/3.0.0/gems/sportdb-2.3.2/lib/sportdb.rb:24:in `main'</i><=
+/div><div><i>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sportdb-2.3.2/bin/sport=
+db:5:in `&lt;top (required)&gt;'</i></div><div><i>C:/Ruby30-x64/bin/sportdb=
+:23:in `load'</i></div><div><i>C:/Ruby30-x64/bin/sportdb:23:in `&lt;main&gt=
+;'</i></div></div><div><i><br></i></div><div>Any ideas how to fix? If not, =
+please tell what version of Ruby/etc to install (i.e. what technical stack =
+are you using) so at least I can replicate a working version</div><div><br>=
+</div><div>Thanks so much for your help!</div><div><br></div><div>best wish=
+es,</div><div><br></div><div>Alex</div><div><br><br></div><div class=3D"gma=
+il_quote"><div dir=3D"auto" class=3D"gmail_attr">On Tuesday, 11 May 2021 at=
+ 19:33:29 UTC+1 Gerald Bauer wrote:<br/></div><blockquote class=3D"gmail_qu=
+ote" style=3D"margin: 0 0 0 0.8ex; border-left: 1px solid rgb(204, 204, 204=
+); padding-left: 1ex;">Hello,
+<br>   some days ago some reported as similar error while building the
+<br>world cup dataset. I know sorry it sounds like a joke it&#39;s working
+<br>over here on a test run / build.
+<br>
+<br>   Looks like the sportdb tool is installed (from your log printout). T=
+ry again:
+<br>
+<br>$  sportdb help
+<br>
+<br>   Usually the recommendation is to start a build with new in an empty
+<br>directory. Thus, retry in an empty director such as:
+<br>
+<br>$  mkdir eng      # or such
+<br>$ cd eng
+<br>$  sportdb new eng2020-21
+<br>
+<br>    If it fails again  - now you can debug a &quot;local&quot; build as=
+suming
+<br>you have the downloaded zips in your directory.
+<br>
+<br>Note: Everytime you try a new build you have to DELETE the local
+<br>sport.db file, thus, try:
+<br>
+<br>$ del sport.db
+<br>
+<br>And now start a &quot;local&quot; build  using the download Datafile th=
+at you
+<br>should see in your directory.
+<br>
+<br>$ sportdb build
+<br>
+<br>If it fails again you can help with some more debug information and
+<br>the --verbose flag - that is, delete sport.db again and
+<br>try:
+<br>
+<br>$ sportdb --verbose build
+<br>
+<br>  And see if this error message is more helpful - if you post it here
+<br>I might be able to find out more. Sorry for the trouble. Cheers.
+<br>Prost.
+<br>
+<br>
+<br>
+<br>El mar, 11 may 2021 a las 20:23, Nicky Hogg (&lt;<a href data-email-mas=
+ked rel=3D"nofollow">nicky....@gmail.com</a>&gt;) escribi=C3=B3:
+<br>&gt;
+<br>&gt; Hi Gerald, Im new to ruby and just got it installed and installed =
+sportdb with gem, im running the command &quot;sportdb new eng2020-21&quot;=
+ shown in the example documentation on github, this does create a sport.db =
+file on my computer however all this is created is the tables, and content =
+has not been populated as get the command line error, shown in the photo at=
+tached. Im really new to this so I&#39;m probably making some silly mistake=
+ but I can&#39;t get it to work please could you let me know what I&#39;m d=
+oing wrong. Thanks : )
+<br>&gt;
+<br>&gt; --
+<br>&gt; You received this message because you are subscribed to the Google=
+ Groups &quot;opensport&quot; group.
+<br>&gt; To unsubscribe from this group and stop receiving emails from it, =
+send an email to <a href data-email-masked rel=3D"nofollow">opensport+...@g=
+ooglegroups.com</a>.
+<br>&gt; To view this discussion on the web visit <a href=3D"https://groups=
+.google.com/d/msgid/opensport/ed2bac25-07cf-41da-bc35-2ea87f0eeaddn%40googl=
+egroups.com" target=3D"_blank" rel=3D"nofollow" data-saferedirecturl=3D"htt=
+ps://www.google.com/url?hl=3Den-GB&amp;q=3Dhttps://groups.google.com/d/msgi=
+d/opensport/ed2bac25-07cf-41da-bc35-2ea87f0eeaddn%2540googlegroups.com&amp;=
+source=3Dgmail&amp;ust=3D1634223236689000&amp;usg=3DAFQjCNG8dM81Jls6T68V3xq=
+5KWp0QZQErg">https://groups.google.com/d/msgid/opensport/ed2bac25-07cf-41da=
+-bc35-2ea87f0eeaddn%40googlegroups.com</a>.
+<br></blockquote></div>
+------=_Part_2441_1028550215.1634137334663--
+
+------=_Part_2440_629847157.1634137334663--
+

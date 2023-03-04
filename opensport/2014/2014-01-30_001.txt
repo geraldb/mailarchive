@@ -1,0 +1,556 @@
+From 258050359296@xxx Tue Jun 16 00:17:23 +0000 2015
+X-GM-THRID: 252823207936
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,91274d0de1d6fc38
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.123.136 with SMTP id v8mr5579967yhh.56.1391105636089;
+        Thu, 30 Jan 2014 10:13:56 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.91.110 with SMTP id y101ls637343qgd.0.gmail; Thu, 30 Jan
+ 2014 10:13:55 -0800 (PST)
+X-Received: by 10.140.27.50 with SMTP id 47mr38663qgw.35.1391105635776;
+        Thu, 30 Jan 2014 10:13:55 -0800 (PST)
+X-Google-Doc-Id: e234e6252684c138
+X-Google-Web-Client: true
+Date: Thu, 30 Jan 2014 10:13:55 -0800 (PST)
+From: =?UTF-8?Q?Oriol_Franquesa_Cort=C3=A9s?= <ofranquesa@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <51f35b75-76da-4986-aee3-028b39c390a5@googlegroups.com>
+In-Reply-To: <36cce30c-d387-437b-880a-54f9d3f654ea@googlegroups.com>
+References: <d7f4432d-8234-4fe2-9d86-ddb1405fa163@googlegroups.com>
+ <36cce30c-d387-437b-880a-54f9d3f654ea@googlegroups.com>
+Subject: Re: A couple of questions...
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1022_2216733.1391105635370"
+X-Google-Token: EOOsqpcFOzioi2cGg700
+X-Google-IP: 217.6.112.18
+
+------=_Part_1022_2216733.1391105635370
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1023_11220169.1391105635370"
+
+------=_Part_1023_11220169.1391105635370
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald!
+
+Thanks a lot for your quick answer! :)
+
+Almost everything is clear now...
+
+I just wanted to know if there is some error on the files or with the 
+parsers. I made a Rakefile to create my world cup database but there's no 
+manner to parse the world-cup files. This is my Rakefile:
+
+BUILD_DIR = "."
+
+FOOTBALL_DB_PATH = "#{BUILD_DIR}/football.db"
+
+DB_CONFIG = {
+  :adapter   =>  'mysql2',
+  :database  =>  'football',
+  :username  =>  'root',
+  :password  =>  'test'
+}
+
+
+
+directory BUILD_DIR
+
+task :clean do
+  rm FOOTBALL_DB_PATH if File.exists?( FOOTBALL_DB_PATH )
+end
+
+task :env => BUILD_DIR do
+ require 'worlddb'
+ require 'sportdb'
+ require 'logutils/db'
+
+ LogUtils::Logger.root.level = :info
+
+ pp DB_CONFIG
+ ActiveRecord::Base.establish_connection( DB_CONFIG )
+end
+
+task :create => :env do
+  LogDb.create
+  WorldDb.create
+  SportDb.create
+end
+
+task :importworld => :env do
+  WorldDb.read_setup( 'setups/sport.db.admin', './world.db', skip_tags: 
+true )  # populate world tables
+  # WorldDb.stats
+end
+
+task :importsport => :env do
+  SportDb.read_setup( 'setups/all', './world-cup' )
+  # SportDb.stats
+end
+
+desc 'footballdb - build from scratch'
+task :build => [:clean, :create, :importworld, :importsport] do
+  puts 'Done.'
+end
+
+And this is what I get:
+
+root@orioldebian:/var/www/sportsdb# rake --trace importsport
+** Invoke importsport (first_time)
+** Invoke env (first_time)
+** Invoke . (first_time, not_needed)
+** Execute env
+worlddb 1.8.2 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]
+fetcher 0.4.2 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]
+sportdb/1.7.9 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]
+logdb 0.6.0 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]
+{:adapter=>"mysql2",
+ :database=>"football",
+ :username=>"root",
+ :password=>"helliwood"}
+** Execute importsport
+[info] parsing data 'setups/all' (./world-cup/setups/all.yml)...
+rake aborted!
+wrong number of arguments (3 for 2)
+/usr/local/rvm/gems/ruby-2.1.0/gems/worlddb-1.8.2/lib/worlddb/matcher.rb:7:in 
+`match_xxx_for_country'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/reader.rb:18:in 
+`match_tracks_for_country'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/reader.rb:64:in 
+`load'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/reader.rb:53:in 
+`block in load_setup'
+/usr/local/rvm/gems/ruby-2.1.0/gems/textutils-0.8.1/lib/textutils/reader/fixture_reader.rb:44:in 
+`block in each'
+/usr/local/rvm/gems/ruby-2.1.0/gems/textutils-0.8.1/lib/textutils/reader/fixture_reader.rb:43:in 
+`each'
+/usr/local/rvm/gems/ruby-2.1.0/gems/textutils-0.8.1/lib/textutils/reader/fixture_reader.rb:43:in 
+`each'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/reader.rb:52:in 
+`load_setup'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb.rb:122:in 
+`read_setup'
+/mnt/hgfs/httdocs/sportsdb/Rakefile:43:in `block in <top (required)>'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:236:in 
+`call'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:236:in 
+`block in execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:231:in 
+`each'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:231:in 
+`execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:175:in 
+`block in invoke_with_call_chain'
+/usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/monitor.rb:211:in 
+`mon_synchronize'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:168:in 
+`invoke_with_call_chain'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:161:in 
+`invoke'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:149:in 
+`invoke_task'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:106:in 
+`block (2 levels) in top_level'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:106:in 
+`each'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:106:in 
+`block in top_level'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:115:in 
+`run_with_threads'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:100:in 
+`top_level'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:78:in 
+`block in run'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:165:in 
+`standard_exception_handling'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:75:in 
+`run'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/bin/rake:33:in `<top 
+(required)>'
+/usr/local/rvm/gems/ruby-2.1.0/bin/rake:23:in `load'
+/usr/local/rvm/gems/ruby-2.1.0/bin/rake:23:in `<main>'
+/usr/local/rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
+/usr/local/rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => importsport
+
+
+Any help would be much appreciated! :)
+
+Oriol.
+ 
+
+On Wednesday, January 29, 2014 9:57:13 PM UTC+1, Gerald Bauer wrote:
+>
+> Hello,
+>
+> 1 - As another user asked before, how are the data maintained? I mean, 
+>> when are you gonna update a result after the match is played? (An example)
+>>
+>
+>     The match data is a plain text file residing on GitHub. For example, 
+> the match data for the World Cup 2014 in Brazil lives @  
+> github.com/openfootball/world-cup/blob/master/2014/cup.txt
+>
+>    Basically, it works like a wiki - anybody can update it (if you're a 
+> openfootball team member - you can update it directly; otherwise you may 
+> use a pull request).   It's an all volunteer effort, thus, there is no 
+> guarantee for updates. In practice I plan to update the World Cup 2014 at 
+> least once a day (since I plan to use the results for sportbook).
+>
+>    Once the results got updated on GitHub - you can sync your app via the 
+> built in machinery of the sportdb gem (basically just call SportDb.update! 
+> )  or use the public HTTP JSON API that gets for now updated once a day 
+> (that is, every 24 hours). 
+>  
+>
+>>
+>> 2 - Which data is included for a result? (Who scored the goals?)
+>>
+>
+>    For now only the results e.g.   Italy 3-0 Spain   etc.
+> . Again see the plain text fixtures files, for an example. Goals scored by 
+> players will get added later.    
+>
+>
+>> 3 - I don't know where can I find all the possible available URLs for the 
+>> web service.
+>>
+>
+>    Sorry, the docu page for the web service is currently down [1], it 
+> resides @ footballdb.herokuapp.com/api   but the service is working. 
+> Example:
+>
+>   - Get the teams for the World Cup 2014 -> 
+> footballdb.herokuapp.com/api/v1/event/world.2014/teams
+>   - Get all rounds -> 
+> footballdb.herokuapp.com/api/v1/event/world.2014/rounds
+>   - Get 1st round games -> 
+> footballdb.herokuapp.com/api/v1/event/world.2014/round/1
+>   - etc.
+>    
+>   Cheers.
+>
+> [1] The docu source page for the HTTP JSON API resides @ 
+> github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/service/views/index.erb
+>
+
+------=_Part_1023_11220169.1391105635370
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald!<div><br></div><div>Thanks a lot for your quick =
+answer! :)</div><div><br></div><div>Almost everything is clear now...</div>=
+<div><br></div><div>I just wanted to know if there is some error on the fil=
+es or with the parsers. I made a Rakefile to create my world cup database b=
+ut there's no manner to parse the world-cup files. This is my Rakefile:</di=
+v><div><br></div><div><div><font face=3D"courier new, monospace" size=3D"2"=
+ style=3D"background-color: rgb(238, 238, 238);">BUILD_DIR =3D "."</font></=
+div><div><font face=3D"courier new, monospace" size=3D"2" style=3D"backgrou=
+nd-color: rgb(238, 238, 238);"><br></font></div><div><font face=3D"courier =
+new, monospace" size=3D"2" style=3D"background-color: rgb(238, 238, 238);">=
+FOOTBALL_DB_PATH =3D "#{BUILD_DIR}/football.db"</font></div><div><font face=
+=3D"courier new, monospace" size=3D"2" style=3D"background-color: rgb(238, =
+238, 238);"><br></font></div><div><font face=3D"courier new, monospace" siz=
+e=3D"2" style=3D"background-color: rgb(238, 238, 238);">DB_CONFIG =3D {</fo=
+nt></div><div><font face=3D"courier new, monospace" size=3D"2" style=3D"bac=
+kground-color: rgb(238, 238, 238);">&nbsp; :adapter &nbsp; =3D&gt; &nbsp;'m=
+ysql2',</font></div><div><font face=3D"courier new, monospace" size=3D"2" s=
+tyle=3D"background-color: rgb(238, 238, 238);">&nbsp; :database &nbsp;=3D&g=
+t; &nbsp;'football',</font></div><div><font face=3D"courier new, monospace"=
+ size=3D"2" style=3D"background-color: rgb(238, 238, 238);">&nbsp; :usernam=
+e &nbsp;=3D&gt; &nbsp;'root',</font></div><div><font face=3D"courier new, m=
+onospace" size=3D"2" style=3D"background-color: rgb(238, 238, 238);">&nbsp;=
+ :password &nbsp;=3D&gt; &nbsp;'test'</font></div><div><font face=3D"courie=
+r new, monospace" size=3D"2" style=3D"background-color: rgb(238, 238, 238);=
+">}</font></div><div><font face=3D"courier new, monospace" size=3D"2" style=
+=3D"background-color: rgb(238, 238, 238);"><br></font></div><div><font face=
+=3D"courier new, monospace" size=3D"2" style=3D"background-color: rgb(238, =
+238, 238);"><br></font></div><div><font face=3D"courier new, monospace" siz=
+e=3D"2" style=3D"background-color: rgb(238, 238, 238);"><br></font></div><d=
+iv><font face=3D"courier new, monospace" size=3D"2" style=3D"background-col=
+or: rgb(238, 238, 238);">directory BUILD_DIR</font></div><div><font face=3D=
+"courier new, monospace" size=3D"2" style=3D"background-color: rgb(238, 238=
+, 238);"><br></font></div><div><font face=3D"courier new, monospace" size=
+=3D"2" style=3D"background-color: rgb(238, 238, 238);">task :clean do</font=
+></div><div><font face=3D"courier new, monospace" size=3D"2" style=3D"backg=
+round-color: rgb(238, 238, 238);">&nbsp; rm FOOTBALL_DB_PATH if File.exists=
+?( FOOTBALL_DB_PATH )</font></div><div><font face=3D"courier new, monospace=
+" size=3D"2" style=3D"background-color: rgb(238, 238, 238);">end</font></di=
+v><div><font face=3D"courier new, monospace" size=3D"2" style=3D"background=
+-color: rgb(238, 238, 238);"><br></font></div><div><font face=3D"courier ne=
+w, monospace" size=3D"2" style=3D"background-color: rgb(238, 238, 238);">ta=
+sk :env =3D&gt; BUILD_DIR do</font></div><div><font face=3D"courier new, mo=
+nospace" size=3D"2" style=3D"background-color: rgb(238, 238, 238);">&nbsp;r=
+equire 'worlddb'</font></div><div><font face=3D"courier new, monospace" siz=
+e=3D"2" style=3D"background-color: rgb(238, 238, 238);">&nbsp;require 'spor=
+tdb'</font></div><div><font face=3D"courier new, monospace" size=3D"2" styl=
+e=3D"background-color: rgb(238, 238, 238);">&nbsp;require 'logutils/db'</fo=
+nt></div><div><font face=3D"courier new, monospace" size=3D"2" style=3D"bac=
+kground-color: rgb(238, 238, 238);"><br></font></div><div><font face=3D"cou=
+rier new, monospace" size=3D"2" style=3D"background-color: rgb(238, 238, 23=
+8);">&nbsp;LogUtils::Logger.root.level =3D :info</font></div><div><font fac=
+e=3D"courier new, monospace" size=3D"2" style=3D"background-color: rgb(238,=
+ 238, 238);"><br></font></div><div><font face=3D"courier new, monospace" si=
+ze=3D"2" style=3D"background-color: rgb(238, 238, 238);">&nbsp;pp DB_CONFIG=
+</font></div><div><font face=3D"courier new, monospace" size=3D"2" style=3D=
+"background-color: rgb(238, 238, 238);">&nbsp;ActiveRecord::Base.establish_=
+connection( DB_CONFIG )</font></div><div><font face=3D"courier new, monospa=
+ce" size=3D"2" style=3D"background-color: rgb(238, 238, 238);">end</font></=
+div><div><font face=3D"courier new, monospace" size=3D"2" style=3D"backgrou=
+nd-color: rgb(238, 238, 238);"><br></font></div><div><font face=3D"courier =
+new, monospace" size=3D"2" style=3D"background-color: rgb(238, 238, 238);">=
+task :create =3D&gt; :env do</font></div><div><font face=3D"courier new, mo=
+nospace" size=3D"2" style=3D"background-color: rgb(238, 238, 238);">&nbsp; =
+LogDb.create</font></div><div><font face=3D"courier new, monospace" size=3D=
+"2" style=3D"background-color: rgb(238, 238, 238);">&nbsp; WorldDb.create</=
+font></div><div><font face=3D"courier new, monospace" size=3D"2" style=3D"b=
+ackground-color: rgb(238, 238, 238);">&nbsp; SportDb.create</font></div><di=
+v><font face=3D"courier new, monospace" size=3D"2" style=3D"background-colo=
+r: rgb(238, 238, 238);">end</font></div><div><font face=3D"courier new, mon=
+ospace" size=3D"2" style=3D"background-color: rgb(238, 238, 238);"><br></fo=
+nt></div><div><font face=3D"courier new, monospace" size=3D"2" style=3D"bac=
+kground-color: rgb(238, 238, 238);">task :importworld =3D&gt; :env do</font=
+></div><div><font face=3D"courier new, monospace" size=3D"2" style=3D"backg=
+round-color: rgb(238, 238, 238);">&nbsp; WorldDb.read_setup( 'setups/sport.=
+db.admin', './world.db', skip_tags: true ) &nbsp;# populate world tables</f=
+ont></div><div><font face=3D"courier new, monospace" size=3D"2" style=3D"ba=
+ckground-color: rgb(238, 238, 238);">&nbsp; # WorldDb.stats</font></div><di=
+v><font face=3D"courier new, monospace" size=3D"2" style=3D"background-colo=
+r: rgb(238, 238, 238);">end</font></div><div><font face=3D"courier new, mon=
+ospace" size=3D"2" style=3D"background-color: rgb(238, 238, 238);"><br></fo=
+nt></div><div><font face=3D"courier new, monospace" size=3D"2" style=3D"bac=
+kground-color: rgb(238, 238, 238);">task :importsport =3D&gt; :env do</font=
+></div><div><font face=3D"courier new, monospace" size=3D"2" style=3D"backg=
+round-color: rgb(238, 238, 238);">&nbsp; SportDb.read_setup( 'setups/all', =
+'./world-cup' )</font></div><div><font face=3D"courier new, monospace" size=
+=3D"2" style=3D"background-color: rgb(238, 238, 238);">&nbsp; # SportDb.sta=
+ts</font></div><div><font face=3D"courier new, monospace" size=3D"2" style=
+=3D"background-color: rgb(238, 238, 238);">end</font></div><div><font face=
+=3D"courier new, monospace" size=3D"2" style=3D"background-color: rgb(238, =
+238, 238);"><br></font></div><div><font face=3D"courier new, monospace" siz=
+e=3D"2" style=3D"background-color: rgb(238, 238, 238);">desc 'footballdb - =
+build from scratch'</font></div><div><font face=3D"courier new, monospace" =
+size=3D"2" style=3D"background-color: rgb(238, 238, 238);">task :build =3D&=
+gt; [:clean, :create, :importworld, :importsport] do</font></div><div><font=
+ face=3D"courier new, monospace" size=3D"2" style=3D"background-color: rgb(=
+238, 238, 238);">&nbsp; puts 'Done.'</font></div><div><font face=3D"courier=
+ new, monospace" size=3D"2" style=3D"background-color: rgb(238, 238, 238);"=
+>end</font></div><div><br></div></div><div>And this is what I get:</div><di=
+v><br></div><div><div><span style=3D"background-color: rgb(238, 238, 238);"=
+><font face=3D"courier new, monospace">root@orioldebian:/var/www/sportsdb# =
+rake --trace importsport</font></span></div><div><span style=3D"background-=
+color: rgb(238, 238, 238);"><font face=3D"courier new, monospace">** Invoke=
+ importsport (first_time)</font></span></div><div><span style=3D"background=
+-color: rgb(238, 238, 238);"><font face=3D"courier new, monospace">** Invok=
+e env (first_time)</font></span></div><div><span style=3D"background-color:=
+ rgb(238, 238, 238);"><font face=3D"courier new, monospace">** Invoke . (fi=
+rst_time, not_needed)</font></span></div><div><span style=3D"background-col=
+or: rgb(238, 238, 238);"><font face=3D"courier new, monospace">** Execute e=
+nv</font></span></div><div><span style=3D"background-color: rgb(238, 238, 2=
+38);"><font face=3D"courier new, monospace">worlddb 1.8.2 on Ruby 2.1.0 (20=
+13-12-25) [x86_64-linux]</font></span></div><div><span style=3D"background-=
+color: rgb(238, 238, 238);"><font face=3D"courier new, monospace">fetcher 0=
+.4.2 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]</font></span></div><div><spa=
+n style=3D"background-color: rgb(238, 238, 238);"><font face=3D"courier new=
+, monospace">sportdb/1.7.9 on Ruby 2.1.0 (2013-12-25) [x86_64-linux]</font>=
+</span></div><div><span style=3D"background-color: rgb(238, 238, 238);"><fo=
+nt face=3D"courier new, monospace">logdb 0.6.0 on Ruby 2.1.0 (2013-12-25) [=
+x86_64-linux]</font></span></div><div><span style=3D"background-color: rgb(=
+238, 238, 238);"><font face=3D"courier new, monospace">{:adapter=3D&gt;"mys=
+ql2",</font></span></div><div><span style=3D"background-color: rgb(238, 238=
+, 238);"><font face=3D"courier new, monospace">&nbsp;:database=3D&gt;"footb=
+all",</font></span></div><div><span style=3D"background-color: rgb(238, 238=
+, 238);"><font face=3D"courier new, monospace">&nbsp;:username=3D&gt;"root"=
+,</font></span></div><div><span style=3D"background-color: rgb(238, 238, 23=
+8);"><font face=3D"courier new, monospace">&nbsp;:password=3D&gt;"helliwood=
+"}</font></span></div><div><span style=3D"background-color: rgb(238, 238, 2=
+38);"><font face=3D"courier new, monospace">** Execute importsport</font></=
+span></div><div><span style=3D"background-color: rgb(238, 238, 238);"><font=
+ face=3D"courier new, monospace">[info] parsing data 'setups/all' (./world-=
+cup/setups/all.yml)...</font></span></div><div><span style=3D"background-co=
+lor: rgb(238, 238, 238);"><font face=3D"courier new, monospace">rake aborte=
+d!</font></span></div><div><span style=3D"background-color: rgb(238, 238, 2=
+38);"><font face=3D"courier new, monospace">wrong number of arguments (3 fo=
+r 2)</font></span></div><div><span style=3D"background-color: rgb(238, 238,=
+ 238);"><font face=3D"courier new, monospace">/usr/local/rvm/gems/ruby-2.1.=
+0/gems/worlddb-1.8.2/lib/worlddb/matcher.rb:7:in `match_xxx_for_country'</f=
+ont></span></div><div><span style=3D"background-color: rgb(238, 238, 238);"=
+><font face=3D"courier new, monospace">/usr/local/rvm/gems/ruby-2.1.0/gems/=
+sportdb-1.7.9/lib/sportdb/reader.rb:18:in `match_tracks_for_country'</font>=
+</span></div><div><span style=3D"background-color: rgb(238, 238, 238);"><fo=
+nt face=3D"courier new, monospace">/usr/local/rvm/gems/ruby-2.1.0/gems/spor=
+tdb-1.7.9/lib/sportdb/reader.rb:64:in `load'</font></span></div><div><span =
+style=3D"background-color: rgb(238, 238, 238);"><font face=3D"courier new, =
+monospace">/usr/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/re=
+ader.rb:53:in `block in load_setup'</font></span></div><div><span style=3D"=
+background-color: rgb(238, 238, 238);"><font face=3D"courier new, monospace=
+">/usr/local/rvm/gems/ruby-2.1.0/gems/textutils-0.8.1/lib/textutils/reader/=
+fixture_reader.rb:44:in `block in each'</font></span></div><div><span style=
+=3D"background-color: rgb(238, 238, 238);"><font face=3D"courier new, monos=
+pace">/usr/local/rvm/gems/ruby-2.1.0/gems/textutils-0.8.1/lib/textutils/rea=
+der/fixture_reader.rb:43:in `each'</font></span></div><div><span style=3D"b=
+ackground-color: rgb(238, 238, 238);"><font face=3D"courier new, monospace"=
+>/usr/local/rvm/gems/ruby-2.1.0/gems/textutils-0.8.1/lib/textutils/reader/f=
+ixture_reader.rb:43:in `each'</font></span></div><div><span style=3D"backgr=
+ound-color: rgb(238, 238, 238);"><font face=3D"courier new, monospace">/usr=
+/local/rvm/gems/ruby-2.1.0/gems/sportdb-1.7.9/lib/sportdb/reader.rb:52:in `=
+load_setup'</font></span></div><div><span style=3D"background-color: rgb(23=
+8, 238, 238);"><font face=3D"courier new, monospace">/usr/local/rvm/gems/ru=
+by-2.1.0/gems/sportdb-1.7.9/lib/sportdb.rb:122:in `read_setup'</font></span=
+></div><div><span style=3D"background-color: rgb(238, 238, 238);"><font fac=
+e=3D"courier new, monospace">/mnt/hgfs/httdocs/sportsdb/Rakefile:43:in `blo=
+ck in &lt;top (required)&gt;'</font></span></div><div><span style=3D"backgr=
+ound-color: rgb(238, 238, 238);"><font face=3D"courier new, monospace">/usr=
+/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:236:in `call'<=
+/font></span></div><div><span style=3D"background-color: rgb(238, 238, 238)=
+;"><font face=3D"courier new, monospace">/usr/local/rvm/gems/ruby-2.1.0/gem=
+s/rake-10.1.1/lib/rake/task.rb:236:in `block in execute'</font></span></div=
+><div><span style=3D"background-color: rgb(238, 238, 238);"><font face=3D"c=
+ourier new, monospace">/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/=
+rake/task.rb:231:in `each'</font></span></div><div><span style=3D"backgroun=
+d-color: rgb(238, 238, 238);"><font face=3D"courier new, monospace">/usr/lo=
+cal/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:231:in `execute'<=
+/font></span></div><div><span style=3D"background-color: rgb(238, 238, 238)=
+;"><font face=3D"courier new, monospace">/usr/local/rvm/gems/ruby-2.1.0/gem=
+s/rake-10.1.1/lib/rake/task.rb:175:in `block in invoke_with_call_chain'</fo=
+nt></span></div><div><span style=3D"background-color: rgb(238, 238, 238);">=
+<font face=3D"courier new, monospace">/usr/local/rvm/rubies/ruby-2.1.0/lib/=
+ruby/2.1.0/monitor.rb:211:in `mon_synchronize'</font></span></div><div><spa=
+n style=3D"background-color: rgb(238, 238, 238);"><font face=3D"courier new=
+, monospace">/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.=
+rb:168:in `invoke_with_call_chain'</font></span></div><div><span style=3D"b=
+ackground-color: rgb(238, 238, 238);"><font face=3D"courier new, monospace"=
+>/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/task.rb:161:in `i=
+nvoke'</font></span></div><div><span style=3D"background-color: rgb(238, 23=
+8, 238);"><font face=3D"courier new, monospace">/usr/local/rvm/gems/ruby-2.=
+1.0/gems/rake-10.1.1/lib/rake/application.rb:149:in `invoke_task'</font></s=
+pan></div><div><span style=3D"background-color: rgb(238, 238, 238);"><font =
+face=3D"courier new, monospace">/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10=
+.1.1/lib/rake/application.rb:106:in `block (2 levels) in top_level'</font><=
+/span></div><div><span style=3D"background-color: rgb(238, 238, 238);"><fon=
+t face=3D"courier new, monospace">/usr/local/rvm/gems/ruby-2.1.0/gems/rake-=
+10.1.1/lib/rake/application.rb:106:in `each'</font></span></div><div><span =
+style=3D"background-color: rgb(238, 238, 238);"><font face=3D"courier new, =
+monospace">/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/applica=
+tion.rb:106:in `block in top_level'</font></span></div><div><span style=3D"=
+background-color: rgb(238, 238, 238);"><font face=3D"courier new, monospace=
+">/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:1=
+15:in `run_with_threads'</font></span></div><div><span style=3D"background-=
+color: rgb(238, 238, 238);"><font face=3D"courier new, monospace">/usr/loca=
+l/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/lib/rake/application.rb:100:in `top_=
+level'</font></span></div><div><span style=3D"background-color: rgb(238, 23=
+8, 238);"><font face=3D"courier new, monospace">/usr/local/rvm/gems/ruby-2.=
+1.0/gems/rake-10.1.1/lib/rake/application.rb:78:in `block in run'</font></s=
+pan></div><div><span style=3D"background-color: rgb(238, 238, 238);"><font =
+face=3D"courier new, monospace">/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10=
+.1.1/lib/rake/application.rb:165:in `standard_exception_handling'</font></s=
+pan></div><div><span style=3D"background-color: rgb(238, 238, 238);"><font =
+face=3D"courier new, monospace">/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10=
+.1.1/lib/rake/application.rb:75:in `run'</font></span></div><div><span styl=
+e=3D"background-color: rgb(238, 238, 238);"><font face=3D"courier new, mono=
+space">/usr/local/rvm/gems/ruby-2.1.0/gems/rake-10.1.1/bin/rake:33:in `&lt;=
+top (required)&gt;'</font></span></div><div><span style=3D"background-color=
+: rgb(238, 238, 238);"><font face=3D"courier new, monospace">/usr/local/rvm=
+/gems/ruby-2.1.0/bin/rake:23:in `load'</font></span></div><div><span style=
+=3D"background-color: rgb(238, 238, 238);"><font face=3D"courier new, monos=
+pace">/usr/local/rvm/gems/ruby-2.1.0/bin/rake:23:in `&lt;main&gt;'</font></=
+span></div><div><span style=3D"background-color: rgb(238, 238, 238);"><font=
+ face=3D"courier new, monospace">/usr/local/rvm/gems/ruby-2.1.0/bin/ruby_ex=
+ecutable_hooks:15:in `eval'</font></span></div><div><span style=3D"backgrou=
+nd-color: rgb(238, 238, 238);"><font face=3D"courier new, monospace">/usr/l=
+ocal/rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `&lt;main&gt;'</fo=
+nt></span></div><div><span style=3D"background-color: rgb(238, 238, 238);">=
+<font face=3D"courier new, monospace">Tasks: TOP =3D&gt; importsport</font>=
+</span></div></div><div><br></div><div><br></div><div>Any help would be muc=
+h appreciated! :)</div><div><br></div><div>Oriol.</div><div>&nbsp;<br><br>O=
+n Wednesday, January 29, 2014 9:57:13 PM UTC+1, Gerald Bauer wrote:<blockqu=
+ote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left=
+: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">Hello,<br><br><blockq=
+uote class=3D"gmail_quote" style=3D"margin:0;margin-left:0.8ex;border-left:=
+1px #ccc solid;padding-left:1ex"><div dir=3D"ltr"><div>1 - As another user =
+asked before, how are the data maintained? I mean, when are you gonna updat=
+e a result after the match is played? (An example)</div></div></blockquote>=
+<div><br></div><div>&nbsp; &nbsp; The match data is a plain text file resid=
+ing on GitHub. For example, the match data for the World Cup 2014 in Brazil=
+ lives @ &nbsp;<a href=3D"http://github.com/openfootball/world-cup/blob/mas=
+ter/2014/cup.txt" target=3D"_blank" onmousedown=3D"this.href=3D'http://www.=
+google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup%2Fblo=
+b%2Fmaster%2F2014%2Fcup.txt\46sa\75D\46sntz\0751\46usg\75AFQjCNGTXlhqfbmK0h=
+oN7qq-t6Bi3CpjlA';return true;" onclick=3D"this.href=3D'http://www.google.c=
+om/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup%2Fblob%2Fmast=
+er%2F2014%2Fcup.txt\46sa\75D\46sntz\0751\46usg\75AFQjCNGTXlhqfbmK0hoN7qq-t6=
+Bi3CpjlA';return true;">github.com/openfootball/<wbr>world-cup/blob/master/=
+2014/<wbr>cup.txt</a></div><div><br></div><div>&nbsp; &nbsp;Basically, it w=
+orks like a wiki - anybody can update it (if you're a openfootball team mem=
+ber - you can update it directly; otherwise you may use a pull request). &n=
+bsp; It's an all volunteer effort, thus, there is no guarantee for updates.=
+ In practice I plan to update the World Cup 2014 at least once a day (since=
+ I plan to use the results for sportbook).</div><div><br></div><div>&nbsp; =
+&nbsp;Once the results got updated on GitHub - you can sync your app via th=
+e built in machinery of the sportdb gem (basically just call SportDb.update=
+! ) &nbsp;or use the public HTTP JSON API that gets for now updated once a =
+day (that is, every 24 hours).&nbsp;</div><div>&nbsp;</div><blockquote clas=
+s=3D"gmail_quote" style=3D"margin:0;margin-left:0.8ex;border-left:1px #ccc =
+solid;padding-left:1ex"><div dir=3D"ltr"><div><br></div><div>2 - Which data=
+ is included for a result? (Who scored the goals?)</div></div></blockquote>=
+<div><br></div><div>&nbsp; &nbsp;For now only the results e.g. &nbsp; Italy=
+ 3-0 Spain &nbsp; etc.</div><div>. Again see the plain text fixtures files,=
+ for an example. Goals scored by players will get added later. &nbsp; &nbsp=
+;</div><div><br></div><blockquote class=3D"gmail_quote" style=3D"margin:0;m=
+argin-left:0.8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"l=
+tr"><div><br></div><div>3 - I don't know where can I find all the possible =
+available URLs for the web service.</div></div></blockquote><div><br></div>=
+<div>&nbsp; &nbsp;Sorry, the docu page for the web service is currently dow=
+n [1], it resides @&nbsp;<a href=3D"http://footballdb.herokuapp.com/api" ta=
+rget=3D"_blank" onmousedown=3D"this.href=3D'http://www.google.com/url?q\75h=
+ttp%3A%2F%2Ffootballdb.herokuapp.com%2Fapi\46sa\75D\46sntz\0751\46usg\75AFQ=
+jCNHkdzDtV_018lMHZeDAoV6N97L4fQ';return true;" onclick=3D"this.href=3D'http=
+://www.google.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.com%2Fapi\46sa\=
+75D\46sntz\0751\46usg\75AFQjCNHkdzDtV_018lMHZeDAoV6N97L4fQ';return true;">f=
+ootballdb.herokuapp.com/api</a> &nbsp; but the service is working. Example:=
+</div><div><br></div><div>&nbsp; - Get the teams for the World Cup 2014 -&g=
+t; <a href=3D"http://footballdb.herokuapp.com/api/v1/event/world.2014/teams=
+" target=3D"_blank" onmousedown=3D"this.href=3D'http://www.google.com/url?q=
+\75http%3A%2F%2Ffootballdb.herokuapp.com%2Fapi%2Fv1%2Fevent%2Fworld.2014%2F=
+teams\46sa\75D\46sntz\0751\46usg\75AFQjCNFw0AMatRk3_QEeQE7biLTYlQXSuw';retu=
+rn true;" onclick=3D"this.href=3D'http://www.google.com/url?q\75http%3A%2F%=
+2Ffootballdb.herokuapp.com%2Fapi%2Fv1%2Fevent%2Fworld.2014%2Fteams\46sa\75D=
+\46sntz\0751\46usg\75AFQjCNFw0AMatRk3_QEeQE7biLTYlQXSuw';return true;">foot=
+balldb.herokuapp.com/api/<wbr>v1/event/world.2014/teams</a></div><div>&nbsp=
+; - Get all rounds -&gt; <a href=3D"http://footballdb.herokuapp.com/api/v1/=
+event/world.2014/rounds" target=3D"_blank" onmousedown=3D"this.href=3D'http=
+://www.google.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.com%2Fapi%2Fv1%=
+2Fevent%2Fworld.2014%2Frounds\46sa\75D\46sntz\0751\46usg\75AFQjCNGFXDVFfz9A=
+Gf90dzCW4F8AswfH-A';return true;" onclick=3D"this.href=3D'http://www.google=
+.com/url?q\75http%3A%2F%2Ffootballdb.herokuapp.com%2Fapi%2Fv1%2Fevent%2Fwor=
+ld.2014%2Frounds\46sa\75D\46sntz\0751\46usg\75AFQjCNGFXDVFfz9AGf90dzCW4F8As=
+wfH-A';return true;">footballdb.herokuapp.com/api/<wbr>v1/event/world.2014/=
+rounds</a></div><div>&nbsp; - Get 1st round games -&gt; <a href=3D"http://f=
+ootballdb.herokuapp.com/api/v1/event/world.2014/round/1" target=3D"_blank" =
+onmousedown=3D"this.href=3D'http://www.google.com/url?q\75http%3A%2F%2Ffoot=
+balldb.herokuapp.com%2Fapi%2Fv1%2Fevent%2Fworld.2014%2Fround%2F1\46sa\75D\4=
+6sntz\0751\46usg\75AFQjCNHnT2Dg_TgwsxH4EIPlsGU_HyQtzQ';return true;" onclic=
+k=3D"this.href=3D'http://www.google.com/url?q\75http%3A%2F%2Ffootballdb.her=
+okuapp.com%2Fapi%2Fv1%2Fevent%2Fworld.2014%2Fround%2F1\46sa\75D\46sntz\0751=
+\46usg\75AFQjCNHnT2Dg_TgwsxH4EIPlsGU_HyQtzQ';return true;">footballdb.herok=
+uapp.com/api/<wbr>v1/event/world.2014/round/1</a></div><div>&nbsp; - etc.</=
+div><div>&nbsp; &nbsp;</div><div>&nbsp; Cheers.</div><div><br></div><div>[1=
+] The docu source page for the HTTP JSON API resides @ <a href=3D"http://gi=
+thub.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/service/views/index.=
+erb" target=3D"_blank" onmousedown=3D"this.href=3D'http://www.google.com/ur=
+l?q\75http%3A%2F%2Fgithub.com%2Fgeraldb%2Fsport.db.ruby%2Fblob%2Fmaster%2Fl=
+ib%2Fsportdb%2Fservice%2Fviews%2Findex.erb\46sa\75D\46sntz\0751\46usg\75AFQ=
+jCNHwSq5B61HgLY_p54tySy7dvdl3VQ';return true;" onclick=3D"this.href=3D'http=
+://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fgeraldb%2Fsport.db.ruby=
+%2Fblob%2Fmaster%2Flib%2Fsportdb%2Fservice%2Fviews%2Findex.erb\46sa\75D\46s=
+ntz\0751\46usg\75AFQjCNHwSq5B61HgLY_p54tySy7dvdl3VQ';return true;">github.c=
+om/geraldb/sport.db.<wbr>ruby/blob/master/lib/sportdb/<wbr>service/views/in=
+dex.erb</a></div></div></blockquote></div></div>
+------=_Part_1023_11220169.1391105635370--
+
+------=_Part_1022_2216733.1391105635370--
+

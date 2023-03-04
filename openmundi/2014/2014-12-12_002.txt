@@ -1,0 +1,60 @@
+From 359837728768@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 354129281024
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,5b14052e84fffe4a
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.98.165 with SMTP id ej5mr1629242wib.1.1418408339969;
+        Fri, 12 Dec 2014 10:18:59 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.152.170.227 with SMTP id ap3ls470665lac.60.gmail; Fri, 12 Dec
+ 2014 10:18:59 -0800 (PST)
+X-Received: by 10.152.8.67 with SMTP id p3mr2796020laa.4.1418408339479;
+        Fri, 12 Dec 2014 10:18:59 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x236.google.com (mail-wi0-x236.google.com. [2a00:1450:400c:c05::236])
+        by gmr-mx.google.com with ESMTPS id j6si132113wix.1.2014.12.12.10.18.59
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 12 Dec 2014 10:18:59 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::236 as permitted sender) client-ip=2a00:1450:400c:c05::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x236.google.com with SMTP id h11so3386084wiw.15
+        for <openmundi@googlegroups.com>; Fri, 12 Dec 2014 10:18:59 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=KsOSbXlIN6t3/5IVPpxxVJ/rYN3t0SJbxIsIa4X553k=;
+        b=hIDNylWjcEwOSi9CXRa6XJ+pZGv4uxzv8aQFadu8/RgeLxO1vQvjmEBA1LD7cijlcb
+         NZQz1BLBRfPpO6iIF0L2VIUUjr2CnL1WY7oCwD0vDYm6OuMKkCSf3QhTndl8gVKfWIvu
+         tWuuFuPNdWqL9P+LbsiWogVjWHK6M7o8SqFFw5PZohkEgKYC8kNkQ26Zd2ywoesNeSQs
+         yrIdwlTYBLVW5iJQs99QfdcPN84XmUuH2vuN3P4hSXghl2+dGNIs+clcjQwcu2sdfFVP
+         ZkNNIz5GD6dG1AQrklncHc2r0vyechV5GVVnINwylypOGMuhYWqI/c5+WrBVVyAMK8xl
+         th1g==
+MIME-Version: 1.0
+X-Received: by 10.180.221.201 with SMTP id qg9mr10066962wic.29.1418408339331;
+ Fri, 12 Dec 2014 10:18:59 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Fri, 12 Dec 2014 10:18:59 -0800 (PST)
+In-Reply-To: <7e727ad0-b397-41ad-a58e-f6bd1440e830@googlegroups.com>
+References: <7e727ad0-b397-41ad-a58e-f6bd1440e830@googlegroups.com>
+Date: Fri, 12 Dec 2014 19:18:59 +0100
+Message-ID: <CAAxEZd82XQHpVZ2UiookiAfBLRfW=7ZeH=q2Taz=bJo4DwLr=A@mail.gmail.com>
+Subject: Re: [TagDb.has_many_tags] warning
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Jane Heather Dee <jane.buzzlightyear@gmail.com>
+Cc: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+>  How do I remove this warning? It appears everytime i run Rails console or rSpec tests..
+
+ Thanks for the reminder about making the debug message optional.
+Sorry there's no configuration. It will need to get changed in the
+Ruby code in the tagutuils gem. Cheers.
+

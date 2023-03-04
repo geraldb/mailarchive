@@ -1,0 +1,83 @@
+From 6331633843681886208@xxx Sun Sep 18 11:33:03 +0000 2016
+X-GM-THRID: 6331633843182764032
+X-Received: by 10.107.20.20 with SMTP id 20mr4647250iou.15.1474198383361;
+        Sun, 18 Sep 2016 04:33:03 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.107.166.7 with SMTP id p7ls2549605ioe.8.gmail; Sun, 18 Sep
+ 2016 04:33:02 -0700 (PDT)
+X-Received: by 10.107.178.148 with SMTP id b142mr2809370iof.35.1474198382666;
+        Sun, 18 Sep 2016 04:33:02 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22f.google.com (mail-io0-x22f.google.com. [2607:f8b0:4001:c06::22f])
+        by gmr-mx.google.com with ESMTPS id w188si1323022itc.3.2016.09.18.04.33.02
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 18 Sep 2016 04:33:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) client-ip=2607:f8b0:4001:c06::22f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22f.google.com with SMTP id r145so67644397ior.0
+        for <wwwmake@googlegroups.com>; Sun, 18 Sep 2016 04:33:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=JLGejsn7XK+EMLgOkxw/M4jpeCrhmZPRGQroiYNGr/c=;
+        b=uDdwpuC39rtKZDNimIMBplBOupNN514lcI2TkT7Y84jq/99PpYjQa0q3C8bUVU6yaL
+         Vg6gex71U+C4ccxx8iJ6aau8H/JF2MgZqx0o86qxf5epAvsbFrdhhB37nzUnVK7QC3Qp
+         4asYhi7f85eCgCrwH8n4u3gT/jgsCA7fZYZhM6Jq30HETcsjF6N//WgoqJHRLJYrtNto
+         BgiGdd8UcYuKms4U4EaTTsGKUMmBjZICiFo7/KBxOl+BEe2z8HdKCw8trSAr7DerV1TW
+         aIWp6imwye0mCUPkbVuOzOtqQNLyYYxFZXHsNasmnFe2nAM4ZvwaHC8/BupKkvcpJCbE
+         +9oA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=JLGejsn7XK+EMLgOkxw/M4jpeCrhmZPRGQroiYNGr/c=;
+        b=C8FPpDp+wcA0n7SQ0IciMLPQOD2lRCOerRWdFvFl0tsPjN9g7rwbuHQDB73zFHhYtv
+         EwQ2WWkMYZVdOdPHV+moyXIdjM62i8Z2p72m4/BrnVf9/nlNSyaSs9x8A57iONA3ENil
+         SeGOGHegPChpEd038gYYjJaO7HGFyRhqBWjcP68hyYNb6YFzNgFyrJBfa6EGplHJlOhg
+         maZLLhKYOksVN8c+O/EY0M1duVJYmkGTm21LGNAoXkOtOea+rvL8MYwb+mwopC5nhe+r
+         fNti8O1566qPAXXVORJ57I8WQiWZDR5aXz7SzmbOpiRCuiXgGvfNCL3xmde8PoSHfhug
+         UBtQ==
+X-Gm-Message-State: AE9vXwPjG4/gZbc+i/TKvzdvHmqH4UUm4+AhL2T2XgGmSD52RGp25F0F6nEzhS6slW6EXOAUqOjp4yP/QBJjkg==
+X-Received: by 10.107.44.3 with SMTP id s3mr33187324ios.115.1474198382351;
+ Sun, 18 Sep 2016 04:33:02 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.168.231 with HTTP; Sun, 18 Sep 2016 04:33:01 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 18 Sep 2016 13:33:01 +0200
+Message-ID: <CAAxEZd-0u4uynqgdpOSbdRicZJWCc7m_ZkVXztE9Ksiyux3U8A@mail.gmail.com>
+Subject: Top 22 Jekyll (Static Website) Themes, Latest n Newest Themes n More
+ @ Dr. Jekyll's
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I've updated the Dr. Jekyll's Themes [1] site that lists
+ready-to-for free (open source) themes that you can use to build your
+next website, book, presentation or curriculum vitae w/ Ruby.
+
+  What's news?
+
+  - All themes now include github stars (e.g. =E2=98=85 2907)
+  - A new Top 22 themes page listing themes ranked by github stars -
+and the winner is ...
+     1. Jekyll Now =E2=98=85 2907 by Barry Clark
+     2. Poole =E2=98=85 2003 by Mark Otto
+     3. Poole's Hyde =E2=98=85 1626 by Mark
+     4. Poole's Lanyon =E2=98=85 1616 by Mark Otto
+     5. Minimal Mistakes =E2=98=85 1264 by Michael Rose
+  - A new page listing the newest themes (by github repo creation date)
+  - A new page listing the themes by latest updates (by github commits)
+
+    Questions? Comments? Welcome.
+
+PS: Last but not least - your theme is welcome. Add your theme!
+
+[1] http://drjekyllthemes.github.io
+

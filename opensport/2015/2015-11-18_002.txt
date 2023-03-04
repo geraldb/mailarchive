@@ -1,0 +1,218 @@
+From 6218366833506910208@xxx Wed Nov 18 05:59:12 +0000 2015
+X-GM-THRID: 6216913658664976384
+Date: Tue, 17 Nov 2015 21:59:11 -0800 (PST)
+From: Rod Lopez <digital2waves@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <1700b2b7-1b7a-4e24-a438-204062be9b93@googlegroups.com>
+In-Reply-To: <CAAxEZd87moLskxiBU9f7Ep9uk7yO8e-+4hR6qZkH2e5y-bzT4w@mail.gmail.com>
+References: <74d57559-7e13-4238-ad20-98c00595424f@googlegroups.com>
+ <CAAxEZd_VwuR+g7+trrV4OvoZGtRGN0TuN4KUgvM+rreiXGg9pw@mail.gmail.com>
+ <b8299e26-8ce6-4f47-a6c4-7d11188c2fd0@googlegroups.com>
+ <CAAxEZd87moLskxiBU9f7Ep9uk7yO8e-+4hR6qZkH2e5y-bzT4w@mail.gmail.com>
+Subject: Re: [opensport] World Cup 2014 Dataset
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_4470_921478748.1447826351907"
+X-Google-Token: EK-nsLIFukznpUegIzk0
+X-Google-IP: 129.171.249.136
+
+------=_Part_4470_921478748.1447826351907
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4471_1193489179.1447826351907"
+
+------=_Part_4471_1193489179.1447826351907
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Got it. Thanks a lot!!!
+
+On Monday, November 16, 2015 at 5:40:14 PM UTC-5, Gerald Bauer wrote:
+>
+> Hello, 
+>   The sportdb tool is a Ruby library / gem [1].  You will need to 
+> install Ruby first.  Ruby includes a package manager called gems. Once 
+> you have Ruby installed try: 
+>
+> $ gem install sportdb 
+>
+>    Cheers. 
+>
+> [1] https://rubygems.org/gems/sportdb 
+>
+>
+> 2015-11-16 19:45 GMT+01:00 Rod Lopez <digita...@gmail.com <javascript:>>: 
+> > First at all thank for your reply...from where I can install the sportdb 
+> > tool? 
+> > Thank you, 
+> > Rod. 
+> > 
+> > 
+> > On Saturday, November 14, 2015 at 3:02:52 AM UTC-5, Gerald Bauer wrote: 
+> >> 
+> >> Hello, 
+> >> 
+> >>    Welcome to football.db. The best "recommended" and easiest way to 
+> >> get started is using Datafiles [1]. First, of course, you need to 
+> >> install the sportdb tool e.g.: 
+> >> 
+> >>    $ gem install sportdb                 # will also install sqlite 
+> >> support 
+> >> 
+> >> Now you can build yourself a database using Datafile. Example: 
+> >> 
+> >>   $ sportdb new worldcup             # get world cup dataset 
+> >> 
+> >>  Will fetch zip archives from github and build the sport.db database. 
+>  Now 
+> >> try: 
+> >> 
+> >>   $ sqlite3 sport.db 
+> >>   > .tables 
+> >>   >  select from * teams; 
+> >>   > .exit 
+> >> 
+> >>   I'd recommend starting with sqlite3 - if you're new to the sqlite3 
+> >> command line you might try/use a visual tool - try SQLite Studio [2] 
+> >> (it's free). 
+> >> 
+> >>   The best way to get started is to get started and than if you have 
+> >> more (new) questions post them here. Cheers. 
+> >> 
+> >> [1] github.com/openfootball/datafile 
+> >> [2] sqlitestudio.pl 
+> > 
+> > -- 
+> > You received this message because you are subscribed to the Google 
+> Groups 
+> > "opensport" group. 
+> > To unsubscribe from this group and stop receiving emails from it, send 
+> an 
+> > email to opensport+...@googlegroups.com <javascript:>. 
+> > To post to this group, send email to open...@googlegroups.com 
+> <javascript:>. 
+> > Visit this group at http://groups.google.com/group/opensport. 
+> > For more options, visit https://groups.google.com/d/optout. 
+>
+
+------=_Part_4471_1193489179.1447826351907
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Got it. Thanks a lot!!!<br><br>On Monday, November 16, 201=
+5 at 5:40:14 PM UTC-5, Gerald Bauer wrote:<blockquote class=3D"gmail_quote"=
+ style=3D"margin: 0px 0px 0px 0.8ex; padding-left: 1ex; border-left-color: =
+rgb(204, 204, 204); border-left-width: 1px; border-left-style: solid;">Hell=
+o,
+<br>=C2=A0 The sportdb tool is a Ruby library / gem [1]. =C2=A0You will nee=
+d to
+<br>install Ruby first. =C2=A0Ruby includes a package manager called gems. =
+Once
+<br>you have Ruby installed try:
+<br>
+<br>$ gem install sportdb
+<br>
+<br>=C2=A0 =C2=A0Cheers.
+<br>
+<br>[1] <a onmousedown=3D"this.href=3D&#39;https://www.google.com/url?q\75h=
+ttps%3A%2F%2Frubygems.org%2Fgems%2Fsportdb\46sa\75D\46sntz\0751\46usg\75AFQ=
+jCNFyupb_KWjGi3Zei3O6I7SSk4H0xw&#39;;return true;" onclick=3D"this.href=3D&=
+#39;https://www.google.com/url?q\75https%3A%2F%2Frubygems.org%2Fgems%2Fspor=
+tdb\46sa\75D\46sntz\0751\46usg\75AFQjCNFyupb_KWjGi3Zei3O6I7SSk4H0xw&#39;;re=
+turn true;" href=3D"https://rubygems.org/gems/sportdb" target=3D"_blank" re=
+l=3D"nofollow">https://rubygems.org/gems/<wbr>sportdb</a>
+<br>
+<br>
+<br>2015-11-16 19:45 GMT+01:00 Rod Lopez &lt;<a onmousedown=3D"this.href=3D=
+&#39;javascript:&#39;;return true;" onclick=3D"this.href=3D&#39;javascript:=
+&#39;;return true;" href=3D"javascript:" target=3D"_blank" rel=3D"nofollow"=
+ gdf-obfuscated-mailto=3D"y7tx7Xb9AgAJ">digita...@gmail.com</a>&gt;:
+<br>&gt; First at all thank for your reply...from where I can install the s=
+portdb
+<br>&gt; tool?
+<br>&gt; Thank you,
+<br>&gt; Rod.
+<br>&gt;
+<br>&gt;
+<br>&gt; On Saturday, November 14, 2015 at 3:02:52 AM UTC-5, Gerald Bauer w=
+rote:
+<br>&gt;&gt;
+<br>&gt;&gt; Hello,
+<br>&gt;&gt;
+<br>&gt;&gt; =C2=A0 =C2=A0Welcome to football.db. The best &quot;recommende=
+d&quot; and easiest way to
+<br>&gt;&gt; get started is using Datafiles [1]. First, of course, you need=
+ to
+<br>&gt;&gt; install the sportdb tool e.g.:
+<br>&gt;&gt;
+<br>&gt;&gt; =C2=A0 =C2=A0$ gem install sportdb =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 =C2=A0 # will also install sqlite
+<br>&gt;&gt; support
+<br>&gt;&gt;
+<br>&gt;&gt; Now you can build yourself a database using Datafile. Example:
+<br>&gt;&gt;
+<br>&gt;&gt; =C2=A0 $ sportdb new worldcup =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 # get world cup dataset
+<br>&gt;&gt;
+<br>&gt;&gt; =C2=A0Will fetch zip archives from github and build the sport.=
+db database. =C2=A0Now
+<br>&gt;&gt; try:
+<br>&gt;&gt;
+<br>&gt;&gt; =C2=A0 $ sqlite3 sport.db
+<br>&gt;&gt; =C2=A0 &gt; .tables
+<br>&gt;&gt; =C2=A0 &gt; =C2=A0select from * teams;
+<br>&gt;&gt; =C2=A0 &gt; .exit
+<br>&gt;&gt;
+<br>&gt;&gt; =C2=A0 I&#39;d recommend starting with sqlite3 - if you&#39;re=
+ new to the sqlite3
+<br>&gt;&gt; command line you might try/use a visual tool - try SQLite Stud=
+io [2]
+<br>&gt;&gt; (it&#39;s free).
+<br>&gt;&gt;
+<br>&gt;&gt; =C2=A0 The best way to get started is to get started and than =
+if you have
+<br>&gt;&gt; more (new) questions post them here. Cheers.
+<br>&gt;&gt;
+<br>&gt;&gt; [1] <a onmousedown=3D"this.href=3D&#39;http://www.google.com/u=
+rl?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\46sa\75D\46sntz\07=
+51\46usg\75AFQjCNGuSSz2iZM4_c46k47eU9RFDWMMTQ&#39;;return true;" onclick=3D=
+"this.href=3D&#39;http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fo=
+penfootball%2Fdatafile\46sa\75D\46sntz\0751\46usg\75AFQjCNGuSSz2iZM4_c46k47=
+eU9RFDWMMTQ&#39;;return true;" href=3D"http://github.com/openfootball/dataf=
+ile" target=3D"_blank" rel=3D"nofollow">github.com/openfootball/<wbr>datafi=
+le</a>
+<br>&gt;&gt; [2] <a onmousedown=3D"this.href=3D&#39;http://www.google.com/u=
+rl?q\75http%3A%2F%2Fsqlitestudio.pl\46sa\75D\46sntz\0751\46usg\75AFQjCNFvmr=
+hJNW4MFfgo1XTsbYcoGCQFJg&#39;;return true;" onclick=3D"this.href=3D&#39;htt=
+p://www.google.com/url?q\75http%3A%2F%2Fsqlitestudio.pl\46sa\75D\46sntz\075=
+1\46usg\75AFQjCNFvmrhJNW4MFfgo1XTsbYcoGCQFJg&#39;;return true;" href=3D"htt=
+p://sqlitestudio.pl" target=3D"_blank" rel=3D"nofollow">sqlitestudio.pl</a>
+<br>&gt;
+<br>&gt; --
+<br>&gt; You received this message because you are subscribed to the Google=
+ Groups
+<br>&gt; &quot;opensport&quot; group.
+<br>&gt; To unsubscribe from this group and stop receiving emails from it, =
+send an
+<br>&gt; email to <a onmousedown=3D"this.href=3D&#39;javascript:&#39;;retur=
+n true;" onclick=3D"this.href=3D&#39;javascript:&#39;;return true;" href=3D=
+"javascript:" target=3D"_blank" rel=3D"nofollow" gdf-obfuscated-mailto=3D"y=
+7tx7Xb9AgAJ">opensport+...@<wbr>googlegroups.com</a>.
+<br>&gt; To post to this group, send email to <a onmousedown=3D"this.href=
+=3D&#39;javascript:&#39;;return true;" onclick=3D"this.href=3D&#39;javascri=
+pt:&#39;;return true;" href=3D"javascript:" target=3D"_blank" rel=3D"nofoll=
+ow" gdf-obfuscated-mailto=3D"y7tx7Xb9AgAJ">open...@googlegroups.com</a>.
+<br>&gt; Visit this group at <a onmousedown=3D"this.href=3D&#39;http://grou=
+ps.google.com/group/opensport&#39;;return true;" onclick=3D"this.href=3D&#3=
+9;http://groups.google.com/group/opensport&#39;;return true;" href=3D"http:=
+//groups.google.com/group/opensport" target=3D"_blank" rel=3D"nofollow">htt=
+p://groups.google.com/<wbr>group/opensport</a>.
+<br>&gt; For more options, visit <a onmousedown=3D"this.href=3D&#39;https:/=
+/groups.google.com/d/optout&#39;;return true;" onclick=3D"this.href=3D&#39;=
+https://groups.google.com/d/optout&#39;;return true;" href=3D"https://group=
+s.google.com/d/optout" target=3D"_blank" rel=3D"nofollow">https://groups.go=
+ogle.com/d/<wbr>optout</a>.
+<br></blockquote></div>
+------=_Part_4471_1193489179.1447826351907--
+
+------=_Part_4470_921478748.1447826351907--
+

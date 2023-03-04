@@ -1,0 +1,91 @@
+From 6196626531642507264@xxx Sun Sep 20 15:55:43 +0000 2015
+X-GM-THRID: 6196626528106708992
+X-Received: by 10.66.164.227 with SMTP id yt3mr12746685pab.10.1442764543111;
+        Sun, 20 Sep 2015 08:55:43 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.20.214 with SMTP id 80ls1887988qgj.64.gmail; Sun, 20 Sep
+ 2015 08:55:41 -0700 (PDT)
+X-Received: by 10.13.222.196 with SMTP id h187mr5477355ywe.0.1442764541371;
+        Sun, 20 Sep 2015 08:55:41 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x230.google.com (mail-io0-x230.google.com. [2607:f8b0:4001:c06::230])
+        by gmr-mx.google.com with ESMTPS id f4si650555igo.2.2015.09.20.08.55.41
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 20 Sep 2015 08:55:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) client-ip=2607:f8b0:4001:c06::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x230.google.com with SMTP id b144so99175682iof.1
+        for <opensport@googlegroups.com>; Sun, 20 Sep 2015 08:55:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=6PLQnmKavDio+dC19oOn0rC2BrqCRLj0fRT6rNJfwYU=;
+        b=Te61mjAlpMOsT/ljeq4WI/wAAp9/0ha2vORLg/V7Ug4cEZxiougLv4grO/gE0qu2pR
+         GSLDvJg4B0lloNdn+PS4mKKk2i+3++nDEreHj02xckBocBPJEKrtsgUic3eNysUq9inp
+         4qh+9O9r9KFJTC6Z6956+V+1vTc2cvTxV4WIgOI6mCUrGpyOOIXaX2Phix66T1DjMsZJ
+         dA2FtZ77AwzPaZDridh9wSiRIQx/w4Wa2uF8bvcJdL+pZfiEyrwTzaa6QOUqiRknDJ7K
+         0t3RynVFzc+DRpohd+N9BxClavhQFcFzAAblSLI16ai1bg7UF/3tTlLBCxLIb3WbwVdo
+         P40w==
+MIME-Version: 1.0
+X-Received: by 10.107.3.94 with SMTP id 91mr21555281iod.178.1442764541229;
+ Sun, 20 Sep 2015 08:55:41 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Sun, 20 Sep 2015 08:55:41 -0700 (PDT)
+Date: Sun, 20 Sep 2015 17:55:41 +0200
+Message-ID: <CAAxEZd9aqQOrxkGN-VL5EXACU2uOJM0UwbfyAJqosDJP95OaJA@mail.gmail.com>
+Subject: rugby.db - Free Open Public Domain Datasets - Incl. Rugby World Cup
+ 2015 England
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  For the Ruby World Cup 2015 now taking place in England - from Sep
+18 to Oct 31 -  I've put together free open public domain datasets in
+the new /rugby.db [1] repo that you can read into your SQL database of
+choice (e.g. SQLite, PostgreSQL, etc.)
+
+  For example, the 2015/cup.txt file looks like:
+
+##################################
+#  Rugby World Cup 2015 England
+
+Pool A  |  Australia     England    Wales     Fiji     Uruguay
+Pool B  |  South Africa  Samoa      Scotland  Japan    United States
+Pool C  |  New Zealand   Argentina  Tonga     Georgia  Namibia
+Pool D  |  France        Ireland    Italy     Canada   Romania
+
+
+Matchday 1  |  Fri Sep/18
+Matchday 2  |  Sat Sep/19
+Matchday 3  |  Sun Sep/20
+
+...
+
+Pool A:
+
+ (1) Fri Sep/18   England   35-11   Fiji       @ Twickenham Stadium, London
+ (7) Sun Sep/20   Wales       v     Uruguay    @ Millennium Stadium, Cardiff
+(10) Wed Sep/23   Australia   v     Fiji       @ Millennium Stadium, Cardiff
+(16) Sat Sep/26   England     v     Wales      @ Twickenham Stadium, London
+(17) Sun Sep/27   Australia   v     Uruguay    @ Villa Park, Birmingham
+(21) Thu Oct/1    Wales       v     Fiji       @ Millennium Stadium, Cardiff
+(26) Sat Oct/3    England     v     Australia  @ Twickenham Stadium, London
+(30) Tue Oct/6    Fiji        v     Uruguay    @ Stadium mk, Milton Keynes
+
+...
+
+  Note: The repo include an inline (in-situ) datafile, thus, to build
+yourself a copy, use:
+
+  $ sportdb build
+
+  That's it. Questions? Comments? As always welcome. Cheers.
+
+[1] https://github.com/opensport/rugby.db
+

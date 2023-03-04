@@ -1,0 +1,59 @@
+From 2056633974784@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 2036282163200
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,309018655f761026
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.105.3 with SMTP id gi3mr2286055wib.3.1408691754700;
+        Fri, 22 Aug 2014 00:15:54 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.100.98 with SMTP id ex2ls351638wib.50.gmail; Fri, 22 Aug
+ 2014 00:15:54 -0700 (PDT)
+X-Received: by 10.180.105.3 with SMTP id gi3mr2286052wib.3.1408691754264;
+        Fri, 22 Aug 2014 00:15:54 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22e.google.com (mail-wi0-x22e.google.com [2a00:1450:400c:c05::22e])
+        by gmr-mx.google.com with ESMTPS id m15si509521wiw.0.2014.08.22.00.15.54
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 22 Aug 2014 00:15:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) client-ip=2a00:1450:400c:c05::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f174.google.com with SMTP id d1so9769446wiv.1
+        for <opensport@googlegroups.com>; Fri, 22 Aug 2014 00:15:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=EFE5M4qye/+A7IKMGY1MzWMGKu7vDdB2SU6LYn8vmiQ=;
+        b=s8s80mYymfjFTD+BGDpcn+dOtvRHGSAHeBttdT5NJfMBXuqk5SlIs8OP9B3XIYBj05
+         V3dOnKr5HLg2x3Wxrc3tuszGJljLvzO3UJFfVMwfVCk8FbvjdwIRRkutmw7/bjzp8X8I
+         olz6H+LS3TsfciAKIaUIEY8pbvvDM/WTv879AZCGjxPYFsWu1SGJeg2fT61kMGu0ri5Q
+         lfFV/vgoF/xjjl2utiZGJfNP3vxMSDEHmIPLVw5x6ZqUufWuz4ItqyXmQrfD4RbJFBI2
+         vwWpRznoxmgEOt4gAaUXoo7Doffor+1JW8VKQEQ2cgDzhHgU24ON4m5qtGxFuTtk5UcI
+         5deA==
+MIME-Version: 1.0
+X-Received: by 10.194.161.231 with SMTP id xv7mr3620706wjb.78.1408691754191;
+ Fri, 22 Aug 2014 00:15:54 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Fri, 22 Aug 2014 00:15:54 -0700 (PDT)
+In-Reply-To: <ccc57a2b-bf9c-4cd4-8965-3b02375b1e9b@googlegroups.com>
+References: <CAAxEZd9HnLFz2qnsYVGCPWcD4FWd_2TuZO4z+HcHrc1AQw_DQQ@mail.gmail.com>
+	<ccc57a2b-bf9c-4cd4-8965-3b02375b1e9b@googlegroups.com>
+Date: Fri, 22 Aug 2014 09:15:54 +0200
+Message-ID: <CAAxEZd8Hk_TNU-N0YTLGTNzT7o+oUqt5qt1YH5eB9VFKMEtirw@mail.gmail.com>
+Subject: Re: [opensport] Re: New Tool - sportweb - Instant Open Sports Web
+ Browser (Server) e.g. Use $ sportweb
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  Thanks for trying the new sportweb tool. Still a little early and
+rough. Great to see its working somehow.
+
+  Thanks for reporting the missing country flags. Will get fixed with
+the next update.  Cheers.
+

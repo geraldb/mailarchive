@@ -1,0 +1,93 @@
+From 139825512448@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 103662223360
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,dace1ed56b0a7281
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,UTF8
+Received: by 10.114.196.13 with SMTP id t13mr2736998waf.16.1220198283297;
+        Sun, 31 Aug 2008 08:58:03 -0700 (PDT)
+Return-Path: <sunaku@gmail.com>
+Received: from wa-out-1112.google.com ([172.21.215.7])
+        by mx.google.com with ESMTP id m37si3653103waf.0.2008.08.31.08.58.02;
+        Sun, 31 Aug 2008 08:58:03 -0700 (PDT)
+Received-SPF: neutral (google.com: 172.21.215.7 is neither permitted nor denied by domain of sunaku@gmail.com) client-ip=172.21.215.7;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 172.21.215.7 is neither permitted nor denied by domain of sunaku@gmail.com) smtp.mail=sunaku@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by wa-out-1112.google.com with SMTP id n7so1134725wag.13
+        for <webslideshow@googlegroups.com>; Sun, 31 Aug 2008 08:58:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from
+         :user-agent:mime-version:to:subject:references:in-reply-to
+         :content-type:content-transfer-encoding;
+        bh=S6rO6RyVqAi333Y8jB53JTSXXmZHnV8rEC9xOB4qJwY=;
+        b=HD3qh7iZobV0iyqwDmOLNC1Id6FUsTJbYEXpi4FXV+t/40ORP51aO5n8nuEAZSwDHt
+         2rufRVx/cKfI1+GLBnVmW/oQ6ouc+qnI3/jo01VMIOi2bxckG3rDF4uUN463gipFgB2o
+         Bv6aTxUq91mg2GqJ4p3V7PkXwkTe2RGiuKnNY=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references
+         :in-reply-to:content-type:content-transfer-encoding;
+        b=f+YYS11g5nIZTNyzBzhryfN0zH72zgoXoS3yWcx/jmT0YAuiLeWasWmFZUtJf69YoT
+         cuVSAVjbVgAYoFmWfHyLYfyjxlAREYyPG71FFxQEOnr1l4JOXlsiw7hM638SQBxO+77+
+         NajXpm6qDFgqlAqmlVCXJB2EoPSk1ioAu/Y6U=
+Received: by 10.114.178.13 with SMTP id a13mr4547701waf.182.1220198282179;
+        Sun, 31 Aug 2008 08:58:02 -0700 (PDT)
+Return-Path: <sunaku@gmail.com>
+Received: from ?10.0.0.101? ( [76.202.78.109])
+        by mx.google.com with ESMTPS id f20sm6739610waf.53.2008.08.31.08.58.01
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Sun, 31 Aug 2008 08:58:01 -0700 (PDT)
+Message-ID: <48BABF83.1090009@gmail.com>
+Date: Sun, 31 Aug 2008 08:57:55 -0700
+From: "Suraj N. Kurapati" <sunaku@gmail.com>
+User-Agent: Thunderbird 2.0.0.16 (X11/20080724)
+MIME-Version: 1.0
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow] Re: PATCH for gradient keywords bug
+References: <b521af78-25b2-449d-adf8-d32aebe3ae35@v39g2000pro.googlegroups.com>  <e936ac58-89e7-4965-ae95-93cc51559306@p10g2000prf.googlegroups.com>  <558343f5-a8d2-4976-8003-f76a507c9eb0@p10g2000prf.googlegroups.com>  <e97d8aa4-10cb-4ab0-8170-a0c55ab3ca75@r15g2000prh.googlegroups.com>  <48B9967D.3060207@gmail.com> <ca8f9cbc-6352-408b-8308-06215af114db@b30g2000prf.googlegroups.com>
+In-Reply-To: <ca8f9cbc-6352-408b-8308-06215af114db@b30g2000prf.googlegroups.com>
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Gerald wrote:
+>   Thanks again. I've updated the code and uploaded a new gem (e.g.
+> 6.0.1) to fix the gradient bug. It now works again as advertised.
+
+Excellent, thanks!
+
+The documentation on the website also needs to be improved:
+
+* the Themes section shows various color themes but does not show 
+what "gradient: ???" value the user must specify to obtain them.
+
+* there is no list of available values for the "code-theme" 
+keyword... and I have no idea what the default value ("amy") means.
+
+In short, an enumeration of possible values for keywords would be 
+good documentation to add.
+
+>   I've also changed the footer and subfooter headings/headers to
+> optional using empty (string) defaults so the -footer not found- and -
+> subfooter not found- messages will no longer show up in your slide
+> show if undefined.
+> 
+>   Lastly, if you're wondering why I haven't included your code that
+> "sanitizes"/normalizes values: 
+
+That's fine.  Ultimately, you must decide what contributions to 
+accept/reject, and I'm glad that you made such a decision.
+
+Cheers.
+
+> Please, note that not all values get
+> normalized, and, thus, the changing of - to _ cannot get generalized.
+> It's more an exception than a rule. Lets say you set
+> 
+> title: Merb - All you Need, None You Don't
+> 
+>   than you'd expect your title to be unchanged. 
+
+True, I noticed that bug (in my patch) later on.
+
+Cheers.
+

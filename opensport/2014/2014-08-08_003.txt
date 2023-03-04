@@ -1,0 +1,78 @@
+From 1940753743872@xxx Tue Jun 16 00:16:53 +0000 2015
+X-GM-THRID: 1912480989184
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,bc854168932351a9
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.231.36 with SMTP id td4mr399626wic.2.1407509457592;
+        Fri, 08 Aug 2014 07:50:57 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.84.163 with SMTP id a3ls158970wiz.8.gmail; Fri, 08 Aug
+ 2014 07:50:57 -0700 (PDT)
+X-Received: by 10.180.12.35 with SMTP id v3mr401296wib.3.1407509457236;
+        Fri, 08 Aug 2014 07:50:57 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22e.google.com (mail-wg0-x22e.google.com [2a00:1450:400c:c00::22e])
+        by gmr-mx.google.com with ESMTPS id d9si242556wie.3.2014.08.08.07.50.57
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 08 Aug 2014 07:50:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) client-ip=2a00:1450:400c:c00::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f46.google.com with SMTP id m15so5767688wgh.5
+        for <opensport@googlegroups.com>; Fri, 08 Aug 2014 07:50:57 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=62AhOC8A416Z/8HdaKK92n8CWbIXkr7E0UliYWlkASs=;
+        b=YjhdxBe/uLjBlnr6wYvOe9wyfs9jQ1RzDpdd8/pJiTusGtvlxR54XTte0w6LH1agSw
+         4heNLng7pVUeKvABXoohzs4g+q7fVBM5OD4uv418zj/4NS+txqpU2NN9aBqpeX1nPtg+
+         R7zghBV/LkTWydSlYL1BFN8gE/+BTpdL+Bp9B6Dar4uWAwau0YuVjAsUhU/+H/pyd5U9
+         wUJmPZTkTLt/VH2gZrMf+vg1gJwIy2wTlmPzyWDDyLnHBuC/9lUBkvMPIgk3aRhd40Yr
+         iEnz/gCL2y+hDsBCPu9+gmnuYdrf+oGFfaptkS79wxDf8xDzU5qyOtBxq8LVlXcIYqW2
+         LcUA==
+MIME-Version: 1.0
+X-Received: by 10.194.78.100 with SMTP id a4mr27746151wjx.106.1407509457159;
+ Fri, 08 Aug 2014 07:50:57 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Fri, 8 Aug 2014 07:50:57 -0700 (PDT)
+In-Reply-To: <CAAxEZd9WUvVhsv6aXCN_h-iyciAMJbWBFZkx9MyZQra=SNxdhg@mail.gmail.com>
+References: <b3f0bd6c-13c0-42e1-8a8a-f9d8e12907f4@googlegroups.com>
+	<CAAxEZd9WUvVhsv6aXCN_h-iyciAMJbWBFZkx9MyZQra=SNxdhg@mail.gmail.com>
+Date: Fri, 8 Aug 2014 16:50:57 +0200
+Message-ID: <CAAxEZd9ovWf0YOgMPGsfD4akv6nkVemAKkjEaibazhmy_oc-mw@mail.gmail.com>
+Subject: Re: [opensport] Is there any schema/structure explanation?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  As short followup:
+
+>  For example: event.team3, countries.s/c/d etc..
+
+  For now these fields / attributes are document not in the schema but
+in the (Ruby) models e.g.  you can find the country model [1] in the
+worlddb gem.
+
+   Might be easier to post what you cannot guess and I will add it to
+the new schema repo and docu page.
+
+    event.team3  ->   is a boolean flag  - if it is a knockout cup -
+it means if there's a match for 3rd place  (or if they do not care
+about who is no 3 or 4) e.g. in the world cup there's a match for the
+3rd place (e.g Brazil - Netherlands)  but in the Euro 2012 there's no
+match and in the Championsleague either, for example.
+
+   country s/c/d    - is the type of "country"  e.g.  s => supranation
+ (actually there's now only one - e.g. the european union),   c =>
+country   and d => dependency (e.g. Hong Kong, Puerto Rico, and so on)
+
+  Cheers.
+
+[1] github.com/worlddb/world.db.ruby/blob/master/lib/worlddb/models/country.rb
+

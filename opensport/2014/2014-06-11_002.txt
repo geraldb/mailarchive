@@ -1,0 +1,104 @@
+From 1187680092160@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1182263148544
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,260cbfa3b0ad717f
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.133.201 with SMTP id q49mr8311847yhi.1.1402518949689;
+        Wed, 11 Jun 2014 13:35:49 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.100.179 with SMTP id s48ls2596054qge.17.gmail; Wed, 11 Jun
+ 2014 13:35:49 -0700 (PDT)
+X-Received: by 10.140.18.194 with SMTP id 60mr51753qgf.36.1402518949497;
+        Wed, 11 Jun 2014 13:35:49 -0700 (PDT)
+X-Google-Doc-Id: 38df42c23ec0d7b8
+X-Google-Web-Client: true
+Date: Wed, 11 Jun 2014 13:35:48 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <f7fb0f43-b37a-431e-835c-3ff662f2d5a2@googlegroups.com>
+In-Reply-To: <0e18624d-cdc7-4134-9996-b3b40850d72b@googlegroups.com>
+References: <0e18624d-cdc7-4134-9996-b3b40850d72b@googlegroups.com>
+Subject: Re: Group-wise structured data
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1449_28516405.1402518948326"
+X-Google-Token: EKT74pwFD08BT_F7RGU0
+X-Google-IP: 178.191.82.152
+
+------=_Part_1449_28516405.1402518948326
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1450_1444195.1402518948331"
+
+------=_Part_1450_1444195.1402518948331
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,  
+
+     I have been analysing open-football APIs, Its good that the 
+> web-services are free to access. 
+> Can we generate Group wise structured data similar to
+> http://www.fifa.com/worldcup/groups/index.html in any of the versions?
+>
+> Any suggestions? Can anybody point me to the right resources?
+>
+
+   Here's the sql table from the football.db schema [1]:
+
+  create_table :group_standing_entries do |t|
+  t.references :group_standing, null: false
+  t.references :team, null: false
+  t.integer :pos
+  t.integer :played
+  t.integer :won
+  t.integer :lost
+  t.integer :drawn
+  t.integer :goals_for # todo: find a short name - gf? why? why not?
+  t.integer :goals_against # todo: find a shorter name - ga? why? why not?
+  t.integer :pts
+  t.string :comments
+  t.timestamps
+end
+
+   You can auto-calculate the group standings using GroupStanding.recalc! 
+[2], for example.  Cheers.
+
+[1] github.com/sportdb/sport.db.ruby/blob/master/lib/sportdb/schema.rb
+[2] 
+github.com/sportdb/sport.db.ruby/blob/master/lib/sportdb/models/stats/group_standing.rb
+
+------=_Part_1450_1444195.1402518948331
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,&nbsp; <br><br><blockquote class=3D"gmail_quote" sty=
+le=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left=
+: 1ex;"><div dir=3D"ltr"><div>&nbsp; &nbsp; &nbsp;I have been analysing ope=
+n-football APIs, Its good that the web-services are free to access.&nbsp;</=
+div><div>Can we generate Group wise structured data similar to</div><div><a=
+ href=3D"http://www.fifa.com/worldcup/groups/index.html" target=3D"_blank" =
+onmousedown=3D"this.href=3D'http://www.google.com/url?q\75http%3A%2F%2Fwww.=
+fifa.com%2Fworldcup%2Fgroups%2Findex.html\46sa\75D\46sntz\0751\46usg\75AFQj=
+CNE7yuC-OVvEtwBLgRSSGw2vhyravw';return true;" onclick=3D"this.href=3D'http:=
+//www.google.com/url?q\75http%3A%2F%2Fwww.fifa.com%2Fworldcup%2Fgroups%2Fin=
+dex.html\46sa\75D\46sntz\0751\46usg\75AFQjCNE7yuC-OVvEtwBLgRSSGw2vhyravw';r=
+eturn true;">http://www.fifa.com/worldcup/<wbr>groups/index.html</a> in any=
+ of the versions?<br></div><div><br></div><div>Any suggestions? Can anybody=
+ point me to the right resources?</div></div></blockquote><div><br>&nbsp;&n=
+bsp; Here's the sql table from the football.db schema [1]:<br><br>&nbsp; cr=
+eate_table :group_standing_entries do |t|<br>&nbsp; t.references :group_sta=
+nding, null: false<br>&nbsp; t.references :team, null: false<br>&nbsp; t.in=
+teger :pos<br>&nbsp; t.integer :played<br>&nbsp; t.integer :won<br>&nbsp; t=
+.integer :lost<br>&nbsp; t.integer :drawn<br>&nbsp; t.integer :goals_for # =
+todo: find a short name - gf? why? why not?<br>&nbsp; t.integer :goals_agai=
+nst # todo: find a shorter name - ga? why? why not?<br>&nbsp; t.integer :pt=
+s<br>&nbsp; t.string :comments<br>&nbsp; t.timestamps<br>end<br><br>&nbsp;&=
+nbsp; You can auto-calculate the group standings using GroupStanding.recalc=
+! [2], for example.&nbsp; Cheers.<br><br>[1] github.com/sportdb/sport.db.ru=
+by/blob/master/lib/sportdb/schema.rb<br>[2] github.com/sportdb/sport.db.rub=
+y/blob/master/lib/sportdb/models/stats/group_standing.rb<br></div></div>
+------=_Part_1450_1444195.1402518948331--
+
+------=_Part_1449_28516405.1402518948326--
+

@@ -1,0 +1,207 @@
+From 6625485486603370496@xxx Mon Nov 19 08:27:31 +0000 2018
+X-GM-THRID: 6624595092768292864
+X-Received: by 2002:a17:906:2352:: with SMTP id m18-v6mr1974857eja.9.1542616050842;
+        Mon, 19 Nov 2018 00:27:30 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a50:bc02:: with SMTP id j2-v6ls7260597edh.3.gmail; Mon, 19
+ Nov 2018 00:27:29 -0800 (PST)
+X-Google-Smtp-Source: AJdET5ffECAA9+TW+Y4+Rh/Cn2I407EwsLCpOszvxggke1djkmKiZAfzQrBzAsbi4xnX5mQGVLo1
+X-Received: by 2002:aa7:c687:: with SMTP id n7-v6mr2678552edq.11.1542616049870;
+        Mon, 19 Nov 2018 00:27:29 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1542616049; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hqOMVoFV7hD/CTKogJjpp7k+ElVqWhvtgGdWAhCfhRzn+jU+5YxR8soVgUHsKbLqlM
+         lNaWumCI99GB98OQMjubbqCSGylPGNLP43muQmoLVSavwX3jDcBqXriv/puh/HKSTpVR
+         3Om2MwCUJd46uGowJW5p4CSxyrTqwlkKOMe8OQFknisbf5q2LhmyVc2aAHzQQqJsItPq
+         6oBdx9sQvdNtTMQfNAY7wZzEEzTj00nUWdaqPxVBMpKv/IQNg8yrvrrIBzEajtEnUayg
+         vk0q1C2f9lKTDMt6XaYwV9T7Tnp07P2Hj0ydQAXl9ZAK3t+kObcfRVopEjUpRo6uVQIm
+         /Ffw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=w3aGbv0uFTQQ490qzjtfFJk+UQJWHxxBpHAr4pkvJFA=;
+        b=EGE4cIIvX9ZR0IFygJ1QuZzIQyJx2u2H2Fa7D3NOdHIvPBbd8SOflSE1IIcS7XKHeY
+         ej0EyDOE67KXdedFwxNO/qmakAMXBAkEbbco0rrI3kgAD9dEiGnMoIUGsk7ChpTjJSa6
+         ZNiZhX088K/A943i9SllZzPPbAB4lMxbDk17V3zQZ1CQtajIpP2w92WziDBkS1FtTOCO
+         ZHocpUNTTN/KdufIVkLStSWC4cNlCJ3KOFe52DA1Oj3IAGh95wIn3uMDZRImC385NJXa
+         VUdW1M5ysxm6ZdJDDI9ByxPOKN4J2SwZms/FDQxFc3k5hE8iobH2/xrEo//bzTUhtqGM
+         n9MQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=gtPsxTmS;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::134 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x134.google.com (mail-lf1-x134.google.com. [2a00:1450:4864:20::134])
+        by gmr-mx.google.com with ESMTPS id a3si733467eda.0.2018.11.19.00.27.29
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 19 Nov 2018 00:27:29 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::134 as permitted sender) client-ip=2a00:1450:4864:20::134;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=gtPsxTmS;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::134 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x134.google.com with SMTP id v5so20662095lfe.7
+        for <wwwmake@googlegroups.com>; Mon, 19 Nov 2018 00:27:29 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=w3aGbv0uFTQQ490qzjtfFJk+UQJWHxxBpHAr4pkvJFA=;
+        b=gtPsxTmSTcvX382UymuTQEc0Fmu77kFrOnS/7GpHjxve2QRTOotM6IXqCOUDCsY2FN
+         G+wP8UwVIXhKby0xaxOOeXhA2zCzTCAiYzxALPd9XArSRkzGTvSg7DFmjq0hD1tZFgk/
+         n++CQRdb/2tnGiOxyuh9pLM7kSV/Nyp946/rGBARu4U5EemR1TADPaECNgKsfUcnhtQg
+         cpUzXWThZzEw5Vzt6YBCzqg5lyuA2V1+Z3/fwIMNIS6WTz6UsvfwfYCW9GGYl3YfmQhF
+         BqO/aVEJ9pR/qh8bq2QVso5JQqvFZfaVaFx8E/7S+z5cFxX5scl0HPgFfvJ+jHbY0/oH
+         I3NQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=w3aGbv0uFTQQ490qzjtfFJk+UQJWHxxBpHAr4pkvJFA=;
+        b=jSjyiGHhWOCG3K+rsSgavllQ7HVJIYWqbLp9KE3QzjLiX8QCuQ7cxKdaHfe5Ly2u36
+         B7oyJcyL17CeGFcbhnCQjO2mGulaqFmlI+eGnrDgDTkdY597+ub91+reffeWEgAbUnLd
+         Hl2ofbUh5nPbIm9J69xMCSYGgA19IB13czgXXk+s2Px2YIwefJFHtiHFYFgClvWrpUlj
+         tknQboi4RdeqNKx/mjT1NZIGKYknJ4SWiUP1BSU+Io8evL9t5lZrhSQhtil7+erVBTap
+         2MXP7/7bMmoYuUjBhQDDGEmzplgOrwseFLYPUbeLhcKOrUB5pEadMm2YPG+xt1Yr5wH7
+         6ltw==
+X-Gm-Message-State: AGRZ1gIFQyqT3NvN1GM3MZ5sfzs/U9CNhHuSB92t9W7Z6judrmmHaWR2
+	ZylIbJf5CwU+XsvR71aqT55Ti8/BMC9WL0IJBNluVi0b
+X-Received: by 2002:a19:db82:: with SMTP id t2mr10914303lfi.130.1542616049068;
+ Mon, 19 Nov 2018 00:27:29 -0800 (PST)
+MIME-Version: 1.0
+References: <965993f2-872a-4140-80b5-e296e8cc5ef6@googlegroups.com>
+ <CAAxEZd-p8LnZAHH5E=UBD6ZeyshdnE2jNDsxtpXYE36DdumY8Q@mail.gmail.com> <157c04be-2051-483e-bbae-311b4733e14c@googlegroups.com>
+In-Reply-To: <157c04be-2051-483e-bbae-311b4733e14c@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 19 Nov 2018 09:27:16 +0100
+Message-ID: <CAAxEZd-ZxXAOLSX_H1ayzTDNTRgjuhXV4LV_XkH4=5oa8x+UCA@mail.gmail.com>
+Subject: Re: [wwwmake:462] [csvreader] Is there any way to keep going after
+ encountering an error?
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Steve,
+
+   Thanks for your kind words and your detailed response and for the exampl=
+e:
+
+> Farrokh,"Freddy" Mercury,Bulsara
+
+    Again the idea is (sorry if that disappoints you) to add better
+error recovery support case-by-case / example-by-example.  The goal
+is, yes, that you can choose / configure how to handle errors incl.
+ideally your case where a "broken" line gets skipped / recovered - but
+the idea / theory is that there is no one-true-way/solution. Example:
+
+   If you (auto) convert  12.2.2  to a float - what do you expect?
+
+    - 12.2
+    - Float::NaN ?
+    - nil ?
+    - raise FormatException
+    - and so on
+
+    The idea is to offer all options (with some great defaults, of course).
+
+     Anways, thus, back to your sample:
+
+>  Farrokh,"Freddy" Mercury,Bulsara
+
+   What do you expect?
+
+    - A recoverable Format/StrayQuote error/exception?
+    - Auto-fixing the >"Freddy" Mercury< value if that's possible -
+new rule! if quoted value is followed by more data auto-add it until
+hitting the separator (that is, comma) and turn the quotes into
+"literal" quotes as part of the value
+
+     That's my point. Ideally all "errors" can get auto-fixed and
+recovered (with sensible defaults).
+
+     Thus, if interested you're invited to please keep reporting /
+posting more so I can add the "fixes".
+
+     I will try to add an "auto-fix" recovery for the  >"Freddy"
+Mercury< case in the next csvreader library update.
+
+   Cheers.
+
+PS: I also started a new ERRORS.md page to document all (recoverable)
+built-in auto-fixes [1] and error recovery options.
+
+[1]  https://github.com/csvreader/csvreader/blob/master/ERRORS.md
+
+
+El dom., 18 nov. 2018 a las 22:05, Steven Jeffries
+(<stevenjeffries@gmail.com>) escribi=C3=B3:
+>
+>
+> Thanks for always responding so quickly!
+>
+> I'm not really talking about any specific errors, I'm more talking about =
+continuing through errors once one is encountered. As anyone who has ever w=
+orked with client generated CSVs will know, this is always an issue.
+>
+> An example would be something like this:
+>
+>> First Name,Middle Name,Last Name
+>> Johnathan,Madeup,Smith
+>> Farrokh,"Freddy" Mercury,Bulsara
+>> Jane,AlsoMadeup,Smith
+>
+>
+> The improperly quoted line for Freddy Mercury will fail, and we will not =
+get to the Jane Smith line. Now imagine there was 2GB of data before that l=
+ine and another 1GB of data after it (a scenario that comes up far more fre=
+quently than I'd like).
+>
+> It would be really nice to be able to say, "Hey, line 123456 failed" whil=
+e still importing the rest of the data.
+>
+> I'm not sure of how possible that is, or if something like that is even w=
+ithin the scope of this project, but it would be super cool.
+>
+> Also, I can't say this enough, your CSV library is one of the best out th=
+ere right now. Thanks for all of the work you've put into it!
+>
+> Thanks!
+> - Steve
+>
+> On Saturday, November 17, 2018 at 4:41:18 AM UTC-8, Gerald Bauer wrote:
+>>
+>> Hello,
+>>
+>>    First thanks for trying a different encoding. Great to hear it works.
+>>
+>> > I'm processing some huge files. It really sucks to get an error 80% of=
+ the way through and not be able to finish. Is there any way to get an erro=
+r on a line, do something with it (probably log it), but continue processin=
+g the rest of the file?
+>>
+>>     Good point. Yes, of course. The idea is - since this is a kind of
+>> new (alternative) csv reader / library to learn from the real world
+>> and from real experience - that is, where your help is needed :-).
+>>
+>>     The point is and the idea is to collect the "real-world" errors
+>> one-by-one and add options and tests to make the reader more "stable"
+>> handling real-world cases / error conditions. The point is - again -
+>> the more real-world cases that get reported - the better the reader
+>> and they more I can fix / handle and so on.
+>>
+>>     Thus, to conclude - if you want to help out I invite you to post
+>> the "offending" csv line(s) / text record(s) and what error you get -
+>> they more the better.
+>>
+>>     Cheers. Prost.
+>
+> --
+> You received this message because you are subscribed to the Google Groups=
+ "wwwmake" group.
+> To unsubscribe from this group and stop receiving emails from it, send an=
+ email to wwwmake+unsubscribe@googlegroups.com.
+> To post to this group, send email to wwwmake@googlegroups.com.
+> Visit this group at https://groups.google.com/group/wwwmake.
+> For more options, visit https://groups.google.com/d/optout.
+

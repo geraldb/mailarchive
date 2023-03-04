@@ -1,0 +1,64 @@
+From 1457591943168@xxx Tue Jun 16 00:16:56 +0000 2015
+X-GM-THRID: 1457671634944
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,bf36e4b1c4b45c26,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.89.70 with SMTP id bm6mr2234798wib.5.1404038456763;
+        Sun, 29 Jun 2014 03:40:56 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.80.227 with SMTP id u3ls292176wix.19.canary; Sun, 29 Jun
+ 2014 03:40:55 -0700 (PDT)
+X-Received: by 10.180.13.18 with SMTP id d18mr2241595wic.2.1404038455771;
+        Sun, 29 Jun 2014 03:40:55 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22c.google.com (mail-wi0-x22c.google.com [2a00:1450:400c:c05::22c])
+        by gmr-mx.google.com with ESMTPS id s1si262522wiw.3.2014.06.29.03.40.55
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 29 Jun 2014 03:40:55 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22c as permitted sender) client-ip=2a00:1450:400c:c05::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22c as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f172.google.com with SMTP id hi2so4701147wib.17
+        for <opensport@googlegroups.com>; Sun, 29 Jun 2014 03:40:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=CbVwPa5U6FKgvopzLl/HkXpzRtlY0Qq853qxV8oO+9c=;
+        b=K+t/vXlGr/r7OUWFRu7wOAhcSAo0FTPWtU50mu96VgUtFIs0m8YEPPtY05zzag+qbX
+         PHTPw9vE4A9W7JvgLP4QWMLGBrhorYsZMwBrje2weu6dfm3NoVfraiUp+XexPUztioUx
+         r2xyKVp1IZtTXqFXMiVzHKqQr/luWl43joi2hKMf6vPWrOlO+3MzLMGito1mWFc2Q9dJ
+         QmTynPUNBgbfDyX5hUyKUZBBBlKgtrEqnLP/ixPJ1cPn5rZ0spj/KJNwNt5kjH3ZB8sI
+         Hpcg4PvMRnKW+1ziuNUEj3JfArPUCbosRVhAY0cq9gghxmX2BFzYOPbMMf5NYsjxCxpJ
+         oOhw==
+MIME-Version: 1.0
+X-Received: by 10.194.58.180 with SMTP id s20mr155413wjq.119.1404038455661;
+ Sun, 29 Jun 2014 03:40:55 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Sun, 29 Jun 2014 03:40:55 -0700 (PDT)
+Date: Sun, 29 Jun 2014 12:40:55 +0200
+Message-ID: <CAAxEZd-N-DL8N8oNdFHOGpH1SzxjKcH5z5wx4E_pT7KLKzKP8Q@mail.gmail.com>
+Subject: ojogo gem - another world cup command line tool - prints today's matches
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  As an example using the football.db HTTP JSON API I've put together
+another command line tool [1] for the World Cup 2014 in Brazil that
+prints today's matches. For example, typing on Jun/29
+
+  $ ojogo    # defaults to today's world cup 2014 matches
+
+  will print
+
+  Netherlands (NED) vs Mexico (MEX)
+  Costa Rica (CRC) vs Greece (GRE)
+
+ That's it. Enjoy. Cheers.
+
+[1] github.com/sportdb/ojogo.ruby
+

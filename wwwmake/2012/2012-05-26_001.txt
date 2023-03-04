@@ -1,0 +1,58 @@
+From 1088413499392@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 1074011308032
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,1665f82740ddad1f
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+Received: by 10.52.178.166 with SMTP id cz6mr4449307vdc.1.1338026689533;
+        Sat, 26 May 2012 03:04:49 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.209.19 with SMTP id ge19ls1653582vcb.0.gmail; Sat, 26 May
+ 2012 03:04:49 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.52.67.205 with SMTP id p13mr96736vdt.7.1338026689067; Sat, 26
+ May 2012 03:04:49 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by eh4g2000vbb.googlegroups.com with HTTP; Sat, 26 May 2012 03:04:49
+ -0700 (PDT)
+Date: Sat, 26 May 2012 03:04:49 -0700 (PDT)
+In-Reply-To: <31755610.1129.1334317550775.JavaMail.geo-discussion-forums@pbig5>
+References: <17542618.988.1331513433940.JavaMail.geo-discussion-forums@vbze11> <31755610.1129.1334317550775.JavaMail.geo-discussion-forums@pbig5>
+User-Agent: G2/1.0
+X-Google-Token: EMHVgv4Ebr4LOzvffMw0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like
+ Gecko) Chrome/19.0.1084.52 Safari/536.5,gzip(gfe)
+X-Google-IP: 194.166.222.119
+Message-ID: <a7c8544d-eaa4-4ae1-b5d9-ab927d483f6c@eh4g2000vbb.googlegroups.com>
+Subject: Slide Show (S9) Update - Use Your Markdown Library of Choice
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   I've moved the markdown library loading code out of the slideshow
+gem and into its own gem, that is, markdown_select [1].
+
+   If you want to force the use of a specific libray add a
+markdown.yml file to your working directory and list the name of the
+library. Example:
+
+  gerald@viva:~/tmp$ cat markdown.yml
+
+  libs:
+    - kramdown
+
+
+  That's it for now. I'll plan to add some easier ways to configure
+the markdown library. If you have any ideas or suggestions, please let
+us know.
+
+  Cheers.
+
+[1] https://github.com/geraldb/markdown_select
+

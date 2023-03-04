@@ -1,0 +1,1293 @@
+From 733134979072@xxx Tue Jun 16 00:17:18 +0000 2015
+X-GM-THRID: 252823207936
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,91274d0de1d6fc38
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.50.35.229 with SMTP id l5mr5914672igj.0.1400707810997;
+        Wed, 21 May 2014 14:30:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.47.203 with SMTP id m69ls958357qga.84.gmail; Wed, 21 May
+ 2014 14:30:10 -0700 (PDT)
+X-Received: by 10.140.20.227 with SMTP id 90mr508435qgj.6.1400707810701;
+        Wed, 21 May 2014 14:30:10 -0700 (PDT)
+X-Google-Doc-Id: ab2b5b2007879eb4
+X-Google-Web-Client: true
+Date: Wed, 21 May 2014 14:30:09 -0700 (PDT)
+From: =?UTF-8?Q?Oriol_Franquesa_Cort=C3=A9s?= <ofranquesa@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <ca3ed9b6-ae49-473d-8efa-edfb56fc3d99@googlegroups.com>
+In-Reply-To: <a43fd985-9ce2-4fa0-90ae-cef0037c8f50@googlegroups.com>
+References: <d7f4432d-8234-4fe2-9d86-ddb1405fa163@googlegroups.com>
+ <76e0a3ad-e716-4f67-b4f5-3e96529131aa@googlegroups.com>
+ <1c880598-c349-4655-a89d-70ca67100aaa@googlegroups.com>
+ <CAAxEZd8SoUxPC3bhiK4DbXytWFQ_ooC=qRM9FOeJdNn=riLYtA@mail.gmail.com>
+ <b28b1bbd-a4a5-4f90-8d9a-6e646867ee10@googlegroups.com>
+ <CAAxEZd9W-TToZ4jajSBf2-kkjUY3c7SLnCiP_H3Ph_1m5FpmWw@mail.gmail.com>
+ <a43fd985-9ce2-4fa0-90ae-cef0037c8f50@googlegroups.com>
+Subject: Re: [opensport] Re: A couple of questions...
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_539_32583348.1400707810172"
+X-Google-Token: EOG19JsFm0qIPeANUt40
+X-Google-IP: 177.18.139.110
+
+------=_Part_539_32583348.1400707810172
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_540_20000638.1400707810172"
+
+------=_Part_540_20000638.1400707810172
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Gerald,
+
+It can be possible that /national-teams/setups/all.yml file is missing? I=
+=20
+am trying to rebuild an entire worldcup 2014 database with the oficial rake=
+=20
+script posted on git and rake aborts because the file is missing (also=20
+missing on git). Could you please have a look and let me know if it is my=
+=20
+mistake? Thank you!
+
+Oriol.
+
+On Thursday, April 17, 2014 6:22:12 PM UTC-3, Oriol Franquesa Cort=C3=A9s w=
+rote:
+>
+> Ah, OK! Sorry Gerald! I had no notice about the script, otherwise I=20
+> wouldn't have bothered you...
+>
+> Now worked! Many thanks for your help! Soon some news about the project :=
+)
+>
+> cheers.
+>
+> On Thursday, April 17, 2014 3:20:21 PM UTC-3, Gerald Bauer wrote:
+>>
+>> Hello,=20
+>>
+>>    Sorry. The tags and taggings tables also got moved into its own gem=
+=20
+>> (tagutils). Please use TagDb.create, thus, in your build script use:=20
+>>
+>> task :create =3D> :env do=20
+>>   LogDb.create     # logs table=20
+>>   ConfDb.create    # props table=20
+>>   TagDb.create     # tags n taggings tables=20
+>>   WorldDb.create=20
+>>   SportDb.create=20
+>> end=20
+>>
+>>   I recommend checking the "official" build script (it's always=20
+>> working n update-to-date) as an model/example. You find it here [1].=20
+>> Cheers.=20
+>>
+>> [1] github.com/openfootball/build/blob/master/Rakefile=20
+>>
+>> 2014-04-17 17:13 GMT+02:00 Oriol Franquesa Cort=C3=A9s <ofran...@gmail.c=
+om>:=20
+>> > Hi Gerald,=20
+>> >=20
+>> > yet another problem with tables... On this task:=20
+>> >=20
+>> > task :importworld =3D> :env do=20
+>> >=20
+>> >   WorldDb.read_setup( 'setups/sport.db.admin', './world.db', skip_tags=
+:=20
+>> true=20
+>> > )  # populate world tables=20
+>> >=20
+>> > end=20
+>> >=20
+>> >=20
+>> > I get this trace error, for the tags table:=20
+>> >=20
+>> >=20
+>> > Mysql2::Error: Table 'football.tags' doesn't exist: SHOW FULL FIELDS=
+=20
+>> FROM=20
+>> > `tags`=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_mysql_adapter.rb:287:in=20
+>>
+>> > `query'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_mysql_adapter.rb:287:in=20
+>>
+>> > `block in execute'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_adapter.rb:442:in=20
+>>
+>> > `block in log'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activesupport-4.0.4/lib/active_support/notifica=
+tions/instrumenter.rb:20:in=20
+>>
+>> > `instrument'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_adapter.rb:437:in=20
+>>
+>> > `log'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_mysql_adapter.rb:287:in=20
+>>
+>> > `execute'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/mysql2_adapter.rb:222:in=20
+>>
+>> > `execute'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_mysql_adapter.rb:301:in=20
+>>
+>> > `execute_and_free'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_mysql_adapter.rb:462:in=20
+>>
+>> > `columns'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/schema_cache.rb:114:in=20
+>>
+>> > `block in prepare_default_proc'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/schema_cache.rb:56:in=20
+>>
+>> > `yield'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/schema_cache.rb:56:in=20
+>>
+>> > `default'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/schema_cache.rb:56:in=20
+>>
+>> > `columns'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/model_sche=
+ma.rb:208:in=20
+>>
+>> > `columns'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/model_sche=
+ma.rb:217:in=20
+>>
+>> > `columns_hash'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/dynamic_ma=
+tchers.rb:60:in=20
+>>
+>> > `block in valid?'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/dynamic_ma=
+tchers.rb:60:in=20
+>>
+>> > `each'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/dynamic_ma=
+tchers.rb:60:in=20
+>>
+>> > `all?'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/dynamic_ma=
+tchers.rb:60:in=20
+>>
+>> > `valid?'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/dynamic_ma=
+tchers.rb:18:in=20
+>>
+>> > `method_missing'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb/models/country.rb:251=
+:in=20
+>> > `block in create_or_update_from_attribs'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb/models/country.rb:250=
+:in=20
+>> > `each'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb/models/country.rb:250=
+:in=20
+>> > `create_or_update_from_attribs'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb/readers/country.rb:12=
+:in=20
+>> > `block in read'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/values_rea=
+der_v2.rb:42:in=20
+>>
+>> > `block in each_line'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/values_rea=
+der.rb:139:in=20
+>>
+>> > `block in each_line'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/values_rea=
+der.rb:55:in=20
+>>
+>> > `each_line'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/values_rea=
+der.rb:55:in=20
+>>
+>> > `each_line'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/values_rea=
+der_v2.rb:41:in=20
+>>
+>> > `each_line'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb/readers/country.rb:10=
+:in=20
+>> > `read'=20
+>> >=20
+>> > /var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb/reader.rb:82:in=20
+>> `block in=20
+>> > load'=20
+>> >=20
+>> > /var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb/matcher.rb:123:in=
+=20
+>> > `match_countries_for_continent'=20
+>> >=20
+>> > /var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb/reader.rb:76:in=20
+>> `load'=20
+>> >=20
+>> > /var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb/reader.rb:45:in=20
+>> `block in=20
+>> > load_setup'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/fixture_re=
+ader.rb:104:in=20
+>>
+>> > `block in each'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/fixture_re=
+ader.rb:103:in=20
+>>
+>> > `each'=20
+>> >=20
+>> >=20
+>> /var/lib/gems/1.9.1/gems/textutils-0.9.4/lib/textutils/reader/fixture_re=
+ader.rb:103:in=20
+>>
+>> > `each'=20
+>> >=20
+>> > /var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb/reader.rb:44:in=20
+>> > `load_setup'=20
+>> >=20
+>> > /var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb.rb:99:in=20
+>> `read_setup'=20
+>> >=20
+>> > /var/www/sportsdb/Rakefile:38:in `block in <top (required)>'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/task.rb:205:in `call'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/task.rb:205:in `block in execute'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/task.rb:200:in `each'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/task.rb:200:in `execute'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/task.rb:158:in `block in=20
+>> > invoke_with_call_chain'=20
+>> >=20
+>> > /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/task.rb:151:in `invoke_with_call_chain'=
+=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/task.rb:176:in `block in=20
+>> > invoke_prerequisites'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/task.rb:174:in `each'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/task.rb:174:in `invoke_prerequisites'=
+=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/task.rb:157:in `block in=20
+>> > invoke_with_call_chain'=20
+>> >=20
+>> > /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/task.rb:151:in `invoke_with_call_chain'=
+=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/task.rb:144:in `invoke'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/application.rb:116:in `invoke_task'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/application.rb:94:in `block (2 levels)=
+=20
+>> in=20
+>> > top_level'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/application.rb:94:in `each'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/application.rb:94:in `block in=20
+>> top_level'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/application.rb:133:in=20
+>> > `standard_exception_handling'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/application.rb:88:in `top_level'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/application.rb:66:in `block in run'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/application.rb:133:in=20
+>> > `standard_exception_handling'=20
+>> >=20
+>> > /usr/lib/ruby/vendor_ruby/rake/application.rb:63:in `run'=20
+>> >=20
+>> > /usr/bin/rake:27:in `<main>'=20
+>> >=20
+>> >=20
+>> > Did you make any change as well that could affect the world.db=20
+>> populations=20
+>> > tables? Many thanks once again for your help.=20
+>> >=20
+>> > best=20
+>> >=20
+>> >=20
+>> > On Thursday, April 17, 2014 5:56:18 AM UTC-3, Gerald Bauer wrote:=20
+>> >>=20
+>> >> Hello,=20
+>> >>=20
+>> >>    Sorry. The props table and model now lives in its own gem (props)=
+=20
+>> >> for easy reuse and is no longer part of the worlddb gem. Just add the=
+=20
+>> >> new=20
+>> >>=20
+>> >>    ConfDb.create     # will create props table=20
+>> >>=20
+>> >>    in addition to=20
+>> >>=20
+>> >>   LogDb.create=20
+>> >>   WorldDb.create=20
+>> >>   SportDb.create=20
+>> >>=20
+>> >>    and should fix it. Cheers.=20
+>> >>=20
+>> >>=20
+>> >> 2014-04-17 5:43 GMT+02:00 Oriol Franquesa Cort=C3=A9s <ofran...@gmail=
+.com>:=20
+>>
+>> >> > Hi Gerald, thanks for working on this.=20
+>> >> >=20
+>> >> > Looks like the problem was solved but something is wrong with the=
+=20
+>> >> > worlddb=20
+>> >> > tool. I get this mysql error:=20
+>> >> >=20
+>> >> > Mysql2::Error: Table 'football.props' doesn't exist: SHOW FULL=20
+>> FIELDS=20
+>> >> > FROM=20
+>> >> > `props`=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_mysql_adapter.rb:287:in=20
+>>
+>> >> > `query'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_mysql_adapter.rb:287:in=20
+>>
+>> >> > `block in execute'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_adapter.rb:442:in=20
+>>
+>> >> > `block in log'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activesupport-4.0.4/lib/active_support/notifica=
+tions/instrumenter.rb:20:in=20
+>>
+>> >> > `instrument'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_adapter.rb:437:in=20
+>>
+>> >> > `log'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_mysql_adapter.rb:287:in=20
+>>
+>> >> > `execute'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/mysql2_adapter.rb:222:in=20
+>>
+>> >> > `execute'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_mysql_adapter.rb:301:in=20
+>>
+>> >> > `execute_and_free'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/abstract_mysql_adapter.rb:462:in=20
+>>
+>> >> > `columns'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/schema_cache.rb:114:in=20
+>>
+>> >> > `block in prepare_default_proc'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/schema_cache.rb:56:in=20
+>>
+>> >> > `yield'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/schema_cache.rb:56:in=20
+>>
+>> >> > `default'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection=
+_adapters/schema_cache.rb:56:in=20
+>>
+>> >> > `columns'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/model_sche=
+ma.rb:208:in=20
+>>
+>> >> > `columns'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/model_sche=
+ma.rb:217:in=20
+>>
+>> >> > `columns_hash'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/inheritanc=
+e.rb:176:in=20
+>>
+>> >> > `subclass_from_attributes?'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/inheritanc=
+e.rb:23:in=20
+>>
+>> >> > `new'=20
+>> >> >=20
+>> >> >=20
+>> >> >=20
+>> /var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/validation=
+s.rb:39:in=20
+>>
+>> >> > `create!'=20
+>> >> >=20
+>> >> > /var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb.rb:85:in `create=
+'=20
+>> >> >=20
+>> >> > /var/www/sportsdb/Rakefile:33:in `block in <top (required)>'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/task.rb:205:in `call'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/task.rb:205:in `block in execute'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/task.rb:200:in `each'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/task.rb:200:in `execute'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/task.rb:158:in `block in=20
+>> >> > invoke_with_call_chain'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/task.rb:151:in=20
+>> `invoke_with_call_chain'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/task.rb:144:in `invoke'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/application.rb:116:in `invoke_task'=
+=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/application.rb:94:in `block (2=20
+>> levels) in=20
+>> >> > top_level'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/application.rb:94:in `each'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/application.rb:94:in `block in=20
+>> top_level'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/application.rb:133:in=20
+>> >> > `standard_exception_handling'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/application.rb:88:in `top_level'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/application.rb:66:in `block in run'=
+=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/application.rb:133:in=20
+>> >> > `standard_exception_handling'=20
+>> >> >=20
+>> >> > /usr/lib/ruby/vendor_ruby/rake/application.rb:63:in `run'=20
+>> >> >=20
+>> >> > /usr/bin/rake:27:in `<main>'=20
+>> >> >=20
+>> >> > Tasks: TOP =3D> create=20
+>> >> >=20
+>> >> >=20
+>> >> > Looks like is trying to access to the table before creating it...=
+=20
+>> And=20
+>> >> > this=20
+>> >> > came just executing this piece of script:=20
+>> >> >=20
+>> >> >=20
+>> >> > task :env =3D> BUILD_DIR do=20
+>> >> >=20
+>> >> >  require 'worlddb'=20
+>> >> >=20
+>> >> >  require 'sportdb'=20
+>> >> >=20
+>> >> >  require 'logutils/db'=20
+>> >> >=20
+>> >> >=20
+>> >> >  LogUtils::Logger.root.level =3D :info=20
+>> >> >=20
+>> >> >=20
+>> >> >  pp DB_CONFIG=20
+>> >> >=20
+>> >> >  ActiveRecord::Base.establish_connection( DB_CONFIG )=20
+>> >> >=20
+>> >> > end=20
+>> >> >=20
+>> >> >=20
+>> >> > task :create =3D> :env do=20
+>> >> >=20
+>> >> >   LogDb.create=20
+>> >> >=20
+>> >> >   WorldDb.create=20
+>> >> >=20
+>> >> >   SportDb.create=20
+>> >> >=20
+>> >> > end=20
+>> >> >=20
+>> >> >=20
+>> >> > Do you have any idea about which could be the problem?=20
+>> >> >=20
+>> >> >=20
+>> >> > On Tuesday, April 15, 2014 3:25:11 AM UTC-3, Gerald Bauer wrote:=20
+>> >> >>=20
+>> >> >> Hello Oriol,=20
+>> >> >>=20
+>> >> >> > The provided regular expression is using multiline anchors (^ or=
+=20
+>> $),=20
+>> >> >> > which may present a security risk. Did you mean to use \A and \z=
+,=20
+>> or=20
+>> >> >> > forgot to add the :multiline =3D> true option?=20
+>> >> >>=20
+>> >> >>   FYI: I've updated all gems to use /A/z anchors (instead of ^$)=
+=20
+>> for=20
+>> >> >> model=20
+>> >> >> validations, that is, the new versions are:=20
+>> >> >>=20
+>> >> >>  - worlddb v2.0.4=20
+>> >> >>  - sportdb v1.8.13=20
+>> >> >>  - tagutils v0.2.2=20
+>> >> >>=20
+>> >> >>    If you still get an exception for model format regexes after th=
+e=20
+>> >> >> update, it's now considered a bug and please report it. Thanks.=20
+>> Cheers.=20
+>> >> >=20
+>> >> > --=20
+>> >> > You received this message because you are subscribed to the Google=
+=20
+>> >> > Groups=20
+>> >> > "Open Sport(s) Database - football.db, formula1.db, ski.db, and=20
+>> Friends"=20
+>> >> > group.=20
+>> >> > To unsubscribe from this group and stop receiving emails from it,=
+=20
+>> send=20
+>> >> > an=20
+>> >> > email to opensport+...@googlegroups.com.=20
+>> >> > For more options, visit https://groups.google.com/d/optout.=20
+>> >=20
+>> > --=20
+>> > You received this message because you are subscribed to the Google=20
+>> Groups=20
+>> > "Open Sport(s) Database - football.db, formula1.db, ski.db, and=20
+>> Friends"=20
+>> > group.=20
+>> > To unsubscribe from this group and stop receiving emails from it, send=
+=20
+>> an=20
+>> > email to opensport+...@googlegroups.com.=20
+>> > For more options, visit https://groups.google.com/d/optout.=20
+>>
+>
+------=_Part_540_20000638.1400707810172
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald,<div><br></div><div>It can be possible that /nat=
+ional-teams/setups/all.yml file is missing? I am trying to rebuild an entir=
+e worldcup 2014 database with the oficial rake script posted on git and rak=
+e aborts because the file is missing (also missing on git). Could you pleas=
+e have a look and let me know if it is my mistake? Thank you!</div><div><br=
+></div><div>Oriol.<br><br>On Thursday, April 17, 2014 6:22:12 PM UTC-3, Ori=
+ol Franquesa Cort=C3=A9s wrote:<blockquote class=3D"gmail_quote" style=3D"m=
+argin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"=
+><div dir=3D"ltr">Ah, OK! Sorry Gerald! I had no notice about the script, o=
+therwise I wouldn't have bothered you...<div><br></div><div>Now worked! Man=
+y thanks for your help! Soon some news about the project :)</div><div><br><=
+/div><div>cheers.<br><br>On Thursday, April 17, 2014 3:20:21 PM UTC-3, Gera=
+ld Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin:0;margin-l=
+eft:0.8ex;border-left:1px #ccc solid;padding-left:1ex">Hello,
+<br>
+<br>&nbsp; &nbsp;Sorry. The tags and taggings tables also got moved into it=
+s own gem
+<br>(tagutils). Please use TagDb.create, thus, in your build script use:
+<br>
+<br>task :create =3D&gt; :env do
+<br>&nbsp; LogDb.create &nbsp; &nbsp; # logs table
+<br>&nbsp; ConfDb.create &nbsp; &nbsp;# props table
+<br>&nbsp; TagDb.create &nbsp; &nbsp; # tags n taggings tables
+<br>&nbsp; WorldDb.create
+<br>&nbsp; SportDb.create
+<br>end
+<br>
+<br>&nbsp; I recommend checking the "official" build script (it's always
+<br>working n update-to-date) as an model/example. You find it here [1].
+<br>Cheers.
+<br>
+<br>[1] <a href=3D"http://github.com/openfootball/build/blob/master/Rakefil=
+e" target=3D"_blank" onmousedown=3D"this.href=3D'http://www.google.com/url?=
+q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fbuild%2Fblob%2Fmaster%2FRakefi=
+le\46sa\75D\46sntz\0751\46usg\75AFQjCNGORZw0g35_Oh0eH4SKwk_PNTyQ6A';return =
+true;" onclick=3D"this.href=3D'http://www.google.com/url?q\75http%3A%2F%2Fg=
+ithub.com%2Fopenfootball%2Fbuild%2Fblob%2Fmaster%2FRakefile\46sa\75D\46sntz=
+\0751\46usg\75AFQjCNGORZw0g35_Oh0eH4SKwk_PNTyQ6A';return true;">github.com/=
+openfootball/build/<wbr>blob/master/Rakefile</a>
+<br>
+<br>2014-04-17 17:13 GMT+02:00 Oriol Franquesa Cort=C3=A9s &lt;<a>ofran...@=
+gmail.com</a>&gt;:
+<br>&gt; Hi Gerald,
+<br>&gt;
+<br>&gt; yet another problem with tables... On this task:
+<br>&gt;
+<br>&gt; task :importworld =3D&gt; :env do
+<br>&gt;
+<br>&gt; &nbsp; WorldDb.read_setup( 'setups/sport.db.admin', './world.db', =
+skip_tags: true
+<br>&gt; ) &nbsp;# populate world tables
+<br>&gt;
+<br>&gt; end
+<br>&gt;
+<br>&gt;
+<br>&gt; I get this trace error, for the tags table:
+<br>&gt;
+<br>&gt;
+<br>&gt; Mysql2::Error: Table 'football.tags' doesn't exist: SHOW FULL FIEL=
+DS FROM
+<br>&gt; `tags`
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/connection_adapters/<wbr>abstract_mysql_adapter.rb:287:<wbr>in
+<br>&gt; `query'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/connection_adapters/<wbr>abstract_mysql_adapter.rb:287:<wbr>in
+<br>&gt; `block in execute'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/connection_adapters/<wbr>abstract_adapter.rb:442:in
+<br>&gt; `block in log'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activesupport-4.0.4/lib/<wbr>active_=
+support/notifications/<wbr>instrumenter.rb:20:in
+<br>&gt; `instrument'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/connection_adapters/<wbr>abstract_adapter.rb:437:in
+<br>&gt; `log'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/connection_adapters/<wbr>abstract_mysql_adapter.rb:287:<wbr>in
+<br>&gt; `execute'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/connection_adapters/<wbr>mysql2_adapter.rb:222:in
+<br>&gt; `execute'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/connection_adapters/<wbr>abstract_mysql_adapter.rb:301:<wbr>in
+<br>&gt; `execute_and_free'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/connection_adapters/<wbr>abstract_mysql_adapter.rb:462:<wbr>in
+<br>&gt; `columns'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/connection_adapters/<wbr>schema_cache.rb:114:in
+<br>&gt; `block in prepare_default_proc'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/connection_adapters/<wbr>schema_cache.rb:56:in
+<br>&gt; `yield'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/connection_adapters/<wbr>schema_cache.rb:56:in
+<br>&gt; `default'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/connection_adapters/<wbr>schema_cache.rb:56:in
+<br>&gt; `columns'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/model_schema.rb:208:in
+<br>&gt; `columns'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/model_schema.rb:217:in
+<br>&gt; `columns_hash'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/dynamic_matchers.rb:60:<wbr>in
+<br>&gt; `block in valid?'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/dynamic_matchers.rb:60:<wbr>in
+<br>&gt; `each'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/dynamic_matchers.rb:60:<wbr>in
+<br>&gt; `all?'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/dynamic_matchers.rb:60:<wbr>in
+<br>&gt; `valid?'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/active_<wbr>r=
+ecord/dynamic_matchers.rb:18:<wbr>in
+<br>&gt; `method_missing'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>worlddb-2.0.4/lib/worlddb/<wbr>model=
+s/country.rb:251:in
+<br>&gt; `block in create_or_update_from_attribs'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>worlddb-2.0.4/lib/worlddb/<wbr>model=
+s/country.rb:250:in
+<br>&gt; `each'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>worlddb-2.0.4/lib/worlddb/<wbr>model=
+s/country.rb:250:in
+<br>&gt; `create_or_update_from_<wbr>attribs'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>worlddb-2.0.4/lib/worlddb/<wbr>reade=
+rs/country.rb:12:in
+<br>&gt; `block in read'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>textutils-0.9.4/lib/textutils/<wbr>r=
+eader/values_reader_v2.rb:42:<wbr>in
+<br>&gt; `block in each_line'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>textutils-0.9.4/lib/textutils/<wbr>r=
+eader/values_reader.rb:139:in
+<br>&gt; `block in each_line'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>textutils-0.9.4/lib/textutils/<wbr>r=
+eader/values_reader.rb:55:in
+<br>&gt; `each_line'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>textutils-0.9.4/lib/textutils/<wbr>r=
+eader/values_reader.rb:55:in
+<br>&gt; `each_line'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>textutils-0.9.4/lib/textutils/<wbr>r=
+eader/values_reader_v2.rb:41:<wbr>in
+<br>&gt; `each_line'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>worlddb-2.0.4/lib/worlddb/<wbr>reade=
+rs/country.rb:10:in
+<br>&gt; `read'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>worlddb-2.0.4/lib/worlddb/<wbr>reade=
+r.rb:82:in `block in
+<br>&gt; load'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>worlddb-2.0.4/lib/worlddb/<wbr>match=
+er.rb:123:in
+<br>&gt; `match_countries_for_<wbr>continent'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>worlddb-2.0.4/lib/worlddb/<wbr>reade=
+r.rb:76:in `load'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>worlddb-2.0.4/lib/worlddb/<wbr>reade=
+r.rb:45:in `block in
+<br>&gt; load_setup'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>textutils-0.9.4/lib/textutils/<wbr>r=
+eader/fixture_reader.rb:104:<wbr>in
+<br>&gt; `block in each'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>textutils-0.9.4/lib/textutils/<wbr>r=
+eader/fixture_reader.rb:103:<wbr>in
+<br>&gt; `each'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>textutils-0.9.4/lib/textutils/<wbr>r=
+eader/fixture_reader.rb:103:<wbr>in
+<br>&gt; `each'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>worlddb-2.0.4/lib/worlddb/<wbr>reade=
+r.rb:44:in
+<br>&gt; `load_setup'
+<br>&gt;
+<br>&gt; /var/lib/gems/1.9.1/gems/<wbr>worlddb-2.0.4/lib/worlddb.rb:<wbr>99=
+:in `read_setup'
+<br>&gt;
+<br>&gt; /var/www/sportsdb/Rakefile:38:<wbr>in `block in &lt;top (required)=
+&gt;'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:205:in `call'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:205:in `block in execu=
+te'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:200:in `each'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:200:in `execute'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:158:in `block in
+<br>&gt; invoke_with_call_chain'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/1.9.1/monitor.<wbr>rb:211:in `mon_synchronize'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:151:in `invoke_with_ca=
+ll_chain'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:176:in `block in
+<br>&gt; invoke_prerequisites'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:174:in `each'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:174:in `invoke_prerequ=
+isites'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:157:in `block in
+<br>&gt; invoke_with_call_chain'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/1.9.1/monitor.<wbr>rb:211:in `mon_synchronize'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:151:in `invoke_with_ca=
+ll_chain'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:144:in `invoke'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:116:in `invoke_=
+task'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:94:in `block (2=
+ levels) in
+<br>&gt; top_level'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:94:in `each'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:94:in `block in=
+ top_level'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:133:in
+<br>&gt; `standard_exception_handling'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:88:in `top_leve=
+l'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:66:in `block in=
+ run'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:133:in
+<br>&gt; `standard_exception_handling'
+<br>&gt;
+<br>&gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:63:in `run'
+<br>&gt;
+<br>&gt; /usr/bin/rake:27:in `&lt;main&gt;'
+<br>&gt;
+<br>&gt;
+<br>&gt; Did you make any change as well that could affect the world.db pop=
+ulations
+<br>&gt; tables? Many thanks once again for your help.
+<br>&gt;
+<br>&gt; best
+<br>&gt;
+<br>&gt;
+<br>&gt; On Thursday, April 17, 2014 5:56:18 AM UTC-3, Gerald Bauer wrote:
+<br>&gt;&gt;
+<br>&gt;&gt; Hello,
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; &nbsp;Sorry. The props table and model now lives in its=
+ own gem (props)
+<br>&gt;&gt; for easy reuse and is no longer part of the worlddb gem. Just =
+add the
+<br>&gt;&gt; new
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; &nbsp;ConfDb.create &nbsp; &nbsp; # will create props t=
+able
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; &nbsp;in addition to
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; LogDb.create
+<br>&gt;&gt; &nbsp; WorldDb.create
+<br>&gt;&gt; &nbsp; SportDb.create
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; &nbsp;and should fix it. Cheers.
+<br>&gt;&gt;
+<br>&gt;&gt;
+<br>&gt;&gt; 2014-04-17 5:43 GMT+02:00 Oriol Franquesa Cort=C3=A9s &lt;<a>o=
+fran...@gmail.com</a>&gt;:
+<br>&gt;&gt; &gt; Hi Gerald, thanks for working on this.
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; Looks like the problem was solved but something is wrong =
+with the
+<br>&gt;&gt; &gt; worlddb
+<br>&gt;&gt; &gt; tool. I get this mysql error:
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; Mysql2::Error: Table 'football.props' doesn't exist: SHOW=
+ FULL FIELDS
+<br>&gt;&gt; &gt; FROM
+<br>&gt;&gt; &gt; `props`
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/connection_adapters/<wbr>abstract_mysql_adapter.rb:287:<wbr>=
+in
+<br>&gt;&gt; &gt; `query'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/connection_adapters/<wbr>abstract_mysql_adapter.rb:287:<wbr>=
+in
+<br>&gt;&gt; &gt; `block in execute'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/connection_adapters/<wbr>abstract_adapter.rb:442:in
+<br>&gt;&gt; &gt; `block in log'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activesupport-4.0.4/lib/<wb=
+r>active_support/notifications/<wbr>instrumenter.rb:20:in
+<br>&gt;&gt; &gt; `instrument'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/connection_adapters/<wbr>abstract_adapter.rb:437:in
+<br>&gt;&gt; &gt; `log'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/connection_adapters/<wbr>abstract_mysql_adapter.rb:287:<wbr>=
+in
+<br>&gt;&gt; &gt; `execute'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/connection_adapters/<wbr>mysql2_adapter.rb:222:in
+<br>&gt;&gt; &gt; `execute'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/connection_adapters/<wbr>abstract_mysql_adapter.rb:301:<wbr>=
+in
+<br>&gt;&gt; &gt; `execute_and_free'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/connection_adapters/<wbr>abstract_mysql_adapter.rb:462:<wbr>=
+in
+<br>&gt;&gt; &gt; `columns'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/connection_adapters/<wbr>schema_cache.rb:114:in
+<br>&gt;&gt; &gt; `block in prepare_default_proc'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/connection_adapters/<wbr>schema_cache.rb:56:in
+<br>&gt;&gt; &gt; `yield'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/connection_adapters/<wbr>schema_cache.rb:56:in
+<br>&gt;&gt; &gt; `default'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/connection_adapters/<wbr>schema_cache.rb:56:in
+<br>&gt;&gt; &gt; `columns'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/model_schema.rb:208:in
+<br>&gt;&gt; &gt; `columns'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/model_schema.rb:217:in
+<br>&gt;&gt; &gt; `columns_hash'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/inheritance.rb:176:in
+<br>&gt;&gt; &gt; `subclass_from_attributes?'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/inheritance.rb:23:in
+<br>&gt;&gt; &gt; `new'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>activerecord-4.0.4/lib/acti=
+ve_<wbr>record/validations.rb:39:in
+<br>&gt;&gt; &gt; `create!'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/lib/gems/1.9.1/gems/<wbr>worlddb-2.0.4/lib/worlddb.r=
+b:<wbr>85:in `create'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /var/www/sportsdb/Rakefile:33:<wbr>in `block in &lt;top (=
+required)&gt;'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:205:in `call'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:205:in `block=
+ in execute'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:200:in `each'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:200:in `execu=
+te'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:158:in `block=
+ in
+<br>&gt;&gt; &gt; invoke_with_call_chain'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/1.9.1/monitor.<wbr>rb:211:in `mon_synchroni=
+ze'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:151:in `invok=
+e_with_call_chain'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/task.rb:144:in `invok=
+e'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:116:in=
+ `invoke_task'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:94:in =
+`block (2 levels) in
+<br>&gt;&gt; &gt; top_level'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:94:in =
+`each'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:94:in =
+`block in top_level'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:133:in
+<br>&gt;&gt; &gt; `standard_exception_handling'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:88:in =
+`top_level'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:66:in =
+`block in run'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:133:in
+<br>&gt;&gt; &gt; `standard_exception_handling'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/lib/ruby/vendor_ruby/<wbr>rake/application.rb:63:in =
+`run'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; /usr/bin/rake:27:in `&lt;main&gt;'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; Tasks: TOP =3D&gt; create
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; Looks like is trying to access to the table before creati=
+ng it... And
+<br>&gt;&gt; &gt; this
+<br>&gt;&gt; &gt; came just executing this piece of script:
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; task :env =3D&gt; BUILD_DIR do
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; &nbsp;require 'worlddb'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; &nbsp;require 'sportdb'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; &nbsp;require 'logutils/db'
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; &nbsp;LogUtils::Logger.root.level =3D :info
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; &nbsp;pp DB_CONFIG
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; &nbsp;ActiveRecord::Base.establish_<wbr>connection( DB_CO=
+NFIG )
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; end
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; task :create =3D&gt; :env do
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; &nbsp; LogDb.create
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; &nbsp; WorldDb.create
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; &nbsp; SportDb.create
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; end
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; Do you have any idea about which could be the problem?
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; On Tuesday, April 15, 2014 3:25:11 AM UTC-3, Gerald Bauer=
+ wrote:
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; Hello Oriol,
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; &gt; The provided regular expression is using multili=
+ne anchors (^ or $),
+<br>&gt;&gt; &gt;&gt; &gt; which may present a security risk. Did you mean =
+to use \A and \z, or
+<br>&gt;&gt; &gt;&gt; &gt; forgot to add the :multiline =3D&gt; true option=
+?
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; &nbsp; FYI: I've updated all gems to use /A/z anchors=
+ (instead of ^$) for
+<br>&gt;&gt; &gt;&gt; model
+<br>&gt;&gt; &gt;&gt; validations, that is, the new versions are:
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; &nbsp;- worlddb v2.0.4
+<br>&gt;&gt; &gt;&gt; &nbsp;- sportdb v1.8.13
+<br>&gt;&gt; &gt;&gt; &nbsp;- tagutils v0.2.2
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; &nbsp; &nbsp;If you still get an exception for model =
+format regexes after the
+<br>&gt;&gt; &gt;&gt; update, it's now considered a bug and please report i=
+t. Thanks. Cheers.
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; --
+<br>&gt;&gt; &gt; You received this message because you are subscribed to t=
+he Google
+<br>&gt;&gt; &gt; Groups
+<br>&gt;&gt; &gt; "Open Sport(s) Database - football.db, formula1.db, ski.d=
+b, and Friends"
+<br>&gt;&gt; &gt; group.
+<br>&gt;&gt; &gt; To unsubscribe from this group and stop receiving emails =
+from it, send
+<br>&gt;&gt; &gt; an
+<br>&gt;&gt; &gt; email to <a>opensport+...@googlegroups.com</a><wbr>.
+<br>&gt;&gt; &gt; For more options, visit <a href=3D"https://groups.google.=
+com/d/optout" target=3D"_blank" onmousedown=3D"this.href=3D'https://groups.=
+google.com/d/optout';return true;" onclick=3D"this.href=3D'https://groups.g=
+oogle.com/d/optout';return true;">https://groups.google.com/d/<wbr>optout</=
+a>.
+<br>&gt;
+<br>&gt; --
+<br>&gt; You received this message because you are subscribed to the Google=
+ Groups
+<br>&gt; "Open Sport(s) Database - football.db, formula1.db, ski.db, and Fr=
+iends"
+<br>&gt; group.
+<br>&gt; To unsubscribe from this group and stop receiving emails from it, =
+send an
+<br>&gt; email to <a>opensport+...@googlegroups.com</a><wbr>.
+<br>&gt; For more options, visit <a href=3D"https://groups.google.com/d/opt=
+out" target=3D"_blank" onmousedown=3D"this.href=3D'https://groups.google.co=
+m/d/optout';return true;" onclick=3D"this.href=3D'https://groups.google.com=
+/d/optout';return true;">https://groups.google.com/d/<wbr>optout</a>.
+<br></blockquote></div></div></blockquote></div></div>
+------=_Part_540_20000638.1400707810172--
+
+------=_Part_539_32583348.1400707810172--
+

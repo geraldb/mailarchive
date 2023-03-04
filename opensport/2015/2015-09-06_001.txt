@@ -1,0 +1,62 @@
+From 6191405946689814528@xxx Sun Sep 06 14:17:11 +0000 2015
+X-GM-THRID: 6191405944569593856
+X-Received: by 10.182.241.72 with SMTP id wg8mr13334328obc.2.1441549031603;
+        Sun, 06 Sep 2015 07:17:11 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.122.35 with SMTP id lp3ls601436igb.0.canary; Sun, 06 Sep
+ 2015 07:17:11 -0700 (PDT)
+X-Received: by 10.50.36.99 with SMTP id p3mr13575633igj.3.1441549031189;
+        Sun, 06 Sep 2015 07:17:11 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x234.google.com (mail-ig0-x234.google.com. [2607:f8b0:4001:c05::234])
+        by gmr-mx.google.com with ESMTPS id o7si583334igp.1.2015.09.06.07.17.11
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 06 Sep 2015 07:17:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::234 as permitted sender) client-ip=2607:f8b0:4001:c05::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x234.google.com with SMTP id rk20so39787018igc.1
+        for <opensport@googlegroups.com>; Sun, 06 Sep 2015 07:17:11 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=8RMqKPLKZJxyXB3H9KS6tlbJDfFahTkJn3RhKy5kFJg=;
+        b=g8VxGKD2JnVdwbnpZpKoZ7/MIrHosuAcoAoueyOpf9LUpMZzrUDnZml1t8U5N7Y/a9
+         NpiFVz6yBPK7Rajs3xIAH1oVlJsGLX2CL3eV/eoTJtrjMAbUwMadDTHw89Q15iyyHS2e
+         nTq5aDu1TqxkPHoRiKkXjzj4HoJn4fZcytx+9qhXkVaisIZ2pNWWdpHaRyqs1RYkuPMo
+         3frV8CD1bLI1ZFxYG89e8QYL6h8xlCcqxdtWiXASSV0vNJgp6OwDW8+EdfDMvaATkcRN
+         nxHZMHW6C1vPJah7E+9vVacRadLCFm34Y2CZLYDtgJn5t+1qpRp2tTkAKmZRMp4bXKFL
+         HQ7g==
+MIME-Version: 1.0
+X-Received: by 10.50.66.148 with SMTP id f20mr22672473igt.81.1441549031086;
+ Sun, 06 Sep 2015 07:17:11 -0700 (PDT)
+Received: by 10.107.142.205 with HTTP; Sun, 6 Sep 2015 07:17:11 -0700 (PDT)
+Date: Sun, 6 Sep 2015 16:17:11 +0200
+Message-ID: <CAAxEZd8=cT_U3+WPDDjoaaNKm8M1my0xu-k8+AfR6G_Z2na2=A@mail.gmail.com>
+Subject: football.db - European (UEFA) Champions League 2015/16 Fixtures - try
+ $ sportdb new cl2015-16
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   The plain text football fixtures (datasets) for leagues, teams,
+match schedules, and more that you can read with the sportdb gem into
+your SQL database of choice now includes the European (UEFA) Champions
+League 2015/16 [1].
+
+   Try using the cl2015_16.rb [2] Datafile to (download and) build
+yourself a copy e.g.:
+
+     $ sportdb new cl2015-16
+
+ All data, code and starter kits public domain. Enjoy. Cheers.
+
+[1] github.com/openfootball/europe-champions-league/blob/master/2015-16/cl.txt
+[2] github.com/openfootball/datafile/blob/master/cl2015-16.rb
+

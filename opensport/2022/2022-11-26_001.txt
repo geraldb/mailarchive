@@ -1,0 +1,96 @@
+From 7170369707621482496@xxx Sat Nov 26 16:56:35 +0000 2022
+X-GM-THRID: 7170367317888466944
+X-Received: by 2002:a17:902:bc86:b0:189:1916:9bd4 with SMTP id bb6-20020a170902bc8600b0018919169bd4mr32779222plb.49.1669481794680;
+        Sat, 26 Nov 2022 08:56:34 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a17:902:8641:b0:178:35a3:84d9 with SMTP id
+ y1-20020a170902864100b0017835a384d9ls5364146plt.10.-pod-prod-gmail; Sat, 26
+ Nov 2022 08:56:33 -0800 (PST)
+X-Google-Smtp-Source: AA0mqf5qgFiOeucKq11gTnvwatKWNEQQefzI80WzyOxl94VSbFv/5Zh0DDX/9m7d7AIWGljQR/Oz
+X-Received: by 2002:a17:902:e949:b0:189:7a15:1336 with SMTP id b9-20020a170902e94900b001897a151336mr2301291pll.122.1669481793303;
+        Sat, 26 Nov 2022 08:56:33 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1669481793; cv=none;
+        d=google.com; s=arc-20160816;
+        b=POZJECjQSgIdLu0aJ+ctYb9S1mDYe2g1xGWgTkY8rdNg8gmIu+e3199nlnNew14la+
+         3cLzM2ulAJ/ZWYWUPoQZqa37IsgbvNp2NxyOVaYSr8Yz7Vg8nF22eE+OYuLjOQrRFZRp
+         NAGLSJoynbnZpt97Flpk6V9JotHLn1Ht6xUYo/O1Ht3iMTTKqJD/sArXCcj5ABxjqHTp
+         lvBXNESy0as7zzTHbRGkRVHCCfkubqZs3EsTagzyr/3qezqB5k8ryU2rKpFpf1tzlmXx
+         B9E5LfB19mHFO8n82BveRhPt3blmw8amZ4hg3efnpf3ukZm38IZa0cJhEocZhs1wo2b/
+         fmBg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=g54kG68U2a6lpGvsvSSRG8MoR0S0ViePy8gFX3L1hLU=;
+        b=LvOLbFl651zsgcktosG5i9F8lLafPKu4irJ/1WNO6b4Fm0gQzz/TeTwhSQmhuceZ2k
+         cL48JbFKFLTSEg/MDll2aW8eSpY4Ap5O6HsNEFAl3yJ0bl+ZzgP+HoVRDOESTYPhh9O0
+         VD1eBzMIBF3VrwIYBkIiaGtZLTrhOuEKMm+tSccWBA3WHdjEBz7vsv1liVPXYcx5JuNB
+         MVSOyI1kEER3upZpfRLRxcLaI4rnCabRdEtma20Skz6zeGLIaxRzLSZPu87KAytkscMo
+         wnVH3QycGMtk39jyoPeclTbGe9lMR1BY2POdqUy8ygk9zLGYvuA4FihRcBL9z7ZaDSCr
+         LmcQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=OA+ZpbbS;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4864:20::102f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-pj1-x102f.google.com (mail-pj1-x102f.google.com. [2607:f8b0:4864:20::102f])
+        by gmr-mx.google.com with ESMTPS id o11-20020a17090a5b0b00b002188bd6aacbsi461687pji.3.2022.11.26.08.56.33
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 26 Nov 2022 08:56:33 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4864:20::102f as permitted sender) client-ip=2607:f8b0:4864:20::102f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=OA+ZpbbS;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4864:20::102f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-pj1-x102f.google.com with SMTP id u15-20020a17090a3fcf00b002191825cf02so2356038pjm.2
+        for <opensport@googlegroups.com>; Sat, 26 Nov 2022 08:56:33 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=g54kG68U2a6lpGvsvSSRG8MoR0S0ViePy8gFX3L1hLU=;
+        b=OA+ZpbbSxBERRXs7+XeG0/8JNKyHfObeegQJ8pirgQ/uwrsm5SUcsOPuVZTt7hXucg
+         7L+ZIuZegk6nr3qikyQbSJ4OZs9aa3gmkxDTyPjejsw5escyzB9ZBXA5LP2j5tHv1fAI
+         pPpFf3+IBFQcKrY2MlF1+uMtC+uezZkedkUnk3vWeyEzrmuDSpXpwdTVgFPhVr8CMwFa
+         zLffaBfvUNDmdALYl+PEXdxnWkzd3zwokwo003gDD8LM4Qf3WBWyBYHnI8wABflQ3/4d
+         BIW3pQTZJ8R12Fso5TcjCPBDOxWUFRTpHTumJHJlR+X2S9XRcmVBjw8IdCte0Aczmdmm
+         8r0Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=g54kG68U2a6lpGvsvSSRG8MoR0S0ViePy8gFX3L1hLU=;
+        b=jULWrLKAr6wvQOcN75ug+YjCrxgAQyjMpuM2KvU6ciXhdFniaXm9s6wx+d1Xa7xsVs
+         VcpEydT0KHpTPpWi1ihtUGPuH0fVQkarJw1C6nEfdaxSPCL8hB46ihK4JepbWB3uKOU2
+         8efai+zfAZtbqwpNoqYA8UgL9fUvp8HxQS9VBvz9IhFUVbtOFI48Xzwesq7z0F16IXfa
+         +PjpwyZx1Gl8pWz2h5IGcTzRfjA5CNjQ73Mk7sgy83iW6tuoBcCXdFKsisLt6Osn0Q/9
+         +7tDI1PtfdzT4SkJqo/HjIatfbRnAYOP3Pu95wkHy2Q1dgKup3P4KGUGxnoOjql8N9n3
+         c4iw==
+X-Gm-Message-State: ANoB5pk5GI5ob4FZtvi9pHE/D4CvOhzfAbB2Wr3r9TKyab+e6PEg1pxU
+	5YyNEaOvpYIDpKOV/ZSjxYBDW8vHqUTOabUk5rIMcUv43N8=
+X-Received: by 2002:a17:90a:6308:b0:218:ce1c:4c76 with SMTP id
+ e8-20020a17090a630800b00218ce1c4c76mr23857434pjj.97.1669481792661; Sat, 26
+ Nov 2022 08:56:32 -0800 (PST)
+MIME-Version: 1.0
+References: <796cdf08-f45f-49ce-8456-e400653f039bn@googlegroups.com>
+In-Reply-To: <796cdf08-f45f-49ce-8456-e400653f039bn@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 26 Nov 2022 17:56:21 +0100
+Message-ID: <CAAxEZd_CHofvD=nMJSkQBcx3temxeZmOAik5fa1kOSUgmPjT3A@mail.gmail.com>
+Subject: Re: [opensport] Permission to use Apis in Professional Project
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   all (open) football.db datasets  and sportdb scripts / gems  are
+dedicated to the public domain (no copyright, no rights reserved, no
+(by-)attribution required, etc.) and alternatively "licensed" under a
+creative-commons zero (cco) dedication / license.
+
+   If a github repo you plan to (re)use is missing the
+creative-commons zero (cco) LICENSE.md  file please tell / post
+ the web link / url and I add / upload the LICENSE.md. file.
+
+   Cheers. Prost.
+

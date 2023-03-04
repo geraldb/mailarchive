@@ -1,0 +1,132 @@
+From 6612228087826350080@xxx Sun Oct 14 15:02:01 +0000 2018
+X-GM-THRID: 6610379816603484160
+X-Received: by 2002:a9d:3cc2:: with SMTP id t2mr11232301otf.22.1539529321667;
+        Sun, 14 Oct 2018 08:02:01 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:aca:3e8a:: with SMTP id l132-v6ls539969oia.7.gmail; Sun, 14
+ Oct 2018 08:02:01 -0700 (PDT)
+X-Received: by 2002:aca:b208:: with SMTP id b8-v6mr12132062oif.15.1539529321418;
+        Sun, 14 Oct 2018 08:02:01 -0700 (PDT)
+Received: by 2002:aca:3f0b:0:0:0:0:0 with SMTP id m11-v6msoia;
+        Sun, 14 Oct 2018 01:48:26 -0700 (PDT)
+X-Google-Smtp-Source: ACcGV61SQrL1EsKDM1dUfBmqRH0UkEt4QQnzC2pg5TIrJTrN1612oHVToZT3+c8z3KfjFaAlD5Djux7lYA==
+X-Received: by 2002:a9d:3f09:: with SMTP id m9mr210081otc.5.1539506905780;
+        Sun, 14 Oct 2018 01:48:25 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Sun, 14 Oct 2018 01:48:25 -0700 (PDT)
+From: Peter Boling <peter.boling@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <695a90e7-e72c-4ee7-a5cd-3a9413ffd900@googlegroups.com>
+In-Reply-To: <CAAxEZd_tcDtt7Q5twCjm2aEo1=yDmB8YJu9+gjcUt6__ARiM6g@mail.gmail.com>
+References: <CAAxEZd_tcDtt7Q5twCjm2aEo1=yDmB8YJu9+gjcUt6__ARiM6g@mail.gmail.com>
+Subject: Re: csvreader v1.0 - read tabular comma-separated values (csv) the
+ right way (incl. hash readers, converters, enumerables, dialects, and more)
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1158_733254093.1539506905565"
+X-Google-Token: ENmFjN4FG8p-4FZNm4M0
+X-Google-IP: 2601:644:4400:1034:e1a7:ec8:4484:24e9
+
+------=_Part_1158_733254093.1539506905565
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1159_1291300541.1539506905565"
+
+------=_Part_1159_1291300541.1539506905565
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I really like the documentation on the project, and after reading through 
+it I wandered over to the csv11 organization, and looked through some of 
+the other projects.  I found a library called csv11 (which says it is a 
+gem, but has no gemspec?).  The short description of the project makes it 
+sounds very similar to csvreader.  It looks like you developed both of 
+them, and around the same time.  Can you elaborate on the relationship?  Is 
+csv11 an early aborted attempt?  Does one underpin the other?
+
+On Tuesday, October 9, 2018 at 8:29:47 AM UTC-7, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    I've uploaded [version 1.0 of the new comma-separated values 
+> csvreader library / gem [1] that lets you read tabular data in the 
+> comma-separated values (csv) format  the right way :-), that is, the 
+> basic methods such as `Csv.read `or `CsvHash.read` use best practices 
+> out-of-the-box with zero-configuration. 
+>
+>   Under the hood the new library includes purpose-built "backend" 
+> parsers (e.g. `ParserStd`, `ParserStrict`, `ParserTab`, etc.) so you 
+> can handle all the popular comma-separated values (csv) formats / dialects 
+> such 
+> as MySQL (use `Csv.mysql.read`) or PostgreSQL (use 
+> `Csv.postgres.read`) exports and more using unix-style escapes and 
+> `\N` or unquoted empty values for null/nil and so on. 
+>
+>    Data is the new gold :-) Happy data / gold mining with the new 
+> csvreader library / gem (in ruby). Cheers. Prost. 
+>
+> PS: [What's wrong (broken) in the standard csv library? See the let's 
+> count the ways article series [2]. 
+>
+> [1]: https://github.com/csv11/csvreader 
+> [2]: https://github.com/csv11/docs 
+>
+
+------=_Part_1159_1291300541.1539506905565
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I really like the documentation on the project, and after =
+reading through it I wandered over to the csv11 organization, and looked th=
+rough some of the other projects.=C2=A0 I found a library called csv11 (whi=
+ch says it is a gem, but has no gemspec?).=C2=A0 The short description of t=
+he project makes it sounds very similar to csvreader.=C2=A0 It looks like y=
+ou developed both of them, and around the same time.=C2=A0 Can you elaborat=
+e on the relationship?=C2=A0 Is csv11 an early aborted attempt?=C2=A0 Does =
+one underpin the other?<br><br>On Tuesday, October 9, 2018 at 8:29:47 AM UT=
+C-7, Gerald Bauer wrote:<blockquote class=3D"gmail_quote" style=3D"margin: =
+0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 =C2=A0I&#39;ve uploaded [version 1.0 of the new comma-separated =
+values
+<br>csvreader library / gem [1] that lets you read tabular data in the
+<br>comma-separated values (csv) format =C2=A0the right way :-), that is, t=
+he
+<br>basic methods such as `Csv.read `or `CsvHash.read` use best practices
+<br>out-of-the-box with zero-configuration.
+<br>
+<br>=C2=A0 Under the hood the new library includes purpose-built &quot;back=
+end&quot;
+<br>parsers (e.g. `ParserStd`, `ParserStrict`, `ParserTab`, etc.) so you
+<br>can handle all the popular comma-separated values (csv) formats / diale=
+cts such
+<br>as MySQL (use `Csv.mysql.read`) or PostgreSQL (use
+<br>`Csv.postgres.read`) exports and more using unix-style escapes and
+<br>`\N` or unquoted empty values for null/nil and so on.
+<br>
+<br>=C2=A0 =C2=A0Data is the new gold :-) Happy data / gold mining with the=
+ new
+<br>csvreader library / gem (in ruby). Cheers. Prost.
+<br>
+<br>PS: [What&#39;s wrong (broken) in the standard csv library? See the let=
+&#39;s
+<br>count the ways article series [2].
+<br>
+<br>[1]: <a href=3D"https://github.com/csv11/csvreader" target=3D"_blank" r=
+el=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.google.com/url?=
+q\x3dhttps%3A%2F%2Fgithub.com%2Fcsv11%2Fcsvreader\x26sa\x3dD\x26sntz\x3d1\x=
+26usg\x3dAFQjCNGC6bv_GEkLstKZMvnSuaXLMIjvrw&#39;;return true;" onclick=3D"t=
+his.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2F=
+csv11%2Fcsvreader\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGC6bv_GEkLstKZMvn=
+SuaXLMIjvrw&#39;;return true;">https://github.com/csv11/<wbr>csvreader</a>
+<br>[2]: <a href=3D"https://github.com/csv11/docs" target=3D"_blank" rel=3D=
+"nofollow" onmousedown=3D"this.href=3D&#39;https://www.google.com/url?q\x3d=
+https%3A%2F%2Fgithub.com%2Fcsv11%2Fdocs\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dA=
+FQjCNGki7WIKCaReNsmWdxxU11I6Z_ixg&#39;;return true;" onclick=3D"this.href=
+=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fcsv11%2F=
+docs\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGki7WIKCaReNsmWdxxU11I6Z_ixg&#=
+39;;return true;">https://github.com/csv11/docs</a>
+<br></blockquote></div>
+------=_Part_1159_1291300541.1539506905565--
+
+------=_Part_1158_733254093.1539506905565--
+

@@ -1,0 +1,65 @@
+From 395908743168@xxx Tue Jun 16 00:17:14 +0000 2015
+X-GM-THRID: 396413108224
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,f7f7cd62f3feea42,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.106.5 with SMTP id gq5mr3844241wib.2.1394818962496;
+        Fri, 14 Mar 2014 10:42:42 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.37.97 with SMTP id x1ls125360laj.34.gmail; Fri, 14 Mar
+ 2014 10:42:42 -0700 (PDT)
+X-Received: by 10.152.3.38 with SMTP id 6mr1616189laz.0.1394818962221;
+        Fri, 14 Mar 2014 10:42:42 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x232.google.com (mail-wi0-x232.google.com [2a00:1450:400c:c05::232])
+        by gmr-mx.google.com with ESMTPS id c20si413962wib.3.2014.03.14.10.42.42
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 14 Mar 2014 10:42:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::232 as permitted sender) client-ip=2a00:1450:400c:c05::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f178.google.com with SMTP id n15so2942649wiw.5
+        for <opensport@googlegroups.com>; Fri, 14 Mar 2014 10:42:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=Cx0q4FfbiXk/iC2hh/qJu03zc9s/S1PL6DC4hO7MGJE=;
+        b=hFnetY+I7cgPeLhXGhXuKRHO3pICiBiUa/t8qvmmMsX/svzsXJaN/a6fhgWBPdcPGf
+         BcuNs5BfXQCYZ9ishp0usLizRXSz1fg29l5LyaEnymjpLxJ1u0fcbjPRZaxEg3FVJvkV
+         OLdpQdwKdzruyTHz8HeuHCO5Z3bc9Qnp7X4hDw85IUIj0QgGxd5CVCCRJpDPXze3knaV
+         vaNRn9t5V9PhFdwNunL1tb7xh1AsqgU1Zavagtqvzwywg5oBMwIEljbLiYWO1DguBUi+
+         cc3QuOPCXKXSF+R56NOP8quXWiYUOQb/4HRaMgJc3TZXrMQCqjwXzfIZmyQ499YP0qK8
+         5RMg==
+MIME-Version: 1.0
+X-Received: by 10.180.21.225 with SMTP id y1mr7288500wie.24.1394818962094;
+ Fri, 14 Mar 2014 10:42:42 -0700 (PDT)
+Received: by 10.216.208.136 with HTTP; Fri, 14 Mar 2014 10:42:42 -0700 (PDT)
+Date: Fri, 14 Mar 2014 18:42:42 +0100
+Message-ID: <CAAxEZd8V__YduxpcJOwsesxmrgXw+59Vx0d99pod5-6=Q+6EPQ@mail.gmail.com>
+Subject: worldcup2014.sql - SQL data dumps (scripts) for the World Cup 2014 in Brazil
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  As an alternative to the plain text data sets offered by football.db
+you might try a simple SQL data dump.
+
+  Steven W=FCthrich (aka bacbos) has posted a SQL data dump (script) in
+a Gist [1] or
+  try the SQL data dump by chinovieza [2].
+
+   Know any other SQL scripts for the World Cup 2014? Let us know.
+  Any ideas or comments on how on alternative methods? Let us know too. Che=
+ers.
+
+[1] gist.github.com/bacbos/8225634
+[2] github.com/chinovieza/worldcup2014/blob/master/worldcup2014.sql
+

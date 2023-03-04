@@ -1,0 +1,254 @@
+From 1569096466432@xxx Tue Jun 16 00:16:54 +0000 2015
+X-GM-THRID: 1559090954240
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,50a5e1679451c9ea
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.28.5 with SMTP id x5mr7339327obg.44.1404827413161;
+        Tue, 08 Jul 2014 06:50:13 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.73.195 with SMTP id n3ls329192igv.40.canary; Tue, 08 Jul
+ 2014 06:50:12 -0700 (PDT)
+X-Received: by 10.50.43.194 with SMTP id y2mr81068igl.3.1404827412597;
+        Tue, 08 Jul 2014 06:50:12 -0700 (PDT)
+X-Google-Doc-Id: 11b9796991d0a7d9
+X-Google-Web-Client: true
+Date: Tue, 8 Jul 2014 06:50:11 -0700 (PDT)
+From: Carl-Erik Svensson <csvenss2@gmail.com>
+To: opensport@googlegroups.com
+Cc: csvenss2@gmail.com
+Message-Id: <3957f8bd-4d3e-4d91-8907-33badf7196c8@googlegroups.com>
+In-Reply-To: <d31c1b86-882b-4773-bac4-02dfafbed93c@googlegroups.com>
+References: <CAAxEZd936g=yj7vt10ETLeGZOti1GdKDCFZqAYE0dXaVenFL8Q@mail.gmail.com>
+ <d31c1b86-882b-4773-bac4-02dfafbed93c@googlegroups.com>
+Subject: Re: MLS Data - Suggestion - Adding Week 1, Week 2, etc. for rounds
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_916_2566941.1404827411655"
+X-Google-Token: EJPu750F4JtyhkAURLc0
+X-Google-IP: 24.130.213.187
+
+------=_Part_916_2566941.1404827411655
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_917_25134913.1404827411655"
+
+------=_Part_917_25134913.1404827411655
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Oops, I meant to point to my forked 
+repo: https://github.com/cecomp64/major-league-soccer
+
+On Tuesday, July 8, 2014 6:48:44 AM UTC-7, Carl-Erik Svensson wrote:
+>
+> Thanks for the pointers!  I will add the weeks to the generated data, as 
+> you suggested soon.  In the mean time, I've been working on rosters at 
+> https://github.com/openfootball/major-league-soccer ... check out the 
+> squads folder in each year.
+>
+> I made a small patch to my local copy of sportdb/reader.rb to allow 
+> sportdb to recognize the files I generated:
+>
+> 101c108
+> <     elsif name =~ /\/squads\/([a-z]{2,3})-[^\/]+$/
+> ---
+> >     elsif name =~ /\/squads\/([a-z]+)-[^\/]+$/
+>
+> I'm sure it needs the proper testing, but it allows the team key to be 
+> more than 3 characters.  It seems to work OK for the data I generated.
+>
+> Best,
+> Carl
+>
+> On Saturday, July 5, 2014 5:37:50 AM UTC-7, Gerald Bauer wrote:
+>>
+>> Hello again, 
+>>
+>>    Just browsed your MLS data. Again great stuff. For example, 
+>>
+>> Sat Mar/8 07:25 Seattle Sounders           1-0 Sporting Kansas City 
+>> Sat Mar/8 11:00 Washington D.C. United           0-3 Columbus Crew 
+>> Sat Mar/8 11:30 Vancouver Whitecaps FC           4-1 New York Red Bulls 
+>> Sat Mar/8 12:30 Houston Dynamo           4-0 New England Revolution 
+>> Sat Mar/8 12:30 FC Dallas           3-2 Montreal Impact 
+>> Sat Mar/8 14:35 Los Angeles Galaxy           0-1 Real Salt Lake 
+>> Sat Mar/8 14:35 Portland Timbers           1-1 Philadelphia Union 
+>> Sun Mar/9 07:00 CD Chivas USA           3-2 Chicago Fire 
+>> Sat Mar/15 08:00 New York Red Bulls           1-1 Colorado Rapids 
+>> Sat Mar/15 08:20 Philadelphia Union           1-0 New England Revolution 
+>> Sat Mar/15 08:30 Seattle Sounders           1-2 Toronto FC 
+>> Sat Mar/15 12:30 Sporting Kansas City           1-1 FC Dallas 
+>> Sat Mar/15 12:30 Houston Dynamo           1-0 Montreal Impact 
+>> Sat Mar/15 14:30 San Jose Earthquakes           3-3 Real Salt Lake 
+>> Sun Mar/16 07:00 Portland Timbers           1-1 Chicago Fire 
+>> Sun Mar/16 11:00 CD Chivas USA           1-1 Vancouver Whitecaps FC 
+>>
+>>   is almost perfect. It's really only missing the round (e.g. Week 1, 
+>> Week 2, etc.) e.g. 
+>>
+>>
+>> Week 1 
+>>
+>> Sat Mar/8 07:25 Seattle Sounders           1-0 Sporting Kansas City 
+>> Sat Mar/8 11:00 Washington D.C. United           0-3 Columbus Crew 
+>> Sat Mar/8 11:30 Vancouver Whitecaps FC           4-1 New York Red Bulls 
+>> Sat Mar/8 12:30 Houston Dynamo           4-0 New England Revolution 
+>> Sat Mar/8 12:30 FC Dallas           3-2 Montreal Impact 
+>> Sat Mar/8 14:35 Los Angeles Galaxy           0-1 Real Salt Lake 
+>> Sat Mar/8 14:35 Portland Timbers           1-1 Philadelphia Union 
+>> Sun Mar/9 07:00 CD Chivas USA           3-2 Chicago Fire 
+>>
+>> Week 2 
+>>
+>> Sat Mar/15 08:00 New York Red Bulls           1-1 Colorado Rapids 
+>> Sat Mar/15 08:20 Philadelphia Union           1-0 New England Revolution 
+>> Sat Mar/15 08:30 Seattle Sounders           1-2 Toronto FC 
+>> Sat Mar/15 12:30 Sporting Kansas City           1-1 FC Dallas 
+>> Sat Mar/15 12:30 Houston Dynamo           1-0 Montreal Impact 
+>> Sat Mar/15 14:30 San Jose Earthquakes           3-3 Real Salt Lake 
+>> Sun Mar/16 07:00 Portland Timbers           1-1 Chicago Fire 
+>> Sun Mar/16 11:00 CD Chivas USA           1-1 Vancouver Whitecaps FC 
+>>
+>>   and so on.  I suggest using "regular season" for now just as a 
+>> comment e.g. change 
+>>
+>> Regular Season 
+>>
+>> to 
+>>
+>> ## -- Regular Season (?? Weeks) 
+>>
+>> or 
+>> #  Regular Season 
+>>
+>>   Keep it up. Cheers. 
+>>
+>
+------=_Part_917_25134913.1404827411655
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Oops, I meant to point to my forked repo:&nbsp;https://github.com/cecomp64/=
+major-league-soccer<br><br>On Tuesday, July 8, 2014 6:48:44 AM UTC-7, Carl-=
+Erik Svensson wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;ma=
+rgin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=
+=3D"ltr"><div>Thanks for the pointers! &nbsp;I will add the weeks to the ge=
+nerated data, as you suggested soon. &nbsp;In the mean time, I've been work=
+ing on rosters at <a href=3D"https://github.com/openfootball/major-league-s=
+occer" target=3D"_blank" onmousedown=3D"this.href=3D'https://www.google.com=
+/url?q\75https%3A%2F%2Fgithub.com%2Fopenfootball%2Fmajor-league-soccer\46sa=
+\75D\46sntz\0751\46usg\75AFQjCNEEto4THazUC7aYw-ylNy3yxK24YA';return true;" =
+onclick=3D"this.href=3D'https://www.google.com/url?q\75https%3A%2F%2Fgithub=
+.com%2Fopenfootball%2Fmajor-league-soccer\46sa\75D\46sntz\0751\46usg\75AFQj=
+CNEEto4THazUC7aYw-ylNy3yxK24YA';return true;">https://github.com/<wbr>openf=
+ootball/major-league-<wbr>soccer</a> ... check out the squads folder in eac=
+h year.</div><div><br></div><div>I made a small patch to my local copy of s=
+portdb/reader.rb to allow sportdb to recognize the files I generated:</div>=
+<div><br></div><div>101c108</div><div>&lt; &nbsp; &nbsp; elsif name =3D~ /\=
+/squads\/([a-z]{2,3})-[^\/]+<wbr>$/</div><div>---</div><div>&gt; &nbsp; &nb=
+sp; elsif name =3D~ /\/squads\/([a-z]+)-[^\/]+$/</div><div><br></div><div>I=
+'m sure it needs the proper testing, but it allows the team key to be more =
+than 3 characters. &nbsp;It seems to work OK for the data I generated.</div=
+><div><br></div><div>Best,</div><div>Carl</div><div><br>On Saturday, July 5=
+, 2014 5:37:50 AM UTC-7, Gerald Bauer wrote:<blockquote class=3D"gmail_quot=
+e" style=3D"margin:0;margin-left:0.8ex;border-left:1px #ccc solid;padding-l=
+eft:1ex">Hello again,
+<br>
+<br>&nbsp; &nbsp;Just browsed your MLS data. Again great stuff. For example=
+,
+<br>
+<br>Sat Mar/8 07:25 Seattle Sounders &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-0=
+ Sporting Kansas City
+<br>Sat Mar/8 11:00 Washington D.C. United &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; 0-3 Columbus Crew
+<br>Sat Mar/8 11:30 Vancouver Whitecaps FC &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; 4-1 New York Red Bulls
+<br>Sat Mar/8 12:30 Houston Dynamo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4-0 N=
+ew England Revolution
+<br>Sat Mar/8 12:30 FC Dallas &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3-2 Montre=
+al Impact
+<br>Sat Mar/8 14:35 Los Angeles Galaxy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0=
+-1 Real Salt Lake
+<br>Sat Mar/8 14:35 Portland Timbers &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-1=
+ Philadelphia Union
+<br>Sun Mar/9 07:00 CD Chivas USA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3-2 Ch=
+icago Fire
+<br>Sat Mar/15 08:00 New York Red Bulls &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+1-1 Colorado Rapids
+<br>Sat Mar/15 08:20 Philadelphia Union &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+1-0 New England Revolution
+<br>Sat Mar/15 08:30 Seattle Sounders &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-=
+2 Toronto FC
+<br>Sat Mar/15 12:30 Sporting Kansas City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; 1-1 FC Dallas
+<br>Sat Mar/15 12:30 Houston Dynamo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-0 =
+Montreal Impact
+<br>Sat Mar/15 14:30 San Jose Earthquakes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; 3-3 Real Salt Lake
+<br>Sun Mar/16 07:00 Portland Timbers &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-=
+1 Chicago Fire
+<br>Sun Mar/16 11:00 CD Chivas USA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-1 V=
+ancouver Whitecaps FC
+<br>
+<br>&nbsp; is almost perfect. It's really only missing the round (e.g. Week=
+ 1,
+<br>Week 2, etc.) e.g.
+<br>
+<br>
+<br>Week 1
+<br>
+<br>Sat Mar/8 07:25 Seattle Sounders &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-0=
+ Sporting Kansas City
+<br>Sat Mar/8 11:00 Washington D.C. United &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; 0-3 Columbus Crew
+<br>Sat Mar/8 11:30 Vancouver Whitecaps FC &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; 4-1 New York Red Bulls
+<br>Sat Mar/8 12:30 Houston Dynamo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4-0 N=
+ew England Revolution
+<br>Sat Mar/8 12:30 FC Dallas &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3-2 Montre=
+al Impact
+<br>Sat Mar/8 14:35 Los Angeles Galaxy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0=
+-1 Real Salt Lake
+<br>Sat Mar/8 14:35 Portland Timbers &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-1=
+ Philadelphia Union
+<br>Sun Mar/9 07:00 CD Chivas USA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3-2 Ch=
+icago Fire
+<br>
+<br>Week 2
+<br>
+<br>Sat Mar/15 08:00 New York Red Bulls &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+1-1 Colorado Rapids
+<br>Sat Mar/15 08:20 Philadelphia Union &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+1-0 New England Revolution
+<br>Sat Mar/15 08:30 Seattle Sounders &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-=
+2 Toronto FC
+<br>Sat Mar/15 12:30 Sporting Kansas City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; 1-1 FC Dallas
+<br>Sat Mar/15 12:30 Houston Dynamo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-0 =
+Montreal Impact
+<br>Sat Mar/15 14:30 San Jose Earthquakes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; 3-3 Real Salt Lake
+<br>Sun Mar/16 07:00 Portland Timbers &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-=
+1 Chicago Fire
+<br>Sun Mar/16 11:00 CD Chivas USA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1-1 V=
+ancouver Whitecaps FC
+<br>
+<br>&nbsp; and so on. &nbsp;I suggest using "regular season" for now just a=
+s a
+<br>comment e.g. change
+<br>
+<br>Regular Season
+<br>
+<br>to
+<br>
+<br>## -- Regular Season (?? Weeks)
+<br>
+<br>or
+<br># &nbsp;Regular Season
+<br>
+<br>&nbsp; Keep it up. Cheers.
+<br></blockquote></div></div></blockquote>
+------=_Part_917_25134913.1404827411655--
+
+------=_Part_916_2566941.1404827411655--
+

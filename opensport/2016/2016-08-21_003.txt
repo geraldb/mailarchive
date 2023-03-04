@@ -1,0 +1,95 @@
+From 6321332485609226240@xxx Sun Aug 21 17:18:31 +0000 2016
+X-GM-THRID: 6319522571312168960
+X-Received: by 10.129.76.211 with SMTP id z202mr13840146ywa.31.1471799911553;
+        Sun, 21 Aug 2016 10:18:31 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.29.207 with SMTP id w15ls5378589otw.10.gmail; Sun, 21 Aug
+ 2016 10:18:31 -0700 (PDT)
+X-Received: by 10.157.16.43 with SMTP id h40mr12909984ote.25.1471799911235;
+        Sun, 21 Aug 2016 10:18:31 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x229.google.com (mail-it0-x229.google.com. [2607:f8b0:4001:c0b::229])
+        by gmr-mx.google.com with ESMTPS id m19si701372itb.0.2016.08.21.10.18.31
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 21 Aug 2016 10:18:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::229 as permitted sender) client-ip=2607:f8b0:4001:c0b::229;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x229.google.com with SMTP id n128so64455806ith.1
+        for <opensport@googlegroups.com>; Sun, 21 Aug 2016 10:18:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=d4zRqrJNueOz/tmLJzaqKA71krQWs12hXotdvwR01z8=;
+        b=fOjyvRQTG8I0AXZAi4LdirxwywAGOkCJUprbTcZIQ+I/7Vg25kskeJFtmBqcj7GwiZ
+         JnAnK72r14qzyX5llcmlIkIqGu56QnpdoMqQrFWLOakelHQOsDEn4lrxOgWeZzSkCBXk
+         QbJo0HwcY8kLdnTbkZRHuLmzyovknwqeKHNpXnHq9nF2UZy8N1V/1K/W+FS+w+FdkVi0
+         lPsXK1+2kQxbZUMyAEwqtURWFIPKSeKzuLS1VckCBi5kDC12dHM0/t70bqsKouype+tU
+         4veY/olWcV4kq4gr4cAXGj43TSviIrWmt6QBfa2Ank/dPPxjN2BeCCFk4ke5Qk3ld8yl
+         mjRg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=d4zRqrJNueOz/tmLJzaqKA71krQWs12hXotdvwR01z8=;
+        b=jZXQxTmB3yAzJ6j5dNXxtEyzHW2NMAdkc969gSYMRoGhCRLJwEe+0zEfN3jllEnobe
+         vZWO8AEEqr6MsRuEvr5l/AH6xS0o4LLRjuUp8rey7ziRW4ufqa9LtR3utjnuJy/kslUv
+         1iRTwlUuoDWKDfrKi12bCuO15Is1u6BWH2ugxHHfrZgjxddkUvd63pyaRd7W4k0CtrTp
+         avVUAdYSqb8ub7uYIStfqgYrYqra43iCML9vDuO/unZXODIah1vpEWMy6wukPEi+A/lw
+         D3dCOZdC1Fb7yCvhpZAP6f/RZqQ8N/zbCqTF7yTR5L8nJdsiqliS/PtBy+Gzn4oglht8
+         BPUA==
+X-Gm-Message-State: AEkoouu8q7bh2fud6tKzlJXBnwNDT/iXSVktfYiBiy/30ExBD4wWBwZJCuTmpDQbvlqHlw7VaNUGO/+fvvV/Hg==
+X-Received: by 10.36.184.133 with SMTP id m127mr16872414ite.90.1471799910837;
+ Sun, 21 Aug 2016 10:18:30 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Sun, 21 Aug 2016 10:18:30 -0700 (PDT)
+In-Reply-To: <CAAxEZd_VRPdJCTqwRo4OPqEvP6yB=anVm8CHuvLWYgVhR282KA@mail.gmail.com>
+References: <CAAxEZd_VRPdJCTqwRo4OPqEvP6yB=anVm8CHuvLWYgVhR282KA@mail.gmail.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 21 Aug 2016 19:18:30 +0200
+Message-ID: <CAAxEZd80sQUU0FN1fL6qbaBsLr+c_OsA6AHMVBow=Fj442LS=Q@mail.gmail.com>
+Subject: Re: English Premier League (EPL) 2016/17 Season - Public Domain Open
+ Datasets in Plain Text (n SQL, JSON, etc.)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  FYI: I've added the Matchday 2 for the English Premier League. The
+dataset [1] reads:
+
+Matchday 2
+
+[Fri Aug/19]
+  Manchester United     2-0 (1-0) Southampton FC   @ Old Trafford, Manchester
+    [Ibrahimovic 36', 52' (Pen.)]
+[Sat Aug/20]
+  Stoke City            1-4 (0-2)  Manchester City  @ Britannia
+Stadium, Stoke-on-Trent
+    [Bojan 49' (Pen.); Aguero 27' (Pen.), 36'  Nolito 86', 90+5']
+  Burnley FC            2-0  (2-0) Liverpool FC    @ Turf Moor, Burnley
+    [Vokes 2'  A. Gray 37']
+  Swansea City          0-2 (0-0)  Hull City    @ Liberty Stadium, Swansea
+    [-; Maloney 79' Hernandez 90+2']
+  Tottenham Hotspur     1-0 (0-0)  Crystal Palace   @ White Hart Lane, London
+    [Wanyama 82']
+  Watford FC            1-2 (0-0)  Chelsea FC   @ Vicarage Road, Watford
+    [Capoue 55'; Batshuayi 80' Diego Costa 87']
+  West Bromwich Albion  1-2 (1-1)  Everton FC   @ The Hawthorns, West Bromwich
+    [McAuley 9'; Mirallas 45+2' Barry 60']
+  Leicester City        0-0  Arsenal FC        @ King Power Stadium, Leicester
+    []
+[Sun Aug/21]
+  Sunderland AFC        1-2 (0-2)  Middlesbrough FC   @ Stadium of
+Light, Sunderland
+    [van Aanholt 71'; Stuani 13', 45']
+  West Ham United       1-0 (0-0) AFC Bournemouth     @ London Stadium, London
+    [Antonio 85']
+
+
+Cheers.
+
+[1] https://github.com/openfootball/eng-england/blob/master/2016-17/1-premierleague-i.txt
+

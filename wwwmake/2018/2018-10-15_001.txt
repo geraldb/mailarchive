@@ -1,0 +1,154 @@
+From 6612573435302248448@xxx Mon Oct 15 13:22:10 +0000 2018
+X-GM-THRID: 6612573437400449024
+X-Received: by 2002:ac2:42c3:: with SMTP id n3-v6mr480194lfl.8.1539609729729;
+        Mon, 15 Oct 2018 06:22:09 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a19:4803:: with SMTP id v3-v6ls570795lfa.33.gmail; Mon, 15
+ Oct 2018 06:22:08 -0700 (PDT)
+X-Google-Smtp-Source: ACcGV60JT49rvPpUJdgwvuA0tB27eJiyPTWipjnxxKeQ6G7nv5nQS1oFfrzIqPsMQwbSQCcXaSbN
+X-Received: by 2002:a19:5203:: with SMTP id m3-v6mr470289lfb.26.1539609728567;
+        Mon, 15 Oct 2018 06:22:08 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1539609728; cv=none;
+        d=google.com; s=arc-20160816;
+        b=nSeUONuiPjCW2DjXKpbURtoswOlH7GshNxtJCTmGWLAZr+hnnKmmYn3AN6AfKZE/VT
+         XXGpZjyjMP93ma4I5DWRVtAgzYhdtqb/2ph924R734vS50rGF9y0C/RTII3dMmWxo+/r
+         Yb390GNh/eY2FzmAFOYn610sQpRg+iDdmbKmt+s770OQj6iXcgn9x+ynnEXZGCPfZQk4
+         cvk6/MQO6TqBReqO8TlOG443gBu4m/1Em/6uIAD4E4AKdB5bz2K4PA5UKpgC9UHAPaoy
+         3w2OEqWpKSyokzFvs0XdfKRPE304I3VtW7OYrWoNk/UbwDSMTE7CY6UkoM3xrVV356br
+         VNrg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=v2NsOf4njFy1rPbiEoXj3hrNr4jFxzN3VSNaGmD2SGU=;
+        b=e7dT3n9T8+iovWr6LWGK2KuzQSSghdgl+09OPJIHQ647gRa2xFN2IfpmZWthN49VC0
+         n0gTji40uqSA/Yk8pV6oLTurgFwRUgSgEtILHyIcs3/JjNZeobF45MZ9KtSLxR+q5CNF
+         uDNlG93DLIphcRBHZeWirnVQjIkO+z+veA5ElNEy/+Pkv2bLQrnByoWgeAnoFevHoo24
+         lTJL3wuSumqJQSyhxG54OCILWb1O/0ERWYrpCOts2dp/o5ZFsgNQ84rabXRNE/uR19BP
+         DnnUhHcKaMg9WNnycexn0K3hysQaMlonoIMcSYNmtabfeYZwzoMo/i6yVHPQQGadDkBK
+         vWuw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=GXcJV1LG;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::141 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x141.google.com (mail-lf1-x141.google.com. [2a00:1450:4864:20::141])
+        by gmr-mx.google.com with ESMTPS id r81-v6si327500ljb.2.2018.10.15.06.22.08
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 15 Oct 2018 06:22:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::141 as permitted sender) client-ip=2a00:1450:4864:20::141;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=GXcJV1LG;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::141 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x141.google.com with SMTP id y10-v6so14080364lfj.1
+        for <wwwmake@googlegroups.com>; Mon, 15 Oct 2018 06:22:08 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=v2NsOf4njFy1rPbiEoXj3hrNr4jFxzN3VSNaGmD2SGU=;
+        b=GXcJV1LGOzggZoLzoU5obfmXGNnrr9vc39aF2oc+KypdiOQPcGUKG5/j1LldhkiVAT
+         nhJoEe3oUtFN0G6af/qlrQpdyJ50gl9et15S9QLw4REJAndXmVy1zicPJoCvQNpHRJTI
+         XZIAd6aUQwopy69G7yyr/ygUSTKW7WzoznCTofCkI1shhczmf0DYlxJHZ+qYvppXKLGd
+         CdrfYkoDZq6KqOp+h0YHDfFY4oAAvL2+Bm76XfNpVOv7myEor6LprXDiRi0HEG6Ib5Qp
+         hHptJmpjzqSHmn1P/F4jcozRJXsuw/XPIVBtKq8QNFGx3APnzVDdi0e2c1f2vFGL1tzA
+         SqHg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=v2NsOf4njFy1rPbiEoXj3hrNr4jFxzN3VSNaGmD2SGU=;
+        b=V909rDJ+DewLcDrsmGja13Pp1C7P+M6kx54440ZuFvHLiPXBVyKeWO8bFCYkCITyhu
+         BceaNWigf3yr5PLOstVYD+cIlVPoOH8r1i23RgjCxI1EFL0sVH1Bu093sgpFZYKRhNRE
+         Uhe/O07hc9zD/gNz48FRX8ieR+sWnzx/trtKzhjLTRTkMkuYbHnntKGLk+uEAT5XaWn/
+         uJmRnZMPdieASiDSkhwcgSYoLcLy6ofEdKf8ECrqwkZoGxpC0B2la/wLtcWw0Clji+2Z
+         Sa8xuJ7oat5TUjT247uSogG/5r6G5rx3ySVT1V5T3ipQVr/Pw5lOPasDy59/Cfd0229r
+         6OuA==
+X-Gm-Message-State: ABuFfojk0rwnKQYu0PuSbOXvv0T3datg6Nql0mD8Em2CPFb9Ju47Q7n4
+	dZSImToQ3tRz0oOg6fqCIgSR7WIFSPhJfAVTS31GwWgn
+X-Received: by 2002:a19:b86:: with SMTP id 128-v6mr2458004lfl.156.1539609727953;
+ Mon, 15 Oct 2018 06:22:07 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 15 Oct 2018 15:21:56 +0200
+Message-ID: <CAAxEZd8AepP8pcro4j2RF3N3mA_Q_KpEsbRTjZJnWycBxOyfXg@mail.gmail.com>
+Subject: csvjson library / gem v1.0 - read tabular data in the CSV <3 JSON
+ format, that is, comma-separated values CSV (line-by-line) records with JSON
+ encoding rules
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  I've published a new library / gem, that is, csvjson that lets you
+read tabular data in the (new) CSV <3 JSON format, that is,
+comma-separated values CSV (line-by-line) records with javascript
+object notation (JSON) encoding rules.
+
+   What's CSV <3 JSON?
+
+CSV <3 JSON is a Comma-Separated Values (CSV)
+variant / format / dialect
+where the line-by-line records follow the
+JavaScript Object Notation (JSON) encoding rules.
+It's a modern (simple) tabular data format that
+includes arrays, numbers, booleans, nulls, nested structures, comments and more.
+Example:
+
+    # "Vanilla" CSV <3 JSON
+
+    1,"John","12 Totem Rd. Aspen",true
+    2,"Bob",null,false
+    3,"Sue","Bigsby, 345 Carnival, WA 23009",false
+
+or
+
+
+    # CSV <3 JSON with array values
+
+    1,"directions",["north","south","east","west"]
+    2,"colors",["red","green","blue"]
+    3,"drinks",["soda","water","tea","coffe"]
+    4,"spells",[]
+
+
+  And how to read / parse in ruby? Example:
+
+  txt <<=TXT
+  # "Vanilla" CSV <3 JSON
+
+  1,"John","12 Totem Rd. Aspen",true
+  2,"Bob",null,false
+  3,"Sue","Bigsby, 345 Carnival, WA 23009",false
+  TXT
+
+  records = CsvJson.parse( txt )     ## or CSV_JSON.parse or CSVJSON.parse
+  pp records
+  # =>  [[1,"John","12 Totem Rd. Aspen",true],
+  #      [2,"Bob",nil,false],
+  #      [3,"Sue","Bigsby, 345 Carnival, WA 23009",false]]
+
+  # -or-
+
+  records = CsvJson.read( "values.json.csv" )   ## or CSV_JSON.read or
+CSVJSON.read
+  pp records
+  # =>  [[1,"John","12 Totem Rd. Aspen",true],
+  #      [2,"Bob",nil,false],
+  #      [3,"Sue","Bigsby, 345 Carnival, WA 23009",false]]
+
+  # -or-
+
+  CsvJson.foreach( "values.json.csv" ) do |rec|   ## or
+CSV_JSON.foreach or CSVJSON.foreach
+    pp rec
+  end
+  # => [1,"John","12 Totem Rd. Aspen",true]
+  # => [2,"Bob",nil,false]
+  # => [3,"Sue","Bigsby, 345 Carnival, WA 23009",false]
+
+  and so on.
+
+   Happy data wrangling with ruby (and csv and json). Cheers. Prost.
+
+[1] https://github.com/csv11/csvjson - the csvjson library (reader / parser)
+[2] https://github.com/csv11/csv-json   - the CSV <3 JSON format
+

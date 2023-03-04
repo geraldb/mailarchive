@@ -1,0 +1,92 @@
+From 557648445440@xxx Tue Jun 16 00:17:12 +0000 2015
+X-GM-THRID: 555897323520
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,f739031e30400901,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.15.53.136 with SMTP id r8mr41979eew.5.1398545273403;
+        Sat, 26 Apr 2014 13:47:53 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.10.4 with SMTP id e4ls305679lab.84.gmail; Sat, 26 Apr 2014
+ 13:47:52 -0700 (PDT)
+X-Received: by 10.112.204.163 with SMTP id kz3mr1432327lbc.0.1398545272940;
+        Sat, 26 Apr 2014 13:47:52 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22c.google.com (mail-wi0-x22c.google.com [2a00:1450:400c:c05::22c])
+        by gmr-mx.google.com with ESMTPS id ck4si133247wib.1.2014.04.26.13.47.52
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 26 Apr 2014 13:47:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22c as permitted sender) client-ip=2a00:1450:400c:c05::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22c as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f172.google.com with SMTP id hi2so4103978wib.5
+        for <opensport@googlegroups.com>; Sat, 26 Apr 2014 13:47:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=9dzPGInl6EBKgYIR6ceogY2TLGkXvhbjMMl6JdWqPr0=;
+        b=hWrdjUjivQpY2i4QHdjdQYXh/sDr9wA/e9w9zL2/eSs+h6+68QnQMZY+Xln+9WyuOs
+         DODtz7B/P0nOaUs/VmB5cfF+skOaDS/BmEenO7mTqJGhGwk9vRRavonkzx1kZNe5X5BX
+         Hg7LgoYQLDCDIft9LZHj9MbHOdDOTOPsmeTYkpUr5CfNLw7Vr6HCMs5QAL37CMjBnBf9
+         L+y4+3wk/ndyEUhmvhNeVm5blJgBIYTVrLT7v2eqfMQg5BstXwRMYlhUwRgoKngKur6p
+         +5d0I71gS91X2MUCcKsmayJUFFENK08jQ8SwA7Z0MVSqlpTTCy1tbFi4DSXAYBqxs8XO
+         cubQ==
+MIME-Version: 1.0
+X-Received: by 10.180.83.196 with SMTP id s4mr9006020wiy.24.1398545272856;
+ Sat, 26 Apr 2014 13:47:52 -0700 (PDT)
+Received: by 10.217.66.200 with HTTP; Sat, 26 Apr 2014 13:47:52 -0700 (PDT)
+Date: Sat, 26 Apr 2014 22:47:52 +0200
+Message-ID: <CAAxEZd9PHNPP-rVt0fteWnYthCrNDQvXv_EibYr229vNom_yfA@mail.gmail.com>
+Subject: sportdb tool update - more football fixture languages (pt,ro,it,fr),
+ more score matchers, new matchday defs, etc.
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: I've updated the sportdb command line tool [1] that lets you
+read leagues, teams, match schedules and more in plain text into your
+SQL database of choice.
+
+  What's new?
+
+  The match schedule / fixture reader now supports more languages, that is,
+     italian (it), portuguese (pt), romanian (ro), etc.   Example -
+Italian Seria A [2]:
+
+  20^ Giornata
+  18.01. (sab) AS Roma 3-0 AS Livorno
+
+
+ The scores finder now supports more formats for extra time and
+penalty shoot-outs. Example - Euro 2012 [2]:
+
+  Jun/27 20:45   Portugal - Spain  0-0 0-0 a.e.t 2-4 pen
+   or
+  Jun/27 20:45   Portugal - Spain  0-0aet 2-4p
+
+ The fixture reader now includes matchday / round definitions and
+auto-adds matches to rounds. Example - World Cup 2014 [2]:
+
+  Matchday 1 | Thu Jun/12
+  Matchday 2 | Fri Jun/13
+  Matchday 3 | Sat Jun/14
+  ...
+  (1) Thu Jun/12 17:00   Brazil - Croatia     @ Arena de S=C3=A3o Paulo,
+S=C3=A3o Paulo (UTC-3)
+
+
+ And much more.
+
+ All code and data public domain. Enjoy.
+
+
+ [1] github.com/geraldb/sport.db.ruby
+ [2] github.com/openfootball
+

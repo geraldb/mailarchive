@@ -1,0 +1,88 @@
+From 1299221315584@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1300612775936
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,ed0c87eeaed34f04,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.180.37.229 with SMTP id b5mr5514531wik.4.1371621548648;
+        Tue, 18 Jun 2013 22:59:08 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.180.75.109 with SMTP id b13ls71958wiw.28.gmail; Tue, 18 Jun
+ 2013 22:59:08 -0700 (PDT)
+X-Received: by 10.180.88.104 with SMTP id bf8mr410292wib.3.1371621548113;
+        Tue, 18 Jun 2013 22:59:08 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x235.google.com (mail-we0-x235.google.com [2a00:1450:400c:c03::235])
+        by gmr-mx.google.com with ESMTPS id q15si192528wij.0.2013.06.18.22.59.08
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 18 Jun 2013 22:59:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::235 as permitted sender) client-ip=2a00:1450:400c:c03::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::235 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-we0-f181.google.com with SMTP id p58so4138301wes.12
+        for <webslideshow@googlegroups.com>; Tue, 18 Jun 2013 22:59:08 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=xl4k4hL42xZYYX94gv8XdMGJOOcIFdSmlLHEEq0PMA4=;
+        b=iLjbJYUMO2giCK5vfSRqCgEuwOnrp73d3t3BmyFmvcdG0Ksb6ne3XFzDkkjrfeBdKo
+         tUIxy0ee2GVf+xJ7r9hFjXfAJ/3fMZDbWrf8rg6r1iotCHp/G7GrW5G0hHysbLCZQMNP
+         Khr9/B8j01qUPFGco4TPZfdYdpyC94bvvarBrCSQSreKu9F8ocXMAU1Z5yuYOdn7397s
+         LgNzMklqFtxj9E9h6m2yjQYoLG/F2AFF/ti73NPNmkV5CfBYOmI+bYvIaKM/TIm0L+B2
+         sKqKPIUhSlxkNwzwDjtvPQSyOaOfxMG88jhvBWiSKKawjI4X2BC4+4sjriI7XJSw5QEk
+         nrpg==
+MIME-Version: 1.0
+X-Received: by 10.194.174.137 with SMTP id bs9mr852188wjc.59.1371621548031;
+ Tue, 18 Jun 2013 22:59:08 -0700 (PDT)
+Received: by 10.216.54.202 with HTTP; Tue, 18 Jun 2013 22:59:07 -0700 (PDT)
+Date: Wed, 19 Jun 2013 07:59:07 +0200
+Message-ID: <CAAxEZd_B2LfdnbmZ_hrNZ3=QPxTg5xWn+JsrPDsZa8i_6nL8UQ@mail.gmail.com>
+Subject: Slide Show (S9) 2.0.0 Update - Command Suite Added - build,install,ls,new,etc.
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  I've updated the slideshow gem, that is, version 2.0.0. What's new?
+
+  I've added a git or gem like command suite. For example, to build
+your slideshow use:
+
+  $ slideshow build welcome.txt
+
+  Fetching template packs has changed to slideshow install <MANIFEST>. Example:
+
+  $ slideshow install impress.js
+
+  or
+
+  $ slideshow install
+https://raw.github.com/slideshow-s9/slideshow-impress.js/master/impress.js.txt
+
+  To list all install template packs and quick starter packs use:
+
+  $ slideshow list  or slideshow ls
+
+  And to create a quick starter sample use:
+
+  $ slideshow new -t impress.js
+
+
+  Note, all commands also let you use single-letter aliases e.g.
+
+   build   -> b
+   install -> i
+   list    -> l or ls
+   new     -> n
+   about   -> a
+
+  That's it. More info @ http://slideshow-s9.github.io
+
+ Questions? Comments? Cheers.
+

@@ -1,0 +1,179 @@
+From 6872350315138514944@xxx Mon Sep 14 14:29:07 +0000 2020
+X-GM-THRID: 6872350314586963968
+X-Received: by 2002:a0c:8e4c:: with SMTP id w12mr13988852qvb.3.1600093747149;
+        Mon, 14 Sep 2020 07:29:07 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:ac8:4e90:: with SMTP id 16ls1735899qtp.11.gmail; Mon, 14 Sep
+ 2020 07:29:06 -0700 (PDT)
+X-Received: by 2002:ac8:1207:: with SMTP id x7mr13231672qti.109.1600093746212;
+        Mon, 14 Sep 2020 07:29:06 -0700 (PDT)
+Received: by 2002:a05:620a:15ee:b029:f9:71db:3eb4 with SMTP id p14-20020a05620a15eeb02900f971db3eb4msqkm;
+        Sun, 13 Sep 2020 02:17:17 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzw94K1MOzkimgfUUBOUOUObY60E7LqiIK6ydUWdx1dKOSb1ipd0pwzEYEAm6pwl07sPmNt1Sh05A==
+X-Received: by 2002:ac8:709:: with SMTP id g9mr8469121qth.310.1599988636627;
+        Sun, 13 Sep 2020 02:17:16 -0700 (PDT)
+X-Google-Thread-Subscription: Yes
+X-Google-Web-Client: true
+Date: Sun, 13 Sep 2020 02:17:16 -0700 (PDT)
+From: Nick Schurch <nickschurch@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <53399441-0fd3-4a82-82e5-ba94de6dfa55n@googlegroups.com>
+Subject: Cannot persuade sportdb to install england
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_972_561459769.1599988636413"
+
+------=_Part_972_561459769.1599988636413
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_973_712537720.1599988636413"
+
+------=_Part_973_712537720.1599988636413
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I cannot persuade sportdb to install the england db. I have tries sportb 
+from `gem install sportdb` and from github checkout (both v2.3.1 running on 
+Ruby 2.5.1). Running `sportdb new england` gives:
+
+(pl_modelling) nick:~/GitHub/england$ sportdb new england
+alphabets/1.0.0 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+date-formats/1.0.1 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+score-formats/0.1.0 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+sportdb-langs/0.1.1 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+sportdb-structs/0.1.0 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+sportdb-formats/1.1.4 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+fifa/2020.5.18 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+footballdb-leagues/2020.7.7 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+footballdb-clubs/2020.7.7 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+sportdb-catalogs/1.0.0 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+activerecord-utils/0.4.0 (activerecord/6.0.0) on Ruby 2.5.1 (2018-03-29) 
+[x86_64-linux-gnu]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::StateBase<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::CityBase<
+sportdb-models/2.0.2 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+sportdb-sync/1.1.1 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+sportdb-readers/1.1.2 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+[debug] Webservice::Metal.get - add route GET '/favicon.ico' to 
+#<Webservice::Base:70368596676580> : Class
+[debug] Webservice::Metal.head - add route HEAD '/favicon.ico' to 
+#<Webservice::Base:70368596676580> : Class
+[debug] Webservice::Metal.get - add route GET '/webservice-32x32.png' to 
+#<Webservice::Base:70368596676580> : Class
+[debug] Webservice::Metal.head - add route HEAD '/webservice-32x32.png' to 
+#<Webservice::Base:70368596676580> : Class
+[debug] Webservice::Metal.get - add route GET '/routes' to 
+#<Webservice::Base:70368596676580> : Class
+[debug] Webservice::Metal.head - add route HEAD '/routes' to 
+#<Webservice::Base:70368596676580> : Class
+[debug] Webservice::Metal.get - add route GET '/*' to 
+#<Webservice::Base:70368596676580> : Class
+[debug] Webservice::Metal.head - add route HEAD '/*' to 
+#<Webservice::Base:70368596676580> : Class
+[debug] Webservice::Metal.get - add route GET '/version(s)?' to 
+#<SportDbService:70368593467620> : Class
+[debug] Webservice::Metal.head - add route HEAD '/version(s)?' to 
+#<SportDbService:70368593467620> : Class
+[debug] Webservice::Metal.get - add route GET '/(stats|tables)' to 
+#<SportDbService:70368593467620> : Class
+[debug] Webservice::Metal.head - add route HEAD '/(stats|tables)' to 
+#<SportDbService:70368593467620> : Class
+[debug] Webservice::Metal.get - add route GET '/props(.:format)?' to 
+#<SportDbService:70368593467620> : Class
+[debug] Webservice::Metal.head - add route HEAD '/props(.:format)?' to 
+#<SportDbService:70368593467620> : Class
+[debug] Webservice::Metal.get - add route GET '/logs(.:format)?' to 
+#<SportDbService:70368593467620> : Class
+[debug] Webservice::Metal.head - add route HEAD '/logs(.:format)?' to 
+#<SportDbService:70368593467620> : Class
+sportdb/2.3.1 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+sportdb/2.3.1 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+*** error - fetch HTTP - 404 Not Found
+
+*** error: Not Found
+
+Trying to build it directly from a github checkout 
+of https://github.com/openfootball/england gets further and produces a 
+massive suite of progress output (too much to add here) but ends with:
+
+(auto config) try matching teams:
+["Manchester City FC", "Watford FC"]
+** !!! ERROR - no match for club >Haringey Borough FC<
+
+This is on ubuntu WSL running under windows 10. As far as I can see, 
+sportdb just doesn't work at the moment. Am I doing something wrong?
+
+Nick
+
+------=_Part_973_712537720.1599988636413
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+I cannot persuade sportdb to install the england db. I have tries sportb fr=
+om `gem install sportdb` and from github checkout (both v2.3.1 running on R=
+uby 2.5.1). Running `sportdb new england` gives:<div><br></div><div><div>(p=
+l_modelling) nick:~/GitHub/england$ sportdb new england</div><div>alphabets=
+/1.0.0 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]</div><div>date-formats=
+/1.0.1 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]</div><div>score-format=
+s/0.1.0 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]</div><div>sportdb-lan=
+gs/0.1.1 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]</div><div>sportdb-st=
+ructs/0.1.0 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]</div><div>sportdb=
+-formats/1.1.4 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]</div><div>fifa=
+/2020.5.18 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]</div><div>football=
+db-leagues/2020.7.7 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]</div><div=
+>footballdb-clubs/2020.7.7 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]</d=
+iv><div>sportdb-catalogs/1.0.0 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu=
+]</div><div>activerecord-utils/0.4.0 (activerecord/6.0.0) on Ruby 2.5.1 (20=
+18-03-29) [x86_64-linux-gnu]</div><div>&nbsp; [TagDb.has_many_tags] adding =
+taggings n tags has_many assocs to model &gt;WorldDb::Model::Country&lt;</d=
+iv><div>&nbsp; [TagDb.has_many_tags] adding taggings n tags has_many assocs=
+ to model &gt;WorldDb::Model::StateBase&lt;</div><div>&nbsp; [TagDb.has_man=
+y_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Model:=
+:CityBase&lt;</div><div>sportdb-models/2.0.2 on Ruby 2.5.1 (2018-03-29) [x8=
+6_64-linux-gnu]</div><div>sportdb-sync/1.1.1 on Ruby 2.5.1 (2018-03-29) [x8=
+6_64-linux-gnu]</div><div>sportdb-readers/1.1.2 on Ruby 2.5.1 (2018-03-29) =
+[x86_64-linux-gnu]</div><div>[debug] Webservice::Metal.get - add route GET =
+'/favicon.ico' to #&lt;Webservice::Base:70368596676580&gt; : Class</div><di=
+v>[debug] Webservice::Metal.head - add route HEAD '/favicon.ico' to #&lt;We=
+bservice::Base:70368596676580&gt; : Class</div><div>[debug] Webservice::Met=
+al.get - add route GET '/webservice-32x32.png' to #&lt;Webservice::Base:703=
+68596676580&gt; : Class</div><div>[debug] Webservice::Metal.head - add rout=
+e HEAD '/webservice-32x32.png' to #&lt;Webservice::Base:70368596676580&gt; =
+: Class</div><div>[debug] Webservice::Metal.get - add route GET '/routes' t=
+o #&lt;Webservice::Base:70368596676580&gt; : Class</div><div>[debug] Webser=
+vice::Metal.head - add route HEAD '/routes' to #&lt;Webservice::Base:703685=
+96676580&gt; : Class</div><div>[debug] Webservice::Metal.get - add route GE=
+T '/*' to #&lt;Webservice::Base:70368596676580&gt; : Class</div><div>[debug=
+] Webservice::Metal.head - add route HEAD '/*' to #&lt;Webservice::Base:703=
+68596676580&gt; : Class</div><div>[debug] Webservice::Metal.get - add route=
+ GET '/version(s)?' to #&lt;SportDbService:70368593467620&gt; : Class</div>=
+<div>[debug] Webservice::Metal.head - add route HEAD '/version(s)?' to #&lt=
+;SportDbService:70368593467620&gt; : Class</div><div>[debug] Webservice::Me=
+tal.get - add route GET '/(stats|tables)' to #&lt;SportDbService:7036859346=
+7620&gt; : Class</div><div>[debug] Webservice::Metal.head - add route HEAD =
+'/(stats|tables)' to #&lt;SportDbService:70368593467620&gt; : Class</div><d=
+iv>[debug] Webservice::Metal.get - add route GET '/props(.:format)?' to #&l=
+t;SportDbService:70368593467620&gt; : Class</div><div>[debug] Webservice::M=
+etal.head - add route HEAD '/props(.:format)?' to #&lt;SportDbService:70368=
+593467620&gt; : Class</div><div>[debug] Webservice::Metal.get - add route G=
+ET '/logs(.:format)?' to #&lt;SportDbService:70368593467620&gt; : Class</di=
+v><div>[debug] Webservice::Metal.head - add route HEAD '/logs(.:format)?' t=
+o #&lt;SportDbService:70368593467620&gt; : Class</div><div>sportdb/2.3.1 on=
+ Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]</div><div>sportdb/2.3.1 on Ruby=
+ 2.5.1 (2018-03-29) [x86_64-linux-gnu]</div><div>*** error - fetch HTTP - 4=
+04 Not Found</div><div><br></div><div>*** error: Not Found</div></div><div>=
+<br></div><div>Trying to build it directly from a github checkout of&nbsp;h=
+ttps://github.com/openfootball/england gets further and produces a massive =
+suite of progress output (too much to add here) but ends with:</div><div><b=
+r></div><div>(auto config) try matching teams:</div><div>["Manchester City =
+FC", "Watford FC"]</div><div>** !!! ERROR - no match for club &gt;Haringey =
+Borough FC&lt;</div><div><br></div><div>This is on ubuntu WSL running under=
+ windows 10. As far as I can see, sportdb just doesn't work at the moment. =
+Am I doing something wrong?</div><div><br></div><div>Nick</div>
+------=_Part_973_712537720.1599988636413--
+
+------=_Part_972_561459769.1599988636413--
+

@@ -1,0 +1,84 @@
+From 6283054846358585344@xxx Tue May 10 13:41:43 +0000 2016
+X-GM-THRID: 6283054842980073472
+X-Received: by 10.36.26.148 with SMTP id 142mr817499iti.6.1462887703182;
+        Tue, 10 May 2016 06:41:43 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.28.247 with SMTP id 110ls240919qgz.24.gmail; Tue, 10 May
+ 2016 06:41:42 -0700 (PDT)
+X-Received: by 10.140.92.236 with SMTP id b99mr26307172qge.21.1462887702825;
+        Tue, 10 May 2016 06:41:42 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x231.google.com (mail-io0-x231.google.com. [2607:f8b0:4001:c06::231])
+        by gmr-mx.google.com with ESMTPS id gg5si108650igb.0.2016.05.10.06.41.42
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 10 May 2016 06:41:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) client-ip=2607:f8b0:4001:c06::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x231.google.com with SMTP id d62so16117297iof.2
+        for <opensport@googlegroups.com>; Tue, 10 May 2016 06:41:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to;
+        bh=ewi9NxTML8HY5TqqeUSmPRB9gbDV3XgtNs4mEGmDLn4=;
+        b=m8VK4R7+fa1D8XUeFV8a08qGan36CdoC1N/OMhHVLon1+tpiO6EZMWD7O3qQg8q9BN
+         9KdMF3MGprFFmT9ajdOqDTeSs++nEfy0oZ2sNCjIlkFCS/qQBvWHmLcczq5pggT0bD3w
+         tCEoKB3W9pdGLAPsjnVVN25WeAZ9+e69AmfNq3TCH/aUz0IATy4Pwp6Ins1OsTt/qURV
+         4euwFC0iLnA/DxWjm55gwu79VIuOKahmA1oKEWnFVilC9BUGuP8MOu5d/LAJlTDjzs3D
+         kiIuQAf/8GiFkCd7I2hR6aXi0F4YSe4ut+9APIkhktQ1kizsuTSU6Vjg+OmyO4ZTbgi6
+         s1fw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:date:message-id:subject:from:to;
+        bh=ewi9NxTML8HY5TqqeUSmPRB9gbDV3XgtNs4mEGmDLn4=;
+        b=YorDF3Jwr/HzcqyaAJpoQI4+/iLkIzunyVrLExq4isuIOBHhMSKv5KkftnjHjHeIa5
+         7/ZY0VAoBX84wnZ+iHP5vLDhRE/HUFnVev6SDS9jAkgHfHzp4mFI6+Qi9OzN1WQbsFNE
+         yWic7TMdzmtINKJaYJPst0jGZkFB/Xl+wEqc3u5SnIXG4eieYKNGb/xnFzUXLluBDtDb
+         Y/ebun+pwfcz43g0r715B+D7cCd+ueL0U5x7m7+RNVPttV9iayKY+7bqoLdKrislwfj0
+         EkgtvpxAyLbFH76snAhqaGHDMnTOb4Aab/KkLscMXVwQWcTfHi38/yzX4OstonpyibOm
+         Mjmg==
+X-Gm-Message-State: AOPr4FV1bRx4Twu6Sb3ScngDSnDhljsBpKMSMkG+u54v3MVO1KzKtOWCs2B6SV1czhmYv8v5VgZybCoSW+IlZg==
+MIME-Version: 1.0
+X-Received: by 10.107.21.197 with SMTP id 188mr41563564iov.59.1462887702630;
+ Tue, 10 May 2016 06:41:42 -0700 (PDT)
+Received: by 10.107.138.84 with HTTP; Tue, 10 May 2016 06:41:42 -0700 (PDT)
+Date: Tue, 10 May 2016 15:41:42 +0200
+Message-ID: <CAAxEZd_73Q-5h1czpr8Qe1mOOZHCBy0wxC6GXRtPPC2kPM3V2g@mail.gmail.com>
+Subject: Any Open Data Sets for the (Football) Euro Cup (in France 2016)?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  30 days to kick off! Now the the question is:
+
+  Are there any public data sets for the European Championship "Euro"
+Cup in France 2016?
+
+  Didn't find anything for download on the official UEFA site (besides
+a single-page PDF booklet for the match schedule).
+
+  Ideally the data set includes groups, teams, players, squads,
+matches, stadiums and so on and is in an open plain text format such
+as CSV (comma-separated values), JSON (javascript objects), SQL
+(structured query language), etc.
+
+  Any insight appreciated. Cheers.
+
+
+PS:  Disclosure: I'm the project lead of the football.db project
+collecting open public domain football data e.g.
+
+- openfootball/euro-cup [1] Euro Cup Datasets (1960-2020) - not comple
+in any way :-(
+
+PPS: I've also posted the question to the Open Data Stack Exchange [2].
+
+
+[1] https://github.com/openfootball/euro-cup
+[2] http://opendata.stackexchange.com/questions/7745/any-open-data-sets-for-the-football-euro-cup-in-france-2016
+

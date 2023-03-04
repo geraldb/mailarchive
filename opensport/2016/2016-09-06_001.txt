@@ -1,0 +1,69 @@
+From 6327153464318099456@xxx Tue Sep 06 09:46:53 +0000 2016
+X-GM-THRID: 6327149872914890752
+X-Received: by 10.157.41.106 with SMTP id d97mr34931167otb.44.1473155213468;
+        Tue, 06 Sep 2016 02:46:53 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.153.145 with SMTP id b139ls380328ioe.23.gmail; Tue, 06 Sep
+ 2016 02:46:51 -0700 (PDT)
+X-Received: by 10.98.23.151 with SMTP id 145mr15734455pfx.5.1473155211390;
+        Tue, 06 Sep 2016 02:46:51 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-oi0-x243.google.com (mail-oi0-x243.google.com. [2607:f8b0:4003:c06::243])
+        by gmr-mx.google.com with ESMTPS id u125si1362995itc.0.2016.09.06.02.46.51
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 06 Sep 2016 02:46:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4003:c06::243 as permitted sender) client-ip=2607:f8b0:4003:c06::243;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4003:c06::243 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-oi0-x243.google.com with SMTP id u131so4404302oif.3
+        for <opensport@googlegroups.com>; Tue, 06 Sep 2016 02:46:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=iULCQgWlM8Lk063gqLh8kx14rzcPSSoZxOwtocMw+JI=;
+        b=abkEuMkiOpHI0TcbH0hzc5YMwU2egyL/dhK0O5HE1qH2TTHv3QbR3r4sozKiKxXwS6
+         qBp3kBdkpGbghBNRSAd6NTSRAgycfbYe6Gu3nxkecSxZtLa3vUnGoAJOmBsNz+iHQHth
+         rGRa8NWSX1dPw6IwZ9rA368ScumYmxkyRBSSJJzOb82uyCtNLbs6Xodv+8nd2VkAeSQK
+         pgdbYO6PaPNTVFszp5cYUiWutFswHHCFIS1PJt4ufpYRowTrGq9ffYlYceJts7kHWAQL
+         mIHfwnLBXBQAz6x9eq+qxNZ8LujWgH6SspyzDNyt+fNzJiA3xJPBvRfb5iyKptOk6HWD
+         gVQw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=iULCQgWlM8Lk063gqLh8kx14rzcPSSoZxOwtocMw+JI=;
+        b=Kq4uBC+cTCPU+1MwJDw/TDio5AAmswPS6X0kzMY4K7/6A6r8ry6MAPXaXjGIh6wkDD
+         FH/k8AmvzEWpJ3fcCrIEZxx0FtkfAQ8M1pv2emlq/1YUU2rL3jhssy46fAFkOhchQAAB
+         ZF1emoIRzTErHIJgKpeC0qEzyocvHBOEeMiVD+Vrm0oT7Jen4ZXBEVa+LlVcB0wotNeN
+         bLuU/2jsnfhotD2w1L4qakd3+wp+Es14i8l3K2HkPNTwUiE8HAH0fM2LE5U37OCj374p
+         u4nfEa4492wTkeYdNVW6tJNPf7PhG6fJexpdyWLM6bIcWr7ruMjRrJzlUsp6qcqebc/4
+         0gKQ==
+X-Gm-Message-State: AE9vXwMlWutM9Um1nwfs8XT4BXIoEgvtc5kav5tb/4TosBcimTjYYTjDKyp+INlZYKVbDSrOa8MIfnI/T7m/iA==
+X-Received: by 10.107.153.70 with SMTP id b67mr3646295ioe.15.1473155210891;
+ Tue, 06 Sep 2016 02:46:50 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Tue, 6 Sep 2016 02:46:50 -0700 (PDT)
+In-Reply-To: <bde264df-e79b-48e6-9a6f-b98d521c0554@googlegroups.com>
+References: <bde264df-e79b-48e6-9a6f-b98d521c0554@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 6 Sep 2016 11:46:50 +0200
+Message-ID: <CAAxEZd-h0rgJd_S6xhBSM+WTMtQyfO-NH9zxR3vcvKG2CZk7yw@mail.gmail.com>
+Subject: Re: [opensport] rake build failure
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   thanks for trying football.db.
+
+   The easiest and recommend way to build yourself a copy is using
+Datafiles [1] e.g. for the worldcup try:
+
+$ sportdb new worldcup
+
+   Cheers.
+
+[1] https://github.com/openfootball/datafile
+

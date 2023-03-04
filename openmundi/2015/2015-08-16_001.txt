@@ -1,0 +1,60 @@
+From 6183711221829599232@xxx Sun Aug 16 20:37:44 +0000 2015
+X-GM-THRID: 6183676375303454720
+X-Received: by 10.182.115.202 with SMTP id jq10mr47933197obb.35.1439757463595;
+        Sun, 16 Aug 2015 13:37:43 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.107.4.149 with SMTP id 143ls1246584ioe.16.gmail; Sun, 16 Aug
+ 2015 13:37:43 -0700 (PDT)
+X-Received: by 10.66.232.166 with SMTP id tp6mr22857487pac.3.1439757463413;
+        Sun, 16 Aug 2015 13:37:43 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x233.google.com (mail-ig0-x233.google.com. [2607:f8b0:4001:c05::233])
+        by gmr-mx.google.com with ESMTPS id ax9si658914igc.1.2015.08.16.13.37.43
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 16 Aug 2015 13:37:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::233 as permitted sender) client-ip=2607:f8b0:4001:c05::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x233.google.com with SMTP id i7so43915909igu.1
+        for <openmundi@googlegroups.com>; Sun, 16 Aug 2015 13:37:43 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=yu3/DsSeI6IsYJvtr2d7n5mkXyz5h5fFrCJNXW/Wtk8=;
+        b=zmfbhSDrAyZxjal6Ovm2vufda0e89n1V00BNywEL7k7LYuBktp6wjPvMFi5GSSHf48
+         FzYWRm5RECzxH728B827HnM9sqW0tG0syWS3ppjBwlUhxTBB/YYdx4mf2DklP+FJ8mBz
+         nlBzKWaBs4HC6wKY+uGbZmIBMomU85unuZNQNzDOioGgGwq/2Ffo0dw9Gaslt6xCEuX2
+         WyNNp4oG150yphjetwadG5dtT7XdYenEIbtPeQWXM6O9rXfkS7mF57rKl0Ezb+EmST40
+         +SH7vsHxtcyGF36EeTPZAC7bS6djJjExjkIPB5fCBhnMSBC95bdGM2CX/8VGGf/KcZ6o
+         M7Sg==
+MIME-Version: 1.0
+X-Received: by 10.50.66.197 with SMTP id h5mr13239960igt.81.1439757463275;
+ Sun, 16 Aug 2015 13:37:43 -0700 (PDT)
+Received: by 10.107.142.205 with HTTP; Sun, 16 Aug 2015 13:37:43 -0700 (PDT)
+In-Reply-To: <b7d238a5-07df-48bc-8f14-ea75abc8ab07@googlegroups.com>
+References: <b7d238a5-07df-48bc-8f14-ea75abc8ab07@googlegroups.com>
+Date: Sun, 16 Aug 2015 22:37:43 +0200
+Message-ID: <CAAxEZd8kVvdzeA61PxLoOSEfkRvc8M=+3U2zN2GA-4+h_MCt4g@mail.gmail.com>
+Subject: Re: [openmundi] loop/error on sutup
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Victor DD <victorddesigner@gmail.com>, openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Can you post the stack trace (error messages)? Hard to tell from
+your description.
+
+  The "easiest" and recommend way to build the world.db is using
+datafiles [1] e.g.
+
+   $ worlddb new world
+
+  Cheers.
+
+[1] github.com/openmundi/datafile
+

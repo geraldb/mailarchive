@@ -1,0 +1,87 @@
+From 6194690200353898496@xxx Tue Sep 15 10:41:47 +0000 2015
+X-GM-THRID: 6194690199131258880
+X-Received: by 10.182.24.71 with SMTP id s7mr18223409obf.42.1442313706767;
+        Tue, 15 Sep 2015 03:41:46 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.34.138 with SMTP id i132ls852589ioi.42.gmail; Tue, 15 Sep
+ 2015 03:41:46 -0700 (PDT)
+X-Received: by 10.66.55.70 with SMTP id q6mr17115400pap.22.1442313706321;
+        Tue, 15 Sep 2015 03:41:46 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x229.google.com (mail-ig0-x229.google.com. [2607:f8b0:4001:c05::229])
+        by gmr-mx.google.com with ESMTPS id mx5si494295igb.1.2015.09.15.03.41.46
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 15 Sep 2015 03:41:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::229 as permitted sender) client-ip=2607:f8b0:4001:c05::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by igxx6 with SMTP id x6so10406741igx.1
+        for <opensport@googlegroups.com>; Tue, 15 Sep 2015 03:41:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=6HCiyl2JJ4TNPNc3ciZFj19PvS6w1l7MSjHTy4PXVIs=;
+        b=DQDS+emiZbYE/pMOjLVA7OdLpIVKeoWOL7QxdAfUkIqBQ/jyRJn4cfl/enk+h9iOds
+         IB71CQkRJcewaRkRZZ4Hn6mP6ICcCCYwannCN7ffKgSUP4M2gw19OiGvR/mw5/n4baKx
+         Nsf7qRzE8ePmsaQ8NyZqkHaU/OQgUQC0jL050LM8geMMFEVbuibJXfjM9ddF0VXBAeA1
+         /NN9OlsGYXcFeltCqT3Re4BFPZ9wdX028njMxHIXK3SAv0ImShcGvovnBw91+TCyOHY9
+         Cso8WI4Je0H64yANJ7Isp6ZSeedS5zbLrckhOT3lPZ9wXnpHNIuOW/2ftPmqiCNHttuW
+         a+iQ==
+MIME-Version: 1.0
+X-Received: by 10.50.61.148 with SMTP id p20mr4337546igr.81.1442313706174;
+ Tue, 15 Sep 2015 03:41:46 -0700 (PDT)
+Received: by 10.107.162.82 with HTTP; Tue, 15 Sep 2015 03:41:46 -0700 (PDT)
+Date: Tue, 15 Sep 2015 12:41:46 +0200
+Message-ID: <CAAxEZd8_P49M=uoV=uA2DyM3Wo1OaxHXBg0fobvG8Qbpqd4k2Q@mail.gmail.com>
+Subject: rsssf gem - Tools & Scripts for Working w/ the World's Largest
+ Football Data Archive
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've put together a new rsssf gem [1] that that lets you work with
+rsssf archive pages.
+
+  What's the RSSSF?
+
+  RSSSF stands for Rec.Sport.Soccer Statistics Foundation [2]
+  and collects football (that is, soccer) league tables, match results
+   and more from all over the world online in plain text for over fifteen years.
+
+   Today the rsss archive is the world's largest football data archive.
+   (Note: I'm not associated with the RSSSF).
+
+  Anyways, ever tried getting any of the plain text datasets into an SQL
+  database (with tables such as leagues, teams, matches, etc.)?
+
+  The new rsssf scripts and repos get you started. Example:
+
+  page = RsssfPage.from_url( 'http://www.rsssf.com/tablese/eng2015.html')
+
+  schedule = page.find_schedule( header: 'Premier League')
+  schedule.save( './1-premierleague.txt' )
+
+  schedule = page.find_schedule( header: 'FA Cup', cup: true )
+  schedule.save( './facup.txt' )
+
+
+   Or working in batch (many seasons) using a repo:
+
+  repo = RsssfRepo.new( './eng-england', title: 'England (and Wales)' )
+  repo.fetch_pages
+
+  repo.make_pages_report
+
+    and so on. Questions? Comments? As always welcome.
+
+    All code public domain. Cheers.
+
+[1] https://github.com/sportdb/rsssf
+[2] http://www.rsssf.com
+

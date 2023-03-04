@@ -1,0 +1,121 @@
+From 6236686423311777792@xxx Wed Jan 06 14:48:35 +0000 2016
+X-GM-THRID: 6235845500569911296
+X-Received: by 10.13.201.198 with SMTP id l189mr83792935ywd.8.1452091714673;
+        Wed, 06 Jan 2016 06:48:34 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.107.9.166 with SMTP id 38ls122229ioj.52.gmail; Wed, 06 Jan
+ 2016 06:48:34 -0800 (PST)
+X-Received: by 10.66.100.201 with SMTP id fa9mr88573026pab.11.1452091714460;
+        Wed, 06 Jan 2016 06:48:34 -0800 (PST)
+Return-Path: <edu.depetris.00@gmail.com>
+Received: from mail-qg0-x22e.google.com (mail-qg0-x22e.google.com. [2607:f8b0:400d:c04::22e])
+        by gmr-mx.google.com with ESMTPS id u74si5435288ywf.0.2016.01.06.06.48.34
+        for <openmundi@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 06 Jan 2016 06:48:34 -0800 (PST)
+Received-SPF: pass (google.com: domain of edu.depetris.00@gmail.com designates 2607:f8b0:400d:c04::22e as permitted sender) client-ip=2607:f8b0:400d:c04::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of edu.depetris.00@gmail.com designates 2607:f8b0:400d:c04::22e as permitted sender) smtp.mailfrom=edu.depetris.00@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-qg0-x22e.google.com with SMTP id o11so303587650qge.2
+        for <openmundi@googlegroups.com>; Wed, 06 Jan 2016 06:48:34 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :cc:content-type;
+        bh=TIRIubugC/aowh4pmif5NFfjQjg3OTy+g1sTyk/i82I=;
+        b=FVvwzabqRgKUdl/7Cf3UM6NDSfxUTFgNekKRR6Y6d0/nc6DxbHq7qsPEPwM7D2fpSv
+         nSpzc4VLoLcJ0kCQPQUw8uSCzgkZp/qoXX8sTCITul2tMA9yCidYRaLzWW7Kp6Df0Wk/
+         X0Lc76SrZ7r53rKv+licRpBw267DgVMyVt2zucjxp51H4eDJNIJdIuwQI2Jvx3H4IdZJ
+         zWrK/vo0/BA2k3YbBuW+CAx0D2HNz8Fq1Ng6JBsXAGZtAFAJtdqjeBCG0zT6BSK4BVFJ
+         slYpP2TNKvA/QJo7EeXl0eQHJhK28LYExKlKF19NVox8LQ6z633JHD2niCu/xOLKjYPL
+         Rq4w==
+X-Received: by 10.140.107.72 with SMTP id g66mr129647489qgf.86.1452091714264;
+ Wed, 06 Jan 2016 06:48:34 -0800 (PST)
+MIME-Version: 1.0
+References: <0f72d5ee-0f91-4274-b263-3cbcfab3cd50@googlegroups.com> <CAAxEZd-Sg70ZKNAfEp2eAq+aH_tm3ESNdPREoK5ArW-t_EwWpQ@mail.gmail.com>
+In-Reply-To: <CAAxEZd-Sg70ZKNAfEp2eAq+aH_tm3ESNdPREoK5ArW-t_EwWpQ@mail.gmail.com>
+From: edu <edu.depetris.00@gmail.com>
+Date: Wed, 06 Jan 2016 14:48:24 +0000
+Message-ID: <CAB4Mvk_NXEWPkci5T3W7XH5G9Vqp-_2G7eRhM1TN=-7E+AfBKg@mail.gmail.com>
+Subject: Re: [openmundi] Integrate with Rails.
+To: Gerald Bauer <gerald.bauer@gmail.com>
+Cc: openmundi <openmundi@googlegroups.com>
+Content-Type: multipart/alternative; boundary=001a113a7f2ecf66da0528ab72ae
+
+--001a113a7f2ecf66da0528ab72ae
+Content-Type: text/plain; charset=UTF-8
+
+Thanks, I'll check it out.
+
+BTW awesome work!
+
+On Mon, Jan 4, 2016, 05:32 Gerald Bauer <gerald.bauer@gmail.com> wrote:
+
+> Hello,
+>
+> > I want to used `world.db` in my Rails 4.2 application.
+> > I need to be able to search country, state and city.
+>
+>   See the world.db.admin Rails app (engine) as a "real-world" example.
+> Code on GitHub [1] and live demo on Heroku [2]. Cheers.
+>
+> PS: The first step is to create a database migration, see
+> 001_create_db.rb [3], for example e.g. use.
+>
+>   def up
+>     LogDb.create     # logs table
+>     ConfDb.create    # props table
+>     TagDb.create     # tags, taggings table
+>     WorldDb.create
+>   end
+>
+> [1] github.com/worlddb/world.db.admin
+> [2] worlddb.herokuapp.com
+> [3]
+> github.com/worlddb/world.db.admin/blob/master/db/migrate/001_create_db.rb
+>
+
+--001a113a7f2ecf66da0528ab72ae
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<p dir=3D"ltr">Thanks, I&#39;ll check it out.</p>
+<p dir=3D"ltr">BTW awesome work! <br>
+</p>
+<br><div class=3D"gmail_quote"><div dir=3D"ltr">On Mon, Jan 4, 2016, 05:32=
+=C2=A0Gerald Bauer &lt;<a href=3D"mailto:gerald.bauer@gmail.com">gerald.bau=
+er@gmail.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" styl=
+e=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Hello,<=
+br>
+<br>
+&gt; I want to used `world.db` in my Rails 4.2 application.<br>
+&gt; I need to be able to search country, state and city.<br>
+<br>
+=C2=A0 See the world.db.admin Rails app (engine) as a &quot;real-world&quot=
+; example.<br>
+Code on GitHub [1] and live demo on Heroku [2]. Cheers.<br>
+<br>
+PS: The first step is to create a database migration, see<br>
+001_create_db.rb [3], for example e.g. use.<br>
+<br>
+=C2=A0 def up<br>
+=C2=A0 =C2=A0 LogDb.create=C2=A0 =C2=A0 =C2=A0# logs table<br>
+=C2=A0 =C2=A0 ConfDb.create=C2=A0 =C2=A0 # props table<br>
+=C2=A0 =C2=A0 TagDb.create=C2=A0 =C2=A0 =C2=A0# tags, taggings table<br>
+=C2=A0 =C2=A0 WorldDb.create<br>
+=C2=A0 end<br>
+<br>
+[1] <a href=3D"http://github.com/worlddb/world.db.admin" rel=3D"noreferrer"=
+ target=3D"_blank">github.com/worlddb/world.db.admin</a><br>
+[2] <a href=3D"http://worlddb.herokuapp.com" rel=3D"noreferrer" target=3D"_=
+blank">worlddb.herokuapp.com</a><br>
+[3] <a href=3D"http://github.com/worlddb/world.db.admin/blob/master/db/migr=
+ate/001_create_db.rb" rel=3D"noreferrer" target=3D"_blank">github.com/world=
+db/world.db.admin/blob/master/db/migrate/001_create_db.rb</a><br>
+</blockquote></div>
+
+--001a113a7f2ecf66da0528ab72ae--
+

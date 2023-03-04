@@ -1,0 +1,88 @@
+From 2066310234112@xxx Tue Jun 16 00:16:48 +0000 2015
+X-GM-THRID: 1861086085120
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,f3433d66f198c649
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.159.228 with SMTP id xf4mr14714181pab.24.1408985190589;
+        Mon, 25 Aug 2014 09:46:30 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.20.173 with SMTP id 42ls592553qgj.58.gmail; Mon, 25 Aug
+ 2014 09:46:30 -0700 (PDT)
+X-Received: by 10.140.82.81 with SMTP id g75mr43922qgd.12.1408985190235;
+        Mon, 25 Aug 2014 09:46:30 -0700 (PDT)
+X-Google-Doc-Id: 3a7088084032c47
+X-Google-Web-Client: true
+Date: Mon, 25 Aug 2014 09:46:29 -0700 (PDT)
+From: Jack Sierkstra <jacksierkstra@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <93c109c5-43b2-4701-8388-b8d15d4d14d4@googlegroups.com>
+In-Reply-To: <7e0ca3ad-6e93-4e72-a099-5fbaf0cb6ea1@googlegroups.com>
+References: <7d892c64-8738-47aa-8d1b-5b98beee6b96@googlegroups.com>
+ <7e0ca3ad-6e93-4e72-a099-5fbaf0cb6ea1@googlegroups.com>
+Subject: Re: And ActiveRecord::RecordNotFound ERROR when building champion
+ league
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_299_1149939922.1408985189874"
+X-Google-Token: EOXQ7Z8Fo-PmYUdixb40
+X-Google-IP: 195.241.119.253
+
+------=_Part_299_1149939922.1408985189874
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_300_1834929701.1408985189874"
+
+------=_Part_300_1834929701.1408985189874
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I would really like to build the champions league data. I already tried to 
+fix the Champions League repo myself, but I get one error after another. It 
+is very frustrating because all I get is ActiveRecord::RecordNotFound. This 
+is obviously not very descriptive. Is there anyway to output more 
+information about what it is trying to do?
+
+Op zondag 24 augustus 2014 21:46:35 UTC+2 schreef Gerald Bauer:
+>
+> Hello,
+>
+>   Thanks for trying fooball.db.
+>
+>    Sorry the champions league build is currently not working - the plan is 
+> to get it working for the group phase ;-) starting in mid-September.   I 
+> try to get the build and setups updated this week (but as always - no 
+> guarantee - if you need anything as soon as possible, please try to update 
+> it yourself).
+>
+>    Cheers.
+>
+> PS: If you want to try out the build the English Premier League, French 
+> Ligue 1, Deutsche Bundesliga n Austrian Bundesliga is working and 
+> up-to-date.  e.g. try $ rake build DATA=de   and so on.
+>
+
+------=_Part_300_1834929701.1408985189874
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I would really like to build the champions league data. I =
+already tried to fix the Champions League repo myself, but I get one error =
+after another. It is very frustrating because all I get is ActiveRecord::Re=
+cordNotFound. This is obviously not very descriptive. Is there anyway to ou=
+tput more information about what it is trying to do?<br><br>Op zondag 24 au=
+gustus 2014 21:46:35 UTC+2 schreef Gerald Bauer:<blockquote class=3D"gmail_=
+quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;pa=
+dding-left: 1ex;"><div dir=3D"ltr">Hello,<br><br>&nbsp; Thanks for trying f=
+ooball.db.<br><br>&nbsp;&nbsp; Sorry the champions league build is currentl=
+y not working - the plan is to get it working for the group phase ;-) start=
+ing in mid-September.&nbsp;&nbsp; I try to get the build and setups updated=
+ this week (but as always - no guarantee - if you need anything as soon as =
+possible, please try to update it yourself).<br><br>&nbsp;&nbsp; Cheers.<br=
+><br>PS: If you want to try out the build the English Premier League, Frenc=
+h Ligue 1, Deutsche Bundesliga n Austrian Bundesliga is working and up-to-d=
+ate.&nbsp; e.g. try $ rake build DATA=3Dde&nbsp;&nbsp; and so on.<br></div>=
+</blockquote></div>
+------=_Part_300_1834929701.1408985189874--
+
+------=_Part_299_1149939922.1408985189874--
+

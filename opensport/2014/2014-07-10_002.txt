@@ -1,0 +1,63 @@
+From 1593509412864@xxx Tue Jun 16 00:16:59 +0000 2015
+X-GM-THRID: 1591517118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.37.137 with SMTP id y9mr4791812lbj.6.1404976634953;
+        Thu, 10 Jul 2014 00:17:14 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.5.9 with SMTP id o9ls3087lao.38.gmail; Thu, 10 Jul 2014
+ 00:17:13 -0700 (PDT)
+X-Received: by 10.152.171.104 with SMTP id at8mr834331lac.6.1404976633512;
+        Thu, 10 Jul 2014 00:17:13 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x232.google.com (mail-wg0-x232.google.com [2a00:1450:400c:c00::232])
+        by gmr-mx.google.com with ESMTPS id r13si487528wib.0.2014.07.10.00.17.13
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 10 Jul 2014 00:17:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::232 as permitted sender) client-ip=2a00:1450:400c:c00::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f50.google.com with SMTP id n12so1605332wgh.9
+        for <opensport@googlegroups.com>; Thu, 10 Jul 2014 00:17:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=YxkhW90XMotM/p1kM1KHwU2kNkBjHKsC6abaG4LghSA=;
+        b=AWL+qUJSMczUI7PVsSVx1RXjEUuBK6pBOquyVM5JfLLNxv1t3lwMJ+iWr1Xe/qrmJi
+         sIYXo5V/f7vKuyWyOfqazTfnfZys6KMf2Y3WlQaI41TKv+PhpID8g2M4VzYGCq6DoDBq
+         FBmPHcppWsIAd5wooHNYxEbRdBdOV0UnuQ8nr+26LNJhkROBoyE5IJ0tpWi4YyUs9GTu
+         Po1Z8R3am3xcb74+KVhtoLZ33VZxO/w0PrHHnuJiaaXuOZfOpgnj1Uw1ywx93+CXB5ye
+         gAytvP2Yk0wl4Jq7S6pM3FseU90uyKzSw9J8S8Om7QJUZxLV8dXznbmfPNTiw3Og0HwR
+         mFLA==
+MIME-Version: 1.0
+X-Received: by 10.194.20.230 with SMTP id q6mr54664025wje.43.1404976633426;
+ Thu, 10 Jul 2014 00:17:13 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Thu, 10 Jul 2014 00:17:13 -0700 (PDT)
+In-Reply-To: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+Date: Thu, 10 Jul 2014 09:17:13 +0200
+Message-ID: <CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Carl,
+   Great idea. Just started adding stats for teams and groups as a first step.
+
+   Still working on getting the squads (player import) reader ready.
+
+  Again great idea. As always you're welcome to go ahead and add new
+stats tables.  Keep it up. Thanks for getting it all started with the
+major soccer league.
+
+   One plan  to check the squads and goal reader/parser for players is
+to calculate all time records for the world cup's best goal scorerer
+etc.  Cheers.
+

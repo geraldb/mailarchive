@@ -1,0 +1,109 @@
+From 6831424913657561088@xxx Wed May 27 07:37:39 +0000 2020
+X-GM-THRID: 6831424910904000512
+X-Received: by 2002:aed:37ca:: with SMTP id j68mr2892535qtb.276.1590565059062;
+        Wed, 27 May 2020 00:37:39 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:620a:2142:: with SMTP id m2ls1618936qkm.1.gmail; Wed, 27
+ May 2020 00:37:38 -0700 (PDT)
+X-Received: by 2002:a37:c20a:: with SMTP id i10mr2706178qkm.29.1590565058534;
+        Wed, 27 May 2020 00:37:38 -0700 (PDT)
+Received: by 2002:a05:620a:1383:b029:e6:9584:d5fd with SMTP id k3-20020a05620a1383b02900e69584d5fdmsqki;
+        Tue, 26 May 2020 15:30:03 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyda8RBZMb0LdQZITdQgCO6mYbSzrtOKPPbvlcKORU7d3ulr6fbohD2HEj0aM9rkeYHzT4SYe6DYA==
+X-Received: by 2002:a25:8b86:: with SMTP id j6mr5069721ybl.265.1590532202812;
+        Tue, 26 May 2020 15:30:02 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Tue, 26 May 2020 15:30:02 -0700 (PDT)
+From: Oscar Batori <oscarbatori@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <8a4c2a38-6a6b-4f14-a50b-d1c69366477a@googlegroups.com>
+Subject: Hosting data on DoltHub
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2262_2070146513.1590532202637"
+X-Google-Token: EOqwtvYFiWtr60UNg1A0
+X-Google-IP: 172.91.107.135
+
+------=_Part_2262_2070146513.1590532202637
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2263_716633908.1590532202637"
+
+------=_Part_2263_716633908.1590532202637
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Folks,
+
+I am a passionate football fan, and also happen to work on a product called 
+DoltHub. Briefly, Dolt is an open source database with Git-like features. 
+It's as if MySQL and Git had a baby. It provides a Git-like experience for 
+tables of data. DoltHub is a product that provides a collaboration platform 
+for Dolt data. Dolt is free, and always will be. DoltHub is free for open 
+data.
+
+I believe that Dolt and DoltHub provide an extremely elegant distribution 
+model, very similar to Git, but for a relational database. Furthermore, 
+when you get a Dolt repo, it's a functioning SQL database, so you can start 
+doing analysis right away. It runs a MySQL Server instance, so it connects 
+to the usual Pandas toolchain. Our CEO wrote a blogpost 
+<https://www.dolthub.com/blog/2020-05-18-distribute-dolt-not-api/> about 
+distributing data using Dolt and DoltHub, and we have an extensive 
+documentation site <https://www.dolthub.com/docs>.
+
+I notice many different files for different leagues and different years. I 
+believe this project is calling for a unified database with different 
+tables for leagues that provide different schemas, then possibly with views 
+to make data uniform. Cloning Dolt data is easy:
+$ dolt clone openfootball/club-football
+
+Within such a repo we can imagine having tables for each league/country or 
+whatever. Members of the community can make pull requests against DoltHub 
+suggesting useful views. DoltHub empowers the maintainers of OpenFootball 
+to keep total control of the repo, setting permissions appropriately.
+
+Let me know your thoughts, we are happy to put some hours into this on our 
+side.
+
+-Oscar
+
+------=_Part_2263_716633908.1590532202637
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Folks,<div><br></div><div>I am a passionate football fan, =
+and also happen to work on a product called DoltHub. Briefly, Dolt is an op=
+en source database with Git-like features. It&#39;s as if MySQL and Git had=
+ a baby. It provides a Git-like experience for tables of data. DoltHub is a=
+ product that provides a collaboration platform for Dolt data. Dolt is free=
+, and always will be. DoltHub is free for open data.</div><div><br></div><d=
+iv>I believe that Dolt and DoltHub provide an extremely elegant distributio=
+n model, very similar to Git, but for a relational database. Furthermore, w=
+hen you get a Dolt repo, it&#39;s a functioning SQL database, so you can st=
+art doing analysis right away. It runs a MySQL Server instance, so it conne=
+cts to the usual Pandas toolchain. Our CEO wrote a <a href=3D"https://www.d=
+olthub.com/blog/2020-05-18-distribute-dolt-not-api/">blogpost</a> about dis=
+tributing data using Dolt and DoltHub, and we have an <a href=3D"https://ww=
+w.dolthub.com/docs">extensive documentation site</a>.</div><div><br></div><=
+div>I notice many different files for different leagues and different years=
+. I believe this project is calling for a unified database with different t=
+ables for leagues that provide different schemas, then possibly with views =
+to make data uniform. Cloning Dolt data is easy:</div><div><div class=3D"pr=
+ettyprint" style=3D"background-color: rgb(250, 250, 250); border-color: rgb=
+(187, 187, 187); border-style: solid; border-width: 1px; overflow-wrap: bre=
+ak-word;"><code class=3D"prettyprint"><div class=3D"subprettyprint"><span s=
+tyle=3D"color: #000;" class=3D"styled-by-prettify">$ dolt clone openfootbal=
+l</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><=
+font color=3D"#000000"><span style=3D"color: #000;" class=3D"styled-by-pret=
+tify">club</span><span style=3D"color: #660;" class=3D"styled-by-prettify">=
+-</span><span style=3D"color: #000;" class=3D"styled-by-prettify">football<=
+/span></font></div></code></div><br>Within such a repo we can imagine havin=
+g tables for each league/country or whatever. Members of the community can =
+make pull requests against DoltHub suggesting useful views. DoltHub empower=
+s the maintainers of OpenFootball to keep total control of the repo, settin=
+g permissions appropriately.</div><div><br></div><div>Let me know your thou=
+ghts, we are happy to put some hours into this on our side.</div><div><br><=
+/div><div>-Oscar</div></div>
+------=_Part_2263_716633908.1590532202637--
+
+------=_Part_2262_2070146513.1590532202637--
+

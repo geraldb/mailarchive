@@ -1,0 +1,55 @@
+From 646687227904@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 646810959872
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,57251d6f20ed675d,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.224.35.13 with SMTP id n13mr272124qad.9.1275431092763;
+        Tue, 01 Jun 2010 15:24:52 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.229.27.66 with SMTP id h2ls2339810qcc.1.p; Tue, 01 Jun 2010 
+	15:24:52 -0700 (PDT)
+Received: by 10.224.87.67 with SMTP id v3mr270702qal.27.1275431092107;
+        Tue, 01 Jun 2010 15:24:52 -0700 (PDT)
+Received: by 10.101.194.22 with SMTP id w22mr580992anp.37.1274461713205;
+        Fri, 21 May 2010 10:08:33 -0700 (PDT)
+Received: by 10.101.194.22 with SMTP id w22mr580991anp.37.1274461713181;
+        Fri, 21 May 2010 10:08:33 -0700 (PDT)
+Return-Path: <jon.walsh.mail@gmail.com>
+Received: from mail-gy0-f191.google.com (mail-gy0-f191.google.com [209.85.160.191])
+        by gmr-mx.google.com with ESMTP id 18si113571gxk.15.2010.05.21.10.08.33;
+        Fri, 21 May 2010 10:08:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jon.walsh.mail@gmail.com designates 209.85.160.191 as permitted sender) client-ip=209.85.160.191;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of jon.walsh.mail@gmail.com designates 209.85.160.191 as permitted sender) smtp.mail=jon.walsh.mail@gmail.com
+Received: by gyh4 with SMTP id 4so1317990gyh.8
+        for <webslideshow@googlegroups.com>; Fri, 21 May 2010 10:08:33 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.150.168.5 with SMTP id q5mr189026ybe.54.1274461713118; Fri, 21 
+	May 2010 10:08:33 -0700 (PDT)
+Received: by 40g2000pry.googlegroups.com with HTTP; Fri, 21 May 2010 10:08:33 
+	-0700 (PDT)
+Date: Fri, 21 May 2010 10:08:33 -0700 (PDT)
+X-IP: 122.108.157.186
+User-Agent: G2/1.0
+X-Google-Token: EJH82t8EJM3m9ncOCII0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/533.9 
+	(KHTML, like Gecko) Chrome/6.0.401.1 Safari/533.9,gzip(gfe)
+Message-ID: <6ba8c13a-1da0-4fc5-b3b6-e2ee7a32d0eb@40g2000pry.googlegroups.com>
+Subject: [S6 bug] s6/slides.core.js not loading
+From: Jon Walsh <jon.walsh.mail@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hi, when I view S6 slides (with or without S9), the "slides.core.js"
+isn't loaded in Google Chrome. To fix it, I commented out where it's
+loaded with jQuery in "slides.js", and added:
+
+<script src="s6/slides.core.js" type="text/javascript"></script>
+
+To the actual html file. This might just be a bug in chrome, though I
+got a JS warning in firefox too.
+
+running: Chrome 6.0.401.1 dev - Linux
+
+cheers, Jon
+

@@ -1,0 +1,65 @@
+From 215393239040@xxx Wed Mar 04 10:41:50 +0000 2015
+X-GM-THRID: 215242244096
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,35c5752a9cf7aafa,start
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.216.195 with SMTP id os3mr4127090pac.11.1425465709548;
+        Wed, 04 Mar 2015 02:41:49 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.182.80.163 with SMTP id s3ls215109obx.81.gmail; Wed, 04 Mar
+ 2015 02:41:49 -0800 (PST)
+X-Received: by 10.182.92.226 with SMTP id cp2mr4224041obb.44.1425465709316;
+        Wed, 04 Mar 2015 02:41:49 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x22c.google.com (mail-ie0-x22c.google.com. [2607:f8b0:4001:c03::22c])
+        by gmr-mx.google.com with ESMTPS id mg3si1451015igb.0.2015.03.04.02.41.49
+        for <beerdb@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 04 Mar 2015 02:41:49 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::22c as permitted sender) client-ip=2607:f8b0:4001:c03::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::22c as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ie0-x22c.google.com with SMTP id tr6so65947341ieb.7
+        for <beerdb@googlegroups.com>; Wed, 04 Mar 2015 02:41:49 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=4WuasJmr85l+kvXfbExNJe0vUvvv7RFb80gCASUrrPs=;
+        b=rF4wLMcXDR4xhq/BgbN07PyhTeLKr4D5uz3jAs4rYSXxka5sAb6xbO9uvEsoAN8RZP
+         7JRwsJv7RTwUR4oLv1qqq8F8gFHk+CDD6lBwjwSp0ILHm0E/taVO4Ro7izJBOmdCBtjs
+         E5BUUF38tzwQIhrysswLg/W9cbyDYntZD2RKo3HEC2T/ebCSUNRHSTs12IUBK/LGGmKr
+         saEB4xVGwIzxvwdce5lxSY03voRjhUFKCXwjOYTVtFYzZDPJ3WO3S2WzJ4V8zxRncSNO
+         bTSEL/9zVJVhyRphtvlmyQYSTZm63lj3Z7bk6nTOeKe32xlNlQzNsVwMRa0QOG6ftDbu
+         0uBQ==
+MIME-Version: 1.0
+X-Received: by 10.107.3.20 with SMTP id 20mr9441875iod.92.1425465709203; Wed,
+ 04 Mar 2015 02:41:49 -0800 (PST)
+Received: by 10.64.142.11 with HTTP; Wed, 4 Mar 2015 02:41:49 -0800 (PST)
+Date: Wed, 4 Mar 2015 11:41:49 +0100
+Message-ID: <CAAxEZd_H-Y5BwMhymfgpQP94nvLV-sivoqmSmZF10rx3FbwkrQ@mail.gmail.com>
+Subject: New Datafiles for Belgium (be) and Czech Republic (cz) - e.g. use $
+ beerdb new be
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  I've added some more datafiles [1] that let you build your own
+beer.db with a single command e.g.
+
+  $ beerdb new be
+
+  The new datafiles include:
+
+  - be.rb  (for Belgium)
+  - cz.rb  (for Czech Republic)
+
+  As always if you run into any trouble or have questions or comments,
+let us know. Cheers.
+
+[1] github.com/openbeer/datafile
+

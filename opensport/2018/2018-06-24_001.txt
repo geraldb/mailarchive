@@ -1,0 +1,630 @@
+From 6570890672898834432@xxx Mon Jun 25 05:31:44 +0000 2018
+X-GM-THRID: 6570890671237890048
+X-Received: by 2002:a0d:e306:: with SMTP id m6-v6mr3258160ywe.22.1529904704224;
+        Sun, 24 Jun 2018 22:31:44 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a81:9a02:: with SMTP id r2-v6ls2275658ywg.21.gmail; Sun, 24
+ Jun 2018 22:31:43 -0700 (PDT)
+X-Received: by 2002:a81:ce06:: with SMTP id t6-v6mr2915552ywi.163.1529904703526;
+        Sun, 24 Jun 2018 22:31:43 -0700 (PDT)
+Received: by 2002:a81:148d:0:0:0:0:0 with SMTP id 135-v6msywu;
+        Sun, 24 Jun 2018 16:40:49 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpd6azOyZ1AOHShKmZjudTieiDqmNIlMbssPhxt6ma77Rifd7lW9qZEib76TJiC+PGaB2pJNkCv8dg==
+X-Received: by 2002:a81:9ac4:: with SMTP id r187-v6mr748500ywg.4.1529883648849;
+        Sun, 24 Jun 2018 16:40:48 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Sun, 24 Jun 2018 16:40:48 -0700 (PDT)
+From: Aaron Gardner <yltlatl@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <ebef5d68-bab9-4c30-87f5-822b945473a2@googlegroups.com>
+Subject: sportweb - tzinfo-data missing
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_30029_1751536234.1529883648687"
+X-Google-Token: EIDYwNkFcNwoGw7stYE0
+X-Google-IP: 67.215.14.205
+
+------=_Part_30029_1751536234.1529883648687
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_30030_978190082.1529883648688"
+
+------=_Part_30030_978190082.1529883648688
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+I'm trying to run sportweb. Everything seems to install fine, but when I 
+run it I get error below about tzinfo-data missing. I looked in the 
+sportweb Gemfile (/var/lib/gems/2.5.0/gems/sportweb-0.1.0/Gemfile), and it 
+is there. Any idea why I am getting this error and/or how to get around it?
+
+hello from main
+[boot] enter boot_with_bundler.rb
+ENV['RACK_ENV'] = development
+[boot] before require bundler
+[boot] after require bundler
+SportWeb.root: >>/var/lib/gems/2.5.0/gems/sportweb-0.1.0<<
+ENV['BUNDLE_GEMFILE']=>><<
+using built-in Gemfile (shipping with sportweb gem)
+ENV['BUNDLE_GEMFILE']=>>/var/lib/gems/2.5.0/gems/sportweb-0.1.0/Gemfile<<
+load_path before:
+["/usr/share/rubygems-integration/all/gems/did_you_mean-1.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/concurrent-ruby-1.0.5/lib",
+ "/var/lib/gems/2.5.0/gems/i18n-1.0.1/lib",
+ "/var/lib/gems/2.5.0/gems/thread_safe-0.3.6/lib",
+ "/var/lib/gems/2.5.0/gems/tzinfo-1.2.5/lib",
+ "/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/rack-2.0.5/lib",
+ "/var/lib/gems/2.5.0/gems/rack-test-1.0.0/lib",
+ "/var/lib/gems/2.5.0/gems/mini_portile2-2.3.0/lib",
+ "/var/lib/gems/2.5.0/gems/nokogiri-1.8.3/lib",
+ "/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0/nokogiri-1.8.3",
+ "/var/lib/gems/2.5.0/gems/crass-1.0.4/lib",
+ "/var/lib/gems/2.5.0/gems/loofah-2.2.2/lib",
+ "/var/lib/gems/2.5.0/gems/rails-html-sanitizer-1.0.4/lib",
+ "/var/lib/gems/2.5.0/gems/rails-dom-testing-2.0.3/lib",
+ "/var/lib/gems/2.5.0/gems/builder-3.2.3/lib",
+ "/var/lib/gems/2.5.0/gems/erubi-1.7.1/lib",
+ "/var/lib/gems/2.5.0/gems/actionview-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/actionpack-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/globalid-0.4.1/lib",
+ "/var/lib/gems/2.5.0/gems/activejob-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/activemodel-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/arel-9.0.0/lib",
+ "/var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/logutils-0.6.1/lib",
+ "/var/lib/gems/2.5.0/gems/activerecord-utils-0.4.0/lib",
+ "/var/lib/gems/2.5.0/gems/iniparser-0.1.0/lib",
+ "/var/lib/gems/2.5.0/gems/props-1.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/rubyzip-1.2.1/lib",
+ "/var/lib/gems/2.5.0/gems/textutils-1.4.0/lib",
+ "/var/lib/gems/2.5.0/gems/fetcher-0.4.5/lib",
+ "/var/lib/gems/2.5.0/gems/datafile-0.2.5/lib",
+ "/var/lib/gems/2.5.0/gems/ffi-1.9.25/lib",
+ "/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0/ffi-1.9.25",
+ "/usr/share/rubygems-integration/all/gems/rake-12.3.1/lib",
+ "/var/lib/gems/2.5.0/gems/method_source-0.9.0/lib",
+ "/var/lib/gems/2.5.0/gems/railties-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/jquery-rails-4.3.3/lib",
+ "/var/lib/gems/2.5.0/gems/logutils-activerecord-0.2.1/lib",
+ "/var/lib/gems/2.5.0/gems/minitest-5.11.3/lib",
+ "/var/lib/gems/2.5.0/gems/mustermann-1.0.2/lib",
+ "/var/lib/gems/2.5.0/gems/tagutils-1.0.0/lib",
+ "/var/lib/gems/2.5.0/gems/props-activerecord-0.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/worlddb-models-2.4.0/lib",
+ "/var/lib/gems/2.5.0/gems/persondb-models-0.5.0/lib",
+ "/var/lib/gems/2.5.0/gems/puma-3.11.4/lib",
+ "/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0/puma-3.11.4",
+ "/var/lib/gems/2.5.0/gems/rack-protection-2.0.3/lib",
+ "/var/lib/gems/2.5.0/gems/rb-fsevent-0.10.3/lib",
+ "/var/lib/gems/2.5.0/gems/rb-inotify-0.9.10/lib",
+ "/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib",
+ "/var/lib/gems/2.5.0/gems/sass-3.5.6/lib",
+ "/var/lib/gems/2.5.0/gems/sprockets-3.7.2/lib",
+ "/var/lib/gems/2.5.0/gems/sprockets-rails-3.2.1/lib",
+ "/var/lib/gems/2.5.0/gems/tilt-2.0.8/lib",
+ "/var/lib/gems/2.5.0/gems/sass-rails-5.0.7/lib",
+ "/var/lib/gems/2.5.0/gems/sinatra-2.0.3/lib",
+ "/var/lib/gems/2.5.0/gems/sportdb-admin-0.4.0/lib",
+ "/var/lib/gems/2.5.0/gems/sportdb-models-1.17.0/lib",
+ "/var/lib/gems/2.5.0/gems/sqlite3-1.3.13/lib",
+ "/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0/sqlite3-1.3.13",
+ "/var/lib/gems/2.5.0/gems/thor-0.20.0/lib",
+ "/var/lib/gems/2.5.0/gems/tzinfo-data-1.2018.5/lib",
+ "/var/lib/gems/2.5.0/gems/worlddb-flags-0.1.0/lib",
+ "/var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib",
+ "/usr/local/lib/site_ruby/2.5.0",
+ "/usr/local/lib/x86_64-linux-gnu/site_ruby",
+ "/usr/local/lib/site_ruby",
+ "/usr/lib/ruby/vendor_ruby/2.5.0",
+ "/usr/lib/x86_64-linux-gnu/ruby/vendor_ruby/2.5.0",
+ "/usr/lib/ruby/vendor_ruby",
+ "/usr/lib/ruby/2.5.0",
+ "/usr/lib/x86_64-linux-gnu/ruby/2.5.0"]
+[boot] before Bundler.setup
+[boot] after Bundler.setup
+[boot] adding #{SportWeb.root}/lib to load path 
+/var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib
+load_path after:
+["/var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib",
+ "/var/lib/gems/2.5.0/gems/worlddb-flags-0.1.0/lib",
+ "/var/lib/gems/2.5.0/gems/sqlite3-1.3.13/lib",
+ "/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0/sqlite3-1.3.13",
+ "/var/lib/gems/2.5.0/gems/sportdb-models-1.17.0/lib",
+ "/var/lib/gems/2.5.0/gems/sportdb-admin-0.4.0/lib",
+ "/var/lib/gems/2.5.0/gems/sinatra-2.0.3/lib",
+ "/var/lib/gems/2.5.0/gems/sass-rails-5.0.7/lib",
+ "/var/lib/gems/2.5.0/gems/tilt-2.0.8/lib",
+ "/var/lib/gems/2.5.0/gems/sprockets-rails-3.2.1/lib",
+ "/var/lib/gems/2.5.0/gems/sprockets-3.7.2/lib",
+ "/var/lib/gems/2.5.0/gems/sass-3.5.6/lib",
+ "/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib",
+ "/var/lib/gems/2.5.0/gems/rb-inotify-0.9.10/lib",
+ "/var/lib/gems/2.5.0/gems/rb-fsevent-0.10.3/lib",
+ "/var/lib/gems/2.5.0/gems/rack-protection-2.0.3/lib",
+ "/var/lib/gems/2.5.0/gems/puma-3.11.4/lib",
+ "/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0/puma-3.11.4",
+ "/var/lib/gems/2.5.0/gems/persondb-models-0.5.0/lib",
+ "/var/lib/gems/2.5.0/gems/worlddb-models-2.4.0/lib",
+ "/var/lib/gems/2.5.0/gems/tagutils-1.0.0/lib",
+ "/var/lib/gems/2.5.0/gems/props-activerecord-0.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/mustermann-1.0.2/lib",
+ "/var/lib/gems/2.5.0/gems/logutils-activerecord-0.2.1/lib",
+ "/var/lib/gems/2.5.0/gems/jquery-rails-4.3.3/lib",
+ "/var/lib/gems/2.5.0/gems/railties-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/thor-0.20.0/lib",
+ "/var/lib/gems/2.5.0/gems/method_source-0.9.0/lib",
+ "/var/lib/gems/2.5.0/gems/ffi-1.9.25/lib",
+ "/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0/ffi-1.9.25",
+ "/var/lib/gems/2.5.0/gems/datafile-0.2.5/lib",
+ "/var/lib/gems/2.5.0/gems/textutils-1.4.0/lib",
+ "/var/lib/gems/2.5.0/gems/rubyzip-1.2.1/lib",
+ "/var/lib/gems/2.5.0/gems/props-1.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/iniparser-0.1.0/lib",
+ "/var/lib/gems/2.5.0/gems/fetcher-0.4.5/lib",
+ "/usr/share/rubygems-integration/all/gems/bundler-1.16.1/lib",
+ "/var/lib/gems/2.5.0/gems/activerecord-utils-0.4.0/lib",
+ "/var/lib/gems/2.5.0/gems/logutils-0.6.1/lib",
+ "/var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/arel-9.0.0/lib",
+ "/var/lib/gems/2.5.0/gems/activemodel-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/activejob-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/globalid-0.4.1/lib",
+ "/var/lib/gems/2.5.0/gems/actionpack-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/rack-test-1.0.0/lib",
+ "/var/lib/gems/2.5.0/gems/rack-2.0.5/lib",
+ "/var/lib/gems/2.5.0/gems/actionview-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/rails-html-sanitizer-1.0.4/lib",
+ "/var/lib/gems/2.5.0/gems/loofah-2.2.2/lib",
+ "/var/lib/gems/2.5.0/gems/crass-1.0.4/lib",
+ "/var/lib/gems/2.5.0/gems/rails-dom-testing-2.0.3/lib",
+ "/var/lib/gems/2.5.0/gems/nokogiri-1.8.3/lib",
+ "/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0/nokogiri-1.8.3",
+ "/var/lib/gems/2.5.0/gems/mini_portile2-2.3.0/lib",
+ "/var/lib/gems/2.5.0/gems/erubi-1.7.1/lib",
+ "/var/lib/gems/2.5.0/gems/builder-3.2.3/lib",
+ "/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib",
+ "/var/lib/gems/2.5.0/gems/tzinfo-1.2.5/lib",
+ "/var/lib/gems/2.5.0/gems/thread_safe-0.3.6/lib",
+ "/var/lib/gems/2.5.0/gems/minitest-5.11.3/lib",
+ "/var/lib/gems/2.5.0/gems/i18n-1.0.1/lib",
+ "/var/lib/gems/2.5.0/gems/concurrent-ruby-1.0.5/lib",
+ "/usr/share/rubygems-integration/all/gems/rake-12.3.1/lib",
+ "/usr/local/lib/site_ruby/2.5.0",
+ "/usr/local/lib/x86_64-linux-gnu/site_ruby",
+ "/usr/local/lib/site_ruby",
+ "/usr/lib/ruby/vendor_ruby/2.5.0",
+ "/usr/lib/x86_64-linux-gnu/ruby/vendor_ruby/2.5.0",
+ "/usr/lib/ruby/vendor_ruby",
+ "/usr/lib/ruby/2.5.0",
+ "/usr/lib/x86_64-linux-gnu/ruby/2.5.0"]
+[boot] before Bundler.require
+activerecord-utils/0.4.0 (activerecord/5.2.0) on Ruby 2.5.1 (2018-03-29) 
+[x86_64-linux-gnu]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::StateBase<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::CityBase<
+/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/railtie.rb:39:in 
+`rescue in block in <class:Railtie>': tzinfo-data is not present. Please 
+add gem 'tzinfo-data' to your Gemfile and run bundle install 
+(TZInfo::DataSourceNotFound)
+    from 
+/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/railtie.rb:36:in 
+`block in <class:Railtie>'
+    from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:32:in 
+`instance_exec'
+    from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:32:in 
+`run'
+    from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:61:in 
+`block in run_initializers'
+    from /usr/lib/ruby/2.5.0/tsort.rb:228:in `block in tsort_each'
+    from /usr/lib/ruby/2.5.0/tsort.rb:350:in `block (2 levels) in 
+each_strongly_connected_component'
+    from /usr/lib/ruby/2.5.0/tsort.rb:431:in 
+`each_strongly_connected_component_from'
+    from /usr/lib/ruby/2.5.0/tsort.rb:349:in `block in 
+each_strongly_connected_component'
+    from /usr/lib/ruby/2.5.0/tsort.rb:347:in `each'
+    from /usr/lib/ruby/2.5.0/tsort.rb:347:in `call'
+    from /usr/lib/ruby/2.5.0/tsort.rb:347:in 
+`each_strongly_connected_component'
+    from /usr/lib/ruby/2.5.0/tsort.rb:226:in `tsort_each'
+    from /usr/lib/ruby/2.5.0/tsort.rb:205:in `tsort_each'
+    from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:60:in 
+`run_initializers'
+    from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/application.rb:361:in 
+`initialize!'
+    from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/railtie.rb:190:in 
+`public_send'
+    from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/railtie.rb:190:in 
+`method_missing'
+    from /var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib/sportweb/app.rb:101:in 
+`<top (required)>'
+    from 
+/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:283:in 
+`require'
+    from 
+/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:283:in 
+`block in require'
+    from 
+/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:249:in 
+`load_dependency'
+    from 
+/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:283:in 
+`require'
+    from 
+/var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib/sportweb/boot_with_bundler.rb:123:in 
+`<top (required)>'
+    from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in 
+`require'
+    from /usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in 
+`require'
+    from /var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib/sportweb.rb:25:in 
+`main'
+    from /var/lib/gems/2.5.0/gems/sportweb-0.1.0/bin/sportweb:5:in `<top 
+(required)>'
+    from /usr/local/bin/sportweb:23:in `load'
+    from /usr/local/bin/sportweb:23:in `<main>'
+sportdb-admin 0.4.0 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+worlddb-flags 0.1.0 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+[boot] after Bundler.require
+[boot] before require rails
+[boot] after require rails
+[boot] before require rails/all
+[boot] after require rails/all
+[boot] before require sportweb/app
+[boot] enter sportweb/app.rb
+{:adapter=>"sqlite3", :database=>"sport.db"}
+[boot] before App.initialize!
+Traceback (most recent call last):
+        29: from /usr/local/bin/sportweb:23:in `<main>'
+        28: from /usr/local/bin/sportweb:23:in `load'
+        27: from /var/lib/gems/2.5.0/gems/sportweb-0.1.0/bin/sportweb:5:in 
+`<top (required)>'
+        26: from 
+/var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib/sportweb.rb:25:in `main'
+        25: from 
+/usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in `require'
+        24: from 
+/usr/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in `require'
+        23: from 
+/var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib/sportweb/boot_with_bundler.rb:123:in 
+`<top (required)>'
+        22: from 
+/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:283:in 
+`require'
+        21: from 
+/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:249:in 
+`load_dependency'
+        20: from 
+/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:283:in 
+`block in require'
+        19: from 
+/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:283:in 
+`require'
+        18: from 
+/var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib/sportweb/app.rb:101:in `<top 
+(required)>'
+        17: from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/railtie.rb:190:in 
+`method_missing'
+        16: from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/railtie.rb:190:in 
+`public_send'
+        15: from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/application.rb:361:in 
+`initialize!'
+        14: from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:60:in 
+`run_initializers'
+        13: from /usr/lib/ruby/2.5.0/tsort.rb:205:in `tsort_each'
+        12: from /usr/lib/ruby/2.5.0/tsort.rb:226:in `tsort_each'
+        11: from /usr/lib/ruby/2.5.0/tsort.rb:347:in 
+`each_strongly_connected_component'
+        10: from /usr/lib/ruby/2.5.0/tsort.rb:347:in `call'
+         9: from /usr/lib/ruby/2.5.0/tsort.rb:347:in `each'
+         8: from /usr/lib/ruby/2.5.0/tsort.rb:349:in `block in 
+each_strongly_connected_component'
+         7: from /usr/lib/ruby/2.5.0/tsort.rb:431:in 
+`each_strongly_connected_component_from'
+         6: from /usr/lib/ruby/2.5.0/tsort.rb:350:in `block (2 levels) in 
+each_strongly_connected_component'
+         5: from /usr/lib/ruby/2.5.0/tsort.rb:228:in `block in tsort_each'
+         4: from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:61:in 
+`block in run_initializers'
+         3: from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:32:in 
+`run'
+         2: from 
+/var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:32:in 
+`instance_exec'
+         1: from 
+/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/railtie.rb:36:in 
+`block in <class:Railtie>'
+/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/railtie.rb:39:in 
+`rescue in block in <class:Railtie>': tzinfo-data is not present. Please 
+add gem 'tzinfo-data' to your Gemfile and run bundle install 
+(TZInfo::DataSourceNotFound)
+
+------=_Part_30030_978190082.1529883648688
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hello,</div><div><br></div><div>I&#39;m trying to run=
+ sportweb. Everything seems to install fine, but when I run it I get error =
+below about tzinfo-data missing. I looked in the sportweb Gemfile (/var/lib=
+/gems/2.5.0/gems/sportweb-0.1.0/Gemfile), and it is there. Any idea why I a=
+m getting this error and/or how to get around it?</div><div><br></div><div>=
+hello from main<br>[boot] enter boot_with_bundler.rb<br>ENV[&#39;RACK_ENV&#=
+39;] =3D development<br>[boot] before require bundler<br>[boot] after requi=
+re bundler<br>SportWeb.root: &gt;&gt;/var/lib/gems/2.5.0/gems/sportweb-0.1.=
+0&lt;&lt;<br>ENV[&#39;BUNDLE_GEMFILE&#39;]=3D&gt;&gt;&lt;&lt;<br>using buil=
+t-in Gemfile (shipping with sportweb gem)<br>ENV[&#39;BUNDLE_GEMFILE&#39;]=
+=3D&gt;&gt;/var/lib/gems/2.5.0/gems/sportweb-0.1.0/Gemfile&lt;&lt;<br>load_=
+path before:<br>[&quot;/usr/share/rubygems-integration/all/gems/did_you_mea=
+n-1.2.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/concurrent-ruby-=
+1.0.5/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/i18n-1.0.1/lib&quo=
+t;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/thread_safe-0.3.6/lib&quot;,<br=
+>=C2=A0&quot;/var/lib/gems/2.5.0/gems/tzinfo-1.2.5/lib&quot;,<br>=C2=A0&quo=
+t;/var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib&quot;,<br>=C2=A0&quot;/v=
+ar/lib/gems/2.5.0/gems/rack-2.0.5/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2=
+.5.0/gems/rack-test-1.0.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gem=
+s/mini_portile2-2.3.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/no=
+kogiri-1.8.3/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/extensions/x86_6=
+4-linux/2.5.0/nokogiri-1.8.3&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems=
+/crass-1.0.4/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/loofah-2.2.=
+2/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/rails-html-sanitizer-1=
+.0.4/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/rails-dom-testing-2=
+.0.3/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/builder-3.2.3/lib&q=
+uot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/erubi-1.7.1/lib&quot;,<br>=C2=
+=A0&quot;/var/lib/gems/2.5.0/gems/actionview-5.2.0/lib&quot;,<br>=C2=A0&quo=
+t;/var/lib/gems/2.5.0/gems/actionpack-5.2.0/lib&quot;,<br>=C2=A0&quot;/var/=
+lib/gems/2.5.0/gems/globalid-0.4.1/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/=
+2.5.0/gems/activejob-5.2.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/ge=
+ms/activemodel-5.2.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/are=
+l-9.0.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/activerecord-5.2=
+.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/logutils-0.6.1/lib&qu=
+ot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/activerecord-utils-0.4.0/lib&q=
+uot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/iniparser-0.1.0/lib&quot;,<br=
+>=C2=A0&quot;/var/lib/gems/2.5.0/gems/props-1.2.0/lib&quot;,<br>=C2=A0&quot=
+;/var/lib/gems/2.5.0/gems/rubyzip-1.2.1/lib&quot;,<br>=C2=A0&quot;/var/lib/=
+gems/2.5.0/gems/textutils-1.4.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5=
+.0/gems/fetcher-0.4.5/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/da=
+tafile-0.2.5/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/ffi-1.9.25/=
+lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0=
+/ffi-1.9.25&quot;,<br>=C2=A0&quot;/usr/share/rubygems-integration/all/gems/=
+rake-12.3.1/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/method_sourc=
+e-0.9.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/railties-5.2.0/l=
+ib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/jquery-rails-4.3.3/lib&qu=
+ot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/logutils-activerecord-0.2.1/li=
+b&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/minitest-5.11.3/lib&quot;,=
+<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/mustermann-1.0.2/lib&quot;,<br>=C2=
+=A0&quot;/var/lib/gems/2.5.0/gems/tagutils-1.0.0/lib&quot;,<br>=C2=A0&quot;=
+/var/lib/gems/2.5.0/gems/props-activerecord-0.2.0/lib&quot;,<br>=C2=A0&quot=
+;/var/lib/gems/2.5.0/gems/worlddb-models-2.4.0/lib&quot;,<br>=C2=A0&quot;/v=
+ar/lib/gems/2.5.0/gems/persondb-models-0.5.0/lib&quot;,<br>=C2=A0&quot;/var=
+/lib/gems/2.5.0/gems/puma-3.11.4/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.=
+5.0/extensions/x86_64-linux/2.5.0/puma-3.11.4&quot;,<br>=C2=A0&quot;/var/li=
+b/gems/2.5.0/gems/rack-protection-2.0.3/lib&quot;,<br>=C2=A0&quot;/var/lib/=
+gems/2.5.0/gems/rb-fsevent-0.10.3/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2=
+.5.0/gems/rb-inotify-0.9.10/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/g=
+ems/sass-listen-4.0.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/sa=
+ss-3.5.6/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/sprockets-3.7.2=
+/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/sprockets-rails-3.2.1/l=
+ib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/tilt-2.0.8/lib&quot;,<br>=
+=C2=A0&quot;/var/lib/gems/2.5.0/gems/sass-rails-5.0.7/lib&quot;,<br>=C2=A0&=
+quot;/var/lib/gems/2.5.0/gems/sinatra-2.0.3/lib&quot;,<br>=C2=A0&quot;/var/=
+lib/gems/2.5.0/gems/sportdb-admin-0.4.0/lib&quot;,<br>=C2=A0&quot;/var/lib/=
+gems/2.5.0/gems/sportdb-models-1.17.0/lib&quot;,<br>=C2=A0&quot;/var/lib/ge=
+ms/2.5.0/gems/sqlite3-1.3.13/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/=
+extensions/x86_64-linux/2.5.0/sqlite3-1.3.13&quot;,<br>=C2=A0&quot;/var/lib=
+/gems/2.5.0/gems/thor-0.20.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/=
+gems/tzinfo-data-1.2018.5/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gem=
+s/worlddb-flags-0.1.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/sp=
+ortweb-0.1.0/lib&quot;,<br>=C2=A0&quot;/usr/local/lib/site_ruby/2.5.0&quot;=
+,<br>=C2=A0&quot;/usr/local/lib/x86_64-linux-gnu/site_ruby&quot;,<br>=C2=A0=
+&quot;/usr/local/lib/site_ruby&quot;,<br>=C2=A0&quot;/usr/lib/ruby/vendor_r=
+uby/2.5.0&quot;,<br>=C2=A0&quot;/usr/lib/x86_64-linux-gnu/ruby/vendor_ruby/=
+2.5.0&quot;,<br>=C2=A0&quot;/usr/lib/ruby/vendor_ruby&quot;,<br>=C2=A0&quot=
+;/usr/lib/ruby/2.5.0&quot;,<br>=C2=A0&quot;/usr/lib/x86_64-linux-gnu/ruby/2=
+.5.0&quot;]<br>[boot] before Bundler.setup<br>[boot] after Bundler.setup<br=
+>[boot] adding #{SportWeb.root}/lib to load path /var/lib/gems/2.5.0/gems/s=
+portweb-0.1.0/lib<br>load_path after:<br>[&quot;/var/lib/gems/2.5.0/gems/sp=
+ortweb-0.1.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/worlddb-fla=
+gs-0.1.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/sqlite3-1.3.13/=
+lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0=
+/sqlite3-1.3.13&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/sportdb-mode=
+ls-1.17.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/sportdb-admin-=
+0.4.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/sinatra-2.0.3/lib&=
+quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/sass-rails-5.0.7/lib&quot;,<=
+br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/tilt-2.0.8/lib&quot;,<br>=C2=A0&quo=
+t;/var/lib/gems/2.5.0/gems/sprockets-rails-3.2.1/lib&quot;,<br>=C2=A0&quot;=
+/var/lib/gems/2.5.0/gems/sprockets-3.7.2/lib&quot;,<br>=C2=A0&quot;/var/lib=
+/gems/2.5.0/gems/sass-3.5.6/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/g=
+ems/sass-listen-4.0.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/rb=
+-inotify-0.9.10/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/rb-fseve=
+nt-0.10.3/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/rack-protectio=
+n-2.0.3/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/puma-3.11.4/lib&=
+quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0/pum=
+a-3.11.4&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/persondb-models-0.5=
+.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/worlddb-models-2.4.0/=
+lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/tagutils-1.0.0/lib&quot;=
+,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/props-activerecord-0.2.0/lib&quot=
+;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/mustermann-1.0.2/lib&quot;,<br>=
+=C2=A0&quot;/var/lib/gems/2.5.0/gems/logutils-activerecord-0.2.1/lib&quot;,=
+<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/jquery-rails-4.3.3/lib&quot;,<br>=
+=C2=A0&quot;/var/lib/gems/2.5.0/gems/railties-5.2.0/lib&quot;,<br>=C2=A0&qu=
+ot;/var/lib/gems/2.5.0/gems/thor-0.20.0/lib&quot;,<br>=C2=A0&quot;/var/lib/=
+gems/2.5.0/gems/method_source-0.9.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems=
+/2.5.0/gems/ffi-1.9.25/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/extens=
+ions/x86_64-linux/2.5.0/ffi-1.9.25&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.=
+0/gems/datafile-0.2.5/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/te=
+xtutils-1.4.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/rubyzip-1.=
+2.1/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/props-1.2.0/lib&quot=
+;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/iniparser-0.1.0/lib&quot;,<br>=
+=C2=A0&quot;/var/lib/gems/2.5.0/gems/fetcher-0.4.5/lib&quot;,<br>=C2=A0&quo=
+t;/usr/share/rubygems-integration/all/gems/bundler-1.16.1/lib&quot;,<br>=C2=
+=A0&quot;/var/lib/gems/2.5.0/gems/activerecord-utils-0.4.0/lib&quot;,<br>=
+=C2=A0&quot;/var/lib/gems/2.5.0/gems/logutils-0.6.1/lib&quot;,<br>=C2=A0&qu=
+ot;/var/lib/gems/2.5.0/gems/activerecord-5.2.0/lib&quot;,<br>=C2=A0&quot;/v=
+ar/lib/gems/2.5.0/gems/arel-9.0.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2=
+.5.0/gems/activemodel-5.2.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/g=
+ems/activejob-5.2.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/glob=
+alid-0.4.1/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/actionpack-5.=
+2.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/rack-test-1.0.0/lib&=
+quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/rack-2.0.5/lib&quot;,<br>=C2=
+=A0&quot;/var/lib/gems/2.5.0/gems/actionview-5.2.0/lib&quot;,<br>=C2=A0&quo=
+t;/var/lib/gems/2.5.0/gems/rails-html-sanitizer-1.0.4/lib&quot;,<br>=C2=A0&=
+quot;/var/lib/gems/2.5.0/gems/loofah-2.2.2/lib&quot;,<br>=C2=A0&quot;/var/l=
+ib/gems/2.5.0/gems/crass-1.0.4/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.=
+0/gems/rails-dom-testing-2.0.3/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.=
+0/gems/nokogiri-1.8.3/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/extensi=
+ons/x86_64-linux/2.5.0/nokogiri-1.8.3&quot;,<br>=C2=A0&quot;/var/lib/gems/2=
+.5.0/gems/mini_portile2-2.3.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0=
+/gems/erubi-1.7.1/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/builde=
+r-3.2.3/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/activesupport-5.=
+2.0/lib&quot;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/tzinfo-1.2.5/lib&quo=
+t;,<br>=C2=A0&quot;/var/lib/gems/2.5.0/gems/thread_safe-0.3.6/lib&quot;,<br=
+>=C2=A0&quot;/var/lib/gems/2.5.0/gems/minitest-5.11.3/lib&quot;,<br>=C2=A0&=
+quot;/var/lib/gems/2.5.0/gems/i18n-1.0.1/lib&quot;,<br>=C2=A0&quot;/var/lib=
+/gems/2.5.0/gems/concurrent-ruby-1.0.5/lib&quot;,<br>=C2=A0&quot;/usr/share=
+/rubygems-integration/all/gems/rake-12.3.1/lib&quot;,<br>=C2=A0&quot;/usr/l=
+ocal/lib/site_ruby/2.5.0&quot;,<br>=C2=A0&quot;/usr/local/lib/x86_64-linux-=
+gnu/site_ruby&quot;,<br>=C2=A0&quot;/usr/local/lib/site_ruby&quot;,<br>=C2=
+=A0&quot;/usr/lib/ruby/vendor_ruby/2.5.0&quot;,<br>=C2=A0&quot;/usr/lib/x86=
+_64-linux-gnu/ruby/vendor_ruby/2.5.0&quot;,<br>=C2=A0&quot;/usr/lib/ruby/ve=
+ndor_ruby&quot;,<br>=C2=A0&quot;/usr/lib/ruby/2.5.0&quot;,<br>=C2=A0&quot;/=
+usr/lib/x86_64-linux-gnu/ruby/2.5.0&quot;]<br>[boot] before Bundler.require=
+<br>activerecord-utils/0.4.0 (activerecord/5.2.0) on Ruby 2.5.1 (2018-03-29=
+) [x86_64-linux-gnu]<br>=C2=A0 [TagDb.has_many_tags] adding taggings n tags=
+ has_many assocs to model &gt;WorldDb::Model::Country&lt;<br>=C2=A0 [TagDb.=
+has_many_tags] adding taggings n tags has_many assocs to model &gt;WorldDb:=
+:Model::StateBase&lt;<br>=C2=A0 [TagDb.has_many_tags] adding taggings n tag=
+s has_many assocs to model &gt;WorldDb::Model::CityBase&lt;<br>/var/lib/gem=
+s/2.5.0/gems/activesupport-5.2.0/lib/active_support/railtie.rb:39:in `rescu=
+e in block in &lt;class:Railtie&gt;&#39;: tzinfo-data is not present. Pleas=
+e add gem &#39;tzinfo-data&#39; to your Gemfile and run bundle install (TZI=
+nfo::DataSourceNotFound)<br>=C2=A0=C2=A0=C2=A0 from /var/lib/gems/2.5.0/gem=
+s/activesupport-5.2.0/lib/active_support/railtie.rb:36:in `block in &lt;cla=
+ss:Railtie&gt;&#39;<br>=C2=A0=C2=A0=C2=A0 from /var/lib/gems/2.5.0/gems/rai=
+lties-5.2.0/lib/rails/initializable.rb:32:in `instance_exec&#39;<br>=C2=A0=
+=C2=A0=C2=A0 from /var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/initial=
+izable.rb:32:in `run&#39;<br>=C2=A0=C2=A0=C2=A0 from /var/lib/gems/2.5.0/ge=
+ms/railties-5.2.0/lib/rails/initializable.rb:61:in `block in run_initialize=
+rs&#39;<br>=C2=A0=C2=A0=C2=A0 from /usr/lib/ruby/2.5.0/tsort.rb:228:in `blo=
+ck in tsort_each&#39;<br>=C2=A0=C2=A0=C2=A0 from /usr/lib/ruby/2.5.0/tsort.=
+rb:350:in `block (2 levels) in each_strongly_connected_component&#39;<br>=
+=C2=A0=C2=A0=C2=A0 from /usr/lib/ruby/2.5.0/tsort.rb:431:in `each_strongly_=
+connected_component_from&#39;<br>=C2=A0=C2=A0=C2=A0 from /usr/lib/ruby/2.5.=
+0/tsort.rb:349:in `block in each_strongly_connected_component&#39;<br>=C2=
+=A0=C2=A0=C2=A0 from /usr/lib/ruby/2.5.0/tsort.rb:347:in `each&#39;<br>=C2=
+=A0=C2=A0=C2=A0 from /usr/lib/ruby/2.5.0/tsort.rb:347:in `call&#39;<br>=C2=
+=A0=C2=A0=C2=A0 from /usr/lib/ruby/2.5.0/tsort.rb:347:in `each_strongly_con=
+nected_component&#39;<br>=C2=A0=C2=A0=C2=A0 from /usr/lib/ruby/2.5.0/tsort.=
+rb:226:in `tsort_each&#39;<br>=C2=A0=C2=A0=C2=A0 from /usr/lib/ruby/2.5.0/t=
+sort.rb:205:in `tsort_each&#39;<br>=C2=A0=C2=A0=C2=A0 from /var/lib/gems/2.=
+5.0/gems/railties-5.2.0/lib/rails/initializable.rb:60:in `run_initializers&=
+#39;<br>=C2=A0=C2=A0=C2=A0 from /var/lib/gems/2.5.0/gems/railties-5.2.0/lib=
+/rails/application.rb:361:in `initialize!&#39;<br>=C2=A0=C2=A0=C2=A0 from /=
+var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/railtie.rb:190:in `public_=
+send&#39;<br>=C2=A0=C2=A0=C2=A0 from /var/lib/gems/2.5.0/gems/railties-5.2.=
+0/lib/rails/railtie.rb:190:in `method_missing&#39;<br>=C2=A0=C2=A0=C2=A0 fr=
+om /var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib/sportweb/app.rb:101:in `&lt;=
+top (required)&gt;&#39;<br>=C2=A0=C2=A0=C2=A0 from /var/lib/gems/2.5.0/gems=
+/activesupport-5.2.0/lib/active_support/dependencies.rb:283:in `require&#39=
+;<br>=C2=A0=C2=A0=C2=A0 from /var/lib/gems/2.5.0/gems/activesupport-5.2.0/l=
+ib/active_support/dependencies.rb:283:in `block in require&#39;<br>=C2=A0=
+=C2=A0=C2=A0 from /var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_s=
+upport/dependencies.rb:249:in `load_dependency&#39;<br>=C2=A0=C2=A0=C2=A0 f=
+rom /var/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/depende=
+ncies.rb:283:in `require&#39;<br>=C2=A0=C2=A0=C2=A0 from /var/lib/gems/2.5.=
+0/gems/sportweb-0.1.0/lib/sportweb/boot_with_bundler.rb:123:in `&lt;top (re=
+quired)&gt;&#39;<br>=C2=A0=C2=A0=C2=A0 from /usr/lib/ruby/2.5.0/rubygems/co=
+re_ext/kernel_require.rb:59:in `require&#39;<br>=C2=A0=C2=A0=C2=A0 from /us=
+r/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in `require&#39;<br=
+>=C2=A0=C2=A0=C2=A0 from /var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib/sportw=
+eb.rb:25:in `main&#39;<br>=C2=A0=C2=A0=C2=A0 from /var/lib/gems/2.5.0/gems/=
+sportweb-0.1.0/bin/sportweb:5:in `&lt;top (required)&gt;&#39;<br>=C2=A0=C2=
+=A0=C2=A0 from /usr/local/bin/sportweb:23:in `load&#39;<br>=C2=A0=C2=A0=C2=
+=A0 from /usr/local/bin/sportweb:23:in `&lt;main&gt;&#39;<br>sportdb-admin =
+0.4.0 on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]<br>worlddb-flags 0.1.0 =
+on Ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]<br>[boot] after Bundler.requi=
+re<br>[boot] before require rails<br>[boot] after require rails<br>[boot] b=
+efore require rails/all<br>[boot] after require rails/all<br>[boot] before =
+require sportweb/app<br>[boot] enter sportweb/app.rb<br>{:adapter=3D&gt;&qu=
+ot;sqlite3&quot;, :database=3D&gt;&quot;sport.db&quot;}<br>[boot] before Ap=
+p.initialize!<br>Traceback (most recent call last):<br>=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0 29: from /usr/local/bin/sportweb:23:in `&lt;main&g=
+t;&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 28: from /usr/local/b=
+in/sportweb:23:in `load&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 =
+27: from /var/lib/gems/2.5.0/gems/sportweb-0.1.0/bin/sportweb:5:in `&lt;top=
+ (required)&gt;&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 26: from=
+ /var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib/sportweb.rb:25:in `main&#39;<b=
+r>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 25: from /usr/lib/ruby/2.5.0/r=
+ubygems/core_ext/kernel_require.rb:59:in `require&#39;<br>=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0 24: from /usr/lib/ruby/2.5.0/rubygems/core_ext/=
+kernel_require.rb:59:in `require&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0 23: from /var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib/sportweb/boo=
+t_with_bundler.rb:123:in `&lt;top (required)&gt;&#39;<br>=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0 22: from /var/lib/gems/2.5.0/gems/activesupport-5.=
+2.0/lib/active_support/dependencies.rb:283:in `require&#39;<br>=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 21: from /var/lib/gems/2.5.0/gems/activesupp=
+ort-5.2.0/lib/active_support/dependencies.rb:249:in `load_dependency&#39;<b=
+r>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 20: from /var/lib/gems/2.5.0/g=
+ems/activesupport-5.2.0/lib/active_support/dependencies.rb:283:in `block in=
+ require&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 19: from /var/l=
+ib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/dependencies.rb:2=
+83:in `require&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 18: from =
+/var/lib/gems/2.5.0/gems/sportweb-0.1.0/lib/sportweb/app.rb:101:in `&lt;top=
+ (required)&gt;&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 17: from=
+ /var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/railtie.rb:190:in `metho=
+d_missing&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 16: from /var/=
+lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/railtie.rb:190:in `public_send=
+&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 15: from /var/lib/gems/=
+2.5.0/gems/railties-5.2.0/lib/rails/application.rb:361:in `initialize!&#39;=
+<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 14: from /var/lib/gems/2.5.0=
+/gems/railties-5.2.0/lib/rails/initializable.rb:60:in `run_initializers&#39=
+;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 13: from /usr/lib/ruby/2.5.=
+0/tsort.rb:205:in `tsort_each&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0 12: from /usr/lib/ruby/2.5.0/tsort.rb:226:in `tsort_each&#39;<br>=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 11: from /usr/lib/ruby/2.5.0/tsort.=
+rb:347:in `each_strongly_connected_component&#39;<br>=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0 10: from /usr/lib/ruby/2.5.0/tsort.rb:347:in `call&#3=
+9;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 9: from /usr/lib/rub=
+y/2.5.0/tsort.rb:347:in `each&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0 8: from /usr/lib/ruby/2.5.0/tsort.rb:349:in `block in each_str=
+ongly_connected_component&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0 7: from /usr/lib/ruby/2.5.0/tsort.rb:431:in `each_strongly_connec=
+ted_component_from&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+ 6: from /usr/lib/ruby/2.5.0/tsort.rb:350:in `block (2 levels) in each_stro=
+ngly_connected_component&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0 5: from /usr/lib/ruby/2.5.0/tsort.rb:228:in `block in tsort_each&#39=
+;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 4: from /var/lib/gems=
+/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:61:in `block in run_i=
+nitializers&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 3: fro=
+m /var/lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:32:in =
+`run&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 2: from /var/=
+lib/gems/2.5.0/gems/railties-5.2.0/lib/rails/initializable.rb:32:in `instan=
+ce_exec&#39;<br>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 1: from /v=
+ar/lib/gems/2.5.0/gems/activesupport-5.2.0/lib/active_support/railtie.rb:36=
+:in `block in &lt;class:Railtie&gt;&#39;<br>/var/lib/gems/2.5.0/gems/active=
+support-5.2.0/lib/active_support/railtie.rb:39:in `rescue in block in &lt;c=
+lass:Railtie&gt;&#39;: tzinfo-data is not present. Please add gem &#39;tzin=
+fo-data&#39; to your Gemfile and run bundle install (TZInfo::DataSourceNotF=
+ound)<br></div></div>
+------=_Part_30030_978190082.1529883648688--
+
+------=_Part_30029_1751536234.1529883648687--
+

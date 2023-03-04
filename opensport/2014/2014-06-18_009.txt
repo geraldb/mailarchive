@@ -1,0 +1,75 @@
+From 1297693540352@xxx Tue Jun 16 00:16:59 +0000 2015
+X-GM-THRID: 1290311565312
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,1e958a522844e7be
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.118.76 with SMTP id kk12mr107227lbb.16.1403084009537;
+        Wed, 18 Jun 2014 02:33:29 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.36.4 with SMTP id m4ls11668laj.45.gmail; Wed, 18 Jun 2014
+ 02:33:29 -0700 (PDT)
+X-Received: by 10.152.21.133 with SMTP id v5mr92004lae.9.1403084009089;
+        Wed, 18 Jun 2014 02:33:29 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22d.google.com (mail-wi0-x22d.google.com [2a00:1450:400c:c05::22d])
+        by gmr-mx.google.com with ESMTPS id x7si127284wiw.1.2014.06.18.02.33.29
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 18 Jun 2014 02:33:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22d as permitted sender) client-ip=2a00:1450:400c:c05::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f173.google.com with SMTP id cc10so7247111wib.12
+        for <opensport@googlegroups.com>; Wed, 18 Jun 2014 02:33:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=BaJkj7+iICfsRs+Eb0e+oXJjJGm1dAh2zcO7aYksoCw=;
+        b=kh5hEri7ZiOCLesBrW6UmYUTKJ6/2XdEtCstmmGDf4vIDUHcxr8Xki75H5vA2r363/
+         pN1DnbOwkQ/wqkgYWOoFhesafuVma5G5plCK8sefFgTAqmchHyuE81sZlY0dIWy25gSY
+         9F9SxxEKrDwBl1z4w+zIV/wHUaQMh+zY3QRWF996xmdYcb8bkuZmU056vM0qwoSjsUdk
+         vni00D8WXRINmelGhkeb+XMb6FOOTaJI4qIF7mNt6ZiurLjAP3Vmugyo5phhqqBCu3Xv
+         b0jdTku5LawX4hM5F5yJPHIKrkMPpDth3NIxgGUYaZXM4SckAUgA1Cew211ShPRIhv4B
+         Ox3Q==
+MIME-Version: 1.0
+X-Received: by 10.194.59.65 with SMTP id x1mr46411214wjq.60.1403084008964;
+ Wed, 18 Jun 2014 02:33:28 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Wed, 18 Jun 2014 02:33:28 -0700 (PDT)
+In-Reply-To: <97f7bd9e-a6fe-459b-851d-915775b59364@googlegroups.com>
+References: <97f7bd9e-a6fe-459b-851d-915775b59364@googlegroups.com>
+Date: Wed, 18 Jun 2014 11:33:28 +0200
+Message-ID: <CAAxEZd84vuK7RSiKQv+ifKNvmO5PzdMwq1p_ef--E5FPRv7gMQ@mail.gmail.com>
+Subject: Re: [opensport] Referee data
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+   Good point. Sorry for now there's no referee data included (not in
+the datasets and not in the database schema). A good addition for the
+future.
+
+   You can get the referee at the FIFA or Wikipedia site[1]. If you
+want to add it to football.db dataset you might
+
+(1) Thu Jun/12 17:00   Brazil 3-1 (1-1) Croatia       @ Arena de S=C3=A3o
+Paulo, S=C3=A3o Paulo
+
+  change to:
+
+(1) Thu Jun/12 17:00   Brazil 3-1 (1-1) Croatia       @ Arena de S=C3=A3o
+Paulo, S=C3=A3o Paulo   Ref:  Yuichi Nishimura
+  or
+(1) Thu Jun/12 17:00   Brazil 3-1 (1-1) Croatia       @ Arena de S=C3=A3o
+Paulo, S=C3=A3o Paulo    Referee: Yuichi Nishimura (Japan)
+
+Cheers.
+
+[1] en.wikipedia.org/wiki/2014_FIFA_World_Cup#Group_stage
+

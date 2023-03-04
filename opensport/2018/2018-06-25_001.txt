@@ -1,0 +1,112 @@
+From 6570911601971429376@xxx Mon Jun 25 06:52:58 +0000 2018
+X-GM-THRID: 6570890671237890048
+X-Received: by 2002:aca:d004:: with SMTP id h4-v6mr4950616oig.19.1529909577985;
+        Sun, 24 Jun 2018 23:52:57 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:aca:4dcc:: with SMTP id a195-v6ls4677481oib.13.gmail; Sun,
+ 24 Jun 2018 23:52:57 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKK6vpmbbYyLBEpjUnJVBlnNfC1QNSeCIsgqge49yzYaSxUGDlF50ykRyc7g9nf6BDD2KHqm
+X-Received: by 2002:aca:a8cf:: with SMTP id r198-v6mr4906326oie.18.1529909577498;
+        Sun, 24 Jun 2018 23:52:57 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1529909577; cv=none;
+        d=google.com; s=arc-20160816;
+        b=vCMmEkSrLTd3tGLWWNsaHj5ti6s8DG/N9xMOuD2asqBnupXrBQLQ9RK6EW5rKxhHxs
+         tMIVu6SM0DuzIlWl06w9vzth2W7MnBguAS+aU5//1sg14OLtoA1WH6ZdSnMdOSha323Z
+         fra4lFu7n5Bo1OLFzJlNC4LngpS89RHHOZDfQ+b3gPqM2ncP9Ok/WUE/r+DdV9Tla2eO
+         2+GolQ11u8nmg18QE3VlUOX84dvr6tKeYZSc86jmAXPZzBAHbffoxn5GKWsKbJmt5XdZ
+         81EERtEqgzUoHk8p5sP+8xEuj9kcPoUJx5dFv83HLvubGnVkVJLS7VWMpIkDNCgv6o6u
+         Ij0g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=Yti2Cc88e6peGBXzqhmg9NqS3+YcAY+2GlOoh8TZESA=;
+        b=ul7/N4Kl2qypNcXueuDYVtIDOtO0qmV/IyR7CBPi2tuhlyrE8TWSP5XycoWXu+QCnH
+         bQoh35B/0Ou0sir7YOkKK+q5k6+t5b+QJc734U2mjH+zvEdV67A96X/nAcWXynusWP6k
+         eFIQdiwpjQv3ldQNQpA0LLGMsMVcQHYhdcByG/ZzoscsbtzjSRkslF52NHCZ7mU0if19
+         dSqGw0ut2Z62fU7EQITJ6U0fd5s6GNGwNhBJswjxbE2xDNr9XBwiX9YG9JYVKSq/vnFT
+         pT0iTjUbFvmxOEpfy3Qfbw9uA2t70pguM0IH4kqPfUtyZlDOVV02ab1CatjrJo3o5co7
+         w7QQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=UX2GD40j;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22e.google.com (mail-io0-x22e.google.com. [2607:f8b0:4001:c06::22e])
+        by gmr-mx.google.com with ESMTPS id 15-v6si774602oiq.3.2018.06.24.23.52.57
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 24 Jun 2018 23:52:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) client-ip=2607:f8b0:4001:c06::22e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=UX2GD40j;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22e.google.com with SMTP id s26-v6so11482149ioj.4
+        for <opensport@googlegroups.com>; Sun, 24 Jun 2018 23:52:57 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=Yti2Cc88e6peGBXzqhmg9NqS3+YcAY+2GlOoh8TZESA=;
+        b=UX2GD40j7Q3VFUxQ8cQcL/A7rcy4FzD84JUgx2+TsCnLcBVpI/RQHzTKDTX0jI2F1/
+         qBjf8+tS8yYLC8moyMqpVrecSY/TKylnnQR2tm8WhPjThTCIZKWDDyN5nYWY0OPBHgmv
+         YMpN9/UK3dbHqnOkqWDItxfQInp6+3/akIPgWIV3ss7AL9uLjGaEHwYtGBWH+/iO8IA0
+         +co5B8o+VbXMkQKxkkN+wmE0kMoTOhpm9Ou7bmIcfkhyEvXAAyqz8gSja52+wdFH30L7
+         G7n6MVx5FubTfMvSEuq0SXG/O9/QV/Em5WYmaBwl8WVLJOa7ai13xGfKxArA0O8Z2Gz0
+         Lc+A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=Yti2Cc88e6peGBXzqhmg9NqS3+YcAY+2GlOoh8TZESA=;
+        b=bWim/Th8/0UbznQnbQCacJJBkHgADeWzJWjHt9J498/ExH3tSmeHoaUFYo2kLGlzDm
+         0ijNAX935y2ngN5vNSfRC6sW0iActoNe9mYE1skyyx1wG4nWK6p9XcBWSgXjwWkfI4SL
+         CkeaN3bDuEvb1uwFesQnqrcHKwp00b3F+02FGkqk6rzT56wvQK2Ako9HGUDnLIqvAvvC
+         DYt8c0dVzyN7ij6nWdCsW9eVJdNsmek9dzpjO9YH6ys9DEF6D0YywhHxnjetBzs07xkr
+         LS1yEBtRtz+cCok4hjDkhv3KmQO1+M1fdr7w2GmJ9895OQY7GtlpqDFZ/2/O1mTsAzWX
+         ic1w==
+X-Gm-Message-State: APt69E2yPgE6nW/IJIE8B7yOEwP5OmJ84VaOdxmjaVpZ+z91loWLJq8R
+	Uy5PCa2WVWSaCA2KKt6v9NPS4ObyJQVjNO8nJDygdw==
+X-Received: by 2002:a6b:5002:: with SMTP id e2-v6mr9431935iob.31.1529909576852;
+ Sun, 24 Jun 2018 23:52:56 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a6b:d90:0:0:0:0:0 with HTTP; Sun, 24 Jun 2018 23:52:56 -0700 (PDT)
+In-Reply-To: <ebef5d68-bab9-4c30-87f5-822b945473a2@googlegroups.com>
+References: <ebef5d68-bab9-4c30-87f5-822b945473a2@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 25 Jun 2018 08:52:56 +0200
+Message-ID: <CAAxEZd8zECWGN8JJAmaPh1jC+6-+jgt2o+8z8wuC+ibVJKVByA@mail.gmail.com>
+Subject: Re: [opensport] sportweb - tzinfo-data missing
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   Thanks for trying sportweb and reporting the startup failure.
+
+> I get error below about tzinfo-data missing.
+> I looked in the sportweb Gemfile (/var/lib/gems/2.5.0/gems/sportweb-0.1.0/Gemfile), and it is there.
+>  Any idea why I am getting this error and/or how to get around it?
+
+    Sorry for the trouble I'm still kind of new to bundling rails apps
+in a command line gem. I haven't found any definite documentation
+(online) yet.
+
+
+    I changed in the Gemfile:
+
+     # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+     gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+to just:
+
+    gem 'tzinfo-data'
+
+   That should fix it. For now the (bundled) Gemfile.lock is
+single-platform and cannot handle platforms: [:mingw, :mswin,
+:x64_mingw, :jruby].  No harm to include the tzinfo-data gem on
+unix/linux (it will get ignored)
+
+   Please update to the latest (and greatest) sportweb v0.2.0 and retry.
+
+   Cheers. Prost. Greetings from Vienna.
+

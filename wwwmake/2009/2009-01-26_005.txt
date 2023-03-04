@@ -1,0 +1,67 @@
+From 323905126400@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 285796728832
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,d61a16acd8afd09c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.100.207.14 with SMTP id e14mr2221076ang.3.1232961983371; Mon, 
+	26 Jan 2009 01:26:23 -0800 (PST)
+Date: Mon, 26 Jan 2009 01:26:23 -0800 (PST)
+In-Reply-To: <30f836e9-c1f5-4052-8552-5c1b5ab31ff5@e22g2000vbe.googlegroups.com>
+X-IP: 62.47.171.201
+References: <30f836e9-c1f5-4052-8552-5c1b5ab31ff5@e22g2000vbe.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: JqDmUgwAAACEaDvs4el5DbJXqW1kxDgH
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) 
+	AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.43 Safari/525.19,gzip(gfe),gzip(gfe)
+Message-ID: <7a557f74-d337-4670-872b-ed7619a7f43a@r15g2000prh.googlegroups.com>
+Subject: Re: alternatives to maruku
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello David,
+
+
+> I've been playing around with slideshow and enjoying it. I use
+> markdown rather than textile, but I immediately ran into problems with
+> maruku.
+>
+> I want to use slideshow for academic lectures, and the lectures
+> involve quotes, and the quotes sometimes involve additions or
+> omissions in brackets, as in: "Ask not [...] what you can do for your
+> country." Maruku chokes on the [...], thinking it is a badly defined
+> link of some sort. Other markdown implementations do not. You can see
+> the results for yourself in babelmark:
+>
+> http://babelmark.bobtfish.net/?markdown=Ask+not+%5B...%5D+what+you+ca...
+>
+> Happily, it is trivial to modify slideshow.rb, replacing maruku with
+> the gem rdiscount, which handles these cases just fine. I think it
+> might have been equally trivial to tell maruku not to "break on
+> error", but I didn't look into that. It seems to me that one or the
+> other change ought to be made to slideshow.rb, unless there is some
+> countervailing reason not to.
+
+   First, thanks for your kind words and thanks for update on the
+installation instructions for Oniguruma on Apple OS X Leopard.  If I
+can work it out I will try to make the installation optional in the
+next couple of days to make sure the slideshow gem is easy to install
+to try out.
+
+   About the rdiscount gem:
+
+   As far as I know rdiscount is just a wrapper for the c library the
+requires like Oniguruma a separate installation and the discount
+library in C only works on Unix-like systems not e.g. on Windows.
+
+   If I can work it out in the next couple of days I will try my best
+to add a new switch that lets you choose the Markdown library for the
+slideshow package or add a check on startup for installed Markdown
+packages so the package that's already installed (e.g. rdiscount) gets
+used.
+
+  Cheers.
+

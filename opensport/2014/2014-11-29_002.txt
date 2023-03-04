@@ -1,0 +1,132 @@
+From 2319900999680@xxx Tue Jun 16 00:16:45 +0000 2015
+X-GM-THRID: 2303501271040
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,30aaba2426bd51b0
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.68.125.134 with SMTP id mq6mr37922333pbb.7.1417272002794;
+        Sat, 29 Nov 2014 06:40:02 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.96.40 with SMTP id j37ls647865qge.66.gmail; Sat, 29 Nov
+ 2014 06:40:02 -0800 (PST)
+X-Received: by 10.140.27.214 with SMTP id 80mr1068qgx.23.1417272002528;
+        Sat, 29 Nov 2014 06:40:02 -0800 (PST)
+X-Google-Doc-Id: c11e8916c0c2d5a1
+X-Google-Web-Client: true
+Date: Sat, 29 Nov 2014 06:40:01 -0800 (PST)
+From: Joe Kampschmidt <jokecamp@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <6e9a4725-a6f3-4504-a540-491e59811bac@googlegroups.com>
+In-Reply-To: <CAAxEZd_Tdz9+=Hok19V88GBM2yC8KwKPOmoBk0z9X4r3mBNa2Q@mail.gmail.com>
+References: <CAAxEZd_Tdz9+=Hok19V88GBM2yC8KwKPOmoBk0z9X4r3mBNa2Q@mail.gmail.com>
+Subject: Re: sportdb new <name> - football.db. Quick Starter Datafile
+ Templates
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_220_1751101838.1417272001936"
+X-Google-Token: EMG156MF1UNNDlDrPVo0
+X-Google-IP: 66.44.120.8
+
+------=_Part_220_1751101838.1417272001936
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_221_1652692778.1417272001936"
+
+------=_Part_221_1652692778.1417272001936
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks for the new tool. I've tried it out.
+
+Might want to add this to the README:
+
+gem update sportdb
+
+after that I tried: sportdb new worldcup2014
+
+but got the following error: 
+
+-- create_table(:alltime_standings)
+   -> 0.0009s
+-- create_table(:alltime_standing_entries)
+   -> 0.0011s
+[info] parsing data (setup) 'setups/all' 
+(/Users/joekampschmidt/.rvm/gems/ruby-2.1.0/gems/sportdb-1.9.14/data/setups/all.txt)...
+
+*** error: undefined method `from_file' for FixtureReader:Class
+
+
+
+On Wednesday, November 26, 2014 4:31:50 AM UTC-5, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    FYI: I've uploaded a new sportdb command line tool version, that 
+> is, v1.9.12. What's news? 
+>
+>    The sportdb command line tool now includes a new quick starter 
+> template command to (auto-)download Datafile scripts from the new 
+> openfootball/datafile registry [1]. 
+>
+>    For example, to build yourself a copy of the worldcup2014.db type: 
+>
+>     $ sportdb new worldcup2014 
+>
+>   The new command will run these steps: 
+>
+>    Step 1: Download worldcup2014.rb Datafile (from GitHub) to your 
+> working folder as ./Datafile 
+>    Step 2: Run the sportdb build command 
+>    Step 2.a: Download all datasets listed in the Datafile as zip 
+> archives (from GitHub) to ./tmp 
+>    Step 2.b: Create the "empty" database, that is, table structure, 
+> indexes, etc. (schema) 
+>    Step 2.c: Read in all datasets from the zip archives in ./tmp (no 
+> need to unpack) 
+>
+>   That's it. All done and setup with a single command. Still early and 
+> rough. If you try the new quick starter Datafile templates let us know 
+> how it goes. Cheers. 
+>
+>
+> [1] github.com/openfootball/datafile 
+>
+
+------=_Part_221_1652692778.1417272001936
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Thanks for the new tool. I've tried it out.<div><br></div><div>Might want to add this to the README:</div><div><br></div><div>gem update sportdb</div><div><br></div><div>after that I tried:&nbsp;sportdb new worldcup2014</div><div><br></div><div>but got the following error:&nbsp;</div><div><br></div><div><div>-- create_table(:alltime_standings)</div><div>&nbsp; &nbsp;-&gt; 0.0009s</div><div>-- create_table(:alltime_standing_entries)</div><div>&nbsp; &nbsp;-&gt; 0.0011s</div><div>[info] parsing data (setup) 'setups/all' (/Users/joekampschmidt/.rvm/gems/ruby-2.1.0/gems/sportdb-1.9.14/data/setups/all.txt)...</div><div><br></div><div>*** error: undefined method `from_file' for FixtureReader:Class</div><div><br></div><div><br></div><br>On Wednesday, November 26, 2014 4:31:50 AM UTC-5, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;FYI: I've uploaded a new sportdb command line tool version, that
+<br>is, v1.9.12. What's news?
+<br>
+<br>&nbsp; &nbsp;The sportdb command line tool now includes a new quick starter
+<br>template command to (auto-)download Datafile scripts from the new
+<br>openfootball/datafile registry [1].
+<br>
+<br>&nbsp; &nbsp;For example, to build yourself a copy of the worldcup2014.db type:
+<br>
+<br>&nbsp; &nbsp; $ sportdb new worldcup2014
+<br>
+<br>&nbsp; The new command will run these steps:
+<br>
+<br>&nbsp; &nbsp;Step 1: Download worldcup2014.rb Datafile (from GitHub) to your
+<br>working folder as ./Datafile
+<br>&nbsp; &nbsp;Step 2: Run the sportdb build command
+<br>&nbsp; &nbsp;Step 2.a: Download all datasets listed in the Datafile as zip
+<br>archives (from GitHub) to ./tmp
+<br>&nbsp; &nbsp;Step 2.b: Create the "empty" database, that is, table structure,
+<br>indexes, etc. (schema)
+<br>&nbsp; &nbsp;Step 2.c: Read in all datasets from the zip archives in ./tmp (no
+<br>need to unpack)
+<br>
+<br>&nbsp; That's it. All done and setup with a single command. Still early and
+<br>rough. If you try the new quick starter Datafile templates let us know
+<br>how it goes. Cheers.
+<br>
+<br>
+<br>[1] <a href="http://github.com/openfootball/datafile" target="_blank" onmousedown="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\46sa\75D\46sntz\0751\46usg\75AFQjCNGuSSz2iZM4_c46k47eU9RFDWMMTQ';return true;" onclick="this.href='http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\46sa\75D\46sntz\0751\46usg\75AFQjCNGuSSz2iZM4_c46k47eU9RFDWMMTQ';return true;">github.com/openfootball/<wbr>datafile</a>
+<br></blockquote></div></div>
+------=_Part_221_1652692778.1417272001936--
+------=_Part_220_1751101838.1417272001936--
+

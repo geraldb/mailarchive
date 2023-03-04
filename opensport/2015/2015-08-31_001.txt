@@ -1,0 +1,61 @@
+From 6189128028822437888@xxx Mon Aug 31 10:57:43 +0000 2015
+X-GM-THRID: 6185793007810248704
+X-Received: by 10.50.25.130 with SMTP id c2mr19467899igg.10.1441018662716;
+        Mon, 31 Aug 2015 03:57:42 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.32.83 with SMTP id g80ls1259092iog.25.gmail; Mon, 31 Aug
+ 2015 03:57:42 -0700 (PDT)
+X-Received: by 10.66.163.9 with SMTP id ye9mr28743761pab.0.1441018662391;
+        Mon, 31 Aug 2015 03:57:42 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22f.google.com (mail-ig0-x22f.google.com. [2607:f8b0:4001:c05::22f])
+        by gmr-mx.google.com with ESMTPS id u4si1026882igb.0.2015.08.31.03.57.42
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 31 Aug 2015 03:57:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22f as permitted sender) client-ip=2607:f8b0:4001:c05::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22f.google.com with SMTP id i7so53338963igu.1
+        for <opensport@googlegroups.com>; Mon, 31 Aug 2015 03:57:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=Oo+Z6pbMuTzd1K4wiSuUjnHCiMYj/mwbkd3VY1GPDRg=;
+        b=Dq4Qrx9W0Npg+Un7Bq4ARkuLz3DhslXOj5GubbWvPgBy/wVoXdvQwm6InCctyv4L0P
+         7oANCZ6kny+l1uKH2LVUbhC0fVcOgPBW/wNc9iEUHfkX/btSdVVf7MNCkp246IaNX9dZ
+         b/GpTt3kl9yZvMEoJDuCcD3Elx55BNPVWDFtQJt5jQZX8uGmAN+re+Aoeanp7ktV7tp8
+         9himoYJXr/KV6YVfzVt9A3kalyTlO/wmB7P1PbjR5T/OL6TWcSbPTxayxRcQy04dT4Pj
+         39Og8uNC39vAzUiBE930HjE1grOxCaPlbLKi/2tKMeUxIoT+e4owPF0Yhb+2hHd/PGT9
+         n8mA==
+MIME-Version: 1.0
+X-Received: by 10.50.79.230 with SMTP id m6mr12157215igx.86.1441018662260;
+ Mon, 31 Aug 2015 03:57:42 -0700 (PDT)
+Received: by 10.107.141.197 with HTTP; Mon, 31 Aug 2015 03:57:42 -0700 (PDT)
+In-Reply-To: <079de1d6-a3c6-46d3-9f07-d344b7ce6bf8@googlegroups.com>
+References: <fd122790-128b-496a-9018-2f536e57c176@googlegroups.com>
+	<CAAxEZd-xZQz7aeaMqa65f3dY60nBSpGHujHGJxfqA=S57Wy5QQ@mail.gmail.com>
+	<d9417ae7-0ee6-423c-9d9f-4b80549e61fe@googlegroups.com>
+	<CAAxEZd-L0RDSDY4xYCReeVaULuPWSZm_m1vgbh+_J_Or5rUyDw@mail.gmail.com>
+	<079de1d6-a3c6-46d3-9f07-d344b7ce6bf8@googlegroups.com>
+Date: Mon, 31 Aug 2015 12:57:42 +0200
+Message-ID: <CAAxEZd_tnyAOLqVxK_KD=AZSfGbbNqim-GKJ-HPOR2TQ229kHA@mail.gmail.com>
+Subject: Re: [opensport] Russian league for football.db
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Cc: Georgy Zakarashvili <vincentti@gmail.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  FYI: I've cloned your repo, see github.com/openfootball/ru-russia
+
+   And I've created a new team, that is, Editors (ru) - GitHub will
+send you an invitation (by email) to join/accept.  You're welcome to
+update the new cloned repo in-place or keep it up in sync with your
+copy. If you join the Editors (ru) you have - of course - read/write
+access. Welcome. Cheers.
+

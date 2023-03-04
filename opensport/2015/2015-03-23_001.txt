@@ -1,0 +1,59 @@
+From 2553413632000@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2548624785408
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,db36c1759878775
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.18.232 with SMTP id l68mr99441696yhl.16.1427100765793;
+        Mon, 23 Mar 2015 01:52:45 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.101.111 with SMTP id t102ls2420813qge.62.gmail; Mon, 23
+ Mar 2015 01:52:45 -0700 (PDT)
+X-Received: by 10.236.50.227 with SMTP id z63mr105663187yhb.4.1427100765576;
+        Mon, 23 Mar 2015 01:52:45 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x22a.google.com (mail-ie0-x22a.google.com. [2607:f8b0:4001:c03::22a])
+        by gmr-mx.google.com with ESMTPS id g3si521137igr.2.2015.03.23.01.52.45
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 23 Mar 2015 01:52:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::22a as permitted sender) client-ip=2607:f8b0:4001:c03::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ie0-x22a.google.com with SMTP id m5so30496033ied.3
+        for <opensport@googlegroups.com>; Mon, 23 Mar 2015 01:52:45 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=LV9q38Cf0c7AfqRAJgoLVHetdZeZzyyGfScBoaSA+TA=;
+        b=Hk+DDvt6W4Nmr/6ZNIpYOKxYyjetkBpBmQio8A+MJ3Ii+CwJMDr0o0IQFDre9v3EpE
+         iigNMyaesYDO5uWc7MFaAPkoFO8aMby3fy6Jz+MN34t4UibafRrSixZ7LEIo7Hf4HhAQ
+         PN1wW4jW9KInxN3S1OTikSgidF6oGxWsJRAZM9GyuRmBKEMlnvauXa8nBNtB44sW1rd9
+         lduIXe4sw4kQT4k0mt8+FF4wRAle0WeCCYhgHsuLpNQdj0AlgzLueYRGlbHvc6pD3qvv
+         Tf6raqShGWsV/GunsMqa664ImUTOrg/lwwNCvXHJs73VUOlj/Uzy806OEq2NLYv7SZza
+         6oTA==
+MIME-Version: 1.0
+X-Received: by 10.50.20.228 with SMTP id q4mr12785029ige.1.1427100765412; Mon,
+ 23 Mar 2015 01:52:45 -0700 (PDT)
+Received: by 10.64.141.103 with HTTP; Mon, 23 Mar 2015 01:52:45 -0700 (PDT)
+In-Reply-To: <c45fbaa3-4da0-4757-87cc-09f603a010b0@googlegroups.com>
+References: <c45fbaa3-4da0-4757-87cc-09f603a010b0@googlegroups.com>
+Date: Mon, 23 Mar 2015 09:52:45 +0100
+Message-ID: <CAAxEZd9Z0kahTuy_JymssTA3_cda9L5ZiKB1HxAL2DKu+v1f-Q@mail.gmail.com>
+Subject: Re: [opensport] Player database
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Welcome to football.db.  It's just getting started. The more you
+contribute to football.db the more data you will find.     For
+alternative data sources (options) see Joe Kampschmidt great list and
+write-up about football data sources (options) [1]. Cheers.
+
+[1] www.jokecamp.com/blog/guide-to-football-and-soccer-data-and-apis/
+

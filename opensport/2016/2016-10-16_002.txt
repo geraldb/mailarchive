@@ -1,0 +1,94 @@
+From 6342137849429622784@xxx Sun Oct 16 18:53:58 +0000 2016
+X-GM-THRID: 6342113564983033856
+X-Received: by 10.129.159.17 with SMTP id w17mr6238230ywg.44.1476644037827;
+        Sun, 16 Oct 2016 11:53:57 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.14.91 with SMTP id n27ls845923otd.18.gmail; Sun, 16 Oct
+ 2016 11:53:57 -0700 (PDT)
+X-Received: by 10.157.14.124 with SMTP id n57mr5628268otd.52.1476644037534;
+        Sun, 16 Oct 2016 11:53:57 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x233.google.com (mail-io0-x233.google.com. [2607:f8b0:4001:c06::233])
+        by gmr-mx.google.com with ESMTPS id v187si466638ith.2.2016.10.16.11.53.57
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 16 Oct 2016 11:53:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) client-ip=2607:f8b0:4001:c06::233;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x233.google.com with SMTP id q192so168802635iod.0
+        for <opensport@googlegroups.com>; Sun, 16 Oct 2016 11:53:57 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=Wqmd60VJkBJKzKipdMeKEu3TQEbzN/Q3wDkY5WRmfs0=;
+        b=B86plJl6znzA8C5R41z1zr6LnXVmrxWH/IYKRxs7+O8b388vcICpBYrXFawcezILRh
+         Nw5+29YX9hmMWqJBrZYKXGdU4hDMxSmnqVLVFSw8NJkXYfHX3pd2vOxbZMRk9WnbH8m5
+         Utbe23DF+dafrPD3N71bxzqUtrhLAtJ+6ZI2efiLPZOEsdszdzycX/qQVkdoiSo1EiMX
+         g1PXDPua0HVq0idqsJAN5jzy5sj0I6qBQgVQ+Ly2xXtXprlpTyXpyfUI0a105z4nHsL4
+         U+j4zQHaB7hKoQBt9PcztBwUnbwH+a7NzhDZ3fQxh3Bzs+fSg9Jo+21d25oBanTeX3wZ
+         RJyA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=Wqmd60VJkBJKzKipdMeKEu3TQEbzN/Q3wDkY5WRmfs0=;
+        b=E5SMpT83g8XqLqjoAHJRa6uUZSw9wullj0CKiO/OQpOxqd7A9l83QD5NgUr7Wx/Rrx
+         xGo40bRalPcUvDgF3k9OBy8Y4hRNgptRl0sNeyCcELqq6jCUQawIWkftJcLLDBhDlyLw
+         GUTOWehNZhaVGz/vw4bJmQWOejhwQj30XwQYFUoJAbSCIGhHHv8Q20ARomviORKFMr4X
+         qIGhuYNqVUkuszS+mMKcpDZ1qZZ+lTPFwYM+kiXOmqeafFLZZRUkmQr7fVPfV66xFoIE
+         4YhKR8Ed8Tbgocitl5s62VE1eFh/y2W8/g42qWD2gXH+MFzpJWFtWA5YC2NosGkRDhOA
+         xZdA==
+X-Gm-Message-State: AA6/9RnF3E3GggPiIhhh/gqeKLHmel481CtUsq4xCT3q2JDQVxxlyS+uNO2Jfs53WQNcV76CVlHIfjUyPLNsYg==
+X-Received: by 10.107.171.194 with SMTP id u185mr19298353ioe.102.1476644037037;
+ Sun, 16 Oct 2016 11:53:57 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.141.194 with HTTP; Sun, 16 Oct 2016 11:53:56 -0700 (PDT)
+In-Reply-To: <9439c905-c203-4a24-be2f-2a66fe59811a@googlegroups.com>
+References: <f6259f69-0d0f-4ca1-9ac8-af45aeca4c1b@googlegroups.com> <9439c905-c203-4a24-be2f-2a66fe59811a@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 16 Oct 2016 20:53:56 +0200
+Message-ID: <CAAxEZd9jkrCqrbeRxkKNrCyPVoPuY_Bg89joooYV14yYq_K1Gg@mail.gmail.com>
+Subject: Re: [opensport] Re: How to use the .txt files in the world-cup repo?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Ben,
+
+  I see.
+
+> My question is more how to build  the historical world cup matches using sportdb, either
+> individually or all together.  Is this possible?
+
+   What (files) gets included in the datasets is definited by the
+setup files e.g. see /world-cup/setups [1]
+
+   The default setup is all.txt [2] - thus, you will get all the
+qualifiers for 2014 because they are listed in all.txt
+
+   In your case you have two options:
+
+  1) Try the setups/history.txt  [3] pre-configured setup  or
+  2) Use your own setup file.
+
+   To try the history.txt setup change the worldcup datafile to use
+the history setup e.g.
+
+world 'world.db', setup: 'countries'
+football 'national-teams'
+football 'world-cup'
+
+   to
+
+world 'world.db', setup: 'countries'
+football 'national-teams'
+football 'world-cup', setup: 'history'          ## NEW / ADDED  setup: 'history'
+
+   Let me (us) know if that makes sense or works. Cheers.
+
+[1] https://github.com/openfootball/world-cup/tree/master/setups
+[2] https://github.com/openfootball/world-cup/blob/master/setups/all.txt
+[3] https://github.com/openfootball/world-cup/blob/master/setups/history.txt
+

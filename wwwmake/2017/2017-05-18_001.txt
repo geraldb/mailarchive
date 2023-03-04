@@ -1,0 +1,104 @@
+From 6421573661369565184@xxx Thu May 18 20:25:28 +0000 2017
+X-GM-THRID: 6421473045402091520
+X-Received: by 10.36.19.17 with SMTP id 17mr2322738itz.34.1495139128745;
+        Thu, 18 May 2017 13:25:28 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.157.73.129 with SMTP id g1ls7453774otf.32.gmail; Thu, 18 May
+ 2017 13:25:28 -0700 (PDT)
+X-Received: by 10.31.157.10 with SMTP id g10mr300655vke.26.1495139128345;
+        Thu, 18 May 2017 13:25:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1495139128; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hXFp74FXZhAwvOvUsRk8ySeezc2hmrNs6J6LEOfIb40foz2+Qwu+lts14cqLALyfvy
+         imdr+OJMJq1uKRdJTsShLvrkSi1uGRCKqQkMzDXk4UoW24fDRnJpuiZrvS66UN28yHcn
+         nZWcUKiQjjQwCnu8+OeyYHDlOSJ7lzalQj+LOkJihZsdFZNnpVEUhiwixV9y9Mh9rGHn
+         b1lkE+4t9u/0FBF1mlpPJhAATJx6OFIAsyJWs1bw1iXJ7x8NQ6DWKAP1OLzPqNfcjGHQ
+         aiLSGFsiteoIyloPriw37+ex0oTGChcXOm0BZ0RA81IVSihLQkrsHh/5OwHa6KxrpSZF
+         gCHw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:references:in-reply-to
+         :mime-version:dkim-signature:arc-authentication-results;
+        bh=2a65wadXy9FGbWj+sb5d3oBxA2kn6h7r9AE8/8aBpmw=;
+        b=tjhDwIkg/TytUzB+6xcF26vozfRoPFwPI3yOgJG4WEJ/PmhOp2epPUa1AbsqZ2yMsC
+         B/qLaUEcbRi/r3rwrt7h9Upr7g/8wvWDPMZam2N9Zt9P4kV88FQ2ltVp07XHQYPADh0Y
+         vNpCF0cC8zpoACsDAu/Wz1qfl5t8QHKokDV4r9E6vNaoPcjrMod4vlMGT3Qpror0nSVT
+         /Xl7Xp2/rd7CLLn78yY1MsmB+d1w/Z2Pm4abWIZXlHIn0FqVHVvn2Q3S69j7YA3+53q8
+         bn42i847i6MqNl+Ok6VhblpMY8SqrGmEHkHYwvxlqfpJ4DNtenyY9G49Hi8E57bFNada
+         +wcg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x236.google.com (mail-io0-x236.google.com. [2607:f8b0:4001:c06::236])
+        by gmr-mx.google.com with ESMTPS id v77si2759777ita.0.2017.05.18.13.25.28
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 18 May 2017 13:25:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) client-ip=2607:f8b0:4001:c06::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x236.google.com with SMTP id p24so35988254ioi.0
+        for <wwwmake@googlegroups.com>; Thu, 18 May 2017 13:25:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to
+         :cc;
+        bh=2a65wadXy9FGbWj+sb5d3oBxA2kn6h7r9AE8/8aBpmw=;
+        b=oejKvkd20G7X3y42r0tu48JeLjR/1P07vYKo7DU+d25vN+3+EBC0V8Apoz8h2pKxiS
+         2/PUe+FicbhWtWxEQZSSh6jdE/gz6MicSmuwP/1t7FkOeOftbIuvK/ImSAlcZbQ8mAPz
+         nDFcTGJ/bUZXfMkhzhJ4KxntxlduUxpLZGFgala65GGRKTNartrTxbfXYtFJpM1DyRiC
+         xu+8h+NVdtv+r9GAEy2RQUWPMQ15uq5sFIoCh+tLaRALfgyUeCN8RN+OUitIU0SXJzJa
+         MOZfKV+t/zgNEnjYED2pfm58GeYeN1IdcjnhONEkuzdvSMAil466v3WqEtqq5D0s5phB
+         sICw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to:cc;
+        bh=2a65wadXy9FGbWj+sb5d3oBxA2kn6h7r9AE8/8aBpmw=;
+        b=kPGTeQU8QfohdBWDuYIb+S5vSDTRGolAB5KveN4rlkztthM3ZqocK6Fr/Jod3okGpR
+         jLf7EBMJOcxyq7kLirLCaH7nf941UtGlpE8k1LfA9znD1XCstNmlX3MLOx95Gf9/nht3
+         VSULycHGxJjmAlC/bdGvySNjM0PDSLYAWg5mcGdxX6rARpil8EnQ7ntwVLNN0VRIlfPA
+         3nx29pYDMgVfJUeHU2086jrkvz17Cm5FgIwzbLCoPZPdSB3PL7cV3uIwfUN0yFUXn+UE
+         UZz8Zz+uS5AX45OHbtDPW5/llLP7XCqsIfKviWfRAc5nFx/yHs6N81z5NWf3IJVU6KKY
+         VJYg==
+X-Gm-Message-State: AODbwcBDTNdzZa2ibQX3DkOG05cQTz9Ig/QG1Jk34R92/P2XlSj6Yb43
+	SUZWHBqtZj5WsrOy5eUVF1tRXnRslg==
+X-Received: by 10.107.154.81 with SMTP id c78mr7470923ioe.109.1495139128080;
+ Thu, 18 May 2017 13:25:28 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.34.134 with HTTP; Thu, 18 May 2017 13:25:27 -0700 (PDT)
+In-Reply-To: <4149761a-bad0-4863-9062-6d3f4686e5ea@googlegroups.com>
+References: <83e77ebf-1996-47f9-adc8-9c2d40707213@googlegroups.com>
+ <CAAxEZd8Q-Z0M=UL3FU1tc9rMf1Hfk5guj7PpT32uXYEJ2JTa7A@mail.gmail.com> <4149761a-bad0-4863-9062-6d3f4686e5ea@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 18 May 2017 22:25:27 +0200
+Message-ID: <CAAxEZd-OEuUvWhMJe5ABF163nQzVHtPL9o6dp3nq7UqTp4b9Ag@mail.gmail.com>
+Subject: Re: [wwwmake:425] Bib.TXT specifications
+To: wwwmake@googlegroups.com
+Cc: Lars Willighagen <lars.willighagen@gmail.com>
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   Wow. Thanks for the world's 1st support in Citations.js!
+
+   I answered on the issue / ticket / feature request about the
+significant leading or trailing spaces. Again before adding quotes
+would be great to see a "real world " example.
+
+   About:
+
+>  and it says that quotes and commas aren't required, but can they be used?
+
+   For now to keep it simple everthing the suggestion / proposal is
+that commas and quotes are "normal literals", that is, if you use
+quotes or commas they are part of the string.
+
+   Cheers.
+
+PS: Will try to update the Bib.txt documentation (web page) with your
+questions (about spaces, etc.) in the next days.
+

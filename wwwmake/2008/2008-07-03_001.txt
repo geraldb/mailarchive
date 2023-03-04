@@ -1,0 +1,92 @@
+From 32327598080@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 30696013824
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,b8e12a13e2d9c336,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.114.76.4 with SMTP id y4mr5194568waa.16.1215065454517;
+        Wed, 02 Jul 2008 23:10:54 -0700 (PDT)
+Return-Path: <geraldbauer2007@gmail.com>
+Received: from rv-out-0708.google.com (rv-out-0708.google.com [209.85.198.245])
+        by mx.google.com with ESMTP id v36si3097493wah.1.2008.07.02.23.10.54;
+        Wed, 02 Jul 2008 23:10:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of geraldbauer2007@gmail.com designates 209.85.198.245 as permitted sender) client-ip=209.85.198.245;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of geraldbauer2007@gmail.com designates 209.85.198.245 as permitted sender) smtp.mail=geraldbauer2007@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by rv-out-0708.google.com with SMTP id k29so690453rvb.2
+        for <webslideshow@googlegroups.com>; Wed, 02 Jul 2008 23:10:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:mime-version:content-type:content-transfer-encoding
+         :content-disposition;
+        bh=7ZNOmzOZTxdF2Gf0BRJX1Dws/qDYixMLLjE69SMoDFs=;
+        b=k6yb0SeGlirnpVLoIIT3peRHUalSF1N0osKm0rLbD0XxIrk+C8gN8mNqNbquWVBGxf
+         WLCR9BfZresgIaRHsOFhfik1F5PcbfRkWMKvIAKMaykgDiFm9k8k5qUy+OtWqWR7WIvV
+         /rwT9yeh+j1n1XmD0XG4YuwjxuDwrgVG/mjTg=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type
+         :content-transfer-encoding:content-disposition;
+        b=DUnHn7HaHp9Sgx/J5LdRf5yHYAToQLqf+086p3HdwqsUjvxrTBHKk4SvN3krwch/cG
+         pRIZi4X83TrejGmpv7kHT9sP4lpn/SPn9hSWnTTPBSVz8f7qbyorguedFirm0Ak14Jsq
+         65wiKVd3TuyCsHeiyMgkvw8Rv/LywtYigSg9o=
+Received: by 10.114.66.8 with SMTP id o8mr7869412waa.169.1215065454316;
+        Wed, 02 Jul 2008 23:10:54 -0700 (PDT)
+Received: by 10.114.77.3 with HTTP; Wed, 2 Jul 2008 23:10:54 -0700 (PDT)
+Message-ID: <7e7cb8940807022310w7ac7673dqd5f6bf9cf4b0006e@mail.gmail.com>
+Date: Wed, 2 Jul 2008 23:10:54 -0700
+From: "Gerald Bauer" <geraldbauer2007@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Slide Show (S9) Gem Now Includes S5 Support (Including Built-In Gradient Themes)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello,
+
+   The Ruby Slide Show (S9) gem that lets you create slide shows and
+author slides in plain text using a wiki-style markup language that's
+easy-to-write and easy-to-read now includes (experimental) support for
+S5 slide shows.
+
+   To create a S5 slide show instead of a FullerScreen slide show just
+flip the s5 switch. Example:
+
+   slideshow -s5 microformats
+
+   That's it. The slideshow (S9) gem will create a web page
+(microformats.html), a style sheet (microformats.css) and a
+"loss-free" gradient theme using vector graphics (microformats.svg)
+plus copy the S5 machinery into the s5 subfolder (that you can share
+between all your slide shows).
+
+   You can find some S9-generated S5 samples online:
+
+   o Slide Show (S9) 10-Minute Tutorial  @
+http://slideshow.rubyforge.org/s5/tutorial.html
+   o Microformats - Add Semantics to Your Web Site  @
+http://slideshow.rubyforge.org/s5/microformats.html
+   o Facebook Stats, Numbers & More @
+http://slideshow.rubyforge.org/s5/facebook.html
+   o Merb - All You Need, None You Don't @
+http://slideshow.rubyforge.org/s5/merb.html
+
+   (Note, S5 slide shows include a hidden control bar. Scroll to the
+lower right corner to make the jump box, outline toggle button and
+more show up).
+
+   If you're curious you can find the plain-text sources online @
+http://slideshow.rubyforge.org/svn/samples
+
+   Questions and comments welcome. Enjoy.
+
+   Cheers.
+
+PS: S9 Tip of the Day: Replace .html with .svg to check your
+background gradient theme. Try
+http://slideshow.rubyforge.org/s5/microformats.svg
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.wordpress.com
+

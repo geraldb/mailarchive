@@ -1,0 +1,187 @@
+From 883300499456@xxx Tue Jun 16 00:17:05 +0000 2015
+X-GM-THRID: 700738174976
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,aaa9d8a28ff7fc8f
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.72.19 with SMTP id z19mr1076666wiu.7.1401356752612;
+        Thu, 29 May 2014 02:45:52 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.37.193 with SMTP id a1ls96044lak.56.gmail; Thu, 29 May
+ 2014 02:45:52 -0700 (PDT)
+X-Received: by 10.152.170.130 with SMTP id am2mr129867lac.8.1401356752234;
+        Thu, 29 May 2014 02:45:52 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22d.google.com (mail-wg0-x22d.google.com [2a00:1450:400c:c00::22d])
+        by gmr-mx.google.com with ESMTPS id z6si22372wix.1.2014.05.29.02.45.52
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 29 May 2014 02:45:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22d as permitted sender) client-ip=2a00:1450:400c:c00::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f45.google.com with SMTP id m15so105722wgh.4
+        for <opensport@googlegroups.com>; Thu, 29 May 2014 02:45:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=gFDtTENH3YzB98Dz4JlQPlKRvtoeXZxtP62yrrJpCXk=;
+        b=rdqCBeA+R2O6WSLOE1Za3MizqAdlOkyyt17EA2YOOvBHrvmzPdYNNd7S6SyzbyyZqd
+         SOf+fllJEwSTHojE5jdRvWBoTsq0fUSojHUWSHw0WZ3R03UItNBKh9U4sBqq6U4f1dBv
+         N3yXZycyt/13GDyqK5UQx57W/5ToF069uctu+hovs8plWiaz8aWjR1EI+j3y2Khie2TA
+         fr25GWzkKG4HtzUqSHtQcCzQqioQhjs7gMZ3AtU37rMBgwsckSd0T/KXqo6F+IUITXwG
+         ZlB3rP5a4Kv9lTjp88zcgzEkESLTDWKivbB9ADn0H4Jz7MncMHV8WAMmsAUdm4EsF16F
+         tFuw==
+MIME-Version: 1.0
+X-Received: by 10.194.220.42 with SMTP id pt10mr8947122wjc.60.1401356752118;
+ Thu, 29 May 2014 02:45:52 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Thu, 29 May 2014 02:45:52 -0700 (PDT)
+In-Reply-To: <cefc1087-d8d0-4e4f-b590-8bd86df70bfd@googlegroups.com>
+References: <efc379da-7636-4daa-87a8-fc412b27115c@googlegroups.com>
+	<cefc1087-d8d0-4e4f-b590-8bd86df70bfd@googlegroups.com>
+Date: Thu, 29 May 2014 11:45:52 +0200
+Message-ID: <CAAxEZd_v-em9npDOne74Fv73UnN-0za5F8o9R5y21neDsb58Cg@mail.gmail.com>
+Subject: Re: [opensport] Re: WorldCup.db question related to final round.
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary=001a11c1b68069ede604fa86cb06
+
+--001a11c1b68069ede604fa86cb06
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+>  Could you please give a JSON example of the second round with the new
+properties?
+
+  Sorry, I have no example for now. I try to update / rework the HTTP JSON
+API service in the coming weeks.
+
+> And related to brackets, In my opinion is better create a calc field for
+the
+> matches. Let me thing in a good way to do and I'll post it here.
+
+  Any insight or example welcome. Cheers.
+
+
+2014-05-28 22:05 GMT+02:00 Leonardo Gabriel Salmaso <
+leonardo.salmaso@gmail.com>:
+
+> Great!, could you please give a JSON example of the second round with the
+> new properties?
+>
+> And related to brackets, In my opinion is better create a calc field for
+> the matches. Let me thing in a good way to do and I'll post it here.
+>
+> El lunes, 19 de mayo de 2014 10:42:30 UTC-3, Leonardo Gabriel Salmaso
+> escribi=C3=B3:
+>
+>> Hi Gerald:
+>> I'm Leonardo from Argentina, I'm developing an app for the world cup, an=
+d
+>> I'll use your web service. First of all I want to than you for this grea=
+t
+>> idea.
+>>
+>> I have some questions related to the final round. The most important is
+>> related to the match identification, for example how can we identify a
+>> unique match? The JSON doesn't have an id, or groups position, or anythi=
+ng
+>> to identify them. I was researching about this problem, and I find a goo=
+d
+>> way to solve it. Each match has a number id, this number is provided by
+>> FIFA and is unique. If we can add this property to match JSON response w=
+e
+>> can identify the match and we can relate all of brackets games.
+>>
+>> Let me know if you think this is a good idea and if it=E2=80=99s possibl=
+e for you
+>> to do it.
+>>
+>>
+>> Thanks in advance, best regards.
+>>
+>>
+>> <https://lh5.googleusercontent.com/-8f4zE7d4hfQ/U3oKNOvm4lI/AAAAAAAAJxc/=
+g0qMakJUsWs/s1600/llaves_mundial2014.jpg>
+>>
+>  --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+>
+
+--001a11c1b68069ede604fa86cb06
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div>Hello,<br><br>&gt;=C2=A0 Could you please give a=
+ JSON example of the second round with the new properties?<br><br></div>=C2=
+=A0 Sorry, I have no example for now. I try to update / rework the HTTP JSO=
+N API service in the coming weeks.<br>
+<br><div>&gt; And related to brackets, In my opinion is better create a cal=
+c=20
+field for the <br>&gt; matches. Let me thing in a good way to do and I&#39;=
+ll post it
+ here.</div><br></div>=C2=A0 Any insight or example welcome. Cheers.<br></d=
+iv><div class=3D"gmail_extra"><br><br><div class=3D"gmail_quote">2014-05-28=
+ 22:05 GMT+02:00 Leonardo Gabriel Salmaso <span dir=3D"ltr">&lt;<a href=3D"=
+mailto:leonardo.salmaso@gmail.com" target=3D"_blank">leonardo.salmaso@gmail=
+.com</a>&gt;</span>:<br>
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex"><div dir=3D"ltr">Great!, could you please gi=
+ve a JSON example of the second round with the new properties?<div><br></di=
+v>
+<div>And related to brackets, In my opinion is better create a calc field f=
+or the matches. Let me thing in a good way to do and I&#39;ll post it here.=
+</div><div><br>El lunes, 19 de mayo de 2014 10:42:30 UTC-3, Leonardo Gabrie=
+l Salmaso  escribi=C3=B3:<div>
+<div class=3D"h5"><blockquote class=3D"gmail_quote" style=3D"margin:0;margi=
+n-left:0.8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr">=
+<div>Hi Gerald:</div><div>I&#39;m Leonardo from Argentina, I&#39;m developi=
+ng an app for the world cup, and I&#39;ll use your web service. First of al=
+l I want to than you for this great idea.=C2=A0</div>
+<div><br></div><div>I have some questions related to the final round. The m=
+ost important is related to the match identification, for example how can w=
+e identify a unique match? The JSON doesn&#39;t have an id, or groups posit=
+ion, or anything to identify them. I was researching about this problem, an=
+d I find a good way to solve it. Each match has a number id, this number is=
+ provided by FIFA and is unique. If we can add this property to match JSON =
+response we can identify the match and we can relate all of brackets games.=
+=C2=A0</div>
+<div><br></div><div>Let me know if you think this is a good idea and if it=
+=E2=80=99s possible for you to do it.=C2=A0</div><div><br></div><div><br></=
+div><div>Thanks in advance, best regards.</div><div><br></div><p style=3D"t=
+ext-align:center;clear:both">
+<a href=3D"https://lh5.googleusercontent.com/-8f4zE7d4hfQ/U3oKNOvm4lI/AAAAA=
+AAAJxc/g0qMakJUsWs/s1600/llaves_mundial2014.jpg" style=3D"clear:left;margin=
+-bottom:1em;float:left;margin-right:1em" target=3D"_blank"><img src=3D"http=
+s://lh5.googleusercontent.com/-8f4zE7d4hfQ/U3oKNOvm4lI/AAAAAAAAJxc/g0qMakJU=
+sWs/s320/llaves_mundial2014.jpg" border=3D"0" height=3D"220" width=3D"320">=
+</a></p>
+</div></blockquote></div></div></div></div><div class=3D"HOEnZb"><div class=
+=3D"h5">
+
+<p></p>
+
+-- <br>
+You received this message because you are subscribed to the Google Groups &=
+quot;Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends=
+&quot; group.<br>
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:opensport+unsubscribe@googlegroups.com" target=3D=
+"_blank">opensport+unsubscribe@googlegroups.com</a>.<br>
+For more options, visit <a href=3D"https://groups.google.com/d/optout" targ=
+et=3D"_blank">https://groups.google.com/d/optout</a>.<br>
+</div></div></blockquote></div><br></div>
+
+--001a11c1b68069ede604fa86cb06--
+

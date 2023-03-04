@@ -1,0 +1,129 @@
+From 6430410061646921728@xxx Sun Jun 11 15:55:13 +0000 2017
+X-GM-THRID: 6430410062572814336
+X-Received: by 10.13.232.70 with SMTP id r67mr8427294ywe.65.1497196513358;
+        Sun, 11 Jun 2017 08:55:13 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.63.170 with SMTP id r39ls13791168otc.5.gmail; Sun, 11 Jun
+ 2017 08:55:13 -0700 (PDT)
+X-Received: by 10.200.51.82 with SMTP id u18mr13693745qta.79.1497196513137;
+        Sun, 11 Jun 2017 08:55:13 -0700 (PDT)
+Received: by 10.202.86.205 with SMTP id k196msoib;
+        Sun, 11 Jun 2017 05:39:16 -0700 (PDT)
+X-Received: by 10.157.13.169 with SMTP id 38mr1184507ots.6.1497184756784;
+        Sun, 11 Jun 2017 05:39:16 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Sun, 11 Jun 2017 05:39:16 -0700 (PDT)
+From: Ching Kiu Chan <jeffrey1234ish@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <7be1395f-233c-4756-a3b8-db41b85b8784@googlegroups.com>
+Subject: SystemStackError when executing sportdb create
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2360_791683521.1497184756489"
+X-Google-Token: EPTz9MkFbiPRvFbXShU0
+X-Google-IP: 183.178.159.127
+
+------=_Part_2360_791683521.1497184756489
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2361_972125634.1497184756489"
+
+------=_Part_2361_972125634.1497184756489
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+ 
+
+/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:121: 
+warning: constant ::Fixnum is deprecated
+
+/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:121: 
+warning: constant ::Bignum is deprecated
+
+/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:125:in 
+`block (2 levels) in <class:Numeric>': stack level too deep 
+(SystemStackError)
+
+from 
+/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in 
+`block (2 levels) in <class:Numeric>'
+
+from 
+/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in 
+`block (2 levels) in <class:Numeric>'
+
+from 
+/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in 
+`block (2 levels) in <class:Numeric>'
+
+from 
+/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in 
+`block (2 levels) in <class:Numeric>'
+
+from 
+/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in 
+`block (2 levels) in <class:Numeric>'
+
+from 
+/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in 
+`block (2 levels) in <class:Numeric>'
+
+from 
+/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in 
+`block (2 levels) in <class:Numeric>'
+
+from 
+/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in 
+`block (2 levels) in <class:Numeric>'
+
+... 5575 levels...
+
+from /Users/jeffrey/.rvm/rubies/ruby-2.4.0/bin/sportdb:23:in `load'
+
+from /Users/jeffrey/.rvm/rubies/ruby-2.4.0/bin/sportdb:23:in `<main>'
+
+from /Users/jeffrey/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in 
+`eval'
+
+from /Users/jeffrey/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in 
+`<main>'
+
+
+This is the error I get when executing sportdb create. What is the problem 
+here?
+
+------=_Part_2361_972125634.1497184756489
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">
+
+
+
+
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo; color: #000000; background-color: #ffffff}
+span.s1 {font-variant-ligatures: no-common-ligatures}
+span.Apple-tab-span {white-space:pre}
+</style>
+
+
+<p class="p1"><span class="s1">/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:121: warning: constant ::Fixnum is deprecated</span></p>
+<p class="p1"><span class="s1">/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:121: warning: constant ::Bignum is deprecated</span></p>
+<p class="p1"><span class="s1">/Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:125:in `block (2 levels) in &lt;class:Numeric&gt;&#39;: stack level too deep (SystemStackError)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>from /Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in `block (2 levels) in &lt;class:Numeric&gt;&#39;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>from /Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in `block (2 levels) in &lt;class:Numeric&gt;&#39;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>from /Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in `block (2 levels) in &lt;class:Numeric&gt;&#39;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>from /Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in `block (2 levels) in &lt;class:Numeric&gt;&#39;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>from /Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in `block (2 levels) in &lt;class:Numeric&gt;&#39;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>from /Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in `block (2 levels) in &lt;class:Numeric&gt;&#39;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>from /Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in `block (2 levels) in &lt;class:Numeric&gt;&#39;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>from /Users/jeffrey/.rvm/gems/ruby-2.4.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb:131:in `block (2 levels) in &lt;class:Numeric&gt;&#39;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span> ... 5575 levels...</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>from /Users/jeffrey/.rvm/rubies/ruby-2.4.0/bin/sportdb:23:in `load&#39;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>from /Users/jeffrey/.rvm/rubies/ruby-2.4.0/bin/sportdb:23:in `&lt;main&gt;&#39;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>from /Users/jeffrey/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval&#39;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>from /Users/jeffrey/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `&lt;main&gt;&#39;</span></p><p class="p1"><span class="s1"><br></span></p><p class="p1"><span class="s1">This is the error I get when executing sportdb create. What is the problem here?</span></p></div>
+------=_Part_2361_972125634.1497184756489--
+
+------=_Part_2360_791683521.1497184756489--
+

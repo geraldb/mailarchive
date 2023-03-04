@@ -1,0 +1,101 @@
+From 6186584777018048512@xxx Mon Aug 24 14:28:36 +0000 2015
+X-GM-THRID: 6185793007810248704
+X-Received: by 10.13.214.2 with SMTP id y2mr23268250ywd.42.1440426515543;
+        Mon, 24 Aug 2015 07:28:35 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.29.137 with SMTP id k9ls3385295obh.81.gmail; Mon, 24 Aug
+ 2015 07:28:34 -0700 (PDT)
+X-Received: by 10.129.79.12 with SMTP id d12mr22623844ywb.52.1440426514559;
+        Mon, 24 Aug 2015 07:28:34 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x230.google.com (mail-io0-x230.google.com. [2607:f8b0:4001:c06::230])
+        by gmr-mx.google.com with ESMTPS id 4si985862igl.1.2015.08.24.07.28.34
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 24 Aug 2015 07:28:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) client-ip=2607:f8b0:4001:c06::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x230.google.com with SMTP id v127so150155674iod.3
+        for <opensport@googlegroups.com>; Mon, 24 Aug 2015 07:28:34 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=PbMTBf902pm4Z7qt1+b5q/+VUwYS1yT64W6mkbeGVNM=;
+        b=KRIod5ayjwG9HdR3FiFO4bR/WMfstVcDTpDPi2e9hTIZBuSNudD0oOnm9j1Rbj5txc
+         kz+A0KK275LH9Uz7q29WFueKt0czqSSgzgIgZkiMN5nR2HsEo3H0v0fyJZbSvp3gBQUB
+         xA4kQyLDAVn58W3TDx8uylO++5il+bfSEoXEPIO3+9SAwdNcBFur9HVio6DgP6zxvZ9Y
+         2QmV4g/tP3U3V4v+eaQjYjvZTRcFEXxrHRtaV0wMKLlT+jEjKnlgWSJuRoTOkRD5/JFP
+         YKPM4lUVQvp8v4DPGaUtN3/Bn/QkyC59areHvcKokRdZqQn6EMLVbb4hGIN+OEoFqa7K
+         uQvQ==
+MIME-Version: 1.0
+X-Received: by 10.107.158.16 with SMTP id h16mr22574890ioe.52.1440426514233;
+ Mon, 24 Aug 2015 07:28:34 -0700 (PDT)
+Received: by 10.107.15.196 with HTTP; Mon, 24 Aug 2015 07:28:34 -0700 (PDT)
+In-Reply-To: <ee596028-ea8f-46ff-8610-7bd58e6b8b85@googlegroups.com>
+References: <fd122790-128b-496a-9018-2f536e57c176@googlegroups.com>
+	<CAAxEZd-xZQz7aeaMqa65f3dY60nBSpGHujHGJxfqA=S57Wy5QQ@mail.gmail.com>
+	<ee596028-ea8f-46ff-8610-7bd58e6b8b85@googlegroups.com>
+Date: Mon, 24 Aug 2015 16:28:34 +0200
+Message-ID: <CAAxEZd-GmSvAsJtrK-U1j1F9OEqdJXNf26sjjg7F71q4W+8haQ@mail.gmail.com>
+Subject: Re: [opensport] Russian league for football.db
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Cc: Georgy Zakarashvili <vincentti@gmail.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Great stuff. Thanks for trying.
+
+> First one is with importing world.db data. The import process hangs for some reason. and it
+> hangs in one particular line (city id 740 - guadalahara)
+   Would be great if you can post the stack trace and log messages
+leading up to the error.
+
+    Guadalajara is a city (2nd largest) in Mexico - if you just import
+Russia you might skip the world.db import and just add the country
+russia record (that's all that's required).
+
+> The second problem is with importing my russian league data. The process give me a lot of
+> info and warning messages
+
+  Thanks for adding the log. Looks good.  The team/club lookup mapping
+is using a new format (in your rfpl.yml)  I will add it on Tuesday
+(tomorrow) - it's also needed for the English Premier League -  after
+the update the reader should find matches for clubs / teams.
+
+   You will also need to change the your matchday / round header:
+
+1 Typ # or
+2 Typ
+etc.
+
+  will NOT match so far. Sorry.  Later we can add an russian language
+file (if it's russian for matchday or something)
+
+   For now - sorry - I suggest using english e.g. try
+   Matchday 1   # or
+   Round 1
+
+  Also it's a nice convention to put dates in square brackets (sorry
+to be picky) e.g.
+
+31.07
+01.08
+
+   Might better be:
+
+[31.07.]
+[01.08.]
+
+  Note: You can remove the leading zero e.g.:
+
+[31.7.]
+[1.8.]
+
+  Cheers.
+

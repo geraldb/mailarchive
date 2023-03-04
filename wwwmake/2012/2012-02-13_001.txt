@@ -1,0 +1,81 @@
+From 1012088700928@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1009974771712
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,b288296446c2b9fc,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.42.158.4 with SMTP id f4mr12184236icx.4.1329261048413;
+        Tue, 14 Feb 2012 15:10:48 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.50.42.161 with SMTP id p1ls646973igl.1.gmail; Tue, 14 Feb 2012
+ 15:10:47 -0800 (PST)
+Received: by 10.42.152.202 with SMTP id j10mr12162774icw.2.1329261047847;
+        Tue, 14 Feb 2012 15:10:47 -0800 (PST)
+Received: by 10.50.111.98 with SMTP id ih2msigb;
+        Mon, 13 Feb 2012 12:30:28 -0800 (PST)
+Received: by 10.68.231.202 with SMTP id ti10mr10672507pbc.5.1329165028310;
+        Mon, 13 Feb 2012 12:30:28 -0800 (PST)
+Received: by 10.68.231.202 with SMTP id ti10mr10672505pbc.5.1329165028225;
+        Mon, 13 Feb 2012 12:30:28 -0800 (PST)
+Return-Path: <mmurphy@commonsware.com>
+Received: from mail-pw0-f47.google.com (mail-pw0-f47.google.com [209.85.160.47])
+        by gmr-mx.google.com with ESMTPS id n6si20502900pbg.2.2012.02.13.12.30.28
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Mon, 13 Feb 2012 12:30:28 -0800 (PST)
+Received-SPF: pass (google.com: domain of mmurphy@commonsware.com designates 209.85.160.47 as permitted sender) client-ip=209.85.160.47;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of mmurphy@commonsware.com designates 209.85.160.47 as permitted sender) smtp.mail=mmurphy@commonsware.com
+Received: by pbcum15 with SMTP id um15so4930156pbc.34
+        for <webslideshow@googlegroups.com>; Mon, 13 Feb 2012 12:30:28 -0800 (PST)
+Received: by 10.68.130.40 with SMTP id ob8mr50231065pbb.106.1329165028093;
+ Mon, 13 Feb 2012 12:30:28 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.68.11.233 with HTTP; Mon, 13 Feb 2012 12:29:58 -0800 (PST)
+From: Mark Murphy <mmurphy@commonsware.com>
+Date: Mon, 13 Feb 2012 15:29:58 -0500
+Message-ID: <CALLdnhNim=9cQsU1d++k-opBJAfyHzsozjS0rQRhT3jYigB-xQ@mail.gmail.com>
+Subject: Gradient Background Missing
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+X-Gm-Message-State: ALoCoQn10PxRZQDsUMHAPugk5AiIGXN2wkh1iesTHnQ+F7E844cWWgKT3I1yyLjM5wSE0XQHJaFZ
+
+I feel like I am missing something.
+
+According to http://slideshow.rubyforge.org/themes.html, the Markdown
+shown between the -------- lines should generate a gradient
+background:
+
+----------------------
+gradient: top-bottom red black
+
+This Is The First Slide
+=======================
+
+----------------------
+
+With the s6.txt template, I see no background at all in Chrome or
+Firefox. Moreover, I don't see any evidence of background instructions
+in the generated content, though I certainly don't claim to grok all
+of it.
+
+I have also tried replacing "gradient: top-bottom red black" with
+"gradient-colors: green lime" with the same results.
+
+If I switch to the s6gradient.txt template, I get a gradient
+background, but only on Firefox. That part I understand, but it also
+means that my Markdown is (presumably) correct. Hence, I can't quite
+figure out where I am going haywire with the default template.
+
+Any suggestions?
+
+Thanks!
+
+-- 
+Mark Murphy (a Commons Guy)
+http://commonsware.com | http://github.com/commonsguy
+http://commonsware.com/blog | http://twitter.com/commonsguy
+
+Android 4.0 Programming Books: http://commonsware.com/books
+

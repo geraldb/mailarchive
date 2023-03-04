@@ -1,0 +1,65 @@
+From 1284741529600@xxx Tue Jun 16 00:16:59 +0000 2015
+X-GM-THRID: 1278199463936
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,ea3e6f7419da7567
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.52.98.130 with SMTP id ei2mr95025vdb.2.1403070853829;
+        Tue, 17 Jun 2014 22:54:13 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.27.103 with SMTP id 94ls5236466qgw.13.gmail; Tue, 17 Jun
+ 2014 22:54:13 -0700 (PDT)
+X-Received: by 10.140.37.172 with SMTP id r41mr584401qgr.3.1403070853695;
+        Tue, 17 Jun 2014 22:54:13 -0700 (PDT)
+X-Google-Doc-Id: 198dc02375253f36
+X-Google-Web-Client: true
+Date: Tue, 17 Jun 2014 22:54:13 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <a6bb0051-dde7-4997-beb0-29f386b79282@googlegroups.com>
+In-Reply-To: <53e668a4-3f9f-4eaf-af10-6b5de1180349@googlegroups.com>
+References: <53e668a4-3f9f-4eaf-af10-6b5de1180349@googlegroups.com>
+Subject: Re: Help in accessing the database
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_26_15723016.1403070853392"
+X-Google-Token: EIXThJ0Fn6ufUYvG6fs0
+X-Google-IP: 188.23.103.87
+
+------=_Part_26_15723016.1403070853392
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_27_15589852.1403070853392"
+
+------=_Part_27_15589852.1403070853392
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+    If you download / get a copy of football.db - you can access it via SQL 
+queries using your SQLite tool of choice (try the free SQLiteStudio [1], 
+for example) or use your script/programming language (PHP, Python, 
+JavaScript, Java etc.) of choice.
+
+   Using sportdb you can:
+
+   1) build an up-to-date version of football.db / worldcup.db etc   or
+   2) use Ruby to (re)use all model and access the data via scripts (using 
+Ruby).
+
+  Cheers.
+
+[1] sqlitestudio.pl
+
+PS: If you're on Windows and try to access the data via Excel try to 
+connect via an ODBC data source.
+
+------=_Part_27_15589852.1403070853392
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<br><br>&nbsp;&nbsp;&nbsp; If you download / get a copy of football.db - you can access it via SQL queries using your SQLite tool of choice (try the free SQLiteStudio [1], for example) or use your script/programming language (PHP, Python, JavaScript, Java etc.) of choice.<br><br>&nbsp;&nbsp; Using sportdb you can:<br><br>&nbsp;&nbsp; 1) build an up-to-date version of football.db / worldcup.db etc&nbsp;&nbsp; or<br>&nbsp;&nbsp; 2) use Ruby to (re)use all model and access the data via scripts (using Ruby).<br><br>&nbsp; Cheers.<br><br>[1] <cite class="_Zd"></cite>sqlitestudio.pl<br><br>PS: If you're on Windows and try to access the data via Excel try to connect via an ODBC data source.<br></div>
+------=_Part_27_15589852.1403070853392--
+
+------=_Part_26_15723016.1403070853392--
+

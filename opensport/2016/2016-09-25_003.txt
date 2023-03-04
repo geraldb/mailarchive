@@ -1,0 +1,70 @@
+From 6334238809406832640@xxx Sun Sep 25 12:01:40 +0000 2016
+X-GM-THRID: 6334235709986045952
+X-Received: by 10.157.46.36 with SMTP id q33mr3982756otb.40.1474804899826;
+        Sun, 25 Sep 2016 05:01:39 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.18.201 with SMTP id g67ls9888926otg.26.gmail; Sun, 25 Sep
+ 2016 05:01:39 -0700 (PDT)
+X-Received: by 10.13.218.130 with SMTP id c124mr4204341ywe.144.1474804899538;
+        Sun, 25 Sep 2016 05:01:39 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x229.google.com (mail-io0-x229.google.com. [2607:f8b0:4001:c06::229])
+        by gmr-mx.google.com with ESMTPS id u125si312111itc.0.2016.09.25.05.01.39
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 25 Sep 2016 05:01:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::229 as permitted sender) client-ip=2607:f8b0:4001:c06::229;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x229.google.com with SMTP id r145so158382461ior.0
+        for <opensport@googlegroups.com>; Sun, 25 Sep 2016 05:01:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=2mFvOPk/cNXrpGmjZLTKIBnDglG/GYYsQA0M/Sy1xCE=;
+        b=r30e5l4Ipu4bHjNLKoeaixMsLHy/+9/Isu3LhiDD7tfP7hxC6c1ZSZx4D87dgQ6fLp
+         YRaRr/pBmMCiJH7LnWAzZn5tZwXYpguCMbWvXrBkSXvp3+/67HMxWsXW29coQN2LE78Y
+         5nSdsAPTwBlj2+TRSZu6EqJmR/A1Y1dPk2W/ULEPLn+hk7IDjoBboxHU+sYnw5wxurmV
+         /7cVFjluHmDX5ty3Ijq2i11IWoexmqBC1MJX2L3klc/VljrccctFd/hvJw+YGvTPGjb6
+         Lgh/QUcfmZd0YK7qaSCh0NTGFR1iEHYQ3yGY98TAQU1sRorHD4ojD0egGiRzZIzuw7F6
+         /85A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=2mFvOPk/cNXrpGmjZLTKIBnDglG/GYYsQA0M/Sy1xCE=;
+        b=heY8IkBQBWvHe1SisXSwKgc4LQ4BvHb82ZYrFlMANgfd+zaE+YkELD3iTv6/kJ0hZE
+         sTcGfTLNZI5r8uuURGD7nk2Ngs5j3HLj/s2mP6qi9f/bF3hV3unPGWrgbxvs7h+qlPKM
+         2DGi93dR36D/MQZ0qYx77EDuvSWsyVJUf82soegTAsVgiQc+xgf5BOeo4+Z//4YHpYlI
+         FXAVxaI19gA+a4CAblTc9X3xXXxlg5w0Dfm7EuuuuSv0HOTwe47fHyIB4tZ/Ozkg2lCV
+         81AROoDElb/R2Ceh4kHmv1OY/NRHuDeeBqIb/iOwlSD3pTYg3u16vqIWlkpU+FqgHrsA
+         Y3tA==
+X-Gm-Message-State: AE9vXwPZ03+kxVG+kGSKX88i4InDt7epF68ak7IyTxGZlIJIekxcjGV+p/Jgt+fhqOlOjLi70eRSIozetj/rjA==
+X-Received: by 10.107.130.140 with SMTP id m12mr17291135ioi.8.1474804899181;
+ Sun, 25 Sep 2016 05:01:39 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.168.231 with HTTP; Sun, 25 Sep 2016 05:01:38 -0700 (PDT)
+In-Reply-To: <2b111894-68ee-4b7e-803c-507a520ed620@googlegroups.com>
+References: <de687acb-84c4-42c6-b80b-72808b37286d@googlegroups.com>
+ <CAAxEZd8k9WMVc9inhHM3TSbKDUH2ygForB7n76EnM3wnQN5rzw@mail.gmail.com> <2b111894-68ee-4b7e-803c-507a520ed620@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 25 Sep 2016 14:01:38 +0200
+Message-ID: <CAAxEZd_baTMWhBbY7M0BxEUtpnaTzGxCowES-wNMt3uTYyyH6Q@mail.gmail.com>
+Subject: Re: [opensport] Players per match
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+> While mainly focusing on EPL, any other league would be valuable too.
+
+  See Joe Kampschmidt's guide to football data and APIs [1] - that's
+the best (most extensive / detailed ) write-up about the
+"state-of-art".
+
+   About the football.db - nothings happens unless you do it e.g.
+you're welcome to join and contribute (instead of looking how you can
+serve yourself as is the general practice).
+
+  Cheers.
+

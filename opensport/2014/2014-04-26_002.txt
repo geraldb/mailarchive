@@ -1,0 +1,72 @@
+From 553866231808@xxx Tue Jun 16 00:17:12 +0000 2015
+X-GM-THRID: 550579994624
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fc6ae32916129c7e,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.15.94.8 with SMTP id ba8mr1396348eeb.1.1398533332617;
+        Sat, 26 Apr 2014 10:28:52 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.103.103 with SMTP id fv7ls249335wib.49.canary; Sat, 26 Apr
+ 2014 10:28:52 -0700 (PDT)
+X-Received: by 10.180.76.143 with SMTP id k15mr944238wiw.6.1398533332219;
+        Sat, 26 Apr 2014 10:28:52 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22e.google.com (mail-we0-x22e.google.com [2a00:1450:400c:c03::22e])
+        by gmr-mx.google.com with ESMTPS id ng3si117030wic.0.2014.04.26.10.28.52
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 26 Apr 2014 10:28:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22e as permitted sender) client-ip=2a00:1450:400c:c03::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f174.google.com with SMTP id w62so3539072wes.19
+        for <opensport@googlegroups.com>; Sat, 26 Apr 2014 10:28:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=qr8ra7qey9EWvRSMN8CvyFUBq4u6tHoolZ6TYrQ3B2g=;
+        b=bkicMIBeU+BdNV2ALUkvplzcAGDSuDX8BsNsrQKWtn42IovUGap+rJyo4siHC5lLGW
+         v/n7t0V6tKRuIrqm2uUMF6wclSzXDSHyX3XX1i/pECyM0X3oeqXDm/ltOdC+z9rXp7/P
+         2oQHw2bOdp/ikzCy7z4xUm60tGVhT7k4kHDmJt/pE9hfHSrFihdojVp6gk0CR2WB7t6u
+         fVTbnWnka57MF3X2SpoCZrDhCkk3lUJK4A/jRUfX8c5QPLlgHgzME0LZxKME8Eiw8Wa/
+         7aaR0ukOTy2K6ezwJRlb26DgQvsszQgJp4jbhDW7C4wQkaG7dMUxQAnkTOT4pdkXseUE
+         ziNg==
+MIME-Version: 1.0
+X-Received: by 10.180.89.241 with SMTP id br17mr8583524wib.0.1398533332032;
+ Sat, 26 Apr 2014 10:28:52 -0700 (PDT)
+Received: by 10.217.66.200 with HTTP; Sat, 26 Apr 2014 10:28:52 -0700 (PDT)
+Date: Sat, 26 Apr 2014 19:28:52 +0200
+Message-ID: <CAAxEZd_q4P9a0F_58meHR4i2HBisycjPHGvy4iFFYEtnaQ8hPw@mail.gmail.com>
+Subject: worldcup2014.db - Pre-Built SQLite Database for Download (incl. Qualifiers)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   For your convenience I've pre-built w/ the sportdb Ruby gem
+worldcup2014.db - an SQLite database - using the open public domain
+data sets [1].
+
+   You'll find the release on GitHub [2] (~ 1 Meg).
+
+   The free database includes all qualifiers (200+ teams, 800+
+matches) plus the upcoming final round kicking off on Jun/12 in S=C3=A3o
+Paulo in Brazil.
+
+   Enjoy. Cheers.
+
+
+PS: Note, you can always build yourself an up-to-version using rake e.g. is=
+sue
+
+$ rake build DATA=3Dworldcup2014
+
+[1] github.com/openfootball/world-cup
+[2] github.com/openfootball/build/releases
+

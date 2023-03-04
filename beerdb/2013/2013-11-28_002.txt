@@ -1,0 +1,94 @@
+From 29257367552@xxx Sat Dec 20 19:01:40 +0000 2014
+X-GM-THRID: 18531483648
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,9183dd27fdcc5ed2
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.58.94.162 with SMTP id dd2mr16463087veb.21.1385674188403;
+        Thu, 28 Nov 2013 13:29:48 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.182.29.74 with SMTP id i10ls624995obh.96.gmail; Thu, 28 Nov
+ 2013 13:29:48 -0800 (PST)
+X-Received: by 10.183.24.129 with SMTP id ii1mr2153obd.30.1385674188288;
+        Thu, 28 Nov 2013 13:29:48 -0800 (PST)
+X-Google-Doc-Id: a341c07ebd70ac30
+X-Google-Web-Client: true
+Date: Thu, 28 Nov 2013 13:29:47 -0800 (PST)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Message-Id: <94803ed0-61eb-43a5-923d-0ff52e9d9849@googlegroups.com>
+In-Reply-To: <7844a5a3-f278-4f73-8f1f-f98795838e61@googlegroups.com>
+References: <7844a5a3-f278-4f73-8f1f-f98795838e61@googlegroups.com>
+Subject: Re: Error trying to create my own copy of beer.db
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_745_31946572.1385674187705"
+X-Google-Token: EMvr3pQFrTR_jrfeu9A0
+X-Google-IP: 188.23.221.15
+
+------=_Part_745_31946572.1385674187705
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_746_21576249.1385674187705"
+
+------=_Part_746_21576249.1385674187705
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Jonny Fabuliss,
+
+  
+
+> *** error: Please install the sqlite3 adapter: `gem install 
+> activerecord-sqlite3
+> -adapter` (Could not find 'sqlite3' (~> 1.3.5) among 21 total gem(s))
+>
+> Tried this: gem install activerecord-sqlite3-adapter
+> Got this error:
+> ERROR:  Could not find a valid gem 'activerecord-sqlite3-adapter' (>= 0) 
+> in any
+> repository
+>
+
+   Sorry this might be confusing.  The activerecord-sqlite3-adapter is 
+bundled with (already included) in the standard activerecord gem. There is 
+no activerecord-sqlite3-adapter gem. Thus, try to install activerecord e.g.:
+
+   $ gem install activerecord    
+
+   and also make sure you have the sqlite3 gem installed e.g.:
+
+   $ gem install sqlite3
+
+    Now try again. Let me know if it works. Cheers.   
+
+
+PS: The activerecord-jdbc-sqlite will NOT work because it requires the Java 
+version of Ruby (that is, JRuby). The exception, of course, is if you 
+actually run on Java.  (jdbc == Java DB Connectivity)
+
+------=_Part_746_21576249.1385674187705
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello Jonny Fabuliss,<br><br>&nbsp; <br><blockquote class=
+=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #cc=
+c solid;padding-left: 1ex;"><div dir=3D"ltr">*** error: Please install the =
+sqlite3 adapter: `gem install activerecord-sqlite3<br>-adapter` (Could not =
+find 'sqlite3' (~&gt; 1.3.5) among 21 total gem(s))<br><br>Tried this: gem =
+install activerecord-sqlite3-adapter<br>Got this error:<br>ERROR:&nbsp; Cou=
+ld not find a valid gem 'activerecord-sqlite3-adapter' (&gt;=3D 0) in any<b=
+r>repository<br></div></blockquote><div><br>&nbsp;&nbsp; Sorry this might b=
+e confusing.&nbsp; The activerecord-sqlite3-adapter is bundled with (alread=
+y included) in the standard activerecord gem. There is no activerecord-sqli=
+te3-adapter gem. Thus, try to install activerecord e.g.:<br><br>&nbsp;&nbsp=
+; $ gem install activerecord&nbsp; &nbsp; <br><br>&nbsp;&nbsp; and also mak=
+e sure you have the sqlite3 gem installed e.g.:<br><br>&nbsp;&nbsp; $ gem i=
+nstall sqlite3<br><br>&nbsp;&nbsp;&nbsp; Now try again. Let me know if it w=
+orks. Cheers.&nbsp;&nbsp; <br><br><br>PS: The activerecord-jdbc-sqlite will=
+ NOT work because it requires the Java version of Ruby (that is, JRuby). Th=
+e exception, of course, is if you actually run on Java.&nbsp; (jdbc =3D=3D =
+Java DB Connectivity)<br></div></div>
+------=_Part_746_21576249.1385674187705--
+
+------=_Part_745_31946572.1385674187705--
+

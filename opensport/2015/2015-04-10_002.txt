@@ -1,0 +1,163 @@
+From 2566850084864@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2567687897088
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,622da71fe85b08d1,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.107.33 with SMTP id gz1mr1249259wib.3.1428652476905;
+        Fri, 10 Apr 2015 00:54:36 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.7.226 with SMTP id m2ls419846laa.71.gmail; Fri, 10 Apr
+ 2015 00:54:36 -0700 (PDT)
+X-Received: by 10.112.171.41 with SMTP id ar9mr66122lbc.24.1428652476353;
+        Fri, 10 Apr 2015 00:54:36 -0700 (PDT)
+Received: by 10.194.84.208 with SMTP id b16mswjz;
+        Thu, 9 Apr 2015 22:32:25 -0700 (PDT)
+X-Received: by 10.140.92.51 with SMTP id a48mr473168qge.16.1428643945649;
+        Thu, 09 Apr 2015 22:32:25 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Thu, 9 Apr 2015 22:32:25 -0700 (PDT)
+From: amit benvenisti <amitbenvenisti@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <4be6b079-3d30-4e06-82c2-d2a7f115a168@googlegroups.com>
+Subject: problem with sportdb after gem install
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_513_1349613056.1428643945464"
+X-Google-Token: EOnAnakFBLGZ9k5_aTE0
+X-Google-IP: 79.182.120.8
+
+------=_Part_513_1349613056.1428643945464
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_514_1224352578.1428643945464"
+
+------=_Part_514_1224352578.1428643945464
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello, 
+I am trying to use the sportdb gem, and running into some initializing 
+problems:
+
+when trying in console to run sportdb / sportdb create / sportdb help, i 
+get this error (stack)
+
+activerecord-utils/0.4.0 (activerecord/4.1.6) on Ruby 2.1.2 (2014-05-08) 
+[x86_64-linux]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Region<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::City<
+/home/amit/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:126:in 
+`require': cannot load such file -- datafile/datasets/football (LoadError)
+from 
+/home/amit/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:126:in 
+`require'
+from 
+/home/amit/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.6/lib/active_support/dependencies.rb:247:in 
+`block in require'
+from 
+/home/amit/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.6/lib/active_support/dependencies.rb:232:in 
+`load_dependency'
+from 
+/home/amit/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.6/lib/active_support/dependencies.rb:247:in 
+`require'
+from 
+/home/amit/.rvm/gems/ruby-2.1.2/gems/datafile-0.1.2/lib/datafile.rb:11:in 
+`<top (required)>'
+from 
+/home/amit/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:73:in 
+`require'
+from 
+/home/amit/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:73:in 
+`require'
+from 
+/home/amit/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.6/lib/active_support/dependencies.rb:247:in 
+`block in require'
+from 
+/home/amit/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.6/lib/active_support/dependencies.rb:232:in 
+`load_dependency'
+from 
+/home/amit/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.6/lib/active_support/dependencies.rb:247:in 
+`require'
+from 
+/home/amit/.rvm/gems/ruby-2.1.2/gems/sportdb-1.11.0/lib/sportdb.rb:10:in 
+`<top (required)>'
+from 
+/home/amit/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:73:in 
+`require'
+from 
+/home/amit/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:73:in 
+`require'
+from /home/amit/.rvm/gems/ruby-2.1.2/gems/sportdb-1.11.0/bin/sportdb:3:in 
+`<top (required)>'
+from /home/amit/.rvm/gems/ruby-2.1.2/bin/sportdb:23:in `load'
+from /home/amit/.rvm/gems/ruby-2.1.2/bin/sportdb:23:in `<main>'
+from /home/amit/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+from /home/amit/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in 
+`<main>'
+
+------=_Part_514_1224352578.1428643945464
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hello,&nbsp;<br>I am trying to use the sportdb gem, a=
+nd running into some initializing problems:<br><br></div><div>when trying i=
+n console to run sportdb / sportdb create / sportdb help, i get this error =
+(stack)</div><div><br></div><div>activerecord-utils/0.4.0 (activerecord/4.1=
+.6) on Ruby 2.1.2 (2014-05-08) [x86_64-linux]</div><div>&nbsp; [TagDb.has_m=
+any_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::Mode=
+l::Country&lt;</div><div>&nbsp; [TagDb.has_many_tags] adding taggings n tag=
+s has_many assocs to model &gt;WorldDb::Model::Region&lt;</div><div>&nbsp; =
+[TagDb.has_many_tags] adding taggings n tags has_many assocs to model &gt;W=
+orldDb::Model::City&lt;</div><div>/home/amit/.rvm/rubies/ruby-2.1.2/lib/rub=
+y/2.1.0/rubygems/core_ext/kernel_require.rb:126:in `require': cannot load s=
+uch file -- datafile/datasets/football (LoadError)</div><div><span class=3D=
+"Apple-tab-span" style=3D"white-space:pre">=09</span>from /home/amit/.rvm/r=
+ubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:126:in =
+`require'</div><div><span class=3D"Apple-tab-span" style=3D"white-space:pre=
+">=09</span>from /home/amit/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.6/l=
+ib/active_support/dependencies.rb:247:in `block in require'</div><div><span=
+ class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>from /home/am=
+it/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.6/lib/active_support/depende=
+ncies.rb:232:in `load_dependency'</div><div><span class=3D"Apple-tab-span" =
+style=3D"white-space:pre">=09</span>from /home/amit/.rvm/gems/ruby-2.1.2/ge=
+ms/activesupport-4.1.6/lib/active_support/dependencies.rb:247:in `require'<=
+/div><div><span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</spa=
+n>from /home/amit/.rvm/gems/ruby-2.1.2/gems/datafile-0.1.2/lib/datafile.rb:=
+11:in `&lt;top (required)&gt;'</div><div><span class=3D"Apple-tab-span" sty=
+le=3D"white-space:pre">=09</span>from /home/amit/.rvm/rubies/ruby-2.1.2/lib=
+/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:73:in `require'</div><div><=
+span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>from /hom=
+e/amit/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_requi=
+re.rb:73:in `require'</div><div><span class=3D"Apple-tab-span" style=3D"whi=
+te-space:pre">=09</span>from /home/amit/.rvm/gems/ruby-2.1.2/gems/activesup=
+port-4.1.6/lib/active_support/dependencies.rb:247:in `block in require'</di=
+v><div><span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>f=
+rom /home/amit/.rvm/gems/ruby-2.1.2/gems/activesupport-4.1.6/lib/active_sup=
+port/dependencies.rb:232:in `load_dependency'</div><div><span class=3D"Appl=
+e-tab-span" style=3D"white-space:pre">=09</span>from /home/amit/.rvm/gems/r=
+uby-2.1.2/gems/activesupport-4.1.6/lib/active_support/dependencies.rb:247:i=
+n `require'</div><div><span class=3D"Apple-tab-span" style=3D"white-space:p=
+re">=09</span>from /home/amit/.rvm/gems/ruby-2.1.2/gems/sportdb-1.11.0/lib/=
+sportdb.rb:10:in `&lt;top (required)&gt;'</div><div><span class=3D"Apple-ta=
+b-span" style=3D"white-space:pre">=09</span>from /home/amit/.rvm/rubies/rub=
+y-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:73:in `require'<=
+/div><div><span class=3D"Apple-tab-span" style=3D"white-space:pre">=09</spa=
+n>from /home/amit/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/k=
+ernel_require.rb:73:in `require'</div><div><span class=3D"Apple-tab-span" s=
+tyle=3D"white-space:pre">=09</span>from /home/amit/.rvm/gems/ruby-2.1.2/gem=
+s/sportdb-1.11.0/bin/sportdb:3:in `&lt;top (required)&gt;'</div><div><span =
+class=3D"Apple-tab-span" style=3D"white-space:pre">=09</span>from /home/ami=
+t/.rvm/gems/ruby-2.1.2/bin/sportdb:23:in `load'</div><div><span class=3D"Ap=
+ple-tab-span" style=3D"white-space:pre">=09</span>from /home/amit/.rvm/gems=
+/ruby-2.1.2/bin/sportdb:23:in `&lt;main&gt;'</div><div><span class=3D"Apple=
+-tab-span" style=3D"white-space:pre">=09</span>from /home/amit/.rvm/gems/ru=
+by-2.1.2/bin/ruby_executable_hooks:15:in `eval'</div><div><span class=3D"Ap=
+ple-tab-span" style=3D"white-space:pre">=09</span>from /home/amit/.rvm/gems=
+/ruby-2.1.2/bin/ruby_executable_hooks:15:in `&lt;main&gt;'</div></div>
+------=_Part_514_1224352578.1428643945464--
+------=_Part_513_1349613056.1428643945464--
+

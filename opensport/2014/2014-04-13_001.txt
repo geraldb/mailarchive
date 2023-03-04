@@ -1,0 +1,107 @@
+From 501067284480@xxx Tue Jun 16 00:17:14 +0000 2015
+X-GM-THRID: 501653438464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,d786e4121fda5685
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.58.202.10 with SMTP id ke10mr18764457vec.8.1397471196729;
+        Mon, 14 Apr 2014 03:26:36 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.178.145 with SMTP id cy17ls1689691igc.22.canary; Mon, 14
+ Apr 2014 03:26:36 -0700 (PDT)
+X-Received: by 10.43.103.136 with SMTP id di8mr17210639icc.14.1397471196471;
+        Mon, 14 Apr 2014 03:26:36 -0700 (PDT)
+Received: by 10.224.62.9 with SMTP id v9msqah;
+        Sun, 13 Apr 2014 04:49:05 -0700 (PDT)
+X-Received: by 10.140.91.180 with SMTP id z49mr806632qgd.3.1397389744995;
+        Sun, 13 Apr 2014 04:49:04 -0700 (PDT)
+X-Google-Doc-Id: bc8531c1074a7061
+X-Google-Web-Client: true
+Date: Sun, 13 Apr 2014 04:49:03 -0700 (PDT)
+From: Thor Helgason <thorvaldurhelga@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <32f5fa1d-f48b-4056-baa9-5ff6a0e13cf9@googlegroups.com>
+Subject: Rails 4 support and setup errors
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1009_29617422.1397389743902"
+X-Google-Token: EK_zqZoFIu-MJbZWizM0
+X-Google-IP: 86.155.88.196
+
+------=_Part_1009_29617422.1397389743902
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1010_26196.1397389743902"
+
+------=_Part_1010_26196.1397389743902
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi there!
+
+I've been looking into using sportdb for creating a non-commercial app for 
+the world cup. When trying to use it with Rails 4 I've encountered number 
+of issues regarding multiline anchors in regular expressions in sportdb and 
+some of the dependencies (worlddb and tagutils). Is there a plan to upgrade 
+these libraries to support rails 4 in the near future? 
+
+Also, I fixed these errors locally to see if it still worked, and I keep 
+getting file parsing erros when running 'sportdb setup'  when attempting to 
+read a file which is not located within a gem:
+
+*"[info] parsing data 'setups/all' 
+(/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/setups/all.txt)...*
+*[info] parsing data 'seasons' 
+(/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/seasons.txt)...*
+*[info] parsing data 'setups/all' (/setups/all.txt)...*
+**** error: No such file or directory @ rb_sysopen - /setups/all.txt"*
+
+Similarly when I run 'sportdb --dbname world-cup-2014.db setup --include 
+./world-cup --worldinclude ./world.db' I get in the end:
+
+*"[info] parsing data 'setups/all' 
+(/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/setups/all.txt)...*
+*[info] parsing data 'seasons' 
+(/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/seasons.txt)...*
+*[info] parsing data 'setups/all' (./world.db/setups/all.txt)...*
+**** error: No such file or directory @ rb_sysopen - 
+./world.db/setups/all.txt"*
+
+Otherwise the models seem to work fine in the sportdb/console, I just don't 
+have any data because of these missing file errors.
+
+Cheers,
+Thor
+
+------=_Part_1010_26196.1397389743902
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi there!<div><br></div><div>I've been looking into using =
+sportdb for creating a non-commercial app for the world cup. When trying to=
+ use it with Rails 4 I've encountered number of issues regarding multiline =
+anchors in regular expressions in sportdb and some of the dependencies (wor=
+lddb and tagutils). Is there a plan to upgrade these libraries to support r=
+ails 4 in the near future?&nbsp;</div><div><br></div><div>Also, I fixed the=
+se errors locally to see if it still worked, and I keep getting file parsin=
+g erros when running 'sportdb setup' &nbsp;when attempting to read a file w=
+hich is not located within a gem:</div><div><br></div><div><i>"[info] parsi=
+ng data 'setups/all' (/home/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/d=
+ata/setups/all.txt)...</i></div><div><i>[info] parsing data 'seasons' (/hom=
+e/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/seasons.txt)...</i></d=
+iv><div><i>[info] parsing data 'setups/all' (/setups/all.txt)...</i></div><=
+div><i>*** error: No such file or directory @ rb_sysopen - /setups/all.txt"=
+</i></div><div><br></div><div>Similarly when I run 'sportdb --dbname world-=
+cup-2014.db setup --include ./world-cup --worldinclude ./world.db' I get in=
+ the end:</div><div><br></div><div><i>"[info] parsing data 'setups/all' (/h=
+ome/thor/.rvm/gems/ruby-2.1.0/gems/sportdb-1.8.12/data/setups/all.txt)...</=
+i></div><div><i>[info] parsing data 'seasons' (/home/thor/.rvm/gems/ruby-2.=
+1.0/gems/sportdb-1.8.12/data/seasons.txt)...</i></div><div><i>[info] parsin=
+g data 'setups/all' (./world.db/setups/all.txt)...</i></div><div><i>*** err=
+or: No such file or directory @ rb_sysopen - ./world.db/setups/all.txt"</i>=
+</div><div><br></div><div>Otherwise the models seem to work fine in the spo=
+rtdb/console, I just don't have any data because of these missing file erro=
+rs.</div><div><br></div><div>Cheers,</div><div>Thor</div></div>
+------=_Part_1010_26196.1397389743902--
+
+------=_Part_1009_29617422.1397389743902--
+

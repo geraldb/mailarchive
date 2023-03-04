@@ -1,0 +1,93 @@
+From 855271014400@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 830420811776
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,cfa826538012f8f0
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.224.54.72 with SMTP id p8mr309858qag.14.1298670530919;
+        Fri, 25 Feb 2011 13:48:50 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.224.166.86 with SMTP id l22ls420994qay.4.p; Fri, 25 Feb 2011
+ 13:48:50 -0800 (PST)
+Received: by 10.224.89.6 with SMTP id c6mr297190qam.13.1298670530282;
+        Fri, 25 Feb 2011 13:48:50 -0800 (PST)
+Received: by 10.224.89.6 with SMTP id c6mr297189qam.13.1298670530268;
+        Fri, 25 Feb 2011 13:48:50 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qw0-f44.google.com (mail-qw0-f44.google.com [209.85.216.44])
+        by gmr-mx.google.com with ESMTPS id n4si177053qcg.7.2011.02.25.13.48.50
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Fri, 25 Feb 2011 13:48:50 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.216.44 as permitted sender) client-ip=209.85.216.44;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.216.44 as permitted sender) smtp.mail=gerald.bauer@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by mail-qw0-f44.google.com with SMTP id 6so1498752qwh.3
+        for <webslideshow@googlegroups.com>; Fri, 25 Feb 2011 13:48:50 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to:content-type:content-transfer-encoding;
+        bh=LW+jYrEftp4VG+Q9sMnw206sHKj29UQi5xW19YWWYBw=;
+        b=E6r8/7DWou7IsnHeLhP3Py5E3QR7n18UqORSZh7vdRsggoLkJOAhOwPnMmtd/fH65X
+         Cl1X2UHkI8990r/iSOJlpax/HgwmkiqB/XfeZ04Q2Blq3U9wAYI2V1UzwNU0b2eQ4sad
+         8F1jH+yj4QJ4CXN44jxw5ghSvLWjcbNEN2ZXQ=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        b=GVK2h0qR2eQBSpCeZHAbqpZYtZ5UX67k6b6hN7QhYISlEoEdMfVzespyFYwF+uWRS7
+         wyXedQA0Gp+g52tJYwWWWDBiPU8PrWP//F6sBwungtxuFO0viTJtowzJWBKSxipM7Wpv
+         BpphOObmEwf8NcREwqRGw2ex20Zhi6IvlS5Ps=
+MIME-Version: 1.0
+Received: by 10.224.37.139 with SMTP id x11mr2568474qad.152.1298670529873;
+ Fri, 25 Feb 2011 13:48:49 -0800 (PST)
+Received: by 10.229.7.83 with HTTP; Fri, 25 Feb 2011 13:48:49 -0800 (PST)
+In-Reply-To: <4175dcc1-5703-463d-9533-ca3b2ab95b18@y31g2000prd.googlegroups.com>
+References: <249a085f-193f-478d-b64b-9d1b2427b4da@r4g2000vbq.googlegroups.com>
+	<AANLkTi=gL=0xkySHiwcBp=aX3EqdMxj9CUnjTMPNFVtE@mail.gmail.com>
+	<4175dcc1-5703-463d-9533-ca3b2ab95b18@y31g2000prd.googlegroups.com>
+Date: Fri, 25 Feb 2011 22:48:49 +0100
+Message-ID: <AANLkTim15z=LnFr3myYt0LOjFJ+oOHWgMqg=ojMKip9A@mail.gmail.com>
+Subject: Re: [slideshow] Re: slideshow 0.9.9 doesn't seem to support gradients anymore?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+> I guess I should just write my own CSS for this then?
+> Something like this seems to work, will it continue to work in the
+> future?
+>
+> %css
+> .slide {
+> =A0 =A0background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(blue),
+> to(black));
+> =A0 =A0background: -moz-linear-gradient(top, blue, black);
+> }
+> %end
+
+   That's definitely the recommend way because it's just "plain" CSS3.
+The only downside is that it only works with modern browsers and you
+might have to change your code as the CSS3 syntax changes and vendors
+drop the -moz and -webkit prefix.
+
+   As an exercise you might write your own gradient helper to generate
+the CSS3 code. As an example see
+https://github.com/geraldb/slideshow/blob/master/lib/slideshow/helpers/back=
+ground_helper.rb
+
+   As an alternative you might use jQuery to add the css class to all
+slides e.g.
+
+    $( '.slides' ).addClass( '.gradient_yellow_orange' );
+
+
+> Also, if this is the preferred way to do things, the website could
+> probably use an update: http://slideshow.rubyforge.org/themes.html
+
+   Good point. Thanks for the reminder. An updated slide about CSS3
+gradients is online @ http://slideshow.rubyforge.org/tutorial.html#8
+
+   Cheers.
+

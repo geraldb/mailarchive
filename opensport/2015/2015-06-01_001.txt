@@ -1,0 +1,69 @@
+From 2641658642432@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2639352823808
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a33ca10921a54d83
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.2.98 with SMTP id 62mr28292894yhe.20.1433153190219;
+        Mon, 01 Jun 2015 03:06:30 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.78.71 with SMTP id z7ls848279obw.22.gmail; Mon, 01 Jun
+ 2015 03:06:29 -0700 (PDT)
+X-Received: by 10.182.226.169 with SMTP id rt9mr28154088obc.10.1433153189872;
+        Mon, 01 Jun 2015 03:06:29 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qc0-x22f.google.com (mail-qc0-x22f.google.com. [2607:f8b0:400d:c01::22f])
+        by gmr-mx.google.com with ESMTPS id jk4si1638055qcb.3.2015.06.01.03.06.29
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 01 Jun 2015 03:06:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c01::22f as permitted sender) client-ip=2607:f8b0:400d:c01::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c01::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qc0-x22f.google.com with SMTP id w10so45488857qcx.3
+        for <opensport@googlegroups.com>; Mon, 01 Jun 2015 03:06:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=DQfjd9bIrrLq2dFm87OXJKXmqrELLKnHnFO6h9//AWg=;
+        b=s9AznhWJK4DILVjJTN81duUqFtJG+LpgMAGSPuKqyujLgIvAS6TWaRu/98K12NLpSv
+         4N76x20ZOfx+biIcLiubExJ/D8Gxqh+a/3RR0gVvyZRzQb79L1azNJWvUfELJyUKxZns
+         hXzuf+DhBJ5J/EwU4y6g7KYQWhQm++WsNG6GB9jP89nAB7b0/ysrocE+d8AarZ6MhmU9
+         7bH6VwOtKkFdlsbx4iyLmTMuqcrXaJvTmpLstNY9zn0EM6eY8/D+1yMwrwAnetJO8x4b
+         YVSeYY6rldFY2uG5RSYGAQPcvEWfYukb8fsqx4o5Tj7I6EzftZg74FRieU2MkRqTu/8f
+         DIHQ==
+MIME-Version: 1.0
+X-Received: by 10.55.17.226 with SMTP id 95mr11402229qkr.63.1433153189556;
+ Mon, 01 Jun 2015 03:06:29 -0700 (PDT)
+Received: by 10.229.180.2 with HTTP; Mon, 1 Jun 2015 03:06:29 -0700 (PDT)
+In-Reply-To: <6d3f0dce-2d3c-4530-b01e-f3fe929d0464@googlegroups.com>
+References: <6d3f0dce-2d3c-4530-b01e-f3fe929d0464@googlegroups.com>
+Date: Mon, 1 Jun 2015 12:06:29 +0200
+Message-ID: <CAAxEZd_oJw1Ki_5mDzVP+GAxjpPfWQq90oLxe6Z4_s06QfYwJw@mail.gmail.com>
+Subject: Re: [opensport] New league addition
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  What league(s) are you trying to add?
+  There are many examples online to get you started. For club leagues,
+for example, see the /br-brazil repo [1].
+
+   You will need a leagues.txt, a teams.txt and than a folder for the
+season w/ (at least) two files, one for the seasons teams e.g.
+2015/cb.yml and one for the match schedule (fixtures) e.g.
+2015/cb.txt. That's it.
+
+  I'd recommend starting w/ your repo, post a link and than we can see
+what's not working (or missing) if you try to import the datasets into
+an database.
+
+  Cheers.
+
+[1] github.com/openfootball/br-brazil
+

@@ -1,0 +1,105 @@
+From 6513595886356922368@xxx Sun Jan 21 19:58:42 +0000 2018
+X-GM-THRID: 6513595883287740416
+X-Received: by 10.157.39.109 with SMTP id r100mr3355223ota.81.1516564722511;
+        Sun, 21 Jan 2018 11:58:42 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.202.198.139 with SMTP id w133ls1535954oif.9.gmail; Sun, 21 Jan
+ 2018 11:58:42 -0800 (PST)
+X-Received: by 10.202.199.3 with SMTP id x3mr2717407oif.61.1516564722355;
+        Sun, 21 Jan 2018 11:58:42 -0800 (PST)
+Received: by 10.202.78.19 with SMTP id c19msoib;
+        Sat, 20 Jan 2018 16:18:29 -0800 (PST)
+X-Google-Smtp-Source: AH8x224wjeIn9Zj1dw4yX9cLkBwxo2E1U2HlQ0hP/x3SMYFQZm6Zpvd5gASAU7LezcbZMspEiDaZXWEKkA==
+X-Received: by 10.157.44.232 with SMTP id e37mr140143otd.11.1516493909044;
+        Sat, 20 Jan 2018 16:18:29 -0800 (PST)
+X-Google-Web-Client: true
+Date: Sat, 20 Jan 2018 16:18:28 -0800 (PST)
+From: Jason Rogers <jasonr1234@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Message-Id: <77c25fe2-20bd-4644-a125-43661f513d0a@googlegroups.com>
+Subject: Getting started with factdb and dumping the data to other formats
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_90_562036337.1516493908853"
+X-Google-Token: ENS4j9MFG6cfgi_yYI40
+X-Google-IP: 136.24.93.20
+
+------=_Part_90_562036337.1516493908853
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_91_846432487.1516493908853"
+
+------=_Part_91_846432487.1516493908853
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi, I'm interested in using the data posted in factdb, but I'm quite 
+confused about how to properly use the database and I can't find much in 
+the way of a manual or tutorial.
+
+First, if there is a good manual/tutorial please point me to it and I'll 
+read through it thoroughly. If not, then here are my questions:
+
+1. I see there are separate pages for factdb, openmundi, world.db, etc. 
+What is the relationship between these? Are they different (outdated) 
+versions of the same thing? Or part of a larger parent project, etc.?
+
+2. As someone who is familiar with coding/terminal/scripting, but not 
+familiar with json or working with databases, what is the proper way to use 
+and access the data?
+
+3. Would it be possible to post a dump of all the data to a csv file or 
+similar? Ultimately I want to have a data table where rows are countries 
+and columns are all categories. It would also be ok to have one master json 
+file which I can then parse in R. Alternatively, if you could even just 
+tell me conceptually the right steps to follow to get to this result, I can 
+probably figure out the rest myself.
+
+Thank you for maintaning this project!
+
+
+------=_Part_91_846432487.1516493908853
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><font color=3D"#000000" face=3D"verdana, arial, helve=
+tica, sans-serif"><span style=3D"font-size: 14px;">Hi, I&#39;m interested i=
+n using the data posted in factdb, but I&#39;m quite confused about how to =
+properly use the database and I can&#39;t find much in the way of a manual =
+or tutorial.</span></font></div><div><font color=3D"#000000" face=3D"verdan=
+a, arial, helvetica, sans-serif"><span style=3D"font-size: 14px;"><br></spa=
+n></font></div><div><font color=3D"#000000" face=3D"verdana, arial, helveti=
+ca, sans-serif"><span style=3D"font-size: 14px;">First, if there is a good =
+manual/tutorial please point me to it and I&#39;ll read through it thorough=
+ly. If not, then here are my questions:</span></font></div><div><font color=
+=3D"#000000" face=3D"verdana, arial, helvetica, sans-serif"><span style=3D"=
+font-size: 14px;"><br></span></font></div><div><font color=3D"#000000" face=
+=3D"verdana, arial, helvetica, sans-serif"><span style=3D"font-size: 14px;"=
+>1.=C2=A0</span></font><span style=3D"color: rgb(0, 0, 0); font-family: ver=
+dana, arial, helvetica, sans-serif; font-size: 14px;">I see there are separ=
+ate pages for factdb, openmundi, world.db, etc. What is the relationship be=
+tween these? Are they different (outdated) versions of the same thing? Or p=
+art of a larger parent project, etc.?</span></div><div><span style=3D"color=
+: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif; font-si=
+ze: 14px;"><br></span></div><div><span style=3D"color: rgb(0, 0, 0); font-f=
+amily: verdana, arial, helvetica, sans-serif; font-size: 14px;">2. As someo=
+ne who is familiar with coding/terminal/scripting, but not familiar with js=
+on or working with databases, what is the proper way to use and access the =
+data?</span></div><div><span style=3D"color: rgb(0, 0, 0); font-family: ver=
+dana, arial, helvetica, sans-serif; font-size: 14px;"><br></span></div><div=
+><span style=3D"color: rgb(0, 0, 0); font-family: verdana, arial, helvetica=
+, sans-serif; font-size: 14px;">3. Would it be possible to post a dump of a=
+ll the data to a csv file or similar? Ultimately I want to have a data tabl=
+e where rows are countries and columns are all categories. It would also be=
+ ok to have one master json file which I can then parse in R. Alternatively=
+, if you could even just tell me conceptually the right steps to follow to =
+get to this result, I can probably figure out the rest myself.</span></div>=
+<div><span style=3D"color: rgb(0, 0, 0); font-family: verdana, arial, helve=
+tica, sans-serif; font-size: 14px;"><br></span></div><div><span style=3D"co=
+lor: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif; font=
+-size: 14px;">Thank you for maintaning this project!</span></div><span styl=
+e=3D"color: rgb(68, 136, 85); font-family: verdana, arial, helvetica, sans-=
+serif; font-size: 14px;"><div><br></div></span></div>
+------=_Part_91_846432487.1516493908853--
+
+------=_Part_90_562036337.1516493908853--
+

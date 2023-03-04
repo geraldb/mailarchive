@@ -1,0 +1,158 @@
+From 44332744704@xxx Sat Dec 20 19:01:40 +0000 2014
+X-GM-THRID: 18531483648
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,9183dd27fdcc5ed2
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.50.3.40 with SMTP id 8mr2926724igz.1.1385740464765;
+        Fri, 29 Nov 2013 07:54:24 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.49.64.231 with SMTP id r7ls1856706qes.78.gmail; Fri, 29 Nov
+ 2013 07:54:24 -0800 (PST)
+X-Received: by 10.49.127.100 with SMTP id nf4mr45262qeb.16.1385740464632;
+        Fri, 29 Nov 2013 07:54:24 -0800 (PST)
+X-Google-Doc-Id: 7fb7d1c44a90d9fe
+X-Google-Web-Client: true
+Date: Fri, 29 Nov 2013 07:54:24 -0800 (PST)
+From: Jonny Fabuliss <jonfabris@gmail.com>
+To: beerdb@googlegroups.com
+Message-Id: <0b2c3939-8c44-44e4-9fd6-7850076d1390@googlegroups.com>
+In-Reply-To: <7844a5a3-f278-4f73-8f1f-f98795838e61@googlegroups.com>
+References: <7844a5a3-f278-4f73-8f1f-f98795838e61@googlegroups.com>
+Subject: Re: Error trying to create my own copy of beer.db
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1663_4086537.1385740464116"
+X-Google-Token: ELDx4pQFnor_mEv_RQ40
+X-Google-IP: 99.194.31.220
+
+------=_Part_1663_4086537.1385740464116
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1664_30060306.1385740464116"
+
+------=_Part_1664_30060306.1385740464116
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I just tried copying the us.yml file in us-united-states\setups to all.yml
+It created the beer.db file but there were only 16 beers in the beers table
+
+
+On Thursday, November 28, 2013 11:38:53 AM UTC-5, Jonny Fabuliss wrote:
+>
+> I am following the instructions in
+> Command Line Tool - Build Your Own beer.db Copy
+> I installed Ruby
+> Installed rubygems-2.1.7
+> Got a copy of the world.db fixtures
+> Got a copy of the US data set
+>
+> First time I tried: beerdb setup --include ./us-united-states 
+> --worldinclude ./world.db
+> I got a this error:
+> *** error: Please install the sqlite3 adapter: `gem install 
+> activerecord-sqlite3
+> -adapter` (Could not find 'sqlite3' (~> 1.3.5) among 21 total gem(s))
+>
+> Tried this: gem install activerecord-sqlite3-adapter
+> Got this error:
+> ERROR:  Could not find a valid gem 'activerecord-sqlite3-adapter' (>= 0) 
+> in any
+> repository
+> ERROR:  Possible alternatives: activerecord-jdbcsqlite3-adapter, 
+> activerecord-sq
+> lserver-adapter, activerecord-mysql2-adapter, 
+> activerecord-spatialite-adapter, a
+> ctiverecord-mysql-adapter
+>
+>
+> tried this; gem install activerecord-jdbcsqlite3-adapter
+> seemed to work
+>
+> Tried this again: beerdb setup --include ./us-united-states 
+> --worldinclude ./world.db
+> And got the error below
+>
+>
+> Can anyone either:
+> 1 send me the beer.db file with all the data?
+> 2 tell me what I'm doing wrong
+> 3 shoot me
+>
+> Thanks
+>
+>
+>
+> D:\Android\workspace\HeyBartender\Original Data\beerdb>beerdb setup 
+> --include ./
+> us-united-states --worldinclude ./world.db
+> worlddb 1.7.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> logdb 0.6.0 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]
+> working directory: D:/Android/workspace/HeyBartender/Original Data/beerdb
+> Connecting to db using settings:
+> {:adapter=>"sqlite3", :database=>"./beer.db"}
+> Invalid gemspec in 
+> [D:/Ruby/lib/ruby/gems/1.9.1/specifications/activerecord-jdbc
+> -adapter-1.3.3.gemspec]: undefined method `prerelease?' for "1.3.3":String
+> Invalid gemspec in 
+> [D:/Ruby/lib/ruby/gems/1.9.1/specifications/activerecord-jdbc
+> sqlite3-adapter-1.3.3.gemspec]: undefined method `prerelease?' for 
+> "1.3.3":Strin
+> g
+> Invalid gemspec in 
+> [D:/Ruby/lib/ruby/gems/1.9.1/specifications/jdbc-sqlite3-3.7.
+> 2.1.gemspec]: undefined method `prerelease?' for "3.7.2.1":String
+>
+> *** error: undefined method `name' for nil:NilClass
+>
+
+------=_Part_1664_30060306.1385740464116
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I just tried copying the us.yml file in us-united-states\s=
+etups to all.yml<br>It created the beer.db file but there were only 16 beer=
+s in the beers table<br><br><br>On Thursday, November 28, 2013 11:38:53 AM =
+UTC-5, Jonny Fabuliss wrote:<blockquote class=3D"gmail_quote" style=3D"marg=
+in: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><d=
+iv dir=3D"ltr">I am following the instructions in<br><h2>Command Line Tool =
+- Build Your Own <code>beer.db</code> Copy</h2><br>I installed Ruby<br>Inst=
+alled rubygems-2.1.7<br>Got a copy of the <code>world.db</code> fixtures<br=
+>Got a copy of the US data set<br><br>First time I tried:<code> beerdb setu=
+p --include ./us-united-states --worldinclude ./world.db</code><br>I got a =
+this error:<br>*** error: Please install the sqlite3 adapter: `gem install =
+activerecord-sqlite3<br>-adapter` (Could not find 'sqlite3' (~&gt; 1.3.5) a=
+mong 21 total gem(s))<br><br>Tried this: gem install activerecord-sqlite3-a=
+dapter<br>Got this error:<br>ERROR:&nbsp; Could not find a valid gem 'activ=
+erecord-sqlite3-adapter' (&gt;=3D 0) in any<br>repository<br>ERROR:&nbsp; P=
+ossible alternatives: activerecord-jdbcsqlite3-<wbr>adapter, activerecord-s=
+q<br>lserver-adapter, activerecord-mysql2-adapter, activerecord-spatialite-=
+<wbr>adapter, a<br>ctiverecord-mysql-adapter<br><br><br>tried this; gem ins=
+tall activerecord-jdbcsqlite3-<wbr>adapter<br>seemed to work<br><br>Tried t=
+his again: <code>beerdb setup --include ./us-united-states --worldinclude .=
+/world.db<br>And got the error below<br><br><br>Can anyone either:<br>1 sen=
+d me the beer.db file with all the data?<br>2 tell me what I'm doing wrong<=
+br>3 shoot me<br><br>Thanks<br><br><br></code><br>D:\Android\workspace\<wbr=
+>HeyBartender\Original Data\beerdb&gt;beerdb setup --include ./<br>us-unite=
+d-states --worldinclude ./world.db<br>worlddb 1.7.2 on Ruby 1.9.3 (2013-11-=
+22) [i386-mingw32]<br>beerdb 0.8.2 on Ruby 1.9.3 (2013-11-22) [i386-mingw32=
+]<br>logdb 0.6.0 on Ruby 1.9.3 (2013-11-22) [i386-mingw32]<br>beerdb 0.8.2 =
+on Ruby 1.9.3 (2013-11-22) [i386-mingw32]<br>beerdb 0.8.2 on Ruby 1.9.3 (20=
+13-11-22) [i386-mingw32]<br>working directory: D:/Android/workspace/<wbr>He=
+yBartender/Original Data/beerdb<br>Connecting to db using settings:<br>{:ad=
+apter=3D&gt;"sqlite3", :database=3D&gt;"./beer.db"}<br>Invalid gemspec in [=
+D:/Ruby/lib/ruby/gems/1.9.1/<wbr>specifications/activerecord-<wbr>jdbc<br>-=
+adapter-1.3.3.gemspec]: undefined method `prerelease?' for "1.3.3":String<b=
+r>Invalid gemspec in [D:/Ruby/lib/ruby/gems/1.9.1/<wbr>specifications/activ=
+erecord-<wbr>jdbc<br>sqlite3-adapter-1.3.3.gemspec]<wbr>: undefined method =
+`prerelease?' for "1.3.3":Strin<br>g<br>Invalid gemspec in [D:/Ruby/lib/rub=
+y/gems/1.9.1/<wbr>specifications/jdbc-sqlite3-3.<wbr>7.<br>2.1.gemspec]: un=
+defined method `prerelease?' for "3.7.2.1":String<br><br>*** error: undefin=
+ed method `name' for nil:NilClass<br></div></blockquote></div>
+------=_Part_1664_30060306.1385740464116--
+
+------=_Part_1663_4086537.1385740464116--
+

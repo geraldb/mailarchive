@@ -1,0 +1,126 @@
+From 6816013635075178496@xxx Wed Apr 15 18:54:01 +0000 2020
+X-GM-THRID: 6815540562521751552
+X-Received: by 2002:aa7:ca53:: with SMTP id j19mr26704505edt.229.1586976841248;
+        Wed, 15 Apr 2020 11:54:01 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a17:906:f102:: with SMTP id gv2ls6505263ejb.0.gmail; Wed, 15
+ Apr 2020 11:54:00 -0700 (PDT)
+X-Google-Smtp-Source: APiQypKz7bo8T7PC+2UjIP1DD40AduozmJI6IagNuw0nHC99NaENUFiA1zSva+gZNxvyX2GF/2ZV
+X-Received: by 2002:a17:907:1185:: with SMTP id uz5mr6434398ejb.335.1586976840080;
+        Wed, 15 Apr 2020 11:54:00 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1586976840; cv=none;
+        d=google.com; s=arc-20160816;
+        b=NdeS3Vf8gmmpeKcXElZGAnbPbmxQpE919k+TLRQC1itIOgRwzrf+3ZtyLS5Vwih3zr
+         SNcXdwA69GAjlR+b0K27BsUKw2G9v9vZAPM9u7xF94YMfvj89vYMSd7O/uFwrY02Wvzi
+         VZ7eEwKamaVYRrOV0RU7MricKUR8W1vJxFE3T7g1cXENsM5LWh2rlo9cXgZBctFb7s/8
+         UGjscqrEjMMNUSlVQvINM6BGd+44EPI9OT/XN2Xwki+/PX3SH7Dm+VB4pJKcrdspemcl
+         gzi7EoEdfBRD0T90n0C4Mvfbbn1vdsR7ujjOtl15XrUmOSfWfGPfNkaf3JxUTNo8fRJl
+         bpzA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=cQoNBeoRjFoxV93DORsIWKCqKFG95Q+wnaBm38s36Pw=;
+        b=kDmKzPl+8OSyjh/llyRdkaDyN+cr0gPvW9C90oD0Z09C4FqJNjt5jUZQWKOIwj/xoK
+         t1gfPNjTNSQvB6a0FQmcZqWgWh7V+Z5gTl8A+isgQnEzy2VjHLHAaKtapRRBr1idkVQk
+         2dS6IuvR3y784aTwaJigfEIyEuuCa7bnNrha3OGyLlkp7POWRpuGCVP06Cq/y6mPVLC5
+         4xdkRC1wlHVHlPKuEZtz8zj2msWEibziCm7uum2EQ8nOFiptY1mj3aZ/G8m0eaIABi8L
+         E1z2e+CVTm+JXwdDHtQDFNCgvnemgqoxQ0GmCA2xnCWqkwMwOGeaOmTP+Wt57/fo2oDF
+         TjTg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=bK8G6fIQ;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22c.google.com (mail-lj1-x22c.google.com. [2a00:1450:4864:20::22c])
+        by gmr-mx.google.com with ESMTPS id v18si1001023eju.1.2020.04.15.11.54.00
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 15 Apr 2020 11:54:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) client-ip=2a00:1450:4864:20::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=bK8G6fIQ;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22c.google.com with SMTP id u6so3298253ljl.6
+        for <wwwmake@googlegroups.com>; Wed, 15 Apr 2020 11:54:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=cQoNBeoRjFoxV93DORsIWKCqKFG95Q+wnaBm38s36Pw=;
+        b=bK8G6fIQBsuuNt0IhKuv6G96x8gEU26BBuBDeL960nd/yNRApagMz9NlsE3aDU8lZ8
+         xCft5gF2MdNqjCTwqUgbQ8787IeEJX03vcsjLYJXoXJXTYkqBWpuiqZT3Ietq0nLC6Gq
+         JjEMGm5cSUVjDazjyHDcYiCKjmS7ao64/RGM7Ojlsi1ga9zsK9a6XF93suPf0F1aus80
+         i35uEanbZUsIY4Q+2ohWaFg6M5umQAblOGHPQA/qTu+/w63Ro4LkGqHt1ijeqgcxWgcA
+         Ekw+IX9QingH+T0LOYNYLE/hq6FBTE+D5dmHsyxBiIuibf4oZD90Hj/avLCUPNOOF5BF
+         DiLQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=cQoNBeoRjFoxV93DORsIWKCqKFG95Q+wnaBm38s36Pw=;
+        b=Mn3owbcm15nymyVYA8alJwWLY0JD9xwXZ2mq8AiLRumUNdOSRxeNQ2G7wOxLCHKNXv
+         8OuAokS3EFkX1yQrkktZA4yN4TNF296nrk4VnodmPMutq4xYWtHvpLqsGm0nbxkmSATn
+         E4LiuSIXf7t6x6IJ8jKAB3FFKP4J/ERKS7ggyxQxJhjplqJRMtHixa1Hr4PXQS5N3sTO
+         PpkMay4yYVG+u4JKl1kDPbkrTrYBbjrg0VMfpBZqJlKbd972ZsoPIEnG2hk1EHRrXIHm
+         o9XVISujeG9JQBvmuz+kkQ4Oifj9gnQMrLczcu1JaMdQLTHjYNJo1tNdJ+FYQDE+eRAp
+         UipQ==
+X-Gm-Message-State: AGi0PubFHFfuCwQg0rBv7xiukQDRP3zzNaFLdkFPNelexgMB07S6hoT3
+	gc/2d7vcFWwPu7VekQoeiNA59TfZo6VOLh/a2regPg==
+X-Received: by 2002:a2e:58f:: with SMTP id 137mr4137219ljf.170.1586976839237;
+ Wed, 15 Apr 2020 11:53:59 -0700 (PDT)
+MIME-Version: 1.0
+References: <e0988d6e-1f34-45e6-b256-231defffe529@googlegroups.com>
+ <CAAxEZd_7tJUKPMM6B5-Chb9woDzwGXy1xTAbcTiqvbuxcFMNZQ@mail.gmail.com>
+ <8f2ad5e3-b886-4ac8-bb60-eaab76e3c123@googlegroups.com> <1b3ff423-24e4-427b-9b72-c1fed85b5ae3@googlegroups.com>
+ <CAAxEZd84Z-Uf8vRHeVy2wCsLB_5c9m1wyYEt5Vdgxe3eNXVaRg@mail.gmail.com>
+ <CAAxEZd82QY3mt9fR+ruy=4+Dszo0YkjBfG4ND7XETvg9P6NO+Q@mail.gmail.com>
+ <b23193dc-7358-4067-91fd-20d9bcd94e23@googlegroups.com> <c15cee21-8651-4d0d-b75f-4fec9e4e0f23@googlegroups.com>
+ <CAAxEZd9YDa8U=g4d+uagiTHSbPFxjHZJ-Ff0=tjHHgkygQSWYw@mail.gmail.com>
+ <12d97ad0-c668-46e0-b916-c727dca5aea8@googlegroups.com> <5165c0a9-fed6-4b1b-a44e-dd46c6d89eee@googlegroups.com>
+In-Reply-To: <5165c0a9-fed6-4b1b-a44e-dd46c6d89eee@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 15 Apr 2020 20:53:47 +0200
+Message-ID: <CAAxEZd8_+bMe5B-0iNuf06kcqnnVaCzR-VoucKbaExiJ5CQ5NA@mail.gmail.com>
+Subject: Re: [wwwmake:489] Are there any videos showing how to setup a new
+ planet rss site?
+To: wwwmake@googlegroups.com
+Content-Type: multipart/alternative; boundary="000000000000c5063205a358d61e"
+
+--000000000000c5063205a358d61e
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Great that it's working.
+
+   About heroku -  sorry I haven't used heroku for some years now. I don't
+know.  Again the "basic" setup is not really a web app but a simpler static
+website.   Maybe there is something like a ruby static website build pack
+for heroku  the same that you would use for the jekyll static website
+generator / builder / compiler. I don't know.
+
+   Netlify might be another option - it's the "heroku for static websites"
+- but again sorry I have no personal experience.   Good luck. Cheers. Prost.
+
+>
+>
+
+--000000000000c5063205a358d61e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr">Hello,<div>=C2=A0 =C2=A0Great that it&#39=
+;s working.</div><div><br></div><div>=C2=A0 =C2=A0About heroku -=C2=A0 sorr=
+y I haven&#39;t used heroku for some years now. I don&#39;t know.=C2=A0 Aga=
+in the &quot;basic&quot; setup is not really a web app but a simpler static=
+ website.=C2=A0 =C2=A0Maybe there is something like a ruby static website b=
+uild pack for heroku=C2=A0 the same that you would use for the jekyll stati=
+c website generator / builder / compiler. I don&#39;t know.</div><div><br><=
+/div><div>=C2=A0 =C2=A0Netlify might be another option - it&#39;s the &quot=
+;heroku for static websites&quot; - but again sorry I have no personal expe=
+rience.=C2=A0 =C2=A0Good luck. Cheers. Prost.</div></div><div class=3D"gmai=
+l_quote"><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8e=
+x;border-left:1px solid rgb(204,204,204);padding-left:1ex"><br>
+</blockquote></div></div>
+
+--000000000000c5063205a358d61e--
+

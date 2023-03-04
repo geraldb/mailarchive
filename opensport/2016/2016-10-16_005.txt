@@ -1,0 +1,91 @@
+From 6342113566916608000@xxx Sun Oct 16 17:19:44 +0000 2016
+X-GM-THRID: 6342113564983033856
+X-Received: by 10.157.9.182 with SMTP id q51mr5932205otd.47.1476638383926;
+        Sun, 16 Oct 2016 10:19:43 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.36.152.6 with SMTP id n6ls1770958itd.12.canary; Sun, 16 Oct
+ 2016 10:19:40 -0700 (PDT)
+X-Received: by 10.107.152.73 with SMTP id a70mr6096611ioe.53.1476638380759;
+        Sun, 16 Oct 2016 10:19:40 -0700 (PDT)
+Received: by 10.202.75.87 with SMTP id y84msoia;
+        Sun, 16 Oct 2016 09:55:49 -0700 (PDT)
+X-Received: by 10.36.6.10 with SMTP id 10mr33021itv.7.1476636949265;
+        Sun, 16 Oct 2016 09:55:49 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Sun, 16 Oct 2016 09:55:48 -0700 (PDT)
+From: Ben Burlingham <ben.burlingham@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <f6259f69-0d0f-4ca1-9ac8-af45aeca4c1b@googlegroups.com>
+Subject: How to use the .txt files in the world-cup repo?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1562_889756643.1476636948464"
+X-Google-Token: EJTijsAFExRT8r1n2BQ0
+X-Google-IP: 72.214.252.150
+
+------=_Part_1562_889756643.1476636948464
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1563_1273618925.1476636948464"
+
+------=_Part_1563_1273618925.1476636948464
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald, thank you for your work on building and publishing these 
+datasets!
+
+I'm interested in how to use sportdb to generate datasets for the text 
+files found at https://github.com/openfootball/world-cup.
+
+The README says "use the sportdb command line tool to build your own 
+worldcup.db copy from the plain text data sets." but I haven't found 
+resources on how to do that.
+
+I've been digging around in various places:
+- Built a sport.db file using a Datafile approach at 
+https://github.com/openfootball/datafile, but it only contains the 2014 
+data, and too much of it (has qualifiers and everything) 
+- Tried Jokecamp's approach 
+at https://github.com/jokecamp/sportdb-build-scripts but it seems to be 
+similar to the above
+- Used the pre-built releases 
+at https://github.com/openfootball/build/releases but they don't have 2014 
+data
+- Experimented with the Rakefiles approach at 
+https://github.com/openfootball/build but that didn't feel right
+
+I seem to be missing the part on how to parse the individual text files, 
+such as 
+https://github.com/openfootball/world-cup/blob/master/1930--uruguay/cup.txt.
+
+I'm close to writing my own parser to do it but wanted to check here first! 
+Thanks for any help!
+
+------=_Part_1563_1273618925.1476636948464
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald, thank you for your work on building and publish=
+ing these datasets!<div><br></div><div>I&#39;m interested in how to use spo=
+rtdb to generate datasets for the text files found at=C2=A0https://github.c=
+om/openfootball/world-cup.</div><div><br></div><div>The README says=C2=A0&q=
+uot;use the sportdb command line tool to build your own worldcup.db copy fr=
+om the plain text data sets.&quot; but I haven&#39;t found resources on how=
+ to do that.</div><div><br></div><div>I&#39;ve been digging around in vario=
+us places:</div><div>- Built a sport.db file using a Datafile approach at h=
+ttps://github.com/openfootball/datafile, but it only contains the 2014 data=
+, and too much of it (has qualifiers and everything)=C2=A0</div><div>- Trie=
+d Jokecamp&#39;s approach at=C2=A0https://github.com/jokecamp/sportdb-build=
+-scripts but it seems to be similar to the above</div><div>- Used the pre-b=
+uilt releases at=C2=A0https://github.com/openfootball/build/releases but th=
+ey don&#39;t have 2014 data</div><div>- Experimented with the Rakefiles app=
+roach at https://github.com/openfootball/build but that didn&#39;t feel rig=
+ht</div><div><br></div><div>I seem to be missing the part on how to parse t=
+he individual text files, such as https://github.com/openfootball/world-cup=
+/blob/master/1930--uruguay/cup.txt.</div><div><br></div><div>I&#39;m close =
+to writing my own parser to do it but wanted to check here first! Thanks fo=
+r any help!</div></div>
+------=_Part_1563_1273618925.1476636948464--
+
+------=_Part_1562_889756643.1476636948464--
+

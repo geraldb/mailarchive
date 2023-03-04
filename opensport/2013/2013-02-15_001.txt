@@ -1,0 +1,76 @@
+From 74584162304@xxx Tue Jun 16 00:17:25 +0000 2015
+X-GM-THRID: 74556899328
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,2005c06d71cc6493,start
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+X-Received: by 10.180.8.37 with SMTP id o5mr964439wia.6.1360956961098;
+        Fri, 15 Feb 2013 11:36:01 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.96.69 with SMTP id dq5ls90700wib.22.gmail; Fri, 15 Feb
+ 2013 11:36:00 -0800 (PST)
+X-Received: by 10.180.19.132 with SMTP id f4mr958723wie.2.1360956960679;
+        Fri, 15 Feb 2013 11:36:00 -0800 (PST)
+X-Received: by 10.180.19.132 with SMTP id f4mr958722wie.2.1360956960667;
+        Fri, 15 Feb 2013 11:36:00 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-f47.google.com (mail-wg0-f47.google.com [74.125.82.47])
+        by gmr-mx.google.com with ESMTPS id y5si198761wiv.3.2013.02.15.11.36.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 15 Feb 2013 11:36:00 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 74.125.82.47 as permitted sender) client-ip=74.125.82.47;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 74.125.82.47 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-wg0-f47.google.com with SMTP id dr13so3003659wgb.26
+        for <opensport@googlegroups.com>; Fri, 15 Feb 2013 11:36:00 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:x-received:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=WInP2KNuQUaFulredjwarkAzUzvT48W6kqpTbKfrbbw=;
+        b=vlzAvrAmqPZ4pizuMPOX/6pbE8LsykHhGuHPF8YuADy1WgJDHg5sN3ud38eSOJ3Y+A
+         qcpyKeojoFwzzGB8BNtSNFcb1v0Y3/puYpuJcEfL1IXuMhlI/jS301vJVLV+6itWt6sG
+         mbMMjIAl7OMddRGrnQOSEBQMq0eCuw/u6ptjjSwGNRO2etZu8N2esosWBNPlZk28+ccy
+         8gLVaVvXWZewJrT6b+lA8lJqiMxtASkMH1PahXiyVp4R8yJThsZbTZ/atcOPGK7fErJc
+         pr2XldvHaAMopHLlQoYoBVJbBgFpoEJi7Sp4UvS67BeWoMne8CLCi6lBoaOgqbks1D/z
+         dJFw==
+MIME-Version: 1.0
+X-Received: by 10.194.178.33 with SMTP id cv1mr6423675wjc.46.1360956960548;
+ Fri, 15 Feb 2013 11:36:00 -0800 (PST)
+Received: by 10.216.152.161 with HTTP; Fri, 15 Feb 2013 11:36:00 -0800 (PST)
+Date: Fri, 15 Feb 2013 13:36:00 -0600
+Message-ID: <CAAxEZd_dq_O_4Jp-zaSnzgMtev+fRDVZcnKZdYkuZpMP=ky=VQ@mail.gmail.com>
+Subject: =?ISO-8859-1?Q?New_sport=2Edb_Events_=2D_Copa_Am=E9rica=2C_Gold_Cup=2C_Confe?=
+	=?ISO-8859-1?Q?derations_Cup=2C_Copa_Libertadores?=
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I've added some more events/fixtures to the sport.db repo. New
+tournaments include:
+
+  - Copa Am=E9rica
+  - Gold Cup / Copa de Oro
+  - Confederations Cup
+  - Copa Libertadores
+  - Champions League (North/Central America & Caribbean)
+  - Africa Nations Cup
+  - and some more [1]
+
+  Note, I've moved all football (soccer) fixtures to its own repo,
+that is, football.db [2].
+
+  That's it. Questions? Comments?
+
+   Cheers.
+
+[1] http://sportdbdemo.herokuapp.com/events
+[2] https://github.com/geraldb/football.db
+

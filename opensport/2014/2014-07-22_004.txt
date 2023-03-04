@@ -1,0 +1,75 @@
+From 1685941387264@xxx Tue Jun 16 00:16:55 +0000 2015
+X-GM-THRID: 1591517118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.6.138 with SMTP id b10mr1778507wja.0.1406013763130;
+        Tue, 22 Jul 2014 00:22:43 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.153.5.3 with SMTP id ci3ls472432lad.90.gmail; Tue, 22 Jul 2014
+ 00:22:42 -0700 (PDT)
+X-Received: by 10.112.60.36 with SMTP id e4mr2504724lbr.9.1406013762514;
+        Tue, 22 Jul 2014 00:22:42 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22f.google.com (mail-wi0-x22f.google.com [2a00:1450:400c:c05::22f])
+        by gmr-mx.google.com with ESMTPS id b9si824371wic.2.2014.07.22.00.22.42
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 22 Jul 2014 00:22:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22f as permitted sender) client-ip=2a00:1450:400c:c05::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f175.google.com with SMTP id ho1so5358856wib.14
+        for <opensport@googlegroups.com>; Tue, 22 Jul 2014 00:22:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=/Xy7BidHQvfc75D21woXM7VhLqD8FrOllU6EZeTPxWU=;
+        b=YlkI8BF2VGPAOK4T7WhSAx+xTD58UHL5SLO7W2vEdhd+q7oO8s81Ovt0kl+Pga/1CX
+         WLuPbYJz1YPxafW0rWHFdFjCk/ECqxta9eyWw7xW9Tb6zuod1l3x01m3fSwcityI0KgL
+         UDRVPnxiCyFUdK5LuCFGIyY1VxvrNp/nBOT8eA7EyaFaXQrdcinUpnMSH33KgSqpbODm
+         YjUiQu8DOlmhhj90Umlgw9N2ooL23PDxEReSRSiQfEWED+8PyglchKkkqU79QGgtRwWG
+         FDeARkzV+cs13SV7WRV+eaAMWj6BUEKxFEv4RhlX22VlXaSc8XMIAlQEN3EHoWN4B+Ft
+         gM+Q==
+MIME-Version: 1.0
+X-Received: by 10.180.189.4 with SMTP id ge4mr11876904wic.25.1406013762370;
+ Tue, 22 Jul 2014 00:22:42 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Tue, 22 Jul 2014 00:22:42 -0700 (PDT)
+In-Reply-To: <c3e24314-de47-456d-bfd9-8973c1e1809f@googlegroups.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+	<CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+	<3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+	<CAAxEZd9E7zgoReL0RprdZxXKLkBKvC5xVTNYUgFfsm02WZq=aQ@mail.gmail.com>
+	<16257216-0d9c-4d01-9f36-b00d26a612e2@googlegroups.com>
+	<CAAxEZd_oN6Z5nKLG1-znCwf7W_yEhQ-yyns0jxr5KVepFCmKHw@mail.gmail.com>
+	<c3e24314-de47-456d-bfd9-8973c1e1809f@googlegroups.com>
+Date: Tue, 22 Jul 2014 09:22:42 +0200
+Message-ID: <CAAxEZd_EHOT-A-W5nFv8j6ZbvtAp+oKeJ=20XTw=wj625A3T3w@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  Thanks for the update. I'd say / suggest it's best to make it into a
+plugin/addon and also since we have a different views on the stats I'd
+suggest keep working in your own repo.
+
+  If you're interested I can later this week, for example, turn it
+into an addon/plugin or, of course, you can on your own.  Do you want
+to rename to fooball.db.stats or sport.db.stats ?   Do you want me to
+work on a fork?  Or do you want to keep going with your patches to the
+main trunk (that is, if you're not interested in a addon/plugin) ?
+
+   You can see some "real world" addons/plugins in the sportbook app,
+that is, sport.db.play [1] and sport.db.market [2].
+
+  Cheers.
+
+[1] github.com/openbookie/sport.db.play
+[2] github.com/openbookie/sport.db.market
+

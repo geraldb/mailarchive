@@ -1,0 +1,90 @@
+From 6451156276353171456@xxx Sun Aug 06 13:41:08 +0000 2017
+X-GM-THRID: 6451155775166349312
+X-Received: by 10.36.181.81 with SMTP id j17mr3876472iti.30.1502026868162;
+        Sun, 06 Aug 2017 06:41:08 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.173.71 with SMTP id w68ls333800ioe.23.gmail; Sun, 06 Aug
+ 2017 06:41:07 -0700 (PDT)
+X-Received: by 10.36.53.193 with SMTP id k184mr5146753ita.35.1502026867644;
+        Sun, 06 Aug 2017 06:41:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502026867; cv=none;
+        d=google.com; s=arc-20160816;
+        b=IEGCAtk0GlAKiS/MX7zlrVUoW5UWN1hLhfBMoNZkQsewb+i/pnKmD8QUkzAXXSMk1v
+         OVbzUdbupFObXe0KuzUOdrggfVqnHaq27E7sJKKh7twu3kaJeVKmc8snaBoB2QQppWRQ
+         3bct2L7TmNPbMlCAGywnxI5CZRbpobPie1cRbHiiFBmUBqzXFXgUkO/e+0qZlUde3GFB
+         kye5Kmsq1MLru8nO8ZnXAq7T/S7W05zPXGxQITz9aPagoQftBxQD/G43glYVR2YmJJq8
+         XiAWNpNtrWBehRKldSL+reHgg4G7RMTOO4uyKQny3NNYEJJWpKlKguzZNS+tC06BmpP2
+         gJ8w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=IleITbMDBXCBNmVM1MvJIC32r+3tmnLXfhvJkMdKqPs=;
+        b=X8nCK5qVPC0S/s4ad5VtcesjI2u7Ma+255PRABVc+AbLQs7+9/86VnY90M+LNmGUno
+         9KV54inqODhAv6hq9ln7GOChldwkFBLLWEIxzgwlEMvSmSy3GHYaMeRjQ9XFw7oiFNL4
+         GTSiIiKz9HhUYDzZ0bynZTImyobF5IsYcWGQyDLkb7MoW/3aiGutYEVen2Qm8pwFSmEP
+         WG9nhLZqUcK0QatcZses5YhyWjXiw9ijPcIADEthpPuWllTJ5bfDwJfgLH6zOO1IGNaA
+         UBJpEy7nhSpr4pzeRkPLnwSwx6ER28WjSDKNRt4IgJc3zTxHa0ifCHlyIcG9/pUuSIIH
+         J//g==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=M+VgZMzh;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22f.google.com (mail-it0-x22f.google.com. [2607:f8b0:4001:c0b::22f])
+        by gmr-mx.google.com with ESMTPS id u65si292514ith.9.2017.08.06.06.41.07
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 06 Aug 2017 06:41:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22f as permitted sender) client-ip=2607:f8b0:4001:c0b::22f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=M+VgZMzh;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22f.google.com with SMTP id m34so8484186iti.1
+        for <opensport@googlegroups.com>; Sun, 06 Aug 2017 06:41:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=IleITbMDBXCBNmVM1MvJIC32r+3tmnLXfhvJkMdKqPs=;
+        b=M+VgZMzhcNV3pbO41+NQiVaqslx+oxaQseh6vn1OiaxU2gjJW4Lt+wIvqcj0+mgKku
+         tfpCpq2z+8qnVIUmNPgqXYd2RgIvoCakE4OEEOeBsp8p9xN9jc15pxqBute3oAxEqvGx
+         zO/2e3A2180LCf+puKgeMVBGw5gf2wkWJQGP8kUccTiJlplTfNwqK5ZH13t98+ZUEsg4
+         mumokL31cjCEt/wMKJkAT31HRoUY47/3q40o2suVsjTP8mSXpGMTn69P1Mpvyo3jr1xt
+         RZAZkH0gRi24u6Vv7AoSzsyFahtxFciBJEH0pBIeoxiGerP942FZSLPiQDwvWM8AKW8A
+         Zn1Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=IleITbMDBXCBNmVM1MvJIC32r+3tmnLXfhvJkMdKqPs=;
+        b=O84ZsEYodNFiowi39akmDpYgpyA0g+aGYyeAAWLWxLVc78Xb3wBhDG67ZiNTsfW5XU
+         l7XekSsXystSbaopNE1rARQmC1vHObj6V17GRrakGOYLrCz07j7bSGdBO6dK3pjWwvJZ
+         aP7Xnh2S8POp3kM3ydnH743cVNr/HamF/QRdx9rEjiR0kBnwDeAf6OukSHMw/NDa1HFK
+         0n/NT3TTkN8zRlgszhjgN+7iyq0Se3pTDqfTYVaGvoj4/qfe8+dYSKovj2M3Q4mgjDq8
+         IIjsf+TcXU8TO0pkFJI3nrFH3clWYVC/EqiMZ2aa6WHtK6Es1GS77CUQbHPwLm9xrQ5r
+         Sr8g==
+X-Gm-Message-State: AHYfb5hE2OSjxHtM4IdPTcDIMnG2xAlOxrWzf0dbPUtr0UpDJxnWVmg2
+	/6hea2KA5FzN3VU43APQCKPDDsvFB22i
+X-Received: by 10.36.107.141 with SMTP id v135mr4348926itc.33.1502026867324;
+ Sun, 06 Aug 2017 06:41:07 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.40.142 with HTTP; Sun, 6 Aug 2017 06:41:06 -0700 (PDT)
+In-Reply-To: <95729064-a94c-492d-aacc-da2009a27524@googlegroups.com>
+References: <95729064-a94c-492d-aacc-da2009a27524@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 6 Aug 2017 15:41:06 +0200
+Message-ID: <CAAxEZd_=ZffA47z5HG7LwVedvyK7QOGY9=uEcsuDinO5oWUNZg@mail.gmail.com>
+Subject: Re: [opensport] ActiveRecord::Migration is not supported
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Thanks for trying football.db.
+
+> Directly inheriting from ActiveRecord::Migration is not supported.
+
+    Sorry this is a know issue / problem, that is, the ActiveRecord
+5.x series is NOT yet supported. The workaround for now is to
+downgrade to the 4.2.x series. Please use a Gemfile and bundle exec.
+Cheers.
+

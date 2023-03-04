@@ -1,0 +1,94 @@
+From 6466845148197158912@xxx Sun Sep 17 20:21:58 +0000 2017
+X-GM-THRID: 6465983603620708352
+X-Received: by 10.36.98.194 with SMTP id d185mr6286666itc.15.1505679718236;
+        Sun, 17 Sep 2017 13:21:58 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.36.33.214 with SMTP id e205ls4281354ita.5.canary-gmail; Sun,
+ 17 Sep 2017 13:21:57 -0700 (PDT)
+X-Received: by 10.129.208.4 with SMTP id v4mr9514975ywi.164.1505679717754;
+        Sun, 17 Sep 2017 13:21:57 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1505679717; cv=none;
+        d=google.com; s=arc-20160816;
+        b=kl5h0sZ9I1FemzbrvCiLlghGY2r13MKr/NBFhAmFeBcwyV16l+1FQ2OSy1z8Ks79L3
+         cR1crmai7/Su8RHaBHQRgvCWIiZyFLX7x1KoOE3UEbc5O91C65RFdjT6EHKE8ov3Zfhg
+         oj+ZNatPd6gqDm1ECeWXj+SfiJFQFCywbPTO+94Nha0lsdZ6d5hON70MoqcDI2QFijk2
+         7kEYOJMhC5RhPCxnVDp7wQeg4lYz28tyR2sAPsdO/WZ3mUopLuIGZ+gSN+c/+3bjt50I
+         k+1cWE4sOF2irIdeuvsbo8/fPKOI2V3PTDnWRkTJbOmqNMY/r3fiwr5rhJKL9ztTsv4X
+         IaJw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=fhSztg7GA8eV1SAokCBbrHDzBAGfI4LSYHHzZ8M2mc4=;
+        b=HX6N2RHJAlipHAS89NChnDMye9oFsMCQRSyTjv9atQnqXkna97KFCy7dvdAzdZlrlb
+         JvGLpX1ixL/pZkIPCRd1zqaFSvsjqJELOXRD2KEzQgw1LvUUxjhYcfTKa12Ko8Fjcq6w
+         XFc1EZ6GPi2lB1qhDfzCpinSkiQZu7BHOZOIErSSm++ZTHJWgc0M9qptK4vfzpTzKyjL
+         FEZD6Z7nqsRzMBCKR+63CINgFNW69JgFYubLvtRihdWFPkIFGSxl4OyvEZD6zwg3CUid
+         St61rg0k2xVgFUcVItKi/iIDQSfKzuh6l7f8OyXQeA5mxXH2DHcRGZqHWITGlfmpsiby
+         pTnQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=f/LYgrHX;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x235.google.com (mail-it0-x235.google.com. [2607:f8b0:4001:c0b::235])
+        by gmr-mx.google.com with ESMTPS id t84si264190ywf.14.2017.09.17.13.21.57
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 17 Sep 2017 13:21:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) client-ip=2607:f8b0:4001:c0b::235;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=f/LYgrHX;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x235.google.com with SMTP id w204so6313031itc.4
+        for <opensport@googlegroups.com>; Sun, 17 Sep 2017 13:21:57 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=fhSztg7GA8eV1SAokCBbrHDzBAGfI4LSYHHzZ8M2mc4=;
+        b=f/LYgrHX+ZqcrwGuCUlFGurMKwR0A9CiaBiKxQfxkLORZhgFXniUfxjFz3o2/HX5Ag
+         uQ3inI+QAipWkGxyVBkkvRYxiqPGG0uxY1i55zfBK0rRtNXun1VWD4YwOajNoFlVjLTE
+         p5XgaW6FixlC5GVsGGpQQ3RyVMyir043Z1TN+3F/uMXXbxHLYZqj80ElK5gi17l/3v82
+         UjWZOHscxTgkyBLj75LCwSUah0x7+5CQe2QgRVF63DbEnHwOT7acG/T7v6J3OkTQeLLh
+         o9BVeUtTzzWPQuAh1G5nxRrlwPYpwrrSNw6jLnk/FcUcyOJkN2fXxsFnaXeK7KNwx0mV
+         PlRQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=fhSztg7GA8eV1SAokCBbrHDzBAGfI4LSYHHzZ8M2mc4=;
+        b=jtUEe1HmboU5UIFb0fHaPJNwa5Vo37kTT/o1nKi8xl5j4a1imdci15fIJ3Oc1FHCzJ
+         xwvfVPVS3ec6Whw2jOpb4hvKWOMPLa4HCaYMxUWJRUy07KQIhz/lWk+84qzl+Erqw0Zm
+         JjptzG6BMJq+8z5JEkH5XQsi1etLxFfhoZ2dWQzdZ1KTlizcIzfIQIYZXWH/xYIEb7Zh
+         tQQ75bxfUmyfSzaqnS9OlEy6lYan4UGHmLaA3Xqp/sAMojqtsHFL978BH7r+J65ANKft
+         qTCLeMWmbRZHQEN8rQ0ysBN8/fzh1s7ceQUbkjSxM2J+ETzKGIYEuR+KiNv6xQ/y7mA5
+         4E4Q==
+X-Gm-Message-State: AHPjjUhrIDvlPOwvXoaoD2yb1jgdLSgF/pMFZSqWA6wzkFP/FQ6q2nbn
+	kpeEu2x5N1dGZujCY0neGrWAnFZZKrKPk+3Aww+2Ow==
+X-Google-Smtp-Source: AOwi7QBUhwmxTt0wxiTQ+P/60rnuBEbv4vbd1zlu5HnFVKbeQnyCr/Nwqq5gGQDGPE4MzumR8WnkA+/K8gTSydsI8u8=
+X-Received: by 10.36.173.30 with SMTP id c30mr15236106itf.45.1505679716892;
+ Sun, 17 Sep 2017 13:21:56 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.5.144 with HTTP; Sun, 17 Sep 2017 13:21:56 -0700 (PDT)
+In-Reply-To: <d0fdfa55-025c-4e35-9f3c-b87ab473d6c5@googlegroups.com>
+References: <65a5f628-5704-4bcd-a293-5369885651e1@googlegroups.com> <d0fdfa55-025c-4e35-9f3c-b87ab473d6c5@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 17 Sep 2017 22:21:56 +0200
+Message-ID: <CAAxEZd-+mDhvWJj-cSdZ4YmHnWcWgAi1uPtX2ur9-7kNBKrrfQ@mail.gmail.com>
+Subject: Re: [opensport] Re: Building Database in Pascal
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+> So my question is How do I open the Database in Access so I can use it?
+
+  It's an SQLite database (file). I recommend the free SQLite Studio
+[1] - a visual tool like Access but for SQLite (and free too).
+
+  If you still want to use Access try to import the SQLite database as
+an ODBC datasource - sorry have no experience - try google "import
+SQLite datasource Access ODBC" or something.
+
+   Good luck. Cheers.
+
+[1] https://sqlitestudio.pl
+

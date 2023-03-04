@@ -1,0 +1,140 @@
+From 6267815499208327168@xxx Wed Mar 30 12:05:16 +0000 2016
+X-GM-THRID: 6267624873760129024
+X-Received: by 10.157.62.245 with SMTP id b108mr4510538otc.43.1459339516069;
+        Wed, 30 Mar 2016 05:05:16 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.50.67.75 with SMTP id l11ls198155igt.21.gmail; Wed, 30 Mar
+ 2016 05:05:15 -0700 (PDT)
+X-Received: by 10.107.17.197 with SMTP id 66mr4753089ior.6.1459339515573;
+        Wed, 30 Mar 2016 05:05:15 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x236.google.com (mail-ig0-x236.google.com. [2607:f8b0:4001:c05::236])
+        by gmr-mx.google.com with ESMTPS id au10si486168igc.3.2016.03.30.05.05.15
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 30 Mar 2016 05:05:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::236 as permitted sender) client-ip=2607:f8b0:4001:c05::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ig0-x236.google.com with SMTP id l20so39210944igf.0
+        for <wwwmake@googlegroups.com>; Wed, 30 Mar 2016 05:05:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-transfer-encoding;
+        bh=C0BsEECShJS6f4fXi48wRSP7nnksyp14aVqmTWznajY=;
+        b=uDi+mT9hlV7vVXx8kHyylRNMtCcu4AZU7l2wOROEyCc/nhjJqt7Rg26r7mXCKntVQ2
+         YZYYV+NJ6eIEbOQx775U9k93821rwtBltFk3oNGeShJ7tX/WphrqIcr85eyxBbEAeoSF
+         TLex7TrQUW239kQ89yonwnFbItZQDIZQpTNkKjWMLACzjHSuupqnFO4fdFeD4Pzm7rnF
+         TK8MoHxlkA0SYlEKhWoJsQ25elymjB4mdXjpHfNnEG3JoTZ7heB/pER59MtDcpBNFP+x
+         S0WIExbLx+PsC9sQ80SCTVYIoF8Vm5eOXO4bfRBXsHhi0BMpHi/TSoTZwvadvlUgENaj
+         NRmw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to:content-transfer-encoding;
+        bh=C0BsEECShJS6f4fXi48wRSP7nnksyp14aVqmTWznajY=;
+        b=ZxYt0rh1VctbjLh/z1GRqZgjbXlkL6wruSUlnI+DV2HHm76cZPQ7MVqIGcd9m5L3y6
+         gkUP80aeyC8hQ28x3PrLFpVOJ9GPX4XGbYeq2VDRAVJ2ahbKb2B0oywKWV8TQ2oaNDKx
+         eRXsyMYObN5/epdZirlQpXXIGGIu2AOA/dlYV8zDJwrUNod4sRCyiZRsZUQ259j5X8nF
+         TYV3lmHbK9rvi051BoKU97S3NHWbHBwuL32hxVrPiwh0XDEbFEEDhPpwuEtrem6wr7TZ
+         z67a4uwo2eq3xVM/6iPHbJ39bTVZjRF8vlZBa6XMsBhXVI0fJcOpj44ZZxpJNUohYIcL
+         tSoA==
+X-Gm-Message-State: AD7BkJIG+K3plu/dKuqa54uh9QJUtgkPpN1s5gw4MQbERbwlkDUAirlKasSF10y27UHN4rek5Ioe/wTdhDl9eA==
+MIME-Version: 1.0
+X-Received: by 10.50.30.138 with SMTP id s10mr8504692igh.86.1459339507564;
+ Wed, 30 Mar 2016 05:05:07 -0700 (PDT)
+Received: by 10.107.141.71 with HTTP; Wed, 30 Mar 2016 05:05:07 -0700 (PDT)
+In-Reply-To: <b7dc6e23-33d0-4a15-abc5-0004c6697e32@googlegroups.com>
+References: <CAAxEZd9EhFmEK1WFF7mEMAiXLEcio0isCREP-3_PowoMVgwkow@mail.gmail.com>
+	<b7dc6e23-33d0-4a15-abc5-0004c6697e32@googlegroups.com>
+Date: Wed, 30 Mar 2016 14:05:07 +0200
+Message-ID: <CAAxEZd_3N8JmMBS9+=gd-P33Zbe+8Z7dJmrEOxcWG+C94FKTrg@mail.gmail.com>
+Subject: Re: [wwwmake:384] Re: Why Markdown? Why Text? #1 - Single Source
+ Publishing - One Text, Many Formats
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+    Welcome.
+
+> What I am missing in HTML is the ability to transform mathematically scie=
+ntific formulas
+> (like in LaTex)  to usable text-form.
+
+  No need to reinvent the wheel, toothbrush or
+
+   In markdown you can use inline math e.g. $...$ or match blocks e.g.
+$$ ... $$ See the pandoc or kramdown converter for details [2].
+Example:
+
+
+Named mathematics operators are usually typeset in roman. Most of the stand=
+ards
+are already available. Some examples: $\det A$, $\cos\pi$, and $\log(1-x)$.
+
+When an equation becomes too large to run in-line, you display it in a math=
+=C2=9D
+paragraph by itself.
+
+$$
+f(x) =3D 5x^{10}-9x^9 + 77x^8 + 12x^7 + 4x^6 - 8x^5 + 7x^4 + x^3 -2x^2 + 3x=
+ + 11.
+$$
+
+   Looks familar?  It's just tex - surprise, surprise - nothing works
+better for math in text. Use a free JavaScript library such as MathJax
+to convert it to "typeset" formulas in HTML.
+
+   Cheers.
+
+[1] https://www.mathjax.org
+[2] http://kramdown.gettalong.org/syntax.html#math-blocks
+
+2016-03-30 10:07 GMT+02:00 Franz Plochberger <admin@plbg.at>:
+> Hello Gerald BAUER,
+>
+> of course txt will be in future too. The main reason is that it is the
+> nearest way of translating human speech or speaking in "stored data form"=
+.
+>
+> What I am missing in HTML is the ability to transform mathematically
+> scientific formulas (like in LaTex)  to usable text-form.
+>
+> As I an overview Markdown this converter isn't able to do this.
+>
+> But i like to be informed if I don't understand all.
+>
+> Franz Plochberger
+>
+>
+> Am Mittwoch, 30. M=C3=A4rz 2016 01:45:33 UTC+2 schrieb Gerald Bauer:
+>>
+>> Hello,
+>>
+>>    I've started a new initiative called "Why Markdown? Why Text?".
+>>
+>>    The idea is to collect arguments why text is the past, present and
+>> future of writing and publishing.
+>>
+>>    Argument #1 - Single Source Publishing - One Text, Many Formats
+>>
+>>    See the repo [1] in Markdown ;-) for more. Still early. Questions?
+>> Comments? Welcome. Cheers.
+>>
+>> [1] https://github.com/manuscripts/why-markdown
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "wwwmake" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to wwwmake+unsubscribe@googlegroups.com.
+> To post to this group, send email to wwwmake@googlegroups.com.
+> Visit this group at https://groups.google.com/group/wwwmake.
+> For more options, visit https://groups.google.com/d/optout.
+

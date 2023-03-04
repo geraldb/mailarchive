@@ -1,0 +1,54 @@
+From 1102523138048@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1070485995520
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,31bb79bbfbc2255e
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.52.75.161 with SMTP id d1mr7874127vdw.2.1339917417945;
+        Sun, 17 Jun 2012 00:16:57 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.230.193 with SMTP id jn1ls247342vcb.8.gmail; Sun, 17 Jun
+ 2012 00:16:56 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.52.95.238 with SMTP id dn14mr699308vdb.1.1339917416704; Sun,
+ 17 Jun 2012 00:16:56 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by f30g2000vbz.googlegroups.com with HTTP; Sun, 17 Jun 2012 00:16:56
+ -0700 (PDT)
+Date: Sun, 17 Jun 2012 00:16:56 -0700 (PDT)
+In-Reply-To: <6db02ae5-bf5a-4f0c-bc83-9fbe857db396@googlegroups.com>
+References: <c261923a-16b4-4bb6-a9f4-61177986395d@q18g2000yqh.googlegroups.com>
+ <6db02ae5-bf5a-4f0c-bc83-9fbe857db396@googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EOiI9v4EM0ZHWyBixzg0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:13.0)
+ Gecko/20100101 Firefox/13.0,gzip(gfe)
+X-Google-IP: 62.47.152.185
+Message-ID: <989410df-6a1d-47bf-9578-be37984ca49e@f30g2000vbz.googlegroups.com>
+Subject: Re: impress.js - Prezi-like Presentations using CSS3 Transitions and Transforms
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello Ralph,
+
+  Thanks for your kind words and thanks for reporting the bug.  The h1
+heading got extracted and stored in the slide.header variable and
+slide.content (was thus the content without the optional heading 1).
+To make it easier for template authors I've added
+slide.content_without_header and slide.content now always holds the
+complete slide content [1].
+
+  Anyways, just update the slideshow gem (v1.1.0) and everything
+should work now (including h1 elements in your slide content).
+Cheers.
+
+[1] https://github.com/geraldb/slideshow/wiki/Template-Reference
+

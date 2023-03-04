@@ -1,0 +1,56 @@
+From 164047618048@xxx Sat Dec 13 20:08:19 +0000 2014
+X-GM-THRID: 159536644096
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,adf2072367aa369f
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.85.42 with SMTP id e10mr2374252lbz.6.1408457617728;
+        Tue, 19 Aug 2014 07:13:37 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.152.88.45 with SMTP id bd13ls551843lab.84.gmail; Tue, 19 Aug
+ 2014 07:13:37 -0700 (PDT)
+X-Received: by 10.152.43.77 with SMTP id u13mr287055lal.7.1408457617228;
+        Tue, 19 Aug 2014 07:13:37 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22d.google.com (mail-we0-x22d.google.com [2a00:1450:400c:c03::22d])
+        by gmr-mx.google.com with ESMTPS id hm4si819901wib.3.2014.08.19.07.13.37
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 19 Aug 2014 07:13:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22d as permitted sender) client-ip=2a00:1450:400c:c03::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f173.google.com with SMTP id q58so6554023wes.4
+        for <openmundi@googlegroups.com>; Tue, 19 Aug 2014 07:13:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=oxUxNyYqFGdJx82RdUjMfqvsGyjt5ieGGyvAKlaOYlM=;
+        b=SSQC3HDtXqBOnFUmPeI+GL9o9BfYf+LxxCCHDaMXXOY3XcuIGqEWXZGMAz5yxLFq2R
+         3BDg41cMzrg4kfOeU8mIhnXoUNzF7BEYUR8ueUD9FRKxENOgEw7xNIHN9/atPLHhnP2I
+         gTtQG19pm7XHeJUgNxn2IrgvQTcvzKw7sKCBaadf4L5uwu4BkvuiPz2zDe50BOpltE1g
+         vsMiFx0lC6puYc2dF5I34H9WMNCPx3gRNf1DHcuSZ86BZOiDa2qSHdU9Y1aJw/s/D7tF
+         9A1atV81aPvazL2j6+eSV+NQaRPFfkh5b3mDntMOuJrywGKsWmsnT+Vu9R1otY9AP/Ym
+         8n8Q==
+MIME-Version: 1.0
+X-Received: by 10.180.108.1 with SMTP id hg1mr7292974wib.25.1408457617123;
+ Tue, 19 Aug 2014 07:13:37 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Tue, 19 Aug 2014 07:13:37 -0700 (PDT)
+In-Reply-To: <0fa756e5-06af-41b4-8119-ee9cee864a43@googlegroups.com>
+References: <0fa756e5-06af-41b4-8119-ee9cee864a43@googlegroups.com>
+Date: Tue, 19 Aug 2014 16:13:37 +0200
+Message-ID: <CAAxEZd80juUdSSF7=anthkWRD6i8mg+mO8LrcS_+_CfPe4R62A@mail.gmail.com>
+Subject: Re: Feature request
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Cc: Eckhard Licher <eckhard.licher@googlemail.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Good point. Thanks for the patch. I try to add an option with
+keeping the original (unmodified) names and push (upload) a new
+version. Thanks for your patience - will take a day or two.  Cheers.
+

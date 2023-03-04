@@ -1,0 +1,120 @@
+From 6837042776256806912@xxx Thu Jun 11 10:57:51 +0000 2020
+X-GM-THRID: 6837042777143902208
+X-Received: by 2002:a2e:a49b:: with SMTP id h27mr4312321lji.395.1591873070609;
+        Thu, 11 Jun 2020 03:57:50 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a2e:9718:: with SMTP id r24ls418431lji.3.gmail; Thu, 11 Jun
+ 2020 03:57:49 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJx3C/K7kV84DHcoXsRH39eV8tsYO4Nmqupqokf9R9/hsEWsgOJ45QpcWCTKZKkvKGRYq93S
+X-Received: by 2002:a2e:b8d4:: with SMTP id s20mr4284806ljp.177.1591873069476;
+        Thu, 11 Jun 2020 03:57:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1591873069; cv=none;
+        d=google.com; s=arc-20160816;
+        b=DSmvYjnRpY9y2cKeqL6bE+kWLYPnEc55fOzYQOyiiQ42FAL8nbVMWlcsXkzUUP1edw
+         vm4LSVk/9jMmz1Nc9yf9tSlPwpF56EHFd1uWHmiKPEi4Z53UP4qa0IwMY/qn6beEpDbh
+         WHD7dIjo2Xaqmp/dUrojOtyPWiaJl8SswliGxfuHNuEsxCmXdhHKNEIr3Nq3up3xdU9z
+         U3CMuC/HAvdlATaDu25OPKckQi2dearm1j5CYSS4pDQZFfU3aQvLGfyGV6eSlNSHkrjN
+         fVPNbl34EFyEABBzc7j7jzUL9ZTsYkmxK3MdQqg1x136OxZdezeFFvR1tvnh0xQhlZEe
+         pMlg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=hdQRm4PlyqdimoQ2mGPhNt9n5LQ2Wbeili2BBwm8QQA=;
+        b=0OXosexgtXHwlmFYab/CWvQ6z/o64YzZ+Tnacrb/VC0uAjySboWldtKUv+IMXMNXCo
+         4XmqfjPj6pHq2oGdvX60Qr2blYVu/s/lOqfvR01z7LM8aSE9BCJNnhFS5xetD6xpeLLg
+         Kd+WbY2YwHXIJxZ7rixGM/4gDYl0i7TPP5arAe6XFIIdKHmQ/5lYV5vOfgLfEVp8DyHJ
+         +/mhJAm++ZixH+xt3A5/p8cd90lhJMikPXU9j8TGpxvBILu9DaBPlkMM8u0Wy9AU4XFL
+         lHE1EEz3F8MVxKYXPeCN/J/RJp+3y/32S+NpQL/u+2SXjK5MLvNQ4yil02YiAV9+Vcm+
+         ONTA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=tMumx+jS;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x235.google.com (mail-lj1-x235.google.com. [2a00:1450:4864:20::235])
+        by gmr-mx.google.com with ESMTPS id f16si195928lfm.0.2020.06.11.03.57.49
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 11 Jun 2020 03:57:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) client-ip=2a00:1450:4864:20::235;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=tMumx+jS;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x235.google.com with SMTP id c17so6336650lji.11
+        for <opensport@googlegroups.com>; Thu, 11 Jun 2020 03:57:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=hdQRm4PlyqdimoQ2mGPhNt9n5LQ2Wbeili2BBwm8QQA=;
+        b=tMumx+jS4cHlRFI8Jd8ojjfx02BM2Pcf4CVAkz5ZXaOd+tFUTC1+5aHqMW98gUn+n3
+         +JxTSIjYSLf12gDGnq70qkHSR1ylLRDasf/3XkITShnqAEuC6jReAMgz6BJHbmoEXclb
+         mYuCE6/vlpn6w+2Pj/mRnZUd9qp35vivyG7tUqHClSxoC3qYTbu+jPkqCU4rFOuLRNbi
+         FVgsUGqtbrPz6j4cbBo5/yCtCO2QfJPtXbu3bqe23OP3G7HNWZpRkcqHY7BHydrRH+1a
+         FiAL3aCHwgHAGLV5Yn4V/GQ2qizD/BxGicBTBlauW7ZEc0EnN4qhatkoo8VaMpiw9SVx
+         W34g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=hdQRm4PlyqdimoQ2mGPhNt9n5LQ2Wbeili2BBwm8QQA=;
+        b=YioIGhg1ttVbO3uUGGnLEq/SSyufEnn9jTMjtCq84un+OWkU81RtMkjLVo3Na3bOzb
+         FLZ95rm7i2Alav2oHwHWgd0AvyfIBTIaaN5qPJzyuEVmcrbRujtzxpLXb1Dbnr0Cl53Q
+         tYbjuh4gtDRSirPceofTTeNNSsJlTavxMqNYdHwAI2W5Z9mqq2ACjzHaUN2/JMrIe3ok
+         4qoM3f1o5mylKGColPasF3uCLdCghr0gv7UV1xD0z0NJ8235qxyO9CPJ6WpbOM8ushj2
+         oWuuHKmk3KZqY79u1gf6xwLoyUfnPa36QrJ7qJlWSPCuy8QCOFS1VjHGfryW+WzmamSL
+         nx9Q==
+X-Gm-Message-State: AOAM530sKztDxIgw2UBzWs0n9sEe56z0BSIC0Cjlw2QiMoOmlukIYZGl
+	L8ZQM1wwWixruRZh8J8GMPeNvktDGSgmw17GzVy8uIT3Kgg=
+X-Received: by 2002:a05:651c:502:: with SMTP id o2mr3976208ljp.434.1591873068903;
+ Thu, 11 Jun 2020 03:57:48 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 11 Jun 2020 12:57:37 +0200
+Message-ID: <CAAxEZd_Mvam3dq2WMZ+5WoZZYoeGmBTZ=4G+GfmFbCDgcDnUTg@mail.gmail.com>
+Subject: football.csv - A mirror for the football leagues from 25 seasons back
+ to 1993/94 from Joseph Buchdahl's Football Data website
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   I've put together a mirror [1] for the football leagues from 25
+seasons back to 1993/94 from Joseph Buchdahl's Football Data website
+(football-data.co.uk) up and running since 2001 (and updated twice a
+week).
+
+   Why Mirror the Datasets?
+
+  a) What's unchanged / mirrored?
+
+  The club names get copied as is incl. typos.
+
+  b) What's changed?
+
+The league codes (`E0`, `E1`, `D1`, `D2`, ...) get changed to
+the football.db "standard" using two letter ISO codes for countries
+and if no ISO code exists (e.g. for England, Scotland) than the three
+letter FIFA codes for countries (e.g. ENG, SCO) get used.
+
+The original football datasets come in two flavors / formats.
+The main leagues use season-by-season datafiles.
+For example, `E0.csv`, `E1.csv`, `E2.csv`, `E3.csv` & `E4.csv` in the `2019-20`
+season directory hold the matches for the English Premiership & Divs
+1, 2, 3 & Conference;
+`D1.csv` & `D2.csv` for the Bundesligas 1 & 2 and so on.
+
+The extra leagues use an all-seasons-in-one datafile.
+For example, `ARG.csv`
+holds all seasons of the Argentinian Primera Division;
+`AUT.csv` for the Austrian Bundesliga and so on.
+
+The datasets here use the football.csv "standard", that is, one datafile
+per season and league. The league code becomes the file name and the season the
+directory name e.g. `2019-20/eng.1.csv` or `2019-20/at.1.csv`
+
+Note: The datasets character encoding gets converted from
+Windows-1252 (8-bit) to UTF-8 (Unicode multi-byte).
+
+  Cheers. Prost.
+
+[1] https://github.com/footballcsv/mirror.footballdata
+

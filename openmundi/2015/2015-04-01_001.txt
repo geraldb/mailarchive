@@ -1,0 +1,65 @@
+From 385253113856@xxx Wed Apr 01 07:17:56 +0000 2015
+X-GM-THRID: 386181103616
+X-Received: by 10.182.68.68 with SMTP id u4mr45667446obt.50.1427872674823;
+        Wed, 01 Apr 2015 00:17:54 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.107.32.134 with SMTP id g128ls176772iog.49.gmail; Wed, 01 Apr
+ 2015 00:17:54 -0700 (PDT)
+X-Received: by 10.66.142.230 with SMTP id rz6mr47949168pab.40.1427872674556;
+        Wed, 01 Apr 2015 00:17:54 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qc0-x22b.google.com (mail-qc0-x22b.google.com. [2607:f8b0:400d:c01::22b])
+        by gmr-mx.google.com with ESMTPS id z1si160500qcn.2.2015.04.01.00.17.54
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 01 Apr 2015 00:17:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c01::22b as permitted sender) client-ip=2607:f8b0:400d:c01::22b;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c01::22b as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qc0-x22b.google.com with SMTP id y5so34027787qca.1
+        for <openmundi@googlegroups.com>; Wed, 01 Apr 2015 00:17:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=f5UTnbKPh+Fz1XAefEhs6YbEFg/O0AqowcK1Fy0lLi4=;
+        b=ta4Nmpy8VxA3Eh7GTG8BT8DYBAdNDRxp2TUeKGrFPccWOnhNVOB4EXsuNX+xuDd5VG
+         IWwFWu9V/SlB/tO0MOmO5Tskp03Ia0nRki2dgLLWpyH9BY6PCC5B/udljG/KO+b/6Vdq
+         cGPYsHKbwSE84g5e9x8fnO3E4aDyQ+P92lCOo2DcjThTcZlvNJfzSptSfHBKPrWpOcBw
+         7RPB8CzzmM1Ms0prKoOx+ZiTgmtC5z+fbFnMZ2z/3mLOO4SL4R+hM9XKZXiP1P28lZEr
+         if2CcmyNCS5SMf7hN53JviYd5CPo6oleGKEgSaeFdv7ofNF5+k3Ur0S6sXLcAzlahOX7
+         qslA==
+MIME-Version: 1.0
+X-Received: by 10.140.94.104 with SMTP id f95mr3799983qge.38.1427872674443;
+ Wed, 01 Apr 2015 00:17:54 -0700 (PDT)
+Received: by 10.229.25.131 with HTTP; Wed, 1 Apr 2015 00:17:54 -0700 (PDT)
+Date: Wed, 1 Apr 2015 09:17:54 +0200
+Message-ID: <CAAxEZd8wb+vx0yLxLKBwLGeUGdqTU2Mnr-02FONF3Ybz4gqPvA@mail.gmail.com>
+Subject: Upcoming Meetups / Talks - Vienna, Austria - Apr/May 2015
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  As always if you happen to be around in Central Europe (in Austria)
+you're invited to meet-up.
+
+  Over the next couple of weeks if all works out I will attend (or
+speak) at these meetups:
+
+  In Vienna:
+  - Thu, Apr/2        at Vienna.rb [1]
+  - Sat, Apr/25       at ROSS (Ruby Open Source Software) Conf Vienna [2]
+  - Thu-Sat, May/7-9  at Linuxwochen Wien [3]
+
+   If you're interested to talk in person say hello here on the list.
+All events free. Everyone welcome.
+
+ Cheers.
+
+[1] www.meetup.com/vienna-rb
+[2] www.rossconf.io
+[3] www.linuxwochen.at/wien
+

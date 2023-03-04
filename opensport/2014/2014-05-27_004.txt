@@ -1,0 +1,85 @@
+From 841393111040@xxx Tue Jun 16 00:17:05 +0000 2015
+X-GM-THRID: 840208220160
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,6c339d6485c474aa
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.144.136 with SMTP id n8mr11666806yhj.22.1401193787642;
+        Tue, 27 May 2014 05:29:47 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.74.227 with SMTP id x3ls1054150obv.75.gmail; Tue, 27 May
+ 2014 05:29:47 -0700 (PDT)
+X-Received: by 10.182.76.65 with SMTP id i1mr9594129obw.5.1401193787285;
+        Tue, 27 May 2014 05:29:47 -0700 (PDT)
+Received: by 10.50.82.104 with SMTP id h8msigy;
+        Tue, 27 May 2014 05:25:46 -0700 (PDT)
+X-Received: by 10.50.73.196 with SMTP id n4mr629999igv.14.1401193546105;
+        Tue, 27 May 2014 05:25:46 -0700 (PDT)
+X-Google-Doc-Id: 8d88799a3dc5760d
+X-Google-Web-Client: true
+Date: Tue, 27 May 2014 05:25:45 -0700 (PDT)
+From: Bipul Gupta <bipul.gupta@webchutney.net>
+To: opensport@googlegroups.com
+Message-Id: <823af71e-b61b-477f-8574-eca1e46e6103@googlegroups.com>
+Subject: No such file or directory (#1) ./setup/all.yml
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1152_11514995.1401193545266"
+X-Google-Token: EMmIkpwFp7o7z3nZPnk0
+X-Google-IP: 111.93.246.110
+
+------=_Part_1152_11514995.1401193545266
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1153_24116175.1401193545266"
+
+------=_Part_1153_24116175.1401193545266
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+I am getting following error on after executing following command.
+sportdb --verbose setup --include ./world-cup --worldinclude 
+/var/www/world-cup/openmundi/world.db
+
+I looked to all folders but not able to find ./setup/all.yml
+
+deprecated manifest/setup format [SportDb.Reader]; use new plain text format
+[info] parsing data 'setups/all' (./world-cup/setups/all.yml)...
+
+*** error: No such file or directory - ./world-cup/setups/all.yml
+
+Thanks
+Bipul
+
+------=_Part_1153_24116175.1401193545266
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p style=3D"box-sizing: border-box; margin-top: 15px; marg=
+in-bottom: 15px; color: rgb(51, 51, 51); font-family: Helvetica, arial, fre=
+esans, clean, sans-serif; font-size: 14px; line-height: 23.799999237060547p=
+x;">I am getting following error on after executing following command.<br s=
+tyle=3D"box-sizing: border-box;">sportdb --verbose setup --include ./world-=
+cup --worldinclude /var/www/world-cup/openmundi/world.db</p><p style=3D"box=
+-sizing: border-box; margin-top: 15px; margin-bottom: 15px; color: rgb(51, =
+51, 51); font-family: Helvetica, arial, freesans, clean, sans-serif; font-s=
+ize: 14px; line-height: 23.799999237060547px;">I looked to all folders but =
+not able to find ./setup/all.yml</p><p style=3D"box-sizing: border-box; mar=
+gin-top: 15px; margin-bottom: 15px; color: rgb(51, 51, 51); font-family: He=
+lvetica, arial, freesans, clean, sans-serif; font-size: 14px; line-height: =
+23.799999237060547px;">deprecated manifest/setup format [SportDb.Reader]; u=
+se new plain text format<br style=3D"box-sizing: border-box;">[info] parsin=
+g data 'setups/all' (./world-cup/setups/all.yml)...</p><p style=3D"box-sizi=
+ng: border-box; margin-top: 15px; margin-bottom: 15px; color: rgb(51, 51, 5=
+1); font-family: Helvetica, arial, freesans, clean, sans-serif; font-size: =
+14px; line-height: 23.799999237060547px;">*** error: No such file or direct=
+ory - ./world-cup/setups/all.yml</p><p style=3D"box-sizing: border-box; mar=
+gin-top: 15px; color: rgb(51, 51, 51); font-family: Helvetica, arial, frees=
+ans, clean, sans-serif; font-size: 14px; line-height: 23.799999237060547px;=
+ margin-bottom: 0px !important;">Thanks<br style=3D"box-sizing: border-box;=
+">Bipul</p></div>
+------=_Part_1153_24116175.1401193545266--
+
+------=_Part_1152_11514995.1401193545266--
+

@@ -1,0 +1,66 @@
+From 6209510483008946176@xxx Sun Oct 25 09:12:03 +0000 2015
+X-GM-THRID: 6204406662761021440
+X-Received: by 10.140.235.193 with SMTP id g184mr15077953qhc.10.1445764322739;
+        Sun, 25 Oct 2015 02:12:02 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.96.70 with SMTP id dq6ls1624598obb.51.gmail; Sun, 25 Oct
+ 2015 02:12:02 -0700 (PDT)
+X-Received: by 10.182.120.231 with SMTP id lf7mr24227560obb.50.1445764322309;
+        Sun, 25 Oct 2015 02:12:02 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x232.google.com (mail-io0-x232.google.com. [2607:f8b0:4001:c06::232])
+        by gmr-mx.google.com with ESMTPS id a11si531934igv.1.2015.10.25.02.12.02
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 25 Oct 2015 02:12:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::232 as permitted sender) client-ip=2607:f8b0:4001:c06::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x232.google.com with SMTP id z202so160068482iof.2
+        for <opensport@googlegroups.com>; Sun, 25 Oct 2015 02:12:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=DSwa05rItv2F0WPPWXNFl46dVlN+TOAhOK4potmkS9w=;
+        b=q41ILjQV46fTX+l0fXpgW/rsKyOOy7wy73GM4v3FXqVqsbnv3gsoEaRG/54aVmdigP
+         I8IDZ87CyOiMSLOO5C23uKEUsHo97DVww2+iS6v83KSHyDEMa1ealmcRl/jnm3CgXRsQ
+         9EqWEBvpxja1PPonIV3I+P9OD/HqgpL+TcmDM3ElqgiI2RFCOT1Pdx1OeoAhfV1pIBT5
+         ljUJPhPtysE+LX1ao4nTkSYuA28aqqRp10TpSTrQn4TC6Yp5QCcyYFXk3m60E95SvdB+
+         jGuKiQJI1KKxpSRAqf3Tw3NqDudslWMoPBysMn5YL9KRKOxonA/stDMpLpRQaDbPDKk+
+         5ssQ==
+MIME-Version: 1.0
+X-Received: by 10.107.170.220 with SMTP id g89mr28690160ioj.178.1445764322163;
+ Sun, 25 Oct 2015 02:12:02 -0700 (PDT)
+Received: by 10.107.138.29 with HTTP; Sun, 25 Oct 2015 02:12:02 -0700 (PDT)
+In-Reply-To: <812416f0-dcc9-421d-a606-521d5184d15a@googlegroups.com>
+References: <cce80fc2-83ed-4c4c-9032-8366d1f17afb@googlegroups.com>
+	<b8c957e3-c8f1-468c-8f40-a6db6348e90e@googlegroups.com>
+	<CAAxEZd88j9UCP3F7m_pNQMnMtt7iB2CAteFSXBnokYSCaYOhJA@mail.gmail.com>
+	<28a19d42-14a0-4ffb-b775-156284f171d5@googlegroups.com>
+	<CAAxEZd9Ryf7Obxk6AvOST4fFh9BbiBLBN2vcj2mhFMfu_YU5WA@mail.gmail.com>
+	<812416f0-dcc9-421d-a606-521d5184d15a@googlegroups.com>
+Date: Sun, 25 Oct 2015 10:12:02 +0100
+Message-ID: <CAAxEZd_4mD9uwwEcq2L-b4YOmm5eZ-J6-fLRP+i4FJE7--tuQg@mail.gmail.com>
+Subject: Re: [opensport] Re: Data Issus: football.json Spain 2015/16 fixtures
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    Again thanks for checking and pinpointing the error. The team
+(reference) matcher [1] in the textutils library needs to get updated
+- it now scans for one team after another - thus, leading in some
+cases to some (sub)optimal early matches (e.g. Espanyol Barcelona
+getting matched by Barcelona, that is, (FC) Barcelona and NOT by the
+longer Espanyol Barcelona).
+
+   The fix is "simple" - the matcher needs to sort all team name
+candidates by length and use a single all-at-once lookup table. It's a
+know bug that needs to get fixed.  Cheers.
+
+[1] github.com/textkit/textutils/blob/master/lib/textutils/title_mapper.rb
+

@@ -1,0 +1,83 @@
+From 2453993947136@xxx Tue Jun 16 00:16:45 +0000 2015
+X-GM-THRID: 2377276981248
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cd242d30f1f3615d
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.209.12 with SMTP id ge12mr9834486icb.16.1424976385827;
+        Thu, 26 Feb 2015 10:46:25 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.138.223 with SMTP id c92ls291562ioj.104.gmail; Thu, 26 Feb
+ 2015 10:46:24 -0800 (PST)
+X-Received: by 10.50.79.131 with SMTP id j3mr243276igx.16.1424976384603;
+        Thu, 26 Feb 2015 10:46:24 -0800 (PST)
+X-Google-Doc-Id: a31ec6800f64a048
+X-Google-Web-Client: true
+Date: Thu, 26 Feb 2015 10:46:23 -0800 (PST)
+From: maizarw@gmail.com
+To: opensport@googlegroups.com
+Message-Id: <f0733f7b-2f74-43b6-9550-90825c773877@googlegroups.com>
+In-Reply-To: <CAAxEZd9AZJL9sQ7bG1XLsX+aAvnYpoDxRKA=tfSjknXxEXpMjA@mail.gmail.com>
+References: <ec906df1-8c4e-4e7f-818f-4a7804b24d82@googlegroups.com>
+ <CAAxEZd-YTsKsA3kjKPv=rW97xza38tv2jTS6RycyDU5Q3Rh1Xw@mail.gmail.com>
+ <050ea85e-361e-4129-aa03-4072002f20a3@googlegroups.com>
+ <CAAxEZd80+_DS9oT5DaibtdPDQiHBSRHMyjR2-yvSzaOnozZuhA@mail.gmail.com>
+ <016077bc-2d07-450a-a9a0-c0bf31feed15@googlegroups.com>
+ <CAAxEZd8aqWBcP7-Ek=rmjnXNR-av36Nkd4jqCOQBhG++22=YxQ@mail.gmail.com>
+ <f16d3951-a274-4b95-ac77-29a20298000e@googlegroups.com>
+ <CAAxEZd9AZJL9sQ7bG1XLsX+aAvnYpoDxRKA=tfSjknXxEXpMjA@mail.gmail.com>
+Subject: Re: [opensport] Unable to build en-england repo
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3080_119334513.1424976383373"
+X-Google-Token: EP_TvacFx0oUus_-Wns0
+X-Google-IP: 122.167.242.28
+
+------=_Part_3080_119334513.1424976383373
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3081_2052917340.1424976383374"
+
+------=_Part_3081_2052917340.1424976383374
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+How are you doing? I was trying to understand the difference between these 
+2 commands. Thought of asking you.
+rake update data=eng
+rake build DATA=en_2014_15 (Doing this seems to have wiped out the previous 
+load)
+
+Database: mysql
+My objective: Update the tables in the database only for the current 
+season. I am trying to avoid parsing through the entire Premier League 
+again. Is this possible?
+
+Once I update using either of the above commands, the goals table does not 
+seem to have records. Where do I find the goal info?
+
+Regards,
+
+- Maizar
+
+On Friday, February 6, 2015 at 11:48:03 PM UTC+5:30, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    Great. Thanks for letting me know. Changed the settings.rb in the 
+> build/ repo. Cheers. 
+>
+
+------=_Part_3081_2052917340.1424976383374
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi Gerald,<div><br></div><div>How are you doing? I was trying to understand the difference between these 2 commands. Thought of asking you.</div><div><div>rake update data=eng</div><div>rake build DATA=en_2014_15 (Doing this seems to have wiped out the previous load)</div><div><br></div><div>Database: mysql</div><div>My objective: Update the tables in the database only for the current season. I am trying to avoid parsing through the entire Premier League again. Is this possible?</div><div><br></div><div>Once I update using either of the above commands, the goals table does not seem to have records. Where do I find the goal info?</div><div><br></div><div>Regards,</div><div><br></div><div>- Maizar</div><br>On Friday, February 6, 2015 at 11:48:03 PM UTC+5:30, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;Great. Thanks for letting me know. Changed the settings.rb in the
+<br>build/ repo. Cheers.
+<br></blockquote></div></div>
+------=_Part_3081_2052917340.1424976383374--
+------=_Part_3080_119334513.1424976383373--
+

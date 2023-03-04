@@ -1,0 +1,59 @@
+From 400593780736@xxx Tue Jun 16 00:17:14 +0000 2015
+X-GM-THRID: 403458490368
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b092e579a1f06bcd,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.15.53.136 with SMTP id r8mr2647278eew.5.1394916766136;
+        Sat, 15 Mar 2014 13:52:46 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.80.5 with SMTP id n5ls118572wix.15.gmail; Sat, 15 Mar 2014
+ 13:52:45 -0700 (PDT)
+X-Received: by 10.180.7.129 with SMTP id j1mr2254751wia.1.1394916765604;
+        Sat, 15 Mar 2014 13:52:45 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x235.google.com (mail-we0-x235.google.com [2a00:1450:400c:c03::235])
+        by gmr-mx.google.com with ESMTPS id ey7si198345wib.1.2014.03.15.13.52.45
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 15 Mar 2014 13:52:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::235 as permitted sender) client-ip=2a00:1450:400c:c03::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::235 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f181.google.com with SMTP id q58so3193648wes.26
+        for <opensport@googlegroups.com>; Sat, 15 Mar 2014 13:52:45 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=PeuSgSZLtNqrFZJZR8gdL4p1moeCNKcqDPXnK45zu8A=;
+        b=yRf0QHc0FxBSeccvFYWcJTMNqgaW764om1d1qPAmci8xcH1I/AEuhngQutzC5XBUc4
+         3teDzha5IcRVstjkhP5NgHpvSyP6WefUxQEqfARm8QncQ/eXtepZbnBIY2Qiyl+OUqcF
+         cl8eyn3phsEAwqkEXXVnT8wRmzQ8foHS38xGRnNvY+CbbHn79OREH8p3lZxdl/CJr/SG
+         4OqxahADZUw0O/BBzXx9ll5sRDZoeh5i15lGCnQXOzsD2jMoJyUQuJZE78L4aPmkycEU
+         gX+whdzSeoGhGjJi+L4++cfjiq4iiBD3eYYxOkW05PwA9UOgzK7ljCcxku0KNiKkhj8b
+         NlhQ==
+MIME-Version: 1.0
+X-Received: by 10.180.21.225 with SMTP id y1mr3494606wie.24.1394916765508;
+ Sat, 15 Mar 2014 13:52:45 -0700 (PDT)
+Received: by 10.216.208.136 with HTTP; Sat, 15 Mar 2014 13:52:45 -0700 (PDT)
+Date: Sat, 15 Mar 2014 21:52:45 +0100
+Message-ID: <CAAxEZd-RoFUvGuC4_n0OwSW+N2FDF8zsfQ1QEFL9-sx2_XFaZA@mail.gmail.com>
+Subject: Sports Web Schema (Vocabulary) in the Works @ Schema.org
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  FYI: The Schema.org project works on a new and improved sports
+vocabulary / database schema [1]. The current proposal is available as
+an exported PDF in the W3C web schemas sports wiki [2].
+
+  Do you know any other public sports schemas / vocabularies? Let us
+know. Cheers.
+
+[1] blog.schema.org/2014/02/schemaorg-sports-vocabulary.html
+[2] www.w3.org/wiki/WebSchemas/Sports
+

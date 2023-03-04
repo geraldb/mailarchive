@@ -1,0 +1,63 @@
+From 1525169520640@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1523449856000
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,60599c20c301e16f
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.50.25.41 with SMTP id z9mr30294015igf.2.1408260604485;
+        Sun, 17 Aug 2014 00:30:04 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.140.23.137 with SMTP id 9ls2038129qgp.68.gmail; Sun, 17 Aug
+ 2014 00:30:04 -0700 (PDT)
+X-Received: by 10.140.33.203 with SMTP id j69mr443070qgj.2.1408260604169;
+        Sun, 17 Aug 2014 00:30:04 -0700 (PDT)
+X-Google-Doc-Id: cb447826dc6e70d7
+X-Google-Web-Client: true
+Date: Sun, 17 Aug 2014 00:30:03 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <09755fcf-5b2e-4475-a81e-0b34a0675888@googlegroups.com>
+In-Reply-To: <67e67cec-fdd1-4d49-b2c4-941b2abf1a81@googlegroups.com>
+References: <67e67cec-fdd1-4d49-b2c4-941b2abf1a81@googlegroups.com>
+Subject: Re: slideshow error: stack level too deep
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_25_985356386.1408260603880"
+X-Google-Token: EPuzwZ8FrHLN3u3ij-I0
+X-Google-IP: 193.80.72.72
+
+------=_Part_25_985356386.1408260603880
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_26_1638377485.1408260603881"
+
+------=_Part_26_1638377485.1408260603881
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+   Sorry. Hard to say. I have no idea.  For debugging make sure you work in 
+a new folder and the folder has no subfolder(s) (plugins in subfolders get 
+auto-loaded - that might be the cause).
+
+  Can you post the output of these to commands:
+
+$  slideshow plugins
+
+  and
+
+$ slideshow about
+
+  Thanks for your interest in Slideshow (S9). Cheers.
+
+
+------=_Part_26_1638377485.1408260603881
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<br><br>&nbsp;&nbsp; Sorry. Hard to say. I have no idea.&nbsp; For debugging make sure you work in a new folder and the folder has no subfolder(s) (plugins in subfolders get auto-loaded - that might be the cause).<br><br>&nbsp; Can you post the output of these to commands:<br><br>$&nbsp; slideshow plugins<br><br>&nbsp; and<br><br>$ slideshow about<br><br>&nbsp; Thanks for your interest in Slideshow (S9). Cheers.<div dir="ltr"><br></div></div>
+------=_Part_26_1638377485.1408260603881--
+
+------=_Part_25_985356386.1408260603880--
+

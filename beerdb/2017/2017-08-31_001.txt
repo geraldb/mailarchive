@@ -1,0 +1,108 @@
+From 6460352716187107328@xxx Thu Aug 31 08:28:01 +0000 2017
+X-GM-THRID: 6460352716931596288
+X-Received: by 10.13.223.72 with SMTP id i69mr2883186ywe.136.1504168081095;
+        Thu, 31 Aug 2017 01:28:01 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.36.103.14 with SMTP id u14ls4405295itc.7.canary-gmail; Thu, 31
+ Aug 2017 01:28:00 -0700 (PDT)
+X-Received: by 10.129.81.72 with SMTP id f69mr2933187ywb.79.1504168080837;
+        Thu, 31 Aug 2017 01:28:00 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1504168080; cv=none;
+        d=google.com; s=arc-20160816;
+        b=yzULE1oevPLNL2N7Kew4GuyzPKmMdRT1kY8u8mTrLagcyrZMVIV1RheLBzHsoyt65l
+         /lL0Y+6lFeKpd1I2MziAAP1dEYM6O0k09UuuZ0IHAr8F1ZgSPf5erBqCk0eM1o144522
+         P5I4Z/tHUhD6qoU2W0IXcNqt6NEEHyMXO0vyDTqzpUW0cGkvV99/Ogxi6YIZ8WBwCSN8
+         mBXTcUOrA+yif6m8+rTHoX1g5cpLuE3yqV/GlyYHZ9Zj0C8uaOL9wWAvBv5A9GJOjBhO
+         s70ebYMp/reGBL0IN8VIRW4OkzP6d4N3sA07FbwlCVKIzOsp+y+9eK2uW4kFdydTDRZ8
+         yf6A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=c3WXbZ1L+f+ygYXhUo2T+Zyr0Fm2boQxTmWBOM709CQ=;
+        b=PpQKfDZ/FVSp4gyGWwVQu5EgqAtDW1Yu0YmGiXevypTaSiH15Iv7neB4Yyva1t2vpj
+         1ULr8G0rGIzqdLHlFXYmMHZFHu7qfLkpMXt0bGKQ33OnJxecinmYRM9JpaNcS5MW8vFf
+         iMZbAZHJ70mAGXPsNWRe8WwsIw8Ld70WXm1TsguZqPLg3sf0Z1gj+tzLaolZ6GwBZvm6
+         FT7HjHCUYsu9cvjAAyax7pcV/XfuE6gB6Zj8xcnwjCbzvbVv4VU5EqPeHcDyoJJD72Zx
+         GD/4j14P3ZHVdXLtxZW1PdfZaZfIrUkY2b64NAT1z8oVywWwLgYXiEFElj1X03cpfO4z
+         OHfQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=giC23GyY;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x230.google.com (mail-io0-x230.google.com. [2607:f8b0:4001:c06::230])
+        by gmr-mx.google.com with ESMTPS id 7si32819itb.4.2017.08.31.01.28.00
+        for <beerdb@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 31 Aug 2017 01:28:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) client-ip=2607:f8b0:4001:c06::230;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=giC23GyY;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x230.google.com with SMTP id d78so16852881ioe.4
+        for <beerdb@googlegroups.com>; Thu, 31 Aug 2017 01:28:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=c3WXbZ1L+f+ygYXhUo2T+Zyr0Fm2boQxTmWBOM709CQ=;
+        b=giC23GyYOT8zXrnEMKhImd8WheETzgbLuzecjqOvbuZ+sA9R5A+UC/3/NckCNcp+SY
+         nNxYzjZRx5f3MhUqfJ/66pocKQiZqVUwfMlUPVdskWAvq1XjU2afY0LSB0DBoJH2xhns
+         qjgyHlM5K36xexXcyliV4/0kZv/6RF6iDmd0BMqmyrW41W2q6K8GXuUANgkWjzFg4OHm
+         1XH3ip5ZLhPHAMSvqw7aIE2eRaKm9Qtt12JE0EEGXk8bSHmelcSQVzCxZcHd8tkgnpBZ
+         0qR8s5QYWoCmKzH0N31sf3yCDB2xFbXXoYb7x+K5tLP6ys0pJkgm+lALPNN598N5RLA+
+         3rJg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=c3WXbZ1L+f+ygYXhUo2T+Zyr0Fm2boQxTmWBOM709CQ=;
+        b=OfHxoXpKUl8HR/+krU+Xb5Efn14yEsW5v6X1UCoXS85cIwgJVqW7Qtli3TNObf0q7i
+         mdWTcpJZn5hqEbMTrkRzxfE3RH57I5VTAHK61dwuAT5Ad8ruW9Ee1/SnQ+VCcUtBKrLH
+         ZJ9fooYoHfm4fqMGIcImqjNxzQHUEiNg08T+oSREfpMa7JmZDOBZ0agte9cLqdLbjcHU
+         IUV9Y5a26tsVyVf2X9RJnacEjH3aqknJLIK8PVjyXopV6v/evmqA5/xtSWlg9Bo/Pmvv
+         oFKXEHTwU1nr1Yvm7wqu2zFNrW4QZ3EQOXHS5bFri+YvktfQmjU3gwgJv4nVXFWV5a+T
+         Q3FA==
+X-Gm-Message-State: AHYfb5g92V6+VoNMbJDYNqp5KRJvlAFsdg3ofb2FOdyL5y85DOcuKX9O
+	VFYellmjXn7svxfNtWVss1mJ1fDPHy77
+X-Received: by 10.36.116.70 with SMTP id o67mr4038557itc.42.1504168080324;
+ Thu, 31 Aug 2017 01:28:00 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.40.142 with HTTP; Thu, 31 Aug 2017 01:27:59 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 31 Aug 2017 10:27:59 +0200
+Message-ID: <CAAxEZd90NeuhfU8kCe-ZxoYkM4oUcDJJd=0545+4VfDTkWYZ-Q@mail.gmail.com>
+Subject: beer.db.starter Sample - Build Your Own HTTP JSON API (w/ beerd.db)
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  I've updated the beer.db web service starter sample [1]
+that gets you started building your own HTTP JSON API using the beer.db
+(and friends).
+
+  What's news? The starter sample now uses the new webservice library [2]
+(a simplified sinatra 2.0-style library for HTTP JSON APIs). Example:
+
+
+    class StarterApp < Webservice::Base
+
+      include BeerDb::Models   # e.g. Beer, Brewery, Brand, etc.
+
+      # try special (reserved) keys for random beer first
+      get '/beer/(r|rnd|rand|random)' do
+        Beer.rnd
+      end
+
+      get '/beer/:key' do
+        Beer.find_by! key: params[ 'key' ]
+      end
+
+      ...
+    end
+
+Enjoy. Cheers. Prost.
+
+[1]: https://github.com/beerkit/beer.db.starter
+[2]: https://github.com/rubylibs/webservice
+

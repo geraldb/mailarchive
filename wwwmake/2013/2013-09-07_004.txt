@@ -1,0 +1,63 @@
+From 1377410482176@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1371358101504
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,f330162d7f89ec67
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.224.172.1 with SMTP id j1mr7640806qaz.3.1378543460540;
+        Sat, 07 Sep 2013 01:44:20 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.70.161 with SMTP id n1ls1224095qeu.27.gmail; Sat, 07 Sep
+ 2013 01:44:19 -0700 (PDT)
+X-Received: by 10.49.99.37 with SMTP id en5mr15209qeb.8.1378543459537;
+        Sat, 07 Sep 2013 01:44:19 -0700 (PDT)
+X-Google-Doc-Id: f041670dd0f44947
+X-Google-Web-Client: true
+Date: Sat, 7 Sep 2013 01:44:19 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <02aa08d7-25ab-490f-9453-55ccd693c21e@googlegroups.com>
+In-Reply-To: <522AD195.1070303@gmail.com>
+References: <522AD195.1070303@gmail.com>
+Subject: Re: Failed to build default example
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_23_22599146.1378543459265"
+X-Google-Token: EOPOq5EFttGpgY3xfJY0
+X-Google-IP: 93.82.50.77
+
+------=_Part_23_22599146.1378543459265
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_24_21235392.1378543459266"
+
+------=_Part_24_21235392.1378543459266
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+   Thanks for trying Slideshow (S9). Sorry for the trouble.  Starting w/ 
+the latest version some helpers [1] (e.g. left,right,etc.) moved out of the 
+core gem. Use
+
+    $ slideshow update              # to update the shortcut index [2]
+    $ slideshow install plugins    # install plugins, that is, helpers 
+(e.g. left,right)
+
+    Retry. No everything should work fine. Cheers.
+
+[1] https://github.com/slideshow-s9/tables
+[2] https://github.com/slideshow-s9/update
+
+------=_Part_24_21235392.1378543459266
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<br><br>&nbsp;&nbsp; Thanks for trying Slideshow (S9). Sorry for the trouble.&nbsp; Starting w/ the latest version some helpers [1] (e.g. left,right,etc.) moved out of the core gem. Use<br><br>&nbsp;&nbsp;&nbsp; $ slideshow update&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # to update the shortcut index [2]<br>&nbsp;&nbsp;&nbsp; $ slideshow install plugins&nbsp;&nbsp;&nbsp; # install plugins, that is, helpers (e.g. left,right)<br><br>&nbsp;&nbsp;&nbsp; Retry. No everything should work fine. Cheers.<br><br>[1] https://github.com/slideshow-s9/tables<br>[2] https://github.com/slideshow-s9/update<br></div>
+------=_Part_24_21235392.1378543459266--
+
+------=_Part_23_22599146.1378543459265--
+

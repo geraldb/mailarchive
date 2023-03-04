@@ -1,0 +1,66 @@
+From 1506106408960@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1497621331968
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,f329f2b3456efef1
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.188.134 with SMTP id a6mr2758658yhn.11.1397631834336;
+        Wed, 16 Apr 2014 00:03:54 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.140.92.163 with SMTP id b32ls497622qge.22.gmail; Wed, 16 Apr
+ 2014 00:03:54 -0700 (PDT)
+X-Received: by 10.140.104.168 with SMTP id a37mr14784qgf.20.1397631834051;
+        Wed, 16 Apr 2014 00:03:54 -0700 (PDT)
+X-Google-Doc-Id: b30042bdb6c9e692
+X-Google-Web-Client: true
+Date: Wed, 16 Apr 2014 00:03:52 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <4a13e7d7-2ea5-4ae8-8cec-49162646f3c4@googlegroups.com>
+In-Reply-To: <3cd15711-1496-48cc-a427-72608a03a1bd@googlegroups.com>
+References: <3cd15711-1496-48cc-a427-72608a03a1bd@googlegroups.com>
+Subject: Re: Instructions for the ruby gem?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_74_13673807.1397631832710"
+X-Google-Token: ENjWuJoFFqHf1G6ScwU0
+X-Google-IP: 188.23.217.23
+
+------=_Part_74_13673807.1397631832710
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_75_1382455.1397631832710"
+
+------=_Part_75_1382455.1397631832710
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Dee,
+
+  Yes, that's it. Use the build command try:
+
+ $ slideshow build rest.text     or
+ $ slideshow b rest.text
+
+   I'd recommend using Markdown instead of ReSt because more people use it 
+and, thus, can likely help you and you will find more documentatoin and 
+examples and so on.
+ 
+   Cheers.
+
+PS: To get started and learn more try some example talks e.g. "Using 
+Markdown for Websites, Presentations, or Books" [1] and others [2].
+
+[1] 
+raw.githubusercontent.com/slideshow-s9/slideshow-s9.github.io/master/talks/markdown.md
+[2] github.com/slideshow-s9/slideshow-s9.github.io/tree/master/talks
+
+------=_Part_75_1382455.1397631832710
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello Dee,<br><br>&nbsp; Yes, that's it. Use the build command try:<br><br>&nbsp;$ slideshow build rest.text&nbsp;&nbsp;&nbsp;&nbsp; or<br>&nbsp;$ slideshow b rest.text<br><br>&nbsp;&nbsp; I'd recommend using Markdown instead of ReSt because more people use it and, thus, can likely help you and you will find more documentatoin and examples and so on.<br>&nbsp;<br>&nbsp;&nbsp; Cheers.<br><br>PS: To get started and learn more try some example talks e.g. "Using Markdown for Websites, Presentations, or Books" [1] and others [2].<br><br>[1] raw.githubusercontent.com/slideshow-s9/slideshow-s9.github.io/master/talks/markdown.md<br>[2] github.com/slideshow-s9/slideshow-s9.github.io/tree/master/talks<br></div>
+------=_Part_75_1382455.1397631832710--
+
+------=_Part_74_13673807.1397631832710--
+

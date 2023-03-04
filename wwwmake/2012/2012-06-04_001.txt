@@ -1,0 +1,63 @@
+From 1091665133568@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1074011308032
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,1665f82740ddad1f
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.52.95.108 with SMTP id dj12mr21722043vdb.2.1338793895185;
+        Mon, 04 Jun 2012 00:11:35 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.140.139 with SMTP id i11ls2460065vcu.1.gmail; Mon, 04 Jun
+ 2012 00:11:34 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.52.95.238 with SMTP id dn14mr523267vdb.1.1338793894881; Mon,
+ 04 Jun 2012 00:11:34 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by 5g2000vbf.googlegroups.com with HTTP; Mon, 4 Jun 2012 00:11:34
+ -0700 (PDT)
+Date: Mon, 4 Jun 2012 00:11:34 -0700 (PDT)
+In-Reply-To: <a7c8544d-eaa4-4ae1-b5d9-ab927d483f6c@eh4g2000vbb.googlegroups.com>
+References: <17542618.988.1331513433940.JavaMail.geo-discussion-forums@vbze11>
+ <31755610.1129.1334317550775.JavaMail.geo-discussion-forums@pbig5> <a7c8544d-eaa4-4ae1-b5d9-ab927d483f6c@eh4g2000vbb.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EKa_sf4EAsg3nlObtCg0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:12.0)
+ Gecko/20100101 Firefox/12.0,gzip(gfe)
+X-Google-IP: 188.22.220.219
+Message-ID: <300b323c-eea3-4980-af79-5dfcca89317a@5g2000vbf.googlegroups.com>
+Subject: Re: Slide Show (S9) Update - Use Your Markdown Library of Choice
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   I've reworked the markdown library code in the latest update and
+now kramdown is the only default engine. If you want to use a
+different Markdown engine, use the markdown.yml settings (in your home
+or working folder) or the MARKDOWN_LIB env variable to configure a
+different engine.
+
+   Also note, the markdown wrapper library has been renamed to simply
+markdown and now resides @ https://github.com/geraldb/markdown
+
+  That's it for now. I'll plan to continue to add some easier ways to
+configure the markdown library. If you have any ideas or suggestions,
+please let us know
+
+  Cheers.
+
+PS: The markdown gem now sports a binary/executable for testing. Try
+
+$ markdown -h
+
+after your update.
+

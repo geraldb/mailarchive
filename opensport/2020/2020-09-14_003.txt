@@ -1,0 +1,86 @@
+From 6872350315244421120@xxx Mon Sep 14 14:29:08 +0000 2020
+X-GM-THRID: 6872350316471255040
+X-Received: by 2002:a37:a80e:: with SMTP id r14mr13587620qke.85.1600093747422;
+        Mon, 14 Sep 2020 07:29:07 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:ad4:48c2:: with SMTP id v2ls2452319qvx.4.gmail; Mon, 14 Sep
+ 2020 07:29:06 -0700 (PDT)
+X-Received: by 2002:a0c:8091:: with SMTP id 17mr13782203qvb.19.1600093746209;
+        Mon, 14 Sep 2020 07:29:06 -0700 (PDT)
+Received: by 2002:a37:693:0:b029:115:f384:b2ed with SMTP id 141-20020a3706930000b0290115f384b2edmsqkg;
+        Mon, 14 Sep 2020 02:15:07 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxEo3Re41zWi8EHchvpVz8ZX8+hTF/hDPJaM23N+9k8SH7AeZ5uRQMUPS19T8CpeYcG3Xm1r4rEdw==
+X-Received: by 2002:ac8:857:: with SMTP id x23mr11942202qth.229.1600074907183;
+        Mon, 14 Sep 2020 02:15:07 -0700 (PDT)
+X-Google-Thread-Subscription: Yes
+X-Google-Web-Client: true
+Date: Mon, 14 Sep 2020 02:15:06 -0700 (PDT)
+From: Oxxx Cxxx <cuellas@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <a45de9eb-3c3e-4d68-ad13-4eb98a843b45n@googlegroups.com>
+Subject: Hi. problemsn when i try to request some info fron the public
+ domain
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1980_1358785602.1600074906997"
+
+------=_Part_1980_1358785602.1600074906997
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1981_806772197.1600074906998"
+
+------=_Part_1981_806772197.1600074906998
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello.
+
+I try to check how the app work to implemente a small script to check data, 
+on the public domain. and i have this little problem:
+
+$ curl -vvv 
+'http://footballdb.herokuapp.com/api/v1/event/en.2018_19/round/2'
+*   Trying 54.175.226.183...
+* Connected to footballdb.herokuapp.com (54.175.226.183) port 80 (#0)
+> GET /api/v1/event/en.2018_19/round/2 HTTP/1.1
+> Host: footballdb.herokuapp.com
+> User-Agent: curl/7.47.0
+> Accept: */*
+>
+< HTTP/1.1 404 Not Found
+< Date: Mon, 14 Sep 2020 09:11:04 GMT
+< Connection: keep-alive
+< Content-Type: text/html; charset=UTF-8
+< Content-Length: 728
+< X-Request-Id: ebda8592-3cff-4cee-92ed-1b5465d9a97a
+< X-Runtime: 0.002575
+< Server: thin
+< Via: 1.1 vegur
+
+what am i doing wrong with the request?
+
+Thx
+
+
+
+------=_Part_1981_806772197.1600074906998
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello.<br><br>I try to check how the app work to implemente a small script =
+to check data, on the public domain. and i have this little problem:<br><br=
+><div>$ curl -vvv 'http://footballdb.herokuapp.com/api/v1/event/en.2018_19/=
+round/2'</div><div>*&nbsp; &nbsp;Trying 54.175.226.183...</div><div>* Conne=
+cted to footballdb.herokuapp.com (54.175.226.183) port 80 (#0)</div><div>&g=
+t; GET /api/v1/event/en.2018_19/round/2 HTTP/1.1</div><div>&gt; Host: footb=
+alldb.herokuapp.com</div><div>&gt; User-Agent: curl/7.47.0</div><div>&gt; A=
+ccept: */*</div><div>&gt;</div><div>&lt; HTTP/1.1 404 Not Found</div><div>&=
+lt; Date: Mon, 14 Sep 2020 09:11:04 GMT</div><div>&lt; Connection: keep-ali=
+ve</div><div>&lt; Content-Type: text/html; charset=3DUTF-8</div><div>&lt; C=
+ontent-Length: 728</div><div>&lt; X-Request-Id: ebda8592-3cff-4cee-92ed-1b5=
+465d9a97a</div><div>&lt; X-Runtime: 0.002575</div><div>&lt; Server: thin</d=
+iv><div>&lt; Via: 1.1 vegur<br><br>what am i doing wrong with the request?<=
+br><br>Thx<br><br><br></div>
+------=_Part_1981_806772197.1600074906998--
+
+------=_Part_1980_1358785602.1600074906997--
+

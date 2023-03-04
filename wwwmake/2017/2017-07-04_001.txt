@@ -1,0 +1,128 @@
+From 6438881626264961024@xxx Tue Jul 04 11:49:14 +0000 2017
+X-GM-THRID: 6438881626025885696
+X-Received: by 10.176.3.236 with SMTP id 99mr18279825uau.31.1499168953891;
+        Tue, 04 Jul 2017 04:49:13 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.36.122.77 with SMTP id a74ls11248719itc.4.canary-gmail; Tue,
+ 04 Jul 2017 04:49:13 -0700 (PDT)
+X-Received: by 10.129.110.67 with SMTP id j64mr27237994ywc.156.1499168953098;
+        Tue, 04 Jul 2017 04:49:13 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1499168953; cv=none;
+        d=google.com; s=arc-20160816;
+        b=p0s+rZN4yjmu5VF+VmcJL+i96gOUXwSxQ7fsGAfr2nnVkxyeNwM2IZuW6PKvq4z68s
+         hHbriiuLTCFQUrc+vhyq6acfoW+bEmnIEvd23epJHmWx/LsnLEt3JVJ23cNFlUIofour
+         QahQ53zlE249+NzkWmJUvvIl/8DHI+iwSSG4WJjzEWQGQAlK924ELgqXaaLWLLtOjy9I
+         G14V10Wd0eEInLcnP1TMHstOR+V6Mnn2N500S5Jw756kjfDojhi0v5v3QM5KyGdf+D8e
+         JsZTviRwdisDaAc7tSV+2OthO1hJnVZLogbYwfJ/mdHtKjlkhfIUviIFb/5U5kKVO0+j
+         c3LA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :mime-version:dkim-signature:arc-authentication-results;
+        bh=ufGB7DAAtI1Piyfm40KNDbhzO8zqHtVdNStkMfpmeA8=;
+        b=vDS+5Ts+Krqqft6ZdrtmHOA09ViaecoLO2O3fNCglOcty7FEDgF6tK0FWFoN/bc7wN
+         EAV20QWtTX4kmU7SNz0jihrWmRR1SZceKfwVDrpUMc+QtWFXVPs8mV/UrckWr7Ye9cdj
+         xaQ+ln8ysqlrgbdlu3Yqt2ikz175Ua6Yb8RW0fEEluJiq580K2JirzQfGLml8ubHU4rH
+         moUCgDCGYjcmOXsxWGoUI/Ag7iwwY63sz84pkGZ6SeDc660AU7jE8Qc8eY5q2qWLbZ2v
+         IlODr56O73/IMtcps7KS6iEn1/FB1rTsv4+3DlbjOSpveZu4xY5qKyYv9lYJqg2NgErL
+         MgKg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=iFzWVZcp;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x230.google.com (mail-it0-x230.google.com. [2607:f8b0:4001:c0b::230])
+        by gmr-mx.google.com with ESMTPS id j141si1431902itb.6.2017.07.04.04.49.13
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 04 Jul 2017 04:49:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) client-ip=2607:f8b0:4001:c0b::230;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=iFzWVZcp;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x230.google.com with SMTP id k192so70320914ith.1
+        for <wwwmake@googlegroups.com>; Tue, 04 Jul 2017 04:49:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=ufGB7DAAtI1Piyfm40KNDbhzO8zqHtVdNStkMfpmeA8=;
+        b=iFzWVZcpH1X5evTzx9GGz9Nqphc3h6g4zi0UDlM2xw3umDJx0xF7wqq3/z5OBjUgKw
+         t6tlKENaHrAZIvoZtKgDHhLiQMKOb7bdki07+TUbvsh8BeLvZCKJD0l4D+mFoFUAWt8m
+         GtwSNrNcrSwSdPoJHMPkvnDzAKqOgvgiiseJNh1bZT3qunJxK6wYAV8y27ADS24ztjJb
+         n2q14NhuIdt8c/SpauPh7z+tnDQhuRGPCtzTUZ/w87hivmmMAhz71qfq9tGY6SLIlUER
+         PAKg5NAZ6iHc3/zG8X3AK3b70Rwraazbl5FxtOJZP6oH+4bJB4gWRJ/XuGovXnk2vQtC
+         wmSg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=ufGB7DAAtI1Piyfm40KNDbhzO8zqHtVdNStkMfpmeA8=;
+        b=fgWH4WEUMfBZ8RHeg0xHDS6W61INhZpjzIyDxxAJZAk0k4HPc69SfKAiwWlqkylgav
+         EwnVDuK+fKjzxlmZDrz1mUCrWa3rh8nKh3EgSRMloNhpkwvKxd2GuNLcIaFCPTi5YQ0f
+         v3UkcBPWjYMXE4s2YaJfV2/oSiAxpWOki30t3hLE37Ag+rK6IwQmo4sAwuEl63P8kliE
+         63sbFy9BW/DgEdM3/TjbcKED5RggYi7WRP1348A+/Fq+z98RH8Lxo25aEx1kkaLx26dN
+         nmSzkh8za/VG+ow012lB+ptQ0IcBKaRzMhUHwzpnPFXyZr1bLLSQcL21N91tkxOd7DmL
+         r6EA==
+X-Gm-Message-State: AIVw1103DrvwfJRB6UWpYTq7iMeex3YRRF7wiroVOpG6AUXRTaT4Ycwy
+	x9gUsIJylLOA2zK3Zu6JTXXSuC5J6eBI
+X-Received: by 10.36.39.135 with SMTP id g129mr13365954ita.4.1499168952665;
+ Tue, 04 Jul 2017 04:49:12 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.4.17 with HTTP; Tue, 4 Jul 2017 04:49:12 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 4 Jul 2017 13:49:12 +0200
+Message-ID: <CAAxEZd8ito0n0Wok+r7pNyYZ96qO3i+7zQck_e1VUdMptdonDA@mail.gmail.com>
+Subject: Talk Notes - Quik: The Missing Project Template Scaffolder (for Ruby)
+ - Gems, Sinatra Apps, Jekyll Themes & More
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   the slides and talk notes for today's Linz.rb talk about "Quik: The
+Missing Project Scaffolder (for Ruby) -
+   - Quick start your ruby gems, your sinatra apps, your jekyll sites
+'n' more w/ project templates (from GitHub)" [1].
+
+  As an alternative you can browse / read the all-in-one-page source
+in markdown*=C2=B9 [2].
+
+   The contents reads:
+
+- Quick Starter Kits / Boilerplates / Project Scaffolder in the World
+- What about Ye Old' Ruby?
+  - How do you get started with creating a new gem?
+  - How do you get started with creating a new sinatra app?
+  - How do you get started with creating a new jekyll theme?
+- Turn GitHub repos into quik starter templates in 1-2-3 steps.
+  - Step 1: Download Single-File Quik Starter (.ZIP) Archive
+  - Step 2: Parameterize Files - Use a Meta Template Template Language
+  - Step 3: What's Missing? All together Now - Automate with a Script
+- Let's welcome the quik command line tool / gem.
+  - quik help - Quik Starter Commands
+  - quik ls - List Quik Starter Wizards
+  - quik new - New Wizard Quik Start
+ - Bonus I - Meet Mr Hyde - Dr Jekyll's Dark Side
+   - Meet Mr Hyde - New Static Website Wizard Command
+ - Bonus II - Quik Starter Thor Command Line Template
+
+
+   What do you use to get (quick) started with new gems, sinatra apps,
+jekyll themes? Let us know. Cheers.
+
+
+PS:
+
+=C2=B9: Did you know? The slide deck gets build from text with markdown for=
+matting
+   with the slideshow gem [3]). See the Slide Show (S9) project [4] for mor=
+e.
+
+
+[1] http://slideshow-s9.github.io/demos/quik.html
+[2] https://github.com/geraldb/talks/blob/master/quik.md
+[3] https://github.com/slideshow-s9/slideshow
+[4] http://slideshow-s9.github.io
+

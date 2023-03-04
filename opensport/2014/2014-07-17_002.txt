@@ -1,0 +1,62 @@
+From 1640187822080@xxx Tue Jun 16 00:16:55 +0000 2015
+X-GM-THRID: 1624477007872
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a78975e0f21ec1cb
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.188.229 with SMTP id gd5mr2153421lbc.13.1405619173511;
+        Thu, 17 Jul 2014 10:46:13 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.108.236 with SMTP id hn12ls952925wib.38.canary; Thu, 17
+ Jul 2014 10:46:12 -0700 (PDT)
+X-Received: by 10.180.39.196 with SMTP id r4mr2225403wik.4.1405619172828;
+        Thu, 17 Jul 2014 10:46:12 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22f.google.com (mail-we0-x22f.google.com [2a00:1450:400c:c03::22f])
+        by gmr-mx.google.com with ESMTPS id b9si397293wic.2.2014.07.17.10.46.12
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 17 Jul 2014 10:46:12 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22f as permitted sender) client-ip=2a00:1450:400c:c03::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x22f.google.com with SMTP id t60so3403868wes.6
+        for <opensport@googlegroups.com>; Thu, 17 Jul 2014 10:46:12 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=9TWpVipFvPk7Z3OXTgKhZBpHTNlH5P+KLNFIoZemRdQ=;
+        b=gLlqJOHSUd0eqKHUzTuW7XD/lpfmX02H/MAk/+quwyWYZnFtr7YO7XalkpAv/miBRh
+         7JHqDBuZXRj93Av06PwyDO3nnYQY7mdYF1UwC3eBdKbbPg1UjSl8ex/UTRnU3OWRajCl
+         nxEihr0IJ3GrUiid8WVagNXOoSiXzuAvIy7f0zxFN9k491FvxI7oj7TVLzpB+Lg2v+CL
+         VMYSV0ThmQNP1tff9qKYuo0LeMnUI1OYFDvi/P82OSZlCAPxicvtrYmElTl1frNxryFb
+         GmI3MfU6sSQh4VXLoflFN28Ud6Y7fwlYaTlH72o4XIcnnEitAOp2/9Y9Qp36EqfepMqq
+         HwuQ==
+MIME-Version: 1.0
+X-Received: by 10.194.48.8 with SMTP id h8mr31155994wjn.106.1405619172748;
+ Thu, 17 Jul 2014 10:46:12 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Thu, 17 Jul 2014 10:46:12 -0700 (PDT)
+In-Reply-To: <fcab240d-814e-4e66-835f-00652133508a@googlegroups.com>
+References: <8c09a2ed-3c3e-435a-b5df-9546dacdae2d@googlegroups.com>
+	<CAAxEZd_nkeLGqGuWdxRdQqaKY6fNqG5o2HR1kyQFgwf7y_Kwjg@mail.gmail.com>
+	<fcab240d-814e-4e66-835f-00652133508a@googlegroups.com>
+Date: Thu, 17 Jul 2014 19:46:12 +0200
+Message-ID: <CAAxEZd8komTuYCspPWRkpdyjTPzGyHEWqh_ei6engmFk9YEhhA@mail.gmail.com>
+Subject: Re: [opensport] error 500 getting
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  FYI: As always if you want to use lets say de.2013_14 do NOT wait.
+
+   It is always best to build your own football.db and run your own
+HTTP JSON API service (using the sport.db.starter kit [1], for
+example). Cheers.
+
+[1] github.com/sportdb/sport.db.api.starter
+

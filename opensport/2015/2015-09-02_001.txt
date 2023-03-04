@@ -1,0 +1,79 @@
+From 6189837148755066880@xxx Wed Sep 02 08:49:28 +0000 2015
+X-GM-THRID: 6189837148781281280
+X-Received: by 10.52.118.8 with SMTP id ki8mr32521167vdb.6.1441183767707;
+        Wed, 02 Sep 2015 01:49:27 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.3.169 with SMTP id e41ls47154ioi.8.gmail; Wed, 02 Sep 2015
+ 01:49:27 -0700 (PDT)
+X-Received: by 10.66.140.40 with SMTP id rd8mr35475782pab.31.1441183767387;
+        Wed, 02 Sep 2015 01:49:27 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x233.google.com (mail-ig0-x233.google.com. [2607:f8b0:4001:c05::233])
+        by gmr-mx.google.com with ESMTPS id 4si170070igl.1.2015.09.02.01.49.27
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 02 Sep 2015 01:49:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::233 as permitted sender) client-ip=2607:f8b0:4001:c05::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x233.google.com with SMTP id kq10so20308313igb.0
+        for <opensport@googlegroups.com>; Wed, 02 Sep 2015 01:49:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=h3U8G7V8gibsTxyTBiXCgkc/EgZgVA6RA9mOJLjXUlA=;
+        b=PJX0/XmhI9ykJzpMneOiaInKcE7knXiJofl7nq4SaZ0x54VoIDwfW8Uwt39YI0VLrr
+         PgJdA0X9AumAKZDWYNrY5weHuPz9saKzM4ctDQKF6X4bEHvy/U6FVhwUIVoSrtlKUcYy
+         ERuZwMsJlwwMfpLXC517ypTgGW43ZQ1eql+UJRZz+rkwmXCrONDRDqcmlWN+xTlSc2Ky
+         hZjFORjyiw9locWAblxVSV89LkqMikCrHtUDkPEmVv3i3pDtqswBGs5pOJz+xxAl/Tvr
+         Vet6LNEYRFGIWwDE0+4opXE/neqKs8pKFHQ2n10fCCblyqyZ0xVhQS5UZMCLbDhie4eC
+         H0lQ==
+MIME-Version: 1.0
+X-Received: by 10.50.79.230 with SMTP id m6mr1920291igx.86.1441183767278; Wed,
+ 02 Sep 2015 01:49:27 -0700 (PDT)
+Received: by 10.107.190.132 with HTTP; Wed, 2 Sep 2015 01:49:27 -0700 (PDT)
+Date: Wed, 2 Sep 2015 10:49:27 +0200
+Message-ID: <CAAxEZd9FsnsBjshQ0VYKrzeopQMpSRqNJwR02RZLq6+PSfj63Q@mail.gmail.com>
+Subject: Deutsche Bundesliga (1.+2.) - All Players 'n' Squads e.g. bayern.txt,
+ dortumund.txt, etc.
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   Thanks to Alex [1] the Deutsche Bundesliga 2015/16 season now
+includes all players and squads, see the /2015-16/squads folder [2].
+Example - bayern.txt:
+
+###########################
+#  Bayern M=C3=BCnchen
+
+ 1  Neuer, Manuel                    GK  2011-       #  27 Mar 1986 (29)
+22  Starke, Tom                       GK  2012-       #  18 Mar 1981 (34)
+26  Ulreich, Sven                      GK  2015-       #   3 Aug 1988 (27)
+
+ 5  Benatia, Medhi (MAR)          DF  2014-       #  17 Apr 1987 (28)
+ 8  Javi Martinez (ESP)             DF  2012-       #   2 Sep 1988 (26)
+13  Rafinha (BRA)                    DF  2011-       #   7 Sep 1985 (29)
+15  Kirchhoff, Jan                     DF  2015-       #   1 Oct 1990 (24)
+
+  and so on.
+
+  Interested in contributing? See the 1-bundesliga-squads.json source
+in the /scripts [3] repo as an example.
+
+  JSON sources (preferred/recommended) and more than welcome ;-)
+  - we will generate the (human) pretty printed plain text formats if
+needed. Cheers.
+
+
+[1] github.com/alexrockt
+[2] github.com/openfootball/de-deutschland/tree/master/2015-16/squads
+[3] github.com/sportdb/scripts
+

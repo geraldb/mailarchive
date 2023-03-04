@@ -1,0 +1,80 @@
+From 95565119488@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 94686412800
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,31cc570c14cbc769,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.114.135.1 with SMTP id i1mr4039612wad.6.1219781463189;
+        Tue, 26 Aug 2008 13:11:03 -0700 (PDT)
+Return-Path: <gerald@vanbeta.com>
+Received: from qb-out-1314.google.com (qb-out-1314.google.com [72.14.204.171])
+        by mx.google.com with ESMTP id k19si8688waf.2.2008.08.26.13.11.02;
+        Tue, 26 Aug 2008 13:11:03 -0700 (PDT)
+Received-SPF: neutral (google.com: 72.14.204.171 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=72.14.204.171;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 72.14.204.171 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by qb-out-1314.google.com with SMTP id e13so3454096qbe.12
+        for <webslideshow@googlegroups.com>; Tue, 26 Aug 2008 13:11:02 -0700 (PDT)
+Received: by 10.210.87.14 with SMTP id k14mr110767ebb.29.1219781462367;
+        Tue, 26 Aug 2008 13:11:02 -0700 (PDT)
+Received: by 10.210.104.15 with HTTP; Tue, 26 Aug 2008 13:11:02 -0700 (PDT)
+Message-ID: <1f058eab0808261311r32f95351pc109acdd3381606b@mail.gmail.com>
+Date: Tue, 26 Aug 2008 13:11:02 -0700
+From: "Gerald Bauer" <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Subject: Slide Show (S9) Gem V0.6 - New and Improved Support for Using Your Own Slide Show Templates
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello,
+
+  I've added two new options to make it easier to use your own slide
+show templates (to change lets say the encoding in the template).
+
+  The new -g/--generate option lets you generate the slide show
+templates (using the slide show templates packaged with the gem) e.g.
+Use:
+
+  slideshow -g
+
+  Resulting in:
+
+Slide Show (S9) Version: 0.6 on Ruby 1.8.6
+Copying 'templates/s6/header.html.erb' to 'header.html.erb'
+Copying 'templates/s6/footer.html.erb' to 'footer.html.erb'
+Copying 'templates/s6/style.css.erb' to 'style.css.erb'
+Copying 'templates/gradient.svg.erb' to 'gradient.svg.erb'
+Done.
+
+  Note, by default S9 generates S6 templates. If you want to generate
+S5 or FullerScreen templates add the -s5 or -f/--fullerscreen switch
+e.g.
+
+  slideshow -g -s5
+  slideshow -g -f
+
+  To use your own slide show templates instead of the built-in use the
+new load path -i/--include option e.g. Use:
+
+  slideshow -i . microformats
+  slideshow -i ~/s9/summer microformats
+
+  The slideshow gem will use the slide show templates in your working folder.
+
+Slide Show (S9) Version: 0.6 on Ruby 1.8.6
+Loading custom template ./header.html.erb...
+Loading custom template ./footer.html.erb...
+Loading custom template ./style.css.erb...
+Loading custom template ./gradient.svg.erb...
+Preparing slideshow theme 'microformats.svg'...
+Preparing slideshow 'microformats.html'...
+Preparing slideshow stylesheet 'microformats.css'...
+Done.
+
+
+ That's it. Questions and comments welcome. Cheers.
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.ca
+

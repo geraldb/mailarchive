@@ -1,0 +1,53 @@
+From 337250353152@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 230668894208
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,62dcd4fef002a41c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.103.161.18 with SMTP id n18mr308708muo.8.1232992256749;
+        Mon, 26 Jan 2009 09:50:56 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from mail-fx0-f17.google.com (mail-fx0-f17.google.com [209.85.220.17])
+        by mx.google.com with ESMTP id e3si3249367fga.12.2009.01.26.09.50.56;
+        Mon, 26 Jan 2009 09:50:56 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.220.17 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.220.17;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.220.17 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by fxm10 with SMTP id 10so1548854fxm.12
+        for <webslideshow@googlegroups.com>; Mon, 26 Jan 2009 09:50:56 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.181.156.12 with SMTP id i12mr2063196bko.140.1232992248960; 
+	Mon, 26 Jan 2009 09:50:48 -0800 (PST)
+In-Reply-To: <1f058eab0901260852h6298cd64l6e9864993b4f741@mail.gmail.com>
+References: <140cca6b-bca9-4743-a6f0-dd20e641cde1@v39g2000pro.googlegroups.com>
+	 <3a6a2b5d-5189-4e10-8a4d-4104524fa4b5@o4g2000pra.googlegroups.com>
+	 <a1c9be27-31c8-4704-a708-227163d989cd@y1g2000pra.googlegroups.com>
+	 <d39a1737-65cd-4366-a227-8c9dc4286080@r37g2000prr.googlegroups.com>
+	 <f76b2c12-23c1-4ed4-80ca-29d9abf8a484@33g2000yqm.googlegroups.com>
+	 <4b516795-001c-4eae-ae8a-b5f64ad57368@n2g2000vbl.googlegroups.com>
+	 <ee93dc59-38a3-40a5-9f44-242903870b99@z28g2000prd.googlegroups.com>
+	 <1f058eab0901260852h6298cd64l6e9864993b4f741@mail.gmail.com>
+Date: Mon, 26 Jan 2009 18:50:48 +0100
+Message-ID: <1f058eab0901260950u19aa79c5ye8d2af0baf9aee7@mail.gmail.com>
+Subject: Re: [slideshow] Re: S6 and SVG
+From: Gerald Bauer <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello Bruce,
+
+>> Am running into a problem ...
+>>>    slideshow -g        # generates a template package w/ manifest in
+>>> your working folder (using the s6 package)
+>>
+>> When running the above, I get a missing file error:
+
+  Again thanks for reporting. The different newlines mangled some file
+names in the manifest on Unix. Sorry for the trouble. It's now
+patched/fixed (and tested on Unix). I uploaded a new gem, that is,
+7.0.1 [1]. Use gem install slideshow or similar to update your script.
+
+   Cheers.
+
+[1] http://rubyforge.org/frs/?group_id=5468
+

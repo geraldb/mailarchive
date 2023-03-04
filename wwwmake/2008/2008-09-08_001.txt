@@ -1,0 +1,127 @@
+From 150408790016@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 82657148928
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,9c647c4e74c87091
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.214.181.1 with SMTP id d1mr4121570qaf.25.1220916018645;
+        Mon, 08 Sep 2008 16:20:18 -0700 (PDT)
+Return-Path: <alex.boisvert@gmail.com>
+Received: from fg-out-1718.google.com (fg-out-1718.google.com [72.14.220.156])
+        by mx.google.com with ESMTP id 22si7530921yxr.1.2008.09.08.16.20.17;
+        Mon, 08 Sep 2008 16:20:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of alex.boisvert@gmail.com designates 72.14.220.156 as permitted sender) client-ip=72.14.220.156;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of alex.boisvert@gmail.com designates 72.14.220.156 as permitted sender) smtp.mail=alex.boisvert@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by fg-out-1718.google.com with SMTP id l27so1727080fgb.21
+        for <webslideshow@googlegroups.com>; Mon, 08 Sep 2008 16:20:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type:references;
+        bh=iujDJm9z/FwiCbDUslStRZrjjRCIEPne48Cwthi4Og4=;
+        b=aBAGMquS5/dg0RMwHQIcEVSvbGIGwW66PVzsTaLsW14edfAvhfaX7kREhGa0OZLuVY
+         eLjIKForJWosPVA0zoC3scOO+TS/MZqWHeokVgFpiHSDkuOVoymC4Wq7+UYCpzcD5rYN
+         Eq+o29mNoUSrIk14cOK0Upzd1iWwjHnajLH6I=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:references;
+        b=i6AZ04wHXkqX+hMtba/9isAFQgjfiqiNGtff8/CUz19qKPt7ONKclppstGJiRsI9ub
+         XqacQXG/CwGh/XL8sCaNXR7HI0npzozXRtTYj0B4xrWxJQCyIpEuBcA4i8hFXAlsaAoS
+         MwaCKGDu722Eve6j6b4o2auICeofPcSgPAuVc=
+Received: by 10.86.65.9 with SMTP id n9mr11728527fga.55.1220916016709;
+        Mon, 08 Sep 2008 16:20:16 -0700 (PDT)
+Received: by 10.86.93.10 with HTTP; Mon, 8 Sep 2008 16:20:16 -0700 (PDT)
+Message-ID: <4dcd15a90809081620k7692cdc9q43b619919034a772@mail.gmail.com>
+Date: Mon, 8 Sep 2008 16:20:16 -0700
+From: "Alex Boisvert" <alex.boisvert@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow] Re: Encoding
+In-Reply-To: <39c6eeb5-783a-467d-864f-0d962e7c04d4@l33g2000pri.googlegroups.com>
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_Part_13094_19848220.1220916016688"
+References: <4dcd15a90808181144u67791a4bj7681c0509af0b028@mail.gmail.com>
+	 <39c6eeb5-783a-467d-864f-0d962e7c04d4@l33g2000pri.googlegroups.com>
+
+------=_Part_13094_19848220.1220916016688
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hi Gerald,
+
+I'm just back from vacation and wanted to say thanks for the encoding +
+include option.   I'll give both a try.
+
+cheers,
+alex
+
+
+On Tue, Aug 26, 2008 at 1:49 PM, Gerald <gerald@vanbeta.com> wrote:
+
+>
+> Hello Alex,
+>
+> > Is there a way to set the character encoding in the resulting HTML file
+> > using slideshow?  I'd like to explicitly set it to UTF-8 to avoid browser
+> > guessing (and getting it wrong).
+> >
+> > Right now I'm editing the HTML after generation but I would rather set
+> this
+> > as a property in the .textile file.
+>
+>   With the new S9 update you can now use your own slide show templates
+> with the load path -i/--include option and you no longer need to edit
+> the HTML after generation.
+>
+>  If you want to add a property/header in the .textile file you can
+> add that too e.g. use whatever header you like e.g.:
+>
+>  encoding: UTF-8
+>
+>  And than add in your template:
+>
+>  <meta http-equiv="Content-Type" content="text/html; charset="<%=
+> @headers['title'] || 'UTF-8'  %>" />
+>
+>  or similar. That's all there is to it. Let me know if that works for
+> you. Cheers.
+> >
+>
+
+------=_Part_13094_19848220.1220916016688
+Content-Type: text/html; charset=ISO-8859-1
+
+<div dir="ltr">Hi Gerald,<br><br>I&#39;m just back from vacation and wanted to say thanks for the encoding + include option.&nbsp;&nbsp; I&#39;ll give both a try.<br><br>cheers,<br>alex<br><br><br><div class="gmail_quote">On Tue, Aug 26, 2008 at 1:49 PM, Gerald <span dir="ltr">&lt;<a href="mailto:gerald@vanbeta.com">gerald@vanbeta.com</a>&gt;</span> wrote:<br>
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;"><br>
+Hello Alex,<br>
+<div><div></div><div class="Wj3C7c"><br>
+&gt; Is there a way to set the character encoding in the resulting HTML file<br>
+&gt; using slideshow? &nbsp;I&#39;d like to explicitly set it to UTF-8 to avoid browser<br>
+&gt; guessing (and getting it wrong).<br>
+&gt;<br>
+&gt; Right now I&#39;m editing the HTML after generation but I would rather set this<br>
+&gt; as a property in the .textile file.<br>
+<br>
+</div></div> &nbsp;With the new S9 update you can now use your own slide show templates<br>
+with the load path -i/--include option and you no longer need to edit<br>
+the HTML after generation.<br>
+<br>
+ &nbsp;If you want to add a property/header in the .textile file you can<br>
+add that too e.g. use whatever header you like e.g.:<br>
+<br>
+ &nbsp;encoding: UTF-8<br>
+<br>
+ &nbsp;And than add in your template:<br>
+<br>
+ &nbsp;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=&quot;&lt;%=<br>
+@headers[&#39;title&#39;] || &#39;UTF-8&#39; &nbsp;%&gt;&quot; /&gt;<br>
+<br>
+ &nbsp;or similar. That&#39;s all there is to it. Let me know if that works for<br>
+you. Cheers.<br>
+<div><div></div><div class="Wj3C7c"><br>
+</div></div></blockquote></div><br></div>
+
+------=_Part_13094_19848220.1220916016688--
+
+

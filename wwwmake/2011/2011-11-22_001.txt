@@ -1,0 +1,68 @@
+From 1005918879744@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 997318459392
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,b0b2da75c5d13e41
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.224.87.81 with SMTP id v17mr6664444qal.8.1321948067221;
+        Mon, 21 Nov 2011 23:47:47 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.229.161.68 with SMTP id q4ls11810442qcx.0.gmail; Mon, 21 Nov
+ 2011 23:47:46 -0800 (PST)
+Received: by 10.224.116.69 with SMTP id l5mr6641110qaq.7.1321948065999;
+        Mon, 21 Nov 2011 23:47:45 -0800 (PST)
+Received: by 10.224.116.69 with SMTP id l5mr6641108qaq.7.1321948065991;
+        Mon, 21 Nov 2011 23:47:45 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qy0-f190.google.com (mail-qy0-f190.google.com [209.85.216.190])
+        by gmr-mx.google.com with ESMTPS id bd40si5962315qcb.1.2011.11.21.23.47.45
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Mon, 21 Nov 2011 23:47:45 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.216.190 as permitted sender) client-ip=209.85.216.190;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.216.190 as permitted sender) smtp.mail=gerald.bauer@gmail.com
+Received: by qyl16 with SMTP id 16so15324988qyl.17
+        for <webslideshow@googlegroups.com>; Mon, 21 Nov 2011 23:47:45 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.224.185.79 with SMTP id cn15mr2853995qab.5.1321948065890; Mon,
+ 21 Nov 2011 23:47:45 -0800 (PST)
+Received: by b32g2000yqn.googlegroups.com with HTTP; Mon, 21 Nov 2011 23:47:45
+ -0800 (PST)
+Date: Mon, 21 Nov 2011 23:47:45 -0800 (PST)
+In-Reply-To: <d2b06236-5153-4ed0-98d7-4811378238cf@ek5g2000vbb.googlegroups.com>
+References: <d2b06236-5153-4ed0-98d7-4811378238cf@ek5g2000vbb.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EKGnrfYEeOuWNnvXJFA0
+X-Google-Web-Client: true
+X-Google-Header-Order: HUALESNKRC
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.24)
+ Gecko/20111107 Ubuntu/10.04 (lucid) Firefox/3.6.24,gzip(gfe)
+X-Google-IP: 188.23.61.31
+Message-ID: <6d0ebf02-cf19-49c6-9352-6b7794f7a6d6@b32g2000yqn.googlegroups.com>
+Subject: Re: Display a footer
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello J=F6rg,
+
+   It depends on your template pack. Some do not include footers "out-
+of-the-box", thus you need to change the template. If you use the S6
+Blank template [1] you can use the footer and subfooter headers e.g.
+
+<div class=3D"layout">
+  <div id=3D"header"></div>
+  <div id=3D"footer">
+    <h1><%=3D @headers['footer'] %></h1>
+    <h2><%=3D @headers['subfooter'] %></h2>
+  </div>
+</div>
+
+ All the best. Cheers.
+
+[1] https://github.com/geraldb/slideshow-s6-blank/blob/master/slides.html.e=
+rb
+

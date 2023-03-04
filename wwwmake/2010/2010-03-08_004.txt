@@ -1,0 +1,230 @@
+From 593570562048@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 584561197056
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,386518f236493d23
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.151.18.15 with SMTP id v15ls644553ybi.7.p; Mon, 08 Mar 2010 
+	10:06:01 -0800 (PST)
+Received: by 10.150.119.22 with SMTP id r22mr5124349ybc.0.1268071560799;
+        Mon, 08 Mar 2010 10:06:00 -0800 (PST)
+Received: by 10.150.119.22 with SMTP id r22mr5124348ybc.0.1268071560758;
+        Mon, 08 Mar 2010 10:06:00 -0800 (PST)
+Return-Path: <kevin.gisi@gmail.com>
+Received: from mail-yw0-f181.google.com (mail-yw0-f181.google.com [209.85.211.181])
+        by gmr-mx.google.com with ESMTP id 24si824870ywh.10.2010.03.08.10.05.59;
+        Mon, 08 Mar 2010 10:05:59 -0800 (PST)
+Received-SPF: pass (google.com: domain of kevin.gisi@gmail.com designates 209.85.211.181 as permitted sender) client-ip=209.85.211.181;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of kevin.gisi@gmail.com designates 209.85.211.181 as permitted sender) smtp.mail=kevin.gisi@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by mail-yw0-f181.google.com with SMTP id 11so1916597ywh.13
+        for <webslideshow@googlegroups.com>; Mon, 08 Mar 2010 10:05:59 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:sender:received:in-reply-to
+         :references:date:x-google-sender-auth:message-id:subject:from:to
+         :content-type;
+        bh=MwKLrNf+oyiFTHPLE7TSPgvdhBS6aggGvL6OQpGAH6k=;
+        b=PeNgO0Kf0FPylBg/FwxUQ/RGiEQ9ug81hM8BFVUQgTzpG6akUnNHfuWBrGNprz4IQe
+         UJKPJjkzAiUGXNHlfCcXPL/3Yw1w5JUvOZud+1SfJUbFE029/shomz/IoD9WgZxZbsgl
+         DoZRE1uVEobWjIiAuht4c7FE1GBM3NecHA3xA=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:sender:in-reply-to:references:date
+         :x-google-sender-auth:message-id:subject:from:to:content-type;
+        b=u9c0F/l0NahrfEANeaLVoAdWNN0pgrfL9FBNJTgpHQqxCH43egde7+rIGWOC7/lYiY
+         LgKkPdzCSrOk9ZemOG5YcUX4HYn4WnI+y5k+m1ELR00dOOFVyaE+Oc2O2BXBARJoF4yv
+         odrcrRJ2s/uvcA4dFAvZag0i8EX/G3FoT+f7Y=
+MIME-Version: 1.0
+Sender: kevin.gisi@gmail.com
+Received: by 10.91.92.19 with SMTP id u19mr5781031agl.68.1268071559274; Mon, 
+	08 Mar 2010 10:05:59 -0800 (PST)
+In-Reply-To: <4dcd15a91003071000o1af014feg760e34f3da9d981d@mail.gmail.com>
+References: <abacf3b61003020922l6d34adet262379abafdc0379@mail.gmail.com>
+	 <4dcd15a91003071000o1af014feg760e34f3da9d981d@mail.gmail.com>
+Date: Mon, 8 Mar 2010 12:05:58 -0600
+X-Google-Sender-Auth: 8724f3fe2c8958b2
+Message-ID: <abacf3b61003081005y756b6a2aq233b2b4f29919489@mail.gmail.com>
+Subject: Re: [slideshow] Continuous Build System for Slideshows
+From: Kevin Gisi <kevin@kevingisi.com>
+To: webslideshow@googlegroups.com
+Content-Type: multipart/alternative; boundary=001485f9a664d7216c04814dea58
+
+--001485f9a664d7216c04814dea58
+Content-Type: text/plain; charset=ISO-8859-1
+
+Oh geez! I had forgotten about GH pages. I'll have to do a revision to the
+tutorial - I still think it's valuable to use Heroku to do the actual
+building for a few other things I plan to cover in a more advanced tutorial
+(pulling out code snippets, generating PDFs, etc)
+
+What do you think?
+
+-Kevin W. Gisi
+kevin@kevingisi.com | (916) 538-4474
+http://www.kevingisi.com
+
+
+On Sun, Mar 7, 2010 at 12:00 PM, Alex Boisvert <alex.boisvert@gmail.com>wrote:
+
+> Hi Kevin,
+>
+> Pretty cool.  Thanks for taking the time to put all this in writing.
+>
+> I don't know if you know... but you can also directly host your generated
+> slides on Github by placing the HTML files in the "gh-pages" branch of your
+> project and let Github's post-commit hooks do all the work.
+>
+> Here's an example if you're interested,
+>
+> Github project: http://github.com/aboisvert/stopwatch (master branch)
+> Documentation: http://aboisvert.github.com/stopwatch/  (generated from
+> gh-pages branch)
+>
+> Slides source: http://github.com/aboisvert/stopwatch/tree/gh-pages/slides/
+> Viewable slides:
+> http://aboisvert.github.com/stopwatch/slides/stopwatch.html
+>
+> cheers,
+> alex
+>
+>
+> On Tue, Mar 2, 2010 at 9:22 AM, Kevin Gisi <kevin@kevingisi.com> wrote:
+>
+>> Hi all,
+>>
+>> I just posted part one of a tutorial on setting up a continuous build
+>> system for your slide decks. While the tutorial uses S9, I'm sure it could
+>> easily be adapted to work with most tools. The tutorial demonstrates how you
+>> can use GitHub and Heroku to handle all of this at no cost (or bandwidth) to
+>> you.
+>>
+>> I'm hoping to get the second half of the tutorial (using Selenium, Firefox
+>> headless to generate PDFs) pushed out in the next few weeks, so I'd love to
+>> hear your thoughts and feedback: http://bit.ly/ag9lq6
+>>
+>> Thanks so much!
+>>
+>> -Kevin W. Gisi
+>> kevin@kevingisi.com | (916) 538-4474
+>> http://www.kevingisi.com
+>>
+>> --
+>> You received this message because you are subscribed to the "Free Web
+>> Slide Show Alternatives - S5, S9 And Friends" group.
+>> To post to this group, send email to webslideshow@googlegroups.com
+>> To unsubscribe from this group, send email to
+>> webslideshow-unsubscribe@googlegroups.com
+>> For more options, visit this group at
+>> http://groups.google.com/group/webslideshow?hl=en
+>
+>
+>  --
+> You received this message because you are subscribed to the "Free Web Slide
+> Show Alternatives - S5, S9 And Friends" group.
+> To post to this group, send email to webslideshow@googlegroups.com
+> To unsubscribe from this group, send email to
+> webslideshow-unsubscribe@googlegroups.com
+> For more options, visit this group at
+> http://groups.google.com/group/webslideshow?hl=en
+
+--001485f9a664d7216c04814dea58
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Oh geez! I had forgotten about GH pages. I&#39;ll have to do a revision to =
+the tutorial - I still think it&#39;s valuable to use Heroku to do the actu=
+al building for a few other things I plan to cover in a more advanced tutor=
+ial (pulling out code snippets, generating PDFs, etc)<div>
+<br></div><div>What do you think?<br><div><br clear=3D"all">-Kevin W. Gisi<=
+br><a href=3D"mailto:kevin@kevingisi.com">kevin@kevingisi.com</a> | (916) 5=
+38-4474<br><a href=3D"http://www.kevingisi.com">http://www.kevingisi.com</a=
+><br>
+
+<br><br><div class=3D"gmail_quote">On Sun, Mar 7, 2010 at 12:00 PM, Alex Bo=
+isvert <span dir=3D"ltr">&lt;<a href=3D"mailto:alex.boisvert@gmail.com">ale=
+x.boisvert@gmail.com</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_qu=
+ote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex=
+;">
+Hi Kevin,<br><br>Pretty cool.=A0 Thanks for taking the time to put all this=
+ in writing.<br><br>I don&#39;t know if you know... but you can also direct=
+ly host your generated slides on Github by placing the HTML files in the &q=
+uot;gh-pages&quot; branch of your project and let Github&#39;s post-commit =
+hooks do all the work.<br>
+
+<br>Here&#39;s an example if you&#39;re interested,<br><br>Github project: =
+<a href=3D"http://github.com/aboisvert/stopwatch" target=3D"_blank">http://=
+github.com/aboisvert/stopwatch</a> (master branch)<br>Documentation: <a hre=
+f=3D"http://aboisvert.github.com/stopwatch/" target=3D"_blank">http://abois=
+vert.github.com/stopwatch/</a>=A0 (generated from gh-pages branch)<br>
+
+<br>Slides source: <a href=3D"http://github.com/aboisvert/stopwatch/tree/gh=
+-pages/slides/" target=3D"_blank">http://github.com/aboisvert/stopwatch/tre=
+e/gh-pages/slides/</a><br>Viewable slides: <a href=3D"http://aboisvert.gith=
+ub.com/stopwatch/slides/stopwatch.html" target=3D"_blank">http://aboisvert.=
+github.com/stopwatch/slides/stopwatch.html</a><br>
+
+<br>cheers,<br>alex<br><br><br><div class=3D"gmail_quote"><div><div></div><=
+div class=3D"h5">On Tue, Mar 2, 2010 at 9:22 AM, Kevin Gisi <span dir=3D"lt=
+r">&lt;<a href=3D"mailto:kevin@kevingisi.com" target=3D"_blank">kevin@kevin=
+gisi.com</a>&gt;</span> wrote:<br>
+</div></div><blockquote class=3D"gmail_quote" style=3D"border-left:1px soli=
+d rgb(204, 204, 204);margin:0pt 0pt 0pt 0.8ex;padding-left:1ex"><div><div><=
+/div><div class=3D"h5">
+Hi all,<div><br></div><div>I just posted part one of a tutorial on setting =
+up a continuous build system for your slide decks. While the tutorial uses =
+S9, I&#39;m sure it could easily be adapted to work with most tools. The tu=
+torial demonstrates how you can use GitHub and Heroku to handle all of this=
+ at no cost (or bandwidth) to you.</div>
+
+
+<div><br></div><div>I&#39;m hoping to get the second half of the tutorial (=
+using Selenium, Firefox headless to generate PDFs) pushed out in the next f=
+ew weeks, so I&#39;d love to hear your thoughts and feedback:=A0<span style=
+=3D"font-family:&#39;Lucida Grande&#39;,sans-serif;font-size:14px;color:rgb=
+(51, 51, 51);line-height:16px"><a href=3D"http://bit.ly/ag9lq6" rel=3D"nofo=
+llow" style=3D"margin:0px;padding:0px;text-decoration:underline;color:rgb(0=
+, 132, 180)" target=3D"_blank">http://bit.ly/ag9lq6</a></span></div>
+
+
+<div><br></div><div>Thanks so much!</div><div><br clear=3D"all">-Kevin W. G=
+isi<br><a href=3D"mailto:kevin@kevingisi.com" target=3D"_blank">kevin@kevin=
+gisi.com</a> | (916) 538-4474<br><a href=3D"http://www.kevingisi.com" targe=
+t=3D"_blank">http://www.kevingisi.com</a><br>
+
+
+
+</div>
+
+<p></p></div></div>
+
+-- <br>
+You received this message because you are subscribed to the &quot;Free Web =
+Slide Show Alternatives - S5, S9 And Friends&quot; group.<br>
+To post to this group, send email to <a href=3D"mailto:webslideshow@googleg=
+roups.com" target=3D"_blank">webslideshow@googlegroups.com</a><br>
+To unsubscribe from this group, send email to<br>
+<a href=3D"mailto:webslideshow-unsubscribe@googlegroups.com" target=3D"_bla=
+nk">webslideshow-unsubscribe@googlegroups.com</a><br>
+For more options, visit this group at<br>
+<a href=3D"http://groups.google.com/group/webslideshow?hl=3Den" target=3D"_=
+blank">http://groups.google.com/group/webslideshow?hl=3Den</a></blockquote>=
+</div><br><font color=3D"#888888">
+
+<p></p>
+
+-- <br>
+You received this message because you are subscribed to the &quot;Free Web =
+Slide Show Alternatives - S5, S9 And Friends&quot; group.<br>
+To post to this group, send email to <a href=3D"mailto:webslideshow@googleg=
+roups.com" target=3D"_blank">webslideshow@googlegroups.com</a><br>
+To unsubscribe from this group, send email to<br>
+<a href=3D"mailto:webslideshow-unsubscribe@googlegroups.com" target=3D"_bla=
+nk">webslideshow-unsubscribe@googlegroups.com</a><br>
+For more options, visit this group at<br>
+<a href=3D"http://groups.google.com/group/webslideshow?hl=3Den" target=3D"_=
+blank">http://groups.google.com/group/webslideshow?hl=3Den</a></font></bloc=
+kquote></div><br></div></div>
+
+--001485f9a664d7216c04814dea58--
+

@@ -1,0 +1,83 @@
+From 121721847808@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 103662223360
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,dace1ed56b0a7281
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,UTF8
+Received: by 10.114.60.19 with SMTP id i19mr2224491waa.1.1220122345696;
+        Sat, 30 Aug 2008 11:52:25 -0700 (PDT)
+Return-Path: <sunaku@gmail.com>
+Received: from rv-out-0708.google.com (rv-out-0708.google.com [209.85.198.246])
+        by mx.google.com with ESMTP id k19si3062885waf.2.2008.08.30.11.52.24;
+        Sat, 30 Aug 2008 11:52:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sunaku@gmail.com designates 209.85.198.246 as permitted sender) client-ip=209.85.198.246;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of sunaku@gmail.com designates 209.85.198.246 as permitted sender) smtp.mail=sunaku@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by rv-out-0708.google.com with SMTP id f25so1888356rvb.18
+        for <webslideshow@googlegroups.com>; Sat, 30 Aug 2008 11:52:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from
+         :user-agent:mime-version:to:subject:references:in-reply-to
+         :content-type:content-transfer-encoding;
+        bh=xmU4Bb2zhVj191+JKBPjXd2nNcf8XXvU/3DJBs1Vm0M=;
+        b=Wr6PjpsBDXPXjHv8PsDZFAjmXbprpFpFZ44A5sUc57j0R+mUQ3TkiCGNR/df2hofOw
+         uuLCbz9X2la+zmeYxL9mx70MlEiu9XZ63tw2oOqH7m3uKlCeLJvcF9DP1on9LOrBZ1wk
+         Rv60Jxr7yJZQrilCiycmdOWam6pfUcqnPRjwY=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references
+         :in-reply-to:content-type:content-transfer-encoding;
+        b=hPhQRS/yTwJVSPMj6V/WmoNgljiTBUMkNFJwBSO/cjGSbNOfayfN78GRQhQn1gj4HG
+         FIjeJvGClTQdxtAgY8dMRaiUufa9k3BRr6trjOa1PZ/i0RYV0r9OxAnyIS5aqEOWe/cL
+         TFgc7S+jGFiFOZdVO9Fgh1cpqF7d8s/monrdk=
+Received: by 10.115.76.5 with SMTP id d5mr3849026wal.191.1220122343539;
+        Sat, 30 Aug 2008 11:52:23 -0700 (PDT)
+Return-Path: <sunaku@gmail.com>
+Received: from ?10.0.0.101? ( [76.202.78.109])
+        by mx.google.com with ESMTPS id m27sm8578060pof.6.2008.08.30.11.52.22
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Sat, 30 Aug 2008 11:52:23 -0700 (PDT)
+Message-ID: <48B9967D.3060207@gmail.com>
+Date: Sat, 30 Aug 2008 11:50:37 -0700
+From: "Suraj N. Kurapati" <sunaku@gmail.com>
+User-Agent: Thunderbird 2.0.0.16 (X11/20080724)
+MIME-Version: 1.0
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow] Re: PATCH for gradient keywords bug
+References: <b521af78-25b2-449d-adf8-d32aebe3ae35@v39g2000pro.googlegroups.com>  <e936ac58-89e7-4965-ae95-93cc51559306@p10g2000prf.googlegroups.com>  <558343f5-a8d2-4976-8003-f76a507c9eb0@p10g2000prf.googlegroups.com> <e97d8aa4-10cb-4ab0-8170-a0c55ab3ca75@r15g2000prh.googlegroups.com>
+In-Reply-To: <e97d8aa4-10cb-4ab0-8170-a0c55ab3ca75@r15g2000prh.googlegroups.com>
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Gerald Bauer wrote:
+> I will include your code later today (I'm on Pacific Time) and
+> upload a new gem (e.g 6.0.1) to get the gradient bug fixed.
+
+I've done some more clean up and re-uploaded here (the previous
+patch broke the "- footer not found -" and other messages that would
+normally appear):
+
+http://snk.rubyforge.org/tmp/slideshow.rb
+http://snk.rubyforge.org/tmp/slideshow-0.6.diff
+
+Please review & include this new patch instead.
+
+> PS: Note, that I have used
+> 
+> @hash[ key ].nil? ? @hash[ key ]: default_value  (or better? 
+> @hash.fetch( key, default_value )
+> 
+> on purpose. If you change it to the popular Ruby-esque idiom
+> 
+> @hash[ key ] ||= default_value
+> 
+> you will break the code because false which is a valid value will
+> get overwritten by the default_value (e.g. if you set lets say 
+> code_line_numbers to false it will get overwritten with the
+> default value true). Otherwise, thanks for cleaning up the code
+> using more Ruby idioms.
+
+Understood.  I agree that @hash.fetch() is a better option.
+
+Thanks.
+

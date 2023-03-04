@@ -1,0 +1,103 @@
+From 6836621177365987328@xxx Wed Jun 10 07:41:50 +0000 2020
+X-GM-THRID: 6832099918990016512
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 2002:a2e:a0ca:: with SMTP id f10mr1108605ljm.96.1591774909576;
+        Wed, 10 Jun 2020 00:41:49 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a2e:998a:: with SMTP id w10ls2857024lji.0.gmail; Wed, 10 Jun
+ 2020 00:41:47 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzQ1J8osBQsbaxxSVsIwAS7rJGVW2xi1ht62fTDkxboijTRXg/YGgRI6OToDizgZ5nttett
+X-Received: by 2002:a2e:9105:: with SMTP id m5mr1139303ljg.408.1591774907787;
+        Wed, 10 Jun 2020 00:41:47 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1591774907; cv=none;
+        d=google.com; s=arc-20160816;
+        b=vKEdSbgMYsU3cRDlOuK+3UxnCtxxr+rkNmOdzhTwTcAdcsQ5evrUvQaxMZfm1lZqfj
+         54VuNFBvDCIJoq6hV64/1jbSC+rw4lQJ4/L16taf+NATaTxC2tdaQvJ6B5MJToEfJCMF
+         EnXPwiBMX1FiQ53hG0JSJ6UXKy1fZuNgZbjxZaOuP+OBcGZ+18VgIQf+wLc/pVW03kjH
+         QlC+uNOs+8EVKWqYTN9H2AIdc7bVlpSa34frpVOVV0hb2kv7Wxnz/4XsWZb76Id9UrgI
+         zmwwxC3U69N3OHEFsq2P7zp6JEGV1Q4d7U8X1W3VOaBjLvOJWgtKuto1Z6Xcl7iRmqoL
+         1WVg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=ufKPBEjhznfZxrFmcQy+GXpq/P4ClU61awFUYCX050I=;
+        b=BZxMo7x5VIzxSK8L4DtqeruRUIuD0m69QoaUrH88Kl6Yuj10CMDridotP6RrrcCsjn
+         LmkuOlUExazqoNLIwkJpIhy6iuqnG6K3TT8/aLKW6LDTytGzsSa6sfgO9H/U1c6eT/N6
+         927bsGXGGouC+qvqe+bm/LRH7ppaaiQK3vOnHqEJDw6Wd091ZFQDXQn8YFZBylIR1Lbs
+         TwPqh5Oto0RmBDonOEON7iRzltSKV8ZcfBMmvoyn0TJLzTpAhHgDKNOdZWJnSiqb6XKA
+         hB4v5eCwImsVWiJw+tNI48yOAklajOrJQRSXjT8GDhoh8IfssUCAeSubSgme3ISuoqLR
+         fJGw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=sC6c6plZ;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22e.google.com (mail-lj1-x22e.google.com. [2a00:1450:4864:20::22e])
+        by gmr-mx.google.com with ESMTPS id w6si1013916lji.2.2020.06.10.00.41.47
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 10 Jun 2020 00:41:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) client-ip=2a00:1450:4864:20::22e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=sC6c6plZ;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22e.google.com with SMTP id 9so1239113ljv.5
+        for <wwwmake@googlegroups.com>; Wed, 10 Jun 2020 00:41:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=ufKPBEjhznfZxrFmcQy+GXpq/P4ClU61awFUYCX050I=;
+        b=sC6c6plZbmvG+Fu/yGtWGpWHm8l1uhcZVqgF0ydVBmEKqQK0+FZzDTlhSOX1OaAePz
+         JVT7Z13hFlpgGV2a1ubRAcJ88+na6/ZKNDW5ZSYzuGjQ3YcK3m7ZpNdwk2Bg0rWrPBQD
+         zFU71K3dn1ZxAGYN+QEte2UdJ0A8R6YnRg+m8N8ZaJkyh0PZnfltekwyV+DIK/kow6yw
+         Xv9kn1prfNVyXfnRq0VrsluX/m9eHH5Ue3DinPZeXZpU9wjVuGWF9gklwVf9FjZHbldn
+         NL5J62XERdop5PGR7YaRoiHEdNzSUf+3j5sKHfScEZbBjEAEDOpEnQSkFpTYcs0mhwUJ
+         SeWQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=ufKPBEjhznfZxrFmcQy+GXpq/P4ClU61awFUYCX050I=;
+        b=ixhzDHz9B5+iRmITmN7Yf75snR860IMjdjrgAY3I3tF3KmQ9h8vKDaZK7UvLDIagmX
+         ImVdZePQ4xe318BPP9g6CLYrp5pRJnKkfsAQGmiQge3zWnYAo4MI0R1Zf10pXh0SkqxV
+         TOdWOLlwLXS/sYNBjIAUSSitGMoWOhHcvadgt4Huq/6Eo28yzcorFuD65QhFdIKCbxPE
+         2xNH3hudI4a06DqMy3fEpeqZ+Sr+Bfv4bOneRdD9OuifgXohzwFw3O0zLrNkLnafZslM
+         3R8NQR5/PY9kC2WtKVa7G3EvB3VB5JlRTMlCjBDcr/koraPuTMz5L9a7uh8mgr6jJlOS
+         5UsA==
+X-Gm-Message-State: AOAM533Rh76WAfYqzhCy0QZ7sn95PMHj/bS0eCiIi8CZwhi/ferKrr6s
+	5nLWfos+Msy81guQheNIrdaJlcw0cxRWjSYSYb2pNjHs
+X-Received: by 2002:a2e:85d8:: with SMTP id h24mr1020060ljj.274.1591774907276;
+ Wed, 10 Jun 2020 00:41:47 -0700 (PDT)
+MIME-Version: 1.0
+References: <f0632548-bec5-45e9-bc99-5195ea0bcfe4@googlegroups.com> <3a11234f-dbc3-4dc3-aa5c-7302852f1af3o@googlegroups.com>
+In-Reply-To: <3a11234f-dbc3-4dc3-aa5c-7302852f1af3o@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 10 Jun 2020 09:41:35 +0200
+Message-ID: <CAAxEZd9Hi6V4Ksy18CKiBSyJTPkLmOeVkQgOp207OpHN7=pYiA@mail.gmail.com>
+Subject: Re: [wwwmake:512] Re: identosphere.net v 1.0 [pluto feedreader]
+To: wwwmake@googlegroups.com
+Content-Type: multipart/alternative; boundary="000000000000e9222b05a7b5f979"
+
+--000000000000e9222b05a7b5f979
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Fantastic. Thanks for sharing your tips and code on how to better
+display the article (html) source.  Yeah, the current sanitize helper is
+way too simple (it strips out all images).
+
+  Great to see better alternatives. Keep it up. Cheers. Prost.
+
+--000000000000e9222b05a7b5f979
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr">Hello,<div>=C2=A0 =C2=A0Fantastic. Thanks=
+ for sharing your tips and code on how to better display the article (html)=
+ source.=C2=A0 Yeah, the current sanitize helper is way too simple (it stri=
+ps out all images).</div><div><br></div><div>=C2=A0 Great to see better alt=
+ernatives. Keep it up. Cheers. Prost.=C2=A0=C2=A0</div></div></div>
+
+--000000000000e9222b05a7b5f979--
+

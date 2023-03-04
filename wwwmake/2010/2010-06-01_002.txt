@@ -1,0 +1,143 @@
+From 652984975360@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 650817568768
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,74476603403a65b5
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.151.18.5 with SMTP id v5mr2371061ybi.4.1275432504403;
+        Tue, 01 Jun 2010 15:48:24 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.150.248.9 with SMTP id v9ls1975764ybh.5.p; Tue, 01 Jun 2010 
+	15:48:24 -0700 (PDT)
+Received: by 10.150.252.14 with SMTP id z14mr2382503ybh.1.1275432500519;
+        Tue, 01 Jun 2010 15:48:20 -0700 (PDT)
+Received: by 10.150.252.14 with SMTP id z14mr2382494ybh.1.1275432499636;
+        Tue, 01 Jun 2010 15:48:19 -0700 (PDT)
+Return-Path: <kevin.gisi@gmail.com>
+Received: from mail-gy0-f179.google.com (mail-gy0-f179.google.com [209.85.160.179])
+        by gmr-mx.google.com with ESMTP id k2si8872068ybe.7.2010.06.01.15.48.18;
+        Tue, 01 Jun 2010 15:48:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kevin.gisi@gmail.com designates 209.85.160.179 as permitted sender) client-ip=209.85.160.179;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of kevin.gisi@gmail.com designates 209.85.160.179 as permitted sender) smtp.mail=kevin.gisi@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by gyd10 with SMTP id 10so4037086gyd.38
+        for <webslideshow@googlegroups.com>; Tue, 01 Jun 2010 15:48:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:sender:received
+         :in-reply-to:references:date:x-google-sender-auth:message-id:subject
+         :from:to:content-type;
+        bh=I9zyoD7s8MAcKS0m6TBbozApP/YTiEM+245gkRgjgTE=;
+        b=XUEWGYZagEP2gu3E/0AoeAp2gRdBp43SlZ4DnDNQxMfYVTkzLR20DKVdWofQU5kGcU
+         O0ZfX0gm49divn4aiSkLY0p+2K4NTVX7dC5VmJpWQOk6w+rmQvbyvosfc1GB7JXAB7fd
+         55Kd6btKYN6D5j9zMA8qSUd/LLW6+ciYbv/io=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:sender:in-reply-to:references:date
+         :x-google-sender-auth:message-id:subject:from:to:content-type;
+        b=M/4TJR6XTelAl/XoO59oRbCmjoo0PPUNTtcieWr+ehT2hB3SyEJUlZpw2DrmyHg0x7
+         hWq1we1sAo+ckQM9eyjPju+aNGASDWBN+3quI/KC4OtgQZo4757XxSROduRNzUP5prqs
+         S52xIarA90heLcfdVgT4Dly1o5hzeFuHlFIk8=
+MIME-Version: 1.0
+Received: by 10.91.173.6 with SMTP id a6mr3164424agp.110.1275432498255; Tue, 
+	01 Jun 2010 15:48:18 -0700 (PDT)
+Sender: kevin.gisi@gmail.com
+Received: by 10.90.101.8 with HTTP; Tue, 1 Jun 2010 15:48:18 -0700 (PDT)
+In-Reply-To: <d74d7889-258b-49d0-8334-02032087ec62@m21g2000vbr.googlegroups.com>
+References: <d74d7889-258b-49d0-8334-02032087ec62@m21g2000vbr.googlegroups.com>
+Date: Tue, 1 Jun 2010 17:48:18 -0500
+X-Google-Sender-Auth: 2ez2k_oGTMiMQ89HJI4quX_Io-Q
+Message-ID: <AANLkTim9m3ql9MqkqZyMpt4xNPYFQmJ8bhpBUV_REU-1@mail.gmail.com>
+Subject: Re: [slideshow] S6 Tip: Creating a PDF Using Free Qt/WebKit Tool
+From: Kevin Gisi <kevin@kevingisi.com>
+To: webslideshow@googlegroups.com
+Content-Type: multipart/alternative; boundary=001485f85cf2fe59540487ffc49a
+
+--001485f85cf2fe59540487ffc49a
+Content-Type: text/plain; charset=ISO-8859-1
+
+Awesome, is this like an open-source Prince? Could you apply print
+stylesheets in order to style the PDF further?
+
+-Kevin W. Gisi
+kevin@kevingisi.com | (916) 538-4474
+http://www.kevingisi.com
+
+
+On Tue, Jun 1, 2010 at 5:46 PM, Gerald <gerald@vanbeta.com> wrote:
+
+> Hello,
+>
+>   Just to let you know that using the free, open source wkhtmltopdf
+> tool [1] (available for Windows, Linux, Apple OS X) lets you create a
+> PDF from your slides with a single command line call e.g.
+>
+>   $ wkhtmltopdf --print-media-type
+> http://slideshow.rubyforge.org/tutorial.html
+> tutorial.pdf
+>
+>   Note, however, that it only works for your print/outline view (and
+> not for the presenation mode that includes your gradient background of
+> choice. Sorry.)
+>
+>   Cheers. Gerald
+>
+> [1] http://code.google.com/p/wkhtmltopdf
+>
+> --
+> You received this message because you are subscribed to the "Free Web Slide
+> Show Alternatives - S5, S9 And Friends" group.
+> To post to this group, send email to webslideshow@googlegroups.com
+> To unsubscribe from this group, send email to
+> webslideshow-unsubscribe@googlegroups.com
+> For more options, visit this group at
+> http://groups.google.com/group/webslideshow?hl=en
+>
+
+--001485f85cf2fe59540487ffc49a
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Awesome, is this like an open-source Prince? Could you apply print styleshe=
+ets in order to style the PDF further?<div><br clear=3D"all">-Kevin W. Gisi=
+<br><a href=3D"mailto:kevin@kevingisi.com">kevin@kevingisi.com</a> | (916) =
+538-4474<br>
+<a href=3D"http://www.kevingisi.com">http://www.kevingisi.com</a><br>
+<br><br><div class=3D"gmail_quote">On Tue, Jun 1, 2010 at 5:46 PM, Gerald <=
+span dir=3D"ltr">&lt;<a href=3D"mailto:gerald@vanbeta.com">gerald@vanbeta.c=
+om</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_quote" style=3D"marg=
+in:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex;">
+Hello,<br>
+<br>
+ =A0 Just to let you know that using the free, open source wkhtmltopdf<br>
+tool [1] (available for Windows, Linux, Apple OS X) lets you create a<br>
+PDF from your slides with a single command line call e.g.<br>
+<br>
+ =A0 $ wkhtmltopdf --print-media-type <a href=3D"http://slideshow.rubyforge=
+.org/tutorial.html" target=3D"_blank">http://slideshow.rubyforge.org/tutori=
+al.html</a><br>
+tutorial.pdf<br>
+<br>
+ =A0 Note, however, that it only works for your print/outline view (and<br>
+not for the presenation mode that includes your gradient background of<br>
+choice. Sorry.)<br>
+<br>
+ =A0 Cheers. Gerald<br>
+<br>
+[1] <a href=3D"http://code.google.com/p/wkhtmltopdf" target=3D"_blank">http=
+://code.google.com/p/wkhtmltopdf</a><br>
+<font color=3D"#888888"><br>
+--<br>
+You received this message because you are subscribed to the &quot;Free Web =
+Slide Show Alternatives - S5, S9 And Friends&quot; group.<br>
+To post to this group, send email to <a href=3D"mailto:webslideshow@googleg=
+roups.com">webslideshow@googlegroups.com</a><br>
+To unsubscribe from this group, send email to<br>
+<a href=3D"mailto:webslideshow-unsubscribe@googlegroups.com">webslideshow-u=
+nsubscribe@googlegroups.com</a><br>
+For more options, visit this group at<br>
+<a href=3D"http://groups.google.com/group/webslideshow?hl=3Den" target=3D"_=
+blank">http://groups.google.com/group/webslideshow?hl=3Den</a><br>
+</font></blockquote></div><br></div>
+
+--001485f85cf2fe59540487ffc49a--
+

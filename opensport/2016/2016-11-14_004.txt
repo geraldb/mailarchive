@@ -1,0 +1,70 @@
+From 6352875034169573376@xxx Mon Nov 14 17:19:43 +0000 2016
+X-GM-THRID: 6212542687340396544
+X-Received: by 10.36.54.83 with SMTP id l80mr1500763itl.30.1479143983450;
+        Mon, 14 Nov 2016 09:19:43 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.4.76 with SMTP id 70ls1598088otc.32.gmail; Mon, 14 Nov
+ 2016 09:19:43 -0800 (PST)
+X-Received: by 10.13.198.69 with SMTP id i66mr7228861ywd.30.1479143983023;
+        Mon, 14 Nov 2016 09:19:43 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22a.google.com (mail-it0-x22a.google.com. [2607:f8b0:4001:c0b::22a])
+        by gmr-mx.google.com with ESMTPS id b21si2787571itc.0.2016.11.14.09.19.42
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 14 Nov 2016 09:19:42 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) client-ip=2607:f8b0:4001:c0b::22a;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22a.google.com with SMTP id b123so40571749itb.0
+        for <opensport@googlegroups.com>; Mon, 14 Nov 2016 09:19:42 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=eLq8mwSimQqP1Oki81MJE9i7EGYjFVHNQgYz25rk/mo=;
+        b=k2gQekhMWQFmEWbBH4DKqW96LHG13lSe2G2kixOBL3XM6Ewym0Hju8tN1K7oXx0cYC
+         pzl3kMSGuSX3/fqP+5vlQsk6mWI1c4zQk78ULtqfKUio9qAwG77B9hogdv/RTW3vvNTy
+         g+PhV7M+HI57yNf5K33/hlX2bZJQoaq+2ZniycxTL7rbiWB8xpG7GGAqUIA8F6lHYLgJ
+         Nnr7xHhB16hwg7bIL2cW2Q41Fp+2+X/E7+hKCdKpK4zUqk8FTmTAEPqMDFJ1VT4e49QM
+         f+Zli6rC/YIO47ZUFV8hk+LeNoj66esML7zngpzytc1Fm+i/6ANWF2TzgH0tlvKw7M5O
+         vH1Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=eLq8mwSimQqP1Oki81MJE9i7EGYjFVHNQgYz25rk/mo=;
+        b=KKQy79C5g3xtTZfTPUCbaauXFR+7AJAXdWNO5PZXsllOTx2wtdDKQsXdyN/pWB6qry
+         teLOyg03XVO5JT3fMg0/M+EPJjlKzGgYKBr5B7q6OKY0Or+R0uOuWVOUYS9ATO0/giCG
+         h3a+iTyIDiwUldPxRM0Q//sn4JI1wwPae/dhMTF3XHVPZ7yd33Xx2ID2zCd5hRkjGKR3
+         iHHVoBkLxPStFvEYby3IbWFgjmWQPErc9Rt4RjPu/Jr47LDso4HBQybiW5GFUibdwexe
+         h+/XXli/VJ0OgjNDU3N4ctJm0hw31H7m5iVCIkdToO52afZGEnLzLrnH08nRLWzpD/b7
+         KJ5g==
+X-Gm-Message-State: ABUngvfQiZhnKsTOaR9RsNA1kCh8tP6isCi3yjs4xQwIMwOaHF2/IOEUmVGdDOObEb8BquujOcfoHKQnrpmeKg==
+X-Received: by 10.36.225.75 with SMTP id n72mr7507406ith.13.1479143978025;
+ Mon, 14 Nov 2016 09:19:38 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.131.210 with HTTP; Mon, 14 Nov 2016 09:19:37 -0800 (PST)
+In-Reply-To: <ae9b9044-15b2-4f03-997a-dcfea03d246a@googlegroups.com>
+References: <49ae2d67-5c87-4a42-9e32-ffd0f5800590@googlegroups.com>
+ <CAAxEZd-Qg2p_cWHN4Q_xJkGTCTLOCkuCMkm1-gBW8wDLoSDorQ@mail.gmail.com>
+ <c11b85b4-ff7d-4d30-89f2-7a6b2f47f8b1@googlegroups.com> <ae9b9044-15b2-4f03-997a-dcfea03d246a@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 14 Nov 2016 18:19:37 +0100
+Message-ID: <CAAxEZd_1cM3hiSHtVaYW0m7L=JM17wQTH5N0yONdkkmo5hUk5g@mail.gmail.com>
+Subject: Re: [opensport] NameError: uninitialized constant WorldDb::ReaderBase
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   The sportbook app hasn't been updated for some time. Sorry. The
+sportbook does NOT work with the latest version of the world.db gem.
+Make sure you use the included Gemfile.lock [1] or use the worlddb gem
+version 2.0.4.
+
+   Good luck. Cheers.
+
+[1] https://github.com/openbookie/sportbook/blob/master/Gemfile.lock
+

@@ -1,0 +1,77 @@
+From 1935456337920@xxx Tue Jun 16 00:16:54 +0000 2015
+X-GM-THRID: 1912480989184
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,bc854168932351a9
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.241.130 with SMTP id wi2mr150480wjc.0.1407508936143;
+        Fri, 08 Aug 2014 07:42:16 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.21.144 with SMTP id v16ls159970wie.35.gmail; Fri, 08 Aug
+ 2014 07:42:15 -0700 (PDT)
+X-Received: by 10.194.57.237 with SMTP id l13mr5669wjq.7.1407508935731;
+        Fri, 08 Aug 2014 07:42:15 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x236.google.com (mail-we0-x236.google.com [2a00:1450:400c:c03::236])
+        by gmr-mx.google.com with ESMTPS id e20si245135wiw.0.2014.08.08.07.42.15
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 08 Aug 2014 07:42:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) client-ip=2a00:1450:400c:c03::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::236 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f182.google.com with SMTP id k48so5739312wev.41
+        for <opensport@googlegroups.com>; Fri, 08 Aug 2014 07:42:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=etE8euB1infnxNW30uQ3k8l+74v99A9AnDCUegEtrSI=;
+        b=GnyWkIgjMXbM63hQqSGWbPdCixDYq/STI/45giQuhoHqWxpvJqutLsbMy98EUOBxSI
+         lxqD1VbjJKJENCo+bEzDv87zNXMqYYJwunhtOwwpQUJ45K/FHwlECvGX8Swi2WNej/sC
+         Imk8jiKsjV9H8X4mbc8fxYJ/CRQhUzut7295UNnv1kCLq98+/wv+5dY4hBnmTPCH3drP
+         /egzdJVA16xJRaAMulf7TXlLbBIoMYjomdYDGm1bQ5d9hlwAts4xqBzT3X/MKt/kWo85
+         rLN+baNSy5tVIm6pWsWY4UrjInAsq7rncfZVuaDjmgvRFz6HfBpmpb3+Gv0dfjx674Yz
+         bndg==
+MIME-Version: 1.0
+X-Received: by 10.194.20.230 with SMTP id q6mr33223917wje.43.1407508935640;
+ Fri, 08 Aug 2014 07:42:15 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Fri, 8 Aug 2014 07:42:15 -0700 (PDT)
+In-Reply-To: <b3f0bd6c-13c0-42e1-8a8a-f9d8e12907f4@googlegroups.com>
+References: <b3f0bd6c-13c0-42e1-8a8a-f9d8e12907f4@googlegroups.com>
+Date: Fri, 8 Aug 2014 16:42:15 +0200
+Message-ID: <CAAxEZd9WUvVhsv6aXCN_h-iyciAMJbWBFZkx9MyZQra=SNxdhg@mail.gmail.com>
+Subject: Re: [opensport] Is there any schema/structure explanation?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  Welcome. Thanks for your interest in football.db   You can get the
+schema in SQL using the sqlite shell. Example:
+
+  $ sqlite3 football.db
+
+SQLite version 3.7.3
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite> .schema
+
+CREATE TABLE "alltime_standing_entries" ("id" INTEGER PRIMARY KEY
+AUTOINCREMENT NOT NULL, "alltime_standing_id" integer NOT NULL,
+"team_id" integer NO
+T NULL, "pos" integer, "played" integer, "won" integer, "lost"
+integer, "drawn" integer, "goals_for" integer, "goals_against"
+integer, "pts" integer,
+"recs" integer, "comments" varchar(255), "created_at" datetime NOT
+NULL, "updated_at" datetime NOT NULL);
+...
+
+  and so on.
+
+  The schema documention is a little light for now. Sorry.  I will try
+to get a new schema repo started later today - check back on the
+mailing list if interested for the posting / announcement. Cheers.
+

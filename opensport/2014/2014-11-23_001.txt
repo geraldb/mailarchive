@@ -1,0 +1,70 @@
+From 2285673381888@xxx Tue Jun 16 00:16:45 +0000 2015
+X-GM-THRID: 2254972125184
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fdd82ec609b6c4e4
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.26.72 with SMTP id j8mr4603549lag.3.1416736639586;
+        Sun, 23 Nov 2014 01:57:19 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.5.39 with SMTP id p7ls355724lap.5.gmail; Sun, 23 Nov 2014
+ 01:57:18 -0800 (PST)
+X-Received: by 10.112.48.6 with SMTP id h6mr19719lbn.19.1416736638717;
+        Sun, 23 Nov 2014 01:57:18 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x233.google.com (mail-wi0-x233.google.com. [2a00:1450:400c:c05::233])
+        by gmr-mx.google.com with ESMTPS id j6si11024wix.1.2014.11.23.01.57.18
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 23 Nov 2014 01:57:18 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::233 as permitted sender) client-ip=2a00:1450:400c:c05::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f179.google.com with SMTP id ex7so3118635wid.0
+        for <opensport@googlegroups.com>; Sun, 23 Nov 2014 01:57:18 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=cc1DGmQfSWLaHuULN8GfUrLgluzEpKAquJ+SosKlbzc=;
+        b=BhrqSUkRW68XOIgvBVqY5c2XYC6v/hBft0EkOWSNX+w/e3IhQhakCN0BiEh40A2LQo
+         2qWz7fH0ZXuZkg9LexEfsG6Es9wKaR9wxeNH/kG3JSg6qd70w43gd1sH9vDeQxPSR/j7
+         oewO/XzNWxorgM/QZGuhJ4rbxNH7gshWh1844fQMlwRsH81FAumNLQhyv8E0PtNSf6En
+         +3kogXHQhNW5ZmZgmL7wGFCblWVaqT6uUk+vjInHka8UVRuhCilOXYolzG7h7sbhxVbR
+         CJ2jZ43mkuexwV6bbPTc2ztavMuArR36iamHpFRD+P99LH5uVqYJk2XyXaC5r5aO6xGi
+         h2kg==
+MIME-Version: 1.0
+X-Received: by 10.180.208.69 with SMTP id mc5mr12291919wic.25.1416736638626;
+ Sun, 23 Nov 2014 01:57:18 -0800 (PST)
+Received: by 10.216.205.135 with HTTP; Sun, 23 Nov 2014 01:57:18 -0800 (PST)
+In-Reply-To: <3fa255f0-d6d2-4265-a6a3-01f920a0b8a0@googlegroups.com>
+References: <923ec44d-6a0f-4f21-903a-0835e94f1b4c@googlegroups.com>
+	<bee9b9b6-ca46-4101-9b8e-44332ac9e364@googlegroups.com>
+	<05ebac69-a367-49a7-ae47-91f4fbaac2dd@googlegroups.com>
+	<CAAxEZd8BYxG4v-LZD_7nxVfB=t31w9jt7F0zrKYZ9gpmLWjv9Q@mail.gmail.com>
+	<3fa255f0-d6d2-4265-a6a3-01f920a0b8a0@googlegroups.com>
+Date: Sun, 23 Nov 2014 10:57:18 +0100
+Message-ID: <CAAxEZd_ZkKTAtN0sW+V54SsNp3CHBJR8h8CfK_NtqO77bB=+3g@mail.gmail.com>
+Subject: Re: [opensport] Re: Cannot build football.db with world cup data
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Good news. Thanks for retrying and not giving up.
+
+> I'm using the starter kit (tried with both the Go and Node versions)
+> and cannot get `/rounds` or `/games` to work.
+
+   Sorry to disappoint you but only the starter kit Ruby edition
+includes all (advertised) services (endpoints).
+
+    For the Go and Node version you will have to add the missing
+services e.g /rounds or /games. The idea is that anyone interested
+might add the missing services (endpoints).
+
+   Cheers.
+

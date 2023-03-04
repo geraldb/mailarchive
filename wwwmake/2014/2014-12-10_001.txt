@@ -1,0 +1,72 @@
+From 1551162671104@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1552583491584
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,85d4a5e4bb5231ba,start
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.105.97 with SMTP id gl1mr5869222wib.7.1418255035617;
+        Wed, 10 Dec 2014 15:43:55 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.180.12.146 with SMTP id y18ls458275wib.4.gmail; Wed, 10 Dec
+ 2014 15:43:54 -0800 (PST)
+X-Received: by 10.180.82.34 with SMTP id f2mr1965155wiy.1.1418255034983;
+        Wed, 10 Dec 2014 15:43:54 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x231.google.com (mail-wi0-x231.google.com. [2a00:1450:400c:c05::231])
+        by gmr-mx.google.com with ESMTPS id d18si34353wiv.0.2014.12.10.15.43.54
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 10 Dec 2014 15:43:54 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) client-ip=2a00:1450:400c:c05::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f177.google.com with SMTP id l15so6902507wiw.10
+        for <webslideshow@googlegroups.com>; Wed, 10 Dec 2014 15:43:54 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=KSAHVaUz0knJgNE7f35wHhwMHCkaW12Tu1fkiIFYUe0=;
+        b=FNtu5cABwSwDzO3CT9uX6zEcscnXbnXnfeREpZ5XTISpQL8eEcNEMrz9ksspMn8TSO
+         gdMsaQRZn0FhXep+MsboMByJncYQHjPU7OEMs9c7Yqn2jruB1G+ZdckwmnSQu1N2Isa3
+         pFo8k/Tu2tuYfSxWqZjuEqodwPoq8ttuTkwzn4uJ6aqtYiJ8Lmn/a5Ds8/HvDf5Qris+
+         dIQI1uhnDCaiqkju9sic93EBnZcJ/rw0BwFCcMjkEwKTrSqVUn3VSLoGNrxkPuZim59i
+         NCFQTocsCuY4BVSrTqKPX1S9wjb9jlCc6AbAzJVjFChcoXP2FmUiJIWcU2J/vbcN28le
+         8fsQ==
+MIME-Version: 1.0
+X-Received: by 10.180.99.1 with SMTP id em1mr17491210wib.29.1418255034899;
+ Wed, 10 Dec 2014 15:43:54 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Wed, 10 Dec 2014 15:43:54 -0800 (PST)
+Date: Thu, 11 Dec 2014 00:43:54 +0100
+Message-ID: <CAAxEZd-Ft5PmkM=YrhrdKbt9bkUAVBbV_qOZcWGYL2uz=KT+Lg@mail.gmail.com>
+Subject: [ANN] Slide Show (S9) Update v2.4.1 - Modul-mania (slideshow,
+ slideshow-models, slideshow-plugins, etc.)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've uploaded a new slideshow gem, that is, v2.4.1. What's new?
+
+  The "old" slideshow gem is now split into a couple of gems
+(modules). The new lineup includes:
+
+   - slideshow gem [1]           (former all-in-one gem; now includes
+only the command line tools)
+   - slideshow-models gem [2]    (includes models n build machinery -
+kind of the "new" core gem)
+   - slideshow-templates gem [3] (builtin s6 slideshow templates)
+
+   Plus a new slideshow-plugins repo [4] that includes plugins for
+analytics, tables, snippets and more.
+
+   I've updated all template pack links. Now all should work again as
+advertised. If anything breaks please let us know. Cheers.
+
+[1] github.com/slideshow-s9/slideshow
+[2] github.com/slideshow-s9/slideshow-models
+[3] github.com/slideshow-s9/slideshow-templates
+[4] github.com/slideshow-s9/slideshow-plugins
+

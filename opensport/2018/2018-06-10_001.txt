@@ -1,0 +1,130 @@
+From 6565394105561513984@xxx Sun Jun 10 10:02:15 +0000 2018
+X-GM-THRID: 6565394104112381952
+X-Received: by 2002:a81:a5d2:: with SMTP id c201-v6mr4213636ywh.29.1528624935222;
+        Sun, 10 Jun 2018 03:02:15 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a81:9a02:: with SMTP id r2-v6ls1296100ywg.21.gmail; Sun, 10
+ Jun 2018 03:02:14 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKIfEEc9LdjMlF44Yrkl/nHttFdSiz4u13wwTQfZsPcmGVtIq5tCOlSGklHL+zAODabT7HXe
+X-Received: by 2002:a81:a415:: with SMTP id b21-v6mr3863970ywh.218.1528624934627;
+        Sun, 10 Jun 2018 03:02:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1528624934; cv=none;
+        d=google.com; s=arc-20160816;
+        b=LrJRBF+zS4a/4TTUk2WdGlaYsNm7e+OtwhxwBAh7mALVV+s94Qst5Vta3uBR7sRnUm
+         NqL4R65IuYP6aQ1Dt+8aBs8M8S/yOlEh9TOzT+shEaMfhVfX/K/g8WWYV3GXLlhen4bq
+         F4DRrgqx61EJsylS7wTztAfYSbuZ6jiUcVUosjibTkxxv+EmgV9a3KGqHO3IbMpq679F
+         lvdc7juDIeVCaqUoXRv38My40TZqTBIe6WXDfrJKwHw+OlgltrvirO9KWZVwE7eahVtf
+         3o8/bRMGXihmnMDoaCWcLGdGhylNzCd0jFM10QOvkF+N5IuDyVJTWjFGYHgnNPnrMPv/
+         gELA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :mime-version:dkim-signature:arc-authentication-results;
+        bh=LJ8Gz4mYX/AdmgT4IVqeC9M0c6i2KQSqGk9W/sNmqf0=;
+        b=bscrdXOFWMJfglnVWtucdurJ7EQjGXmGQ3Q9wm7rNAHjSSxfgIkNO7dgGZ8O9889EX
+         UeXu1cFMruJ6mkI/KK3j9h9RzMdsR/MnU8/FEj7wNstLgUIHCt2q/EYgS4tafA2bTt61
+         2iPhtQwNH1etTy14+kbUI7KOgJIaqjJNc9a86R8gUYC2NOUhoJ6Q6VwzEcTb51I8SdR4
+         2X6IwTcV3tCFJr0vFaO6m7J+b04hdRAVYCr51GJGCgwFzAPch7qZpl9ONYQ7IMcncXnO
+         JAeOGk0HIjATF5mMDaQ6yIZp5bmvKsu3JLr6cH9i9ekE6CYlrwLwj80hg7NlqM26C5DH
+         AF/A==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Z4nfoMx6;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x230.google.com (mail-io0-x230.google.com. [2607:f8b0:4001:c06::230])
+        by gmr-mx.google.com with ESMTPS id m4-v6si356014ybo.3.2018.06.10.03.02.14
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 10 Jun 2018 03:02:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) client-ip=2607:f8b0:4001:c06::230;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Z4nfoMx6;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x230.google.com with SMTP id l25-v6so20614558ioh.12
+        for <opensport@googlegroups.com>; Sun, 10 Jun 2018 03:02:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=LJ8Gz4mYX/AdmgT4IVqeC9M0c6i2KQSqGk9W/sNmqf0=;
+        b=Z4nfoMx6Jaalyb8FDfAkpR0Q2dBa99nfUTfrj4DAGRlrKdATUJyLeqZbsS+G6zin/W
+         ZGYj5xZoiFoH4rpVSli3bJiCpnZ2GigU9jPAtjwYA/z9xwLr3Cq9GB8gHRR5zSLpmbsJ
+         yyiTTUA4CTVo7fw/c1i1uqWxR942baentJNckhLT+C2cB95TNezGGfKVMLG2P3CQk/dl
+         mxPTswse9l7CuN1H9deNj8i/ZdnEHRRLEFQJPgILizNnmdwW6BEBZL2i2KOyIHtZXjBI
+         7bEGvaPANwYVC5fb7fCO3HE4AvyEQI1jl+oISvKeOPK+aNFB4oBYJGmgA3imLwLzWrcv
+         l5Dw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=LJ8Gz4mYX/AdmgT4IVqeC9M0c6i2KQSqGk9W/sNmqf0=;
+        b=n/kr9Q2For6Fiq6VLB1LWI8IJIDqKiWZkEWUkcOz9JNU3CoNeUi+urfbw92mW38A4h
+         To2dh+RbvGuqKCQ2wuFuL5JMW94VEbFUNNDZVH9FrJQhXHg/kC6e8HlegVc2yI6abxP/
+         IwIpxIWBU6c0NbaIkUAPiS2IjsghR8aAuS57aPD17U+ERerfTNCku0QXaI5s9E1xSvJy
+         HOUxY6C3aqqqqH5ll4rr8+9Cyft7eHbSNZ6+DjW7A6tbPYOEsqOQqV8fzbRhststmwU7
+         flBNYhRetWbeoG1qdQfY1tGNOP5w4hDRErCPdcGfz2GIyxwOGoAVO42YdAzjwo9bpQIR
+         N4Ng==
+X-Gm-Message-State: APt69E0dg9UwQwxBX8xGajmfKla3BBbBX3QQUN9cpIWTGt2I9/OnFjkB
+	uUKA+FhpOtjCpDaqTR2gTM2OPMfqRnVH3wU6HwM4cg==
+X-Received: by 2002:a6b:b68a:: with SMTP id g132-v6mr10479201iof.209.1528624933965;
+ Sun, 10 Jun 2018 03:02:13 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a6b:d90:0:0:0:0:0 with HTTP; Sun, 10 Jun 2018 03:02:13 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 10 Jun 2018 12:02:13 +0200
+Message-ID: <CAAxEZd8SFAf_vNiU=5RVkA2cZ9-+dYBp725iCOrft=rPp7zjSg@mail.gmail.com>
+Subject: footty - football.db command line tool / client for world cup (russia 2018)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   for the upcoming football world cup in russia 2018 - the world=E2=80=99s
+biggest show (3+ billion fans) - I=E2=80=99ve put together a little command
+line tool / client called footty that lets you query the online
+football.db HTTP JSON API services for upcoming or past matches. Try:
+
+  $ footty
+
+   resulting in:
+
+** No matches scheduled today.
+Upcoming matches:
+   #1 Thu Jun/14 (in 4d)       Russia (RUS) vs Saudi Arabia (KSA)
+Group A  @ Luzhniki Stadium, Moscow
+   #2 Fri Jun/15 (in 5d)        Egypt (EGY) vs      Uruguay (URU)
+Group A  @ Ekaterinburg Arena, Ekaterinburg
+   #3 Fri Jun/15 (in 5d)     Portugal (POR) vs        Spain (ESP)
+Group B  @ Fisht Stadium, Sochi
+   #4 Fri Jun/15 (in 5d)      Morocco (MAR) vs         Iran (IRN)
+Group B  @ Saint Petersburg Stadium, Saint Petersburg
+   #5 Sat Jun/16 (in 6d)       France (FRA) vs    Australia (AUS)
+Group C  @ Kazan Arena, Kazan
+   #6 Sat Jun/16 (in 6d)         Peru (PER) vs      Denmark (DEN)
+Group C  @ Mordovia Arena, Saransk
+   #7 Sat Jun/16 (in 6d)    Argentina (ARG) vs      Iceland (ISL)
+Group D  @ Spartak Stadium, Moscow
+   #8 Sat Jun/16 (in 6d)      Croatia (CRO) vs      Nigeria (NGA)
+Group D  @ Kaliningrad Stadium, Kaliningrad
+   #9 Sun Jun/17 (in 7d)       Brazil (BRA) vs  Switzerland (SUI)
+Group E  @ Rostov Arena, Rostov-on-Don
+   #10 Sun Jun/17 (in 7d)   Costa Rica (CRC) vs       Serbia (SRB)
+Group E  @ Samara Arena, Samara
+   #11 Sun Jun/17 (in 7d)      Germany (GER) vs       Mexico (MEX)
+Group F  @ Luzhniki Stadium, Moscow
+   #12 Mon Jun/18 (in 8d)       Sweden (SWE) vs  South Korea (KOR)
+Group F  @ Nizhny Novgorod Stadium, Nizhny Novgorod
+   #13 Mon Jun/18 (in 8d)      Belgium (BEL) vs       Panama (PAN)
+Group G  @ Fisht Stadium, Sochi
+   #14 Mon Jun/18 (in 8d)      Tunisia (TUN) vs      England (ENG)
+Group G  @ Volgograd Arena, Volgograd
+   ....
+
+
+   Enjoy the beautiful game. Kick off in four days. Cheers. Prost.
+
+
+[1] https://github.com/sportdb/footty
+

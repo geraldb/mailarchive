@@ -1,0 +1,78 @@
+From 2457602097152@xxx Tue Jun 16 00:16:39 +0000 2015
+X-GM-THRID: 2377276981248
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cd242d30f1f3615d
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.107.208 with SMTP id e16mr9962709icp.10.1424978593854;
+        Thu, 26 Feb 2015 11:23:13 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.101.164 with SMTP id fh4ls82527obb.36.gmail; Thu, 26 Feb
+ 2015 11:23:13 -0800 (PST)
+X-Received: by 10.182.34.133 with SMTP id z5mr9831106obi.3.1424978593422;
+        Thu, 26 Feb 2015 11:23:13 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x22e.google.com (mail-ie0-x22e.google.com. [2607:f8b0:4001:c03::22e])
+        by gmr-mx.google.com with ESMTPS id e11si23999igq.0.2015.02.26.11.23.13
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 26 Feb 2015 11:23:13 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::22e as permitted sender) client-ip=2607:f8b0:4001:c03::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ie0-x22e.google.com with SMTP id ar1so19742300iec.11
+        for <opensport@googlegroups.com>; Thu, 26 Feb 2015 11:23:13 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=K0x2C3tiGTQ9NtlIFovNdUyPMxPo3qsw0hAWHZ2s7GQ=;
+        b=foFjm2U1cenoB99GrcVwYl5hO3lp+FzV+BTKUVdq0BKI/Z0AzbRrJNK6QUShlYd07r
+         RcIBz767V+6fiK4TVfJovwjLxH5wiHVrBrZG1LpUL43bUOy5ZTgeUox/d/vWa5k0sfpT
+         +Vt6mMQKX4Xy9Z08a0tFLmjqwdad/gCgxG4u/35f06YVANaBvsyPTTLXyY/y7mukXQCF
+         3ey/kKVF+0TjZkQt99Joz19Lm/wRNpOxqndz0tI1UM7nixJxmBL9PQutpx11eopIIQyJ
+         xj129OyIJhU2mkhJ8vzyfPfCK7KdNbzF6EzfhFLYW8M8dR162QrVpPc3V4Uy74qOt1NA
+         oPNg==
+MIME-Version: 1.0
+X-Received: by 10.50.66.212 with SMTP id h20mr36606884igt.43.1424978593293;
+ Thu, 26 Feb 2015 11:23:13 -0800 (PST)
+Received: by 10.64.142.11 with HTTP; Thu, 26 Feb 2015 11:23:13 -0800 (PST)
+In-Reply-To: <f0733f7b-2f74-43b6-9550-90825c773877@googlegroups.com>
+References: <ec906df1-8c4e-4e7f-818f-4a7804b24d82@googlegroups.com>
+	<CAAxEZd-YTsKsA3kjKPv=rW97xza38tv2jTS6RycyDU5Q3Rh1Xw@mail.gmail.com>
+	<050ea85e-361e-4129-aa03-4072002f20a3@googlegroups.com>
+	<CAAxEZd80+_DS9oT5DaibtdPDQiHBSRHMyjR2-yvSzaOnozZuhA@mail.gmail.com>
+	<016077bc-2d07-450a-a9a0-c0bf31feed15@googlegroups.com>
+	<CAAxEZd8aqWBcP7-Ek=rmjnXNR-av36Nkd4jqCOQBhG++22=YxQ@mail.gmail.com>
+	<f16d3951-a274-4b95-ac77-29a20298000e@googlegroups.com>
+	<CAAxEZd9AZJL9sQ7bG1XLsX+aAvnYpoDxRKA=tfSjknXxEXpMjA@mail.gmail.com>
+	<f0733f7b-2f74-43b6-9550-90825c773877@googlegroups.com>
+Date: Thu, 26 Feb 2015 20:23:13 +0100
+Message-ID: <CAAxEZd9+Y5Y8KiVmtYpds058rv=XdKM8BUgfipx8Lopvf5QRhQ@mail.gmail.com>
+Subject: Re: [opensport] Unable to build en-england repo
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  FYI: You must use all UPCASE for your rake variables e.g.  rake
+update DATA=eng
+
+   To see the difference it's best to check the source of the
+Rakefile.  For now update -  will NOT recreate the database schema and
+will NOT update the world datasets  but it will basically rebuild all
+football datasets (delete the old ones first).
+
+   Yes, if you just want to update a single file season you can pass
+it along and the parser will try to update the database records (you
+will have to use your own little (custom) build script - just make
+sure you do NOT call #delete_all or similar).
+
+   If you want to have goals added - somebody has to add the goals to
+the dataset first ;-) sorry no magic here. For now only some world cup
+datsets have goals included if you need some examples to get started.
+
+  Have a great weekend. Cheers.
+

@@ -1,0 +1,138 @@
+From 1138729418752@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1129684402176
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,8d4dac29202162d8
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.180.107.167 with SMTP id hd7mr2058479wib.0.1347304478756;
+        Mon, 10 Sep 2012 12:14:38 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.216.143.147 with SMTP id l19ls3096760wej.4.gmail; Mon, 10 Sep
+ 2012 12:14:38 -0700 (PDT)
+Received: by 10.180.75.8 with SMTP id y8mr2053405wiv.4.1347304478029;
+        Mon, 10 Sep 2012 12:14:38 -0700 (PDT)
+Received: by 10.180.75.8 with SMTP id y8mr2053404wiv.4.1347304478008;
+        Mon, 10 Sep 2012 12:14:38 -0700 (PDT)
+Return-Path: <george.rudolph@gmail.com>
+Received: from mail-wi0-f182.google.com (mail-wi0-f182.google.com [209.85.212.182])
+        by gmr-mx.google.com with ESMTPS id cx9si2107152wib.0.2012.09.10.12.14.37
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Mon, 10 Sep 2012 12:14:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of george.rudolph@gmail.com designates 209.85.212.182 as permitted sender) client-ip=209.85.212.182;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of george.rudolph@gmail.com designates 209.85.212.182 as permitted sender) smtp.mail=george.rudolph@gmail.com; dkim=pass header.i=@gmail.com
+Received: by wibhq12 with SMTP id hq12so2014344wib.11
+        for <webslideshow@googlegroups.com>; Mon, 10 Sep 2012 12:14:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=DsZmkgnvJ9NkTu/l8ey1nzcxGkKgmxfeBzLlQo0dFcY=;
+        b=b6YkEpHPz2l+wH59rlLusX7kWNeun7f3gfM6kFVZisUltPw0KAnRKEUJr2UJzHpV3V
+         2kpHQQnwo5Ux+gZjQNjV39QzLngTX7AFB8zEnW1sdQYhDAgeHirhe7GOjbDksxkLOldM
+         4IjONItCEmqijqhzcuFPU4K7ZR6RD35CXwBIsNSElkAS5p5Bo+pTRDymJILYv2Z+zReF
+         tBlzeMB7NdnK0wK3/z1kg8DZuPPKmFKxRyJcVwOE3mNzARiX2qGKPMxRDl23XbslUkKt
+         CH6gLN08En5XUgu4Vqjbq8ljjb9OkLyRrtVzsYA/vxW1KpGIhDiNzt/w7iDayNjBDonW
+         BtsA==
+MIME-Version: 1.0
+Received: by 10.216.95.10 with SMTP id o10mr8719979wef.213.1347304477814; Mon,
+ 10 Sep 2012 12:14:37 -0700 (PDT)
+Received: by 10.216.224.224 with HTTP; Mon, 10 Sep 2012 12:14:37 -0700 (PDT)
+Received: by 10.216.224.224 with HTTP; Mon, 10 Sep 2012 12:14:37 -0700 (PDT)
+In-Reply-To: <f09bc5be-7efc-4c57-801c-fd1717238966@k20g2000vbk.googlegroups.com>
+References: <7e66cce8-6332-4adb-a8f8-69fb75c84b40@googlegroups.com>
+	<f09bc5be-7efc-4c57-801c-fd1717238966@k20g2000vbk.googlegroups.com>
+Date: Mon, 10 Sep 2012 15:14:37 -0400
+Message-ID: <CAJxN5=v=X_5-R3LtZ_RWuNdavNU-F=Lt3Z_WvqP6Yxcnh5qi-g@mail.gmail.com>
+Subject: Re: [slideshow:263] Re: Multi-column slides with S5
+From: George Rudolph <george.rudolph@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: multipart/alternative; boundary=e0cb4e700315cdef8b04c95dc440
+
+--e0cb4e700315cdef8b04c95dc440
+Content-Type: text/plain; charset=ISO-8859-1
+
+Or some css for a two-column layout.
+On Sep 10, 2012 3:09 PM, "Gerald Bauer" <gerald.bauer@gmail.com> wrote:
+
+> Hello,
+>
+>   One option is to use a plain old HTML table. Example:
+>
+> <table width='100%'><tr>
+>  <td width='50%' style='vertical-align: top;'>
+>  <!-- begin left/1st column -->
+>
+>  <h3>Narrow Definition</h3>
+>  <p>Alternative to BigCo Web Services:</p>
+>   ...
+>  <!-- end left column-->
+>  </td>
+>
+>  <td width='50%' style='vertical-align: top;'>
+>  <!-- begin right/2nd column -->
+>
+>  <h3>Broad Definition</h3>
+>  <p>Best Practices for Designing Web Services for a Unified Human and
+> Programable Web</p>
+>  <!-- end right column -->
+>  </td>
+>  </tr>
+>  </table>
+>
+>   That's all there is to it. Cheers.
+>
+> --
+>
+>
+>
+
+--e0cb4e700315cdef8b04c95dc440
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<p>Or some css for a two-column layout.</p>
+<div class=3D"gmail_quote">On Sep 10, 2012 3:09 PM, &quot;Gerald Bauer&quot=
+; &lt;<a href=3D"mailto:gerald.bauer@gmail.com">gerald.bauer@gmail.com</a>&=
+gt; wrote:<br type=3D"attribution"><blockquote class=3D"gmail_quote" style=
+=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+Hello,<br>
+<br>
+=A0 One option is to use a plain old HTML table. Example:<br>
+<br>
+&lt;table width=3D&#39;100%&#39;&gt;&lt;tr&gt;<br>
+=A0&lt;td width=3D&#39;50%&#39; style=3D&#39;vertical-align: top;&#39;&gt;<=
+br>
+=A0&lt;!-- begin left/1st column --&gt;<br>
+<br>
+=A0&lt;h3&gt;Narrow Definition&lt;/h3&gt;<br>
+=A0&lt;p&gt;Alternative to BigCo Web Services:&lt;/p&gt;<br>
+=A0 ...<br>
+=A0&lt;!-- end left column--&gt;<br>
+=A0&lt;/td&gt;<br>
+<br>
+=A0&lt;td width=3D&#39;50%&#39; style=3D&#39;vertical-align: top;&#39;&gt;<=
+br>
+=A0&lt;!-- begin right/2nd column --&gt;<br>
+<br>
+=A0&lt;h3&gt;Broad Definition&lt;/h3&gt;<br>
+=A0&lt;p&gt;Best Practices for Designing Web Services for a Unified Human a=
+nd<br>
+Programable Web&lt;/p&gt;<br>
+=A0&lt;!-- end right column --&gt;<br>
+=A0&lt;/td&gt;<br>
+=A0&lt;/tr&gt;<br>
+=A0&lt;/table&gt;<br>
+<br>
+=A0 That&#39;s all there is to it. Cheers.<br>
+<br>
+--<br>
+<br>
+<br>
+</blockquote></div>
+
+--e0cb4e700315cdef8b04c95dc440--
+

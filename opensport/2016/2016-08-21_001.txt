@@ -1,0 +1,88 @@
+From 6321358870351446016@xxx Sun Aug 21 19:00:55 +0000 2016
+X-GM-THRID: 6321358871433576448
+X-Received: by 10.66.170.208 with SMTP id ao16mr13862292pac.9.1471806054631;
+        Sun, 21 Aug 2016 12:00:54 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.36.115.7 with SMTP id y7ls2830487itb.16.gmail; Sun, 21 Aug
+ 2016 12:00:53 -0700 (PDT)
+X-Received: by 10.66.43.82 with SMTP id u18mr13712691pal.30.1471806053922;
+        Sun, 21 Aug 2016 12:00:53 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x233.google.com (mail-io0-x233.google.com. [2607:f8b0:4001:c06::233])
+        by gmr-mx.google.com with ESMTPS id c76si843344ith.0.2016.08.21.12.00.53
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 21 Aug 2016 12:00:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) client-ip=2607:f8b0:4001:c06::233;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x233.google.com with SMTP id m101so91834658ioi.2
+        for <opensport@googlegroups.com>; Sun, 21 Aug 2016 12:00:53 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=cqNAS1zuB06Cu+kQdqpWj8plUu44xK50WbsC6WBaYBU=;
+        b=rVrFoUqPSGcQdYM5uC+7JavLf2zFj1hTKiJMO/BmClwQ2dyLGs2CIHHxWlUCspWvdE
+         iY9xIVbESgeYx+qJDKp7YdqR53+c+QIF6KwPpuZz/2DiAmMlzh1qvvOB0PO22Istk7nn
+         KGrqndgb1u9Hbz4WC+WPTrGMq2ZHgHUZ0WhBxWo03vchFzTcwrmSDLn1muul5uM1FNMq
+         B/IwT+5TBZ9TA0krxiIo3Lw/Kb4zGrF/MKERp1mWSsTVVA6f6L9TVyYZoWNglNjrPaVo
+         pOkHeKBOUG6p50GUyKqavrsk3XsHqkIbs47RfzwfS7VSFJ4P1dvHJCrowI/TKQnd/RiD
+         SB9Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=cqNAS1zuB06Cu+kQdqpWj8plUu44xK50WbsC6WBaYBU=;
+        b=fDdZcyp0p0VzZSK2zxJBn59Mq5tkK41zPe3jgT0vP/XndkOIJFbvn1i9QuFERhXBcJ
+         J3AN5PFFc6W+DBTXP8L1c4VkneiRYuoaxYk4DQhSiudbtQmBE1fB6up1wMLWA+/2ghrX
+         B/yGSPb+Pe+owDVkvoI1xjqPvTQKmP5g8BU+KOiPrRTJ1HmvyGp1hYAdq8W5ERESflB1
+         akSM21yfcVUdTKCkagTlx2RfIctbhcvWB4Rak4aIMD2gKhU1uj2zS6UTWmgMmoDGH2cy
+         4rOkMdGDBWx8WXVHKMDjcjVLVJdQZoP1IehfH4t58DdHIZrHd5/w7V34MCu9sNOY2K2O
+         Qepg==
+X-Gm-Message-State: AEkoouvoINYgJqLtxKOo8eHl7lfNxhFrH6HyKZqLIa/R21PAyPz756+oSSinX1WDDJxaS628vztB2sHBS1GDfw==
+X-Received: by 10.107.46.106 with SMTP id i103mr22132808ioo.67.1471806053535;
+ Sun, 21 Aug 2016 12:00:53 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Sun, 21 Aug 2016 12:00:53 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 21 Aug 2016 21:00:53 +0200
+Message-ID: <CAAxEZd-5e=VjKEX-zavfA13_FVDEwrp6b9McZiHqy0sXewtDnQ@mail.gmail.com>
+Subject: =?UTF-8?Q?Primera_Divisi=C3=B3n_=2F_Spansish_La_Liga_2016=2F17_Season_?=
+	=?UTF-8?Q?=2D_Public_Domain_Open_Dataset_in_Plain_Text_=28n_SQL=2C_JSON=2C_etc?=
+	=?UTF-8?Q?=2E=29?=
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   FYI: I've started to add the new 2016/17 season for the Primera
+Divisi=C3=B3n / Spansish La Liga. The dataset [1] reads:
+
+
+Jornada 1
+
+[Vi=C3=A9. 19.8.]
+  M=C3=A1laga CF           1-1  CA Osasuna
+  Deportivo La Coru=C3=B1a 2-1  SD Eibar
+[S=C3=A1b. 20.8.]
+  FC Barcelona        6-2  Betis Sevilla
+  Granada CF          1-1  Villarreal CF
+  Sevilla FC          6-4  Espanyol Barcelona
+[Dom. 21.8.]
+  Sporting Gij=C3=B3n             2-1  Athletic Bilbao
+  Real Sociedad San Sebastian 0-1 Real Madrid
+  Atl=C3=A9tico Madrid   CD Alav=C3=A9s
+[Lun. 22.8.]
+  Celta Vigo   CD Legan=C3=A9s
+  Valencia CF   UD Las Palmas
+
+
+  And so on. Cheers.
+
+[1] https://github.com/openfootball/es-espana/blob/master/2016-17/liga-i.tx=
+t
+

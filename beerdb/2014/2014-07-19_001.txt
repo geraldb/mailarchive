@@ -1,0 +1,59 @@
+From 148841168896@xxx Sat Dec 20 19:01:39 +0000 2014
+X-GM-THRID: 144990797824
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,dd9476fb4db7811a
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.228.162 with SMTP id sj2mr5268973pac.11.1405755345216;
+        Sat, 19 Jul 2014 00:35:45 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.140.39.6 with SMTP id u6ls1307875qgu.59.gmail; Sat, 19 Jul
+ 2014 00:35:45 -0700 (PDT)
+X-Received: by 10.140.29.132 with SMTP id b4mr9857qgb.14.1405755345006;
+        Sat, 19 Jul 2014 00:35:45 -0700 (PDT)
+X-Google-Doc-Id: 6b04deb711fffd51
+X-Google-Web-Client: true
+Date: Sat, 19 Jul 2014 00:35:44 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Message-Id: <fe328f9c-859f-4764-bb8a-2fb0d8c89cf8@googlegroups.com>
+In-Reply-To: <6b5c6524-c271-474c-8e4a-c6b451aff8f9@googlegroups.com>
+References: <6b5c6524-c271-474c-8e4a-c6b451aff8f9@googlegroups.com>
+Subject: Re: Bundler could not find compatible version for gem
+ "activerecord"
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_33_280301099.1405755344376"
+X-Google-Token: ENC_qJ4Fh8uMzv2nmow0
+X-Google-IP: 178.190.96.118
+
+------=_Part_33_280301099.1405755344376
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_34_1588933022.1405755344376"
+
+------=_Part_34_1588933022.1405755344376
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Robert,
+
+  Thanks for your interest in beer.db. Sorry for now beerdb gem has a hard 
+dependency on the 3.x series of Activerecord e.g.
+
+ > activerecord (~> 3.2)
+
+  Thus, you cannot use the 4.x series with Rails, that is, you cannot use 
+the Rails 4.x series - only Rails 3.x.
+
+  Will fix the hard dependency with the next update. Cheers.
+
+------=_Part_34_1588933022.1405755344376
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello Robert,<br><br>&nbsp; Thanks for your interest in beer.db. Sorry for now beerdb gem has a hard dependency on the 3.x series of Activerecord e.g.<br><br>&nbsp;&gt; activerecord (~&gt; 3.2)<br><br>&nbsp; Thus, you cannot use the 4.x series with Rails, that is, you cannot use the Rails 4.x series - only Rails 3.x.<br><br>&nbsp; Will fix the hard dependency with the next update. Cheers.</div>
+------=_Part_34_1588933022.1405755344376--
+
+------=_Part_33_280301099.1405755344376--
+

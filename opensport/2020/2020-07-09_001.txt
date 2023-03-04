@@ -1,0 +1,99 @@
+From 6847486645261828096@xxx Thu Jul 09 14:25:24 +0000 2020
+X-GM-THRID: 6847486648482004992
+X-Received: by 2002:a05:6402:1757:: with SMTP id v23mr58070763edx.356.1594304723786;
+        Thu, 09 Jul 2020 07:25:23 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:6402:1d37:: with SMTP id dh23ls766899edb.1.gmail; Thu,
+ 09 Jul 2020 07:25:22 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxa6Aga0oAwxPycUpQvojw/0dGQ9BwNBmt4GZFY+/RHZxrVBYS2ibXAnSH8fHIKGJrKyFYj
+X-Received: by 2002:aa7:c54f:: with SMTP id s15mr74899166edr.175.1594304722565;
+        Thu, 09 Jul 2020 07:25:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1594304722; cv=none;
+        d=google.com; s=arc-20160816;
+        b=v0Kiu67BnlxPKmcIuOL8XxYfRpquDZfjCMSBFKMSWHS4kFNmENFAyCgpmriSQji29I
+         rZI9woqaORYe/6THyKtcq6LUClKEVZ0pmNohY5Zp74Pc1luuCLGIGpkLdDgbVDvShp0/
+         UQtN8hgYdVOGi/Y+suJPQCYmi23aXdZANJtlEYwT2LtT5T7RGWhehP9Xwt+fQ37eDn9J
+         1pErfbyrQWUXm54h797gfvYf/aDCqFI7CamrQmFZEa6CUq56xZwiHUmmj5IIXZFXxRI1
+         5pSI6pR+QV/bywhzmP74TPu8EhbDsD49QuiwWan6b1BxtT0CAvdFlKmQs3UIjo94yn8p
+         ePiw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=PCGuM96uhX6h3WBGYBAnHyMkUN2n3KA80eLe1ddV4Xs=;
+        b=UJYx6408NgnbXQDSmiMtrFrBefW/Q18EV6jsmUh1E4szUfL7CNJQg9a2htDLCGmxPo
+         xzUnu5Z0KuSd+ZiBHUHCgk4jeCtt6mkjEHK6RWlQNP1p7FkurAcBgAEWmGE5nUT07Y/u
+         wiTYlYje8VtpB+W4iGlmGj5G2g707I17902TyfX/se4TCPqMW65Ef3sWn9KKTfBrRHTv
+         sJ9BEbi4d0zDOUMKSjqFFuKdpNvbBXC0vXs64j92/pXdBHoijLUcK01B/r3XW/WqR5LB
+         v6aNqA8hW2y0nDnI8esf3G047EAdzS1m6W54OLOjRs5CClnnnmAaynJPffjRxxt/7tm0
+         r/8g==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=e9mX8xmE;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x12e.google.com (mail-lf1-x12e.google.com. [2a00:1450:4864:20::12e])
+        by gmr-mx.google.com with ESMTPS id x14si171140edq.2.2020.07.09.07.25.22
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 09 Jul 2020 07:25:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12e as permitted sender) client-ip=2a00:1450:4864:20::12e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=e9mX8xmE;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x12e.google.com with SMTP id g139so1254361lfd.10
+        for <opensport@googlegroups.com>; Thu, 09 Jul 2020 07:25:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=PCGuM96uhX6h3WBGYBAnHyMkUN2n3KA80eLe1ddV4Xs=;
+        b=e9mX8xmEe1YHQBv6IdKOKho9OJ3vg6gDGWBwURtMhJr/5gkTDN+wtKPVdKHs1RNdM/
+         9/60Y5sYRMIZpifq5cpc19W0PWwaHTq4nDmaAQ7G2CprtCsfiupN+F+lDNAVhX/eF8jz
+         fMoL+NhHf8/2uFjXITPuu3R49bnVbEFhr7RFx6+sv/ZluhAfJWcFKcP4gP5pf+xTQnvE
+         KSOfX62v4k6SgUhVC/oLif5w1998PLNQLmTRT1t+8ZFIz64PjLgo4KULHlvQOudCXqNy
+         a/QTtk0K4NRgE+8EfTKan04vHm2gUmX9BOTi11Zp9O0qeugPjkiPw/zwi9lybgUZGuRu
+         N7Gg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=PCGuM96uhX6h3WBGYBAnHyMkUN2n3KA80eLe1ddV4Xs=;
+        b=IwABufLbHqDQ3fGjaikblbnsrXEbLpHUAHZF3o0UEyRnVgfmbzkLp2x9FrP3vEZm70
+         a3/NCN9KtezI1SS+Nk5GmacHOBD9EJHLiy39n+0ScfULkfuGQsRgy9S0Jw3pP9cGEtja
+         YisCDqPv/kHx7MX0dzHAHfFsw0pFN3EBJn4m8sQdrwMBllywzqMPUMSvD3n54vWw0rNh
+         HIvO/PeeZbONddggw8ACiiVcKz0IW7HJSnjDQc2VH38vAzzNuBmzomQufQwNYIHDhVhC
+         35YHP6+cPSpmpz/xE2cmIbSyhgyLcy9Z+e4t65JYdtiObjWIWSeEhMraHSSrKkvvORDh
+         qOpA==
+X-Gm-Message-State: AOAM530G5tvGSY1mlTG19p7RCFsI6pd54iptlVwRss+ED1vkTJhMKaOe
+	OQLwHLIERd0N1gEVA2Soj/gd3rS/I5fYrCla7qdyAyi+coA=
+X-Received: by 2002:a19:ca48:: with SMTP id h8mr40219156lfj.161.1594304722053;
+ Thu, 09 Jul 2020 07:25:22 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 9 Jul 2020 16:25:10 +0200
+Message-ID: <CAAxEZd_e8j_-0P6S1BQpE_p-PfhA3G=mRVys3Wk=L7ONx3D-7w@mail.gmail.com>
+Subject: england.db, deutschland.db, espana.db - Pre-Built Single-File SQLite
+ Databases Released
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  As an experiment I have added / released pre-built single-file
+SQLite database for the England, Deutschland (Germany), Espana (Spain)
+datasets.
+
+   See the
+
+   - england.db (~9 MiB) [1],
+   - deutschland.db (~5 MiB) [2], and
+   - espana.db (~1 MiB) [3]
+
+   release pages and downloads. If there's any interest I try to make
+it into a regular update (e.g. maybe every six month or such or every
+season)
+
+   Happy data wrangling. Enjoy the beautiful game. Cheers. Prost.
+
+[1] https://github.com/openfootball/england/releases
+[2] https://github.com/openfootball/deutschland/releases
+[3] https://github.com/openfootball/espana/releases
+

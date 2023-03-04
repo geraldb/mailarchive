@@ -1,0 +1,88 @@
+From 2105919143936@xxx Tue Jun 16 00:16:48 +0000 2015
+X-GM-THRID: 2107993227264
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a2a51690b24c94bb
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.213.138 with SMTP id ns10mr2643841obc.45.1409634839361;
+        Mon, 01 Sep 2014 22:13:59 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.21.107 with SMTP id u11ls809591obe.38.gmail; Mon, 01 Sep
+ 2014 22:13:58 -0700 (PDT)
+X-Received: by 10.182.73.135 with SMTP id l7mr9091obv.15.1409634838867;
+        Mon, 01 Sep 2014 22:13:58 -0700 (PDT)
+X-Google-Doc-Id: 9c9c93f99975177b
+X-Google-Web-Client: true
+Date: Mon, 1 Sep 2014 22:13:57 -0700 (PDT)
+From: Carl-Erik Svensson <csvenss2@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <bf125e2d-4231-4699-baf4-970aaa595541@googlegroups.com>
+Subject: find_person
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2493_178914135.1409634837789"
+X-Google-Token: EJWklaAFVoqIjpF3s140
+X-Google-IP: 24.130.213.187
+
+------=_Part_2493_178914135.1409634837789
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2494_1257239672.1409634837797"
+
+------=_Part_2494_1257239672.1409634837797
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hey Gerald,
+
+Was wondering if you could shed some light on the find_person! function.  I 
+see that it boils down to a method in TextUtils, and it seems to expect 
+some leading characters in front of the name "@@...@@", however, the 
+example I've been using for squads is the world-cup data set, and it 
+doesn't have these leading characters in the player's name.  Do we need to 
+change this in sportdb, or is it used by some other data sets?
+
+def find_key_for!( name, line )
+  regex = /@@oo([^@]+?)oo@@/     # e.g. everything in @@ .... @@ (use 
+non-greedy +? plus all chars but not @, that is [^@])
+
+  upcase_name   = name.upcase
+  downcase_name = name.downcase
+
+  if line =~ regex
+    value = "#{$1}"
+
+Also, how do you handle players that might have the same name?  Do they get 
+a unique key and how do you find the right one?  This is making it tricky 
+for me to update data for squads, as the person entries are never found and 
+duplicates are crated.
+
+Thanks for the info!
+
+Carl
+
+------=_Part_2494_1257239672.1409634837797
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hey Gerald,</div><div><br></div><div>Was wondering if=
+ you could shed some light on the find_person! function. &nbsp;I see that i=
+t boils down to a method in TextUtils, and it seems to expect some leading =
+characters in front of the name "@@...@@", however, the example I've been u=
+sing for squads is the world-cup data set, and it doesn't have these leadin=
+g characters in the player's name. &nbsp;Do we need to change this in sport=
+db, or is it used by some other data sets?</div><div><br></div><div>def fin=
+d_key_for!( name, line )</div><div>&nbsp; regex =3D /@@oo([^@]+?)oo@@/ &nbs=
+p; &nbsp; # e.g. everything in @@ .... @@ (use non-greedy +? plus all chars=
+ but not @, that is [^@])</div><div><br></div><div>&nbsp; upcase_name &nbsp=
+; =3D name.upcase</div><div>&nbsp; downcase_name =3D name.downcase</div><di=
+v><br></div><div>&nbsp; if line =3D~ regex</div><div>&nbsp; &nbsp; value =
+=3D "#{$1}"</div><div><br></div><div>Also, how do you handle players that m=
+ight have the same name? &nbsp;Do they get a unique key and how do you find=
+ the right one? &nbsp;This is making it tricky for me to update data for sq=
+uads, as the person entries are never found and duplicates are crated.</div=
+><div><br></div><div>Thanks for the info!</div><div><br></div><div>Carl</di=
+v></div>
+------=_Part_2494_1257239672.1409634837797--
+
+------=_Part_2493_178914135.1409634837789--
+

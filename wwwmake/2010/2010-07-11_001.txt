@@ -1,0 +1,72 @@
+From 714224959488@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 715226349568
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,68a83ba87e243f31,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.90.73.20 with SMTP id v20mr8639516aga.6.1278886534489;
+        Sun, 11 Jul 2010 15:15:34 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.90.41.14 with SMTP id o14ls114209ago.3.p; Sun, 11 Jul 2010 
+	15:15:33 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.90.97.19 with SMTP id u19mr1700690agb.55.1278886533910; Sun, 
+	11 Jul 2010 15:15:33 -0700 (PDT)
+Received: by i31g2000yqm.googlegroups.com with HTTP; Sun, 11 Jul 2010 15:15:33 
+	-0700 (PDT)
+Date: Sun, 11 Jul 2010 15:15:33 -0700 (PDT)
+X-IP: 188.22.121.177
+User-Agent: G2/1.0
+X-Google-Token: EIWF6eEEvIRD_jLN8x80
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.6) 
+	Gecko/20100628 Ubuntu/10.04 (lucid) Firefox/3.6.6,gzip(gfe)
+Message-ID: <5c819f85-c38d-4c15-b1aa-b975dc2b2079@i31g2000yqm.googlegroups.com>
+Subject: Slide Show (S9) Gem Updated (v0.9.2) - New SyntaxHighlighter Helper, 
+	New S6Blank Standard Template Pack, and More
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  I uploaded a new slideshow gem version (that is, v0.9.2). What's
+new?
+
+  * Changed default template pack from s6gradients to s6blank.
+
+    The new default template pack uses a simple plain style (white
+background with black text color) to make it easy to change to your
+needs. Also with CSS3 and gradient backgrounds there's no longer a
+need for gradient background using external SVG files. If you still
+want to use SVG background gradients, use/fetch the s6gradients[1]
+package.
+
+   * Added gradient and background helper
+
+     To make it easy to use CSS3 gradient background I've created some
+sample helpers. Using the gradient helper creating a CSS3 background
+linear gradient for Mozilla and WebKit is as easy as:
+
+    {{ gradient yellow orange yellow orange }}
+
+    See the updated Tutorial and REST slide shows for more samples:
+
+    o http://slideshow.rubyforge.org/tutorial.html
+    o http://slideshow.rubyforge.org/rest.html
+
+   * Added syntax highlighting helper (sh) for SyntaxHighlighter
+JavaScript library
+
+     Find more doku @ http://slideshow.rubyforge.org/code.html
+
+   * Added simplified parameters for Django-style expressions and
+statements
+   * Added support for %-directives (e.g. %helper, %css, %yourown,
+etc)
+   * Minor fixes
+
+    That's it. Questions and comments welcome. Cheers. Gerald
+
+[1] http://github.com/geraldb/slideshow-s6-gradients (Old Standard
+Template Pack)
+

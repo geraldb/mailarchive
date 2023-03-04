@@ -1,0 +1,53 @@
+From 6206267125593538560@xxx Fri Oct 16 15:26:09 +0000 2015
+X-GM-THRID: 6204406662761021440
+X-Received: by 10.13.204.132 with SMTP id o126mr12681883ywd.50.1445009169331;
+        Fri, 16 Oct 2015 08:26:09 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.153.7 with SMTP id b7ls79375ioe.48.gmail; Fri, 16 Oct 2015
+ 08:26:08 -0700 (PDT)
+X-Received: by 10.107.14.196 with SMTP id 187mr13771460ioo.24.1445009168863;
+        Fri, 16 Oct 2015 08:26:08 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x232.google.com (mail-ig0-x232.google.com. [2607:f8b0:4001:c05::232])
+        by gmr-mx.google.com with ESMTPS id rr9si284347igb.1.2015.10.16.08.26.08
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 16 Oct 2015 08:26:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::232 as permitted sender) client-ip=2607:f8b0:4001:c05::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x232.google.com with SMTP id dj2so16261774igb.1
+        for <opensport@googlegroups.com>; Fri, 16 Oct 2015 08:26:08 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=8h3c058ohAXIa1E9PfzAE8EMg5oAQmBokcZnR3gi0PE=;
+        b=WayCEFIu88k6UXzoV/8zdBJbJlF3QiZkUu57RY1/9grjz6yFh/YDt+ElrMcEc+YNsP
+         lDx7kNSHmVdTkCih1HF1fMUpZoVcBZceu52zoSBHE0aOA+CY3koIfSD10P6SPQbjPS7Q
+         aBRwX+SoeBGXJUav+mBMPqM1M8g0LXFl7FKE41CX8V94oXDrj1nHrrr2QNmfX1U8bMsM
+         GL0Y/GlFCPLPYDAevZQgPgyZFGZuAvxZRwjSYfsCJfOWBnppEgjrRa/VCuz9Cgqib64k
+         M8kRFCbkDuL0ypxQxL03at326jXZGpaZHkr+bxrcBf5rxXp2Db3HfQMsyh+wCyoax0EF
+         sE9Q==
+MIME-Version: 1.0
+X-Received: by 10.50.50.238 with SMTP id f14mr2881942igo.64.1445009168700;
+ Fri, 16 Oct 2015 08:26:08 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Fri, 16 Oct 2015 08:26:08 -0700 (PDT)
+In-Reply-To: <b8c957e3-c8f1-468c-8f40-a6db6348e90e@googlegroups.com>
+References: <cce80fc2-83ed-4c4c-9032-8366d1f17afb@googlegroups.com>
+	<b8c957e3-c8f1-468c-8f40-a6db6348e90e@googlegroups.com>
+Date: Fri, 16 Oct 2015 17:26:08 +0200
+Message-ID: <CAAxEZd88j9UCP3F7m_pNQMnMtt7iB2CAteFSXBnokYSCaYOhJA@mail.gmail.com>
+Subject: Re: [opensport] Re: Data Issus: football.json Spain 2015/16 fixtures
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Great. Thanks for double checking. Yes, there's a bug in the team
+matcher for the match reader that needs to get fixed for Betis Sevilla
+and Sevilla FC.  Cheers.
+

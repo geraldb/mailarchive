@@ -1,0 +1,130 @@
+From 6442577800165588992@xxx Fri Jul 14 10:52:17 +0000 2017
+X-GM-THRID: 6442577801513009152
+X-Received: by 10.107.134.145 with SMTP id q17mr5404242ioi.97.1500029536939;
+        Fri, 14 Jul 2017 03:52:16 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.36.44.69 with SMTP id i66ls1340826iti.9.canary-gmail; Fri, 14
+ Jul 2017 03:52:16 -0700 (PDT)
+X-Received: by 10.36.41.202 with SMTP id p193mr1837611itp.17.1500029536293;
+        Fri, 14 Jul 2017 03:52:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1500029536; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YPEKfFMmohyb3DpT0DyyOen67UWul18TAZUFKF1O6v4AOm3lEA0u3/zEK0cm60F2A7
+         R0WdgtJYFXTWYy0ardVX09PXTimMfBhBlJIKYXxCcwyoFccEUZst2Qo/jP2IJNgNXx/N
+         t/b5X3KwD5rOWDXqzpOeSFOXeInknI1EM8VH7YmvHmEfr4N5+7d0E5OUCTpqDGSIyY/j
+         g5gYDqyNJpec5REwTRHcaFaH8F9xyhNt/e7jlMxZGq1ROEoUn8CocnojwqboHeL+W++R
+         DDZSKfTmJ5/M68GpBUdHxtV1SwBWyl+xALVmlMTEDB7E1/NJQByj5SWukyBr5xIYuZK4
+         CHrw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=+kUXXFIfN/sUcwouKCtg3/3IydaNDUH7m6hRKt1V8lU=;
+        b=qEYFZWdrCZww1AbBBQnC7IuAbcdwo8kdGYA6P33mnsVQjrg/zthMxZbMDKZTCsQaGL
+         UKuQ8dnhgSudLiFXaXvxD2MpAQnHrH0Pmo2w+zsrKMsGBtCC6o5v+mukQ+1HapONvLbq
+         bGVNgcM3C2UDRX9pxxNBzH5iKJ9tIu/CSPdZZy/CBGI+Q/pJBb6SPIg1GC9EUG9rAhly
+         LbQiZv2taJuDmZs/3DMAP1oyYLlOEU4VkjSmb3ZV++xRehTZPt8XHmkUNQCRW096NCp9
+         +uteE83rnVjzEbk8JGBa2bKsCFZoM/uZqt0pnGNEDOAuIcvd/Ut/PYmTH/z+iGb5Xb0c
+         WxQg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=XEit5p+a;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22f.google.com (mail-it0-x22f.google.com. [2607:f8b0:4001:c0b::22f])
+        by gmr-mx.google.com with ESMTPS id f131si109882itc.3.2017.07.14.03.52.16
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 14 Jul 2017 03:52:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22f as permitted sender) client-ip=2607:f8b0:4001:c0b::22f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=XEit5p+a;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22f.google.com with SMTP id k192so20105172ith.1
+        for <wwwmake@googlegroups.com>; Fri, 14 Jul 2017 03:52:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=+kUXXFIfN/sUcwouKCtg3/3IydaNDUH7m6hRKt1V8lU=;
+        b=XEit5p+a/tDxTG2DWjBkfK3cFeWzDGDhMetQtczjtEQVfb+WEkXnt5o6z9IgG48+2D
+         4jJFyDqF10OvBwPClYLPVApYn4pxEwKbVEG9K6lKgoHaY+sAz2gaweUsnrnVaOXLBeLc
+         tufXtoMnK8O5umm+v7J/DDTgXOsXc3kFRohTZpoESG7XqoprLwtrRLsRy4FaMW9DcqLv
+         YzKll1MF8NbBWX9Y5vTXzQtoPaqmn4zUcIjX9t3Jpy7eupB6cdrcnmjP++X237p6EaJ4
+         1U7zW/IfPkHQioTehDa4Eju1mzd4KvQjxsUNrgUZd0MTdHIZu6mfalscxE6V3jKiwcu0
+         9HDQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=+kUXXFIfN/sUcwouKCtg3/3IydaNDUH7m6hRKt1V8lU=;
+        b=NiM1Su7SgqJqZDlR0jHb7uj0qxfSGrsVDZOTJzFuT2FcaHTBWx3UnSNCMtDnarnnik
+         xBsQN/we8TLM00JdCQjg0Ler3eAJ4rJPpbCBb4gZSE0vM1Xm+UyH0LsZVl42z7LWc2ap
+         24bBf4pgb6cL8cYV4jjsucG5YlSyiYKcCImg1+F0l8+TgVTwJdNoMpxYtA2a9Ulv4o3p
+         X9FEPbqLmv1USq5S4wTIc/nPC/UZWdpkDZqwtIb/U5LYkHOELkphJHQgrY+I6fFnTj2/
+         GRHvxngC1xmMWmmlVNYuRaTHFBEpnaaI6iL2tOs0rO25kDp0UiUEdIkI3u8Fb/Gddqu0
+         3bHA==
+X-Gm-Message-State: AIVw110yYn9OIFSH+jjVTSnDG6hVmQ1+5Ax4NOrZYeCypO0xGjk3IQ6B
+	8AVD10QvPLtjyX+BjkdpIpdD46LlLmTR
+X-Received: by 10.36.112.9 with SMTP id f9mr2990837itc.39.1500029535032; Fri,
+ 14 Jul 2017 03:52:15 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.4.17 with HTTP; Fri, 14 Jul 2017 03:52:14 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 14 Jul 2017 12:52:14 +0200
+Message-ID: <CAAxEZd-tnDCGq+UQmK5rGzu0L2qYUgwoQ_rHKkyqGK_O0yeCWw@mail.gmail.com>
+Subject: Markdown Evolved. 10+ Years Later. Additions. Changes. Deletions.
+ Announcing Text with Instructions (.texti) v0.1
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   Have we learned anything in the last ten years on what works with
+Markdown and what doesn't? Why not evolve Markdown?
+
+   How about more and better and easier linking? Did you know that
+Markdown has no links between pages? Let's remove the ugly and failed
+image inclusion syntax ![]()?
+
+   How about deleting the two trailing spaces for hard line breaks?
+
+
+    Why not try to learn from the best? Let's welcome all Wikipedians
+and Wikipedia Markup and
+    make them feel at home.
+
+   =Heading 1
+   ==Heading 2
+
+   Yes, = is the new #!
+
+   And # is the new comment, following the unix (shell) tradition.
+
+   # This is a comment.
+
+   And #1 is ...    # this is just regular text with a comment ;-)
+
+
+   While at it:
+
+   Let's remove the numbered lists with
+
+   # item
+   # item
+   # item
+
+   Just use
+
+   1. item
+   1. item
+   1. item    # or any number or roman numberal or letter etc.
+
+
+   Interested? Learn more at the (early) new Text with Instructions
+(.texti) Project Site [1]
+  or follow along on twitter [2]
+
+  Cheers.
+
+[1] https://texti.github.io
+[2] https://twitter.com/manuscriptsnews
+

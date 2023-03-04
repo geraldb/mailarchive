@@ -1,0 +1,63 @@
+From 1021458776064@xxx Tue Jun 16 00:17:02 +0000 2015
+X-GM-THRID: 171183177728
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,7e5b91554d9be52b
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.72.230 with SMTP id g6mr2260221wiv.3.1401813223390;
+        Tue, 03 Jun 2014 09:33:43 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.153.8.140 with SMTP id dk12ls424848lad.64.gmail; Tue, 03 Jun
+ 2014 09:33:43 -0700 (PDT)
+X-Received: by 10.112.204.201 with SMTP id la9mr3890815lbc.3.1401813223019;
+        Tue, 03 Jun 2014 09:33:43 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22e.google.com (mail-wi0-x22e.google.com [2a00:1450:400c:c05::22e])
+        by gmr-mx.google.com with ESMTPS id e12si579363wiv.1.2014.06.03.09.33.42
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 03 Jun 2014 09:33:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) client-ip=2a00:1450:400c:c05::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f174.google.com with SMTP id r20so6943526wiv.13
+        for <opensport@googlegroups.com>; Tue, 03 Jun 2014 09:33:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=jjdFIbFci33S+RNIQHQIq7/aR23Rnt8L1wGUk/CbWkk=;
+        b=0qztcw6ozzLxWDi8GivwuuizMHLvX1KiiwDdkYcMHZBqVa3HcmAq6c61blR8A6nYUJ
+         M+0WAs0YeRiLDS9AvQl603RIiLHgSkvdaHmBFmYDL6YB6ObmFlJoAFimy+RwOTFLMdJO
+         iEWk0Dpn+tgiUI2pOeyDoEAVSv+5ngG0bU0F3PEAXgBe1F8nE1zdCf8pYhHg0pNcOUQI
+         tjL5UMVjcivuLiYE8wHFwNHqmm4xHMbSrRS4x2YyXMU4rI/njHor0W6aiywscrr/fjE7
+         a8BwClL8S79QbP/UvqwJ52EZroaNR3+OZkR5+r4aROlfktIltPsBlcZUgDvzQyECAIS+
+         DiHg==
+MIME-Version: 1.0
+X-Received: by 10.180.182.115 with SMTP id ed19mr33826005wic.29.1401813222926;
+ Tue, 03 Jun 2014 09:33:42 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Tue, 3 Jun 2014 09:33:42 -0700 (PDT)
+In-Reply-To: <84b54eb6-b8b3-498f-bcd3-dbd0574472e7@googlegroups.com>
+References: <af2049ba-2bb7-4fb8-8c53-232edc8894f7@googlegroups.com>
+	<718ea6de-5a7a-46e3-bbca-c9e3bfa1824b@googlegroups.com>
+	<84b54eb6-b8b3-498f-bcd3-dbd0574472e7@googlegroups.com>
+Date: Tue, 3 Jun 2014 18:33:42 +0200
+Message-ID: <CAAxEZd9VXEa5y0zETSbbTrTdFNJ08iT+pcxX-5GbeY1a07Y2LA@mail.gmail.com>
+Subject: Re: [opensport] Re: Access from external app
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+> This link is not working for me. Please help
+> http://footballdb.herokuapp.com/api/v1
+
+  Thanks. It's a know issue and will get fixed with the next update.
+The API docu moved to its own repo [1]. Note, all API service are
+working (just the start page fails - not the service/API calls).
+  Cheers.
+[1] github.com/openfootball/api
+

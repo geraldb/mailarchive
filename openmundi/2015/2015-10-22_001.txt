@@ -1,0 +1,58 @@
+From 6208491321142804480@xxx Thu Oct 22 15:17:11 +0000 2015
+X-GM-THRID: 6208491320153997312
+X-Received: by 10.182.153.169 with SMTP id vh9mr13543938obb.18.1445527030849;
+        Thu, 22 Oct 2015 08:17:10 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.182.231.167 with SMTP id th7ls753814obc.46.gmail; Thu, 22 Oct
+ 2015 08:17:10 -0700 (PDT)
+X-Received: by 10.182.196.34 with SMTP id ij2mr8556466obc.24.1445527030556;
+        Thu, 22 Oct 2015 08:17:10 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x229.google.com (mail-ig0-x229.google.com. [2607:f8b0:4001:c05::229])
+        by gmr-mx.google.com with ESMTPS id z7si207709igw.0.2015.10.22.08.17.10
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 22 Oct 2015 08:17:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::229 as permitted sender) client-ip=2607:f8b0:4001:c05::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x229.google.com with SMTP id g1so111253356igd.1
+        for <openmundi@googlegroups.com>; Thu, 22 Oct 2015 08:17:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=FvLlmrk8miHREzIXlbkiLWYSlnFC+6Z7+67xMfO2AVk=;
+        b=V+HuoeSVjbiI7GV9/JkTDFD0YDzCe2bF6JMdGfCf/qYwStHgodQw3zl+Ul0lzjx+wZ
+         yUtZilhwGeIlOtzjM4PiYHUkJX4fvvaOPqpQk8QQz51WQXHlWn7HY8maLpOpagkcIHzc
+         cIqP/R+oSdTOlx4CP9praW8j77FGushfksXlWw9Q2Lqt2aPxoUYGB+RnJuZdhMg3avrN
+         Ehq5cbtFtaArabxYahRsQm6pY4JuOlu5VkKB26uZ8ydYc2chxBCya/k+Ie1/rtNk4WWG
+         HVwdHgoJa3ViPYWfoU3Qn6J91rNxQq2CXhT0TRjCwHJslx8fOQ7hAVs5DT2a3BHApq0y
+         Rmcw==
+MIME-Version: 1.0
+X-Received: by 10.50.43.161 with SMTP id x1mr35055104igl.64.1445527030429;
+ Thu, 22 Oct 2015 08:17:10 -0700 (PDT)
+Received: by 10.107.138.29 with HTTP; Thu, 22 Oct 2015 08:17:10 -0700 (PDT)
+Date: Thu, 22 Oct 2015 17:17:10 +0200
+Message-ID: <CAAxEZd8j+jUdXouGe-n8-rCMjFtP661E6KZ+Hit6b67gnUBHFw@mail.gmail.com>
+Subject: World Factbook Cross-Referenced Country Codes Added - codes.csv
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  If anyone follows along I've added a new codes.csv [1] file that
+includes all cross-referenced country codes (from Appendix D)[2] e.g.
+GEC, ISO (A3, A3, NUM), STANAG, INTERNET.
+
+  The new tabular data file gets auto-built (generated) using a web
+scraper script [3].
+  Cheers.
+
+[1] github.com/factbook/factbook.csv/blob/master/codes.csv
+[2] www.cia.gov/library/publications/the-world-factbook/appendix/appendix-d.html
+[3] github.com/skriptbot/factbook.json/blob/master/scripts/mkxrefcodes.rb
+

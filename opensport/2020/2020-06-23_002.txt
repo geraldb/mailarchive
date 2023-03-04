@@ -1,0 +1,112 @@
+From 6841578535244529664@xxx Tue Jun 23 16:18:54 +0000 2020
+X-GM-THRID: 6841574442821222400
+X-Received: by 2002:a7b:c7d2:: with SMTP id z18mr25719916wmk.149.1592929133973;
+        Tue, 23 Jun 2020 09:18:53 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a5d:6507:: with SMTP id x7ls15202690wru.0.gmail; Tue, 23 Jun
+ 2020 09:18:53 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzn1ebYDPf8wngwlZt7hBFxfaMs+TSqFMzl30xkRH+wb+nmYCtGF7S5bIYsvV92ZHlmL4rw
+X-Received: by 2002:adf:ec4e:: with SMTP id w14mr27038274wrn.280.1592929133099;
+        Tue, 23 Jun 2020 09:18:53 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1592929133; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VEo0VElptmGok051Kyw9r5TNMQ40W2AIsLX9VIMMcHnNt5JrkeUYGqlnAl1TsriWce
+         vdSLHpxrsCCxKji85h8mVBnRBfoBveuUx5Wx/G7GLaKvpUtCmOQTNNb19MG63FuRKuP+
+         wSjt+EtT94KrWUmYY/CPXjw9jjvOXobSQzYKD5JyqwpUhyD+QSrkW0NnFpy/raaXTX2f
+         WqPJ+YIj/ScisNwhcqAqi8wm2VIMjMG/eN93YLkOF9m3yGvZU1fR8Ui1gqfh5CXy8/1x
+         YezWT4dSry5mZNEmQK9BSadhxvK3GsjaV+pvDCJmIZ/CxUZyRxlUHQg8X5Wu7/jlWQzO
+         +bDQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=uZdyR4iqLMW7z5UOqMhRPg3cuTe8S9nqzgBmSyEITWI=;
+        b=TbQGtNwqCnu4aAtY1NlhkKhPDZekRSalRCwUg3y4j9HnryKlAeHY0nNxX0AK9o6TKa
+         BBvhVWv+7wGr1tvEM5QZSUrytX31uJ+Y1EbVa5EgNOS9UVIEY8Td2zzrO0v3kOKcyodC
+         nzyDebMeDvlNm3a5lVlSM4SXGqudsKoO2X4wY9ldhtyhQnjAMiRtxOgXgq5WGx1ShniE
+         GSVq2OAkonUo95nyydsErZNXXOovXpXSNjCDzQ9+e23USSlAH+flpiIRQGq6COC/eOVk
+         L+a3xjAjx+8hh0MmWYgUrbeJJUikzFz7ifYEVu6XWAac0whwnSHTncdzZSJjHVUAs5An
+         5AFA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=mV4oVo1t;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::131 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x131.google.com (mail-lf1-x131.google.com. [2a00:1450:4864:20::131])
+        by gmr-mx.google.com with ESMTPS id 14si186943wmk.1.2020.06.23.09.18.53
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 23 Jun 2020 09:18:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::131 as permitted sender) client-ip=2a00:1450:4864:20::131;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=mV4oVo1t;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::131 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x131.google.com with SMTP id d21so9911829lfb.6
+        for <opensport@googlegroups.com>; Tue, 23 Jun 2020 09:18:53 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=uZdyR4iqLMW7z5UOqMhRPg3cuTe8S9nqzgBmSyEITWI=;
+        b=mV4oVo1t6dfsQ6jwlGATzUdHhohw/YvSb2iAqsXnFPS/FsojXqRFv5DN+YEjyRrvur
+         hqyL/xeMjKJX2FBKHVE7f2ezRJuUf26G/b0Sa6xuOV3SMlSEs1xBsbvQ3r7V4XgF7kJB
+         trVpDOnkpG3l3ld7uuz27caZSNF/fMh7xScuN2jG7xUzvD70N2rH5zC3+NLvPVC80j2S
+         GnVFI2TdbotOKMzEBKAaWQP6gw/EWhKYNESAcw54Pw2JifgV9dujoX4oXwk7LBr9ZQtX
+         zdP5yCm/O/6fmjfti5KKH1qc/VekkywQehKLHNfSBC5RtqhHKMXvCikXg8zT68pwY4Rf
+         yO5A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=uZdyR4iqLMW7z5UOqMhRPg3cuTe8S9nqzgBmSyEITWI=;
+        b=CERh6ZJdRrD7Zivz7u1yBbgT2N0zceN/LK75PrWpAjuvKJCvE02S6hRo7700Lj9dNy
+         n52AgfymsLgm/Cqwy1lU/isMsYIi9uLihEknShMJY8FvtMWuf7PU6MrbPMYEX6SlqrSc
+         sc1OrA+EGNzeRD7pf2395ZNaeqgiVhTgk2KpmqraBCZnD4YSOTLTT225DvdMEuIuVXCc
+         MJdVsJ2DbIQmBrBNK7PS329USYL7w818i5Rsxh4RIX0VukIwLuw1rF+WGO/LqArFqt1u
+         l3QGL79E+Wpiaz8Rn5CWoHTBkntNeLLZE2Face7ZoWBa8jfhMscEBv1Vc2AP19lnwDkD
+         O14Q==
+X-Gm-Message-State: AOAM531BR5AGzfqOkbjZEKaR03sH7ccNHKBSb67Y9kFeMAflFI5x4eOw
+	xAwezejJddKu//qSk7sZqyMyAlXImEQFZzqJzOJLztl/DLQ=
+X-Received: by 2002:a19:ca48:: with SMTP id h8mr13069781lfj.161.1592929131973;
+ Tue, 23 Jun 2020 09:18:51 -0700 (PDT)
+MIME-Version: 1.0
+References: <4ad97936-3063-4864-b4bd-491d72e3c056o@googlegroups.com>
+In-Reply-To: <4ad97936-3063-4864-b4bd-491d72e3c056o@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 23 Jun 2020 18:18:39 +0200
+Message-ID: <CAAxEZd_1hbR0PkmQqbnMy_x670eptreWDCzOei4oXo-3OVq3UA@mail.gmail.com>
+Subject: Re: [opensport] How update results ?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Guillaume,
+   Thanks for your offer and for trying.
+
+   The new plan is that I try to get an update pushed once a week on
+Wednesday (and after some week maybe or hopefully some automation
+going).   You can find the update scripts @
+https://github.com/yorobot/football.json
+
+   But yeah sorry - the reality is it always takes way longer,
+Anyways,  if you try to update you a single season it might be best to
+start from scratch, that is, write a new script / use your own script
+e.g. something like:
+
+require 'sportdb/readers'
+
+SportDb.connect( adapter:  'sqlite3',
+                 database: './england.db' )
+# build database schema (tables, indexes, etc.)
+SportDb.create_all
+
+# local copy, see [1]
+SportDb.read( './england/blob/master/2019-20/1-premierleague.txt' )
+
+and last step export to json
+maybe use script from football.json, see scripts/json.rb for example.
+
+All the best. Let us know how it goes or if you are stuck.  Cheers. Prost.
+
+
+[1] https://github.com/openfootball/england/blob/master/2019-20/1-premierleague.txt
+[2] https://github.com/yorobot/football.json/blob/master/scripts/json.rb
+

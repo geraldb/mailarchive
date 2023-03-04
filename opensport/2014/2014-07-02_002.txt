@@ -1,0 +1,58 @@
+From 1542666059776@xxx Tue Jun 16 00:16:58 +0000 2015
+X-GM-THRID: 1493700706304
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,368c905b115ccacc
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.0.162 with SMTP id 2mr5192016lbf.3.1404285278125;
+        Wed, 02 Jul 2014 00:14:38 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.27.168 with SMTP id u8ls200588lag.50.gmail; Wed, 02 Jul
+ 2014 00:14:37 -0700 (PDT)
+X-Received: by 10.112.1.70 with SMTP id 6mr114580lbk.16.1404285277550;
+        Wed, 02 Jul 2014 00:14:37 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x235.google.com (mail-wi0-x235.google.com [2a00:1450:400c:c05::235])
+        by gmr-mx.google.com with ESMTPS id x7si869329wiw.1.2014.07.02.00.14.37
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 02 Jul 2014 00:14:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::235 as permitted sender) client-ip=2a00:1450:400c:c05::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::235 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f181.google.com with SMTP id n3so9001346wiv.14
+        for <opensport@googlegroups.com>; Wed, 02 Jul 2014 00:14:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=TYj7V9OHCBB8r6w61xSdiA3hR07fp5kUZ7S5cz8Pdrk=;
+        b=qv2HPpsOv7NRMsDQgKeWq+67/kabxFLHCfoQjTrQf/N0g3ubTugJF+wyGvwD7DeSwH
+         v0CCpPtOso4gRzTyt49JeTmoohD8LnHocM//BCFfzXUmDXNNusd2nRL+Cj4YKXURBcLi
+         fZe2TtKcP1Hnvt3FdTzZv+AipYEmvy7RTAgpjeM3Txj1V+xZt7Z0o3WQmjo6Bx1Un66E
+         A2Vkxe6e1JzTk5KHFIdvXdmYQDpym8Pv/6BGqLKJUSp8gfnJU6fNkxW3IYj5xWm6aSum
+         ffaO/I/rB2He96iwwBMGmj88SGkVy+hPw/LiH+mTm0zA0gwi+Pp32abMTXMUQSpoOU1E
+         G+sw==
+MIME-Version: 1.0
+X-Received: by 10.180.72.38 with SMTP id a6mr42154787wiv.29.1404285277464;
+ Wed, 02 Jul 2014 00:14:37 -0700 (PDT)
+Received: by 10.216.253.201 with HTTP; Wed, 2 Jul 2014 00:14:37 -0700 (PDT)
+In-Reply-To: <781a1aab-ba9a-491a-8dfd-b1d62ee8d3d4@googlegroups.com>
+References: <aa075bde-4f3c-4e45-bc48-9c30c6a7d9a5@googlegroups.com>
+	<781a1aab-ba9a-491a-8dfd-b1d62ee8d3d4@googlegroups.com>
+Date: Wed, 2 Jul 2014 09:14:37 +0200
+Message-ID: <CAAxEZd8SubBAO+2-8CHo0dy-J9rxc_GGDvbSiqhnFd-ikjSmvw@mail.gmail.com>
+Subject: Re: [opensport] Re: Score1ot and score1p
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Thanks for reporting. Why not fix it? You know the procedure, eh?
+If you check the score in the source the after extra time (a.e.t)
+marker is missing. Cheers.
+

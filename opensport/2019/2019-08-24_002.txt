@@ -1,0 +1,109 @@
+From 6728807853086212096@xxx Sat Aug 24 18:51:04 +0000 2019
+X-GM-THRID: 6728805207557275648
+X-Received: by 2002:a5d:500c:: with SMTP id e12mr11581527wrt.213.1566672663547;
+        Sat, 24 Aug 2019 11:51:03 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:adf:ec43:: with SMTP id w3ls3351314wrn.14.gmail; Sat, 24 Aug
+ 2019 11:51:02 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqw0SoxxpGM5pkOG3iLgST9lU6h/NEbfgeXi6+BepnATw2ECJKqf6f45rUBRk9Utfi7qx8Wc
+X-Received: by 2002:adf:de02:: with SMTP id b2mr12550536wrm.204.1566672662781;
+        Sat, 24 Aug 2019 11:51:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1566672662; cv=none;
+        d=google.com; s=arc-20160816;
+        b=pzx/RVSZpeKZEXbZGE7DWnAvLplc/ROaOMzYfYZqQ4GBh2z6KRGT7ba1zxvWXTywo3
+         KmZNhacI/gFBdAb7hifiLeObF0HKL1+UL+NWvN5sdXQO9lctp1npX5rb+uJU3o0KW6tp
+         JTEx63dMoVVDrRAwdelq7od3zkw4Q140Ik2IHk8QAZBgPphS7jATsIMCbMhqqWi9ls0k
+         u23DVPJVVvGIUygg4yZYHE3miZ6tReu1DNbToO+cwnmeVU9aUuW/0Fp2lRlkafsFPChj
+         cjB4HD4HWuJDmSh/ZF5Izl1EOLoMxh7MVP8Jx1LR89v1tNBg+K070NVWifSfzCXGHM+g
+         UTUw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=RuIk4VSbtT2z/z93JpnPlGr3jJopgxr5FN+NQgFIeFU=;
+        b=su/QdlocFSs1iXrmmYtGMJfXOpolFvxDM5MSTCjXVl3ENHFCSI2CE1CtZo7nLiAZgV
+         9VKNrtez6/avgPYGRMFzBUvEG/xx3x7C3mmau/UF+EOPcp7yY6LbvSf9bW5n/8bB3veS
+         48kPQlPqmkzrvQvJrt/naTcAtQdpa0Su0Hd/uEzv2t7MX13PxCasS/r6oL9C7p5uFK1+
+         hnImki40Ij5d4WDsJlc2WxRb9O5Jnv3zxS4MKSG7wCMNRJU7nc4WK8hcNcLhC5Uzo2Ti
+         KoqDmsi2BphVEc/prCnnXiDt5xZhuwEtQ8CHH4huZoMj9/30elRKCfiD8Cue+htzMuGz
+         PVmA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Bs1SCODe;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::130 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x130.google.com (mail-lf1-x130.google.com. [2a00:1450:4864:20::130])
+        by gmr-mx.google.com with ESMTPS id o4si344962wrp.4.2019.08.24.11.51.02
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 24 Aug 2019 11:51:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::130 as permitted sender) client-ip=2a00:1450:4864:20::130;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Bs1SCODe;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::130 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x130.google.com with SMTP id f21so4463587lfc.5
+        for <opensport@googlegroups.com>; Sat, 24 Aug 2019 11:51:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=RuIk4VSbtT2z/z93JpnPlGr3jJopgxr5FN+NQgFIeFU=;
+        b=Bs1SCODeZRZpsMO4N1PYnbpbvbT1x3fMKZ0JBCJfB1k/Xkfe0ldOQOLGn2uEUKRaPZ
+         vGcIdrM+ScbjKYAsW6umwPor8JZj8GafK/icmwosmESs6Qb8b3toRvyirsyySea+byZ4
+         8cGWvNgKVK5bRVCDWXcXqzruLj5TjLLdO8rI7ilmVbhL26hucWjwSOSlxqaVKzRrE2QK
+         9JEQn6HdK8KiNVIiEfUwhFZqgt2Nupo2S/HRVrBDGHtCcfY8gQEEr1UwVF2960OVeqZx
+         Pw14A030HLjUvy6kX/hHkF9PQw1TYLE6h9EymdZ/MGY7vxSfv43r+TCLxOeXA7iz/dXL
+         MUuw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=RuIk4VSbtT2z/z93JpnPlGr3jJopgxr5FN+NQgFIeFU=;
+        b=LGWJQtg0M7KpbA0Z6hPjC243r9jZwhy0KpOyX6FXhguZr07fEAnCi4sk7tbvazbwp7
+         bc728tE9J1JDeBCLfpqzB0WhQtMtFk697CYDnuDTlKGvi3b7o/G7eSK726FNyRwz0PVR
+         kNb8Gds+LZ2iu3CnQqQKfDWLUwjc75yjxR18n5vIAfBkBAhCdsGjW+ncnn/VB52lC7tZ
+         f7k4uOWPQq0xZjN/n3zTacAHgO9wgPDP86nKgqWcG3VXXDCTk1E4C4O87N5vizk4aKGK
+         PHFoBI7s9b88zzAH++f2Iq2iX0Jxk0Rbsi+sacygky2suh2+ftEmpW4Vj2ouHiJBUso6
+         nl8w==
+X-Gm-Message-State: APjAAAXm/RkSoid1AZV+M/I7P6HQ54QubN09WFKxoWGjSYWNJxf1I+ef
+	sd2bYyFPdn4zRQ45lMw3Hs9ooaMzEIP18O+cSKA7K0cqfGM=
+X-Received: by 2002:ac2:5194:: with SMTP id u20mr6235755lfi.40.1566672662065;
+ Sat, 24 Aug 2019 11:51:02 -0700 (PDT)
+MIME-Version: 1.0
+References: <77d31082-fa86-46b0-8d5e-28fc12857bb8@googlegroups.com>
+In-Reply-To: <77d31082-fa86-46b0-8d5e-28fc12857bb8@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 24 Aug 2019 20:50:50 +0200
+Message-ID: <CAAxEZd_xQQem8_GLQXEiNsAGimGT5EuJLJFy5sdGZhPMaR1zuQ@mail.gmail.com>
+Subject: Re: [opensport] Maintainer openfootball/es-espana
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Welcome to football.db. Again thanks for your contributions.  Yes,
+the repo gets updated mostly by hand - the idea is to make it work
+like wikipedia / like a wiki and over time add more information e.g.
+goals, etc.
+
+  For auto-generated / auto-updated / auto-formated match datafiles
+there's the sister project called football.csv, see
+https://github.com/footballcsv    so that might a better fit for your
+ideas / scripts.
+
+  For now the football.csv get sourced from Joseph Buchdahl's Football
+Data website
+that gets updated twice a week and includes the secunda division too
+(as far as I can remember), see
+https://github.com/yorobot/football.csv/tree/master/sportdb-source-footballdata
+
+   Sorry that I don't have an easy yes or no answer.  Yes,
+auto-updates are welcome for football.csv  (but for now not for
+football.db) - in the next months the football.csv will, of course,
+sync and double-check hand-edited datafiles - but sorry for now the
+focus is on improving the football.csv  auto-update infrastructure.
+
+   The football.csv format is designed for automation and processing
+with scripts.  Not sure if that makes sense.  Again you're welcome to
+join and help or since the project is by design decentralized you're
+welcome to keep your own datasets up-to-date and we can sync or share
+from time to time.      Not sure if that makes sense.   Cheers. Prost.
+

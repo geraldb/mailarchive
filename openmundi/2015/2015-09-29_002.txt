@@ -1,0 +1,63 @@
+From 6199842244353064960@xxx Tue Sep 29 07:54:20 +0000 2015
+X-GM-THRID: 6199842246145081344
+X-Received: by 10.107.9.212 with SMTP id 81mr22311468ioj.19.1443513260245;
+        Tue, 29 Sep 2015 00:54:20 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.107.30.65 with SMTP id e62ls1958682ioe.49.gmail; Tue, 29 Sep
+ 2015 00:54:19 -0700 (PDT)
+X-Received: by 10.66.182.162 with SMTP id ef2mr22599749pac.35.1443513259961;
+        Tue, 29 Sep 2015 00:54:19 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x233.google.com (mail-ig0-x233.google.com. [2607:f8b0:4001:c05::233])
+        by gmr-mx.google.com with ESMTPS id mh4si1740758igb.0.2015.09.29.00.54.19
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 29 Sep 2015 00:54:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::233 as permitted sender) client-ip=2607:f8b0:4001:c05::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x233.google.com with SMTP id ni9so1221304igb.0
+        for <openmundi@googlegroups.com>; Tue, 29 Sep 2015 00:54:19 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=1/8iahu33AQn1/HdiDD3QnZCkEkTGyCXykOqv4C2nck=;
+        b=Re+jyqlyT4/BnjrHrfwKvxnshHKU6JOLMpJkRzpnIeKcBbwIgtjDEIGincm4eiyR0V
+         2P0AJQM9VHlB386YxURfFHHoDv2a2svqddAGxo2V0aMrxdCwGXq0A3ivBJV2JlZ2HLyB
+         bKD+GuxEBQR8ia55+HiARkTv+o0z4EUS9LJUddFM1lWZYqa4JOKmr/6gmZNFCHkMcK5T
+         NVoIkQQ4GZ9hHSJNJlom4U/LasKtnaYJq2QMRrJ3A/s2+aPlXRIrTNHgKJjuEc9C+h/1
+         dFk6C85kLoJeZ8NLakb1bpcDxkEDO4bRMRbrE29Uqk4Zuhn84tFvIXemQ9MOtuGV7cLk
+         JfpA==
+MIME-Version: 1.0
+X-Received: by 10.50.152.33 with SMTP id uv1mr2445631igb.7.1443513259810; Tue,
+ 29 Sep 2015 00:54:19 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Tue, 29 Sep 2015 00:54:19 -0700 (PDT)
+Date: Tue, 29 Sep 2015 09:54:19 +0200
+Message-ID: <CAAxEZd9GSO8nSJjwJ02_RtRn34njGN4e-JhR=ccbP_=0pbvhpQ@mail.gmail.com>
+Subject: New GitHub Org /factbook - Free Open Public Domain Data :: 250+
+ Country Profiles (Incl. Flags 'n' Maps)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   I've moved the factbook country profiles to a new GitHub org, that
+is, /factbook [1].
+
+  Now you can find all 250+ "chrome-less" country profiles in the
+/factbook.github.io site repo. Or browse the "live" site - see the
+country profile of Austria [2] or Belgium [3], for example.
+
+  Note, I've also moved the /factbook.json [4] repo over to the new org.
+
+  Cheers.
+
+[1] github.com/factbook
+[2] factbook.github.io/au
+[3] factbook.github.io/be
+[4] github.com/factbook/factbook.json
+

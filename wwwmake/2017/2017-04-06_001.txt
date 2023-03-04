@@ -1,0 +1,88 @@
+From 6406170139480293376@xxx Fri Apr 07 08:11:57 +0000 2017
+X-GM-THRID: 6406170137222709248
+X-Received: by 10.99.95.82 with SMTP id t79mr15137129pgb.95.1491552716748;
+        Fri, 07 Apr 2017 01:11:56 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.157.42.55 with SMTP id t52ls1017699ota.7.gmail; Fri, 07 Apr
+ 2017 01:11:56 -0700 (PDT)
+X-Received: by 10.237.36.165 with SMTP id t34mr13330855qtc.50.1491552716460;
+        Fri, 07 Apr 2017 01:11:56 -0700 (PDT)
+Received: by 10.202.221.131 with SMTP id u125msoig;
+        Thu, 6 Apr 2017 13:17:43 -0700 (PDT)
+X-Received: by 10.157.18.211 with SMTP id g77mr618784otg.8.1491509863201;
+        Thu, 06 Apr 2017 13:17:43 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Thu, 6 Apr 2017 13:17:42 -0700 (PDT)
+From: Brian Forsythe <brian.t.forsythe@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <13f542c8-23e0-4fc8-9d35-30750be86bfc@googlegroups.com>
+Subject: Problems with Slide Show (S9) ignoring headers
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_26_711079422.1491509862882"
+X-Google-Token: EObEmscFgp-_QXco98o0
+X-Google-IP: 75.118.55.89
+
+------=_Part_26_711079422.1491509862882
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_27_544202036.1491509862882"
+
+------=_Part_27_544202036.1491509862882
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I'm using the Slide Show (S9) Ruby gem (wow this project needs a better 
+name) to generate slide shows from Markdown. I've attempted to use several 
+of the templates, and I'm somehow specifying my headers incorrectly. 
+Examining the generated html, it looks like where the header value would be 
+(such as theme), it's empty. My latest attempt has been 
+with https://github.com/slideshow-templates/slideshow-reveal.js
+
+Here is my simple example *index.md*:
+
+author: Me Me
+title: Boo, No Theme
+theme: league
+
+## Foo
+
+foo
+
+## Bar
+
+bar
+
+
+Running *slideshow build -t reveal.js index.md* doesn't pick up the theme, 
+for starters. What am I doing wrong? Could this be a Ruby version issue? 
+I'm using 2.4.0p0
+
+Thanks,
+Brian
+
+------=_Part_27_544202036.1491509862882
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I&#39;m using the Slide Show (S9) Ruby gem (wow this proje=
+ct needs a better name) to generate slide shows from Markdown. I&#39;ve att=
+empted to use several of the templates, and I&#39;m somehow specifying my h=
+eaders incorrectly. Examining the generated html, it looks like where the h=
+eader value would be (such as theme), it&#39;s empty. My latest attempt has=
+ been with=C2=A0https://github.com/slideshow-templates/slideshow-reveal.js<=
+div><br></div><div>Here is my simple example <i>index.md</i>:</div><div><br=
+></div><div><blockquote class=3D"gmail_quote" style=3D"margin: 0px 0px 0px =
+0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;"></blo=
+ckquote></div><blockquote style=3D"margin: 0 0 0 40px; border: none; paddin=
+g: 0px;"><div><div>author: Me Me</div></div><div><div>title: Boo, No Theme<=
+/div></div><div><div>theme: league</div></div><div><div><br></div></div><di=
+v><div>## Foo</div></div><div><br></div><div>foo</div><div><br></div><div>#=
+# Bar</div><div><br></div><div>bar</div></blockquote><div><br></div><div>Ru=
+nning=C2=A0<b>slideshow build -t reveal.js index.md</b>=C2=A0doesn&#39;t pi=
+ck up the theme, for starters. What am I doing wrong? Could this be a Ruby =
+version issue? I&#39;m using 2.4.0p0<br></div><div><br></div><div>Thanks,</=
+div><div>Brian</div></div>
+------=_Part_27_544202036.1491509862882--
+
+------=_Part_26_711079422.1491509862882--
+

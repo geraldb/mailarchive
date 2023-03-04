@@ -1,0 +1,59 @@
+From 1476287004672@xxx Tue Jun 16 00:16:55 +0000 2015
+X-GM-THRID: 1443995058176
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b420b99f7c108f3c
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.37.100 with SMTP id x4mr147419laj.6.1404075978750;
+        Sun, 29 Jun 2014 14:06:18 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.197.1 with SMTP id iq1ls206432lac.18.gmail; Sun, 29 Jun
+ 2014 14:06:17 -0700 (PDT)
+X-Received: by 10.112.142.106 with SMTP id rv10mr3854442lbb.5.1404075977427;
+        Sun, 29 Jun 2014 14:06:17 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x233.google.com (mail-we0-x233.google.com [2a00:1450:400c:c03::233])
+        by gmr-mx.google.com with ESMTPS id l9si327267wiy.2.2014.06.29.14.06.17
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 29 Jun 2014 14:06:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::233 as permitted sender) client-ip=2a00:1450:400c:c03::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f179.google.com with SMTP id w62so7344950wes.10
+        for <opensport@googlegroups.com>; Sun, 29 Jun 2014 14:06:17 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=DDkTc1oOGI8b0KQCbsKiX557scnii83jn5iKCUYrlfc=;
+        b=TTBhmr44uTY29vgMeyo13ssx9Iy0Mdr8i4dQKKas/8+vN3eVVLYR6Hyqe4rPSzM+K1
+         q/QnzlBDLa2yPro05E7DRKLRHWFXKHVk6TGpca1BGEJdHAipq7F20sYVM5B4ICLwZ2hD
+         4A3XWy5HrFD8mM8gzvGVEqRt3m4pI+95u+plhEwB0puqnCONi5zJmOAxqDT/iCf7IlNa
+         3UddMq/KyKB4FIRIWVxMN+rlnT5EFytlkEuMnOa4Q44RIKyRmHNbQH193Y07P5jZDJ+L
+         DuijgTmJUc9OxsV78AN9GY5s4lhx2Ns6xpcUyoqZKHtzGh6vfD+vW4sE5ZlzhMkloTUO
+         KZLw==
+MIME-Version: 1.0
+X-Received: by 10.194.186.178 with SMTP id fl18mr4349779wjc.83.1404075977313;
+ Sun, 29 Jun 2014 14:06:17 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Sun, 29 Jun 2014 14:06:17 -0700 (PDT)
+In-Reply-To: <CAAxEZd-dXv9CA4o+s8GhX9izd-tMnvDgzkFZL_2GFUUbVXhOVw@mail.gmail.com>
+References: <8ef4037c-46cf-4d5f-a582-05fa64e3c2d9@googlegroups.com>
+	<CAAxEZd-dXv9CA4o+s8GhX9izd-tMnvDgzkFZL_2GFUUbVXhOVw@mail.gmail.com>
+Date: Sun, 29 Jun 2014 23:06:17 +0200
+Message-ID: <CAAxEZd-cMT2CHPoMh4On8Pw_Qn+6unERLA57T9Hy9u8tHq=GQA@mail.gmail.com>
+Subject: Re: [opensport] MLS Data
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Carl,
+
+  FYI: To make it easier I moved the teams from the United States and
+Canada to its own repo, that is, major-league-soccer [1].  I also
+added the first matchday for 2014 as an example. Cheers.
+
+[1] github.com/openfootball/major-league-soccer
+

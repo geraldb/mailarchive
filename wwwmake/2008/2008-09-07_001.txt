@@ -1,0 +1,37 @@
+From 147317587968@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 147970850816
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,cb31021198251936,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Received: by 10.150.49.11 with SMTP id w11mr358571ybw.20.1220766250010; Sat, 
+	06 Sep 2008 22:44:10 -0700 (PDT)
+Date: Sat, 6 Sep 2008 22:44:09 -0700 (PDT)
+In-Reply-To: <webslideshow.c3fc31d8d2c7ad23@pages.googlegroups.com>
+X-IP: 72.129.61.186
+References: <webslideshow.c3fc31d8d2c7ad23@pages.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: 6Ly1yQwAAADxSUtw_uEC2bWF_34cGBeb
+X-Google-Wiki: Ci4IAhCj2p6WjbuM/sMBGAcgCCoIZm9ybXVsYXMw+tbkAjoMd2Vic2xpZGVzaG93
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.1) 
+	Gecko/2008072820 Firefox/3.0.1,gzip(gfe),gzip(gfe)
+Message-ID: <de2dc371-f9d2-4cd4-a8e3-d70a30d3c7bf@a2g2000prm.googlegroups.com>
+Subject: Discussion on formulas
+From: David Romano <david.romano@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+X-Google-Approved: gerald@vanbeta.com via email at 2008-09-07 05:52:14
+
+Integrating ASCIIMathML and S9 with Markdown initially seemed
+problematic, since Markdown reserves the backtick (`) for code blocks.
+The solution is to use double backticks, latex-style math embedding,
+or even the new auto-recognition mode:
+
+<ul>
+<li><code>`` `x^3` ``</code> or</li>
+<li><code>$x^3$</code> or even</li>
+<li><code>amath x^3 endamath</li>
+</ul>
+

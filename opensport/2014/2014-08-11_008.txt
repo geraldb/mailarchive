@@ -1,0 +1,95 @@
+From 1988960976896@xxx Tue Jun 16 00:16:50 +0000 2015
+X-GM-THRID: 1954653667328
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,28e41e751bb6f799
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.157.231 with SMTP id wp7mr3768494lbb.1.1407742401558;
+        Mon, 11 Aug 2014 00:33:21 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.208.99 with SMTP id md3ls441535wic.9.canary; Mon, 11 Aug
+ 2014 00:33:21 -0700 (PDT)
+X-Received: by 10.180.12.244 with SMTP id b20mr1526082wic.2.1407742401208;
+        Mon, 11 Aug 2014 00:33:21 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22e.google.com (mail-wg0-x22e.google.com [2a00:1450:400c:c00::22e])
+        by gmr-mx.google.com with ESMTPS id d9si1066317wie.3.2014.08.11.00.33.21
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 11 Aug 2014 00:33:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) client-ip=2a00:1450:400c:c00::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f46.google.com with SMTP id m15so8092915wgh.29
+        for <opensport@googlegroups.com>; Mon, 11 Aug 2014 00:33:21 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type:content-transfer-encoding;
+        bh=xNludGp4aLGu2F9BN0XlXeQlOhE0sbh1e6FE7jYfg8Y=;
+        b=G8VSCWS37DIk6PNIjCfaKKinvhe9kJpI+vQRIx5/exLAesehaNaQH3Ajsaz6m8HSfB
+         3uekbYiaotMMrBMSug0a+aE0TQDmaBWjuHElHTRLCGN+0m718eBkH6GKYIHU3JMNbg3I
+         E/UJE3/+OgZvr6bwmCZUlIEwJr4J7KA7XrjASyv0u3VkeODwxi8YuMwSuw1kmNWY2KdF
+         7/uwa2cpXwYJpge36S8p75NfBLJDC54hsMmBtK8KIJOGCEMNgdi5C7B57GH93UG6L2Zf
+         4gXNMOt7FJdU2DJm+0RuCj8OTI4NMMBHZxnjfRdsycs5j/iflKx4KM7Kfv98ukPCXnUo
+         wRbA==
+MIME-Version: 1.0
+X-Received: by 10.194.78.100 with SMTP id a4mr9779624wjx.106.1407742401115;
+ Mon, 11 Aug 2014 00:33:21 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Mon, 11 Aug 2014 00:33:21 -0700 (PDT)
+In-Reply-To: <3163a25d-e521-412e-ae41-a7545124561e@googlegroups.com>
+References: <CAAxEZd8ARpY4eXoah2aBbnwtVj1v5ttkXBGkve79YHHav7AwMw@mail.gmail.com>
+	<3163a25d-e521-412e-ae41-a7545124561e@googlegroups.com>
+Date: Mon, 11 Aug 2014 09:33:21 +0200
+Message-ID: <CAAxEZd8dy73z1E0-CB-mrSiTdn+ABvRJ-y3M_sfkqcjP6tvhzg@mail.gmail.com>
+Subject: Re: [opensport] Re: Preparing /fr-france - Ligue 1 n Ligue 2 for
+ build (and JSON HTTP API upload)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Cc: David Alvarez <d4vidalvarez@gmail.com>
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   FYI: The HTTP JSON API for the Ligue 1 [1] and Ligue 2 are now live.
+
+   Note, there are still some minor parsing errors - that is, about
+ten matches are missing - will correct it later today (or tomorrow).
+
+  More important - some minor changes to the match schedule format:
+
+ ** Please, use dashes for results in the future (I will change the
+results shortly) e.g.
+
+  2:1    becomes    2-1
+  0:0    becomes    0-0
+  and so on
+
+
+   I will also change the hour format a little e.g.
+
+   20.00   becomes 20h00
+   17.30   becomes 17h30
+   and so on
+
+  And lastly another minor improvement - sorry - but it all adds up:
+
+[Ven 8. Ao=C3=BBt]   becomes  [Ven 8 Ao=C3=BBt]
+[Sam 9. Ao=C3=BBt]  becomse  [Sam 9 Ao=C3=BBt]   - well, it will be optiona=
+l
+(that is,) both supported, that is, with or without dot (.).
+
+   Again the HTTP JSON API should now work e.g. try
+
+  footballdb.herokuapp.com/api/v1/event/fr.2014_15/teams
+  footballdb.herokuapp.com/api/v1/event/fr.2.2014_15/teams
+
+  and so on. Cheers.
+
+
+[1] footballdb.herokuapp.com/fr.2014_15
+[2] footballdb.herokuapp.com/fr.2.2014_15
+

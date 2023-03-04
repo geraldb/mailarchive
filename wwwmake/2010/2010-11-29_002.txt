@@ -1,0 +1,57 @@
+From 785344626688@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 783181414400
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,9623735925b1306e,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.229.234.69 with SMTP id kb5mr638988qcb.11.1291059881466;
+        Mon, 29 Nov 2010 11:44:41 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.187.75 with SMTP id cv11ls42547vcb.5.p; Mon, 29 Nov 2010
+ 11:44:40 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.220.177.67 with SMTP id bh3mr217298vcb.47.1291059880213; Mon,
+ 29 Nov 2010 11:44:40 -0800 (PST)
+Received: by a7g2000vbz.googlegroups.com with HTTP; Mon, 29 Nov 2010 11:44:40
+ -0800 (PST)
+Date: Mon, 29 Nov 2010 11:44:40 -0800 (PST)
+X-IP: 140.254.106.234
+User-Agent: G2/1.0
+X-Google-Token: EKiF0OcEd1p7_N6lPzM0
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_5; en-us)
+ AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4,gzip(gfe)
+Message-ID: <b41aa107-f74f-4a1b-ab6d-e846fd140595@a7g2000vbz.googlegroups.com>
+Subject: installing templates from github using -f not working
+From: dsanson <dsanson@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+As explained here:
+
+    https://github.com/dsanson/s6clean/issues/#issue/1
+
+commands like
+
+    $ slideshow -f http://github.com/geraldb/slideshow-s5-blank/raw/master/s5blank.txt
+
+don't seem to be working: github returns a 301 error and fails to
+download s5blank.txt. It is easy enough to install manually by cloning
+the github repo to ~/.slideshow/templates.
+
+Perhaps the problem is that github is redirecting to https?
+
+   $ wget http://github.com/geraldb/slideshow-s5-blank/raw/master/s5blank.txt
+
+redirects to https, and then chokes complaining that "certificate
+common name `*.github.com' doesn't match requested host name
+`github.com'." And
+
+   $ slideshow -f https://github.com/geraldb/slideshow-s5-blank/raw/master/s5blank.txt
+
+fails with an
+
+   *** error: 400 Bad Request
+
+Best,
+David
+

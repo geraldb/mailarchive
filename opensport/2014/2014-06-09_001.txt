@@ -1,0 +1,96 @@
+From 1147275313152@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1139132071936
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,db709630c6bd70e1
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.78.41 with SMTP id f29mr2282036yhe.52.1402331226631;
+        Mon, 09 Jun 2014 09:27:06 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.96.201 with SMTP id k67ls1670372qge.22.gmail; Mon, 09 Jun
+ 2014 09:27:06 -0700 (PDT)
+X-Received: by 10.140.97.166 with SMTP id m35mr29218qge.28.1402331226269;
+        Mon, 09 Jun 2014 09:27:06 -0700 (PDT)
+X-Google-Doc-Id: 22a2e94e21c942f9
+X-Google-Web-Client: true
+Date: Mon, 9 Jun 2014 09:27:05 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <511a8427-db58-46e6-b5a7-3dd06f3ae357@googlegroups.com>
+In-Reply-To: <3f59ae93-8016-4d24-a8db-bde622f618ab@googlegroups.com>
+References: <3f59ae93-8016-4d24-a8db-bde622f618ab@googlegroups.com>
+Subject: Re: Basic Rails Question
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_477_6193892.1402331225502"
+X-Google-Token: ENnA15wFqsstCcU_wKg0
+X-Google-IP: 193.110.28.9
+
+------=_Part_477_6193892.1402331225502
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_478_20363262.1402331225506"
+
+------=_Part_478_20363262.1402331225506
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+   Using the sportdb gem in Rails app add it your Gemfile [1] e.g.
+
+gem 'rails'
+gem 'worlddb', '2.0.3'
+gem 'sportdb', '1.8.9'
+...
+  
+  you can see an example Gemfile for example in the sport.db.admin Rails 
+app [2] - it's actually an Rails engine inside an app, thus, look inside 
+the engine/ folder for the app source code [3] (and not inside the "outer" 
+app hosting the engine").
+
+  Cheers.
+
+PS: It might actually be easier to start w/ Sinatra.  See a single-file API 
+server  known as sport.db.api.starter [4]. Again check the Gemfile. It's 
+just:
+
+source 'http://rubygems.org'
+
+gem 'sinatra', :require => 'sinatra/base'
+
+gem 'sportdb'
+gem 'sqlite3'
+
+[1] github.com/sportdb/sport.db.admin/blob/master/Gemfile
+[2] github.com/sportdb/sport.db.admin
+[3] github.com/sportdb/sport.db.admin/tree/master/engine
+[4] github.com/sportdb/sport.db.api.starter
+
+
+
+------=_Part_478_20363262.1402331225506
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<div><br></div><div>&nbsp; &nbsp;Using the sportdb g=
+em in Rails app add it your Gemfile [1] e.g.</div><div><br></div><div><div>=
+gem 'rails'</div><div>gem 'worlddb', '2.0.3'</div><div>gem 'sportdb', '1.8.=
+9'</div><div>...</div></div><div>&nbsp;&nbsp;</div><div>&nbsp; you can see =
+an example Gemfile for example in the sport.db.admin Rails app [2] - it's a=
+ctually an Rails engine inside an app, thus, look inside the engine/ folder=
+ for the app source code [3] (and not inside the "outer" app hosting the en=
+gine").</div><div><br></div><div>&nbsp; Cheers.</div><div><br></div><div>PS=
+: It might actually be easier to start w/ Sinatra. &nbsp;See a single-file =
+API server &nbsp;known as sport.db.api.starter [4]. Again check the Gemfile=
+. It's just:<br></div><div><br></div><div><div>source 'http://rubygems.org'=
+</div><div><br></div><div>gem 'sinatra', :require =3D&gt; 'sinatra/base'</d=
+iv><div><br></div><div>gem 'sportdb'</div><div>gem 'sqlite3'</div></div><di=
+v><br></div><div>[1]&nbsp;github.com/sportdb/sport.db.admin/blob/master/Gem=
+file</div><div>[2]&nbsp;github.com/sportdb/sport.db.admin</div><div>[3] git=
+hub.com/sportdb/sport.db.admin/tree/master/engine</div><div>[4]&nbsp;github=
+.com/sportdb/sport.db.api.starter</div><div><br></div><div><br></div></div>
+------=_Part_478_20363262.1402331225506--
+
+------=_Part_477_6193892.1402331225502--
+

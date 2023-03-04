@@ -1,0 +1,100 @@
+From 6184827253058174976@xxx Wed Aug 19 20:48:30 +0000 2015
+X-GM-THRID: 6184823423606194176
+X-Received: by 10.52.97.232 with SMTP id ed8mr12016862vdb.9.1440017310182;
+        Wed, 19 Aug 2015 13:48:30 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.182.111.199 with SMTP id ik7ls106892obb.13.gmail; Wed, 19 Aug
+ 2015 13:48:30 -0700 (PDT)
+X-Received: by 10.182.102.1 with SMTP id fk1mr11838401obb.28.1440017309995;
+        Wed, 19 Aug 2015 13:48:29 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x229.google.com (mail-ig0-x229.google.com. [2607:f8b0:4001:c05::229])
+        by gmr-mx.google.com with ESMTPS id ct10si358702igb.1.2015.08.19.13.48.29
+        for <beerdb@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 19 Aug 2015 13:48:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::229 as permitted sender) client-ip=2607:f8b0:4001:c05::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x229.google.com with SMTP id j19so15904579igf.1
+        for <beerdb@googlegroups.com>; Wed, 19 Aug 2015 13:48:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=GbJNn0E3JFtB5h6ppBqAxkKcuLIuYY8D8UvhWwaRNE8=;
+        b=Rw7rWWSYQe9c/J1FgVngF4jeWKuhqrimpfC6h1tFUNHTCPN3ENIig3jHZXESGxQfSl
+         ePHLs76357cR5rEO89a97D0QT2Y3pkxz7DBvMVc3dkkKoeUbE/XTaW4Rn4s9U2/xwcnv
+         +5ys9pgACcwXyvdU4j+2/NmlBJdfK2sNFIQRks41UPtAYh0npfkqAKWjXyvgUj1cD1fq
+         7OiuAqraE3wKhLla+EdLYe1ZEiPGNyEY6kCb+L8xObFi/5XOVRc4HXOa/67lEjtbFJTs
+         2R3cRU2JzZPT1ww3c1s00qgKPHnFxGreBk4Ofuh93d7QMR3jMV/kcLfKGncphbGGkzUN
+         CyYg==
+MIME-Version: 1.0
+X-Received: by 10.50.20.170 with SMTP id o10mr20945754ige.86.1440017309735;
+ Wed, 19 Aug 2015 13:48:29 -0700 (PDT)
+Received: by 10.107.15.196 with HTTP; Wed, 19 Aug 2015 13:48:29 -0700 (PDT)
+In-Reply-To: <44a7e9c8-c0ee-442e-bf3d-0b5ad67db49e@googlegroups.com>
+References: <44a7e9c8-c0ee-442e-bf3d-0b5ad67db49e@googlegroups.com>
+Date: Wed, 19 Aug 2015 22:48:29 +0200
+Message-ID: <CAAxEZd9mZVRE7q4+T50OKDq7fR7xqsH7CNmRXbvGTmrP=BweUw@mail.gmail.com>
+Subject: Re: [beerdb] Is there a simple way to convert these txt files into
+ json formatted databases?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: multipart/alternative; boundary=047d7bd757d237a0d6051db028be
+
+--047d7bd757d237a0d6051db028be
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Your second question:
+
+> And furthermore - what format is this?
+
+   The format is "just" an extended version of the comma-separated values
+(CSV) format. The beerdb. parser/reader supports two versions:
+
+  The classic (all fields in a single-line) version and a "modern"
+multi-line version. That's what this looks like:
+
+[boston]
+Boston Beer Co. (Samuel Adams)|Boston Beer Company, 1984
+city:boston
+Boston | MA 02130 // 30 Germania St.
+
+   is basically the same as:
+
+boston, Boston Beer Co. (Samuel Adams)|Boston Beer Company, 1984,
+city:boston, Boston | MA 02130 // 30 Germania St.
+
+  This is just a comment line:
+   ####################################################
+
+
+  Cheers.
+
+--047d7bd757d237a0d6051db028be
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hello,<br><br></div>=C2=A0=C2=A0 Your second question=
+:<br><br>&gt; And furthermore - what format is this?<br><div><br></div><div=
+>=C2=A0=C2=A0 The format is &quot;just&quot; an extended version of the com=
+ma-separated values (CSV) format. The beerdb. parser/reader supports two ve=
+rsions:<br><br></div><div>=C2=A0 The classic (all fields in a single-line) =
+version and a &quot;modern&quot; multi-line version. That&#39;s what this l=
+ooks like:<br><br>[boston]<br><div> Boston Beer Co. (Samuel Adams)|Boston B=
+eer Company, 1984<br> city:boston<br> Boston | MA 02130 // 30 Germania St.<=
+br> <br></div><div>=C2=A0=C2=A0 is basically the same as:<br><br>boston, Bo=
+ston Beer Co. (Samuel Adams)|Boston Beer Company, 1984, city:boston, Boston=
+ | MA 02130 // 30 Germania St.<br></div><div><br></div><div>=C2=A0 This is =
+just a comment line:<br>=C2=A0=C2=A0 ######################################=
+##############<br><br></div><div><br></div><div>=C2=A0 Cheers.<br></div></d=
+iv><div class=3D"gmail_extra"><br></div></div>
+
+--047d7bd757d237a0d6051db028be--
+

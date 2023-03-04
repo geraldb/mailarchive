@@ -1,0 +1,63 @@
+From 201825714176@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 200310521856
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,f95ca3b7efa5b201,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.150.227.14 with SMTP id z14mr282136ybg.9.1224045949160;
+        Tue, 14 Oct 2008 21:45:49 -0700 (PDT)
+Return-Path: <gerald@vanbeta.com>
+Received: from nf-out-0910.google.com (nf-out-0910.google.com [64.233.182.186])
+        by mx.google.com with ESMTP id 22si11711328yxr.1.2008.10.14.21.45.48;
+        Tue, 14 Oct 2008 21:45:49 -0700 (PDT)
+Received-SPF: neutral (google.com: 64.233.182.186 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=64.233.182.186;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 64.233.182.186 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by nf-out-0910.google.com with SMTP id c10so1197808nfd.44
+        for <webslideshow@googlegroups.com>; Tue, 14 Oct 2008 21:45:48 -0700 (PDT)
+Received: by 10.210.43.11 with SMTP id q11mr549738ebq.192.1224045947703;
+        Tue, 14 Oct 2008 21:45:47 -0700 (PDT)
+Received: by 10.210.118.6 with HTTP; Tue, 14 Oct 2008 21:45:47 -0700 (PDT)
+Message-ID: <1f058eab0810142145l59003e80ha0ebfcadda12c00@mail.gmail.com>
+Date: Tue, 14 Oct 2008 21:45:47 -0700
+From: "Gerald Bauer" <gerald@vanbeta.com>
+To: vanajax@googlegroups.com, webslideshow@googlegroups.com
+Subject: Slide Show (S6) Autoplay Addon Beta (w/ Scroll-Up Effect) - jQuery Animate in Action
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello,
+
+  At yesterday's Vancouver Ajax Hack Night inspired by Karl Swedberg's
+Scroll Up Headline Reader jQuery Tutorial [1] I put together an
+autoplay addon (Beta version) for the S6 slide show package.
+
+  Using jQuery's animate[2] function lets you loop through slides in
+autoplay with a scroll-up effect and more. It's as easy as replacing:
+
+  $( cid ).hide(); // hide current slide
+  $( nid ).show(); // show next slide
+
+  with:
+
+  var cheight = $( cid ).outerHeight();	
+  $( cid ).animate({top: -(cheight+5)},"slow");
+  $( nid ).css('top',(cheight+5)+'px');
+  $( nid ).show();
+  $( nid ).animate({top: 0},"slow", function() { $( cid ).hide().css(
+'top', '0px'); } );
+
+
+  See an example slide show in action @
+http://slideshow.rubyforge.org/autoplay.html
+
+  Note, you can use the 'a', 's' or 'p' keys to start/stop the autoplay. Cheers.
+
+
+[1] http://docs.jquery.com/Tutorials:Scroll_Up_Headline_Reader
+[2] http://docs.jquery.com/Effects/animate
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.ca
+

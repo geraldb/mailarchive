@@ -1,0 +1,53 @@
+From 416385335296@xxx Mon Apr 20 15:36:00 +0000 2015
+X-GM-THRID: 415455248384
+X-Received: by 10.66.101.100 with SMTP id ff4mr21314344pab.24.1429544159673;
+        Mon, 20 Apr 2015 08:35:59 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.182.33.98 with SMTP id q2ls1219761obi.43.gmail; Mon, 20 Apr
+ 2015 08:35:59 -0700 (PDT)
+X-Received: by 10.182.16.194 with SMTP id i2mr24047650obd.14.1429544159472;
+        Mon, 20 Apr 2015 08:35:59 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qk0-x234.google.com (mail-qk0-x234.google.com. [2607:f8b0:400d:c09::234])
+        by gmr-mx.google.com with ESMTPS id g6si2746626qcg.2.2015.04.20.08.35.59
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Apr 2015 08:35:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::234 as permitted sender) client-ip=2607:f8b0:400d:c09::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c09::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qk0-x234.google.com with SMTP id x75so183573690qkg.1
+        for <openmundi@googlegroups.com>; Mon, 20 Apr 2015 08:35:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=OEkToc2KnJOEE/KlOAXWb4pAfdqnZeqdKjeNYpcS5yw=;
+        b=HPdx3LqcDQNcj73HNjOO6/14XGNYz0kKHtcivoBtUeYEj3Mg2QgTe08WNJAE2P+Xwt
+         55L74r/p9nj2pcHEh/Eete+CXGyDuHpobWTILkiGejgjHpbhwSOoeEBQsvL42j45kVF4
+         EYS26UqlEyrFNjshTQ0S4xysQ4FvoBVUTc1H+AeoEcOuVX+kjpkDU+0C/3MoapAo6Fc0
+         ZKunqo6zK6rNYYYMJ2QGQeEYW2wOOTEa+YlBrrQCfhIMN5BZWNax5DXD2y5XA4PihOmg
+         qLtJbsbRjCfD6PACsP9TeU3vv2+SPHZuu5rvSOrpN3UfmXTwUlfc0jPmvBPcJb/SbPfQ
+         Gm4Q==
+MIME-Version: 1.0
+X-Received: by 10.55.53.8 with SMTP id c8mr28986136qka.63.1429544159397; Mon,
+ 20 Apr 2015 08:35:59 -0700 (PDT)
+Received: by 10.229.5.6 with HTTP; Mon, 20 Apr 2015 08:35:59 -0700 (PDT)
+Date: Mon, 20 Apr 2015 17:35:59 +0200
+Message-ID: <CAAxEZd8f7j_S2RSa6cUYJsa3cXmrcpmwt=RgzNYqtw3zhwSXUg@mail.gmail.com>
+Subject: Article: Ruby Gem of the Week #11 - worldlite gem - lightweight
+ public domain country data (all data included as good ol' ruby code)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: Over at the Planet Ruby the Ruby Gem of the Week series covers
+- surprise, surprise - the worldlite gem in episode #11.
+
+   Full article @ planetruby.github.io/gems/worldlite.html
+
+   Cheers.
+

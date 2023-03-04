@@ -1,0 +1,101 @@
+From 6480500788321845248@xxx Tue Oct 24 15:32:50 +0000 2017
+X-GM-THRID: 6406170137222709248
+X-Received: by 10.84.130.106 with SMTP id 97mr3397255plc.49.1508859169631;
+        Tue, 24 Oct 2017 08:32:49 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.98.246.4 with SMTP id x4ls150734pfh.13.gmail; Tue, 24 Oct 2017
+ 08:32:48 -0700 (PDT)
+X-Google-Smtp-Source: ABhQp+T7swcVK6ypaw1d2LoXHDmydPL2oXigaAdDS/rI7eMkEz32gGuwcW9cngtL38kN2mAPyul7
+X-Received: by 10.99.42.204 with SMTP id q195mr3780672pgq.98.1508859168593;
+        Tue, 24 Oct 2017 08:32:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1508859168; cv=none;
+        d=google.com; s=arc-20160816;
+        b=b3X/T6iArPVNFkC1rrR7OptDutL/+g0h1aLs6Rc8P/U9AWiKfv0K/x5ReBDDbKw2An
+         VsDScdBnuX0LHKBQUdc1JBv43odzNUXmAweeRmTV0khCMT83L816pB0Xro7n37l41m1N
+         d3Di3r8lMoGyjOpQ2t7KPsOG1F3tIIiIxg1/3IAuuBrdiNpiLrF1NAbmAD+odlOW42Rq
+         5BgcC0edmPK1hRFTWXM1r55hV3TXQDw0pk1xbHN4tfULMfuDJdj8cgya0Y8Jq3LtesAW
+         gqcn3lHtNQspYDYbAdiIDomJp07MlnIbOW6yvt6ar3xiA3S4BdY36uvxAvGCuBXEtNoC
+         AS3Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:references:in-reply-to
+         :mime-version:dkim-signature:arc-authentication-results;
+        bh=XKYv4Je/2FDRA10mSf3xb7fTukTW3yoMrmCEISW0f/M=;
+        b=o9R4lpUySTH2Cex8HIvx84eI4XHDybqyZ/zIp9ZNzrNp3JQLTov68UX3J3PonMIfC/
+         1kSw7Ous646NdnlxKl6X0JwJ0tqQFWvSDYTMQqGe3SANUVqDn3gGzgyrhOfR4XUTtG2C
+         7hEEF4B4XCOIYg1WFMdATJgSuDj4rcXNQ2cwsgdAPoxw72oWTERsZMWi96Qq/DVTAKe2
+         0wHMlpZ5kmdpUVjcHkTstKsaGg4tNycCdHKxrZ7aH8tHeq34AmOe6zOAgy0DgwQ8Q4aj
+         Wqfb/Mdt9xdjHCOOGtHrbij82JHZVJ0nDysvlzy3DZ7c25j75zGv/11QdA1m8ecdv4Bi
+         0yyw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=PRw4CO7N;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22a.google.com (mail-io0-x22a.google.com. [2607:f8b0:4001:c06::22a])
+        by gmr-mx.google.com with ESMTPS id b184si30560pga.4.2017.10.24.08.32.48
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 24 Oct 2017 08:32:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) client-ip=2607:f8b0:4001:c06::22a;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=PRw4CO7N;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22a.google.com with SMTP id i38so24295381iod.2
+        for <wwwmake@googlegroups.com>; Tue, 24 Oct 2017 08:32:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to
+         :cc;
+        bh=XKYv4Je/2FDRA10mSf3xb7fTukTW3yoMrmCEISW0f/M=;
+        b=PRw4CO7NcUx/YhC7ZwNrdWBvImp36U+N0/wJV1KgMxGJkMw99FZkQEhkXFt1jYy0lK
+         U0VBldT7CHwmqCLpAsjjgwur8+wY80jvSNIOpZ8uOEtVt7mFBDTmYqaFk9yfUfEM95e7
+         vplwBbga3cqvhq7r1PKTQWR5C7WLPn6rdPxjOLAGpv8KnBf6t8fGevPAnwmJIwQjGeMB
+         PsNKB6X7w1Tcp+umtnqWJiqxbp9CLmQn8tzvy/9ez5jsKOV2Ss6gFD0cDHRVmXdAnch9
+         tvSdlIs9wCeb9TdaRM9eEJvWN4yO9ClKLZ0Nv17WeTHv5VAsSRoMZjbtTxdu6Zb60GKj
+         sGrg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to:cc;
+        bh=XKYv4Je/2FDRA10mSf3xb7fTukTW3yoMrmCEISW0f/M=;
+        b=sCzuuSCHv5o7CGwW9J93vJOBuEEvCP6MOe3o69fFBhB5xV/U543PFhc30F1cVUcW+6
+         sdz4YfMDOCb+LpKeilN4OqvrOEYw9SDHY5Tkx5ehjzicN7pPUPef2Mp+hQwjO86PcHXj
+         26nL3K399o1rBFc68MAxv1AbgiXcArKrUyVKLSTh6v6rmz+yxr2nfGzxD7JQ+ci1YBf/
+         Za7dQ/HuxuPX8khjIwlUzQd5jW2SDpLOYV1x9n01tMLOSPPNcCPlBOZLo8epbJsvBQSZ
+         SFl/n1pZpwS8Wy2L5P/hUpfvqTfyqS/Ut6gQ/fQZYUvv96g1sAo7juaEQhUd7TZ2i16W
+         1o7A==
+X-Gm-Message-State: AMCzsaUug5MT5j9RrNrOF96Cj3/Vxq4zYBdKauRip4cfnJUlGM04j4Qk
+	BZEGwBpRrI9qwhLIoYeda8moY3OdDlMn4lImQtEcMA==
+X-Received: by 10.107.164.105 with SMTP id n102mr2256742ioe.45.1508859168158;
+ Tue, 24 Oct 2017 08:32:48 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.44.23 with HTTP; Tue, 24 Oct 2017 08:32:47 -0700 (PDT)
+In-Reply-To: <ac61f652-6422-4cb0-9d41-a9240abd12e6@googlegroups.com>
+References: <13f542c8-23e0-4fc8-9d35-30750be86bfc@googlegroups.com>
+ <CAAxEZd-_fu=FzC7FP3vWGB7YpWikxu7AmXm0Az=Vo+TgnYUj=Q@mail.gmail.com>
+ <9117c7cd-2d5f-4235-b604-e354db3f8e53@googlegroups.com> <CAAxEZd9mXaZ0nABGk4=U=qsNPck-p6BgNOTQESOZrPAgx9VqfQ@mail.gmail.com>
+ <ac61f652-6422-4cb0-9d41-a9240abd12e6@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 24 Oct 2017 17:32:47 +0200
+Message-ID: <CAAxEZd-G9QkHbsgPprdKFyQSq9=-Lnpt5MuA-wxeECiARzCf0Q@mail.gmail.com>
+Subject: Re: [wwwmake:433] Problems with Slide Show (S9) ignoring headers
+To: wwwmake@googlegroups.com
+Cc: juergen.mangler@gmail.com, brian.t.forsythe@gmail.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Thanks for your patience. I finally checked why slideshow is not
+(yet) working with the lastest Liquid 4+ library / gem. In
+Liquid::Drops before_method was changed to liquid_method_missing in
+4+.
+
+   I've changed / updated the code in slideshow-models and now
+everything works again (as advertised). Liquid 4+ is now also the
+required minimum dependency with the latest version.
+
+    If you still run into any trouble (after the update [1]), please
+let us know. Cheers.
+
+[1]  https://rubygems.org/gems/slideshow-models
+

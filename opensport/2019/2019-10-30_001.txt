@@ -1,0 +1,157 @@
+From 6753586571651317760@xxx Wed Oct 30 13:25:09 +0000 2019
+X-GM-THRID: 6753586570390929408
+X-Received: by 2002:adf:ea01:: with SMTP id q1mr23891306wrm.240.1572441908958;
+        Wed, 30 Oct 2019 06:25:08 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:adf:9e01:: with SMTP id u1ls17356478wre.15.gmail; Wed, 30
+ Oct 2019 06:25:07 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqzX2MEhrAwCaYfnkXhV4lSjrYlsE6Hek6SC9VF+40k5ULdID6atrhjP51XXgGJdMWnkxWLM
+X-Received: by 2002:a05:6000:128c:: with SMTP id f12mr26696184wrx.279.1572441907938;
+        Wed, 30 Oct 2019 06:25:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1572441907; cv=none;
+        d=google.com; s=arc-20160816;
+        b=0MoBI6ZlmX1C7k0G0BjFo+br5ISRfbdqLT4yfe+JYW2PmgwFJePERtM10pCpu0ru8M
+         B3e11U9SH1lRjqI8pBBYsxFKDkgi9t5kn0B9izVUBziBwD/mQMbRcXqzJ1uJ8Ay4raht
+         X8jyssfqQZVk4Ki6JaIrOL/i+L40NY5NcyXhGfZ2T6a4TTjPHnWu6PFJpML0ax7vTeb+
+         ofR5zG6y0IkCeHB7EWwMGToLBAAD5yGb6sh7ybQmdvhFZU6ydYSAtEKrcpcHtxFng36R
+         G/MEMI7eQ5eiFbPFUcYvS1xz6vZ62wZ6o3W6Bir7MohQ6w3ZAPCJobquQ6vzyvi8ygbl
+         iGBA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Pfb2kQhbwDgKhFyqJ9BSYD4GejqIaH3aKyMEncoDO8w=;
+        b=j4C6O5aKT2bKCB7lAJb35Z6JJzNIkRxnvHQMl00Zqztttp7exXnkSuVR73gzITW6sH
+         1L07qKe7tOgHblqab7Ev1AnDoRpnYZvbib+ZzEg+25UK2UvjZCK+ugXscz3zt6E5Xz/b
+         Yro5Wm2EZBC23tAf03glF4zTR2aVggW6dr3P9+eFgzvrG2xea10OpySv9Q+DgcB0UiU0
+         zO07DoGK+u/VpYyE85CKcEF2z0IHAfA1or2XW8Be8iXpo9vpn2ScsufJHovczI1Ep1PA
+         G73frMshKD4Dc3S1eHuBUept54YcxvTq/CsBEpbjwcMG/rdxL84/itQS0pnyQBcCuylC
+         RYyA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=TJTlMDAh;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x232.google.com (mail-lj1-x232.google.com. [2a00:1450:4864:20::232])
+        by gmr-mx.google.com with ESMTPS id s126si116682wme.1.2019.10.30.06.25.07
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 30 Oct 2019 06:25:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::232 as permitted sender) client-ip=2a00:1450:4864:20::232;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=TJTlMDAh;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x232.google.com with SMTP id w8so2620371lji.13
+        for <opensport@googlegroups.com>; Wed, 30 Oct 2019 06:25:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=Pfb2kQhbwDgKhFyqJ9BSYD4GejqIaH3aKyMEncoDO8w=;
+        b=TJTlMDAhtQ6U2PePkvX3LZfqYca8VGEYcU8kaFY33GOpuqJHVAzuX0mTjeXkmAeWDj
+         i5yNvcyDjIZRBY1UjtDWLOov07si+8PPOW/RGmIAXXpgaxALUV+pfvCaCKKtbTULcfuF
+         YRmZYdq91MHjUDq6t8+B0ph0acebk3o5qCI+pQzgEoSjSejh0wioYlhrc0seJhByTJ8H
+         nfDIyzdXffFsST1QUQiifoGoDv6UyHRyEx6BC5iR+T2lbXJ/UCOhhoOoEYSUNALEZggf
+         fYlXlgT4m557V4uDGTCn7PotQUBNs3CzR49Rv7lg5a8bfuzAJCGcXLT+kAa+aPyhdY/L
+         16gQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=Pfb2kQhbwDgKhFyqJ9BSYD4GejqIaH3aKyMEncoDO8w=;
+        b=O8Jp7J4RN00Kbe6cQwqlBmJHt6ZTNjIg5QWVumRhpsF8mTHABs9Ka27I3YBEJgn/kp
+         xcugdZ58oAjYgjU6sHLvVHKe29bsgXUT62PSB4vuG0YgjQZEktE0k8GyhZuAWk5Cnb8+
+         37p1/D43uCLaEQXvQMtC6e8IjIygJo6xebgN5vdFQOtgfZpMJ907tYjwS5kQeEDaUM8l
+         1btZSZutdzf8gIao7VJ1xenZRO27IjmFbumUxcbB8F+8RUv2rCChddsrRy1bpTrPo1s1
+         9S1AgZnW0HbfCVcHyAkQuX57gxw0hZ99gsKAt15My+li5uNWStkra/asjYbUeETyjQrc
+         WcMw==
+X-Gm-Message-State: APjAAAXq9SHNIWzrSj+1xdFguZfgD5VNfeHvp/vb6+OJpJsAeF71Ag9e
+	h8lkYWEyAgxa7KWEn2FaT5pSmv8XzP7H2OeMyeYlrsU5
+X-Received: by 2002:a2e:80d6:: with SMTP id r22mr6633445ljg.43.1572441906917;
+ Wed, 30 Oct 2019 06:25:06 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 30 Oct 2019 14:24:55 +0100
+Message-ID: <CAAxEZd_=sB-XO=zO+s1JJanZOdPyHTcRgpryZmuNW-NRyU88sA@mail.gmail.com>
+Subject: New sportdb-readers Library - sport.db Readers for Leagues, Seasons,
+ Clubs, Match Schedules and Results, and More
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   I've put together the sportdb-reader library [1] that
+lets you read in (import) text datafiles into any SQL database (using
+the sport.db schema / tables) using `SportDb.read`.
+
+  Try it with the English Premier League e.g. 2019-20/1-premierleague.txt [2]
+or the Deutsche Bundesliga e.g. 2019-20/1-bundesliga.txt [3], for example.
+
+  From the readme:
+
+**Step 1**
+
+Setup the (SQL) database. Let's use and build a single-file SQLite
+database (from scratch), as an example:
+
+```
+require 'sportdb/readers'
+
+SportDb.connect( adapter:  'sqlite3',
+                 database: './england.db' )
+SportDb.create_all       ## build database schema (tables, indexes, etc.)
+```
+
+**Step 2**
+
+Let's read in some leagues, seasons, clubs, and match schedules and results.
+Let's use the public domain football.db datasets for England (see
+github.com/openfootball/england), as an example:
+
+
+```
+## turn on logging to console
+ActiveRecord::Base.logger = Logger.new( STDOUT )
+
+## assumes football.db datasets for England in ./england directory
+##   see github.com/openfootball/england
+SportDb::ConfReaderV2.read( './england/2015-16/.conf.txt' )
+SportDb::MatchReaderV2.read( './england/2015-16/1-premierleague-i.txt' )
+SportDb::MatchReaderV2.read( './england/2015-16/1-premierleague-ii.txt' )
+
+## let's try another season
+SportDb::ConfReaderV2.read( './england/2019-20/.conf.txt' )
+SportDb::MatchReaderV2.read( './england/2019-20/1-premierleague.txt' )
+```
+
+All leagues, seasons, clubs, match days and rounds, match fixtures and results,
+and more are now in your (SQL) database of choice.
+
+
+Or as an alternative use the `read` convenience all-in-one shortcut helper:
+
+```
+## assumes football.db datasets for England in ./england directory
+##   see github.com/openfootball/england
+SportDb.read( './england/2015-16/.conf.txt' )
+SportDb.read( './england/2015-16/1-premierleague-i.txt' )
+SportDb.read( './england/2015-16/1-premierleague-ii.txt' )
+
+## let's try another season
+SportDb.read( './england/2019-20/.conf.txt' )
+SportDb.read( './england/2019-20/1-premierleague.txt' )
+```
+
+Or as an alternative pass in the "package" directory and let `read` figure
+out what datafiles to read:
+
+```
+## assumes football.db datasets for England in ./england directory
+##   see github.com/openfootball/england
+SportDb.read( './england' )
+```
+
+
+  Cheers. Prost.
+
+[1] https://github.com/sportdb/sport.db/tree/master/sportdb-readers
+[2] https://github.com/openfootball/england/blob/master/2019-20/1-premierleague.txt
+[3] https://github.com/openfootball/deutschland/blob/master/2019-20/1-bundesliga.txt
+

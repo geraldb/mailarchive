@@ -1,0 +1,64 @@
+From 12144607232@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 10684989440
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,371fdd28447e51bc,start
+X-Google-Attributes: gid592b7a,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.115.50.5 with SMTP id c5mr1442310wak.7.1211307545050;
+        Tue, 20 May 2008 11:19:05 -0700 (PDT)
+Return-Path: <geraldbauer2007@gmail.com>
+Received: from wa-out-1112.google.com (wa-out-1112.google.com [209.85.146.179])
+        by mx.google.com with ESMTP id m36si3785998wag.3.2008.05.20.11.19.03;
+        Tue, 20 May 2008 11:19:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of geraldbauer2007@gmail.com designates 209.85.146.179 as permitted sender) client-ip=209.85.146.179;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of geraldbauer2007@gmail.com designates 209.85.146.179 as permitted sender) smtp.mail=geraldbauer2007@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by wa-out-1112.google.com with SMTP id m16so2434232waf.6
+        for <webslideshow@googlegroups.com>; Tue, 20 May 2008 11:19:03 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        bh=mAZr+msLjq51FYCSB2fR018hCY85so8VgnJQ24JOJVs=;
+        b=f1aD4yX1up2emGSY15H22z1gltrd1rk0ibD9JLbpNJ7K+Kl7WsKD0Jgan5qO66UiATNs3boUeKxY3x1hm1Y8nmVL9ukOlvTgnBur75IoHHHLaWLh0EXzvkcc3e7ZWEALcI6Ff0HJZgfjcT3P8ARMJp2HiXNbC9/Kbs0kJa2yVCc=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        b=WGOz6JpuFiXexAogHTG57BwgNKMKxmyOjY6YaQYPIxTvTEod4hXYzHx6TIRD45l/aEtKF384IUuk9ITnmnWhgoYjBJ0OUu/xevQyvIMBR6sA1uIV6OrBdZ5S38g1UR9Cq4UDIhJ8L2st1ixOcmC4UPEoFlCShwK+XwTBTxjYr2I=
+Received: by 10.114.202.15 with SMTP id z15mr9206114waf.72.1211307542502;
+        Tue, 20 May 2008 11:19:02 -0700 (PDT)
+Received: by 10.115.91.11 with HTTP; Tue, 20 May 2008 11:19:02 -0700 (PDT)
+Message-ID: <7e7cb8940805201119k42376105r29aae9432e9b21ae@mail.gmail.com>
+Date: Tue, 20 May 2008 11:19:02 -0700
+From: "Gerald Bauer" <geraldbauer2007@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Slide Show (S9) Gem Code Syntax Highlighting Mini-Tutorial and Live Showcase
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello,
+
+  To test the new code syntax highlighting machinery powered by the
+Ultraviolet (Uv) gem I have create a mini slideshow tutorial. For your
+enjoyment I have included some "Rubyize this" examples - the 5th
+Edition from RubyFleebie and the RubyCamp 2008 Vancouver Edition. To
+show syntax highlighting for other languages than Ruby I have added
+some Hello World samples from Ada, C, Erlang to Java and PHP.
+
+   More @ http://slideshow.rubyforge.org/syntax.html
+   The textile source resides @
+http://slideshow.rubyforge.org/svn/samples/syntax.textile
+
+   Questions and comments welcome.
+
+    Cheers.
+
+PS: S9 Bonus Tip: Replace .html with .svg to check your background
+gradient theme in your browser. Try
+http://slideshow.rubyforge.org/syntax.svg  (Note, better browsers such
+as Firefox, Opera, etc. required with built-in vector graphics
+machinery ;-).
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.wordpress.com
+

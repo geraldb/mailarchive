@@ -1,0 +1,146 @@
+From 6421563395841982464@xxx Thu May 18 19:45:38 +0000 2017
+X-GM-THRID: 6421473045402091520
+Date: Thu, 18 May 2017 12:45:37 -0700 (PDT)
+From: Lars Willighagen <lars.willighagen@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Cc: lars.willighagen@gmail.com
+Message-Id: <4149761a-bad0-4863-9062-6d3f4686e5ea@googlegroups.com>
+In-Reply-To: <CAAxEZd8Q-Z0M=UL3FU1tc9rMf1Hfk5guj7PpT32uXYEJ2JTa7A@mail.gmail.com>
+References: <83e77ebf-1996-47f9-adc8-9c2d40707213@googlegroups.com>
+ <CAAxEZd8Q-Z0M=UL3FU1tc9rMf1Hfk5guj7PpT32uXYEJ2JTa7A@mail.gmail.com>
+Subject: Re: [wwwmake:422] Bib.TXT specifications
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_676_355494291.1495136738066"
+X-Google-Token: EOHz98gF5qR3ob3HiGk0
+X-Google-IP: 77.174.58.252
+
+------=_Part_676_355494291.1495136738066
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_677_654541941.1495136738066"
+
+------=_Part_677_654541941.1495136738066
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks for the fast reply! I'll see if I can work on this this weekend. 
+Here's <https://github.com/larsgw/citation.js/issues/47> the feature 
+request, I might post progress on there. On the leading/trailing spaces: I 
+meant to ask if values *can* have leading/trailing spaces, as there are no 
+string delimiters that I know of.
+
+PS: I read the page again, and it says that quotes and commas aren't 
+required, but *can* they be used?
+
+Op donderdag 18 mei 2017 16:06:44 UTC+2 schreef Gerald Bauer:
+>
+> Hello, 
+>     Thanks for your interest in Bib.txt. Great news. 
+>
+> First the two "easy" answers: 
+>
+> Q: What whitespace is mandatory, and what isn't? 
+>
+>    Whitespace are all optional except for newline to "break" name 
+> value pairs e.g. 
+>
+>    author: J.W. Goethe 
+>    author:J.W. Goethe 
+>    author:     J.W. Goethe 
+>         author:     J.W. Goethe 
+>
+>    is all the same. 
+>
+>
+> Q: Are trailing and/or leading spaces allowed in values? 
+>
+>    Yes. Trailing and/or leading spaces get (auto-)trimmed/removed. See 
+> above - is always 
+>    "author" and "J.W. Goethe" in the end.  The idea is to be as 
+> "humany-friendly" as possible. 
+>
+>
+> The hard question: 
+>
+> Q What about the publication type? Should I assume misc, or something 
+> else? 
+>
+>   The default type is now book. I'd say for all other types the idea / 
+> suggestions is adding a type e.g. 
+>
+>    type: Article 
+>
+>    Maybe we can find something shorter (or more intuitive). Following 
+> the "Ruby and Perl" design philosophy - the idea is "there are many 
+> ways to do it", thus, alternative ways are (always) welcome. 
+>
+>    Thanks again for your interest. Greetings from Vienna. Keep it up. 
+> Cheers. 
+>
+
+------=_Part_677_654541941.1495136738066
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thanks for the fast reply! I&#39;ll see if I can work on t=
+his this weekend. <a href=3D"https://github.com/larsgw/citation.js/issues/4=
+7">Here&#39;s</a> the feature request, I might post progress on there. On t=
+he leading/trailing spaces: I meant to ask if values <b>can</b> have leadin=
+g/trailing spaces, as there are no string delimiters that I know of.<div><b=
+r></div><div>PS: I read the page again, and it says that quotes and commas =
+aren&#39;t required, but <b>can</b> they be used?</div><div><br>Op donderda=
+g 18 mei 2017 16:06:44 UTC+2 schreef Gerald Bauer:<blockquote class=3D"gmai=
+l_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;=
+padding-left: 1ex;">Hello,
+<br>=C2=A0 =C2=A0 Thanks for your interest in Bib.txt. Great news.
+<br>
+<br>First the two &quot;easy&quot; answers:
+<br>
+<br>Q: What whitespace is mandatory, and what isn&#39;t?
+<br>
+<br>=C2=A0 =C2=A0Whitespace are all optional except for newline to &quot;br=
+eak&quot; name
+<br>value pairs e.g.
+<br>
+<br>=C2=A0 =C2=A0author: J.W. Goethe
+<br>=C2=A0 =C2=A0author:J.W. Goethe
+<br>=C2=A0 =C2=A0author: =C2=A0 =C2=A0 J.W. Goethe
+<br>=C2=A0 =C2=A0 =C2=A0 =C2=A0 author: =C2=A0 =C2=A0 J.W. Goethe
+<br>
+<br>=C2=A0 =C2=A0is all the same.
+<br>
+<br>
+<br>Q: Are trailing and/or leading spaces allowed in values?
+<br>
+<br>=C2=A0 =C2=A0Yes. Trailing and/or leading spaces get (auto-)trimmed/rem=
+oved. See
+<br>above - is always
+<br>=C2=A0 =C2=A0&quot;author&quot; and &quot;J.W. Goethe&quot; in the end.=
+ =C2=A0The idea is to be as
+<br>&quot;humany-friendly&quot; as possible.
+<br>
+<br>
+<br>The hard question:
+<br>
+<br>Q What about the publication type? Should I assume misc, or something e=
+lse?
+<br>
+<br>=C2=A0 The default type is now book. I&#39;d say for all other types th=
+e idea /
+<br>suggestions is adding a type e.g.
+<br>
+<br>=C2=A0 =C2=A0type: Article
+<br>
+<br>=C2=A0 =C2=A0Maybe we can find something shorter (or more intuitive). F=
+ollowing
+<br>the &quot;Ruby and Perl&quot; design philosophy - the idea is &quot;the=
+re are many
+<br>ways to do it&quot;, thus, alternative ways are (always) welcome.
+<br>
+<br>=C2=A0 =C2=A0Thanks again for your interest. Greetings from Vienna. Kee=
+p it up. Cheers.
+<br></blockquote></div></div>
+------=_Part_677_654541941.1495136738066--
+
+------=_Part_676_355494291.1495136738066--
+

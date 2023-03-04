@@ -1,0 +1,86 @@
+From 6859368101949997056@xxx Mon Aug 10 14:51:30 +0000 2020
+X-GM-THRID: 6818220389034885120
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 2002:a9f:3630:: with SMTP id r45mr19470492uad.31.1597071090088;
+        Mon, 10 Aug 2020 07:51:30 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a67:f28f:: with SMTP id m15ls1517773vsk.0.gmail; Mon, 10 Aug
+ 2020 07:51:29 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJy7te9lwGU+rTcSw9uhh6Nnoqk7EB1J6Q80kY/DrWvDOQteD4yTOcSlxhOIqvMfJgbCtkur
+X-Received: by 2002:a67:680f:: with SMTP id d15mr19912720vsc.73.1597071089341;
+        Mon, 10 Aug 2020 07:51:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1597071089; cv=none;
+        d=google.com; s=arc-20160816;
+        b=AJMBW1NN3gKhlPkR80TYJA7Fyqxuke9aQ7SE6dlT/qFQANfX0nZC/mtg3m1JifusgU
+         Xj2SpiF9uKjYUo/s2pQ2Yddm7VeIuyr4NkxeGgN1VijBJ6kzoKj7hX9l54Dl7zjz6qtr
+         u8SRofvUDCY6J4OTb6PkVt+HcFZi6tSkHlLzqfPprwZIgWv04q4KxVOKi1CFJ3xl0Lhy
+         YJogtFMv0ucxGLJ6X1sMqitVEbNsLOdBQKOax68+mmSONBVV5cXoFsXckiH8x6+GL0yq
+         YgpBGTxIJz2WP7h+EVFsGXhnG7cw6uVfirHGb3erd0lUVBxLdrmfiacx4FcPVbOsfbg1
+         y+1g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=IOfhAMDRkTGcj98HOR8IHfZKrCwmATLnKqp1BZ8AAsY=;
+        b=nuCaE4SEyNpdIOnrEdzJDR3Z/t9Xu+BzFQO5Gzbz/KCHhB1MhWtITSFRuKnDOtm8py
+         M0x9O4RwGzQbpc0DAUDkZXQF3ICB9L9yARZU098WdkNlmGWlVq46B3Gr84wryXwM2ruf
+         swRHnHBkQB37jOmIlsfDXMUg05IZeF309JhwTFsWn2MegMvh3pGDCH6v3VbmengdCDhs
+         glmClmen+TF+GH9S/QYG6s9LtLGXDuPupX4qKikeR6gM5iRoZT3cB5meZ7bDmP5bullG
+         oDepV6L2Fn9dhWYGp5O9Gt4pSk+q2hSasatOxDpOGpaFZJHMEYByUrBqmO2U8704Ehio
+         GV5g==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="oNo5JWJ/";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4864:20::1036 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-pj1-x1036.google.com (mail-pj1-x1036.google.com. [2607:f8b0:4864:20::1036])
+        by gmr-mx.google.com with ESMTPS id g19si555531uab.1.2020.08.10.07.51.29
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 10 Aug 2020 07:51:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4864:20::1036 as permitted sender) client-ip=2607:f8b0:4864:20::1036;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="oNo5JWJ/";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4864:20::1036 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-pj1-x1036.google.com with SMTP id 2so5131737pjx.5
+        for <wwwmake@googlegroups.com>; Mon, 10 Aug 2020 07:51:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=IOfhAMDRkTGcj98HOR8IHfZKrCwmATLnKqp1BZ8AAsY=;
+        b=oNo5JWJ/5bBTfngMCWIqilDqeS0XVEjkIp9AkYv7iuL7Ra0H2bTZtbccl7XUpxAWyS
+         2kBKW1JFPLpfrYqWJwmD+9V5kgJeM+bADRQSEZZIHkPamB46fZcBtpvUrX3EYQ+qup2H
+         SD5siDoBWO2knyzUqWqKg0uWrbpL/bpujRvkFKwV7zeBvHUUAuT5OEyqGDks9wXwSUoh
+         LGkfxty4r0ROkDRYTGZSnua7Bqq2agtEfNW0xxCuSCpLpa9Mu7iIUXU1Q9oK5QlP/cNy
+         lUX13xkDLZ8D+Mh39M3mgGmA8Hs7uGLj0HBcYRQcJ29M73/v9O+3trxZRw/B3wAJ3Gev
+         E7Ng==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=IOfhAMDRkTGcj98HOR8IHfZKrCwmATLnKqp1BZ8AAsY=;
+        b=In4n80RatoW6kmlQ+mwEnK3BVSSmrLv1DMQWfBl1gB2nPMYFymsRumZIrFvRi3ioM9
+         c4IC2ME8a2akpyUbpP0xQyjCUa7cU9OZvYJMlmSi9PtRtkwS/bE04IZWnfvHX+vI6j6R
+         Rchhoqv3+q6gzDNrJzoBuesdGuFztI/nmUrY7FkFwlxE2h6r3oBfUKcrdkjJthdx5XTP
+         oNTEr65FoWQXZfPHmnLyFACZo+ak3J0hhWNY9Tg6sUJZW2BJFT88rIKBBGfthf3+4ffO
+         H0mO8F8ryv9qBxOdtc+qqs+h21O6IrhFZepZ82E2RklrNmZYwYrKafo5njXHAK7cii9h
+         iS/Q==
+X-Gm-Message-State: AOAM530nkkZcSKiPLcMzgryKFjYps9oDBYX0+6FV+4gZ1BKIiJVYa0PU
+	5DNxG1eA/Osd/a3L3LPB+17g16CNteyAukFwIe1uUVro
+X-Received: by 2002:a17:902:6bc2:: with SMTP id m2mr999785plt.114.1597071088263;
+ Mon, 10 Aug 2020 07:51:28 -0700 (PDT)
+MIME-Version: 1.0
+References: <92434cb1-1338-48ff-b6d5-7be2eae5b904@googlegroups.com>
+ <CAAxEZd9oTJ2pedDqTvZPNTdPVg+sERxV_J72=x9XWT74SC1GvA@mail.gmail.com> <9d1eb224-5aca-44c0-98e6-d3c8877bdd17o@googlegroups.com>
+In-Reply-To: <9d1eb224-5aca-44c0-98e6-d3c8877bdd17o@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 10 Aug 2020 16:51:16 +0200
+Message-ID: <CAAxEZd9EAh1cccDB2bKaLqdxzB-wee1ZELnw=Y4G83w6f923dg@mail.gmail.com>
+Subject: Re: [wwwmake:514] Troubleshooting Error: This is not well formed XML
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   As always thanks for your detailed reports and updates. Greatly
+appreciated. Cheers. Prost.
+

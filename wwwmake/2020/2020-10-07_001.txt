@@ -1,0 +1,88 @@
+From 6880768066119008256@xxx Wed Oct 07 06:54:17 +0000 2020
+X-GM-THRID: 6880723076793761792
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 2002:a1c:f311:: with SMTP id q17mr1728422wmq.168.1602053657220;
+        Tue, 06 Oct 2020 23:54:17 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a5d:428e:: with SMTP id k14ls1358394wrq.0.gmail; Tue, 06 Oct
+ 2020 23:54:15 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJx5Smh6cFIJCesCNOYJcAO7lGqWHpE9nfj33oD1mmh0GC2soXFkceC5j4VGayW0TiLZPhFh
+X-Received: by 2002:a5d:6a43:: with SMTP id t3mr1830347wrw.426.1602053655462;
+        Tue, 06 Oct 2020 23:54:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1602053655; cv=none;
+        d=google.com; s=arc-20160816;
+        b=mrMd0/njkw75JEaKen2iLNHG8cWH7v8yBIf2n8BiPdwjlFnv03fzQNjbUecbH0BVI/
+         rz/P7PxBA7JhU12C077J8byigWgSudh00BADoAyjzJXayxm7bWq9uMXW68+sB/+qTss8
+         3qZtEmc7SjpSqyyv6qQavY2VSgXgyB04qq7hNDCUJIRuUO5eLmIbEUjjRDnFFcV2UfpC
+         hEUBW/TmwhQL0bo9rupu93bfiFbJJijkXhyDNrKQc591LhDbWKyPlmiwMQPibBzwSHPF
+         d2BTlDNc/8mgGt4tmopS58nNkg+Jo4NLaK/bMtdcFex0a7EIcvsgDucvrUlqqjZ+taCg
+         TsDg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=PE4G4MVig995ZYb4E9/yeqedvdrJYAVS16e/q6QMG3o=;
+        b=tcgK6A5Hh8S5J9kl0YAuZ0vwwCOzubv786ls8YvqhG1yGRyxS+vdFCGg6fAG3eVRRu
+         PtIYDoycm6lspk0N6MZT0vKAYwjslKKSGn12DCPZKS4EIuvjM1OB1mnSG0nMPFFpwXtK
+         Q7VgTTg3DOVyeSYFjIRJCfybz6oMgqU2NtcztbqqtPb9ffJC9vp/ca87ye/moy624So1
+         LTVi+bYljguw6D8VeGafEMC6/CVXEEL4hWGn2z/Pp+evpFJ3T4vPxSOavTLInO57qtbf
+         Czj1vkhiIEyNMIeVJD2IV97SYgiXkZ7/my6JdZzgFZUhypYkQNJS0R3+etUeWYNBeAna
+         5usQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=U9GfymEM;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ed1-x52f.google.com (mail-ed1-x52f.google.com. [2a00:1450:4864:20::52f])
+        by gmr-mx.google.com with ESMTPS id f198si23051wme.2.2020.10.06.23.54.15
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 06 Oct 2020 23:54:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52f as permitted sender) client-ip=2a00:1450:4864:20::52f;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=U9GfymEM;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52f as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ed1-x52f.google.com with SMTP id cq12so1007403edb.2
+        for <wwwmake@googlegroups.com>; Tue, 06 Oct 2020 23:54:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=PE4G4MVig995ZYb4E9/yeqedvdrJYAVS16e/q6QMG3o=;
+        b=U9GfymEM0CRwQD8ywESKL6jdpQSxJrDPjq7VdY/eNSGYmhGMwVHa3ICk1Ovtk8XSyZ
+         sI9W4juKD6xU0GFnO/CRXy8/l49j7sCNCSaxdAvHSTpL6y8dtjt2tiIHrvIDjVVBG9a1
+         uu9r9J1xR/kHYCHdywkEiu+i08i5xDuxMN8ZMNCohnl93ep69xJftXc4/LJWqrftejy+
+         NrgY7G3mgNW3iSxmfE1g4/rl0KbFzCaRsUZFIy6FiREmk3+1g5jRioka6Vdi2g0a2ey6
+         xpOAKoio2JWiTn4S2Wy6xPVAmNFaGPsxgQQ4F+R5IqkkcfW8+DNA2pe46wkuEZTUiEbt
+         JtbA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=PE4G4MVig995ZYb4E9/yeqedvdrJYAVS16e/q6QMG3o=;
+        b=FWSVZ0XvETmZxeHR5EdbjGKvKT1R7maax0655VfBtTMU1vZSQglt4Yf7cWLgbR+BHq
+         ZikKxtJ3JjcTu3pPYNqaUWPWAqpYp8MWGVUh798fKiCymy+sH7IiioZCa2pDL4OJWyb7
+         Ah9BBkC0HJSRk0t8C8BdLVnBP3MoalvRFgBBmEzCQiaOtwa3yq0AdsV4E3NHR+ykOhAs
+         5Xv6dvcBaqUX37cSD7paeVQItdPz2Q6xYnt49yTzHUvPmzeN2nCyP5lDig850sioxnq4
+         tVEX3IuI/WWwIRSFEZmadYNUV9belDCW53Z/zChQVVbR8ciptHw9c4f+xY66zJ232sq6
+         hBEg==
+X-Gm-Message-State: AOAM530TFKrjA9s3Nm+AG60ULCRza/Udt+5S2F6S5B8Ap64ZvsV5gkpd
+	KSdwWACs/DyjsX8MQeRjSe5ZmhWcjfJNZYzRMsdodCd050hm1A==
+X-Received: by 2002:a05:6402:37a:: with SMTP id s26mr1927324edw.268.1602053654843;
+ Tue, 06 Oct 2020 23:54:14 -0700 (PDT)
+MIME-Version: 1.0
+References: <74ceacec-29a0-400b-8966-341ca95f26d9n@googlegroups.com>
+In-Reply-To: <74ceacec-29a0-400b-8966-341ca95f26d9n@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 7 Oct 2020 08:54:04 +0200
+Message-ID: <CAAxEZd-KXBMMzMxrMQNQyMddCuT5kveGEz5J6Nzsg20v48zq5g@mail.gmail.com>
+Subject: Re: [wwwmake:516] Use Staticman and a bit of python to add a feed
+ submission form to Pluto Static Feed Reader
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   As always thanks for sharing the tip / setup. Great to see your
+planet live @ https://identosphere.net/blogcatcher/
+   I am a big fan of Simon Willison's Datasette - great to see the
+blog and weekly notes included / featured. Keep it up. Cheers. Prost.
+

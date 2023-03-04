@@ -1,0 +1,109 @@
+From 6184825846796124160@xxx Wed Aug 19 20:43:03 +0000 2015
+X-GM-THRID: 6184823423606194176
+X-Received: by 10.107.8.71 with SMTP id 68mr12031794ioi.30.1440016982703;
+        Wed, 19 Aug 2015 13:43:02 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.107.135.11 with SMTP id j11ls197391iod.85.gmail; Wed, 19 Aug
+ 2015 13:43:02 -0700 (PDT)
+X-Received: by 10.70.34.103 with SMTP id y7mr11883000pdi.6.1440016982454;
+        Wed, 19 Aug 2015 13:43:02 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x229.google.com (mail-io0-x229.google.com. [2607:f8b0:4001:c06::229])
+        by gmr-mx.google.com with ESMTPS id g7si1505540igr.0.2015.08.19.13.43.02
+        for <beerdb@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 19 Aug 2015 13:43:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::229 as permitted sender) client-ip=2607:f8b0:4001:c06::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x229.google.com with SMTP id v127so23303491iod.3
+        for <beerdb@googlegroups.com>; Wed, 19 Aug 2015 13:43:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=Ldp4Tm+/BvMZXZbFMtlLtlAWzzsdsH/DNH5uXGHAV3U=;
+        b=n/JtqoVRqmbhqqC8Xkv0Z3I0WqB/T+vxWXEL8Q/VJ1xXbDpd3Hx6i5zvD5kzFiWnxv
+         i0RE8XqVo0d1PYk/dS60cQcTt+0f1V5oRHSgukCIF7eEBRnCwxeRLFNZzvl1W+ZYVF+9
+         g3lzQ1nKKXzqGbyFXt2kUZ1gWF0H1dMlq+sJELIzmdzlpW5VpOgguLO1wwsUTLqSdshR
+         8+YWuY39QX4pe5pCr5rsNgAyV6wQ61SIF7fDVIdo0C3U3QZzGyk/WmRTcf/0t7SKE51J
+         GVUg3JP08HHRcqpqyPa50tcKl7NG/3wt1X7Od5fvA8M4ZRH97IOLSrKLpFNmAAL3LXwo
+         dvtg==
+MIME-Version: 1.0
+X-Received: by 10.107.8.142 with SMTP id h14mr14912011ioi.35.1440016982302;
+ Wed, 19 Aug 2015 13:43:02 -0700 (PDT)
+Received: by 10.107.15.196 with HTTP; Wed, 19 Aug 2015 13:43:02 -0700 (PDT)
+In-Reply-To: <44a7e9c8-c0ee-442e-bf3d-0b5ad67db49e@googlegroups.com>
+References: <44a7e9c8-c0ee-442e-bf3d-0b5ad67db49e@googlegroups.com>
+Date: Wed, 19 Aug 2015 22:43:02 +0200
+Message-ID: <CAAxEZd-ERAmd+mOYkAnrZfeWKYQZtGPraimEVK5RoOcf=J0w3A@mail.gmail.com>
+Subject: Re: [beerdb] Is there a simple way to convert these txt files into
+ json formatted databases?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: multipart/alternative; boundary=001a113f96fcb36de2051db014c6
+
+--001a113f96fcb36de2051db014c6
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for your interest in beer.db.
+
+  Your first question:
+
+> Is there a simple way to convert these txt files into json formatted
+databases?
+
+ It depends on your definition of simple e.g.  for example you import the
+datasets in your SQL database of choice e.g. SQLite, PostgreSQL, etc.
+
+  Option 1) No coding required. Use your SQL db tool of choice to export to
+JSON, or *[your data format here]*.
+
+  Option 2) Write your own (little) script (in Ruby, Python, etc.) that
+exports to JSON or *[your data format here]*. - Bonus: Share your scripts
+with the world.
+
+   You can see an example in ruby e.g. service.rb [1] at the beerkit repo.
+It's as simple as:
+
+    get '/beer/:key' do |key|
+      beer = Beer.find_by_key!( key )
+      json beer.as_json_v2
+   end
+
+   Cheers.
+
+[1]
+https://github.com/beerkit/beer.db.service.rack/blob/master/lib/beerdb/service.rb
+
+--001a113f96fcb36de2051db014c6
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div>Hello,<br></div>=C2=A0=C2=A0 Thanks for your int=
+erest in beer.db.<br><br></div>=C2=A0 Your first question:<br><br>&gt; Is t=
+here a simple way to convert these txt files into json formatted databases?=
+<div class=3D"gmail_extra"><br></div><div class=3D"gmail_extra">=C2=A0It de=
+pends on your definition of simple e.g.=C2=A0 for example you import the da=
+tasets in your SQL database of choice e.g. SQLite, PostgreSQL, etc.<br><br>=
+=C2=A0 Option 1) No coding required. Use your SQL db tool of choice to expo=
+rt to JSON, or <em>[your data format here]</em>.
+
+<p>=C2=A0 Option 2) Write your own (little) script (in Ruby, Python, etc.) =
+that exports
+to JSON or <em>[your data format here]</em>. - Bonus: Share your scripts wi=
+th the world.</p><p>=C2=A0=C2=A0 You can see an example in ruby e.g. servic=
+e.rb [1] at the beerkit repo. It&#39;s as simple as:</p><p>=C2=A0=C2=A0=C2=
+=A0 get &#39;/beer/:key&#39; do |key|<br>=C2=A0=C2=A0 =C2=A0=C2=A0 beer =3D=
+ Beer.find_by_key!( key )<br>=C2=A0=C2=A0=C2=A0 =C2=A0 json beer.as_json_v2=
+<br>=C2=A0=C2=A0 end<br></p><p>=C2=A0=C2=A0 Cheers.</p><p>[1] <a href=3D"ht=
+tps://github.com/beerkit/beer.db.service.rack/blob/master/lib/beerdb/servic=
+e.rb">https://github.com/beerkit/beer.db.service.rack/blob/master/lib/beerd=
+b/service.rb</a></p><p><br></p></div></div>
+
+--001a113f96fcb36de2051db014c6--
+

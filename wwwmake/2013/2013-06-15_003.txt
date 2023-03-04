@@ -1,0 +1,84 @@
+From 1284002283520@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1273188319232
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,a107a50f8aae9c2b
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.224.59.205 with SMTP id m13mr3824873qah.7.1371320517329;
+        Sat, 15 Jun 2013 11:21:57 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.60.200 with SMTP id j8ls690263qer.42.gmail; Sat, 15 Jun
+ 2013 11:21:56 -0700 (PDT)
+X-Received: by 10.224.42.141 with SMTP id s13mr3833059qae.3.1371320516849;
+        Sat, 15 Jun 2013 11:21:56 -0700 (PDT)
+Received: by 10.224.181.200 with SMTP id bz8msqab;
+        Sat, 15 Jun 2013 11:20:14 -0700 (PDT)
+X-Received: by 10.49.63.195 with SMTP id i3mr178124qes.29.1371320414720;
+        Sat, 15 Jun 2013 11:20:14 -0700 (PDT)
+X-Google-Doc-Id: 2282d79e5b6db742
+X-Google-Web-Client: true
+Date: Sat, 15 Jun 2013 11:20:14 -0700 (PDT)
+From: Goozbach <friocorte@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <737dbaa4-e1ff-4b22-8892-acad65d19cbf@googlegroups.com>
+In-Reply-To: <caa30178-e4d8-4676-a5e0-90df9fb413f0@ce7g2000vbb.googlegroups.com>
+References: <71414604-4298-4368-85c4-e1d4ddcab69a@googlegroups.com>
+ <caa30178-e4d8-4676-a5e0-90df9fb413f0@ce7g2000vbb.googlegroups.com>
+Subject: Re: Slurping a file into a template [ruby s9 template]
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_239_30904249.1371320414499"
+X-Google-Token: EN7g8o0FnAqxl0tP9BA0
+X-Google-IP: 72.145.218.40
+
+------=_Part_239_30904249.1371320414499
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_240_18671549.1371320414499"
+
+------=_Part_240_18671549.1371320414499
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+On Saturday, June 15, 2013 5:23:06 AM UTC-4, Gerald Bauer wrote:
+
+> Hello, 
+>
+>   Sorry. Not sure if you are trying to include the contact slide 
+> inside your source or your template (pack). Can post the command line 
+> you're using to generate your slideshow? 
+>
+>    Cheers. 
+>
+
+I'm trying to do this in the template itself.
+
+I have my setup in this github repo: 
+https://github.com/goozbach-presentation/slideshow-goozbach
+
+if you check that out, and go into the `testing` subdirectory and run the 
+command:
+
+slideshow -c .. -t goozbach -o output index 
+
+
+You'll see what I mean by my file not found error. 
+
+------=_Part_240_18671549.1371320414499
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<span style="font-size: 13px;">On Saturday, June 15, 2013 5:23:06 AM UTC-4, Gerald Bauer wrote:</span><br><blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; Sorry. Not sure if you are trying to include the contact slide
+<br>inside your source or your template (pack). Can post the command line
+<br>you're using to generate your slideshow?
+<br>
+<br>&nbsp; &nbsp;Cheers.
+<br></blockquote><div><br></div><div>I'm trying to do this in the template itself.</div><div><span style="font-size: 13px;"><br></span></div><div><span style="font-size: 13px;">I have my setup in this github repo:&nbsp;</span>https://github.com/goozbach-presentation/slideshow-goozbach</div><div><span style="font-size: 13px;"><br></span></div><div><span style="font-size: 13px;">if you check that out, and go into the `testing` subdirectory and run the command:</span></div><div><span style="font-size: 13px;"><br></span></div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>slideshow -c .. -t goozbach -o output index<span style="font-size: 13px;">&nbsp;</span></div></blockquote><div><br></div><div>You'll see what I mean by my file not found error.&nbsp;</div>
+------=_Part_240_18671549.1371320414499--
+
+------=_Part_239_30904249.1371320414499--
+

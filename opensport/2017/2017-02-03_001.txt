@@ -1,0 +1,145 @@
+From 6383027670167322624@xxx Fri Feb 03 23:27:20 +0000 2017
+X-GM-THRID: 6382859402075963392
+Date: Fri, 3 Feb 2017 15:27:20 -0800 (PST)
+From: "Maria A. Flores" <m.angeles.flores@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <aa67484d-ab88-429f-bd5a-79268ad30455@googlegroups.com>
+In-Reply-To: <CAAxEZd9_HdroQq+-habSdB5GPtgox=YD=MitQ3OuoLct57jF2A@mail.gmail.com>
+References: <a8f9ce84-6e89-4701-9611-e5c591602483@googlegroups.com>
+ <CAAxEZd9_HdroQq+-habSdB5GPtgox=YD=MitQ3OuoLct57jF2A@mail.gmail.com>
+Subject: Re: [opensport] Champions League full database
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_817_362714443.1486164440199"
+X-Google-Token: ENij1MQF2-qQW54S9Y00
+X-Google-IP: 92.21.3.94
+
+------=_Part_817_362714443.1486164440199
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_818_796824487.1486164440200"
+
+------=_Part_818_796824487.1486164440200
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello Gerald,
+
+Thank you for your quick reply.
+I'm trying to build a Champions League database, but it seems that I'm=20
+missing something.
+I'm using this Datafile:
+
+world  'world.db', setup: 'countries'
+football 'clubs'
+
+football 'at-austria',     setup: 'clubs'
+football 'de-deutschland', setup: 'clubs'
+football 'eng-england',    setup: 'clubs'
+football 'es-espana',      setup: 'clubs'
+football 'it-italy',       setup: 'clubs'
+football 'fr-france',      setup: 'clubs'
+football 'ch-confoederatio-helvetica', setup: 'clubs'
+football 'ru-russia'
+
+football 'europe-champions-league'
+football 'europe-champions-league', setup: 'history'
+
+Now I get this error:
+[fatal] event reader - record for team key >praha< not found
+
+As I'm getting the Czech Republic clubs in the generic "clubs", maybe the=
+=20
+problem is that there isn't a club called Praha (it seems that there are=20
+more than one club in Praha city).
+
+Also, how could I import only the teams from Russia data, instead of all=20
+the data?
+
+Kind regards
+
+
+El viernes, 3 de febrero de 2017, 18:35:25 (UTC), Gerald Bauer escribi=C3=
+=B3:
+>
+> Hello,=20
+>
+>   Welcome to football.db.=20
+>
+> > [fatal] event reader - record for team key >moskva< not found=20
+>
+>    You might be missing the russian teams / clubs. See the /ru-russia=20
+> repo [1] it includes in teams.txt:=20
+>
+> moskva, Moskva, city: Moscow=20
+>
+> Cheers.=20
+>
+> [1] https://github.com/openfootball/ru-russia/blob/master/teams.txt=20
+>
+
+------=_Part_818_796824487.1486164440200
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello Gerald,<div><br></div><div>Thank you for your quick =
+reply.</div><div>I&#39;m trying to build a Champions League database, but i=
+t seems that I&#39;m missing something.</div><div>I&#39;m using this Datafi=
+le:</div><div><br></div><div><div><font face=3D"courier new, monospace">wor=
+ld =C2=A0&#39;world.db&#39;, setup: &#39;countries&#39;</font></div><div><f=
+ont face=3D"courier new, monospace">football &#39;clubs&#39;</font></div><d=
+iv><font face=3D"courier new, monospace"><br></font></div><div><font face=
+=3D"courier new, monospace">football &#39;at-austria&#39;, =C2=A0 =C2=A0 se=
+tup: &#39;clubs&#39;</font></div><div><font face=3D"courier new, monospace"=
+>football &#39;de-deutschland&#39;, setup: &#39;clubs&#39;</font></div><div=
+><font face=3D"courier new, monospace">football &#39;eng-england&#39;, =C2=
+=A0 =C2=A0setup: &#39;clubs&#39;</font></div><div><font face=3D"courier new=
+, monospace">football &#39;es-espana&#39;, =C2=A0 =C2=A0 =C2=A0setup: &#39;=
+clubs&#39;</font></div><div><font face=3D"courier new, monospace">football =
+&#39;it-italy&#39;, =C2=A0 =C2=A0 =C2=A0 setup: &#39;clubs&#39;</font></div=
+><div><font face=3D"courier new, monospace">football &#39;fr-france&#39;, =
+=C2=A0 =C2=A0 =C2=A0setup: &#39;clubs&#39;</font></div><div><font face=3D"c=
+ourier new, monospace">football &#39;ch-confoederatio-helvetica&#39;, setup=
+: &#39;clubs&#39;</font></div><div><font face=3D"courier new, monospace">fo=
+otball &#39;ru-russia&#39;</font></div><div><font face=3D"courier new, mono=
+space"><br></font></div><div><font face=3D"courier new, monospace">football=
+ &#39;europe-champions-league&#39;</font></div><div><font face=3D"courier n=
+ew, monospace">football &#39;europe-champions-league&#39;, setup: &#39;hist=
+ory&#39;</font></div></div><div><br></div><div>Now I get this error:</div><=
+div><font face=3D"courier new, monospace">[fatal] event reader - record for=
+ team key &gt;praha&lt; not found</font><br></div><div><br></div><div>As I&=
+#39;m getting the Czech Republic clubs in the generic &quot;clubs&quot;, ma=
+ybe the problem is that there isn&#39;t a club called Praha (it seems that =
+there are more than one club in Praha city).</div><div><br></div><div>Also,=
+ how could I import only the teams from Russia data, instead of all the dat=
+a?</div><div><br></div><div>Kind regards</div><div><br></div><div><br>El vi=
+ernes, 3 de febrero de 2017, 18:35:25 (UTC), Gerald Bauer escribi=C3=B3:<bl=
+ockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border=
+-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 Welcome to football.db.
+<br>
+<br>&gt; [fatal] event reader - record for team key &gt;moskva&lt; not foun=
+d
+<br>
+<br>=C2=A0 =C2=A0You might be missing the russian teams / clubs. See the /r=
+u-russia
+<br>repo [1] it includes in teams.txt:
+<br>
+<br>moskva, Moskva, city: Moscow
+<br>
+<br>Cheers.
+<br>
+<br>[1] <a href=3D"https://github.com/openfootball/ru-russia/blob/master/te=
+ams.txt" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39=
+;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2F=
+ru-russia%2Fblob%2Fmaster%2Fteams.txt\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQ=
+jCNG845oIZoeWgP8TjX99tsP8cUz97A&#39;;return true;" onclick=3D"this.href=3D&=
+#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball=
+%2Fru-russia%2Fblob%2Fmaster%2Fteams.txt\x26sa\x3dD\x26sntz\x3d1\x26usg\x3d=
+AFQjCNG845oIZoeWgP8TjX99tsP8cUz97A&#39;;return true;">https://github.com/<w=
+br>openfootball/ru-russia/blob/<wbr>master/teams.txt</a>
+<br></blockquote></div></div>
+------=_Part_818_796824487.1486164440200--
+
+------=_Part_817_362714443.1486164440199--
+

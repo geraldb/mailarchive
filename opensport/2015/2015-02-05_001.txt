@@ -1,0 +1,78 @@
+From 2397745184768@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2377276981248
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cd242d30f1f3615d
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.104.37 with SMTP id gb5mr4771208obb.45.1423165909502;
+        Thu, 05 Feb 2015 11:51:49 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.154.10 with SMTP id vk10ls5143igb.41.canary; Thu, 05 Feb
+ 2015 11:51:49 -0800 (PST)
+X-Received: by 10.50.143.66 with SMTP id sc2mr2909igb.1.1423165909141;
+        Thu, 05 Feb 2015 11:51:49 -0800 (PST)
+X-Google-Doc-Id: 387286b0f86a27da
+X-Google-Web-Client: true
+Date: Thu, 5 Feb 2015 11:51:48 -0800 (PST)
+From: maizarw@gmail.com
+To: opensport@googlegroups.com
+Message-Id: <016077bc-2d07-450a-a9a0-c0bf31feed15@googlegroups.com>
+In-Reply-To: <CAAxEZd80+_DS9oT5DaibtdPDQiHBSRHMyjR2-yvSzaOnozZuhA@mail.gmail.com>
+References: <ec906df1-8c4e-4e7f-818f-4a7804b24d82@googlegroups.com>
+ <CAAxEZd-YTsKsA3kjKPv=rW97xza38tv2jTS6RycyDU5Q3Rh1Xw@mail.gmail.com>
+ <050ea85e-361e-4129-aa03-4072002f20a3@googlegroups.com>
+ <CAAxEZd80+_DS9oT5DaibtdPDQiHBSRHMyjR2-yvSzaOnozZuhA@mail.gmail.com>
+Subject: Re: [opensport] Unable to build en-england repo
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_5858_1531458405.1423165908159"
+X-Google-Token: ENSTz6YFEcNy7PuXM1E0
+X-Google-IP: 122.166.170.158
+
+------=_Part_5858_1531458405.1423165908159
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5859_487395648.1423165908164"
+
+------=_Part_5859_487395648.1423165908164
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+Thanks for sharing the fix. I am a newbie to Ruby and I started learning it 
+just because I seem to have developed an interest in this program. So, I am 
+still new to debugging. I will get the updates and retry this. The older 
+posts seem to be misleading.
+
+Regards,
+
+- Maizar
+
+On Thursday, February 5, 2015 at 12:47:01 AM UTC+5:30, Gerald Bauer wrote:
+>
+> Hello, 
+>   Thanks for the detailed stacktrace. Sorry it looks like the key for 
+> England is broken. I renamed the key to eng from en (there is no .en 
+> internet domain) in the world.db  (the idea is to be in line w/ sco 
+> for Scottland, wal for Wales, etc.)  Now the country keys in 
+> football.db needs to get changed/updated to eng (e.g. in leagues.txt 
+> etc.)   Will try to get it updated in the next days. Thanks for your 
+> patience. Sorry for the trouble. Thanks again for trying. Cheers. 
+>
+
+------=_Part_5859_487395648.1423165908164
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi Gerald,<div><br></div><div>Thanks for sharing the fix. I am a newbie to Ruby and I started learning it just because I seem to have developed an interest in this program. So, I am still new to debugging. I will get the updates and retry this. The older posts seem to be misleading.</div><div><br></div><div>Regards,</div><div><br></div><div>- Maizar<br><br>On Thursday, February 5, 2015 at 12:47:01 AM UTC+5:30, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>&nbsp; Thanks for the detailed stacktrace. Sorry it looks like the key for
+<br>England is broken. I renamed the key to eng from en (there is no .en
+<br>internet domain) in the world.db &nbsp;(the idea is to be in line w/ sco
+<br>for Scottland, wal for Wales, etc.) &nbsp;Now the country keys in
+<br>football.db needs to get changed/updated to eng (e.g. in leagues.txt
+<br>etc.) &nbsp; Will try to get it updated in the next days. Thanks for your
+<br>patience. Sorry for the trouble. Thanks again for trying. Cheers.
+<br></blockquote></div></div>
+------=_Part_5859_487395648.1423165908164--
+------=_Part_5858_1531458405.1423165908159--
+

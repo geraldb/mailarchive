@@ -1,0 +1,120 @@
+From 6962030367629901824@xxx Fri May 14 06:33:31 +0000 2021
+X-GM-THRID: 6959446546034196480
+X-Received: by 2002:a17:906:7fd4:: with SMTP id r20mr16377362ejs.462.1620974011214;
+        Thu, 13 May 2021 23:33:31 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:aa7:d04e:: with SMTP id n14ls3674282edo.0.gmail; Thu, 13 May
+ 2021 23:33:30 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyEY9wksGtbh0LiRIgQcG0HHleurnxIu+XrLUkdR/ph1OV8Oa1VU/SwIPyDQnTzh5rYdStr
+X-Received: by 2002:a05:6402:111a:: with SMTP id u26mr6681653edv.260.1620974010007;
+        Thu, 13 May 2021 23:33:30 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1620974010; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Y05WogOxhFKSk8bFqd1DlGJhspstCu/39gg+z99LX3NBD61EYrWlr/Bg62EgQBRNvP
+         p6yFWWHRolbGW57SKf5/bD4syglJ9lx0KQYt40EFJ5MAfvRp3Uhk4685OBTQJYUpXVEZ
+         0yMnKYHQkjpT4n5w7oD8nqAJD0KZMWmyTQ5gaC8QyG+73hfOw8aiKP0PyF3ig9HHIc4k
+         ndb/VJiGrq/glgnx+vn3gzyUnHM28uerFm1q2NN5Gp7zu/Qxm83MANketaQMV0K/CwEk
+         18JR3piGlSE0tbErTnDq3JK1fGgf4b5W5qODqz7iKSeWm5ajePqMzUcy7EL3iTXKQGXi
+         YGXQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=RwdcBZDGETCMyy8iNy4MMpGo33AyVPvr/1j61xPj/P0=;
+        b=vh+ojh8ljw6H0itafTKOgHyrQOhpBIMV8aLGuJZiVqeONSmH9zs/hokpkjP2EvuDXZ
+         vuKkzxAt0w+CU4DUZr/Ll1nGl4sJYrouidAe44brdrBxcwzbJG7FgzYLboxCzjw5sNoT
+         MH+nxOFHJM4I473Eeaxc4JSmhnSl3+pMExqe3DXflML1mZ5a81xIrvTiv6s22z+NnQwu
+         Nm2k4WVs2br1VyvmGdN7QRxpTlaqrwvwj3bWjoay46kZ8yWJqKzXvWAepokYvZ1r+JhB
+         jK5vzYqA3z44SAr0JiSCRPfTeRzLdVyWJd1EeCsJ5+wwy/+RihwqhCdmqOkHI0JLNKVx
+         0iSw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=X+5xCJoz;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::529 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ed1-x529.google.com (mail-ed1-x529.google.com. [2a00:1450:4864:20::529])
+        by gmr-mx.google.com with ESMTPS id di23si201408edb.0.2021.05.13.23.33.29
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 13 May 2021 23:33:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::529 as permitted sender) client-ip=2a00:1450:4864:20::529;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=X+5xCJoz;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::529 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ed1-x529.google.com with SMTP id v5so22412597edc.8
+        for <opensport@googlegroups.com>; Thu, 13 May 2021 23:33:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=RwdcBZDGETCMyy8iNy4MMpGo33AyVPvr/1j61xPj/P0=;
+        b=X+5xCJoz1IvrH72pv5FZ6kNqjDOcLFrq9NssBlqFXT+2/uAU2deIVFbFCD2joDcrrJ
+         UZwaoYZ+g4PdutBIn+KvuS4/HcATqUQQ2ZfvY1ShiZJWULMXBqyDlgqZR8wC8Q7Bijvd
+         5EVsImEam/x1VKydgg8z1gZAA6aN0qoC8W6IHTNBOq123XC7ClTIxGwd+UgYV8YJkFbo
+         FItGyeOhtVZa2woSt+aBpsWiaOH2HH25JhU9u4oz10Pg0Np6gAdtAFrUafu6x8K06RUK
+         8eCObGZOdgQ6VnCDMXNMsc9OoM6T1dKryBZP0mySoGLbGRk1HQwof/bSsBrfIMWLY8ES
+         JhiQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=RwdcBZDGETCMyy8iNy4MMpGo33AyVPvr/1j61xPj/P0=;
+        b=DIpegHyLmONurc1R4Y547SooQxv5ghSCC7q/vIZtKDaDM1CHE2+fQZXAACFbOY18zu
+         SsUg+PPVRUYdIcdmzYigHL3sFwnPA8I3jDLLyPNB7CHtGJAYscyAN0Fgr3FoTy03onzS
+         O2STfpKYpQMuV5Dl23nehRjj1/SPZSoVOQGT+ahGzKKPISHRZGmyaMKbevRBmq2DJNNL
+         Cld7fx6vB/QwtVH4W0ds9O9+n+u0eCGTMO7QQ7ckI3bL2CL3X2FxODpRireflN64w8/3
+         qF9mRRRl2NFg5/M7Wtknhjt1gTLsxI1wuvZyAj2+tKHKaTFG924CUbHtoIDWOXcuYVkr
+         glvA==
+X-Gm-Message-State: AOAM530TiaovMHm5KXNFg84OK+/fBTFNZlfg2mAqkxpWWl1ePi4OWVkq
+	2mvwWxxDsoV8OFaPPVCT2jBzJlrD/Bjm2pb8GKr80OOHtjRoXQ==
+X-Received: by 2002:a50:cd57:: with SMTP id d23mr53105006edj.5.1620974009496;
+ Thu, 13 May 2021 23:33:29 -0700 (PDT)
+MIME-Version: 1.0
+References: <eacebec8-d32b-4416-adc7-6c60af1e44d6n@googlegroups.com>
+ <CAAxEZd-01Jv3LameYKS0y3oe3YGYrR2rN3nDv6Coh_VnABbfgg@mail.gmail.com>
+ <8b05e2ac-5ad4-4752-8fb1-e53669bcc353n@googlegroups.com> <953faaea-eb3d-4ea6-be3c-b652a3398d63n@googlegroups.com>
+In-Reply-To: <953faaea-eb3d-4ea6-be3c-b652a3398d63n@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 14 May 2021 08:33:17 +0200
+Message-ID: <CAAxEZd-ZkB2vvrJq+4jmUmknZU5UhSxZe8=_-YfMXCXEY5b4UA@mail.gmail.com>
+Subject: Re: [opensport] Build World-Cups database
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary="00000000000006bd2c05c2446cf7"
+
+--00000000000006bd2c05c2446cf7
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+> Everything seems "ok" but the main problem is that the base is pretty
+much empty
+
+Not sure what you mean.  There are not that many world cups (one every 4
+years).
+As far as I can tell the stats on your screenshot say / reads:
+
+  21 season, 21 events
+  84 teams
+  900 matches
+
+   That is - you should now have 21 world cups in your database with 84
+national teams and 900 matches in total.
+
+   What am I missing?  Sorry.
+
+--00000000000006bd2c05c2446cf7
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr">Hello,<div><br></div><div>&gt; Everything=
+ seems &quot;ok&quot; but the main problem is that the base is pretty much =
+empty</div><div><br></div><div>Not sure what you mean.=C2=A0 There are not =
+that many world cups (one every 4 years).</div><div>As far as I can tell th=
+e stats on your screenshot say / reads:</div><div><br></div><div>=C2=A0 21 =
+season, 21 events</div><div>=C2=A0 84 teams</div><div>=C2=A0 900 matches</d=
+iv><div><br></div><div>=C2=A0 =C2=A0That is - you should now have 21 world =
+cups in your database with 84 national teams and 900 matches in total.</div=
+><div><br></div><div>=C2=A0 =C2=A0What am I missing?=C2=A0 Sorry.</div></di=
+v></div>
+
+--00000000000006bd2c05c2446cf7--
+

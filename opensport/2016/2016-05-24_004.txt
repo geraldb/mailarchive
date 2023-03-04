@@ -1,0 +1,74 @@
+From 6288319709026713600@xxx Tue May 24 18:12:06 +0000 2016
+X-GM-THRID: 6288318359550296064
+X-Received: by 10.237.52.36 with SMTP id w33mr3834277qtd.5.1464113525918;
+        Tue, 24 May 2016 11:12:05 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.105.99 with SMTP id b90ls712320qgf.33.gmail; Tue, 24 May
+ 2016 11:12:05 -0700 (PDT)
+X-Received: by 10.200.53.188 with SMTP id k57mr2177021qtb.14.1464113525598;
+        Tue, 24 May 2016 11:12:05 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x230.google.com (mail-io0-x230.google.com. [2607:f8b0:4001:c06::230])
+        by gmr-mx.google.com with ESMTPS id u4si583522itc.3.2016.05.24.11.12.05
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 24 May 2016 11:12:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) client-ip=2607:f8b0:4001:c06::230;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::230 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x230.google.com with SMTP id 190so17286458iow.1
+        for <opensport@googlegroups.com>; Tue, 24 May 2016 11:12:05 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-transfer-encoding;
+        bh=bCo6IYupQjOHtHOCARldxzL7smKNIQ0CqGog+l5K3Og=;
+        b=cLQ/idDEiFweNng/f2Tg0CMuey9jeMfcefTOhVjLEZtxFgTCtOQ26U0O4j9RFFIcOU
+         TFkb38QLJ2LBkJbip/Fev/kpVOvAVVXsnt1asS/vknW5OPExQ/6VMAXbPVb5d/tewzrW
+         La30HBYatZz0q/cDae29bXAgukDHRR1ukVEdJJ6j+tGUzL7jN4K/mGEHK55ei3eNoMLA
+         2utlzvtlti36uvKIxB6TEmDVWWQ41X0yWKDbFJzRV6mtLNyXwfPXC+o1VqIjWgfp/NtM
+         cA4qhCWA6hJINpwXPc3QxpFh5F4bNcMlc3EfjgfFfAw1eEQGJ7kSZC6NIjfyGyCS01VE
+         2s/Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to:content-transfer-encoding;
+        bh=bCo6IYupQjOHtHOCARldxzL7smKNIQ0CqGog+l5K3Og=;
+        b=BDwKk16kZDeOst0qOe/o/MauZl6CLEQOWDP9hjc+BdakZK9or66usegI4Z8i6bA6/A
+         c1KxpAIFbonKKL1qd+AxiehtiNwhph4dv9uxZ5FkNkThc1mImGffLGUyzmIjBpH+cfQK
+         PfQhUMXWnloH+UCJL8AfWpOzN7Z0GE+T5WhC80kQ1jf4TkTjonsYuE9uo899bdW/UpPE
+         anYVkRsowJF0/c/QMNkvz3wjZTXelZZh+seUVb8/dfBnNa2bjKb10RylqgN4aak187e2
+         cpxhNswo+vS+cpho6InY3eKtknH0hd3vQGDitTDf84rIKQRPReaa1ccqruROX68gLd38
+         rf8g==
+X-Gm-Message-State: ALyK8tKIB7ccLlKjzSD6R4z4HrKwzZ+UPSe8itl3D940f80lE1BqZKMXp99v/M6kz2IqVHJoTsaIULodj1c8PA==
+MIME-Version: 1.0
+X-Received: by 10.107.18.12 with SMTP id a12mr134708ioj.15.1464113525367; Tue,
+ 24 May 2016 11:12:05 -0700 (PDT)
+Received: by 10.107.129.101 with HTTP; Tue, 24 May 2016 11:12:05 -0700 (PDT)
+In-Reply-To: <62525b30-de0f-48b8-a7de-75c89df57b42@googlegroups.com>
+References: <62525b30-de0f-48b8-a7de-75c89df57b42@googlegroups.com>
+Date: Tue, 24 May 2016 20:12:05 +0200
+Message-ID: <CAAxEZd-AXaerwu2iRYo7ZkFYFJQUC3DJB99J4KTyp6WLRJgXaQ@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_=5Bopensport=5D_Copa_Am=C3=A9rica_Centenario?=
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello Juriy,
+
+> Do you plan add to DB CopaAmerica Centenario?
+
+   It works like a (open) wiki with volunteers e.g. there's no plan or
+promise what gets added it all depends. The best way to make sure
+something gets added is to add it your self ;-)   For the current
+state of the Copa Am=C3=A9rica see the copa-america repo [1].
+
+   If you need any assistance to get started let me / us know.
+
+  Cheers.
+
+[1] https://github.com/openfootball/copa-america
+

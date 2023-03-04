@@ -1,0 +1,58 @@
+From 2434815492096@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 2421175615488
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,abf1a8a261ef13b2
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.103.197 with SMTP id n5mr16483878ico.13.1424774103644;
+        Tue, 24 Feb 2015 02:35:03 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.12.170 with SMTP id 42ls1778218iom.25.gmail; Tue, 24 Feb
+ 2015 02:35:03 -0800 (PST)
+X-Received: by 10.43.144.81 with SMTP id jp17mr16517667icc.25.1424774103327;
+        Tue, 24 Feb 2015 02:35:03 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22f.google.com (mail-ig0-x22f.google.com. [2607:f8b0:4001:c05::22f])
+        by gmr-mx.google.com with ESMTPS id f8si447257igy.1.2015.02.24.02.35.03
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 24 Feb 2015 02:35:03 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22f as permitted sender) client-ip=2607:f8b0:4001:c05::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ig0-x22f.google.com with SMTP id hn18so25470373igb.2
+        for <opensport@googlegroups.com>; Tue, 24 Feb 2015 02:35:03 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=wfyXReeegY4aZUuLjC+wEdgwiSbdAGR3Qquc8sB8L1U=;
+        b=LJVMP1P/G3Jus4V4lZ2WyLvykwf+aEggkw8mR557BBJk1W5b8748J22xmJYSjzT6zd
+         kcmal4mcY+aiW3W4RAPfs2K8x1dTRufof8QxhSpM/Rhr5Br+ViwsFbWyrxmOyb2zVRKm
+         Xrpu7TFUwrpnfnj50Bk+rtc3HIAa5fr85A0bHch1ErWBnx+grdRqe95SnSDixrNSyMWd
+         nmKljRQVrWoGj9sv9Y0sNFB3CqAz7N05sEdtS7J8T1lQX1dZ1EVmDKpmsTHadkW2ryzb
+         Dj7WcwG2FLDSZL0Qn8LnNHyPkQvcOgpTQEIfzLPrAdIzX9HFzSEJqWmuYjd7FNNoimTZ
+         OybA==
+MIME-Version: 1.0
+X-Received: by 10.107.33.11 with SMTP id h11mr19604611ioh.53.1424774103262;
+ Tue, 24 Feb 2015 02:35:03 -0800 (PST)
+Received: by 10.64.142.11 with HTTP; Tue, 24 Feb 2015 02:35:03 -0800 (PST)
+In-Reply-To: <c7304991-8540-4924-99cf-2d3fcca6c06f@googlegroups.com>
+References: <c7304991-8540-4924-99cf-2d3fcca6c06f@googlegroups.com>
+Date: Tue, 24 Feb 2015 11:35:03 +0100
+Message-ID: <CAAxEZd_F-5Rr9_os5g2pGfKK_vsNL+qcuMe+zEmDjASMNhEBzw@mail.gmail.com>
+Subject: Re: [opensport] Using Football Database to Build an iOS App
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  I'm not an iOS App expert.  As far as I know the iOS ships/includes
+an SQLite database.  Thus, I'd recommend using the SQLite database for
+storing and getting your football data.
+
+    The football.db by default uses an SQLite database, for example. Cheers.
+

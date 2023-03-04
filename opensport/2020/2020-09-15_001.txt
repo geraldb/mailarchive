@@ -1,0 +1,180 @@
+From 6872687828368621568@xxx Tue Sep 15 12:18:50 +0000 2020
+X-GM-THRID: 6872350316471255040
+X-Received: by 2002:a1c:19c1:: with SMTP id 184mr4711503wmz.114.1600172330361;
+        Tue, 15 Sep 2020 05:18:50 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a5d:428e:: with SMTP id k14ls1566622wrq.0.gmail; Tue, 15 Sep
+ 2020 05:18:49 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxSerAGpvgvKGHhDf0XfcVaGmVIqFV6Ru2Os8D7GidudOLdMuO0xn2iN6juhzzpl3O9n5eN
+X-Received: by 2002:a5d:4842:: with SMTP id n2mr21531882wrs.260.1600172328961;
+        Tue, 15 Sep 2020 05:18:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1600172328; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ZLsT2aDStBIwC+5gbJd3elc6VjxMfJqn9vHetgbtGWgDSVv8nwBC/kk7OKhGvmZnVM
+         Kswdz3FXjUtpO70zzFrP2luQ6iXDmgGGH5AdDARR/lReH2SIZG6vud+J/lQzqtSSoUUz
+         A3D1l67I16moqGUceXYStnxW8ViX0FZVjTJjKdGqP1+mbXM6XTvXRxbne3J16CgJL/Nu
+         gaOvzXVjuTdLue0G6h4W9A6UuQa3iUnaAUkuKbNeds/ifq4E/WqcP6yAVE61DryGzXJ+
+         72ZQ/MpfxYDJEI2KR/EjTwuCbfxv0W4awalwLfZfD6CMIWtiXbaI1yKqaWyEPJG4+YBs
+         t1yQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=G5CiP2POJppQ787nr6EEqlIZa1dBXD6MUCicUC4RTdU=;
+        b=J6aHUKeVZWQvAN/beny2rAHTZlmQxbobAoeIKM2RshrcbfCK5JkY5zkJ8q2qREI+dk
+         nDZ+B5cg7rZOjp6Pf2Z6CkdXD1A+Xvi1v2T7wWdLAy9H43j8Ln3tGwlvPfhVlfp7ijvI
+         TN4FIYc8a8g7DrAJ7NsDzGLx+SKfDlIGrQuO5oUM56sEhQqB033qVwYyQp0YvpRXk2uf
+         vyBC2gFHuI0j0onUwlI0vMLEklxn7HZoaJj7DofOzWnqi7k38AcCfV5lHb9nP+BW/Tt2
+         qyco1uqoPhZEA0JIrzjqLe9JBiDqBUak2MY9hjTG3cYwZCtc/fGJGb+aQXeIaNON8rhC
+         1Uuw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=M9LADX+o;
+       spf=pass (google.com: domain of cuellas@gmail.com designates 2a00:1450:4864:20::231 as permitted sender) smtp.mailfrom=cuellas@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <cuellas@gmail.com>
+Received: from mail-lj1-x231.google.com (mail-lj1-x231.google.com. [2a00:1450:4864:20::231])
+        by gmr-mx.google.com with ESMTPS id z11si479156wrp.4.2020.09.15.05.18.48
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 15 Sep 2020 05:18:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of cuellas@gmail.com designates 2a00:1450:4864:20::231 as permitted sender) client-ip=2a00:1450:4864:20::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=M9LADX+o;
+       spf=pass (google.com: domain of cuellas@gmail.com designates 2a00:1450:4864:20::231 as permitted sender) smtp.mailfrom=cuellas@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x231.google.com with SMTP id a22so2577745ljp.13
+        for <opensport@googlegroups.com>; Tue, 15 Sep 2020 05:18:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=G5CiP2POJppQ787nr6EEqlIZa1dBXD6MUCicUC4RTdU=;
+        b=M9LADX+oL7Tsj8WQ99pkrqpDPLBWEIHE7FAYg+J7CY7dT89BKOxp/kHCm7Ob3v1xWs
+         aPi9lVDk77mT9Z9gjWFnn4jv2HYMZv1Bu49FA0S3mpAONw0QDv+MnwWs/8E5rm7GcVWS
+         eN9d6ijHy8Lj4+CZBG9my/PZDhsINluX10mPFJs7/q7Ju3ddHtKConfCfWWWzYMFMwrn
+         pBxpwcHaoryj6lx8LfXkTwlUY+lpp0GFguld1vzoeaI3+9IQ1LmruwZb7dxrG6hOQqq8
+         fWiCEhx6sLeIx8ZYKE4KM747ku3sl2s9TATXfpJHIeUH80+F3zS2hKsPe0WF+gpei0k0
+         Pa1g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=G5CiP2POJppQ787nr6EEqlIZa1dBXD6MUCicUC4RTdU=;
+        b=Lgj23s4CeuBehYS5dcIWNXB8RKhG4xdqu9De9xJwvEi6x4Ru8hPo5OMkQzdp7UsoFm
+         g6y7Hdt+pSuBsSQx29VGaWSTIwcoQiJ+piM5YvK4MWQuZnqMg8KvDycGPIQPG+FMhOtY
+         DO8FKJh5YqMAfunjFhnXHmfq9gcp1Knp+/Jop19Tar62Jc5Blpds//TNwM7N+RDLeZDQ
+         RnZ5AWUcTHeXmgNzUWibiraExphq2lypZ3UhHJTkFRxzAyFRvAnvNFUgAV1LkdF4H1/V
+         LW706817d2C3ivYsMCuV3MJGt5gBNTpzM/Gbdv4IiWfsnXU7srumTyZ5UxDxjMSEc2ET
+         foWw==
+X-Gm-Message-State: AOAM533U0WwWHoVaHzBx1UlgSEjrc9qsbPo5ctEuDpjc6xkTnrKSESfe
+	ShGr/pIa9dYqUyS9kxwo8ElTA4g/AdfXy5UP/XIXlN2S
+X-Received: by 2002:a2e:9a01:: with SMTP id o1mr7461175lji.32.1600172328186;
+ Tue, 15 Sep 2020 05:18:48 -0700 (PDT)
+MIME-Version: 1.0
+References: <a45de9eb-3c3e-4d68-ad13-4eb98a843b45n@googlegroups.com> <CAAxEZd9zBpsvDnRBGgRitOJDzueyBz6NddvW4X8S1T2-R_wt0A@mail.gmail.com>
+In-Reply-To: <CAAxEZd9zBpsvDnRBGgRitOJDzueyBz6NddvW4X8S1T2-R_wt0A@mail.gmail.com>
+From: oscar cuellas <cuellas@gmail.com>
+Date: Tue, 15 Sep 2020 14:18:37 +0200
+Message-ID: <CACSCRzjRWbSxHPdcMzOtx9LxmpdQ79REzpOqSgXnnCyjQ5_iFw@mail.gmail.com>
+Subject: Re: [opensport] Hi. problemsn when i try to request some info fron
+ the public domain
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary="00000000000033751305af59270f"
+
+--00000000000033751305af59270f
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Ok. Thx  i will try it
+
+El lun., 14 sept. 2020 16:35, Gerald Bauer <gerald.bauer@gmail.com>
+escribi=C3=B3:
+
+> Hello,
+>
+>    Thanks for trying the json service. The herokuapp is just a
+> (temporary) example that always stops running when the monthly (free)
+> dyna hours run out.
+>    Please, use the "static" always-on json service hosted on github,
+> see /football.json [1]
+>
+>    In your case:
+>
+>  > curl -vvv '
+> http://footballdb.herokuapp.com/api/v1/event/en.2018_19/round/2'
+>
+>   change to:
+>
+>     curl -vvv '
+> https://raw.githubusercontent.com/openfootball/football.json/master/2018-=
+19/en.1.json
+> '
+>
+>   and retry. All the best. Cheers. Prost.
+>
+> [1] https://github.com/openfootball/football.json
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit
+> https://groups.google.com/d/msgid/opensport/CAAxEZd9zBpsvDnRBGgRitOJDzuey=
+Bz6NddvW4X8S1T2-R_wt0A%40mail.gmail.com
+> .
+>
+
+--00000000000033751305af59270f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Ok. Thx=C2=A0 i will try it</div><br><div class=3D"gmail_=
+quote"><div dir=3D"ltr" class=3D"gmail_attr">El lun., 14 sept. 2020 16:35, =
+Gerald Bauer &lt;<a href=3D"mailto:gerald.bauer@gmail.com">gerald.bauer@gma=
+il.com</a>&gt; escribi=C3=B3:<br></div><blockquote class=3D"gmail_quote" st=
+yle=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Hello=
+,<br>
+<br>
+=C2=A0 =C2=A0Thanks for trying the json service. The herokuapp is just a<br=
+>
+(temporary) example that always stops running when the monthly (free)<br>
+dyna hours run out.<br>
+=C2=A0 =C2=A0Please, use the &quot;static&quot; always-on json service host=
+ed on github,<br>
+see /football.json [1]<br>
+<br>
+=C2=A0 =C2=A0In your case:<br>
+<br>
+=C2=A0&gt; curl -vvv &#39;<a href=3D"http://footballdb.herokuapp.com/api/v1=
+/event/en.2018_19/round/2" rel=3D"noreferrer noreferrer" target=3D"_blank">=
+http://footballdb.herokuapp.com/api/v1/event/en.2018_19/round/2</a>&#39;<br=
+>
+<br>
+=C2=A0 change to:<br>
+<br>
+=C2=A0 =C2=A0 curl -vvv &#39;<a href=3D"https://raw.githubusercontent.com/o=
+penfootball/football.json/master/2018-19/en.1.json" rel=3D"noreferrer noref=
+errer" target=3D"_blank">https://raw.githubusercontent.com/openfootball/foo=
+tball.json/master/2018-19/en.1.json</a>&#39;<br>
+<br>
+=C2=A0 and retry. All the best. Cheers. Prost.<br>
+<br>
+[1] <a href=3D"https://github.com/openfootball/football.json" rel=3D"norefe=
+rrer noreferrer" target=3D"_blank">https://github.com/openfootball/football=
+.json</a><br>
+<br>
+-- <br>
+You received this message because you are subscribed to the Google Groups &=
+quot;opensport&quot; group.<br>
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:opensport%2Bunsubscribe@googlegroups.com" target=
+=3D"_blank" rel=3D"noreferrer">opensport+unsubscribe@googlegroups.com</a>.<=
+br>
+To view this discussion on the web visit <a href=3D"https://groups.google.c=
+om/d/msgid/opensport/CAAxEZd9zBpsvDnRBGgRitOJDzueyBz6NddvW4X8S1T2-R_wt0A%40=
+mail.gmail.com" rel=3D"noreferrer noreferrer" target=3D"_blank">https://gro=
+ups.google.com/d/msgid/opensport/CAAxEZd9zBpsvDnRBGgRitOJDzueyBz6NddvW4X8S1=
+T2-R_wt0A%40mail.gmail.com</a>.<br>
+</blockquote></div>
+
+--00000000000033751305af59270f--
+

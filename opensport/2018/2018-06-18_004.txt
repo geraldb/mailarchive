@@ -1,0 +1,188 @@
+From 6568311526792364032@xxx Mon Jun 18 06:43:21 +0000 2018
+X-GM-THRID: 6327070589248864256
+X-Received: by 2002:a81:9dd8:: with SMTP id u207-v6mr3164287ywg.194.1529304200895;
+        Sun, 17 Jun 2018 23:43:20 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a81:a044:: with SMTP id x65-v6ls2084297ywg.27.gmail; Sun, 17
+ Jun 2018 23:43:20 -0700 (PDT)
+X-Received: by 2002:a81:4d06:: with SMTP id a6-v6mr3227111ywb.75.1529304200439;
+        Sun, 17 Jun 2018 23:43:20 -0700 (PDT)
+Received: by 2002:a81:3197:0:0:0:0:0 with SMTP id x145-v6msywx;
+        Sun, 17 Jun 2018 21:54:58 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKKBz6n3YjqCd31tkh21LpmIKRf7sNhI2GLmNb46Vio2EiT5L6eTekgQqSZXakuSVzGs/U0zpYjCCw==
+X-Received: by 2002:a25:d98a:: with SMTP id q132-v6mr588548ybg.0.1529297698247;
+        Sun, 17 Jun 2018 21:54:58 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Sun, 17 Jun 2018 21:54:57 -0700 (PDT)
+From: Tuan Nguyen <gillar.nguyen@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <725ff031-37b0-4497-a899-de7781d1a521@googlegroups.com>
+In-Reply-To: <CAAxEZd9W3+3Hq=S__0_Ff7SPxcUZbo_gbJGbSTh+k7PbSQXc6w@mail.gmail.com>
+References: <ca4525cd-a47e-4569-93e0-f9efbbcb779b@googlegroups.com>
+ <CAAxEZd9W3+3Hq=S__0_Ff7SPxcUZbo_gbJGbSTh+k7PbSQXc6w@mail.gmail.com>
+Subject: Re: [opensport] rake db:setup failure
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_18190_240845184.1529297698059"
+X-Google-Token: EKH2nNkFMlK9vDh1kTU0
+X-Google-IP: 171.253.32.69
+
+------=_Part_18190_240845184.1529297698059
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_18191_1635974072.1529297698059"
+
+------=_Part_18191_1635974072.1529297698059
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Bauer,
+
+I can't install the rake db:setup, would you guide me how to used the old=
+=20
+data or which version will support.
+
+bundle exec rake db:setup --trace=20
+
+Caused by:
+NameError: uninitialized constant WorldDb::ReaderBase
+/var/lib/gems/2.3.0/gems/worlddb-models-2.1.0/lib/worlddb/reader_file.rb:5:=
+in=20
+`<module:WorldDb>'
+/var/lib/gems/2.3.0/gems/worlddb-models-2.1.0/lib/worlddb/reader_file.rb:3:=
+in=20
+`<top (required)>'
+/var/lib/gems/2.3.0/gems/worlddb-models-2.1.0/lib/worlddb/models.rb:69:in=
+=20
+`<top (required)>'
+/var/lib/gems/2.3.0/gems/persondb-0.4.0/lib/persondb.rb:5:in `<top=20
+(required)>'
+/var/lib/gems/2.3.0/gems/sportdb-1.9.8/lib/sportdb.rb:18:in `<top=20
+(required)>'
+/usr/lib/ruby/vendor_ruby/bundler/runtime.rb:77:in `require'
+/usr/lib/ruby/vendor_ruby/bundler/runtime.rb:77:in `block (2 levels) in=20
+require'
+/usr/lib/ruby/vendor_ruby/bundler/runtime.rb:72:in `each'
+/usr/lib/ruby/vendor_ruby/bundler/runtime.rb:72:in `block in require'
+/usr/lib/ruby/vendor_ruby/bundler/runtime.rb:61:in `each'
+/usr/lib/ruby/vendor_ruby/bundler/runtime.rb:61:in `require'
+/usr/lib/ruby/vendor_ruby/bundler.rb:99:in `require'
+/home/ubuntu/sportbook/config/application.rb:10:in `<top (required)>'
+/home/ubuntu/sportbook/Rakefile:5:in `require'
+/home/ubuntu/sportbook/Rakefile:5:in `<top (required)>'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/rake_module.rb:29:in `load'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/rake_module.rb:29:in=20
+`load_rakefile'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:703:in=20
+`raw_load_rakefile'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:104:in `block=
+=20
+in load_rakefile'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:186:in=20
+`standard_exception_handling'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:103:in=20
+`load_rakefile'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:82:in `block=
+=20
+in run'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:186:in=20
+`standard_exception_handling'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:80:in `run'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/exe/rake:27:in `<top (required)>'
+/usr/local/bin/rake:23:in `load'
+/usr/local/bin/rake:23:in `<main>'
+
+I've just tried to deploy the app for team to play fun for betting in=20
+Worldcup 2018.
+
+Thanks,
+Gillar
+
+V=C3=A0o 12:44:38 UTC+7 Th=E1=BB=A9 Ba, ng=C3=A0y 06 th=C3=A1ng 9 n=C4=83m =
+2016, Gerald Bauer =C4=91=C3=A3 vi=E1=BA=BFt:
+>
+> Hello,=20
+>     If you use bundler, try (it w/ bundle exec to lock down the=20
+> version via gemfile):=20
+>
+> $ bundle exec rake db:setup --trace=20
+>
+>     Are you trying to run the sportbook rails app? (e.g. sportbook=20
+> will not run with the latest sportdb/worldb versions)=20
+>
+> > NameError: uninitialized constant WorldDb::ReaderBase=20
+>
+>   Unless you're using sportbook try to use the latest (and greatest)=20
+> versions ;-)=20
+>
+>    Cheers.=20
+>
+
+------=_Part_18191_1635974072.1529297698059
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Bauer,<div><br></div><div>I can&#39;t install the rake =
+db:setup, would you guide me how to used the old data or which version will=
+ support.</div><div><br></div><div>bundle exec rake db:setup --trace=C2=A0<=
+br></div><div><br></div><div><div>Caused by:</div><div>NameError: uninitial=
+ized constant WorldDb::ReaderBase</div><div>/var/lib/gems/2.3.0/gems/worldd=
+b-models-2.1.0/lib/worlddb/reader_file.rb:5:in `&lt;module:WorldDb&gt;&#39;=
+</div><div>/var/lib/gems/2.3.0/gems/worlddb-models-2.1.0/lib/worlddb/reader=
+_file.rb:3:in `&lt;top (required)&gt;&#39;</div><div>/var/lib/gems/2.3.0/ge=
+ms/worlddb-models-2.1.0/lib/worlddb/models.rb:69:in `&lt;top (required)&gt;=
+&#39;</div><div>/var/lib/gems/2.3.0/gems/persondb-0.4.0/lib/persondb.rb:5:i=
+n `&lt;top (required)&gt;&#39;</div><div>/var/lib/gems/2.3.0/gems/sportdb-1=
+.9.8/lib/sportdb.rb:18:in `&lt;top (required)&gt;&#39;</div><div>/usr/lib/r=
+uby/vendor_ruby/bundler/runtime.rb:77:in `require&#39;</div><div>/usr/lib/r=
+uby/vendor_ruby/bundler/runtime.rb:77:in `block (2 levels) in require&#39;<=
+/div><div>/usr/lib/ruby/vendor_ruby/bundler/runtime.rb:72:in `each&#39;</di=
+v><div>/usr/lib/ruby/vendor_ruby/bundler/runtime.rb:72:in `block in require=
+&#39;</div><div>/usr/lib/ruby/vendor_ruby/bundler/runtime.rb:61:in `each&#3=
+9;</div><div>/usr/lib/ruby/vendor_ruby/bundler/runtime.rb:61:in `require&#3=
+9;</div><div>/usr/lib/ruby/vendor_ruby/bundler.rb:99:in `require&#39;</div>=
+<div>/home/ubuntu/sportbook/config/application.rb:10:in `&lt;top (required)=
+&gt;&#39;</div><div>/home/ubuntu/sportbook/Rakefile:5:in `require&#39;</div=
+><div>/home/ubuntu/sportbook/Rakefile:5:in `&lt;top (required)&gt;&#39;</di=
+v><div>/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/rake_module.rb:29:in `=
+load&#39;</div><div>/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/rake_modu=
+le.rb:29:in `load_rakefile&#39;</div><div>/var/lib/gems/2.3.0/gems/rake-12.=
+3.1/lib/rake/application.rb:703:in `raw_load_rakefile&#39;</div><div>/var/l=
+ib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:104:in `block in loa=
+d_rakefile&#39;</div><div>/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/app=
+lication.rb:186:in `standard_exception_handling&#39;</div><div>/var/lib/gem=
+s/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:103:in `load_rakefile&#39;=
+</div><div>/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:82:=
+in `block in run&#39;</div><div>/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/ra=
+ke/application.rb:186:in `standard_exception_handling&#39;</div><div>/var/l=
+ib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:80:in `run&#39;</div=
+><div>/var/lib/gems/2.3.0/gems/rake-12.3.1/exe/rake:27:in `&lt;top (require=
+d)&gt;&#39;</div><div>/usr/local/bin/rake:23:in `load&#39;</div><div>/usr/l=
+ocal/bin/rake:23:in `&lt;main&gt;&#39;</div><div><br></div><div>I&#39;ve ju=
+st tried to deploy the app for team to play fun for betting in Worldcup 201=
+8.</div><div><br></div><div>Thanks,</div><div>Gillar</div><br>V=C3=A0o 12:4=
+4:38 UTC+7 Th=E1=BB=A9 Ba, ng=C3=A0y 06 th=C3=A1ng 9 n=C4=83m 2016, Gerald =
+Bauer =C4=91=C3=A3 vi=E1=BA=BFt:<blockquote class=3D"gmail_quote" style=3D"=
+margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;=
+">Hello,
+<br>=C2=A0 =C2=A0 If you use bundler, try (it w/ bundle exec to lock down t=
+he
+<br>version via gemfile):
+<br>
+<br>$ bundle exec rake db:setup --trace
+<br>
+<br>=C2=A0 =C2=A0 Are you trying to run the sportbook rails app? (e.g. spor=
+tbook
+<br>will not run with the latest sportdb/worldb versions)
+<br>
+<br>&gt; NameError: uninitialized constant WorldDb::ReaderBase
+<br>
+<br>=C2=A0 Unless you&#39;re using sportbook try to use the latest (and gre=
+atest)
+<br>versions ;-)
+<br>
+<br>=C2=A0 =C2=A0Cheers.
+<br></blockquote></div></div>
+------=_Part_18191_1635974072.1529297698059--
+
+------=_Part_18190_240845184.1529297698059--
+

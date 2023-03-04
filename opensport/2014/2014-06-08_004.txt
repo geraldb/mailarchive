@@ -1,0 +1,76 @@
+From 1115174207488@xxx Tue Jun 16 00:17:02 +0000 2015
+X-GM-THRID: 1088439713792
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4b9cee51d6eb9eaa
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.137.138 with SMTP id qi10mr3258205lbb.4.1402249757749;
+        Sun, 08 Jun 2014 10:49:17 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.106.6 with SMTP id gq6ls301061wib.24.gmail; Sun, 08 Jun
+ 2014 10:49:17 -0700 (PDT)
+X-Received: by 10.180.87.71 with SMTP id v7mr2673060wiz.2.1402249757429;
+        Sun, 08 Jun 2014 10:49:17 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x229.google.com (mail-we0-x229.google.com [2a00:1450:400c:c03::229])
+        by gmr-mx.google.com with ESMTPS id h4si459578wib.2.2014.06.08.10.49.17
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 08 Jun 2014 10:49:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::229 as permitted sender) client-ip=2a00:1450:400c:c03::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f169.google.com with SMTP id w61so2133849wes.14
+        for <opensport@googlegroups.com>; Sun, 08 Jun 2014 10:49:17 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=03ty3V25hfIsAMTBI0CNa/eUsDU6qBypFZGz7x77WzI=;
+        b=aFTQgwo8P+KkGFrKss1vNgyWKT6gI5RrRYnlRR7LXQWN9+JhEAMOKqYpTgEpAou1oM
+         +RTuJs9E5TdhZcxjBkXNDMNfxQLwQMHkI4JycW5P9uWfe5z2s29tNiBlR2CIpYAwuK7R
+         834n/T8XfUX0LRlbTEXeA9VksI97HQrkdsdCbBhizBuPyZz7AMglSilWEUQmQ+QJxEMR
+         WeTOh5eqf1X7dz5tRRSh5vYqtHi0O4AGXqrEZTxwG/EhZHGI1jk4+TWlIenBAXtTr+lD
+         swCjYkLIH7OmWkZHxvvmbrQ11jWDDeTvdiQ3cVsF/RCUVxONPxwbY5uIcc13WMaytgYV
+         1KUg==
+MIME-Version: 1.0
+X-Received: by 10.180.126.97 with SMTP id mx1mr24373829wib.29.1402249757318;
+ Sun, 08 Jun 2014 10:49:17 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Sun, 8 Jun 2014 10:49:17 -0700 (PDT)
+In-Reply-To: <f5e06275-fcb9-4e24-89de-f9c3f6730551@googlegroups.com>
+References: <f5e06275-fcb9-4e24-89de-f9c3f6730551@googlegroups.com>
+Date: Sun, 8 Jun 2014 19:49:17 +0200
+Message-ID: <CAAxEZd9kO+3L2vX28Vt4nByo3mk4LL4W5mO-fAN76bQXadYaqQ@mail.gmail.com>
+Subject: Re: [opensport] Trouble gettings worldcup players/squads
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  Thanks for trying football.db.
+
+  To get the squads included you will first need a copy of the player
+database / repo [1].
+
+  Using the rake build script issue:
+
+$ rake squads      (is configured for now only world cup 2014).
+
+  That's it. Good luck. Cheers.
+
+PS: Here's the build script snippet:
+
+task :players  => :importbuiltin do
+  SportDb.read_setup( 'setups/all',   PLAYERS_INCLUDE_PATH )
+end
+
+task :squads => :players do
+  ## test/try squads for worldcup 2014
+  ## add importbuiltin dep too (or reuse from players) ?? why? why not??
+
+  SportDb.read_setup( 'setups/all',          NATIONAL_TEAMS_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/2014_squads',  WORLD_CUP_INCLUDE_PATH )
+end
+

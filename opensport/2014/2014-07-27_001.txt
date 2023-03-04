@@ -1,0 +1,66 @@
+From 1705844408320@xxx Tue Jun 16 00:16:53 +0000 2015
+X-GM-THRID: 1709100236800
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,f748b128e7862c35,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.90.18 with SMTP id bs18mr1570465wib.6.1406469822648;
+        Sun, 27 Jul 2014 07:03:42 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.97.98 with SMTP id dz2ls312166wib.41.canary; Sun, 27 Jul
+ 2014 07:03:42 -0700 (PDT)
+X-Received: by 10.180.12.244 with SMTP id b20mr1575312wic.2.1406469822022;
+        Sun, 27 Jul 2014 07:03:42 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22f.google.com (mail-wg0-x22f.google.com [2a00:1450:400c:c00::22f])
+        by gmr-mx.google.com with ESMTPS id m6si241227wik.2.2014.07.27.07.03.42
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 27 Jul 2014 07:03:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22f as permitted sender) client-ip=2a00:1450:400c:c00::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-x22f.google.com with SMTP id b13so6124228wgh.6
+        for <opensport@googlegroups.com>; Sun, 27 Jul 2014 07:03:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=0go9WMTDuEKzQkKpBgbJJVc596Cfa+vBQ7ThcMuaCQU=;
+        b=ZA2FN5tX7FS4TLnFkLmU79URu9MMex9ltypw7me7y8DEamoi8PiWs2kzsEfF2CVQYc
+         xmliVOhKNrJanIyy0iM6g9mzT8c3d0Pd5s9FFsmBNCsMM832Va+L2UIm4uutZ31/MgTO
+         BubHMTNcUmOwKwRJW1ZqUU+RyoDGUy9lKdZCWY+Vn6CJpxfD9IPbuVzX8YP9ck0l4Ig2
+         XfNx2QR7yH2S3OwTDyljRkkpJ957geUYPg7PMfDExWAnmHPbp7+d8eMv6TIeOGlRYn3k
+         FUXheUyrFcBrkzRLNV+xwRBjgKg5+hO7UElwmMRDsea+wADyYlDzM2Jw8IG40ZCun7uZ
+         BE8A==
+MIME-Version: 1.0
+X-Received: by 10.180.99.65 with SMTP id eo1mr21742451wib.12.1406469821933;
+ Sun, 27 Jul 2014 07:03:41 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Sun, 27 Jul 2014 07:03:41 -0700 (PDT)
+Date: Sun, 27 Jul 2014 16:03:41 +0200
+Message-ID: <CAAxEZd-LS71AXsb+Cvk33RzBafUY1i4bXov2TS3eOpG=dGNeaw@mail.gmail.com>
+Subject: sportdb command line update v1.9.4 - adds clubs.txt, Week 1,
+ en/2013-14/pl.txt, etc.
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: If anyone follows along I've pushed a new version of the
+sportdb command line tool with some minor changes/updates. What's
+news?
+
+  You now can use clubs.txt as an alternative for teams.txt
+  (actually recommended for football clubs otherwise clubs might get
+flagged as national teams and not as clubs).
+
+  You now can use 2013-14 as an alterantive for 2013_14 in your
+fixture path (e.g. 2013-14/1-premierleague-i.txt now works)
+
+  You now can use Week 1 or Week 5 etc in your match schedule (in
+English/en) for matchday/round headers.
+
+   That's all. Cheers.
+

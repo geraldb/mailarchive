@@ -1,0 +1,104 @@
+From 43848302592@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 40904949760
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,595a58049c5d9419
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.114.111.1 with SMTP id j1mr8957274wac.0.1216099522239;
+        Mon, 14 Jul 2008 22:25:22 -0700 (PDT)
+Return-Path: <geraldbauer2007@gmail.com>
+Received: from wf-out-1314.google.com (wf-out-1314.google.com [209.85.200.171])
+        by mx.google.com with ESMTP id v36si1832384wah.1.2008.07.14.22.25.21;
+        Mon, 14 Jul 2008 22:25:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of geraldbauer2007@gmail.com designates 209.85.200.171 as permitted sender) client-ip=209.85.200.171;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of geraldbauer2007@gmail.com designates 209.85.200.171 as permitted sender) smtp.mail=geraldbauer2007@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by wf-out-1314.google.com with SMTP id 28so5223215wfc.29
+        for <webslideshow@googlegroups.com>; Mon, 14 Jul 2008 22:25:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type
+         :content-transfer-encoding:content-disposition:references;
+        bh=CDo26sCipGqDm2XmtPeyKiBwRi6FZgOn/AU8d53TdG0=;
+        b=ppzGdcItuzLnMAFCwq6U8IrUflj0jgE7y+kXb6SJI1rBrNiGZFgqM+NTVBmIFgRC7W
+         lex5gAQSmmWa9143qMDhBOLeSfccsQQmVoJV4uXfFs6+eZbxFB7tLJSCyRYNY2Vz7xuB
+         r6eY9ZSAgySnfWi5MmzaADZQ3u4Wkf27y8VQ0=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:content-transfer-encoding:content-disposition
+         :references;
+        b=o3KvNiVpnJpNPyb7OHZX3Fue2c0dLD2mY/IKFGoatBUDH+62f3gFFnLJ67RTGqYDYD
+         nAA8cpAhi7zbEzV3Rd/pp4XjVyDN81VfvtBkaYanBQq94uLpY/60FA8sA25YdROZk3Zs
+         bj2N4FLM9kugo2HEEmQHrhXcYHGgzP9+9Ubrg=
+Received: by 10.142.132.2 with SMTP id f2mr4507036wfd.22.1216099517874;
+        Mon, 14 Jul 2008 22:25:17 -0700 (PDT)
+Received: by 10.143.1.11 with HTTP; Mon, 14 Jul 2008 22:25:17 -0700 (PDT)
+Message-ID: <7e7cb8940807142225k6cf6c416k79565a4c5e229c94@mail.gmail.com>
+Date: Mon, 14 Jul 2008 22:25:17 -0700
+From: "Gerald Bauer" <geraldbauer2007@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow] [patch] inline code for generated content in slideshow
+In-Reply-To: <677787a1-c46f-442a-b9aa-62ff1788191e@d1g2000hsg.googlegroups.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <677787a1-c46f-442a-b9aa-62ff1788191e@d1g2000hsg.googlegroups.com>
+
+Hello,
+
+>  I've just added support for doing inline content generation in
+> slideshow.  With this patch you can use ruby to generate the content
+> in some of your slides.  Eventually this could get really interesting
+> using inline SVG, for example, but this is a super generic way that
+> should support just about anything.  It works like this:
+>
+> ---------------------------------------------------
+> h1. This is a sample slide
+>
+> begin_ruby
+>
+> # This is now ruby code
+> def foo(a, b)
+>  a + b
+> end
+>
+> # Whatever is returned from this code will be inserted into the slide
+> as content.
+> "#{foo(232, 43)}"
+> end_ruby
+>
+> h1. next slide
+> ...
+> -------------------------------------------------
+>
+> Let me know what you think.
+>
+> I also cleaned up a couple regular expressions that had a comment
+> requesting it.  Another option I was thinking would be nice (and easy
+> to add), is to support the execution of arbitrary scripts and
+> programs, whose output would be inserted.  This can be done with the
+> included patch using ruby back-quotes, but it might be nice to have
+> something simpler too...
+>
+> This is a patch generated from git (using git-svn), but let me know if
+> something else would be easier to deal with.
+
+   Thanks for the patch. Definitely a great idea to include support
+for Ruby code inside slide shows text so you can use gems that let you
+create SVG charts and more. I'm still undecided how to move forward.
+One alternative idea that I prefer is just using eRuby instead of
+reinventing the syntax for including Ruby code (e.g. let's use <%
+instead of begin_ruby and %> instead of end_ruby ) and let's just use
+eRuby as a kind of preprocessor/filter. Another option is to offer
+plugins/macros. Let's say all code in the /plugins folder gets loaded
+and you can use it in the slide show text using a macro syntax like {{
+chart title: 'Downloads', data: 45, 53, 44, 454 }} that's also
+accessible to non-Rubyists. Comments welcome.
+
+  Cheers.
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.wordpress.com
+

@@ -1,0 +1,71 @@
+From 6384010270220484608@xxx Mon Feb 06 15:00:21 +0000 2017
+X-GM-THRID: 6382859402075963392
+X-Received: by 10.99.117.10 with SMTP id q10mr2535106pgc.59.1486393220853;
+        Mon, 06 Feb 2017 07:00:20 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.9.140 with SMTP id q12ls13277068otd.6.gmail; Mon, 06 Feb
+ 2017 07:00:20 -0800 (PST)
+X-Received: by 10.176.82.60 with SMTP id i57mr1603607uaa.0.1486393220535;
+        Mon, 06 Feb 2017 07:00:20 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x234.google.com (mail-it0-x234.google.com. [2607:f8b0:4001:c0b::234])
+        by gmr-mx.google.com with ESMTPS id a17si693342itd.1.2017.02.06.07.00.20
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 06 Feb 2017 07:00:20 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::234 as permitted sender) client-ip=2607:f8b0:4001:c0b::234;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x234.google.com with SMTP id c7so56074085itd.1
+        for <opensport@googlegroups.com>; Mon, 06 Feb 2017 07:00:20 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=MZze9oLfeJXAPvvz/67It60PRytHXL7SWkEB0/SrhiY=;
+        b=espg/Yp395NLKWQV25cbme289m91l/WH548GLVRjHC5i4siQx4pj9Ny0T/1eVv43Cb
+         Vyra1pfZH9nFJ8g4x3jMNMiSqy+W/hZ7aTsZ875CzYBx4Y7fLUhpo1/XRGeY3mv9WDPh
+         1t2yDm/xoZsRYWJq5s3tb4TbQJWUAt1FgQGCJ/hiPWTZM8d2Y5AzDaC4lIjmrmeK4xhU
+         uSzElt6prJPOKeiVFybxgzGzFY0xz8vq8+11pmdxxrP2G1tjM6xGFGHVYKFh88i6xDbz
+         jm3s5hfCfMe3DNUJs+oLnIvBtnvj/jca+W8UKFUGAuBXeTfEOoY542mAgC/g/ZqN6mpG
+         bd/A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=MZze9oLfeJXAPvvz/67It60PRytHXL7SWkEB0/SrhiY=;
+        b=nx475HOh/R8YFqyiOpprb0LLS8CnvIjzTnW7//R/73jfTsbVs9p8kCqCbSZc9RvKOZ
+         l9IS6PqQWFfSAMF6O3NCy0ihq6AuiykVNICDn/yqXjoP8vXtxOd7OZOggDOeozYUTCDu
+         8aplUmoivWJ/ZJBe99s2yJjzBBPlqTsfPyT+L1ZwBu+GjzFALbTuzyBf+Ybd7ZIYwIdc
+         8NVOLHd44csGuYvuDFgc9z2NJs2bIJybcWSWoeAlXEvdsCrzcssxUIn4l9SEmPz43bIm
+         L7qsUAZcXO/IgXp/VVfqjQb4ggbH6O0mquG8sH6mtbxFz4Bh7NFQ4lzewDWsulqZWc73
+         Zsiw==
+X-Gm-Message-State: AIkVDXI7WY96D3a5LmeYnSDRVSOI8VKn0+A8Vlv3l9Mb+m8KuI1/i5p6cB1MmO+LAhqrp4DnmuWUEoAOJ3C6tw==
+X-Received: by 10.36.47.213 with SMTP id j204mr7297196itj.7.1486393220048;
+ Mon, 06 Feb 2017 07:00:20 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.34.209 with HTTP; Mon, 6 Feb 2017 07:00:19 -0800 (PST)
+In-Reply-To: <ff33bb93-0ff1-4e6b-8e87-b187f7829f08@googlegroups.com>
+References: <a8f9ce84-6e89-4701-9611-e5c591602483@googlegroups.com>
+ <CAAxEZd9_HdroQq+-habSdB5GPtgox=YD=MitQ3OuoLct57jF2A@mail.gmail.com>
+ <aa67484d-ab88-429f-bd5a-79268ad30455@googlegroups.com> <ff33bb93-0ff1-4e6b-8e87-b187f7829f08@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 6 Feb 2017 16:00:19 +0100
+Message-ID: <CAAxEZd8F9cVTYUeUeS-uvGwPPQudRg79ETvPE8k_5KTi0JZfGQ@mail.gmail.com>
+Subject: Re: [opensport] Champions League full database
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    Thanks for trying and not giving up. Hard to tell without running
+a build myself. I will try to run a build later this week
+
+> *** error: 70277522327500 is out of range for ActiveRecord::Type::Integer with limit 4
+
+  Hard to tell. I recommend using the -vebose switch / flag for more
+details about the error (e.g. is it the thread id / tid for log? or
+something). Sorry I have no clue. Needs more details.
+
+   Again thanks for trying. Keep it up. Cheers.
+

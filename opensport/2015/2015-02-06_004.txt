@@ -1,0 +1,66 @@
+From 2401204436992@xxx Tue Jun 16 00:16:42 +0000 2015
+X-GM-THRID: 2402930393088
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cab43fb745031c24,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.181.198 with SMTP id dy6mr288634lbc.22.1423213364983;
+        Fri, 06 Feb 2015 01:02:44 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.234.102 with SMTP id ud6ls236245lac.26.gmail; Fri, 06 Feb
+ 2015 01:02:44 -0800 (PST)
+X-Received: by 10.112.143.167 with SMTP id sf7mr285063lbb.0.1423213364225;
+        Fri, 06 Feb 2015 01:02:44 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22d.google.com (mail-we0-x22d.google.com. [2a00:1450:400c:c03::22d])
+        by gmr-mx.google.com with ESMTPS id ev8si30300wib.3.2015.02.06.01.02.44
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 06 Feb 2015 01:02:44 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22d as permitted sender) client-ip=2a00:1450:400c:c03::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f173.google.com with SMTP id w55so824408wes.4
+        for <opensport@googlegroups.com>; Fri, 06 Feb 2015 01:02:44 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=3D7UaB2lIrp3Aqlfnmo9VLNb1hPrGvWCzLh8tatBQMg=;
+        b=igOdK9MvDwITBQv7i1ZdeBdmchD58LuZ+Dqed3S0KpZb7vGH6GmGdr58+/YOc6V23K
+         40yZ2n1ehlQhcF7+nHctyIek/b1vwc6uWe9fY7xQTCR/+0C0MDyFCjEy3tI0lNxxlLuT
+         +w2/ieU1xBtk7GPey9vEwKL6gEV+UbQdlOmWGLIu4/6NhUxFf0ZXAktmROLo2XG0am8r
+         barqr8R8YI1OdEUHdffTOVOPQoUz5XlUi81bGn4KE9V/CQOhoPr9rhGvMiWimviEfDCf
+         dbGHaKdzRUlyuGeQZtr25jJwwu5gDPp1jcTEQUAEpE1I9FsDF7t52MeDUCb0umUWC1y2
+         Y0ZA==
+MIME-Version: 1.0
+X-Received: by 10.180.78.70 with SMTP id z6mr1089637wiw.25.1423213364121; Fri,
+ 06 Feb 2015 01:02:44 -0800 (PST)
+Received: by 10.216.196.7 with HTTP; Fri, 6 Feb 2015 01:02:44 -0800 (PST)
+Date: Fri, 6 Feb 2015 10:02:44 +0100
+Message-ID: <CAAxEZd8AA7L0XYywSn=khYAiBXsd4EFNb1b8JiKyND9NqSLupQ@mail.gmail.com>
+Subject: Country Code for England (eng), Wales (wal), Scotland (sco), Northern
+ Ireland (nir) Changed
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   The two-letter codes for countries without top-level internet
+domains or ISO codes changed to three-letter codes e.g. the country
+codes for
+
+   England          => eng
+   Wales            => wal
+   Scotland         => sco
+   Northern Ireland => nir
+
+  changed. Note: The en-england/ repo changed to eng-england/ [1] -
+please update (e.g. delete and reclone) the repo.
+
+   If anythings breaks, please report any issues. Cheers.
+
+[1] github.com/openfootball/eng-england
+

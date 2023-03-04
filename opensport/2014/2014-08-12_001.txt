@@ -1,0 +1,98 @@
+From 2032542941184@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 2032746364928
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,46cbd558a9bb5e41,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.221.132 with SMTP id qe4mr567004wic.1.1407866423302;
+        Tue, 12 Aug 2014 11:00:23 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.181.13.167 with SMTP id ez7ls686123wid.48.canary; Tue, 12 Aug
+ 2014 11:00:22 -0700 (PDT)
+X-Received: by 10.180.12.35 with SMTP id v3mr29756wib.3.1407866422658;
+        Tue, 12 Aug 2014 11:00:22 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x230.google.com (mail-wi0-x230.google.com [2a00:1450:400c:c05::230])
+        by gmr-mx.google.com with ESMTPS id d9si1504104wie.3.2014.08.12.11.00.22
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 12 Aug 2014 11:00:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::230 as permitted sender) client-ip=2a00:1450:400c:c05::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f176.google.com with SMTP id bs8so6272277wib.3
+        for <opensport@googlegroups.com>; Tue, 12 Aug 2014 11:00:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=sNLWStrKdBiPB5c6FvJUqY4oKaZjtZoMpSa34pdmV4Q=;
+        b=x6/TMaoGUNoo7vKvdYqvzgMe3amgQexT866wkgTvgs68KvTjDobj8oRH8+JXNLF3k3
+         qtgr/2qOuvOa/VHuIpExqi4BiyEKBhnChIOe1PrDdLBJRB/POorCvLfQZCQ85vTV+pcu
+         pREvoeEUp4bbBidieBPVnMUQWyGYJcT0Q0oRgYVPBrUz35dJa/Yp35e9fwAm9wTRM5oU
+         HGth6q1VySkgNtx3yXKFjNkTUqyLlJASKr+2vzC0Hwuv+Ve4mfoFoEHrIR7vFxvLMxdH
+         ZaCOKt1jkmkT0L00t8+ua2pz4G26QrYeKRaGoad7q0o28oqqojeB+4UqLvB3bjHiRAWJ
+         thwQ==
+MIME-Version: 1.0
+X-Received: by 10.180.108.1 with SMTP id hg1mr30267764wib.25.1407866422476;
+ Tue, 12 Aug 2014 11:00:22 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Tue, 12 Aug 2014 11:00:22 -0700 (PDT)
+Date: Tue, 12 Aug 2014 20:00:22 +0200
+Message-ID: <CAAxEZd98CUUhCza6sk0nDtOA1FqpFEoyJjsXn-p-g7ejcw_VoQ@mail.gmail.com>
+Subject: football.db SQL Queries Made Easy (Thanks to Views) e.g. select *
+ from games_list;
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  First thanks to Joe Kampschmidt for getting started w/ some SQL
+queries examples [1].
+
+
+  FYI:  I've started to create some SQL views to make it easier to
+query the football.db.
+
+Example - List World Cup Brazil 2014 Games:
+
+Before (Table Edition):
+
+SELECT t1.title,
+       t2.title,
+       g.*
+  FROM games g
+       LEFT OUTER JOIN teams t1 ON t1.id = g.team1_id
+       LEFT OUTER JOIN teams t2 ON t2.id = g.team2_id
+       INNER JOIN rounds r ON r.id = g.round_id
+       INNER JOIN events e ON e.id = r.event_id
+ WHERE e.key = 'world.2014'
+
+
+After (View Edition):
+
+SELECT *
+  FROM events_games_list
+ WHERE e.key = 'world.2014';
+
+
+ More views [2][3] include:
+
+- teams_list
+- games_list
+- events_list
+- events_teams_list
+- events_games_list
+- events_rounds_list
+- events_groups_list
+
+
+  Cheers.
+
+PS: The SQL views will get auto-created w/ the next sportdb gem update.
+
+[1] openfootball.github.io/docs/sql-queries-intro.html
+[2] github.com/openfootball/schema.sql/blob/master/football.views.sql
+[3] github.com/openfootball/schema.sql/blob/master/football.events.views.sql
+

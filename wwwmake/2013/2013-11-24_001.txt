@@ -1,0 +1,170 @@
+From 1430612082688@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1431622909952
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,4a714fa3a883ed3f
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.84.212 with SMTP id n20mr8121254icl.0.1385374034129;
+        Mon, 25 Nov 2013 02:07:14 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.50.118.6 with SMTP id ki6ls1405652igb.20.gmail; Mon, 25 Nov
+ 2013 02:07:13 -0800 (PST)
+X-Received: by 10.50.72.110 with SMTP id c14mr5797171igv.2.1385374033737;
+        Mon, 25 Nov 2013 02:07:13 -0800 (PST)
+Received: by 10.224.129.195 with SMTP id p3msqas;
+        Sun, 24 Nov 2013 14:12:34 -0800 (PST)
+X-Received: by 10.49.88.5 with SMTP id bc5mr114505qeb.4.1385331154072;
+        Sun, 24 Nov 2013 14:12:34 -0800 (PST)
+X-Google-Doc-Id: c3f9604e26d67fb9
+X-Google-Web-Client: true
+Date: Sun, 24 Nov 2013 14:12:33 -0800 (PST)
+From: Kamal <kantawala@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <35292c64-2e56-410f-b4bd-0c6ea976ac33@googlegroups.com>
+Subject: Google Analytics Helper
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_251_24333856.1385331153644"
+X-Google-Token: ENHzyZQFc7lKdsnd0Wo0
+X-Google-IP: 99.39.119.109
+
+------=_Part_251_24333856.1385331153644
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_252_17703917.1385331153644"
+
+------=_Part_252_17703917.1385331153644
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+I am trying to use the google_analytics helper. By inserting this in the top of the mardown document.
+
+{{ google_analytics code=UA-YOUR-CODE-HERE }}
+
+
+After running: slideshow build index.txt -t reveal
+
+I get the following error:
+
+error: undefined method `include?' for nil:NilClass
+
+
+I have already done:
+
+slideshow update
+
+slideshow install plugins
+
+
+I am using verison: Slide Show (S9) 2.3.0 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+
+
+What could I be doing wrong?
+
+
+Thanks.
+
+--
+
+kamal
+
+
+
+------=_Part_252_17703917.1385331153644
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><pre style=3D"padding: 4px; border-top-color: rgb(187, 187=
+, 187); border-top-width: 1px; border-top-style: solid; border-bottom-color=
+: rgb(187, 187, 187); border-bottom-width: 1px; border-bottom-style: solid;=
+ background-color: rgb(243, 243, 243); color: rgb(0, 0, 0);"><code>I am try=
+ing to use the </code><span style=3D"font-family: Arial, Helvetica, sans-se=
+rif;">google_analytics helper. By inserting this in the top of the mardown =
+document.</span></pre><pre style=3D"padding: 4px; border-top-color: rgb(187=
+, 187, 187); border-top-width: 1px; border-top-style: solid; border-bottom-=
+color: rgb(187, 187, 187); border-bottom-width: 1px; border-bottom-style: s=
+olid; background-color: rgb(243, 243, 243); color: rgb(0, 0, 0);"><span sty=
+le=3D"font-family: Arial, Helvetica, sans-serif;">{{ google_analytics code=
+=3DUA-YOUR-CODE-HERE }}</span><br></pre><pre style=3D"padding: 4px; border-=
+top-color: rgb(187, 187, 187); border-top-width: 1px; border-top-style: sol=
+id; border-bottom-color: rgb(187, 187, 187); border-bottom-width: 1px; bord=
+er-bottom-style: solid; background-color: rgb(243, 243, 243); color: rgb(0,=
+ 0, 0);"><code><br></code></pre><pre style=3D"padding: 4px; border-top-colo=
+r: rgb(187, 187, 187); border-top-width: 1px; border-top-style: solid; bord=
+er-bottom-color: rgb(187, 187, 187); border-bottom-width: 1px; border-botto=
+m-style: solid; background-color: rgb(243, 243, 243); color: rgb(0, 0, 0);"=
+><code>After running: slideshow build index.txt -t reveal</code></pre><pre =
+style=3D"padding: 4px; border-top-color: rgb(187, 187, 187); border-top-wid=
+th: 1px; border-top-style: solid; border-bottom-color: rgb(187, 187, 187); =
+border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb=
+(243, 243, 243); color: rgb(0, 0, 0);"><span style=3D"font-family: Arial, H=
+elvetica, sans-serif;">I get the following error:</span><br></pre><pre styl=
+e=3D"padding: 4px; border-top-color: rgb(187, 187, 187); border-top-width: =
+1px; border-top-style: solid; border-bottom-color: rgb(187, 187, 187); bord=
+er-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(243=
+, 243, 243); color: rgb(0, 0, 0);"><span style=3D"font-family: Arial, Helve=
+tica, sans-serif;">error: undefined method `include?' for nil:NilClass</spa=
+n><br></pre><pre style=3D"padding: 4px; border-top-color: rgb(187, 187, 187=
+); border-top-width: 1px; border-top-style: solid; border-bottom-color: rgb=
+(187, 187, 187); border-bottom-width: 1px; border-bottom-style: solid; back=
+ground-color: rgb(243, 243, 243);"><code><font color=3D"#000000"><br></font=
+></code></pre><pre style=3D"padding: 4px; border-top-color: rgb(187, 187, 1=
+87); border-top-width: 1px; border-top-style: solid; border-bottom-color: r=
+gb(187, 187, 187); border-bottom-width: 1px; border-bottom-style: solid; ba=
+ckground-color: rgb(243, 243, 243);"><code><font color=3D"#000000">I have a=
+lready done:</font></code></pre><pre style=3D"padding: 4px; border-top-colo=
+r: rgb(187, 187, 187); border-top-width: 1px; border-top-style: solid; bord=
+er-bottom-color: rgb(187, 187, 187); border-bottom-width: 1px; border-botto=
+m-style: solid; background-color: rgb(243, 243, 243);"><code><font color=3D=
+"#000000">slideshow update</font></code></pre><pre style=3D"padding: 4px; b=
+order-top-color: rgb(187, 187, 187); border-top-width: 1px; border-top-styl=
+e: solid; border-bottom-color: rgb(187, 187, 187); border-bottom-width: 1px=
+; border-bottom-style: solid; background-color: rgb(243, 243, 243);"><code>=
+<font color=3D"#000000">slideshow install plugins</font></code></pre><pre s=
+tyle=3D"padding: 4px; border-top-color: rgb(187, 187, 187); border-top-widt=
+h: 1px; border-top-style: solid; border-bottom-color: rgb(187, 187, 187); b=
+order-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(=
+243, 243, 243);"><code><font color=3D"#000000"><br></font></code></pre><pre=
+ style=3D"padding: 4px; border-top-color: rgb(187, 187, 187); border-top-wi=
+dth: 1px; border-top-style: solid; border-bottom-color: rgb(187, 187, 187);=
+ border-bottom-width: 1px; border-bottom-style: solid; background-color: rg=
+b(243, 243, 243);"><code><font color=3D"#000000">I am using verison: </font=
+></code><span style=3D"background-color: white;"><font color=3D"#000000">Sl=
+ide Show (S9) 2.3.0 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]</font></span>=
+</pre><pre style=3D"padding: 4px; border-top-color: rgb(187, 187, 187); bor=
+der-top-width: 1px; border-top-style: solid; border-bottom-color: rgb(187, =
+187, 187); border-bottom-width: 1px; border-bottom-style: solid; background=
+-color: rgb(243, 243, 243);"><span style=3D"background-color: white;"><font=
+ color=3D"#000000"><br></font></span></pre><pre style=3D"padding: 4px; bord=
+er-top-color: rgb(187, 187, 187); border-top-width: 1px; border-top-style: =
+solid; border-bottom-color: rgb(187, 187, 187); border-bottom-width: 1px; b=
+order-bottom-style: solid; background-color: rgb(243, 243, 243);"><span sty=
+le=3D"background-color: white;"><font color=3D"#000000">What could I be doi=
+ng wrong?</font></span></pre><pre style=3D"padding: 4px; border-top-color: =
+rgb(187, 187, 187); border-top-width: 1px; border-top-style: solid; border-=
+bottom-color: rgb(187, 187, 187); border-bottom-width: 1px; border-bottom-s=
+tyle: solid; background-color: rgb(243, 243, 243);"><span style=3D"backgrou=
+nd-color: white;"><font color=3D"#000000"><br></font></span></pre><pre styl=
+e=3D"padding: 4px; border-top-color: rgb(187, 187, 187); border-top-width: =
+1px; border-top-style: solid; border-bottom-color: rgb(187, 187, 187); bord=
+er-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(243=
+, 243, 243);"><span style=3D"background-color: white;"><font color=3D"#0000=
+00">Thanks.</font></span></pre><pre style=3D"padding: 4px; border-top-color=
+: rgb(187, 187, 187); border-top-width: 1px; border-top-style: solid; borde=
+r-bottom-color: rgb(187, 187, 187); border-bottom-width: 1px; border-bottom=
+-style: solid; background-color: rgb(243, 243, 243);"><span style=3D"backgr=
+ound-color: white;"><font color=3D"#000000">--</font></span></pre><pre styl=
+e=3D"padding: 4px; border-top-color: rgb(187, 187, 187); border-top-width: =
+1px; border-top-style: solid; border-bottom-color: rgb(187, 187, 187); bord=
+er-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(243=
+, 243, 243);"><span style=3D"background-color: white;"><font color=3D"#0000=
+00">kamal</font></span></pre><pre style=3D"padding: 4px; border-top-color: =
+rgb(187, 187, 187); border-top-width: 1px; border-top-style: solid; border-=
+bottom-color: rgb(187, 187, 187); border-bottom-width: 1px; border-bottom-s=
+tyle: solid; background-color: rgb(243, 243, 243);"><span style=3D"backgrou=
+nd-color: white;"><font color=3D"#000000"><br></font></span></pre></div>
+------=_Part_252_17703917.1385331153644--
+
+------=_Part_251_24333856.1385331153644--
+

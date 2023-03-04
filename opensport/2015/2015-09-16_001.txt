@@ -1,0 +1,75 @@
+From 6195055180946341888@xxx Wed Sep 16 10:18:06 +0000 2015
+X-GM-THRID: 6195055181391986688
+X-Received: by 10.107.40.133 with SMTP id o127mr25622756ioo.27.1442398685863;
+        Wed, 16 Sep 2015 03:18:05 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.118.229 with SMTP id kp5ls1368555obb.22.gmail; Wed, 16 Sep
+ 2015 03:18:05 -0700 (PDT)
+X-Received: by 10.182.153.169 with SMTP id vh9mr24421631obb.18.1442398685509;
+        Wed, 16 Sep 2015 03:18:05 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x229.google.com (mail-io0-x229.google.com. [2607:f8b0:4001:c06::229])
+        by gmr-mx.google.com with ESMTPS id mh4si196304igb.0.2015.09.16.03.18.05
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 16 Sep 2015 03:18:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::229 as permitted sender) client-ip=2607:f8b0:4001:c06::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x229.google.com with SMTP id h134so226120125iof.0
+        for <opensport@googlegroups.com>; Wed, 16 Sep 2015 03:18:05 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=ZuIPSp39idqdfwvXlv1dMKRU0mG4zgDsUwWLiYlvQJ8=;
+        b=DhV7/k1uEK9yNsxodWHPuvilPw8xMm6qmJ+x2TkZJfGXi8bXwz7Li8mFwdiX+D9Koi
+         RSbpbw19Oc0iPnp6e6DJnjECanD/Xqr1n+9eteuTqijiy+BuDhMaRspFyY9mUAsHtaDn
+         Rzpu0xEjSzggQzApVDGDgIxhUxTciMbaRimp98M6qOPQ1F9h4cM+8LY9eC7FGm8qOwgF
+         RABzoUGBg17b1bq0rLmCjxzUSQHF7cbr33v3DRCAsElACnWXcjfxylVuNhD+AmdmQol5
+         5nJCD4NV7yKPdgNLHpJ22NyhRaLM+KHuj8B5T7L9a2yuexzoDu1Ap/y3uuvsz/VQ6Wiq
+         7qRA==
+MIME-Version: 1.0
+X-Received: by 10.107.8.164 with SMTP id h36mr42195800ioi.35.1442398685384;
+ Wed, 16 Sep 2015 03:18:05 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Wed, 16 Sep 2015 03:18:05 -0700 (PDT)
+Date: Wed, 16 Sep 2015 12:18:05 +0200
+Message-ID: <CAAxEZd-K5ZchA2jZAjVijGBHnZ4AjEYgra1GPyaySfkL3=h_QA@mail.gmail.com>
+Subject: soccer-cli - football scores for hackers - command line tool for all
+ the football leagues
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Archit Verma has put together a command line tool (in Python) called
+soccer-cli [1] that lets you query an online HTTP JSON API for league
+standing tables, match scores and more.
+
+  For example, to show the latest English Premier League matchday use:
+
+    $ soccer --league=EPL
+
+  To get the standings table use:
+
+    $ soccer --standings --league=EPL
+
+  To get scores for your favorite club (e.g. Manchaster Utd) use:
+
+    $ soccer --team=MUFC
+
+  And so on.
+
+  If you try out the soccer-cli tool, let us know what you think. Know
+any other football (soccer) command line tools, any tips welcome.
+
+  Cheers.
+
+PS: I try to collect all tools on the awesome-football page [2].
+
+[1] github.com/architv/soccer-cli
+[2] github.com/planetopendata/awesome-football
+

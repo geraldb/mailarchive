@@ -1,0 +1,148 @@
+From 2579803144192@xxx Tue Jun 16 00:16:45 +0000 2015
+X-GM-THRID: 2580327432192
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,1631df092ed45367,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.153.197 with SMTP id vi5mr5993462obb.40.1428726971825;
+        Fri, 10 Apr 2015 21:36:11 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.42.181 with SMTP id c50ls2065258qga.77.gmail; Fri, 10 Apr
+ 2015 21:36:11 -0700 (PDT)
+X-Received: by 10.140.94.170 with SMTP id g39mr65172qge.34.1428726971616;
+        Fri, 10 Apr 2015 21:36:11 -0700 (PDT)
+X-Google-Doc-Id: e0e8d13853a243bf
+X-Google-Web-Client: true
+Date: Fri, 10 Apr 2015 21:36:10 -0700 (PDT)
+From: amit benvenisti <amitbenvenisti@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <91effa04-541f-44f1-97a6-d8954d8cb619@googlegroups.com>
+Subject: errors when building build.sh
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1809_1619550271.1428726970967"
+X-Google-Token: ELrJoqkFJB8g689MeN00
+X-Google-IP: 79.180.118.15
+
+------=_Part_1809_1619550271.1428726970967
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1810_426178972.1428726970967"
+
+------=_Part_1810_426178972.1428726970967
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+when running the script command build.sh, i get some errors:
+
+with sportdb --dbname football.db update --include 'stadiums'
+
+i get the following error:
+Connecting to db using settings: 
+{:adapter=>"sqlite3", :database=>"./football.db"}
+[info] parsing data (setup) 'setups/all' (stadiums/setups/all.txt)...
+[info] parsing data (ground) 'africa/ma-morocco--stadiums' 
+(stadiums/africa/ma-morocco--stadiums.txt)...
+
+*** error: wrong number of arguments (0 for 1..2)
+
+with sportdb --dbname football.db update --include 'at-austria'
+i get the following error:
+[info]   map_titles_for! team - deprecated API - use 
+TitleMapper.map_titles! instead
+[info]   find_key_for! team1 - deprecated API - use TitleMapper.find_key! 
+instead
+[info]   find_key_for! team2 - deprecated API - use TitleMapper.find_key! 
+instead
+...
+*** error: No such file or directory @ rb_sysopen - 
+at-austria/2014-15/2-liga1.txt
+
+with sportdb --dbname football.db update --include 
+'europe-champions-league' 
+i get the following error:
+{:adapter=>"sqlite3", :database=>"./football.db"}
+[info] parsing data (setup) 'setups/all' 
+(europe-champions-league/setups/all.txt)...
+[info] parsing data (league) 'europe-champions-league!/leagues' 
+(europe-champions-league/leagues.txt)...
+[info] parsing data (event) 'europe-champions-league!/2011-12/cl' 
+(europe-champions-league/2011-12/cl.yml)...
+*** error: Couldn't find SportDb::Model::Team
+
+my final sportdb --dbname football.db stat was:
+{:adapter=>"sqlite3", :database=>"./football.db"}
+  89 leagues  /  56 seasons
+  41 events (league+season recs)  /  761 rounds  /  63 groups
+  489 teams
+  6100 games
+  0 badges
+  0 rosters (person+team+event recs)
+  171 goals (person+game recs)
+  0  assocs|orgs
+  0  grounds|stadiums
+Stats:
+    10 continents
+   250 countries (1 supras, 52 deps), 0 miscs)
+   412 regions
+     3 metros
+   975 cities (356 metros)
+     0 districts
+  1650 places
+     0 names
+     0 langs
+     0 usages
+     0 (country) codes
+Done.
+
+what am i missing?
+
+sorry for the long post, and thanks!
+
+
+------=_Part_1810_426178972.1428726970967
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi,<br>when running the script command build.sh, i get som=
+e errors:<div><br><div>with sportdb --dbname football.db update --include '=
+stadiums'<br><br>i get the following error:<br><div>Connecting to db using =
+settings:&nbsp;</div><div>{:adapter=3D&gt;"sqlite3", :database=3D&gt;"./foo=
+tball.db"}</div><div>[info] parsing data (setup) 'setups/all' (stadiums/set=
+ups/all.txt)...</div><div>[info] parsing data (ground) 'africa/ma-morocco--=
+stadiums' (stadiums/africa/ma-morocco--stadiums.txt)...</div><div><br></div=
+><div>*** error: wrong number of arguments (0 for 1..2)</div></div><div><br=
+></div><div>with&nbsp;sportdb --dbname football.db update --include 'at-aus=
+tria'<br>i get the following error:</div><div><div>[info] &nbsp; map_titles=
+_for! team - deprecated API - use TitleMapper.map_titles! instead</div><div=
+>[info] &nbsp; find_key_for! team1 - deprecated API - use TitleMapper.find_=
+key! instead</div><div>[info] &nbsp; find_key_for! team2 - deprecated API -=
+ use TitleMapper.find_key! instead</div><div>...</div><div>*** error: No su=
+ch file or directory @ rb_sysopen - at-austria/2014-15/2-liga1.txt<br></div=
+><div><br></div>with sportdb --dbname football.db update --include 'europe-=
+champions-league'&nbsp;</div><div>i get the following error:</div><div><div=
+>{:adapter=3D&gt;"sqlite3", :database=3D&gt;"./football.db"}</div><div>[inf=
+o] parsing data (setup) 'setups/all' (europe-champions-league/setups/all.tx=
+t)...</div><div>[info] parsing data (league) 'europe-champions-league!/leag=
+ues' (europe-champions-league/leagues.txt)...</div><div>[info] parsing data=
+ (event) 'europe-champions-league!/2011-12/cl' (europe-champions-league/201=
+1-12/cl.yml)...</div><div>*** error: Couldn't find SportDb::Model::Team<br>=
+</div><div><br></div><div>my final&nbsp;sportdb --dbname football.db stat w=
+as:<br><div>{:adapter=3D&gt;"sqlite3", :database=3D&gt;"./football.db"}</di=
+v><div>&nbsp; 89 leagues &nbsp;/ &nbsp;56 seasons</div><div>&nbsp; 41 event=
+s (league+season recs) &nbsp;/ &nbsp;761 rounds &nbsp;/ &nbsp;63 groups</di=
+v><div>&nbsp; 489 teams</div><div>&nbsp; 6100 games</div><div>&nbsp; 0 badg=
+es</div><div>&nbsp; 0 rosters (person+team+event recs)</div><div>&nbsp; 171=
+ goals (person+game recs)</div><div>&nbsp; 0 &nbsp;assocs|orgs</div><div>&n=
+bsp; 0 &nbsp;grounds|stadiums</div><div>Stats:</div><div>&nbsp; &nbsp; 10 c=
+ontinents</div><div>&nbsp; &nbsp;250 countries (1 supras, 52 deps), 0 miscs=
+)</div><div>&nbsp; &nbsp;412 regions</div><div>&nbsp; &nbsp; &nbsp;3 metros=
+</div><div>&nbsp; &nbsp;975 cities (356 metros)</div><div>&nbsp; &nbsp; &nb=
+sp;0 districts</div><div>&nbsp; 1650 places</div><div>&nbsp; &nbsp; &nbsp;0=
+ names</div><div>&nbsp; &nbsp; &nbsp;0 langs</div><div>&nbsp; &nbsp; &nbsp;=
+0 usages</div><div>&nbsp; &nbsp; &nbsp;0 (country) codes</div><div>Done.</d=
+iv></div><br>what am i missing?<br><br>sorry for the long post, and thanks!=
+<br><br></div></div></div>
+------=_Part_1810_426178972.1428726970967--
+------=_Part_1809_1619550271.1428726970967--
+

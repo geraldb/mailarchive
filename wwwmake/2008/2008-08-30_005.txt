@@ -1,0 +1,61 @@
+From 106421026816@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 103662223360
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,dace1ed56b0a7281,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Received: by 10.100.239.11 with SMTP id m11mr171446anh.14.1220062928479; Fri, 
+	29 Aug 2008 19:22:08 -0700 (PDT)
+Date: Fri, 29 Aug 2008 19:22:08 -0700 (PDT)
+X-IP: 76.202.78.109
+User-Agent: G2/1.0
+X-Google-Token: _HFJ5wwAAACbO3ixJlh3GAePLQUBNpgC
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) 
+	Gecko/2008070206 Firefox/3.0.1,gzip(gfe),gzip(gfe)
+Message-ID: <b521af78-25b2-449d-adf8-d32aebe3ae35@v39g2000pro.googlegroups.com>
+Subject: PATCH for gradient keywords bug
+From: "Suraj N. Kurapati" <sunaku@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+X-Google-Approved: geraldbauer2007@gmail.com via email at 2008-08-30 03:23:40
+
+Hello,
+
+In version 0.6 of slideshow, the gradient keywords do not work.  They
+are simply ignored... you always get a Red/Black gradient no matter
+what.
+
+Only some keywords, like "title" and "code-line-numbers" worked, but
+none of the "gradient*" keywords worked.
+
+I dove into the code and found the problem.  You were trying to call
+setter methods in your Opts class with an implicit self receiver (just
+like we normally call getter methods with an implicit self receiver).
+
+-    if key.eql? 'code-theme' then^M
+-      code_theme = value ^M
+
+However, Ruby doesn't support implicit self receivers for setter
+methods.  Instead, Ruby created new *local variables* and assigned
+them to the value.
+
+The solution is to make the setter method calls explicit by adding a
+"self" before them:
+
+   if key.eql? 'code-theme' then
+      self.code_theme = value
+
+I uploaded a patch (diff against SVN trunk) here:
+http://snk.rubyforge.org/tmp/slideshow-0.6.diff
+
+In addition to fixing the above problem, I also cleaned up your code a
+bit.  There was a lot of redundant / non-idiomatic Ruby code lying
+around, IMHO.
+
+I'll submit more patches this weekend if I feel like cleaning up the
+code some more.
+
+Cheers.
+

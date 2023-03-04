@@ -1,0 +1,191 @@
+From 6444214132579237888@xxx Tue Jul 18 20:42:05 +0000 2017
+X-GM-THRID: 6444193315818569728
+Date: Tue, 18 Jul 2017 13:42:04 -0700 (PDT)
+From: Fernando Maymone <fmaymone@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <80c4b9c7-b35c-4469-bb21-da23d4165fae@googlegroups.com>
+In-Reply-To: <CAAxEZd_C=3m_bX0JDVjsiVouUZ=YctKS4jRsj_6BGvJZ6QxQaw@mail.gmail.com>
+References: <548f0946-a2e9-4d2c-8a90-75c1f0a8c06f@googlegroups.com>
+ <CAAxEZd8_FoXZT8XryurHgvLa_VZtya52ON_KMFhLqKeD5g0MiA@mail.gmail.com> <e8ca9e0f-0562-4d5d-84cd-03019b020012@googlegroups.com>
+ <CAAxEZd_C=3m_bX0JDVjsiVouUZ=YctKS4jRsj_6BGvJZ6QxQaw@mail.gmail.com>
+Subject: Re: [opensport] Starter Tutorial. Not understanding at all.
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2370_1002028449.1500410524736"
+X-Google-Token: EJzlucsFlm-yIn6M6cY0
+X-Google-IP: 189.45.91.113
+
+------=_Part_2370_1002028449.1500410524736
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2371_1743928806.1500410524736"
+
+------=_Part_2371_1743928806.1500410524736
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+THanks again Gerald.=20
+
+For example. Im going into my rails console. And then try the command=20
+"Round.first" to see the first round. And the output says "uninitialized=20
+constant Round"
+
+Em ter=C3=A7a-feira, 18 de julho de 2017 17:21:50 UTC-3, Gerald Bauer escre=
+veu:
+>
+> Hello,=20
+>
+>   Not sure I understand. You can find all models ready to use in ruby. Se=
+e=20
+> lib/sportdb/models [1] incl. game.rb, team.rb, etc.=20
+>
+>   Cheers.=20
+>
+> [1]=20
+> https://github.com/sportdb/sport.db/tree/master/sportdb-models/lib/sportd=
+b/models=20
+> <https://www.google.com/url?q=3Dhttps%3A%2F%2Fgithub.com%2Fsportdb%2Fspor=
+t.db%2Ftree%2Fmaster%2Fsportdb-models%2Flib%2Fsportdb%2Fmodels&sa=3DD&sntz=
+=3D1&usg=3DAFQjCNGDpAfNDZXo53EOEXYOpEmdr5JFHQ>=20
+>
+> 2017-07-18 22:12 GMT+02:00 Fernando Maymone <fmay...@gmail.com=20
+> <javascript:>>:=20
+> > Thanks buddy.=20
+> >=20
+> > Im trying to create the Models(example Game.rb, Team.rb) from the=20
+> database.=20
+> >=20
+> >=20
+> >=20
+> > Em ter=C3=A7a-feira, 18 de julho de 2017 16:27:35 UTC-3, Gerald Bauer=
+=20
+> escreveu:=20
+> >>=20
+> >> Hello,=20
+> >>=20
+> >>    Welcome to football.db.=20
+> >>=20
+> >>   Not sure I understand what you're trying to do. If you try to build=
+=20
+> >> the database tables - use SportDb.create_all  [1] to run the schema=20
+> >> migrations w/ ActiveRecord.=20
+> >>=20
+> >>     Cheers.=20
+> >>=20
+> >> [1]=20
+> >>=20
+> https://github.com/sportdb/sport.db/blob/master/sportdb-models/lib/sportd=
+b/models.rb#L135=20
+> >=20
+> > --=20
+> > You received this message because you are subscribed to the Google=20
+> Groups=20
+> > "opensport" group.=20
+> > To unsubscribe from this group and stop receiving emails from it, send=
+=20
+> an=20
+> > email to opensport+...@googlegroups.com <javascript:>.=20
+> > To post to this group, send email to open...@googlegroups.com=20
+> <javascript:>.=20
+> > Visit this group at https://groups.google.com/group/opensport.=20
+> > For more options, visit https://groups.google.com/d/optout.=20
+>
+
+------=_Part_2371_1743928806.1500410524736
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">THanks again Gerald.=C2=A0<div><br></div><div>For example.=
+ Im going into my rails console. And then try the command &quot;Round.first=
+&quot; to see the first round. And the output says &quot;uninitialized cons=
+tant Round&quot;<br><br>Em ter=C3=A7a-feira, 18 de julho de 2017 17:21:50 U=
+TC-3, Gerald Bauer  escreveu:<blockquote class=3D"gmail_quote" style=3D"mar=
+gin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">H=
+ello,
+<br>
+<br>=C2=A0 Not sure I understand. You can find all models ready to use in r=
+uby. See
+<br>lib/sportdb/models [1] incl. game.rb, team.rb, etc.
+<br>
+<br>=C2=A0 Cheers.
+<br>
+<br>[1] <a href=3D"https://www.google.com/url?q=3Dhttps%3A%2F%2Fgithub.com%=
+2Fsportdb%2Fsport.db%2Ftree%2Fmaster%2Fsportdb-models%2Flib%2Fsportdb%2Fmod=
+els&amp;sa=3DD&amp;sntz=3D1&amp;usg=3DAFQjCNGDpAfNDZXo53EOEXYOpEmdr5JFHQ" t=
+arget=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://w=
+ww.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fsportdb%2Fsport.db%2Ftree=
+%2Fmaster%2Fsportdb-models%2Flib%2Fsportdb%2Fmodels\x26sa\x3dD\x26sntz\x3d1=
+\x26usg\x3dAFQjCNGDpAfNDZXo53EOEXYOpEmdr5JFHQ&#39;;return true;" onclick=3D=
+"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%=
+2Fsportdb%2Fsport.db%2Ftree%2Fmaster%2Fsportdb-models%2Flib%2Fsportdb%2Fmod=
+els\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNGDpAfNDZXo53EOEXYOpEmdr5JFHQ&#3=
+9;;return true;">https://github.com/sportdb/<wbr>sport.db/tree/master/sport=
+db-<wbr>models/lib/sportdb/models</a>
+<br>
+<br>2017-07-18 22:12 GMT+02:00 Fernando Maymone &lt;<a href=3D"javascript:"=
+ target=3D"_blank" gdf-obfuscated-mailto=3D"EpQOycVUCAAJ" rel=3D"nofollow" =
+onmousedown=3D"this.href=3D&#39;javascript:&#39;;return true;" onclick=3D"t=
+his.href=3D&#39;javascript:&#39;;return true;">fmay...@gmail.com</a>&gt;:
+<br>&gt; Thanks buddy.
+<br>&gt;
+<br>&gt; Im trying to create the Models(example Game.rb, Team.rb) from the =
+database.
+<br>&gt;
+<br>&gt;
+<br>&gt;
+<br>&gt; Em ter=C3=A7a-feira, 18 de julho de 2017 16:27:35 UTC-3, Gerald Ba=
+uer escreveu:
+<br>&gt;&gt;
+<br>&gt;&gt; Hello,
+<br>&gt;&gt;
+<br>&gt;&gt; =C2=A0 =C2=A0Welcome to football.db.
+<br>&gt;&gt;
+<br>&gt;&gt; =C2=A0 Not sure I understand what you&#39;re trying to do. If =
+you try to build
+<br>&gt;&gt; the database tables - use SportDb.create_all =C2=A0[1] to run =
+the schema
+<br>&gt;&gt; migrations w/ ActiveRecord.
+<br>&gt;&gt;
+<br>&gt;&gt; =C2=A0 =C2=A0 Cheers.
+<br>&gt;&gt;
+<br>&gt;&gt; [1]
+<br>&gt;&gt; <a href=3D"https://github.com/sportdb/sport.db/blob/master/spo=
+rtdb-models/lib/sportdb/models.rb#L135" target=3D"_blank" rel=3D"nofollow" =
+onmousedown=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F=
+%2Fgithub.com%2Fsportdb%2Fsport.db%2Fblob%2Fmaster%2Fsportdb-models%2Flib%2=
+Fsportdb%2Fmodels.rb%23L135\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNH9cWM8D=
+MFmjL4Js-duNopZdYgW7w&#39;;return true;" onclick=3D"this.href=3D&#39;https:=
+//www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fsportdb%2Fsport.db%2Fb=
+lob%2Fmaster%2Fsportdb-models%2Flib%2Fsportdb%2Fmodels.rb%23L135\x26sa\x3dD=
+\x26sntz\x3d1\x26usg\x3dAFQjCNH9cWM8DMFmjL4Js-duNopZdYgW7w&#39;;return true=
+;">https://github.com/sportdb/<wbr>sport.db/blob/master/sportdb-<wbr>models=
+/lib/sportdb/models.rb#<wbr>L135</a>
+<br>&gt;
+<br>&gt; --
+<br>&gt; You received this message because you are subscribed to the Google=
+ Groups
+<br>&gt; &quot;opensport&quot; group.
+<br>&gt; To unsubscribe from this group and stop receiving emails from it, =
+send an
+<br>&gt; email to <a href=3D"javascript:" target=3D"_blank" gdf-obfuscated-=
+mailto=3D"EpQOycVUCAAJ" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;ja=
+vascript:&#39;;return true;" onclick=3D"this.href=3D&#39;javascript:&#39;;r=
+eturn true;">opensport+...@<wbr>googlegroups.com</a>.
+<br>&gt; To post to this group, send email to <a href=3D"javascript:" targe=
+t=3D"_blank" gdf-obfuscated-mailto=3D"EpQOycVUCAAJ" rel=3D"nofollow" onmous=
+edown=3D"this.href=3D&#39;javascript:&#39;;return true;" onclick=3D"this.hr=
+ef=3D&#39;javascript:&#39;;return true;">open...@googlegroups.com</a>.
+<br>&gt; Visit this group at <a href=3D"https://groups.google.com/group/ope=
+nsport" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;=
+https://groups.google.com/group/opensport&#39;;return true;" onclick=3D"thi=
+s.href=3D&#39;https://groups.google.com/group/opensport&#39;;return true;">=
+https://groups.google.com/<wbr>group/opensport</a>.
+<br>&gt; For more options, visit <a href=3D"https://groups.google.com/d/opt=
+out" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;htt=
+ps://groups.google.com/d/optout&#39;;return true;" onclick=3D"this.href=3D&=
+#39;https://groups.google.com/d/optout&#39;;return true;">https://groups.go=
+ogle.com/d/<wbr>optout</a>.
+<br></blockquote></div></div>
+------=_Part_2371_1743928806.1500410524736--
+
+------=_Part_2370_1002028449.1500410524736--
+

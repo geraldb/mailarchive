@@ -1,0 +1,67 @@
+From 6479992175650144256@xxx Mon Oct 23 06:39:09 +0000 2017
+X-GM-THRID: 6406170137222709248
+X-Received: by 10.202.6.193 with SMTP id 184mr6411114oig.33.1508740749339;
+        Sun, 22 Oct 2017 23:39:09 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.157.1.211 with SMTP id e77ls4399803ote.21.gmail; Sun, 22 Oct
+ 2017 23:39:08 -0700 (PDT)
+X-Received: by 10.157.81.50 with SMTP id c47mr6889345oth.119.1508740748920;
+        Sun, 22 Oct 2017 23:39:08 -0700 (PDT)
+Received: by 10.202.4.76 with SMTP id 73msoie;
+        Wed, 18 Oct 2017 13:06:54 -0700 (PDT)
+X-Google-Smtp-Source: ABhQp+RI4iHJWj+DhqlPibDJSGdS1zirE6rvaTR7Zg/u0qdjQQ7yQ9wjrTV5aSCGcuGU6Cgvf+iTDcw85Q==
+X-Received: by 10.157.20.173 with SMTP id d42mr662239ote.3.1508357213888;
+        Wed, 18 Oct 2017 13:06:53 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Wed, 18 Oct 2017 13:06:53 -0700 (PDT)
+From: =?UTF-8?Q?J=C3=BCrgen_Mangler?= <juergen.mangler@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <ac61f652-6422-4cb0-9d41-a9240abd12e6@googlegroups.com>
+In-Reply-To: <CAAxEZd9mXaZ0nABGk4=U=qsNPck-p6BgNOTQESOZrPAgx9VqfQ@mail.gmail.com>
+References: <13f542c8-23e0-4fc8-9d35-30750be86bfc@googlegroups.com>
+ <CAAxEZd-_fu=FzC7FP3vWGB7YpWikxu7AmXm0Az=Vo+TgnYUj=Q@mail.gmail.com> <9117c7cd-2d5f-4235-b604-e354db3f8e53@googlegroups.com>
+ <CAAxEZd9mXaZ0nABGk4=U=qsNPck-p6BgNOTQESOZrPAgx9VqfQ@mail.gmail.com>
+Subject: Re: [wwwmake:418] Problems with Slide Show (S9) ignoring headers
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_259_879966301.1508357213700"
+X-Google-Token: EN3ons8FYqzr3uOlIkI0
+X-Google-IP: 188.118.245.30
+
+------=_Part_259_879966301.1508357213700
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_260_1731143469.1508357213701"
+
+------=_Part_260_1731143469.1508357213701
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+>
+> If you downgrade to 3.0.6 it will (should) work as expected. Again 
+> thanks for reporting. Sorry not yet sure what changed in the liquid 
+> gem in the new version. 
+>
+
+could you, as a temporary fix, depend on =3.0.6 in gemspec and add
+
+gem 'liquid', '=3.0.6' 
+
+to your ruby code.
+
+That would fix the problem without you adapting to a new liquid version.
+
+
+
+------=_Part_260_1731143469.1508357213701
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr"><blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">If you downgrade to 3.0.6 it will (should) work as expected. Again
+<br>thanks for reporting. Sorry not yet sure what changed in the liquid
+<br>gem in the new version.
+<br></blockquote><div><br></div><div>could you, as a temporary fix, depend on =3.0.6 in gemspec and add</div><div><br></div><div>gem &#39;liquid&#39;, &#39;=3.0.6&#39; <br></div><div><br></div><div>to your ruby code.</div><div><br></div><div>That would fix the problem without you adapting to a new liquid version.<br></div><div><br></div><div><br></div></div>
+------=_Part_260_1731143469.1508357213701--
+
+------=_Part_259_879966301.1508357213700--
+

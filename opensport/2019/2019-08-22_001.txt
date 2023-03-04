@@ -1,0 +1,119 @@
+From 6728012132893327360@xxx Thu Aug 22 15:23:16 +0000 2019
+X-GM-THRID: 6728012131420078080
+X-Received: by 2002:a1c:e487:: with SMTP id b129mr7300676wmh.93.1566487395789;
+        Thu, 22 Aug 2019 08:23:15 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a7b:c44b:: with SMTP id l11ls2540763wmi.0.canary-gmail; Thu,
+ 22 Aug 2019 08:23:15 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqwlIdhDDgevbvlQdeC8VaoB3QgiFI4U1grcSMNURSWgvRyENYJvdXWDJ2U4QBngy0JcyKFR
+X-Received: by 2002:a05:600c:204:: with SMTP id 4mr7445726wmi.167.1566487395020;
+        Thu, 22 Aug 2019 08:23:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1566487395; cv=none;
+        d=google.com; s=arc-20160816;
+        b=xJaH4k0D1a/wr4645fx++2bYKocW6k5WyKu2J54xE3r51r2peKmhtBhZewSLKJyjV+
+         IuUE8uq85F1l5+UKG4f8Gv3GT+bqMqdmglGlquiRI4nZg4oyfLR5PQmPK6pULXJkJRYZ
+         EeAEYPbuI9h+qEhkUyMpIPkDNfBbA3Lb6Kg7vGQ8d4Izk+cl+aIrOXrhKgXudEQ4pO46
+         OczO3VAVLufKcku70kZJeuRwLvTvAWVQs4QHr6xZruPJxckqFnZdkjwV8w0VXG0XpLx8
+         FHr4/Q45q5oi+lEcRChxSZ5WbA3LYSr6hL7Tgmyc+nI8pwavHzqBjQFej8332QPndyJC
+         ip/A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=g+oYEox2FkVNiD8/W/xydm95UULOQuqPewKkhXyZvzk=;
+        b=rLoVenB6ECacjh+k70pWfyumtvAt6mrZ8q9XMP6bJH4QsbEGbl2zivWVhGC+R34fhE
+         rXkHlvPyQzStqSj5iKlUbzdqXruR1KvDg8GFZ4SkNlcgzjH3pxLp+msB/vRNUQQWXPAO
+         FM+/pNt7g1yOlbRcEO5zjYjCzO+IbznbaLWljeOL+bgA7Y+F58v67j8sIliwipY8SyJc
+         FHseNrQUbpBd1gMRf2luYMgZ2mx1GY584uN8m7j6eCA83cxmOuED4xeVPYg0KVbdZwo2
+         dkZKXU/uftwY/YViiBUDYi6bm86ByTe8Mi4vFpk1VORholSRih7y0Er8GNeXw/c5NYEg
+         rH0w==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=rJIcUlms;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::132 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x132.google.com (mail-lf1-x132.google.com. [2a00:1450:4864:20::132])
+        by gmr-mx.google.com with ESMTPS id c4si1186809wrw.2.2019.08.22.08.23.15
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 22 Aug 2019 08:23:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::132 as permitted sender) client-ip=2a00:1450:4864:20::132;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=rJIcUlms;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::132 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x132.google.com with SMTP id p197so4847216lfa.2
+        for <opensport@googlegroups.com>; Thu, 22 Aug 2019 08:23:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=g+oYEox2FkVNiD8/W/xydm95UULOQuqPewKkhXyZvzk=;
+        b=rJIcUlmsqQBrMWwGl2w7OoOtFj4lW1OwhfgGC5Z+4XlcGYOBrSNrzH2YqOFpLlo5qo
+         8/epfzIQ8mMKxf6LLb6sVeb0UYkZZsW9VnFyeQ94IXtjXunzA0aZncqML+UdDpXs1zap
+         OFqEgMyD7L7LTS0IIZsnIp75y93yYZigNwn5rkDSb53FNEUcOR9AcvQj57gebUQjf0fZ
+         gZ6vVqSx2H97/2u0e6EFcuPEfgSwXi/qvTrfyYh4AAzAm1BN4YcW04npx++eBXNyFTZP
+         ttzb/xNXq2j2dJsvTU0ltQnNyrGyI/CaOfEtvWvxB+n+apCc3fJ2sutCg/1BINrV7UfU
+         mh0g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=g+oYEox2FkVNiD8/W/xydm95UULOQuqPewKkhXyZvzk=;
+        b=BhBmlVce6UiineGglGW/QFhxQy//h7WoFQIAAe+BWSgiMrijqq5Ue41W8UU0mAXzln
+         tL/R6f1x9STVHuxKg0MiJ+mEi3SXG/lVHgrQBwQ37XhxSpz2yr8d9iPwOYsA0lAQSPC0
+         VcRdVMcU412edzKdTRjoakc2U71dANPEoYRmqW6mWXVBQGiPO68WDWhqz95gIymzd6is
+         j1gzA2C/S08GQiCRqnb8axeDPKSiPN/p6F86K0kRa7c3oRoIMKRjbih/11Xi6K3I49lB
+         QDCcA4XW7NqzogyTbotGw/Fq+R5v67qfxod9JbZtf0IAhm5vs722Gms1z0ui1pDQd9uA
+         Vu1g==
+X-Gm-Message-State: APjAAAW38Sj40yHYnordVrO9bi+HsP8hLqrrsizytUnbgN+u96+BGQdC
+	FwfYvxzonbV/8j/P1rJGxVxMZvPf2n7zbRWyQ9L71IUf
+X-Received: by 2002:a19:c7ca:: with SMTP id x193mr21772168lff.151.1566487394274;
+ Thu, 22 Aug 2019 08:23:14 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 22 Aug 2019 17:23:03 +0200
+Message-ID: <CAAxEZd_LBFCB6G8BnArFMYs6LUzfYzmAbgMg16n-Zav_CKNBtA@mail.gmail.com>
+Subject: footballdata library - download & import 22+ top football leagues
+ from Joseph Buchdahl's Football Data
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I've put together a new sportdb-source-footballdata library [1]
+  that lets you download & import 22+ top football leagues
+  from 25 seasons back to 1993/94 from Joseph Buchdahl's Football Data
+website (updated twice a week).
+
+   Leagues include the English Premier League, the German Bundesliga,
+the Spanish Primera Division (La Liga), the Brazilian S=C3=A9rie A, and
+many more.
+
+    Downloading all 570+ datafiles is as easy as:
+
+```
+require 'sportdb/source/footballdata'
+
+Footballdata.download
+```
+
+    And importing the datafiles into your SQL database of choice
+(using the sport.db schema) as easy as:
+
+```
+SportDb.connect( adapter:  'sqlite3',
+                 database: './football.db' )
+
+## build database schema / tables
+SportDb.create_all
+
+Footballdata.import
+```
+
+   Happy data wrangling. Enjoy the beautiful game. Cheers. Prost.
+
+
+[1] https://github.com/yorobot/football.csv/tree/master/sportdb-source-foot=
+balldata
+

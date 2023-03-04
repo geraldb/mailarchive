@@ -1,0 +1,56 @@
+From 314388250624@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 230668894208
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,62dcd4fef002a41c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.100.231.16 with SMTP id d16mr2219981anh.20.1232961073279; Mon, 
+	26 Jan 2009 01:11:13 -0800 (PST)
+Date: Mon, 26 Jan 2009 01:11:13 -0800 (PST)
+In-Reply-To: <f76b2c12-23c1-4ed4-80ca-29d9abf8a484@33g2000yqm.googlegroups.com>
+X-IP: 62.47.171.201
+References: <140cca6b-bca9-4743-a6f0-dd20e641cde1@v39g2000pro.googlegroups.com> 
+	<3a6a2b5d-5189-4e10-8a4d-4104524fa4b5@o4g2000pra.googlegroups.com> 
+	<a1c9be27-31c8-4704-a708-227163d989cd@y1g2000pra.googlegroups.com> 
+	<d39a1737-65cd-4366-a227-8c9dc4286080@r37g2000prr.googlegroups.com> 
+	<f76b2c12-23c1-4ed4-80ca-29d9abf8a484@33g2000yqm.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: xES3KQwAAAD3W4e0NWpTOGUdp_KGgbde
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) 
+	AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.43 Safari/525.19,gzip(gfe),gzip(gfe)
+Message-ID: <ca86a50b-956f-4160-a8a7-f8c6f06b5593@r15g2000prh.googlegroups.com>
+Subject: Re: S6 and SVG
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello Bruce,
+
+> In the meantime, I did a bit more tweaking, including adding a new
+> function to extract blockquote title and cite metadata. Test doc is
+> here:
+>
+> <http://www.users.muohio.edu/darcusb/s6test/test.html>
+>
+> I also reorganized my own s6 directory to correspond a bit more to the
+> s5 design, with separate "js" and "ui" (and related theme)
+> subdirectories.
+>
+> Am not sure how much I'm likely to use slideshow per se to generate
+> these files (I prefer markdown, for example), but we'll see. It'd be
+> great to raise the profile of s6 as a standlone library to pick up
+> where s5 left off ...
+
+  Thanks for the update and online sample. Looks great. If I can be of
+any help with packaging your extension/changes as a template package
+w/ manifest using the new format, please let me know.
+
+  Also I will work out in the next couple of days how to best break
+out the S6 package so the JavaScript files and templates are easy to
+use or extend (without requiring any Ruby scripts or gems). Not sure
+yet what's the best way.
+
+   Cheers.
+

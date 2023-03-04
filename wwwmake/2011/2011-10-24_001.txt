@@ -1,0 +1,61 @@
+From 967868153856@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 966478790656
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,677d233e44ef800d,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.224.187.197 with SMTP id cx5mr10140527qab.1.1319438820750;
+        Sun, 23 Oct 2011 23:47:00 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.224.47.13 with SMTP id l13ls10107208qaf.1.gmail; Sun, 23 Oct
+ 2011 23:47:00 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.224.175.3 with SMTP id v3mr571933qaz.10.1319438820431; Sun, 23
+ Oct 2011 23:47:00 -0700 (PDT)
+Received: by v28g2000vby.googlegroups.com with HTTP; Sun, 23 Oct 2011 23:47:00
+ -0700 (PDT)
+Date: Sun, 23 Oct 2011 23:47:00 -0700 (PDT)
+User-Agent: G2/1.0
+X-Google-Token: EOSTlPUEsMPldoj5haY0
+X-Google-Web-Client: true
+X-Google-Header-Order: HUALESNKRC
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.23)
+ Gecko/20110921 Ubuntu/10.04 (lucid) Firefox/3.6.23,gzip(gfe)
+X-Google-IP: 93.82.50.52
+Message-ID: <ff3d80a1-763b-43fb-8b49-299aa3bd9e8c@v28g2000vby.googlegroups.com>
+Subject: Slidy2 - Slide Show (S9) Template Pack Using Blank and W3C Theme
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Cc: dsr@w3.org
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   I've updated the Slidy pack to use Dave Raggett's latest Slidy2[1]
+version.
+
+   The Slide Show (S9) generated slides will use both the Blank and
+W3C Theme e.g.
+
+   If you use:
+
+     slideshow -t slidy.txt sample.markdown     (Markdown Sample [2])
+
+   Will result in:
+
+     sample.html          (Blank Theme)
+     sample.w3c.html   (W3C Blue Theme)
+
+   More info @ https://github.com/geraldb/slideshow-slidy
+
+   If anyone is using Slidy and tries out the new template pack, let
+us know how it goes.
+
+   Cheers.
+
+[1] http://www.w3.org/Talks/Tools/Slidy2
+[2] https://raw.github.com/geraldb/slideshow-slidy/master/sample.markdown
+

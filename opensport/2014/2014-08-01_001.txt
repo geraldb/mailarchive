@@ -1,0 +1,70 @@
+From 1765750603776@xxx Tue Jun 16 00:16:53 +0000 2015
+X-GM-THRID: 1767146258432
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,732ebdba54940d45,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.137.168 with SMTP id qj8mr346312lbb.4.1406884199439;
+        Fri, 01 Aug 2014 02:09:59 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.234.228 with SMTP id uh4ls273528lac.59.gmail; Fri, 01 Aug
+ 2014 02:09:58 -0700 (PDT)
+X-Received: by 10.112.11.165 with SMTP id r5mr314399lbb.24.1406884198837;
+        Fri, 01 Aug 2014 02:09:58 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22f.google.com (mail-wg0-x22f.google.com [2a00:1450:400c:c00::22f])
+        by gmr-mx.google.com with ESMTPS id o6si354823wij.1.2014.08.01.02.09.58
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 01 Aug 2014 02:09:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22f as permitted sender) client-ip=2a00:1450:400c:c00::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f47.google.com with SMTP id b13so3971843wgh.30
+        for <opensport@googlegroups.com>; Fri, 01 Aug 2014 02:09:58 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=PkL29iOxGZsqTkDWwV4OZNAuhU4eZ+/0DsaYh9i4rD0=;
+        b=W9rIASg6ERZuYesun4lwplwQSB1yLxocYY58bSuA7u+y4bJmiT5WbzcDnZwakLGo4P
+         pmQxaizUpBCUHwytf6pzBnLr+N0wJ8Q1xETtIH7jvxso6drIFcIbEEDLC620dS/5lkGw
+         33WG8ZPbF656UK94ylKkXq0BCD5BnkDlQ20BLM3z6CKGhq+nYDB9H7MUryQ4dbuHq5D2
+         UipSccxfaWwmbWdDuHq1RBzP31K0yyzlQsGN5IMXoTyQStUQt19qf5OwzXyDc3KdWTOo
+         5Rf99AdqBt2VK9EJf5hKrXxcoPluYE62GUk/jOMYGCAiNCP8t0vOwOPTxgc1H4/tiTr2
+         K7pQ==
+MIME-Version: 1.0
+X-Received: by 10.180.108.1 with SMTP id hg1mr4849109wib.25.1406884198710;
+ Fri, 01 Aug 2014 02:09:58 -0700 (PDT)
+Received: by 10.216.124.75 with HTTP; Fri, 1 Aug 2014 02:09:58 -0700 (PDT)
+Date: Fri, 1 Aug 2014 11:09:58 +0200
+Message-ID: <CAAxEZd8xyYoduCPyrqgr2FCHeB4nWEN+jVK79udXBrD+wfz5Qg@mail.gmail.com>
+Subject: sportdb 48-Hour Hackathon - Rails Rumble 2014 Team(s) - Vienna,
+ Austria - Oct/18+19
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  If anyone is interested you're invited to join the Vienna.rb Rails
+Rumble 2014 team(s) - in Austria in Central Europe.  If all works out
+I will, of course, use the sportdb gem and friends to put together
+something in 48-hours.
+
+  Join us. More info at the Vienna.rb event page [1]. If you're
+intersted in joining the team, say hello here on the forum / mailing
+list.
+
+   You're, of course, welcome to join in with your own team in your
+very own city. Let's rumble.
+
+  Cheers.
+
+PS: Some sportdb gems (libs) you might (re)use for your apps:
+sportdb, footballdb, racingdb, sportdb-market, sportdb-play,
+sportdb-logos, sportdb-admin, persondb, etc.
+
+[1] www.meetup.com/vienna-rb/events/197015742
+

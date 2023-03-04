@@ -1,0 +1,166 @@
+From 145741578240@xxx Sat Dec 20 19:01:40 +0000 2014
+X-GM-THRID: 144990797824
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,dd9476fb4db7811a
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.199.137 with SMTP id jk9mr896297lbc.7.1405755064242;
+        Sat, 19 Jul 2014 00:31:04 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.180.39.98 with SMTP id o2ls179890wik.52.gmail; Sat, 19 Jul
+ 2014 00:31:03 -0700 (PDT)
+X-Received: by 10.180.109.137 with SMTP id hs9mr3235075wib.0.1405755063981;
+        Sat, 19 Jul 2014 00:31:03 -0700 (PDT)
+Received: by 10.194.236.198 with SMTP id uw6mswjc;
+        Fri, 18 Jul 2014 14:43:40 -0700 (PDT)
+X-Received: by 10.50.79.230 with SMTP id m6mr723372igx.6.1405719820769;
+        Fri, 18 Jul 2014 14:43:40 -0700 (PDT)
+X-Google-Doc-Id: c3f592b82e6978fd
+X-Google-Web-Client: true
+Date: Fri, 18 Jul 2014 14:43:39 -0700 (PDT)
+From: Robert Cranney <rlcranney@gmail.com>
+To: beerdb@googlegroups.com
+Message-Id: <6b5c6524-c271-474c-8e4a-c6b451aff8f9@googlegroups.com>
+Subject: Bundler could not find compatible version for gem "activerecord"
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1502_2121936119.1405719819760"
+X-Google-Token: EIuqpp4FfK6kjpdzCG40
+X-Google-IP: 192.55.55.37
+
+------=_Part_1502_2121936119.1405719819760
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1503_119426304.1405719819761"
+
+------=_Part_1503_119426304.1405719819761
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi all,
+
+I have ruby-2.0.0-p481-x64 installed on my Windows 7 PC.  I am getting the 
+below error and am hoping someone may have experienced this issue before 
+and knows how I can resolve it.
+
+
+C:\Tools\Apps\BeerInfo>bundle
+DL is deprecated, please use Fiddle
+Fetching gem metadata from https://rubygems.org/.........
+Fetching additional metadata from https://rubygems.org/..
+Resolving dependencies...
+Bundler could not find compatible versions for gem "activerecord":
+  In Gemfile:
+    beerdb (>= 0) x64-mingw32 depends on
+      activerecord (~> 3.2) x64-mingw32
+
+
+    rails (= 4.1.4) x64-mingw32 depends on
+      activerecord (4.1.4)
+
+The version of activerecord gem, which is installed locally is (4.1.4, 
+3.2.19)
+
+I am wondering if my issue is caused by the fact that I installed the x64 
+version of Ruby, and for what ever reason, activerecord doesn't have a x64f 
+version that meets the beerdb Runtime Dependencies.
+
+Regards,
+Robert
+
+
+
+------=_Part_1503_119426304.1405719819761
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi all,<div><br><div>I have&nbsp;ruby-2.0.0-p481-x64 insta=
+lled on my Windows 7 PC. &nbsp;I am getting the below error and am hoping s=
+omeone may have experienced this issue before and knows how I can resolve i=
+t.</div><div><br><div><br></div><div><div class=3D"prettyprint" style=3D"bo=
+rder: 1px solid rgb(187, 187, 187); word-wrap: break-word; background-color=
+: rgb(250, 250, 250);"><code class=3D"prettyprint"><div class=3D"subprettyp=
+rint"><span style=3D"color: #000;" class=3D"styled-by-prettify">C</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">:\</span><span style=
+=3D"color: #606;" class=3D"styled-by-prettify">Tools</span><span style=3D"c=
+olor: #660;" class=3D"styled-by-prettify">\</span><span style=3D"color: #60=
+6;" class=3D"styled-by-prettify">Apps</span><span style=3D"color: #660;" cl=
+ass=3D"styled-by-prettify">\</span><span style=3D"color: #606;" class=3D"st=
+yled-by-prettify">BeerInfo</span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">&gt;</span><span style=3D"color: #000;" class=3D"styled-by-=
+prettify">bundle<br>DL </span><span style=3D"color: #008;" class=3D"styled-=
+by-prettify">is</span><span style=3D"color: #000;" class=3D"styled-by-prett=
+ify"> deprecated</span><span style=3D"color: #660;" class=3D"styled-by-pret=
+tify">,</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> pl=
+ease </span><span style=3D"color: #008;" class=3D"styled-by-prettify">use</=
+span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><spa=
+n style=3D"color: #606;" class=3D"styled-by-prettify">Fiddle</span><span st=
+yle=3D"color: #000;" class=3D"styled-by-prettify"><br></span><span style=3D=
+"color: #606;" class=3D"styled-by-prettify">Fetching</span><span style=3D"c=
+olor: #000;" class=3D"styled-by-prettify"> gem metadata </span><span style=
+=3D"color: #008;" class=3D"styled-by-prettify">from</span><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify"> https</span><span style=3D"color:=
+ #660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #800;" c=
+lass=3D"styled-by-prettify">//rubygems.org/.........</span><span style=3D"c=
+olor: #000;" class=3D"styled-by-prettify"><br></span><span style=3D"color: =
+#606;" class=3D"styled-by-prettify">Fetching</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify"> additional metadata </span><span style=
+=3D"color: #008;" class=3D"styled-by-prettify">from</span><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify"> https</span><span style=3D"color:=
+ #660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #800;" c=
+lass=3D"styled-by-prettify">//rubygems.org/..</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify"><br></span><span style=3D"color: #606;" =
+class=3D"styled-by-prettify">Resolving</span><span style=3D"color: #000;" c=
+lass=3D"styled-by-prettify"> dependencies</span><span style=3D"color: #660;=
+" class=3D"styled-by-prettify">...</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify"><br></span><span style=3D"color: #606;" class=3D"st=
+yled-by-prettify">Bundler</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify"> could </span><span style=3D"color: #008;" class=3D"styled-b=
+y-prettify">not</span><span style=3D"color: #000;" class=3D"styled-by-prett=
+ify"> find compatible versions </span><span style=3D"color: #008;" class=3D=
+"styled-by-prettify">for</span><span style=3D"color: #000;" class=3D"styled=
+-by-prettify"> gem </span><span style=3D"color: #080;" class=3D"styled-by-p=
+rettify">"activerecord"</span><span style=3D"color: #660;" class=3D"styled-=
+by-prettify">:</span><span style=3D"color: #000;" class=3D"styled-by-pretti=
+fy"><br>&nbsp; </span><span style=3D"color: #606;" class=3D"styled-by-prett=
+ify">In</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </=
+span><span style=3D"color: #606;" class=3D"styled-by-prettify">Gemfile</spa=
+n><span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span s=
+tyle=3D"color: #000;" class=3D"styled-by-prettify"><br>&nbsp; &nbsp; beerdb=
+ </span><span style=3D"color: #660;" class=3D"styled-by-prettify">(&gt;=3D<=
+/span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><sp=
+an style=3D"color: #066;" class=3D"styled-by-prettify">0</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">)</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify"> x64</span><span style=3D"color: #660=
+;" class=3D"styled-by-prettify">-</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">mingw32 depends on<br>&nbsp; &nbsp; &nbsp; activere=
+cord </span><span style=3D"color: #660;" class=3D"styled-by-prettify">(~&gt=
+;</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><=
+span style=3D"color: #066;" class=3D"styled-by-prettify">3.2</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">)</span><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify"> x64</span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify">mingw32<br><br><br>&nbsp; &nbsp; rails </span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">(=3D</span><span sty=
+le=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"col=
+or: #066;" class=3D"styled-by-prettify">4.1</span><span style=3D"color: #66=
+0;" class=3D"styled-by-prettify">.</span><span style=3D"color: #066;" class=
+=3D"styled-by-prettify">4</span><span style=3D"color: #660;" class=3D"style=
+d-by-prettify">)</span><span style=3D"color: #000;" class=3D"styled-by-pret=
+tify"> x64</span><span style=3D"color: #660;" class=3D"styled-by-prettify">=
+-</span><span style=3D"color: #000;" class=3D"styled-by-prettify">mingw32 d=
+epends on<br>&nbsp; &nbsp; &nbsp; activerecord </span><span style=3D"color:=
+ #660;" class=3D"styled-by-prettify">(</span><span style=3D"color: #066;" c=
+lass=3D"styled-by-prettify">4.1</span><span style=3D"color: #660;" class=3D=
+"styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"styled-b=
+y-prettify">4</span><span style=3D"color: #660;" class=3D"styled-by-prettif=
+y">)</span></div></code></div><div><br></div></div></div></div><div>The ver=
+sion of activerecord gem, which is installed locally is (4.1.4, 3.2.19)</di=
+v><div><br></div><div>I am wondering if my issue is caused by the fact that=
+ I installed the x64 version of Ruby, and for what ever reason, activerecor=
+d doesn't have a x64f version that meets the beerdb Runtime Dependencies.</=
+div><div><br></div><div>Regards,</div><div>Robert</div><div><br></div><div>=
+<br></div></div>
+------=_Part_1503_119426304.1405719819761--
+
+------=_Part_1502_2121936119.1405719819760--
+

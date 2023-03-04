@@ -1,0 +1,90 @@
+From 6465177860658167808@xxx Wed Sep 13 08:32:02 +0000 2017
+X-GM-THRID: 6377680463968862208
+X-Received: by 10.31.21.140 with SMTP id 134mr9562580vkv.60.1505291522422;
+        Wed, 13 Sep 2017 01:32:02 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.31.140 with SMTP id f134ls1680751iof.31.gmail; Wed, 13 Sep
+ 2017 01:32:02 -0700 (PDT)
+X-Received: by 10.98.17.21 with SMTP id z21mr9427194pfi.19.1505291521965;
+        Wed, 13 Sep 2017 01:32:01 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1505291521; cv=none;
+        d=google.com; s=arc-20160816;
+        b=jFdNQe/kJ8ofygh8NdhAEkc844WLo+Av5jlxKxsCiuZV0ktJ3GInkLEDD0ntif3G5d
+         HK4uSl2nSizdg8XzY24kfE3+9JCAOsENBvPN/IOiG7Jksxrv3VLb472pJCTDqqcKnUD/
+         Y91zlIhMX3WDn1/Db3AaQS2Jh7AWvoFxotAjlVfxbxzxfv3t6UUtpnnIgoGIlPHkm7An
+         LsrfzytykS16DaTdU3RyUdLVvbs12VLBRMWaHtBTy4+KWtVZ6Z9x/LvBpgyRgg1EBU3o
+         4a8dReij0gnaj198oLKKNGrsbTnLD9CfZy8T88j9Omt7Dzjep0jaivqimqO2mtnVxwuH
+         A04g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=I6VUvFpLJvLIRD/q6FtcIrQID52fsKLg1//y/0hUO/A=;
+        b=U/6IYGTCs+5Oc00sSxzIrXBxZzVTt/qOWInWoeSfDdKd7aAF13uEDLXuhzyM/CrZ0r
+         W4XULBHNy3P+nQo0ZfV+XK0CMpUdnPI7aONZAVAqjWXAytNnZ+mc3/qMZmYtXavI8HQZ
+         8Os0O7yz1OptRT6vaYKSV7A4hoUyZ6xytBfHKC0wrxqkg/53xUZI5NLfJrQ0Sq9JvLud
+         wkLbgDtwI31uTdNCEU4d7LkdBzUbP/cmE4ioiVU4KMeC0det6K2S2D2zduarMK/+Y3LA
+         9fu/reMKBpQ3T/B87aRmPC6RqIY3qDAWi5a5wfhnYMDO/fq2rAXYH8vVu3rAc9mQpiE/
+         A/Ag==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Jo4/4esm;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22e.google.com (mail-io0-x22e.google.com. [2607:f8b0:4001:c06::22e])
+        by gmr-mx.google.com with ESMTPS id u76si456290ywe.17.2017.09.13.01.32.01
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 13 Sep 2017 01:32:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) client-ip=2607:f8b0:4001:c06::22e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Jo4/4esm;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22e.google.com with SMTP id d16so127733ioj.3
+        for <opensport@googlegroups.com>; Wed, 13 Sep 2017 01:32:01 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=I6VUvFpLJvLIRD/q6FtcIrQID52fsKLg1//y/0hUO/A=;
+        b=Jo4/4esmf3awuz2YfliW8oD0vd1EV266oGh1UgCpW+GB8vS1YHFRoH8HA0E3iWIZXF
+         d3aHnJCgmgzKX66NBvmogFmU5bkU92r8Vruuf9PP76ESYsLckwbWyuYugDpCVv32mqsE
+         mO+55AYcX7tCwPvVtkNFMeHCArByVrParv+o499QF7s4wXTcJ2XZFOzO0q/sbbEWdS4q
+         8UT3B2xqpa+OfJAluNlEEdesfW1hcXmT5SmHyMgl65MZgda2skX8yOPoj5u85O0UDtDW
+         8xTwKd7OQ9hyUBJeD20B8OYLkRay44CBhVzih4OVwNo5rz7x2ypd0Gj11NB0AAmbz4C0
+         pvrg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=I6VUvFpLJvLIRD/q6FtcIrQID52fsKLg1//y/0hUO/A=;
+        b=RO76FRbZeqHX46KMv+6ePjYZ5OYjVYuUpbuOeDnVLNkjemQ7L+kGB2NVhss+HEj/OL
+         1Xuzi/zKsWQ+nPEyM79yRmukA5sWlcOMkCZQPKHABB3tzoC+BAOd54ymZ1rBjIbJWALn
+         i2M/WKv8fBk6Kk4eB8n2fo93yBmoTTDNN9s/XoJcZXsltgqDmyabJaSAu+8UHroX/kQK
+         2Yxl7goNA1k0L8YVTbFXEbpS7HiG2ifyUo1zdgPDqMg6+oslTkdkHPhCKCYEJT5GP9Ci
+         E+Pg0s+iZcmqt1ppuq6657HUwNGnC+hd7LW0/JLCc5kvBVxalig4Vbl6imZbdiTWTIP3
+         /lOg==
+X-Gm-Message-State: AHPjjUhCTHuVzHLyvp3iOoQORpNILFFVquURSygO3q69qekQvZyFNtV0
+	OLvqD8621De8e3yBAFgr8gKlmRrukRskb9THs5TUEg==
+X-Google-Smtp-Source: AOwi7QCy0LupFw/ZxAtaDQbo3ZMCgJ5jQyzCeBOvvBs85/hfPO8B85LePPNS00yO+GFT8ZrzhJAaZ0bCZ9cXtyF0QiM=
+X-Received: by 10.107.83.15 with SMTP id h15mr8984391iob.72.1505291521285;
+ Wed, 13 Sep 2017 01:32:01 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.181.198 with HTTP; Wed, 13 Sep 2017 01:32:00 -0700 (PDT)
+In-Reply-To: <c4be57aa-785b-4246-987c-fae674bbcb41@googlegroups.com>
+References: <e60f4145-f4b6-483c-ae27-6c0add53f0fc@googlegroups.com>
+ <CAAxEZd8=6cD-F93Ojq7ECXWxdJB4bLuCFvY_jLqTpEMRUy17_w@mail.gmail.com> <c4be57aa-785b-4246-987c-fae674bbcb41@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 13 Sep 2017 10:32:00 +0200
+Message-ID: <CAAxEZd__Vz5pTSLGz98=y-srdrOizQ4cbQRBgKyUZ-o70qKyig@mail.gmail.com>
+Subject: Re: [opensport] Portugal data
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+> you guys? I'm sorry to say, but for intending to be a "crowdsourced" database,
+> I find the documentation on how to do so rather lacking (or difficult to find).
+
+  Just for the record - can you point me to your documented projects
+as examples? I try what I can do but there's no you guys so far - it's
+pretty much my humble self doing all the "work". Enjoy the free ride.
+Cheers.
+

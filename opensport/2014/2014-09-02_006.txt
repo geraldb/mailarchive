@@ -1,0 +1,78 @@
+From 2117407342592@xxx Tue Jun 16 00:16:48 +0000 2015
+X-GM-THRID: 2107993227264
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a2a51690b24c94bb
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.36.98 with SMTP id p2mr2964530wij.0.1409641549932;
+        Tue, 02 Sep 2014 00:05:49 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.28.134 with SMTP id b6ls502180lah.42.gmail; Tue, 02 Sep
+ 2014 00:05:49 -0700 (PDT)
+X-Received: by 10.112.214.201 with SMTP id oc9mr64005lbc.13.1409641549303;
+        Tue, 02 Sep 2014 00:05:49 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22a.google.com (mail-we0-x22a.google.com [2a00:1450:400c:c03::22a])
+        by gmr-mx.google.com with ESMTPS id z15si49645wiv.3.2014.09.02.00.05.49
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 02 Sep 2014 00:05:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22a as permitted sender) client-ip=2a00:1450:400c:c03::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f170.google.com with SMTP id p10so6448964wes.29
+        for <opensport@googlegroups.com>; Tue, 02 Sep 2014 00:05:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=0QK4qqbYSat+hX9CabwfsanoEomqWBYt+uXes/eXyNA=;
+        b=jxEcWPAUD494It8OnAwtnjW13R+ZyXUbOwRn+kocCtOAvLodsZLPA6zog3S2M/3IkY
+         NhSf/98nLw0UB8l6er08IdnSoaRcQzWAiZ67mLJIbAIpp3p4JTOiJvlUonuHOr1WuSV8
+         i7sJCzukLU3hotBhw1TP3EvtPWo+d6/IdWM2lj+2r1TzIw38Stm1hJOAxN0ie5Eistl6
+         nR3SljVxz5u68miCQOH3ImoVeoWy8w4CkZUPmorspo6qq28FDME8BH2hE58hxQn8xDOe
+         yrtZdIjdM5SGy/8E9WoCq3YJQOtiwDZBH6/IHGWG9j25SOV1BxeZaB5HIhYORFCuZmtC
+         2JLQ==
+MIME-Version: 1.0
+X-Received: by 10.180.88.167 with SMTP id bh7mr27046682wib.12.1409641549207;
+ Tue, 02 Sep 2014 00:05:49 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Tue, 2 Sep 2014 00:05:49 -0700 (PDT)
+In-Reply-To: <bf125e2d-4231-4699-baf4-970aaa595541@googlegroups.com>
+References: <bf125e2d-4231-4699-baf4-970aaa595541@googlegroups.com>
+Date: Tue, 2 Sep 2014 09:05:49 +0200
+Message-ID: <CAAxEZd8-zTzSj0hmi4wOCaQKr+K4ACUh67T79n7H1gn_FuOucA@mail.gmail.com>
+Subject: Re: [opensport] find_person
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+    The find_person works in two steps - you're missing the important
+first mapping step e.g.
+
+###  sport.db.ruby / lib / sportdb / utils_map.rb
+
+def map_person!( line )
+ TextUtils.map_titles_for!( 'person', line, @known_persons)
+end
+
+
+   The reader builds up a person name map (as a regex table) - for now
+this is for national teams only. The mapper tries to map person names
+w/ a regex patterns if there''s a match it will replace it with the
+key escaped, thus the funny pattern in find_person, that is:
+
+    @@ooleonelmessioo@@
+
+   In your case you will need to update / patch the reader to setup
+the mapping table for the football club only (I assume there are no
+persons / players with the same name in the same team).   Hope that
+makes sense.
+
+   Sorry the squads reader is still a work-in-progress (and again
+started the first try out for national teams for the world cup). Keep
+it up. Cheers.
+

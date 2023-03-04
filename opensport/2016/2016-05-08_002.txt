@@ -1,0 +1,77 @@
+From 6282294279520911360@xxx Sun May 08 12:30:20 +0000 2016
+X-GM-THRID: 6274810235088535552
+X-Received: by 10.66.100.197 with SMTP id fa5mr18905635pab.22.1462710620142;
+        Sun, 08 May 2016 05:30:20 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.99.38 with SMTP id p35ls3314279qge.86.gmail; Sun, 08 May
+ 2016 05:30:19 -0700 (PDT)
+X-Received: by 10.129.131.136 with SMTP id t130mr19350969ywf.2.1462710619721;
+        Sun, 08 May 2016 05:30:19 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x242.google.com (mail-io0-x242.google.com. [2607:f8b0:4001:c06::242])
+        by gmr-mx.google.com with ESMTPS id d2si1069669igx.2.2016.05.08.05.30.19
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 08 May 2016 05:30:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::242 as permitted sender) client-ip=2607:f8b0:4001:c06::242;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::242 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x242.google.com with SMTP id u185so18561827iod.2
+        for <opensport@googlegroups.com>; Sun, 08 May 2016 05:30:19 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=gJFfchFYex8ZIuUMTYNH4uq4PC1URHHma3Kzl+aBNYI=;
+        b=OeUQZaDWjsSf0zk9lXGy9UK1ynBnBTl32v3EkYkymevHrvdRKVBynJposvKobtRkyc
+         1ES1loUzU8bWZhN6Cf7WSgtTfkppvJk2l9/lfm1ox+8INnU0C7NQ94lq5RwFbnsEDFmt
+         0RS1R7Nv2dYWTD9glPYi1Df4q/KqRB7Fu0ez2wLOfZqvmzLToH7zxgWAXV8aE85EyIB7
+         Mj3iu38ztptzkDs64/ZAGjFNuPGhJ/qbchwRqEydo6YRkLT5dNPnJFw6LR7nEFO9HhtU
+         8PDAXlVEgUGvFw+zHtvucfGapl/Nsu9bW2JOZx5pL9s1O69+pKsjjnlCkJDftPHH3MTx
+         QvUA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=gJFfchFYex8ZIuUMTYNH4uq4PC1URHHma3Kzl+aBNYI=;
+        b=B3F3mp3FRKpuF775xCmokGdDMX+CwjUchTJ8hUGpOMmSgnNJmlOcRebKNrSqBXngA9
+         n3/IH5j0az7c3LOayD7p3cv0XvwmPwxjiWQzlzXICvzXctKIKUtYBHQWWW/TzQUT/jIJ
+         U3n++RhH6Fy4K0kYEVyuiZ4G3dVLcjJFcR6KFvao7iQS9xpzfEymeY1Og/QnfiXj29Ri
+         zMXz17Mk9S0Q+ResOYAtf9yUL6l0cAtYVCGqPZMwtl6OnzIra/tOdfeXlJNMTIKISUwV
+         ujYxBFk6W/TpYJDMqbTxozQbPHQXpUXwGuzadk14fXSPTY8c/7QK8WHWB3YIV0DjXhks
+         xzfA==
+X-Gm-Message-State: AOPr4FUKgLGksyHvhPQzcPCvD0XTkZO0FV7xJf3IoQb6LapgoWF1cUJXMr2S2dTgW06VGd+b1oysQdHl6lyD1A==
+MIME-Version: 1.0
+X-Received: by 10.107.63.214 with SMTP id m205mr33262372ioa.15.1462710619542;
+ Sun, 08 May 2016 05:30:19 -0700 (PDT)
+Received: by 10.107.138.84 with HTTP; Sun, 8 May 2016 05:30:19 -0700 (PDT)
+In-Reply-To: <9063df30-6b04-4f7c-91b7-421870fd9c77@googlegroups.com>
+References: <90030c7c-525b-4998-b693-b38fced59185@googlegroups.com>
+	<CAAxEZd-B5eRtxoP9oOSbhfriHL-qj3ipYa_qkcfN3EDZC-6DEA@mail.gmail.com>
+	<9063df30-6b04-4f7c-91b7-421870fd9c77@googlegroups.com>
+Date: Sun, 8 May 2016 14:30:19 +0200
+Message-ID: <CAAxEZd9=2X=aM7kTaTXasfcCcQOJYmpdhbvMqYJerA4yb8q3Aw@mail.gmail.com>
+Subject: Re: [opensport] Euro 2016 data
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Thanks for you interest in football.db.
+
+>  how can I contribute in filling data: do I simply need to update the text files > in https://github.com/openfootball/euro-cup?
+
+   Yes, the idea is that it works like a "modern" wiki e.g. a text
+file anybody can edit.
+
+   The difference from a "standard" wiki is using git and github e.g.
+the first time if you're not a member you have to send in a "patch",
+that is, pull request.
+
+   Using the tooling e.g. the spordb command line tools you can turn
+the "plain text files" into a proper SQL database (e.g. football.db).
+
+  Welcome. Cheers.
+

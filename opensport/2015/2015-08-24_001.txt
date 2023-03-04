@@ -1,0 +1,75 @@
+From 6186594341070307328@xxx Mon Aug 24 15:05:43 +0000 2015
+X-GM-THRID: 6185793007810248704
+X-Received: by 10.66.142.42 with SMTP id rt10mr22487521pab.39.1440428742791;
+        Mon, 24 Aug 2015 08:05:42 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.134.86 with SMTP id i83ls1175011iod.17.gmail; Mon, 24 Aug
+ 2015 08:05:42 -0700 (PDT)
+X-Received: by 10.66.232.166 with SMTP id tp6mr23320560pac.3.1440428742391;
+        Mon, 24 Aug 2015 08:05:42 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x233.google.com (mail-ig0-x233.google.com. [2607:f8b0:4001:c05::233])
+        by gmr-mx.google.com with ESMTPS id f17si981804igt.0.2015.08.24.08.05.42
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 24 Aug 2015 08:05:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::233 as permitted sender) client-ip=2607:f8b0:4001:c05::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::233 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x233.google.com with SMTP id j19so58133766igf.1
+        for <opensport@googlegroups.com>; Mon, 24 Aug 2015 08:05:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type:content-transfer-encoding;
+        bh=rzuWZBOPFBh5tJT4D2rBC+70q6r9H77JliRLHhV7OAc=;
+        b=pZW2Kddz1hy3wLcxuQYwrywGIbOab2DYd/LZ3nD1jgNnQNJf68CbPm014ZFnu5Pmj3
+         1aqxjzDs25Pfs/PxJ3rZBz3JzYSpnJwFaegO8YTYQong9yA8QvrxF7EcDhsf36WHRFYF
+         vI4w4myt+aElTBrJvyiYeurqQawbkvIgntl1Wp/IdtiJ+/m5jHOcT90Q5Ftbm9GytOBR
+         ynU65YGFT3ubw0ux+pC28foxQoLitwH3JO9VBaaAKlRKtF1c1Dzmid7jDhaK8FcPVrHz
+         HoK4bs9N3Z0LAYF4s48Isjn19iAvUpUeBilPqXv66t9HmZYiMwsoCXJ4lCtOJeI5Kc4r
+         OzkQ==
+MIME-Version: 1.0
+X-Received: by 10.50.143.12 with SMTP id sa12mr14013371igb.64.1440428742076;
+ Mon, 24 Aug 2015 08:05:42 -0700 (PDT)
+Received: by 10.107.15.196 with HTTP; Mon, 24 Aug 2015 08:05:42 -0700 (PDT)
+In-Reply-To: <ee596028-ea8f-46ff-8610-7bd58e6b8b85@googlegroups.com>
+References: <fd122790-128b-496a-9018-2f536e57c176@googlegroups.com>
+	<CAAxEZd-xZQz7aeaMqa65f3dY60nBSpGHujHGJxfqA=S57Wy5QQ@mail.gmail.com>
+	<ee596028-ea8f-46ff-8610-7bd58e6b8b85@googlegroups.com>
+Date: Mon, 24 Aug 2015 17:05:42 +0200
+Message-ID: <CAAxEZd8XKxS=Mtfc2OLE_Y2uGtncW6vc1hKh2df49X1RLsLKVw@mail.gmail.com>
+Subject: Re: [opensport] Russian league for football.db
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Cc: Georgy Zakarashvili <vincentti@gmail.com>
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+   Some more notes. Sorry.
+
+   I just checked the teams.yml file e.g.:
+
+Arsenal, Arsenal Tula| =D0=90=D1=80=D1=81=D0=B5=D0=BD=D0=B0=D0=BB, city:Tul=
+a,   wiki:,
+Amkar, Amkar Perm|=D0=90=D0=BC=D0=BA=D0=B0=D1=80, city:Perm,   wiki:,
+Anzhi, Anzhi Makhachkala|=D0=90=D0=BD=D0=B6=D0=B8, city:Makhachkala, wiki:,
+
+
+   Almost ;-)
+
+  If you use the single-line record version than the first value/field
+is the key (and the key MUST be all lowercase) e.g. change to
+
+   arsenal, Arsenal Tula| =D0=90=D1=80=D1=81=D0=B5=D0=BD=D0=B0=D0=BB, city:=
+Tula
+   amkar, Amkar Perm|=D0=90=D0=BC=D0=BA=D0=B0=D1=80, city:Perm
+   anzhi, Anzhi Makhachkala|=D0=90=D0=BD=D0=B6=D0=B8, city:Makhachkala
+
+  Note sure why you add wiki:  with nothing. It's not required. Just
+remove if empty. Cheers.
+

@@ -1,0 +1,100 @@
+From 6899483628721405952@xxx Thu Nov 26 17:20:15 +0000 2020
+X-GM-THRID: 6899483631573532672
+X-Received: by 2002:a5d:6250:: with SMTP id m16mr5236547wrv.400.1606411214491;
+        Thu, 26 Nov 2020 09:20:14 -0800 (PST)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 2002:adf:aa87:: with SMTP id h7ls3256731wrc.2.gmail; Thu, 26 Nov
+ 2020 09:20:13 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJzdwEU9MO59rY9t/cri84KC8wGBL03ITiW09N1VgZecwSmz6/gGpvNmfpDJao+w3VEDEZzF
+X-Received: by 2002:a5d:570d:: with SMTP id a13mr4960638wrv.193.1606411213592;
+        Thu, 26 Nov 2020 09:20:13 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1606411213; cv=none;
+        d=google.com; s=arc-20160816;
+        b=XYh+t81pjEvtQNsUoFfK7REQo02lBR/O/elXrYboEo7EQQq0vE54PpPK3+LOw6421d
+         XSq0uYOiCBT9ERmscu/DvPqg9vFnfSm5UBoLijlxbIZEIWFImKywsmPjc7RINpF9y/P3
+         pQ6iIYTZLv9qv96MWnQZR2/g9oNi6g7x54obFALxryIQqhzSTJb2loSA8g4S+uAfiXlX
+         MbvbWLLVBhAQL3RRCFE+YSoRAM8dY39UD7ZPqB2T+5u6ZVIiAONDX7WPxaqDGj0nAG4v
+         XoUPdFMWgRQKrrP4L6kSpctmI5ItKgSv7NIB3Us06pVCla6FTXCqJZzImNmTrnkNavSL
+         vOeg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=F5+VjSkuvUmm1riXrP6vzUExq6QMsz5REfPCST9Qdlg=;
+        b=NIBU9eMwSAFHaM79ynUmNwuYhGzH5QNYe354KMe5LNAzj+vv9YgKnSDsVIxbMm+NrJ
+         PzMpP4RadcR/8C47hf7A6UU9BPje7YwVvwj4HkpEMZv+ala5BbGYFn2gB0FGumx1Q3h7
+         qQwo0jluvSPUd2OCJdVfSh77SoiHW5y8zoB/xBAgroiK35JJwrq8jiFvVCdsXipW+vhc
+         irOlYIa5l+BbD0531uGA9YmoFUCcYUAO2Dr3Q0OznF2IXdz7M9Eu+9twYlzoUS98YxNy
+         dHDPzP5rP3475ThP7H0AVWkzpg0ICz8DVdN3FMZhmbuvwp1Q0rS24Lnf3AapFjG2xUqk
+         qOrQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Z5lMTgwM;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ed1-x52a.google.com (mail-ed1-x52a.google.com. [2a00:1450:4864:20::52a])
+        by gmr-mx.google.com with ESMTPS id i1si250013wml.2.2020.11.26.09.20.13
+        for <openmundi@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 26 Nov 2020 09:20:13 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52a as permitted sender) client-ip=2a00:1450:4864:20::52a;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Z5lMTgwM;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::52a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ed1-x52a.google.com with SMTP id m16so3057304edr.3
+        for <openmundi@googlegroups.com>; Thu, 26 Nov 2020 09:20:13 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=F5+VjSkuvUmm1riXrP6vzUExq6QMsz5REfPCST9Qdlg=;
+        b=Z5lMTgwMuzpOKQLQS0cx/K83/uegqVlCpHYB3033xOZqHOpJuxGohfkuuqWNxPiug6
+         khei+pEpYcijse4HUGQXw89jtO/Js5T9Vzk3kDSgEmKAMYpvlDwUdouuuv7sj+oj9r8s
+         lEWq2EqZ5UYiNOuRxDM+zJTwhBbJJlJGU4O0fjmeYuUWfSlqQtKcJ7MExyAMR2e02sc+
+         2/DWm8mlVcs9jM2r7mjJyDeBOBPKUeOWljXSB7ujpyl0r6rf6plZWJNKD8YG02opo+eh
+         x7TETa3fYpBKB4yvqMCGpvbnTCWgmJMl3ASASvK7lakSze49X0HaJ7KcKPk7m3TX5s9k
+         zHpg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=F5+VjSkuvUmm1riXrP6vzUExq6QMsz5REfPCST9Qdlg=;
+        b=N43acYcloiphzJqXa2PNHFRxXseilvn9sZL/9lM8sV75Y8h0F5MvjnG1cYZYtxw+yv
+         8EBxr/Emex7j/Mu+0s6jdb2gIAS5VGVIwb0XHwbBTO+JTzLQcUMjzRm36Os5/NOjD8wC
+         dYnh7WYDO0KNjqg5wUWbTP29QseJkS+afiH8QFhRukC/7FWuW9KnjEtxWlBgKi5AJIF0
+         yMtaaoMDTNH1XbS9HlbzKM4scd944BuK7m6yxJllnE7eTVF13/O+aBqXcLxe+eevlPOq
+         7f9DhRTq5EO792PUmhCD7FFqotKAGjxKGHeC5IPelsEd7lYAEWOtuYxIZT/2yC+6uUWm
+         apNQ==
+X-Gm-Message-State: AOAM5333nXYVvzDBWX4H85ZkZSLsgzi+tRj6mdhZ5ncwkx3y+yDcmZc2
+	q7IFdgpOxZZSvUtPyyOBqkdhKXOtn4cKW0OBW2G2U3M+TNvN8Q==
+X-Received: by 2002:a50:b404:: with SMTP id b4mr3494408edh.369.1606411212845;
+ Thu, 26 Nov 2020 09:20:12 -0800 (PST)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 26 Nov 2020 18:20:02 +0100
+Message-ID: <CAAxEZd-0ruZca9gc5LFpOMZTms1h+so=ySTfeTy8m5+Hp84Xxw@mail.gmail.com>
+Subject: factbook.json 2020 Update - 260+ Public Domain (Free) World Country
+ Profiles / Datasets (incl. Population, Internet Users, etc.)
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   Time flies! I have updated the factbook.json datasets [1] and the
+"chrome-less" web pages [2]
+ using the latest online country profile pages from the Official CIA
+Factbook website.
+
+   The web page structure has changed a little so I have updated the
+factbook page parser [3] too.
+
+   Note: So far I have found one country code, that is, Curacao
+changed from cc to uc.
+
+   If you find anything of notice in the updated datasets, pages,
+parser, etc.  please tell.
+
+
+   Happy exploring the world. Cheers. Prost.
+
+[1] https://github.com/factbook/factbook.json
+[2] http://factbook.github.io
+[3] https://github.com/factbook/factbook
+

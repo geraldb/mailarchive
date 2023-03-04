@@ -1,0 +1,93 @@
+From 1984986873856@xxx Tue Jun 16 00:16:50 +0000 2015
+X-GM-THRID: 1986179104768
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,bf62143d621330b6,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.189.69 with SMTP id gg5mr1503893wic.4.1407739625892;
+        Sun, 10 Aug 2014 23:47:05 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.19.196 with SMTP id h4ls43404lae.99.gmail; Sun, 10 Aug
+ 2014 23:47:05 -0700 (PDT)
+X-Received: by 10.152.43.77 with SMTP id u13mr44852lal.7.1407739625325;
+        Sun, 10 Aug 2014 23:47:05 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x232.google.com (mail-we0-x232.google.com [2a00:1450:400c:c03::232])
+        by gmr-mx.google.com with ESMTPS id m15si1056762wiw.0.2014.08.10.23.47.05
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 10 Aug 2014 23:47:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::232 as permitted sender) client-ip=2a00:1450:400c:c03::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f178.google.com with SMTP id w61so8205352wes.37
+        for <opensport@googlegroups.com>; Sun, 10 Aug 2014 23:47:05 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:cc:content-type;
+        bh=nKxKTQyu1K7Jxnc+PZlYCJI4ho5Kr+QIFby9ABD824Y=;
+        b=WmRemyINxQqWYXE5V5kuE41HPT6dD1Hu7OpeS4jxl+CQcAkQ3lOWr9ueHmmIzmYnEQ
+         nZHYGZ3n/hHSJhwTivI++v50CV/ZdUx3gSpcIoNQEORWgxef62D2OD0HkPVwQ7pC6kB6
+         Ri4ga+j98s0LCDYGsq6iVgynduPQByFUwnZs7kl/KAL8JQ7z2a4+S6gCPG7gkE4x7MNd
+         c/pF005DL9kM5buSjYcVn3+08o8f51HJIzRFymLN6C3UHN4csaQfQQYkpGWYQZ/Ey36T
+         jBxgrvXjkLObdpHMJjd8rCn93DyMQPDMxQTblaYGty7dcVQeCfMy22dDHW4W1c2o+Mih
+         Do+g==
+MIME-Version: 1.0
+X-Received: by 10.194.20.230 with SMTP id q6mr53174238wje.43.1407739625170;
+ Sun, 10 Aug 2014 23:47:05 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Sun, 10 Aug 2014 23:47:05 -0700 (PDT)
+Date: Mon, 11 Aug 2014 08:47:05 +0200
+Message-ID: <CAAxEZd-jAYrpKDJ=62sx3TkDYX_=U4fnbonJm_S8Nr52-kh1Xw@mail.gmail.com>
+Subject: Re: [opensport] Is there any schema/structure explanation?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Cc: pdelgermurun@gmail.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   No worries.
+
+> league.club
+
+   It's a boolean flag if the team is a club (e.g. Manchester United)
+if true or a national (selection) team (e.g.  Italy) if false  - it's
+basically a reverse copy of the national flag and, thus, redundant.
+
+> city.popm (I guess population in million but data doesn't seem so)
+
+   This will change into its own table - it is the metropolitan
+population  and not the city proper population    e.g.  New York might
+have 10 m city proper and the metropolitan pop (popm( might have 15m
+or more)
+
+> region.nuts
+
+    It's the eurostats code - kind of european iso region code
+
+> country.net/motor/fifa
+
+   net - is the tld  - the country domain e.g.  .at ,.jp etc.
+   fifa  - is the fifa country code
+   motor  - is the motor vehicle licence country code e.g.  A - for
+Austria, D- Germany, etc.
+
+> place.kind - What kind of choices do have totally?
+
+   Best to look in the three country/region/city models. The should
+have all a place_kind method e.g.
+
+def place_kind
+  if is_metro?
+    'MTRO'
+  elsif is_district?
+    'DIST'
+   else
+    'CITY'
+   end
+end
+
+  Hope that helps. All the best, Keep it up. Cheers.example.
+

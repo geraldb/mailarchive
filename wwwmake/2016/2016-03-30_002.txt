@@ -1,0 +1,120 @@
+From 6267985262919286784@xxx Wed Mar 30 23:04:04 +0000 2016
+X-GM-THRID: 6267624873760129024
+X-Received: by 10.50.62.42 with SMTP id v10mr15892782igr.11.1459379043977;
+        Wed, 30 Mar 2016 16:04:03 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.182.252.99 with SMTP id zr3ls361026obc.59.gmail; Wed, 30 Mar
+ 2016 16:04:03 -0700 (PDT)
+X-Received: by 10.182.246.135 with SMTP id xw7mr6457547obc.19.1459379043540;
+        Wed, 30 Mar 2016 16:04:03 -0700 (PDT)
+Received: by 10.50.1.12 with SMTP id 12msigi;
+        Wed, 30 Mar 2016 13:44:27 -0700 (PDT)
+X-Received: by 10.50.178.167 with SMTP id cz7mr472389igc.5.1459370667562;
+        Wed, 30 Mar 2016 13:44:27 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Wed, 30 Mar 2016 13:44:26 -0700 (PDT)
+From: Sherwood Botsford <sgbotsford@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <867e9e39-3d79-4771-abc5-75cc5ba44fd0@googlegroups.com>
+In-Reply-To: <CAAxEZd9EhFmEK1WFF7mEMAiXLEcio0isCREP-3_PowoMVgwkow@mail.gmail.com>
+References: <CAAxEZd9EhFmEK1WFF7mEMAiXLEcio0isCREP-3_PowoMVgwkow@mail.gmail.com>
+Subject: Re: Why Markdown? Why Text? #1 - Single Source Publishing - One
+ Text, Many Formats
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_64_2132317847.1459370667110"
+X-Google-Token: EKr18LcFvMFnAz1_5gk0
+X-Google-IP: 104.245.165.179
+
+------=_Part_64_2132317847.1459370667110
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_65_333515760.1459370667110"
+
+------=_Part_65_333515760.1459370667110
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Counter arguments:
+
+While text is great, there isn't much control over layout.
+
+* yes you can do some things with CSS
+
+* yes you can do some things such as raw html code.  E.g. for my website at 
+http://sherwoods-forests.com in the templates I use the construct:
+
+<DIV class=pictureright>
+
+![Image text][1]
+
+[1]: /Image/path/to/pic.jpg
+
+This text is the caption
+
+***
+
+</div>
+
+But if I want to output another format, I have to use html as an 
+intermediate format.
+
+AFAIK there is no way to do magazine type layout:  Images that span 
+columns, flow from one column to the next, pull quotes, multicolumn layout.
+
+*  Dialects of MD have support for various types of footnotes, and some for 
+math in the form of latex, but try to get an html document that looks 
+remotely like one of the standrd journal formats.  
+
+* How do you create a table of contents in MD?
+
+* How do you create an index in MD, expecially with entries where you want 
+to index foo both under F, and under bar -> foo?
+
+*  MD because it sees the world through html coloured glasses makes no 
+distinction between semantic and layout content.  (Neither does HTML -- 
+that's why)  
+
+To be a one source solution, you have to be able to have the level of 
+control that you have for paper.
+
+I suspect that conceptually the answer is similar to that of InDesign.  You 
+have a 'story editor' that speaks markdown.  These compile to some form of 
+intermediate XML.  Fletcher's MMD does this already.  And you have some 
+form of page description language that consists mostly of box descriptions, 
+meta-box descriptions and rafts of include  files from the stories.
+
+Markdown is not complete by itself.
+
+------=_Part_65_333515760.1459370667110
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Counter arguments:<br><br>While text is great, there isn&#=
+39;t much control over layout.<br><br>* yes you can do some things with CSS=
+<br><br>* yes you can do some things such as raw html code.=C2=A0 E.g. for =
+my website at http://sherwoods-forests.com in the templates I use the const=
+ruct:<br><br>&lt;DIV class=3Dpictureright&gt;<br><br>![Image text][1]<br><b=
+r>[1]: /Image/path/to/pic.jpg<br><br>This text is the caption<br><br>***<br=
+><br>&lt;/div&gt;<br><br>But if I want to output another format, I have to =
+use html as an intermediate format.<br><br>AFAIK there is no way to do maga=
+zine type layout:=C2=A0 Images that span columns, flow from one column to t=
+he next, pull quotes, multicolumn layout.<br><br>*=C2=A0 Dialects of MD hav=
+e support for various types of footnotes, and some for math in the form of =
+latex, but try to get an html document that looks remotely like one of the =
+standrd journal formats.=C2=A0 <br><br>* How do you create a table of conte=
+nts in MD?<br><br>* How do you create an index in MD, expecially with entri=
+es where you want to index foo both under F, and under bar -&gt; foo?<br><b=
+r>*=C2=A0 MD because it sees the world through html coloured glasses makes =
+no distinction between semantic and layout content.=C2=A0 (Neither does HTM=
+L -- that&#39;s why)=C2=A0 <br><br>To be a one source solution, you have to=
+ be able to have the level of control that you have for paper.<br><br>I sus=
+pect that conceptually the answer is similar to that of InDesign.=C2=A0 You=
+ have a &#39;story editor&#39; that speaks markdown.=C2=A0 These compile to=
+ some form of intermediate XML.=C2=A0 Fletcher&#39;s MMD does this already.=
+=C2=A0 And you have some form of page description language that consists mo=
+stly of box descriptions, meta-box descriptions and rafts of include=C2=A0 =
+files from the stories.<br><br>Markdown is not complete by itself.<br></div=
+>
+------=_Part_65_333515760.1459370667110--
+------=_Part_64_2132317847.1459370667110--
+

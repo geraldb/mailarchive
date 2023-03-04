@@ -1,0 +1,65 @@
+From 115379011584@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 74704748544
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,3bc96c9415837e1
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.219.74 with SMTP id pm10mr1297193wic.5.1408048907979;
+        Thu, 14 Aug 2014 13:41:47 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.180.188.237 with SMTP id gd13ls17259wic.38.canary; Thu, 14 Aug
+ 2014 13:41:47 -0700 (PDT)
+X-Received: by 10.180.221.132 with SMTP id qe4mr86794wic.1.1408048907759;
+        Thu, 14 Aug 2014 13:41:47 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22a.google.com (mail-wg0-x22a.google.com [2a00:1450:400c:c00::22a])
+        by gmr-mx.google.com with ESMTPS id d9si379758wie.3.2014.08.14.13.41.47
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 14 Aug 2014 13:41:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22a as permitted sender) client-ip=2a00:1450:400c:c00::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f42.google.com with SMTP id l18so1539462wgh.1
+        for <openmundi@googlegroups.com>; Thu, 14 Aug 2014 13:41:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:cc:content-type;
+        bh=fSJhjQV02DWoyrNWebqTRQy0CJqOfDJ8umzJDjmF5io=;
+        b=lOo261is/xtJb1NMT5i1yNsCvPJoeuPX4pfNbD3E+I/AjFWNgaEPhqO5ejfFD9jnP1
+         muV326Crwd+K5utF4cUnLrZAAPUwted3DimiuS746GH+YhTRE2+9xwxRkWhghcG042sl
+         EdD9b0vXtDf2bLtDuYXXCz9fz1ywQx4Bk19rx1hd7uUVcra1ZGHHhIo0NW0CeBk9Zuva
+         sYThTnexEH0AIK8OycQaR5TCoSYbbZWd1wnmdNmdu+UJbejmR4z8BCpEfHXtv8T1kp8n
+         fbm4+nM91wG7rYd7GROw5Z0+Daa2GYVCPC3dU1xDEJRCRz/kqVjjfoLpbUax8eT706Ij
+         T9Qg==
+MIME-Version: 1.0
+X-Received: by 10.180.88.167 with SMTP id bh7mr50496347wib.12.1408048907647;
+ Thu, 14 Aug 2014 13:41:47 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Thu, 14 Aug 2014 13:41:47 -0700 (PDT)
+Date: Thu, 14 Aug 2014 22:41:47 +0200
+Message-ID: <CAAxEZd-SBc+102hpfmXprd29KbCO0deBToG4HSMTtRXHk9R_WQ@mail.gmail.com>
+Subject: Re: Factbook gem and JSON repo
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Cc: Eckhard Licher <eckhard.licher@googlemail.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   I see. It looks like you're missing the ruby-dev package.
+
+  Try google "ruby cannot load such file -- mkmf"
+
+  And the first results should have all the info. For example, check
+this stackoverflow posting [1]
+
+ > $ sudo aptitude install ruby1.9.1-dev   ## or something
+
+  Cheers.
+
+[1] stackoverflow.com/questions/7645918/require-no-such-file-to-load-mkmf-loaderror
+
+PS: As recommended better use rvm - the Ruby Version Manager.
+

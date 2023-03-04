@@ -1,0 +1,102 @@
+From 6710981833801072640@xxx Sun Jul 07 17:57:00 +0000 2019
+X-GM-THRID: 6710981832719990784
+X-Received: by 2002:a2e:968e:: with SMTP id q14mr7400976lji.195.1562522219986;
+        Sun, 07 Jul 2019 10:56:59 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a2e:96d5:: with SMTP id d21ls1572028ljj.16.gmail; Sun, 07
+ Jul 2019 10:56:59 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqyz/gnX4DCA6uiYhSWyVP4PpPZwhlKbBK9EVbF2HrLM9j8HgrT4+FQ2Tmzk3m5fw09LiE2q
+X-Received: by 2002:a2e:50e:: with SMTP id 14mr8038686ljf.5.1562522219227;
+        Sun, 07 Jul 2019 10:56:59 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1562522219; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CILFWxen9AerWyz4trJ9GgD+q4KdSOosuZoZWXj6YpVUX8id2RtCakaxtTC/IOmj0w
+         EMZmfFIQPn6PmNNzLlMLj0JtU8UzOFOrUhFFkwQLJLmivkowtOjoShNS5hj8fHkB7PgF
+         bQyuSulyPIbRrjyxjWOdmt5XkR03jhf7fqNonTipjJrR7Am5ZUzPoP9SC8DM293EfhP7
+         Cjfd8FfaP6ckxKYzi4bcTkEbBg/XJTmwgh95K0xb/uoLZVyZJGwE1MEByvdIuYpVZiTx
+         mPlyAf03Ps4FNFi6IRNJlXtv2Hym94+pYPDDT5frDeUU2z/xDKfQVCwS/jO7JEnNteEq
+         Z+HA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Nno5EZfTu5PRzFrtkYI/YPsu1MONEpbanbBrfYGa748=;
+        b=is8nr2riRmJAJscdvly/BUdldnZxMXh7hqzf3cNtL0kM6xHcSbAxgYawKKmPEMTkfM
+         nYQEioXihCNRDg8qOVvz1wYbs47VV7ZmZd0jtAbYsLHAX4L30/xOR7HhLVJZtbDQ4H59
+         kdSBeclXerq814y6FKP3uFKqT8gmdY/TDhsZR8kXtrvSRtbS/xBXzy6ydjWPzf93hR/z
+         pFWyVqWstfiQWajei+POuIo9O1F/JcHmMre1k2WD815OWDOiMQhj/PBrXvS/rQ+j8uhZ
+         02+XP3C+XHf6wHdXepuJ+mJ3UjLtR+5esdJxFNLEuB9TvbwMIdW3kfJu1t2MXXkGlNFy
+         ahqA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=TCHtPPlX;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22e.google.com (mail-lj1-x22e.google.com. [2a00:1450:4864:20::22e])
+        by gmr-mx.google.com with ESMTPS id r27si744566ljn.3.2019.07.07.10.56.59
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=AEAD-AES128-GCM-SHA256 bits=128/128);
+        Sun, 07 Jul 2019 10:56:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) client-ip=2a00:1450:4864:20::22e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=TCHtPPlX;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22e.google.com with SMTP id v18so13618673ljh.6
+        for <opensport@googlegroups.com>; Sun, 07 Jul 2019 10:56:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=Nno5EZfTu5PRzFrtkYI/YPsu1MONEpbanbBrfYGa748=;
+        b=TCHtPPlXif6/IGnnrAZiXbXEHgqj0Ks1sQOo8uuxvwnmmi5ETSoQsSbXalJxQgi7Aa
+         o6hi/H9lZdbv8l6DtLgz7+nK4wnbFTlzdbz7sVTLcLmY4NOIO0CwYZn2dsKSUv6SUebP
+         2eTQp+B4o1Chro4AL413exC9tuxj0kEhNQQGMIJVt/InFZbLZBVAMKQQpUXrsocgUFG+
+         4Ku5LB0vo8zgRT2VeNbHLaND7o9RLpOBmw0C6RXEyf3MU8tUgRObZqdMTyPp1azFdTHC
+         UVpZd57+CRcPBJOK7vmD+d4E6N3zePwuVOR2KNDk8/1onHoYVUDWke4bbATTcpso6CDu
+         /8qg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=Nno5EZfTu5PRzFrtkYI/YPsu1MONEpbanbBrfYGa748=;
+        b=g8y6VmM1+OgKcMDccb3tN2qPrUbLyGVYiY54ARLSh/UkUHrnsadKlN3atZMSanUVg6
+         8g7wWuJuvUxj8OxLNcBEh8eAedaTgF3+5NnHGqObCKlwl0EPnc9m/FCotiYKPJqezK7p
+         gQwnxXUraphmVphObuOZ0T7Ebpb6qLnoxKrpOHm1eYr6+SSIHbrO595yzZbZImvND3j7
+         i5zKZx2bvhW9S8m2PCNGGRQ0biVO6PKz4WtdiCBTAp2U5NgOw1+DYIqO72lc7odX7hPT
+         0xndgUc+ojGw12BtXVAd0c9PkwzaCvMMNAlcBaf0mP972kMYR/RCUOMU7t1Ic/Yo/8Pm
+         wP+w==
+X-Gm-Message-State: APjAAAWa5HLqPoWWgTxBJXHE4VkIgtqhWE5rEz1Qt1j5ehV6ZXB3EAUN
+	j1ZaxjU2NTXIt9QsyOhnf/4vVffIMxwQ4f93I5w9mwJekh0=
+X-Received: by 2002:a2e:a171:: with SMTP id u17mr7999597ljl.209.1562522218817;
+ Sun, 07 Jul 2019 10:56:58 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 7 Jul 2019 19:56:47 +0200
+Message-ID: <CAAxEZd8yA6pHbk+y7zNxhaR+C-sj3NY9WRA+XyizFjBCkx9n6g@mail.gmail.com>
+Subject: /clubs - New Central Package / Repo for World's Football Clubs (incl.
+ Premier League, Bundesliga, La Liga, etc.)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   If anyone follows along I'm trying to make the football.db setup
+easier this summer.
+
+   What's news?
+
+   The football.db [1] and football.csv [2] datasets / projects
+  now share the same central "bootup" datasets for the world's football clubs
+  (incl. Premier League, Bundesliga, La Liga, etc.)
+
+    So far the new all-in-one /clubs package / repo includes 85
+country datafiles
+  and 1460 clubs [3].
+
+    If you have any ideas or wishes on how to make the clubs setup better
+    or just some comments on how its broken or not working,
+    please tell. Any insight appreciated.
+
+    Enjoy the the beautiful game and the summer. Cheers. Prost.
+
+[1] https://github.com/openfootball
+[2] https://github.com/footballcsv
+[3] https://github.com/openfootball/clubs/blob/master/SUMMARY.md
+

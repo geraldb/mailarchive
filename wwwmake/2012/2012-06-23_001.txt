@@ -1,0 +1,65 @@
+From 1111278747648@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1109839052800
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,12c42c2d013b190b,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.52.240.229 with SMTP id wd5mr3786184vdc.8.1340439054431;
+        Sat, 23 Jun 2012 01:10:54 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.52.66.242 with SMTP id i18ls1131606vdt.5.gmail; Sat, 23 Jun
+ 2012 01:10:54 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.52.95.238 with SMTP id dn14mr310154vdb.1.1340439054025; Sat,
+ 23 Jun 2012 01:10:54 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by s9g2000vbg.googlegroups.com with HTTP; Sat, 23 Jun 2012 01:10:53
+ -0700 (PDT)
+Date: Sat, 23 Jun 2012 01:10:53 -0700 (PDT)
+User-Agent: G2/1.0
+X-Google-Token: EI30lf8EAtephpHj_Yo0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:13.0)
+ Gecko/20100101 Firefox/13.0.1,gzip(gfe)
+X-Google-IP: 178.190.102.74
+Message-ID: <41417c4a-8e54-470c-91eb-964d62f79edc@s9g2000vbg.googlegroups.com>
+Subject: deck.js, impress.js, slidy - Slide Show (S9) Quick Starter Template Update
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  I've uploaded a new Slideshow (S9) gem, that is, v1.2. What's new?
+
+
+  I've added quick starter samples. For example, to use the deck.js
+template pack:
+
+  1) Step 1: Fetch/Install it (now includes a quick starter
+sample)
+      $ slideshow -f deck.js
+
+  2) Step 2: Generate the Quick Starter Sample Markdown Source
+      $ slideshow -q deck.js
+
+  3) Step 3: Showtime! Generate the slide deck
+      $  slideshow -t deck.js deck.js.text
+
+  More info about the first three template packs:
+
+      deck.js @ http://geraldb.github.com/slideshow-deck.js
+   impress.js @ http://geraldb.github.com/slideshow-impress.js
+        slidy @ http://geraldb.github.com/slideshow-slidy
+
+
+  As always questions, comments, issues, etc. welcome.
+
+  Cheers.
+

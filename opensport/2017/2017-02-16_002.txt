@@ -1,0 +1,82 @@
+From 6387667143459078144@xxx Thu Feb 16 11:30:52 +0000 2017
+X-GM-THRID: 6387667141910331392
+X-Received: by 10.129.84.213 with SMTP id i204mr497614ywb.46.1487244652010;
+        Thu, 16 Feb 2017 03:30:52 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.41.10 with SMTP id d10ls795181otb.37.gmail; Thu, 16 Feb
+ 2017 03:30:51 -0800 (PST)
+X-Received: by 10.176.1.163 with SMTP id 32mr360434ual.28.1487244651654;
+        Thu, 16 Feb 2017 03:30:51 -0800 (PST)
+Received: by 10.202.198.69 with SMTP id w66msoif;
+        Thu, 16 Feb 2017 01:27:25 -0800 (PST)
+X-Received: by 10.157.62.29 with SMTP id a29mr45463otd.5.1487237245118;
+        Thu, 16 Feb 2017 01:27:25 -0800 (PST)
+X-Google-Web-Client: true
+Date: Thu, 16 Feb 2017 01:27:24 -0800 (PST)
+From: Kevin Christopher Henry <k@severian.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <5ff6c1d2-64f2-489c-bb28-08b5223cd609@googlegroups.com>
+Subject: Django ORM adapter available
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1437_1913881716.1487237244885"
+X-Google-Token: EPzglcUFVfRL_72yI_s0
+X-Google-IP: 96.232.169.190
+
+------=_Part_1437_1913881716.1487237244885
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1438_683043959.1487237244885"
+
+------=_Part_1438_683043959.1487237244885
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+Thanks for your great work on this project.
+
+I recently wrote an adapter so that the football.db SQLite database can be 
+accessed using the ORM in the Django web framework [1].
+
+For example, here's a query that tells you how many home games Leicester 
+City won by two goals or more in the EPL last season:
+
+>>> Game.objects.filter(
+    round__event__league__key="en",
+    round__event__season__key="2015/16",
+    team1__key="leicester",
+    score1__gte=F("score2") + 2,
+).count()
+
+5
+
+I'm happy to share it with others. I can just put it up as a Gist (it's a 
+single file), but if you want to put it in one of your many repositories 
+that would be fine too.
+
+Cheers,
+Kevin
+
+[1] https://www.djangoproject.com/
+
+------=_Part_1438_683043959.1487237244885
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald,<br><br>Thanks for your great work on this proje=
+ct.<br><br>I recently wrote an adapter so that the football.db SQLite datab=
+ase can be accessed using the ORM in the Django web framework [1].<br><br>F=
+or example, here&#39;s a query that tells you how many home games Leicester=
+ City won by two goals or more in the EPL last season:<br><br>&gt;&gt;&gt; =
+Game.objects.filter(<br>=C2=A0=C2=A0=C2=A0 round__event__league__key=3D&quo=
+t;en&quot;,<br>=C2=A0=C2=A0=C2=A0 round__event__season__key=3D&quot;2015/16=
+&quot;,<br>=C2=A0=C2=A0=C2=A0 team1__key=3D&quot;leicester&quot;,<br>=C2=A0=
+=C2=A0=C2=A0 score1__gte=3DF(&quot;score2&quot;) + 2,<br>).count()<br><br>5=
+<br><br>I&#39;m happy to share it with others. I can just put it up as a Gi=
+st (it&#39;s a single file), but if you want to put it in one of your many =
+repositories that would be fine too.<br><br>Cheers,<br>Kevin<br><br>[1] htt=
+ps://www.djangoproject.com/<br></div>
+------=_Part_1438_683043959.1487237244885--
+
+------=_Part_1437_1913881716.1487237244885--
+

@@ -1,0 +1,140 @@
+From 6613202720303087616@xxx Wed Oct 17 06:04:06 +0000 2018
+X-GM-THRID: 6613202716802940928
+X-Received: by 2002:a1c:2d4b:: with SMTP id t72-v6mr111790wmt.18.1539756245975;
+        Tue, 16 Oct 2018 23:04:05 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a1c:8693:: with SMTP id i141-v6ls119786wmd.20.gmail; Tue, 16
+ Oct 2018 23:04:04 -0700 (PDT)
+X-Google-Smtp-Source: ACcGV63Nn4zz8wZe2jgNgDqktlKmWpmozsH4tfH+stMowQkeQksY5/depgdtlh4595wY0NVmRGyJ
+X-Received: by 2002:a1c:2344:: with SMTP id j65-v6mr120825wmj.24.1539756244947;
+        Tue, 16 Oct 2018 23:04:04 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1539756244; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Ddv3eChGTAEwgcw6oMP/I+z34yWjX2vV6Pq1GKYBZB/zrUTVG0Cs293kXRIdDvZqDL
+         CrbWjfGAfa4ffjCxQhFfcko/LyoPln+QjJcUT9U4b4gGEVhZ3+Nb/UINbamFjUvLgO+Z
+         qTSqcdq4DcpRrhMUlOujq1bDCt/5I3BNSwhlVRHZ9Msxqw0b/b1RFF7JbKknC8v5JDzW
+         0PQT91oDhAKmtBrR4sYl+NMLKlP+tTbPM1q38X5RNqntyYNrQUxBtsSXGxmZIDVmBTnP
+         HgvDaKozMnGCy2sUa0DI+k7n8AsA6nXoidnrWa8lM9ye0ZOJMRnl0xDIzPeZqvdTPGdj
+         LZkA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=aaHt0HygICBy1Dx8hYKkCKPsduPYyb0wT7f9QH1zyVI=;
+        b=ub56Cueg3TsxGsNeP2YbuDMroJnYN8Obs9qJaAohqKIrN6gvmLyKjPBHr+PeUM2dZ3
+         luL5DiEFzoK5L6qC6HEJSdi95XC//eXmi/ugjhxaxF14IWwddlQS4CvPjUCldEO3BG0I
+         FgbLq6yxeGvIktzAshydXFYLzkUgcfBD4cv5FaHV3afh39Ug2z6AclwOZ2KnZxI16nsX
+         v5YdV6/CHCg/CG8vX8OMFaQUf0jjnog8r4X3eW4cxSIkRMgPFbXbt4x9sAoEififpziD
+         bqpzT8rLHg0uGhSbmPbwU8rJYFvhdm0Fqqh7wdK+C9lS/1V7FtkhgorErKrO9vJTTfQv
+         3hgA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="ZJx/7c4u";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x234.google.com (mail-lj1-x234.google.com. [2a00:1450:4864:20::234])
+        by gmr-mx.google.com with ESMTPS id e5-v6si555447wru.1.2018.10.16.23.04.04
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 16 Oct 2018 23:04:04 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) client-ip=2a00:1450:4864:20::234;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="ZJx/7c4u";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x234.google.com with SMTP id r8-v6so23143675ljc.10
+        for <wwwmake@googlegroups.com>; Tue, 16 Oct 2018 23:04:04 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=aaHt0HygICBy1Dx8hYKkCKPsduPYyb0wT7f9QH1zyVI=;
+        b=ZJx/7c4u7pVhViz1JZ3BaTW5ArTYHdjT8P3/q28s5IwrViJTU0DnC4bpDpGXiXgmNI
+         2ozA+wwzddSem9nFW3ZzynHPYnR6wMpUEhF4zs1xTEk3cTsUh33qjWlTAKnAJ8lzyo5A
+         7a7r5wwNd7mOVDckpETMj6Ubun2hW2BK25BTEo8I9YM98aVFK8eI9DvfZBpP1g5gN45V
+         AsWtM0pLDfv3V+M/Ss2jGyBkUDUC1IWfaSpo3EchBsil/nOFSu3sm7C89LJpGXhWN1+h
+         pH0l0XJrlp/ksgYbVj6/YISxmfloiS87EEymz+sNwBuo+DMUuNUXott/Fij/yfPaLsQD
+         hr8w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=aaHt0HygICBy1Dx8hYKkCKPsduPYyb0wT7f9QH1zyVI=;
+        b=ZdmPk1hTAKMUpjX2EuQaOq069hxn76cMDBkTjPfI0mVHxz71kgGL6SnV8Vs95qU2xH
+         lQrfnVhQeAdzxINr1GICihaehhG0OIe19MYw9IYXdRdxWBAIoKTTDzid2/5uIAZgW1H6
+         McrSakAsgV+xup1CKWyN+sKesjWL6ITq25WF1CbRkGjJISmMne8IAxIb44lIRf0lYlxz
+         9YClq6gXxN3DGQGmEKOvuiEQfxG7T/4SAMprTDWm2FdxwQMLHTVLxPTejTbo6Awjl2XR
+         RJ/urID3BsoLBbS8mfGd+fSJ5e/Jt4F2VFtKt7wg37sKndGXT7doKJCWnphOJ5AigMZ+
+         Bf1w==
+X-Gm-Message-State: ABuFfojqfBuLr3qCi6NJwKaqmjh3DpUghT1lxxMQotm/dNCYZlmZ3OVc
+	mvoBieauwXvJABMcA6AgFTWXXUP4cbaYyLcVhzZvJz2k
+X-Received: by 2002:a2e:6353:: with SMTP id x80-v6mr15268776ljb.11.1539756244332;
+ Tue, 16 Oct 2018 23:04:04 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 17 Oct 2018 08:03:53 +0200
+Message-ID: <CAAxEZd_a0ZHybbkQuW4oFt3cgWWyuoT8p_Qt6zHD7wSWA--xuQ@mail.gmail.com>
+Subject: tabreader library v1.0 - read in tabular datafiles in text in the
+ tabular (TAB) format
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   I've published the tabreader library version 1.0 [1]
+that lets you read in tabular datafiles in text in the tabular (TAB) format.
+
+Yes, it's as simple as:
+
+    line = "1\t2\t3"
+    values = line.split( "\t" )
+    pp values
+    # => ["1","2","3"]
+
+or the "magic" packaged up in TabReader:
+
+
+    line = "1\t2\t3"
+    values = Tab.parse_line( line )   ## or TAB.parse_line or
+TabReader.parse_line
+    pp values
+    # => ["1","2","3"]
+
+
+or use the convenience helpers:
+
+    txt <<=TXT
+    1\t2\t3
+    4\t5\t6
+    TXT
+
+    records = Tab.parse( txt )   ## or TAB.parse or TabReader.parse
+    pp records
+    # => [["1","2","3"],
+    #     ["4","5","6"]]
+
+or
+
+    records = Tab.read( "values.tab" )  ## or TAB.read or TabReader.read
+    pp records
+    # => [["1","2","3"],
+    #     ["4","5","6"]]
+
+or
+
+    Tab.foreach( "values.tab" ) do |rec|  ## or TAB.foreach or TabReader.foreach
+      pp rec
+    end
+    # => ["1","2","3"]
+    # => ["4","5","6"]
+
+and so on.
+
+Happy data wrangling. Cheers. Prost.
+
+PS: The FAQ in the README includes:
+
+- Q: Why NOT use Csv.read( sep: "\t" )?
+- Q: What's the tabulator (TAB) format?
+- Q: Why tab?
+- Q: Why NOT tab?
+
+
+[1] https://github.com/csv11/tabreader
+

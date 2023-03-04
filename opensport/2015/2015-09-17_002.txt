@@ -1,0 +1,59 @@
+From 6195622461543809024@xxx Thu Sep 17 22:59:26 +0000 2015
+X-GM-THRID: 6173278112413908992
+X-Received: by 10.13.203.67 with SMTP id n64mr1635789ywd.53.1442530765864;
+        Thu, 17 Sep 2015 15:59:25 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.138.137 with SMTP id qq9ls78365igb.43.gmail; Thu, 17 Sep
+ 2015 15:59:25 -0700 (PDT)
+X-Received: by 10.107.136.229 with SMTP id s98mr5840357ioi.34.1442530765632;
+        Thu, 17 Sep 2015 15:59:25 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22e.google.com (mail-io0-x22e.google.com. [2607:f8b0:4001:c06::22e])
+        by gmr-mx.google.com with ESMTPS id f4si428449igo.2.2015.09.17.15.59.25
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 17 Sep 2015 15:59:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) client-ip=2607:f8b0:4001:c06::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x22e.google.com with SMTP id h134so38871512iof.0
+        for <opensport@googlegroups.com>; Thu, 17 Sep 2015 15:59:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=ZNNelqEvtZRitbrx3NjpjAzerlUigFGzwSobGv4lTyw=;
+        b=pdxUHS0n/lth1MLcc9dQauzyZ4a7WfT89qwf1170s09FJSFzCCJmv76iSk4mASUsoo
+         IOleQV0kNh6TAzIqOWISMDh9/KixJhOf9GkvJ21qME8tkAWnpesL57UsCWJeOv6BGZfU
+         j8P0HZ051iYYTPINlRqFBf47eC2JhfCSZOTnGoEsuJyqx588xFaWfe+7Ho9s9aKAKOAT
+         u1sDKCkuMFJyHHQfrcrikpZO+NnYHnKg4dQEYs4hWyJtELMhelpShXr4PqczZScAQxrU
+         nP0MdLkKMJAf/ev0eXInnsGpD1ZScCmVKftr+ErQF5g5ZmCOoxrdQKnUpTOr/zFbcmSt
+         AsGA==
+MIME-Version: 1.0
+X-Received: by 10.107.170.89 with SMTP id t86mr10992974ioe.70.1442530765549;
+ Thu, 17 Sep 2015 15:59:25 -0700 (PDT)
+Received: by 10.107.162.82 with HTTP; Thu, 17 Sep 2015 15:59:25 -0700 (PDT)
+In-Reply-To: <CAAxEZd-wzmKAk+sU18GnhJhozFRzGcuuSRr98+PpGNrvyact2w@mail.gmail.com>
+References: <55ABA8CE.8030001@gmail.com>
+	<CAAxEZd_-Va2d8Qo9S4CYMSv9WCQyWF6aC7XgZK0AWooFr42NVg@mail.gmail.com>
+	<55B081F3.1000106@gmail.com>
+	<CAAxEZd-wzmKAk+sU18GnhJhozFRzGcuuSRr98+PpGNrvyact2w@mail.gmail.com>
+Date: Fri, 18 Sep 2015 00:59:25 +0200
+Message-ID: <CAAxEZd-TnuV-=j2a49xQYE9gcsvpEmi_VY2n7L4sF22t3XzS7A@mail.gmail.com>
+Subject: Re: [opensport] Deutsche Bundesliga 2015/16 datasets?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+  FYI:  The new football.json/ repo now includes an (auto-) generated
+version of the complete season match schedule [1] and all clubs [2] in
+JSON (JavaScript Object Notation).
+   Cheers.
+
+[1] github.com/openfootball/football.json/blob/master/2015-16/de.1.json
+[2] github.com/openfootball/football.json/blob/master/2015-16/de.1.clubs.json
+

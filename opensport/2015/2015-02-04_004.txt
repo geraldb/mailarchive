@@ -1,0 +1,1132 @@
+From 2377802317824@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2377276981248
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cd242d30f1f3615d
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.219.234 with SMTP id pr10mr26672631pac.45.1423063280309;
+        Wed, 04 Feb 2015 07:21:20 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.133.12 with SMTP id h12ls85828iod.58.gmail; Wed, 04 Feb
+ 2015 07:21:19 -0800 (PST)
+X-Received: by 10.66.102.34 with SMTP id fl2mr27116928pab.35.1423063279963;
+        Wed, 04 Feb 2015 07:21:19 -0800 (PST)
+Received: by 10.50.166.98 with SMTP id zf2msigb;
+        Wed, 4 Feb 2015 02:28:38 -0800 (PST)
+X-Received: by 10.50.253.1 with SMTP id zw1mr336463igc.11.1423045718255;
+        Wed, 04 Feb 2015 02:28:38 -0800 (PST)
+X-Google-Doc-Id: 264ecb2e7139da97
+X-Google-Web-Client: true
+Date: Wed, 4 Feb 2015 02:28:37 -0800 (PST)
+From: maizarw@gmail.com
+To: opensport@googlegroups.com
+Message-Id: <ec906df1-8c4e-4e7f-818f-4a7804b24d82@googlegroups.com>
+Subject: Unable to build en-england repo
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_4454_714803969.1423045717031"
+X-Google-Token: ENXox6YFH_NeaD6qWW40
+X-Google-IP: 115.242.169.76
+
+------=_Part_4454_714803969.1423045717031
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4455_686785665.1423045717031"
+
+------=_Part_4455_686785665.1423045717031
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Gerald,
+
+I have been able to build the entire SQLite db successfully using the=20
+alternative method. I have tried for several days to build the en-england=
+=20
+database, but it does not seem to work. I get the same error when trying=20
+both the rake script and sportdb command. I am a newbie to Ruby, but I am=
+=20
+learning the language to understand the code.=20
+
+The trace is listed below:
+
+* When using Sportdb command: sportdb --dbname football.db update --include=
+=20
+en-england
+
+activerecord-utils/0.3.0 (activerecord/4.2.0) on Ruby 1.9.3 (2014-11-13)=20
+[i386-mingw32]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::Region<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::City<
+fetcher/0.4.4 on Ruby 1.9.3 (2014-11-13) [i386-mingw32]
+datafile/0.1.1 on Ruby 1.9.3 (2014-11-13) [i386-mingw32]
+sportdb-update/0.1.1 on Ruby 1.9.3 (2014-11-13) [i386-mingw32]
+sportdb-service/0.4.0 on Ruby 1.9.3 (2014-11-13) [i386-mingw32]
+sportdb/1.11.0 on Ruby 1.9.3 (2014-11-13) [i386-mingw32]
+sportdb/1.11.0 on Ruby 1.9.3 (2014-11-13) [i386-mingw32]
+working directory: D:/Insights/openfootball
+Connecting to db using settings:=20
+{:adapter=3D>"sqlite3", :database=3D>"./football.db"}
+[info] parsing data (setup) 'setups/all' (en-england/setups/all.txt)...
+
+*** error: Couldn't find WorldDb::Model::Country
+
+* When using the rake build command: rake build DATA=3Den --trace
+
+before require 'active_record'
+after require 'active_record'
+before require 'active_support/all'
+after require 'active_support/all'
+before require 'worlddb'
+activerecord-utils/0.3.0 (activerecord/4.2.0) on Ruby 1.9.3 (2014-11-13)=20
+[i386-mingw32]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::Region<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::City<
+after require 'worlddb'
+before require 'sportdb'
+fetcher/0.4.4 on Ruby 1.9.3 (2014-11-13) [i386-mingw32]
+datafile/0.1.1 on Ruby 1.9.3 (2014-11-13) [i386-mingw32]
+sportdb-update/0.1.1 on Ruby 1.9.3 (2014-11-13) [i386-mingw32]
+sportdb-service/0.4.0 on Ruby 1.9.3 (2014-11-13) [i386-mingw32]
+after require 'sportdb'
+  importing task >./tasks/about.rake<...
+  importing task >./tasks/basics/assocs.rake<...
+  importing task >./tasks/basics/grounds.rake<...
+  importing task >./tasks/basics/players.rake<...
+  importing task >./tasks/book.rake<...
+  importing task >./tasks/check.rake<...
+  importing task >./tasks/dump.rake<...
+  importing task >./tasks/logs.rake<...
+  importing task >./tasks/setups/admin.rake<...
+  importing task >./tasks/setups/all.rake<...
+  importing task >./tasks/setups/at.rake<...
+  importing task >./tasks/setups/cl.rake<...
+  importing task >./tasks/setups/copaamerica.rake<...
+  importing task >./tasks/setups/copalibertadores.rake<...
+  importing task >./tasks/setups/copasudamericana.rake<...
+  importing task >./tasks/setups/de.rake<...
+  importing task >./tasks/setups/en.rake<...
+  importing task >./tasks/setups/es.rake<...
+  importing task >./tasks/setups/eurocup.rake<...
+  importing task >./tasks/setups/fr.rake<...
+  importing task >./tasks/setups/goldcup.rake<...
+  importing task >./tasks/setups/history.rake<...
+  importing task >./tasks/setups/it.rake<...
+  importing task >./tasks/setups/mls.rake<...
+  importing task >./tasks/setups/northamericachampionsleague.rake<...
+  importing task >./tasks/setups/worldcup.rake<...
+  importing task >./tasks/stats/alltime.rake<...
+  importing task >./tasks/stats/matches.rake<...
+  importing task >./tasks/stats/standings.rake<...
+  importing task >./tasks/stats/stats.rake<...
+  using DATA_KEY >en<
+{"adapter"=3D>"sqlite3", "database"=3D>"./build/football.db"}
+-- create_table(:logs)
+   -> 2.0410s
+-- create_table(:props)
+   -> 0.0625s
+-- create_table(:tags)
+   -> 0.0675s
+-- add_index(:tags, :key, {:unique=3D>true})
+   -> 0.0650s
+-- create_table(:taggings)
+   -> 0.0650s
+-- add_index(:taggings, :tag_id)
+   -> 0.0575s
+-- add_index(:taggings, [:taggable_id, :taggable_type])
+   -> 0.0575s
+-- add_index(:taggings, [:taggable_id, :taggable_type, :tag_id],=20
+{:unique=3D>true})
+   -> 0.0650s
+-- create_table(:places)
+   -> 0.0650s
+-- create_table(:names)
+   -> 0.2700s
+-- create_table(:continents)
+   -> 0.0625s
+-- add_index(:continents, :key, {:unique=3D>true})
+   -> 0.0625s
+-- create_table(:country_codes)
+   -> 0.2850s
+-- add_index(:country_codes, [:name, :kind], {:unique=3D>true})
+   -> 0.0600s
+-- create_table(:countries)
+   -> 0.0825s
+-- add_index(:countries, :key, {:unique=3D>true})
+   -> 0.0625s
+-- add_index(:countries, :code, {:unique=3D>true})
+   -> 0.0625s
+-- create_table(:regions)
+   -> 0.0800s
+-- add_index(:regions, [:key, :country_id], {:unique=3D>true})
+   -> 0.2550s
+-- create_table(:cities)
+   -> 0.0775s
+-- create_table(:langs)
+   -> 0.0825s
+-- create_table(:usages)
+   -> 0.0625s
+-- create_table(:persons)
+   -> 0.2775s
+-- create_table(:teams)
+   -> 0.0825s
+-- add_index(:teams, :key, {:unique=3D>true})
+   -> 0.0650s
+-- create_table(:grounds)
+   -> 0.0600s
+-- add_index(:grounds, :key, {:unique=3D>true})
+   -> 0.0625s
+-- create_table(:goals)
+   -> 0.2850s
+-- create_table(:rosters)
+   -> 0.0625s
+-- create_table(:events)
+   -> 0.0800s
+-- add_index(:events, :key, {:unique=3D>true})
+   -> 0.0825s
+-- create_table(:rounds)
+   -> 0.0625s
+-- add_index(:rounds, :event_id)
+   -> 0.0575s
+-- create_table(:groups)
+   -> 0.0800s
+-- add_index(:groups, :event_id)
+   -> 0.0675s
+-- create_table(:games)
+   -> 0.2900s
+-- add_index(:games, :key, {:unique=3D>true})
+   -> 0.0650s
+-- add_index(:games, :round_id)
+   -> 0.2450s
+-- add_index(:games, :group_id)
+   -> 0.0800s
+-- add_index(:games, :next_game_id)
+   -> 0.0625s
+-- add_index(:games, :prev_game_id)
+   -> 0.0675s
+-- add_index(:games, :team1_id)
+   -> 0.0625s
+-- add_index(:games, :team2_id)
+   -> 0.0700s
+-- create_table(:events_teams)
+   -> 0.0625s
+-- add_index(:events_teams, [:event_id, :team_id], {:unique=3D>true})
+   -> 0.0775s
+-- add_index(:events_teams, :event_id)
+   -> 0.0900s
+-- create_table(:events_grounds)
+   -> 0.0625s
+-- add_index(:events_grounds, [:event_id, :ground_id], {:unique=3D>true})
+   -> 0.0600s
+-- add_index(:events_grounds, :event_id)
+   -> 0.0825s
+-- create_table(:groups_teams)
+   -> 0.0625s
+-- add_index(:groups_teams, [:group_id, :team_id], {:unique=3D>true})
+   -> 0.2850s
+-- add_index(:groups_teams, :group_id)
+   -> 0.0675s
+-- create_table(:seasons)
+   -> 0.2700s
+-- create_table(:leagues)
+   -> 0.2800s
+-- create_table(:badges)
+   -> 0.0800s
+-- create_table(:assocs)
+   -> 0.0625s
+-- add_index(:assocs, :key, {:unique=3D>true})
+   -> 0.0575s
+-- create_table(:assocs_assocs)
+   -> 0.0900s
+-- add_index(:assocs_assocs, [:assoc1_id, :assoc2_id], {:unique=3D>true})
+   -> 0.0800s
+-- add_index(:assocs_assocs, :assoc1_id)
+   -> 0.0625s
+-- add_index(:assocs_assocs, :assoc2_id)
+   -> 0.0675s
+-- create_table(:group_standings)
+   -> 0.0600s
+-- create_table(:group_standing_entries)
+   -> 0.0825s
+-- create_table(:event_standings)
+   -> 0.0600s
+-- create_table(:event_standing_entries)
+   -> 0.2925s
+-- create_table(:alltime_standings)
+   -> 0.0700s
+-- create_table(:alltime_standing_entries)
+   -> 0.0850s
+[info] parsing data (setup) 'setups/countries'=20
+(../openmundi/world.db/setups/countries.txt)...
+[info] parsing data (values) 'continents'=20
+(../openmundi/world.db/continents.txt)...
+[info] parsing data (country) 'africa/countries'=20
+(../openmundi/world.db/africa/countries.txt)...
+[info] parsing data (country) 'antartica/countries'=20
+(../openmundi/world.db/antartica/countries.txt)...
+[info] parsing data (country) 'asia/countries'=20
+(../openmundi/world.db/asia/countries.txt)...
+[info] parsing data (country) 'caribbean/countries'=20
+(../openmundi/world.db/caribbean/countries.txt)...
+[info] parsing data (country) 'central-america/countries'=20
+(../openmundi/world.db/central-america/countries.txt)...
+[info] parsing data (country) 'europe/countries'=20
+(../openmundi/world.db/europe/countries.txt)...
+[info] parsing data (country) 'middle-east/countries'=20
+(../openmundi/world.db/middle-east/countries.txt)...
+[info] parsing data (country) 'north-america/countries'=20
+(../openmundi/world.db/north-america/countries.txt)...
+[info] parsing data (country) 'pacific/countries'=20
+(../openmundi/world.db/pacific/countries.txt)...
+[info] parsing data (country) 'south-america/countries'=20
+(../openmundi/world.db/south-america/countries.txt)...
+[info] parsing data (country) 'africa/countries_(terr)'=20
+(../openmundi/world.db/africa/countries_(terr).txt)...
+[info] parsing data (country) 'antartica/countries_(terr)'=20
+(../openmundi/world.db/antartica/countries_(terr).txt)...
+[info] parsing data (country) 'asia/countries_(terr)'=20
+(../openmundi/world.db/asia/countries_(terr).txt)...
+[info] parsing data (country) 'caribbean/countries_(terr)'=20
+(../openmundi/world.db/caribbean/countries_(terr).txt)...
+[info] parsing data (country) 'europe/countries_(terr)'=20
+(../openmundi/world.db/europe/countries_(terr).txt)...
+[info] parsing data (country) 'north-america/countries_(terr)'=20
+(../openmundi/world.db/north-america/countries_(terr).txt)...
+[info] parsing data (country) 'pacific/countries_(terr)'=20
+(../openmundi/world.db/pacific/countries_(terr).txt)...
+[info] parsing data (country) 'south-america/countries_(terr)'=20
+(../openmundi/world.db/south-america/countries_(terr).txt)...
+[info] parsing data (hash) 'africa/2-more/continents'=20
+(../openmundi/world.db/africa/2-more/continents.yml)...
+[info] parsing data (hash) 'antartica/2-more/continents'=20
+(../openmundi/world.db/antartica/2-more/continents.yml)...
+[info] parsing data (hash) 'asia/2-more/continents'=20
+(../openmundi/world.db/asia/2-more/continents.yml)...
+[info] parsing data (hash) 'caribbean/2-more/continents'=20
+(../openmundi/world.db/caribbean/2-more/continents.yml)...
+[info] parsing data (hash) 'central-america/2-more/continents'=20
+(../openmundi/world.db/central-america/2-more/continents.yml)...
+[info] parsing data (hash) 'europe/2-more/continents'=20
+(../openmundi/world.db/europe/2-more/continents.yml)...
+[info] parsing data (hash) 'middle-east/2-more/continents'=20
+(../openmundi/world.db/middle-east/2-more/continents.yml)...
+[info] parsing data (hash) 'north-america/2-more/continents'=20
+(../openmundi/world.db/north-america/2-more/continents.yml)...
+[info] parsing data (hash) 'pacific/2-more/continents'=20
+(../openmundi/world.db/pacific/2-more/continents.yml)...
+[info] parsing data (hash) 'south-america/2-more/continents'=20
+(../openmundi/world.db/south-america/2-more/continents.yml)...
+[info] parsing data (line) '1-codes/fifa'=20
+(../openmundi/world.db/1-codes/fifa.txt)...
+[info] parsing data (line) '1-codes/fips'=20
+(../openmundi/world.db/1-codes/fips.txt)...
+[info] parsing data (line) '1-codes/internet'=20
+(../openmundi/world.db/1-codes/internet.txt)...
+[info] parsing data (line) '1-codes/ioc'=20
+(../openmundi/world.db/1-codes/ioc.txt)...
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/ioc.txt<; converting to plain ascii=20
+hyphen_minus (-)
+[info] parsing data (line) '1-codes/iso'=20
+(../openmundi/world.db/1-codes/iso.txt)...
+[info] parsing data (line) '1-codes/motor'=20
+(../openmundi/world.db/1-codes/motor.txt)...
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/motor.txt<; converting to plain ascii=20
+hyphen_minus (-)
+*** warning: found ndash U+2013 (=E2=80=93) in file=20
+>../openmundi/world.db/1-codes/motor.txt<; converting to plain ascii=20
+hyphen_minus (-)
+  using LOGLEVEL >debug<
+[info] parsing data (setup) 'setups/all'=20
+(C:/Ruby193/lib/ruby/gems/1.9.1/gems/sportdb-models-1.11.0/data/setups/all.=
+txt)...
+[debug] skipping comment line
+[debug] skipping comment line
+[debug] skipping blank line
+[debug] skipping blank line
+[debug] fixture setup:
+[debug] ["seasons"]
+[debug] enter load( name=3D>>seasons<<)
+[info] parsing data (season) 'seasons'=20
+(C:/Ruby193/lib/ruby/gems/1.9.1/gems/sportdb-models-1.11.0/data/seasons.txt=
+)...
+[debug] skipping comment line
+[debug] skipping comment line
+[debug] skipping comment line
+[debug] skipping blank line
+[debug] skipping blank line
+[debug] skipping comment line
+[debug] skipping comment line
+[debug] skipping blank line
+[debug] >2020/21<
+[debug]   find season key: 2020/21
+[debug] create season:
+[debug] {"key":"2020/21","title":"2020/21"}
+[debug] >2019/20<
+[debug]   find season key: 2019/20
+[debug] create season:
+[debug] {"key":"2019/20","title":"2019/20"}
+[debug] >2018/19<
+[debug]   find season key: 2018/19
+[debug] create season:
+[debug] {"key":"2018/19","title":"2018/19"}
+[debug] >2017/18<
+[debug]   find season key: 2017/18
+[debug] create season:
+[debug] {"key":"2017/18","title":"2017/18"}
+[debug] >2016/17<
+[debug]   find season key: 2016/17
+[debug] create season:
+[debug] {"key":"2016/17","title":"2016/17"}
+[debug] >2015/16<
+[debug]   find season key: 2015/16
+[debug] create season:
+[debug] {"key":"2015/16","title":"2015/16"}
+[debug] >2014/15<
+[debug]   find season key: 2014/15
+[debug] create season:
+[debug] {"key":"2014/15","title":"2014/15"}
+[debug] >2013/14<
+[debug]   find season key: 2013/14
+[debug] create season:
+[debug] {"key":"2013/14","title":"2013/14"}
+[debug] >2012/13<
+[debug]   find season key: 2012/13
+[debug] create season:
+[debug] {"key":"2012/13","title":"2012/13"}
+[debug] >2011/12<
+[debug]   find season key: 2011/12
+[debug] create season:
+[debug] {"key":"2011/12","title":"2011/12"}
+[debug] >2010/11<
+[debug]   find season key: 2010/11
+[debug] create season:
+[debug] {"key":"2010/11","title":"2010/11"}
+[debug] >2009/10<
+[debug]   find season key: 2009/10
+[debug] create season:
+[debug] {"key":"2009/10","title":"2009/10"}
+[debug] >2008/09<
+[debug]   find season key: 2008/09
+[debug] create season:
+[debug] {"key":"2008/09","title":"2008/09"}
+[debug] >2007/08<
+[debug]   find season key: 2007/08
+[debug] create season:
+[debug] {"key":"2007/08","title":"2007/08"}
+[debug] >2006/07<
+[debug]   find season key: 2006/07
+[debug] create season:
+[debug] {"key":"2006/07","title":"2006/07"}
+[debug] >2005/06<
+[debug]   find season key: 2005/06
+[debug] create season:
+[debug] {"key":"2005/06","title":"2005/06"}
+[debug] >2004/05<
+[debug]   find season key: 2004/05
+[debug] create season:
+[debug] {"key":"2004/05","title":"2004/05"}
+[debug] >2003/04<
+[debug]   find season key: 2003/04
+[debug] create season:
+[debug] {"key":"2003/04","title":"2003/04"}
+[debug] >2002/03<
+[debug]   find season key: 2002/03
+[debug] create season:
+[debug] {"key":"2002/03","title":"2002/03"}
+[debug] >2001/02<
+[debug]   find season key: 2001/02
+[debug] create season:
+[debug] {"key":"2001/02","title":"2001/02"}
+[debug] >2000/01<
+[debug]   find season key: 2000/01
+[debug] create season:
+[debug] {"key":"2000/01","title":"2000/01"}
+[debug] skipping blank line
+[debug] skipping comment line
+[debug] skipping blank line
+[debug] >2022<
+[debug]   find season key: 2022
+[debug] create season:
+[debug] {"key":"2022","title":"2022"}
+[debug] >2021<
+[debug]   find season key: 2021
+[debug] create season:
+[debug] {"key":"2021","title":"2021"}
+[debug] >2020<
+[debug]   find season key: 2020
+[debug] create season:
+[debug] {"key":"2020","title":"2020"}
+[debug] >2019<
+[debug]   find season key: 2019
+[debug] create season:
+[debug] {"key":"2019","title":"2019"}
+[debug] >2018<
+[debug]   find season key: 2018
+[debug] create season:
+[debug] {"key":"2018","title":"2018"}
+[debug] >2017<
+[debug]   find season key: 2017
+[debug] create season:
+[debug] {"key":"2017","title":"2017"}
+[debug] >2016<
+[debug]   find season key: 2016
+[debug] create season:
+[debug] {"key":"2016","title":"2016"}
+[debug] >2015<
+[debug]   find season key: 2015
+[debug] create season:
+[debug] {"key":"2015","title":"2015"}
+[debug] >2014<
+[debug]   find season key: 2014
+[debug] create season:
+[debug] {"key":"2014","title":"2014"}
+[debug] >2013<
+[debug]   find season key: 2013
+[debug] create season:
+[debug] {"key":"2013","title":"2013"}
+[debug] >2012<
+[debug]   find season key: 2012
+[debug] create season:
+[debug] {"key":"2012","title":"2012"}
+[debug] >2011<
+[debug]   find season key: 2011
+[debug] create season:
+[debug] {"key":"2011","title":"2011"}
+[debug] >2010<
+[debug]   find season key: 2010
+[debug] create season:
+[debug] {"key":"2010","title":"2010"}
+[debug] >2009<
+[debug]   find season key: 2009
+[debug] create season:
+[debug] {"key":"2009","title":"2009"}
+[debug] >2008<
+[debug]   find season key: 2008
+[debug] create season:
+[debug] {"key":"2008","title":"2008"}
+[debug] >2007<
+[debug]   find season key: 2007
+[debug] create season:
+[debug] {"key":"2007","title":"2007"}
+[debug] >2006<
+[debug]   find season key: 2006
+[debug] create season:
+[debug] {"key":"2006","title":"2006"}
+[debug] >2005<
+[debug]   find season key: 2005
+[debug] create season:
+[debug] {"key":"2005","title":"2005"}
+[debug] >2004<
+[debug]   find season key: 2004
+[debug] create season:
+[debug] {"key":"2004","title":"2004"}
+[debug] >2003<
+[debug]   find season key: 2003
+[debug] create season:
+[debug] {"key":"2003","title":"2003"}
+[debug] >2002<
+[debug]   find season key: 2002
+[debug] create season:
+[debug] {"key":"2002","title":"2002"}
+[debug] >2001<
+[debug]   find season key: 2001
+[debug] create season:
+[debug] {"key":"2001","title":"2001"}
+[debug] >2000<
+[debug]   find season key: 2000
+[debug] create season:
+[debug] {"key":"2000","title":"2000"}
+[debug] skipping blank line
+[debug] skipping blank line
+[debug] skipping comment line
+[debug] skipping comment line
+[debug] skipping blank line
+[debug] >2015.1<
+[debug]   find season key: 2015.1
+[debug] create season:
+[debug] {"key":"2015.1","title":"2015.1"}
+[debug] >2015.2<
+[debug]   find season key: 2015.2
+[debug] create season:
+[debug] {"key":"2015.2","title":"2015.2"}
+[debug] >2014.1<
+[debug]   find season key: 2014.1
+[debug] create season:
+[debug] {"key":"2014.1","title":"2014.1"}
+[debug] >2014.2<
+[debug]   find season key: 2014.2
+[debug] create season:
+[debug] {"key":"2014.2","title":"2014.2"}
+[debug] >2013.1<
+[debug]   find season key: 2013.1
+[debug] create season:
+[debug] {"key":"2013.1","title":"2013.1"}
+[debug] >2013.2<
+[debug]   find season key: 2013.2
+[debug] create season:
+[debug] {"key":"2013.2","title":"2013.2"}
+[debug] >2012.1<
+[debug]   find season key: 2012.1
+[debug] create season:
+[debug] {"key":"2012.1","title":"2012.1"}
+[debug] >2012.2<
+[debug]   find season key: 2012.2
+[debug] create season:
+[debug] {"key":"2012.2","title":"2012.2"}
+[debug] >2011.1<
+[debug]   find season key: 2011.1
+[debug] create season:
+[debug] {"key":"2011.1","title":"2011.1"}
+[debug] >2011.2<
+[debug]   find season key: 2011.2
+[debug] create season:
+[debug] {"key":"2011.2","title":"2011.2"}
+[debug] >2010.1<
+[debug]   find season key: 2010.1
+[debug] create season:
+[debug] {"key":"2010.1","title":"2010.1"}
+[debug] >2010.2<
+[debug]   find season key: 2010.2
+[debug] create season:
+[debug] {"key":"2010.2","title":"2010.2"}
+[debug] skipping blank line
+[debug] skipping blank line
+[info] parsing data (setup) 'setups/all' (../en-england/setups/all.txt)...
+[debug] skipping comment line
+[debug] skipping comment line
+[debug] skipping blank line
+[debug] skipping comment line
+[debug] skipping blank line
+[debug] skipping comment line
+[debug] skipping blank line
+[debug] skipping blank line
+[debug] skipping comment line
+[debug] fixture setup:
+[debug]=20
+["en-england!/leagues","en-england!/clubs","en-england!/clubs_2","en-englan=
+d!/clubs_wal","en-england!/2012-13/1-premierleague","en-england!/2013-14/1-=
+premierleague","en-england!/2014-15/1-premierleague"]
+[debug] enter load( name=3D>>en-england!/leagues<<)
+
+
+I am getting stuck at a different place with ASCII encoding errors when=20
+trying with the MySql adapter. That is on a different system. I will post=
+=20
+the details for that one later.
+
+Regards,
+
+- Maizar
+
+------=_Part_4455_686785665.1423045717031
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald,<div><br></div><div>I have been able to build th=
+e entire SQLite db successfully using the alternative method. I have tried =
+for several days to build the en-england database, but it does not seem to =
+work. I get the same error when trying both the rake script and sportdb com=
+mand. I am a newbie to Ruby, but I am learning the language to understand t=
+he code.&nbsp;</div><div><br></div><div>The trace is listed below:</div><di=
+v><br></div><div>* When using Sportdb command: sportdb --dbname football.db=
+ update --include en-england</div><div><br></div><div><div>activerecord-uti=
+ls/0.3.0 (activerecord/4.2.0) on Ruby 1.9.3 (2014-11-13) [i386-mingw32]</di=
+v><div>&nbsp; [TagDb.has_many_tags] adding taggings n tags has_many assocs =
+to model &gt;WorldDb::Model::Country&lt;</div><div>&nbsp; [TagDb.has_many_t=
+ags] adding taggings n tags has_many assocs to model &gt;WorldDb::Model::Re=
+gion&lt;</div><div>&nbsp; [TagDb.has_many_tags] adding taggings n tags has_=
+many assocs to model &gt;WorldDb::Model::City&lt;</div><div>fetcher/0.4.4 o=
+n Ruby 1.9.3 (2014-11-13) [i386-mingw32]</div><div>datafile/0.1.1 on Ruby 1=
+.9.3 (2014-11-13) [i386-mingw32]</div><div>sportdb-update/0.1.1 on Ruby 1.9=
+.3 (2014-11-13) [i386-mingw32]</div><div>sportdb-service/0.4.0 on Ruby 1.9.=
+3 (2014-11-13) [i386-mingw32]</div><div>sportdb/1.11.0 on Ruby 1.9.3 (2014-=
+11-13) [i386-mingw32]</div><div>sportdb/1.11.0 on Ruby 1.9.3 (2014-11-13) [=
+i386-mingw32]</div><div>working directory: D:/Insights/openfootball</div><d=
+iv>Connecting to db using settings:&nbsp;</div><div>{:adapter=3D&gt;"sqlite=
+3", :database=3D&gt;"./football.db"}</div><div>[info] parsing data (setup) =
+'setups/all' (en-england/setups/all.txt)...</div><div><br></div><div>*** er=
+ror: Couldn't find WorldDb::Model::Country</div></div><div><br></div><div>*=
+ When using the rake build command: rake build DATA=3Den --trace</div><div>=
+<br></div><div><div>before require 'active_record'</div><div>after require =
+'active_record'</div><div>before require 'active_support/all'</div><div>aft=
+er require 'active_support/all'</div><div>before require 'worlddb'</div><di=
+v>activerecord-utils/0.3.0 (activerecord/4.2.0) on Ruby 1.9.3 (2014-11-13) =
+[i386-mingw32]</div><div>&nbsp; [TagDb.has_many_tags] adding taggings n tag=
+s has_many assocs to model &gt;WorldDb::Model::Country&lt;</div><div>&nbsp;=
+ [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &gt;=
+WorldDb::Model::Region&lt;</div><div>&nbsp; [TagDb.has_many_tags] adding ta=
+ggings n tags has_many assocs to model &gt;WorldDb::Model::City&lt;</div><d=
+iv>after require 'worlddb'</div><div>before require 'sportdb'</div><div>fet=
+cher/0.4.4 on Ruby 1.9.3 (2014-11-13) [i386-mingw32]</div><div>datafile/0.1=
+.1 on Ruby 1.9.3 (2014-11-13) [i386-mingw32]</div><div>sportdb-update/0.1.1=
+ on Ruby 1.9.3 (2014-11-13) [i386-mingw32]</div><div>sportdb-service/0.4.0 =
+on Ruby 1.9.3 (2014-11-13) [i386-mingw32]</div><div>after require 'sportdb'=
+</div><div>&nbsp; importing task &gt;./tasks/about.rake&lt;...</div><div>&n=
+bsp; importing task &gt;./tasks/basics/assocs.rake&lt;...</div><div>&nbsp; =
+importing task &gt;./tasks/basics/grounds.rake&lt;...</div><div>&nbsp; impo=
+rting task &gt;./tasks/basics/players.rake&lt;...</div><div>&nbsp; importin=
+g task &gt;./tasks/book.rake&lt;...</div><div>&nbsp; importing task &gt;./t=
+asks/check.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/dump.rak=
+e&lt;...</div><div>&nbsp; importing task &gt;./tasks/logs.rake&lt;...</div>=
+<div>&nbsp; importing task &gt;./tasks/setups/admin.rake&lt;...</div><div>&=
+nbsp; importing task &gt;./tasks/setups/all.rake&lt;...</div><div>&nbsp; im=
+porting task &gt;./tasks/setups/at.rake&lt;...</div><div>&nbsp; importing t=
+ask &gt;./tasks/setups/cl.rake&lt;...</div><div>&nbsp; importing task &gt;.=
+/tasks/setups/copaamerica.rake&lt;...</div><div>&nbsp; importing task &gt;.=
+/tasks/setups/copalibertadores.rake&lt;...</div><div>&nbsp; importing task =
+&gt;./tasks/setups/copasudamericana.rake&lt;...</div><div>&nbsp; importing =
+task &gt;./tasks/setups/de.rake&lt;...</div><div>&nbsp; importing task &gt;=
+./tasks/setups/en.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/s=
+etups/es.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/setups/eur=
+ocup.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/setups/fr.rake=
+&lt;...</div><div>&nbsp; importing task &gt;./tasks/setups/goldcup.rake&lt;=
+...</div><div>&nbsp; importing task &gt;./tasks/setups/history.rake&lt;...<=
+/div><div>&nbsp; importing task &gt;./tasks/setups/it.rake&lt;...</div><div=
+>&nbsp; importing task &gt;./tasks/setups/mls.rake&lt;...</div><div>&nbsp; =
+importing task &gt;./tasks/setups/northamericachampionsleague.rake&lt;...</=
+div><div>&nbsp; importing task &gt;./tasks/setups/worldcup.rake&lt;...</div=
+><div>&nbsp; importing task &gt;./tasks/stats/alltime.rake&lt;...</div><div=
+>&nbsp; importing task &gt;./tasks/stats/matches.rake&lt;...</div><div>&nbs=
+p; importing task &gt;./tasks/stats/standings.rake&lt;...</div><div>&nbsp; =
+importing task &gt;./tasks/stats/stats.rake&lt;...</div><div>&nbsp; using D=
+ATA_KEY &gt;en&lt;</div><div>{"adapter"=3D&gt;"sqlite3", "database"=3D&gt;"=
+./build/football.db"}</div><div>-- create_table(:logs)</div><div>&nbsp; &nb=
+sp;-&gt; 2.0410s</div><div>-- create_table(:props)</div><div>&nbsp; &nbsp;-=
+&gt; 0.0625s</div><div>-- create_table(:tags)</div><div>&nbsp; &nbsp;-&gt; =
+0.0675s</div><div>-- add_index(:tags, :key, {:unique=3D&gt;true})</div><div=
+>&nbsp; &nbsp;-&gt; 0.0650s</div><div>-- create_table(:taggings)</div><div>=
+&nbsp; &nbsp;-&gt; 0.0650s</div><div>-- add_index(:taggings, :tag_id)</div>=
+<div>&nbsp; &nbsp;-&gt; 0.0575s</div><div>-- add_index(:taggings, [:taggabl=
+e_id, :taggable_type])</div><div>&nbsp; &nbsp;-&gt; 0.0575s</div><div>-- ad=
+d_index(:taggings, [:taggable_id, :taggable_type, :tag_id], {:unique=3D&gt;=
+true})</div><div>&nbsp; &nbsp;-&gt; 0.0650s</div><div>-- create_table(:plac=
+es)</div><div>&nbsp; &nbsp;-&gt; 0.0650s</div><div>-- create_table(:names)<=
+/div><div>&nbsp; &nbsp;-&gt; 0.2700s</div><div>-- create_table(:continents)=
+</div><div>&nbsp; &nbsp;-&gt; 0.0625s</div><div>-- add_index(:continents, :=
+key, {:unique=3D&gt;true})</div><div>&nbsp; &nbsp;-&gt; 0.0625s</div><div>-=
+- create_table(:country_codes)</div><div>&nbsp; &nbsp;-&gt; 0.2850s</div><d=
+iv>-- add_index(:country_codes, [:name, :kind], {:unique=3D&gt;true})</div>=
+<div>&nbsp; &nbsp;-&gt; 0.0600s</div><div>-- create_table(:countries)</div>=
+<div>&nbsp; &nbsp;-&gt; 0.0825s</div><div>-- add_index(:countries, :key, {:=
+unique=3D&gt;true})</div><div>&nbsp; &nbsp;-&gt; 0.0625s</div><div>-- add_i=
+ndex(:countries, :code, {:unique=3D&gt;true})</div><div>&nbsp; &nbsp;-&gt; =
+0.0625s</div><div>-- create_table(:regions)</div><div>&nbsp; &nbsp;-&gt; 0.=
+0800s</div><div>-- add_index(:regions, [:key, :country_id], {:unique=3D&gt;=
+true})</div><div>&nbsp; &nbsp;-&gt; 0.2550s</div><div>-- create_table(:citi=
+es)</div><div>&nbsp; &nbsp;-&gt; 0.0775s</div><div>-- create_table(:langs)<=
+/div><div>&nbsp; &nbsp;-&gt; 0.0825s</div><div>-- create_table(:usages)</di=
+v><div>&nbsp; &nbsp;-&gt; 0.0625s</div><div>-- create_table(:persons)</div>=
+<div>&nbsp; &nbsp;-&gt; 0.2775s</div><div>-- create_table(:teams)</div><div=
+>&nbsp; &nbsp;-&gt; 0.0825s</div><div>-- add_index(:teams, :key, {:unique=
+=3D&gt;true})</div><div>&nbsp; &nbsp;-&gt; 0.0650s</div><div>-- create_tabl=
+e(:grounds)</div><div>&nbsp; &nbsp;-&gt; 0.0600s</div><div>-- add_index(:gr=
+ounds, :key, {:unique=3D&gt;true})</div><div>&nbsp; &nbsp;-&gt; 0.0625s</di=
+v><div>-- create_table(:goals)</div><div>&nbsp; &nbsp;-&gt; 0.2850s</div><d=
+iv>-- create_table(:rosters)</div><div>&nbsp; &nbsp;-&gt; 0.0625s</div><div=
+>-- create_table(:events)</div><div>&nbsp; &nbsp;-&gt; 0.0800s</div><div>--=
+ add_index(:events, :key, {:unique=3D&gt;true})</div><div>&nbsp; &nbsp;-&gt=
+; 0.0825s</div><div>-- create_table(:rounds)</div><div>&nbsp; &nbsp;-&gt; 0=
+.0625s</div><div>-- add_index(:rounds, :event_id)</div><div>&nbsp; &nbsp;-&=
+gt; 0.0575s</div><div>-- create_table(:groups)</div><div>&nbsp; &nbsp;-&gt;=
+ 0.0800s</div><div>-- add_index(:groups, :event_id)</div><div>&nbsp; &nbsp;=
+-&gt; 0.0675s</div><div>-- create_table(:games)</div><div>&nbsp; &nbsp;-&gt=
+; 0.2900s</div><div>-- add_index(:games, :key, {:unique=3D&gt;true})</div><=
+div>&nbsp; &nbsp;-&gt; 0.0650s</div><div>-- add_index(:games, :round_id)</d=
+iv><div>&nbsp; &nbsp;-&gt; 0.2450s</div><div>-- add_index(:games, :group_id=
+)</div><div>&nbsp; &nbsp;-&gt; 0.0800s</div><div>-- add_index(:games, :next=
+_game_id)</div><div>&nbsp; &nbsp;-&gt; 0.0625s</div><div>-- add_index(:game=
+s, :prev_game_id)</div><div>&nbsp; &nbsp;-&gt; 0.0675s</div><div>-- add_ind=
+ex(:games, :team1_id)</div><div>&nbsp; &nbsp;-&gt; 0.0625s</div><div>-- add=
+_index(:games, :team2_id)</div><div>&nbsp; &nbsp;-&gt; 0.0700s</div><div>--=
+ create_table(:events_teams)</div><div>&nbsp; &nbsp;-&gt; 0.0625s</div><div=
+>-- add_index(:events_teams, [:event_id, :team_id], {:unique=3D&gt;true})</=
+div><div>&nbsp; &nbsp;-&gt; 0.0775s</div><div>-- add_index(:events_teams, :=
+event_id)</div><div>&nbsp; &nbsp;-&gt; 0.0900s</div><div>-- create_table(:e=
+vents_grounds)</div><div>&nbsp; &nbsp;-&gt; 0.0625s</div><div>-- add_index(=
+:events_grounds, [:event_id, :ground_id], {:unique=3D&gt;true})</div><div>&=
+nbsp; &nbsp;-&gt; 0.0600s</div><div>-- add_index(:events_grounds, :event_id=
+)</div><div>&nbsp; &nbsp;-&gt; 0.0825s</div><div>-- create_table(:groups_te=
+ams)</div><div>&nbsp; &nbsp;-&gt; 0.0625s</div><div>-- add_index(:groups_te=
+ams, [:group_id, :team_id], {:unique=3D&gt;true})</div><div>&nbsp; &nbsp;-&=
+gt; 0.2850s</div><div>-- add_index(:groups_teams, :group_id)</div><div>&nbs=
+p; &nbsp;-&gt; 0.0675s</div><div>-- create_table(:seasons)</div><div>&nbsp;=
+ &nbsp;-&gt; 0.2700s</div><div>-- create_table(:leagues)</div><div>&nbsp; &=
+nbsp;-&gt; 0.2800s</div><div>-- create_table(:badges)</div><div>&nbsp; &nbs=
+p;-&gt; 0.0800s</div><div>-- create_table(:assocs)</div><div>&nbsp; &nbsp;-=
+&gt; 0.0625s</div><div>-- add_index(:assocs, :key, {:unique=3D&gt;true})</d=
+iv><div>&nbsp; &nbsp;-&gt; 0.0575s</div><div>-- create_table(:assocs_assocs=
+)</div><div>&nbsp; &nbsp;-&gt; 0.0900s</div><div>-- add_index(:assocs_assoc=
+s, [:assoc1_id, :assoc2_id], {:unique=3D&gt;true})</div><div>&nbsp; &nbsp;-=
+&gt; 0.0800s</div><div>-- add_index(:assocs_assocs, :assoc1_id)</div><div>&=
+nbsp; &nbsp;-&gt; 0.0625s</div><div>-- add_index(:assocs_assocs, :assoc2_id=
+)</div><div>&nbsp; &nbsp;-&gt; 0.0675s</div><div>-- create_table(:group_sta=
+ndings)</div><div>&nbsp; &nbsp;-&gt; 0.0600s</div><div>-- create_table(:gro=
+up_standing_entries)</div><div>&nbsp; &nbsp;-&gt; 0.0825s</div><div>-- crea=
+te_table(:event_standings)</div><div>&nbsp; &nbsp;-&gt; 0.0600s</div><div>-=
+- create_table(:event_standing_entries)</div><div>&nbsp; &nbsp;-&gt; 0.2925=
+s</div><div>-- create_table(:alltime_standings)</div><div>&nbsp; &nbsp;-&gt=
+; 0.0700s</div><div>-- create_table(:alltime_standing_entries)</div><div>&n=
+bsp; &nbsp;-&gt; 0.0850s</div><div>[info] parsing data (setup) 'setups/coun=
+tries' (../openmundi/world.db/setups/countries.txt)...</div><div>[info] par=
+sing data (values) 'continents' (../openmundi/world.db/continents.txt)...</=
+div><div>[info] parsing data (country) 'africa/countries' (../openmundi/wor=
+ld.db/africa/countries.txt)...</div><div>[info] parsing data (country) 'ant=
+artica/countries' (../openmundi/world.db/antartica/countries.txt)...</div><=
+div>[info] parsing data (country) 'asia/countries' (../openmundi/world.db/a=
+sia/countries.txt)...</div><div>[info] parsing data (country) 'caribbean/co=
+untries' (../openmundi/world.db/caribbean/countries.txt)...</div><div>[info=
+] parsing data (country) 'central-america/countries' (../openmundi/world.db=
+/central-america/countries.txt)...</div><div>[info] parsing data (country) =
+'europe/countries' (../openmundi/world.db/europe/countries.txt)...</div><di=
+v>[info] parsing data (country) 'middle-east/countries' (../openmundi/world=
+.db/middle-east/countries.txt)...</div><div>[info] parsing data (country) '=
+north-america/countries' (../openmundi/world.db/north-america/countries.txt=
+)...</div><div>[info] parsing data (country) 'pacific/countries' (../openmu=
+ndi/world.db/pacific/countries.txt)...</div><div>[info] parsing data (count=
+ry) 'south-america/countries' (../openmundi/world.db/south-america/countrie=
+s.txt)...</div><div>[info] parsing data (country) 'africa/countries_(terr)'=
+ (../openmundi/world.db/africa/countries_(terr).txt)...</div><div>[info] pa=
+rsing data (country) 'antartica/countries_(terr)' (../openmundi/world.db/an=
+tartica/countries_(terr).txt)...</div><div>[info] parsing data (country) 'a=
+sia/countries_(terr)' (../openmundi/world.db/asia/countries_(terr).txt)...<=
+/div><div>[info] parsing data (country) 'caribbean/countries_(terr)' (../op=
+enmundi/world.db/caribbean/countries_(terr).txt)...</div><div>[info] parsin=
+g data (country) 'europe/countries_(terr)' (../openmundi/world.db/europe/co=
+untries_(terr).txt)...</div><div>[info] parsing data (country) 'north-ameri=
+ca/countries_(terr)' (../openmundi/world.db/north-america/countries_(terr).=
+txt)...</div><div>[info] parsing data (country) 'pacific/countries_(terr)' =
+(../openmundi/world.db/pacific/countries_(terr).txt)...</div><div>[info] pa=
+rsing data (country) 'south-america/countries_(terr)' (../openmundi/world.d=
+b/south-america/countries_(terr).txt)...</div><div>[info] parsing data (has=
+h) 'africa/2-more/continents' (../openmundi/world.db/africa/2-more/continen=
+ts.yml)...</div><div>[info] parsing data (hash) 'antartica/2-more/continent=
+s' (../openmundi/world.db/antartica/2-more/continents.yml)...</div><div>[in=
+fo] parsing data (hash) 'asia/2-more/continents' (../openmundi/world.db/asi=
+a/2-more/continents.yml)...</div><div>[info] parsing data (hash) 'caribbean=
+/2-more/continents' (../openmundi/world.db/caribbean/2-more/continents.yml)=
+...</div><div>[info] parsing data (hash) 'central-america/2-more/continents=
+' (../openmundi/world.db/central-america/2-more/continents.yml)...</div><di=
+v>[info] parsing data (hash) 'europe/2-more/continents' (../openmundi/world=
+.db/europe/2-more/continents.yml)...</div><div>[info] parsing data (hash) '=
+middle-east/2-more/continents' (../openmundi/world.db/middle-east/2-more/co=
+ntinents.yml)...</div><div>[info] parsing data (hash) 'north-america/2-more=
+/continents' (../openmundi/world.db/north-america/2-more/continents.yml)...=
+</div><div>[info] parsing data (hash) 'pacific/2-more/continents' (../openm=
+undi/world.db/pacific/2-more/continents.yml)...</div><div>[info] parsing da=
+ta (hash) 'south-america/2-more/continents' (../openmundi/world.db/south-am=
+erica/2-more/continents.yml)...</div><div>[info] parsing data (line) '1-cod=
+es/fifa' (../openmundi/world.db/1-codes/fifa.txt)...</div><div>[info] parsi=
+ng data (line) '1-codes/fips' (../openmundi/world.db/1-codes/fips.txt)...</=
+div><div>[info] parsing data (line) '1-codes/internet' (../openmundi/world.=
+db/1-codes/internet.txt)...</div><div>[info] parsing data (line) '1-codes/i=
+oc' (../openmundi/world.db/1-codes/ioc.txt)...</div><div>*** warning: found=
+ ndash U+2013 (=E2=80=93) in file &gt;../openmundi/world.db/1-codes/ioc.txt=
+&lt;; converting to plain ascii hyphen_minus (-)</div><div>*** warning: fou=
+nd ndash U+2013 (=E2=80=93) in file &gt;../openmundi/world.db/1-codes/ioc.t=
+xt&lt;; converting to plain ascii hyphen_minus (-)</div><div>*** warning: f=
+ound ndash U+2013 (=E2=80=93) in file &gt;../openmundi/world.db/1-codes/ioc=
+.txt&lt;; converting to plain ascii hyphen_minus (-)</div><div>*** warning:=
+ found ndash U+2013 (=E2=80=93) in file &gt;../openmundi/world.db/1-codes/i=
+oc.txt&lt;; converting to plain ascii hyphen_minus (-)</div><div>*** warnin=
+g: found ndash U+2013 (=E2=80=93) in file &gt;../openmundi/world.db/1-codes=
+/ioc.txt&lt;; converting to plain ascii hyphen_minus (-)</div><div>*** warn=
+ing: found ndash U+2013 (=E2=80=93) in file &gt;../openmundi/world.db/1-cod=
+es/ioc.txt&lt;; converting to plain ascii hyphen_minus (-)</div><div>*** wa=
+rning: found ndash U+2013 (=E2=80=93) in file &gt;../openmundi/world.db/1-c=
+odes/ioc.txt&lt;; converting to plain ascii hyphen_minus (-)</div><div>*** =
+warning: found ndash U+2013 (=E2=80=93) in file &gt;../openmundi/world.db/1=
+-codes/ioc.txt&lt;; converting to plain ascii hyphen_minus (-)</div><div>**=
+* warning: found ndash U+2013 (=E2=80=93) in file &gt;../openmundi/world.db=
+/1-codes/ioc.txt&lt;; converting to plain ascii hyphen_minus (-)</div><div>=
+*** warning: found ndash U+2013 (=E2=80=93) in file &gt;../openmundi/world.=
+db/1-codes/ioc.txt&lt;; converting to plain ascii hyphen_minus (-)</div><di=
+v>*** warning: found ndash U+2013 (=E2=80=93) in file &gt;../openmundi/worl=
+d.db/1-codes/ioc.txt&lt;; converting to plain ascii hyphen_minus (-)</div><=
+div>*** warning: found ndash U+2013 (=E2=80=93) in file &gt;../openmundi/wo=
+rld.db/1-codes/ioc.txt&lt;; converting to plain ascii hyphen_minus (-)</div=
+><div>*** warning: found ndash U+2013 (=E2=80=93) in file &gt;../openmundi/=
+world.db/1-codes/ioc.txt&lt;; converting to plain ascii hyphen_minus (-)</d=
+iv><div>*** warning: found ndash U+2013 (=E2=80=93) in file &gt;../openmund=
+i/world.db/1-codes/ioc.txt&lt;; converting to plain ascii hyphen_minus (-)<=
+/div><div>*** warning: found ndash U+2013 (=E2=80=93) in file &gt;../openmu=
+ndi/world.db/1-codes/ioc.txt&lt;; converting to plain ascii hyphen_minus (-=
+)</div><div>*** warning: found ndash U+2013 (=E2=80=93) in file &gt;../open=
+mundi/world.db/1-codes/ioc.txt&lt;; converting to plain ascii hyphen_minus =
+(-)</div><div>*** warning: found ndash U+2013 (=E2=80=93) in file &gt;../op=
+enmundi/world.db/1-codes/ioc.txt&lt;; converting to plain ascii hyphen_minu=
+s (-)</div><div>*** warning: found ndash U+2013 (=E2=80=93) in file &gt;../=
+openmundi/world.db/1-codes/ioc.txt&lt;; converting to plain ascii hyphen_mi=
+nus (-)</div><div>*** warning: found ndash U+2013 (=E2=80=93) in file &gt;.=
+./openmundi/world.db/1-codes/ioc.txt&lt;; converting to plain ascii hyphen_=
+minus (-)</div><div>*** warning: found ndash U+2013 (=E2=80=93) in file &gt=
+;../openmundi/world.db/1-codes/ioc.txt&lt;; converting to plain ascii hyphe=
+n_minus (-)</div><div>*** warning: found ndash U+2013 (=E2=80=93) in file &=
+gt;../openmundi/world.db/1-codes/ioc.txt&lt;; converting to plain ascii hyp=
+hen_minus (-)</div><div>*** warning: found ndash U+2013 (=E2=80=93) in file=
+ &gt;../openmundi/world.db/1-codes/ioc.txt&lt;; converting to plain ascii h=
+yphen_minus (-)</div><div>*** warning: found ndash U+2013 (=E2=80=93) in fi=
+le &gt;../openmundi/world.db/1-codes/ioc.txt&lt;; converting to plain ascii=
+ hyphen_minus (-)</div><div>*** warning: found ndash U+2013 (=E2=80=93) in =
+file &gt;../openmundi/world.db/1-codes/ioc.txt&lt;; converting to plain asc=
+ii hyphen_minus (-)</div><div>*** warning: found ndash U+2013 (=E2=80=93) i=
+n file &gt;../openmundi/world.db/1-codes/ioc.txt&lt;; converting to plain a=
+scii hyphen_minus (-)</div><div>*** warning: found ndash U+2013 (=E2=80=93)=
+ in file &gt;../openmundi/world.db/1-codes/ioc.txt&lt;; converting to plain=
+ ascii hyphen_minus (-)</div><div>*** warning: found ndash U+2013 (=E2=80=
+=93) in file &gt;../openmundi/world.db/1-codes/ioc.txt&lt;; converting to p=
+lain ascii hyphen_minus (-)</div><div>*** warning: found ndash U+2013 (=E2=
+=80=93) in file &gt;../openmundi/world.db/1-codes/ioc.txt&lt;; converting t=
+o plain ascii hyphen_minus (-)</div><div>[info] parsing data (line) '1-code=
+s/iso' (../openmundi/world.db/1-codes/iso.txt)...</div><div>[info] parsing =
+data (line) '1-codes/motor' (../openmundi/world.db/1-codes/motor.txt)...</d=
+iv><div>*** warning: found ndash U+2013 (=E2=80=93) in file &gt;../openmund=
+i/world.db/1-codes/motor.txt&lt;; converting to plain ascii hyphen_minus (-=
+)</div><div>*** warning: found ndash U+2013 (=E2=80=93) in file &gt;../open=
+mundi/world.db/1-codes/motor.txt&lt;; converting to plain ascii hyphen_minu=
+s (-)</div><div>&nbsp; using LOGLEVEL &gt;debug&lt;</div><div>[info] parsin=
+g data (setup) 'setups/all' (C:/Ruby193/lib/ruby/gems/1.9.1/gems/sportdb-mo=
+dels-1.11.0/data/setups/all.txt)...</div><div>[debug] skipping comment line=
+</div><div>[debug] skipping comment line</div><div>[debug] skipping blank l=
+ine</div><div>[debug] skipping blank line</div><div>[debug] fixture setup:<=
+/div><div>[debug] ["seasons"]</div><div>[debug] enter load( name=3D&gt;&gt;=
+seasons&lt;&lt;)</div><div>[info] parsing data (season) 'seasons' (C:/Ruby1=
+93/lib/ruby/gems/1.9.1/gems/sportdb-models-1.11.0/data/seasons.txt)...</div=
+><div>[debug] skipping comment line</div><div>[debug] skipping comment line=
+</div><div>[debug] skipping comment line</div><div>[debug] skipping blank l=
+ine</div><div>[debug] skipping blank line</div><div>[debug] skipping commen=
+t line</div><div>[debug] skipping comment line</div><div>[debug] skipping b=
+lank line</div><div>[debug] &gt;2020/21&lt;</div><div>[debug] &nbsp; find s=
+eason key: 2020/21</div><div>[debug] create season:</div><div>[debug] {"key=
+":"2020/21","title":"2020/21"}</div><div>[debug] &gt;2019/20&lt;</div><div>=
+[debug] &nbsp; find season key: 2019/20</div><div>[debug] create season:</d=
+iv><div>[debug] {"key":"2019/20","title":"2019/20"}</div><div>[debug] &gt;2=
+018/19&lt;</div><div>[debug] &nbsp; find season key: 2018/19</div><div>[deb=
+ug] create season:</div><div>[debug] {"key":"2018/19","title":"2018/19"}</d=
+iv><div>[debug] &gt;2017/18&lt;</div><div>[debug] &nbsp; find season key: 2=
+017/18</div><div>[debug] create season:</div><div>[debug] {"key":"2017/18",=
+"title":"2017/18"}</div><div>[debug] &gt;2016/17&lt;</div><div>[debug] &nbs=
+p; find season key: 2016/17</div><div>[debug] create season:</div><div>[deb=
+ug] {"key":"2016/17","title":"2016/17"}</div><div>[debug] &gt;2015/16&lt;</=
+div><div>[debug] &nbsp; find season key: 2015/16</div><div>[debug] create s=
+eason:</div><div>[debug] {"key":"2015/16","title":"2015/16"}</div><div>[deb=
+ug] &gt;2014/15&lt;</div><div>[debug] &nbsp; find season key: 2014/15</div>=
+<div>[debug] create season:</div><div>[debug] {"key":"2014/15","title":"201=
+4/15"}</div><div>[debug] &gt;2013/14&lt;</div><div>[debug] &nbsp; find seas=
+on key: 2013/14</div><div>[debug] create season:</div><div>[debug] {"key":"=
+2013/14","title":"2013/14"}</div><div>[debug] &gt;2012/13&lt;</div><div>[de=
+bug] &nbsp; find season key: 2012/13</div><div>[debug] create season:</div>=
+<div>[debug] {"key":"2012/13","title":"2012/13"}</div><div>[debug] &gt;2011=
+/12&lt;</div><div>[debug] &nbsp; find season key: 2011/12</div><div>[debug]=
+ create season:</div><div>[debug] {"key":"2011/12","title":"2011/12"}</div>=
+<div>[debug] &gt;2010/11&lt;</div><div>[debug] &nbsp; find season key: 2010=
+/11</div><div>[debug] create season:</div><div>[debug] {"key":"2010/11","ti=
+tle":"2010/11"}</div><div>[debug] &gt;2009/10&lt;</div><div>[debug] &nbsp; =
+find season key: 2009/10</div><div>[debug] create season:</div><div>[debug]=
+ {"key":"2009/10","title":"2009/10"}</div><div>[debug] &gt;2008/09&lt;</div=
+><div>[debug] &nbsp; find season key: 2008/09</div><div>[debug] create seas=
+on:</div><div>[debug] {"key":"2008/09","title":"2008/09"}</div><div>[debug]=
+ &gt;2007/08&lt;</div><div>[debug] &nbsp; find season key: 2007/08</div><di=
+v>[debug] create season:</div><div>[debug] {"key":"2007/08","title":"2007/0=
+8"}</div><div>[debug] &gt;2006/07&lt;</div><div>[debug] &nbsp; find season =
+key: 2006/07</div><div>[debug] create season:</div><div>[debug] {"key":"200=
+6/07","title":"2006/07"}</div><div>[debug] &gt;2005/06&lt;</div><div>[debug=
+] &nbsp; find season key: 2005/06</div><div>[debug] create season:</div><di=
+v>[debug] {"key":"2005/06","title":"2005/06"}</div><div>[debug] &gt;2004/05=
+&lt;</div><div>[debug] &nbsp; find season key: 2004/05</div><div>[debug] cr=
+eate season:</div><div>[debug] {"key":"2004/05","title":"2004/05"}</div><di=
+v>[debug] &gt;2003/04&lt;</div><div>[debug] &nbsp; find season key: 2003/04=
+</div><div>[debug] create season:</div><div>[debug] {"key":"2003/04","title=
+":"2003/04"}</div><div>[debug] &gt;2002/03&lt;</div><div>[debug] &nbsp; fin=
+d season key: 2002/03</div><div>[debug] create season:</div><div>[debug] {"=
+key":"2002/03","title":"2002/03"}</div><div>[debug] &gt;2001/02&lt;</div><d=
+iv>[debug] &nbsp; find season key: 2001/02</div><div>[debug] create season:=
+</div><div>[debug] {"key":"2001/02","title":"2001/02"}</div><div>[debug] &g=
+t;2000/01&lt;</div><div>[debug] &nbsp; find season key: 2000/01</div><div>[=
+debug] create season:</div><div>[debug] {"key":"2000/01","title":"2000/01"}=
+</div><div>[debug] skipping blank line</div><div>[debug] skipping comment l=
+ine</div><div>[debug] skipping blank line</div><div>[debug] &gt;2022&lt;</d=
+iv><div>[debug] &nbsp; find season key: 2022</div><div>[debug] create seaso=
+n:</div><div>[debug] {"key":"2022","title":"2022"}</div><div>[debug] &gt;20=
+21&lt;</div><div>[debug] &nbsp; find season key: 2021</div><div>[debug] cre=
+ate season:</div><div>[debug] {"key":"2021","title":"2021"}</div><div>[debu=
+g] &gt;2020&lt;</div><div>[debug] &nbsp; find season key: 2020</div><div>[d=
+ebug] create season:</div><div>[debug] {"key":"2020","title":"2020"}</div><=
+div>[debug] &gt;2019&lt;</div><div>[debug] &nbsp; find season key: 2019</di=
+v><div>[debug] create season:</div><div>[debug] {"key":"2019","title":"2019=
+"}</div><div>[debug] &gt;2018&lt;</div><div>[debug] &nbsp; find season key:=
+ 2018</div><div>[debug] create season:</div><div>[debug] {"key":"2018","tit=
+le":"2018"}</div><div>[debug] &gt;2017&lt;</div><div>[debug] &nbsp; find se=
+ason key: 2017</div><div>[debug] create season:</div><div>[debug] {"key":"2=
+017","title":"2017"}</div><div>[debug] &gt;2016&lt;</div><div>[debug] &nbsp=
+; find season key: 2016</div><div>[debug] create season:</div><div>[debug] =
+{"key":"2016","title":"2016"}</div><div>[debug] &gt;2015&lt;</div><div>[deb=
+ug] &nbsp; find season key: 2015</div><div>[debug] create season:</div><div=
+>[debug] {"key":"2015","title":"2015"}</div><div>[debug] &gt;2014&lt;</div>=
+<div>[debug] &nbsp; find season key: 2014</div><div>[debug] create season:<=
+/div><div>[debug] {"key":"2014","title":"2014"}</div><div>[debug] &gt;2013&=
+lt;</div><div>[debug] &nbsp; find season key: 2013</div><div>[debug] create=
+ season:</div><div>[debug] {"key":"2013","title":"2013"}</div><div>[debug] =
+&gt;2012&lt;</div><div>[debug] &nbsp; find season key: 2012</div><div>[debu=
+g] create season:</div><div>[debug] {"key":"2012","title":"2012"}</div><div=
+>[debug] &gt;2011&lt;</div><div>[debug] &nbsp; find season key: 2011</div><=
+div>[debug] create season:</div><div>[debug] {"key":"2011","title":"2011"}<=
+/div><div>[debug] &gt;2010&lt;</div><div>[debug] &nbsp; find season key: 20=
+10</div><div>[debug] create season:</div><div>[debug] {"key":"2010","title"=
+:"2010"}</div><div>[debug] &gt;2009&lt;</div><div>[debug] &nbsp; find seaso=
+n key: 2009</div><div>[debug] create season:</div><div>[debug] {"key":"2009=
+","title":"2009"}</div><div>[debug] &gt;2008&lt;</div><div>[debug] &nbsp; f=
+ind season key: 2008</div><div>[debug] create season:</div><div>[debug] {"k=
+ey":"2008","title":"2008"}</div><div>[debug] &gt;2007&lt;</div><div>[debug]=
+ &nbsp; find season key: 2007</div><div>[debug] create season:</div><div>[d=
+ebug] {"key":"2007","title":"2007"}</div><div>[debug] &gt;2006&lt;</div><di=
+v>[debug] &nbsp; find season key: 2006</div><div>[debug] create season:</di=
+v><div>[debug] {"key":"2006","title":"2006"}</div><div>[debug] &gt;2005&lt;=
+</div><div>[debug] &nbsp; find season key: 2005</div><div>[debug] create se=
+ason:</div><div>[debug] {"key":"2005","title":"2005"}</div><div>[debug] &gt=
+;2004&lt;</div><div>[debug] &nbsp; find season key: 2004</div><div>[debug] =
+create season:</div><div>[debug] {"key":"2004","title":"2004"}</div><div>[d=
+ebug] &gt;2003&lt;</div><div>[debug] &nbsp; find season key: 2003</div><div=
+>[debug] create season:</div><div>[debug] {"key":"2003","title":"2003"}</di=
+v><div>[debug] &gt;2002&lt;</div><div>[debug] &nbsp; find season key: 2002<=
+/div><div>[debug] create season:</div><div>[debug] {"key":"2002","title":"2=
+002"}</div><div>[debug] &gt;2001&lt;</div><div>[debug] &nbsp; find season k=
+ey: 2001</div><div>[debug] create season:</div><div>[debug] {"key":"2001","=
+title":"2001"}</div><div>[debug] &gt;2000&lt;</div><div>[debug] &nbsp; find=
+ season key: 2000</div><div>[debug] create season:</div><div>[debug] {"key"=
+:"2000","title":"2000"}</div><div>[debug] skipping blank line</div><div>[de=
+bug] skipping blank line</div><div>[debug] skipping comment line</div><div>=
+[debug] skipping comment line</div><div>[debug] skipping blank line</div><d=
+iv>[debug] &gt;2015.1&lt;</div><div>[debug] &nbsp; find season key: 2015.1<=
+/div><div>[debug] create season:</div><div>[debug] {"key":"2015.1","title":=
+"2015.1"}</div><div>[debug] &gt;2015.2&lt;</div><div>[debug] &nbsp; find se=
+ason key: 2015.2</div><div>[debug] create season:</div><div>[debug] {"key":=
+"2015.2","title":"2015.2"}</div><div>[debug] &gt;2014.1&lt;</div><div>[debu=
+g] &nbsp; find season key: 2014.1</div><div>[debug] create season:</div><di=
+v>[debug] {"key":"2014.1","title":"2014.1"}</div><div>[debug] &gt;2014.2&lt=
+;</div><div>[debug] &nbsp; find season key: 2014.2</div><div>[debug] create=
+ season:</div><div>[debug] {"key":"2014.2","title":"2014.2"}</div><div>[deb=
+ug] &gt;2013.1&lt;</div><div>[debug] &nbsp; find season key: 2013.1</div><d=
+iv>[debug] create season:</div><div>[debug] {"key":"2013.1","title":"2013.1=
+"}</div><div>[debug] &gt;2013.2&lt;</div><div>[debug] &nbsp; find season ke=
+y: 2013.2</div><div>[debug] create season:</div><div>[debug] {"key":"2013.2=
+","title":"2013.2"}</div><div>[debug] &gt;2012.1&lt;</div><div>[debug] &nbs=
+p; find season key: 2012.1</div><div>[debug] create season:</div><div>[debu=
+g] {"key":"2012.1","title":"2012.1"}</div><div>[debug] &gt;2012.2&lt;</div>=
+<div>[debug] &nbsp; find season key: 2012.2</div><div>[debug] create season=
+:</div><div>[debug] {"key":"2012.2","title":"2012.2"}</div><div>[debug] &gt=
+;2011.1&lt;</div><div>[debug] &nbsp; find season key: 2011.1</div><div>[deb=
+ug] create season:</div><div>[debug] {"key":"2011.1","title":"2011.1"}</div=
+><div>[debug] &gt;2011.2&lt;</div><div>[debug] &nbsp; find season key: 2011=
+.2</div><div>[debug] create season:</div><div>[debug] {"key":"2011.2","titl=
+e":"2011.2"}</div><div>[debug] &gt;2010.1&lt;</div><div>[debug] &nbsp; find=
+ season key: 2010.1</div><div>[debug] create season:</div><div>[debug] {"ke=
+y":"2010.1","title":"2010.1"}</div><div>[debug] &gt;2010.2&lt;</div><div>[d=
+ebug] &nbsp; find season key: 2010.2</div><div>[debug] create season:</div>=
+<div>[debug] {"key":"2010.2","title":"2010.2"}</div><div>[debug] skipping b=
+lank line</div><div>[debug] skipping blank line</div><div>[info] parsing da=
+ta (setup) 'setups/all' (../en-england/setups/all.txt)...</div><div>[debug]=
+ skipping comment line</div><div>[debug] skipping comment line</div><div>[d=
+ebug] skipping blank line</div><div>[debug] skipping comment line</div><div=
+>[debug] skipping blank line</div><div>[debug] skipping comment line</div><=
+div>[debug] skipping blank line</div><div>[debug] skipping blank line</div>=
+<div>[debug] skipping comment line</div><div>[debug] fixture setup:</div><d=
+iv>[debug] ["en-england!/leagues","en-england!/clubs","en-england!/clubs_2"=
+,"en-england!/clubs_wal","en-england!/2012-13/1-premierleague","en-england!=
+/2013-14/1-premierleague","en-england!/2014-15/1-premierleague"]</div><div>=
+[debug] enter load( name=3D&gt;&gt;en-england!/leagues&lt;&lt;)</div></div>=
+<div><br></div><div><br></div><div>I am getting stuck at a different place =
+with ASCII encoding errors when trying with the MySql adapter. That is on a=
+ different system. I will post the details for that one later.</div><div><b=
+r></div><div>Regards,</div><div><br></div><div>- Maizar</div></div>
+------=_Part_4455_686785665.1423045717031--
+------=_Part_4454_714803969.1423045717031--
+

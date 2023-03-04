@@ -1,0 +1,74 @@
+From 6183949495953260544@xxx Mon Aug 17 12:02:22 +0000 2015
+X-GM-THRID: 6183676375303454720
+X-Received: by 10.129.104.87 with SMTP id d84mr845462ywc.55.1439812941583;
+        Mon, 17 Aug 2015 05:02:21 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.50.77.44 with SMTP id p12ls944224igw.17.gmail; Mon, 17 Aug
+ 2015 05:02:21 -0700 (PDT)
+X-Received: by 10.50.43.197 with SMTP id y5mr16151464igl.9.1439812941345;
+        Mon, 17 Aug 2015 05:02:21 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x236.google.com (mail-io0-x236.google.com. [2607:f8b0:4001:c06::236])
+        by gmr-mx.google.com with ESMTPS id f17si803878igt.0.2015.08.17.05.02.21
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 17 Aug 2015 05:02:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) client-ip=2607:f8b0:4001:c06::236;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-io0-x236.google.com with SMTP id v127so132136751iod.3
+        for <openmundi@googlegroups.com>; Mon, 17 Aug 2015 05:02:21 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=3Eoa+ZDMRcaaqkudy2EXI+4mk760CR/gjTSHHtSTZF0=;
+        b=Y/GevUS69qoelgkZ7/EkTx9RLksq2AFmkdBf7RwFpNLcFOWdoUqvZ9cmwe58zoQVCf
+         MHaRmXxxcLTKnEX8Xl58g7prAR/fuTV8sdjo+W5b0Ahm1wZ7b1mvK8wIboLXlK27e2MG
+         G2PYQB5ew1wJaIBHkK7amyn/+/kJkXjNxlApEB5VHXWhmZovYKwLMUx+5MbvYBfRvNoF
+         An97OKE73ZH3p+ZfE91cYbfjMzHWb2yxy5UV0WFLCdbTvHJxJ+9iAGWwIxhTuh09A5En
+         gIAyaSv/ManY3/5uIKd76kE1S0Gn0tEzGyoANkMky5EOMrnixry+DjHISCOQdvE26vSD
+         N2yw==
+MIME-Version: 1.0
+X-Received: by 10.107.8.142 with SMTP id h14mr934971ioi.35.1439812941201; Mon,
+ 17 Aug 2015 05:02:21 -0700 (PDT)
+Received: by 10.107.15.196 with HTTP; Mon, 17 Aug 2015 05:02:21 -0700 (PDT)
+In-Reply-To: <4a1ca44c-6033-4a14-bb20-a914006ef7e0@googlegroups.com>
+References: <b7d238a5-07df-48bc-8f14-ea75abc8ab07@googlegroups.com>
+	<CAAxEZd8kVvdzeA61PxLoOSEfkRvc8M=+3U2zN2GA-4+h_MCt4g@mail.gmail.com>
+	<4a1ca44c-6033-4a14-bb20-a914006ef7e0@googlegroups.com>
+Date: Mon, 17 Aug 2015 14:02:21 +0200
+Message-ID: <CAAxEZd9JU6JKv12VGw_agpz=mmO_nZ30bB515YALJi9LsjVULA@mail.gmail.com>
+Subject: Re: [openmundi] loop/error on sutup
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Victor DD <victorddesigner@gmail.com>
+Cc: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: If you use the "old" build script using Rake e.g. Rakefile [1]
+you can import the data into MySQL. Change the db settings e.g.:
+
+DB_CONFIG = {
+  adapter: 'sqlite3',
+  database: WORLD_DB_PATH
+}
+
+  to something like:
+
+DB_CONFIG = {
+  adapter: 'mysql',
+  host: 'localhost',
+  database: 'world',
+  username: 'root',
+  password: 'secret'
+}
+
+  Cheers.
+
+[1] https://github.com/openmundi/build/blob/master/Rakefile
+

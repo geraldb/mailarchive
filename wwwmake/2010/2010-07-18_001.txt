@@ -1,0 +1,98 @@
+From 754864619520@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 755190726656
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,4e2adcf683aeb48,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.101.138.35 with SMTP id q35mr2755752ann.9.1279477540743;
+        Sun, 18 Jul 2010 11:25:40 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.101.156.10 with SMTP id i10ls567613ano.3.p; Sun, 18 Jul 2010 
+	11:25:40 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.100.94.18 with SMTP id r18mr337135anb.64.1279477540369; Sun, 
+	18 Jul 2010 11:25:40 -0700 (PDT)
+Received: by 5g2000yqz.googlegroups.com with HTTP; Sun, 18 Jul 2010 11:25:40 
+	-0700 (PDT)
+Date: Sun, 18 Jul 2010 11:25:40 -0700 (PDT)
+X-IP: 93.82.43.83
+User-Agent: G2/1.0
+X-Google-Token: EKSOjeIEArcN3yerx6s0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.6) 
+	Gecko/20100628 Ubuntu/10.04 (lucid) Firefox/3.6.6,gzip(gfe)
+Message-ID: <8d4acabe-159a-4b83-b099-792c2cddf4ee@5g2000yqz.googlegroups.com>
+Subject: S6 Blank (S5 Rewrite Using jQuery) Updated - Includes Autoplay, 
+	Custom Transitions and More
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   I've updated the S6 templates and scripts. What's new?
+
+   == JavaScript Code-Cleanup Including New Options: Autoplay, Title
+Selection, Transition
+
+    All the S6 machinery for the slide show now resides in a single
+JavaScript file, that is, jquery.slideshow.js.
+
+    If you want to customize the code use the new options or add your
+own JavaScript code inside a document.ready block.
+
+    The standard "plain" setup is now:
+
+    $(document).ready( function() {
+
+      Slideshow.init();
+    }
+
+    If you want to use, for example, a custom transition (e.g. using a
+scroll up effect), set the transition property to point to your own
+function (using fn($from,$to)). Example:
+
+    Slideshow.transition = transitionScrollUp;
+
+    Slideshow.init();
+
+    To start a slide show in autoplay mode, use the mode option:
+
+    Slideshow.init( { mode: 'autoplay' } );
+
+    See an example with autoplay and scroll up transition online @
+http://slideshow.rubyforge.org/tutorial.autoplay.html
+
+    The autoplay machinery is now built-in. Use the a/s/p-keys to
+toggle (start/stop/pause) autoplay.
+
+    To change the title selector from h1 to h2 use:
+
+    Slideshow.init( { titleSelector: 'h2' } );
+
+
+   == Heading Clicker Added
+
+    You can now also go to the next slide by clicking on the heading.
+
+   == Internet Explorer Better Browser Banner
+
+   I've moved the better browser banner for IE out of the core and the
+banner is now just a single stand-alone JavaScript module (that is,
+jquery.microsoft.js)
+
+   If you want to exclude it from your templates, remove the
+conditional comment, that is:
+
+<!--[if IE]>
+
+<script src="shared/jquery.microsoft.js"></script>
+
+<![endif]-->
+
+   That's it. You can find the S6 Blank package  @ http://github.com/geraldb/s6
+
+   Cheers.
+
+PS: I also updated the the slideshow gem to use the updated S6
+templates.
+

@@ -1,0 +1,93 @@
+From 6326806942794645504@xxx Mon Sep 05 11:22:12 +0000 2016
+X-GM-THRID: 6319151478389866496
+X-Received: by 10.129.167.65 with SMTP id e62mr15962160ywh.3.1473074532528;
+        Mon, 05 Sep 2016 04:22:12 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.35.74 with SMTP id k10ls9278082otd.48.gmail; Mon, 05 Sep
+ 2016 04:22:12 -0700 (PDT)
+X-Received: by 10.129.27.2 with SMTP id b2mr28392085ywb.36.1473074532257;
+        Mon, 05 Sep 2016 04:22:12 -0700 (PDT)
+Received: by 10.202.86.70 with SMTP id k67msoib;
+        Sun, 4 Sep 2016 20:08:51 -0700 (PDT)
+X-Received: by 10.36.225.78 with SMTP id n75mr423912ith.3.1473044931320;
+        Sun, 04 Sep 2016 20:08:51 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Sun, 4 Sep 2016 20:08:50 -0700 (PDT)
+From: Chris Wendel <eeeketering1@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <5c5e55c8-906d-41b2-8bb2-b6a6b986a7b9@googlegroups.com>
+In-Reply-To: <CAAxEZd_Dfey2F0jkwCbSoHQRZkwbuj4+iJxLDFacmLCptGzPwQ@mail.gmail.com>
+References: <3bc1224e-e12b-47d9-8f35-b635651acc5f@googlegroups.com>
+ <CAAxEZd_SNQWwDgDEqOm7_=C6=1RwxVjGpGnweHsGVwTK0gZ36g@mail.gmail.com> <0e869f0b-e0d6-497d-ba60-0062eb11350e@googlegroups.com>
+ <CAAxEZd_Dfey2F0jkwCbSoHQRZkwbuj4+iJxLDFacmLCptGzPwQ@mail.gmail.com>
+Subject: Re: [opensport] error when installing
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2497_71193056.1473044930705"
+X-Google-Token: EMLDs74FMuRuWBqDsBw0
+X-Google-IP: 2601:645:4201:ba61:9865:6a77:4e60:b973
+
+------=_Part_2497_71193056.1473044930705
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2498_525244299.1473044930705"
+
+------=_Part_2498_525244299.1473044930705
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I uninstalled activerecord and installed active record 4.7.2.1 and I am 
+still seeing the same issue on sportdb create?
+
+On Tuesday, August 23, 2016 at 3:47:04 AM UTC-7, Gerald Bauer wrote:
+>
+> Hello, 
+>    Thanks for reporting and the detailed log. Now I see the problem/issue: 
+>
+> > activerecord/5.0.0 
+>
+>    Starting with ActiveRecord 5.0.0 I think the database library will 
+> auto-create indexes on foreign key references, thus, the duplicate 
+> e.g. first the index gets auto-created (new in 5.0.0) and, than, 
+> sportdb tries to create the index again itself (and will fail/crash). 
+>
+>     Will have to read-up on ActiveRecord 5.0.0.and send out an update. 
+> However, this will take some weeks. 
+>
+>     As a work around for now, please downgrade ActiveRecord to the 4.x 
+> series (e.g. 4.2.x is the latest) by using a Gemfile and everything 
+> will work ase advertised. Let us know how it goes. Cheers. 
+>
+
+------=_Part_2498_525244299.1473044930705
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I uninstalled activerecord and installed active record 4.7=
+.2.1 and I am still seeing the same issue on sportdb create?<br><br>On Tues=
+day, August 23, 2016 at 3:47:04 AM UTC-7, Gerald Bauer wrote:<blockquote cl=
+ass=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px =
+#ccc solid;padding-left: 1ex;">Hello,
+<br>=C2=A0 =C2=A0Thanks for reporting and the detailed log. Now I see the p=
+roblem/issue:
+<br>
+<br>&gt; activerecord/5.0.0
+<br>
+<br>=C2=A0 =C2=A0Starting with ActiveRecord 5.0.0 I think the database libr=
+ary will
+<br>auto-create indexes on foreign key references, thus, the duplicate
+<br>e.g. first the index gets auto-created (new in 5.0.0) and, than,
+<br>sportdb tries to create the index again itself (and will fail/crash).
+<br>
+<br>=C2=A0 =C2=A0 Will have to read-up on ActiveRecord 5.0.0.and send out a=
+n update.
+<br>However, this will take some weeks.
+<br>
+<br>=C2=A0 =C2=A0 As a work around for now, please downgrade ActiveRecord t=
+o the 4.x
+<br>series (e.g. 4.2.x is the latest) by using a Gemfile and everything
+<br>will work ase advertised. Let us know how it goes. Cheers.
+<br></blockquote></div>
+------=_Part_2498_525244299.1473044930705--
+
+------=_Part_2497_71193056.1473044930705--
+

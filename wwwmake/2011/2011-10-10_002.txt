@@ -1,0 +1,79 @@
+From 957329965056@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 952699453440
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,cac9f30bd69b327c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.204.139.72 with SMTP id d8mr1363182bku.5.1318278218997;
+        Mon, 10 Oct 2011 13:23:38 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.204.134.87 with SMTP id i23ls1154171bkt.2.gmail; Mon, 10 Oct
+ 2011 13:23:35 -0700 (PDT)
+Received: by 10.204.156.195 with SMTP id y3mr1362561bkw.4.1318278215036;
+        Mon, 10 Oct 2011 13:23:35 -0700 (PDT)
+Received: by 10.204.156.195 with SMTP id y3mr1362560bkw.4.1318278215019;
+        Mon, 10 Oct 2011 13:23:35 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-bw0-f41.google.com (mail-bw0-f41.google.com [209.85.214.41])
+        by gmr-mx.google.com with ESMTPS id z6si3412214bku.0.2011.10.10.13.23.34
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Mon, 10 Oct 2011 13:23:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.214.41 as permitted sender) client-ip=209.85.214.41;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.214.41 as permitted sender) smtp.mail=gerald.bauer@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by mail-bw0-f41.google.com with SMTP id zs2so9935229bkb.0
+        for <webslideshow@googlegroups.com>; Mon, 10 Oct 2011 13:23:34 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=n/Fdz0m8crJGCCjDJx2gr1cfECTbE94cpaXMXf+xwCw=;
+        b=fU0Zyko0Z8SIu8k3xIQpWRMVLZOU2pRtm5No3BKq8fKWTbh5j3V5yonCJImrSqPzOr
+         CRIy1DwV1IonBUgZr0L7GRw94qKy755I5WhcG6aCfZh33l3BwOeQavOxqX0QDqucbGMc
+         hVSt6jwZVibrMAMbXJgnlEF7e00m4B6KBq2jU=
+MIME-Version: 1.0
+Received: by 10.204.151.217 with SMTP id d25mr7172873bkw.88.1318278214286;
+ Mon, 10 Oct 2011 13:23:34 -0700 (PDT)
+Received: by 10.204.56.131 with HTTP; Mon, 10 Oct 2011 13:23:34 -0700 (PDT)
+In-Reply-To: <e073b8c1-324a-443d-b7e3-715c7d7cc677@dd6g2000vbb.googlegroups.com>
+References: <e073b8c1-324a-443d-b7e3-715c7d7cc677@dd6g2000vbb.googlegroups.com>
+Date: Mon, 10 Oct 2011 22:23:34 +0200
+Message-ID: <CAAxEZd-o+byPZsbQOLkqijOOVT0KuFU=n8t8yeY3RR8ApSL9SA@mail.gmail.com>
+Subject: Re: [slideshow] need help: debugging slideshows
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello Bruce,
+
+    No panic. If you haven't changed anything it cannot break.
+
+    Looking at your code at
+http://bruce.darcus.name/presentations/rendition.html I guess your
+slide templates and the JavaScript machinery are out of sync. A while
+back the "magic" ids for CSS stylesheets got changed. Thus,
+
+   <link ... media="projection" id="slideProj"/>
+   <link ... media="screen" id="outlineStyle"/>
+   <link ... media="print" id="slidePrint"/>
+
+   should in your case read:
+
+   <link ... media="projection" id="styleProjection"/>
+   <link ... media="screen" id="styleScreen"/>
+   <link ... media="print" id="stylePrint"/>
+
+   Note, that, you can see the history of changes to S6 at
+https://github.com/geraldb/s6/blob/master/history.markdown
+
+   If you use the latest S6 JavaScript machinery, note, that you no
+longer need the "magic" ids  for your stylesheets. Just use:
+
+   <link ... media="projection" />
+   <link ... media="screen" />
+   <link ... media="print" />
+
+   Hope that helps. All the best. Cheers.
+

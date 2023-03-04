@@ -1,0 +1,94 @@
+From 7041136879360540672@xxx Mon Dec 13 10:47:12 +0000 2021
+X-GM-THRID: 6927672472830476288
+X-Received: by 2002:a05:6000:18a5:: with SMTP id b5mr31946188wri.604.1639392431707;
+        Mon, 13 Dec 2021 02:47:11 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:adf:f885:: with SMTP id u5ls499wrp.3.gmail; Mon, 13 Dec 2021
+ 02:47:09 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJxmJsf6513Bv6NLtMMSdAjNpzhQlQmx898A0lAwFTbyLYL7ePCS1sDCNdjVeD7LCGNZGUhV
+X-Received: by 2002:adf:d1e2:: with SMTP id g2mr32328709wrd.105.1639392429860;
+        Mon, 13 Dec 2021 02:47:09 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1639392429; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FuAddZ/dJeQGsdL+17UTRwSFnoIB8pOvciHewi2t3aU3oVHMbdVCOlyMKQ5BjsijmA
+         pxmTvYpeNEFhgXIrMnUnPiFPvovO53lm35Y4CwVDxMSzfs+Te6ZGhluCZU1vueqKucZj
+         We1+/LBcCYKsOV64NRtZfKn3RhSMEmnaXxU/RrEVKUft47NHSVP9t8G8O6fqIwvghM2H
+         V5c2LjN0B9jYutDCYtcQxJAKIceTaMyoYjucl/cabGagQhU8fvREOGXl9g/zOi/sHoGK
+         eHrWsyvyJBbM0ePjJE2d8BrtR6r4mJiB6OOKz38HF8KUwqLYwB/CpCGJZRHUoiBAkPYn
+         7Iyg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=rDYaRO+jcXxoGDAsnU2SnRhPTzRVMoU2jWAmX5S+OU4=;
+        b=AvSm566fa7xiHLMX2HHHLuBinP5hVrcsKf931M+fs8CBzhNPtrQ8A+M7A2j65XNup5
+         AS2uLkcGbOQ8tWYiI72oVQIhzG1XCVjmzuNX+9ZhPEjUnoYfbzymSvLMoZltecTd2eRd
+         HFvME6pTj02FA4b1y9NGu6VtlX6/JpE5OY26bgO5gsKAYxUkxuVLtRHYGYSszE/547g9
+         OGRTT4AAcp7Ho00VvpWqWnhJr6O7ezeAxQ7QX4nXkwKpEDZuGgeAMqLaUeUElqdjAEPo
+         0FWzliCqFUQ95mUii8uw13w3VCLUupDtCEfAfm6eAiH82yxWYZ5R9ILPFe7SRkCtLBy6
+         L74w==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=mC9p8DNP;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::534 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ed1-x534.google.com (mail-ed1-x534.google.com. [2a00:1450:4864:20::534])
+        by gmr-mx.google.com with ESMTPS id e2si576483wre.5.2021.12.13.02.47.09
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 13 Dec 2021 02:47:09 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::534 as permitted sender) client-ip=2a00:1450:4864:20::534;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=mC9p8DNP;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::534 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ed1-x534.google.com with SMTP id v1so50996036edx.2
+        for <opensport@googlegroups.com>; Mon, 13 Dec 2021 02:47:09 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=rDYaRO+jcXxoGDAsnU2SnRhPTzRVMoU2jWAmX5S+OU4=;
+        b=mC9p8DNP23yBAZNJ0q2Pyx9EavWq8XNFbcQPVm6Qxten5AdbzqYyUzzX2PmH9j9Pz5
+         i/h8fDg8qP4+pnily6V+v7Xei1IShDlscE/ZsUpo1y/tUK4dWn/fHlhBhrjxsYH14oAB
+         ZuROeSa1jwfAQcmD0nXjXvravXl8a9hXeNQUu/wTYBMoUXZCyXQp6DYC7L7OWxscubnU
+         s4ZUGi5oDn6OI9ctkgEMtldXpIoi4rKpIfhEeGjDxURowUUX8pktAKftnOPBWEIiOdX8
+         y2iSujJMjNNs/XZUXH+Wy3aPaS5SDTS1y/DAHsxBgvNrT6a6aqnDhh1/g3m/XOGjPXzJ
+         68Ug==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=rDYaRO+jcXxoGDAsnU2SnRhPTzRVMoU2jWAmX5S+OU4=;
+        b=Xa19bpK4J+E7Z0kywIuA3vITafHmtCuYrFXr3qfgP98RU2SNvvWDWs1XB50OTHO/Dg
+         5fVIarsb9s+Le7PXKTUnrrtoNwcALy8YMdAb2y31w2VbBH+pBtQc/+ISK+63FOb4hHTH
+         BDHe/yws6WY3tSw93BVzkyZS+LkeyV87lPKtgcvzq5QUITBxzV9nFT013I2q9Tgpfvy1
+         raNitRCH5r5PkARMYcA4XW8MhTrB+jninlpkS8oiT1XVmbFuYH6+c9SITQxEr6rae/Nx
+         o1EGrl0gR4emR4tYoMiJJLjPEwLSQQsMojkI1fyaarcVdYJUEk963mO+ZR+kcvPtE3u0
+         Fx1Q==
+X-Gm-Message-State: AOAM533zLkDYJzQhooFXDXlkRXINAb5oIF704liYyzEzgmVXlcaSKBno
+	4li5dCLVdsvDyu0nr0bQoc3r6tziGdOuiyptwRuDBnxo7T5XxA==
+X-Received: by 2002:a17:906:9756:: with SMTP id o22mr44974854ejy.324.1639392429310;
+ Mon, 13 Dec 2021 02:47:09 -0800 (PST)
+MIME-Version: 1.0
+References: <35ade5db-a0f9-48da-b002-bba18755dea7n@googlegroups.com>
+ <CAAxEZd9EYGh3TDd-4c5OXtNO2=EM=fomf4PTnsxrBWVxxbTT0g@mail.gmail.com> <a78d514f-d103-4b4e-bfa7-3c110d1f44a5n@googlegroups.com>
+In-Reply-To: <a78d514f-d103-4b4e-bfa7-3c110d1f44a5n@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 13 Dec 2021 11:46:58 +0100
+Message-ID: <CAAxEZd_H2d0B2md8snCnf3Fv3TghMccStuDH_Bd7XJ=A4k7hdA@mail.gmail.com>
+Subject: Re: [opensport] Auto Update Stopped
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   Sorry for the delay / late reply.  I am for sure trying to get back in 2022!
+
+> Do you need help for auto-update ?
+
+  It's an open source project - any help / contributions always welcome.
+
+   Unfortunately, see above for the next weeks I will not be able to
+help out / join in.
+
+     Happy 2022! Cheers. Prost.
+

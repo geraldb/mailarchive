@@ -1,0 +1,50 @@
+From 678562889728@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 664924061696
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,7b797d86f6223e4c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.223.53.20 with SMTP id k20mr56536fag.16.1276964778067;
+        Sat, 19 Jun 2010 09:26:18 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.223.149.73 with SMTP id s9ls1314346fav.2.p; Sat, 19 Jun 2010 
+	09:26:17 -0700 (PDT)
+Received: by 10.223.23.134 with SMTP id r6mr55878fab.3.1276964777451;
+        Sat, 19 Jun 2010 09:26:17 -0700 (PDT)
+Received: by 10.223.23.134 with SMTP id r6mr55877fab.3.1276964777432;
+        Sat, 19 Jun 2010 09:26:17 -0700 (PDT)
+Return-Path: <gerald@vanbeta.com>
+Received: from mail-fx0-f41.google.com (mail-fx0-f41.google.com [209.85.161.41])
+        by gmr-mx.google.com with ESMTP id r27si3180497faa.4.2010.06.19.09.26.17;
+        Sat, 19 Jun 2010 09:26:17 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.161.41 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.161.41;
+Authentication-Results: gmr-mx.google.com; spf=neutral (google.com: 209.85.161.41 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by mail-fx0-f41.google.com with SMTP id 15so1268245fxm.14
+        for <webslideshow@googlegroups.com>; Sat, 19 Jun 2010 09:26:17 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.103.78.10 with SMTP id f10mr830606mul.126.1276964777018; Sat, 
+	19 Jun 2010 09:26:17 -0700 (PDT)
+Received: by 10.103.226.20 with HTTP; Sat, 19 Jun 2010 09:26:16 -0700 (PDT)
+In-Reply-To: <2b74b5ea-924c-42da-b2ad-8202456a6568@z10g2000yqb.googlegroups.com>
+References: <2b74b5ea-924c-42da-b2ad-8202456a6568@z10g2000yqb.googlegroups.com>
+Date: Sat, 19 Jun 2010 18:26:16 +0200
+Message-ID: <AANLkTimsx4DCUFG6NxMztUJsNw6o6mgD4y8_NwOkGD8m@mail.gmail.com>
+Subject: Re: New Slideshow Template Package for PDF Generation (pdfblank)
+From: Gerald Bauer <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   FYI:  I've included the new pdfblank template into the built-in s6
+package shipping with the slideshow gem, and, thus, if you update to
+the latest version, that is 8.2, you can now generate your slideshows
+as usual and you will get an extra *.pdf.html document generated that
+you can use to generate a PDF-version of your slideshow. Example:
+
+$ slideshow tutorial
+
+$ wkhtmltopdf --outline --orientation Landscape tutorial.pdf.html tutorial.pdf
+
+   That's it. Cheers.
+

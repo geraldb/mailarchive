@@ -1,0 +1,85 @@
+From 944349642752@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 940759318528
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,8c3acbe431262262,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.224.202.10 with SMTP id fc10mr5281450qab.15.1309106998204;
+        Sun, 26 Jun 2011 09:49:58 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.224.182.134 with SMTP id cc6ls1057857qab.4.gmail; Sun, 26 Jun
+ 2011 09:49:57 -0700 (PDT)
+Received: by 10.224.211.201 with SMTP id gp9mr5349028qab.2.1309106997788;
+        Sun, 26 Jun 2011 09:49:57 -0700 (PDT)
+Received: by 10.224.200.3 with SMTP id eu3msqab;
+        Wed, 22 Jun 2011 22:12:13 -0700 (PDT)
+Received: by 10.224.204.5 with SMTP id fk5mr1463237qab.25.1308805933653;
+        Wed, 22 Jun 2011 22:12:13 -0700 (PDT)
+Received: by 10.224.204.5 with SMTP id fk5mr1463236qab.25.1308805933644;
+        Wed, 22 Jun 2011 22:12:13 -0700 (PDT)
+Return-Path: <marclaporte@gmail.com>
+Received: from mail-qy0-f180.google.com (mail-qy0-f180.google.com [209.85.216.180])
+        by gmr-mx.google.com with ESMTPS id k32si1076828qcs.1.2011.06.22.22.12.13
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Wed, 22 Jun 2011 22:12:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of marclaporte@gmail.com designates 209.85.216.180 as permitted sender) client-ip=209.85.216.180;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of marclaporte@gmail.com designates 209.85.216.180 as permitted sender) smtp.mail=marclaporte@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by qyk30 with SMTP id 30so1037431qyk.4
+        for <webslideshow@googlegroups.com>; Wed, 22 Jun 2011 22:12:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:date:message-id:subject:from:to
+         :content-type;
+        bh=lDYzAalziFbpzXJ0besQ2+ZCHLgsL2yEe8o0vxwjk2g=;
+        b=gRkApN5gNzkAo7HqRDTlU4a3IjRm5+PHmAG6uEuSVHKgfA5CJs1mGqyx1xlQ5NSDal
+         gCM4tU8Ss1QB5saFQ3hTzPVT27w8O97JI3AcL/SlumFzlcU8B3We3tr6uXRfp+WcgAYd
+         eDMW9dwV2rIZN7/SlcXfhp836UDCq4LBDdet8=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        b=m+LgvjSsSWbZ8C4L3A+aYKdtDZ0/hfO3hbyPVxPnSnO8X6QHOo3py52n//CpYtywaC
+         QuDSki2TjKIwXUPpElCN+JaOsYyBg3cNw5C2b0LJhgkANOb6HsxCnI5qtZWNyosHrqoL
+         7WASM+8xA9Lg+U7JRexGFun977vaiCPjYwFdc=
+MIME-Version: 1.0
+Received: by 10.229.74.206 with SMTP id v14mr1209867qcj.69.1308805933267; Wed,
+ 22 Jun 2011 22:12:13 -0700 (PDT)
+Received: by 10.229.185.13 with HTTP; Wed, 22 Jun 2011 22:12:13 -0700 (PDT)
+Date: Thu, 23 Jun 2011 01:12:13 -0400
+Message-ID: <BANLkTi=bbhAf5iZjs8eyC38+NW5UqP+bYQ@mail.gmail.com>
+Subject: Much improved slideshow in Tiki Wiki CMS Groupware version 7.0, with jQuery.s5
+From: Marc Laporte <marclaporte@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hi!
+
+Tiki is a full-featured, open source, multilingual (40+ languages),
+all-in-one Wiki+CMS+Groupware. Technology is PHP, MySQL, Zend
+Framework, jQuery and Smarty.
+
+We added S5 support via jQuery.s5 in previous versions, but it was
+pretty basic. It is now much nicer. Demo:
+http://demo.tiki.org/7x/tiki-slideshow.php?page=Slideshow
+
+The goal is to have all the fun stuff from S5 but making
+editing/maintenance/collaboration easy since it's in a wiki.
+Basically, a slideshow is made from a wiki page.
+
+I'd sure appreciate your feedback so we can improve. It is done by
+integrating jQuery.s5: http://www.visop-dev.com/Project+jQuery.s5
+
+Related links:
+http://doc.tiki.org/Slideshow (out of date)
+http://dev.tiki.org/Slideshow (ideas to improve)
+
+On a related note, from the same author, and also integrated in Tiki,
+is a nifty web-based spreadsheet:
+http://www.visop-dev.com/Project+jQuery.sheet
+
+Best regards,
+
+M ;-)
+

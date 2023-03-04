@@ -1,0 +1,73 @@
+From 6345680208510582784@xxx Wed Oct 26 08:00:08 +0000 2016
+X-GM-THRID: 6345415112559427584
+X-Received: by 10.13.217.209 with SMTP id b200mr243929ywe.13.1477468807700;
+        Wed, 26 Oct 2016 01:00:07 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.157.6.41 with SMTP id 38ls654094otn.34.gmail; Wed, 26 Oct 2016
+ 01:00:07 -0700 (PDT)
+X-Received: by 10.157.50.165 with SMTP id u34mr263693otb.45.1477468807423;
+        Wed, 26 Oct 2016 01:00:07 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x236.google.com (mail-it0-x236.google.com. [2607:f8b0:4001:c0b::236])
+        by gmr-mx.google.com with ESMTPS id 200si100887itz.2.2016.10.26.01.00.07
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 26 Oct 2016 01:00:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::236 as permitted sender) client-ip=2607:f8b0:4001:c0b::236;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::236 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x236.google.com with SMTP id e187so12916128itc.0
+        for <wwwmake@googlegroups.com>; Wed, 26 Oct 2016 01:00:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=WhYflp8dVPtgUJIo+M+O0UNai3rZwhYqM0u1AyG3UVk=;
+        b=gPDdRlhdrp/O9LVk2kww1udtMWjmOoAl5XusxJ7KxLIFNxAms72wUgpLZ2uIihWbps
+         +QnxbqUZMyUznNVMena5VAOj6TjirGSsAWKyyrsRwU+JAjEG1W8FRxiEzimwG7EO3Odi
+         wHBHDAQFVHZWvT95ocRoZNsVq0BBU0DBBB1DgHLOxqpWA2pn3H+/tCoqV5+yivTZAvaE
+         lXpHLUXu6rTcpowUWGRsejNr1h6c4s5XrXIQQDAie+svZr2IRukq1xhHFE8AW+UA9ygF
+         +SPhCUydM/Wlb8VyWiinJ7D5YZzAl6awovHBf5kSko88RPvH5r2/za4cYk0B4g47RIPD
+         sblg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=WhYflp8dVPtgUJIo+M+O0UNai3rZwhYqM0u1AyG3UVk=;
+        b=clDGX3SOVsgGijXUX0pEAkMeALO70djmIT+j5NNbW2wrdYPwIuD75IH1w9WO5gdOnE
+         1o5mpFusaeDZ/Mtjkon5ifbGxBTC7P2BS+8Is+KWhg0y4QrIw3ie7aSi6QH46SsvnxUb
+         S3Aw+iW5aU1ZdZ4s2uL/BxYm7tW6fb/2c0oVt/7LuXOVPrt+cIPEoPGvOHZWwdfQcGQZ
+         bQTFO5vcQ/mdb8lgmOrYlnzp+ROnVMZQ3hEMH7awcAyUmEVxOxcWpDN1lXGq92TGKCcS
+         JBYm7WlZ5hphWwa0uVFtijlgGssKFNGDNqLqD0dXiKk2dH5uZfgfNit+27wnVyRIzRry
+         mtMQ==
+X-Gm-Message-State: ABUngvcK+OmhtRg8H2ARSyRGaqWOyGMCEacBb4bfJQZhOVq4jvB0I4yE1mPEjAi+GbuyGJu6QQyPvIYKW7aKjQ==
+X-Received: by 10.36.116.150 with SMTP id o144mr1067427itc.7.1477468806806;
+ Wed, 26 Oct 2016 01:00:06 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.141.194 with HTTP; Wed, 26 Oct 2016 01:00:06 -0700 (PDT)
+In-Reply-To: <7062ae78-1e58-4bfb-a93c-7772134d2d87@googlegroups.com>
+References: <e502bb69-1cd5-4a8a-b5f9-19fef385d2e4@googlegroups.com>
+ <CAAxEZd_caWbhFm4NWFUYw3Pj_sPu-OwY9f+fYk92q_vc-_w2Qg@mail.gmail.com> <7062ae78-1e58-4bfb-a93c-7772134d2d87@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 26 Oct 2016 10:00:06 +0200
+Message-ID: <CAAxEZd-fYL_y7=8y2AxNZwOV7MUn37j5vrNv_56rC7TaPL2qmw@mail.gmail.com>
+Subject: Re: [wwwmake:409] what you could sudgest to me?
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Use what works for you. What matters is your content ;-)  If you
+write in Markdown you can use almost any tool you like / prefer.
+
+> But I don't uderstand what is vanilla jekyl...
+
+    "Vanilla" Jekyll is built into GitHub - see GitHub Pages [1] and
+the Facebook React docs are a "real world" live example [2][3] among
+many others. Good luck. Cheers.
+
+[1] https://pages.github.com
+[2] https://github.com/facebook/react/tree/master/docs    # backstage the source
+[3] https://facebook.github.io/react/docs
+

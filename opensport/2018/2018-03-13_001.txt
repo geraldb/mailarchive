@@ -1,0 +1,90 @@
+From 6532379006391549952@xxx Tue Mar 13 10:46:48 +0000 2018
+X-GM-THRID: 6531065892340498432
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 10.101.98.140 with SMTP id f12mr24879pgv.138.1520938008187;
+        Tue, 13 Mar 2018 03:46:48 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.99.190.65 with SMTP id g1ls3322561pgo.12.gmail; Tue, 13 Mar
+ 2018 03:46:47 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELsbCM/MCvK8T1UbrJNlxsyzIiUP/yTTRQkGldoanue0wE/l8KPX7P6/PecfMbU0jmRh9Lmw
+X-Received: by 10.99.116.9 with SMTP id p9mr23551pgc.146.1520938007050;
+        Tue, 13 Mar 2018 03:46:47 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1520938007; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FnVIKsdPzRIstSPpP1iNfKMvVh5pOY7cYMLUTNupLDI32iCYInY3zGM6OzMpUh9VB+
+         zhSFLs8V5kqC044jRE/Yad8JF4DGU9apYmYIF5qVUkSQZyoSuh+TQsO3yio6xQ7iTMnl
+         p9FkzO7xChQtmy6TeSTvKkNMBGtN2UiM93pcyX8kvg130Mdcw4n9fDongbokPnCcLYa9
+         u9+2/8JXIw9pSnXBl7kZ0zcoBYsyU6B+lCvuby5uGYsUHw154dOFXkOMpZVKbyEx4Xsb
+         vFMYUfQSNPtUlHRdOwkTHpDsnva2fvFl7AGlRburCISKY213dVww9BDZ9yj0YV4ZT5+g
+         P1UQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=nWrgfhuEAHHHROw7GDsg2wJRrSAhB+FhElhIEXhNJHU=;
+        b=BmiYWRjDvdYEbZwVOaDtExhpqiCAfh6UUgW/RLJK0ULwU3Z9s9B16BZ4dYxIZiD/s1
+         Nz0p9u1OoEsGt2cs35Aw6iDHTFbSuPsgAn6CQkJtbSsKKkoDLCzcnM2NhOfnbsTJ5Uj2
+         OqPoMs7pxwIdo9bh7v8KztVSb1F6jOLC9cOtTACdPg0L/vGDMWXZT3J1bRV6WINFnrV0
+         WQQ2malO31jN/Dw41Kvxq9jKU0dZnVmBjwO2jU23Mv8s48TzEu+kM7mO9/kan1PWgGvL
+         wERssCOCXYZhrCBfE0pwRNLTMQvS/SdAaLGG7kRHhs4eK7HJlm+HnEf942McezJouDRw
+         u6sQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=uOm2dKFw;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x231.google.com (mail-io0-x231.google.com. [2607:f8b0:4001:c06::231])
+        by gmr-mx.google.com with ESMTPS id f4-v6si1358plr.5.2018.03.13.03.46.47
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 13 Mar 2018 03:46:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) client-ip=2607:f8b0:4001:c06::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=uOm2dKFw;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x231.google.com with SMTP id v6so15170105iog.7
+        for <opensport@googlegroups.com>; Tue, 13 Mar 2018 03:46:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=nWrgfhuEAHHHROw7GDsg2wJRrSAhB+FhElhIEXhNJHU=;
+        b=uOm2dKFwszwmUrrvee+xz+8uDlOJWJnTNikbVJ2+dQTnil4m4KMgwxCw2z2QBSzx1Q
+         8Ele3mhKtdeHa2tGQJR+x+UhMLjSO3uFrkn9S4PT9p2PFk+fZSboupzA60D6t4fTCcQJ
+         JJigeExSpb1fFxVV4acbPJUVffFEgJF0Iiciwr2H28AjJlq7+2vUiQ4DLd+P1Oa4E1Fj
+         YXdW1k9YHJdwPbNgxtC+LsJCneOysq3TP99m48KEyO8dC5VoXQsMwZNo34ydZ4CwGzo7
+         q/VwbJ6QykMwzVwsRiom4FGLA6ROHfKPpW+i9WX9RbU0mpUxPEMNDCelWVPF2kTHdNVT
+         GsAg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=nWrgfhuEAHHHROw7GDsg2wJRrSAhB+FhElhIEXhNJHU=;
+        b=RKhLwF+VV11zQRC64AP3nyPw2kdgxLxNQ0sLWAdfbbOy4FpaFWAkzIJHoRMKRSSzto
+         2rZ5tofeCQmlLbmo3Fzxqek0ZH0uOfmirv8Ki3bTw5AHVikqTEeQ/fpgGYq5ddBlngSR
+         JNXa/XHlbni/R+eUz58OhTP9HCoT5yM2IT5CnU8w8Ha8c+f+IEr95ShCd8VGFHivx3ky
+         LWhYir1UmqzswMnfcloUGU+0fuFAiW/InCHdO4lJ17RnydHcL1IZ/+1zhdox4sCPBxfL
+         u37KMFHRW5/cPKhB646Z9nLt2xsOIgDeX1FKjEZpMDwf9YD/Z8pn77RXRgqIIP5bOBoI
+         KbOg==
+X-Gm-Message-State: AElRT7EGt7FVLyHxhB0M2dtzNcTSqYQSSoHPWzPzmiyzjKF/JsNheyr0
+	V6PnxYXL0MiCWjVf0knXPXmlkU4xwx703CcHvJ2WlG1p
+X-Received: by 10.107.56.8 with SMTP id f8mr148762ioa.212.1520938006402; Tue,
+ 13 Mar 2018 03:46:46 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.12.204 with HTTP; Tue, 13 Mar 2018 03:46:45 -0700 (PDT)
+In-Reply-To: <8cd059c1-e727-47d7-8510-a31b120e065b@googlegroups.com>
+References: <8a75b1f4-9979-436f-bacd-a439f06c4609@googlegroups.com>
+ <CAAxEZd_18x5mmB+ncSe1AOvQjDHh4KHi1s-JpQd4k9iBxQPTSg@mail.gmail.com>
+ <8d07d09d-061a-4895-a92f-52145a79b76c@googlegroups.com> <CAAxEZd9Cmoz016Fo-LPh9_FPLiJyGg0U_b6Z24L-E+4kMrGy0w@mail.gmail.com>
+ <8cd059c1-e727-47d7-8510-a31b120e065b@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 13 Mar 2018 11:46:45 +0100
+Message-ID: <CAAxEZd_EbvzuWCtTVdgcVYzH1JMK7nmBrfjWbSt4VkzVXAeMMg@mail.gmail.com>
+Subject: Re: [opensport] Goals missing from leagues
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+  > Where have you pulled the data from ?
+
+   It's added "by hand".  The pages work like a wiki. Cheers. Prost.
+

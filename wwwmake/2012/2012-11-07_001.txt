@@ -1,0 +1,60 @@
+From 1179359641600@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1170838913024
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,d14d8645d89fed1e
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.52.27.164 with SMTP id u4mr2268134vdg.8.1352324584244;
+        Wed, 07 Nov 2012 13:43:04 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.52.65.108 with SMTP id w12ls2617494vds.4.gmail; Wed, 07 Nov
+ 2012 13:43:03 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.236.126.227 with SMTP id b63mr1156615yhi.0.1352324583798; Wed,
+ 07 Nov 2012 13:43:03 -0800 (PST)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by r6g2000yqd.googlegroups.com with HTTP; Wed, 7 Nov 2012 13:43:03
+ -0800 (PST)
+Date: Wed, 7 Nov 2012 13:43:03 -0800 (PST)
+In-Reply-To: <5f20351e-4e63-480a-97e1-1de72b2edc4c@googlegroups.com>
+References: <5f20351e-4e63-480a-97e1-1de72b2edc4c@googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EOer64QFZBRGHsAXo0A0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:16.0)
+ Gecko/20100101 Firefox/16.0,gzip(gfe)
+X-Google-IP: 188.22.216.1
+Message-ID: <b937a745-467a-4c20-ae08-3e23a6f7ed7f@r6g2000yqd.googlegroups.com>
+Subject: Re: Deck.js how easy would it be to use the step helper in deck.js
+ template ?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+> Could you extract the js to make it re-usable in other templates?
+
+  Not sure excatly what you mean.
+
+  The step helper is in Ruby code[1] and runs on the server and justs
+adds a div block with the  step css class (e.g. <div class='step'>) to
+your html. You can create your own Ruby helpers either inline using
+the %helper %end block or saving your Ruby helper code in the /lib
+folder.
+
+   I do not know deck.js in detail but I assume it already supports
+steps. Please, check the deck.js docu to find out what css class it
+may use.
+
+  Cheers.
+
+[1] https://github.com/geraldb/slideshow/blob/master/lib/slideshow/helpers/step_helper.rb
+

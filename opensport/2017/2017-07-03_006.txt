@@ -1,0 +1,104 @@
+From 6438365395196837888@xxx Mon Jul 03 02:26:00 +0000 2017
+X-GM-THRID: 6438363314579832832
+X-Received: by 10.98.159.18 with SMTP id g18mr4293622pfe.13.1499048759869;
+        Sun, 02 Jul 2017 19:25:59 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.36.98.3 with SMTP id d3ls5950059itc.15.gmail; Sun, 02 Jul 2017
+ 19:25:59 -0700 (PDT)
+X-Received: by 10.99.175.24 with SMTP id w24mr5677935pge.2.1499048759107;
+        Sun, 02 Jul 2017 19:25:59 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1499048759; cv=none;
+        d=google.com; s=arc-20160816;
+        b=tJOH+Tx72NwC+Rb7UURKTblz+ac1kkbzc7kUJdS7wXcB+B7XjOd/mpjz2vYaWNavg/
+         gkoPT4H93PSB2qkWjtNjhlFCOemABbYtiCe7j6GojjsKPvxSPKXbdpDpI4xlEUJlRPcn
+         W5JuzhMoO0Xzmxw7AaYzxPsRNjsB3wDlc2qK3q9uxBr9hpUbGFFodge8Ve4ztRfES2zJ
+         jNzHNTLlluyKd1pH3uUx1OAo4/rKz7JlzgwyqHJP5QXs0EKo+a/vz1CmZotz5L9oRTwh
+         +t1ZHe79w3+mtmqxH/XqPGJt2zc31gTDmwYey+h/BERPcNg3zca2h7he3z0nZjx/DJ6X
+         VMTw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=TnUjKXeW8zRLxrQl2f15SPt6ugZFe0OUrJC5oV6m4EQ=;
+        b=AvmbWjFA4fqrXRwejjNSdSn9S2iBsikqtoVJ6MKpfNulz/tFk0uPmt3krKjU8NZzJ0
+         X0XJdsKRtDVAjR+gfYGWLgng+Gi6S7q/+KuhqJZhY6sr3UuJAaodumAVuccKAc5lyMTr
+         jQV0UqJpgklTpNrz2MdbSJ3gsmU5F3s5lEraUllJ/nDX+yaoZev0X2ZMolo4QwvPJNYI
+         jpxF2hTw/ene5tVo+qbz2hoFF6zffFyC2gfXYQ7iCPP3H8PhMPHU/fOtJCFuJg810mJd
+         JR/Z5PpK+Q8kA5Um1PaM/h7SzSAEyDzv0HNJwlqe9OYNpT2AExxx1BTd5+8hXRA7WJws
+         XaRQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=WNMGkNkl;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22b.google.com (mail-io0-x22b.google.com. [2607:f8b0:4001:c06::22b])
+        by gmr-mx.google.com with ESMTPS id t139si102309itb.1.2017.07.02.19.25.59
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 02 Jul 2017 19:25:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22b as permitted sender) client-ip=2607:f8b0:4001:c06::22b;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=WNMGkNkl;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22b.google.com with SMTP id z62so47885376ioi.3
+        for <opensport@googlegroups.com>; Sun, 02 Jul 2017 19:25:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=TnUjKXeW8zRLxrQl2f15SPt6ugZFe0OUrJC5oV6m4EQ=;
+        b=WNMGkNklNdp8V2uKhlKKwj5lDo0ozYQTjwR449Nu3a9EIHpulWOgst0etdrtZ3mtSy
+         SwsYmKKMy8MwsNMlq/W0G4q6OGvELjxiDxGz/PtMW7ceTpL6L+VabfiWTc/z/w/cjPJq
+         uwLKJQKE9CtMXP7zzXeNLtoyA/e83xHT+sbvZqpgjFuOpSzb2XfPZ7zOF3jIZvEEgTUu
+         vul/nKoUbXtD+s8CWIdr2QzSxretQHOYT/4bQdJ+RzojRDC6Nq3Et9ewIis0pAO3/X7P
+         b3rIqyLmuAMO5MpVnkJ3bushPQcGYQsa7NpRWEbTEirD1xzcEzu/o2O5gM5rzRzxaFMk
+         IO7g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=TnUjKXeW8zRLxrQl2f15SPt6ugZFe0OUrJC5oV6m4EQ=;
+        b=hScoyovjM6xCd0lzvTlKldsYnris8YLNCe+OToPz/BVfGencaQFz+4zYkaEBl6txn0
+         J+LMw/pFWgNYpmjtKQ5hDTwFtM1EAj2ROCqfyqHuGgiVqJUuW/tJpjByWjXHRLWEKXgt
+         CPPDwNtZZMFy0r5zefDuMXrED7ei5JzqOEahLRNLAa6lB6uEHaShAx/6QDfChXUFuF1G
+         nMpSsTFx8zq2Ib+CTApgtVd2f/eC3/HNdbC9bUZZtmHNaDYXJfOjKDNdx+r8VwsJkFRR
+         7TMO0RO8nVMl227DCWIZ8hxMCNeZBe3ogTUV7qonPvvBfAfLO3858tGAPkJdZ3OK51TP
+         R6VQ==
+X-Gm-Message-State: AKS2vOyixoL9kkwADyh99dkNsqCY3vqHeRvs+v3IQk79Irh9ZqsqAhiB
+	v8FIOi408oK0uPm2qnSnBvQ7rFefgwmj
+X-Received: by 10.107.154.5 with SMTP id c5mr36184698ioe.109.1499048758697;
+ Sun, 02 Jul 2017 19:25:58 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.4.17 with HTTP; Sun, 2 Jul 2017 19:25:58 -0700 (PDT)
+In-Reply-To: <33c56d05-729e-47f7-887a-f91c3e34376f@googlegroups.com>
+References: <33c56d05-729e-47f7-887a-f91c3e34376f@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 3 Jul 2017 04:25:58 +0200
+Message-ID: <CAAxEZd80E4udaTbtj-jRrKrvT8vVrj7N2E_0F_s1x=CFRkQ5LA@mail.gmail.com>
+Subject: Re: [opensport] Football.json missing results
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Welcome to football.db.
+
+  >  I tried to post this about 15 minutes ago on my mobile but I
+can't find the post anywhere,
+> so I'm assuming it didn't go through.
+
+    The first posting is moderated - it says so too on the forum page
+in bold letters e.g.:
+
+> Note: Due to spam attacks your very first posting will get moderated (please be patient;
+> once checked all your posts get straight through without any further delay or moderation).
+
+
+ For up-to-date results it's always best to build your own database /
+JSON files. See the /eng-england repo [1] for how to build your own.
+
+ Cheers.
+
+PS: There's also a Frequently Asked Questions (F.A.Q.) page you might check [2].
+
+[1] https://github.com/openfootball/eng-england
+[2] https://github.com/openfootball/docs/blob/master/questions.md
+

@@ -1,0 +1,58 @@
+From 503939334144@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 499705184256
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,95f71f5c2c5a3d45
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.150.205.21 with SMTP id c21mr582220ybg.3.1235151871377; Fri, 
+	20 Feb 2009 09:44:31 -0800 (PST)
+Date: Fri, 20 Feb 2009 09:44:31 -0800 (PST)
+In-Reply-To: <1f058eab0902190337g73afc15bl1d339c6b54a4223e@mail.gmail.com>
+X-IP: 24.210.246.49
+References: <1f058eab0902190337g73afc15bl1d339c6b54a4223e@mail.gmail.com>
+User-Agent: G2/1.0
+X-Google-Token: yKeyggwAAAACXT5isSk4_WaL7YljuNI3
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en; 
+	rv:1.8.1.4) Gecko/20070509 Camino/1.5,gzip(gfe),gzip(gfe)
+Message-ID: <0d53964d-f77a-46cb-a96b-75dd529181a6@v42g2000yqj.googlegroups.com>
+Subject: Re: S6 Updated; Now Includes Incremental Display (Steps); S9 Updated 
+	w/ S6 Templates
+From: "Bruce D'Arcus" <bdarcus.lists@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+
+
+On Feb 19, 6:37 am, Gerald Bauer <ger...@vanbeta.com> wrote:
+> Hello,
+>
+>   I added the missing support for incremental display (also known as
+> steps) to S6 [1]. I also updated the S9 gem [2] to include the updated
+> S6 templates.
+>
+>   What's new?
+>
+>   Use the step class to mark items you want to display step-by-step.
+> Note, you can mark lists (e.g. ul,ol) to mark all items at once e.g.
+>
+>    <!-- mark list with class step to mark all items at once -->
+>     <ul class='step'>
+>       <li>Item 1.1 Here</li>
+>       <li>Item 1.2 Here</li>
+>     </ul>
+>
+>     <!-- or mark individual list items -->
+>     <ul>
+>       <li class='step'>Item 2.1 Here</li>
+>       <li class='step'>Item 2.2 Here</li>
+>     </ol>
+
+So am I correct that you've changed what in S5 had been "incremental"
+to "step"?
+
+If yes, why?
+
+Bruce
+

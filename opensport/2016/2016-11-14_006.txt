@@ -1,0 +1,121 @@
+From 6352843067366572032@xxx Mon Nov 14 15:15:41 +0000 2016
+X-GM-THRID: 6212542687340396544
+X-Received: by 10.157.11.193 with SMTP id 59mr6789625oth.118.1479136540863;
+        Mon, 14 Nov 2016 07:15:40 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.18.246 with SMTP id g109ls7476506otg.7.gmail; Mon, 14 Nov
+ 2016 07:15:40 -0800 (PST)
+X-Received: by 10.157.56.107 with SMTP id r40mr6765670otd.24.1479136540481;
+        Mon, 14 Nov 2016 07:15:40 -0800 (PST)
+Received: by 10.129.152.15 with SMTP id p15msywg;
+        Mon, 14 Nov 2016 06:35:49 -0800 (PST)
+X-Received: by 10.157.63.164 with SMTP id r33mr1052944otc.10.1479134149297;
+        Mon, 14 Nov 2016 06:35:49 -0800 (PST)
+X-Google-Web-Client: true
+Date: Mon, 14 Nov 2016 06:35:48 -0800 (PST)
+From: rufuslenhador2010@gmail.com
+To: opensport <opensport@googlegroups.com>
+Message-Id: <c11b85b4-ff7d-4d30-89f2-7a6b2f47f8b1@googlegroups.com>
+In-Reply-To: <CAAxEZd-Qg2p_cWHN4Q_xJkGTCTLOCkuCMkm1-gBW8wDLoSDorQ@mail.gmail.com>
+References: <49ae2d67-5c87-4a42-9e32-ffd0f5800590@googlegroups.com>
+ <CAAxEZd-Qg2p_cWHN4Q_xJkGTCTLOCkuCMkm1-gBW8wDLoSDorQ@mail.gmail.com>
+Subject: Re: [opensport] NameError: uninitialized constant
+ WorldDb::ReaderBase
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2393_585771806.1479134149070"
+X-Google-Token: EMSXp8EFHwGuuG1Vjkk0
+X-Google-IP: 177.87.101.244
+
+------=_Part_2393_585771806.1479134149070
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2394_1168873908.1479134149070"
+
+------=_Part_2394_1168873908.1479134149070
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I this I have this same problem with the sportbook app.
+Isn't this and "old" (and ok) version?
+
+> rufus@rufus:~/sportbook$ grep -i worlddb Gemfile
+> gem 'worlddb', '2.0.4'   # see https://github.com/geraldb/world.db.ruby
+> gem 'worlddb-admin', '0.1.1'
+> gem 'worlddb-flags', '0.1.0'  # use bundled country flags
+> gem 'worlddb-data',           '9.9.9', git: 
+'https://github.com/openmundi/world.db.git'
+
+> 
+/home/rufus/.rvm/gems/ruby-2.3.0/gems/bundler-1.13.6/lib/bundler/runtime.rb:94:in 
+`rescue in block (2 levels) in require': There was an error while trying to 
+load the gem 'sportdb'. (Bundler::GemRequireError)
+> Gem Load Error is: uninitialized constant WorldDb::ReaderBase
+
+Gerald Bauer:
+>
+> Hello, 
+>
+>     Hard to tell. Are you trying to setup the sportbook rails app [1] ? 
+>
+>     If you do - you have to make sure you use the "old" versions 
+> listed in the Gemfile [2] e.g. worlddb v2.0.4.  The latest versions of 
+> the worlddb / sportdb / persondb  do NOT work with the sportbook (that 
+> is, the sportbook needs to get updated sometime).  Cheers. 
+>
+> [1] github.com/openbookie/sportbook 
+> [2] github.com/openbookie/sportbook/blob/master/Gemfile 
+>
+
+------=_Part_2394_1168873908.1479134149070
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I this I have this same problem with the sportbook app.<br=
+>Isn&#39;t this and &quot;old&quot; (and ok) version?<br><br>&gt; rufus@ruf=
+us:~/sportbook$ grep -i worlddb Gemfile<br>&gt; gem &#39;worlddb&#39;, &#39=
+;2.0.4&#39;=C2=A0=C2=A0 # see https://github.com/geraldb/world.db.ruby<br>&=
+gt; gem &#39;worlddb-admin&#39;, &#39;0.1.1&#39;<br>&gt; gem &#39;worlddb-f=
+lags&#39;, &#39;0.1.0&#39;=C2=A0 # use bundled country flags<br>&gt; gem &#=
+39;worlddb-data&#39;,=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0 &#39;9.9.9&#39;, git: &#39;https://github.com/openmundi/world.db.git=
+&#39;<br><br>&gt; /home/rufus/.rvm/gems/ruby-2.3.0/gems/bundler-1.13.6/lib/=
+bundler/runtime.rb:94:in `rescue in block (2 levels) in require&#39;: There=
+ was an error while trying to load the gem &#39;sportdb&#39;. (Bundler::Gem=
+RequireError)<br>&gt; Gem Load Error is: uninitialized constant WorldDb::Re=
+aderBase<br><br>Gerald Bauer:<blockquote class=3D"gmail_quote" style=3D"mar=
+gin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">H=
+ello,
+<br>
+<br>=C2=A0 =C2=A0 Hard to tell. Are you trying to setup the sportbook rails=
+ app [1] ?
+<br>
+<br>=C2=A0 =C2=A0 If you do - you have to make sure you use the &quot;old&q=
+uot; versions
+<br>listed in the Gemfile [2] e.g. worlddb v2.0.4. =C2=A0The latest version=
+s of
+<br>the worlddb / sportdb / persondb =C2=A0do NOT work with the sportbook (=
+that
+<br>is, the sportbook needs to get updated sometime). =C2=A0Cheers.
+<br>
+<br>[1] <a href=3D"http://github.com/openbookie/sportbook" target=3D"_blank=
+" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.google.com/ur=
+l?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenbookie%2Fsportbook\x26sa\x3dD\x26sntz\=
+x3d1\x26usg\x3dAFQjCNEiWkZ7yFYmg-qYvayfZLqkQVB6kw&#39;;return true;" onclic=
+k=3D"this.href=3D&#39;http://www.google.com/url?q\x3dhttp%3A%2F%2Fgithub.co=
+m%2Fopenbookie%2Fsportbook\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNEiWkZ7yF=
+Ymg-qYvayfZLqkQVB6kw&#39;;return true;">github.com/openbookie/<wbr>sportboo=
+k</a>
+<br>[2] <a href=3D"http://github.com/openbookie/sportbook/blob/master/Gemfi=
+le" target=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http=
+://www.google.com/url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenbookie%2Fsportbook=
+%2Fblob%2Fmaster%2FGemfile\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFqlW51Yu=
+h00D7lrHNjm6sa-SX55Q&#39;;return true;" onclick=3D"this.href=3D&#39;http://=
+www.google.com/url?q\x3dhttp%3A%2F%2Fgithub.com%2Fopenbookie%2Fsportbook%2F=
+blob%2Fmaster%2FGemfile\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNFqlW51Yuh00=
+D7lrHNjm6sa-SX55Q&#39;;return true;">github.com/openbookie/<wbr>sportbook/b=
+lob/master/Gemfile</a>
+<br></blockquote></div>
+------=_Part_2394_1168873908.1479134149070--
+
+------=_Part_2393_585771806.1479134149070--
+

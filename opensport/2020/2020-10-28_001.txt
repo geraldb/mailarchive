@@ -1,0 +1,142 @@
+From 6888640895957073920@xxx Wed Oct 28 12:04:54 +0000 2020
+X-GM-THRID: 6888640892938223616
+X-Received: by 2002:a05:6402:17b7:: with SMTP id j23mr7481383edy.288.1603886693708;
+        Wed, 28 Oct 2020 05:04:53 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:6402:160e:: with SMTP id f14ls5301123edv.2.gmail; Wed,
+ 28 Oct 2020 05:04:51 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzgOeGh5g8W/l+ULbToyHQbahhcp7KJfqYQwQyF23tCaIw5bgkKNiVOaci4UwkK4XxeFEFz
+X-Received: by 2002:a50:8426:: with SMTP id 35mr7353359edp.156.1603886691870;
+        Wed, 28 Oct 2020 05:04:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1603886691; cv=none;
+        d=google.com; s=arc-20160816;
+        b=emg6OukLhyW3E5xzYZqG3WMQuzIMEU46mDDm4zJFQND+lPYYnAklZka3ioTEPQ9SXK
+         qUPh0hOX0RZWjZzvmfN8VXc5nA8Z9Akdq+DV9guS6MYZ8eotJDLCa0NkcbgJpLQCTgxu
+         4XufhmVEleejubKfcEX+E/ZM4Sg8utUTj4DApxkW47rXb7zLPAespyV8oSijX4LIyLfK
+         9ABBihpENiNtDZwVGCvQBYBCCVu/yRq1PihrdR2+PwIiPm20mk2rOchwA5I0DBUKi1Yz
+         Ie6qNoz+6r9Jq6+8AwAxy0jUD9wo8+l89d8Bntz55mMTe9iohom99mgJ5BBEJiwhbrLi
+         2dNA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=SxdaCRTcxRwRD2vVKd5/2o+dx2LzqW1iP7XqueFwWvY=;
+        b=kApI9pXiqVb5mLnCQluEygDxX9eiXCOfc3OuZtCkzAXMfCdbU71b1z0FX1ILN+dRpR
+         4aRac+kTs7Z7YEDH+mMukbqP2LmoiNoYwWemQoZJkbFq/0jwrAuMlslQclvRhGFtI18q
+         DmXbvjQwPSvTqJfVIH691GtJWrsTjN9bWJg03zReV0tJwQuSXmgzLJo4TiyX2vUiwX69
+         9bw0ScMxXstiPq7uQu8tEfAcOHlIr3iJMmu9ckDsqx4Tw7qrOWByQFIzOdseGQwy1TAe
+         ymv51goKef2WcGEGUPJmO6q69bCn1jqsp8Z8oZ5DwPG6Ep2ttTXXQt7BDfsNAp90oHjc
+         UF0Q==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=TApURgep;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::636 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ej1-x636.google.com (mail-ej1-x636.google.com. [2a00:1450:4864:20::636])
+        by gmr-mx.google.com with ESMTPS id n7si112663edy.3.2020.10.28.05.04.51
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 28 Oct 2020 05:04:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::636 as permitted sender) client-ip=2a00:1450:4864:20::636;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=TApURgep;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::636 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ej1-x636.google.com with SMTP id t25so6786865ejd.13
+        for <opensport@googlegroups.com>; Wed, 28 Oct 2020 05:04:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=SxdaCRTcxRwRD2vVKd5/2o+dx2LzqW1iP7XqueFwWvY=;
+        b=TApURgep21CHwHRHTWGdhhPDMqBAtQsU0d0xIL1hKF+bm1P2nT6BQhrTyboAa9HAoU
+         3ibd+bmyu1vjpNZYOjBEEXRdrxVZPXr+ftYLHlkefxoNQIm29aFbHNAlJPUVeOJaYHeh
+         eXCN35jW99qxAIIgeWKMOIJfgW4y6bGSQV2p6tHGdj+4OX4O6IoLUJdTxdOoHINloWGk
+         O1dA1hAGfttSvrq5Ozo1/JslI12qC2hFF+lpJhVydqp4StFI3X44d6SDBkzO1SuvrVfH
+         tryyOfa+oH/xvUICT97hx8tFcHKMRQNIde8d56RYxYJQJlDulhkIxTiRMY3jCFqn+6fE
+         2gAA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=SxdaCRTcxRwRD2vVKd5/2o+dx2LzqW1iP7XqueFwWvY=;
+        b=R4TUV2TC8uFtcpihgY1BJeEqnGjJ/iuuEixM+iwoWZfZc/uKU/1UKtbZjpRE5FCQeL
+         s6zBdh2iiLSBIJQntd10sXvk27wtReJHOacPRtG+kuufgpT2phT/ry7eW9iywtrVUDTh
+         pxDM4c6wXf41uZObZIzzGS5Hn2xA53HiWefEzVdy2ZXMXo11DIJSpUvO18K/OODywYJy
+         ElnMnGSHKrw3Ty8Amt8TSIE4ZuauXPBE524ANTuxfS/NuTXFcPQy2YOI4x06OmuKriCt
+         f9bhPPKNKhMLkKNsg122Cz4rwUfwW0NJZNnRCSmEMYXugRHXmsZ56xnx+pJPFZTU/rhz
+         rZfA==
+X-Gm-Message-State: AOAM530tvMMER8Br8e2b/BXqege5FQiSoDHGU3U4IxZBcEGx2jDipkyQ
+	uBdnErNF9Mu7y0VkxDrRwXaX6EQacR9RGnTcUhUgRcqVhNjEsQ==
+X-Received: by 2002:a17:906:4a4c:: with SMTP id a12mr6994107ejv.392.1603886691301;
+ Wed, 28 Oct 2020 05:04:51 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 28 Oct 2020 13:04:39 +0100
+Message-ID: <CAAxEZd82iee-n7x7foK_4udVSqkiX+zCzfB9mk04uo8FXWMzgg@mail.gmail.com>
+Subject: New football-to-psql build tool - load / read football.txt match
+ datafiles (e.g. English Premier League, German Bundesliga, Spanish La Liga,
+ etc.) into a postgreSQL database
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+    inspired by the football-to-sqlite tool [1] I have put together
+the big brother / sister football-to-psql [2] tool that - surprise,
+surprise - lets you load / read football.txt match datafiles (e.g.
+English Premier League, German Bundesliga, Spanish La Liga 2020/21,
+etc.) into a postgreSQL database.
+
+Usage. Try:
+
+```
+$ football-to-psql --help
+```
+
+printing:
+
+```
+Usage: football-to-psql [options] DATABASE PATHS...
+    -u, --username USERNAME     database username (default: postgres)
+    -p, --password PASSWORD     database password (default: postgres)
+    -h, --host HOST             database host     (default: localhost)
+```
+
+
+
+Run this tool against match files in the Football.TXT format like so:
+
+```
+$ football-to-psql england.db 2020-21\1-premierleague.txt
+```
+
+or pass in more than one match file:
+
+```
+$ football-to-psql england.db 2020-21\1-premierleague.txt \
+                              2020-21\2-championship.txt  \
+                              2020-21\3-league1.txt       \
+                              2020-21\4-league2.txt       \
+                              2020-21\5-nationalleague.txt
+```
+
+
+Note: If the PostgreSQL database (and its tables, views & indices) do
+not (yet) exist, they get auto-created on the first run.
+
+Note: You can use football2psq as an alias / alternate name.
+
+
+**Pipes & Standard Input (STDIN)**
+
+You can use any command line tool to download match files and pipe
+(via stdin) into this tool like so:
+
+```
+$ curl https://raw.githubusercontent.com/openfootball/world-cup/master/2018--russia/cup.txt
+| football-to-psql worldcup.db
+```
+
+That's it for now. Enjoy the beautiful game with postgreSQL. Cheers. Prost.
+
+
+[1] https://github.com/sportdb/football.db/tree/master/football-to-sqlite
+[2] https://github.com/sportdb/football.db/tree/master/football-to-psql
+

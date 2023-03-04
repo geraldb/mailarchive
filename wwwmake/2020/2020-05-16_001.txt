@@ -1,0 +1,95 @@
+From 6827450078741921792@xxx Sat May 16 14:33:16 +0000 2020
+X-GM-THRID: 6826112277555445760
+X-Gmail-Labels: Topic type: DISCUSSION
+Date: Sat, 16 May 2020 07:33:16 -0700 (PDT)
+From: infominer <infominer33@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <bfbcfb50-bc16-47f4-8ead-3e77e4ee2c17@googlegroups.com>
+In-Reply-To: <CAAxEZd9yqiTPJ4JwpfHx3zqvZV8vy8N9e332TOSZa1mpP3cf1w@mail.gmail.com>
+References: <9d686d6a-a61a-473e-b193-a5ec694645df@googlegroups.com>
+ <CAAxEZd9yqiTPJ4JwpfHx3zqvZV8vy8N9e332TOSZa1mpP3cf1w@mail.gmail.com>
+Subject: Re: [wwwmake:500] Trying to filter microblogs from pluto output
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_896_1983350778.1589639596721"
+X-Google-Token: EKzz__UFA78jIQ7Lc1Q0
+X-Google-IP: 3.14.172.171
+
+------=_Part_896_1983350778.1589639596721
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_897_357490813.1589639596721"
+
+------=_Part_897_357490813.1589639596721
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hey, thanks Gerald! I'm glad you appreciate it. I know I do. It makes this 
+project really portable!
+
+Thanks for the intro to ERB, that definitely helped. Something I can figure 
+out, as I go.
+
+I'm pretty stoked about Pluto. I'll enjoy exploring the possibilities.
+
+On Thursday, May 14, 2020 at 5:34:34 AM UTC-4, Gerald Bauer wrote:
+>
+> Hello, 
+>     First thanks for sharing the GitHub Action recipe / setup. Love it! 
+>
+>      About filtering (micro) posts, that is, feed items -  if you know 
+> some ruby scripting / programming (and some SQL for database queries) 
+> than you can do everything in your templates since the use ERB (that 
+> is, embedded ruby). 
+>
+>      Unfortunately - I don't know any micropost example I can point 
+> you  but checking if the title is empty (or blank?) looks like a good 
+> way to filter e.g. use something like 
+>
+>    <% if item.title.blank? %> 
+>     ....   assume (micro) post 
+>    <% else %> 
+>     ...   assume standard / regular post 
+>    <% end %> 
+>
+>      Not sure if this helps. Good luck. Cheers. Prost. 
+>
+
+------=_Part_897_357490813.1589639596721
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hey, thanks Gerald! I&#39;m glad you appreciate it. I know=
+ I do. It makes this project really portable!<br><div><br></div><div>Thanks=
+ for the intro to ERB, that definitely helped. Something I can figure out, =
+as I go.</div><div><br></div><div>I&#39;m pretty stoked about Pluto. I&#39;=
+ll enjoy exploring the possibilities.<br></div><div><br></div>On Thursday, =
+May 14, 2020 at 5:34:34 AM UTC-4, Gerald Bauer wrote:<blockquote class=3D"g=
+mail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc sol=
+id;padding-left: 1ex;">Hello,
+<br>=C2=A0 =C2=A0 First thanks for sharing the GitHub Action recipe / setup=
+. Love it!
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0About filtering (micro) posts, that is, feed items =
+- =C2=A0if you know
+<br>some ruby scripting / programming (and some SQL for database queries)
+<br>than you can do everything in your templates since the use ERB (that
+<br>is, embedded ruby).
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0Unfortunately - I don&#39;t know any micropost exam=
+ple I can point
+<br>you =C2=A0but checking if the title is empty (or blank?) looks like a g=
+ood
+<br>way to filter e.g. use something like
+<br>
+<br>=C2=A0 =C2=A0&lt;% if item.title.blank? %&gt;
+<br>=C2=A0 =C2=A0 .... =C2=A0 assume (micro) post
+<br>=C2=A0 =C2=A0&lt;% else %&gt;
+<br>=C2=A0 =C2=A0 ... =C2=A0 assume standard / regular post
+<br>=C2=A0 =C2=A0&lt;% end %&gt;
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0Not sure if this helps. Good luck. Cheers. Prost.
+<br></blockquote></div>
+------=_Part_897_357490813.1589639596721--
+
+------=_Part_896_1983350778.1589639596721--
+

@@ -1,0 +1,253 @@
+From 2270734319616@xxx Tue Jun 16 00:16:45 +0000 2015
+X-GM-THRID: 2254972125184
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fdd82ec609b6c4e4
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.126.233 with SMTP id nb9mr1992264obb.9.1416538198180;
+        Thu, 20 Nov 2014 18:49:58 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.73.194 with SMTP id n2ls378797igv.30.gmail; Thu, 20 Nov
+ 2014 18:49:57 -0800 (PST)
+X-Received: by 10.50.41.73 with SMTP id d9mr256256igl.15.1416538197933;
+        Thu, 20 Nov 2014 18:49:57 -0800 (PST)
+X-Google-Doc-Id: 4e4b7d5ebc22d491
+X-Google-Web-Client: true
+Date: Thu, 20 Nov 2014 18:49:56 -0800 (PST)
+From: anonfunction@gmail.com
+To: opensport@googlegroups.com
+Message-Id: <05ebac69-a367-49a7-ae47-91f4fbaac2dd@googlegroups.com>
+In-Reply-To: <bee9b9b6-ca46-4101-9b8e-44332ac9e364@googlegroups.com>
+References: <923ec44d-6a0f-4f21-903a-0835e94f1b4c@googlegroups.com>
+ <bee9b9b6-ca46-4101-9b8e-44332ac9e364@googlegroups.com>
+Subject: Re: Cannot build football.db with world cup data
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_57_2078935319.1416538196801"
+X-Google-Token: ENTQuqMFlQn6b36iT200
+X-Google-IP: 67.174.196.203
+
+------=_Part_57_2078935319.1416538196801
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_58_1106969743.1416538196801"
+
+------=_Part_58_1106969743.1416538196801
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks Gerald! I'm trying to host my own API 
+because http://footballdb.herokuapp.com/api/v1/event/world.2014/teams is 
+down. If you do build it successfully could you maybe add it as a release 
+to https://github.com/openfootball/build/releases since they all seem to be 
+outdated?
+
+Anyways here's the full output:
+
+before require 'active_record'
+after require 'active_record'
+before require 'active_support/all'
+after require 'active_support/all'
+before require 'worlddb'
+confdb/1.1.1 on Ruby 1.9.3 (2013-11-22) [x86_64-linux]
+tagutils/0.2.2 on Ruby 1.9.3 (2013-11-22) [x86_64-linux]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Region<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::City<
+worlddb/2.0.8 on Ruby 1.9.3 (2013-11-22) [x86_64-linux]
+after require 'worlddb'
+before require 'sportdb'
+activerecord-utils/0.2.0 (activerecord/4.1.8) on Ruby 1.9.3 (2013-11-22) 
+[x86_64-linux]
+logdb 0.6.0 on Ruby 1.9.3 (2013-11-22) [x86_64-linux]
+persondb/0.3.1 on Ruby 1.9.3 (2013-11-22) [x86_64-linux]
+fetcher/0.4.4 on Ruby 1.9.3 (2013-11-22) [x86_64-linux]
+sportdb-update/0.0.1 on Ruby 1.9.3 (2013-11-22) [x86_64-linux]
+sportdb-service/0.4.0 on Ruby 1.9.3 (2013-11-22) [x86_64-linux]
+sportdb/1.9.8 on Ruby 1.9.3 (2013-11-22) [x86_64-linux]
+after require 'sportdb'
+  importing task >./tasks/basics/grounds.rake<...
+  importing task >./tasks/basics/players.rake<...
+  importing task >./tasks/basics/assocs.rake<...
+  importing task >./tasks/logs.rake<...
+  importing task >./tasks/about.rake<...
+  importing task >./tasks/dump.rake<...
+  importing task >./tasks/stats/alltime.rake<...
+  importing task >./tasks/stats/matches.rake<...
+  importing task >./tasks/stats/standings.rake<...
+  importing task >./tasks/stats/stats.rake<...
+  importing task >./tasks/check.rake<...
+  importing task >./tasks/book.rake<...
+  importing task >./tasks/setups/admin.rake<...
+  importing task >./tasks/setups/cl.rake<...
+  importing task >./tasks/setups/history.rake<...
+  importing task >./tasks/setups/copasudamericana.rake<...
+  importing task >./tasks/setups/at.rake<...
+  importing task >./tasks/setups/all.rake<...
+  importing task >./tasks/setups/copalibertadores.rake<...
+  importing task >./tasks/setups/en.rake<...
+  importing task >./tasks/setups/de.rake<...
+  importing task >./tasks/setups/fr.rake<...
+  importing task >./tasks/setups/worldcup.rake<...
+  importing task >./tasks/setups/it.rake<...
+  importing task >./tasks/setups/copaamerica.rake<...
+  importing task >./tasks/setups/goldcup.rake<...
+  importing task >./tasks/setups/eurocup.rake<...
+  importing task >./tasks/setups/mls.rake<...
+  importing task >./tasks/setups/northamericachampionsleague.rake<...
+  importing task >./tasks/setups/es.rake<...
+  using DATA_KEY >worldcup2014<
+{"adapter"=>"sqlite3", "database"=>"./build/football.db"}
+*** deleting sport table records/data...
+rake aborted!
+ActiveRecord::StatementInvalid: SQLite3::SQLException: no such table: 
+alltime_standing_entries: DELETE FROM "alltime_standing_entries"
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.10/lib/sqlite3/database.rb:91:in 
+`initialize'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.10/lib/sqlite3/database.rb:91:in `new'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.10/lib/sqlite3/database.rb:91:in 
+`prepare'
+/var/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/active_record/connection_adapters/sqlite3_adapter.rb:301:in 
+`block in exec_query'
+/var/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/active_record/connection_adapters/abstract_adapter.rb:373:in 
+`block in log'
+/var/lib/gems/1.9.1/gems/activesupport-4.1.8/lib/active_support/notifications/instrumenter.rb:20:in 
+`instrument'
+/var/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/active_record/connection_adapters/abstract_adapter.rb:367:in 
+`log'
+/var/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/active_record/connection_adapters/sqlite3_adapter.rb:298:in 
+`exec_query'
+/var/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/active_record/connection_adapters/sqlite3_adapter.rb:324:in 
+`exec_delete'
+/var/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/active_record/connection_adapters/abstract/database_statements.rb:106:in 
+`delete'
+/var/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/active_record/connection_adapters/abstract/query_cache.rb:14:in 
+`delete'
+/var/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/active_record/relation.rb:456:in 
+`delete_all'
+/var/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/active_record/querying.rb:8:in 
+`delete_all'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/deleter.rb:14:in `run'
+/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb.rb:179:in `delete!'
+/root/openfootball/build/Rakefile:200:in `block in <top (required)>'
+Tasks: TOP => update => deletesport
+(See full trace by running task with --trace)
+
+On Thursday, November 20, 2014 2:37:23 PM UTC-8, Gerald Bauer wrote:
+>
+> Hello,
+>
+>   Thanks for trying the football.db build script for the world cup.  I 
+> will try a build on the weekend to check the setup. Thanks for your 
+> patience. 
+>
+>     Maybe you can try:
+>
+>    $ rake update DATA=worldcup2014         # use update (instead of build) 
+> to not read in the world.db again (just the football datasets)
+>
+>     And than post the first twenty lines from the log/console it should 
+> tell what's going on.  Cheers.
+>
+
+------=_Part_58_1106969743.1416538196801
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Thanks Gerald! I'm trying to host my own API because&=
+nbsp;http://footballdb.herokuapp.com/api/v1/event/world.2014/teams is down.=
+ If you do build it successfully could you maybe add it as a release to&nbs=
+p;https://github.com/openfootball/build/releases since they all seem to be =
+outdated?</div><div><br></div><div>Anyways here's the full output:</div><di=
+v><br></div><div><div>before require 'active_record'</div><div>after requir=
+e 'active_record'</div><div>before require 'active_support/all'</div><div>a=
+fter require 'active_support/all'</div><div>before require 'worlddb'</div><=
+div>confdb/1.1.1 on Ruby 1.9.3 (2013-11-22) [x86_64-linux]</div><div>taguti=
+ls/0.2.2 on Ruby 1.9.3 (2013-11-22) [x86_64-linux]</div><div>&nbsp; [TagDb.=
+has_many_tags] adding taggings n tags has_many assocs to model &gt;WorldDb:=
+:Model::Country&lt;</div><div>&nbsp; [TagDb.has_many_tags] adding taggings =
+n tags has_many assocs to model &gt;WorldDb::Model::Region&lt;</div><div>&n=
+bsp; [TagDb.has_many_tags] adding taggings n tags has_many assocs to model =
+&gt;WorldDb::Model::City&lt;</div><div>worlddb/2.0.8 on Ruby 1.9.3 (2013-11=
+-22) [x86_64-linux]</div><div>after require 'worlddb'</div><div>before requ=
+ire 'sportdb'</div><div>activerecord-utils/0.2.0 (activerecord/4.1.8) on Ru=
+by 1.9.3 (2013-11-22) [x86_64-linux]</div><div>logdb 0.6.0 on Ruby 1.9.3 (2=
+013-11-22) [x86_64-linux]</div><div>persondb/0.3.1 on Ruby 1.9.3 (2013-11-2=
+2) [x86_64-linux]</div><div>fetcher/0.4.4 on Ruby 1.9.3 (2013-11-22) [x86_6=
+4-linux]</div><div>sportdb-update/0.0.1 on Ruby 1.9.3 (2013-11-22) [x86_64-=
+linux]</div><div>sportdb-service/0.4.0 on Ruby 1.9.3 (2013-11-22) [x86_64-l=
+inux]</div><div>sportdb/1.9.8 on Ruby 1.9.3 (2013-11-22) [x86_64-linux]</di=
+v><div>after require 'sportdb'</div><div>&nbsp; importing task &gt;./tasks/=
+basics/grounds.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/basi=
+cs/players.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/basics/a=
+ssocs.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/logs.rake&lt;=
+...</div><div>&nbsp; importing task &gt;./tasks/about.rake&lt;...</div><div=
+>&nbsp; importing task &gt;./tasks/dump.rake&lt;...</div><div>&nbsp; import=
+ing task &gt;./tasks/stats/alltime.rake&lt;...</div><div>&nbsp; importing t=
+ask &gt;./tasks/stats/matches.rake&lt;...</div><div>&nbsp; importing task &=
+gt;./tasks/stats/standings.rake&lt;...</div><div>&nbsp; importing task &gt;=
+./tasks/stats/stats.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks=
+/check.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/book.rake&lt=
+;...</div><div>&nbsp; importing task &gt;./tasks/setups/admin.rake&lt;...</=
+div><div>&nbsp; importing task &gt;./tasks/setups/cl.rake&lt;...</div><div>=
+&nbsp; importing task &gt;./tasks/setups/history.rake&lt;...</div><div>&nbs=
+p; importing task &gt;./tasks/setups/copasudamericana.rake&lt;...</div><div=
+>&nbsp; importing task &gt;./tasks/setups/at.rake&lt;...</div><div>&nbsp; i=
+mporting task &gt;./tasks/setups/all.rake&lt;...</div><div>&nbsp; importing=
+ task &gt;./tasks/setups/copalibertadores.rake&lt;...</div><div>&nbsp; impo=
+rting task &gt;./tasks/setups/en.rake&lt;...</div><div>&nbsp; importing tas=
+k &gt;./tasks/setups/de.rake&lt;...</div><div>&nbsp; importing task &gt;./t=
+asks/setups/fr.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/setu=
+ps/worldcup.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/setups/=
+it.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/setups/copaameri=
+ca.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/setups/goldcup.r=
+ake&lt;...</div><div>&nbsp; importing task &gt;./tasks/setups/eurocup.rake&=
+lt;...</div><div>&nbsp; importing task &gt;./tasks/setups/mls.rake&lt;...</=
+div><div>&nbsp; importing task &gt;./tasks/setups/northamericachampionsleag=
+ue.rake&lt;...</div><div>&nbsp; importing task &gt;./tasks/setups/es.rake&l=
+t;...</div><div>&nbsp; using DATA_KEY &gt;worldcup2014&lt;</div><div>{"adap=
+ter"=3D&gt;"sqlite3", "database"=3D&gt;"./build/football.db"}</div><div>***=
+ deleting sport table records/data...</div><div>rake aborted!</div><div>Act=
+iveRecord::StatementInvalid: SQLite3::SQLException: no such table: alltime_=
+standing_entries: DELETE FROM "alltime_standing_entries"</div><div>/var/lib=
+/gems/1.9.1/gems/sqlite3-1.3.10/lib/sqlite3/database.rb:91:in `initialize'<=
+/div><div>/var/lib/gems/1.9.1/gems/sqlite3-1.3.10/lib/sqlite3/database.rb:9=
+1:in `new'</div><div>/var/lib/gems/1.9.1/gems/sqlite3-1.3.10/lib/sqlite3/da=
+tabase.rb:91:in `prepare'</div><div>/var/lib/gems/1.9.1/gems/activerecord-4=
+.1.8/lib/active_record/connection_adapters/sqlite3_adapter.rb:301:in `block=
+ in exec_query'</div><div>/var/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/a=
+ctive_record/connection_adapters/abstract_adapter.rb:373:in `block in log'<=
+/div><div>/var/lib/gems/1.9.1/gems/activesupport-4.1.8/lib/active_support/n=
+otifications/instrumenter.rb:20:in `instrument'</div><div>/var/lib/gems/1.9=
+.1/gems/activerecord-4.1.8/lib/active_record/connection_adapters/abstract_a=
+dapter.rb:367:in `log'</div><div>/var/lib/gems/1.9.1/gems/activerecord-4.1.=
+8/lib/active_record/connection_adapters/sqlite3_adapter.rb:298:in `exec_que=
+ry'</div><div>/var/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/active_record=
+/connection_adapters/sqlite3_adapter.rb:324:in `exec_delete'</div><div>/var=
+/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/active_record/connection_adapte=
+rs/abstract/database_statements.rb:106:in `delete'</div><div>/var/lib/gems/=
+1.9.1/gems/activerecord-4.1.8/lib/active_record/connection_adapters/abstrac=
+t/query_cache.rb:14:in `delete'</div><div>/var/lib/gems/1.9.1/gems/activere=
+cord-4.1.8/lib/active_record/relation.rb:456:in `delete_all'</div><div>/var=
+/lib/gems/1.9.1/gems/activerecord-4.1.8/lib/active_record/querying.rb:8:in =
+`delete_all'</div><div>/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/sportdb/d=
+eleter.rb:14:in `run'</div><div>/var/lib/gems/1.9.1/gems/sportdb-1.9.8/lib/=
+sportdb.rb:179:in `delete!'</div><div>/root/openfootball/build/Rakefile:200=
+:in `block in &lt;top (required)&gt;'</div><div>Tasks: TOP =3D&gt; update =
+=3D&gt; deletesport</div><div>(See full trace by running task with --trace)=
+</div></div><br>On Thursday, November 20, 2014 2:37:23 PM UTC-8, Gerald Bau=
+er wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: =
+0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">Hell=
+o,<br><br>&nbsp; Thanks for trying the football.db build script for the wor=
+ld cup.&nbsp; I will try a build on the weekend to check the setup. Thanks =
+for your patience. <br><br>&nbsp;&nbsp;&nbsp; Maybe you can try:<br><br>&nb=
+sp;&nbsp; $ rake update DATA=3Dworldcup2014&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;=
+&nbsp; # use update (instead of build) to not read in the world.db again (j=
+ust the football datasets)<br><br>&nbsp;&nbsp;&nbsp; And than post the firs=
+t twenty lines from the log/console it should tell what's going on.&nbsp; C=
+heers.<br></div></blockquote></div>
+------=_Part_58_1106969743.1416538196801--
+------=_Part_57_2078935319.1416538196801--
+

@@ -1,0 +1,106 @@
+From 6312327613775872000@xxx Thu Jul 28 10:55:01 +0000 2016
+X-GM-THRID: 6312297256737308672
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 10.129.109.150 with SMTP id i144mr4468453ywc.38.1469703301144;
+        Thu, 28 Jul 2016 03:55:01 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.45.231 with SMTP id g94ls3799092otb.30.gmail; Thu, 28 Jul
+ 2016 03:55:00 -0700 (PDT)
+X-Received: by 10.237.54.135 with SMTP id f7mr28612884qtb.6.1469703300742;
+        Thu, 28 Jul 2016 03:55:00 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22a.google.com (mail-io0-x22a.google.com. [2607:f8b0:4001:c06::22a])
+        by gmr-mx.google.com with ESMTPS id o123si849011ith.3.2016.07.28.03.55.00
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 28 Jul 2016 03:55:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) client-ip=2607:f8b0:4001:c06::22a;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22a.google.com with SMTP id 38so95926884iol.0
+        for <opensport@googlegroups.com>; Thu, 28 Jul 2016 03:55:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=q2FrGfeCzwq2niu1hFmnB+FynOBuu+XSgK1y7H5PGE0=;
+        b=MahhlfaUhKp1zdr6w0k2bzFJqUiBXwRh8wwHxeFAyubPgPB4LG5eKYvGogKineQKvh
+         u77DJg2PIqwZ4Vd/2NvBlNtmvgUz+TmzntR4803Zek6eznt2/6/qZJtS2z5XVbKE+/o/
+         MWhS5ZBLDUfEg5yH5fqKIHhfWsTLyKwdioDc9H63E9OONfmkGa/AWwLJL6Ro21K0PCIE
+         ik1tlOBN6ZMEa/TMkcsVQNbUFsL5CO/XqiYUM2v01ssLvfSCAKb37qnLPg7hnTEGbtDV
+         KJuxeSie/GQ6jNyuie5yRuPxFJHrttHU3tNbhFRxWSVxnYuF1V+ATqDB+KZAozN6xfrH
+         /J0w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=q2FrGfeCzwq2niu1hFmnB+FynOBuu+XSgK1y7H5PGE0=;
+        b=Ckmjc0OUvM79mgHvu80C8VZM9trXTehNcmcjRpm/3TibAd6MkQqXiQlPbQkqnZMtgz
+         iPD7tw7d0wQ9x8k1vKxZnXmInzMRuWpkL555hzUukYdLh8FJPzMXpHDrtEUM5ua06dMA
+         DPepi4CJK26w/U4OV7iBDSz+8DJYtDIqhVi5J5rDcgViTUKn5+MvQHD3nI4PN/Vo4M5O
+         qfeQPb62nH7gQGm63Apaf1SjiU7kzSFjZxbTYo3CGjzrmmS5Qa2vWmKzvBqIESngHVFh
+         lGYmQ5uEaW59KCPA6ny5sBI+gQ2pMregPMauelzaqXmOdHj7IN7iyhywIrLuhGO25MnC
+         XkNw==
+X-Gm-Message-State: AEkoouuKWGfQ5XhZvCG4GxfzK1Nf7ILw5vhj1QoeneyXxSrS4iIluCLYSOcsisd5CvmzFb6dQstimbHMFIRlaA==
+X-Received: by 10.107.20.73 with SMTP id 70mr38020759iou.15.1469703300269;
+ Thu, 28 Jul 2016 03:55:00 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Thu, 28 Jul 2016 03:54:59 -0700 (PDT)
+In-Reply-To: <083e3356-7574-48fa-ae9f-17d912ce6932@googlegroups.com>
+References: <083e3356-7574-48fa-ae9f-17d912ce6932@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 28 Jul 2016 12:54:59 +0200
+Message-ID: <CAAxEZd83MR-LgUa2TFsCwtY3Qrdy+WhHJHS2xTypiwKGc-WpVA@mail.gmail.com>
+Subject: Re: [opensport] Errors creating Serie A 2016/17 db from updated dataset
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Gabriele,
+
+   Great. Thanks for setting up the Seria A 2016/17.  Great to hear
+that it's working.
+
+   About the new format for 2016-17/series.yml  For now I'd say stay
+with the "old" yaml format and please ignore the warning. The new
+format is a simple(r) text fomat (but has no yet support for a
+fixtures entry).
+
+    You can see a working example for the new format here ->
+https://github.com/openfootball/de-deutschland/blob/master/archive/2000s/2006-07/1-bundesliga.conf.txt
+
+   In your case it would look like:
+
+Serie A 2016/17
+
+- AS Roma
+- Lazio Roma
+- Bologna FC
+- Juventus
+- Udinese Calcio
+- Empoli FC
+- Chievo Verona
+- Fiorentina
+- AC Milan
+- Torino FC
+- Internazionale
+- Atalanta
+- Palermo
+- Genoa CFC
+- Sampdoria
+- Sassuolo Calcio
+- SSC Napoli
+- Crotone
+- Pescara
+- Cagliari
+
+
+   Still there's the yet to be resolved issue with the fixtures entry
+(not yet support in the new format):
+
+fixtures:
+- seriea-i
+- seriea-ii
+
+   Again thanks for the Seriea A 2016/17 setup. Cheers.
+

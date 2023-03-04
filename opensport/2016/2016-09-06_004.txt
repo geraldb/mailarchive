@@ -1,0 +1,1354 @@
+From 6327070587968552960@xxx Tue Sep 06 04:25:17 +0000 2016
+X-GM-THRID: 6327070589248864256
+Date: Mon, 5 Sep 2016 21:25:17 -0700 (PDT)
+From: Chris Wendel <eeeketering1@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <ca4525cd-a47e-4569-93e0-f9efbbcb779b@googlegroups.com>
+Subject: rake db:setup failure
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1954_652919708.1473135917117"
+X-Google-Token: EK2Kub4F64FaF2GYIww0
+X-Google-IP: 67.180.63.98
+
+------=_Part_1954_652919708.1473135917117
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1955_391357894.1473135917121"
+
+------=_Part_1955_391357894.1473135917121
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hey! 
+
+I cloned the repo, ran bundle install --without production then rake 
+db:setup
+
+and I am getting this
+
+$ rake db:setup --trace
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/activesupport-3.2.12/lib/active_support/values/time_zone.rb:270: warning: circular argument reference - now
+confdb/1.1.1 on Ruby 2.3.0 (2015-12-25) [x86_64-darwin14]
+tagutils/0.2.2 on Ruby 2.3.0 (2015-12-25) [x86_64-darwin14]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model >WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model >WorldDb::Model::Region<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model >WorldDb::Model::City<
+worlddb/2.0.4 on Ruby 2.3.0 (2015-12-25) [x86_64-darwin14]
+  [ActiveRecord::Utils] adding find_by n find_by! finders for 3.x series
+activerecord-utils/0.4.0 (activerecord/3.2.12) on Ruby 2.3.0 (2015-12-25) [x86_64-darwin14]
+rake aborted!
+Bundler::GemRequireError: There was an error while trying to load the gem 'sportdb'.
+Gem Load Error is: uninitialized constant WorldDb::ReaderBase
+Backtrace for gem load error is:
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/worlddb-models-2.1.0/lib/worlddb/reader_file.rb:5:in `<module:WorldDb>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/worlddb-models-2.1.0/lib/worlddb/reader_file.rb:3:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/worlddb-models-2.1.0/lib/worlddb/models.rb:69:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/persondb-0.4.0/lib/persondb.rb:5:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/sportdb-1.9.8/lib/sportdb.rb:18:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:86:in `require'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:86:in `block (2 levels) in require'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:81:in `each'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:81:in `block in require'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:70:in `each'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:70:in `require'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler.rb:102:in `require'
+/Users/cewende/Documents/sportbook/config/application.rb:10:in `<top (required)>'
+/Users/cewende/Documents/sportbook/Rakefile:5:in `require'
+/Users/cewende/Documents/sportbook/Rakefile:5:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/rake_module.rb:28:in `load'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/rake_module.rb:28:in `load_rakefile'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:686:in `raw_load_rakefile'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:96:in `block in load_rakefile'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:178:in `standard_exception_handling'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:95:in `load_rakefile'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:79:in `block in run'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:178:in `standard_exception_handling'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:77:in `run'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/bin/rake:23:in `load'
+/Users/cewende/.rvm/gems/ruby-2.3.0/bin/rake:23:in `<main>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/cewende/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+Bundler Error Backtrace:
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:89:in `rescue in block (2 levels) in require'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:85:in `block (2 levels) in require'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:81:in `each'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:81:in `block in require'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:70:in `each'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:70:in `require'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler.rb:102:in `require'
+/Users/cewende/Documents/sportbook/config/application.rb:10:in `<top (required)>'
+/Users/cewende/Documents/sportbook/Rakefile:5:in `require'
+/Users/cewende/Documents/sportbook/Rakefile:5:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/rake_module.rb:28:in `load'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/rake_module.rb:28:in `load_rakefile'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:686:in `raw_load_rakefile'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:96:in `block in load_rakefile'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:178:in `standard_exception_handling'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:95:in `load_rakefile'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:79:in `block in run'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:178:in `standard_exception_handling'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:77:in `run'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/bin/rake:23:in `load'
+/Users/cewende/.rvm/gems/ruby-2.3.0/bin/rake:23:in `<main>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/cewende/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+NameError: uninitialized constant WorldDb::ReaderBase
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/worlddb-models-2.1.0/lib/worlddb/reader_file.rb:5:in `<module:WorldDb>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/worlddb-models-2.1.0/lib/worlddb/reader_file.rb:3:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/worlddb-models-2.1.0/lib/worlddb/models.rb:69:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/persondb-0.4.0/lib/persondb.rb:5:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/sportdb-1.9.8/lib/sportdb.rb:18:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:86:in `require'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:86:in `block (2 levels) in require'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:81:in `each'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:81:in `block in require'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:70:in `each'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:70:in `require'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler.rb:102:in `require'
+/Users/cewende/Documents/sportbook/config/application.rb:10:in `<top (required)>'
+/Users/cewende/Documents/sportbook/Rakefile:5:in `require'
+/Users/cewende/Documents/sportbook/Rakefile:5:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/rake_module.rb:28:in `load'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/rake_module.rb:28:in `load_rakefile'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:686:in `raw_load_rakefile'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:96:in `block in load_rakefile'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:178:in `standard_exception_handling'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:95:in `load_rakefile'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:79:in `block in run'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:178:in `standard_exception_handling'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:77:in `run'
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/bin/rake:23:in `load'
+/Users/cewende/.rvm/gems/ruby-2.3.0/bin/rake:23:in `<main>'
+/Users/cewende/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/cewende/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+
+
+
+Any ideas?
+
+Thanks
+
+
+------=_Part_1955_391357894.1473135917121
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hey!=C2=A0<div><br></div><div>I cloned the repo, ran bundl=
+e install --without production then rake db:setup</div><div><br></div><div>=
+and I am getting this</div><div><div class=3D"prettyprint" style=3D"border:=
+ 1px solid rgb(187, 187, 187); word-wrap: break-word; background-color: rgb=
+(250, 250, 250);"><code class=3D"prettyprint"><div class=3D"subprettyprint"=
+><pre style=3D"box-sizing: border-box; font-stretch: normal; word-wrap: nor=
+mal; padding: 16px; overflow: auto; border-radius: 3px; background-color: r=
+gb(247, 247, 247);"><font color=3D"#000000" face=3D"Consolas, Liberation Mo=
+no, Menlo, Courier, monospace"><span style=3D"font-size: 13.6px; line-heigh=
+t: 19.72px;"><span style=3D"color: #000;" class=3D"styled-by-prettify">$ ra=
+ke db</span><span style=3D"color: #660;" class=3D"styled-by-prettify">:</sp=
+an><span style=3D"color: #000;" class=3D"styled-by-prettify">setup </span><=
+span style=3D"color: #660;" class=3D"styled-by-prettify">--</span><span sty=
+le=3D"color: #000;" class=3D"styled-by-prettify">trace<br></span><span styl=
+e=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"colo=
+r: #606;" class=3D"styled-by-prettify">Users</span><span style=3D"color: #6=
+60;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" clas=
+s=3D"styled-by-prettify">cewende</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/.</span><span style=3D"color: #000;" class=3D"styl=
+ed-by-prettify">rvm</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+gems</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</spa=
+n><span style=3D"color: #000;" class=3D"styled-by-prettify">ruby</span><spa=
+n style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><span style=3D"col=
+or: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #066;=
+" class=3D"styled-by-prettify">0</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">gems</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+activesupport</span><span style=3D"color: #660;" class=3D"styled-by-prettif=
+y">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">3.2</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span=
+ style=3D"color: #066;" class=3D"styled-by-prettify">12</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">lib</span><span style=3D"color: #660;=
+" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">active_support</span><span style=3D"color: #660;" c=
+lass=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify">values</span><span style=3D"color: #660;" class=3D"style=
+d-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-pret=
+tify">time_zone</span><span style=3D"color: #660;" class=3D"styled-by-prett=
+ify">.</span><span style=3D"color: #000;" class=3D"styled-by-prettify">rb</=
+span><span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><spa=
+n style=3D"color: #066;" class=3D"styled-by-prettify">270</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify"> warning</span><span style=3D"color: =
+#660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #000;" cl=
+ass=3D"styled-by-prettify"> circular argument reference </span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">-</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify"> now<br>confdb</span><span style=3D"c=
+olor: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #06=
+6;" class=3D"styled-by-prettify">1.1</span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"sty=
+led-by-prettify">1</span><span style=3D"color: #000;" class=3D"styled-by-pr=
+ettify"> on </span><span style=3D"color: #606;" class=3D"styled-by-prettify=
+">Ruby</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </s=
+pan><span style=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">0</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #660;" =
+class=3D"styled-by-prettify">(</span><span style=3D"color: #066;" class=3D"=
+styled-by-prettify">2015</span><span style=3D"color: #660;" class=3D"styled=
+-by-prettify">-</span><span style=3D"color: #066;" class=3D"styled-by-prett=
+ify">12</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</=
+span><span style=3D"color: #066;" class=3D"styled-by-prettify">25</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">)</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">[</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify">x86_64</span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">-</span><span style=3D"color: #000;" class=3D"styl=
+ed-by-prettify">darwin14</span><span style=3D"color: #660;" class=3D"styled=
+-by-prettify">]</span><span style=3D"color: #000;" class=3D"styled-by-prett=
+ify"><br>tagutils</span><span style=3D"color: #660;" class=3D"styled-by-pre=
+ttify">/</span><span style=3D"color: #066;" class=3D"styled-by-prettify">0.=
+2</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><=
+span style=3D"color: #066;" class=3D"styled-by-prettify">2</span><span styl=
+e=3D"color: #000;" class=3D"styled-by-prettify"> on </span><span style=3D"c=
+olor: #606;" class=3D"styled-by-prettify">Ruby</span><span style=3D"color: =
+#000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #066;" cl=
+ass=3D"styled-by-prettify">2.3</span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"styled-by=
+-prettify">0</span><span style=3D"color: #000;" class=3D"styled-by-prettify=
+"> </span><span style=3D"color: #660;" class=3D"styled-by-prettify">(</span=
+><span style=3D"color: #066;" class=3D"styled-by-prettify">2015</span><span=
+ style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span style=3D=
+"color: #066;" class=3D"styled-by-prettify">12</span><span style=3D"color: =
+#660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066;" cl=
+ass=3D"styled-by-prettify">25</span><span style=3D"color: #660;" class=3D"s=
+tyled-by-prettify">)</span><span style=3D"color: #000;" class=3D"styled-by-=
+prettify"> </span><span style=3D"color: #660;" class=3D"styled-by-prettify"=
+>[</span><span style=3D"color: #000;" class=3D"styled-by-prettify">x86_64</=
+span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><spa=
+n style=3D"color: #000;" class=3D"styled-by-prettify">darwin14</span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">]</span><span style=3D"=
+color: #000;" class=3D"styled-by-prettify"><br>=C2=A0 </span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">[</span><span style=3D"color: #=
+606;" class=3D"styled-by-prettify">TagDb</span><span style=3D"color: #660;"=
+ class=3D"styled-by-prettify">.</span><span style=3D"color: #000;" class=3D=
+"styled-by-prettify">has_many_tags</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">]</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify"> adding taggings n tags has_many assocs to model </span><spa=
+n style=3D"color: #660;" class=3D"styled-by-prettify">&gt;</span><span styl=
+e=3D"color: #606;" class=3D"styled-by-prettify">WorldDb</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">::</span><span style=3D"colo=
+r: #606;" class=3D"styled-by-prettify">Model</span><span style=3D"color: #6=
+60;" class=3D"styled-by-prettify">::</span><span style=3D"color: #606;" cla=
+ss=3D"styled-by-prettify">Country</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">&lt;</span><span style=3D"color: #000;" class=3D"st=
+yled-by-prettify"><br>=C2=A0 </span><span style=3D"color: #660;" class=3D"s=
+tyled-by-prettify">[</span><span style=3D"color: #606;" class=3D"styled-by-=
+prettify">TagDb</span><span style=3D"color: #660;" class=3D"styled-by-prett=
+ify">.</span><span style=3D"color: #000;" class=3D"styled-by-prettify">has_=
+many_tags</span><span style=3D"color: #660;" class=3D"styled-by-prettify">]=
+</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> adding ta=
+ggings n tags has_many assocs to model </span><span style=3D"color: #660;" =
+class=3D"styled-by-prettify">&gt;</span><span style=3D"color: #606;" class=
+=3D"styled-by-prettify">WorldDb</span><span style=3D"color: #660;" class=3D=
+"styled-by-prettify">::</span><span style=3D"color: #606;" class=3D"styled-=
+by-prettify">Model</span><span style=3D"color: #660;" class=3D"styled-by-pr=
+ettify">::</span><span style=3D"color: #606;" class=3D"styled-by-prettify">=
+Region</span><span style=3D"color: #660;" class=3D"styled-by-prettify">&lt;=
+</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br>=C2=A0=
+ </span><span style=3D"color: #660;" class=3D"styled-by-prettify">[</span><=
+span style=3D"color: #606;" class=3D"styled-by-prettify">TagDb</span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"=
+color: #000;" class=3D"styled-by-prettify">has_many_tags</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">]</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify"> adding taggings n tags has_many asso=
+cs to model </span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">&gt;</span><span style=3D"color: #606;" class=3D"styled-by-prettify">Worl=
+dDb</span><span style=3D"color: #660;" class=3D"styled-by-prettify">::</spa=
+n><span style=3D"color: #606;" class=3D"styled-by-prettify">Model</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">::</span><span style=
+=3D"color: #606;" class=3D"styled-by-prettify">City</span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">&lt;</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify"><br>worlddb</span><span style=3D"color: =
+#660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #066;" cl=
+ass=3D"styled-by-prettify">2.0</span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"styled-by=
+-prettify">4</span><span style=3D"color: #000;" class=3D"styled-by-prettify=
+"> on </span><span style=3D"color: #606;" class=3D"styled-by-prettify">Ruby=
+</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><s=
+pan style=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><span sty=
+le=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"col=
+or: #066;" class=3D"styled-by-prettify">0</span><span style=3D"color: #000;=
+" class=3D"styled-by-prettify"> </span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">(</span><span style=3D"color: #066;" class=3D"style=
+d-by-prettify">2015</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">=
+12</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span>=
+<span style=3D"color: #066;" class=3D"styled-by-prettify">25</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">)</span><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #660=
+;" class=3D"styled-by-prettify">[</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">x86_64</span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">-</span><span style=3D"color: #000;" class=3D"styled-by=
+-prettify">darwin14</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">]</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+<br>=C2=A0 </span><span style=3D"color: #660;" class=3D"styled-by-prettify"=
+>[</span><span style=3D"color: #606;" class=3D"styled-by-prettify">ActiveRe=
+cord</span><span style=3D"color: #660;" class=3D"styled-by-prettify">::</sp=
+an><span style=3D"color: #606;" class=3D"styled-by-prettify">Utils</span><s=
+pan style=3D"color: #660;" class=3D"styled-by-prettify">]</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify"> adding find_by n find_by</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">!</span><span=
+ style=3D"color: #000;" class=3D"styled-by-prettify"> finders </span><span =
+style=3D"color: #008;" class=3D"styled-by-prettify">for</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color=
+: #066;" class=3D"styled-by-prettify">3.x</span><span style=3D"color: #000;=
+" class=3D"styled-by-prettify"> series<br>activerecord</span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify">utils</span><span style=3D"color: #660;"=
+ class=3D"styled-by-prettify">/</span><span style=3D"color: #066;" class=3D=
+"styled-by-prettify">0.4</span><span style=3D"color: #660;" class=3D"styled=
+-by-prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-prett=
+ify">0</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">(</span><span=
+ style=3D"color: #000;" class=3D"styled-by-prettify">activerecord</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">3.2</span><span style=3D"col=
+or: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #066;=
+" class=3D"styled-by-prettify">12</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">)</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify"> on </span><span style=3D"color: #606;" class=3D"styled-by-p=
+rettify">Ruby</span><span style=3D"color: #000;" class=3D"styled-by-prettif=
+y"> </span><span style=3D"color: #066;" class=3D"styled-by-prettify">2.3</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span=
+ style=3D"color: #066;" class=3D"styled-by-prettify">0</span><span style=3D=
+"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">(</span><span style=3D"color: #066;" cla=
+ss=3D"styled-by-prettify">2015</span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">-</span><span style=3D"color: #066;" class=3D"styled-by=
+-prettify">12</span><span style=3D"color: #660;" class=3D"styled-by-prettif=
+y">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">25</sp=
+an><span style=3D"color: #660;" class=3D"styled-by-prettify">)</span><span =
+style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">[</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify">x86_64</span><span style=3D"color: #660;"=
+ class=3D"styled-by-prettify">-</span><span style=3D"color: #000;" class=3D=
+"styled-by-prettify">darwin14</span><span style=3D"color: #660;" class=3D"s=
+tyled-by-prettify">]</span><span style=3D"color: #000;" class=3D"styled-by-=
+prettify"><br>rake aborted</span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">!</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify"><br></span><span style=3D"color: #606;" class=3D"styled-by-prettify"=
+>Bundler</span><span style=3D"color: #660;" class=3D"styled-by-prettify">::=
+</span><span style=3D"color: #606;" class=3D"styled-by-prettify">GemRequire=
+Error</span><span style=3D"color: #660;" class=3D"styled-by-prettify">:</sp=
+an><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span =
+style=3D"color: #606;" class=3D"styled-by-prettify">There</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify"> was an error </span><span s=
+tyle=3D"color: #008;" class=3D"styled-by-prettify">while</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify"> trying to load the gem </sp=
+an><span style=3D"color: #080;" class=3D"styled-by-prettify">&#39;sportdb&#=
+39;</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span=
+><span style=3D"color: #000;" class=3D"styled-by-prettify"><br></span><span=
+ style=3D"color: #606;" class=3D"styled-by-prettify">Gem</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color=
+: #606;" class=3D"styled-by-prettify">Load</span><span style=3D"color: #000=
+;" class=3D"styled-by-prettify"> </span><span style=3D"color: #606;" class=
+=3D"styled-by-prettify">Error</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify"> </span><span style=3D"color: #008;" class=3D"styled-by-=
+prettify">is</span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">:</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> uninit=
+ialized constant </span><span style=3D"color: #606;" class=3D"styled-by-pre=
+ttify">WorldDb</span><span style=3D"color: #660;" class=3D"styled-by-pretti=
+fy">::</span><span style=3D"color: #606;" class=3D"styled-by-prettify">Read=
+erBase</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br>=
+</span><span style=3D"color: #606;" class=3D"styled-by-prettify">Backtrace<=
+/span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><sp=
+an style=3D"color: #008;" class=3D"styled-by-prettify">for</span><span styl=
+e=3D"color: #000;" class=3D"styled-by-prettify"> gem load error </span><spa=
+n style=3D"color: #008;" class=3D"styled-by-prettify">is</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify"><br></span><span style=3D"color: #080=
+;" class=3D"styled-by-prettify">/Users/</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify">cewende</span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">/.</span><span style=3D"color: #000;" class=3D"st=
+yled-by-prettify">rvm</span><span style=3D"color: #660;" class=3D"styled-by=
+-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify=
+">gems</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</s=
+pan><span style=3D"color: #000;" class=3D"styled-by-prettify">ruby</span><s=
+pan style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><span style=3D"col=
+or: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #066;=
+" class=3D"styled-by-prettify">0</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">gems</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+worlddb</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</=
+span><span style=3D"color: #000;" class=3D"styled-by-prettify">models</span=
+><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span st=
+yle=3D"color: #066;" class=3D"styled-by-prettify">2.1</span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #0=
+66;" class=3D"styled-by-prettify">0</span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styl=
+ed-by-prettify">lib</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+worlddb</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</=
+span><span style=3D"color: #000;" class=3D"styled-by-prettify">reader_file<=
+/span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><sp=
+an style=3D"color: #000;" class=3D"styled-by-prettify">rb</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color=
+: #066;" class=3D"styled-by-prettify">5</span><span style=3D"color: #660;" =
+class=3D"styled-by-prettify">:</span><span style=3D"color: #008;" class=3D"=
+styled-by-prettify">in</span><span style=3D"color: #000;" class=3D"styled-b=
+y-prettify"> </span><span style=3D"color: #080;" class=3D"styled-by-prettif=
+y">`&lt;module:WorldDb&gt;&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems=
+/worlddb-models-2.1.0/lib/worlddb/reader_file.rb:3:in `</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">&lt;</span><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify">top </span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">(</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify">required</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">)&gt;</span><span style=3D"color: #080;" class=3D"s=
+tyled-by-prettify">&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/worldd=
+b-models-2.1.0/lib/worlddb/models.rb:69:in `&lt;top (required)&gt;&#39;</sp=
+an><span style=3D"color: #000;" class=3D"styled-by-prettify"><br></span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=
+=3D"color: #606;" class=3D"styled-by-prettify">Users</span><span style=3D"c=
+olor: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #00=
+0;" class=3D"styled-by-prettify">cewende</span><span style=3D"color: #660;"=
+ class=3D"styled-by-prettify">/.</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">rvm</span><span style=3D"color: #660;" class=3D"sty=
+led-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-pr=
+ettify">gems</span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">ruby</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span=
+ style=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color=
+: #066;" class=3D"styled-by-prettify">0</span><span style=3D"color: #660;" =
+class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"=
+styled-by-prettify">gems</span><span style=3D"color: #660;" class=3D"styled=
+-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prett=
+ify">persondb</span><span style=3D"color: #660;" class=3D"styled-by-prettif=
+y">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">0.4</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span=
+ style=3D"color: #066;" class=3D"styled-by-prettify">0</span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify">lib</span><span style=3D"color: #660;" c=
+lass=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify">persondb</span><span style=3D"color: #660;" class=3D"sty=
+led-by-prettify">.</span><span style=3D"color: #000;" class=3D"styled-by-pr=
+ettify">rb</span><span style=3D"color: #660;" class=3D"styled-by-prettify">=
+:</span><span style=3D"color: #066;" class=3D"styled-by-prettify">5</span><=
+span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span styl=
+e=3D"color: #008;" class=3D"styled-by-prettify">in</span><span style=3D"col=
+or: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #080;=
+" class=3D"styled-by-prettify">`&lt;top (required)&gt;&#39;<br>/Users/cewen=
+de/.rvm/gems/ruby-2.3.0/gems/sportdb-1.9.8/lib/sportdb.rb:18:in `</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">&lt;</span><span sty=
+le=3D"color: #000;" class=3D"styled-by-prettify">top </span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">(</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify">required</span><span style=3D"color: #660=
+;" class=3D"styled-by-prettify">)&gt;</span><span style=3D"color: #080;" cl=
+ass=3D"styled-by-prettify">&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gem=
+s/bundler-1.12.5/lib/bundler/runtime.rb:86:in `require&#39;</span><span sty=
+le=3D"color: #000;" class=3D"styled-by-prettify"><br></span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #6=
+06;" class=3D"styled-by-prettify">Users</span><span style=3D"color: #660;" =
+class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"=
+styled-by-prettify">cewende</span><span style=3D"color: #660;" class=3D"sty=
+led-by-prettify">/.</span><span style=3D"color: #000;" class=3D"styled-by-p=
+rettify">rvm</span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">gems</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span=
+ style=3D"color: #000;" class=3D"styled-by-prettify">ruby</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">-</span><span style=3D"color=
+: #066;" class=3D"styled-by-prettify">2.3</span><span style=3D"color: #660;=
+" class=3D"styled-by-prettify">.</span><span style=3D"color: #066;" class=
+=3D"styled-by-prettify">0</span><span style=3D"color: #660;" class=3D"style=
+d-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-pret=
+tify">gems</span><span style=3D"color: #660;" class=3D"styled-by-prettify">=
+/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">bundler</=
+span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><spa=
+n style=3D"color: #066;" class=3D"styled-by-prettify">1.12</span><span styl=
+e=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"colo=
+r: #066;" class=3D"styled-by-prettify">5</span><span style=3D"color: #660;"=
+ class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D=
+"styled-by-prettify">lib</span><span style=3D"color: #660;" class=3D"styled=
+-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prett=
+ify">bundler</span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">runtime=
+</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><s=
+pan style=3D"color: #000;" class=3D"styled-by-prettify">rb</span><span styl=
+e=3D"color: #660;" class=3D"styled-by-prettify">:</span><span style=3D"colo=
+r: #066;" class=3D"styled-by-prettify">86</span><span style=3D"color: #660;=
+" class=3D"styled-by-prettify">:</span><span style=3D"color: #008;" class=
+=3D"styled-by-prettify">in</span><span style=3D"color: #000;" class=3D"styl=
+ed-by-prettify"> </span><span style=3D"color: #080;" class=3D"styled-by-pre=
+ttify">`block (2 levels) in require&#39;<br>/Users/cewende/.rvm/gems/ruby-2=
+.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:81:in `</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify">each</span><span style=3D"co=
+lor: #080;" class=3D"styled-by-prettify">&#39;<br>/Users/cewende/.rvm/gems/=
+ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:81:in `block in requi=
+re&#39;</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br=
+></span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><=
+span style=3D"color: #606;" class=3D"styled-by-prettify">Users</span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"=
+color: #000;" class=3D"styled-by-prettify">cewende</span><span style=3D"col=
+or: #660;" class=3D"styled-by-prettify">/.</span><span style=3D"color: #000=
+;" class=3D"styled-by-prettify">rvm</span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styl=
+ed-by-prettify">gems</span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify"=
+>ruby</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</sp=
+an><span style=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><spa=
+n style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">0</span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify">gems</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">bundler</span><span style=3D"color: #660;" class=3D"styled-b=
+y-prettify">-</span><span style=3D"color: #066;" class=3D"styled-by-prettif=
+y">1.12</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</=
+span><span style=3D"color: #066;" class=3D"styled-by-prettify">5</span><spa=
+n style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify">lib</span><span style=3D"col=
+or: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;=
+" class=3D"styled-by-prettify">bundler</span><span style=3D"color: #660;" c=
+lass=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify">runtime</span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">.</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify">rb</span><span style=3D"color: #660;" class=3D"styled-by-prettify">:=
+</span><span style=3D"color: #066;" class=3D"styled-by-prettify">70</span><=
+span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span styl=
+e=3D"color: #008;" class=3D"styled-by-prettify">in</span><span style=3D"col=
+or: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #080;=
+" class=3D"styled-by-prettify">`each&#39;<br>/Users/cewende/.rvm/gems/ruby-=
+2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:70:in `</span><span style=
+=3D"color: #008;" class=3D"styled-by-prettify">require</span><span style=3D=
+"color: #080;" class=3D"styled-by-prettify">&#39;<br>/Users/cewende/.rvm/ge=
+ms/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler.rb:102:in `require&#39;</span=
+><span style=3D"color: #000;" class=3D"styled-by-prettify"><br></span><span=
+ style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D=
+"color: #606;" class=3D"styled-by-prettify">Users</span><span style=3D"colo=
+r: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;"=
+ class=3D"styled-by-prettify">cewende</span><span style=3D"color: #660;" cl=
+ass=3D"styled-by-prettify">/</span><span style=3D"color: #606;" class=3D"st=
+yled-by-prettify">Documents</span><span style=3D"color: #660;" class=3D"sty=
+led-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-pr=
+ettify">sportbook</span><span style=3D"color: #660;" class=3D"styled-by-pre=
+ttify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">co=
+nfig</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</spa=
+n><span style=3D"color: #000;" class=3D"styled-by-prettify">application</sp=
+an><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span =
+style=3D"color: #000;" class=3D"styled-by-prettify">rb</span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #=
+066;" class=3D"styled-by-prettify">10</span><span style=3D"color: #660;" cl=
+ass=3D"styled-by-prettify">:</span><span style=3D"color: #008;" class=3D"st=
+yled-by-prettify">in</span><span style=3D"color: #000;" class=3D"styled-by-=
+prettify"> </span><span style=3D"color: #080;" class=3D"styled-by-prettify"=
+>`&lt;top (required)&gt;&#39;<br>/Users/cewende/Documents/sportbook/Rakefil=
+e:5:in `</span><span style=3D"color: #008;" class=3D"styled-by-prettify">re=
+quire</span><span style=3D"color: #080;" class=3D"styled-by-prettify">&#39;=
+<br>/Users/cewende/Documents/sportbook/Rakefile:5:in `&lt;top (required)&gt=
+;&#39;</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br>=
+</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><s=
+pan style=3D"color: #606;" class=3D"styled-by-prettify">Users</span><span s=
+tyle=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"c=
+olor: #000;" class=3D"styled-by-prettify">cewende</span><span style=3D"colo=
+r: #660;" class=3D"styled-by-prettify">/.</span><span style=3D"color: #000;=
+" class=3D"styled-by-prettify">rvm</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">gems</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+ruby</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</spa=
+n><span style=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><span=
+ style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D=
+"color: #066;" class=3D"styled-by-prettify">0</span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify">gems</span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by=
+-prettify">rake</span><span style=3D"color: #660;" class=3D"styled-by-prett=
+ify">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">11.2=
+</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><s=
+pan style=3D"color: #066;" class=3D"styled-by-prettify">2</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">lib</span><span style=3D"color: #660;=
+" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">rake</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-p=
+rettify">rake_module</span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">.</span><span style=3D"color: #000;" class=3D"styled-by-prettify"=
+>rb</span><span style=3D"color: #660;" class=3D"styled-by-prettify">:</span=
+><span style=3D"color: #066;" class=3D"styled-by-prettify">28</span><span s=
+tyle=3D"color: #660;" class=3D"styled-by-prettify">:</span><span style=3D"c=
+olor: #008;" class=3D"styled-by-prettify">in</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify"> </span><span style=3D"color: #080;" clas=
+s=3D"styled-by-prettify">`load&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/=
+gems/rake-11.2.2/lib/rake/rake_module.rb:28:in `</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">load_rakefile</span><span style=3D"co=
+lor: #080;" class=3D"styled-by-prettify">&#39;<br>/Users/cewende/.rvm/gems/=
+ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:686:in `raw_load_rakefi=
+le&#39;</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br=
+></span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><=
+span style=3D"color: #606;" class=3D"styled-by-prettify">Users</span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"=
+color: #000;" class=3D"styled-by-prettify">cewende</span><span style=3D"col=
+or: #660;" class=3D"styled-by-prettify">/.</span><span style=3D"color: #000=
+;" class=3D"styled-by-prettify">rvm</span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styl=
+ed-by-prettify">gems</span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify"=
+>ruby</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</sp=
+an><span style=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><spa=
+n style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">0</span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify">gems</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">rake</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">=
+11.2</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</spa=
+n><span style=3D"color: #066;" class=3D"styled-by-prettify">2</span><span s=
+tyle=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"c=
+olor: #000;" class=3D"styled-by-prettify">lib</span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify">rake</span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by=
+-prettify">application</span><span style=3D"color: #660;" class=3D"styled-b=
+y-prettify">.</span><span style=3D"color: #000;" class=3D"styled-by-prettif=
+y">rb</span><span style=3D"color: #660;" class=3D"styled-by-prettify">:</sp=
+an><span style=3D"color: #066;" class=3D"styled-by-prettify">96</span><span=
+ style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span style=3D=
+"color: #008;" class=3D"styled-by-prettify">in</span><span style=3D"color: =
+#000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #080;" cl=
+ass=3D"styled-by-prettify">`block in load_rakefile&#39;<br>/Users/cewende/.=
+rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:178:in `</span=
+><span style=3D"color: #000;" class=3D"styled-by-prettify">standard_excepti=
+on_handling</span><span style=3D"color: #080;" class=3D"styled-by-prettify"=
+>&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/app=
+lication.rb:95:in `load_rakefile&#39;</span><span style=3D"color: #000;" cl=
+ass=3D"styled-by-prettify"><br></span><span style=3D"color: #660;" class=3D=
+"styled-by-prettify">/</span><span style=3D"color: #606;" class=3D"styled-b=
+y-prettify">Users</span><span style=3D"color: #660;" class=3D"styled-by-pre=
+ttify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">ce=
+wende</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/.</s=
+pan><span style=3D"color: #000;" class=3D"styled-by-prettify">rvm</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify">gems</span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000=
+;" class=3D"styled-by-prettify">ruby</span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">-</span><span style=3D"color: #066;" class=3D"sty=
+led-by-prettify">2.3</span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-prettify"=
+>0</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span>=
+<span style=3D"color: #000;" class=3D"styled-by-prettify">gems</span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"=
+color: #000;" class=3D"styled-by-prettify">rake</span><span style=3D"color:=
+ #660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066;" c=
+lass=3D"styled-by-prettify">11.2</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"style=
+d-by-prettify">2</span><span style=3D"color: #660;" class=3D"styled-by-pret=
+tify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">lib=
+</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><s=
+pan style=3D"color: #000;" class=3D"styled-by-prettify">rake</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify">application</span><span style=3D"c=
+olor: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #00=
+0;" class=3D"styled-by-prettify">rb</span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">:</span><span style=3D"color: #066;" class=3D"styl=
+ed-by-prettify">79</span><span style=3D"color: #660;" class=3D"styled-by-pr=
+ettify">:</span><span style=3D"color: #008;" class=3D"styled-by-prettify">i=
+n</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><=
+span style=3D"color: #080;" class=3D"styled-by-prettify">`block in run&#39;=
+<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/applicati=
+on.rb:178:in `</span><span style=3D"color: #000;" class=3D"styled-by-pretti=
+fy">standard_exception_handling</span><span style=3D"color: #080;" class=3D=
+"styled-by-prettify">&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake=
+-11.2.2/lib/rake/application.rb:77:in `run&#39;</span><span style=3D"color:=
+ #000;" class=3D"styled-by-prettify"><br></span><span style=3D"color: #660;=
+" class=3D"styled-by-prettify">/</span><span style=3D"color: #606;" class=
+=3D"styled-by-prettify">Users</span><span style=3D"color: #660;" class=3D"s=
+tyled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-=
+prettify">cewende</span><span style=3D"color: #660;" class=3D"styled-by-pre=
+ttify">/.</span><span style=3D"color: #000;" class=3D"styled-by-prettify">r=
+vm</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span>=
+<span style=3D"color: #000;" class=3D"styled-by-prettify">gems</span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"=
+color: #000;" class=3D"styled-by-prettify">ruby</span><span style=3D"color:=
+ #660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066;" c=
+lass=3D"styled-by-prettify">2.3</span><span style=3D"color: #660;" class=3D=
+"styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"styled-b=
+y-prettify">0</span><span style=3D"color: #660;" class=3D"styled-by-prettif=
+y">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">gems</=
+span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><spa=
+n style=3D"color: #000;" class=3D"styled-by-prettify">rake</span><span styl=
+e=3D"color: #660;" class=3D"styled-by-prettify">-</span><span style=3D"colo=
+r: #066;" class=3D"styled-by-prettify">11.2</span><span style=3D"color: #66=
+0;" class=3D"styled-by-prettify">.</span><span style=3D"color: #066;" class=
+=3D"styled-by-prettify">2</span><span style=3D"color: #660;" class=3D"style=
+d-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-pret=
+tify">exe</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/=
+</span><span style=3D"color: #000;" class=3D"styled-by-prettify">rake</span=
+><span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span st=
+yle=3D"color: #066;" class=3D"styled-by-prettify">27</span><span style=3D"c=
+olor: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #00=
+8;" class=3D"styled-by-prettify">in</span><span style=3D"color: #000;" clas=
+s=3D"styled-by-prettify"> </span><span style=3D"color: #080;" class=3D"styl=
+ed-by-prettify">`&lt;top (required)&gt;&#39;<br>/Users/cewende/.rvm/gems/ru=
+by-2.3.0/bin/rake:23:in `</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">load</span><span style=3D"color: #080;" class=3D"styled-by-p=
+rettify">&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/bin/rake:23:in `&lt;m=
+ain&gt;&#39;</span><span style=3D"color: #000;" class=3D"styled-by-prettify=
+"><br></span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</s=
+pan><span style=3D"color: #606;" class=3D"styled-by-prettify">Users</span><=
+span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span styl=
+e=3D"color: #000;" class=3D"styled-by-prettify">cewende</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">/.</span><span style=3D"colo=
+r: #000;" class=3D"styled-by-prettify">rvm</span><span style=3D"color: #660=
+;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">gems</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-p=
+rettify">ruby</span><span style=3D"color: #660;" class=3D"styled-by-prettif=
+y">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">2.3</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span=
+ style=3D"color: #066;" class=3D"styled-by-prettify">0</span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify">bin</span><span style=3D"color: #660;" c=
+lass=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify">ruby_executable_hooks</span><span style=3D"color: #660;"=
+ class=3D"styled-by-prettify">:</span><span style=3D"color: #066;" class=3D=
+"styled-by-prettify">15</span><span style=3D"color: #660;" class=3D"styled-=
+by-prettify">:</span><span style=3D"color: #008;" class=3D"styled-by-pretti=
+fy">in</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </s=
+pan><span style=3D"color: #080;" class=3D"styled-by-prettify">`eval&#39;<br=
+>/Users/cewende/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `&lt;m=
+ain&gt;&#39;<br>Bundler Error Backtrace:<br>/Users/cewende/.rvm/gems/ruby-2=
+.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:89:in `rescue in block (2 l=
+evels) in require&#39;</span><span style=3D"color: #000;" class=3D"styled-b=
+y-prettify"><br></span><span style=3D"color: #660;" class=3D"styled-by-pret=
+tify">/</span><span style=3D"color: #606;" class=3D"styled-by-prettify">Use=
+rs</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span>=
+<span style=3D"color: #000;" class=3D"styled-by-prettify">cewende</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">/.</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify">rvm</span><span style=3D"col=
+or: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;=
+" class=3D"styled-by-prettify">gems</span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styl=
+ed-by-prettify">ruby</span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify"=
+>2.3</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</spa=
+n><span style=3D"color: #066;" class=3D"styled-by-prettify">0</span><span s=
+tyle=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"c=
+olor: #000;" class=3D"styled-by-prettify">gems</span><span style=3D"color: =
+#660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" cl=
+ass=3D"styled-by-prettify">bundler</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">-</span><span style=3D"color: #066;" class=3D"style=
+d-by-prettify">1.12</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">.</span><span style=3D"color: #066;" class=3D"styled-by-prettify">=
+5</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><=
+span style=3D"color: #000;" class=3D"styled-by-prettify">lib</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify">bundler</span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify">runtime</span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">.</span><span style=3D"color: #000;" class=3D"sty=
+led-by-prettify">rb</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">:</span><span style=3D"color: #066;" class=3D"styled-by-prettify">=
+85</span><span style=3D"color: #660;" class=3D"styled-by-prettify">:</span>=
+<span style=3D"color: #008;" class=3D"styled-by-prettify">in</span><span st=
+yle=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"co=
+lor: #080;" class=3D"styled-by-prettify">`block (2 levels) in require&#39;<=
+br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runt=
+ime.rb:81:in `</span><span style=3D"color: #000;" class=3D"styled-by-pretti=
+fy">each</span><span style=3D"color: #080;" class=3D"styled-by-prettify">&#=
+39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/=
+runtime.rb:81:in `block in require&#39;</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify"><br></span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #606;" class=3D"style=
+d-by-prettify">Users</span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify"=
+>cewende</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/.=
+</span><span style=3D"color: #000;" class=3D"styled-by-prettify">rvm</span>=
+<span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span sty=
+le=3D"color: #000;" class=3D"styled-by-prettify">gems</span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify">ruby</span><span style=3D"color: #660;" c=
+lass=3D"styled-by-prettify">-</span><span style=3D"color: #066;" class=3D"s=
+tyled-by-prettify">2.3</span><span style=3D"color: #660;" class=3D"styled-b=
+y-prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-prettif=
+y">0</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</spa=
+n><span style=3D"color: #000;" class=3D"styled-by-prettify">gems</span><spa=
+n style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify">bundler</span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #=
+066;" class=3D"styled-by-prettify">1.12</span><span style=3D"color: #660;" =
+class=3D"styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"=
+styled-by-prettify">5</span><span style=3D"color: #660;" class=3D"styled-by=
+-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify=
+">lib</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</sp=
+an><span style=3D"color: #000;" class=3D"styled-by-prettify">bundler</span>=
+<span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span sty=
+le=3D"color: #000;" class=3D"styled-by-prettify">runtime</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">rb</span><span style=3D"color: #660;"=
+ class=3D"styled-by-prettify">:</span><span style=3D"color: #066;" class=3D=
+"styled-by-prettify">70</span><span style=3D"color: #660;" class=3D"styled-=
+by-prettify">:</span><span style=3D"color: #008;" class=3D"styled-by-pretti=
+fy">in</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </s=
+pan><span style=3D"color: #080;" class=3D"styled-by-prettify">`each&#39;<br=
+>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtim=
+e.rb:70:in `</span><span style=3D"color: #008;" class=3D"styled-by-prettify=
+">require</span><span style=3D"color: #080;" class=3D"styled-by-prettify">&=
+#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler=
+.rb:102:in `require&#39;</span><span style=3D"color: #000;" class=3D"styled=
+-by-prettify"><br></span><span style=3D"color: #660;" class=3D"styled-by-pr=
+ettify">/</span><span style=3D"color: #606;" class=3D"styled-by-prettify">U=
+sers</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</spa=
+n><span style=3D"color: #000;" class=3D"styled-by-prettify">cewende</span><=
+span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span styl=
+e=3D"color: #606;" class=3D"styled-by-prettify">Documents</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">sportbook</span><span style=3D"color:=
+ #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" c=
+lass=3D"styled-by-prettify">config</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">application</span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">.</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify">rb</span><span style=3D"color: #660;" class=3D"styled-by-prettify">:=
+</span><span style=3D"color: #066;" class=3D"styled-by-prettify">10</span><=
+span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span styl=
+e=3D"color: #008;" class=3D"styled-by-prettify">in</span><span style=3D"col=
+or: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #080;=
+" class=3D"styled-by-prettify">`&lt;top (required)&gt;&#39;<br>/Users/cewen=
+de/Documents/sportbook/Rakefile:5:in `</span><span style=3D"color: #008;" c=
+lass=3D"styled-by-prettify">require</span><span style=3D"color: #080;" clas=
+s=3D"styled-by-prettify">&#39;<br>/Users/cewende/Documents/sportbook/Rakefi=
+le:5:in `&lt;top (required)&gt;&#39;</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify"><br></span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">/</span><span style=3D"color: #606;" class=3D"styled-by=
+-prettify">Users</span><span style=3D"color: #660;" class=3D"styled-by-pret=
+tify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">cew=
+ende</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/.</sp=
+an><span style=3D"color: #000;" class=3D"styled-by-prettify">rvm</span><spa=
+n style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify">gems</span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000=
+;" class=3D"styled-by-prettify">ruby</span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">-</span><span style=3D"color: #066;" class=3D"sty=
+led-by-prettify">2.3</span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-prettify"=
+>0</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span>=
+<span style=3D"color: #000;" class=3D"styled-by-prettify">gems</span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"=
+color: #000;" class=3D"styled-by-prettify">rake</span><span style=3D"color:=
+ #660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066;" c=
+lass=3D"styled-by-prettify">11.2</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"style=
+d-by-prettify">2</span><span style=3D"color: #660;" class=3D"styled-by-pret=
+tify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">lib=
+</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><s=
+pan style=3D"color: #000;" class=3D"styled-by-prettify">rake</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify">rake_module</span><span style=3D"c=
+olor: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #00=
+0;" class=3D"styled-by-prettify">rb</span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">:</span><span style=3D"color: #066;" class=3D"styl=
+ed-by-prettify">28</span><span style=3D"color: #660;" class=3D"styled-by-pr=
+ettify">:</span><span style=3D"color: #008;" class=3D"styled-by-prettify">i=
+n</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><=
+span style=3D"color: #080;" class=3D"styled-by-prettify">`load&#39;<br>/Use=
+rs/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/rake_module.rb:28=
+:in `</span><span style=3D"color: #000;" class=3D"styled-by-prettify">load_=
+rakefile</span><span style=3D"color: #080;" class=3D"styled-by-prettify">&#=
+39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/applic=
+ation.rb:686:in `raw_load_rakefile&#39;</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify"><br></span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #606;" class=3D"style=
+d-by-prettify">Users</span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify"=
+>cewende</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/.=
+</span><span style=3D"color: #000;" class=3D"styled-by-prettify">rvm</span>=
+<span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span sty=
+le=3D"color: #000;" class=3D"styled-by-prettify">gems</span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify">ruby</span><span style=3D"color: #660;" c=
+lass=3D"styled-by-prettify">-</span><span style=3D"color: #066;" class=3D"s=
+tyled-by-prettify">2.3</span><span style=3D"color: #660;" class=3D"styled-b=
+y-prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-prettif=
+y">0</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</spa=
+n><span style=3D"color: #000;" class=3D"styled-by-prettify">gems</span><spa=
+n style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify">rake</span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066=
+;" class=3D"styled-by-prettify">11.2</span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"sty=
+led-by-prettify">2</span><span style=3D"color: #660;" class=3D"styled-by-pr=
+ettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">l=
+ib</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span>=
+<span style=3D"color: #000;" class=3D"styled-by-prettify">rake</span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"=
+color: #000;" class=3D"styled-by-prettify">application</span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify">rb</span><span style=3D"color: #660;" cl=
+ass=3D"styled-by-prettify">:</span><span style=3D"color: #066;" class=3D"st=
+yled-by-prettify">96</span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">:</span><span style=3D"color: #008;" class=3D"styled-by-prettify"=
+>in</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span=
+><span style=3D"color: #080;" class=3D"styled-by-prettify">`block in load_r=
+akefile&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/ra=
+ke/application.rb:178:in `</span><span style=3D"color: #000;" class=3D"styl=
+ed-by-prettify">standard_exception_handling</span><span style=3D"color: #08=
+0;" class=3D"styled-by-prettify">&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3=
+.0/gems/rake-11.2.2/lib/rake/application.rb:95:in `load_rakefile&#39;</span=
+><span style=3D"color: #000;" class=3D"styled-by-prettify"><br></span><span=
+ style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D=
+"color: #606;" class=3D"styled-by-prettify">Users</span><span style=3D"colo=
+r: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;"=
+ class=3D"styled-by-prettify">cewende</span><span style=3D"color: #660;" cl=
+ass=3D"styled-by-prettify">/.</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify">rvm</span><span style=3D"color: #660;" class=3D"styled-b=
+y-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettif=
+y">gems</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</=
+span><span style=3D"color: #000;" class=3D"styled-by-prettify">ruby</span><=
+span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span styl=
+e=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #066=
+;" class=3D"styled-by-prettify">0</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">gems</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+rake</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</spa=
+n><span style=3D"color: #066;" class=3D"styled-by-prettify">11.2</span><spa=
+n style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">2</span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify">lib</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">rake</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+application</span><span style=3D"color: #660;" class=3D"styled-by-prettify"=
+>.</span><span style=3D"color: #000;" class=3D"styled-by-prettify">rb</span=
+><span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span st=
+yle=3D"color: #066;" class=3D"styled-by-prettify">79</span><span style=3D"c=
+olor: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #00=
+8;" class=3D"styled-by-prettify">in</span><span style=3D"color: #000;" clas=
+s=3D"styled-by-prettify"> </span><span style=3D"color: #080;" class=3D"styl=
+ed-by-prettify">`block in run&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/g=
+ems/rake-11.2.2/lib/rake/application.rb:178:in `</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">standard_exception_handling</span><sp=
+an style=3D"color: #080;" class=3D"styled-by-prettify">&#39;<br>/Users/cewe=
+nde/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:77:in `ru=
+n&#39;</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br>=
+</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><s=
+pan style=3D"color: #606;" class=3D"styled-by-prettify">Users</span><span s=
+tyle=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"c=
+olor: #000;" class=3D"styled-by-prettify">cewende</span><span style=3D"colo=
+r: #660;" class=3D"styled-by-prettify">/.</span><span style=3D"color: #000;=
+" class=3D"styled-by-prettify">rvm</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">gems</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+ruby</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</spa=
+n><span style=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><span=
+ style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D=
+"color: #066;" class=3D"styled-by-prettify">0</span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify">gems</span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by=
+-prettify">rake</span><span style=3D"color: #660;" class=3D"styled-by-prett=
+ify">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">11.2=
+</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><s=
+pan style=3D"color: #066;" class=3D"styled-by-prettify">2</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">exe</span><span style=3D"color: #660;=
+" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">rake</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">:</span><span style=3D"color: #066;" class=3D"styled-by-p=
+rettify">27</span><span style=3D"color: #660;" class=3D"styled-by-prettify"=
+>:</span><span style=3D"color: #008;" class=3D"styled-by-prettify">in</span=
+><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span st=
+yle=3D"color: #080;" class=3D"styled-by-prettify">`&lt;top (required)&gt;&#=
+39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/bin/rake:23:in `</span><span sty=
+le=3D"color: #000;" class=3D"styled-by-prettify">load</span><span style=3D"=
+color: #080;" class=3D"styled-by-prettify">&#39;<br>/Users/cewende/.rvm/gem=
+s/ruby-2.3.0/bin/rake:23:in `&lt;main&gt;&#39;</span><span style=3D"color: =
+#000;" class=3D"styled-by-prettify"><br></span><span style=3D"color: #660;"=
+ class=3D"styled-by-prettify">/</span><span style=3D"color: #606;" class=3D=
+"styled-by-prettify">Users</span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify">cewende</span><span style=3D"color: #660;" class=3D"styled-by-pretti=
+fy">/.</span><span style=3D"color: #000;" class=3D"styled-by-prettify">rvm<=
+/span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><sp=
+an style=3D"color: #000;" class=3D"styled-by-prettify">gems</span><span sty=
+le=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"col=
+or: #000;" class=3D"styled-by-prettify">ruby</span><span style=3D"color: #6=
+60;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066;" clas=
+s=3D"styled-by-prettify">2.3</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-p=
+rettify">0</span><span style=3D"color: #660;" class=3D"styled-by-prettify">=
+/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">bin</span=
+><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span st=
+yle=3D"color: #000;" class=3D"styled-by-prettify">ruby_executable_hooks</sp=
+an><span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span =
+style=3D"color: #066;" class=3D"styled-by-prettify">15</span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #=
+008;" class=3D"styled-by-prettify">in</span><span style=3D"color: #000;" cl=
+ass=3D"styled-by-prettify"> </span><span style=3D"color: #080;" class=3D"st=
+yled-by-prettify">`eval&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/bin/rub=
+y_executable_hooks:15:in `&lt;main&gt;&#39;<br>NameError: uninitialized con=
+stant WorldDb::ReaderBase<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/world=
+db-models-2.1.0/lib/worlddb/reader_file.rb:5:in `&lt;module:WorldDb&gt;&#39=
+;</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br></spa=
+n><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span s=
+tyle=3D"color: #606;" class=3D"styled-by-prettify">Users</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">cewende</span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">/.</span><span style=3D"color: #000;" cl=
+ass=3D"styled-by-prettify">rvm</span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by=
+-prettify">gems</span><span style=3D"color: #660;" class=3D"styled-by-prett=
+ify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">ruby=
+</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><s=
+pan style=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><span sty=
+le=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"col=
+or: #066;" class=3D"styled-by-prettify">0</span><span style=3D"color: #660;=
+" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">gems</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-p=
+rettify">worlddb</span><span style=3D"color: #660;" class=3D"styled-by-pret=
+tify">-</span><span style=3D"color: #000;" class=3D"styled-by-prettify">mod=
+els</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span=
+><span style=3D"color: #066;" class=3D"styled-by-prettify">2.1</span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"=
+color: #066;" class=3D"styled-by-prettify">0</span><span style=3D"color: #6=
+60;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" clas=
+s=3D"styled-by-prettify">lib</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-p=
+rettify">worlddb</span><span style=3D"color: #660;" class=3D"styled-by-pret=
+tify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">rea=
+der_file</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.<=
+/span><span style=3D"color: #000;" class=3D"styled-by-prettify">rb</span><s=
+pan style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">3</span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #008;" =
+class=3D"styled-by-prettify">in</span><span style=3D"color: #000;" class=3D=
+"styled-by-prettify"> </span><span style=3D"color: #080;" class=3D"styled-b=
+y-prettify">`&lt;top (required)&gt;&#39;<br>/Users/cewende/.rvm/gems/ruby-2=
+.3.0/gems/worlddb-models-2.1.0/lib/worlddb/models.rb:69:in `</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">&lt;</span><span style=3D=
+"color: #000;" class=3D"styled-by-prettify">top </span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">(</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify">required</span><span style=3D"color: #660;" cl=
+ass=3D"styled-by-prettify">)&gt;</span><span style=3D"color: #080;" class=
+=3D"styled-by-prettify">&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/p=
+ersondb-0.4.0/lib/persondb.rb:5:in `&lt;top (required)&gt;&#39;</span><span=
+ style=3D"color: #000;" class=3D"styled-by-prettify"><br></span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color=
+: #606;" class=3D"styled-by-prettify">Users</span><span style=3D"color: #66=
+0;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">cewende</span><span style=3D"color: #660;" class=3D=
+"styled-by-prettify">/.</span><span style=3D"color: #000;" class=3D"styled-=
+by-prettify">rvm</span><span style=3D"color: #660;" class=3D"styled-by-pret=
+tify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">gem=
+s</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><=
+span style=3D"color: #000;" class=3D"styled-by-prettify">ruby</span><span s=
+tyle=3D"color: #660;" class=3D"styled-by-prettify">-</span><span style=3D"c=
+olor: #066;" class=3D"styled-by-prettify">2.3</span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #066;" cla=
+ss=3D"styled-by-prettify">0</span><span style=3D"color: #660;" class=3D"sty=
+led-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-pr=
+ettify">gems</span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">sportdb=
+</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><s=
+pan style=3D"color: #066;" class=3D"styled-by-prettify">1.9</span><span sty=
+le=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"col=
+or: #066;" class=3D"styled-by-prettify">8</span><span style=3D"color: #660;=
+" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">lib</span><span style=3D"color: #660;" class=3D"sty=
+led-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-pr=
+ettify">sportdb</span><span style=3D"color: #660;" class=3D"styled-by-prett=
+ify">.</span><span style=3D"color: #000;" class=3D"styled-by-prettify">rb</=
+span><span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><spa=
+n style=3D"color: #066;" class=3D"styled-by-prettify">18</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color=
+: #008;" class=3D"styled-by-prettify">in</span><span style=3D"color: #000;"=
+ class=3D"styled-by-prettify"> </span><span style=3D"color: #080;" class=3D=
+"styled-by-prettify">`&lt;top (required)&gt;&#39;<br>/Users/cewende/.rvm/ge=
+ms/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:86:in `</span><spa=
+n style=3D"color: #008;" class=3D"styled-by-prettify">require</span><span s=
+tyle=3D"color: #080;" class=3D"styled-by-prettify">&#39;<br>/Users/cewende/=
+.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:86:in `bloc=
+k (2 levels) in require&#39;</span><span style=3D"color: #000;" class=3D"st=
+yled-by-prettify"><br></span><span style=3D"color: #660;" class=3D"styled-b=
+y-prettify">/</span><span style=3D"color: #606;" class=3D"styled-by-prettif=
+y">Users</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/<=
+/span><span style=3D"color: #000;" class=3D"styled-by-prettify">cewende</sp=
+an><span style=3D"color: #660;" class=3D"styled-by-prettify">/.</span><span=
+ style=3D"color: #000;" class=3D"styled-by-prettify">rvm</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">gems</span><span style=3D"color: #660=
+;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">ruby</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">-</span><span style=3D"color: #066;" class=3D"styled-by-p=
+rettify">2.3</span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">.</span><span style=3D"color: #066;" class=3D"styled-by-prettify">0</span=
+><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span st=
+yle=3D"color: #000;" class=3D"styled-by-prettify">gems</span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify">bundler</span><span style=3D"color: #660=
+;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066;" class=
+=3D"styled-by-prettify">1.12</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-p=
+rettify">5</span><span style=3D"color: #660;" class=3D"styled-by-prettify">=
+/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">lib</span=
+><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span st=
+yle=3D"color: #000;" class=3D"styled-by-prettify">bundler</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">runtime</span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify">rb</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">:</span><span style=3D"color: #066;" class=3D"styled-by-p=
+rettify">81</span><span style=3D"color: #660;" class=3D"styled-by-prettify"=
+>:</span><span style=3D"color: #008;" class=3D"styled-by-prettify">in</span=
+><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span st=
+yle=3D"color: #080;" class=3D"styled-by-prettify">`each&#39;<br>/Users/cewe=
+nde/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:81:in `=
+</span><span style=3D"color: #000;" class=3D"styled-by-prettify">block </sp=
+an><span style=3D"color: #008;" class=3D"styled-by-prettify">in</span><span=
+ style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D=
+"color: #008;" class=3D"styled-by-prettify">require</span><span style=3D"co=
+lor: #080;" class=3D"styled-by-prettify">&#39;<br>/Users/cewende/.rvm/gems/=
+ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:70:in `each&#39;</spa=
+n><span style=3D"color: #000;" class=3D"styled-by-prettify"><br></span><spa=
+n style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=
+=3D"color: #606;" class=3D"styled-by-prettify">Users</span><span style=3D"c=
+olor: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #00=
+0;" class=3D"styled-by-prettify">cewende</span><span style=3D"color: #660;"=
+ class=3D"styled-by-prettify">/.</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">rvm</span><span style=3D"color: #660;" class=3D"sty=
+led-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-pr=
+ettify">gems</span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">ruby</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span=
+ style=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color=
+: #066;" class=3D"styled-by-prettify">0</span><span style=3D"color: #660;" =
+class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"=
+styled-by-prettify">gems</span><span style=3D"color: #660;" class=3D"styled=
+-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prett=
+ify">bundler</span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">1.12</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span=
+ style=3D"color: #066;" class=3D"styled-by-prettify">5</span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify">lib</span><span style=3D"color: #660;" c=
+lass=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify">bundler</span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify">runtime</span><span style=3D"color: #660;" class=3D"styled-by-pretti=
+fy">.</span><span style=3D"color: #000;" class=3D"styled-by-prettify">rb</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span=
+ style=3D"color: #066;" class=3D"styled-by-prettify">70</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color=
+: #008;" class=3D"styled-by-prettify">in</span><span style=3D"color: #000;"=
+ class=3D"styled-by-prettify"> </span><span style=3D"color: #080;" class=3D=
+"styled-by-prettify">`require&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/g=
+ems/bundler-1.12.5/lib/bundler.rb:102:in `</span><span style=3D"color: #008=
+;" class=3D"styled-by-prettify">require</span><span style=3D"color: #080;" =
+class=3D"styled-by-prettify">&#39;<br>/Users/cewende/Documents/sportbook/co=
+nfig/application.rb:10:in `&lt;top (required)&gt;&#39;</span><span style=3D=
+"color: #000;" class=3D"styled-by-prettify"><br></span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #606;" =
+class=3D"styled-by-prettify">Users</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">cewende</span><span style=3D"color: #660;" class=3D"styled-b=
+y-prettify">/</span><span style=3D"color: #606;" class=3D"styled-by-prettif=
+y">Documents</span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">sportbo=
+ok</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span>=
+<span style=3D"color: #606;" class=3D"styled-by-prettify">Rakefile</span><s=
+pan style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">5</span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #008;" =
+class=3D"styled-by-prettify">in</span><span style=3D"color: #000;" class=3D=
+"styled-by-prettify"> </span><span style=3D"color: #080;" class=3D"styled-b=
+y-prettify">`require&#39;<br>/Users/cewende/Documents/sportbook/Rakefile:5:=
+in `</span><span style=3D"color: #660;" class=3D"styled-by-prettify">&lt;</=
+span><span style=3D"color: #000;" class=3D"styled-by-prettify">top </span><=
+span style=3D"color: #660;" class=3D"styled-by-prettify">(</span><span styl=
+e=3D"color: #000;" class=3D"styled-by-prettify">required</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">)&gt;</span><span style=3D"c=
+olor: #080;" class=3D"styled-by-prettify">&#39;<br>/Users/cewende/.rvm/gems=
+/ruby-2.3.0/gems/rake-11.2.2/lib/rake/rake_module.rb:28:in `load&#39;</span=
+><span style=3D"color: #000;" class=3D"styled-by-prettify"><br></span><span=
+ style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D=
+"color: #606;" class=3D"styled-by-prettify">Users</span><span style=3D"colo=
+r: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;"=
+ class=3D"styled-by-prettify">cewende</span><span style=3D"color: #660;" cl=
+ass=3D"styled-by-prettify">/.</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify">rvm</span><span style=3D"color: #660;" class=3D"styled-b=
+y-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettif=
+y">gems</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</=
+span><span style=3D"color: #000;" class=3D"styled-by-prettify">ruby</span><=
+span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span styl=
+e=3D"color: #066;" class=3D"styled-by-prettify">2.3</span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #066=
+;" class=3D"styled-by-prettify">0</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">gems</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+rake</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</spa=
+n><span style=3D"color: #066;" class=3D"styled-by-prettify">11.2</span><spa=
+n style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">2</span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify">lib</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify">rake</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+rake_module</span><span style=3D"color: #660;" class=3D"styled-by-prettify"=
+>.</span><span style=3D"color: #000;" class=3D"styled-by-prettify">rb</span=
+><span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span st=
+yle=3D"color: #066;" class=3D"styled-by-prettify">28</span><span style=3D"c=
+olor: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #00=
+8;" class=3D"styled-by-prettify">in</span><span style=3D"color: #000;" clas=
+s=3D"styled-by-prettify"> </span><span style=3D"color: #080;" class=3D"styl=
+ed-by-prettify">`load_rakefile&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/=
+gems/rake-11.2.2/lib/rake/application.rb:686:in `</span><span style=3D"colo=
+r: #000;" class=3D"styled-by-prettify">raw_load_rakefile</span><span style=
+=3D"color: #080;" class=3D"styled-by-prettify">&#39;<br>/Users/cewende/.rvm=
+/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.rb:96:in `block in l=
+oad_rakefile&#39;</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify"><br></span><span style=3D"color: #660;" class=3D"styled-by-prettify"=
+>/</span><span style=3D"color: #606;" class=3D"styled-by-prettify">Users</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span=
+ style=3D"color: #000;" class=3D"styled-by-prettify">cewende</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">/.</span><span style=3D"c=
+olor: #000;" class=3D"styled-by-prettify">rvm</span><span style=3D"color: #=
+660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify">gems</span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by=
+-prettify">ruby</span><span style=3D"color: #660;" class=3D"styled-by-prett=
+ify">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">2.3<=
+/span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><sp=
+an style=3D"color: #066;" class=3D"styled-by-prettify">0</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">gems</span><span style=3D"color: #660=
+;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">rake</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">-</span><span style=3D"color: #066;" class=3D"styled-by-p=
+rettify">11.2</span><span style=3D"color: #660;" class=3D"styled-by-prettif=
+y">.</span><span style=3D"color: #066;" class=3D"styled-by-prettify">2</spa=
+n><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span s=
+tyle=3D"color: #000;" class=3D"styled-by-prettify">lib</span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify">rake</span><span style=3D"color: #660;" =
+class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"=
+styled-by-prettify">application</span><span style=3D"color: #660;" class=3D=
+"styled-by-prettify">.</span><span style=3D"color: #000;" class=3D"styled-b=
+y-prettify">rb</span><span style=3D"color: #660;" class=3D"styled-by-pretti=
+fy">:</span><span style=3D"color: #066;" class=3D"styled-by-prettify">178</=
+span><span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><spa=
+n style=3D"color: #008;" class=3D"styled-by-prettify">in</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color=
+: #080;" class=3D"styled-by-prettify">`standard_exception_handling&#39;<br>=
+/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/application.r=
+b:95:in `</span><span style=3D"color: #000;" class=3D"styled-by-prettify">l=
+oad_rakefile</span><span style=3D"color: #080;" class=3D"styled-by-prettify=
+">&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/lib/rake/ap=
+plication.rb:79:in `block in run&#39;</span><span style=3D"color: #000;" cl=
+ass=3D"styled-by-prettify"><br></span><span style=3D"color: #660;" class=3D=
+"styled-by-prettify">/</span><span style=3D"color: #606;" class=3D"styled-b=
+y-prettify">Users</span><span style=3D"color: #660;" class=3D"styled-by-pre=
+ttify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">ce=
+wende</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/.</s=
+pan><span style=3D"color: #000;" class=3D"styled-by-prettify">rvm</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify">gems</span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000=
+;" class=3D"styled-by-prettify">ruby</span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">-</span><span style=3D"color: #066;" class=3D"sty=
+led-by-prettify">2.3</span><span style=3D"color: #660;" class=3D"styled-by-=
+prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-prettify"=
+>0</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span>=
+<span style=3D"color: #000;" class=3D"styled-by-prettify">gems</span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"=
+color: #000;" class=3D"styled-by-prettify">rake</span><span style=3D"color:=
+ #660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066;" c=
+lass=3D"styled-by-prettify">11.2</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"style=
+d-by-prettify">2</span><span style=3D"color: #660;" class=3D"styled-by-pret=
+tify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettify">lib=
+</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><s=
+pan style=3D"color: #000;" class=3D"styled-by-prettify">rake</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify">application</span><span style=3D"c=
+olor: #660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #00=
+0;" class=3D"styled-by-prettify">rb</span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">:</span><span style=3D"color: #066;" class=3D"styl=
+ed-by-prettify">178</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">:</span><span style=3D"color: #008;" class=3D"styled-by-prettify">=
+in</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span>=
+<span style=3D"color: #080;" class=3D"styled-by-prettify">`standard_excepti=
+on_handling&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/li=
+b/rake/application.rb:77:in `</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify">run</span><span style=3D"color: #080;" class=3D"styled-b=
+y-prettify">&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/gems/rake-11.2.2/e=
+xe/rake:27:in `&lt;top (required)&gt;&#39;</span><span style=3D"color: #000=
+;" class=3D"styled-by-prettify"><br></span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">/</span><span style=3D"color: #606;" class=3D"sty=
+led-by-prettify">Users</span><span style=3D"color: #660;" class=3D"styled-b=
+y-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-prettif=
+y">cewende</span><span style=3D"color: #660;" class=3D"styled-by-prettify">=
+/.</span><span style=3D"color: #000;" class=3D"styled-by-prettify">rvm</spa=
+n><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span s=
+tyle=3D"color: #000;" class=3D"styled-by-prettify">gems</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">ruby</span><span style=3D"color: #660=
+;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066;" class=
+=3D"styled-by-prettify">2.3</span><span style=3D"color: #660;" class=3D"sty=
+led-by-prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-pr=
+ettify">0</span><span style=3D"color: #660;" class=3D"styled-by-prettify">/=
+</span><span style=3D"color: #000;" class=3D"styled-by-prettify">bin</span>=
+<span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span sty=
+le=3D"color: #000;" class=3D"styled-by-prettify">rake</span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #0=
+66;" class=3D"styled-by-prettify">23</span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">:</span><span style=3D"color: #008;" class=3D"sty=
+led-by-prettify">in</span><span style=3D"color: #000;" class=3D"styled-by-p=
+rettify"> </span><span style=3D"color: #080;" class=3D"styled-by-prettify">=
+`load&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/bin/rake:23:in `&lt;main&=
+gt;&#39;<br>/Users/cewende/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:1=
+5:in `eval&#39;</span><span style=3D"color: #000;" class=3D"styled-by-prett=
+ify"><br></span><span style=3D"color: #660;" class=3D"styled-by-prettify">/=
+</span><span style=3D"color: #606;" class=3D"styled-by-prettify">Users</spa=
+n><span style=3D"color: #660;" class=3D"styled-by-prettify">/</span><span s=
+tyle=3D"color: #000;" class=3D"styled-by-prettify">cewende</span><span styl=
+e=3D"color: #660;" class=3D"styled-by-prettify">/.</span><span style=3D"col=
+or: #000;" class=3D"styled-by-prettify">rvm</span><span style=3D"color: #66=
+0;" class=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">gems</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">/</span><span style=3D"color: #000;" class=3D"styled-by-p=
+rettify">ruby</span><span style=3D"color: #660;" class=3D"styled-by-prettif=
+y">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">2.3</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span=
+ style=3D"color: #066;" class=3D"styled-by-prettify">0</span><span style=3D=
+"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify">bin</span><span style=3D"color: #660;" c=
+lass=3D"styled-by-prettify">/</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify">ruby_executable_hooks</span><span style=3D"color: #660;"=
+ class=3D"styled-by-prettify">:</span><span style=3D"color: #066;" class=3D=
+"styled-by-prettify">15</span><span style=3D"color: #660;" class=3D"styled-=
+by-prettify">:</span><span style=3D"color: #008;" class=3D"styled-by-pretti=
+fy">in</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </s=
+pan><span style=3D"color: #080;" class=3D"styled-by-prettify">`&lt;main&gt;=
+&#39;</span></span></font><font color=3D"#333333" face=3D"Consolas, Liberat=
+ion Mono, Menlo, Courier, monospace"><span style=3D"font-size: 13.6px; line=
+-height: 1.45;"><span style=3D"color: #080;" class=3D"styled-by-prettify"><=
+br></span></span></font></pre></div></code></div><div><br></div><div><br></=
+div>Any ideas?</div><div><br></div><div>Thanks<br><br></div></div>
+------=_Part_1955_391357894.1473135917121--
+
+------=_Part_1954_652919708.1473135917117--
+

@@ -1,0 +1,60 @@
+From 420903649280@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 389709561856
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,58db04fab18bc715
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.86.51.10 with SMTP id y10mr69628fgy.12.1233940593212;
+        Fri, 06 Feb 2009 09:16:33 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from mail-bw0-f160.google.com (mail-bw0-f160.google.com [209.85.218.160])
+        by mx.google.com with ESMTP id 3si77017fgg.7.2009.02.06.09.16.32;
+        Fri, 06 Feb 2009 09:16:33 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.218.160 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.218.160;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 209.85.218.160 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by mail-bw0-f160.google.com with SMTP id 4so102314bwz.23
+        for <webslideshow@googlegroups.com>; Fri, 06 Feb 2009 09:16:32 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.181.146.14 with SMTP id y14mr336561bkn.70.1233940592711; Fri, 
+	06 Feb 2009 09:16:32 -0800 (PST)
+In-Reply-To: <51d39041-c4ee-4b3a-8c4f-5efb7e435110@r36g2000prf.googlegroups.com>
+References: <b010b579-b47d-4f23-a54c-0a902a804043@t26g2000prh.googlegroups.com>
+	 <976bdc0d-b03c-4c17-acb2-5a1f49e98815@v5g2000prm.googlegroups.com>
+	 <3011f7d0-f27e-4b46-ad24-5353cbe75cdb@z27g2000prd.googlegroups.com>
+	 <1f058eab0902051019ybb15153m2f23c399eca3bc0a@mail.gmail.com>
+	 <1f058eab0902060359g3cd78a50n967dff6d5858c9ee@mail.gmail.com>
+	 <51d39041-c4ee-4b3a-8c4f-5efb7e435110@r36g2000prf.googlegroups.com>
+Date: Fri, 6 Feb 2009 18:16:32 +0100
+Message-ID: <1f058eab0902060916s3b49acdenae7e988ba736dd55@mail.gmail.com>
+Subject: Re: [slideshow] Re: How to use s5 theme?
+From: Gerald Bauer <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  Great that it all worked out.
+
+> Since I am not a ruby programmer, how do variable declarations work --
+> can you pretty much just define any variable in the header of your
+> textile file and then invoke them in the erb file? For example,
+>
+>    foo: hello world
+>
+> in the top of the textile file and then use it in the erb file as
+>
+>   <%= @headers['foo']%>
+>
+> ?
+
+  Yes, that's how it works. You can define any headers you want and
+use it in your templates.
+
+  Also a tiny Ruby (erb) tip: If you want to use default values for
+your header properties you can add || 'your default value here'. e.g.
+
+    <%= @headers['foo'] || 'bar" %>
+
+   Cheers.
+

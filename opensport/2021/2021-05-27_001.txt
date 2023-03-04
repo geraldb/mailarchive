@@ -1,0 +1,102 @@
+From 6966946914777432064@xxx Thu May 27 12:32:15 +0000 2021
+X-GM-THRID: 6966946913091321856
+X-Received: by 2002:a7b:c5d2:: with SMTP id n18mr8177515wmk.97.1622118734459;
+        Thu, 27 May 2021 05:32:14 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:6000:2a8:: with SMTP id l8ls4254587wry.1.gmail; Thu, 27
+ May 2021 05:32:13 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzgk1BOJksoHDHz0I0BCVyriCU6q+vgI0dJbylONf7Y2CA/0DcWLoE4365vb4ojiWZscLM7
+X-Received: by 2002:adf:db4e:: with SMTP id f14mr3046154wrj.48.1622118733122;
+        Thu, 27 May 2021 05:32:13 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1622118733; cv=none;
+        d=google.com; s=arc-20160816;
+        b=kTqivazoCMmyVyLAbdU72r4p/CglgL4VFZsb4RG4QTX4azI9FyOfx+C6xsFVPMbUdl
+         tHzQ/VXDgwhapETR+4ujpuGtc1lN3xuFKvKXdOlvc1pSDJ6wJ1ezFEiGbAZfGoaVPqMM
+         oBjB1Q8G0LqKXuiLnZ43wQ3wK6TKH2zmp5JRAe99SyreLFKXhQQFazMcRRGfrJwGg+X2
+         qVHdd3Uw7V7VZ7+NafUhLW7o+xwYo/nqs/tTSKsa17bZNsjdY1GMNBaL4hxdO6hlsCtU
+         QQTvMOpAI8UpleNMa557Td9vbBfX0U2sS1rsPcGfGb8UK7Q37PDhwIDcmYxm5JnwtnWe
+         TXkA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=PaL+tI0pGiJ8vpdNkZD+pzA9upRl5/1zP/9WSpXiG5c=;
+        b=Z69PFn7TWhdXHiOD5hhS9ZPJHasLOtNcGUl8c8DgaxNBpYqFLkJjjDqy5k7gxkDZyN
+         DztUmDfP2XPzpZSSSiOGJI13ZKyTwaqt1PkzW3FLX8dNP53DLCs7MXqtmLF5O0HGl5kj
+         RzUFWRAaLP7irlfo9SzFg6W/arau8RStnEogB53ORNdyURxC6EU49bN6YhXsH/SlR6gn
+         209j+qpzDNLQ9EjQ18x7bgMlHifZPuNZ6tz+02XilcAyRpge7knCzcmi0haOsdpdcstb
+         9Xkv/mPOd9XhgJ76VPmVyuedXMz85eEx4KJul7GIwNne53iFM31r+nCoLWpZa1BA+pEm
+         wjXA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=gCxPWP9q;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ej1-x62e.google.com (mail-ej1-x62e.google.com. [2a00:1450:4864:20::62e])
+        by gmr-mx.google.com with ESMTPS id g18si130141wmc.0.2021.05.27.05.32.13
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 27 May 2021 05:32:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62e as permitted sender) client-ip=2a00:1450:4864:20::62e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=gCxPWP9q;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ej1-x62e.google.com with SMTP id lg14so7739396ejb.9
+        for <opensport@googlegroups.com>; Thu, 27 May 2021 05:32:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=PaL+tI0pGiJ8vpdNkZD+pzA9upRl5/1zP/9WSpXiG5c=;
+        b=gCxPWP9q3zz/1q5Ii/kjyavrtG0D9uWHqeBaV74G9fl1CNS+JqUdsLirNB5XKuf2a9
+         8Vbxo5/TNvC/0gc5csonkqLR7TH6oPOZdbNGEA4zHaOHKxc2BJlNgEn7Z8dZ7hjpBcNH
+         drc+vwnFetzf56s0DY6NNazj/hWdY/5SpPSQM6FGOYD/Ykq50l36bBXUGMH3YmFH0HwG
+         9+/1z0wCF0wBaUAMC0rczoIlB8TBcvhVlimswo9lxKfEZ7sqqj8nMj/cjVaPRqmj0hbO
+         moHtLcxrKYLgYQBZ28QOQO8wHNGyrNp5HrPhH4zI7vh48ZwwwS6fFEJ7MXtwShDgDowX
+         wh+g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=PaL+tI0pGiJ8vpdNkZD+pzA9upRl5/1zP/9WSpXiG5c=;
+        b=DYYdcJv82oObuMrrgXMvktuNabdHB1ve5Dvx4eFecraQS4EGul9NzLzrPcSK/Froiw
+         yHqXutmtE8h3pCiJojagL19R6o/nUK6x0RfCvlLIWJqKzhgnKNa+liC9q2A1kRwgUPiJ
+         ACSOTDMBZ0kFIZtgvF5fiHBtRYPzLTeEvOxO/05DEYpJliVHva3plGi0yZIF3QrRjYnf
+         DamTpnrClR+00aGKGIcUInjx3u7X5F/GFWwhAQySMEGnabRXv9np/7dQ/x27bSjQUiYV
+         Y0S+UYNEK9nd3JN/uc7rSpnTuhFLm0ag8uM5b6fMEhfK2vEPQWoVlE4ZJt8Ei1xkK6uj
+         RbUA==
+X-Gm-Message-State: AOAM530U/lcTJYQo+yYjwtMVC/FElNHQHfPo9ChNqMNBGV/QpAgfGjPn
+	3eCCQ+reXhUO62M7ZF9txVJdz8ibAbIVBAjoMm1ZRJNG1d8cMQ==
+X-Received: by 2002:a17:906:6895:: with SMTP id n21mr3548841ejr.392.1622118732570;
+ Thu, 27 May 2021 05:32:12 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 27 May 2021 14:32:01 +0200
+Message-ID: <CAAxEZd_hUqJ1RGCUkgBNMMcR=Nx1_sO492G5R1Sgvm6U7xh7Mg@mail.gmail.com>
+Subject: Open Datasets for Euro 2021 / European Football Championship 2021,
+ June 11th to July 11th - Try $ sportdb new euro2021
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   I've started to add the match schedule (the group phase) -
+ see /2020--europe/euro.txt [1] - for the upcoming
+ Euro 2021 / European Football Championship 2021, June 11th to July 11th.
+
+  Try:
+
+   $ sportdb new euro2021
+
+  to build yourself a fresh copy, that is, reading in the match
+schedule in the Football.txt format
+ into a local single-file SQL(lite) database.
+
+  New to the (open data) sportdb machinery? See the getting started
+guide / project docu [2].
+
+   Cheers. Prost. Enjoy the beautiful game.
+
+PS: If you know other (open) data sources or scripts about the Euro
+2021, please tell!
+
+[1] https://github.com/openfootball/euro/blob/master/2020--europe/euro.txt
+[2] http://sportdb.github.io
+

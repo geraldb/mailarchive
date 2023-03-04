@@ -1,0 +1,113 @@
+From 6460351725786103808@xxx Thu Aug 31 08:24:10 +0000 2017
+X-GM-THRID: 6460351723712020480
+X-Received: by 10.99.180.2 with SMTP id s2mr845231pgf.47.1504167850283;
+        Thu, 31 Aug 2017 01:24:10 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.36.9.209 with SMTP id 200ls4506746itm.17.gmail; Thu, 31 Aug
+ 2017 01:24:10 -0700 (PDT)
+X-Received: by 10.200.34.167 with SMTP id f36mr2826944qta.104.1504167850049;
+        Thu, 31 Aug 2017 01:24:10 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1504167850; cv=none;
+        d=google.com; s=arc-20160816;
+        b=cwYcKbViO/2/LzZWp/ogwE87447Xez+RQ/EZWjM/Us0k/H8pu5GydvQYocgeDmT0Lu
+         rSunPge93nNim+0bciz+fclA+Sxuk3PGn+KSc6F0o6dZ2AtvIKqxEdvhzm+3kMoolPzC
+         qhx8tb00DSML0G64B1iEBz28iOOHkLbUeG0sk+xHqWgCik7jrsoNpm/uiNg8y3ee4xBa
+         fyfYCy11bdyKYb4vgBZKzSDcehPc97yFZdsIwoa4x0rz2q3iJQMAQ/D7Dhm0ko30pweP
+         uqmuXW0n/0ArufogwcwBHIF9a4mouNzAha9i8jdnn6S/duV7hUEIpTiw3ZU8+1DtnUg2
+         XBzA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=WubPnXKGVKCKqmHt5H7tVTBPRSO52kYDeQkm1g57rfU=;
+        b=bqM63FB4vcusK8hIKx2Nulw2CfkHTOMiGJE+85Rjywo6DZHjNHPq9X/1Z8WJg8hr1n
+         BMWC/VO3yd/zZINO8YrGW+oAPCQZOL5nl162Uz6Foyyo6R0crcKKb9J6L8z7DDpz43Rg
+         GmkEZ5ZSTmyDMEh75zWp12Uwp/Ed1qybncmxvFzPR4N6lA2oU/S7XpUCVEo0zbg0OkyY
+         VzL7m077CKAlufQtj1l+99WeXibOZSUhXdRzxjUhK/c4V5bQdfC8XT6+Od03QV03hYQO
+         VINnsQyW3nNM8ymWOO9LzkGD67KoPbLV4B0JbCFOwJBVXWGO7Zt3/FkykBhHoFkwL1N/
+         fcoQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=dvj79tiU;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x229.google.com (mail-io0-x229.google.com. [2607:f8b0:4001:c06::229])
+        by gmr-mx.google.com with ESMTPS id c12si32227iti.6.2017.08.31.01.24.09
+        for <openmundi@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 31 Aug 2017 01:24:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::229 as permitted sender) client-ip=2607:f8b0:4001:c06::229;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=dvj79tiU;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::229 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x229.google.com with SMTP id d78so16819242ioe.4
+        for <openmundi@googlegroups.com>; Thu, 31 Aug 2017 01:24:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=WubPnXKGVKCKqmHt5H7tVTBPRSO52kYDeQkm1g57rfU=;
+        b=dvj79tiUok5Tw7TrQTTcmOmP6BG2EnuPhKdg0fHrkm2HuYMgxu01/YNnZjfhMFxIIJ
+         /7lsoVpUI624tcEWbIiPdraWrUvnAQNR9kcN0MTfzcJUzv1gVyJA3/mZwCPmf+lZdMX7
+         R6vFJ5PZIhV0yRNVBuvlsATlfDywZzdS64gGS/FTd0q4l3sL2sxaIl9pGNUp+xaca86o
+         RP+4cvtbs9DqGJqh+cO/CYeS2ClWn+I/MHoOmmm0zO7Ntulsk0IzSrc+knZlycB/q2q6
+         JvEDby3jWDpYNpctj9IrYXkhN5YoJBtHFR+fmys/Y8lzXuAJfLn6cD047e+L8u6/5Qv8
+         zsrw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=WubPnXKGVKCKqmHt5H7tVTBPRSO52kYDeQkm1g57rfU=;
+        b=afeDfZS3qW39VuVb08MwBRo1WMUdx4DrL+sKwdA7AAzfT5jfogVZ5jF/0hoyRQL+jz
+         13pEGV+tOvnAJb0w09NegsgGgx9xH4jkT70jdpBBRUsoF4zYNAqHUMPNkYsiS0fy1JIw
+         Bi0nffR+EPhcy0TMEwxR3I+erNKj5VxDy4mPVNTnTZHMav3TN9C7J3OKFFruvgn0rK1G
+         wbjsI4kdCK75+CXJyRNnOZxrNzUxs7tYNsyVc5nGm01QzlyciXUO9GSywNzHPXoFI05v
+         0klzbO9REWiKqYtSbPblIvEYabnLD492qb2ZzrE5n540M/ubKL+CFZhbTocG/g66Arov
+         B8fg==
+X-Gm-Message-State: AHYfb5iFjy9ZhrdYZJw7Lcj5EI03k/KQdRjMXPHxwWyte8HNABtSLjyL
+	gObi+PdVWxTpLwU0C3C4OCZzIMO0Gk9T
+X-Received: by 10.36.135.73 with SMTP id f70mr4831512ite.90.1504167849561;
+ Thu, 31 Aug 2017 01:24:09 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.40.142 with HTTP; Thu, 31 Aug 2017 01:24:09 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Thu, 31 Aug 2017 10:24:09 +0200
+Message-ID: <CAAxEZd_HwpvoycfidBWwf_qqGA=iU63y6zQOtAP47S=tgMD7vA@mail.gmail.com>
+Subject: world.db.starter Sample - Build Your Own HTTP JSON API (w/ world.db
+ incl. Countries / States / Cities / etc.)
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   I've updated the world.db web service starter sample [1]
+that gets you started building your own HTTP JSON API using the world.db
+(incl. continents / countries / states / cities /etc.).
+
+   What's news? The starter sample now uses the new webservice library [2]
+(a simplified sinatra 2.0-style library for HTTP JSON APIs). Example:
+
+
+    class StarterApp < Webservice::Base
+
+      include WorldDb::Models   # e.g. Continent, Country, State, City, etc.
+
+      get '/countries(.:format)?' do
+        Country.by_key.all
+      end
+
+      get '/cities(.:format)?' do
+        City.by_key.all
+      end
+
+      get '/tag/:slug(.:format)?' do   # e.g. /tag/north_america.csv
+        Tag.find_by!( slug: params['slug'] ).countries
+      end
+
+      ...
+    end
+
+
+Enjoy. Cheers.
+
+[1]: https://github.com/worlddb/world.db.starter
+[2]: https://github.com/rubylibs/webservice
+

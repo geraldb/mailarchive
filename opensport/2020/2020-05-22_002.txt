@@ -1,0 +1,104 @@
+From 6829576688444112896@xxx Fri May 22 08:05:37 +0000 2020
+X-GM-THRID: 6829575247890481152
+X-Received: by 2002:a1c:dc05:: with SMTP id t5mr12811066wmg.112.1590134736423;
+        Fri, 22 May 2020 01:05:36 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:600c:210b:: with SMTP id u11ls283155wml.1.gmail; Fri, 22
+ May 2020 01:05:35 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyjn0qc3Rt8V0XYA+itrKOWJLsv1J3rR5NcqlPj+59v3EHUJAhaWsCvia96C9DkiHYi2UJp
+X-Received: by 2002:a7b:ce05:: with SMTP id m5mr3245926wmc.34.1590134735506;
+        Fri, 22 May 2020 01:05:35 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1590134735; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ohhMbynnZQIVQFtPOGZ5baE6pEnHB+pk2TSFjF3hrfA+Q3toewNMMY1FNPO2vxrYtF
+         SprA4Hy94PuCbGmmGP/cXXtkqPSeL981+gvnAMBb07PtnbmBJy/vma8ExD5bejtZ0f7J
+         c2UNQlBb/irZa4oMgfhTstPWr+HMNxrwwL+jKnBTStiRHlyqkHXxac1Rqmpmjp61c7XF
+         wqtJ80O6yNCfz8HcZWtnK7lJbJ4cgkpW91FtbOftAGQlAW4sA/ateNuEcwDXAYxcRXI/
+         msfvSUHkOp3fKH1ADGNrN3pstJOB6ANfsVAZWBA/BLWY7xTS9Y2Jc5bxEYhatJqJtTJ4
+         hmqw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=ZIwQcd7x1SiPTRTxwDseNPfNDIxBxMpCvIHoxmbl8uo=;
+        b=RmEK23QF/f6C1MOMICwL3DAd7eHSG5T286G6U0qRyO+iHuAPfvEnuqu1LWefiyo89W
+         pWm8O1d3PJ7k5LArzR6nc+GFUAqgQAth06BAD3wmtGPQcv031g93GXbwohgGPMs95aKZ
+         nM2dq7hX8WvZRuNiJNkHBlYGhrPitpInpVwB8Q9r+eLMdQuRWdTlYEjZr2EZklTzGi/8
+         jIapsUvKiorLMzTbvRUJxLecR+vK/mVbVOggT0EnKiYQNwBYy9PJXHVx+dKnvkryZzGG
+         xndJEPzSRay+EhIfJoMshLd4zU+q9j+9C/euQZ1NEkqWFagXAwA+iDXYS6j76Jq1ljob
+         kV0w==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ILbgR58g;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22d.google.com (mail-lj1-x22d.google.com. [2a00:1450:4864:20::22d])
+        by gmr-mx.google.com with ESMTPS id v11si410593wrp.5.2020.05.22.01.05.35
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 22 May 2020 01:05:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22d as permitted sender) client-ip=2a00:1450:4864:20::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ILbgR58g;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22d.google.com with SMTP id l15so11183347lje.9
+        for <opensport@googlegroups.com>; Fri, 22 May 2020 01:05:35 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=ZIwQcd7x1SiPTRTxwDseNPfNDIxBxMpCvIHoxmbl8uo=;
+        b=ILbgR58gf++PjINFZ4ndKcwh3pq4ff8FBgxgryucRKvrNqX5gCVZ2mJwhl3lRl5eO8
+         +BVEOtpXRoWqumGxzQtAOV1LBjkDkK8UImChMIZdE6kXmO/esEXiRDN3JTV0BdYuF1XN
+         MJVJRoWnKHl17b1C7HWI3gZJEWSw7fWwhymlrRDgUVQd2otP4DR2dOhgc/wNaeMAe9yA
+         tr8eWLoL/DkZSPQT8oxf2jT4aAwoqu3sQOME1IbfLP9o+rFLJHCh4JHD0vT3iYlrdwdE
+         8Wj2FHXyL08vrcnjt2QGjAFSxphKVd4QvoQ8TJVqrVBvlVrkcJLtPOWNVIA8oRYXPbLe
+         nxCQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=ZIwQcd7x1SiPTRTxwDseNPfNDIxBxMpCvIHoxmbl8uo=;
+        b=i2EC97ztUbDpN1sRS6Yb82LPDF8/rYskXsayLFyuTXG+GsuFM1RWRo1EhxrBbsDMXE
+         U3DyOx3PKjMM+2xnd0gXO6dXRutspu302uSmV+WEDI2uGQRjxHmblooQSYt+XqgvEZ99
+         6S/AP1vIAy0Vp0on/B/+317Xs6lkcbzDz57LFN/lQGccs1ryH/5OBGaWPgE0Rfhv38Iq
+         /cpWaIqEeyYvaurfxKOCF9i6EweRUod/baZb77mEskySE2FenzUyGphTNi3H1pgFKhFA
+         /l8qwRPqQ78a/OhqZY0+IQxyZ4VY40QsuUgCBvBD1XjqT/m7gBmUkMyaYFt/BvSWsr2U
+         p9sA==
+X-Gm-Message-State: AOAM532zy/jNNzMQtF7qyba50fgGE74Z6M7KmzunP2kayuxY75WEh8zH
+	rrRiI0SPN8J8PkkCiRe90NI+4kClowoapHv0ijRE5F5b1tE=
+X-Received: by 2002:a2e:9d5:: with SMTP id 204mr6630759ljj.168.1590134734678;
+ Fri, 22 May 2020 01:05:34 -0700 (PDT)
+MIME-Version: 1.0
+References: <78405be8-9af3-403b-a23a-ad0aa147e1ee@googlegroups.com>
+In-Reply-To: <78405be8-9af3-403b-a23a-ad0aa147e1ee@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 22 May 2020 10:05:23 +0200
+Message-ID: <CAAxEZd9VQyum_xh5sENX08heespUm-mpoB61k5auLEU5eSM1Og@mail.gmail.com>
+Subject: Re: [opensport] Data update
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+   If you mean the sportbook sources [1]  - note the spelling without
+s :-) - than the good news is yes, and the bad news is that the
+sportbook sources are outdated and I will not get around for an update
+before 2021 (that is, next year).
+
+[1] https://github.com/openbookie
+
+El vie., 22 may. 2020 a las 10:00, sandm (<kristian88tot@gmail.com>) escrib=
+i=C3=B3:
+>
+> Hi , just wanted to ask how the db-s are being updated, is this relevant =
+to use on sportsbook/betting service?
+>
+> --
+> You received this message because you are subscribed to the Google Groups=
+ "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an=
+ email to opensport+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit https://groups.google.com/d/msgi=
+d/opensport/78405be8-9af3-403b-a23a-ad0aa147e1ee%40googlegroups.com.
+

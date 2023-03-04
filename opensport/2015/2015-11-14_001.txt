@@ -1,0 +1,76 @@
+From 6216914363983331328@xxx Sat Nov 14 08:02:52 +0000 2015
+X-GM-THRID: 6216913658664976384
+X-Received: by 10.68.173.99 with SMTP id bj3mr21598385pbc.10.1447488172540;
+        Sat, 14 Nov 2015 00:02:52 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.182.81.33 with SMTP id w1ls654016obx.68.gmail; Sat, 14 Nov
+ 2015 00:02:50 -0800 (PST)
+X-Received: by 10.182.24.42 with SMTP id r10mr21687299obf.42.1447488170967;
+        Sat, 14 Nov 2015 00:02:50 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x231.google.com (mail-ig0-x231.google.com. [2607:f8b0:4001:c05::231])
+        by gmr-mx.google.com with ESMTPS id mh4si322269igb.0.2015.11.14.00.02.50
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 14 Nov 2015 00:02:50 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::231 as permitted sender) client-ip=2607:f8b0:4001:c05::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x231.google.com with SMTP id xm8so28238313igb.1
+        for <opensport@googlegroups.com>; Sat, 14 Nov 2015 00:02:50 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=3O+evZt8EIrHnCTZqs4S/mvB8l9oGkT6iwbN0zj6XtI=;
+        b=EkC4Tnvx9jzqB7sGby4ZwXlTYboUe6wLUd6PaPduMJd84mbeVp5jT7rZzAVxQFZU3H
+         gZzN8bUJh3agCfZRnzFJSnbE7ABE8G9JglpseSD9Rol+7a9hJ9z3SlZjOFMQzhGqYpKp
+         IjWUTz7gB3Lzf8u35PuxvwSoZthLUqovbLn1azv963TErduxyYT26AbjEAY5QYdXnBXE
+         lkJP2wbszk84CUru/qTEGni82ixpp1wcppLN+QGC+fnzGZJ+pdtqO6xUapGtYF/ayxeD
+         c8ha7HQat7sjD6Ql2lNpBibGyPpOwf8hKO1vAzaqBpQgFDru2mn+Qka0aSeNfIDkjWF9
+         TFYg==
+MIME-Version: 1.0
+X-Received: by 10.50.122.106 with SMTP id lr10mr6707774igb.86.1447488170834;
+ Sat, 14 Nov 2015 00:02:50 -0800 (PST)
+Received: by 10.107.140.12 with HTTP; Sat, 14 Nov 2015 00:02:50 -0800 (PST)
+In-Reply-To: <74d57559-7e13-4238-ad20-98c00595424f@googlegroups.com>
+References: <74d57559-7e13-4238-ad20-98c00595424f@googlegroups.com>
+Date: Sat, 14 Nov 2015 09:02:50 +0100
+Message-ID: <CAAxEZd_VwuR+g7+trrV4OvoZGtRGN0TuN4KUgvM+rreiXGg9pw@mail.gmail.com>
+Subject: Re: [opensport] World Cup 2014 Dataset
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Welcome to football.db. The best "recommended" and easiest way to
+get started is using Datafiles [1]. First, of course, you need to
+install the sportdb tool e.g.:
+
+   $ gem install sportdb                 # will also install sqlite support
+
+Now you can build yourself a database using Datafile. Example:
+
+  $ sportdb new worldcup             # get world cup dataset
+
+ Will fetch zip archives from github and build the sport.db database.  Now try:
+
+  $ sqlite3 sport.db
+  > .tables
+  >  select from * teams;
+  > .exit
+
+  I'd recommend starting with sqlite3 - if you're new to the sqlite3
+command line you might try/use a visual tool - try SQLite Studio [2]
+(it's free).
+
+  The best way to get started is to get started and than if you have
+more (new) questions post them here. Cheers.
+
+[1] github.com/openfootball/datafile
+[2] sqlitestudio.pl
+

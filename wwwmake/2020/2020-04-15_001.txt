@@ -1,0 +1,166 @@
+From 6816016508194390016@xxx Wed Apr 15 19:05:10 +0000 2020
+X-GM-THRID: 6815540562521751552
+X-Received: by 2002:aca:61d4:: with SMTP id v203mr569187oib.72.1586977510219;
+        Wed, 15 Apr 2020 12:05:10 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a9d:6e97:: with SMTP id a23ls898438otr.2.gmail; Wed, 15 Apr
+ 2020 12:05:09 -0700 (PDT)
+X-Google-Smtp-Source: APiQypKwPQqA9FVN1puDltxxhGl6MiqPti2tF56fVA5Vee6CWGXDHQT887KzXz2nNyCJk0DJ6haV
+X-Received: by 2002:a9d:5188:: with SMTP id y8mr15124678otg.278.1586977509555;
+        Wed, 15 Apr 2020 12:05:09 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1586977509; cv=none;
+        d=google.com; s=arc-20160816;
+        b=OrEAK2bY2V9Pk8WFRp5cxgvT8rOgj7t0l1WpThgg/QOBoTE4pEWGjl0iZqhlNU01CT
+         0ZyVUG1uzf2tRqfULms9OTPoiC03GsZ6RC0PFA7bwKqQgZIQdhH3AHUoTw0s9pc5qYjK
+         GXKrHjO5/fVxttDnkT0Rj1pOz8Y0bri4qG1cXp09xWB1szNQ2l53z3BsEEadz1ty4NYu
+         qyN+J+xsBWFzf5GvaX4dEgB/9/iwPMYSjVA1hjKMY4UKOGiXSBPbX6Vama95nZP14aT2
+         GmC8sbfDDfolicZEtV4S+emYFTVM2ArRTuxcIy6g+Z3eED/+a3cGTryNpmu7HECuykPk
+         QkIw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=ggaKJbuNgmkLfmQNawqPyuhA9hM/1msG37iswtskEHQ=;
+        b=mgoTeObqUJk092A/dDq2bBAImayMF89A7zocOOZ4L2jEOt19UDR9UN/fKJV8Enu3W8
+         G6RNpSrrzBCwv6b4EJPCf2bxj5Cng+gZKApOB3MRc808DvaZXm8xww2tos1l0pn45CCy
+         6x68ooeR+YDyajdzSPlTV51Tmcph26Tj/tVCbMXA8xMOCuq+HgGfO6FP5Spbyhl23yvD
+         1Lmuq9y8k8xGGcnHFmC5vPaRPy4j0TwDyzPmbf5+SWS+jc8WPf4t5+OS7NNm5XZXjrC2
+         OcHGovfyEWifetMtNw1DHUIE45AQ4aD8qeowSCKYSJ7Wc6kMQfzddszHzgbEx27nYs9B
+         h44g==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=YG9WYRsj;
+       spf=pass (google.com: domain of joseph.rodgers@gmail.com designates 2607:f8b0:4864:20::129 as permitted sender) smtp.mailfrom=joseph.rodgers@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <joseph.rodgers@gmail.com>
+Received: from mail-il1-x129.google.com (mail-il1-x129.google.com. [2607:f8b0:4864:20::129])
+        by gmr-mx.google.com with ESMTPS id x23si1170991oif.2.2020.04.15.12.05.09
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 15 Apr 2020 12:05:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of joseph.rodgers@gmail.com designates 2607:f8b0:4864:20::129 as permitted sender) client-ip=2607:f8b0:4864:20::129;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=YG9WYRsj;
+       spf=pass (google.com: domain of joseph.rodgers@gmail.com designates 2607:f8b0:4864:20::129 as permitted sender) smtp.mailfrom=joseph.rodgers@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-il1-x129.google.com with SMTP id i2so4395411ils.12
+        for <wwwmake@googlegroups.com>; Wed, 15 Apr 2020 12:05:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=ggaKJbuNgmkLfmQNawqPyuhA9hM/1msG37iswtskEHQ=;
+        b=YG9WYRsjY/gzhket57FOaHdMHjmVvMLMsNUl3QQuaPeRkDHG1U/Rvn5ltcjZ7ImCOK
+         loHAfe/9VX3JMUkrG+AMIO/l8yrDdI4+RahUVpqjFoh3tlHVZPut/N0Ht070HZ45enD8
+         A74p78SWesrYOm53+BLxE+0VUAsWDtGJDCzF7pUdAlNMCkSzaTDr4GDGzoLuRpiHs5Lv
+         a9D4rpR++mldroVMrEDJ2Q7KmWrzMUw7aWg+ogB5hldzSfbEvbZjiZVCJXTSk7a4pE8K
+         VmLp49u5NB5LYg0UFzFJYzdrppCgAm90hvUU32tqi90c0qADzRMpE6GCM2y8X/9hrrEl
+         B+JQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=ggaKJbuNgmkLfmQNawqPyuhA9hM/1msG37iswtskEHQ=;
+        b=DMEQqSB+bQxY96oIyt7FdhuOR15uwNXsTdcTkENB3YjcYO/9Vesc+P7KWtlT9P8k2d
+         qN4PwpICYlOfmB363gBTM4X0iKVLdp9LkjVauyaP5ljwBubCHXf3P2RxTx5lGjG69Zrk
+         D4OvdTXr1mWW6pkNksuioFS4hcsUYIeKGOqhoOz90PmIkZLB3/JCM0YA5AXs/1RN6V0J
+         W84FXmOmCw+nhMjbwL6xIxo1vR7k6fHeUg+SSj2LwCYdoakzSletS3XuMsDIB3ZdGFLD
+         w/STsSsSjsfIITuau1/eng+MD9xEJLu/zVNB8gZMSYJcEkATgmI7jPQdxOQ08OLwjlRc
+         0MRA==
+X-Gm-Message-State: AGi0PuYGnNq0w7Ttvsa9LxMG9P0mLiaNtSSQF5FwLDNXlyjzyK6n0Tli
+	6XyIjABLj8VD6brT/YK0RmASI5JM1FCgNujSmHyWYPKb
+X-Received: by 2002:a92:5c57:: with SMTP id q84mr7112306ilb.203.1586977509097;
+ Wed, 15 Apr 2020 12:05:09 -0700 (PDT)
+MIME-Version: 1.0
+References: <e0988d6e-1f34-45e6-b256-231defffe529@googlegroups.com>
+ <CAAxEZd_7tJUKPMM6B5-Chb9woDzwGXy1xTAbcTiqvbuxcFMNZQ@mail.gmail.com>
+ <8f2ad5e3-b886-4ac8-bb60-eaab76e3c123@googlegroups.com> <1b3ff423-24e4-427b-9b72-c1fed85b5ae3@googlegroups.com>
+ <CAAxEZd84Z-Uf8vRHeVy2wCsLB_5c9m1wyYEt5Vdgxe3eNXVaRg@mail.gmail.com>
+ <CAAxEZd82QY3mt9fR+ruy=4+Dszo0YkjBfG4ND7XETvg9P6NO+Q@mail.gmail.com>
+ <b23193dc-7358-4067-91fd-20d9bcd94e23@googlegroups.com> <c15cee21-8651-4d0d-b75f-4fec9e4e0f23@googlegroups.com>
+ <CAAxEZd9YDa8U=g4d+uagiTHSbPFxjHZJ-Ff0=tjHHgkygQSWYw@mail.gmail.com>
+ <12d97ad0-c668-46e0-b916-c727dca5aea8@googlegroups.com> <5165c0a9-fed6-4b1b-a44e-dd46c6d89eee@googlegroups.com>
+ <CAAxEZd8_+bMe5B-0iNuf06kcqnnVaCzR-VoucKbaExiJ5CQ5NA@mail.gmail.com>
+In-Reply-To: <CAAxEZd8_+bMe5B-0iNuf06kcqnnVaCzR-VoucKbaExiJ5CQ5NA@mail.gmail.com>
+From: Joseph Rodgers <joseph.rodgers@gmail.com>
+Date: Wed, 15 Apr 2020 14:04:58 -0500
+Message-ID: <CAPB-cT9t+Ogy+P0rwZB994X8+_Mmf8kFm=xdQ9eyVZn6i-t2MA@mail.gmail.com>
+Subject: Re: [wwwmake:489] Are there any videos showing how to setup a new
+ planet rss site?
+To: wwwmake@googlegroups.com
+Content-Type: multipart/alternative; boundary="000000000000b245c805a358fe15"
+
+--000000000000b245c805a358fe15
+Content-Type: text/plain; charset="UTF-8"
+
+Thanks for the reply! After some messing around, I was able to get gh pages
+to serve it thanks to a friend!
+
+This is great, thank you so much for your help!
+
+On Wed, Apr 15, 2020, 1:54 PM Gerald Bauer <gerald.bauer@gmail.com> wrote:
+
+> Hello,
+>    Great that it's working.
+>
+>    About heroku -  sorry I haven't used heroku for some years now. I don't
+> know.  Again the "basic" setup is not really a web app but a simpler static
+> website.   Maybe there is something like a ruby static website build pack
+> for heroku  the same that you would use for the jekyll static website
+> generator / builder / compiler. I don't know.
+>
+>    Netlify might be another option - it's the "heroku for static websites"
+> - but again sorry I have no personal experience.   Good luck. Cheers. Prost.
+>
+>>
+>> --
+> You received this message because you are subscribed to the Google Groups
+> "wwwmake" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to wwwmake+unsubscribe@googlegroups.com.
+> To view this discussion on the web visit
+> https://groups.google.com/d/msgid/wwwmake/CAAxEZd8_%2BbMe5B-0iNuf06kcqnnVaCzR-VoucKbaExiJ5CQ5NA%40mail.gmail.com
+> <https://groups.google.com/d/msgid/wwwmake/CAAxEZd8_%2BbMe5B-0iNuf06kcqnnVaCzR-VoucKbaExiJ5CQ5NA%40mail.gmail.com?utm_medium=email&utm_source=footer>
+> .
+>
+
+--000000000000b245c805a358fe15
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Thanks for the reply! After some messing around, I was ab=
+le to get gh pages to serve it thanks to a friend!<div dir=3D"auto"><br></d=
+iv><div dir=3D"auto">This is great, thank you=C2=A0so much for your help!</=
+div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_at=
+tr">On Wed, Apr 15, 2020, 1:54 PM Gerald Bauer &lt;<a href=3D"mailto:gerald=
+.bauer@gmail.com">gerald.bauer@gmail.com</a>&gt; wrote:<br></div><blockquot=
+e class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc sol=
+id;padding-left:1ex"><div dir=3D"ltr"><div dir=3D"ltr">Hello,<div>=C2=A0 =
+=C2=A0Great that it&#39;s working.</div><div><br></div><div>=C2=A0 =C2=A0Ab=
+out heroku -=C2=A0 sorry I haven&#39;t used heroku for some years now. I do=
+n&#39;t know.=C2=A0 Again the &quot;basic&quot; setup is not really a web a=
+pp but a simpler static website.=C2=A0 =C2=A0Maybe there is something like =
+a ruby static website build pack for heroku=C2=A0 the same that you would u=
+se for the jekyll static website generator / builder / compiler. I don&#39;=
+t know.</div><div><br></div><div>=C2=A0 =C2=A0Netlify might be another opti=
+on - it&#39;s the &quot;heroku for static websites&quot; - but again sorry =
+I have no personal experience.=C2=A0 =C2=A0Good luck. Cheers. Prost.</div><=
+/div><div class=3D"gmail_quote"><blockquote class=3D"gmail_quote" style=3D"=
+margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-lef=
+t:1ex"><br>
+</blockquote></div></div>
+
+<p></p>
+
+-- <br>
+You received this message because you are subscribed to the Google Groups &=
+quot;wwwmake&quot; group.<br>
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:wwwmake+unsubscribe@googlegroups.com" target=3D"_=
+blank" rel=3D"noreferrer">wwwmake+unsubscribe@googlegroups.com</a>.<br>
+To view this discussion on the web visit <a href=3D"https://groups.google.c=
+om/d/msgid/wwwmake/CAAxEZd8_%2BbMe5B-0iNuf06kcqnnVaCzR-VoucKbaExiJ5CQ5NA%40=
+mail.gmail.com?utm_medium=3Demail&amp;utm_source=3Dfooter" target=3D"_blank=
+" rel=3D"noreferrer">https://groups.google.com/d/msgid/wwwmake/CAAxEZd8_%2B=
+bMe5B-0iNuf06kcqnnVaCzR-VoucKbaExiJ5CQ5NA%40mail.gmail.com</a>.<br>
+</blockquote></div>
+
+--000000000000b245c805a358fe15--
+

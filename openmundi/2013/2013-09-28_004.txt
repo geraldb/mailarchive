@@ -1,0 +1,101 @@
+From 8849981440@xxx Sat Dec 13 20:08:19 +0000 2014
+X-GM-THRID: 10572791808
+X-Google-Groups: openmundi
+X-Google-Thread: 37decc9,3dfa9e13f71f7856,start
+X-Google-Attributes: gid37decc9,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open World Database (world.db)
+ 'n' Friends" <openmundi@googlegroups.com>
+X-Received: by 10.180.218.99 with SMTP id pf3mr3132128wic.3.1380375480949;
+        Sat, 28 Sep 2013 06:38:00 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.180.85.195 with SMTP id j3ls316401wiz.46.gmail; Sat, 28 Sep
+ 2013 06:38:00 -0700 (PDT)
+X-Received: by 10.180.149.135 with SMTP id ua7mr3135744wib.0.1380375480343;
+        Sat, 28 Sep 2013 06:38:00 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x235.google.com (mail-wi0-x235.google.com [2a00:1450:400c:c05::235])
+        by gmr-mx.google.com with ESMTPS id gt5si137890wib.0.1969.12.31.16.00.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 28 Sep 2013 06:37:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::235 as permitted sender) client-ip=2a00:1450:400c:c05::235;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::235 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f181.google.com with SMTP id ex4so1996576wid.2
+        for <openmundi@googlegroups.com>; Sat, 28 Sep 2013 06:37:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=M7aGvuGfdfju/TYPNAXB0s3A/TBGDsJwUUrK9p38IIs=;
+        b=YlOJmm7FoH6I7Dqr8vLnP3D7bBE+bLy06Sup8CqfOlexz936MO4Pu+lS/W1kbKYKju
+         mtcBIMcyc60PyNrkr+ci1mXeae/mSQ8y+Hp1ymg7FpyERwbSqx92kgbIjipDYDaanLA0
+         E3AGztndW3mCI5fYeigjuRJ5G9JBMxYN4LC/lFylnsxZoqvl+1ihHE5Wsvy6ew0sWOrq
+         siRlpwgbDaf/MD3CCCrhzdIM4LicpIv2+m7nNSNcemUc367KiqPwg9VHdS00bCfR9XGu
+         TrGkWhZ5tMhNO959Pde+nnjtFmLRM7dknkEUfuI3Mn6n38bVaavIYq+DcnY5p0DTVhRy
+         I9Tg==
+MIME-Version: 1.0
+X-Received: by 10.180.231.6 with SMTP id tc6mr6682901wic.59.1380375479263;
+ Sat, 28 Sep 2013 06:37:59 -0700 (PDT)
+Received: by 10.216.202.72 with HTTP; Sat, 28 Sep 2013 06:37:59 -0700 (PDT)
+Date: Sat, 28 Sep 2013 15:37:59 +0200
+Message-ID: <CAAxEZd9yREcbJS=gkF2m_G__D-j7csyL8i44Z434mhbeCrx76Q@mail.gmail.com>
+Subject: worlddb/console - Try world.db w/ Interactive Ruby Console
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: multipart/alternative; boundary=001a1134d1ba192a4404e771b6e9
+
+--001a1134d1ba192a4404e771b6e9
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  I've added support for the interactive Ruby console (irb) to the open
+world database gem [1]. Use
+
+    $ irb -r worlddb/console
+
+  and you're ready to go. For example, try
+
+    en = Country.find_by_key! 'en'
+    en.regions
+    en.cities
+
+  or
+
+    euro = Tag.find_by_key! 'euro'
+    euro.countries
+
+  and so on.
+
+  More info -> https://github.com/openmundi
+  Live demo -> http://worlddb.herokuapp.com
+
+  Cheers.
+
+[1]
+https://github.com/geraldb/world.db.ruby/blob/master/lib/worlddb/console.rb
+
+--001a1134d1ba192a4404e771b6e9
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<br><br>=A0 I&#39;ve added support for the interacti=
+ve Ruby console (irb) to the open world database gem [1]. Use<br><br>=A0=A0=
+=A0 $ irb -r worlddb/console<br><br>=A0 and you&#39;re ready to go. For exa=
+mple, try<br>
+<br>=A0=A0=A0 en =3D Country.find_by_key! &#39;en&#39;<br>=A0=A0=A0 en.regi=
+ons<br>=A0=A0=A0 en.cities<br><br>=A0 or<br><br>=A0=A0=A0 euro =3D Tag.find=
+_by_key! &#39;euro&#39;<br>=A0=A0=A0 euro.countries<br><br>=A0 and so on.<b=
+r><br>=A0 More info -&gt; <a href=3D"https://github.com/openmundi">https://=
+github.com/openmundi</a><br>
+=A0 Live demo -&gt; <a href=3D"http://worlddb.herokuapp.com">http://worlddb=
+.herokuapp.com</a><br><br>=A0 Cheers.<br><br>[1] <a href=3D"https://github.=
+com/geraldb/world.db.ruby/blob/master/lib/worlddb/console.rb">https://githu=
+b.com/geraldb/world.db.ruby/blob/master/lib/worlddb/console.rb</a><br>
+<br></div>
+
+--001a1134d1ba192a4404e771b6e9--
+

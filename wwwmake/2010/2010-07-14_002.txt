@@ -1,0 +1,103 @@
+From 744903147520@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 721059577856
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,343485c5520b1088
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.90.56.9 with SMTP id e9mr12373419aga.11.1279067720391;
+        Tue, 13 Jul 2010 17:35:20 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.91.39.8 with SMTP id r8ls242717agj.0.p; Tue, 13 Jul 2010 
+	17:35:20 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.91.82.11 with SMTP id j11mr2226146agl.6.1279067719942; Tue, 13 
+	Jul 2010 17:35:19 -0700 (PDT)
+Received: by s9g2000yqd.googlegroups.com with HTTP; Tue, 13 Jul 2010 17:35:19 
+	-0700 (PDT)
+Date: Tue, 13 Jul 2010 17:35:19 -0700 (PDT)
+In-Reply-To: <675a0516-5817-42cb-80f8-9ee508d9265e@z10g2000yqb.googlegroups.com>
+X-IP: 80.123.36.75
+References: <deea554e-d198-4640-872a-332e5ff9a084@k39g2000yqb.googlegroups.com> 
+	<d7c5dc42-b693-46af-b1a8-747daee88743@t10g2000yqg.googlegroups.com> 
+	<675a0516-5817-42cb-80f8-9ee508d9265e@z10g2000yqb.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EMeM9OEEv3hCRiqKH640
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.6) 
+	Gecko/20100628 Ubuntu/10.04 (lucid) Firefox/3.6.6,gzip(gfe)
+Message-ID: <230f4153-87df-4f5b-bced-66c114e328e7@s9g2000yqd.googlegroups.com>
+Subject: Re: support for pandoc-ruby
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello David,
+
+  Thanks for your comments and trying out the new version.
+
+> (1) I understand the decision to go with the markdown to html
+> conversion rather than markdown to s5.
+
+  I uploaded a new version, that is, v0.9.5, that lets you use your
+own conversion. As an example I've added three more conversions:
+
+  * pandoc_ruby_to_s5
+  * pandoc_ruby_to_s5_incremental
+  * pandoc_ruby_to_html_incremental
+
+  See the source @ http://github.com/geraldb/slideshow/blob/master/lib/slideshow/markdown.rb
+
+  To use a different converter for now you will have to create a
+slideshow.yml file in your working folder and than use:
+
+pandoc-ruby:
+  converter: pandoc-ruby-to-s5
+  post-processing: false
+
+  To get back your old style. If you try:
+
+pandoc-ruby:
+  converter: pandoc-ruby-to-s5-incremental
+  post-processing: false
+
+  You will get the incremental option added. These are just examples.
+To create your own converter - add your
+Ruby script/module with your converter methods into the ./lib folder
+and it will get loaded automatically. Example:
+
+module SamplePandocConverter
+   def sample_pandoc_ruby_to_s5( content )
+    content = PandocRuby.new( content, {:from => :markdown, :to
+=> :s5}, :smart ).convert
+    content = content.gsub(/class="incremental"/,'class="step"')
+    content = content.to_a[13..-1].join # remove the layout div
+  end
+end
+
+class Slideshow::Gen
+  include SamplePandocConverter
+end
+
+And than again set your slideshow.yml to use whatever converter you
+prefer:
+
+pandoc-ruby:
+  converter: sample-pandoc-ruby-to-s5
+  post-processing: false
+
+> An unfortunate side-effect is
+> that pandoc only generates the "incremental" classes when it is
+> generating s5. So one of the benefits of using pandoc-ruby is lost
+> (see <https://groups.google.com/group/webslideshow/browse_thread/
+> thread/6d425bbbfc6b9810/>). Also, it means you can remove the gsub in
+> markdown.rb.
+
+ If you want to let slideshow add steps to all lists try:
+
+pandoc-ruby:
+  converter: pandoc-ruby-to-html-incremental
+
+  Let me know if this works for you. Cheers.
+
+PS: Thanks for your ideas about new features. Response in second
+posting.
+

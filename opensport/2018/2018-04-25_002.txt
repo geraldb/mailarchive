@@ -1,0 +1,136 @@
+From 6548404529716527104@xxx Wed Apr 25 15:14:01 +0000 2018
+X-GM-THRID: 6548367386423066624
+Date: Wed, 25 Apr 2018 08:14:01 -0700 (PDT)
+From: ttn43210@gmail.com
+To: opensport <opensport@googlegroups.com>
+Message-Id: <0855a3b1-9a12-4661-9d69-57fea28a2539@googlegroups.com>
+In-Reply-To: <CAAxEZd906y6r=t6WAUE3gJeLBTA2ZuEuyQvPF3zeYzkkRvpC7A@mail.gmail.com>
+References: <c171ede6-fa4a-4e46-bf44-9d0a3e1aee6d@googlegroups.com>
+ <CAAxEZd-oWAmsP2SB5DLhJ1gXNTm2mFH4j+u7pQ=GbOcBk0Ce4w@mail.gmail.com> <e51dc38d-a597-4559-a098-0889639feb9e@googlegroups.com>
+ <CAAxEZd906y6r=t6WAUE3gJeLBTA2ZuEuyQvPF3zeYzkkRvpC7A@mail.gmail.com>
+Subject: Re: [opensport] Can someone help me build a full database?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_33673_545324917.1524669241108"
+X-Google-Token: ELm2gtcFagv6dv5Z4P80
+X-Google-IP: 205.175.228.97
+
+------=_Part_33673_545324917.1524669241108
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_33674_369162362.1524669241108"
+
+------=_Part_33674_369162362.1524669241108
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Gerald, I understand your situation.  Much appreciate what you have done 
+and continue to do.  Without you, we wouldn't have this data.  You have 
+done a great job keeping it going all these years.
+
+I like the direction of this project and this is your child and in order 
+for it to grow, I think better documentation or create something simpler 
+for more people to get to this data, in turn, it will then be more valuable 
+to many and they would then put efforts in contributing.  I thikn they're 
+not leaving you after getting the data, they will always need updated data, 
+this is not a get something free and be done.  I think a lot of them just 
+gave up all together. I know it's easy for me to speak my 2c worth because 
+you were the one weathering the storms.  
+
+at this point though, I'm not familiar enough with tools chosen so I may 
+not be able to contribute to this.  I may branch out from your project to 
+create something using either web based or standalone tools.
+
+I saw that datafile message from Ben.  How do i add in the latest WCs?  
+edit the history.txt?
+
+how about the ground/city data? are they not parsed at this point?  I see 
+all the games has NULL value as groundID and cityID.
+
+Lance
+
+On Wednesday, April 25, 2018 at 10:36:16 AM UTC-4, Gerald Bauer wrote:
+>
+> Hello Lance, 
+>
+>   search this forum with "world cup history" and you should get the 
+> answer with a working datafile for all datasets e.g. 
+>
+> > I'm pleased to report everything works as expected! 
+> > 
+> > I used this Datafile: 
+> > 
+> > world  'world.db', setup: 'countries' 
+> > 
+> > football 'national-teams' 
+> > football 'national-teams', setup: 'history' 
+> > football 'world-cup', setup: 'history' 
+> > 
+> > ...and it works great!  Thanks for your help! 
+>
+>    FYI: The football.db is an all-volunteer effort. Even after more 
+> than four years I'm basically all left alone. Most people drop by for 
+> freebie downloads.  What do you expect? If anyone would help that 
+> would be very helpful. I'm just a random nobody with a budget of zero 
+> ($0). 
+>
+>     Cheers. Prost. 
+>
+
+------=_Part_33674_369162362.1524669241108
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Gerald, I understand your situation.=C2=A0 Much appreciate=
+ what you have done and continue to do.=C2=A0 Without you, we wouldn&#39;t =
+have this data.=C2=A0 You have done a great job keeping it going all these =
+years.<div><br></div><div>I like the direction of this project and this is =
+your child and in order for it to grow, I think better documentation or cre=
+ate something simpler for more people to get to this data, in turn, it will=
+ then be more valuable to many and they would then put efforts in contribut=
+ing.=C2=A0 I thikn they&#39;re not leaving you after getting the data, they=
+ will always need updated data, this is not a get something free and be don=
+e.=C2=A0 I think a lot of them just gave up all together. I know it&#39;s e=
+asy for me to speak my 2c worth because you were the one weathering the sto=
+rms.=C2=A0=C2=A0<div><br></div><div>at this point though, I&#39;m not famil=
+iar enough with tools chosen so I may not be able to contribute to this.=C2=
+=A0 I may branch out from your project to create something using either web=
+ based or standalone tools.</div><div><br></div><div>I saw that datafile me=
+ssage from Ben.=C2=A0 How do i add in the latest WCs?=C2=A0 edit the histor=
+y.txt?</div><div><br></div><div>how about the ground/city data? are they no=
+t parsed at this point?=C2=A0 I see all the games has NULL value as groundI=
+D and cityID.</div><div><br></div><div>Lance<br><br>On Wednesday, April 25,=
+ 2018 at 10:36:16 AM UTC-4, Gerald Bauer wrote:<blockquote class=3D"gmail_q=
+uote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;pad=
+ding-left: 1ex;">Hello Lance,
+<br>
+<br>=C2=A0 search this forum with &quot;world cup history&quot; and you sho=
+uld get the
+<br>answer with a working datafile for all datasets e.g.
+<br>
+<br>&gt; I&#39;m pleased to report everything works as expected!
+<br>&gt;
+<br>&gt; I used this Datafile:
+<br>&gt;
+<br>&gt; world =C2=A0&#39;world.db&#39;, setup: &#39;countries&#39;
+<br>&gt;
+<br>&gt; football &#39;national-teams&#39;
+<br>&gt; football &#39;national-teams&#39;, setup: &#39;history&#39;
+<br>&gt; football &#39;world-cup&#39;, setup: &#39;history&#39;
+<br>&gt;
+<br>&gt; ...and it works great! =C2=A0Thanks for your help!
+<br>
+<br>=C2=A0 =C2=A0FYI: The football.db is an all-volunteer effort. Even afte=
+r more
+<br>than four years I&#39;m basically all left alone. Most people drop by f=
+or
+<br>freebie downloads. =C2=A0What do you expect? If anyone would help that
+<br>would be very helpful. I&#39;m just a random nobody with a budget of ze=
+ro
+<br>($0).
+<br>
+<br>=C2=A0 =C2=A0 Cheers. Prost.
+<br></blockquote></div></div></div>
+------=_Part_33674_369162362.1524669241108--
+
+------=_Part_33673_545324917.1524669241108--
+

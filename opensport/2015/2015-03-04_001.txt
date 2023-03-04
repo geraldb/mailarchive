@@ -1,0 +1,60 @@
+From 2503111344128@xxx Tue Jun 16 00:16:41 +0000 2015
+X-GM-THRID: 2491996438528
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,a297314b7a767fe9
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.30.41 with SMTP id j29mr5453375yha.28.1425490061723;
+        Wed, 04 Mar 2015 09:27:41 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.14.77 with SMTP id 74ls562705ioo.38.gmail; Wed, 04 Mar
+ 2015 09:27:41 -0800 (PST)
+X-Received: by 10.68.132.99 with SMTP id ot3mr5638023pbb.6.1425490061488;
+        Wed, 04 Mar 2015 09:27:41 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ie0-x234.google.com (mail-ie0-x234.google.com. [2607:f8b0:4001:c03::234])
+        by gmr-mx.google.com with ESMTPS id t6si493197igz.3.2015.03.04.09.27.41
+        for <opensport@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 04 Mar 2015 09:27:41 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::234 as permitted sender) client-ip=2607:f8b0:4001:c03::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c03::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ie0-x234.google.com with SMTP id y20so15555368ier.13
+        for <opensport@googlegroups.com>; Wed, 04 Mar 2015 09:27:41 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=KKklE4ZGvkkUpxmz5Yr3RZvjhgKRAZmxyz3c5Mw8vbY=;
+        b=ByxmWIOC4dL9+ehaKN3LoCcwRXhYVlSq1mrJvIn8hEyR5OH7nwOSvCYDgA69Wlgprn
+         8dzF43hGKqBcU9aicJOlMOSYIxj7JVpeWTM2ebjp1oi7S0MiUCV/dGuuzmFXnkWv3PMd
+         jIkdtEbN6e/KNWwXOUAwb/89EtiXEtJuL/3klvXSb6ICvWVWWtcdBqOdMRwM9O9D713N
+         DuuStjklzXZFmDtq0jP/TNz7D8zC5GrUAuww2KLC2ddaIY/ywZkFqM4n5/dx3mcjg5g3
+         WAEPLkpM2Czsst4eYyaFtp2LQDQbjiFW52ygJps24PdSOuCp+qiwxBYy1FMDSQaft+S2
+         qqOA==
+MIME-Version: 1.0
+X-Received: by 10.107.3.20 with SMTP id 20mr12785780iod.92.1425490061381; Wed,
+ 04 Mar 2015 09:27:41 -0800 (PST)
+Received: by 10.64.142.11 with HTTP; Wed, 4 Mar 2015 09:27:41 -0800 (PST)
+In-Reply-To: <c7f96af1-dd1a-43ac-be94-718e25b2e129@googlegroups.com>
+References: <c7f96af1-dd1a-43ac-be94-718e25b2e129@googlegroups.com>
+Date: Wed, 4 Mar 2015 18:27:41 +0100
+Message-ID: <CAAxEZd_-ywOKHKtuTUxkT7fHBK+OQrRjAqxJ9KoJ+011trBOQA@mail.gmail.com>
+Subject: Re: [opensport] How to upload data to a Postgresql instance ?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+    I'd say you will have to setup a local postgresql database. Read
+in the datasets into your local postgresql db and than use pg:dump or
+something that you can use to restore on the remote version.  Cheers.
+
+PS:  Sorry - I'm using SQLite for the local build so far (and Ruby
+rake for the import on Heroku), thus, I don't really know the postgres
+dump/restore steps in detail. Hopefully somebody else can help out.
+

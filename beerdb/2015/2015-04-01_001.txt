@@ -1,0 +1,65 @@
+From 220745170944@xxx Wed Apr 01 07:19:26 +0000 2015
+X-GM-THRID: 223263850496
+X-Received: by 10.42.76.145 with SMTP id e17mr71269664ick.34.1427872765900;
+        Wed, 01 Apr 2015 00:19:25 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.107.18.9 with SMTP id a9ls153458ioj.36.gmail; Wed, 01 Apr 2015
+ 00:19:25 -0700 (PDT)
+X-Received: by 10.42.20.148 with SMTP id g20mr1691384icb.32.1427872765667;
+        Wed, 01 Apr 2015 00:19:25 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-qc0-x232.google.com (mail-qc0-x232.google.com. [2607:f8b0:400d:c01::232])
+        by gmr-mx.google.com with ESMTPS id z4si166502qcf.0.2015.04.01.00.19.25
+        for <beerdb@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 01 Apr 2015 00:19:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c01::232 as permitted sender) client-ip=2607:f8b0:400d:c01::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400d:c01::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qc0-x232.google.com with SMTP id ii10so11378766qcb.2
+        for <beerdb@googlegroups.com>; Wed, 01 Apr 2015 00:19:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=f5UTnbKPh+Fz1XAefEhs6YbEFg/O0AqowcK1Fy0lLi4=;
+        b=RQAl1eN+1ptDOSH48nwLZP+fJMEKaunoGgjEHbB+MBsVp3eVk+iY7BcN2PO2iYuFIg
+         r7eJ+T0KcZRPibaXejEcfw19VtGL5r/bGBqfr5YgLArWHyeTqnlpVKNb9gfdh8iMXQuE
+         ycGZhzIN/uMRbagwRrEwrBeJeS4a8BovWcARN5dlLTnIiGFydSZu7iz9OgpW5I+ospiB
+         DKhT4CgADeu4S7oGojiqlhZAfWwmkQfIaqDMkxJe2d4aX8u5BwL/m4CmOWY7rtzg2wVX
+         /pqvElWFfqJhmM7bWMTGOaqlzaS97VbZC4hFdF7r0MI5+YVrPTHBIkQ9hNm/u4w3an4W
+         JGRw==
+MIME-Version: 1.0
+X-Received: by 10.140.49.9 with SMTP id p9mr51141505qga.51.1427872765583; Wed,
+ 01 Apr 2015 00:19:25 -0700 (PDT)
+Received: by 10.229.25.131 with HTTP; Wed, 1 Apr 2015 00:19:25 -0700 (PDT)
+Date: Wed, 1 Apr 2015 09:19:25 +0200
+Message-ID: <CAAxEZd90V+rgdN4OsqhHyVumidfff1keiJKmbQszJe1WYcN0cQ@mail.gmail.com>
+Subject: Upcoming Meetups / Talks - Vienna, Austria - Apr/May 2015
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  As always if you happen to be around in Central Europe (in Austria)
+you're invited to meet-up.
+
+  Over the next couple of weeks if all works out I will attend (or
+speak) at these meetups:
+
+  In Vienna:
+  - Thu, Apr/2        at Vienna.rb [1]
+  - Sat, Apr/25       at ROSS (Ruby Open Source Software) Conf Vienna [2]
+  - Thu-Sat, May/7-9  at Linuxwochen Wien [3]
+
+   If you're interested to talk in person say hello here on the list.
+All events free. Everyone welcome.
+
+ Cheers.
+
+[1] www.meetup.com/vienna-rb
+[2] www.rossconf.io
+[3] www.linuxwochen.at/wien
+

@@ -1,0 +1,107 @@
+From 6444378666166124544@xxx Wed Jul 19 07:20:32 +0000 2017
+X-GM-THRID: 6444193315818569728
+X-Received: by 10.36.91.145 with SMTP id g139mr575439itb.2.1500448832295;
+        Wed, 19 Jul 2017 00:20:32 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.128.165 with SMTP id k37ls2111930ioi.37.gmail; Wed, 19 Jul
+ 2017 00:20:31 -0700 (PDT)
+X-Received: by 10.129.90.132 with SMTP id o126mr908772ywb.139.1500448831513;
+        Wed, 19 Jul 2017 00:20:31 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1500448831; cv=none;
+        d=google.com; s=arc-20160816;
+        b=uRWGOJtI5umUK7DhzE23P0Rr/ILA+6s+A/Va3l3ERIgUhgn4umaceh8NR5meM23492
+         z8bjJvrJRZqwIriSlEb2BDmRKYGx50AHN5eKqkRFrsLyOC/nsyTy2K0NOgYCaKsvgXNG
+         80i3igPLvsIFNkXtRW2Zw+5dlirsDva5lvNmE07Mg+M2yQPduRRm+O7CfUj8zRw6B9SE
+         +4RcIFMdLfP9EAbf1X1Jexvwy7ciZo0oe2xoo9EE/B51PCBQrzJZwjpaNkguJRFDcpIa
+         hlH5MAf6e3QdtWIEt8hKa8XMG8Uv/2xzNoerm8RuxBWI3D4dnwLUWcTL5UoXyi3mHkxA
+         J01Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=EnCcWq6qMnFmoK3wWQYLMbaxDEPjE7coxSPvKSb2Y2g=;
+        b=ams9GFc1ctnT+QCMggZ+k/fvRsM1Az5TbBKl7Hk9lPzgZiMGUYBCNCEk85BtIIp1hb
+         UufdRobzE4dTl515jPpQhJ/Bq/JngAQBgYa/hXEiIUsAggDLinBfxabglM6yHW0o8P2T
+         k0QVNXB4JyLgUrAJ6uFz7eQm4MdzV/6Avr3U+B3JIPsAbnXmIreiOc3iwGbktMdrGb85
+         B8PNPUj7IbSxwDL8t3UqEPc2cWWQ2osKehu1B0AYTSX+rsLHYZzJX692UXXnXDqh/05/
+         v3HY/mUxX8wfeHQSqJcokEJiWzTApA0fIw0ug9SVYSQwlwgkmaqmd20t89BWr/Qhsuq1
+         kCTQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=Ul4hkMTq;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x235.google.com (mail-it0-x235.google.com. [2607:f8b0:4001:c0b::235])
+        by gmr-mx.google.com with ESMTPS id t131si935677ita.1.2017.07.19.00.20.31
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 19 Jul 2017 00:20:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) client-ip=2607:f8b0:4001:c0b::235;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=Ul4hkMTq;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x235.google.com with SMTP id v127so15626713itd.0
+        for <opensport@googlegroups.com>; Wed, 19 Jul 2017 00:20:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=EnCcWq6qMnFmoK3wWQYLMbaxDEPjE7coxSPvKSb2Y2g=;
+        b=Ul4hkMTqu4DqNoOPpyhmo/fZlALvESVnKkiXb/PFSHoRBNVi/w2dZRCnG0pYZwAv6i
+         bDUUiwG2iazJbhRmB8HkmDDceGrUCVkjGVhGtbBhXt+F8DtDWkTFNFPb9bxKrGzUsoUZ
+         UoH9s0OjZjnHPGPsN+628hnCNt/nrnqeMTfJtlE+OBOGk7MnnT/n8JArPcmxLGYzdz/v
+         /FEBbtkJFrffMUJh9DQOOjv/NyfXusiSWJb08ouxT0/wRoWBraXiFqQQ5WZuQNfypRp9
+         kcpFc7TxVImJYor6CfyX/BnBBQ7buEEcuwlK9MlTFKiYETPLI1bDTGH6tddceRAzPTR4
+         s93A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=EnCcWq6qMnFmoK3wWQYLMbaxDEPjE7coxSPvKSb2Y2g=;
+        b=k/P15m/yqFYoHliwd00Dzg7/vQzLJhjZe5jm+pF0PtxoKyTpkSYbqMWKPftFxOPGL0
+         EoAy78SNYbysvTwiLJjhMNrauJMJUNSTVZE6OkXKDEsXlJEBtPQA4fWlXDAEZu2kuoLz
+         985KDOwSCiMOe9CwNXQK/i9hVw9JRaIVA80lNQWBLmy5JUlTCvRXOq7h1jbOUYonb5K/
+         QuXQH7fQ4DR64lUG2SFK76u3lf4Ba1Vbb0MzyNAdiGxltAaNTczWZ3VQoFvIVV60cT/D
+         E7tqAsmB+mKnLgVRrFpqvvtsgUlcPZ/bKLRSrw0noISIpfPd8za4bhJWGtKC20G07/vU
+         CeYg==
+X-Gm-Message-State: AIVw110CEEU3I9vivfW//eN6CJhWxz6yNXW5ntgW8SYpfjhW5t8IDbxu
+	htYdy45wIsaWKyQcf7u4oigmwKu+h3gz
+X-Received: by 10.36.211.11 with SMTP id n11mr951577itg.69.1500448831138; Wed,
+ 19 Jul 2017 00:20:31 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.4.17 with HTTP; Wed, 19 Jul 2017 00:20:30 -0700 (PDT)
+In-Reply-To: <80c4b9c7-b35c-4469-bb21-da23d4165fae@googlegroups.com>
+References: <548f0946-a2e9-4d2c-8a90-75c1f0a8c06f@googlegroups.com>
+ <CAAxEZd8_FoXZT8XryurHgvLa_VZtya52ON_KMFhLqKeD5g0MiA@mail.gmail.com>
+ <e8ca9e0f-0562-4d5d-84cd-03019b020012@googlegroups.com> <CAAxEZd_C=3m_bX0JDVjsiVouUZ=YctKS4jRsj_6BGvJZ6QxQaw@mail.gmail.com>
+ <80c4b9c7-b35c-4469-bb21-da23d4165fae@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 19 Jul 2017 09:20:30 +0200
+Message-ID: <CAAxEZd-9Lyr9erao2G+qGmU9bQ7wPRgf5XwnVQgO0zxHST5Leg@mail.gmail.com>
+Subject: Re: [opensport] Starter Tutorial. Not understanding at all.
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+> I'm going into my rails console. And then try the command "Round.first" to see the first
+> round. And the output says "uninitialized constant Round"
+
+   Different to "classic" Rails the models are in modules (namespaced) e.g. try:
+
+ >>>    SportDb::Model::Round.first
+
+   You can include all models in your "global" namespace e.g.
+
+>>>  include SportDb::Models
+
+ And than you can use just:
+
+>>> Round.first    etc.
+.
+
+See the  sportdb starter example [1] for a working little sinatra app in action.
+
+Cheers.
+
+[1] https://github.com/sportkit/sport.db.starter.ruby/blob/master/app.rb#L14
+

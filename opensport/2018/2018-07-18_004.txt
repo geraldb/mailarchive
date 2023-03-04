@@ -1,0 +1,94 @@
+From 6579546137038946304@xxx Wed Jul 18 13:19:23 +0000 2018
+X-GM-THRID: 6451155775166349312
+X-Received: by 2002:a81:5882:: with SMTP id m124-v6mr1731427ywb.151.1531919962772;
+        Wed, 18 Jul 2018 06:19:22 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a81:b282:: with SMTP id q124-v6ls503821ywh.36.gmail; Wed, 18
+ Jul 2018 06:19:22 -0700 (PDT)
+X-Received: by 2002:a81:4b90:: with SMTP id y138-v6mr1933220ywa.186.1531919962407;
+        Wed, 18 Jul 2018 06:19:22 -0700 (PDT)
+Received: by 2002:a0d:d5cd:0:0:0:0:0 with SMTP id x196-v6msywd;
+        Wed, 18 Jul 2018 01:05:30 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpeoxUw62cwaA8rRWQFNZw8yNlvVlxMLsHfz58PcQItUF1w0BFcSu4NrmLvIFNFy5EaFCwUxGZgLAg==
+X-Received: by 2002:a25:c5d2:: with SMTP id v201-v6mr586953ybe.4.1531901129864;
+        Wed, 18 Jul 2018 01:05:29 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Wed, 18 Jul 2018 01:05:29 -0700 (PDT)
+From: ytsruh@gmail.com
+To: opensport <opensport@googlegroups.com>
+Message-Id: <7f4246e0-5ac7-4af6-97e5-f81ac6b78cf1@googlegroups.com>
+In-Reply-To: <CAAxEZd_=ZffA47z5HG7LwVedvyK7QOGY9=uEcsuDinO5oWUNZg@mail.gmail.com>
+References: <95729064-a94c-492d-aacc-da2009a27524@googlegroups.com>
+ <CAAxEZd_=ZffA47z5HG7LwVedvyK7QOGY9=uEcsuDinO5oWUNZg@mail.gmail.com>
+Subject: Re: [opensport] ActiveRecord::Migration is not supported
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_87201_511487271.1531901129708"
+X-Google-Token: EMnpu9oFjvhg17xXx_00
+X-Google-IP: 5.32.60.225
+
+------=_Part_87201_511487271.1531901129708
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_87202_200565752.1531901129708"
+
+------=_Part_87202_200565752.1531901129708
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi all,
+
+I had this same issue, the follwoing helped me:
+https://stackoverflow.com/questions/28082120/how-to-downgrade-my-rails-version 
+
+Essentially uninstalling ALL of rails (including railities) and then 
+reinstalling a lower version.
+
+I was then able to build using the shell script
+
+Hope this helps someone
+
+Thanks
+
+Chris
+
+On Sunday, 6 August 2017 17:41:08 UTC+4, Gerald Bauer wrote:
+>
+> Hello, 
+>    Thanks for trying football.db. 
+>
+> > Directly inheriting from ActiveRecord::Migration is not supported. 
+>
+>     Sorry this is a know issue / problem, that is, the ActiveRecord 
+> 5.x series is NOT yet supported. The workaround for now is to 
+> downgrade to the 4.2.x series. Please use a Gemfile and bundle exec. 
+> Cheers. 
+>
+
+------=_Part_87202_200565752.1531901129708
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi all,<div><br></div><div>I had this same issue, the foll=
+woing helped me:</div><div>https://stackoverflow.com/questions/28082120/how=
+-to-downgrade-my-rails-version=C2=A0</div><div><br></div><div>Essentially u=
+ninstalling ALL of rails (including railities) and then reinstalling a lowe=
+r version.</div><div><br></div><div>I was then able to build using the shel=
+l script</div><div><br></div><div>Hope this helps someone</div><div><br></d=
+iv><div>Thanks</div><div><br></div><div>Chris<br><br>On Sunday, 6 August 20=
+17 17:41:08 UTC+4, Gerald Bauer  wrote:<blockquote class=3D"gmail_quote" st=
+yle=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-lef=
+t: 1ex;">Hello,
+<br>=C2=A0 =C2=A0Thanks for trying football.db.
+<br>
+<br>&gt; Directly inheriting from ActiveRecord::Migration is not supported.
+<br>
+<br>=C2=A0 =C2=A0 Sorry this is a know issue / problem, that is, the Active=
+Record
+<br>5.x series is NOT yet supported. The workaround for now is to
+<br>downgrade to the 4.2.x series. Please use a Gemfile and bundle exec.
+<br>Cheers.
+<br></blockquote></div></div>
+------=_Part_87202_200565752.1531901129708--
+
+------=_Part_87201_511487271.1531901129708--
+

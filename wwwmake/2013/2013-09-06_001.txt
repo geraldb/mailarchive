@@ -1,0 +1,94 @@
+From 1367936598016@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1365729345536
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,2ed6fed0197fc253
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Date: Fri, 6 Sep 2013 09:47:11 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <650c0077-7721-4f4c-ae64-d47081e749c5@googlegroups.com>
+In-Reply-To: <6c793c63-5f7f-404d-aeba-16c0adf322f2@googlegroups.com>
+References: <6c793c63-5f7f-404d-aeba-16c0adf322f2@googlegroups.com>
+Subject: Re: Reveal.js Template for S9
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2930_27555972.1378486031654"
+X-Google-Token: EI-OqJEFRGJ7Wc105mI0
+X-Google-IP: 193.110.28.9
+
+------=_Part_2930_27555972.1378486031654
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2931_14957195.1378486031654"
+
+------=_Part_2931_14957195.1378486031654
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  Fantastic. Thanks for sharing. I've added the template pack to the 
+gallery [1] and I've also added a shortcut to the update index [2].
+
+   Use 
+
+  $ slideshow update    # to update the shortcut index
+
+   than you can use
+
+  $ slideshow install reveal
+
+   as a shortcut instead of
+
+  $ slideshow install 
+https://raw.github.com/avillafiorita/slideshow-reveal.js/master/reveal.txt
+
+
+   Cheers.
+
+
+PS: You might consider changing the manifest from
+  reveal.txt to reveal.js.txt   The manifest name becomes the name of the 
+template pack e.g
+
+It lets you use
+
+slideshow build welcome.text -t reveal.js
+
+instead
+
+slideshow build welcome.text -t reveal
+
+
+[1] http://slideshow-s9.github.io/gallery.html#revealjs
+[2] https://github.com/slideshow-s9/update
+
+------=_Part_2931_14957195.1378486031654
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hello,</div><div><br></div><div>&nbsp; Fantastic. Tha=
+nks for sharing. I've added the template pack to the gallery [1] and I've a=
+lso added a shortcut to the update index [2].</div><div><br></div><div>&nbs=
+p; &nbsp;Use&nbsp;</div><div><br></div><div>&nbsp; $ slideshow update &nbsp=
+; &nbsp;# to update the shortcut index</div><div><br></div><div>&nbsp; &nbs=
+p;than you can use</div><div><br></div><div>&nbsp; $ slideshow install reve=
+al</div><div><br></div><div>&nbsp; &nbsp;as a shortcut instead of</div><div=
+><br></div><div>&nbsp; $ slideshow install https://raw.github.com/avillafio=
+rita/slideshow-reveal.js/master/reveal.txt</div><div><br></div><div><br></d=
+iv><div>&nbsp; &nbsp;Cheers.</div><div><br></div><div><br></div><div>PS: Yo=
+u might consider changing the manifest from</div><div>&nbsp; reveal.txt to =
+reveal.js.txt &nbsp; The manifest name becomes the name of the template pac=
+k e.g</div><div><br></div><div>It lets you use</div><div><br></div><div>sli=
+deshow build welcome.text -t reveal.js</div><div><br></div><div>instead</di=
+v><div><br></div><div>slideshow build welcome.text -t reveal</div><div><br>=
+</div><div><br></div><div>[1] http://slideshow-s9.github.io/gallery.html#re=
+vealjs</div><div>[2] https://github.com/slideshow-s9/update</div></div>
+------=_Part_2931_14957195.1378486031654--
+
+------=_Part_2930_27555972.1378486031654--
+

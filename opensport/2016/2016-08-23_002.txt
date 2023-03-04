@@ -1,0 +1,75 @@
+From 6321973778859425792@xxx Tue Aug 23 10:47:04 +0000 2016
+X-GM-THRID: 6319151478389866496
+X-Received: by 10.200.56.7 with SMTP id q7mr20374463qtb.10.1471949224230;
+        Tue, 23 Aug 2016 03:47:04 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.156.211 with SMTP id f202ls4604037ioe.27.gmail; Tue, 23
+ Aug 2016 03:47:03 -0700 (PDT)
+X-Received: by 10.66.184.13 with SMTP id eq13mr1511197pac.18.1471949223364;
+        Tue, 23 Aug 2016 03:47:03 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22d.google.com (mail-it0-x22d.google.com. [2607:f8b0:4001:c0b::22d])
+        by gmr-mx.google.com with ESMTPS id o70si1403163ith.1.2016.08.23.03.47.03
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 23 Aug 2016 03:47:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22d as permitted sender) client-ip=2607:f8b0:4001:c0b::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22d.google.com with SMTP id e63so138724889ith.1
+        for <opensport@googlegroups.com>; Tue, 23 Aug 2016 03:47:03 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=oSmt8C2gYdemV41Amgv8oMy6DUS9jzCpyCVxLjWbOMs=;
+        b=Q5COu8yfQzX7DoppETIUdKLU5BhuDpAHdAAWxoYLFCn6aAhdsLdZ3UX5YmPLGxHgMI
+         jj6cFup1oBEBFQvrkHgkwF3YRwhOBhzKT+9n0Ppc3jjtMscmnDCDwOEghgAj/Fz8961v
+         E1aTYQrOAoVYKRQU9EbIpvB25BuDuZc8R6JHvTj3yaoWXrC9jyE9i3GBe9SfCIb1eQHk
+         SHPdmM5WkSQsGmvQcLls856pcgpr7RnNBfxd2c3iyu3sskQUZBW24D0rpHfKArPLAhPr
+         oDpJCch2GpbqptQnhwKwWO6qunf+UuSFUDuEgEWFlZwxOJnvHHLSR7QPrJTtK3PcmWC6
+         t2qw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=oSmt8C2gYdemV41Amgv8oMy6DUS9jzCpyCVxLjWbOMs=;
+        b=f1zftaC9mPuk25uZCpQe0GM2KhK+maQUgz/KK6dZ5+O24VwhYl6sXCC7dMbVNK5I4I
+         yMaCqgfg5bCWhN095p6hTlxZWTsxNpXiwW7jm6T2ZCPypVojCGgXDHF8ViXADKPLxX57
+         p7GALdupcdmFodOosqxMZ6aSbv4WIYuInB7ozpDlNP2POj4hsw2mEFaVF0U9irRphrt0
+         fXAPtWvbw1II1o5R1HmTNmdu/rXTtB4bqlCRbyPDDqLdvXATy/1i2wrysLQi5IIKlavC
+         dEb07li6Is4zQ1zjgg0Z5eahK0r9H/9jAW0lAX069AFBNRXia2MAAplFVOZ7UcAUGP1Y
+         qtFA==
+X-Gm-Message-State: AEkoousUwkPO3sVYKXzTrvobKXvgRbInkZTwf/xSN0bW6AWyzpd8eR7A4Kp6in7QwgEowObujZWI7gYP4UCrWA==
+X-Received: by 10.36.92.20 with SMTP id q20mr9078978itb.10.1471949223027; Tue,
+ 23 Aug 2016 03:47:03 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Tue, 23 Aug 2016 03:47:02 -0700 (PDT)
+In-Reply-To: <0e869f0b-e0d6-497d-ba60-0062eb11350e@googlegroups.com>
+References: <3bc1224e-e12b-47d9-8f35-b635651acc5f@googlegroups.com>
+ <CAAxEZd_SNQWwDgDEqOm7_=C6=1RwxVjGpGnweHsGVwTK0gZ36g@mail.gmail.com> <0e869f0b-e0d6-497d-ba60-0062eb11350e@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 23 Aug 2016 12:47:02 +0200
+Message-ID: <CAAxEZd_Dfey2F0jkwCbSoHQRZkwbuj4+iJxLDFacmLCptGzPwQ@mail.gmail.com>
+Subject: Re: [opensport] error when installing
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Thanks for reporting and the detailed log. Now I see the problem/issue:
+
+> activerecord/5.0.0
+
+   Starting with ActiveRecord 5.0.0 I think the database library will
+auto-create indexes on foreign key references, thus, the duplicate
+e.g. first the index gets auto-created (new in 5.0.0) and, than,
+sportdb tries to create the index again itself (and will fail/crash).
+
+    Will have to read-up on ActiveRecord 5.0.0.and send out an update.
+However, this will take some weeks.
+
+    As a work around for now, please downgrade ActiveRecord to the 4.x
+series (e.g. 4.2.x is the latest) by using a Gemfile and everything
+will work ase advertised. Let us know how it goes. Cheers.
+

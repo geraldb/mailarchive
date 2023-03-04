@@ -1,0 +1,70 @@
+From 1267194658816@xxx Tue Jun 16 00:16:59 +0000 2015
+X-GM-THRID: 1270223994880
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,e54b8c10ec3feb57,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.89.168 with SMTP id bp8mr29251lbb.21.1402989881010;
+        Tue, 17 Jun 2014 00:24:41 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.99.166 with SMTP id er6ls380975wib.22.canary; Tue, 17 Jun
+ 2014 00:24:40 -0700 (PDT)
+X-Received: by 10.180.228.107 with SMTP id sh11mr1988814wic.6.1402989880588;
+        Tue, 17 Jun 2014 00:24:40 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x22d.google.com (mail-we0-x22d.google.com [2a00:1450:400c:c03::22d])
+        by gmr-mx.google.com with ESMTPS id s1si867228wiw.3.2014.06.17.00.24.40
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 17 Jun 2014 00:24:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22d as permitted sender) client-ip=2a00:1450:400c:c03::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-x22d.google.com with SMTP id t60so6678032wes.4
+        for <opensport@googlegroups.com>; Tue, 17 Jun 2014 00:24:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=IInYZnZ4oiU8m+I8ZS5mfm3ixeOyO6vYZOyRJpnH95E=;
+        b=n1+lg3mW13Y4P0PGwEuzcRyW9ufgguYgSl1AsHjhX+rS1usvxDNrJDHAIWt5fGWfGG
+         bMxoaUKv0jnd7v7NcxmCExXCccyLQjWdoFCmeWLoiJdQwNiA56ZUnoKoQ9CAcYaKDbk4
+         GMyH1rG3KsT2nmDEcS+nwVH57awPCMNOBBzGokFmtJFseFBN/xMbNvf1IsLEi62xYZD/
+         sY/AIUQb0LiHkI+f+GbezqsbdAenwNSRDBSYnNpgFFkZ35pTQgqnH4B8mvCniUG5dNjJ
+         k+WA930sUBYwPEypbGFu6+4cVlgM6+lCPto6hyfaYfRArLf1BhlApyA91+as/lAfaqGs
+         7xfw==
+MIME-Version: 1.0
+X-Received: by 10.194.5.103 with SMTP id r7mr34685867wjr.41.1402989880521;
+ Tue, 17 Jun 2014 00:24:40 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Tue, 17 Jun 2014 00:24:40 -0700 (PDT)
+Date: Tue, 17 Jun 2014 09:24:40 +0200
+Message-ID: <CAAxEZd-J7+pf4jPSZYcp-n9KVgY6eXutyQZwkVteyBMt8+RxqQ@mail.gmail.com>
+Subject: World Cup Open Data News - Wikidata World Cup Call to Action,
+ kimomono World Cup API
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  Some news about the World Cup and open (structured) data:
+
+  #1 From the Wikidata Twitter [1]:
+
+  People are going crazy about the World Cup. You too? Help expand the
+items of your favourite teams and players:
+www.wikidata.org/wiki/Q79859
+
+
+  #2 Via the Open Data Zurich Twitter [2]:
+
+  The (un)official World Cup API: Up-to-date data on all 32 teams and
+736 players. www.kimonolabs.com/worldcup/explorer
+
+
+  Got news? Let us know. Cheers.
+
+[1] twitter.com/wikidata/status/477715002410172416
+[2] twitter.com/davidbauer/status/477782438375358465
+

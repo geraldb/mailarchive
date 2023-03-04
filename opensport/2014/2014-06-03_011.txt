@@ -1,0 +1,61 @@
+From 979752714240@xxx Tue Jun 16 00:17:06 +0000 2015
+X-GM-THRID: 923854176256
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,d32db7d7f6a63723
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.50.55.35 with SMTP id o3mr5501805igp.6.1401789647076;
+        Tue, 03 Jun 2014 03:00:47 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.88.115 with SMTP id s106ls2446249qgd.49.gmail; Tue, 03 Jun
+ 2014 03:00:46 -0700 (PDT)
+X-Received: by 10.140.50.104 with SMTP id r95mr32968qga.13.1401789646717;
+        Tue, 03 Jun 2014 03:00:46 -0700 (PDT)
+X-Google-Doc-Id: 7a3f8523cdef8811
+X-Google-Web-Client: true
+Date: Tue, 3 Jun 2014 03:00:46 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <4ddbbd16-58ff-4d90-ad9a-b16bd0f0c781@googlegroups.com>
+In-Reply-To: <CAAxEZd9j_7b5+8XCQk8R8PrJeG0f4EGycXMOG1ALBLg=aXEjxA@mail.gmail.com>
+References: <CAAxEZd9j_7b5+8XCQk8R8PrJeG0f4EGycXMOG1ALBLg=aXEjxA@mail.gmail.com>
+Subject: Re: World Cup 2014 Match Picks/Predictions (w/ Open Source
+ Sportbook Rails Web App)
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_151_22062559.1401789646271"
+X-Google-Token: EM65tpwFe1LCGUTTgz40
+X-Google-IP: 193.110.28.9
+
+------=_Part_151_22062559.1401789646271
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_152_28958049.1401789646271"
+
+------=_Part_152_28958049.1401789646271
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  Thanks for your interest in sportbook. Please, replace the all-in-one 
+database setup command 
+
+$ rake db:setup 
+
+   with two steps
+
+$ rake db:migrate                       # will create the database tables / 
+schema
+$ rake db:seed DATA=demo       # will load all data for the demo setup
+
+   Let us know if it works. Cheers.
+
+------=_Part_152_28958049.1401789646271
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<div><br></div><div>&nbsp; Thanks for your interest in sportbook. Please, replace the all-in-one database setup command&nbsp;</div><div><br></div><div>$ rake db:setup&nbsp;</div><div><br></div><div>&nbsp; &nbsp;with two steps</div><div><br></div><div>$&nbsp;rake db:migrate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # will create the database tables / schema</div><div>$&nbsp;rake db:seed DATA=demo &nbsp; &nbsp; &nbsp; # will load all data for the demo setup</div><div><br></div><div>&nbsp; &nbsp;Let us know if it works. Cheers.</div></div>
+------=_Part_152_28958049.1401789646271--
+
+------=_Part_151_22062559.1401789646271--
+

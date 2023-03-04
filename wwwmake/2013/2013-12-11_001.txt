@@ -1,0 +1,535 @@
+From 1444846501888@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1431622909952
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,4a714fa3a883ed3f
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.73.164 with SMTP id v24mr8695759yhd.24.1386738125440;
+        Tue, 10 Dec 2013 21:02:05 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.182.194.10 with SMTP id hs10ls1239303obc.27.gmail; Tue, 10 Dec
+ 2013 21:02:04 -0800 (PST)
+X-Received: by 10.182.251.134 with SMTP id zk6mr36obc.38.1386738124429;
+        Tue, 10 Dec 2013 21:02:04 -0800 (PST)
+X-Google-Doc-Id: 4a854b1b7cb0179d
+X-Google-Web-Client: true
+Date: Tue, 10 Dec 2013 21:02:03 -0800 (PST)
+From: Kamal <kantawala@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <6b21aeac-0ac5-40ff-893c-648565b72325@googlegroups.com>
+In-Reply-To: <2d141b57-2422-4a6f-9240-382f09b05e2c@googlegroups.com>
+References: <35292c64-2e56-410f-b4bd-0c6ea976ac33@googlegroups.com>
+ <2d141b57-2422-4a6f-9240-382f09b05e2c@googlegroups.com>
+Subject: Re: Google Analytics Helper
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_544_19033702.1386738123862"
+X-Google-Token: EMvjn5UFk6QEtfxdUAo0
+X-Google-IP: 99.39.119.109
+
+------=_Part_544_19033702.1386738123862
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_545_25042274.1386738123862"
+
+------=_Part_545_25042274.1386738123862
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Gary,
+
+Yes, it works if I put the snippet at the very end of the slide deck. I was 
+putting at the top. Here is the stack trace when I put it at the top, if 
+needed. Thanks for your help.
+
+--
+kamal
+
+
+
+On Monday, November 25, 2013 5:00:07 AM UTC-6, Gerald Bauer wrote:
+>
+> Hello Kamal,
+>
+>   Sorry I'm mistaken. Of course, you can add the helper to your slide 
+> source. I tried this example:
+>
+> ~~~
+>    # slide title
+>
+>    # another slide title
+>
+>    test test
+>
+>   {{ google_analytics code=UA-YOUR-CODE-HERE }}
+> ~~~
+>
+>    And I generate the slide deck using:
+>
+>    $ slideshow build index.txt -t reveal
+>
+>    As the saying goes. Works great on my machine. Sorry.  You might try 
+> adding the google_analytics helper at the end of the document. Or try if it 
+> works withouth the analytics helper. For more info about the crash use the 
+> --verbose option e.g. issue
+>
+>   $ slideshow --verbose build index.txt -t reveal
+>
+>    If you try it, please post the stack trace. Cheers.
+>
+>
+> PS: The code for the analytics helper is here -> 
+> https://github.com/slideshow-s9/analytics/blob/master/analytics_helper.rb  
+> No magic really. Just adding a (guarded) text snippet.
+>
+>
+------=_Part_545_25042274.1386738123862
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Gary,<br><br>Yes, it works if I put the snippet at the ver=
+y end of the slide deck. I was putting at the top. Here is the stack trace =
+when I put it at the top, if needed. Thanks for your help.<br><br>--<br>kam=
+al<br><br><br><br>On Monday, November 25, 2013 5:00:07 AM UTC-6, Gerald Bau=
+er wrote:<blockquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: =
+0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir=3D"ltr">Hell=
+o Kamal,<br><br>&nbsp; Sorry I'm mistaken. Of course, you can add the helpe=
+r to your slide source. I tried this example:<br><br>~~~<br>&nbsp;&nbsp; # =
+slide title<br><br>&nbsp;&nbsp; # another slide title<br><br>&nbsp;&nbsp; t=
+est test<br><br>&nbsp; {{ google_analytics code=3DUA-YOUR-CODE-HERE }}<br>~=
+~~<br><br>&nbsp;&nbsp; And I generate the slide deck using:<br><br>&nbsp;&n=
+bsp; $ slideshow build index.txt -t reveal<br><br>&nbsp;&nbsp; As the sayin=
+g goes. Works great on my machine. Sorry.&nbsp; You might try adding the go=
+ogle_analytics helper at the end of the document. Or try if it works withou=
+th the analytics helper. For more info about the crash use the --verbose op=
+tion e.g. issue<br><br>&nbsp; $ slideshow --verbose build index.txt -t reve=
+al<br><br>&nbsp;&nbsp; If you try it, please post the stack trace. Cheers.<=
+br><br><br>PS: The code for the analytics helper is here -&gt; <a href=3D"h=
+ttps://github.com/slideshow-s9/analytics/blob/master/analytics_helper.rb" t=
+arget=3D"_blank" onmousedown=3D"this.href=3D'https://www.google.com/url?q\7=
+5https%3A%2F%2Fgithub.com%2Fslideshow-s9%2Fanalytics%2Fblob%2Fmaster%2Fanal=
+ytics_helper.rb\46sa\75D\46sntz\0751\46usg\75AFQjCNGBOCwoj44C61_2h-Z5iLgZ-S=
+hNZQ';return true;" onclick=3D"this.href=3D'https://www.google.com/url?q\75=
+https%3A%2F%2Fgithub.com%2Fslideshow-s9%2Fanalytics%2Fblob%2Fmaster%2Fanaly=
+tics_helper.rb\46sa\75D\46sntz\0751\46usg\75AFQjCNGBOCwoj44C61_2h-Z5iLgZ-Sh=
+NZQ';return true;">https://github.com/slideshow-<wbr>s9/analytics/blob/mast=
+er/<wbr>analytics_helper.rb</a>&nbsp; No magic really. Just adding a (guard=
+ed) text snippet.<br><br></div></blockquote></div>
+------=_Part_545_25042274.1386738123862--
+
+------=_Part_544_19033702.1386738123862
+Content-Type: text/plain; charset=US-ASCII; name=stack-trace.txt
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename=stack-trace.txt
+X-Attachment-Id: 4486e28e-b8c3-4bf3-9cb5-f6e74fbf18c9
+Content-ID: <4486e28e-b8c3-4bf3-9cb5-f6e74fbf18c9>
+
+username@machine:~/docs$ slideshow --verbose build index.txt -t reveal
+fetcher 0.4.2 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+Loading shortcut index from '/home/username/slideshow.index.yml'...
+Slide Show (S9) 2.3.0 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+Slideshow settings:
+dump of >/var/lib/gems/1.9.1/gems/slideshow-2.3.0/config/slideshow.builtin.yml<:
+{"helper"=>
+  {"unparsed"=>["slide", "style"],
+   "renames"=>["include", "class"],
+   "exprs"=>["class", "clear"]}}
+dump of >/var/lib/gems/1.9.1/gems/slideshow-2.3.0/config/slideshow.yml<:
+{"headers"=>
+  {"generator"=>
+    "Slide Show (S9) 2.3.0 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]",
+   "author"=>"Your Name Here",
+   "email"=>"Your Email Here",
+   "company"=>"Your Company Here",
+   "title"=>"Your Title Here",
+   "subtitle"=>"Your Subtitle Here",
+   "footer"=>"Your Footer Here",
+   "subfooter"=>"Your Subfooter Here",
+   "date"=>"2013-12-10",
+   "gradient-theme"=>"diagonal",
+   "gradient-colors"=>"red orange",
+   "code-engine"=>"sh",
+   "code-txmt"=>false},
+ "analytics"=>{"google"=>"UA-XXX"},
+ "filters"=>
+  ["skip-end-directive",
+   "directives_bang_style_to_percent_style",
+   "directives_percent_style",
+   "comments-percent-style",
+   "leading-headers",
+   "erb-django-style",
+   "erb-rename-helper-hack",
+   "dump_content_to_file_debug_text_erb",
+   "erb",
+   "code-block-curly-style",
+   "dump_content_to_file_debug_text"],
+ "textile"=>{"extnames"=>[".textile", ".t"]},
+ "rest"=>{"extnames"=>[".rst", ".rest"]},
+ "mediawiki"=>{"extnames"=>[".wiki", ".mediawiki", ".mw"]}}
+Slideshow shortcuts:
+dump of >/var/lib/gems/1.9.1/gems/slideshow-2.3.0/config/slideshow.index.yml<:
+{"s6blank"=>
+  "https://raw.github.com/slideshow-s9/slideshow-s6-blank/master/s6blank.txt",
+ "s6syntax"=>
+  "https://raw.github.com/slideshow-s9/slideshow-s6-syntax-highlighter/master/s6syntax.txt",
+ "s5blank"=>
+  "https://raw.github.com/slideshow-s9/slideshow-s5-blank/master/s5blank.txt",
+ "s5themes"=>
+  "https://raw.github.com/slideshow-s9/slideshow-s5-themes/master/s5themes.txt",
+ "g5"=>
+  "https://raw.github.com/slideshow-s9/slideshow-google-html5-slides/master/g5.txt",
+ "slidy"=>
+  ["https://raw.github.com/slideshow-s9/slideshow-slidy/master/slidy.txt",
+   "https://raw.github.com/slideshow-s9/slideshow-slidy/master/slidy.txt.quick"],
+ "csss"=>
+  ["https://raw.github.com/slideshow-s9/slideshow-csss/master/csss.txt",
+   "https://raw.github.com/slideshow-s9/slideshow-csss/master/csss.txt.quick"],
+ "deck.js"=>
+  ["https://raw.github.com/slideshow-s9/slideshow-deck.js/master/deck.js.txt",
+   "https://raw.github.com/slideshow-s9/slideshow-deck.js/master/deck.js.txt.quick"],
+ "impress.js"=>
+  ["https://raw.github.com/slideshow-s9/slideshow-impress.js/master/impress.js.txt",
+   "https://raw.github.com/slideshow-s9/slideshow-impress.js/master/impress.js.txt.quick"],
+ "shower"=>
+  "https://raw.github.com/slideshow-s9/slideshow-shower/master/shower.txt",
+ "analytics"=>
+  "https://raw.github.com/slideshow-s9/analytics/master/analytics.txt.plugin",
+ "tables"=>
+  "https://raw.github.com/slideshow-s9/tables/master/tables.txt.plugin",
+ "snippets"=>
+  "https://raw.github.com/slideshow-s9/snippets/master/snippets.txt.plugin",
+ "plugins"=>
+  ["https://raw.github.com/slideshow-s9/analytics/master/analytics.txt.plugin",
+   "https://raw.github.com/slideshow-s9/tables/master/tables.txt.plugin",
+   "https://raw.github.com/slideshow-s9/snippets/master/snippets.txt.plugin"],
+ "formatting"=>
+  "https://raw.github.com/slideshow-s9/formatting/master/formatting.txt.quick"}
+dump of >/home/username/slideshow.index.yml<:
+{"s6blank"=>
+  "https://raw.github.com/slideshow-s9/slideshow-s6-blank/master/s6blank.txt",
+ "s6syntax"=>
+  "https://raw.github.com/slideshow-s9/slideshow-s6-syntax-highlighter/master/s6syntax.txt",
+ "s5blank"=>
+  "https://raw.github.com/slideshow-s9/slideshow-s5-blank/master/s5blank.txt",
+ "s5themes"=>
+  "https://raw.github.com/slideshow-s9/slideshow-s5-themes/master/s5themes.txt",
+ "g5"=>
+  "https://raw.github.com/slideshow-s9/slideshow-google-html5-slides/master/g5.txt",
+ "slidy"=>
+  ["https://raw.github.com/slideshow-s9/slideshow-slidy/master/slidy.txt",
+   "https://raw.github.com/slideshow-s9/slideshow-slidy/master/slidy.txt.quick"],
+ "csss"=>
+  ["https://raw.github.com/slideshow-s9/slideshow-csss/master/csss.txt",
+   "https://raw.github.com/slideshow-s9/slideshow-csss/master/csss.txt.quick"],
+ "deck.js"=>
+  ["https://raw.github.com/slideshow-s9/slideshow-deck.js/master/deck.js.txt",
+   "https://raw.github.com/slideshow-s9/slideshow-deck.js/master/deck.js.txt.quick"],
+ "impress.js"=>
+  ["https://raw.github.com/slideshow-s9/slideshow-impress.js/master/impress.js.txt",
+   "https://raw.github.com/slideshow-s9/slideshow-impress.js/master/impress.js.txt.quick"],
+ "shower"=>
+  "https://raw.github.com/slideshow-s9/slideshow-shower/master/shower.txt",
+ "reveal.js"=>
+  "https://raw.github.com/avillafiorita/slideshow-reveal.js/master/reveal.txt",
+ "reveal"=>
+  "https://raw.github.com/avillafiorita/slideshow-reveal.js/master/reveal.txt",
+ "analytics"=>
+  "https://raw.github.com/slideshow-s9/analytics/master/analytics.txt.plugin",
+ "tables"=>
+  "https://raw.github.com/slideshow-s9/tables/master/tables.txt.plugin",
+ "snippets"=>
+  "https://raw.github.com/slideshow-s9/snippets/master/snippets.txt.plugin",
+ "plugins"=>
+  ["https://raw.github.com/slideshow-s9/analytics/master/analytics.txt.plugin",
+   "https://raw.github.com/slideshow-s9/tables/master/tables.txt.plugin",
+   "https://raw.github.com/slideshow-s9/snippets/master/snippets.txt.plugin"],
+ "formatting"=>
+  "https://raw.github.com/slideshow-s9/formatting/master/formatting.txt.quick"}
+
+Markdown settings:
+dump of >DEFAULTS<:
+{"libs"=>["kramdown"],
+ "extnames"=>
+  [".markdown",
+   ".m",
+   ".mark",
+   ".mkdn",
+   ".md",
+   ".mdown",
+   ".markdn",
+   ".txt",
+   ".text"],
+ "redcarpet"=>
+  {"extensions"=>
+    ["no_intra_emphasis", "fenced_code_blocks", "tables", "strikethrough"]},
+ "filters"=>["comments-percent-style"]}
+
+Markdown libs:
+  1 Markdown library found: kramdown
+
+[debug]    executing command build
+[debug] hello from build command
+Loading plugins in '/home/username/.slideshow/plugins/tables/tables_helper.rb' (/home/username/.slideshow/plugins/tables/tables_helper.rb)...
+Loading plugins in '/home/username/.slideshow/plugins/analytics/analytics_helper.rb' (/home/username/.slideshow/plugins/analytics/analytics_helper.rb)...
+Loading plugins in '/home/username/.slideshow/plugins/snippets/snippets_helper.rb' (/home/username/.slideshow/plugins/snippets/snippets_helper.rb)...
+[debug]   adding file 'index.txt'...
+[debug] manifest=reveal.txt
+*** depreciated API call [Pakman::Finder.initialize] - do NOT pass in logger; no longer required/needed; logger arg will get removed
+[debug] Checking >templates/*.txt<
+[debug] Checking >templates/*/*.txt<
+[debug] Checking >/home/username/.slideshow/templates/*.txt<
+[debug] Checking >/home/username/.slideshow/templates/*/*.txt<
+[debug]   Found manifest candidate >/home/username/.slideshow/templates/reveal/reveal.txt<
+[debug]   Adding match >/home/username/.slideshow/templates/reveal/reveal.txt<
+[debug]   Found manifest candidate >/home/username/.slideshow/templates/g5/g5.txt<
+[debug]   Adding match >/home/username/.slideshow/templates/g5/g5.txt<
+[debug]   Found manifest candidate >/home/username/.slideshow/templates/slidy/slidy.txt<
+[debug]   Adding match >/home/username/.slideshow/templates/slidy/slidy.txt<
+[debug] Checking >/var/lib/gems/1.9.1/gems/slideshow-2.3.0/templates/*.txt<
+[debug]   Found manifest candidate >/var/lib/gems/1.9.1/gems/slideshow-2.3.0/templates/s6.txt<
+[debug]   Adding match >/var/lib/gems/1.9.1/gems/slideshow-2.3.0/templates/s6.txt<
+[debug] setting outdir to >/home/username/docs<
+[debug] dirname=., basename=index, extname=.txt
+[debug] setting srcdir to >/home/username/docs<
+Preparing slideshow 'index'...
+[debug] inname=index.txt
+  Patching !-directives (0 slide/style-directives)...
+  Preparing %-directives (0 slide/style directives, 0 class/clear expr-directives, 0/0 block-directives)...
+  Removing %-comments (0 lines, 0 begin/end-blocks, 0 end-blocks)...
+  Reading 0 headers: ...
+    Patching params for helper 'google_analytics' from 'code=UA-YOUR-CODE-HERE' to:
+      :code=>'UA-YOUR-CODE-HERE'
+  Patching embedded Ruby (erb) code Django-style (1 {{-expressions, 0/0 {%-statements)...
+  Patching embedded Ruby (erb) code for aliases (0 include/class-aliases)...
+  Dumping content before erb merge to /home/username/docs/index.debug.text.erb...
+  Running embedded Ruby (erb) code/helpers...
+  Adding JavaScript for Google Analytics tracker (UA-YOUR-CODE-HERE)...
+  Patching {{{/}}}-code blocks (0/0 blocks, 0/0 escaped blocks)...
+  Dumping content before text-to-html conversion to /home/username/docs/index.debug.text...
+  Converting Markdown-text (623 bytes) to HTML using library kramdown (1.2.0)
+  using options: {}
+  Adding 2 slide breaks (using h1 rule)...
+  Dumping content before html post processing to /home/username/docs/index.debug.html...
+[debug] add slide with missing leading slide directive ><!-- === begin markdown block ===
+
+      generated by markdown 1.1.1 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+                on 2013-12-10 22:57:17 -0600 with Markdown engine kramdown (1.2.0)
+                  using options {}
+  -->
+
+<!-- begin google-analytics {:code=>"UA-YOUR-CODE-HERE"} -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-YOUR-CODE-HERE']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- end google-analytics -->
+
+
+< with slide_counter == 0
+[debug]   adding slide with *no* header:
+<!-- === begin markdown block ===
+
+      generated by markdown 1.1.1 on Ruby 1.9.3 (2011-10-30) [x86_64-linux]
+                on 2013-12-10 22:57:17 -0600 with Markdown engine kramdown (1.2.0)
+                  using options {}
+  -->
+
+<!-- begin google-analytics {:code=>"UA-YOUR-CODE-HERE"} -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-YOUR-CODE-HERE']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- end google-analytics -->
+
+
+[debug]   adding css classes from pi >slide<: ><
+[debug]   adding slide with header (h1):
+<h1 id="slide-title">slide title</h1>
+[debug]   adding css classes from pi >slide<: ><
+[debug]   adding slide with header (h1):
+<h1 id="another-slide-title">another slide title</h1>
+3 slides found:
+  [1] -- no header -- | $$$<script type="text/javascript">$$  var
+  [2] <h1 id="slide-title">slide title</h1>
+  [3] <h1 id="another-slide-title">another slide title</h1>
+[debug]  setting pakdir to >/home/username/.slideshow/templates/reveal<
+[debug] changing cwd to pak - new >/home/username/.slideshow/templates/reveal<, old >/home/username/docs<
+[debug] manifestsrc >/home/username/.slideshow/templates/reveal/reveal.txt<, pakpath >/home/username/docs<
+*** depreciated API call [Pakman::Templater.initialize] - do NOT pass in logger; no longer required/needed; logger arg will get removed
+Merging template pack 'reveal'
+  Loading template manifest /home/username/.slideshow/templates/reveal/reveal.txt...
+[debug] line 3: __file__.html   index.html.erb
+[debug] line 8: reveal/css/print/paper.css
+[debug] line 9: reveal/css/print/pdf.css
+[debug] line 10: reveal/css/reveal.css
+[debug] line 11: reveal/css/reveal.min.css
+[debug] line 12: reveal/css/theme/beige.css
+[debug] line 13: reveal/css/theme/default.css
+[debug] line 14: reveal/css/theme/moon.css
+[debug] line 15: reveal/css/theme/night.css
+[debug] line 16: reveal/css/theme/serif.css
+[debug] line 17: reveal/css/theme/simple.css
+[debug] line 18: reveal/css/theme/sky.css
+[debug] line 19: reveal/css/theme/solarized.css
+[debug] line 20: reveal/css/theme/source/beige.scss
+[debug] line 21: reveal/css/theme/source/default.scss
+[debug] line 22: reveal/css/theme/source/moon.scss
+[debug] line 23: reveal/css/theme/source/night.scss
+[debug] line 24: reveal/css/theme/source/serif.scss
+[debug] line 25: reveal/css/theme/source/simple.scss
+[debug] line 26: reveal/css/theme/source/sky.scss
+[debug] line 27: reveal/css/theme/source/solarized.scss
+[debug] line 28: reveal/css/theme/template/mixins.scss
+[debug] line 29: reveal/css/theme/template/settings.scss
+[debug] line 30: reveal/css/theme/template/theme.scss
+[debug] line 31: reveal/Gruntfile.js
+[debug] line 32: reveal/js/reveal.js
+[debug] line 33: reveal/js/reveal.min.js
+[debug] line 34: reveal/lib/css/zenburn.css
+[debug] line 35: reveal/lib/font/league_gothic-webfont.eot
+[debug] line 36: reveal/lib/font/league_gothic-webfont.svg
+[debug] line 37: reveal/lib/font/league_gothic-webfont.ttf
+[debug] line 38: reveal/lib/font/league_gothic-webfont.woff
+[debug] line 39: reveal/lib/font/league_gothic_license
+[debug] line 40: reveal/lib/js/classList.js
+[debug] line 41: reveal/lib/js/head.min.js
+[debug] line 42: reveal/lib/js/html5shiv.js
+[debug] line 43: reveal/package.json
+[debug] line 44: reveal/plugin/highlight/highlight.js
+[debug] line 45: reveal/plugin/markdown/example.html
+[debug] line 46: reveal/plugin/markdown/example.md
+[debug] line 47: reveal/plugin/markdown/markdown.js
+[debug] line 48: reveal/plugin/markdown/marked.js
+[debug] line 49: reveal/plugin/multiplex/client.js
+[debug] line 50: reveal/plugin/multiplex/index.js
+[debug] line 51: reveal/plugin/multiplex/master.js
+[debug] line 52: reveal/plugin/notes/notes.html
+[debug] line 53: reveal/plugin/notes/notes.js
+[debug] line 54: reveal/plugin/notes-server/client.js
+[debug] line 55: reveal/plugin/notes-server/index.js
+[debug] line 56: reveal/plugin/notes-server/notes.html
+[debug] line 57: reveal/plugin/postmessage/example.html
+[debug] line 58: reveal/plugin/postmessage/postmessage.js
+[debug] line 59: reveal/plugin/print-pdf/print-pdf.js
+[debug] line 60: reveal/plugin/remotes/remotes.js
+[debug] line 61: reveal/plugin/search/search.js
+[debug] line 62: reveal/plugin/zoom-js/zoom.js
+[debug] templatesdir=/home/username/.slideshow/templates/reveal
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/index.html.erb<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/print/paper.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/print/pdf.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/reveal.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/reveal.min.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/beige.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/default.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/moon.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/night.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/serif.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/simple.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/sky.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/solarized.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/source/beige.scss<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/source/default.scss<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/source/moon.scss<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/source/night.scss<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/source/serif.scss<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/source/simple.scss<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/source/sky.scss<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/source/solarized.scss<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/template/mixins.scss<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/template/settings.scss<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/css/theme/template/theme.scss<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/Gruntfile.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/js/reveal.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/js/reveal.min.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/lib/css/zenburn.css<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/lib/font/league_gothic-webfont.eot<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/lib/font/league_gothic-webfont.svg<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/lib/font/league_gothic-webfont.ttf<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/lib/font/league_gothic-webfont.woff<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/lib/font/league_gothic_license<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/lib/js/classList.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/lib/js/head.min.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/lib/js/html5shiv.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/package.json<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/highlight/highlight.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/markdown/example.html<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/markdown/example.md<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/markdown/markdown.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/markdown/marked.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/multiplex/client.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/multiplex/index.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/multiplex/master.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/notes/notes.html<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/notes/notes.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/notes-server/client.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/notes-server/index.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/notes-server/notes.html<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/postmessage/example.html<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/postmessage/postmessage.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/print-pdf/print-pdf.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/remotes/remotes.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/search/search.js<
+[debug]   path[1]=>/home/username/.slideshow/templates/reveal/reveal/plugin/zoom-js/zoom.js<
+[debug] destfull=>/home/username/docs/index.html<
+[debug] destpath=>/home/username/docs<
+  Merging to index.html...
+  Loading template >/home/username/.slideshow/templates/reveal/index.html.erb<...
+** Warning: header 'description' undefined
+
+*** error: undefined method `include?' for nil:NilClass
+
+(erb):38:in `block in create_slideshow': undefined method `include?' for nil:NilClass (NoMethodError)
+	from (erb):37:in `each'
+	from (erb):37:in `create_slideshow'
+	from /usr/lib/ruby/1.9.1/erb.rb:838:in `eval'
+	from /usr/lib/ruby/1.9.1/erb.rb:838:in `result'
+	from /var/lib/gems/1.9.1/gems/pakman-0.5.0/lib/pakman/template.rb:10:in `render'
+	from /var/lib/gems/1.9.1/gems/pakman-0.5.0/lib/pakman/templater.rb:49:in `block in merge_pak'
+	from /var/lib/gems/1.9.1/gems/pakman-0.5.0/lib/pakman/manifest.rb:53:in `block in each'
+	from /var/lib/gems/1.9.1/gems/pakman-0.5.0/lib/pakman/manifest.rb:53:in `each'
+	from /var/lib/gems/1.9.1/gems/pakman-0.5.0/lib/pakman/manifest.rb:53:in `each'
+	from /var/lib/gems/1.9.1/gems/pakman-0.5.0/lib/pakman/templater.rb:29:in `merge_pak'
+	from /var/lib/gems/1.9.1/gems/slideshow-2.3.0/lib/slideshow/cli/commands/gen.rb:313:in `create_slideshow'
+	from /var/lib/gems/1.9.1/gems/slideshow-2.3.0/lib/slideshow/cli/main.rb:120:in `block (4 levels) in <top (required)>'
+	from /var/lib/gems/1.9.1/gems/slideshow-2.3.0/lib/slideshow/cli/main.rb:118:in `each'
+	from /var/lib/gems/1.9.1/gems/slideshow-2.3.0/lib/slideshow/cli/main.rb:118:in `block (3 levels) in <top (required)>'
+	from /var/lib/gems/1.9.1/gems/slideshow-2.3.0/lib/slideshow/cli/main.rb:116:in `each'
+	from /var/lib/gems/1.9.1/gems/slideshow-2.3.0/lib/slideshow/cli/main.rb:116:in `block (2 levels) in <top (required)>'
+	from /var/lib/gems/1.9.1/gems/gli-2.8.1/lib/gli/command_support.rb:121:in `call'
+	from /var/lib/gems/1.9.1/gems/gli-2.8.1/lib/gli/command_support.rb:121:in `execute'
+	from /var/lib/gems/1.9.1/gems/gli-2.8.1/lib/gli/app_support.rb:280:in `block in call_command'
+	from /var/lib/gems/1.9.1/gems/gli-2.8.1/lib/gli/app_support.rb:293:in `call'
+	from /var/lib/gems/1.9.1/gems/gli-2.8.1/lib/gli/app_support.rb:293:in `call_command'
+	from /var/lib/gems/1.9.1/gems/gli-2.8.1/lib/gli/app_support.rb:79:in `run'
+	from /var/lib/gems/1.9.1/gems/slideshow-2.3.0/lib/slideshow/cli/main.rb:279:in `<top (required)>'
+	from /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /var/lib/gems/1.9.1/gems/slideshow-2.3.0/lib/slideshow.rb:109:in `main'
+	from /var/lib/gems/1.9.1/gems/slideshow-2.3.0/bin/slideshow:5:in `<top (required)>'
+	from /usr/local/bin/slideshow:19:in `load'
+	from /usr/local/bin/slideshow:19:in `<main>'
+
+
+------=_Part_544_19033702.1386738123862--
+

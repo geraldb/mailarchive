@@ -1,0 +1,83 @@
+From 55392075776@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 53477376000
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,c688e924858327ee,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.100.194.5 with SMTP id r5mr13054705anf.26.1216124436882;
+        Tue, 15 Jul 2008 05:20:36 -0700 (PDT)
+Return-Path: <rosejn@gmail.com>
+Received: from yw-out-1718.google.com (yw-out-1718.google.com [74.125.46.157])
+        by mx.google.com with ESMTP id 7si6200332yxg.1.2008.07.15.05.20.35;
+        Tue, 15 Jul 2008 05:20:36 -0700 (PDT)
+Received-SPF: pass (google.com: domain of rosejn@gmail.com designates 74.125.46.157 as permitted sender) client-ip=74.125.46.157;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of rosejn@gmail.com designates 74.125.46.157 as permitted sender) smtp.mail=rosejn@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by yw-out-1718.google.com with SMTP id 5so2371987ywm.20
+        for <webslideshow@googlegroups.com>; Tue, 15 Jul 2008 05:20:35 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from
+         :user-agent:mime-version:to:subject:content-type
+         :content-transfer-encoding;
+        bh=kduiML7xZo9Uqw3Ameve4V16F6LRBrVaIgOIEiclmak=;
+        b=CwoMy6yvgmn7n6ELBg+T9RQ9FNQXKPEYA4nWquGO7DSrV3hXhhkVhBQeZgAON9Uk2D
+         DZGiBxHjiS8ML+pRienlJfd9/AXaTSv09i7d4aFYNZs46lvB2XjK25D79aBv5kt6h8WD
+         VAFxmeYILsL2M3lLWwYVAGZpHdHcl+1grVOIg=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject
+         :content-type:content-transfer-encoding;
+        b=QwAq47WZO5nmMzIk3hP5aj1fkKPuMFgTO08nSnjqNAygnHOJFFntQjL12w+59j9HnW
+         xmerSw+Szlp1nV238td3G+YC2WHWp6STk15LvaeNwvxWimCLLbx2Chl5vZSFjwP8UXjI
+         x5hJC59i13lBn/4CUeYizTVDA4hqwMlh2XATk=
+Received: by 10.103.173.5 with SMTP id a5mr8791833mup.117.1216124435440;
+        Tue, 15 Jul 2008 05:20:35 -0700 (PDT)
+Return-Path: <rosejn@gmail.com>
+Received: from ?192.168.70.158? ( [195.176.178.209])
+        by mx.google.com with ESMTPS id j10sm11725993mue.6.2008.07.15.05.20.33
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Tue, 15 Jul 2008 05:20:34 -0700 (PDT)
+Message-ID: <487C960E.2070900@gmail.com>
+Date: Tue, 15 Jul 2008 14:20:30 +0200
+From: Jeff Rose <rosejn@gmail.com>
+User-Agent: Thunderbird 2.0.0.14 (X11/20080505)
+MIME-Version: 1.0
+To: webslideshow@googlegroups.com
+Subject: redcloth bug
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Sorry for the spam...  I found the source of my problem though.  
+RedCloth incorrectly handles object tags (for including SVG files) when 
+they are separated across multiple lines.  So this:
+
+<object
+  type="image/svg+xml"
+  height="100%"
+  width="100%"
+  data="graphics/network_model.svg">
+</object>
+
+gets partially escaped, which is the worst possible behavior.  While 
+this works fine:
+
+<object type="image/svg+xml" height="100%" width="100%" 
+data="graphics/network_model.svg"> </object>
+
+I sent off an email to _why, but I'm not sure if RedCloth is still being 
+maintained...
+
+On another note, I thought of a couple cool directions for a slideshow 
+API.  I'm not sure if this is something people are interested in, but 
+what I was thinking about was integrating in with something like the 
+jQuery library, and adding support for slide transitions, lists that are 
+presented iteratively, item by item, and eventually canvas based or SVG 
+animations.  This would be my ideal presentation engine.
+
+Thoughts?
+
+Cheers,
+Jeff
+
+
+

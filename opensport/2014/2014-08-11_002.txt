@@ -1,0 +1,76 @@
+From 2016450445312@xxx Tue Jun 16 00:16:49 +0000 2015
+X-GM-THRID: 1622505684992
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,e51c80de3a0e72d6
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.3.73 with SMTP id a9mr12728laa.4.1407790061401;
+        Mon, 11 Aug 2014 13:47:41 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.188.237 with SMTP id gd13ls553823wic.38.canary; Mon, 11
+ Aug 2014 13:47:40 -0700 (PDT)
+X-Received: by 10.180.105.3 with SMTP id gi3mr1914082wib.3.1407790060983;
+        Mon, 11 Aug 2014 13:47:40 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x229.google.com (mail-wi0-x229.google.com [2a00:1450:400c:c05::229])
+        by gmr-mx.google.com with ESMTPS id hl14si1263888wib.2.2014.08.11.13.47.40
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 11 Aug 2014 13:47:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) client-ip=2a00:1450:400c:c05::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x229.google.com with SMTP id n3so6108180wiv.2
+        for <opensport@googlegroups.com>; Mon, 11 Aug 2014 13:47:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=2nFB4nfqZ2+++2iIJh6Fgdzc6bwVmHG3Y/1TnpgcPDY=;
+        b=p8oQG/slxvWb+VYGtDMWU7J49flCBohZIM8SiUUQyaQFJLXq+vZQDcq4zGcNoezz2w
+         /aJGJkXC+y9sulLhUbfDhPGdERAWcB/UoOef50aJxks5E/g9RX2xGC5RnfFD2fL8Avwi
+         mmaddGLCzCAptSgS5DafrMau4Dq+TfkL2CseUapOu/zN/WfGyMkZCGTpUFxy/gHz/2I6
+         1W/nbhxrEAYBafKKXHeYcu7N88UFp+XNwOrmrgqCK0+USySDU1v7lAK0hQOZplZBo/gy
+         /gF0id61bS28HrVw8ufCXW+9bcrphUroavsFQiTN/nyCkzxowFMAze2r3nxA+MsG/g3P
+         eHdA==
+MIME-Version: 1.0
+X-Received: by 10.194.222.197 with SMTP id qo5mr251453wjc.78.1407790060892;
+ Mon, 11 Aug 2014 13:47:40 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Mon, 11 Aug 2014 13:47:40 -0700 (PDT)
+In-Reply-To: <824d8449-c310-4b44-8c67-54a9ec2eabd7@googlegroups.com>
+References: <CAAxEZd-SLq=dXfKvyFmVVEphsXJPJjzgAXY+nKArB9nkb4WCTA@mail.gmail.com>
+	<824d8449-c310-4b44-8c67-54a9ec2eabd7@googlegroups.com>
+Date: Mon, 11 Aug 2014 22:47:40 +0200
+Message-ID: <CAAxEZd-KFcG7tHenaChb3=MbMrOGfZWaidODypp4-BUj19H6dA@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_=5Bopensport=5D_Re=3A_New_Season_=2D_Deutsche_Bundesliga?=
+	=?UTF-8?Q?_2014=2F15_Added_=2D_Fr_22=2E8=2E_Bayern_M=C3=BCnchen_=2D_VfL_Wolfsburg?=
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI:  The datasets are now loaded into the football.db running on
+heroku. See the Bundesliga page [1] or the 2. Bundesliga page [2]  or
+try the HTTP JSON API e.g.
+
+  to fetch the Bundesliga 2014/15 teams use:
+   events/de.2014_15/teams
+  to the the first round use
+   events/de.2014_15/round/1  and so on
+
+  for the 2. Bundesliga use:
+   events/de.2.2014_15/teams
+   events/de.2.2014_15/round/1 and so on.
+
+  Note the season path changed in the repo e.g. 2014_15 changed to
+2014-15, thus, find the 2014-15 schedule [3] or squads [4] at the new
+location. Cheers.
+
+[1] footballdb.herokuapp.com/de.2014_15
+[2] footballdb.herokuapp.com/de.2.2014_15
+[3] github.com/openfootball/de-deutschland/tree/master/2014-15
+[4] github.com/openfootball/de-deutschland/tree/master/2014-15/squads
+

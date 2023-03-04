@@ -1,0 +1,64 @@
+From 2374567460864@xxx Tue Jun 16 00:16:50 +0000 2015
+X-GM-THRID: 2335511150592
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b3bbc30e2cee37b1
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.142.174 with SMTP id rx14mr316172wjb.4.1422437592572;
+        Wed, 28 Jan 2015 01:33:12 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.9.9 with SMTP id v9ls17161laa.34.gmail; Wed, 28 Jan 2015
+ 01:33:11 -0800 (PST)
+X-Received: by 10.112.137.70 with SMTP id qg6mr847688lbb.14.1422437591903;
+        Wed, 28 Jan 2015 01:33:11 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22f.google.com (mail-wi0-x22f.google.com. [2a00:1450:400c:c05::22f])
+        by gmr-mx.google.com with ESMTPS id jx7si94486wid.2.2015.01.28.01.33.11
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 28 Jan 2015 01:33:11 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22f as permitted sender) client-ip=2a00:1450:400c:c05::22f;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22f as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x22f.google.com with SMTP id fb4so10456090wid.2
+        for <opensport@googlegroups.com>; Wed, 28 Jan 2015 01:33:11 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=tLnTGttdJaQLF8UYZRHUZpKOykqU79WY1fbZvYvh3Rs=;
+        b=EwC7YDkPbc1Nrx1jkmqzJbASeKS5F/8LeCPv9igdxkyEkIbYZ+SB7F6iBEkrODWJAf
+         5S8aIfY2Bp+gqXnUBGmwnbEE70bJFSSiDOO1dZe3yAxLN2t5XnQzwsnsnnoqoORsBwrO
+         XrYNzpySKnsu4mbrTPAPMTtYPxDSJUGvpvTxkwAFJBYf1ZCQZ0RrOEZ8iBhiG2soGeNi
+         5IhyWrGFqDYbvbzX9tVLwoGF98WU3n3dOiKq9SwddnKtLtcnhY2Qi1zdGRUJWBHO3Lb+
+         sFmxwKFtnBqKzwi6UjgjnadkTbSTGORQmdMbiuojQkDLa53vsKhilYmb9Xl5o7kP6xyF
+         UQgQ==
+MIME-Version: 1.0
+X-Received: by 10.180.78.70 with SMTP id z6mr5194188wiw.25.1422437591768; Wed,
+ 28 Jan 2015 01:33:11 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Wed, 28 Jan 2015 01:33:11 -0800 (PST)
+In-Reply-To: <bcbded5e-9027-4ca1-b454-9a92ff6dbacb@googlegroups.com>
+References: <CAAxEZd-=Qv8xaZ6Vo39s7i-LkK0+qmkW_tjeV-Oxtzr7w6vM5w@mail.gmail.com>
+	<bcbded5e-9027-4ca1-b454-9a92ff6dbacb@googlegroups.com>
+Date: Wed, 28 Jan 2015 10:33:11 +0100
+Message-ID: <CAAxEZd-GRrGhsB16UCn=vpPhv8=12yTsdgO_4xHm+_Ka9NcOQg@mail.gmail.com>
+Subject: Re: [opensport] Re: football.db in the New Year 2015 - Any Wishes?
+ Suggestions? Ideas? Comments?
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Prosit 2015! Thanks for your ideas and comments. Welcome.
+   The idea of football.db is that once you have the data in SQLite
+(or PostgreSQL etc.) you can export it to any format you like (e.g.
+TOML, YAML, JSON, CSV, etc.). You're more than welcome to share you
+export scripts and formats.
+
+   For "mass" imports there's also the football.csv org / project. Cheers.
+
+[1] github.com/footballcsv
+

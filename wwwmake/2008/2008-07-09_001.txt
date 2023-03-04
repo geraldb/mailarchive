@@ -1,0 +1,73 @@
+From 35126247424@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 38483787776
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,2b7fa842681aaddc,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.100.34.16 with SMTP id h16mr6136653anh.22.1215567396417;
+        Tue, 08 Jul 2008 18:36:36 -0700 (PDT)
+Return-Path: <geraldbauer2007@gmail.com>
+Received: from yw-out-2324.google.com (yw-out-2324.google.com [74.125.46.29])
+        by mx.google.com with ESMTP id 22si6678694yxr.2.2008.07.08.18.36.35;
+        Tue, 08 Jul 2008 18:36:36 -0700 (PDT)
+Received-SPF: pass (google.com: domain of geraldbauer2007@gmail.com designates 74.125.46.29 as permitted sender) client-ip=74.125.46.29;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of geraldbauer2007@gmail.com designates 74.125.46.29 as permitted sender) smtp.mail=geraldbauer2007@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by yw-out-2324.google.com with SMTP id 5so1338075ywh.21
+        for <webslideshow@googlegroups.com>; Tue, 08 Jul 2008 18:36:35 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:mime-version:content-type:content-transfer-encoding
+         :content-disposition;
+        bh=FW+z/rnIIvF2wVmZv12RTwPFVPtHwgFAXlrvBOJq6rc=;
+        b=G7CInHpUdbH8Zm76ATOYBEsENVgkNqrHFnQzi2vEHelbnw5zbYr8YKVbp7wIgNPpqv
+         fCX9sUHrjmX7LRrhbAd5i9Cv3aSHv8X697NBlCvxpQAZiOmxog9lduDgbj6bUDRH1wME
+         TA9Fp2IgLYcqoMHZLbdNHPx42tTGX2I4ftQOo=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type
+         :content-transfer-encoding:content-disposition;
+        b=DX30YxyDmQ6mhXssi3DJdVBXfRpvYYXCCeVAxCD+AsyxZNBTtgVv0kwWgK3niumICE
+         JjHdN4QKxc7ij9XTzHbs524D7Yyv+xvQ9xPgtBLzlyexBflHKH9GGef17cNW6cQete2z
+         Mu2gtyxBGM/a2KRjhiXiU/iJOnwi5nRgs/OkM=
+Received: by 10.114.180.18 with SMTP id c18mr3802786waf.128.1215567395234;
+        Tue, 08 Jul 2008 18:36:35 -0700 (PDT)
+Received: by 10.114.77.3 with HTTP; Tue, 8 Jul 2008 18:36:35 -0700 (PDT)
+Message-ID: <7e7cb8940807081836m47431b1fod5c37bcf2a41ba9d@mail.gmail.com>
+Date: Tue, 8 Jul 2008 18:36:35 -0700
+From: "Gerald Bauer" <geraldbauer2007@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Slide Show (S9) Gem Now Includes S6 - Easier to Understand and Extend S5 Rewrite
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello,
+
+  Since the FullerScreen Firefox addon hasn't been updated for the
+latest Firefox 3.0 release and I have no clue when any updates (if at
+all will happen) I have switched the default S9-generated slide shows
+to S6.  Note, you still can generate FullerScreen slide shows (just
+flip the new --fullerscreen switch).
+
+  What's S6?
+
+  S6 is my rewrite of Eric Meyer's S5 JavaScript code using the jQuery
+JavaScript library - offering easier to understand and easier to
+extend code. That's the idea. You can find the code online @
+http://slideshow.rubyforge.org/svn/trunk/lib/templates/s6/slides.js
+and compare it to
+http://slideshow.rubyforge.org/svn/trunk/lib/templates/s5/slides.js
+
+  Add plugins, effects and more. Contributions welcome!
+
+   To reflect the Slide Show (S9) support of various formats S5, S6,
+Opera Show, FullerScreen, etc. I have also updated the project site
+and the 10-minute tutorial.
+
+  Comments and questions welcome. Cheers.
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.wordpress.com
+

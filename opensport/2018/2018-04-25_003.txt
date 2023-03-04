@@ -1,0 +1,107 @@
+From 6548394802974556160@xxx Wed Apr 25 14:36:17 +0000 2018
+X-GM-THRID: 6548367386423066624
+X-Received: by 2002:a24:5b12:: with SMTP id g18-v6mr11228348itb.42.1524666976961;
+        Wed, 25 Apr 2018 07:36:16 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a24:1102:: with SMTP id 2-v6ls3989305itf.6.gmail; Wed, 25
+ Apr 2018 07:36:16 -0700 (PDT)
+X-Google-Smtp-Source: AIpwx49DsiKQladnpWKG+WSe1aPVHHOr4/OiL8Ap1X6E+ScyM4eHJQ99pBcrgqcnhVke0YTv6sxb
+X-Received: by 2002:a24:a383:: with SMTP id p125-v6mr11996380ite.32.1524666976263;
+        Wed, 25 Apr 2018 07:36:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1524666976; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YfxgyD1SKSEl2Y93B/meYXMdDlbRQNW6IJf9B1+Sf1YdhIRhG7+drITPfqBpQhvtRC
+         vY1HOBgVwyTheLZCXoUBTTv2NVMYmPQmkz+yh2L47Ah9rbUfJlm+GFku5RHafsALY5oz
+         lQerzYe18/1YXyBMIGgWYWVg1L7biZcd/dp6BH/ckWG+k01HcSlGlG35/pLh6z+aDVA0
+         9y/MtkcerVgjV0uhjmr3YVMTUyWcKaT1nKNqmWuEAhhKEG8tidbdnzxA4bHAQ2YQP1ws
+         iBCW4G3w9W8ybHFBj2vmyLXgeWDDIibU3U1upfRMw5qIXw2htMcrARHxQQECz+I2CvA6
+         jh8g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=ytYHohrl3SjTDs6m0Zz1Y2FalRwEzovpvjVqBHpVo18=;
+        b=oGGjdGXAMqc57x2mc1iHf051ZGTIXmjUSCG6iSrsqk4gpAVRnhpu4AQfLczl0VK7Xi
+         HhthunkB8MVv0JigMNWm+mOQD0XA2IRCwfSsImMAO7M57M3OtqqxwnWWn30ngWCFNgpi
+         Rfj+L0uV7ZkYPoDbJC0vMr2FTyqtvAs5/Ldm7PAbzr1dUXHhN7l4OltIU+hMeUu9OAyE
+         fnWo9+Y/q97uttkuQUj8HE+RsxMvgcL7Kb3MC0hnuqD4/8HGd2Lx2tyYNCayKfGSyt2o
+         bg/MqAqWWWdzKIseZWaeUP9oqzFs43Rcs5wk1YWQzIqwvHKh0+q2GKoNkmJdLnIH1ueU
+         4l0w==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=V+hvLGC5;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x235.google.com (mail-it0-x235.google.com. [2607:f8b0:4001:c0b::235])
+        by gmr-mx.google.com with ESMTPS id 2-v6si810583itj.0.2018.04.25.07.36.16
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 25 Apr 2018 07:36:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) client-ip=2607:f8b0:4001:c0b::235;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=V+hvLGC5;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x235.google.com with SMTP id e20-v6so19625315itc.1
+        for <opensport@googlegroups.com>; Wed, 25 Apr 2018 07:36:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=ytYHohrl3SjTDs6m0Zz1Y2FalRwEzovpvjVqBHpVo18=;
+        b=V+hvLGC5lu97lFIqNNHDyUEQIldUyGGF991OCwixTeT9AQhFvz+XODVNiSWP5ug3pz
+         rzAevRrcrWUVKuT02+3bU6VnNhdwvdMOXhWqNk03iKSkqQwGbYAf46RPCyrQKaSoHEmU
+         g1Vmxl8BD6TL9I3yW9ENcrHueGlKlbzwqQAjZLYnbm67auftySeCGK279bRYYIRTXbsW
+         PF42W3j5PZAr2SndOMi+tPruGqroWTc4Jtn1aWp2UvdwFWa4HVMrv5QNNJu+It9DJ86/
+         ZSKTmTcz7zfyE3C2AaYTL1Po00S2FbW8hKMzZBbGgxdptSjZWnm1MbfzwMCMznn6xRhJ
+         7hPQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=ytYHohrl3SjTDs6m0Zz1Y2FalRwEzovpvjVqBHpVo18=;
+        b=kd3cn1yku5e2qEQjtCYaIaluKAD/Lwh8O3pip5+qhj0EwmaZUbfJZEDP8+Fdq4ecNq
+         xP56W3dDkfachQ/72/rsf8qo3wwiI5QjaU4BPHz/JEK20kwRdnejkXYlOxuyMlqTgAcQ
+         0l/s2fiDkmiVE1wkN5vgTH6iwXpLaQ60PlX6mY9qntm+OUoiAScf98artmyYteMIuXLk
+         y2XpwpQsw27o4XtfG6oQGScOuh1mfSayPraXX5bBfRYTpwkYBx2sWoRiCcU3/zN/Kj7e
+         J4HuFWuWx0T5jjdcDrjGPvg3WpOk2nCwyQ6Oa4cmojLCd2aZGXskbqCguEBSbVgaTl/W
+         5bsg==
+X-Gm-Message-State: ALQs6tBP4SFRDZxIhhM6Db4C7ixEF+yA4+aYxZ2Gy5Ilj0SIXgtU/7aM
+	G7GGLHm7dD/PA/k67rfCJGlPeANmGAaaYxgSjRpb3A==
+X-Received: by 2002:a24:2e94:: with SMTP id i142-v6mr1419605ita.42.1524666975644;
+ Wed, 25 Apr 2018 07:36:15 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.38.132 with HTTP; Wed, 25 Apr 2018 07:36:15 -0700 (PDT)
+In-Reply-To: <e51dc38d-a597-4559-a098-0889639feb9e@googlegroups.com>
+References: <c171ede6-fa4a-4e46-bf44-9d0a3e1aee6d@googlegroups.com>
+ <CAAxEZd-oWAmsP2SB5DLhJ1gXNTm2mFH4j+u7pQ=GbOcBk0Ce4w@mail.gmail.com> <e51dc38d-a597-4559-a098-0889639feb9e@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 25 Apr 2018 16:36:15 +0200
+Message-ID: <CAAxEZd906y6r=t6WAUE3gJeLBTA2ZuEuyQvPF3zeYzkkRvpC7A@mail.gmail.com>
+Subject: Re: [opensport] Can someone help me build a full database?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Lance,
+
+  search this forum with "world cup history" and you should get the
+answer with a working datafile for all datasets e.g.
+
+> I'm pleased to report everything works as expected!
+>
+> I used this Datafile:
+>
+> world  'world.db', setup: 'countries'
+>
+> football 'national-teams'
+> football 'national-teams', setup: 'history'
+> football 'world-cup', setup: 'history'
+>
+> ...and it works great!  Thanks for your help!
+
+   FYI: The football.db is an all-volunteer effort. Even after more
+than four years I'm basically all left alone. Most people drop by for
+freebie downloads.  What do you expect? If anyone would help that
+would be very helpful. I'm just a random nobody with a budget of zero
+($0).
+
+    Cheers. Prost.
+

@@ -1,0 +1,125 @@
+From 6885967349660254208@xxx Wed Oct 21 07:10:11 +0000 2020
+X-GM-THRID: 6884578720937410560
+X-Received: by 2002:a50:eb45:: with SMTP id z5mr1105591edp.144.1603264210969;
+        Wed, 21 Oct 2020 00:10:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a17:906:5208:: with SMTP id g8ls2186933ejm.11.gmail; Wed, 21
+ Oct 2020 00:10:09 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwGt+7utSu13EKlwlxExkpa2zmE3KtTU2bo/NCRn2OZgEa7FjKGOo8yzYJ8Qk9baxXP8gED
+X-Received: by 2002:a17:906:82c5:: with SMTP id a5mr2101720ejy.173.1603264209156;
+        Wed, 21 Oct 2020 00:10:09 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1603264209; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Vm9tY8ABbBs5z9USloJvxu0Hbw3XB8/U8MoFgAc4ds/35bbXizah3WSLcP6khf5kyG
+         GMDoKFHs3SYv4DoPudLm/M7g10S+sY573uNiV0o9QsqCDQP6MiAFJuNZ8Zij9b3376Lk
+         BOSXERoFvm278kbbZEQ3VDDZXKyEyn1RY7W8ilpLF80Qo/X8QxfGL7qawNkz931D3KjW
+         6zvfGlkaW7wsr1wqJqMB732Rj3TFBhs0biN2lpngoG4egdZZf/RY/abcdwzHW2EGM73u
+         uiiwI+uhefaISv9X+/FlPdPKe9NN2MoU6SzUdt5UbhhWyGKfIaPa5/eRxg4QjwpgLDio
+         AWbQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=qwezCtUBUfyZln+Kn5SL0CIAV5rt+FwRT9xY1okd84o=;
+        b=eaFpEl96ttzC/KcT/iTDOSvbbvAV1wbz0U4FX601zbV4xWV20Il1xxE5JDC1oOrxB5
+         /jPlzPf/8ONgl1D3QeXhE9paXkvvq1rX9hboBXY6lCwXSYDRDap0nH+phBF0OTYa7w9S
+         zgHaM6s3VhRgXppYJz1Ym1fFiJaKKaJRGCFMj70IWLSCmzcPSPnWoW9XkSiLxeghr17e
+         4Xi9hOPlQoI18J+sRKLh5gi3mpMNoefRTJhZiWi1LHK/apneQPLkIPUhmLpXnhLVmtwX
+         Dhq8tXc2Sow4PQRjchw2RxstVzjuyaTWSjx/cE/nNBwl8uj4E5B2Dn6bEJfCI4take2x
+         Hu3A==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=W8ImJfpp;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ej1-x62c.google.com (mail-ej1-x62c.google.com. [2a00:1450:4864:20::62c])
+        by gmr-mx.google.com with ESMTPS id n11si41176edi.1.2020.10.21.00.10.09
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 21 Oct 2020 00:10:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62c as permitted sender) client-ip=2a00:1450:4864:20::62c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=W8ImJfpp;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ej1-x62c.google.com with SMTP id e22so1651735ejr.4
+        for <opensport@googlegroups.com>; Wed, 21 Oct 2020 00:10:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=qwezCtUBUfyZln+Kn5SL0CIAV5rt+FwRT9xY1okd84o=;
+        b=W8ImJfppo2oiPwRAShQxe7UESe/bEHRMJGvK3ZFESz4SqjHnba/paT4yfxfEx0W7El
+         SClXmx5ep73o+8wcMAHFNlZrvV5O5cMoU0NeG4ds24nTI+NLeDr3NGkxCxtQiDK43T/r
+         HVhlP2JNF/yiephqM5UeavvSB7fPpPUOBXDtbNwP4+LTQ/wCksPa5tsGNHsKWcB6URFh
+         bF3j6FJexXE/JXqFPcJUl8HRTE6zK6Yu401MufZzda+avZbSY6d95TZNAZDK6bYtfogW
+         OHBZvoANuxrPXKMzZuUGscDfY8MII28iKYzjHeMaEnSSP05cttgvCqCFkcgIvSwJeJbK
+         BAZg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=qwezCtUBUfyZln+Kn5SL0CIAV5rt+FwRT9xY1okd84o=;
+        b=Y9kwEIg5ZuP6sXRhNZcSUPw0I5BT1l9n1eiqiGSgCK9EXDfgOJEfBFWIxEcCsmRGMU
+         o3LSB3FwohOGXNjaXXvqnjaXyQX4L6cqlLzLUoThv3FO3UDk+UGieMjwi23paeayN95w
+         jNegz/bMBG5j+uqpMqDnOV27oxbRbKtbAC4U06p8rRboYU8QOzbgM2sGRX8ohtlN2fhz
+         hqgOi91T6iAg8uWV4/1a9GgfAXucz/byObUlshmeVeJXANJjYMSxsZn6oAxyZzBNqGNS
+         lftU5XCoYM6Q3VTUe1jmg3HHHB7D5gECS0lJ82rZKra8L7Qkh/GrABkI9OA/idNv6Q0V
+         hkhg==
+X-Gm-Message-State: AOAM531YxLDfQAgFhwaFh+9N+EzbPnZBzBPCY9ok1ZqXkHK6vBL8kWg5
+	Py6c5gag8tPZEorYBXZwpycXDXV5VEKooGyYaENpq/9njp3Gjw==
+X-Received: by 2002:a17:906:4a97:: with SMTP id x23mr1990950eju.471.1603264208555;
+ Wed, 21 Oct 2020 00:10:08 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAAxEZd9+4s4d-0RYtF8wqLYfVXmJW3FKLq==-YCANSgJ2cy+_w@mail.gmail.com>
+ <a23746f7-3095-4a5b-b74b-0f4dc6329d05n@googlegroups.com>
+In-Reply-To: <a23746f7-3095-4a5b-b74b-0f4dc6329d05n@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 21 Oct 2020 09:09:58 +0200
+Message-ID: <CAAxEZd9WZW_cH-C3VyXs-xfLf6UgYx6bp-bukVr4s5V00oRppQ@mail.gmail.com>
+Subject: Re: [opensport] Re: New football-to-sqlite build tool - load / read
+ football.txt match datafiles (e.g. English Premier League, German Bundesliga,
+ Spanish La Liga, etc.) into a sqlite database
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Thanks for your kind words. Greetings from Austria. Congrats,
+another win for Barcelona in the Champions League yesterday (Tuesday).
+
+> I would really appreciate if you could tell me how to download football-to-sqlite command line tool.
+
+   The football-to-sqlite command line tool is packaged as a ruby gem
+(package). Installation in two steps:
+   Step 1:   check if you have ruby installed - if not install ruby
+   Step 2:   install the football-to-sqlite ruby package (gem)
+
+    Depending on your computer operating system you may have ruby
+already installed - on Apple OS X ruby is already installed (as far as
+I can remember - I personally use Windows / Linux).
+
+     On Linux you can use the package manager to install ruby if not
+already installed
+    and on Windows you can use the Ruby Windows Installer, see
+https://rubyinstaller.org
+
+    Also of course best to google ruby and your os / setup for more
+info (or ask a friend).
+
+    Once you have ruby installed you will get a command line tool
+called gem - try:
+
+  $ gem help
+
+     Use it to install the ruby package (gem) e.g.:
+
+  $ gem install football-to-sqlite
+
+   And than try
+
+   $ gem list
+
+    That shows all installed ruby packages / gems.  And than of course try:
+
+   $ football-to-sqlite
+
+    Let us know how it goes. Good luck. Cheers. Prost.
+

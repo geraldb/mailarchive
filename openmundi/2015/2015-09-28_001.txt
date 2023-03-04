@@ -1,0 +1,124 @@
+From 6199626415124512768@xxx Mon Sep 28 17:56:48 +0000 2015
+X-GM-THRID: 387975217152
+Date: Mon, 28 Sep 2015 10:56:48 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Message-Id: <27215cb7-a45c-47de-87ed-8a5ceebed14f@googlegroups.com>
+In-Reply-To: <6ccb048b-ebeb-41a5-8e92-5c130aff55e0@googlegroups.com>
+References: <6ccb048b-ebeb-41a5-8e92-5c130aff55e0@googlegroups.com>
+Subject: Re: CIA Factbook change the country html
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_4812_2098157151.1443463008302"
+X-Google-Token: EOD-pbAFwMoXbuWzVrE0
+X-Google-IP: 217.13.183.252
+
+------=_Part_4812_2098157151.1443463008302
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4813_80201188.1443463008302"
+
+------=_Part_4813_80201188.1443463008302
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  FYI: I'm updating the gem (library) for the "new" html format e.g.:
+
+> page.rb  seaches for divs that are not in the current HTML of factbook 
+such as:
+>
+>       [ @opts[:fields] ? 'Introduction'        : 'intro',    '<div 
+id="CollapsiblePanel1_Intro"'   ],
+>       [ @opts[:fields] ? 'Geography'           : 'geo',      '<div 
+id="CollapsiblePanel1_Geo"'     ],
+>       [ @opts[:fields] ? 'People and Society'  : 'people',   '<div 
+id="CollapsiblePanel1_People"'  ],
+>       [ @opts[:fields] ? 'Government'          : 'govt',     '<div 
+id="CollapsiblePanel1_Govt"'    ],
+>       [ @opts[:fields] ? 'Economy'             : 'econ',     '<div 
+id="CollapsiblePanel1_Econ"'    ],
+>       [ @opts[:fields] ? 'Energy'              : 'energy',   '<div 
+id="CollapsiblePanel1_Energy"'  ],
+>       [ @opts[:fields] ? 'Communications'      : 'comm',     '<div 
+id="CollapsiblePanel1_Comm"'    ],
+>       [ @opts[:fields] ? 'Transportation'      : 'trans',    '<div 
+id="CollapsiblePanel1_Trans"'   ],
+>       [ @opts[:fields] ? 'Military'            : 'military', '<div 
+id="CollapsiblePanel1_Military"'],
+>       [ @opts[:fields] ? 'Transnational Issues': 'issues',   '<div 
+id="CollapsiblePanel1_Issues"'  ]
+>
+>  So the resulting data is always empty.
+
+  Note, the updated factbook page reader now uses <h2>'s for finding 
+sections and no longer divs with ids (see above) - that should make it way 
+more stable (let's see if that holds true ;-)  
+
+  Note: Another new addition for helping avoiding breaking things - 
+cleaned-up ("santized" and "chrome-less" e.g. without any headers, footers, 
+scripts, etc) version of the HTML pages - now get hosted and version 
+tracked in a new repo, that is, /factbook [1] and the updated gem (library) 
+uses the cached version by default (thus, guaranteeing that at least the 
+library always works even if the format has changed)
+
+   If anyone still follows along, let us know how it goes. Cheers.
+
+[1] github.com/openmundi/factbook
+
+
+------=_Part_4813_80201188.1443463008302
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,<div><br></div><div>=C2=A0 FYI: I&#39;m updating the=
+ gem (library) for the &quot;new&quot; html format e.g.:</div><div><br></di=
+v><div>&gt; page.rb=C2=A0 seaches for divs that are not in the current HTML=
+ of factbook such as:<br>&gt;<br>&gt; =C2=A0 =C2=A0 =C2=A0 [ @opts[:fields]=
+ ? &#39;Introduction&#39;=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 : &#39;=
+intro&#39;,=C2=A0=C2=A0=C2=A0 &#39;&lt;div id=3D&quot;CollapsiblePanel1_Int=
+ro&quot;&#39;=C2=A0<wbr>=C2=A0 ],<br>&gt; =C2=A0 =C2=A0 =C2=A0 [ @opts[:fie=
+lds] ? &#39;Geography&#39;=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0 : &#39;geo&#39;,=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 &#39;&lt;div id=
+=3D&quot;CollapsiblePanel1_Geo&quot;&#39;=C2=A0=C2=A0=C2=A0<wbr>=C2=A0 ],<b=
+r>&gt; =C2=A0 =C2=A0 =C2=A0 [ @opts[:fields] ? &#39;People and Society&#39;=
+=C2=A0 : &#39;people&#39;,=C2=A0=C2=A0 &#39;&lt;div id=3D&quot;CollapsibleP=
+anel1_People&quot;&#39;<wbr>=C2=A0 ],<br>&gt; =C2=A0 =C2=A0 =C2=A0 [ @opts[=
+:fields] ? &#39;Government&#39;=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0 : &#39;govt&#39;,=C2=A0=C2=A0=C2=A0=C2=A0 &#39;&lt;div id=3D&q=
+uot;CollapsiblePanel1_Govt&quot;&#39;=C2=A0=C2=A0<wbr>=C2=A0 ],<br>&gt; =C2=
+=A0 =C2=A0 =C2=A0 [ @opts[:fields] ? &#39;Economy&#39;=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 : &#39;econ&#39;,=C2=A0=
+=C2=A0=C2=A0=C2=A0 &#39;&lt;div id=3D&quot;CollapsiblePanel1_Econ&quot;&#39=
+;=C2=A0=C2=A0<wbr>=C2=A0 ],<br>&gt; =C2=A0 =C2=A0 =C2=A0 [ @opts[:fields] ?=
+ &#39;Energy&#39;=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0 : &#39;energy&#39;,=C2=A0=C2=A0 &#39;&lt;div id=3D&qu=
+ot;CollapsiblePanel1_Energy&quot;&#39;<wbr>=C2=A0 ],<br>&gt; =C2=A0 =C2=A0 =
+=C2=A0 [ @opts[:fields] ? &#39;Communications&#39;=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0 : &#39;comm&#39;,=C2=A0=C2=A0=C2=A0=C2=A0 &#39;&lt;div id=3D&quot;Co=
+llapsiblePanel1_Comm&quot;&#39;=C2=A0=C2=A0<wbr>=C2=A0 ],<br>&gt; =C2=A0 =
+=C2=A0 =C2=A0 [ @opts[:fields] ? &#39;Transportation&#39;=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0 : &#39;trans&#39;,=C2=A0=C2=A0=C2=A0 &#39;&lt;div id=3D&quot;C=
+ollapsiblePanel1_Trans&quot;&#39;=C2=A0<wbr>=C2=A0 ],<br>&gt; =C2=A0 =C2=A0=
+ =C2=A0 [ @opts[:fields] ? &#39;Military&#39;=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 : &#39;military&#39;, &#39;&lt;div id=
+=3D&quot;CollapsiblePanel1_<wbr>Military&quot;&#39;],<br>&gt; =C2=A0 =C2=A0=
+ =C2=A0 [ @opts[:fields] ? &#39;Transnational Issues&#39;: &#39;issues&#39;=
+,=C2=A0=C2=A0 &#39;&lt;div id=3D&quot;CollapsiblePanel1_Issues&quot;&#39;<w=
+br>=C2=A0 ]<br>&gt;<br>&gt; =C2=A0So the resulting data is always empty.</d=
+iv><div><br></div><div>=C2=A0 Note, the updated factbook page reader now us=
+es &lt;h2&gt;&#39;s for finding sections and no longer divs with ids (see a=
+bove) - that should make it way more stable (let&#39;s see if that holds tr=
+ue ;-) =C2=A0</div><div><br></div><div>=C2=A0 Note: Another new addition fo=
+r helping avoiding breaking things - cleaned-up (&quot;santized&quot; and &=
+quot;chrome-less&quot; e.g. without any headers, footers, scripts, etc) ver=
+sion of the HTML pages - now get hosted and version tracked in a new repo, =
+that is, /factbook [1] and the updated gem (library) uses the cached versio=
+n by default (thus, guaranteeing that at least the library always works eve=
+n if the format has changed)</div><div><br></div><div>=C2=A0 =C2=A0If anyon=
+e still follows along, let us know how it goes. Cheers.</div><div><br></div=
+><div>[1]=C2=A0github.com/openmundi/factbook</div><div><br></div></div>
+------=_Part_4813_80201188.1443463008302--
+
+------=_Part_4812_2098157151.1443463008302--
+

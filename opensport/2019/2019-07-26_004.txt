@@ -1,0 +1,111 @@
+From 6718069773251379200@xxx Fri Jul 26 20:21:50 +0000 2019
+X-GM-THRID: 6710981832719990784
+X-Received: by 2002:a50:92e1:: with SMTP id l30mr81929774eda.141.1564172509915;
+        Fri, 26 Jul 2019 13:21:49 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a50:94ce:: with SMTP id t14ls12847002eda.7.gmail; Fri, 26
+ Jul 2019 13:21:49 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqwt8sD2cEMV48yKt8zIQvqKcY8kSxAb3JtQeZC85qw+9R2zgStF465yEWeXXR/OpbUWlqRl
+X-Received: by 2002:a50:c8c3:: with SMTP id k3mr83439930edh.189.1564172509228;
+        Fri, 26 Jul 2019 13:21:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1564172509; cv=none;
+        d=google.com; s=arc-20160816;
+        b=P55vzAXWl3KFWcxDQ0vPgDSuseJLuTwUdmq+GjlXXJj+v3u+4IIzBzvp/KgFu8sNoL
+         /gp/G3OTLgUoxcaO4eHc283XN8oygFqirC4MlogLoMzNjaqhw1mauPE2UM5O4FPBvd/a
+         i4pgNR/IUGxAxHlDWMOXSR9F+Q4oVelcmavcGyp+X9uv944nB+Xv9JV7NkOY4iQTZS0l
+         rXf5gU+5HO7VhE+kjBIiC8ccsjhlpx8rAzS7x3fjHbKbjcnJmVuem5CeH3WS3YGYv8y2
+         odmwdidRIDiEm5bNIpRP2DFEFapiA3pyHF9HFCx1WaeeYfm+1i4IH0RA2QWidrLCLH8d
+         KSNQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=flGMCJF9UrR5rRNjhbezIssSvost4i/BAbWuPTEfJvM=;
+        b=Mz5Hif9rpiA25+OlyQLv3ATUJRuTZdklyVtpttZpzf6PtxsX2g2i5f/+I+DQNiSaDM
+         c+AiI3LKAKljEHMgEaDm2KNvW+aJHpnnCuKaU++ImKBVOfltS20HU8WscATkWZ4fqPY8
+         2Ob14iCT/61+bHD1eCRNYS4RoJ1EPW8D4LBn60EtmmuWcP8UJg5Ksp+8ja2a7b1nMGO8
+         w1IInmRTRIAemmqBIYvZo0Ivt4ow1UP6srZxy2Wegl0YUkACPp2lkxVH3JqwcuGRyZI3
+         7eqiZIkiuB/s0TJ8Vh35emvVutxZOeJDNrYkY1OI9ePCLBOdcgEu1W2+opuX+CTIKbvX
+         NyIg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="fhO/3lZF";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x12c.google.com (mail-lf1-x12c.google.com. [2a00:1450:4864:20::12c])
+        by gmr-mx.google.com with ESMTPS id s30si2922655eda.4.2019.07.26.13.21.49
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=AEAD-AES128-GCM-SHA256 bits=128/128);
+        Fri, 26 Jul 2019 13:21:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12c as permitted sender) client-ip=2a00:1450:4864:20::12c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="fhO/3lZF";
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x12c.google.com with SMTP id b17so37928619lff.7
+        for <opensport@googlegroups.com>; Fri, 26 Jul 2019 13:21:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=flGMCJF9UrR5rRNjhbezIssSvost4i/BAbWuPTEfJvM=;
+        b=fhO/3lZFRy/Mwvetr3cNsIHuAEf6dzDYqXKQQ23B7YmBT5aQIz4ss06xrMwoZnxZr8
+         JEvjNwHb0t5jSmlNJCbHdDxG81E/xNhXLLVepk81q4e5sd/77RQnyyML+wCwdOEhjWss
+         sOBa1HMwtgSjjJhW6ITR7xTQJmC0ReMI+pnRy4XB/dWW1FIisyULbeMdNXh+pXiuGvGA
+         0qcejRoVBnOhIEYGZWSRbgdZAo9RzbLQKOw8bYjZZy7ANS9har5mx1/e1xS62XCgao2z
+         /BltI9arI/MUkGKcyg73tQ3JnZRmf5LQmi9syPcxMgZ9jtU5ByxnKWmVo9kPSzxw5ucS
+         76Vw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=flGMCJF9UrR5rRNjhbezIssSvost4i/BAbWuPTEfJvM=;
+        b=uMq4K6YiZZw4/JKz7ZGRmXZh5+0NR/RfNyDomnJ2qD8W1g1qiP9R/3H5nyoDVFmSPT
+         +rWsu09GyWba5ZWglcb4kg8ARz8dpEuJqPG5AYVbTIT+pofkZzbrSV7mfiztMEwQfc+v
+         +MR8PgDJYuDdSd9MgR21S+yhRaVFNXSHhveyG6te58Z5H5qdGDvf+gbMGIwX1mKbgfoE
+         i7r6bJTX9xts0G/D/5p3m7PrZ2W40JB4IBtXdPEP71APcgXq+iFq6koW1exoItP/XYyZ
+         fweEAoiRYGzqAJ9l4tPhd51fZQhU8E0fVQS+rMzZV1B6TTefj3l8rzncJUoR5GeigTX5
+         GLdw==
+X-Gm-Message-State: APjAAAWgohO1EDQ7BN4D9xkrvjUHv4cBLWy496YFgZ6U3r8HayedWI+C
+	iEgNQ0ZhvUjU7Ofcjs8Am/JSzS60A2jW95nODMmAt7wNAAg=
+X-Received: by 2002:ac2:518d:: with SMTP id u13mr10714010lfi.40.1564172508252;
+ Fri, 26 Jul 2019 13:21:48 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAAxEZd8yA6pHbk+y7zNxhaR+C-sj3NY9WRA+XyizFjBCkx9n6g@mail.gmail.com>
+ <7a72e99f-c2a4-466d-985a-4143a27d514f@googlegroups.com> <CAAxEZd94c4W5HvqUyaH0ozbqwbgAth2d6RSK+zSmi6qGbp3y+g@mail.gmail.com>
+ <9edfa3d6-660a-4add-aa0b-6f08b118537d@googlegroups.com>
+In-Reply-To: <9edfa3d6-660a-4add-aa0b-6f08b118537d@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 26 Jul 2019 22:21:36 +0200
+Message-ID: <CAAxEZd-3GGzNX76j0O6OKXNMUUpqdyLg6JGx9cjNrdAwm3H1Kw@mail.gmail.com>
+Subject: Re: [opensport] Re: /clubs - New Central Package / Repo for World's
+ Football Clubs (incl. Premier League, Bundesliga, La Liga, etc.)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Paul,
+   Thanks for trying and reporting back.
+
+> other than that works really well
+
+   Great to hear.
+
+> It seems to have picked up the wrong liverpool and arsenal, i have these =
+entries in teams
+>
+> "Arsenal de Sarand=C3=AD"
+> "Liverpool Montevideo"
+
+   I'm currently reworking the club (team) and countries reader /
+matcher in the setup for a fix. If all works out I will push (upload)
+a new (improved) version of the gem(s) / libraries next week. Thanks
+for the patience. Cheers. Prost.
+
+PS: As a work around you can just delete or comment out the two South
+American clubs overwriting the English clubs in your local copy [1][2]
+
+[1] https://github.com/openfootball/clubs/blob/master/south-america/argenti=
+na/ar.clubs.txt#L38
+[2] https://github.com/openfootball/clubs/blob/master/south-america/uy-urug=
+uay/clubs.txt#L4
+

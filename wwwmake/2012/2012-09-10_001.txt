@@ -1,0 +1,77 @@
+From 1143803478016@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1124184621056
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,82c0419e1d181739
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.58.58.206 with SMTP id t14mr5631040veq.16.1347306509323;
+        Mon, 10 Sep 2012 12:48:29 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.154.17 with SMTP id m17ls2329740vcw.1.gmail; Mon, 10 Sep
+ 2012 12:48:29 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.52.99.8 with SMTP id em8mr2309920vdb.16.1347306508948; Mon, 10
+ Sep 2012 12:48:28 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by gq8g2000vbb.googlegroups.com with HTTP; Mon, 10 Sep 2012 12:48:28
+ -0700 (PDT)
+Date: Mon, 10 Sep 2012 12:48:28 -0700 (PDT)
+In-Reply-To: <5abaddf7-02a1-4f79-a311-fbe58681eb7f@googlegroups.com>
+References: <5abaddf7-02a1-4f79-a311-fbe58681eb7f@googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: EIyIuYIF3DHpDX_YbPQ0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:15.0)
+ Gecko/20100101 Firefox/15.0,gzip(gfe)
+X-Google-IP: 178.190.96.14
+Message-ID: <f2bc79da-950b-4c08-a13a-1b54890df927@gq8g2000vbb.googlegroups.com>
+Subject: Re: Some Problem with "Google HTML5 Rocks" template
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+> when i use google HTML5 Rocks templates
+> ..
+> how can i fix this?
+
+  You have to change/fix the HTML template, that is, html5.html.erb
+[1]
+
+  Change:
+
+   <% @slides.each_with_index do |slide,i| %>
+     <div class="slide transitionSlide" id="<%= %Q(slide#{i+2}) %>">
+       <header><%= slide.header %></header>
+       <section>
+         <%= slide.content %>
+        </section>
+     </div>
+    <% end %>
+
+   to use the new content_without_header template tag documented here
+[2]. For example:
+
+   <% @slides.each_with_index do |slide,i| %>
+     <div class="slide transitionSlide" id="<%= %Q(slide#{i+2}) %>">
+       <header><%= slide.header %></header>
+       <section>
+         <%= slide.content_without_header %>
+        </section>
+     </div>
+    <% end %>
+
+
+   Let me know if it works. Cheers.
+
+[1] https://github.com/geraldb/slideshow-google-html5-slides/blob/master/html5.html.erb
+[2] https://github.com/geraldb/slideshow/wiki/Template-Reference
+

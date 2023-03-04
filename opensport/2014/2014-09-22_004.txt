@@ -1,0 +1,97 @@
+From 2201569198080@xxx Tue Jun 16 00:16:48 +0000 2015
+X-GM-THRID: 2202048397312
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,f722d79e04e510bf,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.24.225 with SMTP id x1mr1882970wif.2.1411377384772;
+        Mon, 22 Sep 2014 02:16:24 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.44.195 with SMTP id g3ls540821lam.59.gmail; Mon, 22 Sep
+ 2014 02:16:23 -0700 (PDT)
+X-Received: by 10.112.190.102 with SMTP id gp6mr255799lbc.10.1411377383710;
+        Mon, 22 Sep 2014 02:16:23 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22b.google.com (mail-wi0-x22b.google.com [2a00:1450:400c:c05::22b])
+        by gmr-mx.google.com with ESMTPS id p7si506486wiz.1.2014.09.22.02.16.23
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 22 Sep 2014 02:16:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22b as permitted sender) client-ip=2a00:1450:400c:c05::22b;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22b as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x22b.google.com with SMTP id ho1so2491801wib.10
+        for <opensport@googlegroups.com>; Mon, 22 Sep 2014 02:16:23 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=W7iH7ynSa6OkCJIw9gGVTI00OM0StGlVceicPJTH+Gc=;
+        b=mU5GcBk42s5ALzvCGJWkRr2WavlUGvvM2BFPjZb9eU1T9W4mSPWJoNhdpdYqgeY9JJ
+         /I1D9xENNG9895I8AD7xVa1KKRij6IAfD3EWvTnv1CBAPJ57l7A5nnRQECMWClAEVcBg
+         0G6qk+CJffAbuf45ur3zkv73umqkuWDwwNFZ473F8yeBFJU+byKtyvtAE3/sMDkCcUy0
+         5WnmMW/N7XG67EXMvAX3PkbPz+NavWBkicIZ2/BRSxbdwNHo4oRFODXv28v62AaLN2ol
+         vQjqQe61tEqdddouDbZxTcn0OEB3vbqWecZGa8PfAn0GYEFEATv2DXUQpAv8lGs1y9bP
+         d+fA==
+MIME-Version: 1.0
+X-Received: by 10.194.78.136 with SMTP id b8mr1495711wjx.106.1411377383635;
+ Mon, 22 Sep 2014 02:16:23 -0700 (PDT)
+Received: by 10.216.205.135 with HTTP; Mon, 22 Sep 2014 02:16:23 -0700 (PDT)
+Date: Mon, 22 Sep 2014 11:16:23 +0200
+Message-ID: <CAAxEZd-_Z8YkJSVpDMp_RWVGrPJJEQfpsQO3LCMj1KtqeqXuXA@mail.gmail.com>
+Subject: sportdb command line tool update v1.9.8 - adds squads reader for
+ football clubs
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: I've uploaded a new sportdb gem update, that is, v1.9.8. What's news=
+?
+
+  The sportdb library and command line tool can now read squads for
+football clubs. Note, there's a squad reader for national teams (all
+players assumed w/ same nationality) and there's a new club squad
+reader [1] for teams w/ players w/ many nationalities.
+
+  As an example lets look at the squads/arsenal.txt (Arsenal London,
+England) file:
+
+ 1  Wojciech Szcz=C4=99sny (POL) GK 2007-
+
+ 2  Mathieu Debuchy (FRA)  DF 2014-
+ 3  Kieran Gibbs           DF 2007-
+ 4  Per Mertesacker (GER)  DF 2011-
+ 6 Laurent Koscielny (FRA) DF 2010-
+18 Nacho Monreal (ESP)     DF 2013-
+21 Calum Chambers          DF 2014-
+
+ 7 Tom=C3=A1=C5=A1 Rosick=C3=BD (CZE)  MF 2006-
+ 8 Mikel Arteta (ESP)   MF 2011-
+10 Jack Wilshere        MF 2008-
+11 Mesut =C3=96zil (GER)     MF 2013-
+ ...
+
+  A squads line starts w/ the jersey number e.g. 1 or 2 or 3 and so on
+  followed by the players name  and optinaly the nationality using the
+FIFA trigrams/three-letter country code. If no country code is listed
+the player's nationality is assumed the team's nationality   e.g.
+(ENG) in this case.
+
+  Optionaly you can add the position e.g. DF, GK, MF (defender,
+goalkeeper, midfielder, etc)
+  and the club join date e.g. since 2014 or 2006 etc.
+
+  Note: Birthdate, height, and more player details can get added to
+the players records [2] (not the squads records).
+
+  Cheers.
+
+[1] github.com/sportdb/sport.db.ruby/blob/master/lib/sportdb/readers/squad_=
+club.rb
+[2] github.com/openfootball/players
+

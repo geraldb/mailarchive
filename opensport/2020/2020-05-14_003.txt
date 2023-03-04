@@ -1,0 +1,129 @@
+From 6826619429398249472@xxx Thu May 14 08:49:55 +0000 2020
+X-GM-THRID: 6770636976679813120
+X-Received: by 2002:a05:620a:2049:: with SMTP id d9mr3973758qka.449.1589446195041;
+        Thu, 14 May 2020 01:49:55 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:ac8:7542:: with SMTP id b2ls1250819qtr.1.gmail; Thu, 14 May
+ 2020 01:49:54 -0700 (PDT)
+X-Received: by 2002:aed:308e:: with SMTP id 14mr3308605qtf.146.1589446194353;
+        Thu, 14 May 2020 01:49:54 -0700 (PDT)
+Received: by 2002:a37:b885:0:b029:e8:f9d7:9abd with SMTP id i127-20020a37b8850000b02900e8f9d79abdmsqkf;
+        Thu, 14 May 2020 01:39:19 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJx24oerPuOpPhCjhqqmhxhe6cKn7MndJTn2gsGcFVumMkQdjqMPun/vf6L2ULQdbsu9H5zJ7FFeoA==
+X-Received: by 2002:a25:4bc5:: with SMTP id y188mr5369637yba.439.1589445559108;
+        Thu, 14 May 2020 01:39:19 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Thu, 14 May 2020 01:39:18 -0700 (PDT)
+From: Jordan Metcalf <jme1calff@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <67e0e301-9057-4225-9086-69a137aec904@googlegroups.com>
+In-Reply-To: <CAAxEZd-ZVDuZhWBJ+tvYYS4Pf4PSz5OuikgZX+KA72M4yORGqA@mail.gmail.com>
+References: <CAAxEZd-ZVDuZhWBJ+tvYYS4Pf4PSz5OuikgZX+KA72M4yORGqA@mail.gmail.com>
+Subject: Re: $ sportdb new de - Deutschland / Germany Datasets Now All Moved
+ to New Setup / Conf(iguration) Format
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_676_732151106.1589445558902"
+X-Google-Token: ELaH9PUFnWZoz1ebn5c0
+X-Google-IP: 165.225.81.48
+
+------=_Part_676_732151106.1589445558902
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_677_1533951405.1589445558902"
+
+------=_Part_677_1533951405.1589445558902
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+Thank you for your work so for. How frequently will this dataset be updated?
+
+Kind regards,
+
+Jordan 
+
+On Sunday, 15 December 2019 12:09:25 UTC, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    If you follow along the football.db datasets for Deutschland / Germany 
+> [1] 
+>    are now all moved / converted to the new (easier) setup and 
+> config(uration) formats. 
+>
+>    Try: 
+>
+>      $ sportdb new de 
+>
+>    to read in all leagues & cups and all seasons; resulting in: 
+>
+>      $sportdb stats 
+>
+>           4 leagues  /  57 seasons 
+>          75 events (league+season recs)  /  671 rounds 
+>         128 teams 
+>        6145 games 
+>
+>
+>   Special thanks to Alexander Artiga Gonzalez for helping out on the last 
+> mile 
+> with missing headings and fixing typos. 
+>
+>    Cheers. Prost. 
+>
+> [1] https://github.com/openfootball/deutschland 
+>
+
+------=_Part_677_1533951405.1589445558902
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Gerald,<div><br></div><div>Thank you for your work so f=
+or. How frequently will this dataset be updated?</div><div><br></div><div>K=
+ind regards,</div><div><br></div><div>Jordan=C2=A0<br><br>On Sunday, 15 Dec=
+ember 2019 12:09:25 UTC, Gerald Bauer  wrote:<blockquote class=3D"gmail_quo=
+te" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;paddi=
+ng-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 =C2=A0If you follow along the football.db datasets for Deutschla=
+nd / Germany [1]
+<br>=C2=A0 =C2=A0are now all moved / converted to the new (easier) setup an=
+d
+<br>config(uration) formats.
+<br>
+<br>=C2=A0 =C2=A0Try:
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0$ sportdb new de
+<br>
+<br>=C2=A0 =C2=A0to read in all leagues &amp; cups and all seasons; resulti=
+ng in:
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0$sportdb stats
+<br>
+<br>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 4 leagues =C2=A0/ =C2=A057 seasons
+<br>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A075 events (league+season recs) =C2=A0=
+/ =C2=A0671 rounds
+<br>=C2=A0 =C2=A0 =C2=A0 =C2=A0 128 teams
+<br>=C2=A0 =C2=A0 =C2=A0 =C2=A06145 games
+<br>
+<br>
+<br>=C2=A0 Special thanks to Alexander Artiga Gonzalez for helping out on t=
+he last mile
+<br>with missing headings and fixing typos.
+<br>
+<br>=C2=A0 =C2=A0Cheers. Prost.
+<br>
+<br>[1] <a href=3D"https://github.com/openfootball/deutschland" target=3D"_=
+blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.google.=
+com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fdeutschland\x26sa\x3=
+dD\x26sntz\x3d1\x26usg\x3dAFQjCNFQTQEXCLjx1n3SMn9zNacGpCzSSQ&#39;;return tr=
+ue;" onclick=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2=
+F%2Fgithub.com%2Fopenfootball%2Fdeutschland\x26sa\x3dD\x26sntz\x3d1\x26usg\=
+x3dAFQjCNFQTQEXCLjx1n3SMn9zNacGpCzSSQ&#39;;return true;">https://github.com=
+/<wbr>openfootball/deutschland</a>
+<br></blockquote></div></div>
+------=_Part_677_1533951405.1589445558902--
+
+------=_Part_676_732151106.1589445558902--
+

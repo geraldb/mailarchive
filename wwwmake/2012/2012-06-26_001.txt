@@ -1,0 +1,88 @@
+From 1115815936000@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1115583152128
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,e62644a3333e9fa3,start
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+Received: by 10.52.240.229 with SMTP id wd5mr12572998vdc.8.1340693418788;
+        Mon, 25 Jun 2012 23:50:18 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.230.193 with SMTP id jn1ls2238479vcb.8.gmail; Mon, 25 Jun
+ 2012 23:50:18 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.52.94.111 with SMTP id db15mr892042vdb.11.1340693418524; Mon,
+ 25 Jun 2012 23:50:18 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by cu1g2000vbb.googlegroups.com with HTTP; Mon, 25 Jun 2012 23:50:18
+ -0700 (PDT)
+Date: Mon, 25 Jun 2012 23:50:18 -0700 (PDT)
+User-Agent: G2/1.0
+X-Google-Token: EKq3pf8EA9rteB88QkU0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:13.0)
+ Gecko/20100101 Firefox/13.0.1,gzip(gfe)
+X-Google-IP: 188.22.222.245
+Message-ID: <d160b5cf-97d1-499f-9956-28059612ca9f@cu1g2000vbb.googlegroups.com>
+Subject: Slide Show (S9) Update - Use the Takahashi Method with --takahashi
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hallo,
+
+  I've updated the Slide Show (S9) gem and added a new switch that
+makes it easier to use the Takahashi method [1] for your slides.
+
+  To break up words into slides the new --takahashi switch lets you
+use // between words or on its own line. Example:
+
+%%%%%%%%%%%%%
+%% here we go
+
+Welcome // Aloha // Bienvenue // Benvenuto
+//
+V=C3=ADt=C3=A1me t=C4=95
+//
+Shalom
+//
+Ahlan'wa sahla
+//
+Bem-vindo // Bem-vinda // Bienvenido
+//
+Willkommen // Welkom // Velkommen // Wolkom
+//
+=CE=9A=CE=B1=CE=BB=CF=8E=CF=82 =CE=BF=CF=81=CE=AF=CF=83=CE=B1=CF=84=CE=B5
+//
+Dobrodo=C5=A1li
+
+   If you add some styling (to make your text bigger or better huge)
+use a %css directive. Example:
+
+%%%%%%%%%%%%
+%% some extra styling
+
+%css
+
+p {
+   margin: 0;
+   padding: 12% 0 0 0;
+  text-align: center;
+  font-size: 160px;
+}
+
+%end
+
+
+  Showtime! Issue the command:
+
+   slideshow --takahashi taka.text
+
+  That's all. If you have any question or comments, let me know.
+Cheers.
+
+[1] http://en.wikipedia.org/wiki/Takahashi_method
+

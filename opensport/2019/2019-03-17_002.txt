@@ -1,0 +1,107 @@
+From 6669330344275083264@xxx Sun Mar 17 12:07:56 +0000 2019
+X-GM-THRID: 6668265281882685440
+X-Received: by 2002:a1c:9c47:: with SMTP id f68mr742702wme.11.1552824476403;
+        Sun, 17 Mar 2019 05:07:56 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a1c:dc43:: with SMTP id t64ls273941wmg.5.gmail; Sun, 17 Mar
+ 2019 05:07:55 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqzjCTCUl1kvx+o/gU6VVcE6v3mQRjAuH3BPlt8OtDw/mg8bOh+GdDNO2zoZIbPYDjv/u+d2
+X-Received: by 2002:a7b:c18d:: with SMTP id y13mr768835wmi.2.1552824475659;
+        Sun, 17 Mar 2019 05:07:55 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1552824475; cv=none;
+        d=google.com; s=arc-20160816;
+        b=IgTn/8PNfM0AB1ETnQacoXxLPFBCeagPO0jUa2HoTDdgxFx6dXIO3rYwY1Sr6/3JL4
+         kOmgIQ0IfmVp5NN+Zcg0RlFXx10kLlaqWlxQ+8nHuHLA2U8cg2mb1IiSTx3FCcuTBeVl
+         kz2hnR6VJuEntP0HUF3TysBgMJGTqRiUXrckFK/BZ1RA8Kri2yGvrU0zAl/icj30EgJP
+         5DgAnzDPlRS7dDm60f4UQOpuP6xrCAKHXcZPz2JAa8T9x6vzLLfs1FKAN03Ui7pY1rCQ
+         iuZ39KiBfEyhzPHOCwojQ65Qsp6Mm0M6v+ekJwWQLJzyeXh5Zr0cWulQwE2Nqvhf/y/I
+         ATzA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=vMwwlQhgmfC9TG7kft5V+snTVOGhZKcKsGKpACeeEec=;
+        b=oaDoCMvWEITwJgdmHx6LPoueuUBbik7tI87vuetKADNI91uQ0F68uhPKHpbRMckEAa
+         fuDn5wRafIBVM3vgd/slRXW0Dxu6k8kQxKCCTKdg5p7CGjGOuci3g2CjvYIMmvDstIEQ
+         t5h1nR1Ucng32+g5Ebt/0+boag8YZztK49X1E4254vcDo7gg2CMahrNSJTEk9+RLl+Zz
+         Yh/v0UdrrGH8o53q47mWMUfkIKxBAFZ3DRnWqVMUa4OlO/SugSXGMovjOxIl7d+J2g3l
+         2fI0PjXLcKBNeL2Qr0lKMb2wfzi35uSA4VPsqmuKJDd9DK+nsjBdLVmVjDFC58z9L/JB
+         8Cdw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=t1ahk7at;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x12d.google.com (mail-lf1-x12d.google.com. [2a00:1450:4864:20::12d])
+        by gmr-mx.google.com with ESMTPS id p10si305704wro.1.2019.03.17.05.07.55
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 17 Mar 2019 05:07:55 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12d as permitted sender) client-ip=2a00:1450:4864:20::12d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=t1ahk7at;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x12d.google.com with SMTP id m13so9778717lfb.6
+        for <opensport@googlegroups.com>; Sun, 17 Mar 2019 05:07:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=vMwwlQhgmfC9TG7kft5V+snTVOGhZKcKsGKpACeeEec=;
+        b=t1ahk7atdWeW6J490cfo+d5ALK/i1qzyPsu6FxgZUZumwCHlL8eG7lldUOrocT0RXr
+         Nr/a6r8dwxAgrCTNCOC3D4OOGBvT8kWqu8p0FtI7nGGRZuBB4PCxlHInfjbULSZE/NOS
+         3rl1KuZZp4GSklUEIfdYZI8aDJE/DD+FOVtXxecaDPPKFZd8Lrqo6unwcBkiqlmfRWaY
+         4E7Ty3HY2zNF0UUo4NN1PKCLrLMOWZGacxtyhr5AAXAGrpn6y2nyrWq038Roi6ub8GzR
+         R5ZDGcmaauX7Yv+K6PedQC+wUAjPylzXvkNJWCy9Q+jIyruOGyS2AOu4Tt9wl9ixaLGS
+         fSKw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=vMwwlQhgmfC9TG7kft5V+snTVOGhZKcKsGKpACeeEec=;
+        b=pm6H/TTk6ABHrPDCVNDaSzH1EI/D3mohSpRBGIx6DeoHH36rA5tWimGCZMUQkybvnS
+         jidwUE9flNBl8mPsG9st/ELXRKI72FOzUR4syHKIYiwM5eC6S/mqDQUIY3Ot3YQ7IV2x
+         yXl1KNg2wtr4DiKfmboByBBk0/L54o0BQnJY4mPDDxQ8oEOE51jAHHYufdBUSn+kXmCZ
+         qGoGu6W2ma4RBZHgiE+YsOQo3vwH2DJqUCyNMhOI6GTZcPcm75s3WOXgEwDlw4taYgtD
+         X6tukdJCwVdZzY2pgtEaoEAf96ddkmaPNpCHGXSvnI+1p+lc6aMONldZcHt9LOqnbyac
+         Zvuw==
+X-Gm-Message-State: APjAAAW8gjFK05v/gi0avA7/QjeAtdgHct9zqqV0CtjRw0P0vum7NEIM
+	9ssV29yyRKsi0iYbIYYa8WHaiciTn5AyUjrqUszMhyHR
+X-Received: by 2002:a19:2c52:: with SMTP id s79mr7135647lfs.32.1552824475077;
+ Sun, 17 Mar 2019 05:07:55 -0700 (PDT)
+MIME-Version: 1.0
+References: <3ddaf9b4-b9d0-4833-bea6-a6fe11918183@googlegroups.com>
+ <CAAxEZd_8a5AKOZeO2YHZMRSQBSaW8jKwwJA8gfKvv_8vjaycTQ@mail.gmail.com> <580a936a-afc1-4227-8209-be18a1f7466e@googlegroups.com>
+In-Reply-To: <580a936a-afc1-4227-8209-be18a1f7466e@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 17 Mar 2019 13:07:46 +0100
+Message-ID: <CAAxEZd_vPO0v363zCaTcF4zFY_-0fV2jnQ1KjkccieLyou_MMg@mail.gmail.com>
+Subject: Re: [opensport] Do you have a bot
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+>  In fact, it is script, instead of bot, right?
+
+If the build script runs "on its own" it becomes a bot :-) otherwise
+it's just a build script.
+
+>   But where do you get those match results?
+
+No magic. New match results have to get added "by hand" to the
+football.db pages. (*) You can find all datasets @
+https://github.com/openfootball  It works like a wiki (e.g,
+wikipedia).
+
+(*) If you want to use a "machine" format - use the football.csv
+datasets @ https://github.com/footballcsv
+
+> If I updated football.json by yorobot, will future updates overwrite my changes?
+
+   If you use the same (yorbot) build script and the same datasets
+than the updates will be the same. The "canonical" source (for match
+results) is always the football.db page / dataset as the football.json
+datasets get always "auto-generated" from the sources.
+
+Cheers. Prost.
+

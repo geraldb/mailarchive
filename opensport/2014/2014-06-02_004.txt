@@ -1,0 +1,152 @@
+From 954564870144@xxx Tue Jun 16 00:17:05 +0000 2015
+X-GM-THRID: 889315131392
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,2bead3678bdf8975
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.14.5 with SMTP id l5mr2637022lbc.6.1401695243693;
+        Mon, 02 Jun 2014 00:47:23 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.27.66 with SMTP id r2ls351118lag.29.gmail; Mon, 02 Jun
+ 2014 00:47:23 -0700 (PDT)
+X-Received: by 10.112.73.232 with SMTP id o8mr2675196lbv.0.1401695242903;
+        Mon, 02 Jun 2014 00:47:22 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22b.google.com (mail-wi0-x22b.google.com [2a00:1450:400c:c05::22b])
+        by gmr-mx.google.com with ESMTPS id gz10si154044wib.0.2014.06.02.00.47.22
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 02 Jun 2014 00:47:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22b as permitted sender) client-ip=2a00:1450:400c:c05::22b;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22b as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f171.google.com with SMTP id cc10so4037045wib.4
+        for <opensport@googlegroups.com>; Mon, 02 Jun 2014 00:47:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=XP7A0PxB5otJeWgbtSkxGvrApqgQmvCX0lWn/rFiYdw=;
+        b=cUNNGMMGn2jaZM2uAUfJeyOHgxLX0XKBlIkGZ6jGFmaLfdrFyl5c3xQ09+XHKKtw6D
+         nlkfncUdndA1b1mM0O352CBu7UXzZklAJaxsmrGayUZetmJihOXQg2ZksdJ3B5Fmuz9F
+         d8lHhEUUI513afnwc6WHxmEc9q5K3CWl+Ezcvp+D6oYbbTh16d8dMcF5X5mA6Fm9AAEk
+         X3jbKz1MtnAHOYMnNQ0o9bgYgIOha+XIzWOQgcu/pSLZynk0oM88b4e9QLbUpbBdh6V/
+         VKwYLf5eW3lEm4LKvdKPFelEyvB5TwYQCG7culsRevfM18b0xFupSRMDd24/UNjWAOPR
+         GT7Q==
+MIME-Version: 1.0
+X-Received: by 10.180.189.76 with SMTP id gg12mr19746508wic.28.1401695242757;
+ Mon, 02 Jun 2014 00:47:22 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Mon, 2 Jun 2014 00:47:22 -0700 (PDT)
+In-Reply-To: <595f91b5-d408-41bc-909c-411109354051@googlegroups.com>
+References: <e79618e9-fbe1-4fbd-90b7-5b87ab628ce3@googlegroups.com>
+	<1bea3dc5-e0f3-40f9-a629-d269a59832db@googlegroups.com>
+	<595f91b5-d408-41bc-909c-411109354051@googlegroups.com>
+Date: Mon, 2 Jun 2014 09:47:22 +0200
+Message-ID: <CAAxEZd-WYxz-FK5e-uwwk+-jEdwF4zy8FEQU-PpdsiO8h+2ewg@mail.gmail.com>
+Subject: Re: [opensport] Re: http://footballdb.herokuapp.com/api/v1/event/world.2014/round/1
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  To calculate the winner as an example see the calc_winner "formula"
+in the Game (soon Match) model source [1]:
+
+def calc_winner
+    if score1.nil? || score2.nil?
+      self.winner90 =3D nil
+      self.winner =3D nil
+    else
+      if score1 > score2
+        self.winner90 =3D 1
+      elsif score1 < score2
+        self.winner90 =3D 2
+      else # assume score1 =3D=3D score2 - draw
+        self.winner90 =3D 0
+      end
+
+      ## todo/fix:
+      # check for next-game/pre-game !!!
+      # use 1st leg and 2nd leg - use for winner too
+      # or add new winner_total or winner_aggregated method ???
+
+      ## check for penalty - note: some games might only have penalty
+and no extra time (e.g. copa liberatadores)
+      if score1p.present? && score2p.present?
+        if score1p > score2p
+          self.winner =3D 1
+        elsif score1p < score2p
+          self.winner =3D 2
+        else
+          # issue warning! - should not happen; penalty goes on until
+winner found!
+          puts "*** warn: should not happen; penalty goes on until winner f=
+ound"
+        end
+      ## check for extra time
+      elsif score1et.present? && score2et.present?
+        if score1et > score2et
+          self.winner =3D 1
+        elsif score1et < score2et
+          self.winner =3D 2
+        else # assume score1et =3D=3D score2et - draw
+          self.winner =3D 0
+        end
+      else
+        # assume no penalty and no extra time; same as 90min result
+        self.winner =3D self.winner90
+      end
+    end
+  end
+
+  Looks more complicated than it is:
+1) check 90 minute score
+2) if equal check extra time score  (if present otherwise draw/tie)
+3) if equal check penalty shootout score (if present otherwise draw/tie)
+
+  Cheers.
+
+[1] github.com/geraldb/sport.db.ruby/blob/master/lib/sportdb/models/game.rb
+
+2014-06-02 9:24 GMT+02:00 Brice Van=C3=A7on <vanconbrice@gmail.com>:
+> Thanks for reply, I don't see field "score1et".
+> So for the finale, for example, if score1=3D1 and score2=3D1, it's the sc=
+ore1ot
+> which is important.
+> And if the score1ot and score2ot are against the same, it's the score1p
+> which is important ?
+> Thank you for your API, it's so nice, I hope you can update resultats eac=
+h
+> day, it would be so great.
+>
+>
+>
+> Le vendredi 30 mai 2014 10:41:54 UTC+2, Gerald Bauer a =C3=A9crit :
+>>
+>> Hello,
+>>
+>>   > I'm trying to know what is the "score1ot" or "score1p" filed ?
+>>
+>>    - score1ot/score1et  =3D> is the score for team 1 after overtime (ot)=
+ /
+>> after extra time (et)
+>>    - score1p   =3D> is the penalty (p) shootout score for team 1
+>>
+>>    and
+>>
+>>    - score2ot and score2p is the same for team 2.
+>>
+>>    Cheers.
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+

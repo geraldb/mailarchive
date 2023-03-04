@@ -1,0 +1,86 @@
+From 6321342528633176064@xxx Sun Aug 21 17:57:29 +0000 2016
+X-GM-THRID: 6319523264451313664
+X-Received: by 10.13.223.84 with SMTP id i81mr14133140ywe.9.1471802249611;
+        Sun, 21 Aug 2016 10:57:29 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.16.27 with SMTP id y27ls3578876ioi.41.gmail; Sun, 21 Aug
+ 2016 10:57:28 -0700 (PDT)
+X-Received: by 10.36.124.80 with SMTP id a77mr11583429itd.1.1471802248441;
+        Sun, 21 Aug 2016 10:57:28 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x231.google.com (mail-it0-x231.google.com. [2607:f8b0:4001:c0b::231])
+        by gmr-mx.google.com with ESMTPS id d6si998389ith.1.2016.08.21.10.57.28
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 21 Aug 2016 10:57:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::231 as permitted sender) client-ip=2607:f8b0:4001:c0b::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x231.google.com with SMTP id n128so64894446ith.1
+        for <opensport@googlegroups.com>; Sun, 21 Aug 2016 10:57:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=rMoYFYK2jQB7TUJ8tluWBcXULNchYlFQXtlA/7GysvQ=;
+        b=AFhj2Pc1Jk2TsTEShc83+jbgG4OrETTWBTvT8AGWDqbpfWiOmjqcGIm7yWjhT/JJu5
+         jRqfFQf4LRGIBktdTUNe8GuGJXCW7kJejQ39KXQdy0LMb/xHcFhsP/JzbMM8hJU89xAp
+         u1PE+BlpgcrOUayya/sDhKTh14eBowqPBihv37kurhZgeM8i+SdG2MSwnme9avOm9KBR
+         ZckT69jorU4C3DlcOUMIunhjKhnFUBC7TH8vPeQ82JsIFrbg7XnJjqJfPvj0VFKJJsXm
+         7rsOh2q90k4nwpRFj2rushZNv5vNkzF/V3vHD0h8XRYYn9Uyoqe7qp038aOiYsf+MhdC
+         0zKg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=rMoYFYK2jQB7TUJ8tluWBcXULNchYlFQXtlA/7GysvQ=;
+        b=kcmLVhv0OtJG2IPNG1ENSNt7W3nvg+iSVYPFGlTCpMENJtVSs1SBzJeE+gjZfhafDn
+         uO1I/PdXeec8wcb7fZ1Y+ZbrFgNaZTpJACY1aOAm6ewi0Pv+cUqPN9fPJ3hcwcVKyK/7
+         lYVUsyPp31gchFAbmq+VkCif/LgptgF5Yyeym0v5k68n7Pi/lzVkDrnu0p/kG71RJE9I
+         Y7vU6ZpYd9jEEc4rptHoAdZkQ0G6M+wswYZphjHAqKK4eApczFqq11MJ1PXJfK0hQwqX
+         A2MsJAkG8ks4An/iMqekfrN2nw/I3bhGe9ZZ3KOxySidJ5D3GqFlDi31qWIhrfckDWVY
+         z+Hg==
+X-Gm-Message-State: AEkoouty4lujYWwFzt1RYi6MOwD4ZTiy33w5vwi3G5IHjIKfyQkhmxqGnAY7oNEjnmqSBaYmt6J+OG/vmleRow==
+X-Received: by 10.36.233.196 with SMTP id f187mr16700378ith.19.1471802248154;
+ Sun, 21 Aug 2016 10:57:28 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.128.139 with HTTP; Sun, 21 Aug 2016 10:57:27 -0700 (PDT)
+In-Reply-To: <CAAxEZd8zB_6hWS9A15U4kPQGMTbd6gmHcY8G+pjZgY1mNqROdg@mail.gmail.com>
+References: <CAAxEZd8zB_6hWS9A15U4kPQGMTbd6gmHcY8G+pjZgY1mNqROdg@mail.gmail.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 21 Aug 2016 19:57:27 +0200
+Message-ID: <CAAxEZd_A8cOwvRmsE4Xbs3KOY7WRAVNt=6B_opbOYho6xh70KA@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_=C3=96sterr=2E_Bundesliga_2016=2F17_Season_=2D_Public_Doma?=
+	=?UTF-8?Q?in_Open_Datasets_in_Plain_Text_=28n_SQL=2C_JSON=2C_etc=2E=29?=
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   FYI: I've added matchday 5 (Runde 5) for the =C3=96sterr. Bundesliga.
+The dataset [1] reads:
+
+Runde 5
+
+[Sa 20.8.]
+  16.00 SKN St. P=C3=B6lten   1:3 (0:2)  Sturm Graz
+                  [Segovia 56'; Edomwonyi 21' Spendlhofer 44' Matic 84']
+  18.30 RB Salzburg      3:1 (0:0)  SV Mattersburg
+                  [Minamino 49' Lainer 88', 90+1'; R=C3=B6cher 76']
+        FC Admira Wacker 1:0 (0:0)   SV Ried
+                  [Grozurek 90']
+[So 21.8.]
+  16.30   Wolfsberger AC   1:1 (0:1)  Rapid Wien
+                  [Prosenik 82'; Sch=C3=B6=C3=9Fwendter 31']
+  19.00     Austria Wien -:- (1:0)  SCR Altach
+                  [Tajouri 23']
+
+
+  Cheers.
+
+[1] https://github.com/openfootball/at-austria/blob/master/2016-17/1-bundes=
+liga-i.txt
+

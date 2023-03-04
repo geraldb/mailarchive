@@ -1,0 +1,120 @@
+From 6312303029671428096@xxx Thu Jul 28 09:19:37 +0000 2016
+X-GM-THRID: 6312297256737308672
+Date: Thu, 28 Jul 2016 02:19:37 -0700 (PDT)
+From: "Gabriele N." <gabriele.nosatti@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <dd1bf80e-64d9-4071-8319-12dbb93a7628@googlegroups.com>
+In-Reply-To: <082f00f6-6eb4-4169-83ef-3e4fe64c0d72@googlegroups.com>
+References: <083e3356-7574-48fa-ae9f-17d912ce6932@googlegroups.com>
+ <082f00f6-6eb4-4169-83ef-3e4fe64c0d72@googlegroups.com>
+Subject: Re: Errors creating Serie A 2016/17 db from updated dataset
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_112_1678223420.1469697577096"
+X-Google-Token: EKmc57wF20wmaAbTOWU0
+X-Google-IP: 87.4.95.110
+
+------=_Part_112_1678223420.1469697577096
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_113_1469597425.1469697577096"
+
+------=_Part_113_1469597425.1469697577096
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Damned me! Found the error why Pescara matches were excluded: the entry for=
+=20
+Pescara team was duplicated in two team files. Removed the duplicate and=20
+now it works fine.
+
+Still have the question what's the new format for YML file, althought it=20
+doesn't seem a critical error.
+
+Cheers,
+Gabriele
+
+Il giorno gioved=C3=AC 28 luglio 2016 11:01:53 UTC+2, Gabriele N. ha scritt=
+o:
+>
+> Found the error for Inter - Juve=20
+> "Juve" was not an alias for Juventus. I only have "Pescara" matches that=
+=20
+> are excluded. The team is in the list team, and seems ok, comparing to th=
+e=20
+> others.
+> =20
+>
+> Il giorno gioved=C3=AC 28 luglio 2016 10:57:13 UTC+2, Gabriele N. ha scri=
+tto:
+>>
+>> So, I updated the Serie A dataset for season 2016/17. When importing dat=
+a=20
+>> in a DB, I got several errors:
+>>
+>> [info] parsing data (fixture) 'it-italy!/2016-17/seriea'=20
+>> (it-italy/2016-17/seriea.yml)...
+>> *** [DEPRECATED] old event config format w/ yaml, please use new plain=
+=20
+>> text format >it-italy/2016-17/seriea.yml<
+>> [info]   build_title_table_for - deprecated API - use TitleMapper.new=20
+>> instead
+>> [info] skipping line (no match found): >Pescara - Napoli<
+>> [info] skipping line (no match found): >Sassuolo - Pescara<
+>> [info] skipping line (no match found): >Pescara - Inter<
+>> [info] skipping line (no match found): >Inter - Juve<
+>>
+>> I'm pretty sure this depends on the files I created, so I'd need help ho=
+w=20
+>> to fix these.
+>>
+>> My questions:=20
+>> - what's the new format for the YML file? Where can I see an example or=
+=20
+>> documentation?
+>> - any hint why some matches are skipped (there are more; I pasted few, a=
+s=20
+>> example)
+>>
+>> Thanks!
+>> Gabriele
+>>
+>
+------=_Part_113_1469597425.1469697577096
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Damned me! Found the error why Pescara matches were exclud=
+ed: the entry=20
+for Pescara team was duplicated in two team files. Removed the duplicate
+ and now it works fine.<br><br>Still have the question what&#39;s the new f=
+ormat for YML file, althought it doesn&#39;t seem a critical error.<br><br>=
+Cheers,<br>Gabriele<br><br>Il giorno gioved=C3=AC 28 luglio 2016 11:01:53 U=
+TC+2, Gabriele N. ha scritto:<blockquote class=3D"gmail_quote" style=3D"mar=
+gin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><=
+div dir=3D"ltr">Found the error for <span style=3D"font-family:courier new,=
+monospace">Inter - Juve</span> <br>&quot;Juve&quot; was not an alias for Ju=
+ventus. I only have &quot;Pescara&quot; matches that are excluded. The team=
+ is in the list team, and seems ok, comparing to the others.<br>=C2=A0<br><=
+br>Il giorno gioved=C3=AC 28 luglio 2016 10:57:13 UTC+2, Gabriele N. ha scr=
+itto:<blockquote class=3D"gmail_quote" style=3D"margin:0;margin-left:0.8ex;=
+border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr">So, I updated=
+ the Serie A dataset for season 2016/17. When importing data in a DB, I got=
+ several errors:<br><font size=3D"2"><span style=3D"color:rgb(0,0,0)"><br><=
+span style=3D"font-family:courier new,monospace">[info] parsing data (fixtu=
+re) &#39;it-italy!/2016-17/seriea&#39; (it-italy/2016-17/seriea.yml).<wbr>.=
+.<br>*** [DEPRECATED] old event config format w/ yaml, please use new plain=
+ text format &gt;it-italy/2016-17/seriea.yml&lt;<br>[info]=C2=A0=C2=A0 buil=
+d_title_table_for - deprecated API - use TitleMapper.new instead<br>[info] =
+skipping line (no match found): &gt;Pescara - Napoli&lt;<br>[info] skipping=
+ line (no match found): &gt;Sassuolo - Pescara&lt;<br>[info] skipping line =
+(no match found): &gt;Pescara - Inter&lt;<br>[info] skipping line (no match=
+ found): &gt;Inter - Juve&lt;<br></span></span></font><br>I&#39;m pretty su=
+re this depends on the files I created, so I&#39;d need help how to fix the=
+se.<br><br>My questions: <br>- what&#39;s the new format for the YML file? =
+Where can I see an example or documentation?<br>- any hint why some matches=
+ are skipped (there are more; I pasted few, as example)<br><br>Thanks!<br>G=
+abriele<br></div></blockquote></div></blockquote></div>
+------=_Part_113_1469597425.1469697577096--
+
+------=_Part_112_1678223420.1469697577096--
+

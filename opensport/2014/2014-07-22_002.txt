@@ -1,0 +1,176 @@
+From 1695248547840@xxx Tue Jun 16 00:16:51 +0000 2015
+X-GM-THRID: 1591517118464
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,708fbc98a47fa606
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.21.98 with SMTP id u2mr2013486wje.1.1406037290262;
+        Tue, 22 Jul 2014 06:54:50 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.220.137 with SMTP id pw9ls241362lac.56.gmail; Tue, 22 Jul
+ 2014 06:54:49 -0700 (PDT)
+X-Received: by 10.112.126.196 with SMTP id na4mr295422lbb.17.1406037289839;
+        Tue, 22 Jul 2014 06:54:49 -0700 (PDT)
+Return-Path: <csvenss2@gmail.com>
+Received: from mail-la0-x230.google.com (mail-la0-x230.google.com [2a00:1450:4010:c03::230])
+        by gmr-mx.google.com with ESMTPS id y4si66682lbo.1.2014.07.22.06.54.49
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 22 Jul 2014 06:54:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of csvenss2@gmail.com designates 2a00:1450:4010:c03::230 as permitted sender) client-ip=2a00:1450:4010:c03::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of csvenss2@gmail.com designates 2a00:1450:4010:c03::230 as permitted sender) smtp.mail=csvenss2@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-la0-f48.google.com with SMTP id gl10so5956661lab.21
+        for <opensport@googlegroups.com>; Tue, 22 Jul 2014 06:54:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=wMssq88OgKKHSNT40xk0M0LNx1CchFpEqBdcYMjJp3Q=;
+        b=q/zbv47pIX8T7zx2mq0dMiyk8LtCtjFwaFjUS0OormCrU6H96X54R3iifLCMoTuaOX
+         E07oke6qcS+4teFqkYeNye9GAWT6ReXPpqBxDfSWnQgZwx20fHosOC/UFoOomIvv8lFD
+         V/XhMFBETTNLStaEqmkXAD6CuvXINMM+7vhL48R+7v0ux3qQNW9YEAsNYGictyAnv5RV
+         cssPIEQBtTdIjIZFssE2yTZDV2Zmyn4qwXj+wO1xSXwhWy0d4DXFf4V03N2MinYl4reC
+         NsIDZgXbZ4yZ50N/Kh0DQAHR+NXIO6bMpBneJnRpF/LZROepMsBAPbiM+pP27EQLgFPE
+         ncXw==
+MIME-Version: 1.0
+X-Received: by 10.152.115.197 with SMTP id jq5mr18402491lab.24.1406037289707;
+ Tue, 22 Jul 2014 06:54:49 -0700 (PDT)
+Received: by 10.112.204.231 with HTTP; Tue, 22 Jul 2014 06:54:49 -0700 (PDT)
+Received: by 10.112.204.231 with HTTP; Tue, 22 Jul 2014 06:54:49 -0700 (PDT)
+In-Reply-To: <CAAxEZd_EHOT-A-W5nFv8j6ZbvtAp+oKeJ=20XTw=wj625A3T3w@mail.gmail.com>
+References: <5b91b7a7-d6cd-40b8-9b5a-f10124450185@googlegroups.com>
+	<CAAxEZd99sOdma89VJrYP1nbb7RuKQBLUj9yy8X2jtpXCUKKc5A@mail.gmail.com>
+	<3f447736-e948-4f6d-a211-fe97880b5b5a@googlegroups.com>
+	<CAAxEZd9E7zgoReL0RprdZxXKLkBKvC5xVTNYUgFfsm02WZq=aQ@mail.gmail.com>
+	<16257216-0d9c-4d01-9f36-b00d26a612e2@googlegroups.com>
+	<CAAxEZd_oN6Z5nKLG1-znCwf7W_yEhQ-yyns0jxr5KVepFCmKHw@mail.gmail.com>
+	<c3e24314-de47-456d-bfd9-8973c1e1809f@googlegroups.com>
+	<CAAxEZd_EHOT-A-W5nFv8j6ZbvtAp+oKeJ=20XTw=wj625A3T3w@mail.gmail.com>
+Date: Tue, 22 Jul 2014 06:54:49 -0700
+Message-ID: <CANEDzNpAaL-2oWLyQ7HpHhnz1=H8Xx+ajefJq4WOPhBpsygHvg@mail.gmail.com>
+Subject: Re: [opensport] Player Statistics
+From: Carl-Erik Svensson <csvenss2@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: multipart/alternative; boundary=001a11c34ba831ac6d04fec8916c
+
+--001a11c34ba831ac6d04fec8916c
+Content-Type: text/plain; charset=UTF-8
+
+Thanks for the pointers. I'll take a crack at turning it into a plugin
+first, and then probably ask you for help when I get stuck :-)
+
+I originally wanted something generic like sport.db.stats so I could reuse
+some of this for hockey, too. If the player models are going to be specific
+to a sport, do you have any suggestions for how to share the stats and
+squad parsing code? Maybe some of it could be patched into the mainline,
+and the sport specific items can be factored out into different plugins.
+Perhaps the generic stats, squad parsing, and a simple PlayerStat model go
+into the mainline, and the details go into football.sport.db. How does that
+sound?
+
+Thanks for letting me contribute to the project! I really like the tools
+you've built.
+
+-Carl
+On Jul 22, 2014 12:22 AM, "Gerald Bauer" <gerald.bauer@gmail.com> wrote:
+
+> Hello,
+>   Thanks for the update. I'd say / suggest it's best to make it into a
+> plugin/addon and also since we have a different views on the stats I'd
+> suggest keep working in your own repo.
+>
+>   If you're interested I can later this week, for example, turn it
+> into an addon/plugin or, of course, you can on your own.  Do you want
+> to rename to fooball.db.stats or sport.db.stats ?   Do you want me to
+> work on a fork?  Or do you want to keep going with your patches to the
+> main trunk (that is, if you're not interested in a addon/plugin) ?
+>
+>    You can see some "real world" addons/plugins in the sportbook app,
+> that is, sport.db.play [1] and sport.db.market [2].
+>
+>   Cheers.
+>
+> [1] github.com/openbookie/sport.db.play
+> [2] github.com/openbookie/sport.db.market
+>
+> --
+> You received this message because you are subscribed to a topic in the
+> Google Groups "Open Sport(s) Database - football.db, formula1.db, ski.db,
+> and Friends" group.
+> To unsubscribe from this topic, visit
+> https://groups.google.com/d/topic/opensport/cI-8mKR_pgY/unsubscribe.
+> To unsubscribe from this group and all its topics, send an email to
+> opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+>
+
+--001a11c34ba831ac6d04fec8916c
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<p dir=3D"ltr">Thanks for the pointers. I&#39;ll take a crack at turning it=
+ into a plugin first, and then probably ask you for help when I get stuck :=
+-)</p>
+<p dir=3D"ltr">I originally wanted something generic like sport.db.stats so=
+ I could reuse some of this for hockey, too. If the player models are going=
+ to be specific to a sport, do you have any suggestions for how to share th=
+e stats and squad parsing code? Maybe some of it could be patched into the =
+mainline, and the sport specific items can be factored out into different p=
+lugins. Perhaps the generic stats, squad parsing, and a simple PlayerStat m=
+odel go into the mainline, and the details go into football.sport.db. How d=
+oes that sound?</p>
+
+<p dir=3D"ltr">Thanks for letting me contribute to the project! I really li=
+ke the tools you&#39;ve built.</p>
+<p dir=3D"ltr">-Carl</p>
+<div class=3D"gmail_quote">On Jul 22, 2014 12:22 AM, &quot;Gerald Bauer&quo=
+t; &lt;<a href=3D"mailto:gerald.bauer@gmail.com">gerald.bauer@gmail.com</a>=
+&gt; wrote:<br type=3D"attribution"><blockquote class=3D"gmail_quote" style=
+=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+Hello,<br>
+=C2=A0 Thanks for the update. I&#39;d say / suggest it&#39;s best to make i=
+t into a<br>
+plugin/addon and also since we have a different views on the stats I&#39;d<=
+br>
+suggest keep working in your own repo.<br>
+<br>
+=C2=A0 If you&#39;re interested I can later this week, for example, turn it=
+<br>
+into an addon/plugin or, of course, you can on your own. =C2=A0Do you want<=
+br>
+to rename to fooball.db.stats or sport.db.stats ? =C2=A0 Do you want me to<=
+br>
+work on a fork? =C2=A0Or do you want to keep going with your patches to the=
+<br>
+main trunk (that is, if you&#39;re not interested in a addon/plugin) ?<br>
+<br>
+=C2=A0 =C2=A0You can see some &quot;real world&quot; addons/plugins in the =
+sportbook app,<br>
+that is, sport.db.play [1] and sport.db.market [2].<br>
+<br>
+=C2=A0 Cheers.<br>
+<br>
+[1] <a href=3D"http://github.com/openbookie/sport.db.play" target=3D"_blank=
+">github.com/openbookie/sport.db.play</a><br>
+[2] <a href=3D"http://github.com/openbookie/sport.db.market" target=3D"_bla=
+nk">github.com/openbookie/sport.db.market</a><br>
+<br>
+--<br>
+You received this message because you are subscribed to a topic in the Goog=
+le Groups &quot;Open Sport(s) Database - football.db, formula1.db, ski.db, =
+and Friends&quot; group.<br>
+To unsubscribe from this topic, visit <a href=3D"https://groups.google.com/=
+d/topic/opensport/cI-8mKR_pgY/unsubscribe" target=3D"_blank">https://groups=
+.google.com/d/topic/opensport/cI-8mKR_pgY/unsubscribe</a>.<br>
+To unsubscribe from this group and all its topics, send an email to <a href=
+=3D"mailto:opensport%2Bunsubscribe@googlegroups.com">opensport+unsubscribe@=
+googlegroups.com</a>.<br>
+For more options, visit <a href=3D"https://groups.google.com/d/optout" targ=
+et=3D"_blank">https://groups.google.com/d/optout</a>.<br>
+</blockquote></div>
+
+--001a11c34ba831ac6d04fec8916c--
+

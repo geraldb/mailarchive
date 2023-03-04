@@ -1,0 +1,72 @@
+From 804921540608@xxx Sun Jan 11 00:21:36 +0000 2015
+X-GM-THRID: 789508521984
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,df063140bb49779c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+Received: by 10.223.122.131 with SMTP id l3mr1920436far.24.1294515147041;
+        Sat, 08 Jan 2011 11:32:27 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.223.160.8 with SMTP id l8ls5112838fax.2.p; Sat, 08 Jan 2011
+ 11:32:25 -0800 (PST)
+Received: by 10.223.97.8 with SMTP id j8mr2029300fan.5.1294515145796;
+        Sat, 08 Jan 2011 11:32:25 -0800 (PST)
+Received: by 10.223.97.8 with SMTP id j8mr2029299fan.5.1294515145767;
+        Sat, 08 Jan 2011 11:32:25 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-fx0-f46.google.com (mail-fx0-f46.google.com [209.85.161.46])
+        by gmr-mx.google.com with ESMTP id n23si2313920fam.9.2011.01.08.11.32.24;
+        Sat, 08 Jan 2011 11:32:24 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.161.46 as permitted sender) client-ip=209.85.161.46;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of gerald.bauer@gmail.com designates 209.85.161.46 as permitted sender) smtp.mail=gerald.bauer@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by fxm20 with SMTP id 20so17150268fxm.33
+        for <webslideshow@googlegroups.com>; Sat, 08 Jan 2011 11:32:24 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:received:in-reply-to
+         :references:date:message-id:subject:from:to:content-type;
+        bh=yeC/wpsZ1YwOXCBd9UAfse/wYbGMQGOF93SoM2zrWoA=;
+        b=TjWeIriLxV0sMCWYRmQTGem/Ag4vONVBGya3ZrZ3HPFW3AxXnJ09xgF0VtA7Snihhw
+         s2BUtFtoUwpYexYaVfkmolUHCeVvM5DBuIDJf1egPt0AT4aBfijb38oCg8MFCQh3j51u
+         ogiIo+SzCsqBHDLFGgrAs9NFkfwGK4vNb2j5Q=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        b=REK8R2ggltkXPGEGw93UFgvdC0IE/lz17CGhDkkTXDpEV+4jxJ6NmAcesfiQ/pRNUk
+         fXVNu37zGkVNpuzcPSBJW/8Z3QbJiv4KKFWQE0GbZ/SphjXgBoLrgEv2+jKX+/ftXt2x
+         YKLy+sliWu/08fR7ZsUTshT/h4zw381d+NcOM=
+MIME-Version: 1.0
+Received: by 10.223.85.204 with SMTP id p12mr2494101fal.146.1294515143681;
+ Sat, 08 Jan 2011 11:32:23 -0800 (PST)
+Received: by 10.223.98.194 with HTTP; Sat, 8 Jan 2011 11:32:23 -0800 (PST)
+In-Reply-To: <b88dfeb2-e4a0-455c-b547-3a463d554f8e@f8g2000yqd.googlegroups.com>
+References: <4a403744-dfa2-4dcc-909b-361cd3e9c266@a7g2000vbz.googlegroups.com>
+	<86cea953-c4ca-40d6-b186-13b65e57246c@s5g2000yqm.googlegroups.com>
+	<0c85d0aa-c07a-40ea-8cb7-0345e7fdbaf5@j25g2000yqa.googlegroups.com>
+	<b88dfeb2-e4a0-455c-b547-3a463d554f8e@f8g2000yqd.googlegroups.com>
+Date: Sat, 8 Jan 2011 20:32:23 +0100
+Message-ID: <AANLkTin+jLfsbLe_qWNJss+BW2ZAXon0NT-3B8M5iFPg@mail.gmail.com>
+Subject: Re: [slideshow] Re: How to center text
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello Jason,
+
+> I should have been more specific in my question phrasing. Gerald's
+> answer explains how to do this in Textile, but how do I vertically/
+> horizontally center using Markdown? I've searched everywhere but can't
+> seem to find the answer.
+
+   That depends on the Markdown processor/engine. "Plain" Markdown has
+no (standard) syntax adding CSS attributes but some Markdown
+processor/engines offer (non-standard) syntax extension. For example,
+kramdown, lets you use:
+
+  {:.fullscreen}
+
+  See http://kramdown.rubyforge.org/syntax.html#block-ials for syntax details.
+
+  Cheers.
+

@@ -1,0 +1,70 @@
+From 6204331252684685312@xxx Sun Oct 11 10:14:00 +0000 2015
+X-GM-THRID: 6204263178897981440
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 10.13.247.132 with SMTP id h126mr18923863ywf.56.1444558439824;
+        Sun, 11 Oct 2015 03:13:59 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.109.100 with SMTP id k91ls2074993qgf.38.gmail; Sun, 11 Oct
+ 2015 03:13:59 -0700 (PDT)
+X-Received: by 10.13.220.4 with SMTP id f4mr18726876ywe.22.1444558439487;
+        Sun, 11 Oct 2015 03:13:59 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22e.google.com (mail-ig0-x22e.google.com. [2607:f8b0:4001:c05::22e])
+        by gmr-mx.google.com with ESMTPS id z20si228164igu.2.2015.10.11.03.13.59
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 11 Oct 2015 03:13:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22e as permitted sender) client-ip=2607:f8b0:4001:c05::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22e.google.com with SMTP id z10so29659329igk.1
+        for <openmundi@googlegroups.com>; Sun, 11 Oct 2015 03:13:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=cRrPWxLFtc2uluYQkskWnmuzMefV3asp9+2eLIANBKo=;
+        b=sdcW1PFrWmexhwVeTRAbBcksBT3Drj6ocfsuWhWXW3qZv7K7NFwp4kK9EwSWScIeng
+         X8d+kRSGecQL3PH5iPF/tczxM6xoDtSwL6HsWqdZlAv2xx790T84EWjGBwJU678vfb1w
+         xWphfvHTK/STgi62Y6AENjqOS56XYsxA4FmXs6TMZ5DHxK21WzTqrP2auV/bsnGBSV+i
+         ycP2dJ8fjhOT+rVk0aKG8uMxze23lDhIxhxK1tzHgRE3NHwwpW4mOl6TE+V8MCQg3HtA
+         KWhqmm7uVGQjX3syoHjS8j5Uri+nY8wVaqwci5f9H5turB4fvnUA3kMV5+qx5TBwzqcz
+         R56A==
+MIME-Version: 1.0
+X-Received: by 10.50.41.104 with SMTP id e8mr6597165igl.64.1444558439356; Sun,
+ 11 Oct 2015 03:13:59 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Sun, 11 Oct 2015 03:13:59 -0700 (PDT)
+In-Reply-To: <bfb14e32-9b5d-4396-99f3-f7a32d9d628d@googlegroups.com>
+References: <bfb14e32-9b5d-4396-99f3-f7a32d9d628d@googlegroups.com>
+Date: Sun, 11 Oct 2015 12:13:59 +0200
+Message-ID: <CAAxEZd90gTz2Md2oigHqR9rK97LChA+y-CyKtJu6Ew0w8AxOvQ@mail.gmail.com>
+Subject: Re: [openmundi] Thanks
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Eckhard Licher <eckhard.licher@googlemail.com>
+Cc: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   As always thanks for your comments and trying out the new
+machinery. Welcome back.
+
+   I'm about half done with the new update / machinery - the plan is
+to also update the factbook gem / library plus adding a new build
+script that (auto)-runs using the skriptbot once a month or once a
+week or even once a day.
+
+   The idea is to update the "chrome-less" html pages plus also update
+the factbook.json files. This time following your model, that is,
+using all factbook entities and codes (instead of "just" a selection
+of countries and using internet domain top level country codes).
+
+   Keep up your great work on openfactbook - great to see it updated,
+it's a great resource.
+
+  Cheers.
+
+[1] github.com/skriptbot/factbook.json
+

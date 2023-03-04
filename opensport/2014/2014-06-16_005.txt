@@ -1,0 +1,58 @@
+From 1249834434560@xxx Tue Jun 16 00:17:02 +0000 2015
+X-GM-THRID: 1243889008640
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fad29618c7bcba3
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.123.148 with SMTP id s20mr3462919icr.8.1402916937262;
+        Mon, 16 Jun 2014 04:08:57 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.88.80 with SMTP id s74ls62994qgd.50.gmail; Mon, 16 Jun
+ 2014 04:08:57 -0700 (PDT)
+X-Received: by 10.140.107.35 with SMTP id g32mr341840qgf.2.1402916937018;
+        Mon, 16 Jun 2014 04:08:57 -0700 (PDT)
+X-Google-Doc-Id: f2cadfba617337c5
+X-Google-Web-Client: true
+Date: Mon, 16 Jun 2014 04:08:56 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <4429ed03-e8e0-455a-97a7-6b4045d00d67@googlegroups.com>
+In-Reply-To: <d03cd443-cfe5-4640-9c7d-0e51eb7cd99c@googlegroups.com>
+References: <d03cd443-cfe5-4640-9c7d-0e51eb7cd99c@googlegroups.com>
+Subject: Re: Wrong Order/ No Time
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_146_8973645.1402916936327"
+X-Google-Token: EMig-5wFMuuU-tfYjq40
+X-Google-IP: 193.110.28.9
+
+------=_Part_146_8973645.1402916936327
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_147_26447307.1402916936328"
+
+------=_Part_147_26447307.1402916936328
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  The World Cup in Brazil [1] includes time for matches e.g.
+
+  (1) Thu Jun/12 17:00 Brazil 3-1 (1-1) Croatia 
+
+   If you want to order matches/games by date time use the order by clause 
+in SQL and the play_at field (if you use Ruby models use 
+reorder('play_at'), for example. Cheers.
+
+[1] github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt
+
+
+------=_Part_147_26447307.1402916936328
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<br><br>&nbsp; The World Cup in Brazil [1] includes time for matches e.g.<br><br>&nbsp; (1) Thu Jun/12 17:00 Brazil 3-1 (1-1) Croatia <br><br>&nbsp; &nbsp;If you want to order matches/games by date time use the order by clause in SQL and the play_at field (if you use Ruby models use reorder('play_at'), for example. Cheers.<br><br>[1] github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt<br><div><br></div></div>
+------=_Part_147_26447307.1402916936328--
+
+------=_Part_146_8973645.1402916936327--
+

@@ -1,0 +1,104 @@
+From 2409565782016@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 2377276981248
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cd242d30f1f3615d
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.224.26.139 with SMTP id e11mr4046317qac.6.1423245111756;
+        Fri, 06 Feb 2015 09:51:51 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.33.115 with SMTP id q19ls292657igi.25.gmail; Fri, 06 Feb
+ 2015 09:51:51 -0800 (PST)
+X-Received: by 10.50.25.194 with SMTP id e2mr52829igg.16.1423245111474;
+        Fri, 06 Feb 2015 09:51:51 -0800 (PST)
+X-Google-Doc-Id: fefaa947a96da261
+X-Google-Web-Client: true
+Date: Fri, 6 Feb 2015 09:51:50 -0800 (PST)
+From: maizarw@gmail.com
+To: opensport@googlegroups.com
+Message-Id: <f16d3951-a274-4b95-ac77-29a20298000e@googlegroups.com>
+In-Reply-To: <CAAxEZd8aqWBcP7-Ek=rmjnXNR-av36Nkd4jqCOQBhG++22=YxQ@mail.gmail.com>
+References: <ec906df1-8c4e-4e7f-818f-4a7804b24d82@googlegroups.com>
+ <CAAxEZd-YTsKsA3kjKPv=rW97xza38tv2jTS6RycyDU5Q3Rh1Xw@mail.gmail.com>
+ <050ea85e-361e-4129-aa03-4072002f20a3@googlegroups.com>
+ <CAAxEZd80+_DS9oT5DaibtdPDQiHBSRHMyjR2-yvSzaOnozZuhA@mail.gmail.com>
+ <016077bc-2d07-450a-a9a0-c0bf31feed15@googlegroups.com>
+ <CAAxEZd8aqWBcP7-Ek=rmjnXNR-av36Nkd4jqCOQBhG++22=YxQ@mail.gmail.com>
+Subject: Re: [opensport] Unable to build en-england repo
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_646_1583904267.1423245110139"
+X-Google-Token: ELb-06YFlmm92TnDVMU0
+X-Google-IP: 122.172.224.42
+
+------=_Part_646_1583904267.1423245110139
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_647_471727257.1423245110139"
+
+------=_Part_647_471727257.1423245110139
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald,
+
+Thank you so much for fixing the issue. I was able to download the latest 
+repo and build it successfully. There is a quick setting change needed in 
+the settings.rb file.
+EN_INCLUDE_PATH          = "#{OPENFOOTBALL_ROOT}/eng-england"
+
+Appreciate your help.
+
+Regards,
+
+- Maizar
+
+On Friday, February 6, 2015 at 2:53:42 PM UTC+5:30, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    I've updated the country codes to eng. Please, note now the repo 
+> changed to /eng-england (was /en-england). 
+>
+>    If you retry: 
+>
+>    $ sportdb new en2014-15 
+>
+>     in a new (empty) folder it should works. Thanks for your patience 
+> and welcome to the wonders of Ruby. 
+>
+>    Cheers. 
+>
+> PS: The build with Datefiles is still kind of new. Before making it 
+> "official" the idea is to test it out in the real world.  To keep 
+> up-to-date the "best" way is to follow the mailing list (that what 
+> it's here for) and post any open question, comments, criticism, rants, 
+> etc. 
+>
+
+------=_Part_647_471727257.1423245110139
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi Gerald,<div><br></div><div>Thank you so much for fixing the issue. I was able to download the latest repo and build it successfully. There is a quick setting change needed in the settings.rb file.</div><div>EN_INCLUDE_PATH &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= "#{OPENFOOTBALL_ROOT}/eng-england"<br><br>Appreciate your help.</div><div><br></div><div>Regards,</div><div><br></div><div>- Maizar<br><br>On Friday, February 6, 2015 at 2:53:42 PM UTC+5:30, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;I've updated the country codes to eng. Please, note now the repo
+<br>changed to /eng-england (was /en-england).
+<br>
+<br>&nbsp; &nbsp;If you retry:
+<br>
+<br>&nbsp; &nbsp;$ sportdb new en2014-15
+<br>
+<br>&nbsp; &nbsp; in a new (empty) folder it should works. Thanks for your patience
+<br>and welcome to the wonders of Ruby.
+<br>
+<br>&nbsp; &nbsp;Cheers.
+<br>
+<br>PS: The build with Datefiles is still kind of new. Before making it
+<br>"official" the idea is to test it out in the real world. &nbsp;To keep
+<br>up-to-date the "best" way is to follow the mailing list (that what
+<br>it's here for) and post any open question, comments, criticism, rants,
+<br>etc.
+<br></blockquote></div></div>
+------=_Part_647_471727257.1423245110139--
+------=_Part_646_1583904267.1423245110139--
+

@@ -1,0 +1,69 @@
+From 6197747508431552512@xxx Wed Sep 23 16:25:42 +0000 2015
+X-GM-THRID: 6197747507220447232
+X-Received: by 10.129.106.215 with SMTP id f206mr26329680ywc.28.1443025541631;
+        Wed, 23 Sep 2015 09:25:41 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.31.54 with SMTP id e51ls535589qge.6.gmail; Wed, 23 Sep
+ 2015 09:25:41 -0700 (PDT)
+X-Received: by 10.13.225.22 with SMTP id k22mr26549419ywe.16.1443025541096;
+        Wed, 23 Sep 2015 09:25:41 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ig0-x22c.google.com (mail-ig0-x22c.google.com. [2607:f8b0:4001:c05::22c])
+        by gmr-mx.google.com with ESMTPS id a11si91611igv.3.2015.09.23.09.25.41
+        for <openmundi@googlegroups.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 23 Sep 2015 09:25:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22c as permitted sender) client-ip=2607:f8b0:4001:c05::22c;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c05::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com
+Received: by mail-ig0-x22c.google.com with SMTP id x6so31188548igx.1
+        for <openmundi@googlegroups.com>; Wed, 23 Sep 2015 09:25:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=T7UXcLuIVsPLvH5A8Q18iro81yNIdrtJF0usVrCPjeQ=;
+        b=tLvCeZ6ByGcoOBafPRi7RF7qP0ULPuATE0bRNVVkfYHfHNr8DfLF5BlO1CO9HJAWNM
+         lqEFL6e/r7w9qimKVGe149L/CT0nXfy1uX2Wxj4K3z74NpSEip6eyuqrwj+mFnan2b4x
+         JkmrrZsAGfHFkkxfyI74RoUs/LV5ViT53OLnc3vAio3IJrO63/oa+p/PocteuQK9TzQi
+         G8zh9CaI+CuBxFiYxxGXT1Q7ZHXoDI7uzylHc+yVwLkvfnhpSzEFrRsLqe366uAHtNdM
+         sawtH+3VCmvmkCeXdUp+Zi/tCqNMWOpo/REqLDGUpbZEacmijQZK4C+OdN2G+MYClNiq
+         nbBQ==
+MIME-Version: 1.0
+X-Received: by 10.50.2.68 with SMTP id 4mr23193652igs.7.1443025540894; Wed, 23
+ Sep 2015 09:25:40 -0700 (PDT)
+Received: by 10.107.16.9 with HTTP; Wed, 23 Sep 2015 09:25:40 -0700 (PDT)
+Date: Wed, 23 Sep 2015 18:25:40 +0200
+Message-ID: <CAAxEZd83kRPwywx-H_1VDDANsT4zp9Kjm=_XG1n44gnpyKFpMA@mail.gmail.com>
+Subject: World Factbook Country Profiles (Pages) without Chrome (Just "Core"
+ Data in HTML) - New Repo /factbook
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi <openmundi@googlegroups.com>
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   In case anyone follows along I'm trying to update the world
+factbook country profiles.
+
+  As of today (Sep/23) there's no new download package on the official
+CIA World Factbook site. The last package for download is from 2014.
+
+   Thus, the new idea is to use the online "live" pages. Since these
+pages have a lot of chrome e.g. page decoration such as site
+navigation headers, footers, etc. around the "core" country profile
+data I've started with a script that cleans up the profile page and
+strips it down to the basics.
+
+  See the page for Austria (au) or Brazil (br) as first examples in
+the new /factbook repo [1]. Using these "core" pages without any
+extras should make it easier to keep track of changes and turn it into
+structured data (e.g. factbook.json) even as some formatting and
+styles get rearranged (as happend sometime back in April).
+
+   Questions? Comments? As always welcome. Cheers.
+
+[1] github.com/openmundi/factbook
+

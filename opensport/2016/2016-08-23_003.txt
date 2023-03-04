@@ -1,0 +1,384 @@
+From 6321971840718733312@xxx Tue Aug 23 10:39:33 +0000 2016
+X-GM-THRID: 6319151478389866496
+X-Received: by 10.176.1.225 with SMTP id 88mr19875591ual.12.1471948772806;
+        Tue, 23 Aug 2016 03:39:32 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.27.171 with SMTP id z40ls2243441otd.46.gmail; Tue, 23 Aug
+ 2016 03:39:32 -0700 (PDT)
+X-Received: by 10.237.53.206 with SMTP id d14mr20203871qte.9.1471948772380;
+        Tue, 23 Aug 2016 03:39:32 -0700 (PDT)
+Received: by 10.202.253.83 with SMTP id b80msoii;
+        Tue, 23 Aug 2016 03:22:20 -0700 (PDT)
+X-Received: by 10.36.238.143 with SMTP id b137mr795306iti.7.1471947740694;
+        Tue, 23 Aug 2016 03:22:20 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Tue, 23 Aug 2016 03:22:20 -0700 (PDT)
+From: Hilda Merom <hildamerom@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <0e869f0b-e0d6-497d-ba60-0062eb11350e@googlegroups.com>
+In-Reply-To: <CAAxEZd_SNQWwDgDEqOm7_=C6=1RwxVjGpGnweHsGVwTK0gZ36g@mail.gmail.com>
+References: <3bc1224e-e12b-47d9-8f35-b635651acc5f@googlegroups.com>
+ <CAAxEZd_SNQWwDgDEqOm7_=C6=1RwxVjGpGnweHsGVwTK0gZ36g@mail.gmail.com>
+Subject: Re: [opensport] error when installing
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_8363_2137483398.1471947740301"
+X-Google-Token: ENzH8L0Fnfdfyu9zJb40
+X-Google-IP: 180.183.94.186
+
+------=_Part_8363_2137483398.1471947740301
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_8364_1787734454.1471947740310"
+
+------=_Part_8364_1787734454.1471947740310
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Facing the same problem
+My environment
+
+ruby 2.2.4p230
+
+sportdb 1.11.0
+
+
+activerecord-utils/0.4.0 (activerecord/5.0.0) on Ruby 2.2.4 (2015-12-16) [
+x86_64-darwin15]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model >
+WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model >
+WorldDb::Model::StateBase<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model >
+WorldDb::Model::CityBase<
+sportdb-update/0.1.1 on Ruby 2.2.4 (2015-12-16) [x86_64-darwin15]
+sportdb-service/0.4.0 on Ruby 2.2.4 (2015-12-16) [x86_64-darwin15]
+sportdb/1.11.0 on Ruby 2.2.4 (2015-12-16) [x86_64-darwin15]
+sportdb/1.11.0 on Ruby 2.2.4 (2015-12-16) [x86_64-darwin15]
+working directory: /Documents/Football
+Connecting to db using settings: 
+{:adapter=>"sqlite3", :database=>"./sport.db"}
+-- create_table(:logs)
+   -> 0.0083s
+-- create_table(:props, {})
+   -> 0.0006s
+-- create_table(:tags)
+   -> 0.0010s
+-- add_index(:tags, :key, {:unique=>true})
+   -> 0.0007s
+-- create_table(:taggings)
+   -> 0.0013s
+-- add_index(:taggings, :tag_id)
+
+*** error: Index name 'index_taggings_on_tag_id' on table 'taggings' 
+already exists
+
+
+
+------=_Part_8364_1787734454.1471947740310
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Facing the same problem<div>My environment</div><blockquot=
+e style=3D"margin: 0 0 0 40px; border: none; padding: 0px;"><div><p class=
+=3D"p1"><span class=3D"s1">ruby 2.2.4p230</span></p></div></blockquote><blo=
+ckquote style=3D"margin: 0 0 0 40px; border: none; padding: 0px;"><div><p c=
+lass=3D"p1"><span class=3D"s1">sportdb=C2=A0</span>1.11.0</p></div></blockq=
+uote><div>
+
+
+
+
+
+
+
+<p class=3D"p1"><span class=3D"s1">
+
+
+
+
+
+
+
+</span></p><p class=3D"p1"><br></p><div class=3D"prettyprint" style=3D"bord=
+er: 1px solid rgb(187, 187, 187); word-wrap: break-word; background-color: =
+rgb(250, 250, 250);"><code class=3D"prettyprint"><div class=3D"subprettypri=
+nt"><span style=3D"color: #000;" class=3D"styled-by-prettify">activerecord<=
+/span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><sp=
+an style=3D"color: #000;" class=3D"styled-by-prettify">utils</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">/</span><span style=3D"co=
+lor: #066;" class=3D"styled-by-prettify">0.4</span><span style=3D"color: #6=
+60;" class=3D"styled-by-prettify">.</span><span style=3D"color: #066;" clas=
+s=3D"styled-by-prettify">0</span><span style=3D"color: #000;" class=3D"styl=
+ed-by-prettify"> </span><span style=3D"color: #660;" class=3D"styled-by-pre=
+ttify">(</span><span style=3D"color: #000;" class=3D"styled-by-prettify">ac=
+tiverecord</span><span style=3D"color: #660;" class=3D"styled-by-prettify">=
+/</span><span style=3D"color: #066;" class=3D"styled-by-prettify">5.0</span=
+><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span st=
+yle=3D"color: #066;" class=3D"styled-by-prettify">0</span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">)</span><span style=3D"color: #000=
+;" class=3D"styled-by-prettify"> on </span><span style=3D"color: #606;" cla=
+ss=3D"styled-by-prettify">Ruby</span><span style=3D"color: #000;" class=3D"=
+styled-by-prettify"> </span><span style=3D"color: #066;" class=3D"styled-by=
+-prettify">2.2</span><span style=3D"color: #660;" class=3D"styled-by-pretti=
+fy">.</span><span style=3D"color: #066;" class=3D"styled-by-prettify">4</sp=
+an><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">(</span><span style=3D"=
+color: #066;" class=3D"styled-by-prettify">2015</span><span style=3D"color:=
+ #660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066;" c=
+lass=3D"styled-by-prettify">12</span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">-</span><span style=3D"color: #066;" class=3D"styled-by=
+-prettify">16</span><span style=3D"color: #660;" class=3D"styled-by-prettif=
+y">)</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </spa=
+n><span style=3D"color: #660;" class=3D"styled-by-prettify">[</span><span s=
+tyle=3D"color: #000;" class=3D"styled-by-prettify">x86_64</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">-</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify">darwin15</span><span style=3D"color: =
+#660;" class=3D"styled-by-prettify">]</span><span style=3D"color: #000;" cl=
+ass=3D"styled-by-prettify"><br>=C2=A0 </span><span style=3D"color: #660;" c=
+lass=3D"styled-by-prettify">[</span><span style=3D"color: #606;" class=3D"s=
+tyled-by-prettify">TagDb</span><span style=3D"color: #660;" class=3D"styled=
+-by-prettify">.</span><span style=3D"color: #000;" class=3D"styled-by-prett=
+ify">has_many_tags</span><span style=3D"color: #660;" class=3D"styled-by-pr=
+ettify">]</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> =
+adding taggings n tags has_many assocs to model </span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">&gt;</span><span style=3D"color: #606=
+;" class=3D"styled-by-prettify">WorldDb</span><span style=3D"color: #660;" =
+class=3D"styled-by-prettify">::</span><span style=3D"color: #606;" class=3D=
+"styled-by-prettify">Model</span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">::</span><span style=3D"color: #606;" class=3D"styled-by-pr=
+ettify">Country</span><span style=3D"color: #660;" class=3D"styled-by-prett=
+ify">&lt;</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><=
+br>=C2=A0 </span><span style=3D"color: #660;" class=3D"styled-by-prettify">=
+[</span><span style=3D"color: #606;" class=3D"styled-by-prettify">TagDb</sp=
+an><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span =
+style=3D"color: #000;" class=3D"styled-by-prettify">has_many_tags</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">]</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify"> adding taggings n tags has_=
+many assocs to model </span><span style=3D"color: #660;" class=3D"styled-by=
+-prettify">&gt;</span><span style=3D"color: #606;" class=3D"styled-by-prett=
+ify">WorldDb</span><span style=3D"color: #660;" class=3D"styled-by-prettify=
+">::</span><span style=3D"color: #606;" class=3D"styled-by-prettify">Model<=
+/span><span style=3D"color: #660;" class=3D"styled-by-prettify">::</span><s=
+pan style=3D"color: #606;" class=3D"styled-by-prettify">StateBase</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">&lt;</span><span sty=
+le=3D"color: #000;" class=3D"styled-by-prettify"><br>=C2=A0 </span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">[</span><span style=3D"co=
+lor: #606;" class=3D"styled-by-prettify">TagDb</span><span style=3D"color: =
+#660;" class=3D"styled-by-prettify">.</span><span style=3D"color: #000;" cl=
+ass=3D"styled-by-prettify">has_many_tags</span><span style=3D"color: #660;"=
+ class=3D"styled-by-prettify">]</span><span style=3D"color: #000;" class=3D=
+"styled-by-prettify"> adding taggings n tags has_many assocs to model </spa=
+n><span style=3D"color: #660;" class=3D"styled-by-prettify">&gt;</span><spa=
+n style=3D"color: #606;" class=3D"styled-by-prettify">WorldDb</span><span s=
+tyle=3D"color: #660;" class=3D"styled-by-prettify">::</span><span style=3D"=
+color: #606;" class=3D"styled-by-prettify">Model</span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">::</span><span style=3D"color: #606;"=
+ class=3D"styled-by-prettify">CityBase</span><span style=3D"color: #660;" c=
+lass=3D"styled-by-prettify">&lt;</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify"><br>sportdb</span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">-</span><span style=3D"color: #000;" class=3D"styl=
+ed-by-prettify">update</span><span style=3D"color: #660;" class=3D"styled-b=
+y-prettify">/</span><span style=3D"color: #066;" class=3D"styled-by-prettif=
+y">0.1</span><span style=3D"color: #660;" class=3D"styled-by-prettify">.</s=
+pan><span style=3D"color: #066;" class=3D"styled-by-prettify">1</span><span=
+ style=3D"color: #000;" class=3D"styled-by-prettify"> on </span><span style=
+=3D"color: #606;" class=3D"styled-by-prettify">Ruby</span><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #066=
+;" class=3D"styled-by-prettify">2.2</span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"styl=
+ed-by-prettify">4</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify"> </span><span style=3D"color: #660;" class=3D"styled-by-prettify">(<=
+/span><span style=3D"color: #066;" class=3D"styled-by-prettify">2015</span>=
+<span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span sty=
+le=3D"color: #066;" class=3D"styled-by-prettify">12</span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066=
+;" class=3D"styled-by-prettify">16</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">)</span><span style=3D"color: #000;" class=3D"style=
+d-by-prettify"> </span><span style=3D"color: #660;" class=3D"styled-by-pret=
+tify">[</span><span style=3D"color: #000;" class=3D"styled-by-prettify">x86=
+_64</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span=
+><span style=3D"color: #000;" class=3D"styled-by-prettify">darwin15</span><=
+span style=3D"color: #660;" class=3D"styled-by-prettify">]</span><span styl=
+e=3D"color: #000;" class=3D"styled-by-prettify"><br>sportdb</span><span sty=
+le=3D"color: #660;" class=3D"styled-by-prettify">-</span><span style=3D"col=
+or: #000;" class=3D"styled-by-prettify">service</span><span style=3D"color:=
+ #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #066;" c=
+lass=3D"styled-by-prettify">0.4</span><span style=3D"color: #660;" class=3D=
+"styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"styled-b=
+y-prettify">0</span><span style=3D"color: #000;" class=3D"styled-by-prettif=
+y"> on </span><span style=3D"color: #606;" class=3D"styled-by-prettify">Rub=
+y</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><=
+span style=3D"color: #066;" class=3D"styled-by-prettify">2.2</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=3D"co=
+lor: #066;" class=3D"styled-by-prettify">4</span><span style=3D"color: #000=
+;" class=3D"styled-by-prettify"> </span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">(</span><span style=3D"color: #066;" class=3D"style=
+d-by-prettify">2015</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">-</span><span style=3D"color: #066;" class=3D"styled-by-prettify">=
+12</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span>=
+<span style=3D"color: #066;" class=3D"styled-by-prettify">16</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">)</span><span style=3D"co=
+lor: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #660=
+;" class=3D"styled-by-prettify">[</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify">x86_64</span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">-</span><span style=3D"color: #000;" class=3D"styled-by=
+-prettify">darwin15</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">]</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+<br>sportdb</span><span style=3D"color: #660;" class=3D"styled-by-prettify"=
+>/</span><span style=3D"color: #066;" class=3D"styled-by-prettify">1.11</sp=
+an><span style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span =
+style=3D"color: #066;" class=3D"styled-by-prettify">0</span><span style=3D"=
+color: #000;" class=3D"styled-by-prettify"> on </span><span style=3D"color:=
+ #606;" class=3D"styled-by-prettify">Ruby</span><span style=3D"color: #000;=
+" class=3D"styled-by-prettify"> </span><span style=3D"color: #066;" class=
+=3D"styled-by-prettify">2.2</span><span style=3D"color: #660;" class=3D"sty=
+led-by-prettify">.</span><span style=3D"color: #066;" class=3D"styled-by-pr=
+ettify">4</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> =
+</span><span style=3D"color: #660;" class=3D"styled-by-prettify">(</span><s=
+pan style=3D"color: #066;" class=3D"styled-by-prettify">2015</span><span st=
+yle=3D"color: #660;" class=3D"styled-by-prettify">-</span><span style=3D"co=
+lor: #066;" class=3D"styled-by-prettify">12</span><span style=3D"color: #66=
+0;" class=3D"styled-by-prettify">-</span><span style=3D"color: #066;" class=
+=3D"styled-by-prettify">16</span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">)</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify"> </span><span style=3D"color: #660;" class=3D"styled-by-prettify">[<=
+/span><span style=3D"color: #000;" class=3D"styled-by-prettify">x86_64</spa=
+n><span style=3D"color: #660;" class=3D"styled-by-prettify">-</span><span s=
+tyle=3D"color: #000;" class=3D"styled-by-prettify">darwin15</span><span sty=
+le=3D"color: #660;" class=3D"styled-by-prettify">]</span><span style=3D"col=
+or: #000;" class=3D"styled-by-prettify"><br>sportdb</span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">/</span><span style=3D"color: #066=
+;" class=3D"styled-by-prettify">1.11</span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">.</span><span style=3D"color: #066;" class=3D"sty=
+led-by-prettify">0</span><span style=3D"color: #000;" class=3D"styled-by-pr=
+ettify"> on </span><span style=3D"color: #606;" class=3D"styled-by-prettify=
+">Ruby</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </s=
+pan><span style=3D"color: #066;" class=3D"styled-by-prettify">2.2</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">.</span><span style=
+=3D"color: #066;" class=3D"styled-by-prettify">4</span><span style=3D"color=
+: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color: #660;" =
+class=3D"styled-by-prettify">(</span><span style=3D"color: #066;" class=3D"=
+styled-by-prettify">2015</span><span style=3D"color: #660;" class=3D"styled=
+-by-prettify">-</span><span style=3D"color: #066;" class=3D"styled-by-prett=
+ify">12</span><span style=3D"color: #660;" class=3D"styled-by-prettify">-</=
+span><span style=3D"color: #066;" class=3D"styled-by-prettify">16</span><sp=
+an style=3D"color: #660;" class=3D"styled-by-prettify">)</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">[</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify">x86_64</span><span style=3D"color: #660;" clas=
+s=3D"styled-by-prettify">-</span><span style=3D"color: #000;" class=3D"styl=
+ed-by-prettify">darwin15</span><span style=3D"color: #660;" class=3D"styled=
+-by-prettify">]</span><span style=3D"color: #000;" class=3D"styled-by-prett=
+ify"><br>working directory</span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">:</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify"> </span><span style=3D"color: #080;" class=3D"styled-by-prettify">/D=
+ocuments/</span><span style=3D"color: #606;" class=3D"styled-by-prettify">F=
+ootball</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br=
+></span><span style=3D"color: #606;" class=3D"styled-by-prettify">Connectin=
+g</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> to db </=
+span><span style=3D"color: #008;" class=3D"styled-by-prettify">using</span>=
+<span style=3D"color: #000;" class=3D"styled-by-prettify"> settings</span><=
+span style=3D"color: #660;" class=3D"styled-by-prettify">:</span><span styl=
+e=3D"color: #000;" class=3D"styled-by-prettify"> <br></span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">{:</span><span style=3D"color: #=
+000;" class=3D"styled-by-prettify">adapter</span><span style=3D"color: #660=
+;" class=3D"styled-by-prettify">=3D&gt;</span><span style=3D"color: #080;" =
+class=3D"styled-by-prettify">&quot;sqlite3&quot;</span><span style=3D"color=
+: #660;" class=3D"styled-by-prettify">,</span><span style=3D"color: #000;" =
+class=3D"styled-by-prettify"> </span><span style=3D"color: #660;" class=3D"=
+styled-by-prettify">:</span><span style=3D"color: #000;" class=3D"styled-by=
+-prettify">database</span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">=3D&gt;</span><span style=3D"color: #080;" class=3D"styled-by-pret=
+tify">&quot;./sport.db&quot;</span><span style=3D"color: #660;" class=3D"st=
+yled-by-prettify">}</span><span style=3D"color: #000;" class=3D"styled-by-p=
+rettify"><br></span><span style=3D"color: #660;" class=3D"styled-by-prettif=
+y">--</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> crea=
+te_table</span><span style=3D"color: #660;" class=3D"styled-by-prettify">(:=
+</span><span style=3D"color: #000;" class=3D"styled-by-prettify">logs</span=
+><span style=3D"color: #660;" class=3D"styled-by-prettify">)</span><span st=
+yle=3D"color: #000;" class=3D"styled-by-prettify"><br>=C2=A0 =C2=A0</span><=
+span style=3D"color: #660;" class=3D"styled-by-prettify">-&gt;</span><span =
+style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"=
+color: #066;" class=3D"styled-by-prettify">0.0083s</span><span style=3D"col=
+or: #000;" class=3D"styled-by-prettify"><br></span><span style=3D"color: #6=
+60;" class=3D"styled-by-prettify">--</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify"> create_table</span><span style=3D"color: #660;" =
+class=3D"styled-by-prettify">(:</span><span style=3D"color: #000;" class=3D=
+"styled-by-prettify">props</span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">,</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify"> </span><span style=3D"color: #660;" class=3D"styled-by-prettify">{}=
+)</span><span style=3D"color: #000;" class=3D"styled-by-prettify"><br>=C2=
+=A0 =C2=A0</span><span style=3D"color: #660;" class=3D"styled-by-prettify">=
+-&gt;</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </sp=
+an><span style=3D"color: #066;" class=3D"styled-by-prettify">0.0006s</span>=
+<span style=3D"color: #000;" class=3D"styled-by-prettify"><br></span><span =
+style=3D"color: #660;" class=3D"styled-by-prettify">--</span><span style=3D=
+"color: #000;" class=3D"styled-by-prettify"> create_table</span><span style=
+=3D"color: #660;" class=3D"styled-by-prettify">(:</span><span style=3D"colo=
+r: #000;" class=3D"styled-by-prettify">tags</span><span style=3D"color: #66=
+0;" class=3D"styled-by-prettify">)</span><span style=3D"color: #000;" class=
+=3D"styled-by-prettify"><br>=C2=A0 =C2=A0</span><span style=3D"color: #660;=
+" class=3D"styled-by-prettify">-&gt;</span><span style=3D"color: #000;" cla=
+ss=3D"styled-by-prettify"> </span><span style=3D"color: #066;" class=3D"sty=
+led-by-prettify">0.0010s</span><span style=3D"color: #000;" class=3D"styled=
+-by-prettify"><br></span><span style=3D"color: #660;" class=3D"styled-by-pr=
+ettify">--</span><span style=3D"color: #000;" class=3D"styled-by-prettify">=
+ add_index</span><span style=3D"color: #660;" class=3D"styled-by-prettify">=
+(:</span><span style=3D"color: #000;" class=3D"styled-by-prettify">tags</sp=
+an><span style=3D"color: #660;" class=3D"styled-by-prettify">,</span><span =
+style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"=
+color: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #0=
+00;" class=3D"styled-by-prettify">key</span><span style=3D"color: #660;" cl=
+ass=3D"styled-by-prettify">,</span><span style=3D"color: #000;" class=3D"st=
+yled-by-prettify"> </span><span style=3D"color: #660;" class=3D"styled-by-p=
+rettify">{:</span><span style=3D"color: #000;" class=3D"styled-by-prettify"=
+>unique</span><span style=3D"color: #660;" class=3D"styled-by-prettify">=3D=
+&gt;</span><span style=3D"color: #008;" class=3D"styled-by-prettify">true</=
+span><span style=3D"color: #660;" class=3D"styled-by-prettify">})</span><sp=
+an style=3D"color: #000;" class=3D"styled-by-prettify"><br>=C2=A0 =C2=A0</s=
+pan><span style=3D"color: #660;" class=3D"styled-by-prettify">-&gt;</span><=
+span style=3D"color: #000;" class=3D"styled-by-prettify"> </span><span styl=
+e=3D"color: #066;" class=3D"styled-by-prettify">0.0007s</span><span style=
+=3D"color: #000;" class=3D"styled-by-prettify"><br></span><span style=3D"co=
+lor: #660;" class=3D"styled-by-prettify">--</span><span style=3D"color: #00=
+0;" class=3D"styled-by-prettify"> create_table</span><span style=3D"color: =
+#660;" class=3D"styled-by-prettify">(:</span><span style=3D"color: #000;" c=
+lass=3D"styled-by-prettify">taggings</span><span style=3D"color: #660;" cla=
+ss=3D"styled-by-prettify">)</span><span style=3D"color: #000;" class=3D"sty=
+led-by-prettify"><br>=C2=A0 =C2=A0</span><span style=3D"color: #660;" class=
+=3D"styled-by-prettify">-&gt;</span><span style=3D"color: #000;" class=3D"s=
+tyled-by-prettify"> </span><span style=3D"color: #066;" class=3D"styled-by-=
+prettify">0.0013s</span><span style=3D"color: #000;" class=3D"styled-by-pre=
+ttify"><br></span><span style=3D"color: #660;" class=3D"styled-by-prettify"=
+>--</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> add_in=
+dex</span><span style=3D"color: #660;" class=3D"styled-by-prettify">(:</spa=
+n><span style=3D"color: #000;" class=3D"styled-by-prettify">taggings</span>=
+<span style=3D"color: #660;" class=3D"styled-by-prettify">,</span><span sty=
+le=3D"color: #000;" class=3D"styled-by-prettify"> </span><span style=3D"col=
+or: #660;" class=3D"styled-by-prettify">:</span><span style=3D"color: #000;=
+" class=3D"styled-by-prettify">tag_id</span><span style=3D"color: #660;" cl=
+ass=3D"styled-by-prettify">)</span><span style=3D"color: #000;" class=3D"st=
+yled-by-prettify"><br><br></span><span style=3D"color: #660;" class=3D"styl=
+ed-by-prettify">***</span><span style=3D"color: #000;" class=3D"styled-by-p=
+rettify"> error</span><span style=3D"color: #660;" class=3D"styled-by-prett=
+ify">:</span><span style=3D"color: #000;" class=3D"styled-by-prettify"> </s=
+pan><span style=3D"color: #606;" class=3D"styled-by-prettify">Index</span><=
+span style=3D"color: #000;" class=3D"styled-by-prettify"> name </span><span=
+ style=3D"color: #080;" class=3D"styled-by-prettify">&#39;index_taggings_on=
+_tag_id&#39;</span><span style=3D"color: #000;" class=3D"styled-by-prettify=
+"> on table </span><span style=3D"color: #080;" class=3D"styled-by-prettify=
+">&#39;taggings&#39;</span><span style=3D"color: #000;" class=3D"styled-by-=
+prettify"> already exists</span></div></code></div><p class=3D"p1"><span cl=
+ass=3D"s1"><br></span></p>
+
+
+
+
+
+
+
+</div></div>
+------=_Part_8364_1787734454.1471947740310--
+
+------=_Part_8363_2137483398.1471947740301--
+

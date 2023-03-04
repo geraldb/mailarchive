@@ -1,0 +1,68 @@
+From 1539682861056@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1541066981376
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,41fb72b1e9c7dabb,start
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.98.165 with SMTP id ej5mr3536903wib.1.1418049471707;
+        Mon, 08 Dec 2014 06:37:51 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.180.23.101 with SMTP id l5ls560842wif.8.canary; Mon, 08 Dec
+ 2014 06:37:50 -0800 (PST)
+X-Received: by 10.180.105.97 with SMTP id gl1mr3501660wib.7.1418049470872;
+        Mon, 08 Dec 2014 06:37:50 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x234.google.com (mail-wi0-x234.google.com. [2a00:1450:400c:c05::234])
+        by gmr-mx.google.com with ESMTPS id jv2si368239wid.1.2014.12.08.06.37.50
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 08 Dec 2014 06:37:50 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::234 as permitted sender) client-ip=2a00:1450:400c:c05::234;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::234 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x234.google.com with SMTP id n3so4946263wiv.7
+        for <webslideshow@googlegroups.com>; Mon, 08 Dec 2014 06:37:50 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=jARmbWRVqEz0J8INgcH5A9wD00jqIaGgWTeJ2YS1sNs=;
+        b=fP1411WLUBIn207MowXVgIltsNrJQvtctubFa4crIVGOh2kLvC6r2601FKcLkvytHM
+         PC5/6Q6iVOhhil9hWmbnHObpAjQfFI9zq3DnPtRIS4Ikfsc3Uk5O7tvjdW04R8mS3m+w
+         LMyWctXNAJ+D8nUknJAEhUOaGS1yA6IWoiqNT1LIvBv/urlsf5Zi/xfDGYLbzBP62UkP
+         zkjTOAo9+Oh5Wp9ngMf95BgLvF/j95JwWfadYhJNJobD/fusOT8AeeVYpQsmMSMERiAx
+         L7gLVFq9kmXzEiqXjbBp/nAQEj/4UuFFX4amktT/iRVCEgFygEz2g1mu/pW7EozoYKcU
+         ACZQ==
+MIME-Version: 1.0
+X-Received: by 10.180.20.163 with SMTP id o3mr25141629wie.12.1418049469411;
+ Mon, 08 Dec 2014 06:37:49 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Mon, 8 Dec 2014 06:37:49 -0800 (PST)
+Date: Mon, 8 Dec 2014 15:37:49 +0100
+Message-ID: <CAAxEZd-1JocFHX2a5BUHGhuwNysMpaRrvHXJ6T10cPQB9+jWkA@mail.gmail.com>
+Subject: [ANN] markdown gem split into markdown, markdown-service,
+ markdown-tools gems
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've split up the "all-in-one" markdown gem into three gems -
+the idea is - of course -
+ to keep it simple - that is, use only what you need and in case
+anyone wants to change or contribute or extend  anything in the
+markdown "suite" it should now be easier.
+
+   1) markdown gem [1]  - Markdown engine wrapper (interface) lets you
+use your markdown library of choice
+   2) markdown-service gem [2]  -  markdown HTTP JSON API service
+   3) markdown-tools gem [3] - markdown command line tool - e.g. try $
+markdown --help
+
+   Cheers.
+
+[1] github.com/rubylibs/markdown
+[2] github.com/rubylibs/markdown-service
+[3] github.com/rubylibs/markdown-tools
+

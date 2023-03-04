@@ -1,0 +1,103 @@
+From 6624808720099442688@xxx Sat Nov 17 12:41:18 +0000 2018
+X-GM-THRID: 6624595092768292864
+X-Received: by 2002:aa7:c687:: with SMTP id n7-v6mr1583577edq.11.1542458478258;
+        Sat, 17 Nov 2018 04:41:18 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a50:994d:: with SMTP id l13ls2858685edb.1.gmail; Sat, 17 Nov
+ 2018 04:41:17 -0800 (PST)
+X-Google-Smtp-Source: AFSGD/UxPHpNGFhtUhk296gllu02JcdQKdMU0woo4xFXlpgWcmX6l834QsjDF7AIqn6ZMlIVMCqD
+X-Received: by 2002:a50:b4a1:: with SMTP id w30mr431269edd.2.1542458477002;
+        Sat, 17 Nov 2018 04:41:17 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1542458476; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Ot/GQ7n9sFqD29JSS82vOXXyLmNLaW0ipPsL+8n2TJkNKBXzkE6a1hLTHsvBHSFumG
+         KOnck6KCB4mMuT4e9Bo2iRO3K/o2C42RIwfZ3Lbgk5s+1Y7a3xeVQQSzhPMy2vAwH3IE
+         KqpBwGr54pmTOIjekr+L5sv4RxQCMvqbs8leSF+2GaqBIe6C0XA7o6yxql9WTBePfMVX
+         PJ44gqgiXZ35n0yp0Xpq8QnY3A1ZIfJhJLHRT1v46zFNbHfQrRpdTLT3cNx05tiMjZNw
+         NFt0yr7X3dQ++BDRP5k7XZATwOS8nxd5YNyTb0IAWZ4lotdUByFdCr0c8pXtfgY6lfd0
+         y5gg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=0+w+nB8kX0PEB33IX+0xVVXjhVmaz4J+SUWT5LMDsjM=;
+        b=nc6zia+wyzhz+nmLA/IaqXSRAI6Fu9y8epUbIquLpAv7j4CeLLFS8bVc/w2J62FQqY
+         uTu2jCbJNhIec2PbzZH4eeLT0asuO68qntcwBkLil8ZTghTpPrh1FRQx4xlDzKfe1NKC
+         svCG2VEst3xfq411b71ujYTSLR/IrxXTUsE2HbDFJ3ONjdx2fX4g3oVfZWFphMNW2xju
+         WeDC0lQ6BFkGdFSg/RU3gdivT8BmL49JrBA+U42q06ySt32F8T4SzqmNHHBgYgZlhGWb
+         jRCYe080KAEcawjUQrI+rLLsYwNLGOO18XwHim9WlCiTBcxmBqsvY+gorW9UD2ZaxjrF
+         6fVw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=lvHxJx7I;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22e.google.com (mail-lj1-x22e.google.com. [2a00:1450:4864:20::22e])
+        by gmr-mx.google.com with ESMTPS id d10-v6si1324195ejx.0.2018.11.17.04.41.16
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 17 Nov 2018 04:41:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) client-ip=2a00:1450:4864:20::22e;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=lvHxJx7I;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22e as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22e.google.com with SMTP id t9-v6so22599419ljh.6
+        for <wwwmake@googlegroups.com>; Sat, 17 Nov 2018 04:41:16 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=0+w+nB8kX0PEB33IX+0xVVXjhVmaz4J+SUWT5LMDsjM=;
+        b=lvHxJx7IbDVVKmQW5fMfM2FCjSYul8x3V0j2YLJp44You/dKA4TTd/Hkh5kAzz4wwf
+         xwS8eRcN7FrBqY5mbN4ogEOhCB6NtjSUboibcceME21gtsCc3yZzvWp/8vX9XIgoZB4f
+         dQvdobTa6tNbLmy3Bebv+QLFbUSbliMDUQ0VYC+TB0bsr5XpIhyITuY5ru+6TU5rl/OK
+         kJsWbf0DsAusS4LYr7SFc6bBUcze2OZa/42+V5W7HMp2M3r0NPbrpbjzJUWuiBC69x1a
+         AXqm53Yi9c/BYvRo+vBwgMkiK+dEVHL7tU0EgEheh6tl+l2jR0SvTywmvH4Hj4bGNJy9
+         XCBw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=0+w+nB8kX0PEB33IX+0xVVXjhVmaz4J+SUWT5LMDsjM=;
+        b=t9U2p+clGHN4onTqXRLUfofmGlwBZn1E+FKfvFefuEVib7v9+daIsLDbPUsO4wMKLf
+         jhJCXNNVfQuEU+J9/c8HSAb3mNsMMCNJ/btT7RG+HI6HRM8Ip2jC8+p6oSs3YDzqqYcA
+         CdydcQr01W8UseRaNSUTdOlfj8RVVG/xOiWWSH9x2pK1cuu91JVvk5ZHbQCLZNWPeQ66
+         F2B1TQO7BNP6I4fbHK5uSUvGxAx1ZjlmOlrZQZAaBRDk5kCLvTUYk8bVrEW3ZLkn1hGq
+         oyrNfqoFb0PpkMj9p3h0pNzNXkCSH1cSt0+UGwYoQ3LvKiwMLuHiEmUYlH5l9w6ZuhPQ
+         cKVA==
+X-Gm-Message-State: AGRZ1gJ7JiMfAOkUBa1iZNbviwPZSdInBCJ4AO90sNPAwspISjRUSeoa
+	pkXjRsKRUFKUQ+6uFvKXVbyFEudTbRvkuEvt1vPNqA==
+X-Received: by 2002:a2e:8007:: with SMTP id j7-v6mr8346863ljg.22.1542458475929;
+ Sat, 17 Nov 2018 04:41:15 -0800 (PST)
+MIME-Version: 1.0
+References: <965993f2-872a-4140-80b5-e296e8cc5ef6@googlegroups.com>
+In-Reply-To: <965993f2-872a-4140-80b5-e296e8cc5ef6@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 17 Nov 2018 13:41:04 +0100
+Message-ID: <CAAxEZd-p8LnZAHH5E=UBD6ZeyshdnE2jNDsxtpXYE36DdumY8Q@mail.gmail.com>
+Subject: Re: [wwwmake:460] [csvreader] Is there any way to keep going after
+ encountering an error?
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   First thanks for trying a different encoding. Great to hear it works.
+
+> I'm processing some huge files. It really sucks to get an error 80% of the way through and not be able to finish. Is there any way to get an error on a line, do something with it (probably log it), but continue processing the rest of the file?
+
+    Good point. Yes, of course. The idea is - since this is a kind of
+new (alternative) csv reader / library to learn from the real world
+and from real experience - that is, where your help is needed :-).
+
+    The point is and the idea is to collect the "real-world" errors
+one-by-one and add options and tests to make the reader more "stable"
+handling real-world cases / error conditions. The point is - again -
+the more real-world cases that get reported - the better the reader
+and they more I can fix / handle and so on.
+
+    Thus, to conclude - if you want to help out I invite you to post
+the "offending" csv line(s) / text record(s) and what error you get -
+they more the better.
+
+    Cheers. Prost.
+

@@ -1,0 +1,58 @@
+From 534450798592@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 533939093504
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,efd34bffe5468fbb,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+X-Google-Language: ENGLISH,ASCII
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Received: by 10.100.141.5 with SMTP id o5mr427054and.19.1237478036593; Thu, 19 
+	Mar 2009 08:53:56 -0700 (PDT)
+Date: Thu, 19 Mar 2009 08:53:56 -0700 (PDT)
+X-IP: 58.104.9.42
+User-Agent: G2/1.0
+X-Google-Token: xn7KvwwAAAC490ounOAAegKSw5E3_PLw
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB; rv:1.9.0.7) 
+	Gecko/2009021910 Firefox/3.0.7,gzip(gfe),gzip(gfe)
+Message-ID: <2be1ac43-a916-4e09-a9c0-99e1254b6532@d25g2000prn.googlegroups.com>
+Subject: How to use S5 blue template with S9
+From: Mohan Gupta <mohan.kumar.gupta@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+X-Google-Approved: gerald@vanbeta.com via web at 2009-03-19 19:07:09
+
+Hi!
+
+A noob question. I downloaded S5 blue template from
+http://people.debian.org/~madduck/talks/s5-themes/blue/ .
+I then used sample facebook.textile and did
+
+slideshow --s5 -t s5.txt facebook.textile -o tpl
+
+my s5.txt
+---------------
+
+__file__.html   header.html.erb + footer.html.erb
+__file__.css    style.css.erb
+blue/bluebg.gif
+blue/bluebottom.gif
+blue/bluefooter.gif
+blue/framing.css
+blue/opera.css
+blue/pretty.css
+blue/print.css
+blue/s5-core.css
+blue/slides.css
+blue/slides.js
+
+
+Unfortunately, when I do that, I don't get slideshow but the complete
+text.
+
+What I really need are the details I should have for the manifest file
+and header.html.erb, style.css.erb in order to get S5 blue template to
+work.
+
+Thanks
+Mohan Gupta
+

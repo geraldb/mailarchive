@@ -1,0 +1,91 @@
+From 2148300488704@xxx Tue Jun 16 00:16:48 +0000 2015
+X-GM-THRID: 2150925074432
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,20d1e24015c4fce5,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.184.197 with SMTP id ew5mr1613862lbc.0.1410003024293;
+        Sat, 06 Sep 2014 04:30:24 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.42.230 with SMTP id r6ls247969lal.46.gmail; Sat, 06 Sep
+ 2014 04:30:23 -0700 (PDT)
+X-Received: by 10.152.26.225 with SMTP id o1mr143891lag.4.1410003023239;
+        Sat, 06 Sep 2014 04:30:23 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22a.google.com (mail-wi0-x22a.google.com [2a00:1450:400c:c05::22a])
+        by gmr-mx.google.com with ESMTPS id v3si261875wib.1.2014.09.06.04.30.23
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 06 Sep 2014 04:30:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22a as permitted sender) client-ip=2a00:1450:400c:c05::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22a as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f170.google.com with SMTP id cc10so659483wib.3
+        for <opensport@googlegroups.com>; Sat, 06 Sep 2014 04:30:23 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=aSEd7hYejdasQjabyZqMoDXf9mkLRmmdCjjirUc4J2I=;
+        b=HeMIpPZF8AexX7dHODuHvf41CTWB5gww+y7MV1dtJSBvPRH3VTG9CwjUML8Uxkr7v3
+         O2JwINkPK9uqUW12R5BSTnJmPQsHQoGY5IT7WEZm7i212wzL1+eROk55LYyA2vFEM5iq
+         djAkReXg5HRmasRUsm0H6KMPwRUc5tzM0wk6Ahs8azcPenVuu6b+6pp8Z9COFR+r2Lbs
+         k4SUKq05eFma8dCQV62lqIqa0Q2IZrxM9fN7dhYzzagkfuvRcocJ78ZphrGjhZCtoHRl
+         KvGm1ZnIHgIXQiac3luuczHMAKvMwS0U9EJEDdXRh0wp0qRquNki7Yuk6MzQgUZ61bxl
+         A3Dg==
+MIME-Version: 1.0
+X-Received: by 10.180.14.101 with SMTP id o5mr9817102wic.25.1410003023142;
+ Sat, 06 Sep 2014 04:30:23 -0700 (PDT)
+Received: by 10.217.59.194 with HTTP; Sat, 6 Sep 2014 04:30:23 -0700 (PDT)
+Date: Sat, 6 Sep 2014 13:30:23 +0200
+Message-ID: <CAAxEZd90P=V9Wyd6JGGTyj6WY3zK7SHp7sBxCVgAFCw=DFPiig@mail.gmail.com>
+Subject: Benvenuti - New Season - Italian Serie A 2014/15 Added
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've added the new 2014/15 season for the Italian Serie A [1].
+
+1^ Giornata
+
+[Sab. 30.8.]
+  Chievo Verona 0-1 Juventus
+  AS Roma 2-0 Fiorentina
+[Dom. 31.8.]
+  Atalanta 0-0 Hellas Verona
+  AC Milan 3-1 Lazio Roma
+  AC Cesena 1-0 Parma FC
+  Genoa CFC 1-2 SSC Napoli
+  US Palermo 1-1 Sampdoria
+  Sassuolo 1-1 Cagliari
+  Torino FC 0-0 Internazionale
+  Udinese 2-0 Empoli FC
+
+2^ Giornata
+
+[Sab. 13.9.]
+  Empoli FC - AS Roma
+  Juventus - Udinese
+[Dom. 14.9.]
+  Sampdoria - Torino FC
+  Cagliari - Atalanta
+  Fiorentina - Genoa CFC
+  Internazionale - Sassuolo
+  Lazio Roma - AC Cesena
+  SSC Napoli - Chievo Verona
+  Parma FC - AC Milan
+[Lun. 15.9.]
+  Hellas Verona - US Palerm
+
+   and so on. To build yourself a copy use:
+
+    $ rake build DATA=it           or
+    $ rake build DATA=it_2014_15
+
+   Cheers.
+
+[1] github.com/openfootball/it-italy/tree/master/2014-15
+

@@ -1,0 +1,119 @@
+From 6620847595346460672@xxx Tue Nov 06 20:30:07 +0000 2018
+X-GM-THRID: 6620432779974803456
+X-Received: by 2002:a17:906:328b:: with SMTP id 11-v6mr3460375ejw.14.1541536207249;
+        Tue, 06 Nov 2018 12:30:07 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a17:906:558e:: with SMTP id y14-v6ls551389ejp.12.gmail; Tue,
+ 06 Nov 2018 12:30:06 -0800 (PST)
+X-Google-Smtp-Source: AJdET5eOrBOfLZHDyVOmRAF01MX0O2G8xHRKMLIguUFDDL7NOjTSGInT370UyJkOMRBgblE6Et2F
+X-Received: by 2002:a17:906:1603:: with SMTP id m3-v6mr1897609ejd.16.1541536206278;
+        Tue, 06 Nov 2018 12:30:06 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1541536206; cv=none;
+        d=google.com; s=arc-20160816;
+        b=dOaVT2k6ppgTE2voVkVSKumIO4ZA31+7KDdvZ8OXUytvt3Z34ushtIigwoj8gyNLmZ
+         oEjDt86HUfjPRt8UuYZ12ey29xd9wc6H3+xlp7t0dd+Op8wwuS2xfExXe4JYvhJUyAGY
+         6mqcmmR3OrNJ5o53HGK16TpZgPzqCKfnZVwue7I9nYq1fl93CcUzBuhH6sjVjnkusuVp
+         YMUJYFScNyxvkT763R9rZxICsk3/41+6z+kpr8g0zzwsG0vHPGGALgV++rbh3FQu7Tjc
+         i4yEfmk3XibE+6zRN50CX8J5xDJToOlB9dG1ZBppwb15PCJVR12GZo3VqRilqT3vlLv+
+         qWeg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=Ew4FPCJ3uQiOKIyLfRNjJAs+XWZZi6RyRS/DDaJU8XM=;
+        b=aEo40agJrVKGeCps31SPqflt+HaRh+HX2sRknRzexU8OH52Feli+2el0JVzcNaF2sr
+         /p+ndhHReraEiX4jBtJd19IJKPDzgO6H+Z/H6xnlaSA9Q0ZgXEN7I7gvM4DsOVZAexY3
+         F6UCEkfxFUvUgjiAKc5zsFJgocZ3b5hKTB8XRS8qO4DZEq6/sfrpMj7GvZ1e68cslrTO
+         /TWmUGcqpyuq5px2kQGgrFdIKkqb5HY3W8iap5IHm00XllvuxpHyj1i1GSMnb0J47Nvs
+         rvgyZypi0iqnIAjvaqF7Ii2UGbHlcbytp+HhzyQdiwIuLzQkCxQPvdkEeLGal5ZPXjuN
+         5ZLw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=KpRwnBV3;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22d.google.com (mail-lj1-x22d.google.com. [2a00:1450:4864:20::22d])
+        by gmr-mx.google.com with ESMTPS id y16-v6si1841520eds.0.2018.11.06.12.30.06
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 06 Nov 2018 12:30:06 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22d as permitted sender) client-ip=2a00:1450:4864:20::22d;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=KpRwnBV3;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22d as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22d.google.com with SMTP id u6-v6so12726393ljd.1
+        for <wwwmake@googlegroups.com>; Tue, 06 Nov 2018 12:30:06 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=Ew4FPCJ3uQiOKIyLfRNjJAs+XWZZi6RyRS/DDaJU8XM=;
+        b=KpRwnBV31CwMwTZAfCs0fPo0o0ykPNP2Wo1zabBADVi5tJt2gW+q8q+mLq5NT5CNKg
+         K0OIthYq5SuW5eWejBggW49+046LkJNb8pUddt/wmWYe5r+PRsIgqeaGitoEh081TIyj
+         KosimLTgf4cFI1dhGcCUF7aYaB8072ZO3eT4QJPB6TORbuVf5fM3hfCVoRPdbumCFAR5
+         fD7Bzve+p8aOz9LT+wpou5tNI/2uN0Kqx271G3x3n7AJDc577nTNHP2HuiIsd+e0ABx/
+         kebAxnVeYnk3utpfEnqeTl970x6UACgvFU8p6qXNO+UxqIMSjnzkdNv0skcEqS8nZtns
+         JfwQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=Ew4FPCJ3uQiOKIyLfRNjJAs+XWZZi6RyRS/DDaJU8XM=;
+        b=b1BOev2L2y+TwseKB7f4Ei4DB7h3WZnfbIwi2XNxomedWLwVobmP8Tg4vNjVk6bqmo
+         Quto+/6nGEKYH5id468SUBAhAnOyFqxg+NY/gn2Y30OoOr/Tl1RhCdRJxZ/UVGJjIy01
+         0txtNJ5IqSrulfD9qj0jrZPXTyB9bne1E4uMTxnXSgrpJ64eN8Z+YJBEJ3voIltD7G0J
+         8xB/EFQFjU7hEv3hPCfm3GBWI/8roE4Ho2e2yBiLD9gOJMn3AHodEgUxq2cdi96qYsCd
+         S4VkRGE8Uny1vnmYTn/v2I02nggUGvXZq/oBN6B5MgphHCLBFdu6scgGPNKOjvWrv1WY
+         +jNQ==
+X-Gm-Message-State: AGRZ1gLJ5AJpHIpPy+dCQnV5c4WUlSsyCD2GlnFLQUdSaDzSdBtxZJiV
+	PKE4Uo5XM5wHHuP39k3CRrRYPQPh3ITwyo5N3E3S9Psx
+X-Received: by 2002:a2e:8945:: with SMTP id b5-v6mr18567909ljk.55.1541536205527;
+ Tue, 06 Nov 2018 12:30:05 -0800 (PST)
+MIME-Version: 1.0
+References: <135107ef-bc78-4d06-960f-15259b4493cf@googlegroups.com>
+ <CAAxEZd9Xc-62PU+k=wOq7WtXqiL4vMZye_D6kodMdbMBp7LogA@mail.gmail.com> <d8e54c23-8875-4d9c-b69e-a65b84b934c6@googlegroups.com>
+In-Reply-To: <d8e54c23-8875-4d9c-b69e-a65b84b934c6@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 6 Nov 2018 21:29:54 +0100
+Message-ID: <CAAxEZd-O5v3o3zjVnPkMD_RpUMn82T0S8kBkcJNFcP0wP_=ozA@mail.gmail.com>
+Subject: Re: [wwwmake:453] Noob question about performance
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Thanks for testing and sharing the benchmark results.
+
+   I looked at the weather data e.g.:
+
+year,month,day,hour,minute,Temperature,Precipitation - Tipping
+Bucket,Precipitation - Weighing,Solar - Incoming,Solar - Outgoing,Wind
+Speed - Average 4.4,Wind Speed - Gust 4.4,Wind Speed - Average
+2.0,Wind Speed - Gust 2.0,Wind Direction,RH,Pressure,Soil Moisture - 5
+cm,Soil Moisture - 10 cm,Soil Moisture - 20 cm,Battery,Dew Point
+2017,   1,   1,   0,   0,   -27.95667,     0.00000,     0.00000,
+1.00000,     1.00000,     0.00000,     0.00000,     0.00000,
+0.00000,   329.00000,    80.50667,   103.26868, -9999.90039,
+-9999.90039,     0.28500,     4.11733,   -30.30333,
+
+   One plus of the new csvreader is that it supports many flavors /
+formats / dialects out-of-the-box without any configuration.  In the
+case about that would be the CSV <3 Numerics format [1]
+
+   Try changing:
+
+   Csv.read(FILE, { headers: true, converters: :all })
+
+    to
+
+   Csv.num.read(FILE, headers: true )   ## or Csv.numeric.read(FILE,
+headers: true )
+
+   and it should be faster (in theory - always benchmark, of course)
+because the data conversion pipeline is seriously broken (and will get
+replaced / redone ). See What's Your Type? [2] on the inside story /
+details.
+
+   Thanks again. Cheers. Prost.
+
+[1] https://github.com/csvspecs/csv-numerics
+[2] https://github.com/csvreader/docs/blob/master/csv-types.md
+

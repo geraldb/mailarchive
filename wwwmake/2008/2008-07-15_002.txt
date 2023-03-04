@@ -1,0 +1,104 @@
+From 56204722176@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 53477376000
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,c688e924858327ee
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.114.196.13 with SMTP id t13mr9417669waf.13.1216142357372;
+        Tue, 15 Jul 2008 10:19:17 -0700 (PDT)
+Return-Path: <geraldbauer2007@gmail.com>
+Received: from yx-out-1718.google.com ([172.21.8.36])
+        by mx.google.com with ESMTP id 22si6689109yxr.2.2008.07.15.10.19.16;
+        Tue, 15 Jul 2008 10:19:17 -0700 (PDT)
+Received-SPF: neutral (google.com: 172.21.8.36 is neither permitted nor denied by domain of geraldbauer2007@gmail.com) client-ip=172.21.8.36;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 172.21.8.36 is neither permitted nor denied by domain of geraldbauer2007@gmail.com) smtp.mail=geraldbauer2007@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by yx-out-1718.google.com with SMTP id 36so1353262yxh.32
+        for <webslideshow@googlegroups.com>; Tue, 15 Jul 2008 10:19:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type
+         :content-transfer-encoding:content-disposition:references;
+        bh=k/ENTvkaTpBPQHWp38WpVOz2rblMyrjBe8ThBVOgOL8=;
+        b=mkPDk7XosB1Y6qszMNNPi1KtSudg04Ha/35cfVi6M+Cu7FAuh9qIgPr30lEZzXC0Z8
+         Nfe3qAb+uSlJKcQDB+gWPC5dCZjDjjJefinjFrHe97CD907YqzgyIYkJOS9nxwRlY3ir
+         ac7ktq/QoCsNH6ROftmxNPd1LdGiQHIEksge4=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:content-transfer-encoding:content-disposition
+         :references;
+        b=Ndg8FIXQAMN9ASSv5q/ASAn5ld3wkGEqWZ/1bTBesqbfT4dOBtHKqB+RaDhoM2nGa6
+         u7k5XFd9+KIF/zDkhBxPfUoTIKa5WuoZQrFhKvUkmib+8I82hPt/vcsa/C1ZLXYFelJx
+         TMqj031DEZNMrVQT0QwfBmR4JW6Ft2HkXZ/84=
+Received: by 10.114.168.1 with SMTP id q1mr233460wae.72.1216142324094;
+        Tue, 15 Jul 2008 10:18:44 -0700 (PDT)
+Received: by 10.114.75.11 with HTTP; Tue, 15 Jul 2008 10:18:44 -0700 (PDT)
+Message-ID: <7e7cb8940807151018k4b492e0ckca88ca75975a7e49@mail.gmail.com>
+Date: Tue, 15 Jul 2008 10:18:44 -0700
+From: "Gerald Bauer" <geraldbauer2007@gmail.com>
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow] redcloth bug
+In-Reply-To: <487C960E.2070900@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <487C960E.2070900@gmail.com>
+
+Hello Jeff,
+
+> Sorry for the spam...
+
+  No worries. That's what this mailing list/forum is here for. If the
+volume gets to high for anyone you can switch to abridged email
+delivery (no more than 1 email per day) or no email delivery or
+unsubscribe all together.
+
+> I found the source of my problem though.
+> RedCloth incorrectly handles object tags (for including SVG files) when
+> they are separated across multiple lines
+> ...
+> I sent off an email to _why, but I'm not sure if RedCloth is still being
+> maintained...
+
+  There a quite a few bugs in the "old" RedCloth version. RedCloth is
+alive and kicking and a new release, that is, 4.0 is about to get out
+of the door any minute (formerly called SuperRedCloth) thanks to Jason
+Garber. I'm subscribed to the RedCloth mailing list and here's Jason
+Garber's posting from yesterday titled "Ready to release?":
+
+--
+  I think I'm ready to release RedCloth 4.0.  Anyone have any
+objections?  Should I tag the latest commit as RC1 or should we just
+go for it?  It's pretty much a given that with as many changes as were
+made between 3.0.4 and 4.0 we overlooked something and will have to
+release 4.0.1 in short order.
+
+I'm sending _why the latest gems to put up on his gem server.  Once
+they're up, see if there's anything you want fixed before the release.
+--
+
+Once the new RedCloth release is up I will update the slideshow gem
+and that might fix the issues.
+
+> On another note, I thought of a couple cool directions for a slideshow
+> API.  I'm not sure if this is something people are interested in, but
+> what I was thinking about was integrating in with something like the
+> jQuery library, and adding support for slide transitions, lists that are
+> presented iteratively, item by item, and eventually canvas based or SVG
+> animations.  This would be my ideal presentation engine.
+>
+> Thoughts?
+
+   Great ideas. Definitely, the purpose of rewriting the S5 scripts
+using jQuery (now called S6) was for making it easier to understand
+and extend it for add effects and so on. Any contributions welcome.
+You might check out Presentacular that offers effects/animations using
+CSS classes
+
+   Cheers.
+
+-- 
+Gerald Bauer - Internet Professional - http://geraldbauer.wordpress.com
+

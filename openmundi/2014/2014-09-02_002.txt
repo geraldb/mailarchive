@@ -1,0 +1,124 @@
+From 256528875520@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 247966203904
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,83c5805a6cb8f0df
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.95.228 with SMTP id dn4mr3393479lbb.2.1409681424806;
+        Tue, 02 Sep 2014 11:10:24 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.152.6.2 with SMTP id w2ls486670law.97.gmail; Tue, 02 Sep 2014
+ 11:10:24 -0700 (PDT)
+X-Received: by 10.112.170.166 with SMTP id an6mr3791lbc.17.1409681424368;
+        Tue, 02 Sep 2014 11:10:24 -0700 (PDT)
+Return-Path: <eckhard.licher@googlemail.com>
+Received: from mail-lb0-x22a.google.com (mail-lb0-x22a.google.com [2a00:1450:4010:c04::22a])
+        by gmr-mx.google.com with ESMTPS id pw5si853997lbb.0.2014.09.02.11.10.24
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 02 Sep 2014 11:10:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of eckhard.licher@googlemail.com designates 2a00:1450:4010:c04::22a as permitted sender) client-ip=2a00:1450:4010:c04::22a;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of eckhard.licher@googlemail.com designates 2a00:1450:4010:c04::22a as permitted sender) smtp.mail=eckhard.licher@googlemail.com;
+       dkim=pass header.i=@googlemail.com
+Received: by mail-lb0-f170.google.com with SMTP id w7so8124851lbi.15
+        for <openmundi@googlegroups.com>; Tue, 02 Sep 2014 11:10:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlemail.com; s=20120113;
+        h=message-id:date:from:user-agent:mime-version:to:cc:subject
+         :references:in-reply-to:content-type;
+        bh=bZbcXixfweYOa+4KEa4rb2R+6y3Vl+/8OKEYN1a+mmc=;
+        b=L1O5xB2oBvHJjyBSgyWLF4TsvYSOJ/cw9pBcCeJkV9m4SjrwW9aY6jK6w9M9ZKCVFh
+         mv8lfeQIPrbrlw18PlrU9c01MQxISCj4r+XZsVyAzoNcixqsPY7d12lQtfdruvXOim+b
+         T6N1+pkxH0zMBvwgLwbg1IqKzWBW8Rme5q4xZcshagL4cIEK5ww9Aif4KaFLWoh45jQN
+         +qp/5zBbnF3Yst7bkOAPd6DSV/tOoAuTbMJzlk2xkgWe06Fz2crUbK5mliufFa5u14f0
+         ZVQ2ImB9zF+qKHlNWMU9KOKfmre2OV0K1LS/JjGy/u3JozjjwqdS9P2/T6xIMlM24rqs
+         BSqg==
+X-Received: by 10.112.34.78 with SMTP id x14mr35025304lbi.38.1409681424298;
+        Tue, 02 Sep 2014 11:10:24 -0700 (PDT)
+Return-Path: <eckhard.licher@googlemail.com>
+Received: from [192.168.2.44] (frnk-5f75217a.pool.mediaWays.net. [95.117.33.122])
+        by mx.google.com with ESMTPSA id bi5sm6309116lbb.18.2014.09.02.11.10.22
+        for <multiple recipients>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 02 Sep 2014 11:10:23 -0700 (PDT)
+Message-ID: <5406080C.8030503@googlemail.com>
+Date: Tue, 02 Sep 2014 20:10:20 +0200
+From: Eckhard <eckhard.licher@googlemail.com>
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Thunderbird/31.0
+MIME-Version: 1.0
+To: Gerald Bauer <gerald.bauer@gmail.com>
+CC: openmundi@googlegroups.com
+Subject: Re: Scraping of local files
+References: <6c181f40-2aa3-45dd-b6c5-5b4caf0f2592@googlegroups.com> <CAAxEZd8MkvL11Kn2d0rN+AGFPbOAG6fF510rVxXO-g5-OWc9=A@mail.gmail.com>
+In-Reply-To: <CAAxEZd8MkvL11Kn2d0rN+AGFPbOAG6fF510rVxXO-g5-OWc9=A@mail.gmail.com>
+Content-Type: multipart/alternative;
+ boundary="------------070906010900000603020600"
+
+This is a multi-part message in MIME format.
+--------------070906010900000603020600
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+scraping from file works for me, thanks for your assistance. Good to 
+know it's there when it is needed.
+
+I would like to point out two glitches.
+
+  * trailing % are not eliminated in field names:
+
+"household_income_or_consumption_by_percentage_share": {
+       "lowest_10*%*": "3.6%",
+       "highest_10*%*": "24% (2000)"
+     },
+
+  * the Russian entry has in "administrative_divisions" two notes (Note
+    1, Note 2). The scraper only returns the first note ("note")
+
+Other than that the gem works great.
+
+
+Best regards
+
+
+--------------070906010900000603020600
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+    Hello,<br>
+    <br>
+    scraping from file works for me, thanks for your assistance. Good to
+    know it's there when it is needed.<br>
+    <br>
+    I would like to point out two glitches.<br>
+    <ul>
+      <li>trailing % are not eliminated in field names:</li>
+    </ul>
+    <p><font face="monospace">   
+        "household_income_or_consumption_by_percentage_share": {<br>
+              "lowest_10<big><big><b>%</b></big></big>": "3.6%",<br>
+              "highest_10<b><big><big>%</big></big></b>": "24% (2000)"<br>
+            },<br>
+      </font></p>
+    <ul>
+      <li>the Russian entry has in "administrative_divisions" two notes
+        (Note 1, Note 2). The scraper only returns the first note
+        ("note")</li>
+    </ul>
+    <p>Other than that the gem works great.<br>
+      <br>
+        <br>
+      Best regards<br>
+    </p>
+  </body>
+</html>
+
+--------------070906010900000603020600--
+

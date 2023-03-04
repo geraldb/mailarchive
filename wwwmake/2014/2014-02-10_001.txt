@@ -1,0 +1,143 @@
+From 1470716968960@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1456305340416
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,2568c5e341d64211
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.50.67.8 with SMTP id j8mr7383181igt.7.1392073123280;
+        Mon, 10 Feb 2014 14:58:43 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.50.112.131 with SMTP id iq3ls2214957igb.15.gmail; Mon, 10 Feb
+ 2014 14:58:41 -0800 (PST)
+X-Received: by 10.43.96.73 with SMTP id cf9mr6450517icc.22.1392073121752;
+        Mon, 10 Feb 2014 14:58:41 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-vc0-x22d.google.com (mail-vc0-x22d.google.com [2607:f8b0:400c:c03::22d])
+        by gmr-mx.google.com with ESMTPS id ys4si3708681vdc.2.2014.02.10.14.58.41
+        for <webslideshow@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 10 Feb 2014 14:58:41 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c03::22d as permitted sender) client-ip=2607:f8b0:400c:c03::22d;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c03::22d as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-vc0-f173.google.com with SMTP id ld13so5226571vcb.4
+        for <webslideshow@googlegroups.com>; Mon, 10 Feb 2014 14:58:41 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=9PZAdmnE0GgrRHRhc+hTwLwBwWJJ0AGVguULtv3XBXM=;
+        b=XQQbIIqjLbPfD+E1e2H3i6E2jAx57UaX18Y+eHkxpIBWVQtP+P/HlfPTdCD4f+hxzM
+         ew6r3HHz/naHZgX5TPiJMZPdI8YZJh5MHVrsa50awNhzu0gSdeWcNJbQZ7RNNHr7oB70
+         v7V+tXIbhULOA90tW1mW+T6TlScIa+iXiKuXXHUyb+Nd4kKDRlesZtFDs6pSjEYD0PO6
+         SMKHBduiEuHNEHHg8Rm9ZFquoXOhCiPPcvsm+seY6XIYtohLP3TjTgAcc2Ie17k1qny/
+         a6B+krN0Z7ENcmp5FVQMyRHP5hDQXARq9pRjWImRYB8a5e9xyvQD8C5BZA+lTJGNIaLs
+         DJaA==
+MIME-Version: 1.0
+X-Received: by 10.58.86.230 with SMTP id s6mr25656290vez.16.1392073121605;
+ Mon, 10 Feb 2014 14:58:41 -0800 (PST)
+Received: by 10.58.156.10 with HTTP; Mon, 10 Feb 2014 14:58:41 -0800 (PST)
+In-Reply-To: <CAGz-Eo7zMq_k0R7XkJA5iYEvAAoTfpvqpjcz2g2BbUju87ey8w@mail.gmail.com>
+References: <cc360c27-7967-4404-942f-e2c201024e4c@googlegroups.com>
+	<CAAxEZd8Yc0zOu4tdB9fQUy+Wy2b8wfn3Fp5mZDaPYOn4-1fLLg@mail.gmail.com>
+	<CAGz-Eo7zMq_k0R7XkJA5iYEvAAoTfpvqpjcz2g2BbUju87ey8w@mail.gmail.com>
+Date: Mon, 10 Feb 2014 16:58:41 -0600
+Message-ID: <CAAxEZd9O=iVO8d7Hk=YyqvvBWyNPxaZP1VmRA+BpYDzM7T90bw@mail.gmail.com>
+Subject: Re: [slideshow:337] Markdown incremental steps
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+  Great to hear.   I don't know deck.js in detail. Try adding both classes e.g.
+
+{: .step .slide }
+
+  instead of just
+
+{: .step }
+
+  and it should work with both themes. Cheers.
+
+2014-02-10 13:37 GMT-06:00 Micah Cooper <coopermj@miamioh.edu>:
+> Fantastic -- thanks for the quick reply!
+>
+> Looks as if the native theme respects step and deck.js (for example)
+> requires .slide, which breaks my dream of flipping packs back and forth. I'm
+> assuming translation for different themes would require adding a
+> parser/rewriter?
+>
+> Thanks again!
+>
+>
+> On Mon, Feb 10, 2014 at 11:47 AM, Gerald Bauer <gerald.bauer@gmail.com>
+> wrote:
+>>
+>> Hello,
+>>
+>> > Sorry for the possible double post -- didn't see the first one appear.
+>>
+>>   Sorry, the first post is moderated - unfortunately even this list
+>> gets lots of spam.
+>>
+>> > I'm trying to do step with Markdown and can't get it to work. It looks
+>> > as if the example with incremental bullets is in Textile
+>> > and when I try *(step) in Markdown, it displays the (step) literally. Am
+>> > I just messing up the syntax in Markdown?
+>>
+>>   Standard "plain" or "classic" markdown has no support for css style
+>> classes. However, markdown extras such as MultiMarkdown offer, for
+>> example, block attribute list e.g.
+>>
+>> * item 1
+>> * item 2
+>> * item 3
+>> {: .step}
+>>
+>>   That should work if you use kramdown, for example, for your markdown
+>> conversion. See the syntax page [1], for details. Cheers.
+>>
+>> [1] http://kramdown.gettalong.org/syntax.html#block-ials
+>>
+>> 2014-02-10 8:31 GMT-06:00 Micah Cooper <coopermj@miamioh.edu>:
+>> > Sorry for the possible double post -- didn't see the first one appear.
+>> >
+>> > I'm trying to do step with Markdown and can't get it to work. It looks
+>> > as if
+>> > the example with incremental bullets is in Textile and when I try
+>> > *(step) in
+>> > Markdown, it displays the (step) literally. Am I just messing up the
+>> > syntax
+>> > in Markdown?
+>> >
+>> >
+>> > --
+>> > You received this message because you are subscribed to the Google
+>> > Groups
+>> > "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n'
+>> > Friends"
+>> > group.
+>> > To unsubscribe from this group and stop receiving emails from it, send
+>> > an
+>> > email to webslideshow+unsubscribe@googlegroups.com.
+>> > For more options, visit https://groups.google.com/groups/opt_out.
+>>
+>> --
+>> You received this message because you are subscribed to the Google Groups
+>> "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n' Friends"
+>> group.
+>> To unsubscribe from this group and stop receiving emails from it, send an
+>> email to webslideshow+unsubscribe@googlegroups.com.
+>> For more options, visit https://groups.google.com/groups/opt_out.
+>
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n' Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to webslideshow+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/groups/opt_out.
+

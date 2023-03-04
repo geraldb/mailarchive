@@ -1,0 +1,115 @@
+From 2284177063936@xxx Tue Jun 16 00:16:48 +0000 2015
+X-GM-THRID: 2254972125184
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,fdd82ec609b6c4e4
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.121.170 with SMTP id ll10mr12333755obb.12.1416705903424;
+        Sat, 22 Nov 2014 17:25:03 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.4.104 with SMTP id j8ls294162igj.11.gmail; Sat, 22 Nov 2014
+ 17:25:03 -0800 (PST)
+X-Received: by 10.50.107.3 with SMTP id gy3mr62712igb.10.1416705903198;
+        Sat, 22 Nov 2014 17:25:03 -0800 (PST)
+X-Google-Doc-Id: ba6ece96d89aa6a9
+X-Google-Web-Client: true
+Date: Sat, 22 Nov 2014 17:25:01 -0800 (PST)
+From: anonfunction@gmail.com
+To: opensport@googlegroups.com
+Message-Id: <3fa255f0-d6d2-4265-a6a3-01f920a0b8a0@googlegroups.com>
+In-Reply-To: <CAAxEZd8BYxG4v-LZD_7nxVfB=t31w9jt7F0zrKYZ9gpmLWjv9Q@mail.gmail.com>
+References: <923ec44d-6a0f-4f21-903a-0835e94f1b4c@googlegroups.com>
+ <bee9b9b6-ca46-4101-9b8e-44332ac9e364@googlegroups.com>
+ <05ebac69-a367-49a7-ae47-91f4fbaac2dd@googlegroups.com>
+ <CAAxEZd8BYxG4v-LZD_7nxVfB=t31w9jt7F0zrKYZ9gpmLWjv9Q@mail.gmail.com>
+Subject: Re: [opensport] Re: Cannot build football.db with world cup data
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_787_944106164.1416705901734"
+X-Google-Token: EO3uxKMFwT8jFRl1nxw0
+X-Google-IP: 67.174.196.203
+
+------=_Part_787_944106164.1416705901734
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_788_1983114312.1416705901734"
+
+------=_Part_788_1983114312.1416705901734
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks for all your help, I got the DB built!
+
+Now I'm having trouble with the API. I'm using the starter kit (tried with 
+both the Go and Node versions) and cannot get `/rounds` or `/games` to 
+work. The `/teams` endpoint works fine.
+
+Here's what I get:
+
+$ curl http://localhost:9292/event/world.2014/rounds
+
+{"error":{"status":404,"message":"Not Found"}}
+ 
+On Saturday, November 22, 2014 8:10:58 AM UTC-8, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    Thanks for the log output. Very helpful. Thanks for your patience. 
+> I checked the build for the world cup and now everything is working 
+> again (as advertised). 
+>
+>    To try it e.g. 
+>
+> $ rake build DATA=worldcup2014 
+>
+>   NOTE: You will need to update first the sportdb gem to v1.9.10  e.g. use 
+>
+> $ gem install sportdb 
+>
+>   And you will need to update the openfootball/nation-teams repo and 
+> the openfootball/build repo  (for some minor country code changes) 
+>
+>    That's it. Let us know if it works.  The stats should look like: 
+>
+>   16 leagues  /  56 seasons 
+>   8 events (league+season recs)  /  131 rounds  /  48 groups 
+>   222 teams 
+>   866 games 
+>   171 goals (person+game recs) 
+>
+> Cheers. 
+>
+
+------=_Part_788_1983114312.1416705901734
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Thanks for all your help, I got the DB built!<div><br></div><div>Now I'm having trouble with the API. I'm using the starter kit (tried with both the Go and Node versions) and cannot get `/rounds` or `/games` to work. The `/teams` endpoint works fine.</div><div><br></div><div>Here's what I get:</div><div><br></div><div><div>$ curl http://localhost:9292/event/world.2014/rounds</div><div><br></div><div>{"error":{"status":404,"message":"Not Found"}}</div>&nbsp;<br>On Saturday, November 22, 2014 8:10:58 AM UTC-8, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;Thanks for the log output. Very helpful. Thanks for your patience.
+<br>I checked the build for the world cup and now everything is working
+<br>again (as advertised).
+<br>
+<br>&nbsp; &nbsp;To try it e.g.
+<br>
+<br>$ rake build DATA=worldcup2014
+<br>
+<br>&nbsp; NOTE: You will need to update first the sportdb gem to v1.9.10 &nbsp;e.g. use
+<br>
+<br>$ gem install sportdb
+<br>
+<br>&nbsp; And you will need to update the openfootball/nation-teams repo and
+<br>the openfootball/build repo &nbsp;(for some minor country code changes)
+<br>
+<br>&nbsp; &nbsp;That's it. Let us know if it works. &nbsp;The stats should look like:
+<br>
+<br>&nbsp; 16 leagues &nbsp;/ &nbsp;56 seasons
+<br>&nbsp; 8 events (league+season recs) &nbsp;/ &nbsp;131 rounds &nbsp;/ &nbsp;48 groups
+<br>&nbsp; 222 teams
+<br>&nbsp; 866 games
+<br>&nbsp; 171 goals (person+game recs)
+<br>
+<br>Cheers.
+<br></blockquote></div></div>
+------=_Part_788_1983114312.1416705901734--
+------=_Part_787_944106164.1416705901734--
+

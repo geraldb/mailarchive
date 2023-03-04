@@ -1,0 +1,106 @@
+From 1240426610688@xxx Tue Jun 16 00:17:00 +0000 2015
+X-GM-THRID: 1230028931072
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,6c550dafbb294d67
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.162.38 with SMTP id xx6mr2229214pab.46.1402909596168;
+        Mon, 16 Jun 2014 02:06:36 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.50.29.47 with SMTP id g15ls915392igh.24.canary; Mon, 16 Jun
+ 2014 02:06:35 -0700 (PDT)
+X-Received: by 10.50.67.42 with SMTP id k10mr424256igt.5.1402909595936;
+        Mon, 16 Jun 2014 02:06:35 -0700 (PDT)
+X-Google-Doc-Id: 2ee5717662da2ea6
+X-Google-Web-Client: true
+Date: Mon, 16 Jun 2014 02:06:34 -0700 (PDT)
+From: Alex Howington <alex.howington@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <b711ea59-ccd6-4a3f-bdec-93b86da72248@googlegroups.com>
+In-Reply-To: <bce7fae3-e409-4852-817a-d0d615ec6de5@googlegroups.com>
+References: <a2d628b1-1adb-464d-8928-09a0d62b7eaf@googlegroups.com>
+ <bce7fae3-e409-4852-817a-d0d615ec6de5@googlegroups.com>
+Subject: Re: World Cup Game Ordering
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_499_1665257.1402909594911"
+X-Google-Token: EJrn-pwFvfS55I_MPrY0
+X-Google-IP: 24.2.102.159
+
+------=_Part_499_1665257.1402909594911
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_500_3584164.1402909594911"
+
+------=_Part_500_3584164.1402909594911
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks so much! I'll probably use the official ordering now that I 
+understand where it comes from, but it's also nice to know how to reorder 
+the games just to see how things change. 
+
+On Monday, June 16, 2014 2:15:12 AM UTC-6, Gerald Bauer wrote:
+>
+> Hello,
+>
+>    Thanks for your interest in football.db.
+>
+>    > I'm just wondering where the pos data came from?
+>
+>    For the world cup the official match number is used for pos. See an 
+> example here [1]
+>
+>   > Any ideas on whether the data is wrong or why the 'sportdb/console' 
+> automatically orders by 'pos'?
+>
+>    Not sure if it is a good idea. The games/matches get auto-sorted by pos 
+> (that is, called default scope in ActiveRecord) e.g.
+>
+>    has_many :rounds, -> { order('pos') }
+>    has_many :games, :through => :rounds
+>
+>    Use reorder to "delete" the default order scope e.g:
+>
+>    Event.last.games.reorder('play_at')
+>
+>    Cheers.
+>
+> [1] www.fifa.com/tournaments/archive/worldcup/mexico1986/matches
+>
+
+------=_Part_500_3584164.1402909594911
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thanks so much! I'll probably use the official ordering no=
+w that I understand where it comes from, but it's also nice to know how to =
+reorder the games just to see how things change.&nbsp;<br><br>On Monday, Ju=
+ne 16, 2014 2:15:12 AM UTC-6, Gerald Bauer wrote:<blockquote class=3D"gmail=
+_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;p=
+adding-left: 1ex;"><div dir=3D"ltr">Hello,<br><br>&nbsp;&nbsp;   Thanks for=
+ your interest in football.db.<br><br>&nbsp;&nbsp; &gt; I'm just wondering =
+where the pos data came from?<br>  <br>&nbsp;&nbsp;  For the world cup the =
+official match number is used for pos. See an example here [1]<br><br>&nbsp=
+; &gt; Any ideas on whether the data is wrong or why the 'sportdb/console' =
+automatically orders by 'pos'?<br><br>&nbsp;&nbsp;   Not sure if it is a go=
+od idea. The games/matches get auto-sorted by pos (that is, called default =
+scope in ActiveRecord) e.g.<br><br>&nbsp;&nbsp;  has_many :rounds, -&gt; { =
+order('pos') }<br>&nbsp;&nbsp;  has_many :games, :through =3D&gt; :rounds<b=
+r><br>&nbsp;&nbsp;  Use reorder to "delete" the default order scope e.g:<br=
+><br>&nbsp;&nbsp;      Event.last.games.reorder('<wbr>play_at')<br>  <br>&n=
+bsp;&nbsp;   Cheers.<br><br>[1] <a href=3D"http://www.fifa.com/tournaments/=
+archive/worldcup/mexico1986/matches" target=3D"_blank" onmousedown=3D"this.=
+href=3D'http://www.google.com/url?q\75http%3A%2F%2Fwww.fifa.com%2Ftournamen=
+ts%2Farchive%2Fworldcup%2Fmexico1986%2Fmatches\46sa\75D\46sntz\0751\46usg\7=
+5AFQjCNFLQOEc2UnvMroEY09FWLTthazVkw';return true;" onclick=3D"this.href=3D'=
+http://www.google.com/url?q\75http%3A%2F%2Fwww.fifa.com%2Ftournaments%2Farc=
+hive%2Fworldcup%2Fmexico1986%2Fmatches\46sa\75D\46sntz\0751\46usg\75AFQjCNF=
+LQOEc2UnvMroEY09FWLTthazVkw';return true;">www.fifa.com/tournaments/<wbr>ar=
+chive/worldcup/mexico1986/<wbr>matches</a><span style=3D"color:rgb(51,51,51=
+);font-family:Helvetica,arial,freesans,clean,sans-serif;font-size:14px;line=
+-height:23.799999237060547px"><br></span></div></blockquote></div>
+------=_Part_500_3584164.1402909594911--
+
+------=_Part_499_1665257.1402909594911--
+

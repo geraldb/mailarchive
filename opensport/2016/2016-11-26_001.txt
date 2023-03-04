@@ -1,0 +1,62 @@
+From 6357209765387436032@xxx Sat Nov 26 09:40:41 +0000 2016
+X-GM-THRID: 6342113564983033856
+X-Received: by 10.107.7.221 with SMTP id g90mr2218141ioi.24.1480153241560;
+        Sat, 26 Nov 2016 01:40:41 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.29.137 with SMTP id y9ls6514188otd.39.gmail; Sat, 26 Nov
+ 2016 01:40:41 -0800 (PST)
+X-Received: by 10.200.48.85 with SMTP id g21mr2182436qte.34.1480153241265;
+        Sat, 26 Nov 2016 01:40:41 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x235.google.com (mail-io0-x235.google.com. [2607:f8b0:4001:c06::235])
+        by gmr-mx.google.com with ESMTPS id p84si1501686itg.1.2016.11.26.01.40.41
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 26 Nov 2016 01:40:41 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::235 as permitted sender) client-ip=2607:f8b0:4001:c06::235;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::235 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x235.google.com with SMTP id c21so152869414ioj.1
+        for <opensport@googlegroups.com>; Sat, 26 Nov 2016 01:40:41 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=Dq72G55YG5LalSwTBKX+a79C4guaRPHzFJZtzTfXTJ4=;
+        b=c5VymKMnejhyba1+alfKsheHvTjyr/CuwLfeMQm1yk0bVq0vxU4A+1wTP4VLLND/JV
+         b9DhspfBRby6p1POpPIcQebKcnCGnqEqLoaOXMjNPQGTLsrU8LflpFrXjQy6OVZz9ACF
+         k+0H5pYsP1RysjqJEZh8aNWLqiweK73A84jHE6fvh0j+2loQ45wCAC8qqSwI92mu4D68
+         30Rv8kpCeJFaRnXg2v6bei4+RCk/85HenVLomVbs+alYkDJGUKlN2uuQIXVAsSeW/e74
+         vWy6RvTHRyQrU3ukSrCSD8SR/MZyEltu9JvC/3LtJOfnEaIbwe6GHiKoAQxB5zca8XuE
+         uxWg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=Dq72G55YG5LalSwTBKX+a79C4guaRPHzFJZtzTfXTJ4=;
+        b=IA6adqwiJ/mAPSidJEo1GzWMltfccZ5l4yCacrMD517c5kKO6kl2FF1Tmbf0SxQMl3
+         kQufEjsXeiObX3OgnvoI2XYvlr5mb72dj4FFPytEIIodbsRwrMhRQmAU1J7eQK7luBIW
+         w2YjDFS9wLBWYvsE8OoHFks+EXhA2xLn7br8uxt62tigTEoIaewCLsdOhJmjCcxJYvZF
+         RXuv+I90BLoLgOQU5hQN678va9apqZv0RdiU7r4trIHo8u3Gv45P5fwIwvm4kPZvR/+l
+         vhbaf03CrzwJQFryTXhg9Y3ZVLU/YNUh2A8+kzyQx8uOZd3vRzaEr4Ih9pgAXkjgLWPJ
+         m8jA==
+X-Gm-Message-State: AKaTC03++sNoGVtqs/6VRTENAnPOwEK/dsV/iEuf1yT8EuIZR6cpR6Brfqh40cd7La3HF5ZTZCtaFADUyfKSSQ==
+X-Received: by 10.36.74.145 with SMTP id k139mr5968414itb.7.1480153240808;
+ Sat, 26 Nov 2016 01:40:40 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.131.210 with HTTP; Sat, 26 Nov 2016 01:40:40 -0800 (PST)
+In-Reply-To: <640e9247-6e2b-48dc-8a55-c9b591f0d408@googlegroups.com>
+References: <f6259f69-0d0f-4ca1-9ac8-af45aeca4c1b@googlegroups.com> <640e9247-6e2b-48dc-8a55-c9b591f0d408@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 26 Nov 2016 10:40:40 +0100
+Message-ID: <CAAxEZd8pyGBCzFYGpSZnHTas1va4V5Xsao=4TCiUtArDdsVTig@mail.gmail.com>
+Subject: Re: [opensport] Re: How to use the .txt files in the world-cup repo?
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Ben,
+
+  Wow. Amazing visualization with D3.js. Thanks for sharing and
+posting. Keep it up.Cheers.
+

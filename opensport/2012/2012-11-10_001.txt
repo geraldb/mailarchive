@@ -1,0 +1,52 @@
+From 26592935936@xxx Tue Jun 16 00:17:25 +0000 2015
+X-GM-THRID: 27721203712
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,bf907e16e3a6600b,start
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+Received: by 10.52.37.227 with SMTP id b3mr5747955vdk.2.1352575104577;
+        Sat, 10 Nov 2012 11:18:24 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.220.107.208 with SMTP id c16ls5984882vcp.3.gmail; Sat, 10 Nov
+ 2012 11:18:24 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.52.93.132 with SMTP id cu4mr2972947vdb.14.1352575104396; Sat,
+ 10 Nov 2012 11:18:24 -0800 (PST)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by b19g2000vbt.googlegroups.com with HTTP; Sat, 10 Nov 2012 11:18:24
+ -0800 (PST)
+Date: Sat, 10 Nov 2012 11:18:24 -0800 (PST)
+User-Agent: G2/1.0
+X-Google-Token: EIDR-oQF-Ak5_LI67mU0
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:16.0)
+ Gecko/20100101 Firefox/16.0,gzip(gfe)
+X-Google-IP: 193.83.213.255
+Message-ID: <5fff753d-e93b-4797-8c96-dfa1fe4b07b9@b19g2000vbt.googlegroups.com>
+Subject: sport.db JSON(P) API Sample w/ Sinatra - Football Fixture Web Service
+ in Ruby
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Open Sports Database (sport.db) and Friends" <opensport@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  I have created a little JSON/JSONP API service for the open sports
+database (that is, sport.db) using the Sinatra Ruby gem. For example, /
+api/event/en.2012_13/round/2 [1] gets you the football fixtures for
+the 2nd round of the English Premier League (season 2012/2013). See
+the Sinatra single-file source [2] or the start page [3] for more
+info.
+
+  Cheers.
+
+[1] http://sportdbapi.herokuapp.com/api/event/en.2012_13/round/2
+[2] https://github.com/geraldb/sport.db.api/blob/master/service.rb
+[3] http://sportdbapi.herokuapp.com
+

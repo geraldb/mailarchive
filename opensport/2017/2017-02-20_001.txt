@@ -1,0 +1,64 @@
+From 6389164327523319808@xxx Mon Feb 20 12:20:42 +0000 2017
+X-GM-THRID: 6387667141910331392
+X-Received: by 10.157.42.161 with SMTP id e30mr6668265otb.39.1487593242065;
+        Mon, 20 Feb 2017 04:20:42 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.107.25.145 with SMTP id 139ls2759172ioz.20.gmail; Mon, 20 Feb
+ 2017 04:20:41 -0800 (PST)
+X-Received: by 10.107.170.221 with SMTP id g90mr7193328ioj.20.1487593241367;
+        Mon, 20 Feb 2017 04:20:41 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22b.google.com (mail-io0-x22b.google.com. [2607:f8b0:4001:c06::22b])
+        by gmr-mx.google.com with ESMTPS id f73si1384653ita.1.2017.02.20.04.20.41
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Feb 2017 04:20:41 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22b as permitted sender) client-ip=2607:f8b0:4001:c06::22b;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22b.google.com with SMTP id l66so25264474ioi.1
+        for <opensport@googlegroups.com>; Mon, 20 Feb 2017 04:20:41 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=CVGwna0CrGw+C7PPqC8z1MbBTJY4mF7Kov72Xsbg3z0=;
+        b=lLoOoqEKGKc1lN7b/Idgjg7HH/Ab81PVbXme6VL8OTlHeDMj047ZKZqLV3VIcqWZhn
+         tPes/jTPRnjFIWBCPW9SWWiBJCoBgloANLFDcZY6g8KX+nWDjr5WRt4nEQUPTfsriIt2
+         tYpR1lgvLALJlEjswBpbjCWUunVzY0Ar2NFrdQk9Zitgb8tOEcEkEgFoTZZ39/OMqFmA
+         +sQLJJZtNxHR5C/P+XhVfpO8fChix1RSENR3s5hhyBPTzS48fNlzvzyYddzzl2M/wAW6
+         0zYsuKsbF75ezVZjT+Wa5kfd6kx4o9PaOYF1HZvMj9HqzP3ZsZBWnU/7YYMrg+Qh89mn
+         B1UQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=CVGwna0CrGw+C7PPqC8z1MbBTJY4mF7Kov72Xsbg3z0=;
+        b=GQLG0r5GjrSmcHHMuGV44vkdM1j+mhcrgXOWfAZk2Pafx2vPZsZmNn0TJQoaEt0ywf
+         GiGXpjFgsrLMlrYw/fwKRNUva8IqNQZ0OVLTQ2b0hXpxNWYokZIXEkVTUz8LRjEkfKJ3
+         JIa4xqwK6TQPonnkfgIDZCozfBHrSEHMfVCup/dzO3FVsHx8w4KL+ChEC0vjGoFrLo1G
+         /nWA6GMQY3OBuNJ44xYSiQbSBOP2OsJDdx8lQdjDEw1A1MhnHc6DOXhPyHU9uYxxycl5
+         zS6s4yrb1pUBv4DkvkCQWo9TfpLRibaVCVnlGBJyLTRi6qqL8SAphMzL8t12ITJWP2P+
+         804g==
+X-Gm-Message-State: AMke39lHTNymhxOpyH0rp+CNBKV1XlGEUcAfhu0+IDc0M1yvvtEQ1HJ/4FmfGt4fqEh7hJ1qzfib8Y2CcvkruA==
+X-Received: by 10.107.56.135 with SMTP id f129mr15606110ioa.197.1487593240872;
+ Mon, 20 Feb 2017 04:20:40 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.34.209 with HTTP; Mon, 20 Feb 2017 04:20:39 -0800 (PST)
+In-Reply-To: <60167144-366a-4dc5-be02-3ebf0bc5be82@googlegroups.com>
+References: <5ff6c1d2-64f2-489c-bb28-08b5223cd609@googlegroups.com>
+ <CAAxEZd9Vk=uWdYVGn3jOjdx-6vRfq_hn8k1ng0xtzUWgqQ1k0A@mail.gmail.com>
+ <c09e3a70-ad11-44a6-b4da-30fb4f011754@googlegroups.com> <CAAxEZd8G6jvcvJMebU5vOuuXFceLJY0zpY+R2EhDkpCWkyL1Yw@mail.gmail.com>
+ <60167144-366a-4dc5-be02-3ebf0bc5be82@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 20 Feb 2017 13:20:39 +0100
+Message-ID: <CAAxEZd_ks=RaCZVmLa5uyb1oZDWjPXbrfkJpFDw3GZLhR0zjKA@mail.gmail.com>
+Subject: Re: [opensport] Django ORM adapter available
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello Kevin,
+
+    Great. Thanks for the update. Cheers.
+

@@ -1,0 +1,141 @@
+From 6762177306560561152@xxx Fri Nov 22 17:01:34 +0000 2019
+X-GM-THRID: 6762177304806293504
+X-Received: by 2002:a5d:4608:: with SMTP id t8mr19178455wrq.91.1574442094253;
+        Fri, 22 Nov 2019 09:01:34 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:6000:1008:: with SMTP id a8ls4882943wrx.3.gmail; Fri, 22
+ Nov 2019 09:01:33 -0800 (PST)
+X-Google-Smtp-Source: APXvYqwRBTtJaPAwugT+waVOMSYS6QSAm3wgWAt4Q6Gz/Vlny1TOAzWs5I+kpKnlTxyXIkyfZ3F8
+X-Received: by 2002:a5d:5273:: with SMTP id l19mr17971092wrc.175.1574442093055;
+        Fri, 22 Nov 2019 09:01:33 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1574442093; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hlHY4pDfv6arusKG5Jd0bZPl1p8GqUS6FQaoyRJm6UzfEBPWVu60x2EJ109kcVo0TK
+         UajFbMjn+0/AABU0btmuoKfG8cftgVmiGhHpxoYKGnIVtGklMtkpjwzE3u1aNEs2qkwP
+         wo8tnAGx2vg6n5GIlJywOw2qhYGwGbL1/ji5Sjq1XjMg1WTbtiuOtOlQv/Bb6bFeT9Xd
+         UQv9r8LecQcE4V8oMe+a3rgr8anOg98lmrvmYJDbkmdI8iAcNEa7xSx80NDBXR7pHXy8
+         QYUCx4fmbLUmxPKaC1FAfPe56PVkGj7Ci5fQEtL0W9g/KlnKDvyIERXdalDlGDOvm2bh
+         PMSA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=3aygD55uI90+QNpMolrPw8I6/VOhgtM9AE6jFdEyqwI=;
+        b=f4fNyaQUhsagYLNaNlZobagv+/dMY+9PBKedoRckw+nGEPI/a7hay4BcndX1IQKzKq
+         v9wlsB09b32dAJ8fji+Lx1oiDUbJmWHZu7CaydcOCk8e2pro3QwyYl8kiGpGebWyA6Ra
+         NGW6bzPsof16phw0ORVHZJUv0ICtnIxA3d3m/St8G+5UeemNiOMR4NCqasXEJrmy5v1n
+         ZSQT32wIl3tZiRn2UzVdwUVPjcDHDMHf4Z5NSI2Th3GIfkAA+D7gL72XQuveVo8g0pvw
+         ebXnAnAUQYVOp49PtjQuCtTH5f5898xHQIZ9HH1MEruI3e7Bh+C8pduxPK0JsBBIIBft
+         zIBA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=DQmoFxNL;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x12a.google.com (mail-lf1-x12a.google.com. [2a00:1450:4864:20::12a])
+        by gmr-mx.google.com with ESMTPS id h2si224113wre.0.2019.11.22.09.01.33
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 22 Nov 2019 09:01:33 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12a as permitted sender) client-ip=2a00:1450:4864:20::12a;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=DQmoFxNL;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::12a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x12a.google.com with SMTP id r15so3093234lff.2
+        for <opensport@googlegroups.com>; Fri, 22 Nov 2019 09:01:33 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=3aygD55uI90+QNpMolrPw8I6/VOhgtM9AE6jFdEyqwI=;
+        b=DQmoFxNLFfPWb7uU2z3SmLBTVU6VnYClrk/uL+/z9zomC+L64U3PPTnCa/9yj+NxjP
+         2g+gQt5mcR9Kl6EaeSe1fU0OfWPWV5W5C0RvJRgg79dlhujj8MWvEYXZg7JZdKmh7AjO
+         rXWuE2AUKAXxhWLJRDabNYzzcp9sjp6/GYgFpEP+Wtf49fO478umUOqIh7zAkNxQRbyA
+         mkn8kwEk4fxbRWIAemDSueBTyktEbrLZ8of+5JNXCHKA0wilr7Aknda9sRTWYzqjqMt8
+         49HmNLhScIShTwBSZD3hczwyTGx8mOb+TOevcMf/SSr0WJKpYhEiBabkavYsiZbYk3IA
+         mMwg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=3aygD55uI90+QNpMolrPw8I6/VOhgtM9AE6jFdEyqwI=;
+        b=GM5L32pYMkkGOPxJp0oJBhP7RdQ/XIYoynhUBqkhZUgDFY7ITaRCbSnojaxM0xL2LL
+         V/pZhWDZmyeI/VaHD27Btn+dpKtWnwoBOdyWKxTsyqgusyx4dsPZ5SDO27RxwPxZA/HB
+         Csy5xoxetu2hX82g0/Vtrkh9M1klYIO6lcdBZHSTKZ7XKHR9+1EnjJqCsKx8QwXVgv1v
+         k95LDLn8PSDnHT54StxlH9M1SUrPr9dHggl/ZO2a240i2iVfeOw420tOfd7OwKDO4zqv
+         eXjhhQiC9LtRRWxVW+P2OdX3xT7EiXryeF/C/OluGNDNpZyJsDfupQJIRiZ7yE7WQRy8
+         GCfQ==
+X-Gm-Message-State: APjAAAVGSYM/RVOdYHY1uN8MEKA9c/Wx+E9C7GS6uXj0BeX6HVepk3PX
+	dMY3We8aPiTrVB/T+HivTmOd98GYlQ8hkzi8rpI8vRlHQQI=
+X-Received: by 2002:a19:be92:: with SMTP id o140mr12881553lff.40.1574442092307;
+ Fri, 22 Nov 2019 09:01:32 -0800 (PST)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 22 Nov 2019 18:01:21 +0100
+Message-ID: <CAAxEZd81US-LSM=3nX=reopfK-KxN3pbZKF8KHeg3C7sRrCMaw@mail.gmail.com>
+Subject: sportdb v2.0 - command line tool for reading text datasets (leagues,
+ clubs, match schedules, etc.) in any SQL dababase (e.g. football.db,
+ england.db, etc.)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I've updated the sportdb command line tool / library [1] that lets
+you read in (parse) datasets (e.g. leagues, clubs, match schedules,
+etc.) in plain text in your SQL database of choice (e.g. SQLite,
+PostgreSQL, etc.)
+
+  What's news in 2.0?
+
+  The setup and formats have been made easier, for example, all
+datasets are now in plain text (e.g. no more yaml for configuration)
+and the required setup manifest files have been replaced by automatic
+(automagic) generation thanks to directory and file name conventions.
+The world.db with all the world's countries is now built-in (see the
+fifa library [2])  and, thus, is no longer a required dependency on
+startup (if you read football datasets). And much more.
+
+
+  Anyways, to build yourself a copy for the English Premier League 2019/20
+  season type:
+
+  $ sportdb new eng2019-20
+
+  That's all. This will read in the match schedule and much more from
+the /england dataset e.g.
+
+Matchday 12
+[Fri Nov/8]
+  Norwich City            0-2 FC Watford
+[Sat Nov/9]
+  FC Chelsea              2-0 Crystal Palace
+  Leicester City          2-0 FC Arsenal
+  FC Burnley              3-0 West Ham United
+  Newcastle United        2-1 AFC Bournemouth
+  FC Southampton          1-2 FC Everton
+  Tottenham Hotspur       1-1 Sheffield United
+ [Sun Nov/10]
+  FC Liverpool            3-1 Manchester City
+  Manchester United       3-1 Brighton & Hove Albion
+  Wolverhampton Wanderers 2-1 Aston Villa
+
+
+  Happy data and text wrangling with ruby. Enjoy the beautiful game.
+  Cheers. Prost.
+
+PS:
+See the football.db League Quick Starter Sample - Mauritius Premier League =
+[3]
+if you want to start from scratch (zero) with your very own league.
+
+See the football.db datasets [4] if you want to read in ready-to-use /
+ready-to-fork packages incl. the English Premier League, the German
+Bundesliga, the Spanish Primera Divisi=C3=B3n and some more.
+
+[1]: https://github.com/sportdb/sport.db/tree/master/sportdb
+[2]: https://rubygems.org/gems/fifa
+[3]: https://github.com/openfootball/league-starter
+[4]: https://github.com/openfootball
+

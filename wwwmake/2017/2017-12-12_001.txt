@@ -1,0 +1,100 @@
+From 6498654954410999808@xxx Tue Dec 12 13:40:15 +0000 2017
+X-GM-THRID: 6498654953610936320
+X-Received: by 10.99.119.143 with SMTP id s137mr580959pgc.150.1513086015560;
+        Tue, 12 Dec 2017 05:40:15 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 10.99.113.26 with SMTP id m26ls2730286pgc.2.gmail; Tue, 12 Dec
+ 2017 05:40:14 -0800 (PST)
+X-Google-Smtp-Source: ACJfBosTzra9LmFomE1kR9FfTVPxruCKp9hs3Fboa4WxXBYAioywM5NVN0i5Q/tuHPkPBZpI/8Qn
+X-Received: by 10.99.123.7 with SMTP id w7mr557569pgc.87.1513086014521;
+        Tue, 12 Dec 2017 05:40:14 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1513086014; cv=none;
+        d=google.com; s=arc-20160816;
+        b=MxJ15kcmquVEe2YSvTSRrBRS/hTqvzMPHHZvzGz+km+3ijRynMCLBR6GJFRCE/aMML
+         oSNzItk7R+S19B916crtzEWKZRSdk4xQPWfn5g2UAJAfX6hDGqPJwJarf3to5mc1BmST
+         GGqGfL9QrMwahyvdHilSs861WLwPK3JDC5m1AxcgU6NNDQ+LyUel23bPxKRPRdUvy68g
+         TurPV5G0a9OHoMxgc1im8pc+ZbfZNkeU4aOmdRbEtNT5ngIQ4cJUCIbQT4129uPWalwq
+         VvEeCnquYbApdC3G1cvzceRmZWyVDJSMeA9m/SUN2taXYdBodoXoOlvlmkkpp1IjH6nJ
+         zxJQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=FdV/rhZOc6by3147JyuJjFi4iVo/lD72wWEO3OvdBhk=;
+        b=AtWCNuz2z5WonHhsGpaK4Sm0DHsyttM5oBEfaWp6weRHElUAkpUlqkE7fgY/pfTfMo
+         dbWY3Zipe3qmoaMap9xC+SuVTwpX0H2VAwjX7lZcAb9w7OGJAiZuCW2SBtuxcboTJYkL
+         RQZr4QDl05k+2+rus0wPfnCLK/dLgrjU+pF67qX/Uh9Ib6rjGC6nrPxDpS/eTZgZ339Q
+         VNb8SgnTg68AIom9UwOmbS33MozTQ2ZZHAoX+M/rbPW1pBY6LTzLoGL+KIfo+KYE7z8u
+         qTYZc5gctTwalVJDlRvfvjKJTQ7cnq9I5N5uFClDFQObR8JYTYbsTxVt2Oy+ucaaV5Up
+         Gslw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=igIf7iNB;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x22a.google.com (mail-it0-x22a.google.com. [2607:f8b0:4001:c0b::22a])
+        by gmr-mx.google.com with ESMTPS id e73si818050pfj.3.2017.12.12.05.40.14
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 12 Dec 2017 05:40:14 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) client-ip=2607:f8b0:4001:c0b::22a;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=igIf7iNB;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22a.google.com with SMTP id 68so24299474ite.4
+        for <wwwmake@googlegroups.com>; Tue, 12 Dec 2017 05:40:14 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=FdV/rhZOc6by3147JyuJjFi4iVo/lD72wWEO3OvdBhk=;
+        b=igIf7iNB783eJTCtyYswaTsDgMu33hskIoS5XTX3sS2Rgsl4H0Tl/2wS+ZYr2v2bVV
+         G6wYrUYRybkGKfPBByRN0a06C9m+Gd72UNASCuOVe4cuZp5QGwYBDvktgKbLLAv3+DCr
+         SognWLPnsEtgFnTRRdv5EUQV87Csze9qkSLqqhSkJRel9/g5kfL7H3N3bdO4tJreyje7
+         8RdYPr/YvaFvAWumzNs5i9qk/CdKRY6Xj9ezhApL1pSi09xRrKQY53vMiNaNsSMAcp84
+         Kb4SpDn2OnHwPx0QRnDyhjn/CJ81fCGpQqrpZkqrocrufn/EWGeR/0VFuGtdY7wDb+aU
+         zhaA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=FdV/rhZOc6by3147JyuJjFi4iVo/lD72wWEO3OvdBhk=;
+        b=No1wN+c8vlViLauVocMWx3uJp/1BQ1TERqQ/R+xetXBl40zWmjFFRRHjAElsGocDnC
+         yJ3Fh+eUQHh+2cD3+w89oTEuxy6yy8VIU7+eAn5mw9Cp3PoXFENokiTQcUT1kIliGux+
+         kd8HLZrc9vnEXFl9KCfLecXD9znTyHp1o0WUtXTCmjHZ5D+VeB0Dsq1tmnPTaunmeIlS
+         PUgqRQUr7BKT01t0wwPPH0rRQ1CV0Nqu5zs1OVSi485s+lkGR9qARpQAWNE2T2Ii8KkP
+         f2TN5YkhU50ctgqoSQKK3tjnNhP97pkQJXlrER7yF7aM3Y5PAxNAXrQEhC0PS83vn7+5
+         21Lg==
+X-Gm-Message-State: AKGB3mLXjs24B1cJFuHhEUJH1IU5erSNj8DqnPPMvdvmMwp9Uk7rTaoB
+	Nk19Lb8ppw96nr31oznyYEJZ/PhV4qVacleBZjW+GA==
+X-Received: by 10.36.243.13 with SMTP id t13mr2369253ith.19.1513086013930;
+ Tue, 12 Dec 2017 05:40:13 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.156.69 with HTTP; Tue, 12 Dec 2017 05:40:13 -0800 (PST)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 12 Dec 2017 14:40:13 +0100
+Message-ID: <CAAxEZd_pt+ArjLqCcNmyKLh7EtZee0vt2ufFm=6_QNK_81tJdA@mail.gmail.com>
+Subject: Day 12 - Ruby Advent Calendar 2017 - pluto - Auto-build web pages
+ from published web feeds; planet (static) website generator
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+  welcome back to the Ruby Advent Calendar 2017 [1] - 25 Days
+of Ruby Gems / Libraries from December 1 to December 25.
+
+    Let's continue the series on Day 12 with the pluto
+library / gem and command line tool.  Auto-build web pages from
+published web feeds.
+Planet (static) website generator.
+
+  The Future of Online News - The Future of Facebook & Co - Web Feeds,
+Web Feeds, Web Feeds.
+
+  Happy publishing.  Cheers.
+
+PS: You're more than welcome to send in your articles (about your
+library / gem of choice) too!
+
+[1] https://planetruby.github.io/advent2017
+[2] https://planetruby.github.io/advent2017/12-pluto
+

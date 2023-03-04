@@ -1,0 +1,537 @@
+From 1483425710080@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1456305340416
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,2568c5e341d64211
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.236.61.170 with SMTP id w30mr2624065yhc.20.1392256699902;
+        Wed, 12 Feb 2014 17:58:19 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.182.81.72 with SMTP id y8ls1357802obx.10.gmail; Wed, 12 Feb
+ 2014 17:58:19 -0800 (PST)
+X-Received: by 10.182.191.98 with SMTP id gx2mr190180obc.22.1392256699082;
+        Wed, 12 Feb 2014 17:58:19 -0800 (PST)
+X-Google-Doc-Id: cc1d77ea32a2f748
+X-Google-Web-Client: true
+Date: Wed, 12 Feb 2014 17:58:18 -0800 (PST)
+From: Micah Cooper <coopermj@miamioh.edu>
+To: webslideshow@googlegroups.com
+Message-Id: <80f02c6b-57a5-49ac-883e-e8081b99bd5b@googlegroups.com>
+In-Reply-To: <CAAxEZd-h1Hr20ZJBKXieALSfxAfM6g+4Bv3nBz-1Ve1LG75mog@mail.gmail.com>
+References: <cc360c27-7967-4404-942f-e2c201024e4c@googlegroups.com>
+ <CAAxEZd8Yc0zOu4tdB9fQUy+Wy2b8wfn3Fp5mZDaPYOn4-1fLLg@mail.gmail.com>
+ <CAGz-Eo7zMq_k0R7XkJA5iYEvAAoTfpvqpjcz2g2BbUju87ey8w@mail.gmail.com>
+ <CAAxEZd9O=iVO8d7Hk=YyqvvBWyNPxaZP1VmRA+BpYDzM7T90bw@mail.gmail.com>
+ <e508d7aa-e0a8-4c2b-8ea9-b3ef909b0b36@googlegroups.com>
+ <CAAxEZd-h1Hr20ZJBKXieALSfxAfM6g+4Bv3nBz-1Ve1LG75mog@mail.gmail.com>
+Subject: Re: [slideshow:340] Markdown incremental steps
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2593_24716129.1392256698469"
+X-Google-Token: ELrN8JcFaNGy2alLbFM0
+X-Google-IP: 75.185.206.239
+
+------=_Part_2593_24716129.1392256698469
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2594_124741.1392256698469"
+
+------=_Part_2594_124741.1392256698469
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Oh, excellent! Perfect =E2=80=94 thanks much!=20
+
+On Wednesday, February 12, 2014 9:52:02 AM UTC-5, Gerald Bauer wrote:
+>
+> Hello,=20
+>
+>    To mark individual list item (as seems to be required by deck.js &=20
+> friends) add the block attribute list after the marker. Quote from the=20
+> kramdown docu [1]:=20
+>
+> > A optional IAL [=3Dinline attribute list] for applying attributes to a=
+=20
+> list item can be used after the list > item marker:=20
+> >=20
+> > * {:.cls} This item has the class "cls".=20
+> >  Here continues the above paragraph.=20
+> >=20
+> > * This is a normal list item.=20
+>
+>   Thus use something like:=20
+>
+>  * {: .slide} item 1=20
+>  * {: .slide} item 2=20
+>  * {: .slide} item 3=20
+>
+> or=20
+>
+>  * {: .slide} item 1=20
+>  * {: .slide} item 2=20
+>  * {: .slide} item 3=20
+>  {: .step}=20
+>
+>   to try to make it work for all themes. Cheers.=20
+>
+> [1] http://kramdown.gettalong.org/syntax.html#lists=20
+>
+> 2014-02-11 20:18 GMT-06:00 Micah Cooper <coop...@miamioh.edu <javascript:=
+>>:=20
+>
+> > Thanks for all the help! One last question, though:=20
+> >=20
+> > https://github.com/geraldb/s6/blob/gh-pages/DOCS/FORMAT.md states "=20
+> Shortcut=20
+> > Tip: If a list gets marked up with .step, all its children get marked u=
+p=20
+> > automatically."=20
+> >=20
+> > Does that mean each <li> should get the class? It looks as if the=20
+> default=20
+> > template works if step/slide/fragment (for reveal.js) tag is on the=20
+> <ol>,=20
+> > but deck.js and reveal.js seem to need it on the <li>. Unfortunately,=
+=20
+> > kramdown seems to only tag the <ol>, not the <li>=20
+> >=20
+> > * one=20
+> >=20
+> > * two=20
+> >=20
+> > * three=20
+> >=20
+> > {: .step}=20
+> >=20
+> > <ul class=3D"step">=20
+> >=20
+> >   <li>one</li>=20
+> >=20
+> >   <li>two</li>=20
+> >=20
+> >   <li>three</li>=20
+> >=20
+> > </ul>=20
+> >=20
+> > Does that make sense? Am I making it too complicated on myself? :D=20
+> >=20
+> >=20
+> > On Monday, February 10, 2014 5:58:41 PM UTC-5, Gerald Bauer wrote:=20
+> >>=20
+> >> Hello,=20
+> >>   Great to hear.   I don't know deck.js in detail. Try adding both=20
+> classes=20
+> >> e.g.=20
+> >>=20
+> >> {: .step .slide }=20
+> >>=20
+> >>   instead of just=20
+> >>=20
+> >> {: .step }=20
+> >>=20
+> >>   and it should work with both themes. Cheers.=20
+> >>=20
+> >> 2014-02-10 13:37 GMT-06:00 Micah Cooper <coop...@miamioh.edu>:=20
+> >> > Fantastic -- thanks for the quick reply!=20
+> >> >=20
+> >> > Looks as if the native theme respects step and deck.js (for example)=
+=20
+> >> > requires .slide, which breaks my dream of flipping packs back and=20
+> forth.=20
+> >> > I'm=20
+> >> > assuming translation for different themes would require adding a=20
+> >> > parser/rewriter?=20
+> >> >=20
+> >> > Thanks again!=20
+> >> >=20
+> >> >=20
+> >> > On Mon, Feb 10, 2014 at 11:47 AM, Gerald Bauer <gerald...@gmail.com>=
+=20
+> >> > wrote:=20
+> >> >>=20
+> >> >> Hello,=20
+> >> >>=20
+> >> >> > Sorry for the possible double post -- didn't see the first one=20
+> >> >> > appear.=20
+> >> >>=20
+> >> >>   Sorry, the first post is moderated - unfortunately even this list=
+=20
+> >> >> gets lots of spam.=20
+> >> >>=20
+> >> >> > I'm trying to do step with Markdown and can't get it to work. It=
+=20
+> >> >> > looks=20
+> >> >> > as if the example with incremental bullets is in Textile=20
+> >> >> > and when I try *(step) in Markdown, it displays the (step)=20
+> literally.=20
+> >> >> > Am=20
+> >> >> > I just messing up the syntax in Markdown?=20
+> >> >>=20
+> >> >>   Standard "plain" or "classic" markdown has no support for css=20
+> style=20
+> >> >> classes. However, markdown extras such as MultiMarkdown offer, for=
+=20
+> >> >> example, block attribute list e.g.=20
+> >> >>=20
+> >> >> * item 1=20
+> >> >> * item 2=20
+> >> >> * item 3=20
+> >> >> {: .step}=20
+> >> >>=20
+> >> >>   That should work if you use kramdown, for example, for your=20
+> markdown=20
+> >> >> conversion. See the syntax page [1], for details. Cheers.=20
+> >> >>=20
+> >> >> [1] http://kramdown.gettalong.org/syntax.html#block-ials=20
+> >> >>=20
+> >> >> 2014-02-10 8:31 GMT-06:00 Micah Cooper <coop...@miamioh.edu>:=20
+> >> >> > Sorry for the possible double post -- didn't see the first one=20
+> >> >> > appear.=20
+> >> >> >=20
+> >> >> > I'm trying to do step with Markdown and can't get it to work. It=
+=20
+> >> >> > looks=20
+> >> >> > as if=20
+> >> >> > the example with incremental bullets is in Textile and when I try=
+=20
+> >> >> > *(step) in=20
+> >> >> > Markdown, it displays the (step) literally. Am I just messing up=
+=20
+> the=20
+> >> >> > syntax=20
+> >> >> > in Markdown?=20
+> >> >> >=20
+> >> >> >=20
+> >> >> > --=20
+> >> >> > You received this message because you are subscribed to the Googl=
+e=20
+> >> >> > Groups=20
+> >> >> > "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n=
+'=20
+> >> >> > Friends"=20
+> >> >> > group.=20
+> >> >> > To unsubscribe from this group and stop receiving emails from it,=
+=20
+> >> >> > send=20
+> >> >> > an=20
+> >> >> > email to webslideshow...@googlegroups.com.=20
+> >> >> > For more options, visit https://groups.google.com/groups/opt_out.=
+=20
+> >> >>=20
+> >> >> --=20
+> >> >> You received this message because you are subscribed to the Google=
+=20
+> >> >> Groups=20
+> >> >> "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n'=
+=20
+> >> >> Friends"=20
+> >> >> group.=20
+> >> >> To unsubscribe from this group and stop receiving emails from it,=
+=20
+> send=20
+> >> >> an=20
+> >> >> email to webslideshow...@googlegroups.com.=20
+> >> >> For more options, visit https://groups.google.com/groups/opt_out.=
+=20
+> >> >=20
+> >> >=20
+> >> > --=20
+> >> > You received this message because you are subscribed to the Google=
+=20
+> >> > Groups=20
+> >> > "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n'=
+=20
+> >> > Friends"=20
+> >> > group.=20
+> >> > To unsubscribe from this group and stop receiving emails from it,=20
+> send=20
+> >> > an=20
+> >> > email to webslideshow...@googlegroups.com.=20
+> >> > For more options, visit https://groups.google.com/groups/opt_out.=20
+> >=20
+> > --=20
+> > You received this message because you are subscribed to the Google=20
+> Groups=20
+> > "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n'=20
+> Friends"=20
+> > group.=20
+> > To unsubscribe from this group and stop receiving emails from it, send=
+=20
+> an=20
+> > email to webslideshow...@googlegroups.com <javascript:>.=20
+> > For more options, visit https://groups.google.com/groups/opt_out.=20
+>
+
+------=_Part_2594_124741.1392256698469
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Oh, excellent! Perfect =E2=80=94 thanks much!&nbsp;<br><br=
+>On Wednesday, February 12, 2014 9:52:02 AM UTC-5, Gerald Bauer wrote:<bloc=
+kquote class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-l=
+eft: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;To mark individual list item (as seems to be required by d=
+eck.js &amp;
+<br>friends) add the block attribute list after the marker. Quote from the
+<br>kramdown docu [1]:
+<br>
+<br>&gt; A optional IAL [=3Dinline attribute list] for applying attributes =
+to a list item can be used after the list &gt; item marker:
+<br>&gt;
+<br>&gt; * {:.cls} This item has the class "cls".
+<br>&gt; &nbsp;Here continues the above paragraph.
+<br>&gt;
+<br>&gt; * This is a normal list item.
+<br>
+<br>&nbsp; Thus use something like:
+<br>
+<br>&nbsp;* {: .slide} item 1
+<br>&nbsp;* {: .slide} item 2
+<br>&nbsp;* {: .slide} item 3
+<br>
+<br>or
+<br>
+<br>&nbsp;* {: .slide} item 1
+<br>&nbsp;* {: .slide} item 2
+<br>&nbsp;* {: .slide} item 3
+<br>&nbsp;{: .step}
+<br>
+<br>&nbsp; to try to make it work for all themes. Cheers.
+<br>
+<br>[1] <a href=3D"http://kramdown.gettalong.org/syntax.html#lists" target=
+=3D"_blank" onmousedown=3D"this.href=3D'http://www.google.com/url?q\75http%=
+3A%2F%2Fkramdown.gettalong.org%2Fsyntax.html%23lists\46sa\75D\46sntz\0751\4=
+6usg\75AFQjCNG1WrQ9SaqZiGxb02-1kilJWmW_nA';return true;" onclick=3D"this.hr=
+ef=3D'http://www.google.com/url?q\75http%3A%2F%2Fkramdown.gettalong.org%2Fs=
+yntax.html%23lists\46sa\75D\46sntz\0751\46usg\75AFQjCNG1WrQ9SaqZiGxb02-1kil=
+JWmW_nA';return true;">http://kramdown.gettalong.org/<wbr>syntax.html#lists=
+</a>
+<br>
+<br>2014-02-11 20:18 GMT-06:00 Micah Cooper &lt;<a href=3D"javascript:" tar=
+get=3D"_blank" gdf-obfuscated-mailto=3D"6kqErvUJtEgJ" onmousedown=3D"this.h=
+ref=3D'javascript:';return true;" onclick=3D"this.href=3D'javascript:';retu=
+rn true;">coop...@miamioh.edu</a>&gt;:
+<br>&gt; Thanks for all the help! One last question, though:
+<br>&gt;
+<br>&gt; <a href=3D"https://github.com/geraldb/s6/blob/gh-pages/DOCS/FORMAT=
+.md" target=3D"_blank" onmousedown=3D"this.href=3D'https://www.google.com/u=
+rl?q\75https%3A%2F%2Fgithub.com%2Fgeraldb%2Fs6%2Fblob%2Fgh-pages%2FDOCS%2FF=
+ORMAT.md\46sa\75D\46sntz\0751\46usg\75AFQjCNE9yXf_3DovtRQgKeRY5D158f04NA';r=
+eturn true;" onclick=3D"this.href=3D'https://www.google.com/url?q\75https%3=
+A%2F%2Fgithub.com%2Fgeraldb%2Fs6%2Fblob%2Fgh-pages%2FDOCS%2FFORMAT.md\46sa\=
+75D\46sntz\0751\46usg\75AFQjCNE9yXf_3DovtRQgKeRY5D158f04NA';return true;">h=
+ttps://github.com/geraldb/s6/<wbr>blob/gh-pages/DOCS/FORMAT.md</a> states "=
+ Shortcut
+<br>&gt; Tip: If a list gets marked up with .step, all its children get mar=
+ked up
+<br>&gt; automatically."
+<br>&gt;
+<br>&gt; Does that mean each &lt;li&gt; should get the class? It looks as i=
+f the default
+<br>&gt; template works if step/slide/fragment (for reveal.js) tag is on th=
+e &lt;ol&gt;,
+<br>&gt; but deck.js and reveal.js seem to need it on the &lt;li&gt;. Unfor=
+tunately,
+<br>&gt; kramdown seems to only tag the &lt;ol&gt;, not the &lt;li&gt;
+<br>&gt;
+<br>&gt; * one
+<br>&gt;
+<br>&gt; * two
+<br>&gt;
+<br>&gt; * three
+<br>&gt;
+<br>&gt; {: .step}
+<br>&gt;
+<br>&gt; &lt;ul class=3D"step"&gt;
+<br>&gt;
+<br>&gt; &nbsp; &lt;li&gt;one&lt;/li&gt;
+<br>&gt;
+<br>&gt; &nbsp; &lt;li&gt;two&lt;/li&gt;
+<br>&gt;
+<br>&gt; &nbsp; &lt;li&gt;three&lt;/li&gt;
+<br>&gt;
+<br>&gt; &lt;/ul&gt;
+<br>&gt;
+<br>&gt; Does that make sense? Am I making it too complicated on myself? :D
+<br>&gt;
+<br>&gt;
+<br>&gt; On Monday, February 10, 2014 5:58:41 PM UTC-5, Gerald Bauer wrote:
+<br>&gt;&gt;
+<br>&gt;&gt; Hello,
+<br>&gt;&gt; &nbsp; Great to hear. &nbsp; I don't know deck.js in detail. T=
+ry adding both classes
+<br>&gt;&gt; e.g.
+<br>&gt;&gt;
+<br>&gt;&gt; {: .step .slide }
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; instead of just
+<br>&gt;&gt;
+<br>&gt;&gt; {: .step }
+<br>&gt;&gt;
+<br>&gt;&gt; &nbsp; and it should work with both themes. Cheers.
+<br>&gt;&gt;
+<br>&gt;&gt; 2014-02-10 13:37 GMT-06:00 Micah Cooper &lt;<a>coop...@miamioh=
+.edu</a>&gt;:
+<br>&gt;&gt; &gt; Fantastic -- thanks for the quick reply!
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; Looks as if the native theme respects step and deck.js (f=
+or example)
+<br>&gt;&gt; &gt; requires .slide, which breaks my dream of flipping packs =
+back and forth.
+<br>&gt;&gt; &gt; I'm
+<br>&gt;&gt; &gt; assuming translation for different themes would require a=
+dding a
+<br>&gt;&gt; &gt; parser/rewriter?
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; Thanks again!
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; On Mon, Feb 10, 2014 at 11:47 AM, Gerald Bauer &lt;<a>ger=
+ald...@gmail.com</a>&gt;
+<br>&gt;&gt; &gt; wrote:
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; Hello,
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; &gt; Sorry for the possible double post -- didn't see=
+ the first one
+<br>&gt;&gt; &gt;&gt; &gt; appear.
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; &nbsp; Sorry, the first post is moderated - unfortuna=
+tely even this list
+<br>&gt;&gt; &gt;&gt; gets lots of spam.
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; &gt; I'm trying to do step with Markdown and can't ge=
+t it to work. It
+<br>&gt;&gt; &gt;&gt; &gt; looks
+<br>&gt;&gt; &gt;&gt; &gt; as if the example with incremental bullets is in=
+ Textile
+<br>&gt;&gt; &gt;&gt; &gt; and when I try *(step) in Markdown, it displays =
+the (step) literally.
+<br>&gt;&gt; &gt;&gt; &gt; Am
+<br>&gt;&gt; &gt;&gt; &gt; I just messing up the syntax in Markdown?
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; &nbsp; Standard "plain" or "classic" markdown has no =
+support for css style
+<br>&gt;&gt; &gt;&gt; classes. However, markdown extras such as MultiMarkdo=
+wn offer, for
+<br>&gt;&gt; &gt;&gt; example, block attribute list e.g.
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; * item 1
+<br>&gt;&gt; &gt;&gt; * item 2
+<br>&gt;&gt; &gt;&gt; * item 3
+<br>&gt;&gt; &gt;&gt; {: .step}
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; &nbsp; That should work if you use kramdown, for exam=
+ple, for your markdown
+<br>&gt;&gt; &gt;&gt; conversion. See the syntax page [1], for details. Che=
+ers.
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; [1] <a href=3D"http://kramdown.gettalong.org/syntax.h=
+tml#block-ials" target=3D"_blank" onmousedown=3D"this.href=3D'http://www.go=
+ogle.com/url?q\75http%3A%2F%2Fkramdown.gettalong.org%2Fsyntax.html%23block-=
+ials\46sa\75D\46sntz\0751\46usg\75AFQjCNFJgeMA9TNwr0Pdlz6O3n9eoB84Cg';retur=
+n true;" onclick=3D"this.href=3D'http://www.google.com/url?q\75http%3A%2F%2=
+Fkramdown.gettalong.org%2Fsyntax.html%23block-ials\46sa\75D\46sntz\0751\46u=
+sg\75AFQjCNFJgeMA9TNwr0Pdlz6O3n9eoB84Cg';return true;">http://kramdown.gett=
+along.org/<wbr>syntax.html#block-ials</a>
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; 2014-02-10 8:31 GMT-06:00 Micah Cooper &lt;<a>coop...=
+@miamioh.edu</a>&gt;:
+<br>&gt;&gt; &gt;&gt; &gt; Sorry for the possible double post -- didn't see=
+ the first one
+<br>&gt;&gt; &gt;&gt; &gt; appear.
+<br>&gt;&gt; &gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt; &gt; I'm trying to do step with Markdown and can't ge=
+t it to work. It
+<br>&gt;&gt; &gt;&gt; &gt; looks
+<br>&gt;&gt; &gt;&gt; &gt; as if
+<br>&gt;&gt; &gt;&gt; &gt; the example with incremental bullets is in Texti=
+le and when I try
+<br>&gt;&gt; &gt;&gt; &gt; *(step) in
+<br>&gt;&gt; &gt;&gt; &gt; Markdown, it displays the (step) literally. Am I=
+ just messing up the
+<br>&gt;&gt; &gt;&gt; &gt; syntax
+<br>&gt;&gt; &gt;&gt; &gt; in Markdown?
+<br>&gt;&gt; &gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt; &gt;
+<br>&gt;&gt; &gt;&gt; &gt; --
+<br>&gt;&gt; &gt;&gt; &gt; You received this message because you are subscr=
+ibed to the Google
+<br>&gt;&gt; &gt;&gt; &gt; Groups
+<br>&gt;&gt; &gt;&gt; &gt; "Open Web Slide Shows - S5, S6, S9, Slidy, deck.=
+js, impress.js 'n'
+<br>&gt;&gt; &gt;&gt; &gt; Friends"
+<br>&gt;&gt; &gt;&gt; &gt; group.
+<br>&gt;&gt; &gt;&gt; &gt; To unsubscribe from this group and stop receivin=
+g emails from it,
+<br>&gt;&gt; &gt;&gt; &gt; send
+<br>&gt;&gt; &gt;&gt; &gt; an
+<br>&gt;&gt; &gt;&gt; &gt; email to <a>webslideshow...@googlegroups.<wbr>co=
+m</a>.
+<br>&gt;&gt; &gt;&gt; &gt; For more options, visit <a href=3D"https://group=
+s.google.com/groups/opt_out" target=3D"_blank" onmousedown=3D"this.href=3D'=
+https://groups.google.com/groups/opt_out';return true;" onclick=3D"this.hre=
+f=3D'https://groups.google.com/groups/opt_out';return true;">https://groups=
+.google.com/<wbr>groups/opt_out</a>.
+<br>&gt;&gt; &gt;&gt;
+<br>&gt;&gt; &gt;&gt; --
+<br>&gt;&gt; &gt;&gt; You received this message because you are subscribed =
+to the Google
+<br>&gt;&gt; &gt;&gt; Groups
+<br>&gt;&gt; &gt;&gt; "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, i=
+mpress.js 'n'
+<br>&gt;&gt; &gt;&gt; Friends"
+<br>&gt;&gt; &gt;&gt; group.
+<br>&gt;&gt; &gt;&gt; To unsubscribe from this group and stop receiving ema=
+ils from it, send
+<br>&gt;&gt; &gt;&gt; an
+<br>&gt;&gt; &gt;&gt; email to <a>webslideshow...@googlegroups.<wbr>com</a>=
+.
+<br>&gt;&gt; &gt;&gt; For more options, visit <a href=3D"https://groups.goo=
+gle.com/groups/opt_out" target=3D"_blank" onmousedown=3D"this.href=3D'https=
+://groups.google.com/groups/opt_out';return true;" onclick=3D"this.href=3D'=
+https://groups.google.com/groups/opt_out';return true;">https://groups.goog=
+le.com/<wbr>groups/opt_out</a>.
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt;
+<br>&gt;&gt; &gt; --
+<br>&gt;&gt; &gt; You received this message because you are subscribed to t=
+he Google
+<br>&gt;&gt; &gt; Groups
+<br>&gt;&gt; &gt; "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impre=
+ss.js 'n'
+<br>&gt;&gt; &gt; Friends"
+<br>&gt;&gt; &gt; group.
+<br>&gt;&gt; &gt; To unsubscribe from this group and stop receiving emails =
+from it, send
+<br>&gt;&gt; &gt; an
+<br>&gt;&gt; &gt; email to <a>webslideshow...@googlegroups.<wbr>com</a>.
+<br>&gt;&gt; &gt; For more options, visit <a href=3D"https://groups.google.=
+com/groups/opt_out" target=3D"_blank" onmousedown=3D"this.href=3D'https://g=
+roups.google.com/groups/opt_out';return true;" onclick=3D"this.href=3D'http=
+s://groups.google.com/groups/opt_out';return true;">https://groups.google.c=
+om/<wbr>groups/opt_out</a>.
+<br>&gt;
+<br>&gt; --
+<br>&gt; You received this message because you are subscribed to the Google=
+ Groups
+<br>&gt; "Open Web Slide Shows - S5, S6, S9, Slidy, deck.js, impress.js 'n'=
+ Friends"
+<br>&gt; group.
+<br>&gt; To unsubscribe from this group and stop receiving emails from it, =
+send an
+<br>&gt; email to <a href=3D"javascript:" target=3D"_blank" gdf-obfuscated-=
+mailto=3D"6kqErvUJtEgJ" onmousedown=3D"this.href=3D'javascript:';return tru=
+e;" onclick=3D"this.href=3D'javascript:';return true;">webslideshow...@<wbr=
+>googlegroups.com</a>.
+<br>&gt; For more options, visit <a href=3D"https://groups.google.com/group=
+s/opt_out" target=3D"_blank" onmousedown=3D"this.href=3D'https://groups.goo=
+gle.com/groups/opt_out';return true;" onclick=3D"this.href=3D'https://group=
+s.google.com/groups/opt_out';return true;">https://groups.google.com/<wbr>g=
+roups/opt_out</a>.
+<br></blockquote></div>
+------=_Part_2594_124741.1392256698469--
+
+------=_Part_2593_24716129.1392256698469--
+

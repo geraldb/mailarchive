@@ -1,0 +1,45 @@
+From 109798490112@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 103662223360
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,dace1ed56b0a7281
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.100.58.19 with SMTP id g19mr176131ana.23.1220073050526; Fri, 
+	29 Aug 2008 22:10:50 -0700 (PDT)
+Date: Fri, 29 Aug 2008 22:10:50 -0700 (PDT)
+In-Reply-To: <b521af78-25b2-449d-adf8-d32aebe3ae35@v39g2000pro.googlegroups.com>
+X-IP: 76.202.78.109
+References: <b521af78-25b2-449d-adf8-d32aebe3ae35@v39g2000pro.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: A7eKbgwAAABd-n4YgNeVUwd1FctdR899
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) 
+	Gecko/2008070206 Firefox/3.0.1,gzip(gfe),gzip(gfe)
+Message-ID: <e936ac58-89e7-4965-ae95-93cc51559306@p10g2000prf.googlegroups.com>
+Subject: Re: PATCH for gradient keywords bug
+From: "Suraj N. Kurapati" <sunaku@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+On Aug 29, 7:22=A0pm, "Suraj N. Kurapati" <sun...@gmail.com> wrote:
+> I uploaded a patch (diff against SVN trunk) here:
+> http://snk.rubyforge.org/tmp/slideshow-0.6.diff
+
+I fixed a bug in my patch (it broke code-line-numbers).
+
+Also did more clean up:
+- privatized some public methods
+- removed some redundant public methods
+- use more Ruby idioms to simplify the code
+- use consistent 2-space indentation
+
+As a result, the patch (without whitespace ignoring) is kind of hairy
+to inspect.
+So I uploaded the actual file containing my changes:
+http://snk.rubyforge.org/tmp/slideshow.rb
+
+There's still much more room for improvement, of course.
+
+Cheers.
+

@@ -1,0 +1,88 @@
+From 6382859401696378880@xxx Fri Feb 03 12:34:22 +0000 2017
+X-GM-THRID: 6382859402075963392
+X-Received: by 10.13.245.194 with SMTP id e185mr3858301ywf.61.1486125262649;
+        Fri, 03 Feb 2017 04:34:22 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.20.230 with SMTP id r35ls6080317otr.25.gmail; Fri, 03 Feb
+ 2017 04:34:22 -0800 (PST)
+X-Received: by 10.129.155.201 with SMTP id s192mr3500662ywg.159.1486125262440;
+        Fri, 03 Feb 2017 04:34:22 -0800 (PST)
+Received: by 10.202.237.74 with SMTP id l71msoih;
+        Fri, 3 Feb 2017 04:04:37 -0800 (PST)
+X-Received: by 10.157.18.211 with SMTP id g77mr1289729otg.14.1486123477301;
+        Fri, 03 Feb 2017 04:04:37 -0800 (PST)
+X-Google-Web-Client: true
+Date: Fri, 3 Feb 2017 04:04:36 -0800 (PST)
+From: "Maria A. Flores" <m.angeles.flores@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <a8f9ce84-6e89-4701-9611-e5c591602483@googlegroups.com>
+Subject: Champions League full database
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_541_1896079085.1486123476958"
+X-Google-Token: ENTj0cQFwTPkwZihwkw0
+X-Google-IP: 92.21.3.94
+
+------=_Part_541_1896079085.1486123476958
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_542_1944190322.1486123476958"
+
+------=_Part_542_1944190322.1486123476958
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi all,
+
+First of all, thank you for this great effort. I'm new, both to Ruby and 
+opensport, so sorry if my question is silly.
+
+I had some problems with activerecord and json gems when running sportdb in 
+the latest version of Ruby, so I managed to install and use rvm in order to 
+run it in Ruby 1.9 and now is working.
+
+When I run sportdb new all, I'm getting a lot of warnings about missing 
+info:
+
+...
+[info] skipping line (no match found) ...
+...
+[warn] city with key wil missing
+
+
+Finally, the process ends with the error:
+
+[fatal] event reader - record for team key >moskva< not found
+
+
+But, if I want to build a new database with only the info about Champions 
+League, including historic data (all the data available in 
+https://github.com/openfootball/europe-champions-league),
+would you point me to the correct procedure to do it?
+
+Thank you!
+
+------=_Part_542_1944190322.1486123476958
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi all,<div><br></div><div>First of all, thank you for thi=
+s great effort. I&#39;m new, both to Ruby and opensport, so sorry if my que=
+stion is silly.</div><div><br></div><div>I had some problems with activerec=
+ord and json gems when running sportdb in the latest version of Ruby, so I =
+managed to install and use rvm in order to run it in Ruby 1.9 and now is wo=
+rking.</div><div><br></div><div>When I run sportdb new all, I&#39;m getting=
+ a lot of warnings about missing info:</div><blockquote style=3D"margin: 0 =
+0 0 40px; border: none; padding: 0px;"><div>...</div><div>[info] skipping l=
+ine (no match found) ...</div><div>...</div><div>[warn] city with key wil m=
+issing</div></blockquote><div><br></div><div>Finally, the process ends with=
+ the error:</div><div><br></div><blockquote style=3D"margin: 0 0 0 40px; bo=
+rder: none; padding: 0px;"><div>[fatal] event reader - record for team key =
+&gt;moskva&lt; not found</div></blockquote><div><br></div><div>But, if I wa=
+nt to build a new database with only the info about Champions League, inclu=
+ding historic data (all the data available in https://github.com/openfootba=
+ll/europe-champions-league),</div><div>would you point me to the correct pr=
+ocedure to do it?</div><div><br></div><div>Thank you!</div></div>
+------=_Part_542_1944190322.1486123476958--
+
+------=_Part_541_1896079085.1486123476958--
+

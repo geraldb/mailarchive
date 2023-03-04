@@ -1,0 +1,59 @@
+From 51534364672@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 50610569216
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,f5aea9e21ab38c34,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.90.115.6 with SMTP id n6mr18173129agc.22.1216111784461;
+        Tue, 15 Jul 2008 01:49:44 -0700 (PDT)
+Return-Path: <rosejn@gmail.com>
+Received: from mu-out-0910.google.com (mu-out-0910.google.com [209.85.134.188])
+        by mx.google.com with ESMTP id 39si5963523yxd.0.2008.07.15.01.49.43;
+        Tue, 15 Jul 2008 01:49:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of rosejn@gmail.com designates 209.85.134.188 as permitted sender) client-ip=209.85.134.188;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of rosejn@gmail.com designates 209.85.134.188 as permitted sender) smtp.mail=rosejn@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by mu-out-0910.google.com with SMTP id g7so2258740muf.2
+        for <webslideshow@googlegroups.com>; Tue, 15 Jul 2008 01:49:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from
+         :user-agent:mime-version:to:subject:content-type
+         :content-transfer-encoding;
+        bh=iZpioadASwbBOWnxA/axEu+qAAIuBcxWSYIMHGx9oDI=;
+        b=vrskvJGdTyzGuTmK4es/J1GRmu20heYmwecIVNKbHX0kyvry2lMyK2hgDV5uwsih9x
+         MMww8ShjybsEbPwgxTwb7hYP5z7Z27VSWTJVwPv8v1c3G8gidCVJolGw5a5Ba2sJse9C
+         nsBWsTQc1QQj6NMKGtxStQM7tXkKLqQWIX+fI=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject
+         :content-type:content-transfer-encoding;
+        b=wNx6MKAKikSm8vz6afjQfJiHxbSwxEm5L2tqhdrSWSYOS1QtYbvh8RvZYsh149VO4p
+         A/ZPoOJ6lnNj5dEilUFZFYla+Lh5aselwQpmtywDy8+LmzSi8OavEs5dUVpAsBKDnB19
+         PT6T4CW5DXiSbigunZxfWPPLAgEol3cCFOhmk=
+Received: by 10.103.131.18 with SMTP id i18mr8669804mun.116.1216111782421;
+        Tue, 15 Jul 2008 01:49:42 -0700 (PDT)
+Return-Path: <rosejn@gmail.com>
+Received: from ?192.168.70.158? ( [195.176.178.209])
+        by mx.google.com with ESMTPS id j10sm11203364mue.6.2008.07.15.01.49.40
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Tue, 15 Jul 2008 01:49:41 -0700 (PDT)
+Message-ID: <487C64A3.10908@gmail.com>
+Date: Tue, 15 Jul 2008 10:49:39 +0200
+From: Jeff Rose <rosejn@gmail.com>
+User-Agent: Thunderbird 2.0.0.14 (X11/20080505)
+MIME-Version: 1.0
+To: webslideshow@googlegroups.com
+Subject: escaping html and line feeds
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hi,
+  I'm having problems using normal HTML in slideshow.  It looks like 
+it's getting escaped to be &lt, &gt etc.  Also, the file is getting 
+filled with what I think are windows style line feeds (^M in vim...).  
+Are either of these supposed to be happening?  I'll work on them both, 
+but I don't want to duplicate effort if someone is already doing this.
+
+Thanks,
+Jeff
+

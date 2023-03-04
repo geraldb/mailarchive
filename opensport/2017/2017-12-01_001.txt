@@ -1,0 +1,93 @@
+From 6494655766323003392@xxx Fri Dec 01 19:01:23 +0000 2017
+X-GM-THRID: 6483544831205310464
+X-Received: by 10.31.41.144 with SMTP id p138mr3410149vkp.43.1512154882808;
+        Fri, 01 Dec 2017 11:01:22 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.31.163.130 with SMTP id m124ls508521vke.20.gmail; Fri, 01 Dec
+ 2017 11:01:22 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMbRlkl1xG8RntWQ4bBPE2ymP2XoV4tza2HpxJUDJt39pruQA7WJ/4aeMyxB4QwPCNmxzHK0
+X-Received: by 10.31.61.1 with SMTP id k1mr3335664vka.72.1512154882089;
+        Fri, 01 Dec 2017 11:01:22 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1512154882; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ilkofxNOT4idVV5ns5HypvUyFTsU/Ta5xqqSxFqil3x9kMYWfNAdP+h6yGQiqelRs7
+         foHpUxhB4NhgwCiTBrdDTFNkxn8KcwhloLgiQvCiO6N9jB+c3LqWDIp35UQWtqKKloH8
+         22wlDRCCuFq3NdPwjDWC14en4or8QbqgJVQbv6Q615HscAB4zvHUALGS8iBFBxqLMXw3
+         I9Jwi9LcQ1X4FbudFf4lHAorWFVqBFLjZkeTvZXXnioM5014vD9aggIMVp6ijp+N077c
+         qkIi6x2yrTYcGhZO7rDUGouzI6zzWpYAiGVZo4W+nNZepo9471v2v2AfONeAY3WQxH1g
+         JtHg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=eROqiJQLHWqTeizjONqT5Co0SkcYpf6kOREsjBbt4D8=;
+        b=f8H1GjVv8exRdIkNogvjOxhqg6dAg6ViWarzYXdiH1Zh1PUpF2AwPvjzYEflLXlBQj
+         Dmo8KpEkYmbrCm+RQA9Ukv32ux1I2YA46x4T5Nj8pMLa6tKvIbBSBHVvRt7hw7awioMi
+         z0uUScinLt4A7b5ECbGfz4PV2R7RogJ6d5z0xSU/5Sr1JbGgzlLf5nBTfacS8c+bmz/H
+         0yzNBKcTSE9yi2tKeJd/1JYiY5aLpnZy4o8j1YgOYakJyXjTWZ7GlNMFMAbpk3lujQoB
+         XM7pO33APrbtT7IrZQ8N21H/VOyxEq0+10pvBbXWrnZ4sYvpVBIwfO+dSk0nHfWkisu1
+         Wyug==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=jRawC9Td;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x234.google.com (mail-io0-x234.google.com. [2607:f8b0:4001:c06::234])
+        by gmr-mx.google.com with ESMTPS id t123si474647vkb.1.2017.12.01.11.01.22
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 01 Dec 2017 11:01:22 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::234 as permitted sender) client-ip=2607:f8b0:4001:c06::234;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=jRawC9Td;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x234.google.com with SMTP id w127so12280370iow.11
+        for <opensport@googlegroups.com>; Fri, 01 Dec 2017 11:01:22 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=eROqiJQLHWqTeizjONqT5Co0SkcYpf6kOREsjBbt4D8=;
+        b=jRawC9TdpOWeB0UpRQTs84Q+RGQEk+BQI4O27osscHNT4pohw+QQ5OLdlx4V/5ZxWG
+         XMvHM8LkBcZ45ZP/sUD8Cy0RWyA6l8OtKL0S5KIdGAdzRgfh/GurxzHHvRc2I9LMCwOT
+         8bjp6+eMtitPUsYjiO4oiMbqelYOesOy+vlIrOiLuGrmVVjeW1MJ5ciYBOFvDNQBXW8S
+         wBv6f+WaskABtlBnBwOiQT/LwFBvKmvzoO68Em7pBafy9SprNKDGAUss+O0oTztpzj+H
+         ywEgRzwvyEb5p12yNJlVoMx9UCj2KD69/2zqPLPUKNAwLfZ0u7DgQUQYQd/b9g9UKnwa
+         790A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=eROqiJQLHWqTeizjONqT5Co0SkcYpf6kOREsjBbt4D8=;
+        b=Pae/SeK7ortFH3DyXuV6PauNFBUqbyZy7oWcuNcwRlKXPvrc6YV0oU9FDmg8NAT5NY
+         2dfMhfP9jaUKQ3tFacwiKs8wlbUJasimwKn7dvvYa28LB45eLvMWW6tPMAh46OympL2V
+         d6a5Mep1idc3Ocf7qFPHF8RZgD8ylVlyldM5sKWJ1GyYNG4Xo6aPlcpZr6l0lZAJjSej
+         zwm3U7Qnvfu1aPcjcr6VyFITLDJ4JbQ6Z6IAwbpS4gkUNT+nLJPtQC7Uch5nT9zaF77a
+         JhnoCxYDePyCArKSVEqzAiRVA2lgcAoJYdvxNr0oeulHRDYKmGImA9y7Ei/qCd4/w7Kd
+         kkbQ==
+X-Gm-Message-State: AJaThX4/sYbVGBrtfKK9c4hWsL3wCq+BkUKiC6TdtsQZv9ixyrWkSbep
+	r1XMULAJRxCkHsk1L55BEgnSMFmyaH8vf6EnlOksNA==
+X-Received: by 10.107.205.69 with SMTP id d66mr14615919iog.254.1512154881394;
+ Fri, 01 Dec 2017 11:01:21 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.156.69 with HTTP; Fri, 1 Dec 2017 11:01:20 -0800 (PST)
+In-Reply-To: <59f91cc8-8c78-4032-b7a3-f2ef49afe802@googlegroups.com>
+References: <f415b522-e28a-4f5b-b805-0223bfff9f99@googlegroups.com>
+ <CAAxEZd8sc1ug7PrBH9oMjfDavEXO2EkMCk-Cpx+CMhPJKneiGQ@mail.gmail.com> <59f91cc8-8c78-4032-b7a3-f2ef49afe802@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 1 Dec 2017 20:01:20 +0100
+Message-ID: <CAAxEZd-BWBVB2BhdYyryiYpWAYzq79HmFZPZxQa3dFrUkedD=g@mail.gmail.com>
+Subject: Re: [opensport] Getting Error when creating a DB
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+>  *** error: Index name 'index_rounds_on_event_id' on table 'rounds' already exists
+
+    Thanks for the wait. Finally updated all gems to work with the
+latest (and greatest) version of ActiveRecord, that is, 5+. Please
+retry with spordb-models v1.17+ required and everything works (as
+advertised) again.
+
+  Cheers.
+

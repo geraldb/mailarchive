@@ -1,0 +1,66 @@
+From 241073913856@xxx Sat Dec 13 20:08:17 +0000 2014
+X-GM-THRID: 238164115456
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,4a2d5fe705e4cbb8
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.24.70 with SMTP id s6mr544146wif.3.1409588013523;
+        Mon, 01 Sep 2014 09:13:33 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.152.204.99 with SMTP id kx3ls358597lac.7.gmail; Mon, 01 Sep
+ 2014 09:13:33 -0700 (PDT)
+X-Received: by 10.112.95.228 with SMTP id dn4mr2669258lbb.2.1409588013086;
+        Mon, 01 Sep 2014 09:13:33 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x231.google.com (mail-wg0-x231.google.com [2a00:1450:400c:c00::231])
+        by gmr-mx.google.com with ESMTPS id v3si481277wib.1.2014.09.01.09.13.33
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 01 Sep 2014 09:13:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::231 as permitted sender) client-ip=2a00:1450:400c:c00::231;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::231 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f49.google.com with SMTP id y10so5689019wgg.32
+        for <openmundi@googlegroups.com>; Mon, 01 Sep 2014 09:13:33 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=5zvQeVRKMQTnVige0fy4rcFNDrVxYPVO2oYVtOnx6LQ=;
+        b=xsgcKWOZRF/FlJwYjodlzI2zJ3BUqtjLkjTq7XrA5+wY80cA6u9WZkArAt4u8iFLtw
+         Pq0chn/eLAhi7W982ngz+nO+omvPp+6JHMrkgBtUyJ3y/LovVfKs9s82EeYQHI0JClGX
+         5VAuyIdqTGMdnUUxk9ziNeYk/878Ulen8TbKZsQkG/0g35xd+Dp6MKHLQUJ+vdbwi0iy
+         wRV69+uoOmz2jDvYJoH6Am0z6/kfynaHS+vmRsu2xk8sSCYApqehoKhk9zZ7kcaRXKBT
+         MieNVd/3jcdgGs7R4apQVSDx7wsN93kPd5NdaooF0Sl1mRhsQSDTL0Vm77bc4jRBB/PK
+         guhQ==
+MIME-Version: 1.0
+X-Received: by 10.180.205.234 with SMTP id lj10mr31846287wic.1.1409588013000;
+ Mon, 01 Sep 2014 09:13:33 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Mon, 1 Sep 2014 09:13:32 -0700 (PDT)
+In-Reply-To: <5400E5DD.80003@googlemail.com>
+References: <5400E5DD.80003@googlemail.com>
+Date: Mon, 1 Sep 2014 18:13:32 +0200
+Message-ID: <CAAxEZd-dsygH5j8eOW6rNqrVbxnSeOobmQUWcvpEWB6hMxABwQ@mail.gmail.com>
+Subject: Re: world data
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: Eckhard <eckhard.licher@googlemail.com>
+Cc: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+    I've uploaded all the json files to the world.json repo [1]. Note,
+I've added the missing world.db folder structure and filename
+conventions  e.g.   at.json  becomes europe/at-austria.json, br.json
+becomes south-america/br-brazil.json and so on.
+
+   You're welcome / invited to keep the json files up-to-date.  Cheers.
+
+[1] github.com/openmundi/world.json
+
+PS: To keep the files up-to-date it's best to add the missing
+information to the world.db datsets itself and than auto-generate
+these json files from the world.db.
+

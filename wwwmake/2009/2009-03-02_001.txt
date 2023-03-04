@@ -1,0 +1,102 @@
+From 521957015552@xxx Sun Jan 11 00:21:37 +0000 2015
+X-GM-THRID: 520440774656
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,87855524d91b4041,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.90.70.6 with SMTP id s6mr4238336aga.8.1235991375793;
+        Mon, 02 Mar 2009 02:56:15 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from yx-out-2324.google.com (yx-out-2324.google.com [74.125.44.29])
+        by mx.google.com with ESMTP id 22si2415981yxr.16.2009.03.02.02.56.15;
+        Mon, 02 Mar 2009 02:56:15 -0800 (PST)
+Received-SPF: neutral (google.com: 74.125.44.29 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=74.125.44.29;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 74.125.44.29 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by yx-out-2324.google.com with SMTP id 3so1359290yxj.71
+        for <webslideshow@googlegroups.com>; Mon, 02 Mar 2009 02:56:15 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.220.76.149 with SMTP id c21mr1555317vck.66.1235991374855; Mon, 
+	02 Mar 2009 02:56:14 -0800 (PST)
+Date: Mon, 2 Mar 2009 11:56:14 +0100
+Message-ID: <1f058eab0903020256x67168b22s7759dfa9afb9074f@mail.gmail.com>
+Subject: Slide Show (S9) Gem Updated (v0.7.7) - Added Syntax Highlighting 
+	Helpers (using Ultraviolet and Coderay)
+From: Gerald Bauer <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+  I uploaded a new slideshow gem version (that is, v0.7.7). What's new?
+
+  I added a couple of helpers for including and syntax highlighting code.
+
+  1) The new code helper lets you include and syntax highlight code e.g.
+
+   <% code do %>
+     your inline code here
+   <% end %>
+
+   or include code:
+
+   <%= code 'highlight.rb' %>
+
+   To select the language (default is ruby) use the :lang option e.g.
+
+   <%= code 'effects.css', lang: => 'css' %>
+
+   Note, you can also include parts of files using Codex-style [1]
+markers in your source #START:your_marker_here and
+#END:your_marker_here and you can also pass along an extra css class
+(large,small,tiny,etc.) e.g. this directive in Codex
+
+   :code code/meta/my_ostruct.rb[impl class=code-small]
+
+   becomes in S9:
+
+   <%= code 'code/meta/my_ostruct.rb#impl', class:=>'small' %>
+
+
+   To select the underlying engine for code highlighting use the
+:engine option e.g.
+
+   <%= code 'highlight.rb', :engine => 'coderay' %>
+
+   or use a header to set it once e.g:
+
+   code-engine: uv   # or use your very own code engine here
+
+
+  2) You can also use the built-in code highlighting engines
+"stand-alone" without the code "wrapper" helper e.g.
+
+   To use Ultraviolet use:
+
+   <% uv do %>
+    your inline code here
+   <% end %>
+
+   To use CodeRay use:
+
+   <% coderay do %>
+    your inline code here
+   <% end %>
+
+   Note, that uv and coderay only support inline code (if you want to
+include code use a nested include e.g.:
+
+   <% coderay :lang => 'css', :line_numbers => 'off' do %>
+     <%= include 'effects.css' %>
+   <% end %>
+
+   For more options or on how to write your own syntax highlighting
+helpers it might be best to check the source of the new helpers online
+@  http://github.com/geraldb/slideshow/tree/7cfa64ce1931436077170cde13784d08c4d485ca/trunk/lib/helpers
+
+
+   That's it. Questions and comments welcome. Cheers.
+
+
+[1] http://pragdave.blogs.pragprog.com/pragdave/2008/05/our-take-on-pre.html
+

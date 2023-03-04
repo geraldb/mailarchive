@@ -1,0 +1,113 @@
+From 181227487232@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 180884602880
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,108967391230a075,start
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.180.99.74 with SMTP id eo10mr461280wib.2.1408634046473;
+        Thu, 21 Aug 2014 08:14:06 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.180.98.225 with SMTP id el1ls871063wib.29.canary; Thu, 21 Aug
+ 2014 08:14:05 -0700 (PDT)
+X-Received: by 10.180.198.172 with SMTP id jd12mr1938794wic.6.1408634045862;
+        Thu, 21 Aug 2014 08:14:05 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x22e.google.com (mail-wi0-x22e.google.com [2a00:1450:400c:c05::22e])
+        by gmr-mx.google.com with ESMTPS id q1si397629wij.1.2014.08.21.08.14.05
+        for <openmundi@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 21 Aug 2014 08:14:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) client-ip=2a00:1450:400c:c05::22e;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::22e as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-x22e.google.com with SMTP id d1so8839593wiv.13
+        for <openmundi@googlegroups.com>; Thu, 21 Aug 2014 08:14:05 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :content-transfer-encoding;
+        bh=Xt1JOO0DgPY0FiBsjGYvPrI60W90bU7g3ILgQ8Hdp/s=;
+        b=wTctbMB9Oby5IvJ9AjOc8onKQNFFKL8nSsxUiNTc62XBKfS4SYyNZW6fbbEujSazJO
+         xHFQC/fPZU/caPOszYKYDfSeRQGyOF6Bqj9UEliPMrNfC3dHtbhG3bsEgTA9SYpisCg0
+         oJgopIGcV7RW4HazWCwrZ16st0qu73Z72d74k6pJ8/uFd3QQ7AmxnO0wULCj7xyacrP8
+         SGZ3bleDMJI6zSQLoi4mZg7GztfQccvxQqLilRrhrZMoothMTRkOFTPAcz5Sqt4j1E50
+         jn9ECvBA5czn3ymgZIXTI01FF/wYGB1ViOqWMHT4Yga5a0ZuNH8Zm6FOcCez/5wZBYHB
+         MEmw==
+MIME-Version: 1.0
+X-Received: by 10.180.189.4 with SMTP id ge4mr5163205wic.25.1408634045790;
+ Thu, 21 Aug 2014 08:14:05 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Thu, 21 Aug 2014 08:14:05 -0700 (PDT)
+Date: Thu, 21 Aug 2014 17:14:05 +0200
+Message-ID: <CAAxEZd_QtcZgcVmO0Fm=jXyiWYfnh-iTMnRNxJCEjsy1rm5nvg@mail.gmail.com>
+Subject: worldlite gem v0.1 - public domain country data (all data included as
+ good ol' ruby code) - no db, no deps
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: openmundi@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  FYI: I've put together a new world data gem, that is, worldlite,
+that includes all the world countries (and territories) as good ol'
+ruby code. Example:
+
+module WorldLite
+
+  c =3D Country.new
+  c.name   =3D 'Austria'
+  c.key    =3D 'at'
+  c.alpah2 =3D 'AT'     # iso two-letter country code (ISO 3166-1 alpha-2)
+  c.alpha3 =3D 'AUT'    # iso three-letter country code (ISO 3166-1 alpha-3=
+)
+  c.fifa   =3D 'AUT'    # football country code (fifa =3D F=C3=A9d=C3=A9rat=
+ion
+Internationale de Football Association)
+  c.ioc    =3D 'AUT'    # olympics country code (ioc =3D International
+Olympic Committee)
+  c.net    =3D 'at'     # internet top level domain
+  c.motor  =3D 'A'      # motor vehicle license plate code
+  c.num3   =3D '040'    # iso numeric three-digits code as string (ISO
+3166-1 numeric)
+  c.num    =3D 40       # iso numeric code as number
+
+  c.continent_name =3D  'Europe'
+
+  c.un     =3D true     # United Nations member?  -- 193 member countries
+  c.eu     =3D true     # European Union member?  -- 27 member countries
+  c.euro   =3D true     # Euro Zone member?       -- 17 member countries
+
+  c.wikipedia =3D 'Austria'   # e.g. see en.wikipedia.org/wiki/Austria
+  c.wikidata  =3D 40          # e.g. see wikidata.org/wiki/Q40
+  c.factbook  =3D 'au'        # e.g. see
+www.cia.gov/library/publications/the-world-factbook/geos/au.html
+
+end  # module WorldLite
+
+  The worldlite gem is lightweight, that is, no database and no
+dependencies (extra gems) required. All code and data is public
+domain, that is, license-free - no copyright and no rights reserverd -
+use as you please.
+
+   To try it - type in your Ruby shell:
+
+   require 'worldlite'
+   include WorldLite
+
+   WORLD.size         # =3D> 245
+   WORLD_UN.size   # =3D> 193
+   WORLD_G20.size  # =3D> 20
+
+   and so on. For countries try:
+
+   AT.class.name  # =3D> WorldLite::Country
+   AT.name           # =3D> Austria
+   AT.alpha3         # =3D> AUT
+
+   Still early and rough but all the world's countries and territories
+(245 total) included. Cheers.
+
+[1] https://github.com/worlddb/world.lite.ruby
+

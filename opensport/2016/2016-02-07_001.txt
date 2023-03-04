@@ -1,0 +1,237 @@
+From 6248514285182386176@xxx Sun Feb 07 11:46:42 +0000 2016
+X-GM-THRID: 6212542687340396544
+Date: Sun, 7 Feb 2016 03:46:41 -0800 (PST)
+From: Krzysztof Ropiak <krzysztof.ropiak@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <0514a62d-91d4-4459-bf90-aa312a2017de@googlegroups.com>
+In-Reply-To: <CAAxEZd-mo_9R6StL-U3JeN=W9kvwArx6_5mgukEr3om8zbz=HQ@mail.gmail.com>
+References: <49ae2d67-5c87-4a42-9e32-ffd0f5800590@googlegroups.com>
+ <CAAxEZd-Qg2p_cWHN4Q_xJkGTCTLOCkuCMkm1-gBW8wDLoSDorQ@mail.gmail.com>
+ <5176e36d-554c-44df-9a7f-0c15333ede6e@googlegroups.com>
+ <CAAxEZd-mo_9R6StL-U3JeN=W9kvwArx6_5mgukEr3om8zbz=HQ@mail.gmail.com>
+Subject: Re: [opensport] NameError: uninitialized constant
+ WorldDb::ReaderBase
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_235_1839911586.1454845601885"
+X-Google-Token: EKHd3LUF_jK3-RQt-XE0
+X-Google-IP: 89.71.18.15
+
+------=_Part_235_1839911586.1454845601885
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_236_1068298012.1454845601885"
+
+------=_Part_236_1068298012.1454845601885
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+I'm running the code only on heroku:
+
+12:44:34 (master) *~/git/sportbook*$ heroku run rake db:migrate --app XXX
+
+Running *rake db:migrate* on XXX... up, run.9517
+
+confdb/1.1.1 on Ruby 2.0.0 (2015-12-16) [x86_64-linux]
+
+tagutils/0.2.2 on Ruby 2.0.0 (2015-12-16) [x86_64-linux]
+
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::Country<
+
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::Region<
+
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=20
+>WorldDb::Model::City<
+
+worlddb/2.0.4 on Ruby 2.0.0 (2015-12-16) [x86_64-linux]
+
+  [ActiveRecord::Utils] adding find_by n find_by! finders for 3.x series
+
+activerecord-utils/0.4.0 (activerecord/3.2.12) on Ruby 2.0.0 (2015-12-16)=
+=20
+[x86_64-linux]
+
+rake aborted!
+
+NameError: uninitialized constant WorldDb::ReaderBase
+
+/app/vendor/bundle/ruby/2.0.0/gems/worlddb-models-2.1.0/lib/worlddb/reader_=
+file.rb:5:in=20
+`<module:WorldDb>'
+
+/app/vendor/bundle/ruby/2.0.0/gems/worlddb-models-2.1.0/lib/worlddb/reader_=
+file.rb:3:in=20
+`<top (required)>'
+
+/app/vendor/bundle/ruby/2.0.0/gems/worlddb-models-2.1.0/lib/worlddb/models.=
+rb:69:in=20
+`<top (required)>'
+
+/app/vendor/bundle/ruby/2.0.0/gems/persondb-0.4.0/lib/persondb.rb:5:in=20
+`<top (required)>'
+
+/app/vendor/bundle/ruby/2.0.0/gems/sportdb-1.9.8/lib/sportdb.rb:18:in `<top=
+=20
+(required)>'
+
+/app/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler/runtime.rb:76:=
+in=20
+`require'
+
+/app/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler/runtime.rb:76:=
+in=20
+`block (2 levels) in require'
+
+/app/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler/runtime.rb:72:=
+in=20
+`each'
+
+/app/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler/runtime.rb:72:=
+in=20
+`block in require'
+
+/app/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler/runtime.rb:61:=
+in=20
+`each'
+
+/app/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler/runtime.rb:61:=
+in=20
+`require'
+
+/app/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler.rb:134:in=20
+`require'
+
+/app/config/application.rb:10:in `<top (required)>'
+
+/app/Rakefile:5:in `require'
+
+/app/Rakefile:5:in `<top (required)>'
+
+(See full trace by running task with --trace)
+
+The code is already pushed ofc.
+
+W dniu =C5=9Broda, 27 stycznia 2016 12:39:26 UTC+1 u=C5=BCytkownik Gerald B=
+auer=20
+napisa=C5=82:
+>
+> Hello,=20
+>
+>    Are you trying to setup the sportbook rails app?=20
+>
+>    You also have to push the code (e.g.)=20
+>    1b:  $ git push heroku master=20
+>
+>
+>    Can post your error log e.g. try:=20
+>
+>    $ bundle exec rake --trace db:setup=20
+>
+>    and than post the error log.  Cheers.=20
+>
+
+------=_Part_236_1068298012.1454845601885
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I&#39;m running the code only on heroku:<div><br></div><di=
+v><p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;"><s=
+pan style=3D"font-variant-ligatures: no-common-ligatures; color: #828282">1=
+2:44:34</span><span style=3D"font-variant-ligatures: no-common-ligatures; c=
+olor: #34bd26"> (master) </span><span style=3D"font-variant-ligatures: no-c=
+ommon-ligatures; color: #afad24"><b>~/git/sportbook</b></span>$ heroku run =
+rake db:migrate --app XXX</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">Runn=
+ing <span style=3D"font-variant-ligatures: no-common-ligatures; color: #34b=
+bc7"><b>rake db:migrate</b></span> on XXX... up, run.9517</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">conf=
+db/1.1.1 on Ruby 2.0.0 (2015-12-16) [x86_64-linux]</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">tagu=
+tils/0.2.2 on Ruby 2.0.0 (2015-12-16) [x86_64-linux]</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">=C2=
+=A0 [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &=
+gt;WorldDb::Model::Country&lt;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">=C2=
+=A0 [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &=
+gt;WorldDb::Model::Region&lt;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">=C2=
+=A0 [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &=
+gt;WorldDb::Model::City&lt;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">worl=
+ddb/2.0.4 on Ruby 2.0.0 (2015-12-16) [x86_64-linux]</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">=C2=
+=A0 [ActiveRecord::Utils] adding find_by n find_by! finders for 3.x series<=
+/p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">acti=
+verecord-utils/0.4.0 (activerecord/3.2.12) on Ruby 2.0.0 (2015-12-16) [x86_=
+64-linux]</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">rake=
+ aborted!</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">Name=
+Error: uninitialized constant WorldDb::ReaderBase</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/vendor/bundle/ruby/2.0.0/gems/worlddb-models-2.1.0/lib/worlddb/reader_file=
+.rb:5:in `&lt;module:WorldDb&gt;&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/vendor/bundle/ruby/2.0.0/gems/worlddb-models-2.1.0/lib/worlddb/reader_file=
+.rb:3:in `&lt;top (required)&gt;&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/vendor/bundle/ruby/2.0.0/gems/worlddb-models-2.1.0/lib/worlddb/models.rb:6=
+9:in `&lt;top (required)&gt;&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/vendor/bundle/ruby/2.0.0/gems/persondb-0.4.0/lib/persondb.rb:5:in `&lt;top=
+ (required)&gt;&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/vendor/bundle/ruby/2.0.0/gems/sportdb-1.9.8/lib/sportdb.rb:18:in `&lt;top =
+(required)&gt;&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler/runtime.rb:76:in `=
+require&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler/runtime.rb:76:in `=
+block (2 levels) in require&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler/runtime.rb:72:in `=
+each&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler/runtime.rb:72:in `=
+block in require&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler/runtime.rb:61:in `=
+each&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler/runtime.rb:61:in `=
+require&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/vendor/bundle/ruby/2.0.0/gems/bundler-1.9.7/lib/bundler.rb:134:in `require=
+&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/config/application.rb:10:in `&lt;top (required)&gt;&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/Rakefile:5:in `require&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">/app=
+/Rakefile:5:in `&lt;top (required)&gt;&#39;</p>
+<p style=3D"font-size: 11px; line-height: normal; font-family: Menlo;">(See=
+ full trace by running task with --trace)</p></div><div><br></div><div>The =
+code is already pushed ofc.</div><div><br>W dniu =C5=9Broda, 27 stycznia 20=
+16 12:39:26 UTC+1 u=C5=BCytkownik Gerald Bauer napisa=C5=82:<blockquote cla=
+ss=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #=
+ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>=C2=A0 =C2=A0Are you trying to setup the sportbook rails app?
+<br>
+<br>=C2=A0 =C2=A0You also have to push the code (e.g.)
+<br>=C2=A0 =C2=A01b: =C2=A0$ git push heroku master
+<br>
+<br>
+<br>=C2=A0 =C2=A0Can post your error log e.g. try:
+<br>
+<br>=C2=A0 =C2=A0$ bundle exec rake --trace db:setup
+<br>
+<br>=C2=A0 =C2=A0and than post the error log. =C2=A0Cheers.
+<br></blockquote></div></div>
+------=_Part_236_1068298012.1454845601885--
+
+------=_Part_235_1839911586.1454845601885--
+

@@ -1,0 +1,81 @@
+From 2330051215360@xxx Tue Jun 16 00:16:45 +0000 2015
+X-GM-THRID: 2329212354560
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,88bf275c6b85fe64,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.138.234 with SMTP id qt10mr3445471lbb.4.1417784262279;
+        Fri, 05 Dec 2014 04:57:42 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.189.180 with SMTP id gj20ls104840wic.9.gmail; Fri, 05 Dec
+ 2014 04:57:41 -0800 (PST)
+X-Received: by 10.180.89.211 with SMTP id bq19mr621734wib.4.1417784261872;
+        Fri, 05 Dec 2014 04:57:41 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x233.google.com (mail-wi0-x233.google.com. [2a00:1450:400c:c05::233])
+        by gmr-mx.google.com with ESMTPS id j6si86441wix.1.2014.12.05.04.57.41
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 05 Dec 2014 04:57:41 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::233 as permitted sender) client-ip=2a00:1450:400c:c05::233;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::233 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f179.google.com with SMTP id ex7so1284376wid.12
+        for <opensport@googlegroups.com>; Fri, 05 Dec 2014 04:57:41 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=IwETSnwwtWn2xos5kGGSe2BXmmrv7lzmCVTDNx/1XtU=;
+        b=VZ9PQTIZvuttV1fm59cvzI3zLt2crRJyM+gCcUhv/Ggcg3NKwOqgfilfgBYteKN5wY
+         SQbjEfPVTzRyWLBHqOhKuf6wzVPpCQwxVzIVquLC7mFaFHwXaQwSMZIWuSr56tP7nqVf
+         NidmittadUptEpuvs0Ku5aTmukO9C4UooOqepBvsS08WmEwFx6F1DPbDACBE9xIpdRU1
+         g8lqGAmOjyckaBNYxpeSGZdThkiiAWhi2BgQyg3XFZXwQfxDwfSVBRaI0hHKz4mGw4ML
+         dlnXzzoAfzcazgGQ4LAXrxE4dDwW+1o+Dp2OqWj1YyB9clBCostjaQxBIf6P+1dELpQh
+         ghhw==
+MIME-Version: 1.0
+X-Received: by 10.194.85.197 with SMTP id j5mr23649800wjz.106.1417784261760;
+ Fri, 05 Dec 2014 04:57:41 -0800 (PST)
+Received: by 10.216.63.20 with HTTP; Fri, 5 Dec 2014 04:57:41 -0800 (PST)
+Date: Fri, 5 Dec 2014 13:57:41 +0100
+Message-ID: <CAAxEZd-1duV1g+6kQbF7ByHLtEphhwKP_kPGuos_cvr9bn8fMg@mail.gmail.com>
+Subject: [ANN] sportdb splits into sportdb-models and sportdb (command line
+ tool); update v1.10
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI:  I've split the "old" sportdb gem into two gems, that is,
+sportdb-models and sportdb. Why?
+
+  You can now (re)use the sport.db schema 'n' models with the "new"
+sportdb-models gem[1] without pulling in addons (e.g. sportdb-service,
+sportdb-update, etc.) or the command line tooling (and all its extra
+dependencies).
+
+  The good news: You can continue to use the sportdb command line tool
+with the "new" sportdb gem. What's different? The "new" sportdb gem[2]
+now depends on sqlite3 and, thus, will also install the sqlite3
+machinery on a first install.
+
+  As always best to try it out yourself e.g. build yourself a World
+Cup 2014 copy, for exampe, type:
+
+$ sportdb new worldcup2014
+
+  Make sure to update the sportdb gem first e.g.
+
+$ gem update sportdb
+
+  Or if you're a first time use install the sportdb gem e.g.
+
+$ gem install sportdb
+
+  All should work as before (and, of course, better and faster ;-).  Cheers.
+
+[1] rubygems.org/gems/sportdb-models
+[2] rubygems.org/gems/sportdb
+

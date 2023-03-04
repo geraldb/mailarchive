@@ -1,0 +1,65 @@
+From 1134594883584@xxx Sun Jan 11 00:21:34 +0000 2015
+X-GM-THRID: 1129684402176
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,8d4dac29202162d8
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Received: by 10.43.115.73 with SMTP id fd9mr6942897icc.2.1347304152527;
+        Mon, 10 Sep 2012 12:09:12 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.50.160.202 with SMTP id xm10ls4903912igb.3.gmail; Mon, 10 Sep
+ 2012 12:09:11 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.52.156.115 with SMTP id wd19mr2306524vdb.2.1347304151554; Mon,
+ 10 Sep 2012 12:09:11 -0700 (PDT)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by k20g2000vbk.googlegroups.com with HTTP; Mon, 10 Sep 2012 12:09:11
+ -0700 (PDT)
+Date: Mon, 10 Sep 2012 12:09:11 -0700 (PDT)
+In-Reply-To: <7e66cce8-6332-4adb-a8f8-69fb75c84b40@googlegroups.com>
+References: <7e66cce8-6332-4adb-a8f8-69fb75c84b40@googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: ENf1uIIF8SNRU_amCi40
+X-Google-Web-Client: true
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:15.0)
+ Gecko/20100101 Firefox/15.0,gzip(gfe)
+X-Google-IP: 178.190.96.14
+Message-ID: <f09bc5be-7efc-4c57-801c-fd1717238966@k20g2000vbk.googlegroups.com>
+Subject: Re: Multi-column slides with S5
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  One option is to use a plain old HTML table. Example:
+
+<table width='100%'><tr>
+ <td width='50%' style='vertical-align: top;'>
+ <!-- begin left/1st column -->
+
+ <h3>Narrow Definition</h3>
+ <p>Alternative to BigCo Web Services:</p>
+  ...
+ <!-- end left column-->
+ </td>
+
+ <td width='50%' style='vertical-align: top;'>
+ <!-- begin right/2nd column -->
+
+ <h3>Broad Definition</h3>
+ <p>Best Practices for Designing Web Services for a Unified Human and
+Programable Web</p>
+ <!-- end right column -->
+ </td>
+ </tr>
+ </table>
+
+  That's all there is to it. Cheers.
+

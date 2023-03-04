@@ -1,0 +1,87 @@
+From 898459762688@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 900898750464
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,e92caee9c2ac29b7,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,CP1252
+Received: by 10.52.174.211 with SMTP id bu19mr508808vdc.2.1306007708631;
+        Sat, 21 May 2011 12:55:08 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.220.123.99 with SMTP id o35ls179002vcr.2.gmail; Sat, 21 May
+ 2011 12:55:08 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.220.63.6 with SMTP id z6mr82235vch.40.1306007708079; Sat, 21
+ May 2011 12:55:08 -0700 (PDT)
+Received: by g24g2000vbz.googlegroups.com with HTTP; Sat, 21 May 2011 12:55:08
+ -0700 (PDT)
+Date: Sat, 21 May 2011 12:55:08 -0700 (PDT)
+X-IP: 62.47.159.210
+User-Agent: G2/1.0
+X-Google-Token: EJyx4O4ErPEt4YWKkrE0
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; es-MX; rv:1.9.2.17)
+ Gecko/20110422 Ubuntu/10.04 (lucid) Firefox/3.6.17,gzip(gfe)
+Message-ID: <1758467c-96d9-41ac-a9b3-57777bed2dfc@g24g2000vbz.googlegroups.com>
+Subject: S6 Blank Templates Now With Less CSS - Easy Theming w/ CSS Variables
+ and More
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=windows-1252
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I've updated the S6 Blank Templates that lets you create slideshows/
+presentations using HTML5/CSS3. What's new?
+
+  To allow easy theming with CSS variables and more the S6 Blank
+templates now use the less.js CSS extensions.
+
+  What is less.js?  It's a script that lets you extend "plain old" CSS
+with variables, nested selectors, mixins, and more.
+
+  For example, to change the color "theme" of the blank.html[1]
+template you now just have to change the CSS variables in the head of
+the blank.css.less[2] stylesheet. E.g. change
+
+@color:                  black;
+
+@step-hidden-color:      silver;
+
+@code-background-color:  azure;
+
+
+
+@background-gradient-color1: yellow;
+
+@background-gradient-color2: orange;
+
+to
+
+@color:                  white;
+
+@step-hidden-color:      silver;
+
+@code-background-color:  gray;
+
+
+
+@background-gradient-color1: green;
+
+@background-gradient-color2: lime;
+
+  Or whatever. You can find out more about less.js online @ http://lesscss.=
+org
+
+  Cheers.
+
+PS: Note, the less.js browser script currently won't work if you=92re
+using Google Chrome
+ and the path to your page starts with "file:///" due to a known
+Chrome issue.  (In the developer/js console you will see:
+XMLHttpRequest cannot load file:///../s6/shared/projection.css.less.
+Cross origin requests are only supported for HTTP.)
+
+
+[1] https://github.com/geraldb/s6/blob/master/blank.html
+[2] https://github.com/geraldb/s6/blob/master/blank.css.less
+

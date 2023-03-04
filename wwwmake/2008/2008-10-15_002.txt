@@ -1,0 +1,59 @@
+From 208810278912@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 200310521856
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,f95ca3b7efa5b201
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,UTF8
+Received: by 10.150.92.13 with SMTP id p13mr305271ybb.8.1224048878295;
+        Tue, 14 Oct 2008 22:34:38 -0700 (PDT)
+Return-Path: <sunaku@gmail.com>
+Received: from wr-out-0506.google.com (wr-out-0506.google.com [64.233.184.234])
+        by mx.google.com with ESMTP id 39si11789136yxd.2.2008.10.14.22.34.37;
+        Tue, 14 Oct 2008 22:34:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sunaku@gmail.com designates 64.233.184.234 as permitted sender) client-ip=64.233.184.234;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of sunaku@gmail.com designates 64.233.184.234 as permitted sender) smtp.mail=sunaku@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by wr-out-0506.google.com with SMTP id c57so2170246wra.9
+        for <webslideshow@googlegroups.com>; Tue, 14 Oct 2008 22:34:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from
+         :user-agent:mime-version:to:subject:references:in-reply-to
+         :content-type:content-transfer-encoding;
+        bh=ofbSjGHcWF49FYi9c9lk9MYTEFHv1JXSIkaJKb99xI4=;
+        b=qFFWjMXYVVxSF1sHTJdw/1+xTTuDYAx2LMmM6NM4tWUZuKwP1A/r5z1a1iXmN3CzSV
+         0Vcz2G1BjMc3Rx55S808IJGmPS6Ew4JdVaC3T6uz0sKmX3kYzw+lTDcLH3ZYBQR0jSn6
+         CHdkkNJ6siVX3YxOCZIPtfSrPCtOp0upanyb4=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references
+         :in-reply-to:content-type:content-transfer-encoding;
+        b=xZbkY1vlvFAroDWO3HALxOZoaGIsVrZOcMyPBhNfRrxqjsHNuJ3ZrF0sTE3hgtZF3a
+         meV3IQT852GfcDQHVe/Tmau3W9pOkGTHw+4irChDBee8JIKck/hYmwyCRJF7gQng3BrH
+         vZQ5bfzKIiDSKrqqQXpQ1zrAMIkLQG0co1+o8=
+Received: by 10.142.223.4 with SMTP id v4mr244771wfg.172.1224048876775;
+        Tue, 14 Oct 2008 22:34:36 -0700 (PDT)
+Return-Path: <sunaku@gmail.com>
+Received: from ?10.0.0.102? (adsl-76-202-79-178.dsl.pltn13.sbcglobal.net [76.202.79.178])
+        by mx.google.com with ESMTPS id 20sm16622049wfi.11.2008.10.14.22.34.35
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Tue, 14 Oct 2008 22:34:36 -0700 (PDT)
+Message-ID: <48F580EA.3090209@gmail.com>
+Date: Tue, 14 Oct 2008 22:34:34 -0700
+From: "Suraj N. Kurapati" <sunaku@gmail.com>
+User-Agent: Thunderbird 2.0.0.16 (X11/20080726)
+MIME-Version: 1.0
+To: webslideshow@googlegroups.com
+Subject: Re: [slideshow] Re: Slide Show (S6) Autoplay Addon Beta (w/ Scroll-Up
+ Effect) - jQuery Animate in Action
+References: <1f058eab0810142145l59003e80ha0ebfcadda12c00@mail.gmail.com> <e3fb97f30810142209v67ab8bd1l8447761e9d818817@mail.gmail.com>
+In-Reply-To: <e3fb97f30810142209v67ab8bd1l8447761e9d818817@mail.gmail.com>
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+narendra sisodiya wrote:
+> - When you will present your slideshow (using website, ) your slide 
+> timings will be recorded in xml format. I am trying to record audio also
+
+Why not record the timings in JSON format?
+It's a lot friendlier to JavaScript than XML.
+

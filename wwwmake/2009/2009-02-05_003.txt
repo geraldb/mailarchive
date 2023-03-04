@@ -1,0 +1,104 @@
+From 395693785088@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 389709561856
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,58db04fab18bc715
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.101.70.15 with SMTP id x15mr165319ank.18.1233850824938; Thu, 
+	05 Feb 2009 08:20:24 -0800 (PST)
+Date: Thu, 5 Feb 2009 08:20:24 -0800 (PST)
+In-Reply-To: <976bdc0d-b03c-4c17-acb2-5a1f49e98815@v5g2000prm.googlegroups.com>
+X-IP: 173.2.212.81
+References: <b010b579-b47d-4f23-a54c-0a902a804043@t26g2000prh.googlegroups.com> 
+	<976bdc0d-b03c-4c17-acb2-5a1f49e98815@v5g2000prm.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: xXggBQwAAAC2fA_NH467Ef4dhu6_TCON
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.6) 
+	Gecko/2009011912 Firefox/3.0.6,gzip(gfe),gzip(gfe)
+Message-ID: <3011f7d0-f27e-4b46-ad24-5353cbe75cdb@z27g2000prd.googlegroups.com>
+Subject: Re: How to use s5 theme?
+From: uriavalos <uriavalos@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Thanks for the reply.
+
+Unfortunately, I had already read that thread for using your own
+template and couldn't make sense of it. In particular, I don't
+understand how the "manifest" file works. This is the manifest file
+for s5:
+
+   __file__.svg    gradient.svg.erb
+   __file__.html   header.html.erb + footer.html.erb
+   __file__.css    style.css.erb
+   s5/opera.css
+   s5/outline.css
+   s5/print.css
+   s5/s5-core.css
+   s5/slides.js
+
+It seems to include the s5 files opera.css, outline.css, etc.. But
+what do the first three lines do? And what are erb files? Sorry, for
+the newbie questions -- it's just that I'm not familiar with ruby  :(
+
+On Feb 4, 4:19=A0pm, Gerald <ger...@vanbeta.com> wrote:
+> Hello,
+>
+> > First off, I love this thing. Textile + Emacs + S5 ... wow!
+>
+> =A0 Thanks for your kind words.
+>
+> > However, I took a look under the hood and couldn't figure out what's
+> > going on (I can follow php but apparently not ruby :-) )
+>
+> > I'd like to be able to do two things:
+>
+> > (1) How can I use a simple white background?
+>
+> =A0 =A0The built-in templates (for S5, S6, FullerScreen) all use gradient
+> backgrounds using SVG. You can set the (gradient) colors in your slide
+> textile source using a header (simple property value pair) e.g:
+>
+> gradient-colors: #0e1f5b #3b5998 =A0 =A0 =A0or
+> gradient-colors: white silver
+>
+> =A0 =A0See examples here:
+> =A0 =A0ohttp://slideshow.rubyforge.org/svn/samples/microformats.textile
+> =A0 =A0ohttp://slideshow.rubyforge.org/svn/samples/facebooker.textile
+>
+> =A0 =A0However, that changes just the background. To change the foregroun=
+d
+> color in projection mode you need to open the generated stylesheet
+> e.g. microformats.css and change:
+>
+> =A0 html, body { color: white;
+> =A0 =A0 =A0 =A0 =A0 =A0 =A0font-family: Verdana, Geneva, Arial, Helvetica=
+, sans-
+> serif; }
+>
+> =A0 to
+>
+> =A0 =A0html, body { color: black;
+> =A0 =A0 =A0 =A0 =A0 =A0 =A0font-family: Verdana, Geneva, Arial, Helvetica=
+, sans-
+> serif; }
+>
+> =A0 for example. Otherwise you'll end-up with white text on white
+> background.
+>
+> > (2) How can I use the "official" s5 theme? When I generated a "s5-
+> > compatible" presentation and replaced the s5 folder with the
+> > "official" s5 theme, the control panel broke. I'm talking about the
+> > theme you can download from the s5 website.
+>
+> =A0 =A0To use the original/unmodified s5 package w/ your own themes you
+> will have to need to package the original s5 package as a new template
+> package.
+>
+> =A0 =A0You can find some info about the new template package format @http=
+://groups.google.com/group/webslideshow/msg/bfea6128d016109f
+>
+> =A0 =A0Cheers.
+

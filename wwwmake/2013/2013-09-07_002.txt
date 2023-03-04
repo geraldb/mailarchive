@@ -1,0 +1,236 @@
+From 1384995880960@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1371358101504
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,f330162d7f89ec67
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,UTF8
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.180.106.161 with SMTP id gv1mr616491wib.4.1378544496135;
+        Sat, 07 Sep 2013 02:01:36 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.180.82.161 with SMTP id j1ls358786wiy.39.canary; Sat, 07 Sep
+ 2013 02:01:34 -0700 (PDT)
+X-Received: by 10.180.36.97 with SMTP id p1mr611965wij.3.1378544494841;
+        Sat, 07 Sep 2013 02:01:34 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x230.google.com (mail-wg0-x230.google.com [2a00:1450:400c:c00::230])
+        by gmr-mx.google.com with ESMTPS id p18si62114wiw.2.1969.12.31.16.00.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 07 Sep 2013 02:01:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::230 as permitted sender) client-ip=2a00:1450:400c:c00::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) d=gmail.com
+Received: by mail-wg0-f48.google.com with SMTP id n12so1351265wgh.27
+        for <webslideshow@googlegroups.com>; Sat, 07 Sep 2013 02:01:34 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=2m1DrBVoT8fof83uIDBpl8p3DGq04J+KgjWbayKbjZ0=;
+        b=mBGw2pbCPFw13k72BaKU4mjb0YUQwSPwqN9YKGiC1tA+Q8ru+nVwkqLVLqDqVvdFmp
+         X4/oWtzcjhbvOKYOKRHL0YSp6x93wUee2xCpgXUaZwnOqPpXyrIbORDytG6u6z1hXKTf
+         4hlVdnB2om3TC+aH3lm2gidGsHtjZxj6KDNV1UfGzOdYudtv+ecZ2u4x0PyQigJE6JO2
+         VbBtsMKHox21E4RQFrnnICq2UIigVC/KpJfugj94G8Q+Ezfm8fI3TOy0xRAusfYqzKzW
+         gfmU5PU79+YzvRCDgrFSX22bMO9bBdAIua+u9NfkKH/K7Jathqh00aWh5zMtKYZiJfVy
+         p0Uw==
+MIME-Version: 1.0
+X-Received: by 10.180.77.68 with SMTP id q4mr1580713wiw.4.1378544494714; Sat,
+ 07 Sep 2013 02:01:34 -0700 (PDT)
+Received: by 10.216.202.72 with HTTP; Sat, 7 Sep 2013 02:01:34 -0700 (PDT)
+In-Reply-To: <522AE918.2030706@gmail.com>
+References: <522AD195.1070303@gmail.com>
+	<02aa08d7-25ab-490f-9453-55ccd693c21e@googlegroups.com>
+	<522AE918.2030706@gmail.com>
+Date: Sat, 7 Sep 2013 11:01:34 +0200
+Message-ID: <CAAxEZd80xxm_BuvPtzU6cs-w=jnOgf+OkLQzqXCrwz8crXg9KA@mail.gmail.com>
+Subject: Re: [slideshow:318] Re: Failed to build default example
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Content-Type: multipart/alternative; boundary=f46d043893bdea26c204e5c76699
+
+--f46d043893bdea26c204e5c76699
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+> Should the installation
+> instruction change a bit to suit the current release?
+
+I will add a note to issue  $ slideshow install plugins         -- for
+getting the table helpers (e.g. left, right), etc
+
+in the next update. Thanks for the reminder. Cheers.
+
+
+2013/9/7 Nguy=E1=BB=85n H=C3=A0 D=C6=B0=C6=A1ng <cmpitg@gmail.com>
+
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA1
+>
+> Hi,
+>
+> El 09/07/2013 03:44 PM, Gerald Bauer escribi=C3=B3:
+> > Hello,
+> >
+> > Thanks for trying Slideshow (S9). Sorry for the trouble.  Starting
+> > w/ the latest version some helpers [1] (e.g. left,right,etc.) moved
+> > out of the core gem. Use
+> >
+> > $ slideshow update              # to update the shortcut index [2]
+> > $ slideshow install plugins    # install plugins, that is, helpers
+> > (e.g. left,right)
+> >
+> > Retry. No everything should work fine. Cheers.
+> >
+> > [1] https://github.com/slideshow-s9/tables [2]
+> > https://github.com/slideshow-s9/update
+> >
+>
+> It's good now, thank you very much!  :-)  Should the installation
+> instruction change a bit to suit the current release?
+>
+> All the best,
+> Duong
+> - --
+> Duong Nguyen ("Nguy=E1=BB=85n H=C3=A0 D=C6=B0=C6=A1ng" in Vietnamese, =E3=
+=80=8C=E3=82=B0=E3=82=A8=E3=83=B3=E3=83=A4=E3=83=B3=E3=80=8D in Japanese)
+> Blog: http://reference-error.org
+> Public Key: http://reference-error.org/public.key.txt
+> "Life is a hack"
+>
+> - -----BEGIN GEEK CODE BLOCK-----
+> Version: 3.12
+> GIT/CS/CC/ED/P/TW d++ s:(-:-) !a C+++(++++) ULU++++ P-- L+++ E@
+> W++>+++ N+ o+ K w--- O- M@ V- PS+ PE++ Y+>++ PGP++ t+ 5 X+ R- tv+ b+++
+> DI+++ D++ G++ e* h* r* y-
+> - -----END GEEK CODE BLOCK-----
+> -----BEGIN PGP SIGNATURE-----
+> Version: GnuPG v1.4.11 (GNU/Linux)
+> Comment: Using GnuPG with Thunderbird - http://www.enigmail.net/
+>
+> iQIcBAEBAgAGBQJSKukYAAoJEIpp9nyHFJiiK/0P/0w5AsMRLnBKA+0EoEaU8Kb3
+> txY+WJBvvKRy1Zz/eXnVxrRjn2cpQpmg6MKWtt9aIqD7w5+L6YTDO+GlkGHR1Oqg
+> b1CUAbNlJukxBWi/cNMN5QHwmHod8LQly5q/4nzNLLTtc1Hs46YkpZEcDSN1iBzo
+> +an69uV0wr6ulLhPwvKSEULGuPKNMZWmCkkPTUmLVum6ywvh1N6QYbpQgsRrIFi8
+> wO0QgNCMUBiBO9HfcMAtGZZ14+poUZAD6pPqQ/NHW11zF8j/FitobOFepzaB8606
+> L9FLBTd8gIBek6/00RDnrDhcCqvua6bzn5jEfaHojy43bnz7PBwyuK8DACu8mTBJ
+> e49mMcYWk7GkMGF3By99Jarfbo7l7w7SFwwhRZwhBwMYvz7WTjyeBSaInbzxwyWl
+> MZiBnPUUqiW6Nw+i2b5/L4Jgb+kGSIsKEsi1Yb1TaSYylIrTmPHbozF5zTvICwog
+> BvnPJnqkZS8jyZ4BNJjKojOTRiBJHGt+YEf1SxbeNy6454OvDv867oYurFTLO++B
+> xnvRR1gsvmlvJBoIagdSPXigZLW6Ye/gRfM/0etcGw+RAxnpZIB2q2TXcFZoFL7d
+> sZoFLp56LnIve4gu0ivTun2IP8wobDKh/EHzqStO+P8n8ENLER4T4qV1Lffr7QL3
+> ryE1JrDzLcBpCv2qNSiF
+> =3DADuN
+> -----END PGP SIGNATURE-----
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js,
+> impress.js and Friends" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to webslideshow+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/groups/opt_out.
+>
+
+--f46d043893bdea26c204e5c76699
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>&gt; Should the installation<br>
+&gt; instruction change a bit to suit the current release?<br><br> I will a=
+dd a note to issue=C2=A0 $ slideshow install plugins=C2=A0=C2=A0=C2=A0=C2=
+=A0 =C2=A0=C2=A0=C2=A0 -- for getting the table helpers (e.g. left, right),=
+ etc <br><br></div><div>in the next update. Thanks for the reminder. Cheers=
+.<br>
+</div></div><div class=3D"gmail_extra"><br><br><div class=3D"gmail_quote">2=
+013/9/7 Nguy=E1=BB=85n H=C3=A0 D=C6=B0=C6=A1ng <span dir=3D"ltr">&lt;<a hre=
+f=3D"mailto:cmpitg@gmail.com" target=3D"_blank">cmpitg@gmail.com</a>&gt;</s=
+pan><br><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border=
+-left:1px #ccc solid;padding-left:1ex">
+<div class=3D"im">-----BEGIN PGP SIGNED MESSAGE-----<br>
+Hash: SHA1<br>
+<br>
+</div>Hi,<br>
+<br>
+El 09/07/2013 03:44 PM, Gerald Bauer escribi=C3=B3:<br>
+<div class=3D"im">&gt; Hello,<br>
+&gt;<br>
+&gt; Thanks for trying Slideshow (S9). Sorry for the trouble. =C2=A0Startin=
+g<br>
+&gt; w/ the latest version some helpers [1] (e.g. left,right,etc.) moved<br=
+>
+&gt; out of the core gem. Use<br>
+&gt;<br>
+&gt; $ slideshow update =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0# t=
+o update the shortcut index [2]<br>
+&gt; $ slideshow install plugins =C2=A0 =C2=A0# install plugins, that is, h=
+elpers<br>
+&gt; (e.g. left,right)<br>
+&gt;<br>
+&gt; Retry. No everything should work fine. Cheers.<br>
+&gt;<br>
+&gt; [1] <a href=3D"https://github.com/slideshow-s9/tables" target=3D"_blan=
+k">https://github.com/slideshow-s9/tables</a> [2]<br>
+&gt; <a href=3D"https://github.com/slideshow-s9/update" target=3D"_blank">h=
+ttps://github.com/slideshow-s9/update</a><br>
+&gt;<br>
+<br>
+</div>It&#39;s good now, thank you very much! =C2=A0:-) =C2=A0Should the in=
+stallation<br>
+instruction change a bit to suit the current release?<br>
+<br>
+All the best,<br>
+<div class=3D"im">Duong<br>
+- --<br>
+Duong Nguyen (&quot;Nguy=E1=BB=85n H=C3=A0 D=C6=B0=C6=A1ng&quot; in Vietnam=
+ese, =E3=80=8C=E3=82=B0=E3=82=A8=E3=83=B3=E3=83=A4=E3=83=B3=E3=80=8D in Jap=
+anese)<br>
+Blog: <a href=3D"http://reference-error.org" target=3D"_blank">http://refer=
+ence-error.org</a><br>
+Public Key: <a href=3D"http://reference-error.org/public.key.txt" target=3D=
+"_blank">http://reference-error.org/public.key.txt</a><br>
+&quot;Life is a hack&quot;<br>
+<br>
+- -----BEGIN GEEK CODE BLOCK-----<br>
+Version: 3.12<br>
+GIT/CS/CC/ED/P/TW d++ s:(-:-) !a C+++(++++) ULU++++ P-- L+++ E@<br>
+W++&gt;+++ N+ o+ K w--- O- M@ V- PS+ PE++ Y+&gt;++ PGP++ t+ 5 X+ R- tv+ b++=
++<br>
+DI+++ D++ G++ e* h* r* y-<br>
+- -----END GEEK CODE BLOCK-----<br>
+-----BEGIN PGP SIGNATURE-----<br>
+Version: GnuPG v1.4.11 (GNU/Linux)<br>
+Comment: Using GnuPG with Thunderbird - <a href=3D"http://www.enigmail.net/=
+" target=3D"_blank">http://www.enigmail.net/</a><br>
+<br>
+</div>iQIcBAEBAgAGBQJSKukYAAoJEIpp9nyHFJiiK/0P/0w5AsMRLnBKA+0EoEaU8Kb3<br>
+txY+WJBvvKRy1Zz/eXnVxrRjn2cpQpmg6MKWtt9aIqD7w5+L6YTDO+GlkGHR1Oqg<br>
+b1CUAbNlJukxBWi/cNMN5QHwmHod8LQly5q/4nzNLLTtc1Hs46YkpZEcDSN1iBzo<br>
++an69uV0wr6ulLhPwvKSEULGuPKNMZWmCkkPTUmLVum6ywvh1N6QYbpQgsRrIFi8<br>
+wO0QgNCMUBiBO9HfcMAtGZZ14+poUZAD6pPqQ/NHW11zF8j/FitobOFepzaB8606<br>
+L9FLBTd8gIBek6/00RDnrDhcCqvua6bzn5jEfaHojy43bnz7PBwyuK8DACu8mTBJ<br>
+e49mMcYWk7GkMGF3By99Jarfbo7l7w7SFwwhRZwhBwMYvz7WTjyeBSaInbzxwyWl<br>
+MZiBnPUUqiW6Nw+i2b5/L4Jgb+kGSIsKEsi1Yb1TaSYylIrTmPHbozF5zTvICwog<br>
+BvnPJnqkZS8jyZ4BNJjKojOTRiBJHGt+YEf1SxbeNy6454OvDv867oYurFTLO++B<br>
+xnvRR1gsvmlvJBoIagdSPXigZLW6Ye/gRfM/0etcGw+RAxnpZIB2q2TXcFZoFL7d<br>
+sZoFLp56LnIve4gu0ivTun2IP8wobDKh/EHzqStO+P8n8ENLER4T4qV1Lffr7QL3<br>
+ryE1JrDzLcBpCv2qNSiF<br>
+=3DADuN<br>
+-----END PGP SIGNATURE-----<br>
+<div class=3D"HOEnZb"><div class=3D"h5"><br>
+--<br>
+You received this message because you are subscribed to the Google Groups &=
+quot;Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, i=
+mpress.js and Friends&quot; group.<br>
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:webslideshow%2Bunsubscribe@googlegroups.com">webs=
+lideshow+unsubscribe@googlegroups.com</a>.<br>
+For more options, visit <a href=3D"https://groups.google.com/groups/opt_out=
+" target=3D"_blank">https://groups.google.com/groups/opt_out</a>.<br>
+</div></div></blockquote></div><br></div>
+
+--f46d043893bdea26c204e5c76699--
+

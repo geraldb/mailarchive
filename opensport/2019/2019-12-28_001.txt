@@ -1,0 +1,113 @@
+From 6775422708128677888@xxx Sat Dec 28 09:40:30 +0000 2019
+X-GM-THRID: 6775422710592831488
+X-Received: by 2002:a17:906:ecae:: with SMTP id qh14mr58038845ejb.229.1577526030131;
+        Sat, 28 Dec 2019 01:40:30 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a05:6402:897:: with SMTP id e23ls8595083edy.12.gmail; Sat,
+ 28 Dec 2019 01:40:29 -0800 (PST)
+X-Google-Smtp-Source: APXvYqxeJjvH02upSIxYQSL8Coktk5SExUuE91Qp86SGlcWQEnUnWgDNNd5ckS5sUxaTJsowxFLz
+X-Received: by 2002:a50:fd15:: with SMTP id i21mr59716106eds.91.1577526029076;
+        Sat, 28 Dec 2019 01:40:29 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1577526029; cv=none;
+        d=google.com; s=arc-20160816;
+        b=BD2but7jeP0YnFYC5zBqPYBHc39g34ELRwprSvQ9eBHwdPPSwo8XDKmGBBDTrsce+Y
+         WBbIS6wi2AQAgwH1X1v/1k5P5USPgw4aiAWItxumO5u76LzKKWUGSLtVF3R4WQeEsjg7
+         JLlHv/89+xUNIIYTuAl22MRJ+CnZNmfq88Eksb9YA/VYu5vwC5iE9Wnt8sDU7+D4A/yi
+         gOVFxi+OSeHbRBc/xovKGehs4LbYMDwRpXnZ8w+XEPwEmszag8wVLni3l7l5USt7tkXw
+         +PUN0sZLK1qrv9s+ImB7fqIeh0q1V4w332/Kl2OZedYtIeAnosQVkbTCGmmSPotShtsf
+         R98g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=j9k7KpROgUeJ9yqHm5dLclAN8EQ8P+E1TW+uT6icrlA=;
+        b=BGi8yBPzEPcpdk6Ks9rkIepi9Et7XIG4kEjFgKNkMaTPos+l9JqBZj8VNrTX4TDdSW
+         M9IjAiqN1gxdSMFpM8m8vNubBGlkNs1ZoBTfQZMzTHsgsgiRnYh7l8r/dbQl8+LNvb1Z
+         w3y9XY4ontyzV9ldrQkVT9efnPz1d32vl8FDa8YtBuwlKZL4gdjjcKe65+EpStcY2iUo
+         5tTsyMVmxJvMA0sL0fdswezy0Xih8WXveboVOPu/QvdutEvISiD1Z8eG8UVacqmWPtyC
+         Jt1VmNi+9Znh4ADd3j2nsOWSKzrp3vljLXH6fvSyvxA1pCNdjqamuQ1JxEeNeNV2jAZc
+         DiOg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=SrHd4Lf3;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x22c.google.com (mail-lj1-x22c.google.com. [2a00:1450:4864:20::22c])
+        by gmr-mx.google.com with ESMTPS id d29si1445148edj.0.2019.12.28.01.40.29
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 28 Dec 2019 01:40:29 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) client-ip=2a00:1450:4864:20::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=SrHd4Lf3;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x22c.google.com with SMTP id u71so28917995lje.11
+        for <opensport@googlegroups.com>; Sat, 28 Dec 2019 01:40:29 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=j9k7KpROgUeJ9yqHm5dLclAN8EQ8P+E1TW+uT6icrlA=;
+        b=SrHd4Lf3ZX2MxGNWLrGKaYHD9IsKmyNd8/v2IYpkobTrrdk1zl49qwIwbW4O0S7Q6U
+         knrT+0oQknz22nENCXDS0mwTQzj6U+c74/zKr1OEKnkwP9wszfFCWB2r9c8jpipX1kV9
+         Bi9/NHtagQzCOpAWvTu8ZDNikcrhUv6whbDAIwcp96Cj6uk53cKPYNQcB1cablPy73MR
+         J3SjuOyjJuuZ24eCSgvmsS9bsEZcvgkwu9asKI6t7sIX1S0I237pBCx9UM3wDAYPE3gA
+         yS0F2heEUFFdULz3aJ9KsttHWA7L8VnOVqFATo1FYRWwxbbL3HEqYlkc/f6mHp7UahMC
+         /+jg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=j9k7KpROgUeJ9yqHm5dLclAN8EQ8P+E1TW+uT6icrlA=;
+        b=hF1DYhnjBAx+hp5/0wLuTC8W+FRivanCuPXN/415UxYvqHSAL5JE0Y3H5x+4frSwip
+         AZSo+bzlfhoeqQDXOktnr6n5zGchi4r3cMZfW0t7Y0Ovu5H0UOvavNY4dzFpr5GHSuzk
+         pGeXN/A9dT8aPWP8x6fsMBebIusa9XGFZBDc9qk0ZvRtDxni2ZGkdqED/+qF9HO1JbFq
+         umTVNrnkboF+6SJBCmkFHJrr4Zo5id0oXLEhjezwoDYCC/4rstzAQBVwtetcRBALyuwq
+         hcdmCDswoKitxzza3rn+TxJ0/9juE5h2aZaMMn7DTo/LBe6OzNZRh2MBz56eZTJeMeI1
+         +e4Q==
+X-Gm-Message-State: APjAAAUAp4f/NWKww3BMlCEsrwhBDi6BSJZhlbDHRga88+Mgo5IRlX6h
+	8PV5twdt2QXMjCUfHCxZ0DXDsfEJR+L52cE+bOqbj35h
+X-Received: by 2002:a2e:93c5:: with SMTP id p5mr29783280ljh.192.1577526028131;
+ Sat, 28 Dec 2019 01:40:28 -0800 (PST)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sat, 28 Dec 2019 10:40:16 +0100
+Message-ID: <CAAxEZd_UYwxONe5Mvg2hAfk+DSKyudDDf2eZKHjM70yZRfu_-w@mail.gmail.com>
+Subject: =?UTF-8?Q?Date_Formats_Updates_=2D_More_Formats_=28e=2Eg=2E_Jan_19=29_an?=
+	=?UTF-8?Q?d_Languages_=28e=2Eg=2E_Portugu=C3=AAs=29_Supported?=
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+   I've updated the date-formats library that finds & matches and
+reads & parses date formats in various languages.
+
+   What's news?
+
+   I've added Portugese / Portugu=C3=AAs (pt)  with three new formats. Exam=
+ple:
+
+   - `DD_MM_YYYY_DAY` e.g.  19/1/2020 Domenica
+   - `DAY_DD_MONTH` e.g. Dom 19 Jan  or  Dom 19 Janeiro
+   - `DAY_DD_MM` e.g. Dom 19/01  or Dom 19/1
+
+    I've added more variants for English. Example:
+
+    - For Sun Jan/19 you can also use Sun Jan 19 or Sun, Jan 19.
+    - For Jan/19 you can also use Jan 19
+    - and some more.
+
+   See the README page for more [1].
+
+   Yes, you can use all these formats in your match datasets in text
+   if you use the sportdb command line tool / machinery.
+
+   If there's a date format you want to see added or a new language for you
+   match datasets, please tell.
+
+   Cheers. Prost.
+
+[1] https://github.com/sportdb/sport.db/tree/master/date-formats
+

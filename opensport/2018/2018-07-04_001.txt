@@ -1,0 +1,257 @@
+From 6574412822828023808@xxx Wed Jul 04 17:19:29 +0000 2018
+X-GM-THRID: 6574089139036094464
+X-Received: by 2002:a1f:d747:: with SMTP id o68-v6mr1251428vkg.6.1530724769529;
+        Wed, 04 Jul 2018 10:19:29 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a1f:8d82:: with SMTP id p124-v6ls130419vkd.4.gmail; Wed, 04
+ Jul 2018 10:19:28 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpeW2f7cDpwTA667v0BliZxI7s6xbKBZRHrzWDazgz3loLOxr86OvZV6yCpzCKoZSlyPo19/
+X-Received: by 2002:a1f:2cd6:: with SMTP id s205-v6mr1226791vks.124.1530724768963;
+        Wed, 04 Jul 2018 10:19:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1530724768; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YfsDoS5DP45dLTjSJSV0iwNgBC/kIPB6wwHrxHpg7v6MnW3rK78/1q/XrAQv+/mvlq
+         lCak+sLqwUY98eqQ6cwdasrbGqt0Qr5Xv8iPn2bOefOiwYdtyB3VT5LZE1j0CJllWPts
+         519Pc+wvy3ShOy1vBr6b2efixXHLzZJjDUxwOJcbFD9XTkjI8VIv7UQvraQ6wkHGKskM
+         ltlSZwK7k6DlpIA1us9BP/BWL5+8sLSk+nkTdDJRQ2VSIWdXKNL6JaI72kWmGMZ+E1T+
+         35MEH0wkD76+SPAxyPrJw0bLyPkx/thWf0taj05LAfHHhNvzL3Ej6q2QbOeQrHHU7bT4
+         /v1Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=djR30PxFLf5ht/XWhrZJtg4vCwPZ107d8An73Lray9E=;
+        b=ckGT2X8gZNK0yCMI47H6CpIU+IaewV32Q/N5JrknCy+GPPw3NzvCOY6cDmY1SbhIF9
+         /Unt+L/FnkpUOAS84MR28o6qxewYhhwNdIh5xtchWEzaxsgO6ADqr2ADkiKP/cxRCTzt
+         jpZOrqOaOw5HoLkL8L1Yckx4WMPgzWy2cr2WLH1NJ5Xv4TJKyJjAWiFWSs3eJ8+7c8Yo
+         fTpkoawFD9qr+zeCtjEjV/OgiOHGcriCykagggNz9FCa+zKRjlA66HDdpTK5YSgzzO83
+         BLL6btMkwZdVofx1E/KY6g2KZT/GbDcnJpesVq79C7BVS6z61VjsiJAK1pk9m9e1uWlF
+         XuSg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=nHPHWscf;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x231.google.com (mail-it0-x231.google.com. [2607:f8b0:4001:c0b::231])
+        by gmr-mx.google.com with ESMTPS id d134-v6si236918vkf.1.2018.07.04.10.19.28
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 04 Jul 2018 10:19:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::231 as permitted sender) client-ip=2607:f8b0:4001:c0b::231;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=nHPHWscf;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::231 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x231.google.com with SMTP id p17-v6so8892488itc.2
+        for <opensport@googlegroups.com>; Wed, 04 Jul 2018 10:19:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=djR30PxFLf5ht/XWhrZJtg4vCwPZ107d8An73Lray9E=;
+        b=nHPHWscfNscIQZWqXgl+yGQ7Su9ip6/877DdFMsRgfElvrhPbjQG2lYrTEmYo2tZKg
+         jjHRwsxiXRCJjRhtEKLzz1MLE1IqonepWf+3ugHnIWxyMwM9oRZolm8qYoB4dF5ZKAc/
+         brtx6CQUYPs9RhvwzP+Dbe4f08b/MhLYKYturEImo+FMIV08fpfLe2LRBjsxhF8gKo6Z
+         H4/E0AGn8BF3MWZyv4A6uSNH4nISTOh9k1PsM8nl609UAQgjNYoWfiGTyfJ2IxUAhTij
+         7kwgQHcpq+Oqf5UMgi7kcu8swaT9saASYLObCwhwuba+V5u2bCC9M3kGEYzWOgE/5cmV
+         91fg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=djR30PxFLf5ht/XWhrZJtg4vCwPZ107d8An73Lray9E=;
+        b=Q88fGcRR9Lw37Rj/y8APjSK8H41TSDQDUq2dfI24XwN3HUj7RC29uFT82vw/ugSFNc
+         dUtxKpjoyy4EVKATuxehtDTmf58JaWdULXfsNN4PelSLPufhvUeWQa60mtr/0P5YSpER
+         ISCYjwphStPet+cLoC6Zpv38qPDzbnPHnfanDUY8oQFWhP7PkxXQd2BG2Tw/lxI1qg97
+         1LclEop1SwZvB/Y2gjZt3AnRssC4kqs0rRArj2bNqQ4uJ/wMx1ld7fbDkfdwtRKzENi5
+         7OQHCcsh/4JHxTLRYm66FtJygn6XvTsPaEzU9C2GIQxWZ86uZo2NuQZMBJd0yL2m+Zph
+         4tNw==
+X-Gm-Message-State: APt69E3cy4/87U+8pepis8H2f9irgkJArulg4r6J2fyokxvovGPBpCTm
+	Sw9qSHv+kopZVmuBW4bozMcE2+E5/swCLShuGcoTwQ==
+X-Received: by 2002:a02:503:: with SMTP id e3-v6mr2364637jad.29.1530724768396;
+ Wed, 04 Jul 2018 10:19:28 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a6b:1ec4:0:0:0:0:0 with HTTP; Wed, 4 Jul 2018 10:19:27 -0700 (PDT)
+In-Reply-To: <b3461060-fda6-4d35-bedb-1ec1bd958753@googlegroups.com>
+References: <3f3f1bc5-54c2-4786-a9a6-e7f95e1c21b3@googlegroups.com> <b3461060-fda6-4d35-bedb-1ec1bd958753@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 4 Jul 2018 19:19:27 +0200
+Message-ID: <CAAxEZd_3VqO4uq1S=G34XGUTedaX4YsCioavoN_zit_psYu+ZA@mail.gmail.com>
+Subject: Re: [opensport] Re: Error loading the 'sqlite3' Active Record adapter
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   Great to hear its working. Thanks for the update.
+
+>  I want to work on the openfootball/world-cup.json files from 2010 till 1930 is that necessary for others?
+
+   Would be great if you can share the datasets in json - you're more
+than welcome to create a new github repo, for example, and post a link
+here or tell us how it goes as you work along.
+
+
+PS: You can find the SQL to JSON export script used in world-cup.json
+<https://github.com/yorobot/football.db/blob/master/scripts/up/json.rb#L169>
+
+PPS: I didn't export all world cups yet because the tournament format
+changed a couple of times and there were golden goals, replays, etc.
+and the database schema currently only handles one level of groups
+(older world cups would need two group stages) and so on.  Keep up us
+posted how it goes.
+
+2018-07-04 18:28 GMT+02:00 Marcel van Vuuren <mvanvuuren1970@gmail.com>:
+> I have uninstalled Ruby installation because I saw that I had an unstable
+> version. After installing the stable Ruby version everything works fine and
+> the db file is created.
+>
+> @Gerald Bauer: I want to work on the openfootball/world-cup.json files from
+> 2010 till 1930 is that necessary for others?
+>
+> Marcel
+>
+> Op dinsdag 3 juli 2018 22:23:25 UTC+2 schreef Marcel van Vuuren:
+>>
+>> Hello people,
+>>
+>> This is my first DB setup using Ruby and GitHub.
+>>
+>> I have installed "Ruby+Devkit 2.5.1-2 (x64)" on my Windows 10 computer.
+>> After installing Ruby I have installed the DevKit 'option 3' from the Ruby
+>> command line and exit the installation
+>> I opend the command line with Ruby and went to the direcory
+>> C:\xampp\htdocs\worldcup>
+>> Run the command
+>> gem install sportdb
+>>
+>>> OUTPUT/RESULT
+>>>
+>>> Done installing documentation for iniparser, props, logutils, rubyzip,
+>>> concurrent-ruby, i18n, thread_safe, tzinfo, activesupport, textutils,
+>>> activemodel, arel, activerecord, tagutils, activerecord-utils,
+>>> props-activerecord, logutils-activerecord, worlddb-models, persondb-models,
+>>> sportdb-models, fetcher, datafile, sportdb-update, sportdb-service, gli,
+>>> sqlite3, sportdb after 63 seconds
+>>>
+>>> 27 gems installed
+>>
+>>
+>> Created a Datafile in the directory C:\xampp\htdocs\worldcup with the
+>> code:
+>>
+>> world  'world.db', setup: 'countries'
+>> football 'national-teams'
+>> football 'national-teams', setup: 'history'
+>> football 'world-cup', setup: 'history'
+>>
+>> Run the command
+>> sportdb build
+>>
+>>
+>>>              OUTPUT/RESULT
+>>>>
+>>>> C:\xampp\htdocs\worldcup>sportdb build
+>>>>
+>>>> activerecord-utils/0.4.0 (activerecord/5.2.0) on Ruby 2.5.1 (2018-03-29)
+>>>> [x64-mingw32]
+>>>>
+>>>>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model
+>>>> >WorldDb::Model::Country<
+>>>>
+>>>>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model
+>>>> >WorldDb::Model::StateBase<
+>>>>
+>>>>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model
+>>>> >WorldDb::Model::CityBase<
+>>>>
+>>>> sportdb-update/0.1.1 on Ruby 2.5.1 (2018-03-29) [x64-mingw32]
+>>>>
+>>>> sportdb-service/0.4.0 on Ruby 2.5.1 (2018-03-29) [x64-mingw32]
+>>>>
+>>>> sportdb/1.11.0 on Ruby 2.5.1 (2018-03-29) [x64-mingw32]
+>>>>
+>>>> sportdb/1.11.0 on Ruby 2.5.1 (2018-03-29) [x64-mingw32]
+>>>>
+>>>> [info] [builder] add world-dataset 'world.db'
+>>>>
+>>>> [info] [builder] add football-dataset 'national-teams'
+>>>>
+>>>> [info] [builder] add football-dataset 'national-teams'
+>>>>
+>>>> [info] [builder] add football-dataset 'world-cup'
+>>>>
+>>>> [info] [datafile] dowload
+>>>>
+>>>> [info] download dataset 'openmundi/world.db'
+>>>>
+>>>> [info]    from 'http://github.com/openmundi/world.db/archive/master.zip'
+>>>>
+>>>> [info]    to './tmp/openmundi--I--world.db.zip'...
+>>>>
+>>>> [info] downloading
+>>>> http://github.com/openmundi/world.db/archive/master.zip to
+>>>> ./tmp/openmundi--I--world.db.zip...
+>>>>
+>>>> [info] download dataset 'openfootball/national-teams'
+>>>>
+>>>> [info]    from
+>>>> 'http://github.com/openfootball/national-teams/archive/master.zip'
+>>>>
+>>>> [info]    to './tmp/openfootball--I--national-teams.zip'...
+>>>>
+>>>> [info] downloading
+>>>> http://github.com/openfootball/national-teams/archive/master.zip to
+>>>> ./tmp/openfootball--I--national-teams.zip...
+>>>>
+>>>> [info] download dataset 'openfootball/national-teams'
+>>>>
+>>>> [info]    from
+>>>> 'http://github.com/openfootball/national-teams/archive/master.zip'
+>>>>
+>>>> [info]    to './tmp/openfootball--I--national-teams.zip'...
+>>>>
+>>>> [info] downloading
+>>>> http://github.com/openfootball/national-teams/archive/master.zip to
+>>>> ./tmp/openfootball--I--national-teams.zip...
+>>>>
+>>>> [info] download dataset 'openfootball/world-cup'
+>>>>
+>>>> [info]    from
+>>>> 'http://github.com/openfootball/world-cup/archive/master.zip'
+>>>>
+>>>> [info]    to './tmp/openfootball--I--world-cup.zip'...
+>>>>
+>>>> [info] downloading
+>>>> http://github.com/openfootball/world-cup/archive/master.zip to
+>>>> ./tmp/openfootball--I--world-cup.zip...
+>>>>
+>>>> working directory: C:/xampp/htdocs/worldcup
+>>>>
+>>>> Connecting to db using settings:
+>>>>
+>>>> {:adapter=>"sqlite3", :database=>"./sport.db"}
+>>>>
+>>>>
+>>>> *** error: Error loading the 'sqlite3' Active Record adapter. Missing a
+>>>> gem it depends on? cannot load such file -- sqlite3/sqlite3_native
+>>>>
+>>>>
+>>
+>> On command line I get the error in red above.
+>>
+>> Maybe my local xampp installation is in the way or I am doing something
+>> wrong?
+>>
+>> Can somebody help me out here. Thanks in advance for your cooperation
+>>
+>>
+>>
+>>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> To post to this group, send email to opensport@googlegroups.com.
+> Visit this group at https://groups.google.com/group/opensport.
+> For more options, visit https://groups.google.com/d/optout.
+

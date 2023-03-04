@@ -1,0 +1,76 @@
+From 6487829743451242496@xxx Mon Nov 13 09:32:55 +0000 2017
+X-GM-THRID: 6483544831205310464
+X-Received: by 10.129.46.71 with SMTP id u68mr6042659ywu.195.1510565575365;
+        Mon, 13 Nov 2017 01:32:55 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.129.67.26 with SMTP id q26ls64496ywa.16.gmail; Mon, 13 Nov
+ 2017 01:32:54 -0800 (PST)
+X-Received: by 10.129.172.82 with SMTP id z18mr2370349ywj.212.1510565574850;
+        Mon, 13 Nov 2017 01:32:54 -0800 (PST)
+Received: by 10.13.232.18 with SMTP id r18msywe;
+        Sun, 12 Nov 2017 18:37:31 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMaH6nVl7TbURak12XaBSW76VVL0FD4+FTJnjGa1gceBdjnpB8Udm1YqEZ/bCPD7haogO8ml2540gA==
+X-Received: by 10.31.41.81 with SMTP id p78mr733072vkp.2.1510540651532;
+        Sun, 12 Nov 2017 18:37:31 -0800 (PST)
+X-Google-Web-Client: true
+Date: Sun, 12 Nov 2017 18:37:31 -0800 (PST)
+From: imcaohai@gmail.com
+To: opensport <opensport@googlegroups.com>
+Message-Id: <59f91cc8-8c78-4032-b7a3-f2ef49afe802@googlegroups.com>
+In-Reply-To: <CAAxEZd8sc1ug7PrBH9oMjfDavEXO2EkMCk-Cpx+CMhPJKneiGQ@mail.gmail.com>
+References: <f415b522-e28a-4f5b-b805-0223bfff9f99@googlegroups.com>
+ <CAAxEZd8sc1ug7PrBH9oMjfDavEXO2EkMCk-Cpx+CMhPJKneiGQ@mail.gmail.com>
+Subject: Re: [opensport] Getting Error when creating a DB
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_6182_887719607.1510540651285"
+X-Google-Token: EOuKpNAF2psocqigDvo0
+X-Google-IP: 2601:47:4001:cf3d:7db1:aa34:705d:3a3d
+
+------=_Part_6182_887719607.1510540651285
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_6183_1313697751.1510540651285"
+
+------=_Part_6183_1313697751.1510540651285
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi I got the same problem, any advice on how to downgrade to the 4.2.x?
+
+=E5=9C=A8 2017=E5=B9=B411=E6=9C=882=E6=97=A5=E6=98=9F=E6=9C=9F=E5=9B=9B UTC=
+-4=E4=B8=8A=E5=8D=8810:32:04=EF=BC=8CGerald Bauer=E5=86=99=E9=81=93=EF=BC=
+=9A
+>
+> Hello,=20
+>    Sorry for the trouble. Thanks for reporting. This is a known issue=20
+> with ActiveRecord 5+. The workaround for now is to downgrade to the=20
+> 4.2.x series using a Gemfile (and Gemfile.lock).=20
+>
+>     I will fix the index exists already in the next days in the code=20
+> so the sportdb tool work (again) with the lastest (and greatest)=20
+> ActiveRecord version out-of-the-box. Thanks for the patience. Cheers.=20
+>
+
+------=_Part_6183_1313697751.1510540651285
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi I got the same problem, any advice on how to downgrade =
+to the 4.2.x?<br><br>=E5=9C=A8 2017=E5=B9=B411=E6=9C=882=E6=97=A5=E6=98=9F=
+=E6=9C=9F=E5=9B=9B UTC-4=E4=B8=8A=E5=8D=8810:32:04=EF=BC=8CGerald Bauer=E5=
+=86=99=E9=81=93=EF=BC=9A<blockquote class=3D"gmail_quote" style=3D"margin: =
+0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>=C2=A0 =C2=A0Sorry for the trouble. Thanks for reporting. This is a kno=
+wn issue
+<br>with ActiveRecord 5+. The workaround for now is to downgrade to the
+<br>4.2.x series using a Gemfile (and Gemfile.lock).
+<br>
+<br>=C2=A0 =C2=A0 I will fix the index exists already in the next days in t=
+he code
+<br>so the sportdb tool work (again) with the lastest (and greatest)
+<br>ActiveRecord version out-of-the-box. Thanks for the patience. Cheers.
+<br></blockquote></div>
+------=_Part_6183_1313697751.1510540651285--
+
+------=_Part_6182_887719607.1510540651285--
+

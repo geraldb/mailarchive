@@ -1,0 +1,122 @@
+From 6217822055075676160@xxx Mon Nov 16 18:45:11 +0000 2015
+X-GM-THRID: 6216913658664976384
+Date: Mon, 16 Nov 2015 10:45:10 -0800 (PST)
+From: Rod Lopez <digital2waves@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <b8299e26-8ce6-4f47-a6c4-7d11188c2fd0@googlegroups.com>
+In-Reply-To: <CAAxEZd_VwuR+g7+trrV4OvoZGtRGN0TuN4KUgvM+rreiXGg9pw@mail.gmail.com>
+References: <74d57559-7e13-4238-ad20-98c00595424f@googlegroups.com>
+ <CAAxEZd_VwuR+g7+trrV4OvoZGtRGN0TuN4KUgvM+rreiXGg9pw@mail.gmail.com>
+Subject: Re: [opensport] World Cup 2014 Dataset
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1711_736209381.1447699510978"
+X-Google-Token: ELbIqLIF9t6YfOCR4JE0
+X-Google-IP: 129.171.249.136
+
+------=_Part_1711_736209381.1447699510978
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1712_162391770.1447699510978"
+
+------=_Part_1712_162391770.1447699510978
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+First at all thank for your reply...from where I can install the sportdb 
+tool? 
+Thank you, 
+Rod.
+
+On Saturday, November 14, 2015 at 3:02:52 AM UTC-5, Gerald Bauer wrote:
+
+> Hello, 
+>
+>    Welcome to football.db. The best "recommended" and easiest way to 
+> get started is using Datafiles [1]. First, of course, you need to 
+> install the sportdb tool e.g.: 
+>
+>    $ gem install sportdb                 # will also install sqlite 
+> support 
+>
+> Now you can build yourself a database using Datafile. Example: 
+>
+>   $ sportdb new worldcup             # get world cup dataset 
+>
+>  Will fetch zip archives from github and build the sport.db database.  Now 
+> try: 
+>
+>   $ sqlite3 sport.db 
+>   > .tables 
+>   >  select from * teams; 
+>   > .exit 
+>
+>   I'd recommend starting with sqlite3 - if you're new to the sqlite3 
+> command line you might try/use a visual tool - try SQLite Studio [2] 
+> (it's free). 
+>
+>   The best way to get started is to get started and than if you have 
+> more (new) questions post them here. Cheers. 
+>
+> [1] github.com/openfootball/datafile 
+> [2] sqlitestudio.pl 
+>
+
+------=_Part_1712_162391770.1447699510978
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>First at all thank for your reply...from where I can=
+=C2=A0install the sportdb tool?=C2=A0</div><div>Thank you, </div><div>Rod.<=
+br><br>On Saturday, November 14, 2015 at 3:02:52 AM UTC-5, Gerald Bauer wro=
+te:</div><blockquote class=3D"gmail_quote" style=3D"margin: 0px 0px 0px 0.8=
+ex; padding-left: 1ex; border-left-color: rgb(204, 204, 204); border-left-w=
+idth: 1px; border-left-style: solid;">Hello,
+<br>
+<br>=C2=A0 =C2=A0Welcome to football.db. The best &quot;recommended&quot; a=
+nd easiest way to
+<br>get started is using Datafiles [1]. First, of course, you need to
+<br>install the sportdb tool e.g.:
+<br>
+<br>=C2=A0 =C2=A0$ gem install sportdb =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 # will also install sqlite support
+<br>
+<br>Now you can build yourself a database using Datafile. Example:
+<br>
+<br>=C2=A0 $ sportdb new worldcup =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ # get world cup dataset
+<br>
+<br>=C2=A0Will fetch zip archives from github and build the sport.db databa=
+se. =C2=A0Now try:
+<br>
+<br>=C2=A0 $ sqlite3 sport.db
+<br>=C2=A0 &gt; .tables
+<br>=C2=A0 &gt; =C2=A0select from * teams;
+<br>=C2=A0 &gt; .exit
+<br>
+<br>=C2=A0 I&#39;d recommend starting with sqlite3 - if you&#39;re new to t=
+he sqlite3
+<br>command line you might try/use a visual tool - try SQLite Studio [2]
+<br>(it&#39;s free).
+<br>
+<br>=C2=A0 The best way to get started is to get started and than if you ha=
+ve
+<br>more (new) questions post them here. Cheers.
+<br>
+<br>[1] <a onmousedown=3D"this.href=3D&#39;http://www.google.com/url?q\75ht=
+tp%3A%2F%2Fgithub.com%2Fopenfootball%2Fdatafile\46sa\75D\46sntz\0751\46usg\=
+75AFQjCNGuSSz2iZM4_c46k47eU9RFDWMMTQ&#39;;return true;" onclick=3D"this.hre=
+f=3D&#39;http://www.google.com/url?q\75http%3A%2F%2Fgithub.com%2Fopenfootba=
+ll%2Fdatafile\46sa\75D\46sntz\0751\46usg\75AFQjCNGuSSz2iZM4_c46k47eU9RFDWMM=
+TQ&#39;;return true;" href=3D"http://github.com/openfootball/datafile" targ=
+et=3D"_blank" rel=3D"nofollow">github.com/openfootball/<wbr>datafile</a>
+<br>[2] <a onmousedown=3D"this.href=3D&#39;http://www.google.com/url?q\75ht=
+tp%3A%2F%2Fsqlitestudio.pl\46sa\75D\46sntz\0751\46usg\75AFQjCNFvmrhJNW4MFfg=
+o1XTsbYcoGCQFJg&#39;;return true;" onclick=3D"this.href=3D&#39;http://www.g=
+oogle.com/url?q\75http%3A%2F%2Fsqlitestudio.pl\46sa\75D\46sntz\0751\46usg\7=
+5AFQjCNFvmrhJNW4MFfgo1XTsbYcoGCQFJg&#39;;return true;" href=3D"http://sqlit=
+estudio.pl" target=3D"_blank" rel=3D"nofollow">sqlitestudio.pl</a>
+<br></blockquote></div>
+------=_Part_1712_162391770.1447699510978--
+
+------=_Part_1711_736209381.1447699510978--
+

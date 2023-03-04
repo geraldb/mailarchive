@@ -1,0 +1,85 @@
+From 1532596584448@xxx Tue Jun 16 00:16:55 +0000 2015
+X-GM-THRID: 1514902913024
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4543632f4fb094cc
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.224.171.130 with SMTP id h2mr23592033qaz.7.1404177801341;
+        Mon, 30 Jun 2014 18:23:21 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.90.48 with SMTP id w45ls1743935qgd.73.gmail; Mon, 30 Jun
+ 2014 18:23:21 -0700 (PDT)
+X-Received: by 10.140.42.246 with SMTP id c109mr3667qga.12.1404177801089;
+        Mon, 30 Jun 2014 18:23:21 -0700 (PDT)
+X-Google-Doc-Id: 57bd021f0fd1d36d
+X-Google-Web-Client: true
+Date: Mon, 30 Jun 2014 18:23:20 -0700 (PDT)
+From: Kalin Maldjanski <djodjo@djodjo.org>
+To: opensport@googlegroups.com
+Message-Id: <ae4238f5-6bc3-4f3d-b29e-33b24126fae3@googlegroups.com>
+In-Reply-To: <CAAxEZd9_81vGk7N5A7YL7bUuFfgs3wKTuEzhAhETJn7SE76AsQ@mail.gmail.com>
+References: <CAAxEZd9_81vGk7N5A7YL7bUuFfgs3wKTuEzhAhETJn7SE76AsQ@mail.gmail.com>
+Subject: Re: Unofficial FIFA HTTP JSON API @
+ live.mobileapp.fifa.com/api/wc/matches
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_Part_0_4579128.1404177800517"
+X-Google-Token: EIibyJ0Fk-0bh4DyJSk0
+X-Google-IP: 81.164.135.5
+
+------=_Part_0_4579128.1404177800517
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1_27349410.1404177800521"
+
+------=_Part_1_27349410.1404177800521
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+it is used by their app so I suppose they will keep it public for some more 
+time :)
+
+some interesting endpoints :
+/api/wc/home/{en|fr|de|pt|es}
+/api/wc/teams
+/api/wc/matches
+/api/wc/team/{teamid}/{en|fr|de|pt|es}/profile
+/api/wc/team/{teamid}/{en|fr|de|pt|es}/coach
+/api/mc/team/{teamid}/
+/api/mc/team/{teamid}/matches
+/api/news/{en|fr|de|pt|es}/worldcup
+/api/wc/topscorers/{en|fr|de|pt|es}
+/api/wc/stats/{en|fr|de|pt|es}/team/{teamid}/
+...
+
+
+On Monday, June 30, 2014 1:01:39 PM UTC+2, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>    FYI: Just found via a Hacker News (HN) comment: 
+>
+>     You might try/ check the "unofficial" FIFA JSON API [1] for mobile 
+> apps. 
+>
+>     Cheers. 
+>
+> [1] live.mobileapp.fifa.com/api/wc/matches 
+>
+
+------=_Part_1_27349410.1404177800521
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">it is used by their app so I suppose they will keep it public for some more time :)<br><br>some interesting endpoints :<br>/api/wc/home/{en|fr|de|pt|es}<br>/api/wc/teams<br>/api/wc/matches<br>/api/wc/team/{teamid}/{en|fr|de|pt|es}/profile<br>/api/wc/team/{teamid}/{en|fr|de|pt|es}/coach<br>/api/mc/team/{teamid}/<br>/api/mc/team/{teamid}/matches<br>/api/news/{en|fr|de|pt|es}/worldcup<br>/api/wc/topscorers/{en|fr|de|pt|es}<br>/api/wc/stats/{en|fr|de|pt|es}/team/{teamid}/<br>...<br><br><br>On Monday, June 30, 2014 1:01:39 PM UTC+2, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; &nbsp;FYI: Just found via a Hacker News (HN) comment:
+<br>
+<br>&nbsp; &nbsp; You might try/ check the "unofficial" FIFA JSON API [1] for mobile apps.
+<br>
+<br>&nbsp; &nbsp; Cheers.
+<br>
+<br>[1] <a href="http://live.mobileapp.fifa.com/api/wc/matches" target="_blank">live.mobileapp.fifa.com/api/<wbr>wc/matches</a>
+<br></blockquote></div>
+------=_Part_1_27349410.1404177800521--
+
+------=_Part_0_4579128.1404177800517--
+

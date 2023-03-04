@@ -1,0 +1,50 @@
+From 339576094720@xxx Sun Jan 11 00:21:39 +0000 2015
+X-GM-THRID: 285796728832
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,d61a16acd8afd09c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.100.33.4 with SMTP id g4mr2346797ang.22.1233002574203; Mon, 26 
+	Jan 2009 12:42:54 -0800 (PST)
+Date: Mon, 26 Jan 2009 12:42:54 -0800 (PST)
+In-Reply-To: <7a557f74-d337-4670-872b-ed7619a7f43a@r15g2000prh.googlegroups.com>
+X-IP: 75.118.30.38
+References: <30f836e9-c1f5-4052-8552-5c1b5ab31ff5@e22g2000vbe.googlegroups.com> 
+	<7a557f74-d337-4670-872b-ed7619a7f43a@r15g2000prh.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: FyAWBQwAAADWINqYMx7fl8iEp7q-JAaQ
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_6; en-us) 
+	AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1,gzip(gfe),gzip(gfe)
+Message-ID: <fb4216e7-7354-4111-83a3-2de776833e2e@i18g2000prf.googlegroups.com>
+Subject: Re: alternatives to maruku
+From: dsanson <dsanson@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+I think, given Suraj's helpful comments, that rdiscount vs. maruku is
+a bit of a red herring, and I agree that having a "pure" ruby parser
+is better than having external dependencies. (I came to S9 looking for
+something that could generate slideshows "on the fly" from my
+webserver, and for that task, the fewer external dependencies the
+better.)
+
+The trouble I was having was that *slideshow* would choke when fed
+markdown with non-link text enclosed in square brackets. I blamed
+maruku, but now, given what Suraj says, I think that wasn't the whole
+story.
+
+On the command line, maruku has "-b" as a "break on error" option.
+With that option set, it, chokes just as slideshow does. But without
+that option set, it behaves as Suraj says: it throws an error message
+to SDTOUT, but still processes the file appropriately.
+
+When I was replacing maruku with rdiscount on my local copy, I noticed
+that slideshow.rb calls maruku with some bits about how to handle
+errors. Perhaps those could be tweaked to mimic the command line's
+usual behavior, instead of the "break on error" behavior, and the
+problem would disappear?
+
+David
+

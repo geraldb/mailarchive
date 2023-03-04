@@ -1,0 +1,114 @@
+From 6564627727971778560@xxx Fri Jun 08 08:28:20 +0000 2018
+X-GM-THRID: 6564626810373406720
+X-Received: by 2002:a65:4202:: with SMTP id c2-v6mr1019828pgq.84.1528446499835;
+        Fri, 08 Jun 2018 01:28:19 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:aa7:8090:: with SMTP id v16-v6ls889397pff.10.gmail; Fri, 08
+ Jun 2018 01:28:19 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKJIBiU3K7O62nGfU1DvyAeNrg/OEid88MyFccPmwCXOWJ55TbQ/sZXcafgHPPWEi6hllhpL
+X-Received: by 2002:a62:ac1a:: with SMTP id v26-v6mr969751pfe.0.1528446499072;
+        Fri, 08 Jun 2018 01:28:19 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1528446499; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ZHBX0S0OFnpl48s8fqn5jnrE4w9IL84JXt+53u6q3kyIteWxuWvS1Hx+4Qw/aNUIFn
+         srUyJQYrf4bCtiNfsGPTR8OzzZtz4iAbWQ8C/AK/mP+ZnIcct60gplz/u27VoMmHo7i4
+         pfysyC5E2FYyOeeTaA+AI/OO0uBLcY4VfP7Szyrn3CC124Y68YzW4EyOvMtXuNyg0fbd
+         ttbApTw/Mmna4UTdvCR9WU2/WH775RZYqxR7LTPt/WiehP4jN1PfhnaDjOZ75NM3W3C5
+         99EOR+NzV8sqv4gvuDw8CvNpbRs8tnoT8fSh8Yfpb/vz540oCZO4gu+1+YQqdgZ0jKxs
+         Ep6A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=/Bgm4Wq5F/ufoo6OzsoBLnhToh8Ssuqfv6EaYU1MqG0=;
+        b=UQ9MG+fq58iDMbiDaT/3Zw2bz3E/cMFzps6gS7bIR6jMeeYYGcn4QMFMUoRK+/IjXR
+         y58q9H5eeuFSuEa2Ba3k137HWHFFFIj3dZaczWZdenNvuGewplVziG+XU3536WYSPpGs
+         vWcd3my5vD84AwrZwuZxfBDdcduq996tBiDZHrSQ1RGvcinOQpe3D8+i3BBMfsnXv7sR
+         zzooFZ2+69InrakY3PYNPQM/+Uiv4b4NJE36VoyVgZrOpDSTwwLTRnOEjeetO81x83Td
+         LxbnV2lBcqBuJIsC2FcUDGPnp7ailPFWS0+Jra8XhRStHR5Y/WGCqUiwqjojCJRsq1pd
+         bQnQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=hMpsbAM6;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22b.google.com (mail-io0-x22b.google.com. [2607:f8b0:4001:c06::22b])
+        by gmr-mx.google.com with ESMTPS id q13-v6si1047623pff.5.2018.06.08.01.28.19
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 08 Jun 2018 01:28:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22b as permitted sender) client-ip=2607:f8b0:4001:c06::22b;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=hMpsbAM6;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22b as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22b.google.com with SMTP id e15-v6so15013507iog.1
+        for <opensport@googlegroups.com>; Fri, 08 Jun 2018 01:28:19 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=/Bgm4Wq5F/ufoo6OzsoBLnhToh8Ssuqfv6EaYU1MqG0=;
+        b=hMpsbAM6rX4R9EFRycy9IM9pzFJxe0P/HxmVB8EQC7VuJSRfvBzaJ+LWCX/Xxg/QwO
+         nRJyqaTia9h0wR2tgZ0j/dz3Pg+vnknnMbj4hllT9YO0qVV8nkRzl1O8DPv5Kbkw8bUW
+         3ey6XQrmE5wddDaW5BohEgcyjIq/E49fp6WqFdwn+16tvVngnbp2UYImdnd73Rl//FpC
+         1K8WPWcsXDQoiuKvasJqvawDz0UXyx+X9r88sG9XJwFHmE2LHIzYMW9ARm0CdQJWcSW1
+         1UH8Paxgu4e5WvmsM5xPeDGAX/UHrquoX8cE23WxV2fJLbJdxYFoCGeXrMi38IzkvqsI
+         J92A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=/Bgm4Wq5F/ufoo6OzsoBLnhToh8Ssuqfv6EaYU1MqG0=;
+        b=H0vks9hh28JSgduTRF7VnU2lmCoqqnqDTfPNR+W/+Iek4TkDavKsvJ7hd1JHOY2rJ/
+         kFnwESRjLMgylz0K/FQIbaLQoq56KQQGgAcYklRAiPbjkA0wW1WUjktVxOdRmlN+rZbW
+         A8gGfV2Y968OQijf17aPpFQuk9lEzznuSmXcmwkl5fWIGNtjTnk1vy/xpN5UTFnwsKk/
+         yPGBb7NitXl2bhusCEIFMaJV1b7HwS+HPfEbUZlaTflCtX2aPPRnke6imSHxetPfE5A5
+         3k40CSJJriUzLyjrlSkqY0FUkErQS+ETN5QSz34P4KhvhnuVEKTYr0t2B1lzVB+90L9O
+         zXxQ==
+X-Gm-Message-State: APt69E3H+JvhaaDjTV7bgdH6whhtOTjDAc1u4MoJg935AtY/jCAtPqwK
+	89I/57DC4TUDc2ibZidwfRqrKQ1mhHHxBNgI2PQ=
+X-Received: by 2002:a6b:c88c:: with SMTP id y134-v6mr4406045iof.295.1528446498284;
+ Fri, 08 Jun 2018 01:28:18 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a6b:d90:0:0:0:0:0 with HTTP; Fri, 8 Jun 2018 01:28:17 -0700 (PDT)
+In-Reply-To: <a6089717-897c-492d-b7f1-1b88d4c1e93e@googlegroups.com>
+References: <a6089717-897c-492d-b7f1-1b88d4c1e93e@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 8 Jun 2018 10:28:17 +0200
+Message-ID: <CAAxEZd_mzYdqN+r+DuBnjbBoCs6w5-zG4V7jHJs2Gt5gU8Vygw@mail.gmail.com>
+Subject: Re: [opensport] Older Data
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+    Welcome to football.db. As I'm pretty much the only fool that
+contributes there's only so much I can do. I started adding some
+historical data for the bundesliga, english premiere league, champions
+league and the world cup.  However, if you want to read in the
+datasets you have to "roll your own" datafile scripts.
+
+     No magic really. Learning about how datafiles is a great first
+step to start contributing. Just dreaming. All the best. Cheers.
+Prost.
+
+2018-06-07 20:08 GMT+02:00 'Samuel' via opensport <opensport@googlegroups.com>:
+> Hello,
+>
+> First of all many thanks for the great work. One may say that this is
+> unique! Thank you very much!
+>
+> One question. I tried both the max and the all file, but only get one
+> database with entries up to 2005. is it possible to access historical data?
+>
+> Kind regards,
+> Samuel
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "opensport" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> To post to this group, send email to opensport@googlegroups.com.
+> Visit this group at https://groups.google.com/group/opensport.
+> For more options, visit https://groups.google.com/d/optout.
+

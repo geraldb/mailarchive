@@ -1,0 +1,73 @@
+From 1423685189632@xxx Tue Jun 16 00:16:56 +0000 2015
+X-GM-THRID: 1424570187776
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,7e5b8d0e52300c30,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.152.29.169 with SMTP id l9mr1656725lah.3.1403763412912;
+        Wed, 25 Jun 2014 23:16:52 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.3.229 with SMTP id f5ls23436laf.26.gmail; Wed, 25 Jun 2014
+ 23:16:52 -0700 (PDT)
+X-Received: by 10.112.133.227 with SMTP id pf3mr5456lbb.24.1403763412354;
+        Wed, 25 Jun 2014 23:16:52 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x230.google.com (mail-wg0-x230.google.com [2a00:1450:400c:c00::230])
+        by gmr-mx.google.com with ESMTPS id x7si484627wiw.1.2014.06.25.23.16.52
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 25 Jun 2014 23:16:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::230 as permitted sender) client-ip=2a00:1450:400c:c00::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f48.google.com with SMTP id n12so2964120wgh.19
+        for <opensport@googlegroups.com>; Wed, 25 Jun 2014 23:16:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=pYGg1fYZrBtH4z31wastMjIRnSo/tJLATb/ZEf6FXsk=;
+        b=IOd95tGMuXko+13bfFR6pBXwb6WThnHLHEWHnz4WMlKuyWcAcp/BU0R0TXCz0xGOJb
+         YoF6ICl1pxWXX6nIEKHBi/hzNqUzDSarCT6suGU8JzUS8AZBpu/a6uWZ2V6EXZCXVaih
+         BU7QO2cxBrw65eSrJvwQC1ZoWlgaukvP0qDPiMhIE2JbgAfKvvdyjse/5u9/mcpLPTWo
+         d5u4OCId0tRpwks/GXu8+nDCtWAVBV8ww6kG3E/u2g3X25D0sLWEc+04MaynEzLBf+Rj
+         mxNH+itlT3DDY8pGq0LFW0AUd7AtbTgXos1A0T0DjvAEr+W22havvi5JP4gCVXh8pXQg
+         5ChQ==
+MIME-Version: 1.0
+X-Received: by 10.180.10.98 with SMTP id h2mr1738732wib.29.1403763412248; Wed,
+ 25 Jun 2014 23:16:52 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Wed, 25 Jun 2014 23:16:52 -0700 (PDT)
+Date: Thu, 26 Jun 2014 08:16:52 +0200
+Message-ID: <CAAxEZd_=QSTbXxHcRRHU+=7eASJAagaD_y3cCQ4NqNbZbQ5XiA@mail.gmail.com>
+Subject: World Cup Brazil 2014 results in your shell w/ command line tools $ worldcup
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+  FYI: I've started (yet) another GitHub org, that is, ojogo [1], that
+collects more (open source) football web apps, command line tools n
+more for easy reference. Examples include:
+
+
+  - worldcup by Fatih Erikli [2] (in Python using the Soccer for Good
+HTTP JSON API) lets you fetch the latest results and print in your
+shell e.g.
+
+  $ worldcup -e today
+
+  Brazil                         1 - 1                        Croatia
+  ------------------------o-------------------------------------------
+    Being played: 34. minute
+
+
+ - worldcup-2014 by Henry Poydar [3] (same idea - see above - in Ruby)
+
+  Cheers.
+
+[1] github.com/ojogo
+[2] github.com/ojogo/worldcup
+[3] github.com/ojogo/worldcup-2014
+

@@ -1,0 +1,94 @@
+From 6927675614146068480@xxx Wed Feb 10 16:39:32 +0000 2021
+X-GM-THRID: 6927672472830476288
+X-Received: by 2002:a05:600c:4c95:: with SMTP id g21mr3694466wmp.144.1612975172040;
+        Wed, 10 Feb 2021 08:39:32 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a5d:640a:: with SMTP id z10ls3472069wru.0.gmail; Wed, 10 Feb
+ 2021 08:39:30 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJy0WOMHBvD+VpZ4Kw0cP96cD94rsBaAPoHlewkVw3VYfPmRFZTdKc15uXbByX0rehDfWRtc
+X-Received: by 2002:adf:f647:: with SMTP id x7mr4446694wrp.160.1612975170913;
+        Wed, 10 Feb 2021 08:39:30 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1612975170; cv=none;
+        d=google.com; s=arc-20160816;
+        b=sWYoVBKhPX/9S3KuYluP4aL8UpJayo0taXr34+xZsVK6Q8+ufmXySEqyTSDDk5BY+X
+         9mXXY/RlTJv0Fvr7S7ahk6erP7EPaZ4TwCjCg3RuDaLJvJn7xzFx2EjeJTVfbS5ME2bZ
+         2nwqbwZThreyb3gug2BIHB8m+gXceyv9aGB3i3BOE6fIkUH8tblsFEs4mMy4W0/ThS+5
+         sznCv04WyOOoBUBjTEHShHTZyqZq+GWkmpV8Utwz/UKgJsABNz7BJQlc6EEQJSD8/PPN
+         NppXst9MHo1S091eKtCCfRSd5RknoEq5COAFgup+nJwmzF/eJsOeNrXUoFrrtxvDi1/f
+         cjQw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=qRDQUpJUTJPnjXTAeAedoO0zQGMBS1oFIHtz/DhBMZ8=;
+        b=pDPOJLlVVB2zzwN89cTafVvW5DtNyJ+bFrB6RP097AEany9/ElICMR2qRL+fi/+/DE
+         OiRIJBEWSDB1F7eigScG9e7yRQ2l8VEzbu/iLckyrOsM0RPs2wumMTo2rKUX50F4sI6w
+         bnibSf2LEKiTZ9xRvVgv7bUObavhiVACT34wWo80zF6TbJhEYqLk+9L2tQQvbbNCctqL
+         KlsX2O5FoV6+uzaKGt3d8kBNvZvMEXR0+JY8Ahw/r/tcxbvK5umrVm/JhVxcP81k/J9v
+         oi8I6hf5eWsKV0RbewKzRjvkTZ8j03+8eJXUGF7UE4o0yj/fhtTaiuxmnsrSqywM8Ziv
+         ZNhQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=CsPsnoVi;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ej1-x62a.google.com (mail-ej1-x62a.google.com. [2a00:1450:4864:20::62a])
+        by gmr-mx.google.com with ESMTPS id m3si493133wme.0.2021.02.10.08.39.30
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 10 Feb 2021 08:39:30 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62a as permitted sender) client-ip=2a00:1450:4864:20::62a;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=CsPsnoVi;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::62a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-ej1-x62a.google.com with SMTP id w1so5281253ejf.11
+        for <opensport@googlegroups.com>; Wed, 10 Feb 2021 08:39:30 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=qRDQUpJUTJPnjXTAeAedoO0zQGMBS1oFIHtz/DhBMZ8=;
+        b=CsPsnoVi7NVJla6MhC9Yf0NefiPktSED7LGiPZhxqiF25kFgC9F0plmnPl1Akr8LF6
+         Wn3ixE/hjc+ngwruPxD0d3KQbzmcQoaS8UVmY6BgRqWpmBAezmXdiKjoeMZVGAQOCy+A
+         HFy9TMIKjWjg37W3mmaVKuF6IZ9laoQ57rvOEaWXgmwF8vkfc4qLQw8qKTOcOsXyTQT4
+         1vIu9eP/5JLZ6VX9nN8IfGy3mDVCSSQXmD8Ls5FxZca1VOiltfkz7T7+DVY9L9gOox0X
+         qVFtiALAkCqRbjwfqp2LbkflWacukfSEAscN4pa7ta7p0z2h/eaM/FtcZJpchJVNiQ+d
+         6GVw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=qRDQUpJUTJPnjXTAeAedoO0zQGMBS1oFIHtz/DhBMZ8=;
+        b=gFZSNVHw74ZRZt2IDR6Xgh7Pge9fRNYiqswKjb3OqgSpBV2MlXSgGEtVVVoFtKwO/E
+         pO7WRMdlUSPYz22AgRH8uY1j5+kB7FvK5bDCIktD2iWV6Q64X4A5ecglc5Y9XGn5dFar
+         RaMqHSJuFRLmMKvU3Rhx+uBT7z/zo8l+ei0ky1Rc1xweLoXi6akCJmWyFUS+g0Yz9dYq
+         ubXK3U30gCeSltWJTpVDnjuDQl4oMxljGD5i57l++kga3ug2sMjf4GMZxV2UuKDSP5Jl
+         f4hA1g7DhgajOnAil8TnRGNmkXfgDOhcF44A82yJUg21A0Tz5+O7FROEEfv33nZZsCXr
+         lqrQ==
+X-Gm-Message-State: AOAM5326TTq6RoPAPQ8zNYH6Vt0h1fgG5GPjk9vzJSXoQdy6XypOpBFY
+	trsaxUek4Xs9ysOT5LNWX38A9s7yywgbLQctvmvNi2lccZcVGA==
+X-Received: by 2002:a17:906:7146:: with SMTP id z6mr3635986ejj.159.1612975170345;
+ Wed, 10 Feb 2021 08:39:30 -0800 (PST)
+MIME-Version: 1.0
+References: <35ade5db-a0f9-48da-b002-bba18755dea7n@googlegroups.com>
+In-Reply-To: <35ade5db-a0f9-48da-b002-bba18755dea7n@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Wed, 10 Feb 2021 17:39:18 +0100
+Message-ID: <CAAxEZd9EYGh3TDd-4c5OXtNO2=EM=fomf4PTnsxrBWVxxbTT0g@mail.gmail.com>
+Subject: Re: [opensport] Auto Update Stopped
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+   Thanks for your kind words.  I try to get the auto-update up again
+for sure in the next weeks - but sorry I can't promise a definite
+date.
+Cheers. Prosit 2021!
+
+
+PS:
+  I got fired without notice and I am now trying to get my three-month
+stolen paycheck back. Not really fun for some background but sorry
+still some / time way off from "normality".  [1].
+
+[1] https://github.com/bigkorupto/mammad-kabiri-uniqa
+

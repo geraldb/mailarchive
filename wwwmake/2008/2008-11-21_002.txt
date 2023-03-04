@@ -1,0 +1,395 @@
+From 217281724416@xxx Sun Jan 11 00:21:40 +0000 2015
+X-GM-THRID: 215940595712
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,6b17b5734598971f,start
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,CP1252
+X-Google-Language: ENGLISH,CP1252
+Mime-Version: 1.0
+Content-Type: text/plain; charset=windows-1252
+Content-Transfer-Encoding: quoted-printable
+Received: by 10.100.163.15 with SMTP id l15mr273783ane.24.1227241255005; Thu, 
+	20 Nov 2008 20:20:55 -0800 (PST)
+Date: Thu, 20 Nov 2008 20:20:54 -0800 (PST)
+X-IP: 76.107.183.226
+User-Agent: G2/1.0
+X-Google-Token: tabEZAwAAACsyTIMthjNiwifQyo4Nkkp
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_5; en-us) 
+	AppleWebKit/525.26.2 (KHTML, like Gecko) Version/3.2 Safari/525.26.12,gzip(gfe),gzip(gfe)
+Message-ID: <fea6de5d-e953-4490-a8c2-26dcd7234313@20g2000yqt.googlegroups.com>
+Subject: Trouble installing slideshow gem
+From: Stan <stanley.hudson.48@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+X-Google-Approved: gerald@vanbeta.com via web at 2008-11-21 18:43:03
+
+This is might be better directed to a ruby group, but I am not a
+programmer, I just want to use S9. I have been able to install other
+gems.
+
+Using Mac OS X 10.5.5, when I try
+
+sudo gem install slideshow
+
+I get:
+
+Building native extensions.  This could take a while...
+ERROR:  Error installing slideshow:
+	ERROR: Failed to build gem native extension.
+
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
+extconf.rb install slideshow
+checking for main() in -lonig... no
+creating Makefile
+
+make
+gcc -I. -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/
+usr/lib/ruby/1.8/universal-darwin9.0 -I.  -fno-common -Wall  -c
+oregexp.c
+oregexp.c:2:23: error: oniguruma.h: No such file or directory
+oregexp.c:9: error: syntax error before =91regex_t=92
+oregexp.c:9: warning: no semicolon at end of struct or union
+oregexp.c:10: warning: type defaults to =91int=92 in declaration of
+=91ORegexp=92
+oregexp.c:10: warning: data definition has no type or storage class
+oregexp.c:15: error: syntax error before =91*=92 token
+oregexp.c: In function =91oregexp_free=92:
+oregexp.c:16: warning: implicit declaration of function =91onig_free=92
+oregexp.c:16: error: =91oregexp=92 undeclared (first use in this function)
+oregexp.c:16: error: (Each undeclared identifier is reported only once
+oregexp.c:16: error: for each function it appears in.)
+oregexp.c: In function =91oregexp_allocate=92:
+oregexp.c:21: error: =91oregexp=92 undeclared (first use in this function)
+oregexp.c: At top level:
+oregexp.c:27: error: syntax error before =91*=92 token
+oregexp.c:27: warning: return type defaults to =91int=92
+oregexp.c: In function =91int2encoding=92:
+oregexp.c:32: error: =91ONIG_ENCODING_ASCII=92 undeclared (first use in
+this function)
+oregexp.c:33: error: =91ONIG_ENCODING_ISO_8859_1=92 undeclared (first use
+in this function)
+oregexp.c:34: error: =91ONIG_ENCODING_ISO_8859_2=92 undeclared (first use
+in this function)
+oregexp.c:35: error: =91ONIG_ENCODING_ISO_8859_3=92 undeclared (first use
+in this function)
+oregexp.c:36: error: =91ONIG_ENCODING_ISO_8859_4=92 undeclared (first use
+in this function)
+oregexp.c:37: error: =91ONIG_ENCODING_ISO_8859_5=92 undeclared (first use
+in this function)
+oregexp.c:38: error: =91ONIG_ENCODING_ISO_8859_6=92 undeclared (first use
+in this function)
+oregexp.c:39: error: =91ONIG_ENCODING_ISO_8859_7=92 undeclared (first use
+in this function)
+oregexp.c:40: error: =91ONIG_ENCODING_ISO_8859_8=92 undeclared (first use
+in this function)
+oregexp.c:41: error: =91ONIG_ENCODING_ISO_8859_9=92 undeclared (first use
+in this function)
+oregexp.c:42: error: =91ONIG_ENCODING_ISO_8859_10=92 undeclared (first use
+in this function)
+oregexp.c:43: error: =91ONIG_ENCODING_ISO_8859_11=92 undeclared (first use
+in this function)
+oregexp.c:45: error: =91ONIG_ENCODING_ISO_8859_13=92 undeclared (first use
+in this function)
+oregexp.c:46: error: =91ONIG_ENCODING_ISO_8859_14=92 undeclared (first use
+in this function)
+oregexp.c:47: error: =91ONIG_ENCODING_ISO_8859_15=92 undeclared (first use
+in this function)
+oregexp.c:48: error: =91ONIG_ENCODING_ISO_8859_16=92 undeclared (first use
+in this function)
+oregexp.c:49: error: =91ONIG_ENCODING_UTF8=92 undeclared (first use in
+this function)
+oregexp.c:50: error: =91ONIG_ENCODING_UTF16_BE=92 undeclared (first use in
+this function)
+oregexp.c:51: error: =91ONIG_ENCODING_UTF16_LE=92 undeclared (first use in
+this function)
+oregexp.c:52: error: =91ONIG_ENCODING_UTF32_BE=92 undeclared (first use in
+this function)
+oregexp.c:53: error: =91ONIG_ENCODING_UTF32_LE=92 undeclared (first use in
+this function)
+oregexp.c:54: error: =91ONIG_ENCODING_EUC_JP=92 undeclared (first use in
+this function)
+oregexp.c:55: error: =91ONIG_ENCODING_EUC_TW=92 undeclared (first use in
+this function)
+oregexp.c:56: error: =91ONIG_ENCODING_EUC_KR=92 undeclared (first use in
+this function)
+oregexp.c:57: error: =91ONIG_ENCODING_EUC_CN=92 undeclared (first use in
+this function)
+oregexp.c:58: error: =91ONIG_ENCODING_SJIS=92 undeclared (first use in
+this function)
+oregexp.c:60: error: =91ONIG_ENCODING_KOI8_R=92 undeclared (first use in
+this function)
+oregexp.c:64: error: =91ONIG_ENCODING_BIG5=92 undeclared (first use in
+this function)
+oregexp.c:65: error: =91ONIG_ENCODING_GB18030=92 undeclared (first use in
+this function)
+oregexp.c:66: error: =91ONIG_ENCODING_UNDEF=92 undeclared (first use in
+this function)
+oregexp.c:70: warning: control reaches end of non-void function
+oregexp.c: At top level:
+oregexp.c:72: error: syntax error before =91*=92 token
+oregexp.c:72: warning: return type defaults to =91int=92
+oregexp.c: In function =91int2syntax=92:
+oregexp.c:77: error: =91ONIG_SYNTAX_ASIS=92 undeclared (first use in this
+function)
+oregexp.c:78: error: =91ONIG_SYNTAX_POSIX_BASIC=92 undeclared (first use
+in this function)
+oregexp.c:79: error: =91ONIG_SYNTAX_POSIX_EXTENDED=92 undeclared (first
+use in this function)
+oregexp.c:80: error: =91ONIG_SYNTAX_EMACS=92 undeclared (first use in this
+function)
+oregexp.c:81: error: =91ONIG_SYNTAX_GREP=92 undeclared (first use in this
+function)
+oregexp.c:82: error: =91ONIG_SYNTAX_GNU_REGEX=92 undeclared (first use in
+this function)
+oregexp.c:83: error: =91ONIG_SYNTAX_JAVA=92 undeclared (first use in this
+function)
+oregexp.c:84: error: =91ONIG_SYNTAX_PERL=92 undeclared (first use in this
+function)
+oregexp.c:85: error: =91ONIG_SYNTAX_PERL_NG=92 undeclared (first use in
+this function)
+oregexp.c:86: error: =91ONIG_SYNTAX_RUBY=92 undeclared (first use in this
+function)
+oregexp.c:87: error: =91ONIG_SYNTAX_DEFAULT=92 undeclared (first use in
+this function)
+oregexp.c:91: warning: control reaches end of non-void function
+oregexp.c: At top level:
+oregexp.c:95: error: syntax error before =91OnigRegion=92
+oregexp.c:95: warning: no semicolon at end of struct or union
+oregexp.c:99: warning: type defaults to =91int=92 in declaration of
+=91UChar=92
+oregexp.c:99: error: syntax error before =91*=92 token
+oregexp.c: In function =91name_callback=92:
+oregexp.c:107: error: =91arg=92 undeclared (first use in this function)
+oregexp.c:109: error: =91ngroup_num=92 undeclared (first use in this
+function)
+oregexp.c:110: error: =91group_nums=92 undeclared (first use in this
+function)
+oregexp.c:111: error: =91name=92 undeclared (first use in this function)
+oregexp.c: In function =91oregexp_initialize=92:
+oregexp.c:117: error: =91oregexp=92 undeclared (first use in this
+function)
+oregexp.c:118: error: syntax error before =91)=92 token
+oregexp.c:123: error: =91UChar=92 undeclared (first use in this function)
+oregexp.c:123: error: =91pat_ptr=92 undeclared (first use in this
+function)
+oregexp.c:129: error: =91OnigEncodingType=92 undeclared (first use in this
+function)
+oregexp.c:129: error: =91iEncoding=92 undeclared (first use in this
+function)
+oregexp.c:130: error: =91OnigSyntaxType=92 undeclared (first use in this
+function)
+oregexp.c:130: error: =91iSyntax=92 undeclared (first use in this
+function)
+oregexp.c:134: error: =91OnigErrorInfo=92 undeclared (first use in this
+function)
+oregexp.c:134: error: syntax error before =91einfo=92
+oregexp.c:135: warning: implicit declaration of function =91onig_new=92
+oregexp.c:135: error: =91einfo=92 undeclared (first use in this function)
+oregexp.c:136: error: =91ONIG_NORMAL=92 undeclared (first use in this
+function)
+oregexp.c:137: error: =91ONIG_MAX_ERROR_MESSAGE_LEN=92 undeclared (first
+use in this function)
+oregexp.c:138: warning: implicit declaration of function
+=91onig_error_code_to_str=92
+oregexp.c:137: warning: unused variable =91s=92
+oregexp.c: At top level:
+oregexp.c:153: error: syntax error before =91*=92 token
+oregexp.c: In function =91oregexp_make_match_data=92:
+oregexp.c:158: error: =91region=92 undeclared (first use in this function)
+oregexp.c:159: error: storage size of =91packet=92 isn=92t known
+oregexp.c:161: error: =91string_str=92 undeclared (first use in this
+function)
+oregexp.c:162: error: invalid application of =91sizeof=92 to incomplete
+type =91struct re_registers=92
+oregexp.c:163: error: dereferencing pointer to incomplete type
+oregexp.c:164: error: dereferencing pointer to incomplete type
+oregexp.c:165: error: dereferencing pointer to incomplete type
+oregexp.c:166: error: dereferencing pointer to incomplete type
+oregexp.c:169: error: dereferencing pointer to incomplete type
+oregexp.c:170: error: dereferencing pointer to incomplete type
+oregexp.c:174: warning: implicit declaration of function
+=91onig_number_of_names=92
+oregexp.c:174: error: =91oregexp=92 undeclared (first use in this
+function)
+oregexp.c:176: warning: implicit declaration of function
+=91onig_foreach_name=92
+oregexp.c:159: warning: unused variable =91packet=92
+oregexp.c: In function =91oregexp_match=92:
+oregexp.c:205: error: =91oregexp=92 undeclared (first use in this
+function)
+oregexp.c:206: error: syntax error before =91)=92 token
+oregexp.c:211: warning: statement with no effect
+oregexp.c:215: error: =91UChar=92 undeclared (first use in this function)
+oregexp.c:215: error: =91str_ptr=92 undeclared (first use in this
+function)
+oregexp.c:229: error: =91OnigRegion=92 undeclared (first use in this
+function)
+oregexp.c:229: error: =91region=92 undeclared (first use in this function)
+oregexp.c:229: warning: implicit declaration of function
+=91onig_region_new=92
+oregexp.c:230: warning: implicit declaration of function =91onig_search=92
+oregexp.c:230: error: =91ONIG_OPTION_NONE=92 undeclared (first use in this
+function)
+oregexp.c:234: warning: implicit declaration of function
+=91onig_region_free=92
+oregexp.c:238: error: =91ONIG_MISMATCH=92 undeclared (first use in this
+function)
+oregexp.c:243: error: =91ONIG_MAX_ERROR_MESSAGE_LEN=92 undeclared (first
+use in this function)
+oregexp.c:243: warning: unused variable =91s=92
+oregexp.c:248: warning: control reaches end of non-void function
+oregexp.c: At top level:
+oregexp.c:250: error: syntax error before =91BACKSLASH=92
+oregexp.c:250: warning: type defaults to =91int=92 in declaration of
+=91BACKSLASH=92
+oregexp.c:250: warning: data definition has no type or storage class
+oregexp.c: In function =91oregexp_append_replacement=92:
+oregexp.c:262: error: syntax error before =91OnigRegion=92
+oregexp.c:265: error: =91oregexp=92 undeclared (first use in this
+function)
+oregexp.c:268: error: =91UChar=92 undeclared (first use in this function)
+oregexp.c:268: error: =91replacementText=92 undeclared (first use in this
+function)
+oregexp.c:269: error: =91replacementEnd=92 undeclared (first use in this
+function)
+oregexp.c:272: error: =91OnigCodePoint=92 undeclared (first use in this
+function)
+oregexp.c:272: error: syntax error before =91digitC=92
+oregexp.c:273: error: =91OnigEncoding=92 undeclared (first use in this
+function)
+oregexp.c:274: error: nested functions are disabled, use -fnested-
+functions to re-enable
+oregexp.c:274: error: syntax error before =91*=92 token
+oregexp.c:277: error: =91matchText=92 undeclared (first use in this
+function)
+oregexp.c:279: error: syntax error before =91)=92 token
+oregexp.c:280: error: =91enc=92 undeclared (first use in this function)
+oregexp.c:280: warning: implicit declaration of function
+=91onig_get_encoding=92
+oregexp.c:283: error: syntax error before =91c=92
+oregexp.c:284: warning: implicit declaration of function
+=91ONIGENC_MBC_ENC_LEN=92
+oregexp.c:286: error: =91c=92 undeclared (first use in this function)
+oregexp.c:307: error: =91digitC=92 undeclared (first use in this function)
+oregexp.c:307: warning: implicit declaration of function
+=91ONIGENC_MBC_TO_CODE=92
+oregexp.c:309: warning: implicit declaration of function
+=91ONIGENC_IS_CODE_DIGIT=92
+oregexp.c:328: error: invalid type argument of =91->=92
+oregexp.c:328: error: invalid type argument of =91->=92
+oregexp.c:328: error: invalid type argument of =91->=92
+oregexp.c:332: error: invalid type argument of =91->=92
+oregexp.c:336: error: invalid type argument of =91->=92
+oregexp.c:336: error: invalid type argument of =91->=92
+oregexp.c:346: error: invalid type argument of =91->=92
+oregexp.c:347: error: invalid type argument of =91->=92
+oregexp.c:348: error: invalid type argument of =91->=92
+oregexp.c:363: warning: implicit declaration of function
+=91ONIGENC_IS_CODE_WORD=92
+oregexp.c:375: warning: implicit declaration of function
+=91onig_name_to_backref_number=92
+oregexp.c:378: error: invalid type argument of =91->=92
+oregexp.c:379: error: invalid type argument of =91->=92
+oregexp.c:379: error: invalid type argument of =91->=92
+oregexp.c:391: error: invalid type argument of =91->=92
+oregexp.c:391: error: invalid type argument of =91->=92
+oregexp.c:392: error: invalid type argument of =91->=92
+oregexp.c:392: error: invalid type argument of =91->=92
+oregexp.c:392: error: invalid type argument of =91->=92
+oregexp.c: In function =91oregexp_gsub=92:
+oregexp.c:417: error: syntax error before =91OnigRegion=92
+oregexp.c:428: error: =91oregexp=92 undeclared (first use in this
+function)
+oregexp.c:429: error: =91OnigEncoding=92 undeclared (first use in this
+function)
+oregexp.c:429: error: syntax error before =91enc=92
+oregexp.c:441: error: syntax error before =91)=92 token
+oregexp.c:444: error: =91UChar=92 undeclared (first use in this function)
+oregexp.c:444: error: =91str_ptr=92 undeclared (first use in this
+function)
+oregexp.c:447: error: =91ONIG_OPTION_NONE=92 undeclared (first use in this
+function)
+oregexp.c:457: error: =91enc=92 undeclared (first use in this function)
+oregexp.c:460: error: invalid type argument of =91->=92
+oregexp.c:461: error: invalid type argument of =91->=92
+oregexp.c: At top level:
+oregexp.c:510: error: syntax error before =91OnigRegion=92
+oregexp.c:510: warning: no semicolon at end of struct or union
+oregexp.c:511: warning: type defaults to =91int=92 in declaration of
+=91gsub_packet=92
+oregexp.c:511: warning: data definition has no type or storage class
+oregexp.c:512: error: syntax error before =91*=92 token
+oregexp.c: In function =91oregexp_packed_gsub=92:
+oregexp.c:513: error: =91args=92 undeclared (first use in this function)
+oregexp.c: At top level:
+oregexp.c:515: error: syntax error before =91*=92 token
+oregexp.c: In function =91oregexp_cleanup_region=92:
+oregexp.c:516: error: =91region=92 undeclared (first use in this function)
+oregexp.c: In function =91oregexp_safe_gsub=92:
+oregexp.c:525: error: =91OnigRegion=92 undeclared (first use in this
+function)
+oregexp.c:525: error: =91region=92 undeclared (first use in this function)
+oregexp.c:526: error: syntax error before =91call_args=92
+oregexp.c:526: warning: control reaches end of non-void function
+oregexp.c: At top level:
+oregexp.c:597: error: syntax error before =91OnigRegion=92
+oregexp.c: In function =91oregexp_scan=92:
+oregexp.c:605: error: =91oregexp=92 undeclared (first use in this
+function)
+oregexp.c:606: error: =91OnigEncoding=92 undeclared (first use in this
+function)
+oregexp.c:606: error: syntax error before =91enc=92
+oregexp.c:611: error: =91self=92 undeclared (first use in this function)
+oregexp.c:611: error: syntax error before =91)=92 token
+oregexp.c:613: error: =91str=92 undeclared (first use in this function)
+oregexp.c:614: error: =91UChar=92 undeclared (first use in this function)
+oregexp.c:614: error: =91str_ptr=92 undeclared (first use in this
+function)
+oregexp.c:616: error: =91region=92 undeclared (first use in this function)
+oregexp.c:616: error: =91ONIG_OPTION_NONE=92 undeclared (first use in this
+function)
+oregexp.c:622: error: =91enc=92 undeclared (first use in this function)
+oregexp.c: At top level:
+oregexp.c:651: error: syntax error before =91OnigRegion=92
+oregexp.c:651: warning: no semicolon at end of struct or union
+oregexp.c: In function =91oregexp_packed_scan=92:
+oregexp.c:654: error: dereferencing pointer to incomplete type
+oregexp.c:654: error: dereferencing pointer to incomplete type
+oregexp.c:654: error: dereferencing pointer to incomplete type
+oregexp.c: In function =91oregexp_m_scan=92:
+oregexp.c:669: error: =91OnigRegion=92 undeclared (first use in this
+function)
+oregexp.c:669: error: =91region=92 undeclared (first use in this function)
+oregexp.c:670: error: variable =91call_args=92 has initializer but
+incomplete type
+oregexp.c:670: warning: excess elements in struct initializer
+oregexp.c:670: warning: (near initialization for =91call_args=92)
+oregexp.c:670: warning: excess elements in struct initializer
+oregexp.c:670: warning: (near initialization for =91call_args=92)
+oregexp.c:670: warning: excess elements in struct initializer
+oregexp.c:670: warning: (near initialization for =91call_args=92)
+oregexp.c:670: error: storage size of =91call_args=92 isn=92t known
+oregexp.c:671: warning: passing argument 3 of =91rb_ensure=92 from
+incompatible pointer type
+oregexp.c:670: warning: unused variable =91call_args=92
+oregexp.c: In function =91oregexp_match_op=92:
+oregexp.c:727: error: dereferencing pointer to incomplete type
+oregexp.c:728: warning: control reaches end of non-void function
+oregexp.c: In function =91Init_oregexp=92:
+oregexp.c:743: warning: implicit declaration of function
+=91onig_version=92
+oregexp.c:743: warning: passing argument 1 of =91rb_str_new2=92 makes
+pointer from integer without a cast
+make: *** [oregexp.o] Error 1
+
+
+Gem files will remain installed in /Library/Ruby/Gems/1.8/gems/
+oniguruma-1.1.0 for inspection.
+Results logged to /Library/Ruby/Gems/1.8/gems/oniguruma-1.1.0/ext/
+gem_make.out
+
+Any suggestions?
+
+Stan
+
+
+

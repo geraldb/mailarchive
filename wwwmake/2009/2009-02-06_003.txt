@@ -1,0 +1,110 @@
+From 413213392896@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 389709561856
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,58db04fab18bc715
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.151.15.13 with SMTP id s13mr474313ybi.21.1233939004308; Fri, 
+	06 Feb 2009 08:50:04 -0800 (PST)
+Date: Fri, 6 Feb 2009 08:50:04 -0800 (PST)
+In-Reply-To: <1f058eab0902060359g3cd78a50n967dff6d5858c9ee@mail.gmail.com>
+X-IP: 173.2.212.81
+References: <b010b579-b47d-4f23-a54c-0a902a804043@t26g2000prh.googlegroups.com> 
+	<976bdc0d-b03c-4c17-acb2-5a1f49e98815@v5g2000prm.googlegroups.com> 
+	<3011f7d0-f27e-4b46-ad24-5353cbe75cdb@z27g2000prd.googlegroups.com> 
+	<1f058eab0902051019ybb15153m2f23c399eca3bc0a@mail.gmail.com> 
+	<1f058eab0902060359g3cd78a50n967dff6d5858c9ee@mail.gmail.com>
+User-Agent: G2/1.0
+X-Google-Token: XujowQwAAAD2SIZIegxBcc7rud2WwJwr
+X-HTTP-UserAgent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.6) 
+	Gecko/2009011912 Firefox/3.0.6,gzip(gfe),gzip(gfe)
+Message-ID: <51d39041-c4ee-4b3a-8c4f-5efb7e435110@r36g2000prf.googlegroups.com>
+Subject: Re: How to use s5 theme?
+From: uriavalos <uriavalos@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Thanks. What was tripping me up was those pesky __file__ includes.
+So for the benefit of others, to use the "official" s5 theme (or
+another theme) AND drop the background:
+
+(1) remove __file__.svg and __file__.css from the manifest,
+(2) add the new files to the manifest...
+(3) update header.html.erb with the locations of new css files (and
+also remove the svg background)
+
+You also answered another question I had (thanks) -- how to declare
+the author, company, title, subtitle, etc. variables.
+
+Since I am not a ruby programmer, how do variable declarations work --
+can you pretty much just define any variable in the header of your
+textile file and then invoke them in the erb file? For example,
+
+    foo: hello world
+
+in the top of the textile file and then use it in the erb file as
+
+   <%=3D @headers['foo']%>
+
+?
+
+Thanks again, btw, I'm really loving this thing. I think I pretty much
+found my answer to Impress and PowerPoint.
+
+On Feb 6, 6:59=A0am, Gerald Bauer <ger...@vanbeta.com> wrote:
+> Hello,
+>
+> > =A0 To start documenting the new packaging format I'd say the easiest
+> > is if I package up the original S5 pack as an sample how it all works
+> > and fits together. =A0If you're not in a rush I'll post the new sample
+> > package in a couple of days.
+>
+> =A0 =A0 I updated the slideshow gem (- that is, version 0.7.4 -) to
+> include a sample starter template package to demo how to bundle up the
+> original S5 v11 blank package.
+>
+> =A0Update your slideshow gem/installation than issue:
+>
+> =A0 slideshow -g -t s5blank.txt
+>
+> =A0This will generate a sample template package w/ manifest for the S5
+> v11 blank package in your working folder. If you want to store it
+> somewhere else add the -o/--output switch e.g.
+>
+> =A0 slideshow -g -t s5blank.txt -o tpl
+>
+> Note, the sample package also includes a "starter" slide show called
+> blank.textile. Delete it once you write your own slide shows.
+>
+> =A0To test and use the generated sample package run:
+>
+> =A0 slideshow -t s5blank.txt blank.textile -o o
+>
+> =A0Note, change your output folder using the -o/--output switch
+> otherwise you may override your templates. Or if you stored the
+> generated package in tpl folder run:
+>
+> =A0 slideshow -t tpl/s5blank.txt tpl/blank.textile
+>
+> That's it. Open up the generated web page, that is, blank.html or
+> o/blank.html depending on your ouput folder settings and enjoy.
+>
+> Some more details:
+>
+> The package is configured to use the following headers in header.html.erb=
+:
+>
+> author: Your Name Here
+> company: Your Company Here
+> title: Your Slide Show Title Here
+> subtitle: Your Subtitle Here
+> footer: Your Footer Here
+> subfooter: Your Subfooter Here
+>
+> Open up the header.html.erb folder for details. All other included
+> files get copied verbatim.
+>
+> =A0Cheers.
+

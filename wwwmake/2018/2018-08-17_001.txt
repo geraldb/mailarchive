@@ -1,0 +1,111 @@
+From 6590765809949212672@xxx Fri Aug 17 18:57:25 +0000 2018
+X-GM-THRID: 6590763985022222336
+X-Received: by 2002:adf:df8c:: with SMTP id z12-v6mr3207098wrl.2.1534532245310;
+        Fri, 17 Aug 2018 11:57:25 -0700 (PDT)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a1c:4c08:: with SMTP id z8-v6ls1941253wmf.6.canary-gmail;
+ Fri, 17 Aug 2018 11:57:24 -0700 (PDT)
+X-Google-Smtp-Source: AA+uWPzyIt3qymjgotrIARSzd8la7cMdNaMl0ONr3RYk3Z1f1z8GKCLZYd8pjdzgE96A57lKUbjX
+X-Received: by 2002:a1c:eb10:: with SMTP id j16-v6mr2924273wmh.22.1534532244341;
+        Fri, 17 Aug 2018 11:57:24 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1534532244; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Z4nFZGyqRX81ZnzQcQ6nsj/ZGnzrCgSS3w4gnvdSOHBhknfd2s2YEVX6CJV9myeBt1
+         cc1Uyy8lW62aGqOL0VQ24mBTh9A1t1U+CHy00hVBrbjY07x3QOI596CViooo5QfjDp9v
+         d0tIchIFOn5XgSTcK0QzghIlE/1NvgwWGLZUMi8oI3Qfgaz3UpiOBczeE3SUh1f2lha9
+         JUGqXG7lNFPiqp4dUlEk1D7isxBFa/ypUGcn8oMPs5/YfLpT92Xwdg0dPs/64ec+7pqo
+         wR6CZqIpSSkedclzvEwSYs6VsUDWOmOjS5Psa651wAGo6qf2d6QoHyh6VmLfpmc9firc
+         0RvQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=hGAPwBLkpA1fhrftrno57vO2QOnpki/DyHGVFCRmTPE=;
+        b=JFoUIx4YRJMmVmsVAwAYhBL7kFY54i8RxQt2sD4BmzYZTfyFibD/ejLPtSDWCeytmB
+         DyI02SEkRI3Lf6ZG93tGH9LnkIljkkysEo9hb+OXCeJsLCa3y0cRLa7mFUSecp8Dojfo
+         fjZCOXZycIPBha0BNOojLM1lnzs9eCl76738z9oMnaDxneiGIGjLh4HH69lFWIWuFe6q
+         8dx6qBzZMeeiPkWCt0tGthTns/xDKjOlrnI+pQyVeFoat+l+DZtKF7yV76SMshObfDqp
+         OFII1kPI2PqBcdfCD3vRIsQE2JW/SBa74ZV+jdwUF5ggMRSe6uTQBGxLMlSfi3+GRGcA
+         HJgQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=QNWe7O0l;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::134 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x134.google.com (mail-lf1-x134.google.com. [2a00:1450:4864:20::134])
+        by gmr-mx.google.com with ESMTPS id p10-v6si135580wmc.2.2018.08.17.11.57.24
+        for <wwwmake@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 17 Aug 2018 11:57:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::134 as permitted sender) client-ip=2a00:1450:4864:20::134;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=QNWe7O0l;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::134 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x134.google.com with SMTP id g6-v6so6582093lfb.11
+        for <wwwmake@googlegroups.com>; Fri, 17 Aug 2018 11:57:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=hGAPwBLkpA1fhrftrno57vO2QOnpki/DyHGVFCRmTPE=;
+        b=QNWe7O0lYO+arJS91EVOFYCSyq7UJ1Wx3kBnAH/E9m4ii/dFF3b1exuWu2lNwxSwvW
+         d1lqgC04jMYPkLsQHx4RyfcWmkLjzEr47cKPkhv2kE/Emp2LqgqmOLBUtF3lutRQWhxV
+         5t2bLowv4mQ37o1NEk4zbYbcvHtJHcrd52U8JKwOB5H9avFFGWnIQB/xrTtYTgk8hgbg
+         Gi5UTlipBhxUCEXeTlr7C7SR+dCsrZlv8a9GKtdVTHY65d7k6VlGHlk9HWvNVc7RpZSC
+         c5L+bEtuyShV+UphJEJ2F+ZXZuFaiYO+SMHJogzTARKwR246ilVmabO7+N0zkcl0BZx9
+         uiGg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:content-transfer-encoding;
+        bh=hGAPwBLkpA1fhrftrno57vO2QOnpki/DyHGVFCRmTPE=;
+        b=MoVLabLuqnD7niOYI7eQLIp6q8S0yIq/CrBQzOq63j170PEqKYxglXzIP4G4dmc5Ll
+         dWB3pmAzplg/8ilF2t9jrcVDmRoY1/RRYSF3KAm9qemU7AwrhfpxuubhP8eZ9WOeBhGh
+         FHU6j9yQC6OzzUOcTGoqDHXIwhzqStmoR7SAqkfb27l+L+v8bk+r8vIpJf1bjcrf48Zm
+         v6SF257k+A1EucpsgP5Rj8IM92D1kiVcUjlYCA2MkwaHTEbUshLwPKkcEkS8XaP70mm+
+         5Lj6iqMyPziSNYdMjHAvVwCcSqd8b9pkLUFhbHWdj0jZkjJ89xGKrI/EO2sJaagJlGwh
+         hHxQ==
+X-Gm-Message-State: AOUpUlHy7+V8Poq829ma2IAG03rwkNbdGjg60z3CHkn9jhl+uX69Vmlc
+	nLyb5VHlb5LvnAV37xPZasMfl7fKUcoGEYJ6oKeRqpWc
+X-Received: by 2002:a19:5410:: with SMTP id i16-v6mr2078401lfb.122.1534532243546;
+ Fri, 17 Aug 2018 11:57:23 -0700 (PDT)
+MIME-Version: 1.0
+References: <1d9371fd-1f10-45ef-97ac-cae61d4f5fce@googlegroups.com>
+In-Reply-To: <1d9371fd-1f10-45ef-97ac-cae61d4f5fce@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 17 Aug 2018 20:57:12 +0200
+Message-ID: <CAAxEZd_qhXUULrdKxQSZTNWwN7+5UC0-dyi3MYbVGU_eV8u4dQ@mail.gmail.com>
+Subject: Re: [wwwmake:442] jekyll-planet: Adding a link to original url
+To: wwwmake@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+   You're welcome to add the missing reference.
+
+    If you use the pluto feedreader machinery you can use your own
+templates, helpers and more. See the Pluto docs @
+http://feedreader.github.io for more.
+
+    Happy planet. Cheers. Prost.
+El vie., 17 ago. 2018 a las 20:50, <viresh16118@iiitd.ac.in> escribi=C3=B3:
+>
+> While making a blog aggregator, I'd like to be able to add in a reference=
+ to the original blog post, (especially to give due credit to the original =
+author).
+> This doesn't appear in the front-matter by default, any specific reasons =
+to omit this ?
+>
+> (PS: I'd be happy to send in a PR for this addition if it's not omitted f=
+or a reason)
+>
+> --
+> You received this message because you are subscribed to the Google Groups=
+ "wwwmake" group.
+> To unsubscribe from this group and stop receiving emails from it, send an=
+ email to wwwmake+unsubscribe@googlegroups.com.
+> To post to this group, send email to wwwmake@googlegroups.com.
+> Visit this group at https://groups.google.com/group/wwwmake.
+> For more options, visit https://groups.google.com/d/optout.
+

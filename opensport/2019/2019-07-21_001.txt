@@ -1,0 +1,112 @@
+From 6716173647083470848@xxx Sun Jul 21 17:43:54 +0000 2019
+X-GM-THRID: 6710981832719990784
+X-Received: by 2002:a17:906:4048:: with SMTP id y8mr51006717ejj.35.1563731033754;
+        Sun, 21 Jul 2019 10:43:53 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a17:906:7345:: with SMTP id h5ls7758032ejl.16.gmail; Sun, 21
+ Jul 2019 10:43:53 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqyV5RSSZ6M7j8Xtatt+NklBfHsU7cy7jLJMxgJ5URoKFAVC4PBz4N4wZTVbptGbmwHMlcFW
+X-Received: by 2002:a17:906:9145:: with SMTP id y5mr50426081ejw.257.1563731033075;
+        Sun, 21 Jul 2019 10:43:53 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1563731033; cv=none;
+        d=google.com; s=arc-20160816;
+        b=nagbJMj6N1DkYcOu9qhYRW7equWqW5ITSfRvTSq363akUDTckDZd5Bq4sV6WmL1G6C
+         XQ9Du2gMAdQ4BNdO+EniB8E+F4UgFG0CgbPgAI5ajrZP1GUvtmSCCmLBKqAMZ+h1zBq4
+         TIXsJmb9oBvwT8jEKdM7KZ6QpmtLpeyppzrIEydgRczzAQkcmU0fXGeDWuTG5JKatpnW
+         ZxF0cq/BaJpno3NhmTXSiMSo8dpg8iLkT+xuqS0QgfMo+mX+KHIIVVo6NlTFDJlg/il7
+         ZGo1OHC0bzdPbTz9gzwu7/v47zTNBulbcYowjqvzQAlxjG3/XBB+GFvf4gh1cTPRC1uE
+         hiww==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=c5NkWC5qIOCacXr+HMXoVk8VhrlFg0Gg0T7nxDew9ZU=;
+        b=PVsrPdR5YGnKjAakHwyMtEufhEExlrERouUxRrzKzF87+tHWkR/Ut0WIgq5QTt0JhE
+         VdwBOaMXoyZXIPBhz5IsiDAMpXb1DCP+slofnyFatIo7JF/OuhkxBjcmBw+n8+qD/fZW
+         +BBzZ0WpHV2E4lQ2HEh2ZoE1GiBcZq3rW8Y4gHzy6lLzywsHkcGreo2rOPfpDY2xzjhM
+         uJzkCQcBRpQoHHmrZQm3S8LnJzomY85VVrxOQtfpVZWriD0R89G/nPsJu+3LNsxBb+d+
+         If4s9hnrrdKf2/BuhXg3LW6nW6sHPb4Wa60rIuaG4qlLLJd/8Pg4Q+Ef6RG8pJ5b8tpt
+         xb6w==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=DgnCz3ht;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lj1-x232.google.com (mail-lj1-x232.google.com. [2a00:1450:4864:20::232])
+        by gmr-mx.google.com with ESMTPS id jz14si1622739ejb.0.2019.07.21.10.43.53
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=AEAD-AES128-GCM-SHA256 bits=128/128);
+        Sun, 21 Jul 2019 10:43:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::232 as permitted sender) client-ip=2a00:1450:4864:20::232;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=DgnCz3ht;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::232 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lj1-x232.google.com with SMTP id r9so35256941ljg.5
+        for <opensport@googlegroups.com>; Sun, 21 Jul 2019 10:43:53 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=c5NkWC5qIOCacXr+HMXoVk8VhrlFg0Gg0T7nxDew9ZU=;
+        b=DgnCz3httnhlVIEPEitVrhUJIO0WvXTt9DCN24P1WOAQ2k9L37210OD81KY8tpKf5/
+         Te73tMLyPjX2NC2rWLl7rmFWhEAsNvP2z5qfwHZ5EwCgp9Od868PwB1VD+zoR1Soyel2
+         4LwdXOLbZnaMVFbqO+oDVcUTVtnSHmD8k2mwxpEzrp2f4rSmtXOl3o9w3GQG1PpEXVQx
+         wiZ0N7jXFTBRRO6VAFIOSMeW1ZPGcYfWTsXMrM+ceD6rYf6YZBD0G4rgS5ncJXBStFzm
+         jpDQIoyYWgvhjaAwO9I7kvU6ERUUeyN/CyZTpsrfvsO+MPisCZhBhN+vs20HGx3M7b2m
+         ahfg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=c5NkWC5qIOCacXr+HMXoVk8VhrlFg0Gg0T7nxDew9ZU=;
+        b=HbGhS84pvw7oIaz/oSCHrFZbkdEmfn7LNjjj+UWQviQqixUvWoO6I3q44fJugYcYV9
+         rq4IPZ+XYuSTtDtiPadFmUo9io2UFk+P6eIWtG+IXY3XVC3PZZ87t0MDJMfb5HVMG9EW
+         mhBAaZQ+ozFwLfeiu1TIhLh+qKKLu6ou+iu8LltZbaYWcGsUeemEdmL0v4Pck68QGp6p
+         GFR6mNQJGcNStQsyZBLkHqtkJhT418MPSxrWUrD+l/i/TVZRjZzJe8rqH+csUqb8TpTx
+         TnAATb+U5EJEBVwVluMLE5LBsrtpTuAsq+xqC+f76C4meQbKhjYDOdK/+6hnCmI6cCku
+         VmFw==
+X-Gm-Message-State: APjAAAWZ35bfE+Q4qf4rPxA3HXEv2JTxpQzIA7oVF+m0VT/iQcJ6Aw1+
+	tCrhlbOghOd6f+h2WztxV3zc0XM4Ad9yacfsvpR0QWrtzxk=
+X-Received: by 2002:a2e:a171:: with SMTP id u17mr34486533ljl.209.1563731032406;
+ Sun, 21 Jul 2019 10:43:52 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAAxEZd8yA6pHbk+y7zNxhaR+C-sj3NY9WRA+XyizFjBCkx9n6g@mail.gmail.com>
+ <7a72e99f-c2a4-466d-985a-4143a27d514f@googlegroups.com>
+In-Reply-To: <7a72e99f-c2a4-466d-985a-4143a27d514f@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 21 Jul 2019 19:43:41 +0200
+Message-ID: <CAAxEZd94c4W5HvqUyaH0ozbqwbgAth2d6RSK+zSmi6qGbp3y+g@mail.gmail.com>
+Subject: Re: [opensport] Re: /clubs - New Central Package / Repo for World's
+ Football Clubs (incl. Premier League, Bundesliga, La Liga, etc.)
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Paul,
+
+    The easiest way is to use the new csv import and the football.csv
+datasets for england.
+    To import all datasets, see the sportdb-import readme for the full
+sample script / code [1]
+
+    Note: You can change:
+
+    pack.import_leagues
+
+     to
+
+    pack.import_leagues( start: '1970-71' )
+
+    in your case to start with the 1970 season and not all the way
+back from the 1880s.
+
+    Note: Sure what's your meaning / definition of premiership.  Is it
+only the first level or all four levels?
+
+     For now all levels get added - let me know if that works.  If you
+got so far I'm can offer to add a new levels parameter
+    to import_leagues so you can filter out all others but the first
+level, for example e.g. levels: [1] or something.
+
+     Let us know how it goes. Good luck. Cheers. Prost.
+
+[1] https://github.com/sportdb/sport.db/tree/master/sportdb-import
+

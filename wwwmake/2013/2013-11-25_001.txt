@@ -1,0 +1,93 @@
+From 1442240790528@xxx Sun Jan 11 00:21:32 +0000 2015
+X-GM-THRID: 1431622909952
+X-Google-Groups: webslideshow
+X-Google-Thread: befe626adc,4a714fa3a883ed3f
+X-Google-Attributes: gidbefe626adc,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.52.34.234 with SMTP id c10mr7689406vdj.5.1385377208615;
+        Mon, 25 Nov 2013 03:00:08 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.127.3 with SMTP id nc3ls453102qeb.9.gmail; Mon, 25 Nov 2013
+ 03:00:08 -0800 (PST)
+X-Received: by 10.49.131.167 with SMTP id on7mr28072qeb.20.1385377208296;
+        Mon, 25 Nov 2013 03:00:08 -0800 (PST)
+X-Google-Doc-Id: 2fafa5b46f8a547
+X-Google-Web-Client: true
+Date: Mon, 25 Nov 2013 03:00:07 -0800 (PST)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <2d141b57-2422-4a6f-9240-382f09b05e2c@googlegroups.com>
+In-Reply-To: <35292c64-2e56-410f-b4bd-0c6ea976ac33@googlegroups.com>
+References: <35292c64-2e56-410f-b4bd-0c6ea976ac33@googlegroups.com>
+Subject: Re: Google Analytics Helper
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1804_31045961.1385377207749"
+X-Google-Token: ELfbzJQFsqE4J8QUxm80
+X-Google-IP: 188.23.216.227
+
+------=_Part_1804_31045961.1385377207749
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1805_18056260.1385377207749"
+
+------=_Part_1805_18056260.1385377207749
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello Kamal,
+
+  Sorry I'm mistaken. Of course, you can add the helper to your slide 
+source. I tried this example:
+
+~~~
+   # slide title
+
+   # another slide title
+
+   test test
+
+  {{ google_analytics code=UA-YOUR-CODE-HERE }}
+~~~
+
+   And I generate the slide deck using:
+
+   $ slideshow build index.txt -t reveal
+
+   As the saying goes. Works great on my machine. Sorry.  You might try 
+adding the google_analytics helper at the end of the document. Or try if it 
+works withouth the analytics helper. For more info about the crash use the 
+--verbose option e.g. issue
+
+  $ slideshow --verbose build index.txt -t reveal
+
+   If you try it, please post the stack trace. Cheers.
+
+
+PS: The code for the analytics helper is here -> 
+https://github.com/slideshow-s9/analytics/blob/master/analytics_helper.rb  
+No magic really. Just adding a (guarded) text snippet.
+
+
+------=_Part_1805_18056260.1385377207749
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello Kamal,<br><br>&nbsp; Sorry I'm mistaken. Of course, =
+you can add the helper to your slide source. I tried this example:<br><br>~=
+~~<br>&nbsp;&nbsp; # slide title<br><br>&nbsp;&nbsp; # another slide title<=
+br><br>&nbsp;&nbsp; test test<br><br>&nbsp; {{ google_analytics code=3DUA-Y=
+OUR-CODE-HERE }}<br>~~~<br><br>&nbsp;&nbsp; And I generate the slide deck u=
+sing:<br><br>&nbsp;&nbsp; $ slideshow build index.txt -t reveal<br><br>&nbs=
+p;&nbsp; As the saying goes. Works great on my machine. Sorry.&nbsp; You mi=
+ght try adding the google_analytics helper at the end of the document. Or t=
+ry if it works withouth the analytics helper. For more info about the crash=
+ use the --verbose option e.g. issue<br><br>&nbsp; $ slideshow --verbose bu=
+ild index.txt -t reveal<br><br>&nbsp;&nbsp; If you try it, please post the =
+stack trace. Cheers.<br><br><br>PS: The code for the analytics helper is he=
+re -&gt; https://github.com/slideshow-s9/analytics/blob/master/analytics_he=
+lper.rb&nbsp; No magic really. Just adding a (guarded) text snippet.<br><br=
+></div>
+------=_Part_1805_18056260.1385377207749--
+
+------=_Part_1804_31045961.1385377207749--
+

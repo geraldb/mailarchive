@@ -1,0 +1,69 @@
+From 6342705535145476096@xxx Tue Oct 18 07:36:52 +0000 2016
+X-GM-THRID: 6319151478389866496
+X-Received: by 10.157.48.115 with SMTP id w48mr418332otd.139.1476776212019;
+        Tue, 18 Oct 2016 00:36:52 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.34.166 with SMTP id y35ls15517322ota.26.gmail; Tue, 18 Oct
+ 2016 00:36:51 -0700 (PDT)
+X-Received: by 10.157.1.230 with SMTP id e93mr425290ote.91.1476776211769;
+        Tue, 18 Oct 2016 00:36:51 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22c.google.com (mail-io0-x22c.google.com. [2607:f8b0:4001:c06::22c])
+        by gmr-mx.google.com with ESMTPS id n132si119458ith.1.2016.10.18.00.36.51
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 18 Oct 2016 00:36:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22c as permitted sender) client-ip=2607:f8b0:4001:c06::22c;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22c as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22c.google.com with SMTP id j37so213258436ioo.3
+        for <opensport@googlegroups.com>; Tue, 18 Oct 2016 00:36:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=IItXKgIs90O/nf/DJ/mJC85vsIwB0/cpFiqChh07BZk=;
+        b=OsdSqNya2kuhkLNuAV7BwB/oeYzhe8NRgMuQn8o6tJMYkji6+NOHz3d+T8wTwbhyd1
+         3aSEN81bGN24wWfifoZzgqt5aaIDpUlrazlBSDfcGe8qEHeTmfclDQjMoQ2Rju1Oxil2
+         iyKQyGZt+EueDE6TkwPIkVbiMIoYl7qrb6JV8LnkTFNDdWY6y+uWdzE5e92WaS1tVWJE
+         izC617N512Rdcrn3XyQLICj7F+97uvI+gYup58fGLBDOnloGvmtCCR3mgR9w3O6W9drm
+         5sqfDXYQnESmu2IWYnrb26hS89Uo4JEuw90jrXtr8r+5dt/KvaCFSIZLHCFIHu2+TgkH
+         n+/Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=IItXKgIs90O/nf/DJ/mJC85vsIwB0/cpFiqChh07BZk=;
+        b=gQQx0l94fDoFbZ2I1slKCt1gHKJ0Z6omIsF+JYwvZSUqFfjCeGbyVdXcD/3tPv3AXL
+         9BpiNCu/+fXrwKhJVD8UvRcSKHE4rIIjv8T4vWUpwZ/ZE3s/YuIUh164ZYCYBFOlO0K2
+         CS2dAF6yu+aSXW3yJ8q8UTYOyFRImamvNR0uR1LHrl562WnKKIn7/a98TCfpQZlDvHka
+         NxoWm5pF5bziIO0i1hENmoyQHJ4T8i0wjn2UIuzlpbQE7kDIXs3IED7ENoYarGKb2F+1
+         b22UhBHWZaWJtdXmxIllgUeOeRiGd99KwkBGnly0pMxMpiurxOj0iDpinxdlMRMvyS/i
+         emhg==
+X-Gm-Message-State: AA6/9Rl+xx6tmNQP4brEIakVMCUwE2+ZAzDITuBZfaaXfy9+n5p5RBP/PuuZ8F73yF9L7hLR77lkB9Ynr/m8xw==
+X-Received: by 10.107.34.144 with SMTP id i138mr1104977ioi.197.1476776211413;
+ Tue, 18 Oct 2016 00:36:51 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.141.194 with HTTP; Tue, 18 Oct 2016 00:36:50 -0700 (PDT)
+In-Reply-To: <a21fff84-c434-45c1-a8ff-d033b45a8bca@googlegroups.com>
+References: <3bc1224e-e12b-47d9-8f35-b635651acc5f@googlegroups.com>
+ <CAAxEZd_SNQWwDgDEqOm7_=C6=1RwxVjGpGnweHsGVwTK0gZ36g@mail.gmail.com>
+ <0e869f0b-e0d6-497d-ba60-0062eb11350e@googlegroups.com> <CAAxEZd_Dfey2F0jkwCbSoHQRZkwbuj4+iJxLDFacmLCptGzPwQ@mail.gmail.com>
+ <5c5e55c8-906d-41b2-8bb2-b6a6b986a7b9@googlegroups.com> <CAAxEZd-JeJUNdTWE_JPfMB9-ZNuBneem7AzohH=pCQHUactJBQ@mail.gmail.com>
+ <a027bd3b-cfce-4387-865e-dcf45e9fa018@googlegroups.com> <a21fff84-c434-45c1-a8ff-d033b45a8bca@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 18 Oct 2016 09:36:50 +0200
+Message-ID: <CAAxEZd8KxpC1QWDws6ppaL1aszouHKC=9z-ntxbNzVyq1Fa2RQ@mail.gmail.com>
+Subject: Re: [opensport] error when installing
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+   Welcome to football.db. You have to add a *new* Gemfile in your
+working folder / directory, see the bundler docu [1] for details on
+how to use Gemfiles and lock down your versions. Good luck. Cheers.
+
+[1] http://bundler.io
+

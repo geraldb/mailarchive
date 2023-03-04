@@ -1,0 +1,147 @@
+From 164023500800@xxx Sat Dec 20 19:01:39 +0000 2014
+X-GM-THRID: 163868311552
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,d0f86f0c1aa95266
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.252.231 with SMTP id zv7mr11876417obc.7.1413218377712;
+        Mon, 13 Oct 2014 09:39:37 -0700 (PDT)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.140.86.163 with SMTP id p32ls1817439qgd.44.gmail; Mon, 13 Oct
+ 2014 09:39:37 -0700 (PDT)
+X-Received: by 10.236.15.167 with SMTP id f27mr11204420yhf.37.1413218377590;
+        Mon, 13 Oct 2014 09:39:37 -0700 (PDT)
+Received: by 10.50.227.172 with SMTP id sb12msigc;
+        Mon, 13 Oct 2014 07:59:51 -0700 (PDT)
+X-Received: by 10.50.122.2 with SMTP id lo2mr22895igb.4.1413212391078;
+        Mon, 13 Oct 2014 07:59:51 -0700 (PDT)
+X-Google-Doc-Id: 3e83bc4383f9637f
+X-Google-Web-Client: true
+Date: Mon, 13 Oct 2014 07:59:48 -0700 (PDT)
+From: =?UTF-8?B?5YmN5bO255yf5LiA?= <mamamamaeshima@gmail.com>
+To: beerdb@googlegroups.com
+Message-Id: <7a69cb4e-4dd1-4cd2-be3d-0ddde0bef0f9@googlegroups.com>
+Subject: How do I setup beerdb?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3075_1457127390.1413212388808"
+X-Google-Token: EOTR76EFXGOS6h-A01A0
+X-Google-IP: 114.160.196.225
+
+------=_Part_3075_1457127390.1413212388808
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3076_36533342.1413212388808"
+
+------=_Part_3076_36533342.1413212388808
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello
+
+I want to use beerdb command.
+
+So I use commands written in http://openbeer.github.io/ to setup beerdb.
+
+$ git clone git://github.com/openmundi/world.db.git
+$ git clone git://github.com/openbeer/at-austria.git
+$ beerdb setup --include ./at-austria --worldinclude ./world.db
+
+But I got an error message. How do I setup beerdb?
+
+```
+$ beerdb setup --include ./at-austria --worldinclude ./world.db
+confdb/1.1.1 on Ruby 2.1.3 (2014-09-19) [x86_64-darwin13.0]
+tagutils/0.2.2 on Ruby 2.1.3 (2014-09-19) [x86_64-darwin13.0]
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Country<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::Region<
+  [TagDb.has_many_tags] adding taggings n tags has_many assocs to model 
+>WorldDb::Model::City<
+worlddb/2.0.4 on Ruby 2.1.3 (2014-09-19) [x86_64-darwin13.0]
+beerdb 0.9.4 on Ruby 2.1.3 (2014-09-19) [x86_64-darwin13.0]
+logdb 0.6.0 on Ruby 2.1.3 (2014-09-19) [x86_64-darwin13.0]
+beerdb 0.9.4 on Ruby 2.1.3 (2014-09-19) [x86_64-darwin13.0]
+beerdb 0.9.4 on Ruby 2.1.3 (2014-09-19) [x86_64-darwin13.0]
+working directory: /Users/maeshima/tmp/beers
+Connecting to db using settings: 
+{:adapter=>"sqlite3", :database=>"./beer.db"}
+-- create_table(:logs)
+   -> 0.0180s
+-- create_table(:places)
+   -> 0.0012s
+-- create_table(:names)
+   -> 0.0011s
+-- create_table(:continents)
+   -> 0.0011s
+-- add_index(:continents, :key, {:unique=>true})
+   -> 0.0026s
+-- create_table(:countries)
+   -> 0.0037s
+-- add_index(:countries, :key, {:unique=>true})
+   -> 0.0008s
+-- add_index(:countries, :code, {:unique=>true})
+   -> 0.0011s
+-- create_table(:regions)
+   -> 0.0016s
+-- add_index(:regions, [:key, :country_id], {:unique=>true})
+   -> 0.0012s
+-- create_table(:cities)
+   -> 0.0012s
+-- create_table(:langs)
+   -> 0.0019s
+-- create_table(:usages)
+   -> 0.0010s
+
+*** error: Could not find table 'props'
+```
+
+Thanks.
+
+
+------=_Part_3076_36533342.1413212388808
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello<div><br></div><div>I want to use beerdb command.</di=
+v><div><br></div><div>So I use commands written in http://openbeer.github.i=
+o/ to setup beerdb.</div><div><br></div><div><div>$ git clone git://github.=
+com/openmundi/world.db.git</div><div>$ git clone git://github.com/openbeer/=
+at-austria.git</div><div>$ beerdb setup --include ./at-austria --worldinclu=
+de ./world.db</div></div><div><br></div><div>But I got an error message. Ho=
+w do I setup beerdb?</div><div><br></div><div>```</div><div>$ beerdb setup =
+--include ./at-austria --worldinclude ./world.db<br></div><div><div>confdb/=
+1.1.1 on Ruby 2.1.3 (2014-09-19) [x86_64-darwin13.0]</div><div>tagutils/0.2=
+.2 on Ruby 2.1.3 (2014-09-19) [x86_64-darwin13.0]</div><div>&nbsp; [TagDb.h=
+as_many_tags] adding taggings n tags has_many assocs to model &gt;WorldDb::=
+Model::Country&lt;</div><div>&nbsp; [TagDb.has_many_tags] adding taggings n=
+ tags has_many assocs to model &gt;WorldDb::Model::Region&lt;</div><div>&nb=
+sp; [TagDb.has_many_tags] adding taggings n tags has_many assocs to model &=
+gt;WorldDb::Model::City&lt;</div><div>worlddb/2.0.4 on Ruby 2.1.3 (2014-09-=
+19) [x86_64-darwin13.0]</div><div>beerdb 0.9.4 on Ruby 2.1.3 (2014-09-19) [=
+x86_64-darwin13.0]</div><div>logdb 0.6.0 on Ruby 2.1.3 (2014-09-19) [x86_64=
+-darwin13.0]</div><div>beerdb 0.9.4 on Ruby 2.1.3 (2014-09-19) [x86_64-darw=
+in13.0]</div><div>beerdb 0.9.4 on Ruby 2.1.3 (2014-09-19) [x86_64-darwin13.=
+0]</div><div>working directory: /Users/maeshima/tmp/beers</div><div>Connect=
+ing to db using settings:&nbsp;</div><div>{:adapter=3D&gt;"sqlite3", :datab=
+ase=3D&gt;"./beer.db"}</div><div>-- create_table(:logs)</div><div>&nbsp; &n=
+bsp;-&gt; 0.0180s</div><div>-- create_table(:places)</div><div>&nbsp; &nbsp=
+;-&gt; 0.0012s</div><div>-- create_table(:names)</div><div>&nbsp; &nbsp;-&g=
+t; 0.0011s</div><div>-- create_table(:continents)</div><div>&nbsp; &nbsp;-&=
+gt; 0.0011s</div><div>-- add_index(:continents, :key, {:unique=3D&gt;true})=
+</div><div>&nbsp; &nbsp;-&gt; 0.0026s</div><div>-- create_table(:countries)=
+</div><div>&nbsp; &nbsp;-&gt; 0.0037s</div><div>-- add_index(:countries, :k=
+ey, {:unique=3D&gt;true})</div><div>&nbsp; &nbsp;-&gt; 0.0008s</div><div>--=
+ add_index(:countries, :code, {:unique=3D&gt;true})</div><div>&nbsp; &nbsp;=
+-&gt; 0.0011s</div><div>-- create_table(:regions)</div><div>&nbsp; &nbsp;-&=
+gt; 0.0016s</div><div>-- add_index(:regions, [:key, :country_id], {:unique=
+=3D&gt;true})</div><div>&nbsp; &nbsp;-&gt; 0.0012s</div><div>-- create_tabl=
+e(:cities)</div><div>&nbsp; &nbsp;-&gt; 0.0012s</div><div>-- create_table(:=
+langs)</div><div>&nbsp; &nbsp;-&gt; 0.0019s</div><div>-- create_table(:usag=
+es)</div><div>&nbsp; &nbsp;-&gt; 0.0010s</div><div><br></div><div>*** error=
+: Could not find table 'props'</div></div><div>```</div><div><br></div><div=
+>Thanks.</div><div><br></div></div>
+------=_Part_3076_36533342.1413212388808--
+
+------=_Part_3075_1457127390.1413212388808--
+

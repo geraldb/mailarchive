@@ -1,0 +1,68 @@
+From 313500106752@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 230668894208
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,62dcd4fef002a41c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+MIME-Version: 1.0
+Received: by 10.150.156.20 with SMTP id d20mr825666ybe.26.1232960559871; Mon, 
+	26 Jan 2009 01:02:39 -0800 (PST)
+Date: Mon, 26 Jan 2009 01:02:39 -0800 (PST)
+In-Reply-To: <f76b2c12-23c1-4ed4-80ca-29d9abf8a484@33g2000yqm.googlegroups.com>
+X-IP: 62.47.171.201
+References: <140cca6b-bca9-4743-a6f0-dd20e641cde1@v39g2000pro.googlegroups.com> 
+	<3a6a2b5d-5189-4e10-8a4d-4104524fa4b5@o4g2000pra.googlegroups.com> 
+	<a1c9be27-31c8-4704-a708-227163d989cd@y1g2000pra.googlegroups.com> 
+	<d39a1737-65cd-4366-a227-8c9dc4286080@r37g2000prr.googlegroups.com> 
+	<f76b2c12-23c1-4ed4-80ca-29d9abf8a484@33g2000yqm.googlegroups.com>
+User-Agent: G2/1.0
+X-Google-Token: T0TDBQwAAAD2TCAO3-ahV2bjOWRuDMRG
+X-HTTP-UserAgent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) 
+	AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.43 Safari/525.19,gzip(gfe),gzip(gfe)
+Message-ID: <4b516795-001c-4eae-ae8a-b5f64ad57368@n2g2000vbl.googlegroups.com>
+Subject: Re: S6 and SVG
+From: Gerald <gerald@vanbeta.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, FullerScreen, Codex, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello Bruce,
+
+   I uploaded a new slideshow gem (version 0.7) to RubyForge that now
+supports custom template packages using manifests (simple text files
+listing all files). It might take a couple of hours until the gem is
+available according to the RubyForge service.
+
+   What's new? How does it work?
+
+   As usual use the -g/--generate switch to generate a sample template
+package w/ manifest to get started (now using, of course, the new
+packaging format). Example:
+
+   slideshow -g        # generates a template package w/ manifest in
+your working folder (using the s6 package)
+   slideshow -g -s5  # same as above but uses builtin s5 template
+package
+
+   Note, you can, of course, also create your own template packages w/
+manifest from scratch.
+
+  You can find the manifest samples online:
+
+   s5.txt.sample   @ http://slideshow.rubyforge.org/svn/trunk/lib/templates/s5.txt.sample
+   s6.txt.sample   @ http://slideshow.rubyforge.org/svn/trunk/lib/templates/s6.txt.sample
+
+
+   To use your own custom package use the new -t/--template switch
+passing along the manifest. Example:
+
+   slideshow -t  s6.txt  microformats
+   slideshow -t  s6nosvg.txt   microformats
+
+   Using the new package format you're invited to create your own
+template package w/ manifest that uses your own extended/changed
+JavaScript code and drops the svg background gradient etc.
+
+   Let me know if you try it and have any questions or comments.
+Cheers.
+

@@ -1,0 +1,994 @@
+From 6770967515923218432@xxx Mon Dec 16 09:32:04 +0000 2019
+X-GM-THRID: 6770740700331900928
+Date: Mon, 16 Dec 2019 01:32:04 -0800 (PST)
+From: Paul <cocoahernando@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <831148c9-8551-4a39-96a4-ae8827051ff6@googlegroups.com>
+In-Reply-To: <d1cfad45-09bc-4ae8-bf31-3c0cf3e2ad20@googlegroups.com>
+References: <d1cfad45-09bc-4ae8-bf31-3c0cf3e2ad20@googlegroups.com>
+Subject: Re: Error on running sportdb new worldcup
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1016_73191820.1576488724276"
+X-Google-Token: EJSe3e8F3MMp7vgAdgU0
+X-Google-IP: 92.23.213.45
+
+------=_Part_1016_73191820.1576488724276
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1017_1139961535.1576488724277"
+
+------=_Part_1017_1139961535.1576488724277
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Thanks a lot Gerald!
+
+Paul
+
+On Sunday, December 15, 2019 at 6:51:55 PM UTC, Paul wrote:
+>
+> Hi Gerald,
+>
+> Love what you're doing with Sportdb!
+>
+> Sadly I can't successfully create the worldcup database though & get the=
+=20
+> following error:
+>
+> ** !!! ERROR !!! missing key for (canonical) league name
+>
+>
+> *** error: exit
+>
+> Any ideas how I can fix this please? The command creates the tables, read=
+s=20
+> the datasets then falls over on reading the 'South Pacific Nations Cup'.
+>
+> I'm attaching the full output below too.
+>
+> Much appreciated,
+>
+> Paul
+>
+> $ sportdb new worldcup
+>
+> activerecord-utils/0.4.0 (activerecord/6.0.2) on Ruby 2.6.3 (2019-04-16)=
+=20
+> [x86_64-darwin18]
+>
+>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=
+=20
+> >WorldDb::Model::Country<
+>
+>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=
+=20
+> >WorldDb::Model::StateBase<
+>
+>   [TagDb.has_many_tags] adding taggings n tags has_many assocs to model=
+=20
+> >WorldDb::Model::CityBase<
+>
+> alphabets/0.1.0 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> date-formats/0.2.1 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> sportdb-langs/0.0.1 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> sportdb-formats/0.1.6 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> sportdb-countries/0.5.1 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> sportdb-clubs/0.4.0 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> sportdb-leagues/0.2.2 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> fifa/2019.11.27 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> footballdb-clubs/2019.11.22 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> footballdb-leagues/2019.11.22 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18=
+]
+>
+> sportdb-config/0.9.0 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> sportdb-sync/0.1.0 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> sportdb-readers/0.4.4 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+>   before sportdb/service
+>
+> sportdb-service/0.4.0 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> after auto-load (require) sportdb addons
+>
+> sportdb/2.1.1 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> sportdb/2.1.1 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]
+>
+> [info] [builder] add football-dataset 'national-teams'
+>
+> [info] [builder] add football-dataset 'world-cup'
+>
+> [info] [datafile] dowload
+>
+> [info] download dataset 'openfootball/national-teams'
+>
+> [info]    from '
+> https://github.com/openfootball/national-teams/archive/master.zip'
+>
+> [info]    to './tmp/openfootball--I--national-teams.zip'...
+>
+> [info] downloading=20
+> https://github.com/openfootball/national-teams/archive/master.zip to=20
+> ./tmp/openfootball--I--national-teams.zip...
+>
+> [info] download dataset 'openfootball/world-cup'
+>
+> [info]    from '
+> https://github.com/openfootball/world-cup/archive/master.zip'
+>
+> [info]    to './tmp/openfootball--I--world-cup.zip'...
+>
+> [info] downloading=20
+> https://github.com/openfootball/world-cup/archive/master.zip to=20
+> ./tmp/openfootball--I--world-cup.zip...
+>
+> working directory: /Users/apple/Desktop/WC
+>
+> Connecting to db using settings:=20
+>
+> {:adapter=3D>"sqlite3", :database=3D>"./sport.db"}
+>
+> -- create_table(:logs)
+>
+>    -> 0.0011s
+>
+> -- create_table(:props)
+>
+>    -> 0.0007s
+>
+> -- create_table(:tags)
+>
+>    -> 0.0014s
+>
+> -- add_index(:tags, :key, {:unique=3D>true})
+>
+>    -> 0.0011s
+>
+> -- create_table(:taggings)
+>
+>    -> 0.0008s
+>
+> -- add_index(:taggings, :tag_id)
+>
+>    -> 0.0005s
+>
+> -- add_index(:taggings, [:taggable_id, :taggable_type])
+>
+>    -> 0.0008s
+>
+> -- add_index(:taggings, [:taggable_id, :taggable_type, :tag_id],=20
+> {:unique=3D>true})
+>
+>    -> 0.0009s
+>
+> -- create_table(:places)
+>
+>    -> 0.0010s
+>
+> -- create_table(:names)
+>
+>    -> 0.0015s
+>
+> -- create_table(:continents)
+>
+>    -> 0.0012s
+>
+> -- add_index(:continents, :key, {:unique=3D>true})
+>
+>    -> 0.0009s
+>
+> -- create_table(:country_codes)
+>
+>    -> 0.0011s
+>
+> -- add_index(:country_codes, [:name, :kind], {:unique=3D>true})
+>
+>    -> 0.0009s
+>
+> -- create_table(:countries)
+>
+>    -> 0.0037s
+>
+> -- add_index(:countries, :key, {:unique=3D>true})
+>
+>    -> 0.0017s
+>
+> -- add_index(:countries, :code, {:unique=3D>true})
+>
+>    -> 0.0018s
+>
+> -- create_table(:states)
+>
+>    -> 0.0023s
+>
+> -- add_index(:states, [:key, :country_id], {:unique=3D>true})
+>
+>    -> 0.0012s
+>
+> -- create_table(:parts)
+>
+>    -> 0.0022s
+>
+> -- create_table(:counties)
+>
+>    -> 0.0034s
+>
+> -- create_table(:munis)
+>
+>    -> 0.0030s
+>
+> -- create_table(:zones)
+>
+>    -> 0.0005s
+>
+> -- create_table(:cities)
+>
+>    -> 0.0094s
+>
+> -- create_table(:metros)
+>
+>    -> 0.0017s
+>
+> -- create_table(:districts)
+>
+>    -> 0.0017s
+>
+> -- create_table(:langs)
+>
+>    -> 0.0005s
+>
+> -- create_table(:usages)
+>
+>    -> 0.0017s
+>
+> -- create_table(:persons)
+>
+>    -> 0.0045s
+>
+> -- create_table(:teams)
+>
+>    -> 0.0029s
+>
+> -- add_index(:teams, :key, {:unique=3D>true})
+>
+>    -> 0.0011s
+>
+> -- create_table(:grounds)
+>
+>    -> 0.0017s
+>
+> -- add_index(:grounds, :key, {:unique=3D>true})
+>
+>    -> 0.0012s
+>
+> -- create_table(:goals)
+>
+>    -> 0.0031s
+>
+> -- create_table(:rosters)
+>
+>    -> 0.0108s
+>
+> -- create_table(:events)
+>
+>    -> 0.0018s
+>
+> -- add_index(:events, :key, {:unique=3D>true})
+>
+>    -> 0.0009s
+>
+> -- create_table(:rounds)
+>
+>    -> 0.0006s
+>
+> -- add_index(:rounds, :event_id)
+>
+>    -> 0.0006s
+>
+> -- create_table(:groups)
+>
+>    -> 0.0005s
+>
+> -- add_index(:groups, :event_id)
+>
+>    -> 0.0005s
+>
+> -- create_table(:stages)
+>
+>    -> 0.0005s
+>
+> -- add_index(:stages, :event_id)
+>
+>    -> 0.0005s
+>
+> -- create_table(:games)
+>
+>    -> 0.0022s
+>
+> -- add_index(:games, :key, {:unique=3D>true})
+>
+>    -> 0.0012s
+>
+> -- add_index(:games, :round_id)
+>
+>    -> 0.0024s
+>
+> -- add_index(:games, :group_id)
+>
+>    -> 0.0015s
+>
+> -- add_index(:games, :next_game_id)
+>
+>    -> 0.0019s
+>
+> -- add_index(:games, :prev_game_id)
+>
+>    -> 0.0020s
+>
+> -- add_index(:games, :team1_id)
+>
+>    -> 0.0021s
+>
+> -- add_index(:games, :team2_id)
+>
+>    -> 0.0023s
+>
+> -- create_table(:events_teams)
+>
+>    -> 0.0006s
+>
+> -- add_index(:events_teams, [:event_id, :team_id], {:unique=3D>true})
+>
+>    -> 0.0006s
+>
+> -- add_index(:events_teams, :event_id)
+>
+>    -> 0.0010s
+>
+> -- create_table(:stages_teams)
+>
+>    -> 0.0010s
+>
+> -- add_index(:stages_teams, [:stage_id, :team_id], {:unique=3D>true})
+>
+>    -> 0.0008s
+>
+> -- add_index(:stages_teams, :stage_id)
+>
+>    -> 0.0011s
+>
+> -- create_table(:events_grounds)
+>
+>    -> 0.0009s
+>
+> -- add_index(:events_grounds, [:event_id, :ground_id], {:unique=3D>true})
+>
+>    -> 0.0007s
+>
+> -- add_index(:events_grounds, :event_id)
+>
+>    -> 0.0012s
+>
+> -- create_table(:groups_teams)
+>
+>    -> 0.0006s
+>
+> -- add_index(:groups_teams, [:group_id, :team_id], {:unique=3D>true})
+>
+>    -> 0.0006s
+>
+> -- add_index(:groups_teams, :group_id)
+>
+>    -> 0.0008s
+>
+> -- create_table(:seasons)
+>
+>    -> 0.0006s
+>
+> -- create_table(:leagues)
+>
+>    -> 0.0011s
+>
+> -- create_table(:badges)
+>
+>    -> 0.0026s
+>
+> -- create_table(:assocs)
+>
+>    -> 0.0011s
+>
+> -- add_index(:assocs, :key, {:unique=3D>true})
+>
+>    -> 0.0010s
+>
+> -- create_table(:assocs_assocs)
+>
+>    -> 0.0007s
+>
+> -- add_index(:assocs_assocs, [:assoc1_id, :assoc2_id], {:unique=3D>true})
+>
+>    -> 0.0007s
+>
+> -- add_index(:assocs_assocs, :assoc1_id)
+>
+>    -> 0.0013s
+>
+> -- add_index(:assocs_assocs, :assoc2_id)
+>
+>    -> 0.0018s
+>
+> -- create_table(:group_standings)
+>
+>    -> 0.0012s
+>
+> -- create_table(:group_standing_entries)
+>
+>    -> 0.0020s
+>
+> -- create_table(:event_standings)
+>
+>    -> 0.0012s
+>
+> -- create_table(:event_standing_entries)
+>
+>    -> 0.0022s
+>
+> -- create_table(:alltime_standings)
+>
+>    -> 0.0006s
+>
+> -- create_table(:alltime_standing_entries)
+>
+>    -> 0.0019s
+>
+> [info] [datafile] read
+>
+> [info] read football dataset (zip) 'openfootball/national-teams', ''
+>
+> "world,                       World Cup"
+>
+> "world.quali.europe,          World Cup Quali Europe"
+>
+> "world.quali.northamerica,    World Cup Quali North/Central America and=
+=20
+> Caribbean"
+>
+> "world.quali.southamerica,    World Cup Quali South America"
+>
+> "world.quali.africa,          World Cup Quali Africa"
+>
+> "world.quali.asia,            World Cup Quali Asia (w/ Australia)"
+>
+> "world.quali.pacific,         World Cup Quali South Pacific"
+>
+> "world.quali.playoffs,        World Cup Quali Intercontinental Playoffs"
+>
+> "world.confed,                Confederations Cup"
+>
+> "euro,        Euro / European Championship"
+>
+> "euro.quali,  Euro Quali"
+>
+> "southamerica,          Copa Am=C3=A9rica"
+>
+> "northamerica,          Gold Cup / Copa de Oro"
+>
+> "asia,                  Asian Cup"
+>
+> "africa,            Africa Cup of Nations / Coupe d'Afrique des Nations"
+>
+> "paficic,     South Pacific Nations Cup"
+>
+> ** !!! ERROR !!! missing key for (canonical) league name
+>
+>
+> *** error: exit
+>
+>
+>
+>
+>
+------=_Part_1017_1139961535.1576488724277
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thanks a lot Gerald!<div><br></div><div>Paul<br><br>On Sun=
+day, December 15, 2019 at 6:51:55 PM UTC, Paul wrote:<blockquote class=3D"g=
+mail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc sol=
+id;padding-left: 1ex;"><div dir=3D"ltr">Hi Gerald,<div><br></div><div>Love =
+what you&#39;re doing with Sportdb!</div><div><br></div><div>Sadly I can&#3=
+9;t successfully create the worldcup database though &amp; get the followin=
+g error:</div><div><br></div><div><p><span>** !!! ERROR !!! missing key for=
+ (canonical) league name</span></p><p><span></span><br></p><p></p><p><span>=
+*** error: exit</span></p></div><div><br></div><div>Any ideas how I can fix=
+ this please? The command creates the tables, reads the datasets then falls=
+ over on reading the &#39;<span style=3D"color:rgb(0,0,0);font-family:Menlo=
+;font-size:11px">South Pacific Nations Cup&#39;.</span></div><div><span sty=
+le=3D"color:rgb(0,0,0);font-family:Menlo;font-size:11px"><br></span></div><=
+div>I&#39;m attaching the full output below too.<span style=3D"color:rgb(0,=
+0,0);font-family:Menlo;font-size:11px"><br></span></div>
+
+
+
+
+
+
+
+<div><br></div><div>Much appreciated,</div><div><br></div><div>Paul</div><d=
+iv><br></div><div>
+
+
+
+
+
+
+
+<p><span>$ sportdb new worldcup</span></p><p><span>activerecord-utils/0.4.0=
+ (activerecord/6.0.2) on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]</span></=
+p><p><span><span>=C2=A0 </span>[TagDb.has_many_tags] adding taggings n tags=
+ has_many assocs to model &gt;WorldDb::Model::Country&lt;</span></p><p><spa=
+n><span>=C2=A0 </span>[TagDb.has_many_tags] adding taggings n tags has_many=
+ assocs to model &gt;WorldDb::Model::StateBase&lt;</span></p><p><span><span=
+>=C2=A0 </span>[TagDb.has_many_tags] adding taggings n tags has_many assocs=
+ to model &gt;WorldDb::Model::CityBase&lt;</span></p><p><span>alphabets/0.1=
+.0 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]</span></p><p><span>date-for=
+mats/0.2.1 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]</span></p><p><span>=
+sportdb-langs/0.0.1 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]</span></p>=
+<p><span>sportdb-formats/0.1.6 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]=
+</span></p><p><span>sportdb-countries/0.5.1 on Ruby 2.6.3 (2019-04-16) [x86=
+_64-darwin18]</span></p><p><span>sportdb-clubs/0.4.0 on Ruby 2.6.3 (2019-04=
+-16) [x86_64-darwin18]</span></p><p><span>sportdb-leagues/0.2.2 on Ruby 2.6=
+.3 (2019-04-16) [x86_64-darwin18]</span></p><p><span>fifa/2019.11.27 on Rub=
+y 2.6.3 (2019-04-16) [x86_64-darwin18]</span></p><p><span>footballdb-clubs/=
+2019.11.22 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]</span></p><p><span>=
+footballdb-leagues/2019.11.22 on Ruby 2.6.3 (2019-04-16) [x86_64-darwin18]<=
+/span></p><p><span>sportdb-config/0.9.0 on Ruby 2.6.3 (2019-04-16) [x86_64-=
+darwin18]</span></p><p><span>sportdb-sync/0.1.0 on Ruby 2.6.3 (2019-04-16) =
+[x86_64-darwin18]</span></p><p><span>sportdb-readers/0.4.4 on Ruby 2.6.3 (2=
+019-04-16) [x86_64-darwin18]</span></p><p><span><span>=C2=A0 </span>before =
+sportdb/service</span></p><p><span>sportdb-service/0.4.0 on Ruby 2.6.3 (201=
+9-04-16) [x86_64-darwin18]</span></p><p><span>after auto-load (require) spo=
+rtdb addons</span></p><p><span>sportdb/2.1.1 on Ruby 2.6.3 (2019-04-16) [x8=
+6_64-darwin18]</span></p><p><span>sportdb/2.1.1 on Ruby 2.6.3 (2019-04-16) =
+[x86_64-darwin18]</span></p><p><span>[info] [builder] add football-dataset =
+&#39;national-teams&#39;</span></p><p><span>[info] [builder] add football-d=
+ataset &#39;world-cup&#39;</span></p><p><span>[info] [datafile] dowload</sp=
+an></p><p><span>[info] download dataset &#39;openfootball/national-teams&#3=
+9;</span></p><p><span>[info]<span>=C2=A0 =C2=A0 </span>from &#39;<a href=3D=
+"https://github.com/openfootball/national-teams/archive/master.zip" target=
+=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.go=
+ogle.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fnational-teams%=
+2Farchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHElaZbzfbhKq=
+7xBv5eQq_TvfvHXw&#39;;return true;" onclick=3D"this.href=3D&#39;https://www=
+.google.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fnational-tea=
+ms%2Farchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHElaZbzfb=
+hKq7xBv5eQq_TvfvHXw&#39;;return true;">https://github.com/<wbr>openfootball=
+/national-teams/<wbr>archive/master.zip</a>&#39;</span></p><p><span>[info]<=
+span>=C2=A0 =C2=A0 </span>to &#39;./tmp/openfootball--I--<wbr>national-team=
+s.zip&#39;...</span></p><p><span>[info] downloading <a href=3D"https://gith=
+ub.com/openfootball/national-teams/archive/master.zip" target=3D"_blank" re=
+l=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.google.com/url?q=
+\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fnational-teams%2Farchive%2Fma=
+ster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHElaZbzfbhKq7xBv5eQq_TvfvH=
+Xw&#39;;return true;" onclick=3D"this.href=3D&#39;https://www.google.com/ur=
+l?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fnational-teams%2Farchive%2=
+Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHElaZbzfbhKq7xBv5eQq_Tv=
+fvHXw&#39;;return true;">https://github.com/<wbr>openfootball/national-team=
+s/<wbr>archive/master.zip</a> to ./tmp/openfootball--I--<wbr>national-teams=
+.zip...</span></p><p><span>[info] download dataset &#39;openfootball/world-=
+cup&#39;</span></p><p><span>[info]<span>=C2=A0 =C2=A0 </span>from &#39;<a h=
+ref=3D"https://github.com/openfootball/world-cup/archive/master.zip" target=
+=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;https://www.go=
+ogle.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup%2Farc=
+hive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHF8_VSLDEEU5RfYWN=
+HKurNEsM5kA&#39;;return true;" onclick=3D"this.href=3D&#39;https://www.goog=
+le.com/url?q\x3dhttps%3A%2F%2Fgithub.com%2Fopenfootball%2Fworld-cup%2Farchi=
+ve%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHF8_VSLDEEU5RfYWNHK=
+urNEsM5kA&#39;;return true;">https://github.com/<wbr>openfootball/world-cup=
+/<wbr>archive/master.zip</a>&#39;</span></p><p><span>[info]<span>=C2=A0 =C2=
+=A0 </span>to &#39;./tmp/openfootball--I--world-<wbr>cup.zip&#39;...</span>=
+</p><p><span>[info] downloading <a href=3D"https://github.com/openfootball/=
+world-cup/archive/master.zip" target=3D"_blank" rel=3D"nofollow" onmousedow=
+n=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.=
+com%2Fopenfootball%2Fworld-cup%2Farchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3=
+d1\x26usg\x3dAFQjCNHF8_VSLDEEU5RfYWNHKurNEsM5kA&#39;;return true;" onclick=
+=3D"this.href=3D&#39;https://www.google.com/url?q\x3dhttps%3A%2F%2Fgithub.c=
+om%2Fopenfootball%2Fworld-cup%2Farchive%2Fmaster.zip\x26sa\x3dD\x26sntz\x3d=
+1\x26usg\x3dAFQjCNHF8_VSLDEEU5RfYWNHKurNEsM5kA&#39;;return true;">https://g=
+ithub.com/<wbr>openfootball/world-cup/<wbr>archive/master.zip</a> to ./tmp/=
+openfootball--I--world-<wbr>cup.zip...</span></p><p><span>working directory=
+: /Users/apple/Desktop/WC</span></p><p><span>Connecting to db using setting=
+s:<span>=C2=A0</span></span></p><p><span>{:adapter=3D&gt;&quot;sqlite3&quot=
+;, :database=3D&gt;&quot;./sport.db&quot;}</span></p><p><span>-- create_tab=
+le(:logs)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0011s</span>=
+</p><p><span>-- create_table(:props)</span></p><p><span><span>=C2=A0=C2=A0 =
+</span>-&gt; 0.0007s</span></p><p><span>-- create_table(:tags)</span></p><p=
+><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0014s</span></p><p><span>-- add_in=
+dex(:tags, :key, {:unique=3D&gt;true})</span></p><p><span><span>=C2=A0=C2=
+=A0 </span>-&gt; 0.0011s</span></p><p><span>-- create_table(:taggings)</spa=
+n></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0008s</span></p><p><span>-=
+- add_index(:taggings, :tag_id)</span></p><p><span><span>=C2=A0=C2=A0 </spa=
+n>-&gt; 0.0005s</span></p><p><span>-- add_index(:taggings, [:taggable_id, :=
+taggable_type])</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0008s<=
+/span></p><p><span>-- add_index(:taggings, [:taggable_id, :taggable_type, :=
+tag_id], {:unique=3D&gt;true})</span></p><p><span><span>=C2=A0=C2=A0 </span=
+>-&gt; 0.0009s</span></p><p><span>-- create_table(:places)</span></p><p><sp=
+an><span>=C2=A0=C2=A0 </span>-&gt; 0.0010s</span></p><p><span>-- create_tab=
+le(:names)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0015s</span=
+></p><p><span>-- create_table(:continents)</span></p><p><span><span>=C2=A0=
+=C2=A0 </span>-&gt; 0.0012s</span></p><p><span>-- add_index(:continents, :k=
+ey, {:unique=3D&gt;true})</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt=
+; 0.0009s</span></p><p><span>-- create_table(:country_codes)</span></p><p><=
+span><span>=C2=A0=C2=A0 </span>-&gt; 0.0011s</span></p><p><span>-- add_inde=
+x(:country_codes, [:name, :kind], {:unique=3D&gt;true})</span></p><p><span>=
+<span>=C2=A0=C2=A0 </span>-&gt; 0.0009s</span></p><p><span>-- create_table(=
+:countries)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0037s</spa=
+n></p><p><span>-- add_index(:countries, :key, {:unique=3D&gt;true})</span><=
+/p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0017s</span></p><p><span>-- a=
+dd_index(:countries, :code, {:unique=3D&gt;true})</span></p><p><span><span>=
+=C2=A0=C2=A0 </span>-&gt; 0.0018s</span></p><p><span>-- create_table(:state=
+s)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0023s</span></p><p>=
+<span>-- add_index(:states, [:key, :country_id], {:unique=3D&gt;true})</spa=
+n></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0012s</span></p><p><span>-=
+- create_table(:parts)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0=
+.0022s</span></p><p><span>-- create_table(:counties)</span></p><p><span><sp=
+an>=C2=A0=C2=A0 </span>-&gt; 0.0034s</span></p><p><span>-- create_table(:mu=
+nis)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0030s</span></p><=
+p><span>-- create_table(:zones)</span></p><p><span><span>=C2=A0=C2=A0 </spa=
+n>-&gt; 0.0005s</span></p><p><span>-- create_table(:cities)</span></p><p><s=
+pan><span>=C2=A0=C2=A0 </span>-&gt; 0.0094s</span></p><p><span>-- create_ta=
+ble(:metros)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0017s</sp=
+an></p><p><span>-- create_table(:districts)</span></p><p><span><span>=C2=A0=
+=C2=A0 </span>-&gt; 0.0017s</span></p><p><span>-- create_table(:langs)</spa=
+n></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0005s</span></p><p><span>-=
+- create_table(:usages)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; =
+0.0017s</span></p><p><span>-- create_table(:persons)</span></p><p><span><sp=
+an>=C2=A0=C2=A0 </span>-&gt; 0.0045s</span></p><p><span>-- create_table(:te=
+ams)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0029s</span></p><=
+p><span>-- add_index(:teams, :key, {:unique=3D&gt;true})</span></p><p><span=
+><span>=C2=A0=C2=A0 </span>-&gt; 0.0011s</span></p><p><span>-- create_table=
+(:grounds)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0017s</span=
+></p><p><span>-- add_index(:grounds, :key, {:unique=3D&gt;true})</span></p>=
+<p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0012s</span></p><p><span>-- crea=
+te_table(:goals)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0031s=
+</span></p><p><span>-- create_table(:rosters)</span></p><p><span><span>=C2=
+=A0=C2=A0 </span>-&gt; 0.0108s</span></p><p><span>-- create_table(:events)<=
+/span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0018s</span></p><p><sp=
+an>-- add_index(:events, :key, {:unique=3D&gt;true})</span></p><p><span><sp=
+an>=C2=A0=C2=A0 </span>-&gt; 0.0009s</span></p><p><span>-- create_table(:ro=
+unds)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0006s</span></p>=
+<p><span>-- add_index(:rounds, :event_id)</span></p><p><span><span>=C2=A0=
+=C2=A0 </span>-&gt; 0.0006s</span></p><p><span>-- create_table(:groups)</sp=
+an></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0005s</span></p><p><span>=
+-- add_index(:groups, :event_id)</span></p><p><span><span>=C2=A0=C2=A0 </sp=
+an>-&gt; 0.0005s</span></p><p><span>-- create_table(:stages)</span></p><p><=
+span><span>=C2=A0=C2=A0 </span>-&gt; 0.0005s</span></p><p><span>-- add_inde=
+x(:stages, :event_id)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.=
+0005s</span></p><p><span>-- create_table(:games)</span></p><p><span><span>=
+=C2=A0=C2=A0 </span>-&gt; 0.0022s</span></p><p><span>-- add_index(:games, :=
+key, {:unique=3D&gt;true})</span></p><p><span><span>=C2=A0=C2=A0 </span>-&g=
+t; 0.0012s</span></p><p><span>-- add_index(:games, :round_id)</span></p><p>=
+<span><span>=C2=A0=C2=A0 </span>-&gt; 0.0024s</span></p><p><span>-- add_ind=
+ex(:games, :group_id)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.=
+0015s</span></p><p><span>-- add_index(:games, :next_game_id)</span></p><p><=
+span><span>=C2=A0=C2=A0 </span>-&gt; 0.0019s</span></p><p><span>-- add_inde=
+x(:games, :prev_game_id)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt;=
+ 0.0020s</span></p><p><span>-- add_index(:games, :team1_id)</span></p><p><s=
+pan><span>=C2=A0=C2=A0 </span>-&gt; 0.0021s</span></p><p><span>-- add_index=
+(:games, :team2_id)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.00=
+23s</span></p><p><span>-- create_table(:events_teams)</span></p><p><span><s=
+pan>=C2=A0=C2=A0 </span>-&gt; 0.0006s</span></p><p><span>-- add_index(:even=
+ts_teams, [:event_id, :team_id], {:unique=3D&gt;true})</span></p><p><span><=
+span>=C2=A0=C2=A0 </span>-&gt; 0.0006s</span></p><p><span>-- add_index(:eve=
+nts_teams, :event_id)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.=
+0010s</span></p><p><span>-- create_table(:stages_teams)</span></p><p><span>=
+<span>=C2=A0=C2=A0 </span>-&gt; 0.0010s</span></p><p><span>-- add_index(:st=
+ages_teams, [:stage_id, :team_id], {:unique=3D&gt;true})</span></p><p><span=
+><span>=C2=A0=C2=A0 </span>-&gt; 0.0008s</span></p><p><span>-- add_index(:s=
+tages_teams, :stage_id)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; =
+0.0011s</span></p><p><span>-- create_table(:events_grounds)</span></p><p><s=
+pan><span>=C2=A0=C2=A0 </span>-&gt; 0.0009s</span></p><p><span>-- add_index=
+(:events_grounds, [:event_id, :ground_id], {:unique=3D&gt;true})</span></p>=
+<p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0007s</span></p><p><span>-- add_=
+index(:events_grounds, :event_id)</span></p><p><span><span>=C2=A0=C2=A0 </s=
+pan>-&gt; 0.0012s</span></p><p><span>-- create_table(:groups_teams)</span><=
+/p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0006s</span></p><p><span>-- a=
+dd_index(:groups_teams, [:group_id, :team_id], {:unique=3D&gt;true})</span>=
+</p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0006s</span></p><p><span>-- =
+add_index(:groups_teams, :group_id)</span></p><p><span><span>=C2=A0=C2=A0 <=
+/span>-&gt; 0.0008s</span></p><p><span>-- create_table(:seasons)</span></p>=
+<p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0006s</span></p><p><span>-- crea=
+te_table(:leagues)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.001=
+1s</span></p><p><span>-- create_table(:badges)</span></p><p><span><span>=C2=
+=A0=C2=A0 </span>-&gt; 0.0026s</span></p><p><span>-- create_table(:assocs)<=
+/span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0011s</span></p><p><sp=
+an>-- add_index(:assocs, :key, {:unique=3D&gt;true})</span></p><p><span><sp=
+an>=C2=A0=C2=A0 </span>-&gt; 0.0010s</span></p><p><span>-- create_table(:as=
+socs_assocs)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0007s</sp=
+an></p><p><span>-- add_index(:assocs_assocs, [:assoc1_id, :assoc2_id], {:un=
+ique=3D&gt;true})</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0007=
+s</span></p><p><span>-- add_index(:assocs_assocs, :assoc1_id)</span></p><p>=
+<span><span>=C2=A0=C2=A0 </span>-&gt; 0.0013s</span></p><p><span>-- add_ind=
+ex(:assocs_assocs, :assoc2_id)</span></p><p><span><span>=C2=A0=C2=A0 </span=
+>-&gt; 0.0018s</span></p><p><span>-- create_table(:group_standings)</span><=
+/p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0012s</span></p><p><span>-- c=
+reate_table(:group_standing_<wbr>entries)</span></p><p><span><span>=C2=A0=
+=C2=A0 </span>-&gt; 0.0020s</span></p><p><span>-- create_table(:event_stand=
+ings)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0012s</span></p>=
+<p><span>-- create_table(:event_standing_<wbr>entries)</span></p><p><span><=
+span>=C2=A0=C2=A0 </span>-&gt; 0.0022s</span></p><p><span>-- create_table(:=
+alltime_<wbr>standings)</span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; =
+0.0006s</span></p><p><span>-- create_table(:alltime_<wbr>standing_entries)<=
+/span></p><p><span><span>=C2=A0=C2=A0 </span>-&gt; 0.0019s</span></p><p><sp=
+an>[info] [datafile] read</span></p><p><span>[info] read football dataset (=
+zip) &#39;openfootball/national-teams&#39;, &#39;&#39;</span></p><p><span>&=
+quot;world, <span>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 </span>World Cup&quot;</span></p><p><span>&quot;world.=
+quali.europe,<span>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </span>World Cup Qual=
+i Europe&quot;</span></p><p><span>&quot;world.quali.northamerica,<span>=C2=
+=A0 =C2=A0 </span>World Cup Quali North/Central America and Caribbean&quot;=
+</span></p><p><span>&quot;world.quali.southamerica,<span>=C2=A0 =C2=A0 </sp=
+an>World Cup Quali South America&quot;</span></p><p><span>&quot;world.quali=
+.africa,<span>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </span>World Cup Quali Afr=
+ica&quot;</span></p><p><span>&quot;<a href=3D"http://world.quali.asia" targ=
+et=3D"_blank" rel=3D"nofollow" onmousedown=3D"this.href=3D&#39;http://www.g=
+oogle.com/url?q\x3dhttp%3A%2F%2Fworld.quali.asia\x26sa\x3dD\x26sntz\x3d1\x2=
+6usg\x3dAFQjCNHBTCkKi-fJl40yqnK9u7GGS27Tlg&#39;;return true;" onclick=3D"th=
+is.href=3D&#39;http://www.google.com/url?q\x3dhttp%3A%2F%2Fworld.quali.asia=
+\x26sa\x3dD\x26sntz\x3d1\x26usg\x3dAFQjCNHBTCkKi-fJl40yqnK9u7GGS27Tlg&#39;;=
+return true;">world.quali.asia</a>,<span>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 </span>World Cup Quali Asia (w/ Australia)&quot;</span></p><p><span=
+>&quot;world.quali.pacific, <span>=C2=A0 =C2=A0 =C2=A0 =C2=A0 </span>World =
+Cup Quali South Pacific&quot;</span></p><p><span>&quot;world.quali.playoffs=
+,<span>=C2=A0 =C2=A0 =C2=A0 =C2=A0 </span>World Cup Quali Intercontinental =
+Playoffs&quot;</span></p><p><span>&quot;world.confed,<span>=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </span>Confederations Cup&quot;</=
+span></p><p><span>&quot;euro,<span>=C2=A0 =C2=A0 =C2=A0 =C2=A0 </span>Euro =
+/ European Championship&quot;</span></p><p><span>&quot;euro.quali,<span>=C2=
+=A0 </span>Euro Quali&quot;</span></p><p><span>&quot;southamerica,<span>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </span>Copa Am=C3=A9rica&quot;</span></p><p=
+><span>&quot;northamerica,<span>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </span>G=
+old Cup / Copa de Oro&quot;</span></p><p><span>&quot;asia,<span>=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </span>Asian Cup&quot;=
+</span></p><p><span>&quot;africa,<span>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 </span>Africa Cup of Nations / Coupe d&#39;Afrique des Nations&quot;=
+</span></p><p><span>&quot;paficic, <span>=C2=A0 =C2=A0 </span>South Pacific=
+ Nations Cup&quot;</span></p><p><span>** !!! ERROR !!! missing key for (can=
+onical) league name</span></p><p><span></span><br></p><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p><span>*** error: exit</span></p><p><br></p><p><span><br></span></p><=
+p><span><br></span></p></div></div></blockquote></div></div>
+------=_Part_1017_1139961535.1576488724277--
+
+------=_Part_1016_73191820.1576488724276--
+

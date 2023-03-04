@@ -1,0 +1,98 @@
+From 6648655292792832000@xxx Sun Jan 20 18:58:11 +0000 2019
+X-GM-THRID: 6648653529398378496
+X-Received: by 2002:a17:906:404f:: with SMTP id y15-v6mr3178450ejj.5.1548010691049;
+        Sun, 20 Jan 2019 10:58:11 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a50:a4aa:: with SMTP id w39ls4389005edb.8.gmail; Sun, 20 Jan
+ 2019 10:58:10 -0800 (PST)
+X-Google-Smtp-Source: ALg8bN5MVJU7CXdFbPXETBa9rHlkMl1dVL+qMj7rOC5DWRenQclRyEsHpYxcM6NA1n7S6RLAHA+3
+X-Received: by 2002:a05:6402:286:: with SMTP id l6mr3675206edv.11.1548010690269;
+        Sun, 20 Jan 2019 10:58:10 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1548010690; cv=none;
+        d=google.com; s=arc-20160816;
+        b=zHLUeOhyi91ZCR/em4li1SipkGLVYjRpVK4CJbvUSvKC6o1Q/4ifvUsFR5wABhOKRg
+         sCXsU3mf/GtFob+NmRZCagdWuUc7pk1S5aoFc7JmrJDFoCCTSRVCKU5jn/IVLQBdZdgC
+         RgegzKUOoWmNPHJwCHsyMuD48W8l1ee2EMM/Yk3HXc+wY3fuLVY1yFHE/2uUOmkh0HGu
+         GBcjrYMExRIC2WuRGE0IOcDBKPRigeEKHBDgdWKGnuLFc5yiz6SPP6q3Q0RrsiwjtzA4
+         LO5GgKfgb7fC9RVEGcgUO71zfocS37xu8pLw7ZDdCBfQvHS/zmC+pI4xUewxXHIWQ3o9
+         zB+Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=DH1EXmw+r30/9h6oEHl2kGgAUWoOyx30qfl8DIM9yNo=;
+        b=OGXgpMwv3s6cXOjIs35ZhQNm87sLOoqodoGupDMzEqm8ekuZtiOY4pPBrtJ6vWf9CZ
+         LykLdm52/OnsVC7W38P1epjDXXgaCRNACA38f1IvfBqXx+He68eqj0xjDmNexiRFRM0s
+         GnA5GCBGEhMGWnqEMxNXa5sU/78jyKqNQkMjaIYfSwLWwLcKLESU6xsEdY+WEQ5KmLAH
+         vDg/0NrzJgwMxCUMTKQ1u8GBAN5QeK1e70XqToRe4rv8PefEHIQHgNh/+mJ/bRwGX67G
+         Ie5tp0hZfdTv2ieK+JJjXv6bGEw3T44kHxrjkcmet/Fgrwdeknsw5UqIaZl1ddFtNddA
+         bzCw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=LSx4q8x2;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::133 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x133.google.com (mail-lf1-x133.google.com. [2a00:1450:4864:20::133])
+        by gmr-mx.google.com with ESMTPS id m24si973582edc.3.2019.01.20.10.58.10
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 20 Jan 2019 10:58:10 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::133 as permitted sender) client-ip=2a00:1450:4864:20::133;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=LSx4q8x2;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::133 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x133.google.com with SMTP id v5so13941453lfe.7
+        for <opensport@googlegroups.com>; Sun, 20 Jan 2019 10:58:10 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=DH1EXmw+r30/9h6oEHl2kGgAUWoOyx30qfl8DIM9yNo=;
+        b=LSx4q8x29EUPSWy9Ws05i6inp1PeFYnXLcl0yftxS1yn1kDzuyeGSsrfvqC9zbtTz5
+         lwuPTKHpI2yizlGzTyI120S0Q7wk1omgEhZXY5HEuwD4Qj/lfcJtCgGgM2388isP79sJ
+         CXl3CYLlrkGahd99JNfqauKSAWkLbgObT4F/fiY29Z7XR5mb3xg6kmqC4/8NYMoU+g8x
+         VSNDGf/gnNlB80KuJ8VifrSr3f+Vo682oALvATSK6J6YTLVq93Y9AKIqOsPtYJP+3XlF
+         r/+PDeJ/n78nKua9T5UdNmm7QTGPdQooNJCJXo2Uez3840JR8EySZlMluMoxInlSnbAm
+         ouDA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=DH1EXmw+r30/9h6oEHl2kGgAUWoOyx30qfl8DIM9yNo=;
+        b=TnjFW6lRq5b5NC6v+yiBS04AhNyUaI4bzC4p6d9yo5OJM5VA2NSyPF3EStzvwJMwQD
+         xUP/30sbfgVuN1bHC05E5NCcaexaMA+xxSa+MW36+XhpoRj93mAxLCzNhHBuB2DPQfKl
+         gsCo115KNJxA2qSOx1j21Pnp9Qb2w8dSdoT9obXHSE2fPKv6TuoQAs0zeDPRXqSqxK3f
+         ii2CeXDKnutbORhv58yUChvEd2DrhkyyBhb+hQVhxjxDmylgfL7cRiWOaH8GYJ4VT2Qk
+         LozDPM2mgA0cFsen2WUEF5bTXaTi+6uSEfwjxW7PECZ6MHb3sMklSQUJUD/Q7DOZFZZe
+         XBNw==
+X-Gm-Message-State: AJcUukd8JwyGJe0gG5Q7unb0Jje3pMY2tBhiAiFk0l/Xf2AyjedLpgj5
+	WZhIY8pdej6H2OJLldHf2X3D6xJfLYXdXKBjd9jfT4cn
+X-Received: by 2002:a19:4948:: with SMTP id l8mr7088681lfj.156.1548010689250;
+ Sun, 20 Jan 2019 10:58:09 -0800 (PST)
+MIME-Version: 1.0
+References: <f6d107c7-554b-40b9-9967-70ade8572fa3@googlegroups.com>
+In-Reply-To: <f6d107c7-554b-40b9-9967-70ade8572fa3@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Sun, 20 Jan 2019 19:57:58 +0100
+Message-ID: <CAAxEZd9KRFxqnjJRu_8fREe11ixz90DT6ObY11wHJTa+U9YBQg@mail.gmail.com>
+Subject: Re: [opensport] Cannot locate data for premier league beyond
+ 2010/2011 season
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+   Welcome to football.db. It's not a bug it's a feature :-). You only
+get the datasets / fixtures that are listed in the all.txt [1] setup
+file / configuration.
+
+    To add more or use a different setup it's up-to you. Maybe someone
+else can help you along / out.
+
+.  Sorry, there's only so much I can do e.g. trying to work / make the
+csv dataimport [2] better that will keep me busy for some weeks.
+
+   Cheers. Prost.
+
+[1] https://github.com/openfootball/eng-england/blob/master/setups/all.txt
+[2] https://github.com/footballcsv/eng-england
+

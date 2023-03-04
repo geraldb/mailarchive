@@ -1,0 +1,60 @@
+From 1377186086912@xxx Tue Jun 16 00:16:56 +0000 2015
+X-GM-THRID: 1330545426432
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,4da4215bac1abda4
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.200.164 with SMTP id jt4mr313225lbc.14.1403171634221;
+        Thu, 19 Jun 2014 02:53:54 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.152.45.100 with SMTP id l4ls78331lam.49.gmail; Thu, 19 Jun
+ 2014 02:53:53 -0700 (PDT)
+X-Received: by 10.112.168.198 with SMTP id zy6mr15984lbb.15.1403171633810;
+        Thu, 19 Jun 2014 02:53:53 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wg0-x22b.google.com (mail-wg0-x22b.google.com [2a00:1450:400c:c00::22b])
+        by gmr-mx.google.com with ESMTPS id h4si1416286wib.2.2014.06.19.02.53.53
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 19 Jun 2014 02:53:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22b as permitted sender) client-ip=2a00:1450:400c:c00::22b;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c00::22b as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wg0-f43.google.com with SMTP id b13so2003963wgh.2
+        for <opensport@googlegroups.com>; Thu, 19 Jun 2014 02:53:53 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=e+It0cmRsV1Pa5l5+L0yVNnTYBTiXxip9FK8L8kWqfY=;
+        b=xeS8MVrOQtQlrU6y/DU5PcfIYFWYjakaoyTIKD1gZObnbN82PM71Xw5g5gzBolOpDC
+         S9oUeYYAIbqaI3VrRB4ynkSIvhgwD6iJvGPnTK+Q0vFWtD6bp5kKN4vWPA7DnBrGaCTA
+         JOiCQd1yp28dXnrcTr/giIqY89p03gQ8gnuUqKB4AoxL8qbKw3ANEchNUxMoj+VbwpQn
+         Plat3kHffONhd2y44yxYMXDXp4VIvJCSvFHeLPX08oRGTU/L3lFXcHAsiRxdQRkTwMMY
+         CSBT6TFLu4YM35jyWmQKTK/kJ15on7GcmVilMtmuLPMktJH+6jjJc5vl96r0Mj1EE1ow
+         n9lQ==
+MIME-Version: 1.0
+X-Received: by 10.180.13.47 with SMTP id e15mr5102752wic.28.1403171633701;
+ Thu, 19 Jun 2014 02:53:53 -0700 (PDT)
+Received: by 10.216.40.211 with HTTP; Thu, 19 Jun 2014 02:53:53 -0700 (PDT)
+In-Reply-To: <87c27894-33f1-4e2e-8c9c-eaf5028cc9de@googlegroups.com>
+References: <202c0c98-9e47-4577-acd3-997de84014ef@googlegroups.com>
+	<5ab54c50-c2fa-4642-81e6-c7f3d4270857@googlegroups.com>
+	<cff8d069-a8fb-489d-95aa-25b032d43b24@googlegroups.com>
+	<CAAxEZd_o9p3us8j-o=XimqKsVfbaMBqA_TsuCrSJNu_GNOoT_A@mail.gmail.com>
+	<87c27894-33f1-4e2e-8c9c-eaf5028cc9de@googlegroups.com>
+Date: Thu, 19 Jun 2014 11:53:53 +0200
+Message-ID: <CAAxEZd96trXnNp4N2ov9r9uPx1+eF-1MEF8cyAOFGwDREZcuEQ@mail.gmail.com>
+Subject: Re: [opensport] Re: How to contribute
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+     One way is to add a fork another to transfer the repo.  You can
+of course as an alternative start adding, for example, the match
+schedule to the world/europe/fr-france repo. Once there's some data I
+can break it out into its own repo (for France only).  Cheers.
+

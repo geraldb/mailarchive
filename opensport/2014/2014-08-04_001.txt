@@ -1,0 +1,60 @@
+From 1814435987456@xxx Tue Jun 16 00:16:58 +0000 2015
+X-GM-THRID: 120477188096
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,cfd207d2a36fadf3
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.194.6.138 with SMTP id b10mr2142761wja.0.1407162931670;
+        Mon, 04 Aug 2014 07:35:31 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.37.18 with SMTP id u18ls468943wij.8.canary; Mon, 04 Aug
+ 2014 07:35:31 -0700 (PDT)
+X-Received: by 10.181.9.65 with SMTP id dq1mr2095749wid.7.1407162931226;
+        Mon, 04 Aug 2014 07:35:31 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x229.google.com (mail-we0-x229.google.com [2a00:1450:400c:c03::229])
+        by gmr-mx.google.com with ESMTPS id m15si375731wiw.0.2014.08.04.07.35.31
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 04 Aug 2014 07:35:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::229 as permitted sender) client-ip=2a00:1450:400c:c03::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f169.google.com with SMTP id u56so7830973wes.14
+        for <opensport@googlegroups.com>; Mon, 04 Aug 2014 07:35:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=tCbhbMnHEtiaOwPlWKbWZp1kBuRo2uZ/eM2PIy1frwM=;
+        b=Q0FXyYXweShC+sKM01YNm72mXb+q4Z+A+k8EKkS+OtTgLNmAFozTixjJeAkE0hxKg3
+         BnkUPZwoGHII14NUjxQfWgcr9b6vct6vHxzrHgQFOu/Ac1wXO/cnW8fPAG6sHpR09OpF
+         NbOolk19KijqQe14NovoZhZuQds+zNqwO4+kJxT88PftcAjhI5ysCJw3V04WR93GnxjE
+         WTzS72HmgyloEIf/PFgnaxzoasQrl9Ukqr421Sq1AR8IRAIEAkT05GFEG1ipwe1f+plB
+         TS4c3QMVKbwhGlm1QwHA+yYx40RaKV8PyV5KpwSH/b8derRrs78WfWj3sVKSNBFuJ240
+         S3Ng==
+MIME-Version: 1.0
+X-Received: by 10.180.189.4 with SMTP id ge4mr30648770wic.25.1407162931128;
+ Mon, 04 Aug 2014 07:35:31 -0700 (PDT)
+Received: by 10.216.21.71 with HTTP; Mon, 4 Aug 2014 07:35:31 -0700 (PDT)
+In-Reply-To: <643848a3-c618-41ba-9cb0-830b54b2774c@googlegroups.com>
+References: <42ae00eb-0e90-4168-a288-e8fc44645386@googlegroups.com>
+	<49ad51e9-f5e3-4178-b7bd-63a937e01289@googlegroups.com>
+	<a9cc2851-c44b-4e75-8e91-a02498a73584@googlegroups.com>
+	<CAAxEZd9Mo9TPu=NzunmJ5EOJW8PakGnXpZ1gZg1cbTpNAYUGmg@mail.gmail.com>
+	<CAAxEZd9gsDH=JXu1a944m0ywNpXEJnXyVb5o3Wyz-7+BT53O4w@mail.gmail.com>
+	<643848a3-c618-41ba-9cb0-830b54b2774c@googlegroups.com>
+Date: Mon, 4 Aug 2014 16:35:31 +0200
+Message-ID: <CAAxEZd-y9e+ABPzWn7-i4+=UukifDh+EeR_2drCKx53xCzZjnA@mail.gmail.com>
+Subject: Re: [opensport] Re: Trying to create a mysql database instead of
+ using command tool
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+   Sorry. Hard to say from your comments. What error do you get? Can
+you post your build script? Cheers.
+

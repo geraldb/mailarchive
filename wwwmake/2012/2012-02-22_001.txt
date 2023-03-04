@@ -1,0 +1,54 @@
+From 1065593339904@xxx Sun Jan 11 00:21:35 +0000 2015
+X-GM-THRID: 1022524129280
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,58780c0063b5d95d
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Received: by 10.52.91.17 with SMTP id ca17mr11362407vdb.1.1329948227661;
+        Wed, 22 Feb 2012 14:03:47 -0800 (PST)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.52.110.131 with SMTP id ia3ls1188801vdb.4.gmail; Wed, 22 Feb
+ 2012 14:03:47 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.52.37.101 with SMTP id x5mr3511680vdj.4.1329948227391; Wed, 22
+ Feb 2012 14:03:47 -0800 (PST)
+Authentication-Results: ls.google.com; spf=pass (google.com: domain of
+ gerald.bauer@gmail.com designates internal as permitted sender)
+ smtp.mail=gerald.bauer@gmail.com; dkim=pass
+ header.i=@gmail.com
+Received: by eq5g2000vbb.googlegroups.com with HTTP; Wed, 22 Feb 2012 14:03:47
+ -0800 (PST)
+Date: Wed, 22 Feb 2012 14:03:47 -0800 (PST)
+In-Reply-To: <CAMf=vNr9ChXa8fd3-gBjCO_c2pFNFm8aSQtoYG+SRS73suo5fw@mail.gmail.com>
+References: <CAMf=vNr9ChXa8fd3-gBjCO_c2pFNFm8aSQtoYG+SRS73suo5fw@mail.gmail.com>
+User-Agent: G2/1.0
+X-Google-Token: EMPMlfoEzdgcqZv9z0A0
+X-Google-Web-Client: true
+X-Google-Header-Order: HUALENKRC
+X-HTTP-UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:10.0.2)
+ Gecko/20100101 Firefox/10.0.2,gzip(gfe)
+X-Google-IP: 178.190.96.160
+Message-ID: <2f124609-9d0d-44a3-beeb-9e075fa3ef35@eq5g2000vbb.googlegroups.com>
+Subject: Re: ANN: deck.rb - slides in markdown, using deck.js and rack
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: "Free Web Slide Show Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, and Friends" <webslideshow@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+   Looks great I will add it to the Ruby gems list on the wiki [1].
+
+   From experience I'd say it's not a good idea to just bundle a
+single Slideshow template pack. For example, Slideshow (S9) started a
+couple of years ago with FullerScreen. Anyone remember that Firefox
+addon? Anyways, why not add support for different template packs. For
+example, the Slideshow (S9) Deck.js template pack resides here [2].
+
+  All the best. Cheers.
+
+[1] https://github.com/geraldb/slideshow/wiki/More-Slideshow-Projects-in-Ruby
+[2] https://github.com/geraldb/slideshow-deck.js
+

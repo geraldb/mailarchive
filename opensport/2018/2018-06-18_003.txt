@@ -1,0 +1,93 @@
+From 6568312928854867968@xxx Mon Jun 18 06:48:46 +0000 2018
+X-GM-THRID: 6327070589248864256
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Received: by 2002:a6b:6003:: with SMTP id r3-v6mr4480032iog.64.1529304526775;
+        Sun, 17 Jun 2018 23:48:46 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a02:8935:: with SMTP id o50-v6ls1118715jaj.8.gmail; Sun, 17
+ Jun 2018 23:48:46 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKL+WN04KGd1J1McPkKBcpwpKhPlKSy5ZYjBXLKevngh9mgXMmPieFMOaYYk0zvII5GzdT7a
+X-Received: by 2002:a02:5a48:: with SMTP id v69-v6mr5018564jaa.13.1529304526184;
+        Sun, 17 Jun 2018 23:48:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1529304526; cv=none;
+        d=google.com; s=arc-20160816;
+        b=jNPJd+46fPjmTZjqcaa6sf6iae8avBzqGY1L0snPvpVk6bxW50EBBtMbkTv2htAhPL
+         dXVjokVe1a8o/p28v/OClz37yV1ssmMOsoBnYhFSqj5Gdp6LZD6+WaRTyrpk5HQhfxFY
+         cppGOYtD3D3QjrrCYQUkOht0/c3Dg269MZ6Xf8uR/hOypTtWk5sVmXqAVvnLREDSRWz3
+         okN6XfxjQ7yI2wTQIursRsWbiWYmS37DKNyWwKcVBLsxYeba4YS9veOiXhcEw0RACOd/
+         sHhWkAMc9QqtwOCrTipyM49ovzh9vfFVxQu5x5XoPsVOoOEaKDTLofahSRdmbuPZdF2b
+         TigA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=rjM377HRuNnnI6tOlPV91nZad/IRB/v+o0XHPyhNEnE=;
+        b=hbCeKfiz4kZj0tfRcaC8KVA+JevT4EZJ8KFmZg8TB7+BUQHzWTqkB1mDgzjzPX7IhS
+         DNYMJB8BixEgfMLziNbevGps2E6K06z89No1SrmpP2gllqMseOBJySbnZjv9XujLRC5W
+         mkAZlpIULTegWWZ4i4oXXd5fmoG8v+5AdjpZYr2ymz27dBwIo9Fu1va/JMIDwmo7beoo
+         snTfg6+vBZOqv4+RTZnX35ANTp5iAKEZzZVaXSb9z78/yNmiZgyZCsciZ1Swppm18jWH
+         XJkgtWyRm7lo4UUpPgAJwXgowLrPSbPppG8qU+0dff3WeoGWa1lZPEXtF5/98j/ry0CU
+         ObgA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=JwoLiGLT;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-io0-x22a.google.com (mail-io0-x22a.google.com. [2607:f8b0:4001:c06::22a])
+        by gmr-mx.google.com with ESMTPS id l11-v6si611895iti.0.2018.06.17.23.48.46
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 17 Jun 2018 23:48:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) client-ip=2607:f8b0:4001:c06::22a;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=JwoLiGLT;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c06::22a as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-io0-x22a.google.com with SMTP id g22-v6so15875539iob.7
+        for <opensport@googlegroups.com>; Sun, 17 Jun 2018 23:48:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=rjM377HRuNnnI6tOlPV91nZad/IRB/v+o0XHPyhNEnE=;
+        b=JwoLiGLThN50muHCXNjxAsvHCqYwHrk6KLGpHotRTl03qdEzBtERWOktUYB43FBRPq
+         y5KRlgxVSCt4m7B4ghS49S+KQAM38gFhp6KzZc+lyBl0kFOsdiX3MprYkjHpTkrn5Qyz
+         wmMekBZIrCoGV+yoUXQr1xL4CreKLvjKZd2WfEW/uLMonJJqc6OlGfWZF2xPAhD67uHW
+         feQaDOGilKvaA7XxPB/K8BbxTVh4wH+b8EykObxIVaj18Kf5sqF45o+dNoTnFKKThlfK
+         +Efi5az4hu8tPXJTErfWHLG3uXwcl/+H1aG6W/nEbkt05a75ZcAZ4OETuIEBCjV6hYH4
+         cuiQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=rjM377HRuNnnI6tOlPV91nZad/IRB/v+o0XHPyhNEnE=;
+        b=tiA7zikUtj3KQxOZ83UXF3Q68yJOFKyihkfkBi066/ORUJvZPYSKwrscmwdbkMcror
+         GL9P5lMJGnQ1Lnka6m/nMI9OX8pYKRzIj4mTwnChPdP2u3XPu3r184Z3NSh50zWK+3Tb
+         FHIJ6d8M3/KHrUHfCDxAYAytuka7J/Zz49gt3czlD5JY11WGrliAD/x/RASDq5aKHLqD
+         OU6U/USSYhUkTug2TsUFeah9OpokvictGZDJjaOB3JcfoElZhGwwFWDc/PWYlQxrAAcA
+         HXesGh4O2D2GTKbcY2yKvVPc0gQ99Ywr32/Rad+qj12gSiNRK+nSp3qLDVA7lok2HtKG
+         B3YQ==
+X-Gm-Message-State: APt69E2lNjC356+MBtgbu6UZlIn5SakzJjH9Jyx1mCAXDhfmyUaRO+KP
+	cdXqq+WpNUwjHx9apPNocSm00BIrCr1PzF7ax6w=
+X-Received: by 2002:a6b:e411:: with SMTP id u17-v6mr8968063iog.202.1529304525681;
+ Sun, 17 Jun 2018 23:48:45 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a6b:d90:0:0:0:0:0 with HTTP; Sun, 17 Jun 2018 23:48:45 -0700 (PDT)
+In-Reply-To: <725ff031-37b0-4497-a899-de7781d1a521@googlegroups.com>
+References: <ca4525cd-a47e-4569-93e0-f9efbbcb779b@googlegroups.com>
+ <CAAxEZd9W3+3Hq=S__0_Ff7SPxcUZbo_gbJGbSTh+k7PbSQXc6w@mail.gmail.com> <725ff031-37b0-4497-a899-de7781d1a521@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Mon, 18 Jun 2018 08:48:45 +0200
+Message-ID: <CAAxEZd-bMXs9Mm0rjOEcE-oCzfv7zujW-Dv=OaVXQ57PPBCeSQ@mail.gmail.com>
+Subject: Re: [opensport] rake db:setup failure
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+    Thanks for your interest in sportbook.  The bad news for now the
+sportbook is out of support, that is, you are on your own. Sorry.
+There's only so much I  - a random nobody - can do  (maybe later this
+summer I will try to update the code to rails 5 for the 2018/19
+football season).
+
+   Cheers. Prost.
+

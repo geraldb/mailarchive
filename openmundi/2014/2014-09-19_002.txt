@@ -1,0 +1,1182 @@
+From 301224427520@xxx Sat Dec 13 20:08:18 +0000 2014
+X-GM-THRID: 302770028544
+X-Google-Groups: openmundi
+X-Google-Thread: 73f92da6eb,a5c903eb6678991d
+X-Google-Attributes: gid73f92da6eb,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.182.131.226 with SMTP id op2mr4339007obb.17.1411130451175;
+        Fri, 19 Sep 2014 05:40:51 -0700 (PDT)
+X-BeenThere: openmundi@googlegroups.com
+Received: by 10.140.97.100 with SMTP id l91ls632026qge.69.gmail; Fri, 19 Sep
+ 2014 05:40:50 -0700 (PDT)
+X-Received: by 10.140.108.203 with SMTP id j69mr893qgf.30.1411130450976;
+        Fri, 19 Sep 2014 05:40:50 -0700 (PDT)
+X-Google-Doc-Id: c93ec4e872c7a580
+X-Google-Web-Client: true
+Date: Fri, 19 Sep 2014 05:40:50 -0700 (PDT)
+From: Eckhard Licher <eckhard.licher@googlemail.com>
+To: openmundi@googlegroups.com
+Message-Id: <29a67f4c-8fdc-4fe4-a956-3bb083beb817@googlegroups.com>
+Subject: New Python-based World Factbook scraper in the making
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_225_1825028070.1411130450174"
+X-Google-Token: ENLI8KAFhw0WKqsPNyo0
+X-Google-IP: 85.158.138.20
+
+------=_Part_225_1825028070.1411130450174
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_226_737842389.1411130450174"
+
+------=_Part_226_737842389.1411130450174
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+I recently stumbled across python library "beautiful soup", see 
+http://www.crummy.com/software/BeautifulSoup/bs4/doc/
+
+>From their website: Beautiful Soup 
+<http://www.crummy.com/software/BeautifulSoup/> is a Python library for 
+pulling data out of HTML and XML files. It works with your favorite parser 
+to provide idiomatic ways of navigating, searching, and modifying the parse 
+tree. It commonly saves programmers hours or days of work.
+
+So very true. I hacked the attached python script (40 LOC) together in 
+about 2 hours. The script reads a file from the factbook/geos/ directory 
+via stdin and outputs a set of "parse tokens" and arguments (see attachted 
+file gm.txt). Conversion to proper JSON will not take more than another two 
+hours with about another 40 LOC.
+
+Good tool. There seems to be a ruby equivalent out there as well, called 
+rubyful soup.
+
+Greetings
+
+
+
+
+------=_Part_226_737842389.1411130450174
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hello,<br><br>I recently stumbled across python library "beautiful soup", see http://www.crummy.com/software/BeautifulSoup/bs4/doc/<br><br>From their website: <a class="reference external" href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a> is a
+Python library for pulling data out of HTML and XML files. It works
+with your favorite parser to provide idiomatic ways of navigating,
+searching, and modifying the parse tree. It commonly saves programmers
+hours or days of work.<br><br>So very true. I hacked the attached python script (40 LOC) together in about 2 hours. The script reads a file from the factbook/geos/ directory via stdin and outputs a set of "parse tokens" and arguments (see attachted file gm.txt). Conversion to proper JSON will not take more than another two hours with about another 40 LOC.<br><br>Good tool. There seems to be a ruby equivalent out there as well, called rubyful soup.<br><br>Greetings<br><br><br><br></div>
+------=_Part_226_737842389.1411130450174--
+
+------=_Part_225_1825028070.1411130450174
+Content-Type: text/x-python; charset=US-ASCII; name=myscrape.py
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename=myscrape.py
+X-Attachment-Id: f595937d-b86b-44aa-b2ce-4b5cb5e33258
+Content-ID: <f595937d-b86b-44aa-b2ce-4b5cb5e33258>
+
+#!/usr/bin/python
+
+from bs4 import BeautifulSoup
+import sys
+
+def main():
+    def cleanup(s):
+        s = s.strip().replace("\t", " ").replace("\n", " ").replace("\r", " ")
+        while s.find("  ") >= 0:
+            s = s.replace("  ", " ")
+        return s
+        
+    page = sys.stdin.read()
+    soup = BeautifulSoup(page)
+
+    h2 = soup.find("h2", sectiontitle="Introduction")
+    soup = h2.parent
+    start = soup.find("h2", sectiontitle="Introduction")
+    print "SECT :", start.text.strip()
+    sib = start.find_next()
+    while sib:
+        if str(sib).startswith('<div class="category"'):
+            if str(sib).find('id="field"') > 0:
+                print
+                print "FIELD:", cleanup(sib.text)
+            else:
+                txt = cleanup(sib.text)
+                col_pos = txt.find(":")
+                name = txt[:col_pos]
+                print "CAT  :", name
+                text = txt[col_pos +1:].strip()
+                if text:
+                    print "DATA :", text
+        elif str(sib).startswith('<div class="category_data"'):
+            print "DATA :", cleanup(sib.text)
+        elif str(sib).startswith('<h2'):
+            print '\n' + '-' * 40 + '\n' 
+            print "SECT :", cleanup(sib.text)
+        sib = sib.find_next()
+
+
+if __name__ == "__main__":
+    main()
+
+------=_Part_225_1825028070.1411130450174
+Content-Type: text/plain; charset=US-ASCII; name=gm.txt
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment; filename=gm.txt
+X-Attachment-Id: 4b8c4457-7a9a-4420-a740-2b90e704b0ef
+Content-ID: <4b8c4457-7a9a-4420-a740-2b90e704b0ef>
+
+SECT : Introduction ::Germany
+
+FIELD: Background:
+DATA : As Europe's largest economy and second most populous nation (after R=
+ussia), Germany is a key member of the continent's economic, political, and=
+ defense organizations. European power struggles immersed Germany in two de=
+vastating World Wars in the first half of the 20th century and left the cou=
+ntry occupied by the victorious Allied powers of the US, UK, France, and th=
+e Soviet Union in 1945. With the advent of the Cold War, two German states =
+were formed in 1949: the western Federal Republic of Germany (FRG) and the =
+eastern German Democratic Republic (GDR). The democratic FRG embedded itsel=
+f in key Western economic and security organizations, the EC, which became =
+the EU, and NATO, while the communist GDR was on the front line of the Sovi=
+et-led Warsaw Pact. The decline of the USSR and the end of the Cold War all=
+owed for German unification in 1990. Since then, Germany has expended consi=
+derable funds to bring Eastern productivity and wages up to Western standar=
+ds. In January 1999, Germany and 10 other EU countries introduced a common =
+European exchange currency, the euro.
+
+----------------------------------------
+
+SECT : Geography ::Germany
+
+FIELD: Location:
+DATA : Central Europe, bordering the Baltic Sea and the North Sea, between =
+the Netherlands and Poland, south of Denmark
+
+FIELD: Geographic coordinates:
+DATA : 51 00 N, 9 00 E
+
+FIELD: Map references:
+DATA : Europe
+
+FIELD: Area:
+CAT  : total
+DATA : 357,022 sq km
+CAT  : land
+DATA : 348,672 sq km
+CAT  : water
+DATA : 8,350 sq km
+
+FIELD: Area - comparative:
+CAT  : Area comparison map
+
+FIELD: Land boundaries:
+CAT  : total
+DATA : 3,694 km
+CAT  : border countries
+DATA : Austria 801 km, Belgium 133 km, Czech Republic 704 km, Denmark 140 k=
+m, France 418 km, Luxembourg 128 km, Netherlands 575 km, Poland 447 km, Swi=
+tzerland 348 km
+
+FIELD: Coastline:
+DATA : 2,389 km
+
+FIELD: Maritime claims:
+CAT  : territorial sea
+DATA : 12 nm
+CAT  : exclusive economic zone
+DATA : 200 nm
+CAT  : continental shelf
+DATA : 200 m depth or to the depth of exploitation
+
+FIELD: Climate:
+DATA : temperate and marine; cool, cloudy, wet winters and summers; occasio=
+nal warm mountain (foehn) wind
+
+FIELD: Terrain:
+DATA : lowlands in north, uplands in center, Bavarian Alps in south
+
+FIELD: Elevation extremes:
+CAT  : lowest point
+DATA : Neuendorf bei Wilster -3.54 m
+CAT  : highest point
+DATA : Zugspitze 2,963 m
+
+FIELD: Natural resources:
+DATA : coal, lignite, natural gas, iron ore, copper, nickel, uranium, potas=
+h, salt, construction materials, timber, arable land
+
+FIELD: Land use:
+CAT  : arable land
+DATA : 33.25%
+CAT  : permanent crops
+DATA : 0.56%
+CAT  : other
+DATA : 66.19% (2011)
+
+FIELD: Irrigated land:
+DATA : 5,157 sq km (2006)
+
+FIELD: Total renewable water resources:
+DATA : 154 cu km (2011)
+
+FIELD: Freshwater withdrawal (domestic/industrial/agricultural):
+CAT  : total
+DATA : 32.3 cu km/yr (16%/84%/0%)
+CAT  : per capita
+DATA : 391.4 cu m/yr (2007)
+
+FIELD: Natural hazards:
+DATA : flooding
+
+FIELD: Environment - current issues:
+DATA : emissions from coal-burning utilities and industries contribute to a=
+ir pollution; acid rain, resulting from sulfur dioxide emissions, is damagi=
+ng forests; pollution in the Baltic Sea from raw sewage and industrial effl=
+uents from rivers in eastern Germany; hazardous waste disposal; government =
+established a mechanism for ending the use of nuclear power over the next 1=
+5 years; government working to meet EU commitment to identify nature preser=
+vation areas in line with the EU's Flora, Fauna, and Habitat directive
+
+FIELD: Environment - international agreements:
+CAT  : party to
+DATA : Air Pollution, Air Pollution-Nitrogen Oxides, Air Pollution-Persiste=
+nt Organic Pollutants, Air Pollution-Sulfur 85, Air Pollution-Sulfur 94, Ai=
+r Pollution-Volatile Organic Compounds, Antarctic-Environmental Protocol, A=
+ntarctic-Marine Living Resources, Antarctic Seals, Antarctic Treaty, Biodiv=
+ersity, Climate Change, Climate Change-Kyoto Protocol, Desertification, End=
+angered Species, Environmental Modification, Hazardous Wastes, Law of the S=
+ea, Marine Dumping, Ozone Layer Protection, Ship Pollution, Tropical Timber=
+ 83, Tropical Timber 94, Wetlands, Whaling
+CAT  : signed, but not ratified
+DATA : none of the selected agreements
+
+FIELD: Geography - note:
+DATA : strategic location on North European Plain and along the entrance to=
+ the Baltic Sea
+
+----------------------------------------
+
+SECT : People and Society ::Germany
+
+FIELD: Nationality:
+CAT  : noun
+DATA : German(s)
+CAT  : adjective
+DATA : German
+
+FIELD: Ethnic groups:
+DATA : German 91.5%, Turkish 2.4%, other 6.1% (made up largely of Greek, It=
+alian, Polish, Russian, Serbo-Croatian, Spanish)
+
+FIELD: Languages:
+DATA : German (official)
+CAT  : note
+DATA : Lower Sorbian, North Frisian, Sater Frisian, and Upper Sorbian are r=
+ecognized as regional languages under the European Charter for Regional or =
+Minority Languages
+
+FIELD: Religions:
+DATA : Protestant 34%, Roman Catholic 34%, Muslim 3.7%, unaffiliated or oth=
+er 28.3%
+
+FIELD: Population:
+DATA : 80,996,685 (July 2014 est.)
+
+FIELD: Age structure:
+CAT  : 0-14 years
+DATA : 13% (male 5,386,525/female 5,107,336)
+CAT  : 15-24 years
+DATA : 10.6% (male 4,367,713/female 4,188,566)
+CAT  : 25-54 years
+DATA : 41.7% (male 17,116,346/female 16,664,995)
+CAT  : 55-64 years
+DATA : 13.6% (male 5,463,221/female 5,574,166)
+CAT  : 65 years and over
+DATA : 20.9% (male 7,468,552/female 9,659,265) (2014 est.)
+CAT  : population pyramid
+
+FIELD: Dependency ratios:
+CAT  : total dependency ratio
+DATA : 52.1 %
+CAT  : youth dependency ratio
+DATA : 19.8 %
+CAT  : elderly dependency ratio
+DATA : 32.3 %
+CAT  : potential support ratio
+DATA : 3.1 (2014 est.)
+
+FIELD: Median age:
+CAT  : total
+DATA : 46.1 years
+CAT  : male
+DATA : 45.1 years
+CAT  : female
+DATA : 47.2 years (2014 est.)
+
+FIELD: Population growth rate:
+DATA : -0.18% (2014 est.)
+
+FIELD: Birth rate:
+DATA : 8.42 births/1,000 population (2014 est.)
+
+FIELD: Death rate:
+DATA : 11.29 deaths/1,000 population (2014 est.)
+
+FIELD: Net migration rate:
+DATA : 1.06 migrant(s)/1,000 population (2014 est.)
+
+FIELD: Urbanization:
+CAT  : urban population
+DATA : 73.9% of total population (2011)
+CAT  : rate of urbanization
+DATA : -0.03% annual rate of change (2010-15 est.)
+
+FIELD: Major urban areas - population:
+DATA : BERLIN (capital) 3.462 million; Hamburg 1.796 million; Munich 1.364 =
+million; Cologne 1.006 million (2011)
+
+FIELD: Sex ratio:
+CAT  : at birth
+DATA : 1.06 male(s)/female
+CAT  : 0-14 years
+DATA : 1.06 male(s)/female
+CAT  : 15-24 years
+DATA : 1.04 male(s)/female
+CAT  : 25-54 years
+DATA : 1.03 male(s)/female
+CAT  : 55-64 years
+DATA : 0.97 male(s)/female
+CAT  : 65 years and over
+DATA : 0.76 male(s)/female
+CAT  : total population
+DATA : 0.97 male(s)/female (2014 est.)
+
+FIELD: Mother's mean age at first birth:
+DATA : 29.2 (2012 est.)
+
+FIELD: Maternal mortality rate:
+DATA : 7 deaths/100,000 live births (2010)
+
+FIELD: Infant mortality rate:
+CAT  : total
+DATA : 3.46 deaths/1,000 live births
+CAT  : male
+DATA : 3.75 deaths/1,000 live births
+CAT  : female
+DATA : 3.14 deaths/1,000 live births (2014 est.)
+
+FIELD: Life expectancy at birth:
+CAT  : total population
+DATA : 80.44 years
+CAT  : male
+DATA : 78.15 years
+CAT  : female
+DATA : 82.86 years (2014 est.)
+
+FIELD: Total fertility rate:
+DATA : 1.43 children born/woman (2014 est.)
+
+FIELD: Contraceptive prevalence rate:
+DATA : 66.2%
+CAT  : note
+DATA : percent of women aged 18-49 (2005)
+
+FIELD: Health expenditures:
+DATA : 11.1% of GDP (2011)
+
+FIELD: Physicians density:
+DATA : 3.69 physicians/1,000 population (2010)
+
+FIELD: Hospital bed density:
+DATA : 8.3 beds/1,000 population (2010)
+
+FIELD: Drinking water source:
+CAT  : improved
+DATA : urban: 100% of population
+DATA : rural: 100% of population
+DATA : total: 100% of population
+CAT  : unimproved
+DATA : urban: 0% of population
+DATA : rural: 0% of population
+DATA : total: 0% of population (2012 est.)
+
+FIELD: Sanitation facility access:
+CAT  : improved
+DATA : urban: 100% of population
+DATA : rural: 100% of population
+DATA : total: 100% of population
+CAT  : unimproved
+DATA : urban: 0% of population
+DATA : rural: 0% of population
+DATA : total: 0% of population (2012 est.)
+
+FIELD: HIV/AIDS - adult prevalence rate:
+DATA : 0.1% (2009 est.)
+
+FIELD: HIV/AIDS - people living with HIV/AIDS:
+DATA : 67,000 (2009 est.)
+
+FIELD: HIV/AIDS - deaths:
+DATA : fewer than 1,000 (2009 est.)
+
+FIELD: Obesity - adult prevalence rate:
+DATA : 25.1% (2008)
+
+FIELD: Children under the age of 5 years underweight:
+DATA : 1.1% (2006)
+
+FIELD: Education expenditures:
+DATA : 5.1% of GDP (2010)
+
+FIELD: Literacy:
+CAT  : definition
+DATA : age 15 and over can read and write
+CAT  : total population
+DATA : 99%
+CAT  : male
+DATA : 99%
+CAT  : female
+DATA : 99% (2003 est.)
+
+FIELD: School life expectancy (primary to tertiary education):
+CAT  : total
+DATA : 16 years
+CAT  : male
+DATA : 16 years
+CAT  : female
+DATA : 16 years (2011)
+
+FIELD: Unemployment, youth ages 15-24:
+CAT  : total
+DATA : 8.1%
+CAT  : male
+DATA : 8.8%
+CAT  : female
+DATA : 7.4% (2012)
+
+----------------------------------------
+
+SECT : Government ::Germany
+
+FIELD: Country name:
+CAT  : conventional long form
+DATA : Federal Republic of Germany
+CAT  : conventional short form
+DATA : Germany
+CAT  : local long form
+DATA : Bundesrepublik Deutschland
+CAT  : local short form
+DATA : Deutschland
+CAT  : former
+DATA : German Empire, German Republic, German Reich
+
+FIELD: Government type:
+DATA : federal republic
+
+FIELD: Capital:
+CAT  : name
+DATA : Berlin
+CAT  : geographic coordinates
+DATA : 52 31 N, 13 24 E
+CAT  : time difference
+DATA : UTC+1 (6 hours ahead of Washington, DC, during Standard Time)
+CAT  : daylight saving time
+DATA : +1hr, begins last Sunday in March; ends last Sunday in October
+
+FIELD: Administrative divisions:
+DATA : 16 states (Laender, singular - Land); Baden-Wuerttemberg, Bayern (Ba=
+varia), Berlin, Brandenburg, Bremen, Hamburg, Hessen (Hesse), Mecklenburg-V=
+orpommern (Mecklenburg-Western Pomerania), Niedersachsen (Lower Saxony), No=
+rdrhein-Westfalen (North Rhine-Westphalia), Rheinland-Pfalz (Rhineland-Pala=
+tinate), Saarland, Sachsen (Saxony), Sachsen-Anhalt (Saxony-Anhalt), Schles=
+wig-Holstein, Thueringen (Thuringia); note - Bayern, Sachsen, and Thueringe=
+n refer to themselves as free states (Freistaaten, singular - Freistaat)
+
+FIELD: Independence:
+DATA : 18 January 1871 (establishment of the German Empire); divided into f=
+our zones of occupation (UK, US, USSR, and France) in 1945 following World =
+War II; Federal Republic of Germany (FRG or West Germany) proclaimed on 23 =
+May 1949 and included the former UK, US, and French zones; German Democrati=
+c Republic (GDR or East Germany) proclaimed on 7 October 1949 and included =
+the former USSR zone; West Germany and East Germany unified on 3 October 19=
+90; all four powers formally relinquished rights on 15 March 1991; notable =
+earlier dates: 10 August 843 (Eastern Francia established from the division=
+ of the Carolingian Empire); 2 February 962 (crowning of OTTO I, recognized=
+ as the first Holy Roman Emperor)
+
+FIELD: National holiday:
+DATA : Unity Day, 3 October (1990)
+
+FIELD: Constitution:
+DATA : previous 1919 (Weimar Constitution); latest drafted 10 to 23 August =
+1948, approved 12 May 1949, promulgated 23 May 1949, entered into force 24 =
+May 1949; amended many times, last in 2012 (2012)
+
+FIELD: Legal system:
+DATA : civil law system
+
+FIELD: International law organization participation:
+DATA : accepts compulsory ICJ jurisdiction with reservations; accepts ICCt =
+jurisdiction
+
+FIELD: Suffrage:
+DATA : 18 years of age; universal
+
+FIELD: Executive branch:
+CAT  : chief of state
+DATA : President Joachim GAUCK (since 23 March 2012)
+CAT  : head of government
+DATA : Chancellor Angela MERKEL (since 22 November 2005)
+CAT  : cabinet
+DATA : Cabinet or Bundesminister (Federal Ministers) appointed by the presi=
+dent on the recommendation of the chancellor
+CAT  : elections
+DATA : president elected for a five-year term (eligible for a second term) =
+by a Federal Convention, including all members of the Federal Parliament (B=
+undestag) and an equal number of delegates elected by the state parliaments=
+; election last held on 19 February 2012 (next to be held by June 2017); ch=
+ancellor elected by an absolute majority of the Federal Parliament for a fo=
+ur-year term; Federal Parliament vote for Chancellor last held on 17 Decemb=
+er 2013 (next to be held after the September 2017 elections)
+CAT  : election results
+DATA : Joachim GAUCK elected president; received 991 votes of the Federal C=
+onvention against 126 for Beate KLARSFELD and 3 for Olaf ROSE; Angela MERKE=
+L reelected chancellor; vote by Federal Parliament 462 to 150 with four abs=
+tentions
+
+FIELD: Legislative branch:
+DATA : bicameral legislature consists of the Federal Council or Bundesrat (=
+69 votes; state governments sit in the Council; each has three to six votes=
+ in proportion to population and is required to vote as a block) and the Fe=
+deral Parliament or Bundestag (630 seats; members elected by popular vote f=
+or a four-year term under a system of personalized proportional representat=
+ion; a party must win 5% of the national vote or three direct mandates to g=
+ain proportional representation and caucus recognition)
+CAT  : elections
+DATA : Bundestag - last held on 22 September 2013 (next to be held no later=
+ than autumn 2017); most all postwar German governments have been coalition=
+s; note - there are no elections for the Bundesrat; composition is determin=
+ed by the composition of the state-level governments; the composition of th=
+e Bundesrat has the potential to change any time one of the 16 states holds=
+ an election
+CAT  : election results
+DATA : Bundestag - percent of vote by party - CDU/CSU 41.5%, SPD 25.7%, Lef=
+t 8.6%, Greens 8.4%, FDP 4.8%, other 10.9%; seats by party - CDU/CSU 311, S=
+PD 193, Left 64, Greens 63
+
+FIELD: Judicial branch:
+CAT  : highest court(s)
+DATA : Federal Court of Justice (court consists of 127 judges including the=
+ court president, vice-presidents, presiding judges, and other judges, and =
+organized into 25 Senates subdivided into 12 civil panels, 5 criminal panel=
+s, and 8 special panels; Federal Constitutional Court or Bundesverfassungsg=
+ericht (consists of 2 Senates each subdivided into 3 chambers, each with a =
+chairman and 8 members)
+CAT  : judge selection and term of office
+DATA : Federal Court of Justice judges selected by the Judges Election Comm=
+ittee, which consists of the Secretaries of Justice from each of the 16 fed=
+erated States and 16 members appointed by the Federal Parliament; judges ap=
+pointed by the president of Germany; judges serve until mandatory retiremen=
+t at age 65; Federal Constitutional Court judges - one-half elected by the =
+House of Representatives and one-half by the Senate; judges appointed for 1=
+2-year terms with mandatory retirement at age 68
+CAT  : subordinate courts
+DATA : Federal Administrative Court; Federal Finance Court; Federal Labor C=
+ourt; Federal Social Court; each of the 16 German states or Land has its ow=
+n constitutional court and a hierarchy of ordinary (civil, criminal, family=
+) and specialized (administrative, finance, labor, social) courts
+
+FIELD: Political parties and leaders:
+DATA : Alliance '90/Greens [Cem OEZDEMIR and Simone PETER]
+DATA : Christian Democratic Union or CDU [Angela MERKEL]
+DATA : Christian Social Union or CSU [Horst SEEHOFER]
+DATA : Free Democratic Party or FDP [Christian LINDNER]
+DATA : Left Party or Die Linke [Katia KIPPING and Bernd RIEXINGER]
+DATA : Social Democratic Party or SPD [Sigmar GABRIEL]
+
+FIELD: Political pressure groups and leaders:
+DATA : business associations and employers' organizations
+DATA : trade unions; religious, immigrant, expellee, and veterans groups
+
+FIELD: International organization participation:
+DATA : ADB (nonregional member), AfDB (nonregional member), Arctic Council =
+(observer), Australia Group, BIS, BSEC (observer), CBSS, CD, CDB, CE, CERN,=
+ EAPC, EBRD, ECB, EIB, EITI (implementing country), EMU, ESA, EU, FAO, FATF=
+, G-20, G-5, G-7, G-8, G-10, IADB, IAEA, IBRD, ICAO, ICC (national committe=
+es), ICRM, IDA, IEA, IFAD, IFC, IFRCS, IGAD (partners), IHO, ILO, IMF, IMO,=
+ IMSO, Interpol, IOC, IOM, IPU, ISO, ITSO, ITU, ITUC (NGOs), MIGA, MINUSMA,=
+ NATO, NEA, NSG, OAS (observer), OECD, OPCW, OSCE, Pacific Alliance (observ=
+er), Paris Club, PCA, Schengen Convention, SELEC (observer), SICA (observer=
+), UN, UNAMID, UNCTAD, UNESCO, UNHCR, UNIDO, UNIFIL, UNMIL, UNMISS, UNRWA, =
+UNWTO, UPU, WCO, WHO, WIPO, WMO, WTO, ZC
+
+FIELD: Diplomatic representation in the US:
+CAT  : chief of mission
+DATA : Ambassador Hans Peter WITTIG (since 21 May 2014)
+CAT  : chancery
+DATA : 2300 M Street NW, Washington, DC 20037
+CAT  : telephone
+DATA : [1] (202) 298-4000
+CAT  : FAX
+DATA : [1] (202) 298-4261
+CAT  : consulate(s) general
+DATA : Atlanta, Boston, Chicago, Houston, Los Angeles, Miami, New York, San=
+ Francisco
+
+FIELD: Diplomatic representation from the US:
+CAT  : chief of mission
+DATA : Ambassador John B. EMERSON (since 7 August 2013)
+CAT  : embassy
+DATA : Pariser Platz 2, 10117 Berlin
+CAT  : mailing address
+DATA : Unit 5090, Box 1000, DPO AE09265
+CAT  : telephone
+DATA : [49] (30) 48305-0
+CAT  : FAX
+DATA : [49] (30) 8305-1215
+CAT  : consulate(s) general
+DATA : Duesseldorf, Frankfurt am Main, Hamburg, Leipzig, Munich
+
+FIELD: Flag description:
+DATA : three equal horizontal bands of black (top), red, and gold; these co=
+lors have played an important role in German history and can be traced back=
+ to the medieval banner of the Holy Roman Emperor - a black eagle with red =
+claws and beak on a gold field
+
+FIELD: National symbol(s):
+DATA : golden eagle
+
+FIELD: National anthem:
+CAT  : name
+DATA : "Das Lied der Deutschen" (Song of the Germans)
+CAT  : lyrics/music
+DATA : August Heinrich HOFFMANN VON FALLERSLEBEN/Franz Joseph HAYDN
+CAT  : note
+DATA : adopted 1922; the anthem, also known as "Deutschlandlied" (Song of G=
+ermany), was originally adopted for its connection to the March 1848 libera=
+l revolution; following appropriation by the Nazis of the first verse, spec=
+ifically the phrase, "Deutschland, Deutschland ueber alles" (Germany, Germa=
+ny above all) to promote nationalism, it was banned after 1945; in 1952, it=
+s third verse was adopted by West Germany as its national anthem; in 1990, =
+it became the national anthem for the reunited Germany
+
+----------------------------------------
+
+SECT : Economy ::Germany
+
+FIELD: Economy - overview:
+DATA : The German economy - the fifth largest economy in the world in PPP t=
+erms and Europe's largest - is a leading exporter of machinery, vehicles, c=
+hemicals, and household equipment and benefits from a highly skilled labor =
+force. Like its Western European neighbors, Germany faces significant demog=
+raphic challenges to sustained long-term growth. Low fertility rates and de=
+clining net immigration are increasing pressure on the country's social wel=
+fare system and necessitate structural reforms. Reforms launched by the gov=
+ernment of Chancellor Gerhard SCHROEDER (1998-2005), deemed necessary to ad=
+dress chronically high unemployment and low average growth, has contributed=
+ to strong growth and falling unemployment. These advances, as well as a go=
+vernment subsidized, reduced working hour scheme, help explain the relative=
+ly modest increase in unemployment during the 2008-09 recession - the deepe=
+st since World War II - and its decrease to 5.3% in 2013. The new German go=
+vernment introduced a minimum wage of $11 per hour to take effect in 2015. =
+Stimulus and stabilization efforts initiated in 2008 and 2009 and tax cuts =
+introduced in Chancellor Angela MERKEL's second term increased Germany's to=
+tal budget deficit - including federal, state, and municipal - to 4.1% in 2=
+010, but slower spending and higher tax revenues reduced the deficit to 0.8=
+% in 2011 and in 2012 Germany reached a budget surplus of 0.1%. A constitut=
+ional amendment approved in 2009 limits the federal government to structura=
+l deficits of no more than 0.35% of GDP per annum as of 2016 though the tar=
+get was already reached in 2012. Following the March 2011 Fukushima nuclear=
+ disaster, Chancellor Angela MERKEL announced in May 2011 that eight of the=
+ country's 17 nuclear reactors would be shut down immediately and the remai=
+ning plants would close by 2022. Germany hopes to replace nuclear power wit=
+h renewable energy. Before the shutdown of the eight reactors, Germany reli=
+ed on nuclear power for 23% of its electricity generating capacity and 46% =
+of its base-load electricity production.
+
+FIELD: GDP (purchasing power parity):
+DATA : $3.227 trillion (2013 est.)
+DATA : $3.211 trillion (2012 est.)
+DATA : $3.182 trillion (2011 est.)
+CAT  : note
+DATA : data are in 2013 US dollars
+
+FIELD: GDP (official exchange rate):
+DATA : $3.593 trillion (2013 est.)
+
+FIELD: GDP - real growth rate:
+DATA : 0.5% (2013 est.)
+DATA : 0.9% (2012 est.)
+DATA : 3.4% (2011 est.)
+
+FIELD: GDP - per capita (PPP):
+DATA : $39,500 (2013 est.)
+DATA : $39,200 (2012 est.)
+DATA : $38,900 (2011 est.)
+CAT  : note
+DATA : data are in 2013 US dollars
+
+FIELD: Gross national saving:
+DATA : 24.7% of GDP (2013 est.)
+DATA : 24.3% of GDP (2012 est.)
+DATA : 24.4% of GDP (2011 est.)
+
+FIELD: GDP - composition, by end use:
+CAT  : household consumption
+DATA : 57.6%
+CAT  : government consumption
+DATA : 19.4%
+CAT  : investment in fixed capital
+DATA : 17.5%
+CAT  : investment in inventories
+DATA : 0.1%
+CAT  : exports of goods and services
+DATA : 49.5%
+CAT  : imports of goods and services
+DATA : -44.1%
+DATA : (2013 est.)
+
+FIELD: GDP - composition, by sector of origin:
+CAT  : agriculture
+DATA : 0.8%
+CAT  : industry
+DATA : 30.1%
+CAT  : services
+DATA : 69%
+DATA : (2013 est.)
+
+FIELD: Agriculture - products:
+DATA : potatoes, wheat, barley, sugar beets, fruit, cabbages; milk products=
+; cattle, pigs, poultry
+
+FIELD: Industries:
+DATA : among the world's largest and most technologically advanced producer=
+s of iron, steel, coal, cement, chemicals, machinery, vehicles, machine too=
+ls, electronics, automobiles, food and beverages, shipbuilding, textiles
+
+FIELD: Industrial production growth rate:
+DATA : -0.3% (2013 est.)
+
+FIELD: Labor force:
+DATA : 44.2 million (2013 est.)
+
+FIELD: Labor force - by occupation:
+CAT  : agriculture
+DATA : 1.6%
+CAT  : industry
+DATA : 24.6%
+CAT  : services
+DATA : 73.8%
+DATA : (2011)
+
+FIELD: Unemployment rate:
+DATA : 5.3% (2013 est.)
+DATA : 5.5% (2012 est.)
+
+FIELD: Population below poverty line:
+DATA : 15.5% (2010 est.)
+
+FIELD: Household income or consumption by percentage share:
+CAT  : lowest 10%
+DATA : 3.6%
+CAT  : highest 10%
+DATA : 24% (2000)
+
+FIELD: Distribution of family income - Gini index:
+DATA : 27 (2006)
+DATA : 30 (1994)
+
+FIELD: Budget:
+CAT  : revenues
+DATA : $1.626 trillion
+CAT  : expenditures
+DATA : $1.624 trillion (2013 est.)
+
+FIELD: Taxes and other revenues:
+DATA : 45.3% of GDP (2013 est.)
+
+FIELD: Budget surplus (+) or deficit (-):
+DATA : 0.1% of GDP (2013 est.)
+
+FIELD: Public debt:
+DATA : 79.9% of GDP (2013 est.)
+DATA : 81% of GDP (2012 est.)
+CAT  : note
+DATA : general government gross debt is defined in the Maastricht Treaty as=
+ consolidated general government gross debt at nominal value, outstanding a=
+t the end of the year in the following categories of government liabilities=
+ (as defined in ESA95): currency and deposits (AF.2), securities other than=
+ shares excluding financial derivatives (AF.3, excluding AF.34), and loans =
+(AF.4); the general government sector comprises the sub-sectors of central =
+government, state government, local government and social security funds; t=
+he series are presented as a percentage of GDP and in millions of euro; GDP=
+ used as a denominator is the gross domestic product at current market pric=
+es; data expressed in national currency are converted into euro using end-o=
+f-year exchange rates provided by the European Central Bank
+
+FIELD: Fiscal year:
+DATA : calendar year
+
+FIELD: Inflation rate (consumer prices):
+DATA : 1.6% (2013 est.)
+DATA : 2.1% (2012 est.)
+
+FIELD: Central bank discount rate:
+DATA : 0.75% (31 December 2013)
+DATA : 1.5% (31 December 2010)
+CAT  : note
+DATA : this is the European Central Bank's rate on the marginal lending fac=
+ility, which offers overnight credit to banks in the euro area
+
+FIELD: Commercial bank prime lending rate:
+DATA : 2.8% (31 December 2013 est.)
+DATA : 3.07% (31 December 2012 est.)
+
+FIELD: Stock of narrow money:
+DATA : $2.158 trillion (31 December 2013 est.)
+DATA : $2.025 trillion (31 December 2012 est.)
+CAT  : note
+DATA : see entry for the European Union for money supply in the euro area; =
+the European Central Bank (ECB) controls monetary policy for the 17 members=
+ of the Economic and Monetary Union (EMU); individual members of the EMU do=
+ not control the quantity of money circulating within their own borders
+
+FIELD: Stock of broad money:
+DATA : $4.551 trillion (31 December 2013 est.)
+DATA : $4.342 trillion (31 December 2012 est.)
+
+FIELD: Stock of domestic credit:
+DATA : $4.457 trillion (31 December 2013 est.)
+DATA : $4.277 trillion (31 December 2012 est.)
+
+FIELD: Market value of publicly traded shares:
+DATA : $1.486 trillion (31 December 2012 est.)
+DATA : $1.184 trillion (31 December 2011)
+DATA : $1.43 trillion (31 December 2010 est.)
+
+FIELD: Current account balance:
+DATA : $257.1 billion (2013 est.)
+DATA : $238.5 billion (2012 est.)
+
+FIELD: Exports:
+DATA : $1.493 trillion (2013 est.)
+DATA : $1.46 trillion (2012 est.)
+
+FIELD: Exports - commodities:
+DATA : motor vehicles, machinery, chemicals, computer and electronic produc=
+ts, electrical equipment, pharmaceuticals, metals, transport equipment, foo=
+dstuffs, textiles, rubber and plastic products
+
+FIELD: Exports - partners:
+DATA : France 9.21%, United States 7.85%, United Kingdom 6.53%, Netherlands=
+ 6.33%, China 5.91%, Italy 5.05%, Austria 5.03%, Switzerland 4.3%, Belgium =
+4.04% (2013 est.)
+
+FIELD: Imports:
+DATA : $1.233 trillion (2013 est.)
+DATA : $1.222 trillion (2012 est.)
+
+FIELD: Imports - commodities:
+DATA : machinery, data processing equipment, vehicles, chemicals, oil and g=
+as, metals, electric equipment, pharmaceuticals, foodstuffs, agricultural p=
+roducts
+
+FIELD: Imports - partners:
+DATA : Netherlands 12.88%, France 7.61%, China 6.25%, Belgium 6.13%, Italy =
+5.31%, United Kingdom 4.61%, Austria 4.33%, United States 4.19%, Switzerlan=
+d 4.3%, Austria 4.1%, Poland 4% (2013 est.)
+
+FIELD: Reserves of foreign exchange and gold:
+DATA : $248.9 billion (31 December 2012 est.)
+DATA : $238.9 billion (31 December 2011 est.)
+
+FIELD: Debt - external:
+DATA : $5.717 trillion (31 December 2012 est.)
+DATA : $5.338 trillion (31 December 2011)
+
+FIELD: Stock of direct foreign investment - at home:
+DATA : $1.335 trillion (31 December 2013 est.)
+DATA : $1.307 trillion (31 December 2012 est.)
+
+FIELD: Stock of direct foreign investment - abroad:
+DATA : $1.871 trillion (31 December 2013 est.)
+DATA : $1.788 trillion (31 December 2012 est.)
+
+FIELD: Exchange rates:
+DATA : euros (EUR) per US dollar -
+DATA : 0.7634 (2013 est.)
+DATA : 0.7752 (2012 est.)
+DATA : 0.755 (2010 est.)
+DATA : 0.7198 (2009 est.)
+DATA : 0.6827 (2008 est.)
+
+----------------------------------------
+
+SECT : Energy ::Germany
+
+FIELD: Electricity - production:
+DATA : 526.6 billion kWh (2012 est.)
+
+FIELD: Electricity - consumption:
+DATA : 582.5 billion kWh (2012 est.)
+
+FIELD: Electricity - exports:
+DATA : 66.81 billion kWh (2012 est.)
+
+FIELD: Electricity - imports:
+DATA : 46.27 billion kWh (2012 est.)
+
+FIELD: Electricity - installed generating capacity:
+DATA : 178.4 million kW (2012 est.)
+
+FIELD: Electricity - from fossil fuels:
+DATA : 51% of total installed capacity (2012 est.)
+
+FIELD: Electricity - from nuclear fuels:
+DATA : 7% of total installed capacity (2012 est.)
+
+FIELD: Electricity - from hydroelectric plants:
+DATA : 6% of total installed capacity (2012 est.)
+
+FIELD: Electricity - from other renewable sources:
+DATA : 36% of total installed capacity (2012 est.)
+
+FIELD: Crude oil - production:
+DATA : 169,500 bbl/day (2012 est.)
+
+FIELD: Crude oil - exports:
+DATA : 14,260 bbl/day (2010 est.)
+
+FIELD: Crude oil - imports:
+DATA : 1.876 million bbl/day (2010 est.)
+
+FIELD: Crude oil - proved reserves:
+DATA : 254.2 million bbl (1 January 2013 est.)
+
+FIELD: Refined petroleum products - production:
+DATA : 2.198 million bbl/day (2010 est.)
+
+FIELD: Refined petroleum products - consumption:
+DATA : 2.4 million bbl/day (2011 est.)
+
+FIELD: Refined petroleum products - exports:
+DATA : 376,600 bbl/day (2010 est.)
+
+FIELD: Refined petroleum products - imports:
+DATA : 758,100 bbl/day (2010 est.)
+
+FIELD: Natural gas - production:
+DATA : 9 billion cu m (2012 est.)
+
+FIELD: Natural gas - consumption:
+DATA : 75.2 billion cu m (2012 est.)
+
+FIELD: Natural gas - exports:
+DATA : 18.17 billion cu m (2012 est.)
+
+FIELD: Natural gas - imports:
+DATA : 87.96 billion cu m (2012 est.)
+
+FIELD: Natural gas - proved reserves:
+DATA : 125 billion cu m (1 January 2013 est.)
+
+FIELD: Carbon dioxide emissions from consumption of energy:
+DATA : 814 million Mt (2012 est.)
+
+----------------------------------------
+
+SECT : Communications ::Germany
+
+FIELD: Telephones - main lines in use:
+DATA : 50.7 million (2012)
+
+FIELD: Telephones - mobile cellular:
+DATA : 107.7 million (2012)
+
+FIELD: Telephone system:
+CAT  : general assessment
+DATA : Germany has one of the world's most technologically advanced telecom=
+munications systems; as a result of intensive capital expenditures since re=
+unification, the formerly backward system of the eastern part of the countr=
+y, dating back to World War II, has been modernized and integrated with tha=
+t of the western part
+CAT  : domestic
+DATA : Germany is served by an extensive system of automatic telephone exch=
+anges connected by modern networks of fiber-optic cable, coaxial cable, mic=
+rowave radio relay, and a domestic satellite system; cellular telephone ser=
+vice is widely available, expanding rapidly, and includes roaming service t=
+o many foreign countries
+CAT  : international
+DATA : country code - 49; Germany's international service is excellent worl=
+dwide, consisting of extensive land and undersea cable facilities as well a=
+s earth stations in the Inmarsat, Intelsat, Eutelsat, and Intersputnik sate=
+llite systems (2011)
+
+FIELD: Broadcast media:
+DATA : a mixture of publicly operated and privately owned TV and radio stat=
+ions; national and regional public broadcasters compete with nearly 400 pri=
+vately owned national and regional TV stations; more than 90% of households=
+ have cable or satellite TV; hundreds of radio stations including multiple =
+national radio networks, regional radio networks, and a large number of loc=
+al radio stations (2008)
+
+FIELD: Internet country code:
+DATA : .de
+
+FIELD: Internet hosts:
+DATA : 20.043 million (2012)
+
+FIELD: Internet users:
+DATA : 65.125 million (2009)
+
+----------------------------------------
+
+SECT : Transportation ::Germany
+
+FIELD: Airports:
+DATA : 539 (2013)
+
+FIELD: Airports - with paved runways:
+CAT  : total
+DATA : 318
+CAT  : over 3,047 m
+DATA : 14
+CAT  : 2,438 to 3,047 m
+DATA : 49
+CAT  : 1,524 to 2,437 m
+DATA : 60
+CAT  : 914 to 1,523 m
+DATA : 70
+CAT  : under 914 m
+DATA : 125 (2013)
+
+FIELD: Airports - with unpaved runways:
+CAT  : total
+DATA : 221
+CAT  : 1,524 to 2,437 m
+DATA : 1
+CAT  : 914 to 1,523 m
+DATA : 35
+CAT  : under 914 m
+DATA : 185 (2013)
+
+FIELD: Heliports:
+DATA : 23 (2013)
+
+FIELD: Pipelines:
+DATA : condensate 37 km; gas 26,985 km; oil 2,826 km; refined products 4,47=
+9 km; water 8 km (2013)
+
+FIELD: Railways:
+CAT  : total
+DATA : 41,981 km
+CAT  : standard gauge
+DATA : 41,722 km 1.435-m gauge (20,053 km electrified)
+CAT  : narrow gauge
+DATA : 220 km 1.000-m gauge (75 km electrified); 39 km 0.750-m gauge (24 km=
+ electrified) (2008)
+
+FIELD: Roadways:
+CAT  : total
+DATA : 645,000 km
+CAT  : paved
+DATA : 645,000 km (includes 12,800 km of expressways)
+CAT  : note
+DATA : includes local roads (2010)
+
+FIELD: Waterways:
+DATA : 7,467 km (Rhine River carries most goods; Main-Danube Canal links No=
+rth Sea and Black Sea) (2012)
+
+FIELD: Merchant marine:
+CAT  : total
+DATA : 427
+CAT  : by type
+DATA : barge carrier 2, bulk carrier 6, cargo 51, carrier 1, chemical tanke=
+r 15, container 298, liquefied gas 6, passenger 4, passenger/cargo 24, petr=
+oleum tanker 10, refrigerated cargo 3, roll on/roll off 6, vehicle carrier =
+1
+CAT  : foreign-owned
+DATA : 6 (Finland 3, Netherlands 1, Switzerland 2)
+CAT  : registered in other countries
+DATA : 3,420 (Antigua and Barbuda 1094, Australia 2, Bahamas 30, Bermuda 14=
+, Brazil 6, Bulgaria 12, Burma 1, Cayman Islands 3, Cook Islands 1, Curacao=
+ 25, Cyprus 192, Denmark 9, Dominica 5, Estonia 1, France 1, Gibraltar 123,=
+ Hong Kong 10, Isle of Man 56, Jamaica 10, Liberia 1185, Luxembourg 9, Malt=
+a 135, Marshall Islands 248, Morocco 1, Netherlands 86, NZ 2, Panama 24, Pa=
+pua New Guinea 1, Philippines 2, Portugal 14, Saint Vincent and the Grenadi=
+nes 3, Singapore 32, Slovakia 3, Spain 4, Sri Lanka 8, Sweden 3, UK 59, US =
+5, Venezuela 1) (2010)
+
+FIELD: Ports and terminals:
+CAT  : major seaport(s)
+DATA : Baltic Sea - Rostock; North Sea - Wilhelmshaven
+CAT  : river port(s)
+DATA : Bremen (Weser); Bremerhaven (Geeste); Duisburg, Karlsruhe, Neuss-Dus=
+seldorf (Rhine); Brunsbuttel, Hamburg (Elbe); Lubeck (Wakenitz)
+CAT  : oil/gas terminal(s)
+DATA : Brunsbuttel Canal terminals
+CAT  : container port(s)
+DATA : Bremen/Bremerhaven (5,915,487), Hamburg (9,014,165)(2011)
+
+----------------------------------------
+
+SECT : Military ::Germany
+
+FIELD: Military branches:
+DATA : Federal Armed Forces (Bundeswehr): Army (Heer); Navy (Deutsche Marin=
+e, includes naval air arm); Air Force (Luftwaffe); Joint Support Services (=
+Streitkraeftebasis, SKB); Central Medical Service (Zentraler Sanitaetsdiens=
+t, ZSanDstBw) (2013)
+
+FIELD: Military service age and obligation:
+DATA : 17-23 years of age for male and female voluntary military service; c=
+onscription ended 1 July 2011; service obligation 8-23 months or 12 years; =
+women have been eligible for voluntary service in all military branches and=
+ positions since 2001 (2013)
+
+FIELD: Manpower available for military service:
+CAT  : males age 16-49
+DATA : 18,529,299
+CAT  : females age 16-49
+DATA : 17,888,543 (2010 est.)
+
+FIELD: Manpower fit for military service:
+CAT  : males age 16-49
+DATA : 15,027,886
+CAT  : females age 16-49
+DATA : 14,510,527 (2010 est.)
+
+FIELD: Manpower reaching militarily significant age annually:
+CAT  : male
+DATA : 405,438
+CAT  : female
+DATA : 384,930 (2010 est.)
+
+FIELD: Military expenditures:
+DATA : 1.35% of GDP (2012)
+DATA : 1.34% of GDP (2011)
+DATA : 1.35% of GDP (2010)
+
+----------------------------------------
+
+SECT : Transnational Issues ::Germany
+
+FIELD: Disputes - international:
+DATA : none
+
+FIELD: Refugees and internally displaced persons:
+CAT  : refugees (country of origin)
+DATA : 40,230 (Iraq); 24,449 (Turkey); 24,203 (Afghanistan); 21,253 (Syria)=
+; 17,150 (Iran); 8,410 (Serbia) (2013)
+CAT  : stateless persons
+DATA : 5,683 (2012)
+
+FIELD: Illicit drugs:
+DATA : source of precursor chemicals for South American cocaine processors;=
+ transshipment point for and consumer of Southwest Asian heroin, Latin Amer=
+ican cocaine, and European-produced synthetic drugs; major financial center
+
+------=_Part_225_1825028070.1411130450174--
+

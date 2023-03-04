@@ -1,0 +1,85 @@
+From 1014688120832@xxx Tue Jun 16 00:17:05 +0000 2015
+X-GM-THRID: 889315131392
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,2bead3678bdf8975
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.14.1.129 with SMTP id 1mr656471eed.1.1401813053153;
+        Tue, 03 Jun 2014 09:30:53 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.77.35 with SMTP id p3ls136033wiw.25.canary; Tue, 03 Jun
+ 2014 09:30:52 -0700 (PDT)
+X-Received: by 10.15.35.134 with SMTP id g6mr656106eev.3.1401813052791;
+        Tue, 03 Jun 2014 09:30:52 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-we0-x232.google.com (mail-we0-x232.google.com [2a00:1450:400c:c03::232])
+        by gmr-mx.google.com with ESMTPS id gz10si556138wib.0.2014.06.03.09.30.52
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 03 Jun 2014 09:30:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::232 as permitted sender) client-ip=2a00:1450:400c:c03::232;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c03::232 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-we0-f178.google.com with SMTP id u56so7142095wes.9
+        for <opensport@googlegroups.com>; Tue, 03 Jun 2014 09:30:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=FWUZ5SPGnqfqa9/t5p1wtICT0FTYijS98YTynJEzKeI=;
+        b=dN+MisAzlZHr+9IojZYtgycgSiKLba/PTzhqFI8IXaCOO0sNoyakmQIauLgiPiTJ41
+         /AH2xb9OJjxT5qQXsa3qyl/k5FlT38M2s2SaT72Q7pLctKlwgsrBPwL8u41RQAjAGsBB
+         87lsGiH3v7mKqNx53/On5fc6lg4Z6IJao6A1xHpJWTAyQUaakcWowsN3MWJR0sucWNc6
+         Kz8vs5lYtjQ2kUggH0C2S57PI2YYwOKjWnF3ILB3CsDacpj9CVFGtf3nYHhptCtHPU8m
+         6McEBWGM4UJhCzrlX05ejvSTJ3p3s6OvdSePOm3LYO6e+i43EH4hOGAkj9hn1fJmtCEg
+         pd8A==
+MIME-Version: 1.0
+X-Received: by 10.194.220.42 with SMTP id pt10mr62702565wjc.60.1401813052685;
+ Tue, 03 Jun 2014 09:30:52 -0700 (PDT)
+Received: by 10.216.243.74 with HTTP; Tue, 3 Jun 2014 09:30:52 -0700 (PDT)
+In-Reply-To: <a5700a8c-ccca-4562-aa57-55d3d0257ebe@googlegroups.com>
+References: <e79618e9-fbe1-4fbd-90b7-5b87ab628ce3@googlegroups.com>
+	<a5700a8c-ccca-4562-aa57-55d3d0257ebe@googlegroups.com>
+Date: Tue, 3 Jun 2014 18:30:52 +0200
+Message-ID: <CAAxEZd8ibGBYz6C5RbycAC3Ze=1m6_6NTTqO9TDLcV6DybBVow@mail.gmail.com>
+Subject: Re: [opensport] Re: http://footballdb.herokuapp.com/api/v1/event/world.2014/round/1
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+  There is no limit calling the API. Note, the webapp runs on the
+Heroku free plan. If it will run out of dyna hours (I assume it will
+stop working until next month).
+
+  Note, the API is just a demo you're invited to host / run your own
+service. See the sport.db.api.starter[1] to get started. Cheers
+
+[1] github.com/geraldb/sport.db.api.starter
+
+2014-06-03 16:39 GMT+02:00 Brice Van=C3=A7on <vanconbrice@gmail.com>:
+> Another question ?
+> Is there a limit of call the API ?
+> Can I make a request every hour ?
+>
+>
+> Le vendredi 30 mai 2014 09:55:50 UTC+2, Brice Van=C3=A7on a =C3=A9crit :
+>>
+>> Hi,
+>>
+>> I'm trying to know what is the "score1ot" or "score1p" filed ?
+>> How do I know which team wons, in egality case ?
+>> Thanks
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+

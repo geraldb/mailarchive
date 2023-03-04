@@ -1,0 +1,124 @@
+From 6961905195132387328@xxx Thu May 13 22:27:47 +0000 2021
+X-GM-THRID: 6959446546034196480
+Date: Thu, 13 May 2021 15:27:46 -0700 (PDT)
+From: Jonathan Bergara <jonathan.bergara@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <8b05e2ac-5ad4-4752-8fb1-e53669bcc353n@googlegroups.com>
+In-Reply-To: <CAAxEZd-01Jv3LameYKS0y3oe3YGYrR2rN3nDv6Coh_VnABbfgg@mail.gmail.com>
+References: <eacebec8-d32b-4416-adc7-6c60af1e44d6n@googlegroups.com>
+ <CAAxEZd-01Jv3LameYKS0y3oe3YGYrR2rN3nDv6Coh_VnABbfgg@mail.gmail.com>
+Subject: Re: [opensport] Build World-Cups database
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_11040_1052383545.1620944866968"
+
+------=_Part_11040_1052383545.1620944866968
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_11041_622061229.1620944866968"
+
+------=_Part_11041_622061229.1620944866968
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Gerald, thanks for answering so quickly and sorry i couldn't get back to=
+=20
+you sooner.
+
+I was following the exact steps, no extra script or anything, just using=20
+the $ sportdb new worldcup command inside an empty directory.
+
+I got a somewhat working file that was the query to build the database but=
+=20
+not the content itself. Am i missing something? something that i should=20
+have installed and i didn't?
+
+El viernes, 7 de mayo de 2021 a las 5:40:33 UTC-3, Gerald Bauer escribi=C3=
+=B3:
+
+> Hello,
+>
+> Thanks for trying football.db.
+>
+>
+> > I've been trying for a few hours now to get the .db file for world-cups=
+=20
+> > but i always reach the same stage and error:
+>
+> I tried a fresh install via:
+>
+>    $ gem install sportdb
+>
+> And than a fresh build of the world cup datasets via:
+>
+>    $ sportdb new worldcup
+>
+> Sorry - it's working here. I haven't checked the data in details the stat=
+s=20
+> via:
+>
+>    $ sportdb stats
+>
+> read
+>
+>     {:adapter=3D>"sqlite3", :database=3D>"./sport.db"}
+>      1 leagues  /  21 seasons
+>      21 events (league+season recs)  /  211 rounds  /  117 groups  /  0=
+=20
+> stages
+>      84 teams
+>      900 matches
+>
+>
+> How are you building the datasets?
+> What command do you use? Are you using the same steps?
+>
+> Note: Sorry - for now you CANNOT update the datasets (that is, running th=
+e=20
+> build twice) - you=20
+> always have to start with a fresh database (and your updated datasets if=
+=20
+> desired).
+>
+>    Cheers. Prost.  =20
+>
+>
+>
+>
+------=_Part_11041_622061229.1620944866968
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div>Hi Gerald, thanks for answering so quickly and sorry i couldn't get ba=
+ck to you sooner.</div><div><br></div><div>I was following the exact steps,=
+ no extra script or anything, just using the $ sportdb new worldcup command=
+ inside an empty directory.</div><div><br></div><div>I got a somewhat worki=
+ng file that was the query to build the database but not the content itself=
+. Am i missing something? something that i should have installed and i didn=
+'t?<br></div><br><div class=3D"gmail_quote"><div dir=3D"auto" class=3D"gmai=
+l_attr">El viernes, 7 de mayo de 2021 a las 5:40:33 UTC-3, Gerald Bauer esc=
+ribi=C3=B3:<br/></div><blockquote class=3D"gmail_quote" style=3D"margin: 0 =
+0 0 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;"><=
+div dir=3D"ltr"><div dir=3D"ltr">Hello,</div><div dir=3D"ltr"><br></div>Tha=
+nks for trying football.db.</div><div dir=3D"ltr"><br><br>&gt; I&#39;ve bee=
+n trying for a few hours now to get the .db file for world-cups <br>&gt; bu=
+t i always reach the same stage and error:<br><br></div><div dir=3D"ltr">I =
+tried a fresh install via:<br><br>=C2=A0 =C2=A0$ gem install sportdb<br><br=
+>And than a fresh build of the world cup datasets via:<br><br>=C2=A0 =C2=A0=
+$ sportdb new worldcup<br><br>Sorry - it&#39;s working here. I haven&#39;t =
+checked the data in details the stats via:<br><br>=C2=A0 =C2=A0$ sportdb st=
+ats<br><br>read<br><br>=C2=A0 =C2=A0 {:adapter=3D&gt;&quot;sqlite3&quot;, :=
+database=3D&gt;&quot;./sport.db&quot;}<br>=C2=A0 =C2=A0 =C2=A01 leagues =C2=
+=A0/ =C2=A021 seasons<br>=C2=A0 =C2=A0 =C2=A021 events (league+season recs)=
+ =C2=A0/ =C2=A0211 rounds =C2=A0/ =C2=A0117 groups =C2=A0/ =C2=A00 stages<b=
+r>=C2=A0 =C2=A0 =C2=A084 teams<br>=C2=A0 =C2=A0 =C2=A0900 matches<br><br><b=
+r>How are you building the datasets?<br>What command do you use? Are you us=
+ing the same steps?<br><br>Note: Sorry - for now you CANNOT update the data=
+sets (that is, running the build twice) - you <br>always have to start with=
+ a fresh database (and your updated datasets if desired).<br><br><div dir=
+=3D"ltr">=C2=A0 =C2=A0Cheers. Prost.=C2=A0 =C2=A0</div><div dir=3D"ltr"><br=
+></div><div dir=3D"ltr"><br></div><div dir=3D"ltr"><br></div></div>
+</blockquote></div>
+------=_Part_11041_622061229.1620944866968--
+
+------=_Part_11040_1052383545.1620944866968--
+

@@ -1,0 +1,283 @@
+From 526354743296@xxx Tue Jun 16 00:17:18 +0000 2015
+X-GM-THRID: 252823207936
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,91274d0de1d6fc38
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.66.121.195 with SMTP id lm3mr3809851pab.24.1397706236710;
+        Wed, 16 Apr 2014 20:43:56 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.140.88.72 with SMTP id s66ls1003158qgd.11.gmail; Wed, 16 Apr
+ 2014 20:43:56 -0700 (PDT)
+X-Received: by 10.140.95.178 with SMTP id i47mr6765qge.10.1397706236399;
+        Wed, 16 Apr 2014 20:43:56 -0700 (PDT)
+X-Google-Doc-Id: ad2cd59f32151bae
+X-Google-Web-Client: true
+Date: Wed, 16 Apr 2014 20:43:55 -0700 (PDT)
+From: =?UTF-8?Q?Oriol_Franquesa_Cort=C3=A9s?= <ofranquesa@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <1c880598-c349-4655-a89d-70ca67100aaa@googlegroups.com>
+In-Reply-To: <76e0a3ad-e716-4f67-b4f5-3e96529131aa@googlegroups.com>
+References: <d7f4432d-8234-4fe2-9d86-ddb1405fa163@googlegroups.com>
+ <76e0a3ad-e716-4f67-b4f5-3e96529131aa@googlegroups.com>
+Subject: Re: A couple of questions...
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_267_31074596.1397706235948"
+X-Google-Token: EPubvZoFnywaslFfFEs0
+X-Google-IP: 187.113.193.205
+
+------=_Part_267_31074596.1397706235948
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_268_29559243.1397706235948"
+
+------=_Part_268_29559243.1397706235948
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Gerald, thanks for working on this.
+
+Looks like the problem was solved but something is wrong with the worlddb 
+tool. I get this mysql error:
+
+Mysql2::Error: Table 'football.props' doesn't exist: SHOW FULL FIELDS FROM 
+`props`
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:287:in 
+`query'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:287:in 
+`block in execute'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_adapter.rb:442:in 
+`block in log'
+
+/var/lib/gems/1.9.1/gems/activesupport-4.0.4/lib/active_support/notifications/instrumenter.rb:20:in 
+`instrument'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_adapter.rb:437:in 
+`log'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:287:in 
+`execute'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/mysql2_adapter.rb:222:in 
+`execute'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:301:in 
+`execute_and_free'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:462:in 
+`columns'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/schema_cache.rb:114:in 
+`block in prepare_default_proc'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/schema_cache.rb:56:in 
+`yield'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/schema_cache.rb:56:in 
+`default'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/schema_cache.rb:56:in 
+`columns'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/model_schema.rb:208:in 
+`columns'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/model_schema.rb:217:in 
+`columns_hash'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/inheritance.rb:176:in 
+`subclass_from_attributes?'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/inheritance.rb:23:in 
+`new'
+
+/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/validations.rb:39:in 
+`create!'
+
+/var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb.rb:85:in `create'
+
+/var/www/sportsdb/Rakefile:33:in `block in <top (required)>'
+
+/usr/lib/ruby/vendor_ruby/rake/task.rb:205:in `call'
+
+/usr/lib/ruby/vendor_ruby/rake/task.rb:205:in `block in execute'
+
+/usr/lib/ruby/vendor_ruby/rake/task.rb:200:in `each'
+
+/usr/lib/ruby/vendor_ruby/rake/task.rb:200:in `execute'
+
+/usr/lib/ruby/vendor_ruby/rake/task.rb:158:in `block in 
+invoke_with_call_chain'
+
+/usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+
+/usr/lib/ruby/vendor_ruby/rake/task.rb:151:in `invoke_with_call_chain'
+
+/usr/lib/ruby/vendor_ruby/rake/task.rb:144:in `invoke'
+
+/usr/lib/ruby/vendor_ruby/rake/application.rb:116:in `invoke_task'
+
+/usr/lib/ruby/vendor_ruby/rake/application.rb:94:in `block (2 levels) in 
+top_level'
+
+/usr/lib/ruby/vendor_ruby/rake/application.rb:94:in `each'
+
+/usr/lib/ruby/vendor_ruby/rake/application.rb:94:in `block in top_level'
+
+/usr/lib/ruby/vendor_ruby/rake/application.rb:133:in 
+`standard_exception_handling'
+
+/usr/lib/ruby/vendor_ruby/rake/application.rb:88:in `top_level'
+
+/usr/lib/ruby/vendor_ruby/rake/application.rb:66:in `block in run'
+
+/usr/lib/ruby/vendor_ruby/rake/application.rb:133:in 
+`standard_exception_handling'
+
+/usr/lib/ruby/vendor_ruby/rake/application.rb:63:in `run'
+
+/usr/bin/rake:27:in `<main>'
+
+Tasks: TOP => create
+
+
+Looks like is trying to access to the table before creating it... And this 
+came just executing this piece of script:
+
+
+task :env => BUILD_DIR do
+
+ require 'worlddb'
+
+ require 'sportdb'
+
+ require 'logutils/db'
+
+
+ LogUtils::Logger.root.level = :info
+
+
+ pp DB_CONFIG
+
+ ActiveRecord::Base.establish_connection( DB_CONFIG )
+
+end
+
+
+task :create => :env do
+
+  LogDb.create
+
+  WorldDb.create
+
+  SportDb.create
+
+end
+
+
+Do you have any idea about which could be the problem?
+
+On Tuesday, April 15, 2014 3:25:11 AM UTC-3, Gerald Bauer wrote:
+>
+> Hello Oriol,
+>
+> > The provided regular expression is using multiline anchors (^ or $), 
+> which may present a security risk. Did you mean to use \A and \z, or 
+> > forgot to add the :multiline => true option?
+>
+>   FYI: I've updated all gems to use /A/z anchors (instead of ^$) for model 
+> validations, that is, the new versions are:
+>  
+>  - worlddb v2.0.4
+>  - sportdb v1.8.13
+>  - tagutils v0.2.2
+>
+>    If you still get an exception for model format regexes after the 
+> update, it's now considered a bug and please report it. Thanks. Cheers.
+>
+
+------=_Part_268_29559243.1397706235948
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi Gerald, thanks for working on this.<div><br></div><div>Looks like the problem was solved but something is wrong with the worlddb tool. I get this mysql error:</div><div><br></div><div>
+
+
+
+
+
+
+
+<p class="p1">Mysql2::Error: Table 'football.props' doesn't exist: SHOW FULL FIELDS FROM `props`</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:287:in `query'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:287:in `block in execute'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_adapter.rb:442:in `block in log'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activesupport-4.0.4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_adapter.rb:437:in `log'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:287:in `execute'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/mysql2_adapter.rb:222:in `execute'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:301:in `execute_and_free'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:462:in `columns'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/schema_cache.rb:114:in `block in prepare_default_proc'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/schema_cache.rb:56:in `yield'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/schema_cache.rb:56:in `default'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/connection_adapters/schema_cache.rb:56:in `columns'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/model_schema.rb:208:in `columns'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/model_schema.rb:217:in `columns_hash'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/inheritance.rb:176:in `subclass_from_attributes?'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/inheritance.rb:23:in `new'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/activerecord-4.0.4/lib/active_record/validations.rb:39:in `create!'</p>
+<p class="p1">/var/lib/gems/1.9.1/gems/worlddb-2.0.4/lib/worlddb.rb:85:in `create'</p>
+<p class="p1">/var/www/sportsdb/Rakefile:33:in `block in &lt;top (required)&gt;'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/task.rb:205:in `call'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/task.rb:205:in `block in execute'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/task.rb:200:in `each'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/task.rb:200:in `execute'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/task.rb:158:in `block in invoke_with_call_chain'</p>
+<p class="p1">/usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/task.rb:151:in `invoke_with_call_chain'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/task.rb:144:in `invoke'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/application.rb:116:in `invoke_task'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/application.rb:94:in `block (2 levels) in top_level'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/application.rb:94:in `each'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/application.rb:94:in `block in top_level'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/application.rb:133:in `standard_exception_handling'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/application.rb:88:in `top_level'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/application.rb:66:in `block in run'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/application.rb:133:in `standard_exception_handling'</p>
+<p class="p1">/usr/lib/ruby/vendor_ruby/rake/application.rb:63:in `run'</p>
+<p class="p1">/usr/bin/rake:27:in `&lt;main&gt;'</p>
+<p class="p1">Tasks: TOP =&gt; create</p><p class="p1"><br></p><p class="p1">Looks like is trying to access to the table before creating it... And this came just executing this piece of script:</p><p class="p1"><br></p><p class="p1">task :env =&gt; BUILD_DIR do</p><p class="p1">&nbsp;require 'worlddb'</p><p class="p1">&nbsp;require 'sportdb'</p><p class="p1">&nbsp;require 'logutils/db'</p><p class="p2"><br></p><p class="p1">&nbsp;LogUtils::Logger.root.level = :info</p><p class="p2"><br></p><p class="p1">&nbsp;pp DB_CONFIG</p><p class="p1">&nbsp;ActiveRecord::Base.establish_connection( DB_CONFIG )</p><p class="p1">end</p><p class="p2"><br></p><p class="p1">task :create =&gt; :env do</p><p class="p1">&nbsp; LogDb.create</p><p class="p1">&nbsp; WorldDb.create</p><p class="p1">&nbsp; SportDb.create</p><p class="p1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="p1">end</p><p class="p1"><br></p><p class="p1">Do you have any idea about which could be the problem?</p><br>On Tuesday, April 15, 2014 3:25:11 AM UTC-3, Gerald Bauer wrote:<blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;"><div dir="ltr">Hello Oriol,<br><br>&gt; The provided regular expression is using multiline anchors (^ or $), 
+which may present a security risk. Did you mean to use \A and \z, or 
+<br>&gt; forgot to add the :multiline =&gt; true option?<br><br>&nbsp; FYI: I've updated all gems to use /A/z anchors (instead of ^$) for model validations, that is, the new versions are:<br>&nbsp;<br>&nbsp;- worlddb v2.0.4<br>&nbsp;- sportdb v1.8.13<br>&nbsp;- tagutils v0.2.2<br><br>&nbsp;&nbsp; If you still get an exception for model format regexes after the update, it's now considered a bug and please report it. Thanks. Cheers.<br></div></blockquote></div></div>
+------=_Part_268_29559243.1397706235948--
+
+------=_Part_267_31074596.1397706235948--
+

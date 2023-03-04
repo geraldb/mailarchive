@@ -1,0 +1,63 @@
+From 2515466715136@xxx Tue Jun 16 00:16:42 +0000 2015
+X-GM-THRID: 2513988222976
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,b207fcdca166b700,start
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.42.32.137 with SMTP id e9mr55228059icd.21.1426452383472;
+        Sun, 15 Mar 2015 13:46:23 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.51.18.97 with SMTP id gl1ls832306igd.40.gmail; Sun, 15 Mar
+ 2015 13:46:23 -0700 (PDT)
+X-Received: by 10.66.102.41 with SMTP id fl9mr26264144pab.7.1426452383039;
+        Sun, 15 Mar 2015 13:46:23 -0700 (PDT)
+Received: by 10.50.55.66 with SMTP id q2msigp;
+        Sun, 15 Mar 2015 13:03:16 -0700 (PDT)
+X-Received: by 10.140.20.84 with SMTP id 78mr894421qgi.31.1426449796389;
+        Sun, 15 Mar 2015 13:03:16 -0700 (PDT)
+X-Google-Web-Client: true
+Date: Sun, 15 Mar 2015 13:03:16 -0700 (PDT)
+From: Corneil du Plessis <corneil.duplessis@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <f613f935-42ed-407c-b7e3-549fdcecd8fc@googlegroups.com>
+Subject: Empty tables after build
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_269_1588585551.1426449796239"
+X-Google-Token: EITLl6gFaBtitGVwM540
+X-Google-IP: 105.237.150.56
+
+------=_Part_269_1588585551.1426449796239
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_270_1840656153.1426449796239"
+
+------=_Part_270_1840656153.1426449796239
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I tried doing a local build using build and build-shell.
+I tried worldcup and es but the schemas look the same and I end up with now 
+rows in assocs or assocs_assocs.
+There is no squad table and I can't find a way to link players to teams 
+playing matches.
+
+Versions:
+Ubuntu 14.10
+ruby 2.1.2p95
+rake 10.1.1
+gem 2.2.2
+
+Can anyone point me in the right direction.
+
+Regards
+Corneil
+
+
+------=_Part_270_1840656153.1426449796239
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">I tried doing a local build using build and build-shell.<div>I tried worldcup and es but the schemas look the same and I end up with now rows in assocs or assocs_assocs.<div>There is no squad table and I can't find a way to link players to teams playing matches.</div><div><br></div><div>Versions:</div><div>Ubuntu 14.10</div><div>ruby 2.1.2p95</div><div>rake 10.1.1</div><div>gem 2.2.2</div><div><br></div><div>Can anyone point me in the right direction.</div><div><br></div><div>Regards</div><div>Corneil</div><div><br></div></div></div>
+------=_Part_270_1840656153.1426449796239--
+------=_Part_269_1588585551.1426449796239--
+

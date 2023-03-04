@@ -1,0 +1,58 @@
+From 95762251776@xxx Sat Dec 20 19:01:39 +0000 2014
+X-GM-THRID: 97727283200
+X-Google-Groups: beerdb
+X-Google-Thread: 664da49694,adcc8673bd9431e,start
+X-Google-Attributes: gid664da49694,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.224.49.72 with SMTP id u8mr8661086qaf.3.1391888495456;
+        Sat, 08 Feb 2014 11:41:35 -0800 (PST)
+X-BeenThere: beerdb@googlegroups.com
+Received: by 10.50.79.138 with SMTP id j10ls1192121igx.12.canary; Sat, 08 Feb
+ 2014 11:41:35 -0800 (PST)
+X-Received: by 10.66.121.227 with SMTP id ln3mr5317994pab.34.1391888495166;
+        Sat, 08 Feb 2014 11:41:35 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-ve0-x229.google.com (mail-ve0-x229.google.com [2607:f8b0:400c:c01::229])
+        by gmr-mx.google.com with ESMTPS id c1si2119986vdv.0.2014.02.08.11.41.35
+        for <beerdb@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 08 Feb 2014 11:41:35 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c01::229 as permitted sender) client-ip=2607:f8b0:400c:c01::229;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:400c:c01::229 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ve0-f169.google.com with SMTP id oy12so3816536veb.14
+        for <beerdb@googlegroups.com>; Sat, 08 Feb 2014 11:41:35 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=KOSHO0Q0NTZyXiRkh3grsC/Voa0Pjv7PwpRiQxITIls=;
+        b=j4A511eg2RZsmCD1JrpmCzFEwibewkhVJ8U2Tcr4exsTXTRcRAm9ojRpiO85zT0I+k
+         T22ssq+0OWI9UxkIiMlqEc3dkfX7r5TcCQN3rSKgqRC6pCBCTz5mdfl2VCqjnzDvSjEy
+         N4Q0R7/ysF4vskHLuBpRdyXiS/qw0mh+3RDgCb9wM5ytWVYkT2Mkl4r5MJxAU3quj9KT
+         GrSuLqcdTn9KRFMyJWgFd+f9N/YEmtbIqXycxunEUy774IBS4qY6bWiBt9Gf7wEtnDBs
+         YashJfUvOuKdthTDfB77WPmMFFt0Thhy44ijaTXgaHBN4JhARAf3HXvGcXaysl3EP22A
+         V1JA==
+MIME-Version: 1.0
+X-Received: by 10.52.246.42 with SMTP id xt10mr13493429vdc.9.1391888494959;
+ Sat, 08 Feb 2014 11:41:34 -0800 (PST)
+Received: by 10.58.156.10 with HTTP; Sat, 8 Feb 2014 11:41:34 -0800 (PST)
+Date: Sat, 8 Feb 2014 13:41:34 -0600
+Message-ID: <CAAxEZd8UTv1839AKG=0ZPg7L9iJj89uidMDjG6CfFA2Y7a4j-Q@mail.gmail.com>
+Subject: The beer.db HTTP JSON API / Web Service Doku - New Site
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: beerdb@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello,
+
+  FYI: I've started to move the documentation for the beer.db HTTP
+JSON API (web service requests) to it's own repo and new home. See
+
+   - github.com/openbeer/api
+   - github.com/openbeer/api/blob/master/BEERS.md
+   - github.com/openbeer/api/blob/master/BREWERIES.md
+
+  Cheers.
+

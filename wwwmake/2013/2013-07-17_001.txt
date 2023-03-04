@@ -1,0 +1,115 @@
+From 1341886824448@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1320226390016
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,9b2a3cc0c80f2a0a
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.236.112.33 with SMTP id x21mr4354913yhg.57.1374088687374;
+        Wed, 17 Jul 2013 12:18:07 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.48.115 with SMTP id k19ls1121035qen.5.gmail; Wed, 17 Jul
+ 2013 12:18:07 -0700 (PDT)
+X-Received: by 10.49.40.167 with SMTP id y7mr413139qek.36.1374088687020;
+        Wed, 17 Jul 2013 12:18:07 -0700 (PDT)
+X-Google-Doc-Id: cdcc663d3998eac5
+X-Google-Web-Client: true
+Date: Wed, 17 Jul 2013 12:18:06 -0700 (PDT)
+From: Damon Overboe <damon.overboe@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <bdfc7e2d-29d7-4965-b988-ca168edc8ccb@googlegroups.com>
+In-Reply-To: <CAAxEZd885494zwWQZ00BxCmM0SROwQTuXEXAXVS7rNp2qofY5A@mail.gmail.com>
+References: <fa26f980-c786-4116-bc44-fee38766ef52@googlegroups.com>
+ <d803668f-5ad1-4afc-b5b5-ad49fdc12562@googlegroups.com>
+ <237a57b7-ed83-45dc-b721-2f1be0bcb7fd@googlegroups.com>
+ <CAAxEZd885494zwWQZ00BxCmM0SROwQTuXEXAXVS7rNp2qofY5A@mail.gmail.com>
+Subject: Re: [slideshow:307] Re: Failing to install on RedCloth?
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2_28830888.1374088686792"
+X-Google-Token: EO7bm48F3-MjJkh147s0
+X-Google-IP: 64.22.232.2
+
+------=_Part_2_28830888.1374088686792
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3_1190995.1374088686793"
+
+------=_Part_3_1190995.1374088686793
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+It made it further it seems but failed on `atomic` with a similar error.
+
+Is it possible or probable that there's something wrong with my ruby 
+environment?
+
+$ sudo gem install slideshow
+
+Fetching: gli-2.7.0.gem (100%)
+Fetching: slideshow-2.3.0.gem (100%)
+*** Tips on themes removed ***
+Fetching: kramdown-1.1.0.gem (100%)
+Fetching: i18n-0.6.4.gem (100%)
+Fetching: tzinfo-0.3.37.gem (100%)
+Fetching: minitest-4.7.5.gem (100%)
+Fetching: atomic-1.1.10.gem (100%)
+Building native extensions.  This could take a while...
+ERROR:  Error installing slideshow:
+    ERROR: Failed to build gem native extension.
+
+        /usr/bin/ruby1.9.1 extconf.rb
+/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': cannot load 
+such file -- mkmf (LoadError)
+    from /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+    from extconf.rb:13:in `<main>'
+
+
+Gem files will remain installed in /var/lib/gems/1.9.1/gems/atomic-1.1.10 
+for inspection.
+Results logged to /var/lib/gems/1.9.1/gems/atomic-1.1.10/ext/gem_make.out
+
+
+On Tuesday, July 16, 2013 4:35:39 PM UTC-5, Gerald Bauer wrote:
+>
+> Hello, 
+>
+>   No worries. I pushed a new slideshow version to Rubygems, that is, 
+> v2.3.0.  The RedCloth library is now optional. Let me know if it 
+> works. Cheers. 
+>
+
+------=_Part_3_1190995.1374088686793
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+It made it further it seems but failed on `atomic` with a similar error.<br=
+><br>Is it possible or probable that there's something wrong with my ruby e=
+nvironment?<br><br>$ sudo gem install slideshow<br><br>Fetching: gli-2.7.0.=
+gem (100%)<br>Fetching: slideshow-2.3.0.gem (100%)<br>*** Tips on themes re=
+moved ***<br>Fetching: kramdown-1.1.0.gem (100%)<br>Fetching: i18n-0.6.4.ge=
+m (100%)<br>Fetching: tzinfo-0.3.37.gem (100%)<br>Fetching: minitest-4.7.5.=
+gem (100%)<br>Fetching: atomic-1.1.10.gem (100%)<br>Building native extensi=
+ons.&nbsp; This could take a while...<br>ERROR:&nbsp; Error installing slid=
+eshow:<br>&nbsp;&nbsp;&nbsp; ERROR: Failed to build gem native extension.<b=
+r><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /usr/bin/ruby1.9.1 extconf=
+.rb<br>/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': cann=
+ot load such file -- mkmf (LoadError)<br>&nbsp;&nbsp;&nbsp; from /usr/lib/r=
+uby/1.9.1/rubygems/custom_require.rb:36:in `require'<br>&nbsp;&nbsp;&nbsp; =
+from extconf.rb:13:in `&lt;main&gt;'<br><br><br>Gem files will remain insta=
+lled in /var/lib/gems/1.9.1/gems/atomic-1.1.10 for inspection.<br>Results l=
+ogged to /var/lib/gems/1.9.1/gems/atomic-1.1.10/ext/gem_make.out<br><br><br=
+>On Tuesday, July 16, 2013 4:35:39 PM UTC-5, Gerald Bauer wrote:<blockquote=
+ class=3D"gmail_quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1=
+px #ccc solid;padding-left: 1ex;">Hello,
+<br>
+<br>&nbsp; No worries. I pushed a new slideshow version to Rubygems, that i=
+s,
+<br>v2.3.0. &nbsp;The RedCloth library is now optional. Let me know if it
+<br>works. Cheers.
+<br></blockquote>
+------=_Part_3_1190995.1374088686793--
+
+------=_Part_2_28830888.1374088686792--
+

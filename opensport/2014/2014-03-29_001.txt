@@ -1,0 +1,96 @@
+From 434286624768@xxx Tue Jun 16 00:17:15 +0000 2015
+X-GM-THRID: 431150333952
+X-Gmail-Labels: Topic type: DISCUSSION
+X-Google-Groups: opensport
+X-Google-Thread: 85742abb4e,662ff6e1b6639649
+X-Google-Attributes: gid85742abb4e,domainid0,public,googlegroup
+X-Google-NewGroupId: yes
+X-Received: by 10.112.145.162 with SMTP id sv2mr5532076lbb.15.1396077850816;
+        Sat, 29 Mar 2014 00:24:10 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.180.21.230 with SMTP id y6ls185738wie.30.gmail; Sat, 29 Mar
+ 2014 00:24:10 -0700 (PDT)
+X-Received: by 10.180.198.133 with SMTP id jc5mr544142wic.4.1396077850269;
+        Sat, 29 Mar 2014 00:24:10 -0700 (PDT)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-wi0-x230.google.com (mail-wi0-x230.google.com [2a00:1450:400c:c05::230])
+        by gmr-mx.google.com with ESMTPS id x2si297194wif.1.2014.03.29.00.24.09
+        for <opensport@googlegroups.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 29 Mar 2014 00:24:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::230 as permitted sender) client-ip=2a00:1450:400c:c05::230;
+Authentication-Results: gmr-mx.google.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:400c:c05::230 as permitted sender) smtp.mail=gerald.bauer@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wi0-f176.google.com with SMTP id r20so1494322wiv.9
+        for <opensport@googlegroups.com>; Sat, 29 Mar 2014 00:24:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=NjG/S38VF2bFvEiMigAmRaccWg9FmuGXA7vDujhr1yg=;
+        b=y5uPgSMIRpAPRMAZY6rOHye4nvHtt2HebvXhrhFM/gmGQPJP53zHiqS0rl4QPkDyZ/
+         8o9ErRK2waUFqcyfrYVyPdWx+SGkhwBx+yg+tKP+sDSvxqu+3BlGSJRboEX/7wcgFqMd
+         vNCfP1HgeR1H/PRyflVb8elv9mOenjWrgDGJ+hGha5pPTORpY7A9B94yHAOIS+pddIN4
+         uPpFyu9NFvtPhK8KHgglL6CRGQaoTmJ92tdJD780IxgagwmOWwPI2f8V2ptqVxaItIy8
+         Nnhnemc6GOl8H3DTpfV0/u92jsjJjYpNHXl5f4P354/cMTMfepRdEjY727qS3W+awtUd
+         WkTw==
+MIME-Version: 1.0
+X-Received: by 10.194.57.77 with SMTP id g13mr1166088wjq.42.1396077847695;
+ Sat, 29 Mar 2014 00:24:07 -0700 (PDT)
+Received: by 10.216.253.68 with HTTP; Sat, 29 Mar 2014 00:24:07 -0700 (PDT)
+In-Reply-To: <ac8d249f-41e4-4ce1-ad7f-a376370fadb8@googlegroups.com>
+References: <ac8d249f-41e4-4ce1-ad7f-a376370fadb8@googlegroups.com>
+Date: Sat, 29 Mar 2014 08:24:07 +0100
+Message-ID: <CAAxEZd_5Cv3Nkt1baygL2gW3N392am1aJZi4hHxxM3Dc+Z4J-A@mail.gmail.com>
+Subject: Re: [opensport] Champions League full data base
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello Yotam,
+
+  Maybe you can find something at the RSSSF (Rec.Sport.Soccer
+Statistics Foundation) archive [1]. I've started on an importer/reader
+for the Brazil RSSSF fixtures last year as an example how this might
+work [2].
+
+   The best source as always will likely be the Wikipedia. See the
+1955-56 European Cup page [3] as an example. You might start your own
+git repo and use the Wikipedia data (cut-n-paste, for example) and
+than cleanup the format for import w/ the sportdb command line tool
+for your SQL database of choice.  You can see an example for playoff
+fixtures [4] in the open football repo. Good luck.
+
+   You might also post your question on Stackexchange [5] or Reedit
+[6], for example.
+
+  Cheers.
+
+[1] www.rsssf.com/archive.html
+[2] github.com/geraldb/football.db.rsssf
+[3] en.wikipedia.org/wiki/1955-56_European_Cup
+[4] github.com/openfootball/europe-champions-league/blob/master/2012_13/cl_finals.txt
+[5] opendata.stackexchange.com
+[6] www.reddit.com/r/opendata
+
+2014-03-28 18:21 GMT+01:00  <yotamharuvi35@gmail.com>:
+> Hi all,
+> Gerald, many thanks for football.db in particular and for open source
+> initiatives in general!!!
+> I'm looking for a full log of all UEFA champions league knock out phase
+> matches since 1956, for a my statistic research, and can't find it in a
+> reasonable format.
+> Perhaps someone can direct to a full CL database?
+> Thx,
+> Yotam
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "Open Sport(s) Database - football.db, formula1.db, ski.db, and Friends"
+> group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to opensport+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/d/optout.
+

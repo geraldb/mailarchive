@@ -1,0 +1,49 @@
+From 332435292160@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 230668894208
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,62dcd4fef002a41c
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.223.104.19 with SMTP id m19mr321962fao.1.1232988742449;
+        Mon, 26 Jan 2009 08:52:22 -0800 (PST)
+Return-Path: <gerald@vanbeta.com>
+Received: from fg-out-1718.google.com ([172.21.88.26])
+        by mx.google.com with ESMTP id 5si3273650fge.14.2009.01.26.08.52.22;
+        Mon, 26 Jan 2009 08:52:22 -0800 (PST)
+Received-SPF: neutral (google.com: 172.21.88.26 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=172.21.88.26;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 172.21.88.26 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by fg-out-1718.google.com with SMTP id l26so3212492fgb.18
+        for <webslideshow@googlegroups.com>; Mon, 26 Jan 2009 08:52:22 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.181.145.7 with SMTP id x7mr1171813bkn.96.1232988741973; Mon, 
+	26 Jan 2009 08:52:21 -0800 (PST)
+In-Reply-To: <ee93dc59-38a3-40a5-9f44-242903870b99@z28g2000prd.googlegroups.com>
+References: <140cca6b-bca9-4743-a6f0-dd20e641cde1@v39g2000pro.googlegroups.com>
+	 <3a6a2b5d-5189-4e10-8a4d-4104524fa4b5@o4g2000pra.googlegroups.com>
+	 <a1c9be27-31c8-4704-a708-227163d989cd@y1g2000pra.googlegroups.com>
+	 <d39a1737-65cd-4366-a227-8c9dc4286080@r37g2000prr.googlegroups.com>
+	 <f76b2c12-23c1-4ed4-80ca-29d9abf8a484@33g2000yqm.googlegroups.com>
+	 <4b516795-001c-4eae-ae8a-b5f64ad57368@n2g2000vbl.googlegroups.com>
+	 <ee93dc59-38a3-40a5-9f44-242903870b99@z28g2000prd.googlegroups.com>
+Date: Mon, 26 Jan 2009 17:52:21 +0100
+Message-ID: <1f058eab0901260852h6298cd64l6e9864993b4f741@mail.gmail.com>
+Subject: Re: [slideshow] Re: S6 and SVG
+From: Gerald Bauer <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello Bruce,
+
+> Am running into a problem ...
+>>    slideshow -g        # generates a template package w/ manifest in
+>> your working folder (using the s6 package)
+>
+> When running the above, I get a missing file error:
+
+   Thanks for reporting the error. Not sure why it happens either. I
+try to find out more and upload a patch as soon as possible. I get the
+same error now in the Unix shell using Cygwin on a Windows box.
+
+   Cheers.
+

@@ -1,0 +1,110 @@
+From 546578628608@xxx Sun Jan 11 00:21:38 +0000 2015
+X-GM-THRID: 541888348160
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,6d425bbbfc6b9810
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII
+Received: by 10.204.31.103 with SMTP id x39mr128647bkc.17.1241857295764;
+        Sat, 09 May 2009 01:21:35 -0700 (PDT)
+Return-Path: <gerald@vanbeta.com>
+Received: from mail-fx0-f165.google.com (mail-fx0-f165.google.com [209.85.220.165])
+        by gmr-mx.google.com with ESMTP id 15si146914bwz.2.2009.05.09.01.21.35;
+        Sat, 09 May 2009 01:21:35 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.220.165 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) client-ip=209.85.220.165;
+Authentication-Results: gmr-mx.google.com; spf=neutral (google.com: 209.85.220.165 is neither permitted nor denied by best guess record for domain of gerald@vanbeta.com) smtp.mail=gerald@vanbeta.com
+Received: by fxm9 with SMTP id 9so1850573fxm.17
+        for <webslideshow@googlegroups.com>; Sat, 09 May 2009 01:21:35 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.204.115.139 with SMTP id i11mr4452076bkq.199.1241857294892; 
+	Sat, 09 May 2009 01:21:34 -0700 (PDT)
+In-Reply-To: <844eafa6-81cb-4d68-9f8e-b11e31846c03@e20g2000vbc.googlegroups.com>
+References: <844eafa6-81cb-4d68-9f8e-b11e31846c03@e20g2000vbc.googlegroups.com>
+Date: Sat, 9 May 2009 10:21:34 +0200
+Message-ID: <1f058eab0905090121o767d658bj72b9ce169ed66e2d@mail.gmail.com>
+Subject: Re: [slideshow] getting stepped lists working with markdown
+From: Gerald Bauer <gerald@vanbeta.com>
+To: webslideshow@googlegroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hello Matt,
+
+> My syntax of choice is markdown extended.
+
+  Slideshow supports Markdown syntax out-of-the-box. For now Slideshow
+uses the file extension to decide what markup syntax to use.  For now
+these extensions are configured for Markdown syntax: .markdown, .m,
+.mark, .mkdn, .md, .txt, .text
+
+   Also out-of-the-box Slideshow will only install the BlueCloth
+markdown engine (that has no extended syntax support). If you want to
+use a markdown engine with extended syntax Slideshow has support for
+alternative markdown engines (e.g. Maruku [1]) built-in. To use
+Maruku, for example, install it (e.g. gem install maruku) and
+Slideshow will use it instead of BlueCloth.
+
+   I have to admit I haven't tested/used the extended Maruku markdown
+syntax. If you try it, please let us know if it works as advertised.
+
+> I've been using the excellent pandoc by john macfarlane to produce
+> slides, but I'd rather use a ruby solution as I've got more experience
+> with it than Haskell.
+>
+> pandoc uses
+> > - item one
+> > - item two
+> for producing stepped lists. =A0see http://johnmacfarlane.net/pandoc/READ=
+ME.html#producing-s5-with-pandoc
+> I'm wondering if there is a way to get this working in slideshow as
+> well. =A0All of the examples seem to be very textile oriented.
+
+  Thanks for the link about the pandoc S5 syntax extension. For now
+Slideshow has no Slideshow-specific extensions for Textile or
+Markdown.
+
+  To get stepped lists working all that is needed in theory is getting
+a .step class added to the list item (e.g. <li class=3D'.step'>). Not
+sure what's the best or most widely used extension/way.
+
+> If there isn't, any suggestions about how I'd go about extending
+> slideshow to do this. =A0put some sort of wrapper on redcloth?
+
+   For now Slideshow has built-in support for helper extensions. See
+http://slideshow.rubyforge.org/plugins.html  That lets you create
+helpers such as:
+
+   <% steps do %>
+     <%=3D step  'item one' %>
+     <%=3D step  'item two' %>
+   <% end %>
+
+  Not really the best choice for wiki-markup syntax extensions.
+
+  I'd say the best way is to extend your Markdown engine/processor of
+choice and than plug it into Slideshow. Here's the current
+configuration:
+
+  KNOWN_MARKDOWN_LIBS =3D [
+    [ 'rdiscount',      lambda { |content| RDiscount.new( content ).to_html=
+ } ],
+    [ 'rpeg-markdown',  lambda { |content| PEGMarkdown.new( content
+).to_html } ],
+    [ 'maruku',         lambda { |content| Maruku.new( content,
+{:on_error =3D> :raise} ).to_html }  ],
+    [ 'bluecloth',      lambda { |content| BlueCloth.new( content ).to_html=
+ } ]
+  ]
+
+  I'd say all that's needed may be a new line such as:
+
+  [ 'mymarkdown',      lambda { |content| MyMarkdown.new( content
+).to_html } ],
+
+   once you have extended your Mardown processor of choice.
+
+   Let me know if you try out anything or if works or if you have any
+further questions or comments. Cheers.
+
+
+[1] http://maruku.rubyforge.org
+

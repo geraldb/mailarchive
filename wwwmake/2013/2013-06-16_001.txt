@@ -1,0 +1,108 @@
+From 1295286009856@xxx Sun Jan 11 00:21:33 +0000 2015
+X-GM-THRID: 1273188319232
+X-Google-Groups: webslideshow
+X-Google-Thread: 592b7a,a107a50f8aae9c2b
+X-Google-Attributes: gid592b7a,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Free Web Slide Show
+ Alternatives - S5, S6, S9, Slidy, CSSS, deck.js, impress.js and Friends" <webslideshow@googlegroups.com>
+X-Received: by 10.224.86.200 with SMTP id t8mr4652658qal.0.1371349361488;
+        Sat, 15 Jun 2013 19:22:41 -0700 (PDT)
+X-BeenThere: webslideshow@googlegroups.com
+Received: by 10.49.58.66 with SMTP id o2ls631788qeq.92.gmail; Sat, 15 Jun 2013
+ 19:22:41 -0700 (PDT)
+X-Received: by 10.49.40.167 with SMTP id y7mr15079qek.36.1371349360980;
+        Sat, 15 Jun 2013 19:22:40 -0700 (PDT)
+X-Google-Doc-Id: d4e7530f76783e05
+X-Google-Web-Client: true
+Date: Sat, 15 Jun 2013 19:22:40 -0700 (PDT)
+From: Goozbach <friocorte@gmail.com>
+To: webslideshow@googlegroups.com
+Message-Id: <48f68f19-6fff-458c-b4e9-af19a148c092@googlegroups.com>
+In-Reply-To: <a1835b89-79f8-41c8-9f44-9be5e3e63a8f@q8g2000vbl.googlegroups.com>
+References: <71414604-4298-4368-85c4-e1d4ddcab69a@googlegroups.com>
+ <caa30178-e4d8-4676-a5e0-90df9fb413f0@ce7g2000vbb.googlegroups.com>
+ <737dbaa4-e1ff-4b22-8892-acad65d19cbf@googlegroups.com> <CAAxEZd_WnS2PePP2NLaYu5303SvwPGANyHkd3UCJCxREc+xntg@mail.gmail.com>
+ <a1835b89-79f8-41c8-9f44-9be5e3e63a8f@q8g2000vbl.googlegroups.com>
+Subject: Re: Slurping a file into a template [ruby s9 template]
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_Part_0_9615903.1371349360614"
+X-Google-Token: EPDC9I0FI00EEtPTXWE0
+X-Google-IP: 72.152.231.29
+
+------=_Part_0_9615903.1371349360614
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1_20485811.1371349360616"
+
+------=_Part_1_20485811.1371349360616
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+On Saturday, June 15, 2013 5:24:25 PM UTC-4, Gerald Bauer wrote:
+
+> Hello Derek, 
+>
+>   I pushed a new slideshow gem version, that is, 1.2.4. Please, update 
+> and try it. What's new? 
+>
+>   - New @pakdir variable holds the template pack root dir 
+>   - Before the template pack merge the working folder gets set to the 
+> template pack root (that is, @pakdir) 
+>
+>    Now all these three options should work: 
+>
+>     <div class="slide"> 
+>     <!-- contact1 --> 
+>     <%= IO.read("contact.html") %> 
+>     </div> 
+>
+>     <div class="slide"> 
+>     <!-- contact2 --> 
+>     <%= IO.read("./contact.html") %> 
+>     </div> 
+>
+>     <div class="slide"> 
+>     <!-- contact1 --> 
+>     <%= IO.read("#{@pakdir}/contact.html") %> 
+>     </div> 
+>
+> Worked like a champ! Thanks!
+
+--
+Derek 
+
+------=_Part_1_20485811.1371349360616
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<span style="font-size: 13px;">On Saturday, June 15, 2013 5:24:25 PM UTC-4, Gerald Bauer wrote:</span><br><blockquote class="gmail_quote" style="margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;padding-left: 1ex;">Hello Derek,
+<br>
+<br>&nbsp; I pushed a new slideshow gem version, that is, 1.2.4. Please, update
+<br>and try it. What's new?
+<br>
+<br>&nbsp; - New @pakdir variable holds the template pack root dir
+<br>&nbsp; - Before the template pack merge the working folder gets set to the
+<br>template pack root (that is, @pakdir)
+<br>
+<br>&nbsp; &nbsp;Now all these three options should work:
+<br>
+<br>&nbsp; &nbsp; &lt;div class="slide"&gt;
+<br>&nbsp; &nbsp; &lt;!-- contact1 --&gt;
+<br>&nbsp; &nbsp; &lt;%= IO.read("contact.html") %&gt;
+<br>&nbsp; &nbsp; &lt;/div&gt;
+<br>
+<br>&nbsp; &nbsp; &lt;div class="slide"&gt;
+<br>&nbsp; &nbsp; &lt;!-- contact2 --&gt;
+<br>&nbsp; &nbsp; &lt;%= IO.read("./contact.html") %&gt;
+<br>&nbsp; &nbsp; &lt;/div&gt;
+<br>
+<br>&nbsp; &nbsp; &lt;div class="slide"&gt;
+<br>&nbsp; &nbsp; &lt;!-- contact1 --&gt;
+<br>&nbsp; &nbsp; &lt;%= IO.read("#{@pakdir}/contact.<wbr>html") %&gt;
+<br>&nbsp; &nbsp; &lt;/div&gt;
+<br><br></blockquote><div>Worked like a champ! Thanks!</div><div><br></div><div>--</div><div>Derek&nbsp;</div>
+------=_Part_1_20485811.1371349360616--
+
+------=_Part_0_9615903.1371349360614--
+

@@ -1,0 +1,74 @@
+From 6272319946349346816@xxx Mon Apr 11 15:24:50 +0000 2016
+X-GM-THRID: 6270689525469544448
+Date: Mon, 11 Apr 2016 08:24:50 -0700 (PDT)
+From: S K <hsk4ng@gmail.com>
+To: opensport <opensport@googlegroups.com>
+Message-Id: <9f6df754-a12f-42b8-b29b-496995cccf74@googlegroups.com>
+In-Reply-To: <CAAxEZd9nuodzzMH5izGtR2XfqXcr+8hobUzrWqVQFgw695W32Q@mail.gmail.com>
+References: <02c84ff0-aace-48f8-a075-fa92197b2ebb@googlegroups.com>
+ <CAAxEZd8e5UdJn8nJ1X7+NAK542XtYjqqfjTCFbHMMsc1vNkp_g@mail.gmail.com>
+ <0b142833-8bef-451e-b077-8d7f6acaad09@googlegroups.com>
+ <bb68ced2-d332-48dd-9750-6d741d060ccd@googlegroups.com>
+ <CAAxEZd9nuodzzMH5izGtR2XfqXcr+8hobUzrWqVQFgw695W32Q@mail.gmail.com>
+Subject: Re: [opensport] Adding world cup db to MariaDB for XAMPP
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_371_456955753.1460388290472"
+X-Google-Token: EMKDr7gFB3dO5vB5oQY0
+X-Google-IP: 206.196.186.175
+
+------=_Part_371_456955753.1460388290472
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_372_808476178.1460388290472"
+
+------=_Part_372_808476178.1460388290472
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hmm...I'm still getting some sort of error.
+
+When I opened the worldcup.db on SQLite, it was missing the players. How 
+can I populate it with player information?
+
+On Monday, April 11, 2016 at 4:53:55 AM UTC-4, Gerald Bauer wrote:
+>
+> Hello, 
+>
+> > I keep getting this error. 
+> > 
+> > rake aborted! 
+> > LoadError: cannot load such file -- worlddb 
+>
+>    Try installing the worlddb gem / library e.g.: 
+>
+>   $ gem install worlddb 
+>
+>   Cheers. 
+>
+
+------=_Part_372_808476178.1460388290472
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hmm...I&#39;m still getting some sort of error.<div><br></=
+div><div>When I opened the worldcup.db on SQLite, it was missing the player=
+s. How can I populate it with player information?<br><br>On Monday, April 1=
+1, 2016 at 4:53:55 AM UTC-4, Gerald Bauer wrote:<blockquote class=3D"gmail_=
+quote" style=3D"margin: 0;margin-left: 0.8ex;border-left: 1px #ccc solid;pa=
+dding-left: 1ex;">Hello,
+<br>
+<br>&gt; I keep getting this error.
+<br>&gt;
+<br>&gt; rake aborted!
+<br>&gt; LoadError: cannot load such file -- worlddb
+<br>
+<br>=C2=A0 =C2=A0Try installing the worlddb gem / library e.g.:
+<br>
+<br>=C2=A0 $ gem install worlddb
+<br>
+<br>=C2=A0 Cheers.
+<br></blockquote></div></div>
+------=_Part_372_808476178.1460388290472--
+
+------=_Part_371_456955753.1460388290472--
+

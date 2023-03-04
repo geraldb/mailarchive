@@ -1,0 +1,138 @@
+From 127478530048@xxx Tue Jun 16 00:16:46 +0000 2015
+X-GM-THRID: 120477188096
+X-Google-Groups: opensport
+X-Google-Thread: 1ffa487,cfd207d2a36fadf3
+X-Google-Attributes: gid1ffa487,domainid0,public,googlegroup
+X-Google-Language: ENGLISH,ASCII-7-bit
+X-Google-Anonymize-Sender-Mode: 0
+X-Google-Anonymize-Sender-Replacement-Address: "Open Sports Database
+ (sport.db) and Friends" <opensport@googlegroups.com>
+X-Received: by 10.236.15.73 with SMTP id e49mr19652820yhe.15.1373552319170;
+        Thu, 11 Jul 2013 07:18:39 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.49.128.34 with SMTP id nl2ls3019303qeb.39.gmail; Thu, 11 Jul
+ 2013 07:18:38 -0700 (PDT)
+X-Received: by 10.49.28.66 with SMTP id z2mr1105560qeg.5.1373552318792;
+        Thu, 11 Jul 2013 07:18:38 -0700 (PDT)
+X-Google-Doc-Id: 5a1a4b4b9dc90d9
+X-Google-Web-Client: true
+Date: Thu, 11 Jul 2013 07:18:38 -0700 (PDT)
+From: Gerald Bauer <gerald.bauer@gmail.com>
+To: opensport@googlegroups.com
+Message-Id: <49ad51e9-f5e3-4178-b7bd-63a937e01289@googlegroups.com>
+In-Reply-To: <42ae00eb-0e90-4168-a288-e8fc44645386@googlegroups.com>
+References: <42ae00eb-0e90-4168-a288-e8fc44645386@googlegroups.com>
+Subject: Re: Trying to create a mysql database instead of using command tool
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_167_23267404.1373552318573"
+X-Google-Token: EL79-o4FjBgkMvQT1DM0
+X-Google-IP: 193.110.28.9
+
+------=_Part_167_23267404.1373552318573
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_168_11918136.1373552318573"
+
+------=_Part_168_11918136.1373552318573
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+   To create the mysql database tables and to populate the tables from the 
+plain text fixtures you will have to use the sportdb command line tool [1]. 
+For now the preconfigured db is sqlite3. To use mysql use a Rakefile (Ruby 
+build script)  Example: 
+
+ Rakefile:
+---------------------
+
+BUILD_DIR = "./build"
+  
+FOOTBALL_DB_PATH = "#{BUILD_DIR}/football.db"
+
+DB_CONFIG = {
+  :adapter   =>  'mysql',
+  :database  =>  FOOTBALL_DB_PATH
+}
+
+directory BUILD_DIR
+
+task :clean do
+  rm FOOTBALL_DB_PATH if File.exists?( FOOTBALL_DB_PATH )
+end
+
+task :env => BUILD_DIR do
+ require 'worlddb'  
+ require 'sportdb'
+ require 'logutils/db'
+
+ LogUtils::Logger.root.level = :info
+
+ pp DB_CONFIG
+ ActiveRecord::Base.establish_connection( DB_CONFIG )
+end
+
+task :create => :env do
+  LogDb.create
+  WorldDb.create
+  SportDb.create
+end
+  
+task :importworld => :env do
+  WorldDb.read_setup( 'setups/sport.db.admin', '../world.db', skip_tags: 
+true )  # populate world tables
+  # WorldDb.stats
+end
+
+task :importsport => :env do
+  SportDb.read_setup( 'setups/all', '../openfootball/at-austria' )
+  # SportDb.stats
+end
+
+desc 'footballdb - build from scratch'
+task :build => [:clean, :create, :importworld, :importsport] do
+  puts 'Done.'
+end 
+
+ Let me know if it works. Cheers. 
+
+[1] https://github.com/geraldb/sport.db.ruby
+
+------=_Part_168_11918136.1373552318573
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,<div><br></div><div>&nbsp; &nbsp;To create the mysql database tables =
+and to populate the tables from the plain text fixtures you will have to us=
+e the sportdb command line tool [1]. For now the preconfigured db is sqlite=
+3. To use mysql use a Rakefile (Ruby build script) &nbsp;Example:&nbsp;</di=
+v><div><br></div><div>&nbsp;Rakefile:</div><div>---------------------</div>=
+<div><br></div><div>BUILD_DIR =3D "./build"</div><div>&nbsp;&nbsp;</div><di=
+v>FOOTBALL_DB_PATH =3D "#{BUILD_DIR}/football.db"</div><div><br></div><div>=
+DB_CONFIG =3D {</div><div>&nbsp; :adapter &nbsp; =3D&gt; &nbsp;'mysql',</di=
+v><div>&nbsp; :database &nbsp;=3D&gt; &nbsp;FOOTBALL_DB_PATH</div><div>}</d=
+iv><div><br></div><div>directory BUILD_DIR</div><div><br></div><div>task :c=
+lean do</div><div>&nbsp; rm FOOTBALL_DB_PATH if File.exists?( FOOTBALL_DB_P=
+ATH )</div><div>end</div><div><br></div><div>task :env =3D&gt; BUILD_DIR do=
+</div><div>&nbsp;require 'worlddb' &nbsp;</div><div>&nbsp;require 'sportdb'=
+</div><div>&nbsp;require 'logutils/db'</div><div><br></div><div>&nbsp;LogUt=
+ils::Logger.root.level =3D :info</div><div><br></div><div>&nbsp;pp DB_CONFI=
+G</div><div>&nbsp;ActiveRecord::Base.establish_connection( DB_CONFIG )</div=
+><div>end</div><div><br></div><div>task :create =3D&gt; :env do</div><div>&=
+nbsp; LogDb.create</div><div>&nbsp; WorldDb.create</div><div>&nbsp; SportDb=
+.create</div><div>end</div><div>&nbsp;&nbsp;</div><div>task :importworld =
+=3D&gt; :env do</div><div>&nbsp; WorldDb.read_setup( 'setups/sport.db.admin=
+', '../world.db', skip_tags: true ) &nbsp;# populate world tables</div><div=
+>&nbsp; # WorldDb.stats</div><div>end</div><div><br></div><div>task :import=
+sport =3D&gt; :env do</div><div>&nbsp; SportDb.read_setup( 'setups/all', '.=
+./openfootball/at-austria' )</div><div>&nbsp; # SportDb.stats</div><div>end=
+</div><div><br></div><div>desc 'footballdb - build from scratch'</div><div>=
+task :build =3D&gt; [:clean, :create, :importworld, :importsport] do</div><=
+div>&nbsp; puts 'Done.'</div><div>end&nbsp;</div><div><br></div><div>&nbsp;=
+Let me know if it works. Cheers.&nbsp;</div><div><br></div><div>[1]&nbsp;ht=
+tps://github.com/geraldb/sport.db.ruby</div>
+------=_Part_168_11918136.1373552318573--
+
+------=_Part_167_23267404.1373552318573--
+

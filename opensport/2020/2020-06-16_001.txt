@@ -1,0 +1,155 @@
+From 6838869439841042432@xxx Tue Jun 16 09:06:14 +0000 2020
+X-GM-THRID: 6838869437855039488
+X-Received: by 2002:a5d:400f:: with SMTP id n15mr2054887wrp.419.1592298373870;
+        Tue, 16 Jun 2020 02:06:13 -0700 (PDT)
+X-BeenThere: opensport@googlegroups.com
+Received: by 2002:a1c:a545:: with SMTP id o66ls1056592wme.2.canary-gmail; Tue,
+ 16 Jun 2020 02:06:12 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJw4BjmLrSUKGgsl0GnR1BBrHkrm4D0Ry04WArql1ex+Km2pWaVyvW+o/1Q3eDXpTMFl3eHt
+X-Received: by 2002:a7b:c8d6:: with SMTP id f22mr2149518wml.188.1592298372929;
+        Tue, 16 Jun 2020 02:06:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1592298372; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Wq5XjAlFj0N9WfHxhkGIvyOIvlJm0xYG+1RFi0N8CvxerNNWujOeWqoglU0aR9tWwH
+         dy18IBRCPWhxhIOer/5PiPuxu6h1SOtoYPxae8cPycDHQ7iKW7u+/tg5L+O5bE0ogtlK
+         VBhTvCSoM45B6KiGwSBmv7mjsTbm5J9+RP0HyAwrdHIDgdrQHhZvBTroKKcx3YzLTTi9
+         AmJ4E9Cwd7jnFoov9LSnTPVeg/n12tdJPQ00t2mUeCGtCzJmxgqoRbFUMPKKHYx8+cGP
+         WaWhE9soJFQodGIrPJsif1xnmPTUEk0nsQQ20avF1T7/heoNIM2GfOEji2fLTji+5dyQ
+         72CQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=2VQ46k/tvg9VFfB3UyrlVGhWJ40EMumrrGn5ebW+Vds=;
+        b=droK+YYRcAjtX7yN58obxMHwNoeyKMJVDBOYuSOPA0MPgYFCQzBqA1oA4UoPlUmDAc
+         jpwsW994EHs5YsagoWoVNLO4gykBbJbEYkjm3ElX3FmsboOjrwjFK54c1FdqjlYwpFzf
+         fR7ndw3CRphR25d8Qo5z0mCXMyoJz/7pgm5zFABZsz5WeMKnMLHN5FnTpJ6RTLGgKnqS
+         p0fMZ5i3aEX9Ho2hmfMrFTfPd9Tst8LsrrN0SsTUkKUpwKgdPbHlwIsq/cRPqw2pWsu+
+         aXKvj5tqZWiMBCgoFiT5G1SbjJ6HdD3xDu6Adz3Ew/cH9q1Rfjc7mF3stqPHq0mnCCHh
+         1lYQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=sE5kpFnl;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::143 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-lf1-x143.google.com (mail-lf1-x143.google.com. [2a00:1450:4864:20::143])
+        by gmr-mx.google.com with ESMTPS id w126si130248wma.4.2020.06.16.02.06.12
+        for <opensport@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 16 Jun 2020 02:06:12 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::143 as permitted sender) client-ip=2a00:1450:4864:20::143;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=sE5kpFnl;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2a00:1450:4864:20::143 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: by mail-lf1-x143.google.com with SMTP id w15so11273118lfe.11
+        for <opensport@googlegroups.com>; Tue, 16 Jun 2020 02:06:12 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=2VQ46k/tvg9VFfB3UyrlVGhWJ40EMumrrGn5ebW+Vds=;
+        b=sE5kpFnl9Oe9dO0xoaFq08YYFD748xX8nTbhWOQZqCz/EwYGQlEhJvC9hsBbUO8PtT
+         87cxf9+cxYezHAlyQ9BNOZqtKPgYco3fkc9L73fbzbK9ab/+m0mdXE0ViZSgum5/CIA1
+         ENUBfsDCzBi8owzWgI82yu9lmmKCsud9mLdRbkLwGEhKrJXVmoWMrbyyaghFdcN8JlXj
+         MFOk/yo+mQAYapd6iWfyp/z0/BKQ42HGNSyLW80quhxgLoc2qoJgKDgt81mSSsegq7vR
+         rmr6WIgx92LTRgO6HWfXAJg94NwmnHMN6nealRWByU3AUoOxBUIG01tYmCdYIn4hhj/W
+         TLxA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=2VQ46k/tvg9VFfB3UyrlVGhWJ40EMumrrGn5ebW+Vds=;
+        b=W+MuFLB/UW/3+hUwh6/yw6gQ5G6FLb7unBb8iYY8EdnHMFm3ZTaq9pmYiosqrUFN9K
+         8SYMSMASUdDw7UXnbsRp6Tecy4SfUBxjxzPZyJXVFe3qapaVyjo5B2tEDJxAT29KiIF2
+         a8MNjjmvfDmYDcV+ijuN/0BE3cuZVG+lf2UKYfmgHntmaMuIdaBjPAhKGBpQw15EtGPu
+         k+6zF0FHhvTwIy9wZCQ4zrYAhMT35lkxFY2qi7zwdwH+Fgu1jy+q0uVevt5aBl85zyqF
+         ayebdQ0E+uZq85S0q/lnPgJP4rii5TK7FlxJvl9kK4UGFf63182Le+wF+yy2QR/rEJuL
+         N5ZA==
+X-Gm-Message-State: AOAM5321+MNqK06b2/PUKcp4YnLmH3jLp3HVXuaaV2/U4N+1H0Y5/Njv
+	VtY40spIlC9CQRl0ohTAKR6Dk9p8ynm8pCXpVzty+R05J60=
+X-Received: by 2002:a19:6712:: with SMTP id b18mr1180669lfc.141.1592298371925;
+ Tue, 16 Jun 2020 02:06:11 -0700 (PDT)
+MIME-Version: 1.0
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Tue, 16 Jun 2020 11:06:02 +0200
+Message-ID: <CAAxEZd_3Ltf76-+m5w13nJKXQ_eBPmEKhFY5Z+cpmCXfKrMnsw@mail.gmail.com>
+Subject: football.csv - sportdb-importers Scripts Update - Read League & Match
+ Datasets in Comma-Separated Values (CSV) Format into Any SQL Database
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+  I've updated the sportdb-importers [1] library / scripts
+ that lets you read (import) league & match datasets
+ in comma-separated values (CSV) format into any SQL database.
+
+   What's news?
+
+   A new CSV flavor / schema lets you read in any or many leagues or
+seasons per datafile,
+   for example, week by week or year by year.
+
+   From the footballcsv updates dataset:
+
+```
+Date,            League, Team 1,             FT,  Team 2
+Wed Jun 10 2020, DE 3,   SpVgg Unterhaching, 1-3, Eintracht Braunschweig
+Thu Jun 11 2020, AT 2,   FC Blau-Wei=C3=9F Linz,  1-2, Austria Klagenfurt
+Thu Jun 11 2020, ES 1,   Sevilla FC,         2-0, Real Betis
+...
+```
+
+   Let's build an update.db from scratch:
+
+```
+require 'sportdb/importers'
+
+SportDb.connect( adapter:  'sqlite3',
+                 database: './updates.db' )
+SportDb.create_all       ## build database schema (tables, indexes, etc.)
+
+
+## note: requires a local copy of the football.csv updates datasets
+##          see https://github.com/footballcsv/updates
+SportDb.read_csv( './updates' )
+# -or-    use a zip archive
+SportDb.read_csv( './updates.zip' )
+```
+
+That's it.
+
+Enjoy the beautiful game. Happy data wrangling. Cheers. Prost.
+
+
+PS:
+
+Q: What codes or names for league & cups can I use?
+
+The importers ship with hundreds of zero-config preconfigured
+code and names for leagues & cups.
+See the /leagues [2] datasets for all builtin
+national and international football club leagues & cups from around the wor=
+ld.
+
+Or to query scripting try:
+
+```
+require `sportdb/config`
+
+LEAGUES =3D SportDb::Import.catalog.leagues
+
+LEAGUES.find( 'ENG 1' )      #=3D> Premier League   =E2=80=BA England
+LEAGUES.find( 'EPL' )        #=3D> Premier League   =E2=80=BA England
+LEAGUES.find( 'ENG 2' )      #=3D> Championship     =E2=80=BA England
+LEAGUES.find( 'ENG CS' )     #=3D> Championship     =E2=80=BA England
+LEAGUES.find( 'ES' )         #=3D> Primera Divisi=C3=B3n =E2=80=BA Spain
+LEAUGES.find( 'ESP 1')       #=3D> Primera Divisi=C3=B3n =E2=80=BA Spain
+...
+```
+
+
+[1] https://github.com/sportdb/sport.db/tree/master/sportdb-importers
+[2] https://github.com/openfootball/leagues
+

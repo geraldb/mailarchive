@@ -1,0 +1,64 @@
+From 6792839355061764096@xxx Thu Feb 13 08:05:59 +0000 2020
+X-GM-THRID: 6792839354350829568
+X-Received: by 2002:aca:2109:: with SMTP id 9mr1940834oiz.119.1581581159468;
+        Thu, 13 Feb 2020 00:05:59 -0800 (PST)
+X-BeenThere: wwwmake@googlegroups.com
+Received: by 2002:a05:6830:4a4:: with SMTP id l4ls5279312otd.11.gmail; Thu, 13
+ Feb 2020 00:05:59 -0800 (PST)
+X-Received: by 2002:a05:6830:1d91:: with SMTP id y17mr11746426oti.276.1581581159166;
+        Thu, 13 Feb 2020 00:05:59 -0800 (PST)
+Received: by 2002:aca:c384:0:0:0:0:0 with SMTP id t126msoif;
+        Wed, 12 Feb 2020 14:39:17 -0800 (PST)
+X-Google-Smtp-Source: APXvYqxK2kxcBJXGUc5x2lHNEjuQWf/Mfx2whp5z5DtF36Bip831hneSgr48JTm54SQzQVLuW3ulDvBNVQ==
+X-Received: by 2002:a9d:7509:: with SMTP id r9mr10614946otk.270.1581547156825;
+        Wed, 12 Feb 2020 14:39:16 -0800 (PST)
+X-Google-Thread-Subscription: Yes
+X-Google-Web-Client: true
+Date: Wed, 12 Feb 2020 14:39:16 -0800 (PST)
+From: Nathan Wallach <taniwallach@gmail.com>
+To: wwwmake <wwwmake@googlegroups.com>
+Message-Id: <d17145b6-0ecc-4003-bb20-0d804511b412@googlegroups.com>
+Subject: pluto - issue reported on GitHub - error: undefined method
+ `to_time' for nil:NilClass
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2411_1115270423.1581547156632"
+X-Google-Token: EJT9kfIFdpo16O7sHjA0
+X-Google-IP: 109.67.251.4
+
+------=_Part_2411_1115270423.1581547156632
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2412_1207934729.1581547156632"
+
+------=_Part_2412_1207934729.1581547156632
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+On a new install of pluto.starter on Debian 10 - issues with date 
+processing prevented the creation of output until offending code was 
+removed from planet-starter/planet.starter.html.erb which reduced the date 
+in the output file.
+
+See: https://github.com/feedreader/pluto.starter/issues/1
+
+
+------=_Part_2412_1207934729.1581547156632
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><font face=3D"arial, sans-serif" style=3D"color: rgb(=
+0, 0, 0); font-size: medium;">On a new install of=C2=A0</font><font color=
+=3D"#000000" face=3D"arial, sans-serif" size=3D"3">pluto.starter on Debian =
+10 - issues with date processing prevented the creation of output until off=
+ending code was removed from=C2=A0planet-starter/planet.starter.html.erb wh=
+ich reduced the date in the output file.</font></div><div><font color=3D"#0=
+00000" face=3D"arial, sans-serif" size=3D"3"><br></font></div><font face=3D=
+"arial, sans-serif" style=3D"color: rgb(0, 0, 0); font-size: medium;">See:=
+=C2=A0<a href=3D"https://github.com/feedreader/pluto.starter/issues/1">http=
+s://github.com/feedreader/pluto.starter/issues/1</a><br></font><div style=
+=3D"color: rgb(0, 0, 0); font-size: medium;"><br style=3D"font-size: 13px;"=
+></div></div>
+------=_Part_2412_1207934729.1581547156632--
+
+------=_Part_2411_1115270423.1581547156632--
+

@@ -1,0 +1,78 @@
+From 6387984109002555392@xxx Fri Feb 17 08:00:51 +0000 2017
+X-GM-THRID: 6387667141910331392
+X-Received: by 10.129.102.86 with SMTP id a83mr2031902ywc.141.1487318451316;
+        Fri, 17 Feb 2017 00:00:51 -0800 (PST)
+X-BeenThere: opensport@googlegroups.com
+Received: by 10.157.34.169 with SMTP id y38ls3660394ota.11.gmail; Fri, 17 Feb
+ 2017 00:00:50 -0800 (PST)
+X-Received: by 10.13.222.195 with SMTP id h186mr2144662ywe.132.1487318450912;
+        Fri, 17 Feb 2017 00:00:50 -0800 (PST)
+Return-Path: <gerald.bauer@gmail.com>
+Received: from mail-it0-x234.google.com (mail-it0-x234.google.com. [2607:f8b0:4001:c0b::234])
+        by gmr-mx.google.com with ESMTPS id n127si44288ita.3.2017.02.17.00.00.50
+        for <opensport@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 17 Feb 2017 00:00:50 -0800 (PST)
+Received-SPF: pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::234 as permitted sender) client-ip=2607:f8b0:4001:c0b::234;
+Authentication-Results: gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of gerald.bauer@gmail.com designates 2607:f8b0:4001:c0b::234 as permitted sender) smtp.mailfrom=gerald.bauer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x234.google.com with SMTP id 203so10026956ith.0
+        for <opensport@googlegroups.com>; Fri, 17 Feb 2017 00:00:50 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=hIk8Y/Kzg05ihPVESM44cn8RDW16s5bxJg+NrO85a0Y=;
+        b=TXI7jQ7XcTCP9MOKHH8xiuxvfdYnhTQTmY4yA+Bor7Uggz706qcVVkae4XasnIpFbk
+         XigH41HSrgCAomQhOoc+XxQrK4ql0Iq40HyP/N31MTXCvjNesEuzBeoF/9Wk+r5JrewY
+         yPbH9kRWYI6mkzIlZs73Eln+kuNd7uxaA5IjZCBre4qiFz10jRLhV6xjsGDmrAiJbAn3
+         w/8kaoJmuAT8w3l0S1yKnCEgHtP0Nw9kPjho28tgE7KRM8pUxFVG7j5yp45BXckh3EiY
+         89hUZELL8UHoksSBET4ZlzZ8twj1+lKsmKuv8OS+2wDYZzBPY6r8OMWkqYX90IVlyl1T
+         Y4cA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=hIk8Y/Kzg05ihPVESM44cn8RDW16s5bxJg+NrO85a0Y=;
+        b=qdlIuAMPM9KhUJPdx7P33VwOpVDpqoNC8acF7JLUHMz9dJs3+fXf7Ghi/mDp9IJUZa
+         zmH2mxkWtIeZCAKgPOfGVQm9VelLI4CEBBkVbvDdId0COhiFgVDO/aiFoR+DNHQwl3ie
+         iW+hHrgKzyQxo5619kTz1Hdid0+FxWqYE5vMHnoQq99fpV85ir9yFuW/c5VT/FBN7O76
+         DtQk1RL2Tx/20YIEPxs7U/ih0N91Z/FWGPLdToTbjdefIraCXptz5QxHv5VzmEAhnd/i
+         Orhns6wLLIUbfXBZp4GGGlCdammaaxa/emMcWcy8/BhBWeJ6aSRGhlzkYUQLywqoOF6d
+         ftHg==
+X-Gm-Message-State: AMke39luG5fDXXUnBkzp7IjHVLeePSQyxFSiqQuNzWaSFj1kE4m50aKFKbsazW2l8eZ39aY7AwtmNcybykBDCA==
+X-Received: by 10.36.170.68 with SMTP id y4mr1043274iti.7.1487318450434; Fri,
+ 17 Feb 2017 00:00:50 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.107.34.209 with HTTP; Fri, 17 Feb 2017 00:00:50 -0800 (PST)
+In-Reply-To: <c09e3a70-ad11-44a6-b4da-30fb4f011754@googlegroups.com>
+References: <5ff6c1d2-64f2-489c-bb28-08b5223cd609@googlegroups.com>
+ <CAAxEZd9Vk=uWdYVGn3jOjdx-6vRfq_hn8k1ng0xtzUWgqQ1k0A@mail.gmail.com> <c09e3a70-ad11-44a6-b4da-30fb4f011754@googlegroups.com>
+From: Gerald Bauer <gerald.bauer@gmail.com>
+Date: Fri, 17 Feb 2017 09:00:50 +0100
+Message-ID: <CAAxEZd8G6jvcvJMebU5vOuuXFceLJY0zpY+R2EhDkpCWkyL1Yw@mail.gmail.com>
+Subject: Re: [opensport] Django ORM adapter available
+To: opensport@googlegroups.com
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+ >  the Gist is here:
+https://gist.github.com/marfire/44822f94af25f11a2fda5beba2593229
+
+   Wow. Looks great. Thanks for sharing.
+
+  If you want to add some notes to the docu - I've created a new
+Python page [1].
+
+  If you don't mind I have sent you two inviations (via GitHub) to
+join the openfootball and sportlabs teams  - if you accept you can
+change the /docs "inline" in your browser or if interested you're
+welcome to add a new repo to sportlabs org.  Or just keep it as is and
+see how it evolves. No rush or anyhting.
+
+   Again thanks for sharing the Django models. Cheers.
+
+[1] https://github.com/openfootball/docs/blob/master/python.md
+
