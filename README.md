@@ -7,4 +7,4 @@
 
 ## Questions? Comments?
 
-Please, post over at the [**/help**](https://github.com/geraldb/help) repo. Thanks.
+Please, post at the official [**Help & Support Page / Repo**](https://github.com/geraldb/help). Thanks.
